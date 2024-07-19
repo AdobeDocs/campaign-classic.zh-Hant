@@ -17,11 +17,11 @@ ht-degree: 2%
 
 以下是有關在Adobe Campaign中使用輸入表單的一些一般原則。
 
-Forms的詳細資訊，請參閱 [本節](../../configuration/using/identifying-a-form.md).
+在[本節](../../configuration/using/identifying-a-form.md)中詳細說明Forms。
 
 ## 表單結構 {#form-structure}
 
-輸入表單的XML檔案必須包含 **`<form>`** 根元素具有 **名稱** 和 **名稱空間** 屬性以分別填入表單名稱及其名稱空間。
+輸入表單的XML檔案必須包含具有&#x200B;**名稱**&#x200B;和&#x200B;**名稱空間**&#x200B;屬性的&#x200B;**`<form>`**&#x200B;根專案，才能分別填入表單名稱及其名稱空間。
 
 ```xml
 <form name="form_name" namespace="name_space">
@@ -29,7 +29,7 @@ Forms的詳細資訊，請參閱 [本節](../../configuration/using/identifying-
 </form>
 ```
 
-依預設，表單會與具有相同名稱和名稱空間的資料結構描述相關聯。 若要將表單與不同名稱建立關聯，請在 **entity-schema** 的屬性 **`<form>`** 元素。
+依預設，表單會與具有相同名稱和名稱空間的資料結構描述相關聯。 若要將表單與不同的名稱建立關聯，請在&#x200B;**`<form>`**&#x200B;專案的&#x200B;**entity-schema**&#x200B;屬性中輸入結構描述金鑰。
 
 為了說明輸入表單的結構，我們根據範例結構描述「cus：book」描述了一個介面：
 
@@ -45,9 +45,9 @@ Forms的詳細資訊，請參閱 [本節](../../configuration/using/identifying-
 </form>
 ```
 
-編輯元素的說明開頭為 **`<form>`** 根元素。
+編輯元素的說明以&#x200B;**`<form>`**&#x200B;根元素開頭。
 
-編輯控制項輸入於 **`<input>`** 元素與 **xpath** 包含其結構描述中欄位路徑的屬性。
+在&#x200B;**`<input>`**&#x200B;元素中輸入編輯控制項，該元素具有&#x200B;**xpath**&#x200B;屬性，包含其結構描述中的欄位路徑。
 
 **有關XPath語法的提醒：**
 
@@ -59,9 +59,9 @@ XPath是一種語法，可讓您在XML檔案的樹狀結構中尋找節點。
 
 範例：
 
-* **@date**：選取名為「date」的屬性
-* **chapter/@title**：選取「 」底下的「title」屬性 `<chapter>` 元素
-* **../@date**：從目前元素的父元素中選取日期
+* **@date**：選取名稱為「date」的屬性
+* **chapter/@title**：選取`<chapter>`專案下的「title」屬性
+* **../@date**：從目前專案的父專案選取日期
 
 編輯控制項會自動適應對應的資料型別，並使用結構描述中定義的標籤。
 
@@ -69,7 +69,7 @@ XPath是一種語法，可讓您在XML檔案的樹狀結構中尋找節點。
 
 >[!CAUTION]
 >
->輸入表單必須參考 **type=&quot;contentForm&quot;** 上的屬性 **`<form>`** 元素來自動新增輸入內容所需的框架。
+>輸入表單必須參考&#x200B;**`<form>`**&#x200B;元素上的&#x200B;**type=&quot;contentForm&quot;**&#x200B;屬性，才能自動新增輸入內容所需的框架。
 
 ## 格式 {#formatting}
 
@@ -94,13 +94,13 @@ XPath是一種語法，可讓您在XML檔案的樹狀結構中尋找節點。
 </input>
 ```
 
-清單控制項必須填入 **type=&quot;list&quot;** 屬性，而清單的路徑必須參照收集要素。
+清單控制項必須填入&#x200B;**type=&quot;list&quot;**&#x200B;屬性，而且清單的路徑必須參考集合專案。
 
-欄由子項宣告 **`<input>`** 清單元素。
+資料行是由清單的子&#x200B;**`<input>`**&#x200B;專案宣告。
 
 >[!NOTE]
 >
->當出現下列情況時，會自動新增向上和向下排序箭頭： **ordered=&quot;true&quot;** 資料結構描述中集合元素的屬性已完成。
+>當資料結構描述中集合元素的&#x200B;**ordered=&quot;true&quot;**&#x200B;屬性完成時，會自動新增向上和向下排序箭頭。
 
 依預設，工具列按鈕會垂直對齊。 它們也可以水準對齊：
 
@@ -113,11 +113,11 @@ XPath是一種語法，可讓您在XML檔案的樹狀結構中尋找節點。
 </input>
 ```
 
-此 **toolbarCaption** 屬性會強制水準對齊工具列，並填入清單上方的標題。
+**toolbarCaption**&#x200B;屬性強制水準對齊工具列並填入清單上方的標題。
 
 >[!NOTE]
 >
->若要讓集合元素標籤不顯示在控制項的左側，請新增 **nolabel=&quot;true&quot;** 屬性。
+>若要讓集合元素標籤不顯示在控制項的左側，請新增&#x200B;**nolabel=&quot;true&quot;**&#x200B;屬性。
 
 #### 放大清單 {#zoom-in-a-list}
 
@@ -144,13 +144,13 @@ XPath是一種語法，可讓您在XML檔案的樹狀結構中尋找節點。
 </input>
 ```
 
-編輯表單的定義是透過 **`<form>`** 元素。 其結構與輸入表單的結構相同。
+編輯表單的定義是透過清單專案下的&#x200B;**`<form>`**&#x200B;專案所指定。 其結構與輸入表單的結構相同。
 
-A **[!UICONTROL Detail]** 按鈕會在以下情況自動新增： **zoom=&quot;true&quot;** 在清單定義中輸入屬性。 這可讓您在選取的行上開啟編輯表單。
+在清單定義中輸入&#x200B;**zoom=&quot;true&quot;**&#x200B;屬性時，會自動新增&#x200B;**[!UICONTROL Detail]**&#x200B;按鈕。 這可讓您在選取的行上開啟編輯表單。
 
 >[!NOTE]
 >
->新增 **zoomOnAdd=&quot;true&quot;** 屬性會強制在插入清單的元素時呼叫編輯表單。
+>新增&#x200B;**zoomOnAdd=&quot;true&quot;**&#x200B;屬性會強制在插入清單的元素時呼叫編輯表單。
 
 ### 索引標籤清單 {#tab-list}
 
@@ -168,23 +168,23 @@ A **[!UICONTROL Detail]** 按鈕會在以下情況自動新增： **zoom=&quot;t
 </container>
 ```
 
-清單控制項必須填入 **type=&quot;notebooklist&quot;** 屬性，而清單的路徑必須參照收集要素。
+清單控制項必須填入&#x200B;**type=&quot;notebooklist&quot;**&#x200B;屬性，而且清單的路徑必須參考集合專案。
 
-索引標籤的標題包含透過輸入的資料值 **xpath-label** 屬性。
+索引標籤的標題包含透過&#x200B;**xpath-label**&#x200B;屬性輸入的資料值。
 
-編輯控制項必須宣告於 **`<container>`** 元素是清單控制項的子項。
+編輯控制項必須在清單控制項的子項&#x200B;**`<container>`**&#x200B;元素下宣告。
 
 使用工具列按鈕來新增或刪除清單元素。
 
 >[!NOTE]
 >
->當出現下列情況時，會自動新增左右排序箭頭： **ordered=&quot;true&quot;** 屬性會針對資料結構描述中的收集元素填入。
+>為資料結構描述中的集合元素填入&#x200B;**ordered=&quot;true&quot;**&#x200B;屬性時，會自動新增左右排序箭頭。
 
 ## 容器 {#containers}
 
-容器可讓您將一組控制項分組。 它們透過 **`<container>`** 元素。 它們已用來格式化數個欄中的控制項，並用來控制索引標籤清單。
+容器可讓您將一組控制項分組。 它們透過&#x200B;**`<container>`**&#x200B;元素存在。 它們已用來格式化數個欄中的控制項，並用來控制索引標籤清單。
 
-有關容器及如何在輸入表單中使用的詳細資訊，請參閱 [本節](../../configuration/using/form-structure.md#containers).
+如需有關容器，以及如何在輸入表單中使用容器的詳細資訊，請參閱[本節](../../configuration/using/form-structure.md#containers)。
 
 ## 編輯表單 {#editing-forms}
 
@@ -192,8 +192,8 @@ A **[!UICONTROL Detail]** 按鈕會在以下情況自動新增： **zoom=&quot;t
 
 ![](assets/d_ncs_content_form12.png)
 
-此 **[!UICONTROL Preview]** 索引標籤可讓您檢視輸入表單：
+**[!UICONTROL Preview]**&#x200B;索引標籤可讓您檢視輸入表單：
 
 ![](assets/d_ncs_content_form13.png)
 
-深入瞭解 [編輯表單](../../configuration/using/editing-forms.md) 和 [表單結構](../../configuration/using/form-structure.md).
+深入瞭解[編輯表單](../../configuration/using/editing-forms.md)和[表單結構](../../configuration/using/form-structure.md)。

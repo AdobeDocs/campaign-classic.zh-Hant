@@ -12,7 +12,7 @@ ht-degree: 0%
 
 ---
 
-# 在Apple中斷後更新不正確的硬退信 {#update-bounce-qualification.md}
+# 在Apple中斷{#update-bounce-qualification.md}後更新不正確的硬退信
 
 ## 內容
 
@@ -22,11 +22,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->您可以檢查Apple系統狀態控制面板，於 [此頁面](https://www.apple.com/support/systemstatus/).
+>您可以在[此頁面](https://www.apple.com/support/systemstatus/)上檢視Apple系統狀態儀表板。
 
 如果ISP發生中斷，透過Campaign傳送的電子郵件無法成功傳送給其收件者：這些電子郵件將錯誤標示為跳出。
 
-根據標準退信處理邏輯，Adobe Campaign會使用自動將這些收件者新增至隔離清單 **[!UICONTROL Status]** 設定 **[!UICONTROL Quarantine]**. 若要修正此問題，您需要找到並移除這些收件者，或變更其收件者，以更新Campaign中的隔離表。 **[!UICONTROL Status]** 至 **[!UICONTROL Valid]** 以便「夜間清理」工作流程會將其移除。
+根據標準退信處理邏輯，Adobe Campaign會自動將這些收件者新增至隔離清單，**[!UICONTROL Status]**&#x200B;設定為&#x200B;**[!UICONTROL Quarantine]**。 若要修正此問題，您需要透過尋找並移除這些收件者，或將其&#x200B;**[!UICONTROL Status]**&#x200B;變更為&#x200B;**[!UICONTROL Valid]**，以在Campaign中更新隔離表格，讓夜間清理工作流程將移除這些收件者。
 
 若要尋找受此問題影響的收件者，或當此問題在任何其他ISP中再次發生時，請參閱下列指示。
 
@@ -40,20 +40,20 @@ ht-degree: 0%
 >
 >這些日期/時間以東部標準時區(EST)為基礎。 請根據您執行個體的時區進行調整。
 
-* 對於含有SMTP退回回應資訊的Campaign執行個體， **[!UICONTROL Error text]** 隔離清單的欄位：
+* 對於在隔離清單的&#x200B;**[!UICONTROL Error text]**&#x200B;欄位中有SMTP退回回應資訊的Campaign執行個體：
 
-   * **錯誤文字（隔離文字）** 包含「使用者查詢成功但找不到使用者記錄」和 **錯誤文字（隔離文字）** 包含&quot;support.apple.com&quot;
-   * **更新狀態(@lastModified)** 2021年4月26日或之後07:00:上午0
-   * **更新狀態(@lastModified)** 2021年4月26日或之前:00:下午00
+   * **錯誤文字（隔離文字）**&#x200B;包含「使用者查詢成功但找不到使用者記錄」以及&#x200B;**錯誤文字（隔離文字）**&#x200B;包含「support.apple.com」
+   * 上午4/26/2021 07:00:00或之後的&#x200B;**更新狀態(@lastModified)**
+   * 下午4/26/2021 01:00:00或之前的&#x200B;**更新狀態(@lastModified)**
 
-* 對於在中具有傳入電子郵件規則資訊的Campaign執行個體 **[!UICONTROL Error text]** 隔離清單的欄位：
+* 對於在隔離清單的&#x200B;**[!UICONTROL Error text]**&#x200B;欄位中有傳入電子郵件規則資訊的Campaign執行個體：
 
-   * **錯誤文字（隔離文字）** 包含「Momen_Code10_InvalidRecipient」
-   * **電子郵件網域(@domain)** 等於icloud.com或 **電子郵件網域(@domain)** 等於me.com或 **電子郵件網域(@domain)** 等於mac.com
-   * **更新狀態(@lastModified)** 2021年4月26日或之後07:00:上午0
-   * **更新狀態(@lastModified)** 2021年4月26日或之前:00:下午00
+   * **錯誤文字（隔離文字）**&#x200B;包含「Momen_Code10_InvalidRecipient」
+   * **電子郵件網域(@domain)**&#x200B;等於icloud.com或&#x200B;**電子郵件網域(@domain)**&#x200B;等於me.com或&#x200B;**電子郵件網域(@domain)**&#x200B;等於mac.com
+   * 上午4/26/2021 07:00:00或之後的&#x200B;**更新狀態(@lastModified)**
+   * 下午4/26/2021 01:00:00或之前的&#x200B;**更新狀態(@lastModified)**
 
-取得受影響的收件者清單後，您就可以將清單設定為 **[!UICONTROL Valid]** 因此它們會由從隔離清單中移除 **[!UICONTROL Database cleanup]** 工作流程，或從表格中刪除這些專案。
+一旦您擁有受影響的收件者清單，您就可以將他們的狀態設定為&#x200B;**[!UICONTROL Valid]**，以便透過&#x200B;**[!UICONTROL Database cleanup]**&#x200B;工作流程將其從隔離清單中移除，或者只是從表格中刪除他們。
 
 **相關主題：**
 * [瞭解傳遞失敗](understanding-delivery-failures.md)

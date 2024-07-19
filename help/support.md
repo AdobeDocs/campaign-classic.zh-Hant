@@ -32,7 +32,7 @@ ht-degree: 64%
 
 ### 常見問題集
 
-如何升級至新建置版本？ 如何監視工作流程執行？ 什麼是資料庫清理工作流程？... [閱讀前10個問題](platform/using/common-questions.md).
+如何升級至新建置版本？ 如何監視工作流程執行？ 什麼是資料庫清理工作流程？... [閱讀前10個問題](platform/using/common-questions.md)。
 
 <table>
     <tr><td><strong>主題常見問答</strong></td><td><strong>常見問題</strong></td><td><strong>最佳實務</strong></td><td><strong>操作說明</strong></td></tr>
@@ -100,7 +100,7 @@ ht-degree: 64%
 >
 >所有管理員使用者都可存取控制面板。 授予使用者管理員存取權限的步驟已詳載於[本章節](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hant#discover-control-panel)。
 >
->請注意，您的執行個體必須託管於AWS上，並使用最新版本升級 [GA版本](rn/using/rn-overview.md). 在[本章節](platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中瞭解如何確認您的版本。 若要檢查您的執行個體是否託管在 AWS 上，請按照[本頁面](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hant)詳述的步驟操作。
+>請注意，您的執行個體必須託管在AWS上，並升級為最新的[GA版本編號](rn/using/rn-overview.md)。 在[本章節](platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中瞭解如何確認您的版本。 若要檢查您的執行個體是否託管在 AWS 上，請按照[本頁面](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hant)詳述的步驟操作。
 
 ### 如何存取控制面板？
 
@@ -124,27 +124,27 @@ ht-degree: 64%
 ### 執行個體設定
 
 瞭解如何在「控制面板」中管理Campaign Classic執行個體設定。 請前往下列頁面，瞭解更多資訊：
-* [在允許清單中新增IP](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=zh-Hant) 以存取您的Campaign執行個體
-* [管理URL](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=zh-Hant)
-* [存取執行個體詳細資訊](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html?lang=zh-Hant)
-* [管理用於資料加密的GPG金鑰](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=zh-Hant)
+* [在允許清單](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=zh-Hant)上新增IP以存取您的Campaign執行個體
+* [管理URL許可權](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=zh-Hant)
+* [存取執行個體詳細資料](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html?lang=zh-Hant)
+* [管理資料加密的GPG金鑰](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=zh-Hant)
 
 ## 請求協助 {#support}
 
 <img src="platform/using/assets/do-not-localize/icon-support.svg" width="60px">
 
-新的票證系統已透過啟動 [Adobe Admin Console](https://adminconsole.adobe.com/overview){_blank}. 新系統要求每個使用者都需要有新的個別帳戶，並擁有正確的權限。 如果您發現無法使用 Adobe ID 登入，請透過 Experience League 申請存取權限，客戶服務團隊會盡快為您設定。 [了解更多](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html)
+新的票證系統已透過[Adobe Admin Console](https://adminconsole.adobe.com/overview){_blank}啟動。 新系統要求每個使用者都需要有新的個別帳戶，並擁有正確的權限。 如果您發現無法使用 Adobe ID 登入，請透過 Experience League 申請存取權限，客戶服務團隊會盡快為您設定。 [了解更多](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html)
 
 ### 詢問專家！
 
-加入 Campaign Classic 社群：在現有問題中搜尋答案，或向社群提出問題。 [加入交談](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){_blank}.
+加入 Campaign Classic 社群：在現有問題中搜尋答案，或向社群提出問題。 [加入交談](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){_blank}。
 
 ### 存取 Campaign 下載中心
 
-作為Campaign管理員，瀏覽 [此頁面](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) 以存取Experience CloudSoftware Distribution。
+作為Campaign管理員，瀏覽至[此頁面](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)以存取Experience Cloud軟體發佈。
 
 ### 建立票證或開始聊天
 
 建立案例可讓您聯絡 Adobe 客戶支援團隊，瞭解您在 Adobe 產品上遇到的任何問題。為協助解決或疑難排解您的問題，您可使用 Adobe Admin Console 與 Adobe 客戶支援部門進行交談。
 
-如要在該新系統中記錄問題或啟動聊天工作階段，請連線至 [Adobe Admin Console](https://adminconsole.adobe.com/overview){_blank}. 請依照中說明的詳細過程進行操作 [此頁面](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html){_blank}.
+若要在該新系統中記錄問題或啟動聊天工作階段，請連線至[Adobe Admin Console](https://adminconsole.adobe.com/overview){_blank}。 請依照[此頁面](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html){_blank}中說明的詳細過程進行操作。

@@ -19,7 +19,7 @@ ht-degree: 10%
 
 工作流程活動會依類別分組。 同時有四個索引標籤可供使用。
 
-在行銷活動工作流程中， **[!UICONTROL Events]** 索引標籤會由 **[!UICONTROL Deliveries]** 標籤。 此標籤中的活動詳見 [動作活動](about-action-activities.md) 區段。
+在行銷活動工作流程中，**[!UICONTROL Events]**&#x200B;索引標籤會由&#x200B;**[!UICONTROL Deliveries]**&#x200B;索引標籤取代。 此索引標籤中的活動在[動作活動](about-action-activities.md)區段中詳細說明。
 
 ![](assets/wf-activity-tabs.png)
 

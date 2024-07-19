@@ -15,7 +15,7 @@ ht-degree: 1%
 
 
 
-Adobe Campaign與CRM之間的資料同步會透過專用的工作流程活動執行： [CRM聯結器](../../workflow/using/crm-connector.md).
+Adobe Campaign與CRM之間的資料同步是透過專用的工作流程活動來執行： [CRM聯結器](../../workflow/using/crm-connector.md)。
 
 例如，若要將Microsoft Dynamics資料匯入Adobe Campaign，請建立下列型別的工作流程：
 
@@ -23,16 +23,16 @@ Adobe Campaign與CRM之間的資料同步會透過專用的工作流程活動執
 
 此工作流程會透過Microsoft Dynamics匯入連絡人、將其與現有的Adobe Campaign資料同步、刪除重複的連絡人，以及更新Adobe Campaign資料庫。
 
-此 **[!UICONTROL CRM Connector]** 活動必須設定為同步資料。
+需要設定&#x200B;**[!UICONTROL CRM Connector]**&#x200B;活動以同步資料。
 
 ![](assets/crm_connectors_msdynamics_08.png)
 
 使用此活動，您可以：
 
-* 從CRM匯入 —  [瞭解更多](#importing-from-the-crm)
-* 匯出至CRM - [瞭解更多](#exporting-to-the-crm)
-* 匯入在CRM中刪除的物件 —  [瞭解更多](#importing-objects-deleted-in-the-crm)
-* 刪除CRM中的物件 —  [瞭解更多](#deleting-objects-in-the-crm)
+* 從CRM匯入 — [深入瞭解](#importing-from-the-crm)
+* 匯出至CRM - [深入瞭解](#exporting-to-the-crm)
+* 匯入CRM中刪除的物件 — [深入瞭解](#importing-objects-deleted-in-the-crm)
+* 刪除CRM中的物件 — [深入瞭解](#deleting-objects-in-the-crm)
 
 ![](assets/crm_task_select_op.png)
 
@@ -48,17 +48,17 @@ Adobe Campaign與CRM之間的資料同步會透過專用的工作流程活動執
 
 ![](assets/crm_wf_import.png)
 
-針對匯入活動， **[!UICONTROL CRM Connector]** 活動設定步驟如下：
+針對匯入活動，**[!UICONTROL CRM Connector]**&#x200B;活動設定步驟為：
 
-1. 選取 **[!UICONTROL Import from the CRM]** 作業。
-1. 前往 **[!UICONTROL Remote object]** 下拉式清單，並選取流程涉及的物件。 此物件與聯結器設定期間在Adobe Campaign中建立的其中一個表格一致。
-1. 前往 **[!UICONTROL Remote fields]** 區段，並輸入要匯入的欄位。
+1. 選取&#x200B;**[!UICONTROL Import from the CRM]**&#x200B;作業。
+1. 移至&#x200B;**[!UICONTROL Remote object]**&#x200B;下拉式清單，並選取處理程式涉及的物件。 此物件與聯結器設定期間在Adobe Campaign中建立的其中一個表格一致。
+1. 移至&#x200B;**[!UICONTROL Remote fields]**&#x200B;區段並輸入要匯入的欄位。
 
-   若要新增欄位，請按一下 **[!UICONTROL Add]** 按鈕，然後按一下 **[!UICONTROL Edit expression]** 圖示。
+   若要新增欄位，請按一下工具列中的&#x200B;**[!UICONTROL Add]**&#x200B;按鈕，然後按一下&#x200B;**[!UICONTROL Edit expression]**&#x200B;圖示。
 
    ![](assets/crm_task_import_add_field.png)
 
-   如有需要，可透過 **[!UICONTROL Conversion]** 欄。 中會詳細說明可能的轉換型別 [資料格式](#data-format).
+   如有必要，請透過&#x200B;**[!UICONTROL Conversion]**&#x200B;欄的下拉式清單變更資料格式。 可能的轉換型別以[資料格式](#data-format)詳細說明。
 
    >[!IMPORTANT]
    >
@@ -66,7 +66,7 @@ Adobe Campaign與CRM之間的資料同步會透過專用的工作流程活動執
    >
    >增量資料匯入也必須遵守CRM端的最後修改日期。
 
-1. 您也可以根據需求篩選要匯入的資料。 若要這麼做，請按一下 **[!UICONTROL Edit the filter...]** 連結。
+1. 您也可以根據需求篩選要匯入的資料。 若要這麼做，請按一下&#x200B;**[!UICONTROL Edit the filter...]**&#x200B;連結。
 
    在下列範例中，Adobe Campaign將僅匯入自2012年11月1日以來已記錄某些活動的聯絡人。
 
@@ -74,25 +74,25 @@ Adobe Campaign與CRM之間的資料同步會透過專用的工作流程活動執
 
    >[!IMPORTANT]
    >
-   >連結至資料篩選模式的限制詳見 [篩選資料](#filtering-data).
+   >連結至資料篩選模式的限制在[篩選資料](#filtering-data)中有詳細說明。
 
-1. 此 **[!UICONTROL Use automatic index...]** 選項可讓您根據日期及上次修改時間，自動管理CRM與Adobe Campaign之間的增量物件同步。
+1. **[!UICONTROL Use automatic index...]**&#x200B;選項可讓您根據日期及上次修改時間，自動管理CRM與Adobe Campaign之間的增量物件同步。
 
-   有關詳細資訊，請參閱 [變數管理](#variable-management).
+   如需詳細資訊，請參閱[變數管理](#variable-management)。
 
 ### 管理變數 {#variable-management}
 
-啟用 **[!UICONTROL Automatic index]** 僅收集自上次匯入後修改的物件的選項。
+啟用&#x200B;**[!UICONTROL Automatic index]**&#x200B;選項，僅收集自上次匯入後修改的物件。
 
 ![](assets/crm_task_import_option.png)
 
-依照預設，上次同步化的日期會儲存在組態視窗中指定的選項中： **LASTIMPORT_&lt;%=instance.internalName%>_&lt;%=activityName%>**.
+上次同步化的日期儲存在組態視窗中指定的選項中，預設為： **LASTIMPORT_&lt;%=instance.internalName%>_&lt;%=activityName%>**。
 
 >[!NOTE]
 >
->此附註僅適用於類屬 **[!UICONTROL CRM Connector]** 活動。 對於其他CRM活動，此程式是自動的。
+>此附註僅適用於一般&#x200B;**[!UICONTROL CRM Connector]**&#x200B;活動。 對於其他CRM活動，此程式是自動的。
 >
->此選項必須手動建立並填入 **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]**. 它必須是文字選項，其值必須符合以下格式： **`yyyy/MM/dd hh:mm:ss`**.
+>此選項必須手動建立並填入&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]**&#x200B;下。 它必須是文字選項，其值必須符合下列格式： **`yyyy/MM/dd hh:mm:ss`**。
 > 
 >您必須手動更新此選項才能進行進一步的匯入。
 
@@ -100,18 +100,18 @@ Adobe Campaign與CRM之間的資料同步會透過專用的工作流程活動執
 
 依預設，會使用下列欄位（依指定順序）：
 
-* 若為Microsoft Dynamics： **修改**，
-* 若為Salesforce.com： **LastModifiedDate**， **SystemModstamp**.
+* 對於Microsoft Dynamics： **modifiedon**，
+* 針對Salesforce.com： **LastModifiedDate**，**SystemModstamp**。
 
-啟用 **[!UICONTROL Automatic index]** 選項會產生三個變數，可用於透過進行的同步工作流程。 **[!UICONTROL JavaScript code]** 輸入活動。 這些活動包括：
+啟用&#x200B;**[!UICONTROL Automatic index]**&#x200B;選項會產生三個變數，這些變數可以透過&#x200B;**[!UICONTROL JavaScript code]**&#x200B;型別活動用於同步工作流程中。 這些活動包括：
 
-* **vars.crmOptionName**：代表包含上次匯入日期之選項的名稱。
-* **vars.crmStartImport**：代表上次資料復原的開始日期（含）。
+* **vars.crmOptionName**：代表包含上次匯入日期的選項名稱。
+* **vars.crmStartImport**：代表上次資料復原的開始日期（包含）。
 * **vars.crmEndDate**：代表上次資料復原的結束日期（已排除）。
 
   >[!NOTE]
   >
-  >這些日期會以下列格式顯示： **`yyyy/MM/dd hh:mm:ss`**.
+  >這些日期會以下列格式顯示： **`yyyy/MM/dd hh:mm:ss`**。
 
 ### 篩選資料 {#filtering-data}
 
@@ -135,7 +135,7 @@ Adobe Campaign與CRM之間的資料同步會透過專用的工作流程活動執
 
 在Microsoft Dynamics和Salesforce.com中，您可以依照遞增或遞減順序來排序要匯入的遠端欄位。
 
-若要這麼做，請按一下 **[!UICONTROL Order by]** 連結並新增欄至清單。
+若要這麼做，請按一下&#x200B;**[!UICONTROL Order by]**&#x200B;連結，並將欄新增至清單。
 
 清單中的欄順序是排序順序：
 
@@ -145,7 +145,7 @@ Adobe Campaign與CRM之間的資料同步會透過專用的工作流程活動執
 
 您可以使用工作流程中預先計算的母體，不必匯入CRM中包含（並可能經過篩選）的元素。
 
-若要這麼做，請選取 **[!UICONTROL Use the population calculated upstream]** 選項並指定包含遠端識別碼的欄位。
+若要這麼做，請選取&#x200B;**[!UICONTROL Use the population calculated upstream]**&#x200B;選項，並指定包含遠端識別碼的欄位。
 
 然後選取您要匯入之入站母體的欄位，如下所示：
 
@@ -159,30 +159,30 @@ Adobe Campaign與CRM之間的資料同步會透過專用的工作流程活動執
 
 ![](assets/crm_export_diagram.png)
 
-若要匯出，請將下列組態套用至 **[!UICONTROL CRM Connector]** 活動：
+若要匯出，請將下列設定套用至&#x200B;**[!UICONTROL CRM Connector]**&#x200B;活動：
 
-1. 選取 **[!UICONTROL Export to CRM]** 作業。
-1. 前往 **[!UICONTROL Remote object]** 下拉式清單，並選取流程涉及的物件。 此物件與聯結器設定期間在Adobe Campaign中建立的其中一個表格一致。
+1. 選取&#x200B;**[!UICONTROL Export to CRM]**&#x200B;作業。
+1. 移至&#x200B;**[!UICONTROL Remote object]**&#x200B;下拉式清單，並選取處理程式涉及的物件。 此物件與聯結器設定期間在Adobe Campaign中建立的其中一個表格一致。
 
    >[!IMPORTANT]
    >
-   >的匯出函式 **[!UICONTROL CRM Connector]** 活動可以在CRM端插入或更新欄位。 若要在CRM中啟用欄位更新，您必須指定遠端表格的主索引鍵。 如果索引鍵遺失，則會插入資料（而非更新）。
+   >**[!UICONTROL CRM Connector]**&#x200B;活動的匯出函式可以在CRM端插入或更新欄位。 若要在CRM中啟用欄位更新，您必須指定遠端表格的主索引鍵。 如果索引鍵遺失，則會插入資料（而非更新）。
 
-1. 檢查 **[!UICONTROL Export in Batches]** 如果您需要更快速的匯出。
+1. 若您需要更快速的匯出，請核取&#x200B;**[!UICONTROL Export in Batches]**。
 
    ![](assets/crm_export_config_2.png)
 
-1. 在 **[!UICONTROL Mapping]** 區段，按一下 **[!UICONTROL New]** 以指定要匯出的欄位及其在CRM中的對應。
+1. 在&#x200B;**[!UICONTROL Mapping]**&#x200B;區段中，按一下&#x200B;**[!UICONTROL New]**&#x200B;以指定要匯出的欄位及其在CRM中的對應。
 
    ![](assets/crm_export_config.png)
 
-   若要新增欄位，請按一下 **[!UICONTROL Add]** 按鈕，然後按一下 **[!UICONTROL Edit expression]** 圖示。
+   若要新增欄位，請按一下工具列中的&#x200B;**[!UICONTROL Add]**&#x200B;按鈕，然後按一下&#x200B;**[!UICONTROL Edit expression]**&#x200B;圖示。
 
    >[!NOTE]
    >
    >對於指定欄位，如果CRM端未定義相符專案，則無法更新值：會直接將值插入CRM。
 
-   如有需要，可透過 **[!UICONTROL Conversion]** 欄。 中會詳細說明可能的轉換型別 [資料格式](#data-format).
+   如有必要，請透過&#x200B;**[!UICONTROL Conversion]**&#x200B;欄的下拉式清單變更資料格式。 可能的轉換型別以[資料格式](#data-format)詳細說明。
 
    >[!NOTE]
    >
@@ -198,17 +198,17 @@ Adobe Campaign與CRM之間的資料同步會透過專用的工作流程活動執
 
 ![](assets/crm_task_import.png)
 
-此 **[!UICONTROL Default]** 模式會套用自動資料轉換，大部份情況下等於複製/貼上資料。 但是，會套用時區管理。
+**[!UICONTROL Default]**&#x200B;模式會套用自動資料轉換，在大多數情況下等於複製/貼上資料。 但是，會套用時區管理。
 
 其他可能的轉換包括：
 
 * **[!UICONTROL Date only]**：此模式會刪除日期+時間型別欄位。
-* **[!UICONTROL Without time offset]**：此模式會取消在預設模式中套用的時區管理。
-* **[!UICONTROL Copy/Paste]**：此模式會使用原始資料，例如字串（無轉換）。
+* **[!UICONTROL Without time offset]**：此模式會取消套用至預設模式的時區管理。
+* **[!UICONTROL Copy/Paste]**：此模式使用原始資料，例如字串（無轉換）。
 
 ### 錯誤處理 {#error-processing}
 
-在資料匯入或匯出的架構中，您可以將特定程式套用至錯誤和拒絕。 若要這麼做，請選取 **[!UICONTROL Process rejects]** 和 **[!UICONTROL Process errors]** 中的選項 **[!UICONTROL Behavior]** 標籤。
+在資料匯入或匯出的架構中，您可以將特定程式套用至錯誤和拒絕。 若要這麼做，請在&#x200B;**[!UICONTROL Behavior]**&#x200B;索引標籤中選取&#x200B;**[!UICONTROL Process rejects]**&#x200B;和&#x200B;**[!UICONTROL Process errors]**&#x200B;選項。
 
 ![](assets/crm_export_options.png)
 
@@ -224,9 +224,9 @@ Adobe Campaign與CRM之間的資料同步會透過專用的工作流程活動執
 
 >[!NOTE]
 >
->即使 **[!UICONTROL Process rejects]** 選項未啟用，則會針對每個已拒絕的欄產生警告，其中包含錯誤代碼和訊息。
+>即使未啟用&#x200B;**[!UICONTROL Process rejects]**&#x200B;選項，也會針對每個被拒絕的欄產生警告，其中包含錯誤碼和訊息。
 
-此 **[!UICONTROL Reject]** 輸出轉變可讓您存取包含與錯誤訊息和程式碼相關之特定欄的輸出結構描述。 若為Salesforce.com，此欄為 **errorSymbol** （錯誤符號，與錯誤碼不同）， **errorMessage** （錯誤內容的說明）。
+**[!UICONTROL Reject]**&#x200B;輸出轉換可讓您存取輸出結構描述，該結構描述包含與錯誤訊息和程式碼相關的特定欄。 對於Salesforce.com，此資料行是&#x200B;**errorSymbol** （錯誤符號，與錯誤碼不同）、**errorMessage** （錯誤內容的描述）。
 
 ## 匯入CRM中刪除的物件 {#importing-objects-deleted-in-the-crm}
 
@@ -234,9 +234,9 @@ Adobe Campaign與CRM之間的資料同步會透過專用的工作流程活動執
 
 若要這麼做，請套用下列步驟：
 
-1. 選取 **[!UICONTROL Import objects deleted in the CRM]** 作業。
-1. 前往 **[!UICONTROL Remote object]** 下拉式清單，並選取流程涉及的物件。 此物件與聯結器設定期間在Adobe Campaign中建立的其中一個表格一致。
-1. 指定要在中考慮的刪除期間 **[!UICONTROL Start date]** 和 **[!UICONTROL End date]** 欄位。 這些日期將包含在此期間中。
+1. 選取&#x200B;**[!UICONTROL Import objects deleted in the CRM]**&#x200B;作業。
+1. 移至&#x200B;**[!UICONTROL Remote object]**&#x200B;下拉式清單，並選取處理程式涉及的物件。 此物件與聯結器設定期間在Adobe Campaign中建立的其中一個表格一致。
+1. 指定要在&#x200B;**[!UICONTROL Start date]**&#x200B;和&#x200B;**[!UICONTROL End date]**&#x200B;欄位中考慮的刪除期間。 這些日期將包含在此期間中。
 
    ![](assets/crm_import_deleted_obj.png)
 
@@ -250,9 +250,9 @@ Adobe Campaign與CRM之間的資料同步會透過專用的工作流程活動執
 
 ![](assets/crm_delete_in_crm.png)
 
-此 **[!UICONTROL Behavior]** 索引標籤可讓您啟用拒絕處理。 此選項會為產生第二個輸出轉變 **[!UICONTROL CRM connector]** 活動。 有關詳細資訊，請參閱 [處理時發生錯誤](#error-processing).
+**[!UICONTROL Behavior]**&#x200B;索引標籤可讓您啟用拒絕處理。 此選項會為&#x200B;**[!UICONTROL CRM connector]**&#x200B;活動產生第二個輸出轉換。 如需詳細資訊，請參閱[處理錯誤](#error-processing)。
 
 >[!NOTE]
 >
->即使 **[!UICONTROL Process rejects]** 選項已停用，則會為每個已拒絕的欄產生警告。
+>即使&#x200B;**[!UICONTROL Process rejects]**&#x200B;選項已停用，也會針對每個已拒絕的欄產生警告。
 >

@@ -17,8 +17,8 @@ ht-degree: 4%
 >[!IMPORTANT]
 >
 >有些內建方案不可擴充：主要是針對已定義下列設定的方案：\
->**dataSource=&quot;file&quot;** 和 **mappingType=&quot;xmlFile&quot;**.\
->下列結構描述不可延伸： **xtk：entityBackupNew**， **xtk：entityBackupOriginal**， **xtk：entityOriginal**， **xtk：form**， **xtk：srcSchema**， **ncm：publishing**， **nl：monitoring**， **nms：calendar**， **nms：remoteTracking**， **nms：userAgentRules**， **xtk：builder**， **xtk：連線**， **xtk：dbInit**， **xtk：funcList**， **xtk：fusion**， **xtk： jst**， **xtk：navtree**， **xtk：queryDef**， **xtk：resourceMenu**， **xtk：schema**， **xtk：scriptContext**， **xtk：session**， **xtk：sqlSchema**， **xtk：strings**.
+>**dataSource=&quot;file&quot;**&#x200B;和&#x200B;**mappingType=&quot;xmlFile&quot;**。\
+>下列結構描述不可延伸： **xtk：entityBackupNew**、**xtk：entityBackupOriginal**、**xtk：entityOriginal**、**xtk：form**、**xtk：srcSchema**、**ncm：publishing**、**nl：monitoring**、**nms：calendar**、**nms：remoteTracking**、**ms：userAgentRules**，**xtk：builder**，**xtk：connections**，**xtk：dbInit**，**xtk：funcList**，**xtk：fusion**，**xtk： jst**，**xtk：navtree**，**xtk：queryDef**，{3 6}xtk：resourceMenu **，** xtk：schema **，** xtk：scriptContext **，** xtk：session **，** xtk：sqlSchema **，** xtk：strings **。**
 >此清單並非詳盡無遺。
 
 擴充現有方案的方法有兩種：
@@ -26,7 +26,7 @@ ht-degree: 4%
 1. 直接修改來源結構描述。
 1. 建立具有相同名稱但不同名稱空間的另一個結構描述。 優點在於您可以擴充表格而無需修改原始架構。
 
-   結構描述的根元素必須包含 **extendedSchema** 具有要擴充之綱要名稱作為值的屬性。
+   結構描述的根專案必須包含&#x200B;**extendedSchema**&#x200B;屬性，並將要擴充的結構描述名稱當作其值。
 
    擴充功能結構描述沒有自己的結構描述：從來源結構描述產生的結構描述會填入擴充功能結構描述的欄位。
 
@@ -34,7 +34,7 @@ ht-degree: 4%
    >
    >您不得修改應用程式的內建方案，而只能修改方案擴充機制。 否則，修改後的結構描述將不會在應用程式未來升級時更新。 這可能會導致Adobe Campaign的使用發生問題。
 
-   **範例**：擴充功能 **nms：recipient** 綱要。
+   **範例**： **nms：recipient**&#x200B;結構描述的延伸。
 
    ```
    <srcSchema extendedSchema="nms:recipient" name="recipient" namespace="cus">
@@ -44,7 +44,7 @@ ht-degree: 4%
    </srcSchema>
    ```
 
-   此 **nms：recipient** 擴充結構描述中，填入了擴充結構描述中的欄位：
+   **nms：recipient**&#x200B;擴充結構描述已填入擴充結構描述中的欄位：
 
    ```
    <schema dependingSchemas="cus:recipient" name="recipient" namespace="nms">
@@ -54,9 +54,9 @@ ht-degree: 4%
    </schema>
    ```
 
-   此 **相依綱要** 結構描述根元素上的屬性會參考擴充功能結構描述的相依性。
+   結構描述根專案上的&#x200B;**dependingSchemas**&#x200B;屬性會參考擴充功能結構描述的相依性。
 
-   此 **beystsTo** 欄位上的屬性會填入宣告該屬性的結構描述。
+   欄位上的&#x200B;**fallsTo**&#x200B;屬性會填入宣告它的結構描述。
 
 >[!IMPORTANT]
 >

@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## 簡單方法 {#simple-method}
 
-此方法包含透過插入「 」將HTTP呼叫傳送至重新導向伺服器 **`<img>`** HTML標籤，該標籤位於您要追蹤之網頁的HTML原始碼中。
+此方法包含傳送HTTP呼叫至重新導向伺服器，方法是在您要追蹤之網頁的HTML原始碼中插入&#x200B;**`<img>`** HTML標籤。
 
 >[!IMPORTANT]
 >
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 當您定義要在主控台中追蹤的頁面時，可以產生範例網頁追蹤標籤，以複製並貼到網頁的原始程式碼中。
 
-但是，當您使用TRANSACTION型別標籤時，必須使用JavaScript修改範例標籤，以便插入交易資訊（金額、專案數）和擴充功能架構定義的任何資訊。
+但是，當您使用TRANSACTION-type標籤時，必須使用JavaScript修改範例標籤，以便插入交易資訊（金額、專案數）和擴充功能結構描述定義的任何資訊。
 
 ### 靜態插入標籤 {#static-insertion-of-tags}
 
@@ -88,7 +88,7 @@ ht-degree: 0%
 
 如果網頁是以動態方式產生，您可以在產生頁面時新增網頁追蹤標籤。
 
-**範例**：網頁追蹤已新增到JSP。
+**範例**：網頁追蹤已新增至JSP。
 
 ```
 <%@page import="java.util.Random" %>
@@ -125,7 +125,7 @@ ht-degree: 0%
 
 如果您希望控制傳送至重新導向伺服器的資訊，最可靠的方式是使用頁面產生語言自行同步執行HTTP查詢。
 
-您建構的URL必須符合中定義的語法規則。 [網路追蹤標籤：定義](../../configuration/using/web-tracking-tag-definition.md).
+您建構的URL必須遵守[網頁追蹤標籤](../../configuration/using/web-tracking-tag-definition.md)中定義的語法規則。
 
 ![](assets/d_ncs_integration_webtracking_structure3.png)
 
@@ -133,7 +133,7 @@ ht-degree: 0%
 >
 >重新導向和網頁追蹤使用Cookie，執行同步HTTP呼叫的網頁伺服器務必要與重新導向伺服器位在相同網域中。 各種HTTP交換必須傳遞「id」、「uuid」和「uuid230」Cookie。
 
-**範例**：在Java中動態產生，收件者使用其帳號進行驗證。
+**範例**：在Java中動態產生，收件者驗證使用其帳號。
 
 ```
 [...]

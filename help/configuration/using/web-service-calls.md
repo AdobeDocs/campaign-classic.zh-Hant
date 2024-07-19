@@ -16,7 +16,7 @@ ht-degree: 1%
 
 ## 一般資訊 {#general-information}
 
-所有API方法都會以網站服務的形式呈現。 這可讓您透過SOAP呼叫管理所有Adobe Campaign函式，這是Adobe Campaign應用程式伺服器的原生入口點。 Adobe Campaign主控台本身只使用SOAP呼叫。
+所有API方法都會以網站服務的形式呈現。 這可讓您透過SOAP呼叫管理所有Adobe Campaign功能，這是Adobe Campaign應用程式伺服器的原生入口點。 Adobe Campaign主控台本身只使用SOAP呼叫。
 
 Web服務可讓您從協力廠商系統建立許多應用程式：
 
@@ -28,7 +28,7 @@ Web服務可讓您從協力廠商系統建立許多應用程式：
 
 在Adobe Campaign應用程式伺服器上實作的Web服務定義，可從資料結構描述取得。
 
-Web服務在資料綱要的文法中說明，並且可從以下網址取得： **`<methods>`** 元素。
+Web服務在資料結構描述的文法中說明，並可從&#x200B;**`<methods>`**&#x200B;元素取得。
 
 ```
 <methods>
@@ -43,15 +43,15 @@ Web服務在資料綱要的文法中說明，並且可從以下網址取得： *
 </methods>
 ```
 
-以下是方法定義的範例，稱為 **Generateform**.
+以下是名為&#x200B;**GenerateForm**&#x200B;之方法的定義範例。
 
-服務的說明開頭為 `<method>` 元素。 方法的引數清單是從  `<parameters>` 元素。 每個引數由名稱、型別（布林值、字串、DOMElement等）指定 和說明。 具有「out」值的「inout」屬性可讓您指定「result」引數在SOAP呼叫輸出處。
+服務的說明以`<method>`專案開頭。 已從`<parameters>`專案完成方法的引數清單。 每個引數由名稱、型別（布林值、字串、DOMElement等）指定 和說明。 具有「out」值的「inout」屬性可讓您指定「result」引數位於SOAP呼叫輸出處。
 
 「static」屬性（值為「true」）的存在說明此方法為static，這表示方法的所有引數都必須宣告。
 
 「const」方法隱含地以關聯結構描述格式的XML檔案作為其輸入。
 
-的完整說明 `<method>` Adobe Campaign結構描述的元素可在「結構描述參考」章節中取得，位於 [方法](../../configuration/using/schema/method.md)
+在[方法](../../configuration/using/schema/method.md)下的「結構描述參考」章節中，提供Adobe Campaign結構描述的`<method>`元素的完整說明
 
 「xtk：queryDef」結構描述中的「const」型別「ExecuteQuery」方法範例：
 
@@ -78,7 +78,7 @@ https://`<server>`/nl/jsp/schemawsdl.jsp？schema=`<schema>`
 
 替換為：
 
-* **`<server>`**：Adobe Campaign應用程式伺服器(nlserver web)
+* **`<server>`**： Adobe Campaign應用程式伺服器(nlserver web)
 * **`<schema>`**：結構描述識別金鑰(namespace：schema_name)
 
 ### 結構描述「xtk：queryDef」的「ExecuteQuery」方法範例 {#example-on-the--executequery--method-of-schema--xtk-querydef-}
@@ -91,7 +91,7 @@ WSDL說明首先會定義用來形成訊息的型別，這些訊息在「連線�
 
 #### 類型 {#types}
 
-型別定義以XML結構描述為基礎。 在我們的範例中，「ExecuteQuery」方法採用「s：string」字串和XML檔案(`<s:complextype>`)作為引數。 方法(&quot;ExecuteQueryResponse&quot;)的傳回值是XML檔案(  `<s:complextype>`)。
+型別定義以XML結構描述為基礎。 在我們的範例中，&quot;ExecuteQuery&quot;方法以&quot;s：string&quot;字串和XML檔案(`<s:complextype>`)作為引數。 方法(&quot;ExecuteQueryResponse&quot;)的傳回值是XML檔案( `<s:complextype>`)。
 
 ```
 <types>
@@ -127,7 +127,7 @@ WSDL說明首先會定義用來形成訊息的型別，這些訊息在「連線�
 
 #### 訊息 {#messages}
 
-此 `<message>` 說明要傳送的一組欄位的名稱和型別。 方法使用兩則訊息作為引數(&quot;ExecuteQueryIn&quot;)及傳回值(&quot;ExecuteQueryOut&quot;)來傳遞。
+`<message>`說明要傳送的一組欄位的名稱和型別。 方法使用兩則訊息作為引數(&quot;ExecuteQueryIn&quot;)及傳回值(&quot;ExecuteQueryOut&quot;)來傳遞。
 
 ```
 <message name="ExecuteQueryIn">
@@ -141,7 +141,7 @@ WSDL說明首先會定義用來形成訊息的型別，這些訊息在「連線�
 
 #### 連線埠型別 {#porttype}
 
-此 `<porttype>` 與產生回應（「輸出」）的查詢（「輸入」）所觸發的「ExecuteQuery」作業上的訊息建立關聯。
+`<porttype>`會與由產生回應（「輸出」）的查詢（「輸入」）所觸發的「ExecuteQuery」作業上的訊息建立關聯。
 
 ```
 <portType name="queryDefMethodsSoap">
@@ -154,7 +154,7 @@ WSDL說明首先會定義用來形成訊息的型別，這些訊息在「連線�
 
 #### 繫結 {#binding}
 
-此 `<binding>` 部分指定SOAP通訊協定( `<soap:binding>` )、HTTP中的資料傳輸（「transport」屬性的值）和「ExecuteQuery」作業的資料格式。 SOAP信封的主體直接包含訊息區段，而不進行轉換。
+`<binding>`部分指定SOAP通訊協定( `<soap:binding>`)、HTTP中的資料傳輸（「傳輸」屬性的值）以及「ExecuteQuery」作業的資料格式。 SOAP信封的正文直接包含訊息區段，而不進行轉換。
 
 ```
 <binding name="queryDefMethodsSoap" type="tns:queryDefMethodsSoap">
@@ -173,7 +173,7 @@ WSDL說明首先會定義用來形成訊息的型別，這些訊息在「連線�
 
 #### 服務 {#service}
 
-此 `<service>` 部分說明「XtkQueryDef」服務，其URI位於Adobe Campaign應用程式伺服器的URL上。
+`<service>`部分說明「XtkQueryDef」服務，其URI位於Adobe Campaign應用程式伺服器的URL上。
 
 ```
 <service name="XtkQueryDef">
@@ -185,15 +185,15 @@ WSDL說明首先會定義用來形成訊息的型別，這些訊息在「連線�
 
 ## 連線能力 {#connectivity}
 
-Adobe Campaign已引進以下內容，以提高驗證機制的安全性 [安全性區域](../../installation/using/security-zones.md) 和工作階段管理設定。
+Adobe Campaign已匯入[安全性區域](../../installation/using/security-zones.md)和工作階段管理設定，以提高驗證機制的安全性。
 
 有兩種可用的驗證模式：
 
-* **透過呼叫登入方法()**. 此模式會產生工作階段權杖和安全性權杖。 這是最安全的模式，因此也是最推薦的模式。
+* **透過呼叫登入方法()**。 此模式會產生工作階段權杖和安全性權杖。 這是最安全的模式，因此也是最推薦的模式。
 
 或
 
-* **透過Adobe Campaign登入+密碼** 會建立工作階段權杖。 工作階段權杖會在設定的期間後自動到期。 不建議使用此模式，因為需要減少某些區域設定（allowUserPassword=&quot;true&quot;及sessionTokenOnly=&quot;true&quot;）的應用程式安全性設定。
+* 透過Adobe Campaign登入+建立工作階段權杖的密碼&#x200B;****。 工作階段權杖會在設定的期間後自動到期。 不建議使用此模式，因為需要減少某些區域設定（allowUserPassword=&quot;true&quot;及sessionTokenOnly=&quot;true&quot;）的應用程式安全性設定。
 
 ### 工作階段權杖特性 {#session-token-characteristics}
 
@@ -237,7 +237,7 @@ Adobe Campaign已引進以下內容，以提高驗證機制的安全性 [安全�
 
 ### 呼叫範例 {#call-examples}
 
-* 使用 **HttpSoapConnection/SoapService**：
+* 使用&#x200B;**HttpSoapConnection/SoapService**：
 
 ```
   
@@ -270,11 +270,11 @@ Adobe Campaign已引進以下內容，以提高驗證機制的安全性 [安全�
   logInfo(queryRes[0].toXMLString())
 ```
 
-* 使用 **HttpServletRequest**：
+* 使用&#x200B;**HttpServletRequest**：
 
 >[!NOTE]
 >
->以下專案中使用的URL **HttpServletRequest** 呼叫必須位於的url許可權區段中的允許清單 **serverConf.xml** 檔案。 伺服器本身的URL亦是如此。
+>下列&#x200B;**HttpServletRequest**&#x200B;呼叫中使用的URL必須在&#x200B;**serverConf.xml**&#x200B;檔案的URL許可權區段中的允許清單上。 伺服器本身的URL亦是如此。
 
 登入執行()：
 

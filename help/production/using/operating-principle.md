@@ -25,17 +25,17 @@ Adobe Campaign模組有許多。 有些會持續運作，而有些則偶爾會�
 
 Adobe Campaign模組分為三種型別：
 
-* 多執行個體模組：針對所有執行個體執行單一程式。 這適用於下列模組： **網頁**， **syslogd**， **trackinglogd** 和 **看門狗** (活動來自 **config-default.xml** 檔案)。
-* 單一執行個體模組：每個執行個體會執行一個處理序。 這適用於下列模組： **mta**， **wfserver**， **inMail**， **簡訊** 和 **stat** (活動來自 **config-`<instance>`.xml** 檔案)。
-* 公用程式模組：這些模組會偶爾執行，以執行偶爾或重複的作業(**cleanup**， **設定**、下載追蹤記錄檔等)。
+* 多執行個體模組：針對所有執行個體執行單一程式。 這適用於下列模組： **web**、**syslogd**、**trackinglogd**&#x200B;和&#x200B;**watchdog** （來自&#x200B;**config-default.xml**&#x200B;檔案的活動）。
+* 單一執行個體模組：每個執行個體會執行一個處理序。 這適用於下列模組： **mta**、**wfserver**、**inMail**、**sms**&#x200B;和&#x200B;**stat** （來自&#x200B;**config-`<instance>`.xml**&#x200B;檔案的活動）。
+* 公用程式模組：這些模組會偶爾執行，以執行偶爾或重複的作業（**清理**、**設定**、下載追蹤記錄等）。
 
-使用命令列工具執行模組管理 **nlserver** 安裝在中 **紙匣** 安裝資料夾的目錄。
+使用安裝資料夾的&#x200B;**bin**&#x200B;目錄中安裝的命令列工具&#x200B;**nlserver**&#x200B;來執行模組管理。
 
-的一般語法 **nlserver** 工具如下：
+**nlserver**&#x200B;工具的一般語法如下：
 
 **nlserver `<command>``<command arguments>`**
 
-如需可用模組的清單，請使用 **nlserver** 命令。
+如需可用模組的清單，請使用&#x200B;**nlserver**&#x200B;命令。
 
 下表詳細說明可用的模組：
 
@@ -50,7 +50,7 @@ Adobe Campaign模組分為三種型別：
 | 匯入 | 匯入至命令列：可讓您將在Adobe Campaign使用者端主控台中建立的匯入模型傳送至命令列。 |
 | inMail | 傳入郵件分析器 |
 | installset | 客戶安裝檔案的可用性 |
-| javascript | 使用對SOAP API的存取權執行JavaScript指令碼。 |
+| javascript | 執行JavaScript指令碼，並可存取SOAP API。 |
 | 工作 | 命令列處理 |
 | 合併 | 表單合併 |
 | midSourcing | 在中間來源模式下復原傳遞資訊 |
@@ -72,14 +72,14 @@ Adobe Campaign模組分為三種型別：
 | 追蹤 | 合併和擷取追蹤記錄 |
 | trackinglogd | 追蹤記錄檔寫入和清除伺服器 |
 | 看門狗 | 啟動和監視執行個體 |
-| 網頁 | 應用程式伺服器（HTTP和SOAP） |
+| 網頁 | 應用程式伺服器(HTTP和SOAP) |
 | wfserver | 工作流程伺服器 |
 
 >[!IMPORTANT]
 >
 >最後有一個模組：連結至應用程式伺服器的追蹤和轉送模組，為了效能，會透過原生機制透過動態程式庫整合至Apache或IIS網頁伺服器。 Adobe Campaign命令無法讓您啟動或管理此模組。 因此，您必須使用Web伺服器本身的命令。
 
-模組使用方式及其引數的語法會使用下列命令顯示： **nlserver `[module]` -？**
+使用下列命令顯示模組使用方式及其引數的語法： **nlserver `[module]` -？**
 
 例如：
 

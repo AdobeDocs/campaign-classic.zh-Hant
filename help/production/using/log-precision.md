@@ -29,7 +29,7 @@ ht-degree: 2%
 
 Adobe Campaign可以使用兩個記錄層級進行操作：
 
-1. 此 **詳細資訊** 模式是標準層級之後的第一個層級。 下列指令會啟動它：
+1. **詳細資訊**&#x200B;模式是標準層級之後的第一個層級。 下列指令會啟動它：
 
    ```
    nlserver restart <MODULE_NAME> -verbose 
@@ -41,7 +41,7 @@ Adobe Campaign可以使用兩個記錄層級進行操作：
    nlserver restart <MODULE_NAME> -noconsole
    ```
 
-1. 此 **TraceFilter** 模式，可讓您儲存最大數量的記錄。 它透過下列命令啟動：
+1. **TraceFilter**&#x200B;模式可讓您儲存最多記錄數。 它透過下列命令啟動：
 
    ```
    nlserver stop <MODULE_NAME>; nlserver <MODULE_NAME> -verbose -tracefilter:*
@@ -49,9 +49,9 @@ Adobe Campaign可以使用兩個記錄層級進行操作：
 
    >[!NOTE]
    >
-   >如果您使用 **tracefilter：&#42;**，所有記錄型別都會啟動： ncm、rdr、nms、jst、timing、wdbc、ldap、soap、xtk、xtkquery、session、xtkwriter、網路、pop3、inmail\
-   最有用的記錄型別包括： **wdbc** （顯示所有SQL查詢）、 **soap** （顯示所有SOAP呼叫）、 **ldap** （在驗證後顯示所有LDAP查詢）， **xtkquery** （顯示所有querydef清單）。\
-   您可以分別使用它們(**tracefilter：soap，wdbc** 例如)。 您也可以全部啟用這些變數，並選擇排除某些其他變數： **-tracefilter：&#42;，！soap**
+   >如果您使用&#x200B;**tracefilter：&#42;**，則會啟動所有記錄型別： ncm、rdr、nms、jst、timing、wdbc、ldap、soap、xtk、xtkquery、session、xtkwriter、網路、pop3、inmail\
+   最有用的記錄型別是： **wdbc** （顯示所有SQL查詢）、**soap** (顯示所有SOAP呼叫)、**ldap** （驗證後顯示所有LDAP查詢）、**xtkquery** （顯示所有querydef的清單）。\
+   您可以個別使用它們（例如&#x200B;**tracefilter：soap，wdbc**）。 您也可以全部啟用它們，並選擇排除某些其他專案： **-tracefilter：&#42;，！soap**
 
    檢查錯誤是否確實發生，然後以正常方式重新啟動程式：
 
@@ -71,7 +71,7 @@ Adobe Campaign可以使用兩個記錄層級進行操作：
 nlserver pdump -who
 ```
 
-接著，關閉並重新啟動模組 **TraceFilter** 模式：
+接著，在&#x200B;**TraceFilter**&#x200B;模式中關閉並重新啟動模組：
 
 ```
 nlserver stop web; LD_PRELOAD=libjsig.so nlserver web -tomcat -verbose -tracefilter:* -tracefile:web_debug@default
@@ -85,7 +85,7 @@ nlserver stop mta@<INSTANCE_NAME>; nlserver mta -instance:<INSTANCE_NAME> -trace
 
 >[!NOTE]
 >
-此 **追蹤檔** 模式可讓您儲存記錄。 在上述範例中，記錄檔會儲存在 **var/`<instance-name>`/mta_debug.log** 和 **var/default/web_debug.log** 檔案。
+**追蹤檔**&#x200B;模式可讓您儲存記錄。 在上述範例中，記錄檔儲存在&#x200B;**var/`<instance-name>`/mta_debug.log**&#x200B;和&#x200B;**var/default/web_debug.log**&#x200B;檔案中。
 
 >[!IMPORTANT]
 >
@@ -98,4 +98,4 @@ nlserver web -tomcat -verbose -tracefilter：&#42;
 nlserver restart web -tomcat -noconsole
 ```
 
-檔案中有所有資訊 **/usr/local/neolane/nl6/var/default/log/web.log**.
+所有資訊都可在檔案&#x200B;**/usr/local/neolane/nl6/var/default/log/web.log**&#x200B;中取得。

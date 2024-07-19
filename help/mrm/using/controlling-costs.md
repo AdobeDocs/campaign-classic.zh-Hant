@@ -30,33 +30,33 @@ Adobe Campaign可讓您控制已排程、已確認及已開立商業發票的行
 
 1. 定義預算
 
-   有關詳細資訊，請參閱 [建立預算](#creating-a-budget).
+   如需詳細資訊，請參閱[建立預算](#creating-a-budget)。
 
 1. 定義成本計算方法
 
-   已為服務提供者定義成本結構。 另請參閱 [建立服務提供者及其成本類別](../../campaign/using/providers-stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
+   已為服務提供者定義成本結構。 請參閱[建立服務提供者及其成本類別](../../campaign/using/providers-stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories)。
 
 1. 定義行銷活動成本（傳遞/任務）
 
-   傳遞和工作產生的成本會針對行銷活動範本個別或全域輸入。 另請參閱 [成本與庫存的計算](../../campaign/using/marketing-campaign-deliveries.md#calculation-of-costs-and-stocks).
+   傳遞和工作產生的成本會針對行銷活動範本個別或全域輸入。 請參閱[成本與庫存的計算](../../campaign/using/marketing-campaign-deliveries.md#calculation-of-costs-and-stocks)。
 
 1. 合併
 
    根據任務、傳遞和行銷活動的進度狀態，將計算成本並傳遞至相應的預算。
 
-   當行銷活動的建立足夠進階時，行銷活動預算的進度狀態可以變更為 **[!UICONTROL Specified]**. 然後會自動輸入方案的已計算成本，以及促銷活動上已計算的成本。 另請參閱 [成本承諾、計算及收費](#cost-commitment--calculation-and-charging).
+   當行銷活動的建立已足夠進階時，行銷活動預算的進度狀態可以變更為&#x200B;**[!UICONTROL Specified]**。 然後會自動輸入方案的已計算成本，以及促銷活動上已計算的成本。 檢視[成本承諾、計算及收費](#cost-commitment--calculation-and-charging)。
 
 ## 建立預算 {#creating-a-budget}
 
-預算是在地圖中建立的，透過 **[!UICONTROL Campaign management > Budgets]** 節點。 此 **[!UICONTROL New]** 工具列中的按鈕可讓您建立預算。
+透過&#x200B;**[!UICONTROL Campaign management > Budgets]**&#x200B;節點在對應中建立預算。 工具列中的&#x200B;**[!UICONTROL New]**&#x200B;按鈕可讓您建立預算。
 
 * 新增預算
 
-  按一下 **[!UICONTROL New]** 圖示、命名並儲存預算。
+  按一下&#x200B;**[!UICONTROL New]**&#x200B;圖示，命名並儲存預算。
 
 * 輸入初始金額
 
-  在相關欄位中指出配置的金額。 其他金額會自動輸入。 另請參閱 [計算金額](#calculating-amounts).
+  在相關欄位中指出配置的金額。 其他金額會自動輸入。 請參閱[計算金額](#calculating-amounts)。
 
 * 定義有效期間
 
@@ -64,7 +64,7 @@ Adobe Campaign可讓您控制已排程、已確認及已開立商業發票的行
 
 * 費用
 
-  建立費用類別，將行銷活動、任務等成本指派給此預算。 可連結。 另請參閱 [費用類別](#expense-categories).
+  建立費用類別，將行銷活動、任務等成本指派給此預算。 可連結。 檢視[費用類別](#expense-categories)。
 
   ![](assets/s_ncs_user_budget_create_and_save.png)
 
@@ -72,7 +72,7 @@ Adobe Campaign可讓您控制已排程、已確認及已開立商業發票的行
 >
 >您可以選取相關預算。
 >
->有關詳細資訊，請參閱 [將預算連結至另一個預算](#linking-a-budget-to-another).
+>如需詳細資訊，請參閱[將預算連結至其他](#linking-a-budget-to-another)。
 
 ### 計算金額 {#calculating-amounts}
 
@@ -80,7 +80,7 @@ Adobe Campaign可讓您控制已排程、已確認及已開立商業發票的行
 
 >[!NOTE]
 >
->為分類輸入的金額必須符合中定義的預算信封 **[!UICONTROL Allocated]** 欄位。
+>為類別輸入的金額必須符合在&#x200B;**[!UICONTROL Allocated]**&#x200B;欄位中定義的預算信封。
 
 對於行銷活動，根據承諾程度，可以為未來動作計畫、承諾或保留成本。
 
@@ -88,28 +88,28 @@ Adobe Campaign可讓您控制已排程、已確認及已開立商業發票的行
 
 >[!CAUTION]
 >
->建立行銷活動時，中的進度狀態 **[!UICONTROL Budget]** 必須設為 **[!UICONTROL Defined]** 執行時要考慮的成本。 如果狀態為 **[!UICONTROL Being edited]**，成本將不會合併。
+>建立行銷活動時，**[!UICONTROL Budget]**&#x200B;中的進度狀態必須設為&#x200B;**[!UICONTROL Defined]**，執行時才會考慮成本。 如果狀態為&#x200B;**[!UICONTROL Being edited]**，則不會合併成本。
 >   
->選項 **[!UICONTROL Commitment level]** 代表將成本記入預算之前對未來的預測。 根據行銷活動、任務或傳遞的進度，您可以決定指派較高或較低的承諾層次(1)。 已計畫，2. 保留， 3. 已認可)。
+>選項&#x200B;**[!UICONTROL Commitment level]**&#x200B;代表將成本記入預算之前對未來的預測。 根據行銷活動、任務或傳遞的進度，您可以決定指派較高或較低的承諾層次(1)。 已計畫，2. 保留， 3. 已認可)。
 
 例如，網路行銷活動的預計計畫成本為45,000歐元。
 
 ![](assets/s_user_edit_budget_node_impact_0.png)
 
-針對行銷活動，當預算建立狀態設定為 **[!UICONTROL Defined]**，行銷活動的實際成本（或如果沒有，則計算成本）將結轉至預算總計。
+對於行銷活動，當預算建立狀態設定為&#x200B;**[!UICONTROL Defined]**&#x200B;時，行銷活動的實際成本（或如果沒有計算成本）將結轉至預算總計。
 
 ![](assets/s_user_budget_in_op_a.png)
 
-根據行銷活動預算的承諾水準，金額將輸入於 **[!UICONTROL Planned]**， **[!UICONTROL Reserved]** 或 **[!UICONTROL Committed]** 欄位。
+根據行銷活動預算的承諾水準，金額將輸入到&#x200B;**[!UICONTROL Planned]**、**[!UICONTROL Reserved]**&#x200B;或&#x200B;**[!UICONTROL Committed]**&#x200B;欄位中。
 
 可修改承諾等級：
 
-* 在 **行銷活動** 層級，在 **[!UICONTROL Budget]** 視窗，可在 **[!UICONTROL Edit]** 標籤。 這是設定預算、成本和費用的位置。
-* 在 **任務** 層級，在 **[!UICONTROL Expenses and revenues]** 視窗。
+* 在&#x200B;**行銷活動**&#x200B;層級的&#x200B;**[!UICONTROL Budget]**&#x200B;視窗中，可在&#x200B;**[!UICONTROL Edit]**&#x200B;索引標籤中找到。 這是設定預算、成本和費用的位置。
+* 在&#x200B;**工作**&#x200B;層級的&#x200B;**[!UICONTROL Expenses and revenues]**&#x200B;視窗中。
 
 ![](assets/s_user_op_engagement_level_costs.png)
 
-預算為時 **[!UICONTROL Reserved]**，系統會自動針對計費預算執行更新。
+當預算為&#x200B;**[!UICONTROL Reserved]**&#x200B;時，會自動針對已計費預算執行更新。
 
 ![](assets/s_user_edit_budget_node_impact_2.png)
 
@@ -117,13 +117,13 @@ Adobe Campaign可讓您控制已排程、已確認及已開立商業發票的行
 
 ![](assets/s_user_edit_budget_node_impact_task.png)
 
-當費用性列管產生商業發票且已支付商業發票時，其金額會輸入至 **[!UICONTROL Invoiced]** 欄位。
+當費用性列管產生商業發票且已支付商業發票時，其金額會輸入&#x200B;**[!UICONTROL Invoiced]**&#x200B;欄位。
 
 ### 費用類別 {#expense-categories}
 
-這些金額可以分散在數個費用類別中，以提高資料的可讀性，並更詳細地報告行銷投資。 費用類別是在預算建立期間透過以下方式定義的： **[!UICONTROL Budgets]** 樹狀結構的節點。
+這些金額可以分散在數個費用類別中，以提高資料的可讀性，並更詳細地報告行銷投資。 費用類別是在預算建立期間透過樹狀結構的&#x200B;**[!UICONTROL Budgets]**&#x200B;節點定義的。
 
-若要新增類別，請按一下 **[!UICONTROL Add]** 按鈕。
+若要新增類別，請按一下視窗下方的&#x200B;**[!UICONTROL Add]**&#x200B;按鈕。
 
 ![](assets/s_user_budget_category.png)
 
@@ -131,7 +131,7 @@ Adobe Campaign可讓您控制已排程、已確認及已開立商業發票的行
 
 ### 將預算連結至其他預算 {#linking-a-budget-to-another}
 
-您可以將預算連結至主要預算。 若要這麼做，請選取以下專案中的主要預算： **[!UICONTROL related budget]** 次要預算的欄位。
+您可以將預算連結至主要預算。 若要這麼做，請在次要預算的&#x200B;**[!UICONTROL related budget]**&#x200B;欄位中選取主要預算。
 
 ![](assets/budget_link.png)
 
@@ -157,7 +157,7 @@ Adobe Campaign可讓您控制已排程、已確認及已開立商業發票的行
 * 對應的發票明細行（僅限MRM）
 * 依成本分類計算的成本清單（如果存在成本結構）
 
-在上述範例中，編輯的費用行包含為計算的成本 **新卡片** 的傳遞 **忠誠度春季套件** 行銷活動。 編輯傳送時， **[!UICONTROL Direct Mail]** 索引標籤可讓您檢視費用行的計算方式。
+在上述範例中，編輯的費用行包含針對&#x200B;**忠誠度春季套裝**&#x200B;行銷活動的&#x200B;**新卡片**&#x200B;傳遞計算的成本。 編輯傳遞時，**[!UICONTROL Direct Mail]**&#x200B;索引標籤可讓您檢視費用行的計算方式。
 
 此交貨的成本計算是以相關服務提供者選取的成本類別為基礎：
 
@@ -169,7 +169,7 @@ Adobe Campaign可讓您控制已排程、已確認及已開立商業發票的行
 
 >[!NOTE]
 >
->成本類別與結構顯示於 [建立服務提供者及其成本類別](../../campaign/using/providers-stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
+>在[建立服務提供者及其成本類別](../../campaign/using/providers-stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories)中呈現成本類別和結構。
 
 ## 成本承諾、計算及收費 {#cost-commitment--calculation-and-charging}
 
@@ -181,9 +181,9 @@ Adobe Campaign可讓您控制已排程、已確認及已開立商業發票的行
 
 1. 預估佈建成本
 
-   預估臨時成本是行銷活動流程的成本預估值。 只要正在編輯，輸入金額就不會合併。 它必須具有 **[!UICONTROL Specified]** 計算時要考慮之金額輸入的狀態。
+   預估臨時成本是行銷活動流程的成本預估值。 只要正在編輯，輸入金額就不會合併。 輸入的金額必須具有&#x200B;**[!UICONTROL Specified]**&#x200B;狀態，才能在計算中列入考量。
 
-   此金額以手動方式輸入，並可劃分為數個費用類別。 若要降低成本，請按一下 **[!UICONTROL Breakdown...]** 連結，然後 **[!UICONTROL Add]** 按鈕以定義新金額。
+   此金額以手動方式輸入，並可劃分為數個費用類別。 若要計算成本，請按一下&#x200B;**[!UICONTROL Breakdown...]**&#x200B;連結，然後按&#x200B;**[!UICONTROL Add]**&#x200B;按鈕以定義新金額。
 
    ![](assets/s_user_edit_budget_tab_ventil.png)
 
@@ -202,7 +202,7 @@ Adobe Campaign可讓您控制已排程、已確認及已開立商業發票的行
 
    >[!NOTE]
    >
-   >此 **[!UICONTROL Breakdown]** 連結可讓您檢視計算的詳細資訊和上次成本計算日期。
+   >**[!UICONTROL Breakdown]**&#x200B;連結可讓您檢視計算的詳細資訊和上次成本計算日期。
 
 1. 實際成本
 
@@ -212,7 +212,7 @@ Adobe Campaign可讓您控制已排程、已確認及已開立商業發票的行
 
 成本透過成本結構計算，並計入相關行銷活動、傳遞或任務中所選的預算。
 
-您可以透過預算核准，對已承諾給行銷活動的金額執行檢查。 您可在行銷活動中建立其他查核點樣式的工作，以設定其他核准。 另請參閱 [任務型別](../../mrm/using/creating-and-managing-tasks.md#types-of-task).
+您可以透過預算核准，對已承諾給行銷活動的金額執行檢查。 您可在行銷活動中建立其他查核點樣式的工作，以設定其他核准。 檢視[工作型別](../../mrm/using/creating-and-managing-tasks.md#types-of-task)。
 
 ### 範例 {#example}
 
@@ -224,17 +224,17 @@ Adobe Campaign可讓您控制已排程、已確認及已開立商業發票的行
 
 #### 步驟1 — 建立預算 {#step-1---creating-the-budget}
 
-1. 建立新的預算，透過 **[!UICONTROL Campaign management > Budgets]** 節點。
+1. 透過&#x200B;**[!UICONTROL Campaign management > Budgets]**&#x200B;節點建立新預算。
 
-1. 定義10,000歐元的預算，在 **[!UICONTROL Allocated]** 欄位屬於 **[!UICONTROL Amounts]** 區段。 在視窗的下半部新增兩個費用類別：
+1. 在&#x200B;**[!UICONTROL Amounts]**&#x200B;區段的&#x200B;**[!UICONTROL Allocated]**&#x200B;欄位中定義10,000歐元的預算。 在視窗的下半部新增兩個費用類別：
 
 ![](assets/s_user_cost_mgmt_sample_1.png)
 
 #### 步驟2 — 設定服務提供者並定義成本結構 {#step-2---configuring-the-service-provider-and-defining-the-cost-structures}
 
-1. 從建立服務提供者及其成本結構的服務範本 **[!UICONTROL Administration > Campaigns]** 節點。 有關詳細資訊，請參閱 [建立服務提供者及其成本類別](../../campaign/using/providers-stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
+1. 從&#x200B;**[!UICONTROL Administration > Campaigns]**&#x200B;節點建立具有成本結構的服務提供者與服務範本。 如需詳細資訊，請參閱[建立服務提供者及其成本類別](../../campaign/using/providers-stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories)。
 
-   如果是直接郵件傳遞，請建立成本類別 **[!UICONTROL Envelopes]** （型別114x229和162x229）， **[!UICONTROL Postage]** 和 **[!UICONTROL Print]** （型別A3和A4）。 然後建立下列成本結構：
+   如果是直接郵件傳遞，請建立成本類別&#x200B;**[!UICONTROL Envelopes]** （型別114x229和162x229）、**[!UICONTROL Postage]**&#x200B;和&#x200B;**[!UICONTROL Print]** （型別A3和A4）。 然後建立下列成本結構：
 
    ![](assets/s_user_cost_mgmt_sample_2.png)
 
@@ -244,11 +244,11 @@ Adobe Campaign可讓您控制已排程、已確認及已開立商業發票的行
 
    針對作業，建立下列兩個成本類別：
 
-   * **[!UICONTROL Room reservation]** （小房間和大房間），具有 **固定** 金額為300與500歐元的成本結構：
+   * **[!UICONTROL Room reservation]** （小房間與大房間），具有&#x200B;**固定**&#x200B;成本結構，金額為300與500歐元：
 
    ![](assets/s_user_cost_mgmt_sample_6.png)
 
-   * **[!UICONTROL Creation]** (**內容範本** type)，具有 **每日** 300歐元的成本結構：
+   * **[!UICONTROL Creation]** （**內容範本**&#x200B;型別），具有300歐元的&#x200B;**每日**&#x200B;成本結構：
 
    ![](assets/s_user_cost_mgmt_sample_7.png)
 
@@ -266,7 +266,7 @@ Adobe Campaign可讓您控制已排程、已確認及已開立商業發票的行
 
    ![](assets/s_user_cost_mgmt_sample_9.png)
 
-1. 按一下 **[!UICONTROL Ok]** 然後 **[!UICONTROL Save]** 以確認此資訊。 行銷活動的已計算成本隨後會以預估臨時成本更新。
+1. 按一下&#x200B;**[!UICONTROL Ok]**，然後按&#x200B;**[!UICONTROL Save]**&#x200B;以確認此資訊。 行銷活動的已計算成本隨後會以預估臨時成本更新。
 
 #### 步驟4 — 建立直接郵件傳送 {#step-4---creating-the-direct-mail-delivery}
 
@@ -290,7 +290,7 @@ Adobe Campaign可讓您控制已排程、已確認及已開立商業發票的行
 
    ![](assets/s_user_cost_mgmt_sample_10b.png)
 
-有關傳遞的費用行已新增到 **[!UICONTROL Edit > Budget]** 行銷活動的索引標籤。 編輯以檢視計算的詳細資訊。
+有關傳遞的費用行已新增至行銷活動的&#x200B;**[!UICONTROL Edit > Budget]**&#x200B;索引標籤中。 編輯以檢視計算的詳細資訊。
 
 ![](assets/s_user_cost_mgmt_sample_11.png)
 
@@ -302,21 +302,21 @@ Adobe Campaign可讓您控制已排程、已確認及已開立商業發票的行
 
 #### 步驟5 — 建立任務 {#step-5---creating-tasks}
 
-對於此行銷活動，我們將新增先前為其建立成本結構的兩個任務(請參閱 [步驟2 — 設定服務提供者並定義成本結構](#step-2---configuring-the-service-provider-and-defining-the-cost-structures))。 若要這麼做，請在行銷活動控制面板中，按一下 **[!UICONTROL Add a task]** 按鈕。 命名工作並按一下 **[!UICONTROL Save]**.
+對於此行銷活動，我們將新增先前為其建立成本結構的兩個工作（請參閱[步驟2 — 設定服務提供者並定義成本結構](#step-2---configuring-the-service-provider-and-defining-the-cost-structures)）。 若要這麼做，請在行銷活動控制面板中按一下&#x200B;**[!UICONTROL Add a task]**&#x200B;按鈕。 命名工作並按一下&#x200B;**[!UICONTROL Save]**。
 
 1. 然後將任務新增至任務清單。 您必須編輯它以進行設定。
 
-1. 在 **[!UICONTROL Properties]** 頁標，選取服務與對應的成本分類：
+1. 在&#x200B;**[!UICONTROL Properties]**&#x200B;索引標籤中，選取服務與對應的成本類別：
 
    ![](assets/s_user_cost_mgmt_sample_14.png)
 
-1. 接下來，按一下 **[!UICONTROL Expenses and revenue]** 圖示並指定預估布建成本。
+1. 接著，按一下任務的&#x200B;**[!UICONTROL Expenses and revenue]**&#x200B;圖示，並指定預估的臨時成本。
 
    ![](assets/s_user_cost_mgmt_sample_15.png)
 
    儲存工作後，會使用為預估臨時成本輸入的值指定計算成本。
 
-   任務完成時(狀態 **[!UICONTROL Finished]** )，計算出的成本會依成本結構中所輸入的「大型空間」成本自動更新。 在劃分中，此成本也會顯示在此類別中。
+   任務完成時（狀態&#x200B;**[!UICONTROL Finished]** ），計算的成本會自動更新為大型房間的成本，如同其成本結構中所輸入。 在劃分中，此成本也會顯示在此類別中。
 
 1. 接著，根據相同的程式建立第二個作業；排程超過五天並與先前建立的成本結構相關。
 
@@ -328,7 +328,7 @@ Adobe Campaign可讓您控制已排程、已確認及已開立商業發票的行
 
 #### 步驟6 — 更新行銷活動預算狀態 {#step-6---update-the-campaign-budget-status}
 
-設定行銷活動時，可透過將其設定為來更新其狀態 **[!UICONTROL Specified]**. 然後行銷活動的計算成本將指出傳遞的計算成本與行銷活動的任務總和：
+設定行銷活動時，可透過將其設定為&#x200B;**[!UICONTROL Specified]**&#x200B;來更新其狀態。 然後行銷活動的計算成本將指出傳遞的計算成本與行銷活動的任務總和：
 
 ![](assets/s_user_cost_mgmt_sample_18.png)
 
@@ -348,7 +348,7 @@ Adobe Campaign可讓您控制已排程、已確認及已開立商業發票的行
 
 ### 訂單建立 {#order-creation}
 
-若要向服務提供者儲存新訂單，請按一下 **[!UICONTROL MRM > Orders]** 節點，然後按一下 **[!UICONTROL New]** 按鈕。
+若要儲存與服務提供者的新訂單，請按一下樹狀結構的&#x200B;**[!UICONTROL MRM > Orders]**&#x200B;節點，然後按一下&#x200B;**[!UICONTROL New]**&#x200B;按鈕。
 
 指定訂單編號、相關的服務提供者，以及訂單的總金額。
 
@@ -358,18 +358,18 @@ Adobe Campaign可讓您控制已排程、已確認及已開立商業發票的行
 
 您可以針對每個服務提供者，儲存商業發票，並定義其狀態與費用預算。
 
-發票建立並儲存在 **[!UICONTROL MRM > Invoices]** Adobe Campaign樹的節點。
+在Adobe Campaign樹狀結構的&#x200B;**[!UICONTROL MRM > Invoices]**&#x200B;節點中建立並儲存發票。
 
 ![](assets/s_user_cost_create_invoice.png)
 
-商業發票由商業發票明細行組成，其總計允許自動計算金額。 這些行是手動建立的，從 **[!UICONTROL Invoice lines]** 標籤。 它們可以與訂單相關聯，以將資訊上傳至訂單。
+商業發票由商業發票明細行組成，其總計允許自動計算金額。 這些行是從&#x200B;**[!UICONTROL Invoice lines]**&#x200B;索引標籤手動建立的。 它們可以與訂單相關聯，以將資訊上傳至訂單。
 
 ![](assets/s_user_cost_invoice_add_line.png)
 
-每個服務提供者的商業發票會顯示在 **[!UICONTROL Invoices]** 設定檔的索引標籤：
+每個服務提供者的商業發票會顯示在設定檔的&#x200B;**[!UICONTROL Invoices]**&#x200B;標籤中：
 
 ![](assets/s_ncs_user_invoice_from_supplier.png)
 
-此 **[!UICONTROL Details]** 索引標籤可讓您顯示發票的內容。
+**[!UICONTROL Details]**&#x200B;標籤可讓您顯示發票的內容。
 
-按一下 **[!UICONTROL Add]** 以建立新的商業發票。
+按一下&#x200B;**[!UICONTROL Add]**&#x200B;以建立新發票。

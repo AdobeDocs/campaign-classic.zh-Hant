@@ -44,24 +44,24 @@ created (datetime)、createdBy-id (long)、desc (string)、entitySchema (string)
 
 ## 說明 {#description-14}
 
-此 `<srcschema>` 是結構的根元素。 這是結構描述定義的輸入點。
+`<srcschema>`是結構描述的根元素。 這是結構描述定義的輸入點。
 
 ## 使用與使用內容 {#use-and-context-of-use-9}
 
-結構描述簡報可在以下位置取得： [關於綱要參考](../../../configuration/using/about-schema-reference.md) 和 [綱要結構](../../../configuration/using/schema-structure.md).
+結構描述簡報可在[關於結構描述參考](../../../configuration/using/about-schema-reference.md)和[結構描述結構](../../../configuration/using/schema-structure.md)中使用。
 
 ## 屬性說明 {#attribute-description-14}
 
 * **已建立（日期時間）**：此屬性提供有關建立結構描述的日期與時間的資訊。 它有「日期時間」表單。 顯示的值取自伺服器。 時間會以UTC格式顯示。
-* **createdBy-id (long)**：是建立結構的運運算元的識別碼。
-* **desc （字串）**：結構描述說明
-* **entitySchema （字串）**：基礎語法和核准的基本結構描述(Adobe Campaign預設為： xtk：srcSchema)。 儲存目前的結構描述時，Adobe Campaign會核准其在@xtkschema屬性中宣告之結構描述的文法。
-* **extendedSchema （字串）**：接收目前結構描述擴充功能所根據的現成可用結構描述的名稱。 形式為「namespace：name」。
-* **img （字串）**：連結到結構描述的圖示（可在結構描述建立精靈中定義）。
+* **createdBy-id (long)**：是建立結構描述之運運算元的識別碼。
+* **desc （字串）**：結構描述描述
+* **entitySchema （字串）**：以語法和核准為基礎的基本結構描述(Adobe Campaign預設為：xtk：srcSchema)。 儲存目前的結構描述時，Adobe Campaign會核准其在@xtkschema屬性中宣告之結構描述的文法。
+* **extendedSchema （字串）**：接收目前結構描述擴充功能所根據的現成結構描述名稱。 形式為「namespace：name」。
+* **img （字串）**：連結至結構描述的圖示（可能在結構描述建立精靈中定義）。
 * **標籤（字串）**：結構描述標籤。
-* **labelSingular （字串）**：在介面中顯示的標籤（單數）。
-* **lastModified (datetime)**：此屬性提供上次修改日期與時間的相關資訊。 它有「日期時間」表單。 顯示的值取自伺服器。 時間會以UTC格式顯示。
-* **程式庫（布林值）**：將結構描述當作程式庫而非實體使用。 因此，由於「@ref」和「@template」屬性，此結構描述可能會被其他結構描述參考。
+* **labelSingular （字串）**：在介面中顯示的標籤(singular)。
+* **lastModified (datetime)**：此屬性提供上次修改日期與時間的資訊。 它有「日期時間」表單。 顯示的值取自伺服器。 時間會以UTC格式顯示。
+* **資料庫（布林值）**：使用結構描述做為資料庫，而不是實體。 因此，由於「@ref」和「@template」屬性，此結構描述可能會被其他結構描述參考。
 * **mappingType （字串）**：
 
    * &quot;sql&quot;：資料庫對應
@@ -71,14 +71,14 @@ created (datetime)、createdBy-id (long)、desc (string)、entitySchema (string)
 
 * **modifiedBy-id (long)**：符合變更結構描述之運運算元的識別碼。
 * **名稱（字串）**：唯一的結構描述名稱。
-* **名稱空間（字串）**：結構的名稱空間（預設： nms、xtk、nl）。 為專案建立新結構描述時，我們建議您使用專用的名稱空間。
-* **useRecycleBin （布林值）**：啟動應用程式中的垃圾桶功能。 刪除的記錄將會在最終刪除之前被放置在垃圾桶中。 此函式僅適用於「傳送」模式。
-* **檢視（布林值）**：如果已啟動(@view=&quot;true&quot;)，則會將結構描述當做檢視。 資料庫結構更新精靈不會將結構描述列入考量。 此選項主要用於參照外部表格。
+* **名稱空間（字串）**：結構描述的名稱空間（預設： nms， xtk， nl）。 為專案建立新結構描述時，我們建議您使用專用的名稱空間。
+* **useRecycleBin （布林值）**：啟用應用程式中的垃圾桶功能。 刪除的記錄將會在最終刪除之前被放置在垃圾桶中。 此函式僅適用於「傳送」模式。
+* **檢視（布林值）**：如果啟用(@view=&quot;true&quot;)，則會將結構描述當做檢視。 資料庫結構更新精靈不會將結構描述列入考量。 此選項主要用於參照外部表格。
 * **xtkschema （字串）**：定義結構描述文法的結構描述名稱（預設為xtk：srcSchema）。
 
 ## 範例 {#examples-11}
 
-`<srcschema>` &quot;nms：delivery&quot;現成結構描述的元素
+「nms：delivery」現成結構描述的`<srcschema>`元素
 
 ```
 <srcSchema desc="Defines all the settings of a delivery (or delivery template)."  

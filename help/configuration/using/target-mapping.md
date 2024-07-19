@@ -32,7 +32,7 @@ ht-degree: 2%
 
 1. 建立新的資料結構，整合您要使用的自訂表格欄位。
 
-   如需詳細資訊，請參閱 [結構描述參考(xtk：srcSchema)](../../configuration/using/about-schema-reference.md).
+   如需進一步資訊，請參閱[結構描述參考(xtk：srcSchema)](../../configuration/using/about-schema-reference.md)。
 
    在我們的範例中，我們將建立客戶結構，這是一個非常簡單的表格，包含下列欄位：ID、名字、姓氏、電子郵件地址、行動電話號碼。 目的是能夠傳送電子郵件或簡訊警示給儲存在此表格中的個人。
 
@@ -53,7 +53,7 @@ ht-degree: 2%
    </srcSchema>
    ```
 
-1. 使用=&quot;true&quot;屬性將您的結構描述宣告為外部檢視。 請參閱 [檢視屬性](../../configuration/using/schema-characteristics.md#the-view-attribute).
+1. 使用=&quot;true&quot;屬性將您的結構描述宣告為外部檢視。 參考[檢視屬性](../../configuration/using/schema-characteristics.md#the-view-attribute)。
 
    ```
     <srcSchema desc="External recipient table" namespace="cus" view="true"....>
@@ -82,35 +82,35 @@ ht-degree: 2%
       </element>
    ```
 
-1. 按一下 **[!UICONTROL Administration > Campaign management > Target mappings]** 節點。
-1. 按一下 **新增** 按鈕以開啟目標對應建立精靈。
-1. 輸入 **標籤** 欄位並選取您剛在中建立的結構 **目標維度** 欄位。
+1. 按一下&#x200B;**[!UICONTROL Administration > Campaign management > Target mappings]**&#x200B;節點。
+1. 按一下「**新增**」按鈕，開啟目標對應建立精靈。
+1. 輸入&#x200B;**標籤**&#x200B;欄位，並選取您剛在&#x200B;**目標維度**&#x200B;欄位中建立的結構描述。
 
    ![](assets/mapping_diffusion_wizard_1.png)
 
-1. 在 **編輯地址表單** 視窗，選取符合各種傳送地址的結構描述欄位。 在此，我們可以 **@email** 和 **@mobile** 欄位。
+1. 在&#x200B;**編輯地址表單**&#x200B;視窗中，選取符合各種傳遞地址的結構描述欄位。 在此，我們可以對應&#x200B;**@email**&#x200B;和&#x200B;**@mobile**&#x200B;欄位。
 
    ![](assets/mapping_diffusion_wizard_2.png)
 
-1. 在以下內容中 **儲存** 視窗，輸入 **擴充功能結構描述的尾碼** 欄位來區分Adobe Campaign提供的新方案與現成可用的方案。
+1. 在以下&#x200B;**儲存體**&#x200B;視窗中，輸入擴充功能結構描述&#x200B;**的**&#x200B;尾碼，以區分Adobe Campaign提供的全新結構描述與現成可用的結構描述。
 
-   按一下 **[!UICONTROL Define new additional fields]** 以選取您要在傳送中鎖定的維度。
+   按一下&#x200B;**[!UICONTROL Define new additional fields]**&#x200B;以選取您要在傳遞中鎖定的維度。
 
    依預設，排除管理會儲存在與訊息相同的表格中。
 
-   檢查 **產生儲存結構描述以進行追蹤** 方塊來設定連結至目標對應的追蹤儲存。
+   如果要設定連結至目標對應之追蹤的儲存體，請核取&#x200B;**產生追蹤的儲存體結構描述**&#x200B;方塊。
 
    ![](assets/mapping_diffusion_wizard_3.png)
 
    >[!IMPORTANT]
    >
-   >Adobe Campaign不支援多個收件者結構描述（也稱為目標定位結構描述），連結至相同的broadlog和/或trackinglog結構描述。 否則，這可能會導致之後資料協調出現異常。 如需詳細資訊，請參閱 [建議和限制](../../configuration/using/about-custom-recipient-table.md) 頁面。
+   >Adobe Campaign不支援多個收件者結構描述（也稱為目標定位結構描述），連結至相同的broadlog和/或trackinglog結構描述。 否則，這可能會導致之後資料協調出現異常。 如需詳細資訊，請參閱[建議與限制](../../configuration/using/about-custom-recipient-table.md)頁面。
 
-1. 在 **擴充功能** 視窗，選取您要產生的選用結構描述(可用結構描述清單取決於Adobe Campaign平台上安裝的模組)。
+1. 在&#x200B;**擴充功能**&#x200B;視窗中，選取您要產生的選用結構描述(可用結構描述清單取決於Adobe Campaign平台上安裝的模組)。
 
    ![](assets/mapping_diffusion_wizard_4.png)
 
-1. 按一下 **儲存** 按鈕以關閉精靈。
+1. 按一下&#x200B;**儲存**&#x200B;按鈕以關閉精靈。
 
    精靈會使用啟動結構描述來建立使新目標對應運作所需的所有其他結構描述。
 

@@ -26,15 +26,15 @@ ht-degree: 9%
 
 >[!NOTE]
 >
->這些指標用於 **[!UICONTROL Tracking indicators]** 報告。 有關詳細資訊，請參閱 [追蹤指標](../../reporting/using/delivery-reports.md#tracking-indicators).
+>這些指標用於&#x200B;**[!UICONTROL Tracking indicators]**&#x200B;報告。 如需詳細資訊，請參閱[追蹤指標](../../reporting/using/delivery-reports.md#tracking-indicators)。
 
 傳遞中會新增三個連結。 會傳送給4位收件者：
 
 ![](assets/s_ncs_user_indicators_example_1.png)
 
-* **[!UICONTROL John Davis]** ：此收件者未開啟電子郵件（因此不會按一下任何連結）。
+* **[!UICONTROL John Davis]** ：此收件者未開啟電子郵件（因此未按一下任何連結）。
 * **[!UICONTROL Marie Stuart]** ：開啟電子郵件但不點按任何連結。
-* **[!UICONTROL Florian David]** ：開啟電子郵件並按一下9次連結。 他也會將電子郵件轉寄給開啟電子郵件並點選兩次的人。
+* **[!UICONTROL Florian David]** ：開啟電子郵件並按一下連結9次。 他也會將電子郵件轉寄給開啟電子郵件並點選兩次的人。
 * **[!UICONTROL Henry Macdonald]** ：此收件者已將其網際網路瀏覽器設定為拒絕Cookie。 他開啟電子郵件並按一下4次連結。
 
 系統會傳回下列追蹤記錄：
@@ -45,13 +45,13 @@ ht-degree: 9%
 
 ## 步驟1：John {#step-1--john}
 
-**[!UICONTROL John Davis]** 不會開啟電子郵件（因此不會按一下任何連結）。
+**[!UICONTROL John Davis]**&#x200B;未開啟電子郵件（因此未按一下任何連結）。
 
 ![](assets/s_ncs_user_indicators_example_8.png)
 
 由於John既未開啟也未點按電子郵件，因此未出現在紀錄中。
 
-**中間計算：**
+**中繼計算：**
 
 |   | 已點擊的收件者 | 已點擊的人 | 開啟的收件者 |
 |---|---|---|---|
@@ -60,7 +60,7 @@ ht-degree: 9%
 
 ## 步驟2：瑪麗 {#step-2--marie}
 
-**[!UICONTROL Marie Stuart]** 會開啟電子郵件，但不會按一下任何連結。
+**[!UICONTROL Marie Stuart]**&#x200B;會開啟電子郵件，但不點按任何連結。
 
 ![](assets/s_ncs_user_indicators_example_7.png)
 
@@ -70,7 +70,7 @@ Marie的開啟會顯示在下列記錄中：
 
 開啟已指派給收件者：Marie。 因此，Adobe Campaign會將新收件者新增至該計數。
 
-**中間計算：**
+**中繼計算：**
 
 |   | 已點擊的收件者 | 已點擊的人 | 開啟的收件者 |
 |---|---|---|---|
@@ -80,7 +80,7 @@ Marie的開啟會顯示在下列記錄中：
 
 ## 步驟3：弗洛里安 {#step-3--florian}
 
-**[!UICONTROL Florian David]** 開啟電子郵件並按一下9次連結。 他也會將電子郵件轉寄給開啟電子郵件並點選兩次的人。
+**[!UICONTROL Florian David]**&#x200B;開啟電子郵件並按一下連結9次。 他也會將電子郵件轉寄給開啟電子郵件並點選兩次的人。
 
 ![](assets/s_ncs_user_indicators_example_9.png)
 
@@ -88,11 +88,11 @@ Florian的動作（一次開啟和9次點按）會出現在下列記錄中：
 
 ![](assets/s_ncs_user_indicators_example_3bis.png)
 
-**收件者**：開啟和點按會被指派給相同的收件者(Florian)。 由於此收件者與先前的收件者(Marie)不同，因此Adobe Campaign會將新收件者新增至該計數。
+**收件者**：開啟和點選已指派給相同的收件者(Florian)。 由於此收件者與先前的收件者(Marie)不同，因此Adobe Campaign會將新收件者新增至該計數。
 
-人員：由於此收件者的瀏覽器接受Cookie，因此我們可以看到相同的識別碼(UUID)已指派給所有點按記錄： **`fe37a503 [...]`**. Adobe Campaign可正確識別這些點按屬於同一人。 新人員已新增至計數。
+人員：由於此收件者的瀏覽器接受Cookie，我們可以看到相同的識別碼(UUID)已指派給所有點按記錄： **`fe37a503 [...]`**。 Adobe Campaign可正確識別這些點按屬於同一人。 新人員已新增至計數。
 
-**中間計算：**
+**中繼計算：**
 
 |   | 已點擊的收件者 | 已點擊的人 | 開啟的收件者 |
 |---|---|---|---|
@@ -105,15 +105,15 @@ Florian的動作（一次開啟和9次點按）會出現在下列記錄中：
 
 ![](assets/s_ncs_user_indicators_example_6bis.png)
 
-**收件者**：其開啟和點按次數會指派給轉寄電子郵件的收件者(Florian)。 由於此收件者已計算，因此收件者計數會維持不變。
+**收件者**：其開啟和點按已指派給轉寄電子郵件的收件者(Florian)。 由於此收件者已計算，因此收件者計數會維持不變。
 
 ![](assets/s_ncs_user_indicators_example_12.png)
 
-**人員**：關於點選，我們可以看到相同的識別碼(UUID)被指派給所有記錄： **`9ab648f9 [...]`**. 尚未計算此識別碼。 因此，計數中會新增一個人員。
+**人員**：關於點按，我們可以看到相同的識別碼(UUID)已指派給所有記錄： **`9ab648f9 [...]`**。 尚未計算此識別碼。 因此，計數中會新增一個人員。
 
 ![](assets/s_ncs_user_indicators_example_13.png)
 
-**中間計算：**
+**中繼計算：**
 
 |   | 已點擊的收件者 | 已點擊的人 | 開啟的收件者 |
 |---|---|---|---|
@@ -125,7 +125,7 @@ Florian的動作（一次開啟和9次點按）會出現在下列記錄中：
 
 ## 步驟4：Henry {#step-4--henry}
 
-**[!UICONTROL Henry Macdonald]** 已將他的網際網路瀏覽器設定為拒絕Cookie。 他開啟電子郵件並按一下4次連結。
+**[!UICONTROL Henry Macdonald]**&#x200B;已將其網際網路瀏覽器設定為拒絕Cookie。 他開啟電子郵件並按一下4次連結。
 
 ![](assets/s_ncs_user_indicators_example_10.png)
 
@@ -133,11 +133,11 @@ Henry所執行的開啟和4點按會出現在以下記錄中：
 
 ![](assets/s_ncs_user_indicators_example_5bis.png)
 
-**收件者**：將開啟和點按指派給相同的收件者(Henry)。 由於此收件者尚未計算，因此Adobe Campaign會將收件者新增至該計數。
+**收件者**：開啟和點選已指派給相同的收件者(Henry)。 由於此收件者尚未計算，因此Adobe Campaign會將收件者新增至該計數。
 
 **人員**：由於Henry的瀏覽器不接受Cookie，因此每次點按都會產生新的識別碼(UUID)。 這4個點按的每一個都會解譯為來自不同人員。 由於這些識別碼尚未計數，已新增至計數。
 
-**中間計算：**
+**中繼計算：**
 
 |   | 已點擊的收件者 | 已點擊的人 | 開啟的收件者 |
 |---|---|---|---|
@@ -154,21 +154,21 @@ Henry所執行的開啟和4點按會出現在以下記錄中：
 
 ![](assets/s_ncs_user_indicators_example.png)
 
-* **[!UICONTROL Clicks]** （已點按的收件者）：2
-* **[!UICONTROL Distinct clicks for the population reached]** （按一下的人員）：6
-* **[!UICONTROL Distinct opens for the population reached]** （已開啟的收件者）：3
+* **[!UICONTROL Clicks]** （點選的收件者）： 2
+* **[!UICONTROL Distinct clicks for the population reached]** （點選的人）： 6
+* **[!UICONTROL Distinct opens for the population reached]** （已開啟的收件者）： 3
 
 轉送的原始反應性和預估值計算如下：
 
 ![](assets/s_ncs_user_indicators_example11.png)
 
 * **[!UICONTROL Estimation of forwards]** = **B - A** （因此，6 - 2 = 4）
-* **[!UICONTROL Raw reactivity]** = **A / C** （因此2 / 3 = 66,67%）
+* **[!UICONTROL Raw reactivity]** = **A / C** （因此，2 / 3 = 66,67%）
 
 >[!NOTE]
 >
 >在下列公式中：
 >
->* 表示 **[!UICONTROL Clicks]** 指標（已點按的收件者）。
->* B代表 **[!UICONTROL Distinct clicks for the population reached]** 指標（按一下的人員）。
->* C代表 **[!UICONTROL Distinct opens for the population reached]** 指標（已開啟的收件者）。
+>* A代表&#x200B;**[!UICONTROL Clicks]**&#x200B;指標（已點按的收件者）。
+>* B代表&#x200B;**[!UICONTROL Distinct clicks for the population reached]**&#x200B;指標（點選的人）。
+>* C代表&#x200B;**[!UICONTROL Distinct opens for the population reached]**&#x200B;指標（已開啟的收件者）。

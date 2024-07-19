@@ -16,7 +16,7 @@ ht-degree: 16%
 
 
 
-如果傳送表格是外部表格，您將需要執行其他設定。 此 **[!UICONTROL nms:seedmember]** 結構描述必須延伸。 種子地址會新增索引標籤，以定義適當的欄位，如下所示：
+如果傳送表格是外部表格，您將需要執行其他設定。 **[!UICONTROL nms:seedmember]**&#x200B;結構描述必須延伸。 種子地址會新增索引標籤，以定義適當的欄位，如下所示：
 
 ![](assets/s_ncs_user_seedlist_new_tab.png)
 
@@ -24,4 +24,4 @@ ht-degree: 16%
 
 ![](assets/s_ncs_user_seedlist_add_new_tab.png)
 
-此 **nms：seedMember** 結構描述擴充功能為 [本節](../../configuration/using/seed-addresses.md).
+**nms：seedMember**&#x200B;結構描述延伸是[此區段](../../configuration/using/seed-addresses.md)。

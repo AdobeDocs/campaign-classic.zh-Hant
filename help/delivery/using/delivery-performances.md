@@ -37,7 +37,7 @@ ht-degree: 5%
 
 * 大型傳遞（例如傳送給超過一百萬位收件者的傳遞）需要傳送佇列中的空間。 伺服器本身不會因此發生問題，但若同時傳送數十筆其他大型郵件，可能會導致傳送延遲。
 
-* 電子郵件中的個人化會將每個收件者的資料從資料庫中提取。 如果有許多個人化元素，會增加準備傳送所需的資料量。
+* 電子郵件中的Personalization會將每個收件者的資料從資料庫中提取。 如果有許多個人化元素，會增加準備傳送所需的資料量。
 
 * 索引位址。 為了最佳化應用程式中使用的SQL查詢效能，可以從資料結構描述的主要元素宣告索引。
 
@@ -49,8 +49,8 @@ ht-degree: 5%
 
 如果傳送效能不佳，您可以檢查：
 
-* **傳遞的大小**：大型傳送可能需要更長的時間才能完成。 MTA子系已設定為處理預設批次大小（這適用於大部分的執行個體），但在傳送速度持續緩慢時需要檢查。
-* **傳遞的目標**：軟退信錯誤會影響傳遞效能，這些錯誤會根據重試設定處理。 錯誤數越多，所需的重試次數就越多。
-* **整體平台負載**：傳送多個大型傳遞時，整體平台可能會受到影響。 您也可以檢查IP信譽和傳遞能力問題。 有關詳細資訊，請參閱 [本節](about-deliverability.md) 和 [Adobe傳遞性最佳實務指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hant).
+* **傳遞的大小**：大型傳遞可能需要更長的時間才能完成。 MTA子系已設定為處理預設批次大小（這適用於大部分的執行個體），但在傳送速度持續緩慢時需要檢查。
+* **傳遞的目標**：傳遞效能禁止受到軟退信錯誤的影響，這些錯誤會根據重試組態處理。 錯誤數越多，所需的重試次數就越多。
+* **整體平台負載**：傳送多個大型傳遞時，整體平台可能會受到影響。 您也可以檢查IP信譽和傳遞能力問題。 如需詳細資訊，請參閱[本節](about-deliverability.md)及[Adobe傳遞性最佳實務指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hant)。
 
 平台和資料庫維護也會影響傳遞傳送效能。 如需詳細資訊，請參閱[此頁面](../../production/using/database-performances.md)。

@@ -20,27 +20,27 @@ ht-degree: 2%
 
 Marketing Analytics可讓您更輕鬆地建立報表，以及透過多維度資料集從資料庫識別和選取資料。 這可讓您：
 
-* 根據立方體建立報告。 本流程的詳細資訊如下： [探索報表中的資料](#exploring-the-data-in-a-report).
-* 收集資料庫中的資料，並將其分組到清單中，例如識別及建立目標及傳遞。 有關詳細資訊，請參閱 [建立目標母體](#building-a-target-population).
-* 在報表中插入樞紐分析表，參照其中現有的立方結構。 有關詳細資訊，請參閱 [在報表中插入樞紐分析表](#inserting-a-pivot-table-into-a-report).
+* 根據立方體建立報告。 處理程式的詳細資訊如下： [探索報告中的資料](#exploring-the-data-in-a-report)。
+* 收集資料庫中的資料，並將其分組到清單中，例如識別及建立目標及傳遞。 如需詳細資訊，請參閱[建立目標母體](#building-a-target-population)。
+* 在報表中插入樞紐分析表，參照其中現有的立方結構。 如需詳細資訊，請參閱[將樞紐分析表插入報表](#inserting-a-pivot-table-into-a-report)。
 
 >[!NOTE]
 >
->需要Marketing Analytics才能建立或修改立方體。 有關詳細資訊，請參閱 [關於立方體](../../reporting/using/ac-cubes.md).
+>需要Marketing Analytics才能建立或修改立方體。 如需詳細資訊，請參閱[關於立方體](../../reporting/using/ac-cubes.md)。
 
 ## 探索報表中的資料 {#exploring-the-data-in-a-report}
 
 ### 步驟1 — 根據立方體建立報表 {#step-1---creating-a-report-based-on-a-cube}
 
-若要根據立方結構建立報表，請按一下 **[!UICONTROL Create]** 中的按鈕 **[!UICONTROL Reports]** 頁簽並選取您要使用的立方結構。
+若要根據Cube建立報告，請按一下&#x200B;**[!UICONTROL Reports]**&#x200B;索引標籤中的&#x200B;**[!UICONTROL Create]**&#x200B;按鈕，並選取您要使用的Cube。
 
-本流程的詳細資訊如下： [根據立方體建立報告](../../reporting/using/creating-indicators.md#creating-a-report-based-on-a-cube).
+處理程式的詳細資訊如下： [根據Cube建立報告](../../reporting/using/creating-indicators.md#creating-a-report-based-on-a-cube)。
 
 ### 步驟2 — 選取行和欄 {#step-2---selecting-lines-and-columns}
 
 預設顯示會顯示立方結構的前兩個維度（在此例中是年齡和城市）。
 
-此 **[!UICONTROL Add]** 每個軸上的按鈕可讓您新增維度。
+每個軸上的&#x200B;**[!UICONTROL Add]**&#x200B;按鈕可讓您新增維度。
 
 ![](assets/s_advuser_cube_in_report_03.png)
 
@@ -55,7 +55,7 @@ Marketing Analytics可讓您更輕鬆地建立報表，以及透過多維度資�
 
    引數取決於所選尺寸的資料型別。
 
-   例如，日期有數個層級可供使用。 有關詳細資訊，請參閱 [顯示量值](../../reporting/using/concepts-and-methodology.md#displaying-measures).
+   例如，日期有數個層級可供使用。 如需詳細資訊，請參閱[顯示量值](../../reporting/using/concepts-and-methodology.md#displaying-measures)。
 
    此案例中提供下列選項：
 
@@ -69,9 +69,9 @@ Marketing Analytics可讓您更輕鬆地建立報表，以及透過多維度資�
    * 以遞增(a-z、0-9)或遞減(z-a、9-0)順序顯示值。
    * 變更載入時顯示的欄數（預設為： 200）。
 
-1. 按一下 **[!UICONTROL Ok]** 確認：將維度新增至現有維度。
+1. 按一下&#x200B;**[!UICONTROL Ok]**&#x200B;以確認：維度已新增至現有維度。
 
-   表格上方的黃色橫幅顯示您已進行變更：按一下 **[!UICONTROL Save]** 按鈕以儲存它們。
+   表格上方的黃色橫幅顯示您已進行變更：按一下「**[!UICONTROL Save]**」按鈕以儲存變更。
 
    ![](assets/s_advuser_cube_in_report_04c.png)
 
@@ -85,7 +85,7 @@ Marketing Analytics可讓您更輕鬆地建立報表，以及透過多維度資�
 
    ![](assets/s_advuser_cube_in_report_05.png)
 
-1. 此 **[!UICONTROL Use a measure]** 按鈕可讓您選取現有的測量之一。
+1. 「**[!UICONTROL Use a measure]**」按鈕可讓您選取現有的測量之一。
 
    ![](assets/s_advuser_cube_in_report_08.png)
 
@@ -93,13 +93,13 @@ Marketing Analytics可讓您更輕鬆地建立報表，以及透過多維度資�
 
    ![](assets/s_advuser_cube_in_report_09.png)
 
-   整體測量組態也可透過 **[!UICONTROL Edit the configuration of the pivot table]** 圖示來識別。
+   整體量值設定也可透過標頭中的&#x200B;**[!UICONTROL Edit the configuration of the pivot table]**&#x200B;圖示取得。
 
    ![](assets/s_advuser_cube_in_report_config_02.png)
 
-   然後，您可以選擇是否要顯示測量標籤。 有關詳細資訊，請參閱 [設定顯示](../../reporting/using/concepts-and-methodology.md#configuring-the-display).
+   然後，您可以選擇是否要顯示測量標籤。 如需詳細資訊，請參閱[設定顯示區](../../reporting/using/concepts-and-methodology.md#configuring-the-display)。
 
-1. 可以使用現有測量來建置新測量。 若要這麼做，請按一下 **[!UICONTROL Create a measure]** 並加以設定。
+1. 可以使用現有測量來建置新測量。 若要這麼做，請按一下&#x200B;**[!UICONTROL Create a measure]**&#x200B;並加以設定。
 
    ![](assets/s_advuser_cube_in_report_config_02a.png)
 
@@ -117,9 +117,9 @@ Marketing Analytics可讓您更輕鬆地建立報表，以及透過多維度資�
 
    ![](assets/s_advuser_cube_in_report_config_02b.png)
 
-   建立測量之後，您可以編輯它，並視需要變更其組態。 若要這麼做，請按一下 **[!UICONTROL Measures]** 按鈕，然後移至要編輯之測量的標籤。
+   建立測量之後，您可以編輯它，並視需要變更其組態。 若要這麼做，請按一下&#x200B;**[!UICONTROL Measures]**&#x200B;按鈕，然後前往您要編輯之量值的標籤。
 
-   然後按一下 **[!UICONTROL Edit the dynamic measure]** 以存取設定功能表。
+   然後按一下&#x200B;**[!UICONTROL Edit the dynamic measure]**&#x200B;以存取設定功能表。
 
 ## 建立目標母體 {#building-a-target-population}
 
@@ -129,23 +129,23 @@ Marketing Analytics可讓您更輕鬆地建立報表，以及透過多維度資�
 
 若要將母體群組至清單，請套用下列步驟：
 
-1. 按一下包含要收集之母體的儲存格加以選取，然後按一下 **[!UICONTROL Add to cart]** 圖示。
+1. 按一下包含要收集之母體的儲存格以選取它們，然後按一下&#x200B;**[!UICONTROL Add to cart]**&#x200B;圖示。
 
    ![](assets/s_advuser_cube_in_report_config_02c.png)
 
    收集各種設定檔所需的時間
 
-1. 按一下 **[!UICONTROL Show cart]** 按鈕以在執行匯出之前檢視其內容。
+1. 在執行匯出之前，按一下&#x200B;**[!UICONTROL Show cart]**&#x200B;按鈕以檢視其內容。
 
    ![](assets/s_advuser_cube_in_report_config_02d.png)
 
-1. 此 **[!UICONTROL Export]** 按鈕可讓您將購物車中的專案分組到清單中。
+1. 「**[!UICONTROL Export]**」按鈕可讓您將購物車中的專案分組到清單中。
 
    您需要指定清單的名稱和要執行的匯出型別。
 
    ![](assets/s-advuser_cube_in_report_config_02e.png)
 
-   按一下 **[!UICONTROL Start]** 以執行匯出。
+   按一下&#x200B;**[!UICONTROL Start]**&#x200B;以執行匯出。
 
 1. 匯出完成後，訊息會確認其執行以及已處理的記錄數。
 
@@ -153,7 +153,7 @@ Marketing Analytics可讓您更輕鬆地建立報表，以及透過多維度資�
 
    您可以儲存購物車的內容或將其清空。
 
-   相關清單可透過以下方式存取： **[!UICONTROL Profiles and targets]** 標籤。
+   相關清單已透過&#x200B;**[!UICONTROL Profiles and targets]**&#x200B;索引標籤存取。
 
    ![](assets/s_advuser_cube_in_report_config_02g.png)
 
@@ -165,8 +165,8 @@ Marketing Analytics可讓您更輕鬆地建立報表，以及透過多維度資�
 
    ![](assets/s_advuser_cube_in_report_01.png)
 
-1. 在 **[!UICONTROL Data]** 頁簽中，選取立方結構以處理其所包含的維度，並顯示計算的計量。
+1. 在頁面的&#x200B;**[!UICONTROL Data]**&#x200B;頁簽中，選取要處理其所包含維度的Cube，並顯示計算的計量。
 
    ![](assets/s_advuser_cube_in_report_02.png)
 
-   這可讓您建立要顯示的報表。 有關詳細資訊，請參閱 [步驟2 — 選取行和欄](#step-2---selecting-lines-and-columns).
+   這可讓您建立要顯示的報表。 如需詳細資訊，請參閱步驟2 — 選取行和欄](#step-2---selecting-lines-and-columns)。[

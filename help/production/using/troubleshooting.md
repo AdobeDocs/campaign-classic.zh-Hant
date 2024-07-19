@@ -22,10 +22,10 @@ ht-degree: 12%
 
 ## 常見及一般問題 {#common-and-general-issues}
 
-* 這個 [頁面](../../production/using/modules-and-frequent-issues.md) 顯示列出之模組最常遇到的問題。
-* 這個 [頁面](../../production/using/workflow-execution.md) 列出在遇到工作流程執行問題時，您應該遵循的常見疑難排解程式。
-* 這個 [頁面](../../production/using/lost-password.md) 詳細說明如何變更或復原遺失的密碼。
-* 這個 [頁面](../../production/using/console-update.md) 詳細說明如果您停用對應的選項，如何重新啟用主控台更新請求。
+* 此[頁面](../../production/using/modules-and-frequent-issues.md)顯示列出模組最常遇到的問題。
+* 此[頁面](../../production/using/workflow-execution.md)列出您在遇到工作流程執行問題時應遵循的常見疑難排解程式。
+* 此[頁面](../../production/using/lost-password.md)詳細說明如何變更或復原遺失的密碼。
+* 此[頁面](../../production/using/console-update.md)詳細說明如果您停用對應的選項，如何重新啟用主控台更新請求。
 
 ## 傳遞疑難排解 {#delivery-troubleshooting}
 
@@ -33,7 +33,7 @@ ht-degree: 12%
 * [傳遞能力問題](../../production/using/performance-and-throughput-issues.md#deliverability_issues)
 * [影像顯示問題](../../production/using/image-display-issues.md)
 * [影像遺失](../../production/using/images-missing.md)
-* [暫存檔案問題](../../production/using/temporary-files.md) (*僅限內部部署託管模型*)
+* [暫存檔案問題](../../production/using/temporary-files.md) （僅限&#x200B;*內部部署託管模型*）
 
 **相關主題**：
 

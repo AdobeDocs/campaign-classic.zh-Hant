@@ -20,15 +20,15 @@ ht-degree: 26%
 
 ## 收件者樹狀結構清單 {#recipient-tree}
 
-若要存取進階收件者管理功能，您需要編輯Adobe Campaign樹狀結構。 若要這麼做，請按一下 **[!UICONTROL Explorer]** 按鈕。
+若要存取進階收件者管理功能，您需要編輯Adobe Campaign樹狀結構。 若要這麼做，請按一下工具列中的&#x200B;**[!UICONTROL Explorer]**&#x200B;按鈕。
 
-依預設，收件者會儲存在 **[!UICONTROL Profiles and targets]** Adobe Campaign樹的節點。 在相同的節點中，您可以建立一或多個資料夾和子資料夾來儲存收件者用戶檔案。
+依預設，收件者會儲存在Adobe Campaign樹狀結構的&#x200B;**[!UICONTROL Profiles and targets]**&#x200B;節點中。 在相同的節點中，您可以建立一或多個資料夾和子資料夾來儲存收件者用戶檔案。
 
 每個節點都會與一個資料夾重合。 必須將每個資料夾中的資料視為彼此分割。 也就是說，在多個收件者資料夾中管理重複項目將更加棘手。
 
 >[!NOTE]
 >
->若要顯示資料庫中所有收件者的清單，您必須建立檢視。 進一步瞭解 [資料夾和檢視](../../platform/using/access-management-folders.md).
+>若要顯示資料庫中所有收件者的清單，您必須建立檢視。 深入瞭解[資料夾和檢視](../../platform/using/access-management-folders.md)。
 
 ## 移動收件者 {#moving-recipients}
 
@@ -36,16 +36,16 @@ ht-degree: 26%
 
 ## 複製收件者 {#copying-a-recipient}
 
-您可以在相同的資料夾中複製收件者，方法是以滑鼠右鍵按一下所需的收件者，然後選取 **[!UICONTROL Copy]**.
+您可以用滑鼠右鍵按一下所要的收件者並選取&#x200B;**[!UICONTROL Copy]**，以複製相同資料夾中的收件者。
 
 ## 刪除收件者 {#deleting-recipients}
 
-若要刪除收件者，請將他們移至特定資料夾，然後清除此資料夾的內容。 它是 **強烈建議不要使用** 此 **[!UICONTROL Delete]** 選項。
+若要刪除收件者，請將他們移至特定資料夾，然後清除此資料夾的內容。 **強烈建議不要在此情況下使用** **[!UICONTROL Delete]**&#x200B;選項。
 
-若要永久刪除資料夾，請使用 **[!UICONTROL Actions > Purge folder]** 功能表，請在所需的資料夾上按一下滑鼠右鍵。
+若要清除資料夾，請使用&#x200B;**[!UICONTROL Actions > Purge folder]**&#x200B;功能表，以滑鼠右鍵按一下所要的資料夾來存取。
 
 ![](assets/s_ncs_user_purge_folder.png)
 
-按一下 **[!UICONTROL Start]** 以啟動作業。 視窗的中間區域會顯示處理進度狀態，如下所示：
+按一下&#x200B;**[!UICONTROL Start]**&#x200B;以啟動作業。 視窗的中間區域會顯示處理進度狀態，如下所示：
 
 ![](assets/s_ncs_user_purge_folder_start.png)

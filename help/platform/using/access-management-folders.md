@@ -24,11 +24,11 @@ Explorer導覽樹狀結構的每個資料夾都附加讀取、寫入和刪除存
 
 ### 什麼是資料夾 {#about-folders}
 
-資料夾是Adobe Campaign樹狀結構中的節點。 這些節點是透過在樹上按一下滑鼠右鍵來建立，方法是 **[!UICONTROL Add new folder]** 功能表。 依預設，第一個選單可讓您新增與目前前後關聯對應的資料夾。
+資料夾是Adobe Campaign樹狀結構中的節點。 透過&#x200B;**[!UICONTROL Add new folder]**&#x200B;功能表以滑鼠右鍵按一下樹狀結構來建立這些節點。 依預設，第一個選單可讓您新增與目前前後關聯對應的資料夾。
 
 ![](assets/s_ncs_user_add_folder_in_tree.png)
 
-您可以自訂Explorer導覽樹狀結構。 瞭解設定步驟和最佳實務 [在本節中](adobe-campaign-workspace.md).
+您可以自訂Explorer導覽樹狀結構。 在本節](adobe-campaign-workspace.md)中瞭解設定步驟和最佳實務[。
 
 ### 什麼是檢視 {#about-views}
 
@@ -52,12 +52,12 @@ Explorer導覽樹狀結構的每個資料夾都附加讀取、寫入和刪除存
 
 在下列範例中，我們將建立新資料夾以顯示特定資料：
 
-1. 建立新的 **[!UICONTROL Deliveries]** 輸入資料夾並為其命名 **傳遞法國**.
-1. 以滑鼠右鍵按一下此資料夾，然後選取 **[!UICONTROL Properties...]**.
+1. 建立新的&#x200B;**[!UICONTROL Deliveries]**&#x200B;型別資料夾，並將其命名為&#x200B;**Deliveries France**。
+1. 以滑鼠右鍵按一下此資料夾並選取&#x200B;**[!UICONTROL Properties...]**。
 
    ![](assets/s_ncs_user_add_folder_exple.png)
 
-1. 在 **[!UICONTROL Restriction]** 索引標籤，選取 **[!UICONTROL This folder is a view]**. 然後資料庫中的所有傳遞都會顯示。
+1. 在&#x200B;**[!UICONTROL Restriction]**&#x200B;索引標籤中，選取&#x200B;**[!UICONTROL This folder is a view]**。 然後資料庫中的所有傳遞都會顯示。
 
    ![](assets/s_ncs_user_add_folder_exple01.png)
 
@@ -65,7 +65,7 @@ Explorer導覽樹狀結構的每個資料夾都附加讀取、寫入和刪除存
 
    >[!NOTE]
    >
-   >查詢編輯器的顯示位置為 [本節](../../platform/using/about-queries-in-campaign.md).
+   >查詢編輯器出現在[此區段](../../platform/using/about-queries-in-campaign.md)中。
 
    篩選條件：
 
@@ -77,7 +77,7 @@ Explorer導覽樹狀結構的每個資料夾都附加讀取、寫入和刪除存
 
 >[!NOTE]
 >
->管理時 [異動訊息傳送](../../message-center/using/about-transactional-messaging.md) 事件， **[!UICONTROL Real time events]** 或 **[!UICONTROL Batch events]** 資料夾不得被設定為執行個體的檢視，因為這可能導致存取許可權問題。 如需事件集合的詳細資訊，請參閱 [本節](../../message-center/using/about-event-processing.md#event-collection).
+>管理[異動訊息](../../message-center/using/about-transactional-messaging.md)事件時，**[!UICONTROL Real time events]**&#x200B;或&#x200B;**[!UICONTROL Batch events]**&#x200B;資料夾不得在執行例項上設定為檢視，因為這樣可能會導致存取許可權問題。 如需事件集合的詳細資訊，請參閱[本節](../../message-center/using/about-event-processing.md#event-collection)。
 
 ## 檔案夾的許可權
 
@@ -85,11 +85,11 @@ Explorer導覽樹狀結構的每個資料夾都附加讀取、寫入和刪除存
 
 若要編輯樹狀結構之特定資料夾的許可權，請遵循下列步驟：
 
-1. 以滑鼠右鍵按一下資料夾，然後選取 **[!UICONTROL Properties...]**.
+1. 在資料夾上按一下滑鼠右鍵，然後選取&#x200B;**[!UICONTROL Properties...]**。
 
    ![](assets/s_ncs_user_folder_properties.png)
 
-1. 按一下 **[!UICONTROL Security]** 標籤以檢視此資料夾的授權。
+1. 按一下&#x200B;**[!UICONTROL Security]**&#x200B;標籤以檢視此資料夾的授權。
 
    ![](assets/s_ncs_user_folder_properties_security.png)
 
@@ -97,19 +97,19 @@ Explorer導覽樹狀結構的每個資料夾都附加讀取、寫入和刪除存
 
 若要修改許可權，您可以：
 
-* **取代群組或運運算元**. 若要這麼做，請按一下其中一個具有資料夾許可權的群組（或運運算元），然後從下拉式清單中選取新群組（或新運運算元）：
+* **取代群組或運運算元**。 若要這麼做，請按一下其中一個具有資料夾許可權的群組（或運運算元），然後從下拉式清單中選取新群組（或新運運算元）：
 
   ![](assets/s_ncs_user_folder_properties_security02.png)
 
-* **授權群組或操作員**. 若要這麼做，請按一下 **[!UICONTROL Add]** 按鈕並選取您要為此資料夾指派授權的群組或運運算元。
-* **禁止群組或操作員**. 若要這麼做，請按一下 **[!UICONTROL Delete]** 並選取您要從中移除此資料夾授權的群組或運運算元。
-* **選取指派給群組或操作員的許可權**. 若要這麼做，請按一下相關的群組或運運算元，然後選取您要授與的存取權，並取消選取其他存取權。
+* **授權群組或操作員**。 若要這麼做，請按一下&#x200B;**[!UICONTROL Add]**&#x200B;按鈕，然後選取您要為此資料夾指派授權的群組或運運算元。
+* **禁止群組或運運算元**。 若要這麼做，請按一下&#x200B;**[!UICONTROL Delete]**&#x200B;並選取您要移除此資料夾授權的群組或運運算元。
+* **選取指派給群組或運運算元的許可權**。 若要這麼做，請按一下相關的群組或運運算元，然後選取您要授與的存取權，並取消選取其他存取權。
 
   ![](assets/s_ncs_user_folder_properties_security03.png)
 
 ### 傳播許可權 {#propagate-permissions}
 
-您可以傳播授權和存取許可權。 若要這麼做，請選取 **[!UICONTROL Propagate]** 檔案夾屬性中的選項。
+您可以傳播授權和存取許可權。 若要這麼做，請在資料夾屬性中選取&#x200B;**[!UICONTROL Propagate]**&#x200B;選項。
 
 此視窗中定義的授權將套用至目前節點的所有子資料夾。 然後，您就可以為每個子資料夾多載這些授權。
 
@@ -119,6 +119,6 @@ Explorer導覽樹狀結構的每個資料夾都附加讀取、寫入和刪除存
 
 ### 授與存取權給所有運運算元 {#grant-access-to-all-operators}
 
-在 **[!UICONTROL Security]** 標籤，如果 **[!UICONTROL System folder]** 選項已選取，則所有操作者都將可存取此資料，無論其許可權為何。 如果清除此選項，您必須明確將運運算元（或其群組）新增至授權清單，才能讓運運算元（或其群組）存取許可權。
+在&#x200B;**[!UICONTROL Security]**&#x200B;索引標籤中，如果選取&#x200B;**[!UICONTROL System folder]**&#x200B;選項，無論操作者的許可權為何，所有操作者都將可存取此資料。 如果清除此選項，您必須明確將運運算元（或其群組）新增至授權清單，才能讓運運算元（或其群組）存取許可權。
 
 ![](assets/s_ncs_user_folder_properties_security03b.png)

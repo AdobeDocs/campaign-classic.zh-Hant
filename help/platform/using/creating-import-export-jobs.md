@@ -21,13 +21,13 @@ ht-degree: 7%
 
 設定範本後，即可在Adobe Campaign的多個內容中啟動匯入和匯出作業。
 
-* 在 **[!UICONTROL Profiles and targets]** Adobe Campaign區段內，按一下 **[!UICONTROL Jobs]** 連結：這會帶您前往現有的匯入和匯出清單。
+* 在Adobe Campaign工作區的&#x200B;**[!UICONTROL Profiles and targets]**&#x200B;區段中，按一下&#x200B;**[!UICONTROL Jobs]**&#x200B;連結：這會將您導向至現有的匯入和匯出清單。
 
-  按一下 **[!UICONTROL Create]** 按鈕並選取您要執行的工作型別。
+  按一下「**[!UICONTROL Create]**」按鈕，然後選取您要執行的工作型別。
 
   ![](assets/s_ncs_user_import_from_home.png)
 
-* 您也可以啟動匯入和匯出，從 **[!UICONTROL Monitoring]** 區段：有兩個專用連結，可讓您直接開始匯入或匯出。
+* 您也可以從工作區的&#x200B;**[!UICONTROL Monitoring]**&#x200B;區段啟動匯入和匯出：兩個專用連結可讓您直接啟動匯入或匯出。
 
   ![](assets/s_ncs_user_import_from_production.png)
 

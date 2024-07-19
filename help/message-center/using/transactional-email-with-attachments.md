@@ -39,11 +39,11 @@ ht-degree: 2%
 
 ## Recommendations和護欄 {#important-notes}
 
-為避免效能問題，電子郵件中包含的影像不能超過100 KB。 此限制（預設設定）可由 `NmsDelivery_MaxDownloadedImageSize` 選項。 不過，Adobe強烈建議避免在電子郵件傳遞中使用大型影像。
+為避免效能問題，電子郵件中包含的影像不能超過100 KB。 預設設定的此限制可以從`NmsDelivery_MaxDownloadedImageSize`選項變更。 不過，Adobe強烈建議避免在電子郵件傳遞中使用大型影像。
 
-Adobe也建議限制附加檔案的大小和數量。 依預設，您只能新增一個檔案作為電子郵件的附件。 此臨界值可從 `NmsDelivery_MaxRecommendedAttachments` 選項。
+Adobe也建議限制附加檔案的大小和數量。 依預設，您只能新增一個檔案作為電子郵件的附件。 此臨界值可從`NmsDelivery_MaxRecommendedAttachments`選項設定。
 
-進一步瞭解 [Campaign Classic選項清單](../../installation/using/configuring-campaign-options.md#delivery).
+深入瞭解[Campaign Classic選項清單](../../installation/using/configuring-campaign-options.md#delivery)。
 
 在實作此情境之前，請仔細閱讀下列准則：
 
@@ -54,7 +54,7 @@ Adobe也建議限制附加檔案的大小和數量。 依預設，您只能新�
 
 >[!NOTE]
 >
->為避免效能問題，建議不要在每封電子郵件中包含多個附件。 建議的臨界值可從下列位置設定： [Campaign Classic選項清單](../../installation/using/configuring-campaign-options.md#delivery).
+>為避免效能問題，建議不要在每封電子郵件中包含多個附件。 建議臨界值可從[Campaign Classic選項清單](../../installation/using/configuring-campaign-options.md#delivery)設定。
 
 ## 實施 {#implementation}
 
@@ -70,11 +70,11 @@ Adobe也建議限制附加檔案的大小和數量。 依預設，您只能新�
 
 1. 您可以透過SOAP訊息觸發器傳送電子郵件。 在SOAP呼叫中有一個URL引數(attachmentURL)。
 
-   如需有關SOAP請求的詳細資訊，請參閱 [事件說明](../../message-center/using/event-description.md).
+   如需SOAP要求的詳細資訊，請參閱[事件說明](../../message-center/using/event-description.md)。
 
-1. 設計電子郵件時，按一下 **[!UICONTROL Attachment]**.
+1. 設計電子郵件時，請按一下&#x200B;**[!UICONTROL Attachment]**。
 
-1. 在 **[!UICONTROL Attachment definition]** 畫面中，輸入SOAP附件引數：
+1. 在&#x200B;**[!UICONTROL Attachment definition]**&#x200B;畫面中，輸入SOAP附件引數：
 
    ```
    <%= rtEvent.ctx.attachmentUrl %>
@@ -82,6 +82,6 @@ Adobe也建議限制附加檔案的大小和數量。 依預設，您只能新�
 
 1. 處理訊息時，系統會從遠端位置（協力廠商伺服器）取得檔案，並將其附加至個別訊息。
 
-   由於此引數可以是變數，因此應該接受檔案的完整格式遠端URL變數，透過SOAP呼叫傳送。
+   由於此引數可以是變數，因此它應該接受檔案中完整格式的遠端URL變數(透過SOAP呼叫傳送)。
 
    ![](assets/message-center-uc2.png)

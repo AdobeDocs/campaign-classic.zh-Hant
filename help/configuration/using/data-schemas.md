@@ -16,7 +16,7 @@ ht-degree: 1%
 
 ## 原則 {#principles}
 
-若要編輯、建立及設定方案，請按一下 **[!UICONTROL Administration > Configuration > Data schemas]** Adobe Campaign使用者端主控台的節點。
+若要編輯、建立及設定結構描述，請按一下Adobe Campaign使用者端主控台的&#x200B;**[!UICONTROL Administration > Configuration > Data schemas]**&#x200B;節點。
 
 >[!NOTE]
 >
@@ -40,16 +40,16 @@ ht-degree: 1%
 >
 >儲存來源結構描述時，就會自動啟動產生延伸結構描述。
 
-如果您需要檢查架構的完整結構，可以使用預覽索引標籤。 如果結構描述已擴充，您就能將其所有擴充功能視覺化。 作為補充，[檔案]索引標籤會顯示所有綱要屬性和元素及其特性（SQL欄位、型別/長度、標籤、說明）。 檔案索引標籤僅適用於產生的結構描述。 有關詳細資訊，請參閱 [重新產生方案](../../configuration/using/regenerating-schemas.md) 區段。
+如果您需要檢查架構的完整結構，可以使用預覽索引標籤。 如果結構描述已擴充，您就能將其所有擴充功能視覺化。 作為補充，[檔案]索引標籤會顯示所有綱要屬性和元素及其特性（SQL欄位、型別/長度、標籤、說明）。 檔案索引標籤僅適用於產生的結構描述。 如需詳細資訊，請參閱[重新產生結構描述](../../configuration/using/regenerating-schemas.md)區段。
 
 ## 範例：建立合約表格 {#example--creating-a-contract-table}
 
-在下列範例中，我們要為 **合約** 在Adobe Campaign資料庫的資料庫模型中。 此表格可讓您儲存每個合約的持有者和共同持有者的名字和姓氏，以及電子郵件地址。
+在下列範例中，我們想要在Adobe Campaign資料庫的資料庫模型中為&#x200B;**合約**&#x200B;建立新資料表。 此表格可讓您儲存每個合約的持有者和共同持有者的名字和姓氏，以及電子郵件地址。
 
 要執行此操作，您需要建立表格的綱要，並更新資料庫結構以產生對應的表格。 套用下列階段：
 
-1. 編輯 **[!UICONTROL Administration > Configuration > Data schemas]** Adobe Campaign樹的節點，然後按一下 **[!UICONTROL New]** .
-1. 選擇 **[!UICONTROL Create a new table in the data model]** 選項並按一下 **[!UICONTROL Next]** .
+1. 編輯Adobe Campaign樹狀結構的&#x200B;**[!UICONTROL Administration > Configuration > Data schemas]**&#x200B;節點，然後按一下&#x200B;**[!UICONTROL New]** 。
+1. 選擇&#x200B;**[!UICONTROL Create a new table in the data model]**&#x200B;選項，然後按一下&#x200B;**[!UICONTROL Next]** 。
 
    ![](assets/s_ncs_configuration_create_new_schema.png)
 
@@ -59,9 +59,9 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >依預設，使用者建立的方案會儲存在「cus」名稱空間。 有關詳細資訊，請參閱 [結構描述的識別](../../configuration/using/about-schema-reference.md#identification-of-a-schema).
+   >依預設，使用者建立的方案會儲存在「cus」名稱空間。 如需詳細資訊，請參閱[結構描述識別](../../configuration/using/about-schema-reference.md#identification-of-a-schema)。
 
-1. 建立表格內容。 建議您使用輸入精靈來確認沒有遺失任何設定。 若要這麼做，請按一下 **[!UICONTROL Insert]** 按鈕，並選擇要新增的設定型別。
+1. 建立表格內容。 建議您使用輸入精靈來確認沒有遺失任何設定。 若要這麼做，請按一下&#x200B;**[!UICONTROL Insert]**&#x200B;按鈕，然後選擇要新增的設定型別。
 
    ![](assets/s_ncs_configuration_create_new_content.png)
 
@@ -117,4 +117,4 @@ ht-degree: 1%
 
    ![](assets/s_ncs_configuration_structure.png)
 
-1. 更新資料庫結構以建立將連結綱要的表格。 有關詳細資訊，請參閱 [更新資料庫結構](../../configuration/using/updating-the-database-structure.md).
+1. 更新資料庫結構以建立將連結綱要的表格。 如需詳細資訊，請參閱[更新資料庫結構](../../configuration/using/updating-the-database-structure.md)。

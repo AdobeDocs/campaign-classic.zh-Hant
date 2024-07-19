@@ -20,7 +20,7 @@ ht-degree: 2%
 
 ## 要傳送的資料格式 {#format-of-the-data-to-be-sent}
 
-網頁追蹤URL的格式如下： **https://`<name_of_redirection_server>`：`<port>`/r/`<random_number>`？`<parameters>`**
+網路追蹤URL的格式如下： **https://`<name_of_redirection_server>`：`<port>`/r/`<random_number>`？`<parameters>`**
 
 >[!NOTE]
 >
@@ -78,7 +78,8 @@ ht-degree: 2%
                               <p>URL引數</p> 
                            </td>
                            <td>
-                              <p>沒有工作階段Cookie時要使用的傳遞識別碼。 此值以十六進位表示。
+                              <p>沒有工作階段Cookie時要使用的傳遞識別碼。 此值將為
+                                 以十六進位表示。
                               </p> 
                            </td> 
                         </tr>
@@ -90,14 +91,16 @@ ht-degree: 2%
                               <p>URL引數</p> 
                            </td>
                            <td>
-                              <p>用於識別網際網路使用者的引數。 此引數的格式為「name=value」，其中名稱是收件者綱要的欄位。 此引數的優先順序高於工作階段Cookie中包含的識別碼。
+                              <p>用於識別網際網路使用者的引數。 此引數的格式為「name=value」，
+                                 其中名稱是收件者綱要的欄位。 此引數的優先順序高於
+                                 工作階段Cookie中包含的識別碼。
                               </p> 
                            </td> 
                         </tr> 
                      </tbody>  
                   </table>
 
-**一些網頁追蹤URL**
+**幾個網頁追蹤URL**
 
 * 造訪「首頁」識別碼頁面
 
@@ -127,5 +130,5 @@ ht-degree: 2%
 
 可以使用下列方法：
 
-* 在中插入URL **&quot;src&quot;** HTML的屬性 **`<img>`** 標籤已整合到您要追蹤的網頁中。
+* 將URL插入您要追蹤之網頁中所合併之HTML **`<img>`**&#x200B;標籤的&#x200B;**&quot;src&quot;**&#x200B;屬性中。
 * 產生您要追蹤的網頁時，直接呼叫重新導向伺服器。

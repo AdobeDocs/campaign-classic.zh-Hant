@@ -18,17 +18,17 @@ ht-degree: 0%
 
 
 
-使用行銷活動 [同盟資料存取](../../installation/using/about-fda.md) (FDA)選項，用於處理儲存在外部資料庫中的資訊。 請依照下列步驟設定對Teradata的存取權。
+使用Campaign [同盟資料存取](../../installation/using/about-fda.md) (FDA)選項來處理儲存在外部資料庫中的資訊。 請依照下列步驟設定對Teradata的存取權。
 
-1. 安裝與設定 [teradata驅動程式](#teradata-config)
-1. 設定Teradata [外部帳戶](#teradata-external) 在Campaign中
-1. 設定 [其他設定](#teradata-additional-configurations) 適用於Teradata和Campaign伺服器
+1. 安裝及設定[Teradata驅動程式](#teradata-config)
+1. 在Campaign中設定Teradata[外部帳戶](#teradata-external)
+1. 設定Teradata與促銷活動伺服器的[額外組態](#teradata-additional-configurations)
 
 ## teradata設定 {#teradata-config}
 
 您必須安裝Teradata驅動程式，才能實作與Campaign的連線。
 
-1. 安裝 [適用於Teradata的ODBC驅動程式](https://downloads.teradata.com/download/connectivity/odbc-driver/linux).
+1. 安裝Teradata](https://downloads.teradata.com/download/connectivity/odbc-driver/linux)的[ODBC驅動程式。
 
    它由三個套件組成，可依下列順序安裝在Red Hat （或CentOS）/Suse上：
 
@@ -36,7 +36,7 @@ ht-degree: 0%
    * tdicu1510 （使用setup_wrapper.sh安裝）
    * tdodbc1510 （使用setup_wrapper.sh安裝）
 
-1. 設定ODBC驅動程式。 可在標準檔案中執行設定： **/etc/odbc.ini** 對於一般引數和/etc/odbcinst.ini宣告驅動程式：
+1. 設定ODBC驅動程式。 可在標準檔案中執行組態： **/etc/odbc.ini** （一般引數）和/etc/odbcinst.ini （宣告驅動程式）：
 
    * **/etc/odbc.ini**
 
@@ -45,7 +45,7 @@ ht-degree: 0%
      InstallDir=/etc/
      ```
 
-     「InstallDir」對應至 **odbcinst.ini** 檔案。
+     「InstallDir」對應至&#x200B;**odbcinst.ini**&#x200B;檔案的位置。
 
    * **/etc/odbcinst.ini**
 
@@ -63,9 +63,9 @@ ht-degree: 0%
 
 1. 指定Adobe Campaign伺服器的環境變數：
 
-   * **LD_LIBRARY_PATH** teradata ： /opt/client/15.10/lib64和/opt/teradata/client/15.10/odbc_64/lib。
-   * **ODBCINI**：odbc.ini檔案的位置(例如/etc/odbc.ini)。
-   * **NLSPATH**：opermsgs.cat檔案的位置(/opt/teradata/client/15.10/msg/opermsgs.cat)
+   * **LD_LIBRARY_PATH**： /opt/teradata/client/15.10/lib64和/opt/teradata/client/15.10/odbc_64/lib。
+   * **ODBCINI**： odbc.ini檔案的位置(例如/etc/odbc.ini)。
+   * **NLSPATH**： opermsgs.cat檔案(/opt/teradata/client/15.10/msg/opermsgs.cat)的位置
 
 >[!NOTE]
 >
@@ -76,27 +76,27 @@ ht-degree: 0%
 
 teradata外部帳戶可讓您將您的Campaign執行個體連線至Teradata外部資料庫。
 
-1. 從Campaign **[!UICONTROL Explorer]**，按一下 **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
+1. 從行銷活動&#x200B;**[!UICONTROL Explorer]**，按一下&#x200B;**[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**。
 
-1. 按一下 **[!UICONTROL New]** 並選取 **[!UICONTROL External database]** 作為 **[!UICONTROL Type]**.
+1. 按一下&#x200B;**[!UICONTROL New]**&#x200B;並選取&#x200B;**[!UICONTROL External database]**&#x200B;作為&#x200B;**[!UICONTROL Type]**。
 
    ![](assets/ext_account_19.png)
 
-1. 若要設定 **[!UICONTROL Teradata]** 外部帳戶，您必須指定：
+1. 若要設定&#x200B;**[!UICONTROL Teradata]**&#x200B;外部帳戶，您必須指定：
 
-   * **[!UICONTROL Type]**：選擇 **[!UICONTROL Teradata]** 型別。
+   * **[!UICONTROL Type]**：選擇&#x200B;**[!UICONTROL Teradata]**&#x200B;型別。
 
-   * **[!UICONTROL Server]**：Teradata伺服器的URL或名稱
+   * **[!UICONTROL Server]**：您的Teradata伺服器的URL或名稱
 
    * **[!UICONTROL Account]**：用來存取Teradata資料庫的帳戶名稱
 
    * **[!UICONTROL Password]**：用來連線至Teradata資料庫的密碼
 
-   * **[!UICONTROL Database]**：資料庫名稱（選擇性）
+   * **[!UICONTROL Database]**：資料庫的名稱（選擇性）
 
    * **[!UICONTROL Options]**：要透過Teradata傳遞的選項。 使用以下格式： &#39;parameter=value&#39;。 值之間使用分號作為分隔符號。
 
-   * **[!UICONTROL Timezone]**：在Teradata中設定的時區。 [了解更多](#timezone)
+   * **[!UICONTROL Timezone]**：時區設定於Teradata。 [了解更多](#timezone)
 
 聯結器支援下列選項：
 
@@ -104,8 +104,8 @@ teradata外部帳戶可讓您將您的Campaign執行個體連線至Teradata外�
 |---|---|
 | TD_MAX_SESSIONS | 指定「Teradata平行傳輸程式」可為運運算元工作取得的登入工作階段數目上限。 |
 | 時區名稱 | 伺服器時區的名稱。 |
-| 字元集 | 用於設定Teradata字元集。 <br>有關詳細資訊，請參閱 [此頁面](https://docs.teradata.com/r/ODBC-Driver-for-Teradata-User-Guide/May-2017/Configuration-of-odbc.ini-in-UNIX/Linux-and-Apple-OS-X/Teradata-DSN-Options#rub1478609534082__table_N102D3_N102B6_N102B3_N10001). |
-| IANAAppCodePage | ODBC應用程式程式碼頁。 <br>有關詳細資訊，請參閱 [此頁面](https://docs.teradata.com/r/ODBC-Driver-for-Teradata-User-Guide/May-2017/ODBC-Driver-for-Teradata-Application-Development/International-Character-Set-Support/Application-Code-Page) |
+| 字元集 | 用於設定Teradata字元集。 <br>如需詳細資訊，請參閱[此頁面](https://docs.teradata.com/r/ODBC-Driver-for-Teradata-User-Guide/May-2017/Configuration-of-odbc.ini-in-UNIX/Linux-and-Apple-OS-X/Teradata-DSN-Options#rub1478609534082__table_N102D3_N102B6_N102B3_N10001)。 |
+| IANAAppCodePage | ODBC應用程式程式碼頁。 <br>如需詳細資訊，請參閱[此頁面](https://docs.teradata.com/r/ODBC-Driver-for-Teradata-User-Guide/May-2017/ODBC-Driver-for-Teradata-Application-Development/International-Character-Set-Support/Application-Code-Page) |
 
 ### 新增其他ODBC外部帳戶 {#add-external}
 
@@ -115,13 +115,13 @@ teradata外部帳戶可讓您將您的Campaign執行個體連線至Teradata外�
 
 teradata驅動程式提供自己的ODBC程式庫，但此程式庫可能與其他ODBC外部帳戶不相容。
 
-如果您要設定另一個也使用ODBC的外部帳戶(例如Snowflake)，則需要將ODBCLib選項集新增至預設ODBC程式庫的路徑(`/usr/lib/x86_64-linux-gnu/libodbc.so` 在Debian和 `/usr/lib64/libodbc.so` 在RHEL/CentOS上)。
+如果您要設定另一個也使用ODBC的外部帳戶(例如Snowflake)，您需要將ODBCLib選項集新增至預設ODBC程式庫的路徑（`/usr/lib/x86_64-linux-gnu/libodbc.so`在Debian上，`/usr/lib64/libodbc.so`在RHEL/CentOS上）。
 
 ![](assets/ext_account_24.png)
 
 ### 查詢級區
 
-當多個Adobe Campaign使用者連線至同一個FDATeradata外部帳戶時， **[!UICONTROL Query banding]** 索引標籤可讓您在工作階段上設定查詢範圍，即一組索引鍵/值組。
+當多個Adobe Campaign使用者連線至相同的FDATeradata外部帳戶時，**[!UICONTROL Query banding]**&#x200B;標籤可讓您在工作階段上設定查詢範圍，即一組索引鍵/值組。
 
 ![](assets/ext_account_20.png)
 
@@ -129,25 +129,25 @@ teradata驅動程式提供自己的ODBC程式庫，但此程式庫可能與其�
 
 >[!NOTE]
 >
->如需詳細資訊，請參閱 **[!UICONTROL Query banding]**，請參閱 [teradata檔案](https://docs.teradata.com/reader/cY5B~oeEUFWjgN2kBnH3Vw/a5G1iz~ve68yTMa24kVjVw).
+>如需&#x200B;**[!UICONTROL Query banding]**&#x200B;的詳細資訊，請參閱[Teradata檔案](https://docs.teradata.com/reader/cY5B~oeEUFWjgN2kBnH3Vw/a5G1iz~ve68yTMa24kVjVw)。
 
 若要設定「查詢」級區，請遵循下列步驟：
 
-1. 使用  **[!UICONTROL Default]** 輸入使用者沒有相關查詢範圍時將使用的預設查詢範圍。 如果此欄位留空，則沒有查詢範圍的使用者將無法使用Teradata。
+1. 使用&#x200B;**[!UICONTROL Default]**&#x200B;輸入預設查詢頻帶，如果使用者沒有關聯的查詢頻帶，就會使用預設查詢頻帶。 如果此欄位留空，則沒有查詢範圍的使用者將無法使用Teradata。
 
-1. 使用 **[!UICONTROL Users]** 欄位以指定每個使用者的查詢頻帶。 您可以視需要新增任意數量的索引鍵/值組，例如，priority=1；workload=high。 如果使用者未指派查詢頻帶，則 **[!UICONTROL Default]** 欄位。
+1. 使用&#x200B;**[!UICONTROL Users]**&#x200B;欄位為每個使用者指定查詢頻帶。 您可以視需要新增任意數量的索引鍵/值組，例如，priority=1；workload=high。 如果使用者未指派查詢頻帶，則會套用&#x200B;**[!UICONTROL Default]**&#x200B;欄位。
 
-1. 檢查 **[!UICONTROL Active]** 方塊以啟動此功能
+1. 勾選&#x200B;**[!UICONTROL Active]**&#x200B;方塊以啟動此功能
 
 #### 外部帳戶疑難排解 {#external-account-troubleshooting}
 
-如果在測試連線時出現以下錯誤 **TIM-030008日期&#39;2&#39;：缺少字元(iRc=-53)** 請確定已正確安裝ODBC驅動程式，且已為Campaign伺服器設定LD_LIBRARY_PATH (Linux) / PATH (Windows)。
+如果在測試連線&#x200B;**TIM-030008日期&#39;2&#39;時出現下列錯誤：遺漏字元(iRc=-53)**，請確定已正確安裝ODBC驅動程式，且已為Campaign伺服器設定LD_LIBRARY_PATH (Linux) / PATH (Windows)。
 
-錯誤 **ODB-240000 ODBC錯誤： [Microsoft][ODBC Driver Manager] 找不到資料來源名稱，且未指定預設驅動程式。** 若使用16.X驅動程式，就會在Windows上發生。 Adobe Campaign預期teradata的名稱為&#39;{teradata}&#39;在odbcinst.ini中。
+錯誤&#x200B;**ODB-240000 ODBC錯誤： [找不到Microsoft][ODBC Driver Manager]資料來源名稱，且未指定預設驅動程式。如果您使用16.X驅動程式，Windows會發生**。 Adobe Campaign預期odbcinst.ini中的teradata名稱為&#39;{teradata}&#39;。
 
 * 從Campaign 18.10開始，您可以在外部帳戶的選項中新增ODBCDriverName=&quot;Teradata資料庫ODBC驅動程式16.10&quot;。 版本編號可以變更，執行odbcad32.exe並存取[驅動程式]索引標籤即可找到確切的名稱。
 
-* 如果您使用較舊的Campaign版本，則必須將驅動程式安裝所建立的odbcinst.ini的Teradata區段複製到名為Teradata的新區段。 在這種情況下，可以使用Regedit 。 如果您的基底是latin1，則必須新增 **APICharSize=1** 在選項中。
+* 如果您使用較舊的Campaign版本，則必須將驅動程式安裝所建立的odbcinst.ini的Teradata區段複製到名為Teradata的新區段。 在這種情況下，可以使用Regedit 。 如果您的基底是latin1，則必須在選項中新增&#x200B;**APICharSize=1**。
 
 ## 其他設定 {#teradata-additional-configurations}
 
@@ -186,7 +186,7 @@ Adobe Campaign不會在其將在資料庫中建立的物件上設定保護模式
 
 ### MD5安裝 {#md5-installation}
 
-如果您想要在Adobe Campaign執行個體中使用md5函式，則必須從此在Teradata資料庫上安裝使用者模式函式 [頁面](https://downloads.teradata.com/download/extensibility/md5-message-digest-udf) (md5_20080530.zip)。
+如果您想要在Adobe Campaign執行個體中使用md5函式，您必須從此[頁面](https://downloads.teradata.com/download/extensibility/md5-message-digest-udf) (md5_20080530.zip)在Teradata資料庫上安裝使用者模式函式。
 
 下載檔案的sha1如下65cc0bb6935f72fcd84fef1ebcd64c00115dfd1e。
 
@@ -206,7 +206,7 @@ Adobe Campaign不會在其將在資料庫中建立的物件上設定保護模式
 
 ### SHA2安裝 {#sha2-installation}
 
-如果您要在Adobe Campaign執行個體中使用sha2函式，您必須從此在Teradata資料庫上安裝使用者模式函式 [頁面](https://github.com/akuroda/teradata-udf-sha2/archive/v1.0.zip) (teradata-udf-sha2-1.0.zip)。
+如果您想要在Adobe Campaign執行個體中使用sha2函式，您必須從此[頁面](https://github.com/akuroda/teradata-udf-sha2/archive/v1.0.zip) (teradata-udf-sha2-1.0.zip)在Teradata資料庫上安裝使用者模式函式。
 
 下載檔案的sha1如下e87438d37424836358bd3902cf1adeb629349780。
 
@@ -227,7 +227,7 @@ Adobe Campaign不會在其將在資料庫中建立的物件上設定保護模式
 
 ### UDF_UTF16TO8安裝 {#UDF-UTF16TO8-installation}
 
-如果您想在Adobe Campaign執行個體中使用udf_utf16to8函式，請從以下網址在Teradata資料庫上安裝使用者模式函式： **teradataunicode工具套件**.
+如果您要在Adobe Campaign執行個體中使用udf_utf16to8函式，請從&#x200B;**Teradataunicode工具套件**&#x200B;在Teradata資料庫上安裝使用者模式函式。
 
 下載檔案的sha1如下e58235f434f52c71316a577cb48e20b97d24f470。
 
@@ -258,9 +258,9 @@ Adobe Campaign不會在其將在資料庫中建立的物件上設定保護模式
 
 驅動程式安裝需要下列專案：
 
-* teradataODBC驅動程式，可在此找到 [頁面](https://downloads.teradata.com/download/connectivity/odbc-driver/linux)
+* teradata的ODBC驅動程式，可在此[頁面](https://downloads.teradata.com/download/connectivity/odbc-driver/linux)中找到
 
-* teradata工具與公用程式（用於大量載入），可在此找到 [頁面](https://downloads.teradata.com/download/tools/teradata-tools-and-utilities-linux-installation-package-0)
+* 可在此[頁面](https://downloads.teradata.com/download/tools/teradata-tools-and-utilities-linux-installation-package-0)找到的Teradata工具和公用程式（用於大量載入）
 
 檔案名稱和sha1：
 
@@ -308,7 +308,7 @@ Adobe Campaign不會在其將在資料庫中建立的物件上設定保護模式
 
 ## 適用於Windows的Campaign伺服器設定 {#campaign-server-windows}
 
-您必須先下載Windows適用的Teradata工具和公用程式。 您可以從這裡下載 [頁面](https://downloads.teradata.com/download/tools/teradata-tools-and-utilities-windows-installation-package)
+您必須先下載Windows適用的Teradata工具和公用程式。 您可以從此[頁面](https://downloads.teradata.com/download/tools/teradata-tools-and-utilities-windows-installation-package)下載
 
 請務必安裝ODBC驅動程式和Teradata平行傳輸程式基底。 它會安裝用來在Teradata資料庫上進行大量載入的telapi.dll。
 
@@ -316,7 +316,7 @@ Adobe Campaign不會在其將在資料庫中建立的物件上設定保護模式
 
 ## 時區 {#timezone}
 
-teradata使用非標準時區名稱，您可以在下列網址找到清單： [teradata網站](https://docs.teradata.com/reader/rgAb27O_xRmMVc_aQq2VGw/oGKvgl7gCeBMTGrp59BnwA). Adobe Campaign會嘗試將外部設定中指定的時區轉換為Teradata所瞭解的情況。 如果找不到通訊，則會找到工作階段最近的GMT+X （或GMT-X）時區，並在日誌中顯示警告。
+teradata使用非標準的時區名稱，您可以在[Teradata網站](https://docs.teradata.com/reader/rgAb27O_xRmMVc_aQq2VGw/oGKvgl7gCeBMTGrp59BnwA)上找到清單。 Adobe Campaign會嘗試將外部設定中指定的時區轉換為Teradata所瞭解的情況。 如果找不到通訊，則會找到工作階段最近的GMT+X （或GMT-X）時區，並在日誌中顯示警告。
 
 轉換會讀取名為teradata_timezones.txt的檔案，該檔案應位於以下datakit目錄中：/usr/local/neolane/nl6/datakit linux下。 如果您編輯此檔案，請務必聯絡Adobe Campaign團隊以在原始程式碼中進行變更，否則此檔案將在下次行銷活動更新時覆寫。
 

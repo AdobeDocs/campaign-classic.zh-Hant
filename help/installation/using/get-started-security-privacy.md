@@ -51,11 +51,11 @@ ht-degree: 7%
 
 在Adobe Campaign中進行開發時（工作流程、JavaScript、JSSP等），請一律遵循下列准則：
 
-* **指令碼**：請嘗試避免SQL陳述式，使用引數化函式而非字串串串連，將要使用的SQL函式新增至允許清單以避免SQL插入。
+* **指令碼**：嘗試避免SQL陳述式，使用引數化函式而非字串串串連，將要使用的SQL函式新增至允許清單以避免SQL插入。
 
 * **保護資料模型**：使用已命名的許可權來限制運運算元動作、新增系統篩選器(sysFilter)
 
-* **在Web應用程式中新增字幕**：瞭解如何在您的公開登陸頁面和訂閱頁面中新增驗證碼。
+* **在網頁應用程式中新增驗證碼**：瞭解如何在您的公用登陸頁面和訂閱頁面中新增驗證碼。
 
 [閱讀全文](../../installation/using/scripting-coding-guidelines.md)
 
@@ -74,17 +74,17 @@ ht-degree: 7%
 
 <img src="assets/do-not-localize/icon_server.svg" width="60px">
 
-必須在所有伺服器上執行設定。 組態檔案的型別為 **serverConf.xml** 和 **`config-<instance>.xml`**. 以下是需要驗證的關鍵元素：
+必須在所有伺服器上執行設定。 組態檔的型別為&#x200B;**serverConf.xml**&#x200B;和&#x200B;**`config-<instance>.xml`**。 以下是需要驗證的關鍵元素：
 
-* **安全性區域**：設定安全性區域，使其直接考慮Proxy使用者端的IP位址。
+* **安全性區域**：設定安全性區域，以便直接考慮Proxy使用者端的IP位址。
 
 * **檔案上傳保護**：限制可使用新的uploadAllowList屬性上傳至Adobe Campaign伺服器的檔案型別。 這可用於伺服器設定檔。
 
 * **轉送**：停用未使用模組/應用程式的轉送規則，以微調轉送設定。
 
-* **傳出連線的保護** 和 **命令限制** （伺服器端）
+* **傳出連線保護**&#x200B;和&#x200B;**命令限制** （伺服器端）
 
-* 您也可以新增額外的HTTP標頭、啟用checkIPConsistent、enableTLS、sessionTimeOutSec等。 請參閱 [Campaign伺服器設定檔案](../../installation/using/configuring-campaign-server.md) 和 [伺服器設定檔描述](../../installation/using/the-server-configuration-file.md) 以取得詳細資訊。
+* 您也可以新增額外的HTTP標頭、啟用checkIPConsistent、enableTLS、sessionTimeOutSec等。 如需詳細資訊，請參閱[Campaign伺服器設定檔案](../../installation/using/configuring-campaign-server.md)和[伺服器設定檔描述](../../installation/using/the-server-configuration-file.md)。
 
 [閱讀全文](../../installation/using/server-configuration.md)
 

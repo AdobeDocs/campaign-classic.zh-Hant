@@ -20,13 +20,13 @@ Adobe Campaign採用資料結構描述來：
 * 定義 Campaign 應用程式中不同資料物件之間的連結。
 * 定義及描述每個物件中包含的個別欄位。
 
-若要更瞭解Campaign內建表格及其互動，請參閱 [本節](https://helpx.adobe.com/tw/campaign/kb/acc-datamodel.html).
+如需深入瞭解Campaign內建表格及其互動，請參閱[本節](https://helpx.adobe.com/tw/campaign/kb/acc-datamodel.html)。
 
 ## 擴充或建立方案 {#extending-or-creating-schemas}
 
-若要將欄位或索引或其他元素新增至Campaign的其中一個核心資料結構，例如收件者表格(nms：recipient)，您必須擴充該結構。 有關詳細資訊，請參閱 [擴充綱要](../../configuration/using/extending-a-schema.md) 區段。
+若要將欄位或索引或其他元素新增至Campaign的其中一個核心資料結構，例如收件者表格(nms：recipient)，您必須擴充該結構。 如需詳細資訊，請參閱[擴充結構描述](../../configuration/using/extending-a-schema.md)區段。
 
-若要新增不存在於Adobe Campaign中的現成全新資料型別（例如合約表格），您可以直接建立自訂結構描述。 有關詳細資訊，請參閱 [資料結構描述](../../configuration/using/data-schemas.md) 區段。
+若要新增不存在於Adobe Campaign中的現成全新資料型別（例如合約表格），您可以直接建立自訂結構描述。 如需詳細資訊，請參閱[資料結構描述](../../configuration/using/data-schemas.md)區段。
 
 ![](assets/schemaextension_getting_started_1.png)
 
@@ -55,9 +55,9 @@ type="string" enum="exTransactionTypeEnum"/>
 
 >[!NOTE]
 >
->您也可以使用使用者管理的分項清單(通常位於 **[!UICONTROL Administration]** > **[!UICONTROL Platform]** )，指定指定欄位的值。 這些實際上是全域分項清單，如果您可在您使用的特定結構描述之外使用分項清單，這是較好的選擇。
+>您也可以使用使用者管理的列舉（通常在&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Platform]**&#x200B;下）來指定指定欄位的值。 這些實際上是全域分項清單，如果您可在您使用的特定結構描述之外使用分項清單，這是較好的選擇。
 
-若要進一步瞭解分項清單，請參閱 [分項清單](../../configuration/using/schema-structure.md#enumerations) 和 [`<enumeration>` 元素](../../configuration/using/schema/enumeration.md) 區段。
+若要進一步瞭解列舉，請參閱[列舉](../../configuration/using/schema-structure.md#enumerations)與[`<enumeration>`元素](../../configuration/using/schema/enumeration.md)區段。
 
 ## 索引 {#index}
 
@@ -80,19 +80,19 @@ type="string" enum="exTransactionTypeEnum"/>
 </dbindex>
 ```
 
-此 **xpath** 屬性會指向您要在結構描述中編制索引的欄位。
+**xpath**&#x200B;屬性指向結構描述中要編制索引的欄位。
 
 >[!IMPORTANT]
 >
 >請務必記住，索引提供的SQL查詢讀取效能提升也會在寫入記錄時帶來效能點選。 因此，應謹慎使用索引。
 
-有關索引的詳細資訊，請參閱 [索引欄位](../../configuration/using/database-mapping.md#indexed-fields) 區段。
+如需索引的詳細資訊，請參閱[索引欄位](../../configuration/using/database-mapping.md#indexed-fields)區段。
 
 ## 金鑰 {#keys}
 
-每個資料表都必須至少有一個索引鍵，而且通常會在結構描述的主要元素中使用 **@autopk=true** 屬性設為「true」。
+每個資料表都必須至少有一個索引鍵，而且通常使用設為&quot;true&quot;的&#x200B;**@autopk=true**&#x200B;屬性，在結構描述的主要元素中自動建立該索引鍵。
 
-主索引鍵也可使用定義 **內部** 屬性。
+主索引鍵也可以使用&#x200B;**internal**&#x200B;屬性來定義。
 
 例如：
 
@@ -102,21 +102,21 @@ type="string" enum="exTransactionTypeEnum"/>
 </key>
 ```
 
-在此範例中，請不要讓 **@autopk** 屬性會建立名為「id」的預設主索引鍵，我們指定自己的「householdId」主索引鍵。
+在此範例中，我們不是讓&#x200B;**@autopk**&#x200B;屬性建立名為「id」的預設主索引鍵，而是指定我們自己的「householdId」主索引鍵。
 
 >[!IMPORTANT]
 >
 >建立新結構描述或在結構描述擴充期間，您需要為整個結構描述保留相同的主要索引鍵序列值(@pkSequence)。
 
-如需金鑰的詳細資訊，請參閱 [金鑰管理](../../configuration/using/database-mapping.md#management-of-keys) 區段。
+如需金鑰的詳細資訊，請參閱[金鑰管理](../../configuration/using/database-mapping.md#management-of-keys)區段。
 
 ## 屬性（欄位） {#attributes--fields-}
 
-屬性可讓您定義組成資料物件的欄位。 您可以使用 **[!UICONTROL Insert]** 結構描述版本工具列中的按鈕，將空的屬性範本拖放至游標所在的XML中。 有關詳細資訊，請參閱 [資料結構描述](../../configuration/using/data-schemas.md) 區段。
+屬性可讓您定義組成資料物件的欄位。 您可以使用結構描述版本工具列中的&#x200B;**[!UICONTROL Insert]**&#x200B;按鈕，將空的屬性範本拖放到游標所在的XML中。 如需詳細資訊，請參閱[資料結構描述](../../configuration/using/data-schemas.md)區段。
 
 ![](assets/schemaextension_getting_started_2.png)
 
-完整的屬性清單可在 [`<attribute>` 元素](../../configuration/using/schema/attribute.md) 區段。 以下是一些較常用的屬性：
+[`<attribute>`元素](../../configuration/using/schema/attribute.md)區段中提供完整的屬性清單。 以下是一些較常用的屬性：
 
 * **@advanced**
 * **@dataPolicy**
@@ -133,9 +133,9 @@ type="string" enum="exTransactionTypeEnum"/>
 * **@xml**
 * **@type**
 
-  若要檢視Adobe Campaign針對不同資料庫管理系統產生之資料型別對應清單，請參閱 [對應Adobe Campaign/DBMS資料型別](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data) 區段。
+  若要檢視Adobe Campaign針對不同資料庫管理系統產生的資料型別對應清單，請參閱[對應Adobe Campaign/DBMS資料型別](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data)區段。
 
-如需每個屬性的詳細資訊，請參閱 [屬性說明](../../configuration/using/schema/attribute.md) 區段。
+如需每個屬性的詳細資訊，請參閱[屬性說明](../../configuration/using/schema/attribute.md)區段。
 
 ### 範例 {#examples}
 
@@ -151,13 +151,13 @@ type="string" enum="exTransactionTypeEnum"/>
 <attribute name="mobile" label="Mobile" template="nms:common:phone" required="true" />
 ```
 
-使用隱藏的計算欄位範例 **@advanced** 屬性：
+使用&#x200B;**@advanced**&#x200B;屬性隱藏的計算欄位範例：
 
 ```
 <attribute name="domain" label="Email domain" desc="Domain of recipient email address" expr="GetEmailDomain([@email])" advanced="true" />
 ```
 
-同樣儲存在SQL欄位中的XML欄位範例，此欄位具有 **@dataPolicy** 屬性。
+同樣儲存在SQL欄位中且具有&#x200B;**@dataPolicy**&#x200B;屬性的XML欄位範例。
 
 ```
 <attribute name="secondaryEmail" label="Secondary email address" length="100" xml="true" sql="true" dataPolicy="email" />
@@ -173,7 +173,7 @@ type="string" enum="exTransactionTypeEnum"/>
 
 連結是結構描述中主要元素的最後幾個元素。 它們定義您執行個體中所有不同的結構描述如何相互關聯。
 
-在包含下列專案的架構中宣告連結： **外部索引鍵** 連結至的資料表。
+在包含連結連結之資料表的&#x200B;**外部索引鍵**&#x200B;的結構描述中宣告連結。
 
 基數有三種型別：1-1、1-N和N-N。這是預設使用的1-N型別。
 
@@ -221,4 +221,4 @@ type="string" enum="exTransactionTypeEnum"/>
 
 >[!NOTE]
 >
->當修改不會影響資料庫結構時，您只需要重新產生結構描述。 若要這麼做，請選取要更新的結構描述，按一下滑鼠右鍵並選擇 **[!UICONTROL Actions > Regenerate selected schemas...]** . 有關詳細資訊，請參閱 [重新產生方案](../../configuration/using/regenerating-schemas.md) 區段。
+>當修改不會影響資料庫結構時，您只需要重新產生結構描述。 若要這麼做，請選取要更新的結構描述，按一下滑鼠右鍵並選擇&#x200B;**[!UICONTROL Actions > Regenerate selected schemas...]** 。 如需詳細資訊，請參閱[重新產生結構描述](../../configuration/using/regenerating-schemas.md)區段。

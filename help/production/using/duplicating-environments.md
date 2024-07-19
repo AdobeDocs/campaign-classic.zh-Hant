@@ -37,13 +37,13 @@ ht-degree: 1%
 
 1. 在來源環境的所有執行個體上建立資料庫復本，
 1. 在目標環境的所有執行個體上還原這些復本，
-1. 執行 **nms：freezeInstance.js** 啟動之前，先對目標環境執行燒灼程式檔。
+1. 在啟動之前，請在目標環境中執行&#x200B;**nms：freezeInstance.js**&#x200B;燒錄指令碼。
 
    此程式不會影響伺服器及其設定。
 
    >[!NOTE]
    >
-   >在Adobe Campaign的情境下， **燒灼化** 結合可讓您停止所有與外部互動之處理程式的動作：記錄、追蹤、傳遞、行銷活動工作流程等。\
+   >在Adobe Campaign的內容中，**驗證**&#x200B;結合可讓您停止與外界互動的所有處理程式的動作：記錄、追蹤、傳遞、行銷活動工作流程等。\
    >此步驟是避免傳送訊息多次（一次來自名義環境，另一次來自重複環境）所必需的。
 
    >[!IMPORTANT]
@@ -63,14 +63,14 @@ ht-degree: 1%
 
 ### 傳輸程式 {#transfer-procedure}
 
-本節將協助您透過案例研究，瞭解將來源環境轉移至目標環境所需的步驟：我們的目標是還原生產環境(**prod** 執行個體)至開發環境(**開發** 執行個體)，以便在儘可能接近「即時」平台的內容中運作。
+本節將協助您瞭解透過案例研究將來源環境轉移至目標環境所需的步驟：我們的目標是將生產環境（**prod**&#x200B;執行個體）還原至開發環境（**dev**&#x200B;執行個體），以便在儘可能接近「即時」平台的內容中運作。
 
 必須謹慎執行下列步驟：複製來源環境資料庫時，某些程式可能仍在進行中。 燒製（下方的步驟3）可防止訊息傳送兩次，並維持資料的一致性。
 
 >[!IMPORTANT]
 >
 >* 下列程式在PostgreSQL語言中有效。 如果SQL語言不同(例如Oracle)，則必須調整SQL查詢。
->* 以下命令適用於的 **prod** 執行個體和 **開發** PostgreSQL下的執行個體。
+>* 以下命令適用於PostgreSQL底下的&#x200B;**prod**&#x200B;執行個體和&#x200B;**dev**&#x200B;執行個體的內容。
 >
 
 ### 步驟1 — 備份來源環境(prod)資料 {#step-1---make-a-backup-of-the-source-environment--prod--data}
@@ -89,14 +89,14 @@ pg_dump mydatabase > mydatabase.sql
 
 每個環境的大多數設定元素不同：外部帳戶（中間來源、路由等）、技術選項（平台名稱、DatabaseId、電子郵件地址和預設URL等）。
 
-將來源資料庫儲存在目標資料庫之前，您需要匯出目標環境(dev)組態。 要執行此操作，請匯出這兩個表格的內容： **xtkoption** 和 **nmsextaccount**.
+將來源資料庫儲存在目標資料庫之前，您需要匯出目標環境(dev)組態。 若要這麼做，請匯出這兩個資料表的內容： **xtkoption**&#x200B;和&#x200B;**nmsextaccount**。
 
 此匯出可讓您保留開發設定，並僅重新整理開發資料（工作流程、範本、Web應用程式、收件者等）。
 
 為此，請針對下列兩個元素執行封裝匯出：
 
-* 匯出 **xtk：option** 資料表放入&#39;options_dev.xml&#39;檔案中，不含具有下列內部名稱的記錄：&#39;WdbcTimeZone&#39;、&#39;NmsServer_LastPostUpgrade&#39;和&#39;NmsBroadcast_RegexRules&#39;。
-* 在&#39;extaccount_dev.xml&#39;檔案中，匯出 **nms：extAccount** ID不是0 (@id &lt;> 0)的所有記錄表格。
+* 將&#x200B;**xtk：option**&#x200B;資料表匯出至&#39;options_dev.xml&#39;檔案，不含具有下列內部名稱的記錄：&#39;WdbcTimeZone&#39;、&#39;NmsServer_LastPostUpgrade&#39;和&#39;NmsBroadcast_RegexRules&#39;。
+* 在&#39;extaccount_dev.xml&#39;檔案中，匯出ID不是0 (@id &lt;> 0)的所有記錄的&#x200B;**nms：extAccount**&#x200B;表格。
 
 檢查匯出的選項/帳戶數目是否等於每個檔案中要匯出的行數。
 
@@ -138,14 +138,14 @@ nlserver pdump
 
 >[!NOTE]
 >
->在Windows中， **webmdl** 程式仍可正常運作，而不會影響其他作業。
+>在Windows中，**webmdl**&#x200B;處理序仍可作用中，而不會影響其他作業。
 
 您也可以檢查是否有任何系統處理序仍在執行中。
 
 要執行此操作，請使用下列程式：
 
-* 在Windows中：開啟 **任務管理員** 並檢查是否有 **nlserver.exe** 程式。
-* 在Linux：執行 **ps aux | grep nlserver** 命令，並檢查是否有 **nlserver** 程式。
+* 在Windows中：開啟&#x200B;**工作管理員**，並檢查是否沒有&#x200B;**nlserver.exe**&#x200B;處理序。
+* 在Linux中：執行&#x200B;**ps aux | grep nlserver**&#x200B;命令，並檢查是否沒有&#x200B;**nlserver**&#x200B;處理序。
 
 ### 步驟4 — 還原目標環境（開發）中的資料庫 {#step-4---restore-the-databases-in-the-target-environment--dev-}
 
@@ -192,9 +192,9 @@ nlserver javascript nms:freezeInstance.js -instance:<dev> -arg:run
 
 >[!NOTE]
 >
->在上重新啟動Adobe Campaign之前 **開發** 環境，您可以套用其他安全程式：啟動 **網頁** 僅限模組。
+>在&#x200B;**開發**&#x200B;環境中重新啟動Adobe Campaign之前，您可以套用其他安全程式：僅啟動&#x200B;**Web**&#x200B;模組。
 >  
->若要這麼做，請編輯您執行個體的設定檔(**config-dev.xml**)，然後為每個模組（mta、stat等）在autoStart=&quot;true&quot;選項前新增&quot;_&quot;字元。
+>若要這麼做，請編輯執行個體的設定檔(**config-dev.xml**)，然後為每個模組（mta、stat等）在autoStart=&quot;true&quot;選項之前新增&quot;_&quot;字元。
 
 執行以下命令以啟動Web程式：
 
@@ -223,11 +223,11 @@ nlserver pdump
 1. 開啟資料庫的Admin Console，並清除識別碼不是0 (@id &lt;> 0)的外部帳戶（表格nms：extAccount）。
 1. 在Adobe Campaign主控台中，匯入先前透過匯入套件功能建立的options_dev.xml套件。
 
-   檢查選項是否確實已在下列欄位中更新： **[!UICONTROL Administration > Platform > Options]** 節點。
+   檢查&#x200B;**[!UICONTROL Administration > Platform > Options]**&#x200B;節點中的選項是否確實已更新。
 
 1. 在Adobe Campaign主控台中，匯入先前透過匯入套件功能建立的extaccount_dev.xml
 
-   檢查外部資料庫是否確實已匯入 **[!UICONTROL Administration > Platform > External accounts]** .
+   檢查外部資料庫是否確實已在&#x200B;**[!UICONTROL Administration > Platform > External accounts]**&#x200B;中匯入。
 
 ### 步驟9 — 重新啟動所有程式並變更使用者(dev) {#step-9---restart-all-processes-and-change-users--dev-}
 

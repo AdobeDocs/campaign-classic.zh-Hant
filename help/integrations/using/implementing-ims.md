@@ -17,13 +17,13 @@ ht-degree: 1%
 
 # 實作IMS{#implementing-ims}
 
-一次 [IMS設定](configuring-ims.md) 完成，您可以啟用連線。
+完成[IMS設定](configuring-ims.md)後，您就可以啟用連線。
 
 若要在Adobe Campaign中啟用IMS驗證模式，請執行下列步驟：
 
 1. 開啟「使用者端主控台」連線畫面。
 1. 選取啟用連線所需的環境。
-1. 檢查 **[!UICONTROL Connect with an Adobe ID]** 選項並儲存您的變更。
+1. 核取&#x200B;**[!UICONTROL Connect with an Adobe ID]**&#x200B;選項並儲存變更。
 
    ![](assets/ims_1.png)
 

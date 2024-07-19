@@ -20,13 +20,13 @@ ht-degree: 3%
 
 此報表顯示與即時佇列相關的主要指標。
 
-此報表是針對技術管理員，也可透過以下網址存取： **[!UICONTROL Monitoring]** 索引標籤上的控制項執行個體。
+此報表是針對技術管理員，也可透過控制執行個體上的&#x200B;**[!UICONTROL Monitoring]**&#x200B;索引標籤進行存取。
 
 ![](assets/mc_reports_2.png)
 
-就像的 **[!UICONTROL Message Center service level]** 報表，您可以選擇顯示整體統計資料或特定執行例項的相關統計資料。 您也可以依管道和特定期間篩選資料。
+就像&#x200B;**[!UICONTROL Message Center service level]**&#x200B;報告一樣，您可以選擇顯示整體統計資料，或相對於特定執行例項的統計資料。 您也可以依管道和特定期間篩選資料。
 
-顯示在以下位置的指示器： **[!UICONTROL Indicators over the period]** 區段會在所選的時段內計算：
+**[!UICONTROL Indicators over the period]**&#x200B;區段中所顯示的指標是在選取的時段內計算：
 
 * **[!UICONTROL Average queuing time]** ：成功處理在訊息中心所花費之事件的平均時間。 僅考慮處理時間。
 * **[!UICONTROL Average message sending time (s)]** ：成功處理在訊息中心所花費之事件的平均時間。 只考慮MTA傳送時間。
@@ -37,4 +37,4 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->可以在Adobe Campaign部署精靈中設定警告（橘色）和警示（紅色）指標臨界值。 請參閱 [監視臨界值](../../message-center/using/additional-configurations.md#monitoring-thresholds).
+>可以在Adobe Campaign部署精靈中設定警告（橘色）和警示（紅色）指標臨界值。 請參閱[監視臨界值](../../message-center/using/additional-configurations.md#monitoring-thresholds)。

@@ -21,25 +21,25 @@ ht-degree: 4%
 
 本節列出Adobe Campaign中的常用命令。
 
-指令 **nlserver** 是整個Adobe Campaign應用程式的輸入命令。
+命令&#x200B;**nlserver**&#x200B;是整個Adobe Campaign應用程式的輸入命令。
 
 這個命令的語法如下： **nlserver **`<command>`****`<arguments>`****
 
-引數 **`<command>`** 對應至模組。
+引數&#x200B;**`<command>`**&#x200B;對應至模組。
 
 >[!NOTE]
 >
->* 無論如何，您可以新增 **-noconsole** 引數，用來刪除啟動模組後顯示的註解。
->* 相反地，您可以新增引數 **-verbose** 以顯示更多資訊。
+>* 無論如何，您可以新增&#x200B;**-noconsole**&#x200B;引數，以刪除模組啟動後顯示的註解。
+>* 反之，您可以新增引數&#x200B;**-verbose**&#x200B;以顯示更多資訊。
 >
 
 ## 監視命令 {#monitoring-commands-}
 
 >[!NOTE]
 >
->若要列出所有模組，您需要使用 **nlserver pdump** 命令。
+>若要列出所有模組，您必須使用&#x200B;**nlserver pdump**&#x200B;命令。
 
-您可以新增引數 **-who** 列出進行中的連線（資料庫和應用程式）。
+您可以新增引數&#x200B;**-who**，列出進行中的連線（資料庫和應用程式）。
 
 ```sql
 nlserver pdump -who
@@ -61,9 +61,9 @@ Datasource Server Provider Login
 default xxxxx myserver myprovider test400
 ```
 
-另一個有用的指令是 **nlserver監視**. 其中列出監視XML檔案(在Adobe Campaign使用者端中取得，或透過 **monitor.jsp** 網頁)。
+另一個有用的命令是&#x200B;**nlserver monitor**。 它列出監視XML檔案(在Adobe Campaign使用者端或透過&#x200B;**monitor.jsp**&#x200B;網頁取得)。
 
-您可以新增引數 **-missing** 列出缺少的模組（模組、模組關閉等錯誤）
+您可以新增引數&#x200B;**-missing**，列出缺少的模組（模組、模組關閉等錯誤）
 
 ```sql
 nlserver monitor -missing
@@ -89,7 +89,7 @@ nlserver stop <module>@<INSTANCE>
 
 >[!NOTE]
 >
->**`<instance>`** 對應於在組態檔案中輸入的例項名稱，或 **預設** 用於單執行個體模組。
+>**`<instance>`**&#x200B;對應到組態檔中輸入的執行個體名稱，或是&#x200B;**預設** （針對單一執行個體模組）。
 
 ## 關閉服務 {#shut-down-services}
 
@@ -105,7 +105,7 @@ nlserver stop <module>@<INSTANCE>
 
      >[!NOTE]
      >
-     >從20.1版開始，建議您改用下列命令（適用於Linux）： **systemctl停止nlserver**
+     >從20.1開始，我們建議改用以下命令（適用於Linux）： **systemctl stop nlserver**
 
    * 在Windows中：
 
@@ -129,7 +129,7 @@ nlserver stop <module>@<INSTANCE>
 
      >[!NOTE]
      >
-     >從20.1版開始，建議您改用下列命令（適用於Linux）： **systemctl啟動nlserver**
+     >從20.1開始，我們建議改用以下命令（適用於Linux）： **systemctl start nlserver**
 
    * 在Windows中： `net start nlserver6`
 
@@ -137,9 +137,9 @@ nlserver stop <module>@<INSTANCE>
 
 ## 設定命令 {#the-config-command}
 
-此 **設定** command可讓您管理伺服器組態，包括重新設定資料庫連線。
+**config**&#x200B;命令可讓您管理伺服器組態，包括重新設定資料庫連線。
 
-使用 **設定** 命令 **nlserver** 包含下列專案的可執行檔案： **-setdblogin** 引數。
+使用包含&#x200B;**-setdblogin**&#x200B;引數的&#x200B;**nlserver**&#x200B;可執行檔的&#x200B;**config**&#x200B;命令。
 
 ```sql
 nlserver config -setdblogin:<[dbms:]account[:database][/password]@server>
@@ -151,16 +151,16 @@ nlserver config -setdblogin:PostgreSQL:<accountName>:test6@dbserver
 
 輸入密碼。
 
-若要變更 **內部** 密碼： **nlserver設定 — internalpassword**
+若要變更&#x200B;**內部**&#x200B;密碼： **nlserver config -internalpassword**
 
 >[!IMPORTANT]
 >
->若要使用 **內部** 識別碼，您必須預先定義密碼。 如需詳細資訊，請參閱[本章節](../../installation/using/configuring-campaign-server.md#internal-identifier)。
+>若要使用&#x200B;**內部**&#x200B;識別碼登入，您必須預先定義密碼。 如需詳細資訊，請參閱[本章節](../../installation/using/configuring-campaign-server.md#internal-identifier)。
 
 >[!NOTE]
 >
->* 一般而言，您可以使用 **設定** 命令
->* 若要取得引數清單，請使用 **-？** 引數： **nlserver設定 — ？**
+>* 一般而言，您可以使用&#x200B;**config**&#x200B;命令，而不必手動修改組態檔
+>* 若要取得引數清單，請使用&#x200B;**-？**&#x200B;引數： **nlserver config -？**
 >* 若是Oracle資料庫，則不得指定帳戶。 語法如下：
 >
 >  `nlserver config -setdblogin:Oracle:test6@dbserver`

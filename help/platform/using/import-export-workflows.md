@@ -27,15 +27,15 @@ ht-degree: 23%
 
 在工作流程中傳送的資料可來自已預先準備資料並將其建構的清單。
 
-此清單可能直接在Adobe Campaign中建立或由匯入 **[!UICONTROL Import a list]** 選項。 如需此選項的詳細資訊，請參閱此 [頁面](../../platform/using/about-generic-imports-exports.md).
+此清單可能直接在Adobe Campaign中建立或由&#x200B;**[!UICONTROL Import a list]**&#x200B;選項匯入。 如需此選項的詳細資訊，請參閱此[頁面](../../platform/using/about-generic-imports-exports.md)。
 
-有關在工作流程中使用讀取清單活動的詳細資訊，請參閱 [此頁面](../../workflow/using/read-list.md).
+如需在工作流程中使用讀取清單活動的詳細資訊，請參閱[此頁面](../../workflow/using/read-list.md)。
 
 ### 從檔案載入資料 {#loading-data-from-a-file}
 
 工作流程中處理的資料可從結構化檔案中擷取，以便匯入Adobe Campaign中。
 
-載入資料活動的說明可在以下連結中找到： [資料載入（檔案）](../../workflow/using/data-loading-file.md) 區段。
+載入資料活動的說明可在[資料載入（檔案）](../../workflow/using/data-loading-file.md)區段中找到。
 
 要匯入的結構化檔案範例：
 
@@ -53,4 +53,4 @@ Durance;Allison;15/12/1978;allison.durance@example.com;120987
 
 在使用可用於轉換資料的一些可用資料管理活動之後，可以使用工作流程來自動執行某些匯出過程或匯出精確資料集。
 
-匯出操作是使用 **[!UICONTROL Data extraction (file) activity]**. 有關如何設定和使用活動的詳細資訊，請參閱 [此頁面](../../workflow/using/extraction-file.md).
+使用&#x200B;**[!UICONTROL Data extraction (file) activity]**&#x200B;執行匯出作業。 有關如何設定及使用活動的詳細資訊，請參閱[此頁面](../../workflow/using/extraction-file.md)。

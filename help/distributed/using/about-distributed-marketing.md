@@ -15,13 +15,13 @@ ht-degree: 1%
 
 
 
-Adobe Campaign提供 **分散式行銷** 中央實體（總部、行銷部門等）之間實施合作活動的應用程式 本地實體 (銷售地點、地區代理等)。 此合作基於共用工作區，稱為 **[!UICONTROL list of campaign packages]**，即可將集中建立的行銷活動範本和執行個體提供給本機實體。
+Adobe Campaign提供&#x200B;**分散式行銷**&#x200B;應用程式，用於在中央實體（總部、行銷部門等）之間實施合作行銷活動 本地實體 (銷售地點、地區代理等)。 此合作是以稱為&#x200B;**[!UICONTROL list of campaign packages]**&#x200B;的共用工作區為基礎，集中式建立的行銷活動範本和執行個體會提供給本機實體。
 
 中央實體提供當地實體可使用的行銷活動。 行銷活動由代表本機或合作行銷活動的套件具體化。 若要使用行銷活動，當地實體必須對其進行訂購，並且訂單必須獲得核准。
 
 >[!CAUTION]
 >
->分散式行銷模組是 **Campaign** 選項。 請檢查您的授權合約。
+>分散式行銷模組是&#x200B;**行銷活動**&#x200B;選項。 請檢查您的授權合約。
 
 ## 術語 {#terminology}
 
@@ -36,7 +36,7 @@ Adobe Campaign提供 **分散式行銷** 中央實體（總部、行銷部門等
    * 管理及控制成本、
    * 處理代理程式網路。
 
-* **本地實體**
+* **本機實體**
 
   本地實體可以是特定本地營運商（國家或地區經理、品牌經理等）的代理商、商店或群組。
 
@@ -54,24 +54,24 @@ Adobe Campaign提供 **分散式行銷** 中央實體（總部、行銷部門等
 
   由中央實體建立並提供給一組本機實體使用的範本（或行銷活動例項）。
 
-* **本地行銷活動**
+* **本機行銷活動**
 
-  本機行銷活動是從清單所參照的範本建立的例項 **[!UICONTROL campaign packages]** 與 **特定執行排程**. 其目的在於使用由中央實體設定和設定的行銷活動範本，滿足本機通訊需求。
+  本機行銷活動是從包含&#x200B;**特定執行排程**&#x200B;的&#x200B;**[!UICONTROL campaign packages]**&#x200B;清單中參考的範本建立的執行個體。 其目的在於使用由中央實體設定和設定的行銷活動範本，滿足本機通訊需求。
 
   本地實體的自治程度取決於所使用的實作。
 
-  請參閱 [建立本機行銷活動](creating-a-local-campaign.md).
+  請參閱[建立本機行銷活動](creating-a-local-campaign.md)。
 
 * **合作行銷活動**
 
-  合作行銷活動是行銷活動，其 **執行排程已定義** 由中央實體提供，本機實體可使用此選項。 每個本機實體的內容都會保持不變，但會共用成本。 本地實體若要參加，請訂閱合作行銷活動。
+  合作行銷活動是其中的&#x200B;**執行排程由中央實體定義**&#x200B;的行銷活動，本機實體可使用此行銷活動。 每個本機實體的內容都會保持不變，但會共用成本。 本地實體若要參加，請訂閱合作行銷活動。
 
-   * **[!UICONTROL Collaborative campaign (by form)]**：建議用於涉及最多300個本地實體的行銷活動。 本機實體可輸入預先定義的引數，以用於網路表單中的目標定位與內容個人化。 表單可以是Adobe Campaign表單或外部表單（外部網路使用者端）。 功能管理員可以根據整合商定義的表單範本，定義及設定表單。 若要訂購行銷活動，本機實體只需要網頁存取權。
-   * **[!UICONTROL Collaborative campaign (by campaign)]**：針對針對數十個當地實體的行銷活動建議使用。 此型別的行銷活動會為每個本機實體建立子行銷活動。 一旦 **[!UICONTROL collaborative campaign (by campaign)]** 中央實體已核准，當地實體可使用促銷活動並修改促銷活動。 執行會在父項與子項行銷活動之間自動同步。 本機實體必須具備執行個體的存取權，才能訂購行銷活動並參與其中。
-   * **[!UICONTROL Collaborative campaign (by target approval)]**：針對針對數千個本地實體的行銷活動建議使用。 本機實體會接收已由中央實體預先定義的聯絡人清單。 本地實體會透過網路表單，根據行銷活動內容決定是否保留特定聯絡人。 從選取的連絡人清單衍生出本機實體。 若要參與行銷活動，本機實體只需要網頁存取權。
+   * **[!UICONTROL Collaborative campaign (by form)]**：建議用於涉及最多300個本機實體的行銷活動。 本機實體可輸入預先定義的引數，以用於網路表單中的目標定位與內容個人化。 表單可以是Adobe Campaign表單或外部表單（外部網路使用者端）。 功能管理員可以根據整合商定義的表單範本，定義及設定表單。 若要訂購行銷活動，本機實體只需要網頁存取權。
+   * **[!UICONTROL Collaborative campaign (by campaign)]**：針對以數十個本機實體為目標的行銷活動建議使用。 此型別的行銷活動會為每個本機實體建立子行銷活動。 中央實體核准&#x200B;**[!UICONTROL collaborative campaign (by campaign)]**&#x200B;後，本機實體即可使用該行銷活動，並可加以修改。 執行會在父項與子項行銷活動之間自動同步。 本機實體必須具備執行個體的存取權，才能訂購行銷活動並參與其中。
+   * **[!UICONTROL Collaborative campaign (by target approval)]**：針對以數千個本機實體為目標的行銷活動建議使用。 本機實體會接收已由中央實體預先定義的聯絡人清單。 本地實體會透過網路表單，根據行銷活動內容決定是否保留特定聯絡人。 從選取的連絡人清單衍生出本機實體。 若要參與行銷活動，本機實體只需要網頁存取權。
    * **[!UICONTROL Collaborative campaign (simple)]**：此模式可確保與先前版本的特定執行程式相容。
 
-  請參閱 [建立合作行銷活動](creating-a-collaborative-campaign.md).
+  請參閱[建立合作行銷活動](creating-a-collaborative-campaign.md)。
 
 **訂購行銷活動套件**
 
@@ -79,7 +79,7 @@ Adobe Campaign提供 **分散式行銷** 中央實體（總部、行銷部門等
 
 ## 工作區 {#workspace}
 
-行銷活動套件清單可從 **行銷活動** 標籤：按一下 **[!UICONTROL Campaign packages]** 連結。
+可從&#x200B;**行銷活動**&#x200B;標籤存取行銷活動套件清單：按一下&#x200B;**[!UICONTROL Campaign packages]**&#x200B;連結。
 
 ![](assets/mkg_dist_home_local_op.png)
 
@@ -89,7 +89,7 @@ Adobe Campaign提供 **分散式行銷** 中央實體（總部、行銷部門等
 
 ## 運運算元和實體 {#operators-and-entities}
 
-首先，請透過 **[!UICONTROL Access management]** 資料夾。
+首先，透過&#x200B;**[!UICONTROL Access management]**&#x200B;資料夾指定中央和本機實體運運算元。
 
 ![](assets/s_advuser_mkg_dist_tree.png)
 
@@ -97,19 +97,19 @@ Adobe Campaign提供 **分散式行銷** 中央實體（總部、行銷部門等
 
 您需要建立中央和本機運運算元。
 
-中央運運算元必須屬於 **[!UICONTROL Central management]** 操作員群組或具有 **[!UICONTROL CENTRAL]** 具名權利。
+中央運運算元必須屬於&#x200B;**[!UICONTROL Central management]**&#x200B;運運算元群組或具有&#x200B;**[!UICONTROL CENTRAL]**&#x200B;已命名的許可權。
 
-本機運運算元必須屬於 **[!UICONTROL Local management]** 操作員群組或具有 **[!UICONTROL LOCAL]** 具名權利。 它們也必須連結至其本機實體。
+本機運運算元必須屬於&#x200B;**[!UICONTROL Local management]**&#x200B;運運算元群組或具有&#x200B;**[!UICONTROL LOCAL]**&#x200B;已命名的許可權。 它們也必須連結至其本機實體。
 
 ![](assets/s_advuser_mkg_dist_local_create.png)
 
 ### 組織實體 {#organizational-entities}
 
-若要建立組織實體，請按一下 **[!UICONTROL Administration > Access management > Organizational entities]** 節點，然後按一下 **[!UICONTROL New]** 圖示加以識別。
+若要建立組織實體，請按一下&#x200B;**[!UICONTROL Administration > Access management > Organizational entities]**&#x200B;節點，然後按一下實體清單上方的&#x200B;**[!UICONTROL New]**&#x200B;圖示。
 
 ![](assets/s_advuser_mkg_dist_local_list.png)
 
-每個組織實體都包含識別資訊（標籤、內部名稱、聯絡資訊等） 與訂單核准流程中涉及的群組。 這些在中定義 **[!UICONTROL Notifications and approvals]** 區段位於 **[!UICONTROL General]** 標籤。
+每個組織實體都包含識別資訊（標籤、內部名稱、聯絡資訊等） 與訂單核准流程中涉及的群組。 這些是在&#x200B;**[!UICONTROL General]**&#x200B;索引標籤中的&#x200B;**[!UICONTROL Notifications and approvals]**&#x200B;區段中定義的。
 
 * 定義套件通知群組：此群組中的操作員將在每次將新套件新增到行銷活動套件清單和每次行銷活動可用時收到通知。
 * 選取負責核准訂單的稽核者群組，即負責核准本地實體所訂購行銷活動的稽核者。
@@ -117,7 +117,7 @@ Adobe Campaign提供 **分散式行銷** 中央實體（總部、行銷部門等
 
 >[!NOTE]
 >
->核准流程會顯示在中 [核准流程](creating-a-local-campaign.md#approval-process) 區段。
+>核准程式會顯示在[核准程式](creating-a-local-campaign.md#approval-process)區段中。
 
 ## 實施 {#implementation}
 
@@ -137,12 +137,12 @@ Adobe Campaign提供 **分散式行銷** 中央實體（總部、行銷部門等
 
    * 目標定義和大小上限，
    * 內容定義，
-   * 執行排程（聯絡日期和摘取日期）， **僅適用於本機運運算元**，
+   * 執行排程（連絡日期和擷取日期），**僅供本機運運算元使用**，
    * 包含所有必要附加欄位的訂單結構描述延伸模組。
 
 1. 建立網路表單(Adobe或外部網路)，讓您顯示本地化引數、評估目標和預算，以及預覽內容並核准訂單。
 
-   的 **合作行銷活動（依目標核准）**，建立將儲存每個本機實體核准的表格。
+   針對&#x200B;**合作行銷活動（依目標核准）**，建立將儲存每個本機實體核准的表格。
 
 ### 功能管理員任務 {#functional-administrator-side}
 
@@ -151,7 +151,7 @@ Adobe Campaign提供 **分散式行銷** 中央實體（總部、行銷部門等
 1. 使用行銷活動本地化所用的欄位更新表單。
 1. 從適當的行銷活動範本（合作行銷活動）建立執行個體或複製行銷活動範本（本機行銷活動）。
 1. 使用本地化欄位和表單參考來設定行銷活動。
-1. 發佈行銷活動。
+1. Publish促銷活動。
 
 ### 本地操作員任務 {#local-operator-side}
 

@@ -15,7 +15,7 @@ ht-degree: 0%
 
 
 
-一個 **核准** 作業需要操作員的參與。 操作員會獲得一項任務，且可以透過電子郵件、使用電子郵件訊息中連結的網頁或透過主控台進行回應。
+**核准**&#x200B;任務需要運運算元的參與。 操作員會獲得一項任務，且可以透過電子郵件、使用電子郵件訊息中連結的網頁或透過主控台進行回應。
 
 ## 任務指派 {#task-assignment}
 
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 如有必要，您可以將核准任務指派給單一運運算元，或由篩選器定義的一組運運算元。
 
-* 若要選取單一運運算元，請選取 **[!UICONTROL Operator]** 中的值 **[!UICONTROL Assignment type]** 欄位，並在的下拉式清單中選取相關的運運算元 **[!UICONTROL Assignee]** 欄位。
+* 若要選取單一運運算元，請在&#x200B;**[!UICONTROL Assignment type]**&#x200B;欄位中選取&#x200B;**[!UICONTROL Operator]**&#x200B;值，並在&#x200B;**[!UICONTROL Assignee]**&#x200B;欄位的下拉式清單中選取相關運運算元。
 
   ![](assets/s_advuser_validation_box_assign.png)
 
@@ -31,7 +31,7 @@ ht-degree: 0%
   >
   >只有選取的運運算元才有權核准任務。
 
-* 您可以定義用於篩選核准運運算元的查詢。 若要這麼做，請選取 **[!UICONTROL Filter]** 中的值 **[!UICONTROL Assignment type]** 欄位並按一下 **[!UICONTROL Advanced parameters...]** 定義篩選條件的連結，如下列範例所示：
+* 您可以定義用於篩選核准運運算元的查詢。 若要這麼做，請在&#x200B;**[!UICONTROL Assignment type]**&#x200B;欄位中選取&#x200B;**[!UICONTROL Filter]**&#x200B;值，然後按一下&#x200B;**[!UICONTROL Advanced parameters...]**&#x200B;連結以定義篩選條件，如下列範例所示：
 
   ![](assets/s_advuser_validation_box_filter.png)
 
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 修改活動的標題或訊息本文並不會影響目前的工作，但另一方面，修改可能的選擇會直接影響目前的工作，這會自動繼承新的選擇清單。
 
-**核准** 型別任務可從存取 **[!UICONTROL Administration > Production > Objects created automatically > Approvals pending]** 節點：操作者可直接透過此檢視存取核准表單。
+可從&#x200B;**[!UICONTROL Administration > Production > Objects created automatically > Approvals pending]**&#x200B;節點存取&#x200B;**核准**&#x200B;型別工作：操作者可直接透過此檢視存取核准表單。
 
 ![](assets/s_advuser_validation_from_console.png)
 
@@ -55,15 +55,15 @@ ht-degree: 0%
 
 ![](assets/edit_validation.png)
 
-這個 **[!UICONTROL Title]** 欄位包含訊息的標題：這是已傳送電子郵件訊息的主旨。 標題及訊息本文皆為JavaScript範本，因此可包含根據工作流程內容計算的值。
+此&#x200B;**[!UICONTROL Title]**&#x200B;欄位包含訊息的標題：這是已傳送電子郵件訊息的主旨。 標題及訊息內文皆為JavaScript範本，因此可包含根據工作流程內容計算的值。
 
 編輯器下半部分可讓您定義可能的答案清單。 每個答案都有一個對應的轉變。 名稱是內部識別碼，而標籤是將顯示在選項清單中的文字。
 
-按一下 **[!UICONTROL Advanced parameters...]** 用來選取要用來通知操作者的傳遞範本的連結。 預設範本（內部名稱「notifyAssignee」）會採用標題和訊息，並將連結新增至用於回答的網頁。
+按一下&#x200B;**[!UICONTROL Advanced parameters...]**&#x200B;連結以選取要用來通知操作員的傳遞範本。 預設範本（內部名稱「notifyAssignee」）會採用標題和訊息，並將連結新增至用於回答的網頁。
 
 此範本可以修改以個人化訊息版面，但最好製作副本。 不得修改目標定位機制（外部檔案、目標對應），因為通知需要它才能正確運作。
 
-核准範例顯示於 [定義核准](defining-approvals.md).
+在[定義核准](defining-approvals.md)中顯示核准範例。
 
 ## 輸出引數 {#output-parameters}
 
@@ -73,4 +73,4 @@ ht-degree: 0%
 
 * **[!UICONTROL responseOperator]**
 
-  已回應的運運算元的識別碼。 此欄位為數值，但 **[!UICONTROL String]** 欄位。
+  已回應的運運算元的識別碼。 此欄位是數值，但是&#x200B;**[!UICONTROL String]**&#x200B;欄位。

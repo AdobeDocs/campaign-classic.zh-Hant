@@ -28,9 +28,9 @@ ht-degree: 4%
 nlserver config -addinstance:instance/masques DNS[/lang]
 ```
 
-(其中 **英文** 和 **週五** 下列各項的可能值： `[lang]` 引數)
+（**eng**&#x200B;和&#x200B;**fra**&#x200B;可能是`[lang]`引數的值）
 
-指令 **nlserver config -addinstance：instance1/demo&#42;/eng** 可讓您建立名為的執行個體， **instance1** 英文版搭配DNS遮罩示範&#42;.
+命令&#x200B;**nlserver config -addinstance：instance1/demo&#42;/eng**&#x200B;可讓您使用DNS遮罩示範&#42;以英文建立名為&#x200B;**instance1**&#x200B;的執行個體。
 
 ## 宣告資料庫 {#declaring-a-database}
 
@@ -40,13 +40,13 @@ nlserver config -addinstance:instance/masques DNS[/lang]
 nlserver config -setdblogin:[rbdms:]account[:database][/password]@server
 ```
 
-下列的值適用於 **`[rdbms]`** 引數：
+**`[rdbms]`**&#x200B;引數可能有下列值：
 
 * **postgresql**：對於PostgreSQL，
 * **oracle**：針對Oracle，
-* **mssql**：針對Microsoft SQL Server，
+* **mssql**：對於Microsoft SQL Server，
 
-以下指令會設定 **示範** 具有SQL型別伺服器的執行個體稱為 **base6**，連結至 **行銷活動** 帳戶及其 **密碼** 於 **dbsrv** 伺服器：
+下列命令使用稱為&#x200B;**base6**&#x200B;的SQL型別伺服器設定&#x200B;**demo**&#x200B;執行個體，連結至&#x200B;**dbsrv**&#x200B;伺服器上的&#x200B;**campaign**&#x200B;帳戶及其&#x200B;**密碼**：
 
 ```sql
  nlserver config -setdblogin:db:campaign:myBase/password@dbServer -instance:demo

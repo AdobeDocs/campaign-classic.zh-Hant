@@ -22,13 +22,13 @@ ht-degree: 2%
 
 本檔案詳細說明移轉的必要條件，以及移轉至Adobe Campaign Classic v7的步驟。 步驟和可選設定取決於您的設定。
 
-移轉程式必須謹慎執行，其影響必須事前充分考慮，且程式必須嚴格執行。 該操作必須僅由專家使用者執行。 我們強烈建議您聯絡 [Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 開始任何移轉程式之前。
+移轉程式必須謹慎執行，其影響必須事前充分考慮，且程式必須嚴格執行。 該操作必須僅由專家使用者執行。 強烈建議您在開始任何移轉程式前，先聯絡[Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
 
 必須先在測試/預備環境中測試移轉，以確保其順利執行且沒有任何錯誤。 只有在移轉的測試環境經完整驗證後，才能執行生產環境移轉。
 
 >[!NOTE]
 >
->Adobe Campaign v7的新功能和改進專案詳情，請參見 [發行說明](../../rn/using/latest-release.md).
+>Adobe Campaign v7的新功能和改進專案將在[發行說明](../../rn/using/latest-release.md)中詳細說明。
 
 
 ## 先決條件
@@ -36,11 +36,11 @@ ht-degree: 2%
 * 移轉程式必須由專家使用者執行。 您必須至少有來自Adobe Campaign的資料庫專家、系統管理員和應用程式開發人員協助。
 * 開始移轉之前，請檢查您使用的系統和系統元件是否與v7相容。 [了解更多](../../rn/using/compatibility-matrix.md)。
 * 如果您使用Adobe Campaign雲端通訊（中間來源部署），請在開始前聯絡Adobe客戶服務。
-* 開始移轉程式之前，請先請 **必須** 備份您的資料。
+* 開始移轉程式之前，您&#x200B;**必須**&#x200B;備份您的資料。
 * 移轉程式可能需要數天的時間才能完成。
 * Adobe Campaign v7是比舊版更安全的版本：這會影響設定指南，以避免資料損毀之類的問題，並維護資料庫中的資料完整性。 身為客戶，您有責任測試所有設定，包括工作流程。
 
-如需更多必備條件，請參閱 [此頁面](../../migration/using/before-starting-migration.md).
+[此頁面](../../migration/using/before-starting-migration.md)中有更多必備條件。
 
 
 ## 現代化環境 {#modernizing-your-environment}
@@ -49,11 +49,11 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->如需Adobe Campaign v7所支援版本的進一步資訊，請參閱 [相容性矩陣](../../rn/using/compatibility-matrix.md).
+>如需Adobe Campaign v7所支援版本的進一步資訊，請參閱[相容性矩陣](../../rn/using/compatibility-matrix.md)。
 
 ## 重要移轉步驟 {#key-migration-steps}
 
-移轉至Adobe Campaign v7的一般程式詳見 [此頁面](../../migration/using/before-starting-migration.md).
+移轉至Adobe Campaign v7的一般程式在[此頁面](../../migration/using/before-starting-migration.md)中有詳細說明。
 
 
 ## 特定設定 {#specific-configurations}

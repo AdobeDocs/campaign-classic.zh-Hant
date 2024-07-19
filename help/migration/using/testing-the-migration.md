@@ -30,7 +30,7 @@ ht-degree: 0%
 1. 備份開發環境資料庫。
 1. 停止開發執行個體上的所有Adobe Campaign程式。
 1. 備份生產環境資料庫，並將其還原為開發環境。
-1. 在啟動Adobe Campaign服務之前，請執行 **freezeInstance.js** 燒灼程式檔，可讓您清除啟動備份時正在執行之任何物件的資料庫。
+1. 在啟動Adobe Campaign服務之前，請執行&#x200B;**freezeInstance.js**&#x200B;燒錄指令碼，讓您清除啟動備份時執行的任何物件資料庫。
 
    ```
    nlserver javascript nms:freezeInstance.js -instance:<instance> -arg:<run|dry>
@@ -38,7 +38,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >該命令預設會在中啟動 **乾燥** 模式，並列出該命令執行的所有要求，而不啟動它們。 若要執行燒灼要求，請使用 **執行** 在指令中。
+   >該命令預設會以&#x200B;**乾**&#x200B;模式啟動，並列出該命令執行的所有要求，而不啟動它們。 若要執行燒灼要求，請在命令中使用&#x200B;**run**。
 
 1. 嘗試還原備份，以確定備份是否正確。 確定您可以存取資料庫、表格、資料等。
 1. 在開發環境中測試移轉程式。
@@ -53,7 +53,7 @@ ht-degree: 0%
 
 有多種選項可讓您測量移轉帶來的影響，並找出潛在問題。 這些選項將會執行：
 
-* 在 **設定** 命令：
+* 在&#x200B;**config**&#x200B;命令中：
 
   ```
   nlserver.exe config <option> -instance:<instance-name>
@@ -67,12 +67,12 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->* 您必須使用 **-instance：`<instanceame>`** 選項。 我們不建議使用 **-allinstances** 選項。
->* Adobe Campaign更新命令(**升級後**)可讓您同步資源並更新方案和資料庫。 這項作業只能執行一次，而且只能在應用程式伺服器上執行。 同步資源後， **升級後** 命令可讓您偵測同步處理是否產生任何錯誤或警告。
+>* 您必須使用&#x200B;**-instance：`<instanceame>`**&#x200B;選項。 我們不建議使用&#x200B;**-allinstances**&#x200B;選項。
+>* Adobe Campaign更新命令（**升級後**）可讓您同步資源，並更新結構描述和資料庫。 這項作業只能執行一次，而且只能在應用程式伺服器上執行。 同步資源之後，**postupgrade**&#x200B;命令可讓您偵測同步是否產生任何錯誤或警告。
 
 ### 非標準或遺失物件
 
-* 此 **-showCustomEntities** 選項會顯示所有非標準物件的清單：
+* **-showCustomEntities**&#x200B;選項會顯示所有非標準物件的清單：
 
   ```
   nlserver.exe config -showCustomEntities -instance:<instance-name>
@@ -84,7 +84,7 @@ ht-degree: 0%
   xtk_migration:opsecurity2 xtk:entity
   ```
 
-* 此 **-showDeletedEntities** 選項會顯示資料庫或檔案系統中遺失的所有標準物件清單。 對於每個遺失的物件，都會指定路徑。
+* **-showDeletedEntities**&#x200B;選項會顯示資料庫或檔案系統中遺失的所有標準物件清單。 對於每個遺失的物件，都會指定路徑。
 
   ```
   nlserver.exe config -showDeletedEntities -instance:<instance-name>
@@ -98,7 +98,7 @@ ht-degree: 0%
 
 ### 驗證程式 {#verification-process}
 
-在升級後命令中整合為標準，此程式可讓您顯示可能導致移轉失敗的警告和錯誤。 **如果顯示錯誤，表示尚未執行移轉。** 如果發生此情況，請更正所有錯誤，然後重新啟動升級後。
+在升級後命令中整合為標準，此程式可讓您顯示可能導致移轉失敗的警告和錯誤。 **如果顯示錯誤，表示移轉尚未執行。**&#x200B;如果發生此情況，請更正所有錯誤，然後重新啟動升級後。
 
 您可以使用下列命令自行啟動驗證程式（不進行移轉）：
 
@@ -126,25 +126,25 @@ nlserver.exe config -postupgrade -check -instance:<instance-name>
    <td> .@<br /> </td> 
    <td> PU-0001<br /> </td> 
    <td> 警告<br /> </td> 
-   <td> 傳遞個人化不再支援這類語法。 <br /> </td> 
+   <td> 傳遞個人化不再支援這類語法。<br /> </td> 
   </tr> 
   <tr> 
    <td> common.js<br /> </td> 
    <td> PU-0002<br /> </td> 
    <td> 警告<br /> </td> 
-   <td> 不得使用此程式庫。<br /> </td> 
+   <td> 不得使用此資料庫。<br /> </td> 
   </tr> 
   <tr> 
-   <td> logon(<br /> </td> 
+   <td> 登入(<br /> </td> 
    <td> PU-0003<br /> </td> 
    <td> 警告<br /> </td> 
    <td> 此連線方法必須不再使用。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 新SoapMethodCall(<br /> </td> 
+   <td> 新SoapMethodCall(<br />) </td> 
    <td> PU-0004<br /> </td> 
    <td> 警告<br /> </td> 
-   <td> 只有在以下位置的JavaScript程式碼中使用這個函式時，才支援使用這個函式：從的安全性區域執行 <strong>sessionTokenOnly</strong> 模式。<br /> </td> 
+   <td> 只有在從<strong>sessionTokenOnly</strong>模式的安全性區域執行的JavaScript程式碼中使用這個函式時，才支援這個函式。<br /> </td> 
   </tr> 
   <tr> 
    <td> sql=<br /> </td> 
@@ -157,14 +157,14 @@ nlserver.exe config -postupgrade -check -instance:<instance-name>
    <td> PU-0007<br /> </td> 
    <td> 錯誤<br /> </td> 
    <td> 不再支援此型別的部署。 Office 365和內部部署Microsoft CRM聯結器部署型別現已棄用。 
-   </br>如果您在外部帳戶中使用這些已棄用的部署型別之一，應刪除此外部帳戶，然後執行 <b>升級後</b> 命令。 
-   </br>若要變更Web API部署，請參閱 <a href="../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft" target="_blank">網頁應用程式</a>.<br /> </td>
+   </br>如果您在外部帳戶中使用這些已棄用的部署型別之一，應刪除此外部帳戶，然後您應該執行<b>升級後</b>命令。 
+   </br>若要變更網頁API部署，請參閱<a href="../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft" target="_blank">網頁應用程式</a>。<br /> </td>
   </tr> 
   <tr> 
    <td> CRM v1(mscrmWorkflow/sfdcWorkflow)<br /> </td> 
    <td> PU-0008<br /> </td> 
    <td> 錯誤<br /> </td> 
-   <td> Microsoft CRM、Salesforce、OracleCRM隨選動作活動已無法使用。 若要設定Adobe Campaign與CRM系統之間的資料同步，您需要使用 <a href="../../workflow/using/crm-connector.md" target="_blank">CRM聯結器</a> 目標定位活動。<br /> </td>
+   <td> Microsoft CRM、Salesforce、OracleCRM隨選動作活動已無法使用。 若要設定Adobe Campaign與CRM系統之間的資料同步，您必須使用<a href="../../workflow/using/crm-connector.md" target="_blank">CRM聯結器</a>目標定位活動。<br /> </td>
   </tr> 
  </tbody> 
 </table>

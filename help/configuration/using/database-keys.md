@@ -26,12 +26,12 @@ ht-degree: 2%
 </key>
 ```
 
-當金鑰是結構描述中第一個要填入的金鑰，或金鑰包含 `internal` 屬性設為「true」。
+當索引鍵是結構描述中第一個要填入的索引鍵，或是包含設定為「true」的`internal`屬性時，就稱為「主索引鍵」。
 
 下列規則適用於機碼：
 
 * 索引鍵可參考表格中的一或多個欄位
-* 每個索引鍵定義都會以隱含方式宣告唯一索引。 可透過設定 `noDbIndex` 屬性為&quot;true&quot;。
+* 每個索引鍵定義都會以隱含方式宣告唯一索引。 可透過將`noDbIndex`屬性設定為「true」來防止在索引鍵上建立索引。
 
 >[!NOTE]
 >
@@ -126,21 +126,21 @@ ht-degree: 2%
 
 ## 自動增量索引鍵 {#auto-incremental-key}
 
-大部分Adobe Campaign表格的主要索引鍵是由資料庫引擎自動產生的32位元長整數。 機碼值的計算取決於順序(根據預設， **XtkNewId** SQL函式)產生在整個資料庫中唯一的數字。 插入記錄時會自動輸入金鑰的內容。
+大部分Adobe Campaign表格的主要索引鍵是由資料庫引擎自動產生的32位元長整數。 索引鍵值的計算取決於產生在整個資料庫中唯一數字的序列（預設為&#x200B;**XtkNewId** SQL函式）。 插入記錄時會自動輸入金鑰的內容。
 
 增量索引鍵的優點在於，它提供不可修改的技術索引鍵用於表格之間的聯結。 此外，此索引鍵使用雙位元組整數，因此不會佔用太多記憶體。
 
-您可以在來源綱要中指定要與搭配使用的序列名稱 **pkSequence** 屬性。 如果來源結構描述中未指定此屬性， **XtkNewId** 將會使用預設序列。 應用程式使用專用的序列 **nms：broadLog** 和 **nms：trackingLog** 結構描述(**NmsBroadLogId** 和 **NmsTrackingLogId** 這些是包含最多記錄的表格。
+您可以在來源結構描述中指定要與&#x200B;**pkSequence**&#x200B;屬性搭配使用的序列名稱。 如果來源結構描述中未指定此屬性，則會使用&#x200B;**XtkNewId**&#x200B;預設序列。 應用程式對&#x200B;**nms：broadLog**&#x200B;和&#x200B;**nms：trackingLog**&#x200B;結構描述使用專用序列（分別為&#x200B;**NmsBroadLogId**&#x200B;和&#x200B;**NmsTrackingLogId**），因為這些是包含最多記錄的表格。
 
-從ACC 18.10， **XtkNewId** 不再是現成可用結構中序列的預設值。 您現在可以使用專用序列來建置方案或擴充現有方案。
+從ACC 18.10開始，**XtkNewId**&#x200B;不再是現成可用結構描述中順序的預設值。 您現在可以使用專用序列來建置方案或擴充現有方案。
 
 >[!IMPORTANT]
 >
 >建立新結構描述或在結構描述擴充期間，您需要為整個結構描述保留相同的主要索引鍵序列值(@pkSequence)。
 
-Adobe Campaign結構描述中參照的序列(**NmsTrackingLogId** 例如)必須與SQL函式相關聯，此函式會傳回引數中的ID數目（以逗號分隔）。 必須呼叫此函式 **GetNew** XXX **Id**，其中 **XXX** 是序列的名稱(**GetNewNmsTrackingLogIds** 例如)。 檢視 **postgres-nms.sql**， **mssql-nms.sql** 或 **oracle-nms.sql** 中隨應用程式提供的檔案 **datakit/nms/eng/sql/** 目錄，以復原每個資料庫引擎的「NmsTrackingLogId」序列建立範例。
+在Adobe Campaign結構描述中參考的序列（例如&#x200B;**NmsTrackingLogId**）必須與SQL函式相關聯，該函式會傳回引數中的識別碼數目（以逗號分隔）。 此函式必須稱為&#x200B;**GetNew** XXX **Ids**，其中&#x200B;**XXX**&#x200B;是序列的名稱（例如&#x200B;**GetNewNmsTrackingLogIds**）。 檢視&#x200B;**datakit/nms/eng/sql/**&#x200B;目錄中隨應用程式提供的&#x200B;**postgres-nms.sql**、**mssql-nms.sql**&#x200B;或&#x200B;**oracle-nms.sql**&#x200B;檔案，以復原每個資料庫引擎的&#39;NmsTrackingLogId&#39;序列建立範例。
 
-若要宣告唯一金鑰，請填入 **autopk** 屬性（值為「true」）。
+若要宣告唯一金鑰，請在資料結構描述的主要元素上填入&#x200B;**autopk**&#x200B;屬性（值為「true」）。
 
 **範例**：
 

@@ -17,15 +17,15 @@ ht-degree: 7%
 
 
 
-如果收件者表格是自訂表格，則需要其他設定。 此 **[!UICONTROL nms:seedMember]** 結構描述必須延伸。 種子地址會新增一個標籤，用於定義適當的欄位，如下所示：
+如果收件者表格是自訂表格，則需要其他設定。 **[!UICONTROL nms:seedMember]**&#x200B;結構描述必須延伸。 種子地址會新增一個標籤，用於定義適當的欄位，如下所示：
 
 ![](assets/s_ncs_user_seedlist_new_tab.png)
 
-如需使用種子地址的詳細資訊，請參閱 [本節](../../delivery/using/about-seed-addresses.md).
+如需使用種子地址的詳細資訊，請參閱[本節](../../delivery/using/about-seed-addresses.md)。
 
 ## 實施 {#implementation}
 
-此 **nms：seedMember** 立即可用的結構描述和連結表單旨在延伸供客戶設定，以參考所有必要欄位。 結構描述定義包含詳細說明其設定模式的註解。
+現成可用的&#x200B;**nms：seedMember**&#x200B;結構描述和連結表單將針對客戶設定進行擴充，以參考所有必要欄位。 結構描述定義包含詳細說明其設定模式的註解。
 
 收件者表格延伸綱要的定義：
 
@@ -44,14 +44,14 @@ ht-degree: 7%
 
 應用以下步驟：
 
-1. 建立「 」的 **nms：seedMember** 綱要。 如需詳細資訊，請參閱[本章節](../../configuration/using/extending-a-schema.md)。
-1. 在這個新的擴充功能中，于的根目錄新增元素 **[!UICONTROL seedMember]** ，並使用下列引數：
+1. 建立&#x200B;**nms：seedMember**&#x200B;結構描述的延伸。 如需詳細資訊，請參閱[本章節](../../configuration/using/extending-a-schema.md)。
+1. 在這個新的擴充功能中，使用下列引數在&#x200B;**[!UICONTROL seedMember]**&#x200B;的根目錄新增元素：
 
    ```
    name="custom_customNamespace_customSchema"
    ```
 
-   此元素必須包含匯出行銷活動所需的欄位。 這些欄位應與外部結構描述中對應的欄位同名。 例如，如果結構描述為 **[!UICONTROL cus:person]** ，則 **[!UICONTROL nms:seedMember]** 綱要的擴充方式如下：
+   此元素必須包含匯出行銷活動所需的欄位。 這些欄位應與外部結構描述中對應的欄位同名。 例如，如果結構描述是&#x200B;**[!UICONTROL cus:person]** ，則&#x200B;**[!UICONTROL nms:seedMember]**&#x200B;結構描述應該擴充如下：
 
    ```
      <srcSchema extendedSchema="nms:seedMember" label="Seed addresses" labelSingular="Seed address" name="seedMember" namespace="cus">
@@ -70,20 +70,20 @@ ht-degree: 7%
 
    >[!NOTE]
    >
-   >「 」的擴充功能 **nms：seedMember** 綱要必須符合Adobe Campaign中行銷活動和傳送的結構。
+   >**nms：seedMember**&#x200B;結構描述的擴充功能必須符合Adobe Campaign中行銷活動和傳遞的結構。
 
    >[!IMPORTANT]
    >
    >
    >    
    >    
-   >    * 在擴充功能期間，您必須指定 **SQL名稱(@sqlname)** （在「電子郵件」欄位中）。 SQL名稱必須與為收件者綱要保留的&#39;sEmail&#39;不同。
-   >    * 您必須使用擴充時建立的綱要更新資料庫結構 **nms：seedMember**.
-   >    * 在 **nms：seedMember** 副檔名，包含電子郵件地址的欄位必須有 **name=&quot;email&quot;** 作為屬性。 SQL名稱必須與已用於收件者綱要的&#39;sEmail&#39;不同。 此屬性必須立即宣告於 **`<element name="custom_cus_person" />`** 元素。
+   >    * 在延伸期間，您必須為&#39;email&#39;欄位指定&#x200B;**SQL名稱(@sqlname)**。 SQL名稱必須與為收件者綱要保留的&#39;sEmail&#39;不同。
+   >    * 您必須使用擴充&#x200B;**nms：seedMember**&#x200B;時建立的結構描述來更新資料庫結構。
+   >    * 在&#x200B;**nms：seedMember**&#x200B;擴充功能中，包含電子郵件地址的欄位必須有&#x200B;**name=&quot;email&quot;**&#x200B;做為屬性。 SQL名稱必須與已用於收件者綱要的&#39;sEmail&#39;不同。 這個屬性必須立即宣告到&#x200B;**`<element name="custom_cus_person" />`**&#x200B;專案下。
    >    
    >
 
-1. 修改 **[!UICONTROL seedMember]** 表單，以定義中的新「內部收件者」索引標籤 **[!UICONTROL Seed addresses]** 視窗。 如需詳細資訊，請參閱[此頁面](../../configuration/using/form-structure.md)。
+1. 相應地修改&#x200B;**[!UICONTROL seedMember]**&#x200B;表單，以在&#x200B;**[!UICONTROL Seed addresses]**&#x200B;視窗中定義新的「內部收件者」索引標籤。 如需詳細資訊，請參閱[此頁面](../../configuration/using/form-structure.md)。
 
    ```
    <container colcount="2" label="Internal recipient" name="internal"

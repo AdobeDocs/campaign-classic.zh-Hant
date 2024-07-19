@@ -42,7 +42,7 @@ Adobe Campaign 目前提供英文、法文、德文和日文供 4 種語言的�
 
 ## 如何設定電子郵件傳遞機制? {#how-to-configure-email-deliverability-}
 
-除了 [Adobe傳遞性最佳實務指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hant)，閱讀傳遞能力技術建議，瞭解如何設定執行個體，以充份發揮Campaign傳遞功能。
+除了[Adobe傳遞能力最佳實務指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hant)，請閱讀傳遞能力技術建議，以瞭解如何設定執行個體，以充份發揮Campaign傳遞功能。
 
 [按一下這裡以瞭解更多資訊](../../delivery/using/about-deliverability.md)。
 
@@ -76,7 +76,7 @@ Adobe Campaign 提供各種 CRM 連接器，用於將您的 Adobe Campaign 平�
 
 閱讀[設定 CRM 連接器](../../platform/using/crm-connectors.md)以了解如何將 CRM 工具與 Adobe Campaign 同步。
 
-![](assets/do-not-localize/how-to-video.png) 觀看此使用案例短片，於 [Adobe Campaign與Microsoft Dynamics 365整合](https://helpx.adobe.com/campaign/kt/acc/using/acc-integrate-dynamics365-with-acc-feature-video-set-up.html).
+![](assets/do-not-localize/how-to-video.png)觀看有關[Adobe Campaign和Microsoft Dynamics 365整合](https://helpx.adobe.com/campaign/kt/acc/using/acc-integrate-dynamics365-with-acc-feature-video-set-up.html)的使用案例影片。
 
 ## 如果是特定於電腦的問題或特定於使用者的問題時，如何執行軟快取清除？ {#perform-soft-cache-clear}
 

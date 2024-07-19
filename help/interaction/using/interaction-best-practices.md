@@ -67,7 +67,7 @@ Adobe Campaign中的互動需要謹慎管理，才能有效率地運作。 您�
 
 在擴充活動中選取優惠方案時，您可以選擇要使用哪個優惠方案空間。 但是，無論所選的優惠方案空間為何，傳送自訂功能表都取決於傳送中設定的優惠方案空間。
 
-在以下範例中，在傳送中選取的優惠方案空間為 **[!UICONTROL Email (Environment - Recipient)]**：
+在下列範例中，在傳遞中選取的優惠方案空間為&#x200B;**[!UICONTROL Email (Environment - Recipient)]**：
 
 ![](assets/Interaction-best-practices-offer-space-selected.png)
 
@@ -77,9 +77,9 @@ Adobe Campaign中的互動需要謹慎管理，才能有效率地運作。 您�
 
 ![](assets/Interaction-best-practices-HTML-rendering.png)
 
-此函式插入程式碼，例如： `<%@ include proposition="targetData.proposition" view="rendering/html" %>`.
+此函式插入程式碼，例如： `<%@ include proposition="targetData.proposition" view="rendering/html" %>`。
 
-當您選取主張時， **[!UICONTROL view]** 屬性如下：
+當您選取主張時，**[!UICONTROL view]**&#x200B;屬性的值如下：
 * &quot;rendering/html&quot;： html rendering. 它會使用HTML演算函式。
 * &quot;offer/view/html&quot;： html內容。 它不會使用HTML演算函式。 它只包含HTML欄位。
 
@@ -109,7 +109,7 @@ Adobe Campaign中的互動需要謹慎管理，才能有效率地運作。 您�
 
 由於主張表格中有一個名為@rank的欄位，因此工作流程暫存表格中的值將會被複製。
 
-如需在主張表格中儲存其他欄位的詳細資訊，請參閱 [透過工作流程整合優惠方案](../../interaction/using/integrating-an-offer-via-a-workflow.md#storing-offer-rankings-and-weights).
+如需在主張資料表中儲存其他欄位的詳細資訊，請參閱[透過工作流程整合優惠方案](../../interaction/using/integrating-an-offer-via-a-workflow.md#storing-offer-rankings-and-weights)。
 
 針對具有互動的傳出優惠方案，在選取數個優惠方案且您想要記錄它們在電子郵件中的顯示順序時，此功能會很實用。
 
@@ -124,7 +124,7 @@ Adobe Campaign中的互動需要謹慎管理，才能有效率地運作。 您�
 ### 擴充nms：offer綱要 {#extending-nms-offer-schema}
 
 擴充nms：offer綱要時，請務必遵循已設定的現成結構：
-* 定義下內容儲存的任何新欄位 `<element name="view">`.
+* 為`<element name="view">`下的內容儲存定義任何新欄位。
 * 每個新欄位需要定義兩次。 一次作為一般XML欄位，另一次作為CDATA XML欄位，並在名稱后面附加「_jst」。 例如：
 
   ```
@@ -132,4 +132,4 @@ Adobe Campaign中的互動需要謹慎管理，才能有效率地運作。 您�
   <element advanced="true" label="Script price" name="price_jst" type="CDATA" xml="true"/>
   ```
 
-* 包含要追蹤之URL的任何欄位都必須放在 `<element name="trackedUrls">` ，位於 `<element name="view" >`.
+* 任何包含要追蹤之URL的欄位都必須放在`<element name="trackedUrls">`之下，可在`<element name="view" >`下找到。

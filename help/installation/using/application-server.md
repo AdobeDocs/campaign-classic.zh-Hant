@@ -25,11 +25,11 @@ Java Development Kit （簡稱JDK）是軟體開發套件。 它是啟用Java應
 
 動態網頁產生器使用JSP技術。 為此，應用程式中包含Tomcat引擎（來自Apache）。 它需要一個Java開發套件(JDK)，安裝在安裝Adobe Campaign應用程式的所有伺服器上。
 
-您必須先在要執行Adobe Campaign應用程式伺服器的電腦上安裝JDK (**nlserver web** 程式)，因為它合併了servlet容器Apache Tomcat，用於產生動態網頁（報表、網路表單等）。
+您必須先在要執行Adobe Campaign應用程式伺服器（**nlserver web**&#x200B;處理序）的電腦上安裝JDK，因為它整合了servlet容器Apache Tomcat，用於產生動態網頁（報表、網頁表單等）。
 
-此應用程式已獲核准用於Oracle開發的Java開發套件(JDK)以及用於 **OpenJDK**.
+此應用程式已針對Oracle開發的Java開發套件(JDK)以及&#x200B;**OpenJDK**&#x200B;核准。
 
-Campaign中會詳細說明支援的版本 [相容性矩陣](../../rn/using/compatibility-matrix.md).
+Campaign [相容性矩陣](../../rn/using/compatibility-matrix.md)中詳細說明支援的版本。
 
 
 >[!AVAILABILITY]
@@ -47,18 +47,18 @@ Campaign中會詳細說明支援的版本 [相容性矩陣](../../rn/using/compa
 
 * 安裝JDK時，不需要與網頁瀏覽器整合。
 
-* 在只執行傳遞代理程式的機器上(**nlserver mta** process)或工作流程伺服器(**nlserver wfserver** 程式)，則不需要安裝JDK。
+* 在只執行傳遞代理程式（**nlserver mta**&#x200B;處理序）或工作流程伺服器（**nlserver wfserver**&#x200B;處理序）的電腦上，不需要安裝JDK。
 
 * 升級Java版本時，必須先解除安裝舊版。 安裝在同一台電腦上的兩個Java版本都可能會造成衝突。
 
-  身為內部部署客戶，您可以檢查 `LD_LIBRARY_PATH` [環境變數](installing-packages-with-linux.md#environment-variables) 設為最新版本(例如： java11)。 如果設定為舊版(例如： Java8)，則需要更新。 若為JDK 11，尋找JDK程式庫的路徑為 `/usr/lib/jvm/java-11-openjdk-amd64/lib`.
+  身為內部部署客戶，您可以檢查`LD_LIBRARY_PATH` [環境變數](installing-packages-with-linux.md#environment-variables)是否已設定為最新版本(例如： java11)。 如果設定為舊版(例如： Java8)，則需要更新。 若為JDK 11，尋找JDK資料庫的路徑為`/usr/lib/jvm/java-11-openjdk-amd64/lib`。
 
 
 ### 安裝步驟
 
 Java Development Kit是平台專屬的：每個作業系統都需要個別的安裝程式。
 
-若要下載JDK，請連線至 [oracle網站](https://www.oracle.com/technetwork/java/javase/downloads/index.html){target="_blank"}.
+若要下載JDK，請連線至[Oracle網站](https://www.oracle.com/technetwork/java/javase/downloads/index.html){target="_blank"}。
 
 >[!CAUTION]
 >
@@ -85,13 +85,13 @@ dnf install java-11-openjdk-headless
 
 您可以使用Adobe Campaign將報表匯出至Microsoft Excel和Adobe PDF。
 
-* 對於Microsoft Excel格式，Adobe Campaign依賴於 **LibreOffice**.
+* 若為Microsoft Excel格式，Adobe Campaign需仰賴&#x200B;**LibreOffice**。
 
-* 對於Adobe PDF格式，Adobe Campaign使用 **PhantomJS** 轉換工具。 PhantomJs包含在工廠套件中，且LibreOffice必須安裝在執行Adobe Campaign應用程式伺服器的電腦上(**nlserver web** 流&#39;b5&#39;7b)。
+* 對於Adobe PDF格式，Adobe Campaign使用&#x200B;**PhantomJS**&#x200B;轉換工具。 PhantomJs包含在工廠套件中，且LibreOffice必須安裝在（**nlserver web**&#x200B;處理序）上執行Adobe Campaign應用程式伺服器的電腦上。
 
 >[!NOTE]
 >
->針對Linux，您需要新增字型。 有關詳細資訊，請參閱 [MTA統計資料的字型](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#fonts-for-mta-statistics).
+>針對Linux，您需要新增字型。 如需詳細資訊，請參閱[MTA統計資料的](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#fonts-for-mta-statistics)字型。
 
 ## SpamAssassin {#spamassassin}
 
@@ -103,4 +103,4 @@ SpamAssassin會將電子郵件限定為不受歡迎，這完全是根據篩選�
 
 SpamAssassin需要HTTP網際網路存取(tcp/80)。
 
-SpamAssassin的安裝和設定階段會顯示在 [設定SpamAssassin](../../installation/using/configuring-spamassassin.md).
+在[設定SpamAssassin](../../installation/using/configuring-spamassassin.md)中顯示SpamAssassin的安裝和設定階段。

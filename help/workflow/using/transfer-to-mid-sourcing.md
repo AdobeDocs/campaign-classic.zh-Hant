@@ -15,7 +15,7 @@ ht-degree: 1%
 
 
 
-以下詳述的工作流程會隨 **轉移至中間來源** 模組（預設）。 有關本模組的詳細資訊，請參閱 [Campaign Classic v7安裝指南](../../installation/using/mid-sourcing-deployment.md).
+依預設，下面詳細描述的工作流程會與&#x200B;**轉移至中間來源**&#x200B;模組一起安裝。 如需此模組的詳細資訊，請參閱[Campaign Classicv7安裝指南](../../installation/using/mid-sourcing-deployment.md)。
 
 <table> 
  <tbody> 

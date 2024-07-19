@@ -25,7 +25,7 @@ ht-degree: 1%
 >
 >僅適用於Windows
 
-損毀的追蹤記錄檔……nl6/var/&lt;instance_name>/redir/log/0x0000記錄檔可以停止追蹤工作流程。 若要輕鬆偵測損壞的行並移除它們以繼續執行追蹤工作流程，您可以使用以下命令。
+損毀的追蹤記錄檔……/nl6/var/&lt;instance_name>/redir/log/0x0000記錄檔可以停止追蹤工作流程。 若要輕鬆偵測損壞的行並移除它們以繼續執行追蹤工作流程，您可以使用以下命令。
 
 ### 我知道損壞的行位於哪個檔案中
 
@@ -85,7 +85,7 @@ $ grep -Rn 50x000000000FD7EC86
 
 `Requested URL '/r/ id=h787bc0,281a4d8,281a4da&amp;p1=1' cannot be found`
 
-1. 存取 &lt;redirection_server>/r/test URL並檢查要求是否傳回組建號碼和localhost。
+1. 存取&lt;redirection_server>/r/test URL並檢查要求是否傳回組建號碼和localhost。
 
 1. 檢查serverConf.xml檔案中追蹤伺服器的spareServer組態。 此設定應該在重新導向模式。
 
@@ -102,13 +102,13 @@ $ grep -Rn 50x000000000FD7EC86
    </redirection>
    ```
 
-1. 手動檢查 &lt;deliveryid>.xml檔案存在於電腦上，位於……/nl6/var/&lt;instance_name>/redir/url/&lt;yyyy> 目錄（YYYY代表傳遞年份）。
+1. 手動檢查電腦上的……/nl6/var/&lt;instance_name>/redir/url/&lt;YYYY>目錄中是否存在&lt;deliveryID>.xml檔案（YYYY代表傳遞年份）。
 
-1. 手動檢查是否 &lt;trackingurlid> 您可在以下網址找到： &lt;deliveryid>.xml檔案。
+1. 手動檢查是否可以在&lt;deliveryID>.xml檔案中找到&lt;trackingUrlId>。
 
 1. 手動檢查相關deliveryID傳遞中是否存在broadlogID。
 
-1. 檢查 &lt;deliveryid>../nl6/var/中的.xml檔案許可權&lt;instance_name>/redir/url/year目錄。
+1. 檢查……/nl6/var/&lt;instance_name>/redir/url/year目錄中的&lt;deliveryID>.xml檔案許可權。
 
    他們應該至少有644個許可權，這樣Apache才能讀取追蹤URL，以重新導向請求的連結。
 
@@ -130,7 +130,7 @@ $ grep -Rn 50x000000000FD7EC86
 
 您可以自訂點選追蹤公式，並指定自訂Adobe Analytics追蹤公式。
 
-這類自訂需要謹慎進行，以免新增額外的換行字元。 在JavaScript運算式之外出現的所有換行字元都會出現在最終公式中。
+這類自訂需要謹慎進行，以免新增額外的換行字元。 JavaScript運算式外部出現的所有換行字元都會出現在最終公式中。
 
 追蹤URL中這類額外的換行字元，在某些webMail （AOL、GMail等）中會導致問題。
 
@@ -205,7 +205,7 @@ STRING1&cid=STRING2&bid=STRING3&SHPID=STRING4
 
 ## 追蹤記錄擷取太慢 {#slow-retrieval}
 
-當執行個體未直接擷取追蹤記錄，而是從遠距的Adobe Campaign Classic伺服器擷取記錄時，會透過remoteTracking結構描述中定義的GetTrackingLogs SOAP呼叫來擷取記錄。
+當執行個體未直接擷取追蹤記錄，而是從遠距的Adobe Campaign Classic伺服器擷取記錄時，會透過GetTrackingLogs SOAP呼叫（在remoteTracking結構描述中定義）來擷取記錄。
 
 serverConf.xml檔案中的選項可讓您設定透過以下方法一次擷取的記錄數： logCountPerRequest。
 

@@ -19,25 +19,25 @@ ht-degree: 2%
 
 ## 內容
 
-身為尊貴的Adobe Campaign Classic客戶，我們致力為您提供最佳體驗和價值。 這些年來，我們認識到在雲端託管客戶的價值和可靠性。  作為我們的一部分 [年度升級方案](../../rn/using/rn-overview.md#yearly-upgrade)，我們已將所有客戶轉移至AdobeManaged Services (AWS上的公共雲端)，以提供更佳且更可靠的服務。
+身為尊貴的Adobe Campaign Classic客戶，我們致力為您提供最佳體驗和價值。 這些年來，我們認識到在雲端託管客戶的價值和可靠性。  作為我們[年度升級方案](../../rn/using/rn-overview.md#yearly-upgrade)的一部分，我們已將所有客戶轉移到AdobeManaged Services (AWS上的公共雲端)，以提供更好且更可靠的服務。
 
 此計畫有三個主要目標：
 
 * 將基礎建設移至安全而現代的環境(AWS)，以解決所發現的安全漏洞。
-* 消除可能繁瑣的擴充流程，讓您能夠存取 [增強的MTA](../../delivery/using//sending-with-enhanced-mta.md) 並改善所有維護服務層級。
+* 消除可能繁瑣的擴充程式，提供我們[增強型MTA](../../delivery/using//sending-with-enhanced-mta.md)的存取權，並改善所有維護服務層級。
 * 準備您的執行個體以因應Adobe Campaign Classic日後的需求，包括不需要太多資源或時間的更自動化、定期升級。
 
 ### 字彙
 
-* **組建版本升級**  — 當Adobe Campaign Classic軟體更新至最新的安全組建編號時，但會維持相同的主要/次要組建層級。 例如： Campaign v7 20.2.3版本編號9182至Campaign v7 21.2.5版本編號9188。 [了解更多](../../platform/using/faq-build-upgrade.md)。
-* **MID/RT**  — 在Adobe Cloud上託管的訊息執行伺服器（MID用於批次行銷活動，而RT用於即時單一訊息）
-* **年度升級計畫**  — 此計畫提供更優異的安全性、更優異的支援，以及更優異的維護與穩定性。 它也會讓日後的升級更容易，並可讓您存取Campaign中的新功能。  [了解更多](../../rn/using/rn-overview.md#yearly-upgrade)。
+* **組建升級** — 當Adobe Campaign Classic軟體更新至最新的安全組建編號時，但仍會維持相同的主要/次要組建層級。 例如： Campaign v7 20.2.3版本編號9182至Campaign v7 21.2.5版本編號9188。 [了解更多](../../platform/using/faq-build-upgrade.md)。
+* **MID/RT** — 在Adobe雲端上託管的訊息執行伺服器（MID用於批次行銷活動，而RT用於即時單一訊息）
+* **年度升級方案** — 此方案提供改善的安全性、改善的支援、增強的維護與穩定性。 它也會讓日後的升級更容易，並可讓您存取Campaign中的新功能。  [了解更多](../../rn/using/rn-overview.md#yearly-upgrade)。
 * **AWS** - Amazon Web Services (Amazon公用雲端)
-* **SFTP**  — 安全檔案傳輸通訊協定。 [了解更多](../../platform/using/sftp-server-usage.md)。
+* **SFTP** — 安全檔案傳輸通訊協定。 [了解更多](../../platform/using/sftp-server-usage.md)。
 
 
 >[!NOTE]
->Campaign Classicv7移轉至公用雲端會影響使用的客戶 **AdobeManaged Services** 僅限。
+>Campaign Classicv7移轉至公用雲端只會影響使用&#x200B;**AdobeManaged Services**&#x200B;的客戶。
 
 
 ## 好處
@@ -67,7 +67,7 @@ ht-degree: 2%
 1. 更高的電子郵件傳送容量。 在新資料中心託管的執行個體將可能受益於電子郵件傳送的專用基礎架構。 這可能導致更高的電子郵件傳送速度，或允許使用較少的傳送IP。
 1. 更優異的硬體擴充能力。 增加硬體資源可以更快完成。 技術上來說，這大約是1小時的數量級，而不是數天。
 
-**每年升級可讓未來的升級更輕鬆**
+**每年升級可讓未來的升級更容易**
 
 1. 您的組織等待升級的時間越長，升級過程就越複雜，而面臨弱點的可能性也會增加（尤其是從舊版移動時）。
 1. 透過Campaign年度升級（原本是Gold Standard方案），您的執行個體將會現代化，並準備好接收更多自動化和定期的更新，且需要較少的手動干預和較少的資源。
@@ -78,24 +78,24 @@ ht-degree: 2%
 
 為了開始進行這項工作，需要此移轉的帳戶將收到Adobe的電子郵件通訊，並提供時間表和檔案存取權。 這是您的帳戶已排定移轉的通知。
 
-可透過以下方式開始移轉： [開啟新的客戶服務支援票證](https://experienceleague.adobe.com/?support-solution=Campaign#support). 使用主旨列「移轉至AWS」。
+[開啟新的客戶服務支援票證](https://experienceleague.adobe.com/?support-solution=Campaign#support)即可開始移轉。 使用主旨列「移轉至AWS」。
 
 ### 此移轉是否為強制性？
 
-移轉至雲端的程式為 **到第一個步驟 [年度升級計畫](../../rn/using/rn-overview.md#yearly-upgrade)** 您的Adobe Campaign執行個體的。 如果您託管於非公用雲端(AWS)的資料中心，則必須進行此移轉。
+此雲端移轉作業是您Adobe Campaign執行個體之[年度升級方案&#x200B;](../../rn/using/rn-overview.md#yearly-upgrade)**的**&#x200B;第一步。 如果您託管於非公用雲端(AWS)的資料中心，則必須進行此移轉。
 
-AdobeManaged Services雲端託管於Amazon Web Services (AWS)上，這是一個現代、安全且最佳化的環境。 [進一步瞭解AWS](https://aws.amazon.com/application-hosting/benefits/).
+AdobeManaged Services雲端託管於Amazon Web Services (AWS)上，這是一個現代、安全且最佳化的環境。 [進一步瞭解AWS](https://aws.amazon.com/application-hosting/benefits/)。
 
 Adobe計畫淘汰舊版資料中心，在該處執行的Adobe Campaign執行個體必須轉移到新的參考資料中心AWS。
 
-這是您目前位置可能公開的重要後續路徑 **安全性和效能漏洞**.
+這是您目前所在位置可能遭受&#x200B;**安全性與效能漏洞**&#x200B;的重要發展方向。
 
-此外，此移轉作業現在是 **任何未來版本編號升級的先決條件** 您的Adobe Campaign。 舊版資料中心已無法進行組建版本升級。
+此外，此移轉現在是Adobe Campaign任何未來組建版本升級&#x200B;**的**&#x200B;先決條件。 舊版資料中心已無法進行組建版本升級。
 
 Adobe致力於保護您的資料，並讓您追蹤Adobe Campaign的未來。 我們需要您的合作關係，才能共同取得成功！
 
 
-**我們已組織團隊** 客戶服務代表、客戶成功經理、產品經理、工程師、TechOps專家與產品顧問的專業團隊，協助並確保順暢順暢的體驗。 我們致力確保您具有相關專案和聯絡資訊。
+**我們組織了一支團隊**，由專屬的客戶服務代表、客戶成功經理、產品經理、工程師、TechOps專家及產品顧問組成，協助並確保順暢順暢的體驗。 我們致力確保您具有相關專案和聯絡資訊。
 
 我們投入巨資開發技術，讓這項移轉作業快速、順暢且安全。
 
@@ -105,7 +105,7 @@ Adobe致力於保護您的資料，並讓您追蹤Adobe Campaign的未來。 我
 * 資料整合的IP變更。
 * 新傳送IP的可遞送性提升。 不過，計畫是讓這項作業對業務而言是透明的，不同於在上線期間進行的初始升級。
 
-深入瞭解Campaign移轉至 [Public Cloud常見問題集](dc-migration-faq.md).
+深入瞭解Campaign移轉至[公用雲端常見問答集](dc-migration-faq.md)。
 
 
 ## 移轉至公用雲端的路徑
@@ -137,7 +137,7 @@ Adobe會處理大部分的動作。 我們需要您進行驗證和簽核。
 
 一般而言，這表示使用者端應檢查其防火牆上可能設定的IP限制，並據此調整。*
 
-**Campaign伺服器**
+**行銷活動伺服器**
 
 現有的Campaign伺服器（實際上為容器）將以「提升並轉換」的方式移至公共雲端(AWS)。 也就是說，不需要安裝新的伺服器，但整個伺服器將轉移到新的資料中心。 操作只需要低階技術重新配置，不需要更多工作。
 
@@ -200,7 +200,7 @@ Adobe會在新資料中心布建相同數量的IP。
 
 應用程式移轉一旦完成，就沒有任何計畫在舊式資料中心上再次執行任何程式。 我們預計在排定的備份程式於Public Cloud (AWS)上執行之前，舊版資料中心上的所有資料都可被清除，除了暫時備份用途外。
 
-**dns委派**
+**DNS委派**
 
 通常，用於從Campaign傳送電子郵件的網域（錯誤位址中@登入右側的一部分）已委派給Adobe。 可以變更委派，並實作對AWS DNS伺服器的委派。
 

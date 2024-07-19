@@ -47,22 +47,22 @@ ht-degree: 3%
 
 在Adobe Campaign中，有兩種方式可將Target的動態影像插入電子郵件中：
 
-* 如果您使用數位內容編輯器，請選擇現有影像並選取 **[!UICONTROL Insert]** > **[!UICONTROL Dynamic image served by Adobe Target]** 工具列中的。
+* 如果您使用數位內容編輯器，請選擇現有影像，然後從工具列選取&#x200B;**[!UICONTROL Insert]** > **[!UICONTROL Dynamic image served by Adobe Target]**。
 
   ![](assets/target_5.png)
 
-* 如果您使用標準編輯器，請將游標置於您要插入影像的位置，然後選取 **[!UICONTROL Include]** > **[!UICONTROL Dynamic image served by Adobe Target...]** 從個人化下拉式功能表。
+* 如果您使用標準編輯器，請將游標置於您要插入影像的位置，然後從個人化下拉式選單中選取&#x200B;**[!UICONTROL Include]** > **[!UICONTROL Dynamic image served by Adobe Target...]**。
 
   ![](assets/target_12.png)
 
 ### 定義影像引數 {#defining-image-parameters}
 
-* 此 **[!UICONTROL Default image]**&#x200B;的URL：不符合任何條件時將顯示的影像。 您也可以從資產庫中選取影像。
-* 此 **[!UICONTROL Target location]**：輸入動態選件位置的名稱。 您必須在Target活動中選取此位置。
-* 此 **[!UICONTROL Landing Page]**：如果您希望預設影像重新導向至預設登陸頁面。 此URL僅適用於預設影像顯示在最終電子郵件中且為選用的情況。
-* 此 **[!UICONTROL Additional decision parameters]**：指定Adobe Target區段中所定義欄位與Adobe Campaign欄位之間的對應。 使用的Adobe Campaign欄位必須在rawbox中指定。 在我們的範例中，已新增「國家/地區」欄位。
+* **[!UICONTROL Default image]**&#x200B;的URL：不符合任何條件時將顯示的影像。 您也可以從Assets資料庫中選取影像。
+* **[!UICONTROL Target location]**：輸入動態選件位置的名稱。 您必須在Target活動中選取此位置。
+* **[!UICONTROL Landing Page]**：如果您要將預設影像重新導向至預設登陸頁面。 此URL僅適用於預設影像顯示在最終電子郵件中且為選用的情況。
+* **[!UICONTROL Additional decision parameters]**：指定Adobe Target區段中所定義欄位與Adobe Campaign欄位之間的對應。 使用的Adobe Campaign欄位必須在rawbox中指定。 在我們的範例中，已新增「國家/地區」欄位。
 
-如果您在Adobe Target的設定中使用企業許可權，請在此欄位中新增對應的屬性。 前往進一步瞭解Target企業許可權： [此頁面](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html).
+如果您在Adobe Target的設定中使用企業許可權，請在此欄位中新增對應的屬性。 在[此頁面](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html)中進一步瞭解Target Enterprise許可權。
 
 ![](assets/target_13.png)
 
@@ -72,7 +72,7 @@ ht-degree: 3%
 
 在我們的案例中，我們需要兩個重新導向選件，第三個選件（預設值）將在Adobe Campaign中定義。
 
-1. 若要在Target Standard中建立新的重新導向選件，請前往 **[!UICONTROL Content]** 標籤，按一下 **[!UICONTROL Code offers]**.
+1. 若要在Target Standard中建立新的重新導向選件，請從&#x200B;**[!UICONTROL Content]**&#x200B;索引標籤，按一下&#x200B;**[!UICONTROL Code offers]**。
 
 1. 按一下 **[!UICONTROL Create]**，之後 **[!UICONTROL Redirect Offer]**。
 
@@ -88,7 +88,7 @@ ht-degree: 3%
 
 在Target中，您需要建立兩個受眾，造訪您選件的人員將針對不同的內容進行分類。 針對每個對象，新增規則以定義能夠檢視選件的對象。
 
-1. 若要在Target中建立新對象，請從 **[!UICONTROL Audiences]** 標籤，按一下 **[!UICONTROL Create Audience]**.
+1. 若要在Target中建立新的對象，請從&#x200B;**[!UICONTROL Audiences]**&#x200B;索引標籤，按一下&#x200B;**[!UICONTROL Create Audience]**。
 
    ![](assets/audiences_1.png)
 
@@ -96,7 +96,7 @@ ht-degree: 3%
 
    ![](assets/audiences_2.png)
 
-1. 按一下 **[!UICONTROL Add a rule]** 並選取類別。 規則會使用特定條件來鎖定訪客。 您可以新增條件或在其他類別中建立新規則來調整規則。
+1. 按一下&#x200B;**[!UICONTROL Add a rule]**&#x200B;並選取類別。 規則會使用特定條件來鎖定訪客。 您可以新增條件或在其他類別中建立新規則來調整規則。
 
 1. 對其餘對象執行相同的程式。
 
@@ -106,13 +106,13 @@ ht-degree: 3%
 
 ### 定義對象 {#defining-the-audience}
 
-1. 若要建立體驗鎖定目標活動，請從 **[!UICONTROL Activities]** 標籤，按一下 **[!UICONTROL Create Activity]** 則 **[!UICONTROL Experience Targeting]**.
+1. 若要建立體驗鎖定目標活動，請從&#x200B;**[!UICONTROL Activities]**&#x200B;索引標籤，按一下&#x200B;**[!UICONTROL Create Activity]**&#x200B;然後&#x200B;**[!UICONTROL Experience Targeting]**。
 
    ![](assets/target_10.png)
 
-1. 選取 **[!UICONTROL Form]** 作為 **[!UICONTROL Experience Composer]**.
+1. 選取&#x200B;**[!UICONTROL Form]**&#x200B;作為&#x200B;**[!UICONTROL Experience Composer]**。
 
-1. 按一下「 」以選擇對象 **[!UICONTROL Change audience]** 按鈕。
+1. 按一下&#x200B;**[!UICONTROL Change audience]**&#x200B;按鈕以選擇對象。
 
    ![](assets/target_10_2.png)
 
@@ -120,7 +120,7 @@ ht-degree: 3%
 
    ![](assets/target_10_3.png)
 
-1. 按一下「 」以建立另一個體驗 **[!UICONTROL Add Experience Targeting]**.
+1. 按一下&#x200B;**[!UICONTROL Add Experience Targeting]**&#x200B;以建立另一個體驗。
 
 ### 定義位置和內容 {#defining-location-content}
 
@@ -130,7 +130,7 @@ ht-degree: 3%
 
    ![](assets/target_15.png)
 
-1. 按一下下拉式按鈕並選取 **[!UICONTROL Change Redirect Offer]**.
+1. 按一下下拉式按鈕並選取&#x200B;**[!UICONTROL Change Redirect Offer]**。
 
    ![](assets/target_content.png)
 
@@ -142,19 +142,19 @@ ht-degree: 3%
 
 ### 定義活動 {#defining-activity}
 
-此 **[!UICONTROL Target]** 視窗會摘要您的活動。 如有需要，您可以新增其他體驗。
+**[!UICONTROL Target]**&#x200B;視窗會摘要列出您的活動。 如有需要，您可以新增其他體驗。
 
 ![](assets/target_experience.png)
 
-此 **[!UICONTROL Goal & Settings]** 視窗可讓您透過設定優先順序、目標或持續時間來個人化您的活動。
+**[!UICONTROL Goal & Settings]**&#x200B;視窗可讓您設定優先順序、目標或持續時間，以個人化您的活動。
 
-此 **[!UICONTROL Reporting Settings]** 區段可讓您選取動作並編輯將決定何時實現目標的引數。
+**[!UICONTROL Reporting Settings]**&#x200B;區段可讓您選取動作並編輯將決定何時達成目標的引數。
 
 ![](assets/target_experience_2.png)
 
 ## 預覽和傳送電子郵件 {#preview-send-email}
 
-在Adobe Campaign中，您現在可以預覽電子郵件，並測試其對不同收件者的轉譯。 您會發現影像會根據建立的不同體驗而變更。 如需瞭解電子郵件建立的詳細資訊，請參閱本節 [頁面](../../delivery/using/defining-the-email-content.md).
+在Adobe Campaign中，您現在可以預覽電子郵件，並測試其對不同收件者的轉譯。 您會發現影像會根據建立的不同體驗而變更。 若要瞭解有關電子郵件建立的詳細資訊，請參閱此[頁面](../../delivery/using/defining-the-email-content.md)。
 
 您現在已準備好傳送包含Target動態優惠方案的電子郵件。
 

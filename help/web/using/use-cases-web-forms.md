@@ -27,7 +27,7 @@ ht-degree: 1%
 
 ### 步驟1 — 建立資訊服務 {#step-1---creating-information-services}
 
-1. 建立要提供給收件者的電子報訂閱服務。 如需如何建立電子報的詳細資訊，請參閱 [本節](../../delivery/using/about-services-and-subscriptions.md).
+1. 建立要提供給收件者的電子報訂閱服務。 如需如何建立Newsletter的詳細資訊，請參閱[本節](../../delivery/using/about-services-and-subscriptions.md)。
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_1.png)
 
@@ -39,17 +39,17 @@ ht-degree: 1%
 
 確認訊息會透過在臨時服務層級參考的專用傳遞範本傳送。
 
-1. 在 **[!UICONTROL Explorer]** ，選取 **[!UICONTROL Resources > Templates > Delivery templates]**.
+1. 在&#x200B;**[!UICONTROL Explorer]**&#x200B;中，選取&#x200B;**[!UICONTROL Resources > Templates > Delivery templates]**。
 1. 建立傳送訂閱確認訊息的傳遞範本。
-1. 按一下 **[!UICONTROL To]** 中的按鈕 **[!UICONTROL Email parameters]** 將傳遞範本與訂閱目標對應（而非收件者）建立關聯。
+1. 按一下&#x200B;**[!UICONTROL Email parameters]**&#x200B;中的&#x200B;**[!UICONTROL To]**&#x200B;按鈕，將傳遞範本與訂閱目標對應而非收件者建立關聯。
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_1d.png)
 
 1. 由於此傳遞的收件者尚未確認其核准，因此他們仍位於資料庫封鎖清單中。 為了讓收件者接收此通訊，您必須根據此範本授權傳遞至封鎖清單上的目標收件者。
 
-   若要這麼做，請按一下 **[!UICONTROL Exclusions]** 標籤。
+   若要這麼做，請按一下&#x200B;**[!UICONTROL Exclusions]**&#x200B;標籤。
 
-1. 按一下 **[!UICONTROL Edit...]** 連結並取消勾選 **[!UICONTROL Exclude recipients who no longer want to be contacted]** 選項。
+1. 按一下&#x200B;**[!UICONTROL Edit...]**&#x200B;連結，並取消勾選&#x200B;**[!UICONTROL Exclude recipients who no longer want to be contacted]**&#x200B;選項。
 
    <!-- ![](assets/s_ncs_admin_survey_double-opt-in_sample_4d.png)-->
 
@@ -79,31 +79,31 @@ ht-degree: 1%
 
 要執行此操作，請遵循下列步驟：
 
-1. 建立網路表單並選擇範本 **[!UICONTROL Newsletter subscription (subNewsletter)]**.
+1. 建立網路表單並選擇範本&#x200B;**[!UICONTROL Newsletter subscription (subNewsletter)]**。
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_5a.png)
 
-1. 在 **[!UICONTROL Edit]** 索引標籤上，我們需要設定現有的工作流程，因為我們要新增確認訊息給要訂閱的收件者。
+1. 在&#x200B;**[!UICONTROL Edit]**&#x200B;索引標籤中，我們需要設定現有的工作流程，因為我們要新增確認訊息給要訂閱的收件者。
 
-   若要這麼做，請連按兩下 **[!UICONTROL Preloading]** 方塊，並依照以下方式設定。
+   若要這麼做，請連按兩下&#x200B;**[!UICONTROL Preloading]**&#x200B;方塊並按如下方式設定。
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_5b.png)
 
    這表示如果使用者透過確認訊息中的連結存取此表單，則會載入其設定檔資訊。 如果他們透過網站的頁面存取網頁表單，則不會載入任何資訊。
 
-1. 新增 **[!UICONTROL Test]** 活動至您的工作流程。
+1. 將&#x200B;**[!UICONTROL Test]**&#x200B;活動新增至工作流程。
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6e.png)
 
-   此 **[!UICONTROL Test]** 活動可能涉及收件者電子郵件。 在此情況下，請依照以下方式設定：
+   **[!UICONTROL Test]**&#x200B;活動可能涉及收件者電子郵件。 在此情況下，請依照以下方式設定：
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6d.png)
 
-1. 新增兩個 **[!UICONTROL Script]** 活動至您的工作流程。
+1. 新增兩個&#x200B;**[!UICONTROL Script]**&#x200B;活動至您的工作流程。
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6f.png)
 
-   第一個 **[!UICONTROL Script]** 活動會將收件者新增至封鎖清單，直到他們確認訂閱電子報為止。 其內容必須如下：
+   前&#x200B;**[!UICONTROL Script]**&#x200B;個活動會將收件者新增至封鎖清單中，直到他們確認訂閱電子報為止。 其內容必須如下：
 
    ```
    ctx.recipient.@blackList=1
@@ -111,7 +111,7 @@ ht-degree: 1%
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6bbis.png)
 
-   第二個 **[!UICONTROL Script]** 活動會授權傳送給使用者，並訂閱電子報。 指令碼的最後兩行將可讓您將收件者從暫存資料夾轉移至另一個資料夾，並在他們確認訂閱後立即與現有設定檔進行調解。
+   第二個&#x200B;**[!UICONTROL Script]**&#x200B;活動會授權傳送給使用者，並訂閱電子報。 指令碼的最後兩行將可讓您將收件者從暫存資料夾轉移至另一個資料夾，並在他們確認訂閱後立即與現有設定檔進行調解。
 
    ```
    ctx.recipient.@blackList=0
@@ -122,15 +122,15 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >此 **[!UICONTROL Temp]** 分割區也可以使用工作流程定期清除。
+   >也可以使用工作流程定期清除&#x200B;**[!UICONTROL Temp]**&#x200B;資料分割。
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6b.png)
 
-1. 按兩下 **[!UICONTROL Subscription]** 活動以個人化訂閱表單，並將核取方塊與先前建立的臨時服務連結。
+1. 連按兩下&#x200B;**[!UICONTROL Subscription]**&#x200B;活動以個人化訂閱表單，並將核取方塊與先前建立的臨時服務連結。
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_5c.png)
 
-1. 設定 **[!UICONTROL Storage]** 活動，儲存表單頁面中輸入的資訊。
+1. 設定&#x200B;**[!UICONTROL Storage]**&#x200B;活動以儲存表單頁面中輸入的資訊。
 
    此活動可讓您在專用的臨時資料夾中建立收件者設定檔，將它們與資料庫中可傳送通訊的設定檔區分開。
 
@@ -140,9 +140,9 @@ ht-degree: 1%
    >
    >您不得定義任何調解選項。
 
-1. 新增兩個 **[!UICONTROL End]** 為使用者顯示訊息的活動。
+1. 新增兩個&#x200B;**[!UICONTROL End]**&#x200B;活動來為使用者顯示訊息。
 
-   第二個 **[!UICONTROL End]** 方塊會在訂閱完成後顯示確認訊息。
+   訂閱完成後，第二個&#x200B;**[!UICONTROL End]**&#x200B;方塊將顯示確認訊息。
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_5h.png)
 
@@ -166,7 +166,7 @@ ht-degree: 1%
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_8d.png)
 
-   使用者會新增至中的Adobe Campaign資料庫 **[!UICONTROL Temp]** 資料夾中，而且他們的設定檔位於封鎖清單上，直到他們透過電子郵件確認訂閱為止。
+   使用者已新增至&#x200B;**[!UICONTROL Temp]**&#x200B;資料夾中的Adobe Campaign資料庫，且他們的設定檔已加入封鎖清單，直到他們透過電子郵件確認訂閱為止。
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_8f.png)
 

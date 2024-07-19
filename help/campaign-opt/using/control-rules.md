@@ -20,18 +20,18 @@ ht-degree: 2%
 
 一組現成的規則可讓您執行一般的檢查。 這些檢查（在介面中以粗體顯示）包括：
 
-* **[!UICONTROL Object approval]** （電子郵件）：檢查寄件者物件和地址是否不包含特殊字元，這可能造成某些郵件代理程式發生問題。
-* **[!UICONTROL URL label approval]** （電子郵件）：檢查每個追蹤URL是否都有標籤。
+* **[!UICONTROL Object approval]** （電子郵件）：檢查寄件者物件與地址是否不包含特殊字元，這可能造成某些郵件代理程式發生問題。
+* **[!UICONTROL URL label approval]** （電子郵件）：檢查每個追蹤URL是否有標籤。
 * **[!UICONTROL URL approval]** （電子郵件）：檢查追蹤URL （是否有「&amp;」字元）。
-* **[!UICONTROL Message size approval]** （行動）：檢查SMS訊息的大小。
+* **[!UICONTROL Message size approval]** （行動裝置）：檢查SMS訊息的大小。
 * **[!UICONTROL Validity period check]** （電子郵件）：檢查傳遞的有效期是否足夠長，以傳送所有訊息。
 * **[!UICONTROL Proof size check]** （所有管道）：如果校訂目標母體超過100個收件者，則產生錯誤訊息。
-* **[!UICONTROL Wave scheduling check]** （電子郵件）：如果傳送劃分為數個傳送，則檢查排定在有效期間結束之前開始的最後一波傳送。
+* **[!UICONTROL Wave scheduling check]** （電子郵件）：如果傳遞劃分為數個批次，則檢查最後一個傳遞批次是否已排程在有效期間結束前開始。
 * **[!UICONTROL Unsubscription link approval]** （電子郵件）：檢查每個內容(HTML和文字)中是否有至少一個取消訂閱（選擇退出） URL。
 
 ## 建立控制規則 {#creating-a-control-rule}
 
-您可以建立新的控制規則以符合您的需求。 若要這麼做，請建立 **[!UICONTROL Control]** 型別規則，並在 **[!UICONTROL Code]** 標籤。
+您可以建立新的控制規則以符合您的需求。 若要這麼做，請建立&#x200B;**[!UICONTROL Control]**&#x200B;型別規則，並在&#x200B;**[!UICONTROL Code]**&#x200B;索引標籤的SQL中輸入控制項公式。
 
 **範例：**
 
@@ -39,11 +39,11 @@ ht-degree: 2%
 
 應用以下步驟：
 
-1. 建立 **[!UICONTROL Control]** 型別規則。 選取 **[!UICONTROL Warning]** 警示等級。
+1. 建立&#x200B;**[!UICONTROL Control]**&#x200B;型別規則。 選取&#x200B;**[!UICONTROL Warning]**&#x200B;警示等級。
 
    ![](assets/campaign_opt_create_control_01.png)
 
-1. 在 **[!UICONTROL Code]** 索引標籤中，輸入指令碼以套用所需的臨界值，如下所示：
+1. 在&#x200B;**[!UICONTROL Code]**&#x200B;索引標籤中，輸入指令碼以套用所需的臨界值，如下所示：
 
    ![](assets/campaign_opt_create_control_02.png)
 
@@ -67,6 +67,6 @@ ht-degree: 2%
 
    ![](assets/campaign_opt_create_control_05.png)
 
-   在分析結束時， **[!UICONTROL Confirm delivery]** 按鈕將不可用。
+   分析結束時，**[!UICONTROL Confirm delivery]**&#x200B;按鈕將不可用。
 
    ![](assets/campaign_opt_create_control_06.png)

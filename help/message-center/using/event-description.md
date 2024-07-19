@@ -20,25 +20,25 @@ ht-degree: 0%
 
 ## 異動訊息資料模型 {#about-transactional-messaging-datamodel}
 
-交易式訊息依賴Adobe Campaign資料模型，並使用兩個額外的個別表格。 這些 [表格](../../configuration/using/data-model-description.md#message-center-module)， **NmsRtEvent** 和 **NmsBatchEvent**，包含相同的欄位，讓您一方面管理即時事件，另一方面管理批次事件。
+交易式訊息依賴Adobe Campaign資料模型，並使用兩個額外的個別表格。 這[個資料表](../../configuration/using/data-model-description.md#message-center-module)、**NmsRtEvent**&#x200B;和&#x200B;**NmsBatchEvent**&#x200B;包含相同的欄位，讓您一方面管理即時事件，另一方面管理批次事件。
 
 ## SOAP方法 {#soap-methods}
 
-本節詳細說明與異動訊息模組結構描述相關聯的SOAP方法。
+本節詳細說明與異動訊息模組結構描述相關的SOAP方法。
 
-兩個 **推送事件** 或 **Pushevents** SOAP方法連結至兩個 **nms：rtEvent** 和 **nms：BatchEvent** 資料架構。 此資訊系統可判斷事件是「批次」或「即時」型別。
+兩個&#x200B;**PushEvent**&#x200B;或&#x200B;**PushEvents** SOAP方法連結至兩個&#x200B;**nms：rtEvent**&#x200B;和&#x200B;**nms：BatchEvent**&#x200B;資料架構。 此資訊系統可判斷事件是「批次」或「即時」型別。
 
-* **推送事件** 可讓您在訊息中插入單一事件，
-* **Pushevents** 可讓您在訊息中插入一系列事件。
+* **PushEvent**&#x200B;可讓您在訊息中插入單一事件，
+* **PushEvents**&#x200B;可讓您在訊息中插入一系列事件。
 
 用於存取這兩種方法的WSDL路徑為：
 
-* **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:rtEvent** 以存取即時型別結構描述。
-* **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:batchEvent** 以存取批次型別結構描述。
+* **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:rtEvent**&#x200B;以存取即時型別結構描述。
+* **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:batchEvent**&#x200B;以存取批次型別結構描述。
 
-如需產生WSDL檔案的詳細資訊，請參閱 [本節](../../configuration/using/web-service-calls.md#web-service-description--wsdl).
+如需產生WSDL檔案的詳細資訊，請參閱[本節](../../configuration/using/web-service-calls.md#web-service-description--wsdl)。
 
-兩種方法都包含 **`<urn:sessiontoken>`** 用於登入交易式訊息模組的元素。 我們建議您透過受信任的IP位址使用身分識別方法。 若要擷取工作階段權杖，請執行登入SOAP呼叫，然後執行get權杖和登出。 對多個RT呼叫使用相同的權杖。 本節包含的範例是使用工作階段權杖方法（建議使用）。
+兩種方法都包含用於登入交易式訊息模組的&#x200B;**`<urn:sessiontoken>`**&#x200B;元素。 我們建議您透過受信任的IP位址使用身分識別方法。 若要擷取工作階段權杖，請執行登入SOAP呼叫，然後執行get權杖和登出。 對多個RT呼叫使用相同的權杖。 本節包含的範例是使用工作階段權杖方法（建議使用）。
 
 如果您使用負載平衡的伺服器，則可以使用使用者/密碼驗證（在RT訊息的層級）。 例如：
 
@@ -54,9 +54,9 @@ ht-degree: 0%
 </PushEvent>
 ```
 
-此 **推送事件** 方法由 **`<urn:domevent>`** 包含事件的引數。
+**PushEvent**&#x200B;方法由包含事件的&#x200B;**`<urn:domevent>`**&#x200B;參陣列成。
 
-此 **Pushevents** 方法由 **`<urn:domeventcollection>`** 包含事件的引數。
+**PushEvents**&#x200B;方法由包含事件的&#x200B;**`<urn:domeventcollection>`**&#x200B;參陣列成。
 
 使用PushEvent的範例：
 
@@ -80,7 +80,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->若是呼叫 **Pushevents** 方法，我們需要新增父XML元素以符合標準XML。 此XML元素會將 **`<rtevent>`** 事件中包含的元素。
+>如果呼叫&#x200B;**PushEvents**&#x200B;方法，我們需要新增父XML元素以符合標準XML。 此XML元素會設定事件中所包含的各種&#x200B;**`<rtevent>`**&#x200B;元素的框架。
 
 使用PushEvents的範例：
 
@@ -106,13 +106,13 @@ ht-degree: 0%
 </urn:PushEvents>
 ```
 
-此 **`<rtevent>`** 和 **`<batchevent>`** 元素具有一組屬性以及一個必要的子元素： **`<ctx>`** 以整合訊息資料。
+**`<rtevent>`**&#x200B;和&#x200B;**`<batchevent>`**&#x200B;元素具有一組屬性，以及整合訊息資料的必要子元素： **`<ctx>`**。
 
 >[!NOTE]
 >
->此 **`<batchevent>`** 元素可讓您將事件新增至「批次」佇列。 此 **`<rtevent>`** 將事件新增至「即時」佇列。
+>**`<batchevent>`**&#x200B;元素可讓您將事件新增至「批次」佇列。 **`<rtevent>`**&#x200B;將事件新增至「即時」佇列。
 
-「 」的必要屬性 **`<rtevent>`** 和 **`<batchevent>`** 元素為@type和@email。 @type的值必須與設定執行例項時定義的逐項清單值相同。 此值可讓您定義要在傳送期間連結至事件內容的範本。
+**`<rtevent>`**&#x200B;和&#x200B;**`<batchevent>`**&#x200B;元素的必要屬性為@type和@email。 @type的值必須與設定執行例項時定義的逐項清單值相同。 此值可讓您定義要在傳送期間連結至事件內容的範本。
 
 `<rtevent> configuration example:`
 
@@ -120,17 +120,17 @@ ht-degree: 0%
 <rtEvent type="order_confirmation" email="john.doe@domain.com" origin="eCommerce" wishedChannel="0" externalId="1242" mobilePhone="+33620202020"> 
 ```
 
-在此範例中，提供兩個管道：電子郵件地址和行動電話號碼。 此 **希望頻道** 可讓您選取將事件轉換為訊息時要使用的管道。 「0」值對應至電子郵件頻道、「1」值對應至行動裝置頻道等。
+在此範例中，提供兩個管道：電子郵件地址和行動電話號碼。 **widedChannel**&#x200B;可讓您選取將事件轉換為訊息時要使用的管道。 「0」值對應至電子郵件頻道、「1」值對應至行動裝置頻道等。
 
-如果您希望延遲事件傳送，請新增 **[!UICONTROL scheduled]** 欄位後跟偏好的日期。 此事件將於此日期轉換為訊息。
+如果您希望延遲事件傳遞，請新增&#x200B;**[!UICONTROL scheduled]**&#x200B;欄位，後面接著偏好的日期。 此事件將於此日期轉換為訊息。
 
 我們建議在@wishedChannel和@emailFormat屬性中填入數值。 連結數值和標籤的函式表格可在資料結構描述中找到。
 
 >[!NOTE]
 >
->所有授權屬性及其值的詳細說明可在的說明中取得 **nms：rtEvent** 和 **nms：BatchEvent** 資料架構。
+>在&#x200B;**nms：rtEvent**&#x200B;和&#x200B;**nms：BatchEvent**&#x200B;資料結構的描述中，可以找到所有授權屬性及其值的詳細描述。
 
-此 **`<ctx>`** 元素包含訊息資料。 其XML內容是開放的，這表示可以根據要傳送的內容來設定它。
+**`<ctx>`**&#x200B;元素包含訊息資料。 其XML內容是開放的，這表示可以根據要傳送的內容來設定它。
 
 >[!NOTE]
 >
@@ -163,7 +163,7 @@ Adobe Campaign在收到事件時，會產生唯一的傳回ID。 這是已封存
 
 >[!IMPORTANT]
 >
->在接收SOAP呼叫時，Adobe Campaign會驗證電子郵件地址格式。 如果電子郵件地址的格式不正確，則會傳回錯誤。
+>接收SOAP呼叫時，Adobe Campaign會驗證電子郵件地址格式。 如果電子郵件地址的格式不正確，則會傳回錯誤。
 
 * 事件處理成功時方法傳回的識別碼範例：
 

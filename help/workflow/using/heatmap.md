@@ -15,9 +15,9 @@ ht-degree: 3%
 
 
 
-Campaign Workflow HeatMap包含目前執行的所有工作流程，並以色彩編碼的圖形來加以呈現。 它僅適用於 **Campaign管理員**.
+Campaign Workflow HeatMap包含目前執行的所有工作流程，並以色彩編碼的圖形來加以呈現。 僅限&#x200B;**Campaign管理員**&#x200B;使用。
 
-探索在中監視Campaign流程的其他方法 [此頁面](../../production/using/monitoring-guidelines.md).
+在[此頁面](../../production/using/monitoring-guidelines.md)中探索監視Campaign處理序的其他方法。
 
 ## 開始使用工作流程熱度圖 {#about-the-workflow-heatmap}
 
@@ -29,22 +29,22 @@ Campaign Workflow HeatMap包含目前執行的所有工作流程，並以色彩�
 * 依期間篩選工作流程，以查看哪些工作流程可能遇到問題
 * 依期間篩選活動，以檢視哪些活動可能會遇到問題
 * 輕易尋找個別的工作流程及所有的相關活動 (包括其持續時間)
-* 依工作流程型別篩選： [技術工作流程](building-a-workflow.md#technical-workflows) 或 [行銷活動工作流程](building-a-workflow.md#campaign-workflows)
+* 依工作流程型別篩選： [技術工作流程](building-a-workflow.md#technical-workflows)或[行銷活動工作流程](building-a-workflow.md#campaign-workflows)
 * 尋找特定工作流程並加以分析
 
 >[!NOTE]
 >
->除了 **工作流程熱度圖**，您可以建立工作流程來監控一組工作流程的狀態，並傳送週期性訊息給主管。 有關詳細資訊，請參閱 [專用區段](supervising-workflows.md).
+>除了&#x200B;**工作流程熱度圖**，您可以建立工作流程，讓您監視一組工作流程的狀態，並傳送週期性訊息給主管。 如需詳細資訊，請參閱[專屬區段](supervising-workflows.md)。
 
-使用Workflow HeatMap需要充分瞭解下列概念： [工作流程](about-workflows.md)， [活動](about-activities.md) 和 [工作流程最佳實務](workflow-best-practices.md).
+使用工作流程熱度圖需要深入瞭解下列概念： [工作流程](about-workflows.md)、[活動](about-activities.md)和[工作流程最佳實務](workflow-best-practices.md)。
 
 ## 自訂工作流程熱度圖 {#using-the-heatmap}
 
 >[!NOTE]
 >
->如果「工作流程熱度圖」中未顯示任何資料，請按一下 **[!UICONTROL Load data]** 按鈕。
+>如果工作流程熱度圖中未顯示任何資料，請按一下&#x200B;**[!UICONTROL Load data]**&#x200B;按鈕。
 
-1. 前往 **[!UICONTROL Monitoring]** 並按一下 **[!UICONTROL Workflow HeatMap]** 連結以顯示 **[!UICONTROL Campaign Workflow HeatMap]** 頁面。
+1. 移至&#x200B;**[!UICONTROL Monitoring]**&#x200B;並按一下&#x200B;**[!UICONTROL Workflow HeatMap]**&#x200B;連結以顯示&#x200B;**[!UICONTROL Campaign Workflow HeatMap]**&#x200B;頁面。
 
    ![](assets/wkf_monitoring_path.png)
 
@@ -54,7 +54,7 @@ Campaign Workflow HeatMap包含目前執行的所有工作流程，並以色彩�
 
    >[!NOTE]
    >
-   >僅限尚未由刪除的工作流程 **[!UICONTROL Database cleanup]** 工作流程是可見的。 有關資料庫清理工作流程的詳細資訊，請參閱 [本節](../../production/using/database-cleanup-workflow.md).\
+   >只會顯示尚未由&#x200B;**[!UICONTROL Database cleanup]**&#x200B;工作流程刪除的工作流程。 如需資料庫清理工作流程的詳細資訊，請參閱[本節](../../production/using/database-cleanup-workflow.md)。\
    >依預設，Workflow HeatMap時區是為目前管理員使用者定義的時區。 例如，如果您所在的區域與正在使用的行銷使用者不同，您可能會想要變更此專案。
 
 1. 按一下 **[!UICONTROL Filters]** 按鈕。
@@ -65,22 +65,22 @@ Campaign Workflow HeatMap包含目前執行的所有工作流程，並以色彩�
 
    ![](assets/wkf_monitoring_filters_duration.png)
 
-1. 您也可以從中選擇特定工作流程 **[!UICONTROL Workflows]** 下拉式清單。
+1. 您也可以從&#x200B;**[!UICONTROL Workflows]**&#x200B;下拉式清單中選擇特定工作流程。
 
    ![](assets/wkf_monitoring_filters_workflows.png)
 
    >[!NOTE]
    >
-   >此 **[!UICONTROL Min duration]** 已套用篩選器。 如果找不到特定工作流程，請將最短持續期間重設為0，以便所有工作流程都顯示在清單中。
+   >已套用&#x200B;**[!UICONTROL Min duration]**&#x200B;篩選器。 如果找不到特定工作流程，請將最短持續期間重設為0，以便所有工作流程都顯示在清單中。
 
-1. 您也可以篩選 **[!UICONTROL Workflow type]** ：
+1. 您也可以在&#x200B;**[!UICONTROL Workflow type]**&#x200B;上篩選：
 
-   * **[!UICONTROL Technical]** ：僅限 [現成可用的技術工作流程](building-a-workflow.md#technical-workflows) 和 [資料管理工作流程](targeting-data.md#data-management) 都會顯示。
-   * **[!UICONTROL Marketing]** ：僅限連結至行銷活動(稱為 [行銷活動工作流程](building-a-workflow.md#campaign-workflows)「 」會顯示。
+   * **[!UICONTROL Technical]** ：僅顯示[現成可用的技術工作流程](building-a-workflow.md#technical-workflows)和[資料管理工作流程](targeting-data.md#data-management)。
+   * **[!UICONTROL Marketing]** ：只會顯示連結至行銷活動的工作流程（稱為[行銷活動工作流程](building-a-workflow.md#campaign-workflows)）。
 
-1. 若要依名稱搜尋特定工作流程，您也可以使用 **[!UICONTROL Workflow name filter]** 欄位。
+1. 若要依名稱搜尋特定工作流程，您也可以使用&#x200B;**[!UICONTROL Workflow name filter]**&#x200B;欄位。
 
-1. 如果您在這段期間編輯了一些工作流程，請按一下 **[!UICONTROL Reload data]** 按鈕以重新整理網格中顯示的資料。
+1. 如果您編輯了介於兩者之間的一些工作流程，請按一下&#x200B;**[!UICONTROL Reload data]**&#x200B;按鈕，重新整理網格中顯示的資料。
 
 ## 解譯工作流程熱度圖 {#reading-the-heatmap}
 
@@ -89,7 +89,7 @@ Campaign Workflow HeatMap是從左上到右下自然可讀的格線，允許尋�
 * 較暗的紅色儲存格對應於同時執行大量工作流程時的時段。
 * 灰色儲存格對應於沒有執行工作流程時的週期。
 
-若要瞭解如何套用色彩代碼以及如何導覽熱度圖，請按一下 **[!UICONTROL Help]** 按鈕。
+若要瞭解如何套用色彩代碼以及如何導覽HeatMap，請按一下&#x200B;**[!UICONTROL Help]**&#x200B;按鈕。
 
 ![](assets/wkf_monitoring_legend.png)
 
@@ -108,7 +108,7 @@ Campaign Workflow HeatMap是從左上到右下自然可讀的格線，允許尋�
    對於每個工作流程，會列出其中包含的所有活動及其持續時間。
 
 1. 按一下工作流程ID或名稱，直接開啟工作流程。
-1. 若要返回 **[!UICONTROL Campaign Workflow HeatMap]** 檢視，按一下 **[!UICONTROL Home]** 按鈕。
+1. 若要返回&#x200B;**[!UICONTROL Campaign Workflow HeatMap]**&#x200B;檢視，請按一下&#x200B;**[!UICONTROL Home]**&#x200B;按鈕。
 
 ## 使用案例：使用熱度圖採取動作 {#use-cases--using-the-heatmap-to-take-actions}
 
@@ -118,7 +118,7 @@ Campaign Workflow HeatMap是從左上到右下自然可讀的格線，允許尋�
 
 作為Campaign管理員，Workflow HeatMap可協助您瞭解執行個體的負載，並在適當時機規劃現有或新的工作流程。
 
-1. 從 **[!UICONTROL Campaign Workflow HeatMap]** 檢視，按一下 **[!UICONTROL Filters]** 按鈕。
+1. 從&#x200B;**[!UICONTROL Campaign Workflow HeatMap]**&#x200B;檢視，按一下&#x200B;**[!UICONTROL Filters]**&#x200B;按鈕。
 1. 將持續時間設定為幾秒或幾分鐘。
 1. 增加持續時間篩選條件，以排除不重要的最短工作流程。
 
@@ -133,17 +133,17 @@ Campaign Workflow HeatMap是從左上到右下自然可讀的格線，允許尋�
 
 作為Campaign管理員，Workflow HeatMap可協助您找出拖慢活動速度的最長工作流程。
 
-1. 從 **[!UICONTROL Campaign Workflow HeatMap]** 檢視，按一下 **[!UICONTROL Filters]** 按鈕。
+1. 從&#x200B;**[!UICONTROL Campaign Workflow HeatMap]**&#x200B;檢視，按一下&#x200B;**[!UICONTROL Filters]**&#x200B;按鈕。
 1. 將持續時間設為1小時。
 
    ![](assets/wkf_monitoring_long_duration.png)
 
-1. 減少「 」以包含更多結果 **[!UICONTROL Min duration]** 篩選。
+1. 減少&#x200B;**[!UICONTROL Min duration]**&#x200B;篩選器，以包含更多結果。
 1. 探索結果以找出最長的工作流程，這些工作流程可能會對伺服器和資料庫資源（CPU、RAM、網路、IOPS等）造成更多影響。
 1. 採取適當的動作：
 
    * 建議行銷使用者分割最長的工作流程，以減少處理時間。
-   * 開始更深入分析特定工作流程和特定活動（例如JavaScript、匯入、匯出等），以隔離問題並更輕鬆地解決問題。
+   * 開始更深入分析特定工作流程和特定活動(例如JavaScript、匯入、匯出等)，以隔離問題並更輕鬆地解決問題。
 
 ## 使用HeatMap改善工作流程規劃 {#example--using-the-heatmap-to-improve-workflow-planning}
 
@@ -151,9 +151,9 @@ Campaign Workflow HeatMap是從左上到右下自然可讀的格線，允許尋�
 
 在這種情況下，許多使用者抱怨工作流程效能。 您需要檢查哪些因素導致活動變慢，以及如何解決問題。
 
-1. 前往 **[!UICONTROL Monitoring]** 並按一下 **[!UICONTROL Workflows]** 連結以顯示 **[!UICONTROL Campaign Workflow HeatMap]** 頁面。
-1. 設定 **[!UICONTROL Min duration]** 篩選至5分鐘。
-1. 設定 **[!UICONTROL Workflow type]** 篩選至 **[!UICONTROL Marketing]** .
+1. 移至&#x200B;**[!UICONTROL Monitoring]**&#x200B;並按一下&#x200B;**[!UICONTROL Workflows]**&#x200B;連結以顯示&#x200B;**[!UICONTROL Campaign Workflow HeatMap]**&#x200B;頁面。
+1. 將&#x200B;**[!UICONTROL Min duration]**&#x200B;篩選器設為5分鐘。
+1. 將&#x200B;**[!UICONTROL Workflow type]**&#x200B;篩選器設為&#x200B;**[!UICONTROL Marketing]** 。
 1. 在「熱度圖」格線中，觀察下列專案：
 
    ![](assets/wkf_monitoring_without.png)
@@ -164,7 +164,7 @@ Campaign Workflow HeatMap是從左上到右下自然可讀的格線，允許尋�
    * 效能低。
 
 1. 與其讓五十個工作流程從上午10點開始，不如在一天中的其餘時間平均分配工作流程的開始時間。
-1. 返回 **[!UICONTROL Campaign Workflow HeatMap]** 頁面，然後按一下 **[!UICONTROL Reload data]** 按鈕。
+1. 返回&#x200B;**[!UICONTROL Campaign Workflow HeatMap]**&#x200B;頁面並按一下&#x200B;**[!UICONTROL Reload data]**&#x200B;按鈕。
 1. 現在請觀察下列專案：
 
    ![](assets/wkf_monitoring_with.png)

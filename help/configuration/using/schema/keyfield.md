@@ -26,7 +26,7 @@ keyfield：==EMPTY
 
 ## 父項 {#parents-9}
 
-`<key>`  ，  `<dbindex />`
+`<key>` ， `<dbindex />`
 
 ## 子系 {#children-9}
 
@@ -38,8 +38,8 @@ keyfield：==EMPTY
 
 ## 屬性說明 {#attribute-description-9}
 
-* **xlink (MNTOKEN)**：可讓您自動參照在連線中定義之關係表格（N-N連結）的外部索引鍵。
-* **xpath (MNTOKEN)**：索引或索引鍵的定義 `<attribute>`  元素。 此屬性會接收Xpath，定義定義索引鍵或索引的結構描述屬性的路徑。
+* **xlink (MNTOKEN)**：可讓您自動參考關聯資料表（N-N連結）之聯結中所定義的外來索引鍵。
+* **xpath (MNTOKEN)**： `<attribute>`專案上索引或索引鍵的定義。 此屬性會接收Xpath，定義定義索引鍵或索引的結構描述屬性的路徑。
 
 ## 範例 {#examples-}
 

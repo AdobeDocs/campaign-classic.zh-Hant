@@ -28,8 +28,8 @@ ht-degree: 7%
 
 若要建立對應的綱要，請套用下列階段：
 
-1. 編輯 **[!UICONTROL Administration>Configuration>Data schemas]** Adobe Campaign樹的節點，然後按一下 **[!UICONTROL New]** .
-1. 選取 **[!UICONTROL Access data from an existing table or an SQL view]** 選項並按一下 **[!UICONTROL Next]** .
+1. 編輯Adobe Campaign樹狀結構的&#x200B;**[!UICONTROL Administration>Configuration>Data schemas]**&#x200B;節點，然後按一下&#x200B;**[!UICONTROL New]** 。
+1. 選取&#x200B;**[!UICONTROL Access data from an existing table or an SQL view]**&#x200B;選項，然後按一下&#x200B;**[!UICONTROL Next]** 。
 
    ![](assets/s_ncs_configuration_extand_a_schema.png)
 
@@ -41,7 +41,7 @@ ht-degree: 7%
 
    ![](assets/s_ncs_configuration_view_create_schema.png)
 
-   結構描述必須以view=&quot;true&quot;屬性填入， `<srcSchema>` 根元素，以便不產生表格建立SQL指令碼。
+   結構描述必須以`<srcSchema>`根專案上的view=&quot;true&quot;屬性填入，才能不產生資料表建立SQL指令碼。
 
 **範例** ：
 
@@ -58,6 +58,6 @@ ht-degree: 7%
 
 ## 存取外部資料庫 {#accessing-an-external-database}
 
-此 **同盟資料存取 — FDA** 選項可讓您存取儲存在外部資料庫中的資料。
+**同盟資料存取 — FDA**&#x200B;選項可讓您存取儲存在外部資料庫中的資料。
 
-中詳細說明了要在結構描述上執行以存取外部資料庫中資料的設定 [此頁面](../../installation/using/creating-data-schema.md).
+[此頁面](../../installation/using/creating-data-schema.md)中詳細說明了要執行於結構描述以存取外部資料庫中的資料的組態。

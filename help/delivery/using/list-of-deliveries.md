@@ -17,19 +17,19 @@ ht-degree: 3%
 
 
 
-您可以從傳遞清單存取「傳送」，方法是： **[!UICONTROL Campaign Management > Deliveries]** 樹狀結構的節點。
+您可以透過樹狀結構的&#x200B;**[!UICONTROL Campaign Management > Deliveries]**&#x200B;節點，從傳遞清單存取傳遞。
 
 ![](assets/deliveries-list.png)
 
 依預設，傳遞清單包含在所選節點中建立的傳遞的名稱和狀態。 它也會顯示成功傳送、處理和傳送的訊息數。
 
-* 「 」的數量 **[!UICONTROL Messages to send]** 對應於分析後和傳遞前鎖定的收件者人數。
-* 中的訊息數 **[!UICONTROL Success]** 欄對應於伺服器傳送及收件者接收的訊息數。
-* 「 」的數量 **[!UICONTROL Processed]** messages對應於已接收的訊息數加上有錯誤的訊息數。
+* **[!UICONTROL Messages to send]**&#x200B;的數目對應於分析之後和傳遞之前的目標收件者數目。
+* **[!UICONTROL Success]**&#x200B;欄中的訊息數目與伺服器所傳送及收件者所接收的訊息數目相對應。
+* **[!UICONTROL Processed]**&#x200B;個訊息的數目對應於已接收的訊息數目加上發生錯誤的訊息數目。
 
 >[!NOTE]
 >
->對於大型傳送，您可以更新這些值。 若要這麼做，請選取有問題的傳送，然後在其上按一下滑鼠右鍵。 選取 **[!UICONTROL Action > Recompute delivery and tracking indicators...]** 然後使用精靈來更新此資訊。
+>對於大型傳送，您可以更新這些值。 若要這麼做，請選取有問題的傳送，然後在其上按一下滑鼠右鍵。 選取&#x200B;**[!UICONTROL Action > Recompute delivery and tracking indicators...]**，然後使用精靈來更新此資訊。
 
 **相關主題：**
 

@@ -33,7 +33,7 @@ Adobe Campaign不會限制檔案大小。 但您可以透過設定IIS/Apache來�
 
 ## 轉送
 
-請參閱 [此頁面](../../installation/using/configuring-campaign-server.md#dynamic-page-security-and-relays) 以取得詳細資訊。
+如需詳細資訊，請參閱[此頁面](../../installation/using/configuring-campaign-server.md#dynamic-page-security-and-relays)。
 
 依預設，所有動態頁面都會自動轉送到其Web模組啟動之電腦的本機Tomcat伺服器。 您可以選擇不轉送其中部分。 如果您沒有使用某些Adobe Campaign模組（例如webapp、互動、某些jsp），您可以從轉送規則中將其移除。
 
@@ -43,13 +43,13 @@ Adobe Campaign不會限制檔案大小。 但您可以透過設定IIS/Apache來�
 
 ## 傳出連線的保護
 
-可由 JavaScript 程式碼 (工作流程等等) 呼叫之預設 URL 清單有限。 若要允許新URL，管理員需要在 [serverConf.xml檔案](../../installation/using/the-server-configuration-file.md).
+可由 JavaScript 程式碼 (工作流程等等) 呼叫之預設 URL 清單有限。 若要允許新的URL，管理員必須在[serverConf.xml檔案](../../installation/using/the-server-configuration-file.md)中參照它。
 
 有三種連線保護模式：
 
-* **封鎖** ：所有不屬於允許清單的URL都會遭到封鎖，並顯示錯誤訊息。 這是升級後使用的預設模式。
-* **許可** ：允許所有不屬於允許清單的URL。
-* **警告** ：允許不在允許清單上的所有URL，但JS解譯器會發出警告，讓管理員可以收集。 此模式會新增JST-310027警告訊息。
+* **封鎖** ：所有不屬於允許清單的URL都會遭到封鎖，並出現錯誤訊息。 這是升級後使用的預設模式。
+* **允許** ：允許不屬於允許清單的所有URL。
+* **警告** ：允許不在允許清單上的所有URL，但JS解譯器會發出警告，以便管理員可以收集。 此模式會新增JST-310027警告訊息。
 
 ```
 <urlPermission action="warn" debugTrace="true">
@@ -65,11 +65,11 @@ Adobe Campaign不會限制檔案大小。 但您可以透過設定IIS/Apache來�
 
 ## 命令限制（伺服器端）
 
-封鎖清單中包含數個命令，無法使用execCommand函式執行。 專用的Unix使用者提供額外的保全性以執行外部命令。 對於託管安裝，此限制會自動套用。 對於內部部署安裝，您可以遵循中的指示，手動設定此限制 [此頁面](../../installation/using/configuring-campaign-server.md#restricting-authorized-external-commands). 此外， **[!UICONTROL Script]** 和 **[!UICONTROL External task]** 無法使用工作流程活動（新安裝的執行個體）。
+封鎖清單中包含數個命令，無法使用execCommand函式執行。 專用的Unix使用者提供額外的保全性以執行外部命令。 對於託管安裝，此限制會自動套用。 對於內部部署安裝，您可以依照[此頁面](../../installation/using/configuring-campaign-server.md#restricting-authorized-external-commands)的指示手動設定此限制。 此外，**[!UICONTROL Script]**&#x200B;和&#x200B;**[!UICONTROL External task]**&#x200B;工作流程活動不可用（新安裝的執行個體）。
 
 ## 其他設定
 
-您可以為所有頁面新增額外的HTTP標題(如需詳細資訊，請參閱 [此頁面](../../installation/using/configuring-campaign-server.md#restricting-authorized-external-commands))：
+您可以為所有頁面新增額外的HTTP標頭（如需詳細資訊，請參閱[此頁面](../../installation/using/configuring-campaign-server.md#restricting-authorized-external-commands)）：
 
 * 您可以新增一些額外的標頭，例如HSTS、X-FRAME-OPTIONS、CSP...
 * 您必須在測試環境中測試這些變數，才能將其套用於生產環境。
@@ -78,10 +78,10 @@ Adobe Campaign不會限制檔案大小。 但您可以透過設定IIS/Apache來�
   >
   >您可以新增特定標題來中斷Adobe Campaign。
 
-Adobe Campaign可讓您在 `<dbcnx .../>` 元素。 請勿使用此功能。
+Adobe Campaign可讓您在`<dbcnx .../>`元素中設定純密碼。 請勿使用此功能。
 
-依預設，Adobe Campaign不會將工作階段固定到特定IP，但您可以將其啟動以防止工作階段遭竊。 若要這麼做，請在 [serverConf.xml檔案](../../installation/using/the-server-configuration-file.md)，將checkIPConsistent屬性設為 **true** 在 `<authentication>` 節點。
+依預設，Adobe Campaign不會將工作階段固定到特定IP，但您可以將其啟動以防止工作階段遭竊。 若要這麼做，請在[serverConf.xml檔案](../../installation/using/the-server-configuration-file.md)中，將`<authentication>`節點中的checkIPConsistent屬性設定為&#x200B;**true**。
 
-依預設，Adobe Campaign的MTA不使用安全連線將內容傳送至SMTP伺服器。 您必須啟用此功能（可能會降低傳送速度）。 若要這麼做，請設定 **enableTLS** 至 **true** 在 `<smtp ...>` 節點。
+依預設，Adobe Campaign的MTA不使用安全連線將內容傳送至SMTP伺服器。 您必須啟用此功能（可能會降低傳送速度）。 若要這麼做，請在`<smtp ...>`節點中將&#x200B;**enableTLS**&#x200B;設定為&#x200B;**true**。
 
 您可以縮短驗證節點（sessionTimeOutSec屬性）中工作階段的存留期。

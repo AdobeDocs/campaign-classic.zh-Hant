@@ -27,7 +27,7 @@ ht-degree: 1%
 開始此設定前，請檢查您是否擁有：
 
 * Adobe Developer專案
-* 有效的組織ID — 若要尋找您的組織ID，請參閱 [此頁面](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255){_blank}
+* 有效的組織ID — 若要尋找您的組織ID，請參閱[此頁面](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255){_blank}
 * 開發人員對貴組織的存取權
 * Adobe Analytics中的有效觸發器設定
 
@@ -37,7 +37,7 @@ ht-degree: 1%
 
 您必須使用用於觸發器整合的Adobe Developer帳戶權杖來啟用組織。
 
-瞭解如何在中建立您的Adobe技術帳戶 [此頁面](../../integrations/using/oauth-technical-account.md). 請注意，您需要選取 **[!UICONTROL Adobe Analytics]** 新增API至Adobe Developer認證時。
+在[此頁面](../../integrations/using/oauth-technical-account.md)中瞭解如何建立您的Adobe技術帳戶。 請注意，將API新增至Adobe Developer認證時，您必須選取&#x200B;**[!UICONTROL Adobe Analytics]**。
 
 ## 步驟2：設定管道選項 {#configuring-nmspipeline}
 
@@ -45,11 +45,11 @@ ht-degree: 1%
 
 也可以使用萬用字元來設定選項，以便擷取所有觸發程式（不論名稱為何）。
 
-1. 在Adobe Campaign中，存取 **[!UICONTROL Administration]** > **[!UICONTROL Platform]**  > **[!UICONTROL Options]** 在 **[!UICONTROL Explorer]**.
+1. 在Adobe Campaign中，存取&#x200B;**[!UICONTROL Explorer]**&#x200B;中&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]**&#x200B;下的選項功能表。
 
-1. 選取 **[!UICONTROL NmsPipeline_Config]** 選項。
+1. 選取&#x200B;**[!UICONTROL NmsPipeline_Config]**&#x200B;選項。
 
-1. 在 **[!UICONTROL Value (long text)]** 欄位貼上下列JSON程式碼，這會指定兩個觸發程式。 請確定移除註解。
+1. 在&#x200B;**[!UICONTROL Value (long text)]**&#x200B;欄位中，您可以貼上下列JSON程式碼，這會指定兩個觸發程式。 請確定移除註解。
 
    ```json
    {
@@ -94,7 +94,7 @@ ht-degree: 1%
 
 管線的運作方式與供應商和消費者模型類似。 訊息僅供個別消費者使用：每位消費者各有專屬的訊息副本。
 
-此 **消費者** 引數會將執行個體識別為這些取用者之一。 執行個體的身分將呼叫管道。 您可以在「從屬端主控台」的「監督」頁面中，找到執行處理名稱。
+**Consumer**&#x200B;引數會將執行個體識別為這些使用者之一。 執行個體的身分將呼叫管道。 您可以在「從屬端主控台」的「監督」頁面中，找到執行處理名稱。
 
 管道服務會追蹤每個取用者擷取的訊息。 針對不同的執行個體使用不同的消費者，可讓您確定每個訊息都傳送至每個執行個體。
 
@@ -102,12 +102,12 @@ ht-degree: 1%
 
 若要設定管道選項，您應遵循下列建議：
 
-* 新增或編輯下的觸發程式 **[!UICONTROL Triggers]**.
+* 在&#x200B;**[!UICONTROL Triggers]**&#x200B;下新增或編輯觸發程式。
 * 請確定JSON有效。
-* 此 **名稱** 引數對應至觸發程式ID。 萬用字元「*」將接住所有觸發器。
-* 此 **消費者** 引數對應到呼叫執行個體或應用程式的名稱。
-* 此 `pipelined`處理也支援「別名」主題。
-* 您應該永遠重新啟動 `pipelined`進行變更後的程式。
+* **Name**&#x200B;引數對應到觸發程式識別碼。 萬用字元「*」將接住所有觸發器。
+* **Consumer**&#x200B;引數對應到呼叫執行個體或應用程式的名稱。
+* `pipelined`處理程式也支援「別名」主題。
+* 進行變更後，您應該一律重新啟動`pipelined`程式。
 
 ## （選用）步驟3：其他設定 {#step-optional}
 
@@ -119,24 +119,24 @@ ht-degree: 1%
 |:-:|:-:|
 | appName（舊版） | 在上傳公開金鑰的舊版Oath應用程式中註冊的OAuth應用程式的AppID。 如需關於此項目的詳細資訊，請參閱此[頁面](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md) |
 | authGatewayEndpoint（舊版） | 取得閘道權杖的URL。 預設： ```https://api.omniture.com``` |
-| authPrivateKey(Legacy) | 在舊版Oath應用程式中上傳的私密金鑰、公開部分，以XtkKey選項加密的AES： ```cryptString("PRIVATE_KEY")``` |
+| authPrivateKey(Legacy) | 私密金鑰、舊版Oath應用程式中上傳的公開部分、以XtkKey選項加密的AES： ```cryptString("PRIVATE_KEY")``` |
 | disableAuth（舊版） | 停用驗證，只有某些開發管道端點接受沒有閘道權杖的連線。 |
 | discoverPipelineEndpoint | 用於尋找要用於此租使用者的管道服務端點的URL。 預設： ```https://producer-pipeline-pnw.adobe.net``` |
-| dumpStatePeriodSec | 中的兩個內部狀態處理序傾印之間的期間 ```var/INSTANCE/pipelined.json.``` <br> 您也可以在這裡隨選存取內部狀態： ```http://INSTANCE:7781/pipelined/status``` |
+| dumpStatePeriodSec | 在```var/INSTANCE/pipelined.json.``` <br>中內部狀態處理序的兩個傾印之間的期間，也可以在此隨選存取內部狀態： ```http://INSTANCE:7781/pipelined/status``` |
 | forcedPipelineEndpoint | 停用偵測PipelineServicesEndpoint以強制執行 |
-| monitorServerPort | 管線處理將在此連線埠上接聽，以提供內部狀態處理： ```http://INSTANCE:PORT/pipelined/status```. <br>預設為7781 |
-| pointerFlushMessageCount | 處理此數量的訊息時，位移會儲存在資料庫中。 <br> 預設為1000 |
+| monitorServerPort | 管線處理序將在此連線埠上接聽，以提供內部狀態處理序： ```http://INSTANCE:PORT/pipelined/status```。 <br>預設為7781 |
+| pointerFlushMessageCount | 處理此數量的訊息時，位移會儲存在資料庫中。 <br>預設為1000 |
 | pointerFlushPeriodSec | 在此期間之後，位移會儲存在資料庫中。 <br>預設為5 （秒） |
-| processingJSThreads | 使用自訂JS聯結器處理訊息的專用執行緒數量。 <br> 預設值為4 |
-| processingThreads | 使用內建程式碼處理訊息的專用執行緒數目。 <br>預設值為4 |
+| processingJSThreads | 使用自訂JS聯結器處理訊息的專用執行緒數量。 <br>預設為4 |
+| processingThreads | 使用內建程式碼處理訊息的專用執行緒數目。 <br>預設為4 |
 | retryPeriodSec | 發生處理錯誤時重試之間的延遲。 <br>預設為30 （秒） |
 | retryValiditySec | 如果在此期間之後未成功處理訊息（重試次數過多），請捨棄訊息。 <br>預設為300 （秒） |
 
 ### 管線處理序自動啟動 {#pipelined-process-autostart}
 
-此 `pipelined` 程式需要自動啟動。
+`pipelined`處理序需要自動啟動。
 
-為此，請設定 `<`已管線`>` 元素（在設定檔案中為autostart=&quot;true&quot;）：
+為此，請將設定檔案中的`<`pipelined`>`元素設定為autostart=&quot;true&quot;：
 
 ```sql
  <pipelined autoStart="true" ... "/>
@@ -154,6 +154,6 @@ nlserver restart pipelined@instance
 
 要驗證用於布建的管道設定，請執行以下步驟：
 
-* 確定 `pipelined` 處理序正在執行。
-* 檢查 `pipelined.log` 用於管道連線記錄檔。
+* 確定`pipelined`處理序正在執行。
+* 檢查`pipelined.log`以取得管道連線記錄。
 * 驗證連線以及是否收到Ping。 託管客戶可使用使用者端主控台中的監視。

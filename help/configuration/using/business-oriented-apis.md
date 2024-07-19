@@ -18,7 +18,7 @@ Business API是每種物件型別專屬的。 它們會影響：
 
 * 傳遞：
 
-   * 建立傳遞動作，請參閱 [提交傳遞(nms：delivery)](#submitdelivery--nms-delivery-)，
+   * 建立傳遞動作，請參閱[SubmitDelivery (nms：delivery)](#submitdelivery--nms-delivery-)，
    * 傳送行銷活動（開始、暫停、停止、傳送證明）、
    * 復原傳遞記錄。
 
@@ -27,17 +27,17 @@ Business API是每種物件型別專屬的。 它們會影響：
    * 啟動工作流程，
    * 驗證流程等。
 
-     請參閱 [javascript中的SOAP方法](../../configuration/using/soap-methods-in-javascript.md).
+     請參閱JavaScript](../../configuration/using/soap-methods-in-javascript.md)中的[SOAP方法。
 
 * 內容管理
-* 訂閱管理，請參閱 [訂閱(nms：subscription)](#subscribe--nms-subscription-) 和 [取消訂閱(nms：subscription)](#unsubscribe--nms-subscription-).
+* 訂閱管理，請參閱[訂閱(nms：subscription)](#subscribe--nms-subscription-)和[取消訂閱(nms：subscription)](#unsubscribe--nms-subscription-)。
 * 資料程式：匯入、匯出。
 
 本節詳細說明了「訂閱」、「取消訂閱」和「SubmitDelivery」服務的使用。
 
 >[!IMPORTANT]
 >
->[Campaign JSAPI檔案](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hant) 包含在Adobe Campaign中SOAP呼叫和使用Javascript的其他資訊，以及應用程式中使用之所有方法和函式的完整參考。
+>[Campaign JSAPI檔案](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hant)包含有關SOAP呼叫和在Adobe Campaign中使用Javascript的其他資訊，以及應用程式中使用的所有方法和函式的完整參考。
 
 ## 訂閱(nms：subscription) {#subscribe--nms-subscription-}
 
@@ -62,7 +62,7 @@ Business API是每種物件型別專屬的。 它們會影響：
 </method>
 ```
 
-調解金鑰的定義必須透過_輸入&#x200B;**key** 上的屬性 `<recipient>` XML檔案的元素。 此屬性的內容是以逗號分隔的XPath清單。
+調解金鑰的定義必須透過XML檔案`<recipient>`專案上的_**key**&#x200B;屬性輸入。 此屬性的內容是以逗號分隔的XPath清單。
 
 此呼叫不會傳回任何資料，錯誤除外。
 
@@ -133,7 +133,7 @@ Business API是每種物件型別專屬的。 它們會影響：
 </method>
 ```
 
-調解金鑰的定義必須透過 `<recipient>` XML檔案的元素。 此屬性的內容是以逗號分隔的XPath清單。
+調解金鑰的定義必須透過XML檔案`<recipient>`專案上的_key屬性輸入。 此屬性的內容是以逗號分隔的XPath清單。
 
 如果收件者不在資料庫中，或未訂閱相關的資訊服務，則服務不會執行任何動作，也不會產生錯誤。
 
@@ -204,7 +204,7 @@ Business API是每種物件型別專屬的。 它們會影響：
 
 ### XML檔案範例 {#xml-document-example}
 
-此範例是根據來自外部資料來源（此案例中的檔案）的自訂傳遞範本。 傳遞範本中已完整說明設定，因此呼叫發生時唯一需要傳送的就是來自的檔案內容 `<externalsource>` 元素。
+此範例是根據來自外部資料來源（此案例中的檔案）的自訂傳遞範本。 此設定已在傳遞範本中完整說明，因此當呼叫發生時，僅需傳送來自`<externalsource>`元素之檔案的內容。
 
 ```
 <delivery>

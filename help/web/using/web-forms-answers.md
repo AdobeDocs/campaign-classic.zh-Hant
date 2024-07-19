@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## 回應儲存欄位 {#response-storage-fields}
 
-表單的答案可儲存在資料庫的欄位中，或暫時儲存在本機變數中。 答案的儲存模式是在欄位建立期間選擇的。 可透過進行編輯 **[!UICONTROL Edit storage...]** 連結。
+表單的答案可儲存在資料庫的欄位中，或暫時儲存在本機變數中。 答案的儲存模式是在欄位建立期間選擇的。 可透過&#x200B;**[!UICONTROL Edit storage...]**&#x200B;連結進行編輯。
 
 針對表單中的每個輸入欄位，可使用下列儲存選項：
 
@@ -25,21 +25,21 @@ ht-degree: 0%
 
 * **[!UICONTROL Edit a recipient]**
 
-  您可以選取資料庫的欄位：使用者的回答會儲存在此欄位中。 對於每個使用者，僅儲存最後輸入的值：它被新增到他們的設定檔：請參閱 [將資料儲存在資料庫中](#storing-data-in-the-database).
+  您可以選取資料庫的欄位：使用者的回答會儲存在此欄位中。 對於每個使用者，僅儲存最後輸入的值：它已新增到他們的設定檔：請參考[將資料儲存在資料庫中](#storing-data-in-the-database)。
 
 * **[!UICONTROL Variable]**
 
-  如果您不想將資訊儲存在資料庫中，可以使用變數。 區域變數可以宣告到上游。 請參閱 [將資料儲存在區域變數中](#storing-data-in-a-local-variable).
+  如果您不想將資訊儲存在資料庫中，可以使用變數。 區域變數可以宣告到上游。 請參考[將資料儲存在區域變數](#storing-data-in-a-local-variable)中。
 
 ### 將資料儲存在資料庫中 {#storing-data-in-the-database}
 
-若要將資料儲存在資料庫的現有欄位中，請按一下 **[!UICONTROL Edit expression]** 圖示並從可用欄位清單中選取它。
+若要將資料儲存在資料庫的現有欄位中，請按一下&#x200B;**[!UICONTROL Edit expression]**&#x200B;圖示，然後從可用欄位清單中選取資料。
 
 ![](assets/s_ncs_admin_survey_storage_type1.png)
 
 >[!NOTE]
 >
->預設參考檔案為 **nms：recipient** 綱要。 若要檢視表單或選擇新表單，請從清單中選取表單，然後按一下 **[!UICONTROL Properties]** 按鈕。
+>預設參考檔案是&#x200B;**nms：recipient**&#x200B;結構描述。 若要檢視表單或選擇新表單，請從清單中選取表單，然後按一下&#x200B;**[!UICONTROL Properties]**&#x200B;按鈕。
 
 ### 將資料儲存在區域變數中 {#storing-data-in-a-local-variable}
 
@@ -49,11 +49,11 @@ ht-degree: 0%
 
 ![](assets/s_ncs_admin_survey_no_storage_variable.png)
 
-儲存在變數中，建立下拉式方塊時或透過時必須選取該變數 **[!UICONTROL Edit storage...]** 連結。
+儲存在變數中，建立下拉式方塊時或透過&#x200B;**[!UICONTROL Edit storage...]**&#x200B;連結時必須選取該變數。
 
 ![](assets/s_ncs_admin_survey_no_storage_variable2.png)
 
-您可以顯示現有變數，並透過以下方式建立新變數： **[!UICONTROL Edit variables...]** 連結。 按一下 **[!UICONTROL Add]** 按鈕以建立新變數。
+您可以透過&#x200B;**[!UICONTROL Edit variables...]**&#x200B;連結顯示現有變數並建立新變數。 按一下&#x200B;**[!UICONTROL Add]**&#x200B;按鈕以建立新變數。
 
 ![](assets/s_ncs_admin_survey_add_a_variable.png)
 
@@ -61,11 +61,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->您可以為每個表單上游建立變數。 要執行此操作，請選取表單並按一下 **[!UICONTROL Properties]** 按鈕。 此 **[!UICONTROL Variables]** 索引標籤包含表單的本機變數。
+>您可以為每個表單上游建立變數。 若要這麼做，請選取表單並按一下&#x200B;**[!UICONTROL Properties]**&#x200B;按鈕。 **[!UICONTROL Variables]**&#x200B;索引標籤包含表單的本機變數。
 
-**有條件化的本機儲存範例**
+**具有條件化的本機儲存範例**
 
-在上述範例中，包含私家車相關資料的容器僅在 **[!UICONTROL Private]** 從下拉式清單中選取選項，如可見性條件中所示：
+在上述範例中，僅當從下拉式清單中選取&#x200B;**[!UICONTROL Private]**&#x200B;選項時，才會顯示包含私人車輛相關資料的容器，如可見性條件中所示：
 
 ![](assets/s_ncs_admin_survey_add_a_condition.png)
 
@@ -105,7 +105,7 @@ ht-degree: 0%
 
   >[!NOTE]
   >
-  >與其他欄位不同， `<%=` 使用逸出字元取代字元，HTML內容會依原樣儲存： `<%==` 語法。
+  >與其他以Escape字元取代`<%=`字元的欄位不同，HTML內容會使用`<%==`語法依原樣儲存。
 
 ## 儲存網路表單答案 {#saving-web-forms-answers}
 
@@ -115,9 +115,9 @@ ht-degree: 0%
 
 使用此方塊有兩種方式：
 
-* 如果透過電子郵件中傳送的連結存取Web表單，而且存取應用程式的使用者已經在資料庫中，您可以檢查 **[!UICONTROL Update the preloaded record]** 選項。 有關詳細資訊，請參閱 [透過電子郵件傳遞表單](publishing-a-web-form.md#delivering-a-form-via-email).
+* 如果透過電子郵件中傳送的連結存取網頁表單，而且存取應用程式的使用者已經在資料庫中，您可以核取&#x200B;**[!UICONTROL Update the preloaded record]**&#x200B;選項。 如需詳細資訊，請參閱[透過電子郵件傳遞表單](publishing-a-web-form.md#delivering-a-form-via-email)。
 
-  在這種情況下，Adobe Campaign會使用使用者設定檔的加密主金鑰，即Adobe Campaign指派給每個設定檔的唯一識別碼。 您需要設定要透過預先載入方塊預先載入的資訊。 有關詳細資訊，請參閱 [預先載入表單資料](publishing-a-web-form.md#pre-loading-the-form-data).
+  在這種情況下，Adobe Campaign會使用使用者設定檔的加密主金鑰，即Adobe Campaign指派給每個設定檔的唯一識別碼。 您需要設定要透過預先載入方塊預先載入的資訊。 如需詳細資訊，請參閱[預先載入表單資料](publishing-a-web-form.md#pre-loading-the-form-data)。
 
   >[!CAUTION]
   >
@@ -127,7 +127,7 @@ ht-degree: 0%
 
   ![](assets/s_ncs_admin_survey_save_box_edit.png)
 
-依預設，資料會由匯入資料庫的 **[!UICONTROL Update or insertion]** 作業：如果資料庫中存在元素，則會更新元素（例如，選取的newsletter或輸入的電子郵件地址）。 如果不存在，則會新增資訊。
+依預設，資料會透過&#x200B;**[!UICONTROL Update or insertion]**&#x200B;作業匯入資料庫：如果資料存在於資料庫中，則會更新元素（例如，選取的Newsletter或輸入的電子郵件地址）。 如果不存在，則會新增資訊。
 
 不過，您可以變更此行為。 要執行此操作，請選取元素的根目錄，然後從下拉式清單中選取要執行的操作：
 
@@ -137,6 +137,6 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->可能的操作包括： **[!UICONTROL Simple reconciliation]**， **[!UICONTROL Update or insertion]**， **[!UICONTROL Insertion]**， **[!UICONTROL Update]**， **[!UICONTROL Deletion]**.\
+>可能的操作包括： **[!UICONTROL Simple reconciliation]**、**[!UICONTROL Update or insertion]**、**[!UICONTROL Insertion]**、**[!UICONTROL Update]**、**[!UICONTROL Deletion]**。\
 >操作員的預設資料夾是操作員具有寫入許可權的第一個資料夾。\
 >請參閱[本節](../../platform/using/access-management.md)。

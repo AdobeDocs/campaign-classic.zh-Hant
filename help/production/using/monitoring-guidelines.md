@@ -17,7 +17,7 @@ ht-degree: 18%
 
 ## 執行個體監視儀表板 {#instance-monitoring-dashboard}
 
-此 **[!UICONTROL Monitoring]** 索引標籤是協助您監視執行個體的主要進入點，可從Campaign Classic首頁存取。
+可從Campaign Classic首頁存取的&#x200B;**[!UICONTROL Monitoring]**&#x200B;標籤是協助您監視執行個體的主要進入點。
 
 它提供執行個體上所發生情況的儀表板：其狀態（組建版本、已安裝套件等）、系統指標、記錄、目前正在執行的工作流程、上次傳送傳遞的狀態等。
 
@@ -56,7 +56,7 @@ ht-degree: 18%
 >
 >所有管理員使用者都可存取控制面板。 授予使用者管理員存取權限的步驟已詳載於[本頁](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hant#discover-control-panel)中。
 >
->請注意，您的執行個體必須託管於AWS上，並升級為 [最新GA版本](../../rn/using/rn-overview.md). 在[本章節](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中瞭解如何確認您的版本。 若要檢查您的執行個體是否託管在 AWS 上，請按照[本頁面](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hant)詳述的步驟操作。
+>請注意，您的執行個體必須託管在AWS上，並以[最新GA版本編號](../../rn/using/rn-overview.md)升級。 在[本章節](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中瞭解如何確認您的版本。 若要檢查您的執行個體是否託管在 AWS 上，請按照[本頁面](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hant)詳述的步驟操作。
 
 ### 監視工作流程 {#monitoring-workflows}
 
@@ -68,11 +68,11 @@ ht-degree: 18%
 
 **稽核軌跡**
 
-稽核軌跡可讓您以視覺效果呈現工作流程中所做的所有修改及其目前狀態。 [按一下這裡](../../production/using/audit-trail.md).
+稽核軌跡可讓您以視覺效果呈現工作流程中所做的所有修改及其目前狀態。 [按一下這裡](../../production/using/audit-trail.md)。
 
 **工作流程疑難排解**
 
-遇到工作流程執行問題時，可執行特定動作。 [按一下這裡](../../production/using/workflow-execution.md) 以取得詳細資訊
+遇到工作流程執行問題時，可執行特定動作。 [按一下這裡](../../production/using/workflow-execution.md)以取得詳細資訊
 
 **工作流程狀態監視**
 
@@ -94,7 +94,7 @@ SMTP報告會依網域顯示傳遞統計資料和SMTP錯誤。 [了解更多](..
 
 **最佳實務**
 
-[傳遞傳送和設計的最佳實務](../../delivery/using/delivery-best-practices.md) 可協助您改善客戶效能。
+[傳遞傳送和設計的最佳實務](../../delivery/using/delivery-best-practices.md)可協助您改善其效能。
 
 **傳遞疑難排解**
 遇到傳送問題時，可執行特定動作：
@@ -125,7 +125,7 @@ SMTP報告會依網域顯示傳遞統計資料和SMTP錯誤。 [了解更多](..
 
 *僅限內部部署和混合託管模型*
 
-若要避免在電腦上發生問題（無論是實體或系統相關問題）時遺失資料，備份是必要的。 [按一下這裡](../../production/using/backup.md) 以取得詳細資訊。 復原程式的說明請參閱 [本節](../../production/using/restoration.md).
+若要避免在電腦上發生問題（無論是實體或系統相關問題）時遺失資料，備份是必要的。 [按一下這裡](../../production/using/backup.md)以取得詳細資訊。 [本節](../../production/using/restoration.md)中說明還原程式。
 
 ## Campaign Classic技術原則 {#campaign-classic-technical-principles}
 
@@ -136,7 +136,7 @@ Campaign Classic檔案中提供技術資源。 在執行個體上執行任何技
 * [Campaign Classic託管模型](../../installation/using/hosting-models.md)
 * [託管模型功能](../../installation/using/capability-matrix.md)
 
-**伺服器設定**
+**伺服器組態**
 
 *僅限內部部署和混合託管模型*
 

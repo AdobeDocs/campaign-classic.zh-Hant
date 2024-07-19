@@ -46,7 +46,7 @@ Adobe Campaign由多個模組組成，這些模組可在多部機器上劃分。
 
 >[!NOTE]
 >
->如需各種架構的詳細資訊，請參閱 [本節](../../installation/using/general-architecture.md).
+>如需各種架構的詳細資訊，請參閱[本節](../../installation/using/general-architecture.md)。
 
 ## 開啟的連線埠清單 {#list-of-open-ports}
 

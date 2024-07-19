@@ -142,10 +142,10 @@ VACUUM (FULL, ANALYZE, VERBOSE) nmsmirrorpageinfo;
 >[!NOTE]
 >
 >* Adobe建議從較小的表格開始：如此一來，如果程式在大型表格（失敗風險最高的表格）上失敗，至少部分的維護作業已完成。
->* Adobe建議您新增資料模型專屬的表格，這些表格可能會有重大更新。 這種情況可能適用於 **NmsRecipient** 如果您的每日資料複製流程很大。
+>* Adobe建議您新增資料模型專屬的表格，這些表格可能會有重大更新。 如果您有大型的每日資料復寫流程，這可以是&#x200B;**NmsRecipient**&#x200B;的情況。
 >* VACUUM陳述式會鎖定表格，在執行維護作業時會暫停某些程式。
->* 對於非常大的表格（通常超過5 Gb），VACUUM FULL陳述式可能會變得相當低效，並需要很長的時間。 Adobe不建議將其用於 **YyynmsBroadLogXxx** 表格。
->* 此維護操作可透過Adobe Campaign工作流程實施，使用 **[!UICONTROL SQL]** 活動。 有關詳細資訊，請參閱 [本節](../../workflow/using/architecture.md). 請確定您排程進行維護作業的時間，以免與備份期間發生衝突。
+>* 對於非常大的表格（通常超過5 Gb），VACUUM FULL陳述式可能會變得相當低效，並需要很長的時間。 Adobe不建議將其用於&#x200B;**YyyyNmsBroadLogXxx**&#x200B;資料表。
+>* 此維護作業可透過Adobe Campaign工作流程，使用&#x200B;**[!UICONTROL SQL]**&#x200B;活動來實作。 如需詳細資訊，請參閱[本節](../../workflow/using/architecture.md)。 請確定您排程進行維護作業的時間，以免與備份期間發生衝突。
 >
 
 ### 重建資料庫 {#rebuilding-a-database}
@@ -153,9 +153,9 @@ VACUUM (FULL, ANALYZE, VERBOSE) nmsmirrorpageinfo;
 由於VACUUM FULL陳述式會鎖定資料表，因此無法正常生產，因此PostgreSQL不提供執行線上資料表重建的簡單方法。 這表示維護必須在未使用表格時執行。 您可以：
 
 * 當Adobe Campaign平台停止時，
-* 停止各種可能寫入正在重建之表格的Adobe Campaign子服務(**nlserver stop wfserver instance_name** 以停止工作流程程式)。
+* 停止可能寫入正在重建之資料表中的各種Adobe Campaign子服務（**nlserver停止wfserver instance_name**&#x200B;以停止工作流程程式）。
 
-以下是使用特定函式產生必要DDL的表格重組範例。 下列SQL可讓您建立兩個新函式： **GenRebuildTablePart1** 和 **GenRebuildTablePart2**，可用來產生必要的DDL以重新建立表格。
+以下是使用特定函式產生必要DDL的表格重組範例。 下列SQL可讓您建立兩個新函式： **GenRebuildTablePart1**&#x200B;和&#x200B;**GenRebuildTablePart2**，它們可用來產生必要的DDL以重新建立資料表。
 
 * 第一個函式可讓您建立工作表(**_tmp**此處)，它是原始表格的副本。
 * 然後第二個函式會刪除原始表格並重新命名工作表及其索引。
@@ -375,7 +375,7 @@ VACUUM (FULL, ANALYZE, VERBOSE) nmsmirrorpageinfo;
  $$ LANGUAGE plpgsql;
 ```
 
-以下範例可用於工作流程中，以重建所需的表格，而非使用 **真空/重建** 命令：
+下列範例可用於工作流程中，以重新建置必要的資料表，而非使用&#x200B;**vacuum/rebuild**&#x200B;命令：
 
 ```
 function sqlGetMemo(strSql)
@@ -412,24 +412,24 @@ function sqlGetMemo(strSql)
 
 >[!NOTE]
 >
->對於Microsoft SQL Server，您可以使用詳細維護計畫 [此頁面](https://ola.hallengren.com/sql-server-index-and-statistics-maintenance.html).
+>對於Microsoft SQL Server，您可以使用[此頁面](https://ola.hallengren.com/sql-server-index-and-statistics-maintenance.html)上詳述的維護計畫。
 
 以下範例與Microsoft SQL Server 2005有關。 如果您使用其他版本，請連絡資料庫管理員，瞭解維護程式。
 
 1. 首先，以具有管理員許可權的登入名稱連線至Microsoft SQL Server Management Studio。
-1. 前往 **[!UICONTROL Management > Maintenance Plans]** 資料夾，在資料夾上按一下滑鼠右鍵，然後選擇 **[!UICONTROL Maintenance Plan Wizard]**.
-1. 按一下 **[!UICONTROL Next]** 當第一頁出現時。
-1. 選取您要建立的維護計畫型別（每個作業分別排程或整個計畫的單一排程），然後按一下 **[!UICONTROL Change...]** 按鈕。
-1. 在 **[!UICONTROL Job schedule properties]** 視窗，選取所需的執行設定並按一下 **[!UICONTROL OK]**，然後按一下 **[!UICONTROL Next]**.
-1. 選取您要執行的維護工作，然後按一下 **[!UICONTROL Next]**.
+1. 移至&#x200B;**[!UICONTROL Management > Maintenance Plans]**&#x200B;資料夾，用滑鼠右鍵按一下資料夾，然後選擇&#x200B;**[!UICONTROL Maintenance Plan Wizard]**。
+1. 當第一頁出現時，按一下&#x200B;**[!UICONTROL Next]**。
+1. 選取您要建立的維護計畫型別（每個任務各自排程或整個計畫的單一排程），然後按一下&#x200B;**[!UICONTROL Change...]**&#x200B;按鈕。
+1. 在&#x200B;**[!UICONTROL Job schedule properties]**&#x200B;視窗中，選取所需的執行設定並按一下&#x200B;**[!UICONTROL OK]**，然後按一下&#x200B;**[!UICONTROL Next]**。
+1. 選取您要執行的維護工作，然後按一下&#x200B;**[!UICONTROL Next]**。
 
    >[!NOTE]
    >
    >建議您至少執行下列維護任務。 您也可以選取統計資料更新工作，儘管該工作已由資料庫清理工作流程執行。
 
-1. 在下拉式清單中，選取要在其上執行 **[!UICONTROL Database Check Integrity]** 任務。
-1. 選取資料庫並按一下 **[!UICONTROL OK]**，然後按一下 **[!UICONTROL Next]**.
-1. 設定配置給資料庫的大小上限，然後按一下 **[!UICONTROL Next]**.
+1. 在下拉式清單中，選取要執行&#x200B;**[!UICONTROL Database Check Integrity]**&#x200B;工作的資料庫。
+1. 選取資料庫並按一下&#x200B;**[!UICONTROL OK]**，然後按一下&#x200B;**[!UICONTROL Next]**。
+1. 設定配置給資料庫的大小上限，然後按一下&#x200B;**[!UICONTROL Next]**。
 
    >[!NOTE]
    >
@@ -439,7 +439,7 @@ function sqlGetMemo(strSql)
 
    * 如果索引片段率介於10%到40%之間，建議進行重組。
 
-     選擇要重新組織的資料庫和物件（表格或檢視表），然後按一下 **[!UICONTROL Next]**.
+     選擇要重新組織的資料庫和物件（資料表或檢視表），然後按一下&#x200B;**[!UICONTROL Next]**。
 
      >[!NOTE]
      >
@@ -447,22 +447,22 @@ function sqlGetMemo(strSql)
 
    * 如果索引片段率高於40%，建議重新建置。
 
-     選取要套用至索引重建工作的選項，然後按一下 **[!UICONTROL Next]**.
+     選取要套用至索引重建工作的選項，然後按一下&#x200B;**[!UICONTROL Next]**。
 
      >[!NOTE]
      >
-     >重新建立索引程式在處理器使用方面更受限制，而且會鎖定資料庫資源。 選取 **[!UICONTROL Keep index online while reindexing]** 選項。
+     >重新建立索引程式在處理器使用方面更受限制，而且會鎖定資料庫資源。 若要讓索引在重建期間可用，請選取&#x200B;**[!UICONTROL Keep index online while reindexing]**&#x200B;選項。
 
-1. 選取您要在活動報表中顯示的選項，然後按一下 **[!UICONTROL Next]**.
-1. 檢查為維護計畫設定的任務清單，然後按一下 **[!UICONTROL Finish]**.
+1. 選取您要顯示在活動報告中的選項，然後按一下&#x200B;**[!UICONTROL Next]**。
+1. 檢查針對維護計畫設定的工作清單，然後按一下&#x200B;**[!UICONTROL Finish]**。
 
    此時會顯示維護計畫摘要及其各個步驟的狀態。
 
-1. 維護計畫完成後，請按一下 **[!UICONTROL Close]**.
-1. 在Microsoft SQL Server Explorer中，按兩下 **[!UICONTROL Management > Maintenance Plans]** 資料夾。
+1. 維護計畫完成後，請按一下&#x200B;**[!UICONTROL Close]**。
+1. 在Microsoft SQL Server Explorer中，連按兩下&#x200B;**[!UICONTROL Management > Maintenance Plans]**&#x200B;資料夾。
 1. 選取Adobe Campaign維護計畫：工作流程中會詳細說明各種步驟。
 
-   請注意，物件已建立於 **[!UICONTROL SQL Server Agent > Jobs]** 資料夾。 此物件可讓您啟動維護計畫。 在我們的範例中，只有一個物件，因為所有維護任務都是相同計畫的一部分。
+   請注意，已在&#x200B;**[!UICONTROL SQL Server Agent > Jobs]**&#x200B;資料夾中建立物件。 此物件可讓您啟動維護計畫。 在我們的範例中，只有一個物件，因為所有維護任務都是相同計畫的一部分。
 
    >[!IMPORTANT]
    >
@@ -474,7 +474,7 @@ function sqlGetMemo(strSql)
 >
 >此設定是選用的。
 
-此 **WdbcOptions_TempDbName** 選項可讓您為Microsoft SQL Server上的工作表格設定個別的資料庫。 如此可最佳化備份與復寫。
+**WdbcOptions_TempDbName**&#x200B;選項可讓您為Microsoft SQL Server上的工作表格設定個別的資料庫。 如此可最佳化備份與復寫。
 
 如果您要在其他資料庫中建立工作表格（例如，執行工作流程期間建立的表格），可以使用此選項。
 

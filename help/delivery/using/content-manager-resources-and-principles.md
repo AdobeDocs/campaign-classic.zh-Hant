@@ -26,11 +26,11 @@ ht-degree: 4%
 
 內容設定需要下列資源：
 
-* 資料結構描述： XML內容結構的說明。 有關詳細資訊，請參閱 [資料結構描述](data-schemas.md).
-* 資料輸入表單：建構資料輸入畫面。 有關詳細資訊，請參閱 [輸入表單](input-forms.md).
-* 影像：資料輸入表單中使用的影像。 有關詳細資訊，請參閱 [影像管理](formatting.md#image-management).
-* 樣式表：使用XSLT語言格式化輸出檔案。 有關詳細資訊，請參閱 [格式化](formatting.md).
-* JavaScript範本：使用JavaScript語言格式化輸出檔案。 有關詳細資訊，請參閱 [發佈範本](publication-templates.md).
-* JavaScript程式碼：資料彙總的JavaScript程式碼。 有關詳細資訊，請參閱 [彙總](publication-templates.md#aggregator).
-* 發佈範本：發佈範本的定義。 有關詳細資訊，請參閱 [發佈範本](publication-templates.md).
-* 內容：要建立和發佈的內容例項。 有關詳細資訊，請參閱 [使用內容範本](using-a-content-template.md).
+* 資料結構描述： XML內容結構的說明。 如需詳細資訊，請參閱[資料結構描述](data-schemas.md)。
+* 資料輸入表單：建構資料輸入畫面。 如需詳細資訊，請參閱[輸入表單](input-forms.md)。
+* 影像：資料輸入表單中使用的影像。 如需詳細資訊，請參閱[影像管理](formatting.md#image-management)。
+* 樣式表：使用XSLT語言格式化輸出檔案。 如需詳細資訊，請參閱[格式](formatting.md)。
+* JavaScript範本：使用JavaScript語言格式化輸出檔案。 如需詳細資訊，請參閱[出版物範本](publication-templates.md)。
+* JavaScript程式碼：資料彙總的JavaScript程式碼。 如需詳細資訊，請參閱[彙總](publication-templates.md#aggregator)。
+* 發佈範本：發佈範本的定義。 如需詳細資訊，請參閱[出版物範本](publication-templates.md)。
+* 內容：要建立和發佈的內容例項。 如需詳細資訊，請參閱[使用內容範本](using-a-content-template.md)。

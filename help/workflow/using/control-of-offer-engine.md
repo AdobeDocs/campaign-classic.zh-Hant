@@ -16,7 +16,7 @@ ht-degree: 3%
 
 
 
-以下詳述的工作流程會隨 **透過執行例項控制優惠方案引擎** 模組（預設）。
+依預設，下面詳細描述的工作流程會與具有執行執行個體&#x200B;**模組的**&#x200B;優惠方案引擎控制項一起安裝。
 
 <table> 
  <tbody> 
@@ -26,7 +26,7 @@ ht-degree: 3%
    <td> <strong>說明</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">主張同步</span> <br /> </td> 
+   <td> <span class="uicontrol">主張同步處理</span> <br /> </td> 
    <td> <span class="uicontrol">propositionSynch</span> <br /> </td> 
    <td> 此工作流程會在行銷執行個體與用於互動的執行執行個體之間同步建議。<br /> </td> 
   </tr> 

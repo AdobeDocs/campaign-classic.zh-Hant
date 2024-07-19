@@ -33,11 +33,11 @@ ht-degree: 5%
 
 ## 說明 {#description-1}
 
-此 `<compute-string>` 元素可讓您根據XTK運算式產生字串，以根據數個值在介面中顯示「建置」標籤。
+`<compute-string>`元素可讓您根據XTK運算式產生字串，以根據數個值在介面中顯示「建置」標籤。
 
 ## 使用與使用內容 {#use-and-context-of-use-1}
 
-當否 `<compute-string>` 已定義， `<compute-string>` 在預設情況下，會使用架構中主索引鍵的值輸入元素。
+未定義`<compute-string>`時，預設會使用結構描述中主索引鍵的值輸入`<compute-string>`元素。
 
 ## 屬性說明 {#attribute-description-1}
 

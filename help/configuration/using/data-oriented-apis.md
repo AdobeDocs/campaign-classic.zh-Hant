@@ -30,7 +30,7 @@ XML檔案儲存在資料庫的MEMO型別欄位中。
 
 您必須熟悉Adobe Campaign資料模型，才能在指令碼中處理資料庫的欄位。
 
-如需資料模型的簡報，請參閱 [Adobe Campaign資料模型說明](../../configuration/using/data-model-description.md).
+如需資料模型的簡報，請參閱[Adobe Campaign資料模型說明](../../configuration/using/data-model-description.md)。
 
 ## 查詢與寫入器 {#query-and-writer}
 
@@ -44,19 +44,19 @@ XML檔案儲存在資料庫的MEMO型別欄位中。
 
 這可讓您隔離基礎SQL。 查詢語言不取決於基礎引擎：某些函式將會重新對應，可能會產生數個SELECT SQL順序。
 
-有關詳細資訊，請參閱 [結構描述「xtk：queryDef」的「ExecuteQuery」方法範例](../../configuration/using/web-service-calls.md#example-on-the--executequery--method-of-schema--xtk-querydef-).
+如需詳細資訊，請參閱結構描述&#39;xtk：queryDef&#39;](../../configuration/using/web-service-calls.md#example-on-the--executequery--method-of-schema--xtk-querydef-)的&#39;ExecuteQuery&#39;方法的[範例。
 
-此 **Executequery** 方法顯示於 [ExecuteQuery (xtk：queryDef)](#executequery--xtk-querydef-).
+**ExecuteQuery**&#x200B;方法出現在[ExecuteQuery (xtk：queryDef)](#executequery--xtk-querydef-)中。
 
 ### 寫入 {#write}
 
 「寫入」指令可讓您撰寫簡單或複雜的檔案，其專案位於基底的一或多個表格中。
 
-異動API可讓您透過 **updateOrInsert** command：一個指令可讓您建立或更新資料。 您也可以配置修改合併(**合併**)：此作業模式可讓您授權部分更新。
+異動API可讓您透過&#x200B;**updateOrInsert**&#x200B;命令管理調節：一個命令可讓您建立或更新資料。 您也可以設定修改合併（**合併**）：此作業模式可讓您授權部分更新。
 
 XML結構提供資料的邏輯檢視，可讓您略過SQL表格的實體結構。
 
-Write方法顯示於 [寫入/寫入集合(xtk：session)](#write---writecollection--xtk-session-).
+Write方法以[Write / WriteCollection (xtk：session)](#write---writecollection--xtk-session-)顯示。
 
 ## ExecuteQuery (xtk：queryDef) {#executequery--xtk-querydef-}
 
@@ -110,9 +110,9 @@ Write方法顯示於 [寫入/寫入集合(xtk：session)](#write---writecollecti
 </queryDef>
 ```
 
-子查詢( `<subquery>`  )可在「 」中定義  `<condition> `  元素。 的語法   `<subquery> `   元素是根據    `<querydef>`.
+可以在`<condition> `元素中定義子查詢( `<subquery>` )。 的語法   `<subquery> `   元素是根據    `<querydef>`。
 
-範例 `<subquery>  : </subquery>`
+`<subquery>  : </subquery>`的範例
 
 ```
 <condition setOperator="NOT IN" expr="@id" enabledIf="$(/ignored/@ownerType)=1">
@@ -128,16 +128,16 @@ Write方法顯示於 [寫入/寫入集合(xtk：session)](#write---writecollecti
   
 ```
 
-查詢必須參考以下位置的開始結構描述： **綱要** 屬性。
+查詢必須參照&#x200B;**結構描述**&#x200B;屬性的開始結構描述。
 
-所需的作業型別輸入於 **操作** 屬性並包含下列其中一個值：
+所需的作業型別輸入於&#x200B;**operation**&#x200B;屬性中，且包含下列其中一個值：
 
-* **get**：從表格擷取記錄，如果資料不存在，則傳回錯誤，
-* **getIfExists**：從表格擷取記錄，如果資料不存在，則傳回空白檔案，
-* **選取**：建立游標以傳回數筆記錄，如果沒有資料，則會傳回空白檔案，
+* **get**：從資料表中擷取記錄，如果資料不存在，則傳回錯誤，
+* **getIfExists**：從資料表中擷取記錄，如果資料不存在，則傳回空白檔案。
+* **選取**：建立游標以傳回數筆記錄，如果沒有資料，則傳回空白檔案。
 * **count**：傳回資料計數。
 
-此 **XPath** 語法是根據輸入結構來尋找資料。 如需XPath的詳細資訊，請參閱 [資料結構描述](../../configuration/using/data-schemas.md).
+**XPath**&#x200B;語法是用來根據輸入結構描述來尋找資料。 如需XPath的詳細資訊，請參閱[資料結構描述](../../configuration/using/data-schemas.md)。
 
 #### 具有&#39;get&#39;操作的範例 {#example-with-the--get--operation}
 
@@ -185,7 +185,7 @@ Write方法顯示於 [寫入/寫入集合(xtk：session)](#write---writecollecti
 
 運算式可以是簡單欄位或複雜運算式，例如算術運算或字串串連結。
 
-若要限制要傳回的記錄數，請新增 **行數** 屬性至 `<querydef>` 元素。
+若要限制要傳回的記錄數，請將&#x200B;**lineCount**&#x200B;屬性新增至`<querydef>`元素。
 
 若要將查詢傳回的記錄數限製為100：
 
@@ -194,7 +194,7 @@ Write方法顯示於 [寫入/寫入集合(xtk：session)](#write---writecollecti
 ...
 ```
 
-若要擷取接下來的100筆記錄，請再次執行相同的查詢，新增 **startLine** 屬性。
+若要擷取接下來的100筆記錄，請再次執行相同的查詢，新增&#x200B;**startLine**&#x200B;屬性。
 
 ```
 <queryDef schema="nms:recipient" operation="select" lineCount="100" startLine="100">
@@ -216,7 +216,7 @@ Write方法顯示於 [寫入/寫入集合(xtk：session)](#write---writecollecti
 
 >[!NOTE]
 >
->我們再次使用上一個範例的條件。 此 `<select>` 不會使用及子句。 `</select>`
+>我們再次使用上一個範例的條件。 未使用`<select>`和子句。`</select>`
 
 #### 資料分組 {#data-grouping}
 
@@ -242,7 +242,7 @@ Write方法顯示於 [寫入/寫入集合(xtk：session)](#write---writecollecti
 </queryDef>
 ```
 
-可透過新增以下專案來簡化查詢 **groupBy** 要分組的欄位直接使用的屬性：
+您可以將&#x200B;**groupBy**&#x200B;屬性直接新增至要分組的欄位，以簡化查詢：
 
 ```
 <select>
@@ -252,7 +252,7 @@ Write方法顯示於 [寫入/寫入集合(xtk：session)](#write---writecollecti
 
 >[!NOTE]
 >
->不再需要填入 `<groupby>` 元素。
+>不再需要填入`<groupby>`元素。
 
 #### 在條件中括住 {#bracketing-in-conditions}
 
@@ -266,7 +266,7 @@ Write方法顯示於 [寫入/寫入集合(xtk：session)](#write---writecollecti
   </where>
   ```
 
-* 具的結構化版本 `<condition>` 元素：
+* 包含`<condition>`個元素的結構化版本：
 
   ```
   <where>
@@ -317,7 +317,7 @@ Write方法顯示於 [寫入/寫入集合(xtk：session)](#write---writecollecti
   </select>
   ```
 
-* 集合連結(1N)：對集合表格的欄位進行篩選必須透過 **存在** 或 **不存在** 運運算元。
+* 集合連結(1N)：集合資料表的欄位篩選必須透過&#x200B;**EXISTS**&#x200B;或&#x200B;**NOT EXISTS**&#x200B;運運算元執行。
 
   若要篩選已訂閱「電子報」資訊服務的收件者：
 
@@ -329,7 +329,7 @@ Write方法顯示於 [寫入/寫入集合(xtk：session)](#write---writecollecti
   </where>
   ```
 
-  從直接擷取集合連結的欄位 `<select>` 不建議使用子句，因為查詢會傳回基數產品。 僅當連結的表格僅包含一個記錄時才使用(範例 `<node expr="">`)。
+  不建議從`<select>`子句直接擷取集合連結的欄位，因為查詢會傳回基數產品。 僅當連結的資料表只包含一個記錄（範例`<node expr="">`）時才使用。
 
   「訂閱」集合連結範例：
 
@@ -339,9 +339,9 @@ Write方法顯示於 [寫入/寫入集合(xtk：session)](#write---writecollecti
   </select>
   ```
 
-  您可以擷取子清單，其中包含集合連結中的元素 `<select>` 子句。 參考欄位的XPath與收集元素相關。
+  可以在`<select>`子句中擷取包含集合連結專案的子清單。 參考欄位的XPath與收集元素相關。
 
-  篩選( `<orderby>`  )和限制(  `<where>`  )元素，以新增至收集元素。
+  篩選( `<orderby>` )和限制( `<where>` )元素可以新增至集合元素。
 
   在此範例中，對於每個收件者，查詢會傳回收件者訂閱的電子郵件和資訊服務清單：
 
@@ -369,7 +369,7 @@ Write方法顯示於 [寫入/寫入集合(xtk：session)](#write---writecollecti
 
 引數的繫結可讓引擎設定查詢中使用的引數值。 這非常有用，因為引擎負責逸出值，而且快取還有一個好處，就是可以擷取引數。
 
-當建構查詢時，「界限」值會以字元(？ 在ODBC中， `#[index]#` SQL查詢內文中的)。
+當建構查詢時，「界限」值會以字元(？ 在ODBC中，在SQL查詢主體中的`#[index]#` postgres...)。
 
 ```
 <select>
@@ -388,7 +388,7 @@ Write方法顯示於 [寫入/寫入集合(xtk：session)](#write---writecollecti
 
 #### 查詢建立秘訣： {#query-building-tip-}
 
-若要協助處理查詢的語法，您可以在Adobe Campaign使用者端主控台中使用一般查詢編輯器來撰寫查詢( **[!UICONTROL Tools/ Generic query editor...]** 功能表)。 操作步驟：
+若要協助處理查詢的語法，您可以使用Adobe Campaign使用者端主控台（ **[!UICONTROL Tools/ Generic query editor...]**&#x200B;功能表）中的一般查詢編輯器來撰寫查詢。 操作步驟：
 
 1. 選取要擷取的資料：
 
@@ -431,7 +431,7 @@ return引數是XML檔案，採用與查詢相關聯的結構描述格式。
 
 #### 別名 {#alias}
 
-別名可讓您修改輸出檔案中資料的位置。 此 **別名** 屬性必須在對應欄位上指定XPath。
+別名可讓您修改輸出檔案中資料的位置。 **別名**&#x200B;屬性必須在對應欄位上指定XPath。
 
 ```
 <queryDef schema="nms:recipient" operation="get">
@@ -532,17 +532,17 @@ return引數是XML檔案，採用與查詢相關聯的結構描述格式。
 
 資料協調會根據在關聯結構描述中輸入的索引鍵定義來運作。 寫入程式會根據輸入檔案中輸入的資料，尋找第一個符合條件的索引鍵。 會根據實體在資料庫中的存在性來插入或更新實體。
 
-要更新之實體結構描述的索引鍵是根據 **xtkschema** 屬性。
+要更新之實體的結構描述索引鍵是根據&#x200B;**xtkschema**&#x200B;屬性完成的。
 
-因此，調解金鑰可以透過以下方式強制： **_key** 包含組成索引鍵的XPath清單的屬性（以逗號分隔）。
+因此，調解金鑰可以使用&#x200B;**_key**&#x200B;屬性來強制，該屬性包含構成金鑰的XPath清單（以逗號分隔）。
 
-您可以填入 **操作(_O)** 屬性值之間的關聯：
+可以使用下列值填入&#x200B;**_operation**&#x200B;屬性，以強制使用作業型別：
 
-* **插入**：強制插入記錄（不使用調解金鑰），
+* **insert**：強制插入記錄（未使用調解金鑰），
 * **insertOrUpdate**：根據調解金鑰（預設模式）更新或插入記錄，
-* **更新**：更新記錄；如果資料不存在，則不執行任何操作，
+* **更新**：更新記錄；如果資料不存在，
 * **刪除**：刪除記錄，
-* **無**：僅用於連結協調，不更新或插入。
+* **none**：僅用於連結調解，不更新或插入。
 
 ### &#39;Write&#39;方法的範例 {#example-with-the--write--method}
 
@@ -590,7 +590,7 @@ return引數是XML檔案，採用與查詢相關聯的結構描述格式。
 
 可以在連結的元素上輸入「_key」和「_operation」屬性。 此元素的行為與輸入結構描述的主要元素相同。
 
-主要實體(「nms：recipient」)的索引鍵定義由連結表格（元素）中的欄位組成 `<folder>`  結構描述「xtk：folder」)和電子郵件。
+主要實體(&quot;nms：recipient&quot;)的索引鍵定義包含連結表格（元素`<folder>`結構描述&quot;xtk：folder&quot;）和電子郵件的欄位。
 
 >[!NOTE]
 >
@@ -620,7 +620,7 @@ return引數是XML檔案，採用與查詢相關聯的結構描述格式。
 
 >[!NOTE]
 >
->索引鍵的定義未輸入於 `<rcpgroup>` 元素，因為根據群組名稱的隱含索引鍵定義於「nms：group」結構描述中。
+>`<rcpgroup>`元素中未輸入索引鍵的定義，因為「nms：group」結構描述中已定義以群組名稱為基礎的隱含索引鍵。
 
 ### XML集合元素 {#xml-collection-elements}
 

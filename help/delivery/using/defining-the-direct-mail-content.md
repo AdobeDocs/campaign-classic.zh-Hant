@@ -17,13 +17,13 @@ ht-degree: 10%
 
 ## 擷取檔案 {#extraction-file}
 
-包含已擷取資料的檔案名稱會定義於 **[!UICONTROL File]** 欄位。 欄位右側的按鈕可讓您使用個人化欄位來建立檔案名稱。
+在&#x200B;**[!UICONTROL File]**&#x200B;欄位中定義了包含已擷取資料的檔案名稱。 欄位右側的按鈕可讓您使用個人化欄位來建立檔案名稱。
 
-依照預設，擷取檔案會建立並儲存在伺服器上。 您可以將它儲存在電腦上。 要執行此操作，請核取 **[!UICONTROL Download the generated file after the analysis of the delivery]**. 在此情況下，您需要指出本機儲存目錄的存取路徑以及檔案名稱。
+依照預設，擷取檔案會建立並儲存在伺服器上。 您可以將它儲存在電腦上。 若要這麼做，請核取&#x200B;**[!UICONTROL Download the generated file after the analysis of the delivery]**。 在此情況下，您需要指出本機儲存目錄的存取路徑以及檔案名稱。
 
 ![](assets/s_ncs_user_mail_delivery_local_file.png)
 
-對於直接郵件傳送，擷取的內容定義於 **[!UICONTROL Edit the extraction file format...]** 連結。
+對於直接郵件傳遞，擷取的內容定義在&#x200B;**[!UICONTROL Edit the extraction file format...]**&#x200B;連結中。
 
 ![](assets/s_ncs_user_mail_delivery_format_link.png)
 
@@ -35,4 +35,4 @@ ht-degree: 10%
 
 >[!NOTE]
 >
->此精靈包含匯出精靈的步驟，詳見 [快速入門](../../platform/using/executing-export-jobs.md) 區段。
+>此精靈包含匯出精靈的步驟，在[快速入門](../../platform/using/executing-export-jobs.md)區段中詳細說明。

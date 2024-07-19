@@ -18,7 +18,7 @@ ht-degree: 2%
 
 
 
-一旦您的 [訊息範本](../../message-center/using/creating-the-message-template.md) 準備就緒，請按照以下步驟進行預覽和測試。
+在您的[訊息範本](../../message-center/using/creating-the-message-template.md)準備就緒後，請依照下列步驟預覽並測試。
 
 ## 管理異動訊息中的種子地址 {#managing-seed-addresses-in-transactional-messages}
 
@@ -26,7 +26,7 @@ ht-degree: 2%
 
 若要在交易式訊息中建立種子地址，請執行以下步驟：
 
-1. 在交易式訊息範本中，按一下 **[!UICONTROL Seed addresses]** 標籤。
+1. 在交易式訊息範本中，按一下&#x200B;**[!UICONTROL Seed addresses]**&#x200B;標籤。
 
    ![](assets/messagecenter_create_seedaddr_001.png)
 
@@ -42,12 +42,12 @@ ht-degree: 2%
 
    ![](assets/messagecenter_create_seedaddr_003bis.png)
 
-1. 插入測試資料(請參閱 [個人化資料](#personalization-data))。
+1. 插入測試資料(請參閱[Personalization資料](#personalization-data))。
 
    ![](assets/messagecenter_create_custo_001.png)
 
    <!--## Creating several seed addresses {#creating-several-seed-addresses}-->
-1. 按一下 **[!UICONTROL Add other seed addresses]** 連結，然後按一下 **[!UICONTROL Add]** 按鈕。
+1. 按一下&#x200B;**[!UICONTROL Add other seed addresses]**&#x200B;連結，然後按一下&#x200B;**[!UICONTROL Add]**&#x200B;按鈕。
 
    ![](assets/messagecenter_create_seedaddr_004.png)
 
@@ -56,21 +56,21 @@ ht-degree: 2%
 
    ![](assets/messagecenter_create_seedaddr_008.png)
 
-地址建立後，您就可以顯示其預覽和個人化。 請參閱 [異動訊息預覽](#transactional-message-preview).
+地址建立後，您就可以顯示其預覽和個人化。 請參閱[異動訊息預覽](#transactional-message-preview)。
 
 ## 個人化資料 {#personalization-data}
 
-您可在訊息範本中使用資料，以測試異動訊息個人化。 此功能用於產生預覽或傳送校樣。 您也可以為不同的網際網路存取提供者顯示訊息的呈現。 有關詳細資訊，請參閱 [收件匣轉譯](../../delivery/using/inbox-rendering.md).
+您可在訊息範本中使用資料，以測試異動訊息個人化。 此功能用於產生預覽或傳送校樣。 您也可以為不同的網際網路存取提供者顯示訊息的呈現。 如需詳細資訊，請參閱[收件匣轉譯](../../delivery/using/inbox-rendering.md)。
 
 此資料的用途是在訊息最終傳送之前測試訊息。 這些訊息與要處理的實際資料不一致。 但是，XML結構必須與執行例項中儲存之事件的結構相同，如下所示：
 
 ![](assets/messagecenter_create_custo_006.png)
 
-此資訊可讓您使用個人化標籤來個人化訊息內容(如需詳細資訊，請參閱 [建立訊息內容](../../message-center/using/creating-the-message-template.md#creating-message-content))。
+此資訊可讓您使用個人化標籤來個人化訊息內容（如需詳細資訊，請參閱[建立訊息內容](../../message-center/using/creating-the-message-template.md#creating-message-content)）。
 
 1. 選取異動訊息範本。
 
-1. 在範本中，按一下 **[!UICONTROL Seed addresses]** 標籤。
+1. 在範本中，按一下「**[!UICONTROL Seed addresses]**」標籤。
 
 1. 在事件內容中，以XML格式輸入測試資訊。
 
@@ -82,11 +82,11 @@ ht-degree: 2%
 
 建立一或多個種子地址和訊息本文後，您可以預覽訊息並檢查其個人化。
 
-1. 在訊息範本中，按一下 **[!UICONTROL Preview]** 標籤。
+1. 在訊息範本中，按一下&#x200B;**[!UICONTROL Preview]**&#x200B;標籤。
 
    ![](assets/messagecenter_preview_001.png)
 
-1. 選取 **[!UICONTROL A seed address]** ，位於下拉式清單中。
+1. 在下拉式清單中選取&#x200B;**[!UICONTROL A seed address]**。
 
    ![](assets/messagecenter_preview_002.png)
 
@@ -94,20 +94,20 @@ ht-degree: 2%
 
    ![](assets/messagecenter_create_seedaddr_009.png)
 
-使用種子地址，您還可以為各種網際網路存取提供者顯示訊息的呈現。 有關詳細資訊，請參閱 [收件匣轉譯](../../delivery/using/inbox-rendering.md).
+使用種子地址，您還可以為各種網際網路存取提供者顯示訊息的呈現。 如需詳細資訊，請參閱[收件匣轉譯](../../delivery/using/inbox-rendering.md)。
 
 ## 傳送證明 {#sending-a-proof}
 
 您可以傳送證明至先前建立的種子地址，以測試訊息傳送。
 
-傳送證明的過程與傳送證明的過程相同 [定期傳遞](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof). 然而，使用交易式訊息時，您需要預先執行下列操作：
+傳送證明的程式與[一般傳遞](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)的程式相同。 然而，使用交易式訊息時，您需要預先執行下列操作：
 
-* 建立一或多個 [種子地址](#managing-seed-addresses-in-transactional-messages) 替換為 [個人化資料](#personalization-data).
-* [建立訊息內容](../../message-center/using/creating-the-message-template.md#creating-message-content).
+* 使用[個人化資料](#personalization-data)建立一或多個[種子地址](#managing-seed-addresses-in-transactional-messages)。
+* [建立訊息內容](../../message-center/using/creating-the-message-template.md#creating-message-content)。
 
 若要傳送證明：
 
-1. 按一下 **[!UICONTROL Send a proof]** 「交貨」視窗中的按鈕。
+1. 按一下傳遞視窗中的&#x200B;**[!UICONTROL Send a proof]**&#x200B;按鈕。
 1. 分析傳遞。
 1. 更正任何錯誤並確認傳遞。
 
@@ -117,8 +117,8 @@ ht-degree: 2%
 
    ![](assets/messagecenter_send_proof_002.png)
 
-可透過以下方式存取每個範本中的校樣 **[!UICONTROL Audit]** 標籤。 如需詳細資訊，請參閱 [傳送證明](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
+可透過&#x200B;**[!UICONTROL Audit]**&#x200B;索引標籤在每個範本中存取校樣。 如需詳細資訊，請參閱[傳送證明](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)。
 
 ![](assets/messagecenter_send_proof_003.png)
 
-您的訊息範本現已準備就緒 [已發佈](../../message-center/using/publishing-message-templates.md).
+您的訊息範本現在已準備好進行[發佈](../../message-center/using/publishing-message-templates.md)。

@@ -24,14 +24,14 @@ ht-degree: 15%
 >
 >此功能僅可線上上顯示，且僅供傳遞管理員檢視。
 
-* 在選件層級的 **[!UICONTROL Edit]** 標籤，按一下 **[!UICONTROL Propositions]**.
+* 在選件層級的&#x200B;**[!UICONTROL Edit]**&#x200B;索引標籤中，按一下&#x200B;**[!UICONTROL Propositions]**。
 
   ![](assets/offer_followup_006.png)
 
-* 在收件者的設定檔中，按一下 **[!UICONTROL Propositions]** 標籤。
+* 在收件者的設定檔中，按一下「**[!UICONTROL Propositions]**」標籤。
 
   ![](assets/offer_followup_002.png)
 
-* 在選件空間層級，按一下 **[!UICONTROL Propositions]** 標籤。
+* 在優惠方案空間層級，按一下&#x200B;**[!UICONTROL Propositions]**&#x200B;標籤。
 
   ![](assets/offer_space_prop_001_b.png)

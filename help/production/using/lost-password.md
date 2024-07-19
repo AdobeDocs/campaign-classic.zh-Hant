@@ -33,13 +33,13 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->此程式僅適用於使用原生驗證連線至Campaign的運運算元。 如需Adobe IMS驗證的相關資訊，請參閱 [本檔案](https://helpx.adobe.com/ie/manage-account/using/change-or-reset-password.html){target="_blank"}.
+>此程式僅適用於使用原生驗證連線至Campaign的運運算元。 若為Adobe IMS驗證，請參閱[此檔案](https://helpx.adobe.com/ie/manage-account/using/change-or-reset-password.html){target="_blank"}。
 
 若要重設Campaign密碼，請遵循下列步驟：
 
 1. 透過具有管理員許可權的操作者連線。
 1. 以滑鼠右鍵按一下運運算元。
-1. 選取 **[!UICONTROL Actions]** > **[!UICONTROL Reset password]**.
+1. 選取&#x200B;**[!UICONTROL Actions]** > **[!UICONTROL Reset password]**。
 
    ![](assets/operator-passwd.png)
 
@@ -55,16 +55,16 @@ ht-degree: 3%
 
 要執行此操作，請套用下列程式：
 
-1. 編輯 **/usr/local/neolane/nl6/conf/serverConf.xml** 檔案。
+1. 編輯&#x200B;**/usr/local/neolane/nl6/conf/serverConf.xml**&#x200B;檔案。
 
-1. 前往 **internalPassword** 行。
+1. 移至&#x200B;**internalPassword**&#x200B;行。
 
    ```xml
    <!-- XTK authentication mode internalPassword : Password of internal account -->
    <xtk internalPassword="myPassword"/>
    ```
 
-1. 刪除引號中的字串，在此案例中為： `myPassword`. 您會看到下列文字行：
+1. 刪除引號中的字串，在此案例中為： `myPassword`。 您會看到下列文字行：
 
    ```xml
    <!-- XTK authentication mode internalPassword : Password of internal account -->
@@ -73,7 +73,7 @@ ht-degree: 3%
 
 1. 儲存變更並關閉檔案。
 
-1. 停止 `nlserver` 程式。
+1. 停止`nlserver`處理序。
 
 1. 設定新密碼。 要執行此操作，請輸入下列命令：
 
@@ -87,6 +87,6 @@ ht-degree: 3%
    Confirmation 
    ```
 
-1. 開始 `nlserver` 程式。
+1. 啟動`nlserver`處理序。
 
-1. 您現在可以使用新密碼進行連線 **內部** 模式。
+1. 您現在可以使用新密碼以&#x200B;**內部**&#x200B;模式連線。

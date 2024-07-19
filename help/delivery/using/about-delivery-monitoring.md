@@ -45,7 +45,7 @@ ht-degree: 11%
 
 當訊息無法傳送至設定檔時，遠端伺服器會自動傳送錯誤訊息，此錯誤訊息會由Adobe Campaign平台擷取，並限定為隔離電子郵件地址或電話號碼。
 
-[瞭解傳送失敗](understanding-delivery-failures.md) 是協助您改善行銷活動的關鍵步驟。
+[瞭解傳遞失敗](understanding-delivery-failures.md)是協助您改善行銷活動的關鍵步驟。
 
 <img src="assets/do-not-localize/icon_quarantine.svg" width="60px">
 
@@ -53,4 +53,4 @@ ht-degree: 11%
 
 Adobe Campaign 管理隔離地址清單。在執行傳遞分析時，預設情況下將不會向被隔離的收件者的電郵地址傳送內容。
 
-在 [本節](understanding-quarantine-management.md)，您會找到有關如何識別和管理隔離地址的資訊，並深入瞭解將地址傳送到隔離區的條件。
+在[本節](understanding-quarantine-management.md)中，您將找到如何識別和管理隔離地址的資訊，並深入瞭解將地址傳送到隔離區的條件。

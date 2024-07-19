@@ -15,9 +15,9 @@ ht-degree: 2%
 
 
 
-在Adobe Campaign中 **[!UICONTROL Audit trail]** 可讓您存取執行個體中所做變更的完整歷史記錄。
+在Adobe Campaign中，**[!UICONTROL Audit trail]**&#x200B;可讓您存取執行個體中所做變更的完整歷史記錄。
 
-**[!UICONTROL Audit trail]** 即時擷取在Adobe Campaign例項中發生之動作和事件的完整清單。 功能包括自助式存取歷史資料記錄，以協助回答下列問題：您的工作流程發生什麼事、上次更新者是誰，或您的使用者在執行個體中做了什麼。
+**[!UICONTROL Audit trail]**&#x200B;可以即時擷取Adobe Campaign執行個體中發生之動作和事件的完整清單。 功能包括自助式存取歷史資料記錄，以協助回答下列問題：您的工作流程發生什麼事、上次更新者是誰，或您的使用者在執行個體中做了什麼。
 
 >[!NOTE]
 >
@@ -26,11 +26,11 @@ ht-degree: 2%
 
 稽核軌跡包含三個元件：
 
-* **結構描述稽核軌跡**：檢查活動和對結構描述所做的最後修改。
+* **結構描述稽核軌跡**：檢查您的結構描述的活動和上次修改。
 
-  如需結構描述的詳細資訊，請參閱本節 [頁面](../../configuration/using/data-schemas.md).
+  如需結構描述的詳細資訊，請參閱此[頁面](../../configuration/using/data-schemas.md)。
 
-* **工作流程稽核軌跡**：檢查活動和對工作流程進行的最後修改，另外檢查工作流程的狀態，例如：
+* **工作流程稽核軌跡**：檢查工作流程的活動和上次所做的修改，以及工作流程的狀態，例如：
 
    * 開始
    * 暫停
@@ -41,30 +41,30 @@ ht-degree: 2%
    * 立即喚醒等於動作執行擱置中的工作
    * 無條件停止
 
-  如需工作流程的詳細資訊，請參閱本 [頁面](../../workflow/using/about-workflows.md).
+  如需工作流程的詳細資訊，請參閱此[頁面](../../workflow/using/about-workflows.md)。
 
-  如需如何監視工作流程的詳細資訊，請參閱 [專用區段](../../workflow/using/monitoring-workflow-execution.md).
+  如需如何監視工作流程的詳細資訊，請參閱[專屬區段](../../workflow/using/monitoring-workflow-execution.md)。
 
-* **選項稽核軌跡**：檢查活動及對選項進行的最後修改。
+* **選項稽核軌跡**：檢查您的選項的活動和上次所做的修改。
 
-  如需選項的詳細資訊，請參閱本節 [頁面](../../installation/using/configuring-campaign-options.md).
+  如需選項的詳細資訊，請參閱此[頁面](../../installation/using/configuring-campaign-options.md)。
 
 ## 存取稽核軌跡 {#accessing-audit-trail}
 
-若要存取執行個體的 **[!UICONTROL Audit trail]** ：
+若要存取執行個體的&#x200B;**[!UICONTROL Audit trail]**：
 
-1. 存取 **[!UICONTROL Explorer]** 執行個體的功能表。
-1. 在 **[!UICONTROL Administration]** 功能表，選取 **[!UICONTROL Audit]** .
+1. 存取執行個體的&#x200B;**[!UICONTROL Explorer]**&#x200B;功能表。
+1. 在「**[!UICONTROL Administration]**」功能表下，選取「**[!UICONTROL Audit]**」。
 
    ![](assets/audit_trail_1.png)
 
-1. 此 **[!UICONTROL Audit trail]** 視窗會開啟，其中含有您的實體清單。 Adobe Campaign將稽核工作流程、選項和結構的建立、編輯和刪除動作。
+1. **[!UICONTROL Audit trail]**&#x200B;視窗會開啟，其中包含您的實體清單。 Adobe Campaign將稽核工作流程、選項和結構的建立、編輯和刪除動作。
 
    選取其中一個實體以深入瞭解最後的修改。
 
    ![](assets/audit_trail_2.png)
 
-1. 此 **[!UICONTROL Audit entity]** 視窗會提供所選實體的詳細資訊，例如：
+1. **[!UICONTROL Audit entity]**&#x200B;視窗會提供您所選實體的詳細資訊，例如：
 
    * **[!UICONTROL Type]** ：工作流程、選項或結構描述。
    * **[!UICONTROL Entity]** ：活動的內部名稱。
@@ -78,7 +78,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->根據預設，保留期間設為180天 **[!UICONTROL Audit logs]** . 若要瞭解如何變更保留期的詳細資訊，請參閱本 [頁面](../../production/using/database-cleanup-workflow.md#deployment-wizard).
+>根據預設，**[!UICONTROL Audit logs]**&#x200B;的保留期間設為180天。 若要瞭解如何變更保留期的詳細資訊，請參閱此[頁面](../../production/using/database-cleanup-workflow.md#deployment-wizard)。
 
 ## 啟用/停用稽核軌跡 {#enable-disable-audit-trail}
 
@@ -86,8 +86,8 @@ ht-degree: 2%
 
 若要這麼做：
 
-1. 存取 **[!UICONTROL Explorer]** 執行個體的功能表。
-1. 在 **[!UICONTROL Administration]** 功能表，選取 **[!UICONTROL Platform]** 則 **[!UICONTROL Options]** .
+1. 存取執行個體的&#x200B;**[!UICONTROL Explorer]**&#x200B;功能表。
+1. 在&#x200B;**[!UICONTROL Administration]**&#x200B;功能表下，依序選取&#x200B;**[!UICONTROL Platform]**&#x200B;及&#x200B;**[!UICONTROL Options]**。
 
    ![](assets/audit_trail_4.png)
 
@@ -95,13 +95,13 @@ ht-degree: 2%
 
    * 針對工作流程： **[!UICONTROL XtkAudit_Workflows]**
    * 針對結構描述： **[!UICONTROL XtkAudit_DataSchema]**
-   * 若為選項： **[!UICONTROL XtkAudit_Option]**
-   * 對於每個實體： **[!UICONTROL XtkAudit_Enable_All]**
+   * 選項： **[!UICONTROL XtkAudit_Option]**
+   * 針對每個實體： **[!UICONTROL XtkAudit_Enable_All]**
 
    ![](assets/audit_trail_5.png)
 
-1. 變更 **[!UICONTROL Value]** 設為1 （如果要啟用實體）或0 （如果要停用）。
+1. 如果要啟用實體，請將&#x200B;**[!UICONTROL Value]**&#x200B;變更為1；如果要停用實體，請變更為0。
 
    ![](assets/audit_trail_6.png)
 
-1. 按一下 **[!UICONTROL Save]** .
+1. 按一下「**[!UICONTROL Save]**」。

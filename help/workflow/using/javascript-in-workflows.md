@@ -15,25 +15,25 @@ ht-degree: 3%
 
 
 
-以下範例說明如何在工作流程中使用JavaScript程式碼：
+這些範例說明如何在工作流程中使用JavaScript程式碼：
 
 * [寫入資料庫](#write-example)
 * [查詢資料庫](#read-example)
 * [使用靜態SOAP方法觸發工作流程](#trigger-example)
 * [使用非靜態SOAP方法與資料庫互動](#interact-example)
 
-[瞭解更多](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html) 關於靜態和非靜態SOAP方法。
+[進一步瞭解](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html)靜態和非靜態SOAP方法。
 
-在這些範例中，會使用ECMAScript for XML (E4X)擴充功能。 透過此擴充功能，您可以在相同的指令碼中合併JavaScript呼叫和XML原始專案。
+在這些範例中，會使用ECMAScript for XML (E4X)擴充功能。 透過此擴充功能，您可以在相同指令碼中合併JavaScript呼叫和XML原始專案。
 
 若要嘗試這些範例，請依照下列步驟進行：
 
 1. 建立工作流程並將這些活動新增至工作流程：
    1. 開始活動
-   1. javascript程式碼活動
+   1. JavaScript程式碼活動
    1. 結束活動
 
-   [瞭解更多](building-a-workflow.md) 建立工作流程的相關資訊。
+   [進一步瞭解](building-a-workflow.md)建置工作流程。
 
 1. 將JavaScript程式碼新增至活動。 [了解更多](advanced-parameters.md)。
 1. 儲存工作流程。
@@ -43,16 +43,16 @@ ht-degree: 3%
 
 ## 範例1：寫入資料庫{#write-example}
 
-若要寫入資料庫，您可以使用靜態 `Write` 上的方法 `xtk:session` 綱要：
+若要寫入資料庫，您可以在`xtk:session`結構描述上使用靜態`Write`方法：
 
 1. 以XML撰寫寫入要求。
 
 1. 寫入記錄：
 
-   1. 呼叫 `Write` 上的方法 `xtk:session` 綱要。
+   1. 呼叫`xtk:session`結構描述上的`Write`方法。
 
       >[!IMPORTANT]
-      > 如果您使用Adobe Campaign v8，我們建議您搭配 **內嵌** 和 **資料更新/刪除** 的API `Write` Snowflake表中的方法。 [深入了解](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html){target="_blank"}.
+      > 如果您使用Adobe Campaign v8，建議您針對Snowflake表格中的`Write`方法，搭配&#x200B;**擷取**&#x200B;和&#x200B;**資料更新/刪除** API使用預備機制。 [深入了解](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html){target="_blank"}.
 
    1. 傳遞XML程式碼作為寫入要求的引數。
 
@@ -62,7 +62,7 @@ ht-degree: 3%
 
 #### 插入記錄
 
-因為 `insert` 操作是預設的操作，您不需要指定它。
+由於`insert`作業是預設作業，因此您不需要指定它。
 
 將此資訊指定為XML屬性：
 
@@ -80,7 +80,7 @@ var myXML = <recipient xtkschema="nms:recipient"
 
 #### 更新記錄
 
-使用 `_update` 作業。 [了解更多](../../configuration/using/data-oriented-apis.md)。
+使用`_update`作業。 [了解更多](../../configuration/using/data-oriented-apis.md)。
 
 將此資訊指定為XML屬性：
 
@@ -100,12 +100,12 @@ var myXML = <recipient xtkschema="nms:recipient"
 
 #### 刪除記錄
 
-使用 `DeleteCollection` 方法。 [了解更多](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-DeleteCollection.html)。
+使用`DeleteCollection`方法。 [了解更多](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-DeleteCollection.html)。
 
 指定此資訊：
 
 * 要修改之資料表的綱要
-* 此 `where` 以XML元素的形式識別要更新的記錄所需的子句
+* 以XML元素的形式識別要更新的記錄所需的`where`子句
 
 例如：
 
@@ -121,7 +121,7 @@ xtk.session.DeleteCollection(
 
 ### 步驟2：寫入記錄
 
-呼叫非靜態 `Write` 上的方法 `xtk:session` 綱要：
+呼叫`xtk:session`結構描述上的非靜態`Write`方法：
 
 ```javascript
 xtk.session.Write(myXML)
@@ -145,7 +145,7 @@ xtk.session.Write(myXML)
 
 ## 範例2：查詢資料庫{#read-example}
 
-若要查詢資料庫，您可以使用非靜態 `xtk:queryDef` 執行個體方法：
+若要查詢資料庫，您可以使用非靜態`xtk:queryDef`執行個體方法：
 
 1. 以XML撰寫查詢。
 1. 建立查詢物件。
@@ -153,7 +153,7 @@ xtk.session.Write(myXML)
 
 ### 步驟1：撰寫查詢
 
-指定的XML程式碼 `queryDef` 實體。
+指定`queryDef`實體的XML程式碼。
 
 語法：
 
@@ -167,9 +167,9 @@ xtk.session.Write(myXML)
 
 * 要讀取之資料表的綱要
 * 作業
-* 要傳回的欄，在 `select` 子句
-* 條件，在 `where` 子句
-* 篩選條件，在 `orderBy` 子句
+* 在`select`子句中要傳回的資料行
+* `where`子句中的條件
+* `orderBy`子句中的篩選准則
 
 您可以使用下列操作：
 
@@ -178,11 +178,11 @@ xtk.session.Write(myXML)
 | `select` | 零個或多個元素會傳回為集合。 |
 | `getIfExists` | 傳回一個元素。 如果不存在相符元素，則會傳回空白元素。 |
 | `get` | 傳回一個元素。 如果不存在相符元素，則會傳回錯誤。 |
-| `count` | 以元素形式傳回的相符記錄數帶有 `count` 屬性。 |
+| `count` | 以具有`count`屬性的元素形式傳回的相符記錄數目。 |
 
-撰寫 `select`， `where`、和 `orderBy` 子句作為XML元素：
+將`select`、`where`和`orderBy`子句寫入為XML專案：
 
-* `select` 子句
+* `select`子句
 
   指定要傳回的欄。 例如，若要選取人員的名字和姓氏，請撰寫此程式碼：
 
@@ -193,15 +193,15 @@ xtk.session.Write(myXML)
   </select>
   ```
 
-  使用 `nms:recipient` 結構描述，元素會以下列形式傳回：
+  使用`nms:recipient`結構描述時，元素會以下列形式傳回：
 
   ```xml
   <recipient firstName="Bo" lastName="Didley"/>
   ```
 
-* `where` 子句
+* `where`子句
 
-  若要指定條件，請使用 `where` 子句。 例如，若要選取位於 **培訓** 資料夾中，您可以撰寫此程式碼：
+  若要指定條件，請使用`where`子句。 例如，若要選取位於&#x200B;**Training**&#x200B;資料夾中的記錄，您可以撰寫此程式碼：
 
   ```xml
   <where>
@@ -216,9 +216,9 @@ xtk.session.Write(myXML)
   <condition expr="@lastName='Garcia'"/>
   ```
 
-* `orderBy` 子句
+* `orderBy`子句
 
-  若要排序結果集，請指定 `orderBy` 子句做為具有 `sortDesc` 屬性。 例如，若要以遞增順序排序姓氏，您可以編寫此程式碼：
+  若要排序結果集，請將`orderBy`子句指定為具有`sortDesc`屬性的XML專案。 例如，若要以遞增順序排序姓氏，您可以編寫此程式碼：
 
   ```xml
   <orderBy>
@@ -228,7 +228,7 @@ xtk.session.Write(myXML)
 
 ### 步驟2：建立查詢物件
 
-若要從XML程式碼建立實體，請使用 `create(`*`content`*`)` 方法：
+若要從XML程式碼建立實體，請使用`create(`*`content`*`)`方法：
 
 ```javascript
 var query = xtk.queryDef.create(
@@ -237,26 +237,26 @@ var query = xtk.queryDef.create(
     </queryDef>)
 ```
 
-前置詞 `create(`*`content`*`)` 具有要建立之實體的結構描述的方法。
+為`create(`*`content`*`)`方法加上要建立之實體的結構描述。
 
-此 *`content`* 引數是字串引數，是選用專案。 此引數包含描述實體的XML程式碼。
+*`content`*&#x200B;引數為字串引數，是選用專案。 此引數包含描述實體的XML程式碼。
 
 ### 步驟3：執行查詢
 
 請依照下列步驟操作：
 
-1. 呼叫 `ExecuteQuery` 上的方法 `queryDef` 實體：
+1. 呼叫`queryDef`實體上的`ExecuteQuery`方法：
 
    ```javascript
    var res = query.ExecuteQuery()
    ```
 
 1. 處理結果：
-   1. 反複檢視的結果 `select` 作業，使用回圈建構。
-   1. 使用測試結果 `getIfExists` 作業。
-   1. 計算結果，使用 `count` 作業。
+   1. 使用回圈建構反複處理`select`作業的結果。
+   1. 使用`getIfExists`作業測試結果。
+   1. 使用`count`作業計算結果。
 
-#### 的結果 `select` 操作
+#### `select`作業的結果
 
 所有相符專案都會傳回為集合：
 
@@ -267,16 +267,16 @@ var query = xtk.queryDef.create(
 </recipient-collection>
 ```
 
-若要反複檢查結果，請使用 `for each` 回圈：
+若要反複檢查結果，請使用`for each`回圈：
 
 ```javascript
 for each (var rcp in res:recipient)
     logInfo(rcp.@email)
 ```
 
-回圈包含本機收件者變數。 對於收件者集合中傳回的每個收件者，都會列印出收件者的電子郵件。 [瞭解更多](https://experienceleague.adobe.com/developer/campaign-api/api/f-logInfo.html) 關於 `logInfo` 函式。
+回圈包含本機收件者變數。 對於收件者集合中傳回的每個收件者，都會列印出收件者的電子郵件。 [深入瞭解](https://experienceleague.adobe.com/developer/campaign-api/api/f-logInfo.html)有關`logInfo`函式的資訊。
 
-#### 的結果 `getIfExists` 操作
+#### `getIfExists`作業的結果
 
 每個相符專案都會傳回為元素：
 
@@ -290,7 +290,7 @@ for each (var rcp in res:recipient)
 <recipient/>
 ```
 
-您可以參照主鍵節點，例如 `@id` 屬性：
+您可以參照主索引鍵節點，例如`@id`屬性：
 
 ```javascript
 if (res.@id !=undefined)
@@ -299,7 +299,7 @@ if (res.@id !=undefined)
     }
 ```
 
-#### 的結果 `get` 操作
+#### `get`作業的結果
 
 會傳回一個相符專案作為元素：
 
@@ -311,17 +311,17 @@ if (res.@id !=undefined)
 
 >[!TIP]
 >
->如果您知道有相符專案，請使用 `get` 作業。 否則，請使用 `getIfExists` 作業。 如果您使用此最佳實務，則錯誤會顯示非預期的問題。 如果您使用 `get` 操作，請勿使用 `try…catch` 陳述式。 問題由工作流程的錯誤處理程式處理。
+>如果您知道有相符專案，請使用`get`作業。 否則，請使用`getIfExists`作業。 如果您使用此最佳實務，則錯誤會顯示非預期的問題。 如果您使用`get`作業，請勿使用`try…catch`陳述式。 問題由工作流程的錯誤處理程式處理。
 
-#### 的結果 `count` 操作
+#### `count`作業的結果
 
-具有下列專案的元素 `count` 屬性會傳回：
+傳回具有`count`屬性的專案：
 
 ```xml
 <recipient count="200">
 ```
 
-若要使用結果，請參閱 `@count` 屬性：
+若要使用結果，請參考`@count`屬性：
 
 ```javascript
 if (res.@count > 0)
@@ -330,7 +330,7 @@ if (res.@count > 0)
     }
 ```
 
-對於 `select` 作業，將此程式碼新增至工作流程中的JavaScript程式碼活動：
+針對`select`作業，將此程式碼新增至工作流程中的JavaScript程式碼活動：
 
 ```javascript
 var myXML =
@@ -349,7 +349,7 @@ for each (var rcp in res.recipient)
     logInfo(rcp.@firstName + " " + rcp.@lastName)
 ```
 
-因為 `select` 操作是預設的操作，您不需要指定它。
+由於`select`作業是預設作業，因此您不需要指定它。
 
 此影片說明如何從資料庫讀取：
 >[!VIDEO](https://video.tv.adobe.com/v/18475/?learn=on)
@@ -360,23 +360,23 @@ for each (var rcp in res.recipient)
 
 工作流程觸發可透過使用事件來運作。 您可以對事件使用這些功能：
 
-* 若要張貼事件，您可使用靜態 `PostEvent` 方法。 [了解更多](https://experienceleague.adobe.com/developer/campaign-api/api/sm-workflow-PostEvent.html)。
-* 若要接收事件，您可以使用 **[!UICONTROL External signal]** 活動。 [了解更多](external-signal.md)。
+* 若要張貼事件，您可以使用靜態`PostEvent`方法。 [了解更多](https://experienceleague.adobe.com/developer/campaign-api/api/sm-workflow-PostEvent.html)。
+* 若要接收事件，您可以使用&#x200B;**[!UICONTROL External signal]**&#x200B;活動。 [了解更多](external-signal.md)。
 
 您可以透過不同方式觸發工作流程：
 
-* 您可以內嵌觸發工作流程，也就是說，從的主指令碼 **[!UICONTROL JavaScript code]** 活動。
+* 您可以內嵌觸發工作流程，亦即從&#x200B;**[!UICONTROL JavaScript code]**&#x200B;活動的主要指令碼觸發。
 * 另一個工作流程完成後，您可以觸發此工作流程：
-   * 將初始化指令碼新增至 **[!UICONTROL End]** 初始工作流程的活動。
-   * 新增 **[!UICONTROL External signal]** 目標工作流程開始時的活動。
+   * 新增初始化指令碼至初始工作流程的&#x200B;**[!UICONTROL End]**&#x200B;活動。
+   * 在目標工作流程的開頭新增&#x200B;**[!UICONTROL External signal]**&#x200B;活動。
 
      完成初始工作流程後，事件就會發佈。 會啟動傳出轉變並填入事件變數。 然後，目標工作流程會接收事件。
 
      >[!TIP]
      >
-     >最佳做法是，將指令碼新增至活動時，請以雙連字型大小將活動名稱括住，例如 `-- end --`. [瞭解更多](workflow-best-practices.md) 關於工作流程最佳實務。
+     >最佳實務是，當您新增指令碼至活動時，請以雙連字型大小將活動名稱括住，例如`-- end --`。 [進一步瞭解](workflow-best-practices.md)工作流程最佳實務。
 
-的語法 `PostEvent` 方法：
+`PostEvent`方法的語法：
 
 ```javascript
 PostEvent(
@@ -388,7 +388,7 @@ PostEvent(
 )
 ```
 
-在此範例中，完成工作流程後，會將簡短文字傳送至 **訊號** 的活動 **wkfExampleReceiver** 工作流程：
+在此範例中，工作流程完成後，會將簡短文字傳遞至&#x200B;**wkfExampleReceiver**&#x200B;工作流程的&#x200B;**訊號**&#x200B;活動：
 
 ```javascript
 var strLabel = "Adobe Campaign, Marketing that delivers"
@@ -400,13 +400,13 @@ xtk.workflow.PostEvent(
     false)
 ```
 
-因為最後一個引數設定為 `false`，則 **wkfExampleReceiver** 每次完成初始工作流程時都會觸發工作流程。
+因為最後一個引數設定為`false`，所以每次完成初始工作流程時，都會觸發&#x200B;**wkfExampleReceiver**&#x200B;工作流程。
 
 觸發工作流程時，請牢記以下原則：
 
-* 此 `PostEvent` 命令會以非同步方式執行。 命令會放置在伺服器佇列中。 方法會在事件發佈後傳回。
+* `PostEvent`命令以非同步方式執行。 命令會放置在伺服器佇列中。 方法會在事件發佈後傳回。
 * 必須啟動目標工作流程。 否則，錯誤會寫入記錄檔。
-* 如果目標工作流程已暫停，則 `PostEvent` 命令會排入佇列，直到工作流程恢復為止。
+* 如果目標工作流程已暫停，則會將`PostEvent`命令排入佇列，直到工作流程恢復為止。
 * 觸發的活動不需要進行中的任務。
 
 本影片說明如何使用靜態API方法：
@@ -419,22 +419,22 @@ xtk.workflow.PostEvent(
 
 這些範例顯示如何執行下列動作：
 
-* 使用 `get` 和 `create` 使用非靜態SOAP方法的結構描述方法
+* 在結構描述上使用`get`和`create`方法，以使用非靜態SOAP方法
 * 建立執行SQL查詢的方法
-* 使用 `write` 插入、更新和刪除記錄的方法
+* 使用`write`方法插入、更新和刪除記錄
 
 請依照下列步驟操作：
 
 1. 定義查詢：
 
-   * 使用擷取實體 `create` 對應架構上的方法，例如 `xtk:workflow` 綱要。 [了解更多](https://experienceleague.adobe.com/developer/campaign-api/api/f-create.html)。
-   * 使用 `queryDef` 發出SQL查詢的方法。
+   * 使用對應結構描述上的`create`方法擷取實體，例如`xtk:workflow`結構描述。 [了解更多](https://experienceleague.adobe.com/developer/campaign-api/api/f-create.html)。
+   * 使用`queryDef`方法發出SQL查詢。
 
-1. 使用執行查詢 `ExecuteQuery` 方法。 [了解更多](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-ExecuteQuery.html)。
+1. 使用`ExecuteQuery`方法執行查詢。 [了解更多](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-ExecuteQuery.html)。
 
-   使用 `for each` 回圈以擷取結果。
+   使用`for each`回圈來擷取結果。
 
-### 的語法 `queryDef` 具有的方法 `select` 子句
+### 具有`select`子句的`queryDef`方法語法
 
 ```xml
 <queryDef schema="schema_key" operation="operation_type">
@@ -461,11 +461,11 @@ xtk.workflow.PostEvent(
 </queryDef>
 ```
 
-### `Create` 方法
+### `Create`方法
 
 #### 範例1：選取記錄並寫入分錄
 
-位於「 」的工作流程的內部名稱 **wfExamples** 已選取資料夾。 結果會依內部名稱以遞增順序排序，並寫入日誌。
+已選取位於&#x200B;**wfExamples**&#x200B;資料夾的工作流程的內部名稱。 結果會依內部名稱以遞增順序排序，並寫入日誌。
 
 ```javascript
 var query = xtk.queryDef.create(
@@ -489,7 +489,7 @@ for each (var w in res.workflow)
 
 #### 範例2：刪除記錄
 
-系統會選取名為Chris Smith之所有收件者的名字、姓氏、電子郵件及ID。 結果會依電子郵件遞增順序排序，並寫入日誌。 A `delete` 作業用於刪除選取的記錄。
+系統會選取名為Chris Smith之所有收件者的名字、姓氏、電子郵件及ID。 結果會依電子郵件遞增順序排序，並寫入日誌。 使用`delete`作業來刪除選取的記錄。
 
 ```javascript
 // Build the query, create a query object and hold the object in a variable
@@ -525,7 +525,7 @@ for each (var rec in res.recipient)
 
 #### 範例3：選取記錄並寫入分錄
 
-在此範例中，使用非靜態方法。 其資訊儲存在中的所有收件者的電子郵件和出生年份 **1234** 資料夾及其電子郵件網域名稱以「adobe」開頭會被選取。 結果會依出生日期遞減排序。 收件者的電子郵件會寫入日誌。
+在此範例中，使用非靜態方法。 已選取其資訊儲存在&#x200B;**1234**&#x200B;資料夾且其電子郵件網域名稱以「adobe」開頭的所有收件者的電子郵件和出生年份。 結果會依出生日期遞減排序。 收件者的電子郵件會寫入日誌。
 
 ```javascript
 var query = xtk.queryDef.create(
@@ -550,19 +550,19 @@ for each (var w in res.recipient)
     logInfo(w.@email)
 ```
 
-### `Write` 方法
+### `Write`方法
 
-您可以插入、更新和刪除記錄。 您可以使用 `Write` Adobe Campaign中任何結構描述的方法。 由於此方法為靜態方法，因此您不需要建立物件。 您可以使用下列操作：
+您可以插入、更新和刪除記錄。 您可以在Adobe Campaign中的任何結構描述上使用`Write`方法。 由於此方法為靜態方法，因此您不需要建立物件。 您可以使用下列操作：
 
-* 此 `update` 操作
-* 此 `insertOrUpdate` 作業，使用 `_key` 識別要更新之記錄的引數
+* `update`作業
+* `insertOrUpdate`作業，具有`_key`引數以識別要更新的記錄
 
-  如果您不指定 **收件者** 資料夾中，如果存在相符專案，則會更新任何子資料夾中的記錄。 否則，該記錄將在根中建立 **收件者** 資料夾。
+  若您未指定&#x200B;**收件者**&#x200B;資料夾，則如果有相符專案，該記錄會更新到任何子資料夾中。 否則，會在根&#x200B;**收件者**&#x200B;資料夾中建立記錄。
 
-* 此 `delete` 操作
+* `delete`作業
 
 >[!IMPORTANT]
-> 如果您使用Adobe Campaign v8，我們建議您搭配 **內嵌** 和 **資料更新/刪除** 的API `Write` Snowflake表中的方法。 [深入了解](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html){target="_blank"}.
+> 如果您使用Adobe Campaign v8，建議您針對Snowflake表格中的`Write`方法，搭配&#x200B;**擷取**&#x200B;和&#x200B;**資料更新/刪除** API使用預備機制。 [深入了解](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html){target="_blank"}.
 
 #### 範例1：插入或更新記錄
 
@@ -616,11 +616,11 @@ xtk.session.Write(
 
 ### API檔案
 
-* [SOAP呼叫範例](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html)
+* [個SOAP呼叫範例](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html)
 * 方法：
    * [建立](https://experienceleague.adobe.com/developer/campaign-api/api/f-create.html)
    * [DeleteCollection](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-DeleteCollection.html)
-   * [Executequery](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-ExecuteQuery.html)
+   * [ExecuteQuery](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-ExecuteQuery.html)
    * [PostEvent](https://experienceleague.adobe.com/developer/campaign-api/api/sm-workflow-PostEvent.html)
    * [寫入](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-Write.html)
 * [logInfo函式](https://experienceleague.adobe.com/developer/campaign-api/api/f-logInfo.html)

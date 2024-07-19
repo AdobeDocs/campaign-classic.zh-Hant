@@ -15,18 +15,18 @@ ht-degree: 1%
 
 # 建立種子地址{#creating-seed-addresses}
 
-種子地址不是透過標準設定檔和目標進行管理，而是在Adobe Campaign階層的專用節點中進行管理 **[!UICONTROL Resources > Campaign management > Seed addresses]**.
+種子位址不是透過標準設定檔和目標來管理，而是在Adobe Campaign階層&#x200B;**[!UICONTROL Resources > Campaign management > Seed addresses]**&#x200B;的專用節點中管理。
 
-您可以建立子資料夾以組織種子地址。 若要這麼做，請用滑鼠右鍵按一下 **[!UICONTROL Seed addresses]** 節點並選取 **[!UICONTROL Create a new 'Seed addresses' folder]**. 為子資料夾命名，然後按下 **[!UICONTROL Enter]** 以進行驗證。 您現在可以建立種子地址或將其複製到此子資料夾。 有關詳細資訊，請參閱 [定義地址](#defining-addresses).
+您可以建立子資料夾以組織種子地址。 若要這麼做，請用滑鼠右鍵按一下&#x200B;**[!UICONTROL Seed addresses]**&#x200B;節點並選取&#x200B;**[!UICONTROL Create a new 'Seed addresses' folder]**。 為子資料夾命名，然後按&#x200B;**[!UICONTROL Enter]**&#x200B;進行驗證。 您現在可以建立種子地址或將其複製到此子資料夾。 如需詳細資訊，請參閱[定義地址](#defining-addresses)。
 
-Adobe Campaign也可讓您建立種子地址範本，這些範本會匯入至傳遞或行銷活動中，並根據相關傳遞和行銷活動的特定需求進行調整。 請參閱 [建立種子地址範本](#creating-seed-address-templates).
+Adobe Campaign也可讓您建立種子地址範本，這些範本會匯入至傳遞或行銷活動中，並根據相關傳遞和行銷活動的特定需求進行調整。 請參閱[建立種子地址範本](#creating-seed-address-templates)。
 
 ## 定義地址 {#defining-addresses}
 
 若要建立種子地址，請遵循下列步驟：
 
-1. 按一下 **[!UICONTROL New]** 按鈕來標籤種子地址。
-1. 在的相符欄位中，輸入連結至地址的資料 **[!UICONTROL Recipient]** 標籤。 可用欄位與傳送收件者（nms：recipient表格）之設定檔中的標準欄位相對應：名稱、名字、電子郵件等。
+1. 按一下種子地址清單上方的&#x200B;**[!UICONTROL New]**&#x200B;按鈕。
+1. 從&#x200B;**[!UICONTROL Recipient]**&#x200B;索引標籤的相符欄位中，輸入連結到位址的資料。 可用欄位與傳送收件者（nms：recipient表格）之設定檔中的標準欄位相對應：名稱、名字、電子郵件等。
 
    >[!NOTE]
    >
@@ -36,13 +36,13 @@ Adobe Campaign也可讓您建立種子地址範本，這些範本會匯入至傳
 
    ![](assets/s_ncs_user_seedlist_new_address.png)
 
-1. 在 **[!UICONTROL Address fields]** 索引標籤中，輸入將在分析階段期間插入傳送記錄中的值(在 **[!UICONTROL nms:broadLog]** 表格)。
+1. 在&#x200B;**[!UICONTROL Address fields]**&#x200B;索引標籤中，輸入將在分析階段（在&#x200B;**[!UICONTROL nms:broadLog]**&#x200B;表格中）插入傳遞記錄中的值。
 
-1. 在 **[!UICONTROL Additional data]** 標籤，輸入在資料管理工作流程中建立且您想要指派特定值的傳遞所使用的個人化資料。
+1. 在&#x200B;**[!UICONTROL Additional data]**&#x200B;索引標籤中，輸入用於資料管理工作流程中所建立傳遞的個人化資料，以及您想要指派特定值的對象。
 
    >[!NOTE]
    >
-   >請確定已在中定義其他目標資料，且別名開頭為&#39;@&#39;。 **[!UICONTROL Enrichment]** 活動。 否則，您將無法在傳送活動中正確搭配種子地址使用。
+   >請確定已在&#x200B;**[!UICONTROL Enrichment]**&#x200B;活動中定義其他目標資料，且別名開頭為&#39;@&#39;。 否則，您將無法在傳送活動中正確搭配種子地址使用。
 
 ## 建立種子地址範本 {#creating-seed-address-templates}
 
@@ -50,12 +50,12 @@ Adobe Campaign也可讓您建立種子地址範本，這些範本會匯入至傳
 
 若要定義範本資料夾，請套用下列程式：
 
-1. 建立新的 **[!UICONTROL Seed addresses]** 輸入資料夾，在資料夾上按一下滑鼠右鍵，然後選取 **[!UICONTROL Properties...]**.
+1. 建立新的&#x200B;**[!UICONTROL Seed addresses]**&#x200B;型別資料夾，在資料夾上按一下滑鼠右鍵，然後選取&#x200B;**[!UICONTROL Properties...]**。
 
    ![](assets/s_ncs_user_seedlist_template_folder.png)
 
-1. 按一下 **[!UICONTROL Restriction]** 並新增下列篩選條件： **@isModel = true**.
+1. 按一下&#x200B;**[!UICONTROL Restriction]**&#x200B;索引標籤並新增下列篩選條件： **@isModel = true**。
 
    ![](assets/s_ncs_user_seedlist_folder_is_model.png)
 
-   儲存在此資料夾中的地址現在可以用作地址範本。 您可以將它們匯入傳遞或行銷活動，並根據相關傳遞和行銷活動的特定需求進行調整(請參閱 [新增種子地址](adding-seed-addresses.md))。
+   儲存在此資料夾中的地址現在可以用作地址範本。 您可以將它們匯入傳遞或行銷活動，並根據相關傳遞和行銷活動的特定需求進行調整（請參閱[新增種子地址](adding-seed-addresses.md)）。

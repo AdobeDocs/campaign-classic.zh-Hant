@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Apple郵件應用程式中的郵件隱私保護
 
-![適用於v7和v8](../../assets/common.svg)
+![套用至v7和v8](../../assets/common.svg)
 
 ## 哪些部分有所變更？
 
@@ -29,24 +29,24 @@ Apple的新功能是未來產業在電子郵件隱私保護方面的面貌。 �
 
 ### 評估對您的Campaign觸發程式的影響
 
-評估這些變更如何影響您目前的促銷活動觸發程式。 識別將電子郵件開啟作為分段、目標定位或重新目標定位條件的工作流程。 閱讀 [提示與秘訣](#find-email-open-tracking).
+評估這些變更如何影響您目前的促銷活動觸發程式。 識別將電子郵件開啟作為分段、目標定位或重新目標定位條件的工作流程。 閱讀[提示與秘訣](#find-email-open-tracking)。
 
 ### 保留您的資料
 
-保留您的資料，並整合您目前的裝置知識。 您可以讓關鍵績效指標(KPI)以使用者代理程式為基礎。 例如，您可以根據使用iOS和Apple郵件應用程式之人員的設定檔建立KPI。 閱讀 [提示與秘訣](#preserve-tracking-data).
+保留您的資料，並整合您目前的裝置知識。 您可以讓關鍵績效指標(KPI)以使用者代理程式為基礎。 例如，您可以根據使用iOS和Apple郵件應用程式之人員的設定檔建立KPI。 閱讀[提示與秘訣](#preserve-tracking-data)。
 
 ### 在保留期間過後封存您的追蹤記錄
 
 在Adobe Campaign的保留期間過後封存您的追蹤記錄：
 
 1. 檢查行銷活動執行個體中保留期的持續時間。
-1. 仔細檢查您使用中的目標對應。 除了現成的設定檔表格之外，另外決定是否使用自訂設定檔表格(`nmsRecipient`)。
+1. 仔細檢查您使用中的目標對應。 除了現成可用的設定檔表格(`nmsRecipient`)之外，決定是否使用自訂設定檔表格。
 1. 從Adobe Campaign匯出您的追蹤記錄。 納入包含使用者代理程式和作業系統相關資料的記錄檔。
 
 ### 評估目前未結費率的趨勢
 
 決定您的對象中哪些比例在iOS裝置上使用Apple的郵件應用程式。
-使用此評估，您可以找出潛在的異常差距及其原因。 您可以判斷間隙是否是因為行銷活動效能問題或Apple的隱私權保護功能所造成。 閱讀 [提示與秘訣](#measure-ios-footprint).
+使用此評估，您可以找出潛在的異常差距及其原因。 您可以判斷間隙是否是因為行銷活動效能問題或Apple的隱私權保護功能所造成。 閱讀[提示與秘訣](#measure-ios-footprint)。
 
 ### 重新評估您的行銷活動策略和績效量度
 
@@ -60,9 +60,9 @@ Apple的新功能是未來產業在電子郵件隱私保護方面的面貌。 �
 
 若要從Adobe Campaign資料收集深入分析，您可以使用現成可用的報表：
 
-* **[!UICONTROL Operating Systems]** 報告
+* **[!UICONTROL Operating Systems]**&#x200B;報告
 
-  若要識別每個作業系統和每個版本的訪客比例，請使用此報表。 [顯示全文](../../reporting/using/global-reports.md#operating-systems)。
+  若要識別每個作業系統和每個版本的訪客比例，請使用此報表。 [閱讀全文](../../reporting/using/global-reports.md#operating-systems)。
 
   您可以檢視每個作業系統相對於訪客總數的訪客劃分。
 
@@ -72,9 +72,9 @@ Apple的新功能是未來產業在電子郵件隱私保護方面的面貌。 �
 
   ![](../../reporting/using/assets/s_ncs_user_os_report2.png)
 
-* **[!UICONTROL Breakdown of opens]** 報告
+* **[!UICONTROL Breakdown of opens]**&#x200B;報告
 
-  若要識別每個作業系統的電子郵件開啟比例，請使用此報表。 [顯示全文](../../reporting/using/global-reports.md#breakdown-of-opens)。
+  若要識別每個作業系統的電子郵件開啟比例，請使用此報表。 [閱讀全文](../../reporting/using/global-reports.md#breakdown-of-opens)。
 
   ![](../../reporting/using/assets/dlv_useragent_report.png)
 
@@ -82,7 +82,7 @@ Apple的新功能是未來產業在電子郵件隱私保護方面的面貌。 �
 
 您可以識別工作流程，其中電子郵件開啟作為分段、鎖定目標和重新定位的標準。
 
-若要這麼做，您可以使用 **[!UICONTROL type]** 追蹤的連結URL的屬性(**[!UICONTROL url/@type]**)。 對於電子郵件開啟，此屬性設定為 **[!UICONTROL Open]**. 此屬性可從查詢編輯器 **[!UICONTROL Query]** 活動以及預先定義的篩選器。 您可以使用此屬性當作行銷活動的目標定位條件。
+若要這麼做，您可以使用追蹤連結URL (**[!UICONTROL url/@type]**)的&#x200B;**[!UICONTROL type]**&#x200B;屬性。 針對電子郵件開啟，此屬性設定為&#x200B;**[!UICONTROL Open]**。 此屬性可從查詢編輯器、工作流程中的&#x200B;**[!UICONTROL Query]**&#x200B;活動以及預先定義的篩選器取得。 您可以使用此屬性當作行銷活動的目標定位條件。
 
 ![](assets/identify-email-open-tracking-1.png)
 
@@ -90,7 +90,7 @@ Apple的新功能是未來產業在電子郵件隱私保護方面的面貌。 �
 
 * 您可以在查詢中使用電子郵件開啟作為目標定位條件。
 
-  您可以指定將特定傳送之追蹤記錄的URL型別設為篩選條件 **[!UICONTROL Open]**.
+  您可以指定特定傳遞的追蹤記錄的URL型別必須設定為&#x200B;**[!UICONTROL Open]**&#x200B;做為篩選條件。
 
   ![](assets/identify-email-open-tracking-2.png)
 
@@ -106,7 +106,7 @@ Apple的新功能是未來產業在電子郵件隱私保護方面的面貌。 �
   >
   >在工作流程中，您無法檢視預先定義篩選器的目標定位條件。
 
-若要擷取將電子郵件開啟作為目標定位條件的工作流程清單，您必須查詢 `xtk:workflow` 綱要。 工作流程的內容會儲存在 **[!UICONTROL XML memo (data)]** XML格式的欄位。
+若要擷取使用電子郵件開啟作為目標定位條件的工作流程清單，您必須查詢`xtk:workflow`結構描述。 工作流程的內容以XML格式儲存在&#x200B;**[!UICONTROL XML memo (data)]**&#x200B;欄位中。
 
 ![](assets/identify-email-open-tracking-5.png)
 
@@ -114,7 +114,7 @@ Apple的新功能是未來產業在電子郵件隱私保護方面的面貌。 �
 
 `expr="[url/@type] = 2"`
 
-此鎖定目標條件表示追蹤的URL型別必須設為 **[!UICONTROL Open]**.
+此目標定位條件表示追蹤的URL型別必須設為&#x200B;**[!UICONTROL Open]**。
 
 ![](assets/identify-email-open-tracking-6.png)
 
@@ -139,13 +139,13 @@ Apple的新功能是未來產業在電子郵件隱私保護方面的面貌。 �
 >
 >我們強烈建議您在非生產環境中測試及驗證此套件。
 
-下載 [範例套件](assets/PKG_Search_workflows_using_Opens_in_queries_V1.xml) 並安裝。 [了解更多](../../platform/using/working-with-data-packages.md#importing-packages)。
+下載[範例套件](assets/PKG_Search_workflows_using_Opens_in_queries_V1.xml)並安裝。 [了解更多](../../platform/using/working-with-data-packages.md#importing-packages)。
 
 安裝套件後，您可以從包含執行個體中現成技術工作流程的資料夾存取工作流程：
 
 `/Administration/Production/Technical workflows/nmsTechnicalWorkflow`
 
-從使用者介面中，選擇 **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]**.
+從使用者介面中選擇&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]**。
 
 ![](assets/identify-email-open-tracking-8.png)
 
@@ -159,7 +159,7 @@ Apple的新功能是未來產業在電子郵件隱私保護方面的面貌。 �
 
 工作流程包含下列詳細步驟：
 
-1. 初始活動是 `xtk:workflow` 綱要。 此活動用於根據例項查詢明確的工作流程查詢，包括作為定位條件的電子郵件開啟。
+1. 初始活動是`xtk:workflow`結構描述中的查詢活動。 此活動用於根據例項查詢明確的工作流程查詢，包括作為定位條件的電子郵件開啟。
 
    ![](assets/identify-email-open-tracking-9.png)
 
@@ -190,7 +190,7 @@ Apple的新功能是未來產業在電子郵件隱私保護方面的面貌。 �
 1. 此預先定義的篩選器清單是用來尋找使用這些篩選器的工作流程。
 1. 兩個工作流程清單會合併為一個清單。
 
-   為此，會使用JavaScript程式碼。
+   為此目的使用JavaScript程式碼。
 
    ![](assets/identify-email-open-tracking-18.png)
 
@@ -327,7 +327,7 @@ Apple的新功能是未來產業在電子郵件隱私保護方面的面貌。 �
 
 * Adobe Campaign會保留此資料一段有限的時間。 保留期間會因執行個體的設定而異。
 
-  檢查執行個體的設定。 [顯示全文](../../platform/using/privacy-management.md#data-retention)。
+  檢查執行個體的設定。 [閱讀全文](../../platform/using/privacy-management.md#data-retention)。
 
 * 除了Apple最近的變更以外，您還可以使用追蹤資料來新增巨大價值，以吸引受眾參與。
 * Apple可能會對其原生郵件應用程式和郵件隱私權保護功能進行進一步的變更。
@@ -336,15 +336,15 @@ Apple的新功能是未來產業在電子郵件隱私保護方面的面貌。 �
 
 #### 如何保留追蹤資料？
 
-若要保留追蹤資料，您必須將其從Adobe Campaign匯出至資訊系統。 [顯示全文](../../platform/using/get-started-data-import-export.md)。
+若要保留追蹤資料，您必須將其從Adobe Campaign匯出至資訊系統。 [閱讀全文](../../platform/using/get-started-data-import-export.md)。
 
 >[!IMPORTANT]
 >
->以下範例著重於現成可用的功能 `nms:Recipient` 結構描述，這是預設的設定檔結構描述。 如果您使用附加到自訂設定檔的其他自訂目標對應，我們建議您將此匯出策略擴充到所有自訂記錄表。 [顯示全文](../../configuration/using/target-mapping.md)。
+>下列範例著重於現成可用的結構描述`nms:Recipient`，這是預設的設定檔結構描述。 如果您使用附加到自訂設定檔的其他自訂目標對應，我們建議您將此匯出策略擴充到所有自訂記錄表。 [閱讀全文](../../configuration/using/target-mapping.md)。
 
 ##### 原則
 
-根據預設， `nms:Recipient` 結構描述會連結至您必須匯出的三個結構描述：
+依預設，`nms:Recipient`結構描述會連結至您必須匯出的三個結構描述：
 
 | 結構描述 | 內容 |
 | --- | --- |
@@ -382,11 +382,11 @@ Apple的新功能是未來產業在電子郵件隱私保護方面的面貌。 �
    初始查詢是用來擷取過去三個月的追蹤記錄。
 您可以使用增量查詢來僅擷取尚未匯出的記錄。
 
-   從新增所有必要資訊 **[!UICONTROL Additional data]** 節點。
+   從&#x200B;**[!UICONTROL Additional data]**&#x200B;節點新增所有必要資訊。
 
    ![](assets/export-tracking-data-2.png)
 
-1. 新增 **[!UICONTROL Data extraction (file)]** 活動。 將查詢的所有資料對應到擷取檔案格式。
+1. 新增&#x200B;**[!UICONTROL Data extraction (file)]**&#x200B;活動。 將查詢的所有資料對應到擷取檔案格式。
 
    ![](assets/export-tracking-data-3.png)
 
@@ -425,14 +425,14 @@ Apple的新功能是未來產業在電子郵件隱私保護方面的面貌。 �
 
 * 第一個工作流程範例包含下列活動：
 
-   1. 初始 **[!UICONTROL Query]** 活動可用來選取過去三個月所有開啟的電子郵件。
-   1. A **[!UICONTROL Split]** 活動可用來依電子郵件應用程式、瀏覽器、作業系統和裝置來分割選取專案。
+   1. 初始&#x200B;**[!UICONTROL Query]**&#x200B;活動用於選取過去三個月所有開啟的電子郵件。
+   1. **[!UICONTROL Split]**&#x200B;活動是用來依電子郵件應用程式、瀏覽器、作業系統和裝置來分割選取專案。
 
-   1. A **[!UICONTROL Deduplication]** 活動會跟隨每個 **[!UICONTROL Split]** 活動。 此 **[!UICONTROL Deduplication]** 活動用於移除重複的電子郵件地址。
+   1. 每個&#x200B;**[!UICONTROL Split]**&#x200B;活動之後都有一個&#x200B;**[!UICONTROL Deduplication]**&#x200B;活動。 **[!UICONTROL Deduplication]**&#x200B;活動用於移除重複的電子郵件地址。
 
-      此 **[!UICONTROL Deduplication]** 活動放置在 **[!UICONTROL Split]** 活動，以避免遺失使用各種裝置的收件者相關資訊。
+      **[!UICONTROL Deduplication]**&#x200B;活動位於&#x200B;**[!UICONTROL Split]**&#x200B;活動之後，以避免遺失使用各種裝置的收件者資訊。
 
-   1. 一個 **[!UICONTROL End]** 活動會跟隨每個 **[!UICONTROL Deduplication]** 活動。
+   1. 每個&#x200B;**[!UICONTROL Deduplication]**&#x200B;活動後面都有&#x200B;**[!UICONTROL End]**&#x200B;活動。
 
   如果您僅將收件者儲存在現成可用的收件者表格中以進行目標定位，則此型別的工作流程會很有用。
 
@@ -440,14 +440,14 @@ Apple的新功能是未來產業在電子郵件隱私保護方面的面貌。 �
 
 * 第二個工作流程範例包含下列活動：
 
-   1. 初始 **[!UICONTROL Query]** 活動可用來選取過去三個月所有開啟的電子郵件。
-   1. A **[!UICONTROL Deduplication]** 活動用於移除重複的電子郵件地址。
-   1. A **[!UICONTROL Fork]** 活動使用次數：
+   1. 初始&#x200B;**[!UICONTROL Query]**&#x200B;活動用於選取過去三個月所有開啟的電子郵件。
+   1. **[!UICONTROL Deduplication]**&#x200B;活動用於移除重複的電子郵件地址。
+   1. 已使用&#x200B;**[!UICONTROL Fork]**&#x200B;活動：
 
-      * 在一個轉變中， **[!UICONTROL Change dimension]** 活動用於尋找追蹤記錄所參照的收件者。
-      * 在另一個轉變中， **[!UICONTROL Split]** 活動可用來依電子郵件應用程式、瀏覽器、作業系統和裝置來分割選取專案。
+      * 在一個轉變中，**[!UICONTROL Change dimension]**&#x200B;活動用於尋找追蹤記錄所參照的收件者。
+      * 在另一個轉變中，**[!UICONTROL Split]**&#x200B;活動是用來依電子郵件應用程式、瀏覽器、作業系統和裝置分割選取專案。
 
-   1. 一個 **[!UICONTROL End]** 活動會遵循「 」之後的每個轉變 **[!UICONTROL Split]** 活動。
+   1. **[!UICONTROL Split]**&#x200B;活動之後的每個轉變都有&#x200B;**[!UICONTROL End]**&#x200B;活動。
 
   如果您將收件者儲存在現成可用的收件者表格以外的表格中，此型別的工作流程會很有用。
 

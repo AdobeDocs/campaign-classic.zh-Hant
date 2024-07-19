@@ -27,7 +27,7 @@ ht-degree: 2%
 
 ![](assets/validation-1-in-op.png)
 
-核准範例可在以下網址找到： [本節](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries).
+您可以在[此區段](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries)中找到核准範例。
 
 運運算元可透過下列兩種方式之一進行回應：使用電子郵件訊息中連結的網頁進行驗證，或是透過主控台進行驗證。
 
@@ -39,17 +39,17 @@ ht-degree: 2%
 
 您可能會收到包含網頁連結的核准訊息，您可透過該連結做出回應。 目標操作員若要收到核准電子郵件，其電子郵件地址必須為完整。 如果不是這種情況，運運算元必須使用主控台進行回應
 
-操作員管理在此詳細說明 [區段](../../platform/using/access-management.md).
+此[區段](../../platform/using/access-management.md)中詳細說明了運運算元管理。
 
-核准電子郵件會持續傳送。 預設傳遞範本為 **[!UICONTROL notifyAssignee]**：此檔案會儲存在 **[!UICONTROL Administration > Campaign management > Technical delivery templates]** 資料夾。 此情境可自訂，也建議製作復本並變更每個活動的範本。
+核准電子郵件會持續傳送。 預設傳遞範本為&#x200B;**[!UICONTROL notifyAssignee]**：它儲存在&#x200B;**[!UICONTROL Administration > Campaign management > Technical delivery templates]**&#x200B;資料夾中。 此情境可自訂，也建議製作復本並變更每個活動的範本。
 
-透過此範本建立的傳遞會儲存在 **[!UICONTROL Administration > Production > Objects created automatically > Technical deliveries > Workflow notifications]** 資料夾。
+透過此範本建立的傳遞儲存在&#x200B;**[!UICONTROL Administration > Production > Objects created automatically > Technical deliveries > Workflow notifications]**&#x200B;資料夾中。
 
 ## 透過主控台的核准 {#approval-via-the-console}
 
 在作業中，要核准的元素會顯示在行銷活動控制面板上。
 
-對於技術工作流程，使用者可以核准的任務可以從中的樹狀結構存取 **[!UICONTROL Administration > Production > Objects created automatically > Pending approvals]** 資料夾。
+對於技術工作流程，可以從&#x200B;**[!UICONTROL Administration > Production > Objects created automatically > Pending approvals]**&#x200B;資料夾中的樹狀結構存取使用者可以核准的任務。
 
 ![](assets/validation-node.png)
 
@@ -58,7 +58,7 @@ ht-degree: 2%
 核准會指派給透過篩選條件選取的一組操作員、單一操作員或一組操作員。
 
 1. 對於最簡單的核准形式，作業會在操作員回應後立即完成。 嘗試回應的其他操作員將會收到通知，指出有人已經完成此操作。
-1. 如需多個核准，請參閱 [多重核准](#multiple-approval).
+1. 如需多個核准，請參考[多個核准](#multiple-approval)。
 
 核准的運運算元群組應指定為角色或函式，而非已命名的個人。 例如，「行銷活動預算」群組比「Harry&#39;s group」更適合。 我們建議群組內至少要有兩位可核准任務的人。 如此一來，如果一個元件不存在，另一個元件可以回應。
 
@@ -70,25 +70,25 @@ ht-degree: 2%
 
 ![](assets/expiration.png)
 
-若要新增到期日，請按一下 **[!UICONTROL Add]**. 每個已建立的到期時間都會新增一個轉變。 您可以：
+若要新增到期時間，請按一下&#x200B;**[!UICONTROL Add]**。 每個已建立的到期時間都會新增一個轉變。 您可以：
 
 * 按一下清單中的儲存格（或按F2），直接修改一般引數。
-* 或按一下「 」以編輯運算式 **[!UICONTROL Detail...]** 按鈕。
+* 或按一下&#x200B;**[!UICONTROL Detail...]**&#x200B;按鈕以編輯運算式。
 
 >[!NOTE]
 >
 >不必指定過期順序，因為過期會依時間順序處理。
 
-此 **[!UICONTROL Do not terminate the task]** 選項會在延遲逾時時啟用核准。 此模式可以在保持核准作用中時管理提醒：操作員仍然可以回應。 此選項預設為停用，這表示工作會在到期時被視為已完成，且運運算元可能不會再回應。
+當延遲逾時時，**[!UICONTROL Do not terminate the task]**&#x200B;選項會讓核准保持作用中。 此模式可以在保持核准作用中時管理提醒：操作員仍然可以回應。 此選項預設為停用，這表示工作會在到期時被視為已完成，且運運算元可能不會再回應。
 
 您可以建立四種型別的有效期：
 
-* **任務開始後延遲**：計算到期日的方法為將指定的時間長度新增至啟用核准的日期。
-* **在指定日期之後延遲**：有效期限是以新增時間長度至您指定的日期來計算。
-* **在指定日期之前延遲**：有效期限的計算方式是從您指定的日期減去時間長度。
-* **由指令碼計算的到期日**：有效期限是使用JavaScript計算。
+* **工作開始後延遲**：將指定的時間長度新增至啟用核准的日期，以計算到期日。
+* **在指定日期之後延遲**：到期的計算方式是將時間長度新增至您指定的日期。
+* **在指定日期之前延遲**：到期的計算方式是從您指定的日期減去時間長度。
+* **由指令碼計算的到期時間**：到期時間是使用JavaScript計算的。
 
-  以下範例計算開始傳送日期前24小時的到期時間(識別方式 **vars.deliveryId**)：
+  下列範例會在開始傳遞的日期前24小時計算到期時間（由&#x200B;**vars.deliveryId**&#x200B;識別）：
 
   ```
   var delivery = nms.delivery.get(vars.deliveryId)

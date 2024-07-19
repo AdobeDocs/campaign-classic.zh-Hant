@@ -21,10 +21,10 @@ ht-degree: 2%
 
 若要建立立方結構，請套用下列步驟：
 
-1. 選取工作表。 請參閱 [選取工作表](#selecting-the-work-table).
-1. 定義維度。 請參閱 [定義維度](#defining-dimensions).
-1. 定義測量。 請參閱 [建立指標](#building-indicators).
-1. 建立彙總（選用）。 請參閱 [計算及使用彙總](../../reporting/using/concepts-and-methodology.md#calculating-and-using-aggregates).
+1. 選取工作表。 請參閱[選取工作表](#selecting-the-work-table)。
+1. 定義維度。 請參閱[定義維度](#defining-dimensions)。
+1. 定義測量。 參考[建置指標](#building-indicators)。
+1. 建立彙總（選用）。 請參閱[計算並使用彙總](../../reporting/using/concepts-and-methodology.md#calculating-and-using-aggregates)。
 
 此範例說明如何在報表中快速建立簡單的立方結構以匯出其測量。
 
@@ -32,17 +32,17 @@ ht-degree: 2%
 
 ## 選取工作表 {#selecting-the-work-table}
 
-若要建立立方結構，請按一下 **[!UICONTROL New]** 立方結構清單上方的按鈕。
+若要建立Cube，請按一下立方結構清單上方的&#x200B;**[!UICONTROL New]**&#x200B;按鈕。
 
 ![](assets/s_advuser_cube_create.png)
 
-選取事實結構描述，即包含您要探索之元素的結構描述。 在此範例中，我們將選取 **收件者** 表格。
+選取事實結構描述，即包含您要探索之元素的結構描述。 在此範例中，我們將選取&#x200B;**收件者**&#x200B;資料表。
 
 ![](assets/s_advuser_cube_wz_02.png)
 
-按一下 **[!UICONTROL Save]** 建立立方結構：它會出現在立方結構清單中，然後可以使用適當的頁簽進行設定。
+按一下&#x200B;**[!UICONTROL Save]**&#x200B;建立Cube：它會出現在Cube清單中，然後可以使用適當的索引標籤進行設定。
 
-按一下 **[!UICONTROL Filter the source data...]** 此連結可將此Cube的計算套用至資料庫中選取的資料。
+按一下&#x200B;**[!UICONTROL Filter the source data...]**&#x200B;連結，將此Cube的計算套用至資料庫中選取的資料。
 
 ![](assets/s_advuser_cube_wz_03.png)
 
@@ -50,21 +50,21 @@ ht-degree: 2%
 
 Dimension與根據相關事實結構描述為每個立方結構定義的分析軸一致。 這些是在分析中探索的維度，例如時間（年、月、日期……）、產品或合約的分類（家庭、參考資料等）、人口區段（依城市、年齡群組、狀態等）。
 
-這些分析軸定義於 **[!UICONTROL Dimension]** 立方結構的頁簽。
+這些分析軸是在Cube的&#x200B;**[!UICONTROL Dimension]**&#x200B;索引標籤中定義。
 
-按一下 **[!UICONTROL Add]** 按鈕以建立新維度，然後在 **[!UICONTROL Expression field]**，按一下 **[!UICONTROL Edit expression]** 圖示以選取包含相關資料的欄位。
+按一下「**[!UICONTROL Add]**」按鈕以建立新維度，然後在&#x200B;**[!UICONTROL Expression field]**&#x200B;中，按一下「**[!UICONTROL Edit expression]**」圖示以選取包含相關資料的欄位。
 
 ![](assets/s_advuser_cube_wz_04.png)
 
-* 從選取收件者開始 **年齡**. 對於此欄位，您可以定義量化以分組年齡，並讓資訊閱讀更容易。 當存在數個獨立值的可能性時，我們建議使用量化。
+* 從選取收件者&#x200B;**年齡**&#x200B;開始。 對於此欄位，您可以定義量化以分組年齡，並讓資訊閱讀更容易。 當存在數個獨立值的可能性時，我們建議使用量化。
 
-  要執行此操作，請核取 **[!UICONTROL Enable binning]** 選項。 量化模式的詳細資訊，請參閱 [資料量化](../../reporting/using/concepts-and-methodology.md#data-binning).
+  若要這麼做，請核取&#x200B;**[!UICONTROL Enable binning]**&#x200B;選項。 在[資料量化](../../reporting/using/concepts-and-methodology.md#data-binning)中詳細說明量化模式。
 
   ![](assets/s_advuser_cube_wz_05.png)
 
-* 新增 **日期** 型別維度。 在這裡，我們要顯示收件者設定檔建立日期
+* 新增&#x200B;**日期**&#x200B;型別維度。 在這裡，我們要顯示收件者設定檔建立日期
 
-  若要這麼做，請按一下 **[!UICONTROL Add]** 並選取 **[!UICONTROL Creation date]** 收件者表格中的欄位。
+  若要這麼做，請按一下&#x200B;**[!UICONTROL Add]**&#x200B;並選取收件者表格中的&#x200B;**[!UICONTROL Creation date]**&#x200B;欄位。
 
   ![](assets/s_advuser_cube_wz_06.png)
 
@@ -76,7 +76,7 @@ Dimension與根據相關事實結構描述為每個立方結構定義的分析�
 
 * 建立另一個維度以分析相對於收件者城市的資料
 
-  若要這麼做，請新增維度，並選取 **[!UICONTROL Location]** 收件者方案的節點。
+  若要這麼做，請新增維度，並在收件者結構描述的&#x200B;**[!UICONTROL Location]**&#x200B;節點中選取城市。
 
   ![](assets/s_advuser_cube_wz_08.png)
 
@@ -88,24 +88,24 @@ Dimension與根據相關事實結構描述為每個立方結構定義的分析�
 
   ![](assets/s_advuser_cube_wz_10.png)
 
-  只會顯示分項清單中的值。 其他則會在中定義的標籤下分組。 **[!UICONTROL Label of the other values]** 欄位。
+  只會顯示分項清單中的值。 其他則將在&#x200B;**[!UICONTROL Label of the other values]**&#x200B;欄位中定義的標籤下分組。
 
-  有關詳細資訊，請參閱 [動態管理回收筒](../../reporting/using/concepts-and-methodology.md#dynamically-managing-bins).
+  如需詳細資訊，請參閱[動態管理回收筒](../../reporting/using/concepts-and-methodology.md#dynamically-managing-bins)。
 
 ## 建立指標 {#building-indicators}
 
-定義維度後，您需要為要在儲存格中顯示的值指定計算模式。 若要這麼做，請在 **[!UICONTROL Measures]** 頁簽：建立與報表中顯示的欄數相同的量值，這些欄會使用立方結構。
+定義維度後，您需要為要在儲存格中顯示的值指定計算模式。 若要這麼做，請在&#x200B;**[!UICONTROL Measures]**&#x200B;索引標籤中建立相符的指標：建立與報告中有欄數一樣多的計量，這些欄將使用Cube。
 
 若要這麼做，請套用下列步驟：
 
 1. 按一下 **[!UICONTROL Add]** 按鈕。
 1. 選取要套用的測量型別和公式。 在此處，我們要計算收件者中女性的數量。
 
-   我們的測量以事實結構為基礎，並使用 **[!UICONTROL Count]** 運運算元。
+   我們的量值是以事實結構描述為基礎，並使用&#x200B;**[!UICONTROL Count]**&#x200B;運運算元。
 
    ![](assets/s_advuser_cube_wz_11.png)
 
-   此 **[!UICONTROL Filter the measure data...]** 連結可讓您僅選取女性。 有關定義測量和可用選項的詳細資訊，請參閱 [定義測量](../../reporting/using/concepts-and-methodology.md#defining-measures).
+   **[!UICONTROL Filter the measure data...]**&#x200B;連結可讓您僅選取女性。 如需定義測量與可用選項的詳細資訊，請參閱[定義測量](../../reporting/using/concepts-and-methodology.md#defining-measures)。
 
    ![](assets/s_advuser_cube_wz_12.png)
 
@@ -121,17 +121,17 @@ Dimension與根據相關事實結構描述為每個立方結構定義的分析�
 
 操作步驟：
 
-1. 按一下 **[!UICONTROL Create]** 的按鈕 **[!UICONTROL Reports]** 頁簽並選取您剛建立的立方結構。
+1. 按一下&#x200B;**[!UICONTROL Reports]**&#x200B;索引標籤的&#x200B;**[!UICONTROL Create]**&#x200B;按鈕，然後選取您剛建立的Cube。
 
    ![](assets/s_advuser_cube_wz_14.png)
 
-1. 按一下 **[!UICONTROL Create]** 按鈕以確認：這會將您帶往報告設定和檢視頁面。
+1. 按一下&#x200B;**[!UICONTROL Create]**&#x200B;按鈕以確認：這會將您導向至報告設定和檢視頁面。
 
    依預設，前兩個可用尺寸以行和欄提供，但表格中不顯示任何值。 若要產生表格，請按一下主圖示：
 
    ![](assets/s_advuser_cube_wz_15.png)
 
-1. 您可以切換尺寸的軸、刪除它們、新增測量等。 中會詳細說明可能的操作 [此頁面](../../reporting/using/using-cubes-to-explore-data.md).
+1. 您可以切換尺寸的軸、刪除它們、新增測量等。 在[此頁面](../../reporting/using/using-cubes-to-explore-data.md)中詳細說明可能的作業。
 
    要執行此操作，請使用適當的圖示。
 

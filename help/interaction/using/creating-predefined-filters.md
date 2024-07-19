@@ -22,7 +22,7 @@ ht-degree: 1%
 
 若要建立篩選，請套用下列程式：
 
-1. 前往 **[!UICONTROL Administration]** 資料夾並選取 **[!UICONTROL Pre-defined offer filters]**.
+1. 移至&#x200B;**[!UICONTROL Administration]**&#x200B;資料夾並選取&#x200B;**[!UICONTROL Pre-defined offer filters]**。
 
    ![](assets/offer_filter_create_005.png)
 
@@ -42,6 +42,6 @@ ht-degree: 1%
 
    ![](assets/offer_filter_create_004.png)
 
-1. 按一下 **[!UICONTROL Preview]** 以檢視篩選的結果。
+1. 按一下&#x200B;**[!UICONTROL Preview]**&#x200B;以檢視篩選結果。
 
    ![](assets/offer_filter_create_006.png)

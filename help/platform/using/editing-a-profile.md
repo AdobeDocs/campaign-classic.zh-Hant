@@ -30,7 +30,7 @@ ht-degree: 52%
 
 >[!CAUTION]
 >
->XML結構描述和與設定檔表格中的欄位有關的表單可透過 **[!UICONTROL Administration > Configuration > Data schemas]** Adobe Campaign樹的節點。 只有資深使用者可以變更這些結構描述。
+>透過Adobe Campaign樹狀結構的&#x200B;**[!UICONTROL Administration > Configuration > Data schemas]**&#x200B;節點存取與設定檔表格中的欄位有關的XML結構描述和表單。 只有資深使用者可以變更這些結構描述。
 >
 >如需詳細資訊，請參閱[本頁面](../../configuration/using/about-schema-edition.md)。
 
@@ -42,7 +42,7 @@ ht-degree: 52%
 
 >[!NOTE]
 >
->當 **[!UICONTROL No longer contact (by any channel)]** 選項已選取，這表示設定檔位於封鎖清單上，亦即設定檔已表示不希望被聯絡（例如，按一下電子報中的取消訂閱連結）。 任何頻道（電子郵件、直接郵件等）上的傳遞不再以他們為目標。 如需詳細資訊，請參閱[此頁面](../../delivery/using/understanding-quarantine-management.md)。
+>選取&#x200B;**[!UICONTROL No longer contact (by any channel)]**&#x200B;選項時，表示設定檔位於封鎖清單中，亦即設定檔已表示不希望被連絡（例如，按一下電子報中的取消訂閱連結）。 任何頻道（電子郵件、直接郵件等）上的傳遞不再以他們為目標。 如需詳細資訊，請參閱[此頁面](../../delivery/using/understanding-quarantine-management.md)。
 
 ## 聯絡資訊索引標籤 {#contact-information-tab}
 
@@ -54,7 +54,7 @@ ht-degree: 52%
 
 ## 其他索引標籤 {#other-tab}
 
-此畫麵包含使用者定義的欄位，可依需求進行個人化。 您也可以變更欄位名稱並定義其格式，透過 **[!UICONTROL Field properties...]**，如下所示：
+此畫麵包含使用者定義的欄位，可依需求進行個人化。 您也可以透過&#x200B;**[!UICONTROL Field properties...]**&#x200B;變更欄位名稱並定義其格式，如下所示：
 
 ![](assets/s_ncs_user_profile_others_tab.png)
 
@@ -64,11 +64,11 @@ ht-degree: 52%
 
 ## 清單索引標籤 {#lists-tab}
 
-此畫面會顯示所選設定檔所屬的群組。 按一下 **[!UICONTROL Add]** 將設定檔訂閱至清單。 按一下 **[!UICONTROL Detail]** 在選取的清單中顯示描述和設定檔清單。
+此畫面會顯示所選設定檔所屬的群組。 按一下&#x200B;**[!UICONTROL Add]**&#x200B;以訂閱設定檔至清單。 按一下「**[!UICONTROL Detail]**」以顯示說明和選取清單中的設定檔清單。
 
 ![](assets/s_ncs_user_profile_groups_tab_details.png)
 
-有關詳細資訊，請參閱 [建立及管理清單](../../platform/using/creating-and-managing-lists.md).
+如需詳細資訊，請參閱[建立及管理清單](../../platform/using/creating-and-managing-lists.md)。
 
 ## 訂閱索引標籤 {#subscriptions-tab}
 
@@ -76,7 +76,7 @@ ht-degree: 52%
 
 ![](assets/s_ncs_user_profile_subscript_tab_details.png)
 
-此 **[!UICONTROL Detail]** 按鈕會顯示所選訂閱的屬性。 此 **[!UICONTROL Add]** 按鈕可用來手動新增訂閱。
+**[!UICONTROL Detail]**&#x200B;按鈕會顯示所選訂閱的屬性。 **[!UICONTROL Add]**&#x200B;按鈕是用來手動新增訂閱。
 
 如需詳細資訊，請參閱[此頁面](../../delivery/using/managing-subscriptions.md)。
 

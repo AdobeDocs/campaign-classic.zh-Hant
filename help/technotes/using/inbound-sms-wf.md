@@ -21,7 +21,7 @@ ht-degree: 5%
 
 ## 實施 {#implementation}
 
-1. 將擴充功能新增至 `nms:inSMS` 結構描述。 擴充功能會將新屬性新增至 `nms:inSMS` 方案和追蹤來自中間來源執行個體的inSMS記錄主索引鍵。
+1. 將擴充功能新增至行銷執行個體上的`nms:inSMS`結構描述。 擴充功能會將新屬性新增至`nms:inSMS`結構描述，並追蹤來自中間來源執行個體的inSMS記錄主索引鍵。
 
    ```xml
    <element img="nms:miniatures/mini-sms.png" label="Incoming SMS"
@@ -35,23 +35,23 @@ ht-degree: 5%
    </element>
    ```
 
-1. 若要套用對結構描述所做的修改，請啟動資料庫更新精靈。 此精靈的存取方式為 **工具** > **進階** > **更新資料庫結構**. 它會檢查資料庫的實體結構是否符合其邏輯描述，並執行SQL更新指令碼。 [了解更多](../../configuration/using/updating-the-database-structure.md)
+1. 若要套用對結構描述所做的修改，請啟動資料庫更新精靈。 此精靈可透過&#x200B;**工具** > **進階** > **更新資料庫結構**&#x200B;存取。 它會檢查資料庫的實體結構是否符合其邏輯描述，並執行SQL更新指令碼。 [了解更多](../../configuration/using/updating-the-database-structure.md)
 
-1. 停止並備份包含下列專案的工作流程： **傳入簡訊活動**.
+1. 停止並備份包含&#x200B;**傳入簡訊活動**&#x200B;的工作流程。
 
-   使用下列格式備份對應的選項指標 `SMS_MO_INDEX_{internal name of the workflow}_{name of the insms workflow activity}_{internal name of the external account to access the mid}`.
+   以下列格式`SMS_MO_INDEX_{internal name of the workflow}_{name of the insms workflow activity}_{internal name of the external account to access the mid}`備份對應的選項指標。
 
 [進一步瞭解備份](../../production/using/backup.md)
 
-1. (**可選**)如果您已在使用排程器活動，請開啟工作流程並按如下方式重新設定：
+1. （**選擇性**）如果您已在使用排程器活動，請開啟工作流程並按如下方式重新設定：
 
-   1. 複製目前的設定，從 **排程** 的標籤 **傳入簡訊** 活動進入您的外部 **排程器** 活動。
+   1. 從&#x200B;**傳入簡訊**&#x200B;活動的&#x200B;**排程**&#x200B;索引標籤將目前的設定復寫到外部&#x200B;**排程器**&#x200B;活動中。
 
-   1. 在中停用目前設定 **排程** 標籤之 **傳入簡訊** 活動。
+   1. 停用&#x200B;**傳入SMS**&#x200B;活動的&#x200B;**排程**&#x200B;索引標籤中的目前設定。
 
       ![](assets/inbound_sms_1.png)
 
-1. 更新 **傳入簡訊** 自訂指令碼。
+1. 更新&#x200B;**傳入簡訊**&#x200B;自訂指令碼。
 
    取代下方區塊。 請注意，如果您先前已自訂此程式碼，此指令碼可能會有所不同。
 
@@ -73,7 +73,7 @@ ht-degree: 5%
 
    請遵循下列先決條件：
 
-   * 輸入以下專案的實際值： `<EXTERNAL_ACCOUNT_ID>`，例如 `var iExtAccountId=72733155`.
+   * 輸入`<EXTERNAL_ACCOUNT_ID>`的實值，例如`var iExtAccountId=72733155`。
    * 請務必將下列元素保留在自訂指令碼中：
       * `_operation="insertOrUpdate"`
       * `_key="@midInSMSId,@extAccount-id"`

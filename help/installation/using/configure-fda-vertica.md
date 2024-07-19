@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 設定存取權至 [!DNL Vertica Analytics]
-description: 瞭解如何設定存取許可權至 [!DNL Vertica Analytics] 在FDA
+description: 瞭解如何在FDA中設定 [!DNL Vertica Analytics] 的存取權
 feature: Installation, Federated Data Access
 audience: platform
 content-type: reference
@@ -14,22 +14,22 @@ ht-degree: 1%
 
 ---
 
-# 設定存取權至 [!DNL Vertica Analytics] {#configure-fda-vertica}
+# 設定[!DNL Vertica Analytics]的存取權 {#configure-fda-vertica}
 
 
 
-使用行銷活動 **同盟資料存取** (FDA)選項，用於處理儲存在外部資料庫中的資訊。 請依照下列步驟，設定存取權至 [!DNL Vertica Analytics].
+使用Campaign **同盟資料存取** (FDA)選項來處理儲存在外部資料庫中的資訊。 請依照下列步驟設定[!DNL Vertica Analytics]的存取權。
 
-1. 設定 [!DNL Vertica Analytics] 於 [CentOS](#vertica-centos)， [Windows](#vertica-windows) 或 [Debian](#vertica-debian)
-1. 設定 [!DNL Vertica Analytics] [外部帳戶](#vertica-external) 在Campaign中
+1. 在[CentOS](#vertica-centos)、[Windows](#vertica-windows)或[Debian](#vertica-debian)上設定[!DNL Vertica Analytics]
+1. 在Campaign中設定[!DNL Vertica Analytics] [外部帳戶](#vertica-external)
 
 ![](assets/snowflake_3.png)
 
-## [!DNL Vertica Analytics] 在CentOS上 {#vertica-centos}
+## CentOS上的[!DNL Vertica Analytics] {#vertica-centos}
 
-進行設定 [!DNL Vertica Analytics] 在CentOS上，請遵循下列步驟：
+若要在CentOS上設定[!DNL Vertica Analytics]，請遵循下列步驟：
 
-1. 下載的ODBC驅動程式 [!DNL Vertica Analytics]. [按一下這裡](https://www.vertica.com/download/vertica/client-drivers/) 並下載最新的Linux RPM。
+1. 下載[!DNL Vertica Analytics]的ODBC驅動程式。 [按一下這裡](https://www.vertica.com/download/vertica/client-drivers/)下載最新的Linux RPM。
 
 1. 然後，您需要使用以下命令安裝unixODBC：
 
@@ -38,7 +38,7 @@ ht-degree: 1%
    yum install unixODBC.x86_64
    ```
 
-1. 如果您先前已安裝 [!DNL Vertica Analytics] 伺服器，已經安裝ODBC驅動程式。 在此情況下，請依照下列步驟更新磁碟機：
+1. 如果您先前已安裝[!DNL Vertica Analytics]伺服器，則會已經安裝ODBC驅動程式。 在此情況下，請依照下列步驟更新磁碟機：
 
    ```
    #Switch to root
@@ -77,19 +77,19 @@ ht-degree: 1%
    rm vertica-client-x.x.x-x.x86_64.rpm
    ```
 
-1. 接著，您可以在Adobe Campaign中設定 [!DNL Vertica Analytics] 外部帳戶。 有關如何設定外部帳戶的詳細資訊，請參閱 [本節](#vertica-external).
+1. 然後，您可以在Adobe Campaign中設定[!DNL Vertica Analytics]外部帳戶。 如需如何設定外部帳戶的詳細資訊，請參閱[本節](#vertica-external)。
 
-## [!DNL Vertica Analytics] 在Windows上 {#vertica-windows}
+## Windows上的[!DNL Vertica Analytics] {#vertica-windows}
 
-1. 下載 [適用於Windows的ODBC驅動程式](https://www.vertica.com/download/vertica/client-drivers/). 若要安裝適用於Windows的驅動程式，您必須啟用.NET Framework 3.5，否則安裝精靈會嘗試自動啟用並下載驅動程式。
+1. 下載適用於Windows](https://www.vertica.com/download/vertica/client-drivers/)的[ODBC驅動程式。 若要安裝適用於Windows的驅動程式，您必須啟用.NET Framework 3.5，否則安裝精靈會嘗試自動啟用並下載驅動程式。
 
-1. 在Windows中設定ODBC驅動程式。 有關詳細資訊，請參閱 [此頁面](https://www.vertica.com/docs/9.2.x/HTML/Content/Authoring/ConnectingToVertica/ClientODBC/SettingUpADSN.htm)
+1. 在Windows中設定ODBC驅動程式。 如需詳細資訊，請參閱[此頁面](https://www.vertica.com/docs/9.2.x/HTML/Content/Authoring/ConnectingToVertica/ClientODBC/SettingUpADSN.htm)
 
-1. 接著，您可以在Adobe Campaign中設定 [!DNL Vertica Analytics] 外部帳戶。 有關如何設定外部帳戶的詳細資訊，請參閱 [本節](#vertical-external).
+1. 然後，您可以在Adobe Campaign中設定[!DNL Vertica Analytics]外部帳戶。 如需如何設定外部帳戶的詳細資訊，請參閱[本節](#vertical-external)。
 
-## [!DNL Vertica Analytics] 在Debian上 {#vertica-debian}
+## 在Debian上的[!DNL Vertica Analytics] {#vertica-debian}
 
-1. 下載的ODBC驅動程式 [!DNL Vertica Analytics]. [按一下這裡](https://sfc-repo.snowflakecomputing.com/odbc/linux/latest/index.html) 開始下載。
+1. 下載[!DNL Vertica Analytics]的ODBC驅動程式。 [按一下這裡](https://sfc-repo.snowflakecomputing.com/odbc/linux/latest/index.html)開始下載。
 
 1. 然後，您需要使用以下命令安裝unixODBC：
 
@@ -97,7 +97,7 @@ ht-degree: 1%
    apt-get install unixODBC
    ```
 
-1. 如果您先前已安裝 [!DNL Vertica Analytics] 伺服器，已經安裝ODBC驅動程式。 在此情況下，請依照下列步驟更新磁碟機：
+1. 如果您先前已安裝[!DNL Vertica Analytics]伺服器，則會已經安裝ODBC驅動程式。 在此情況下，請依照下列步驟更新磁碟機：
 
    ```
    #Switch to root
@@ -139,29 +139,29 @@ ht-degree: 1%
    Port = 5433
    ```
 
-1. 接著，您可以在Adobe Campaign中設定 [!DNL Vertica Analytics] 外部帳戶。 有關如何設定外部帳戶的詳細資訊，請參閱 [本節](#vertica-external).
+1. 然後，您可以在Adobe Campaign中設定[!DNL Vertica Analytics]外部帳戶。 如需如何設定外部帳戶的詳細資訊，請參閱[本節](#vertica-external)。
 
-## [!DNL Vertica Analytics] 外部帳戶 {#vertica-external}
+## [!DNL Vertica Analytics]外部帳戶 {#vertica-external}
 
-您需要建立 [!DNL Vertica Analytics] 將您的Campaign執行個體連線到您的外部帳戶 [!DNL Vertica Analytics] 外部資料庫。
+您必須建立[!DNL Vertica Analytics]外部帳戶，才能將Campaign執行個體連線至[!DNL Vertica Analytics]外部資料庫。
 
-1. 從Campaign **[!UICONTROL Explorer]**，按一下 **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
+1. 從行銷活動&#x200B;**[!UICONTROL Explorer]**，按一下&#x200B;**[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**。
 
 1. 按一下&#x200B;**[!UICONTROL New]**。
 
-1. 選取 **[!UICONTROL External database]** 作為外部帳戶的 **[!UICONTROL Type]**.
+1. 選取&#x200B;**[!UICONTROL External database]**&#x200B;作為外部帳戶的&#x200B;**[!UICONTROL Type]**。
 
-1. 設定 **[!UICONTROL Vertica Analytics]** 外部帳戶，您必須指定：
+1. 設定&#x200B;**[!UICONTROL Vertica Analytics]**&#x200B;外部帳戶，您必須指定：
 
    * **[!UICONTROL Type]**： [!DNL Vertica Analytics]
 
-   * **[!UICONTROL Server]**：的URL [!DNL Vertica Analytics] 伺服器
+   * **[!UICONTROL Server]**： [!DNL Vertica Analytics]伺服器的URL
 
    * **[!UICONTROL Account]**：使用者名稱
 
    * **[!UICONTROL Password]**：使用者帳戶密碼
 
-   * **[!UICONTROL Database]**：資料庫名稱
+   * **[!UICONTROL Database]**：資料庫的名稱
 
    ![](assets/vertica.png)
 

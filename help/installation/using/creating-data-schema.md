@@ -17,23 +17,23 @@ ht-degree: 0%
 
 若要在外部資料庫上建立綱要：
 
-1. 按一下 **[!UICONTROL New]** 按鈕並選擇資料結構描述 **[!UICONTROL Access external data]**.
+1. 按一下資料結構清單上方的&#x200B;**[!UICONTROL New]**&#x200B;按鈕，然後選擇&#x200B;**[!UICONTROL Access external data]**。
 
    ![](assets/wf_new_schema_fda.png)
 
-1. 輸入 **[!UICONTROL Namespace]** 和  **[!UICONTROL Name]** ，並選取 **[!UICONTROL External account]** 這會啟用與資料庫的連線。 這可讓您存取外部基底中可用的表格清單。
+1. 輸入結構描述的&#x200B;**[!UICONTROL Namespace]**&#x200B;和&#x200B;**[!UICONTROL Name]**，然後選取將啟用資料庫連線的&#x200B;**[!UICONTROL External account]**。 這可讓您存取外部基底中可用的表格清單。
 
    ![](assets/wf_new_schema_select_table_fda.png)
 
-1. 從 **[!UICONTROL Table name]** 欄位，選擇包含要收集之資料的表格。
+1. 從&#x200B;**[!UICONTROL Table name]**&#x200B;欄位中，選擇包含要收集之資料的資料表。
 
-   如果資料庫使用者已被授予正確的許可權，您可以使用Snowflake在此選取檢視。 請注意，使用檢視時，Adobe Campaign將無法自動產生XML結構描述，您必須自行建立。 有關檢視的詳細資訊，請參閱 [Snowflake檔案](https://docs.snowflake.com/en/user-guide/views-introduction.html).
+   如果資料庫使用者已被授予正確的許可權，您可以使用Snowflake在此選取檢視。 請注意，使用檢視時，Adobe Campaign將無法自動產生XML結構描述，您必須自行建立。 如需檢視的詳細資訊，請參閱[Snowflake檔案](https://docs.snowflake.com/en/user-guide/views-introduction.html)。
 
    ![](assets/wf_new_schema_select_table_fda.png)
 
-1. 按一下 **[!UICONTROL OK]** 以確認。 Adobe Campaign會自動偵測所選表格的結構，並產生邏輯架構。 請注意，Adobe Campaign不會產生連結。
+1. 按一下&#x200B;**[!UICONTROL OK]**&#x200B;確認。 Adobe Campaign會自動偵測所選表格的結構，並產生邏輯架構。 請注意，Adobe Campaign不會產生連結。
 
-1. 按一下 **[!UICONTROL Save]** 以確認建立。
+1. 按一下&#x200B;**[!UICONTROL Save]**&#x200B;以確認建立。
 
    >[!CAUTION]
    >

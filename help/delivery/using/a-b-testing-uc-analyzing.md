@@ -17,11 +17,11 @@ ht-degree: 2%
 
 傳送測試傳送後，您可以檢查傳送給哪些收件者，以及是否已開啟這些收件者。
 
-* 若要找出目標收件者，請透過行銷活動控制面板開啟傳遞，然後按一下 **[!UICONTROL Delivery]** 標籤。
+* 若要找出目標收件者，請透過行銷活動儀表板開啟傳遞，然後按一下「**[!UICONTROL Delivery]**」標籤。
 
   ![](assets/use_case_abtesting_analysis_001.png)
 
-* 若要瞭解傳遞是否已開啟，請前往 **[!UICONTROL Tracking]** 標籤。
+* 若要檢視傳遞是否已開啟，請前往&#x200B;**[!UICONTROL Tracking]**&#x200B;標籤。
 
   ![](assets/use_case_abtesting_analysis_002.png)
 

@@ -15,7 +15,7 @@ ht-degree: 2%
 
 
 
-依預設，以下詳細描述的工作流程會安裝在所有執行個體上，並讓您初始化退回郵件限定規則清單、網域清單和MX清單。 一旦 **傳遞能力監控（電子郵件傳遞能力）** 套件已安裝，此工作流程會在夜間執行。 如需傳遞能力監視的詳細資訊，請參閱此 [區段](../../delivery/using/about-deliverability.md).
+依預設，以下詳細描述的工作流程會安裝在所有執行個體上，並讓您初始化退回郵件限定規則清單、網域清單和MX清單。 安裝&#x200B;**傳遞能力監視（電子郵件傳遞能力）**&#x200B;封裝後，此工作流程會在夜間執行。 如需傳遞能力監視的詳細資訊，請參閱此[區段](../../delivery/using/about-deliverability.md)。
 
 <table> 
  <tbody> 
@@ -27,7 +27,7 @@ ht-degree: 2%
   <tr> 
    <td> <strong>重新整理傳遞能力</strong><br /> </td> 
    <td> <span class="uicontrol">deliverabilityUpdate</span> <br /> </td> 
-   <td>  一旦 <strong>傳遞能力監控（電子郵件傳遞能力）</strong> 套件已安裝完成，此工作流程每晚執行以定期更新規則清單，並允許主動管理平台傳遞能力。<br /> </td> 
+   <td>  安裝<strong>傳遞能力監視（電子郵件傳遞能力）</strong>封裝後，此工作流程會在夜間執行，以定期更新規則清單，並允許主動管理平台傳遞能力。<br /> </td> 
   </tr> 
  </tbody> 
 </table>

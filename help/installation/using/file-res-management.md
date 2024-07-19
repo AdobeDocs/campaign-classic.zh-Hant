@@ -21,27 +21,27 @@ ht-degree: 1%
 
 ## 限制上傳檔案格式 {#limiting-uploadable-files}
 
-使用 **uploadWhiteList** 屬性來限制可在Adobe Campaign伺服器上傳的檔案型別。
+使用&#x200B;**uploadWhiteList**&#x200B;屬性來限制Adobe Campaign伺服器上可供上傳的檔案型別。
 
-此屬性可在 **dataStore** 的元素 **serverConf.xml** 檔案。 所有引數都可在 **serverConf.xml** 列於此 [區段](../../installation/using/the-server-configuration-file.md).
+此屬性可在&#x200B;**serverConf.xml**&#x200B;檔案的&#x200B;**dataStore**&#x200B;元素中使用。 **serverConf.xml**&#x200B;中可用的所有引數都列在此[區段](../../installation/using/the-server-configuration-file.md)中。
 
-此屬性的預設值為 **.+** 並可讓您上傳任何檔案型別。
+此屬性的預設值為&#x200B;**。+**&#x200B;並讓您上傳任何檔案型別。
 
 若要限制可能的格式，請以有效的Java規則運算式取代屬性值。 您可以輸入數個值，方法是以逗號分隔。
 
-例如： **uploadWhiteList=&quot;。&#42;.png，.&#42;.jpg」** 可讓您將PNG和JPG格式上傳至伺服器。 將不接受任何其他格式。
+例如：**uploadWhiteList=&quot;。&#42;.png，。&#42;.jpg&quot;**&#x200B;可讓您在伺服器上上傳PNG和JPG格式。 將不接受任何其他格式。
 
 您也可以藉由設定Web伺服器來防止重要檔案上傳。 [了解更多](web-server-configuration.md)
 
 >[!NOTE]
 >
->此 **uploadWhiteList** 屬性會限制可在Adobe Campaign伺服器上傳的檔案型別。 但是，當發佈模式為 **追蹤伺服器** 或 **其他Adobe Campaign伺服器**，則 **uploadWhitelist** 屬性也必須在這些伺服器上更新。
+>**uploadWhiteList**&#x200B;屬性會限制Adobe Campaign伺服器上可供上傳的檔案型別。 但是，當發佈模式為&#x200B;**追蹤伺服器**&#x200B;或&#x200B;**其他Adobe Campaign伺服器**&#x200B;時，也必須更新這些伺服器上的&#x200B;**uploadWhitelist**&#x200B;屬性。
 
 ## Proxy連線設定 {#proxy-connection-configuration}
 
-您可以使用 **檔案傳輸** 例如工作流程活動。 若要完成此操作，您需要配置 **proxyConfig** 的區段 **serverConf.xml** 透過特定指令建立檔案。 所有引數都可在 **serverConf.xml** 列於此 [區段](../../installation/using/the-server-configuration-file.md).
+您可以透過Proxy，使用&#x200B;**檔案傳輸**&#x200B;工作流程活動，將Campaign伺服器連線至外部系統。 若要完成此操作，您必須透過特定命令設定&#x200B;**serverConf.xml**&#x200B;檔案的&#x200B;**proxyConfig**&#x200B;區段。 **serverConf.xml**&#x200B;中可用的所有引數都列在此[區段](../../installation/using/the-server-configuration-file.md)中。
 
-可能有下列Proxy連線：HTTP、HTTPS、FTP、SFTP。 請注意，從20.2版Campaign開始，HTTP和HTTPS通訊協定引數為 **不再提供**. 由於這些引數仍可在先前的組建中使用（包括9032），因此下文仍會提及這些引數。
+可能有下列Proxy連線：HTTP、HTTPS、FTP、SFTP。 請注意，從20.2 Campaign版本開始，HTTP和HTTPS通訊協定引數已&#x200B;**不再提供**。 由於這些引數仍可在先前的組建中使用（包括9032），因此下文仍會提及這些引數。
 
 >[!CAUTION]
 >
@@ -112,23 +112,23 @@ FTP/FTPS連線會在proxyFTP引數中定義：
 * 沒有驗證的HTTP
 * HTTP基本驗證
 
-若要啟動Proxy模式，必須在 `serverconf.xml` 檔案：
+若要啟用Proxy模式，必須在`serverconf.xml`檔案中完成下列變更：
 
 ```
 <nmac useHTTPProxy="true">
 ```
 
-如需此iOS HTTP/2聯結器的詳細資訊，請參閱此 [頁面](../../delivery/using/about-mobile-app-channel.md).
+如需此iOS HTTP/2聯結器的詳細資訊，請參閱此[頁面](../../delivery/using/about-mobile-app-channel.md)。
 
 ## 管理公用資源 {#managing-public-resources}
 
 若要公開發佈，連結至行銷活動的電子郵件和公共資源中使用的影像，必須存在於外部可存取的伺服器上。 然後，外部收件者或操作員便可使用這些值。 [了解更多](../../installation/using/deploying-an-instance.md#managing-public-resources)。
 
-公用資源儲存在 **/var/res/instance** Adobe Campaign安裝目錄的目錄。
+公用資源儲存在Adobe Campaign安裝目錄的&#x200B;**/var/res/instance**&#x200B;目錄中。
 
-相符的URL是： **http://server/res/instance** 位置 **例項** 是追蹤例項的名稱。
+相符的URL是： **http://server/res/instance**，其中&#x200B;**執行個體**&#x200B;是追蹤執行個體的名稱。
 
-您可以將節點新增至以指定另一個目錄 **會議 — `<instance>`.xml** 檔案來設定伺服器上的儲存空間。 這表示新增下列行：
+您可以將節點新增至&#x200B;**conf-`<instance>`.xml**&#x200B;檔案來指定另一個目錄，以設定伺服器上的儲存空間。 這表示新增下列行：
 
 ```
 <serverconf>

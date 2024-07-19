@@ -25,12 +25,12 @@ ht-degree: 6%
 
 ![](assets/Offermgt2.png)
 
-![](assets/do-not-localize/how-to-video.png) 若要熟悉Campaign互動中所使用的互動功能和術語，請觀看 [此影片](https://helpx.adobe.com/campaign/classic/how-to/acs-overview.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com).
+![](assets/do-not-localize/how-to-video.png)若要熟悉Campaign互動中使用的互動功能和術語，請觀看[此影片](https://helpx.adobe.com/campaign/classic/how-to/acs-overview.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com)。
 
 ## 相關主題
 
 | 有用的頁面 | 其他資源 |
 |---|---|
-| [互動實作步驟](../../interaction/using/implementation-steps.md) | [測試選件散佈](../../interaction/using/about-offers-simulation.md) |
-| [即時/設計環境](../../interaction/using/live-design-environments.md) | [在電子郵件中新增優惠方案](../../interaction/using/integrating-an-offer-via-the-wizard.md) |
+| [互動實作步驟](../../interaction/using/implementation-steps.md) | [正在測試優惠方案發佈](../../interaction/using/about-offers-simulation.md) |
+| [即時/設計環境](../../interaction/using/live-design-environments.md) | [在電子郵件中新增選件](../../interaction/using/integrating-an-offer-via-the-wizard.md) |
 | [建立優惠方案空間](../../interaction/using/creating-offer-spaces.md) | [使用案例：在網站中新增選件](../../interaction/using/offers-on-an-inbound-channel.md) |

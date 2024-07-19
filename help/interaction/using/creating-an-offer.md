@@ -22,7 +22,7 @@ ht-degree: 2%
 
 若要建立優惠方案，請套用下列步驟：
 
-1. 前往 **[!UICONTROL Campaigns]** 標籤並按一下 **[!UICONTROL Offers]** 連結。
+1. 前往&#x200B;**[!UICONTROL Campaigns]**&#x200B;標籤，然後按一下&#x200B;**[!UICONTROL Offers]**&#x200B;連結。
 
    ![](assets/offer_create_001.png)
 
@@ -34,7 +34,7 @@ ht-degree: 2%
 
    ![](assets/offer_create_002.png)
 
-1. 按一下 **[!UICONTROL Save]** 以建立選件。
+1. 按一下&#x200B;**[!UICONTROL Save]**&#x200B;以建立選件。
 
    ![](assets/offer_create_003.png)
 
@@ -44,7 +44,7 @@ ht-degree: 2%
 
 ## 設定優惠方案適用性 {#configuring-offer-eligibility}
 
-在 **[!UICONTROL Eligibility]** 索引標籤，定義優惠的有效期間和可顯示、要套用至目標的篩選器和優惠權重。
+在&#x200B;**[!UICONTROL Eligibility]**&#x200B;索引標籤中，定義優惠將有效且可顯示的期間、要套用至目標的篩選器和優惠權重。
 
 ### 定義優惠方案的資格期間 {#defining-the-eligibility-period-of-an-offer}
 
@@ -58,11 +58,11 @@ ht-degree: 2%
 
 您可以將篩選器套用至優惠方案目標。
 
-若要這麼做，請按一下 **[!UICONTROL Edit query]** 連結並選取您要套用的篩選器。 (請參閱 [本節](../../platform/using/steps-to-create-a-query.md#step-4---filter-data))。
+若要這麼做，請按一下&#x200B;**[!UICONTROL Edit query]**&#x200B;連結，並選取您要套用的篩選器。 （請參閱[此章節](../../platform/using/steps-to-create-a-query.md#step-4---filter-data)）。
 
 ![](assets/offer_eligibility_create_003.png)
 
-如果已經建立預先定義的篩選器，您可以從使用者篩選器清單中選取它們。 有關詳細資訊，請參閱 [建立預先定義的篩選器](../../interaction/using/creating-predefined-filters.md).
+如果已經建立預先定義的篩選器，您可以從使用者篩選器清單中選取它們。 如需詳細資訊，請參閱[建立預先定義的篩選器](../../interaction/using/creating-predefined-filters.md)。
 
 ![](assets/offer_eligibility_create_004.png)
 
@@ -76,7 +76,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->指派的權重可以根據優惠方案所屬類別的引數暫時修改。 有關詳細資訊，請參閱 [建立優惠方案類別](../../interaction/using/creating-offer-categories.md).
+>指派的權重可以根據優惠方案所屬類別的引數暫時修改。 如需詳細資訊，請參閱[建立優惠方案類別](../../interaction/using/creating-offer-categories.md)。
 
 若要在選件中建立權數，請套用下列步驟：
 
@@ -104,7 +104,7 @@ ht-degree: 2%
 
    ![](assets/offer_weight_create_004.png)
 
-1. 按一下 **[!UICONTROL OK]** 以節省重量。
+1. 按一下&#x200B;**[!UICONTROL OK]**&#x200B;以儲存重量。
 
    ![](assets/offer_weight_create_005.png)
 
@@ -116,22 +116,22 @@ ht-degree: 2%
 
 完成設定後，優惠方案控制面板上將提供適用性規則的摘要。
 
-若要檢視，請按一下 **[!UICONTROL Schedule and eligibility rules]** 連結。
+若要檢視，請按一下&#x200B;**[!UICONTROL Schedule and eligibility rules]**&#x200B;連結。
 
 ![](assets/offer_eligibility_create_005.png)
 
 ## 建立選件內容 {#creating-the-offer-content}
 
-1. 按一下 **[!UICONTROL Edit]** 標籤，然後按一下 **[!UICONTROL Content]** 標籤。
+1. 按一下&#x200B;**[!UICONTROL Edit]**&#x200B;標籤，然後按一下&#x200B;**[!UICONTROL Content]**&#x200B;標籤。
 
    ![](assets/offer_content_create_001.png)
 
 1. 完成選件內容的各個欄位。
 
-   * **[!UICONTROL Title]** ：指定您要在選件中顯示的標題。 警告：這並非指優惠方案的標籤，其定義位於 **[!UICONTROL General]** 標籤。
+   * **[!UICONTROL Title]** ：指定您想要顯示在選件中的標題。 警告：這並非指的是&#x200B;**[!UICONTROL General]**&#x200B;索引標籤中定義的選件標籤。
    * **[!UICONTROL Destination URL]** ：指定您選件的URL。 若要正確處理，其開頭必須是&quot;http://&quot;或&quot;https://&quot;。
-   * **[!UICONTROL Image URL]** ：指定選件影像的URL或存取路徑。
-   * **[!UICONTROL HTML content]** / **[!UICONTROL Text content]** ：在想要的索引標籤中輸入優惠方案內文。 若要產生追蹤，請 **[!UICONTROL HTML content]** 必須由HTML元素組成，這些元素可包含在 `<div>` 輸入元素。 例如，的結果 `<table>` HTML頁面中的元素如下：
+   * **[!UICONTROL Image URL]** ：指定URL或選件影像的存取路徑。
+   * **[!UICONTROL HTML content]** / **[!UICONTROL Text content]** ：在想要的索引標籤中輸入優惠方案內文。 若要產生追蹤，**[!UICONTROL HTML content]**&#x200B;必須由可以包含在`<div>`型別專案中的HTML專案組成。 例如，HTML頁面中`<table>`元素的結果將如下所示：
 
    ```
       <div> 
@@ -148,11 +148,11 @@ ht-degree: 2%
       </div>
    ```
 
-   定義接受URL會顯示在中 [在接受主張時設定狀態](../../interaction/using/creating-offer-spaces.md#configuring-the-status-when-the-proposition-is-accepted) 區段。
+   定義接受URL會顯示在[設定接受主張時的狀態](../../interaction/using/creating-offer-spaces.md#configuring-the-status-when-the-proposition-is-accepted)區段中。
 
    ![](assets/offer_content_create_002.png)
 
-   若要尋找在優惠方案空間設定期間定義的必填欄位，請按一下 **[!UICONTROL Content definitions]** 顯示清單的連結。 有關詳細資訊，請參閱 [建立優惠方案空間](../../interaction/using/creating-offer-spaces.md).
+   若要尋找優惠方案空間設定期間所定義的必要欄位，請按一下&#x200B;**[!UICONTROL Content definitions]**&#x200B;連結以顯示清單。 如需詳細資訊，請參閱[建立優惠方案空間](../../interaction/using/creating-offer-spaces.md)。
 
    ![](assets/offer_content_create_003.png)
 
@@ -162,7 +162,7 @@ ht-degree: 2%
 
 一旦您的優惠方案內容設定完成，您就可以預覽其給收件者呈現的優惠方案。 操作步驟：
 
-1. 按一下 **[!UICONTROL Preview]** 標籤。
+1. 按一下「**[!UICONTROL Preview]**」標籤。
 
    ![](assets/offer_preview_create_001.png)
 
@@ -182,8 +182,8 @@ ht-degree: 2%
 >
 >這些假設可透過「回應管理員」執行。 請檢查您的授權合約。
 
-對優惠方案主張執行的假設在其中 **[!UICONTROL Measure]** 標籤。
+對優惠方案主張執行的假設會在其&#x200B;**[!UICONTROL Measure]**&#x200B;標籤中參照。
 
-建立假設的詳細資訊，請參見 [此頁面](../../response/using/about-response-manager.md).
+建立假設在[此頁面](../../response/using/about-response-manager.md)中有詳細說明。
 
 ![](assets/offer_hypothesis_001.png)

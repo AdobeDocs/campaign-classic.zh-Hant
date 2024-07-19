@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Chrome Firefox和Edge瀏覽器中的Campaign網頁元件及版本100
-description: Chrome、Firefox和Edge瀏覽器中的Campaign網頁元件和版本100
+title: Chrome Firefox和Edge瀏覽器中的Campaign Web元件及版本100
+description: Chrome、Firefox和Edge瀏覽器中的Campaign Web元件和版本100
 feature: Technote
 exl-id: 2016279a-7b02-4399-b2ed-9a15456de816
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # 3位數瀏覽器版本對Campaign網頁元件的影響 {#version-100}
 
-Google和Mozilla警告說，Chrome和Firefox可能會因為某些網站即將推出的3位數版本而中斷它們。
+Google和Mozilla警告Chrome和Firefox可能因為即將推出的3位數版本而破壞部分網站。
 
-Chrome v100的發行日期設定為 **2022年3月29日**&#x200B;上的、和Firefox v100 **2022年5月3日**.
+Chrome v100已設定於&#x200B;**2022年3月29日**&#x200B;發行，Firefox v100則設定於&#x200B;**2022年5月3日**。
 
 Microsoft於2022年3月早些時候發行Edge v100。
 
@@ -43,8 +43,8 @@ Adobe建議您測試Campaign網路應用程式（包括網路表單和調查）�
 
 若要使用Mozilla Firefox 100測試您的網頁，您可以手動變更使用者代理字串，在網頁應用程式上模擬即將發生的使用者代理程式變更。
 
-1. 開啟Firefox，輸入 `about:config` ，然後按Enter鍵。
-1. 搜尋 `general.useragent.override`.
+1. 開啟Firefox，在網址列輸入`about:config`，然後按Enter鍵。
+1. 搜尋`general.useragent.override`。
 1. 選取「字串」，然後按一下加號(+)。
 
    ![](assets/force-user-agent-firefox.png)
@@ -58,33 +58,33 @@ Adobe建議您測試Campaign網路應用程式（包括網路表單和調查）�
 1. 按一下藍色核取記號按鈕以儲存設定。
 1. 關閉並重新啟動瀏覽器。
 
-若要將您的使用者代理變回其預設值，只要返回 `about:config` 並搜尋 `general.useragent.override` 重新設定。  出現時，按一下垃圾桶圖示以刪除設定，然後重新啟動瀏覽器。
+若要將您的使用者代理程式變回其預設值，只要返回`about:config`並再次搜尋`general.useragent.override`設定即可。  出現時，按一下垃圾桶圖示以刪除設定，然後重新啟動瀏覽器。
 
 ### 使用Chrome 100進行測試{#test-chrome-100}
 
 若要在您自己的網頁應用程式上測試Google Chrome 100使用者代理程式，您可以使用下列步驟啟用此測試：
 
-1. 開啟Chrome，輸入 `chrome://flags` ，然後按Enter鍵。
-1. 搜尋 `Force major version to 100 in User-Agent` 在搜尋欄位中，並將其啟用，如下所示。
+1. 開啟Chrome，在網址列輸入`chrome://flags`，然後按Enter鍵。
+1. 在搜尋欄位中搜尋`Force major version to 100 in User-Agent`，並將其啟用，如下所示。
 
    ![](assets/force-user-agent-chrome.png)
 
 1. 重新啟動瀏覽器。
-1. 關閉 `chrome://flags` 標籤。
+1. 關閉`chrome://flags`標籤。
 
-若要將使用者代理變更為其預設值，只需依照此程式並將標幟的設定變更為 `Default` 並重新啟動瀏覽器。
+若要將使用者代理程式變更回其預設值，只要依照此程式並將標幟的設定變更為`Default`並重新啟動瀏覽器即可。
 
 
 ### 使用Microsoft Edge 100進行測試{#test-ms-edge-100}
 
-從v97開始，網站擁有者可以啟用實驗旗標來模擬此版本  `#force-major-version-to-100` 在 `edge://flags`.
+從v97開始，網站擁有者可以在`edge://flags`中啟用實驗旗標`#force-major-version-to-100`來模擬此版本。
 
-1. 開啟Microsoft Edge，輸入 `edge://flags` ，然後按Enter鍵。
-1. 搜尋 `force-major-version-to-100` 欄位，並將其啟用，如下所示。
+1. 開啟Microsoft Edge，在網址列輸入`edge://flags`，然後按Enter鍵。
+1. 搜尋`force-major-version-to-100`欄位並啟用它，如下所示。
 
    ![](assets/force-user-agent-edge.png)
 
 1. 重新啟動瀏覽器。
-1. 關閉 `edge://flags` 標籤。
+1. 關閉`edge://flags`標籤。
 
-若要將使用者代理變更為其預設值，只需依照此程式並將標幟的設定變更為 `Default` 並重新啟動瀏覽器。
+若要將使用者代理程式變更回其預設值，只要依照此程式並將標幟的設定變更為`Default`並重新啟動瀏覽器即可。

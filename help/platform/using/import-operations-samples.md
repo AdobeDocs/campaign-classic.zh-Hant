@@ -25,12 +25,12 @@ ht-degree: 55%
 
 1. 建立清單
 
-   * 按一下 **[!UICONTROL Lists]** 中的連結 **[!UICONTROL Profiles and targets]** Adobe Campaign首頁的功能表。
-   * 按一下 **[!UICONTROL Create]** 然後 **[!UICONTROL Import a list]** 按鈕。
+   * 按一下Adobe Campaign首頁&#x200B;**[!UICONTROL Profiles and targets]**&#x200B;功能表中的&#x200B;**[!UICONTROL Lists]**&#x200B;連結。
+   * 按一下&#x200B;**[!UICONTROL Create]**，然後按一下&#x200B;**[!UICONTROL Import a list]**&#x200B;按鈕。
 
 1. 選擇要匯入的檔案
 
-   按一下右側的資料夾 **[!UICONTROL Local file]** 欄位並選取包含要匯入之清單的檔案。
+   按一下&#x200B;**[!UICONTROL Local file]**&#x200B;欄位右側的資料夾，並選取包含要匯入清單的檔案。
 
    ![](assets/s_ncs_user_import_example00_01.png)
 
@@ -42,7 +42,7 @@ ht-degree: 55%
 
 1. 啟動匯入
 
-   按一下 **[!UICONTROL Next]** 然後 **[!UICONTROL Start]** 以開始匯入清單。
+   按一下&#x200B;**[!UICONTROL Next]**，然後按&#x200B;**[!UICONTROL Start]**，開始匯入清單。
 
    ![](assets/s_ncs_user_import_example00_03.png)
 
@@ -52,29 +52,29 @@ ht-degree: 55%
 
 1. 選擇範本
 
-   * 從Adobe Campaign首頁，按一下 **[!UICONTROL Profiles and targets]** 連結，然後 **[!UICONTROL Jobs]**. 在工作清單上方，按一下 **[!UICONTROL New import]**.
-   * 保留 **[!UICONTROL New text import]** 預設為選取的範本。
+   * 從Adobe Campaign首頁，按一下&#x200B;**[!UICONTROL Profiles and targets]**&#x200B;連結，然後按&#x200B;**[!UICONTROL Jobs]**。 按一下工作清單上方的&#x200B;**[!UICONTROL New import]**。
+   * 依預設保持選取&#x200B;**[!UICONTROL New text import]**&#x200B;範本。
    * 更改標籤和描述。
    * 選取 **[!UICONTROL Simple import]**。
    * 保留預設作業資料夾。
-   * 按一下 **[!UICONTROL Advanced parameters]** 並選取 **[!UICONTROL Tracking mode]** 選項以檢視執行期間匯入的詳細資訊。
+   * 按一下&#x200B;**[!UICONTROL Advanced parameters]**&#x200B;並選取&#x200B;**[!UICONTROL Tracking mode]**&#x200B;選項，以檢視執行期間匯入的詳細資料。
 
 1. 選擇要匯入的檔案
 
-   按一下右側的資料夾 **[!UICONTROL Local file]** 欄位並選取您要匯入的檔案。
+   按一下&#x200B;**[!UICONTROL Local file]**&#x200B;欄位右側的資料夾，然後選取您要匯入的檔案。
 
    ![](assets/s_ncs_user_import_example01_01.png)
 
 1. 關聯欄位
 
-   按一下 **[!UICONTROL Guess the destination fields]** 圖示以自動對應來源和目的地結構描述。 在按一下之前，請先檢查此視窗中的資訊 **[!UICONTROL Next]**.
+   按一下&#x200B;**[!UICONTROL Guess the destination fields]**&#x200B;圖示以自動對應來源和目的地結構描述。 按一下&#x200B;**[!UICONTROL Next]**&#x200B;之前，請先檢查此視窗中的資訊。
 
    ![](assets/s_ncs_user_import_example03_01.png)
 
 1. 調和
 
    * 轉到&#x200B;**收件者 (nms:recipient)** 表。
-   * 選取 **[!UICONTROL Insertion]** 操作，並將預設值保留在其他欄位中。
+   * 選取&#x200B;**[!UICONTROL Insertion]**&#x200B;作業，並將預設值保留在其他欄位中。
 
      ![](assets/s_ncs_user_import_example04_01.png)
 
@@ -92,7 +92,7 @@ ht-degree: 55%
 
      ![](assets/s_ncs_user_import_example06_01.png)
 
-     此 **[!UICONTROL Tracking]** 模式可讓您針對來源檔案中的每個記錄，追蹤匯入的詳細資料。 若要這麼做，請從首頁按一下 **[!UICONTROL Profiles and Targets]** 則 **[!UICONTROL Processes]**，選取相關的匯入，並查閱 **[!UICONTROL General]**， **[!UICONTROL Journal]** 和 **[!UICONTROL Rejects]** 索引標籤。
+     **[!UICONTROL Tracking]**&#x200B;模式可讓您追蹤來源檔案中每個記錄的匯入詳細資料。 若要這麼做，請從首頁按一下&#x200B;**[!UICONTROL Profiles and Targets]**，然後按一下&#x200B;**[!UICONTROL Processes]**，選取相關的匯入，並查閱&#x200B;**[!UICONTROL General]**、**[!UICONTROL Journal]**&#x200B;和&#x200B;**[!UICONTROL Rejects]**&#x200B;索引標籤。
 
       * 檢查匯入進度
 
@@ -124,9 +124,9 @@ ht-degree: 55%
 
 1. 調和
 
-   * 保留 **[!UICONTROL Update or insert]** 已預設選取。
-   * 保留選項 **[!UICONTROL Management of duplicates]** 在 **[!UICONTROL Update]** 模式，以便使用文字檔中的資料修改資料庫中的現有記錄。
-   * 選取欄位 **[!UICONTROL Birth date]**， **[!UICONTROL Name]** 和 **[!UICONTROL Company]** 並指派調解金鑰給他們。
+   * 保留&#x200B;**[!UICONTROL Update or insert]**&#x200B;預設為選取。
+   * 將選項&#x200B;**[!UICONTROL Management of duplicates]**&#x200B;保留在&#x200B;**[!UICONTROL Update]**&#x200B;模式，以便使用文字檔中的資料修改資料庫中的現有記錄。
+   * 選取欄位&#x200B;**[!UICONTROL Birth date]**、**[!UICONTROL Name]**&#x200B;和&#x200B;**[!UICONTROL Company]**，並指派調解金鑰給它們。
 
      ![](assets/s_ncs_user_import_example04_02.png)
 
@@ -174,12 +174,12 @@ ht-degree: 55%
 
 1. 調和
 
-   * 移至表格並選取 **[!UICONTROL Update]** 作業。
-   * 選取選項 **[!UICONTROL Reject entity]** 針對 **[!UICONTROL Management of doubles]** 欄位。
-   * 保留選項 **[!UICONTROL Management of duplicates]** 在 **[!UICONTROL Update]** 模式，以便使用文字檔中的資料修改資料庫中的現有記錄。
-   * 將游標放在 **[!UICONTROL Last name (@lastName)]** 節點並選取 **[!UICONTROL Update only if destination is empty]** 選項。
-   * 對重複此操作 **[!UICONTROL Company (@company)]** 節點。
-   * 指派調解金鑰給欄位 **[!UICONTROL Birth date]**， **[!UICONTROL Email]** 和 **[!UICONTROL First name]**.
+   * 移至表格並選取&#x200B;**[!UICONTROL Update]**&#x200B;作業。
+   * 為&#x200B;**[!UICONTROL Management of doubles]**&#x200B;欄位選取選項&#x200B;**[!UICONTROL Reject entity]**。
+   * 將選項&#x200B;**[!UICONTROL Management of duplicates]**&#x200B;保留在&#x200B;**[!UICONTROL Update]**&#x200B;模式，以便使用文字檔中的資料修改資料庫中的現有記錄。
+   * 將游標放在&#x200B;**[!UICONTROL Last name (@lastName)]**&#x200B;節點上，並選取&#x200B;**[!UICONTROL Update only if destination is empty]**&#x200B;選項。
+   * 對&#x200B;**[!UICONTROL Company (@company)]**&#x200B;節點重複此作業。
+   * 指派調解金鑰給欄位&#x200B;**[!UICONTROL Birth date]**、**[!UICONTROL Email]**&#x200B;和&#x200B;**[!UICONTROL First name]**。
 
      ![](assets/s_ncs_user_import_example04_03.png)
 
@@ -223,11 +223,11 @@ ht-degree: 55%
 
 1. 調和
 
-   * 移至表格並選取「 」 **[!UICONTROL Update]**.
-   * 選取選項 **[!UICONTROL Reject entity]** 針對 **[!UICONTROL Management of doubles]** 欄位。
-   * 保留選項 **[!UICONTROL Management of duplicates]** 在 **[!UICONTROL Update]** 使用文字檔資料修改資料庫中現有記錄的模式。
-   * 將游標放在 **[!UICONTROL Account number (@account)]** 節點並選取選項 **[!UICONTROL Take empty values into account]**.
-   * 選取欄位 **[!UICONTROL Birth date]**， **[!UICONTROL Email]** 和 **[!UICONTROL First name]** 並指派調解金鑰給他們。
+   * 移至表格並選取&#x200B;**[!UICONTROL Update]**。
+   * 為&#x200B;**[!UICONTROL Management of doubles]**&#x200B;欄位選取選項&#x200B;**[!UICONTROL Reject entity]**。
+   * 保留選項&#x200B;**[!UICONTROL Management of duplicates]**&#x200B;為&#x200B;**[!UICONTROL Update]**&#x200B;模式，以便使用文字檔中的資料修改資料庫中的現有記錄。
+   * 將游標放在&#x200B;**[!UICONTROL Account number (@account)]**&#x200B;節點上，並選取選項&#x200B;**[!UICONTROL Take empty values into account]**。
+   * 選取欄位&#x200B;**[!UICONTROL Birth date]**、**[!UICONTROL Email]**&#x200B;和&#x200B;**[!UICONTROL First name]**，並指派調解金鑰給它們。
 
      ![](assets/s_ncs_user_import_example04_04.png)
 
@@ -238,4 +238,4 @@ ht-degree: 55%
 
      ![](assets/s_ncs_user_import_example06_06.png)
 
-     清空的文字檔值已覆寫資料庫中的值。 資料庫中的現有值已更新為匯入檔案中的值，以符合 **[!UICONTROL Update]** 為步驟4中的重複專案選取的選項。
+     清空的文字檔值已覆寫資料庫中的值。 資料庫中的現有值已更新為匯入檔案中的值，以符合在步驟4中為重複專案選取的&#x200B;**[!UICONTROL Update]**&#x200B;選項。

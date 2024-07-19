@@ -65,4 +65,4 @@ ht-degree: 2%
 
 ### 安裝和設定（中間來源部署） {#installing-and-configuring--mid-sourcing-deployment-}
 
-請參閱 [中間來源伺服器](../../installation/using/mid-sourcing-server.md).
+請參閱[中間來源伺服器](../../installation/using/mid-sourcing-server.md)。

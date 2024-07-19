@@ -18,34 +18,34 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->從Campaign Classicv7.3.1開始，所有運運算元都應該使用 [AdobeIdentity Management系統(IMS)](https://helpx.adobe.com/tw/enterprise/using/identity.html){target="_blank"} 以連線至Campaign。
+>從Campaign Classicv7.3.1開始，所有運運算元都應該使用[AdobeIdentity Management系統(IMS)](https://helpx.adobe.com/tw/enterprise/using/identity.html){target="_blank"}來連線到Campaign。
 >
->為了強化安全性和驗證程式，Adobe Campaign強烈建議您將所有現有的操作員驗證模式從登入/密碼原生驗證移轉至AdobeIdentity Management系統(IMS)。 瞭解如何在中移轉您的操作員 [此頁面](../../technotes/using/migrate-users-to-ims.md).
+>為了強化安全性和驗證程式，Adobe Campaign強烈建議您將所有現有的操作員驗證模式從登入/密碼原生驗證移轉至AdobeIdentity Management系統(IMS)。 在[此頁面](../../technotes/using/migrate-users-to-ims.md)中瞭解如何移轉您的操作員。
 > 
->移轉後，請注意下一節不再適用。  瞭解如何在中使用Adobe IMS設定許可權 [Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/gs-permissions.html?lang=zh-Hant){target="_blank"}.
+>移轉後，請注意下一節不再適用。  在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/gs-permissions.html?lang=zh-Hant){target="_blank"}中瞭解如何使用Adobe IMS設定許可權。
 
 
 ## 開始使用Campaign運運算元 {#about-operators}
 
 >[!NOTE]
 >
->這些程式僅適用於使用原生驗證連線到Campaign的運運算元。 如需Adobe IMS驗證的相關資訊，請參閱 [本檔案](https://helpx.adobe.com/enterprise/using/manage-users-individually.html#_blank).
+>這些程式僅適用於使用原生驗證連線到Campaign的運運算元。 如需Adobe IMS驗證資訊，請參閱[此檔案](https://helpx.adobe.com/enterprise/using/manage-users-individually.html#_blank)。
 
 運運算元是有許可權登入及執行動作的Adobe Campaign使用者。
 
-依預設，運運算元儲存在 **[!UICONTROL Administration > Access management > Operators]** 節點。
+依預設，運運算元儲存在&#x200B;**[!UICONTROL Administration > Access management > Operators]**&#x200B;節點中。
 
 ![](assets/s_ncs_user_list_operators.png)
 
 運運算元可以手動建立，或對應至現有的LDAP目錄。
 
-建立運運算元的完整程式如下所述： [此頁面](#creating-an-operator).
+建立運運算元的完整程式在[此頁面](#creating-an-operator)中說明。
 
-如需Adobe Campaign和LDAP整合的詳細資訊，請參閱 [此頁面](../../installation/using/connecting-through-ldap.md).
+如需Adobe Campaign與LDAP整合的詳細資訊，請參閱[此頁面](../../installation/using/connecting-through-ldap.md)。
 
 >[!IMPORTANT]
 >
->運運算元必須連結至安全區域，才能登入執行個體。 如需Adobe Campaign中安全性區域的詳細資訊，請參閱 [此頁面](../../installation/using/security-zones.md).
+>運運算元必須連結至安全區域，才能登入執行個體。 如需Adobe Campaign中安全性區域的詳細資訊，請參閱[此頁面](../../installation/using/security-zones.md)。
 
 使用者也可以使用其Adobe ID直接連線至Adobe Campaign。 如需關於此項目的詳細資訊，請參閱此[頁面](../../integrations/using/about-adobe-id.md)。
 
@@ -53,47 +53,47 @@ ht-degree: 2%
 
 若要建立新運運算元並授與許可權，請遵循下列步驟：
 
-1. 按一下 **[!UICONTROL New]** 按鈕，並輸入新運運算元的詳細資訊。
+1. 按一下運運算元清單上方的&#x200B;**[!UICONTROL New]**&#x200B;按鈕，然後輸入新運運算元的詳細資訊。
 
    ![](assets/s_ncs_user_operator_new.png)
 
-1. 指定 **[!UICONTROL Identification parameters]** 使用者的名稱：其登入名稱、密碼和名稱。 操作員將使用登入和密碼來登入Adobe Campaign。 使用者登入後，他們便可以透過 **[!UICONTROL Tools > Change password]** 功能表。 操作員的電子郵件至關重要，因為它可讓操作員接收通知，例如在處理核準時。
+1. 指定使用者的&#x200B;**[!UICONTROL Identification parameters]**：其登入、密碼和名稱。 操作員將使用登入和密碼來登入Adobe Campaign。 使用者登入後，即可透過&#x200B;**[!UICONTROL Tools > Change password]**&#x200B;功能表變更密碼。 操作員的電子郵件至關重要，因為它可讓操作員接收通知，例如在處理核準時。
 
-   此區段也可讓您將運運算元連結至組織實體。 有關詳細資訊，請參閱 [此頁面](../../distributed/using/about-distributed-marketing.md).
+   此區段也可讓您將運運算元連結至組織實體。 如需詳細資訊，請參閱[此頁面](../../distributed/using/about-distributed-marketing.md)。
 
-1. 選取授與運運算元的許可權，在 **[!UICONTROL Operator access rights]** 區段。
+1. 在&#x200B;**[!UICONTROL Operator access rights]**&#x200B;區段中選取授與運運算元的許可權。
 
-   若要指派許可權給運運算元，請按一下 **[!UICONTROL Add]** 按鈕時，請從可用群組清單中選取一組運運算元：
+   若要將許可權指派給運運算元，請按一下許可權清單上方的&#x200B;**[!UICONTROL Add]**&#x200B;按鈕，然後從可用群組清單中選取運運算元群組：
 
    ![](assets/s_ncs_user_permissions_operators.png)
 
-   您也可以選取一或多個已命名的許可權(請參閱 [已命名的許可權](#named-rights))。 若要這麼做，請按一下右側的箭頭 **[!UICONTROL Folder]** 欄位，然後選取 **[!UICONTROL Named rights]**：
+   您也可以選取一或多個已命名的許可權（請參閱[已命名的許可權](#named-rights)）。 若要這麼做，請按一下&#x200B;**[!UICONTROL Folder]**&#x200B;欄位右側的箭頭，然後選取&#x200B;**[!UICONTROL Named rights]**：
 
    ![](assets/s_ncs_user_rights_operators.png)
 
-   選取要指派的群組及/或已命名許可權，然後按一下 **[!UICONTROL OK]** 以進行驗證。
+   選取要指派的群組和/或已命名許可權，然後按一下&#x200B;**[!UICONTROL OK]**&#x200B;以驗證。
 
-1. 按一下 **[!UICONTROL Ok]** 建立運運算元：設定檔會新增至現有運運算元的清單中。
+1. 按一下&#x200B;**[!UICONTROL Ok]**&#x200B;建立運運算元：設定檔已新增至現有運運算元清單。
 
    ![](assets/operator_profile_new.png)
 
 >[!NOTE]
 >
->您可以建立新的運運算元資料夾，根據您的需求組織運運算元。 若要這麼做，請以滑鼠右鍵按一下運運算元資料夾，然後選取 **[!UICONTROL Add an 'Operators' folder]**.
+>您可以建立新的運運算元資料夾，根據您的需求組織運運算元。 若要這麼做，請在運運算元資料夾上按一下滑鼠右鍵，然後選取&#x200B;**[!UICONTROL Add an 'Operators' folder]**。
 
-建立運運算元的設定檔後，您就可以新增或更新其資訊。 若要這麼做，請按一下 **[!UICONTROL Edit]** 標籤。
+建立運運算元的設定檔後，您就可以新增或更新其資訊。 若要這麼做，請按一下&#x200B;**[!UICONTROL Edit]**&#x200B;標籤。
 
 ![](assets/operator_edit_profile.png)
 
 >[!NOTE]
 >
->此 **[!UICONTROL Session timeout]** 欄位可讓您調整FDA工作階段逾時前的延遲。 有關詳細資訊，請參閱 [關於同盟資料存取](../../installation/using/about-fda.md).
+>**[!UICONTROL Session timeout]**&#x200B;欄位可讓您調整FDA工作階段逾時前的延遲。 如需詳細資訊，請參閱[關於同盟資料存取](../../installation/using/about-fda.md)。
 
 ## 定義運運算元的時區 {#time-zone-of-the-operator}
 
-在 **[!UICONTROL General]** 標籤中，您可以選取運運算元的時區。 依預設，運運算元在伺服器時區中運作。 不過，您也可以使用下拉式清單選取其他時區。
+在&#x200B;**[!UICONTROL General]**&#x200B;索引標籤中，您可以選取運運算元的時區。 依預設，運運算元在伺服器時區中運作。 不過，您也可以使用下拉式清單選取其他時區。
 
-時區的設定詳見 [此頁面](../../installation/using/time-zone-management.md).
+時區的設定在[此頁面](../../installation/using/time-zone-management.md)中說明。
 
 >[!NOTE]
 >
@@ -101,23 +101,23 @@ ht-degree: 2%
 >
 >連結至這些內容的限制和建議會顯示在Adobe Campaign檔案的相關章節。
 
-此外， **[!UICONTROL Regional settings]** 下拉式清單可讓您選取顯示日期和數字的格式。
+此外，**[!UICONTROL Regional settings]**&#x200B;下拉式清單可讓您選取顯示日期和數字的格式。
 
 ## 新增許可權 {#access-rights-options}
 
-使用 **[!UICONTROL Access rights]** 索引標籤以更新連結至運運算元的群組和已命名許可權。
+使用&#x200B;**[!UICONTROL Access rights]**&#x200B;索引標籤來更新連結到運運算元的群組及已命名許可權。
 
 ![](assets/operator_profile_security_options.png)
 
-此 **[!UICONTROL Edit the access parameters...]** 連結可讓您存取下列選項：
+**[!UICONTROL Edit the access parameters...]**&#x200B;連結可讓您存取下列選項：
 
-* 此 **[!UICONTROL Disable account]** 選項可讓您停用操作員的帳戶：此使用者將不再存取Adobe Campaign。
+* **[!UICONTROL Disable account]**&#x200B;選項可讓您停用運運算元的帳戶：此使用者將不再存取Adobe Campaign。
 
   >[!NOTE]
   >
   >即使其帳戶已停用，操作員仍可接收來自Campaign的警報或通知。 若要停止傳送Campaign通知給此操作員，Adobe建議您從他們的設定檔中移除電子郵件地址。
 
-* 此 **[!UICONTROL Forbid access from the rich client]** 選項可讓您限制使用Adobe Campaign至 [網頁存取](../../platform/using/adobe-campaign-workspace.md#console-and-web-access) 或透過API：無法再存取Adobe Campaign使用者端主控台。
+* **[!UICONTROL Forbid access from the rich client]**&#x200B;選項可讓您將使用Adobe Campaign限製為[網頁存取](../../platform/using/adobe-campaign-workspace.md#console-and-web-access)或透過API使用：無法再存取Adobe Campaign使用者端主控台。
 * 您可以將安全區域連結到操作員。 如需詳細資訊，請參閱[此頁面](../../installation/using/security-zones.md)。
 * 您也可以使用適當的連結，定義信任的IP遮罩。
 
@@ -131,7 +131,7 @@ ht-degree: 2%
   >
   >為了確保您平台的存取安全，使用此選項時務必謹慎。
 
-* 此 **[!UICONTROL Restrict to information found in sub-folders of:]** 選項可讓您限制歸屬於資料夾運運算元的許可權。 只有使用者可看見此選項中所指定節點的子資料夾：
+* **[!UICONTROL Restrict to information found in sub-folders of:]**&#x200B;選項可讓您限制歸屬於資料夾運運算元的許可權。 只有使用者可看見此選項中所指定節點的子資料夾：
 
   ![](assets/s_ncs_user_restrictions_operators.png)
 
@@ -141,7 +141,7 @@ ht-degree: 2%
 
 ### 檢查設定 {#check-settings}
 
-此 **[!UICONTROL Audit]** 索引標籤可讓您檢視運運算元的相關資訊。 各種標籤會根據運運算元的介入區域中定義的設定自動新增到。
+**[!UICONTROL Audit]**&#x200B;索引標籤可讓您檢視運運算元的相關資訊。 各種標籤會根據運運算元的介入區域中定義的設定自動新增到。
 
 您可以存取：
 
@@ -151,7 +151,7 @@ ht-degree: 2%
 
   >[!NOTE]
   >
-  >有關詳細資訊，請參閱 [資料夾存取管理](#folder-access-management).
+  >如需詳細資訊，請參閱[資料夾存取管理](#folder-access-management)。
 
 * 操作員核准記錄。
 
@@ -173,19 +173,19 @@ Adobe Campaign會使用具有預設設定之設定檔的技術操作員：管理
 
 依預設，「webapp」技術操作員具有指定的ADMINISTRATION許可權，這可能會導致安全性風險。 若要修正此問題，建議您移除此權利。 操作步驟：
 
-1. 從 **[!UICONTROL Administration > Access management > Named rights]** 節點，按一下 **[!UICONTROL New]** 以建立許可權並將其命名為WEBAPP。
+1. 從&#x200B;**[!UICONTROL Administration > Access management > Named rights]**&#x200B;節點，按一下&#x200B;**[!UICONTROL New]**&#x200B;以建立許可權，並將其命名為WEBAPP。
 
    ![](assets/s_ncs_default_operators_webapp_right.png)
 
-   已命名的許可權詳見 [已命名的許可權](#named-rights) 區段。
+   已命名的許可權在[已命名的許可權](#named-rights)區段中詳細說明。
 
-1. 從 **[!UICONTROL Administration > Access management > Operators]** 節點，選取Web應用程式代理程式運運算元(&#39;webapp&#39;)。
+1. 從&#x200B;**[!UICONTROL Administration > Access management > Operators]**&#x200B;節點中，選取Web應用程式代理程式運運算元(&#39;webapp&#39;)。
 
-   選取 **[!UICONTROL Edit]** 標籤，然後 **[!UICONTROL Access rights]** 標籤並從清單中刪除名為許可權的ADMINISTRATION。
+   選取&#x200B;**[!UICONTROL Edit]**&#x200B;標籤，然後選取&#x200B;**[!UICONTROL Access rights]**&#x200B;標籤，並從清單中刪除名為許可權的ADMINISTRATION。
 
    ![](assets/s_ncs_default_operators_webapp_admin_right.png)
 
-   按一下 **[!UICONTROL Add]** 並選取您剛建立的WEBAPP，然後儲存變更。
+   按一下&#x200B;**[!UICONTROL Add]**&#x200B;並選取您剛建立的WEBAPP，然後儲存變更。
 
    ![](assets/s_ncs_default_operators_webapp_webapp_right.png)
 
@@ -193,8 +193,8 @@ Adobe Campaign會使用具有預設設定之設定檔的技術操作員：管理
 
    ![](assets/s_ncs_default_operators_webapp_folder_access.png)
 
-   有關修改樹狀結構資料夾許可權的詳情，請參閱 [資料夾存取管理](#folder-access-management) 區段。
+   在[資料夾存取管理](#folder-access-management)區段中會詳細說明修改樹狀資料夾的許可權。
 
 >[!NOTE]
 >
->如需安全性方針的詳細資訊，請參閱 [Adobe Campaign安全性設定檢查清單](https://helpx.adobe.com/tw/campaign/kb/acc-security.html).
+>如需安全性方針的詳細資訊，請參閱[Adobe Campaign安全性設定檢查清單](https://helpx.adobe.com/tw/campaign/kb/acc-security.html)。

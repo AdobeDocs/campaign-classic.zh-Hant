@@ -29,14 +29,14 @@ ht-degree: 3%
 
 有數種方式可篩選要顯示的資料。 如有需要，這些可搭配使用：
 
-* 在資料夾上篩選，請參閱 [依資料夾篩選](#filter-by-folder)，
-* 依狀態篩選，請參閱 [依狀態篩選](#filter-by-status)，
-* 資料排序，請參閱 [排序依據](#order-by)，
-* 搜尋，請參閱 [快速搜尋](#quick-search).
+* 依資料夾篩選，請參閱[依資料夾篩選](#filter-by-folder)，
+* 依狀態篩選，請參閱[依狀態篩選](#filter-by-status)，
+* 資料排序，請參考[排序依據](#order-by)，
+* 搜尋，請參閱[快速搜尋](#quick-search)。
 
 ## 依資料夾篩選 {#filter-by-folder}
 
-按一下 **[!UICONTROL Folder]** 圖示以選取包含要顯示之資料的資料夾。
+按一下&#x200B;**[!UICONTROL Folder]**&#x200B;圖示以選取包含要顯示之資料的資料夾。
 
 ![](assets/filter_web_select_folder.png)
 

@@ -15,21 +15,21 @@ ht-degree: 4%
 
 # AB測試：建立目標定位工作流程 {#step-1--creating-a-targeting-workflow}
 
-您必須在以下位置建立工作流程： **[!UICONTROL Targeting and Workflows]** 行銷活動的索引標籤。 它由一個 **[!UICONTROL Query]** 活動， a **[!UICONTROL Split]** 連結至兩個的活動 **[!UICONTROL Email delivery]** 活動， a **[!UICONTROL Wait]** 活動， a **[!UICONTROL JavaScript code]** 活動和 **[!UICONTROL Delivery]** 活動。
+您必須在行銷活動的&#x200B;**[!UICONTROL Targeting and Workflows]**&#x200B;索引標籤中建立工作流程。 它由一個&#x200B;**[!UICONTROL Query]**&#x200B;活動、連結到兩個&#x200B;**[!UICONTROL Email delivery]**&#x200B;活動的&#x200B;**[!UICONTROL Split]**&#x200B;活動、**[!UICONTROL Wait]**&#x200B;活動、**[!UICONTROL JavaScript code]**&#x200B;活動和&#x200B;**[!UICONTROL Delivery]**&#x200B;活動組成。
 
-1. 如果您尚未這麼做，請建立行銷活動(如需詳細資訊，請參閱 [本節](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign))。
+1. 如果您尚未這麼做，請建立行銷活動（如需詳細資訊，請參閱[本區段](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign)）。
 
    ![](assets/use_case_abtesting_targetwkfl_001.png)
 
-1. 前往 **[!UICONTROL Targeting and Workflows]** 標籤。
+1. 前往&#x200B;**[!UICONTROL Targeting and Workflows]**&#x200B;標籤。
 
    ![](assets/use_case_abtesting_targetwkfl_002.png)
 
-1. 變更現有工作流程的標籤，或按一下 **[!UICONTROL Add]** 若要建立新的URL (如需詳細資訊，請參閱 [本節](../../campaign/using/marketing-campaign-deliveries.md#selecting-the-target-population))。
+1. 變更現有工作流程的標籤或按一下&#x200B;**[!UICONTROL Add]**&#x200B;以建立新工作流程（如需詳細資訊，請參閱[本區段](../../campaign/using/marketing-campaign-deliveries.md#selecting-the-target-population)）。
 
    ![](assets/use_case_abtesting_targetwkfl_003.png)
 
-1. 使用滑鼠將活動拖放至工作流程圖中，包括 **[!UICONTROL Query]** (**[!UICONTROL Target]** 標籤)， a **[!UICONTROL Split]** (**[!UICONTROL Target]** 標籤)，二 **[!UICONTROL Email deliveries]** (**[!UICONTROL Deliveries]** 標籤)， a **[!UICONTROL Wait]** 活動(**[!UICONTROL Flow Control]** 標籤)， a **[!UICONTROL JavaScript code]** 活動(**[!UICONTROL Actions]** 標籤)，以及 **[!UICONTROL Delivery]** 活動(**[!UICONTROL Actions]** 標籤)。
+1. 使用滑鼠將活動拖放至工作流程圖表中，包括&#x200B;**[!UICONTROL Query]** （**[!UICONTROL Target]**&#x200B;標籤）、**[!UICONTROL Split]** （**[!UICONTROL Target]**&#x200B;標籤）、兩個&#x200B;**[!UICONTROL Email deliveries]** （**[!UICONTROL Deliveries]**&#x200B;標籤）、**[!UICONTROL Wait]**&#x200B;活動（**[!UICONTROL Flow Control]**&#x200B;標籤）、**[!UICONTROL JavaScript code]**&#x200B;活動（**[!UICONTROL Actions]**&#x200B;標籤）和&#x200B;**[!UICONTROL Delivery]**&#x200B;活動（**[!UICONTROL Actions]**&#x200B;標籤）。
 
 ![](assets/use_case_abtesting_targetwkfl_004.png)
 

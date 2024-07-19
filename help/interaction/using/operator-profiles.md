@@ -20,22 +20,22 @@ ht-degree: 2%
 
 使用互動的運運算元有兩種型別：優惠方案管理員和傳遞管理員。 每個使用者都有特定許可權，僅可存取樹狀結構部分和平台。
 
-* **[!UICONTROL Offer manager]** ：建立和維護選件。 請注意，如果工作流程中使用選件，運運算元必須位於 **[!UICONTROL Administrator]** 或 **[!UICONTROL Offer managers]** 操作員群組以執行工作流程。
-* **[!UICONTROL Delivery manager]** ：核准並使用選件
+* **[!UICONTROL Offer manager]** ：建立和維護優惠方案。 請注意，如果工作流程中使用選件，運運算元必須位於&#x200B;**[!UICONTROL Administrator]**&#x200B;或&#x200B;**[!UICONTROL Offer managers]**&#x200B;運運算元群組中，才能執行工作流程。
+* **[!UICONTROL Delivery manager]** ：核准並使用優惠方案
 
-建立「互動」專屬運運算元的步驟，與在Platform上建立所有其他運運算元所用的步驟相同。 有關詳細資訊，請參閱 [本節](../../platform/using/access-management.md). 許可權是在建立運運算元時設定的。
+建立「互動」專屬運運算元的步驟，與在Platform上建立所有其他運運算元所用的步驟相同。 如需詳細資訊，請參閱[本節](../../platform/using/access-management.md)。 許可權是在建立運運算元時設定的。
 
 ## 優惠方案管理員 {#offer-manager}
 
 1. 建立新的運運算元。
-1. 前往 **[!UICONTROL Groups and named rights]** 視窗，按一下 **[!UICONTROL Add]** 並選取 **[!UICONTROL Offer manager]** 群組。
+1. 移至&#x200B;**[!UICONTROL Groups and named rights]**&#x200B;視窗，按一下&#x200B;**[!UICONTROL Add]**&#x200B;並選取&#x200B;**[!UICONTROL Offer manager]**&#x200B;群組。
 
    ![](assets/offer_operators_create_001.png)
 
 指派給優惠方案管理員的許可權可讓他們執行下列工作：
 
-* 修改 **[!UICONTROL Design]** 環境。
-* 檢視 **[!UICONTROL Live]** 環境。
+* 修改&#x200B;**[!UICONTROL Design]**&#x200B;環境。
+* 檢視&#x200B;**[!UICONTROL Live]**&#x200B;環境。
 * 設定管理功能（預先定義的空格和篩選器）。
 * 建立和變更類別。
 * 建立優惠方案。
@@ -49,13 +49,13 @@ ht-degree: 2%
 ## 傳遞管理員 {#delivery-manager}
 
 1. 建立新的運運算元。
-1. 前往 **[!UICONTROL Groups and named rights]** 視窗，按一下 **[!UICONTROL Add]** 並選取 **[!UICONTROL Delivery manager]** 群組。
+1. 移至&#x200B;**[!UICONTROL Groups and named rights]**&#x200B;視窗，按一下&#x200B;**[!UICONTROL Add]**&#x200B;並選取&#x200B;**[!UICONTROL Delivery manager]**&#x200B;群組。
 
    ![](assets/offer_operators_create_002.png)
 
 指派給傳遞管理員的許可權可讓他們執行下列工作：
 
-* 顯示 **[!UICONTROL Live]** 環境。
+* 顯示&#x200B;**[!UICONTROL Live]**&#x200B;環境。
 * 顯示和修改優惠方案類別。
 * 如果將此傳遞管理員指定為其稽核者，則核准優惠方案。
 
@@ -69,8 +69,8 @@ ht-degree: 2%
  <tbody> 
   <tr> 
    <td> </td> 
-   <td> <strong>選件管理員（編輯）</strong><br /> </td> 
-   <td> <strong>Offer Manager （即時）</strong><br /> </td> 
+   <td> <strong>選件管理員（正在編輯）</strong><br /> </td> 
+   <td> <strong>優惠方案管理員（即時）</strong><br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>樹狀結構層級</strong><br /> </td> 
@@ -118,7 +118,7 @@ ht-degree: 2%
    <td> 讀取<br /> </td> 
   </tr> 
   <tr> 
-   <td> 優惠類別<br /> </td> 
+   <td> 優惠方案類別<br /> </td> 
    <td> 讀取/寫入<br /> </td> 
    <td> 讀取<br /> </td> 
   </tr> 
@@ -129,7 +129,7 @@ ht-degree: 2%
  <tbody> 
   <tr> 
    <td> </td> 
-   <td> <strong>傳遞管理員（編輯）</strong><br /> </td> 
+   <td> <strong>傳遞管理員（正在編輯）</strong><br /> </td> 
    <td> <strong>傳遞管理員（即時）</strong><br /> </td> 
   </tr> 
   <tr> 
@@ -178,7 +178,7 @@ ht-degree: 2%
    <td> 讀取<br /> </td> 
   </tr> 
   <tr> 
-   <td> 優惠類別<br /> </td> 
+   <td> 優惠方案類別<br /> </td> 
    <td> </td> 
    <td> 讀取<br /> </td> 
   </tr> 

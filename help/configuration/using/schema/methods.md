@@ -33,7 +33,7 @@ ht-degree: 11%
 
 ## 說明 {#description-11}
 
-此元素可讓您定義 `<method>`  元素。 宣告方法時強制使用。
+此元素可讓您定義`<method>`元素。 宣告方法時強制使用。
 
 ## 屬性說明 {#attribute-description-11}
 

@@ -17,7 +17,7 @@ ht-degree: 0%
 # 建置升級常見問答集 {#build-upgrade-faq}
 
 
-Adobe Campaign 會定期更新。如果您熟悉我們發佈的內容 [發行說明](../../rn/using/rn-overview.md)，您可能已經瞭解每年平均會發行2/3個包含新功能、改進和修正的次要版本。 此外，我們定期發行只累積修正的組建版本。 此定期更新的目的是為了讓您掌握最新、最佳的資訊，讓您的環境完全安全，並明顯改善您使用我們產品的體驗。
+Adobe Campaign 會定期更新。如果您熟悉我們發佈的[發行說明](../../rn/using/rn-overview.md)，您可能會知道每年平均會發行2/3個包含新功能、改進和修正的次要版本。 此外，我們定期發行只累積修正的組建版本。 此定期更新的目的是為了讓您掌握最新、最佳的資訊，讓您的環境完全安全，並明顯改善您使用我們產品的體驗。
 
 我們的客戶執行最新版Adobe Campaign是很重要的事。 此外，它還可讓您更有效率地Adobe以防止您遇到問題 — 識別、重製和修正舊組建上的問題通常需要更多時間，更不用說您可能遇到的某些問題已在最近的組建中得到了修正。
 
@@ -27,23 +27,23 @@ Adobe Campaign 會定期更新。如果您熟悉我們發佈的內容 [發行說
 
 當將Adobe Campaign Classic軟體更新至最新的安全組建編號時，組建版本會升級，但會維持相同的主要/次要組建層級。 例如：將v7版本編號9026Campaign Classic至Campaign v7版本編號9032。
 
-瞭解更多 [在本節中](../../rn/using/rn-overview.md).
+在本節](../../rn/using/rn-overview.md)瞭解更多[。
 
 ## 最新版的Adobe Campaign Classic是什麼？
 
-最新Campaign Classic版本（包括新功能和檔案）已在最新版本中詳細說明 [發行說明](../../rn/using/latest-release.md).
+最新Campaign Classic版本（包括新功能和檔案）已在最新[發行說明](../../rn/using/latest-release.md)中詳細說明。
 
 ## 我如何知道自己執行的是哪個版本？
 
-檢查您的版本，從 **[!UICONTROL Help > About...]** Adobe Campaign使用者端主控台中的功能表。 此 **[!UICONTROL About]**  方塊包含您為主控台和伺服器執行的版本和組建的詳細資訊。
+從Adobe Campaign使用者端主控台的&#x200B;**[!UICONTROL Help > About...]**&#x200B;功能表檢查您的版本。 **[!UICONTROL About]**&#x200B;方塊包含您為主控台和伺服器執行的版本和組建的詳細資訊。
 
-瞭解更多 [在本節中](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
+在本節](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)瞭解更多[。
 
 ## 組建狀態代表什麼？
 
 從Campaign Classic19.2開始，狀態會與每個組建相關聯。
 
-瞭解更多 [在本節中](../../rn/using/rn-overview.md).
+在本節](../../rn/using/rn-overview.md)瞭解更多[。
 
 ## 組建版本升級與版本升級是否相同？
 
@@ -84,7 +84,7 @@ Adobe會在任何變更前進行系統備份。 不過，如果您的非生產�
 
 1. 升級本身 — 生產環境已升級。 此階段通常會在數小時內執行。 在非常複雜的環境中，停機時間應該會更長。 萬一發生錯誤，則會定義復原策略並可執行。
 
-如需詳細資訊， [請參閱此檔案](https://helpx.adobe.com/tw/campaign/kb/acc-build-upgrade.html).
+如需詳細資訊，[請參閱此檔案](https://helpx.adobe.com/tw/campaign/kb/acc-build-upgrade.html)。
 
 ## 組建版本升級需要哪些資源？
 
@@ -105,9 +105,9 @@ Adobe會在任何變更前進行系統備份。 不過，如果您的非生產�
 
 找出適合用於維護期間的低流量或低流量時間，因為它們會產生最低的業務影響。
 
-檢閱我們的 [以下建置升級檢查清單](#check-list) 和您的測試計畫，並確保可以在24到48小時內提供可以執行這些測試的資源。 完成升級。
+請檢閱下方的[建置升級檢查清單](#check-list)以及您的測試計畫，並確定可以在24到48小時內提供執行這些測試的資源。 完成升級。
 
-如需詳細資訊， [請參閱本區段](../../production/using/build-upgrade.md).
+如需詳細資訊，[請參閱此章節](../../production/using/build-upgrade.md)。
 
 ## 組建升級可以在夜間或營業時間外執行嗎？
 
@@ -155,13 +155,13 @@ Adobe會在任何變更前進行系統備份。 不過，如果您的非生產�
 
 ## 升級後，我的系統上會執行哪些型別的測試？
 
-請參閱 [以下建置升級檢查清單](#check-list).
+請參閱下方的[組建版本升級檢查清單](#check-list)。
 
 ## 升級後必須執行哪一種測試？
 
 開發和預備環境會依序升級或一起升級，但在升級生產執行個體之前必須先登出。 這可讓每位客戶在簽署對生產環境所做的任何變更之前，先進行徹底的測試。
 
-檢視清單 [以下建置升級檢查清單](#check-list). 客戶應該執行類似的測試，以及環境可能需要的其他測試。
+檢視清單[ ](#check-list)下的組建升級檢查清單。 客戶應該執行類似的測試，以及環境可能需要的其他測試。
 
 ## 我須多久執行一次組建版本升級？
 
@@ -173,9 +173,9 @@ Adobe會在任何變更前進行系統備份。 不過，如果您的非生產�
 
 ## 要開啟組建版本升級票證，我應該聯絡誰？
 
-如果您在版本編號升級後遇到問題，請聯絡 [Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). 客戶服務會安排建置日期並開啟建置升級相關票證。
+如果您在組建版本升級後遇到問題，請聯絡[Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。 客戶服務會安排建置日期並開啟建置升級相關票證。
 
-進一步瞭解 [Campaign Classic的說明與支援選項](../../support.md)
+深入瞭解Campaign Classic](../../support.md)的[說明與支援選項
 
 ## 建置升級檢查清單 {#check-list}
 
@@ -192,9 +192,12 @@ Adobe會在任何變更前進行系統備份。 不過，如果您的非生產�
 
 * 您可以登入伺服器嗎？ 檢查Campaign使用者端主控台是否正常運作，沒有任何錯誤/警告快顯視窗。
 * 升級後，請務必使用與組建版本相同的主控台版本。
-* 您是否有任何將資料插入Campaign資料庫的網頁應用程式？ 如果是這樣的話，請執行這些動作，並確認他們可以透過API插入新記錄。
-* 您可以成功傳送測試電子郵件嗎？ 使用已知範本建立新傳遞，將其傳送給一個測試收件者，驗證個人化、取消子連結、映象頁面所有工作。
-* 您的所有重要路徑工作流程都在執行嗎？ 檢查工作流程、開啟工作流程日誌、驗證沒有錯誤。
+* 您是否有任何將資料插入Campaign資料庫的網頁應用程式？ 若是如此，請執行和
+確認他們可以透過API插入新記錄。
+* 您可以成功傳送測試電子郵件嗎？ 使用已知範本建立新傳遞，並將其傳送至
+一個測試收件者、驗證個人化、取消子連結、映象頁面全部運作。
+* 您的所有重要路徑工作流程都在執行嗎？ 檢查工作流程，開啟工作流程日誌，驗證
+沒有錯誤。
 * 您的所有資料夾是否都會出現、顯示和存取？ 瀏覽不同的資料夾並勾選。
 所有內容都會顯示並呈現。
 * 您的傳送是否以正確的時區進行？

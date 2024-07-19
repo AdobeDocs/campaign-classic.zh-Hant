@@ -23,25 +23,25 @@ Adobe Campaign平台以例項概念為基礎，類似於Apache使用的虛擬主
 
 對於指定的伺服器，有兩個元素是所有Adobe Campaign執行個體共同的：
 
-* 此 **內部** 密碼：這是一般管理員密碼。 這是特定應用程式伺服器的所有執行個體所共有的。
+* **內部**&#x200B;密碼：這是一般管理員密碼。 這是特定應用程式伺服器的所有執行個體所共有的。
 
   >[!IMPORTANT]
   >
-  >若要使用 **內部** 識別碼，您必須預先定義密碼。 如需詳細資訊，請參閱[本章節](../../installation/using/configuring-campaign-server.md#internal-identifier)。
+  >若要使用&#x200B;**內部**&#x200B;識別碼登入，您必須預先定義密碼。 如需詳細資訊，請參閱[本章節](../../installation/using/configuring-campaign-server.md#internal-identifier)。
 
 * 多個技術伺服器設定：在執行個體的特定設定中，這些設定都可以多載。
 
-組態檔案儲存在 **conf** 安裝目錄的目錄。 此設定分為三個檔案：
+組態檔儲存在安裝目錄的&#x200B;**conf**&#x200B;目錄中。 此設定分為三個檔案：
 
-* **serverConf.xml**：所有執行個體的整體設定。
-* **config-**`<instance>`**.xml** (其中 **`<instance>`** 執行個體名稱)：執行個體的特定設定。
-* **serverConf.xml.diff**：初始設定和目前設定之間的差值。 此檔案由應用程式自動產生，且不得手動修改。 它用於在更新組建版本時自動傳播使用者修改。
+* **serverConf.xml**：所有執行個體的整體組態。
+* **config-**`<instance>`**.xml** （其中&#x200B;**`<instance>`**&#x200B;為執行個體名稱）：執行個體的特定設定。
+* **serverConf.xml.diff**：初始設定與目前設定之間的差異。 此檔案由應用程式自動產生，且不得手動修改。 它用於在更新組建版本時自動傳播使用者修改。
 
 執行個體設定載入如下：
 
-* 模組載入 **serverConf.xml** 檔案來取得所有例證共用的引數。
-* 然後載入 **config-**`<instance>`**.xml** 檔案。 此檔案中的值優先順序高於中的值。 **serverConf.xml**.
+* 模組載入&#x200B;**serverConf.xml**&#x200B;檔案，以取得所有執行個體共用的引數。
+* 然後載入&#x200B;**config-**`<instance>`**.xml**&#x200B;檔案。 此檔案中找到的值優先順序高於&#x200B;**serverConf.xml**&#x200B;中包含的值。
 
-  這兩個檔案的格式相同。 中的任何值 **serverConf.xml** 可以在的指定執行個體中多載 **config-`<instance>`.xml** 檔案。
+  這兩個檔案的格式相同。 可以為&#x200B;**config-`<instance>`.xml**&#x200B;檔案中的指定執行個體載入&#x200B;**serverConf.xml**&#x200B;中的任何值。
 
 此作業模式提供組態絕佳的彈性。

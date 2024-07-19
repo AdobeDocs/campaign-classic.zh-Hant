@@ -26,11 +26,11 @@ Adobe Campaign提供的網路追蹤模組可讓您在訊息中按一下後，收
 
 ## 伺服器設定 {#server-configuration}
 
-伺服器的設定方式為過載 **serverConf.xml** 檔案。 這些檔案儲存在 **conf** Adobe Campaign安裝目錄的子目錄。
+伺服器是透過超載&#x200B;**serverConf.xml**&#x200B;檔案的特定元素來設定。 這些檔案儲存在Adobe Campaign安裝目錄的&#x200B;**conf**&#x200B;子目錄中。
 
 ### 重新導向伺服器 {#redirection-server}
 
-對於重新導向伺服器，請設定 **trackWebVisitors** 的屬性 **重新導向** 元素至 **true**.
+對於重新導向伺服器，將&#x200B;**重新導向**&#x200B;專案的&#x200B;**trackWebVisitors**&#x200B;屬性設定為&#x200B;**true**。
 
 ```
 <redirection P3PCompactPolicy="CAO DSP COR CURa DEVa TAIa OUR BUS IND UNI COM NAV"
@@ -43,7 +43,7 @@ trackingPassword=""
 
 若要透過使用者端主控台檢視追蹤資訊，您必須：
 
-* 建立 **虛擬傳遞** （傳遞對應必須與目標結構描述的對應相同），
-* 輸入 **內部名稱** 此傳遞在 **NmsTracking_WebTrackingDelivery** 選項。
+* 建立&#x200B;**虛擬傳遞** （傳遞對應必須與目標結構描述的對應相同），
+* 在&#x200B;**NmsTracking_WebTrackingDelivery**&#x200B;選項中輸入此傳遞的&#x200B;**內部名稱**。
 
 所有並非直接在電子郵件中點按後顯示的網站追蹤資訊，都可以在建立的虛擬傳遞中檢視。

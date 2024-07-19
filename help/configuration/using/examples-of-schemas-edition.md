@@ -17,9 +17,9 @@ ht-degree: 2%
 
 ## 擴充表格 {#extending-a-table}
 
-若要擴充 **nms：recipient** 綱要收件者表格，請套用下列程式：
+若要擴充&#x200B;**nms：recipient**&#x200B;結構描述收件者表格，請套用下列程式：
 
-1. 建立擴充功能綱要(**cus：extension**)使用下列資料：
+1. 使用下列資料建立擴充功能結構描述(**cus：extension**)：
 
    ```
    <srcSchema mappingType="sql" name="extension" namespace="cus" xtkschema="xtk:srcSchema" extendedSchema="nms:recipient">  
@@ -40,13 +40,13 @@ ht-degree: 2%
    </srcSchema>
    ```
 
-   在此範例中，索引欄位(**逼真度**)新增了，且 **位置** 元素(已存在於 **nms：recipient** 結構描述)以列舉欄位(**區域**)。
+   在此範例中，已新增索引欄位(**fidelity**)，且&#x200B;**位置**&#x200B;元素（已存在於&#x200B;**nms：recipient**&#x200B;結構描述中）已加入列舉欄位(**area**)。
 
    >[!IMPORTANT]
    >
-   >請記得新增 **extendedSchema** 屬性以參考擴充功能綱要。
+   >請記得新增&#x200B;**extendedSchema**&#x200B;屬性以參考擴充功能結構描述。
 
-1. 檢查擴充結構描述是否為 **nms：recipient** 結構描述以及其他資料存在：
+1. 檢查擴充結構描述是否為&#x200B;**nms：recipient**&#x200B;結構描述，以及是否存在其他資料：
 
    ```
    <schema dependingSchemas="cus:extension" mappingType="sql" name="recipient" namespace="nms" xtkschema="xtk:schema">
@@ -101,7 +101,7 @@ ht-degree: 2%
 </srcSchema>
 ```
 
-表格型別為 **autopk** ，以建立自動產生的主要索引鍵，供連結至收件者表格使用。
+資料表型別是&#x200B;**autopk**，以建立自動產生的主索引鍵，供連結至收件者資料表的連結使用。
 
 產生的結構描述：
 
@@ -153,7 +153,7 @@ INSERT INTO CusOrder (iOrderId) VALUES (0);
 
 擴充功能表格的用途是避免表格中支援的欄位數限制，或最佳化資料佔用的空間（依需求使用）。
 
-建立擴充功能表格結構(**cus：feature**)：
+正在建立擴充功能資料表結構描述(**cus：feature**)：
 
 ```
 <srcSchema mappingType="sql" name="feature" namespace="cus" xtkschema="xtk:srcSchema">  
@@ -203,7 +203,7 @@ CREATE INDEX NmsRecipient_featureId ON NmsRecipient(iFeatureId);
 
 溢位表格包含要擴充之表格的外部索引鍵。 因此，不會修改要擴充的表格。 兩個表格之間的關係是要擴充之表格的主鍵值。
 
-建立溢位表格綱要(**cus：overflow**)：
+正在建立溢位資料表結構描述(**cus：overflow**)：
 
 ```
 <srcSchema label="Overflow" name="overflow" namespace="cus" xtkschema="xtk:srcSchema">  
@@ -235,9 +235,9 @@ CREATE UNIQUE INDEX CusOverflow2_id ON CusOverflow2(iRecipientId);
 
 關係表格可讓您連結兩個具有基數N-N的表格。此表格僅包含要連結之表格的外部索引鍵。
 
-群組之間關係表的範例(**nms：group**)和收件者(**nms：recipient**)。
+群組(**nms：group**)與收件者(**nms：recipient**)之間的關係表範例。
 
-關係表的來源結構描述：
+關係表的Source結構描述：
 
 ```
 <srcSchema name="rcpGrpRel" namespace="cus">
@@ -301,7 +301,7 @@ CREATE INDEX CusRcpGrpRel_recipientId ON CusRcpGrpRel(iRecipientId);
 
 此使用案例示範如何使用現有的參考表格作為內建Adobe Campaign列舉機制（enum、userEnum或dbEnum）的替代方案。
 
-您也可以使用現有的參考表格作為結構描述中的分項清單。 這可以透過在表格和參照表格之間建立連結，並新增屬性來達成 **displayAsField=&quot;true&quot;**.
+您也可以使用現有的參考表格作為結構描述中的分項清單。 若要達成此目的，請在資料表和參考資料表之間建立連結，並新增屬性&#x200B;**displayAsField=&quot;true&quot;**。
 
 在此範例中，參考表格包含銀行名稱與識別碼的清單：
 
@@ -319,7 +319,7 @@ xtkschema="xtk:srcSchema">
 </srcSchema>
 ```
 
-在使用此參考表的任何表格中，定義連結並新增 **displayAsField=&quot;true&quot;** 屬性。
+在使用此參考資料表的任何資料表中，定義連結並新增&#x200B;**displayAsField=&quot;true&quot;**&#x200B;屬性。
 
 ```
 <element displayAsField="true" label="Bank" name="bank" target="cus:bank" type="link" noDbIndex="true"/>
@@ -331,7 +331,7 @@ xtkschema="xtk:srcSchema">
 
 * 為了使其自動完成，您必須在參考表中定義計算字串。
 
-* 新增 **noDbIndex=&quot;true&quot;** 屬性來防止Adobe Campaign在連結的來源表格中儲存的值上建立索引。
+* 在連結定義中新增&#x200B;**noDbIndex=&quot;true&quot;**&#x200B;屬性，以防止Adobe Campaign在連結來源資料表中儲存的值上建立索引。
 
 ## 相關主題
 

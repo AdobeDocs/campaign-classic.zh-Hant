@@ -32,17 +32,17 @@ ht-degree: 1%
 
 要建立新執行個體，追隨以下步驟：
 
-1. 按兩下憑據欄位右上角的連結以存取連接配置視窗。 此連結可以是 **[!UICONTROL New...]** 或現有的執行個體名稱。
+1. 按兩下憑據欄位右上角的連結以存取連接配置視窗。 此連結可以是&#x200B;**[!UICONTROL New...]**&#x200B;或現有的執行個體名稱。
 
    ![](assets/s_ncs_install_define_connection_01.png)
 
-1. 按一下 **[!UICONTROL Add > Connection]** 並輸入Adobe Campaign應用程式伺服器的標籤和URL。
+1. 按一下&#x200B;**[!UICONTROL Add > Connection]**&#x200B;並輸入Adobe Campaign應用程式伺服器的標籤和URL。
 
    ![](assets/s_ncs_install_define_connection_02.png)
 
 1. 指定透過URL連線至您的Adobe Campaign應用程式伺服器。 請使用電腦的DNS或別名，或您的IP位址。
 
-   例如，您可以使用 `https://<machine>.<domain>.com` 輸入URL。
+   例如，您可以使用`https://<machine>.<domain>.com`型別URL。
 
    >[!CAUTION]
    >
@@ -58,7 +58,7 @@ ht-degree: 1%
 
 1. 在 **[!UICONTROL DNS masks]** 欄位中，輸入 **應附加執行個體的 DNS 掩码** 清單。 Adobe Campaign伺服器會使用HTTP請求中顯示的主機名稱，來判斷要連絡的執行個體。
 
-   主機名稱包含在字串之間 **https://** 和第一個斜線字元 **/** 伺服器位址的。
+   主機名稱包含在字串&#x200B;**https://**&#x200B;和伺服器位址的第一個斜線字元&#x200B;**/**&#x200B;之間。
 
    您可以定義以逗號分隔的值清單。
 
@@ -72,13 +72,13 @@ ht-degree: 1%
 
 1. 在 **[!UICONTROL Language]** 下拉清單中，選擇 **執行個體語言**：英文（美國）、英文（英國）、法文或日文。
 
-   美式英文與英式英文的差異說明於 [本節](../../platform/using/adobe-campaign-workspace.md#date-and-time).
+   美式英文與英式英文之間的差異在[本節](../../platform/using/adobe-campaign-workspace.md#date-and-time)中說明。
 
    >[!CAUTION]
    >
    >執行個體語言在此步驟後無法修改。 Adobe Campaign例項並非多語言版本：您無法將介面從語言切換為其他語言。
 
-1. 按一下 **[!UICONTROL Ok]** 以確認執行個體宣告。 登出再登入，以宣告資料庫。
+1. 按一下&#x200B;**[!UICONTROL Ok]**&#x200B;以確認執行個體宣告。 登出再登入，以宣告資料庫。
 
    >[!NOTE]
    >

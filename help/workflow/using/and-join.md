@@ -17,13 +17,13 @@ ht-degree: 14%
 
 只有當所有入站轉變啟動時（即所有先前的活動都完成時），聯結才會觸發其出站轉變。 這讓您可以在確保特定活動已完成後再繼續執行工作流程。
 
-例如，您可以在內容建立和傳遞傳送自動化的內容中使用AND-join活動，以確保只有在完成目標查詢和內容更新步驟後才會開始傳遞。 以下位置提供了專屬的使用案例： [本節](../../delivery/using/automating-via-workflows.md#creating-the-delivery-and-its-content)
+例如，您可以在內容建立和傳遞傳送自動化的內容中使用AND-join活動，以確保只有在完成目標查詢和內容更新步驟後才會開始傳遞。 [此區段](../../delivery/using/automating-via-workflows.md#creating-the-delivery-and-its-content)中有專用使用案例
 
 ![](assets/and-join-usage.png)
 
 >[!NOTE]
 >
->請注意，使用不同目標維度設定的入站轉變，不能使用 **[!UICONTROL AND-join]** 活動。
+>請注意，使用不同目標維度設定的入站轉變無法使用&#x200B;**[!UICONTROL AND-join]**&#x200B;活動連結在一起。
 
 活動的傳出已傳送母體是透過在活動的入站轉變中選擇主集來決定。
 
@@ -31,4 +31,4 @@ ht-degree: 14%
 
 >[!CAUTION]
 >
->若為 **合併連結** 輸入活動，事件變數會合併，但如果相同的變數定義兩次，則會發生衝突，且值維持未定。 如需詳細資訊，請參閱[本章節](javascript-scripts-and-templates.md#event-variables)。
+>在&#x200B;**AND-join**&#x200B;型別活動的情況下，事件變數會合併，但如果相同的變數定義兩次，則會發生衝突，且值仍未確定。 如需詳細資訊，請參閱[本章節](javascript-scripts-and-templates.md#event-variables)。

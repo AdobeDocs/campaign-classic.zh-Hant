@@ -23,8 +23,8 @@ ht-degree: 0%
 
 Adobe Campaign使用「Nms_DefaultRcpSchema」全域變數與預設收件者資料庫(nms：recipient)對話。 因此，需要變更此變數。
 
-1. 前往 **[!UICONTROL Administration>Platform>Options]** 瀏覽器節點。
-1. 變更 **Nms_DefaultRcpSchema** 變數，其結構描述名稱符合外部收件者表格（在此案例中為：cus：individual）。
+1. 前往總管的&#x200B;**[!UICONTROL Administration>Platform>Options]**&#x200B;節點。
+1. 以符合外部收件者資料表的結構描述名稱（在此案例中為： cus：individual），變更&#x200B;**Nms_DefaultRcpSchema**&#x200B;變數的值。
 1. 儲存變更。
 
 ## 建立新表單 {#creating-a-new-form-}
@@ -35,15 +35,15 @@ Adobe Campaign使用「Nms_DefaultRcpSchema」全域變數與預設收件者資�
 >
 >表單的名稱必須與其關注的結構描述名稱相同。
 
-1. 前往 **管理>設定>輸入表單** 瀏覽器節點。
-1. 建立新的 **xtk：form** type **表單** 檔案。
+1. 前往總管的&#x200B;**管理>設定>輸入表單**&#x200B;節點。
+1. 建立新的&#x200B;**xtk：form**&#x200B;型別&#x200B;**表單**&#x200B;檔案。
 1. 根據您的表格範本，說明您需要的所有監控和欄位。
 
    >[!NOTE]
    >
-   >進一步瞭解 **表單** 輸入檔案，請參閱 [此頁面](../../configuration/using/identifying-a-form.md).
+   >若要進一步瞭解&#x200B;**表單**&#x200B;型別檔案，請參閱[此頁面](../../configuration/using/identifying-a-form.md)。
 
-   在我們的目前範例中， **表單** 檔案必須以 **cus：individe** 結構描述，因此具有以下配置：
+   在我們目前的範例中，**表單**&#x200B;檔案必須以&#x200B;**cus：individual**&#x200B;結構描述為基礎，因此具有以下配置：
 
    ```
    <container colspan="2">
@@ -62,15 +62,15 @@ Adobe Campaign使用「Nms_DefaultRcpSchema」全域變數與預設收件者資�
 
 ## 在導覽階層中建立新的資料夾型別 {#creating-a-new-type-of-folder-in-the-navigation-hierarchy}
 
-1. 前往 **[!UICONTROL Administration>Configuration>Navigation hierarchies]** 節點。
-1. 建立新的 **xtk：navtree** type **導覽樹** 檔案。
+1. 前往&#x200B;**[!UICONTROL Administration>Configuration>Navigation hierarchies]**&#x200B;節點。
+1. 建立新的&#x200B;**xtk：navtree**&#x200B;型別&#x200B;**navtree**&#x200B;檔案。
 1. 根據您的表格範本，說明您需要的所有監控和欄位。
 
    >[!NOTE]
    >
-   >有關詳細資訊 **導覽樹** 輸入檔案，請參閱 [此頁面](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy).
+   >如需&#x200B;**navtree**&#x200B;型別檔案的詳細資訊，請參閱[此頁面](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy)。
 
-   在目前的範例中， **導覽樹** 檔案必須以 **cus：individe** 結構描述，因此具有以下形式：
+   在目前的範例中，**navtree**&#x200B;檔案必須以&#x200B;**cus：individual**&#x200B;結構描述為基礎，因此具有下列形式：
 
    ```
     <model name="root">

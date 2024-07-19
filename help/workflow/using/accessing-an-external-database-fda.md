@@ -24,4 +24,4 @@ Adobe Campaign 提供同盟資料存取 (FDA) 選項，以處理儲存在一或�
 * 擴充
 * 資料載入中
 
-FDA選項的使用取決於您的Adobe Campaign授權。 本課程將詳細介紹設定此選項以及使用此選項相關的最佳實務和限制 [區段](../../installation/using/about-fda.md).
+FDA選項的使用取決於您的Adobe Campaign授權。 設定此選項以及使用此選項所連結的最佳實務和限制在此[區段](../../installation/using/about-fda.md)中有詳細說明。

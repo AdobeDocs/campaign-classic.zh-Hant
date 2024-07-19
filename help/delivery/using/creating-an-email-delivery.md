@@ -19,12 +19,12 @@ ht-degree: 14%
 
 >[!NOTE]
 >
->有關傳遞建立的全域概念，請參見 [本節](steps-about-delivery-creation-steps.md).
+>在[本節](steps-about-delivery-creation-steps.md)中介紹了傳遞建立的全域概念。
 
 1. 例如，從「傳遞」控制面板建立新傳遞。
-1. 選取傳遞範本 **電子郵件傳送（郵件）** 或您建立的任何電子郵件傳遞範本。 如需傳遞範本的詳細資訊，請參閱 [本節](about-templates.md).
+1. 選取傳遞範本&#x200B;**電子郵件傳遞（郵件）**&#x200B;或您建立的任何電子郵件傳遞範本。 如需傳遞範本的詳細資訊，請參閱[本節](about-templates.md)。
 
    ![](assets/s_ncs_user_wizard_email01_1.png)
 
 1. 使用標籤、程式碼和說明來識別您的傳遞。 如需詳細資訊，請參閱[本章節](steps-create-and-identify-the-delivery.md#identifying-the-delivery)。
-1. 按一下 **繼續** 以確認此資訊並顯示訊息組態視窗。
+1. 按一下&#x200B;**繼續**&#x200B;以確認此資訊並顯示訊息設定視窗。

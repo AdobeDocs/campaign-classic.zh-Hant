@@ -30,7 +30,7 @@ Adobe Campaign 是一款強大的工具，用於收集和處理包括個人資�
 
 ### 隱私權法規 {#privacy-regulations}
 
-為正確處理隱私權並管理個人資料，工作時請遵循您營運業務所在地區的適用法規。Adobe Campaign的功能可協助您遵守以下列出的法規： [此頁面](../../platform/using/privacy-management.md#privacy-management-regulations).
+為正確處理隱私權並管理個人資料，工作時請遵循您營運業務所在地區的適用法規。Adobe Campaign的功能可協助您遵守[此頁面](../../platform/using/privacy-management.md#privacy-management-regulations)所列的規定。
 
 ### Adobe Experience Cloud 隱私權 {#experience-cloud-privacy}
 
@@ -68,7 +68,7 @@ Adobe Campaign 是 Adobe Experience Cloud 解決方案的一部分。在 Campaig
 * **個人資料**&#x200B;是指可直接或間接識別在世個人的資訊。
 * **敏感個人資料**&#x200B;是指與個人的種族、政治觀點、宗教信仰、犯罪背景、遺傳資訊、健康資料、性傾向、生物識別資訊，以及工會會員會籍相關的資訊。
 
-將Campaign與其他Experience Cloud解決方案整合時，對象可從一個系統傳輸到另一個系統，例如 [Adobe Analytics](../../integrations/using/gs-aa.md)， [Experience Cloud對象](../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md)， [Campaign Standard](../../integrations/using/synchronizing-audiences.md)、或其他解決方案搭配使用，透過 [CRM聯結器](../../platform/using/crm-connectors.md)，您需要支付額外的個人護理費用來保護資料。
+將Campaign與其他Experience Cloud解決方案整合時，如果閱聽眾可以從一個系統傳輸到另一個系統，例如[Adobe Analytics](../../integrations/using/gs-aa.md)、[Experience Cloud閱聽眾](../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md)、[Campaign Standard](../../integrations/using/synchronizing-audiences.md)，或是其他解決方案，如[CRM聯結器](../../platform/using/crm-connectors.md)，您需要支付額外的個人護理費用來保護資料。
 
 [主要法規](#privacy-regulations)是指管理資料之不同實體，如下所示：
 

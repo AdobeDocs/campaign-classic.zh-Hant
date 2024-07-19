@@ -24,8 +24,8 @@ ht-degree: 0%
 
 1. 宣告新執行個體
 
-   前往 **[!UICONTROL Tools > Advanced > Declare a new instance...]** 以啟動精靈。
+   移至&#x200B;**[!UICONTROL Tools > Advanced > Declare a new instance...]**&#x200B;以啟動精靈。
 
    ![](assets/s_ncs_install_declare_instance_menu.png)
 
-   指定新執行個體的引數。 有關詳細資訊，請參閱 [建立執行個體並登入](../../installation/using/creating-an-instance-and-logging-on.md).
+   指定新執行個體的引數。 如需詳細資訊，請參閱[建立執行個體並登入](../../installation/using/creating-an-instance-and-logging-on.md)。

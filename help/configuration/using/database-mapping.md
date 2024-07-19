@@ -14,7 +14,7 @@ ht-degree: 3%
 
 # 資料庫對應{#database-mapping}
 
-說明的範例綱要的SQL對應 [在此頁面中](schema-structure.md) 產生下列XML檔案：
+此頁面](schema-structure.md)中描述的範例結構描述[的SQL對應會產生下列XML檔案：
 
 ```sql
 <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">
@@ -35,7 +35,7 @@ ht-degree: 3%
 </schema>
 ```
 
-結構的根元素已變更為 **`<srcschema>`** 至 **`<schema>`**.
+結構描述的根專案變更為&#x200B;**`<srcschema>`**&#x200B;為&#x200B;**`<schema>`**。
 
 這種其他型別的檔案會自動從來源結構描述產生，並僅被簡稱為結構描述。
 
@@ -43,17 +43,17 @@ SQL名稱是根據元素名稱和型別自動決定的。
 
 SQL命名規則如下：
 
-* **表格**：串連結構描述名稱空間和名稱
+* **table**：結構描述名稱空間和名稱的串連
 
-  在我們的範例中，表格的名稱是透過以下結構描述的主要元素輸入： **sqltable** 屬性：
+  在我們的範例中，資料表的名稱是透過&#x200B;**sqltable**&#x200B;屬性中結構描述的主要元素輸入的：
 
   ```sql
   <element name="recipient" sqltable="CusRecipient">
   ```
 
-* **欄位**：前面有根據型別定義之前置詞的元素名稱：「i」代表整數，「d」代表雙精度，「s」代表字串，「ts」代表日期等。
+* **欄位**：前面有根據型別定義之前置詞的元素名稱：&#39;i&#39;代表整數，&#39;d&#39;代表雙精度，&#39;s&#39;代表字串，&#39;ts&#39;代表日期等。
 
-  欄位名稱是透過 **sqlname** 每個型別的屬性 **`<attribute>`** 和 **`<element>`**：
+  欄位名稱是透過每個型別&#x200B;**`<attribute>`**&#x200B;和&#x200B;**`<element>`**&#x200B;的&#x200B;**sqlname**&#x200B;屬性輸入的：
 
   ```sql
   <attribute desc="Email address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/> 
@@ -80,9 +80,9 @@ SQL欄位限制如下：
 
 ## XML欄位 {#xml-fields}
 
-根據預設，任何  **`<attribute>`** 和 **`<element>`** -typed元素對應到資料結構描述表格的SQL欄位。 不過，您可以用XML來參照此欄位，而非SQL，這表示資料會儲存在包含所有XML欄位值的表格之備忘錄欄位(「mData」)中。 這些資料的儲存是觀察結構描述結構的XML檔案。
+依預設，任何&#x200B;**`<attribute>`**&#x200B;和&#x200B;**`<element>`** -typed專案都會對應到資料結構描述表格的SQL欄位。 不過，您可以用XML來參照此欄位，而非SQL，這表示資料會儲存在包含所有XML欄位值的表格之備忘錄欄位(「mData」)中。 這些資料的儲存是觀察結構描述結構的XML檔案。
 
-若要以XML填入欄位，您必須新增 **xml** 對相關元素具有「true」值的屬性。
+若要在XML中填入欄位，您必須將值為「true」的&#x200B;**xml**&#x200B;屬性新增到相關專案。
 
 **範例**：以下是兩個XML欄位使用範例。
 
@@ -119,7 +119,7 @@ SQL欄位限制如下：
 索引遵循下列規則：
 
 * 索引可以參考表格中的一或多個欄位
-* 如果符合下列條件，則索引在所有欄位中可以是唯一的（以避免重複） **獨特** 屬性包含「true」值
+* 如果&#x200B;**unique**&#x200B;屬性包含「true」值，則所有欄位中的索引都可以是唯一的（以避免重複）
 * 索引的SQL名稱是由表格的SQL名稱和索引的名稱所決定
 
 >[!NOTE]

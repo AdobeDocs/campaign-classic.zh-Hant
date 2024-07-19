@@ -66,16 +66,16 @@ ht-degree: 3%
    vars.deliveryId = delivery.id
 ```
 
-如需指令碼的詳細說明，請參閱 [本節](#details-of-the-script).
+如需指令碼的詳細說明，請參閱[本節](#details-of-the-script)。
 
 ## 實施 {#implementation}
 
-1. 開啟您的 **[!UICONTROL JavaScript code]** 活動。
-1. 複製中提供的指令碼 [指令碼範例](#example-of-a-script) 到 **[!UICONTROL JavaScript code]** 視窗。
+1. 開啟您的&#x200B;**[!UICONTROL JavaScript code]**&#x200B;活動。
+1. 將[指令碼範例](#example-of-a-script)中提供的指令碼複製到&#x200B;**[!UICONTROL JavaScript code]**&#x200B;視窗中。
 
    ![](assets/use_case_abtesting_configscript_002.png)
 
-1. 在 **[!UICONTROL Label]** 欄位，輸入指令碼的名稱，即
+1. 在&#x200B;**[!UICONTROL Label]**&#x200B;欄位中，輸入指令碼的名稱，即
 
    ```
    <%= vars.deliveryId %>
@@ -83,14 +83,14 @@ ht-degree: 3%
 
    ![](assets/use_case_abtesting_configscript_003.png)
 
-1. 關閉 **[!UICONTROL JavaScript code]** 活動。
+1. 關閉&#x200B;**[!UICONTROL JavaScript code]**&#x200B;活動。
 1. 儲存您的工作流程。
 
 ## 指令碼的詳細資料 {#details-of-the-script}
 
 本節詳細說明指令碼的各個部分及其作業模式。
 
-* 指令碼的第一部分是查詢。 此 **queryDef** 命令可讓您從 **NmsDelivery** 將執行目標工作流程所建立的傳送加入表格，並根據其預估開啟率進行排序，然後復原開啟率最高的傳送中的資訊。
+* 指令碼的第一部分是查詢。 **queryDef**&#x200B;命令可讓您從&#x200B;**NmsDelivery**&#x200B;表格復原透過執行目標工作流程所建立的傳送，並根據其預估開啟率加以排序，然後復原開啟率最高的傳遞中的資訊。
 
   ```
   // query the database to find the winner (best open rate)
@@ -119,7 +119,7 @@ ht-degree: 3%
   delivery.Duplicate("nms:delivery|" + winner.@id)
   ```
 
-* 已複製傳遞的標籤已修改，而且 **final** 新增至其中。
+* 已修改重複傳遞的標籤，且已新增&#x200B;**final**&#x200B;這個字。
 
   ```
   // append 'final' to the delivery label
@@ -162,11 +162,11 @@ ht-degree: 3%
 上述範例可讓您根據電子郵件開啟率來選取傳送內容。 您可以調整它，以根據其他傳遞特定指標：
 
 * 最佳點按輸送量： `[indicators/@recipientClickRatio]`，
-* 最高反應率（電子郵件開啟和訊息點按）： `[indicators/@reactivity]`，
+* 最高反應率（電子郵件開啟及訊息點按）： `[indicators/@reactivity]`，
 * 投訴率最低： `[indicators/@refusedRatio]` （使用sortDesc屬性的false值），
 * 最高轉換率： `[indicators/@transactionRatio]`，
-* 收到訊息後瀏覽的頁面數： `[indicators/@totalWebPage]`，
+* 收到訊息後造訪的頁數： `[indicators/@totalWebPage]`，
 * 最低取消訂閱率： `[indicators/@optOutRatio]`，
-* 交易金額： `[indicators/@amount]`.
+* 交易金額： `[indicators/@amount]`。
 
 您現在可以定義最終傳遞。 [了解更多](a-b-testing-uc-final-delivery.md)。

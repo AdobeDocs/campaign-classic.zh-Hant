@@ -18,37 +18,37 @@ ht-degree: 3%
 
 
 
-為選件管理提供的SOAP Web服務與Adobe Campaign中常用的不同。 可透過上一節所述的互動URL存取優惠方案，並讓您提供或更新指定聯絡人的優惠方案。
+為Offer Management提供的SOAP Web服務與Adobe Campaign中通常使用的服務不同。 可透過上一節所述的互動URL存取優惠方案，並讓您提供或更新指定聯絡人的優惠方案。
 
 ## 優惠方案主張 {#offer-proposition}
 
-針對透過SOAP的優惠方案主張，新增 **nms：proposition#Propose** 指令後面接著下列引數：
+對於透過SOAP的優惠方案主張，請新增&#x200B;**nms：proposition#Propose**&#x200B;命令，後面接著下列引數：
 
-* **targetId**：收件者的主鍵（可以是複合鍵）。
-* **maxCount**：指定聯絡人的優惠方案主張數量。
-* **內容**：可讓您在空間結構描述中新增內容資訊。 如果使用的結構描述是 **nms：互動**， **`<empty>`** 應該新增。
-* **類別**：指定優惠方案必須屬於的類別。
+* **targetId**：收件者的主索引鍵（可以是複合索引鍵）。
+* **maxCount**：指定連絡人的優惠方案主張數目。
+* **內容**：可讓您在空間結構描述中新增內容資訊。 如果使用的結構描述是&#x200B;**nms：interaction**，則應新增&#x200B;**`<empty>`**。
+* **類別**：指定優惠必須屬於的類別。
 * **主題**：指定選件必須屬於的主題。
-* **uuid**：Adobe Campaign永久cookie的值(「uuid230」)。
-* **nli**：Adobe Campaign工作階段Cookie的值(「nlid」)。
-* **noProp**：使用「true」值來停用提案插入。
+* **uuid**： Adobe Campaign永久cookie的值(「uuid230」)。
+* **nli**： Adobe Campaign工作階段Cookie的值(「nlid」)。
+* **noProp**：使用「true」值停用提案插入。
 
 >[!NOTE]
 >
->此 **targetId** 和 **maxCount** 設定是強制性的。 其他則是選擇性的。
+>**targetId**&#x200B;和&#x200B;**maxCount**&#x200B;設定是強制性的。 其他則是選擇性的。
 
 為回應查詢，SOAP服務將傳回下列引數：
 
-* **interactionId**：互動的ID。
+* **interactionId**：互動識別碼。
 * **主張**： XML元素，包含主張清單，每個都具有自己的ID和HTML表示。
 
 ## 優惠更新 {#offer-update}
 
-新增 **nms：interaction#UpdateStatus** 命令前往URL，接著執行下列引數：
+將&#x200B;**nms：interaction#UpdateStatus**&#x200B;命令新增至URL，後面接著這些引數：
 
-* **主張**：字元字串，其中包含優惠方案主張期間提供為輸出的主張ID。 請參閱 [優惠方案主張](#offer-proposition).
-* **狀態**：字串型別，它指定選件的新狀態。 可能的值會列於 **propositionStatus** 分項清單，在 **nms：common** 綱要。 例如，數字3是現成可用的，會對應至 **已接受** 狀態。
-* **內容**：XML元素，可讓您在空間結構描述中新增內容資訊。 如果使用的結構描述是 **nms：互動**， **`<empty>`** 應該新增。
+* **主張**：字元字串，它包含在優惠方案主張期間作為輸出提供的主張ID。 請參閱[優惠方案主張](#offer-proposition)。
+* **狀態**：字串型別，它指定選件的新狀態。 可能的值列在&#x200B;**nms：common**&#x200B;結構描述的&#x200B;**propositionStatus**&#x200B;列舉中。 例如，數字3是現成可用的，對應至&#x200B;**已接受**&#x200B;狀態。
+* **context**： XML元素，可讓您在空間結構描述中新增內容資訊。 如果使用的結構描述是&#x200B;**nms：interaction**，則應新增&#x200B;**`<empty>`**。
 
 ## 使用SOAP呼叫的範例 {#example-using-a-soap-call}
 

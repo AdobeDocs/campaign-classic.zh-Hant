@@ -19,11 +19,11 @@ ht-degree: 33%
 
 設定檔會集中於Adobe Campaign資料庫中。 要獲取用戶檔案，並建立此資料庫，有許多可行的機制：透過網路表單線上收集、手動或自動匯入文字檔、透過公司資料庫或其他資訊系統進行複寫。透過Adobe Campaign，您可以將行銷記錄、購買資訊、偏好設定、CRM資料以及任何相關的PI資料整合在整合檢視中，以進行分析並採取行動。
 
-&quot;**個人資料**「表示代表一般客戶、潛在客戶或潛在客戶的資訊記錄（例如：nmsRecipient表格或外部表格中的記錄，包含cookie ID、客戶ID、行動識別碼或特定通路相關的其他資訊）。
+**設定檔**」是指代表最終客戶、潛在客戶或潛在客戶的資訊記錄（例如：nmsRecipient表格或外部表格中的記錄，包含cookie識別碼、客戶識別碼、行動識別碼或其他與特定管道相關的資訊）。
 
 在 Adobe　Campaign 中，收件者是用於傳送內容 (電子郵件、簡訊等) 的預設用戶檔案。儲存在資料庫中的收件者資料可讓您篩選將接收任何指定傳遞的目標，並在傳遞內容中新增個人化資料。 資料庫中還存在其他類型的用戶檔案。這些用戶檔案是針對不同用途設計的。例如，種子用戶檔案用於在內容傳送給最終目標前測試內容。
 
-![](assets/do-not-localize/how-to-video.png) [瞭解影片中設定檔的概念](#create-profiles-video)
+![](assets/do-not-localize/how-to-video.png) [瞭解視訊中的設定檔概念](#create-profiles-video)
 
 ## 用戶檔案類型 {#profile-types}
 
@@ -47,59 +47,59 @@ ht-degree: 33%
 
 >[!NOTE]
 >
->若要瞭解檔案和網頁表單的匯入方式，請參閱 [一般匯入和匯出](../../platform/using/get-started-data-import-export.md).
+>若要瞭解檔案和網頁表單如何匯入，請參閱[一般匯入和匯出](../../platform/using/get-started-data-import-export.md)。
 
 ## 用戶檔案和目標 {#profiles-and-targets}
 
-此 **[!UICONTROL Profiles and targets]** 連結可讓您顯示儲存在Adobe Campaign資料庫中的收件者。 您可以建立新收件者、編輯現有收件者並存取其設定檔。 如需詳細資訊，請參閱[此頁面](../../platform/using/editing-a-profile.md)。
+**[!UICONTROL Profiles and targets]**&#x200B;連結可讓您顯示儲存在Adobe Campaign資料庫中的收件者。 您可以建立新收件者、編輯現有收件者並存取其設定檔。 如需詳細資訊，請參閱[此頁面](../../platform/using/editing-a-profile.md)。
 
 ![](assets/d_ncs_user_interface_target_link.png)
 
 它也可讓您存取：
 
-* 清單 —  [瞭解更多](../../platform/using/creating-and-managing-lists.md)
-* 訂閱服務 —  [瞭解更多](../../delivery/using/managing-subscriptions.md)
-* 網頁應用程式 —  [瞭解更多](../../web/using/about-web-applications.md)
+* 清單 — [深入瞭解](../../platform/using/creating-and-managing-lists.md)
+* 訂閱服務 — [深入瞭解](../../delivery/using/managing-subscriptions.md)
+* 網頁應用程式 — [深入瞭解](../../web/using/about-web-applications.md)
 * 匯入和匯出（工作） - [瞭解更多](../../platform/using/about-generic-imports-exports.md)
-* 目標工作流程 —  [瞭解更多](../../workflow/using/building-a-workflow.md#implementation-steps-)
+* 目標工作流程 — [瞭解更多](../../workflow/using/building-a-workflow.md#implementation-steps-)
 
 使用收件者頁面，您可以對用戶檔案執行常見的作業，如編輯、更新、新增、刪除、排序。
 
-如需更進階的設定檔操作，您需要編輯Adobe Campaign樹狀結構。 若要這麼做，請按一下 **[!UICONTROL Explorer]** Adobe Campaign首頁上的連結。
+如需更進階的設定檔操作，您需要編輯Adobe Campaign樹狀結構。 若要這麼做，請按一下Adobe Campaign首頁上的&#x200B;**[!UICONTROL Explorer]**&#x200B;連結。
 
-依預設，收件者會儲存在 **[!UICONTROL Profiles and Targets > Recipients]** 樹狀結構的節點。 由此畫面，您可以建立收件者以及以下各項：
+依預設，收件者會儲存在樹狀結構的&#x200B;**[!UICONTROL Profiles and Targets > Recipients]**&#x200B;節點中。 由此畫面，您可以建立收件者以及以下各項：
 
-* 排序及篩選資料庫的設定檔 —  [瞭解更多](../../platform/using/filtering-options.md)
-* 從資料庫移動、複製或刪除設定檔 —  [瞭解更多](../../platform/using/managing-profiles.md)，
-* 更新設定檔 —  [瞭解更多](../../platform/using/updating-data.md)
-* 匯出收件者 —  [瞭解更多](../../platform/using/exporting-and-importing-profiles.md)
-* 建立收件者群組 —  [瞭解更多](../../platform/using/creating-and-managing-lists.md)
+* 排序及篩選資料庫的設定檔 — [深入瞭解](../../platform/using/filtering-options.md)
+* 從資料庫移動、複製或刪除設定檔 — [深入瞭解](../../platform/using/managing-profiles.md)，
+* 更新設定檔 — [深入瞭解](../../platform/using/updating-data.md)
+* 匯出收件者 — [深入瞭解](../../platform/using/exporting-and-importing-profiles.md)
+* 建立收件者群組 — [深入瞭解](../../platform/using/creating-and-managing-lists.md)
 
-若要存取進階功能與設定，您必須按一下 **[!UICONTROL Explorer]** 圖示。
+若要存取進階功能與設定，您必須按一下&#x200B;**[!UICONTROL Explorer]**&#x200B;圖示。
 
 ![](assets/d_ncs_user_interface01.png)
 
-Adobe Campaign Explorer的一般版面配置顯示於 [此頁面](../../platform/using/adobe-campaign-explorer.md).
+Adobe Campaign Explorer的一般配置顯示在[此頁面](../../platform/using/adobe-campaign-explorer.md)中。
 
 >[!NOTE]
 >
->您也可以按一下「 」，從Adobe Campaign樹狀結構顯示此清單的進階檢視 **[!UICONTROL Profiles and targets > Recipients]** 連結。 清單顯示可依您的需求進行設定。 您可以新增或刪除欄、定義欄順序、排序資料等。 清單顯示設定的說明，請參閱 [此頁面](../../platform/using/adobe-campaign-ui-lists.md).
+>您也可以按一下&#x200B;**[!UICONTROL Profiles and targets > Recipients]**&#x200B;連結，從Adobe Campaign樹狀結構顯示此清單的進階檢視。 清單顯示可依您的需求進行設定。 您可以新增或刪除欄、定義欄順序、排序資料等。 清單顯示設定在[此頁面](../../platform/using/adobe-campaign-ui-lists.md)中說明。
 >
->您也可以定義收件者檢視。 如需有關此功能的進一步資訊，請參閱 [本節](../../platform/using/access-management-folders.md).
+>您也可以定義收件者檢視。 如需有關此功能的進一步資訊，請參閱[此章節](../../platform/using/access-management-folders.md)。
 
 ## 使用中的設定檔案 {#active-profiles}
 
 作用中設定檔是客戶在過去12個月嘗試透過任何通道與之通訊的設定檔。
 
-根據您的合約，您的每個 Campaign 執行個體都已佈建特定數量的作用中設定檔，而且會計算這些設定檔數量以結算費用。請參閱您的最新合約，以參考已購買作用中設定檔數目。 進一步瞭解 [Adobe Campaign產品說明](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
+根據您的合約，您的每個 Campaign 執行個體都已佈建特定數量的作用中設定檔，而且會計算這些設定檔數量以結算費用。請參閱您的最新合約，以參考已購買作用中設定檔數目。 深入瞭解[Adobe Campaign產品說明](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}。
 
-您可以直接從Campaign「控制面板」監視執行個體上的作用中設定檔數目。 有關詳細資訊，請參閱 [控制面板檔案](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html){target="_blank"}.
+您可以直接從Campaign「控制面板」監視執行個體上的作用中設定檔數目。 如需詳細資訊，請參閱[控制面板檔案](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html){target="_blank"}。
 
 以下護欄和限制在此適用：
 
 * 數個傳送所定位的設定檔只會計算一次。
 * 在X (Twitter)或Facebook的社交行銷內容中鎖定的設定檔，不會視為作用中設定檔。
-* 作用中設定檔的計數可用於 **行銷例項** 僅限。 它不適用於執行例項，亦即MID (mid sourcing)和RT （Message Center/即時傳訊）例項。
+* 作用中設定檔的計數僅適用於&#x200B;**行銷執行個體**。 它不適用於執行例項，亦即MID (mid sourcing)和RT （Message Center/即時傳訊）例項。
 * 計數是以收件者主索引鍵為基礎。 因此，如果設定檔存在於兩個不同的收件者表格中，則可將其計算為作用中設定檔兩次。
 
 
@@ -111,11 +111,11 @@ Adobe Campaign Explorer的一般版面配置顯示於 [此頁面](../../platform
 
 >[!VIDEO](https://video.tv.adobe.com/v/35611?quality=12)
 
-提供其他Campaign Classic操作影片 [此處](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant).
+[此處](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant)提供其他Campaign Classic操作說明影片。
 
 **另請參閱**
 
-* [Campaign的隱私權管理](https://helpx.adobe.com/tw/campaign/kb/acc-privacy.html)
+* 行銷活動中的[隱私權管理](https://helpx.adobe.com/tw/campaign/kb/acc-privacy.html)
 
 * [定義目標母體](../../delivery/using/define-the-right-audience.md)
 

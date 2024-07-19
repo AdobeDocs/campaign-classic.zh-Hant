@@ -25,21 +25,21 @@ ht-degree: 24%
 
 >[!NOTE]
 >
->此程式僅限於 **內部部署** 部署。
+>此程式僅限於&#x200B;**內部部署**&#x200B;部署。
 >
->作為 **託管** 客戶，如果您可存取 [Campaign控制面板](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hant)，您可以使用URL許可權自助服務介面。 [了解更多](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=zh-Hant)
+>身為&#x200B;**託管**&#x200B;客戶，若您可存取[Campaign控制面板](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hant)，則可使用URL許可權自助服務介面。 [了解更多](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=zh-Hant)
 >
->其他 **混合/託管** 客戶需要聯絡Adobe支援團隊，將IP新增至允許清單。
+>其他&#x200B;**混合/託管**&#x200B;客戶需要聯絡Adobe支援團隊，將IP新增至允許清單。
 >
 
-的 **混合式** 和 **內部部署** 部署，管理員需要參考新的 **urlPermission** 在 **serverConf.xml** 檔案。
+對於&#x200B;**混合式**&#x200B;和&#x200B;**內部部署**&#x200B;部署，管理員需要在&#x200B;**serverConf.xml**&#x200B;檔案中參考新的&#x200B;**urlPermission**。
 
 
 有三種連線保護模式可供使用：
 
-* **封鎖**：所有不屬於允許清單的URL都會遭到封鎖，並顯示錯誤訊息。 這是升級後使用的預設模式。
-* **許可**：允許所有不屬於允許清單的URL。
-* **警告**：允許所有不屬於允許清單的URL，但JS解譯器會發出警告，讓管理員可以收集。 此模式會新增JST-310027警告訊息。
+* **封鎖**：所有不屬於允許清單的URL都會遭到封鎖，並出現錯誤訊息。 這是升級後使用的預設模式。
+* **允許**：允許不屬於允許清單的所有URL。
+* **警告**：允許所有不屬於允許清單的URL，但JS解譯器會發出警告，以便管理員可以收集這些URL。 此模式會新增JST-310027警告訊息。
 
 ```
 <urlPermission action="warn" debugTrace="true">
@@ -51,9 +51,9 @@ ht-degree: 24%
 
 >[!IMPORTANT]
 >
->根據預設，新的實作會使用 **封鎖** 模式。
+>依預設，新實作會使用&#x200B;**封鎖**&#x200B;模式。
 >
->作為來自移轉的現有客戶，您可以暫時使用 **警告** 模式。 在允許URL之前分析傳出流量。 一旦定義了允許的URL清單，您就可以將URL新增到允許清單並啟動 **封鎖** 模式。
+>作為來自移轉的現有客戶，您可以暫時使用&#x200B;**警告**&#x200B;模式。 在允許URL之前分析傳出流量。 一旦定義了允許的URL清單，您就可以將URL新增到允許清單並啟動&#x200B;**封鎖**&#x200B;模式。
 
 如需詳細資訊，請參閱下列章節：
 

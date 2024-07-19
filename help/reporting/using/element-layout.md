@@ -16,9 +16,9 @@ ht-degree: 1%
 
 
 
-除了各種詳細的圖表之外 [此處](../../reporting/using/creating-a-chart.md#chart-types-and-variants)，您可以調整顯示方式，並將元素新增至報表頁面。
+除了詳細的[這裡](../../reporting/using/creating-a-chart.md#chart-types-and-variants)的各種圖表之外，您還可以調整顯示方式，並將元素新增至報告頁面。
 
-您可以使用容器：這些容器可讓您連結頁面的數個元素，並在欄及/或儲存格中設定其版面。 如何使用上述變數，詳情請參閱 [本節](../../web/using/defining-web-forms-layout.md#creating-containers).
+您可以使用容器：這些容器可讓您連結頁面的數個元素，並在欄及/或儲存格中設定其版面。 在[本節](../../web/using/defining-web-forms-layout.md#creating-containers)中會詳細說明如何使用。
 
 您可以在樹狀結構的根目錄設定報表配置，並針對每個容器多載它。 頁面會排序為欄。 容器也會排序為欄。 只有靜態和圖形專案會排序成儲存格。
 
@@ -26,31 +26,31 @@ ht-degree: 1%
 
 您可以在報告的每個頁面上使用選項。
 
-此 **[!UICONTROL General]** 索引標籤可讓您變更頁面標題，以及設定圖例位置並在報表頁面之間瀏覽。
+**[!UICONTROL General]**&#x200B;索引標籤可讓您變更頁面標題，以及設定圖例位置並在報表頁面之間瀏覽。
 
 ![](assets/s_ncs_advuser_report_wizard_022.png)
 
-此 **[!UICONTROL Title]** 欄位可讓您個人化報表頁面標頭中的標籤。 視窗的標題可透過以下方式設定： **[!UICONTROL Properties]** 報表的視窗。 有關詳細資訊，請參閱 [新增頁首和頁尾](#adding-a-header-and-a-footer).
+**[!UICONTROL Title]**&#x200B;欄位可讓您個人化報告頁面標頭中的標籤。 視窗的標題可透過報告的&#x200B;**[!UICONTROL Properties]**&#x200B;視窗來設定。 如需詳細資訊，請參閱[新增頁首和頁尾](#adding-a-header-and-a-footer)。
 
-此 **[!UICONTROL Display settings]** 選項可讓您選取報表頁面中控制標題的位置，並定義頁面上的欄數。 如需頁面配置的詳細資訊，請參閱 **專案配置** 部分 [本節](../../web/using/defining-web-forms-layout.md#positioning-the-fields-on-the-page).
+**[!UICONTROL Display settings]**&#x200B;選項可讓您選取報告頁面中控制標題的位置，並定義頁面上的欄數。 如需頁面配置的詳細資訊，請參閱[此區段](../../web/using/defining-web-forms-layout.md#positioning-the-fields-on-the-page)的&#x200B;**專案配置**&#x200B;區段。
 
-選取中的各種選項 **[!UICONTROL Browse]** 區段來授權從一個報表頁面瀏覽至另一個報表頁面。 如果 **[!UICONTROL Disable next page]** 或 **[!UICONTROL Disable previous page]** 已選取選項，則 **[!UICONTROL Next]** 和 **[!UICONTROL Previous]** 按鈕從報表頁面中消失。
+在&#x200B;**[!UICONTROL Browse]**&#x200B;區段中選取各種選項，以授權從一個報告頁面瀏覽到另一個報告頁面。 如果選取&#x200B;**[!UICONTROL Disable next page]**&#x200B;或&#x200B;**[!UICONTROL Disable previous page]**&#x200B;選項，**[!UICONTROL Next]**&#x200B;和&#x200B;**[!UICONTROL Previous]**&#x200B;按鈕會從報告頁面中消失。
 
 ## 新增頁首和頁尾 {#adding-a-header-and-a-footer}
 
 報表屬性視窗也可讓您定義版面配置元素，例如：視窗標題、頁首與頁尾的HTML內容。
 
-若要存取屬性視窗，請按一下 **[!UICONTROL Properties]** 按鈕來建立報表。
+若要存取屬性視窗，請按一下報告的&#x200B;**[!UICONTROL Properties]**&#x200B;按鈕。
 
 ![](assets/reporting_properties.png)
 
-此 **[!UICONTROL Page]** 標籤可讓您個人化您的顯示。
+**[!UICONTROL Page]**&#x200B;索引標籤可讓您個人化您的顯示。
 
 ![](assets/s_ncs_advuser_report_properties_04.png)
 
 在此索引標籤中設定的內容將顯示在所有報告頁面上。
 
-此 **[!UICONTROL Texts]** 子頁簽可讓您定義可變內容：如果設計報表以多種語言使用，則在翻譯週期中會考慮該內容。
+**[!UICONTROL Texts]**&#x200B;子標籤可讓您定義變數內容：如果設計報表以多種語言使用，則會在翻譯週期期間將其列入考量。
 
 這可讓您建立文字片段清單，並將其連結至識別碼：
 

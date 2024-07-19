@@ -17,7 +17,7 @@ ht-degree: 1%
 
 本節列出您在傳送傳遞時可能會遇到的常見問題，以及如何疑難排解這些問題。
 
-此外，請務必遵循以下說明的最佳實務和檢查清單： [此頁面](delivery-performances.md) 以確保您的傳送執行良好。
+此外，請務必遵循[此頁面](delivery-performances.md)中詳述的最佳實務和檢查清單，以確保您的傳遞執行良好。
 
 **相關主題：**
 
@@ -27,17 +27,17 @@ ht-degree: 1%
 
 ## 傳送速度緩慢 {#slow-deliveries}
 
-按一下 **[!UICONTROL Send]** 按鈕，您的傳送時間似乎比平常長。 這可能是由於不同的元素所造成：
+按一下&#x200B;**[!UICONTROL Send]**&#x200B;按鈕後，您的傳送似乎需要比平常更長的時間。 這可能是由於不同的元素所造成：
 
-* 有些電子郵件提供者可能會將您的IP位址新增至封鎖清單。 在此情況下，請檢查您的broadlog並參閱 [本節](about-deliverability.md).
+* 有些電子郵件提供者可能會將您的IP位址新增至封鎖清單。 在此情況下，請檢查您的broadlogs並參閱[此區段](about-deliverability.md)。
 
-* 您的傳送可能太大而無法快速處理，這可能因高度JavaScript個人化或傳送超過60KB而發生。 請參閱Adobe Campaign [傳遞最佳實務](delivery-best-practices.md) 以深入瞭解內容指南。
+* 您的傳送可能太大而無法快速處理，這可能與JavaScript高度個人化或傳送超過60KB有關。 請參閱Adobe Campaign [傳遞最佳實務](delivery-best-practices.md)，瞭解內容指導方針。
 
 * 節流可能發生在Adobe Campaign MTA中。 原因如下：
 
-   * 已擱置的訊息(**[!UICONTROL quotas met]** message)：已符合Campaign中定義的宣告MX規則所宣告的配額。 如需此訊息的詳細資訊，請參閱 [此頁面](deliverability-faq.md). 若要進一步瞭解MX規則，請參閱 [本節](../../installation/using/email-deliverability.md#about-mx-rules).
+   * 擱置的訊息（**[!UICONTROL quotas met]**&#x200B;訊息）：已符合Campaign中定義的宣告MX規則所宣告的配額。 如需此訊息的詳細資訊，請參閱[此頁面](deliverability-faq.md)。 若要進一步瞭解MX規則，請參閱[本節](../../installation/using/email-deliverability.md#about-mx-rules)。
 
-   * 已擱置的訊息(**[!UICONTROL dynamic flow control]** message)： Campaign MTA在嘗試傳送給定ISP的訊息時遇到錯誤，這會造成速度變慢，以避免錯誤密度太大，從而面臨潛在的封鎖清單。
+   * 擱置的訊息（**[!UICONTROL dynamic flow control]**&#x200B;訊息）： Campaign MTA在嘗試傳送給定ISP的訊息時遇到錯誤，這會造成速度變慢，以避免錯誤密度過大，進而面臨潛在的封鎖清單。
 
 * 系統問題可能會導致伺服器無法共同互動：這可能會減慢整個傳送流程的速度。 例如，檢查伺服器，確保沒有記憶體或資源問題可能會影響Campaign取得個人化資料的程式。
 
@@ -49,7 +49,7 @@ ht-degree: 1%
 
 ## 失敗狀態 {#failed-status}
 
-如果電子郵件傳遞的狀態為 **[!UICONTROL Failed]**，此資訊可以連結至個人化區塊的問題。 例如，當結構描述不符合傳遞對應時，傳遞中的個人化區塊可能會產生錯誤。
+如果電子郵件傳遞的狀態為&#x200B;**[!UICONTROL Failed]**，則它可以連結至個人化區塊的問題。 例如，當結構描述不符合傳遞對應時，傳遞中的個人化區塊可能會產生錯誤。
 
 傳遞記錄是瞭解傳遞失敗原因的關鍵。 您可以從傳送記錄中偵測到下列可能錯誤：
 
@@ -71,7 +71,7 @@ ht-degree: 1%
 
   原因與效能問題有關。 這表示行銷執行個體在傳送資料至中間來源伺服器之前，會花費太多時間建置資料。
 
-  若要解決此問題，建議對資料庫執行真空並重新索引。 有關資料庫維護的詳細資訊，請參閱 [本節](../../production/using/recommendations.md).
+  若要解決此問題，建議對資料庫執行真空並重新索引。 如需資料庫維護的詳細資訊，請參閱[本節](../../production/using/recommendations.md)。
 
   您也應該重新啟動所有具有已排程活動的工作流程，以及所有處於失敗狀態的工作流程。 請參閱[本節](../../workflow/using/scheduler.md)。
 
@@ -83,7 +83,7 @@ ht-degree: 1%
 
   通常，此錯誤表示電子郵件中有收件者的多個值之個人化欄位或區塊。 個人化區塊正在使用中，且正在為特定收件者擷取多個記錄。
 
-  若要解決此問題，請檢查使用的個人化資料，然後檢查目標，找出具有超過其中一個欄位專案的收件者。 您也可以使用 **[!UICONTROL Deduplication]** 在傳送活動之前的目標工作流程中的活動，以檢查一次只有一個個人化欄位。 如需重複資料刪除的詳細資訊，請參閱 [此頁面](../../workflow/using/deduplication.md).
+  若要解決此問題，請檢查使用的個人化資料，然後檢查目標，找出具有超過其中一個欄位專案的收件者。 您也可以在傳遞活動之前的目標工作流程中使用&#x200B;**[!UICONTROL Deduplication]**&#x200B;活動，以檢查一次只有一個個人化欄位。 如需重複資料刪除的詳細資訊，請參閱[此頁面](../../workflow/using/deduplication.md)。
 
 * 部分傳送可能會因為「無法聯絡」錯誤而失敗，並指出：
 

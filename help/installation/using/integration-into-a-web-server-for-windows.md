@@ -17,14 +17,14 @@ ht-degree: 2%
 
 # 與Windows版Web伺服器整合 {#integration-into-a-web-server-for-windows}
 
-Adobe Campaign包含Apache Tomcat，可透過HTTP （和SOAP）作為應用程式伺服器的進入點。
+Adobe Campaign包含Apache Tomcat，可透過HTTP (和SOAP)作為應用程式伺服器的進入點。
 
 您可以使用這個整合的Tomcat伺服器來處理HTTP要求。
 
 在此案例中：
 
-* 預設的接聽連線埠為8080。 若要變更，請參閱 [本節](../../installation/using/configure-tomcat.md).
-* 然後，使用者端主控台會使用URL連線，例如 ```https:// `<computer>`:8080```.
+* 預設的接聽連線埠為8080。 若要變更，請參閱[本節](../../installation/using/configure-tomcat.md)。
+* 使用者端主控台接著使用URL （例如```https:// `<computer>`:8080```）連線。
 
 不過，基於安全性與管理考量，當執行Adobe Campaign的電腦公開在網際網路上，而您想要開啟網路外部主控台的存取權時，我們建議使用專用的Web伺服器作為HTTP流量的主要進入點。
 
@@ -52,17 +52,17 @@ Microsoft IIS Web伺服器的設定程式大部分是圖形化的。 它涉及�
 
    ![](assets/s_ncs_install_iis7_parameters_step1.png)
 
-1. A **VBS** 指令碼可讓您在剛剛建立的虛擬目錄上，自動設定Adobe Campaign伺服器使用的資源。 若要啟動，請連按兩下 **iis_neolane_setup.vbs** 檔案位於 `[INSTALL]\conf` 資料夾，其中 `[INSTALL]` 是存取Adobe Campaign安裝資料夾的路徑。
+1. **VBS**&#x200B;指令碼可讓您在我們剛建立的虛擬目錄上自動設定Adobe Campaign伺服器所使用的資源。 若要啟動，請按兩下位於`[INSTALL]\conf`資料夾中的&#x200B;**iis_neolane_setup.vbs**&#x200B;檔案，其中`[INSTALL]`是存取Adobe Campaign安裝資料夾的路徑。
 
    >[!NOTE]
    >
    >您必須以管理員身分登入，才能執行VBS指令碼或以管理員身分執行指令碼。
 
-   按一下 **[!UICONTROL OK]** 如果Web伺服器是做為追蹤重新導向伺服器，否則請按一下 **[!UICONTROL Cancel]**.
+   如果網頁伺服器是做為追蹤重新導向伺服器，請按一下&#x200B;**[!UICONTROL OK]**，否則請按一下&#x200B;**[!UICONTROL Cancel]**。
 
-   當網頁伺服器上已設定多個網站時，會顯示一個中間頁面，以指定安裝套用至哪個網站：輸入連結至網站的號碼，然後按一下 **[!UICONTROL OK]**.
+   當網頁伺服器上已設定多個網站時，會顯示一個中間頁面，以指定安裝套用至哪個網站：輸入連結至網站的號碼，然後按一下&#x200B;**[!UICONTROL OK]**。
 
-1. 在 **[!UICONTROL Content View]** 索引標籤中，請確認網站已正確設定Adobe Campaign資源：
+1. 在&#x200B;**[!UICONTROL Content View]**&#x200B;標籤中，確定網站已正確設定Adobe Campaign資源：
 
    如果未顯示樹狀結構，請重新啟動Microsoft IIS。
 
@@ -72,11 +72,11 @@ Microsoft IIS Web伺服器的設定程式大部分是圖形化的。 它涉及�
 
 若要這麼做，請套用下列步驟：
 
-1. 選取 **[!UICONTROL Features View]** 標籤並連按兩下 **驗證** 連結。
+1. 選取&#x200B;**[!UICONTROL Features View]**&#x200B;索引標籤並連按兩下&#x200B;**驗證**&#x200B;連結。
 
    ![](assets/s_ncs_install_iis7_parameters_step8.png)
 
-1. 在 **目錄安全性** 的標籤中，確定已啟用匿名存取。 如有需要，請按一下 **[!UICONTROL Edit]** 連結以變更設定。
+1. 在網站的&#x200B;**目錄安全性**&#x200B;標籤中，確定已啟用匿名存取。 如有必要，請按一下&#x200B;**[!UICONTROL Edit]**&#x200B;連結以變更設定。
 
    ![](assets/s_ncs_install_iis7_parameters_step9.png)
 
@@ -86,7 +86,7 @@ Microsoft IIS Web伺服器的設定程式大部分是圖形化的。 它涉及�
 
 要執行此操作，請套用下列程式：
 
-1. 使用重新啟動Microsoft IIS伺服器 **iisreset** 命令列。
+1. 使用&#x200B;**iisreset**&#x200B;命令列重新啟動Microsoft IIS伺服器。
 
 1. 啟動Adobe Campaign服務，然後確認該服務正在執行。
 
@@ -119,7 +119,7 @@ webmdl@default (1644) - 18.2 Mo
 
 若要這麼做，請套用下列步驟：
 
-1. 按一下「 」，編輯Adobe Campaign網站的ISAPI篩選器 **[!UICONTROL Driver mapping]** 圖示。
+1. 按一下&#x200B;**[!UICONTROL Driver mapping]**&#x200B;圖示來編輯Adobe Campaign網站的ISAPI篩選器。
 1. 檢查ISAPI篩選器的內容。
 
 
@@ -129,9 +129,9 @@ webmdl@default (1644) - 18.2 Mo
 
 在Adobe Campaign中，這可能會造成影響，尤其是當您想要上傳大於此限制的檔案時。
 
-例如，如果您使用 **資料載入（檔案）** 在工作流程中輸入活動以匯入50 MB的檔案，錯誤會停止工作流程正確執行。
+例如，如果您在工作流程中使用&#x200B;**資料載入（檔案）**&#x200B;型別活動來匯入50 MB的檔案，則錯誤會阻止工作流程正確執行。
 
 在此情況下，您必須提高此限制。
 
-如需有關此Microsoft IIS選項的詳細資訊，請參閱 [Microsoft檔案](https://learn.microsoft.com/en-us/iis/configuration/system.webServer/security/requestFiltering/requestLimits/){target="_blank"}.
+如需有關此Microsoft IIS選項的詳細資訊，請參閱[Microsoft檔案](https://learn.microsoft.com/en-us/iis/configuration/system.webServer/security/requestFiltering/requestLimits/){target="_blank"}的「做法」一節。
 

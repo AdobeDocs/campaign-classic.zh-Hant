@@ -43,13 +43,13 @@ dbindex：==keyfield
 
 可以定義多個索引。 一個索引可以參考資料表的一或多個欄位。 索引宣告通常遵循主要結構描述元素的定義。
 
-的順序 `<keyfield>` 在中定義的元素 `<dbindex>` 非常重要。 第一個 `<keyfield>` 必須是查詢主要依據的索引標準。
+在`<dbindex>`中定義的`<keyfield>`專案順序非常重要。 第一個`<keyfield>`必須是查詢主要依據的索引准則。
 
 資料庫中索引的名稱是透過串連資料表的名稱和索引的名稱來計算的。 例如：資料表名稱&quot;Sample&quot;、名稱空間&quot;Cus&quot;、索引名稱&quot;MyIndex&quot;->建立索引期間索引欄位的名稱查詢：&quot;CusSample_myIndex&quot;。
 
 ## 屬性說明 {#attribute-description-3}
 
-* **操作（字串）(_O)**：定義資料庫中的寫入型別。
+* **_operation （字串）**：定義在資料庫中寫入的型別。
 
   此屬性主要用於擴充現成可用的結構描述。
 
@@ -61,14 +61,14 @@ dbindex：==keyfield
    * &quot;update&quot;：更新。 這表示Adobe Campaign將更新元素，如果元素不存在則會產生錯誤。
    * &quot;delete&quot;：刪除。 這表示Adobe Campaign將復原和刪除元素。
 
-* **appliedIf （字串）**：考慮索引的條件 — 接收XTK運算式。
+* **applicableIf （字串）**：考慮索引的條件 — 接收XTK運算式。
 * **標籤（字串）**：索引標籤。
-* **名稱(MNTOKEN)**：唯一索引名稱。
-* **唯一（布林值）**：如果已啟用此選項(@unique=&quot;true&quot;)，屬性會保證其欄位中索引的唯一性。
+* **名稱(MNTOKEN)**：唯一的索引名稱。
+* **唯一（布林值）**：如果已啟動此選項(@unique=&quot;true&quot;)，則屬性會保證索引在其欄位中的唯一性。
 
 ## 範例 {#examples-3}
 
-在「id」欄位上建立索引。 (上的「@unique」屬性 `<dbindex>` 在資料庫中建立索引時，元素會觸發新增「唯一」SQL關鍵字（查詢）。
+在「id」欄位上建立索引。 (`<dbindex>`專案上的「@unique」屬性會在資料庫中建立索引時，觸發新增「UNIQUE」SQL關鍵字（查詢）。)
 
 ```
 <element label="Sample" name="Sample">

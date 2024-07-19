@@ -17,13 +17,13 @@ ht-degree: 0%
 
 # 找到Tomcat版本{#locate-tomcat-version}
 
-Adobe Campaign使用 **稱為Apache Tomcat的內嵌Web servlet** 在應用程式和任何外部介面（包括使用者端主控台、追蹤的URL連結、SOAP呼叫等）之間處理HTTP/HTTPS請求。 在任何面對外部的Adobe Campaign執行個體中，通常有一個外部網頁伺服器（通常是IIS或Apache）位於此伺服器之前。
+Adobe Campaign使用名為Apache Tomcat **的**&#x200B;內嵌Web servlet來處理應用程式與任何外部介面(包括使用者端主控台、追蹤的URL連結、SOAP呼叫等)之間的HTTP/HTTPS要求。 在任何面對外部的Adobe Campaign執行個體中，通常有一個外部網頁伺服器（通常是IIS或Apache）位於此伺服器之前。
 
-請依照下列程式，找出在URL中使用的Tomcat的確切版本 **Campaign Classic內部部署執行個體** 以協助疑難排解問題。
+請依照下列程式，找出用於&#x200B;**Campaign Classic內部部署執行個體**&#x200B;的確切版本Tomcat，以協助疑難排解問題。
 
 ## Adobe Campaign中使用的Tomcat
 
-Tomcat會在Java上執行，並需要安裝JDK。 如需詳細資訊，請參閱 [Campaign相容性矩陣](../../rn/using/compatibility-matrix.md) 區段。
+Tomcat會在Java上執行，並需要安裝JDK。 如需詳細資訊，請參閱[Campaign相容性矩陣](../../rn/using/compatibility-matrix.md)一節中的Java開發套件(JDK)。
 
 Adobe Campaign中使用的Tomcat是自訂的內嵌版本，該版本未使用Tomcat完整一般可用版本的所有功能，並且可能沒有完整版本的所有漏洞。 Tomcat也不應該公開給外部網際網路，而任何公開的Adobe Campaign執行個體都應該有外部網頁伺服器（IIS、Apache等） 在Tomcat前保護它。
 
@@ -41,19 +41,19 @@ Tomcat內嵌版本的新版本或升級版本只會隨Adobe Campaign本身的新
 
 >[!NOTE]
 >
->您必須擁有Adobe Campaign伺服器上需要檢查之檔案的存取權。 下述程式只適用於 **內部部署託管模型**.
+>您必須擁有Adobe Campaign伺服器上需要檢查之檔案的存取權。 下列程式僅適用於&#x200B;**內部部署託管模型**。
 
-1. 導覽至 *\tomcat-11\lib* Adobe Campaign安裝資料夾中的子資料夾(例如， *C:\Program Files\ [Installation_folder]* 在Windows中，或 */usr/local/neolane/nl6* （在Linux中）。
+1. 導覽至Adobe Campaign安裝資料夾內的&#x200B;*\tomcat-11\lib*&#x200B;子資料夾(例如，在Windows中為&#x200B;*C:\Program Files\ [Installation_folder]*，或在Linux中為&#x200B;*/usr/local/neolane/nl6*)。
 
-1. 複製檔案 *catalina.jar* 至外部的暫存資料夾（例如您的案頭），並將副檔名從.jar重新命名為.zip。
+1. 將檔案&#x200B;*catalina.jar*&#x200B;複製到外部的暫存資料夾（例如您的案頭），並將副檔名從.jar重新命名為.zip。
 
 1. 將複製的檔案解壓縮。 這會產生許多子資料夾和檔案。
 
-1. 在解壓縮的檔案/資料夾中，使用文字編輯器開啟或讀取下列包含的檔案： *org/apache/catalina/util/ServerInfo.properties*. 您可能需要新增.txt副檔名，以利使用文字編輯器開啟。
+1. 在解壓縮的檔案/資料夾中，使用文字編輯器開啟或讀取下列包含的檔案： *org/apache/catalina/util/ServerInfo.properties*。 您可能需要新增.txt副檔名，以利使用文字編輯器開啟。
 
 1. 完成後，如果檔案位於伺服器電腦上，請刪除您建立的暫存檔案。
 
-例如， *ServerInfo.屬性* Adobe Campaign的檔案包含下列資訊，指出Tomcat v11.X：
+例如，Adobe Campaign的&#x200B;*ServerInfo.properties*&#x200B;檔案包含下列資訊，指出Tomcat v11.X：
 
 *`server.info=Apache Tomcat/11.X`*
 

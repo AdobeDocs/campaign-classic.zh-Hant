@@ -32,7 +32,7 @@ Adobe Campaign可讓您設定鼓勵病毒式行銷的工具。
 
 >[!NOTE]
 >
->依預設，封鎖清單中不提供此連結。 您可以按一下 **[!UICONTROL Other...]**，並選取 **[!UICONTROL Social network sharing links]** 區塊。
+>依預設，封鎖清單中不提供此連結。 您可以按一下&#x200B;**[!UICONTROL Other...]**&#x200B;並選取&#x200B;**[!UICONTROL Social network sharing links]**&#x200B;區塊來存取它。
 
 ![](assets/s_ncs_user_viral_add_link_via_others.png)
 
@@ -44,7 +44,7 @@ Adobe Campaign可讓您設定鼓勵病毒式行銷的工具。
 
 >[!NOTE]
 >
->此個人化區塊包含所有連結（用於傳送訊息並與所有社交網路分享）。 您可以根據自己的需求加以變更。 但是，設定會保留給進階使用者。 若要編輯相符的個人化區塊，請前往 **[!UICONTROL Resources > Campaign management > Personalization blocks]** Adobe Campaign樹的節點。
+>此個人化區塊包含所有連結（用於傳送訊息並與所有社交網路分享）。 您可以根據自己的需求加以變更。 但是，設定會保留給進階使用者。 若要編輯相符的個人化區塊，請前往Adobe Campaign樹狀結構的&#x200B;**[!UICONTROL Resources > Campaign management > Personalization blocks]**&#x200B;節點。
 
 ## 病毒式行銷：轉寄給朋友 {#viral-marketing--forward-to-a-friend}
 
@@ -54,8 +54,8 @@ Adobe Campaign可讓您設定鼓勵病毒式行銷的工具。
 
 套用下列階段：
 
-1. 新增 **[!UICONTROL Social network sharing links]** 個人化區塊放入原始訊息的正文中。
-1. 郵件收件者可以按一下 **[!UICONTROL Email]** 圖示以傳送此訊息給一或多個朋友。
+1. 將&#x200B;**[!UICONTROL Social network sharing links]**&#x200B;個人化區塊新增至原始郵件的內文。
+1. 郵件收件者可以按一下&#x200B;**[!UICONTROL Email]**&#x200B;圖示，將此郵件傳送給一或多個朋友。
 
    ![](assets/s_ncs_user_viral_email_link.png)
 
@@ -63,13 +63,13 @@ Adobe Campaign可讓您設定鼓勵病毒式行銷的工具。
 
    ![](assets/s_ncs_user_viral_email_msg.png)
 
-   當主要收件者按一下 **[!UICONTROL Next]** 按鈕。
+   當主要收件者按一下&#x200B;**[!UICONTROL Next]**&#x200B;按鈕時，會將訊息傳送給他們。
 
    >[!NOTE]
    >
-   >此訊息的內容可以根據您的需求進行個人化。 它是根據以下專案建立： **[!UICONTROL Transfer of original message]** 範本，儲存在 **[!UICONTROL Administration > Campaign management > Technical delivery templates]** 節點。
+   >此訊息的內容可以根據您的需求進行個人化。 它是根據儲存在&#x200B;**[!UICONTROL Administration > Campaign management > Technical delivery templates]**&#x200B;節點中的&#x200B;**[!UICONTROL Transfer of original message]**&#x200B;範本建立的。
    >
-   >您也可以變更轉寄給反向連結的訊息表單。若要這麼做，您必須變更 **病毒形式** 網頁應用程式儲存在 **[!UICONTROL Resources > Online > Web applications]** 節點。
+   >您也可以變更轉寄給反向連結的訊息表單。若要這麼做，您必須變更儲存在&#x200B;**[!UICONTROL Resources > Online > Web applications]**&#x200B;節點中的&#x200B;**病毒表單**&#x200B;網頁應用程式。
 
 1. 在轉送的訊息中，連結可讓裁判將其設定檔儲存在資料庫中。 為此提供輸入表單。
 
@@ -77,22 +77,22 @@ Adobe Campaign可讓您設定鼓勵病毒式行銷的工具。
 
    >[!NOTE]
    >
-   >可調整此設定。 若要這麼做，您需要修改 **收件者訂閱** 網頁應用程式儲存在 **[!UICONTROL Resources > Online > Web applications]** 節點。
+   >可調整此設定。 若要這麼做，您必須修改儲存在&#x200B;**[!UICONTROL Resources > Online > Web applications]**&#x200B;節點中的&#x200B;**收件者訂閱**&#x200B;網頁應用程式。
    >
-   >如需Web應用程式的詳細資訊，請參閱 [本節](../../web/using/about-web-applications.md).
+   >如需網頁應用程式的詳細資訊，請參閱[本節](../../web/using/about-web-applications.md)。
 
-   驗證後，系統會將確認訊息傳送給他們：只有當他們在確認訊息中啟用連結時，他們才會永久註冊。 此訊息是根據 **[!UICONTROL Registration confirmation]** 範本，儲存在 **[!UICONTROL Administration > Campaign management > Technical delivery templates]** 節點。
+   驗證後，系統會將確認訊息傳送給他們：只有當他們在確認訊息中啟用連結時，他們才會永久註冊。 此訊息是根據&#x200B;**[!UICONTROL Registration confirmation]**&#x200B;範本建立的，該範本儲存在&#x200B;**[!UICONTROL Administration > Campaign management > Technical delivery templates]**&#x200B;節點中。
 
-   被推薦者會新增至 **收件者** 資料夾，並（依預設）訂閱 **電子報** 資訊服務。
+   被推薦者已新增至資料庫的&#x200B;**收件者**&#x200B;資料夾，並已訂閱（依預設）至&#x200B;**Newsletter**&#x200B;資訊服務。
 
 ## 追蹤社交網路分享 {#tracking-social-network-sharing}
 
 會追蹤共用資訊的共用與存取權。 Adobe Campaign收集的這項資訊可在兩個地方存取：
 
-* 在 **[!UICONTROL Tracking]** 傳遞的索引標籤（或個別針對每個收件者）：
+* 在傳遞的&#x200B;**[!UICONTROL Tracking]**&#x200B;索引標籤中（或個別針對每個收件者）：
 
   ![](assets/s_ncs_user_network_del_tracking_tab.png)
 
-* 在專屬的 **[!UICONTROL Sharing to social networks]** 報告：
+* 在專用的&#x200B;**[!UICONTROL Sharing to social networks]**&#x200B;報告中：
 
   ![](assets/s_ncs_user_viral_report.png)

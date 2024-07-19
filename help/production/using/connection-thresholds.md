@@ -23,15 +23,15 @@ ht-degree: 4%
 
 有三種不同的臨界值：
 
-* 此 **Web連線閾值**，已在網頁伺服器中設定。 若要修改它，請連絡您的系統管理員。
+* 在網頁伺服器中設定的&#x200B;**網頁連線閾值**。 若要修改它，請連絡您的系統管理員。
 
-* 此 **資料庫連線閾值**. 若要修改它，請連絡您的資料庫管理員。
+* **資料庫連線閾值**。 若要修改它，請連絡您的資料庫管理員。
 
-* 此 **Adobe Campaign連線臨界值**，有兩個地方可用：
+* **Adobe Campaign連線閾值**&#x200B;有兩個地方可供使用：
 
-   * **Tomcat** 側：所有實際送達Adobe Campaign Tomcat使用者端的查詢。
+   * **Tomcat**&#x200B;端：所有查詢實際送達Adobe Campaign Tomcat使用者端。
 
-     此臨界值設定於 **nl6/tomcat-X/conf/server.xml** 檔案。 此 **maxThreads** attribute可讓您增加一次處理的查詢數臨界值。 例如，可變更為250。
+     此臨界值設定在&#x200B;**nl6/tomcat-X/conf/server.xml**&#x200B;檔案中。 **maxThreads**&#x200B;屬性可讓您增加一次處理的查詢數臨界值。 例如，可變更為250。
 
      ```
      <Connector protocol="HTTP/1.1" port="8080"
@@ -45,9 +45,9 @@ ht-degree: 4%
                  unpackWARs="true" autoDeploy="true">
      ```
 
-   * **資料庫**：由程式在資料庫上同時開啟的所有連線集。
+   * **資料庫**：由處理序同時開啟資料庫上所有連線的集合。
 
-     此臨界值在檔案中設定 **nl6/conf/serverConf.xml**. 此 **maxCnx** 屬性位於 **資料來源集區** 可讓您增加同時處理的查詢臨界值。
+     此臨界值是在檔案&#x200B;**nl6/conf/serverConf.xml**&#x200B;中設定。 位於&#x200B;**資料來源集區**&#x200B;中的&#x200B;**maxCnx**&#x200B;屬性可讓您增加同時處理的查詢臨界值。
 
      ```
          <!-- Data source

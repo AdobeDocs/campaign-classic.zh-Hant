@@ -20,12 +20,12 @@ ht-degree: 0%
 
 線上調查是完全可設定和自訂的，可滿足您的需求。 必須在屬性視窗中輸入引數。
 
-有關可用引數的詳情，請參閱 [本檔案](../../web/using/defining-web-forms-properties.md).
+可用的引數在[此檔案](../../web/using/defining-web-forms-properties.md)中有詳細說明。
 
 ![](assets/s_ncs_admin_survey_properties_general.png)
 
 ## 調查資料儲存 {#survey-data-storage}
 
-依預設，Web表單欄位會儲存在收件者表格中。 若要使用其他表格，請在 **[!UICONTROL Document type]** 欄位。 此 **[!UICONTROL Zoom]** 圖示可讓您檢視所選表格的內容。
+依預設，Web表單欄位會儲存在收件者表格中。 若要使用其他表格，請在&#x200B;**[!UICONTROL Document type]**&#x200B;欄位中選取它。 **[!UICONTROL Zoom]**&#x200B;圖示可讓您檢視所選表格的內容。
 
-使用者所提供的調查問卷答案，若未儲存在欄位中（但儲存在本機變數中），則會儲存在 **調查的回答** 表格。 您可以根據以下專案變更所使用的結構描述： **[!UICONTROL Library]** 欄位。 此欄位僅適用於 **調查**.
+使用者所提供的調查問卷的回答未儲存在欄位中（但儲存在區域變數中），這些回答儲存在&#x200B;**調查問卷的回答**&#x200B;表格中。 您可以根據&#x200B;**[!UICONTROL Library]**&#x200B;欄位變更使用的結構描述。 此欄位僅適用於&#x200B;**調查**。

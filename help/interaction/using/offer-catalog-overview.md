@@ -24,8 +24,8 @@ ht-degree: 4%
 
 選件管理是透過Adobe Campaign中的樹狀資料夾來執行。
 
-建立優惠方案之前，您必須先指定環境(請參閱 [環境概觀](../../interaction/using/environments-overview.md))。 它會包含一組優惠方案的所有特性（適用性、目標限制、簡報規則），並依類別排序，以及其空間清單。
+建立優惠方案之前，您必須先指定環境（請參閱[環境概觀](../../interaction/using/environments-overview.md)）。 它會包含一組優惠方案的所有特性（適用性、目標限制、簡報規則），並依類別排序，以及其空間清單。
 
 >[!IMPORTANT]
 >
->建立優惠方案目錄（即類別和優惠方案）是 **[!UICONTROL Offer manager]**.
+>建立優惠方案目錄（即類別和優惠方案）是&#x200B;**[!UICONTROL Offer manager]**&#x200B;的責任。

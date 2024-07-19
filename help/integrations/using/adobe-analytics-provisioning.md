@@ -20,13 +20,13 @@ ht-degree: 1%
 >
 > 這些步驟應該只能由混合及內部部署實作來執行。
 >
->針對託管和促銷活動Managed Services實作，請聯絡 [Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 團隊。
+>針對託管和促銷活動Managed Services實作，請聯絡[Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)團隊。
 
 Adobe Campaign Classic與Adobe Analytics驗證之間的整合支援AdobeIdentity Management服務(IMS)：
 
 * 如果您管理已移轉的外部帳戶，您必須實作Adobe IMS並透過Adobe ID連線至Adobe Campaign。
 
-  請注意，透過Adobe ID IMS登入的使用者必須是 **資料聯結器** Adobe Analytics帳戶並擁有以下專案的許可權： **產品設定檔** 已提及 [以下](#analytics-product-profile).
+  請注意，透過Adobe ID IMS登入的使用者必須是Adobe Analytics中&#x200B;**Data Connector**&#x200B;帳戶的所有者，並且擁有以下[提及的&#x200B;**產品設定檔**&#x200B;的許可權](#analytics-product-profile)。
 
 問題是資料聯結器的擁有者與登入Campaign並嘗試與Analytics整合的使用者不是使用者。
 
@@ -38,7 +38,7 @@ Adobe Campaign Classic與Adobe Analytics驗證之間的整合支援AdobeIdentity
 >
 > Adobe已棄用服務帳戶(JWT)認證，Campaign與Adobe解決方案和應用程式的整合現在必須依賴OAuth伺服器對伺服器認證。 </br>
 >
-> * 如果您已實作與Campaign的傳入整合，您必須移轉您的技術帳戶，如中所述 [本檔案](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank). 現有的服務帳戶(JWT)憑證將持續運作到2025年1月27日。</br>
+> * 如果您已實作與Campaign的傳入整合，您必須移轉您的技術帳戶，如[本檔案](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank)所詳述。 現有的服務帳戶(JWT)認證將持續運作到2025年1月27日。</br>
 >
 > * 如果您已實作輸出整合(例如Campaign-Analytics整合或Experience Cloud Triggers整合)，則在2025年1月27日前都能正常運作。 不過，在該日期之前，您必須將您的Campaign環境升級至v7.4.1，並將您的技術帳戶移轉至OAuth。
 
@@ -48,9 +48,9 @@ Adobe Campaign Classic與Adobe Analytics驗證之間的整合支援AdobeIdentity
 
 如果您已有Analytics產品設定檔，您仍應建立專用於Analytics聯結器的新Adobe Analytics產品設定檔。 這將確保您的產品設定檔已設定為此整合的正確許可權。
 
-如需產品設定檔的詳細資訊，請參閱 [Admin Console檔案](https://helpx.adobe.com/mt/enterprise/admin-guide.html).
+如需產品設定檔的詳細資訊，請參閱[Admin Console檔案](https://helpx.adobe.com/mt/enterprise/admin-guide.html)。
 
-1. 從 [Admin console](https://adminconsole.adobe.com/)，選取您的Adobe Analytics **[!UICONTROL Product]**.
+1. 從[Admin Console](https://adminconsole.adobe.com/)，選取您的Adobe Analytics **[!UICONTROL Product]**。
 
    ![](assets/do-not-localize/triggers_1.png)
 
@@ -58,35 +58,35 @@ Adobe Campaign Classic與Adobe Analytics驗證之間的整合支援AdobeIdentity
 
    ![](assets/do-not-localize/triggers_2.png)
 
-1. 新增 **[!UICONTROL Product profile name]**，我們建議使用以下語法： `reserved_campaign_classic_<Company Name>`. 然後，按一下 **[!UICONTROL Next]**.
+1. 新增&#x200B;**[!UICONTROL Product profile name]**，我們建議使用下列語法： `reserved_campaign_classic_<Company Name>`。 然後，按一下&#x200B;**[!UICONTROL Next]**。
 
-   這個 **[!UICONTROL Product profile]** 應僅用於Analytics聯結器，以防止設定錯誤錯誤。
+   此&#x200B;**[!UICONTROL Product profile]**&#x200B;應專用於Analytics Connector，以防止設定錯誤錯誤。
 
-1. 開啟您新建立的 **[!UICONTROL Product profile]** 並選取 **[!UICONTROL Permissions]** 標籤。
+1. 開啟您新建立的&#x200B;**[!UICONTROL Product profile]**&#x200B;並選取&#x200B;**[!UICONTROL Permissions]**&#x200B;標籤。
 
    ![](assets/do-not-localize/triggers_3.png)
 
-1. 設定不同的功能，按一下 **[!UICONTROL Edit]** 並選取要指派給您的使用者的許可權 **[!UICONTROL Product profile]** 按一下加號(+)圖示。
+1. 按一下「**[!UICONTROL Edit]**」設定不同的功能，並按一下加號(+)圖示來選取要指派給您&#x200B;**[!UICONTROL Product profile]**&#x200B;的許可權。
 
-   有關如何管理許可權的詳細資訊，請參閱 [Admin Console檔案](https://helpx.adobe.com/mt/enterprise/using/manage-permissions-and-roles.html).
+   有關如何管理許可權的詳細資訊，請參閱[Admin Console檔案](https://helpx.adobe.com/mt/enterprise/using/manage-permissions-and-roles.html)。
 
-1. 對於 **[!UICONTROL Report Suites]** 功能，新增 **[!UICONTROL Report Suites]** 您稍後需要使用。
+1. 針對&#x200B;**[!UICONTROL Report Suites]**&#x200B;功能，新增您稍後需要使用的&#x200B;**[!UICONTROL Report Suites]**。
 
-   如果您沒有任何報表套裝，可依下列步驟建立 [這些步驟](../../integrations/using/gs-aa.md).
+   如果您沒有任何報表套裝，您可以依照[這些步驟](../../integrations/using/gs-aa.md)建立它。
 
    ![](assets/do-not-localize/triggers_4.png)
 
-1. 對於 **[!UICONTROL Metrics]** 功能，新增 **[!UICONTROL Metrics]** 您稍後將需要設定。
+1. 針對&#x200B;**[!UICONTROL Metrics]**&#x200B;功能，新增您稍後需要設定的&#x200B;**[!UICONTROL Metrics]**。
 
    如有需要，您可以開啟「自動包含」選項，這會將每個許可權專案新增至包含的清單中，並自動新增許可權專案。
 
    ![](assets/do-not-localize/triggers_13.png)
 
-1. 對於 **[!UICONTROL Dimensions]** 功能，新增 **[!UICONTROL Dimensions]** 未來設定所需。
+1. 針對&#x200B;**[!UICONTROL Dimensions]**&#x200B;功能，新增未來設定所需的&#x200B;**[!UICONTROL Dimensions]**。
 
    確保所選的Dimension符合要在外部帳戶中設定的事件，並與Adobe Analytics中對應的eVar編號一致。
 
-1. 對於 **[!UICONTROL Report Suite Tools]** 功能，新增以下許可權：
+1. 針對&#x200B;**[!UICONTROL Report Suite Tools]**&#x200B;功能，新增下列許可權：
 
    * **[!UICONTROL Report suite Mgmt]**
    * **[!UICONTROL Conversion variables]**
@@ -95,7 +95,7 @@ Adobe Campaign Classic與Adobe Analytics驗證之間的整合支援AdobeIdentity
    * **[!UICONTROL Data sources manager]**
    * **[!UICONTROL Classifications]**
 
-1. 對於 **[!UICONTROL Analytics Tools]** 功能，新增以下許可權：
+1. 針對&#x200B;**[!UICONTROL Analytics Tools]**&#x200B;功能，新增下列許可權：
 
    * **[!UICONTROL Code Manager - Web services]**
    * **[!UICONTROL Logs - Web services]**
@@ -110,8 +110,8 @@ Adobe Campaign Classic與Adobe Analytics驗證之間的整合支援AdobeIdentity
 
 若要繼續設定Adobe Analytics聯結器，請存取Adobe Developer主控台並建立您的OAuth伺服器對伺服器專案。
 
-請參閱 [此頁面](oauth-technical-account.md#oauth-service) 以取得詳細檔案。
+如需詳細檔案，請參閱[此頁面](oauth-technical-account.md#oauth-service)。
 
 ## 設定與使用 {#adobe-analytics-connector-usage}
 
-瞭解如何在中使用Adobe Campaign和Adobe Analytics [Adobe Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/ac-aa){target="_blank"}.
+在[Adobe Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/ac-aa){target="_blank"}中瞭解如何使用Adobe Campaign和Adobe Analytics。

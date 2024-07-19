@@ -15,7 +15,7 @@ ht-degree: 4%
 
 
 
-此 **[!UICONTROL Start]** 和 **[!UICONTROL End]** 活動可讓您以圖形方式標示工作流程的開始和結束。 這些活動沒有功能影響，因此是選用的。
+**[!UICONTROL Start]**&#x200B;和&#x200B;**[!UICONTROL End]**&#x200B;活動可讓您以圖形方式標示工作流程的開始和結束。 這些活動沒有功能影響，因此是選用的。
 
 * **[!UICONTROL Start]**
 
@@ -25,7 +25,7 @@ ht-degree: 4%
 
 * **[!UICONTROL End]**
 
-  您可以設定 **[!UICONTROL End]** 活動以中斷所有進行中的工作。 若要這麼做，請連按兩下活動以顯示其屬性，並核取適當的選項。
+  您可以設定&#x200B;**[!UICONTROL End]**&#x200B;活動以中斷所有進行中的工作。 若要這麼做，請連按兩下活動以顯示其屬性，並核取適當的選項。
 
   ![](assets/s_user_segmentation_end.png)
 

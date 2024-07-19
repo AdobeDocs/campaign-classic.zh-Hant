@@ -20,23 +20,23 @@ ht-degree: 0%
 
 ## 關於上一頁與下一頁 {#about-previous-page-and-next-page}
 
-對於每個頁面，您可以刪除 **[!UICONTROL Next]** 或 **[!UICONTROL Previous]** 按鈕。 若要這麼做，請選取相關頁面，然後選取選項 **[!UICONTROL Disable next page]** 或 **[!UICONTROL Disallow returning to the previous page]** .
+對於每個頁面，您可以刪除&#x200B;**[!UICONTROL Next]**&#x200B;或&#x200B;**[!UICONTROL Previous]**&#x200B;按鈕。 若要這麼做，請選取相關頁面，然後選取選項&#x200B;**[!UICONTROL Disable next page]**&#x200B;或&#x200B;**[!UICONTROL Disallow returning to the previous page]** 。
 
 ![](assets/s_ncs_admin_survey_no_next_page.png)
 
-您可以使用連結來取代這些按鈕。 另請參閱 [插入HTML內容](static-elements-in-a-web-form.md#inserting-html-content).
+您可以使用連結來取代這些按鈕。 請參閱[插入HTML內容](static-elements-in-a-web-form.md#inserting-html-content)。
 
 ## 插入跳轉 {#inserting-a-jump}
 
-此 **[!UICONTROL Jump]** 物件可在使用者點按時，提供存取其他頁面或其他表單的許可權 **[!UICONTROL Next]**.
+當使用者按一下&#x200B;**[!UICONTROL Next]**&#x200B;時，**[!UICONTROL Jump]**&#x200B;物件會提供存取其他頁面或其他表單的許可權。
 
 目的地可以是：
 
-* 表單的另一個頁面。 要執行此操作，請選取 **[!UICONTROL Internal activity]** 然後指定所要的頁面，如下所示：
+* 表單的另一個頁面。 若要這麼做，請選取&#x200B;**[!UICONTROL Internal activity]**，然後指定所要的頁面，如下所示：
 
   ![](assets/s_ncs_admin_jump_param1.png)
 
-* 另一個表單。 若要這麼做，請選取 **[!UICONTROL Explicit]** 選項並指定目的地表單。
+* 另一個表單。 若要這麼做，請選取&#x200B;**[!UICONTROL Explicit]**&#x200B;選項並指定目的地表單。
 
   ![](assets/s_ncs_admin_jump_param2.png)
 
@@ -44,7 +44,7 @@ ht-degree: 0%
 
   ![](assets/s_ncs_admin_jump_param3.png)
 
-* 此 **[!UICONTROL Comment]** tab可讓您輸入當運運算元在圖表中按一下物件時顯示的資訊。
+* **[!UICONTROL Comment]**&#x200B;索引標籤可讓您輸入當運運算元按一下圖表中的物件時，可以看到的資訊。
 
   ![](assets/s_ncs_admin_survey_jump_comment.png)
 
@@ -52,15 +52,15 @@ ht-degree: 0%
 
 在以下範例中，我們要設定一個網頁表單，在核准後，此表單將顯示另一個由URL引數指定的表單。 若要這麼做，請套用下列步驟：
 
-1. 在表單結尾插入跳轉：這會取代 **[!UICONTROL End]** 方塊。
+1. 在表單結尾插入跳轉：這會取代&#x200B;**[!UICONTROL End]**&#x200B;方塊。
 
    ![](assets/s_ncs_admin_survey_jump_sample1.png)
 
-1. 在表單屬性中，新增引數(**下一個**)儲存在區域變數(**下一個**)。 有關本機變數的詳情，請參閱 [將資料儲存在區域變數中](web-forms-answers.md#storing-data-in-a-local-variable).
+1. 在表單屬性中，新增儲存在區域變數(**next**)中的引數(**next**)。 在[將資料儲存在區域變數](web-forms-answers.md#storing-data-in-a-local-variable)中，詳細列出區域變數。
 
    ![](assets/s_ncs_admin_survey_jump_sample2.png)
 
-1. 編輯 **[!UICONTROL Jump]** 物件，選取 **[!UICONTROL Stored in a variable]** 選項並選取 **下一個** 變數。
+1. 編輯&#x200B;**[!UICONTROL Jump]**&#x200B;物件，選取&#x200B;**[!UICONTROL Stored in a variable]**&#x200B;選項，然後從下拉式方塊中選取&#x200B;**下一個**&#x200B;變數。
 
    ![](assets/s_ncs_admin_survey_jump_sample3.png)
 
@@ -70,19 +70,19 @@ ht-degree: 0%
    https://[myserver]/webForm/APP62?&next=APP22
    ```
 
-   當使用者按一下 **[!UICONTROL Approve]** 按鈕，表單 **APP22** 隨即顯示。
+   當使用者按一下&#x200B;**[!UICONTROL Approve]**&#x200B;按鈕時，會顯示表單&#x200B;**APP22**。
 
 ## 插入表單其他頁面的連結 {#inserting-a-link-to-another-page-of-the-form}
 
-您可以插入表單其他頁面的連結。 若要這麼做，請新增 **[!UICONTROL Link]** 在頁面中輸入靜態元素。 有關詳細資訊，請參閱 [插入連結](static-elements-in-a-web-form.md#inserting-a-link).
+您可以插入表單其他頁面的連結。 若要這麼做，請新增&#x200B;**[!UICONTROL Link]**&#x200B;型別靜態元素至頁面。 如需詳細資訊，請參閱[插入連結](static-elements-in-a-web-form.md#inserting-a-link)。
 
 ## 條件式頁面顯示 {#conditional-page-display}
 
 ### 根據回應顯示 {#display-based-on-responses}
 
-此 **[!UICONTROL Test]** 方塊可讓您設定表單中頁面順序的條件。 它可讓您根據測試結果定義各種分支行。 這可讓您根據使用者提供的回答顯示不同的頁面。
+**[!UICONTROL Test]**&#x200B;方塊可讓您設定表單中頁面順序的條件。 它可讓您根據測試結果定義各種分支行。 這可讓您根據使用者提供的回答顯示不同的頁面。
 
-例如，您可以為已線上上訂購的客戶顯示不同的頁面，為已下十個以上訂單的客戶顯示另一個頁面。 若要這麼做，請在表單的第一個頁面中插入 **[!UICONTROL Number]** 輸入輸入欄位，讓使用者說明已下多少訂單。
+例如，您可以為已線上上訂購的客戶顯示不同的頁面，為已下十個以上訂單的客戶顯示另一個頁面。 若要這麼做，請在表單的第一個頁面中，插入一個&#x200B;**[!UICONTROL Number]**&#x200B;型別輸入欄位，讓使用者說明他們下了多少訂單。
 
 ![](assets/s_ncs_admin_survey_test_ex0.png)
 
@@ -90,7 +90,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->儲存模式的詳細資訊，請參閱 [回應儲存欄位](web-forms-answers.md#response-storage-fields).
+>儲存模式在[回應儲存欄位](web-forms-answers.md#response-storage-fields)中詳細說明。
 
 在我們的範例中，我們想要使用變數：
 
@@ -100,7 +100,7 @@ ht-degree: 0%
 
 ![](assets/s_ncs_admin_survey_test_ex2.png)
 
-選取 **[!UICONTROL Activate the default branching]** 選項來新增轉變，以用於沒有任何條件為true的情況。 如果定義的條件涵蓋了每個可能的情況，就不需要這個選項。
+選取&#x200B;**[!UICONTROL Activate the default branching]**&#x200B;選項，針對沒有任何條件為true的情況新增轉變。 如果定義的條件涵蓋了每個可能的情況，就不需要這個選項。
 
 接著，在條件中有一個為true時定義頁面順序，例如：
 
@@ -108,19 +108,19 @@ ht-degree: 0%
 
 ### 根據引數顯示 {#display-based-on-parameters}
 
-您也可以根據Web表單的初始化引數或資料庫中儲存的值，將頁面排序個人化。 另請參閱 [表單URL引數](defining-web-forms-properties.md#form-url-parameters).
+您也可以根據Web表單的初始化引數或資料庫中儲存的值，將頁面排序個人化。 請參閱[表單URL引數](defining-web-forms-properties.md#form-url-parameters)。
 
 ## 新增指令碼 {#adding-scripts}
 
-此 **[!UICONTROL Script]** 物件可讓您直接輸入JavaScript指令碼，例如修改欄位的值、從資料庫擷取資料，或呼叫Adobe Campaign API。
+**[!UICONTROL Script]**&#x200B;物件可讓您直接輸入JavaScript指令碼，例如修改欄位值、從資料庫擷取資料，或呼叫Adobe Campaign API。
 
 ## 個人化結束頁面 {#personalizing-the-end-page}
 
-您必須在圖表的結尾處放置一個結束頁面。 當使用者按一下 **[!UICONTROL Approve]** 按鈕。
+您必須在圖表的結尾處放置一個結束頁面。 使用者按一下網頁表單中的&#x200B;**[!UICONTROL Approve]**&#x200B;按鈕時會顯示結束頁面。
 
-若要個人化此頁面，請按兩下 **[!UICONTROL End]** 並在中央編輯器中輸入頁面內容。
+若要個人化此頁面，請按兩下&#x200B;**[!UICONTROL End]**，然後在中央編輯器中輸入頁面內容。
 
 ![](assets/s_ncs_admin_survey_end_page_edit.png)
 
-* 您可以複製並貼上現有的HTML內容。 若要這麼做，請按一下 **[!UICONTROL Display source code]** 並插入HTML代碼。
+* 您可以複製並貼上現有的HTML內容。 若要這麼做，請按一下&#x200B;**[!UICONTROL Display source code]**&#x200B;並插入HTML代碼。
 * 您可以使用外部URL；若要這麼做，請選取對應的選項，然後輸入要顯示之頁面的URL。

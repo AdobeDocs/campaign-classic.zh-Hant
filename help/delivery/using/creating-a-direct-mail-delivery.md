@@ -19,12 +19,12 @@ ht-degree: 10%
 
 >[!NOTE]
 >
->有關傳遞建立的全域概念，請參見 [本節](steps-about-delivery-creation-steps.md).
+>在[本節](steps-about-delivery-creation-steps.md)中介紹了傳遞建立的全域概念。
 
 1. 例如，從「傳遞」控制面板建立新傳遞。
-1. 選取傳遞範本 **以直接郵件傳送（紙張）**.
+1. 選取傳遞範本&#x200B;**透過直接郵件（紙張）傳遞**。
 
    ![](assets/direct_mail.png)
 
-1. 使用標籤、程式碼和說明來識別您的傳遞。 有關詳細資訊，請參閱 [本節](steps-create-and-identify-the-delivery.md#identifying-the-delivery)
-1. 按一下 **繼續** 以確認此資訊並顯示訊息組態視窗。
+1. 使用標籤、程式碼和說明來識別您的傳遞。 如需詳細資訊，請參閱[本節](steps-create-and-identify-the-delivery.md#identifying-the-delivery)
+1. 按一下&#x200B;**繼續**&#x200B;以確認此資訊並顯示訊息設定視窗。

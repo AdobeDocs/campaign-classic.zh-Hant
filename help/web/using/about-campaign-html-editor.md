@@ -16,7 +16,7 @@ ht-degree: 0%
 
 
 
-此 **數位內容編輯器(DCE)** 是一種HTML內容編輯器，可讓您在Adobe Campaign中輕鬆建立HTML格式的內容和範本。
+**數位內容編輯器(DCE)**&#x200B;是HTML內容編輯器，可讓您在Adobe Campaign中輕鬆建立HTML格式的內容和範本。
 
 使用數位內容編輯器，您可以插入並格式化頁面元素，並將資料庫欄位與HTML頁面的元素對應。 為Web應用程式建立頁面，或根據DCE範本建立傳遞時，可使用此編輯器。
 
@@ -36,24 +36,24 @@ ht-degree: 0%
 
 ![](assets/dce_schema.png)
 
-建立簡單的 **網頁應用程式**，您需要：
+若要建立簡單的&#x200B;**網頁應用程式**，您需要：
 
-1. 建立網站應用程式 —  [瞭解更多](creating-a-landing-page.md)
-1. 選取現有內容或從標準範本建立內容 —  [瞭解更多](template-management.md)
-1. 編輯和設定內容 —  [瞭解更多](editing-content.md)
-1. 發佈網頁應用程式 —  [瞭解更多](creating-a-landing-page.md#step-3---publishing-content)
+1. 建立Web應用程式 — [深入瞭解](creating-a-landing-page.md)
+1. 選取現有內容或從標準範本建立內容 — [深入瞭解](template-management.md)
+1. 編輯及設定內容 — [深入瞭解](editing-content.md)
+1. Publish Web應用程式 — [深入瞭解](creating-a-landing-page.md#step-3---publishing-content)
 
 >[!NOTE]
 >
->網頁應用程式內容中的完整實作範例可在以下取得：  [本節](creating-a-landing-page.md).
+>在[此區段](creating-a-landing-page.md)中有網頁應用程式內容中的完整實作範例。
 
-若要建立 **電子郵件傳遞**，您需要：
+若要建立&#x200B;**電子郵件傳遞**，您需要：
 
-1. 從DCE範本建立傳遞 —  [瞭解更多](use-case-creating-an-email-delivery.md)
-1. 選取現有內容或從建立內容 [標準範本](template-management.md)
+1. 從DCE範本建立傳遞 — [深入瞭解](use-case-creating-an-email-delivery.md)
+1. 選取現有內容或從[標準範本](template-management.md)建立內容
 1. 編輯和設定線上內容
-1. 傳送傳遞 —  [瞭解更多](../../delivery/using/steps-about-delivery-creation-steps.md)
+1. 傳送傳遞 — [深入瞭解](../../delivery/using/steps-about-delivery-creation-steps.md)
 
 >[!NOTE]
 >
->電子郵件傳遞內容中的完整實作範例，請參閱 [此使用案例](use-case-creating-an-email-delivery.md).
+>[此使用案例](use-case-creating-an-email-delivery.md)中有電子郵件傳遞內容中的完整實作範例。

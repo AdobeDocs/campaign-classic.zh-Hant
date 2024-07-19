@@ -15,7 +15,7 @@ ht-degree: 4%
 
 # SpamAssassin{#spamassassin}
 
-Adobe Campaign可設定為搭配 [SpamAssassin](https://spamassassin.apache.org)，用於電子郵件垃圾郵件篩選的第三方服務。 這可讓您對電子郵件評分，以判斷郵件是否在收到時遭到的反垃圾郵件工具視為垃圾郵件的風險。
+Adobe Campaign可設定為搭配[SpamAssassin](https://spamassassin.apache.org) （用於電子郵件垃圾郵件篩選的協力廠商服務）使用。 這可讓您對電子郵件評分，以判斷郵件是否在收到時遭到的反垃圾郵件工具視為垃圾郵件的風險。
 
 SpamAssassin運用各種垃圾郵件偵測技術，包括：
 
@@ -35,9 +35,9 @@ SpamAssassin運用各種垃圾郵件偵測技術，包括：
 
 建立電子郵件傳遞並定義其內容後，請遵循下列步驟來評估風險。
 
-有關建立及設計傳送的詳細資訊，請參閱 [本節](about-email-channel.md).
+如需建立和設計傳遞的詳細資訊，請參閱[本節](about-email-channel.md)。
 
-1. 前往 **[!UICONTROL Preview]** 標籤。
+1. 前往&#x200B;**[!UICONTROL Preview]**&#x200B;標籤。
 1. 選取收件者以預覽您的傳遞。
 
    ![](assets/s_tn_del_preview_spamassassin_recipient.png)
@@ -50,12 +50,12 @@ SpamAssassin運用各種垃圾郵件偵測技術，包括：
 
    ![](assets/s_tn_del_preview_spamassassin_ko.png)
 
-1. 按一下 **[!UICONTROL More...]** 警告旁邊的連結。
+1. 按一下警告旁的&#x200B;**[!UICONTROL More...]**&#x200B;連結。
 1. 選取 **[!UICONTROL Anti-spam checking]** 索引標籤。
-1. 前往 **[!UICONTROL Points / Rule / Description]** 區段來檢視此風險的原因。
+1. 移至&#x200B;**[!UICONTROL Points / Rule / Description]**&#x200B;區段以檢視此風險的原因。
 
    ![](assets/s_tn_del_msg_spamassassin_ko.png)
 
 >[!NOTE]
 >
->每次按一下 **[!UICONTROL Anti-spam checking]**，會呼叫SpamAssassin服務，並重新分析郵件以進行反垃圾郵件偵測。 再次執行反垃圾郵件分析前，請確定您已變更內容。
+>每次您按一下&#x200B;**[!UICONTROL Anti-spam checking]**，就會呼叫SpamAssassin服務，並再次分析郵件以進行反垃圾郵件偵測。 再次執行反垃圾郵件分析前，請確定您已變更內容。

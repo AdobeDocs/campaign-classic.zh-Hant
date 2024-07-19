@@ -23,7 +23,7 @@ ht-degree: 0%
 若要在建議中一律包含類別，請套用下列步驟：
 
 1. 開啟總管，然後按一下樹狀結構中的優惠方案目錄。
-1. 按一下 **[!UICONTROL Eligibility]** 定位並勾選 **[!UICONTROL Always include this category in the recommendations]** 方塊。
-1. 按一下「 」完成並核准 **[!UICONTROL Save]**.
+1. 按一下「**[!UICONTROL Eligibility]**」標籤，然後勾選「**[!UICONTROL Always include this category in the recommendations]**」方塊。
+1. 按一下&#x200B;**[!UICONTROL Save]**&#x200B;完成並核准。
 
    ![](assets/offer_cat_default_001.png)

@@ -18,7 +18,7 @@ ht-degree: 9%
 
 ## 靜態方法 {#static-methods}
 
-靜態SOAP方法可透過在代表綱要的物件上叫用方法來存取。 結構描述是「namespace」物件的屬性。 這些名稱空間是全域變數，因此，例如，xtk或nms變數代表對應的名稱空間
+靜態SOAP方法可透過在代表結構描述的物件上叫用方法來存取。 結構描述是「namespace」物件的屬性。 這些名稱空間是全域變數，因此，例如，xtk或nms變數代表對應的名稱空間
 
 以下範例會叫用xtk：workflow綱要的靜態PostEvent方法：
 

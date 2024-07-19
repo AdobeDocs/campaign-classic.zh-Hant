@@ -24,6 +24,6 @@ ht-degree: 8%
 
 >[!IMPORTANT]
 >
->下列設定需要由執行 **技術管理員**.
+>下列設定必須由&#x200B;**技術管理員**&#x200B;執行。
 
-![](assets/do-not-localize/how-to-video.png) 觀看此內容 [視訊](https://helpx.adobe.com/campaign/classic/how-to/architecture-of-acs-v6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com) 以瞭解Campaign互動的架構，並瞭解優惠方案引擎的運作方式。
+![](assets/do-not-localize/how-to-video.png)觀看此[影片](https://helpx.adobe.com/campaign/classic/how-to/architecture-of-acs-v6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com)，瞭解行銷活動互動的架構，並瞭解優惠方案引擎的運作方式。

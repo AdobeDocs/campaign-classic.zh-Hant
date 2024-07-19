@@ -43,7 +43,7 @@ Adobe Campaign是以伺服器端執行的幾個程式為基礎，在更新期間
 
 >[!NOTE]
 >
->有關各種Adobe Campaign流程的詳細資訊，請參閱 [本節](../../installation/using/general-architecture.md#logical-application-layer).\
+>如需各種Adobe Campaign程式的詳細資訊，請參閱[本節](../../installation/using/general-architecture.md#logical-application-layer)。\
 >使用Power Booster或Power Cluster型別架構時，您必須將此程式套用至所有Power Booster/Cluster伺服器。
 
 如果新版本涉及變更資料庫結構，我們建議依下列順序重新啟動伺服器：

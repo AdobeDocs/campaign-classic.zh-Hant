@@ -17,11 +17,11 @@ ht-degree: 5%
 
 技術工作流程需要監控，並在失敗時採取行動。
 
-監視不同Campaign流程的其他方法在中顯示 [此頁面](../../production/using/monitoring-guidelines.md).
+監視不同Campaign處理序的其他方法會顯示在[此頁面](../../production/using/monitoring-guidelines.md)中。
 
 ## 執行個體監視儀表板 {#instance-monitoring-dashboard}
 
-執行個體監視控制面板的存取方式如下： **[!UICONTROL Monitoring]** 標籤。
+可以透過&#x200B;**[!UICONTROL Monitoring]**&#x200B;索引標籤存取執行個體監視儀表板。
 
 ![](assets/monitoring_technical_workflows1.png)
 
@@ -33,34 +33,34 @@ ht-degree: 5%
 
 ## 技術工作流程 {#technical-workflows}
 
-技術工作流程可從以下網址取得： **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]**.
+技術工作流程可從&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]**&#x200B;取得。
 
 根據技術工作流程，請遵循以下詳細步驟以確保一切都如期運作。
 
-若要進一步瞭解每個技術工作流程的作用，請參閱本節 [區段](about-technical-workflows.md).
+若要進一步瞭解每個技術工作流程應該要執行的動作，請參閱本[區段](about-technical-workflows.md)。
 
-的 **[!UICONTROL Database Cleanup workflow (‘cleanup’)]**：
+針對&#x200B;**[!UICONTROL Database Cleanup workflow (‘cleanup’)]**：
 
-1. 檢查 **[!UICONTROL Database Cleanup]** 工作流程每天都會執行並成功完成。 如需詳細資訊，請參閱此 [頁面](../../production/using/database-cleanup-workflow.md)..
+1. 檢查&#x200B;**[!UICONTROL Database Cleanup]**&#x200B;工作流程是否每天都執行並順利完成。 如需詳細資訊，請參閱此[頁面](../../production/using/database-cleanup-workflow.md)。
 1. 檢視日誌，驗證經過的時間在一段時間內相對穩定，不會干擾其他工作流程。
 
-的 **[!UICONTROL Tracking workflow (‘tracking’)]**：
+針對&#x200B;**[!UICONTROL Tracking workflow (‘tracking’)]**：
 
 檢查「追蹤」工作流程是否依排程執行（預設為每小時執行一次），以及分錄是否未反白顯示週期性錯誤。 如需詳細資訊，請參閱本[區段](delivery.md)。
 
-的 **[!UICONTROL Refresh for Deliverability (deliverabilityUpdate)]**：
+針對&#x200B;**[!UICONTROL Refresh for Deliverability (deliverabilityUpdate)]**：
 
-1. 檢查 **[!UICONTROL Refresh for Deliverability]** 工作流程每天都會執行並成功完成。
+1. 檢查&#x200B;**[!UICONTROL Refresh for Deliverability]**&#x200B;工作流程是否每天都執行並順利完成。
 1. 在日誌中驗證規則是否定期更新。
 
-的 **[!UICONTROL Campaign process ('operationMgt', 'deliveryMgt', ...)]**：
+針對&#x200B;**[!UICONTROL Campaign process ('operationMgt', 'deliveryMgt', ...)]**：
 
-1. 檢視位於 **[!UICONTROL Campaign process]** 資料夾。 如需關於此項目的詳細資訊，請參閱此[頁面](about-technical-workflows.md)。
+1. 檢視&#x200B;**[!UICONTROL Campaign process]**&#x200B;資料夾下的所有工作流程。 如需關於此項目的詳細資訊，請參閱此[頁面](about-technical-workflows.md)。
 1. 檢查工作流程是否以排程方式執行，以及分錄是否未反白顯示重複錯誤。
 
 ## 工作流程監督 {#workflow-supervision}
 
-此 **[!UICONTROL Workflow supervisors]** 群組應包含需要通知失敗情況的操作者，以及可以及時採取行動的操作者。
+**[!UICONTROL Workflow supervisors]**&#x200B;群組應該包含需要通知失敗情況的操作者，以及可以及時採取動作的操作者。
 
 ![](assets/monitoring_technical_workflows3.png)
 

@@ -15,16 +15,16 @@ ht-degree: 20%
 # 設計和執行行銷活動{#designing-marketing-campaigns}
 
 
-Adobe Campaign可讓您定義、最佳化、執行和分析通訊與行銷活動。 Adobe Campaign就像行銷策略的統一訂單和執行中心。 有關詳細資訊，請參閱 [存取行銷活動](../../distributed/using/accessing-campaigns.md) 和 [建立行銷活動](../../campaign/using/setting-up-marketing-campaigns.md).
+Adobe Campaign可讓您定義、最佳化、執行和分析通訊與行銷活動。 Adobe Campaign就像行銷策略的統一訂單和執行中心。 如需詳細資訊，請參閱[存取行銷活動](../../distributed/using/accessing-campaigns.md)和[建立行銷活動](../../campaign/using/setting-up-marketing-campaigns.md)。
 
-此外， **行銷資源管理(RM)** 模組可讓您透過提供相關任務、預算和行銷資源的完整管理和即時追蹤，以合作模式控制行銷動作。 「行銷資源管理」可讓您最佳化並規範內部與外部流程、資源與行銷宣傳，以及第三方關係（代理商、印表機等）的管理。 如需詳細資訊，請參閱[本章節](../../mrm/using/about-marketing-resource-management.md)。
+此外，**行銷資源管理(MRM)**&#x200B;模組可讓您透過提供相關工作、預算和行銷資源的完整管理和即時追蹤，以合作模式控制行銷動作。 「行銷資源管理」可讓您最佳化並規範內部與外部流程、資源與行銷宣傳，以及第三方關係（代理商、印表機等）的管理。 如需詳細資訊，請參閱[本章節](../../mrm/using/about-marketing-resource-management.md)。
 
 >[!NOTE]
 >
->如需Adobe Campaign核心功能的詳細資訊，請參閱 [本節](../../platform/using/about-adobe-campaign-classic.md) 區段。\
->有關各種通道上母體鎖定目標、訊息個人化和訊息傳送的功能，詳情請參閱 [本節](../../delivery/using/steps-about-delivery-creation-steps.md).
+>如需Adobe Campaign核心功能的詳細資訊，請參閱[本節](../../platform/using/about-adobe-campaign-classic.md)部分。\
+>與各種通道上的母體目標定位、訊息個人化和訊息傳遞相關的功能在[本節](../../delivery/using/steps-about-delivery-creation-steps.md)中有詳細說明。
 
-![](assets/do-not-localize/how-to-video.png) [在影片中探索行銷活動重要概念](#video)
+![](assets/do-not-localize/how-to-video.png) [在影片中探索行銷活動索引鍵概念](#video)
 
 ## 核心概念 {#core-concepts}
 
@@ -34,7 +34,7 @@ Adobe Campaign可讓您定義、最佳化、執行和分析通訊與行銷活動
 
   行銷活動會集中與行銷活動相關的所有元素：傳送、目標定位規則、成本、匯出檔案、相關檔案等。 每個行銷活動都會附加至一個方案。
 
-  有關詳細資訊，請參閱 [新增行銷活動](../../campaign/using/setting-up-marketing-campaigns.md#adding-a-campaign).
+  如需詳細資訊，請參閱[新增行銷活動](../../campaign/using/setting-up-marketing-campaigns.md#adding-a-campaign)。
 
 * **方案**
 
@@ -44,7 +44,7 @@ Adobe Campaign可讓您定義、最佳化、執行和分析通訊與行銷活動
 
   行銷計畫可包含多個方案。 它連結至日曆期間、已分配預算，也可連結至文件和目標。
 
-  有關詳細資訊，請參閱 [行銷活動行事曆](../../campaign/using/accessing-marketing-campaigns.md#campaign-calendar).
+  如需詳細資訊，請參閱[行銷活動行事曆](../../campaign/using/accessing-marketing-campaigns.md#campaign-calendar)。
 
 * **工作流程**
 
@@ -68,4 +68,4 @@ Adobe Campaign可讓您定義、最佳化、執行和分析通訊與行銷活動
 
 >[!VIDEO](https://video.tv.adobe.com/v/35131?quality=12)
 
-提供其他Campaign Classic操作影片 [此處](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant).
+[此處](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant)提供其他Campaign Classic操作說明影片。

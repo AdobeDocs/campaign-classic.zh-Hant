@@ -33,12 +33,12 @@ Adobe Campaign可讓您定義外部表格中資料的對應。
 
    ![](assets/wf_new_mapping_define_names.png)
 
-   您可以選擇是否儲存排除專案(**excludelog**)，包含訊息(**broadlog**)或是在另一個表格中。
+   您可以選擇是否要儲存排除專案(**excludelog**)、包含訊息(**broadlog**)或是在個別的資料表中。
 
-   您也可以選擇是否要管理此傳遞對應的追蹤(**trackinglog**)。
+   您也可以選擇是否要管理此傳遞對應(**trackinglog**)的追蹤。
 
 1. 然後選取要考慮的擴充功能。 擴充功能型別取決於平台的引數和選項（檢視您的授權合約）。
 
    ![](assets/wf_new_mapping_define_extensions.png)
 
-   按一下 **[!UICONTROL Save]** 啟動傳遞對應建立的按鈕：所有連結的表格都會根據選取的引數自動建立。
+   按一下&#x200B;**[!UICONTROL Save]**&#x200B;按鈕以啟動傳遞對應建立：所有連結表格都會根據選取的引數自動建立。

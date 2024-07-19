@@ -24,9 +24,9 @@ ht-degree: 1%
 
 整體而言，有三種量化方式可供使用：
 
-1. 使用手動定義的值範圍。 例如，年齡、平均購物車、開啟的傳送數量等)。 有關詳細資訊，請參閱 [定義每個資料匣](#defining-each-bin).
-1. 動態地，根據分項清單的值：僅顯示分項清單中包含的值，其他所有值都會分組到「其他」中。 有關詳細資訊，請參閱 [動態管理回收筒](#dynamically-managing-bins).
-1. 使用值範圍，將所有其他值分組在一起。 例如，18至25歲、26至59歲和其他人。 有關詳細資訊，請參閱 [建立值範圍](#creating-value-ranges).
+1. 使用手動定義的值範圍。 例如，年齡、平均購物車、開啟的傳送數量等)。 如需詳細資訊，請參閱[定義每個bin](#defining-each-bin)。
+1. 動態地，根據分項清單的值：僅顯示分項清單中包含的值，其他所有值都會分組到「其他」中。 如需詳細資訊，請參閱[動態管理回收筒](#dynamically-managing-bins)。
+1. 使用值範圍，將所有其他值分組在一起。 例如，18至25歲、26至59歲和其他人。 如需詳細資訊，請參閱[建立值範圍](#creating-value-ranges)。
 
 若要啟用量化，請在建立維度時勾選適當的方塊。
 
@@ -38,11 +38,11 @@ Adobe Campaign也提供自動量化的輔助程式：值可以細分為N個群�
 
 ### 定義每個紙匣 {#defining-each-bin}
 
-若要個別建立每個間隔，請選取 **[!UICONTROL Define each bin]** 選項並使用表格來建立各種回收筒。
+若要個別建立每個回收筒，請選取&#x200B;**[!UICONTROL Define each bin]**&#x200B;選項，並使用表格建立各種回收筒。
 
 ![](assets/s_advuser_cube_class_01.png)
 
-按一下 **[!UICONTROL Add]** 按鈕以建立新的bin並列出將分組到bin中的值。
+按一下「**[!UICONTROL Add]**」按鈕以建立新的資料匣並列出將分組到資料匣中的值。
 
 ![](assets/s_advuser_cube_class_02.png)
 
@@ -50,9 +50,9 @@ Adobe Campaign也提供自動量化的輔助程式：值可以細分為N個群�
 
 ![](assets/s_advuser_cube_class_03.png)
 
-您可以使用SQL遮罩將數個值組合成濾鏡。 若要這麼做，請核取 **[!UICONTROL Yes]** 在 **[!UICONTROL Use an SQL mask]** 欄並輸入要套用的SQL篩選器 **[!UICONTROL Value or expression]** 欄。
+您可以使用SQL遮罩將數個值組合成濾鏡。 若要這麼做，請檢查&#x200B;**[!UICONTROL Use an SQL mask]**&#x200B;欄中的&#x200B;**[!UICONTROL Yes]**，並輸入要套用到&#x200B;**[!UICONTROL Value or expression]**&#x200B;欄中的SQL篩選器。
 
-在以下範例中，所有開頭為的電子郵件網域 **yahoo** (yahoo.fr、yahoo.com、yahoo.be等)或使用 **ymail** (ymail.com、ymail.eu等) 將會分組在標籤下 **YAHOO！**，以及包含的位址 **rocketmail.com** 網域。
+在下列範例中，以&#x200B;**yahoo** (yahoo.fr、yahoo.com、yahoo.be等)開頭或以&#x200B;**ymail** (ymail.com、ymail.eu等)開頭的所有電子郵件網域 將分組在標籤&#x200B;**YAHOO！下**，以及具有&#x200B;**rocketmail.com**&#x200B;網域的地址。
 
 ![](assets/s_advuser_cube_class_03b.png)
 
@@ -63,7 +63,7 @@ Adobe Campaign也提供自動量化的輔助程式：值可以細分為N個群�
 若要建立此型別的值量化，請套用下列步驟：
 
 1. 建立新維度並啟用量化。
-1. 選取 **[!UICONTROL Dynamically link the values to an enumeration]** 選項並選取相符的列舉。
+1. 選取&#x200B;**[!UICONTROL Dynamically link the values to an enumeration]**&#x200B;選項並選取相符的列舉。
 
    ![](assets/s_advuser_cube_class_04.png)
 
@@ -73,15 +73,15 @@ Adobe Campaign也提供自動量化的輔助程式：值可以細分為N個群�
 
 您可以根據所需的間隔將值分組為範圍。
 
-若要手動定義範圍，請按一下 **[!UICONTROL Add]** 按鈕並選取 **[!UICONTROL Define a range]** ：
+若要手動定義範圍，請按一下&#x200B;**[!UICONTROL Add]**&#x200B;按鈕並選取&#x200B;**[!UICONTROL Define a range]** ：
 
 ![](assets/s_advuser_cube_class_05.png)
 
-然後指定下限和上限，並按一下 **[!UICONTROL Ok]** 以確認。
+然後指定下限和上限，並按一下&#x200B;**[!UICONTROL Ok]**&#x200B;確認。
 
 ### 自動產生回收筒 {#generating-bins-automatically}
 
-您也可以自動產生回收筒。 若要這麼做，請按一下 **[!UICONTROL Generate bins...]** 連結。
+您也可以自動產生回收筒。 若要這麼做，請按一下&#x200B;**[!UICONTROL Generate bins...]**&#x200B;連結。
 
 ![](assets/s_advuser_cube_class_06.png)
 
@@ -109,17 +109,17 @@ Adobe Campaign也提供網域列舉，可讓您顯示資料庫中所有連絡人
 
 ![](assets/nmx_enum_domain.png)
 
-若要使用此分項清單建立報表，請使用 **[!UICONTROL Email domain]** 維度。 選擇 **[!UICONTROL Enable binning]** option then **[!UICONTROL Dynamically link the values to an enumeration]**. 然後選取 **網域** 分項清單，如上所示。 所有未指定別名的值都會在 **其他** 標籤。
+若要使用此列舉建立報表，請使用&#x200B;**[!UICONTROL Email domain]**&#x200B;維度建立Cube。 選擇&#x200B;**[!UICONTROL Enable binning]**&#x200B;選項，然後選擇&#x200B;**[!UICONTROL Dynamically link the values to an enumeration]**。 然後選取&#x200B;**網域**&#x200B;列舉，如上所示。 所有沒有指定別名的值都會在&#x200B;**其他**&#x200B;標籤下重新分組。
 
 ![](assets/nmx_add_dimension.png)
 
 接著，根據此Cube建立報表以顯示值。
 
-您只需要修改分項清單即可更新相關報表。 例如，建立 **Adobe** 值並新增 **adobe.com** 別名與報表會自動以列舉層級的Adobe值更新。
+您只需要修改分項清單即可更新相關報表。 例如，建立&#x200B;**Adobe**&#x200B;值並新增&#x200B;**adobe.com**&#x200B;別名，報表就會在列舉層級自動以Adobe值更新。
 
 ![](assets/nmx_add_alias.png)
 
-此 **[!UICONTROL Domains]** 列舉用於產生顯示網域清單的內建報表。 若要調整這些報表的內容，您可以編輯此清單。
+**[!UICONTROL Domains]**&#x200B;列舉用於產生顯示網域清單的內建報告。 若要調整這些報表的內容，您可以編輯此清單。
 
 您可以建立其他保留給量化使用的分項清單，並用於其他立方結構：所有別名值都會在第一個分項清單標籤中指定的分項清單中重新分組。
 
@@ -137,7 +137,7 @@ Adobe Campaign也提供網域列舉，可讓您顯示資料庫中所有連絡人
 
 若要建立新的彙總，請套用下列步驟：
 
-1. 按一下 **[!UICONTROL Aggregates]** 立方結構的頁簽，然後按一下 **[!UICONTROL Add]** 按鈕。
+1. 按一下Cube的&#x200B;**[!UICONTROL Aggregates]**&#x200B;標籤，然後按一下&#x200B;**[!UICONTROL Add]**&#x200B;按鈕。
 
    ![](assets/s_advuser_cube_agregate_02.png)
 
@@ -146,12 +146,12 @@ Adobe Campaign也提供網域列舉，可讓您顯示資料庫中所有連絡人
    ![](assets/s_advuser_cube_agregate_03.png)
 
 1. 選取維度和層級。 對每個維度和每個層級重複此程式。
-1. 按一下 **[!UICONTROL Workflow]** 定位點，以建立彙總工作流程。
+1. 按一下&#x200B;**[!UICONTROL Workflow]**&#x200B;索引標籤以建立彙總工作流程。
 
    ![](assets/s_advuser_cube_agregate_04.png)
 
-   * 此 **[!UICONTROL Scheduler]** 活動可讓您定義計算更新的頻率。 排程器的詳細資訊，請參閱 [本節](../../workflow/using/scheduler.md).
-   * 此 **[!UICONTROL Aggregate update]** 活動可讓您選取要套用的更新模式：完整或部分。
+   * **[!UICONTROL Scheduler]**&#x200B;活動可讓您定義計算更新的頻率。 排程器在[此區段](../../workflow/using/scheduler.md)中有詳細說明。
+   * **[!UICONTROL Aggregate update]**&#x200B;活動可讓您選取要套用的更新模式：完整或部分。
 
      依預設，每次計算期間都會執行完整更新。 若要啟用部分更新，請選取相關選項並定義更新條件。
 
@@ -159,39 +159,39 @@ Adobe Campaign也提供網域列舉，可讓您顯示資料庫中所有連絡人
 
 ## 定義測量 {#defining-measures}
 
-量測型別定義於 **[!UICONTROL Measures]** 立方結構的頁簽。 您可以計算總和、平均值、偏差等。
+量值的型別定義於Cube的&#x200B;**[!UICONTROL Measures]**&#x200B;索引標籤中。 您可以計算總和、平均值、偏差等。
 
-您可以視需要建立任意數量的測量：然後選取要在表格中顯示或隱藏的測量。 有關詳細資訊，請參閱 [顯示量值](#displaying-measures).
+您可以視需要建立任意數量的測量：然後選取要在表格中顯示或隱藏的測量。 如需詳細資訊，請參閱[顯示量值](#displaying-measures)。
 
 若要定義新測量，請套用下列步驟：
 
-1. 按一下 **[!UICONTROL Add]** 按鈕，並選取要計算的測量型別和公式。
+1. 按一下計量清單上方的&#x200B;**[!UICONTROL Add]**&#x200B;按鈕，並選取要計算的計量型別和公式。
 
    ![](assets/s_advuser_cube_create_a_measure.png)
 
 1. 視需要並根據運運算元，選擇作業涉及的運算式。
 
-   此 **[!UICONTROL Advanced selection]** 按鈕可讓您建立複雜的計算公式。 如需詳細資訊，請參閱[本章節](../../platform/using/about-queries-in-campaign.md)。
+   **[!UICONTROL Advanced selection]**&#x200B;按鈕可讓您建立複雜的計算公式。 如需詳細資訊，請參閱[本章節](../../platform/using/about-queries-in-campaign.md)。
 
    ![](assets/s_advuser_cube_create_a_measure_01.png)
 
-1. 此 **[!UICONTROL Filter the measure data...]** 連結可讓您限制計算欄位，並僅將其套用至資料庫中的特定資料。
+1. **[!UICONTROL Filter the measure data...]**&#x200B;連結可讓您限制計算欄位，並僅將其套用至資料庫中的特定資料。
 
    ![](assets/s_advuser_cube_create_a_measure_02.png)
 
-1. 輸入測量的標籤並新增說明，然後按一下 **[!UICONTROL Finish]** 以建立它。
+1. 輸入量值的標籤並新增說明，然後按一下&#x200B;**[!UICONTROL Finish]**&#x200B;以建立它。
 
 ## 顯示量值 {#displaying-measures}
 
 您可以視需要設定表格中測量的顯示：
 
-* 測量的顯示順序(請參閱 [顯示順序](#display-sequence))，
-* 要在報告中顯示/隱藏的資訊(請參閱 [設定顯示](#configuring-the-display))
-* 要顯示的測量：百分比、總計、小數點數等。 (請參閱 [變更顯示的測量型別](#changing-the-type-of-measure-displayed))。
+* 測量的顯示順序（請參閱[顯示順序](#display-sequence)），
+* 要在報告中顯示/隱藏的資訊（請參閱[設定顯示](#configuring-the-display)）
+* 要顯示的測量：百分比、總計、小數點數等。 （請參閱[變更顯示的量值型別](#changing-the-type-of-measure-displayed)）。
 
 ### 顯示順序 {#display-sequence}
 
-在立方結構中計算的計量是透過以下方式設定： **[!UICONTROL Measures]** 按鈕。
+透過&#x200B;**[!UICONTROL Measures]**&#x200B;按鈕設定在Cube中計算的計量。
 
 移動線條以變更顯示順序。 在下列範例中，法國資料會移至清單底部：這表示它將顯示在最後一欄。
 
@@ -201,7 +201,7 @@ Adobe Campaign也提供網域列舉，可讓您顯示資料庫中所有連絡人
 
 可以針對每個測量或整體個別執行測量、直線和欄的組態。 特定圖示可讓您存取顯示模式選擇視窗。
 
-* 按一下 **[!UICONTROL Edit the configuration of the pivot table]** 圖示以存取設定視窗。
+* 按一下&#x200B;**[!UICONTROL Edit the configuration of the pivot table]**&#x200B;圖示以存取設定視窗。
 
   您可以選擇是否顯示測量的標籤，以及配置它們的版面（行或欄）。
 
@@ -221,11 +221,11 @@ Adobe Campaign也提供網域列舉，可讓您顯示資料庫中所有連絡人
 
 設定報告後，您可以儲存報告並與其他運運算元共用。
 
-若要這麼做，請按一下 **[!UICONTROL Show the report properties]** 圖示並啟用 **[!UICONTROL Share this report]** 選項。
+若要這麼做，請按一下&#x200B;**[!UICONTROL Show the report properties]**&#x200B;圖示並啟用&#x200B;**[!UICONTROL Share this report]**&#x200B;選項。
 
 ![](assets/cube_share_option.png)
 
-指定報表所屬的類別及其相關性。 如需詳細資訊，請參閱 [此頁面](../../reporting/using/configuring-access-to-the-report.md#report-display-context) 至 **顯示順序**&#x200B;和 **定義篩選選項** 區段。
+指定報表所屬的類別及其相關性。 如需詳細資訊，請參閱[此頁面](../../reporting/using/configuring-access-to-the-report.md#report-display-context)中的&#x200B;**顯示順序**&#x200B;和&#x200B;**定義篩選選項**&#x200B;區段。
 
 若要確認這些變更，您必須儲存報表。
 
@@ -237,7 +237,7 @@ Adobe Campaign也提供網域列舉，可讓您顯示資料庫中所有連絡人
 
 操作步驟：
 
-1. 按一下 **[!UICONTROL Add a filter]** 圖示。
+1. 按一下&#x200B;**[!UICONTROL Add a filter]**&#x200B;圖示。
 
    ![](assets/neolap_add_filter.png)
 
@@ -263,7 +263,7 @@ Adobe Campaign也提供網域列舉，可讓您顯示資料庫中所有連絡人
 
 每次修改篩選器時（新增、移除、變更），都必須重新計算報表。
 
-您也可以根據選取專案建立篩選器。 若要這麼做，請選取來源儲存格、行與欄，然後按一下 **[!UICONTROL Add a filter]** 圖示。
+您也可以根據選取專案建立篩選器。 若要這麼做，請選取您的來源儲存格、行與欄，然後按一下&#x200B;**[!UICONTROL Add a filter]**&#x200B;圖示。
 
 若要選取線條、欄或儲存格，請以滑鼠左鍵按一下該線條、欄或儲存格。 若要取消選取，請再按一下「 」。
 

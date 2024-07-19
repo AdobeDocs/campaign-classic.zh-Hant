@@ -28,17 +28,17 @@ ht-degree: 1%
 
 ## 在JavaScript中處理事件 {#events-javascript}
 
-### javascript檔案 {#file-js}
+### JavaScript檔案 {#file-js}
 
 Pipeline會使用JavaScript函式來處理每則訊息。 此函式由使用者定義。
 
-其設定於 **[!UICONTROL NmsPipeline_Config]** 選項（位於「JSConnector」屬性下）。 每次收到事件時都會呼叫此JavaScript。 執行者為 [!DNL pipelined] 程式。
+已在「JSConnector」屬性下的&#x200B;**[!UICONTROL NmsPipeline_Config]**&#x200B;選項中設定。 每次收到事件時都會呼叫此JavaScript。 由[!DNL pipelined]處理序執行。
 
 範例Javascript檔案為cus：triggers.js。
 
 ### JavaScript 函數 {#function-js}
 
-此 [!DNL pipelined] Javascript必須以特定函式開頭。
+[!DNL pipelined] Javascript必須以特定函式開頭。
 
 此函式會針對每個事件呼叫一次：
 
@@ -52,16 +52,16 @@ function processPipelineMessage(xmlTrigger) {}
 <undefined/>
 ```
 
-您應該重新啟動 [!DNL pipelined] 編輯Javascript之後。
+您應該在編輯Javascript後重新啟動[!DNL pipelined]。
 
 ### 觸發資料格式 {#trigger-format}
 
-此 [!DNL trigger] 資料會以XML格式傳遞至JS函式。
+[!DNL trigger]資料以XML格式傳遞至JS函式。
 
-* 此 **[!UICONTROL @triggerId]** 屬性包含 [!DNL trigger].
-* 此 **擴充功能** JSON格式的元素包含Adobe Analytics產生的資料，並附加至觸發器。
-* **[!UICONTROL @offset]** 是訊息的「指標」。 其會指出佇列中訊息的順序。
-* **[!UICONTROL @partition]** 是佇列中訊息的容器。 位移相對於分割區。 <br>佇列中有約15個分割區。
+* **[!UICONTROL @triggerId]**&#x200B;屬性包含[!DNL trigger]的名稱。
+* JSON格式的&#x200B;**擴充功能**&#x200B;元素包含Adobe Analytics產生的資料，且已附加至觸發器。
+* **[!UICONTROL @offset]**&#x200B;是訊息的「指標」。 其會指出佇列中訊息的順序。
+* **[!UICONTROL @partition]**&#x200B;是佇列中訊息的容器。 位移相對於分割區。 <br>佇列中約有15個分割區。
 
 例如：
 
@@ -81,9 +81,9 @@ function processPipelineMessage(xmlTrigger) {}
 對於每個觸發程式，內容會在Adobe Analytics中以JSON格式定義。
 例如，在觸發器中LogoUpload_uploading_Visits：
 
-* **[!UICONTROL eVar01]** 可包含字串格式的購物者ID，此ID可用來與Adobe Campaign收件者進行調解。 <br>必須對其進行調解才能找到購物者ID （主索引鍵）。
+* **[!UICONTROL eVar01]**&#x200B;可以包含字串格式的「購物者ID」，此字串格式可用來與Adobe Campaign收件者進行調解。 <br>必須協調以尋找購物者ID （主索引鍵）。
 
-* **[!UICONTROL timeGMT]** 可在Adobe Analytics端包含UTC Epoch格式的觸發器時間（自01/01/1970 UTC以來的秒數）。
+* **[!UICONTROL timeGMT]**&#x200B;可在Adobe Analytics端包含觸發器的時間（UTC Epoch格式） （自01/01/1970 UTC以來的秒數）。
 
 例如：
 
@@ -111,20 +111,20 @@ function processPipelineMessage(xmlTrigger) {}
 
 ### 事件處理順序{#order-events}
 
-事件會依位移順序逐一處理。 每個對話串 [!DNL pipelined] 處理不同的資料分割。
+事件會依位移順序逐一處理。 [!DNL pipelined]的每個執行緒處理不同的資料分割。
 
 擷取的最後一個事件的「offset」會儲存在資料庫中。 因此，如果流程停止，它會從最後一個訊息重新啟動。 此資料儲存在內建方案xtk：pipelineOffset中。
 
 此指標是每個執行個體和每個取用者專屬的。 因此，當許多執行個體使用不同的消費者存取相同的管道時，他們每個人都會以相同的順序收到所有訊息。
 
-此 **消費者** 配管選項的引數可識別呼叫的執行個體。
+管線選項的&#x200B;**消費者**&#x200B;引數可識別呼叫的執行個體。
 
 目前，對於不同的環境（例如「測試」或「開發」），無法擁有不同的佇列。
 
 ### 記錄與錯誤處理 {#logging-error-handling}
 
-記錄檔(例如logInfo())會導向至 [!DNL pipelined] 記錄。 諸如logError()之類的錯誤會寫入 [!DNL pipelined] 記錄並將事件放入重試佇列中。 在此情況下，您應該檢查管線記錄。
-錯誤的訊息會在中設定的期間內重試多次。 [!DNL pipelined] 選項。
+記錄檔(例如logInfo())會導向至[!DNL pipelined]記錄檔。 錯誤(例如logError())會寫入[!DNL pipelined]記錄檔，導致事件進入重試佇列。 在此情況下，您應該檢查管線記錄。
+在[!DNL pipelined]選項中設定的期間內，錯誤訊息會重試多次。
 
 為了偵錯和監控之目的，完整的觸發程式資料會以XML格式寫入「資料」欄位中的觸發程式表格中。 或者，包含觸發程式資料的logInfo()也可達到相同目的。
 
@@ -209,7 +209,7 @@ triggerType欄位會識別觸發資料來源的來源。
 | triggerType | 字串50 | TriggerType | 觸發器的名稱。 識別客戶在網站上的行為。 |
 | shopper_id | 字串32 | shopper_id | 購物者的內部識別碼。 由調解工作流程設定。 如果為零，表示在Campaign中未知客戶。 |
 | shopper_key | 長整數 | shopper_key | 購物者的外部識別碼，如Analytics所擷取。 |
-| 已建立 | 日期時間 | 建立時間 | 在Campaign中建立事件的時間。 |
+| 已建立 | 日期時間 | 已建立 | 在Campaign中建立事件的時間。 |
 | lastModified | 日期時間 | 上次修改時間 | 上次在Adobe中修改事件的時間。 |
 | timeGMT | 日期時間 | 時間戳記 | 在Analytics中產生事件的時間。 |
 
@@ -219,7 +219,7 @@ triggerType欄位會識別觸發資料來源的來源。
 
 >[!NOTE]
 >
->管道事件節點不是內建的，需要新增，並且需要在Campaign中建立相關表單。 這些操作僅限專家使用者執行。 如需詳細資訊，請參閱下列區段： [導覽階層](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy). 和 [編輯表單](../../configuration/using/editing-forms.md).
+>管道事件節點不是內建的，需要新增，並且需要在Campaign中建立相關表單。 這些操作僅限專家使用者執行。 如需詳細資訊，請參閱下列區段： [導覽階層](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy)。 和[編輯表單](../../configuration/using/editing-forms.md)。
 
 ![](assets/triggers_7.png)
 

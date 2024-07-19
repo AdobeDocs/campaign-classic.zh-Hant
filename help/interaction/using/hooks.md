@@ -18,13 +18,13 @@ ht-degree: 1%
 
 
 
-互動中的鉤點可讓您修改 **標準引擎行為**.
+互動中的勾點可讓您修改&#x200B;**標準引擎行為**。
 
-此 **[!UICONTROL Target loading]** 和 **[!UICONTROL Proposition post-processing]** 勾點是在Adobe Campaign的選件空間中設定：
+已在Adobe Campaign的選件空間中設定&#x200B;**[!UICONTROL Target loading]**&#x200B;和&#x200B;**[!UICONTROL Proposition post-processing]**&#x200B;鉤點：
 
 ![](assets/interaction_hooks_1.png)
 
-此 **[!UICONTROL Dynamic offer]** 勾點已在Adobe Campaign中使用選件權重設定：
+在Adobe Campaign中，**[!UICONTROL Dynamic offer]**&#x200B;勾點已設定優惠方案權重：
 
 ![](assets/interaction_hooks_2.png)
 
@@ -47,7 +47,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->此 **xmlInteraction** 引數包含通話資料以及現成查詢所載入之聯絡人的設定檔。
+>**xmlInteraction**&#x200B;引數同時包含呼叫資料以及現成查詢載入的連絡人設定檔。
 
 **範例：**
 
@@ -120,7 +120,7 @@ return aReturnedProps;
 
 此掛接可讓您呼叫外部引擎，以選取連結至優惠方案的產品清單。 它是在適用性規則之後、型別規則應用程式之前在優惠方案中設定。
 
-整合員應預先擴充主張 **PropositionRcp** 結構描述以及產品上的其他資訊。 若要指定此資料的儲存位置，請 **[!UICONTROL Proposition being processed]** 連結位於 **[!UICONTROL Storage]** 索引標籤
+整合員應預先使用產品上的其他資訊來擴充主張&#x200B;**PropositionRcp**&#x200B;結構描述。 若要指定此資料將儲存的位置，可在空間的&#x200B;**[!UICONTROL Storage]**&#x200B;索引標籤中使用&#x200B;**[!UICONTROL Proposition being processed]**&#x200B;連結
 
 ![](assets/interaction_hooks_3.png)
 

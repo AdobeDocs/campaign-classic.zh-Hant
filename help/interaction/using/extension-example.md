@@ -19,9 +19,9 @@ ht-degree: 3%
 
 
 
-如果是傳入連絡人（客服中心或網站），系統會使用一組適用性規則，向指定連絡人建議最相關的優惠方案。 若要豐富優惠方案的資格標準，請將 **nms：互動** 綱要。
+如果是傳入連絡人（客服中心或網站），系統會使用一組適用性規則，向指定連絡人建議最相關的優惠方案。 若要擴充優惠方案的資格條件，請擴充&#x200B;**nms：interaction**&#x200B;結構描述。
 
-* 若要新增互動內容，請擴充 **nms：互動** 結構描述並建立 **屬性** 結構描述中必要的元素。
+* 若要新增互動內容，請擴充&#x200B;**nms：interaction**&#x200B;結構描述，並在結構描述中建立所需數量的&#x200B;**attribute**&#x200B;元素。
 
   在以下範例中，新增的標準為國家/地區代碼和上次造訪的頁面。
 
@@ -33,4 +33,4 @@ ht-degree: 3%
 
   ![](assets/s_ncs_configuration_offer_context.png)
 
-* 設定SOAP呼叫時，插入 **內容** XML元素，可參照在互動結構描述中新增的內容資訊。 如需詳細資訊，請參閱 [透過SOAP整合（伺服器端）](../../interaction/using/integration-via-soap-server-side.md).
+* 設定SOAP呼叫時，請插入&#x200B;**context** XML元素，以參考加入互動結構描述中的內容資訊。 如需進一步資訊，請參閱[透過SOAP （伺服器端）](../../interaction/using/integration-via-soap-server-side.md)整合。

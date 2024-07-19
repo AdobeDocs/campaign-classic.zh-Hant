@@ -26,7 +26,7 @@ ht-degree: 97%
 
 ## 如何將資料匯入 Campaign 中？ {#how-can-i-import-data-in-campaign-}
 
-瞭解在中匯入資料的最佳實務 [本節](../../platform/using/import-export-best-practices.md).
+瞭解匯入[本節](../../platform/using/import-export-best-practices.md)資料的最佳實務。
 
 ## 是否可以監視工作流程執行？ {#can-i-monitor-workflow-execution-}
 

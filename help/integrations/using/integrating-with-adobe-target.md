@@ -23,7 +23,7 @@ ht-degree: 0%
 
 若要最佳化您的電子郵件內容，您可以在Adobe Target中建立重新導向選件，然後使用Adobe Campaign來管理電子郵件選件。 例如，您可以為男性收件者和女性收件者顯示不同的優惠方案。
 
-整合會在電子郵件開啟時進行。 客戶開啟電子郵件時，會呼叫Target並顯示內容的動態版本。 內容包含所有瀏覽器都支援的靜態影像。 Target會追蹤對象或工作階段層級對選件的反應，且這些資料可在Target報表中使用。 [在Adobe Target檔案中進一步瞭解](https://experienceleague.adobe.com/docs/target/using/integrate/campaign-and-target.html).
+整合會在電子郵件開啟時進行。 客戶開啟電子郵件時，會呼叫Target並顯示內容的動態版本。 內容包含所有瀏覽器都支援的靜態影像。 Target會追蹤對象或工作階段層級對選件的反應，且這些資料可在Target報表中使用。 [在Adobe Target檔案中進一步瞭解](https://experienceleague.adobe.com/docs/target/using/integrate/campaign-and-target.html)。
 
 
 >[!NOTE]

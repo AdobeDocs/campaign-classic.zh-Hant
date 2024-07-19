@@ -16,27 +16,27 @@ ht-degree: 2%
 
 ## 追蹤行銷活動 {#tracking-a-campaign}
 
-對於每個行銷活動， **[!UICONTROL Tracking]** 標籤可讓您檢視所有工作及其狀態。 以下資訊可透過此子標籤存取：
+對於每個行銷活動，**[!UICONTROL Tracking]**&#x200B;索引標籤可讓您檢視所有工作及其狀態。 以下資訊可透過此子標籤存取：
 
 * 活動日誌會顯示一般行銷活動上執行的工作：工作流程建立或開始、核准、擷取等。
 
   ![](assets/s_ncs_user_op_edit_exe_tab_a.png)
 
-* 此 **[!UICONTROL Deliveries]** 子頁簽包含可在此檢視中編輯之行銷活動的所有傳送。 若要這麼做，請選取傳送，然後按一下 **[!UICONTROL Detail]** 圖示。
+* **[!UICONTROL Deliveries]**&#x200B;子索引標籤包含可以從此檢視編輯的所有行銷活動傳遞。 若要這麼做，請選取傳遞並按一下&#x200B;**[!UICONTROL Detail]**&#x200B;圖示。
 
   ![](assets/s_ncs_user_op_edit_exe_tab_b.png)
 
-* 此 **[!UICONTROL Tasks]** 子索引標籤會將連結至行銷活動的所有任務分組。 此檢視可讓您編輯或刪除它們。 工作可與MRM應用程式一起使用。 其詳細資訊請參閱 [本節](../../mrm/using/creating-and-managing-tasks.md).
+* **[!UICONTROL Tasks]**&#x200B;子索引標籤會將連結至行銷活動的所有任務分組。 此檢視可讓您編輯或刪除它們。 工作可與MRM應用程式一起使用。 在[此區段](../../mrm/using/creating-and-managing-tasks.md)中有詳細的說明。
 
   ![](assets/s_ncs_user_op_edit_exe_tab_e.png)
 
-* 為產生服務提供者訊息而建立的工作流程會顯示在 **[!UICONTROL Jobs on service providers]** 子標籤。 按一下 **[!UICONTROL Detail]** 圖示來顯示選取的工作流程。
+* 為產生服務提供者訊息而建立的工作流程會顯示在&#x200B;**[!UICONTROL Jobs on service providers]**&#x200B;子標籤中。 按一下&#x200B;**[!UICONTROL Detail]**&#x200B;圖示以顯示選取的工作流程。
 
   ![](assets/s_ncs_user_op_edit_exe_tab_d.png)
 
 ## 傳遞追蹤 {#delivery-tracking}
 
-傳遞清單可透過 **[!UICONTROL Deliveries]** 行銷活動節點的連結。
+傳遞清單可透過行銷活動節點的&#x200B;**[!UICONTROL Deliveries]**&#x200B;連結取得。
 
 ![](assets/s_ncs_user_op_del_state_from_homepage.png)
 
@@ -46,10 +46,10 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->有關傳遞詳細資料的資訊，請參閱 [本節](../../delivery/using/about-message-tracking.md) 區段。
+>有關傳遞詳細資訊的資訊，請參閱[本節](../../delivery/using/about-message-tracking.md)部分。
 
 ## 執行追蹤 {#execution-tracking}
 
-您可以按一下 **[!UICONTROL Deliveries]**，可透過Adobe Campaign首頁存取。 另請參閱 [傳遞追蹤](#delivery-tracking).
+您可以按一下&#x200B;**[!UICONTROL Deliveries]** (可透過Adobe Campaign首頁存取)來查詢傳遞狀態。 請參閱[傳遞追蹤](#delivery-tracking)。
 
-行銷活動中執行之程式的相關資訊會收集於 **[!UICONTROL Edit > Audit]** 行銷活動的索引標籤。 在那裡，您可以檢視行銷活動中的傳遞清單。 [了解更多](#tracking-a-campaign)。
+行銷活動中執行之程式的相關資訊會收集在行銷活動的&#x200B;**[!UICONTROL Edit > Audit]**&#x200B;索引標籤中。 在那裡，您可以檢視行銷活動中的傳遞清單。 [了解更多](#tracking-a-campaign)。

@@ -25,11 +25,11 @@ ht-degree: 0%
 
 ## 透過呼叫優惠方案引擎進行傳遞 {#delivering-with-a-call-to-the-offer-engine}
 
-若要在行銷活動期間展示優惠方案，只需根據所選管道建立傳統傳遞動作。 定義傳遞內容時，按一下「 」，呼叫優惠方案引擎 **[!UICONTROL Offers]** 圖示在工具列中提供。
+若要在行銷活動期間展示優惠方案，只需根據所選管道建立傳統傳遞動作。 按一下工具列中的&#x200B;**[!UICONTROL Offers]**&#x200B;圖示，在定義傳遞內容時呼叫優惠方案引擎。
 
 ![](assets/offer_delivery_009.png)
 
-進一步瞭解直接郵件傳遞 [在本節中](../../delivery/using/about-direct-mail-channel.md). 進一步瞭解行銷活動 [在本節中](../../campaign/using/setting-up-marketing-campaigns.md).
+在本節](../../delivery/using/about-direct-mail-channel.md)中進一步瞭解直接郵件傳遞[。 在本節](../../campaign/using/setting-up-marketing-campaigns.md)中進一步瞭解行銷活動[。
 
 ### 將優惠方案插入傳遞的主要步驟 {#main-steps-for-inserting-an-offer-into-a-delivery}
 
@@ -53,11 +53,11 @@ ht-degree: 0%
 
    ![](assets/offer_delivery_005.png)
 
-1. 選取 **[!UICONTROL Exclude non-eligible recipients]** 選項（如有需要）。 有關詳細資訊，請參閱 [用於呼叫優惠方案引擎的引數](#parameters-for-calling-offer-engine).
+1. 選取&#x200B;**[!UICONTROL Exclude non-eligible recipients]**&#x200B;選項（如有必要）。 如需詳細資訊，請參閱呼叫優惠方案引擎](#parameters-for-calling-offer-engine)的[引數。
 
    ![](assets/offer_delivery_006.png)
 
-1. 如有必要，請選取 **[!UICONTROL Do not display anything if no offers are selected]** 選項。 有關詳細資訊，請參閱 [用於呼叫優惠方案引擎的引數](#parameters-for-calling-offer-engine).
+1. 如有必要，請選取&#x200B;**[!UICONTROL Do not display anything if no offers are selected]**&#x200B;選項。 如需詳細資訊，請參閱呼叫優惠方案引擎](#parameters-for-calling-offer-engine)的[引數。
 
    ![](assets/offer_delivery_007.png)
 
@@ -72,10 +72,10 @@ ht-degree: 0%
 ### 用於呼叫優惠方案引擎的引數 {#parameters-for-calling-offer-engine}
 
 * **[!UICONTROL Space]** ：必須選取優惠方案環境的空間，才能啟用優惠方案引擎。
-* **[!UICONTROL Category]** ：排序選件時所在的特定資料夾。 如果未指定類別，則優惠方案引擎將會考慮環境中包含的所有優惠方案，除非選取了主題。
+* **[!UICONTROL Category]** ：優惠排序的特定資料夾。 如果未指定類別，則優惠方案引擎將會考慮環境中包含的所有優惠方案，除非選取了主題。
 * **[!UICONTROL Themes]** ：類別中上游定義的關鍵字。 這些當作篩選，可讓您在一組類別中選取優惠方案，以縮小要呈現的優惠方案數量。
-* **[!UICONTROL Number of propositions]** ：引擎傳回的可插入傳遞主體的選件數。 如果它們未插入訊息中，仍會產生，但不會顯示優惠方案。
-* **[!UICONTROL Exclude non-eligible recipients]** ：此選項可讓您啟動或停用對沒有足夠的合格優惠的收件者的排除。 合格主張的數量可能低於要求的主張數量。 如果核取此方塊，則沒有足夠主張的收件者將會從傳遞中排除。 如果您未選取此選項，這些收件者將不會被排除，但他們不會擁有要求的建議數量。
+* **[!UICONTROL Number of propositions]** ：引擎傳回的可插入傳遞主體的選件數目。 如果它們未插入訊息中，仍會產生，但不會顯示優惠方案。
+* **[!UICONTROL Exclude non-eligible recipients]** ：此選項可讓您針對沒有足夠的合格優惠方案，來啟用或停用收件者排除功能。 合格主張的數量可能低於要求的主張數量。 如果核取此方塊，則沒有足夠主張的收件者將會從傳遞中排除。 如果您未選取此選項，這些收件者將不會被排除，但他們不會擁有要求的建議數量。
 * **[!UICONTROL Do not display anything if no offer is selected]** ：此選項可讓您選擇當其中一個主張不存在時，如何處理訊息。 核取此方塊時，不會顯示缺少主張的表示，且不會出現此主張的訊息內容。 如果未核取此方塊，則訊息本身會在傳送期間取消，收件者將不再接收任何訊息。
 
 ### 在傳遞中插入優惠方案主張 {#inserting-an-offer-proposition-into-a-delivery}
@@ -90,28 +90,28 @@ ht-degree: 0%
 
 您也可以使用傳送大綱，在傳送中顯示優惠方案。
 
-如需傳送概要的詳細資訊，請參閱 [行銷活動 — MRM](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline) 指南。
+如需傳遞概要的詳細資訊，請參閱[Campaign - MRM](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline)指南。
 
 1. 建立新行銷活動或存取現有行銷活動。
-1. 透過行銷活動存取傳遞大網 **[!UICONTROL Edit]** > **[!UICONTROL Documents]** 標籤。
-1. 新增大綱，然後以滑鼠右鍵按一下大綱並選取「 」，將任意數目的選件插入大綱 **[!UICONTROL New]** > **[!UICONTROL Offer]**，然後儲存行銷活動。
+1. 透過行銷活動的&#x200B;**[!UICONTROL Edit]** > **[!UICONTROL Documents]**&#x200B;索引標籤存取傳遞大綱。
+1. 新增大綱，然後以滑鼠右鍵按一下大綱並選取&#x200B;**[!UICONTROL New]** > **[!UICONTROL Offer]**，然後儲存行銷活動，以插入您想要的所有優惠方案。
 
    ![](assets/int_compo_offre1.png)
 
 1. 建立您有權存取其傳遞大網的傳遞（例如，直接郵件傳遞）。
-1. 編輯傳送時，按一下 **[!UICONTROL Select a delivery outline]**.
+1. 編輯傳遞時，按一下&#x200B;**[!UICONTROL Select a delivery outline]**。
 
    >[!NOTE]
    >
-   >根據傳送型別，此選項可在以下網址找到： **[!UICONTROL Properties]** > **[!UICONTROL Advanced]** 功能表（適用於電子郵件傳遞）。
+   >根據傳遞型別，此選項可在&#x200B;**[!UICONTROL Properties]** > **[!UICONTROL Advanced]**&#x200B;功能表（例如電子郵件傳遞）中找到。
 
    ![](assets/int_compo_offre2.png)
 
-1. 使用 **[!UICONTROL Offers]** 按鈕，您就可以設定優惠方案空間，以及要在傳送中顯示的優惠方案數量。
+1. 使用&#x200B;**[!UICONTROL Offers]**&#x200B;按鈕後，您可以設定優惠方案空間，以及要在傳遞中呈現的優惠方案數量。
 
    ![](assets/int_compo_offre3.png)
 
-1. 使用個人化欄位將主張新增至傳遞內文(如需詳細資訊，請參閱 [在傳遞中插入優惠方案主張](#inserting-an-offer-proposition-into-a-delivery) 區段)，或在直接郵件傳遞的情況下，透過編輯摘取檔案格式進行。
+1. 使用個人化欄位將主張新增至傳遞內文（如需詳細資訊，請參閱[將優惠方案主張插入傳遞](#inserting-an-offer-proposition-into-a-delivery)區段），或在直接郵件傳遞的情況下，透過編輯擷取檔案格式將主張新增至傳遞。
 
    將從傳遞大網中參照的優惠方案中選取主張。
 

@@ -19,9 +19,9 @@ ht-degree: 9%
 
 藉由Adobe Campaign的追蹤功能，您可以追蹤傳送的訊息，並檢查收件者的行為：開啟、點按連結、取消訂閱等。
 
-此資訊擷取於 **[!UICONTROL Tracking]** 每個傳遞收件者之設定檔的索引標籤。 此標籤會顯示從清單中選取的收件者所追蹤和點選的所有URL連結。 這是在傳送中追蹤的所有URL的累積，這些URL仍存在於傳送畫面中。 清單可以設定，通常包含：點選的URL、點選的日期和時間，以及找到URL的檔案。 如需詳細資訊，請參閱[本章節](../../platform/using/editing-a-profile.md#tracking-tab)。
+此資訊會在每個傳遞收件者之設定檔的&#x200B;**[!UICONTROL Tracking]**&#x200B;索引標籤中擷取。 此標籤會顯示從清單中選取的收件者所追蹤和點選的所有URL連結。 這是在傳送中追蹤的所有URL的累積，這些URL仍存在於傳送畫面中。 清單可以設定，通常包含：點選的URL、點選的日期和時間，以及找到URL的檔案。 如需詳細資訊，請參閱[本章節](../../platform/using/editing-a-profile.md#tracking-tab)。
 
-此 **傳遞儀表板** 對於監控您的傳遞以及在傳送訊息期間遇到的最終問題也很關鍵。 如需詳細資訊，請參閱 [本節](delivery-dashboard.md).
+**傳遞儀表板**&#x200B;也是監視您的傳遞以及在傳送訊息期間遇到的最終問題的關鍵。 如需詳細資訊，請參閱[本節](delivery-dashboard.md)。
 
 下圖顯示使用者與各種伺服器之間的對話階段。
 
@@ -47,7 +47,7 @@ ht-degree: 9%
 
 <img src="assets/do-not-localize/icon-message-tracking.svg" width="60px">
 
-**已追蹤的連結**
+**追蹤的連結**
 
 您可以追蹤訊息是否收到，以及郵件內容中所插入連結的啟用情況，以便更清楚瞭解收件者的行為。 [了解更多](how-to-configure-tracked-links.md)
 
@@ -107,15 +107,15 @@ Campaign Classic追蹤功能可讓您在電子郵件中新增可個人化且支�
 
 <img src="assets/do-not-localize/icon-troubleshooting.svg" width="60px">
 
-下列疑難排解提示可協助您解決在Adobe Campaign Classic中使用追蹤時最常見的問題。 如需更進階的疑難排解，請參閱 [本節](tracking-troubleshooting.md).
+下列疑難排解提示可協助您解決在Adobe Campaign Classic中使用追蹤時最常見的問題。 如需更進階的疑難排解，請參閱[本節](tracking-troubleshooting.md)。
 
 * 檢查trackinglogd流程是否正在執行
 
   此程式會從IIS/Web伺服器共用記憶體讀取並寫入重新導向記錄。
 
-  您可以選取執行個體中的「監視」標籤，從首頁存取它。 您也可以在例證上執行下列指令： `<user>@<instance>:~$ nlserver pdump`
+  您可以選取執行個體中的「監視」標籤，從首頁存取它。 您也可以在執行個體上執行下列命令： `<user>@<instance>:~$ nlserver pdump`
 
-  如果trackinglogd程式未出現在清單中，請在執行個體上使用下列命令來啟動它： `<user>@<instance>:~$ nlserver start trackinglogd`
+  如果trackinglogd處理序未出現在清單中，請在執行個體上使用下列命令啟動它： `<user>@<instance>:~$ nlserver start trackinglogd`
 
 * 檢查追蹤技術工作流程最近是否一直在執行。
 

@@ -21,8 +21,8 @@ ht-degree: 10%
 
 透過Adobe Experience Platform，您可以在Campaign Classic和Adobe Real-time Customer Data Platform (RTCDP)之間共用資料。 這可讓您在行銷活動工作流程中鎖定Adobe Experience Platform對象，然後傳回Adobe Real-time Customer Data Platform中與這些對象相關的資料，例如傳送、開啟和點按。
 
-* 替換為 **目的地**，將對象從Adobe Experience Platform擷取至Campaign Classic。 這可讓您針對行銷活動啟用已知和未知的資料。
-* 替換為 **來源**，將Campaign Classic資料（例如傳送、開啟、點按）匯出至Adobe Experience Platform。 這可讓您將從不同來源收集的資料集中到單一位置，並使用從中獲得的見解做更多工作。
+* 使用&#x200B;**Destinations**，將對象從Adobe Experience Platform擷取到Campaign Classic。 這可讓您針對行銷活動啟用已知和未知的資料。
+* 透過&#x200B;**來源**，將Campaign Classic資料（例如傳送、開啟、點按）匯出至Adobe Experience Platform。 這可讓您將從不同來源收集的資料集中到單一位置，並使用從中獲得的見解做更多工作。
 
 >[!IMPORTANT]
 >
@@ -36,7 +36,7 @@ ht-degree: 10%
 
 ## 連結Campaign Classic與Adobe Experience Platform
 
-為了能夠在Adobe Experience Platform和Campaign Classic之間共用資料，您首先需要將Adobe Campaign as a **目的地**，並連線您的AWS S3或Azure Blob儲存位置，做為 **來源** 在Adobe Experience Platform中。
+若要能夠在Adobe Experience Platform和Campaign Classic之間共用資料，您必須先連線Adobe Campaign做為&#x200B;**目的地**，並在Adobe Experience Platform中將您的AWS S3或Azure Blob儲存位置做為&#x200B;**Source**。
 
 聯結器設定完成後，您可以使用工作流程設定資料匯入或匯出至Campaign Classic。
 

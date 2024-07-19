@@ -15,13 +15,13 @@ ht-degree: 4%
 
 
 
-此 **SQL資料管理** 活動可讓您撰寫自己的SQL指令碼，以建立和填入工作表。
+**SQL資料管理**&#x200B;活動可讓您撰寫自己的SQL指令碼，以建立和填入工作表。
 
 ## 先決條件 {#prerequisites}
 
 在設定活動之前，請確定已符合下列必要條件：
 
-* 活動僅適用於遠端資料來源。 此 **[!UICONTROL FDA]** 因此，您必須在執行個體上安裝（同盟資料存取）套件。 [了解更多](../../installation/using/about-fda.md)。
+* 活動僅適用於遠端資料來源。 因此，您必須在執行個體上安裝&#x200B;**[!UICONTROL FDA]** （同盟資料存取）套件。 [了解更多](../../installation/using/about-fda.md)。
 
   如需詳細資訊，請參閱Campaign版本的相關章節：
 
@@ -30,12 +30,12 @@ ht-degree: 4%
   ![](assets/do-not-localize/v8.png)[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html?lang=zh-Hant)
 
 * 傳出綱要必須存在於資料庫中，並連結至FDA資料庫。
-* 執行工作流程的運運算元必須具備 **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY (useSqlDmActivity)]** 具名權利。 [了解更多](../../platform/using/access-management-named-rights.md)。
+* 執行工作流程的運運算元必須具有&#x200B;**[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY (useSqlDmActivity)]**&#x200B;已命名的許可權。 [了解更多](../../platform/using/access-management-named-rights.md)。
 
 ## 設定SQL資料管理活動 {#configuring-the-sql-data-management-activity}
 
-1. 指定活動 **[!UICONTROL Label]**.
-1. 選取 **[!UICONTROL External account]** ，然後選取 **[!UICONTROL Outbound schema]** 連結至此外部帳戶。
+1. 指定活動&#x200B;**[!UICONTROL Label]**。
+1. 選取要使用的&#x200B;**[!UICONTROL External account]**，然後選取連結至此外部帳戶的&#x200B;**[!UICONTROL Outbound schema]**。
 
    >[!CAUTION]
    >
@@ -47,7 +47,7 @@ ht-degree: 4%
    >
    >SQL指令碼編寫者有責任確認SQL指令碼正常運作，以及其參考（欄位名稱等） 符合傳出綱要。
 
-   如果要載入現有的SQL程式碼，請選取 **[!UICONTROL The SQL script is contained in an entity stored in the database]** 選項。 SQL指令碼必須建立並儲存在 **[!UICONTROL Administration]** / **[!UICONTROL Configuration]** / **[!UICONTROL SQL scripts]** 功能表。
+   如果要載入現有的SQL程式碼，請選取&#x200B;**[!UICONTROL The SQL script is contained in an entity stored in the database]**&#x200B;選項。 SQL指令碼必須建立並儲存在&#x200B;**[!UICONTROL Administration]** / **[!UICONTROL Configuration]** / **[!UICONTROL SQL scripts]**&#x200B;功能表中。
 
    否則，請在專用區域中輸入或複製貼上您的SQL指令碼。
 
@@ -55,15 +55,15 @@ ht-degree: 4%
 
    活動可讓您在指令碼中使用下列變數：
 
-   * **activity.tableName**：傳出工作表的SQL名稱。
+   * **activity.tableName**：輸出工作表的SQL名稱。
    * **task.incomingTransitionByName(&#39;name&#39;)。tableName**：要使用的傳入轉變所承載的工作表的SQL名稱（轉變由其名稱識別）。
 
      >[!NOTE]
      >
-     >(&#39;name&#39;)值對應至 **[!UICONTROL Name]** 切換屬性中的欄位。
+     >(&#39;name&#39;)值對應至轉變屬性中的&#x200B;**[!UICONTROL Name]**&#x200B;欄位。
 
-1. 如果SQL命令檔已經包含建立出站工作表的命令，請取消選取 **[!UICONTROL Automatically create work table]** 選項。 否則，工作流程執行後會自動建立工作表。
-1. 按一下 **[!UICONTROL Ok]** 以確認活動設定。
+1. 如果SQL指令碼已經包含建立外送工作表的命令，請取消選取&#x200B;**[!UICONTROL Automatically create work table]**&#x200B;選項。 否則，工作流程執行後會自動建立工作表。
+1. 按一下&#x200B;**[!UICONTROL Ok]**&#x200B;以確認活動設定。
 
 該活動現已完成設定。它可以在工作流程中執行。
 

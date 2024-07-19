@@ -33,11 +33,11 @@ parameters：==param
 
 ## 說明 {#description-13}
 
-此元素定義了一組 `<parameter>`  元素。
+此元素定義了一組`<parameter>`元素。
 
 ## 使用與使用內容 {#use-and-context-of-use-8}
 
-此元素為必要，即使對於單一專案 `<param>` 的子元素 `<method>`  元素。
+此專案是必要的，即使是`<method>`專案的單一`<param>`子專案也是如此。
 
 ## 屬性說明 {#attribute-description-13}
 

@@ -21,7 +21,7 @@ JavaScript範本是包含JavaScript程式碼的HTML或文字檔案。 其建構�
 
 ### JavaScript範本的識別 {#identification-of-a-javascript-template}
 
-JavaScript範本是透過其名稱和名稱空間來識別，就像結構描述和表單一樣。 不過，建議新增 **.js** 選項至範本名稱。
+JavaScript範本可由其名稱和名稱空間識別，就如結構描述和表單一樣。 但是，建議將&#x200B;**.js**&#x200B;選項新增至範本名稱。
 
 ### JavaScript範本的結構 {#structure-of-a-javascript-template}
 
@@ -41,12 +41,12 @@ JavaScript範本是透過其名稱和名稱空間來識別，就像結構描述�
 </html>
 ```
 
-各種JavaScript指令會以下列形式顯示：
+各種JavaScript指示詞會以下列形式顯示：
 
-* 合併欄位：顯示資料的內容，包含 **`<%= <source> %>`** 語法，其中 `<source>`是要顯示之資料的來源欄位。
+* 合併欄位：以&#x200B;**`<%= <source> %>`**&#x200B;語法顯示資料的內容，其中`<source>`是要顯示資料的來源欄位。
 * 指示區塊：執行&lt;%和%>標籤之間包含的一系列JavaScript指示。
 
-此 **內容** 物件代表輸入XML檔案的主要元素。
+**content**&#x200B;物件代表輸入XML檔案的主要專案。
 
 在我們的範例中，下列一行會顯示名稱簿名稱的內容：
 
@@ -54,7 +54,7 @@ JavaScript範本是透過其名稱和名稱空間來識別，就像結構描述�
 <h1><%= content.@name %></h1>
 ```
 
-下列程式碼會在 `<chapter>` 收集要素：
+下列程式碼會在`<chapter>`集合專案上反複執行：
 
 ```
 <% for each(var chapter in content.chapter) { %>
@@ -66,18 +66,18 @@ JavaScript範本是透過其名稱和名稱空間來識別，就像結構描述�
 
 **範例**：
 
-* **內容。@name**：擷取主要元素的「name」屬性值
-* **內容。@`['name']`**：等同於 **內容。@name** 語法
-* **content.chapter.length**：傳回上的元素數 `<chapter` collection element — 收集要素
-* **content.chapter`[0]`.@name**：擷取第一筆的名稱 `<chapter>` 元素
-* **chapter.name()**：傳回的名稱 `<chapter>` 元素
-* **chapter.parent()。name()**：傳回的父元素名稱 `<chapter>`
+* **內容。@name**：擷取主要專案的「name」屬性值
+* **內容。@`['name']`**：與&#x200B;**內容相同。@name**&#x200B;語法
+* **content.chapter.length**：傳回`<chapter`集合專案上的專案數
+* **content.chapter`[0]`。@name**：擷取第一個`<chapter>`專案的名稱
+* **chapter.name()**：傳回`<chapter>`專案的名稱
+* **chapter.parent()。name()**：傳回`<chapter>`的父專案名稱
 
 >[!CAUTION]
 >
->由於&#39;-&#39;字元保留在JavaScript語言中，因此必須透過 `['<field>']` 語法。
+>因為&#39;-&#39;字元保留在JavaScript語言中，所以必須透過`['<field>']`語法復原包含此字元的任何屬性或元素的值。
 >
->例如： `content.@['offer-id']`.
+>例如： `content.@['offer-id']`。
 
 程式語言的所有功能（變數、回圈、條件測試、函式等） )可用來建構輸出檔案。 可存取SOAP API以擴充輸出檔案。
 
@@ -157,9 +157,9 @@ JavaScript範本是透過其名稱和名稱空間來識別，就像結構描述�
 
 ### 包含JavaScript範本 {#including-a-javascript-template}
 
-您可以建構函式或變數程式庫以供稍後使用。 若要這麼做，請使用匯入JavaScript範本 **估計** 函式。 這可讓您使用在其他JavaScript範本中宣告的其他函式擴充內容。
+您可以建構函式或變數程式庫以供稍後使用。 若要這麼做，請使用&#x200B;**eval**&#x200B;函式匯入JavaScript範本。 這可讓您使用在其他JavaScript範本中宣告的其他函式豐富內容。
 
-**範例**：匯入 **common.jsp** 範本。
+**範例**：匯入&#x200B;**common.jsp**&#x200B;範本。
 
 ```
 <% eval(xtk.javascript.get("cus:common.js").data);  %>
@@ -173,9 +173,9 @@ JavaScript範本是透過其名稱和名稱空間來識別，就像結構描述�
 
 >[!NOTE]
 >
->必須填入關聯的資料模型結構描述，以初始化JavaScript物件。
+>必須填入關聯的資料模型結構描述，才能初始化JavaScript物件。
 
-若要隨時產生輸出檔案的預覽，請選取內容和輸出格式(HTML、文字、XML)，然後按一下 **[!UICONTROL Generate]** ：
+若要隨時產生輸出檔案的預覽，請選取內容和輸出格式(HTML、文字、XML)，然後按一下&#x200B;**[!UICONTROL Generate]**：
 
 ![](assets/d_ncs_content_form17.png)
 
@@ -191,7 +191,7 @@ JavaScript範本是透過其名稱和名稱空間來識別，就像結構描述�
 
 此範例涉及下列步驟：
 
-1. 建立下列結構描述(在此案例中為： **neo：news**)：
+1. 建立下列結構描述（在此案例中： **neo：news**）：
 
    ```
    <srcSchema _cs="Invitation (neo)"   entitySchema="xtk:srcSchema" img="xtk:schema.png" label="Invitation" mappingType="sql" name="news" namespace="neo" xtkschema="xtk:srcSchema">
@@ -230,7 +230,7 @@ JavaScript範本是透過其名稱和名稱空間來識別，就像結構描述�
    </srcSchema>
    ```
 
-1. 建立連結的 **[!UICONTROL Content management]** 輸入表單(**neo：news**)
+1. 建立連結的&#x200B;**[!UICONTROL Content management]**&#x200B;型別表單(**neo：news**)
 
    ```
    <form _cs="News (neo)" entitySchema="xtk:form"  img="xtk:form.png" label="News"  name="news" namespace="neo" type="contentForm" xtkschema="xtk:form">
@@ -364,7 +364,7 @@ JavaScript範本是透過其名稱和名稱空間來識別，就像結構描述�
 
 1. 然後，您就可以在傳送中使用此內容範本。
 
-   有關詳細資訊，請參閱 [使用內容範本](using-a-content-template.md).
+   如需詳細資訊，請參閱[使用內容範本](using-a-content-template.md)。
 
 ## XSL樣式表 {#xsl-stylesheets}
 
@@ -374,9 +374,9 @@ XSLT語言可讓您將XML檔案變更為輸出檔案。 根據樣式表的輸出
 
 ### 識別樣式表 {#identifying-a-stylesheet}
 
-樣式表會以其名稱和名稱空間來識別，就像結構描述和表單一樣。 不過，建議您新增 **.xsl** 樣式表名稱的延伸。
+樣式表會以其名稱和名稱空間來識別，就像結構描述和表單一樣。 不過，建議您將&#x200B;**.xsl**&#x200B;副檔名新增至樣式表的名稱。
 
-樣式表的識別索引鍵是由名稱空間和名稱組成的字串，以冒號分隔；例如： **cus：book.xsl**.
+樣式表的識別索引鍵是由名稱空間和名稱組成的字串，以冒號分隔；例如： **cus：book.xsl**。
 
 ### 樣式表的結構 {#structure-of-a-stylesheet}
 
@@ -408,16 +408,16 @@ XSLT語言可讓您將XML檔案變更為輸出檔案。 根據樣式表的輸出
 
 * 屬性的值在引號之間，
 * 元素必須有開始標籤和結束標籤，
-* 將&#39;&lt;&#39;或&#39;&amp;&#39;字元取代為 **&#39;&lt;&#39;** 或 **&#39;&amp;&#39;** 實體，
-* 每個XSL元素都必須使用 **xsl** 名稱空間。
+* 將&#39;&lt;&#39;或&#39;&amp;&#39;字元取代為&#x200B;**&#39;&lt;&#39;**&#x200B;或&#x200B;**&#39;&amp;&#39;**&#x200B;實體，
+* 每個XSL專案都必須使用&#x200B;**xsl**&#x200B;名稱空間。
 
-樣式表必須以XSL根元素標籤開頭 **`<xsl:stylesheet>`** 結尾為 **`</xsl:stylesheet>`** 標籤。 XSL名稱空間必須在開頭標籤中定義，如下所示：
+樣式表必須以XSL根專案標籤&#x200B;**`<xsl:stylesheet>`**&#x200B;開頭，並以&#x200B;**`</xsl:stylesheet>`**&#x200B;標籤結尾。 XSL名稱空間必須在開頭標籤中定義，如下所示：
 
 ```
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
 ```
 
-此 **`<xsl:output>`** 元素會指定所產生的檔案格式。 指定所需的字元集和輸出格式。
+**`<xsl:output>`**&#x200B;專案指定所產生的檔案格式。 指定所需的字元集和輸出格式。
 
 ```
 <xsl:output encoding="ISO-8859-1" method="html"/>
@@ -442,7 +442,7 @@ XSLT語言可讓您將XML檔案變更為輸出檔案。 根據樣式表的輸出
 </xsl:template>
 ```
 
-根據預設，XSLT處理器會搜尋 **範本** 適用於輸入XML檔案的根或主節點。 輸出檔案的建構會以此開頭 **範本**.
+依預設，XSLT處理器會搜尋套用至輸入XML檔案根或主節點的&#x200B;**範本**。 輸出檔案的建構從此&#x200B;**範本**&#x200B;開始。
 
 在我們的範例中，HTML頁面是從&quot;cus：book&quot;結構描述產生，並顯示書冊名稱和章節清單。
 
@@ -452,9 +452,9 @@ XSLT語言可讓您將XML檔案變更為輸出檔案。 根據樣式表的輸出
 
 ### 顯示HTML/XML {#displaying-html-xml}
 
-若要顯示 **html** 欄位，使用 **disable-output-escaping=&quot;yes&quot;** 選項來自 **`<xsl:value-of>`** 指令。 這可讓您避免將字元取代為其XML實體（例如&lt;替換為&lt;）。
+若要顯示&#x200B;**html**&#x200B;欄位，請使用&#x200B;**`<xsl:value-of>`**&#x200B;指示詞中的&#x200B;**disable-output-escaping=&quot;yes&quot;**&#x200B;選項。 這可讓您避免將字元取代為其XML實體（例如&lt;替換為&lt;）。
 
-此 **`<xsl:text>`** 指示詞和 **disable-output-escaping=&quot;yes&quot;** 選項可讓您為個人化欄位或條件測試插入JavaScript標籤。
+具有&#x200B;**disable-output-escaping=&quot;yes&quot;**&#x200B;選項的&#x200B;**`<xsl:text>`**&#x200B;指示詞可讓您為個人化欄位或條件測試插入JavaScript標籤。
 
 範例：
 
@@ -464,13 +464,13 @@ XSLT語言可讓您將XML檔案變更為輸出檔案。 根據樣式表的輸出
   <xsl:value-of select="summary" disable-output-escaping="yes"/>
   ```
 
-* 插入個人化欄位 **&lt;%= recipient.email %>**：
+* 插入個人化欄位&#x200B;**&lt;%= recipient.email %>**：
 
   ```
   <xsl:text disable-output-escaping="yes"><%= recipient.email %></xsl:text>
   ```
 
-* 新增條件式測試 **&lt;%，如果(recipient.language == &#39;en&#39;) `{` %>**：
+* 正在新增條件式測試&#x200B;**&lt;%，如果(recipient.language == &#39;en&#39;) `{` %>**：
 
   ```
   <xsl:text disable-output-escaping="yes"><% if (recipient.language == 'en') { %></xsl:text>
@@ -478,9 +478,9 @@ XSLT語言可讓您將XML檔案變更為輸出檔案。 根據樣式表的輸出
 
 ### 包含樣式表 {#including-stylesheets}
 
-您可以建立範本或變數的程式庫，以便在數個樣式表之間共用。 &quot;longMonth&quot; **範本**&#x200B;如上所示，是可在樣式表中遠端定位範本，以便日後重複使用之優勢的典型範例。
+您可以建立範本或變數的程式庫，以便在數個樣式表之間共用。 以上顯示的「longMonth」**範本**&#x200B;是典型，說明在樣式表中從遠端尋找範本以便日後重複使用所具有的好處。
 
-此 **`<xsl:include>`** 指示指示要包含在檔案中的樣式表名稱。
+**`<xsl:include>`**&#x200B;指示指示要包含在檔案中的樣式表名稱。
 
 **範例**：包含「common.xsl」樣式表。
 
@@ -503,7 +503,7 @@ XSLT語言可讓您將XML檔案變更為輸出檔案。 根據樣式表的輸出
 
 ![](assets/d_ncs_content_form14.png)
 
-若要隨時產生輸出檔案的預覽，請選取內容例項和格式(HTML、文字、XML)，然後按一下 **[!UICONTROL Generate]** ：
+若要隨時產生輸出檔案的預覽，請選取內容執行個體和格式(HTML、文字、XML)，然後按一下「**[!UICONTROL Generate]**」：
 
 ![](assets/d_ncs_content_form15.png)
 
@@ -517,16 +517,16 @@ XSLT語言可讓您將XML檔案變更為輸出檔案。 根據樣式表的輸出
 
 在HTML輸出檔案中輸入的影像可以使用絕對或相對參照來參照。
 
-相對參照可讓您輸入包含影像的伺服器URL，該影像位於 **NcmResourcesDir** 和 **NcmResourcesDirPreview** 選項。 這些選項包含在Adobe Campaign使用者端主控台中發佈和預覽的影像位置。
+相對參照可讓您輸入包含&#x200B;**NcmResourcesDir**&#x200B;與&#x200B;**NcmResourcesDirPreview**&#x200B;選項中影像的伺服器URL。 這些選項包含在Adobe Campaign使用者端主控台中發佈和預覽的影像位置。
 
-這兩個選項可透過 **[!UICONTROL Administration > Platform > Options]** 資料夾。
+這兩個選項可透過&#x200B;**[!UICONTROL Administration > Platform > Options]**&#x200B;資料夾中的選項管理畫面存取。
 
 **範例**：
 
 * NcmResourcesDir = &quot;https://server/images/&quot;
 * NcmResourcesDirPreview = &quot;x：/images/&quot;
 
-在樣式表處理期間， **_resPath** 輸入XML檔案之主要元素上的屬性，會根據上下文（預覽或發佈）自動以一或多種選項填入。
+在樣式表處理期間，輸入XML檔案之主要元素上的&#x200B;**_resPath**&#x200B;屬性會根據內容（預覽或發佈）自動填入一個或其他選項。
 
 如何搭配影像使用影像放置選項及其使用範例：
 
@@ -540,7 +540,7 @@ XSLT語言可讓您將XML檔案變更為輸出檔案。 根據樣式表的輸出
 
 ### 使用公用資源 {#using-public-resources}
 
-您也可以使用 **[!UICONTROL Public resources]** 以宣告影像，並根據在部署精靈中輸入的執行個體設定將其上傳到伺服器。
+您也可以使用&#x200B;**[!UICONTROL Public resources]**&#x200B;來宣告影像，並根據在部署精靈中輸入的執行個體設定將其上傳到伺服器。
 
 然後您可以在內容中呼叫這些影像。 若要這麼做，請在內容管理架構中使用下列語法：
 
@@ -560,27 +560,27 @@ XSLT語言可讓您將XML檔案變更為輸出檔案。 根據樣式表的輸出
 
 >[!NOTE]
 >
->有關詳細資訊 **[!UICONTROL Public resources]** 以及如何設定和使用它們，請參閱 [本節](../../installation/using/deploying-an-instance.md#managing-public-resources).
+>有關&#x200B;**[!UICONTROL Public resources]**&#x200B;以及如何設定和使用它們的詳細資訊，請參閱[本節](../../installation/using/deploying-an-instance.md#managing-public-resources)。
 
 ## 日期顯示 {#date-display}
 
-在XML輸入檔案中，日期會以內部XML格式儲存： **`YYYY/MM/DD HH:MM:SS`** (範例 `2018/10/01 12:23:30`)。
+在XML輸入檔案中，日期以內部XML格式儲存： **`YYYY/MM/DD HH:MM:SS`** （範例`2018/10/01 12:23:30`）。
 
 Adobe Campaign為JavaScript範本和XSL樣式表提供日期格式功能，如下所述。
 
 ### JavaScript日期格式 {#javascript-date-formatting}
 
-若要以所需格式顯示日期，Adobe Campaign提供 **formatDate** 將日期內容作為輸入並使用以下語法指定輸出格式的字串的函式： **%4Y/%2M/%2D %2H%2N%2S**
+若要以所需格式顯示日期，Adobe Campaign提供&#x200B;**formatDate**&#x200B;函式，該函式接受日期的內容作為輸入，並提供字串，指定使用下列語法的輸出格式： **%4Y/%2M/%2D %2H%2N%2S**
 
 範例：
 
-* 在中顯示日期 **31/10/2018** 格式：
+* 以&#x200B;**31/10/2018**&#x200B;格式顯示日期：
 
   ```
    <%= formatDate(content.@date, "%2D/%2M/%4Y") %>
   ```
 
-* 在中顯示日期 **2018年7月** 格式：
+* 以&#x200B;**2018年7月**&#x200B;格式顯示日期：
 
   ```
   <%
@@ -601,17 +601,17 @@ Adobe Campaign為JavaScript範本和XSL樣式表提供日期格式功能，如�
 
 ### XSL日期格式 {#xsl-date-formatting}
 
-XSLT語法中沒有標準的日期管理函式。 若要以所需格式顯示日期，Adobe Campaign提供外部功能 **date-format**. 此函式將日期的內容當作輸入，並使用下列語法指定輸出格式的字串： **%4Y/%2M/%2D %2H%2N%2S**
+XSLT語法中沒有標準的日期管理函式。 若要以所需格式顯示日期，Adobe Campaign提供外部函式&#x200B;**date-format**。 此函式將日期的內容和字串當作輸入，並使用下列語法指定輸出格式： **%4Y/%2M/%2D %2H%2N%2S**
 
 範例：
 
-* 若要在 **01/10/2018** 格式：
+* 若要以&#x200B;**01/10/2018**&#x200B;格式顯示日期：
 
   ```
   <xsl:value-of select="external:date-format(@date, '%2D/%2M/%4Y')"/>
   ```
 
-* 若要在 **2018年7月** 格式：
+* 若要以&#x200B;**2018年7月**&#x200B;格式顯示日期：
 
   ```
   <!-- Returns the month in the form of a string with the month number as input -->

@@ -18,10 +18,10 @@ ht-degree: 0%
 
 
 
-使用行銷活動 **同盟資料存取** (FDA)選項，用於處理儲存在外部資料庫中的資訊。 請依照下列步驟設定對Sybase IQ的存取權。
+使用Campaign **同盟資料存取** (FDA)選項來處理儲存在外部資料庫中的資訊。 請依照下列步驟設定對Sybase IQ的存取權。
 
-1. 設定 [sybase IQ資料庫](#configuring-sybase)
-1. 設定Sybase IQ [外部帳戶](#sybase-external) 在Campaign中
+1. 設定[Sybase IQ資料庫](#configuring-sybase)
+1. 在Campaign中設定Sybase IQ[外部帳戶](#sybase-external)
 
 ## sybase IQ設定 {#configuring-sybase}
 
@@ -29,15 +29,15 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->開始之前，請確定 **unixodbc** 封裝在伺服器上。
+>開始之前，請確定&#x200B;**unixodbc**&#x200B;封裝在伺服器上。
 
-1. 安裝 **iq_odbc**. 安裝結束時可能會發生錯誤。 可忽略此錯誤。
+1. 安裝&#x200B;**iq_odbc**。 安裝結束時可能會發生錯誤。 可忽略此錯誤。
 
-1. 安裝 **iq_client_common**. 安裝結束時，可能會發生Java錯誤。 可忽略此錯誤。
+1. 安裝&#x200B;**iq_client_common**。 安裝結束時，可能會發生Java錯誤。 可忽略此錯誤。
 
 1. 設定ODBC驅動程式。 可在標準檔案中進行設定：/etc/odbc.ini用於一般引數，/etc/odbcinst.ini用於宣告驅動程式：
 
-   * **/etc/odbc.ini** (取代下列值： `<server_alias>` 個字元)：
+   * **/etc/odbc.ini** （以您自己的字元取代`<server_alias>`之類的值）：
 
      ```
      [ODBC Data Sources]
@@ -71,21 +71,21 @@ ht-degree: 0%
 
 sybase IQ外部帳戶可讓您將您的Campaign執行個體連線至Sybase IQ外部資料庫。
 
-1. 從Campaign **[!UICONTROL Explorer]**，按一下 **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
+1. 從行銷活動&#x200B;**[!UICONTROL Explorer]**，按一下&#x200B;**[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**。
 
-1. 按一下 **[!UICONTROL New]** 並選取 **[!UICONTROL External database]** 作為 **[!UICONTROL Type]**.
+1. 按一下&#x200B;**[!UICONTROL New]**&#x200B;並選取&#x200B;**[!UICONTROL External database]**&#x200B;作為&#x200B;**[!UICONTROL Type]**。
 
-1. 若要設定 **[!UICONTROL Sybase IQ]** 外部帳戶，您必須指定：
+1. 若要設定&#x200B;**[!UICONTROL Sybase IQ]**&#x200B;外部帳戶，您必須指定：
 
-   * **[!UICONTROL Type]**：ODBC (Sybase ASE，Sybase IQ)
+   * **[!UICONTROL Type]**： ODBC (Sybase ASE，Sybase IQ)
 
-   * **[!UICONTROL Server]**：對應至ODBC連線(`<server_alias>`)定義於步驟5。 不一定是伺服器本身的名稱。
+   * **[!UICONTROL Server]**：對應到步驟5中定義的ODBC連線(`<server_alias>`)。 不一定是伺服器本身的名稱。
 
    * **[!UICONTROL Account]**：使用者名稱
 
    * **[!UICONTROL Password]**：使用者帳戶密碼
 
-   * **[!UICONTROL Database]**：資料庫名稱
+   * **[!UICONTROL Database]**：資料庫的名稱
 
 >[!NOTE]
 >

@@ -17,16 +17,16 @@ ht-degree: 7%
 
 電子郵件內容中包含個人化的連結需要追蹤特定語法。
 
-在電子郵件內容(HTML或文字)中使用JavaScript可讓您產生動態內容並傳送給收件者，但有兩個限制：
+在電子郵件內容(HTML或文字)中使用JavaScript，可讓您產生動態內容並傳送給收件者，但有兩個限制：
 
 * 指令碼無法直接存取資料庫（無法使用SQL函式和API函式），
 * Adobe Campaign必須能夠偵測URL，以便追蹤連結。 [了解更多](detecting-tracking-urls.md)
 
 您可以新增特定的前置處理指示，以便為URL編寫指令碼並加以追蹤。 [了解更多](pre-processing-instructions.md)
 
-針對追蹤偵測，Adobe Campaign會嵌入 [整潔](https://www.html-tidy.org/) 以剖析HTML來源並偵測模式。 它會列出內容的所有URL，以便可以個別追蹤。 Adobe Campaign再次使用Tidy取代URL (`http://myurl.com`)，且URL指向Adobe Campaign重新導向伺服器。
+為了追蹤偵測，Adobe Campaign會嵌入[Tidy](https://www.html-tidy.org/)以剖析HTML來源並偵測模式。 它會列出內容的所有URL，以便可以個別追蹤。 Adobe Campaign再次使用Tidy，將URL (`http://myurl.com`)取代為指向Adobe Campaign重新導向伺服器的URL。
 
-例如，在初始內容中： `http://myurl.com/a.php?name=<%=escapeUrl(recipient.lastName)%>` 會以下列專案取代某個特定收件者的收件者： `http://emailing.customer.com/r/?id=h617791,71ffa3,71ffa8&p1=CustomerName`
+例如，在初始內容中： `http://myurl.com/a.php?name=<%=escapeUrl(recipient.lastName)%>`會取代為下列特定收件者： `http://emailing.customer.com/r/?id=h617791,71ffa3,71ffa8&p1=CustomerName`
 
 其中：
 

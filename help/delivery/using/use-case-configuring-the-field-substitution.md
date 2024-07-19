@@ -22,18 +22,18 @@ ht-degree: 2%
 
 ## 內容 {#context}
 
-在此使用案例中，網站 **我的線上媒體櫃** 想要根據客戶最喜愛的文學型別，向客戶贈送折扣。
+在此使用案例中，網站&#x200B;**我的線上資料庫**&#x200B;想要根據客戶最喜愛的文學型別，向客戶傳送折扣。
 
 傳遞管理員已將連結至最喜愛型別的個人化欄位整合至其電子郵件。 目的是使用一些種子地址：這些種子地址在表格中有個人化欄位，但沒有儲存任何值。
 
 若要使用隨機欄位替代，您必須具備：
 
 * 包含一或多個個人化欄位的傳遞，
-* 種子地址 **資料綱要** 會根據傳送中使用的個人化欄位進行修改。
+* 根據傳遞中使用的個人化欄位，修改其&#x200B;**資料結構描述**&#x200B;的種子位址。
 
 ## 建立傳遞 {#step-1---creating-a-delivery}
 
-建立傳送的詳細步驟載於 [建立電子郵件傳遞](creating-an-email-delivery.md) 區段。
+建立傳遞的步驟在[建立電子郵件傳遞](creating-an-email-delivery.md)區段中詳細說明。
 
 在此範例中，傳遞管理員已建立電子報。
 
@@ -52,19 +52,19 @@ ht-degree: 2%
 
 此分項清單可讓使用者指定其客戶最喜愛的文學型別。
 
-對於可在種子地址中檢視的此資料結構修改 **輸入表單**，您必須加以更新。 請參閱 [更新輸入表單](use-case-selecting-seed-addresses-on-criteria.md#updating-the-input-form) 區段。
+若要讓此資料結構描述修改可在種子地址&#x200B;**輸入表單**&#x200B;中檢視，您必須更新它。 請參閱[更新輸入表單](use-case-selecting-seed-addresses-on-criteria.md#updating-the-input-form)區段。
 
 ## 設定個人化 {#configuring-personalization}
 
 1. 開啟傳遞。
 
-   在此範例中，傳遞有兩個個人化欄位：收件者的 **名字** 以及收件者的 **最喜歡的文學型別**.
+   在此範例中，傳遞有兩個個人化欄位：收件者的&#x200B;**名字**&#x200B;和收件者的&#x200B;**最喜愛的文學型別**。
 
    ![](assets/dlv_seeds_usecase_25.png)
 
-1. 設定您的傳遞清單和種子地址。 請參閱 [識別目標母體](steps-defining-the-target-population.md).
+1. 設定您的傳遞清單和種子地址。 請參閱[識別目標母體](steps-defining-the-target-population.md)。
 
-   在此範例中，使用者會選取 **最喜歡的文學型別** 是科幻小說的主要目標人群。
+   在此範例中，使用者會選取&#x200B;**最喜愛的文學型別**&#x200B;為Sci-Fi的使用者作為主要目標母體。
 
    ![](assets/dlv_seeds_usecase_26.png)
 
@@ -74,18 +74,18 @@ ht-degree: 2%
 
    >[!NOTE]
    >
-   >如需詳細資訊，請參閱 **[!UICONTROL Edit the dynamic condition...]** 連結，請參閱 [使用案例：依條件選取種子地址](use-case-selecting-seed-addresses-on-criteria.md).
+   >如需&#x200B;**[!UICONTROL Edit the dynamic condition...]**&#x200B;連結的詳細資訊，請參閱[使用案例：選取條件上的種子地址](use-case-selecting-seed-addresses-on-criteria.md)。
 
-1. 按一下 **[!UICONTROL Preview]** 索引標籤，然後選取種子地址以測試個人化。
+1. 按一下「**[!UICONTROL Preview]**」標籤，然後選取種子地址以測試個人化。
 
    ![](assets/dlv_seeds_usecase_28.png)
 
    您可以看到其中一個個人化欄位是空的。 由於種子地址沒有此欄位的資料，因此HTML內容預覽無法顯示值。
 
-   執行隨機替代欄位 **傳送時**.
+   在傳遞&#x200B;**時**&#x200B;執行隨機替代欄位。
 
 1. 按一下 **[!UICONTROL Send]** 按鈕。
-1. 分析您的傳遞，然後 **確認傳遞**.
+1. 分析您的傳遞，然後&#x200B;**確認傳遞**。
 
    種子地址會在收件匣中接收傳遞。
 

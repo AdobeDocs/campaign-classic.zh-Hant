@@ -27,7 +27,7 @@ ht-degree: 3%
 
    ![](assets/offer_delivery_example_001.png)
 
-1. 編輯電子郵件傳遞，然後按一下 **[!UICONTROL Offers]** 圖示。
+1. 編輯電子郵件傳遞並按一下&#x200B;**[!UICONTROL Offers]**&#x200B;圖示。
 
    ![](assets/offer_delivery_example_002.png)
 
@@ -55,18 +55,18 @@ ht-degree: 3%
 
    ![](assets/offer_delivery_example_008.png)
 
-1. 按一下 **[!UICONTROL Preview]** 若要在傳送中預覽您的優惠，請選取收件者，以便在他們收到優惠時預覽優惠。
+1. 按一下&#x200B;**[!UICONTROL Preview]**&#x200B;以預覽傳遞中的優惠，然後選取收件者以預覽他們將會收到的優惠。
 
    ![](assets/offer_delivery_example_009.png)
 
 1. 儲存您的傳送並啟動目標定位工作流程。
-1. 開啟您的傳遞，然後按一下 **[!UICONTROL Audit]** 傳遞的索引標籤：您可以看到優惠方案引擎已選取要從目錄中的各種優惠方案進行的主張。
+1. 開啟您的傳遞，然後按一下傳遞的&#x200B;**[!UICONTROL Audit]**&#x200B;標籤：您可以看到優惠方案引擎已選取要從目錄中的各種優惠方案提出的主張。
 
    ![](assets/offer_delivery_example_010.png)
 
 ## 執行優惠方案模擬 {#perform-an-offer-simulation}
 
-1. 在 **[!UICONTROL Profiles and Targets]** 索引標籤，按一下 **[!UICONTROL Simulations]** 連結，然後按一下 **[!UICONTROL Create]** 按鈕。
+1. 在&#x200B;**[!UICONTROL Profiles and Targets]**&#x200B;索引標籤中，按一下&#x200B;**[!UICONTROL Simulations]**&#x200B;連結，然後按一下&#x200B;**[!UICONTROL Create]**&#x200B;按鈕。
 
    ![](assets/offer_simulation_001.png)
 
@@ -78,7 +78,7 @@ ht-degree: 3%
 
    ![](assets/offer_simulation_example_003.png)
 
-1. 按一下 **[!UICONTROL Edit]** 標籤，然後 **[!UICONTROL Scope]**.
+1. 按一下「**[!UICONTROL Edit]**」標籤，然後按&#x200B;**[!UICONTROL Scope]**。
 
    ![](assets/offer_simulation_example_004.png)
 
@@ -93,7 +93,7 @@ ht-degree: 3%
 1. 輸入有效日期。 您至少必須輸入開始日期。 這可讓優惠方案引擎篩選優惠方案，並選擇在指定日期有效的優惠方案。
 1. 如有必要，請指定一或多個主題，將選件數量限製為設定中包含此關鍵字的選件數量。
 
-   在我們的範例中， **旅遊** 類別包含兩個子類別，子類別有兩個獨立的主題。 我們想使用對優惠方案執行模擬 **客戶>1年** 主題。
+   在我們的範例中，**旅遊**&#x200B;類別包含兩個子類別和兩個不同的主題。 我們想要針對具有&#x200B;**客戶>1年**&#x200B;主題的優惠方案執行模擬。
 
    ![](assets/offer_simulation_example_007.png)
 
@@ -107,21 +107,21 @@ ht-degree: 3%
 
    ![](assets/offer_simulation_example_009.png)
 
-1. 儲存您的設定，然後按一下 **[!UICONTROL Start]** 在 **[!UICONTROL Dashboard]** 標籤以執行模擬。
+1. 儲存您的設定，然後按一下「**[!UICONTROL Dashboard]**」標籤中的「**[!UICONTROL Start]**」以執行模擬。
 
    ![](assets/offer_simulation_example_010.png)
 
-1. 模擬完成後，請查閱 **[!UICONTROL Results]** 以取得每個優惠方案主張的詳細劃分。
+1. 模擬完成後，請參閱&#x200B;**[!UICONTROL Results]**&#x200B;以取得每個選件的主張詳細劃分。
 
    在我們的範例中，優惠方案引擎是根據3個主張進行優惠方案劃分。
 
    ![](assets/offer_simulation_example_011.png)
 
-1. 顯示 **[!UICONTROL Breakdown of offers by rank]** 以檢視優惠方案引擎選取的優惠方案清單。
+1. 顯示&#x200B;**[!UICONTROL Breakdown of offers by rank]**&#x200B;以檢視優惠方案引擎所選取的優惠方案清單。
 
    ![](assets/offer_simulation_example_012.png)
 
-1. 如有必要，您可以變更範圍設定，然後按一下以再次執行模擬 **[!UICONTROL Start simulation]**.
+1. 如有需要，您可以按一下&#x200B;**[!UICONTROL Start simulation]**&#x200B;來變更範圍設定並重新執行模擬。
 
    ![](assets/offer_simulation_example_010.png)
 

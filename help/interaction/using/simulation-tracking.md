@@ -19,13 +19,13 @@ ht-degree: 9%
 
 
 
-模擬完成後，您可以透過 **[!UICONTROL Results]** 標籤，此標籤會新增至模擬視窗和 **[!UICONTROL Breakdown of offers by rank]** 報表，可在模擬控制面板中取得。
+模擬完成後，您可以透過新增到模擬視窗的&#x200B;**[!UICONTROL Results]**&#x200B;索引標籤和&#x200B;**[!UICONTROL Breakdown of offers by rank]**&#x200B;報告（可在模擬儀表板中取得）來分析其結果。
 
 模擬結果包含每個排名和每個收件者的主張劃分。 也會考慮報表座標軸，並會顯示在此標籤中。
 
 您可以儲存這些結果，並視需要透過建立結果的描述性分析來匯出這些結果。 要執行此操作，請在結果視窗中按一下適當的連結。
 
-請參閱 [本節](../../reporting/using/about-descriptive-analysis.md) 以取得描述性分析精靈的詳細資訊。
+如需描述性分析精靈的詳細資訊，請參閱[本節](../../reporting/using/about-descriptive-analysis.md)。
 
 ![](assets/offer_simulation_012.png)
 

@@ -20,11 +20,11 @@ ht-degree: 14%
 
 Adobe Campaign檔案總管可透過工具列圖示存取。 使用工具列圖示，您可以存取 Adobe Campaign、所有 Adobe Campaign 功能、設定畫面以及部分平台元素的更詳細視圖。
 
-此 **[!UICONTROL Explorer]** 工作區分為三個區域：
+**[!UICONTROL Explorer]**&#x200B;工作區分為三個區域：
 
 ![](assets/s_ncs_user_navigation.png)
 
-**1 — 樹狀**：您可以個人化樹狀結構的內容（新增、移動或刪除節點）。 此程式僅供專家使用者使用。 有關詳細資訊，請參閱  [本節](#about-navigation-hierarchy).)。
+**1 — 樹狀結構**：您可以個人化樹狀結構的內容（新增、移動或刪除節點）。 此程式僅供專家使用者使用。 如需詳細資訊，請參閱[本節](#about-navigation-hierarchy)。
 
 **2 — 清單**：您可以篩選此清單、執行搜尋、新增資訊或排序資料。 [了解更多](adobe-campaign-ui-lists.md)。
 
@@ -38,13 +38,13 @@ Adobe Campaign檔案總管可透過工具列圖示存取。 使用工具列圖�
 
 ![](assets/d_ncs_integration_navigation.png)
 
-若要將新資料夾新增至樹狀結構，請在分支中要插入資料夾的資料夾上按一下滑鼠右鍵，然後選取 **[!UICONTROL Add new folder]** . 在快捷選單中，選取要建立的檔案型別。
+若要將新資料夾新增至樹狀結構，請在您要插入資料夾的分支中以滑鼠右鍵按一下該資料夾，然後選取「**[!UICONTROL Add new folder]**」。 在快捷選單中，選取要建立的檔案型別。
 
 ![](assets/d_ncs_integration_navigation_create.png)
 
-瞭解如何設定Campaign導覽樹狀結構 [在本節中](../../configuration/using/configuration.md).
+在本節](../../configuration/using/configuration.md)中瞭解如何設定Campaign導覽樹狀結構[。
 
-瞭解如何設定檔案夾的許可權 [在本節中](access-management-folders.md).
+在本節](access-management-folders.md)中瞭解如何設定資料夾[的許可權。
 
 ## 資料夾設定最佳實務
 
@@ -65,7 +65,7 @@ Adobe Campaign檔案總管可透過工具列圖示存取。 使用工具列圖�
    * A1 — 匯入收件者，從10:00開始；
    * A2 — 匯入票證，11:00開始。
 
-* **建立範本以供使用者開始使用**
+* **建立範本讓使用者開始使用**
 
   建立使用者專用的傳遞範本、工作流程範本、行銷活動範本。 此結構可節省時間，並確保為每個使用者使用正確的傳遞對應和型別。
 
@@ -77,10 +77,10 @@ Adobe Campaign檔案總管可透過工具列圖示存取。 使用工具列圖�
 >
 >Adobe Campaign不支援1600x900畫素以下的解析度。
 
-在 **[!UICONTROL Explorer]** 工作區，如果 **[!UICONTROL Details]** 區域似乎被截斷，請使用區域頂端的箭頭將其展開，或按一下 **[!UICONTROL Enlarge]** 按鈕。
+在&#x200B;**[!UICONTROL Explorer]**&#x200B;工作區中，如果&#x200B;**[!UICONTROL Details]**&#x200B;區域的某些部分似乎遭到截斷，請使用區域頂端的箭頭將其展開，或按一下&#x200B;**[!UICONTROL Enlarge]**&#x200B;按鈕。
 
 ![](assets/s_ncs_user_resolution.png)
 
 ## 瀏覽及自訂清單 {#browsing-lists}
 
-瞭解如何瀏覽、管理和自訂清單 [在本節中](adobe-campaign-ui-lists.md).
+在本節](adobe-campaign-ui-lists.md)中瞭解如何瀏覽、管理及自訂清單[。

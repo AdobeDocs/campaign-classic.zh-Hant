@@ -20,16 +20,16 @@ ht-degree: 13%
 
 未轉送追蹤記錄的原因有好幾種。 建議您檢視下列資訊：
 
-* **此**&#x200B;追蹤&#x200B;**工作流程有錯誤？**
+* ****&#x200B;追蹤&#x200B;**工作流程是否有錯誤？**
 
-  請參閱 [監控技術工作流程](../../workflow/using/monitoring-technical-workflows.md).
+  請參閱[監視技術工作流程](../../workflow/using/monitoring-technical-workflows.md)。
 
   ![](assets/tracking_scheduled_task.png)
 
-* **為模組** trackinglogd **是否正在伺服器上執行？**
+* **模組** trackinglogd **是否正在伺服器上執行？**
 
-  請參閱 [記錄檔](../../production/using/log-files.md).
+  請參閱[記錄檔](../../production/using/log-files.md)。
 
-* **有變更嗎？**
+* **已進行變更嗎？**
 
   使用追蹤別名時，它們可能會觸發與伺服器的連線中斷。

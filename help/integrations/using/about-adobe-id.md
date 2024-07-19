@@ -16,9 +16,9 @@ ht-degree: 15%
 
 # 關於Adobe ID {#about-adobe-id}
 
-AdobeIdentity Management系統(IMS)可協助管理員建立和管理使用者對應用計畫和服務的存取權。 如需不同型別的AdobeID的詳細資訊，請參閱 [此頁面](https://helpx.adobe.com/tw/enterprise/using/identity.html).
+AdobeIdentity Management系統(IMS)可協助管理員建立和管理使用者對應用計畫和服務的存取權。 如需不同型別的Adobe識別碼的詳細資訊，請參閱[此頁面](https://helpx.adobe.com/tw/enterprise/using/identity.html)。
 
-Campaign使用者可使用其Adobe ID連線至Adobe Campaign主控台，而非使用 [原生使用者/密碼驗證](../../platform/using/access-management-operators.md). 此實作提供下列優點：
+Campaign使用者可以使用其Adobe ID連線至Adobe Campaign主控台，而不使用[原生使用者/密碼驗證](../../platform/using/access-management-operators.md)。 此實作提供下列優點：
 
 * 所有 Experience Cloud 解決方案都可以使用相同的 ID。
 * 透過不同的整合使用Adobe Campaign時，會保持連線。
@@ -29,7 +29,7 @@ Campaign使用者可使用其Adobe ID連線至Adobe Campaign主控台，而非�
 >
 > 請注意，在Campaign v8中，不允許連線使用者/密碼（亦稱為原生驗證）。 **Adobe建議從Campaign v7.3.5開始執行此移轉，以便能夠順利移轉至Campaign v8。**
 >
->瞭解如何在中移轉至Adobe IMS [本節](../../technotes/using/ac-ims.md).
+>在[本節](../../technotes/using/ac-ims.md)中瞭解如何移轉至Adobe IMS。
 >
 
 
@@ -52,4 +52,4 @@ Campaign使用者可使用其Adobe ID連線至Adobe Campaign主控台，而非�
 |---|---|
 | [設定IMS](../../integrations/using/configuring-ims.md) | [Experience Cloud常見問題集](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/faq.html) |
 | [實作IMS](../../integrations/using/implementing-ims.md) | [存取管理](../../platform/using/access-management.md) |
-| [ims疑難排解](../../integrations/using/ims-troubleshooting.md) | [安裝Campaign套件](../../installation/using/installing-campaign-standard-packages.md) |
+| [IMS疑難排解](../../integrations/using/ims-troubleshooting.md) | [正在安裝Campaign套件](../../installation/using/installing-campaign-standard-packages.md) |

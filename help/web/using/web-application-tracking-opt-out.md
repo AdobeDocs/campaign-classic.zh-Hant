@@ -22,7 +22,7 @@ Adobe Campaign可讓您停止追蹤選擇退出透過Cookie或網路信標進行
 
 >[!NOTE]
 >
->當指令碼一律遵循中所述的准則時， [安全性與隱私權檢查清單](https://helpx.adobe.com/campaign/kb/acc-security.html#dev).
+>當指令碼一律遵循[安全性與隱私權檢查清單](https://helpx.adobe.com/campaign/kb/acc-security.html#dev)中說明的准則時。
 
 ## 設定橫幅 {#configuring-the-banner-}
 
@@ -34,7 +34,7 @@ Adobe Campaign隨附範例橫幅，您必須根據自己的需求進行調整。
 >
 >若要建立自己的橫幅，您必須個人化現成的橫幅。
 
-若要啟用橫幅，您必須設定Web應用程式屬性。 請參閱 [設計網頁應用程式](designing-a-web-application.md) 區段。
+若要啟用橫幅，您必須設定Web應用程式屬性。 請參閱[設計Web應用程式](designing-a-web-application.md)區段。
 
 如果網路追蹤已啟用，您可以：
 
@@ -63,7 +63,7 @@ Adobe Campaign隨附範例橫幅，您必須根據自己的需求進行調整。
       
 ```
 
-您必須取代 **請在此插入您的訊息** 包含您追蹤資訊的區塊。 此取代應在與選擇退出橫幅相關的新個人化區塊中執行。
+您必須將&#x200B;**請在此插入您的訊息**，並以包含追蹤資訊的區塊取代。 此取代應在與選擇退出橫幅相關的新個人化區塊中執行。
 
 橫幅會以特定CSS傳遞。 不過，您可在建立和設定網頁時覆寫樣式。 請參見[此頁面](content-editor-interface.md)。
 
@@ -71,7 +71,7 @@ Adobe Campaign隨附範例橫幅，您必須根據自己的需求進行調整。
 
 Adobe Campaign隨附的API可讓您管理Cookie值並擷取使用者偏好設定。
 
-Cookie名稱為 **Acoptout**. 常見的值包括：
+Cookie名稱為&#x200B;**apottout**。 常見的值包括：
 
 * 0：使用者已允許網頁追蹤（預設值）
 * 1：使用者已禁止網路追蹤
@@ -79,20 +79,20 @@ Cookie名稱為 **Acoptout**. 常見的值包括：
 
 自訂橫幅的可用使用者端API為：
 
-* **NL.ClientWebTracking.allow()**：設定選擇退出Cookie值以允許Web追蹤。 預設允許網頁追蹤。
-* **NL.ClientWebTracking.forbid()**：設定選擇退出Cookie值以禁止網路追蹤。 網路追蹤需要禁止使用者輸入。
-* **NL.ClientWebTracking.closeOptOutBanner(bannerDomElt)**：在使用者按一下「接受」或「拒絕」按鈕後，關閉選擇退出Cookie橫幅。 （在點按事件反升階段期間）
+* **NL.ClientWebTracking.allow()**：設定選擇退出Cookie值以允許網頁追蹤。 預設允許網頁追蹤。
+* **NL.ClientWebTracking.forbid()**：設定選擇退出Cookie值以禁止Web追蹤。 網路追蹤需要禁止使用者輸入。
+* **NL.ClientWebTracking.closeOptOutBanner(bannerDomElt)**：在使用者按一下[接受]或[拒絕]按鈕後，關閉選擇退出Cookie橫幅。 （在點按事件反升階段期間）
 
-  bannerDomElt {DOMElement} 需要移除之Cookie橫幅的根DOM元素
+  bannerDomElt {DOMElement}需要移除之Cookie橫幅的根DOM元素
 
 * **NL.ClientWebTracking.hasUserPrefs()**：如果使用者已選擇其網頁追蹤的偏好設定，則傳回true。
 * **NL.ClientWebTracking.getUserPrefs()**：傳回定義使用者偏好設定的選擇退出Cookie值。
 
 如果您必須撰寫JSSP，則可使用伺服器端API：
 
-* **NL.ServerWebTracking.generateOptOutBanner(escapeJs)**：產生選擇退出橫幅的標示，以插入JSSP頁面
+* **NL.ServerWebTracking.generateOptOutBanner(escapeJs)**：產生選擇退出橫幅的標籤，以插入JSSP頁面
 
-  **escapeJs {Boolean}**：當產生的標籤需要逸出，才能在JavaScript中使用時，傳回true。
+  **escapeJs {Boolean}**：當產生的標籤需要逸出才能在JavaScript中使用時，則為true。
 
   它會傳回需要在頁面中列印的選擇退出橫幅標示HTML。
 
@@ -108,7 +108,7 @@ Cookie名稱為 **Acoptout**. 常見的值包括：
 
   將選擇退出橫幅插入至JSSP頁面，以轉譯該橫幅的標籤。 其呼叫方式與Jssp中的呼叫方式相同，介於&lt;% %>之間
 
-  **escapeJs {Boolean}**：當產生的標籤需要逸出以便在JavaScript中使用時為true
+  **escapeJs {Boolean}**：當產生的標籤需要逸出才能在JavaScript中使用時，會傳回true
 
 JSSP範例：
 

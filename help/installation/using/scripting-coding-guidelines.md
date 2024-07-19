@@ -20,7 +20,7 @@ ht-degree: 4%
 
 ## 指令碼
 
-如需詳細資訊，請參閱 [Campaign JSAPI檔案](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hant).
+如需詳細資訊，請參閱[Campaign JSAPI檔案](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hant)。
 
 如果您使用工作流程、網頁應用程式、jssp編寫指令碼，請遵循以下最佳實務：
 
@@ -55,9 +55,9 @@ ht-degree: 4%
 
 >[!IMPORTANT]
 >
->如果您使用的組建版本早於8140，則 **xtkpassunknowledsqlfunctionsToRDBMS** 選項可設為&#39;1&#39;。 如果要保護資料庫的安全，請刪除此選項（或將它設定為&#39;0&#39;）。
+>如果您使用的組建版本早於8140，則&#x200B;**XtkPassUnknownSQLFunctionsToRDBMS**&#x200B;選項可能會設為&#39;1&#39;。 如果要保護資料庫的安全，請刪除此選項（或將它設定為&#39;0&#39;）。
 
-如果您使用使用者輸入在查詢或SQL陳述式中建置篩選器，您必須一律將其逸出(請參閱 [Campaign JSAPI檔案](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hant)  — 資料保護：逸出功能)。 這些函式包括：
+如果您使用使用者輸入在查詢或SQL陳述式中建立篩選器，您必須一律將其逸出（請參閱[Campaign JSAPI檔案](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hant) — 資料保護：逸出函式）。 這些函式包括：
 
 * NL.XML.escape(data)
 * NL.SQL.escape(data)
@@ -77,7 +77,7 @@ ht-degree: 4%
 
 除了資料夾式安全性模型之外，您還可以使用已命名的許可權來限制操作員動作：
 
-* 您可以新增一些系統篩選器(sysFilter)，以防止讀取/寫入您的資料(請參閱 [此頁面](../../configuration/using/filtering-schemas.md))。
+* 您可以新增一些系統篩選器(sysFilter)，以防止讀取/寫入您的資料（請參閱[此頁面](../../configuration/using/filtering-schemas.md)）。
 
   ```
   <sysFilter name="writeAccess">    
@@ -85,7 +85,7 @@ ht-degree: 4%
   </sysFilter>
   ```
 
-* 您也可以保護結構描述中定義的某些動作（SOAP方法）。 只需設定存取屬性，並將對應的已命名許可權設為值即可。
+* 您也可以保護結構描述中定義的某些動作(SOAP方法)。 只需設定存取屬性，並將對應的已命名許可權設為值即可。
 
   ```
   <method name="grantVIPAccess" access="myNewRole">
@@ -105,23 +105,23 @@ ht-degree: 4%
 
 如果您需要根據運運算元存取層級保護機密資料（結構描述的一部分），請勿在表單定義（enabledIf/visibleIf條件）中隱藏這些資料。
 
-熒幕會載入完整圖元，您也可以在欄定義中顯示它們。 要執行此操作，您必須建立溢位表格。 參考 [此頁面](../../configuration/using/examples-of-schemas-edition.md#overflow-table).
+熒幕會載入完整圖元，您也可以在欄定義中顯示它們。 要執行此操作，您必須建立溢位表格。 請參閱[此頁面](../../configuration/using/examples-of-schemas-edition.md#overflow-table)。
 
 ## 在網頁應用程式中新增字幕
 
 在公開登陸頁面/訂閱頁面中新增驗證碼是建議的做法。 不幸的是，在DCE （數位內容編輯器）頁面中新增驗證碼並不容易。 我們將說明如何新增v5驗證碼或Google reCAPTCHA。
 
-在DCE中新增驗證碼的一般方法是建立個人化區塊，以便輕鬆將其納入頁面內容中。 您必須新增 **指令碼** 活動和 **測試**.
+在DCE中新增驗證碼的一般方法是建立個人化區塊，以便輕鬆將其納入頁面內容中。 您必須新增&#x200B;**指令碼**&#x200B;活動和&#x200B;**測試**。
 
 ### 個人化區塊
 
-1. 前往 **[!UICONTROL Resources]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Personalization blocks]** 並建立一個新的。
+1. 前往「**[!UICONTROL Resources]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Personalization blocks]**」並建立新的檔案。
 
-1. 使用 **[!UICONTROL Web application]** 內容型別和檢查 **[!UICONTROL Visible in the customization menus]**.
+1. 使用&#x200B;**[!UICONTROL Web application]**&#x200B;內容型別並檢查&#x200B;**[!UICONTROL Visible in the customization menus]**。
 
    如需詳細資訊，請參閱[本頁面](../../delivery/using/personalization-blocks.md)。
 
-   以下是的範例 **Campaign驗證碼**：
+   以下是&#x200B;**行銷活動驗證碼**&#x200B;的範例：
 
    ```javascript
    <%
@@ -148,27 +148,27 @@ ht-degree: 4%
 
      `<div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>`
 
-   您應該能夠停用驗證按鈕，但由於我們沒有任何標準按鈕/連結，所以最好在HTML中自行操作。 若要瞭解其操作方式，請參閱 [此頁面](https://developers.google.com/recaptcha/).
+   您應該能夠停用驗證按鈕，但由於我們沒有任何標準按鈕/連結，所以最好在HTML中自行操作。 若要瞭解如何執行此動作，請參閱[此頁面](https://developers.google.com/recaptcha/)。
 
 ### 更新您的Web應用程式
 
-1. 存取網頁應用程式的屬性，以新增名為的布林值變數 **驗證碼有效**.
+1. 存取網頁應用程式的屬性，以新增名為&#x200B;**captchaValid**&#x200B;的布林值變數。
 
    ![](assets/scripting-captcha.png)
 
-1. 最後一頁和之間 **[!UICONTROL Storage]** 活動，新增 **[!UICONTROL Script]** 和 **[!UICONTROL Test]**.
+1. 在最後一頁與&#x200B;**[!UICONTROL Storage]**&#x200B;活動之間，新增&#x200B;**[!UICONTROL Script]**&#x200B;與&#x200B;**[!UICONTROL Test]**。
 
-   插入分支 **[!UICONTROL True]** 至 **[!UICONTROL Storage]** 另一個連線至將具有驗證碼的頁面。
+   將分支&#x200B;**[!UICONTROL True]**&#x200B;插入&#x200B;**[!UICONTROL Storage]**，並將另一個分支插入具有驗證碼的頁面。
 
    ![](assets/scripting-captcha2.png)
 
-1. 使用編輯分支的條件True `"[vars/captchaValid]"` 等於True。
+1. 編輯分支True的條件，其中`"[vars/captchaValid]"`等於True。
 
    ![](assets/scripting-captcha3.png)
 
-1. 編輯 **[!UICONTROL Script]** 活動。 內容將取決於所選的驗證碼引擎。
+1. 編輯&#x200B;**[!UICONTROL Script]**&#x200B;活動。 內容將取決於所選的驗證碼引擎。
 
-1. 最後，您可以在頁面中新增個人化區塊：請參閱 [此頁面](../../web/using/editing-content.md).
+1. 最後，您可以在頁面中新增個人化區塊：請參閱[此頁面](../../web/using/editing-content.md)。
 
    ![](assets/scripting-captcha4.png)
 
@@ -176,7 +176,7 @@ ht-degree: 4%
 
 >[!IMPORTANT]
 >
->若為reCAPTCHA整合，您必須在HTML中新增使用者端JavaScript (在 `<head>...</head>`)：
+>若為reCAPTCHA整合，您必須在HTML中新增使用者端JavaScript （在`<head>...</head>`中）：
 >
 >`<script src="https://www.google.com/recaptcha/api.js" async defer></script>`
 
@@ -200,7 +200,7 @@ else
 
 ### Google recaptcha
 
-請參閱 [正式檔案](https://developers.google.com/recaptcha/docs/verify).
+請參閱[正式檔案](https://developers.google.com/recaptcha/docs/verify)。
 
 ```javascript
 ctx.vars.captchaValid = false

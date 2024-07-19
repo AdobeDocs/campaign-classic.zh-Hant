@@ -17,10 +17,10 @@ ht-degree: 4%
 
 ## 建立傳遞 {#creating-the-delivery}
 
-您可以透過概覽或透過以下方式建立傳遞： **[!UICONTROL Create > Delivery]** 功能表。
+您可以透過概觀或&#x200B;**[!UICONTROL Create > Delivery]**&#x200B;功能表建立傳遞。
 
 
-若要建立傳遞，請按一下 **[!UICONTROL Create]** 在傳遞清單上方。 當您建立新傳送時，必須指出所使用的傳送通道。 若要這麼做，請從的下拉式清單中選取適當的傳遞範本 **[!UICONTROL Delivery template]** 欄位。
+若要建立傳遞，請按一下傳遞清單上方的&#x200B;**[!UICONTROL Create]**。 當您建立新傳送時，必須指出所使用的傳送通道。 若要這麼做，請從&#x200B;**[!UICONTROL Delivery template]**&#x200B;欄位的下拉式清單中選取適當的傳遞範本。
 
 ![](assets/s_ncs_user_wizard_email01_1.png)
 
@@ -30,22 +30,22 @@ ht-degree: 4%
 >
 >清單中提供的管道取決於您的授權合約。
 
-您可以建立新的傳遞範本，以預先設定特定引數以符合您的需求。 有關範本的詳細資訊，請參閱 [本節](about-templates.md).
+您可以建立新的傳遞範本，以預先設定特定引數以符合您的需求。 如需範本的詳細資訊，請參閱[本節](about-templates.md)。
 
 ## 識別傳遞 {#identifying-the-delivery}
 
 您需要完成引數以識別傳遞。 操作步驟：
 
-1. 在中輸入傳遞的名稱 **[!UICONTROL Label]** 欄位。
+1. 在&#x200B;**[!UICONTROL Label]**&#x200B;欄位中輸入傳遞的名稱。
 
    您也可以將傳遞代碼指派給傳遞。 傳遞的名稱及其程式碼會顯示在傳遞清單中，但收件者無法看見。
 
-1. 在中新增說明 **[!UICONTROL Description]** 欄位。
+1. 在&#x200B;**[!UICONTROL Description]**&#x200B;欄位中新增說明。
 1. 在相關欄位中選取傳遞性質。 此資訊對於傳送追蹤很有用：您可以在傳送清單中根據此條件進行篩選，或使用此選擇條件建立查詢。
 
    ![](assets/s_ncs_user_email_del_nature.png)
 
-1. 按一下 **[!UICONTROL Continue]** 以確認此資訊並顯示訊息組態視窗。
+1. 按一下&#x200B;**[!UICONTROL Continue]**&#x200B;以確認此資訊並顯示訊息設定視窗。
 
 傳遞內容已準備好進行設定。 每個管道都有專屬的傳遞內容定義。 如需詳細資訊，請參閱專屬區段：
 

@@ -23,27 +23,27 @@ ht-degree: 0%
 
 Adobe Campaign資料庫和現有清單的資料可以使用兩個專用活動進行更新：
 
-* 此 **[!UICONTROL List update]** 活動可讓您將工作表儲存在資料清單中。
+* **[!UICONTROL List update]**&#x200B;活動可讓您將工作表儲存在資料清單中。
 
   您可以選取或建立現有清單。 在這種情況下，將計算名稱，並可能計算記錄資料夾。
 
   ![](assets/s_user_create_list.png)
 
-  請參閱 [清單更新](list-update.md).
+  請參閱[清單更新](list-update.md)。
 
-* 此 **[!UICONTROL Update data]** 活動會大量更新資料庫中的欄位。
+* **[!UICONTROL Update data]**&#x200B;活動會大量更新資料庫中的欄位。
 
-  有關詳細資訊，請參閱 [更新資料](update-data.md).
+  如需詳細資訊，請參閱[更新資料](update-data.md)。
 
 ### 訂閱/取消訂閱管理 {#subscription-unsubscription-management}
 
-若要瞭解如何透過工作流程為收件者訂閱及取消訂閱資訊服務，請參閱 [訂閱服務](subscription-services.md).
+若要瞭解透過工作流程訂閱及取消訂閱收件者資訊服務的相關資訊，請參閱[訂閱服務](subscription-services.md)。
 
 ## 透過工作流程傳送 {#sending-via-a-workflow}
 
 ### 傳遞活動 {#delivery-activity}
 
-有關傳送活動的詳情，請參閱 [傳遞](delivery.md).
+傳遞活動在[傳遞](delivery.md)中有詳細說明。
 
 ### 豐富化及目標定位傳遞 {#enriching-and-targeting-deliveries}
 
@@ -57,12 +57,12 @@ Adobe Campaign資料庫和現有清單的資料可以使用兩個專用活動進
 
 ![](assets/s_advuser_using_additional_data.png)
 
-工作流程表格中所包含的資料由其名稱識別：該表格一律由 **targetdata** 連結。 有關詳細資訊，請參閱 [目標資料](data-life-cycle.md#target-data).
+工作流程表格中所包含的資料是以其名稱識別：它一律由&#x200B;**targetData**&#x200B;連結組成。 如需詳細資訊，請參閱[目標資料](data-life-cycle.md#target-data)。
 
 在電子郵件傳送的框架中，個人化欄位也可以使用目標工作流程階段中執行之目標擴充功能的資料，如下列範例所示：
 
 ![](assets/s_advuser_add_data_email.png)
 
-如果在目標定位活動中指定了區段代碼，則會將其新增到工作流程表格的特定欄，並會與個人化欄位一起提供。 若要顯示所有個人化欄位，請按一下 **[!UICONTROL Target extension > Other...]** 可透過個人化按鈕存取的連結。
+如果在目標定位活動中指定了區段代碼，則會將其新增到工作流程表格的特定欄，並會與個人化欄位一起提供。 若要顯示所有個人化欄位，請按一下可透過個人化按鈕存取的&#x200B;**[!UICONTROL Target extension > Other...]**&#x200B;連結。
 
 ![](assets/s_advuser_segment_code_select.png)

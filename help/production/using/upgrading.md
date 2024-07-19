@@ -19,13 +19,13 @@ ht-degree: 1%
 
 
 
-在開始升級程式之前，請先決定並確認要升級至的Adobe Campaign版本，並參閱 [發行說明](../../rn/using/latest-release.md) .
+開始升級程式之前，請先決定並確認要升級至哪個Adobe Campaign版本，並參閱[發行說明](../../rn/using/latest-release.md) 。
 
 >[!IMPORTANT]
 >
 >* Adobe強烈建議您在更新前先對每個執行個體進行資料庫備份。 如需詳細資訊，請參閱[本區段](../../production/using/backup.md)。
 >* 若要執行升級，請確定您有存取執行個體和記錄的能力和許可權。
->* 讀出 [本節](../../installation/using/general-architecture.md) 和 [組建版本升級](https://helpx.adobe.com/tw/campaign/kb/acc-build-upgrade.html) 開始前的章節。
+>* 開始前請先閱讀[此章節](../../installation/using/general-architecture.md)和[組建版本升級](https://helpx.adobe.com/tw/campaign/kb/acc-build-upgrade.html)章節。
 >
 
 ## Windows {#in-windows}
@@ -35,9 +35,9 @@ ht-degree: 1%
 * [關閉服務](#shut-down-services)，
 * [升級應用程式伺服器](#upgrade-the-adobe-campaign-server-application)，
 * [同步資源](#synchronize-resources)，
-* [重新啟動服務](#restart-services).
+* [重新啟動服務](#restart-services)。
 
-若要瞭解如何更新使用者端主控台，請參閱 [本節](../../installation/using/client-console-availability-for-windows.md).
+若要瞭解如何更新使用者端主控台，請參閱[本節](../../installation/using/client-console-availability-for-windows.md)。
 
 ### 關閉服務 {#shut-down-services}
 
@@ -53,9 +53,9 @@ ht-degree: 1%
 
    >[!IMPORTANT]
    >
-   >您也必須確定重新導向伺服器(webmdl)已停止，以便 **nlsrvmod.dll** IIS使用的檔案可以用新版本取代。
+   >您也必須確定重新導向伺服器(webmdl)已停止，以便IIS使用的&#x200B;**nlsrvmod.dll**&#x200B;檔案可以取代為新版本。
 
-1. 請執行 **nlserver pdump** 命令。 應該會出現下列內容：
+1. 執行&#x200B;**nlserver pdump**&#x200B;命令，檢查沒有作用中的工作。 應該會出現下列內容：
 
    ```sql
    C:<installation path>Adobe Campaign v7bin>nlserver pdump
@@ -69,17 +69,17 @@ ht-degree: 1%
 
 若要執行升級檔案，請套用下列步驟：
 
-1. 執行 **setup.exe**.
+1. 執行&#x200B;**setup.exe**。
 
-   若要下載此檔案，請連線至 [軟體發佈入口網站](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) 使用您的使用者認證。 進一步瞭解中的軟體發佈 [此頁面](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hant).
+   若要下載此檔案，請使用您的使用者認證連線至[軟體發佈入口網站](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)。 在[此頁面](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hant)中進一步瞭解軟體發佈。
 
-1. 選取安裝模式：選擇 **[!UICONTROL Update or repair]**
-1. 按一下 **[!UICONTROL Next]** .
-1. 按一下 **[!UICONTROL Finish]** .
+1. 選取安裝模式：選擇&#x200B;**[!UICONTROL Update or repair]**
+1. 按一下「**[!UICONTROL Next]**」。
+1. 按一下「**[!UICONTROL Finish]**」。
 
    然後，安裝程式會複製新檔案。
 
-1. 作業完成後，按一下 **[!UICONTROL Finish]** .
+1. 作業完成後，按一下「**[!UICONTROL Finish]**」。
 
 ### 同步資源 {#synchronize-resources}
 
@@ -95,9 +95,9 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->此操作只應執行一次，且僅應在(**nlserver web**)應用程式伺服器。
+>此操作只應執行一次，而且只應在(**nlserver web**)應用程式伺服器上執行。
 
-然後檢查同步是否產生錯誤或警告。 有關詳細資訊，請參閱 [解決升級衝突](#resolving-upgrade-conflicts).
+然後檢查同步是否產生錯誤或警告。 如需詳細資訊，請參閱[解決升級衝突](#resolving-upgrade-conflicts)。
 
 ### 重新啟動服務 {#restart-services}
 
@@ -113,11 +113,11 @@ ht-degree: 1%
 
 在Linux環境中，請依照下列步驟將Adobe Campaign更新為新組建版本：
 
-* [下載更新的套件](#obtain-updated-packages)，
+* [下載更新的封裝](#obtain-updated-packages)，
 * [執行更新](#perform-an-update)，
-* [重新啟動Web伺服器](#reboot-the-web-server).
+* [重新啟動Web伺服器](#reboot-the-web-server)。
 
-[深入瞭解使用者端主控台可用性](../../installation/using/client-console-availability-for-windows.md).
+[進一步瞭解使用者端主控台可用性](../../installation/using/client-console-availability-for-windows.md)。
 
 >[!NOTE]
 >
@@ -125,9 +125,9 @@ ht-degree: 1%
 
 ### 取得更新的套件 {#obtain-updated-packages}
 
-首先恢復Adobe Campaign的兩個更新包：連線到 [軟體發佈入口網站](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) 使用您的使用者認證。 進一步瞭解中的軟體發佈 [此頁面](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hant).
+從復原Adobe Campaign的兩個更新套件開始：使用您的使用者認證連線至[軟體發佈入口網站](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)。 在[此頁面](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hant)中進一步瞭解軟體發佈。
 
-檔案為 **nlserver6-v7-XXX.rpm**
+檔案為&#x200B;**nlserver6-v7-XXX.rpm**
 
 ### 執行更新 {#perform-an-update}
 
@@ -157,7 +157,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->完整安裝程式詳載於 [本節](../../installation/using/installing-campaign-standard-packages.md). 資源會自動同步化，但您必須確定沒有發生錯誤。 有關詳細資訊，請參閱 [解決升級衝突](#resolving-upgrade-conflicts).
+>完整安裝程式在[本節](../../installation/using/installing-campaign-standard-packages.md)中有詳細說明。 資源會自動同步化，但您必須確定沒有發生錯誤。 如需詳細資訊，請參閱[解決升級衝突](#resolving-upgrade-conflicts)。
 
 ### 重新啟動Web伺服器 {#reboot-the-web-server}
 
@@ -171,7 +171,7 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->* 您的指令碼可能會被呼叫 **httpd** 而非 **apache**.
+>* 您的指令碼可能稱為&#x200B;**httpd**，而非&#x200B;**apache**。
 >* 您必須執行此命令，直到獲得下列回覆為止：
 >
 >   Apache必須執行此作業才能套用新程式庫。
@@ -184,13 +184,13 @@ ht-degree: 1%
 
 ## 解決升級衝突 {#resolving-upgrade-conflicts}
 
-在資源同步處理期間， **升級後** 命令可讓您偵測同步處理是否產生錯誤或警告。
+在資源同步化期間，**postupgrade**&#x200B;命令可讓您偵測同步化是否產生錯誤或警告。
 
 ### 檢視同步化結果 {#view-the-synchronization-result}
 
 檢視同步化結果的方式有兩種：
 
-* 在命令列介面中，錯誤會以三個>形箭號具體化 **>>>** 和同步會自動停止。 以雙>形箭號具體化警告 **>>** 同步完成後，必須解析和。 升級後結束時，命令提示字元中會顯示摘要。 如下所示：
+* 在命令列介面中，錯誤會以三個V形&#x200B;**>>**&#x200B;具體化，並且同步會自動停止。 警告以雙V形&#x200B;**>**&#x200B;具體化，同步處理完成後必須加以解析。 升級後結束時，命令提示字元中會顯示摘要。 如下所示：
 
   ```
   2013-04-09 07:48:39.749Z 00002E7A 1 info log =========Summary of the update==========
@@ -203,20 +203,20 @@ ht-degree: 1%
 
   如果警告與資源衝突有關，則需要使用者注意才能解決。
 
-* 此 **升級後_`<server version number>_<time of postupgrade>`.log** 記錄檔包含同步化結果。 預設可在下列目錄中使用： **`<installation directory>/var/<instance/postupgrade`**. 錯誤和警告屬性會指出錯誤和警告。
+* **postupgrade_`<server version number>_<time of postupgrade>`.log**&#x200B;記錄檔包含同步處理結果。 預設可在下列目錄中使用： **`<installation directory>/var/<instance/postupgrade`**。 錯誤和警告屬性會指出錯誤和警告。
 
 ### 解決衝突 {#resolving-conflicts}
 
 若要解決衝突，請套用下列程式：
 
-1. 在Adobe Campaign樹中，前往 **[!UICONTROL Administration > Configuration > Package management > Edit conflicts]** .
+1. 在Adobe Campaign樹狀結構中，前往&#x200B;**[!UICONTROL Administration > Configuration > Package management > Edit conflicts]** 。
 1. 在清單中選取要解決的衝突。
 
 有三種方法可解決衝突：
 
-* **[!UICONTROL Declare as resolved]** ：需要使用者事先干預。
+* **[!UICONTROL Declare as resolved]** ：需要使用者預先介入。
 * **[!UICONTROL Accept the new version]** ：如果使用者未變更隨Adobe Campaign提供的資源，則建議使用。
-* **[!UICONTROL Keep the current version]** ：表示更新遭拒。
+* **[!UICONTROL Keep the current version]** ：表示更新已拒絕。
 
   >[!IMPORTANT]
   >
@@ -224,15 +224,15 @@ ht-degree: 1%
 
 如果您選擇手動解決衝突，請按照以下步驟進行：
 
-1. 在視窗的下半部分，搜尋 **_衝突_** 字串來找出有衝突的實體。 與新版本一起安裝的實體包含 **新** 引數，符合先前版本的實體包含 **cus** 引數。
+1. 在視窗的下半部，搜尋&#x200B;**_衝突_**&#x200B;字串以找出有衝突的實體。 與新版本一起安裝的實體包含&#x200B;**new**&#x200B;引數，而符合先前版本的實體包含&#x200B;**cus**&#x200B;引數。
 
    ![](assets/s_ncs_production_conflict002.png)
 
-1. 刪除您不想要保留的版本。 刪除 **_conflict_argument_** 要保留的實體的字串。
+1. 刪除您不想要保留的版本。 刪除您要保留之實體的&#x200B;**_conflict_argument_**&#x200B;字串。
 
    ![](assets/s_ncs_production_conflict003.png)
 
-1. 移至您已解決的衝突。 按一下 **[!UICONTROL Actions]** 圖示並選取 **[!UICONTROL Declare as resolved]** .
+1. 移至您已解決的衝突。 按一下「**[!UICONTROL Actions]**」圖示並選取「**[!UICONTROL Declare as resolved]**」。
 1. 儲存變更：衝突現已解決。
 
 ### 最佳實務 {#best-practices}
@@ -245,17 +245,17 @@ ht-degree: 1%
 
 ### Windows {#in-windows-1}
 
-在安裝Adobe Campaign應用程式伺服器的電腦上(**nlserver web**)，下載並複製檔案  **setup-client-6.XXXX.exe** i n **[應用程式的路徑]/datakit/nl/eng/jsp**.
+在安裝Adobe Campaign應用程式伺服器的電腦上(**nlserver web**)，下載並複製檔案&#x200B;**setup-client-6.XXXX.exe**，位於&#x200B;**[應用程式路徑]/datakit/nl/eng/jsp**。
 
 下次連線使用者端主控台時，會出現一個視窗，通知使用者是否有更新可用，並提供他們下載和安裝更新的可能性。
 
 >[!NOTE]
 >
->請確定IIS_XPG使用者擁有此安裝檔案的適當讀取許可權，並參閱 [安裝指南](../../installation/using/general-architecture.md) 以取得詳細資訊。
+>請確定IIS_XPG使用者擁有此安裝檔案的適當讀取許可權，並參閱[安裝指南](../../installation/using/general-architecture.md)以取得詳細資訊。
 
 ### Linux {#in-linux-1}
 
-在Adobe Campaign應用程式伺服器(**nlserver web**)已安裝，請擷取  **setup-client-6.XXXX.exe** 封裝並複製，另存為 **/usr/local/neolane/nl6/datakit/nl/eng/jsp**：
+在安裝Adobe Campaign應用程式伺服器(**nlserver web**)的電腦上，擷取&#x200B;**setup-client-6.XXXX.exe**&#x200B;套件並加以複製，儲存為&#x200B;**/usr/local/neolane/nl6/datakit/nl/eng/jsp**：
 
 ```
  cp setup-client-6.XXXX.exe /usr/local/neolane/nl6/datakit/nl/eng/jsp
@@ -265,4 +265,4 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->請確定Apache使用者對此安裝檔案具有適當的讀取許可權，並參閱 [安裝指南](../../installation/using/general-architecture.md) 以取得詳細資訊。
+>請確定Apache使用者擁有此安裝檔案的適當讀取許可權，並參閱[安裝指南](../../installation/using/general-architecture.md)以取得詳細資訊。

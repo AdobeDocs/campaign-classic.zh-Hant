@@ -30,19 +30,19 @@ ht-degree: 2%
 
 若要在Adobe Campaign中設定這項整合，請遵循下列步驟：
 
-1. 安裝 **[!UICONTROL Integration with the Adobe Experience Cloud]** 內建套件。 [了解更多](../../platform/using/working-with-data-packages.md#importing-packages)
+1. 安裝&#x200B;**[!UICONTROL Integration with the Adobe Experience Cloud]**&#x200B;內建套件。 [了解更多](../../platform/using/working-with-data-packages.md#importing-packages)
 
    此套件可讓您透過Digital Asset Manager存取共用資產。
 
 1. 啟用透過IMS的連線(Adobe ID連線服務)，以在您的電子郵件中使用透過Adobe Experience Cloud共用的影像。 [了解更多](../../integrations/using/about-adobe-id.md)
-1. 瀏覽至 **[!UICONTROL Administration > Platform > Options]** 若要設定Adobe Target的伺服器和組織（租使用者）選項：
+1. 瀏覽至&#x200B;**[!UICONTROL Administration > Platform > Options]**&#x200B;以設定Adobe Target的伺服器和組織（租使用者）選項：
 
    ![](assets/tar_options.png)
 
-   * **[!UICONTROL TNT_EdgeServer]** ：用於整合的Adobe Target伺服器。 依預設，已選取此選項。 此值對應至Adobe Target **[!UICONTROL Domain Server]**，接著值 **/m2**. 例如： **tt.omtrdc.net/m2**.
-   * **[!UICONTROL TNT_TenantName]** ：Adobe Target組織名稱。 此值對應至Adobe Target的名稱 **[!UICONTROL Client]**.
+   * **[!UICONTROL TNT_EdgeServer]** ：用於整合的Adobe Target伺服器。 依預設，已選取此選項。 此值對應至Adobe Target **[!UICONTROL Domain Server]**，後面接著值&#x200B;**/m2**。 例如： **tt.omtrdc.net/m2**。
+   * **[!UICONTROL TNT_TenantName]** ： Adobe Target組織名稱。 此值對應至Adobe Target **[!UICONTROL Client]**&#x200B;的名稱。
 
 
 >[!CAUTION]
 >
->對於混合式與託管式架構，必須在所有伺服器上設定這些選項，包括 [中間來源伺服器](../../installation/using/mid-sourcing-server.md) 和 [執行例項](../../message-center/using/configuring-instances.md#execution-instance).
+>對於混合式與託管式架構，必須在所有伺服器上設定這些選項，包括[中間來源伺服器](../../installation/using/mid-sourcing-server.md)和[執行執行個體](../../message-center/using/configuring-instances.md#execution-instance)。

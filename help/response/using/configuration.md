@@ -23,7 +23,7 @@ ht-degree: 0%
 
 這可讓您瞭解如何使用個人資料表，來調整標準資料模型，以符合Adobe Campaign外部交易表的特定性質。 此個人表格可與Adobe Campaign中的可用個人表格或其他表格保持一致
 
-測量假設由作業程式工作流程啟動( **[!UICONTROL operationMgt]** )。 每個假設代表一個以執行狀態（正在編輯、擱置中、已完成、失敗等）非同步執行的個別程式 由管理優先順序限制、同時處理序數限制、低活動頁面及頻率自動執行的排程器控制。
+測量假設是由作業程式工作流程( **[!UICONTROL operationMgt]** )啟動。 每個假設代表一個以執行狀態（正在編輯、擱置中、已完成、失敗等）非同步執行的個別程式 由管理優先順序限制、同時處理序數限制、低活動頁面及頻率自動執行的排程器控制。
 
 ## 設定方案 {#configuring-schemas}
 
@@ -35,9 +35,9 @@ ht-degree: 0%
 
 ### 標準結構描述 {#standard-schemas}
 
-現成可用 **[!UICONTROL nms:remaMatch]** 綱要包含反應記錄表，即個人、假設和交易表之間的關係。 此結構描述應作為反應記錄最終目的地表格的繼承結構描述。
+現成可用的結構描述&#x200B;**[!UICONTROL nms:remaMatch]**&#x200B;包含反應記錄表，也就是個人、假設和交易表之間的關係。 此結構描述應作為反應記錄最終目的地表格的繼承結構描述。
 
-此 **[!UICONTROL nms:remaMatchRcp]** 綱要也是標準方案，其中包含Adobe Campaign收件者的反應記錄儲存( **[!UICONTROL nms:recipient]** )。 為了使用，需要將其擴充以對映至交易表（包含購買等）。
+**[!UICONTROL nms:remaMatchRcp]**&#x200B;結構描述也以標準形式提供，它包含Adobe Campaign收件者( **[!UICONTROL nms:recipient]** )的反應記錄檔儲存空間。 為了使用，需要將其擴充以對映至交易表（包含購買等）。
 
 ### 交易表格與交易詳細資訊 {#transaction-tables-and-transaction-details}
 
@@ -59,22 +59,22 @@ ht-degree: 0%
 
 ### 回應管理與收件者 {#response-management-with-adobe-campaign-recipients}
 
-在此範例中，我們將使用Adobe Campaign內建的收件者表格，在回應管理模組中整合購買表格 **[!UICONTROL nms:recipient]**.
+在此範例中，我們將使用Adobe Campaign內建的收件者表格&#x200B;**[!UICONTROL nms:recipient]**，在回應管理模組中整合購買表格。
 
-上的回應記錄表格 **[!UICONTROL nms:remaMatchRcp]** 收件者已擴充為新增購買表格結構的連結。 在下列範例中，會呼叫購買表格 **demo：purchase**.
+**[!UICONTROL nms:remaMatchRcp]**&#x200B;收件者上的回應記錄表已延伸，以新增購買表格結構描述的連結。 在下列範例中，購買資料表名為&#x200B;**demo：purchase**。
 
-1. 透過Adobe Campaign檔案總管，選取 **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Target mappings]**.
-1. 按一下右鍵 **收件者** 然後選取 **[!UICONTROL Actions]** 和 **[!UICONTROL Modify the options of the targeting dimensions]**.
+1. 透過Adobe Campaign總管，選取&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Target mappings]**。
+1. 用滑鼠右鍵按一下&#x200B;**收件者**，然後選取&#x200B;**[!UICONTROL Actions]**&#x200B;和&#x200B;**[!UICONTROL Modify the options of the targeting dimensions]**。
 
    ![](assets/delivery_mapping1.png)
 
-1. 您可以個人化 **[!UICONTROL Extension namespace]** 在下一個視窗中，然後按一下 **[!UICONTROL Next]**.
+1. 您可以在下一個視窗中個人化&#x200B;**[!UICONTROL Extension namespace]**，然後按一下&#x200B;**[!UICONTROL Next]**。
 
    ![](assets/delivery_mapping2.png)
 
-1. 在 **[!UICONTROL Response management]** 類別，確認 **[!UICONTROL Generate a storage schema for reactions]** 方塊是否已勾選。
+1. 在&#x200B;**[!UICONTROL Response management]**&#x200B;類別中，確定已核取&#x200B;**[!UICONTROL Generate a storage schema for reactions]**&#x200B;方塊。
 
-   然後按一下 **[!UICONTROL Define additional fields...]** 以選取相關的交易表格，並將所需的欄位新增至nms：remaMatchRcp綱要的延伸模組。
+   然後按一下&#x200B;**[!UICONTROL Define additional fields...]**&#x200B;以選取相關的交易表格，並將所需的欄位新增到nms：remaMatchRcp結構描述的延伸模組。
 
    ![](assets/delivery_mapping3.png)
 
@@ -106,11 +106,11 @@ name="remaMatchRcp" namespace="cus">
 
 在此範例中，我們將使用Adobe Campaign中可用收件者表格以外的個人表格，將購買表格整合到回應管理模組中。
 
-* 建立衍生自以下專案的新回應記錄結構： **[!UICONTROL nms:remaMatch]** 綱要。
+* 建立衍生自&#x200B;**[!UICONTROL nms:remaMatch]**&#x200B;結構描述的新回應記錄結構描述。
 
-  由於個人表格與Adobe Campaign收件者表格不同，因此需要根據以下專案建立回應記錄的新結構描述： **[!UICONTROL nms:remaMatch]** 綱要。 然後填寫傳送記錄和購買表格的連結。
+  由於個人表格與Adobe Campaign收件者表格不同，因此必須根據&#x200B;**[!UICONTROL nms:remaMatch]**&#x200B;結構描述建立回應記錄檔的新結構描述。 然後填寫傳送記錄和購買表格的連結。
 
-  在下列範例中，我們將使用 **demo：broadLogPers** 綱要和 **demo：purchase** 交易表：
+  在下列範例中，我們將使用&#x200B;**demo：broadLogPers**&#x200B;結構描述和&#x200B;**demo：purchase**&#x200B;交易表：
 
   ```
   <srcSchema desc="Linking of a recipient transaction to a hypothesis"    
@@ -129,7 +129,7 @@ name="remaMatchRcp" namespace="cus">
   </srcSchema>
   ```
 
-* 修改中的假設表單 **[!UICONTROL nms:remaHypothesis]** 綱要。
+* 修改&#x200B;**[!UICONTROL nms:remaHypothesis]**&#x200B;結構描述中的假設表單。
 
   依預設，回應記錄檔清單會顯示在收件者記錄檔中。 因此，您必須修改假設表單，以檢視在上一步建立的新回應記錄。
 

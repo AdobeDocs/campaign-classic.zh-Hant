@@ -14,7 +14,7 @@ ht-degree: 10%
 
 # 資料方案結構{#structure-of-a-data-schema}
 
-資料結構描述的結構會以樹狀結構的形式顯示。 若要在Adobe Campaign使用者端主控台中以圖形方式檢視它，請選取目標結構描述，然後按一下 **[!UICONTROL Structure]** 子標籤。
+資料結構描述的結構會以樹狀結構的形式顯示。 若要在Adobe Campaign使用者端主控台中以圖形方式檢視它，請選取目標結構描述，然後按一下「**[!UICONTROL Structure]**」子索引標籤。
 
 ![](assets/d_ncs_integration_schema_arbo.png)
 

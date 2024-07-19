@@ -27,11 +27,11 @@ ht-degree: 5%
 
 * 顯示目標
 
-  此功能表會顯示目標母體上的可用資料以及工作表結構(**[!UICONTROL Schema]** 標籤)。
+  此功能表會顯示目標母體上的可用資料以及工作表（**[!UICONTROL Schema]**&#x200B;標籤）的結構。
 
   ![](assets/wf-right-click-display.png)
 
-  有關詳細資訊，請參閱 [工作表和工作流程結構描述](monitoring-workflow-execution.md#worktables-and-workflow-schema).
+  如需詳細資訊，請參閱[工作表和工作流程結構描述](monitoring-workflow-execution.md#worktables-and-workflow-schema)。
 
 * 分析目標
 
@@ -39,7 +39,7 @@ ht-degree: 5%
 
   如需詳細資訊，請參閱本[區段](../../reporting/using/using-the-descriptive-analysis-wizard.md)。
 
-在執行工作流程時清除目標資料。 只能存取最後一個工作表。 您可以設定工作流程，讓所有工作表保持可存取狀態：檢查 **[!UICONTROL Keep the result of interim populations between two executions]** 工作流程屬性中的選項。
+在執行工作流程時清除目標資料。 只能存取最後一個工作表。 您可以設定工作流程，讓所有工作表保持可存取狀態：核取工作流程屬性中的&#x200B;**[!UICONTROL Keep the result of interim populations between two executions]**&#x200B;選項。
 
 不過，我們建議您避免在出現大量資料時啟用此選項。
 
@@ -57,7 +57,7 @@ ht-degree: 5%
 
 **[!UICONTROL Target extension]** (targetData)型別個人化元素不適用於目標工作流程。 必須在工作流程中建置傳遞目標，並在傳遞的入站轉變中指定。
 
-如果您想要建立傳遞校樣，校樣目標需要根據 **[!UICONTROL Address substitution]** 模式，以便輸入個人化資料。 如需詳細資訊，請參閱本[區段](../../delivery/using/steps-defining-the-target-population.md#using-address-substitution-in-proof)。
+如果您想要建立傳遞校樣，需要根據&#x200B;**[!UICONTROL Address substitution]**&#x200B;模式建置校樣目標，才能輸入個人化資料。 如需詳細資訊，請參閱本[區段](../../delivery/using/steps-defining-the-target-population.md#using-address-substitution-in-proof)。
 
 在下列範例中，我們將收集客戶資訊清單，用於個人化電子郵件中。
 
@@ -83,23 +83,23 @@ ht-degree: 5%
 
    ![](assets/wf-targetdata-sample-2.png)
 
-1. 設定 **[!UICONTROL Enrichment]** 輸入活動，將收集的資料與Adobe Campaign資料庫中已存在的資料進行調解。
+1. 設定&#x200B;**[!UICONTROL Enrichment]**&#x200B;型別活動，將收集的資料與Adobe Campaign資料庫中已存在的資料進行調解。
 
    調解金鑰是帳號：
 
    ![](assets/wf-targetdata-sample-3.png)
 
-1. 然後設定 **[!UICONTROL Delivery]**：此變數會根據範本建立，收件者則由入站轉變指定。
+1. 然後設定&#x200B;**[!UICONTROL Delivery]**：它是根據範本建立的，收件者是由入站轉變所指定。
 
    ![](assets/wf-targetdata-sample-4.png)
 
    >[!CAUTION]
    >
-   >只有轉換中包含的資料才可用來個人化傳遞。 **targetdata** 型別個人化欄位僅適用於 **[!UICONTROL Delivery]** 活動。
+   >只有轉換中包含的資料才可用來個人化傳遞。 **targetData**&#x200B;型別個人化欄位僅適用於&#x200B;**[!UICONTROL Delivery]**&#x200B;活動的傳入母體。
 
 1. 在傳遞範本中，使用在工作流程中收集的欄位。
 
-   要執行此操作，請插入 **[!UICONTROL Target extension]** 輸入個人化欄位。
+   若要這麼做，請插入&#x200B;**[!UICONTROL Target extension]**&#x200B;型別個人化欄位。
 
    ![](assets/wf-targetdata-sample-5.png)
 
@@ -109,7 +109,7 @@ ht-degree: 5%
 
    ![](assets/wf-targetdata-sample-6.png)
 
-   **[!UICONTROL Target extension]** (targetData)型別資料會使用與所有個人化欄位相同的特性，插入傳遞中。 它們也可用於主旨、連結標籤或連結本身。
+   **[!UICONTROL Target extension]** (targetData)型別資料是使用與所有個人化欄位相同的特性插入傳遞。 它們也可用於主旨、連結標籤或連結本身。
 
    傳送給所收集收件者的郵件將包含下列資料：
 

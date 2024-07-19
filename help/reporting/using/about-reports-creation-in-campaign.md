@@ -24,9 +24,9 @@ ht-degree: 0%
 
 若要建立、發佈及傳遞資料的分析報表，請套用下列步驟：
 
-1. 建立新報表：請參閱 [建立新報告](../../reporting/using/creating-a-new-report.md)，
-1. 收集資料以進行分析：請參閱 [收集資料以進行分析](../../reporting/using/collecting-data-to-analyze.md) 和 [使用內容](../../reporting/using/using-the-context.md)，
-1. 定義包含活動及其容器的報表內容：請參閱 [建立表格](../../reporting/using/creating-a-table.md)， [建立圖表](../../reporting/using/creating-a-chart.md) 和 [元素版面](../../reporting/using/element-layout.md)，
-1. 設定顯示選項：顯示型別、共用報表：請參閱 [報表顯示內容](../../reporting/using/configuring-access-to-the-report.md#report-display-context)， [定義條件式內容](../../reporting/using/defining-a-conditional-content.md) 和 [設定報表存取權](../../reporting/using/configuring-access-to-the-report.md)，
-1. 發佈報表（發佈精靈）：請參閱 [發佈報表](../../reporting/using/configuring-access-to-the-report.md#publishing-the-report)，
-1. 轉換報告：匯出、記錄、在瀏覽器中顯示：請參閱 [針對報告的動作](../../reporting/using/actions-on-reports.md).
+1. 建立新報告：請參閱[建立新報告](../../reporting/using/creating-a-new-report.md)，
+1. 收集資料以進行分析：請參考[收集資料以分析](../../reporting/using/collecting-data-to-analyze.md)和[使用內容](../../reporting/using/using-the-context.md)，
+1. 定義包含活動及其容器的報告內容：請參閱[建立表格](../../reporting/using/creating-a-table.md)、[建立圖表](../../reporting/using/creating-a-chart.md)和[元素配置](../../reporting/using/element-layout.md)，
+1. 設定顯示選項：顯示型別、共用報告：參考[報告顯示內容](../../reporting/using/configuring-access-to-the-report.md#report-display-context)、[定義條件式內容](../../reporting/using/defining-a-conditional-content.md)和[設定報告的存取權](../../reporting/using/configuring-access-to-the-report.md)，
+1. Publish報表（發佈精靈）：請參考[Publish報表](../../reporting/using/configuring-access-to-the-report.md#publishing-the-report)，
+1. 轉換報告：匯出、記錄、在瀏覽器中顯示：請參考報告上的[動作](../../reporting/using/actions-on-reports.md)。

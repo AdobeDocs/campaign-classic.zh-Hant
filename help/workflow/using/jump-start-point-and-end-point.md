@@ -15,7 +15,7 @@ ht-degree: 15%
 
 
 
-**[!UICONTROL Jump]** -type圖形物件用於改善複雜圖表的可讀性，尤其是具有交叉轉變的圖表。
+**[!UICONTROL Jump]** — 型別圖形物件可用來改善複雜圖表的可讀性，尤其是交叉轉換的圖表。
 
 跳躍是沒有箭頭的轉接。
 
@@ -29,4 +29,4 @@ ht-degree: 15%
 
 ![](assets/s_user_segmentation_jump_in.png)
 
-若要改善圖表的可讀性，您可以變更與跳轉關聯的影像以顯示相關數字。 另請參閱 [變更活動影像](managing-activity-images.md).
+若要改善圖表的可讀性，您可以變更與跳轉關聯的影像以顯示相關數字。 請參閱[變更活動影像](managing-activity-images.md)。

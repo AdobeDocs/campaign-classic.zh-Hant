@@ -17,15 +17,15 @@ ht-degree: 4%
 
 ## 設定查詢活動 {#configuring-the-query-activity}
 
-* 按兩下 **[!UICONTROL Query]** 活動。
+* 連按兩下&#x200B;**[!UICONTROL Query]**&#x200B;活動。
 
   ![](assets/use_case_abtesting_createrecipients_001.png)
 
-* 按一下 **[!UICONTROL Edit query]** 連結並選取您要鎖定的收件者。
+* 按一下&#x200B;**[!UICONTROL Edit query]**&#x200B;連結，並選取您要鎖定的收件者。
 
   ![](assets/use_case_abtesting_createrecipients_002.png)
 
-* 連結 **[!UICONTROL Query]** 活動至 **[!UICONTROL Split]** 活動。
+* 將&#x200B;**[!UICONTROL Query]**&#x200B;活動連結至&#x200B;**[!UICONTROL Split]**&#x200B;活動。
 
   ![](assets/use_case_abtesting_createrecipients_003.png)
 
@@ -35,7 +35,7 @@ ht-degree: 4%
 
 1. 建立母體A：
 
-   * 按兩下 **[!UICONTROL Split]** 活動。
+   * 連按兩下&#x200B;**[!UICONTROL Split]**&#x200B;活動。
 
      ![](assets/use_case_abtesting_createrecipients_004.png)
 
@@ -43,21 +43,21 @@ ht-degree: 4%
 
      ![](assets/use_case_abtesting_createrecipients_005.png)
 
-   * 選取 **[!UICONTROL Limit the selected records]** 選項。
+   * 選取&#x200B;**[!UICONTROL Limit the selected records]**&#x200B;選項。
 
      ![](assets/use_case_abtesting_createrecipients_006.png)
 
-   * 按一下 **[!UICONTROL Edit]** 連結，選取 **[!UICONTROL Activate random sampling]**，然後按一下 **[!UICONTROL Next]**.
+   * 按一下&#x200B;**[!UICONTROL Edit]**&#x200B;連結，選取&#x200B;**[!UICONTROL Activate random sampling]**，然後按一下&#x200B;**[!UICONTROL Next]**。
 
      ![](assets/use_case_abtesting_createrecipients_007.png)
 
-   * 將臨界值設為10%，然後按一下 **[!UICONTROL Finish]**.
+   * 將臨界值設為10%，然後按一下&#x200B;**[!UICONTROL Finish]**。
 
      ![](assets/use_case_abtesting_createrecipients_008.png)
 
 1. 建立母體B：
 
-   * 按一下 **[!UICONTROL Add]** 為母體B建立新索引標籤。
+   * 按一下&#x200B;**[!UICONTROL Add]**&#x200B;為母體B建立新索引標籤。
 
      ![](assets/use_case_abtesting_createrecipients_009.png)
 
@@ -67,7 +67,7 @@ ht-degree: 4%
 
 1. 建立剩餘母體：
 
-   * 前往 **[!UICONTROL General]** 標籤。
+   * 前往&#x200B;**[!UICONTROL General]**&#x200B;標籤。
 
      ![](assets/use_case_abtesting_createrecipients_011.png)
 
@@ -75,8 +75,8 @@ ht-degree: 4%
 
      ![](assets/use_case_abtesting_createrecipients_012.png)
 
-   * 變更標籤以指定此母體既不包含A也不包含B，然後按一下 **[!UICONTROL OK]** 以關閉活動。
+   * 變更標籤以指定此母體既不包含A也不包含B，然後按一下&#x200B;**[!UICONTROL OK]**&#x200B;以關閉活動。
 
      ![](assets/use_case_abtesting_createrecipients_013.png)
 
-您現在可以建立兩個傳遞範本。 [瞭解更多](a-b-testing-uc-delivery-templates.md))。
+您現在可以建立兩個傳遞範本。 [深入瞭解](a-b-testing-uc-delivery-templates.md))。

@@ -19,10 +19,10 @@ ht-degree: 1%
 
 使用下列程式，將資料庫中收件者的建立日期與使用彙總建立收件者的最後已知日期進行比較。 也將選取同日建立的所有收件者。
 
-執行 **建立日期=上限（建立日期）** 對收件者輸入篩選器，您必須執行工作流程才能遵循下列步驟：
+若要對收件者執行&#x200B;**建立日期= max （建立日期）**&#x200B;型別篩選，您必須執行工作流程以遵循下列步驟：
 
-1. 使用基本查詢擷取資料庫收件者。 有關詳細資訊，請參閱 [建立查詢](query.md#creating-a-query).
-1. 使用產生的結果來計算上次建立收件者的已知日期。 **最大（建立日期）** 彙總函式。
+1. 使用基本查詢擷取資料庫收件者。 如需此步驟的詳細資訊，請參閱[建立查詢](query.md#creating-a-query)。
+1. 使用從&#x200B;**max （建立日期）**&#x200B;彙總函式產生的結果來計算上次建立收件者的已知日期。
 1. 將每個收件者連結至彙總函式會產生相同的結構描述。
 1. 透過已編輯的結構描述使用彙總來篩選收件者。
 
@@ -32,12 +32,12 @@ ht-degree: 1%
 
 1. 建立查詢。 在此處，目標是計算資料庫中所有收件者的最後已知建立日期。 因此，查詢不包含篩選器。
 1. 選取 **[!UICONTROL Add data]**。
-1. 在開啟的視窗中，選取 **[!UICONTROL Data linked to the filtering dimension]** 則 **[!UICONTROL Filtering dimension data]**.
-1. 在 **[!UICONTROL Data to add]** 視窗，新增一欄以計算 **建立日期** 欄位。 您可以使用運算式編輯器或輸入 **max(@created)** 直接放入中的欄位 **[!UICONTROL Expression]** 欄。 然後按一下 **[!UICONTROL Finish]** 按鈕。
+1. 在開啟的視窗中，依序選取&#x200B;**[!UICONTROL Data linked to the filtering dimension]**&#x200B;及&#x200B;**[!UICONTROL Filtering dimension data]**。
+1. 在&#x200B;**[!UICONTROL Data to add]**&#x200B;視窗中，新增計算收件者表格中&#x200B;**建立日期**&#x200B;欄位最大值的欄。 您可以使用運算式編輯器，或直接在&#x200B;**[!UICONTROL Expression]**&#x200B;欄的欄位中輸入&#x200B;**max(@created)**。 然後按一下&#x200B;**[!UICONTROL Finish]**&#x200B;按鈕。
 
    ![](assets/datamanagement_usecase_2.png)
 
-1. 按一下 **[!UICONTROL Edit additional data]** 則 **[!UICONTROL Advanced parameters...]**. 核取 **[!UICONTROL Disable automatic adding of the primary keys of the targeting dimension]** 選項。
+1. 按一下&#x200B;**[!UICONTROL Edit additional data]**，然後再按&#x200B;**[!UICONTROL Advanced parameters...]**。 核取 **[!UICONTROL Disable automatic adding of the primary keys of the targeting dimension]** 選項。
 
    此選項可確保不會顯示所有收件者，且不會保留明確新增的資料。 在此案例中，該日期是指上次建立收件者的日期。
 
@@ -48,11 +48,11 @@ ht-degree: 1%
 若要將處理收件者的查詢連結至執行彙總函式計算的查詢，您必須使用結構描述編輯活動。
 
 1. 將收件者的查詢定義為主集。
-1. 在 **[!UICONTROL Links]** 標籤，新增連結，並在開啟的視窗中輸入資訊，如下所示：
+1. 在&#x200B;**[!UICONTROL Links]**&#x200B;索引標籤中，新增連結並在開啟的視窗中輸入資訊，如下所示：
 
    * 選取與彙總相關的暫存結構描述。 此結構描述的資料將新增到主集的成員。
-   * 選取 **[!UICONTROL Use a simple join]** 將彙總結果連結至主集的每個收件者。
-   * 最後，指定連結為 **[!UICONTROL Type 11 simple link]**.
+   * 選取&#x200B;**[!UICONTROL Use a simple join]**&#x200B;將彙總結果連結至主集的每個收件者。
+   * 最後，指定連結為&#x200B;**[!UICONTROL Type 11 simple link]**。
 
    ![](assets/datamanagement_usecase_3.png)
 
@@ -62,18 +62,18 @@ ht-degree: 1%
 
 建立連結後，彙總結果和收件者會成為相同臨時方案的一部分。 因此，可以在結構描述上建立篩選，以比較收件者的建立日期與最後已知建立日期（由彙總函式表示）。 使用分割活動執行此篩選。
 
-1. 在 **[!UICONTROL General]** 索引標籤，選取 **收件者** 作為目標維度和 **編輯結構描述** 作為篩選維度（以篩選入站轉變結構描述活動）。
-1. 在 **[!UICONTROL subsets]** 索引標籤，選取 **[!UICONTROL Add a filtering condition on the inbound population]** 然後按一下 **[!UICONTROL Edit...]**.
+1. 在&#x200B;**[!UICONTROL General]**&#x200B;索引標籤中，選取&#x200B;**收件者**&#x200B;作為目標維度，並選取&#x200B;**編輯結構描述**&#x200B;作為篩選維度（以篩選入站轉變結構描述活動）。
+1. 在&#x200B;**[!UICONTROL subsets]**&#x200B;索引標籤中，選取&#x200B;**[!UICONTROL Add a filtering condition on the inbound population]**，然後按一下&#x200B;**[!UICONTROL Edit...]**。
 1. 使用運算式編輯器，在收件者的建立日期與彙總計算的建立日期之間新增相等條件。
 
    資料庫中的日期型別欄位通常會儲存到毫秒。 因此，您必須將這些延長一整天，以避免擷取僅建立該毫秒的收件者。
 
-   若要這麼做，請使用 **ToDate** 函式，可在運算式編輯器中取得，可將日期和時數轉換為簡單日期。
+   若要這麼做，請使用運算式編輯器中可用的&#x200B;**ToDate**&#x200B;函式，該函式會將日期和小時轉換為簡單日期。
 
    因此，用於條件的運算式為：
 
-   * **[!UICONTROL Expression]**： `toDate([target/@created])`.
-   * **[!UICONTROL Value]**： `toDate([datemax/expr####])`，其中expr####與彙總函式查詢中指定的彙總有關。
+   * **[!UICONTROL Expression]**： `toDate([target/@created])`。
+   * **[!UICONTROL Value]**： `toDate([datemax/expr####])`，其中expr####與彙總函式查詢中指定的彙總相關。
 
    ![](assets/datamanagement_usecase_4.png)
 

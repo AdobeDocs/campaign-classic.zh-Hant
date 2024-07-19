@@ -57,15 +57,15 @@ ht-degree: 1%
 
 ## 套件設定 {#packages-configuration}
 
-任何直接連結到的結構描述擴充功能 **互動** （優惠方案、主張、收件者等） 必須在執行例項上部署。
+任何直接連結至&#x200B;**互動**&#x200B;的結構描述延伸模組（優惠方案、主張、收件者等） 必須在執行例項上部署。
 
 Interaction套件必須安裝在所有執行個體（控制和執行）上。 另外兩個套件可供使用：一個套件將安裝在控制執行個體上，另一個將安裝在每個執行個體上。
 
 >[!NOTE]
 >
->安裝套件時， **長** 輸入欄位 **nms：proposition** 如主張ID的表格，變成 **int64** 輸入欄位。 此類資料詳見 [本節](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data).
+>安裝套件時，**nms：proposition**&#x200B;資料表的&#x200B;**long**&#x200B;型別欄位（例如主張ID）會變成&#x200B;**int64**&#x200B;型別欄位。 此型別的資料在[此區段](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data)中有詳細說明。
 
-必須在每個執行個體上設定資料保留持續時間(透過 **[!UICONTROL Data purge]** 視窗)。 在執行例項上，此期間必須對應於要計算的型別規則（滑動期間）和適用性規則所需的歷史深度。
+必須在每個執行個體上設定資料保留期間（透過部署精靈中的&#x200B;**[!UICONTROL Data purge]**&#x200B;視窗）。 在執行例項上，此期間必須對應於要計算的型別規則（滑動期間）和適用性規則所需的歷史深度。
 
 在控制例項上：
 
@@ -77,8 +77,8 @@ Interaction套件必須安裝在所有執行個體（控制和執行）上。 �
    * 選取 **[!UICONTROL Execution instance]**。
    * 核取 **[!UICONTROL Enabled]** 選項。
    * 完成執行例項的連線引數。
-   * 每個執行例項都必須連結至ID。 當您按一下 **[!UICONTROL Initialize connection]** 按鈕。
-   * 檢查使用的應用程式型別： **[!UICONTROL Message Center]**， **[!UICONTROL Interaction]**，或兩者。
+   * 每個執行例項都必須連結至ID。 此ID是在您按一下&#x200B;**[!UICONTROL Initialize connection]**&#x200B;按鈕時指派。
+   * 檢查使用的應用程式型別： **[!UICONTROL Message Center]**、**[!UICONTROL Interaction]**&#x200B;或兩者。
    * 輸入使用的FDA帳戶。 必須在執行例項上建立運運算元，且必須在相關例項的資料庫上擁有下列讀取和寫入許可權：
 
      ```
@@ -101,7 +101,7 @@ Interaction套件必須安裝在所有執行個體（控制和執行）上。 �
      >
      >如果發生錯誤，您可以參閱同步工作流程並提供通知。 您可在應用程式的技術工作流程中找到這些內容。
 
-如果基於最佳化理由，只有部分行銷資料庫在執行例項上重複，您可以指定連結至環境的受限制綱要，以允許使用者僅使用執行例項上可用的資料。 您可以使用執行個體上無法取得的資料來建立選件。 若要這麼做，您必須藉由限制傳出頻道上的此規則(**[!UICONTROL Taken into account if]** 欄位)。
+如果基於最佳化理由，只有部分行銷資料庫在執行例項上重複，您可以指定連結至環境的受限制綱要，以允許使用者僅使用執行例項上可用的資料。 您可以使用執行個體上無法取得的資料來建立選件。 若要這麼做，您必須藉由限制傳出頻道（**[!UICONTROL Taken into account if]**&#x200B;欄位）上的此規則，在其他頻道上停用該規則。
 
 ![](assets/ita_filtering.png)
 
@@ -115,11 +115,11 @@ Interaction套件必須安裝在所有執行個體（控制和執行）上。 �
 
 * **`NmsInteraction_LastOfferEnvSynch_<offerEnvId>_<executionInstanceId>`**：環境在指定執行個體上同步的最後日期。
 * **`NmsInteraction_LastPropositionSynch_<propositionSchema>_<executionInstanceIdSource>_<executionInstanceIdTarget>`**：指定結構描述的建議從一個執行個體同步到另一個執行個體的上次日期。
-* **`NmsInteraction_MapWorkflowId`**：包含所有已產生同步化工作流程清單的選項。
+* **`NmsInteraction_MapWorkflowId`**：包含所有已產生同步工作流程清單的選項。
 
 以下選項可用於執行例項：
 
-**NmsExecutionInstanceId**：包含例項ID的選項。
+**NmsExecutionInstanceId**：包含執行個體識別碼的選項。
 
 ## 套件安裝 {#packages-installation}
 
@@ -158,7 +158,7 @@ CREATE INDEX nmspropositionrcp_recipientidid ON NmsPropositionRcp (irecipientid)
 ALTER TABLE nmspropositionrcp_tmp RENAME TO nmspropositionrcp;
 ```
 
-**變更表格**
+**變更資料表**
 
 ```
 ALTER TABLE nmspropositionrcp
@@ -168,7 +168,7 @@ ALTER TABLE nmspropositionrcp
 
 ### Oracle {#oracle}
 
-編輯的大小 **數字** type不會導致值或重新寫入索引。 因此，它會立即生效。
+編輯&#x200B;**Number**&#x200B;型別的大小不會導致值或重新寫入索引。 因此，它會立即生效。
 
 要執行的查詢如下：
 

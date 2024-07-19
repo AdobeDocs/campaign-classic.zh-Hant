@@ -18,13 +18,13 @@ ht-degree: 10%
 
 
 
-如果您已選取 **[!UICONTROL Do not request console update]** 選項，而且您想要重新啟用更新請求，請套用下列程式：
+如果您已選取&#x200B;**[!UICONTROL Do not request console update]**&#x200B;選項，且您想要重新啟用更新要求，請套用下列程式：
 
-1. 使用開啟登入資料庫的編輯器 **regedit** Windows中的命令 **[!UICONTROL Start > Execute]** 功能表。
+1. 使用Windows **[!UICONTROL Start > Execute]**&#x200B;功能表中的&#x200B;**regedit**&#x200B;命令開啟登入資料庫編輯器。
 
    ![](assets/ncs_console_update_1.png)
 
-1. 在樹狀結構中，顯示 **[!UICONTROL HKEY_CURRENT_USERSoftwareneolaneNL_6nlclient]** 節點。
-1. 刪除 **[!UICONTROL confAdvisedUpgrade]** 輸入並關閉登入編輯程式。
+1. 在樹狀結構中，顯示&#x200B;**[!UICONTROL HKEY_CURRENT_USERSoftwareneolaneNL_6nlclient]**&#x200B;節點的選項。
+1. 刪除&#x200B;**[!UICONTROL confAdvisedUpgrade]**&#x200B;專案並關閉登入編輯程式。
 
    ![](assets/ncs_console_update_2.png)

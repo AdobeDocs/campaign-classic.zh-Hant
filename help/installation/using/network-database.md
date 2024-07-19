@@ -20,7 +20,7 @@ ht-degree: 9%
 
 ## 網路設定
 
-部署內部部署型別的架構時，有一件非常重要的事要檢查 [網路設定](../../installation/using/network-configuration.md). 請確定無法在伺服器外部直接存取Tomcat伺服器：
+部署內部部署型別的架構時，很重要的一點要檢查是[網路組態](../../installation/using/network-configuration.md)。 請確定無法在伺服器外部直接存取Tomcat伺服器：
 
 * 關閉外部IP上的Tomcat連線埠(8080) （必須在localhost上運作）
 * 請勿將標準HTTP連線埠(80)對應到Tomcat連線埠(8080)
@@ -51,7 +51,7 @@ openssl x509 -noout -subject -dates
 nmap --script ssl-enum-ciphers -p ${REMPORT} ${REMHOST}
 ```
 
-您也可以使用 [slyze](https://github.com/nabla-c0d3/sslyze/releases) python指令碼，兩者都會執行。
+您也可以使用兼具兩者的[slyze](https://github.com/nabla-c0d3/sslyze/releases) python指令碼。
 
 ```
 python sslyze.py --sslv2 --sslv3 --tlsv1 --reneg --resum --certinfo=basic --hide_rejected_ciphers --sni=SNI myserver.com

@@ -22,10 +22,10 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->以下章節適用於 **技術管理員**.
+>下列章節適用於&#x200B;**技術管理員**。
 
-* 您可以使用其他內容資料。 請參閱 [其他資料](../../interaction/using/additional-data.md) 區段。
-* 您可以透過傳入通道豐富建議優惠的應用程式內容。 若要這麼做， **nms：互動** 互動結構描述必須延伸。 請參閱 [擴充功能範例](../../interaction/using/extension-example.md) 區段來取得完整程式。
-* 建立測試環境的詳情請參閱 [建立測試環境](../../interaction/using/creating-a-test-environment.md) 區段。
-* 您可以使用鉤點來修改標準引擎行為。 有關詳細資訊，請參閱 [勾點](../../interaction/using/hooks.md) 區段
-* 最後，在分散式架構中使用互動的詳細說明 [分散式架構](../../interaction/using/distributed-architectures.md) 區段。
+* 您可以使用其他內容資料。 請參閱[其他資料](../../interaction/using/additional-data.md)區段。
+* 您可以透過傳入通道豐富建議優惠的應用程式內容。 若要這麼做，必須延伸&#x200B;**nms：interaction**&#x200B;互動結構描述。 如需完整程式，請參閱[擴充功能範例](../../interaction/using/extension-example.md)區段。
+* 建立測試環境在[建立測試環境](../../interaction/using/creating-a-test-environment.md)區段中詳細說明。
+* 您可以使用鉤點來修改標準引擎行為。 如需詳細資訊，請參閱[鉤點](../../interaction/using/hooks.md)區段
+* 最後，[分散式架構](../../interaction/using/distributed-architectures.md)區段中會詳細說明使用分散式架構的互動。

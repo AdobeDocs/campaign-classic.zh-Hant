@@ -7,7 +7,7 @@ role: User
 level: Beginner
 exl-id: 8ed11e96-9f23-4e2e-bae2-25c51cfb549a
 source-git-commit: f39dc6077a7ddc3fb9b53d4082c08e65e7683f10
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2337'
 ht-degree: 100%
 
@@ -32,7 +32,7 @@ _2023 年 12 月 5 日_
 
 ### 其他增強功能 {#release-7-3-5-other}
 
-自此版本開始，已傳送電子郵件上的追蹤連結在升級期間仍可運作。 [深入了解](../../platform/using/faq-build-upgrade.md)
+自此版本開始，已傳送電子郵件上的追蹤連結在升級期間仍可運作。 [閱讀更多](../../platform/using/faq-build-upgrade.md)
 
 ### 修補程式 {#release-7-3-5-patches}
 

@@ -27,7 +27,7 @@ ht-degree: 1%
 
 ### 傳遞伺服器 {#delivery-server}
 
-針對傳遞伺服器(**nlserver mta**)，則必須開啟下列連線埠：
+對於傳遞伺服器(**nlserver mta**)，必須開啟下列連線埠：
 
 <table> 
  <tbody> 
@@ -44,7 +44,7 @@ ht-degree: 1%
   <tr> 
    <td> 53/udp （網域）<br /> </td> 
    <td> DNS伺服器<br /> </td> 
-   <td> dns查詢。<br /> </td> 
+   <td> DNS查詢。<br /> </td> 
   </tr> 
   <tr> 
    <td> 38000/tcp （預設連線埠）<br /> </td> 
@@ -54,14 +54,14 @@ ht-degree: 1%
   <tr> 
    <td> 7777/udp<br /> </td> 
    <td> 統計伺服器<br /> </td> 
-   <td> 存取統計資料伺服器。<br /> </td> 
+   <td> 正在存取統計伺服器。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ### 傳入郵件 {#inbound-mail}
 
-針對傳入郵件復原程式(**nlserver inMail**)，則必須開啟下列連線埠：
+對於傳入郵件復原程式(**nlserver inMail**)，必須開啟下列連線埠：
 
 <table> 
  <tbody> 
@@ -73,7 +73,7 @@ ht-degree: 1%
   <tr> 
    <td> 110/tcp (pop3)<br /> </td> 
    <td> 內部郵件伺服器<br /> </td> 
-   <td> 擷取退回訊息的POP3流量。<br /> </td> 
+   <td> 要擷取退回訊息的POP3流量。<br /> </td> 
   </tr> 
   <tr> 
    <td> 25/tcp (smtp)<br /> </td> 
@@ -85,7 +85,7 @@ ht-degree: 1%
 
 ### 應用程式伺服器 {#application-server}
 
-針對應用程式伺服器(**nlserver web**)，則必須開啟下列連線埠：
+應用程式伺服器(**nlserver web**)必須開啟下列連線埠：
 
 <table> 
  <tbody> 
@@ -97,7 +97,7 @@ ht-degree: 1%
   <tr> 
    <td> 80/tcp (http)<br /> 443/tcp (https)<br /> </td> 
    <td> 隨處<br /> </td> 
-   <td> HTTP或HTTPS流量（包括用於傳遞能力選件）。<br /> </td> 
+   <td> HTTP或HTTPS流量（包括傳遞能力選件）。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -106,7 +106,7 @@ ht-degree: 1%
 
 ### 簡訊傳送狀態 {#sms-delivery-status}
 
-若要追蹤簡訊傳遞(**nlserver sms**)，則必須開啟下列連線埠：
+若要追蹤SMS傳遞(**nlserver sms**)，必須開啟下列連線埠：
 
 <table> 
  <tbody> 
@@ -125,7 +125,7 @@ ht-degree: 1%
 
 ### 豐富型使用者端 {#rich-client}
 
-適用於Adobe Campaign rich client (**nlclient**)，則必須開啟下列連線埠：
+對於Adobe Campaign RTF使用者端(**nlclient**)，必須開啟下列連線埠：
 
 <table> 
  <tbody> 
@@ -156,7 +156,7 @@ ht-degree: 1%
    <td> 目的地<br /> </td> 
   </tr> 
   <tr> 
-   <td> <strong>oracle</strong><br /> </td> 
+   <td> <strong>Oracle</strong><br /> </td> 
    <td> 1521/tcp<br /> </td> 
    <td> 資料庫伺服器<br /> </td> 
   </tr> 
@@ -224,7 +224,7 @@ ht-degree: 1%
 
 ## 與Adobe Experience Manager整合 {#integration-with-adobe-experience-manager}
 
-如果安裝是「內部部署」，Adobe Campaign與Adobe Experience Manager之間的整合需要開啟多個連線埠。 如需設定此整合的詳細資訊，請參閱 [詳細檔案](../../integrations/using/about-adobe-experience-manager.md).
+如果安裝是「內部部署」，Adobe Campaign與Adobe Experience Manager之間的整合需要開啟多個連線埠。 如需設定此整合的詳細資訊，請參閱[詳細檔案](../../integrations/using/about-adobe-experience-manager.md)。
 
 <table> 
  <tbody> 
@@ -234,11 +234,11 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td> 80<br /> </td> 
-   <td> AEM與Adobe Campaign的連線<br /> </td> 
+   <td> AEM與Adobe Campaign<br />的連線 </td> 
   </tr> 
   <tr> 
    <td><p> 4502</p><p> 4503</p><br /> </td> 
-   <td> Adobe Campaign連線至AEM「製作」和「發佈」例項。 視您的AEM設定而定，要開啟的連線埠可能與預設的連線埠不同。<br /> </td> 
+   <td> Adobe Campaign與AEM的「製作」和「發佈」執行個體的連線。 視您的AEM組態而定，要開啟的連線埠可能與預設的連線埠不同。<br /> </td> 
   </tr> 
  </tbody> 
 </table>

@@ -17,11 +17,11 @@ ht-degree: 5%
 
 >[!CAUTION]
 >
->從Campaign Classicv7.3.1開始，所有運運算元都應該使用 [AdobeIdentity Management系統(IMS)](https://helpx.adobe.com/tw/enterprise/using/identity.html){target="_blank"} 以連線至Campaign。
+>從Campaign Classicv7.3.1開始，所有運運算元都應該使用[AdobeIdentity Management系統(IMS)](https://helpx.adobe.com/tw/enterprise/using/identity.html){target="_blank"}來連線到Campaign。
 >
->為了強化安全性和驗證程式，Adobe Campaign強烈建議您將所有現有的操作員驗證模式從登入/密碼原生驗證移轉至AdobeIdentity Management系統(IMS)。 瞭解如何在中移轉您的操作員 [此頁面](../../technotes/using/migrate-users-to-ims.md).
+>為了強化安全性和驗證程式，Adobe Campaign強烈建議您將所有現有的操作員驗證模式從登入/密碼原生驗證移轉至AdobeIdentity Management系統(IMS)。 在[此頁面](../../technotes/using/migrate-users-to-ims.md)中瞭解如何移轉您的操作員。
 > 
->移轉後，請注意下一節不再適用。  瞭解如何在中使用Adobe IMS設定許可權 [Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/gs-permissions.html?lang=zh-Hant){target="_blank"}.
+>移轉後，請注意下一節不再適用。  在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/gs-permissions.html?lang=zh-Hant){target="_blank"}中瞭解如何使用Adobe IMS設定許可權。
 
 
 Adobe Campaign可讓您定義並管理指派給各種運運算元的許可權。 這些是一組授權或拒絕的許可權和限制：
@@ -32,17 +32,17 @@ Adobe Campaign可讓您定義並管理指派給各種運運算元的許可權。
 
 這些許可權適用於操作員設定檔或操作員群組。
 
-它們是透過連結至操作員與Adobe Campaign的連線模式的安全引數完成的。 有關中安全性區域的詳細資訊 [此頁面](../../installation/using/security-zones.md).
+它們是透過連結至操作員與Adobe Campaign的連線模式的安全引數完成的。 有關[此頁面](../../installation/using/security-zones.md)中安全性區域的詳細資訊。
 
 您可授予使用者兩種型別的許可權：
 
-* 您可以定義您賦予許可權的運運算元群組，然後將運運算元與一或多個群組建立關聯。 這可讓您重複使用許可權，並讓運運算元設定檔更加一致。 它也能促進設定檔的管理和維護。 群組的建立和管理會顯示在 [本節](access-management-groups.md).
+* 您可以定義您賦予許可權的運運算元群組，然後將運運算元與一或多個群組建立關聯。 這可讓您重複使用許可權，並讓運運算元設定檔更加一致。 它也能促進設定檔的管理和維護。 在[此區段](access-management-groups.md)中顯示群組建立與管理。
 
-* 您可以將已命名的許可權直接歸因於使用者，在某些情況下，這會使透過群組配置的許可權過載。 這些許可權會顯示在 [此頁面](access-management-named-rights.md).
+* 您可以將已命名的許可權直接歸因於使用者，在某些情況下，這會使透過群組配置的許可權過載。 這些許可權會顯示在[此頁面](access-management-named-rights.md)中。
 
 >[!NOTE]
 >
->開始定義許可權之前，Adobe建議您先閱讀 [安全性設定檢查清單](https://helpx.adobe.com/tw/campaign/kb/acc-security.html).
+>開始定義許可權之前，Adobe建議您先閱讀[安全性設定檢查清單](https://helpx.adobe.com/tw/campaign/kb/acc-security.html)。
 
 在以下章節中瞭解如何授與存取權並設定許可權：
 

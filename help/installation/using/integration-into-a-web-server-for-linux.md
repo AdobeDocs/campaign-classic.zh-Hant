@@ -18,13 +18,13 @@ ht-degree: 2%
 # 與Linux網頁伺服器整合 {#integration-into-a-web-server-for-linux}
 
 
-Adobe Campaign包含Apache Tomcat，可透過HTTP （和SOAP）作為應用程式伺服器的進入點。
+Adobe Campaign包含Apache Tomcat，可透過HTTP (和SOAP)作為應用程式伺服器的進入點。
 
 您可以使用這個整合的Tomcat伺服器來處理HTTP要求。
 
 在此案例中：
 
-* 預設的接聽連線埠為8080。 若要變更，請參閱 [本節](configure-tomcat.md).
+* 預設的接聽連線埠為8080。 若要變更，請參閱[本節](configure-tomcat.md)。
 * 然後使用者端主控台會使用URL連線，例如：
 
   ```
@@ -53,13 +53,13 @@ Adobe Campaign包含Apache Tomcat，可透過HTTP （和SOAP）作為應用程�
    a2dismod auth_basic authn_file authz_default authz_user autoindex cgi dir env negotiation userdir
    ```
 
-   確保 **別名**， **authz_host** 和 **mime** 模組仍然啟用。 為此，請使用以下命令：
+   請確定&#x200B;**alias**、**authz_host**&#x200B;和&#x200B;**mime**&#x200B;模組仍然啟用。 為此，請使用以下命令：
 
    ```
    a2enmod  alias authz_host mime
    ```
 
-1. 建立檔案 **nlsrv.load** 在 **/etc/apache2/mods-available** 並插入下列內容：
+1. 在&#x200B;**/etc/apache2/mods-available**&#x200B;中建立檔案&#x200B;**nlsrv.load**&#x200B;並插入下列內容：
 
    在Debian 8中：
 
@@ -67,7 +67,7 @@ Adobe Campaign包含Apache Tomcat，可透過HTTP （和SOAP）作為應用程�
    LoadModule requesthandler24_module /usr/local/[INSTALL]/nl6/lib/libnlsrvmod.so
    ```
 
-1. 建立檔案 **nlsrv.conf** 在 **/etc/apache2/mods-available** 使用下列指令：
+1. 使用以下命令在&#x200B;**/etc/apache2/mods-available**&#x200B;中建立檔案&#x200B;**nlsrv.conf**：
 
    ```
    ln -s /usr/local/[INSTALL]/nl6/conf/apache_neolane.conf /etc/apache2/mods-available/nlsrv.conf
@@ -79,13 +79,13 @@ Adobe Campaign包含Apache Tomcat，可透過HTTP （和SOAP）作為應用程�
     a2enmod nlsrv
    ```
 
-   如果您使用 **mod_rewrite** Adobe Campaign頁面模組，您必須重新命名 **nlsrv.load** 和 **nlsrv.conf** 檔案到 **zz-nlsrv.load** 和 **zz-nlsrv.conf**. 若要啟動模組，請執行以下命令：
+   如果您正在使用Adobe Campaign頁面的&#x200B;**mod_rewrite**&#x200B;模組，您必須將&#x200B;**nlsrv.load**&#x200B;和&#x200B;**nlsrv.conf**&#x200B;檔案重新命名為&#x200B;**zz-nlsrv.load**&#x200B;和&#x200B;**zz-nlsrv.conf**。 若要啟動模組，請執行以下命令：
 
    ```
    a2enmod zz-nlsrv
    ```
 
-1. 編輯 **/etc/apache2/envvars** 檔案中，新增下列行：
+1. 編輯&#x200B;**/etc/apache2/envvars**&#x200B;檔案，新增下列行：
 
    ```
    # Added Neolane
@@ -114,7 +114,7 @@ Adobe Campaign包含Apache Tomcat，可透過HTTP （和SOAP）作為應用程�
 
 應用以下步驟：
 
-1. 在 `httpd.conf` 檔案中，啟用下列Apache模組：
+1. 在`httpd.conf`檔案中，啟動下列Apache模組：
 
    ```
    alias
@@ -153,18 +153,18 @@ Adobe Campaign包含Apache Tomcat，可透過HTTP （和SOAP）作為應用程�
    ForceLanguagePriority
    ```
 
-1. 在中建立Adobe Campaign專屬設定檔 `/etc/httpd/conf.d/` 資料夾。 例如 `CampaignApache.conf`
+1. 在`/etc/httpd/conf.d/`資料夾中建立Adobe Campaign專屬的設定檔。 例如`CampaignApache.conf`
 
-1. 的 **RHEL7**，請在檔案中新增下列指示：
+1. 針對&#x200B;**RHEL7**，請在檔案中新增下列指示：
 
    ```
    LoadModule requesthandler24_module /usr/local/neolane/nl6/lib/libnlsrvmod.so
    Include /usr/local/neolane/nl6/conf/apache_neolane.conf
    ```
 
-1. 的 **RHEL7**：
+1. 針對&#x200B;**RHEL7**：
 
-   新增 `/etc/systemd/system/httpd.service` 包含下列內容的檔案：
+   新增包含下列內容的`/etc/systemd/system/httpd.service`檔案：
 
    ```
    .include /usr/lib/systemd/system/httpd.service
@@ -245,4 +245,4 @@ GET /r/test
 Connection closed by foreign host.
 ```
 
-您也可以要求URL `https://myserver.adobe.com/r/test` 從網頁瀏覽器。
+您也可以從網頁瀏覽器要求URL `https://myserver.adobe.com/r/test`。

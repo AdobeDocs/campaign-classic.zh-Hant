@@ -26,4 +26,4 @@ Adobe Campaign的模組化設計可支援廣泛的部署組態，從獨立設定
 >
 >主要安裝設定步驟只能由Adobe所託管部署的Adobe執行，以設定伺服器和執行個體設定檔案等。
 >
->若要進一步瞭解部署之間的主要差異，請參閱 [託管模型](../../installation/using/hosting-models.md) 區段或 [託管及內部部署的功能差異](../../installation/using/capability-matrix.md).
+>若要深入瞭解部署之間的主要差異，請參閱[託管模型](../../installation/using/hosting-models.md)區段或託管與內部部署的[功能差異](../../installation/using/capability-matrix.md)。

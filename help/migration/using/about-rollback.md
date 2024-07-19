@@ -27,7 +27,7 @@ ht-degree: 0%
 以下是從v7還原v6.1的程式。
 
 1. 復原資料庫的備份並還原它。
-1. 復原 **Adobe Campaign v6.back** 資料夾(**nl6.back** 在Linux中)，將其重新命名為 **Adobe Campaign v6** (**nl6** （在Linux中）並將它還原至其原始位置。
+1. 復原&#x200B;**Adobe Campaign v6.back**&#x200B;資料夾（在Linux中為&#x200B;**nl6.back**），將其重新命名為&#x200B;**Adobe Campaign v6** （在Linux中為&#x200B;**nl6**），並將其還原至其原始位置。
 1. 透過重新指派監聽連線埠來重新設定IIS，以重新建立IIS網站層級Adobe Campaign v6.1的整合。
 1. 停止Adobe Campaign v7服務。
 1. 重新啟動IIS。

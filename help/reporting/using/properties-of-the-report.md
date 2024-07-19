@@ -16,25 +16,25 @@ ht-degree: 3%
 
 
 
-您可以完全個人化並設定報表，以符合您的需求。 若要這麼做，請編輯其屬性。 報表屬性可透過以下方式存取： **[!UICONTROL Properties]** 活動序號圖表上方的按鈕。
+您可以完全個人化並設定報表，以符合您的需求。 若要這麼做，請編輯其屬性。 透過活動序列圖表上方的&#x200B;**[!UICONTROL Properties]**&#x200B;按鈕存取報告屬性。
 
 ![](assets/s_ncs_advuser_report_properties_01.png)
 
-一般屬性說明如下。 在中設定的進階功能 **[!UICONTROL Parameters]**， **[!UICONTROL Variables]** 和 **[!UICONTROL Scripts]** 標籤已說明 [在本節中](../../reporting/using/advanced-functionalities.md).
+一般屬性說明如下。 在&#x200B;**[!UICONTROL Parameters]**、**[!UICONTROL Variables]**&#x200B;和&#x200B;**[!UICONTROL Scripts]**&#x200B;索引標籤中設定的進階功能在此區段](../../reporting/using/advanced-functionalities.md)中說明[。
 
 ## 一般屬性 {#overall-properties}
 
-在 **[!UICONTROL General]** 標籤中，您可以編輯下列設定：
+在報告屬性的&#x200B;**[!UICONTROL General]**&#x200B;標籤中，您可以編輯下列設定：
 
-* 報告的標籤和內部名稱。 此 **[!UICONTROL Internal name]** 用於報表最終URL。 在報告建立後不應加以變更。
+* 報告的標籤和內部名稱。 **[!UICONTROL Internal name]**&#x200B;已用於報表最終URL。 在報告建立後不應加以變更。
 
-* 報告 **資料夾** 在建立報告期間選取。 最佳實務是為自訂報表建立專用資料夾，以免與混合 [內建報告](../../reporting/using/about-campaign-built-in-reports.md).
+* 報告&#x200B;**資料夾**&#x200B;是在報告建立期間選取的。 最佳實務是為自訂報告建立專用資料夾，以便不會與[內建報告](../../reporting/using/about-campaign-built-in-reports.md)混合。
 
-* 此 **儲存** 在建立報告時選取「 」。 若要變更報表的資料表，請按一下 **[!UICONTROL Select link]** 圖示右側 **[!UICONTROL Document type]** 欄位。
+* 建立報告時已選取&#x200B;**儲存體**。 若要變更報告的資料表，請按一下&#x200B;**[!UICONTROL Document type]**&#x200B;欄位右側的&#x200B;**[!UICONTROL Select link]**&#x200B;圖示。
 
   ![](assets/s_ncs_advuser_report_properties_02.png)
 
-* 此 **存取控制** 引數。 這些設定說明如下。
+* **存取控制**&#x200B;引數。 這些設定說明如下。
 
 ## 控制對報告的存取 {#report-accessibility}
 
@@ -44,16 +44,16 @@ ht-degree: 3%
 
 可能的選項包括：
 
-* **[!UICONTROL Anonymous access]**：此選項可讓您不受限制地存取報表。 但是，無法進行任何操作。
+* **[!UICONTROL Anonymous access]**：此選項可啟用報表的無限制存取。 但是，無法進行任何操作。
 
-  「webapp」技術運運算元的許可權用於顯示報表元素。 瞭解更多 [在本節中](../../platform/using/access-management-operators.md).
+  「webapp」技術運運算元的許可權用於顯示報表元素。 在本節](../../platform/using/access-management-operators.md)瞭解更多[。
 
 * **[!UICONTROL Access control]**：此選項可讓Adobe Campaign運運算元在登入後存取它。
-* **[!UICONTROL Specific account]**：此選項可讓您使用在中選取之運運算元的許可權執行報表 **[!UICONTROL Operator]** 欄位。
+* **[!UICONTROL Specific account]**：此選項可讓您使用在&#x200B;**[!UICONTROL Operator]**&#x200B;欄位中選取之運運算元的許可權來執行報告。
 
 ## 翻譯您的報告 {#report-localization}
 
-您可以設定要將報表翻譯成哪些語言。 若要這麼做，請按一下 **[!UICONTROL Localization]** 標籤。
+您可以設定要將報表翻譯成哪些語言。 若要這麼做，請按一下&#x200B;**[!UICONTROL Localization]**&#x200B;標籤。
 
 ![](assets/s_ncs_advuser_report_properties_06.png)
 
@@ -63,11 +63,11 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->如需Campaign網頁本地化的詳細資訊，請參閱 [本節](../../web/using/translating-a-web-form.md).
+>如需Campaign網頁本地化的詳細資訊，請參閱[本節](../../web/using/translating-a-web-form.md)。
 
 ## 個人化HTML呈現 {#personalizing-html-rendering}
 
-在 **[!UICONTROL Rendering]** 標籤，您可以個人化頁面的資料顯示模式。 您可以選擇：
+在&#x200B;**[!UICONTROL Rendering]**&#x200B;標籤中，您可以個人化頁面的資料顯示模式。 您可以選擇：
 
 * 報表中的導覽型別：透過按鈕或連結。
 * 報表元素的標籤預設位置。 可針對每個元素多載此位置。
@@ -77,8 +77,8 @@ ht-degree: 3%
 
 ## 個人化錯誤頁面 {#personalizing-the-error-page}
 
-此 **[!UICONTROL Error page]** 索引標籤可讓您設定在報表顯示錯誤時顯示的訊息。
+**[!UICONTROL Error page]**&#x200B;索引標籤可讓您設定在報表顯示中發生錯誤時將顯示的訊息。
 
-您可以定義文字並將其連結至特定識別碼，以管理報表本地化。 有關詳細資訊，請參閱 [新增頁首和頁尾](../../reporting/using/element-layout.md#adding-a-header-and-a-footer).
+您可以定義文字並將其連結至特定識別碼，以管理報表本地化。 如需詳細資訊，請參閱[新增頁首和頁尾](../../reporting/using/element-layout.md#adding-a-header-and-a-footer)。
 
 ![](assets/s_ncs_advuser_report_properties_11.png)

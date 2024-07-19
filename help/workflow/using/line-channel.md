@@ -15,7 +15,7 @@ ht-degree: 2%
 
 
 
-以下詳述的工作流程會隨 **LINE頻道** 模組（預設）。 如需此模組的詳細資訊，請參閱此 [區段](../../delivery/using/line-channel.md).
+依預設，以下詳細的工作流程會與&#x200B;**LINE通道**&#x200B;模組一起安裝。 如需此模組的詳細資訊，請參閱此[區段](../../delivery/using/line-channel.md)。
 
 <table> 
  <tbody> 
@@ -27,7 +27,7 @@ ht-degree: 2%
   <tr> 
    <td> <span class="uicontrol">LINE V2存取權杖更新</span> <br /> </td> 
    <td> <span class="uicontrol">updateLineV2AccessToken</span> <br /> </td> 
-   <td> 此工作流程會將存取Token重新整理至LINE V2。<br /> </td> 
+   <td> 此工作流程會將存取權杖重新整理至LINE V2。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">刪除封鎖的LINE使用者</span> <br /> </td> 
@@ -37,7 +37,7 @@ ht-degree: 2%
   <tr> 
    <td> <span class="uicontrol">MID到LineUserID移轉</span> <br /> </td> 
    <td> <span class="uicontrol">MIDToUserIDMigration</span> <br /> </td> 
-   <td> 此工作流程會產生LINE V2使用者ID，以便從LINE V1移轉至LINE V2。<br /> </td> 
+   <td> 此工作流程會產生要從LINE V1移轉至LINE V2的LINE V2使用者識別碼。<br /> </td> 
   </tr> 
  </tbody> 
 </table>

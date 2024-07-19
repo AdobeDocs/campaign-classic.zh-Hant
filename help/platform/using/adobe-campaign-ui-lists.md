@@ -21,19 +21,19 @@ ht-degree: 32%
 
 依預設，Adobe Campaign會載入清單的前200筆記錄。 這表示顯示不一定會顯示您所檢視之表格的所有記錄。 您可以統計清單中的記錄計數，並載入更多記錄。
 
-在清單畫面的右下方， **[!UICONTROL counter]** 顯示已載入的記錄數以及資料庫中的記錄總數（套用任何篩選器後）：
+在清單畫面的右下方，**[!UICONTROL counter]**&#x200B;會顯示已載入的記錄數，以及資料庫中的記錄總數（套用任何篩選器後）：
 
 ![](assets/s_ncs_user_nb_200_0.png)
 
-若為「**？**&quot; （而不是數字）出現，按一下計數器即可開始計算。
+若為「**」？**」而非右側的數字，按一下計數器即可開始計算。
 
 ### 載入更多記錄 {#loading-more-records}
 
-若要載入（因此顯示）其他記錄（預設為200行），請按一下 **[!UICONTROL Continue loading]**.
+若要載入（因此顯示）其他記錄（預設為200行），請按一下&#x200B;**[!UICONTROL Continue loading]**。
 
 ![](assets/s_ncs_user_load_list.png)
 
-若要載入所有記錄，請在清單上按一下滑鼠右鍵，然後選取 **[!UICONTROL Load all]**.
+若要載入所有記錄，請在清單上按一下滑鼠右鍵，然後選取&#x200B;**[!UICONTROL Load all]**。
 
 >[!CAUTION]
 >
@@ -41,11 +41,11 @@ ht-degree: 32%
 
 ### 變更預設的記錄數目 {#change-default-number-of-records}
 
-若要變更載入的預設記錄數，請按一下 **[!UICONTROL Configure list]** 在清單的右下角。
+若要變更載入的預設記錄數，請按一下清單右下角的&#x200B;**[!UICONTROL Configure list]**。
 
 ![](assets/s_ncs_user_configure_list.png)
 
-在清單組態視窗中，按一下 **[!UICONTROL Advanced parameters]** （左下方）並變更要擷取的行數。
+在清單設定視窗中，按一下&#x200B;**[!UICONTROL Advanced parameters]** （左下方）並變更要擷取的行數。
 
 ![](assets/s_ncs_user_configurelist_advancedparam.png)
 
@@ -66,11 +66,11 @@ ht-degree: 32%
 
 新增欄的另一個方法（例如，如果您想要顯示未在詳細資訊熒幕顯示的資料）是使用清單組態視窗。 操作步驟：
 
-1. 按一下 **[!UICONTROL Configure list]** 在清單右下方。
+1. 按一下清單右下方的&#x200B;**[!UICONTROL Configure list]**。
 
    ![](assets/s_ncs_user_configure_list.png)
 
-1. 在清單設定視窗中，連按兩下要新增至 **[!UICONTROL Available fields]** 清單以將它新增到 **[!UICONTROL Output columns]**.
+1. 在清單設定視窗中，按兩下要新增至&#x200B;**[!UICONTROL Available fields]**&#x200B;清單中的欄位，以便將其新增至&#x200B;**[!UICONTROL Output columns]**。
 
    ![](assets/s_ncs_user_configurelist.png)
 
@@ -80,41 +80,41 @@ ht-degree: 32%
    >
    >標籤會按表格顯示且以字母順序排列。
    >
-   >使用 **搜尋** 在可用欄位中執行搜尋的欄位。 如需詳細資訊，請參閱 [本節](#sorting-a-list).
+   >使用&#x200B;**搜尋**&#x200B;欄位在可用的欄位中執行搜尋。 如需進一步資訊，請參閱[本節](#sorting-a-list)。
    >
    >欄位由特定圖示識別：SQL欄位、連結表格、計算欄位等。 對於每個選取的欄位，說明都會顯示在可用欄位清單下。 [了解更多](#configuring-lists)。
    >
    >您也可以排序及篩選資料。 請參閱[本節](../../platform/using/filtering-options.md)。
 
 1. 對要顯示的每一個欄重複此步驟。
-1. 使用箭頭來修改 **顯示順序**. 最高的欄將顯示在記錄清單的左邊。
+1. 使用箭頭來修改&#x200B;**顯示順序**。 最高的欄將顯示在記錄清單的左邊。
 
    ![](assets/s_ncs_user_columns_order_down.png)
 
-1. 如有需要，您可以按一下 **[!UICONTROL Distribution of values]** 以檢視目前資料夾中所選欄位的值重新分割。
+1. 如有需要，您可以按一下&#x200B;**[!UICONTROL Distribution of values]**&#x200B;以檢視目前資料夾中所選欄位的重新分割值。
 
    ![](assets/s_ncs_user_configurelist_values.png)
 
-1. 按一下 **[!UICONTROL OK]** 以確認設定並顯示結果。
+1. 按一下&#x200B;**[!UICONTROL OK]**&#x200B;以確認設定並顯示結果。
 
 ### 新建欄 {#create-a-new-column}
 
 您可以建立新欄以在清單中顯示其他欄位。 操作步驟：
 
-1. 按一下 **[!UICONTROL Configure the list]** 位於清單下方和右側。
-1. 按一下 **[!UICONTROL Add]** 以在清單中顯示新欄位。
+1. 按一下清單右下方的&#x200B;**[!UICONTROL Configure the list]**。
+1. 按一下&#x200B;**[!UICONTROL Add]**&#x200B;以在清單中顯示新欄位。
 
 ### 移除欄 {#remove-a-column}
 
-您可以使用遮罩記錄清單中的一或多欄 **[!UICONTROL Configure list]** 位於清單下方和右側。
+您可以使用位於清單下方和右側的&#x200B;**[!UICONTROL Configure list]**&#x200B;來遮罩記錄清單中的一或多欄。
 
 ![](assets/s_ncs_user_configure_list.png)
 
-在清單組態視窗中，選取要遮罩的欄 **[!UICONTROL Output columns]** 區域，然後按一下「刪除」按鈕。
+在清單設定視窗中，從&#x200B;**[!UICONTROL Output columns]**&#x200B;區域選取要遮罩的欄，然後按一下刪除按鈕。
 
 ![](assets/s_ncs_user_removecolumn_icon.png)
 
-對要遮罩的每一欄重複此動作。 按一下 **[!UICONTROL OK]** 以確認設定並顯示結果。
+對要遮罩的每一欄重複此動作。 按一下&#x200B;**[!UICONTROL OK]**&#x200B;以確認設定並顯示結果。
 
 ### 調整欄寬 {#adjust-column-width}
 
@@ -127,7 +127,7 @@ ht-degree: 32%
 * 只包含在所選資料夾中的記錄，
 * 或是所選取的資料夾及其子資料夾中的記錄。
 
-若要從一個顯示模式切換到另一個顯示模式，請按一下 **[!UICONTROL Display sub-levels]** （在工具列中）。
+若要從一種顯示模式切換到另一種顯示模式，請按一下工具列中的&#x200B;**[!UICONTROL Display sub-levels]**。
 
 ![](assets/s_ncs_user_display_children_icon.png)
 
@@ -147,25 +147,25 @@ ht-degree: 32%
 
 1. 以滑鼠右鍵按一下包含顯示資料的資料夾。
 1. 選取 **[!UICONTROL Properties]**。
-1. 按一下 **[!UICONTROL Advanced settings]** 然後在 **[!UICONTROL Configuration]** 欄位。
+1. 按一下&#x200B;**[!UICONTROL Advanced settings]**，然後在&#x200B;**[!UICONTROL Configuration]**&#x200B;欄位中指定名稱。
 
    ![](assets/s_ncs_user_folder_save_config_2.png)
 
-1. 按一下 **[!UICONTROL OK]** 然後按一下 **[!UICONTROL Save]**.
+1. 按一下&#x200B;**[!UICONTROL OK]**，然後按一下&#x200B;**[!UICONTROL Save]**。
 
 然後將此設定套用至另一個 **Delivery** 資料夾：
 
 ![](assets/s_ncs_user_folder_save_config_3.png)
 
-按一下 **[!UICONTROL Save]** 在資料夾屬性視窗中。 此清單顯示會修改以符合指明的設定：
+按一下資料夾屬性視窗中的&#x200B;**[!UICONTROL Save]**。 此清單顯示會修改以符合指明的設定：
 
 ![](assets/s_ncs_user_folder_save_config_5.png)
 
 ## 匯出清單 {#exporting-a-list}
 
-若要從清單匯出資料，您必須使用匯出精靈。 若要存取，請從清單中選取要匯出的元素，按一下滑鼠右鍵並選取 **[!UICONTROL Export...]**.
+若要從清單匯出資料，您必須使用匯出精靈。 若要存取，請從清單中選取要匯出的元素，按一下滑鼠右鍵並選取&#x200B;**[!UICONTROL Export...]**。
 
-有關匯入和匯出功能的使用說明，請參閱 [一般匯入和匯出](../../platform/using/about-generic-imports-exports.md).
+在[一般匯入和匯出](../../platform/using/about-generic-imports-exports.md)中說明匯入和匯出函式的使用。
 
 >[!CAUTION]
 >
@@ -179,11 +179,11 @@ ht-degree: 32%
 
 您也可以設定排序或組合排序條件。 要執行此操作，請遵循下列步驟：
 
-1. **[!UICONTROL Configure list]** 在清單右下方。
+1. 清單右下方的&#x200B;**[!UICONTROL Configure list]**。
 
    ![](assets/s_ncs_user_configure_list.png)
 
-1. 在清單組態視窗中，按一下 **[!UICONTROL Sorting]** 標籤。
+1. 在清單組態視窗中，按一下&#x200B;**[!UICONTROL Sorting]**&#x200B;標籤。
 1. 選取要排序的欄位以及排序方向 (遞增或遞減)。
 
    ![](assets/s_ncs_user_configurelist_sort.png)
@@ -194,11 +194,11 @@ ht-degree: 32%
 
    排序優先順序不會影響清單中欄的顯示情況。
 
-1. 按一下 **[!UICONTROL Ok]** 以確認此設定並在清單中顯示結果。
+1. 按一下&#x200B;**[!UICONTROL Ok]**&#x200B;以確認此設定，並在清單中顯示結果。
 
 ### 搜尋元素 {#running-a-search}
 
-您可以使用在編輯器中搜尋可用欄位 **[!UICONTROL Search]** 欄位位於欄位清單上方的欄位。 按下 **輸入** 在鍵盤上或瀏覽清單。 符合搜尋文字的欄位將以粗體呈現。
+您可以使用位於欄位清單上方的&#x200B;**[!UICONTROL Search]**&#x200B;欄位，在編輯器中搜尋可用欄位。 按鍵盤上的&#x200B;**Enter**&#x200B;或瀏覽清單。 符合搜尋文字的欄位將以粗體呈現。
 
 >[!NOTE]
 >

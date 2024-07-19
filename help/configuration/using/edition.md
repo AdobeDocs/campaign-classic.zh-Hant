@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # 編輯Campaign Explorer導覽樹狀結構{#edition}
 
-用於建立和設定導覽階層組態檔案的畫面可透過 **[!UICONTROL Administration > Configuration > Navigation hierarchies]** 節點：
+可透過&#x200B;**[!UICONTROL Administration > Configuration > Navigation hierarchies]**&#x200B;節點存取用來建立和設定導覽階層組態檔案的畫面：
 
 ![](assets/d_ncs_integration_navigation_arbo.png)
 
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->「名稱」編輯控制項可讓您輸入由名稱和名稱空間組成的檔案金鑰。 的「名稱」和「名稱空間」屬性 **`<navtree>`** 元素會在架構的XML編輯欄位中自動更新。
+>「名稱」編輯控制項可讓您輸入由名稱和名稱空間組成的檔案金鑰。 **`<navtree>`**&#x200B;專案的「名稱」和「名稱空間」屬性會在結構描述的XML編輯欄位中自動更新。
 
 預覽會自動產生包含完整組態的合併檔案：
 

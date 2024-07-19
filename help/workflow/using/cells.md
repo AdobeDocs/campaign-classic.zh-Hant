@@ -15,15 +15,15 @@ ht-degree: 8%
 
 
 
-此 **[!UICONTROL Cells]** 活動會以資料欄的形式，提供各種子集的檢視。 它有助於子集操作，也設計為鼓勵個人化可能性。
+**[!UICONTROL Cells]**&#x200B;活動以資料欄的形式提供各種子集的檢視。 它有助於子集操作，也設計為鼓勵個人化可能性。
 
 ![](assets/wf_split_cells.png)
 
-此活動可設定為根據使用者需求輸入特定引數。 依預設，每個子集的詳細資訊會透過在專用視窗中顯示 **[!UICONTROL Selection]** 和 **[!UICONTROL Advanced]** 索引標籤。 在下列範例中，表單已修改： **[!UICONTROL Data]** 索引標籤已新增，以啟用每個子集的優惠方案與優先順序層級的關聯。
+此活動可設定為根據使用者需求輸入特定引數。 依預設，每個子集的詳細資訊會透過&#x200B;**[!UICONTROL Selection]**&#x200B;和&#x200B;**[!UICONTROL Advanced]**&#x200B;標籤在專用視窗中詳細說明。 在以下範例中，表單已修改：已新增&#x200B;**[!UICONTROL Data]**&#x200B;索引標籤以啟用每個子集的優惠和優先順序層級的關聯。
 
 ![](assets/wf_split_cells_with_customization.png)
 
-針對此設定，已將以下資訊新增至工作流程表單(在 **[!UICONTROL Administration > Configurations > Input forms]** Adobe Campaign節點)：
+針對此設定，已將下列資訊新增至工作流程表單(在Adobe Campaign樹狀結構的&#x200B;**[!UICONTROL Administration > Configurations > Input forms]**&#x200B;節點中)：
 
 ```
 <container img="nms:miniatures/mini-enrich.png" label="Data">

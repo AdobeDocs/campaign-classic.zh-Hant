@@ -20,25 +20,25 @@ ht-degree: 1%
 如此可讓他們：
 
 * [篩選封裝](#filter-packages)，
-* [編輯套裝](#edit-packages)，
-* [取消套裝](#cancel-a-package)，
-* [重新初始化封裝](#reinitializing-a-package).
+* [編輯封裝](#edit-packages)，
+* [取消封裝](#cancel-a-package)，
+* [重新初始化封裝](#reinitializing-a-package)。
 
 ## 篩選封裝 {#filter-packages}
 
-從 **[!UICONTROL Campaigns]** 索引標籤上，您可以顯示 **[!UICONTROL Campaign packages]** ，會將所有現有的分散式行銷活動重新分組。 您可以篩選此清單，使其僅顯示已發佈、延遲、未決核准等行銷活動。 若要這麼做，請按一下此檢視上方區段中的連結，或使用 **[!UICONTROL Filter list]** 連結並選取要顯示的行銷活動套件狀態。
+從「**[!UICONTROL Campaigns]**」索引標籤，您可以顯示&#x200B;**[!UICONTROL Campaign packages]**&#x200B;的清單，其會重新分組所有現有的分散式行銷活動。 您可以篩選此清單，使其僅顯示已發佈、延遲、未決核准等行銷活動。 若要這麼做，請按一下此檢視上方區段中的連結，或使用&#x200B;**[!UICONTROL Filter list]**&#x200B;連結並選取要顯示的行銷活動套件狀態。
 
 ![](assets/mkg_dist_catalog_filter.png)
 
 ## 編輯套裝 {#edit-packages}
 
-此 **[!UICONTROL Campaign packages]** 頁面可讓您檢視每個套件的摘要。
+**[!UICONTROL Campaign packages]**&#x200B;頁面可讓您檢視每個套件的摘要。
 
 此摘要會顯示下列資訊：標籤、行銷活動型別，以及從中建立行銷活動的名稱和資料夾。
 
 按一下封裝名稱以進行編輯。 您也可以依其本機實體及其狀態來檢視訂單。
 
-此資訊也提供在 **[!UICONTROL Campaign orders]** 檢視，其中列出所有訂單。
+列出所有訂單的&#x200B;**[!UICONTROL Campaign orders]**&#x200B;檢視中也提供此資訊。
 
 ![](assets/mkg_dist_catalog_op_command_details.png)
 
@@ -48,7 +48,7 @@ ht-degree: 1%
 
    ![](assets/mkg_dist_catalog_op_command_edit1.png)
 
-   此 **[!UICONTROL Edit > General]** 索引標籤可讓您檢視本機實體在訂購行銷活動時輸入的資訊。
+   **[!UICONTROL Edit > General]**&#x200B;索引標籤可讓您檢視本機實體在訂購行銷活動時輸入的資訊。
 
    ![](assets/mkg_dist_catalog_op_command_edit1a.png)
 
@@ -60,15 +60,15 @@ ht-degree: 1%
 
 中央實體可隨時取消行銷活動套件。
 
-按一下 **[!UICONTROL Cancel]** 在行銷活動套件中 **[!UICONTROL Dashboard]**.
+按一下行銷活動套件&#x200B;**[!UICONTROL Dashboard]**&#x200B;中的&#x200B;**[!UICONTROL Cancel]**。
 
 ![](assets/mkg_dist_cancel_op_from_dashboard.png)
 
-此 **[!UICONTROL Comment]** 欄位可讓您調整取消。
+**[!UICONTROL Comment]**&#x200B;欄位可讓您調整取消。
 
-的 **本地行銷活動**，取消套件會將其從可用行銷活動清單中移除。
+對於&#x200B;**本機行銷活動**，取消套件會將其從可用的行銷活動清單中移除。
 
-的 **合作行銷活動**，取消套件會觸發許多動作：
+對於&#x200B;**合作行銷活動**，取消套件會觸發許多動作：
 
 1. 與此封裝相關的任何訂單都會被取消，
 
@@ -89,15 +89,15 @@ ht-degree: 1%
 已發佈的行銷活動套件可以重新初始化、修改，並供本機實體使用。
 
 1. 選取相關的套件。
-1. 按一下 **[!UICONTROL Reinitialize the package to reuse it]** 連結並按一下 **[!UICONTROL OK]**.
+1. 按一下&#x200B;**[!UICONTROL Reinitialize the package to reuse it]**&#x200B;連結，然後按一下&#x200B;**[!UICONTROL OK]**。
 
    ![](assets/mkg_dist_mutual_op_reinit.png)
 
-1. 按一下 **[!UICONTROL Save]** 按鈕以核准封裝重新初始化。
+1. 按一下&#x200B;**[!UICONTROL Save]**&#x200B;按鈕以核准封裝重新初始化。
 
    ![](assets/mkg_dist_mutual_op_reinit2.png)
 
-1. 封裝狀態變更為 **[!UICONTROL Being edited]**. 再次修改、核准並發佈，以將其還原至行銷活動套件清單。
+1. 封裝狀態變更為&#x200B;**[!UICONTROL Being edited]**。 再次修改、核准並發佈，以將其還原至行銷活動套件清單。
 
 >[!NOTE]
 >

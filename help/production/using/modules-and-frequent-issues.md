@@ -32,12 +32,12 @@ ht-degree: 7%
  <tbody> 
   <tr> 
    <td> 匯出 </td> 
-   <td> 匯出程式的執行<br /> </td> 
+   <td> 執行匯出程式<br /> </td> 
    <td> 排程此匯出的操作員需要重新啟動它。 差異或完整重新啟動。<br /> </td> 
   </tr> 
   <tr> 
    <td> 匯入 </td> 
-   <td> 匯入程式的執行<br /> </td> 
+   <td> 執行匯入程式<br /> </td> 
    <td> 排程此匯出的操作員需要重新啟動它。 檢查資料庫是否有重複專案。<br /> </td> 
   </tr> 
   <tr> 
@@ -58,32 +58,32 @@ ht-degree: 7%
   <tr> 
    <td> syslogd </td> 
    <td> 記錄檔寫入<br /> </td> 
-   <td> 如果記錄檔中缺少某些記錄，請檢查以確定模組使用連線埠6666。 請參閱 <a href="../../production/using/general-architecture.md#list-of-open-ports" target="_blank">開啟的連線埠清單</a>.<br /> </td> 
+   <td> 如果記錄檔中缺少某些記錄，請檢查以確定模組使用連線埠6666。 請參閱<a href="../../production/using/general-architecture.md#list-of-open-ports" target="_blank">開啟的連線埠清單</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> 追蹤 </td> 
-   <td> 合併和擷取追蹤記錄<br /> </td> 
-   <td> 如果追蹤記錄不再轉送，則檢查此模組。<br /> </td> 
+   <td> 正在合併及擷取追蹤記錄<br /> </td> 
+   <td> 如果追蹤記錄不再轉寄，則檢查此模組。<br /> </td> 
   </tr> 
   <tr> 
    <td> trackinglogd </td> 
-   <td> 追蹤記錄檔寫入和清除伺服器<br /> </td> 
-   <td> 如果不再轉送追蹤記錄且伺服器上的檔案中沒有記錄追蹤，則檢查此模組。 請參閱 <a href="../../production/using/tracking-logs-issues.md" target="_blank">追蹤記錄問題</a>.<br /> </td> 
+   <td> 追蹤記錄檔寫入及清除伺服器<br /> </td> 
+   <td> 如果不再轉送追蹤記錄且伺服器上的檔案中沒有記錄追蹤，則檢查此模組。 請參閱<a href="../../production/using/tracking-logs-issues.md" target="_blank">追蹤記錄問題</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> 看門狗 </td> 
    <td> 啟動和監視執行個體<br /> </td> 
-   <td> 如果未啟動任何程式，則檢查此模組。<br /> </td> 
+   <td> 如果沒有處理程式啟動，則檢查此模組。<br /> </td> 
   </tr> 
   <tr> 
    <td> 網頁 </td> 
-   <td> 應用程式伺服器（HTTP和SOAP）<br /> </td> 
-   <td> 如果主控台和Web連線無法運作並觸發 <strong>xtk：session</strong> 型別錯誤<br /> </td> 
+   <td> 應用程式伺服器(HTTP和SOAP)<br /> </td> 
+   <td> 如果主控台和Web連線無法運作並觸發<strong>xtk：session</strong>型別錯誤，則檢查此模組<br /> </td> 
   </tr> 
   <tr> 
    <td> wfserver </td> 
-   <td> 控制工作流程執行個體的執行。<br /> </td> 
-   <td> 如果您遇到任何問題，請重新啟動此模組。 如有必要，請套用程式來提高中詳述的記錄精確度 <a href="../../production/using/log-precision.md" target="_blank">記錄精確度</a> 區段。<br /> </td> 
+   <td> 控制工作流程執行個體執行。<br /> </td> 
+   <td> 如果您遇到任何問題，請重新啟動此模組。 如有必要，請套用程式來增加<a href="../../production/using/log-precision.md" target="_blank">記錄檔精確度</a>區段中詳述的記錄檔精確度。<br /> </td> 
   </tr> 
  </tbody> 
 </table>

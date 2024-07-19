@@ -34,15 +34,15 @@ ht-degree: 3%
 
 您可以設定報表以檢視匯出PDF、Excel或OpenOffice格式的報表。 開啟Adobe Campaign檔案總管並選取相關報表。
 
-匯出選項可透過以下方式存取： **[!UICONTROL Page]** 報告的活動，在 **[!UICONTROL Advanced]** 標籤。
+匯出選項是透過報告的&#x200B;**[!UICONTROL Page]**&#x200B;活動（在&#x200B;**[!UICONTROL Advanced]**&#x200B;索引標籤中）存取。
 
-變更的設定 **[!UICONTROL Paper]** 和 **[!UICONTROL Margins]** 以符合您的需求。 您也可以授權僅以PDF格式匯出頁面。 若要這麼做，請取消勾選 **[!UICONTROL Activate OpenOffice/Microsoft Excel export]** 選項。
+變更&#x200B;**[!UICONTROL Paper]**&#x200B;和&#x200B;**[!UICONTROL Margins]**&#x200B;的設定以符合您的需求。 您也可以授權僅以PDF格式匯出頁面。 若要這麼做，請取消勾選&#x200B;**[!UICONTROL Activate OpenOffice/Microsoft Excel export]**&#x200B;選項。
 
 ![](assets/s_ncs_advuser_report_wizard_021.png)
 
 ### 匯出至Microsoft Excel {#exporting-into-microsoft-excel}
 
-的 **[!UICONTROL List with group]** 輸入要匯出至Excel的報表型別，適用下列建議和限制：
+對於預定要匯出至Excel的&#x200B;**[!UICONTROL List with group]**&#x200B;型別報表，適用下列建議和限制：
 
 * 這些報表不得包含任何空白行。
 
@@ -52,7 +52,7 @@ ht-degree: 3%
 
   ![](assets/export_limitations_hide_label.png)
 
-* 報表不必使用在儲存格層級定義的特定格式。 最好使用 **[!UICONTROL Form rendering]** 以定義表格中儲存格的格式。 此 **[!UICONTROL Form rendering]** 可透過以下方式存取 **[!UICONTROL Administration > Configuration > Form rendering]**.
+* 報表不必使用在儲存格層級定義的特定格式。 最好使用&#x200B;**[!UICONTROL Form rendering]**&#x200B;來定義表格中儲存格的格式。 **[!UICONTROL Form rendering]**&#x200B;可以透過&#x200B;**[!UICONTROL Administration > Configuration > Form rendering]**&#x200B;存取。
 * 我們不建議插入HTML內容。
 * 如果報告包含數個表格、圖表等， 文字元素，它們會一個匯出到另一個之下。
 * 您可以在儲存格中強制歸位：此設定將保留在Excel中。 如需詳細資訊，請參閱[本章節](../../reporting/using/creating-a-table.md#defining-cell-format)。
@@ -65,29 +65,29 @@ ht-degree: 3%
 document.nl_waitBeforeRender = true;
 ```
 
-若要啟動匯出並開始轉換為PDF，請使用 **document.nl_renderToPdf()** 函式且不含任何引數。
+若要啟動匯出並開始轉換為PDF，請使用不含任何引數的&#x200B;**document.nl_renderToPdf()**&#x200B;函式。
 
 ### 記憶體配置 {#memory-allocation}
 
 匯出某些大型報表時，可能會發生記憶體配置錯誤。
 
-在某些情況下，預設值 **maxMB** (**SKMS** 中指定的託管例項)。 **serverConf.xml** 設定檔案設定為64 MB。 如果您在匯出報表時遇到任何記憶體不足的錯誤，建議將此數字增加到512 MB：
+在某些執行個體中，**serverConf.xml**&#x200B;組態檔中指示的JavaScript預設值&#x200B;**maxMB** (**SKMS** （針對裝載的執行個體）)設定為64 MB。 如果您在匯出報表時遇到任何記憶體不足的錯誤，建議將此數字增加到512 MB：
 
 ```
 <javaScript maxMB="512" stackSizeKB="8"/>
 ```
 
-若要套用對組態所做的變更，請 **nlserver** 需要重新啟動服務。
+若要套用對組態所做的變更，必須重新啟動&#x200B;**nlserver**&#x200B;服務。
 
-進一步瞭解 **serverConf.xml** 檔案，請參閱 [本節](../../production/using/configuration-principle.md).
+若要進一步瞭解&#x200B;**serverConf.xml**&#x200B;檔案，請參閱[本節](../../production/using/configuration-principle.md)。
 
-進一步瞭解 **nlserver** 服務，請參閱 [本節](../../production/using/administration.md).
+若要進一步瞭解&#x200B;**nlserver**&#x200B;服務，請參閱[本節](../../production/using/administration.md)。
 
 ## 列印報表 {#printing-a-report}
 
 您可以列印報告：若要這樣做，請按一下印表機圖示：這會開啟對話方塊。
 
-為了獲得更好的結果，請編輯Explorer列印選項並選取 **[!UICONTROL Print background colors and images]**.
+為了獲得更好的結果，請編輯瀏覽器列印選項並選取&#x200B;**[!UICONTROL Print background colors and images]**。
 
 ![](assets/s_ncs_advuser_report_print_options.png)
 
@@ -107,6 +107,6 @@ document.nl_waitBeforeRender = true;
 
 ![](assets/s_ncs_advuser_report_history_04.png)
 
-您可以刪除報表封存。 若要這麼做，請前往儲存報表的Adobe Campaign節點。 按一下 **[!UICONTROL Archives]** 索引標籤中，選取要刪除的專案，然後按一下 **[!UICONTROL Delete]**.
+您可以刪除報表封存。 若要這麼做，請前往儲存報表的Adobe Campaign節點。 按一下「**[!UICONTROL Archives]**」標籤，選取要刪除的標籤，然後按一下「**[!UICONTROL Delete]**」。
 
 ![](assets/s_ncs_advuser_report_history_01.png)

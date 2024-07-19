@@ -62,7 +62,7 @@ ht-degree: 3%
    * 第一個公開給大眾用於追蹤和指向虛擬IP位址(VIP)上的負載平衡器，然後分發給兩個前端伺服器，
    * 第二個透過主控台公開給內部使用者以存取，並指向虛擬IP位址(VIP)上的負載平衡器，然後將其分發給兩個應用程式伺服器。
 
-* 防火牆已設定為開啟STMP (25)、DNS (53)、HTTP (80)、HTTPS (443)、SQL (1521 (Oracle)、5432 (PostgreSQL)等) 連線埠。 如需詳細資訊，請參閱區段 [資料庫存取](../../installation/using/network-configuration.md#database-access).
+* 防火牆已設定為開啟STMP (25)、DNS (53)、HTTP (80)、HTTPS (443)、SQL (1521 (Oracle)、5432 (PostgreSQL)等) 連線埠。 如需進一步資訊，請參閱區段[資料庫存取](../../installation/using/network-configuration.md#database-access)。
 
 >[!CAUTION]
 >
@@ -77,17 +77,17 @@ ht-degree: 3%
 在下列範例中，例項的引數為：
 
 * 執行個體的名稱：示範
-* DNS遮罩： tracking.campaign.net&#42;， console.campaign.net&#42; （應用程式伺服器會處理使用者端主控台連線和報表的URL，以及映象頁面和取消訂閱頁面的URL）
+* DNS遮罩： tracking.campaign.net&#42;， console.campaign.net&#42; （應用程式伺服器會處理使用者端主控台連線和報告，以及映象頁面和取消訂閱頁面的URL）
 * 語言：英文
 * 資料庫： campaign：demo@dbsrv
 
 安裝第一台伺服器的步驟如下：
 
-1. 請依照Adobe Campaign伺服器的安裝程式進行： **nlserver** package on Linux或 **setup.exe** 在Windows上。
+1. 請依照Adobe Campaign伺服器的安裝程式進行：在Linux上執行&#x200B;**nlserver**&#x200B;封裝，或在Windows上執行&#x200B;**setup.exe**。
 
-   有關詳細資訊，請參閱 [在Linux安裝Campaign的必要條件](../../installation/using/prerequisites-of-campaign-installation-in-linux.md) (Linux)和 [在Windows安裝Campaign的必要條件](../../installation/using/prerequisites-of-campaign-installation-in-windows.md) (Windows)。
+   如需詳細資訊，請參閱[在Linux安裝Campaign的必要條件](../../installation/using/prerequisites-of-campaign-installation-in-linux.md) (Linux)以及[在Windows](../../installation/using/prerequisites-of-campaign-installation-in-windows.md) (Windows)安裝Campaign的必要條件。
 
-1. 安裝Adobe Campaign伺服器後，請使用命令啟動應用程式伺服器（網頁） **nlserver web -tomcat** （Web模組可讓您以獨立Web伺服器模式在連線埠8080上接聽，啟動Tomcat），並確保Tomcat正確啟動：
+1. 安裝Adobe Campaign伺服器後，請使用命令&#x200B;**nlserver web -tomcat**&#x200B;啟動應用程式伺服器(Web) （Web模組可讓您以獨立Web伺服器模式啟動Tomcat，接聽連線埠8080），並確定Tomcat正確啟動：
 
    ```sql
    12:08:18 >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
@@ -99,16 +99,16 @@ ht-degree: 3%
 
    >[!NOTE]
    >
-   >第一次執行Web模組時，會建立 **config-default.xml** 和 **serverConf.xml** 中的檔案 **conf** 目錄（在安裝資料夾下）。 所有引數都可在 **serverConf.xml** 列於此 [區段](../../installation/using/the-server-configuration-file.md).
+   >第一次執行Web模組時，會在安裝資料夾下的&#x200B;**conf**&#x200B;目錄中建立&#x200B;**config-default.xml**&#x200B;和&#x200B;**serverConf.xml**&#x200B;檔案。 **serverConf.xml**&#x200B;中可用的所有引數都列在此[區段](../../installation/using/the-server-configuration-file.md)中。
 
-   按下 **Ctrl+C** 停止伺服器。
+   按&#x200B;**Ctrl+C**&#x200B;以停止伺服器。
 
    如需詳細資訊，請參閱下列章節：
 
    * 針對Linux： [伺服器的首次啟動](../../installation/using/installing-packages-with-linux.md#first-start-up-of-the-server)
-   * 對於Windows： [伺服器的首次啟動](../../installation/using/installing-the-server.md#first-start-up-of-the-server)
+   * 針對Windows： [伺服器的首次啟動](../../installation/using/installing-the-server.md#first-start-up-of-the-server)
 
-1. 變更 **內部** 使用命令的密碼：
+1. 使用下列命令變更&#x200B;**內部**&#x200B;密碼：
 
    ```
    nlserver config -internalpassword
@@ -116,13 +116,13 @@ ht-degree: 3%
 
    如需詳細資訊，請參閱[本章節](../../installation/using/configuring-campaign-server.md#internal-identifier)。
 
-1. 建立 **示範** 具有DNS遮罩以追蹤的例項(在此案例中， **tracking.campaign.net**)和使用者端主控台的存取權(在此案例中， **console.campaign.net**)。 有兩種方法可以達成此目的：
+1. 使用DNS遮罩建立&#x200B;**demo**&#x200B;執行個體，以追蹤（在此例中為&#x200B;**tracking.campaign.net**）和存取使用者端主控台（在此例中為&#x200B;**console.campaign.net**）。 有兩種方法可以達成此目的：
 
    * 透過主控台建立執行個體：
 
      ![](assets/install_create_new_connexion.png)
 
-     有關詳細資訊，請參閱 [建立執行個體並登入](../../installation/using/creating-an-instance-and-logging-on.md).
+     如需詳細資訊，請參閱[建立執行個體並登入](../../installation/using/creating-an-instance-and-logging-on.md)。
 
      或
 
@@ -132,9 +132,9 @@ ht-degree: 3%
      nlserver config -addinstance:demo/tracking.campaign.net*,console.campaign.net*
      ```
 
-     有關詳細資訊，請參閱 [建立執行個體](../../installation/using/command-lines.md#creating-an-instance).
+     如需詳細資訊，請參閱[建立執行個體](../../installation/using/command-lines.md#creating-an-instance)。
 
-1. 編輯 **config-demo.xml** 檔案(透過先前的指令建立，並位於 **config-default.xml** 檔案)，檢查 **mta** （傳遞）， **wfserver** （工作流程）， **inMail** （反彈郵件）和 **stat** （統計）處理作業已啟用，然後設定 **app** 統計伺服器：
+1. 編輯&#x200B;**config-demo.xml**&#x200B;檔案（透過先前的命令建立且位於&#x200B;**config-default.xml**&#x200B;檔案旁），檢查&#x200B;**mta** （傳遞）、**wfserver** （工作流程）、**inMail** （復原郵件）和&#x200B;**stat** （統計資料）處理程式是否已啟用，然後設定&#x200B;**應用程式**&#x200B;統計伺服器的位址：
 
    ```xml
    <?xml version='1.0'?>
@@ -154,7 +154,7 @@ ht-degree: 3%
 
    如需詳細資訊，請參閱[本章節](../../installation/using/configuring-campaign-server.md#enabling-processes)。
 
-1. 編輯 **serverConf.xml** 檔案並指定傳遞網域，然後指定MTA模組用於回應MX型別DNS查詢之DNS伺服器的IP （或主機）位址。
+1. 編輯&#x200B;**serverConf.xml**&#x200B;檔案並指定傳遞網域，然後指定MTA模組用於回應MX型別DNS查詢之DNS伺服器的IP （或主機）位址。
 
    ```xml
    <dnsConfig localDomain="campaign.com" nameServers="192.0.0.1, 192.0.0.2"/>
@@ -162,17 +162,17 @@ ht-degree: 3%
 
    >[!NOTE]
    >
-   >此 **nameServer** 引數僅用於Windows。
+   >**nameServers**&#x200B;引數僅用於Windows。
 
-   有關詳細資訊，請參閱 [Campaign伺服器設定](../../installation/using/configuring-campaign-server.md).
+   如需詳細資訊，請參閱[Campaign伺服器組態](../../installation/using/configuring-campaign-server.md)。
 
-1. 複製使用者端主控台安裝程式 **setup-client-7.XX**， **YYYY.exe** 至 **/datakit/nl/eng/jsp** 資料夾。 [了解更多](../../installation/using/client-console-availability-for-windows.md)。
+1. 將使用者端主控台安裝程式&#x200B;**setup-client-7.XX**、**YYYY.exe**&#x200B;複製到&#x200B;**/datakit/nl/eng/jsp**&#x200B;資料夾。 [了解更多](../../installation/using/client-console-availability-for-windows.md)。
 
-1. 啟動Adobe Campaign伺服器(**網路啟動nlserver6** 在Windows， **/etc/init.d/nlserver6開始** （在Linux中）並執行指令 **nlserver pdump** 再次檢查所有已啟用的模組是否存在。
+1. 啟動Adobe Campaign伺服器(**net start nlserver6** （在Windows中），**/etc/init.d/nlserver6 start** （在Linux中）)，然後再次執行命令&#x200B;**nlserver pdump**&#x200B;以檢查所有啟用的模組是否存在。
 
    >[!NOTE]
    >
-   >從20.1版開始，建議您改用下列命令（適用於Linux）： **systemctl啟動nlserver**
+   >從20.1開始，我們建議改用以下命令（適用於Linux）： **systemctl start nlserver**
 
 
    ```sql
@@ -188,11 +188,11 @@ ht-degree: 3%
 
    此命令也可讓您知道電腦上安裝的Adobe Campaign伺服器的版本和版本編號。
 
-1. 測試 **nlserver web** 模組使用URL： [https://console.campaign.net/nl/jsp/logon.jsp](https://tracking.campaign.net/r/test).
+1. 使用URL測試&#x200B;**nlserver web**&#x200B;模組： [https://console.campaign.net/nl/jsp/logon.jsp](https://tracking.campaign.net/r/test)。
 
    此URL可讓您存取使用者端安裝程式的下載頁面。 [了解更多](../../installation/using/client-console-availability-for-windows.md)。
 
-   輸入 **內部** 存取控制頁面時的登入及相關密碼。
+   進入存取控制頁面時，請輸入&#x200B;**內部**&#x200B;登入及相關密碼。
 
    ![](assets/s_ncs_install_access_client.png)
 
@@ -205,14 +205,14 @@ ht-degree: 3%
 
    我們保留與應用程式伺服器1相同的執行個體名稱。
 
-1. 變更 **內部** 與應用程式伺服器1相同。
+1. 將&#x200B;**internal**&#x200B;變更為與應用程式伺服器1相同。
 1. 將資料庫連結至執行處理：
 
    ```
    nlserver config -setdblogin:PostgreSQL:campaign:demo@dbsrv -instance:demo
    ```
 
-1. 編輯 **config-demo.xml** 檔案(透過先前的指令建立，並位於 **config-default.xml** 檔案)，檢查 **mta** （傳遞）， **wfserver** （工作流程）， **inMail** （反彈郵件）和 **stat** （統計）處理作業已啟用，然後設定 **app** 統計伺服器：
+1. 編輯&#x200B;**config-demo.xml**&#x200B;檔案（透過先前的命令建立且位於&#x200B;**config-default.xml**&#x200B;檔案旁），檢查&#x200B;**mta** （傳遞）、**wfserver** （工作流程）、**inMail** （復原郵件）和&#x200B;**stat** （統計資料）處理程式是否已啟用，然後設定&#x200B;**應用程式**&#x200B;統計伺服器的位址：
 
    ```xml
    <?xml version='1.0'?>
@@ -232,7 +232,7 @@ ht-degree: 3%
 
    如需詳細資訊，請參閱[本章節](../../installation/using/configuring-campaign-server.md#enabling-processes)。
 
-1. 編輯 **serverConf.xml** 檔案並填入MTA模組的DNS設定：
+1. 編輯&#x200B;**serverConf.xml**&#x200B;檔案並填入MTA模組的DNS設定：
 
    ```xml
    <dnsConfig localDomain="campaign.com" nameServers="192.0.0.1, 192.0.0.2"/>
@@ -240,16 +240,16 @@ ht-degree: 3%
 
    >[!NOTE]
    >
-   >此 **nameServer** 引數僅用於Windows。
+   >**nameServers**&#x200B;引數僅用於Windows。
 
-   有關詳細資訊，請參閱 [Campaign伺服器設定](../../installation/using/configuring-campaign-server.md).
+   如需詳細資訊，請參閱[Campaign伺服器組態](../../installation/using/configuring-campaign-server.md)。
 
 1. 啟動Adobe Campaign伺服器。
 
    如需詳細資訊，請參閱下列章節：
 
    * 針對Linux： [伺服器的首次啟動](../../installation/using/installing-packages-with-linux.md#first-start-up-of-the-server)
-   * 對於Windows： [伺服器的首次啟動](../../installation/using/installing-the-server.md#first-start-up-of-the-server)
+   * 針對Windows： [伺服器的首次啟動](../../installation/using/installing-the-server.md#first-start-up-of-the-server)
 
 ### 安裝和設定前端伺服器 {#installing-and-configuring-the-frontal-servers}
 
@@ -260,18 +260,18 @@ ht-degree: 3%
 1. 安裝Adobe Campaign伺服器，
 1. 請遵循以下各節所述的Web伺服器整合程式(IIS、Apache)：
 
-   * 針對Linux： [與Linux網頁伺服器整合](../../installation/using/integration-into-a-web-server-for-linux.md)，
-   * 對於Windows： [與Windows版Web伺服器整合](../../installation/using/integration-into-a-web-server-for-windows.md).
+   * 針對Linux： [整合至Linux網頁伺服器](../../installation/using/integration-into-a-web-server-for-linux.md)，
+   * 針對Windows： [整合至Windows的Web伺服器](../../installation/using/integration-into-a-web-server-for-windows.md)。
 
-1. 複製 **config-demo.xml** 和 **serverConf.xml** 在安裝期間建立的檔案。 在 **config-demo.xml** 檔案，啟動 **trackinglogd** 處理並停用 **mta**， **inmail**， **wfserver** 和 **stat** 程式。
-1. 編輯 **serverConf.xml** 檔案，並在重新導向的引數中填入多餘的追蹤伺服器：
+1. 複製安裝期間建立的&#x200B;**config-demo.xml**&#x200B;和&#x200B;**serverConf.xml**&#x200B;檔案。 在&#x200B;**config-demo.xml**&#x200B;檔案中，啟用&#x200B;**trackinglogd**&#x200B;處理序並停用&#x200B;**mta**、**inmail**、**wfserver**&#x200B;和&#x200B;**stat**&#x200B;處理序。
+1. 編輯&#x200B;**serverConf.xml**&#x200B;檔案，並在重新導向的引數中填入多餘的追蹤伺服器：
 
    ```xml
    <spareServer enabledIf="$(hostname)!='front_srv1'" id="1" url="https://front_srv1:8080"/>
    <spareServer enabledIf="$(hostname)!='front_srv2'" id="2" url="https://front_srv2:8080"/>
    ```
 
-1. 啟動網站，並從URL測試重新導向： [https://tracking.campaign.net/r/test](https://tracking.campaign.net/r/test)
+1. 啟動網站並從URL測試重新導向： [https://tracking.campaign.net/r/test](https://tracking.campaign.net/r/test)
 
    瀏覽器應顯示以下訊息（視負載平衡器重新導向的URL而定）：
 
@@ -287,7 +287,7 @@ ht-degree: 3%
 
    如需詳細資訊，請參閱下列章節：
 
-   * 針對Linux： [啟動Web伺服器並測試設定](../../installation/using/integration-into-a-web-server-for-linux.md#launching-the-web-server-and-testing-the-configuration)，
-   * 對於Windows： [啟動Web伺服器並測試設定](../../installation/using/integration-into-a-web-server-for-windows.md#launching-the-web-server-and-testing-the-configuration).
+   * 針對Linux： [正在啟動Web伺服器並測試組態](../../installation/using/integration-into-a-web-server-for-linux.md#launching-the-web-server-and-testing-the-configuration)，
+   * 針對Windows： [正在啟動Web伺服器並測試組態](../../installation/using/integration-into-a-web-server-for-windows.md#launching-the-web-server-and-testing-the-configuration)。
 
 1. 啟動Adobe Campaign伺服器。

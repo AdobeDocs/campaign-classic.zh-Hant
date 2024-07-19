@@ -20,7 +20,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->Adobe Campaign中調查的生命週期及其發佈和傳送模式類似於Web表單的生命週期：詳見 [本節](../../web/using/about-web-forms.md).
+>Adobe Campaign中調查的生命週期及其發佈和傳送模式類似於Web表單：這些在[本節](../../web/using/about-web-forms.md)中有詳細說明。
 
 ## 調查儀表板 {#survey-dashboard}
 
@@ -36,11 +36,11 @@ ht-degree: 2%
 
 ### 調查記錄 {#survey-logs}
 
-對於已傳送的每個調查，您都可以在以下位置追蹤回應： **[!UICONTROL Logs]** 標籤。 此索引標籤顯示已完成調查的使用者清單及其來源：
+對於每個傳送的問卷，您可以在&#x200B;**[!UICONTROL Logs]**&#x200B;索引標籤中追蹤回應。 此索引標籤顯示已完成調查的使用者清單及其來源：
 
 ![](assets/s_ncs_admin_survey_logs.png)
 
-連按兩下某一行，以顯示回應填入的調查表單。 您可以瀏覽調查問卷的全文，並完整存取答案。 這些檔案可匯出到外部檔案中。 有關詳細資訊，請參閱 [匯出答案](#exporting-answers).
+連按兩下某一行，以顯示回應填入的調查表單。 您可以瀏覽調查問卷的全文，並完整存取答案。 這些檔案可匯出到外部檔案中。 如需詳細資訊，請參閱[匯出答案](#exporting-answers)。
 
 透過新增下列字元，在調查URL中指出來源：
 
@@ -48,9 +48,9 @@ ht-degree: 2%
 ?origin=xxx
 ```
 
-在編輯調查時，其URL包含引數 **[!UICONTROL __uuid]**，表示其處於測試階段且尚未上線。 當您透過此URL存取意見調查時，建立的記錄不會納入追蹤（報表）的考量。 原點會強製為值 **[!UICONTROL Adobe Campaign]**.
+正在編輯意見調查時，其URL包含引數&#x200B;**[!UICONTROL __uuid]**，這表示它處於測試階段，尚未上線。 當您透過此URL存取意見調查時，建立的記錄不會納入追蹤（報表）的考量。 來源被強製為值&#x200B;**[!UICONTROL Adobe Campaign]**。
 
-如需URL引數的詳細資訊，請參閱 [此頁面](../../web/using/defining-web-forms-properties.md#form-url-parameters).
+如需URL引數的詳細資訊，請參閱[此頁面](../../web/using/defining-web-forms-properties.md#form-url-parameters)。
 
 ### 調查報表 {#reports-on-surveys}
 
@@ -58,9 +58,9 @@ ht-degree: 2%
 
 ![](assets/s_ncs_admin_survey_report_doc.png)
 
-問卷的結構可見於 **[!UICONTROL Documentation]** 報告。
+意見調查的結構會顯示在&#x200B;**[!UICONTROL Documentation]**&#x200B;報表中。
 
-關於網路調查的其他兩份報告可在以下網址取得： **[!UICONTROL Reports]** 調查的索引標籤： **[!UICONTROL General]** 和 **[!UICONTROL Breakdown of responses]**.
+在調查的&#x200B;**[!UICONTROL Reports]**&#x200B;索引標籤中還有另外兩個關於網路調查的報告： **[!UICONTROL General]**&#x200B;和&#x200B;**[!UICONTROL Breakdown of responses]**。
 
 * 一般
 
@@ -72,7 +72,7 @@ ht-degree: 2%
 
 * 回覆的劃分
 
-  此報表顯示每個問題的回覆細目。 此劃分僅適用於所儲存欄位的答案 **[!UICONTROL Question]** 輸入容器。 它僅適用於選取控制項（例如文字欄位沒有劃分）。
+  此報表顯示每個問題的回覆細目。 此劃分僅適用於&#x200B;**[!UICONTROL Question]**&#x200B;型別容器中儲存欄位的答案。 它僅適用於選取控制項（例如文字欄位沒有劃分）。
 
   ![](assets/s_ncs_admin_survey_report_2.png)
 
@@ -82,13 +82,13 @@ ht-degree: 2%
 
 1. 匯出報表資料
 
-   若要匯出報表資料，請按一下 **[!UICONTROL Export]** 按鈕並選擇匯出格式。
+   若要匯出報表資料，請按一下&#x200B;**[!UICONTROL Export]**&#x200B;按鈕，然後選擇匯出格式。
 
-   如需匯出報表資料的詳細資訊，請參閱 [本節](../../reporting/using/about-reports-creation-in-campaign.md).
+   如需匯出報表資料的詳細資訊，請參閱[本區段](../../reporting/using/about-reports-creation-in-campaign.md)。
 
 1. 匯出答案
 
-   若要匯出答案，請按一下 **[!UICONTROL Responses]** 問卷的索引標籤，然後按一下滑鼠右鍵。 選取 **[!UICONTROL Export...]**。
+   若要匯出答案，請按一下問卷的&#x200B;**[!UICONTROL Responses]**&#x200B;標籤，然後按一下滑鼠右鍵。 選取 **[!UICONTROL Export...]**。
 
    ![](assets/s_ncs_admin_survey_logs_export_menu.png)
 
@@ -102,31 +102,31 @@ ht-degree: 2%
    * 格式化匯出的資料，
    * 選取檔案中資訊的編碼格式。
 
-   如果您要匯出的問卷包含數個 **[!UICONTROL Multi-line text]** 或 **[!UICONTROL HTML text]** 欄位，它必須匯出到 **[!UICONTROL XML]** 格式。 若要這麼做，請在 **[!UICONTROL Output format]** 欄位，如下所示：
+   如果您要匯出的問卷包含多個&#x200B;**[!UICONTROL Multi-line text]**&#x200B;或&#x200B;**[!UICONTROL HTML text]**&#x200B;欄位，則必須以&#x200B;**[!UICONTROL XML]**&#x200B;格式匯出。 若要這麼做，請在&#x200B;**[!UICONTROL Output format]**&#x200B;欄位的下拉式清單中選取此格式，如下所示：
 
    ![](assets/s_ncs_admin_survey_logs_export_xml.png)
 
-   按一下 **[!UICONTROL Start]** 以執行匯出。
+   按一下&#x200B;**[!UICONTROL Start]**&#x200B;以執行匯出。
 
    >[!NOTE]
    >
-   >資料匯出及其設定的階段詳見 [本節](../../platform/using/about-generic-imports-exports.md).
+   >[此區段](../../platform/using/about-generic-imports-exports.md)中詳細說明了資料匯出及其設定的階段。
 
 ## 使用收集的資料 {#using-the-collected-data}
 
-透過線上調查收集的資訊可在目標定位工作流程的框架內復原。 若要這麼做，請使用 **[!UICONTROL Survey responses]** 方塊。
+透過線上調查收集的資訊可在目標定位工作流程的框架內復原。 若要這麼做，請使用&#x200B;**[!UICONTROL Survey responses]**&#x200B;方塊。
 
 在下列範例中，我們想要針對線上上調查中至少有兩個孩子且分數最高的五名收件者，特別提供網站優惠方案。 本問卷的答案為：
 
 ![](assets/s_ncs_admin_survey_responses_wf_box_4.png)
 
-在目標定位工作流程中， **[!UICONTROL Survey responses]** 將設定如下：
+在目標定位工作流程中，**[!UICONTROL Survey responses]**&#x200B;將設定如下：
 
 ![](assets/s_ncs_admin_survey_responses_wf_box_1.png)
 
 首先，請選取相關的調查，然後在視窗的中央區段中選取要擷取的資料。 在此情況下，我們至少需要擷取分數欄，因為此分數欄將用於分割方塊，以復原5個最高分數。
 
-按一下「 」，指示答案的篩選條件 **[!UICONTROL Edit query...]** 連結。
+按一下&#x200B;**[!UICONTROL Edit query...]**&#x200B;連結，指示答案的篩選條件。
 
 ![](assets/s_ncs_admin_survey_responses_wf_box_2.png)
 
@@ -142,23 +142,23 @@ ht-degree: 2%
 
 編輯分割方塊以進行設定：
 
-* 首先，選取 **[!UICONTROL General]** 標籤，然後設定子集：
+* 在&#x200B;**[!UICONTROL General]**&#x200B;索引標籤中選取適當的結構描述，然後設定子集：
 
   ![](assets/s_ncs_admin_survey_responses_wf_box_6b.png)
 
-* 前往 **[!UICONTROL Sub-sets]** 標籤並選取 **[!UICONTROL Limit the selected records]** 選項，然後按一下 **[!UICONTROL Edit...]** 連結。
+* 移至&#x200B;**[!UICONTROL Sub-sets]**&#x200B;標籤並選取&#x200B;**[!UICONTROL Limit the selected records]**&#x200B;選項，然後按一下&#x200B;**[!UICONTROL Edit...]**&#x200B;連結。
 
   ![](assets/s_ncs_admin_survey_responses_wf_box_7.png)
 
-* 選取 **[!UICONTROL Keep only the first records after sorting]** 選項並選取排序欄。 核取 **[!UICONTROL Descending sort]** 選項。
+* 選取&#x200B;**[!UICONTROL Keep only the first records after sorting]**&#x200B;選項並選取排序欄。 核取 **[!UICONTROL Descending sort]** 選項。
 
   ![](assets/s_ncs_admin_survey_responses_wf_box_8.png)
 
-* 按一下 **[!UICONTROL Next]** 按鈕並將記錄數限製為5。
+* 按一下&#x200B;**[!UICONTROL Next]**&#x200B;按鈕，將記錄數限製為5。
 
   ![](assets/s_ncs_admin_survey_responses_wf_box_9.png)
 
-* 按一下 **[!UICONTROL Finish]** 然後重新啟動工作流程以核准鎖定目標。
+* 按一下&#x200B;**[!UICONTROL Finish]**，然後重新啟動工作流程以核准鎖定目標。
 
 ## 標準化資料 {#standardizing-data}
 

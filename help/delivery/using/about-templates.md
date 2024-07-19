@@ -17,7 +17,7 @@ ht-degree: 1%
 
 傳遞設定可以儲存在傳遞範本中以便重複使用。 範本可能包含傳遞的完整或部分設定。
 
-傳遞範本可以手動執行（如本章所述），或根據事件（在設定時間啟動、檔案到達伺服器等）執行。 傳遞範本可透過 **[!UICONTROL Resources > Templates > Delivery templates]** 樹狀結構中的節點。
+傳遞範本可以手動執行（如本章所述），或根據事件（在設定時間啟動、檔案到達伺服器等）執行。 傳遞範本可透過樹狀結構中的&#x200B;**[!UICONTROL Resources > Templates > Delivery templates]**&#x200B;節點進行設定。
 
 ![](assets/s_user_template_list.png)
 
@@ -33,4 +33,4 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->可用的範本取決於存取權、執行個體設定和上下文。 例如，當您建立資訊服務時，可以連結確認訊息的傳遞範本：然後您只能存取其目標對應為訂閱對應的範本。 有關詳細資訊，請參閱 [選取目標對應](selecting-a-target-mapping.md) 和 [服務與訂閱](about-services-and-subscriptions.md).
+>可用的範本取決於存取權、執行個體設定和上下文。 例如，當您建立資訊服務時，可以連結確認訊息的傳遞範本：然後您只能存取其目標對應為訂閱對應的範本。 如需詳細資訊，請參閱[選取目標對應](selecting-a-target-mapping.md)和[服務與訂閱](about-services-and-subscriptions.md)。

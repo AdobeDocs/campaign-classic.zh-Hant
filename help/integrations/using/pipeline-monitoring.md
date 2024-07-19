@@ -18,7 +18,7 @@ ht-degree: 1%
 
 
 
-此 [!DNL pipelined] 狀態web服務提供 [!DNL pipelined] 程式。
+[!DNL pipelined]狀態Web服務提供[!DNL pipelined]處理序的狀態資訊。
 
 您可以使用瀏覽器手動存取，或透過監控應用程式自動存取。
 
@@ -43,12 +43,12 @@ ht-degree: 1%
    * next-offsets-flush：完成時等到下一個批次的時間。
    * processed-since-last-flush：上一個批次中已處理的觸發程式數目。
 * 路由
-   * triggers：擷取的觸發器清單。 在中設定 [!DNL pipelined] 選項。
+   * triggers：擷取的觸發器清單。 已在[!DNL pipelined]選項中設定。
 * 統計資料
    * average-pointer-flush-time-ms：一個觸發程式批次的平均處理時間。
    * average-trigger-processing-time-ms：剖析觸發程式資料所花費的平均時間。
    * bytes-read：自處理程式啟動後，從佇列讀取的位元組數。
-   * current-messages：目前從佇列提取並等待處理的擱置訊息數目。 **此指標應接近零**.
+   * current-messages：目前從佇列提取並等待處理的擱置訊息數目。 **此指標應該接近零**。
    * current-retries：處理失敗並等待重試的目前訊息數。
    * peak-messages：處理程式自啟動後已處理的最大擱置訊息數。
    * pointer-flushes：自開始以來處理的訊息批次數量。
@@ -61,8 +61,8 @@ ht-degree: 1%
 
 * average-trigger-processing-time-ms：剖析觸發程式資料所花費的平均時間。
 * is-JS-processor：如果此執行緒使用自訂JS，則值為「1」。
-* trigger-discarded：因處理錯誤而重試太多後捨棄的訊息數。 **此指標應為零**.
-* trigger-failures： JS中的處理錯誤數。 **此指標應為零**.
+* trigger-discarded：因處理錯誤而重試太多後捨棄的訊息數。 **此指標應為零**。
+* trigger-failures： JS中的處理錯誤數。 **此指標應為零**。
 * trigger-received：從佇列接收的訊息數。
 
 * 設定：在設定檔案中設定。

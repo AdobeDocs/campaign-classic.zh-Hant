@@ -17,11 +17,11 @@ ht-degree: 6%
 
 Microsoft Internet Explorer 11生命週期結束後，使用者端主控台中控制面板的HTML轉譯引擎使用Edge Chromium，從Campaign Classic v7.3開始。
 
-除了安裝Microsoft Edge Webview 2執行階段，現在是 [任何使用者端主控台安裝均需要](../../installation/using/installing-the-client-console.md#webview)，您必須在執行個體上啟用Microsoft Edge Chromium。
+除了安裝Microsoft Edge Webview 2執行階段（現在任何使用者端主控台安裝](../../installation/using/installing-the-client-console.md#webview)都需要[）之外，您必須在執行個體上啟用Microsoft Edge Chromium。
 
 >[!NOTE]
 >
->啟用Microsoft Edge Chromium後， `Ctrl+F` (Windows)或 `Command+F` (Mac)開啟瀏覽器搜尋對話方塊的捷徑將不再有效。
+>啟用Microsoft Edge Chromium後，`Ctrl+F` (Windows)或`Command+F` (Mac)開啟瀏覽器搜尋對話方塊的捷徑將不再運作。
 
 ## 您有受到影響嗎？
 
@@ -29,16 +29,16 @@ Microsoft Internet Explorer 11生命週期結束後，使用者端主控台中�
 
 ## 如何更新？
 
-* 作為 **託管** 客戶，Adobe已在您的執行個體上啟用Microsoft Edge Chromium。 不需要其他動作。
+* 作為&#x200B;**託管**&#x200B;客戶，Adobe已在您的執行個體上啟用Microsoft Edge Chromium。 不需要其他動作。
 
-* 作為 **內部部署/混合** 客戶，您必須在執行個體上啟用Microsoft Edge Chromium。
+* 作為&#x200B;**內部部署/混合**&#x200B;客戶，您必須在執行個體上啟用Microsoft Edge Chromium。
 
-  升級至Campaign Classic v7.3 （及更新版本）時，新增 `webView2Mode` 屬性可在Campaign伺服器設定檔案中使用 `serverConf.xml`. 必須啟用此屬性。
+  升級至Campaign Classic v7.3 （及更新版本）時，Campaign伺服器設定檔`serverConf.xml`中有新的`webView2Mode`屬性可用。 必須啟用此屬性。
 
   若要執行此動作，請在所有環境(MKT、MID、RT)上套用下列步驟：
 
    1. 編輯Campaign伺服器設定檔(`serverConf.xml`)
-   1. 在 `<web>` 模組，設定 `webView2Mode = "1"`
+   1. 在`<web>`模組中，設定`webView2Mode = "1"`
    1. 執行以下命令以重新載入伺服器組態：
 
       ```

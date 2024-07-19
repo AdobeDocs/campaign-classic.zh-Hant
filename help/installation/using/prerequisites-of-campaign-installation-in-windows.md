@@ -19,16 +19,16 @@ ht-degree: 0%
 
 
 
-有關安裝Adobe Campaign所需的技術設定和軟體，請參見 [相容性矩陣](../../rn/using/compatibility-matrix.md).
+安裝Adobe Campaign所需的技術設定和軟體會顯示在[相容性矩陣](../../rn/using/compatibility-matrix.md)中。
 
-多執行個體用途的Adobe Campaign伺服器安裝程式說明如下： [安裝伺服器](../../installation/using/installing-the-server.md).
+多執行個體使用的Adobe Campaign伺服器安裝程式在[安裝伺服器](../../installation/using/installing-the-server.md)中說明。
 
 主要步驟如下：
 
-1. 安裝應用程式伺服器，請參閱 [執行安裝程式](../../installation/using/installing-the-server.md#executing-the-installation-program).
-1. 與Web伺服器整合（選擇性，視部署的元件而定），請參閱 [設定IIS Web伺服器](../../installation/using/integration-into-a-web-server-for-windows.md#configuring-the-iis-web-server).
+1. 安裝應用程式伺服器，請參閱[正在執行安裝程式](../../installation/using/installing-the-server.md#executing-the-installation-program)。
+1. 與Web伺服器整合（選擇性，視部署的元件而定），請參閱[設定IIS Web伺服器](../../installation/using/integration-into-a-web-server-for-windows.md#configuring-the-iis-web-server)。
 
-安裝步驟完成後，您需要設定執行個體、資料庫和伺服器。 有關詳細資訊，請參閱 [關於初始組態](../../installation/using/about-initial-configuration.md).
+安裝步驟完成後，您需要設定執行個體、資料庫和伺服器。 有關詳細資訊，請參閱[關於初始設定](../../installation/using/about-initial-configuration.md)。
 
 >[!NOTE]
 >

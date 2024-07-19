@@ -43,11 +43,11 @@ SFTP伺服器是設計作為暫存空間，您可以在其上控制檔案的保�
 
 >[!NOTE]
 >
->* 您可以使用Campaign Classic監視SFTP伺服器儲存空間 [控制面板](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html){target="_blank"}.
+>* 您可以使用Campaign Classic[控制面板](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html){target="_blank"}監視您的SFTP伺服器儲存空間。
 >
->* 所有管理員使用者都可存取控制面板。 授予使用者管理員存取許可權的步驟已詳載於 [此頁面](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hant#discover-control-panel){target="_blank"}.
+>* 所有管理員使用者都可存取控制面板。 授予使用者管理員存取許可權的步驟已詳載於[此頁面](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hant#discover-control-panel){target="_blank"}。
 >
->* 請注意，您的執行個體必須升級為 [最新GA版本](../../rn/using/rn-overview.md). 瞭解如何簽入您的版本 [本節](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version){target="_blank"}.
+>* 請注意，您的執行個體必須升級為[最新GA組建](../../rn/using/rn-overview.md)。 在[本節](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version){target="_blank"}中瞭解如何確認您的版本。
 
 * 伺服器大小功能會依您的授權而有所不同。 在任何情況下，儘量保持最小資料，並且只在需要的時間內保留資料 (15 天是最長時間限制)。
 
@@ -63,14 +63,14 @@ SFTP伺服器是設計作為暫存空間，您可以在其上控制檔案的保�
 
 此外，在Campaign Classic中指定外部SFTP伺服器的路徑時，路徑語法會因SFTP伺服器作業系統而異：
 
-* 如果您的SFTP伺服器已開啟 **Windows**，請一律使用相對路徑。
-* 如果您的STP伺服器已開啟 **Linux**，請一律使用與首頁相關的路徑（以「~/」開頭）或絕對路徑（以「/」開頭）。
+* 如果您的SFTP伺服器位於&#x200B;**Windows**，請一律使用相對路徑。
+* 如果您的STP伺服器在&#x200B;**Linux**&#x200B;上，請一律使用與本位目錄相關的路徑（以「~/」開頭），或絕對路徑（以「/」開頭）。
 
 ## Adobe代管SFTP伺服器的連線問題 {#sftp-server-troubleshooting}
 
-以下區段列出要檢查的資訊，並透過提供給Adobe支援團隊 [Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"} 遇到Adobe代管SFTP伺服器的連線問題時。
+下節列出當Adobe託管SFTP伺服器發生連線問題時，要檢查並透過[Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}提供給Adobe支援團隊的資訊。
 
-1. 檢查您的執行個體是否正在執行。 若要這麼做，請開啟瀏覽器，然後進行 **[!UICONTROL GET]** 在執行個體上呼叫 **[!UICONTROL /r/test]** 端點：
+1. 檢查您的執行個體是否正在執行。 若要這麼做，請開啟瀏覽器，然後在執行個體&#x200B;**[!UICONTROL /r/test]**&#x200B;端點上進行&#x200B;**[!UICONTROL GET]**&#x200B;呼叫：
 
    ```xml
    https://instanceUrl/r/test
@@ -96,11 +96,11 @@ SFTP伺服器是設計作為暫存空間，您可以在其上控制檔案的保�
    myCompany-stage-sftp.neolane.net [AAA.BBB.CCC.D] 22 (ssh) open
    ```
 
-   如果未開啟連線埠，請確定開啟您這端的輸出連線，然後再試一次。 如果您仍然遇到連線問題，請將命令的輸出分享給 [Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 團隊。
+   如果未開啟連線埠，請確定開啟您這端的輸出連線，然後再試一次。 如果您仍然遇到連線問題，請與[Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)團隊共用命令輸出。
 
 1. 檢查您嘗試啟動SFTP連線的公用IP是否為允許清單提供給Adobe支援的IP。
-1. 如果您使用以密碼為基礎的驗證，您的密碼可能已過期（密碼的有效期為90天）。 因此，我們強烈建議使用金鑰式驗證(請參閱 [SFTP伺服器最佳實務](#sftp-server-best-practices))。
-1. 如果您使用金鑰式驗證，請檢查您使用的金鑰是否與提供給的金鑰相同 [Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 執行個體組態的團隊。
+1. 如果您使用以密碼為基礎的驗證，您的密碼可能已過期（密碼的有效期為90天）。 因此，我們強烈建議使用金鑰式驗證（請參閱[SFTP伺服器最佳實務](#sftp-server-best-practices)）。
+1. 如果您使用金鑰式驗證，請檢查您使用的金鑰是否與針對執行個體組態提供給[Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)團隊的金鑰相同。
 1. 如果您使用的是 FileZilla 或類似的 FTP 工具，請在支援票證中提供連線日誌詳細資訊。
 
 ## 「無法解析主機名稱」錯誤
@@ -121,7 +121,7 @@ SFTP伺服器是設計作為暫存空間，您可以在其上控制檔案的保�
 
 此錯誤表示無法正確解析FTP伺服器網域名稱。 若要進行疑難排解，請執行下列動作：
 
-1. 疑難排解 **DNS伺服器設定**：
+1. 疑難排解&#x200B;**DNS伺服器組態**：
 
    1. 檢查伺服器名稱是否已新增至本機DNS伺服器。
    1. 如果是，請在Adobe Campaign伺服器上執行下列命令以取得IP位址：
@@ -130,10 +130,10 @@ SFTP伺服器是設計作為暫存空間，您可以在其上控制檔案的保�
 
       這可確認FTP伺服器是否正常運作，以及是否可從Adobe Campaign應用程式伺服器連線。
 
-1. 疑難排解 **工作階段記錄檔**：
+1. 疑難排解&#x200B;**工作階段記錄**：
 
-   1. 在工作流程中，按兩下 [檔案傳輸](../../workflow/using/file-transfer.md) 活動。
-   1. 前往 **[!UICONTROL File Transfer]** 標籤，然後按一下 **[!UICONTROL Advanced Parameters]**.
+   1. 在工作流程中，連按兩下[檔案傳輸](../../workflow/using/file-transfer.md)活動。
+   1. 前往&#x200B;**[!UICONTROL File Transfer]**&#x200B;標籤，然後按一下&#x200B;**[!UICONTROL Advanced Parameters]**。
    1. 核取 **[!UICONTROL Display the session logs]** 選項。
 
       ![](assets/sftp-error-display-logs.png)
@@ -144,7 +144,7 @@ SFTP伺服器是設計作為暫存空間，您可以在其上控制檔案的保�
 
    否則，請驗證：
 
-   * 密碼不包含 `@` 字元。 如果發生下列情況，連線會失敗 `@` 個字元。
+   * 密碼不包含`@`字元。 如果密碼中有`@`個字元，連線就會失敗。
    * 沒有防火牆問題會阻礙Adobe Campaign應用程式伺服器與SFTP伺服器之間的通訊。
    * 從campaign伺服器執行tracert和telnet命令至sftp，檢視是否有任何連線問題。
    * 沒有通訊協定問題。

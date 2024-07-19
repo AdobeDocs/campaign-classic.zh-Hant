@@ -33,8 +33,8 @@ ht-degree: 5%
    * 探索資料庫中的資料並定義測量。 若要了解詳細資訊，請參閱[本章節](../../reporting/using/ac-cubes.md)
    * 新增指標至現有報表。 若要了解詳細資訊，請參閱[本章節](../../reporting/using/about-reports-creation-in-campaign.md)
    * 檢視資料庫中的資料。 若要了解詳細資訊，請參閱[本章節](../../reporting/using/about-descriptive-analysis.md)
-   * 建立新的傳遞報告。 瞭解更多 [在本節中](../../reporting/using/about-reports-creation-in-campaign.md))，
-   * 從Adobe Campaign資料庫匯出資料(透過工作流程，請參閱 [本節](../../workflow/using/about-workflows.md)
+   * 建立新的傳遞報告。 在本節](../../reporting/using/about-reports-creation-in-campaign.md)瞭解更多[，
+   * 從Adobe Campaign資料庫匯出資料(透過工作流程，請參閱[本節](../../workflow/using/about-workflows.md)
    * 建立樞紐分析表。 若要了解詳細資訊，請參閱[本章節](../../reporting/using/creating-a-table.md#creating-a-breakdown-or-pivot-table)
    * 探索彙總的資料。 若要了解詳細資訊，請參閱[本章節](../../reporting/using/ac-cubes.md)
    * 使用精靈分析資料。 若要了解詳細資訊，請參閱[本章節](../../reporting/using/about-descriptive-analysis.md)
@@ -101,7 +101,7 @@ if(string(ctx@_historyId)!==""))
 
   若要快速尋找已編制索引的欄位，請檢視Adobe Campaign介面中的欄名稱：如果已為欄位編制索引，則排序箭頭會以紅色加底線。
 
-  有關索引的詳細資訊，請參閱 [本節](../../configuration/using/data-model-best-practices.md#indexes).
+  如需索引的詳細資訊，請參閱[本區段](../../configuration/using/data-model-best-practices.md#indexes)。
 
 * 請確定報表可擴充：資料量可能會隨著時間大幅增加。
 
@@ -109,8 +109,8 @@ if(string(ctx@_historyId)!==""))
 
   最後，需要知道資料清除的延遲，並在必要時進行調整，以方便資料操作。
 
-  有關清理和資料保留的詳細資訊，請參閱 [本節](../../configuration/using/data-model-best-practices.md#data-retention).
+  如需清理和資料保留的詳細資訊，請參閱[本節](../../configuration/using/data-model-best-practices.md#data-retention)。
 
 ### 匯出您的報告 {#exporting-reports}
 
-中會詳細說明匯出報表專用的Recommendations [本節](../../reporting/using/actions-on-reports.md#exporting-a-report).
+在[本區段](../../reporting/using/actions-on-reports.md#exporting-a-report)中詳細說明匯出報告的特定Recommendations。

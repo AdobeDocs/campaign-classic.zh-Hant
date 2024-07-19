@@ -21,9 +21,9 @@ ht-degree: 1%
 
 有三種型別的指示：
 
-* **[!DNL include]**：主要用於分解選項、個人化區塊、外部檔案或頁面中的部分程式碼。 [了解更多](#include)
-* **[!DNL value]**：為傳送的欄位、傳送變數以及載入傳送的自訂物件授予存取權。 [了解更多](#value)
-* **[!DNL foreach]**：循環載入為自訂物件的陣列。 [了解更多](#foreach)
+* **[!DNL include]**：主要用於分解選項、個人化區塊、外部檔案或頁面中的某些程式碼。 [了解更多](#include)
+* **[!DNL value]**：授與傳遞欄位、傳遞變數以及傳遞中載入的自訂物件的存取權。 [了解更多](#value)
+* **[!DNL foreach]**：重複載入為自訂物件的陣列。 [了解更多](#foreach)
 
 可直接從傳遞精靈中測試這些變數。 註解會套用於內容預覽，以及當您按一下追蹤按鈕以檢視URL清單時。
 
@@ -71,16 +71,16 @@ ht-degree: 1%
 
 其中：
 
-* **[!DNL object]**：物件的名稱（例如：傳送、提供者等）。
+* **[!DNL object]**：物件的名稱（例如：傳遞、提供者等）。
 物件可以是：
-   * **[!DNL delivery]**：針對目前的傳送（請參閱以下子區段中的詳細資訊和限制）。
-   * **[!DNL provider]**：適用於目前的傳送提供者/路由(nms：externalAccount)。
-   * 額外的指令碼物件：如果物件是透過載入到內容中： **屬性** > **個人化** > **在執行內容中新增物件**.
-   * foreach回圈的專案：請參閱 [Foreach](#foreach) 一節。
+   * **[!DNL delivery]**：針對目前的傳遞（請參閱以下子段落中的詳細資訊和限制）。
+   * **[!DNL provider]**：適用於目前的傳遞提供者/路由(nms：externalAccount)。
+   * 額外的指令碼物件：如果物件是透過&#x200B;**屬性** > **Personalization** > **在執行內容中新增物件**，載入到內容中。
+   * foreach回圈的專案：請參閱下方的[Foreach](#foreach)區段。
 * **[!DNL xpath]**：欄位的xpath。
-* **[!DNL index]** （選用）：若為 **[!DNL object]** 是一個陣列（用於額外的指令碼物件），陣列中的專案索引（從0開始）。
+* **[!DNL index]** （選擇性）：如果&#x200B;**[!DNL object]**&#x200B;是陣列（用於額外的指令碼物件），則陣列中的專案索引（從0開始）。
 
-### [!DNL delivery] 物件 {#delivery-object}
+### [!DNL delivery]物件 {#delivery-object}
 
 針對電子郵件個人化，傳遞物件提供兩種存取方式：
 
@@ -99,9 +99,9 @@ ht-degree: 1%
   ```
 
 
-**注意**
+**警告**
 
-如果您對透過中間來源傳送的傳遞使用以下指示，自訂欄位 **@myCustomField** 必須新增至行銷和中間來源平台上的nms：delivery綱要：
+如果您對透過中間來源傳送的傳遞使用以下指示，則必須在行銷和中間來源平台上將自訂欄位&#x200B;**@myCustomField**&#x200B;新增到nms：delivery結構描述：
 
 ```
 <%@ value object="delivery" xpath="@myCustomField" %>
@@ -113,7 +113,7 @@ ht-degree: 1%
 <%@ value object="delivery" xpath="variables/var[@name='myVar']/@stringValue" %>
 ```
 
-### [!DNL value] 在Javascript區段中 {#value-in-javascript}
+### Javascript區段中的[!DNL value] {#value-in-javascript}
 
 若要允許在Javascript區段中使用&lt;%@值，兩個特殊物件會取代為&lt;%和%>：
 
@@ -141,9 +141,9 @@ ht-degree: 1%
 
 其中：
 
-* **[!DNL object]**：要開始的物件名稱，通常是額外的指令碼物件，但可以是傳送。
-* **[!DNL xpath]** （選用）：要重複播放之集合的xpath。 預設值為「。」，表示物件是要重複播放的陣列。
-* **[!DNL index]** （選用）：如果xpath不是「。」 而且物件本身是一個陣列，物件的專案索引（從0開始）。
+* **[!DNL object]**：要開始的物件名稱，通常是額外的指令碼物件，但可以是傳遞。
+* **[!DNL xpath]** （選用）：要回圈的集合的xpath。 預設值為「。」，表示物件是要重複播放的陣列。
+* **[!DNL index]** （選用）：如果xpath不是&quot;。&quot; 而且物件本身是一個陣列，物件的專案索引（從0開始）。
 * **[!DNL item]** （選用）：可在foreach回圈內使用&lt;%@值存取的新物件名稱。 在架構中具有連結名稱的預設值。
 
 例如：
@@ -165,7 +165,7 @@ ht-degree: 1%
 
 解決方案是：
 
-1. 在額外的傳遞指令碼陣列中預先載入所有可能的文章 — articleList[]  — 表示可能的文章數量必須是有限的。
+1. 在傳遞的額外指令碼陣列中預先載入所有可能的文章 — articleList[] — 這表示可能的文章數量必須是有限的。
 1. 在內容的開頭撰寫JavaScript函式。
 
    ```

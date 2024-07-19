@@ -22,24 +22,24 @@ ht-degree: 0%
 
 Linux中的移轉步驟如下：
 
-1. 停止所有服務 —  [瞭解更多](#service-stop).
-1. 儲存資料庫 —  [瞭解更多](#back-up-the-database).
-1. 解除安裝先前的Adobe Campaign版本套件 —  [瞭解更多](#uninstalling-adobe-campaign-previous-version-packages).
-1. 移轉平台 —  [瞭解更多](#deploying-adobe-campaign-v7).
-1. 重新啟動服務 —  [瞭解更多](#re-starting-services).
+1. 停止所有服務 — [深入瞭解](#service-stop)。
+1. 儲存資料庫 — [深入瞭解](#back-up-the-database)。
+1. 解除安裝先前的Adobe Campaign版本套件 — [深入瞭解](#uninstalling-adobe-campaign-previous-version-packages)。
+1. 移轉平台 — [深入瞭解](#deploying-adobe-campaign-v7)。
+1. 重新啟動服務 — [深入瞭解](#re-starting-services)。
 
 ## 服務停止 {#service-stop}
 
 首先，停止在所有相關電腦上存取資料庫的所有處理程式。
 
-1. 登入身份 **根**.
-1. 所有使用重新導向模組的伺服器(**webmdl** 服務)。 對於Apache，請執行以下命令：
+1. 以&#x200B;**root**&#x200B;登入。
+1. 所有使用重新導向模組（**webmdl**&#x200B;服務）的伺服器都必須停止。 對於Apache，請執行以下命令：
 
    ```
    /etc/init.d/apache2 stop
    ```
 
-1. 再次登入身份 **根**.
+1. 以&#x200B;**root**&#x200B;身分再次登入。
 1. 停止所有伺服器上的Adobe Campaign舊版服務。
 
    ```
@@ -156,7 +156,7 @@ Linux中的移轉步驟如下：
 -->
 
 1. 備份Adobe Campaign資料庫。
-1. 登入身份 **neolane** 並備份 **nl6** 目錄（使用下列命令）：
+1. 以&#x200B;**neolane**&#x200B;登入，並使用下列命令備份&#x200B;**nl6**&#x200B;目錄：
 
    ```
    su - neolane
@@ -165,7 +165,7 @@ Linux中的移轉步驟如下：
 
    >[!IMPORTANT]
    >
-   >為謹慎起見，建議您壓縮 **nl6.back** 資料夾並將其儲存至伺服器以外的安全位置。
+   >為謹慎起見，建議您壓縮&#x200B;**nl6.back**&#x200B;資料夾，並將其儲存至伺服器以外的安全位置。
 
 ## 解除安裝Adobe Campaign舊版套件 {#uninstalling-adobe-campaign-previous-version-packages}
 
@@ -213,10 +213,10 @@ Linux中的移轉步驟如下：
 
 本節說明如何解除安裝Adobe Campaign v6.1套件。
 
-1. 登入身份 **根**.
+1. 以&#x200B;**root**&#x200B;登入。
 1. 識別使用下列命令安裝的Adobe Campaign套件。
 
-   * 在 **Debian**：
+   * 在&#x200B;**Debian**&#x200B;中：
 
      ```
      dpkg -l | grep nl
@@ -229,7 +229,7 @@ Linux中的移轉步驟如下：
      ii  nlthirdparty6                   XXXX                     nlthirdparty6-XXXX
      ```
 
-   * 在 **Red Hat**：
+   * 在&#x200B;**Red Hat**&#x200B;中：
 
      ```
      rpm -qa | grep nl
@@ -237,13 +237,13 @@ Linux中的移轉步驟如下：
 
 1. 解除安裝Adobe Campaign v6套件。
 
-   * 在 **Debian**：
+   * 在&#x200B;**Debian**&#x200B;中：
 
      ```
      dpkg --purge nlserver6 nlthirdparty6
      ```
 
-   * 在 **Red Hat**：
+   * 在&#x200B;**Red Hat**&#x200B;中：
 
      ```
      rprm -ev nlserver6 nlthirdparty6
@@ -473,13 +473,13 @@ To deploy Adobe Campaign, apply the following steps:
 
 1. 使用以下命令安裝最新的Adobe Campaign v7套件：
 
-   * 在 **Debian**：
+   * 在&#x200B;**Debian**&#x200B;中：
 
      ```
      dpkg -i nlserver6-XXXX-amd64_debX.deb
      ```
 
-   * 在 **Red Hat**：
+   * 在&#x200B;**Red Hat**&#x200B;中：
 
      ```
      rpm -Uvh nlserver6-XXXX-x86_64_rhX.rpm
@@ -491,7 +491,7 @@ To deploy Adobe Campaign, apply the following steps:
 
    >[!NOTE]
    >
-   >Adobe Campaign v7安裝於中 **/usr/local/neolane/nl6/** 目錄（預設）。
+   >Adobe Campaign v7依預設會安裝在&#x200B;**/usr/local/neolane/nl6/**&#x200B;目錄中。
 
 1. 若要讓使用者端主控台安裝程式可供使用，請將其複製到Adobe Campaign安裝目錄：
 
@@ -501,9 +501,9 @@ To deploy Adobe Campaign, apply the following steps:
 
    >[!NOTE]
    >
-   >如需如何在Linux中安裝Adobe Campaign的詳細資訊，請參閱 [本節](../../installation/using/installing-campaign-standard-packages.md).
+   >如需如何在Linux中安裝Adobe Campaign的詳細資訊，請參閱[本節](../../installation/using/installing-campaign-standard-packages.md)。
 
-1. 前往 **nl6.back** 備份資料夾，並複製（覆寫）每個執行個體的組態檔和子資料夾。 登入身份 **neolane** 並執行下列命令：
+1. 移至&#x200B;**nl6.back**&#x200B;備份資料夾，並複製（覆寫）每個執行個體的組態檔和子資料夾。 以&#x200B;**neolane**&#x200B;登入並執行下列命令：
 
    ```
    su - neolane
@@ -520,7 +520,7 @@ To deploy Adobe Campaign, apply the following steps:
    nlserver config -reload
    ```
 
-1. 使用下列命令啟動升級後程式(仍為 **neolane**)：
+1. 使用以下命令（仍為&#x200B;**neolane**）啟動升級後程式：
 
    ```
    su - neolane

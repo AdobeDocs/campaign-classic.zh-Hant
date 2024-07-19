@@ -20,4 +20,4 @@ ht-degree: 0%
 
 以下說明將新字型安裝至Campaign應用程式伺服器的方式。
 
-新字型可放入 `/usr/local/share/` MTA流程執行所在的所有容器上的資料夾。
+新字型可以放入MTA程式執行所在的所有容器上的`/usr/local/share/`資料夾中。

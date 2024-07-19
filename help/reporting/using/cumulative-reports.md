@@ -22,6 +22,6 @@ ht-degree: 7%
 
 若要從清單中選取不相鄰的傳送，請在進行選取時按住CTRL鍵。
 
-若要選取儲存在不同資料夾中的傳送，請按一下 **[!UICONTROL Display sub-levels]** （可透過工具列存取）。 然後它們會顯示在相同的清單中。
+若要選取儲存在不同資料夾中的傳送，請按一下&#x200B;**[!UICONTROL Display sub-levels]** （可透過工具列存取）。 然後它們會顯示在相同的清單中。
 
 ![](assets/s_ncs_user_display_children_icon.png)
