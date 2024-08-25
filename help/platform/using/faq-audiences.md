@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: 設定檔及受眾常見問題集
+title: 輪廓及客群常見問題集
 description: Campaign Classic 常見問題集
 feature: Audiences, Troubleshooting
 audience: platform
@@ -14,11 +14,11 @@ ht-degree: 98%
 
 ---
 
-# 設定檔及受眾常見問題集 {#audiences-faq}
+# 輪廓及客群常見問題集 {#audiences-faq}
 
 
 
-了解如何透過 Adobe Campaign 鎖定母體以及管理受眾。
+了解如何透過 Adobe Campaign 鎖定群體以及管理客群。
 
 ## 如何建立收件者？ {#how-to-create-recipients-}
 

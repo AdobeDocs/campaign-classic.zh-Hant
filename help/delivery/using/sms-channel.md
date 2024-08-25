@@ -26,7 +26,7 @@ ht-degree: 4%
 
 * [設定簡訊頻道](sms-set-up.md)
 * [建立簡訊傳遞](sms-create.md)
-* [定義對象](sms-create.md#selecting-the-target-population)
+* [定義客群](sms-create.md#selecting-the-target-population)
 * [定義簡訊內容](sms-create.md#defining-the-sms-content)
 * [傳送、監控和追蹤簡訊](sms-send.md)
 * [疑難排解](troubleshooting-sms.md)

@@ -35,7 +35,7 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td> <strong>組織ID</strong><br /> </td> 
-   <td> 您的組織ID。 <br>若要尋找您的組織識別碼，請參閱<a href="https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-Hant">此頁面</a></td> 
+   <td> 您的組織ID。 <br>若要尋找您的組織識別碼，請參閱<a href="https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-hant">此頁面</a></td> 
   </tr> 
   <tr> 
    <td> <strong>環境</strong><br /> </td> 

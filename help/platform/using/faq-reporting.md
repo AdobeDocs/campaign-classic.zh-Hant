@@ -28,7 +28,7 @@ Adobe Campaign 不是專門用於報告的工具：在 Adobe Campaign 中建立�
 
 ## 如何設計並分享母體的靜態報表？ {#how-can-i-design-and-share-statistic-reports-on-populations-}
 
-使用 Adobe Campaign [敘述性分析報告](../../reporting/using/about-descriptive-analysis.md)，您可以對母體設計並分享靜態報告，[探索新聞稿受眾](../../reporting/using/use-cases.md#analyzing-a-population)，或[建立工作流程轉換母體的報告](../../reporting/using/use-cases.md#analyzing-a-transition-target-in-a-workflow)。例如，您也可以[分析新聞稿收件者的再次活動率](../../reporting/using/use-cases.md#analyzing-recipient-tracking-logs)。
+使用 Adobe Campaign [敘述性分析報告](../../reporting/using/about-descriptive-analysis.md)，您可以對母體設計並分享靜態報告，[探索新聞稿客群](../../reporting/using/use-cases.md#analyzing-a-population)，或[建立工作流程轉換母體的報告](../../reporting/using/use-cases.md#analyzing-a-transition-target-in-a-workflow)。例如，您也可以[分析新聞稿收件者的再次活動率](../../reporting/using/use-cases.md#analyzing-recipient-tracking-logs)。
 
 [按一下這裡以取得更多相關資訊](../../reporting/using/about-descriptive-analysis.md)。
 

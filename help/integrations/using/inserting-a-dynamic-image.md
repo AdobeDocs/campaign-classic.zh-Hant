@@ -35,7 +35,7 @@ ht-degree: 3%
 
 1. [在電子郵件中插入動態優惠方案](../../integrations/using/inserting-a-dynamic-image.md#inserting-dynamic-offer)
 1. [建立重新導向選件](../../integrations/using/inserting-a-dynamic-image.md#create-redirect-offers)
-1. [建立對象](../../integrations/using/inserting-a-dynamic-image.md#audiences-target)
+1. [建立客群](../../integrations/using/inserting-a-dynamic-image.md#audiences-target)
 1. [建立體驗鎖定目標活動](../../integrations/using/inserting-a-dynamic-image.md#creating-targeting-activity)
 1. [預覽和傳送電子郵件](../../integrations/using/inserting-a-dynamic-image.md#preview-send-email)
 
@@ -84,7 +84,7 @@ ht-degree: 3%
 
 1. 對其餘的重新導向選件遵循相同程式。 如需關於此項目的詳細資訊，請參閱此[頁面](https://experienceleague.adobe.com/docs/target/using/experiences/offers/offer-redirect.html)。
 
-## 建立對象 {#audiences-target}
+## 建立客群 {#audiences-target}
 
 在Target中，您需要建立兩個受眾，造訪您選件的人員將針對不同的內容進行分類。 針對每個對象，新增規則以定義能夠檢視選件的對象。
 
@@ -104,7 +104,7 @@ ht-degree: 3%
 
 在Target中，我們需要建立體驗鎖定目標活動、定義不同的體驗，並將它們與對應的選件建立關聯。
 
-### 定義對象 {#defining-the-audience}
+### 定義客群 {#defining-the-audience}
 
 1. 若要建立體驗鎖定目標活動，請從&#x200B;**[!UICONTROL Activities]**&#x200B;索引標籤，按一下&#x200B;**[!UICONTROL Create Activity]**&#x200B;然後&#x200B;**[!UICONTROL Experience Targeting]**。
 

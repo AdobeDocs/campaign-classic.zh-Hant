@@ -67,7 +67,7 @@ Adobe Campaign 提供一套工具，以協助您遵循隱私權法規（GDPR、C
 
 ## 如何選取訊息的對象？ {#how-can-i-select-the-target-population-of-my-messages-}
 
-透過 Adobe Campaign，您可以使用不同策略來建立受眾，並選取收件者。
+透過 Adobe Campaign，您可以使用不同策略來建立客群，並選取收件者。
 
 [按一下這裡以瞭解更多](../../delivery/using/steps-defining-the-target-population.md)。
 

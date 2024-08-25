@@ -65,7 +65,7 @@ Learn more about [ACS Connector](../../integrations/using/acs-connector-principl
 深入瞭解[本機核准活動](../../workflow/using/local-approval.md)。
 +++
 
-+++**閱聽眾**
++++**客群**
 
 對象是根據規則和屬性，符合篩選定義條件的設定檔結果集。
 

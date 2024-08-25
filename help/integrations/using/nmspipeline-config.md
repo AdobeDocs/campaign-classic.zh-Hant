@@ -68,7 +68,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->可以在Analytics介面中找到特定觸發程式名稱的[!DNL Trigger] UID值，做為觸發程式介面中URL查詢字串引數的一部分。 triggerType UID會傳入管道資料流中，而程式碼可寫入pipeline.JS中，以將觸發程式UID對應至使用者易記標籤，該標籤可儲存在pipelineEvents架構的「觸發程式名稱」欄中。
+>可以在Analytics介面中找到特定觸發程式名稱的[!DNL Trigger] UID值，做為觸發程式介面中URL查詢字串引數的一部分。 triggerType UID會傳入管道資料流中，而程式碼可寫入pipeline.JS中，以將觸發程式UID對應至好記的標籤，該標籤可儲存在pipelineEvents架構的「觸發程式名稱」欄中。
 
 ## 取用者引數 {#consumer-parameter}
 

@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: 同步對象
+title: 同步客群
 description: 瞭解如何使用ACS Connector同步受眾
 feature: ACS Connector
 hide: true
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 ---
 
-# 同步對象{#synchronizing-audiences}
+# 同步客群{#synchronizing-audiences}
 
 
 

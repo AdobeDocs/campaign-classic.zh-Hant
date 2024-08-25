@@ -103,7 +103,7 @@ Adobe 持續評估產品功能，尋找應以更現代的替代方式來取代�
   </tr>
   <tr>
   <td>Demdex 網域<br></td>
-  <td><p> 自 Campaign 第 21.1.3 發行版本開始，已棄用使用於匯入和匯出對象至 Adobe Experience Cloud 的 Demdex 網域。<a href="../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md">瞭解更多</a></p> 
+  <td><p> 自 Campaign 第 21.1.3 發行版本開始，已棄用使用於匯入和匯出客群至 Adobe Experience Cloud 的 Demdex 網域。<a href="../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md">瞭解更多</a></p> 
   </td>
   </tr>
    <tr> 

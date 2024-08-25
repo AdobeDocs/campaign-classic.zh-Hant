@@ -36,7 +36,7 @@ ht-degree: 0%
 
 1. 檢查組織ID (ImsOrgId)是否已在serverConf.xml中設定。
 1. 檢查執行個體設定檔案中的空白組織ID能否覆寫預設組織ID。 若是如此，請將其移除。
-1. 檢查組織ID是否正確。 若要尋找您的組織ID，請參閱[此頁面](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-Hant){_blank}
+1. 檢查組織ID是否正確。 若要尋找您的組織ID，請參閱[此頁面](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-hant){_blank}
 
 **管線失敗，因為「金鑰無效」**
 

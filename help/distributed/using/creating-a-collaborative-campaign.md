@@ -127,7 +127,7 @@ ht-degree: 4%
 
 ![](assets/s_advuser_mkg_dist_create_mutual_entry.png)
 
-### 對象 {#audience}
+### 客群 {#audience}
 
 中央實體必須在建立合作行銷活動後，立即指定每個行銷活動涉及的本機實體。
 

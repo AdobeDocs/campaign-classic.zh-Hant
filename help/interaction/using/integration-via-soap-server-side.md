@@ -20,7 +20,7 @@ ht-degree: 3%
 
 為Offer Management提供的SOAP Web服務與Adobe Campaign中通常使用的服務不同。 可透過上一節所述的互動URL存取優惠方案，並讓您提供或更新指定聯絡人的優惠方案。
 
-## 優惠方案主張 {#offer-proposition}
+## 產品建議主張 {#offer-proposition}
 
 對於透過SOAP的優惠方案主張，請新增&#x200B;**nms：proposition#Propose**&#x200B;命令，後面接著下列引數：
 

@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: 定義正確對象
+title: 定義正確客群
 description: 瞭解選取對象時的最佳實務
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Audiences
@@ -13,7 +13,7 @@ ht-degree: 4%
 
 ---
 
-# 定義正確對象 {#define-the-right-audience}
+# 定義正確客群 {#define-the-right-audience}
 
 目標人口是關鍵：仔細建立您的清單，在熱門電子郵件使用者端和行動裝置上測試您的電子郵件，並確保您的電子郵件清單是最新的（沒有未知或過時的地址）。 您也可以傳送校樣來幫助設定完整的驗證週期。
 

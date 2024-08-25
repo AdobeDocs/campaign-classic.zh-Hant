@@ -239,7 +239,7 @@ Campaign Classic 的「說明與支援選項」頁面已整合至核心文件。
 瞭解如何透過這些新頁面建立及管理您的行銷活動：
 * [建立及設定行銷活動範本](../../campaign/using/marketing-campaign-templates.md)
 * [行銷活動傳遞](../../campaign/using/marketing-campaign-deliveries.md)
-* [選取行銷活動的對象](../../campaign/using/marketing-campaign-target.md)
+* [選取行銷活動的客群](../../campaign/using/marketing-campaign-target.md)
 * [管理相關文件](../../campaign/using/marketing-campaign-assets.md)
 * [設定及管理核准流程](../../campaign/using/marketing-campaign-approval.md)
 

@@ -12,7 +12,7 @@ ht-degree: 1%
 
 ---
 
-# 選取行銷活動的對象 {#marketing-campaign-deliveries}
+# 選取行銷活動的客群 {#marketing-campaign-deliveries}
 
 在行銷活動中，您可以針對每次傳送定義：
 

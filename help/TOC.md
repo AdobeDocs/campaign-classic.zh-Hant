@@ -43,7 +43,7 @@ ht-degree: 100%
          + [全域概念](platform/using/faq-key-concepts.md)
          + [版本編號升級](platform/using/faq-build-upgrade.md)
          + [隱私權](platform/using/privacy-faq.md)
-         + [對象](platform/using/faq-audiences.md)
+         + [客群](platform/using/faq-audiences.md)
          + [設計訊息](platform/using/faq-designing.md)
          + [傳送訊息](platform/using/faq-messages.md)
          + [工作流程](platform/using/faq-workflows.md)
@@ -113,7 +113,7 @@ ht-degree: 100%
    + 建立傳遞時的主要步驟 {#key-steps-when-creating-a-delivery}
       + [開始使用傳遞](delivery/using/steps-about-delivery-creation-steps.md)
       + [建立並識別傳遞內容](delivery/using/steps-create-and-identify-the-delivery.md)
-      + [定義對象](delivery/using/steps-defining-the-target-population.md)
+      + [定義客群](delivery/using/steps-defining-the-target-population.md)
       + [驗證傳遞](delivery/using/steps-validating-the-delivery.md)
       + [傳送傳遞](delivery/using/steps-sending-the-delivery.md)
       + 傳遞最佳實務 {#delivery-bestpractices}
@@ -121,7 +121,7 @@ ht-degree: 100%
          + [最佳化傳遞](delivery/using/optimize-delivery.md)
          + [使用範本](delivery/using/use-templates.md)
          + [建置個人化內容](delivery/using/design-and-personalize.md)
-         + [定義正確對象](delivery/using/define-the-right-audience.md)
+         + [定義正確客群](delivery/using/define-the-right-audience.md)
          + [傳送前先檢查](delivery/using/check-before-sending.md)
          + [追蹤和監視](delivery/using/track-and-monitor.md)
    + 傳送電子郵件{#sending-emails}
@@ -245,7 +245,7 @@ ht-degree: 100%
       + [開始使用行銷活動](campaign/using/setting-up-marketing-campaigns.md)
       + [建立及設定範本](campaign/using/marketing-campaign-templates.md)
       + [新增傳遞](campaign/using/marketing-campaign-deliveries.md)
-      + [選取對象](campaign/using/marketing-campaign-target.md)
+      + [選取客群](campaign/using/marketing-campaign-target.md)
       + [管理文件和資產](campaign/using/marketing-campaign-assets.md)
       + [設定及管理核准](campaign/using/marketing-campaign-approval.md)
       + [監視您的行銷活動](campaign/using/marketing-campaign-monitoring.md)
@@ -361,17 +361,17 @@ ht-degree: 100%
       + [管線疑難排解](integrations/using/pipeline-troubleshooting.md)
    + Adobe Experience Platform 來源和目標 {#aep-sources-destinations}
       + [使用來源和目的地](integrations/using/get-started-sources-destinations.md)
-      + [將 Adobe Experience Platform 對象內嵌至 Campaign](integrations/using/ingest-aep-data.md)
+      + [將 Adobe Experience Platform 客群內嵌至 Campaign](integrations/using/ingest-aep-data.md)
       + [將資料從 Campaign 匯出至 Adobe Experience Platform](integrations/using/export-campaign-data.md)
    + Adobe Analytics 連接器{#analytics-connector}
       + [開始使用 Adobe Analytics 連接器](integrations/using/gs-aa.md)
       + [Adobe Analytics 連接器佈建](integrations/using/adobe-analytics-provisioning.md)
-   + 對象分享 {#audience-sharing}
-      + [透過  [!DNL Adobe Experience Cloud] 分享對象](integrations/using/sharing-audiences-with-adobe-experience-cloud.md)
+   + 客群分享 {#audience-sharing}
+      + [透過  [!DNL Adobe Experience Cloud] 分享客群](integrations/using/sharing-audiences-with-adobe-experience-cloud.md)
       + [向 Adobe 提交請求](integrations/using/submitting-request-to-adobe.md)
-      + [於  [!DNL Adobe Campaign] 設定共用對象整合](integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
+      + [於  [!DNL Adobe Campaign] 設定共用客群整合](integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
       + [疑難排解](integrations/using/troubleshooting.md)
-      + [匯入和匯出對象](integrations/using/importing-and-exporting-audiences.md)
+      + [匯入和匯出客群](integrations/using/importing-and-exporting-audiences.md)
    + 資產共用 {#asset-sharing}
       + [透過  [!DNL Adobe Experience Cloud] 分享資產體驗](integrations/using/sharing-assets-with-adobe-experience-cloud.md)
       + [設定存取權至 [!DNL Assets]](integrations/using/configuring-access-to-assets.md)
@@ -387,7 +387,7 @@ ht-degree: 100%
    + ACS 連結器 {#acs-connector}
       + [開始使用 [!DNL ACS Connector]](integrations/using/acs-connector-principles-and-data-cycle.md)
       + [同步設定檔](integrations/using/synchronizing-profiles.md)
-      + [同步對象](integrations/using/synchronizing-audiences.md)
+      + [同步客群](integrations/using/synchronizing-audiences.md)
       + [同步化網站應用程式](integrations/using/synchronizing-web-applications.md)
       + [疑難排解 [!DNL ACS Connector]](integrations/using/troubleshooting-the-acs-connector.md)
 + 使用工作流程自動化{#automating-with-workflows}

@@ -28,7 +28,7 @@ Adobe Campaign提供兩組預先封裝的架構選項，供您設定部署的維
 
 * **電源叢集**
 
-  此選項可支援與指定應用程式相關之主要Adobe Campaign應用程式執行個體分離的2到N個叢集執行個體。 叢集可以遠端託管、在分散式部署中由協力廠商託管。 除了流程隔離的好處外，Adobe Campaign Power Cluster選項還可使用商品硬體來啟用備援和向外擴充策略，以簡化SLA或效能的演化。
+  此選項可支援與指定應用程式相關之主要Adobe Campaign應用程式執行個體分離的2到N個叢集執行個體。 叢集可以遠端託管、在分散式部署中由協力廠商託管。 除了流程隔離的好處外，Adobe Campaign電源群集選項還能夠使用商品硬體來啟用備援和向外擴充策略，以簡化SLA或效能的演化。
 
 ![](assets/architectural_options_diagram.png)
 
