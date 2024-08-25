@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 關於工作流程
-description: 使用工作流程自動化程序、管理資料和對象、傳送訊息等
+description: 使用工作流程自動化程序、管理資料和客群、傳送訊息等
 feature: Workflows, Data Management
 exl-id: 51be6b90-2a7a-4757-9754-d16c540a87ff
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
