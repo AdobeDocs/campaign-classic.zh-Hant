@@ -5,7 +5,7 @@ description: 翻譯網路表單
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Web Forms
 exl-id: 72959141-ca18-4512-80c7-239efd31f711
-source-git-commit: 7b4fbefe0f6bd26ee9260d15e8303f716af7ac96
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
 source-wordcount: '1544'
 ht-degree: 1%

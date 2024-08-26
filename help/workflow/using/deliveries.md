@@ -3,7 +3,7 @@ product: campaign
 title: 傳遞
 description: 深入瞭解預設傳遞工作流程
 feature: Workflows
-source-git-commit: 7b4fbefe0f6bd26ee9260d15e8303f716af7ac96
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 4%
