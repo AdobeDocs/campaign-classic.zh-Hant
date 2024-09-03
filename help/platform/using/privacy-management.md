@@ -8,15 +8,14 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 23c873fd-9016-4d32-842c-772cfff0e23e
-source-git-commit: 5d237d42adabe42a07bc759913dd9453df650671
+source-git-commit: 122d69d3d7474480f7799248413ac89338469ebc
 workflow-type: tm+mt
-source-wordcount: '905'
-ht-degree: 80%
+source-wordcount: '909'
+ht-degree: 79%
 
 ---
 
 # 隱私權管理 {#privacy-management}
-
 
 Adobe Campaign 提供一套工具，以協助您遵守[隱私權法規](#privacy-management-regulations)（包含 GDPR、CCPA、PDPA、LGPD）。
 
@@ -105,6 +104,7 @@ Adobe Campaign 自始至終都採用有助於管理同意部分的功能。透�
 * **事件處理統計資料**：1 個月
 * **已封存事件**：1 年
 * **忽略的管線事件**：1 個月
+* **動態報告**： 13個月
 
 與刪除類似，使用標準工作流程功能，即可設定任何自訂表格的保留期間。
 
