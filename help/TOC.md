@@ -188,7 +188,7 @@ ht-degree: 100%
       + 使用實例 {#use-case}
          + [關於此使用實例](delivery/using/a-b-testing-use-case.md)
          + [建立目標定位工作流程](delivery/using/a-b-testing-uc-targeting-workflow.md)
-         + [設定母體樣本](delivery/using/a-b-testing-uc-population-samples.md)
+         + [設定群體樣本](delivery/using/a-b-testing-uc-population-samples.md)
          + [建立傳遞範本](delivery/using/a-b-testing-uc-delivery-templates.md)
          + [設定傳遞](delivery/using/a-b-testing-uc-configuring-deliveries.md)
          + [建立指令碼](delivery/using/a-b-testing-uc-script.md)
@@ -292,7 +292,7 @@ ht-degree: 100%
       + [累積報告](reporting/using/cumulative-reports.md)
       + [指標計算](reporting/using/indicator-calculation.md)
       + [人員與收件者](reporting/using/person-people-recipients.md)
-   + 分析母體 {#analyzing-populations}
+   + 分析群體 {#analyzing-populations}
       + [關於描述性分析](reporting/using/about-descriptive-analysis.md)
       + [使用描述性分析精靈](reporting/using/using-the-descriptive-analysis-wizard.md)
       + [報吿設定](reporting/using/processing-a-report.md)
@@ -419,7 +419,7 @@ ht-degree: 100%
       + [擴充](workflow/using/enrichment.md)
       + [編輯方案](workflow/using/edit-schema.md)
       + [優惠引擎](workflow/using/offer-engine.md)
-      + [去重複化](workflow/using/deduplication.md)
+      + [重複資料刪除](workflow/using/deduplication.md)
       + [變更維度](workflow/using/change-dimension.md)
       + [清單更新](workflow/using/list-update.md)
       + [訂閱服務](workflow/using/subscription-services.md)

@@ -5,10 +5,10 @@ description: 進一步瞭解如何建立Adobe API帳戶
 role: User, Admin
 level: Beginner
 exl-id: 5d830ea0-a0a3-4b35-8dc4-e955380431fb
-source-git-commit: 8eadea9f9cc0a44522726024bfbc825e3b4cad98
+source-git-commit: 9516101771899e132dbd3d1344c833e82714f775
 workflow-type: tm+mt
-source-wordcount: '290'
-ht-degree: 7%
+source-wordcount: '324'
+ht-degree: 6%
 
 ---
 
@@ -61,9 +61,16 @@ Adobe已棄用服務帳戶(JWT)認證。 Campaign與Adobe解決方案和應用�
    * **[!UICONTROL Technical account ID]**
    * **[!UICONTROL Organization ID]**
 
-## 在Adobe Campaign中新增OAuth專案認證 {#add-credentials}
+## 在Campaign中新增OAuth專案認證 {#add-credentials}
 
-請依照下列步驟，在Adobe Campaign中新增OAuth專案認證：
+執行上述步驟後，請在Adobe Campaign中新增您的OAuth專案認證。
+
+>[!NOTE]
+>
+>作為託管或受管理的Cloud Service客戶，不需要執行此步驟：Adobe已將OAuth專案認證新增至您的環境。
+>
+
+若為內部部署或混合客戶，請遵循下列步驟：
 
 1. 透過SSH登入安裝Adobe Campaign例項的每個容器。
 
