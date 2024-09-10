@@ -6,7 +6,7 @@ badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v
 feature: Personalization
 role: User
 exl-id: 67fd9a67-cb05-46cd-acd5-e42fde6f4d4f
-source-git-commit: 0cf7f249f366a6ef0e9bd0326ec14131fcf7dc18
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1024'
 ht-degree: 8%
@@ -49,7 +49,7 @@ ht-degree: 8%
 我們會建立電子郵件，首先在其中插入收件者的名稱，然後在郵件內文中新增設定檔建立日期。 操作步驟：
 
 1. 建立新傳遞或開啟現有的電子郵件型別傳遞。
-1. 在傳遞精靈中，按一下&#x200B;**[!UICONTROL Subject]**&#x200B;以編輯郵件主旨並輸入主旨。
+1. 在傳遞小幫手中，按一下&#x200B;**[!UICONTROL Subject]**&#x200B;以編輯郵件主旨並輸入主旨。
 1. 輸入&quot; **[!UICONTROL Special offer for]** &quot;並使用工具列中的按鈕插入個人化欄位。 選取 **[!UICONTROL Recipients>Title]**。
 
    ![](assets/s_ncs_user_insert_custom_field.png)

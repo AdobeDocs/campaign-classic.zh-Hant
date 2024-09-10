@@ -6,7 +6,7 @@ badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v
 feature: SMS
 role: User
 exl-id: 94aa4628-d973-433d-b963-b078e2d6672b
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 2%
@@ -35,7 +35,7 @@ ht-degree: 2%
 
 若要建立SMS的內容，請遵循下列步驟：
 
-1. 在精靈的&#x200B;**[!UICONTROL Text content]**&#x200B;區段中輸入訊息的內容。 工具列按鈕可讓您匯入、儲存或搜尋內容。 最後一個按鈕用於插入個人化欄位。
+1. 在助理員的&#x200B;**[!UICONTROL Text content]**&#x200B;區段中輸入訊息的內容。 工具列按鈕可讓您匯入、儲存或搜尋內容。 最後一個按鈕用於插入個人化欄位。
 
    ![](assets/s_ncs_user_wizard_sms01_138.png)
 

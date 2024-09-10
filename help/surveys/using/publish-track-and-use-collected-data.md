@@ -5,7 +5,7 @@ description: 瞭解如何發佈、追蹤及使用調查中所收集的資料
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Surveys
 exl-id: 3cf3c486-6640-4d67-95cf-50d5767deb60
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '843'
 ht-degree: 2%
@@ -94,7 +94,7 @@ ht-degree: 2%
 
    然後輸入要匯出的資訊和儲存檔案。
 
-   您可以在匯出精靈中設定輸出檔案的內容和格式。
+   您可以在匯出輔助程式中設定輸出檔案的內容和格式。
 
    這可讓您：
 

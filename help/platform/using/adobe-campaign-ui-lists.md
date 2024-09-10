@@ -4,7 +4,7 @@ title: 管理和自訂清單
 description: 瞭解如何瀏覽及設定清單
 feature: Audiences, Data Management
 exl-id: 21656cc2-15a1-4156-8897-ea4fe3e9b97f
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1153'
 ht-degree: 32%
@@ -163,7 +163,7 @@ ht-degree: 32%
 
 ## 匯出清單 {#exporting-a-list}
 
-若要從清單匯出資料，您必須使用匯出精靈。 若要存取，請從清單中選取要匯出的元素，按一下滑鼠右鍵並選取&#x200B;**[!UICONTROL Export...]**。
+若要從清單匯出資料，您必須使用匯出助理。 若要存取，請從清單中選取要匯出的元素，按一下滑鼠右鍵並選取&#x200B;**[!UICONTROL Export...]**。
 
 在[一般匯入和匯出](../../platform/using/about-generic-imports-exports.md)中說明匯入和匯出函式的使用。
 

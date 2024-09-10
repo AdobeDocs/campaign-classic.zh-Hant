@@ -5,7 +5,7 @@ description: 開始使用Campaign資料結構
 feature: Schema Extension
 role: Data Engineer, Developer
 exl-id: d4446035-3988-4d89-b7df-7b8528c2e371
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '392'
 ht-degree: 1%
@@ -61,7 +61,7 @@ ht-degree: 1%
    >
    >依預設，使用者建立的方案會儲存在「cus」名稱空間。 如需詳細資訊，請參閱[結構描述識別](../../configuration/using/about-schema-reference.md#identification-of-a-schema)。
 
-1. 建立表格內容。 建議您使用輸入精靈來確認沒有遺失任何設定。 若要這麼做，請按一下&#x200B;**[!UICONTROL Insert]**&#x200B;按鈕，然後選擇要新增的設定型別。
+1. 建立表格內容。 我們建議使用專案小幫手來確認沒有遺失設定。 若要這麼做，請按一下&#x200B;**[!UICONTROL Insert]**&#x200B;按鈕，然後選擇要新增的設定型別。
 
    ![](assets/s_ncs_configuration_create_new_content.png)
 

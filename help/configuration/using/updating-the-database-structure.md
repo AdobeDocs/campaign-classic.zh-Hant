@@ -5,7 +5,7 @@ description: 更新資料庫結構
 feature: Configuration
 role: Data Engineer, Developer
 exl-id: 6c1e061b-8636-4285-8d83-97474544d252
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 8%
@@ -16,7 +16,7 @@ ht-degree: 8%
 
 
 
-若要套用對結構描述所做的修改，請啟動資料庫更新精靈。 此精靈可透過&#x200B;**[!UICONTROL Tools > Advanced > Update database structure]**&#x200B;存取。 它會檢查資料庫的實體結構是否符合其邏輯描述，並執行SQL更新指令碼。
+若要套用對結構描述所做的修改，請啟動資料庫更新輔助程式。 此助理可以透過&#x200B;**[!UICONTROL Tools > Advanced > Update database structure]**&#x200B;存取。 它會檢查資料庫的實體結構是否符合其邏輯描述，並執行SQL更新指令碼。
 
 ![](assets/d_ncs_integration_schema_update.png)
 

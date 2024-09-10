@@ -5,7 +5,7 @@ description: 設定報告存取權
 feature: Reporting, Monitoring
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 exl-id: 1e5ab922-481c-4dce-a05e-a58408002e24
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '769'
 ht-degree: 2%
@@ -82,7 +82,7 @@ ht-degree: 2%
 
 例如，我們將建立報表連結，使其可透過收件者清單存取。
 
-1. 按一下「**[!UICONTROL New]**」，然後在報告建立精靈中選取「**[!UICONTROL Create a link to an existing report]**」。
+1. 按一下&#x200B;**[!UICONTROL New]**&#x200B;並在報告建立助理中選取&#x200B;**[!UICONTROL Create a link to an existing report]**。
 
    ![](assets/s_ncs_advuser_report_wizard_link_01.png)
 
@@ -126,7 +126,7 @@ ht-degree: 2%
 
 必須發佈報表，才能與其他運運算元共用報表並在可用報表清單中顯示它們（也請參閱[報表顯示內容](#report-display-context)）。 每次變更報告時，都必須再次執行此作業。
 
-1. 按一下工具列中的&#x200B;**[!UICONTROL Publish]**&#x200B;開啟發佈精靈。
+1. 按一下工具列中的&#x200B;**[!UICONTROL Publish]**&#x200B;開啟發佈小幫手。
 
    ![](assets/s_ncs_advuser_report_publish_01.png)
 

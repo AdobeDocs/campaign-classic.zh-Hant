@@ -6,7 +6,7 @@ badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v
 feature: Personalization
 role: User
 exl-id: 8d155844-d18a-4165-9886-c3b144109f6e
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '870'
 ht-degree: 2%
@@ -31,7 +31,7 @@ ht-degree: 2%
 
 若要在訊息中插入個人化區塊，請遵循下列步驟：
 
-1. 在傳遞精靈的內容編輯器中，按一下個人化欄點陣圖示並選取&#x200B;**[!UICONTROL Include]**&#x200B;功能表。
+1. 在傳遞助理的內容編輯器中，按一下個人化欄點陣圖示並選取&#x200B;**[!UICONTROL Include]**&#x200B;功能表。
 1. 從清單中選取個人化區塊（清單中顯示10個上次使用的區塊），或按一下&#x200B;**[!UICONTROL Other...]**&#x200B;功能表以存取完整清單。
 
    ![](assets/s_ncs_user_personalized_block01.png)
@@ -71,7 +71,7 @@ HTML原始碼會插入傳遞內容中。 例如，**[!UICONTROL Greetings]**&#x2
 >如需映象頁面產生的詳細資訊，請參閱[產生映象頁面](sending-messages.md#generating-the-mirror-page)。
 
 1. 建立新傳遞或開啟現有的電子郵件型別傳遞。
-1. 在傳遞精靈中，按一下&#x200B;**[!UICONTROL Subject]**&#x200B;以編輯郵件主旨並輸入主旨。
+1. 在傳遞小幫手中，按一下&#x200B;**[!UICONTROL Subject]**&#x200B;以編輯郵件主旨並輸入主旨。
 1. 在訊息本文中插入個人化區塊。 若要這麼做，請按一下訊息內容、按一下個人化欄點陣圖示並選取&#x200B;**[!UICONTROL Include]**&#x200B;功能表。
 1. 選取要插入的第一個區塊。 更新程式以包含其他兩個區塊。
 

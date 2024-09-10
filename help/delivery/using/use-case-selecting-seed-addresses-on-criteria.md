@@ -5,7 +5,7 @@ description: 「使用案例：依條件選取種子地址」
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Seed Address
 exl-id: 091648b8-bf2d-4595-8be3-287f1ac48edd
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '851'
 ht-degree: 2%
@@ -83,15 +83,15 @@ ht-degree: 2%
 
    ![](assets/dlv_seeds_usecase_12.png)
 
-1. 顯示更新精靈時，按一下&#x200B;**[!UICONTROL Next]**&#x200B;按鈕以存取「編輯表格」視窗：在種子位址資料結構描述中執行的變更需要結構更新。
+1. 顯示更新助理時，按一下&#x200B;**[!UICONTROL Next]**&#x200B;按鈕以存取「編輯表格」視窗：在種子位址資料結構描述中執行的變更需要結構更新。
 
    ![](assets/dlv_seeds_usecase_13.png)
 
-1. 請依照精靈的指示進行，直到您進入頁面執行更新為止。 按一下 **[!UICONTROL Start]** 按鈕。
+1. 請按照助理的指示進行，直到您進入頁面執行更新為止。 按一下 **[!UICONTROL Start]** 按鈕。
 
    ![](assets/dlv_seeds_usecase_14.png)
 
-   更新完成後，您可以關閉精靈。
+   更新完成後，您可以關閉助理。
 
 1. 中斷連線，然後重新連線至Adobe Campaign。 在種子位址資料結構中所做的變更現在生效。 為了從種子位址畫面顯示它們，您必須更新相關聯的&#x200B;**[!UICONTROL Input form]**。 請參閱[更新輸入表單](#updating-the-input-form)區段。
 

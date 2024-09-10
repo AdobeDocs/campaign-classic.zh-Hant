@@ -5,7 +5,7 @@ description: 瞭解如何管理行銷活動的核准
 role: User
 feature: Approvals, Campaigns
 exl-id: 8cbb2445-f5e4-4a25-ba7e-56e39ca9d3ce
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '2437'
 ht-degree: 1%
@@ -321,7 +321,7 @@ Adobe Campaign可讓您以合作模式，針對行銷活動的主要階段設定
 
    ![](assets/s_ncs_user_validation_submit_content_notif.png)
 
-1. 接著，他們可以登入主控台、開啟傳遞，並使用簡化的精靈進行編輯，以變更主題、HTML和文字內容，以及傳送校樣。
+1. 接著，他們可以登入主控台、開啟傳遞，並使用簡化的助理員加以編輯，以變更主題、HTML和文字內容，以及傳送校樣。
 
    ![](assets/s_user_validation_content_edition.png)
 

@@ -6,7 +6,7 @@ badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v
 feature: Monitoring, Reporting
 role: User
 exl-id: a039a288-2e7b-4f35-9885-ead3ed4347af
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 2%
@@ -40,7 +40,7 @@ ht-degree: 2%
 
 為了更清楚瞭解收件者的行為，您可以追蹤他們對傳送的反應：接收、開啟、點選連結、取消訂閱等。 在Campaign Classic中，此資訊會顯示在傳遞所目標定位的收件者的「追蹤」標籤中，以及傳遞的「追蹤」標籤中。
 
-**提示**：訊息追蹤預設為啟用。 若要設定URL，請選取傳送精靈下方的顯示URL選項。 對於訊息的每個URL，您可以選擇是否啟動追蹤。
+**提示**：訊息追蹤預設為啟用。 若要設定URL，請選取傳送助理員下方區段中的「顯示URL」選項。 對於訊息的每個URL，您可以選擇是否啟動追蹤。
 
 如需詳細資訊，請參閱[設定追蹤](how-to-configure-tracked-links.md)區段及[追蹤指標](../../reporting/using/delivery-reports.md#tracking-indicators)說明。
 

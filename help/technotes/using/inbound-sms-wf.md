@@ -4,7 +4,7 @@ title: 中間來源基礎結構的傳入簡訊工作流程活動
 description: 中間來源基礎結構的傳入簡訊工作流程活動
 feature: Technote, SMS
 exl-id: 756039b2-5f57-4dc5-8166-a421206b886b
-source-git-commit: 5c42ff45b4d0bc4d61f4fccdba4518801ea4c9da
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '423'
 ht-degree: 5%
@@ -35,7 +35,7 @@ ht-degree: 5%
    </element>
    ```
 
-1. 若要套用對結構描述所做的修改，請啟動資料庫更新精靈。 此精靈可透過&#x200B;**工具** > **進階** > **更新資料庫結構**&#x200B;存取。 它會檢查資料庫的實體結構是否符合其邏輯描述，並執行SQL更新指令碼。 [了解更多](../../configuration/using/updating-the-database-structure.md)
+1. 若要套用對結構描述所做的修改，請啟動資料庫更新輔助程式。 此助理可以透過&#x200B;**工具** > **進階** > **更新資料庫結構**&#x200B;存取。 它會檢查資料庫的實體結構是否符合其邏輯描述，並執行SQL更新指令碼。 [了解更多](../../configuration/using/updating-the-database-structure.md)
 
 1. 停止並備份包含&#x200B;**傳入簡訊活動**&#x200B;的工作流程。
 

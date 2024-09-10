@@ -5,7 +5,7 @@ feature: Application Settings
 description: 瞭解如何設定Campaign Explorer導覽樹狀結構
 role: Data Engineer, Developer
 exl-id: c7ae7240-0c12-4420-bbb3-4268c9ade3e7
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1186'
 ht-degree: 0%
@@ -101,7 +101,7 @@ XML檔案包含具有&#x200B;**名稱**&#x200B;和&#x200B;**名稱空間**&#x200
 * 宣告全域命令以啟動「xtk：import」表單：
 
   ```
-  <command desc="Start the data import wizard" form="xtk:import" label="&amp;Data import..." name="import" rights="import,recipientImport"/>
+  <command desc="Start the data import assistant" form="xtk:import" label="&amp;Data import..." name="import" rights="import,recipientImport"/>
   ```
 
   命令標籤中出現&#x200B;**&amp;**，因此在&#39;I&#39;字元上宣告鍵盤快速鍵。

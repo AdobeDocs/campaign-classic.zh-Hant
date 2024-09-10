@@ -6,7 +6,7 @@ badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v
 feature: Monitoring
 role: User, Data Engineer
 exl-id: 44ecc8c6-6584-43eb-96b4-7d8463053123
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1186'
 ht-degree: 5%
@@ -76,7 +76,7 @@ ht-degree: 5%
 >
 >如果未啟用傳遞追蹤，則不會顯示此索引標籤。
 
-追蹤設定會在傳遞精靈的適當階段執行。 請參閱[如何設定追蹤的連結](how-to-configure-tracked-links.md)。
+追蹤設定會在傳遞助理的適當階段執行。 請參閱[如何設定追蹤的連結](how-to-configure-tracked-links.md)。
 
 在傳遞報告中解譯&#x200B;**[!UICONTROL Tracking]**&#x200B;資料。 請參閱[本節](../../reporting/using/delivery-reports.md)。
 

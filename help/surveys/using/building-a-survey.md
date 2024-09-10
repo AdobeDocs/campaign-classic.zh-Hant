@@ -5,7 +5,7 @@ description: 瞭解設計調查的關鍵步驟
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Surveys
 exl-id: 8d83dfd5-70ec-4656-965b-f6b5e6f9eec1
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '793'
 ht-degree: 2%
@@ -34,7 +34,7 @@ ht-degree: 2%
 
 ## 新增欄位 {#adding-fields}
 
-表單中的欄位可讓使用者輸入資訊並選取選項。 對於表單中的每個頁面，它們都是使用&#x200B;**[!UICONTROL Add using the wizard]**&#x200B;功能表透過工具列中的第一個按鈕建立的。
+表單中的欄位可讓使用者輸入資訊並選取選項。 對於表單中的每個頁面，它們都是使用&#x200B;**[!UICONTROL Add using the assistant]**&#x200B;功能表透過工具列中的第一個按鈕建立的。
 
 ![](assets/s_ncs_admin_survey_add_field_menu.png)
 

@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: b148d34b-4060-4c54-9cb2-9e712a7c17d7
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 0%
@@ -30,7 +30,7 @@ ht-degree: 0%
 1. 根據您使用的作業系統，安裝用於Netezza的ODBC驅動程式：
 
    * 適用於Linux的&#x200B;**nz-linuxclient-v7.2.0.0.tar.gz** 選取與作業系統（linux或linux64）對應的資料夾，然後啟動unpack指令。 您可以將安裝保留在預設建議的存放庫中執行：「/usr/local/nz」。
-   * **nz-winclient-v7.2.0.0.zip** for Windows。 解壓縮檔案並啟動與您的作業系統對應的可執行指令碼： nzodbcsetup.exe或nzodbcsetup64.exe。 請依照精靈的指示完成驅動程式的安裝。
+   * **nz-winclient-v7.2.0.0.zip** for Windows。 解壓縮檔案並啟動與您的作業系統對應的可執行指令碼： nzodbcsetup.exe或nzodbcsetup64.exe。 請依照助理員指示完成驅動程式的安裝。
 
 1. 設定ODBC驅動程式。 可在標準檔案中執行組態： **/etc/odbc.ini**&#x200B;用於一般引數，**/etc/odbcinst.ini**&#x200B;用於宣告驅動程式。
 

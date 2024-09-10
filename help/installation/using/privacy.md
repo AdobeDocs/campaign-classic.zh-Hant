@@ -4,7 +4,7 @@ title: 個人化與隱私
 description: 瞭解隱私權與個人化的安全性最佳實務
 feature: Installation, Privacy, Privacy Tools, URL Personalization
 exl-id: 0a3473bf-0528-486d-a799-8db86fece522
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '805'
 ht-degree: 2%
@@ -94,7 +94,7 @@ ht-degree: 2%
 
 1. 選擇&#x200B;**[!UICONTROL External Account]** (extAccount)。
 
-1. 在最後一個精靈畫面中，編輯新的「srcSchema」以限制存取所有密碼欄位：
+1. 在上一個助理畫面中，編輯新的「srcSchema」以限制所有密碼欄位的存取權：
 
    您可以將主要元素(`<element name="extAccount" ... >`)取代為：
 

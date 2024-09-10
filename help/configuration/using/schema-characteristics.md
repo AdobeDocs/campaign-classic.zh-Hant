@@ -6,7 +6,7 @@ feature: Custom Resources
 role: Data Engineer, Developer
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 exl-id: 099161b4-b4cb-433c-aed6-71157269a536
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '389'
 ht-degree: 1%
@@ -29,13 +29,13 @@ ht-degree: 1%
 
 ## 檢視屬性 {#the-view-attribute}
 
-Source結構描述接受&#x200B;**srcSchema**&#x200B;根專案的&#x200B;**檢視**&#x200B;屬性。 在自訂表格中操作Adobe Campaign時，必須使用它。 **view=&quot;true&quot;**&#x200B;屬性會告訴資料庫結構更新精靈忽略此結構描述。 因此，禁止應用程式將表格、其欄及其索引與對應的綱要同步。
+Source結構描述接受&#x200B;**srcSchema**&#x200B;根專案的&#x200B;**檢視**&#x200B;屬性。 在自訂表格中操作Adobe Campaign時，必須使用它。 **view=&quot;true&quot;**&#x200B;屬性會告訴資料庫結構更新助理忽略此結構描述。 因此，禁止應用程式將表格、其欄及其索引與對應的綱要同步。
 
 當這個屬性設定為&#x200B;**true**&#x200B;時，結構描述只會用來產生SQL查詢，以存取這個資料表的資料。
 
 ## 表格和欄的名稱 {#names-of-tables-and-columns}
 
-當表格是由表格更新精靈建立時，表格和欄的名稱會根據個別綱要和屬性的名稱自動產生。 不過，可以輸入下列屬性來強制使用SQL名稱：
+當表格是由表格更新輔助程式建立時，表格和欄的名稱會根據個別綱要和屬性的名稱自動產生。 不過，可以輸入下列屬性來強制使用SQL名稱：
 
 * 在結構描述的主要專案中的&#x200B;**sqltable**，若要指定資料表，
 * 每個屬性內的&#x200B;**sqlname**，以指定資料行。

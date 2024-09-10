@@ -8,7 +8,7 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 94fc473a-dc49-41e8-b572-51c162b09996
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '947'
 ht-degree: 29%
@@ -23,13 +23,13 @@ ht-degree: 29%
 
 例如，使用行銷活動追蹤資料（追蹤歷史記錄等）會很有用 在試算表中。 輸出資料可以是 txt、CSV、TAB 或 XML 格式。
 
-匯出精靈可讓您設定匯出、定義其選項並啟動執行。 這是一系列畫面，其內容取決於匯出型別（簡單或多重）和操作者的權利。
+匯出助理可以讓您設定匯出、定義其選項並啟動執行。 這是一系列畫面，其內容取決於匯出型別（簡單或多重）和操作者的權利。
 
-建立新的匯出作業後，匯出精靈便會顯示（請參閱[建立匯入及匯出作業](../../platform/using/creating-import-export-jobs.md)）。
+建立新的匯出工作後，匯出助理就會顯示（請參閱[建立匯入和匯出工作](../../platform/using/creating-import-export-jobs.md)）。
 
 ## 步驟1 — 選擇匯出範本 {#step-1---choosing-the-export-template}
 
-啟動匯出精靈時，您必須先選取範本。 例如，要配置最近註冊的收件者的匯出，請按照以下步驟操作：
+啟動匯出助理時，您必須先選取範本。 例如，要配置最近註冊的收件者的匯出，請按照以下步驟操作：
 
 1. 選取&#x200B;**[!UICONTROL Profiles and Targets > Job > Generic imports and exports]**&#x200B;資料夾。
 1. 點擊&#x200B;**新建**，然後點擊&#x200B;**匯出**&#x200B;以建立匯出範本。
@@ -95,7 +95,7 @@ ht-degree: 29%
 
 ## 第 6 步 - 篩選條件 {#step-6---filter-conditions-}
 
-您可以新增篩選條件以避免匯出所有資料。 此篩選的設定與傳遞精靈中的收件者目標定位相同。 請參見[此頁面](../../delivery/using/steps-defining-the-target-population.md)。
+您可以新增篩選條件以避免匯出所有資料。 此篩選的設定與傳遞助理員中的收件者目標定位相同。 請參見[此頁面](../../delivery/using/steps-defining-the-target-population.md)。
 
 ![](assets/s_ncs_user_export_wizard05_b.png)
 
@@ -125,7 +125,7 @@ ht-degree: 29%
 
 ![](assets/s_ncs_user_export_wizard07.png)
 
-按一下精靈底部的標籤，從欄中的結果預覽切換到XML中的結果。 您還可以查看生成的 SQL 查詢。
+按一下輔助程式底部的標籤，從欄中的結果預覽切換為XML中的結果。 您還可以查看生成的 SQL 查詢。
 
 ## 步驟9 — 啟動匯出 {#step-9---launching-the-export}
 

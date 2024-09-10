@@ -6,7 +6,7 @@ badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v
 feature: Monitoring
 role: User, Data Engineer, Developer
 exl-id: 9d3f5c74-377a-4e24-81e5-bb605f69cf8a
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '653'
 ht-degree: 1%
@@ -25,7 +25,7 @@ ht-degree: 1%
 * **[!DNL value]**：授與傳遞欄位、傳遞變數以及傳遞中載入的自訂物件的存取權。 [了解更多](#value)
 * **[!DNL foreach]**：重複載入為自訂物件的陣列。 [了解更多](#foreach)
 
-可直接從傳遞精靈中測試這些變數。 註解會套用於內容預覽，以及當您按一下追蹤按鈕以檢視URL清單時。
+可直接從傳送助理測試這些變數。 註解會套用於內容預覽，以及當您按一下追蹤按鈕以檢視URL清單時。
 
 ## [!DNL include] {#include}
 
@@ -57,7 +57,7 @@ ht-degree: 1%
   <%@ include option='NmsServer_URL' %>
   ```
 
-  使用傳送精靈中的個人化按鈕來取得正確的語法。
+  使用傳送助理中的個人化按鈕來取得正確的語法。
 
 ## [!DNL value] {#value}
 

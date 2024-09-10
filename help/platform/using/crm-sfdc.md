@@ -4,7 +4,7 @@ title: Campaign - Salesforce CRM聯結器
 description: 瞭解如何連結Campaign和Salesforce
 feature: Salesforce Integration
 exl-id: 94a1f00d-e952-4edd-9012-f71c87b897ca
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '321'
 ht-degree: 0%
@@ -45,7 +45,7 @@ ht-degree: 0%
 
    * **[!UICONTROL API version]**
 選取API的版本。
-1. 執行設定精靈以產生可用的CRM表格：設定精靈可讓您收集表格並建立相符的結構描述。
+1. 執行Configuration Assistant以產生可用的CRM表格：Configuration Assistant可讓您收集表格並建立相符的結構描述。
 
    ![](assets/crm_connectors_sfdc_launch.png)
 

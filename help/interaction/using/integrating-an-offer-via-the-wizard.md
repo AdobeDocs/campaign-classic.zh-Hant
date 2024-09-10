@@ -1,20 +1,20 @@
 ---
 product: campaign
-title: 透過精靈整合優惠方案
-description: 透過精靈整合優惠方案
+title: 透過助理整合優惠方案
+description: 透過助理整合優惠方案
 feature: Interaction, Offers
 audience: interaction
 content-type: reference
 topic-tags: delivering-an-offer
 exl-id: 64aea8b9-7f06-4db0-a3e6-6a0e17c3ddcb
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '803'
 ht-degree: 0%
 
 ---
 
-# 透過精靈整合優惠方案{#integrating-an-offer-via-the-wizard}
+# 透過助理整合優惠方案{#integrating-an-offer-via-the-assistant}
 
 
 

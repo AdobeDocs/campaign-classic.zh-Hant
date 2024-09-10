@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: a025026e-688e-4ec1-abc4-40ee040d2b3b
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '586'
 ht-degree: 1%
@@ -49,7 +49,7 @@ ht-degree: 1%
    >對於連接URL，僅使用以下字元： `[a-z]`、 `[A-Z]`、、 `[0-9]` 和破折號 （-） 或句號。
 
 1. 按兩下 **[!UICONTROL Ok]** 以確認設置：您現在可以開始執行個體創建過程。
-1. 在 **[!UICONTROL Connection settings]** 窗口中，輸入 **內部** 登入及其連接到 Adobe Campaign 應用程式 伺服器的密碼。 連接后，您可以訪問執行個體创建精靈以聲明新執行個體
+1. 在 **[!UICONTROL Connection settings]** 窗口中，輸入 **內部** 登入及其連接到 Adobe Campaign 應用程式 伺服器的密碼。 連接后，可以訪問執行個體创建助手以聲明新執行個體
 1. **[!UICONTROL Name]**&#x200B;在欄位中，輸入&#x200B;**執行個體名稱**。由於此名稱用於生成配置文件&#x200B;**`<instance>`配置.xml**&#x200B;並在命令行參數中用於標識執行個體，因此請確保選擇不含特殊字元的短名稱。例如： **電子行銷**。
 
    ![](assets/s_ncs_install_create_instance.png)

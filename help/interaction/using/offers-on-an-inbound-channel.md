@@ -8,7 +8,7 @@ audience: interaction
 content-type: reference
 topic-tags: case-study
 exl-id: 90afced3-465d-4370-8a33-51a7e4356135
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '2097'
 ht-degree: 1%
@@ -197,7 +197,7 @@ Neobank公司想要針對兩個不同的目標建立行銷優惠方案。 想要
 
 ### 建立匿名連絡人的環境 {#creating-an-environment-for-anonymous-contacts}
 
-1. 透過傳遞對應精靈（**訪客**&#x200B;對應），為匿名傳入互動建立優惠方案環境。 如需詳細資訊，請參閱[建立優惠方案環境](../../interaction/using/live-design-environments.md#creating-an-offer-environment)。
+1. 透過傳遞對應助理（**訪客**&#x200B;對應），為匿名傳入互動建立優惠方案環境。 如需詳細資訊，請參閱[建立優惠方案環境](../../interaction/using/live-design-environments.md#creating-an-offer-environment)。
 
    ![](assets/offer_env_anonymous_003.png)
 

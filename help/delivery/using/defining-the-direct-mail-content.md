@@ -6,7 +6,7 @@ badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v
 feature: Direct Mail
 role: User
 exl-id: 585b2017-9408-4953-8505-2f6d9db8032f
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '176'
 ht-degree: 10%
@@ -27,7 +27,7 @@ ht-degree: 10%
 
 ![](assets/s_ncs_user_mail_delivery_format_link.png)
 
-此連結可讓您存取擷取精靈，並定義要匯出至輸出檔案的資訊（欄）。
+此連結可讓您存取擷取小幫手，並定義要匯出至輸出檔案的資訊（欄）。
 
 ![](assets/s_ncs_user_mail_delivery_format_wz.png)
 
@@ -35,4 +35,4 @@ ht-degree: 10%
 
 >[!NOTE]
 >
->此精靈包含匯出精靈的步驟，在[快速入門](../../platform/using/executing-export-jobs.md)區段中詳細說明。
+>此助理包含匯出助理的詳細步驟，請參閱[快速入門](../../platform/using/executing-export-jobs.md)區段。

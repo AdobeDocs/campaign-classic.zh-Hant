@@ -7,7 +7,7 @@ audience: interaction
 content-type: reference
 topic-tags: unitary-interactions
 exl-id: a8face46-a933-4f2c-8299-ccb66f05967d
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '407'
 ht-degree: 1%
@@ -22,9 +22,9 @@ ht-degree: 1%
 
 ## 定位和儲存匿名互動的環境 {#targeting-and-storing-an-environment-for-anonymous-interactions}
 
-依預設，互動會隨附預先設定的環境，以鎖定收件者表格（已識別的優惠方案）。 如果您想要鎖定其他表格（匿名選件的訪客表格或特定的收件者表格），則需要使用目標對應精靈來建立環境。 如需詳細資訊，請參閱[建立優惠方案環境](../../interaction/using/live-design-environments.md#creating-an-offer-environment)。
+依預設，互動會隨附預先設定的環境，以鎖定收件者表格（已識別的優惠方案）。 如果您想要鎖定其他表格（匿名選件的訪客表格或特定的收件者表格），則需要使用目標對應助理來建立環境。 如需詳細資訊，請參閱[建立優惠方案環境](../../interaction/using/live-design-environments.md#creating-an-offer-environment)。
 
-當您透過對應建立精靈建立匿名環境時，**[!UICONTROL Environment dedicated to incoming anonymous interactions]**&#x200B;方塊會在環境的&#x200B;**[!UICONTROL General]**&#x200B;標籤中自動勾選。
+當您透過對應建立助理建立匿名環境時，**[!UICONTROL Environment dedicated to incoming anonymous interactions]**&#x200B;方塊會在環境的&#x200B;**[!UICONTROL General]**&#x200B;標籤中自動勾選。
 
 **[!UICONTROL Targeting dimension]**&#x200B;已自動完成。 依預設，它會連結至訪客表格。
 

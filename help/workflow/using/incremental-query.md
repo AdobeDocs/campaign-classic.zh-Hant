@@ -4,7 +4,7 @@ title: 增量查詢
 description: 進一步瞭解增量查詢工作流程活動
 feature: Workflows, Targeting Activity
 exl-id: abc08232-1a92-41e8-90f1-02e0a673539b
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '356'
 ht-degree: 3%
@@ -35,7 +35,7 @@ ht-degree: 3%
 1. 在&#x200B;**[!UICONTROL Scheduling & History]**&#x200B;索引標籤中，選取&#x200B;**[!UICONTROL Schedule execution]**&#x200B;選項。 任務在建立後會保持作用中，而且只會在排程指定的時間觸發，以執行查詢。 但是，如果停用該選項，則會立即執行查詢&#x200B;**並一次執行**。
 1. 按一下 **[!UICONTROL Change]** 按鈕。
 
-   在&#x200B;**[!UICONTROL Schedule editing wizard]**&#x200B;視窗中，您可以設定頻率、事件週期和事件有效期的型別。
+   在&#x200B;**[!UICONTROL Schedule editing assistant]**&#x200B;視窗中，您可以設定頻率、事件週期和事件有效期的型別。
 
    ![](assets/s_user_segmentation_wizard_11.png)
 

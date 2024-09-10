@@ -6,7 +6,7 @@ badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v
 feature: Monitoring
 role: User, Developer
 exl-id: ed88e1d6-c0d5-4a85-9f3e-be670f4bcc10
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '583'
 ht-degree: 10%
@@ -37,7 +37,7 @@ ht-degree: 10%
 
 訊息追蹤預設為啟用。 若要個人化追蹤URL的方式，請遵循下列步驟：
 
-1. 選取傳遞精靈下方、訊息內容下方的&#x200B;**[!UICONTROL Display URLs]**&#x200B;選項。
+1. 選取郵件內容下方傳遞助理區段中的&#x200B;**[!UICONTROL Display URLs]**&#x200B;選項。
 
    ![](assets/s_ncs_user_email_del_display_urls.png)
 

@@ -6,7 +6,7 @@ feature: Application Settings
 role: Data Engineer, Developer
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 exl-id: 38333669-5598-4811-a121-b677c1413f56
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '499'
 ht-degree: 2%
@@ -22,7 +22,7 @@ ht-degree: 2%
 * 如果您使用的收件者表格不是Adobe Campaign所提供的表格，
 * 如果您設定的篩選維度與目標對應畫面上的標準目標維度不同。
 
-目標對應建立精靈將協助您建立使用自訂表格所需的所有結構描述。
+目標對應建立助理會協助您建立使用自訂表格所需的所有結構描述。
 
 ## 建立和設定連結至自訂表格的綱要 {#creating-and-configuring-schemas-linked-to-the-custom-table}
 
@@ -83,7 +83,7 @@ ht-degree: 2%
    ```
 
 1. 按一下&#x200B;**[!UICONTROL Administration > Campaign management > Target mappings]**&#x200B;節點。
-1. 按一下「**新增**」按鈕，開啟目標對應建立精靈。
+1. 按一下「**新增**」按鈕，開啟目標對應建立助理。
 1. 輸入&#x200B;**標籤**&#x200B;欄位，並選取您剛在&#x200B;**目標維度**&#x200B;欄位中建立的結構描述。
 
    ![](assets/mapping_diffusion_wizard_1.png)
@@ -110,9 +110,9 @@ ht-degree: 2%
 
    ![](assets/mapping_diffusion_wizard_4.png)
 
-1. 按一下&#x200B;**儲存**&#x200B;按鈕以關閉精靈。
+1. 按一下&#x200B;**儲存**&#x200B;按鈕以關閉助理。
 
-   精靈會使用啟動結構描述來建立使新目標對應運作所需的所有其他結構描述。
+   助理使用開始綱要來建立使新目標對應運作所需的所有其他綱要。
 
    ![](assets/mapping_schema_list.png)
 

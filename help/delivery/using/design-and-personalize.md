@@ -6,7 +6,7 @@ badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v
 feature: Email Design, Personalization
 role: User
 exl-id: 5bf727d2-83b1-4a99-be25-041eee8d234c
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1293'
 ht-degree: 4%
@@ -149,7 +149,7 @@ ht-degree: 4%
 
 * 您可以檢查執行處理組態是否可啟用公用資源管理。 [了解更多](../../installation/using/deploying-an-instance.md#managing-public-resources)
 
-* 從傳遞精靈中，您可以匯入包含影像的HTML頁面，或透過&#x200B;**[!UICONTROL Image]**&#x200B;圖示直接使用HTML編輯器插入影像。 [了解更多](defining-the-email-content.md#adding-images)
+* 從傳遞小幫手，您可以匯入包含影像的HTML頁面，或透過&#x200B;**[!UICONTROL Image]**&#x200B;圖示直接使用HTML編輯器插入影像。 [了解更多](defining-the-email-content.md#adding-images)
 
 * 如果未顯示影像，請檢查伺服器上是否有這些影像。 若要這麼做，請按一下傳送中的Source標籤。 尋找您的影像，並在網頁瀏覽器中複製並貼上每個影像的URL。 如果未顯示影像，請聯絡您的IT管理員或提供傳送內容的協力廠商廠商。
 
@@ -157,6 +157,6 @@ ht-degree: 4%
 
 Adobe建議預覽您的訊息，以檢查其個人化傾向以及收件者看到您傳遞內容的方式。
 
-* 在傳遞精靈中，**[!UICONTROL Preview]**&#x200B;子索引標籤可讓您檢視每個收件者的內容轉譯。 個人化欄位和內容的條件元素會取代為所選設定檔的對應資訊。 [了解更多](defining-the-email-content.md#message-content)
+* 在傳遞助理中，**[!UICONTROL Preview]**&#x200B;子索引標籤可讓您檢視每個收件者的內容轉譯。 個人化欄位和內容的條件元素會取代為所選設定檔的對應資訊。 [了解更多](defining-the-email-content.md#message-content)
 
 * 每次預覽期間都會執行自動反垃圾郵件檢查。 在&#x200B;**[!UICONTROL Preview]**&#x200B;子索引標籤中，檢查[SpamAssassin](spamassassin.md)垃圾郵件評分。  按一下&#x200B;**[!UICONTROL More...]**&#x200B;以進一步瞭解警告。  在執行此操作之前，請確定Adobe Campaign應用程式伺服器上已正確安裝和設定SpamAssassin。 [了解更多](../../installation/using/configuring-spamassassin.md)

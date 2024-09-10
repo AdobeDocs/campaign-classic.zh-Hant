@@ -4,7 +4,7 @@ title: 資料模型最佳實務
 description: 瞭解如何使用Campaign Classic資料模型
 feature: Data Model
 exl-id: 9c59b89c-3542-4a17-a46f-3a1e58de0748
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '4013'
 ht-degree: 1%
@@ -90,7 +90,7 @@ Adobe Campaign是功能強大的跨頻道行銷活動管理系統，可以協助
 
 綱要中的表格空間屬性可讓您指定表格的專用表格空間。
 
-安裝精靈可讓您依型別（資料、暫存和索引）儲存物件。
+安裝輔助程式可讓您依型別（資料、暫存和索引）儲存物件。
 
 專屬的表格空間更適合分割、安全性規則，並可進行流暢且彈性的管理、更佳的最佳化及效能。
 

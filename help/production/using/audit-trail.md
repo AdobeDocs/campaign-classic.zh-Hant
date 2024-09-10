@@ -4,7 +4,7 @@ title: 稽核軌跡
 description: 瞭解如何使用Campaign稽核軌跡監控您的執行個體
 feature: Audit Trail, Monitoring, Workflows
 exl-id: 8508d879-fb38-4b1f-9f55-0341bb8d0c67
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '464'
 ht-degree: 2%
@@ -78,7 +78,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->根據預設，**[!UICONTROL Audit logs]**&#x200B;的保留期間設為180天。 若要瞭解如何變更保留期的詳細資訊，請參閱此[頁面](../../production/using/database-cleanup-workflow.md#deployment-wizard)。
+>根據預設，**[!UICONTROL Audit logs]**&#x200B;的保留期間設為180天。 若要瞭解如何變更保留期的詳細資訊，請參閱此[頁面](../../production/using/database-cleanup-workflow.md#deployment-assistant)。
 
 ## 啟用/停用稽核軌跡 {#enable-disable-audit-trail}
 

@@ -6,7 +6,7 @@ badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v
 feature: Subscriptions
 role: User
 exl-id: 16dddd4a-2e1a-4c78-8168-f656657bb9b8
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1117'
 ht-degree: 2%
@@ -126,7 +126,7 @@ ht-degree: 2%
   如需詳細資訊，請參閱[本區段](../../platform/using/editing-a-profile.md)中關於設定檔編輯的區段。
 
 * 自動為一組收件者訂閱此服務。 收件者清單可來自篩選操作、群組、資料夾、匯入或使用滑鼠的直接選取。 若要訂閱這些收件者，請選取設定檔，然後按一下滑鼠右鍵。 選取&#x200B;**[!UICONTROL Actions > Subscribe selection to a service...]**，選取相關的服務，然後啟動作業。
-* 匯入收件者並自動訂閱資訊服務。 若要這麼做，請選取匯入精靈最後一步中涉及的服務。
+* 匯入收件者並自動訂閱資訊服務。 要執行此操作，請選取匯入助理員最後一步中涉及的服務。
 
   如需詳細資訊，請參閱[本章節](../../platform/using/executing-import-jobs.md)。
 
@@ -146,7 +146,7 @@ ht-degree: 2%
 
 根據法律，電子郵件傳送必須包含取消訂閱連結。 收件者可以按一下此連結以更新其設定檔，並從未來傳送的目標中排除。
 
-預設取消訂閱連結會透過傳遞精靈中提供的內容編輯器工具列中的最後一個按鈕插入（請參閱[關於個人化](about-personalization.md)）。 收件者按一下此連結時，設定檔會新增至封鎖清單（選擇退出），表示任何傳遞動作都不會再鎖定此收件者。
+預設取消訂閱連結會透過傳遞助理員中提供的內容編輯器工具列中的最後一個按鈕插入（請參閱[關於個人化](about-personalization.md)）。 收件者按一下此連結時，設定檔會新增至封鎖清單（選擇退出），表示任何傳遞動作都不會再鎖定此收件者。
 
 但是，收件者可以選擇取消訂閱服務，而不取消訂閱所有服務。 若要允許，您可以使用網頁表單（請參閱[本區段](../../web/using/adding-fields-to-a-web-form.md#subscription-checkboxes)）或插入個人化取消訂閱連結（請參閱[個人化區塊](personalization-blocks.md)）。
 

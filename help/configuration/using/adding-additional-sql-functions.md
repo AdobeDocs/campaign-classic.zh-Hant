@@ -5,7 +5,7 @@ description: 瞭解如何定義其他SQL函式
 feature: Configuration, Instance Settings
 role: Data Engineer, Developer
 exl-id: 04b0a0e5-d6df-447c-ac67-66adb1bdf717
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1034'
 ht-degree: 0%
@@ -28,7 +28,7 @@ Adobe Campaign可讓使用者定義可存取SQL函式的&#x200B;**自己的函�
 
 要新增的函式位於XML格式&#x200B;**的**&quot;package&quot;檔案中，其結構詳見以下段落。
 
-若要從主控台安裝，請從功能表選取&#x200B;**工具/進階/匯入套件**&#x200B;選項，然後選取&#x200B;**[!UICONTROL Install from file]**，然後依照匯入精靈中的指示進行。
+若要從主控台安裝，請從功能表選取&#x200B;**工具/進階/匯入套件**&#x200B;選項，然後選取&#x200B;**[!UICONTROL Install from file]**，然後依照匯入小幫手中的指示進行。
 
 >[!IMPORTANT]
 >

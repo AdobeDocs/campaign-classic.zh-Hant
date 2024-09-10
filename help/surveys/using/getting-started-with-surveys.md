@@ -5,7 +5,7 @@ description: 使用Campaign建立您的第一個調查
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Surveys
 exl-id: 22e14b24-59ba-4a92-8ffb-f5336793d64f
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '939'
 ht-degree: 1%
@@ -67,7 +67,7 @@ ht-degree: 1%
 
 * **新增輸入欄位**
 
-  若要建立頁面的內容，您必須編輯它：若要這麼做，請連按兩下&#x200B;**[!UICONTROL Page]**&#x200B;物件。 按一下工具列中的第一個圖示以開啟欄位建立精靈。 若要建立使用者名稱輸入欄位，以儲存在收件者設定檔的相符欄位中，請選取&#x200B;**[!UICONTROL Edit a recipient]**。
+  若要建立頁面的內容，您必須編輯它：若要這麼做，請連按兩下&#x200B;**[!UICONTROL Page]**&#x200B;物件。 按一下工具列中的第一個圖示以開啟欄位建立助理。 若要建立使用者名稱輸入欄位，以儲存在收件者設定檔的相符欄位中，請選取&#x200B;**[!UICONTROL Edit a recipient]**。
 
   ![](assets/s_ncs_admin_survey_add_field_menu.png)
 
@@ -130,7 +130,7 @@ ht-degree: 1%
 使用者若要存取HTML頁面，應用程式必須可供使用。 它必須不再處於編輯階段，而是處於生產階段。 若要在生產環境中放置調查，您必須將其發佈。 操作步驟：
 
 * 按一下位於意見調查儀表板上方的&#x200B;**[!UICONTROL Publish]**&#x200B;按鈕。
-* 按一下&#x200B;**[!UICONTROL Start]**&#x200B;啟動出版物並關閉精靈。
+* 按一下&#x200B;**[!UICONTROL Start]**&#x200B;以啟動出版物並關閉助理。
 
   ![](assets/s_ncs_admin_survey_start_publ.png)
 

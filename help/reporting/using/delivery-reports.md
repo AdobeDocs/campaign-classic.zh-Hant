@@ -5,7 +5,7 @@ description: 傳遞報告
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Reporting, Monitoring
 exl-id: 74feb13f-0994-4a6a-ae4f-2538b07cc9c0
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1461'
 ht-degree: 8%
@@ -67,7 +67,7 @@ ht-degree: 8%
 * **[!UICONTROL Distinct opens for the population reached]** ：預估已開啟訊息至少一次的目標收件者人數。 由於必須開啟電子郵件才能點按連結，因此會考量追蹤URL的點按次數。
 * **[!UICONTROL Sum of opens for the population reached]** ：目標收件者開啟的總數預估值。
 * **[!UICONTROL Clicks on opt-out link]** ：對取消訂閱連結的點按次數。
-* **[!UICONTROL Clicks on the mirror page link]** ：點按映象頁面連結的次數。 若要將納入考量，必須在傳送精靈（追蹤的URL）中定義連結。 請參閱此[頁面](../../delivery/using/about-delivery-monitoring.md)。
+* **[!UICONTROL Clicks on the mirror page link]** ：點按映象頁面連結的次數。 若要納入考量，必須在傳送助理（追蹤的URL）中定義連結。 請參閱此[頁面](../../delivery/using/about-delivery-monitoring.md)。
 * **[!UICONTROL Estimation of forwards]** ：目標收件者轉寄的電子郵件預估數量。 此值的計算方式為減去相異人數與按一下電子郵件之相異收件者人數。
 
   >[!NOTE]

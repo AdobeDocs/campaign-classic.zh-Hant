@@ -5,7 +5,7 @@ description: 「使用案例：建立概覽」
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Web Apps
 exl-id: a1ac3aab-dc81-4533-9207-26d5dc5e1c88
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '957'
 ht-degree: 0%
@@ -94,7 +94,7 @@ ht-degree: 0%
    >
    >**nms：webApp**&#x200B;與Web應用程式結構描述一致。
    >
-   >**nms：newWebApp**&#x200B;與新的Web應用程式建立精靈一致。
+   >**nms：newWebApp**&#x200B;與新的Web應用程式建立助理一致。
 
 1. 選擇在相同視窗中顯示URL。
 1. 在影像欄位中新增網頁應用程式圖示： **/nms/img/webApp.png**。

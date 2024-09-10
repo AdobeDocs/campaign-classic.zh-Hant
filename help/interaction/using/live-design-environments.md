@@ -7,7 +7,7 @@ audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: 965c4a6a-6535-454d-bd37-e9c8312b4d13
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '447'
 ht-degree: 2%
@@ -33,7 +33,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->若要鎖定其他表格（匿名選件的訪客表格或特定的收件者表格），您需要使用目標對應精靈來建立環境。 如需詳細資訊，請參閱[建立優惠方案環境](#creating-an-offer-environment)。
+>若要鎖定其他表格（匿名選件的訪客表格或特定的收件者表格），您需要使用目標對應助理來建立環境。 如需詳細資訊，請參閱[建立優惠方案環境](#creating-an-offer-environment)。
 
 ![](assets/offer_environments_overview_002.png)
 
@@ -47,7 +47,7 @@ ht-degree: 2%
 
    ![](assets/offer_env_anonymous_001.png)
 
-1. 按一下&#x200B;**[!UICONTROL Next]**&#x200B;以繼續精靈中的下一個畫面，核取&#x200B;**[!UICONTROL Generate a storage schema for propositions]**&#x200B;方塊並按一下&#x200B;**[!UICONTROL Save]**。
+1. 按一下「**[!UICONTROL Next]**」以繼續進入助理的下一個畫面，核取「**[!UICONTROL Generate a storage schema for propositions]**」方塊並按一下「**[!UICONTROL Save]**」。
 
    ![](assets/offer_env_anonymous_002.png)
 

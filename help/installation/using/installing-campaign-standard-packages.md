@@ -5,7 +5,7 @@ description: 瞭解如何安裝Campaign內建套件
 feature: Installation, Application Settings
 badge-v7-prem: label="僅限內部部署/混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="僅適用於內部部署和混合部署"
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: b11185da8236d6100d98eabcc9dc1cf2cffa70af
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1264'
 ht-degree: 3%
@@ -32,7 +32,7 @@ ht-degree: 3%
 
 若要安裝內建套件：
 
-1. 從Adobe Campaign使用者端主控台的&#x200B;**[!UICONTROL Tools > Advanced > Import package]**&#x200B;存取套件匯入精靈。
+1. 從Adobe Campaign使用者端主控台的&#x200B;**[!UICONTROL Tools > Advanced > Import package]**&#x200B;存取套件匯入小幫手。
 1. 選取 **[!UICONTROL Install a standard package]**。
 1. 在套件清單中，核取您要安裝的套件。
    >[!NOTE]
@@ -242,7 +242,7 @@ ht-degree: 3%
 
 您必須安裝傳送頻道（電子郵件、行動裝置頻道、行動應用程式頻道、LINE等） 安裝異動訊息（訊息中心封裝）之前。 如果您已開始僅限電子郵件的訊息中心專案，且之後需要新增頻道，您必須依照下列步驟進行：
 
-1. 使用套件匯入精靈( **[!UICONTROL Tools > Advanced > Import package > Adobe Campaign package]**)安裝新管道，例如&#x200B;**行動管道**。
+1. 使用套件匯入小幫手( **[!UICONTROL Tools > Advanced > Import package > Adobe Campaign package]**)安裝新頻道，例如&#x200B;**行動頻道**。
 1. 匯入檔案( **[!UICONTROL Tools > Advanced > Import package > File]**)，並選取：
 
    ```

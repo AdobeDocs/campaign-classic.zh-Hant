@@ -4,7 +4,7 @@ title: 跨頻道傳遞
 description: 進一步瞭解跨頻道傳遞
 feature: Workflows, Channels Activity
 exl-id: 3bb468e2-7bcf-456f-8d8f-1c4e608e2b25
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '287'
 ht-degree: 7%
@@ -49,7 +49,7 @@ ht-degree: 7%
 1. 將&#x200B;**[!UICONTROL Split]**&#x200B;活動新增至您的工作流程，以劃分擁有行動電話號碼的收件者和擁有電子郵件地址的收件者。
 1. 在&#x200B;**[!UICONTROL Delivery]**&#x200B;索引標籤中，選取每個目標的傳遞。
 
-   按兩下工作流程中的傳送活動，以傳統傳送精靈的相同方式建立您的傳送。 如需關於此項目的詳細資訊，請參閱此[頁面](../../delivery/using/about-email-channel.md)。
+   按兩下工作流程中的傳送活動，以傳統傳送助理的相同方式建立您的傳送。 如需關於此項目的詳細資訊，請參閱此[頁面](../../delivery/using/about-email-channel.md)。
 
    ![](assets/cross_channel_delivery_3.png)
 

@@ -6,7 +6,7 @@ badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v
 feature: Channel Configuration
 role: User
 exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
-source-git-commit: efd333aed2b14667dc95f92341fc16482f0fb6aa
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1526'
 ht-degree: 11%
@@ -55,7 +55,7 @@ ht-degree: 11%
 
 完成後，按一下&#x200B;**[!UICONTROL Confirm delivery]**&#x200B;以啟動訊息的傳遞。
 
-然後，您可以關閉傳遞精靈，並從&#x200B;**[!UICONTROL Delivery]**&#x200B;索引標籤追蹤傳遞的執行，可透過此傳遞的詳細資訊或傳遞清單存取。
+然後，您可以關閉傳遞助理員並從&#x200B;**[!UICONTROL Delivery]**&#x200B;索引標籤追蹤傳遞的執行情形，可透過此傳遞的詳細資訊或傳遞清單存取。
 
 傳送訊息後，您可以監視和追蹤您的傳遞。 如需詳細資訊，請參閱下列區段。
 

@@ -5,7 +5,7 @@ description: 新增欄位至網路表單
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Web Forms, Landing Pages
 exl-id: 827b6575-7206-4dfc-b2c6-b95a6d5730b1
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '2373'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 在Web表單中，欄位可讓使用者輸入資訊並選取選項。 網路表單可提供輸入欄位、選擇欄位、靜態和進階內容（字幕、訂閱等）。
 
-當您使用精靈新增欄位時，系統會根據選取的欄位或儲存體變數自動偵測欄位型別。 您可以使用&#x200B;**[!UICONTROL General]**&#x200B;索引標籤中的&#x200B;**[!UICONTROL Type]**&#x200B;下拉式方塊來編輯它。
+當您使用助理新增欄位時，系統會根據選取的欄位或儲存體變數自動偵測欄位型別。 您可以使用&#x200B;**[!UICONTROL General]**&#x200B;索引標籤中的&#x200B;**[!UICONTROL Type]**&#x200B;下拉式方塊來編輯它。
 
 ![](assets/s_ncs_admin_webform_change_type.png)
 
@@ -43,9 +43,9 @@ ht-degree: 0%
 >
 >依預設，該欄位會插入目前樹狀結構的底部。 使用工具列中的箭頭可將其向上或向下移動。
 
-## 欄位建立精靈 {#field-creation-wizard}
+## 欄位建立助理 {#field-creation-assistant}
 
-對於表單的每個頁面，您可以透過工具列中的第一個按鈕新增欄位。 若要這麼做，請前往&#x200B;**[!UICONTROL Add using the wizard]**&#x200B;功能表。
+對於表單的每個頁面，您可以透過工具列中的第一個按鈕新增欄位。 若要這麼做，請前往&#x200B;**[!UICONTROL Add using the assistant]**&#x200B;功能表。
 
 ![](assets/s_ncs_admin_survey_add_field_menu.png)
 

@@ -5,7 +5,7 @@ description: 開始使用結構描述版本
 feature: Schema Extension
 role: Data Engineer, Developer
 exl-id: 9e10b24e-c4de-4e76-bbed-0d05f62120b7
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1006'
 ht-degree: 6%
@@ -213,7 +213,7 @@ type="string" enum="exTransactionTypeEnum"/>
 
 ## 更新資料庫結構 {#updating-the-database-structure}
 
-完成並儲存變更後，任何可能影響SQL結構的變更都必須套用至資料庫。 要執行此操作，請使用資料庫更新精靈。
+完成並儲存變更後，任何可能影響SQL結構的變更都必須套用至資料庫。 要執行此操作，請使用資料庫更新輔助程式。
 
 ![](assets/schemaextension_getting_started_3.png)
 

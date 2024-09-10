@@ -8,10 +8,10 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 05909ea6-2c93-42ff-9142-1dd14fa6fdec
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '2973'
-ht-degree: 34%
+ht-degree: 32%
 
 ---
 
@@ -25,9 +25,9 @@ Adobe Campaign可讓您以文字、CSV、TAB或XML格式，從一或多個檔案
 >
 >您可以使用&#x200B;**[!UICONTROL Import a list]**&#x200B;函式，匯入資料時不必與資料庫資料對應。 然後可透過&#x200B;**[!UICONTROL Read list]**&#x200B;物件將資料僅用於工作流程中。 如需詳細資訊，請參閱[此頁面](../../workflow/using/read-list.md)。
 
-匯入精靈可讓您設定匯入、定義其選項（例如資料轉換）並啟動執行。 它是一系列屏幕，其內容取決於匯入類型 (簡單或多個) 和操作員權限。
+匯入助理可以讓您設定匯入、定義其選項（例如資料轉換）並啟動執行。 它是一系列屏幕，其內容取決於匯入類型 (簡單或多個) 和操作員權限。
 
-建立新的匯入工作後，匯入精靈便會顯示（請參閱[建立匯入和匯出工作](../../platform/using/creating-import-export-jobs.md)）。
+建立新的匯入工作後，匯入助理就會顯示（請參閱[建立匯入和匯出工作](../../platform/using/creating-import-export-jobs.md)）。
 
 >[!NOTE]
 >
@@ -39,7 +39,7 @@ Adobe Campaign可讓您以文字、CSV、TAB或XML格式，從一或多個檔案
 
 ## 步驟1 — 選擇匯入範本 {#step-1---choosing-the-import-template}
 
-啟動匯入精靈時，您必須先選取範本。 例如，要配置收到簡報的收件者的匯入，請按照以下步驟操作：
+啟動匯入助理時，您必須先選取範本。 例如，要配置收到簡報的收件者的匯入，請按照以下步驟操作：
 
 1. 選取&#x200B;**[!UICONTROL Profiles and Targets > Job > Generic imports and exports]**&#x200B;資料夾。
 1. 點擊&#x200B;**新建**，然後點擊&#x200B;**匯入**&#x200B;以建立匯入範本。
@@ -53,7 +53,7 @@ Adobe Campaign可讓您以文字、CSV、TAB或XML格式，從一或多個檔案
 1. 在&#x200B;**[!UICONTROL Label]**&#x200B;欄位中輸入此匯入的名稱。 您可以添加描述。
 1. 在適當的欄位中選取匯入型別。 有兩種可能的匯入型別： **[!UICONTROL Simple import]**&#x200B;僅匯入一個檔案，以及&#x200B;**[!UICONTROL Multiple import]**&#x200B;在單一執行中匯入多個檔案。
 
-   若要多重匯入，請從匯入精靈的第一個畫面中的&#x200B;**[!UICONTROL Import type]**&#x200B;下拉式清單中選取&#x200B;**[!UICONTROL Multiple import]**。
+   若要多重匯入，請從匯入助理第一個畫面的&#x200B;**[!UICONTROL Import type]**&#x200B;下拉式清單中選取&#x200B;**[!UICONTROL Multiple import]**。
 
    ![](assets/s_ncs_user_import_wizard01_2.png)
 
@@ -61,7 +61,7 @@ Adobe Campaign可讓您以文字、CSV、TAB或XML格式，從一或多個檔案
 
    ![](assets/s_ncs_user_import_wizard01_3.png)
 
-   每次新增檔案時，都會顯示&#x200B;**[!UICONTROL File to import]**&#x200B;精靈的畫面。 請參閱區段[步驟2 - Source檔案選擇](#step-2---source-file-selection)，並依照精靈中的步驟將匯入選項定義為簡單匯入。
+   每次新增檔案時，都會顯示&#x200B;**[!UICONTROL File to import]**&#x200B;助理的畫面。 請參閱區段[步驟2 - Source檔案選擇](#step-2---source-file-selection)，並依照助理中的步驟將匯入選項定義為簡單匯入。
 
    >[!NOTE]
    >
@@ -175,7 +175,7 @@ Adobe Campaign可讓您以文字、CSV、TAB或XML格式，從一或多個檔案
 
 ## 第 4 步 – 調解 {#step-4---reconciliation}
 
-匯入精靈的調解步驟可讓您定義從檔案中調解資料與資料庫中現有資料的模式，並設定檔案資料與資料庫資料之間的優先順序規則。 配置視窗如下所示：
+匯入輔助程式的調解步驟可讓您定義從檔案中調解資料與資料庫中現有資料的模式，並設定檔案資料與資料庫資料之間的優先順序規則。 配置視窗如下所示：
 
 ![](assets/s_ncs_user_import_wizard04_1.png)
 
@@ -223,7 +223,7 @@ Adobe Campaign可讓您以文字、CSV、TAB或XML格式，從一或多個檔案
 >
 >因此，僅對此資料夾執行調解 (除非未選擇資料夾)。
 
-### 去重複化 {#deduplication}
+### 重複資料刪除 {#deduplication}
 
 >[!NOTE]
 >
@@ -277,7 +277,7 @@ Adobe Campaign可讓您以文字、CSV、TAB或XML格式，從一或多個檔案
 
 ## 第 5 步 - 匯入收件者時的附加步驟 {#step-5---additional-step-when-importing-recipients}
 
-匯入精靈的下一步允許您選擇或建立將匯入資料的資料夾，自動將匯入的收件者對應於 (新的或現有的) 清單，並將收件者訂閱到服務。
+匯入助理的下一個步驟可讓您選取或建立資料匯入所在的資料夾、自動對應匯入的收件者與（新的或現有的）清單，以及將收件者訂閱至服務。
 
 ![](assets/s_ncs_user_import_wizard05_1.png)
 
@@ -333,7 +333,7 @@ Adobe Campaign可讓您以文字、CSV、TAB或XML格式，從一或多個檔案
 
 ## 步驟6 — 啟動匯入 {#step-6---launching-the-import}
 
-精靈的最後一步可讓您啟動資料匯入。 若要這麼做，請按一下&#x200B;**[!UICONTROL Start]**&#x200B;按鈕。
+助理的最後一步可讓您啟動資料匯入。 若要這麼做，請按一下&#x200B;**[!UICONTROL Start]**&#x200B;按鈕。
 
 ![](assets/s_ncs_user_import_wizard06_1.png)
 

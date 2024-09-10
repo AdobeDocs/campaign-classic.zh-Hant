@@ -5,7 +5,7 @@ description: 在內建或自訂的報表中分析促銷活動的成功
 feature: Reporting, Monitoring
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 exl-id: 1ef30004-e1b0-4dde-8104-0ee9e8aa9d8b
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 18%
@@ -28,7 +28,7 @@ Adobe Campaign提供數種報告工具：
 
    如需詳細資訊，請參閱[本章節](../../reporting/using/about-campaign-built-in-reports.md)。
 
-1. **描述性資料分析**： Adobe Campaign提供視覺化工具，可針對資料庫中的資料產生統計資料。 您可以使用專用的精靈建立描述性分析報表，並根據需求調整其內容和版面。
+1. **描述性資料分析**： Adobe Campaign提供視覺化工具，可針對資料庫中的資料產生統計資料。 您可以使用專用的助理建立描述性分析報告，並根據需要調整其內容和版面。
 
    如需詳細資訊，請參閱[本章節](../../reporting/using/about-descriptive-analysis.md)。
 

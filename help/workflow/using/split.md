@@ -4,7 +4,7 @@ title: 分割
 description: 進一步瞭解分割工作流程活動
 feature: Workflows, Targeting Activity
 exl-id: 4204350a-c2d2-4033-9bdf-87b49d8211b9
-source-git-commit: 13eb777e96602ddd3463f721c6b2a3e6b67cb329
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1971'
 ht-degree: 3%
@@ -44,7 +44,7 @@ ht-degree: 3%
 
 1. 您可以指定要從目標擷取的最大記錄數，以建立子集。 若要這麼做，請核取&#x200B;**[!UICONTROL Limit the selected records]**&#x200B;選項並按一下&#x200B;**[!UICONTROL Edit...]**&#x200B;連結。
 
-   精靈可讓您選擇此子集記錄的選擇模式。 可以在[限制子集記錄數](#limiting-the-number-of-subset-records)中找到這些步驟。
+   助理可以讓您為此子集的記錄選擇模式。 可以在[限制子集記錄數](#limiting-the-number-of-subset-records)中找到這些步驟。
 
    ![](assets/s_user_segmentation_partage4.png)
 

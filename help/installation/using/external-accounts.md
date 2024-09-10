@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: a1dbef3e1feca1e3347de013db8bd7809d315016
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1757'
 ht-degree: 8%
@@ -406,7 +406,7 @@ SFTP外部帳戶可讓您設定並測試對Adobe Campaign外部伺服器的存�
 
   選取API的版本。
 
-對於此外部帳戶，您需要使用設定精靈設定您的Salesforce CRM。
+對於此外部帳戶，您需要使用設定助理來設定Salesforce CRM。
 
 如需此設定的詳細資訊，請參閱此[頁面](../../platform/using/crm-connectors.md)。
 

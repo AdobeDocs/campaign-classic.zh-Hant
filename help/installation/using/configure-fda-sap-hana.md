@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 39bfe775-e182-4a0b-ad3c-b7a901297c90
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 0%
@@ -30,7 +30,7 @@ ht-degree: 0%
 1. 根據您使用的作業系統，安裝用於SAP HANA的ODBC驅動程式：
 
    * 適用於Linux的&#x200B;**hdb_client_linux.tgz**。 解壓縮之後，請啟動hdbinst指令，然後依照指示完成驅動程式的安裝。
-   * 適用於Windows的&#x200B;**hdb_client_windows.zip**。 解壓縮檔案並啟動可執行檔： **hdbinst.exe**。 請依照精靈的指示完成驅動程式的安裝。
+   * 適用於Windows的&#x200B;**hdb_client_windows.zip**。 解壓縮檔案並啟動可執行檔： **hdbinst.exe**。 請依照助理員指示完成驅動程式的安裝。
 
 1. 設定ODBC驅動程式。 可在標準檔案中執行設定：/etc/odbc.ini用於一般引數，/etc/odbcinst.ini用於宣告驅動程式。
 

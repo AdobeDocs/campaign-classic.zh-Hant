@@ -7,7 +7,7 @@ audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
 exl-id: 49ac279b-bc67-4311-b0a4-0e23f2a99c52
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '120'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->僅將此環境建立方法用於測試環境。 在所有其他情況下，請使用目標對應精靈。 如需詳細資訊，請參閱[建立優惠方案環境](../../interaction/using/live-design-environments.md#creating-an-offer-environment)。
+>僅將此環境建立方法用於測試環境。 在所有其他情況下，請使用目標對應助理。 如需詳細資訊，請參閱[建立優惠方案環境](../../interaction/using/live-design-environments.md#creating-an-offer-environment)。
 
 1. 啟動Adobe Campaign Explorer並前往執行個體根目錄。
 1. 按一下滑鼠右鍵，然後使用下拉式功能表新增&#x200B;**[!UICONTROL Generic folder]**。

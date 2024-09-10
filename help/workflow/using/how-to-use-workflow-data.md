@@ -4,7 +4,7 @@ title: 如何使用工作流程資料
 description: 瞭解如何使用工作流程資料
 feature: Workflows, Data Management
 exl-id: 5354d608-2fea-45f9-a0aa-11c7e965ab04
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 0%
@@ -53,7 +53,7 @@ Adobe Campaign資料庫和現有清單的資料可以使用兩個專用活動進
 
 ![](assets/s_advuser_add_data_postal_mail.png)
 
-除了常用的個人化欄位之外，您還可以將工作流程階段中的個人化欄位新增到傳送內容。 工作流程活動中定義的其他資料可在傳送精靈中保留及存取，如下列範例所示，以用於定義直接郵件傳送框架中的輸出檔案名稱：
+除了常用的個人化欄位之外，您還可以將工作流程階段中的個人化欄位新增到傳送內容。 工作流程活動中定義的其他資料可保留並在傳送助理員中供存取，如下列範例所示，以用於定義直接郵件傳送框架內的輸出檔案名稱：
 
 ![](assets/s_advuser_using_additional_data.png)
 

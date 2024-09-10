@@ -4,7 +4,7 @@ title: 異動訊息傳送架構
 description: 本節說明Adobe Campaign Classic異動訊息傳送架構，以及傳送異動訊息的可用通道
 feature: Transactional Messaging, Message Center, Architecture
 exl-id: 0a059397-b037-405b-b9c1-94a4a072674d
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1103'
 ht-degree: 1%
@@ -85,7 +85,7 @@ Adobe建議您&#x200B;**在安裝Transactional訊息封裝**&#x200B;之前，一
 >
 >此程式僅適用於使用安裝在相同電腦上的Windows NLServer的客戶。
 
-1. 使用套件匯入精靈(**[!UICONTROL Tools > Advanced > Import package... > Adobe Campaign Package]**)安裝您需要的頻道，例如&#x200B;**行動頻道**。
+1. 使用套件匯入小幫手(**[!UICONTROL Tools > Advanced > Import package... > Adobe Campaign Package]**)安裝您需要的頻道，例如&#x200B;**行動頻道**。
 1. 執行檔案匯入(**[!UICONTROL Tools > Advanced > Import package... > File]**)，並選取&#x200B;**datakitnms **`[Your language]`**packagemessageCenter.xml**&#x200B;檔案。
 1. 在&#x200B;**[!UICONTROL XML content of the data to import]**&#x200B;中，僅保留對應至新增頻道的傳遞範本。 例如，如果您已新增&#x200B;**行動裝置頻道**，請僅保留與&#x200B;**[!UICONTROL Mobile transactional message]** (smsTriggerMessage)相對應的&#x200B;**entities**&#x200B;元素。 如果您已新增&#x200B;**行動應用程式頻道**，請僅保留&#x200B;**iOS交易式訊息** (iosTriggerMessage)和&#x200B;**Android交易式訊息** (androidTriggerMessage)。
 

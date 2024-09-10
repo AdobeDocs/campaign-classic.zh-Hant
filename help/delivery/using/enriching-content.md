@@ -6,7 +6,7 @@ badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v
 feature: Data Management
 role: User, Developer, Data Engineer
 exl-id: a4472a7c-a16b-4d10-a8ca-f74ca5f62de4
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '670'
 ht-degree: 0%
@@ -39,7 +39,7 @@ ht-degree: 0%
 
 ### 新增查詢 {#adding-a-query}
 
-使用精靈編輯查詢引數。
+使用助理編輯查詢引數。
 
 1. 在第一個頁面中，指定標籤和包含要擷取之資料的結構描述。
 

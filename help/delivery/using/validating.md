@@ -5,7 +5,7 @@ description: 驗證
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Direct Mail
 exl-id: 42bb395b-b3fe-4d48-8720-5a4cae191984
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '250'
 ht-degree: 1%
@@ -32,7 +32,7 @@ ht-degree: 1%
 
 ![](assets/s_ncs_user_postal_del_send_confirm_postal.png)
 
-接著，您可以關閉精靈，並透過&#x200B;**[!UICONTROL Delivery]**&#x200B;索引標籤檢視傳遞記錄（可透過傳遞詳細資料存取）。
+接著，您可以關閉小幫手，並透過&#x200B;**[!UICONTROL Delivery]**&#x200B;索引標籤檢視傳送記錄檔（可透過傳送詳細資料存取）。
 
 您可以從傳遞屬性的&#x200B;**[!UICONTROL Analysis]**&#x200B;索引標籤設定傳遞記錄擷取模式。
 

@@ -4,7 +4,7 @@ title: Campaign - Microsoft Dynamics CRM聯結器
 description: 瞭解如何連結Campaign和Microsoft Dynamics
 feature: Microsoft CRM Integration
 exl-id: 26737940-b3ce-425c-9604-f4cefd19afaa
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1104'
 ht-degree: 2%
@@ -37,7 +37,7 @@ ht-degree: 2%
 Campaign Classic：
 1. 建立新的外部帳戶
 1. 使用Microsoft Dynamics設定設定外部帳戶
-1. 使用設定精靈來對應表格並同步列舉
+1. 使用組態輔助程式來對應表格並同步列舉
 1. 建立同步工作流程
 
 [在本節中瞭解更多](#configure-acc-for-microsoft)
@@ -169,7 +169,7 @@ Campaign Classic：
 
    ![](assets/crm-ms-dynamics-ext-account.png)
 
-1. 按一下&#x200B;**[!UICONTROL Microsoft CRM configuration wizard...]**&#x200B;連結。 Adobe Campaign會自動從Microsoft Dynamics資料範本偵測表格。
+1. 按一下&#x200B;**[!UICONTROL Microsoft CRM configuration assistant...]**&#x200B;連結。 Adobe Campaign會自動從Microsoft Dynamics資料範本偵測表格。
 
    ![](assets/crm_connectors_msdynamics_02.png)
 

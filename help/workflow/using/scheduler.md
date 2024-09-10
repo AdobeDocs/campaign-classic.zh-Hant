@@ -4,7 +4,7 @@ title: 排程器
 description: 深入瞭解排程器工作流程活動
 feature: Workflows
 exl-id: 30a9bd2a-afb1-481c-ab5f-5acebd9cbb5a
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 10%
@@ -37,7 +37,7 @@ ht-degree: 10%
 
 ![](assets/s_user_segmentation_scheduler.png)
 
-精靈可讓您定義活動的頻率和有效期間。 設定步驟如下：
+助理可以讓您定義活動的頻率和有效期間。 設定步驟如下：
 
 1. 選取啟動頻率，然後按一下&#x200B;**[!UICONTROL Next]**。
 

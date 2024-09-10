@@ -5,7 +5,7 @@ description: 開始使用描述性分析
 feature: Reporting, Monitoring
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 exl-id: 19920058-e8e8-4e17-9cc3-24ddf9f96d04
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '210'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 
 
-為了針對資料庫中的資料產生統計資料，請使用專用的精靈建立描述性分析報告，並根據您的需求調整其內容和簡報。
+為了針對資料庫中的資料產生統計資料，請使用專用助理員建立描述性分析報告，並根據您的需求調整其內容和簡報。
 
 這些報告與人口有關，應僅用於分析小型資料量。
 
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 ![](assets/reporting_descriptive_quantitative_sample.png)
 
-這些報表是透過描述性分析精靈建立的，該精靈會根據各種步驟，讓您選擇要建立的報表型別以及資料和配置。 報表會顯示在最後一個步驟中。 如有必要，可以發佈報告並與其他操作員共用，列印、匯出為Excel、PDF或OpenDocument格式。
+這些報表是透過「描述性分析助理」建立的，它會根據不同的步驟，讓您選擇要建立的報表型別以及資料和配置。 報表會顯示在最後一個步驟中。 如有必要，可以發佈報告並與其他操作員共用，列印、匯出為Excel、PDF或OpenDocument格式。
 
 描述性分析精靈並不如Adobe Campaign報表功能強大，但可讓您快速概略瞭解資料庫內容或資料選擇。
 

@@ -4,7 +4,7 @@ title: 目標定位資料
 description: 進一步瞭解在工作流程中鎖定資料目標
 feature: Query Editor, Data Management, Workflows
 exl-id: 74b82019-bdab-4442-84cf-5ad18d0db788
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1919'
 ht-degree: 4%
@@ -47,7 +47,7 @@ ht-degree: 4%
 
 子元素會顯示在它們所對應之集合的子樹狀結構中。
 
-集合顯示在&#x200B;**[!UICONTROL Collections]**&#x200B;子標籤中。 您可以按一下所選集合的&#x200B;**[!UICONTROL Detail]**&#x200B;圖示，以篩選所收集的元素。 篩選精靈可讓您選取收集的資料，並指定要套用至集合中資料的篩選條件。
+集合顯示在&#x200B;**[!UICONTROL Collections]**&#x200B;子標籤中。 您可以按一下所選集合的&#x200B;**[!UICONTROL Detail]**&#x200B;圖示，以篩選所收集的元素。 篩選助理可以讓您選取收集的資料，並指定要套用至收集中資料的篩選條件。
 
 ![](assets/query_add_columns_collection.png)
 

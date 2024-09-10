@@ -4,7 +4,7 @@ title: 查詢
 description: 進一步瞭解查詢工作流程活動
 feature: Workflows, Targeting Activity, Query Editor
 exl-id: 20d03627-cd56-46da-bc02-73b48a02a350
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1631'
 ht-degree: 0%
@@ -44,7 +44,7 @@ ht-degree: 0%
 
    ![](assets/query_temporary_table.png)
 
-1. 使用精靈定義母體。 要輸入的欄位可能會因目標型別而異。 您可以使用&#x200B;**[!UICONTROL Preview]**&#x200B;索引標籤，以您目前的條件預覽目標母體。
+1. 使用助理定義母體。 要輸入的欄位可能會因目標型別而異。 您可以使用&#x200B;**[!UICONTROL Preview]**&#x200B;索引標籤，以您目前的條件預覽目標母體。
 
    如需建立和使用篩選器或查詢的詳細資訊，請參閱此[區段](../../platform/using/filtering-options.md)。
 
@@ -97,7 +97,7 @@ ht-degree: 0%
 
 若要新增連結至目標母體的資訊集合：
 
-1. 在精靈的第一步，選取&#x200B;**[!UICONTROL Data linked to the filtering dimension]**&#x200B;選項：
+1. 在助理的第一步，選取&#x200B;**[!UICONTROL Data linked to the filtering dimension]**&#x200B;選項：
 1. 選取包含您要收集之資訊的資料表，然後按一下&#x200B;**[!UICONTROL Next]**。
 
    ![](assets/wf_add_data_linked_table.png)

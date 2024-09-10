@@ -8,7 +8,7 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: d3369b63-a29b-43b7-b2ad-d36d4f46c82e
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '2474'
 ht-degree: 2%
@@ -91,7 +91,7 @@ XML檔案必須以&#x200B;**`<package>`**&#x200B;專案開頭和結尾。 後續
 
 套件可以三種不同的方式匯出：
 
-* **[!UICONTROL Package Export Wizard]**&#x200B;可讓您匯出單一封裝中的一組物件。 如需詳細資訊，請參閱[匯出封裝中的一組物件](#exporting-a-set-of-objects-in-a-package)
+* **[!UICONTROL Package Export Assistant]**&#x200B;可讓您匯出單一封裝中的一組物件。 如需詳細資訊，請參閱[匯出封裝中的一組物件](#exporting-a-set-of-objects-in-a-package)
 * 您可以用滑鼠右鍵按一下單一物件&#x200B;**並選取&#x200B;**[!UICONTROL Actions > Export in a package]**，直接將其匯出到封裝中。**
 * **封裝定義**&#x200B;可讓您建立封裝結構，在其中新增稍後將在封裝中匯出的物件。 如需詳細資訊，請參閱[管理封裝定義](#managing-package-definitions)
 
@@ -99,11 +99,11 @@ XML檔案必須以&#x200B;**`<package>`**&#x200B;專案開頭和結尾。 後續
 
 ### 匯出封裝中的一組物件 {#exporting-a-set-of-objects-in-a-package}
 
-套件匯出精靈可透過Adobe Campaign使用者端主控台的&#x200B;**[!UICONTROL Tools > Advanced > Export package...]**&#x200B;功能表存取。
+封裝匯出助理可以透過Adobe Campaign使用者端主控台的&#x200B;**[!UICONTROL Tools > Advanced > Export package...]**&#x200B;功能表存取。
 
 ![](assets/ncs_datapackage_typepackage.png)
 
-針對三種型別的套裝程式，精靈會提供下列步驟：
+對於三種型別的套裝程式，助理提供下列步驟：
 
 1. 按檔案型別列出要匯出的實體：
 
@@ -139,7 +139,7 @@ XML檔案必須以&#x200B;**`<package>`**&#x200B;專案開頭和結尾。 後續
 
    ![](assets/ncs_datapackage_export6.png)
 
-1. 套件匯出精靈的最後一頁可讓您開始匯出。 資料將會儲存在&#x200B;**[!UICONTROL File]**&#x200B;欄位中指定的檔案中。
+1. 封裝匯出助理的最後一頁可讓您開始匯出。 資料將會儲存在&#x200B;**[!UICONTROL File]**&#x200B;欄位中指定的檔案中。
 
    ![](assets/ncs_datapackage_export7.png)
 
@@ -303,7 +303,7 @@ template="xtk:folder" pkgAdmin="@id != 0">
 
 ## 匯入套件 {#importing-packages}
 
-套件匯入精靈可透過Adobe Campaign使用者端主控台的主功能表&#x200B;**[!UICONTROL Tools > Advanced > Import package]**&#x200B;存取。
+套件匯入助理可以透過Adobe Campaign使用者端主控台的主功能表&#x200B;**[!UICONTROL Tools > Advanced > Import package]**&#x200B;存取。
 
 您可以根據授權條款，從先前執行的匯出匯入套件，例如從其他Adobe Campaign執行個體或[內建套件](../../installation/using/installing-campaign-standard-packages.md)。
 

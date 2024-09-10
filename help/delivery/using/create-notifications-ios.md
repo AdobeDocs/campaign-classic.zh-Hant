@@ -5,7 +5,7 @@ description: 瞭解如何建立iOS的推播通知
 feature: Push
 role: User, Developer, Data Engineer
 exl-id: 4520504a-0d9f-4ea7-a5a8-0c07948af4f0
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '971'
 ht-degree: 8%
@@ -56,7 +56,7 @@ ht-degree: 8%
 
 1. 您可以新增iOS通知承載之子標題引數的&#x200B;**[!UICONTROL Subtitle]**&#x200B;值。 請參閱[本節](configuring-the-mobile-application.md)。
 
-1. 在精靈的&#x200B;**[!UICONTROL Message content]**&#x200B;區段中輸入訊息的內容。 個人化欄位的使用顯示在[關於個人化](about-personalization.md)區段。
+1. 在助理員的&#x200B;**[!UICONTROL Message content]**&#x200B;區段中輸入訊息的內容。 個人化欄位的使用顯示在[關於個人化](about-personalization.md)區段。
 
    ![](assets/nmac_delivery_ios_5.png)
 

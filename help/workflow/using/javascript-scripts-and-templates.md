@@ -4,7 +4,7 @@ title: JavaScript 指令碼和範本
 description: JavaScript 指令碼和範本
 feature: Workflows
 exl-id: 4a3647d1-cf8c-4867-871e-472287be7c6a
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1247'
 ht-degree: 2%
@@ -59,7 +59,7 @@ logInfo("Start date: " + task.creationDate)
 
 **[!UICONTROL logInfo(message)]**&#x200B;函式將訊息插入記錄檔中。
 
-按一下&#x200B;**[!UICONTROL OK]**&#x200B;關閉建立精靈，然後使用工作流程清單右上角的動作按鈕啟動工作流程。 在執行結束時，請查閱記錄。 您應該會看到兩則對應至指令碼的訊息：一顯示工作流程的標籤，另一則顯示啟動指令碼的日期。
+按一下&#x200B;**[!UICONTROL OK]**&#x200B;以關閉建立助理，然後使用工作流程清單右上角的動作按鈕啟動工作流程。 在執行結束時，請查閱記錄。 您應該會看到兩則對應至指令碼的訊息：一顯示工作流程的標籤，另一則顯示啟動指令碼的日期。
 
 ## 變數 {#variables}
 

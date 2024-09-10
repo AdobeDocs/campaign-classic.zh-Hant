@@ -6,10 +6,10 @@ badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v
 feature: Cross Channel Orchestration, Email, SMS, In App, Direct Mail, Push
 role: User
 exl-id: 92b5e013-b619-4f0b-b0b1-1fc2e653ceac
-source-git-commit: 8fbfc211c4e791b324c34d3d180daa7597c00c7f
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1214'
-ht-degree: 62%
+ht-degree: 63%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 62%
 
 透過Adobe Campaign，您可以傳送跨頻道行銷活動，包括電子郵件、簡訊、LINE訊息、推播通知和直接郵件，並使用各種專屬的[報告](../../reporting/using/delivery-reports.md)衡量其成效。 這些訊息是透過傳遞進行設計和傳送，而且可針對每位收件者進行個人化。
 
-核心功能包括目標定位、定義和個人化訊息、通訊執行及相關的營運報告。 主要功能存取點是傳遞精靈。 此存取點可導向 Adobe Campaign 涵括的多種功能。
+核心功能包括目標定位、定義和個人化訊息、通訊執行及相關的營運報告。 主要功能存取點是傳送助理。 此存取點可導向 Adobe Campaign 涵括的多種功能。
 
 >[!NOTE]
 >
@@ -28,7 +28,7 @@ ht-degree: 62%
 Adobe Campaign提供下列傳送管道：
 
 1. **電子郵件管道**：電子郵件傳遞功能可讓您傳送個人化電子郵件給目標群體。請參閱[關於電子郵件頻道](about-email-channel.md)。
-1. **直接郵件管道**：直接郵件傳遞可讓您產生擷取檔案，其中包含目標族群的資料。請參閱[關於直接郵件頻道](about-direct-mail-channel.md)。
+1. **直接郵件管道**：直接郵件傳遞可讓您產生擷取檔案，其中包含目標群體的資料。請參閱[關於直接郵件頻道](about-direct-mail-channel.md)。
 1. **行動裝置頻道**：行動裝置頻道上的傳遞可讓您傳送個人化SMS或LINE訊息給目標群體。 請參閱[簡訊頻道](sms-channel.md)。
 1. **行動應用程式頻道**：行動應用程式傳送可讓您傳送通知至iOS和Android系統。 請參閱[行動應用程式頻道](about-mobile-app-channel.md)章節。
 
@@ -43,7 +43,7 @@ Adobe Campaign提供下列傳送管道：
 視通道而定，傳送模式可以是：
 
 * 透過Adobe Campaign的直接大量傳送（電子郵件通道的預設模式）。
-* 透過專家操作員進行外部傳遞，操作員將收到傳遞精靈產生的輸出檔案（直接郵件頻道的預設模式）。
+* 透過專家操作員進行外部傳遞，操作員將收到傳遞助理產生的輸出檔案（直接郵件頻道的預設模式）。
 
 外部帳戶是透過&#x200B;**[!UICONTROL Administration > Platform > External accounts]**&#x200B;節點設定。 此設定僅能由專家使用者執行。
 

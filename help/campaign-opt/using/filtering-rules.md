@@ -5,7 +5,7 @@ description: 瞭解如何使用Adobe Campaign中的篩選規則
 role: User, Data Engineer
 feature: Typology Rules, Campaigns
 exl-id: a4d12445-5680-4704-9c67-e43e0ea6631b
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '510'
 ht-degree: 2%
@@ -64,7 +64,7 @@ ht-degree: 2%
 
 ![](assets/campaign_opt_create_typo_filtering.png)
 
-選取目標時，這些特定型別可以連結至傳遞：在傳遞精靈中，按一下&#x200B;**[!UICONTROL To]**&#x200B;連結，然後按一下&#x200B;**[!UICONTROL Exclusions]**&#x200B;索引標籤。
+選取目標時，這些特定型別可以連結至傳遞：在傳遞助理中，按一下&#x200B;**[!UICONTROL To]**&#x200B;連結，然後按一下&#x200B;**[!UICONTROL Exclusions]**&#x200B;索引標籤。
 
 ![](assets/campaign_opt_apply_typo_filtering.png)
 

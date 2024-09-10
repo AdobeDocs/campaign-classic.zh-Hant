@@ -5,7 +5,7 @@ description: 發佈網路表單
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Web Forms
 exl-id: 1c66b8e8-7590-4767-9b2f-a9a509df4508
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1284'
 ht-degree: 1%
@@ -140,7 +140,7 @@ ht-degree: 1%
 
 ### 透過電子郵件傳遞表單 {#delivering-a-form-via-email}
 
-當您透過電子郵件傳送邀請時，可以使用&#x200B;**[!UICONTROL Adobe Campaign Encryption]**&#x200B;選項進行資料協調。 若要這麼做，請前往傳送精靈，並新增下列引數，將連結調整為適合表單：
+當您透過電子郵件傳送邀請時，可以使用&#x200B;**[!UICONTROL Adobe Campaign Encryption]**&#x200B;選項進行資料協調。 若要這麼做，請前往傳送小幫手，新增下列引數，將連結調整為適合表單：
 
 ```
 <a href="https://server/webApp/APP264?&id=<%=escapeUrl(recipient.cryptedId) %>">

@@ -5,7 +5,7 @@ description: 瞭解建立報告的關鍵步驟
 feature: Reporting, Monitoring
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 exl-id: 262c1469-94b4-4f81-9f6f-5c7f481765da
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '179'
 ht-degree: 0%
@@ -28,5 +28,5 @@ ht-degree: 0%
 1. 收集資料以進行分析：請參考[收集資料以分析](../../reporting/using/collecting-data-to-analyze.md)和[使用內容](../../reporting/using/using-the-context.md)，
 1. 定義包含活動及其容器的報告內容：請參閱[建立表格](../../reporting/using/creating-a-table.md)、[建立圖表](../../reporting/using/creating-a-chart.md)和[元素配置](../../reporting/using/element-layout.md)，
 1. 設定顯示選項：顯示型別、共用報告：參考[報告顯示內容](../../reporting/using/configuring-access-to-the-report.md#report-display-context)、[定義條件式內容](../../reporting/using/defining-a-conditional-content.md)和[設定報告的存取權](../../reporting/using/configuring-access-to-the-report.md)，
-1. Publish報表（發佈精靈）：請參考[Publish報表](../../reporting/using/configuring-access-to-the-report.md#publishing-the-report)，
+1. Publish報告（發佈助理）：請參考[Publish報告](../../reporting/using/configuring-access-to-the-report.md#publishing-the-report)，
 1. 轉換報告：匯出、記錄、在瀏覽器中顯示：請參考報告上的[動作](../../reporting/using/actions-on-reports.md)。

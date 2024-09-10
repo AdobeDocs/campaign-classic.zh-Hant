@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 exl-id: f7dfbc22-4ac3-4b61-927f-34ecc4e35154
-source-git-commit: 8aceafa362b80f6e34edfd91a71551a58501a3d0
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '717'
-ht-degree: 33%
+ht-degree: 23%
 
 ---
 
@@ -32,17 +32,17 @@ ht-degree: 33%
 
 ![](assets/s_ncs_user_action_icon.png)
 
-有兩種型別的更新：大量更新一組收件者，以及兩個設定檔之間的資料合併。 針對每個動作，使用精靈可協助您設定更新。
+有兩種型別的更新：大量更新一組收件者，以及兩個設定檔之間的資料合併。 對於每個動作，助理可以讓您設定更新。
 
 ### 大量更新 {#mass-update}
 
-若要大量更新，請使用&#x200B;**[!UICONTROL Action > Mass update of selected lines...]**。 此精靈可協助您設定並執行更新。
+若要大量更新，請使用&#x200B;**[!UICONTROL Action > Mass update of selected lines...]**。 助理可以協助您設定並執行更新。
 
-精靈的第一步驟是指定要更新的欄位。
+助理的第一步是指定要更新的欄位。
 
-精靈的左側區段會顯示可用欄位清單。 使用&#x200B;**[!UICONTROL Find]**&#x200B;欄位來執行這些欄位的搜尋。 按&#x200B;**Enter**&#x200B;鍵瀏覽清單。 符合您輸入內容的欄位名稱會以粗體顯示，如下所示。
+助理的左側區段會顯示可用欄位清單。 使用&#x200B;**[!UICONTROL Find]**&#x200B;欄位來執行這些欄位的搜尋。 按&#x200B;**Enter**&#x200B;鍵瀏覽清單。 符合您輸入內容的欄位名稱會以粗體顯示，如下所示。
 
-連按兩下要更新的欄位，以在精靈的右側區域顯示它們。
+連按兩下要更新的欄位，以在助理的右側區段中顯示。
 
 ![](assets/s_ncs_user_update_wizard01_1.png)
 
@@ -60,19 +60,19 @@ ht-degree: 33%
 
 ![](assets/s_ncs_user_update_wizard01_3.png)
 
-關閉此視窗並按一下&#x200B;**[!UICONTROL Next]**&#x200B;以顯示第二個更新精靈步驟。 在此步驟中，您可以按一下&#x200B;**[!UICONTROL Start]**&#x200B;來啟動更新。
+關閉此視窗並按一下&#x200B;**[!UICONTROL Next]**&#x200B;以顯示第二個更新助理步驟。 在此步驟中，您可以按一下&#x200B;**[!UICONTROL Start]**&#x200B;來啟動更新。
 
 ![](assets/s_ncs_user_update_wizard01_4.png)
 
-更新執行的相關資訊會顯示在精靈的上方區域中。
+有關更新執行的資訊會顯示在助理的上半部分。
 
 **[!UICONTROL Stop]**&#x200B;可讓您取消更新，但某些記錄可能已更新，停止程式將不會取消這些更新。 進度列會顯示操作目前的進度。
 
 ### 合併資料 {#merge-data}
 
-選取&#x200B;**[!UICONTROL Merge selected lines...]**&#x200B;以啟動兩個收件者設定檔的合併。 在選取選項之前，必須先選取要合併的設定檔。 使用精靈來設定和開始合併。
+選取&#x200B;**[!UICONTROL Merge selected lines...]**&#x200B;以啟動兩個收件者設定檔的合併。 在選取選項之前，必須先選取要合併的設定檔。 使用助理設定並啟動合併。
 
-精靈會顯示要針對在一個或其他來源設定檔中完成的每個欄位擷取的值。 如果要合併的設定檔中的一或多個欄位有不同的值，則會顯示在&#x200B;**[!UICONTROL List of conflicts]**&#x200B;區段中。 然後，您可以使用清單下方的選項按鈕來選取預設用戶檔案，如下列範例所示：
+助理會顯示要擷取來源設定檔中一個或另一個欄位中完成的每個欄位的值。 如果要合併的設定檔中的一或多個欄位有不同的值，則會顯示在&#x200B;**[!UICONTROL List of conflicts]**&#x200B;區段中。 然後，您可以使用清單下方的選項按鈕來選取預設用戶檔案，如下列範例所示：
 
 ![](assets/s_ncs_user_merge_wizard01_1.png)
 
@@ -95,7 +95,7 @@ ht-degree: 33%
 
    ![](assets/s_ncs_user_export_list_start.png)
 
-   如需如何設定匯出精靈的詳細資訊，請參閱[本節](../../platform/using/executing-export-jobs.md)。
+   如需如何設定匯出助理的詳細資訊，請參閱[本節](../../platform/using/executing-export-jobs.md)。
 
 ## 訂閱服務 {#subscribing-to-a-service}
 

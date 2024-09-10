@@ -6,7 +6,7 @@ badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v
 feature: Monitoring
 role: User
 exl-id: 6c0fd76f-3d79-4b69-b911-f8d99dd18c4b
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 3%
@@ -29,7 +29,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->對於大型傳送，您可以更新這些值。 若要這麼做，請選取有問題的傳送，然後在其上按一下滑鼠右鍵。 選取&#x200B;**[!UICONTROL Action > Recompute delivery and tracking indicators...]**，然後使用精靈來更新此資訊。
+>對於大型傳送，您可以更新這些值。 若要這麼做，請選取有問題的傳送，然後在其上按一下滑鼠右鍵。 選取&#x200B;**[!UICONTROL Action > Recompute delivery and tracking indicators...]**，然後使用該助理來更新此資訊。
 
 **相關主題：**
 

@@ -8,7 +8,7 @@ audience: platform
 content-type: reference
 topic-tags: filtering-data
 exl-id: 58e54f67-dc87-42f1-8426-6f801e8e4fb6
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1979'
 ht-degree: 1%
@@ -204,7 +204,7 @@ Adobe Campaign中有以下篩選器型別：
 
 您可以儲存進階篩選器來建立&#x200B;**應用程式篩選器**：您可以在任何清單中按一下滑鼠右鍵或透過清單上方的&#x200B;**[!UICONTROL Filters]**&#x200B;按鈕重複使用它。
 
-這些篩選器也可以透過傳遞精靈在目標選擇階段中直接存取（如需建立傳遞的詳細資訊，請參閱[本節](../../delivery/using/creating-an-email-delivery.md)）。 若要建立應用程式篩選器，您可以：
+這些篩選器也可在目標選擇階段中透過傳遞助理直接存取（如需建立傳遞的詳細資訊，請參閱[本節](../../delivery/using/creating-an-email-delivery.md)）。 若要建立應用程式篩選器，您可以：
 
 * 將進階篩選器轉換為應用程式篩選器。 若要這麼做，請在關閉進階篩選編輯器前按一下&#x200B;**[!UICONTROL Save]**。
 
@@ -376,6 +376,6 @@ Adobe Campaign中有以下篩選器型別：
 
   如果要停止使用者覆寫此篩選器，請選取&#x200B;**[!UICONTROL Do not restrict the filter]**&#x200B;選項。
 
-  此選項針對傳遞精靈中提供的「傳遞的收件者」和「屬於資料夾的傳遞的收件者」篩選條件啟用，且無法多載。
+  此選項已針對傳遞助理中提供且無法多載的「傳遞的收件者」和「屬於資料夾的傳遞的收件者」篩選器啟用。
 
   ![](assets/s_ncs_user_filter_advanced_param.png)

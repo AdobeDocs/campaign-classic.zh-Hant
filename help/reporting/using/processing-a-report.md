@@ -5,7 +5,7 @@ description: 使用分析報表
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Reporting, Monitoring
 exl-id: d133efec-33e1-4711-a90f-e40385059386
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '825'
 ht-degree: 1%
@@ -126,11 +126,11 @@ ht-degree: 1%
 
 ## 重複使用現有的報告和分析 {#re-using-existing-reports-and-analyses}
 
-您可以使用已儲存在Adobe Campaign中的現有報告，建立資料的描述性分析報告。 當已儲存分析或已建立報告並設定為可透過描述性分析精靈存取時，就可以使用此模式。
+您可以使用已儲存在Adobe Campaign中的現有報告，建立資料的描述性分析報告。 當已儲存分析或已建立報告並設定為可透過描述性分析助理存取時，就可以使用此模式。
 
 若要瞭解如何儲存描述性分析，請參閱[儲存分析報告](#saving-an-analysis-report)。
 
-若要建立描述性分析報表，描述性分析精靈必須透過工作流程轉換或&#x200B;**[!UICONTROL Tools > Descriptive analysis]**&#x200B;功能表執行。
+若要建立描述性分析報告，描述性分析助理必須透過工作流程轉換或&#x200B;**[!UICONTROL Tools > Descriptive analysis]**&#x200B;功能表執行。
 
 1. 選取 **[!UICONTROL Existing analyses and reports]** 並按一下 **[!UICONTROL Next]**。
 1. 這可讓您存取可用報告的清單。 選取您要產生的報告。
@@ -143,7 +143,7 @@ ht-degree: 1%
 
 若要建立歷史記錄，請套用下列步驟：
 
-1. 開啟現有的分析或建立新的描述性分析精靈。
+1. 開啟現有的分析或建立新的描述性分析助理。
 1. 在報表顯示頁面中，按一下按鈕以在工具列中建立歷史記錄，然後如下所示確認：
 
    ![](assets/reporting_descriptive_historize_icon.png)

@@ -5,7 +5,7 @@ description: 「使用案例：建立內容管理」
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Delivery Templates
 exl-id: b0d1cf0e-656e-4d24-9a31-16fef4cd40d0
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1192'
 ht-degree: 0%
@@ -382,7 +382,7 @@ XSLT語言可讓您將XML檔案轉換為另一個輸出檔案。 在稱為樣式
 >
 >如需建立內容的詳細資訊，請參閱[使用內容範本](using-a-content-template.md)。
 
-### 在傳遞精靈中建立內容 {#creating-content-in-the-delivery-wizard}
+### 在傳遞助理中建立內容 {#creating-content-in-the-delivery-assistant}
 
 若要直接在傳送中建立內容，請套用下列步驟：
 
@@ -390,7 +390,7 @@ XSLT語言可讓您將XML檔案轉換為另一個輸出檔案。 在稱為樣式
 
    ![](assets/s_ncs_content_in_delivery.png)
 
-   傳遞精靈會新增一個額外索引標籤，以便透過內容管理表單定義內容。
+   傳遞助理已新增一個索引標籤，以便透過內容管理表單定義內容。
 
 1. 輸入Newsletter的變數資訊。
 

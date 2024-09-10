@@ -5,7 +5,7 @@ description: 建立和共用動態網頁應用程式、登陸頁面和調查
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Landing Pages, Web Apps
 exl-id: df58221f-f71b-49d5-a6a1-c81ddff27fdb
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '694'
 ht-degree: 20%
@@ -94,7 +94,7 @@ Web應用程式儲存在Adobe Campaign樹狀結構的&#x200B;**[!UICONTROL Resou
 
 您可以透過Adobe Campaign樹狀結構的&#x200B;**[!UICONTROL Resources > Templates > Web Application templates]**&#x200B;節點建立新範本。
 
-建立精靈可讓您選取要啟用的選項，如下所示。
+建立助理可以讓您選取要啟用的選項，如下所示。
 
 ![](assets/webapp_create_template.png)
 

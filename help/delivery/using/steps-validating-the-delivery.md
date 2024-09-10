@@ -6,7 +6,7 @@ badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v
 feature: Deliverability, Email Rendering, Proofs
 role: User
 exl-id: c2f4d8d0-f0fe-4d1a-92fd-91edaf9729f3
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1662'
 ht-degree: 8%
@@ -138,7 +138,7 @@ ht-degree: 8%
 
 1. 確定校訂目標已設定為[定義特定校訂目標](steps-defining-the-target-population.md#defining-a-specific-proof-target)中所述的設定。
 
-1. 按一下傳遞精靈頂端列上的&#x200B;**[!UICONTROL Send a proof]**。
+1. 按一下傳遞助理頂端列上的&#x200B;**[!UICONTROL Send a proof]**。
 
    ![](assets/s_ncs_user_email_del_send_proof.png)
 
@@ -171,7 +171,7 @@ ht-degree: 8%
 
 * 第一個選項可讓您保留校樣雙面。
 * 以下兩個選項可讓您保留已加入封鎖清單的收件者和處於隔離狀態的地址。 請在[自訂排除設定](steps-defining-the-target-population.md#customizing-exclusion-settings)中檢視主要目標的這些選項說明。 不像預設會排除這些地址的傳送目標，這些地址會預設為校樣目標保留。
-* **[!UICONTROL Keep the delivery code for the proof]**&#x200B;選項可讓您為證明提供的傳遞代碼，與為其相關傳遞定義的傳遞代碼相同。 此代碼會在傳遞精靈的第一步中指定。
+* **[!UICONTROL Keep the delivery code for the proof]**&#x200B;選項可讓您為證明提供的傳遞代碼，與為其相關傳遞定義的傳遞代碼相同。 此程式碼會在傳遞助理的第一個步驟中指定。
 * 依預設，校訂的主題前面會加上「Proof #」，其中#是校訂的編號。 您可以在&#x200B;**[!UICONTROL Label prefix]**&#x200B;欄位中變更此首碼。
 
 ## 包含型別的驗證程式 {#validation-process-with-typologies}

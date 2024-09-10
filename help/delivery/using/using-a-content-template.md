@@ -5,7 +5,7 @@ description: 使用內容範本
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Templates
 exl-id: e43dd68e-2e95-4367-9029-4622fbcb1759
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '436'
 ht-degree: 3%
@@ -24,7 +24,7 @@ ht-degree: 3%
 
 ## 透過內容管理建立傳遞 {#creating-a-delivery-via-content-management}
 
-您可以使用輸入欄位輸入內容，在傳送中參考內容範本。 傳送精靈會新增一個額外索引標籤，用於定義傳送內容。
+您可以使用輸入欄位輸入內容，在傳送中參考內容範本。 傳送助理新增了其他索引標籤，用於定義傳送內容。
 
 ![](assets/s_ncs_content_deliver_a_content.png)
 
@@ -32,7 +32,7 @@ ht-degree: 3%
 
 ![](assets/s_ncs_content_deliver_a_content_html.png)
 
-如需詳細資訊，請參閱完整實作範例： [在傳遞精靈中建立內容](use-case-creating-content-management.md#creating-content-in-the-delivery-wizard)。
+如需詳細資訊，請參閱完整實作範例： [在傳遞助理員中建立內容](use-case-creating-content-management.md#creating-content-in-the-delivery-assistant)。
 
 ## 建立內容例項 {#creating-a-content-instance}
 
