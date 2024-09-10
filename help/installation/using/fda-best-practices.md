@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: f3980859-2837-416b-a0ef-2b369d2d50bd
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 586456f27dbc039ecb39cc8bd1f6dbdf8af823be
 workflow-type: tm+mt
-source-wordcount: '409'
+source-wordcount: '456'
 ht-degree: 7%
 
 ---
@@ -38,11 +38,13 @@ ht-degree: 7%
 
 * **新增資訊和連結** - [擴充](../../workflow/using/enrichment.md)活動可讓您新增其他資料至工作流程的工作表，以及外部表格的連結。 在這種情況下，它可以使用來自外部資料庫的資料。 在[本頁](../../workflow/using/enrichment.md)中瞭解更多。
 
-## FDA限制 {#limitations}
+## 護欄和限制 {#fda-limitations}
 
-FDA選項可用於在工作流程中以批次模式操控外部資料庫中的資料。 為了避免效能問題，不建議在單一操作的內容中使用FDA模組，例如：個人化、互動、即時傳訊等。
+FDA選項的設計目的，是為了在工作流程中以批次模式操控外部資料庫中的資料。 為了避免效能問題，不建議在單一操作的內容中使用FDA模組，例如：個人化、互動、即時傳訊等。
 
-儘可能避免需要使用Adobe Campaign和外部資料庫的操作。 若要這麼做，您可以：
+不支援從某個資料庫定位資料，並使用屬於另一個資料庫的篩選維度來篩選結果。 您無法在一個查詢中聯結位於不同資料來源的表格。 您可以使用其他工作流程活動（例如變更維度）來克服此限制。
+
+儘可能避免需要使用Adobe Campaign和外部資料庫的操作。 最佳實務是：
 
 * 將Adobe Campaign資料庫匯出至外部資料庫，並僅從外部資料庫執行操作，然後再將結果重新匯入Adobe Campaign。
 
