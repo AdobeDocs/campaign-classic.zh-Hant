@@ -5,7 +5,7 @@ description: 報告使用案例
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Reporting, Monitoring
 exl-id: e326e32e-7bb0-46ff-9ba5-94ccd1169af2
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: f90df5a5e5b3a2317d86ff2919560ded38f44f44
 workflow-type: tm+mt
 source-wordcount: '1326'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ## 分析人口 {#analyzing-a-population}
 
-下列範例可讓您使用描述性分析精靈，探索一組電子報所定位的母體。
+下列範例可讓您使用描述性分析助理，探索一組電子報所定位的母體。
 
 實作步驟將於下文詳細說明，而本章其他章節則提供選項及說明的完整清單。
 
@@ -60,7 +60,7 @@ ht-degree: 0%
 
 ### 定義顯示格式 {#defining-the-display-format}
 
-精靈的下一個步驟可讓您選取要產生的圖表型別。
+助理的下一個步驟可讓您選取要產生的圖表型別。
 
 在這種情況下，請選擇色階分佈圖。
 
@@ -70,7 +70,7 @@ ht-degree: 0%
 
 ### 設定要計算的統計資料 {#configuring-the-statistic-to-calculate}
 
-然後指定要套用至所收集資料的計算。 描述性分析精靈預設會執行值的簡單計數。
+然後指定要套用至所收集資料的計算。 依預設，描述性分析助理會執行值的簡單計數。
 
 此視窗可讓您定義要計算的統計資料清單。
 
@@ -80,7 +80,7 @@ ht-degree: 0%
 
 ### 檢視及使用報表 {#viewing-and-using-the-report}
 
-精靈的最後一步會顯示表格和圖表。
+助理的最後一步會顯示表格和圖表。
 
 您可以使用表格上方的工具列來儲存、匯出或列印資料。 如需詳細資訊，請參閱[處理報表](../../reporting/using/processing-a-report.md)。
 
@@ -92,7 +92,7 @@ ht-degree: 0%
 
 **目標**：產生潛在客戶或客戶位置的分析報告。
 
-1. 開啟描述性分析精靈，並只選取&#x200B;**[!UICONTROL Chart]**。
+1. 開啟描述性分析助理並只選取&#x200B;**[!UICONTROL Chart]**。
 
    ![](assets/s_ncs_user_report_wizard_05a.png)
 
@@ -118,7 +118,7 @@ ht-degree: 0%
 
 **目標**：分析公司電子郵件網域。
 
-1. 開啟描述性分析精靈，並只選取&#x200B;**[!UICONTROL Array]**&#x200B;顯示模式。
+1. 開啟描述性分析小幫手，並只選取&#x200B;**[!UICONTROL Array]**&#x200B;顯示模式。
 
    ![](assets/s_ncs_user_report_wizard_03a.png)
 
@@ -155,7 +155,7 @@ ht-degree: 0%
 
 **目標**：產生收件者年齡的量化分析報告
 
-1. 開啟描述性分析精靈，並從下拉式清單中選取&#x200B;**[!UICONTROL Quantitative distribution]**。
+1. 開啟描述性分析小幫手，並從下拉式清單中選取&#x200B;**[!UICONTROL Quantitative distribution]**。
 
    ![](assets/s_ncs_user_report_wizard_011a.png)
 
@@ -191,7 +191,7 @@ ht-degree: 0%
 
 工作流程中的母體分析需要母體仍然存在於轉變中。 如果啟動工作流程，可能會從轉變中清除有關母體的結果。 若要執行分析，您可以：
 
-* 將轉變與其目標活動分離，並啟動工作流程以使其成為使用中。 轉換開始閃爍後，請以一般方式啟動精靈。
+* 將轉變與其目標活動分離，並啟動工作流程以使其成為使用中。 一旦轉換開始閃爍，請像平常一樣啟動助理。
 
   ![](assets/s_ncs_user_report_wizard_018.png)
 
@@ -199,7 +199,7 @@ ht-degree: 0%
 
   ![](assets/s_ncs_user_report_wizard_020.png)
 
-  如果從轉變中清除母體，則會出現錯誤訊息，要求您在啟動描述性分析精靈之前選取相關選項。
+  如果從轉變中清除母體，則會出現錯誤訊息，要求您在啟動描述性分析助理之前選取相關選項。
 
   ![](assets/s_ncs_user_report_wizard_019.png)
 
@@ -210,13 +210,13 @@ ht-degree: 0%
 
 ## 分析收件者追蹤記錄 {#analyzing-recipient-tracking-logs}
 
-描述性分析精靈可以產生其他工作表的報表。 這表示您可以透過建立專用報告來分析傳遞記錄。
+描述性分析助理可以產生其他工作表的報告。 這表示您可以透過建立專用報告來分析傳遞記錄。
 
 在此範例中，我們要分析新聞稿收件者的反應率。
 
 若要這麼做，請套用下列步驟：
 
-1. 透過&#x200B;**[!UICONTROL Tools > Descriptive analysis]**&#x200B;功能表開啟描述性分析精靈，並變更預設工作表。 選取&#x200B;**[!UICONTROL Recipient tracking log]**&#x200B;並新增篩選器，以排除校樣並包含電子報。
+1. 透過&#x200B;**[!UICONTROL Tools > Descriptive analysis]**&#x200B;功能表開啟描述性分析小幫手，並變更預設工作表。 選取&#x200B;**[!UICONTROL Recipient tracking log]**&#x200B;並新增篩選器，以排除校樣並包含電子報。
 
    ![](assets/reporting_descriptive_sample_tracking_1.png)
 
@@ -276,7 +276,7 @@ ht-degree: 0%
 
 ![](assets/reporting_descriptive_exclusion_menu.png)
 
-這會將您帶到描述性分析精靈，分析會關注收件者排除記錄。
+這會將您帶到描述性分析助理，分析會關注收件者排除記錄。
 
 例如，您可以顯示所有排除位址的網域，並依排除日期排序。
 

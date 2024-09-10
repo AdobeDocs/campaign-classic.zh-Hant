@@ -5,7 +5,7 @@ description: 瞭解如何設計圖表
 feature: Reporting, Monitoring
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 exl-id: d32b614f-82c1-4363-816c-4ebedaa5cfe9
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: f90df5a5e5b3a2317d86ff2919560ded38f44f44
 workflow-type: tm+mt
 source-wordcount: '538'
 ht-degree: 2%

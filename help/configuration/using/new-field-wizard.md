@@ -1,29 +1,29 @@
 ---
 product: campaign
-title: 新增欄位精靈
-description: 新增欄位精靈
+title: 新增欄位助理
+description: 新增欄位助理
 feature: Schema Extension
 role: Data Engineer, Developer
 exl-id: 2350a531-7a26-4f26-90fe-8dac0cc26605
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: ec774cc10a69a694b3c2bf5a6f662afd12a1435a
 workflow-type: tm+mt
 source-wordcount: '200'
-ht-degree: 4%
+ht-degree: 0%
 
 ---
 
-# 新增欄位精靈{#new-field-wizard}
+# 新增欄位助理{#new-field-wizard}
 
 
-可透過&#x200B;**[!UICONTROL Tools > Advanced > Add new fields]**&#x200B;存取的精靈可讓您新增一或多個欄位至資料庫中的表格。
+可透過&#x200B;**[!UICONTROL Tools > Advanced > Add new fields]**&#x200B;存取的助理可以讓您新增一或多個欄位至資料庫中的表格。
 
-驗證精靈會更新要擴充之資料表的擴充功能綱要，並啟動SQL命令檔來修改資料庫的實體結構。
+驗證輔助程式會更新要擴充之資料表的擴充功能綱要，並啟動SQL命令檔來修改資料庫的實體結構。
 
 此助理的優點在於快速新增欄位，而不需要知道資料模式的結構。
 
 主要缺點是要擴充的資料和屬性的限制。
 
-精靈畫麵包含下列步驟：
+助理畫麵包含下列步驟：
 
 1. 第一個頁面可讓您輸入要擴充的綱要名稱，以及儲存修改之擴充綱要的名稱空間：
 

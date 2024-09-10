@@ -1,30 +1,30 @@
 ---
 product: campaign
-title: 使用描述性分析精靈
-description: 使用描述性分析精靈
+title: 使用描述性分析助理
+description: 使用描述性分析助理
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Reporting, Monitoring
 exl-id: 848d67c7-d1dc-4eba-bcb8-672e76d8ce87
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: f90df5a5e5b3a2317d86ff2919560ded38f44f44
 workflow-type: tm+mt
 source-wordcount: '1570'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
-# 使用描述性分析精靈{#using-the-descriptive-analysis-wizard}
+# 使用描述性分析助理{#using-the-descriptive-analysis-wizard}
 
 
 
-若要建立描述性分析報表，請使用專用精靈。 設定取決於要分析的資料以及所需的呈現。
+若要建立描述性分析報告，請使用專用助理。 設定取決於要分析的資料以及所需的呈現。
 
 ## 分析資料庫中的資料 {#analyzing-data-in-the-database}
 
-描述性分析精靈可以透過&#x200B;**[!UICONTROL Tools > Descriptive analysis]**&#x200B;功能表啟動：在此情況下，分析預設與收件者有關(**nms：recipient**)。 此維度會套用至Adobe Campaign資料庫中的所有資料。
+描述性分析助理可以透過&#x200B;**[!UICONTROL Tools > Descriptive analysis]**&#x200B;功能表啟動：在此情況下，分析預設與收件者有關(**nms：recipient**)。 此維度會套用至Adobe Campaign資料庫中的所有資料。
 
 ![](assets/reporting_descriptive_wz_launch.png)
 
-若要分析標準收件者(**nms：recipient**)以外的表格，請按一下精靈最後階段中的&#x200B;**[!UICONTROL Advanced settings...]**&#x200B;連結，並選取符合您設定的表格，在此案例中為&#x200B;**cus：individual**：
+若要分析標準收件者(**nms：recipient**)以外的表格，請按一下助理員最後階段的&#x200B;**[!UICONTROL Advanced settings...]**&#x200B;連結，並選取符合您設定的表格，在此例中為&#x200B;**cus：individual**：
 
 ![](assets/reporting_descriptive_other_schema.png)
 
@@ -36,11 +36,11 @@ ht-degree: 1%
 
 ## 分析資料集 {#analyzing-a-set-of-data}
 
-您可以透過不同的內容使用描述性分析精靈：清單、工作流程轉換、一或多個傳送、選取收件者等。
+您可以透過不同內容使用描述性分析助理：清單、工作流程轉變、一個或多個傳遞、選擇收件者等。
 
 可透過指向收件者表格的Adobe Campaign樹狀結構的數個節點進行存取。
 
-選取專案並按一下滑鼠右鍵，開啟描述性分析精靈。 只會分析選取的資料。
+選取專案並按一下滑鼠右鍵，開啟描述性分析助理。 只會分析選取的資料。
 
 ![](assets/reporting_descriptive_from_recipients.png)
 
@@ -64,7 +64,7 @@ ht-degree: 1%
 
 透過&#x200B;**[!UICONTROL Qualitative distribution]**&#x200B;範本建立之報告可用的組態選項在[在表格中顯示資料](#displaying-data-in-the-table)中有詳細說明。 在[分析母體](../../reporting/using/use-cases.md#analyzing-a-population)中會詳細說明完整範例。
 
-使用描述性分析精靈分析資料時，可用的選項取決於所選的設定。 下文將詳述這些內容。
+當您使用描述性分析助理來分析資料時，可用的選項取決於所選的設定。 下文將詳述這些內容。
 
 ### 資料量化 {#data-binning}
 
@@ -119,7 +119,7 @@ ht-degree: 1%
 
 ### 在圖表中顯示資料 {#displaying-data-in-the-chart}
 
-在描述性分析精靈的第一步，您可以選擇只以圖表形式顯示資料，而不使用表格。 在這種情況下，設定圖形時必須選取變數。 您必須先選取要顯示的變數數目，然後從相關資料庫中選取欄位。
+在描述性分析助理的第一個步驟中，您可以選擇只以圖表形式顯示資料，而不使用表格。 在這種情況下，設定圖形時必須選取變數。 您必須先選取要顯示的變數數目，然後從相關資料庫中選取欄位。
 
 ![](assets/s_ncs_user_report_wizard_023.png)
 
@@ -139,7 +139,7 @@ ht-degree: 1%
 
 ### 統計資料計算 {#statistics-calculation}
 
-描述性分析精靈可讓您計算資料的幾種統計資料。 依預設，僅設定一個簡單計數。
+描述性分析助理可以讓您計算資料的幾種統計資料。 依預設，僅設定一個簡單計數。
 
 按一下&#x200B;**[!UICONTROL Add]**&#x200B;以建立新的統計資料。
 
@@ -183,7 +183,7 @@ ht-degree: 1%
 
 ### 顯示報表 {#displaying-the-report}
 
-精靈的最後一個步驟可讓您顯示報表，也就是已設定的表格或圖表。
+助理的最後一個步驟可讓您顯示報表，也就是已設定的表格或圖表。
 
 當報表包含表格時，計算結果儲存格會著色。 結果愈高，色彩愈強烈。
 
@@ -205,7 +205,7 @@ ht-degree: 1%
 
 透過&#x200B;**[!UICONTROL Quantitative distribution]**&#x200B;範本建立之分析報告的設定模式在實施範例[量化資料分析](../../reporting/using/use-cases.md#quantitative-data-analysis)中有詳細說明。
 
-使用描述性分析精靈建立量化報表時可用的選項詳述如下。
+使用描述性分析助理建立量化報告時可用的選項詳述如下。
 
 首先，選取計算涉及的變數：
 
@@ -229,7 +229,7 @@ ht-degree: 1%
 
   ![](assets/s_ncs_user_report_wizard_030.png)
 
-  精靈的最後一步會顯示定量分析報告。
+  助理的最後一步會顯示定量分析報告。
 
   ![](assets/reporting_descriptive_view_report.png)
 

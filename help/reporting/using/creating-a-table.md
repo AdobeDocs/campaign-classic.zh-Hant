@@ -5,7 +5,7 @@ description: 建立表格
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Reporting, Monitoring
 exl-id: 05f76bdf-6dcd-4360-9e72-0ba6a4dd0d5e
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: f90df5a5e5b3a2317d86ff2919560ded38f44f44
 workflow-type: tm+mt
 source-wordcount: '2512'
 ht-degree: 1%
@@ -461,6 +461,6 @@ ht-degree: 1%
 
 此型別的表格可讓您顯示針對資料庫資料所計算的統計資料。
 
-這些型別報表的設定與描述性分析精靈所用的設定類似。 如需詳細資訊，請參閱[此頁面](../../reporting/using/using-the-descriptive-analysis-wizard.md#configuring-the-quantitative-distribution-template)。
+這些型別報表的設定類似於描述性分析助理員所用的設定。 如需詳細資訊，請參閱[此頁面](../../reporting/using/using-the-descriptive-analysis-wizard.md#configuring-the-quantitative-distribution-template)。
 
 如需建立樞紐分析表的詳細資訊，請參閱[此區段](../../reporting/using/ac-cubes.md)。
