@@ -6,7 +6,7 @@ badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v
 feature: Email Design
 role: User
 exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
 workflow-type: tm+mt
 source-wordcount: '1958'
 ht-degree: 1%
@@ -117,7 +117,7 @@ Adobe Campaign可讓您嘗試新的互動式[AMP for Email](https://amp.dev/abou
 
 ## 使用內容管理 {#using-content-management}
 
-您可以使用內容管理表單，直接在傳送精靈中定義傳送的內容。 若要這麼做，您必須在傳遞屬性的&#x200B;**[!UICONTROL Advanced]**&#x200B;索引標籤中，參考要使用的內容管理的發佈範本。
+您可以使用內容管理表單，直接在傳送助理中定義傳送的內容。 若要這麼做，您必須在傳遞屬性的&#x200B;**[!UICONTROL Advanced]**&#x200B;索引標籤中，參考要使用的內容管理的發佈範本。
 
 ![](assets/s_ncs_content_in_delivery.png)
 
@@ -144,7 +144,7 @@ Adobe Campaign可讓您嘗試新的互動式[AMP for Email](https://amp.dev/abou
 
 ## 新增影像 {#adding-images}
 
-HTML格式電子郵件傳遞可包含影像。 從傳遞精靈中，您可以匯入包含影像的HTML頁面，或透過&#x200B;**[!UICONTROL Image]**&#x200B;圖示直接使用HTML編輯器插入影像。
+HTML格式電子郵件傳遞可包含影像。 從傳遞小幫手，您可以匯入包含影像的HTML頁面，或透過&#x200B;**[!UICONTROL Image]**&#x200B;圖示直接使用HTML編輯器插入影像。
 
 
 ### 護欄 {#img-guardrails}
@@ -166,7 +166,7 @@ HTML格式電子郵件傳遞可包含影像。 從傳遞精靈中，您可以匯
 
 ### 插入和管理影像 {#manage-images}
 
-傳遞精靈可讓您將本機影像或資料庫中儲存的影像新增至訊息的內容。 若要這麼做，請按一下HTML內容工具列中的&#x200B;**[!UICONTROL Image]**&#x200B;按鈕。
+傳遞助理可以讓您新增本機影像，或資料庫中儲存的影像至訊息內容。 若要這麼做，請按一下HTML內容工具列中的&#x200B;**[!UICONTROL Image]**&#x200B;按鈕。
 
 ![](assets/s_ncs_user_image_from_library.png)
 
@@ -174,7 +174,7 @@ HTML格式電子郵件傳遞可包含影像。 從傳遞精靈中，您可以匯
 >
 >為了讓收件者能夠檢視其收到之郵件中包含的影像，這些郵件必須在可從外部存取的伺服器上可用。
 
-若要透過傳遞精靈管理影像：
+若要透過傳送助理管理影像：
 
 1. 按一下工具列中的&#x200B;**[!UICONTROL Tracking & Images]**圖示。
    ![](assets/s_ncs_user_email_del_img_param.png)
@@ -184,9 +184,9 @@ HTML格式電子郵件傳遞可包含影像。 從傳遞精靈中，您可以匯
    ![](assets/s_ncs_user_email_del_img_upload.png)
 
 * 您可以手動上傳影像，而不需要等候傳遞分析階段。 若要這麼做，請按一下&#x200B;**[!UICONTROL Upload the images straightaway...]**&#x200B;連結。
-* 您可以指定另一個路徑來存取追蹤伺服器上的影像。 若要這麼做，請在&#x200B;**[!UICONTROL Images URL]**&#x200B;欄位中輸入。 此值會覆寫安裝精靈引數中定義的值。
+* 您可以指定另一個路徑來存取追蹤伺服器上的影像。 若要這麼做，請在&#x200B;**[!UICONTROL Images URL]**&#x200B;欄位中輸入。 此值會覆寫安裝輔助程式引數中定義的值。
 
-當您開啟傳送精靈中包含影像的HTML內容時，訊息會根據傳送引數，為您提供立即上傳影像的選項。
+當您開啟傳送助理中包含影像的HTML內容時，訊息會根據傳送引數，提供您立即上傳影像的選項。
 
 ![](assets/s_ncs_user_email_del_img_local.png)
 

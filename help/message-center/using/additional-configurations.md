@@ -7,7 +7,7 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 4d25d740-db57-4d18-8cae-2dd49c4a786e
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
 workflow-type: tm+mt
 source-wordcount: '804'
 ht-degree: 6%
@@ -34,11 +34,11 @@ ht-degree: 6%
 
 >[!NOTE]
 >
->佇列中擱置的事件數目會顯示在Adobe Campaign處理序監視頁面的[系統指標](../../production/using/monitoring-processes.md#system-indicators)區段中。 如需部署精靈的詳細資訊，請參閱[本節](../../installation/using/deploying-an-instance.md#deployment-wizard)。
+>佇列中擱置的事件數目會顯示在Adobe Campaign處理序監視頁面的[系統指標](../../production/using/monitoring-processes.md#system-indicators)區段中。 如需部署精靈的詳細資訊，請參閱[本節](../../installation/using/deploying-an-instance.md#deployment-assistant)。
 
 ## 清除事件 {#purging-events}
 
-您可以使用[部署精靈](../../production/using/database-cleanup-workflow.md#deployment-wizard)來設定資料在資料庫中儲存的時間長度。
+您可以使用[部署精靈](../../production/using/database-cleanup-workflow.md#deployment-assistant)來設定資料在資料庫中儲存的時間長度。
 
 事件清除是由[資料庫清除工作流程](../../production/using/database-cleanup-workflow.md)自動執行的。 此工作流程會清除在執行例項上接收並儲存的事件，以及在控制例項上封存的事件。
 

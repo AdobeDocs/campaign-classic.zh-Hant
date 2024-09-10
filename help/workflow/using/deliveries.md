@@ -3,7 +3,7 @@ product: campaign
 title: 傳遞
 description: 深入瞭解預設傳遞工作流程
 feature: Workflows
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 4%
@@ -47,7 +47,7 @@ ht-degree: 4%
   <tr> 
    <td> <span class="uicontrol">資料庫清除</span> <br /> </td> 
    <td> <span class="uicontrol">cleanup</span> <br /> </td> 
-   <td> <p>此工作流程是資料庫維護工作流程：它會根據統計和程式進行不同的計算，並根據部署助理員中定義的組態從資料庫刪除過時的資料。 預設會每天凌晨4:00觸發。</p> <p>如需詳細資訊，請參閱此<a href="../../production/using/database-cleanup-workflow.md">頁面</a>。</p> </td> 
+   <td> <p>此工作流程是資料庫維護工作流程：它會根據統計和流程進行不同的計算，並根據部署精靈中定義的設定從資料庫刪除過時的資料。 預設會每天凌晨4:00觸發。</p> <p>如需詳細資訊，請參閱此<a href="../../production/using/database-cleanup-workflow.md">頁面</a>。</p> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">暫停的工作流程清理</span> <br /> </td> 

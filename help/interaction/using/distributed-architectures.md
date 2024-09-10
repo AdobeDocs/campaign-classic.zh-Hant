@@ -7,7 +7,7 @@ audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
 exl-id: 083be073-aad4-4c81-aff2-77f5ef3e80db
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
 workflow-type: tm+mt
 source-wordcount: '1014'
 ht-degree: 1%
@@ -41,7 +41,7 @@ ht-degree: 1%
 
 選件會自動部署，然後發佈在執行和控制執行個體上。
 
-所有線上執行個體都會停用在設計環境中刪除的選件。 在清除期間（在每個執行個體的部署助理中指定）和滑動期間（在傳入主張的型別規則中指定）之後，所有執行個體上都會自動刪除過時的主張和優惠方案。
+所有線上執行個體都會停用在設計環境中刪除的選件。 在清除期間（在每個執行個體的部署精靈中指定）和滑動期間（在傳入主張的型別規則中指定）之後，所有執行個體上都會自動刪除過時的主張和優惠方案。
 
 ![](assets/interaction_powerbooster_schema2.png)
 

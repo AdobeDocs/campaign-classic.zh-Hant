@@ -8,7 +8,7 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: f40bab8c-5064-40d9-beed-101a9f22c094
-source-git-commit: f032ed3bdc0b402c8281bc34e6cb29f3c575aaf9
+source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
 workflow-type: tm+mt
 source-wordcount: '1306'
 ht-degree: 1%
@@ -133,13 +133,13 @@ ht-degree: 1%
 
 ### 步驟6 — 建立資料庫 {#step-6---creating-the-database}
 
-精靈的最後階段可讓您建立資料庫。 按一下 **[!UICONTROL Start]** 確認。
+輔助程式的最後階段可讓您建立資料庫。 按一下 **[!UICONTROL Start]** 確認。
 
 ![](assets/s_ncs_install_db_oracle_creation06.png)
 
 建立資料庫之後，您可以重新連線以完成執行處理組態。
 
-您現在必須啟動部署精靈，才能完成執行個體的設定。 請參閱[部署精靈](../../installation/using/deploying-an-instance.md#deployment-wizard)。
+您現在必須啟動部署精靈，才能完成執行個體的設定。 請參閱[部署精靈](../../installation/using/deploying-an-instance.md#deployment-assistant)。
 
 連結至執行個體的資料庫連線設定儲存在Adobe Campaign安裝目錄中的檔案&#x200B;**`/conf/config-<instance>.xml`**&#x200B;中。
 
@@ -224,13 +224,13 @@ ht-degree: 1%
 
 ### 步驟5 — 建立資料庫 {#step-5---creating-the-database}
 
-精靈的最後階段可讓您建立資料庫。 按一下 **[!UICONTROL Start]** 確認。
+輔助程式的最後階段可讓您建立資料庫。 按一下 **[!UICONTROL Start]** 確認。
 
 ![](assets/s_ncs_install_db_oracle_creation06.png)
 
 資料庫建立完成後，您可以重新連線以完成執行處理組態。
 
-您現在必須啟動部署精靈，才能完成執行個體的設定。 請參閱[部署精靈](../../installation/using/deploying-an-instance.md#deployment-wizard)。
+您現在必須啟動部署精靈，才能完成執行個體的設定。 請參閱[部署精靈](../../installation/using/deploying-an-instance.md#deployment-assistant)。
 
 連結至執行個體的資料庫連線設定儲存在Adobe Campaign安裝目錄中的檔案&#x200B;**`/conf/config-<instance>.xml`**&#x200B;中。
 

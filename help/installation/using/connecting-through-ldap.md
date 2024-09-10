@@ -8,22 +8,25 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 0533cd50-3aa4-4160-9152-e916e149e77f
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
 workflow-type: tm+mt
-source-wordcount: '1021'
+source-wordcount: '1045'
 ht-degree: 0%
 
 ---
 
-# 透過LDAP連線{#connecting-through-ldap}
+# 透過LDAP連線 {#connecting-through-ldap}
 
 ## 設定Campaign和LDAP {#configuring-campaign-and-ldap}
 
 >[!NOTE]
 >
->LDAP設定僅適用於內部部署或混合式安裝。
+>* LDAP設定僅適用於內部部署或混合式安裝。
+>
+>* 請確定您的系統和您的openssl版本與[相容性矩陣](../../rn/using/compatibility-matrix.md)中的Campaign相容。 過時的版本可能會影響您的LDAP驗證。
+>
 
-LDAP設定會在部署精靈中執行。 必須在第一個組態步驟中選取&#x200B;**[!UICONTROL LDAP integration]**&#x200B;選項。 請參閱[部署精靈](../../installation/using/deploying-an-instance.md#deployment-wizard)。
+LDAP設定會在部署精靈中執行。 必須在第一個組態步驟中選取&#x200B;**[!UICONTROL LDAP integration]**&#x200B;選項。 請參閱[部署精靈](../../installation/using/deploying-an-instance.md#deployment-assistant)。
 
 視窗可讓您透過指定的LDAP目錄設定Adobe Campaign使用者的身分識別。
 
@@ -32,29 +35,19 @@ LDAP設定會在部署精靈中執行。 必須在第一個組態步驟中選取
 * 在&#x200B;**[!UICONTROL LDAP server]**&#x200B;欄位中指定LDAP伺服器的位址。 您可以新增連線埠號碼。 依預設，使用的連線埠為389。
 * 在下拉式清單中，選取使用者的驗證方法：
 
-   * 加密的密碼(**md5**)
+   * 加密密碼(**md5**) — 預設模式。
 
-     預設模式。
-
-   * 純文字密碼+ SSL (**TLS**)
-
-     整個驗證程式（包括密碼）都會加密。 安全連線埠636不可在此模式中使用： Adobe Campaign會自動切換至安全模式。
+   * 純文字密碼+ SSL (**TLS**) — 整個驗證程式（包含密碼）已加密。 安全連線埠636不可在此模式中使用： Adobe Campaign會自動切換至安全模式。
 
      當您使用此驗證模式時，在Linux中，憑證會由openLDAP使用者端程式庫驗證。 建議您使用有效的SSL憑證，以便加密驗證程式。 否則，資訊將以純文字顯示。
 
      憑證也會在Windows中驗證。
 
-   * Windows NT LAN管理員(**NTLM**)
+   * Windows NT LAN管理員(**NTLM**) — 專屬Windows驗證。 **[!UICONTROL Unique identifier]**&#x200B;僅用於網域名稱。
 
-     專屬Windows驗證。 **[!UICONTROL Unique identifier]**&#x200B;僅用於網域名稱。
+   * 分散式密碼驗證(**DPA**) — 專屬Windows驗證。 **[!UICONTROL Unique identifier]**&#x200B;僅用於網域名稱(domain.com)。
 
-   * 分散式密碼驗證(**DPA**)
-
-     專屬Windows驗證。 **[!UICONTROL Unique identifier]**&#x200B;僅用於網域名稱(domain.com)。
-
-   * 純文字密碼
-
-     無加密（僅供測試階段使用）。
+   * 純文字密碼 — 不加密（僅供測試階段使用）。
 
 * 選取使用者驗證模式： **[!UICONTROL Automatically compute the unique user identifier]** （請參閱步驟[辨別名稱計算](#distinguished-name-calculation)）或&#x200B;**[!UICONTROL Search the unique user identifier in the directory]** （請參閱步驟[搜尋識別碼](#searching-for-identifiers)）。
 

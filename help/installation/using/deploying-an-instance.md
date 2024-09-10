@@ -8,7 +8,7 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 8b07447c-9a86-4b56-8d29-e0b01357a6ec
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
 workflow-type: tm+mt
 source-wordcount: '3389'
 ht-degree: 2%
@@ -21,7 +21,7 @@ ht-degree: 2%
 >
 >伺服器端設定只能由Adobe代管的部署Adobe執行。 若要瞭解不同部署的詳細資訊，請參閱[託管模型](../../installation/using/hosting-models.md)區段或[此頁面](../../installation/using/capability-matrix.md)。
 
-## 部署精靈 {#deployment-wizard}
+## 部署精靈 {#deployment-assistant}
 
 Adobe Campaign提供圖形化助理，可在Adobe Campaign使用者端主控台中使用，用來定義您要連線的執行個體引數。
 
@@ -396,11 +396,11 @@ Adobe Campaign可讓您區別這三個URL，以將負載分散到多個平台。
 您可以使用逗號來指定多個URL遮罩，以分隔每個URL遮罩。
 
 * 如需在電子郵件中使用和管理影像的詳細資訊，請參閱[本節](../../delivery/using/defining-the-email-content.md#adding-images)。
-* 在傳遞精靈中，從這些URL呼叫的影像將具有「已忽略」狀態。
+* 在傳送助理中，從這些URL呼叫的影像會具有「已忽略」狀態。
 
 ### 發佈模式 {#publication-modes}
 
-精靈的下半部可讓您選取公用資源與影像的發佈選項。
+助理的下半部可讓您選取公用資源與影像的發佈選項。
 
 可使用下列發佈模式：
 

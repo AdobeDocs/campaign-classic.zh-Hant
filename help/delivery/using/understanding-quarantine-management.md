@@ -6,7 +6,7 @@ badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v
 feature: Monitoring, Deliverability
 role: User
 exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
 workflow-type: tm+mt
 source-wordcount: '2987'
 ht-degree: 8%

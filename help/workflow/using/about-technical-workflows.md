@@ -4,7 +4,7 @@ title: 技術工作流程
 description: 進一步瞭解Campaign Classic套件提供的技術工作流程
 feature: Workflows
 exl-id: 9aed2665-cd4b-419c-b9f2-ea04fc1d8f01
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
 workflow-type: tm+mt
 source-wordcount: '1704'
 ht-degree: 1%
@@ -40,7 +40,7 @@ ht-degree: 1%
 | **收集HeatMap服務的資料** (collectDataHeatMapService) | 預設安裝 | 此工作流程會擷取HeatMap服務所需的資料。 |
 | **收集隱私權請求** (collectPrivacyRequests) | 隱私權資料保護規範 | 此工作流程會產生儲存在Adobe Campaign的收件者資料，並讓該資料可在隱私權請求的畫面中下載。 |
 | **成本計算** (budgetMgt) | 行銷活動（行銷活動） | 此工作流程會開始計算預算、計畫、方案、行銷活動、傳遞和任務的費用和成本行。 |
-| **資料庫清理** （清理） | 傳遞 | 此工作流程是資料庫維護工作流程：它會根據統計和程式進行不同的計算，並根據部署助理員中定義的組態從資料庫刪除過時的資料。 預設會每天凌晨4:00觸發。 如需詳細資訊，請參閱[本頁面](../../production/using/database-cleanup-workflow.md#monitoring-campaign-classic)。 |
+| **資料庫清理** （清理） | 傳遞 | 此工作流程是資料庫維護工作流程：它會根據統計和流程進行不同的計算，並根據部署精靈中定義的設定從資料庫刪除過時的資料。 預設會每天凌晨4:00觸發。 如需詳細資訊，請參閱[本頁面](../../production/using/database-cleanup-workflow.md#monitoring-campaign-classic)。 |
 | **刪除封鎖的LINE使用者** (deleteBlockedLineUsersV2) | LINE 管道 | 此工作流程確保LINE V2使用者的資料在封鎖LINE正式帳戶180天後會被刪除。 |
 | **刪除隱私權請求資料** (deletePrivacyRequestsData) | 隱私權資料保護規範 | 此工作流程會刪除收件者儲存在Adobe Campaign中的資料。 |
 | **傳遞指標** (deliveryIndicators) | 中間來源平台 | 此工作流程會更新傳送的傳送追蹤指標。 預設會每小時觸發此工作流程。 |

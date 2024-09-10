@@ -6,7 +6,7 @@ feature: Application Settings
 role: Data Engineer, Developer
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 exl-id: e61f2b63-06d3-4b8c-867f-1c729176d2da
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
 workflow-type: tm+mt
 source-wordcount: '2398'
 ht-degree: 0%
@@ -613,12 +613,12 @@ ht-degree: 0%
 
 ## 精靈 {#wizards}
 
-精靈會以頁面的形式引導您完成一組資料輸入步驟。 當您驗證表單時，輸入的資料會儲存。
+助理會以頁面的形式引導您完成一組資料輸入步驟。 當您驗證表單時，輸入的資料會儲存。
 
-精靈的結構如下：
+助理具有下列結構：
 
 ```xml
-<form type="wizard" name="example" namespace="cus" img="nms:rcpgroup32.png" label="Wizard example" entity-schema="nms:recipient">
+<form type="wizard" name="example" namespace="cus" img="nms:rcpgroup32.png" label="Assistant example" entity-schema="nms:recipient">
   <container title="Title of page 1" desc="Long description of page 1">
     <input xpath="@lastName"/>
     <input xpath="comment"/>
@@ -632,7 +632,7 @@ ht-degree: 0%
 
 ![](assets/d_ncs_integration_form_exemple19.png)
 
-`<form>`元素上存在&#x200B;**type=&quot;wizard&quot;**&#x200B;屬性，可讓您定義表單建構中的精靈模式。 這些頁面是從`<container>`個元素完成的，這些元素是`<form>`元素的子項。 頁面的`<container>`元素已填入標題的標題屬性和desc，以在頁面標題下顯示說明。 **[!UICONTROL Previous]**&#x200B;和&#x200B;**[!UICONTROL Next]**&#x200B;按鈕會自動新增，以允許在不同頁面之間瀏覽。
+`<form>`元素上存在&#x200B;**type=&quot;wizard&quot;**&#x200B;屬性，可讓您定義表單建構中的助理模式。 這些頁面是從`<container>`個元素完成的，這些元素是`<form>`元素的子項。 頁面的`<container>`元素已填入標題的標題屬性和desc，以在頁面標題下顯示說明。 **[!UICONTROL Previous]**&#x200B;和&#x200B;**[!UICONTROL Next]**&#x200B;按鈕會自動新增，以允許在不同頁面之間瀏覽。
 
 「**[!UICONTROL Finish]**」按鈕會儲存輸入的資料並關閉表單。
 

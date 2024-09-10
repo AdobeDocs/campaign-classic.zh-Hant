@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 194366ab-fd9f-4431-9163-ae16c1f96db2
-source-git-commit: 1be1528d657537786c430ea9c8bdb3aad58ba20d
+source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
 workflow-type: tm+mt
 source-wordcount: '1077'
 ht-degree: 3%
@@ -216,11 +216,11 @@ ht-degree: 3%
 
    請參閱[此頁面](../../installation/using/creating-an-instance-and-logging-on.md)和[此區段](../../installation/using/configuring-campaign-server.md#internal-identifier)。
 
-   第一次登入時，會顯示資料庫建立精靈：
+   第一次登入時，會顯示資料庫建立輔助程式：
 
    ![](assets/s_ncs_install_db_oracle_creation01.png)
 
-   請依照精靈中的步驟，建立與連線執行處理關聯的資料庫。
+   請依照輔助程式中的步驟，建立與連線執行處理相關聯的資料庫。
 
    如需詳細資訊，請參閱[建立及設定資料庫](../../installation/using/creating-and-configuring-the-database.md)。
 
