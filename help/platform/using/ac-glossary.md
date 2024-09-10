@@ -6,7 +6,7 @@ feature: Overview
 role: User, Data Architect
 level: Beginner
 exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
-source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
+source-git-commit: de9ff0b50d819038c97e8515ddb7d6cfeb4547a1
 workflow-type: tm+mt
 source-wordcount: '5959'
 ht-degree: 2%
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 +++**A/B 測試**
 
-A/B測試是一項功能，可讓使用者定義兩至三種電子郵件變體：每個變體都會傳送至母體樣本，以判斷哪個變體效果最佳。 一旦確定後，則會將成功變體發送至剩餘母體。
+A/B測試是一項功能，可讓使用者定義兩至三種電子郵件變體：每個變體都會傳送至母體樣本，以判斷哪個變體效果最佳。 一旦確定後，則會將成功變體發送至剩餘群體。
 
 深入瞭解[A/B測試](../../delivery/using/get-started-a-b-testing.md)。
 +++
@@ -249,7 +249,7 @@ Learn more about [Deliverability](../../delivery/using/about-deliverability.md).
 
 部署精靈會定義Campaign執行個體的引數，例如預設名稱空間、資料庫清理排程、資料保留期間和其他技術設定。
 
-深入瞭解[部署精靈](../../installation/using/deploying-an-instance.md#deployment-wizard)。
+深入瞭解[部署精靈](../../installation/using/deploying-an-instance.md#deployment-assistant)。
 +++
 
 +++**描述性分析**
@@ -484,7 +484,7 @@ Learn more about [Image serving](../../delivery/using/defining-the-email-content
 
 +++**執行個體設定**
 
-執行個體設定是Adobe Campaign執行個體的設定詳細資料。 這些設定是在「部署精靈」（「工具」>「進階」>「部署精靈」）中或在伺服器和/或執行個體組態檔中定義。
+執行個體設定是Adobe Campaign執行個體的設定詳細資料。 這些設定是在部署精靈（[工具] > [進階] > [部署精靈]）中或在伺服器和/或執行個體組態檔中定義。
 
 深入瞭解[執行個體設定](../../installation/using/about-initial-configuration.md)。
 
@@ -492,7 +492,7 @@ Learn more about [Image serving](../../delivery/using/defining-the-email-content
 
 +++**個工作（匯入和匯出）**
 
-工作由精靈系統管理，可簡化匯入和匯出產品的資料。 作業使用範本系統以簡化和維持一致性，並可定義成依排程執行。
+工作由助理系統管理，可簡化將資料匯入和匯出產品的過程。 作業使用範本系統以簡化和維持一致性，並可定義成依排程執行。
 
 深入瞭解[匯入及匯出工作](../../platform/using/get-started-data-import-export.md)。
 +++
