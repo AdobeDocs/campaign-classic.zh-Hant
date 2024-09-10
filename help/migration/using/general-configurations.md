@@ -9,7 +9,7 @@ topic-tags: configuration
 hide: true
 hidefromtoc: true
 exl-id: 7aad0e49-8d9c-40c7-9d6a-42fee0ae5870
-source-git-commit: afbec7b3df810c8c1818a4fb93c5f7e30f7a753b
+source-git-commit: 7906e9fee164d731659bbb9f96394faca5961240
 workflow-type: tm+mt
 source-wordcount: '2558'
 ht-degree: 0%
@@ -17,8 +17,6 @@ ht-degree: 0%
 ---
 
 # 一般設定{#general-configurations}
-
-
 
 本節詳細說明從v5.11或v6.02遷移時，在Adobe Campaign v7中執行的設定。
 

@@ -8,9 +8,9 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: c0cb4efa-cae9-4312-88fb-738857a89595
-source-git-commit: 1be1528d657537786c430ea9c8bdb3aad58ba20d
+source-git-commit: 7906e9fee164d731659bbb9f96394faca5961240
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '384'
 ht-degree: 1%
 
 ---
@@ -18,8 +18,6 @@ ht-degree: 1%
 # 安裝伺服器{#installing-the-server}
 
 ## 執行安裝程式 {#executing-the-installation-program}
-
-若是Windows 32位元平台，請安裝Adobe Campaign 32位元。 若是Windows 64位元平台，請安裝Adobe Campaign 64位元。
 
 Adobe Campaign伺服器的安裝步驟如下：
 
