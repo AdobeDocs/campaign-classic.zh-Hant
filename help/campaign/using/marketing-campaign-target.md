@@ -5,9 +5,9 @@ description: 瞭解如何定義行銷活動的對象
 role: User
 feature: Campaigns, Audiences
 exl-id: 04daa67c-4057-42a7-b993-a6eddf2b883d
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 7453db63a0ed2c617e9f7e4cbfa3480b3ed5020d
 workflow-type: tm+mt
-source-wordcount: '1485'
+source-wordcount: '1492'
 ht-degree: 1%
 
 ---
@@ -166,6 +166,10 @@ ht-degree: 1%
   您可以按一下&#x200B;**[!UICONTROL Actions]**&#x200B;圖示並選取&#x200B;**[!UICONTROL Unconditional]**&#x200B;停止，無條件停止工作流程。 此動作會終止您的行銷活動工作流程。
 
   ![](assets/s_user_segmentation_stop_unconditional.png)
+
+  >[!CAUTION]
+  >
+  >管理員使用者僅限無條件停止。
 
 ## 新增控制組 {#defining-a-control-group}
 
