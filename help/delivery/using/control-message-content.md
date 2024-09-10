@@ -6,7 +6,7 @@ badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v
 feature: Deliverability
 role: User
 exl-id: dcd3a9f9-5fe9-4c28-a4a5-5aed67b036ab
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: de6e86eb2304a88e836c5759b87d7f38446ed357
 workflow-type: tm+mt
 source-wordcount: '766'
 ht-degree: 6%
@@ -14,7 +14,6 @@ ht-degree: 6%
 ---
 
 # 控制您的訊息內容{#control-message-content}
-
 
 為確保您的電子郵件能送達收件者並提高電子郵件傳遞率，他們必須遵守許多規則。 否則，某些訊息的內容可能會偵測為垃圾訊息。 Adobe Campaign提供數種工具，可讓您的內容符合這些規則。
 
@@ -36,7 +35,7 @@ ht-degree: 6%
 
 某些ISP在接受訊息之前會檢查寄件者地址(**[!UICONTROL From]**)的有效性。 格式錯誤的位址可能會導致接收伺服器拒絕該位址。
 
-您必須確定在執行個體層級（功能表&#x200B;**[!UICONTROL Tools > Advanced > Deployment wizard...]**）或最常使用的案例中指定了正確的地址。
+您必須確定在執行個體層級（功能表&#x200B;**[!UICONTROL Tools > Advanced > deployment wizard...]**）或最常使用的案例中指定了正確的地址。
 
 如需詳細資訊，請參閱[此頁面](defining-the-email-content.md)。
 
