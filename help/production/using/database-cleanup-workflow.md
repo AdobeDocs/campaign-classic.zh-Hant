@@ -7,7 +7,7 @@ audience: production
 content-type: reference
 topic-tags: data-processing
 exl-id: 75d3a0af-9a14-4083-b1da-2c1b22f57cbe
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 6c85ca9d50dd970915b7c46939f88f4d7fdf07d8
 workflow-type: tm+mt
 source-wordcount: '2827'
 ht-degree: 0%
@@ -47,9 +47,9 @@ ht-degree: 0%
 >
 >為了讓&#x200B;**[!UICONTROL Database cleanup]**&#x200B;工作流程在排程器中所定義的日期和時間啟動，工作流程引擎(wfserver)必須啟動。
 
-### 部署精靈 {#deployment-wizard}
+### 部署精靈 {#deployment-assistant}
 
-透過&#x200B;**[!UICONTROL Tools > Advanced]**&#x200B;功能表存取的&#x200B;**[!UICONTROL Deployment wizard]**&#x200B;可讓您設定儲存資料的時間長度。 值以天為單位表示。 如果未變更這些值，工作流程將使用預設值。
+透過&#x200B;**[!UICONTROL Tools > Advanced]**&#x200B;功能表存取的&#x200B;**[!UICONTROL deployment wizard]**&#x200B;可讓您設定儲存資料的時間長度。 值以天為單位表示。 如果未變更這些值，工作流程將使用預設值。
 
 ![](assets/ncs_cleanup_deployment-wizard.png)
 
@@ -125,7 +125,7 @@ ht-degree: 0%
 
 此任務會清除所有要刪除或回收的傳遞。
 
-1. **[!UICONTROL Database cleanup]**&#x200B;工作流程會選取&#x200B;**deleteStatus**&#x200B;欄位值為&#x200B;**[!UICONTROL Yes]**&#x200B;或&#x200B;**[!UICONTROL Recycled]**&#x200B;且刪除日期早於部署精靈之&#x200B;**[!UICONTROL Deleted deliveries]** (**NmsCleanup_RecycledDeliveryPurgeDelay**)欄位中定義之期間的所有傳遞。 如需詳細資訊，請參閱[部署精靈](#deployment-wizard)。 此期間是根據目前的伺服器日期計算。
+1. **[!UICONTROL Database cleanup]**&#x200B;工作流程會選取&#x200B;**deleteStatus**&#x200B;欄位值為&#x200B;**[!UICONTROL Yes]**&#x200B;或&#x200B;**[!UICONTROL Recycled]**&#x200B;且刪除日期早於部署精靈之&#x200B;**[!UICONTROL Deleted deliveries]** (**NmsCleanup_RecycledDeliveryPurgeDelay**)欄位中定義之期間的所有傳遞。 如需詳細資訊，請參閱[部署精靈](#deployment-assistant)。 此期間是根據目前的伺服器日期計算。
 1. 對於每個中間來源伺服器，任務會選取要刪除的傳遞清單。
 1. **[!UICONTROL Database cleanup]**&#x200B;工作流程會刪除傳遞記錄、附件、映象頁面資訊和所有其他相關資料。
 1. 永久刪除傳送之前，工作流程會永久刪除下清單格中的連結資訊：
@@ -308,7 +308,7 @@ ht-degree: 0%
    DELETE FROM XtkReject WHERE iRejectId IN (SELECT iRejectId FROM XtkReject WHERE tsLog < $(curDate)) LIMIT $(l)
    ```
 
-   其中`$(curDate)`是目前的伺服器日期，我們從其中減去為&#x200B;**NmsCleanup_RejectsPurgeDelay**&#x200B;選項（請參閱[部署精靈](#deployment-wizard)）定義的期間，而`$(l)`是大量刪除的記錄數上限。
+   其中`$(curDate)`是目前的伺服器日期，我們從其中減去為&#x200B;**NmsCleanup_RejectsPurgeDelay**&#x200B;選項（請參閱[部署精靈](#deployment-assistant)）定義的期間，而`$(l)`是大量刪除的記錄數上限。
 
 1. 然後使用以下查詢刪除所有孤立拒絕：
 
@@ -395,7 +395,7 @@ SELECT iGroupId FROM NmsGroup WHERE iType>0"
 
 ### 清理訪客 {#cleanup-of-visitors}
 
-此任務會使用大量刪除，從訪客表格中刪除過時記錄。 過時記錄是指最後一次修改早於部署精靈中定義的儲存期間的記錄（請參閱[部署精靈](#deployment-wizard)）。 使用下列查詢：
+此任務會使用大量刪除，從訪客表格中刪除過時記錄。 過時記錄是指最後一次修改早於部署精靈中定義的儲存期間的記錄（請參閱[部署精靈](#deployment-assistant)）。 使用下列查詢：
 
 ```sql
 DELETE FROM NmsVisitor WHERE iVisitorId IN (SELECT iVisitorId FROM NmsVisitor WHERE iRecipientId = 0 AND tsLastModified < AddDays(GetDate(), -30) AND iOrigin = 0 LIMIT 20000)
@@ -423,7 +423,7 @@ DELETE FROM NmsSubscription WHERE iDeleteStatus <>0
 
 ### 清理追蹤記錄 {#cleanup-of-tracking-logs}
 
-此工作會從追蹤和網站追蹤記錄表中刪除過時的記錄。 過時記錄是指早於部署精靈中定義的儲存期間的記錄（請參閱[部署精靈](#deployment-wizard)）。
+此工作會從追蹤和網站追蹤記錄表中刪除過時的記錄。 過時記錄是指早於部署精靈中定義的儲存期間的記錄（請參閱[部署精靈](#deployment-assistant)）。
 
 1. 首先，使用下列查詢來復原追蹤記錄表清單：
 
@@ -464,7 +464,7 @@ DELETE FROM NmsSubscription WHERE iDeleteStatus <>0
    DELETE FROM $(tableName) WHERE iBroadLogId IN (SELECT iBroadLogId FROM $(tableName) WHERE tsLastModified < $(option) LIMIT 5000) 
    ```
 
-   其中`$(tableName)`是結構描述清單中每個資料表的名稱，`$(option)`是為&#x200B;**NmsCleanup_BroadLogPurgeDelay**&#x200B;選項定義的日期（請參閱[部署精靈](#deployment-wizard)）。
+   其中`$(tableName)`是結構描述清單中每個資料表的名稱，`$(option)`是為&#x200B;**NmsCleanup_BroadLogPurgeDelay**&#x200B;選項定義的日期（請參閱[部署精靈](#deployment-assistant)）。
 
 1. 最後，工作流程會檢查&#x200B;**NmsProviderMsgId**&#x200B;資料表是否存在。 若是如此，則會使用下列查詢刪除所有過時資料：
 
@@ -472,7 +472,7 @@ DELETE FROM NmsSubscription WHERE iDeleteStatus <>0
    DELETE FROM NmsProviderMsgId WHERE iBroadLogId IN (SELECT iBroadLogId FROM NmsProviderMsgId WHERE tsCreated < $(option) LIMIT 5000)
    ```
 
-   其中`$(option)`符合為&#x200B;**NmsCleanup_BroadLogPurgeDelay**&#x200B;選項定義的日期（請參閱[部署精靈](#deployment-wizard)）。
+   其中`$(option)`符合為&#x200B;**NmsCleanup_BroadLogPurgeDelay**&#x200B;選項定義的日期（請參閱[部署精靈](#deployment-assistant)）。
 
 ### 清理NmsEmailErrorStat表格 {#cleanup-of-the-nmsemailerrorstat-table-}
 
@@ -552,7 +552,7 @@ DELETE FROM NmsMxDomain WHERE iMXIP NOT IN (SELECT DISTINCT iMXIP FROM NmsEmailE
 DELETE FROM NmsPropositionXxx WHERE iPropositionId IN (SELECT iPropositionId FROM NmsPropositionXxx WHERE tsLastModified < $(option) LIMIT 5000) 
 ```
 
-其中`$(option)`是為&#x200B;**NmsCleanup_PositionPurgeDelay**&#x200B;選項定義的日期（請參閱[部署精靈](#deployment-wizard)）。
+其中`$(option)`是為&#x200B;**NmsCleanup_PropositionPurgeDelay**&#x200B;選項定義的日期（請參閱[部署精靈](#deployment-assistant)）。
 
 ### 清理模擬表格 {#cleanup-of-simulation-tables}
 
