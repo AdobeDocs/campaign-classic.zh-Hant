@@ -6,7 +6,7 @@ feature: Technote, Deliverability
 hide: true
 hidefromtoc: true
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 8d15a5666b5768bc0f17a4391061c4fcb9f76811
+source-git-commit: c42d4022587846081442a39d03546c0ef335c7a0
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -52,7 +52,7 @@ ht-degree: 0%
 >
 > Adobe已棄用服務帳戶(JWT)認證，Campaign與Adobe解決方案和應用程式的整合現在必須依賴OAuth伺服器對伺服器認證。 </br>
 >
-> * 如果您已實作與Campaign的傳入整合，您必須移轉您的技術帳戶，如[本檔案](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank)所詳述。 現有的[服務帳戶(JWT)認證](oauth-technical-account.md)將持續運作到2025年1月27日。</br>
+> * 如果您已實作與Campaign的傳入整合，您必須移轉您的技術帳戶，如[本檔案](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank)所詳述。 現有的[服務帳戶(JWT)認證](../../integrations/using/oauth-technical-account.md)將持續運作到2025年1月27日。</br>
 >
 > * 如果您已實作輸出整合(例如Campaign-Analytics整合或Experience Cloud Triggers整合)，則在2025年1月27日前都能正常運作。 不過，在該日期之前，您必須將您的Campaign環境升級至v7.4.1，並將您的技術帳戶移轉至oAuth。
 
