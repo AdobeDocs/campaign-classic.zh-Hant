@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: bdb5e422-ecfe-42eb-bd15-39fe5ec0ff1d
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 22420452d4df2e8161c91a42ad0d20ceb4796e82
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '503'
 ht-degree: 2%
 
 ---
@@ -21,9 +21,12 @@ ht-degree: 2%
 1. 在[Linux](#snowflake-linux)上設定[!DNL Snowflake]。
 1. 在Campaign中設定[!DNL Snowflake] [外部帳戶](#snowflake-external)
 
->[!NOTE]
+>[!CAUTION]
 >
->[!DNL Snowflake]聯結器可用於託管及內部部署。 如需詳細資訊，請參閱[此頁面](../../installation/using/capability-matrix.md)。
+>* [!DNL Snowflake]聯結器可用於託管及內部部署。 如需詳細資訊，請參閱[此頁面](../../installation/using/capability-matrix.md)。
+>
+>* [!DNL Snowflake] ODBC驅動程式的最低支援版本為&#x200B;**2.24.4**。
+>
 
 ![](assets/snowflake_3.png)
 
