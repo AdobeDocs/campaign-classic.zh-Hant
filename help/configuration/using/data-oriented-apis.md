@@ -5,9 +5,9 @@ description: 資料導向 API
 feature: API
 role: Data Engineer, Developer
 exl-id: a392c55e-541a-40b1-a910-4a6dc79abd2d
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 9d84c01b217579b5a291d5761a5dd2f8f8960df8
 workflow-type: tm+mt
-source-wordcount: '1864'
+source-wordcount: '1811'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ Write方法以[Write / WriteCollection (xtk：session)](#write---writecollection
 
 「xtk：queryDef」結構描述中「ExecuteQuery」方法的定義：
 
-```
+```xml
 <method name="ExecuteQuery" const="true">
   <parameters>
     <param desc="Output XML document" name="output" type="DOMDocument" inout="out"/>
@@ -80,7 +80,7 @@ Write方法以[Write / WriteCollection (xtk：session)](#write---writecollection
 
 查詢的XML檔案結構在「xtk：queryDef」架構中進行了說明。 本檔案說明SQL查詢的子句：「select」、「where」、「order by」、「group by」、「having」。
 
-```
+```xml
 <queryDef schema="schema_key" operation="operation_type">
   <select>
     <node expr="expression1">
@@ -114,7 +114,7 @@ Write方法以[Write / WriteCollection (xtk：session)](#write---writecollection
 
 `<subquery>  : </subquery>`的範例
 
-```
+```xml
 <condition setOperator="NOT IN" expr="@id" enabledIf="$(/ignored/@ownerType)=1">
   <subQuery schema="xtk:operatorGroup">
      <select>
@@ -143,7 +143,7 @@ Write方法以[Write / WriteCollection (xtk：session)](#write---writecollection
 
 使用電子郵件上的篩選條件擷取收件者（「nms：recipient」綱要）的姓氏和名字。
 
-```
+```xml
 <queryDef schema="nms:recipient" operation="get">
   <!-- fields to retrieve -->
   <select>
@@ -162,7 +162,7 @@ Write方法以[Write / WriteCollection (xtk：session)](#write---writecollection
 
 傳回在資料夾上篩選的收件者清單，以及依據出生日期以降序排序的電子郵件網域。
 
-```
+```xml
 <queryDef schema="nms:recipient" operation="select">
   <select>
     <node expr="@email"/>
@@ -189,14 +189,14 @@ Write方法以[Write / WriteCollection (xtk：session)](#write---writecollection
 
 若要將查詢傳回的記錄數限製為100：
 
-```
+```xml
 <queryDef schema="nms:recipient" operation="select" lineCount="100">
 ...
 ```
 
 若要擷取接下來的100筆記錄，請再次執行相同的查詢，新增&#x200B;**startLine**&#x200B;屬性。
 
-```
+```xml
 <queryDef schema="nms:recipient" operation="select" lineCount="100" startLine="100">
 ...
 ```
@@ -205,7 +205,7 @@ Write方法以[Write / WriteCollection (xtk：session)](#write---writecollection
 
 若要計算查詢的記錄數，請執行下列步驟：
 
-```
+```xml
 <queryDef schema="nms:recipient" operation="count"">
   <!-- condition on the folder and domain of the email -->
   <where>  
@@ -222,7 +222,7 @@ Write方法以[Write / WriteCollection (xtk：session)](#write---writecollection
 
 若要擷取多次參照的電子郵件地址：
 
-```
+```xml
 <queryDef schema="nms:recipient" operation="select">
   <select>
     <node expr="@email"/>
@@ -244,7 +244,7 @@ Write方法以[Write / WriteCollection (xtk：session)](#write---writecollection
 
 您可以將&#x200B;**groupBy**&#x200B;屬性直接新增至要分組的欄位，以簡化查詢：
 
-```
+```xml
 <select>
   <node expr="@email" groupBy="true"/>
 </select>
@@ -260,7 +260,7 @@ Write方法以[Write / WriteCollection (xtk：session)](#write---writecollection
 
 * 單一運算式中的簡單版本：
 
-  ```
+  ```xml
   <where>
     <condition expr="(@age > 15 or @age <= 45) and  (@city = 'Newton' or @city = 'Culver City') "/>
   </where>
@@ -268,7 +268,7 @@ Write方法以[Write / WriteCollection (xtk：session)](#write---writecollection
 
 * 包含`<condition>`個元素的結構化版本：
 
-  ```
+  ```xml
   <where>
     <condition bool-operator="AND">
       <condition expr="@age > 15" bool-operator="OR"/>
@@ -283,7 +283,7 @@ Write方法以[Write / WriteCollection (xtk：session)](#write---writecollection
 
 當多個條件套用至相同欄位時，可以用「IN」運運算元取代「OR」運運算元：
 
-```
+```xml
 <where>
   <condition>
     <condition expr="@age IN (15, 45)"/>
@@ -300,7 +300,7 @@ Write方法以[Write / WriteCollection (xtk：session)](#write---writecollection
 
   資料夾標籤上的篩選範例：
 
-  ```
+  ```xml
   <where>
     <condition expr="[folder/@label] like 'Segment%'"/>
   </where>
@@ -308,7 +308,7 @@ Write方法以[Write / WriteCollection (xtk：session)](#write---writecollection
 
   若要從「nms：recipient」綱要擷取資料夾的欄位：
 
-  ```
+  ```xml
   <select>
     <!-- label of recipient folder -->
     <node expr="[folder/@label]"/>
@@ -321,7 +321,7 @@ Write方法以[Write / WriteCollection (xtk：session)](#write---writecollection
 
   若要篩選已訂閱「電子報」資訊服務的收件者：
 
-  ```
+  ```xml
   <where>
     <condition expr="subscription" setOperator="EXISTS">
       <condition expr="@name = 'Newsletter'"/>
@@ -333,7 +333,7 @@ Write方法以[Write / WriteCollection (xtk：session)](#write---writecollection
 
   「訂閱」集合連結範例：
 
-  ```
+  ```xml
   <select>
     <node expr="subscription/@label"/>
   </select>
@@ -345,7 +345,7 @@ Write方法以[Write / WriteCollection (xtk：session)](#write---writecollection
 
   在此範例中，對於每個收件者，查詢會傳回收件者訂閱的電子郵件和資訊服務清單：
 
-  ```
+  ```xml
   <queryDef schema="nms:recipient" operation="select">
     <select>
       <node expr="@email"/>
@@ -371,7 +371,7 @@ Write方法以[Write / WriteCollection (xtk：session)](#write---writecollection
 
 當建構查詢時，「界限」值會以字元(？ 在ODBC中，在SQL查詢主體中的`#[index]#` postgres...)。
 
-```
+```xml
 <select>
   <!--the value will be bound by the engine -->
   <node expr="@startDate = #2002/02/01#"/>                   
@@ -386,21 +386,6 @@ Write方法以[Write / WriteCollection (xtk：session)](#write---writecollection
 >
 >如果查詢包含「order-by」或「group-by」指示，資料庫引擎將無法「繫結」值。 您必須將@noSqlBind=&quot;true&quot;屬性放置在查詢的&quot;select&quot;及/或&quot;where&quot;指示上。
 
-#### 查詢建立秘訣： {#query-building-tip-}
-
-若要協助處理查詢的語法，您可以使用Adobe Campaign使用者端主控台（ **[!UICONTROL Tools/ Generic query editor...]**&#x200B;功能表）中的一般查詢編輯器來撰寫查詢。 操作步驟：
-
-1. 選取要擷取的資料：
-
-   ![](assets/s_ncs_integration_webservices_queyr1.png)
-
-1. 定義篩選條件：
-
-   ![](assets/s_ncs_integration_webservices_queyr2.png)
-
-1. 執行查詢並按CTRL+F4以檢視查詢原始程式碼。
-
-   ![](assets/s_ncs_integration_webservices_queyr3.png)
 
 ### 輸出檔案格式 {#output-document-format}
 
@@ -414,7 +399,7 @@ return引數是XML檔案，採用與查詢相關聯的結構描述格式。
 
 在「選取」操作中，傳回的檔案是元素的列舉：
 
-```
+```xml
 <!-- the name of the first element does not matter -->
 <recipient-collection>   
   <recipient email="john.doe@adobe.com" lastName"Doe" firstName="John"/>
@@ -425,7 +410,7 @@ return引數是XML檔案，採用與查詢相關聯的結構描述格式。
 
 針對「count」型別作業傳回的檔案範例：
 
-```
+```xml
 <recipient count="3"/>
 ```
 
@@ -433,7 +418,7 @@ return引數是XML檔案，採用與查詢相關聯的結構描述格式。
 
 別名可讓您修改輸出檔案中資料的位置。 **別名**&#x200B;屬性必須在對應欄位上指定XPath。
 
-```
+```xml
 <queryDef schema="nms:recipient" operation="get">
   <select>
     <node expr="@firstName" alias="@firstName"/>
@@ -445,13 +430,13 @@ return引數是XML檔案，採用與查詢相關聯的結構描述格式。
 
 傳回：
 
-```
+```xml
 <recipient My_folder="Recipients" First name ="John" lastName="Doe"/>
 ```
 
 而非：
 
-```
+```xml
 <recipient firstName="John" lastName="Doe">
   <folder label="Recipients"/>
 </recipient>
@@ -461,7 +446,7 @@ return引數是XML檔案，採用與查詢相關聯的結構描述格式。
 
 * 查詢：
 
-  ```
+  ```xml
   <?xml version='1.0' encoding='ISO-8859-1'?>
   <SOAP-ENV:Envelope xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:ns='http://xml.apache.org/xml-soap' xmlns:SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/'>
     <SOAP-ENV:Body>
@@ -486,7 +471,7 @@ return引數是XML檔案，採用與查詢相關聯的結構描述格式。
 
 * 回應：
 
-  ```
+  ```xml
   <?xml version='1.0' encoding='ISO-8859-1'?>
   <SOAP-ENV:Envelope xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:ns='http://xml.apache.org/xml-soap' xmlns:SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/'>
     <SOAP-ENV:Body>
@@ -511,7 +496,7 @@ return引數是XML檔案，採用與查詢相關聯的結構描述格式。
 
 「xtk：session」結構描述中「Write」和「WriteCollection」方法的定義：
 
-```
+```xml
 <method name="Write" static="true">
   <parameters>
     <param name="doc" type="DOMDocument" desc="Difference document"/>
@@ -548,7 +533,7 @@ return引數是XML檔案，採用與查詢相關聯的結構描述格式。
 
 以電子郵件地址、出生日期和城鎮更新或插入收件者（隱含的「insertOrUpdate」作業）：
 
-```
+```xml
 <recipient xtkschema="nms:recipient" email="john.doe@adobe.com" birthDate="1956/05/04" folder-id=1203 _key="@email, [@folder-id]">
   <location city="Newton"/>
 </recipient>
@@ -556,7 +541,7 @@ return引數是XML檔案，採用與查詢相關聯的結構描述格式。
 
 刪除收件者：
 
-```
+```xml
 <recipient xtkschema="nms:recipient" _operation="delete" email="rene.dupont@adobe.com" folder-id=1203 _key="@email, [@folder-id]"/>
 ```
 
@@ -568,7 +553,7 @@ return引數是XML檔案，採用與查詢相關聯的結構描述格式。
 
 多個收件者的更新或插入：
 
-```
+```xml
 <recipient-collection xtkschema="nms:recipient">    
   <recipient email="john.doe@adobe.com" firstName="John" lastName="Doe" _key="@email"/>
   <recipient email="peter.martinez@adobe.com" firstName="Peter" lastName="Martinez" _key="@email"/>
@@ -582,7 +567,7 @@ return引數是XML檔案，採用與查詢相關聯的結構描述格式。
 
 根據收件者的內部名稱(@name)，將資料夾與收件者建立關聯。
 
-```
+```xml
 <recipient _key="[folder/@name], @email" email="john.doe@adobe.net" lastName="Doe" firstName="John" xtkschema="nms:recipient">
   <folder name="Folder2" _operation="none"/>
 </recipient>
@@ -600,7 +585,7 @@ return引數是XML檔案，採用與查詢相關聯的結構描述格式。
 
 從收件者更新公司（在「cus：company」綱要中連結的表格）：
 
-```
+```xml
 <recipient _key="[folder/@name], @email" email="john.doe@adobe.net" lastName="Doe" firstName="John" xtkschema="nms:recipient">
   <company name="adobe" code="ERT12T" _key="@name" _operation="update"/>
 </recipient>
@@ -610,7 +595,7 @@ return引數是XML檔案，採用與查詢相關聯的結構描述格式。
 
 使用群組關係表(「nms：rcpGrpRel」)將收件者新增至群組：
 
-```
+```xml
 <recipient _key="@email" email="martin.ledger@adobe.net" xtkschema="nms:recipient">
   <rcpGrpRel _key="[rcpGroup/@name]">
     <rcpGroup name="GRP1"/>
@@ -630,7 +615,7 @@ return引數是XML檔案，採用與查詢相關聯的結構描述格式。
 
 * 查詢：
 
-  ```
+  ```xml
   <?xml version='1.0' encoding='ISO-8859-1'?>
   <SOAP-ENV:Envelope xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:ns='http://xml.apache.org/xml-soap' xmlns:SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/'>
     <SOAP-ENV:Body>
@@ -646,7 +631,7 @@ return引數是XML檔案，採用與查詢相關聯的結構描述格式。
 
 * 回應：
 
-  ```
+  ```xml
   <?xml version='1.0' encoding='ISO-8859-1'?>
   <SOAP-ENV:Envelope xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:ns='http://xml.apache.org/xml-soap' xmlns:SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/'>
     <SOAP-ENV:Body>
@@ -658,7 +643,7 @@ return引數是XML檔案，採用與查詢相關聯的結構描述格式。
 
   傳回錯誤：
 
-  ```
+  ```xml
   <?xml version='1.0'?>
   <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/'>
     <SOAP-ENV:Body>
