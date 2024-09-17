@@ -8,16 +8,14 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: 4aaa6256-256a-441d-80c9-430f8e427875
-source-git-commit: 1be1528d657537786c430ea9c8bdb3aad58ba20d
+source-git-commit: 1ab08a89b17fca20e9497696417ecba580e26802
 workflow-type: tm+mt
-source-wordcount: '1127'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # 升級至新的組建（內部部署）{#upgrading}
-
-
 
 開始升級程式之前，請先決定並確認要升級至哪個Adobe Campaign版本，並參閱[發行說明](../../rn/using/latest-release.md) 。
 
@@ -119,15 +117,17 @@ ht-degree: 1%
 
 [進一步瞭解使用者端主控台可用性](../../installation/using/client-console-availability-for-windows.md)。
 
->[!NOTE]
->
->從Build 8757開始，不再需要協力廠商程式庫。
-
 ### 取得更新的套件 {#obtain-updated-packages}
 
 從復原Adobe Campaign的兩個更新套件開始：使用您的使用者認證連線至[軟體發佈入口網站](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)。 在[此頁面](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hant)中進一步瞭解軟體發佈。
 
 檔案為&#x200B;**nlserver6-v7-XXX.rpm**
+
+>[!AVAILABILITY]
+>
+>從7.4.1版開始，Campaign不再包含RPM Linux套件的程式庫。 您必須安裝這些程式庫。
+> 
+
 
 ### 執行更新 {#perform-an-update}
 

@@ -8,9 +8,9 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 exl-id: f41c7510-5ad7-44f3-9485-01f54994b6cb
-source-git-commit: f032ed3bdc0b402c8281bc34e6cb29f3c575aaf9
+source-git-commit: 1ab08a89b17fca20e9497696417ecba580e26802
 workflow-type: tm+mt
-source-wordcount: '1059'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,8 @@ ht-degree: 0%
 # 使用Linux安裝套件{#installing-packages-with-linux}
 
 Adobe Campaign隨附&#x200B;**nlserver**&#x200B;套件，其中包含指定版本的二進位檔和組態檔。
+
+
 
 安裝指令可讓您：
 
@@ -34,6 +36,11 @@ Adobe Campaign隨附&#x200B;**nlserver**&#x200B;套件，其中包含指定版�
 您可以執行&#x200B;**ping`hostname`**&#x200B;命令，以確定伺服器可以連線到自己。
 
 ## 根據RPM套件的分佈 {#distribution-based-on-rpm--packages}
+
+>[!AVAILABILITY]
+>
+>從7.4.1版開始，Campaign不再包含RPM Linux套件的程式庫。 您必須安裝這些程式庫。
+> 
 
 若要將Adobe Campaign安裝在RPM (RHEL、CentOS)作業系統上，請執行下列步驟：
 
