@@ -8,9 +8,9 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: a2126458-2ae5-47c6-ad13-925f0e067ecf
-source-git-commit: f032ed3bdc0b402c8281bc34e6cb29f3c575aaf9
+source-git-commit: fd4a815bca23b94590012c4883cfaa9c29b6f118
 workflow-type: tm+mt
-source-wordcount: '314'
+source-wordcount: '325'
 ht-degree: 1%
 
 ---
@@ -23,8 +23,12 @@ Adobe Campaign使用名為Apache Tomcat **的**&#x200B;內嵌Web servlet來處�
 
 >[!AVAILABILITY]
 >
-> 從v7.4.1開始，Tomcat 10.1是預設版本。
 >
+>* 從Campaign v7.4.1開始，Tomcat 10.1是預設版本。
+>
+>* Adobe Campaign Classic不使用WebSocket和HTTP2通訊協定。
+>
+
 
 
 ## Apache Tomcat的預設連線埠 {#default-port-for-tomcat}
