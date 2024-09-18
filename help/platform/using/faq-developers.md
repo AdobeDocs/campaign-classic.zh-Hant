@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 20552812-5c58-4d48-9636-d5135197685d
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 517b85f5d7691acc2522bf4541f07c34c60c7fbf
 workflow-type: tm+mt
-source-wordcount: '508'
-ht-degree: 92%
+source-wordcount: '509'
+ht-degree: 90%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 92%
 
 Adobe Campaign 資料庫的概念資料模型由一組內建表格及其互動組成，並以 XML 描述了應用程式中資料的實體和邏輯結構。並且遵循 Adobe Campaign 專屬的語法，稱為綱要 (schema)。如需 Adobe Campaign 綱要的詳細資料，[請參閱本節](../../configuration/using/about-schema-edition.md)。
 
-[按一下這裡以深入瞭解 Campaign 資料模型](https://helpx.adobe.com/tw/campaign/kb/acc-datamodel.html)。
+[按一下這裡以深入瞭解Campaign資料模型](https://helpx.adobe.com/tw/campaign/kb/acc-datamodel.html)。
 
 [本文](../../configuration/using/data-model-best-practices.md)列出最佳實務。
 
@@ -48,7 +48,7 @@ Adobe Campaign 資料庫的概念資料模型由一組內建表格及其互動�
 
 Adobe Campaign 查詢編輯器是一種功能強大的工具，可探索資料和建立區段。
 
-您可以在軟體的多個層級上找到 Adobe Campaign 查詢工具：建立目標母體、劃分客戶、擷取和篩選追蹤記錄、建立篩選器等。
+您可以在軟體的多個層級上找到 Adobe Campaign 查詢工具：建立目標群體、劃分客戶、擷取和篩選追蹤記錄、建立篩選器等。
 
 您可以使用一般查詢編輯器查詢 Campaign 資料庫。可透過 **Tools > Generic query editor...** 功能表存取一般查詢編輯器。透過它，您可擷取儲存在資料庫中的資訊，將其整理、分組、排序等操作。例如，使用者可以在新聞稿的連結上，還原在給定時間內按一下連結超過 [n] 次以上的收件者。透過這個工具，您可根據您的需求收集、排序和顯示結果。此工具結合了 Adobe Campaign 的所有可行的查詢方式。例如，您可以建立和儲存限制篩選器。這表示在目標工作流程等的查詢方塊中，可以使用在一般查詢編輯器中建立的使用者篩選器。
 

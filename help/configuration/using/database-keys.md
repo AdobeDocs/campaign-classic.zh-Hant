@@ -5,10 +5,10 @@ description: 瞭解資料結構中的金鑰管理
 feature: Configuration, Instance Settings
 role: Data Engineer, Developer
 exl-id: faf63c8f-9d10-43c1-a990-91361594af9f
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 517b85f5d7691acc2522bf4541f07c34c60c7fbf
 workflow-type: tm+mt
-source-wordcount: '618'
-ht-degree: 2%
+source-wordcount: '619'
+ht-degree: 1%
 
 ---
 
@@ -187,4 +187,4 @@ ht-degree: 2%
 * [方案結構](schema-structure.md)
 * [資料庫對應](database-mapping.md)
 * [連結管理](database-links.md)
-* [促銷活動資料模型](about-data-model.md)
+* [Campaign資料模型](about-data-model.md)
