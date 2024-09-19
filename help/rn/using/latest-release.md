@@ -6,10 +6,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: d31aa28da06e65664da655b6b082563767b35f7a
+source-git-commit: 4be5bf54362240aac1b77298b08b14d3e5542f52
 workflow-type: tm+mt
-source-wordcount: '357'
-ht-degree: 100%
+source-wordcount: '385'
+ht-degree: 93%
 
 ---
 
@@ -30,7 +30,6 @@ _2024 年 6 月 18 日_
 * 在您已[將 Campaign 技術操作者移轉至 Developer Console](../../technotes/using/ims-migration.md)，並已[轉變為 IMS 以進行一般使用者驗證](../../technotes/using/migrate-users-to-ims.md)之後，您現在可以啟用使用者介面和 API 限制，移除原生驗證特有的選項和功能。 [了解更多](../../technotes/using/impact-ims-migration.md)
 
 
-
 ### 相容性更新 {#release-7-4-1-compat}
 
 [Adobe Campaign 相容性矩陣](compatibility-matrix.md)已隨此新版本的變更來更新，如下所列。
@@ -48,6 +47,9 @@ _2024 年 6 月 18 日_
    * 適用於 iOS 的新 Campaign SDK 1.0.27，與 iOS 16 和 17 相容，並提供最新 [Apple iOS 隱私權請求需求](https://developer.apple.com/news/?id=r1henawx){target="_blank"}。
    * 適用於 Android 14 的新 Campaign SDK。
 
+### 其他變更 {#release-7-4-1-other}
+
+從7.4.1版開始，Campaign不再包含適用於RPM Linux套件的XML程式庫。 身為內部部署或混合客戶，您的管理員必須安裝這些程式庫。
 
 ### 修補程式 {#release-7-4-1-patches}
 
