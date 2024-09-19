@@ -9,9 +9,9 @@ hidefromtoc: true
 hide: true
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1774'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -208,7 +208,7 @@ _2019 年 8 月 13 日_
 
 初始 19.1.4 版本編號包含以下修正：
 
-* 修正排程器活動在助理員設定期間產生不需要的錯誤訊息的問題。 正在還原 NEO-11662 更新。(NEO-17097)
+* 修正了在設定助理時，排程器活動產生無用錯誤訊息的問題。正在還原 NEO-11662 更新。(NEO-17097)
 * 修正了 NEO-12727 所導致的迴歸，其在執行兩次測試活動時，可能會導致工作流程停止運行。(NEO-16835)
 * 修正了在 API 調用中使用無效或過期的續存期間權杖時，導致回傳錯誤 HTTP 代碼的問題（為 HTTP 200 OK，而非 HTTP 403 Forbidden）。(NEO-16826)
 * 修正了 DKIM 金鑰不再內嵌在電子郵件中的問題，其導致的傳遞問題。(NEO-16804)
