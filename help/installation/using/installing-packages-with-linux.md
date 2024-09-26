@@ -8,14 +8,14 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 exl-id: f41c7510-5ad7-44f3-9485-01f54994b6cb
-source-git-commit: b4ab1fe5e98211c2b1bcdb319f10777c032831c7
+source-git-commit: 9526d466dc4613410905d9d7265c6471cd1df599
 workflow-type: tm+mt
-source-wordcount: '1078'
+source-wordcount: '1065'
 ht-degree: 0%
 
 ---
 
-# 使用Linux安裝套件{#installing-packages-with-linux}
+# 使用Linux安裝套件 {#installing-packages-with-linux}
 
 Adobe Campaign隨附&#x200B;**nlserver**&#x200B;套件，其中包含指定版本的二進位檔和組態檔。
 
@@ -60,6 +60,8 @@ Adobe Campaign隨附&#x200B;**nlserver**&#x200B;套件，其中包含指定版�
    rpm --nodeps -Uvh nlserver6-v7-XXXX-0.x86_64.rpm
    ```
 
+請注意，列出的相依性大都是強制性的，如果未安裝`nlserver`，則無法啟動（例外狀況為opendk；可以安裝其他JDK）。
+
 在所有Linux發行版本中，預設不會提供`bc`命令（執行[netreport](../../production/using/monitoring-processes.md#automatic-monitoring-via-adobe-campaign-scripts)的必要命令）。 若要檢查命令是否可用，請執行`which bc`命令。 如果沒有，您必須安裝。
 
 使用CentOS時，您必須安裝bc.x86_64套件：以&#x200B;**root**&#x200B;連線並執行下列命令：
@@ -81,32 +83,9 @@ yum install bc.x86_64
 1. 若要安裝，請以&#x200B;**root**&#x200B;連線並執行下列命令，其中&#x200B;**XXXX**&#x200B;是Adobe Campaign組建編號：
 
    ```
-   dpkg -i nlserver6-v7-XXXX-linux-2.6-amd64.deb
+   apt install ./nlserver6-v7-XXXX-linux-2.6-amd64.deb
    ```
 
-   如果遺失相依性，請執行以下命令：
-
-   ```
-   apt-get install -f
-   ```
-
-
-1. 在Debian作業系統上安裝Adobe Campaign時，請考量下列事項：
-
-* 必須先安裝OpenSSL。
-* 使用下列指令安裝libicu和libc-aresYY （其中XX是版本）：
-
-  ```
-  apt install libicuXX
-  ```
-
-  ```
-  apt install libc-aresXX
-  ```
-
-  ```
-  apt install openjdk-XX-jdk
-  ```
 
 ## 個人化引數 {#personalizing-parameters}
 
