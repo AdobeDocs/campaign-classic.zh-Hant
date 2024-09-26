@@ -6,10 +6,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 98859f6452b5f1008a19a48b9b77edd9acf49261
+source-git-commit: 3f6bbf2766a61580c4f232d3919fe955d82a7881
 workflow-type: tm+mt
-source-wordcount: '3746'
-ht-degree: 100%
+source-wordcount: '3782'
+ht-degree: 99%
 
 ---
 
@@ -21,7 +21,15 @@ ht-degree: 100%
 
 ## 2024
 
+### 2024年9月 {#sept-2024}
+
+已減少並簡化發行狀態。 [閱讀更多](rn-overview.md)
+
+已針對v7.4.1更新Linux套件安裝。[瞭解詳情](../../installation/using/installing-packages-with-linux.md)
+
 ### 2024 年 6 月 {#june-2024}
+
+更新發行說明一節，其中包含7.4.1改善功能、相容性更新和修補程式。 [閱讀更多](latest-release.md)
 
 已新增附註，以指定重新啟動工作流程時如何清除執行個體變數。 [閱讀更多](../../workflow/using/starting-a-workflow.md)
 
@@ -208,7 +216,7 @@ LINE 頻道增強功能 — [深入瞭解](../../delivery/using/line-channel.md)
 
 全新 Google BigQuery FDA 連接器 - [了解更多](../../installation/using/configure-fda-google-big-query.md)
 
-「帳單 (帳單)」技術工作流程描述現在包括最初由「活動帳單設定檔案數 (billingActiveContactCount)」執行的任務。 [深入了解](../../workflow/using/about-technical-workflows.md)
+「帳單 (帳單)」技術工作流程描述現在包括最初由「活動帳單輪廓數 (billingActiveContactCount)」執行的任務。 [深入了解](../../workflow/using/about-technical-workflows.md)
 
 ## 2021 年 5 月 {#may-2021}
 
@@ -411,7 +419,7 @@ Android 的推播通知改善 - [閱讀更多資訊](../../delivery/using/config
 * 自動建立、編輯和發佈內容
 * 在傳送傳遞前，設定收件者核准程序
 * 調用查詢中的執行個體變數
-* 將分割百分比套用在人口上
+* 將分割百分比套用在群體上
 
 已新增其他使用資訊與變數使用附註以豐富本&#x200B;**[!UICONTROL AND-join]**&#x200B;活動章節內容。[閱讀全文](../../workflow/using/and-join.md)
 
