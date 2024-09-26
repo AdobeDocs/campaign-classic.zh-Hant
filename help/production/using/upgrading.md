@@ -8,9 +8,9 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: 4aaa6256-256a-441d-80c9-430f8e427875
-source-git-commit: fee880f4b200b322c2b2a0034f17975993c862b3
+source-git-commit: 728848eab059fc669c241346a2ff1feebd79222c
 workflow-type: tm+mt
-source-wordcount: '1136'
+source-wordcount: '1171'
 ht-degree: 1%
 
 ---
@@ -117,7 +117,7 @@ ht-degree: 1%
 
 [進一步瞭解使用者端主控台可用性](../../installation/using/client-console-availability-for-windows.md)。
 
-### 取得更新的套件 {#obtain-updated-packages}
+### 安裝更新的套件 {#obtain-updated-packages}
 
 從復原Adobe Campaign的兩個更新套件開始：使用您的使用者認證連線至[軟體發佈入口網站](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)。 在[此頁面](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hant)中進一步瞭解軟體發佈。
 
@@ -128,15 +128,14 @@ ht-degree: 1%
 >從7.4.1版開始，Campaign不再包含適用於RPM Linux套件的XML程式庫。 您必須安裝這些程式庫。
 > 
 
-
-### 執行更新 {#perform-an-update}
+然後，您可以安裝所需的套件，如下所述：
 
 * 以RPM為基礎的配送(RedHat、SuSe)
 
   若要安裝，請以root身分執行：
 
   ```
-  $rpm -Uvh nlserver6-v7-XXXX.rpm
+  yum install ./nlserver6-v7-XXXX.rpm
   ```
 
   其中XXX是檔案的版本。
@@ -147,17 +146,20 @@ ht-degree: 1%
   rpm --nodeps -Uvh nlserver6-v7-XXXX-0.x86_64.rpm
   ```
 
+  請注意，大部分的相依性是強制性的，如果沒有安裝，`nlserver`將無法啟動。 唯一的例外是openjdk，您可以視需要安裝其他JDK。
+
+
 * DEB型分佈(Debian)
 
   若要安裝，請以root身分執行：
 
   ```
-  dpkg -i nlserver6-v7-XXXX-amd64_debX.deb
+  apt install ./nlserver6-v7-XXXX-amd64_debX.deb
   ```
 
 >[!NOTE]
 >
->完整安裝程式在[本節](../../installation/using/installing-campaign-standard-packages.md)中有詳細說明。 資源會自動同步化，但您必須確定沒有發生錯誤。 如需詳細資訊，請參閱[解決升級衝突](#resolving-upgrade-conflicts)。
+>完整安裝程式在[本節](../../installation/using/installing-packages-with-linux.md)中有詳細說明。 資源會自動同步化，但您必須確定沒有發生錯誤。 如需詳細資訊，請參閱[解決升級衝突](#resolving-upgrade-conflicts)。
 
 ### 重新啟動Web伺服器 {#reboot-the-web-server}
 

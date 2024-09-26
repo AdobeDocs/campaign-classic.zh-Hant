@@ -7,9 +7,9 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: e4d34f56-b065-4dce-8974-11dc2767873a
-source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
+source-git-commit: 728848eab059fc669c241346a2ff1feebd79222c
 workflow-type: tm+mt
-source-wordcount: '1558'
+source-wordcount: '1573'
 ht-degree: 1%
 
 ---
@@ -76,7 +76,7 @@ _operation （字串）、advanced （布林值）、applicatedIf （字串）�
 * **dbEnum （字串）**：接收「已關閉」列舉的內部名稱。 列舉值必須在`<srcschema>`中定義。
 * **defOnDuplicate （布林值）**：如果此屬性已啟用，則在複製記錄時，預設值(在@default中定義)會自動重新套用至記錄。
 * **預設（字串）**：可讓您定義預設欄位的值（呼叫函式，預設值）。 此屬性會接收XTK運算式。
-* **desc （字串）**：可讓您插入屬性的說明。 此說明會顯示在介面的狀態列中。
+* **desc （字串）**：可讓您插入屬性的說明。 此說明用於瞭解什麼是元素及其用途。 您可以將其顯示在表單中。
 * **編輯（字串）**：此屬性會指定連結至結構描述的表單中所使用的輸入型別。
 * **列舉（字串）**：接收連結至欄位的列舉名稱。 列舉可以插入相同結構描述或遠端結構描述中。
 * **expr （字串）**：定義欄位預先計算運算式。 此屬性會接收Xpath或XTK運算式。
@@ -90,7 +90,7 @@ _operation （字串）、advanced （布林值）、applicatedIf （字串）�
    * 專用： `Ft_[name_of_the_schema_containing_the_characteristic]_[name_of_the_characteristic]`
    * 已共用： `Ft_[type_of_key_of_the_schema_containing_the_characteristic]_[type_of_the_characteristic]`
 
-  有兩種特性欄位：簡單oà¹單一值授權於特性的欄位，以及oà¹多選欄位，特性連結至可能包含數個值的收集要素。
+  有兩種特性欄位：簡單oà<sup>1</sup>欄位（單一值授權於特性）和oà<sup>1</sup>多選欄位（特性連結至可能包含數個值的集合元素）。
 
   在結構描述中定義特性時，此結構描述必須具有根據單一欄位的主要金鑰（複合金鑰未獲授權）。
 

@@ -6,10 +6,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: b23632d0718d62d61e94e636937b93aa39bbe43f
+source-git-commit: 728848eab059fc669c241346a2ff1feebd79222c
 workflow-type: tm+mt
-source-wordcount: '840'
-ht-degree: 100%
+source-wordcount: '843'
+ht-degree: 93%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 >[!CAUTION]
 >
->此矩陣會定期更新、新增新支援的系統與工具，並會移除已棄用的項目。
+>此矩陣會定期更新，以新增及移除已棄用的支援新系統和工具。
 
 ## 作業系統 {#OperatingSystems}
 
@@ -53,7 +53,7 @@ ht-degree: 100%
 </td>
 </tr>
 <tr>
-<td>RHEL</td>
+<td>Red Hat Enterprise Linux (RHEL)</td>
 <td>
 <p>9.x</p>
 <p>8.x</p>
@@ -83,7 +83,7 @@ ht-degree: 100%
 
 >[!IMPORTANT]
 >
->如果您使用 RHEL，您必須願意停用 [SELinux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#selinux)，或讓架構設計人員編寫自訂 SELinux 規則，以檢查啟用的 SELinux 是否不會造成 Campaign 作業的問題。
+>使用RHEL時，您必須願意停用[SELinux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#selinux)，或讓架構設計人員編寫自訂SELinux規則，以檢查啟用的SELinux是否不會造成Campaign作業的問題。
 
 ## 網頁伺服器 {#WebServers}
 
@@ -91,10 +91,12 @@ ht-degree: 100%
 
 <table>
 <tbody>
+<td><strong>網頁伺服器</strong></td>
+<td><strong>Web伺服器版本</strong></td>
 <tr>
 <td>Microsoft IIS</td>
 <td>
-<p>10.0 於 Windows Server 上</p>
+<p>10.0</p>
 </td>
 </tr>
 <tr>

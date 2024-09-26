@@ -4,9 +4,9 @@ title: 結構元素和屬性 — 元素元素
 description: 元素元素
 feature: Schema Extension
 exl-id: 60f15ae5-b2bd-48f9-aa45-8f795a3071aa
-source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
+source-git-commit: 728848eab059fc669c241346a2ff1feebd79222c
 workflow-type: tm+mt
-source-wordcount: '2016'
+source-wordcount: '2029'
 ht-degree: 0%
 
 ---
@@ -83,7 +83,7 @@ Adobe Campaign中有四種型別的`<element>`元素：
 * **dbEnum （字串）**：接收「已關閉」列舉的內部名稱。 列舉值必須在`<srcschema>`中定義。
 * **defOnDuplicate （布林值）**：如果此屬性已啟用，則在複製記錄時，預設值(在@default中定義)會自動重新套用至記錄。
 * **預設（字串）**：可讓您定義元素行為（呼叫函式，預設值）。 此屬性會接收XTK運算式。
-* **desc （字串）**：可讓您插入專案的說明。 此說明會顯示在介面的狀態列中。
+* **desc （字串）**：可讓您插入專案的說明。 此說明用於瞭解什麼是元素及其用途。 您可以將其顯示在表單中。
 * **displayAsField （布林值）**：如果啟動此屬性，「連結」型別`<element>`將顯示為結構描述樹狀檢視中的欄位（「結構」標籤）。 如此一來，就可將連結顯示為本機欄位，並可在查詢期間變更其行為。 在查詢的SELECT中找到元素時，將會使用連結目標的值。 在查詢的WHERE中找到元素時，將會使用連結的基礎索引鍵。
 * **編輯（字串）**：此屬性會指定連結至結構描述的表單中將使用的輸入型別。
 * **列舉（字串）**：接收連結至欄位的列舉名稱。 列舉可以插入相同結構描述或遠端結構描述中。
