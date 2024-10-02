@@ -8,10 +8,10 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: 4aaa6256-256a-441d-80c9-430f8e427875
-source-git-commit: 728848eab059fc669c241346a2ff1feebd79222c
+source-git-commit: 349c3dfd936527e50d7d3e03aa3408b395502da0
 workflow-type: tm+mt
-source-wordcount: '1171'
-ht-degree: 1%
+source-wordcount: '1247'
+ht-degree: 2%
 
 ---
 
@@ -125,7 +125,7 @@ ht-degree: 1%
 
 >[!AVAILABILITY]
 >
->從7.4.1版開始，Campaign不再包含適用於RPM Linux套件的XML程式庫。 您必須安裝這些程式庫。
+>從 v7.4.1 版開始，Campaign 不再包含 RPM Linux 套件的 XML 資料庫。您必須安裝這些程式庫。
 > 
 
 然後，您可以安裝所需的套件，如下所述：
@@ -148,6 +148,29 @@ ht-degree: 1%
 
   請注意，大部分的相依性是強制性的，如果沒有安裝，`nlserver`將無法啟動。 唯一的例外是openjdk，您可以視需要安裝其他JDK。
 
+  如果未安裝`epel-release`套件，請安裝它。 若要執行此動作，請以root的身分輸入下列命令：
+
+  ```
+  yum install epel-release
+  ```
+
+  若要安裝Campaign套件，請以root身分執行：
+
+  ```
+  yum update ./nlserver6-v7-XXXX.rpm
+  ```
+
+  在確認更新之前，請確定輸出如下所示：
+
+  ```
+  ==================================================================================================== 
+  Package                         Architecture  Version                    Repository           Size 
+  ==================================================================================================== 
+  Upgrading: 
+  nlserver6-v7                    x86_64        XXXX.0.0-1                 @commandline         63 M
+  ```
+
+  如果您讀取`Removing:`而非`Upgrading:`，請取消命令。 可能有一些錯誤（如上所列）說明了移除的原因。 在這種情況下，請更新/安裝列出的遺失相依性以更正這些錯誤，然後嘗試再次執行命令。
 
 * DEB型分佈(Debian)
 
@@ -160,6 +183,7 @@ ht-degree: 1%
 >[!NOTE]
 >
 >完整安裝程式在[本節](../../installation/using/installing-packages-with-linux.md)中有詳細說明。 資源會自動同步化，但您必須確定沒有發生錯誤。 如需詳細資訊，請參閱[解決升級衝突](#resolving-upgrade-conflicts)。
+>
 
 ### 重新啟動Web伺服器 {#reboot-the-web-server}
 
@@ -195,12 +219,12 @@ ht-degree: 1%
 * 在命令列介面中，錯誤會以三個V形&#x200B;**>>**&#x200B;具體化，並且同步會自動停止。 警告以雙V形&#x200B;**>**&#x200B;具體化，同步處理完成後必須加以解析。 升級後結束時，命令提示字元中會顯示摘要。 如下所示：
 
   ```
-  2013-04-09 07:48:39.749Z 00002E7A 1 info log =========Summary of the update==========
-  2013-04-09 07:48:39.749Z 00002E7A 1 info log <instance name> instance, 6 warning(s) and 0 error(s) during the update.
-  2013-04-09 07:48:39.749Z 00002E7A 1 warning log The document with identifier 'mobileAppDeliveryFeedback' and type 'xtk:report' is in conflict with the new version.
-  2013-04-09 07:48:39.749Z 00002E7A 1 warning log The document with identifier 'opensByUserAgent' and type 'xtk:report' is in conflict with the new version.
-  2013-04-09 07:48:39.750Z 00002E7A 1 warning log The document with identifier 'deliveryValidation' and type 'nms:webApp' is in conflict with the new version.
-  2013-04-09 07:48:39.750Z 00002E7A 1 warning log Document of identifier 'nms:includeView' and type 'xtk:srcSchema' updated in the database and found in the file system. You will have to merge the two versions manually.
+  AAAA-MM-DD HH:MM:SS.749Z 00002E7A 1 info log =========Summary of the update==========
+  AAAA-MM-DD HH:MM:SS.749Z 00002E7A 1 info log <instance name> instance, 6 warning(s) and 0 error(s) during the update.
+  AAAA-MM-DD HH:MM:SS.749Z 00002E7A 1 warning log The document with identifier 'mobileAppDeliveryFeedback' and type 'xtk:report' is in conflict with the new version.
+  AAAA-MM-DD HH:MM:SS.749Z 00002E7A 1 warning log The document with identifier 'opensByUserAgent' and type 'xtk:report' is in conflict with the new version.
+  AAAA-MM-DD HH:MM:SS.750Z 00002E7A 1 warning log The document with identifier 'deliveryValidation' and type 'nms:webApp' is in conflict with the new version.
+  AAAA-MM-DD HH:MM:SS.750Z 00002E7A 1 warning log Document of identifier 'nms:includeView' and type 'xtk:srcSchema' updated in the database and found in the file system. You will have to merge the two versions manually.
   ```
 
   如果警告與資源衝突有關，則需要使用者注意才能解決。
@@ -260,7 +284,7 @@ ht-degree: 1%
 在安裝Adobe Campaign應用程式伺服器(**nlserver web**)的電腦上，擷取&#x200B;**setup-client-6.XXXX.exe**&#x200B;套件並加以複製，儲存為&#x200B;**/usr/local/neolane/nl6/datakit/nl/eng/jsp**：
 
 ```
- cp setup-client-6.XXXX.exe /usr/local/neolane/nl6/datakit/nl/eng/jsp
+cp setup-client-6.XXXX.exe /usr/local/neolane/nl6/datakit/nl/eng/jsp
 ```
 
 下次連線使用者端主控台時，會出現一個視窗，通知使用者是否有更新可用，並提供他們下載和安裝更新的可能性。
