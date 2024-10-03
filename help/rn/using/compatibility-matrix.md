@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: 728848eab059fc669c241346a2ff1feebd79222c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '843'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 93%
 
 >[!CAUTION]
 >
->此矩陣會定期更新，以新增及移除已棄用的支援新系統和工具。
+>此矩陣會定期更新、新增新支援的系統與工具，並會移除已棄用的項目。
 
 ## 作業系統 {#OperatingSystems}
 
@@ -83,7 +83,7 @@ ht-degree: 93%
 
 >[!IMPORTANT]
 >
->使用RHEL時，您必須願意停用[SELinux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#selinux)，或讓架構設計人員編寫自訂SELinux規則，以檢查啟用的SELinux是否不會造成Campaign作業的問題。
+>使用 RHEL，您必須願意停用 [SELinux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#selinux)，或讓架構設計人員編寫自訂 SELinux 規則，以檢查啟用的 SELinux 是否不會導致 Campaign 作業出現問題。
 
 ## 網頁伺服器 {#WebServers}
 
@@ -92,7 +92,7 @@ ht-degree: 93%
 <table>
 <tbody>
 <td><strong>網頁伺服器</strong></td>
-<td><strong>Web伺服器版本</strong></td>
+<td><strong>網頁伺服器版本</strong></td>
 <tr>
 <td>Microsoft IIS</td>
 <td>

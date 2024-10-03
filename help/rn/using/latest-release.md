@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: 9526d466dc4613410905d9d7265c6471cd1df599
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '387'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -49,7 +49,7 @@ _2024 年 6 月 18 日_
 
 ### 其他變更 {#release-7-4-1-other}
 
-從 v7.4.1 版開始，Campaign 不再包含 RPM Linux 套件的 XML 資料庫。身為內部部署或混合客戶，您的管理員必須安裝這些程式庫。 [了解更多](../../installation/using/installing-packages-with-linux.md)
+從 v7.4.1 版開始，Campaign 不再包含 RPM Linux 套件的 XML 資料庫。身為內部部署或混合客戶，您的管理員必須安裝這些資料庫。[了解更多](../../installation/using/installing-packages-with-linux.md)
 
 ### 修補程式 {#release-7-4-1-patches}
 

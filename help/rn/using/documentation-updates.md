@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: 3f6bbf2766a61580c4f232d3919fe955d82a7881
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3782'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -21,15 +21,15 @@ ht-degree: 99%
 
 ## 2024
 
-### 2024年9月 {#sept-2024}
+### 2024 年 9 月 {#sept-2024}
 
-已減少並簡化發行狀態。 [閱讀更多](rn-overview.md)
+已減少並簡化版本狀態。[閱讀更多](rn-overview.md)
 
-已針對v7.4.1更新Linux套件安裝。[瞭解詳情](../../installation/using/installing-packages-with-linux.md)
+Linux 套件安裝已更新為 v7.4.1。[閱讀更多](../../installation/using/installing-packages-with-linux.md)
 
 ### 2024 年 6 月 {#june-2024}
 
-更新發行說明一節，其中包含7.4.1改善功能、相容性更新和修補程式。 [閱讀更多](latest-release.md)
+更新發行說明一節，提供 7.4.1 改善、相容性更新以及修補程式。[閱讀更多](latest-release.md)
 
 已新增附註，以指定重新啟動工作流程時如何清除執行個體變數。 [閱讀更多](../../workflow/using/starting-a-workflow.md)
 
