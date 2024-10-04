@@ -8,9 +8,9 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: 4aaa6256-256a-441d-80c9-430f8e427875
-source-git-commit: cc614ed608f1e8229c0ef1ccf35dbac6cb9dddd3
+source-git-commit: e5468f2aa5dc18c2b24c3e80e416e423ad0e13c9
 workflow-type: tm+mt
-source-wordcount: '1247'
+source-wordcount: '1233'
 ht-degree: 2%
 
 ---
@@ -132,22 +132,6 @@ ht-degree: 2%
 
 * 以RPM為基礎的配送(RedHat、SuSe)
 
-  若要安裝，請以root身分執行：
-
-  ```
-  yum install ./nlserver6-v7-XXXX.rpm
-  ```
-
-  其中XXX是檔案的版本。
-
-  rpm檔案與您可以在CentOS/Red Hat分配上找到的套裝程式相依性。 如果您不想使用其中的部分相依性，則可能必須使用rpm的「nodeps」選項：
-
-  ```
-  rpm --nodeps -Uvh nlserver6-v7-XXXX-0.x86_64.rpm
-  ```
-
-  請注意，大部分的相依性是強制性的，如果沒有安裝，`nlserver`將無法啟動。 唯一的例外是openjdk，您可以視需要安裝其他JDK。
-
   如果未安裝`epel-release`套件，請安裝它。 若要執行此動作，請以root的身分輸入下列命令：
 
   ```
@@ -173,6 +157,14 @@ ht-degree: 2%
   >[!IMPORTANT]
   >
   >如果您讀取`Removing:`而非`Upgrading:`，請取消命令。 可能有一些錯誤（如上所列）說明了移除的原因。 在這種情況下，請更新/安裝列出的遺失相依性以更正這些錯誤，然後嘗試再次執行命令。
+
+  rpm檔案與您可以在CentOS/Red Hat分配上找到的套裝程式相依性。 如果您不想使用其中的部分相依性，則可能必須使用rpm的「nodeps」選項：
+
+  ```
+  rpm --nodeps -Uvh nlserver6-v7-XXXX-0.x86_64.rpm
+  ```
+
+  請注意，大部分的相依性是強制性的，如果沒有安裝，`nlserver`將無法啟動。 唯一的例外是openjdk，您可以視需要安裝其他JDK。
 
 * DEB型分佈(Debian)
 
