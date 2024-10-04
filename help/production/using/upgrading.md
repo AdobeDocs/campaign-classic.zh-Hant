@@ -8,9 +8,9 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: 4aaa6256-256a-441d-80c9-430f8e427875
-source-git-commit: e5468f2aa5dc18c2b24c3e80e416e423ad0e13c9
+source-git-commit: 0da7fb912a909af222d796652efba4b30e39dc1c
 workflow-type: tm+mt
-source-wordcount: '1233'
+source-wordcount: '1220'
 ht-degree: 2%
 
 ---
@@ -194,7 +194,7 @@ ht-degree: 2%
 >* 您的指令碼可能稱為&#x200B;**httpd**，而非&#x200B;**apache**。
 >* 您必須執行此命令，直到獲得下列回覆為止：
 >
->   Apache必須執行此作業才能套用新程式庫。
+>   `This operation is required in order for Apache to apply the new library.`
 
 然後重新啟動Apache：
 
