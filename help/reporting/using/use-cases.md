@@ -1,20 +1,18 @@
 ---
 product: campaign
-title: 使用案例
-description: 報告使用案例
+title: Analysis報告使用案例
+description: Analysis報告使用案例
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Reporting, Monitoring
 exl-id: e326e32e-7bb0-46ff-9ba5-94ccd1169af2
-source-git-commit: f90df5a5e5b3a2317d86ff2919560ded38f44f44
+source-git-commit: 5e062f9dbdf6c148e442ac10dbb12cf72ba0179b
 workflow-type: tm+mt
-source-wordcount: '1326'
+source-wordcount: '1331'
 ht-degree: 0%
 
 ---
 
-# 使用案例{#use-cases}
-
-
+# Analysis報告使用案例 {#use-cases}
 
 ## 分析人口 {#analyzing-a-population}
 

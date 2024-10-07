@@ -6,10 +6,10 @@ title: Campaign Classic v7 指南
 user-guide-description: Adobe Campaign Classic v7 產品文件。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: de9ff0b50d819038c97e8515ddb7d6cfeb4547a1
-workflow-type: ht
-source-wordcount: '2552'
-ht-degree: 100%
+source-git-commit: 5e062f9dbdf6c148e442ac10dbb12cf72ba0179b
+workflow-type: tm+mt
+source-wordcount: '2560'
+ht-degree: 99%
 
 ---
 
@@ -60,13 +60,13 @@ ht-degree: 100%
          + [建立及管理隱私權請求](platform/using/privacy-requests-ui.md)
          + [自動隱私權請求流程](platform/using/privacy-requests-api.md)
          + [選擇退出個人資訊銷售](platform/using/privacy-requests-ccpa.md)
-   + 設定檔管理{#profile-management}
-      + [關於設定檔](platform/using/about-profiles.md)
-      + [編輯設定檔](platform/using/editing-a-profile.md)
-      + [新增設定檔](platform/using/adding-profiles.md)
-      + [管理設定檔](platform/using/managing-profiles.md)
+   + 輪廓管理{#profile-management}
+      + [關於輪廓](platform/using/about-profiles.md)
+      + [編輯輪廓](platform/using/editing-a-profile.md)
+      + [新增輪廓](platform/using/adding-profiles.md)
+      + [管理輪廓](platform/using/managing-profiles.md)
       + [更新資料](platform/using/updating-data.md)
-      + [匯入及匯出設定檔](platform/using/exporting-and-importing-profiles.md)
+      + [匯入及匯出輪廓](platform/using/exporting-and-importing-profiles.md)
       + [建立及管理清單](platform/using/creating-and-managing-lists.md)
    + 匯入及匯出資料 {#importing-and-exporting-data}
       + [開始使用匯入及匯出資料](platform/using/get-started-data-import-export.md)
@@ -293,10 +293,10 @@ ht-degree: 100%
       + [指標計算](reporting/using/indicator-calculation.md)
       + [人員與收件者](reporting/using/person-people-recipients.md)
    + 分析群體 {#analyzing-populations}
-      + [關於描述性分析](reporting/using/about-descriptive-analysis.md)
-      + [使用描述性分析助理](reporting/using/using-the-descriptive-analysis-wizard.md)
-      + [報吿設定](reporting/using/processing-a-report.md)
-      + [使用案例](reporting/using/use-cases.md)
+      + [什麼是描述性分析](reporting/using/about-descriptive-analysis.md)
+      + [建立您的第一個描述性分析報表](reporting/using/using-the-descriptive-analysis-wizard.md)
+      + [管理和設定分析報表](reporting/using/processing-a-report.md)
+      + [Analysis報告使用案例](reporting/using/use-cases.md)
    + 建立新報吿 {#creating-new-reports}
       + [設計報吿的關鍵步驟](reporting/using/about-reports-creation-in-campaign.md)
       + [建立新報吿](reporting/using/creating-a-new-report.md)
@@ -386,7 +386,7 @@ ht-degree: 100%
       + [插入動態影像](integrations/using/inserting-a-dynamic-image.md)
    + ACS 連結器 {#acs-connector}
       + [開始使用 [!DNL ACS Connector]](integrations/using/acs-connector-principles-and-data-cycle.md)
-      + [同步設定檔](integrations/using/synchronizing-profiles.md)
+      + [同步輪廓](integrations/using/synchronizing-profiles.md)
       + [同步客群](integrations/using/synchronizing-audiences.md)
       + [同步化網站應用程式](integrations/using/synchronizing-web-applications.md)
       + [疑難排解 [!DNL ACS Connector]](integrations/using/troubleshooting-the-acs-connector.md)
@@ -519,7 +519,7 @@ ht-degree: 100%
       + [基本原則](interaction/using/fundamental-principles.md)
    + 管理環境 {#managing-environments}
       + [環境概覽](interaction/using/environments-overview.md)
-      + [運算子設定檔](interaction/using/operator-profiles.md)
+      + [操作者設定檔](interaction/using/operator-profiles.md)
       + [即時/設計環境](interaction/using/live-design-environments.md)
       + [建立優惠空間](interaction/using/creating-offer-spaces.md)
       + [建立預定義的篩選器](interaction/using/creating-predefined-filters.md)
@@ -798,7 +798,7 @@ ht-degree: 100%
       + [設定介面](configuration/using/configuring-the-interface.md)
       + [種子地址](configuration/using/seed-addresses.md)
       + [建立篩選器](configuration/using/creating-filters.md)
-      + [使用工作流程建立設定檔清單](configuration/using/creating-a-profile-list-with-a-workflow.md)
+      + [使用工作流程建立輪廓清單](configuration/using/creating-a-profile-list-with-a-workflow.md)
       + [管理工作流程](configuration/using/managing-workflows.md)
       + [管理報告](configuration/using/managing-reports.md)
    + 設定網路追蹤 {#setting-up-web-tracking}

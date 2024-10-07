@@ -1,20 +1,18 @@
 ---
 product: campaign
-title: 使用描述性分析助理
-description: 使用描述性分析助理
+title: 建立您的第一個描述性分析報表
+description: 瞭解如何使用助理建立您的第一個描述性分析報告
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Reporting, Monitoring
 exl-id: 848d67c7-d1dc-4eba-bcb8-672e76d8ce87
-source-git-commit: f90df5a5e5b3a2317d86ff2919560ded38f44f44
+source-git-commit: 5e062f9dbdf6c148e442ac10dbb12cf72ba0179b
 workflow-type: tm+mt
-source-wordcount: '1570'
+source-wordcount: '1580'
 ht-degree: 0%
 
 ---
 
-# 使用描述性分析助理{#using-the-descriptive-analysis-wizard}
-
-
+# 建立您的第一個描述性分析報表 {#using-the-descriptive-analysis-wizard}
 
 若要建立描述性分析報告，請使用專用助理。 設定取決於要分析的資料以及所需的呈現。
 

@@ -1,20 +1,18 @@
 ---
 product: campaign
-title: 開始使用描述性分析
-description: 開始使用描述性分析
+title: 什麼是描述性分析
+description: 使用描述性分析報告分析母體
 feature: Reporting, Monitoring
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 exl-id: 19920058-e8e8-4e17-9cc3-24ddf9f96d04
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 5e062f9dbdf6c148e442ac10dbb12cf72ba0179b
 workflow-type: tm+mt
-source-wordcount: '210'
+source-wordcount: '209'
 ht-degree: 0%
 
 ---
 
-# 開始使用描述性分析{#about-descriptive-analysis}
-
-
+# 什麼是描述性分析 {#about-descriptive-analysis}
 
 為了針對資料庫中的資料產生統計資料，請使用專用助理員建立描述性分析報告，並根據您的需求調整其內容和簡報。
 
