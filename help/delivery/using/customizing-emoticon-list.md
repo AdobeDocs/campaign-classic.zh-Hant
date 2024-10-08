@@ -6,9 +6,9 @@ badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v
 feature: Email, Push
 role: User, Data Engineer
 exl-id: b8642df3-1960-4f2c-8273-c3988a3e85f0
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 287d1bf60b39e9e2b389701097995dbea962dec9
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '448'
 ht-degree: 3%
 
 ---
@@ -17,7 +17,8 @@ ht-degree: 3%
 
 在快顯視窗中顯示的表情符號清單由列舉來排程，可讓您在清單中顯示值，以限制使用者在指定欄位中的選擇。
 表情符號清單順序可以自訂，您也可以將其他表情符號新增到清單中。
-如需詳細資訊，請參閱此[頁面](defining-the-email-content.md#inserting-emoticons)的電子郵件和推播功能可使用表情符號。
+
+請注意，表情符號僅可用於電子郵件和推播。 如需詳細資訊，請參閱此[頁面](defining-the-email-content.md#inserting-emoticons)。
 
 ## 新增表情符號 {#add-new-emoticon}
 
