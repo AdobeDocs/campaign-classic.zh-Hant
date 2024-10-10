@@ -7,9 +7,9 @@ user-guide-description: Adobe Campaign Classic v7 產品文件。
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: 5e062f9dbdf6c148e442ac10dbb12cf72ba0179b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2560'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -294,9 +294,9 @@ ht-degree: 99%
       + [人員與收件者](reporting/using/person-people-recipients.md)
    + 分析群體 {#analyzing-populations}
       + [什麼是描述性分析](reporting/using/about-descriptive-analysis.md)
-      + [建立您的第一個描述性分析報表](reporting/using/using-the-descriptive-analysis-wizard.md)
-      + [管理和設定分析報表](reporting/using/processing-a-report.md)
-      + [Analysis報告使用案例](reporting/using/use-cases.md)
+      + [建立您第一個描述性分析報告](reporting/using/using-the-descriptive-analysis-wizard.md)
+      + [管理並設定您的分析報告](reporting/using/processing-a-report.md)
+      + [分析報告使用案例](reporting/using/use-cases.md)
    + 建立新報吿 {#creating-new-reports}
       + [設計報吿的關鍵步驟](reporting/using/about-reports-creation-in-campaign.md)
       + [建立新報吿](reporting/using/creating-a-new-report.md)
