@@ -6,9 +6,9 @@ badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v
 feature: Email Design, Personalization
 role: User
 exl-id: 5bf727d2-83b1-4a99-be25-041eee8d234c
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: d34f75fadb02b4c03acc0c2d7be52df65320ec2d
 workflow-type: tm+mt
-source-wordcount: '1293'
+source-wordcount: '1287'
 ht-degree: 4%
 
 ---
@@ -123,7 +123,7 @@ ht-degree: 4%
 
 * 使用預覽模式和傳送校樣，以測試儘可能多的裝置上的轉譯
 
-* Adobe Campaign Classic數位內容編輯器(DCE)模組包含行動裝置的一些回應式設計格式化範本，可透過&#x200B;**[!UICONTROL Resources]** > **[!UICONTROL Templates]** > **[!UICONTROL Content templates]**&#x200B;使用。 在本文](https://theblog.adobe.com/responsive-email-design-101/)中瞭解更多[
+* Adobe Campaign Classic數位內容編輯器(DCE)模組包含行動裝置的一些回應式設計格式化範本，可透過&#x200B;**[!UICONTROL Resources]** > **[!UICONTROL Templates]** > **[!UICONTROL Content templates]**&#x200B;使用。
 
 ## 管理影像 {#manage-images}
 
