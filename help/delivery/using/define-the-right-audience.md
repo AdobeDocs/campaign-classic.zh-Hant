@@ -8,7 +8,7 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: c0533148-b027-4158-9b95-8d2df769e963
-source-git-commit: aa78a51ebea49f98ef7edad7e87a99a680f02b69
+source-git-commit: f469689f9e8a4d805fb95a1ae120ccd35aba3731
 workflow-type: tm+mt
 source-wordcount: '496'
 ht-degree: 4%
@@ -33,7 +33,7 @@ ht-degree: 4%
 
 例如，您可以傳送給已透過社交網路收集設定檔的訪客，或訂閱資訊服務的訪客。
 
-這些對應會顯示在此區段](selecting-a-target-mapping.md)中的[。
+這些對應會顯示在此區段](steps-defining-the-target-population.md#select-a-target-mapping)中的[。
 
 您也可以建立並使用自訂的目標對應。 如需詳細資訊，請參閱[本章節](../../configuration/using/target-mapping.md)。
 

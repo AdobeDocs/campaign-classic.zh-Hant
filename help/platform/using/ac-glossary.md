@@ -6,7 +6,7 @@ feature: Overview
 role: User, Data Architect
 level: Beginner
 exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
-source-git-commit: de9ff0b50d819038c97e8515ddb7d6cfeb4547a1
+source-git-commit: f469689f9e8a4d805fb95a1ae120ccd35aba3731
 workflow-type: tm+mt
 source-wordcount: '5959'
 ht-degree: 2%
@@ -188,7 +188,7 @@ Campaign資料模型是一組結構描述，用於定義資料型別及其關係
 
 *Context: Transactional Messaging*
 
-Dedicated execution server(s) to leverage Transactional Messaging. A server can typically process up to 50,000 Engine Calls per hour. The “Per-Dedicated Server” designation does not necessarily have a 1:1 correlation with a physical server as Adobe may utilize virtualization technologies to achieve the equivalent effect.
+Dedicated execution server(s) to leverage Transactional Messaging. A server can typically process up to 50,000 Engine Calls per hour. The "Per-Dedicated Server" designation does not necessarily have a 1:1 correlation with a physical server as Adobe may utilize virtualization technologies to achieve the equivalent effect.
 
 Learn more about [Transactional Messaging](../../message-center/using/about-transactional-messaging.md).
 +++
@@ -240,7 +240,7 @@ Learn more about [Deliverability](../../delivery/using/about-deliverability.md).
 
 *內容：直接郵件*
 
-傳遞大網是一組結構化的元素（檔案、商店、促銷優惠券等） 由公司針對特定行銷活動所建立。 它用於直接郵件傳遞的情境下。
+傳遞大網是由公司針對特定行銷活動建立的結構化元素集（檔案、商店、促銷優惠券等）。 它用於直接郵件傳遞的情境下。
 
 深入瞭解[直接郵件](../../delivery/using/about-direct-mail-channel.md)。
 +++
@@ -263,7 +263,7 @@ Learn more about [Deliverability](../../delivery/using/about-deliverability.md).
 
 *內容：分散式行銷*
 
-分散式行銷附加元件為Campaign操作員提供合作工作區，用於在中央實體（總部、行銷部門等）之間實施行銷活動 本地實體 (銷售地點、地區代理等)。 此合作基於共用工作區，稱為&#x200B;**行銷活動套件清單**，其中集中建立的行銷活動範本和執行個體提供給本機實體。
+分散式行銷附加元件為Campaign操作員提供合作工作區，用於在中央實體（總部、行銷部門等）和地方實體（銷售點、區域機構等）之間實施行銷活動。 此合作基於共用工作區，稱為&#x200B;**行銷活動套件清單**，其中集中建立的行銷活動範本和執行個體提供給本機實體。
 
 深入瞭解[分散式行銷](../../distributed/using/about-distributed-marketing.md)
 +++
@@ -460,7 +460,7 @@ Campaign熱度圖是顯示24小時期間工作流程執行資訊的表格。 它
 ----NOT USEFUL HERE?----
 +++**Image serving**
 
-The functionality that supplies the images embedded in emails to the delivery’s recipients. The insertion of the images based on an emails system’s “download images” functionality is what generates an “open” entry in Campaign’s tracking logs.
+The functionality that supplies the images embedded in emails to the delivery's recipients. The insertion of the images based on an emails system's "download images" functionality is what generates an "open" entry in Campaign's tracking logs.
 
 Learn more about [Image serving](../../delivery/using/defining-the-email-content.md#adding-images).
 +++
@@ -676,7 +676,7 @@ Learn more about [Navigation Bar](../../platform/using/adobe-campaign-workspace.
 
 *內容：行銷活動互動*
 
-優惠方案模擬可讓操作員測試已定義範圍（傳送日期、目標區段、優惠方案數量、主題等）的優惠方案分佈 實際傳送優惠方案之前。 它可用來調整優惠方案優先順序和適用性規則，以將優惠方案效益最大化。
+優惠方案模擬可讓營運商在實際傳送優惠方案之前，測試已定義範圍（傳送日期、目標區段、優惠方案數量、主題等）的優惠方案分佈。 它可用來調整優惠方案優先順序和適用性規則，以將優惠方案效益最大化。
 
 深入瞭解[優惠方案模擬](../../interaction/using/about-offers-simulation.md)。
 +++
@@ -811,7 +811,7 @@ Learn more about [Predictive Engagement Scoring](../../platform/using/creating-f
 深入瞭解[主索引鍵](../../configuration/using/schema/key.md)。
 +++
 
-+++**個人資料**
++++**輪廓**
 
 設定檔是代表最終客戶、潛在客戶或潛在客戶的資訊記錄。 每個設定檔都對應至nmsRecipient表格或外部表格中的記錄，包含Cookie ID、客戶ID、行動識別碼或與特定頻道相關的其他資訊。
 
@@ -845,7 +845,7 @@ Adobe Campaign中的「公用資源」資料夾內含由應用程式伺服器託
 
 +++**收件者**
 
-在Adobe Campaign中，收件者是用於傳送內容（電子郵件、簡訊等）的預設設定檔 傳送給您的客戶。 儲存在資料庫中的收件者資料可讓您篩選目標並新增個人化資料。 這通常是個人、連絡人、人口統計和交易資訊，但可能是任何型別的支援行銷和分析的資訊。
+在Adobe Campaign中，收件者是用於傳送傳遞（電子郵件、簡訊等）給客戶的預設設定檔。 儲存在資料庫中的收件者資料可讓您篩選目標並新增個人化資料。 這通常是個人、連絡人、人口統計和交易資訊，但可能是任何型別的支援行銷和分析的資訊。
 
 深入瞭解[收件者](../../configuration/using/about-data-model.md)。
 +++
@@ -939,7 +939,7 @@ Adobe Campaign可讓您建立和管理資訊服務（例如電子報或產品更
 
 目標對應是傳遞管道與特定資料型別的對應。 目標對應定義不同傳遞通道如何連結至結構描述的資料欄位。 它會定義Campaign使用特定欄位或運算式傳送至該資料型別的方式。
 
-深入瞭解[目標對應](../../delivery/using/selecting-a-target-mapping.md)。
+深入瞭解[目標對應](../../delivery/using/steps-defining-the-target-population.md#select-a-target-mapping)。
 +++
 
 +++**目標定位活動**
@@ -984,7 +984,7 @@ Learn more about [Tasks](../../workflow/using/about-workflows.md).
 -----ACS -> SEEDS IN ACC-----
 +++**Test profiles**
 
-Allows targeting of additional recipients who do not match the defined targeting criteria. They are added to a message’s audience to detect any fraudulent use of your recipient database or to ensure delivery. Seen as the Seed type in the Campaign interface.
+Allows targeting of additional recipients who do not match the defined targeting criteria. They are added to a message's audience to detect any fraudulent use of your recipient database or to ensure delivery. Seen as the Seed type in the Campaign interface.
 
 Learn more about [Test profiles](../../workflow/using/about-workflows.md).
 +++

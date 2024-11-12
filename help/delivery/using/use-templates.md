@@ -7,7 +7,7 @@ feature: Delivery Templates
 hide: true
 hidefromtoc: true
 exl-id: a5da3f29-5eab-428c-b7c3-d9e4243fe628
-source-git-commit: aa78a51ebea49f98ef7edad7e87a99a680f02b69
+source-git-commit: f469689f9e8a4d805fb95a1ae120ccd35aba3731
 workflow-type: tm+mt
 source-wordcount: '590'
 ht-degree: 1%
@@ -20,11 +20,11 @@ ht-degree: 1%
 
 傳遞範本提供最常見活動型別的現成案例，有助於提高效率。 透過範本，行銷人員可以在較短的時間內以最小的自訂部署新行銷活動。
 
-在[本節](creating-a-delivery-template.md)中進一步瞭解傳遞範本。
+在[本節](about-templates.md)中進一步瞭解傳遞範本。
 
 ## 開始使用傳遞範本 {#gs-templates}
 
-[傳遞範本](creating-a-delivery-template.md)可讓您定義一次符合您需求且可重複用於未來傳遞的一組技術和功能屬性。 然後您可以節省時間，並在需要時標準化傳遞。
+[傳遞範本](about-templates.md)可讓您定義一次符合您需求且可重複用於未來傳遞的一組技術和功能屬性。 然後您可以節省時間，並在需要時標準化傳遞。
 
 當您在Adobe Campaign中管理多個品牌時，Adobe建議每個品牌使用一個子網域。 例如，銀行可以有數個子網域對應至其各個地區機構。 如果銀行擁有bluebank.com網域，其子網域可以是@ny.bluebank.com、@ma.bluebank.com、@ca.bluebank.com等。 每個子網域擁有一個傳遞範本，可讓您針對每個品牌一律使用正確的預先設定引數，以避免錯誤並節省您的時間。
 
@@ -44,7 +44,7 @@ ht-degree: 1%
 
 若要在Campaign介面中設定地址，請遵循下列步驟：
 
-1. 在[傳遞範本](creating-a-delivery-template.md)中，按一下&#x200B;**[!UICONTROL From]**&#x200B;連結。 在&#x200B;**[!UICONTROL Email header parameters]**&#x200B;視窗中，填寫下列欄位：
+1. 在[傳遞範本](about-templates.md)中，按一下&#x200B;**[!UICONTROL From]**&#x200B;連結。 在&#x200B;**[!UICONTROL Email header parameters]**&#x200B;視窗中，填寫下列欄位：
 
    ![](assets/d_best_practices_email_header.png)
 

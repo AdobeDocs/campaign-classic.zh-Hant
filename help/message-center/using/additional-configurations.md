@@ -7,9 +7,9 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 4d25d740-db57-4d18-8cae-2dd49c4a786e
-source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
+source-git-commit: f469689f9e8a4d805fb95a1ae120ccd35aba3731
 workflow-type: tm+mt
-source-wordcount: '804'
+source-wordcount: '793'
 ht-degree: 6%
 
 ---
@@ -169,10 +169,6 @@ Once the control and execution modules are installed on the same instance, you m
 
 1. 為每個品牌建立一個外部帳戶，其內部名稱與[執行執行個體](#execution-instance)上定義的名稱相同（步驟1）。
 
-1. 為每個品牌建立一個預設傳遞範本。
-
-   >[!NOTE]
-   >
-   >    在[本節](../../delivery/using/creating-a-delivery-template.md#creating-a-new-template)中瞭解如何建立傳遞範本。
+1. 為每個品牌建立[傳遞範本](../../delivery/using/about-templates.md)。
 
 1. 在傳遞範本的&#x200B;**[!UICONTROL Properties]**&#x200B;中，設定品牌外部帳戶的路由。

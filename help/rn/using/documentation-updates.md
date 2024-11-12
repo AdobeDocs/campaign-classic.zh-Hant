@@ -6,8 +6,8 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 3f6bbf2766a61580c4f232d3919fe955d82a7881
-workflow-type: ht
+source-git-commit: f469689f9e8a4d805fb95a1ae120ccd35aba3731
+workflow-type: tm+mt
 source-wordcount: '3782'
 ht-degree: 100%
 
@@ -378,7 +378,7 @@ Android 的推播通知改善 - [閱讀更多資訊](../../delivery/using/config
 
 ## 2020 年 9 月 {#september-2020}
 
-已新增附註，以指明「主要」用戶檔案計數僅適用於「行銷」執行個體。[顯示全文](../../platform/using/about-profiles.md#active-profiles)
+已新增附註，以指明「活躍」輪廓計數僅適用於「行銷」執行個體。[顯示全文](../../platform/using/about-profiles.md#active-profiles)
 
 已新增有關方案版本的新範例，以將欄位連結至現有的參考表。[顯示全文](../../configuration/using/examples-of-schemas-edition.md#uc-link)
 
@@ -398,7 +398,7 @@ Android 的推播通知改善 - [閱讀更多資訊](../../delivery/using/config
 
 * [如何建立具有條件式內容的多語言電子報](../../delivery/using/conditional-content.md)
 
-* [如何設定及部署傳遞範本](../../delivery/using/creating-a-delivery-template.md)
+* [如何設定及部署傳遞範本](../../delivery/using/about-templates.md)
 
 * [如何啟用及使用電子郵件 AMP](../../delivery/using/defining-interactive-content.md)
 
