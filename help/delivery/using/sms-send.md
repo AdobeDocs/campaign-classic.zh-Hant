@@ -2,14 +2,13 @@
 product: campaign
 title: 傳送、監控和追蹤簡訊
 description: 瞭解如何在Campaign傳送、監控和追蹤簡訊
-badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: SMS
 role: User
 exl-id: 442672ee-5037-49b7-a06f-3a99920ce2b6
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 41296a0acaee93d31874bf58287e51085c6c1261
 workflow-type: tm+mt
-source-wordcount: '971'
-ht-degree: 3%
+source-wordcount: '962'
+ht-degree: 4%
 
 ---
 

@@ -2,14 +2,13 @@
 product: campaign
 title: 通訊通道
 description: 建立傳遞，以在不同通道上傳送個人化訊息。
-badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Cross Channel Orchestration, Email, SMS, In App, Direct Mail, Push
 role: User
 exl-id: 92b5e013-b619-4f0b-b0b1-1fc2e653ceac
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 41296a0acaee93d31874bf58287e51085c6c1261
 workflow-type: tm+mt
-source-wordcount: '1214'
-ht-degree: 63%
+source-wordcount: '1205'
+ht-degree: 61%
 
 ---
 
@@ -82,7 +81,7 @@ Adobe Campaign可讓您透過專用應用程式，在iOS和Android行動裝置�
 
 [直接郵件](about-direct-mail-channel.md)是離線通道，可讓您個人化並產生直接郵件供應商所需的檔案。 它可讓您在客戶歷程中混合使用線上和離線通道。
 
-線上通道可讓您建立訊息（電子郵件、簡訊、行動應用程式傳送等）並直接從 Adobe Campaign 傳送給您的客群。離線通道則不同。當您準備直接郵件傳送時，Adobe Campaign 會產生一個檔案，其中包含所有目標設定檔和選取的聯絡資訊（例如，郵遞區號）。然後，您就可以將此檔案傳送給直接郵件提供者，由他們負責實際傳送。
+線上頻道可讓您建立訊息（電子郵件、簡訊、行動應用程式傳送等），並直接從Adobe Campaign傳送給您的對象。 離線通道則不同。當您準備直接郵件傳送時，Adobe Campaign 會產生一個檔案，其中包含所有目標輪廓和選取的聯絡資訊（例如，郵遞區號）。然後，您就可以將此檔案傳送給直接郵件提供者，由他們負責實際傳送。
 
 ## 其他管道 {#other-channels}
 

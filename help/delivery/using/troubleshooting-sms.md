@@ -2,13 +2,12 @@
 product: campaign
 title: 簡訊疑難排解
 description: 進一步瞭解如何疑難排解簡訊頻道
-badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: SMS, Troubleshooting
 role: User
 exl-id: 841f0c2f-90ef-4db0-860a-75fc7c48804a
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 41296a0acaee93d31874bf58287e51085c6c1261
 workflow-type: tm+mt
-source-wordcount: '2764'
+source-wordcount: '2755'
 ht-degree: 0%
 
 ---
@@ -37,13 +36,13 @@ Adobe Campaign會將外部帳戶視為不相關的實體。
 
 * **在任何時候只有一個帳戶作用中時，問題未出現**
 
-  帳戶之間發生衝突。 如前所述，Adobe Campaign單獨處理帳戶，但提供者可能會將它們視為單個帳戶。
+  帳戶之間發生衝突。 如前所述，Adobe Campaign會個別處理帳戶，但提供者可能會將其視為單一帳戶。
 
-   * 您在所有帳戶之間使用不同的登入/密碼組合。您必須聯繫供應商以診斷他們方面的潛在衝突。
+   * 您在所有帳戶之間使用不同的登入/密碼組合。
+您必須連絡提供者，才能診斷其身邊的潛在衝突。
 
-   * 某些外部帳戶共用相同的 登入/密碼 組合。供應商無法分辨外部帳戶 `BIND PDU` 來自哪個，因此他們將來自多個帳戶的所有連接視為單個連接。 他們可能已隨機將MO和SR路由到兩個帳戶，從而導致問題。
-如果提供者支援相同登入/密碼組合的多個短程式碼，您必須詢問他們要將短程式碼放在`BIND PDU`中的哪個位置。 請注意，此資訊必須放在`BIND PDU`中，而非`SUBMIT_SM`中，因為`BIND PDU`是唯一允許正確路由傳送MO的位置。
-請參閱上面各種PDU](sms-protocol.md#information-pdu)區段中的[資訊，以瞭解`BIND PDU`中可用的欄位，通常是您在`address_range`中新增短程式碼，但需要提供者的特殊支援。 與他們聯繫以了解他們希望如何獨立路由多個短代碼。Adobe Campaign 支持在同一外部帳戶上處理多個短代碼。
+   * 某些外部帳戶共用相同的 登入/密碼 組合。供應商無法分辨外部帳戶 `BIND PDU` 來自哪個，因此他們將來自多個帳戶的所有連接視為單個連接。 他們可能通過這兩個帳戶隨機路由MO和SR，從而導致問題。如果提供程序支持同一 登入/密碼 組合的多個短代碼，則必須詢問他們將該短代碼放在 .`BIND PDU`請注意，這條信息必須放在 中 `BIND PDU`，而不是 `SUBMIT_SM`放在 中，因為 是唯一 `BIND PDU` 允許正確路由MO的地方。請參閱上面各種PDU](sms-protocol.md#information-pdu)區段中的[資訊，以瞭解`BIND PDU`中可用的欄位，通常是您在`address_range`中新增短程式碼，但需要提供者的特殊支援。 請聯絡他們，以瞭解他們如何獨立路由多個短程式碼。
+Adobe Campaign支援在相同的外部帳戶上處理多個短程式碼。
 
 ## 一般外部帳戶問題 {#external-account-issues}
 
@@ -64,9 +63,9 @@ Adobe Campaign會將外部帳戶視為不相關的實體。
 * 調查（在 /postupgrade 目錄中）系統是否已升級以及何時升級
 * 調查最近是否升級了影響SMS的任何包 （/var/log/dpkg.log）。
 
-## 中間來源的問題（託管）{#issue-mid-sourcing}
+## 中間來源的問題 （託管）{#issue-mid-sourcing}
 
-* 如果問題發生在中間來源環境中，請確保在中間來源伺服器上正確建立和更新傳送和廣泛記錄。 如果不是這種情況，則不是SMS問題。
+* 如果問題發生在中間來源環境上，請確保在中間來源伺服器上正確創建和更新傳遞和廣泛的日誌。 如果不是這種情況，則這不是簡訊問題。
 
 * 如果一切在中間伺服器上運作正常，且簡訊已正確傳送，但行銷執行個體未正確更新，則您可能會發生中間同步問題。
 
@@ -138,17 +137,17 @@ Adobe Campaign會將外部帳戶視為不相關的實體。
 
 * 如果您看到許多`BIND/UNBIND`，表示您的連線不穩定。 在嘗試解決重複訊息問題之前，請先參閱[不穩定的連線問題](troubleshooting-sms.md#issues-unstable-connection)一節以取得解決方案。
 
-重試時降低重複項目數量：
+降低重試時的重複專案數量：
 
-* 降低發送視窗。 發送視窗應足夠大以覆蓋 `SUBMIT_SM_RESP` 延遲。 其值表示在視窗已滿時發生錯誤時可以複製的最大消息數。
+* 降低傳送視窗。 傳送視窗應該足夠大，以涵蓋`SUBMIT_SM_RESP`延遲。 其值表示在視窗已滿時發生錯誤時可以複製的最大消息數。
 
-## 處理SR （交貨收貨）時發放 {#issue-process-SR}
+## 處理SR（傳遞收據）時出現問題 {#issue-process-SR}
 
-* 您需要啟用SMPP追蹤才能進行任何型別的SR疑難排解。
+* 您需要啟用 SMPP 追蹤才能執行任何類型的 SR 故障排除。
 
 * 檢查`DELIVER_SM PDU`是否來自提供者，其格式是否正確。
 
-* 及時檢查Adobe Campaign回復成功 `DELIVER_SM_RESP PDU` 。 在 Adobe Campaign Classic 上，這保證了 SR 已插入到 `providerMsgId` 表中，以便由 SMS 進程進行延遲處理。
+* 檢查Adobe Campaign是否及時回覆成功的`DELIVER_SM_RESP PDU`。 在Adobe Campaign Classic上，這可保證SR已插入`providerMsgId`資料表，以供SMS程式延遲處理。
 
 `DELIVER_SM PDU`如果未成功確認，則應檢查以下內容：
 
@@ -156,9 +155,9 @@ Adobe Campaign會將外部帳戶視為不相關的實體。
 
 * 檢查表中是否正確預配 `broadLogMsg` 了錯誤。
 
-如果`DELIVER_SM PDU`已由Adobe Campaign Classic延伸SMPP聯結器確認，但broadLog未正確更新，請檢查[比對MT、SR和broadlog專案](sms-protocol.md#matching-mt)一節中說明的ID調解程式。
+如果 已被 `DELIVER_SM PDU` Adobe Campaign Classic 擴展 SMPP 連接器確認，但 broadLog 未正確更新，請檢查匹配 MT、SR 和 broadlog 條目](sms-protocol.md#matching-mt)部分中[描述的 ID 協調過程。
 
-如果您已修正所有問題，但部分無效SR仍在提供者的緩衝區中，您可以使用「無效ID認可計數」選項來略過這些專案。 這應謹慎使用，並在清除緩衝區後儘快重設為0。
+如果修復了除某些 無效 SR 仍在提供程式緩衝區中的所有內容，則可以使用“無效 ID 確認計數”選項跳過它們。 應謹慎使用，並在緩衝區清理后儘快重置為 0。
 
 ## 處理MO （以及黑名單/自動回覆）時的問題{#issue-process-MO}
 
@@ -230,21 +229,21 @@ Unicode允許許多類似字元的變體，而Adobe Campaign無法處理所有�
 
 * 如果您參考訊息、PDU或記錄，請清楚說明其時間戳記，以便更容易找到。
 
-* 嘗試在測試環境中重現問題。 如果您不確定設定，請在測試環境中嘗試，並使用SMPP追蹤檢查結果。 報告在測試環境中複製的問題通常比直接報告生產環境中的問題更好。
+* 嘗試在測試環境中重現問題。 如果您不確定設定，請在測試環境中嘗試，並使用SMPP追蹤檢查結果。 報告測試環境中復寫的問題通常比直接報告生產環境中問題要好。
 
-* 包括在平臺上所做的任何更改或調整。 此外，還包括供應商可能在其方面所做的任何更改。
+* 包括在平台上所做的任何變更或調整。 此外，也請包含提供者可能已在其一側完成的任何變更。
 
-### 網路擷取 {#network-capture}
+### 網路捕獲 {#network-capture}
 
-不一定需要網路擷取，通常只要詳細的SMPP訊息就足夠了。 以下是一些准則，可協助您判斷是否需要網路擷取：
+並不總是需要網路捕獲，通常冗長的SMPP消息就足夠了。 下面是一些準則，可説明您確定是否需要網路捕獲：
 
 * 連線問題，但詳細訊息未顯示任何`BIND_RESP PDU`。
 
-* 無法解釋的斷開連接，沒有錯誤消息，連接器在檢測到低級協定錯誤時的通常行為。
+* 無法解釋的連線沒有錯誤訊息，這是聯結器偵測到低層通訊協定錯誤時的正常行為。
 
 * 提供者抱怨解除繫結/中斷連線程式。
 
-* 選擇性TLV欄位中的編碼問題。
+* 可選 TLV 欄位中的編碼問題。
 
 * 在不同的連線之間懷疑是混合的流量。
 

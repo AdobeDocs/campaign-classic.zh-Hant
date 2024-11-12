@@ -2,13 +2,12 @@
 product: campaign
 title: 簡訊連接器通訊協定及設定
 description: 進一步瞭解簡訊聯結器及設定方式
-badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: SMS
 role: Developer, Data Engineer
 exl-id: fded088a-11a2-4b87-a368-7b197334aca4
-source-git-commit: 6803b6628313db9108a191fd143dac68ee799149
+source-git-commit: 41296a0acaee93d31874bf58287e51085c6c1261
 workflow-type: tm+mt
-source-wordcount: '8466'
+source-wordcount: '8457'
 ht-degree: 1%
 
 ---
@@ -844,7 +843,7 @@ SMS應在傳送記錄檔中標示為已接收。 傳送記錄應該會成功，�
 檢查您是否已變更傳遞提供者名稱。 在生產環境中，傳遞記錄不應包含**SR Generic**。
 
 * **檢查MO是否已處理**
-如果您需要處理MO （自動回覆、將MO儲存在資料庫等）， 嘗試進行一些測試。 為所有自動回覆關鍵字傳送一些簡訊，並檢查回覆是否足夠快，不超過幾秒。
+如果您需要處理MO （自動回覆、將MO儲存在資料庫等），請嘗試進行一些測試。 為所有自動回覆關鍵字傳送一些簡訊，並檢查回覆是否足夠快，不超過幾秒。
 在記錄中檢查Adobe Campaign是否回覆成功`DELIVER_SM_RESP` (command_status=0)。
 
 ### 檢查PDU {#check-pdus}

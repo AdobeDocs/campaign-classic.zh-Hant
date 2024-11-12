@@ -2,13 +2,12 @@
 product: campaign
 title: 使用Campaign建立簡訊
 description: 瞭解如何使用Campaign建立簡訊
-badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: SMS
 role: User
 exl-id: 94aa4628-d973-433d-b963-b078e2d6672b
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 41296a0acaee93d31874bf58287e51085c6c1261
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '437'
 ht-degree: 2%
 
 ---
