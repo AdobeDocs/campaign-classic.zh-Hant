@@ -2,14 +2,15 @@
 product: campaign
 title: 使用範本建立傳遞
 description: 瞭解如何從範本建立傳遞
-badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Delivery Templates
+hide: true
+hidefromtoc: true
 role: User
 exl-id: 7ffb649e-801f-4568-a86b-7982448e3c30
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 446062946b64c9a4d065b6a56d263914cbe628f8
 workflow-type: tm+mt
-source-wordcount: '187'
-ht-degree: 6%
+source-wordcount: '178'
+ht-degree: 7%
 
 ---
 

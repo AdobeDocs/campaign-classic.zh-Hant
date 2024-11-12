@@ -6,9 +6,9 @@ title: Campaign Classic v7 指南
 user-guide-description: Adobe Campaign Classic v7 產品文件。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: aa78a51ebea49f98ef7edad7e87a99a680f02b69
+source-git-commit: 446062946b64c9a4d065b6a56d263914cbe628f8
 workflow-type: tm+mt
-source-wordcount: '2560'
+source-wordcount: '2562'
 ht-degree: 100%
 
 ---
@@ -163,7 +163,7 @@ ht-degree: 100%
       + [定義直接郵件內容](delivery/using/defining-the-direct-mail-content.md)
       + [驗證](delivery/using/validating.md)
    + 使用傳遞範本 {#using-delivery-templates}
-      + [關於範本](delivery/using/about-templates.md)
+      + [使用傳遞範本](delivery/using/about-templates.md)
       + [建立傳遞範本](delivery/using/creating-a-delivery-template.md)
       + [選擇目標對應](delivery/using/selecting-a-target-mapping.md)
       + [使用範本建立傳遞](delivery/using/creating-a-delivery-from-a-template.md)
