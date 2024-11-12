@@ -6,9 +6,9 @@ badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v
 feature: Deliverability
 role: User
 exl-id: dcd3a9f9-5fe9-4c28-a4a5-5aed67b036ab
-source-git-commit: de6e86eb2304a88e836c5759b87d7f38446ed357
+source-git-commit: aa78a51ebea49f98ef7edad7e87a99a680f02b69
 workflow-type: tm+mt
-source-wordcount: '766'
+source-wordcount: '748'
 ht-degree: 6%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 6%
 
 >[!NOTE]
 >
->如需編輯電子郵件內容的詳細資訊，請參閱[定義電子郵件內容](defining-the-email-content.md)和[建置個人化內容](design-and-personalize.md)。
+>如需編輯電子郵件內容的詳細資訊，請參閱[定義電子郵件內容](defining-the-email-content.md)。
 
 ## 寄件者地址 {#sender-address}
 
@@ -44,8 +44,6 @@ ht-degree: 6%
 為了改善收件者的體驗並讓他們開啟您的電子郵件，Adobe Campaign可讓您個人化您的訊息。
 
 如需在Adobe Campaign中使用個人化欄位的詳細資訊，請參閱[本節](personalization-fields.md)。
-
-建立您的內容時，有一些最佳化個人化的秘訣會顯示在[本節](design-and-personalize.md#optimize-personalization)中。
 
 ## 選擇退出連結和表單 {#opt-out}
 

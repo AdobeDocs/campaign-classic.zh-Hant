@@ -5,8 +5,10 @@ description: 瞭解如何追蹤和監控訊息
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Monitoring, Reporting
 role: User
+hide: true
+hidefromtoc: true
 exl-id: a039a288-2e7b-4f35-9885-ead3ed4347af
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: aa78a51ebea49f98ef7edad7e87a99a680f02b69
 workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 2%

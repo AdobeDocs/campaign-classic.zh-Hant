@@ -1,27 +1,27 @@
 ---
 product: campaign
-title: 開始使用設定檔
+title: 開始使用輪廓
 description: 在Adobe Campaign中使用設定檔
 feature: Profiles, Audiences
 role: User, Data Architect
 level: Beginner
 exl-id: 54f1ad6c-54b0-4448-8c38-806dd75c1dae
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: aa78a51ebea49f98ef7edad7e87a99a680f02b69
 workflow-type: tm+mt
-source-wordcount: '905'
+source-wordcount: '896'
 ht-degree: 33%
 
 ---
 
-# 開始使用設定檔{#about-profiles}
+# 開始使用輪廓{#about-profiles}
 
 
 
-設定檔會集中於Adobe Campaign資料庫中。 要獲取用戶檔案，並建立此資料庫，有許多可行的機制：透過網路表單線上收集、手動或自動匯入文字檔、透過公司資料庫或其他資訊系統進行複寫。透過Adobe Campaign，您可以將行銷記錄、購買資訊、偏好設定、CRM資料以及任何相關的PI資料整合在整合檢視中，以進行分析並採取行動。
+設定檔會集中於Adobe Campaign資料庫中。 要獲取輪廓，並建立此資料庫，有許多可行的機制：透過網路表單線上收集、手動或自動匯入文字檔、透過公司資料庫或其他資訊系統進行複寫。透過Adobe Campaign，您可以將行銷記錄、購買資訊、偏好設定、CRM資料以及任何相關的PI資料整合在整合檢視中，以進行分析並採取行動。
 
 **設定檔**」是指代表最終客戶、潛在客戶或潛在客戶的資訊記錄（例如：nmsRecipient表格或外部表格中的記錄，包含cookie識別碼、客戶識別碼、行動識別碼或其他與特定管道相關的資訊）。
 
-在 Adobe　Campaign 中，收件者是用於傳送內容 (電子郵件、簡訊等) 的預設用戶檔案。儲存在資料庫中的收件者資料可讓您篩選將接收任何指定傳遞的目標，並在傳遞內容中新增個人化資料。 資料庫中還存在其他類型的用戶檔案。這些用戶檔案是針對不同用途設計的。例如，種子用戶檔案用於在內容傳送給最終目標前測試內容。
+在 Adobe　Campaign 中，收件者是用於傳送內容 (電子郵件、簡訊等) 的預設輪廓。儲存在資料庫中的收件者資料可讓您篩選將接收任何指定傳遞的目標，並在傳遞內容中新增個人化資料。 資料庫中還存在其他類型的輪廓。這些用戶檔案是針對不同用途設計的。例如，種子輪廓用於在內容傳送給最終目標前測試內容。
 
 ![](assets/do-not-localize/how-to-video.png) [瞭解視訊中的設定檔概念](#create-profiles-video)
 
@@ -87,11 +87,11 @@ Adobe Campaign Explorer的一般配置顯示在[此頁面](../../platform/using/
 >
 >您也可以定義收件者檢視。 如需有關此功能的進一步資訊，請參閱[此章節](../../platform/using/access-management-folders.md)。
 
-## 使用中的設定檔案 {#active-profiles}
+## 活躍輪廓 {#active-profiles}
 
 作用中設定檔是客戶在過去12個月嘗試透過任何通道與之通訊的設定檔。
 
-根據您的合約，您的每個 Campaign 執行個體都已佈建特定數量的作用中設定檔，而且會計算這些設定檔數量以結算費用。請參閱您的最新合約，以參考已購買作用中設定檔數目。 深入瞭解[Adobe Campaign產品說明](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}。
+根據您的合約，您的每個 Campaign 執行個體都已佈建特定數量的活躍輪廓，而且會計算這些輪廓數量以結算費用。請參閱您的最新合約，以參考已購買作用中設定檔數目。 深入瞭解[Adobe Campaign產品說明](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}。
 
 您可以直接從Campaign「控制面板」監視執行個體上的作用中設定檔數目。 如需詳細資訊，請參閱[控制面板檔案](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html){target="_blank"}。
 
@@ -105,7 +105,7 @@ Adobe Campaign Explorer的一般配置顯示在[此頁面](../../platform/using/
 
 ## 教學課程影片 {#create-profiles-video}
 
-瞭解如何存取設定檔資料、排序和篩選設定檔，以及手動建立和管理設定檔。
+瞭解如何存取輪廓資料、排序和篩選輪廓，以及手動建立和管理輪廓。
 
 此影片也會說明Adobe Campaign Classic是否符合一般資料保護規範。
 
@@ -117,10 +117,6 @@ Adobe Campaign Explorer的一般配置顯示在[此頁面](../../platform/using/
 
 * 行銷活動中的[隱私權管理](https://helpx.adobe.com/tw/campaign/kb/acc-privacy.html)
 
-* [定義目標母體](../../delivery/using/define-the-right-audience.md)
-
 * [在工作流程中建立查詢和區段資料](../../workflow/using/targeting-data.md)
 
 * [選取目標對應](../../delivery/using/selecting-a-target-mapping.md)
-
-* [定義對象 — 最佳實務](../../delivery/using/define-the-right-audience.md)

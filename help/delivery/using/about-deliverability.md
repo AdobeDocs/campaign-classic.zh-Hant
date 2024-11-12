@@ -6,9 +6,9 @@ badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v
 feature: Deliverability
 role: User
 exl-id: f301b34c-244c-4279-b23f-8224ea8eedbe
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: aa78a51ebea49f98ef7edad7e87a99a680f02b69
 workflow-type: tm+mt
-source-wordcount: '665'
+source-wordcount: '654'
 ht-degree: 7%
 
 ---
@@ -40,9 +40,8 @@ ht-degree: 7%
 使用Adobe Campaign時，傳遞率取決於許多因素，特別是：
 
 * 正確設定您的執行個體：請聯絡您的Adobe代表以尋求協助。
-* 合法的網路組態：請參閱[此章節](optimize-delivery.md#network-config)和[網域設定和策略](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#domain-setup-and-strategy)。
+* 合法的網路組態：請參閱[網域設定和策略](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#domain-setup-and-strategy)。
 * 您的IP位址信譽：請參閱[IP策略](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#ip-strategy)。
-* 目標地址的品質：請參閱[隔離管理](optimize-delivery.md#quarantine-management)。
 * 低[投訴](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/complaints.html)和[硬退信](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html#hard-bounces)率。
 * 您的郵件內容：請參閱[控制電子郵件內容](control-message-content.md)。
 * 訊息驗證(SPF、DKIM、DMARC)：請參閱[本節](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication)。
