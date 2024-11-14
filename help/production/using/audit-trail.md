@@ -4,16 +4,18 @@ title: 稽核軌跡
 description: 瞭解如何使用Campaign稽核軌跡監控您的執行個體
 feature: Audit Trail, Monitoring, Workflows
 exl-id: 8508d879-fb38-4b1f-9f55-0341bb8d0c67
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 6d94ca01f23f7f2409fbdcb4e4c4716d694d527f
 workflow-type: tm+mt
-source-wordcount: '464'
+source-wordcount: '420'
 ht-degree: 2%
 
 ---
 
 # 稽核軌跡{#audit-trail}
 
-
+>[!INFO]
+>
+>在Adobe Campaign v8檔案中進一步瞭解稽核軌跡功能。
 
 在Adobe Campaign中，**[!UICONTROL Audit trail]**&#x200B;可讓您存取執行個體中所做變更的完整歷史記錄。
 
@@ -24,13 +26,15 @@ ht-degree: 2%
 >Adobe Campaign不會稽核使用者許可權、範本、個人化或行銷活動中所做的變更。\
 >稽核軌跡只能由執行個體的管理員管理。
 
-稽核軌跡包含三個元件：
+![](assets/audit_trail_2.png)
 
-* **結構描述稽核軌跡**：檢查您的結構描述的活動和上次修改。
++++ 深入瞭解稽核軌跡可用實體
+
+* **結構描述稽核軌跡**：可讓您探索對結構描述所做的變更，以及識別進行這些修改的人和發生時間。
 
   如需結構描述的詳細資訊，請參閱此[頁面](../../configuration/using/data-schemas.md)。
 
-* **工作流程稽核軌跡**：檢查工作流程的活動和上次所做的修改，以及工作流程的狀態，例如：
+* **工作流程稽核軌跡**&#x200B;會追蹤與工作流程相關的所有動作，包括：
 
    * 開始
    * 暫停
@@ -45,63 +49,32 @@ ht-degree: 2%
 
   如需如何監視工作流程的詳細資訊，請參閱[專屬區段](../../workflow/using/monitoring-workflow-execution.md)。
 
-* **選項稽核軌跡**：檢查您的選項的活動和上次所做的修改。
+* **選項稽核軌跡**&#x200B;可讓您檢查活動和對選項進行的最後修改。
 
   如需選項的詳細資訊，請參閱此[頁面](../../installation/using/configuring-campaign-options.md)。
 
-## 存取稽核軌跡 {#accessing-audit-trail}
+* **傳遞稽核軌跡**&#x200B;可讓您檢查活動和對傳遞進行的最後修改。
 
-若要存取執行個體的&#x200B;**[!UICONTROL Audit trail]**：
+  如需傳遞的詳細資訊，請參閱此[頁面](../../delivery/using/communication-channels.md)。
 
-1. 存取執行個體的&#x200B;**[!UICONTROL Explorer]**&#x200B;功能表。
-1. 在「**[!UICONTROL Administration]**」功能表下，選取「**[!UICONTROL Audit]**」。
+* **外部帳戶**&#x200B;可讓您檢查對外部帳戶所做的修改，這些修改由技術流程（如技術工作流程或行銷活動工作流程）使用。
 
-   ![](assets/audit_trail_1.png)
+  如需外部帳戶的詳細資訊，請參閱此[頁面](../../installation/using/external-accounts.md)。
 
-1. **[!UICONTROL Audit trail]**&#x200B;視窗會開啟，其中包含您的實體清單。 Adobe Campaign將稽核工作流程、選項和結構的建立、編輯和刪除動作。
+* **傳遞對應**&#x200B;可讓您監視活動以及最近對傳遞對應所做的修改。
 
-   選取其中一個實體以深入瞭解最後的修改。
+  如需傳遞對應的詳細資訊，請參閱此[頁面](../../configuration/using/target-mapping.md)。
 
-   ![](assets/audit_trail_2.png)
+* **網頁應用程式**&#x200B;可讓您檢查在Campaign V8中對網頁表單所做的修改，這些修改用於建立具有輸入和選擇欄位的頁面，並且可能包含來自資料庫的資料。
 
-1. **[!UICONTROL Audit entity]**&#x200B;視窗會提供您所選實體的詳細資訊，例如：
+  如需網頁應用程式的詳細資訊，請參閱此[頁面](../../web/using/about-web-applications.md)。
 
-   * **[!UICONTROL Type]** ：工作流程、選項或結構描述。
-   * **[!UICONTROL Entity]** ：活動的內部名稱。
-   * **[!UICONTROL Modified by]** ：上次修改此實體之人員的使用者名稱。
-   * **[!UICONTROL Action]** ：此實體上執行的最後一個動作，已建立、已編輯或已刪除。
-   * **[!UICONTROL Modification date]** ：此實體上個動作執行的日期。
+* **選件**&#x200B;可讓您檢查活動和對您的選件進行的最後修改。
 
-   程式碼區塊會針對實體中的確切變更提供詳細資訊。
+  如需優惠方案的詳細資訊，請參閱此[頁面](../../interaction/using/interaction-and-offer-management.md)。
 
-   ![](assets/audit_trail_3.png)
+* **操作員**&#x200B;可讓您監視活動以及最近對操作員所做的修改。
 
->[!NOTE]
->
->根據預設，**[!UICONTROL Audit logs]**&#x200B;的保留期間設為180天。 若要瞭解如何變更保留期的詳細資訊，請參閱此[頁面](../../production/using/database-cleanup-workflow.md#deployment-assistant)。
+  如需運運算元的詳細資訊，請參閱此[頁面](../../platform/using/access-management-operators.md)。
 
-## 啟用/停用稽核軌跡 {#enable-disable-audit-trail}
-
-例如，如果您想在資料庫上節省一些空間，可以輕鬆地為特定活動啟用或停用稽核軌跡。
-
-若要這麼做：
-
-1. 存取執行個體的&#x200B;**[!UICONTROL Explorer]**&#x200B;功能表。
-1. 在&#x200B;**[!UICONTROL Administration]**&#x200B;功能表下，依序選取&#x200B;**[!UICONTROL Platform]**&#x200B;及&#x200B;**[!UICONTROL Options]**。
-
-   ![](assets/audit_trail_4.png)
-
-1. 根據您想要啟動/取消啟動的實體，選取下列選項之一：
-
-   * 針對工作流程： **[!UICONTROL XtkAudit_Workflows]**
-   * 針對結構描述： **[!UICONTROL XtkAudit_DataSchema]**
-   * 選項： **[!UICONTROL XtkAudit_Option]**
-   * 針對每個實體： **[!UICONTROL XtkAudit_Enable_All]**
-
-   ![](assets/audit_trail_5.png)
-
-1. 如果要啟用實體，請將&#x200B;**[!UICONTROL Value]**&#x200B;變更為1；如果要停用實體，請變更為0。
-
-   ![](assets/audit_trail_6.png)
-
-1. 按一下「**[!UICONTROL Save]**」。
++++
