@@ -4,9 +4,9 @@ title: 稽核軌跡
 description: 瞭解如何使用Campaign稽核軌跡監控您的執行個體
 feature: Audit Trail, Monitoring, Workflows
 exl-id: 8508d879-fb38-4b1f-9f55-0341bb8d0c67
-source-git-commit: 6d94ca01f23f7f2409fbdcb4e4c4716d694d527f
+source-git-commit: 3d1ed85dcafc5afc4088db98c09d78fb7e9c0a39
 workflow-type: tm+mt
-source-wordcount: '420'
+source-wordcount: '421'
 ht-degree: 2%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 >[!INFO]
 >
->在Adobe Campaign v8檔案中進一步瞭解稽核軌跡功能。
+>在[Adobe Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/audit-trail)中進一步瞭解稽核軌跡功能。
 
 在Adobe Campaign中，**[!UICONTROL Audit trail]**&#x200B;可讓您存取執行個體中所做變更的完整歷史記錄。
 
