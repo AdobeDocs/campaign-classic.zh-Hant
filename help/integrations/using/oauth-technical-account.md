@@ -5,9 +5,9 @@ description: 進一步瞭解如何建立Adobe API帳戶
 role: User, Admin
 level: Beginner
 exl-id: 5d830ea0-a0a3-4b35-8dc4-e955380431fb
-source-git-commit: 2ce7a91aaddb0df412fc0002ff1463d48b2b7c3c
+source-git-commit: 5352426fc68cbcb6519127e5c89c1e9f8619ca6b
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '334'
 ht-degree: 6%
 
 ---
@@ -79,3 +79,9 @@ Adobe已棄用服務帳戶(JWT)認證。 Campaign與Adobe解決方案和應用�
    ```
    nlserver config -instance:<instance_name> -setimsoauth:ims-org-id/client-id/technical-account-id/client-secret
    ```
+
+   >[!NOTE]
+   >
+   > 對於7.4.1之前的版本，請使用`setimsauth`或`setimsjwtauth`，而非`setimsoauth`。
+
+
