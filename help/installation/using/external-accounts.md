@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 8180f77c2824f9b54ae3c924b1cc45532675cf85
 workflow-type: tm+mt
-source-wordcount: '1757'
+source-wordcount: '1784'
 ht-degree: 8%
 
 ---
@@ -100,6 +100,8 @@ Adobe Campaign 隨附一組預先定義的外部帳戶。若要設定與外部�
 * **[!UICONTROL Azure Redirect URL]**
 
   可在Azure入口網站應用程式的&#x200B;**驗證**&#x200B;功能表中找到重新導向URL。 它應該以下列語法`nl/jsp/oauth.jsp`結束，例如`https://redirect.adobe.net/nl/jsp/oauth.jsp`。
+
+需要網際網路存取，才能進行安裝並使用使用者端主控台中的&#x200B;**[!UICONTROL Test Connection]**&#x200B;按鈕。 設定完成後，inMail程式便可在沒有網際網路的情況下與Microsoft伺服器通訊。
 
 輸入不同的認證後，您可以按一下&#x200B;**[!UICONTROL Setup the connection]**&#x200B;完成外部帳戶設定。
 
@@ -380,7 +382,7 @@ SFTP外部帳戶可讓您設定並測試對Adobe Campaign外部伺服器的存�
 
 ### Salesforce.com CRM  {#salesforce-crm-external-account}
 
-**[!UICONTROL Salesforce CRM]**&#x200B;外部帳戶可讓您將Salesforce資料匯入並匯出至Adobe Campaign。
+**[!UICONTROL Salesforce CRM]**&#x200B;外部帳戶可讓您將Salesforce資料匯入及匯出至Adobe Campaign。
 
 ![](assets/ext_account_17.png)
 
