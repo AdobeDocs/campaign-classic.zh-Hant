@@ -4,7 +4,7 @@ title: JavaScript 指令碼和範本
 description: JavaScript 指令碼和範本
 feature: Workflows
 exl-id: 4a3647d1-cf8c-4867-871e-472287be7c6a
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: d4a2138e03a33092403d5ca00a41a3d7f9aea33e
 workflow-type: tm+mt
 source-wordcount: '1247'
 ht-degree: 2%
@@ -159,7 +159,7 @@ logInfo("Start date: " + task.creationDate)
 
 在活動中指定執行個體變數後，即可在工作流程查詢中重複使用它。
 
-因此，若要在篩選器中呼叫變數&#x200B;**instance.vars.xxx = &quot;yyyy&quot;**，請輸入&#x200B;**$(instance/vars/xxx)**。
+因此，若要在篩選器中呼叫變數&#x200B;**instance.vars.xxx = &quot;yyyy&quot;**，請輸入&#x200B;**$(instance/vars/@xxx)**。
 
 例如：
 
@@ -177,7 +177,7 @@ logInfo("Start date: " + task.creationDate)
 
    ![](assets/wkf_var_in_query.png)
 
-## 進階函式 {#advanced-functions}
+## 進階功能 {#advanced-functions}
 
 除了標準JavaScript函式之外，還有一些特殊函式可用於操控檔案、讀取或修改資料庫中的資料，或將訊息新增到記錄中。
 
