@@ -7,7 +7,7 @@ audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
 exl-id: 083be073-aad4-4c81-aff2-77f5ef3e80db
-source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '1014'
 ht-degree: 1%
@@ -57,7 +57,7 @@ ht-degree: 1%
 
 ## 套件設定 {#packages-configuration}
 
-任何直接連結至&#x200B;**互動**&#x200B;的結構描述延伸模組（優惠方案、主張、收件者等） 必須在執行例項上部署。
+任何直接連結至&#x200B;**互動**&#x200B;的結構描述延伸模組（選件、主張、收件者等）都必須部署在執行例項上。
 
 Interaction套件必須安裝在所有執行個體（控制和執行）上。 另外兩個套件可供使用：一個套件將安裝在控制執行個體上，另一個將安裝在每個執行個體上。
 

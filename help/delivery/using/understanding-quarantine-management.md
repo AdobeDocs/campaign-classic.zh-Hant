@@ -6,7 +6,7 @@ badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v
 feature: Monitoring, Deliverability
 role: User
 exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
-source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '2987'
 ht-degree: 8%
@@ -241,7 +241,7 @@ HTTP/V2通訊協定允許每個推播傳遞有直接的回饋和狀態。 如果
    <td> 否<br /> </td> 
   </tr> 
   <tr> 
-   <td> 憑證問題（密碼、損毀等） 並測試與APNs問題的連線<br /> </td> 
+   <td> 憑證問題（密碼、損毀等）和測試與APNs的連線問題<br /> </td> 
    <td> 失敗<br /> </td> 
    <td> 根據錯誤<br />的各種錯誤訊息 </td> 
    <td> 軟式<br /> </td> 

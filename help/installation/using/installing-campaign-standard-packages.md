@@ -5,10 +5,10 @@ description: 瞭解如何安裝Campaign內建套件
 feature: Installation, Application Settings
 badge-v7-prem: label="僅限內部部署/混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="僅適用於內部部署和混合部署"
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '1264'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
@@ -182,7 +182,7 @@ ht-degree: 3%
   </tr> 
   <tr> 
    <td> 中央/區域行銷（分散式行銷）<br /> </td> 
-   <td> 在中央實體（總部、行銷部門等）之間實施合作活動 本地實體 (銷售地點、地區代理等)。 選填。 <a href="../../distributed/using/about-distributed-marketing.md">進一步瞭解</a><br /> </td> 
+   <td> 在中央實體（總部、行銷部門等）與地方實體（銷售點、地區代理等）之間實施合作活動。 選填。 <a href="../../distributed/using/about-distributed-marketing.md">進一步瞭解</a><br /> </td> 
    <td> 行銷 </td> 
   </tr> 
   <tr> 
@@ -240,7 +240,7 @@ ht-degree: 3%
 
 ### 訊息中心套件 {#message-center-package}
 
-您必須安裝傳送頻道（電子郵件、行動裝置頻道、行動應用程式頻道、LINE等） 安裝異動訊息（訊息中心封裝）之前。 如果您已開始僅限電子郵件的訊息中心專案，且之後需要新增頻道，您必須依照下列步驟進行：
+您必須先安裝傳送頻道（電子郵件、行動頻道、行動應用程式頻道、LINE等），才能安裝異動訊息（訊息中心套件）。 如果您已開始僅限電子郵件的訊息中心專案，且之後需要新增頻道，您必須依照下列步驟進行：
 
 1. 使用套件匯入小幫手( **[!UICONTROL Tools > Advanced > Import package > Adobe Campaign package]**)安裝新頻道，例如&#x200B;**行動頻道**。
 1. 匯入檔案( **[!UICONTROL Tools > Advanced > Import package > File]**)，並選取：

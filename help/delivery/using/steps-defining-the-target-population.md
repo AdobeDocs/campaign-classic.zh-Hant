@@ -5,10 +5,10 @@ description: 瞭解如何定義目標母體
 feature: Audiences, Proofs
 role: User
 exl-id: d0ed7be7-3147-4cb8-9ce7-ea51602e9048
-source-git-commit: f469689f9e8a4d805fb95a1ae120ccd35aba3731
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '1729'
-ht-degree: 3%
+ht-degree: 23%
 
 ---
 
@@ -23,12 +23,12 @@ ht-degree: 3%
 
 ## 選取傳遞的主要收件者 {#selecting-the-main-target}
 
-在大多數情況下，主要目標會從Adobe Campaign資料庫（預設模式）擷取。 不過，收件者也可以儲存在外部檔案中。 若要了解詳細資訊，請參閱[本章節](steps-defining-the-target-population.md#selecting-external-recipients)。
+在大多數情況下，主要目標會從 Adobe Campaign 資料庫 (預設模式) 擷取。不過，收件者也可以儲存在外部檔案中。 若要了解詳細資訊，請參閱[本章節](steps-defining-the-target-population.md#selecting-external-recipients)。
 
 若要選取傳遞的收件者，請遵循下列步驟：
 
-1. 在傳遞編輯器中，選取&#x200B;**[!UICONTROL To]**。
-1. 如果收件者儲存在資料庫中，請選擇第一個選項。
+1. 在傳遞編輯器之中，選取 **[!UICONTROL To]**。
+1. 如果收件者儲存在資料庫，請選擇第一個選項。
 
    ![](assets/s_ncs_user_wizard_email02a.png)
 
@@ -36,7 +36,7 @@ ht-degree: 3%
 
    有其他目標對應可供使用，其中一些可能與您的特定設定相關。[了解更多](#select-a-target-mapping)。
 
-1. 按一下&#x200B;**[!UICONTROL Add]**&#x200B;按鈕以定義限制篩選器。
+1. 按一下 **[!UICONTROL Add]** 按鈕來定義限制篩選器。
 
    然後，您可以選取要套用的篩選型別：
 
@@ -47,11 +47,11 @@ ht-degree: 3%
    預設會提供下列目標型別：
 
    * **[!UICONTROL Filtering conditions]** ：此選項可讓您定義查詢並顯示結果。 定義查詢的方法會顯示在[此區段](../../platform/using/creating-filters.md#creating-an-advanced-filter)中。
-   * **[!UICONTROL Subscribers of an information service]** ：此選項可讓您選取收件者必須訂閱的Newsletter，才能由正在建立的傳遞定位。
+   * **[!UICONTROL Subscribers of an information service]**：此選項可讓您選取收件者必須訂閱的電子報，才能成為正在建立的傳遞目標。
 
      ![](assets/s_ncs_user_wizard_email02c.png)
 
-   * **[!UICONTROL Recipients of a delivery]** ：此選項可讓您將現有傳遞的收件者定義為鎖定目標條件。 之後，您必須在清單中選取傳送：
+   * **[!UICONTROL Recipients of a delivery]** ：此選項可讓您將現有傳遞的收件者定義為鎖定目標條件。 然後，您必須在清單之中選取傳遞：
 
      ![](assets/s_ncs_user_wizard_email02d.png)
 
@@ -59,26 +59,26 @@ ht-degree: 3%
 
      ![](assets/s_ncs_user_wizard_email02e.png)
 
-     您可以從下拉式清單中選取，以篩選收件者的行為：
+     您可以從下拉式清單選取，來篩選收件者的行為：
 
      ![](assets/s_ncs_user_wizard_email02f.png)
 
      >[!NOTE]
      >
-     >**[!UICONTROL Include sub-folders]**&#x200B;選項也可讓您定位在所選節點下方的樹狀結構資料夾中所包含的傳送。
+     >**[!UICONTROL Include sub-folders]** 選項也可讓您鎖定於所選節點下方的樹狀結構資料夾所包含的傳遞。
 
    * **[!UICONTROL Recipients included in a folder]** ：此選項可讓您定位樹狀結構之特定資料夾中所包含的設定檔。
    * **[!UICONTROL A recipient]** ：此選項可讓您從資料庫中的設定檔選取特定收件者。
    * **[!UICONTROL A list of recipients]** ：此選項可讓您鎖定收件者清單。 清單會顯示在[此區段](../../platform/using/creating-and-managing-lists.md)中。
-   * **[!UICONTROL User filters]** ：此選項可讓您存取預先設定的篩選器，以使用這些篩選器作為資料庫中設定檔的篩選條件。 預先設定的篩選器會顯示在[此區段](../../platform/using/creating-filters.md#saving-a-filter)中。
-   * 選項&#x200B;**[!UICONTROL Exclude recipients corresponding to this segment]**&#x200B;可讓您鎖定不符合已定義之目標條件的收件者。 若要使用此選項，請選取適當的方塊，然後套用定位（如先前所定義）以排除產生的設定檔。
+   * **[!UICONTROL User filters]** ：此選項可讓您存取預先設定的篩選器，以使用這些篩選器作為資料庫中設定檔的篩選條件。 預先設定的篩選器會顯示在[此區段](../../platform/using/creating-filters.md#saving-a-filter)之中。
+   * 選項&#x200B;**[!UICONTROL Exclude recipients corresponding to this segment]**&#x200B;可讓您鎖定不符合已定義之目標條件的收件者。 若要使用此選項，請選取適當的方框，然後套用定位 (如先前所定義) 以排除產生的設定檔。
 
      ![](assets/s_ncs_user_wizard_email02g.png)
 
-1. 在&#x200B;**[!UICONTROL Label]**&#x200B;欄位中輸入此定位的名稱。 依預設，標籤將是第一個鎖定目標條件的標籤。 若為組合，最好使用明確名稱。
+1. 在 **[!UICONTROL Label]** 欄位輸入此目標選擇的名稱。 依預設，標籤將是第一個鎖定目標條件的標籤。 若為組合，最好使用明確名稱。
 1. 按一下&#x200B;**[!UICONTROL Finish]**&#x200B;以驗證設定的鎖定目標。
 
-   主要目標設定索引標籤的中央區段中會摘要說明已定義的鎖定目標條件。 按一下條件以檢視其內容（設定和預覽）。 若要刪除條件，請按一下位於其標籤後面的十字形。
+   主要目標設定索引標籤的中央區段會摘要說明已定義的鎖定目標標準。 按一下標準以檢視其內容 (設定和預覽)。 若要刪除標準，請按一下位於其標籤後面的十字形。
 
    ![](assets/s_ncs_user_wizard_email02h.png)
 
@@ -88,8 +88,8 @@ ht-degree: 3%
 
 操作步驟：
 
-1. 按一下&#x200B;**[!UICONTROL To]**&#x200B;連結以選取傳遞的收件者。
-1. 選取&#x200B;**[!UICONTROL Defined in an external file]**&#x200B;選項。
+1. 按一下 **[!UICONTROL To]** 連結以選取傳遞的收件者。
+1. 選取 **[!UICONTROL Defined in an external file]** 選項。
 
    ![](assets/s_ncs_user_wizard_external_recipients.png)
 
@@ -97,11 +97,11 @@ ht-degree: 3%
 
    您也可以選擇&#x200B;**[!UICONTROL Do not import the recipients into the database]**。
 
-1. 匯入收件者時，按一下&#x200B;**[!UICONTROL File format definition...]**&#x200B;連結以選取並設定外部檔案。
+1. 匯入收件者時，按一下 **[!UICONTROL File format definition...]** 連結以選取並設定外部檔案。
 
    如需資料匯入的詳細資訊，請參閱[本節](../../platform/using/executing-import-jobs.md#step-2---source-file-selection)。
 
-1. 按一下&#x200B;**[!UICONTROL Finish]**&#x200B;並將您的傳遞設定為標準傳遞。
+1. 按一下 **[!UICONTROL Finish]** 並將您的傳遞設定為標準傳遞。
 
 >[!CAUTION]
 >
@@ -111,7 +111,7 @@ ht-degree: 3%
 
 由服務提供者(IAP)提供地址錯誤和品質評等。 此資訊會在傳遞動作後自動更新收件者設定檔中，並包含服務提供者傳回的檔案。 您可以在設定檔中以唯讀方式檢視它。
 
-您可以選擇排除已達到特定連續錯誤數或品質評等低於此視窗中所指定臨界值的地址。 您也可以選擇是否授權未傳回任何資料的非限定地址。
+您可以選擇排除已達到特定連續錯誤數或品質評等低於此視窗中所指定臨界值的地址。 您也可以選擇是否授權未傳回任何資料的不合格位址。
 
 >[!NOTE]
 >
@@ -121,7 +121,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->建議使用預設引數，但您可以根據需求調整設定。 不過，這些選項僅應由專家使用者變更，以避免任何誤用和錯誤。
+>建議使用預設參數，但您可以根據需求調整設定。 不過，這些選項應僅由專家使用者變更，以避免任何誤用和錯誤。
 
 按一下&#x200B;**[!UICONTROL Edit...]**&#x200B;連結以修改預設設定。
 
@@ -142,14 +142,14 @@ ht-degree: 3%
 
      ![](assets/s_ncs_user_wizard_email02j.png)
 
-* **[!UICONTROL Exclude recipients who no longer want to be contacted]** ，即電子郵件地址位於封鎖清單上的收件者（「選擇退出」）。 為了遵守電子行銷的職業道德和電子商務的相關法律，必須保持選取此選項。
+* **[!UICONTROL Exclude recipients who no longer want to be contacted]** ，即電子郵件地址位於封鎖清單上的收件者 (「選擇退出」)。 為了遵守電子行銷的職業道德和電子商務的相關法律，必須保持選取此選項。
 * **[!UICONTROL Exclude quarantined recipients]**。 此選項可讓您從目標排除位址未回應的任何設定檔。 我們強烈建議維持選取此選項。
 
   >[!NOTE]
   >
   >如需隔離管理的詳細資訊，請參閱[瞭解隔離管理](understanding-quarantine-management.md)。
 
-* **[!UICONTROL Limit delivery]**&#x200B;至指定數目的訊息。 此選項可讓您輸入要傳送的訊息數目上限。 如果目標的內容超過指示的訊息數，則會將隨機選取專案套用至目標。
+* **[!UICONTROL Limit delivery]** 至指定數目的訊息。 此選項可讓您輸入要傳送的訊息數目上限。 如果目標的內容超過指示的訊息數，則會將隨機選取專案套用至目標。
 
 ### 減少目標母體大小 {#reducing-the-size-of-the-target-population}
 
@@ -247,8 +247,8 @@ ht-degree: 3%
 
 ## 教學課程影片 {#seeds-and-proofs-video}
 
-在本影片中，您將瞭解如何新增種子和校樣到現有電子郵件以及如何傳送它。
+您可以在本影片瞭解如何向現有電子郵件新增種子和校樣，以及如何傳送。
 
 >[!VIDEO](https://video.tv.adobe.com/v/25606?quality=12)
 
-[此處](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant)提供其他Campaign Classic操作說明影片。
+其他 Campaign Classic 作法影片可在[此處](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant)取得。

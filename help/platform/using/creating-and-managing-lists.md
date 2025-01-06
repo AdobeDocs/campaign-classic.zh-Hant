@@ -6,10 +6,10 @@ feature: Profiles
 role: User
 level: Beginner
 exl-id: 711b84cd-bac8-4f1a-9999-0124fbfc3a01
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '799'
-ht-degree: 28%
+ht-degree: 29%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 28%
 
 ## 什麼是清單？ {#about-lists-in-adobe-campaign}
 
-清單是一組靜態的設定檔，可在傳遞動作中定位，或在匯入作業或工作流程執行期間更新。 例如，透過查詢而從資料庫中摘取出的母體可形成一個清單。
+清單是一組靜態的設定檔，可在傳遞動作中定位，或在匯入作業或工作流程執行期間更新。 例如，透過查詢而從資料庫中摘取出的群體可形成一個清單。
 
 清單是透過&#x200B;**[!UICONTROL Profiles and targets]**&#x200B;索引標籤中的&#x200B;**[!UICONTROL Lists]**&#x200B;連結建立及管理的。
 
@@ -142,4 +142,4 @@ Adobe Campaign 提供兩種類型的清單：
 
 >[!VIDEO](https://video.tv.adobe.com/v/25603?quality=12)
 
-[此處](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant)提供其他Campaign Classic操作說明影片。
+其他 Campaign Classic 作法影片可在[此處](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant)取得。

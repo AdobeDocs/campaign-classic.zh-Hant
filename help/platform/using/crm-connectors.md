@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 7ccab3a4-f323-464a-9ec4-dd597279d0eb
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '158'
 ht-degree: 41%
@@ -39,7 +39,7 @@ Adobe Campaign 提供各種 CRM 連接器，用於將您的 Adobe Campaign 平�
 
 ### 實施步驟 {#crm-implementation-steps}
 
-在本節](../../platform/using/crm-ms-dynamics.md)中瞭解連線Campaign與Microsoft Dynamics [的逐步程式
+在本節](../../platform/using/crm-ms-dynamics.md)中瞭解連線Campaign和Microsoft Dynamics [的逐步程式
 
 
-在本節](../../platform/using/crm-sfdc.md)中瞭解連線Campaign與Salesforce [的逐步程式
+在本節](../../platform/using/crm-sfdc.md)中瞭解連線Campaign和Salesforce [的逐步程式

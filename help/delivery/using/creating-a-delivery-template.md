@@ -7,10 +7,10 @@ hide: true
 hidefromtoc: true
 role: User
 exl-id: 40a03e04-56c7-48c0-95b8-aa7bf1121048
-source-git-commit: 446062946b64c9a4d065b6a56d263914cbe628f8
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '378'
-ht-degree: 7%
+ht-degree: 9%
 
 ---
 
@@ -88,4 +88,4 @@ ht-degree: 7%
 
 >[!VIDEO](https://video.tv.adobe.com/v/24065?quality=12)
 
-[此處](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant)提供其他Campaign Classic操作說明影片。
+其他 Campaign Classic 作法影片可在[此處](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant)取得。

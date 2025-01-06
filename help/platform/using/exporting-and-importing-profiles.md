@@ -7,14 +7,14 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 exl-id: fd0f7b6e-84e1-442d-ae88-817fb6758d64
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '140'
-ht-degree: 30%
+ht-degree: 36%
 
 ---
 
-# 匯入及匯出設定檔{#exporting-and-importing-profiles}
+# 匯入及匯出輪廓{#exporting-and-importing-profiles}
 
 
 
@@ -41,4 +41,4 @@ ht-degree: 30%
 
 >[!VIDEO](https://video.tv.adobe.com/v/25608?quality=12)
 
-[此處](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant)提供其他Campaign Classic操作說明影片。
+其他 Campaign Classic 作法影片可在[此處](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant)取得。

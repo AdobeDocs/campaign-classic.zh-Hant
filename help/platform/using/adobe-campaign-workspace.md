@@ -6,10 +6,10 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 5f689679-7148-4abd-a9bf-185854c64b13
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '916'
-ht-degree: 30%
+ht-degree: 31%
 
 ---
 
@@ -99,7 +99,7 @@ ht-degree: 30%
 
 每個核心功能區段都可讓您瀏覽可用的元素。 若要這麼做，請使用&#x200B;**[!UICONTROL Browsing]**&#x200B;區段中的捷徑。 **[!UICONTROL Other choices]**&#x200B;連結可讓您存取所有其他頁面，無論環境為何。
 
-您可以建立新元素（傳送、Web應用程式、工作流程等） 使用熒幕左側&#x200B;**[!UICONTROL Create]**&#x200B;區段中的捷徑。 使用清單上方的&#x200B;**[!UICONTROL Create]**&#x200B;按鈕，將新元素新增至清單。
+您可以使用畫面左側&#x200B;**[!UICONTROL Create]**&#x200B;區段中的捷徑來建立新元素（傳遞、Web應用程式、工作流程等）。 使用清單上方的&#x200B;**[!UICONTROL Create]**&#x200B;按鈕，將新元素新增至清單。
 
 例如，在傳遞頁面上，使用&#x200B;**[!UICONTROL Create]**&#x200B;按鈕來建立新傳遞。
 
@@ -172,4 +172,4 @@ ht-degree: 30%
 
 >[!VIDEO](https://video.tv.adobe.com/v/35130?quality=12)
 
-[此處](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant)提供其他Campaign Classic操作說明影片。
+其他 Campaign Classic 作法影片可在[此處](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant)取得。

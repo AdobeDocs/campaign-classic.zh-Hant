@@ -8,7 +8,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 3405efb8-a37c-4622-a271-63d7a4148751
-source-git-commit: 517b85f5d7691acc2522bf4541f07c34c60c7fbf
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '1511'
 ht-degree: 1%
@@ -494,4 +494,4 @@ XPath是一種語法，可讓您在XML檔案的樹狀結構中尋找節點。
 * [資料庫對應](database-mapping.md)
 * [連結管理](database-links.md)
 * [金鑰管理](database-keys.md)
-* [Campaign資料模型](about-data-model.md)
+* [Campaign 資料模型](about-data-model.md)

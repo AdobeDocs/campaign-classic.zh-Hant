@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 7fc24ef2-b021-440b-b1f2-8c77e2425328
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '735'
 ht-degree: 95%
@@ -24,13 +24,13 @@ ht-degree: 95%
 
 ### 什麼是傳遞分析？ {#what-is-the-delivery-analysis-}
 
-傳遞分析是計算目標母體以及準備傳遞內容的階段。完成傳遞分析後便可傳遞內容。查閱記錄以確定所有事項都正確無誤。
+傳遞分析是計算目標群體以及準備傳遞內容的階段。完成傳遞分析後便可傳遞內容。查閱記錄以確定所有事項都正確無誤。
 
 [按一下這裡以瞭解更多](../../delivery/using/steps-validating-the-delivery.md)。
 
 ### 為何要建立測試？ {#why-should-i-create-proofs-}
 
-Adobe 強烈建議您先建立驗證訊息，並在正式發送前先行在核准組測試傳送內容。那麼您就可以驗證訊息內容、個人化及傳遞參數。
+Adobe 強烈建議您先建立校樣訊息，並在正式發送前先行在核准組測試傳送內容。那麼您就可以驗證訊息內容、個人化及傳遞參數。
 
 [按一下這裡以瞭解更多](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)。
 
@@ -40,14 +40,14 @@ Adobe 強烈建議您先建立驗證訊息，並在正式發送前先行在核�
 
 這樣將提供下列好處：
 
-* 使用收件者用戶檔案中的資料隨機替代欄位：例如，您可以在種子地址區段中僅輸入電子郵件地址。
+* 使用收件者輪廓中的資料隨機替代欄位：例如，您可以在種子地址區段中僅輸入電子郵件地址。
 * 工作流程中運用了資料管理功能時，可在種子地址層級輸入傳送中處理的其他資料，以強制執行此值：可作為隨機值替代的另一做法。
 
 [按一下這裡以深入瞭解種子地址](../../delivery/using/about-seed-addresses.md)。
 
 ### 如何設定傳送訊息前的驗證過程？ {#how-can-i-set-up-an-approval-process-before-sending-messages-}
 
-若要檢測訊息設定中可能出現的錯誤，Adobe 強烈建議您配置傳遞驗證階段。要經常性地透過傳送驗證訊息測試收件者，確保核准內容。每次進行變更時都必須傳送驗證訊息，以核准內容。
+若要檢測訊息設定中可能出現的錯誤，Adobe 強烈建議您配置傳遞驗證階段。透過傳送校樣給測試收件人，以確保內容在必要時經常獲得核准。每次進行變更時，都應發送校樣，以核准內容。
 
 [按一下這裡以瞭解更多](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)。
 
@@ -63,11 +63,11 @@ Adobe 強烈建議您先建立驗證訊息，並在正式發送前先行在核�
 
 ### 如何分批次傳送電子郵件？ {#how-can-i-send-emails-in-waves-}
 
-在將內容傳送給較大母體之前，您可以[配置批次](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves)以將訊息劃分為幾個批次，以平衡其負載。
+在將內容傳送給較大群體之前，您可以[配置批次](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves)以將訊息劃分為幾個批次，以平衡其負載。
 
 ### 在 Campaign 中建立電子郵件有哪些重要步驟？ {#which-are-the-key-steps-to-create-an-email-in-campaign-}
 
-建立並驗證電子郵件之後，您就可以進行傳送。您可以決定立即向主要目標傳送電子郵件，還是在以後排程傳遞。如有需要，您也可以先行估計目標母體。
+建立並驗證電子郵件之後，您就可以進行傳送。您可以決定立即向主要目標傳送電子郵件，還是在以後排程傳遞。如有需要，您也可以先行估計目標群體。
 
 [按一下這裡以瞭解更多](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)。
 

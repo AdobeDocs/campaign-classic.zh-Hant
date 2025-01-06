@@ -8,7 +8,7 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 8b07447c-9a86-4b56-8d29-e0b01357a6ec
-source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '3389'
 ht-degree: 2%
@@ -237,7 +237,7 @@ Adobe Campaign會套用&#x200B;**管理> Campaign Management >無法傳遞的專
 
 1. **在現有執行個體中新增追蹤支援**
 
-   如果例項是為其他需求（MTA伺服器等）而建立，則此選項適用 在做為追蹤伺服器的伺服器上。
+   如果例項是為其他需求（MTA伺服器等）在將作為追蹤伺服器的伺服器上建立的，則此選項適用。
 
    ![](assets/s_ncs_install_deployment_wiz_11.png)
 

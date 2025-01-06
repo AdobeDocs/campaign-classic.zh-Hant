@@ -4,7 +4,7 @@ title: 開始使用異動訊息
 description: 進一步瞭解Adobe Campaign Classic異動訊息傳送操作原理和關鍵步驟
 feature: Transactional Messaging, Message Center
 exl-id: dc52e789-d0bf-4e8f-b448-9d69a2762cc1
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '640'
 ht-degree: 4%

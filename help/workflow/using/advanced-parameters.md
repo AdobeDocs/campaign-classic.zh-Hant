@@ -4,7 +4,7 @@ title: 高級參數
 description: 高級參數
 feature: Workflows, Data Management
 exl-id: 6c90ac2f-0d2b-48b0-9245-3e5e3a3d027c
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '501'
 ht-degree: 5%
@@ -79,6 +79,6 @@ ht-degree: 5%
 
 此欄位可讓您初始化變數或修改活動屬性。 如需詳細資訊，請參閱： [JavaScript指令碼和範本](javascript-scripts-and-templates.md)。
 
-## 評論 {#comment}
+## 備註 {#comment}
 
 **[!UICONTROL Comment]**&#x200B;欄位是免費欄位，可讓您新增說明。

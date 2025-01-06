@@ -8,7 +8,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 515adad2-6129-450a-bb9e-fc80127835af
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '3094'
 ht-degree: 0%
@@ -51,7 +51,7 @@ ht-degree: 0%
 步驟如下：
 
 1. **mta**&#x200B;會選取符合資格的郵件，並指派可用的&#x200B;**mtachild**&#x200B;給他們。
-1. **mtachild**&#x200B;載入建立郵件所需的所有資訊（內容、個人化元素、附件、影像等） 並將訊息轉寄給&#x200B;**電子郵件流量整形器**。
+1. **mtachild**&#x200B;載入建立郵件所需的所有資訊（內容、個人化元素、附件、影像等），並將郵件轉寄給&#x200B;**電子郵件流量整形程式**。
 1. 電子郵件流量整形器一收到統計伺服器的授權(**smtp stat**)，郵件就會傳送給收件者。
 
 ![](assets/s_ncs_install_email_traffic_shaper.png)
@@ -105,7 +105,7 @@ ht-degree: 0%
 
 捨棄的訊息會傳回&#x200B;**mta**，不再由&#x200B;**mtachild**&#x200B;管理。
 
-**mta**&#x200B;決定此郵件的程式（復原、放棄、隔離等） 視回應代碼和規則而定。
+**mta**&#x200B;會根據回應代碼和規則，決定此郵件的程式（復原、放棄、隔離等）。
 
 ### 訊息待處理 {#message-pending}
 

@@ -5,7 +5,7 @@ description: 開始使用Campaign調查
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Surveys
 exl-id: 7061a4f1-006f-4f19-8761-918d8930d885
-source-git-commit: 8e5a328bee7701adfedec6a533cc21b4ce548187
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 3%
@@ -43,7 +43,7 @@ Adobe Campaign包含圖形模組，可定義及發佈網頁應用程式。 這�
 * 新增個人化並定義欄位位置
 * 根據答案之調查欄位的條件顯示，
 * 條件頁面顯示，
-* 根據預期的資料型別（數字、電子郵件地址、日期等），在核准前檢查資訊 和必填欄位，
+* 根據預期的資料型別（數字、電子郵件地址、日期等）和必填欄位，在核准前檢查資訊。
 * 傳送電子郵件邀請/通知，
 * 個人化錯誤和結束頁面，
 * 在表單中新增影像、影片、超文字連結、驗證碼等

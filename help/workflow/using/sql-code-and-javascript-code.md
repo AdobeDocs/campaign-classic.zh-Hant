@@ -4,7 +4,7 @@ title: SQL 程式碼和 JavaScript 程式碼
 description: 深入瞭解SQL和JavaScript程式碼工作流程活動
 feature: Workflows
 exl-id: 729a2010-c2d8-481b-8c9e-780b9e5f97ef
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 13%

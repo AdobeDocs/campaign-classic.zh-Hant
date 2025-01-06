@@ -6,7 +6,7 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: f469689f9e8a4d805fb95a1ae120ccd35aba3731
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '3782'
 ht-degree: 100%
@@ -406,7 +406,7 @@ Android 的推播通知改善 - [閱讀更多資訊](../../delivery/using/config
 
 * [如何使用個人化欄位進行電子郵件個人化](../../delivery/using/personalization-fields.md)
 
-* [如何管理電子郵件中的種子和證明](../../delivery/using/steps-defining-the-target-population.md)
+* [如何管理電子郵件中的種子和校樣](../../delivery/using/steps-defining-the-target-population.md)
 
 * [如何設定循環傳送](../../workflow/using/recurring-delivery.md)
 

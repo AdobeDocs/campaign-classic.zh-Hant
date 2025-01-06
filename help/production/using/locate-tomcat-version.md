@@ -8,7 +8,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 76411b29-d300-4aaa-8d3b-d8ff74c3ce93
-source-git-commit: fd4a815bca23b94590012c4883cfaa9c29b6f118
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '515'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Adobe Campaign使用名為Apache Tomcat **的**&#x200B;內嵌Web servlet來處�
 
 Tomcat會在Java上執行，並需要安裝JDK。 如需詳細資訊，請參閱[Campaign相容性矩陣](../../rn/using/compatibility-matrix.md)一節中的Java開發套件(JDK)。
 
-Adobe Campaign中使用的Tomcat是自訂的內嵌版本，該版本未使用Tomcat完整一般可用版本的所有功能，並且可能沒有完整版本的所有漏洞。 Tomcat也不應該公開給外部網際網路，而任何公開的Adobe Campaign執行個體都應該有外部網頁伺服器（IIS、Apache等） 在Tomcat前保護它。
+Adobe Campaign中使用的Tomcat是自訂的內嵌版本，該版本未使用Tomcat完整一般可用版本的所有功能，並且可能沒有完整版本的所有漏洞。 Tomcat也不應該公開給外部網際網路，任何公開的Adobe Campaign執行個體都應該在Tomcat前面有外部網頁伺服器（IIS、Apache等）來保護它。
 
 Tomcat內嵌版本的新版本或升級版本只會隨Adobe Campaign本身的新組建發行，而不會作為Adobe Campaign組建以外的個別修補程式發行。
 
