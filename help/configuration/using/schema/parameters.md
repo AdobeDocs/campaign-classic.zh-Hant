@@ -4,7 +4,7 @@ title: 結構元素和屬性 — 引數元素
 description: parameters元素
 feature: Schema Extension
 exl-id: 54538c3e-3232-4bf7-a09c-dacf0f072be5
-source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
+source-git-commit: 254c89490fefa5d405bcecd2f1781df46450a873
 workflow-type: tm+mt
 source-wordcount: '48'
 ht-degree: 12%
@@ -13,7 +13,6 @@ ht-degree: 12%
 
 # parameters元素 {#parameters--element}
 
-![](../../../assets/v7-only.svg)
 
 ## 內容模型 {#content-model-13}
 

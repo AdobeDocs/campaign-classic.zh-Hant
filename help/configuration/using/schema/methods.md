@@ -4,7 +4,7 @@ title: 結構元素和屬性 — methods元素
 description: 方法元素
 feature: Schema Extension
 exl-id: f45e32ce-6534-4df2-ac7c-ba1134f0ffc8
-source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
+source-git-commit: 254c89490fefa5d405bcecd2f1781df46450a873
 workflow-type: tm+mt
 source-wordcount: '42'
 ht-degree: 11%
@@ -13,7 +13,6 @@ ht-degree: 11%
 
 # 方法元素 {#methods--element}
 
-![](../../../assets/v7-only.svg)
 
 ## 內容模型 {#content-model-11}
 

@@ -4,7 +4,7 @@ title: 元素和屬性 — dbindex元素
 description: dbindex元素
 feature: Schema Extension
 exl-id: d7d1e427-12e0-4f07-9e01-d184dbe2ebf1
-source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
+source-git-commit: 254c89490fefa5d405bcecd2f1781df46450a873
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 1%
@@ -13,7 +13,6 @@ ht-degree: 1%
 
 # dbindex元素 {#dbindex--element}
 
-![](../../../assets/v7-only.svg)
 
 ## 內容模型 {#content-model-3}
 
