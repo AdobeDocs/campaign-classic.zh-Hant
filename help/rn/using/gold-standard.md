@@ -9,9 +9,9 @@ hidefromtoc: true
 hide: true
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1774'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ _2021 年 8 月 27 日_
 
 建置 9032@99a3894 包含以下修正：
 
-* 追蹤簽章功能已經過改良，以防止連結至協力廠商工具（電子郵件使用者端、網際網路瀏覽器等）處理特殊字元方式的錯誤。 URL 參數現在已編碼。
+* 追蹤簽章功能已經過改良，以防止連結至第三方工具 (電子郵件用戶端、網際網路瀏覽器等) 的錯誤 URL 參數現在已編碼。
 * 修正日期選擇器可能導致主控台顯示封鎖程式錯誤訊息的問題。 (NEO-36345)
 
 ### [!DNL Gold Standard] 11 發行版本{#gs-11}
