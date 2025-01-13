@@ -8,9 +8,9 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 3e55d7f5-2858-4390-bba9-8fb5be0c3d98
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: b500b2cbf68fd46bd84ddbfa71cf9431c6b60060
 workflow-type: tm+mt
-source-wordcount: '1007'
+source-wordcount: '1005'
 ht-degree: 1%
 
 ---
@@ -125,7 +125,7 @@ ht-degree: 1%
 
    ![](assets/mid_recette_user_restrictions.png)
 
-1. 使用下列命令重新啟動Web模組： **nlserver重新啟動web**。
+1. 使用下列命令重新啟動Web模組： ** web**。
 
 您必須變更serverConf.xml檔案中的中間來源伺服器設定。 下列行必須新增至「管理IP位址的相似性」區段（位於現有行下）：
 
