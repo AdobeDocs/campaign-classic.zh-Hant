@@ -6,7 +6,7 @@ badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v
 feature: Email
 role: User, Developer, Data Engineer
 exl-id: 1bb36e71-9f1a-4553-b266-eca3f48688e2
-source-git-commit: f7da066d32391341e449397d64853fcbae639a59
+source-git-commit: 09b79849fa9db15dd53d1ed56630a34915aa32ad
 workflow-type: tm+mt
 source-wordcount: '912'
 ht-degree: 10%
@@ -33,7 +33,7 @@ Adobe Campaign可讓您只要新增密件副本電子郵件地址至訊息目標
 
 >[!NOTE]
 >
->如果您使用含有[Enhanced MTA](ending-with-enhanced-mta.md)的電子郵件密件副本，則所有傳遞都會自動啟用此選項。
+>如果您使用含有[Enhanced MTA](sending-with-enhanced-mta.md)的電子郵件密件副本，則所有傳遞都會自動啟用此選項。
 
 若要為電子郵件傳遞範本啟用電子郵件密件副本，請遵循下列步驟：
 
