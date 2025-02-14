@@ -5,9 +5,11 @@ description: 瞭解如何控制成本
 feature: Resource Management
 audience: campaign
 content-type: reference
+hide: true
+hidefromtoc: true
 topic-tags: tasks--resources-and-budgets
 exl-id: 6765e307-915a-44d2-a486-85c64e8ec52e
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 942edcf028207eab2ea583949ebc99ab61539ea0
 workflow-type: tm+mt
 source-wordcount: '2488'
 ht-degree: 0%
@@ -191,7 +193,7 @@ Adobe Campaign可讓您控制已排程、已確認及已開立商業發票的行
 
 1. 計算成本
 
-   計算的成本取決於相關的元素（行銷活動、傳遞、任務等） 及其狀態（正在編輯、進行中、已完成）。 在任何情況下，如果指定了實際成本，則計算的成本將使用此金額。
+   計算的成本取決於相關的元素（行銷活動、傳遞、任務等）及其狀態（正在編輯、進行中、已完成）。 在任何情況下，如果指定了實際成本，則計算的成本將使用此金額。
 
    如果未提供實際成本，則套用下列規則：
 

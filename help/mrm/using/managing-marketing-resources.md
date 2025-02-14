@@ -5,9 +5,11 @@ description: 瞭解如何管理行銷資源
 feature: Resource Management
 audience: campaign
 content-type: reference
+hide: true
+hidefromtoc: true
 topic-tags: tasks--resources-and-budgets
 exl-id: f661e1d1-de2f-4c6a-bbff-e3ffcd1831f0
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 942edcf028207eab2ea583949ebc99ab61539ea0
 workflow-type: tm+mt
 source-wordcount: '1386'
 ht-degree: 1%
@@ -210,7 +212,7 @@ Adobe Campaign可讓您管理和追蹤行銷活動生命週期中涉及的行銷
 
 當庫存不足時，系統會傳送警告給相關運運算元。
 
-## 進階函式 {#advanced-functions}
+## 進階功能 {#advanced-functions}
 
 行銷資源儀表板可讓您執行常見的操作型別：新增、編輯、鎖定/解鎖、核准、發佈。 您可以建立其他型別的行銷資源，並透過Adobe Campaign樹存取進階功能。 若要這麼做，請按一下Adobe Campaign首頁中的&#x200B;**[!UICONTROL Explorer]**。
 
