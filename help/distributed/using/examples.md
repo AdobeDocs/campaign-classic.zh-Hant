@@ -3,8 +3,10 @@ product: campaign
 title: 分散式行銷範例
 description: 分散式行銷範例
 feature: Distributed Marketing
+hide: true
+hidefromtoc: true
 exl-id: 2bef6b5e-887e-4c56-bb4b-3583472ca333
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 36fe54cf6d4d762d96205bd637311a426c741427
 workflow-type: tm+mt
 source-wordcount: '1296'
 ht-degree: 0%
@@ -96,7 +98,7 @@ ht-degree: 0%
 
 1. 建立&#x200B;**[!UICONTROL Data distribution]**&#x200B;活動。
 1. 建立合作行銷活動。
-1. Publish促銷活動。
+1. 發佈行銷活動。
 
 ### 本機實體側 {#local-entity-side}
 
@@ -157,7 +159,7 @@ ht-degree: 0%
 
 1. 儲存您的記錄。
 
-#### Publish行銷活動 {#publishing-the-campaign}
+#### 發佈行銷活動 {#publishing-the-campaign}
 
 您現在可以從&#x200B;**[!UICONTROL Campaigns]**&#x200B;索引標籤新增&#x200B;**行銷活動套件**。
 

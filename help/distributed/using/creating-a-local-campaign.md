@@ -3,8 +3,10 @@ product: campaign
 title: 建立本機行銷活動
 description: 建立本機行銷活動
 feature: Distributed Marketing
+hide: true
+hidefromtoc: true
 exl-id: 17b5865a-5e04-4b3b-8b6a-12d5c1a9c1da
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 36fe54cf6d4d762d96205bd637311a426c741427
 workflow-type: tm+mt
 source-wordcount: '1565'
 ht-degree: 1%
@@ -105,7 +107,7 @@ Web介面對應於由本機實體在訂購行銷活動時填寫的表單。
 
 ### 文件 {#documents}
 
-您可以允許本機實體運運算元連結檔案（文字檔案、試算表、影像、行銷活動說明等） 至本機行銷活動。 **[!UICONTROL Advanced parameters for campaign entry...]**&#x200B;連結可讓您限制檔案數目。 若要這麼做，只要在&#x200B;**[!UICONTROL Number of documents]**&#x200B;欄位中輸入允許的最大數目即可。
+建立訂單時，您可以允許本機實體運運算元將檔案（文字檔、試算表、影像、行銷活動說明等）連結至本機行銷活動。 **[!UICONTROL Advanced parameters for campaign entry...]**&#x200B;連結可讓您限制檔案數目。 若要這麼做，只要在&#x200B;**[!UICONTROL Number of documents]**&#x200B;欄位中輸入允許的最大數目即可。
 
 ![](assets/s_advuser_mkg_dist_local_docs.png)
 

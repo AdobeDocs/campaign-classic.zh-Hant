@@ -3,8 +3,10 @@ product: campaign
 title: 建立協作行銷活動
 description: 瞭解如何建立合作行銷活動
 feature: Distributed Marketing
+hide: true
+hidefromtoc: true
 exl-id: 17313fe5-ad42-45ca-a35a-1e7aa89380ef
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 36fe54cf6d4d762d96205bd637311a426c741427
 workflow-type: tm+mt
 source-wordcount: '915'
 ht-degree: 4%
