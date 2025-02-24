@@ -8,16 +8,17 @@ audience: platform
 content-type: reference
 topic-tags: filtering-data
 exl-id: 58e54f67-dc87-42f1-8426-6f801e8e4fb6
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 813ef65ff45407a92c5f9d7f3d07189972a5742b
 workflow-type: tm+mt
-source-wordcount: '1979'
-ht-degree: 1%
+source-wordcount: '166'
+ht-degree: 3%
 
 ---
 
 # 建立篩選器{#creating-filters}
 
 
+資料篩選是選取資料集的較小部分（僅限符合特定條件的記錄）並將該子集用於特定動作（更新、建立對象）或分析的程式。
 
 當您在Adobe Campaign樹狀結構中進行導覽（從首頁的&#x200B;**[!UICONTROL Explorer]**&#x200B;功能表）時，資料庫中包含的資料會顯示於清單中。 這些清單可設定為僅顯示運運算元所需的資料。 接著，您就可以針對篩選的資料啟動動作。 篩選設定可讓您從清單&#x200B;**[!UICONTROL dynamically]**&#x200B;中選取資料。 如果修改資料，則會更新篩選的資料。
 
@@ -25,357 +26,365 @@ ht-degree: 1%
 >
 >使用者介面組態設定是在裝置層級本機定義的。 有時可能必須清除此資料，尤其是在重新整理資料時發生問題時。 若要這麼做，請使用&#x200B;**[!UICONTROL File > Clear the local cache]**&#x200B;功能表。
 
-## 可用篩選器的型別 {#typology-of-available-filters}
+>[!NOTE]
+>
+>若要進一步瞭解篩選器及其使用方式，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-audiences/create-filters){target=_blank}。
 
-Adobe Campaign可讓您將篩選器套用至資料清單。
 
-這些篩選器僅能使用一次，您也可以儲存以供日後使用。 您可以同時套用數個篩選器。
+<!--
 
-Adobe Campaign中有以下篩選器型別：
+## Typology of available filters {#typology-of-available-filters}
 
-* **預設篩選器**
+Adobe Campaign lets you apply filters to data lists.
 
-  可透過清單上方的欄位存取&#x200B;**預設篩選器**。 它可讓您依預先定義的欄位進行篩選（對於收件者設定檔，預設為名稱和電子郵件地址）。 您可以使用欄位來輸入要篩選的字元，或從下拉式清單中選取篩選條件。
+These filters can be used once, or you can save them for future use. You can apply several filters at the same time.
+
+The following filter types are available in Adobe Campaign:
+
+* **Default filters**
+
+  The **default filter** is accessible via the fields located above the lists. It lets you filter on predefined fields (for recipient profiles, these are the name and email address by default). You can use the fields to enter the characters to filter on or to selection the filter conditions from a drop-down list.
 
   ![](assets/filters_recipient_default_filter.png)
 <!--
   >[!NOTE]
   >
   >The **%** character replaces any character string. For example, the string `%@yahoo.com` lets you display all the profiles with an email address in the domain "yahoo.com".
--->
-您可以變更清單的預設篩選器。 如需詳細資訊，請參閱[變更預設篩選器](#altering-the-default-filter)。
 
-* **簡單篩選器**
+  You can change the default filter of a list. For more on this, refer to [Change the default filter](#altering-the-default-filter).
 
-  **簡單篩選器**&#x200B;是資料行的一次性篩選器。 它們是在顯示的欄上以一個或多個簡單搜尋條件定義的。
+* **Simple filters**
 
-  您可以在相同的資料清單上結合數個簡單的篩選器，以縮小搜尋範圍。 篩選器欄位會一個顯示在另一個欄位下方。 它們可以各自獨立刪除。
+  **Simple filters** are one-off filters on the columns. They are defined with one or more simple search criteria on the displayed columns.
+
+  You can combine several simple filters on the same data list to refine your search. The filter fields are displayed one beneath the other. They can be deleted independently of each other.
 
   ![](assets/filters_recipient_simple_filter.png)
 
-  在[建立簡單篩選器](#creating-a-simple-filter)中會詳細說明簡單篩選器。
+  Simple filters are detailed in [Create a simple filter](#creating-a-simple-filter).
 
-* **進階篩選器**
+* **Advanced filters**
 
-  **進階篩選器**&#x200B;是使用資料上的查詢或查詢組合所建立。
+  **Advanced filters** are created using a query or a combination of queries on the data.
 
-  如需建立進階篩選的詳細資訊，請參閱[建立進階篩選](#creating-an-advanced-filter)。
+  For more on creating an advanced filter, refer to [Create an advanced filter](#creating-an-advanced-filter).
 
-  您可以使用函式來定義篩選器的內容。 如需詳細資訊，請參閱[使用函式](#creating-an-advanced-filter-with-functions)建立進階篩選器。
+  You can use functions to define the content of the filter. For more on this, refer to [Create an advanced filter with functions](#creating-an-advanced-filter-with-functions).
 
   >[!NOTE]
   >
-  >如需在Adobe Campaign中建立查詢的詳細資訊，請參閱[本節](../../platform/using/about-queries-in-campaign.md)。
+  >For more on building queries in Adobe Campaign, refer to [this section](../../platform/using/about-queries-in-campaign.md).
 
-* **使用者篩選器**
+* **User filters**
 
-  **應用程式篩選器**&#x200B;是已儲存的進階篩選器，可用來與其他運運算元共用其組態。
+  An **application filter** is an advanced filter that has been saved, to use and share its configuration with the other operators.
 
-  位於清單上方的&#x200B;**[!UICONTROL Filters]**&#x200B;按鈕提供一組應用程式篩選器，可結合這些篩選器以調整篩選。 建立這些篩選的方法會顯示在[儲存篩選](#saving-a-filter)中。
+  The **[!UICONTROL Filters]** button located above the lists offers a set of application filters that can be combined to refine the filtering. The method for creating these filters is presented in [Save a filter](#saving-a-filter).
 
-## 變更預設篩選器 {#altering-the-default-filter}
+## Change the default filter {#altering-the-default-filter}
 
-若要變更收件者清單的預設篩選器，請按一下樹狀結構的&#x200B;**[!UICONTROL Profiles and Targets > Pre-defined filters]**&#x200B;節點。
+To change the default filter for a recipient list, click the **[!UICONTROL Profiles and Targets > Pre-defined filters]** node of the tree.
 
-對於所有其他型別的資料，請透過&#x200B;**[!UICONTROL Administration > Configuration > Predefined filters]**&#x200B;節點設定預設篩選器。
+For all other types of data, configure the default filter via the **[!UICONTROL Administration > Configuration > Predefined filters]** node.
 
-應用以下步驟：
+Apply the following steps:
 
-1. 選取預設要使用的篩選器。
-1. 按一下「**[!UICONTROL Parameters]**」索引標籤並選取「**[!UICONTROL Default filter for the associated document type]**」。
+1. Select the filter you want to be used by default.
+1. Click the **[!UICONTROL Parameters]** tab and select **[!UICONTROL Default filter for the associated document type]**.
 
    ![](assets/s_ncs_user_default_filter.png)
 
    >[!CAUTION]
    >
-   >如果預設篩選器已套用至清單，則需在套用新篩選器之前先將其停用。 若要這麼做，請按一下篩選欄位右側的紅十字。
+   >If a default filter is already applied to the list, you need to disable it before applying a new filter. To do this, click the red cross to the right of the filtering fields.
 
-1. 按一下&#x200B;**[!UICONTROL Save]**&#x200B;以套用篩選。
+1. Click **[!UICONTROL Save]** to apply the filter.
 
    >[!NOTE]
    >
-   >篩選器定義視窗在[建立進階篩選器](#creating-an-advanced-filter)和[儲存篩選器](#saving-a-filter)中有詳細說明。
+   >The filter definition window is detailed in [Create an advanced filter](#creating-an-advanced-filter) and [Save a filter](#saving-a-filter).
 
-## 建立簡單篩選器 {#creating-a-simple-filter}
+## Create a simple filter {#creating-a-simple-filter}
 
-若要建立&#x200B;**簡單篩選器**，請套用下列步驟：
+To create a **simple filter**, apply the following steps:
 
-1. 用滑鼠右鍵按一下您要篩選的欄位，然後選取&#x200B;**[!UICONTROL Filter on this field]**。
+1. Right-click the field you want to filter and select **[!UICONTROL Filter on this field]**.
 
    ![](assets/s_ncs_user_sort_this_field.png)
 
-   預設篩選欄位會顯示在清單上方。
+   The default filter fields are displayed above the list.
 
-1. 從下拉式清單中選取篩選選項，或輸入要套用的篩選條件（選取或輸入條件的方法取決於欄位型別：文字、列舉等）。
+1. Select the filter option from the drop-down list, or enter the filter criteria to apply (the method for selecting or entering criteria depends on the type of field: text, enumerated, etc.).
 
    ![](assets/s_ncs_user_sort_fields.png)
 
-1. 若要啟動篩選，請按鍵盤上的Enter鍵，或按一下篩選欄位右側的綠色箭頭。
+1. To activate the filter, press Enter on the keyboard, or click the green arrow to the right of the filter fields.
 
-如果您要篩選資料的欄位未以設定檔形式顯示，您可以在顯示的欄中新增資料，然後在該欄中篩選。 若要這麼做，
+If the field on which you want to filter the data is not displayed in the form of the profile, you can add it in the columns displayed, then filter on that column. To do this,
 
-1. 按一下&#x200B;**[!UICONTROL Configure the list]**&#x200B;圖示。
+1. Click the **[!UICONTROL Configure the list]** icon.
 
    ![](assets/s_ncs_user_configure_list.png)
 
-1. 選取要顯示的欄，例如收件者的年齡。
+1. Select the column to be displayed, for example the age of the recipients.
 
    ![](assets/s_ncs_user_select_fields_to_display.png)
 
-1. 以滑鼠右鍵按一下收件者清單中的&#x200B;**年齡**&#x200B;欄，然後選取&#x200B;**[!UICONTROL Filter on this column]**。
+1. Right-click the **Age** column in the recipient list, and select **[!UICONTROL Filter on this column]**.
 
    ![](assets/s_ncs_user_sort_this_column.png)
 
-   然後，您可以選取年齡篩選選項。
+   You can then select the age filtering options.
 
    ![](assets/s_ncs_user_delete_filter.png)
 
-## 建立進階篩選 {#creating-an-advanced-filter}
+## Create an advanced filter {#creating-an-advanced-filter}
 
-若要建立&#x200B;**進階篩選器**，請套用下列步驟：
+To create an **advanced filter**, apply the following steps:
 
-1. 按一下&#x200B;**[!UICONTROL Filters]**&#x200B;按鈕並選取&#x200B;**[!UICONTROL Advanced filter...]**。
+1. Click the **[!UICONTROL Filters]** button and select **[!UICONTROL Advanced filter...]**. 
 
    ![](assets/filters_recipient_create_adv_filter.png)
 
-   您也可以用滑鼠右鍵按一下要篩選的資料清單，然後選取&#x200B;**[!UICONTROL Advanced filter...]**。
+   You can also right-click the list of data to filter and select **[!UICONTROL Advanced filter...]**.
 
-   篩選條件定義視窗隨即顯示。
+   The filtering condition definition window is displayed.
 
-1. 按一下&#x200B;**[!UICONTROL Expression]**&#x200B;欄以定義輸入值。
-1. 按一下&#x200B;**[!UICONTROL Edit expression]**&#x200B;以選取將套用篩選的欄位。
+1. Click the **[!UICONTROL Expression]** column to define the input value.
+1. Click **[!UICONTROL Edit expression]** to select the field to which the filter will be applied.
 
    ![](assets/s_user_filter_choose_field.png)
 
-1. 從清單中，選取要篩選資料的欄位。 按一下 **[!UICONTROL Finish]** 確認。
-1. 按一下&#x200B;**[!UICONTROL Operator]**&#x200B;欄，然後從下拉式清單中選取要套用的運運算元。
-1. 從&#x200B;**[!UICONTROL Value]**&#x200B;欄選取預期的值。 您可以合併多個篩選器來縮小查詢範圍。 若要新增篩選條件，請按一下&#x200B;**[!UICONTROL Add]**。
+1. From the list, select the field on which data will be filtered. Click **[!UICONTROL Finish]** to confirm.
+1. Click the **[!UICONTROL Operator]** column and select the operator to be applied from the drop-down list.
+1. Select an expected value from the **[!UICONTROL Value]** column. You can combine several filters to refine your query. To add a filter condition, click **[!UICONTROL Add]**.
 
    ![](assets/s_ncs_user_filter_add_button_alone.png)
 
-1. 您可以將階層指派給運算式，或使用工具列箭頭來變更查詢運算式的順序。
-1. 運算式之間的預設運運算元是&#x200B;**和**，但您可以按一下欄位來變更此運運算元。 您可以選取&#x200B;**或**&#x200B;運運算元。
+1. You can assign a hierarchy to the expressions or change the order of the query expressions using the toolbar arrows.
+1. The default operator between expressions is **And**, but you can change this by clicking the field. You can select an **Or** operator.
 
    ![](assets/s_ncs_user_filter_operator.png)
 
-1. 按一下&#x200B;**[!UICONTROL OK]**&#x200B;以確認建立篩選器，並將其套用至清單。
+1. Click **[!UICONTROL OK]** to confirm filter creation and apply it to the list.
 
-套用的篩選器會顯示在清單上方。
+The filter applied is displayed above the list.
 
 ![](assets/s_ncs_user_filter_adv_edit.png)
 
-若要編輯或修改此篩選，請按一下其標籤。
+To edit or modify this filter, click its label.
 
-若要取消此篩選，請按一下篩選右邊的&#x200B;**[!UICONTROL Remove this filter]**&#x200B;圖示。
+To cancel this filter, click the **[!UICONTROL Remove this filter]** icon to the right of the filter.
 
 ![](assets/s_ncs_user_filter_adv_remove.png)
 
-您可以儲存進階篩選器，以備將來使用。 如需有關此型別篩選的進一步資訊，請參閱[儲存篩選](#saving-a-filter)。
+You can save an advanced filter to keep it for future use. For further information about this type of filter, see [Save a filter](#saving-a-filter).
 
-### 使用函式建立進階篩選 {#creating-an-advanced-filter-with-functions}
+### Create an advanced filter with functions {#creating-an-advanced-filter-with-functions}
 
-進階篩選器可以使用函式；具有函式&#x200B;**的**&#x200B;篩選器是透過運算式編輯器建立的，可讓您使用資料庫資料和進階函式建立公式。 若要使用函式建立篩選器，請重複進階篩選器建立步驟1、2和3，然後依照下列步驟進行：
+Advanced filters can use functions; **filters with functions** are created via an expression editor that lets you create formulas using the database data and advanced functions. To create a filter with functions, repeat advanced filter creation steps 1, 2 and 3, then proceed as follows:
 
-1. 在欄位選取視窗中，按一下&#x200B;**[!UICONTROL Advanced selection]**。
-1. 選取要使用的公式型別：彙總、現有使用者篩選器或運算式。
+1. In the field selection window, click **[!UICONTROL Advanced selection]**.
+1. Select the type of formula to be used: aggregate, existing user filter or expression.
 
    ![](assets/s_ncs_user_filter_formula_select.png)
 
-   可以使用以下選項：
+   The following options are available:
 
-   * **[!UICONTROL Field only]**&#x200B;以選取欄位。 這是預設模式。
-   * **[!UICONTROL Aggregate]**&#x200B;以選取要使用的彙總公式（計數、總和、平均值、最大值、最小值）。
-   * **[!UICONTROL User filter]**&#x200B;以選取其中一個現有的使用者篩選器。 使用者篩選器在[儲存篩選器](#saving-a-filter)中有詳細說明。
-   * **[!UICONTROL Expression]**&#x200B;以存取運算式編輯器。
+    * **[!UICONTROL Field only]** to select a field. This is the default mode. 
+    * **[!UICONTROL Aggregate]** to select the aggregate formula to be used (counts, sum, average, maximum, minimum).
+    * **[!UICONTROL User filter]** to select one of the existing user filters. User filters are detailed in [Save a filter](#saving-a-filter).
+    * **[!UICONTROL Expression]** to access the expressions editor.
 
-     運算式編輯器可讓您定義進階篩選器。 類似於：
+      The expression editor lets you define an advanced filter. It looks like this:
+    
+      ![](assets/s_ncs_user_create_exp_exple01.png)
 
-     ![](assets/s_ncs_user_create_exp_exple01.png)
+      It lets you select fields in the database tables and attach advanced functions to them: Select the function to use in the **[!UICONTROL List of functions]**. The functions available are detailed in [List of functions](../../platform/using/defining-filter-conditions.md#list-of-functions). Next, select the field or fields concerned by the functions and click **[!UICONTROL OK]** to approve the expression.
 
-     它可讓您選取資料庫表格中的欄位，並將進階函式附加至這些欄位：選取要在&#x200B;**[!UICONTROL List of functions]**&#x200B;中使用的函式。 可用的函式在[函式清單](../../platform/using/defining-filter-conditions.md#list-of-functions)中有詳細說明。 接著，選取函式涉及的欄位，然後按一下&#x200B;**[!UICONTROL OK]**&#x200B;以核准運算式。
+      >[!NOTE]
+      >
+      >For an example of filter creation based on an expression, refer to [this section](../../workflow/using/sending-a-birthday-email.md#identifying-recipients-whose-birthday-it-is).
 
-     >[!NOTE]
-     >
-     >如需根據運算式建立篩選的範例，請參閱[本節](../../workflow/using/sending-a-birthday-email.md#identifying-recipients-whose-birthday-it-is)。
+## Save a filter {#saving-a-filter}
 
-## 儲存篩選器 {#saving-a-filter}
+Filters are specific to each operator and are re-initialized each time the operator clears the cache of their client console.
 
-篩選器是每個運運算元所專屬的，每當運運算元清除其使用者端主控台的快取時，就會重新初始化。
+You can create an **application filter** by saving an advanced filter: it can be re-used by right-clicking in any list or via the **[!UICONTROL Filters]** button located above the lists.
 
-您可以儲存進階篩選器來建立&#x200B;**應用程式篩選器**：您可以在任何清單中按一下滑鼠右鍵或透過清單上方的&#x200B;**[!UICONTROL Filters]**&#x200B;按鈕重複使用它。
+These filters can also be accessed directly via the delivery assistant, in the target selection stage (refer to [this section](../../delivery/using/creating-an-email-delivery.md) for more on creating deliveries). To create the application filter, you can:
 
-這些篩選器也可在目標選擇階段中透過傳遞助理直接存取（如需建立傳遞的詳細資訊，請參閱[本節](../../delivery/using/creating-an-email-delivery.md)）。 若要建立應用程式篩選器，您可以：
-
-* 將進階篩選器轉換為應用程式篩選器。 若要這麼做，請在關閉進階篩選編輯器前按一下&#x200B;**[!UICONTROL Save]**。
+* Convert an advanced filter to an application filter. To do this, click **[!UICONTROL Save]** before closing the advanced filter editor.
 
   ![](assets/s_ncs_user_filter_save.png)
 
-* 透過樹狀結構的&#x200B;**[!UICONTROL Administration > Configuration > Predefined filters]** （或收件者的&#x200B;**[!UICONTROL Profiles and targets > Predefined filters]**）節點建立此應用程式篩選器。 若要這麼做，請以滑鼠右鍵按一下篩選器清單，然後選取&#x200B;**[!UICONTROL New...]**。 此程式與建立進階篩選的程式相同。
+* Create this application filter via the **[!UICONTROL Administration > Configuration > Predefined filters]** (or **[!UICONTROL Profiles and targets > Predefined filters]** for recipients) node of the tree. To do this, right-click the list of filters, and select **[!UICONTROL New...]**. The procedure is the same as for creating advanced filters.
 
-  **[!UICONTROL Label]**&#x200B;欄位可讓您命名此篩選器。 此名稱將出現在&#x200B;**[!UICONTROL Filters...]**&#x200B;按鈕的組合方塊中。
+  The **[!UICONTROL Label]** field enables you to name this filter. This name will appear in the combo box of the **[!UICONTROL Filters...]** button. 
 
   ![](assets/user_filter_apply.png)
 
-您可以按一下滑鼠右鍵並選取「**[!UICONTROL No filter]**」，或透過清單上方的「**[!UICONTROL Filters]**」圖示刪除目前清單中的所有篩選器。
+You can delete all filters on the current list by right-clicking and selecting **[!UICONTROL No filter]** or via the **[!UICONTROL Filters]** icon located above the list.  
 
-您可以按一下&#x200B;**[!UICONTROL Filters]**&#x200B;按鈕並使用&#x200B;**[!UICONTROL And...]**&#x200B;功能表來組合篩選器。
+You can combine filters by clicking the **[!UICONTROL Filters]** button and using the **[!UICONTROL And...]** menu.
 
 ![](assets/s_ncs_user_filter_combination.png)
 
-## 篩選收件者 {#filtering-recipients}
+## Filter recipients {#filtering-recipients}
 
-預先定義的篩選器（請參閱[儲存篩選器](#saving-a-filter)）可讓您篩選資料庫中包含的收件者設定檔。 您可以從樹狀結構的&#x200B;**[!UICONTROL Profiles and Targets > Predefined filters]**&#x200B;節點編輯篩選器。 篩選器會透過&#x200B;**[!UICONTROL Filters]**&#x200B;按鈕列在工作區的上半部分。
+Predefined filters (see [Save a filter](#saving-a-filter)) enable you to filter the profiles of recipients contained in the database. You can edit filters from the **[!UICONTROL Profiles and Targets > Predefined filters]** node of the tree. The filters are listed in the upper section of the workspace, via the **[!UICONTROL Filters]** button.
 
-選取篩選器以顯示其定義並存取篩選資料的預覽。
+Select a filter to display its definition and to access a preview of the filtered data.
 
 ![](assets/s_ncs_user_segment_edit.png)
 
 >[!NOTE]
 >
->如需預先定義篩選建立的詳細範例，請參閱[使用案例](../../platform/using/use-case.md)。
+>For a detailed example of predefined filter creation, refer to [Use case](../../platform/using/use-case.md).
 
-預先定義的篩選條件包括：
+The predefined filters are:
 
 <table> 
  <tbody> 
   <tr> 
-   <td> <strong>標籤</strong><br /> </td> 
-   <td> <strong>查詢</strong><br /> </td> 
+   <td> <strong>Label</strong><br /> </td> 
+   <td> <strong>Query</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> 已開啟<br /> </td> 
-   <td> 選取已開啟傳遞的收件者。<br /> </td> 
+   <td> Opened<br /> </td> 
+   <td> Selects recipients who have opened a delivery.<br /> </td> 
   </tr> 
   <tr> 
-   <td> 已開啟但未點按<br /> </td> 
-   <td> 選取已開啟傳遞但未點按連結的收件者。<br /> </td> 
+   <td> Opened but not clicked<br /> </td> 
+   <td> Selects recipients who have opened a delivery but have not clicked on a link.<br /> </td> 
   </tr> 
   <tr> 
-   <td> 非使用中的收件者<br /> </td> 
-   <td> 選取在X個月內未開啟傳遞的收件者。<br /> </td> 
+   <td> Inactive recipients<br /> </td> 
+   <td> Selects recipients who have not opened a delivery in X months.<br /> </td> 
   </tr> 
   <tr> 
-   <td> 依裝置型別的最後一個活動<br /> </td> 
-   <td> 選取在過去Z天內使用裝置X點選或開啟傳遞Y的收件者。<br /> </td> 
+   <td> Last activity by device type<br /> </td> 
+   <td> Selects recipients who have clicked or opened delivery Y using device X in the last Z days.<br /> </td> 
   </tr> 
   <tr> 
-   <td> 依裝置型別的最後一個活動（追蹤）<br /> </td> 
-   <td> 選取在過去Z天內使用裝置X點選或開啟傳遞Y的收件者。<br /> </td> 
+   <td> Last activity by device type (Tracking)<br /> </td> 
+   <td> Selects recipients who have clicked or opened delivery Y using device X in the last Z days.<br /> </td> 
   </tr> 
   <tr> 
-   <td> 未鎖定目標的收件者<br /> </td> 
-   <td> 選取在X個月內從未透過管道Y定位的收件者。<br /> </td> 
+   <td> Untargeted recipients<br /> </td> 
+   <td> Selects recipients who have never been targeted via channel Y in X months.<br /> </td> 
   </tr> 
   <tr> 
-   <td> 非常活躍的收件者<br /> </td> 
-   <td> 選取在過去Y個月中至少點按X次傳遞的收件者。<br /> </td> 
+   <td> Very active recipients<br /> </td> 
+   <td> Selects recipients who have clicked in a delivery at least X times in the last Y months.<br /> </td> 
   </tr> 
   <tr> 
- <td> 已加入封鎖清單的電子郵件地址<br /> </td> 
-    <td> 選取電子郵件地址在封鎖清單上的收件者。<br/> </td>
+ <td> Denylisted email address<br /> </td> 
+    <td> Selects recipients whose email address is on the denylist.<br/> </td>
   </tr> 
   <tr> 
-   <td> 隔離的電子郵件地址<br /> </td> 
-   <td> 選取已隔離電子郵件地址的收件者。<br /> </td> 
+   <td> Quarantined email address<br /> </td> 
+   <td> Selects recipients whose email address is quarantined.<br /> </td> 
   </tr> 
   <tr> 
-   <td> 在資料夾<br />中重複的電子郵件地址 </td> 
-   <td> 選取資料夾中電子郵件地址重複的收件者。<br /> </td> 
+   <td> Email addresses duplicated in the folder<br /> </td> 
+   <td> Selects recipients whose email address is duplicated in the folder.<br /> </td> 
   </tr> 
   <tr> 
-   <td> 未開啟或未按一下<br /> </td> 
-   <td> 選取尚未開啟傳遞或按一下傳遞的收件者。<br /> </td> 
+   <td> Neither opened nor clicked<br /> </td> 
+   <td> Selects recipients who have not opened a delivery, or clicked in a delivery.<br /> </td> 
   </tr> 
   <tr> 
-   <td> 新收件者（天）<br /> </td> 
-   <td> 選取過去X天建立的收件者。<br /> </td> 
+   <td> New recipients (days)<br /> </td> 
+   <td> Selects recipients that were created in the last X days.<br /> </td> 
   </tr> 
   <tr> 
-   <td> 新收件者（分鐘）<br /> </td> 
-   <td> 選取過去X分鐘建立的收件者。<br /> </td> 
+   <td> New recipients (minutes)<br /> </td> 
+   <td> Selects recipients that were created in the last X minutes.<br /> </td> 
   </tr> 
   <tr> 
-   <td> 新收件者（月）<br /> </td> 
-   <td> 選取過去X個月建立的收件者。<br /> </td> 
+   <td> New recipients (months)<br /> </td> 
+   <td> Selects recipients that were created in the last X months.<br /> </td> 
   </tr> 
   <tr> 
-   <td> 依訂閱<br /> </td> 
-   <td> 依訂閱選取收件者。<br /> </td> 
+   <td> By subscription<br /> </td> 
+   <td> Selects recipients by subscription.<br /> </td> 
   </tr> 
   <tr> 
-   <td> 按一下特定連結<br /> </td> 
-   <td> 選取按一下傳遞中特定URL的收件者。<br /> </td> 
+   <td> By clicking on a specific link<br /> </td> 
+   <td> Selects recipients who clicked on a particular URL in a delivery.<br /> </td> 
   </tr> 
   <tr> 
-   <td> 透過傳遞行為<br /> </td> 
-   <td> 根據收件者在收到傳遞後的行為選取收件者。<br /> </td> 
+   <td> By post delivery behavior<br /> </td> 
+   <td> Selects recipients according to their behavior after receiving a delivery.<br /> </td> 
   </tr> 
   <tr> 
-   <td> 依據建立日期<br /> </td> 
-   <td> 依建立日期選取從X個月（目前日期減去n個月）到Y個月（目前日期減去n個月）的期間內的收件者。<br /> </td> 
+   <td> By creation date<br /> </td> 
+   <td> Selects recipients by creation date, over a period ranging from X months (current date minus n months) to Y months (current date minus n months).<br /> </td> 
   </tr> 
   <tr> 
-   <td> 依清單<br /> </td> 
-   <td> 依清單選取收件者。<br /> </td> 
+   <td> By list<br /> </td> 
+   <td> Selects recipients by list.<br /> </td> 
   </tr> 
   <tr> 
-   <td> 按點按次數<br /> </td> 
-   <td> 選取過去X個月內點選傳遞的收件者。<br /> </td> 
+   <td> By number of clicks<br /> </td> 
+   <td> Selects recipients who clicked in a delivery in the last X months.<br /> </td> 
   </tr> 
   <tr> 
-   <td> 依已接收的訊息數<br /> </td> 
-   <td> 根據收件者收到的郵件數目選取收件者。<br /> </td> 
+   <td> By number of messages received<br /> </td> 
+   <td> Selects recipients according to the number of messages that they received.<br /> </td> 
   </tr> 
   <tr> 
-   <td> 按開啟次數<br /> </td> 
-   <td> 選取在X和Y傳遞之間開啟超過Z時間量的收件者。<br /> </td> 
+   <td> By number of opens<br /> </td> 
+   <td> Selects recipients who opened between X and Y deliveries over Z amount of time.<br /> </td> 
   </tr> 
   <tr> 
-   <td> 依名稱或電子郵件<br /> </td> 
-   <td> 根據收件者的名稱或電子郵件選取收件者。<br /> </td> 
+   <td> By name or email<br /> </td> 
+   <td> Selects recipients according to their name or email.<br /> </td> 
   </tr> 
   <tr> 
-   <td> 依年齡範圍<br /> </td> 
-   <td> 根據收件者的年齡選取收件者。<br /> </td> 
+   <td> By age range<br /> </td> 
+   <td> Selects recipients according to their age.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 >[!NOTE]
 >
->有關計數和期間的所有比較都應該更廣泛地理解（與查詢限制相對應的收件者會包含在比較中）。
+>All comparisons concerning counting and periods are to be understood in the broader sense (recipients that correspond to the query limits are included in the comparison).
 
-資料計算方式範例：
+Examples of how the data is calculated:
 
-* 選取小於30歲的收件者：
+* Selects recipients who are less than 30 years old: 
 
   ![](assets/predefined_filters_01.png)
 
-* 選取18歲或以上的收件者：
+* Selects recipients who are 18 years of age or older:
 
   ![](assets/predefined_filters_03.png)
 
-* 選取年齡介於18至30歲的收件者：
+* Selects recipients aged between 18 and 30:
 
   ![](assets/predefined_filters_02.png)
 
-## 資料篩選器的進階設定 {#advanced-settings-for-data-filters}
+## Advanced settings for data filters {#advanced-settings-for-data-filters}
 
-按一下「**[!UICONTROL Settings]**」標籤以存取下列選項：
+Click the **[!UICONTROL Settings]** tab to access the following options:
 
-* **[!UICONTROL Default filter for the associated document type]**：此選項可讓您預設在排序相關清單的編輯器中建議此篩選器。
+* **[!UICONTROL Default filter for the associated document type]**: this option lets you suggest this filter by default in the editor of the lists concerned by the sort.
 
-  例如，**[!UICONTROL By name or login]**&#x200B;篩選器已套用至運運算元。 此選項已選取，因此所有運運算元清單一律會提供篩選條件。
+  For example, the **[!UICONTROL By name or login]** filter is applied to operators. This option is selected, and so the filter is always offered on all operator lists.
 
-* **[!UICONTROL Filter shared with other operators]**：此選項可讓您將篩選器提供給目前資料庫上的所有其他運運算元。
-* **[!UICONTROL Use parameter entry form]**：此選項可讓您定義在選取此篩選時，要顯示在清單上方的篩選欄位。 這些欄位可讓您定義篩選設定。 必須透過&#x200B;**[!UICONTROL Form]**&#x200B;按鈕以XML格式輸入此表單。 例如，收件者清單中提供的預先設定篩選器&#x200B;**[!UICONTROL Recipients who have opened]**&#x200B;會顯示篩選欄位，讓您選取篩選所針對的傳遞。
+* **[!UICONTROL Filter shared with other operators]**: this option lets you make the filter available to all the other operators on the current database.
+* **[!UICONTROL Use parameter entry form]**: this option lets you define the filter field(s) to be displayed above the list when this filter is selected. These fields let you define the filter settings. This form must be entered in XML format via the **[!UICONTROL Form]** button. For example, the preconfigured filter **[!UICONTROL Recipients who have opened]**, available from the recipients list, displays a filter field that lets you select the delivery at which the filter is aimed.
 
-  **[!UICONTROL Preview]**&#x200B;按鈕會顯示所選篩選的結果。
+  The **[!UICONTROL Preview]** button displays the result of the selected filter.
 
-* **[!UICONTROL Advanced parameters]**&#x200B;連結可讓您定義其他設定。 特別是，您可以將SQL表格與篩選器建立關聯，使其成為共用表格的所有編輯器的共同專案。
+* The **[!UICONTROL Advanced parameters]** link lets you define additional settings. In particular, you can associate a SQL table with the filter to make it common to all editors that share the table.
 
-  如果要停止使用者覆寫此篩選器，請選取&#x200B;**[!UICONTROL Do not restrict the filter]**&#x200B;選項。
+  Select the **[!UICONTROL Do not restrict the filter]** option if you want to stop the user from overriding this filter.
 
-  此選項已針對傳遞助理中提供且無法多載的「傳遞的收件者」和「屬於資料夾的傳遞的收件者」篩選器啟用。
+  This option is enabled for "Recipients of a delivery" and "Recipients of deliveries belonging to a folder" filters offered in the delivery assistant that cannot be overloaded.
 
   ![](assets/s_ncs_user_filter_advanced_param.png)
+-->
