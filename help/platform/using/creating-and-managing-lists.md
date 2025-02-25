@@ -6,10 +6,10 @@ feature: Profiles
 role: User
 level: Beginner
 exl-id: 711b84cd-bac8-4f1a-9999-0124fbfc3a01
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: f188c9ce4c47d05638d9d28e2175cb4d32775ba2
 workflow-type: tm+mt
-source-wordcount: '799'
-ht-degree: 29%
+source-wordcount: '89'
+ht-degree: 25%
 
 ---
 
@@ -25,121 +25,128 @@ ht-degree: 29%
 
 ![](assets/s_ncs_user_interface_group_link.png)
 
-Adobe Campaign 提供兩種類型的清單：
+>[!NOTE]
+>
+>若要進一步瞭解清單以及如何建立和管理清單，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-audiences/create-audiences){target=_blank}。
 
-* **[!UICONTROL Group]**&#x200B;型別： **[!UICONTROL Group]**&#x200B;型別清單屬於根據特定條件選取的&#x200B;**靜態**&#x200B;人員清單。 此清單就像一組設定檔的快照。 請注意，用戶檔案新增至資料庫中時，不會對群組清單進行自動更新。
+<!--
+Two types of lists are available in Adobe Campaign:
 
-  如需如何建立&#x200B;**[!UICONTROL Group]**&#x200B;型別清單的詳細資訊，請參閱此[頁面](#creating-a-profile-list-from-a-group)。
+* **[!UICONTROL Group]** type: The **[!UICONTROL Group]** type lists belong to a **static** list of people selected according to specific criteria. The list is like a snapshot of a set of profiles. Please note that it is not updated automatically in the event of profiles being added to the database.
 
-* **[!UICONTROL List]**&#x200B;型別： **[!UICONTROL List]**&#x200B;型別清單可讓您使用工作流程來建立和管理清單。 這些是從資料匯入所產生的特定清單，可透過專用的&#x200B;**[!UICONTROL List update]**&#x200B;工作流程活動進行更新。
+  For more information on how to create a **[!UICONTROL Group]** type list, refer to this [page](#creating-a-profile-list-from-a-group).
 
-  不像&#x200B;**[!UICONTROL Group]**&#x200B;型別清單，此型別清單可以使用&#x200B;**[!UICONTROL Scheduler]**&#x200B;活動自動更新。 請注意，如需如何建立&#x200B;**[!UICONTROL List]**&#x200B;型別清單的範例，請參閱[此頁面](../../workflow/using/list-update.md)。
+* **[!UICONTROL List]** type: The **[!UICONTROL List]** type lists allows you to use workflows to create and manage lists. These will be specific lists resulting from data imports, that can be updated via the dedicated **[!UICONTROL List update]** workflow activity.
 
-![](assets/do-not-localize/how-to-video.png) [在影片中探索此功能](#create-list-video)
+  Unlike the **[!UICONTROL Group]** type list, this type list can be automatically updated with a **[!UICONTROL Scheduler]** activity. Note that For an example on how to create **[!UICONTROL List]** type lists, refer to [this page](../../workflow/using/list-update.md).
 
-## 從群組建立設定檔清單 {#creating-a-profile-list-from-a-group}
+![](assets/do-not-localize/how-to-video.png) [Discover this feature in video](#create-list-video)
 
-透過&#x200B;**[!UICONTROL Profiles and targets]**&#x200B;連結建立的&#x200B;**[!UICONTROL Group]**&#x200B;型別清單必須根據預設的Adobe Campaign設定檔表格(nms：recipient)。
+## Create a profile list from a group {#creating-a-profile-list-from-a-group}
+
+**[!UICONTROL Group]** type lists created via the **[!UICONTROL Profiles and targets]** link must be based on the default Adobe Campaign profile table (nms:recipient).
 
 >[!NOTE]
 >
->若要建立包含其他資料型別的清單，您必須執行工作流程。 例如，若您在訪客表格上使用查詢，然後更新清單，即可建立訪客清單。 如需此工作流程的詳細資訊，請參閱[本小節](../../workflow/using/about-workflows.md)。
+>To create lists containing other types of data, you must run a workflow. For example, by using a query on the visitor table then updating the list, you can create a visitor list. For more information on workflows, refer to [this section](../../workflow/using/about-workflows.md).
 
-若要建立新的&#x200B;**[!UICONTROL Group]**&#x200B;型別清單，請套用下列步驟：
+To create a new **[!UICONTROL Group]** type list, apply the following steps:
 
-1. 按一下&#x200B;**[!UICONTROL Create]**&#x200B;按鈕並選取&#x200B;**[!UICONTROL New list]**。
+1. Click the **[!UICONTROL Create]** button and select **[!UICONTROL New list]**.
 
    ![](assets/s_ncs_user_new_group.png)
 
-1. 在清單建立視窗的&#x200B;**[!UICONTROL Edit]**&#x200B;索引標籤中輸入資訊。
+1. Enter the information in the **[!UICONTROL Edit]** tab of the list creation window.
 
-   * 在&#x200B;**[!UICONTROL Label]**&#x200B;欄位中輸入清單名稱，並視需要變更內部名稱。
-   * 新增此清單的描述。
-   * 您可以指定到期日：達到此日期時，清單會被清除並自動刪除。
+    * Enter the list name in the **[!UICONTROL Label]** field and, if necessary, change the internal name.
+    * Add a description for this list.
+    * You can specify an expiration date: when this date is reached, the list is purged and automatically deleted.
+    
+      ![](assets/list_expiration_date.png)
 
-     ![](assets/list_expiration_date.png)
-
-1. 在&#x200B;**[!UICONTROL Content]**&#x200B;索引標籤中，按一下&#x200B;**[!UICONTROL Add]**&#x200B;以選取屬於清單的設定檔。
+1. In the **[!UICONTROL Content]** tab, click **[!UICONTROL Add]** to select the profiles belonging to the list.
 
    ![](assets/s_ncs_user_add_group.png)
 
-1. 按一下&#x200B;**[!UICONTROL Save]**&#x200B;以儲存清單。 然後，清單便會新增至清單概要中。
+1. Click **[!UICONTROL Save]** to save the list. It is then added to the overview of lists.
 
-您可以按一下&#x200B;**[!UICONTROL Create]**，直接從[新增設定檔]視窗建立新設定檔。 該用戶檔案將新增至資料庫。
+You can create new profiles directly from the 'add profiles' window by clicking **[!UICONTROL Create]**. The profile will be added to the database.
 
 ![](assets/s_ncs_user_new_recipient_from_group.png)
 
-設定檔清單可以像其他清單一樣設定。 請參閱[本節](../../platform/using/adobe-campaign-workspace.md#configuring-lists)。
+The profile list can be configured just like other lists. See [this section](../../platform/using/adobe-campaign-workspace.md#configuring-lists).
 
-## 將資料連結至清單 {#linking-data-to-a-list}
+## Link data to a list {#linking-data-to-a-list}
 
 >[!NOTE]
 >
->連結資料至清單只能使用&#x200B;**[!UICONTROL Group]**&#x200B;型別清單完成。
+>Linking data to a list can only been done with a **[!UICONTROL Group]** type list.
 
-可以篩選一組設定檔的設定檔，並將其連結至清單。 然後可能會傳送傳遞動作至此清單，以定位設定檔。 若要創建用戶檔案群組：
+The profiles of a set of profiles can be filtered and linked to a list. Delivery actions may then be sent to this list, to target profiles. To group profiles:
 
-1. 選取用戶檔案並按一下滑鼠右鍵。
-1. 選取 **[!UICONTROL Actions > Associate selection with a list...]**。
+1. Select profiles and right-click. 
+1. Select **[!UICONTROL Actions > Associate selection with a list...]**.
 
    ![](assets/s_ncs_user_add_selection_to_group.png)
 
-1. 選取想要的清單或使用&#x200B;**[!UICONTROL Create]**&#x200B;按鈕建立新清單，然後按一下&#x200B;**[!UICONTROL Next]**。
+1. Select the desired list or create a new list using the **[!UICONTROL Create]** button, then click **[!UICONTROL Next]**.
 
    ![](assets/s_ncs_user_add_selection_to_group_2.png)
 
-1. 按一下 **[!UICONTROL Start]** 按鈕。
+1. Click the **[!UICONTROL Start]** button.
 
    ![](assets/s_ncs_user_add_selection_to_group_3.png)
 
-**[!UICONTROL Recreate the list]**&#x200B;選項會從清單中刪除較早的內容。 此模式已經最優化，因為不需查詢確認用戶檔案是否已連結至清單。
+The **[!UICONTROL Recreate the list]** option deletes the earlier content from the list. This mode is optimized since no query is needed to verify whether the profiles are already linked to the list.
 
-如果取消核取&#x200B;**[!UICONTROL No trace of this job is saved in the database]**&#x200B;選項，您可以選取（或建立）執行資料夾，其中會儲存連結至此程式的資訊。
+If you uncheck the **[!UICONTROL No trace of this job is saved in the database]** option, you can select (or create) the execution folder where the information linked to this process will be stored.
 
-視窗的上方區段可讓您監視執行。 **[!UICONTROL Stop]**&#x200B;按鈕可讓您停止程式。 已處理的連絡人將連結至清單。
+The upper section of the window lets you monitor execution. The **[!UICONTROL Stop]** button lets you stop the process. Contacts already processed will be linked to the list.
 
-您可以透過此作業相關設定檔上的&#x200B;**[!UICONTROL Lists]**&#x200B;索引標籤來監視程式：
+You can monitor the process via the **[!UICONTROL Lists]** tab on the profiles concerned by this operation:
 
 ![](assets/s_ncs_user_add_selection_to_group_4.png)
 
-您也可以透過Adobe Campaign首頁編輯清單：按一下「**[!UICONTROL Profiles and Targets > Lists]**」功能表並選取相關清單。 **[!UICONTROL Content]**&#x200B;索引標籤會顯示連結至此清單的設定檔。
+You can also edit the list via the Adobe Campaign home page: click the **[!UICONTROL Profiles and Targets > Lists]** menu and select the concerned list. The **[!UICONTROL Content]** tab shows the profiles linked to this list.
 
 ![](assets/s_ncs_user_add_selection_to_group_5.png)
 
-## 從清單中移除設定檔 {#removing-a-profile-from-a-list}
+## Remove a profile from a list {#removing-a-profile-from-a-list}
 
-若要從清單中移除用戶檔案，您可以：
+To remove a profile from a list, you can:
 
-* 編輯清單，在&#x200B;**[!UICONTROL Content]**&#x200B;索引標籤中選取設定檔，然後按一下&#x200B;**[!UICONTROL Delete]**&#x200B;圖示。
+* Edit the list, select the profile in the **[!UICONTROL Content]** tab, then click the **[!UICONTROL Delete]** icon.
 
   ![](assets/list_remove_a_recipient.png)
 
-* 編輯設定檔，按一下&#x200B;**[!UICONTROL List]**&#x200B;標籤，然後按一下&#x200B;**[!UICONTROL Delete]**&#x200B;圖示。
+* Edit the profile, click the **[!UICONTROL List]** tab, then click the **[!UICONTROL Delete]** icon. 
 
   ![](assets/recipient_remove_a_list.png)
 
-## 刪除設定檔清單 {#deleting-a-list-of-profiles}
+## Delete a list of profiles {#deleting-a-list-of-profiles}
 
-您可以從Adobe Campaign樹狀結構的群組清單中刪除一或多個清單。 若要這麼做，請透過Adobe Campaign首頁中的&#x200B;**[!UICONTROL Advanced > Explorer]**&#x200B;連結編輯樹狀結構。 選取相關群組，然後按一下滑鼠右鍵。 選取 **[!UICONTROL Delete]**。此時將顯示警告訊息，要求您確認是否刪除。
+You can delete one or more lists from the group list in the Adobe Campaign tree. To do this, edit the tree via the **[!UICONTROL Advanced > Explorer]** link in the Adobe Campaign home page. Select the group(s) concerned and right-click. Select **[!UICONTROL Delete]**. A warning message asks you to confirm the deletion.
 
 >[!NOTE]
 >
->刪除清單時，清單上的用戶檔案不受影響，但是將更新用戶檔案中的資料。
+>When you delete a list, the profiles on the list are not affected but the data in their profile is updated.
 
-## 教學課程影片 {#create-list-video}
+## Tutorial video {#create-list-video}
 
-### 如何建立收件者清單
+### How to create a list of recipients
 
-此清單 (list) 是一組靜態的收件者名單，在傳遞作業期間可用於提供目標，或在匯入作業或工作流程執行期間可對其進行更新。收件者清單也稱為客群。
+A list is a static set of recipients that can be targeted in delivery actions or updated during import operations or during workflow execution. A list of recipients is also referred to as audience.
 
-瞭解如何從檔案總管設定收件者清單，以建立對象。
+Learn how to create an audience by configuring a list of recipients from the Explorer.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25602/quality=12)
 
-### 如何使用工作流程建立收件者清單 {#create-list-in-a-wf-video}
+### How use a workflow to create a list of recipients {#create-list-in-a-wf-video}
 
-瞭解如何在電子郵件目標中使用清單之前，建立工作流程以定位收件者，以及如何使其重複發生。
+Learn how create a workflow in order to target recipients and how to make it recurring before using the list in an email target.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25603?quality=12)
 
-其他 Campaign Classic 作法影片可在[此處](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant)取得。
+Additional Campaign Classic how-to videos are available [here](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
+
+-->
