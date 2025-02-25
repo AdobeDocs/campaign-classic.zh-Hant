@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: f91d69a4-b794-40f0-b450-de862d7333e2
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 22aa5f76541e6ff1612907ab0b34f0ac468fb9a6
 workflow-type: tm+mt
-source-wordcount: '447'
-ht-degree: 14%
+source-wordcount: '87'
+ht-degree: 29%
 
 ---
 
@@ -20,67 +20,74 @@ ht-degree: 14%
 
 Adobe Campaign檔案總管可透過工具列圖示存取。 使用工具列圖示，您可以存取 Adobe Campaign、所有 Adobe Campaign 功能、設定畫面以及部分平台元素的更詳細視圖。
 
-**[!UICONTROL Explorer]**&#x200B;工作區分為三個區域：
+>[!NOTE]
+>
+>若要深入瞭解Adobe Campaign檔案總管，請參閱Campaign v8檔案中的這些頁面：若要深入瞭解使用者介面](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui#ac-explorer-ui){target=_blank}、其[設定](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/ui-settings){target=_blank}或[如何在檔案總管中管理資料夾和檢視](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}。[
+
+
+<!--
+The **[!UICONTROL Explorer]** workspace is divided into three zones:
 
 ![](assets/s_ncs_user_navigation.png)
 
-**1 — 樹狀結構**：您可以個人化樹狀結構的內容（新增、移動或刪除節點）。 此程式僅供專家使用者使用。 如需詳細資訊，請參閱[本節](#about-navigation-hierarchy)。
+**1 - Tree**: you can personalize the content of the tree (add, move, or delete nodes). This procedure is intended for expert users only. For more on this, refer to  [this section](#about-navigation-hierarchy).).
 
-**2 — 清單**：您可以篩選此清單、執行搜尋、新增資訊或排序資料。 [了解更多](adobe-campaign-ui-lists.md)。
+**2 - List**: you can filter this list, run searches, add information, or sort data. [Learn more](adobe-campaign-ui-lists.md).
 
-**3 — 詳細資料**：您可以顯示所選元素的詳細資料。 透過右上角的圖示，您可以全螢幕顯示這項資訊。
+**3 - Details**: you can display the details of the selected element. The icon in the upper right-hand section lets you display this information in full-screen format.
 
-## 資料夾和導覽樹狀結構{#about-navigation-hierarchy}
+## Folders and navigation tree{#about-navigation-hierarchy}
 
-導覽樹狀結構的運作方式與檔案瀏覽器類似（例如Windows檔案總管）。 資料夾可能包含子資料夾。 選取節點會顯示與節點對應的檢視。
+The navigation tree works like a file browser (e.g. Windows Explorer). Folders may contain sub-folders. Selecting a node displays the view corresponding to the node.
 
-顯示的檢視是與結構描述關聯的清單，以及用來編輯所選行的輸入表單。
+The view displayed is a list associated with a schema and an input form to edit the selected line.
 
 ![](assets/d_ncs_integration_navigation.png)
 
-若要將新資料夾新增至樹狀結構，請在您要插入資料夾的分支中以滑鼠右鍵按一下該資料夾，然後選取「**[!UICONTROL Add new folder]**」。 在快捷選單中，選取要建立的檔案型別。
+To add a new folder to the tree, right-click the folder in the branch where you wish to insert a folder, and select **[!UICONTROL Add new folder]** . In the shortcut menu, select the type of file to be created.
 
 ![](assets/d_ncs_integration_navigation_create.png)
 
-在本節](../../configuration/using/configuration.md)中瞭解如何設定Campaign導覽樹狀結構[。
+Learn how to configure Campaign navigation tree [in this section](../../configuration/using/configuration.md).
 
-在本節](access-management-folders.md)中瞭解如何設定資料夾[的許可權。
+Learn how to set permissions on folders [in this section](access-management-folders.md).
 
-## 資料夾設定最佳實務
+## Folder configuration best practices
 
-* **使用內建資料夾**
+* **Use built-in folders**
 
-  使用內建資料夾讓未參與專案的人更易於使用、維護及疑難排解應用程式。 您不應該為收件者、清單、傳遞等建立自訂資料夾結構，而是使用標準資料夾，例如管理、設定檔和目標、行銷活動管理。
+  Using the built-in folders makes it easier for people not involved in the project to use, maintain and troubleshoot the application. You should not create custom folder structures for recipients, lists, deliveries, etc., but use the standard folders such as Administration, Profiles & Targets, Campaign management.
 
-* **建立子資料夾**
+* **Create sub-folders**
 
-  將技術工作流程放置在標準資料夾：管理/生產/技術工作流程下，並根據工作流程型別建立子目錄。
+  Place technical workflows under the standard folder: Administration / Production / Technical Workflows, and create subdirectories per workflow type.
+  
+* **Set a naming convention**
 
-* **設定命名慣例**
+  For example you can name the workflows in alphabetical order, so that they appear sorted in the order of execution.
+  
+  For example:
+  
+  * A1 – import recipients, starts at 10:00;
+  * A2 – import tickets, starts at 11:00.
 
-  例如，您可以按字母順序命名工作流程，好讓工作流程按執行順序排序。
+* **Create templates for users to start with**
 
-  例如：
+  Create delivery templates, workflow templates, campaign templates specific to users. This structure can save time and make sure that the right delivery mapping and typologies are used for each user.
 
-   * A1 — 匯入收件者，從10:00開始；
-   * A2 — 匯入票證，11:00開始。
+## Screen resolution {#screen-resolution}
 
-* **建立範本讓使用者開始使用**
-
-  建立使用者專用的傳遞範本、工作流程範本、行銷活動範本。 此結構可節省時間，並確保為每個使用者使用正確的傳遞對應和型別。
-
-## 螢幕解析度 {#screen-resolution}
-
-為了獲得最佳導覽和可用性，Adobe 建議最少使用像素 1600x900 的螢幕解析度。
+For optimal navigation and usability, Adobe recommends using a minimum screen resolution of 1600x900 pixels.
 
 >[!CAUTION]
 >
->Adobe Campaign不支援1600x900畫素以下的解析度。
+>Resolutions under 1600x900 pixels are not supported by Adobe Campaign.
 
-在&#x200B;**[!UICONTROL Explorer]**&#x200B;工作區中，如果&#x200B;**[!UICONTROL Details]**&#x200B;區域的某些部分似乎遭到截斷，請使用區域頂端的箭頭將其展開，或按一下&#x200B;**[!UICONTROL Enlarge]**&#x200B;按鈕。
+In the **[!UICONTROL Explorer]** workspace, if some parts of the **[!UICONTROL Details]** zone appear to be truncated, expand it using the arrow on top of the zone or click the **[!UICONTROL Enlarge]** button.
 
 ![](assets/s_ncs_user_resolution.png)
 
-## 瀏覽及自訂清單 {#browsing-lists}
+## Browse and customize lists {#browsing-lists}
 
-在本節](adobe-campaign-ui-lists.md)中瞭解如何瀏覽、管理及自訂清單[。
+Learn how to browse, manage and customize lists [in this section](adobe-campaign-ui-lists.md).
+-->
