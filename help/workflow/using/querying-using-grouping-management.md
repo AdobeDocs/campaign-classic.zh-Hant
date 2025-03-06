@@ -3,8 +3,10 @@ product: campaign
 title: 使用分組管理進行查詢
 description: 瞭解如何使用分組管理執行查詢
 feature: Query Editor, Workflows
+hide: true
+hidefromtoc: true
 exl-id: 23bccb48-60ab-46c9-be26-2fa35243d61e
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 3%

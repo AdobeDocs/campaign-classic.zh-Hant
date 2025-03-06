@@ -1,17 +1,19 @@
 ---
 product: campaign
-title: 優惠引擎
-description: 優惠引擎
+title: 產品建議引擎
+description: 產品建議引擎
 feature: Workflows, Interaction
+hide: true
+hidefromtoc: true
 exl-id: 8db4b04f-7754-4a49-ab72-afc916888ebb
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '136'
 ht-degree: 4%
 
 ---
 
-# 優惠引擎{#offer-engine}
+# 產品建議引擎{#offer-engine}
 
 
 

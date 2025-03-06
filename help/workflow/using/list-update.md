@@ -3,11 +3,13 @@ product: campaign
 title: 清單更新
 description: 清單更新
 feature: Workflows, Targeting Activity
+hide: true
+hidefromtoc: true
 exl-id: fcc51131-15d0-4d39-95cb-371d7044373b
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '461'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -73,4 +75,4 @@ ht-degree: 2%
 
 >[!VIDEO](https://video.tv.adobe.com/v/25602/quality=12)
 
-[此處](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant)提供其他Campaign Classic操作說明影片。
+其他 Campaign Classic 作法影片可在[此處](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant)取得。

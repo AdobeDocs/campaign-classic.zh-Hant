@@ -3,8 +3,10 @@ product: campaign
 title: 行銷活動工作流程熱度圖
 description: 使用Workflow HeatMap監視您的工作流程
 feature: Workflows, Heatmap
+hide: true
+hidefromtoc: true
 exl-id: f1016ddf-0c87-4611-a878-d01f3684935f
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '1138'
 ht-degree: 3%
@@ -139,7 +141,7 @@ Campaign Workflow HeatMap是從左上到右下自然可讀的格線，允許尋�
    ![](assets/wkf_monitoring_long_duration.png)
 
 1. 減少&#x200B;**[!UICONTROL Min duration]**&#x200B;篩選器，以包含更多結果。
-1. 探索結果以找出最長的工作流程，這些工作流程可能會對伺服器和資料庫資源（CPU、RAM、網路、IOPS等）造成更多影響。
+1. 探索結果以找出最長的工作流程，這些工作流程可能對伺服器和資料庫資源(CPU、RAM、網路、IOPS等)產生較大影響。
 1. 採取適當的動作：
 
    * 建議行銷使用者分割最長的工作流程，以減少處理時間。

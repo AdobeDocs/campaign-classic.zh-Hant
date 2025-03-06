@@ -3,8 +3,10 @@ product: campaign
 title: 管理時區
 description: 管理時區
 feature: Workflows
+hide: true
+hidefromtoc: true
 exl-id: c2f6033c-30cd-4eb4-adf1-ab2de7510220
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '282'
 ht-degree: 3%
@@ -17,7 +19,7 @@ ht-degree: 3%
 
 Adobe Campaign可讓您管理同一個執行個體所關注的不同國家/地區之間的時間延遲。 套用的組態會在建立執行個體期間進行設定。
 
-如需在Adobe Campaign中設定時區的詳細資訊，請參閱[Campaign Classicv7安裝指南](../../installation/using/time-zone-management.md)。
+如需在Adobe Campaign中設定時區的詳細資訊，請參閱[Campaign Classic v7安裝指南](../../installation/using/time-zone-management.md)。
 
 在工作流程中，您可以調整活動執行排程，並將特定時區連結至活動或整個工作流程。 此設定在匯入檔案時或是在傳送排程的架構中相當實用。
 

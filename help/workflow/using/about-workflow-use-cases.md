@@ -3,8 +3,10 @@ product: campaign
 title: 關於工作流程使用實例
 description: 深入瞭解您可以使用Campaign Classic工作流程執行的使用案例
 feature: Workflows, Data Management
+hide: true
+hidefromtoc: true
 exl-id: 7c093b34-6b0e-4403-9d9d-fba9ba39ea41
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '206'
 ht-degree: 28%
@@ -67,4 +69,4 @@ ht-degree: 28%
 * [建立篩選](creating-a-filter.md)
 * [篩選重複的收件者](filtering-duplicated-recipients.md)
 * [調用查詢中的執行個體變數](javascript-scripts-and-templates.md#calling-an-instance-variable-in-a-query)
-* [將分割百分比套用在人口上](javascript-scripts-and-templates.md#example)
+* [將分割百分比套用在群體上](javascript-scripts-and-templates.md#example)

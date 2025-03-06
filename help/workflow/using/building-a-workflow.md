@@ -3,8 +3,10 @@ product: campaign
 title: 建置工作流程
 description: 瞭解如何建立工作流程
 feature: Workflows
+hide: true
+hidefromtoc: true
 exl-id: 8ba20ccd-b03f-4c4f-87c1-a21e80d8e4be
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '1624'
 ht-degree: 4%
@@ -153,7 +155,7 @@ ht-degree: 4%
 
 ### 目標定位和篩選維度 {#targeting-and-filtering-dimensions}
 
-在資料細分作業期間，目標定位鍵對應到篩選維度。目標定位維度可讓您定義作業的目標母體：收件者、合約受益人、操作者、訂閱者等。篩選維度可讓您可以根據特定標準選取母體：合約持有人、電子報訂閱者等。
+在資料細分作業期間，目標定位鍵對應到篩選維度。目標市場選擇維度可讓您定義作業的目標群體：收件者、合約受益人、操作者、訂閱者等。篩選維度可讓您可以根據特定標準選取群體：合約持有人、電子報訂閱者等。
 
 例如，若要選取擁有超過5年壽險保單的客戶，請選取下列目標維度： **客戶**&#x200B;以及下列篩選維度： **合約持有者**。 然後，您可以在查詢活動中定義篩選條件
 

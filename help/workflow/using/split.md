@@ -3,8 +3,10 @@ product: campaign
 title: 分割
 description: 進一步瞭解分割工作流程活動
 feature: Workflows, Targeting Activity
+hide: true
+hidefromtoc: true
 exl-id: 4204350a-c2d2-4033-9bdf-87b49d8211b9
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '1971'
 ht-degree: 3%
@@ -212,7 +214,7 @@ ht-degree: 3%
 
 若要讓此選項正確運作，傳入資料必須具有主索引鍵。
 
-例如，如果資料是透過&#x200B;**[!UICONTROL Data loading (RDBMS)]**&#x200B;活動直接從外部資料庫(例如Netezza （不支援索引的概念）讀取，則&#x200B;**[!UICONTROL Split]**&#x200B;活動產生的補數將會不正確。
+例如，如果透過&#x200B;**[!UICONTROL Data loading (RDBMS)]**&#x200B;活動直接從外部資料庫(例如Netezza，不支援索引的概念)讀取資料，則&#x200B;**[!UICONTROL Split]**&#x200B;活動產生的補數將會不正確。
 
 若要避免此問題，您可以將&#x200B;**[!UICONTROL Enrichment]**&#x200B;活動拖放到&#x200B;**[!UICONTROL Split]**&#x200B;活動之前。 在&#x200B;**[!UICONTROL Enrichment]**&#x200B;活動中，核取&#x200B;**[!UICONTROL Keep all additional data from the main set]**，並在其他資料中指定您要用來設定&#x200B;**[!UICONTROL Split]**&#x200B;活動篩選器的資料行。 然後，**[!UICONTROL Split]**&#x200B;活動之入站轉變的資料會儲存在Adobe Campaign伺服器上的暫存表格中，且補碼可以正確產生。
 

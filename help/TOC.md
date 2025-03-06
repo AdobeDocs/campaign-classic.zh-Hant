@@ -6,10 +6,10 @@ title: Campaign Classic v7 指南
 user-guide-description: Adobe Campaign Classic v7 產品文件。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 446062946b64c9a4d065b6a56d263914cbe628f8
-workflow-type: ht
-source-wordcount: '2562'
-ht-degree: 100%
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+workflow-type: tm+mt
+source-wordcount: '2571'
+ht-degree: 99%
 
 ---
 
@@ -230,7 +230,7 @@ ht-degree: 100%
       + [關於內容管理](delivery/using/about-content-management.md)
       + [內容管理員資源與原則](delivery/using/content-manager-resources-and-principles.md)
       + [使用實例：建立內容管理](delivery/using/use-case-creating-content-management.md)
-      + [資料方案](delivery/using/data-schemas.md)
+      + [資料結構描述](delivery/using/data-schemas.md)
       + [輸入表單](delivery/using/input-forms.md)
       + [格式](delivery/using/formatting.md)
       + [發佈範本](delivery/using/publication-templates.md)
@@ -238,6 +238,8 @@ ht-degree: 100%
       + [豐富內容](delivery/using/enriching-content.md)
       + [透過工作流程自動化](delivery/using/automating-via-workflows.md)
 + 協調行銷活動 {#orchestrating-campaigns}
+   + [關於行銷活動](campaign/using/about-marketing-campaigns.md)
+   + [關於行銷活動最佳化](campaign-opt/using/about-campaign-optimization.md)
    + 關於行銷活動{#about-marketing-campaigns}
       + [設計行銷活動](campaign/using/designing-marketing-campaigns.md)
       + [存取行銷活動](campaign/using/accessing-marketing-campaigns.md)
@@ -250,14 +252,14 @@ ht-degree: 100%
       + [設定及管理核准](campaign/using/marketing-campaign-approval.md)
       + [監視您的行銷活動](campaign/using/marketing-campaign-monitoring.md)
       + [供應商、庫存和預算](campaign/using/providers-stocks-and-budgets.md)
-   + Campaign 最佳化 {#campaign-optimization}
-      + [關於行銷活動態樣](campaign-opt/using/about-campaign-typologies.md)
-      + [壓力規則](campaign-opt/using/pressure-rules.md)
-      + [一致性規則](campaign-opt/using/consistency-rules.md)
-      + [控制規則](campaign-opt/using/control-rules.md)
-      + [篩選規則](campaign-opt/using/filtering-rules.md)
-      + [套用規則](campaign-opt/using/applying-rules.md)
-      + [Campaign 模擬](campaign-opt/using/campaign-simulations.md)
+      + Campaign 最佳化 {#campaign-optimization}
+         + [關於行銷活動態樣](campaign-opt/using/about-campaign-typologies.md)
+         + [壓力規則](campaign-opt/using/pressure-rules.md)
+         + [一致性規則](campaign-opt/using/consistency-rules.md)
+         + [控制規則](campaign-opt/using/control-rules.md)
+         + [篩選規則](campaign-opt/using/filtering-rules.md)
+         + [套用規則](campaign-opt/using/applying-rules.md)
+         + [Campaign 模擬](campaign-opt/using/campaign-simulations.md)
 + 行銷資源管理 {#mrm}
    + [關於行銷資源管理](mrm/using/about-marketing-resource-management.md)
    + [建立及管理設定檔](mrm/using/creating-and-managing-tasks.md)
@@ -391,6 +393,7 @@ ht-degree: 100%
       + [同步化網站應用程式](integrations/using/synchronizing-web-applications.md)
       + [疑難排解 [!DNL ACS Connector]](integrations/using/troubleshooting-the-acs-connector.md)
 + 使用工作流程自動化{#automating-with-workflows}
+   + [關於工作流程自動化](workflow/using/about-workflow-automation.md)
    + 開始使用工作流程 {#introduction}
       + [關於工作流程](workflow/using/about-workflows.md)
       + [關於活動](workflow/using/about-activities.md)
@@ -414,11 +417,11 @@ ht-degree: 100%
       + [排除](workflow/using/exclusion.md)
       + [分割](workflow/using/split.md)
       + [儲存格](workflow/using/cells.md)
-      + [依儲存格列出的優惠](workflow/using/offers-by-cell.md)
+      + [依儲存格列出的產品建議](workflow/using/offers-by-cell.md)
       + [傳遞大綱](workflow/using/delivery-outline.md)
       + [擴充](workflow/using/enrichment.md)
-      + [編輯方案](workflow/using/edit-schema.md)
-      + [優惠引擎](workflow/using/offer-engine.md)
+      + [編輯結構描述](workflow/using/edit-schema.md)
+      + [產品建議引擎](workflow/using/offer-engine.md)
       + [重複資料刪除](workflow/using/deduplication.md)
       + [變更維度](workflow/using/change-dimension.md)
       + [清單更新](workflow/using/list-update.md)
@@ -509,9 +512,9 @@ ht-degree: 100%
       + [變更活動影像](workflow/using/managing-activity-images.md)
       + [管理時區](workflow/using/managing-time-zones.md)
       + [技術工作流程](workflow/using/about-technical-workflows.md)
-+ 管理優惠方案{#managing-offers}
++ 管理產品建議{#managing-offers}
    + 開始使用互動 {#interaction-overview}
-      + [互動與優惠管理](interaction/using/interaction-and-offer-management.md)
+      + [互動與產品建議管理](interaction/using/interaction-and-offer-management.md)
       + [字彙](interaction/using/i-glossary.md)
       + [互動最佳實務](interaction/using/interaction-best-practices.md)
    + 一般操作 {#general-operation}
@@ -521,33 +524,33 @@ ht-degree: 100%
       + [環境概覽](interaction/using/environments-overview.md)
       + [操作者設定檔](interaction/using/operator-profiles.md)
       + [即時/設計環境](interaction/using/live-design-environments.md)
-      + [建立優惠空間](interaction/using/creating-offer-spaces.md)
+      + [建立產品建議空間](interaction/using/creating-offer-spaces.md)
       + [建立預定義的篩選器](interaction/using/creating-predefined-filters.md)
-   + 管理優惠目錄 {#managing-an-offer-catalog}
-      + [優惠目錄概覽](interaction/using/offer-catalog-overview.md)
-      + [建立優惠類別](interaction/using/creating-offer-categories.md)
+   + 管理產品建議目錄 {#managing-an-offer-catalog}
+      + [產品建議目錄概覽](interaction/using/offer-catalog-overview.md)
+      + [建立產品建議類別](interaction/using/creating-offer-categories.md)
       + [建議類別](interaction/using/recommending-a-category.md)
-      + [建立優惠方案](interaction/using/creating-an-offer.md)
-      + [核准並啟用優惠方案](interaction/using/approving-and-activating-an-offer.md)
-      + [管理優惠方案範本](interaction/using/managing-offer-templates.md)
-      + [管理優惠方案簡報](interaction/using/managing-offer-presentation.md)
-   + 優惠方案模擬{#simulating-offers}
-      + [關於優惠方案模擬](interaction/using/about-offers-simulation.md)
+      + [建立產品建議](interaction/using/creating-an-offer.md)
+      + [核准並啟用產品建議](interaction/using/approving-and-activating-an-offer.md)
+      + [管理產品建議範本](interaction/using/managing-offer-templates.md)
+      + [管理產品建議簡報](interaction/using/managing-offer-presentation.md)
+   + 產品建議模擬{#simulating-offers}
+      + [關於產品建議模擬](interaction/using/about-offers-simulation.md)
       + [執行設定](interaction/using/execution-settings.md)
       + [模擬範圍](interaction/using/simulation-scope.md)
       + [模擬追蹤](interaction/using/simulation-tracking.md)
-   + 傳遞優惠方案 {#delivering-an-offer}
+   + 傳遞產品建議 {#delivering-an-offer}
       + [關於傳出頻道](interaction/using/about-outbound-channels.md)
-      + [透過助理整合優惠](interaction/using/integrating-an-offer-via-the-wizard.md)
-      + [透過工作流程整合優惠](interaction/using/integrating-an-offer-via-a-workflow.md)
+      + [透過助理整合產品建議](interaction/using/integrating-an-offer-via-the-wizard.md)
+      + [透過工作流程整合產品建議](interaction/using/integrating-an-offer-via-a-workflow.md)
    + 單一互動 {#unitary-interactions}
       + [關於傳入頻道](interaction/using/about-inbound-channels.md)
       + [透過 JavaScript 進行整合 (用戶端)](interaction/using/integration-via-javascript-client-side.md)
       + [透過 SOAP 整合 (伺服器端)](interaction/using/integration-via-soap-server-side.md)
       + [匿名互動](interaction/using/anonymous-interactions.md)
-   + 追蹤優惠 {#tracking-offers}
-      + [優惠主張歷史記錄](interaction/using/offer-proposition-history.md)
-      + [優惠分析報告](interaction/using/offer-analysis-report.md)
+   + 追蹤產品建議 {#tracking-offers}
+      + [產品建議提議歷史記錄](interaction/using/offer-proposition-history.md)
+      + [產品建議分析報告](interaction/using/offer-analysis-report.md)
    + 進階參數 {#advanced-parameters}
       + [使用進階參數](interaction/using/using-advanced-parameters.md)
       + [其他資料](interaction/using/additional-data.md)
@@ -558,8 +561,8 @@ ht-degree: 100%
       + [資料緩衝區設定](installation/using/interaction-data-buffer.md)
    + 使用實例 {#case-study}
       + [簡報規則](interaction/using/presentation-rules.md)
-      + [傳入頻道上的優惠](interaction/using/offers-on-an-inbound-channel.md)
-      + [傳出頻道上的優惠](interaction/using/offers-on-an-outbound-channel.md)
+      + [傳入頻道上的產品建議](interaction/using/offers-on-an-inbound-channel.md)
+      + [傳出頻道上的產品建議](interaction/using/offers-on-an-outbound-channel.md)
 + 異動訊息傳送 {#transactional-messaging}
    + [開始使用異動訊息](message-center/using/about-transactional-messaging.md)
    + 設定異動訊息{#configure-transactional-messaging}
@@ -668,7 +671,7 @@ ht-degree: 100%
             + [設定 Vertica Analytics](installation/using/configure-fda-vertica.md)
          + [遠端存取權限](installation/using/remote-database-access-rights.md)
          + [連結資料庫](installation/using/connecting-to-database.md)
-         + [建立資料方案](installation/using/creating-data-schema.md)
+         + [建立資料結構描述](installation/using/creating-data-schema.md)
          + [定義資料對應](installation/using/defining-data-mapping.md)
    + 附錄 {#appendices}
       + [伺服器設定檔案](installation/using/the-server-configuration-file.md)
@@ -764,18 +767,18 @@ ht-degree: 100%
          + [SrcSchema](configuration/using/schema/srcschema.md)
          + [Sysfilter](configuration/using/schema/sysfilter.md)
          + [值](configuration/using/schema/value.md)
-   + 編輯方案 {#editing-schemas}
-      + [關於方案版本](configuration/using/about-schema-edition.md)
-      + [資料方案](configuration/using/data-schemas.md)
-      + [現有表格方案](configuration/using/schema-of-an-existing-table.md)
-      + [擴展方案](configuration/using/extending-a-schema.md)
-      + [篩選方案](configuration/using/filtering-schemas.md)
+   + 編輯結構描述 {#editing-schemas}
+      + [關於結構描述版本](configuration/using/about-schema-edition.md)
+      + [資料結構描述](configuration/using/data-schemas.md)
+      + [現有表格結構描述](configuration/using/schema-of-an-existing-table.md)
+      + [擴展結構描述](configuration/using/extending-a-schema.md)
+      + [篩選結構描述](configuration/using/filtering-schemas.md)
       + [限制 PII 檢視](configuration/using/restricting-pii-view.md)
       + [更新資料庫結構](configuration/using/updating-the-database-structure.md)
       + [新增欄位助理](configuration/using/new-field-wizard.md)
       + [資料方案結構](configuration/using/structure-of-a-data-schema.md)
-      + [重新產生方案](configuration/using/regenerating-schemas.md)
-      + [方案版本範例](configuration/using/examples-of-schemas-edition.md)
+      + [重新產生結構描述](configuration/using/regenerating-schemas.md)
+      + [結構描述版本範例](configuration/using/examples-of-schemas-edition.md)
    + 輸入表單 {#input-forms}
       + [識別表單](configuration/using/identifying-a-form.md)
       + [編輯表單](configuration/using/editing-forms.md)
@@ -793,7 +796,7 @@ ht-degree: 100%
       + [編輯探索工具階層](configuration/using/edition.md)
    + 使用自訂收件者表格 {#use-a-custom-recipient-table}
       + [關於自訂收件者表格](configuration/using/about-custom-recipient-table.md)
-      + [方案特性](configuration/using/schema-characteristics.md)
+      + [結構描述特性](configuration/using/schema-characteristics.md)
       + [目標對應](configuration/using/target-mapping.md)
       + [設定介面](configuration/using/configuring-the-interface.md)
       + [種子地址](configuration/using/seed-addresses.md)

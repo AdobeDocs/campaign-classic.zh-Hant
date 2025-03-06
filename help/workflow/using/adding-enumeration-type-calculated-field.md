@@ -6,8 +6,10 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 feature: Workflows, Data Management
+hide: true
+hidefromtoc: true
 exl-id: 3f606d3a-0af5-4315-bb08-1b21a71f1721
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 1%
@@ -83,6 +85,6 @@ ht-degree: 1%
 
    ![](assets/query_editor_nveau_79.png)
 
-   再舉一個例子，說明沒有輸入列舉值「2」。 選取&#x200B;**[!UICONTROL Generate an error and reject the line]**&#x200B;函式：所有性別「2」收件者會在行中提出異常和其他資訊（名字和姓氏等） 將不會匯出。 資料預覽視窗的&#x200B;**[!UICONTROL Logs generated during export]**&#x200B;欄位中顯示錯誤記錄。 此記錄表示未輸入列舉值「2」。
+   再舉一個例子，說明沒有輸入列舉值「2」。 選取&#x200B;**[!UICONTROL Generate an error and reject the line]**&#x200B;函式：所有性別「2」收件者都會提出異常，且行中的其他資訊（名字和姓氏等）不會匯出。 資料預覽視窗的&#x200B;**[!UICONTROL Logs generated during export]**&#x200B;欄位中顯示錯誤記錄。 此記錄表示未輸入列舉值「2」。
 
    ![](assets/query_editor_nveau_80.png)

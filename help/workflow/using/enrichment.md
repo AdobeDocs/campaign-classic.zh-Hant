@@ -3,8 +3,10 @@ product: campaign
 title: 擴充
 description: 進一步瞭解擴充工作流程活動
 feature: Workflows, Enrichment Activity, Targeting Activity
+hide: true
+hidefromtoc: true
 exl-id: 4c7bc0f3-5877-47dc-bd72-dc94fb7bd479
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '1297'
 ht-degree: 1%
@@ -40,7 +42,7 @@ ht-degree: 1%
 
 * **[!UICONTROL Define a collection]**：可讓您定義表格之間具有1-N基數的連結。
 * **[!UICONTROL Define a link whose target is still available]**：可讓您定義表格之間具有1-1基數的連結。 連線條件必須由目標表格中的單一記錄定義。
-* **[!UICONTROL Define a link whose target does not necessarily exist in the base]**：可讓您定義表格之間具有0-1基數的連結。 連線條件必須由0或1 （最大值）定義 記錄。
+* **[!UICONTROL Define a link whose target does not necessarily exist in the base]**：可讓您定義表格之間具有0-1基數的連結。 連線條件必須由目標表格中的0或1 （最大）記錄定義。
 
   此選項設定於&#x200B;**[!UICONTROL Simple Join]**&#x200B;索引標籤中，可透過&#x200B;**[!UICONTROL Enrichment]**&#x200B;活動的&#x200B;**[!UICONTROL Edit additional data]**&#x200B;連結存取。
 

@@ -3,8 +3,10 @@ product: campaign
 title: 監督工作流程
 description: 瞭解如何監督行銷活動工作流程
 feature: Workflows
+hide: true
+hidefromtoc: true
 exl-id: ca6d4bf4-7b3a-4d36-9fc3-0b83531d0132
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '650'
 ht-degree: 0%
@@ -134,7 +136,7 @@ vars.strWorkflowStop = strStop;
 此範本必須包括：
 
 * **主管的電子郵件地址**。
-* **HTML內容**&#x200B;以插入個人化文字。
+* **用於插入個人化文字的HTML內容**。
 
   ![](assets/uc_monitoring_workflow_variables_diffusion.png)
 

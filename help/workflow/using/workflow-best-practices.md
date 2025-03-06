@@ -3,8 +3,10 @@ product: campaign
 title: 工作流程最佳實務
 description: 瞭解行銷活動工作流程最佳實務
 feature: Workflows
+hide: true
+hidefromtoc: true
 exl-id: 39c57f61-2629-4214-91e4-cb97dc039deb
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '1381'
 ht-degree: 11%
@@ -19,7 +21,7 @@ ht-degree: 11%
 
 以下列出最佳化行銷活動效能的一般准則，包括套用至您工作流程的最佳實務。
 
-[Campaign Classicv7生產指南](../../production/using/workflow-execution.md)中還提供了與工作流程執行相關的疑難排解指南。
+[Campaign Classic v7生產指南](../../production/using/workflow-execution.md)中還提供了與工作流程執行相關的疑難排解指南。
 
 ### 記錄 {#logs}
 

@@ -3,8 +3,10 @@ product: campaign
 title: 關於工作流程
 description: 使用工作流程自動化程序、管理資料和客群、傳送訊息等
 feature: Workflows, Data Management
+hide: true
+hidefromtoc: true
 exl-id: 51be6b90-2a7a-4757-9754-d16c540a87ff
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '650'
 ht-degree: 37%

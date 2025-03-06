@@ -3,8 +3,10 @@ product: campaign
 title: 工作流程中的 JavaScript 程式碼範例
 description: 這些範例說明如何在工作流程中使用JavaScript程式碼
 feature: Workflows
+hide: true
+hidefromtoc: true
 exl-id: 7213ea64-3dec-4b16-9d93-4ae941ddfaa7
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '1695'
 ht-degree: 3%
@@ -52,7 +54,7 @@ ht-degree: 3%
    1. 呼叫`xtk:session`結構描述上的`Write`方法。
 
       >[!IMPORTANT]
-      > 如果您使用Adobe Campaign v8，建議您針對Snowflake表格中的`Write`方法，搭配&#x200B;**擷取**&#x200B;和&#x200B;**資料更新/刪除** API使用預備機制。 [深入了解](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html){target="_blank"}.
+      > 如果您使用Adobe Campaign v8，建議您針對Snowflake表格中的`Write`方法，搭配&#x200B;**擷取**&#x200B;和&#x200B;**資料更新/刪除** API使用預備機制。 [深入了解](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html){target="_blank"}。
 
    1. 傳遞XML程式碼作為寫入要求的引數。
 
@@ -562,7 +564,7 @@ for each (var w in res.recipient)
 * `delete`作業
 
 >[!IMPORTANT]
-> 如果您使用Adobe Campaign v8，建議您針對Snowflake表格中的`Write`方法，搭配&#x200B;**擷取**&#x200B;和&#x200B;**資料更新/刪除** API使用預備機制。 [深入了解](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html){target="_blank"}.
+> 如果您使用Adobe Campaign v8，建議您針對Snowflake表格中的`Write`方法，搭配&#x200B;**擷取**&#x200B;和&#x200B;**資料更新/刪除** API使用預備機制。 [深入了解](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html){target="_blank"}。
 
 #### 範例1：插入或更新記錄
 
@@ -616,7 +618,7 @@ xtk.session.Write(
 
 ### API檔案
 
-* [個SOAP呼叫範例](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html)
+* [SOAP呼叫範例](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html)
 * 方法：
    * [建立](https://experienceleague.adobe.com/developer/campaign-api/api/f-create.html)
    * [DeleteCollection](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-DeleteCollection.html)

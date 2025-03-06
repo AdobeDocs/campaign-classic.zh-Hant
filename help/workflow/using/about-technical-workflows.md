@@ -3,8 +3,10 @@ product: campaign
 title: 技術工作流程
 description: 進一步瞭解Campaign Classic套件提供的技術工作流程
 feature: Workflows
+hide: true
+hidefromtoc: true
 exl-id: 9aed2665-cd4b-419c-b9f2-ea04fc1d8f01
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '1704'
 ht-degree: 1%
@@ -35,7 +37,7 @@ ht-degree: 1%
 |------|--------|-----------|
 | **別名清除** (aliasCleansing) | 傳遞 | 此工作流程會將列舉值標準化。 預設會每天凌晨3:00觸發。 |
 | **帳單** （帳單） | 傳遞 | 此工作流程會透過電子郵件將系統活動報告傳送給「帳單」操作員。 它會在每月25日的行銷執行個體上觸發。 |
-| **計算Twitter統計資料** (statsTwitter) | 社交網路（社交行銷） — 僅限Campaign v7 | 此工作流程會計算連結到X上的轉推和造訪的統計資料(先前稱為Twitter)。 |
+| **計算Twitter統計資料** (statsTwitter) | 社交網路（社交行銷） — 僅限Campaign v7 | 此工作流程會計算與X （先前稱為Twitter）上的轉推和造訪相關聯的統計資料。 |
 | **行銷活動工作** (operationMgt) | 行銷活動（行銷活動） | 此工作流程管理行銷活動的工作（啟動目標定位、檔案擷取等）。 也會建立與循環和定期行銷活動相關的工作流程。 |
 | **收集HeatMap服務的資料** (collectDataHeatMapService) | 預設安裝 | 此工作流程會擷取HeatMap服務所需的資料。 |
 | **收集隱私權請求** (collectPrivacyRequests) | 隱私權資料保護規範 | 此工作流程會產生儲存在Adobe Campaign的收件者資料，並讓該資料可在隱私權請求的畫面中下載。 |

@@ -3,11 +3,13 @@ product: campaign
 title: 週期性傳遞
 description: 深入瞭解循環傳送工作流程活動
 feature: Workflows
+hide: true
+hidefromtoc: true
 exl-id: efd2cdfb-2e5f-4672-8be8-a424481b11ed
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '281'
-ht-degree: 8%
+ht-degree: 11%
 
 ---
 
@@ -55,4 +57,4 @@ ht-degree: 8%
 
 >[!VIDEO](https://video.tv.adobe.com/v/25040?quality=12)
 
-[此處](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant)提供其他Campaign Classic操作說明影片。
+其他 Campaign Classic 作法影片可在[此處](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant)取得。

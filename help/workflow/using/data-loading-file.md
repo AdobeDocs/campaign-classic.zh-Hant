@@ -3,8 +3,10 @@ product: campaign
 title: 資料載入 (檔案)
 description: 進一步瞭解資料載入（檔案）工作流程活動
 feature: Workflows, Data Management Activity
+hide: true
+hidefromtoc: true
 exl-id: a380e486-a40c-4bf6-b7f4-7dcd76c34085
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '1140'
 ht-degree: 14%
@@ -94,7 +96,7 @@ ht-degree: 14%
 
 1. 檔案收集器可讓您根據指定的頻率，復原儲存在目錄中的檔案。
 
-   **[!UICONTROL Directory]**&#x200B;索引標籤包含要復原的檔案資訊。 在我們的範例中，將會復原名稱包含&#39;customers&#39;字詞且儲存在伺服器的tmp/Adobe/Data/files目錄中的所有文字格式檔案。
+   **[!UICONTROL Directory]**&#x200B;索引標籤包含要復原的檔案資訊。 在我們的範例中，將會復原名稱包含&#39;customers&#39;一字且儲存在伺服器的tmp/Adobe/Data/files目錄中的所有文字格式檔案。
 
    [檔案收集器](file-collector.md)區段中詳細說明使用&#x200B;**[!UICONTROL File collector]**。
 

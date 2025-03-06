@@ -2,8 +2,10 @@
 product: campaign
 title: 隱私權資料保護規範工作流程
 description: 進一步瞭解隱私權資料保護規則工作流程
+hide: true
+hidefromtoc: true
 feature: Workflows, Privacy
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '104'
 ht-degree: 2%

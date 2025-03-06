@@ -1,17 +1,19 @@
 ---
 product: campaign
-title: 編輯方案
+title: 編輯結構描述
 description: 進一步瞭解編輯結構描述工作流程活動
 feature: Workflows, Targeting Activity
+hide: true
+hidefromtoc: true
 exl-id: d26966a8-b5db-4fa4-85ec-7ebd770c4ef3
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '115'
 ht-degree: 3%
 
 ---
 
-# 編輯方案{#edit-schema}
+# 編輯結構描述{#edit-schema}
 
 
 

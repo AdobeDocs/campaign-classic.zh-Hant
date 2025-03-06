@@ -3,8 +3,10 @@ product: campaign
 title: 監視工作流程的執行
 description: 監視工作流程的執行
 feature: Workflows
+hide: true
+hidefromtoc: true
 exl-id: d589180b-8e1d-4149-9b16-3f541018a41f
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '2018'
 ht-degree: 2%
@@ -19,9 +21,9 @@ ht-degree: 2%
 
 [本節](supervising-workflows.md#supervising-workflows)也提供如何建立工作流程的使用案例，可讓您監視一組「已暫停」、「已停止」或「發生錯誤」的工作流程的狀態。
 
-此外，執行個體的管理員可以使用&#x200B;**稽核軌跡**&#x200B;來檢查工作流程的活動和上次所做的修改，以及工作流程的狀態。 如需詳細資訊，請參閱[Campaign Classicv7生產指南](../../production/using/audit-trail.md)。
+此外，執行個體的管理員可以使用&#x200B;**稽核軌跡**&#x200B;來檢查工作流程的活動和上次所做的修改，以及工作流程的狀態。 如需詳細資訊，請參閱[Campaign Classic v7生產指南](../../production/using/audit-trail.md)。
 
-監視不同Campaign處理序的其他方法顯示在[Campaign Classic v7生產指南](../../production/using/monitoring-guidelines.md)中。
+[Campaign Classic v7生產指南](../../production/using/monitoring-guidelines.md)中提供了監視不同Campaign流程的其他方法。
 
 ## 顯示進度 {#displaying-progress}
 
@@ -141,7 +143,7 @@ ht-degree: 2%
 >
 >您可以對每個活動個別套用此設定。 若要這麼做，請編輯活動屬性，並在&#x200B;**[!UICONTROL Advanced]**&#x200B;索引標籤中選取錯誤管理模式。
 
-如需工作流程執行疑難排解的詳細資訊，請參閱[Campaign Classicv7生產指南](../../production/using/workflow-execution.md)。
+如需工作流程執行疑難排解的詳細資訊，請參閱[Campaign Classic v7生產指南](../../production/using/workflow-execution.md)。
 
 ## 正在處理錯誤 {#processing-errors}
 
@@ -234,9 +236,9 @@ instance.vars.isRunning = false
 
 工作流程會使用許多工作表格，消耗空間，如果不進行維護，最終會導致整個平台速度變慢。 如需資料庫維護的詳細資訊，請參閱此[區段](../../production/using/tables-to-maintain.md)。
 
-可透過&#x200B;**管理>生產>技術工作流程**&#x200B;節點存取的&#x200B;**資料庫清理**&#x200B;工作流程，可讓您刪除過時的資料，以避免資料庫呈指數增長。 工作流程會自動觸發，使用者無需另行干預。 請參閱[Campaign Classicv7生產指南](../../production/using/database-cleanup-workflow.md)。
+可透過&#x200B;**管理>生產>技術工作流程**&#x200B;節點存取的&#x200B;**資料庫清理**&#x200B;工作流程，可讓您刪除過時的資料，以避免資料庫呈指數增長。 工作流程會自動觸發，使用者無需另行干預。 請參閱[Campaign Classic v7生產指南](../../production/using/database-cleanup-workflow.md)。
 
-您也可以建立特定的技術工作流程，以清除不必要的資料佔用空間。 請參閱[Campaign Classicv7生產指南](../../production/using/application-objects.md)和此[區段](#purging-the-logs)。
+您也可以建立特定的技術工作流程，以清除不必要的資料佔用空間。 請參閱[Campaign Classic v7生產指南](../../production/using/application-objects.md)和此[區段](#purging-the-logs)。
 
 ## 處理暫停的工作流程 {#handling-of-paused-workflows}
 
@@ -259,7 +261,7 @@ Campaign Classic介面可讓您使用預先定義的&#x200B;**檢視**&#x200B;�
 * **[!UICONTROL Running]**：列出所有執行中的工作流程。
 * **[!UICONTROL Paused]**：列出所有暫停的工作流程。
 * **[!UICONTROL Failed]**：列出所有失敗的工作流程。
-* **[!UICONTROL Start Pending]**：列出所有等待由operationMgt處理序啟動的工作流程。 此檢視僅適用於&#x200B;**行銷活動**&#x200B;套件。 請參閱[Campaign Classicv7安裝指南](../../installation/using/installing-campaign-standard-packages.md)以瞭解更多資訊。
+* **[!UICONTROL Start Pending]**：列出所有等待由operationMgt處理序啟動的工作流程。 此檢視僅適用於&#x200B;**行銷活動**&#x200B;套件。 請參閱[Campaign Classic v7安裝指南](../../installation/using/installing-campaign-standard-packages.md)以瞭解更多資訊。
 
 ![](assets/workflow-monitoring-views.png)
 

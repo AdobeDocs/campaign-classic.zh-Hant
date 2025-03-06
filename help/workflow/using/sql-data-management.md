@@ -3,8 +3,10 @@ product: campaign
 title: SQL 資料管理
 description: 深入瞭解SQL資料管理工作流程活動
 feature: Workflows
+hide: true
+hidefromtoc: true
 exl-id: cada78cb-658f-4b9e-8136-31c17cb1d82f
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '412'
 ht-degree: 4%
@@ -45,7 +47,7 @@ ht-degree: 4%
 
    >[!CAUTION]
    >
-   >SQL指令碼編寫者有責任確認SQL指令碼正常運作，以及其參考（欄位名稱等） 符合傳出綱要。
+   >SQL指令碼編寫者應負責確認SQL指令碼運作正常，且其參照（欄位名稱等）符合輸出結構描述。
 
    如果要載入現有的SQL程式碼，請選取&#x200B;**[!UICONTROL The SQL script is contained in an entity stored in the database]**&#x200B;選項。 SQL指令碼必須建立並儲存在&#x200B;**[!UICONTROL Administration]** / **[!UICONTROL Configuration]** / **[!UICONTROL SQL scripts]**&#x200B;功能表中。
 

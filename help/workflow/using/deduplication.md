@@ -1,17 +1,19 @@
 ---
 product: campaign
-title: 去重複化
+title: 重複資料刪除
 description: 深入瞭解重複資料刪除工作流程活動
 feature: Workflows, Targeting Activity
+hide: true
+hidefromtoc: true
 exl-id: 38add4fe-6238-45de-863e-895ebca189b7
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '1115'
 ht-degree: 9%
 
 ---
 
-# 去重複化{#deduplication}
+# 重複資料刪除{#deduplication}
 
 
 

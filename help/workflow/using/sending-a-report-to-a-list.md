@@ -3,8 +3,10 @@ product: campaign
 title: 傳送報吿至清單
 description: 瞭解如何使用工作流程將報告傳送至清單
 feature: Workflows
+hide: true
+hidefromtoc: true
 exl-id: cb24aea5-f3c7-4b17-8899-1792ea18c235
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '632'
 ht-degree: 1%
@@ -23,7 +25,7 @@ ht-degree: 1%
 
 * 建立將接收傳遞的收件者清單（請參閱： [步驟1：建立收件者清單](#step-1--creating-the-recipient-list)）。
 * 建立傳遞範本，可讓您每次執行工作流程時都產生新的傳遞（請參閱： [步驟2：建立傳遞範本](#step-2--creating-the-delivery-template)）。
-* 建立工作流程，讓您以PDF格式產生報表，並將報表傳送至收件者清單（請參閱： [步驟3：建立工作流程](#step-3--creating-the-workflow)）。
+* 建立工作流程，讓您將報表以PDF格式產生，並傳送給收件者清單（請參閱： [步驟3：建立工作流程](#step-3--creating-the-workflow)）。
 
 ## 步驟1：建立收件者清單 {#step-1--creating-the-recipient-list}
 

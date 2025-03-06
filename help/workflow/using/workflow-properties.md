@@ -3,8 +3,10 @@ product: campaign
 title: 工作流程屬性
 description: 進一步瞭解Campaign工作流程屬性
 feature: Workflows
+hide: true
+hidefromtoc: true
 exl-id: c7bff902-4f5d-4783-aec4-13561fa7d242
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '553'
 ht-degree: 38%
@@ -39,7 +41,7 @@ ht-degree: 38%
 
   如果您的安裝包括多個工作流程伺服器，請使用此欄位選擇工作流程將在其中執行的電腦。如果在此欄位定義的值不存在於任何伺服器，工作流程將保持待處理狀態。
 
-  請參閱此[Campaign Classicv7安裝指南](../../installation/using/configuring-campaign-server.md#high-availability-workflows-and-affinities)。
+  請參閱此[Campaign Classic v7安裝指南](../../installation/using/configuring-campaign-server.md#high-availability-workflows-and-affinities)。
 
 * **[!UICONTROL History in days]**
 
