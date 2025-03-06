@@ -4,8 +4,10 @@ title: 壓力規則
 description: 瞭解如何在Adobe Campaign中使用壓力規則
 role: User, Data Engineer
 feature: Fatigue Management, Typology Rules, Campaigns
+hide: true
+hidefromtoc: true
 exl-id: c23212f2-fdf8-4820-b389-546f7c84db27
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
 workflow-type: tm+mt
 source-wordcount: '3336'
 ht-degree: 6%
@@ -148,7 +150,7 @@ ht-degree: 6%
 
 例如，若壓力規則定義每週2則訊息的臨界值，並對每個日曆月分組，將阻止在相同周內及相同日曆月內傳送超過2則訊息。 警告：如果期間與兩個月重疊，計算臨界值將考慮這兩個日曆月的傳送，因此可能阻止第二個月的所有新傳送。
 
-請注意，根據預設，計算臨界值時只會考慮已傳送的傳遞。 在Campaign Classicv7中，如果您也想要考量在相關期間內排程的傳遞，請核取&#x200B;**[!UICONTROL Take the deliveries into account in the provisional calendar]**&#x200B;選項。 在這種情況下，考慮的期間會加倍，以便將未來傳送與之前傳送整合在一起。
+請注意，根據預設，計算臨界值時只會考慮已傳送的傳遞。 在Campaign Classic v7中，如果您也想要考量在相關期間內排程的傳送，請核取&#x200B;**[!UICONTROL Take the deliveries into account in the provisional calendar]**&#x200B;選項。 在這種情況下，考慮的期間會加倍，以便將未來傳送與之前傳送整合在一起。
 
 若要將考慮的傳送限制在2週期間，您可以：
 

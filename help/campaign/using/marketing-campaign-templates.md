@@ -4,8 +4,10 @@ title: 行銷活動範本
 description: 行銷活動範本
 role: User
 feature: Campaigns, Templates
+hide: true
+hidefromtoc: true
 exl-id: d272d4b9-f1b2-4fb2-9ed9-91a4aea7eca3
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
 workflow-type: tm+mt
 source-wordcount: '1128'
 ht-degree: 3%
@@ -66,7 +68,7 @@ ht-degree: 3%
 
 ![](assets/s_ncs_user_op_template_tab1.3.png)
 
-如果未選取權能，則與流&#39;b5&#39;7b相關的元素（選單、圖示、選項、標籤、子標籤等） 將不會顯示在範本的介面或根據此範本的行銷活動中。 行銷活動詳細資訊左側的標籤通常與範本中選取的程式一致。 例如，如果未選取&#x200B;**費用和目標**，則根據此範本的行銷活動中將不會顯示對應的&#x200B;**[!UICONTROL Budget]**&#x200B;標籤。
+如果未選取功能，則與流程相關的元素（功能表、圖示、選項、標籤、子標籤等）將不會顯示在範本的介面或根據此範本的行銷活動中。 行銷活動詳細資訊左側的標籤通常與範本中選取的程式一致。 例如，如果未選取&#x200B;**費用和目標**，則根據此範本的行銷活動中將不會顯示對應的&#x200B;**[!UICONTROL Budget]**&#x200B;標籤。
 
 此外，設定視窗的捷徑會新增至行銷活動控制面板。 啟用功能時，直接連結可讓您從Campaign控制面板存取功能。
 
@@ -166,7 +168,7 @@ ht-degree: 3%
 
 ### 範本執行引數 {#template-execution-parameters}
 
-**[!UICONTROL Advanced campaign settings...]**&#x200B;連結可讓您設定範本的進階選項，以處理傳遞目標（控制組、種子地址等） 以及行銷活動測量與工作流程執行的設定。
+**[!UICONTROL Advanced campaign settings...]**&#x200B;連結可讓您設定範本的進階選項，以處理傳遞目標（控制組、種子地址等）以及行銷活動測量和工作流程執行的設定。
 
 ![](assets/s_ncs_user_op_template_tab1.2.png)
 

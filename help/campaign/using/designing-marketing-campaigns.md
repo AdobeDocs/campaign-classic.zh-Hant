@@ -4,11 +4,13 @@ title: 設計和執行行銷活動
 description: 定義、最佳化、執行和分析行銷活動
 role: User
 feature: Campaigns
+hide: true
+hidefromtoc: true
 exl-id: 4e0df18f-3623-4dfb-a2f8-ad293dbc4dd5
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
 workflow-type: tm+mt
 source-wordcount: '438'
-ht-degree: 20%
+ht-degree: 22%
 
 ---
 
@@ -68,4 +70,4 @@ Adobe Campaign可讓您定義、最佳化、執行和分析通訊與行銷活動
 
 >[!VIDEO](https://video.tv.adobe.com/v/35131?quality=12)
 
-[此處](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant)提供其他Campaign Classic操作說明影片。
+其他 Campaign Classic 作法影片可在[此處](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant)取得。

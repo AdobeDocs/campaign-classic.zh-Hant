@@ -4,8 +4,10 @@ title: 行銷活動檔案和傳遞大網
 description: 進一步瞭解行銷活動檔案和傳遞大網
 role: User
 feature: Campaigns
+hide: true
+hidefromtoc: true
 exl-id: 891252b0-4700-4a2a-a632-63aad5ce75d7
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
 workflow-type: tm+mt
 source-wordcount: '755'
 ht-degree: 0%
@@ -14,7 +16,7 @@ ht-degree: 0%
 
 # 管理相關檔案 {#managing-associated-documents}
 
-您可以將各種檔案與行銷活動建立關聯：報表、像片、網頁、圖表等。 這些檔案可以是任何格式(Microsoft Word、PowerPoint、PNG、JPG、AcrobatPDF等)。
+您可以將各種檔案與行銷活動建立關聯：報表、像片、網頁、圖表等。 這些檔案可以是任何格式(Microsoft Word、PowerPoint、PNG、JPG、Acrobat PDF等)。
 
 >[!IMPORTANT]
 >
@@ -32,7 +34,7 @@ ht-degree: 0%
 
 **[!UICONTROL Documents]**&#x200B;索引標籤包含：
 
-* 內容所需的所有檔案清單（範本、影像等） 這些軟體可由具有適當許可權的Adobe Campaign運運算元在本機下載，
+* 內容所需的所有檔案清單（範本、影像等），可由Adobe Campaign運運算元透過適當的許可權從本機下載。
 * 包含路由器資訊的檔案（如果有的話）。
 
 檔案透過&#x200B;**[!UICONTROL Edit > Documents]**&#x200B;索引標籤連結至方案或行銷活動。
@@ -59,7 +61,7 @@ ht-degree: 0%
 >
 >傳遞大綱僅用於直接郵件行銷活動的內容。
 
-傳遞大網表示一組結構化元素（檔案、商店、促銷優惠券等） 由公司針對特定行銷活動所建立。
+傳遞大網代表公司為特定行銷活動建立的一組結構化元素（檔案、商店、促銷優惠券等）。
 
 這些元素會分組在傳遞大網中，而每個傳遞大網都會與一個傳遞相關聯；在傳送至&#x200B;**服務提供者**&#x200B;的擷取檔案中會參考該專案，以便附加至該傳遞。 例如，您可以建立參考分支及其使用之行銷手冊的傳遞大網。
 
@@ -119,7 +121,7 @@ ht-degree: 0%
 
 ### 擷取結果 {#extraction-result}
 
-在擷取並傳送給服務提供者的檔案中，大綱的名稱以及適當時其特徵（成本、說明等） 會根據與服務提供者相關聯之匯出範本中的資訊來新增至內容。
+在擷取並傳送給服務提供者的檔案中，大綱的名稱以及適當時其特性（成本、說明等）會根據與服務提供者相關的匯出範本中的資訊新增到內容中。
 
 在下列範例中，與傳遞相關的大綱的標籤、預估成本和說明將新增至摘取檔案。
 

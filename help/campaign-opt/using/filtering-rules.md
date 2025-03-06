@@ -4,8 +4,10 @@ title: 篩選規則
 description: 瞭解如何使用Adobe Campaign中的篩選規則
 role: User, Data Engineer
 feature: Typology Rules, Campaigns
+hide: true
+hidefromtoc: true
 exl-id: a4d12445-5680-4704-9c67-e43e0ea6631b
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
 workflow-type: tm+mt
 source-wordcount: '510'
 ht-degree: 2%
@@ -16,7 +18,7 @@ ht-degree: 2%
 
 篩選規則可讓您根據查詢中定義的條件，定義要排除的訊息。 這些規則會連結至目標維度。
 
-篩選規則可以連結到其他型別的規則（控制、壓力等） 在型別中，或分組在專用的&#x200B;**篩選**&#x200B;型別中。 如需詳細資訊，請參閱[建立和使用篩選型別](#creating-and-using-a-filtering-typology)。
+篩選規則可以連結到型別中的其他規則型別（控制、壓力等），或分組到專用的&#x200B;**篩選**&#x200B;型別。 如需詳細資訊，請參閱[建立和使用篩選型別](#creating-and-using-a-filtering-typology)。
 
 ## 建立篩選規則 {#creating-a-filtering-rule}
 

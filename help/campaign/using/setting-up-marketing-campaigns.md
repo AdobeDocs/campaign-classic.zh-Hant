@@ -4,8 +4,10 @@ title: 建立行銷活動
 description: 瞭解如何建立和執行行銷活動
 role: User
 feature: Campaigns, Cross Channel Orchestration, Programs
+hide: true
+hidefromtoc: true
 exl-id: a8fce21f-ffe3-4819-87ca-ac0ad9f21e41
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
 workflow-type: tm+mt
 source-wordcount: '1248'
 ht-degree: 5%
@@ -40,7 +42,7 @@ ht-degree: 5%
 
 1. 按一下首頁上的&#x200B;**總管**&#x200B;圖示。
 1. 在您要建立計畫的資料夾上按一下滑鼠右鍵。
-1. 選取&#x200B;**新增資料夾> Campaign Management >計畫**。
+1. 選取&#x200B;**新增資料夾>行銷活動管理>計畫**。
 
    ![](assets/create_plan_1.png)
 

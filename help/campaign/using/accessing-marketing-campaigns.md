@@ -4,8 +4,10 @@ title: 存取行銷活動
 description: 存取行銷活動
 role: User
 feature: Campaigns, Cross Channel Orchestration
+hide: true
+hidefromtoc: true
 exl-id: 1278bda1-f83c-4d38-8042-e6611755cf36
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
 workflow-type: tm+mt
 source-wordcount: '1199'
 ht-degree: 2%
@@ -174,7 +176,7 @@ Campaign可讓您管理一組方案，由各種行銷活動組成。 每個行�
 | 行銷活動、傳遞、優惠方案等清單。 | 刪除清單專案 |
 | Campaign | 取消行銷活動 |
 | 傳遞 | 核准傳遞內容及目標<br/>提交傳遞內容<br/>確認傳遞<br/>暫停並停止傳遞 |
-| 網頁應用程式 | 建立Web應用程式<br/>編輯應用程式內容和屬性<br/>將應用程式內容儲存為範本<br/>將應用程式Publish |
+| 網頁應用程式 | 建立Web應用程式<br/>編輯應用程式內容和屬性<br/>將應用程式內容儲存為範本<br/>發佈應用程式 |
 | 優惠 | 核准優惠方案內容和資格<br/>停用線上優惠方案 |
 | 任務 | 完成工作<br/>取消工作 |
 | 行銷資源 | 核准資源<br/>鎖定並解除鎖定資源 |

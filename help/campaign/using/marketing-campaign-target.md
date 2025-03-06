@@ -4,8 +4,10 @@ title: 行銷活動目標對象
 description: 瞭解如何定義行銷活動的對象
 role: User
 feature: Campaigns, Audiences
+hide: true
+hidefromtoc: true
 exl-id: 04daa67c-4057-42a7-b993-a6eddf2b883d
-source-git-commit: 7453db63a0ed2c617e9f7e4cbfa3480b3ed5020d
+source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
 workflow-type: tm+mt
 source-wordcount: '1492'
 ht-degree: 1%
@@ -91,7 +93,7 @@ ht-degree: 1%
 
 可以按照排程（排程器）或事件（外部訊號、檔案匯入等）將目標設定為自動執行。
 
-與執行目標定位工作流程相關的動作（啟動、停止、暫停等） 是&#x200B;**非同步**&#x200B;處理序：命令已儲存，一旦伺服器可供套用就會生效。
+與執行目標工作流程相關的動作（啟動、停止、暫停等）為&#x200B;**非同步**&#x200B;程式：命令已儲存，一旦伺服器可供套用命令就會生效。
 
 工具列圖示可讓您執行定位工作流程的相關動作。
 
@@ -186,7 +188,7 @@ ht-degree: 1%
 
    ![](assets/s_ncs_user_edit_op_target.png)
 
-1. 選取&#x200B;**[!UICONTROL Enable and edit control group configuration]**&#x200B;選項。
+1. 選取 **[!UICONTROL Enable and edit control group configuration]** 選項。
 1. 按一下&#x200B;**[!UICONTROL Edit...]**&#x200B;設定控制組。
 
    ![](assets/s_ncs_user_edit_op_general_tab_exe_target.png)

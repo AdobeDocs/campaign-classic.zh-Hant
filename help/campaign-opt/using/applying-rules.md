@@ -4,8 +4,10 @@ title: 套用型別規則
 description: 瞭解如何套用型別規則
 role: User, Data Engineer
 feature: Typology Rules, Campaigns
+hide: true
+hidefromtoc: true
 exl-id: 09ec0fc0-76ed-4c73-8bdf-c931e2103aa9
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
 workflow-type: tm+mt
 source-wordcount: '987'
 ht-degree: 8%
