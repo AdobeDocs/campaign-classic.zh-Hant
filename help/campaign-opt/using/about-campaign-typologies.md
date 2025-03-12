@@ -7,10 +7,10 @@ feature: Typology Rules, Campaigns
 hide: true
 hidefromtoc: true
 exl-id: 6d5b8584-4aa1-4d9a-89d9-d41da75dd323
-source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
+source-git-commit: dd6bcb16fe41b6a3f1e3f5aaf2f753b29ad4bc1d
 workflow-type: tm+mt
-source-wordcount: '463'
-ht-degree: 16%
+source-wordcount: '104'
+ht-degree: 50%
 
 ---
 
@@ -20,66 +20,71 @@ Campaign Optimization是Adobe Campaign模組，可讓您控制、篩選及監控
 
 ![](assets/do-not-localize/how-to-video.png) [在影片中探索此功能](#typologies-video)
 
+根據您的產品，可包含Campaign Optimization或附加元件。 請檢查您的授權合約。
+
 >[!NOTE]
 >
->根據您的產品，可包含Campaign Optimization或附加元件。 請檢查您的授權合約。
+>若要進一步瞭解Adobe Campaign的Campaign Optimization以及如何使用，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/automation/campaign-optimization/campaign-typologies){target=_blank}。
 
-## 類型規則 {#typology-rules}
+<!--
 
-透過Adobe Campaign，您可以設計和套用四種型別的型別規則：
+## Typology rules {#typology-rules}
 
-* **正在篩選**&#x200B;規則，可讓您根據條件排除部分目標。 如需詳細資訊，請參閱[篩選規則](filtering-rules.md)。
-* 可讓您控制行銷疲勞的&#x200B;**壓力**&#x200B;規則。 如需詳細資訊，請參閱[壓力規則](pressure-rules.md)。
-* **容量**&#x200B;規則可讓您限制載入，以確保最佳處理條件。 如需詳細資訊，請參閱[控制容量](consistency-rules.md#controlling-capacity)。
-* **控制**&#x200B;規則，可讓您在傳送訊息之前檢查訊息是否有效。 如需詳細資訊，請參閱[控制項規則](control-rules.md)。
+With Adobe Campaign you can design and apply four types of typology rules:
 
-建立後，型別規則會依傳遞中參考的行銷活動型別分組。 請參閱[套用型別](#applying-typologies)。
+* **Filtering** rules which let you exclude part of the target based on criteria. For more on this, refer to [Filtering rules](filtering-rules.md).
+* **Pressure** rules which let you control marketing fatigue. For more on this, refer to [Pressure rules](pressure-rules.md).
+* **Capacity** rules which let you limit loads to guarantee optimal processing conditions. For more on this, refer to [Controlling capacity](consistency-rules.md#controlling-capacity).
+* **Control** rules which let you check the validity of messages before they are sent. For more on this, refer to [Control rules](control-rules.md).
 
-## 類型 {#typologies}
+Once they have been created, typology rules are grouped in campaign typologies which are referenced in deliveries. See [Applying typologies](#applying-typologies).
 
-行銷活動型別可包含數個[型別規則](#typology-rules)，但傳遞只能參考一個型別。
+## Typologies {#typologies}
 
-**[!UICONTROL Rules]**&#x200B;索引標籤可讓您新增、刪除或檢視要套用的型別規則。
+A campaign typology can contain several [typology rules](#typology-rules), but a delivery can only reference one typology.
+
+The **[!UICONTROL Rules]** tab lets you add, delete or view the typology rules to apply.
 
 ![](assets/campaign_opt_rules_tab.png)
 
-## 套用型別 {#applying-typologies}
+## Applying typologies {#applying-typologies}
 
-建立並套用型別至傳送的步驟如下所示：
+Steps to create and apply a typology to your deliveries are listed below:
 
-1. 建立型別規則。
+1. Create typology rules.
 
-   在&#x200B;**[!UICONTROL Administration > Campaign management > Typology management > Typology rules]**&#x200B;節點中找到型別規則。
+   Typology rules are found in the **[!UICONTROL Administration > Campaign management > Typology management > Typology rules]** node.
 
-   促銷活動中可用的不同規則在下列章節中說明： [銷售壓力規則](pressure-rules.md)、[容量規則](consistency-rules.md#controlling-capacity)、[控制規則](control-rules.md)和[篩選規則](filtering-rules.md)。
+   Different rules available in Campaign are described in the following sections: [sales pressure rules](pressure-rules.md), [capacity rules](consistency-rules.md#controlling-capacity), [control rules](control-rules.md) and [filtering rules](filtering-rules.md).
 
-1. 建立型別並參考您建立的規則。
+1. Create a typology and reference the rules you created into it.
 
-   可透過&#x200B;**[!UICONTROL Administration > Campaign Management > Typology management]** > **[!UICONTROL Typologies]**&#x200B;節點存取型別。
+   Typologies are accessed via the **[!UICONTROL Administration > Campaign Management > Typology management]** > **[!UICONTROL Typologies]** node. 
 
-1. 設定您的傳遞方式，以使用您建立的型別。 如需詳細資訊，請參閱[本章節](applying-rules.md#applying-a-typology-to-a-delivery)。
-1. 透過行銷活動模擬測試及控制行為。 如需行銷活動模擬的詳細資訊，請參閱[本節](campaign-simulations.md)。
+1. Configure your delivery to use the typology you created. For more on this, refer to [this section](applying-rules.md#applying-a-typology-to-a-delivery).
+1. Test and control the behavior through campaign simulations. For more on campaign simulations, refer to [this section](campaign-simulations.md).
 
-在準備傳遞期間，符合條件時會排除收件者。 您可以檢查記錄以監控排除。 在[此頁面](pressure-rules.md#use-cases-on-pressure-rules)中有提供壓力型別規則的範例使用案例。
+During delivery preparation, recipients are excluded when criterion is met. You can check logs to monitor exclusions. Sample use cases on pressure typology rules are available in [this page](pressure-rules.md#use-cases-on-pressure-rules).
 
-## 教學課程影片 {#typologies-video}
+## Tutorial videos {#typologies-video}
 
-### 如何使用型別規則設定疲勞管理
+### How to set up fatigue management using typology rules
 
-此影片說明如何運用型別規則，在Adobe Campaign中實施疲勞管理。
+This video explains how to implement fatigue management in Adobe Campaign by leveraging typology rules.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25090?quality=12)
 
-### 如何使用預先定義的篩選器來設定疲勞管理
+### How to set up fatigue management using predefined filters
 
-疲勞管理控制傳訊的頻率和數量，以避免過度向收件者發送請求。 如果您的行銷活動執行個體中沒有行銷活動最佳化模組，您可以設定預先定義的篩選器，以根據收到的訊息數量篩選目標母體
-此影片說明如何使用篩選器在Adobe Campaign Classic中實施疲勞管理。
+Fatigue management controls frequency and quantity of messaging to avoid over-solicitation of recipients. If you do not have the campaign optimization module in your campaign instance, you may configure a predefined filter that will filter the target population by the number of messages received
+This video explains how to implement fatigue management in Adobe Campaign Classic by using filters.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25091?quality=12)
 
-[此處](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant)提供其他Campaign操作說明影片。
+Additional Campaign how-to videos are available [here](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
 
-**相關主題**
+**Related topic**
 
-* [開始使用型別和疲勞管理](pressure-rules.md)
+* [Get started with typologies and fatigue management](pressure-rules.md)
 
+-->

@@ -6,7 +6,7 @@ title: Campaign Classic v7 指南
 user-guide-description: Adobe Campaign Classic v7 產品文件。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: dd6bcb16fe41b6a3f1e3f5aaf2f753b29ad4bc1d
 workflow-type: tm+mt
 source-wordcount: '2571'
 ht-degree: 99%
@@ -237,8 +237,8 @@ ht-degree: 99%
       + [使用內容範本](delivery/using/using-a-content-template.md)
       + [豐富內容](delivery/using/enriching-content.md)
       + [透過工作流程自動化](delivery/using/automating-via-workflows.md)
++ [協調行銷活動](campaign/using/about-marketing-campaigns.md)
 + 協調行銷活動 {#orchestrating-campaigns}
-   + [關於行銷活動](campaign/using/about-marketing-campaigns.md)
    + [關於行銷活動最佳化](campaign-opt/using/about-campaign-optimization.md)
    + 關於行銷活動{#about-marketing-campaigns}
       + [設計行銷活動](campaign/using/designing-marketing-campaigns.md)
@@ -392,8 +392,8 @@ ht-degree: 99%
       + [同步客群](integrations/using/synchronizing-audiences.md)
       + [同步化網站應用程式](integrations/using/synchronizing-web-applications.md)
       + [疑難排解 [!DNL ACS Connector]](integrations/using/troubleshooting-the-acs-connector.md)
++ [使用工作流程自動化](workflow/using/about-workflow-automation.md)
 + 使用工作流程自動化{#automating-with-workflows}
-   + [關於工作流程自動化](workflow/using/about-workflow-automation.md)
    + 開始使用工作流程 {#introduction}
       + [關於工作流程](workflow/using/about-workflows.md)
       + [關於活動](workflow/using/about-activities.md)

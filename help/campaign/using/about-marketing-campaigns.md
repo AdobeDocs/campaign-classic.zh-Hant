@@ -4,23 +4,41 @@ title: 關於行銷活動
 description: 定義、最佳化、執行和分析行銷活動
 role: User
 feature: Campaigns
-source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
+exl-id: 07cfa2b3-4e70-437a-ad5f-15fbfe717d5c
+source-git-commit: dd6bcb16fe41b6a3f1e3f5aaf2f753b29ad4bc1d
 workflow-type: tm+mt
-source-wordcount: '107'
-ht-degree: 71%
+source-wordcount: '296'
+ht-degree: 33%
 
 ---
 
-# 關於行銷活動{#designing-marketing-campaigns}
+# 協調行銷活動{#designing-marketing-campaigns}
 
 Adobe Campaign 提供一套解決方案，幫助您跨所有線上及離線頻道個人化並傳遞行銷活動。 您可以建立、設定、執行及分析行銷活動。 所有行銷活動都可從統一的控制中心進行管理。
 
 行銷活動包括動作 (傳送) 和流程 (匯入或擷取檔案)，以及資源 (行銷文件、傳遞大綱)。 它們會用於行銷活動。 行銷活動是方案的一部分，而方案則包含在行銷活動計畫中。
 
->[!NOTE]
->
->若要深入瞭解行銷活動管理，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html){target=_blank}。
+若要深入瞭解行銷活動管理，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html){target=_blank}。
 
+![](assets/do-not-localize/campaign.jpg){width="40%"}
+
+瞭解與行銷活動管理相關的關鍵步驟：
+
+* [開始使用](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=zh-Hant){target=_blank}：逐步探索如何在Adobe Campaign中建立及執行行銷活動。
+
+* [建立您的第一個行銷活動](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-create.html?lang=zh-Hant){target=_blank}：瞭解如何排程並設定策劃行銷活動的邏輯。 行銷活動會集中與行銷活動相關的所有元素：傳送、目標定位規則、成本、匯出檔案、相關檔案等。
+
+* [在行銷活動中傳送訊息](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html?lang=zh-Hant){target=_blank}：在行銷活動中協調跨管道傳遞：透過個人化電子郵件、簡訊、推播通知和應用程式內訊息，簡化您與Adobe Campaign的通訊。
+
+![](assets/do-not-localize/add-on.jpg){width="40%"}
+
+有三個附加元件可用於行銷活動管理：
+
+* [行銷活動最佳化](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html?lang=zh-Hant){target=_blank}：此模組可讓您控制、篩選及監視傳遞的傳送。 這樣可確保傳送的訊息符合客戶和公司通訊政策的需求及期望。
+
+* [行銷資源管理](https://experienceleague.adobe.com/docs/campaign/automation/mrm/about-marketing-resource-management.html?lang=zh-Hant){target=_blank}：此模組可讓您透過提供相關工作、預算與行銷資源的完整管理與即時追蹤，以合作模式控制行銷動作。
+
+* [分散式行銷](https://experienceleague.adobe.com/docs/campaign/automation/distributed-marketing/about-distributed-marketing.html?lang=zh-Hant){target=_blank}：此模組可讓您在合作模式中控制行銷動作，方法是提供相關工作、預算和行銷資源的完整管理和即時追蹤。
 
 <!--
 

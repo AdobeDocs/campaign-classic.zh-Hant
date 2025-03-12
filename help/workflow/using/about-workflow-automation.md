@@ -3,18 +3,15 @@ product: campaign
 title: 關於工作流程
 description: 使用工作流程自動化程序、管理資料和客群、傳送訊息等
 feature: Workflows, Data Management
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+exl-id: 024a7344-9376-4ff3-926a-003148229f9f
+source-git-commit: dd6bcb16fe41b6a3f1e3f5aaf2f753b29ad4bc1d
 workflow-type: tm+mt
-source-wordcount: '177'
-ht-degree: 92%
+source-wordcount: '274'
+ht-degree: 59%
 
 ---
 
-# 開始使用工作流程{#gs-workflows}
-
-
-
-## 關於工作流程{#about-workflows}
+# 使用工作流程自動化 {#gs-workflows}
 
 Adobe Campaign 包括一個工作流程模組，可跨應用程式伺服器的不同模組策劃所有流程和任務。使用這個全方位的圖像式環境，您可以設計各式流程，包含細分、行銷活動執行、檔案處理、人力參與等。工作流程引擎將執行並追蹤這些流程。
 
@@ -24,9 +21,21 @@ Adobe Campaign 包括一個工作流程模組，可跨應用程式伺服器的�
 
 工作流程會在行銷活動管理流程的不同內容和階段中進行。
 
->[!NOTE]
->
->若要進一步瞭解工作流程管理，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=zh-Hant){target=_blank}。
+若要進一步瞭解工作流程管理，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=zh-Hant){target=_blank}。
+
+![](assets/do-not-localize/workflow.jpg){width="40%"}
+
+瞭解與工作流程管理相關的關鍵步驟：
+
+* [工作流程活動](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/activities.html?lang=zh-Hant){target=_blank}：活動說明任務範本。 工作流程包括目標定位、流量控制、動作和事件活動。
+
+* [建立工作流程](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=zh-Hant){target=_blank}：瞭解如何建立和執行目標定位、行銷活動和技術工作流程。
+
+* [最佳實務](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html){target=_blank}：瞭解最佳化行銷活動工作流程效能、改善工作流程設計，以及選取正確設定的相關准則。
+
+* [監視工作流程](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target=_blank}：瞭解如何監視工作流程執行，以確保所有專案都正常執行。
+
+* [工作流程使用案例](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/workflow-use-cases.html){target=_blank}：瞭解可以使用工作流程的不同內容，以及如何透過端對端使用案例實作工作流程。
 
 <!--
 
