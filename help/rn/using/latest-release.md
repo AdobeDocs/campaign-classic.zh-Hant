@@ -6,10 +6,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: a92e49e1ac8b0e8f619e06fadba73090a693bc4a
+source-git-commit: 631188b5974eaa4cd1bf667c5df9f2ff0f983cf0
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '251'
+ht-degree: 27%
 
 ---
 
@@ -47,9 +47,19 @@ This release comes with the following compatibility updates:
 
 此版本隨附下列主要修正：
 
-* TLS / SMPP連線修正
-* Google BigQuery修正
-* MTA修正
+* TLS / SMPP連線 — 修正SMPP穩定性問題
+
+* Google BigQuery修正：
+
+   * 修正布林值資料型別的回歸
+   * 修正Proxy設定問題
+   * 修正DATETIME資料型別的回歸
+   * 固定大量負載穩定性
+   * 改善ODBC版本上的內部測試
+   * 修正連線字串上的特殊字元問題
+   * 已移除Google BigQuery查詢的預設逾時（5分鐘）
+
+* 郵件傳輸代理程式(MTA) — 修正孤立的MTA子系卡在&#x200B;**[!UICONTROL Start pending]**&#x200B;狀態上。
 
 此版本也修正下列問題：
 
