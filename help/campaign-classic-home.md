@@ -3,10 +3,10 @@ keywords: Campaign Classic;home;popular topics
 product: campaign
 title: Adobe Campaign Classic v7 產品文件
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: fb19195c7331a2adc0bcf7a37ae7678078dce5e6
+source-git-commit: ec39e513a3474bdcdcf39be7b5e184d62b98f7a2
 workflow-type: tm+mt
-source-wordcount: '353'
-ht-degree: 100%
+source-wordcount: '357'
+ht-degree: 94%
 
 ---
 
@@ -21,9 +21,9 @@ ht-degree: 100%
 >[!BEGINTABS]
 
 
->[!TAB 6 月版本已上線！]
+>[!TAB 2025年3月版本已上線！]
 
-探索 Campaign Classic v7.4.1 隨附的更新、改進和修補程式。
+探索Campaign Classic v7.4.2 - 2025年3月版本隨附的更新、改進和修復。
 
 [![影像](assets/do-not-localize/learn-more-button.svg)](rn/using/latest-release.md)
 
@@ -53,7 +53,7 @@ Android Firebase Cloud Messaging (FCM) 服務的一些重要變更將於 2024 �
     </td>
     <td>
     <a href="platform/using/about-profiles.md"><img src="assets/do-not-localize/start-profiles.png"></a>
-    <div><strong>新增和管理設定檔</strong><br/>輕鬆探索 Adobe Campaign v7 資料庫中的設定檔管理。手動或透過匯入新增設定檔，輕鬆精簡客戶資料和自訂行銷活動。</div>
+    <div><strong>新增和管理輪廓</strong><br/>輕鬆探索 Adobe Campaign v7 資料庫中的輪廓管理。手動或透過匯入新增輪廓，輕鬆精簡客戶資料和自訂行銷活動。</div>
     </td>
     <td>
     <a href="workflow/using/about-workflows.md"><img src="assets/do-not-localize/start-workflows.jpeg"></a>
@@ -84,12 +84,12 @@ Android Firebase Cloud Messaging (FCM) 服務的一些重要變更將於 2024 �
     <td>
       <img src="assets/do-not-localize/icon-experience.svg" width="35px">
     <br/>
-      <strong>客戶體驗</strong><br/><a href="workflow/using/about-workflows.md">使用工作流程自動化</a> - <a href="campaign/using/setting-up-marketing-campaigns.md">行銷活動</a> - <a href="interaction/using/interaction-and-offer-management.md">互動與優惠管理</a> - <a href="delivery/using/about-personalization.md">個人化</a> - <a href="reporting/using/about-adobe-campaign-reporting-tools.md">報告</a>
+      <strong>客戶體驗</strong><br/><a href="workflow/using/about-workflows.md">使用工作流程自動化</a> - <a href="campaign/using/setting-up-marketing-campaigns.md">行銷活動</a> - <a href="interaction/using/interaction-and-offer-management.md">互動與產品建議管理</a> - <a href="delivery/using/about-personalization.md">個人化</a> - <a href="reporting/using/about-adobe-campaign-reporting-tools.md">報告</a>
     </td>
     <td>
       <img src="assets/do-not-localize/icon-send.svg" width="35px">
     <br/>
-      <strong>傳送訊息</strong><br/><a href="delivery/using/communication-channels.md">通訊頻道</a> - <a href="delivery/using/steps-about-delivery-creation-steps.md#sending-a-proof">傳送證明</a> - <a href="delivery/using/get-started-a-b-testing.md">A/B 測試</a> - <a href="delivery/using/about-message-tracking.md">訊息追蹤</a> - <a href="delivery/using/about-deliverability.md">傳遞能力</a> - <a href="message-center/using/about-transactional-messaging.md">交易型訊息傳遞</a>
+      <strong>傳送訊息</strong><br/><a href="delivery/using/communication-channels.md">通訊頻道</a> - <a href="delivery/using/steps-about-delivery-creation-steps.md#sending-a-proof">傳送校樣</a> - <a href="delivery/using/get-started-a-b-testing.md">A/B 測試</a> - <a href="delivery/using/about-message-tracking.md">訊息追蹤</a> - <a href="delivery/using/about-deliverability.md">傳遞能力</a> - <a href="message-center/using/about-transactional-messaging.md">交易型訊息傳遞</a>
     </td>
   </tr>
   <tr style="border: 0;">
