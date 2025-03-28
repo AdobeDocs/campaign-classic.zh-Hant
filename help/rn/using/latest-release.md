@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: 631188b5974eaa4cd1bf667c5df9f2ff0f983cf0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '251'
-ht-degree: 27%
+ht-degree: 100%
 
 ---
 
@@ -21,11 +21,11 @@ ht-degree: 27%
 
 [!BADGE 有限可用性]{type=Informative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="有限可用性"}
 
-_2025年3月21日_
+_2025 年 3 月 21 日_
 
 >[!AVAILABILITY]
 >
->此版本為&#x200B;**有限可用性** (LA)。僅限Hosted/Managed Services使用者使用。 此版本不久將可供混合及內部部署客戶使用。
+>此版本為&#x200B;**有限可用性** (LA)。僅限 Hosted/Managed Services 使用者使用。 此版本不久將可供混合及內部部署客戶使用。
 
 <!--
 ### Compatibility updates {#comp-7-4-2}
@@ -39,29 +39,29 @@ This release comes with the following compatibility updates:
 
 ### 安全性改善 {#security-7-4-2}
 
-此版本隨附數個安全性修正。
+此版本附帶幾個安全修正。
 
-透過&#x200B;**[!UICONTROL Adobe Experience Cloud]**&#x200B;外部帳戶與Adobe解決方案和應用程式的連線已更新，以加強安全性。
+透過 **[!UICONTROL Adobe Experience Cloud]** 外部帳戶與 Adobe 解決方案和應用程式的連線已更新，以加強安全性。
 
 ### 修正 {#release-7-4-2-fixes}
 
-此版本隨附下列主要修正：
+此版本包含下列主要修正：
 
-* TLS / SMPP連線 — 修正SMPP穩定性問題
+* TLS / SMPP 連線 — 修正 SMPP 穩定性問題
 
-* Google BigQuery修正：
+* Google BigQuery 修正：
 
-   * 修正布林值資料型別的回歸
-   * 修正Proxy設定問題
-   * 修正DATETIME資料型別的回歸
+   * 修正 BOOLEAN 資料類型的回歸問題
+   * 修正 Proxy 設定問題
+   * 修正 DATETIME 資料類型的回歸問題
    * 固定大量負載穩定性
-   * 改善ODBC版本上的內部測試
-   * 修正連線字串上的特殊字元問題
-   * 已移除Google BigQuery查詢的預設逾時（5分鐘）
+   * 改善 ODBC 版本的內部測試
+   * 修正連接字串特殊字元的問題
+   * 已移除 Google BigQuery 查詢的預設逾時 (5 分鐘)
 
-* 郵件傳輸代理程式(MTA) — 修正孤立的MTA子系卡在&#x200B;**[!UICONTROL Start pending]**&#x200B;狀態上。
+* 郵件傳輸代理程式 (MTA) — 已修正孤立 MTA 子代理卡在 **[!UICONTROL Start pending]** 狀態的問題。
 
-此版本也修正下列問題：
+此版本還修正下列問題：
 
-NEO-47269、NEO-59059、NEO-62455、NEO-65774、NEO-66462、NEO-66989、NEO-77898、NEO-78843、NEO-79373、NEO-79598、NEO-80145、NEO-80245、NEO-80434、NEO-80683、NEO-81222、NEO-81433、NEO-81864、NEO-82351、NEO-82781、NEO-82838、NEO-82923、NEO-83252 ID-83809 83826 84024 84553 85150
+ΝΕΟ-47269、ΝΕΟ-59059、NEO-62455、ΝΕΟ-65774、ΝΕΟ-66462、NEO-66989、ΝΕΟ-77898、ΝΕΟ-78843、NEO-79373、ΝΕΟ-79598、ΝΕΟ-80145、NEO-80245、ΝΕΟ-80434、ΝΕΟ-80683、NEO-81222、ΝΕΟ-81433、ΝΕΟ-81864、NEO-82351、ΝΕΟ-82781、ΝΕΟ-82838、NEO-82923、ΝΕΟ-83252、ΝΕΟ-83809、NEO-83826、NEO-84024、ΝΕΟ-84553、NEO-85150
 
