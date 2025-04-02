@@ -6,9 +6,9 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: cd0de82ba743fa04e59a4fa6f560a80cd5c8e940
+source-git-commit: 492115471325533e913739d27e0a461edf98b723
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '224'
 ht-degree: 99%
 
 ---
@@ -22,10 +22,6 @@ ht-degree: 99%
 [!BADGE 一般可用性]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="一般可用性"}
 
 _2025年4月2日_
-
->[!AVAILABILITY]
->
->此版本為&#x200B;**有限可用性** (LA)。僅限 Hosted/Managed Services 使用者使用。 此版本不久將可供混合及內部部署客戶使用。
 
 <!--
 ### Compatibility updates {#comp-7-4-2}
