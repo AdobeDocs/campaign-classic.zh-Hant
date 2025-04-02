@@ -6,10 +6,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 631188b5974eaa4cd1bf667c5df9f2ff0f983cf0
-workflow-type: ht
+source-git-commit: c5aa626c166f513084d5fa141f307aba8bd57d36
+workflow-type: tm+mt
 source-wordcount: '251'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -19,9 +19,9 @@ ht-degree: 100%
 
 ## 版本 7.4.2 - 版本編號 9390 {#release-7-4-2}
 
-[!BADGE 有限可用性]{type=Informative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="有限可用性"}
+[!BADGE 一般可用性]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="一般可用性"}
 
-_2025 年 3 月 21 日_
+_2025年4月2日_
 
 >[!AVAILABILITY]
 >
