@@ -6,9 +6,9 @@ title: Campaign Classic v7 指南
 user-guide-description: Adobe Campaign Classic v7 產品文件。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 3daf88e14792bfc675cd4cbec6571377c9aa9392
+source-git-commit: 1a23e55190ae26edd7193838600a803137f13201
 workflow-type: tm+mt
-source-wordcount: '2568'
+source-wordcount: '2571'
 ht-degree: 100%
 
 ---
@@ -237,28 +237,29 @@ ht-degree: 100%
       + [使用內容範本](delivery/using/using-a-content-template.md)
       + [豐富內容](delivery/using/enriching-content.md)
       + [透過工作流程自動化](delivery/using/automating-via-workflows.md)
-+ [協調行銷活動](campaign/using/about-marketing-campaigns.md)
++ 協調行銷活動 {#orchestrating-campaigns}
+   + [協調行銷活動](campaign/using/about-marketing-campaigns.md)
    + [關於行銷活動最佳化](campaign-opt/using/about-campaign-optimization.md)
-      + 關於行銷活動{#about-marketing-campaigns}
-         + [設計行銷活動](campaign/using/designing-marketing-campaigns.md)
-         + [存取行銷活動](campaign/using/accessing-marketing-campaigns.md)
-      + 協調行銷活動 {#orchestrate-campaigns}
-         + [開始使用行銷活動](campaign/using/setting-up-marketing-campaigns.md)
-         + [建立及設定範本](campaign/using/marketing-campaign-templates.md)
-         + [新增傳遞](campaign/using/marketing-campaign-deliveries.md)
-         + [選取客群](campaign/using/marketing-campaign-target.md)
-         + [管理文件和資產](campaign/using/marketing-campaign-assets.md)
-         + [設定及管理核准](campaign/using/marketing-campaign-approval.md)
-         + [監視您的行銷活動](campaign/using/marketing-campaign-monitoring.md)
-         + [供應商、庫存和預算](campaign/using/providers-stocks-and-budgets.md)
-      + Campaign 最佳化 {#campaign-optimization}
-         + [關於行銷活動態樣](campaign-opt/using/about-campaign-typologies.md)
-         + [壓力規則](campaign-opt/using/pressure-rules.md)
-         + [一致性規則](campaign-opt/using/consistency-rules.md)
-         + [控制規則](campaign-opt/using/control-rules.md)
-         + [篩選規則](campaign-opt/using/filtering-rules.md)
-         + [套用規則](campaign-opt/using/applying-rules.md)
-         + [Campaign 模擬](campaign-opt/using/campaign-simulations.md)
+   + 關於行銷活動{#about-marketing-campaigns}
+      + [設計行銷活動](campaign/using/designing-marketing-campaigns.md)
+      + [存取行銷活動](campaign/using/accessing-marketing-campaigns.md)
+   + 協調行銷活動 {#orchestrate-campaigns}
+      + [開始使用行銷活動](campaign/using/setting-up-marketing-campaigns.md)
+      + [建立及設定範本](campaign/using/marketing-campaign-templates.md)
+      + [新增傳遞](campaign/using/marketing-campaign-deliveries.md)
+      + [選取客群](campaign/using/marketing-campaign-target.md)
+      + [管理文件和資產](campaign/using/marketing-campaign-assets.md)
+      + [設定及管理核准](campaign/using/marketing-campaign-approval.md)
+      + [監視您的行銷活動](campaign/using/marketing-campaign-monitoring.md)
+      + [供應商、庫存和預算](campaign/using/providers-stocks-and-budgets.md)
+   + Campaign 最佳化 {#campaign-optimization}
+      + [關於行銷活動態樣](campaign-opt/using/about-campaign-typologies.md)
+      + [壓力規則](campaign-opt/using/pressure-rules.md)
+      + [一致性規則](campaign-opt/using/consistency-rules.md)
+      + [控制規則](campaign-opt/using/control-rules.md)
+      + [篩選規則](campaign-opt/using/filtering-rules.md)
+      + [套用規則](campaign-opt/using/applying-rules.md)
+      + [Campaign 模擬](campaign-opt/using/campaign-simulations.md)
 + 行銷資源管理 {#mrm}
    + [關於行銷資源管理](mrm/using/about-marketing-resource-management.md)
    + [建立及管理設定檔](mrm/using/creating-and-managing-tasks.md)
