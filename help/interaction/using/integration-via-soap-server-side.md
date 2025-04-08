@@ -7,9 +7,9 @@ audience: interaction
 content-type: reference
 topic-tags: unitary-interactions
 exl-id: 3eaef689-44fa-41b3-ade8-9fe447e165ec
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: b8a6a0db27826309456c285c08d4f1d85de70283
 workflow-type: tm+mt
-source-wordcount: '317'
+source-wordcount: '325'
 ht-degree: 3%
 
 ---
@@ -20,9 +20,9 @@ ht-degree: 3%
 
 為Offer Management提供的SOAP Web服務與Adobe Campaign中通常使用的服務不同。 可透過上一節所述的互動URL存取優惠方案，並讓您提供或更新指定聯絡人的優惠方案。
 
-## 產品建議主張 {#offer-proposition}
+## 產品建議提議 {#offer-proposition}
 
-對於透過SOAP的優惠方案主張，請新增&#x200B;**nms：proposition#Propose**&#x200B;命令，後面接著下列引數：
+若要透過SOAP提出優惠方案，請新增&#x200B;**nms：proposition#Propose**&#x200B;命令，後面接著下列引數：
 
 * **targetId**：收件者的主索引鍵（可以是複合索引鍵）。
 * **maxCount**：指定連絡人的優惠方案主張數目。
@@ -40,7 +40,7 @@ ht-degree: 3%
 為回應查詢，SOAP服務將傳回下列引數：
 
 * **interactionId**：互動識別碼。
-* **主張**： XML元素，包含主張清單，每個都具有自己的ID和HTML表示。
+* **主張**： XML元素，包含主張清單，每個都具有自己的ID和HTML表示法。
 
 ## 優惠更新 {#offer-update}
 
@@ -52,10 +52,17 @@ ht-degree: 3%
 
 ## 使用SOAP呼叫的範例 {#example-using-a-soap-call}
 
-以下是SOAP呼叫的程式碼範例：
+您會在下方找到SOAP呼叫的程式碼範例。
+
+以下是URL的範例：
+
+```
+http://<urlOfYourJSSP>?env=liveRcp&sp=<nameSpaceOfferSpace>&t=<targetID>
+```
 
 ```
 <%
+  var env = request.getUTF8Parameter("env");
   var space = request.parameters.sp
   var cnx = new HttpSoapConnection(
     "https://" + request.serverName + ":" + request.serverPort + "/interaction/" + env + "/" + space,
@@ -104,7 +111,7 @@ ht-degree: 3%
       var result = session.Propose(target, count, category, theme, <empty/>)
       var props = result[1]
   %><table><tr><%
-      for each( var propHtml in props.proposition.*.mdSource )
+      for each( var propHtml in props.proposition.*.htmlSource )
       {
         %><td><%=propHtml%></td><%
       }

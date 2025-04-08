@@ -6,10 +6,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
-workflow-type: ht
-source-wordcount: '3782'
-ht-degree: 100%
+source-git-commit: b8a6a0db27826309456c285c08d4f1d85de70283
+workflow-type: tm+mt
+source-wordcount: '3864'
+ht-degree: 97%
 
 ---
 
@@ -18,6 +18,17 @@ ht-degree: 100%
 此頁面按月及按各個 Campaign 版本列出所有新功能及文件更新。
 
 如需版本相關更新，請參閱 [Adobe Campaign Classic 發行說明](../../rn/using/latest-release.md)。
+
+## 2025
+
+### 2025 年 3 月 {#march-2025}
+
+作為Campaign v8促銷活動的一部分，我們已開始重新組織Campaign Classic檔案集。 在7.4.2中，我們將發行第一個里程碑。 下列指南已替換為登陸頁面，包含v8檔案的連結：
+
+* 協調行銷活動：本指南已由[登陸頁面](../../campaign/using/about-marketing-campaigns.md)取代。
+* 行銷資源管理：本指南已移除。
+* 分散式行銷：本指南已移除。
+* 使用工作流程自動化：本指南已取代為[登陸頁面](../../workflow/using/about-workflow-automation.md)
 
 ## 2024
 
@@ -204,7 +215,7 @@ CentOs 8 已到期，現已被 Adobe Campaign Classic 淘汰。 [閱讀全文](d
 
 ## 2021 年 6 月 {#june-2021}
 
-**異動訊息**&#x200B;區段已重新組織，並以新的「開始使用」區段加以釐清，包括[擴充型方案](../../message-center/using/about-transactional-messaging.md#transactional-messaging-operating-principle)，以便更清楚瞭解此流程。 [顯示全文](../../message-center/using/about-transactional-messaging.md)
+**異動訊息**&#x200B;區段已重新組織，並以新的「開始使用」區段加以釐清，包括[擴充型結構描述](../../message-center/using/about-transactional-messaging.md#transactional-messaging-operating-principle)，以便更清楚瞭解此流程。 [顯示全文](../../message-center/using/about-transactional-messaging.md)
 
 **21.1.3 版本隨附的其他文件更新**
 
@@ -232,7 +243,7 @@ LINE 頻道增強功能 — [深入瞭解](../../delivery/using/line-channel.md)
 
 本節將討論如何與 Adobe Experience Platform 來源及目標合作，以便在 Campaign Classic 和 Adobe 即時客戶資料平台 (RTCDP) 之間共用資料。 [顯示全文](../../integrations/using/get-started-sources-destinations.md)
 
-已建立新技術以瞭解如何在 ISP 中斷後更新彈回資格。 [顯示全文](../../delivery/using/update-bounce-qualification.md)
+已建立新技術以瞭解如何在 ISP 中斷後更新退回鑑定。 [顯示全文](../../delivery/using/update-bounce-qualification.md)
 
 ## 2021 年 3 月 {#march-2021}
 
@@ -380,7 +391,7 @@ Android 的推播通知改善 - [閱讀更多資訊](../../delivery/using/config
 
 已新增附註，以指明「活躍」輪廓計數僅適用於「行銷」執行個體。[顯示全文](../../platform/using/about-profiles.md#active-profiles)
 
-已新增有關方案版本的新範例，以將欄位連結至現有的參考表。[顯示全文](../../configuration/using/examples-of-schemas-edition.md#uc-link)
+已新增有關結構描述版本的新範例，以將欄位連結至現有的參考表。[顯示全文](../../configuration/using/examples-of-schemas-edition.md#uc-link)
 
 已新增附註，說明如何在傳遞種子地址時使用其他資料。[顯示全文](../../delivery/using/creating-seed-addresses.md#defining-addresses)
 
@@ -505,7 +516,7 @@ FDA 權限表已移至「存取外部資料庫 (FDA)」文件。[顯示全文](.
 
 更新工作流程使用案例，重新組織至各主題章節。[顯示全文](../../workflow/using/about-workflow-use-cases.md)
 
-加強[「退回郵件認證](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification)」及[「電子郵件管理規則](../../delivery/using/understanding-delivery-failures.md#email-management-rules)」章節，並提供更新的資訊。
+加強[「退回郵件鑑定](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification)」及[「電子郵件管理規則](../../delivery/using/understanding-delivery-failures.md#email-management-rules)」章節，並提供更新的資訊。
 
 更新 Adobe Campaign Enhanced MTA 文章。該文章現在只適用於 Campaign Classic。[顯示全文](https://helpx.adobe.com/tw/campaign/kb/acc-campaign-enhanced-mta.html)
 
@@ -517,7 +528,7 @@ FDA 權限表已移至「存取外部資料庫 (FDA)」文件。[顯示全文](.
 
 文件首頁新增其他關鍵連結。[顯示全文](../../campaign-classic-home.md)
 
-新增使用案例，說明如何將 Adobe Target 的動態優惠方案整合至 Adobe Campaign 的電子郵件。[顯示全文](../../integrations/using/inserting-a-dynamic-image.md)
+新增使用案例，說明如何將 Adobe Target 的動態產品建議整合至 Adobe Campaign 的電子郵件。[顯示全文](../../integrations/using/inserting-a-dynamic-image.md)
 
 推出新的章節，其中詳列 Adobe Campaign 提供的不同語言。[顯示全文](../../platform/using/adobe-campaign-workspace.md#languages)
 
@@ -585,9 +596,9 @@ Hadoop FDA Connector 增強功能 - [顯示全文](../../installation/using/conf
 
 重新組織關於查詢設計的使用案例，並分成不同章節。[顯示全文](../../workflow/using/querying-recipient-table.md)
 
-推出新的章節，說明在 Adobe Campaign Classic 管理優惠方案及使用互動模組的秘訣與訣竅。[顯示全文](../../interaction/using/interaction-best-practices.md#tips-managing-offers)
+推出新的章節，說明在 Adobe Campaign Classic 管理產品建議及使用互動模組的秘訣與訣竅。[顯示全文](../../interaction/using/interaction-best-practices.md#tips-managing-offers)
 
-已進一步加強「互動」文件，包含多個影片的連結，以協助您進一步了解如何管理優惠方案。[顯示全文](../../interaction/using/interaction-and-offer-management.md)
+已進一步加強「互動」文件，包含多個影片的連結，以協助您進一步瞭解如何管理產品建議。[顯示全文](../../interaction/using/interaction-and-offer-management.md)
 
 關於如何最佳化執行個體上執行的查詢的最佳實務文章，已整合至文件。[顯示全文](../../workflow/using/query.md#optimizing-queries)
 

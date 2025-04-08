@@ -8,10 +8,10 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: d585a5d4-ea33-43c8-aa37-4d892025374a
-source-git-commit: e40331266f34e2d6aa7b7720948d0cf26d4c6009
+source-git-commit: b8a6a0db27826309456c285c08d4f1d85de70283
 workflow-type: tm+mt
-source-wordcount: '1066'
-ht-degree: 21%
+source-wordcount: '1075'
+ht-degree: 19%
 
 ---
 
@@ -37,13 +37,13 @@ ht-degree: 21%
 
 SFTP伺服器是設計作為暫存空間，您可以在其上控制檔案的保留和刪除。
 
-若未正確使用或監控，這些空間會快速填滿伺服器上可用的實體空間，並導致檔案在後續上傳時被截斷。 一旦空間飽和，自動清除可以觸發並從 SFTP 儲存器中刪除最舊的檔案。
+若未正確使用或監控，這些空間會快速填滿伺服器上可用的實體空間，並導致檔案在後續上傳時被截斷。 在Adobe代管的SFTP伺服器中，如果SFTP儲存達到80%臨界值，則會壓縮檔案。 此程式會由Adobe監控系統自動及觸發。
 
 為避免此類問題，Adobe建議遵循以下最佳實務。
 
 >[!NOTE]
 >
->* 您可以使用Campaign Classic[控制面板](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html){target="_blank"}監視您的SFTP伺服器儲存空間。
+>* 您可以使用Campaign Classic [控制面板](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html){target="_blank"}監視您的SFTP伺服器儲存空間。
 >
 >* 所有管理員使用者都可存取控制面板。 授予使用者管理員存取許可權的步驟已詳載於[此頁面](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hant#discover-control-panel){target="_blank"}。
 >
@@ -68,7 +68,7 @@ SFTP伺服器是設計作為暫存空間，您可以在其上控制檔案的保�
 
 ## Adobe代管SFTP伺服器的連線問題 {#sftp-server-troubleshooting}
 
-下節列出當Adobe託管SFTP伺服器發生連線問題時，要檢查並透過[Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}提供給Adobe支援團隊的資訊。
+下節列出與Adobe代管SFTP伺服器發生連線問題時，要透過[Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}檢查並提供給Adobe支援團隊的資訊。
 
 1. 檢查您的執行個體是否正在執行。 若要這麼做，請開啟瀏覽器，然後在執行個體&#x200B;**[!UICONTROL /r/test]**&#x200B;端點上進行&#x200B;**[!UICONTROL GET]**&#x200B;呼叫：
 
@@ -105,7 +105,7 @@ SFTP伺服器是設計作為暫存空間，您可以在其上控制檔案的保�
 
 ## 「無法解析主機名稱」錯誤
 
-本節提供從Campaign Classic連線至FTP伺服器後收到「無法解析主機名稱」錯誤時，所要執行的檢查和動作的相關資訊。
+本節提供從Campaign Classic連線至FTP伺服器後，收到「無法解析主機名稱」錯誤時，所要執行的檢查和動作的相關資訊。
 
 工作流程日誌會顯示以下記錄：
 
