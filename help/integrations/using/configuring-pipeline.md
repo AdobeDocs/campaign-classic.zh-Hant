@@ -6,10 +6,11 @@ feature: Triggers
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 audience: integrations
 content-type: reference
+level: Intermediate, Experienced
 exl-id: 2d214c36-8429-4b2b-b1f5-fe2730581bba
-source-git-commit: b11185da8236d6100d98eabcc9dc1cf2cffa70af
+source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
 workflow-type: tm+mt
-source-wordcount: '833'
+source-wordcount: '832'
 ht-degree: 1%
 
 ---
@@ -47,7 +48,7 @@ ht-degree: 1%
 
 1. 在Adobe Campaign中，存取&#x200B;**[!UICONTROL Explorer]**&#x200B;中&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]**&#x200B;下的選項功能表。
 
-1. 選取&#x200B;**[!UICONTROL NmsPipeline_Config]**&#x200B;選項。
+1. 選取 **[!UICONTROL NmsPipeline_Config]** 選項。
 
 1. 在&#x200B;**[!UICONTROL Value (long text)]**&#x200B;欄位中，您可以貼上下列JSON程式碼，這會指定兩個觸發程式。 請確定移除註解。
 

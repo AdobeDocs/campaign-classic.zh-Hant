@@ -4,8 +4,9 @@ title: 在Adobe Campaign中設定行動應用程式
 description: 瞭解如何開始使用行動應用程式設定
 feature: Push
 role: User, Developer
+level: Intermediate, Experienced
 exl-id: 95bc07cc-8837-4511-81bc-05fad28191c9
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
 workflow-type: tm+mt
 source-wordcount: '285'
 ht-degree: 5%
@@ -36,7 +37,7 @@ ht-degree: 5%
 
 ![](assets/do-not-localize/how-to-video.png) [瞭解如何在影片中安裝行動應用程式套件](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/installing-the-mobile-app-channel.html#sending-messages)
 
-作為混合/託管客戶，請聯絡[Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)團隊以存取Campaign中的推播通知頻道。
+身為混合/託管客戶，請聯絡[Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)團隊以存取Campaign中的推播通知頻道。
 
 身為內部部署客戶，您必須安裝內建套件。
 

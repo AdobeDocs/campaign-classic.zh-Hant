@@ -4,8 +4,9 @@ title: 開始使用Adobe Campaign中的結構描述
 description: 瞭解如何使用方案並延伸Adobe Campaign資料庫的概念資料模型
 feature: Schema Extension
 role: Data Engineer, Developer
+level: Intermediate, Experienced
 exl-id: f36a1b01-a002-4a21-9255-ea78b5f173fe
-source-git-commit: 44c40bbd8bff16cbe220d3af3a7bb2847762f58b
+source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 1%
@@ -18,7 +19,7 @@ ht-degree: 1%
 
 本章說明如何設定擴充功能綱要，以擴充Adobe Campaign資料庫的概念資料模型。
 
-若要更瞭解Campaign內建表格及其互動，請參閱[Campaign Classic資料模型](about-data-model.md)。
+如需Campaign內建表格及其互動的詳細資訊，請參閱[Campaign Classic資料模型](about-data-model.md)。
 
 在Adobe Campaign中，應用程式中所攜帶資料的實體和邏輯結構會以XML進行說明。 **結構描述**&#x200B;是與資料庫表格關聯的XML檔案。 它會定義資料結構，並描述表格的SQL定義：
 

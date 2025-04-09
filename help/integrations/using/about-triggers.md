@@ -1,20 +1,21 @@
 ---
 product: campaign
 title: 關於 Adobe Experience Cloud 觸發程式
-description: 開始使用Adobe Experience Cloud Triggers實作
+description: 開始使用Adobe Experience Cloud Triggers實施
 feature: Triggers
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 audience: integrations
 content-type: reference
+level: Intermediate, Experienced
 exl-id: 0e337620-a49f-4e14-8c67-9279d74736f1
-source-git-commit: 8de62db2499449fc9966b6464862748e2514a774
+source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
 workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 7%
 
 ---
 
-# 合作使用Campaign與Experience Cloud觸發程式{#about-adobe-experience-triggers}
+# 合作使用Campaign與Experience Cloud Triggers{#about-adobe-experience-triggers}
 
 [!DNL Triggers]是使用管道的Adobe Campaign與Adobe Analytics之間的整合。 管道會從您的網站擷取使用者的動作或觸發器。 放棄購物車就是一個觸發器例子。 在Adobe Campaign中處理觸發器，以近乎即時地傳送電子郵件。
 
@@ -46,7 +47,7 @@ ht-degree: 7%
 
 ## 實施步驟 {#implement}
 
-若要實施Campaign及Experience Cloud觸發程式，請遵循下列步驟：
+若要實施Campaign和Experience Cloud Triggers，請遵循下列步驟：
 
 1. 建立Oauth專案。 [了解更多](oauth-technical-account.md#oauth-service)
 

@@ -4,8 +4,9 @@ title: 在Adobe Campaign中設定Android行動應用程式
 description: 瞭解如何設定Android的行動應用程式
 feature: Push
 role: User, Developer
+level: Intermediate, Experienced
 exl-id: 32c35e61-d0a3-478f-b73b-396e2becf7f9
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
 workflow-type: tm+mt
 source-wordcount: '837'
 ht-degree: 10%
@@ -27,7 +28,7 @@ ht-degree: 10%
 
 >[!IMPORTANT]
 >
->Android Firebase Cloud Messaging (FCM) 服務的一些重要變更將於 2024 年發行，並可能影響 Adobe Campaign 實施。Android 推播訊息訂閱服務設定可能需要更新，才能支援此變更。您已經可以檢查並採取行動。 在此[Adobe Campaign v8技術檔案](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/push-technote.html?lang=zh-Hant){target="_blank"}中進一步瞭解。
+>Android Firebase Cloud Messaging (FCM) 服務的一些重要變更將於 2024 年發行，並可能影響 Adobe Campaign 實施。Android 推播訊息訂閱服務設定可能需要更新，才能支援此變更。您已經可以檢查並採取行動。 閱讀此[Adobe Campaign v8技術檔案](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/push-technote.html?lang=zh-Hant){target="_blank"}以深入瞭解。
 
 
 ## 設定Android外部帳戶 {#configuring-external-account-android}
@@ -100,7 +101,7 @@ Android提供兩種聯結器：
 
 1. 填寫&#x200B;**[!UICONTROL Firebase Cloud Messaging the Android connection settings]**&#x200B;欄位。
 
-1. 按一下&#x200B;**[!UICONTROL Finish]**，然後再按&#x200B;**[!UICONTROL Save]**。 您的Android應用程式現在已準備好用於Campaign Classic。
+1. 按一下&#x200B;**[!UICONTROL Finish]**，然後再按&#x200B;**[!UICONTROL Save]**。 您的Android應用程式現在已準備好在Campaign Classic中使用。
 
 依預設，Adobe Campaign會在&#x200B;**[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]**&#x200B;表格的&#x200B;**[!UICONTROL User identifier]** (@userKey)欄位中儲存金鑰。 此金鑰可讓您將訂閱連結至收件者。 若要收集其他資料（例如複雜的調解金鑰），您必須套用下列設定：
 
@@ -108,7 +109,7 @@ Android提供兩種聯結器：
 
 >[!IMPORTANT]
 >
->Android Firebase Cloud Messaging (FCM) 服務的一些重要變更將於 2024 年發行，並可能影響 Adobe Campaign 實施。Google持續改善服務，其中舊版FCM API將於&#x200B;**2024年6月20日**&#x200B;終止服務。 在此[Adobe Campaign v8技術檔案](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/push-technote.html?lang=zh-Hant){target="_blank"}中進一步瞭解。
+>Android Firebase Cloud Messaging (FCM) 服務的一些重要變更將於 2024 年發行，並可能影響 Adobe Campaign 實施。Google持續改善服務，其中舊版FCM API將於&#x200B;**2024年6月20日**&#x200B;終止服務。 閱讀此[Adobe Campaign v8技術檔案](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/push-technote.html?lang=zh-Hant){target="_blank"}以深入瞭解。
 
 建立服務和新的行動應用程式後，您需要設定行動應用程式。 不應選取&#x200B;**HTTP （舊版）** API，因為它已被Google取代。
 
@@ -135,7 +136,7 @@ Android提供兩種聯結器：
 
 1. 您可以視需要以約&#x200B;**[!UICONTROL Application variables]**&#x200B;擴充推送訊息內容，作為選項。 這些都是可完全自訂的專案，而且是傳送至行動裝置的訊息裝載的一部分。
 
-1. 按一下&#x200B;**[!UICONTROL Finish]**，然後再按&#x200B;**[!UICONTROL Save]**。 您的Android應用程式現在已準備好用於Campaign Classic。
+1. 按一下&#x200B;**[!UICONTROL Finish]**，然後再按&#x200B;**[!UICONTROL Save]**。 您的Android應用程式現在已準備好在Campaign Classic中使用。
 
 以下是FCM裝載名稱，可進一步個人化您的推播通知：
 

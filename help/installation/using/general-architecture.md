@@ -5,9 +5,10 @@ description: 瞭解如何安裝和設定Campaign Classic
 feature: Installation, Architecture
 audience: installation
 content-type: reference
+level: Intermediate, Experienced
 topic-tags: architecture-and-hosting-models
 exl-id: 04e6dc17-427b-4745-84cc-bf45c03dbf81
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
 workflow-type: tm+mt
 source-wordcount: '1342'
 ht-degree: 0%
@@ -36,7 +37,7 @@ Adobe Campaign是以服務導向架構(SOA)為基礎，並包含數個功能模�
 
 >[!NOTE]
 >
->身為軟體廠商，我們指定相容的硬體與軟體基礎建設。 此處提供的硬體建議僅供參考，且以我們的經驗為基礎。 Adobe概不負責根據上述准則所作出的任何決定。 這也取決於您的商業規則和實務，以及專案的重要性和所需的效能等級。
+>身為軟體廠商，我們指定相容的硬體與軟體基礎建設。 此處提供的硬體建議僅供參考，且以我們的經驗為基礎。 Adobe概不負責根據這些決定所做的任何決定。 這也取決於您的商業規則和實務，以及專案的重要性和所需的效能等級。
 
 ![](assets/s_ncs_install_architecture.png)
 
@@ -84,13 +85,13 @@ Adobe Campaign具有原生電子郵件廣播功能。 此程式的功能為SMTP�
 
 對於電子郵件，Adobe Campaign會自動處理開啟和點選追蹤（進一步可能是網站層級的交易追蹤）。 為此，重新寫入納入電子郵件訊息中的URL以指向此模組，該模組會先註冊網際網路使用者的傳遞，然後再將他們重新導向至所需的URL。
 
-為了確保最高可用性，此處理程式完全獨立於資料庫：其他伺服器處理程式僅使用SOAP呼叫(HTTP、HTTP(S)和XML)與其通訊。 技術上，此功能是在HTTP伺服器的擴充功能模組（IIS中的ISAPI擴充功能，或DSO Apache模組等）中實作 和僅適用於Windows。
+為了確保最高可用性，此程式完全獨立於資料庫：其他伺服器程式僅使用SOAP呼叫(HTTP、HTTP(S)和XML)與其通訊。 就技術方面而言，此功能是在HTTP伺服器的擴充功能模組（IIS中的ISAPI擴充功能或DSO Apache模組等）中實作，且僅適用於Windows。
 
 您也可以參閱其他更技術性的程式：
 
 **管理退信電子郵件** (nlserver inMail)
 
-此程式可讓您從設定為接收在傳送失敗時傳回之退回郵件的信箱自動擷取電子郵件。 接著，這些訊息會進行規則型處理，以判斷未傳遞的原因（未知的收件者、超過配額等） 以及更新資料庫中的傳遞狀態。
+此程式可讓您從設定為接收在傳送失敗時傳回之退回郵件的信箱自動擷取電子郵件。 接著，這些訊息會進行規則型處理，以判斷未傳遞的原因（未知的收件者、超過配額等），並更新資料庫中的傳遞狀態。
 
 所有這些操作都是完全自動且預先設定的。
 
@@ -124,7 +125,7 @@ Adobe Campaign具有原生電子郵件廣播功能。 此程式的功能為SMTP�
 
 ## 持續層 {#persistence-layer}
 
-此資料庫是作為持續層，包含幾乎所有由Adobe Campaign管理的資訊。 這包括功能資料（設定檔、訂閱、內容等）、技術資料（傳遞工作和記錄、追蹤記錄等） 和工作資料（購買、銷售機會）。
+此資料庫是作為持續層，包含幾乎所有由Adobe Campaign管理的資訊。 這包括功能資料（設定檔、訂閱、內容等）、技術資料（傳遞工作和記錄、追蹤記錄等）和工作資料（購買、銷售機會）。
 
 資料庫的可靠性極為重要，因為大部分Adobe Campaign元件都需要存取資料庫才能執行其工作（值得注意的重新導向模組除外）。
 

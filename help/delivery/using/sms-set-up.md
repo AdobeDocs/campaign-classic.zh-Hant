@@ -1,24 +1,25 @@
 ---
 product: campaign
 title: 設定Campaign簡訊頻道
-description: 瞭解如何在Campaign設定簡訊頻道
+description: 瞭解如何在 Campaign 中設定 SMS 通道
 feature: SMS
 role: User, Developer, Admin
+level: Experienced
 exl-id: a2783a5e-6d38-41a1-b5c6-24ab489116f8
-source-git-commit: 41296a0acaee93d31874bf58287e51085c6c1261
+source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
 workflow-type: tm+mt
 source-wordcount: '1739'
 ht-degree: 27%
 
 ---
 
-# 在獨立執行個體上設定簡訊頻道 {#setting-up-sms-channel}
+# 在独立執行個體上配置 SMS 通道 {#setting-up-sms-channel}
 
-若要傳送至行動電話，您需要：
+要發送到手機，您需要：
 
-1. 指定聯結器和訊息型別的外部帳戶。
+1. 指定連接器和消息類型的外部帳戶。
 
-   請注意，舊版聯結器現已棄用。 已棄用的功能仍可使用，但將不會進一步增強或支援。 在[本頁](../../rn/using/deprecated-features.md)中深入瞭解。
+   Note that legacy connectors are now deprecated. 已棄用的功能仍可使用，但將不會進一步增強或支援。 在[本頁](../../rn/using/deprecated-features.md)中深入瞭解。
 
 1. 引用此外部帳戶的傳遞範本。
 
@@ -30,15 +31,14 @@ ht-degree: 27%
 
 >[!IMPORTANT]
 >
->對多個外部SMS帳戶使用相同的帳戶和密碼可能會導致帳戶之間的衝突和重疊。 請參閱[簡訊疑難排解頁面](troubleshooting-sms.md#external-account-conflict)。
+>對多個外部SMS帳戶使用相同的帳戶和密碼可能會導致帳戶之間的衝突和重疊。 請参閱 [SMS 疑難解答頁面](troubleshooting-sms.md#external-account-conflict)。
 
-若要傳送簡訊至行動電話，您首先需要建立SMPP外部帳戶。
-有關SMS通訊協定和設定的詳細資訊，請參閱此[頁面](sms-protocol.md)。
+要將簡訊發送到手機，您首先需要創建 SMPP 外部帳戶。有關 SMS 協定和設置的詳細信息，請参閱此 [頁面](sms-protocol.md)。
 
 要執行此操作，請遵循下列步驟：
 
-1. 在樹狀結構的&#x200B;**[!UICONTROL Platform]** > **[!UICONTROL External accounts]**&#x200B;節點中，按一下&#x200B;**[!UICONTROL New]**&#x200B;圖示。
-1. 將帳戶型別定義為&#x200B;**路由**，將通道定義為&#x200B;**行動（簡訊）**，並將傳遞模式定義為&#x200B;**大量傳遞**。
+1. 在 **[!UICONTROL Platform]** 樹狀結構的> **[!UICONTROL External accounts]** 節點中，按兩下 **[!UICONTROL New]** 該圖示。
+1. 將帳戶類型 **定義為路由**，將通道 **類型定義為移動 （SMS），**&#x200B;將傳遞模式 **定義為批量傳遞**。
 
    ![](assets/extended_smpp_create_account.png)
 
@@ -53,9 +53,9 @@ ht-degree: 27%
 
 1. **[!UICONTROL Enable verbose SMPP traces in the log file]**&#x200B;選項可讓您將所有SMPP通訊傾印到記錄檔中。 必須啟用此選項，才能疑難排解連接器，並與提供者所看到的流量進行比較。
 
-1. 請連絡您的SMS服務提供者，該服務提供者將向您說明如何從&#x200B;**[!UICONTROL Connection settings]**&#x200B;索引標籤完成不同的外部帳戶欄位。
+1. 請聯繫您的短信服務提供者，他們將向您解釋如何從標籤填寫 **[!UICONTROL Connection settings]** 不同的外部帳戶字段。
 
-   接著，請根據選取的提供者連絡您的提供者，提供您進入&#x200B;**[!UICONTROL SMSC implementation name]**&#x200B;欄位的值。
+   然後，聯繫您的供應商，具體取決於所選供應商，該提供者將為您提供要輸入 **[!UICONTROL SMSC implementation name]** 該欄位的值。
 
    您可以定義每個MTA子系與提供者的連線數目。 預設會設為1。
 
@@ -65,9 +65,9 @@ ht-degree: 27%
 
    >[!NOTE]
    >
-   >某些字元會計為兩個字元（大括弧、方括弧、歐元符號等）。
+   >特定字元計為兩個 （大括弧、方括弧、歐元符號等）。
    >
-   >可用的GSM字元清單如下所示。
+   >可用 GSM 字符清單如下所示。
 
    您也可以核取相對應的方塊，以授權字元音譯。
 
@@ -75,15 +75,15 @@ ht-degree: 27%
 
    如需詳細資訊，請參閱[本章節](#about-character-transliteration)。
 
-1. 在&#x200B;**[!UICONTROL Throughput and delays]**&#x200B;索引標籤中，您可以指定輸出訊息(&quot;MT&quot;，Mobile Terminated)的吞吐量上限，以每秒MT為單位。 如果您在對應欄位中輸入　&quot;0&quot;，則吞吐量將無限制。
+1. 在 **[!UICONTROL Throughput and delays]** 標籤中，您可以指定每秒 MT 的出站消息（“MT”，移動終止）的最大輸送量。 如果您在對應欄位中輸入　&quot;0&quot;，則吞吐量將無限制。
 
    與持續時間對應的所有欄位的值需要以秒為單位完成。
 
-1. 在&#x200B;**[!UICONTROL Mapping of encodings]**&#x200B;索引標籤中，您可以定義編碼。
+1. In the **[!UICONTROL Mapping of encodings]** tab, you can define encodings.
 
    如需詳細資訊，請參閱[本章節](#about-text-encodings)。
 
-1. 在&#x200B;**[!UICONTROL SMSC specificities]**&#x200B;索引標籤中，**[!UICONTROL Send full phone number]**&#x200B;選項預設為停用。 如果您想遵守SMPP通訊協定，並且只將數位傳輸到SMS提供者(SMSC)的伺服器，請勿啟用它。
+1. In the **[!UICONTROL SMSC specificities]** tab, the **[!UICONTROL Send full phone number]** option is disabled by default. Do not enable it if you want to respect the SMPP protocol and transfer only digits to the server of the SMS provider (SMSC).
 
    不過，由於某些提供者需要使用&#39;+&#39;首碼，因此建議您向提供者查詢，並建議您視需要啟用此選項。
 
@@ -93,24 +93,24 @@ ht-degree: 27%
 
    如需詳細資訊，請參閱[本章節](#automatic-reply)。
 
-## 簡訊字母音譯 {#about-character-transliteration}
+## SMS character transliteration {#about-character-transliteration}
 
 可在&#x200B;**[!UICONTROL Mobile]**&#x200B;標籤下的SMPP行動傳遞外部帳戶中設定字母音譯。
 
 音譯包括當 GSM 標準未考慮到簡訊的一個字元時，用另一個字元取代該字元。
 
-* 如果音譯為&#x200B;**[!UICONTROL authorized]**，則傳送訊息時，未考慮的每個字元會由GSM字元取代。 例如，字元 &quot;ë&quot; 會由 &quot;e&quot; 取代。因此，訊息會稍微變更，但字元限制將維持不變。
-* 音譯為&#x200B;**[!UICONTROL not authorized]**&#x200B;時，包含未納入考量之字元的每則訊息都會以二進位格式(Unicode)傳送：因此，所有字元都會依原樣傳送。 不過，使用 Unicode 的簡訊訊息最多只能有 70 個字元（若是以多個部分傳送的訊息，則每個簡訊有 67 個字元）。如果超出字元數上限，則會傳送數則訊息，這可能會造成額外成本。
+* 如果音譯為 **[!UICONTROL authorized]**，則發送消息時，未帳戶的每個字元都將替換為 GSM 字元。 例如，字元 &quot;ë&quot; 會由 &quot;e&quot; 取代。因此，訊息會稍微變更，但字元限制將維持不變。
+* 當音譯為 **[!UICONTROL not authorized]**&#x200B;時，包含未放入帳戶的字元的每條消息都以二進位格式 （Unicode） 發送：因此所有字元都按原樣發送。 不過，使用 Unicode 的簡訊訊息最多只能有 70 個字元（若是以多個部分傳送的訊息，則每個簡訊有 67 個字元）。如果超出字元數上限，則會傳送數則訊息，這可能會造成額外成本。
 
 >[!IMPORTANT]
 >
->將個人化欄位插入您的SMS訊息內容，可能會引入GSM編碼未考慮的字元。
+>Inserting personalization fields into the content of your SMS message may introduce characters that are not taken into account by the GSM encoding.
 
 依預設，會停用字元音譯。如果您希望簡訊訊息中的所有字元都保持原樣，不要變更正確名稱（例如），建議您不要啟用此選項。
 
 不過，如果您的簡訊訊息包含許多產生 Unicode 訊息的字元，您可以選取啟用此選項，以限制傳送訊息的成本。
 
-下表顯示GSM標準所考慮的字元。 除了下面提到的字元外，所有插入訊息內文的字元都會將整個訊息轉換為二進位格式(Unicode)，因此限製為70個字元。
+The following table presents the characters taken into account by the GSM standard. All of the characters inserted into the message body, other than those mentioned below, convert the entire message into binary format (Unicode) and therefore limit it to 70 characters.
 
 **基本字元**
 
@@ -129,7 +129,7 @@ ht-degree: 27%
   <tr> 
    <td> £ </td> 
    <td> _ </td> 
-   <td> ！ </td> 
+   <td> ! </td> 
    <td> 1 </td> 
    <td> A </td> 
    <td> Q </td> 
@@ -173,7 +173,7 @@ ht-degree: 27%
    <td> 5 </td> 
    <td> E </td> 
    <td> U </td> 
-   <td> è </td> 
+   <td> e </td> 
    <td> u </td> 
   </tr> 
   <tr> 
@@ -189,7 +189,7 @@ ht-degree: 27%
   <tr> 
    <td> ì </td> 
    <td> <img height="21px" src="assets/psi.png" /> </td> 
-   <td> 『 </td> 
+   <td> ' </td> 
    <td> 7 </td> 
    <td> G </td> 
    <td> W </td> 
@@ -197,7 +197,7 @@ ht-degree: 27%
    <td> w </td> 
   </tr> 
   <tr> 
-   <td> ö </td> 
+   <td> ò </td> 
    <td> <img height="21px" src="assets/sigma.png" /> </td> 
    <td> ( </td> 
    <td> 8 </td> 
@@ -207,13 +207,13 @@ ht-degree: 27%
    <td> x </td> 
   </tr> 
   <tr> 
-   <td> C </td> 
+   <td> Ç </td> 
    <td> <img height="21px" src="assets/theta.png" /> </td> 
    <td> ) </td> 
    <td> 9 </td> 
-   <td> I </td> 
+   <td> 我 </td> 
    <td> Y </td> 
-   <td> ì </td> 
+   <td> 我 </td> 
    <td> y </td> 
   </tr> 
   <tr> 
@@ -228,18 +228,18 @@ ht-degree: 27%
   </tr> 
   <tr> 
    <td> Ø </td> 
-   <td> ESC </td> 
+   <td> 電調 </td> 
    <td> + </td> 
-   <td> ； </td> 
+   <td> ; </td> 
    <td> K </td> 
-   <td> 月 </td> 
+   <td> Ä </td> 
    <td> k </td> 
    <td> a </td> 
   </tr> 
   <tr> 
    <td> ø </td> 
-   <td> AE </td> 
-   <td> ， </td> 
+   <td> Æ </td> 
+   <td> , </td> 
    <td> &lt; </td> 
    <td> L </td> 
    <td> Ö </td> 
@@ -248,7 +248,7 @@ ht-degree: 27%
   </tr> 
   <tr> 
    <td> 歸位字元 </td> 
-   <td> Target </td> 
+   <td> æ </td> 
    <td> - </td> 
    <td> = </td> 
    <td> M </td> 
@@ -264,16 +264,16 @@ ht-degree: 27%
    <td> N </td> 
    <td> U </td> 
    <td> n </td> 
-   <td> u </td> 
+   <td> ü </td> 
   </tr> 
   <tr> 
-   <td> a </td> 
+   <td> å </td> 
    <td> É </td> 
    <td> / </td> 
    <td> ? </td> 
    <td> O </td> 
    <td> § </td> 
-   <td> ö </td> 
+   <td> o </td> 
    <td> à </td> 
   </tr> 
  </tbody> 
@@ -291,7 +291,7 @@ CR：歸位
 
 ^ { } `[ ~ ]` | €
 
-## 文字編碼 {#about-text-encodings}
+## Text encodings {#about-text-encodings}
 
 傳送簡訊訊息時，Adobe Campaign 可以使用一或多種文字編碼。每個編碼都有其專屬的字元集，並決定符合簡訊訊息的字元數。
 
@@ -301,9 +301,9 @@ CR：歸位
 >
 >**data_coding** 值及實際使用編碼之間的對應是標準化的。不過，特定SMSC有其專屬的對應：在這種情況下，您的&#x200B;**Adobe Campaign**&#x200B;管理員需要宣告此對應。 請洽詢您的提供者以瞭解更多資訊。
 
-您可以宣告&#x200B;**data_codings**，並視需要強制進行編碼：若要這麼做，請在資料表中指定單一編碼。
+如有必要，可以聲明 **data_codings** 並強制編碼：為此，請在表中指定單個編碼。
 
-* 未定義編碼對應時，聯結器會採取一般行為：
+* 如果未定義編碼映射，連接器將採取一般行為：
 
    * 它會嘗試使用 GSM 編碼，將 **data_coding = 0** 的值指派給它。
    * 如果 GSM 編碼失敗，則會使用 **UCS2** 編碼，並對其指派值 **data_coding = 8**。
@@ -320,27 +320,27 @@ CR：歸位
 
 設定擴充通用SMPP聯結器時，您可以設定自動回覆。
 
-當訂閱者回覆透過Adobe Campaign傳送給他們的簡訊訊息，且訊息包含&quot;STOP&quot;之類的關鍵字時，您可以在&#x200B;**[!UICONTROL Automatic reply sent to the MO]**&#x200B;區段中設定自動傳回給他們的訊息。
+當訂閱者回復通過 Adobe Campaign 發送給他們的 SMS 消息並且他們的消息包含“STOP”等關鍵字時，您可以在該 **[!UICONTROL Automatic reply sent to the MO]** 部分中配置自動發回給他們的消息。
 
 >[!NOTE]
 >
->關鍵字不區分大小寫。
+>關鍵詞不區分大小寫。
 
-請為每個關鍵字指定簡短代碼，這是通常用來傳送傳遞及當作寄件者名稱的數字，然後輸入將傳送給訂閱者的訊息。
+對於每個關鍵字，請指定一個短代碼，該代碼通常用於發送傳遞並將用作發件人名稱，然後輸入將發送給訂閱者的消息。
 
-您也可以將動作連結至自動回應： **[!UICONTROL Send to quarantine]**&#x200B;或&#x200B;**[!UICONTROL Remove from quarantine]**。 例如，如果收件者傳送關鍵字「STOP」，就會自動收到取消訂閱確認並送至隔離區。
+您也可以對自動回應連結動作： **[!UICONTROL Send to quarantine]** 或 **[!UICONTROL Remove from quarantine]**。 例如，如果收件者發送關鍵字“STOP”，他們將自動收到取消訂閱確認併發送到隔離。
 
 ![](assets/extended_smpp_reply.png)
 
 如果您將&#x200B;**[!UICONTROL Remove from quarantine]**&#x200B;動作連結至自動回應，則傳送對應關鍵字的收件者會自動從隔離中移除。
 
-收件者列於&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]**&#x200B;功能表可用的&#x200B;**[!UICONTROL Non deliverables and addresses]**&#x200B;表格中。
+收件者會列於透過「>>」功能表取得&#x200B;**[!UICONTROL Administration]**&#x200B;的表格中&#x200B;**[!UICONTROL Non deliverables and addresses]**。 **[!UICONTROL Non deliverables Management]** **[!UICONTROL Campaign Management]**
 
-* 若要無論短程式碼為何，都傳送相同的回覆，請將&#x200B;**[!UICONTROL Short code]**&#x200B;欄留空。
-* 無論關鍵字為何，若要傳送相同的回覆，請將&#x200B;**[!UICONTROL Keyword]**&#x200B;欄留空。
-* 若要執行動作而不傳送回應，請將&#x200B;**[!UICONTROL Response]**&#x200B;欄留空。 例如，這可讓您從隔離區中移除回複訊息不是「STOP」的使用者。
+* 要發送相同的回復，無論短代碼是什麼，請將列 **[!UICONTROL Short code]** 留空。
+* 若要無論關鍵字如何都發送相同的答覆，請將該 **[!UICONTROL Keyword]** 列留空。
+* 若要執行作而不發送回應，請將列 **[!UICONTROL Response]** 留空。 例如，這允許您從隔離中刪除回復「STOP」以外的消息的用戶。
 
-如果您有多個外部帳戶使用Extended generic SMPP聯結器且提供者帳戶相同，則可能會發生以下問題：傳送簡短的程式碼回覆時，您可能會收到任何外部帳戶連線的回覆。 因此，傳送的自動回覆不能是預期的訊息。
+If you have multiple external accounts using the Extended generic SMPP connector with the same provider account, the following issue may happen: when sending a reply to a short code, it may be received on any of your external account connections. 因此，傳送的自動回覆不能是預期的訊息。
 為避免此問題，請根據您使用的提供者，套用下列解決方案之一：
 
 * 為每個外部帳戶建立一個提供者帳戶。
@@ -352,11 +352,11 @@ CR：歸位
 
 ## 變更傳遞範本 {#changing-the-delivery-template}
 
-Adobe Campaign提供您傳送至行動裝置的範本。 此範本可在&#x200B;**[!UICONTROL Resources > Templates > Delivery templates]**&#x200B;節點中使用。 如需詳細資訊，請參閱[關於範本](about-templates.md)區段。
+Adobe Campaign為您提供了交付到手機的範本。 此範本適用於節點 **[!UICONTROL Resources > Templates > Delivery templates]** 。 有關詳細資訊，請參閱 [關於範本](about-templates.md) 部分。
 
-若要透過SMS頻道傳遞，您必須建立其中引用頻道聯結器的範本。
+若要通過SMS通道傳遞，必須創建在其中引用通道連接器的範本。
 
-若要保留原生傳遞範本，建議您複製並加以設定。
+為了保持原生傳遞範本，我們建議您先重複再進行配置。
 
 在以下範例中，我們會建立範本，透過先前啟用的SMPP帳戶傳遞訊息。 操作步驟：
 
@@ -370,7 +370,7 @@ Adobe Campaign提供您傳送至行動裝置的範本。 此範本可在&#x200B;
    ![](assets/s_user_mobile_template_change_02.png)
 
 1. 按一下&#x200B;**[!UICONTROL Properties]**。
-1. 在&#x200B;**[!UICONTROL General]**&#x200B;索引標籤中，選取與您在前一步驟中建立的外部帳戶對應的路由模式。
+1. 在 **[!UICONTROL General]** 標籤中，選擇與您在前面的步驟中創建的外部帳戶相對應的路由模式。
 
    ![](assets/s_user_mobile_template_change_03.png)
 
