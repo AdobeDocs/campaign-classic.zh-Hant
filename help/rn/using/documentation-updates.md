@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: b8a6a0db27826309456c285c08d4f1d85de70283
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3864'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -23,12 +23,12 @@ ht-degree: 97%
 
 ### 2025 年 3 月 {#march-2025}
 
-作為Campaign v8促銷活動的一部分，我們已開始重新組織Campaign Classic檔案集。 在7.4.2中，我們將發行第一個里程碑。 下列指南已替換為登陸頁面，包含v8檔案的連結：
+作為 Campaign v8 促銷活動的一部分，我們已開始重新組織 Campaign Classic 檔案集。 在 7.4.2 中，我們發行第一個里程碑。 下列指南已替換為包含 v8 檔案連結的登入頁面：
 
-* 協調行銷活動：本指南已由[登陸頁面](../../campaign/using/about-marketing-campaigns.md)取代。
+* 精心策劃行銷活動：本指南已由[登陸頁面](../../campaign/using/about-marketing-campaigns.md)取代。
 * 行銷資源管理：本指南已移除。
 * 分散式行銷：本指南已移除。
-* 使用工作流程自動化：本指南已取代為[登陸頁面](../../workflow/using/about-workflow-automation.md)
+* 使用工作流程自動化：本指南已被[登陸頁面](../../workflow/using/about-workflow-automation.md)取代
 
 ## 2024
 

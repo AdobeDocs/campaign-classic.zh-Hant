@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: 86bc3bdfe628cc694e47a4670e99225e05b3df1b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '224'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 99%
 
 [!BADGE 一般可用性]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="一般可用性"}
 
-_2025年4月2日_
+_2025 年 4 月 2 日_
 
 <!--
 ### Compatibility updates {#comp-7-4-2}
