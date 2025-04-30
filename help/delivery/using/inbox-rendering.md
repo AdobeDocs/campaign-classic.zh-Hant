@@ -6,9 +6,9 @@ badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v
 feature: Inbox Rendering, Monitoring, Email Rendering
 role: User
 exl-id: a3294e70-ac96-4e51-865f-b969624528ce
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 9b93603a076b007d66aad52b05e560e17e316eeb
 workflow-type: tm+mt
-source-wordcount: '839'
+source-wordcount: '854'
 ht-degree: 7%
 
 ---
@@ -37,7 +37,7 @@ Litmus是功能豐富的電子郵件驗證和預覽應用程式。 它可讓電�
 
 [!BADGE 內部部署與混合式]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="僅適用於內部部署和混合部署"}
 
-對於託管和混合式使用者端，收件匣轉譯會由Adobe技術支援和顧問在執行個體上設定。 如需詳細資訊，請聯絡您的Adobe客戶主管。
+對於託管和混合型使用者端，收件匣轉譯會由Adobe技術支援和顧問在執行個體上設定。 如需詳細資訊，請聯絡您的Adobe客戶主管。
 
 若為內部部署安裝，請依照下列步驟設定收件匣轉譯。
 
@@ -90,7 +90,7 @@ Litmus是功能豐富的電子郵件驗證和預覽應用程式。 它可讓電�
 >* 對於相同的傳送，如果您再次產生收件匣轉譯，可用權杖的數量會再次減少產生的轉譯數量。
 >
 
-剩餘的可用權杖數目會顯示在[收件匣轉譯報告](#inbox-rendering-report)的&#x200B;**[!UICONTROL General summary]**&#x200B;中。
+剩餘的可用代號數目會顯示在[收件匣轉譯報告](#inbox-rendering-report)中。
 
 ![](assets/s_tn_inbox_rendering_tokens.png)
 
@@ -98,7 +98,7 @@ Litmus是功能豐富的電子郵件驗證和預覽應用程式。 它可讓電�
 
 ## 存取收件匣轉譯報告 {#accessing-the-inbox-rendering-report}
 
-在您建立電子郵件傳送並定義其內容以及目標定位人口族群後，請遵循下列步驟。
+在您建立電子郵件傳送並定義其內容以及目標定位群體後，請遵循下列步驟。
 
 如需建立、設計和鎖定傳送的詳細資訊，請參閱[本節](about-email-channel.md)。
 
@@ -123,13 +123,13 @@ Litmus是功能豐富的電子郵件驗證和預覽應用程式。 它可讓電�
 
 此報表會顯示收件者看到的收件匣呈現。 根據收件者開啟電子郵件傳送的方式，呈現可能會有所不同：在瀏覽器中、行動裝置上，或透過電子郵件應用程式。
 
-**[!UICONTROL General summary]**&#x200B;以清單形式及透過圖形化色彩編碼表示方式，呈現已接收、不想要（垃圾郵件）、未接收或待接收的訊息數目。
+頂端區段顯示透過圖形化色彩編碼表示法重新分割已接收、不想要（垃圾郵件）、未接收或待接收的訊息數目。
 
-![](assets/s_tn_inbox_rendering_summary.png)
+![](assets/s_tn_inbox_rendering_summary.png){width="40%" align="left"}
 
-將滑鼠指標暫留在圖表上，即可顯示每種顏色的詳細資料。
+將滑鼠指標暫留在圖表上，即可顯示每種顏色的詳細資料。 按一下清單上的專案以隱藏或顯示圖表中的對應類別。
 
-報告正文分為三個部分： **[!UICONTROL Mobile]**、**[!UICONTROL Messaging clients]**&#x200B;和&#x200B;**[!UICONTROL Webmails]**。 向下捲動報告，以顯示分為這三種類別的所有呈現。
+報告正文分為三個部分： **[!UICONTROL Mobile]**、**[!UICONTROL Desktop]**&#x200B;和&#x200B;**[!UICONTROL Webmails]**。 向下捲動報告，以顯示分為這三種類別的所有呈現。
 
 ![](assets/s_tn_inbox_rendering_report.png)
 
