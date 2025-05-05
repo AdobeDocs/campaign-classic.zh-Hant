@@ -20,7 +20,7 @@ ht-degree: 1%
 
 從行銷活動建立傳遞時，會連結至此行銷活動，並在行銷活動層級合併。
 
-![](assets/do-not-localize/how-to-video.png)[在影片中探索此功能](#create-email-video)
+![](assets/do-not-localize/how-to-video.png) [在影片中探索此功能](#create-email-video)
 
 ## 建立傳遞 {#creating-deliveries}
 
@@ -117,7 +117,7 @@ ht-degree: 1%
 
 ## 管理相關檔案 {#managing-associated-documents}
 
-您可以為行銷活動跟各種檔案建立關聯：報告、照片、網頁、圖表等。這些檔案可以是任何格式(Microsoft Word、PowerPoint、PNG、JPG、Acrobat PDF等)。 在本節](../../campaign/using/marketing-campaign-assets.md)中瞭解如何將檔案與行銷活動[連結。
+您可以為行銷活動跟各種檔案建立關聯：報告、照片、網頁、圖表等。這些檔案可以是任何格式(Microsoft Word、PowerPoint、PNG、JPG、Acrobat PDF等)。 在本節[&#128279;](../../campaign/using/marketing-campaign-assets.md)中瞭解如何將檔案與行銷活動連結。
 
 >[!IMPORTANT]
 >

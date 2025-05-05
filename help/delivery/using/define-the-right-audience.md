@@ -19,7 +19,7 @@ ht-degree: 4%
 
 目標人口是關鍵：仔細建立您的清單，在熱門電子郵件使用者端和行動裝置上測試您的電子郵件，並確保您的電子郵件清單是最新的（沒有未知或過時的地址）。 您也可以傳送校樣來幫助設定完整的驗證週期。
 
-在本節](steps-defining-the-target-population.md)中進一步瞭解目標母體[
+在本節[&#128279;](steps-defining-the-target-population.md)中進一步瞭解目標母體
 
 ## 鎖定正確的對象 {#target-the-right-audience}
 
@@ -33,17 +33,17 @@ ht-degree: 4%
 
 例如，您可以傳送給已透過社交網路收集設定檔的訪客，或訂閱資訊服務的訪客。
 
-這些對應會顯示在此區段](steps-defining-the-target-population.md#select-a-target-mapping)中的[。
+這些對應會顯示在此區段[&#128279;](steps-defining-the-target-population.md#select-a-target-mapping)中的。
 
 您也可以建立並使用自訂的目標對應。 如需詳細資訊，請參閱[本章節](../../configuration/using/target-mapping.md)。
 
 ## 外部收件者 {#external-recipients}
 
-您可以傳遞至儲存在外部檔案中而非儲存在資料庫中的收件者。 在本節](steps-defining-the-target-population.md#selecting-external-recipients)瞭解更多[。
+您可以傳遞至儲存在外部檔案中而非儲存在資料庫中的收件者。 在本節[&#128279;](steps-defining-the-target-population.md#selecting-external-recipients)瞭解更多。
 
 ## 傳送給您的訂閱者 {#send-to-subscribers}
 
-若要傳送訊息給電子報的訂閱者，您可以直接將訂閱者定位到對應的資訊服務。 在本節](managing-subscriptions.md#delivering-to-the-subscribers-of-a-service)瞭解更多[。
+若要傳送訊息給電子報的訂閱者，您可以直接將訂閱者定位到對應的資訊服務。 在本節[&#128279;](managing-subscriptions.md#delivering-to-the-subscribers-of-a-service)瞭解更多。
 
 
 ## 測試收件者和種子地址 {#test-recipients-seed-addresses}
@@ -52,7 +52,7 @@ ht-degree: 4%
 
 請務必選取適當的校樣收件者，因為他們會驗證訊息的表單和內容。 定義校訂收件者的步驟[會顯示於本節](steps-defining-the-target-population.md#selecting-the-proof-target)。
 
-種子地址用於鎖定不符合所定義目標條件的收件者，以便在傳送至主要目標之前測試傳遞。 它們會顯示在此區段](about-seed-addresses.md)中的[。
+種子地址用於鎖定不符合所定義目標條件的收件者，以便在傳送至主要目標之前測試傳遞。 它們會顯示在此區段[&#128279;](about-seed-addresses.md)中的。
 
 ## 重複位址 {#deduplicate-addresses}
 
@@ -73,4 +73,4 @@ ht-degree: 4%
 
 為了最佳化應用程式中使用的SQL查詢效能，可以從資料結構描述的主要元素宣告索引。
 
-新增索引至電子郵件地址的步驟顯示於本節[](../../configuration/using/database-mapping.md#indexed-fields)。
+新增索引至電子郵件地址的步驟顯示於本節[&#128279;](../../configuration/using/database-mapping.md#indexed-fields)。

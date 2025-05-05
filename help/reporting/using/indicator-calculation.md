@@ -726,7 +726,7 @@ ht-degree: 3%
    <td> 點按<br /> </td> 
    <td> @_click<br /> </td> 
    <td> URL主索引鍵與1<br />不同的所有@totalClicks數 </td> 
-   <td> count(Iif([@url-id]] ！= 1， @totalClicks， 0))<br /> </td> 
+   <td> count(Iif([@url-id]&rbrack; ！= 1， @totalClicks， 0))<br /> </td> 
   </tr> 
   <tr> 
    <td> 點按次數(%)<br /> </td> 

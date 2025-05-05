@@ -92,7 +92,7 @@ XML檔案必須以&#x200B;**`<package>`**&#x200B;專案開頭和結尾。 後續
 套件可以三種不同的方式匯出：
 
 * **[!UICONTROL Package Export Assistant]**&#x200B;可讓您匯出單一封裝中的一組物件。 如需詳細資訊，請參閱[匯出封裝中的一組物件](#exporting-a-set-of-objects-in-a-package)
-* 您可以用滑鼠右鍵按一下單一物件&#x200B;**並選取&#x200B;**[!UICONTROL Actions > Export in a package]**，直接將其匯出到封裝中。**
+* 您可以用滑鼠右鍵按一下單一物件&#x200B;**並選取&#x200B;**&#x200B;[!UICONTROL Actions > Export in a package]&#x200B;**，直接將其匯出到封裝中。**
 * **封裝定義**&#x200B;可讓您建立封裝結構，在其中新增稍後將在封裝中匯出的物件。 如需詳細資訊，請參閱[管理封裝定義](#managing-package-definitions)
 
 套件匯出後，您就可以將套件和所有新增的實體匯入另一個Campaign執行個體。
@@ -442,6 +442,7 @@ template="xtk:folder" pkgAdmin="@id != 0">
    * 已建立外部帳戶。
    * 新封裝為： 5101 - 2 — 社交應用程式外部帳戶(socialApplication_extAccount)。
    * 同時更新101套件以新增至外部帳戶，但未部署。
+
      ![](assets/ncs_datapackage_best-practices-1.png)
 
 #### 套件檔案 {#package-documentation}

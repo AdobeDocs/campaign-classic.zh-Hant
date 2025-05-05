@@ -79,7 +79,7 @@ Adobe Campaign提供圖形化助理，可在Adobe Campaign使用者端主控台�
 指示下列引數：
 
 * **[!UICONTROL Sender name]** ：輸入寄件者的名稱。
-* **[!UICONTROL Sender address]** ：輸入寄件者的電子郵件地址。 從Adobe Campaign傳送電子郵件時，**寄件者地址**&#x200B;信箱不受監視，且行銷使用者無法存取此信箱。 Adobe Campaign也不提供自動回覆或自動轉寄此信箱中接收之電子郵件的功能。 在本檔案](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/ac-starting-new-platform.html){_blank}中進一步瞭解傳遞能力最佳實務[。
+* **[!UICONTROL Sender address]** ：輸入寄件者的電子郵件地址。 從Adobe Campaign傳送電子郵件時，**寄件者地址**&#x200B;信箱不受監視，且行銷使用者無法存取此信箱。 Adobe Campaign也不提供自動回覆或自動轉寄此信箱中接收之電子郵件的功能。 在本檔案[&#128279;](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/ac-starting-new-platform.html){_blank}中進一步瞭解傳遞能力最佳實務。
 
 * **[!UICONTROL Reply address text]** ：輸入收件者按一下&#x200B;**[!UICONTROL Reply]**&#x200B;按鈕時使用的名稱。
 * **[!UICONTROL Reply address]** ：輸入當收件者按一下電子郵件使用者端軟體中的&#x200B;**[!UICONTROL Reply]**&#x200B;按鈕時要使用的電子郵件地址。 **回覆地址**&#x200B;欄位的用途是當您想要收件者回覆其他地址而不是&#x200B;**寄件者地址**&#x200B;時。  此地址必須是有效的電子郵件地址、連結至受監控的信箱，並由客戶代管。  它可能是支援信箱，例如`customer-care@customer.com`，其中會讀取並回應電子郵件。
@@ -124,7 +124,7 @@ Adobe Campaign提供圖形化助理，可在Adobe Campaign使用者端主控台�
 
 >[!NOTE]
 >
->對於託管或混合式安裝，如果您已升級至[增強型MTA](../../delivery/using/sending-with-enhanced-mta.md)，則只有在設為&#x200B;**3.5天或更短時間時，才會使用&#x200B;**[!UICONTROL Delivery duration of the messages]**。**&#x200B;如果您定義的值超過3.5天，則不會考慮該值。
+>對於託管或混合式安裝，如果您已升級至[增強型MTA](../../delivery/using/sending-with-enhanced-mta.md)，則只有在設為&#x200B;**3.5天或更短時間時，才會使用&#x200B;**&#x200B;[!UICONTROL Delivery duration of the messages]&#x200B;**。**&#x200B;如果您定義的值超過3.5天，則不會考慮該值。
 
 ### 重試引數 {#retry-parameters}
 
@@ -383,7 +383,7 @@ Adobe Campaign可讓您區別這三個URL，以將負載分散到多個平台。
 
   此值可針對每次傳遞覆寫。
 
-* 針對公用資源，URL **https://**&#x200B;伺服器&#x200B;**/res/**&#x200B;執行個體&#x200B;****，其中&#x200B;**執行個體**是追蹤執行個體的名稱。
+* 針對公用資源，URL **https://**&#x200B;伺服器&#x200B;**/res/**&#x200B;執行個體&#x200B;**&#x200B;**，其中&#x200B;**執行個體**&#x200B;是追蹤執行個體的名稱。
 
 ### 傳遞影像偵測 {#delivery-image-detection}
 

@@ -231,7 +231,7 @@ Adobe Campaign平台可讓您透過退回郵件功能管理電子郵件傳送失
 >
 >* **非同步**&#x200B;退信仍由inMail處理序透過&#x200B;**[!UICONTROL Inbound email]**&#x200B;規則限定。 如需詳細資訊，請參閱[電子郵件管理規則](#email-management-rules)。
 >
->* 對於使用不含Webhook的Enhanced MTA **的執行個體，**[!UICONTROL Inbound email]**規則也將用來處理來自Enhanced MTA的同步退信電子郵件，使用的電子郵件地址與非同步退信電子郵件相同。**
+>* 對於使用不含Webhook的Enhanced MTA **的執行個體，**&#x200B;[!UICONTROL Inbound email]&#x200B;**規則也將用來處理來自Enhanced MTA的同步退信電子郵件，使用的電子郵件地址與非同步退信電子郵件相同。**
 
 對於使用舊版Campaign MTA的內部部署安裝和託管/混合安裝，當電子郵件傳送失敗時，Adobe Campaign傳送伺服器會從傳訊伺服器或遠端DNS伺服器收到錯誤訊息。 錯誤清單是由遠端伺服器傳回之訊息中所包含的字串所組成。 系統會為每個錯誤訊息指定失敗型別和原因。
 

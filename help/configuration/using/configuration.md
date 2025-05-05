@@ -16,7 +16,7 @@ ht-degree: 0%
 
 身為資深使用者，您可以在瀏覽器樹狀結構中新增資料夾並加以自訂。
 
-在本節](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy)中進一步瞭解Campaign總管和導覽階層[。
+在本節[&#128279;](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy)中進一步瞭解Campaign總管和導覽階層。
 
 導覽清單使用的資料夾型別在遵循&#x200B;**xtk：navtree**&#x200B;結構描述語法的XML檔案中描述。
 

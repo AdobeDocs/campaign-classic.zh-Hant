@@ -247,7 +247,7 @@ Adobe Campaign既不是Data Warehouse也不是報表工具。 因此，為了確
 
 在[Campaign隱私權與安全性方針](../../platform/using/privacy-and-recommendations.md)中進一步瞭解資料保留。
 
-在本節](../../production/using/database-cleanup-workflow.md)中進一步瞭解Campaign資料庫清理工作流程[。
+在本節[&#128279;](../../production/using/database-cleanup-workflow.md)中進一步瞭解Campaign資料庫清理工作流程。
 
 >[!IMPORTANT]
 >
@@ -298,7 +298,7 @@ Adobe Campaign仰賴協力廠商資料庫引擎。 視提供者而定，為大�
 
 * **小型**&#x200B;資料表與傳遞資料表類似。
 * **中等大小**&#x200B;資料表與收件者資料表的大小相同。 每個客戶有一筆記錄。
-* **大型**資料表類似於Broad記錄資料表。 每個客戶有許多記錄。
+* **大型**&#x200B;資料表類似於Broad記錄資料表。 每個客戶有許多記錄。
 例如，如果您的資料庫包含1千萬位收件者，則廣泛記錄表格會包含約1億到2億則訊息，而傳遞表格則會包含數千筆記錄。
 
 在PostgreSQL上，資料列不應超過8KB，以避免[TOAST](https://wiki.postgresql.org/wiki/TOAST)機制。 因此，請儘量減少欄數及每列的大小，以保留系統的最佳效能（記憶體和CPU）。

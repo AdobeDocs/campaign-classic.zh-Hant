@@ -22,7 +22,7 @@ ht-degree: 0%
 >
 >此功能僅適用於小型資產和檔案。
 
-在行銷活動中，您也可以參考其他專案，例如促銷優惠券、與特定品牌或商店相關的特殊優惠等。 當這些元素包含在大綱中時，它們可以與直接郵件傳遞相關聯。 請參閱透過傳遞大網](#associating-and-structuring-resources-linked-via-a-delivery-outline)連結的[關聯和結構資源。
+在行銷活動中，您也可以參考其他專案，例如促銷優惠券、與特定品牌或商店相關的特殊優惠等。 當這些元素包含在大綱中時，它們可以與直接郵件傳遞相關聯。 請參閱透過傳遞大網[&#128279;](#associating-and-structuring-resources-linked-via-a-delivery-outline)連結的關聯和結構資源。
 
 >[!NOTE]
 >

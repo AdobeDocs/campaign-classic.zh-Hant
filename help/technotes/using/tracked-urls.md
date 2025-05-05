@@ -38,7 +38,7 @@ ht-degree: 30%
 * Campaign 19.1.5 (build 9033)至19.1.7 (build 9036)版本。
 
 
-在本節](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中瞭解如何確認您的[版本。
+在本節[&#128279;](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中瞭解如何確認您的版本。
 
 **如何更新？**
 

@@ -26,7 +26,7 @@ Adobe Campaign Classic與Adobe Analytics驗證之間的整合可支援Adobe Iden
 
 * 如果您管理已移轉的外部帳戶，您必須實作Adobe IMS並透過Adobe ID連線至Adobe Campaign。
 
-  請注意，通過 IMS 登錄Adobe ID用戶必須是 Adobe Analytics 中帳戶的數據連接器的&#x200B;**擁有者，並且具有下面](#analytics-product-profile)提到的[產品設定檔**&#x200B;的許可權&#x200B;**。**
+  請注意，通過 IMS 登錄Adobe ID用戶必須是 Adobe Analytics 中帳戶的數據連接器的&#x200B;**擁有者，並且具有下面[&#128279;](#analytics-product-profile)提到的產品設定檔**&#x200B;的許可權&#x200B;**。**
 
 問題是数据連接器的所有者與登錄到Campaign並嘗試與Analytics集成的用戶不同用戶。
 
@@ -72,7 +72,7 @@ Adobe Campaign Classic與Adobe Analytics驗證之間的整合可支援Adobe Iden
 
 1. 針對&#x200B;**[!UICONTROL Report Suites]**&#x200B;功能，新增您稍後需要使用的&#x200B;**[!UICONTROL Report Suites]**。
 
-   如果您沒有任何報表套裝，可以按照以下步驟建立[](../../integrations/using/gs-aa.md)報表套裝。
+   如果您沒有任何報表套裝，可以按照以下步驟建立[&#128279;](../../integrations/using/gs-aa.md)報表套裝。
 
    ![](assets/do-not-localize/triggers_4.png)
 

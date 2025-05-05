@@ -193,7 +193,7 @@ Adobe Campaign已匯入[安全性區域](../../installation/using/security-zones
 
 或
 
-* 透過Adobe Campaign登入+建立工作階段權杖的密碼&#x200B;****。 工作階段權杖會在設定的期間後自動到期。 不建議使用此模式，因為需要減少某些區域設定（allowUserPassword=&quot;true&quot;及sessionTokenOnly=&quot;true&quot;）的應用程式安全性設定。
+* 透過Adobe Campaign登入+建立工作階段權杖的密碼&#x200B;**&#x200B;**。 工作階段權杖會在設定的期間後自動到期。 不建議使用此模式，因為需要減少某些區域設定（allowUserPassword=&quot;true&quot;及sessionTokenOnly=&quot;true&quot;）的應用程式安全性設定。
 
 ### 工作階段權杖特性 {#session-token-characteristics}
 

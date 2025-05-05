@@ -43,7 +43,7 @@ ht-degree: 7%
 開始此實作前，請檢查您是否擁有：
 
 * 有效的&#x200B;**組織識別碼**：組織ID是Adobe Experience Cloud中的唯一識別碼，例如VisitorID服務和IMS單一登入(SSO)。 [了解更多](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-hant)
-* 您組織的&#x200B;**開發人員存取權**。 組織的系統管理員必須遵循&#x200B;**將開發人員新增至單一產品設定檔**&#x200B;程式（在此頁面](https://helpx.adobe.com/enterprise/using/manage-developers.html)中詳述[），以提供與觸發器相關聯之Adobe Analytics產品的`Analytics - {tenantID}`產品設定檔的開發者存取權。
+* 您組織的&#x200B;**開發人員存取權**。 組織的系統管理員必須遵循&#x200B;**將開發人員新增至單一產品設定檔**&#x200B;程式（在此頁面[&#128279;](https://helpx.adobe.com/enterprise/using/manage-developers.html)中詳述），以提供與觸發器相關聯之Adobe Analytics產品的`Analytics - {tenantID}`產品設定檔的開發者存取權。
 
 ## 實施步驟 {#implement}
 

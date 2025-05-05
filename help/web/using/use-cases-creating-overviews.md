@@ -21,7 +21,7 @@ ht-degree: 0%
 
 * 資料夾的篩選器（請參閱在 [資料夾](#adding-a-filter-on-a-folder)上添加篩選器），
 * 創建新網路應用程式的按鈕（請參閱 [添加新按鈕以配置新網路應用程式](#adding-a-button-to-configure-a-new-web-application)），
-* 清單中每個專案的詳細信息顯示（請參閱向清單](#adding-detail-to-a-list)添加詳細信息），[
+* 清單中每個專案的詳細信息顯示（請參閱向清單[&#128279;](#adding-detail-to-a-list)添加詳細信息），
 * 每個連結編輯工具一個篩選器（請參閱 [使用連結創建篩選器編輯者](#creating-a-filter-using-a-link-editor)），
 * 重新整理連結（請参閱 [建立重新整理連結](#creating-a-refresh-link)）。
 

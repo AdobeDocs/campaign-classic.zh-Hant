@@ -12,7 +12,7 @@ ht-degree: 0%
 
 ---
 
-# 在Apple中斷{#update-bounce-qualification.md}後更新不正確的硬退信
+# 在Apple中斷後更新不正確的硬退信{#update-bounce-qualification.md}
 
 ## 內容
 

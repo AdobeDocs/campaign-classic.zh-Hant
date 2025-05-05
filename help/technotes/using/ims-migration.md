@@ -85,7 +85,7 @@ For this migration, you must add below APIs in your project: **I/O Management AP
 
 若要將API新增至專案，請依照下列步驟執行：
 
-1. 按一下&#x200B;**新增API**以選取要新增至專案的API。
+1. 按一下&#x200B;**新增API**&#x200B;以選取要新增至專案的API。
    ![](assets/do-not-translate/ims-updates-01.png)
 1. 勾選Adobe Campaign卡片右上角的方塊，選取Adobe Campaign API並將其新增至您的專案，當您將滑鼠停留在卡片上時，就會顯示這個方塊
    ![](assets/do-not-translate/ims-updates-02.png)
@@ -452,7 +452,7 @@ response = requests.post(url, headers=headers, data=xml_data)
 
 此步驟為選用步驟，且僅適用於行銷執行個體，不可用於任何Message Center執行個體。 如果已經為技術操作員定義了特定檔案夾許可權或已命名許可權，但未透過指派的操作員群組。 您現在需要更新Admin Console中新建立的技術帳戶使用者，以授予所需的檔案夾許可權或已命名許可權。
 
-請注意，對Campaign執行個體進行至少一個API呼叫之前，技術帳戶使用者不會存在於Adobe Campaign中，此時IMS將會在Campaign中建立使用者。 如果您在Campaign內找不到技術使用者，請確定您已能夠成功傳送API呼叫，如步驟7](#ims-migration-step-7)中所述[。
+請注意，對Campaign執行個體進行至少一個API呼叫之前，技術帳戶使用者不會存在於Adobe Campaign中，此時IMS將會在Campaign中建立使用者。 如果您在Campaign內找不到技術使用者，請確定您已能夠成功傳送API呼叫，如步驟7[&#128279;](#ims-migration-step-7)中所述。
 
 1. 若要套用新技術帳戶使用者所需的變更，請依電子郵件地址在Campaign使用者端主控台中找出這些變更。 此電子郵件地址是在上述專案建立和驗證步驟期間建立的。
 

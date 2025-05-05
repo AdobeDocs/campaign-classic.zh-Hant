@@ -32,7 +32,7 @@ ht-degree: 3%
 
   ![](assets/dce_sidebar_inputtypechanges.png)
 
-  這個網站](https://www.w3schools.com/tags/att_input_type.asp)中的&#39;type&#39;屬性正式清單為[。
+  這個網站[&#128279;](https://www.w3schools.com/tags/att_input_type.asp)中的&#39;type&#39;屬性正式清單為。
 
 * 使用DCE模擬結束頁面的步驟：
 

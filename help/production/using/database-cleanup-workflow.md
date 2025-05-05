@@ -59,7 +59,7 @@ ht-degree: 0%
 * 傳遞記錄： **NmsCleanup_BroadLogPurgeDelay** （請參閱[傳遞記錄的清理](#cleanup-of-delivery-logs)）
 * 追蹤記錄： **NmsCleanup_TrackingLogPurgeDelay** （請參閱[追蹤記錄的清除](#cleanup-of-tracking-logs)）
 * 已刪除的傳遞： **NmsCleanup_RecycledDeliveryPurgeDelay** （請參閱[清除要刪除或回收的傳遞](#cleanup-of-deliveries-to-be-deleted-or-recycled)）
-* 匯入拒絕： **NmsCleanup_RejectsPurgeDelay** （請參閱清除匯入產生的拒絕](#cleanup-of-rejects-generated-by-imports-)）[
+* 匯入拒絕： **NmsCleanup_RejectsPurgeDelay** （請參閱清除匯入產生的拒絕[&#128279;](#cleanup-of-rejects-generated-by-imports-)）
 * 訪客設定檔： **NmsCleanup_VisitorPurgeDelay** （請參閱[訪客清理](#cleanup-of-visitors)）
 * 優惠方案主張： **NmsCleanup_PropositionPurgeDelay** （請參閱[主張的清除](#cleanup-of-propositions)）
 

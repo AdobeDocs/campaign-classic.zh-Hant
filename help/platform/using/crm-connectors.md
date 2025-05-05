@@ -39,7 +39,7 @@ Adobe Campaign 提供各種 CRM 連接器，用於將您的 Adobe Campaign 平�
 
 ### 實施步驟 {#crm-implementation-steps}
 
-在本節](../../platform/using/crm-ms-dynamics.md)中瞭解連線Campaign和Microsoft Dynamics [的逐步程式
+在本節[&#128279;](../../platform/using/crm-ms-dynamics.md)中瞭解連線Campaign和Microsoft Dynamics 的逐步程式
 
 
-在本節](../../platform/using/crm-sfdc.md)中瞭解連線Campaign和Salesforce [的逐步程式
+在本節[&#128279;](../../platform/using/crm-sfdc.md)中瞭解連線Campaign和Salesforce 的逐步程式

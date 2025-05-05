@@ -40,7 +40,7 @@ Adobe Campaign使用兩種型別的API：
 * 用於查詢資料模型資料的一般資料存取API。 請參閱[資料導向API](../../configuration/using/data-oriented-apis.md)。
 * 業務特定API可讓您對每個物件執行動作：傳送、工作流程、訂閱等。 請參閱[商業導向API](../../configuration/using/business-oriented-apis.md)。
 
-為了開發API並與Adobe Campaign互動，您需要熟悉您的資料模型。 Adobe Campaign可讓您產生基底的完整說明。 請參閱模型](../../configuration/using/data-oriented-apis.md#description-of-the-model)的[描述。
+為了開發API並與Adobe Campaign互動，您需要熟悉您的資料模型。 Adobe Campaign可讓您產生基底的完整說明。 請參閱模型[&#128279;](../../configuration/using/data-oriented-apis.md#description-of-the-model)的描述。
 
 ## SOAP 呼叫 {#soap-calls}
 

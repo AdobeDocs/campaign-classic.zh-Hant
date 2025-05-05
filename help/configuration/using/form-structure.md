@@ -187,7 +187,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->**style=&quot;down|up**（依預設）**&quot;**功能會強制將索引標籤垂直定位在控制項下方或上方。 此功能為選用。
+>**style=&quot;down|up**（依預設）**&quot;**&#x200B;功能會強制將索引標籤垂直定位在控制項下方或上方。 此功能為選用。
 >`<container style="down" type="notebook">  … </container>`
 
 #### 圖示清單 {#icon-list}

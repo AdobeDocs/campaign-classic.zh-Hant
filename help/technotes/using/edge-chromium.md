@@ -17,7 +17,7 @@ ht-degree: 6%
 
 Microsoft Internet Explorer 11生命週期結束後，使用者端主控台中控制面板的HTML轉譯引擎使用Edge Chromium，從Campaign Classic v7.3開始。
 
-除了安裝Microsoft Edge Webview 2執行階段（現在任何使用者端主控台安裝](../../installation/using/installing-the-client-console.md#webview)都需要[）之外，您必須在執行個體上啟用Microsoft Edge Chromium。
+除了安裝Microsoft Edge Webview 2執行階段（現在任何使用者端主控台安裝[&#128279;](../../installation/using/installing-the-client-console.md#webview)都需要）之外，您必須在執行個體上啟用Microsoft Edge Chromium。
 
 >[!NOTE]
 >

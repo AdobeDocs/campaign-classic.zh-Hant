@@ -27,8 +27,8 @@ ht-degree: 0%
 
 **管線失敗，錯誤為「`[` ou `{` (iRc=16384)」**
 
-未設定&#x200B;**NmsPipeline_Config**選項。 這實際上是JSON剖析錯誤。
-在選項**NmsPipeline_Config**&#x200B;中設定JSON設定。 請參閱本頁面的「路由選項」。
+未設定&#x200B;**NmsPipeline_Config**&#x200B;選項。 這實際上是JSON剖析錯誤。
+在選項&#x200B;**NmsPipeline_Config**&#x200B;中設定JSON設定。 請參閱本頁面的「路由選項」。
 
 **管線失敗，因為「主體必須是有效的組織或使用者端」**
 

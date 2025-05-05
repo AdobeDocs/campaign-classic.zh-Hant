@@ -44,7 +44,7 @@ ht-degree: 3%
 
 1. 指定模擬範圍。
 
-   如需詳細資訊，請參閱領域](../../interaction/using/simulation-scope.md#definition-of-the-scope)的[定義。
+   如需詳細資訊，請參閱領域[&#128279;](../../interaction/using/simulation-scope.md#definition-of-the-scope)的定義。
 
    ![](assets/offer_simulation_004.png)
 

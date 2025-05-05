@@ -14,7 +14,7 @@ ht-degree: 3%
 
 # 資料庫對應{#database-mapping}
 
-此頁面](schema-structure.md)中描述的範例結構描述[的SQL對應會產生下列XML檔案：
+此頁面[&#128279;](schema-structure.md)中描述的範例結構描述的SQL對應會產生下列XML檔案：
 
 ```sql
 <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">

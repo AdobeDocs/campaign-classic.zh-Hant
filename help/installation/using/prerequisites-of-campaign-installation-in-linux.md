@@ -150,7 +150,7 @@ Adobe Campaign支援9.6版之PostgreSQL使用者端程式庫的所有版本： *
 
 ### Oracle {#oracle}
 
-檢索 64 位 Debian 的 資料庫 版本，即：libclntsh.so、libclntsh.so.19.1 **、libclntsh.so.18.1**、**libclntsh.so.12.1**、**libclntsh.so.11.1** 或 **libclntsh.so.10.1。**********
+檢索 64 位 Debian 的 資料庫 版本，即：libclntsh.so、libclntsh.so.19.1 **、libclntsh.so.18.1**、**libclntsh.so.12.1**、**libclntsh.so.11.1** 或 **libclntsh.so.10.1。**&#x200B;**&#x200B;**&#x200B;**&#x200B;**
 
 您可以從 Oracle 技術網路獲取 Linux RPM 軟體包。
 
@@ -168,7 +168,7 @@ Adobe Campaign支援9.6版之PostgreSQL使用者端程式庫的所有版本： *
 
    在使用 Oracle Instant Client 版本時發現了各種問題。 此外，無法在即時用戶端上更改時區檔。
 
-1. 確保&#x200B;**用戶端版本**&#x200B;和&#x200B;**資料庫伺服器版本****相同**。
+1. 確保&#x200B;**用戶端版本**&#x200B;和&#x200B;**資料庫伺服器版本**&#x200B;**相同**。
 
    儘管Oracle有相容性矩陣，並且建議調整使用者端和伺服器版本，但混合使用版本已知會導致問題。
 

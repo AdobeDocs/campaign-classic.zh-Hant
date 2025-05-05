@@ -56,4 +56,4 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->有關SFTP伺服器使用方式的最佳實務及疑難排解在本頁面](../../platform/using/sftp-server-usage.md)中有詳細說明[。
+>有關SFTP伺服器使用方式的最佳實務及疑難排解在本頁面[&#128279;](../../platform/using/sftp-server-usage.md)中有詳細說明。

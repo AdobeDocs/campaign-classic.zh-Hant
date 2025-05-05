@@ -34,7 +34,7 @@ ht-degree: 2%
 
 ### 在Windows上設定的驅動程式 {#driver-window}
 
-1. 下載適用於Windows](https://cloud.google.com/bigquery/docs/reference/odbc-jdbc-drivers)的[ODBC驅動程式。
+1. 下載適用於Windows[&#128279;](https://cloud.google.com/bigquery/docs/reference/odbc-jdbc-drivers)的ODBC驅動程式。
 
 1. 在Windows中設定ODBC驅動程式。 如需詳細資訊，請參閱[此頁面](https://storage.googleapis.com/simba-bq-release/jdbc/Simba%20JDBC%20Driver%20for%20Google%20BigQuery%20Install%20and%20Configuration%20Guide.pdf)。
 

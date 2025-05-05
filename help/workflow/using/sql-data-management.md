@@ -27,9 +27,9 @@ ht-degree: 4%
 
   如需詳細資訊，請參閱Campaign版本的相關章節：
 
-  ![](assets/do-not-localize/v7.jpeg)[Campaign v7檔案](../../installation/using/about-fda.md)
+  ![](assets/do-not-localize/v7.jpeg) [Campaign v7檔案](../../installation/using/about-fda.md)
 
-  ![](assets/do-not-localize/v8.png)[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html?lang=zh-Hant)
+  ![](assets/do-not-localize/v8.png) [Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html?lang=zh-Hant)
 
 * 傳出綱要必須存在於資料庫中，並連結至FDA資料庫。
 * 執行工作流程的運運算元必須具有&#x200B;**[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY (useSqlDmActivity)]**&#x200B;已命名的許可權。 [了解更多](../../platform/using/access-management-named-rights.md)。

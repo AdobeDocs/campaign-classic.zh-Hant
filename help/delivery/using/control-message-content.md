@@ -51,7 +51,7 @@ ht-degree: 6%
 
 每次傳送前，您必須先檢查選擇退出連結是否正常運作。 例如，傳送校樣時，請確定連結有效、表單線上上，且驗證後會將&#x200B;**[!UICONTROL No longer contact this recipient]**&#x200B;欄位的值變更為&#x200B;**[!UICONTROL Yes]**。 您應該系統地進行此檢查，因為輸入連結或變更表單時總是可能發生人為錯誤。
 
-瞭解如何在本節](personalization-blocks.md#personalization-blocks-example)中插入選擇退出連結[。
+瞭解如何在本節[&#128279;](personalization-blocks.md#personalization-blocks-example)中插入選擇退出連結。
 
 如果在開始傳遞後偵測到有關取消訂閱的問題，則仍可以為按一下選擇退出連結的收件者手動執行取消訂閱（例如使用大量更新函式），即使他們無法確認自己的選擇。
 

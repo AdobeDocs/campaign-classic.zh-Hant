@@ -179,9 +179,9 @@ ht-degree: 4%
 
    如需詳細資訊，請參閱Campaign版本的相關章節：
 
-   ![](assets/do-not-localize/v7.jpeg)[Campaign v7檔案](../../installation/using/about-fda.md)
+   ![](assets/do-not-localize/v7.jpeg) [Campaign v7檔案](../../installation/using/about-fda.md)
 
-   ![](assets/do-not-localize/v8.png)[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html?lang=zh-Hant)
+   ![](assets/do-not-localize/v8.png) [Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html?lang=zh-Hant)
 
 然後，我們需要新增子集：
 

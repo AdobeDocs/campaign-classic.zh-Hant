@@ -50,8 +50,8 @@ Adobe Campaign可以使用兩個記錄層級進行操作：
    >[!NOTE]
    >
    >如果您使用&#x200B;**tracefilter：&#42;**，則會啟動所有記錄型別： ncm、rdr、nms、jst、timing、wdbc、ldap、soap、xtk、xtkquery、session、xtkwriter、網路、pop3、inmail\
-   最有用的記錄型別是： **wdbc** （顯示所有SQL查詢）、**soap** (顯示所有SOAP呼叫)、**ldap** （驗證後顯示所有LDAP查詢）、**xtkquery** （顯示所有querydef的清單）。\
-   您可以個別使用它們（例如&#x200B;**tracefilter：soap，wdbc**）。 您也可以全部啟用它們，並選擇排除某些其他專案： **-tracefilter：&#42;，！soap**
+   >最有用的記錄型別是： **wdbc** （顯示所有SQL查詢）、**soap** (顯示所有SOAP呼叫)、**ldap** （驗證後顯示所有LDAP查詢）、**xtkquery** （顯示所有querydef的清單）。\
+   >您可以個別使用它們（例如&#x200B;**tracefilter：soap，wdbc**）。 您也可以全部啟用它們，並選擇排除某些其他專案： **-tracefilter：&#42;，！soap**
 
    檢查錯誤是否確實發生，然後以正常方式重新啟動程式：
 
@@ -61,7 +61,7 @@ Adobe Campaign可以使用兩個記錄層級進行操作：
 
 >[!IMPORTANT]
 >
-這些命令的記錄會儲存在模組的記錄檔中。
+>這些命令的記錄會儲存在模組的記錄檔中。
 
 以下是Web模組專屬的範例。 其他模組會如上所述運作。
 
@@ -85,12 +85,12 @@ nlserver stop mta@<INSTANCE_NAME>; nlserver mta -instance:<INSTANCE_NAME> -trace
 
 >[!NOTE]
 >
-**追蹤檔**&#x200B;模式可讓您儲存記錄。 在上述範例中，記錄檔儲存在&#x200B;**var/`<instance-name>`/mta_debug.log**&#x200B;和&#x200B;**var/default/web_debug.log**&#x200B;檔案中。
+>**追蹤檔**&#x200B;模式可讓您儲存記錄。 在上述範例中，記錄檔儲存在&#x200B;**var/`<instance-name>`/mta_debug.log**&#x200B;和&#x200B;**var/default/web_debug.log**&#x200B;檔案中。
 
 >[!IMPORTANT]
 >
-在Windows中，請勿新增LD_PRELOAD選項。 下列指令就足夠了：\
-nlserver web -tomcat -verbose -tracefilter：&#42;
+>在Windows中，請勿新增LD_PRELOAD選項。 下列指令就足夠了：\
+>nlserver web -tomcat -verbose -tracefilter：&#42;
 
 檢查問題是否再次發生，然後重新啟動模組：
 

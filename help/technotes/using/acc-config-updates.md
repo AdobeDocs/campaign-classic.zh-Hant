@@ -45,7 +45,7 @@ ht-degree: 8%
 * Campaign 19.2.4版。
 * Campaign 19.1.8版。
 
-在本節](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中瞭解如何確認您的[版本。
+在本節[&#128279;](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中瞭解如何確認您的版本。
 
 **如何更新？**
 
@@ -79,7 +79,7 @@ Adobe身分服務(IMS)將從2021年6月30日&#x200B;**起停止支援舊版Inter
 
 **您有受到影響嗎？**
 
-如果您要透過Adobe ID](../../integrations/using/about-adobe-id.md)並透過AdobeIdentity Management Service (IMS)連線至Campaign [，則必須升級至下列新版本之一：
+如果您要透過Adobe ID[&#128279;](../../integrations/using/about-adobe-id.md)並透過AdobeIdentity Management Service (IMS)連線至Campaign ，則必須升級至下列新版本之一：
 
 * Gold Standard 11. [了解更多](../../rn/using/gold-standard.md)
 * Campaign 21.1.1版。 [了解更多](../../rn/using/latest-release.md)
@@ -90,7 +90,7 @@ Adobe身分服務(IMS)將從2021年6月30日&#x200B;**起停止支援舊版Inter
 
 這些發行版本隨附新的連線通訊協定：Campaign伺服器和使用者端主控台都必須升級，才能在&#x200B;**2021年6月30日**&#x200B;後連線至Campaign。
 
-在本節](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中瞭解如何確認您的[版本。
+在本節[&#128279;](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中瞭解如何確認您的版本。
 
 **如何更新？**
 
@@ -119,7 +119,7 @@ Adobe身分服務(IMS)將從2021年6月30日&#x200B;**起停止支援舊版Inter
 * Campaign 20.2.5版。
 * Campaign 19.1.8版。
 
-在本節](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中瞭解如何確認您的[版本。
+在本節[&#128279;](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中瞭解如何確認您的版本。
 
 **如何更新？**
 
@@ -139,7 +139,7 @@ Adobe身分服務(IMS)將從2021年6月30日&#x200B;**起停止支援舊版Inter
 
 如果您的執行個體是在比Campaign 21.1，**舊的**&#x200B;版本上執行，而您傳送推播通知使用的是舊版Apple二進位通訊協定，則需要更新為以HTTP/2為基礎的APN提供者API。
 
-在本節](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中瞭解如何確認您的[版本。
+在本節[&#128279;](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中瞭解如何確認您的版本。
 
 **如何更新？**
 
@@ -151,7 +151,7 @@ Adobe身分服務(IMS)將從2021年6月30日&#x200B;**起停止支援舊版Inter
 
 2021年3月29日，Apple推播通知服務(APN)基礎架構更新影響Adobe Campaign Classic iOS頻道。 作業系統設定變更為&#x200B;**必要**，以避免iOS推播頻道中斷。
 
-在此頁面](https://developer.apple.com/news/?id=7gx0a2lp)中進一步瞭解APN變更[。
+在此頁面[&#128279;](https://developer.apple.com/news/?id=7gx0a2lp)中進一步瞭解APN變更。
 
 **您有受到影響嗎？**
 

@@ -17,7 +17,7 @@ ht-degree: 0%
 
 從[v7.2.2版本](../../rn/using/latest-release.md#release-7-2-2)開始，Adobe Campaign依賴新的傳遞伺服器來提供高可用性，並解決安全性法規遵循問題。 Campaign Classic現在會將與之間的傳遞能力規則、broadlog和隱藏位址同步到新的傳遞能力伺服器。 舊的傳遞伺服器將於2022年8月31日淘汰。
 
-作為Campaign Classic客戶，您必須在2022年8月31日之前實作新的傳遞能力伺服器&#x200B;****。
+作為Campaign Classic客戶，您必須在2022年8月31日之前實作新的傳遞能力伺服器&#x200B;**&#x200B;**。
 
 >[!NOTE]
 >
@@ -73,9 +73,9 @@ ht-degree: 0%
 
 1. 以系統管理員身分，連線至[Adobe Admin Console](https://adminconsole.adobe.com/){_blank}。
 1. 存取&#x200B;**產品及服務**&#x200B;區段，並檢查是否已列出&#x200B;**Adobe Campaign**。
-如果您看不到**Adobe Campaign**，請聯絡[Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank}以將其新增。
-1. 按一下&#x200B;**Adobe Campaign**並選取您的組織。
-   **警告**：如果您有多個組織，請務必選取正確的組織。 在此頁面](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#ims-org-id){_blank}中進一步瞭解組織[。
+如果您看不到&#x200B;**Adobe Campaign**，請聯絡[Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank}以將其新增。
+1. 按一下&#x200B;**Adobe Campaign**&#x200B;並選取您的組織。
+   **警告**：如果您有多個組織，請務必選取正確的組織。 在此頁面[&#128279;](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#ims-org-id){_blank}中進一步瞭解組織。
 
 1. 檢查&#x200B;**[!UICONTROL Product profile]**&#x200B;是否存在。 如果沒有，請建立它。 此&#x200B;**[!UICONTROL Product profile]**&#x200B;不需要許可權。
 

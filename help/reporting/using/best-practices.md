@@ -33,7 +33,7 @@ ht-degree: 5%
    * 探索資料庫中的資料並定義測量。 若要了解詳細資訊，請參閱[本章節](../../reporting/using/ac-cubes.md)
    * 新增指標至現有報表。 若要了解詳細資訊，請參閱[本章節](../../reporting/using/about-reports-creation-in-campaign.md)
    * 檢視資料庫中的資料。 若要了解詳細資訊，請參閱[本章節](../../reporting/using/about-descriptive-analysis.md)
-   * 建立新的傳遞報告。 在本節](../../reporting/using/about-reports-creation-in-campaign.md)瞭解更多[，
+   * 建立新的傳遞報告。 在本節[&#128279;](../../reporting/using/about-reports-creation-in-campaign.md)瞭解更多，
    * 從Adobe Campaign資料庫匯出資料(透過工作流程，請參閱[本節](../../workflow/using/about-workflows.md)
    * 建立樞紐分析表。 若要了解詳細資訊，請參閱[本章節](../../reporting/using/creating-a-table.md#creating-a-breakdown-or-pivot-table)
    * 探索彙總的資料。 若要了解詳細資訊，請參閱[本章節](../../reporting/using/ac-cubes.md)

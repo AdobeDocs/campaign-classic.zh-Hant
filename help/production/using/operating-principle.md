@@ -33,7 +33,7 @@ Adobe Campaign模組分為三種型別：
 
 **nlserver**&#x200B;工具的一般語法如下：
 
-**nlserver `<command>``<command arguments>`**
+**nlserver `<command>` `<command arguments>`**
 
 如需可用模組的清單，請使用&#x200B;**nlserver**&#x200B;命令。
 

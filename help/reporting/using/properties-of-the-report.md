@@ -20,7 +20,7 @@ ht-degree: 3%
 
 ![](assets/s_ncs_advuser_report_properties_01.png)
 
-一般屬性說明如下。 在&#x200B;**[!UICONTROL Parameters]**、**[!UICONTROL Variables]**&#x200B;和&#x200B;**[!UICONTROL Scripts]**&#x200B;索引標籤中設定的進階功能在此區段](../../reporting/using/advanced-functionalities.md)中說明[。
+一般屬性說明如下。 在&#x200B;**[!UICONTROL Parameters]**、**[!UICONTROL Variables]**&#x200B;和&#x200B;**[!UICONTROL Scripts]**&#x200B;索引標籤中設定的進階功能在此區段[&#128279;](../../reporting/using/advanced-functionalities.md)中說明。
 
 ## 一般屬性 {#overall-properties}
 
@@ -46,7 +46,7 @@ ht-degree: 3%
 
 * **[!UICONTROL Anonymous access]**：此選項可啟用報表的無限制存取。 但是，無法進行任何操作。
 
-  「webapp」技術運運算元的許可權用於顯示報表元素。 在本節](../../platform/using/access-management-operators.md)瞭解更多[。
+  「webapp」技術運運算元的許可權用於顯示報表元素。 在本節[&#128279;](../../platform/using/access-management-operators.md)瞭解更多。
 
 * **[!UICONTROL Access control]**：此選項可讓Adobe Campaign運運算元在登入後存取它。
 * **[!UICONTROL Specific account]**：此選項可讓您使用在&#x200B;**[!UICONTROL Operator]**&#x200B;欄位中選取之運運算元的許可權來執行報告。

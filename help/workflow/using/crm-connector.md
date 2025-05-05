@@ -33,4 +33,4 @@ ht-degree: 10%
 
 ![](assets/crm_task_select_obj.png)
 
-此活動的設定取決於要執行的程式。 各種設定在此頁面](../../platform/using/crm-data-sync.md)中有詳細的[。
+此活動的設定取決於要執行的程式。 各種設定在此頁面[&#128279;](../../platform/using/crm-data-sync.md)中有詳細的。

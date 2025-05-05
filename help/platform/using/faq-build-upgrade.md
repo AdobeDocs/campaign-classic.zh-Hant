@@ -27,7 +27,7 @@ Adobe Campaign 會定期更新。如果您熟悉我們發佈的[發行說明](..
 
 當將Adobe Campaign Classic軟體更新至最新的安全組建編號時，組建版本會升級，但會維持相同的主要/次要組建層級。 例如：將v7版本編號9026Campaign Classic至Campaign v7版本編號9032。
 
-在本節](../../rn/using/rn-overview.md)瞭解更多[。
+在本節[&#128279;](../../rn/using/rn-overview.md)瞭解更多。
 
 ## 最新版的Adobe Campaign Classic是什麼？
 
@@ -37,13 +37,13 @@ Adobe Campaign 會定期更新。如果您熟悉我們發佈的[發行說明](..
 
 從Adobe Campaign使用者端主控台的&#x200B;**[!UICONTROL Help > About...]**&#x200B;功能表檢查您的版本。 **[!UICONTROL About]**&#x200B;方塊包含您為主控台和伺服器執行的版本和組建的詳細資訊。
 
-在本節](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)瞭解更多[。
+在本節[&#128279;](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)瞭解更多。
 
 ## 組建狀態代表什麼？
 
 從Campaign Classic19.2開始，狀態會與每個組建相關聯。
 
-在本節](../../rn/using/rn-overview.md)瞭解更多[。
+在本節[&#128279;](../../rn/using/rn-overview.md)瞭解更多。
 
 ## 組建版本升級與版本升級是否相同？
 
@@ -161,7 +161,7 @@ Adobe會在任何變更前進行系統備份。 不過，如果您的非生產�
 
 開發和預備環境會依序升級或一起升級，但在升級生產執行個體之前必須先登出。 這可讓每位客戶在簽署對生產環境所做的任何變更之前，先進行徹底的測試。
 
-檢視清單[ ](#check-list)下的組建升級檢查清單。 客戶應該執行類似的測試，以及環境可能需要的其他測試。
+檢視清單[&#128279;](#check-list)下的組建升級檢查清單。 客戶應該執行類似的測試，以及環境可能需要的其他測試。
 
 ## 我須多久執行一次組建版本升級？
 
@@ -175,7 +175,7 @@ Adobe會在任何變更前進行系統備份。 不過，如果您的非生產�
 
 如果您在組建版本升級後遇到問題，請聯絡[Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。 客戶服務會安排建置日期並開啟建置升級相關票證。
 
-深入瞭解Campaign Classic](../../support.md)的[說明與支援選項
+深入瞭解Campaign Classic[&#128279;](../../support.md)的說明與支援選項
 
 ## 建置升級檢查清單 {#check-list}
 

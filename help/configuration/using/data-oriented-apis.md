@@ -44,7 +44,7 @@ XML檔案儲存在資料庫的MEMO型別欄位中。
 
 這可讓您隔離基礎SQL。 查詢語言不取決於基礎引擎：某些函式將會重新對應，可能會產生數個SELECT SQL順序。
 
-如需詳細資訊，請參閱結構描述&#39;xtk：queryDef&#39;](../../configuration/using/web-service-calls.md#example-on-the--executequery--method-of-schema--xtk-querydef-)的&#39;ExecuteQuery&#39;方法的[範例。
+如需詳細資訊，請參閱結構描述&#39;xtk：queryDef&#39;[&#128279;](../../configuration/using/web-service-calls.md#example-on-the--executequery--method-of-schema--xtk-querydef-)的&#39;ExecuteQuery&#39;方法的範例。
 
 **ExecuteQuery**&#x200B;方法出現在[ExecuteQuery (xtk：queryDef)](#executequery--xtk-querydef-)中。
 
