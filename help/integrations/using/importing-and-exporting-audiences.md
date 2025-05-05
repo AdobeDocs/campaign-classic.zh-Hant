@@ -50,7 +50,7 @@ ht-degree: 0%
 >
 >如果您要將對象從Adobe Analytics匯入至Adobe Campaign，首先需要在Audience Manager中共用這些對象。 此程式需要12到24小時，必須將其新增到與Campaign的24到36小時同步中。
 >
->在該特定情況下，對象共用時間範圍最長可達60小時。 如需Audience Manager中Adobe Analytics對象共用的詳細資訊，請參閱[Adobe Analytics檔案](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html){target="_blank"}。
+>在該特定情況下，對象共用時間範圍最長可達60小時。 如需Audience Manager中Adobe Analytics對象共用的詳細資訊，請參閱[Adobe Analytics檔案](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html?lang=zh-Hant){target="_blank"}。
 
 每次同步化時，對象資料都會完全取代。 只能匯入區段。 不支援包含鍵值組、特徵和規則的精細資料。
 
@@ -80,7 +80,7 @@ ht-degree: 0%
 
 然後會匯出對象。 儲存對象活動有兩個外站轉變。 主要轉變包含已成功匯出的收件者。 額外的轉變包含無法對應訪客ID或宣告ID的收件者。
 
-解決方案之間的同步化需要24到36小時的時間。 在這段期間後，您將能夠找到新的受眾，並在其他Adobe Experience Cloud解決方案中重複使用它。 如需使用Adobe Campaign共用對象的詳細資訊，請參閱此[檔案](https://experienceleague.adobe.com/en/docs/core-services/interface/services/audiences/create){target="_blank"}。
+解決方案之間的同步化需要24到36小時的時間。 在這段期間後，您將能夠找到新的受眾，並在其他Adobe Experience Cloud解決方案中重複使用它。 如需使用Adobe Campaign共用對象的詳細資訊，請參閱此[檔案](https://experienceleague.adobe.com/zh-hant/docs/core-services/interface/services/audiences/create){target="_blank"}。
 
 >[!NOTE]
 >

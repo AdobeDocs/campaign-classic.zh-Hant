@@ -75,7 +75,7 @@ ht-degree: 0%
 1. 存取&#x200B;**產品及服務**&#x200B;區段，並檢查是否已列出&#x200B;**Adobe Campaign**。
 如果您看不到&#x200B;**Adobe Campaign**，請聯絡[Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank}以將其新增。
 1. 按一下&#x200B;**Adobe Campaign**&#x200B;並選取您的組織。
-   **警告**：如果您有多個組織，請務必選取正確的組織。 在此頁面[&#128279;](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#ims-org-id){_blank}中進一步瞭解組織。
+   **警告**：如果您有多個組織，請務必選取正確的組織。 在此頁面[&#128279;](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=zh-Hant#ims-org-id){_blank}中進一步瞭解組織。
 
 1. 檢查&#x200B;**[!UICONTROL Product profile]**&#x200B;是否存在。 如果沒有，請建立它。 此&#x200B;**[!UICONTROL Product profile]**&#x200B;不需要許可權。
 

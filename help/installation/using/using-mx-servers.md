@@ -91,4 +91,4 @@ MX規則有6個不同的輸送量層級，主要是在提升過程中使用：
 * [MX組態](../../installation/using/email-deliverability.md#mx-configuration)
 * [技術電子郵件設定](../../installation/using/email-deliverability.md)
 * [瞭解傳遞失敗](../../delivery/using/understanding-delivery-failures.md)
-* [Campaign Classic — 技術Recommendations](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html)
+* [Campaign Classic — 技術Recommendations](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=zh-Hant)

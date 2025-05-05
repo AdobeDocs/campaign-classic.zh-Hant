@@ -21,7 +21,7 @@ Adobe淘汰舊版資料中心：Campaign Classic例項必須轉移至Public Clou
 
 以下是此專案的一組常見問題、對您的Campaign環境的影響以及其他實用資源。
 
-如有任何其他問題，請連絡[Adobe客戶服務](https://experienceleague.adobe.com/?support-solution=Campaign#support)。
+如有任何其他問題，請連絡[Adobe客戶服務](https://experienceleague.adobe.com/zh-hant?support-solution=Campaign#support)。
 
 ## 基礎架構影響
 
@@ -51,7 +51,7 @@ Adobe淘汰舊版資料中心：Campaign Classic例項必須轉移至Public Clou
 
 * **解決任何移轉後問題的計畫為何？**
 
-  在生產系統移轉之前，將會進行廣泛的測試。 但是，如果發生任何問題，[Adobe客戶服務](https://experienceleague.adobe.com/?support-solution=Campaign#support)將保留主要聯絡點。 Adobe已建立專家團隊，在需要時提供進階支援。
+  在生產系統移轉之前，將會進行廣泛的測試。 但是，如果發生任何問題，[Adobe客戶服務](https://experienceleague.adobe.com/zh-hant?support-solution=Campaign#support)將保留主要聯絡點。 Adobe已建立專家團隊，在需要時提供進階支援。
 
 ## 傳遞能力影響
 
@@ -97,7 +97,7 @@ Adobe淘汰舊版資料中心：Campaign Classic例項必須轉移至Public Clou
 
   首先，Adobe傳遞能力將評估平台的傳遞能力狀態，並推薦切換到新IP的計畫
 
-  移轉後不需要熱身。 可能會出現例外狀況，在這種情況下，[Adobe客戶服務](https://experienceleague.adobe.com/?support-solution=Campaign#support)將會聯絡客戶。
+  移轉後不需要熱身。 可能會出現例外狀況，在這種情況下，[Adobe客戶服務](https://experienceleague.adobe.com/zh-hant?support-solution=Campaign#support)將會聯絡客戶。
 
   不過，計畫是讓這項作業對業務而言是透明的，不同於在上線期間進行的初始升級。
 

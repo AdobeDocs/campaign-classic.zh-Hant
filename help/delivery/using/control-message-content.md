@@ -25,7 +25,7 @@ ht-degree: 6%
 * [取消訂閱連結](#opt-out)和登陸頁面：取消訂閱連結是必要的。 它必須可見且有效，而且表單必須有效。
 * 預覽：使用Adobe Campaign提供的工具來檢查並最佳化您的電子郵件內容（[收件匣轉譯](#message-responsiveness)，[SpamAssassin](#spamassassin)）。
 
-如需在設計內容時最佳化傳遞能力的其他秘訣，請參閱[Adobe傳遞能力最佳實務指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/content-best-practices-for-optimal-delivery.html)。
+如需在設計內容時最佳化傳遞能力的其他秘訣，請參閱[Adobe傳遞能力最佳實務指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/content-best-practices-for-optimal-delivery.html?lang=zh-Hant)。
 
 >[!NOTE]
 >

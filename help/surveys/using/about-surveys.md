@@ -18,7 +18,7 @@ Adobe Campaign包含圖形模組，可定義及發佈網頁應用程式。 這�
 
 >[!AVAILABILITY]
 >
->調查管理不適用於企業(FFDA)部署內容中的Campaign v8。 深入瞭解[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/architecture/ffda/enterprise-deployment){target="_blank"}。
+>調查管理不適用於企業(FFDA)部署內容中的Campaign v8。 深入瞭解[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/config/architecture/ffda/enterprise-deployment){target="_blank"}。
 
 
 選用的&#x200B;**調查**&#x200B;附加元件可讓您建立新型別的Web應用程式，以建立和管理線上問卷，例如新增或修改設定檔資訊、訂閱或取消訂閱資訊服務或競爭專案表單的表單。 收集到答案後，就會儲存在資料庫或本機變數中。 資料模型可透過調查問卷的答案動態擴展。 您可以即時檢視結果、篩選回應，並使用專用圖表加以分析。

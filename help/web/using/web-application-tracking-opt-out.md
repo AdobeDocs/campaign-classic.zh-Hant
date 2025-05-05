@@ -22,7 +22,7 @@ Adobe Campaign可讓您停止追蹤選擇退出透過Cookie或網路信標進行
 
 >[!NOTE]
 >
->當指令碼一律遵循[安全性與隱私權檢查清單](https://helpx.adobe.com/campaign/kb/acc-security.html#dev)中說明的准則時。
+>當指令碼一律遵循[安全性與隱私權檢查清單](https://helpx.adobe.com/tw/campaign/kb/acc-security.html#dev)中說明的准則時。
 
 ## 設定橫幅 {#configuring-the-banner-}
 

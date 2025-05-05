@@ -21,7 +21,7 @@ Adobe Campaign可讓您匯出壓縮或加密的檔案。 透過&#x200B;**[!UICON
 
 若要這麼做：
 
-1. 使用[控制面板](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html#encrypting-data)為您的執行個體安裝GPG金鑰組。
+1. 使用[控制面板](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=zh-Hant#encrypting-data)為您的執行個體安裝GPG金鑰組。
 
    >[!NOTE]
    >
@@ -46,7 +46,7 @@ Adobe Campaign可讓您匯出壓縮或加密的檔案。 透過&#x200B;**[!UICON
 
 執行此使用案例的步驟如下：
 
-1. 使用GPG公用程式產生GPG金鑰組（公用/私用），然後將公用金鑰安裝至「控制面板」。 詳細步驟可在[控制面板檔案](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html#encrypting-data)中取得。
+1. 使用GPG公用程式產生GPG金鑰組（公用/私用），然後將公用金鑰安裝至「控制面板」。 詳細步驟可在[控制面板檔案](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=zh-Hant#encrypting-data)中取得。
 
 1. 在Campaign Classic中，建立工作流程以匯出資料，並使用已透過「控制面板」安裝的私密金鑰進行加密。 為此，我們將建立工作流程，如下所示：
 

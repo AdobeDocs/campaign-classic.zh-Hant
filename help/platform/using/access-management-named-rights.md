@@ -18,7 +18,7 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->此頁面僅適用於使用原生驗證連線至Campaign的運運算元。 如需Adobe IMS驗證資訊，請參閱[此檔案](https://helpx.adobe.com/enterprise/using/manage-permissions-and-roles.html)。
+>此頁面僅適用於使用原生驗證連線至Campaign的運運算元。 如需Adobe IMS驗證資訊，請參閱[此檔案](https://helpx.adobe.com/tw/enterprise/using/manage-permissions-and-roles.html)。
 
 依預設，Adobe Campaign會建議一組已命名的許可權，讓您定義指派給運運算元和運運算元群組的授權。 可以從樹狀結構的&#x200B;**[!UICONTROL Administration > Access management > Named rights]**&#x200B;節點編輯這些許可權。
 
@@ -76,4 +76,4 @@ ht-degree: 5%
 
 [此處](/help/platform/using/assets/access-rights-matrix.pdf)提供Adobe Campaign存取權矩陣。
 
-[![影像](assets/do-not-localize/user_management.png)](https://experienceleague.adobe.com/docs/campaign-classic/assets/access-rights-matrix.pdf)
+[![影像](assets/do-not-localize/user_management.png)](https://experienceleague.adobe.com/docs/campaign-classic/assets/access-rights-matrix.pdf?lang=zh-Hant)

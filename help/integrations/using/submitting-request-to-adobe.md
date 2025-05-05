@@ -21,7 +21,7 @@ ht-degree: 2%
 >
 >身為v7使用者，若要繼續進行，請確定您的系統上已啟用Adobe Identity Management系統(IMS)。 [了解更多](../../integrations/using/about-adobe-id.md)。
 
-為您的組織啟用AdobeIdentity Management服務(IMS)後，您可以要求布建[Experience Cloud對象](https://experienceleague.adobe.com/en/docs/core-services/interface/services/audiences/overview){target="_blank"}與Campaign的整合。 若要這麼做，請聯絡您的Adobe代表，並提供下列資訊：
+為您的組織啟用AdobeIdentity Management服務(IMS)後，您可以要求布建[Experience Cloud對象](https://experienceleague.adobe.com/zh-hant/docs/core-services/interface/services/audiences/overview){target="_blank"}與Campaign的整合。 若要這麼做，請聯絡您的Adobe代表，並提供下列資訊：
 
 <table> 
  <tbody> 

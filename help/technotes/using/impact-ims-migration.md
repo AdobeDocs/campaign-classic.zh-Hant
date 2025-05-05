@@ -94,7 +94,7 @@ ht-degree: 1%
 
 因此，使用者端主控台中已停用這些動作。
 
-操作員的管理集中於Adobe Admin Console，而下列工作現在只能透過此主控台管理。 在[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/admin/permissions/manage-permissions){target="_blank"}中瞭解如何建立使用者並指派許可權。
+操作員的管理集中於Adobe Admin Console，而下列工作現在只能透過此主控台管理。 在[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/admin/permissions/manage-permissions){target="_blank"}中瞭解如何建立使用者並指派許可權。
 
 ### 無法使用的選項 {#unavailable-migration}
 

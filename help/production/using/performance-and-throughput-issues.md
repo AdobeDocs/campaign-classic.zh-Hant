@@ -57,7 +57,7 @@ Adobe Campaign也提供[工具](../../production/using/monitoring-processes.md#m
   >
   >傳遞能力團隊的參與是以合約為基礎，客戶應聯絡其Adobe代表以取得與傳遞能力參與相關的資訊。
 
-* DKIM：為了確保DKIM的安全性等級，1024b是建議的最佳實務加密大小。 大多數存取提供者不會將下層DKIM金鑰視為有效。 請參見[此頁面](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication)。
+* DKIM：為了確保DKIM的安全性等級，1024b是建議的最佳實務加密大小。 大多數存取提供者不會將下層DKIM金鑰視為有效。 請參見[此頁面](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=zh-Hant#authentication)。
 
 ## 傳遞能力問題 {#deliverability-issues}
 
@@ -71,7 +71,7 @@ Adobe Campaign也提供[工具](../../production/using/monitoring-processes.md#m
   >傳遞能力團隊的參與是以合約為基礎，客戶應聯絡其Adobe代表以取得與傳遞能力參與相關的資訊。
 
 * IP相關性設定：不正確的IP相關性設定可能會完全停止電子郵件（設定中的運運算元/相關性名稱不正確）或減少輸送量（相關性中的少量IP）。 請參閱此[頁面](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)。
-* 電子郵件大小：電子郵件大小在輸送量中起著重要作用。 建議的最大電子郵件大小為60 KB。 請參閱此[頁面](https://helpx.adobe.com/legal/product-descriptions/campaign.html)。 在[傳遞輸送量](../../reporting/using/global-reports.md#delivery-throughput)報告中，檢查依小時傳輸的位元組數。
+* 電子郵件大小：電子郵件大小在輸送量中起著重要作用。 建議的最大電子郵件大小為60 KB。 請參閱此[頁面](https://helpx.adobe.com/tw/legal/product-descriptions/campaign.html)。 在[傳遞輸送量](../../reporting/using/global-reports.md#delivery-throughput)報告中，檢查依小時傳輸的位元組數。
 * 大量無效收件者：當存在大量無效收件者時，可能會影響輸送量。 MTA不斷重試傳送電子郵件給無效的收件者。 請確定您的資料庫已妥善維護。
 * 個人化的數量：如果傳送持續在「Personalization進行中」，請檢查個人化區塊中使用的JavaScript 。
 

@@ -32,4 +32,4 @@ Adobe Campaign操作者可透過完整的驗證程式和適當的追蹤工具（
 
 >[!NOTE]
 >
->若要進一步瞭解Adobe Campaign的MRM及其使用方式，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/automation/mrm/about-marketing-resource-management){target=_blank}。
+>若要進一步瞭解Adobe Campaign的MRM及其使用方式，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/mrm/about-marketing-resource-management){target=_blank}。

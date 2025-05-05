@@ -18,7 +18,7 @@ ht-degree: 1%
 
 
 **檔案傳輸**&#x200B;活動可讓您接收或傳送檔案、測試檔案是否存在，或列出伺服器上的檔案。 使用的通訊協定為Azure Blob儲存、Amazon Simple Storage Service (S3)、FTP或SFTP。
-透過S3、Azure Blob儲存或SFTP連線，您也可以透過Adobe即時客戶資料平台將區段資料匯入Adobe Campaign。 如需詳細資訊，請參閱此[檔案](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html)。
+透過S3、Azure Blob儲存或SFTP連線，您也可以透過Adobe即時客戶資料平台將區段資料匯入Adobe Campaign。 如需詳細資訊，請參閱此[檔案](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html?lang=zh-Hant)。
 
 >[!NOTE]
 >

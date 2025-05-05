@@ -27,7 +27,7 @@ ht-degree: 2%
 
 此（每日執行）工作流程會選取目前日期生日的所有收件者。
 
-![](assets/do-not-localize/how-to-video.png)此使用案例也可以透過影片形式找到。 如需詳細資訊，請參閱[建立工作流程](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/automating-with-workflows/creating-a-workflow.html)影片。
+![](assets/do-not-localize/how-to-video.png)此使用案例也可以透過影片形式找到。 如需詳細資訊，請參閱[建立工作流程](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/automating-with-workflows/creating-a-workflow.html?lang=zh-Hant)影片。
 
 若要這麼做，請建立行銷活動，然後按一下「**[!UICONTROL Targeting and workflows]**」標籤。 如需詳細資訊，請參閱[在工作流程](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow)中建立主要目標區段。
 

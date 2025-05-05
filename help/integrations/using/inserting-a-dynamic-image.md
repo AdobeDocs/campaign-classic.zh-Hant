@@ -62,7 +62,7 @@ ht-degree: 3%
 * **[!UICONTROL Landing Page]**：如果您要將預設影像重新導向至預設登陸頁面。 此URL僅適用於預設影像顯示在最終電子郵件中且為選用的情況。
 * **[!UICONTROL Additional decision parameters]**：指定Adobe Target區段中所定義欄位與Adobe Campaign欄位之間的對應。 使用的Adobe Campaign欄位必須在rawbox中指定。 在我們的範例中，已新增「國家/地區」欄位。
 
-如果您在Adobe Target的設定中使用企業許可權，請在此欄位中新增對應的屬性。 在[此頁面](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html)中進一步瞭解Target Enterprise許可權。
+如果您在Adobe Target的設定中使用企業許可權，請在此欄位中新增對應的屬性。 在[此頁面](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html?lang=zh-Hant)中進一步瞭解Target Enterprise許可權。
 
 ![](assets/target_13.png)
 
@@ -82,7 +82,7 @@ ht-degree: 3%
 
    ![](assets/target_6.png)
 
-1. 對其餘的重新導向選件遵循相同程式。 如需關於此項目的詳細資訊，請參閱此[頁面](https://experienceleague.adobe.com/docs/target/using/experiences/offers/offer-redirect.html)。
+1. 對其餘的重新導向選件遵循相同程式。 如需關於此項目的詳細資訊，請參閱此[頁面](https://experienceleague.adobe.com/docs/target/using/experiences/offers/offer-redirect.html?lang=zh-Hant)。
 
 ## 建立客群 {#audiences-target}
 

@@ -115,7 +115,7 @@ ht-degree: 4%
 
 * 在電子郵件中使用&#x200B;**授權字元**：電子郵件地址的有效字元清單定義於「XtkEmail_Characters」選項。 在本節[&#128279;](../../installation/using/configuring-campaign-options.md)中瞭解如何存取Campaign選項。 若要正確處理特殊字元，Adobe Campaign必須安裝在Unicode中。
 
-* **電子郵件驗證**&#x200B;的設定：請確定電子郵件標頭包含DKIM簽章。 DKIM （網域金鑰識別郵件）驗證可讓接收電子郵件伺服器驗證訊息是否確實是由其聲稱傳送訊息的個人或實體所傳送，以及訊息內容在最初傳送時間（和DKIM「簽署」）與接收時間之間是否有變更。 此標準通常使用寄件者或寄件者標題中的網域。 如需詳細資訊，請參閱[Adobe傳遞能力最佳實務指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication)。
+* **電子郵件驗證**&#x200B;的設定：請確定電子郵件標頭包含DKIM簽章。 DKIM （網域金鑰識別郵件）驗證可讓接收電子郵件伺服器驗證訊息是否確實是由其聲稱傳送訊息的個人或實體所傳送，以及訊息內容在最初傳送時間（和DKIM「簽署」）與接收時間之間是否有變更。 此標準通常使用寄件者或寄件者標題中的網域。 如需詳細資訊，請參閱[Adobe傳遞能力最佳實務指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=zh-Hant#authentication)。
 
 ### 回應式電子郵件設計
 

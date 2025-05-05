@@ -23,7 +23,7 @@ Adobe Campaign API可用於應用程式內的JavaScript中，以及應用程式�
 >[!IMPORTANT]
 >
 >授權引擎每日的通話次數視您的授權合約而定。 如需詳細資訊，請參閱[此頁面](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-campaign-classic---product-description.html)。\
->[此專屬檔案](https://experienceleague.adobe.com/developer/campaign-api/api/index.html)提供所有API的清單，包括其完整說明。
+>[此專屬檔案](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hant)提供所有API的清單，包括其完整說明。
 
 ## 先決條件 {#prerequisites}
 

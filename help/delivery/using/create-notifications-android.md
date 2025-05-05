@@ -68,7 +68,7 @@ ht-degree: 0%
 
 ## 建立通知訊息 {#creating-notification-message}
 
-![](assets/do-not-localize/how-to-video.png) [瞭解如何在影片中建立Android推播通知](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-and-sending-push-notifications.html#additional-resources){target="_blank"}。
+![](assets/do-not-localize/how-to-video.png) [瞭解如何在影片中建立Android推播通知](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-and-sending-push-notifications.html?lang=zh-Hant#additional-resources){target="_blank"}。
 
 1. 前往&#x200B;**[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]**。
 

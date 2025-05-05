@@ -65,7 +65,7 @@ Adobe可協助您進行這項移轉工作。 您可在下文中找到詳細的�
 1. 升級後，您仍然可以透過兩種方法建立新使用者，以原生使用者身分或透過IMS。
 1. 您的內部Campaign管理員必須設定Adobe IMS，如[本節](../../integrations/using/configuring-ims.md)所述。
 1. 然後新增唯一電子郵件至Campaign使用者端主控台上的所有原生使用者。 此步驟在[此區段](#ims-migration-id)中有詳細說明。
-1. 在Adobe Admin Console中建立使用者和產品設定檔，如[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/manage-permissions.html){target="_blank"}中所述。
+1. 在Adobe Admin Console中建立使用者和產品設定檔，如[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/manage-permissions.html?lang=zh-Hant){target="_blank"}中所述。
 1. 為所有運運算元啟用&#x200B;**與Adobe ID連線**&#x200B;選項。
 1. 實作您連線的Adobe IMS，如[此頁面](../../integrations/using/implementing-ims.md)所詳述。
 

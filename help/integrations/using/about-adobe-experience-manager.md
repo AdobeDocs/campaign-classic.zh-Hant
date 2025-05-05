@@ -32,4 +32,4 @@ Adobe Campaign與Adobe Experience Manager的整合可讓您直接在Adobe Experi
 * Adobe Experience Manager **發佈**&#x200B;執行個體。
 * Adobe Campaign執行個體。
 
-如需詳細資訊，請參閱[Adobe Experience Manager檔案](https://experienceleague.adobe.com/docs/experience-manager-65/classic-ui/campaign/classic-personalization-ac-campaign.html)
+如需詳細資訊，請參閱[Adobe Experience Manager檔案](https://experienceleague.adobe.com/docs/experience-manager-65/classic-ui/campaign/classic-personalization-ac-campaign.html?lang=zh-Hant)

@@ -203,7 +203,7 @@ ht-degree: 12%
   >
   >在[此區段](../../installation/using/deploying-an-instance.md#managing-bounced-emails)中詳細說明退回信箱的設定。
 
-  [回饋迴路](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#feedback-loops)的運作方式與退回電子郵件類似。 當使用者將電子郵件歸類為垃圾郵件時，您可以在Adobe Campaign中設定電子郵件規則，以封鎖傳送給此使用者的所有郵件。 傳送給已將電子郵件限定為垃圾訊息之使用者的訊息，會自動重新導向至為此目的特別建立的電子郵件方塊。 這些使用者的位址位於封鎖清單中，即使他們未按一下取消訂閱連結。 地址在(**NmsAddress**)隔離資料表中處於封鎖清單中，而不是在(**NmsRecipient**)收件者資料表中。
+  [回饋迴路](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=zh-Hant#feedback-loops)的運作方式與退回電子郵件類似。 當使用者將電子郵件歸類為垃圾郵件時，您可以在Adobe Campaign中設定電子郵件規則，以封鎖傳送給此使用者的所有郵件。 傳送給已將電子郵件限定為垃圾訊息之使用者的訊息，會自動重新導向至為此目的特別建立的電子郵件方塊。 這些使用者的位址位於封鎖清單中，即使他們未按一下取消訂閱連結。 地址在(**NmsAddress**)隔離資料表中處於封鎖清單中，而不是在(**NmsRecipient**)收件者資料表中。
 
   >[!NOTE]
   >

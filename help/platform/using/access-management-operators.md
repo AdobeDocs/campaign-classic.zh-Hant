@@ -29,7 +29,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->這些程式僅適用於使用原生驗證連線到Campaign的運運算元。 如需Adobe IMS驗證資訊，請參閱[此檔案](https://helpx.adobe.com/enterprise/using/manage-users-individually.html#_blank)。
+>這些程式僅適用於使用原生驗證連線到Campaign的運運算元。 如需Adobe IMS驗證資訊，請參閱[此檔案](https://helpx.adobe.com/tw/enterprise/using/manage-users-individually.html#_blank)。
 
 運運算元是有許可權登入及執行動作的Adobe Campaign使用者。
 

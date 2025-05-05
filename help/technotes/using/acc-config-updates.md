@@ -73,7 +73,7 @@ ht-degree: 8%
 
 ## AdobeIdentity Management系統(IMS)更新
 
-Adobe身分服務(IMS)將從2021年6月30日&#x200B;**起停止支援舊版Internet Explorer**。 [了解更多](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html)。
+Adobe身分服務(IMS)將從2021年6月30日&#x200B;**起停止支援舊版Internet Explorer**。 [了解更多](https://helpx.adobe.com/tw/x-productkb/global/update-operating-system-and-browser.html)。
 
 需要升級Campaign使用者端主控台，以確保與Adobe IMS相容。
 

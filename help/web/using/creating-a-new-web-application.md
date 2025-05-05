@@ -24,7 +24,7 @@ Web應用程式型別是在建立期間選取的。
 
 >[!NOTE]
 >
->一律保護可能包含個人資訊的頁面。 請參閱[安全性與隱私權檢查清單](https://helpx.adobe.com/campaign/kb/acc-security.html#privacy)。
+>一律保護可能包含個人資訊的頁面。 請參閱[安全性與隱私權檢查清單](https://helpx.adobe.com/tw/campaign/kb/acc-security.html#privacy)。
 
 此範本決定了Web應用程式的型別。 您可以建立：
 

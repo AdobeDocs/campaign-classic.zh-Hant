@@ -15,7 +15,7 @@ ht-degree: 2%
 
 >[!INFO]
 >
->在[Adobe Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/audit-trail)中進一步瞭解稽核軌跡功能。
+>在[Adobe Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/analytics/audit-trail)中進一步瞭解稽核軌跡功能。
 
 在Adobe Campaign中，**[!UICONTROL Audit trail]**&#x200B;可讓您存取執行個體中所做變更的完整歷史記錄。
 

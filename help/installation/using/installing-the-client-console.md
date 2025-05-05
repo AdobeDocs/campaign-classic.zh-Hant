@@ -42,7 +42,7 @@ Campaign使用者端主控台是豐富的使用者端，可讓您連線至您的
 
 從Campaign Classic7.3建置版本開始，任何主控台安裝都需要安裝Microsoft Edge Webview 2執行階段。
 
-Web View預設會安裝為Windows 11作業系統的一部分。 如果系統尚未安裝該程式，則Campaign Classic主控台安裝程式會提示您從[Microsoft開發人員網站](https://www.adobe.com/go/acc-ms-webview2-runtime-download)下載它。 請注意，下載連結在Internet Explorer 11瀏覽器上無法運作，因為Microsoft已停止支援。 請確定您使用不同的瀏覽器來存取連結。
+Web View預設會安裝為Windows 11作業系統的一部分。 如果系統尚未安裝該程式，則Campaign Classic主控台安裝程式會提示您從[Microsoft開發人員網站](https://www.adobe.com/go/acc-ms-webview2-runtime-download_tw)下載它。 請注意，下載連結在Internet Explorer 11瀏覽器上無法運作，因為Microsoft已停止支援。 請確定您使用不同的瀏覽器來存取連結。
 
 ## Adobe託管實作 {#hosted-customers}
 

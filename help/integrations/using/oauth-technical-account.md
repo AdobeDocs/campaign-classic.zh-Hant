@@ -30,7 +30,7 @@ Adobe已棄用服務帳戶(JWT)憑證。 Campaign與Adobe解決方案和應用�
 
 1. 存取Adobe Developer主控台，並以您組織的&#x200B;**系統管理員**&#x200B;身分登入。
 
-   如需管理員角色的詳細資訊，請參閱此[頁面](https://helpx.adobe.com/enterprise/using/admin-roles.html)。
+   如需管理員角色的詳細資訊，請參閱此[頁面](https://helpx.adobe.com/tw/enterprise/using/admin-roles.html)。
 
 1. 按一下&#x200B;**[!UICONTROL Create a new project]**。
 
@@ -48,7 +48,7 @@ Adobe已棄用服務帳戶(JWT)憑證。 Campaign與Adobe解決方案和應用�
 
 1. 選取專案的&#x200B;**[!UICONTROL Product profile]**&#x200B;連結。
 
-   您可以視需要建立新檔案。 [了解更多](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html)
+   您可以視需要建立新檔案。 [了解更多](https://helpx.adobe.com/tw/enterprise/using/manage-product-profiles.html)
 
 1. 然後，按一下&#x200B;**[!UICONTROL Save Configured API]**。
 

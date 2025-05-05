@@ -24,7 +24,7 @@ ht-degree: 68%
 透過參閱我們直觀的逐步指南，開始使用 Adobe Campaign。
 
 * [隱私權管理](https://helpx.adobe.com/tw/campaign/kb/acc-privacy.html)：探索Adobe Campaign Classic所提供的內容，以協助您在使用我們的服務時符合隱私權規範。
-* [整合電子郵件中的動態內容](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/adobe-target/inserting-a-dynamic-image.html)：探索整合 Campaign Classic 和 Target Standard 的基本做法。
+* [整合電子郵件中的動態內容](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/adobe-target/inserting-a-dynamic-image.html?lang=zh-Hant)：探索整合 Campaign Classic 和 Target Standard 的基本做法。
 * [管理傳遞機制](../../delivery/using/about-deliverability.md)：了解與傳遞相關的概念和最佳做法，以及 Adobe Campaign Classic 所提供的工具，以最佳化您的內容傳送。
 * [傳遞最佳做法](../../delivery/using/delivery-best-practices.md)：了解有關使用 Adobe Campaign Classic 的傳遞設計和傳送的最佳做法。
 * [執行組建升級](https://helpx.adobe.com/tw/campaign/kb/acc-build-upgrade.html)：本指南會顯示執行 Campaign Classic 組建升級的重要步驟和最佳做法。
@@ -52,4 +52,4 @@ ht-degree: 68%
 
 ### Experience League課程
 
-您也可以造訪Adobe Campaign Classic的[建議課程](https://experienceleague.adobe.com/#dashboard/learning)：課程是專業的課程集合，可協助您快速獲得技能和知識。
+您也可以造訪Adobe Campaign Classic的[建議課程](https://experienceleague.adobe.com/zh-hant#dashboard/learning)：課程是專業的課程集合，可協助您快速獲得技能和知識。

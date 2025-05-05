@@ -410,7 +410,7 @@ Adobe Campaign的整體組態定義於位於安裝目錄&#x200B;**conf**&#x200B;
   </tr> 
   <tr> 
    <td> maxCnx<br /> </td> 
-   <td> 拒絕新連線之前允許的最大連線數量。 檢視此<a href="https://helpx.adobe.com/campaign/kb/how-to-increase-the-maximum-number-of-database-connections-from-.html">技術說明</a>.<br /> </td> 
+   <td> 拒絕新連線之前允許的最大連線數量。 檢視此<a href="https://helpx.adobe.com/tw/campaign/kb/how-to-increase-the-maximum-number-of-database-connections-from-.html">技術說明</a>.<br /> </td> 
    <td> 短整數<br /> </td> 
   </tr> 
   <tr> 

@@ -437,7 +437,7 @@ ht-degree: 100%
 
 Campaign 用戶端主控台必須使用 Microsoft Edge WebView2 執行階段最新版本。
 
-從 [Microsoft 開發人員網站](https://www.adobe.com/go/acc-ms-webview2-runtime-download)下載 Microsoft Edge WebView2。
+從 [Microsoft 開發人員網站](https://www.adobe.com/go/acc-ms-webview2-runtime-download_tw)下載 Microsoft Edge WebView2。
 
 
 ## Mobile SDK {#MobileSDK}

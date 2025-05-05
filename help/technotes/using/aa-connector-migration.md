@@ -16,7 +16,7 @@ ht-degree: 2%
 
 # 如何將現有的Genesis整合移轉至Adobe Analytics聯結器 {#acc-aa-faq}
 
-自Campaign Classic v7 21.1.3發行版本開始，已棄用Adobe Analytics資料聯結器。 [了解更多](https://experienceleague.adobe.com/docs/analytics/import/dataconnectors/data-connectors-eol.html)
+自Campaign Classic v7 21.1.3發行版本開始，已棄用Adobe Analytics資料聯結器。 [了解更多](https://experienceleague.adobe.com/docs/analytics/import/dataconnectors/data-connectors-eol.html?lang=zh-Hant)
 
 在2021年8月1日，Adobe Campaign Classic已從舊版Data Connectors UI中移除，但在2022年8月17日之前，現有的Campaign整合將會持續收集資料並傳遞至Adobe Analytics。 在此日期之後，整合將會停止收集及傳遞資料給Adobe Analytics。
 

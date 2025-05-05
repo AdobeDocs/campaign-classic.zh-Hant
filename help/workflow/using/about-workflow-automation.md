@@ -31,11 +31,11 @@ Adobe Campaign 包括一個工作流程模組，可跨應用程式伺服器的�
 
 * [建立工作流程](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=zh-Hant){target=_blank}：瞭解如何建立和執行目標定位、行銷活動和技術工作流程。
 
-* [最佳實務](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html){target=_blank}：瞭解最佳化行銷活動工作流程效能、改善工作流程設計，以及選取正確設定的相關准則。
+* [最佳實務](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=zh-Hant){target=_blank}：瞭解最佳化行銷活動工作流程效能、改善工作流程設計，以及選取正確設定的相關准則。
 
-* [監視工作流程](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target=_blank}：瞭解如何監視工作流程執行，以確保所有專案都正常執行。
+* [監視工作流程](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=zh-Hant){target=_blank}：瞭解如何監視工作流程執行，以確保所有專案都正常執行。
 
-* [工作流程使用案例](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/workflow-use-cases.html){target=_blank}：瞭解可以使用工作流程的不同內容，以及如何透過端對端使用案例實作工作流程。
+* [工作流程使用案例](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/workflow-use-cases.html?lang=zh-Hant){target=_blank}：瞭解可以使用工作流程的不同內容，以及如何透過端對端使用案例實作工作流程。
 
 <!--
 

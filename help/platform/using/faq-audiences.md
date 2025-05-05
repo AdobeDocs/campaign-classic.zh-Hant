@@ -28,7 +28,7 @@ ht-degree: 98%
 
 探索在您的資料庫中輕鬆[匯入輪廓](../../platform/using/import-operations-samples.md)的使用案例。
 
-![](assets/do-not-localize/how-to-video.png) [在影片中探索此功能](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/profile-management/importing-profiles.html)
+![](assets/do-not-localize/how-to-video.png) [在影片中探索此功能](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/profile-management/importing-profiles.html?lang=zh-Hant)
 
 ## 如何定義行銷宣傳活動的目標母體？ {#how-can-i-define-the-target-population-of-a-marketing-campaign-}
 
@@ -41,7 +41,7 @@ ht-degree: 98%
 
 [按一下這裡以了解更多資訊](../../platform/using/creating-and-managing-lists.md#creating-a-profile-list-from-a-group)。
 
-![](assets/do-not-localize/how-to-video.png)探索此功能[於此影片中](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients-with-a-workflow.html)和[其他影片中](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients.html)
+![](assets/do-not-localize/how-to-video.png)探索此功能[於此影片中](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients-with-a-workflow.html?lang=zh-Hant)和[其他影片中](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients.html?lang=zh-Hant)
 
 ## 如何在傳送訊息前排除重複的母體？ {#how-can-i-deduplicate-a-population-before-sending-a-message-}
 

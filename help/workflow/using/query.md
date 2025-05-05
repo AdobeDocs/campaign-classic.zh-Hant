@@ -190,7 +190,7 @@ ht-degree: 0%
 
   ![](assets/do-not-localize/v7.jpeg) [Campaign v7檔案](../../configuration/using/database-mapping.md)
 
-  ![](assets/do-not-localize/v8.png) [Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/shemas-forms/database-mapping.html)
+  ![](assets/do-not-localize/v8.png) [Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/shemas-forms/database-mapping.html?lang=zh-Hant)
 
 ### 函數 {#functions}
 

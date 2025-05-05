@@ -60,7 +60,7 @@ ht-degree: 2%
 </tr>
 <tr>
 <td>檢查安全性區域的一般設定。</td>
-<td>如需設定安全性區域的詳細資訊，請參閱<a href="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configuring-campaign-server.html#configuring-campaign-server"/>本節。</a></td>
+<td>如需設定安全性區域的詳細資訊，請參閱<a href="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configuring-campaign-server.html?lang=zh-Hant#configuring-campaign-server"/>本節。</a></td>
 </tr>
 <tr>
 <td>命令nlserver pdump傳回<b>沒有工作</b></td>
