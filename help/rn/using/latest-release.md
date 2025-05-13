@@ -6,10 +6,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 458821770c6233ec1893d4efe60169516b311bdd
+source-git-commit: be7412f2ccf050a44eb32ebe8280c695349faac8
 workflow-type: tm+mt
-source-wordcount: '865'
-ht-degree: 26%
+source-wordcount: '903'
+ht-degree: 25%
 
 ---
 
@@ -17,7 +17,20 @@ ht-degree: 26%
 
 本頁面列出&#x200B;**最新 Campaign Classic v7 版本**&#x200B;的新功能、改善和修正。每個新版本都會提供以顏色具體化的狀態。 請於[本頁](rn-overview.md)進一步了解 Campaign Classic v7 版本編號狀態。
 
-## 版本 7.4.2 - 版本編號 9390 {#release-7-4-2}
+## 發行版本 7.4.2  {#release-7-4-2}
+
+### 建置9391 {#build-9391}
+
+[!BADGE 有限可用性]{type=Informative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="有限可用性"}
+
+_2025年5月12日_
+
+此版本編號包含以下修正：
+
+* 修正了在非Oracle設定中遇到的升級後問題。 (NEO-87012)
+* 修正同時影響使用者端主控台和伺服器的TLS / HTTPS後端問題。 (NEO-87432)
+
+### 建置9390 {#build-9390}
 
 [!BADGE 一般可用性]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="一般可用性"}
 
@@ -33,13 +46,13 @@ This release comes with the following compatibility updates:
 
 -->
 
-### 安全性改善 {#security-7-4-2}
+**安全性改善**
 
 此版本附帶幾個安全修正。
 
 透過 **[!UICONTROL Adobe Experience Cloud]** 外部帳戶與 Adobe 解決方案和應用程式的連線已更新，以加強安全性。
 
-### 主要修正 {#release-7-4-2-fixes}
+**主要修正**
 
 此版本包含下列主要修正：
 
@@ -58,7 +71,7 @@ This release comes with the following compatibility updates:
 * 郵件傳輸代理程式 (MTA) — 已修正孤立 MTA 子代理卡在 **[!UICONTROL Start pending]** 狀態的問題。
 
 
-### 其他修正 {#release-7-4-2-other-fixes}
+**其他修正**
 
 此版本還修正下列問題：
 
