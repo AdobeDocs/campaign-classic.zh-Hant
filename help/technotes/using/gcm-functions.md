@@ -3,14 +3,15 @@ product: campaign
 title: 新的GCM型函式
 description: 新的GCM型函式
 feature: Technote
-source-git-commit: b8a6a0db27826309456c285c08d4f1d85de70283
+exl-id: 154dee7a-a1e9-40a2-bfa5-3641382d0574
+source-git-commit: b6d64f66d287dba79be5eddec48ee852c2c7740c
 workflow-type: tm+mt
 source-wordcount: '578'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-# 以GCM為基礎的函式 {#new-functions}
+# 以 GCM 為基礎的函式 {#new-functions}
 
 為了改善安全性，我們不再將AES （進階加密標準）演演算法與CBC （密碼區塊鏈結）模式搭配用於密碼編譯操作。 已引入新的加密功能。 這些函式會將AES與Galois/Counter Mode (AES-GCM)搭配使用，提供更安全的替代方案。 這些函式可在JavaScript、JSP、SOAP API和XML結構描述中使用，可讓客戶從CBC轉換到GCM進行加密和解密。
 
@@ -37,7 +38,7 @@ ht-degree: 1%
 
 ```
             String 
-            encrypted = Encrypt (
+            encrypted = EncryptString (
             String       
             decrypted
             
@@ -85,7 +86,7 @@ ht-degree: 1%
 使用例項的鍵或任何其他鍵加密字元字串。
 
 ```
-            cryptString (str [, key
+            encryptString (str [, key
       ] [, useSalt ])
          
 ```
@@ -126,7 +127,7 @@ ht-degree: 1%
 
 ### decryptString() {#decryptString-javascript}
 
-使用例項的鍵或任何其他鍵加密字元字串。 此舊版函式可搭配GCM使用。 不建議使用AES-CBC模式加密的加密文字解密。
+使用例項的鍵或任何其他鍵解密字元字串。 此舊版函式可搭配GCM使用。 不建議使用AES-CBC模式加密的加密文字解密。
 
 ```
             decryptString (str [, key
@@ -161,7 +162,7 @@ ht-degree: 1%
 
 **備註**
 
-無法在工作流程、網頁應用程式、報表或傳遞中呼叫此函式。 可在JSSP或SOAP呼叫實作中呼叫它。 例如：
+無法在工作流程、網頁應用程式、報表或傳遞中呼叫此函式。 可在JSSP或SOAP呼叫實作中呼叫它。 範例：
 
 ```
         function nms_extAccount_LogonToRemoteInstance(remoteInstanceUrl, login, encryptedPassword) {
