@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
 source-git-commit: 84e6b2fad97f0ca5d6621cff4648e0be0bef7521
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1652'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -46,7 +46,7 @@ Adobe 持續評估產品功能，尋找應以更現代的替代方式來取代�
   <tr>
  <td>Campaign (Neolane) 舊版 SDK</td>
  <td><p>適用於行動應用程式的 Campaign (Neolane) SDK 現已棄用。請改為在資料彙集 UI 設定 Adobe Campaign 擴充功能，以便使用 Adobe Experience Platform Mobile SDK。Adobe Experience Platform Mobile SDK 有助於在行動應用程式中，強化 Adobe Experience Cloud 解決方案與服務。 SDK 設定可透過資料彙集 UI 來管理，提供靈活的設定與可擴充的規則式整合。 若要了解如何設定行動應用程式管道，請參閱 <a href="https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/push/push-settings">Campaign v8 文件</a>。</p>
-<p>Target移除日期：2025 年 7 月 31 日 </p>
+<p>目標移除日期：2025 年 7 月 31 日 </p>
 </td>
 </tr>
 <tr>
@@ -83,7 +83,7 @@ Adobe 持續評估產品功能，尋找應以更現代的替代方式來取代�
     <tr>
   <td>技術傳遞能力監視報告<br></td>
    <td><p>不再提供「技術傳遞能力監視報告」。 已在 Campaign 21.1.3 版中棄用。</p>
-   <!--p>If needed, you can receive this report daily by email until the feature removal date. To request it, open a specific <a href="https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">Support Case</a> and specify the name of the instance and the email address(es) to send the report to.</p--> 
+   <!--p>If needed, you can receive this report daily by email until the feature removal date. To request it, open a specific <a href="https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">Support Case</a> and specify the name of the instance and the email address(es) to send the report to.</p--> 
   </td>
  </tr>
   <tr>
@@ -137,7 +137,7 @@ Adobe 持續評估產品功能，尋找應以更現代的替代方式來取代�
   <tr> 
    <td>decryptString API</td>
    <td><p>出於安全原因，自 Campaign 18.6 發行版本起，新的安裝已不再預設提供 <em>decryptString</em> API。</p> 
-   <p>在 18.6 版本升級後（及更新版本）的設定檔，不再啟用此 API，並已由 <em>decryptPassword</em> 函式取代。<a href="https://experienceleague.adobe.com/developer/campaign-api/api/f-decryptPassword.html?lang=zh-Hant&hl=decrypt">瞭解更多</a></p></td>
+   <p>在 18.6 版本升級後（及更新版本）的設定檔，不再啟用此 API，並已由 <em>decryptPassword</em> 函式取代。<a href="https://experienceleague.adobe.com/developer/campaign-api/api/f-decryptPassword.html?hl=decrypt">瞭解更多</a></p></td>
   </tr> 
    <tr> 
    <td>行動裝置頻道 - MMS 和 WAP 推播訊息</td>
@@ -200,7 +200,7 @@ Adobe Campaign Classic 用戶端主控台無法在下列系統執行，因為編
 自 19.1 春季發行版本開始，Adobe Campaign 不再與下列工具相容。
 
 * Java JDK 7。[瞭解更多](https://www.oracle.com/technetwork/java/javase/eol-135779.html)
-* Libre Office 3.5 / 4.3 / 5.x，但內嵌於其他工具則除外。[深入瞭解](https://wiki.documentfoundation.org/ReleasePlan/Archive#End-of-Life_Releases)
+* Libre Office 3.5 / 4.3 / 5.x，但嵌入於其他工具則除外。[深入瞭解](https://wiki.documentfoundation.org/ReleasePlan/Archive#End-of-Life_Releases)
 
 ### 資料庫引擎 {#dbe-eol}
 
