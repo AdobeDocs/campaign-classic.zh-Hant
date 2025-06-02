@@ -8,10 +8,10 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 266ecd49-7101-4ff1-941f-1f9b39b44955
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 4fb262c616276f785f97b42bec22c150afc6e5c8
 workflow-type: tm+mt
-source-wordcount: '269'
-ht-degree: 23%
+source-wordcount: '87'
+ht-degree: 25%
 
 ---
 
@@ -23,21 +23,27 @@ ht-degree: 23%
 
 工作流程可能是自動化部分匯入流程的實用方式。 無論是從本地檔案還是從 SFTP 匯入資料，都可以使用工作流程來標準化資料管理過程。
 
-### 使用清單中的資料：讀取清單 {#using-data-from-a-list--read-list}
+>[!NOTE]
+>
+>若要進一步瞭解使用工作流程匯入和匯出資料，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/add-profiles/import-profiles){target=_blank}。
 
-在工作流程中傳送的資料可來自已預先準備資料並將其建構的清單。
 
-此清單可能直接在Adobe Campaign中建立或由&#x200B;**[!UICONTROL Import a list]**&#x200B;選項匯入。 如需此選項的詳細資訊，請參閱此[頁面](../../platform/using/about-generic-imports-exports.md)。
+<!--
+### Use data from a list: Read list {#using-data-from-a-list--read-list}
 
-如需在工作流程中使用讀取清單活動的詳細資訊，請參閱[此頁面](../../workflow/using/read-list.md)。
+The data sent in a workflow can come from lists whereby the data has been prepared and structured beforehand.
 
-### 從檔案載入資料 {#loading-data-from-a-file}
+This list may have been directly created in Adobe Campaign or imported by the **[!UICONTROL Import a list]** option. For more on this option, refer to this [page](../../platform/using/about-generic-imports-exports.md).
 
-工作流程中處理的資料可從結構化檔案中擷取，以便匯入Adobe Campaign中。
+For more on using the read list activity in a workflow, refer to [this page](../../workflow/using/read-list.md).
 
-載入資料活動的說明可在[資料載入（檔案）](../../workflow/using/data-loading-file.md)區段中找到。
+### Load data from a file {#loading-data-from-a-file}
 
-要匯入的結構化檔案範例：
+The data processed in a workflow can be extracted from a structured file so that it can be imported into Adobe Campaign.
+
+A description of the loading data activity can be found in the [Data loading (file)](../../workflow/using/data-loading-file.md) section.
+
+Example of structured file to import:
 
 ```
 lastname;firstname;birthdate;email;crmID
@@ -47,10 +53,11 @@ Smith;Clara;08/02/1989;hayden.smith@example.com;124567
 Durance;Allison;15/12/1978;allison.durance@example.com;120987
 ```
 
-收集到資料後，您便可以在工作流程中使用資料，例如擴充傳遞或更新資料庫。 如需詳細資訊，請參閱[此頁面](../../workflow/using/how-to-use-workflow-data.md)。
+Once data has been collected you can use it in your workflows, for example to enrich a delivery or update the database. For more on this, refer to [this page](../../workflow/using/how-to-use-workflow-data.md).
 
-## 匯出資料 {#exporting-data-via-a-workflow}
+## Export data {#exporting-data-via-a-workflow}
 
-在使用可用於轉換資料的一些可用資料管理活動之後，可以使用工作流程來自動執行某些匯出過程或匯出精確資料集。
+Workflows can be a useful way to automate some of your export processes or to export precise sets of data after using some of the available data management activities available to transform your data.
 
-使用&#x200B;**[!UICONTROL Data extraction (file) activity]**&#x200B;執行匯出作業。 有關如何設定及使用活動的詳細資訊，請參閱[此頁面](../../workflow/using/extraction-file.md)。
+Export operations are performed using a **[!UICONTROL Data extraction (file) activity]**. For more on how to configure and use the activity, refer to [this page](../../workflow/using/extraction-file.md).
+-->
