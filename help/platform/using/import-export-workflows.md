@@ -25,7 +25,7 @@ ht-degree: 25%
 
 >[!NOTE]
 >
->若要進一步瞭解使用工作流程匯入和匯出資料，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/add-profiles/import-profiles){target=_blank}。
+>若要進一步瞭解使用工作流程匯入和匯出資料，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/audience/add-profiles/import-profiles){target=_blank}。
 
 
 <!--
