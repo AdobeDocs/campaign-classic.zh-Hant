@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 4d9c5b24-83a2-4495-a56c-5bc376d69703
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
-source-wordcount: '501'
-ht-degree: 30%
+source-wordcount: '77'
+ht-degree: 11%
 
 ---
 
@@ -24,86 +24,93 @@ Campaign使用者端主控台是豐富的使用者端，可讓您連線至您的
 >
 >在[相容性矩陣](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems)中檢查您的系統和工具與Adobe Campaign使用者端主控台的相容性
 
-## 啟動Adobe Campaign {#starting-adobe-campaign}
+>[!NOTE]
+>
+> 若要瞭解如何安裝並登入Adobe Campaign，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/connect){target=_blank}的詳細逐步說明。
 
-您可以選取&#x200B;**[!UICONTROL Start / All Programs / Adobe Campaign v.X / Adobe Campaign client console]**&#x200B;以啟動Adobe Campaign。
+<!--
+## Start Adobe Campaign {#starting-adobe-campaign}
 
-使用用戶端主控台連線視窗，您可以選取或設定現有資料庫，並使用使用者名稱和密碼進行連線：
+You can start Adobe Campaign by selecting **[!UICONTROL Start / All Programs / Adobe Campaign v.X / Adobe Campaign client console]**.
+
+The client console connection window lets you select or configure existing databases and connect to them using a user name and password:
 
 ![](assets/acc-logon.png)
 
-## 連線至 Adobe Campaign {#connecting-to-adobe-campaign}
+## Connect to Adobe Campaign {#connecting-to-adobe-campaign}
 
-您可以使用您的Adobe ID連線至Adobe Campaign。 如需詳細資訊，請參閱[此頁面](../../integrations/using/about-adobe-id.md)。
+You can connect to Adobe Campaign using your Adobe ID. For more on this, refer to [this page](../../integrations/using/about-adobe-id.md).
 
-您也可以使用專用登入名/密碼進行連線：
+You can also connect with a dedicated login/password:
 
-1. 在&#x200B;**[!UICONTROL Login]**&#x200B;欄位中輸入運運算元帳戶識別碼。
+1. Enter the operator account identifier in the **[!UICONTROL Login]** field.
 
-   您的識別碼由 Adobe Campaign 平台管理員提供。
+   Your identifier is given by the administrator of your Adobe Campaign platform.
 
-1. 在&#x200B;**[!UICONTROL Password]**&#x200B;欄位中輸入您的密碼。
+1. Enter your password in the **[!UICONTROL Password]** field.
 
-   第一次存取資料庫時，您的密碼就是管理員提供給您的密碼。 連線之後，您可以透過&#x200B;**[!UICONTROL Tools > Change password...]**&#x200B;功能表變更您的密碼。 在[存取管理](../../platform/using/access-management.md)中可以取得運運算元和連線的詳細資料。
+   The first time you access the database, your password is the one given to you by the administrator. Once you are connected, you can change your password via the **[!UICONTROL Tools > Change password...]** menu. Details on operators and connections are available in [Access management](../../platform/using/access-management.md).
 
-1. 按一下&#x200B;**[!UICONTROL LOG IN]**&#x200B;確認。<!--You can also press the **Enter** key to launch connection.-->
+1. Click **[!UICONTROL LOG IN]** to confirm.<!--You can also press the **Enter** key to launch connection.
 
-您現在可以存取 [Adobe Campaign 工作區](../../platform/using/adobe-campaign-workspace.md)。
+You can now access [Adobe Campaign workspace](../../platform/using/adobe-campaign-workspace.md).
 
-**[!UICONTROL Sign in screen]**&#x200B;上有一些鍵盤快速鍵可供使用：
-* 所有可操作的專案都可以透過&#x200B;**Tab**&#x200B;鍵（由上至下）或&#x200B;**Tab** + **Shift**&#x200B;鍵（由下至上）選取。
-* 若要啟動連線，您也可以按下&#x200B;**Enter**&#x200B;鍵。
-* 您可以使用&#x200B;**Escape**&#x200B;鍵將&#x200B;**[!UICONTROL Login]**&#x200B;和&#x200B;**[!UICONTROL Password]**&#x200B;欄位重設為上次成功的連線值。
+Some keyboard shortcuts are available on the **[!UICONTROL Sign in screen]**:
+* All actionable items are selectable through the **Tab** key (top to bottom) or the **Tab** + **Shift** keys (bottom to top).
+* To launch connection, you can also press the **Enter** key.
+* You can use the **Escape** key to reset the **[!UICONTROL Login]** and **[!UICONTROL Password]** fields to the last successful connection values.
 
-## 設定連線 {#setting-up-connections}
+## Set up connections {#setting-up-connections}
 
-您可以透過輸入區域上方的連結存取伺服器連線設定。
+You can access the server connection settings via the link above the input zone.
 
 ![](assets/s_ncs_user_connections_management.png)
 
-在&#x200B;**[!UICONTROL Connections]**&#x200B;視窗中，按一下&#x200B;**[!UICONTROL Add > Connection]**。
+In the **[!UICONTROL Connections]** window, click **[!UICONTROL Add > Connection]**.
 
-之後，您必須定義連線設定。 操作步驟：
+You must then define the connection settings. To do this:
 
-1. 輸入&#x200B;**[!UICONTROL Label]**&#x200B;以指派名稱給您的資料庫連線。
+1. Enter a **[!UICONTROL Label]** to assign a name to your database connection.
 
-1. 在&#x200B;**[!UICONTROL URL]**&#x200B;欄位中新增應用程式伺服器的位址。 如果您不知道連線 URL，請連絡管理員。
+1. Add the address of the application server in the **[!UICONTROL URL]** field. If you do not know the connection URL, contact the administrator.
 
-1. 檢查&#x200B;**[!UICONTROL Connect with an Adobe ID]**，讓操作員使用其Adobe ID連線到主控台。 如需詳細資訊，請參閱[此頁面](../../integrations/using/about-adobe-id.md)。
+1. Check **[!UICONTROL Connect with an Adobe ID]** for the operators to connect to the console using their Adobe ID. For more on this, refer to [this page](../../integrations/using/about-adobe-id.md).
 
-1. 按一下&#x200B;**[!UICONTROL OK]**&#x200B;進行驗證。
+1. Click **[!UICONTROL OK]** to validate.
 
-## 操作者和許可 {#operators-and-permissions}
+## Operators and permissions {#operators-and-permissions}
 
-可存取軟體之操作員的識別碼和密碼及其個別許可權是由您的Adobe Campaign系統管理員在Adobe Campaign樹狀結構的&#x200B;**[!UICONTROL Administration > Access management > Operators]**&#x200B;節點中定義。
+The identifiers and passwords of operators with access to the software and their respective permissions are defined by your Adobe Campaign system administrator in the **[!UICONTROL Administration > Access management > Operators]** node of the Adobe Campaign tree.
 
-此功能在[存取管理](../../platform/using/access-management.md)區段中詳細說明。
+This functionality is detailed in the [Access management](../../platform/using/access-management.md) section.
 
-## 中斷與Adobe Campaign的連線 {#disconnecting-from-adobe-campaign}
+## Disconnect from Adobe Campaign {#disconnecting-from-adobe-campaign}
 
-若要中斷 Adobe Campaign 的連線，請使用圖示列的第一個圖示。
+To disconnect from Adobe Campaign, use the first icon in the icon bar.
 
 ![](assets/s_ncs_user_deconnexion.png)
 
 >[!NOTE]
 >
->您也可以不先登出，而直接關閉應用程式。
+>You can also close the application without logging off first.
 
-## 取得您的Adobe Campaign版本 {#getting-your-campaign-version}
+## Get your Adobe Campaign version {#getting-your-campaign-version}
 
-**[!UICONTROL Help > About...]**&#x200B;功能表可讓您存取下列資訊：
+The **[!UICONTROL Help > About...]** menu lets you access the following information:
 
-* Campaign使用者端主控台和應用程式伺服器的&#x200B;**版本**&#x200B;編號
-* Campaign使用者端主控台與應用程式伺服器的&#x200B;**組建**&#x200B;編號
-* 聯絡 Adobe 客戶服務的連結
-* 連結至 Adobe 隱私權政策、使用條款與 Cookie 政策
+* **version** number for Campaign client console and application server
+* **build** number for Campaign client console and application server
+* a link to contact Adobe Customer Care
+* links to Adobe Privacy Policy, Terms of Use and Cookies Policy
 
 ![](assets/about-acc.png)
 
-每當您聯絡Adobe客戶服務團隊時，都必須提供Adobe Campaign使用者端主控台和應用程式伺服器的版本號碼和組建號碼。
+Whenever you reach out to Adobe Customer Care team, you need to provide the version number and build number of your Adobe Campaign client console and application server.
 
-**相關主題**：
+**Related topics**:
 
-* [Adobe Campaign說明與支援選項](../../support.md)
-* [Adobe Campaign軟體發佈](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
-* [Adobe Experience Cloud支援和專家工作階段](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
+* [Adobe Campaign Help and Support options](../../support.md)
+* [Adobe Campaign Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
+* [Adobe Experience Cloud Support and Expert sessions](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
+
+-->

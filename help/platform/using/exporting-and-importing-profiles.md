@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 exl-id: fd0f7b6e-84e1-442d-ae88-817fb6758d64
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
-source-wordcount: '140'
-ht-degree: 36%
+source-wordcount: '54'
+ht-degree: 31%
 
 ---
 
@@ -22,23 +22,31 @@ ht-degree: 36%
 
 ![](assets/do-not-localize/how-to-video.png) [在影片中探索此功能](#import-profiles-video)
 
-## 使用工作流程{#use-workflows}
+>[!NOTE]
+>
+>若要瞭解如何匯入和匯出設定檔，請參閱Campaign v8檔案。
 
-匯出和匯入是在專用範本中設定的，專用範本則是在工作流程透過匯入和匯出活動執行。 它們可以根據排程自動重複，例如多個資訊系統之間的自動化資料交換。[了解更多](../../platform/using/import-export-workflows.md#best-practices-when-importing-data)
 
-如有需要，您可以透過下述的&#x200B;**[!UICONTROL Generic imports and exports]**&#x200B;功能建立偶爾匯入或匯出工作。
+<!--
 
-## 建立工作{#create-jobs}
+## Use workflows{#use-workflows}
 
-若要設定並執行資料匯入和匯出作業，請移至&#x200B;**[!UICONTROL Profiles and targets]**&#x200B;標籤，然後按一下&#x200B;**[!UICONTROL Jobs]**&#x200B;連結。 [了解更多](../../platform/using/about-generic-imports-exports.md)
+Exports and imports are configured in dedicated templates executed through workflows via import and export activities. They can be repeated automatically according to a schedule, for example to automate data exchange between several information systems. [Learn more](../../platform/using/import-export-workflows.md#best-practices-when-importing-data)
+
+If necessary, you can create an occasional import or export job via the **[!UICONTROL Generic imports and exports]** feature described below.
+
+## Create jobs{#create-jobs}
+
+To configure and execute data imports and exports jobs, go to the **[!UICONTROL Profiles and targets]** tab and click the **[!UICONTROL Jobs]** link. [Learn more](../../platform/using/about-generic-imports-exports.md)
 
 ![](assets/s_ncs_user_interface_import_link.png)
 
 
-## 教學課程影片 {#import-profiles-video}
+## Tutorial video {#import-profiles-video}
 
-此影片說明如何在Adobe Campaign中匯入設定檔，以偶爾匯入。
+This video explains how to import profiles in Adobe Campaign, for an occasional import.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25608?quality=12)
 
-其他 Campaign Classic 作法影片可在[此處](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant)取得。
+Additional Campaign Classic how-to videos are available [here](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
+-->

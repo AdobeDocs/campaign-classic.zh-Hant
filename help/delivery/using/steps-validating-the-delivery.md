@@ -4,17 +4,19 @@ title: 驗證傳遞
 description: 瞭解如何驗證傳遞
 feature: Deliverability, Email Rendering, Proofs
 role: User
+hide: true
+hidefromtoc: true
 exl-id: c2f4d8d0-f0fe-4d1a-92fd-91edaf9729f3
-source-git-commit: 41296a0acaee93d31874bf58287e51085c6c1261
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
 source-wordcount: '1653'
-ht-degree: 8%
+ht-degree: 10%
 
 ---
 
 # 驗證傳遞 {#validating-the-delivery}
 
-建立並設定傳送後，您必須先驗證傳送內容，才能將其傳送至主要目標。
+建立並設定傳遞後，您必須先驗證傳遞內容，才能將其傳送至主要目標。
 
 操作步驟：
 
@@ -125,9 +127,9 @@ ht-degree: 8%
 >
 >若要確保較大的傳遞分析不會減慢工作流程的進度，您可以按一下&#x200B;**[!UICONTROL Schedule execution for a time of low activity]**&#x200B;以排程其執行。
 
-## 傳送證明 {#sending-a-proof}
+## 傳送校樣 {#sending-a-proof}
 
-若要檢測訊息設定中可能出現的錯誤，Adobe 強烈建議您配置傳遞驗證階段。要經常性地透過傳送驗證訊息測試收件者，確保核准內容。每次進行變更時都必須傳送驗證訊息，以核准內容。
+為了偵測訊息設定中可能出現的錯誤，Adobe強烈建議您設定傳遞驗證週期。 透過傳送校樣給測試收件人，以確保內容在必要時經常獲得核准。每次進行變更時，都應發送校樣，以核准內容。
 
 >[!NOTE]
 >

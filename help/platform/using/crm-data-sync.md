@@ -4,7 +4,9 @@ title: CRM Connectors資料同步
 description: 管理Campaign與您的CRM之間的資料
 feature: Microsoft CRM Integration, Salesforce Integration
 exl-id: 7f9eda15-76e8-40a1-8302-004cea085778
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+hide: true
+hidefromtoc: true
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
 source-wordcount: '1529'
 ht-degree: 1%

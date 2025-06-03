@@ -8,10 +8,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: d2451b62-bddf-4dee-8789-35aaae8348e1
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
-source-wordcount: '1907'
-ht-degree: 95%
+source-wordcount: '143'
+ht-degree: 80%
 
 ---
 
@@ -28,153 +28,160 @@ Adobe Campaign 是一款強大的工具，用於收集和處理包括個人資�
 
 請詳閱[安全性和隱私權檢查清單](../../installation/using/get-started-security-privacy.md)，以瞭解有關安全性和隱私權需要檢查的核心元素。
 
-### 隱私權法規 {#privacy-regulations}
+>[!NOTE]
+>
+>若要進一步瞭解Adobe Campaign的隱私權與安全法規，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/privacy/security){target=_blank}。
 
-為正確處理隱私權並管理個人資料，工作時請遵循您營運業務所在地區的適用法規。Adobe Campaign的功能可協助您遵守[此頁面](../../platform/using/privacy-management.md#privacy-management-regulations)所列的規定。
 
-### Adobe Experience Cloud 隱私權 {#experience-cloud-privacy}
+<!--
+### Privacy regulations {#privacy-regulations}
 
-Adobe Campaign 是 Adobe Experience Cloud 解決方案的一部分。在 Campaign 中處理隱私權的方式會依循 Experience Cloud 的一般原則，例如：
+To correctly handle privacy and manage personal data, work within the legislations applicable to the region(s) where you operate. Adobe Campaign's capabilities help you comply with the regulations listed in [this page](../../platform/using/privacy-management.md#privacy-management-regulations).
 
-* **使用 Adobe Experience Cloud 時會收集哪些資訊**
+### Adobe Experience Cloud privacy {#experience-cloud-privacy}
 
-  身為使用 Adobe Experience Cloud 解決方案的公司，您可以選擇要收集哪些資訊並傳送至您的 Adobe Experience Cloud 帳戶。可收集的資訊類型範例包含網頁瀏覽活動、IP 位址、行動裝置的位置資訊、促銷活動成功率、購買或放入購物車的項目等。
+Adobe Campaign is part of the Adobe Experience Cloud solutions. The way privacy is handled in Campaign obeys the Experience Cloud general principles, such as the following:
 
-  >[!NOTE]
-  >
-  >而對於所有 Adobe 產品，Campaign 會收集應用程式和網站使用者的相關資訊。如需此項目的詳細資訊，請參閱 [Adobe 隱私權政策](https://www.adobe.com/tw/privacy/policy.html)。
+* **What information is collected when using Adobe Experience Cloud**
 
-* **如何使用 Adobe Experience Cloud 收集資訊**
+    As a company using Adobe Experience Cloud solutions, you choose what information to collect and send to your Adobe Experience Cloud account. Examples of the types of information that may be collected include web browsing activity, IP addresses, location information from mobile devices, campaign success rates, items purchased or placed in shopping cart, etc.
 
-   * Adobe Experience Cloud 解決方案會使用 Cookie 和類似技術（例如網站信標，又稱為標籤或像素），讓您收集資訊。如需 Adobe Campaign Cookie 和追蹤功能的詳細資訊，請參閱[本節](#tracking-capabilities)。
-   * 您也可以在行動應用程式中使用 Adobe Experience Cloud 技術。如需使用 Campaign 傳送行動傳遞能力的詳細資訊，請參閱 [簡訊頻道](../../delivery/using/sms-channel.md)和[行動應用程式頻道](../../delivery/using/about-mobile-app-channel.md)。
+    >[!NOTE]
+    >
+    >As for all Adobe products, Campaign collects information about app and website users. For more on this, see the [Adobe Privacy Policy](https://www.adobe.com/privacy/policy.html).
 
-* **使用者對於您使用 Adobe Experience Cloud 的隱私權選擇**
+* **How Adobe Experience Cloud is used to collect information**
 
-  Adobe 要求您提供客戶的隱私權政策，以說明：
+    * Adobe Experience Cloud solutions use cookies and similar technologies, such as web beacons (also known as tags or pixels), to enable you to collect information. For more on cookies and tracking capabilities with Adobe Campaign, see [this section](#tracking-capabilities).
+    * You may also use Adobe Experience Cloud technologies within your mobile apps. For more on sending mobile deliveries with Campaign, see [SMS channel](../../delivery/using/sms-channel.md) and [Mobile app channel](../../delivery/using/about-mobile-app-channel.md).
 
-   * 您與 Adobe Experience Cloud 相關聯的隱私權實務
-   * 使用者如何針對 Adobe Experience Cloud 收集或使用其資訊進行偏好設定
+* **You users' privacy choices about your use of Adobe Experience Cloud**
 
-  >[!NOTE]
-  >
-  >而對於所有 Adobe 產品，Campaign 使用者可以透過應用程式和網站，選擇退出分享收集關於他們的資訊。如需此項目的詳細資訊，請參閱 [Adobe Experience Cloud 使用資訊常見問答](https://www.adobe.com/tw/privacy/experience-cloud-usage-info-faq.html)。
+    Adobe asks you to provide your customers privacy policies describing:
 
-如需 Adobe Experience Cloud 隱私權的後續詳細資料，請參閱[本頁](https://www.adobe.com/tw/privacy/marketing-cloud.html)。
+    * Your privacy practices in connection with Adobe Experience Cloud
+    * How users can set their preferences for the collection or use of their information in connection with Adobe Experience Cloud
 
-## 個人資料與角色 {#personal-data}
+    >[!NOTE]
+    >
+    >As for all Adobe products, Campaign users can opt-out sharing information collected about them through apps and websites. For more on this, see the [Adobe Experience Cloud Usage Information FAQ](https://www.adobe.com/privacy/experience-cloud-usage-info-faq.html).
 
-在管理隱私權時，請務必定義哪些資料應謹慎處理，以及由哪些人員處理。
-* **個人資料**&#x200B;是指可直接或間接識別在世個人的資訊。
-* **敏感個人資料**&#x200B;是指與個人的種族、政治觀點、宗教信仰、犯罪背景、遺傳資訊、健康資料、性傾向、生物識別資訊，以及工會會員會籍相關的資訊。
+For further details on the Adobe Experience Cloud privacy, see [this page](https://www.adobe.com/privacy/marketing-cloud.html).
 
-將Campaign與其他Experience Cloud解決方案整合時，如果閱聽眾可以從一個系統傳輸到另一個系統，例如[Adobe Analytics](../../integrations/using/gs-aa.md)、[Experience Cloud閱聽眾](../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md)、[Campaign Standard](../../integrations/using/synchronizing-audiences.md)，或是其他解決方案，如[CRM聯結器](../../platform/using/crm-connectors.md)，您需要支付額外的個人護理費用來保護資料。
+## Personal Data and Personas {#personal-data}
 
-[主要法規](#privacy-regulations)是指管理資料之不同實體，如下所示：
+When managing Privacy, it is important to define what data should be handled with care and by whom.
+* **Personal Data** is information that can directly or indirectly identify a living individual.
+* **Sensitive Personal Data** is information related to an individual's race, political views, religious beliefs, criminal background, genetic information, health data, sexual preference, biometric information, as well as trade union membership.
 
-* **資料控制方**&#x200B;是決定收集、使用及分享個人資料之方式與目的的當局機關。
+When integrating Campaign with other Experience Cloud solutions where audiences can be transferred from one system to another, such as [Adobe Analytics](../../integrations/using/gs-aa.md), [Experience Cloud Audiences](../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md), [Campaign Standard](../../integrations/using/synchronizing-audiences.md), or with other solutions through [CRM Connectors](../../platform/using/crm-connectors.md), you need to pay extra care to personal data protection.
 
-* **資料處理方**&#x200B;是指依據資料控制方的指示收集、使用或分享個人資料的任何個人或一方。
+The [main regulations](#privacy-regulations) refer to the different entities that manage data as follows:
 
-* **資料主體**&#x200B;是指正在收集、使用或分享個人資料的任何在世個人，以及可參照該個人資料直接或間接識別的在世個人。
+* A **Data Controller** is the authority that determines the means and purpose of collecting, using, and sharing personal data.
 
-因此，身為收集和分享個人資料的公司，您是資料控制方、客戶是資料主體，而 Adobe Campaign 在依您的指示處理個人資料時，會作為資料處理方。請注意，身為資料控制方，您有責任處理與資料主體的關係，例如管理[隱私權要求](#privacy-requests)。
+* A **Data Processor** is any individual or party that collects, uses, or shares personal data as directed by the Data Controller.
 
-### 使用實例情境 {#use-case-scenario}
+* A **Data Subject** is any living individual whose personal data is being collected, used or shared, and who can be identified, directly or indirectly, by reference to that personal data.
 
-為了說明不同角色如何互動，以下是 GDPR 客戶體驗的高階使用案例。
+Therefore, as a company collecting and sharing personal data, you are the Data Controller, your clients are the Data Subjects and Adobe Campaign acts as a Data Processor when handling their personal data as directed by you. Note that it is your responsibility as a Data Controller to handle the relationship with the Data Subjects such as when managing [privacy requests](#privacy-requests).
 
-在此範例中，航空公司是 Adobe Campaign 客戶。該公司是&#x200B;**資料控制方**，而該航空公司的所有客戶為&#x200B;**資料主體**。Laura 在此特定案例中是航空公司的客戶。
+### Use case scenario {#use-case-scenario}
 
-以下是此範例中使用的不同角色：
+To illustrate how the different personas are interacting, here is an example of a high-level GDPR customer experience use case.
 
-* **Laura** 是&#x200B;**資料主體**。她是收到航空公司訊息的收件人。Laura 可能是常客，但可能會在某個時間點決定不想要收到關於這家航空公司提供的任何個人化廣告或行銷訊息。她會要求航空公司（根據他們的流程）刪除她的常旅客號碼。
+In this example, an airline company is the Adobe Campaign customer. This company is the **Data Controller** and all the clients of the airline company are **Data Subjects**. Laura in this particular case is a client of the airline company.
 
-* **Anne** 是航空公司的&#x200B;**資料控制方**。她會收到Laura的請求，檢索用於識別資料主體的有用ID，並在Adobe Campaign中提交請求。
+Here are the different personas used in this example:
 
-* **Adobe Campaign** 是&#x200B;**資料處理方**。
+* **Laura** is the **Data subject**. She is the recipient who receives messages from the airline company. Laura may be a frequent flyer, but may decide at some point that she does not want any personalized advertising or marketing messages from the airline company. She will ask the airline company (based on their process) to delete her frequent flier number.
+
+* **Anne** is the **Data Controller** at the airline company. She receives Laura's request, retrieves useful IDs requested to identify the Data Subject and submits the request in Adobe Campaign.
+
+* **Adobe Campaign** is the **Data Processor**.
 
 ![](assets/privacy-gdpr-flow.png)
 
-以下是此使用案例的一般流程：
+Here is the general flow for this use case:
 
-1. **資料主體** (Laura) 透過電子郵件、客戶服務或網站入口，向&#x200B;**資料控制方**&#x200B;傳送 GDPR 請求。
+1. The **Data Subject** (Laura) sends a GDPR request to the **Data Controller**, via email, customer care or a web portal.
 
-1. **資料控制方** (Anne) 透過介面或使用 API 將 GDPR 請求推送至 Campaign。
+1. The **Data Controller** (Anne) pushes the GDPR request to Campaign via the interface or using an API.
 
-1. 當&#x200B;**資料處理方** (Adobe Campaign) 收到資訊後，會對 GDPR 請求採取行動，並傳送回應或向&#x200B;**資料控制方** (Anne) 進行確認。
+1. Once the **Data Processor** (Adobe Campaign) receives the information, it takes action on the GDPR request and sends a response or acknowledgement to the **Data Controller** (Anne).
 
-1. 然後，**資料控制方** (Anne) 會審查該資訊並將其傳送回&#x200B;**資料主體** (Laura)。
+1. The **Data Controller** (Anne) then reviews the information and sends it back to the **Data Subject** (Laura).
 
-## 資料擷取 {#data-acquisition}
+## Data acquisition {#data-acquisition}
 
-Adobe Campaign 可讓您收集資料，包括個人和敏感資訊。因此，您必須接收並監控收件者的同意。
+Adobe Campaign enables you to collect data, including personal and sensitive information. It is therefore essential that you receive and monitor consent from your recipients.
 
-* 讓收件者一律同意接收通訊。為此，請盡快接受選擇退出要求，並透過雙重選擇加入程式以確認同意。如需詳細資訊，請參閱[建立雙重選擇加入的訂閱表單](../../web/using/use-cases-web-forms.md#create-a-subscription--form-with-double-opt-in)。
-* 請勿匯入詐騙清單，並使用種子地址以確認您的用戶端檔案並未遭到詐騙使用。有關此項目的詳細資訊，請參閱[關於種子地址](../../delivery/using/about-seed-addresses.md)。
-* 透過同意與權限管理，您可以追蹤收件者的偏好設定，並管理組織內哪些人員可以存取哪些資料。如需詳細資訊，請參閱[本節](#consent)。
-* 加速和管理收件者的隱私權要求。如需詳細資訊，請參閱[本節](#privacy-requests)。
+* Always have recipients agree to receive communications. To do this, keep honoring opt-out requests as quickly as possible and verify consent through a double opt-in process. For more on this, see [Create a subscription form with double opt-in](../../web/using/use-cases-web-forms.md#create-a-subscription--form-with-double-opt-in).
+* Do not import fraudulent lists and use seed addresses to check that your client file is not being used fraudulently. For more on this, see [About seed addresses](../../delivery/using/about-seed-addresses.md).
+* Through consent and rights management, you can track your recipients' preferences as well as manage who within your organization can access which data. For more on this, see [this section](#consent).
+* Facilitate and manage Privacy requests from your recipients. For more on this, see [this section](#privacy-requests).
 
-## 隱私權管理 {#privacy-management}
+## Privacy management {#privacy-management}
 
-隱私權管理是指可協助您遵守隱私權法規 (GDPR、CCPA等) 的所有流程及工具。取得[本頁面](privacy-and-recommendations.md)隱私權管理內容的概觀。
+Privacy management refer to all the processes and tools that can help you comply with Privacy regulations (GDPR, CCPA, etc.). Get an overview of what privacy management is on [this page](privacy-and-recommendations.md).
 
-Adobe Campaign 提供專屬於隱私權管理的各種功能：
-* 同意管理、資料保留和使用者角色。請參閱[本節](#consent)。
-* 隱私權要求（存取權限與被遺忘的權利）。請參閱[本節](#privacy-requests)。
-* 選擇退出個人資訊銷售（專屬於 CCPA）。請參閱[本節](../../platform/using/privacy-requests.md#sale-of-personal-information-ccpa)。
+Adobe Campaign provides you with various sets of features dedicated to privacy management:
+* Consent management, data Retention and user Roles. See [this section](#consent).
+* Privacy requests (Right to Access and Right to be Forgotten). See [this section](#privacy-requests).
+* Opt-out for the Sale of Personal Information (CCPA-specific). See [this section](../../platform/using/privacy-requests.md#sale-of-personal-information-ccpa).
 
-[本節](https://helpx.adobe.com/tw/campaign/kb/campaign-privacy-more.html#gdprpersonasandflow)將提供 Campaign 中主要隱私權功能及相關角色的範例。
+The main Privacy capabilities in Campaign and an example of the personas involved are presented in [this section](https://helpx.adobe.com/campaign/kb/campaign-privacy-more.html#gdprpersonasandflow).
 
-### 同意、保留和角色 {#consent}
+### Consent, Retention and Roles {#consent}
 
-一開始，Adobe Campaign 會提供對隱私權至關重要的功能：
+Originally, Adobe Campaign offers important features that are essential to Privacy:
 
-* **同意管理**：透過訂閱管理程序，您可以管理收件者的偏好設定，並追蹤哪些收件者已選擇加入何種訂閱類型。有關此項目的詳細資訊，請參閱[關於訂閱](../../delivery/using/about-services-and-subscriptions.md).
-* **資料保留**：所有內建標準記錄表都具有預設的保留期間，通常會將其資料儲存限制在 6 個月或更短時間。您可以使用工作流程設定其他的保留期間。如需此項目的詳細資訊，請洽詢 Adobe 顧問或技術管理員。
-* **權限管理**：Adobe Campaign 可讓您透過不同的預先建立或自訂角色，管理指派給各種 Campaign 運算子的權限。這可讓您管理公司內可存取、修改或匯出不同類型資料的人員。有關此項目的詳細資訊，請參閱[關於存取管理](../../platform/using/access-management.md)。
+* **Consent management**: Through the subscription management process, you can manage your recipients' preferences and track which recipients have opted-in to which type of subscriptions. For more on this, see [About subscriptions](../../delivery/using/about-services-and-subscriptions.md).
+* **Data retention**: All built-in standard log tables have pre-set retention periods, generally limiting their data storage to 6 months or less. Additional retention periods can be set up with workflows. For more on this, reach out to the Adobe consultants or technical administrators.
+* **Rights management**: Adobe Campaign provides you with the ability to manage the rights assigned to the various Campaign operators via different pre-built or custom roles. This allows you to manage who within your company can access, modify or export different types of data. For more on this, see [About access management](../../platform/using/access-management.md).
 
-如需這些功能及如何在 Adobe Campaign 中管理這些功能的詳細資訊，請參閱[本節](../../platform/using/privacy-management.md#consent-retention-roles)。
+For more on these features and how to manage them in Adobe Campaign, see [this section](../../platform/using/privacy-management.md#consent-retention-roles).
 
-### 隱私權請求 {#privacy-requests}
+### Privacy requests {#privacy-requests}
 
-Adobe Campaign 提供其他功能，協助您作為資料控制方，針對特定隱私權要求預作準備：
+Adobe Campaign provides additional capabilities to help you facilitate your readiness as a Data Controller for certain Privacy requests:
 
-* **存取權限**&#x200B;是指資料主體有權從資料控制方取得關於其個人資料是否正在處理、處理地點及處理原因的確認。
+* The **Right to Access** is the right for the Data Subject to obtain from the Data Controller confirmation as to whether or not personal data concerning them is being processed, where and why.
 
-* **被遺忘的權利** (刪除要求) 為資料主體賦予權利，讓資料控制人員得以清除其個人資料。
+* The **Right to be Forgotten** (delete request) entitles the Data Subject to have the Data Controller erase their personal data.
 
-[此節](../../platform/using/privacy-management.md#right-access-forgotten)顯示&#x200B;**存取**&#x200B;及&#x200B;**刪除**&#x200B;要求。
+The **Access** and **Delete** requests are presented in [this section](../../platform/using/privacy-management.md#right-access-forgotten).
 
-建立這些請求的實施步驟將於[本節](../../platform/using/privacy-requests.md)中詳細說明。
+The implementation steps to create these requests are detailed in [this section](../../platform/using/privacy-requests.md).
 
-## 追蹤功能 {#tracking-capabilities}
+## Tracking capabilities {#tracking-capabilities}
 
-### Cookie {#cookies}
+### Cookies {#cookies}
 
-Adobe Campaign 的追蹤功能讓您得以使用三種 Cookie 來追蹤傳遞收件者的瀏覽：工作階段 Cookie 和兩個永久 Cookie。
+Thanks to its tracking functionalities, Adobe Campaign enables you to track the browsing of your delivery recipients using three types of cookies: a session cookie and two permanent cookies.
 
-* **工作階段** Cookie：**nlid** Cookie 包含傳送到聯絡人之電子郵件的識別碼 (**broadlogId**)，以及訊息範本的識別碼 (**deliveryId**)。連絡人按一下由 Adobe Campaign 傳送的電子郵件中包含的 URL 後即可添加識別碼，並且允許您追蹤他們在網路上的行為。瀏覽器關閉時，將自動清除工作階段 Cookie。連絡人可以將其瀏覽器設定為拒絕 Cookie。
+* A **session** cookie: the **nlid** cookie contains the identifier of the email sent to the contact (**broadlogId**) and the identifier of the message template (**deliveryId**). It is added when the contact clicks a URL included in an email sent by Adobe Campaign and enables you to track their behavior on the web. This session cookie is erased automatically when the browser is closed. The contact can configure their browser to refuse cookies.
 
-* 兩個&#x200B;**永久** Cookie：
-   * **UUID** (通用唯一識別碼) Cookie 在 Adobe Experience Cloud 解決方案之間共用。 它會設定一次，直到產生新值時，從用戶端瀏覽器消失為止。 此 Cookie 可讓您識別在 Experience Cloud 解決方案造訪網站時與之互動的使用者。 您可以透過登陸頁面 (將未知的客戶活動與收件者建立關聯) 或傳遞來儲存。 此 Cookie 的說明可在[此頁面](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-mc.html?lang=zh-Hant#ec-cookies)取得。
-   * **nllastdelid** Cookie (在 Campaign Classic 20.3 中推出) 是永久 Cookie，包含使用者點按連結的上次傳遞之 **deliveryId**。當工作階段 Cookie 遺失時，會使用此 Cookie 來識別將要使用的追蹤表格。
+* Two **permanent** cookies: 
+    * The **UUID** (Universal Unique IDentifier) cookie is shared between Adobe Experience Cloud solutions. It is set once until it disappears from the client browser when a new value is generated. This cookie enables you to identify the users who interact with the Experience Cloud solutions when they visit a website. It can be deposited by a landing page (to associate unknown customer activities to a recipient) or by a delivery. The description of this cookie is available on [this page](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-mc.html#ec-cookies).
+    * The **nllastdelid** cookie (introduced in Campaign Classic 20.3) is a permanent cookie which contains the **deliveryId** of the last delivery that user clicked the link from. This cookie is used - when the session cookie is missing - to identify the tracking table that will be used.
 
-《一般資料保護規範》(GDPR) 等法規規定，公司必須先取得網站使用者的同意，才能安裝 Cookie。
+Regulations such as the General Data Protection Regulation (GDPR) state that companies require the agreement of website users before installing any cookies.
 
-* 您必須透過授權請求 (有時出現在網站頁面中) 告知使用者，網站已裝置網路追蹤工具，並要求使用者點按核取方塊授權使用 Cookie，或在使用者登陸的首頁頂端新增橫幅等。
-* 快顯視窗通常會被瀏覽器封鎖，因此應避免使用。
+* You must inform users that your sites are equipped with web tracking tools via an authorization request (that comes up over the page, for example) with a checkbox to authorize the use of cookies, or add a banner at the top of the first page they land on, etc.
+* Pop-up windows should be avoided as they are often blocked by browsers.
 
-### 訊息追蹤 {#message-tracking}
+### Message tracking {#message-tracking}
 
-Adobe Campaign 可讓您追蹤已傳送的電子郵件和傳遞收件者的行為：開啟、點按連結、取消訂閱等。 有關此項目的詳細資訊，請參閱[關於訊息追蹤](../../delivery/using/about-message-tracking.md)。
+Adobe Campaign lets you track the emails sent and the behavior of your delivery recipients: opening, clicks on links, unsubscriptions, etc. For more on this, see [About message tracking](../../delivery/using/about-message-tracking.md).
 
-若要這麼做，請將[追蹤連結](../../delivery/using/how-to-configure-tracked-links.md)新增至您的訊息，以便在傳遞儀表板的[追蹤](../../delivery/using/delivery-dashboard.md#tracking-logs)標籤中測量傳遞和收件者行為的影響。 追蹤資料會在[追蹤指標](../../reporting/using/delivery-reports.md#tracking-indicators)報吿中詮釋。
+To do this, add [tracked links](../../delivery/using/how-to-configure-tracked-links.md) to your messages in order to measure the impact of your delivery and recipient behavior in the [Tracking](../../delivery/using/delivery-dashboard.md#tracking-logs) tab of the delivery dashboard. Tracking data is interpreted in the [Tracking indicators](../../reporting/using/delivery-reports.md#tracking-indicators) report.
 
-### 網路追蹤 {#web-tracking}
+### Web tracking {#web-tracking}
 
-Adobe Campaign 也可讓您監視收件者瀏覽網站的方式：插入追蹤標籤，以收集資訊並測量網站應用程式頁面上的瀏覽。 如需詳細資訊，請參閱[追蹤網站應用程式](../../web/using/tracking-a-web-application.md)。
+Adobe Campaign also lets you monitor how recipients browse your website: insert tracking tags to collect information and measure visits on web application pages. For more on this, see [Tracking a web application](../../web/using/tracking-a-web-application.md).
 
-網站追蹤的設定在[本節](../../configuration/using/about-web-tracking.md)中說明。
+The configuration of web tracking is presented in [this section](../../configuration/using/about-web-tracking.md).
 
-為進一步管理追蹤，Adobe Campaign 可讓您顯示選擇退出橫幅，以停止追蹤選擇退出行為追蹤的終端使用者的網站行為。 如需詳細資訊，請參閱[網站應用程式追蹤選擇退出](../../web/using/web-application-tracking-opt-out.md)。
+To further manage tracking, Adobe Campaign enables you to display an opt-out banner to stop tracking web behaviors of end users who opt-out of behavioral tracking. For more on this, see [Web application tracking opt-out](../../web/using/web-application-tracking-opt-out.md).
+-->

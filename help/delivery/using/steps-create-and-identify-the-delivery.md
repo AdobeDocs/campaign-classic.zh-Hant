@@ -4,11 +4,13 @@ title: 建立並識別傳遞
 description: 建立並識別傳遞
 feature: Channel Configuration
 role: User
+hide: true
+hidefromtoc: true
 exl-id: 6e37bc14-b1a9-42af-8c28-ae4b5bcaa055
-source-git-commit: 41296a0acaee93d31874bf58287e51085c6c1261
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
 source-wordcount: '275'
-ht-degree: 5%
+ht-degree: 29%
 
 ---
 
@@ -23,7 +25,7 @@ ht-degree: 5%
 
 ![](assets/s_ncs_user_wizard_email01_1.png)
 
-系統會為您安裝的每個管道提供預設範本：直接郵件、電子郵件、傳真、電話、行動管道（簡訊）、Facebook、X (先前稱為Twitter)等。
+系統會為您安裝的每個管道提供預設範本：直接郵件、電子郵件、傳真、電話、行動裝置管道（簡訊）、Facebook、X （先前稱為Twitter）等。
 
 >[!NOTE]
 >
@@ -35,18 +37,18 @@ ht-degree: 5%
 
 您需要完成引數以識別傳遞。 操作步驟：
 
-1. 在&#x200B;**[!UICONTROL Label]**&#x200B;欄位中輸入傳遞的名稱。
+1. 在 **[!UICONTROL Label]** 欄位輸入傳遞的名稱。
 
    您也可以將傳遞代碼指派給傳遞。 傳遞的名稱及其程式碼會顯示在傳遞清單中，但收件者無法看見。
 
 1. 在&#x200B;**[!UICONTROL Description]**&#x200B;欄位中新增說明。
-1. 在相關欄位中選取傳遞性質。 此資訊對於傳送追蹤很有用：您可以在傳送清單中根據此條件進行篩選，或使用此選擇條件建立查詢。
+1. 在相關欄位中選取傳遞性質。 此資訊對於傳遞追蹤很有用：您可以在傳遞清單根據此條件進行篩選，或使用此選擇條件建立查詢。
 
    ![](assets/s_ncs_user_email_del_nature.png)
 
 1. 按一下&#x200B;**[!UICONTROL Continue]**&#x200B;以確認此資訊並顯示訊息設定視窗。
 
-傳遞內容已準備好進行設定。 每個管道都有專屬的傳遞內容定義。 如需詳細資訊，請參閱專屬區段：
+傳遞內容已就緒，可進行設定。 每個通道都有專屬的傳遞內容定義。 如需詳細資訊，請參閱專用區段。
 
 * [定義電子郵件內容](defining-the-email-content.md)
 * [定義簡訊內容](sms-create.md#defining-the-sms-content)

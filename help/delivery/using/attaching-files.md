@@ -5,8 +5,10 @@ description: 附加檔案
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Email
 role: User
+hide: true
+hidefromtoc: true
 exl-id: db65e83e-276f-4163-98c3-3658a48acffc
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
 source-wordcount: '975'
 ht-degree: 1%
@@ -34,7 +36,7 @@ ht-degree: 1%
 
 ## 護欄 {#attachments-guardrails}
 
-為避免效能問題，電子郵件中包含的影像不能超過100 KB。 預設設定的此限制可以從`NmsDelivery_MaxDownloadedImageSize`選項變更。 不過，Adobe強烈建議避免在電子郵件傳遞中使用大型影像。
+為避免效能問題，電子郵件中包含的影像不能超過100 KB。 預設設定的此限制可以從`NmsDelivery_MaxDownloadedImageSize`選項變更。 不過，Adobe強烈建議您在電子郵件傳送中避免大型影像。
 
 Adobe也建議限制附加檔案的大小和數量。 依預設，您只能新增一個檔案作為電子郵件的附件。 此臨界值可從`NmsDelivery_MaxRecommendedAttachments`選項設定。
 
@@ -64,7 +66,7 @@ Adobe也建議限制附加檔案的大小和數量。 依預設，您只能新�
 
 ## 建立計算附件 {#creating-a-calculated-attachment}
 
-當您建立已計算的附件時，可在分析或傳遞每封郵件期間計算附件的名稱，並可視收件者而定。 您也可以將其個人化並轉換為PDF。
+當您建立已計算的附件時，可在分析或傳遞每封郵件期間計算附件的名稱，並可視收件者而定。 您也可以將其個人化並轉換至PDF。
 
 ![](assets/s_ncs_user_wizard_attachment.png)
 
@@ -79,7 +81,7 @@ Adobe也建議限制附加檔案的大小和數量。 依預設，您只能新�
 可以使用以下選項：
 
 * 建立傳遞範本時指定了&#x200B;**檔案名稱**
-* **檔案的內容已個人化，並在每則訊息傳遞期間轉換為PDF**
+* **檔案的內容已個人化，並在每則訊息傳遞期間轉換至PDF**
 * **檔案名稱是在傳遞分析期間計算的（它不能依賴收件者設定檔）**
 * **檔案名稱是在每個收件者的傳遞時計算的（可以取決於收件者）**
 

@@ -7,9 +7,9 @@ feature: Application Settings, Permissions
 role: User, Admin
 level: Beginner
 exl-id: 0ba8a3d0-36d7-42f3-b281-0255e49b5fa3
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '773'
 ht-degree: 1%
 
 ---
@@ -20,6 +20,11 @@ ht-degree: 1%
 
 Explorer導覽樹狀結構的每個資料夾都附加讀取、寫入和刪除存取許可權。 若要存取檔案，運運算元或運運算元群組至少必須擁有該檔案的讀取存取權。
 
+>[!NOTE]
+>
+>若要進一步瞭解檔案夾的許可權，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/admin/permissions/folder-permissions){target=_blank}。
+
+
 ## 資料夾和檢視 {#folders-and-views}
 
 ### 什麼是資料夾 {#about-folders}
@@ -28,7 +33,7 @@ Explorer導覽樹狀結構的每個資料夾都附加讀取、寫入和刪除存
 
 ![](assets/s_ncs_user_add_folder_in_tree.png)
 
-您可以自訂Explorer導覽樹狀結構。 在本節[&#128279;](adobe-campaign-workspace.md)中瞭解設定步驟和最佳實務。
+您可以自訂Explorer導覽樹狀結構。 在本節](adobe-campaign-workspace.md)中瞭解設定步驟和最佳實務[。
 
 ### 什麼是檢視 {#about-views}
 

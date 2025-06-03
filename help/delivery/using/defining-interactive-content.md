@@ -5,8 +5,10 @@ description: 瞭解如何在Adobe Campaign中使用AMP定義互動式及動態�
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Email Design
 role: User
+hide: true
+hidefromtoc: true
 exl-id: 3110c371-bbf2-4ab2-a701-3f348b5c1e7f
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
 source-wordcount: '1422'
 ht-degree: 3%
@@ -39,7 +41,7 @@ Adobe Campaign可讓您使用互動式[AMP for Email](https://amp.dev/about/emai
 * 內容會保持訊息中的最新狀態。
 * 收件者無需離開收件匣即可回應表單。
 
-AMP for Email與現有電子郵件相容。 除了HTML和/或純文字外，AMP版本的訊息還作為新的MIME部分嵌入電子郵件中，以確保所有電子郵件使用者端的相容性。
+AMP for Email與現有電子郵件相容。 除了HTML和/或純文字外，AMP版本的訊息還作為新的MIME部分嵌入電子郵件，以確保所有電子郵件使用者端的相容性。
 
 如需電子郵件格式、規格和需求的AMP詳細資訊，請參閱[AMP開發人員檔案](https://amp.dev/documentation/guides-and-tutorials/learn/email-spec/amp-email-format/?format=email)。
 
@@ -85,7 +87,7 @@ AMP for Email與現有電子郵件相容。 除了HTML和/或純文字外，AMP�
 
    例如，您可以使用AMP範本中的產品清單元件，並維護來自協力廠商系統或甚至是Adobe Campaign內部的產品清單。 每當您調整價格或其他元素時，當收件者從信箱開啟電子郵件時，就會自動反映價格。
 
-1. 視需要個人化AMP內容，就像在Adobe Campaign中處理HTML格式時一樣，使用個人化欄位和個人化區塊。
+1. 視需要個人化AMP內容，如同您在Adobe Campaign中通常使用HTML格式一樣，使用個人化欄位和個人化區塊。
 
    ![](assets/amp_tab_perso.png)
 
@@ -125,7 +127,7 @@ AMP for Email與現有電子郵件相容。 除了HTML和/或純文字外，AMP�
 
    >[!IMPORTANT]
    >
-   >如果除了AMP內容外，您的電子郵件未包含HTML或純文字版本，則無法傳送。
+   >如果除了AMP內容外，您的電子郵件不包含HTML或純文字版本，則無法傳送。
 
 ## 電子郵件傳遞需求的AMP {#amp-for-email-delivery-requirements}
 
@@ -140,7 +142,7 @@ AMP for Email與現有電子郵件相容。 除了HTML和/或純文字外，AMP�
 * AMP MIME部分必須包含[有效的AMP檔案](https://amp.dev/documentation/guides-and-tutorials/learn/validation-workflow/validate_emails/?format=email)。
 * AMP MIME部分必須小於100KB。
 
-您也可以參閱Gmail[&#128279;](https://developers.google.com/gmail/ampemail/tips)檔案的提示和已知限制。
+您也可以參閱Gmail](https://developers.google.com/gmail/ampemail/tips)檔案的[提示和已知限制。
 
 ## AMP電子郵件定位 {#targeting-amp-email}
 
@@ -190,7 +192,7 @@ AMP for Email與現有電子郵件相容。 除了HTML和/或純文字外，AMP�
 
 >[!IMPORTANT]
 >
->如果除了AMP內容外，您的電子郵件未包含HTML或純文字版本，則無法傳送。
+>如果除了AMP內容外，您的電子郵件不包含HTML或純文字版本，則無法傳送。
 
 相符的收件者會在信箱中顯示電子郵件的AMP版本。
 

@@ -8,10 +8,10 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: d3369b63-a29b-43b7-b2ad-d36d4f46c82e
-source-git-commit: 349c3dfd936527e50d7d3e03aa3408b395502da0
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
-source-wordcount: '2474'
-ht-degree: 2%
+source-wordcount: '127'
+ht-degree: 39%
 
 ---
 
@@ -27,432 +27,369 @@ ht-degree: 2%
 
 **資料套件**&#x200B;的原理是匯出資料組態，並將其整合到另一個Adobe Campaign系統中。 瞭解如何在此[區段](#data-package-best-practices)中維持一組一致的資料封裝。
 
-### 封裝型別 {#types-of-packages}
+>[!NOTE]
+>
+>若要深入瞭解資料套件，請參閱[Campaign v8檔案。](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/packages){target=_blank}
 
-可匯出的套件型別有三種：使用者套件、平台套件和管理套件。
 
-* **使用者套件**：它可讓您選取要匯出的實體清單。 這種型別的套件管理相依性並驗證錯誤。
-* **平台套件**：它包含所有新增的技術資源（非標準）：結構描述、JavaScript程式碼等。
+<!--
+### Types of packages {#types-of-packages}
+
+There are three types of exportable packages: user packages, platform packages and admin packages.
+
+* **User package**: it enables you to select the list of entities to be exported. This type of package manages dependencies and verifies errors.
+* **Platform package**: it includes all added technical resources (non standard): schemas, JavaScript code, etc. 
 
   ![](assets/ncs_datapackage_package_platform.png)
 
-* **管理套件**：包含所有新增的範本與企業物件（非標準）：範本、物件庫等。
+* **Admin package**: it includes all added templates and business objects (non standard): templates, libraries, etc.
 
   ![](assets/ncs_datapackage_package_admin.png)
 
 >[!CAUTION]
 >
->**平台**&#x200B;和&#x200B;**管理員**&#x200B;型別包含要匯出的預先定義實體清單。 每個實體都會連結至篩選條件，可讓您移除已建立封裝的現成資源。
+>The **platform** and **admin** types contain a predefined list of entities to be exported. Each entity is linked to filtering conditions that enable you to remove the out-of-the-box resources of the created package.
 
-## 資料結構 {#data-structure}
+## Data structure {#data-structure}
 
-資料封裝的描述是符合&#x200B;**xrk：navtree**&#x200B;資料結構描述語法的結構化XML檔案。
+The description of a data package is a structured XML document that complies with the grammar of the **xrk:navtree** data schema.
 
-資料封裝範例：
+Data package example:
 
-```
-<package>
-  <entities schema="nms:recipient">
-    <recipient email="john.smith@adobe.com" lastName="Smith" firstName="John">      
-      <folder _operation="none" name="nmsRootFolder"/>      
-      <company _operation="none" name="Adobe"/>
-    </recipient>
-  </entities>
-  <entities schema="sfa:company">
-    <company name="Adobe">
-      location city="London" zipCode="W11 2BQ"/>
-    </company>
-  </entities>
-</package>
-```
 
-XML檔案必須以&#x200B;**`<package>`**&#x200B;專案開頭和結尾。 後續的任何&#x200B;**`<entities>`**&#x200B;元素會依檔案型別分配資料。
+The XML document must begin and end with the element. Any elements that follow distribute the data by document type.
 
-**`<entities>`**&#x200B;元素包含封裝的資料，其格式為在&#x200B;**結構描述**&#x200B;屬性中輸入的資料結構描述。
+An element contains the data of the package in the format of the data schema entered in the **schema** attribute.
 
-套件中的資料不得包含基底之間不相容的內部金鑰，例如自動產生的金鑰（**autopk**&#x200B;選項）。
+The data in a package must not contain internal keys that are not compatible between bases, such as auto-generated keys (**autopk** option).
 
-在我們的範例中，「資料夾」和「公司」連結上的聯結已被目的地表格上所謂的「高階」索引鍵取代：
+In our example, the joins on the "folder" and "company" links have been replaced by so-called "high level" keys on the destination tables:
 
-```
-<recipient>
-  <folder _operation="none" name="nmsRootFolder"/>
-  <company _operation="none" name="Adobe"/>
-</recipient>
-```
 
-值為「none」的&#x200B;**`operation`**&#x200B;屬性會定義調解連結。
+The **`operation`** attribute with the value "none" defines a reconciliation link.
 
-您可以從任何文字編輯器手動建構資料套件。 只要確保XML檔案的結構符合「xtk：navtree」資料結構描述即可。 Adobe Campaign主控台有資料包匯出和匯入模組。
+A data package can be constructed manually from any text editor. Simply ensure that the structure of the XML document complies with the "xtk:navtree" data schema. The Adobe Campaign console has a data package export and import module.
 
-## 匯出套件 {#exporting-packages}
+## Export packages {#exporting-packages}
 
-### 關於封裝匯出 {#about-package-export}
+### About package export {#about-package-export}
 
-套件可以三種不同的方式匯出：
+Packages can be exported in three different ways:
 
-* **[!UICONTROL Package Export Assistant]**&#x200B;可讓您匯出單一封裝中的一組物件。 如需詳細資訊，請參閱[匯出封裝中的一組物件](#exporting-a-set-of-objects-in-a-package)
-* 您可以用滑鼠右鍵按一下單一物件&#x200B;**並選取&#x200B;**&#x200B;[!UICONTROL Actions > Export in a package]&#x200B;**，直接將其匯出到封裝中。**
-* **封裝定義**&#x200B;可讓您建立封裝結構，在其中新增稍後將在封裝中匯出的物件。 如需詳細資訊，請參閱[管理封裝定義](#managing-package-definitions)
+* The **[!UICONTROL Package Export Assistant]** enables you to export a set of objects in a single package. For more on this refer to [Export a set of objects in a package](#exporting-a-set-of-objects-in-a-package)
+* A **single object** can be exported in a package directly by right-clicking on it and selecting **[!UICONTROL Actions > Export in a package]**.
+* **Package definitions** let you create a package structure in which you add objects that will be exported later on in a package. For more on this, refer to [Manage package definitions](#managing-package-definitions)
 
-套件匯出後，您就可以將套件和所有新增的實體匯入另一個Campaign執行個體。
+Once a package exported, you will be able to import it and all the added entities into another Campaign instance.
 
-### 匯出封裝中的一組物件 {#exporting-a-set-of-objects-in-a-package}
+### Export a set of objects in a package {#exporting-a-set-of-objects-in-a-package}
 
-封裝匯出助理可以透過Adobe Campaign使用者端主控台的&#x200B;**[!UICONTROL Tools > Advanced > Export package...]**&#x200B;功能表存取。
+The package export assistant is accessible via the **[!UICONTROL Tools > Advanced > Export package...]** menu of the Adobe Campaign client console.
 
 ![](assets/ncs_datapackage_typepackage.png)
 
-對於三種型別的套裝程式，助理提供下列步驟：
+For the three types of packages, the assistant offers the following steps:
 
-1. 按檔案型別列出要匯出的實體：
+1. List the entities to be exported by document type:
 
    ![](assets/ncs_datapackage_export2.png)
 
    >[!CAUTION]
    >
-   >如果您匯出&#x200B;**[!UICONTROL Offer category]**、**[!UICONTROL Offer environment]**、**[!UICONTROL Program]**&#x200B;或&#x200B;**[!UICONTROL Plan]**&#x200B;型別資料夾，請勿選取&#x200B;**xtk：folder**，因為您可能會遺失部分資料。 選取與資料夾對應的實體： **nms：offerCategory** （選件類別）、**nms：offerEnv** （選件環境）、**nms：program** （方案）和&#x200B;**nms：plan** （計畫）。
+   >If you export an **[!UICONTROL Offer category]**, **[!UICONTROL Offer environment]**, **[!UICONTROL Program]** or **[!UICONTROL Plan]** type folder, don't ever select the **xtk:folder** as you may lose some data. Select the entity that corresponds with the folder: **nms:offerCategory** for offer categories, **nms:offerEnv** for offer environments, **nms:program** for programs, and **nms:plan** for plans.
 
-   清單管理可讓您新增或刪除要從設定匯出的實體。 按一下&#x200B;**[!UICONTROL Add]**&#x200B;以選取新實體。
+   List management lets you add or delete entities for export from the configuration. Click **[!UICONTROL Add]** to select a new entity.
 
-   **[!UICONTROL Detail]**&#x200B;按鈕會編輯選取的設定。
+   The **[!UICONTROL Detail]** button edits the selected configuration.
 
    >[!NOTE]
    >
-   >相依性機制會控制實體匯出順序。 如需詳細資訊，請參閱[管理相依性](#managing-dependencies)。
+   >The dependency mechanism controls the entity export sequence. For more on this, refer to [Managing dependencies](#managing-dependencies).
 
-1. 實體設定畫面會針對要擷取的檔案型別定義篩選查詢。
+1. The entity configuration screen defines the filter query on the type of document to be extracted.
 
-   您必須設定資料擷取的篩選子句。
+   You must configure the filtering clause for data extraction.
 
    ![](assets/ncs_datapackage_export4.png)
 
    >[!NOTE]
    >
-   >查詢編輯器出現在[此區段](../../platform/using/about-queries-in-campaign.md)中。
+   >The query editor is presented in [this section](../../platform/using/about-queries-in-campaign.md).
 
-1. 按一下&#x200B;**[!UICONTROL Next]**&#x200B;並選取排序資料行，以便在擷取期間排序資料：
+1. Click **[!UICONTROL Next]** and select the sorting columns to order the data during extraction:
 
    ![](assets/ncs_datapackage_export5.png)
 
-1. 在執行匯出之前，先預覽要擷取的資料。
+1. Preview the data to extract before running the export.
 
    ![](assets/ncs_datapackage_export6.png)
 
-1. 封裝匯出助理的最後一頁可讓您開始匯出。 資料將會儲存在&#x200B;**[!UICONTROL File]**&#x200B;欄位中指定的檔案中。
+1. The last page of the package export assistant lets you start the export. The data will be stored in the file indicated in the **[!UICONTROL File]** field.
 
    ![](assets/ncs_datapackage_export7.png)
 
-### 管理相依性 {#managing-dependencies}
+### Manage dependencies {#managing-dependencies}
 
-匯出機制可讓Adobe Campaign追蹤各種匯出元素之間的連結。
+The export mechanism enables Adobe Campaign to track the links between the various exported elements.
 
-此機制由兩個規則定義：
+This mechanism is defined by two rules:
 
-* 連結到具有&#x200B;**擁有**&#x200B;或&#x200B;**owncopy**&#x200B;型別完整性的連結的物件，會匯出到與匯出物件相同的封裝。
-* 連結至連結具有&#x200B;**neutral**&#x200B;或&#x200B;**define**&#x200B;型別完整性（定義的連結）的物件必須個別匯出。
-
->[!NOTE]
->
->連結到結構描述元素的完整性型別定義於[此區段](../../configuration/using/database-mapping.md#links--relation-between-tables)。
-
-#### 匯出行銷活動 {#exporting-a-campaign}
-
-以下是如何匯出行銷活動的範例。 要匯出的行銷活動包含「MyWorkflow」資料夾（節點：管理/生產/技術工作流程/行銷活動流程/MyWorkflow）中的任務（標籤：「MyTask」）和工作流程（標籤：「CampaignWorkflow」）。
-
-任務和工作流程會匯出到與行銷活動相同的套件中，因為相符的結構描述是由具有「自己的」型別完整性的連結所連結。
-
-封裝內容：
-
-```
-<?xml version='1.0'?>
-<package author="Administrator (admin)" buildNumber="7974" buildVersion="7.1" img=""
-label="" name="" namespace="" vendor="">
- <desc></desc>
- <version buildDate="AAAA-MM-DD HH:MM:SS.954Z"/>
- <entities schema="nms:operation">
-  <operation duration="432000" end="AAAA-MM-DD" internalName="OP1" label="MyCampaign"
-  modelName="opEmpty" start="AAAA-MM-DD">
-   <controlGroup>
-    <where filteringSchema=""/>
-   </controlGroup>
-   <seedList>
-    <where filteringSchema="nms:seedMember"></where>
-    <seedMember internalName="SDM1"></seedMember>
-   </seedList>
-   <parameter useAsset="1" useBudget="1" useControlGroup="1" useDeliveryOutline="1"
-   useDocument="1" useFCPValidation="0" useSeedMember="1" useTask="1"
-   useValidation="1" useWorkflow="1"></parameter>
-   <fcpSeed>
-    <where filteringSchema="nms:seedMember"></where>
-   </fcpSeed>
-   <owner _operation="none" name="admin" type="0"/>
-   <program _operation="none" name="nmsOperations"/>
-   <task end="2023-01-17 10:07:51.000Z" label="MyTask" name="TSK2" start="2023-01-16 10:07:51.000Z"
-   status="1">
-    <owner _operation="none" name="admin" type="0"/>
-    <operation _operation="none" internalName="OP1"/>
-    <folder _operation="none" name="nmsTask"/>
-   </task>
-   <workflow internalName="WKF12" label="CampaignWorkflow" modelName="newOpEmpty"
-   order="8982" scenario-cs="Notification of the workflow supervisor (notifySupervisor)"
-   schema="nms:recipient">
-    <scenario internalName="notifySupervisor"/>
-    <desc></desc>
-    <folder _operation="none" name="Folder4"/>
-    <operation _operation="none" internalName="OP1"/>
-   </workflow>
-  </operation>
- </entities>
-</package>   
-```
-
-在具有&#x200B;**@pkgAdmin和**&#x200B;屬性的結構描述中定義套裝型別@pkgPlatform附屬關係。 這兩個屬性都會接收定義套裝軟體附屬關係條件的XTK運算式。
-
-```
-<element name="offerEnv" img="nms:offerEnv.png" 
-template="xtk:folder" pkgAdmin="@id != 0">
-```
-
-最後，**@pkgStatus**&#x200B;屬性可讓您定義這些元素或屬性的匯出規則。 根據屬性的值，可在匯出的封裝中找到元素或屬性。 此屬性的三個可能值包括：
-
-* **從不**：不匯出欄位/連結
-* **一律**：強制匯出此欄位
-* **preCreate**：授權建立連結的實體
+* objects linked to a link with an **own** or **owncopy** type integrity are exported in the same package as the exported object.
+* objects linked to a link with a **neutral** or **define** type integrity (defined link) must be exported separately.
 
 >[!NOTE]
 >
->**preCreate**&#x200B;值僅允許用於連結型別事件。 它授權您建立或指向尚未載入到匯出封裝中的實體。
+>Integrity types linked to schema elements are defined in [this section](../../configuration/using/database-mapping.md#links--relation-between-tables).
 
-## 管理封裝定義 {#managing-package-definitions}
+#### Export a campaign {#exporting-a-campaign}
 
-封裝定義可讓您建立封裝結構，在其中新增稍後將在單一封裝中匯出的實體。 然後，您就可以將此套件和所有新增的實體匯入另一個Campaign執行個體。
+Here is an example on how to export a campaign. The marketing campaign to be exported contains a task (label: "MyTask") and a workflow (label: "CampaignWorkflow") in a "MyWorkflow" folder (node: Administration / Production / Technical workflows / Campaign processes / MyWorkflow).
 
-**相關主題：**
+The task and the workflow are exported in the same package as the campaign since the matching schemas are connected by links with an "own" type integrity.
 
-* [建立套件定義](#creating-a-package-definition)
-* [將實體新增至封裝定義](#adding-entities-to-a-package-definition)
-* [設定封裝定義產生](#configuring-package-definitions-generation)
-* [從封裝定義匯出封裝](#exporting-packages-from-a-package-definition)
+Package content:
 
-### 建立套件定義 {#creating-a-package-definition}
+Affiliation to a type of package is defined in a schema with the **@pkgAdmin and @pkgPlatform** attribute. Both these attributes receive an XTK expression that defines the conditions of affiliation to the package.
 
-可從&#x200B;**[!UICONTROL Administration > Configuration > Package management > Package definitions]**&#x200B;功能表存取封裝定義。
+Finally, the **@pkgStatus** attribute enables you to define the export rules for these elements or attributes. Depending on the value of the attribute, the element or attribute will be found in the exported package. The three possible values for this attribute are:
 
-若要建立封裝定義，請按一下&#x200B;**[!UICONTROL New]**&#x200B;按鈕，然後填寫封裝定義的一般資訊。
+* **never**: does not export the field / link
+* **always**: forces export for this field 
+* **preCreate**: authorizes creation of the linked entity
+
+>[!NOTE]
+>
+>The **preCreate** value is only admitted for link type events. It authorizes you to create or point towards an entity not yet loaded in the exported package.
+
+## Manage package definitions {#managing-package-definitions}
+
+Package definitions let you create a package structure in which you add entities that will be exported later on in a single package. You will then be able to import this package and all the added entities into another Campaign instance.
+
+**Related topics:**
+
+* [Create a package definition](#creating-a-package-definition)
+* [Add entities to a package definition](#adding-entities-to-a-package-definition)
+* [Configure package definitions generation](#configuring-package-definitions-generation)
+* [Export packages from a package definition](#exporting-packages-from-a-package-definition)
+
+### Create a package definition {#creating-a-package-definition}
+
+Package definitions can be accessed from the **[!UICONTROL Administration > Configuration > Package management > Package definitions]** menu.
+
+To create a package definition, click the **[!UICONTROL New]** button, then fill in the package definition general information.
 
 ![](assets/packagedefinition_create.png)
 
-然後，您可以將實體加入封裝定義中，並將其匯出至XML檔案封裝。
+You can then add entities to the package definition, and export it to an XML file package.
 
-**相關主題：**
+**Related topics:**
 
-* [將實體新增至封裝定義](#adding-entities-to-a-package-definition)
-* [設定封裝定義產生](#configuring-package-definitions-generation)
-* [從封裝定義匯出封裝](#exporting-packages-from-a-package-definition)
+* [Add entities to a package definition](#adding-entities-to-a-package-definition)
+* [Configure package definitions generation](#configuring-package-definitions-generation)
+* [Export packages from a package definition](#exporting-packages-from-a-package-definition)
 
-### 將實體新增至封裝定義 {#adding-entities-to-a-package-definition}
+### Add entities to a package definition {#adding-entities-to-a-package-definition}
 
-在&#x200B;**[!UICONTROL Content]**&#x200B;索引標籤中，按一下&#x200B;**[!UICONTROL Add]**&#x200B;按鈕以選取要與封裝一起匯出的實體。 選取實體時的最佳實務會顯示在[此區段](#exporting-a-set-of-objects-in-a-package)區段中。
+In the **[!UICONTROL Content]** tab, click the **[!UICONTROL Add]** button to select the entities to export with the package. Best practices when selecting entities are presented in the [this section](#exporting-a-set-of-objects-in-a-package) section.
 
 ![](assets/packagedefinition_addentities.png)
 
-實體可以直接從其在執行個體中的位置新增到套件定義中。 要執行此操作，請遵循下列步驟：
+Entities can be added to a package definition directly from their location in the instance. To do this, follow the steps below:
 
-1. 用滑鼠右鍵按一下所需的實體，然後選取&#x200B;**[!UICONTROL Actions > Export in a package]**。
+1. Right-click the desired entity, then select **[!UICONTROL Actions > Export in a package]**.
 
    ![](assets/packagedefinition_singleentity.png)
 
-1. 選取&#x200B;**[!UICONTROL Add to a package definition]**，然後選取要新增實體的封裝定義。
+1. Select **[!UICONTROL Add to a package definition]**, then select the package definition to which you want to add the entity.
 
    ![](assets/packagedefinition_packageselection.png)
 
-1. 實體已新增至封裝定義，將與封裝一起匯出（請參閱[此區段](#exporting-packages-from-a-package-definition)）。
+1. The entity is added to the package definition, it will be exported with the package (see [this section](#exporting-packages-from-a-package-definition)).
 
    ![](assets/packagedefinition_entityadded.png)
 
-### 設定封裝定義產生 {#configuring-package-definitions-generation}
+### Configure package definitions generation {#configuring-package-definitions-generation}
 
-封裝產生可從封裝定義&#x200B;**[!UICONTROL Content]**&#x200B;標籤進行設定。 若要這麼做，請按一下&#x200B;**[!UICONTROL Generation parameters]**&#x200B;連結。
+Package generation can be configured from the package definition **[!UICONTROL Content]** tab. To do this, click the **[!UICONTROL Generation parameters]** link.
 
 ![](assets/packagedefinition_generationparameters.png)
 
-* **[!UICONTROL Include the definition]**：包含封裝定義中目前使用的定義。
-* **[!UICONTROL Include an installation script]**：可讓您新增javascript指令碼，以在套件匯入時執行。 選取後，**[!UICONTROL Script]**&#x200B;索引標籤會新增到封裝定義畫面中。
-* **[!UICONTROL Include default values]**：將所有實體屬性的值新增至封裝。
+* **[!UICONTROL Include the definition]**: includes the definition currently used in the package definition.
+* **[!UICONTROL Include an installation script]**: lets you add a javascript script to execute at the package import. When selected, a **[!UICONTROL Script]** tab is added in the package definition screen.
+* **[!UICONTROL Include default values]**: adds to the package the values of all the entities' attributes.
 
-  為了避免冗長的匯出作業，預設不會選取此選項。 這表示具有預設值（「空字串」、「0」和「false」，如果未在結構描述中另外定義）的實體屬性將不會新增到封裝中，因此將不會匯出。
+  This option is not selected by default, in order to avoid lengthy exports. This means that entities' attributes with default values ('empty string', '0', and 'false' if not defined otherwise in the schema) will not be added to the package and will therefore not be exported.
 
   >[!CAUTION]
   >
-  >取消選取此選項會導致本機版本與匯入版本的合併。
+  >Unselecting this option can result in a merge of local and imported versions.   
   >
-  >如果匯入封裝的執行個體包含與封裝相同的實體（例如具有相同的外部ID），則其屬性不會更新。 如果前一個執行處理的屬性具有預設值，則可能會發生這種情況，因為它們未包含在封裝中。
+  >If the instance where the package is imported contains entities that are identical to those of the package (for example with the same external ID), their attributes will not be updated. This can occur if the attributes from the former instance have default values, as they are not included in the package.   
   >
-  >在這種情況下，選取&#x200B;**[!UICONTROL Include default values]**&#x200B;選項會防止版本合併，因為先前執行個體中的所有屬性都會隨套件匯出。
+  >In that case, selecting the **[!UICONTROL Include default values]** option would prevent versions merging, as all attributes from the former instance would be exported with the package.
 
-### 從封裝定義匯出封裝 {#exporting-packages-from-a-package-definition}
+### Export packages from a package definition {#exporting-packages-from-a-package-definition}
 
-若要從封裝定義匯出封裝，請遵循下列步驟：
+To export a package from a package definition, follow the steps below:
 
-1. 選取要匯出的封裝定義，然後按一下&#x200B;**[!UICONTROL Actions]**&#x200B;按鈕並選取&#x200B;**[!UICONTROL Export the package]**。
-1. 依預設，會選取與匯出封裝相對應的XML檔案。 它會根據套件定義名稱空間和名稱來命名。
-1. 定義封裝名稱和位置後，按一下&#x200B;**[!UICONTROL Start]**&#x200B;按鈕以啟動匯出。
+1. Select the package definition to export, then click the **[!UICONTROL Actions]** button and select **[!UICONTROL Export the package]**.
+1. An XML file corresponding to the exported package is selected by default. It is named according to the package definition namespace and name.
+1. Once the package name and location defined, click the **[!UICONTROL Start]** button to launch the export.
 
    ![](assets/packagedefinition_packageexport.png)
 
-## 匯入套件 {#importing-packages}
+## Import packages {#importing-packages}
 
-套件匯入助理可以透過Adobe Campaign使用者端主控台的主功能表&#x200B;**[!UICONTROL Tools > Advanced > Import package]**&#x200B;存取。
+The package import assistant is accessible via the main menu **[!UICONTROL Tools > Advanced > Import package]** of the Adobe Campaign client console.
 
-您可以根據授權條款，從先前執行的匯出匯入套件，例如從其他Adobe Campaign執行個體或[內建套件](../../installation/using/installing-campaign-standard-packages.md)。
+You can import a package from an export performed earlier, e.g. from another Adobe Campaign instance, or a [built-in package](../../installation/using/installing-campaign-standard-packages.md), depending on the terms of your license.
 
 ![](assets/ncs_datapackage_import.png)
 
-### 從檔案安裝套件 {#installing-a-package-from-a-file}
+### Install a package from a file {#installing-a-package-from-a-file}
 
-若要匯入現有的資料套件，請選取XML檔案並按一下&#x200B;**[!UICONTROL Open]**。
+To import an existing data package, select the XML file and click **[!UICONTROL Open]**.
 
 ![](assets/ncs_datapackage_import_1.png)
 
-然後，要匯入的封裝內容會顯示在編輯器的中間區段中。
+The content of the package to be imported is then displayed in the middle section of the editor.
 
-按一下&#x200B;**[!UICONTROL Next]**&#x200B;和&#x200B;**[!UICONTROL Start]**&#x200B;以啟動匯入。
+Click **[!UICONTROL Next]** and **[!UICONTROL Start]** to launch the import.
 
 ![](assets/ncs_datapackage_import_2.png)
 
-### 安裝內建套件 {#installing-a-standard-package}
+### Install a built-in package {#installing-a-standard-package}
 
-標準套件是內建套件，在設定Adobe Campaign時安裝。 如果您取得新選項或附加元件，或升級至新選件，則根據您的許可權和部署模式，可以匯入新的標準套件。
+Standard packages are built-in packages, installed when the Adobe Campaign is configured. Depending on your permissions and your deployment model, you can import new standard packages if you acquire new options or add-ons, or if you upgrade to a new offer.
 
-請參閱您的授權合約，以檢查您可以安裝哪些套件。
+Refer to your license agreement to check which packages you can install.
 
-如需內建套件的詳細資訊，請參閱[此頁面](../../installation/using/installing-campaign-standard-packages.md)。
+For more information on built-in packages, refer to [this page](../../installation/using/installing-campaign-standard-packages.md).
 
-## 資料套件最佳實務 {#data-package-best-practices}
+## Data package best practices {#data-package-best-practices}
 
-本節說明如何在專案的整個生命週期中，以一致的方式組織資料套件。
+This section describes how to organize data packages in a consistent way across the life of the project.
 
-套件可以包含不同型別的設定和元素，無論是否經過篩選。 如果您遺漏了某些元素或未以正確順序匯入元素/套件，平台設定可能會中斷。
+Packages can contain different kinds of configurations and elements, filtered or not. If you miss some elements or do not import elements/packages in the correct order, the platform configuration can break.
 
-此外，如果同一個平台上有多名人員同時使用許多不同的功能，封裝規格資料夾可能會很快變得複雜。
+Moreover, with several people working on the same platform with a lot of different features, the package specifications folder can quickly become complex.
 
-雖然並非強制性，本節提供的解決方案可協助組織及使用Adobe Campaign中的套件以用於大型專案。
+Although it is not mandatory to do so, this section offers a solution to help organize and use packages in Adobe Campaign for large-scale projects.
 
-主要限制如下：
-* 組織套件並追蹤變更內容及變更時間
-* 如果更新設定，將破壞未直接連結到更新的專案的風險降至最低
+The main constraints are as follows:
+* Organize packages and keep a track of what is changed and when
+* If a configuration is updated, minimize the risk of breaking something which is not directly linked to the update
 
 >[!NOTE]
 >
->如需設定工作流程以自動匯出套件的詳細資訊，請參閱[此頁面](https://helpx.adobe.com/campaign/kb/export-packages-automatically.html)。
+>For more on setting up a workflow to automatically export packages, see [this page](https://helpx.adobe.com/campaign/kb/export-packages-automatically.html).
 
-### 建議 {#data-package-recommendations}
+### Recommendations {#data-package-recommendations}
 
-一律匯入相同版本的平台。 您必須檢查是否要在具有相同組建的兩個執行個體之間部署套件。 切勿強制匯入，並一律先更新平台（如果組建不同）。
+Always import within the same version of the platform. You must check that you deploy your packages between two instances that have the same build. Never force the import and always update the platform first (if the build is different).
 
 >[!IMPORTANT]
 >
->Adobe不支援在不同版本之間匯入。
-<!--This is not allowed. Importing from 6.02 to 6.1, for example, is prohibited. If you do so, R&D won't be able to help you resolve any issues you encounter.-->
+>Importing between different versions is not supported by Adobe.
+<!--This is not allowed. Importing from 6.02 to 6.1, for example, is prohibited. If you do so, R&D won't be able to help you resolve any issues you encounter.
 
-請留意結構描述和資料庫結構。 匯入含有結構描述的封裝後，必須產生結構描述。
+Pay attention to the schema and database structure. Importation of package with schema must be followed by schema generation.
 
-### 解決方案 {#data-package-solution}
+### Solution {#data-package-solution}
 
-#### 封裝型別 {#package-types}
+#### Package types {#package-types}
 
-從定義不同型別的封裝開始。 系統只會使用四種型別：
+Start by defining different types of packages. Only four types will be used:
 
-**個實體**
-* Adobe Campaign中的所有「xtk」和「nms」特定元素，例如結構描述、表單、資料夾、傳遞範本等，
-* 您可以將實體同時視為「管理員」和「平台」元素。
-* 在Campaign執行個體上傳時，封裝中不應包含多個實體。
+**Entities**
+* All "xtk" and "nms" specific elements in Adobe Campaign like schemas, forms, folders, delivery templates, etc.
+* You can consider an entity as both an "admin" and "platform" element.
+* You should not include more than one entity in a package when uploading it on a Campaign instance.  
 
-<!--Nothing "works" alone. An entity package does not have a specific role or objective.-->
+<!--Nothing "works" alone. An entity package does not have a specific role or objective.
 
-如果您需要在新執行個體上部署設定，可以匯入所有實體套件。
+If you need to deploy your configuration on a new instance, you can import all your entity packages.
 
-**功能**
+**Features**
 
-此型別的封裝：
-* 回答使用者端需求/規格。
-* 包含一或多個功能。
-* 應該包含所有相依性，才能在不使用任何其他封裝的情況下執行功能。
+This type of package:
+* Answers a client requirement/specification.
+* Contains one or several functionalities.
+* Should contain all dependencies to be able to run the functionality without any other package.
 
-**行銷活動**
+**Campaigns**
 
-此封裝不是強制性的。 有時候，為所有行銷活動建立特定型別會很有用，即使行銷活動可視為一項功能。
+This package is not mandatory. It is sometimes useful to create a specific type for all campaigns, even if a campaign can been seen as a feature.
 
-**更新**
+**Updates**
 
-設定之後，功能就可以匯出至另一個環境。 例如，套件可從開發環境匯出至測試環境。 在此測試中，會顯示缺陷。 首先，它需要在開發環境中修正。 接著，應該將修補程式套用至測試平台。
+Once configured, a feature can be exported into another environment. For example, the package can be exported from a dev environment to a test environment. In this test, a defect is revealed. First, it needs to be fixed on the dev environment. Then, the patch should be applied to the test platform.
 
-第一個解決方案是再次匯出整個特徵。 但是，為避免任何風險（更新不需要的元素），僅包含更正的套件比較安全。
+The first solution would be to export the whole feature again. But, to avoid any risk (updating unwanted elements), it is safer to have a package containing only the correction.
 
-這就是我們建議建立「更新」封裝的原因，它只包含特徵的一個圖元型別。
+That's why we recommend creating an "update" package, containing only one entity type of the feature.
 
-更新不僅可以是修正，也可以是實體/功能/行銷活動封裝的新元素。 若要避免部署整個套件，您可以匯出更新套件。
+An update could not only be a fix, but also a new element of your entity/feature/campaign package. To avoid deploying the whole package, you can export an update package.
 
-### 命名慣例 {#data-package-naming}
+### Naming conventions {#data-package-naming}
 
-現在已定義型別，我們應該指定命名慣例。 Adobe Campaign不允許根據套件規格建立子資料夾，這表示數字是保持井然有序的最佳解決方案。 數字前置碼封裝名稱。 您可以使用以下慣例：
+Now that types are defined, we should specify a naming convention. Adobe Campaign does not allow to create subfolders for package specifications, meaning that numbers is the best solution for staying organized. Numbers prefix package names. You can use the following convention:
 
-* 實體：從1到99
-* 功能：從100到199
-* 促銷活動：從200到299
-* 更新：從5000到5999
+* Entity: from 1 to 99
+* Feature: from 100 to 199
+* Campaign: from 200 to 299
+* Update: from 5000 to 5999
 
-### 套件 {#data-packages}
-
->[!NOTE]
->
->最好設定規則以定義正確數量的套件。
-
-#### 實體套件順序 {#entity-packages-order}
-
-為協助匯入，實體套件應依匯入時的順序排序。 例如：
-* 001 — 結構描述
-* 002 — 表單
-* 003 — 影像
-* 等等。
+### Packages {#data-packages}
 
 >[!NOTE]
 >
->Forms只應在結構描述更新後匯入。
+>It is better to set up rules for defining the correct number of packages.
 
-#### 封裝200 {#package-200}
+#### Entity packages order {#entity-packages-order}
 
-套件編號「200」不應用於特定行銷活動：此編號將用於更新與所有行銷活動有關的專案。
+To help the import, entity packages should by ordered as they will be imported. For example:
+* 001 – Schema
+* 002 – Form
+* 003 – Images
+* etc.
 
-#### 更新封裝 {#update-package}
+>[!NOTE]
+>
+>Forms should be imported only after schema updates.
 
-最後一點與更新封裝編號有關。 它是以「5」為前置詞的套件編號（實體、功能或促銷活動）。 例如：
-* 5001以更新一個結構描述
-* 5200可更新所有行銷活動
-* 5101以更新101功能
+#### Package 200 {#package-200}
 
-更新套件應僅包含一個特定實體，以便可輕鬆重複使用。 若要進行分割，請新增數字（從1開始）。 這些套件沒有特定的排序規則。 若想進一步瞭解，假設我們有101功能、社交應用程式：
-* 它包含webApp和外部帳戶。
-   * 套件標籤為： 101 — 社交應用程式(socialApplication)。
-* webApp上存在缺陷。
-   * wepapp已更正。
-   * 需要建立修正套件，其名稱如下： 5101 - 1 — 社交應用程式webApp (socialApplication_webApp)。
-* 需要為社交功能新增新的外部帳戶。
-   * 已建立外部帳戶。
-   * 新封裝為： 5101 - 2 — 社交應用程式外部帳戶(socialApplication_extAccount)。
-   * 同時更新101套件以新增至外部帳戶，但未部署。
+Package number "200" should not be used for a specific campaign: this number will be used to update something that concerns all campaigns.
 
-     ![](assets/ncs_datapackage_best-practices-1.png)
+#### Update package {#update-package}
 
-#### 套件檔案 {#package-documentation}
+The last point concerns the update package numbering. It is your package number (entity, feature, or campaign) with a "5" as prefix. For example:
+* 5001 to update one schema
+* 5200 to update all campaigns
+* 5101 to update the 101 feature
 
-更新套件時，您應該一律在說明欄位中加上註解，以詳細說明任何修改和原因（例如「新增結構」或「修正缺陷」）。
+The update package should only contain one specific entity, in order to be easily reusable. To split them, add a new number (start from 1). There are no specific ordering rules for these packages. To better understand, imagine that we have a 101 feature, a social application:
+* It contains a webApp and an external account.
+  * The package label is: 101 – Social application (socialApplication).
+* There is a defect on the webApp.
+  * The wepApp is corrected.
+  * A fix package needs to be created, with the following name: 5101 – 1 – Social application webApp (socialApplication_webApp).
+* A new external account needs to be added for the social feature.
+  * External account is created.
+  * The new package is: 5101 – 2 – Social application external account (socialApplication_extAccount).
+  * In parallel the 101 package is updated to be added to the external account, but it is not deployed.
+![](assets/ncs_datapackage_best-practices-1.png)
+
+#### Package documentation {#package-documentation}
+
+When you update a package, you should always put a comment in the description field to detail any modifications and reasons (for example, "add a new schema" or "fix a defect").
 
 ![](assets/ncs_datapackage_best-practices-2.png)
 
-您也應該指定註解的日期。 請一律將您對更新套件的評論報告給「父級」（不含5首碼的套件）。
+You should also date the comment. Always report your comment on an update package to the "parent" (package without the 5 prefix).
 
 >[!IMPORTANT]
 >
->說明欄位最多只能包含2.000個字元。
+>The description field can only contain up to 2.000 characters.
+-->

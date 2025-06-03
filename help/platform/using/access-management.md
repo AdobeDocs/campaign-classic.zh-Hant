@@ -5,10 +5,10 @@ description: 瞭解如何授與Campaign功能的存取權
 badge: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Access Management, Permissions
 exl-id: 9b616715-33cd-43ba-8548-8d96a179408e
-source-git-commit: 2759d65150299e4fa679ea986df8136cd9525370
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
-source-wordcount: '342'
-ht-degree: 5%
+source-wordcount: '309'
+ht-degree: 6%
 
 ---
 
@@ -42,25 +42,29 @@ Adobe Campaign可讓您定義並管理指派給各種運運算元的許可權。
 
 >[!NOTE]
 >
->開始定義許可權之前，Adobe建議您先閱讀[安全性設定檢查清單](https://helpx.adobe.com/tw/campaign/kb/acc-security.html)。
+> * 開始定義許可權之前，Adobe建議您先閱讀[安全性設定檢查清單](https://helpx.adobe.com/tw/campaign/kb/acc-security.html)。
+> * 若要深入瞭解許可權，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/admin/permissions/gs-permissions){target=_blank}的詳細說明。
 
-在以下章節中瞭解如何授與存取權並設定許可權：
+<!--
 
-* [建立運算子](access-management-operators.md)
+Learn how to grant access and set up permissions in these sections:
 
-* [定義群組](access-management-groups.md)
+* [Create operators](access-management-operators.md)
 
-* [新增已命名的許可權](access-management-named-rights.md)
+* [Define groups](access-management-groups.md)
 
-* [管理Campaign資料夾存取權](access-management-folders.md)
+* [Add Named rights](access-management-named-rights.md)
 
-* [存取許可權矩陣](access-management-named-rights.md#access-rights-matrix)
+* [Manage Campaign folder access](access-management-folders.md)
+
+* [Access rights matrix](access-management-named-rights.md#access-rights-matrix)
 
 
-另請參閱：
+See also:
 
-* [管理工作流程的許可權](../../workflow/using/managing-rights.md)
-* [管理分散式行銷的許可權](../../distributed/using/about-distributed-marketing.md#operators-and-entities)
-* [管理互動模組的許可權](../../interaction/using/operator-profiles.md)
-* [篩選結構描述的存取權](../../configuration/using/filtering-schemas.md)
-* [限制PI檢視](../../configuration/using/restricting-pii-view.md)
+* [Manage permissions for workflows](../../workflow/using/managing-rights.md)
+* [Manage permissions for distributed marketing](../../distributed/using/about-distributed-marketing.md#operators-and-entities)
+* [Manage permissions for the interaction module](../../interaction/using/operator-profiles.md)
+* [Filter access to schemas](../../configuration/using/filtering-schemas.md)
+* [Restricting PI view](../../configuration/using/restricting-pii-view.md)
+-->

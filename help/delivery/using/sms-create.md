@@ -4,11 +4,13 @@ title: 使用Campaign建立簡訊
 description: 瞭解如何使用Campaign建立簡訊
 feature: SMS
 role: User
+hide: true
+hidefromtoc: true
 exl-id: 94aa4628-d973-433d-b963-b078e2d6672b
-source-git-commit: 41296a0acaee93d31874bf58287e51085c6c1261
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
 source-wordcount: '437'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 

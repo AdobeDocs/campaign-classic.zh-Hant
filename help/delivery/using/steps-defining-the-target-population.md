@@ -4,8 +4,10 @@ title: 定義目標母體
 description: 瞭解如何定義目標母體
 feature: Audiences, Proofs
 role: User
+hide: true
+hidefromtoc: true
 exl-id: d0ed7be7-3147-4cb8-9ce7-ea51602e9048
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
 source-wordcount: '1729'
 ht-degree: 23%
@@ -23,7 +25,7 @@ ht-degree: 23%
 
 ## 選取傳遞的主要收件者 {#selecting-the-main-target}
 
-在大多數情況下，主要目標會從 Adobe Campaign 資料庫 (預設模式) 擷取。不過，收件者也可以儲存在外部檔案中。 若要了解詳細資訊，請參閱[本章節](steps-defining-the-target-population.md#selecting-external-recipients)。
+在大多數情況下，主要目標會從 Adobe Campaign 資料庫 (預設模式) 擷取。不過，收件者也可以儲存在外部檔案中。 若要了解更多資訊，請參閱[此區段](steps-defining-the-target-population.md#selecting-external-recipients)。
 
 若要選取傳遞的收件者，請遵循下列步驟：
 
@@ -237,10 +239,10 @@ ht-degree: 23%
 | 名稱 | 使用 | 標準結構描述 |
 |---|---|---|
 | 收件者 | 傳遞給Adobe Campaign資料庫的收件者 | nms：recipient |
-| 訪客 | 例如，透過轉介（病毒式行銷）或社交網路(Facebook， X — 先前稱為Twitter)收集設定檔的訪客。 | mns：visitor |
+| 訪客 | 例如，將其傳送給已透過轉介（病毒式行銷）或社交網路（Facebook、X — 先前稱為Twitter）收集設定檔的訪客。 | mns：visitor |
 | 訂閱 | 傳遞給已訂閱資訊服務（例如電子報）的收件者 | nms：subscription |
 | 訪客訂閱 | 傳遞給訂閱資訊服務的訪客 | nms：visitorSub |
-| 服務 | Publish至X帳戶或Facebook頁面 | nms：service |
+| 服務 | 發佈至X帳戶或Facebook頁面 | nms：service |
 | 運算子 | 傳遞給Adobe Campaign操作者 | nms：operator |
 | 外部檔案 | 透過包含傳遞所需所有資訊的檔案傳遞 | 沒有連結的結構描述，沒有輸入目標 |
 

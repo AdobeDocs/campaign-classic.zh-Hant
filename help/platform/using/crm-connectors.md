@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 7ccab3a4-f323-464a-9ec4-dd597279d0eb
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
-source-wordcount: '158'
-ht-degree: 41%
+source-wordcount: '134'
+ht-degree: 46%
 
 ---
 
@@ -26,20 +26,23 @@ Adobe Campaign 提供各種 CRM 連接器，用於將您的 Adobe Campaign 平�
 
 >[!NOTE]
 >
->此功能可透過&#x200B;**CRM聯結器**&#x200B;專用套件在Adobe Campaign中使用。
+>* 此功能可透過&#x200B;**CRM聯結器**&#x200B;專用套件在Adobe Campaign中使用。
+>* 若要進一步瞭解CRM聯結器，以及如何連線至Microsoft Dynamics和Salesforce，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/ac-crm/crm){target=_blank}。
 
+<!--
+### Compatible systems {#compatible-crm-systems-and-limitations}
 
-### 相容系統 {#compatible-crm-systems-and-limitations}
-
-支援的CRM和版本在Campaign [相容性矩陣](../../rn/using/compatibility-matrix.md)中詳細說明。
+Supported CRM and versions are detailed in Campaign [Compatibility matrix](../../rn/using/compatibility-matrix.md).
 
 >[!NOTE]
 >
->CRM聯結器僅適用於安全URL (https)。
+>The CRM connectors only work with a secure URL (https).
 
-### 實施步驟 {#crm-implementation-steps}
+### Implementation steps {#crm-implementation-steps}
 
-在本節[&#128279;](../../platform/using/crm-ms-dynamics.md)中瞭解連線Campaign和Microsoft Dynamics 的逐步程式
+Learn step-by-step procedure to connect Campaign and Microsoft Dynamics [in this section](../../platform/using/crm-ms-dynamics.md)
 
 
-在本節[&#128279;](../../platform/using/crm-sfdc.md)中瞭解連線Campaign和Salesforce 的逐步程式
+Learn step-by-step procedure to connect Campaign and Salesforce [in this section](../../platform/using/crm-sfdc.md)
+
+-->

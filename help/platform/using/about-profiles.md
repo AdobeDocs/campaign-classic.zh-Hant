@@ -6,10 +6,10 @@ feature: Profiles, Audiences
 role: User, Data Architect
 level: Beginner
 exl-id: 54f1ad6c-54b0-4448-8c38-806dd75c1dae
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 34%
+source-wordcount: '234'
+ht-degree: 37%
 
 ---
 
@@ -23,100 +23,107 @@ ht-degree: 34%
 
 在 Adobe　Campaign 中，收件者是用於傳送內容 (電子郵件、簡訊等) 的預設輪廓。儲存在資料庫中的收件者資料可讓您篩選將接收任何指定傳遞的目標，並在傳遞內容中新增個人化資料。 資料庫中還存在其他類型的輪廓。這些用戶檔案是針對不同用途設計的。例如，種子輪廓用於在內容傳送給最終目標前測試內容。
 
-![](assets/do-not-localize/how-to-video.png) [瞭解視訊中的設定檔概念](#create-profiles-video)
-
-## 用戶檔案類型 {#profile-types}
-
-使用 Adobe Campaign，您可在用戶檔案的整個生命週期對其進行管理，即建立、匯入、鎖定、活動追蹤、更新等等。
-
-每個設定檔都符合一個資料庫專案。 其中包含鎖定、限定和追蹤個人所需的所有必要資訊。
-
-可以根據儲存空間識別設定檔。 這表示設定檔可以比對：收件者、訪客、運運算元、訂閱者、潛在客戶等。
-
-## 收件者用戶檔案 {#recipient-profiles}
-
-傳遞的收件者會以用戶檔案形式儲存在資料庫中，並包含其所連結的資訊，如姓氏、名字、地址、訂閱、傳遞內容等。當您建立行銷活動時，您可以根據簡易或進階準則從資料庫中選定傳遞的目標客戶。
-
-您也可以針對其設定檔並非儲存在資料庫中，而是儲存在檔案中的收件者，建立行銷活動。 這些稱為「外部」傳遞。 如需此傳遞類型的詳細資訊，請參閱[本頁面](../../delivery/using/steps-defining-the-target-population.md#selecting-external-recipients)。
-
-建立收件者用戶檔案的主要方法如下：
-
-* 在圖形介面畫面中直接輸入，
-* 匯入收件者清單，
-* 透過網路表單線上收集。
+![顯示哪些設定檔及其運作方式的影片](assets/do-not-localize/how-to-video.png) [瞭解影片中設定檔的概念](#create-profiles-video)
 
 >[!NOTE]
 >
->若要瞭解檔案和網頁表單如何匯入，請參閱[一般匯入和匯出](../../platform/using/get-started-data-import-export.md)。
+>若要深入瞭解設定檔、如何建立及編輯設定檔，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/gs-audiences){target=_blank}的詳細檔案。
 
-## 用戶檔案和目標 {#profiles-and-targets}
+<!--
+## Profile types {#profile-types}
 
-**[!UICONTROL Profiles and targets]**&#x200B;連結可讓您顯示儲存在Adobe Campaign資料庫中的收件者。 您可以建立新收件者、編輯現有收件者並存取其設定檔。 如需詳細資訊，請參閱[此頁面](../../platform/using/editing-a-profile.md)。
+Adobe Campaign lets you manage profiles throughout their entire lifecycle: creation, import, targeting, action tracking, updates, etc.
+
+Each profile matches a database entry. They contain all the information required for targeting, qualifying and tracking individuals.
+
+Profiles can be identified based on storage space. This means that a profile can match: a recipient, a visitor, an operator, a subscriber, a prospect, etc.
+
+## Recipient profiles {#recipient-profiles}
+
+Delivery recipients are stored in the database as profiles containing the information linked to them: last name, first name, address, subscriptions, deliveries, etc. When you create campaigns, you can define the target of the deliveries to a selection of the profiles in the base according to simple or advanced criteria.
+
+You can also create campaigns aimed at recipients whose profiles are stored not in the database, but in files. These are known as "external" deliveries. For more information about this type of delivery, refer to [this page](../../delivery/using/steps-defining-the-target-population.md#selecting-external-recipients).
+
+The main methods for creating recipient profiles are as follows:
+
+* direct input in the graphical interface screens,
+* importing recipient lists,
+* on-line collection via web forms.
+
+>[!NOTE]
+>
+>To find out how files and web forms are imported, refer to [Generic imports and exports](../../platform/using/get-started-data-import-export.md).
+
+## Profiles and targets {#profiles-and-targets}
+
+The **[!UICONTROL Profiles and targets]** link lets you display recipients stored in Adobe Campaign database. You can create new recipient, edit an existing recipient and access its profile. For more on this, refer to [this page](../../platform/using/editing-a-profile.md).
 
 ![](assets/d_ncs_user_interface_target_link.png)
 
-它也可讓您存取：
+It also gives you access to:
 
-* 清單 — [深入瞭解](../../platform/using/creating-and-managing-lists.md)
-* 訂閱服務 — [深入瞭解](../../delivery/using/managing-subscriptions.md)
-* 網頁應用程式 — [深入瞭解](../../web/using/about-web-applications.md)
-* 匯入和匯出（工作） - [瞭解更多](../../platform/using/about-generic-imports-exports.md)
-* 目標工作流程 — [瞭解更多](../../workflow/using/building-a-workflow.md#implementation-steps-)
+* lists - [Learn more](../../platform/using/creating-and-managing-lists.md)
+* subscription services - [Learn more](../../delivery/using/managing-subscriptions.md)
+* web applications - [Learn more](../../web/using/about-web-applications.md)
+* imports and exports (jobs) - [Learn more](../../platform/using/about-generic-imports-exports.md)
+* targeting workflows - [Learn more](../../workflow/using/building-a-workflow.md#implementation-steps-)
 
-使用收件者頁面，您可以對用戶檔案執行常見的作業，如編輯、更新、新增、刪除、排序。
+The recipients page lets you perform frequent operations on profiles: edits, updates, adds, deletions, sorts.
 
-如需更進階的設定檔操作，您需要編輯Adobe Campaign樹狀結構。 若要這麼做，請按一下Adobe Campaign首頁上的&#x200B;**[!UICONTROL Explorer]**&#x200B;連結。
+For more advanced profile manipulations, you need to edit the Adobe Campaign tree. To do this, click the **[!UICONTROL Explorer]** link on the Adobe Campaign home page.
 
-依預設，收件者會儲存在樹狀結構的&#x200B;**[!UICONTROL Profiles and Targets > Recipients]**&#x200B;節點中。 由此畫面，您可以建立收件者以及以下各項：
+By default, recipients are stored in the **[!UICONTROL Profiles and Targets > Recipients]** node of the tree. You can create recipients from this view, as well as:
 
-* 排序及篩選資料庫的設定檔 — [深入瞭解](../../platform/using/filtering-options.md)
-* 從資料庫移動、複製或刪除設定檔 — [深入瞭解](../../platform/using/managing-profiles.md)，
-* 更新設定檔 — [深入瞭解](../../platform/using/updating-data.md)
-* 匯出收件者 — [深入瞭解](../../platform/using/exporting-and-importing-profiles.md)
-* 建立收件者群組 — [深入瞭解](../../platform/using/creating-and-managing-lists.md)
+* sort and filter the profiles of the database - [Learn more](../../platform/using/filtering-options.md)
+* move, copy or delete profiles from the database - [Learn more](../../platform/using/managing-profiles.md),
+* update profiles - [Learn more](../../platform/using/updating-data.md)
+* export recipients - [Learn more](../../platform/using/exporting-and-importing-profiles.md)
+* create recipient groups - [Learn more](../../platform/using/creating-and-managing-lists.md)
 
-若要存取進階功能與設定，您必須按一下&#x200B;**[!UICONTROL Explorer]**&#x200B;圖示。
+To access advanced functionalities and configurations, you need to click the **[!UICONTROL Explorer]** icon. 
 
 ![](assets/d_ncs_user_interface01.png)
 
-Adobe Campaign Explorer的一般配置顯示在[此頁面](../../platform/using/adobe-campaign-explorer.md)中。
+The general layout of the Adobe Campaign explorer is presented in [this page](../../platform/using/adobe-campaign-explorer.md).
 
 >[!NOTE]
 >
->您也可以按一下&#x200B;**[!UICONTROL Profiles and targets > Recipients]**&#x200B;連結，從Adobe Campaign樹狀結構顯示此清單的進階檢視。 清單顯示可依您的需求進行設定。 您可以新增或刪除欄、定義欄順序、排序資料等。 清單顯示設定在[此頁面](../../platform/using/adobe-campaign-ui-lists.md)中說明。
+>You can also display an advanced view of this list from the Adobe Campaign tree by clicking the **[!UICONTROL Profiles and targets > Recipients]** link. The list display can be configured to suit your needs. You can add or delete columns, define column order, sort data, etc. List display configuration is described in [this page](../../platform/using/adobe-campaign-ui-lists.md).  
 >
->您也可以定義收件者檢視。 如需有關此功能的進一步資訊，請參閱[此章節](../../platform/using/access-management-folders.md)。
+>You can also define recipient views. For further information about this functionality, refer to [this section](../../platform/using/access-management-folders.md).
 
-## 活躍輪廓 {#active-profiles}
+## Active profiles {#active-profiles}
 
-作用中設定檔是客戶在過去12個月嘗試透過任何通道與之通訊的設定檔。
+An active profile is a profile that customer has attempted to communicate with during the past 12 months via any channel.
 
-根據您的合約，您的每個 Campaign 執行個體都已佈建特定數量的活躍輪廓，而且會計算這些輪廓數量以結算費用。請參閱您的最新合約，以參考已購買作用中設定檔數目。 深入瞭解[Adobe Campaign產品說明](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}。
+According to your contract, each of your Campaign instances is provisioned with a specific amount of active profiles that are counted for billing purposes. Please refer to your latest contract for reference on number of purchased active profiles. Learn more in [Adobe Campaign product description](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
 
-您可以直接從Campaign「控制面板」監視執行個體上的作用中設定檔數目。 如需詳細資訊，請參閱[控制面板檔案](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html?lang=zh-Hant){target="_blank"}。
+You can monitor the number of active profiles on your instance directly from Campaign Control Panel. For more on this, refer to the [Control Panel documentation](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html){target="_blank"}.
 
-以下護欄和限制在此適用：
+The following guardrails and limitations apply:
 
-* 數個傳送所定位的設定檔只會計算一次。
-* 在X (Twitter)或Facebook的社交行銷內容中鎖定的設定檔，不會視為作用中設定檔。
-* 作用中設定檔的計數僅適用於&#x200B;**行銷執行個體**。 它不適用於執行例項，亦即MID (mid sourcing)和RT （Message Center/即時傳訊）例項。
-* 計數是以收件者主索引鍵為基礎。 因此，如果設定檔存在於兩個不同的收件者表格中，則可將其計算為作用中設定檔兩次。
+* A profile that has been targeted by several deliveries is counted only once. 
+* Profiles targeted in the context of Social marketing on X (Twitter) or Facebook are not taken into account as active profiles.
+* The count of active profiles is available for **Marketing instances** only. It is not available for Execution instances, meaning MID (mid sourcing) and RT (Message Center / Real-time messaging) instances.
+* The count is based on the recipient primary key. As a consequence, if a profile is present in two different recipient tables, it can be counted twice as an active profile.
 
 
-## 教學課程影片 {#create-profiles-video}
+## Tutorial video {#create-profiles-video}
 
-瞭解如何存取輪廓資料、排序和篩選輪廓，以及手動建立和管理輪廓。
+Learn how to access profile data, sort and filter profiles and manually create and manage profiles.
 
-此影片也會說明Adobe Campaign Classic是否符合一般資料保護規範。
+This video also explains the compliance of Adobe Campaign Classic with General Data Protection Regulations. 
 
 >[!VIDEO](https://video.tv.adobe.com/v/35611?quality=12)
 
-其他 Campaign Classic 作法影片可在[此處](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant)取得。
+Additional Campaign Classic how-to videos are available [here](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
 
-**另請參閱**
+**See also**
 
-* 行銷活動中的[隱私權管理](https://helpx.adobe.com/tw/campaign/kb/acc-privacy.html)
+* [Privacy management in Campaign](https://helpx.adobe.com/campaign/kb/acc-privacy.html)
 
-* [在工作流程中建立查詢和區段資料](../../workflow/using/targeting-data.md)
+* [Create queries and segment data in workflows](../../workflow/using/targeting-data.md)
 
-* [選取目標對應](../../delivery/using/steps-defining-the-target-population.md#select-a-target-mapping)
+* [Select target mapping](../../delivery/using/steps-defining-the-target-population.md#select-a-target-mapping)
+
+-->

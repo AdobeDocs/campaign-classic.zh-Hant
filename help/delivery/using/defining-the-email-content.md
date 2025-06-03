@@ -5,8 +5,10 @@ description: 瞭解如何使用Adobe Campaign來定義電子郵件內容
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Email Design
 role: User
+hide: true
+hidefromtoc: true
 exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
 source-wordcount: '1958'
 ht-degree: 1%
@@ -28,7 +30,7 @@ ht-degree: 1%
 >[!NOTE]
 >
 >* 預設會使用寄件者的地址來回覆。
->* 標頭引數不得為空白。 依預設，它們包含設定部署精靈時輸入的值。 若要了解詳細資訊，請參閱[本章節](../../installation/using/deploying-an-instance.md)。
+>* 標頭引數不得為空白。 依預設，它們包含設定部署精靈時輸入的值。 若要了解更多資訊，請參閱[此區段](../../installation/using/deploying-an-instance.md)。
 >* 必須提供寄件者的地址，才能傳送電子郵件（RFC標準）。
 >* Adobe Campaign會檢查所輸入電子郵件地址的語法。
 
@@ -72,7 +74,7 @@ ht-degree: 1%
 
   >[!IMPORTANT]
   >
-  >HTML內容必須先建立，然後匯入Adobe Campaign中。 HTML編輯器並非針對內容建立而設計。
+  >HTML內容必須預先建立，然後匯入Adobe Campaign中。 HTML編輯器並非專為內容建立而設計。
 
   **[!UICONTROL Preview]**&#x200B;子索引標籤可讓您檢視每個收件者的內容轉譯。 個人化欄位和內容的條件元素會取代為所選設定檔的對應資訊。
 
@@ -92,7 +94,7 @@ ht-degree: 1%
   >
   >個人化欄位的使用在[關於個人化](about-personalization.md)中顯示。
 
-  頁面底部的標籤可讓您顯示正在建立之頁面的HTML代碼，並檢視訊息的呈現及其個人化。 若要啟動這個顯示，請按一下&#x200B;**[!UICONTROL Preview]**，並使用工具列中的&#x200B;**[!UICONTROL Test personalization]**&#x200B;按鈕選取收件者。 您可以從定義的目標中選取收件者，或選擇其他收件者。
+  頁面底部的標籤可讓您顯示正在建立之頁面的HTML程式碼，並檢視訊息的呈現及其個人化。 若要啟動這個顯示，請按一下&#x200B;**[!UICONTROL Preview]**，並使用工具列中的&#x200B;**[!UICONTROL Test personalization]**&#x200B;按鈕選取收件者。 您可以從定義的目標中選取收件者，或選擇其他收件者。
 
   ![](assets/s_ncs_user_wizard_email01_139.png)
 
@@ -104,7 +106,7 @@ ht-degree: 1%
 
   ![](assets/s_ncs_user_wizard_email01_141.png)
 
-  至於HTML格式，請按一下頁面底部的&#x200B;**[!UICONTROL Preview]**&#x200B;索引標籤，檢視訊息的演算及其個人化。
+  至於HTML格式，請按一下頁面底部的&#x200B;**[!UICONTROL Preview]**&#x200B;索引標籤，以檢視訊息的演算及其個人化。
 
   ![](assets/s_ncs_user_wizard_email01_142.png)
 
@@ -149,7 +151,7 @@ HTML格式電子郵件傳遞可包含影像。 從傳遞小幫手，您可以匯
 
 ### 護欄 {#img-guardrails}
 
-為避免效能問題，電子郵件中包含的影像不能超過100 KB。 預設設定的此限制可以從`NmsDelivery_MaxDownloadedImageSize`選項變更。 不過，Adobe強烈建議避免在電子郵件傳遞中使用大型影像。
+為避免效能問題，電子郵件中包含的影像不能超過100 KB。 預設設定的此限制可以從`NmsDelivery_MaxDownloadedImageSize`選項變更。 不過，Adobe強烈建議您在電子郵件傳送中避免大型影像。
 
 深入瞭解[Campaign Classic選項清單](../../installation/using/configuring-campaign-options.md#delivery)。
 
@@ -176,7 +178,7 @@ HTML格式電子郵件傳遞可包含影像。 從傳遞小幫手，您可以匯
 
 若要透過傳送助理管理影像：
 
-1. 按一下工具列中的&#x200B;**[!UICONTROL Tracking & Images]**&#x200B;圖示。
+1. 按一下工具列中的&#x200B;**[!UICONTROL Tracking & Images]**圖示。
    ![](assets/s_ncs_user_email_del_img_param.png)
 
 1. 在&#x200B;**[!UICONTROL Images]**&#x200B;索引標籤中選取&#x200B;**[!UICONTROL Upload images]**。

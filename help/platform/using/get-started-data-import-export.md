@@ -8,10 +8,10 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: d6055d97-75fc-4ed7-89bd-8336157454eb
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
-source-wordcount: '334'
-ht-degree: 10%
+source-wordcount: '103'
+ht-degree: 13%
 
 ---
 
@@ -25,46 +25,53 @@ Adobe Campaign Classic提供資料管理功能，可讓您匯入及匯出資料�
 >
 >使用此功能時，請謹記Adobe Campaign合約中的SFTP儲存、資料庫儲存和使用中設定檔限制。
 
-## 工作流程 {#workflows}
+>[!NOTE]
+>
+>若要瞭解如何將資料匯入及匯出至Campaign的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/import){target=_blank}。
+
+
+<!--
+## Workflows {#workflows}
 
 <img src="assets/do-not-localize/icon_workflows.svg" width="60px">
 
-**工作流程**&#x200B;是自動化匯入程式的實用方式。 無論您是從本機檔案或SFTP匯入資料，都可讓您將資料管理程式標準化。
+**Workflows** are a useful way to automate your import processes. Whether you import data from a local file or from a SFTP, they allow you to standardize your data management procedures.
 
-使用工作流程，可以根據排程自動重複匯入和匯出作業，例如自動化數個資訊系統之間的資料交換。
+With workflows, import and export operations can be repeated automatically according to a schedule, for example to automate data exchange between several information systems.
 
-如需詳細資訊，請參閱[本章節](../../platform/using/import-export-workflows.md)。
+For more on this, refer to [this section](../../platform/using/import-export-workflows.md).
 
-## 一般匯入和匯出 {#generic-import-export}
+## Generic imports and exports {#generic-import-export}
 
 <img src="assets/do-not-localize/icon_templates.svg" width="60px">
 
-此外，Campaign Classic提供&#x200B;**一般匯入和匯出**，可讓您建立偶爾匯入或匯出工作。
+Additionally, Campaign Classic provides **generic imports and exports** that allow you to create occasional import or export jobs.
 
-匯入和匯出是在專用範本中設定，您可以設定並使用這些範本來啟動和監視匯入和匯出作業。
+Imports and exports are configured in dedicated templates, that you can configure and use to launch and monitor import and export jobs.
 
-如需一般匯入和匯出的詳細資訊，請參閱[本節](../../platform/using/about-generic-imports-exports.md)。
+For more on generic imports and exports, refer to [this section](../../platform/using/about-generic-imports-exports.md).
 
 >[!IMPORTANT]
->一般匯入和匯出應僅用於偶爾作業。 為確保資料一致性及提高效率，建議您使用工作流程執行匯入和匯出作業。
+>Generic imports and exports should be used for occasional operations only. To ensure data consistency and improve efficiency, it is recommended to perform your import and export operations using workflows.
 
-## 資料加密和壓縮 {#data-encryption-compression}
+## Data encryption and compression {#data-encryption-compression}
 
 <img src="assets/do-not-localize/icon_encrypt.svg" width="60px">
 
-Campaign Classic可讓您匯入壓縮或加密的檔案，以及匯出壓縮或加密的檔案。
+Campaign Classic allows you to import zipped or encrypted files, and export zipped or encrypted file.
 
-這些作業是透過將前置處理階段套用至您要利用的資料在工作流程中執行。
+These operations are performed within workflows, by applying pre-processing stages to the data you want to leverage.
 
-如需詳細資訊，請參閱下列區段。
+For more on this, refer to these sections:
 
-* [解壓縮或解密檔案](../../platform/using/unzip-decrypt.md)
-* [壓縮或加密檔案](../../platform/using/zip-encrypt.md)
+* [Unzip or decrypt a file](../../platform/using/unzip-decrypt.md)
+* [Zip or encrypt a file](../../platform/using/zip-encrypt.md)
 
-## 最佳作法和疑難排解 {#best-practices-troubleshooting}
+## Best practices and troubleshooting {#best-practices-troubleshooting}
 
 <img src="assets/do-not-localize/icon_bestpractices.svg" width="60px">
 
-在執行匯入和匯出作業時，您應該遵循數個[最佳實務](../../platform/using/import-export-best-practices.md)，以確保資料庫內的資料一致性，並避免在更新或匯出作業期間發生常見錯誤。
+You should follow several [best practices](../../platform/using/import-export-best-practices.md) when performing import and export operations to ensure data consistency within the database and avoid common errors during update or export operations.
 
-此外，[此章節](../../platform/using/sftp-server-usage.md)也提供與SFTP伺服器使用量相關的建議和常見問題。
+Additionally, recommendations and common issues related to SFTP servers usage are available in [this section](../../platform/using/sftp-server-usage.md).
+-->

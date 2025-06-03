@@ -5,23 +5,25 @@ description: 瞭解如何在Campaign傳送、監控和追蹤簡訊
 feature: SMS
 role: User
 exl-id: 442672ee-5037-49b7-a06f-3a99920ce2b6
-source-git-commit: 41296a0acaee93d31874bf58287e51085c6c1261
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
-source-wordcount: '962'
-ht-degree: 4%
+source-wordcount: '887'
+ht-degree: 1%
 
 ---
 
-# 傳送、監控和追蹤簡訊傳遞{#sms-properties}
+# 其他設定{#sms-properties}
 
-## 傳送簡訊訊息 {#sending-sms-messages}
+<!--
+## Send SMS messages {#sending-sms-messages}
 
-若要核准您的郵件並傳送給所建立傳遞的收件者，請按一下&#x200B;**[!UICONTROL Send]**。
+To approve your message and send it to the recipients of the delivery being created, click **[!UICONTROL Send]**.
 
-驗證和傳送傳送時的詳細程式會顯示在下列章節中：
+The detailed process when validating and sending a delivery is presented in the sections below:
 
-* [驗證傳遞](steps-validating-the-delivery.md)
-* [傳送傳遞](steps-sending-the-delivery.md)
+* [Validate the delivery](steps-validating-the-delivery.md)
+* [Send the delivery](steps-sending-the-delivery.md)
+-->
 
 ## 高級參數 {#advanced-parameters}
 
@@ -55,13 +57,15 @@ ht-degree: 4%
 
 * **每則訊息的SMS數目上限**：此選項可讓您設定用於傳送訊息的SMS數目。 如果數字設為0，您可以使用簡訊傳送訊息。 舉例來說，如果SMS數量設為1或2，而訊息超過此臨界值，則不會傳送。
 
-## 監視和追蹤簡訊 {#monitoring-and-tracking-sms-deliveries}
+<!--
+## Monitor and track SMS {#monitoring-and-tracking-sms-deliveries}
 
-傳送訊息後，您可以監視和追蹤您的傳遞。 如需詳細資訊，請參閱下列區段。
+After sending messages, you can monitor and track your deliveries. For more on this, refer to these sections:
 
-* [監視傳遞](about-delivery-monitoring.md)
-* [瞭解傳遞失敗](understanding-delivery-failures.md)
-* [關於訊息追蹤](about-message-tracking.md)
+* [Monitor a delivery](about-delivery-monitoring.md)
+* [Understand delivery failures](understanding-delivery-failures.md)
+* [About message tracking](about-message-tracking.md)
+-->
 
 ## 處理傳入訊息 {#processing-inbound-messages}
 

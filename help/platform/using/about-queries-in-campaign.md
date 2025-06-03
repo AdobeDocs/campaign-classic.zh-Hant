@@ -7,10 +7,10 @@ feature: Query Editor
 role: User, Data Architect
 level: Beginner
 exl-id: 2db1034d-cad6-4fb0-8646-dd9099080ab0
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 80%
+source-wordcount: '203'
+ht-degree: 69%
 
 ---
 
@@ -26,6 +26,8 @@ Adobe Campaign查詢工具可讓您使用專用助理來查詢資料庫：一般
 
 透過使用所選資料表的欄位或公式可以建立查詢。
 
-[按一下這裡](../../workflow/using/query.md) ，以探索 Campaign 查詢編輯器。
+>[!NOTE]
+>
+>若要進一步瞭解查詢以及如何建立查詢，請參閱[Campaign v8檔案](../../workflow/using/query.md)。
 
-![](assets/query_recipients_4.png)
+![顯示查詢範例的熒幕擷圖。](assets/query_recipients_4.png)

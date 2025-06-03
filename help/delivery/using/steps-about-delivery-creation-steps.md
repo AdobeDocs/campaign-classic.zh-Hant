@@ -4,11 +4,13 @@ title: 關於Adobe Campaign中的傳遞建立步驟
 description: 探索Adobe Campaign中的主要傳遞建立步驟
 feature: Channel Configuration
 role: User
+hide: true
+hidefromtoc: true
 exl-id: 0188c3fe-8176-4904-8505-c47a72c20fcc
-source-git-commit: 446062946b64c9a4d065b6a56d263914cbe628f8
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
 source-wordcount: '130'
-ht-degree: 12%
+ht-degree: 22%
 
 ---
 
@@ -18,7 +20,7 @@ ht-degree: 12%
 
 1. **建立並識別傳遞**。 [閱讀更多](steps-create-and-identify-the-delivery.md)
 
-1. **定義傳遞內容**。 每個管道都有專屬的傳遞內容定義。 如需詳細資訊，請參閱專屬區段：
+1. **定義傳遞內容**。 每個管道都有專屬的傳遞內容定義。 如需詳細資訊，請參閱專用區段。
 
    * [電子郵件管道](defining-the-email-content.md)
    * [簡訊管道](sms-create.md#defining-the-sms-content)

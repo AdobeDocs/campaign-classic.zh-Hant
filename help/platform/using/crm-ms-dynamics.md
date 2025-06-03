@@ -4,7 +4,9 @@ title: Campaign - Microsoft Dynamics CRM聯結器
 description: 瞭解如何連結Campaign和Microsoft Dynamics
 feature: Microsoft CRM Integration
 exl-id: 26737940-b3ce-425c-9604-f4cefd19afaa
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+hide: true
+hidefromtoc: true
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
 source-wordcount: '1104'
 ht-degree: 2%
@@ -23,7 +25,7 @@ ht-degree: 2%
 
 ## 實施步驟{#microsoft-dynamics-implementation-steps}
 
-若要透過&#x200B;**Web API**&#x200B;連線Microsoft Dynamics 365以使用Adobe Campaign，您必須套用下列步驟：
+若要透過&#x200B;**Web API**&#x200B;連線Microsoft Dynamics 365以搭配Adobe Campaign使用，您必須套用下列步驟：
 
 在Microsoft Dynamics CRM中：
 1. 取得Microsoft Dynamics使用者端ID
@@ -34,7 +36,7 @@ ht-degree: 2%
 
 [在本節中瞭解更多](#config-crm-microsoft)
 
-Campaign Classic：
+在Campaign Classic中：
 1. 建立新的外部帳戶
 1. 使用Microsoft Dynamics設定設定外部帳戶
 1. 使用組態輔助程式來對應表格並同步列舉
@@ -153,7 +155,7 @@ Campaign Classic：
 
 >[!NOTE]
 >
-> 從Microsoft[&#128279;](https://docs.microsoft.com/previous-versions/dynamicscrm-2016/developers-guide/dn281891%28v=crm.8%29#microsoft-dynamics-crm-2011-endpoint)停用RDS後，內部部署和Office 365型別的CRM部署不再與Campaign相容。 Adobe Campaign現在只支援CRM版本&#x200B;**Dynamic CRM 365**&#x200B;的Web API部署。 [了解更多](../../rn/using/deprecated-features.md#crm-connectors)。
+> 從Microsoft](https://docs.microsoft.com/previous-versions/dynamicscrm-2016/developers-guide/dn281891%28v=crm.8%29#microsoft-dynamics-crm-2011-endpoint)停用[RDS後，內部部署和Office 365型別的CRM部署不再與Campaign相容。 Adobe Campaign現在只支援CRM版本&#x200B;**Dynamic CRM 365**&#x200B;的Web API部署。 [了解更多](../../rn/using/deprecated-features.md#crm-connectors)。
 
 若要連線Microsoft Dynamics 365和Campaign，您需要在Campaign中建立並設定專用的&#x200B;**[!UICONTROL External Account]**。
 
@@ -165,7 +167,7 @@ Campaign Classic：
 
    >[!NOTE]
    >
-   >本節[&#128279;](../../installation/using/external-accounts.md#microsoft-dynamics-crm-external-account)中詳細說明每個&#x200B;**[!UICONTROL CRM O-Auth type]**&#x200B;的Microsoft Dynamics CRM外部帳戶組態。
+   >本節](../../installation/using/external-accounts.md#microsoft-dynamics-crm-external-account)中詳細說明每個&#x200B;**[!UICONTROL CRM O-Auth type]**&#x200B;的Microsoft Dynamics CRM外部帳戶組態[。
 
    ![](assets/crm-ms-dynamics-ext-account.png)
 
@@ -189,11 +191,11 @@ Campaign Classic：
 
    ![](assets/crm_connectors_msdynamics_05.png)
 
-1. 按一下&#x200B;**[!UICONTROL Synchronizing enumerations...]**&#x200B;連結，開始在Adobe Campaign和Microsoft Dynamics之間同步列舉。
+1. 按一下&#x200B;**[!UICONTROL Synchronizing enumerations...]**&#x200B;連結，開始在Adobe Campaign和Microsoft Dynamics之間同步分項清單。
 
    ![](assets/crm_connectors_msdynamics_06.png)
 
-Campaign與Microsoft Dynamics現已連線。 您可以設定兩個系統之間的資料同步。 在[資料同步處理](../../platform/using/crm-data-sync.md)一節中瞭解更多資訊。
+Campaign和Microsoft Dynamics現已連線。 您可以設定兩個系統之間的資料同步。 在[資料同步處理](../../platform/using/crm-data-sync.md)一節中瞭解更多資訊。
 
 >[!NOTE]
 >
@@ -201,7 +203,7 @@ Campaign與Microsoft Dynamics現已連線。 您可以設定兩個系統之間�
 
 ## 支援的欄位資料型別 {#ms-dyn-supported-types}
 
-對於Microsoft Dynamics 365，支援/不支援的屬性型別列於下方：
+Microsoft Dynamics 365支援/不支援的屬性型別列於下方：
 
 
 | 屬性型別 | 支援 |

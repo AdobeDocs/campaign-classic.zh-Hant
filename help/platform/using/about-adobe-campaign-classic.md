@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 8febceb0-9694-4045-a630-a7ff2fd18943
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
-source-wordcount: '912'
-ht-degree: 90%
+source-wordcount: '142'
+ht-degree: 57%
 
 ---
 
@@ -21,76 +21,80 @@ ht-degree: 90%
 
 >[!AVAILABILITY]
 >
->* 此集合中的說明資料適用於其[最新組建](../../rn/using/latest-release.md)中的Campaign Classicv7。 當區段也適用於Campaign v8時，可提供特定徽章。
+>* 此集合中的說明資料適用於Campaign Classic v7的[最新建置](../../rn/using/latest-release.md)。 當區段也適用於Campaign v8時，可提供特定徽章。
 >
->* [此處](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaign-home.html?lang=zh-Hant)提供Adobe Campaign v8檔案。
+>* 若要進一步瞭解Adobe Campaign以及如何開始使用，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/get-started){target=_blank}。
 
 ![](assets/do-not-localize/how-to-video.png) [探索視訊中的主要功能](#video)
 
-## 主要功能 {#key-capabilities}
+<!--
 
-Adobe Campaign 為跨通路客戶體驗的設計提供了平台，並為可視性行銷活動的策劃、即時互動管理和跨通路執行提供了環境。
+## Key capabilities {#key-capabilities}
 
-Adobe Campaign 中的行銷活動週期說明了產品的主要功能區：
+Adobe Campaign provides a platform for designing cross-channel customer experiences and provides an environment for visual campaign orchestration, real time interaction management and cross channel execution.
+
+The marketing campaign cycle in Adobe Campaign illustrates the main areas of functionality of the product:
 
 ![](assets/d_ncs_user_emarketing.png)
 
-### 整合式客戶設定檔 {#integrated-customer-profile}
+### Integrated customer profile {#integrated-customer-profile}
 
-用戶檔案 (客戶、潛在客戶、新聞訂閱者等) 將匯集於 Adobe Campaign 資料庫中。要獲取用戶檔案，並建立此資料庫，有許多可行的機制：透過網路表單線上收集、手動或自動匯入文字檔、透過公司資料庫或其他資訊系統進行複寫。藉助 Adobe Campaign，您可以將行銷記錄、購買資訊、偏好、CRM 資料以及任何相關的 PII 資料融入整合視圖中，以進行分析並採取行動。
+Profiles (customers, prospects, newsletter subscribers, etc.) are centralized in the Adobe Campaign database. There are many possible mechanisms for acquiring profiles and building up this database: on-line collection via web forms, manual or automatic import of text files, replication with company databases or other information systems. With Adobe Campaign, you can incorporate marketing history, purchase information, preferences, CRM data, and any relevant PII data in a consolidated view to analyze and take action.
 
-在 Adobe　Campaign 中，收件者是用於傳送內容 (電子郵件、簡訊等) 的預設用戶檔案。有了資料庫中儲存的收件者資料，您能夠對接收任何給定內容的收件者進行篩選，並在交付內容中新增個人化資料。資料庫中還存在其他類型的用戶檔案。這些用戶檔案是針對不同用途設計的。例如，種子用戶檔案用於在內容傳送給最終目標前測試內容。
+In Adobe Campaign, recipients are the default profiles targeted for sending deliveries (emails, SMS, etc.). Thanks to the recipient data that are stored in the database, you will be able to filter the target that will receive any given delivery and to add personalization data in your delivery contents. Other types of profiles exist in the database. They are designed for different uses. For example, seed profiles are made to test your deliveries before they are sent to the final target.
 
-在[&#128279;](../../platform/using/about-profiles.md)關於設定檔中對設定檔管理的基本知識進行說明。
+Profile management basics are explained in [About profiles](../../platform/using/about-profiles.md).
 
-### 目標市場細分 {#targeted-segmentation}
+### Targeted segmentation {#targeted-segmentation}
 
-Adobe Campaign 提供了強大且方便使用的市場細分和目標鎖定功能，允許您建立針對性強的差異化優惠方案。描述性分析功能允許您分析行銷活動的上游和下游資訊，而篩選管理及[圖形查詢編輯器](../../platform/using/about-queries-in-campaign.md)功能允許您根據不限數量的條件來篩選訂閱者母體及樣本或者設定目標群組。分析和鎖定功能在[本頁面](../../reporting/using/about-descriptive-analysis.md)及[建立篩選器](../../platform/using/creating-filters.md)一節中進行了說明。
+Adobe Campaign has powerful, user-friendly segmentation and targeting features that let you create highly targeted, differentiated offers. The descriptive analysis functionality lets you analyze information upstream and downstream of your marketing campaigns, and the filter management and [graphical query editor](../../platform/using/about-queries-in-campaign.md) functionality lets you filter your subscriber population and sample or create target groups based on an unlimited number of criteria. The analysis and targeting features are described in [this page](../../reporting/using/about-descriptive-analysis.md) and in the [Creating filters](../../platform/using/creating-filters.md) section.
 
-進階資料管理功能對資料處理能力進行了進一步的擴充。該功能透過包含未在資料超市中模型化的資料，來簡化及最佳化目標鎖定流程。本功能在[本頁面](../../workflow/using/targeting-data.md#data-management)中有詳細的說明。
+The advanced Data Management functionality extends the data processing capabilities. It simplifies and optimizes the targeting process by including data not modeled in the datamart. This functionality is detailed in [this page](../../workflow/using/targeting-data.md#data-management).
 
-### 跨頻道行銷活動策劃 {#cross-channel-campaign-orchestration}
+### Cross-channel campaign orchestration {#cross-channel-campaign-orchestration}
 
-Adobe Campaign 可讓您在多個頻道上設計及編排有針對性的個人化行銷活動：電子郵件、直接行銷郵件、簡訊、推播通知等。單一介面可為您提供排程、編排、設定、個人化、自動化、執行和評量所有行銷活動和通訊所需的所有功能。如需活動排程和執行行銷活動的更多資訊，請參閱[本頁面](../../campaign/using/setting-up-marketing-campaigns.md)。
+Adobe Campaign lets you design and orchestrate targeted and personalized campaigns on multiple channels: email, direct mail, SMS, push notification. A single interface provides you with all the functions required to schedule, orchestrate, configure, personalize, automate, execute, and measure all your campaigns and communications. For more on scheduling and executing campaigns, refer to [this page](../../campaign/using/setting-up-marketing-campaigns.md).
 
-### 個人化和即時互動 {#personalization-and-real-time-interaction}
+### Personalization and real-time interaction {#personalization-and-real-time-interaction}
 
-根據客戶用戶檔案和偏好，對訊息內容及標頭進行進一步的個人化，來吸引客戶的目光並提高回應率。如需訊息內容管理及個人化的詳細資訊，請參閱[本頁面](../../delivery/using/about-personalization.md)。[本節](../../mrm/using/about-marketing-resource-management.md)中詳盡說明了內容、通知和核准循環的協作管理。
+Attract your customers' attention and improve response rates thanks to the advanced personalization of message content and headers based on customer profiles and preferences. For more on message content management and personalization, refer to [this page](../../delivery/using/about-personalization.md). Collaborative management of content, notification and approval circuits are detailed in [this section](../../mrm/using/about-marketing-resource-management.md).
 
-### 分析和報告 {#analysis-and-reporting}
+### Analysis and reporting {#analysis-and-reporting}
 
-您可以使用 Adobe Campaign 透過逐步豐富客戶資料和用戶檔案，來監視和解讀客戶行為。使用報告和分析工具，您可以充分利用每一次新的行銷活動、更有效地鎖定行銷方案，且最優化行銷影響力及投資報酬。如需詳細資訊，請參閱[本頁面](../../reporting/using/delivery-reports.md)。
+Adobe Campaign lets you monitor and interpret the behavior of your customers by gradually enriching their data and profiles. The reporting and analysis tools let you capitalize on each new campaign, target your marketing initiatives better, and optimize their impact and return on investment. Refer to [this page](../../reporting/using/delivery-reports.md) for more information.
 
-### Adobe Experience Cloud 整合 {#adobe-experience-cloud-integrations}
+### Adobe Experience Cloud integrations {#adobe-experience-cloud-integrations}
 
-您可以將 Adobe Campaign 的交付功能和行銷活動管理進階功能與協助您個人化使用者體驗的解決方案 (例如　Adobe Experience Manager、Adobe Analytics、Adobe Target 或 Adobe Experience Cloud 觸發程式) 相結合。您也可以透過 Adobe ID 整合至 Adobe IMS 並登入 Campaign。如需跨解決方案和驗證整合的詳細資訊，請參閱[本節](../../integrations/using/about-adobe-id.md)。
+You can combine the delivery functionalities and advanced campaign management functionalities of Adobe Campaign with a set of solutions created to help you personalize your users' experience: Adobe Experience Manager, Adobe Analytics, Adobe Target or Adobe Experience Cloud triggers for example. You can also integrate to Adobe IMS and login to Campaign with your Adobe ID. For more on cross-solution and authentication integrations, refer to [this section](../../integrations/using/about-adobe-id.md).
 
-## 核心功能及附加元件 {#core-capabilities-and-add-ons}
+## Core capabilities and add-ons {#core-capabilities-and-add-ons}
 
-Adobe Campaign 提供了一系列功能，協助您根據需求和架構實行及最佳化對話式行銷功能。其中部分是核心功能，部分功能取決於套件的安裝和您的設定。此處提供詳細的產品說明： [Adobe Campaign產品說明](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}。
+Adobe Campaign offers a set of capabilities to help you implementing and optimizing the conversational marketing functionalities depending on your needs and your architecture. Some of them are core capabilities and some depend on the installation of a package and on your configuration. A detailed product description is available here: [Adobe Campaign product description](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
 
-下列功能可供選用。您的執行個體可能提供或不提供其中的部分功能，具體取決於您的授權協定。
+The following capabilities are available. Depending on your license agreement, some of these capabilities can be available or not in your instance.
 
-* [通路](../../delivery/using/steps-about-delivery-creation-steps.md) - 在不同通路上設計與傳送內容：電子郵件、SMS、Line、行動應用程式、直效行銷郵件
-* [行銷活動](../../campaign/using/designing-marketing-campaigns.md) - 編排跨通路行銷活動
-* [MRM](../../mrm/using/about-marketing-resource-management.md) -管理行銷資源和預算
-* [互動](../../interaction/using/interaction-and-offer-management.md) -運用 Campaign 管理優惠方案
-* [訊息中心](../../message-center/using/about-transactional-messaging.md) -透過電子郵件、簡訊或在行動應用程式上傳送交易式訊息
-* [社交行銷](../../social/using/about-social-marketing.md) — 在社群媒體上通訊：Facebook、X (先前稱為Twitter)、
-* [工作流程](../../workflow/using/about-workflows.md)/資料管理 - 透過工作流程自動化流程並管理資料
-* [網路應用程式](../../web/using/about-web-applications.md) -建立網頁和表單
-* [意見調查管理員](../../surveys/using/about-surveys.md) -建立線上意見調查和投票
-* [內容管理員](../../delivery/using/about-content-management.md) -管理電子郵件內容
-* [分散式行銷](../../distributed/using/about-distributed-marketing.md) -協調中央/地方機關的行銷活動
-* [回應管理員](../../response/using/about-response-manager.md) -管理客戶回應
-* [連接器](../../platform/using/about-connectors.md) -利用連接器與外部解決方案和資料庫引擎通訊
-* [網路服務](../../configuration/using/about-web-services.md) -透過 API/網路服務使用 Campaign
-* [報告](../../reporting/using/about-adobe-campaign-reporting-tools.md) -存取內建報表，分析資料及設計您自己的報告
+* [Channels](../../delivery/using/steps-about-delivery-creation-steps.md) - design and send deliveries on various channels: email, SMS, Line, mobile app, direct mail,
+* [Campaign](../../campaign/using/designing-marketing-campaigns.md) - orchestrate cross-channel campaigns,
+* [MRM](../../mrm/using/about-marketing-resource-management.md) - manage marketing resources and budgets,
+* [Interaction](../../interaction/using/interaction-and-offer-management.md) - managing offers with Campaign,
+* [Message Center](../../message-center/using/about-transactional-messaging.md) - send transactional messages by email, SMS or on mobile app,
+* [Social Marketing](../../social/using/about-social-marketing.md) - communicate on social media: Facebook, X (formerly known as Twitter),
+* [Workflow](../../workflow/using/about-workflows.md) / Data Management - automate processes and manage data with workflows,
+* [Web applications](../../web/using/about-web-applications.md) - create web pages and forms,
+* [Survey Manager](../../surveys/using/about-surveys.md) - create online surveys and polls,
+* [Content Manager](../../delivery/using/about-content-management.md) - manage email content,
+* [Distributed Marketing](../../distributed/using/about-distributed-marketing.md) - coordinate campaigns for central/local agencies,
+* [Response Manager](../../response/using/about-response-manager.md) - manage customer response,
+* [Connectors](../../platform/using/about-connectors.md) - use connectors to communicate with external solutions and database engines,
+* [Web Services](../../configuration/using/about-web-services.md) - use Campaign through APIs/Web Services,
+* [Reporting](../../reporting/using/about-adobe-campaign-reporting-tools.md) - access built-in reports, analyze data and design your own reports.
 
-## 教學課程影片 {#video}
+## Tutorial video {#video}
 
-此影片說明Campaign Classic的主要功能。
+This video presents Campaign Classic main features and capabilities.
 
 >[!VIDEO](https://video.tv.adobe.com/v/35129?quality=12)
 
-[此處](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant)提供其他Campaign Classic操作說明影片。
+Additional Campaign Classic how-to videos are available [here](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
+
+-->

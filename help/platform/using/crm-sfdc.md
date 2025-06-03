@@ -4,7 +4,9 @@ title: Campaign - Salesforce CRM聯結器
 description: 瞭解如何連結Campaign和Salesforce
 feature: Salesforce Integration
 exl-id: 94a1f00d-e952-4edd-9012-f71c87b897ca
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+hide: true
+hidefromtoc: true
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
 source-wordcount: '321'
 ht-degree: 0%
@@ -21,7 +23,7 @@ ht-degree: 0%
 
 
 外部帳戶可讓您將Salesforce資料匯入和匯出至Adobe Campaign。
-若要設定CRM Connector for Salesforce，請遵循下列步驟：
+若要設定Salesforce的CRM聯結器，請遵循下列步驟：
 
 1. 透過Adobe Campaign樹狀結構的&#x200B;**[!UICONTROL Administration > Platform > External accounts]**&#x200B;節點建立新的外部帳戶。
 1. 選取 **[!UICONTROL Salesforce.com]**。
@@ -84,8 +86,8 @@ ht-degree: 0%
 
 Campaign和Salesforce.com現已連線。 您可以設定兩個系統之間的資料同步。
 
-若要在Adobe Campaign資料和SFDC之間同步資料，您必須建立工作流程並使用&#x200B;**[!UICONTROL CRM connector]**&#x200B;活動。
+若要在Adobe Campaign資料和SFDC之間同步資料，您需要建立工作流程並使用&#x200B;**[!UICONTROL CRM connector]**&#x200B;活動。
 
 ![](assets/crm_connectors_sfdc_wf.png)
 
-在此頁面[&#128279;](../../platform/using/crm-data-sync.md)中進一步瞭解資料同步處理。
+在此頁面](../../platform/using/crm-data-sync.md)中進一步瞭解資料同步處理[。
