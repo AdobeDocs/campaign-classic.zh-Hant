@@ -33,7 +33,7 @@ Explorer導覽樹狀結構的每個資料夾都附加讀取、寫入和刪除存
 
 ![](assets/s_ncs_user_add_folder_in_tree.png)
 
-您可以自訂Explorer導覽樹狀結構。 在本節](adobe-campaign-workspace.md)中瞭解設定步驟和最佳實務[。
+您可以自訂Explorer導覽樹狀結構。 在本節[&#128279;](adobe-campaign-workspace.md)中瞭解設定步驟和最佳實務。
 
 ### 什麼是檢視 {#about-views}
 
