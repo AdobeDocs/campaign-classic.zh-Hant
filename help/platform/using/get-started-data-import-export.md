@@ -27,7 +27,7 @@ Adobe Campaign Classic提供資料管理功能，可讓您匯入及匯出資料�
 
 >[!NOTE]
 >
->若要瞭解如何將資料匯入及匯出至Campaign的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/import){target=_blank}。
+>若要瞭解如何將資料匯入及匯出至Campaign的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/data/import){target=_blank}。
 
 
 <!--

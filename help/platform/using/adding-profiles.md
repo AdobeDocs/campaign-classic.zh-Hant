@@ -23,7 +23,7 @@ ht-degree: 22%
 
 >[!NOTE]
 >
->若要進一步瞭解如何在Adobe Campaign主控台中建立設定檔，請參閱[Campaign v8檔案。](https://experienceleague.adobe.com/en/docs/campaign-classic/using/getting-started/profile-management/adding-profiles){target=_blank}
+>若要進一步瞭解如何在Adobe Campaign主控台中建立設定檔，請參閱[Campaign v8檔案。](https://experienceleague.adobe.com/zh-hant/docs/campaign-classic/using/getting-started/profile-management/adding-profiles){target=_blank}
 
 
 <!--

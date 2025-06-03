@@ -20,12 +20,12 @@ ht-degree: 28%
 
 在Campaign v8檔案中瞭解與傳送建立相關的關鍵步驟：
 
-* [建立傳遞](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#create-the-delivery){target="_blank"}：瞭解如何建立單次傳遞。
-* [定義內容](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#content-of-the-delivery){target="_blank"}：設定每個頻道專屬的傳遞內容。
-* [指定對象](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#target-population){target="_blank"}：定義幾種目標型別：主要對象、證明目標、種子地址和控制群組。
-* [驗證傳遞](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#validate-the-delivery){target="_blank"}：瞭解如何先驗證傳遞，再將其傳送至主要目標。
-* [傳送傳遞](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#configuring-and-sending-the-delivery){target="_blank"}：設定傳遞設定並定義傳送訊息的方式。
-* [傳遞最佳實務](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html){target="_blank"}：請參閱與Campaign傳遞功能相關的最佳實務。
+* [建立傳遞](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hant#create-the-delivery){target="_blank"}：瞭解如何建立單次傳遞。
+* [定義內容](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hant#content-of-the-delivery){target="_blank"}：設定每個頻道專屬的傳遞內容。
+* [指定對象](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hant#target-population){target="_blank"}：定義幾種目標型別：主要對象、證明目標、種子地址和控制群組。
+* [驗證傳遞](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hant#validate-the-delivery){target="_blank"}：瞭解如何先驗證傳遞，再將其傳送至主要目標。
+* [傳送傳遞](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hant#configuring-and-sending-the-delivery){target="_blank"}：設定傳遞設定並定義傳送訊息的方式。
+* [傳遞最佳實務](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=zh-Hant){target="_blank"}：請參閱與Campaign傳遞功能相關的最佳實務。
 
 另請參閱此[頁面](delivery-settings.md)，瞭解特定的Campaign Classic傳遞設定。
 
@@ -33,7 +33,7 @@ ht-degree: 28%
 
    Learn how to create a one-shot single delivery. You can create other types of deliveries to build your use cases. 
 
-For more information about the different types of deliveries and how to create them, refer to the [Campaign v8 documentation](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}. 
+For more information about the different types of deliveries and how to create them, refer to the [Campaign v8 documentation](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hant){target="_blank"}. 
 
 >[!NOTE]
 >

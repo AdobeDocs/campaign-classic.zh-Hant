@@ -38,7 +38,7 @@ Adobe Campaign 為資料控制方執行隱私權存取和刪除請求提供兩�
 >[!NOTE]
 >
 >* 如需關於個人資料及管理資料之不同實體 (資料控制方、資料處理方和資料主體) 的詳細資訊，請參閱[個人資料和人員](privacy-and-recommendations.md#personal-data)。
->* 若要深入瞭解隱私權要求，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/privacy/privacy){target=_blank}。
+>* 若要深入瞭解隱私權要求，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/privacy/privacy){target=_blank}。
 
 <!--
 ## Prerequisites {#prerequesites}

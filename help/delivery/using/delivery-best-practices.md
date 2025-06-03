@@ -16,4 +16,4 @@ ht-degree: 8%
 
 # 關於傳遞的最佳實務 {#delivery-best-practices}
 
-有關傳遞設計與使用Adobe Campaign傳送的最佳實務，詳情載於[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/delivery-best-practices){target="_blank"}。
+有關傳遞設計與使用Adobe Campaign傳送的最佳實務，詳情載於[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/delivery-best-practices){target="_blank"}。

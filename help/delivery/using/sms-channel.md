@@ -18,13 +18,13 @@ ht-degree: 0%
 
 在Campaign v8檔案中瞭解與建立簡訊傳遞相關的關鍵步驟：
 
-* [簡訊通道概觀](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/sms.html){target="_blank"}：瞭解您如何透過行動裝置傳送簡訊給您的客戶。
-* [建立SMS傳遞](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/create-sms/create-sms.html){target="_blank"}：探索建立新SMS傳遞所需的不同步驟。
-* [定義內容](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/create-sms/sms-content.html){target="_blank"}：瞭解如何個人化SMS訊息的內容。
-* [選取對象](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/create-sms/sms-audience.html){target="_blank"}：主要目標已從Adobe Campaign資料庫擷取，或也可以儲存在外部檔案中。
-* [傳送SMS校樣](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/validate-sms/sms-proofs.html)：必須設定傳遞驗證週期。 將內容傳送給對象之前，請確定內容已核准。
+* [簡訊通道概觀](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/sms.html?lang=zh-Hant){target="_blank"}：瞭解您如何透過行動裝置傳送簡訊給您的客戶。
+* [建立SMS傳遞](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/create-sms/create-sms.html?lang=zh-Hant){target="_blank"}：探索建立新SMS傳遞所需的不同步驟。
+* [定義內容](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/create-sms/sms-content.html?lang=zh-Hant){target="_blank"}：瞭解如何個人化SMS訊息的內容。
+* [選取對象](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/create-sms/sms-audience.html?lang=zh-Hant){target="_blank"}：主要目標已從Adobe Campaign資料庫擷取，或也可以儲存在外部檔案中。
+* [傳送SMS校樣](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/validate-sms/sms-proofs.html?lang=zh-Hant)：必須設定傳遞驗證週期。 將內容傳送給對象之前，請確定內容已核准。
 * [傳送給對象](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/validate-sms/sms-send.html?lang=zh-Hant)：當您的SMS通過驗證時，您現在可以傳送給其對象。
-* [監視及追蹤SMS](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/sms-monitor.html)：監視您的SMS傳遞，以確保您的行銷活動有效率。
+* [監視及追蹤SMS](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/sms-monitor.html?lang=zh-Hant)：監視您的SMS傳遞，以確保您的行銷活動有效率。
 
 請參閱這些頁面以瞭解有關設定的資訊：
 
