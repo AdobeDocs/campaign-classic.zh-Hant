@@ -2,13 +2,12 @@
 product: campaign
 title: 在Adobe Campaign Classic中管理傳遞能力時的關鍵點
 description: 瞭解在Adobe Campaign中管理傳遞能力時需檢查的關鍵點
-badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Deliverability, Troubleshooting
 role: User
 exl-id: f94897c1-b44c-4100-ac50-a89b13fa6f2f
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: b353b562bd2f0b0bd2dfde22c6477ab66d499483
 workflow-type: tm+mt
-source-wordcount: '657'
+source-wordcount: '648'
 ht-degree: 1%
 
 ---

@@ -2,15 +2,14 @@
 product: campaign
 title: 電子郵件參數
 description: 瞭解電子郵件傳送的專屬選項和設定
-badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Email
 role: User, Developer, Data Engineer
 hide: true
 hidefromtoc: true
 exl-id: 1bb36e71-9f1a-4553-b266-eca3f48688e2
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+source-git-commit: b353b562bd2f0b0bd2dfde22c6477ab66d499483
 workflow-type: tm+mt
-source-wordcount: '912'
+source-wordcount: '903'
 ht-degree: 10%
 
 ---
@@ -117,7 +116,7 @@ Adobe Campaign可讓您只要新增密件副本電子郵件地址至訊息目標
 
 傳遞引數的&#x200B;**[!UICONTROL SMTP]**&#x200B;索引標籤可讓您設定退回郵件的管理。
 
-依預設，平台[&#128279;](../../installation/using/deploying-an-instance.md#parameters-for-delivered-emails-parameters-for-delivered-emails)的預設錯誤方塊中會收到退回的電子郵件，但您可以定義傳遞的特定錯誤位址。
+依預設，平台](../../installation/using/deploying-an-instance.md#parameters-for-delivered-emails-parameters-for-delivered-emails)的[預設錯誤方塊中會收到退回的電子郵件，但您可以定義傳遞的特定錯誤位址。
 
 您也可以從此畫面定義特定地址，以便調查當應用程式無法自動限定郵件時退回郵件的原因。 對於每個欄位，**新增個人化欄位**&#x200B;圖示可讓您新增個人化引數。
 

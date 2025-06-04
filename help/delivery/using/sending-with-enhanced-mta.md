@@ -2,13 +2,12 @@
 product: campaign
 title: 使用Adobe Campaign Classic中的增強型MTA傳送
 description: 瞭解使用Adobe Campaign Enhanced MTA傳送電子郵件的範圍和特性
-badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Email
 role: User, Admin, Developer
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: b353b562bd2f0b0bd2dfde22c6477ab66d499483
 workflow-type: tm+mt
-source-wordcount: '1377'
+source-wordcount: '1368'
 ht-degree: 1%
 
 ---
@@ -21,7 +20,7 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->Adobe Campaign Enhanced MTA僅適用於Campaign Classic託管或混合型客戶。 無法將Campaign Classic內部部署安裝升級為使用增強型MTA。
+>Adobe Campaign Enhanced MTA僅適用於Campaign Classic託管或混合型客戶。 Campaign Classic內部部署安裝無法升級為使用增強型MTA。
 
 如果您在2018年9月之後布建Campaign Classic執行個體，則使用增強型MTA。 若是其他所有Campaign Classic客戶，請參閱下列[常見問題](#enhanced-mta-faq)。
 
@@ -76,7 +75,7 @@ No, there is no extra fee associated with the upgrade process to enable the use 
 
 **將我的執行個體升級至增強型MTA的程式為何？**
 
-託管執行個體的整個程式需要幾分鐘的停機時間。 Adobe將在升級後24小時內監控電子郵件輸送量和傳遞能力，以評估對電子郵件傳遞的任何影響。
+託管執行個體的整個程式需要幾分鐘的停機時間。 Adobe在升級後最多24小時都會監控電子郵件輸送量和傳遞能力，以評估對電子郵件傳遞的任何影響。
 
 如果發現任何問題，Adobe可以快速將您的執行個體暫時恢復為原生Adobe Campaign MTA。
 
@@ -136,8 +135,8 @@ Campaign不再使用傳送中的重試設定。 軟退信重試次數和兩次�
 
 ### DKIM簽署
 
-DKIM (DomainKeys Indified Mail)電子郵件驗證簽署是由Enhanced MTA完成。 原生Campaign MTA的DKIM簽署將在Enhanced MTA升級過程中於網域管理表格內關閉。
-如需DKIM的詳細資訊，請參閱[Adobe傳遞性最佳實務指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=zh-Hant#authentication)。
+DKIM (DomainKeys Indified Mail)電子郵件驗證簽署是由Enhanced MTA完成。 原生Campaign MTA的DKIM簽署功能將會在Enhanced MTA升級過程中，於網域管理表格內關閉。
+如需DKIM的詳細資訊，請參閱[Adobe傳遞能力最佳實務指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication)。
 
 ### 傳遞成功報告
 
@@ -147,7 +146,7 @@ DKIM (DomainKeys Indified Mail)電子郵件驗證簽署是由Enhanced MTA完成�
 
 當硬退信從Enhanced MTA回傳時，其狀態會從&#x200B;**[!UICONTROL Sent]**&#x200B;變更為&#x200B;**[!UICONTROL Failed]**，而&#x200B;**[!UICONTROL Success]**&#x200B;百分比會因此減少。
 
-當從Enhanced MTA回報軟退信時，訊息仍顯示為&#x200B;**[!UICONTROL Sent]**，且&#x200B;**[!UICONTROL Success]**&#x200B;百分比尚未更新。 然後，軟退信會在整個傳遞有效期內重試[&#128279;](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure)：
+當從Enhanced MTA回報軟退信時，訊息仍顯示為&#x200B;**[!UICONTROL Sent]**，且&#x200B;**[!UICONTROL Success]**&#x200B;百分比尚未更新。 然後，軟退信會在整個傳遞有效期內重試[](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure)：
 
 * 如果在有效期間結束前重試成功，則訊息狀態會維持為&#x200B;**[!UICONTROL Sent]**，**[!UICONTROL Success]**&#x200B;百分比會維持不變。
 

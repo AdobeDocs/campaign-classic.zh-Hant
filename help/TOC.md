@@ -6,10 +6,10 @@ title: Campaign Classic v7 指南
 user-guide-description: Adobe Campaign Classic v7 產品文件。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+source-git-commit: b353b562bd2f0b0bd2dfde22c6477ab66d499483
 workflow-type: tm+mt
-source-wordcount: '2574'
-ht-degree: 89%
+source-wordcount: '2573'
+ht-degree: 86%
 
 ---
 
@@ -125,27 +125,26 @@ ht-degree: 89%
          + [定義正確客群](delivery/using/define-the-right-audience.md)
          + [傳送前先檢查](delivery/using/check-before-sending.md)
          + [追蹤和監視](delivery/using/track-and-monitor.md)
-   + 傳送電子郵件 {#sending-emails}
-      + [關於電子郵件頻道](delivery/using/about-email-channel.md)
-      + [建立電子郵件傳遞](delivery/using/creating-an-email-delivery.md)
-      + [定義電子郵件內容](delivery/using/defining-the-email-content.md)
-      + [定義互動式內容](delivery/using/defining-interactive-content.md)
-      + [使用增強的 MTA 傳送](delivery/using/sending-with-enhanced-mta.md)
-      + 傳送電子郵件傳遞 {#sending-an-email}
-         + [傳送電子郵件的主要步驟](delivery/using/sending-messages.md)
-         + [電子郵件參數](delivery/using/email-parameters.md)
-         + [在日文的行動裝置上傳送](delivery/using/sending-emails-on-japanese-mobiles.md)
-      + [附加檔案](delivery/using/attaching-files.md)
-   + 傳送簡訊 {#sending-messages-on-mobiles}
-      + [開始使用簡訊](delivery/using/sms-channel.md)
-      + 設定簡訊頻道 {#sms-set-up}
-         + [在獨立執行個體上設定簡訊](delivery/using/sms-set-up.md)
-         + [在中間來源基礎結構上設定簡訊](delivery/using/sms-set-up-mid.md)
-         + [簡訊連接器通訊協定及設定](delivery/using/sms-protocol.md)
-         + [其他設定](delivery/using/sms-send.md)
-         + [簡訊疑難排解](delivery/using/troubleshooting-sms.md)
-      + [建立簡訊](delivery/using/sms-create.md)
-      + [遷移到擴展的通用 SMPP 連接器](delivery/using/unsupported-connector-migration.md)
++ 傳送電子郵件 {#sending-emails}
++ [建立電子郵件傳遞](delivery/using/creating-an-email-delivery.md)
++ [定義電子郵件內容](delivery/using/defining-the-email-content.md)
++ [定義互動式內容](delivery/using/defining-interactive-content.md)
++傳送電子郵件傳遞{#sending-an-email}
++ [傳送電子郵件的主要步驟](delivery/using/sending-messages.md)
++ [電子郵件引數](delivery/using/email-parameters.md)
++ [在日文的行動裝置上傳送](delivery/using/sending-emails-on-japanese-mobiles.md)
++ [附加檔案](delivery/using/attaching-files.md)
++ [傳送電子郵件](delivery/using/about-email-channel.md)
++ 傳送簡訊 {#sending-messages-on-mobiles}
++ [開始使用簡訊](delivery/using/sms-channel.md)
++設定簡訊頻道{#sms-set-up}
++ [在獨立執行個體上設定簡訊](delivery/using/sms-set-up.md)
++ [在中間來源基礎結構上設定SMS](delivery/using/sms-set-up-mid.md)
++ [SMS聯結器通訊協定與設定](delivery/using/sms-protocol.md)
++ [其他組態](delivery/using/sms-send.md)
++ [簡訊疑難排解](delivery/using/troubleshooting-sms.md)
++ [建立簡訊](delivery/using/sms-create.md)
++ [移轉至Extended Generic SMPP聯結器](delivery/using/unsupported-connector-migration.md)
    + [傳送 LINE 訊息](delivery/using/line-channel.md)
    + 傳送推播通知 {#sending-push-notifications}
       + [開始使用行動應用程式頻道](delivery/using/about-mobile-app-channel.md)
@@ -841,6 +840,7 @@ ht-degree: 89%
       + [2023 年系統升級](technotes/using/tech-stack-upgrade.md)
       + [IMS 更新](technotes/using/ims-updates.md)
       + [終止支援 TLS 1.0 和 1.1](technotes/using/eol-tls-support.md)
+      + [使用增強的 MTA 傳送](delivery/using/sending-with-enhanced-mta.md)
    + 電子郵件和推播通知{#technotes-email}
       + [Apple iOS 上的郵件隱私保護](technotes/using/apple-mail-app-privacy-protection.md)
       + [如何更新錯誤的硬退件](delivery/using/update-bounce-qualification.md)
