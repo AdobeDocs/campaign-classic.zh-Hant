@@ -136,7 +136,7 @@ Campaign不再使用傳送中的重試設定。 軟退信重試次數和兩次�
 ### DKIM簽署
 
 DKIM (DomainKeys Indified Mail)電子郵件驗證簽署是由Enhanced MTA完成。 原生Campaign MTA的DKIM簽署功能將會在Enhanced MTA升級過程中，於網域管理表格內關閉。
-如需DKIM的詳細資訊，請參閱[Adobe傳遞能力最佳實務指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication)。
+如需DKIM的詳細資訊，請參閱[Adobe傳遞能力最佳實務指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=zh-Hant#authentication)。
 
 ### 傳遞成功報告
 
