@@ -4,16 +4,16 @@ title: 關於工作流程
 description: 使用工作流程自動化程序、管理資料和客群、傳送訊息等
 feature: Workflows, Data Management
 exl-id: 024a7344-9376-4ff3-926a-003148229f9f
-source-git-commit: fd082d5427314fbc91966f89048da5f193658f87
+source-git-commit: b45cc49f15f51e3624c46713c95966f465b2e4da
 workflow-type: tm+mt
-source-wordcount: '236'
+source-wordcount: '233'
 ht-degree: 9%
 
 ---
 
 # 使用工作流程自動化 {#gs-workflows}
 
-Adobe Campaign的工作流程模組可讓您的團隊簡化並自動化整個平台的端對端業務流程。 透過直覺式的圖形介面，您可以設計和管理工作流程來協調工作，例如資料細分、行銷活動執行、檔案處理，甚至使用者核准 — 全都集中在一處。
+Adobe Campaign的工作流程可讓您的團隊簡化並自動化整個平台的端對端業務流程。 透過直覺式的圖形介面，您可以設計和管理工作流程來協調工作，例如資料細分、行銷活動執行、檔案處理，甚至使用者核准 — 全都集中在一處。
 
 例如，您可以自動執行從遠端伺服器擷取檔案、擷取檔案內容，以及順暢地將資料載入Adobe Campaign伺服器的程式，減少手動工作量，並提升營運效率。 工作流程引擎可確保每個步驟都可靠地執行，並受到追蹤以利可視性和控制。
 
@@ -31,15 +31,15 @@ Adobe Campaign的工作流程模組可讓您的團隊簡化並自動化整個平
 
 在Campaign v8檔案中瞭解與工作流程管理相關的關鍵步驟：
 
-* [工作流程活動](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/activities.html?lang=zh-Hant){target=_blank}：活動說明任務範本。 工作流程包括目標定位、流量控制、動作和事件活動。
+* [工作流程活動](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/activities.html?lang=zh-Hant){target=_blank}：活動是任務範本。 工作流程包括目標定位、流量控制、動作和事件活動。
 
 * [建立工作流程](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=zh-Hant){target=_blank}：瞭解如何建立和執行目標定位、行銷活動和技術工作流程。
 
-* [最佳實務](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=zh-Hant){target=_blank}：瞭解最佳化行銷活動工作流程效能、改善工作流程設計，以及選取正確設定的相關准則。
+* [最佳實務](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html){target=_blank}：瞭解最佳化行銷活動工作流程效能、改善工作流程設計和定義正確設定的指導方針。
 
-* [監視工作流程](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=zh-Hant){target=_blank}：瞭解如何監視工作流程執行，以確保一切正常執行。
+* [監視工作流程](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target=_blank}：瞭解如何監視工作流程執行，以確保一切正常執行。
 
-* [工作流程使用案例](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/workflow-use-cases.html?lang=zh-Hant){target=_blank}：瞭解不同的工作流程使用內容，以及如何透過端對端使用案例實作工作流程。
+* [工作流程使用案例](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/workflow-use-cases.html){target=_blank}：瞭解哪些內容可以使用工作流程，以及如何透過端對端使用案例實作工作流程。
 
 
 >[!ENDTABS]
