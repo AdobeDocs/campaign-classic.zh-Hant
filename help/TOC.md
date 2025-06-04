@@ -6,9 +6,9 @@ title: Campaign Classic v7 指南
 user-guide-description: Adobe Campaign Classic v7 產品文件。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 67e5a52666b7a57d1fc17d308a124948bf81f432
+source-git-commit: d2292711cf67332eda3fe9bed78248ab62ca1818
 workflow-type: tm+mt
-source-wordcount: '2572'
+source-wordcount: '2575'
 ht-degree: 86%
 
 ---
@@ -125,7 +125,9 @@ ht-degree: 86%
          + [定義正確客群](delivery/using/define-the-right-audience.md)
          + [傳送前先檢查](delivery/using/check-before-sending.md)
          + [追蹤和監視](delivery/using/track-and-monitor.md)
-+ 電子郵件 {#sending-emails}
++ 傳送電子郵件 {#sending-emails}
++ [開始使用電子郵件](delivery/using/about-email-channel.md)
++ [使用增強的MTA傳送](delivery/using/sending-with-enhanced-mta.md)
 + [建立電子郵件傳遞](delivery/using/creating-an-email-delivery.md)
 + [定義電子郵件內容](delivery/using/defining-the-email-content.md)
 + [定義互動式內容](delivery/using/defining-interactive-content.md)
@@ -134,7 +136,6 @@ ht-degree: 86%
 + [電子郵件引數](delivery/using/email-parameters.md)
 + [在日文的行動裝置上傳送](delivery/using/sending-emails-on-japanese-mobiles.md)
 + [附加檔案](delivery/using/attaching-files.md)
-+ [傳送電子郵件](delivery/using/about-email-channel.md)
 + 傳送簡訊 {#sending-messages-on-mobiles}
 + [開始使用簡訊](delivery/using/sms-channel.md)
 +設定簡訊頻道{#sms-set-up}
@@ -840,7 +841,6 @@ ht-degree: 86%
       + [2023 年系統升級](technotes/using/tech-stack-upgrade.md)
       + [IMS 更新](technotes/using/ims-updates.md)
       + [終止支援 TLS 1.0 和 1.1](technotes/using/eol-tls-support.md)
-      + [使用增強的 MTA 傳送](delivery/using/sending-with-enhanced-mta.md)
    + 電子郵件和推播通知{#technotes-email}
       + [Apple iOS 上的郵件隱私保護](technotes/using/apple-mail-app-privacy-protection.md)
       + [如何更新錯誤的硬退件](delivery/using/update-bounce-qualification.md)
