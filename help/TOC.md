@@ -6,10 +6,10 @@ title: Campaign Classic v7 指南
 user-guide-description: Adobe Campaign Classic v7 產品文件。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: d2292711cf67332eda3fe9bed78248ab62ca1818
+source-git-commit: 1e88021c9209bd23c3c949380f553473e890a9ce
 workflow-type: tm+mt
-source-wordcount: '2575'
-ht-degree: 86%
+source-wordcount: '2571'
+ht-degree: 89%
 
 ---
 
@@ -52,13 +52,13 @@ ht-degree: 86%
          + [開發](platform/using/faq-developers.md)
          + [教學課程](platform/using/tutorials.md)
       + [字彙](platform/using/ac-glossary.md)
-   + 隱私權 {#privacy}
-      + [隱私權與同意](platform/using/privacy-and-recommendations.md)
-      + [隱私權管理](platform/using/privacy-management.md)
-      + 隱私權請求 {#privacy-requests}
-         + [關於隱私權請求](platform/using/privacy-requests.md)
-         + [建立及管理隱私權請求](platform/using/privacy-requests-ui.md)
-         + [自動隱私權請求流程](platform/using/privacy-requests-api.md)
+      + 隱私權 {#privacy}
+         + [隱私權與同意](platform/using/privacy-and-recommendations.md)
+         + [隱私權管理](platform/using/privacy-management.md)
+         + 隱私權請求 {#privacy-requests}
+            + [關於隱私權請求](platform/using/privacy-requests.md)
+            + [建立及管理隱私權請求](platform/using/privacy-requests-ui.md)
+            + [自動隱私權請求流程](platform/using/privacy-requests-api.md)
          + [選擇退出個人資訊銷售](platform/using/privacy-requests-ccpa.md)
    + 用戶檔案管理 {#profile-management}
       + [關於輪廓](platform/using/about-profiles.md)
@@ -67,7 +67,7 @@ ht-degree: 86%
       + [管理輪廓](platform/using/managing-profiles.md)
       + [更新資料](platform/using/updating-data.md)
       + [匯入及匯出輪廓](platform/using/exporting-and-importing-profiles.md)
-      + [建立及管理清單](platform/using/creating-and-managing-lists.md)
+   + [建立及管理清單](platform/using/creating-and-managing-lists.md)
    + 匯入及匯出資料 {#importing-and-exporting-data}
       + [開始使用匯入及匯出資料](platform/using/get-started-data-import-export.md)
       + [利用工作流程匯入及匯出資料](platform/using/import-export-workflows.md)
@@ -111,41 +111,41 @@ ht-degree: 86%
 + 建立和傳送訊息 {#sending-messages}
    + [開始使用訊息](delivery/using/communication-channels.md)
    + [傳遞設定](delivery/using/delivery-settings.md)
-   + 建立傳遞時的主要步驟 {#key-steps-when-creating-a-delivery}
+   + 快速入門 {#key-steps-when-creating-a-delivery}
       + [開始使用傳遞](delivery/using/steps-about-delivery-creation-steps.md)
       + [建立並識別傳遞內容](delivery/using/steps-create-and-identify-the-delivery.md)
       + [定義客群](delivery/using/steps-defining-the-target-population.md)
       + [驗證傳遞](delivery/using/steps-validating-the-delivery.md)
       + [傳送傳遞](delivery/using/steps-sending-the-delivery.md)
       + [關於傳遞的最佳實務](delivery/using/delivery-best-practices.md)
-      + 關於傳遞的最佳實務 {#delivery-bestpractices}
-         + [最佳化傳遞](delivery/using/optimize-delivery.md)
-         + [使用範本](delivery/using/use-templates.md)
-         + [建置個人化內容](delivery/using/design-and-personalize.md)
-         + [定義正確客群](delivery/using/define-the-right-audience.md)
-         + [傳送前先檢查](delivery/using/check-before-sending.md)
-         + [追蹤和監視](delivery/using/track-and-monitor.md)
-+ 傳送電子郵件 {#sending-emails}
-+ [開始使用電子郵件](delivery/using/about-email-channel.md)
-+ [使用增強的MTA傳送](delivery/using/sending-with-enhanced-mta.md)
-+ [建立電子郵件傳遞](delivery/using/creating-an-email-delivery.md)
-+ [定義電子郵件內容](delivery/using/defining-the-email-content.md)
-+ [定義互動式內容](delivery/using/defining-interactive-content.md)
-+傳送電子郵件傳遞{#sending-an-email}
-+ [傳送電子郵件的主要步驟](delivery/using/sending-messages.md)
-+ [電子郵件引數](delivery/using/email-parameters.md)
-+ [在日文的行動裝置上傳送](delivery/using/sending-emails-on-japanese-mobiles.md)
-+ [附加檔案](delivery/using/attaching-files.md)
-+ 傳送簡訊 {#sending-messages-on-mobiles}
-+ [開始使用簡訊](delivery/using/sms-channel.md)
-+設定簡訊頻道{#sms-set-up}
-+ [在獨立執行個體上設定簡訊](delivery/using/sms-set-up.md)
-+ [在中間來源基礎結構上設定SMS](delivery/using/sms-set-up-mid.md)
-+ [SMS聯結器通訊協定與設定](delivery/using/sms-protocol.md)
-+ [其他組態](delivery/using/sms-send.md)
-+ [簡訊疑難排解](delivery/using/troubleshooting-sms.md)
-+ [建立簡訊](delivery/using/sms-create.md)
-+ [移轉至Extended Generic SMPP聯結器](delivery/using/unsupported-connector-migration.md)
+   + 關於傳遞的最佳實務 {#delivery-bestpractices}
+      + [最佳化傳遞](delivery/using/optimize-delivery.md)
+      + [使用範本](delivery/using/use-templates.md)
+      + [建置個人化內容](delivery/using/design-and-personalize.md)
+      + [定義正確客群](delivery/using/define-the-right-audience.md)
+      + [傳送前先檢查](delivery/using/check-before-sending.md)
+      + [追蹤和監視](delivery/using/track-and-monitor.md)
+   + 傳送電子郵件 {#sending-emails}
+      + [開始使用電子郵件](delivery/using/about-email-channel.md)
+      + [使用增強的 MTA 傳送](delivery/using/sending-with-enhanced-mta.md)
+      + [建立電子郵件傳遞](delivery/using/creating-an-email-delivery.md)
+      + [定義電子郵件內容](delivery/using/defining-the-email-content.md)
+      + [定義互動式內容](delivery/using/defining-interactive-content.md)
+      + 傳送電子郵件傳遞 {#sending-an-email}
+         + [傳送電子郵件的主要步驟](delivery/using/sending-messages.md)
+         + [電子郵件參數](delivery/using/email-parameters.md)
+         + [在日文的行動裝置上傳送](delivery/using/sending-emails-on-japanese-mobiles.md)
+      + [附加檔案](delivery/using/attaching-files.md)
+   + 傳送簡訊 {#sending-messages-on-mobiles}
+      + [開始使用簡訊](delivery/using/sms-channel.md)
+      + 設定簡訊頻道 {#sms-set-up}
+         + [在獨立執行個體上設定簡訊](delivery/using/sms-set-up.md)
+         + [在中間來源基礎結構上設定簡訊](delivery/using/sms-set-up-mid.md)
+         + [簡訊連接器通訊協定及設定](delivery/using/sms-protocol.md)
+         + [其他設定](delivery/using/sms-send.md)
+         + [簡訊疑難排解](delivery/using/troubleshooting-sms.md)
+      + [建立簡訊](delivery/using/sms-create.md)
+      + [遷移到擴展的通用 SMPP 連接器](delivery/using/unsupported-connector-migration.md)
    + [傳送 LINE 訊息](delivery/using/line-channel.md)
    + 傳送推播通知 {#sending-push-notifications}
       + [開始使用行動應用程式頻道](delivery/using/about-mobile-app-channel.md)
@@ -209,9 +209,9 @@ ht-degree: 86%
       + [傳遞狀態](delivery/using/delivery-statuses.md)
       + [瞭解傳遞失敗](delivery/using/understanding-delivery-failures.md)
       + [認識隔離管理](delivery/using/understanding-quarantine-management.md)
-   + 追蹤訊息 {#tracking-messages}
-      + [關於訊息追蹤](delivery/using/about-message-tracking.md)
-      + [如何設定追蹤的連結](delivery/using/how-to-configure-tracked-links.md)
+      + 追蹤訊息 {#tracking-messages}
+         + [關於訊息追蹤](delivery/using/about-message-tracking.md)
+         + [如何設定追蹤的連結](delivery/using/how-to-configure-tracked-links.md)
       + 追蹤個人化連結 {#tracking-personalized-links}
          + [開始使用個人化連結追蹤](delivery/using/tracking-personalized-links.md)
          + [偵測追蹤 URL](delivery/using/detecting-tracking-urls.md)
@@ -477,28 +477,28 @@ ht-degree: 86%
          + [載入傳遞內容](workflow/using/loading-delivery-content.md)
          + [跨頻道傳遞工作流程](workflow/using/cross-channel-delivery-workflow.md)
          + [使用自訂日期欄位擴充電子郵件](workflow/using/email-enrichment-with-custom-date-fields.md)
-      + 監視 {#monitoring}
-         + [傳送報吿至清單](workflow/using/sending-a-report-to-a-list.md)
-         + [監督您的工作流程](workflow/using/supervising-workflows.md)
-         + [傳送個人化警示給營運商](workflow/using/sending-personalized-alerts-to-operators.md)
-      + 資料管理 {#data-management}
-         + [協調資料更新](workflow/using/coordinating-data-updates.md)
-         + [建立摘要清單](workflow/using/creating-a-summary-list.md)
-         + [豐富資料](workflow/using/enriching-data.md)
-         + [使用彙總](workflow/using/using-aggregates.md)
-         + [使用去重複化活動的合併功能](workflow/using/deduplication-merge.md)
-         + [設定週期性匯入工作流程](workflow/using/recurring-import-workflow.md)
-      + 設計查詢 {#designing-queries}
-         + [使用增量查詢更新每季清單](workflow/using/quarterly-list-update.md)
-      + 查詢和篩選 {#designing-queries}
-         + [查詢收件者表格](workflow/using/querying-recipient-table.md)
-         + [查詢傳遞資訊](workflow/using/querying-delivery-information.md)
-         + [執行彙總運算](workflow/using/performing-aggregate-computing.md)
-         + [使用分組管理進行查詢](workflow/using/querying-using-grouping-management.md)
-         + [使用多對多關係進行查詢](workflow/using/querying-using-many-to-many-relationship.md)
-         + [新增分項清單類型計算欄位](workflow/using/adding-enumeration-type-calculated-field.md)
-         + [建立篩選器](workflow/using/creating-a-filter.md)
-         + [篩選重複的收件者](workflow/using/filtering-duplicated-recipients.md)
+   + 監視 {#monitoring}
+      + [傳送報吿至清單](workflow/using/sending-a-report-to-a-list.md)
+      + [監督您的工作流程](workflow/using/supervising-workflows.md)
+      + [傳送個人化警示給營運商](workflow/using/sending-personalized-alerts-to-operators.md)
+   + 資料管理 {#data-management}
+      + [協調資料更新](workflow/using/coordinating-data-updates.md)
+      + [建立摘要清單](workflow/using/creating-a-summary-list.md)
+      + [豐富資料](workflow/using/enriching-data.md)
+      + [使用彙總](workflow/using/using-aggregates.md)
+      + [使用去重複化活動的合併功能](workflow/using/deduplication-merge.md)
+      + [設定週期性匯入工作流程](workflow/using/recurring-import-workflow.md)
+   + 設計查詢 {#designing-queries}
+      + [使用增量查詢更新每季清單](workflow/using/quarterly-list-update.md)
+   + 查詢和篩選 {#designing-queries}
+      + [查詢收件者表格](workflow/using/querying-recipient-table.md)
+      + [查詢傳遞資訊](workflow/using/querying-delivery-information.md)
+      + [執行彙總運算](workflow/using/performing-aggregate-computing.md)
+      + [使用分組管理進行查詢](workflow/using/querying-using-grouping-management.md)
+      + [使用多對多關係進行查詢](workflow/using/querying-using-many-to-many-relationship.md)
+      + [新增分項清單類型計算欄位](workflow/using/adding-enumeration-type-calculated-field.md)
+      + [建立篩選器](workflow/using/creating-a-filter.md)
+      + [篩選重複的收件者](workflow/using/filtering-duplicated-recipients.md)
    + 監視工作流程 {#monitoring-workflows}
       + [監視工作流程的執行](workflow/using/monitoring-workflow-execution.md)
       + [監視技術工作流程](workflow/using/monitoring-technical-workflows.md)
@@ -625,12 +625,12 @@ ht-degree: 86%
          + [整合至網站伺服器](installation/using/integration-into-a-web-server-for-linux.md)
       + [時區管理](installation/using/time-zone-management.md)
       + [安裝中間來源伺服器](installation/using/mid-sourcing-server.md)
-   + 部署Campaign （內部部署） {#initial-configuration}
-      + [主要步驟](installation/using/about-initial-configuration.md)
-      + [建立執行個體並登入](installation/using/creating-an-instance-and-logging-on.md)
-      + [建立及設定資料庫](installation/using/creating-and-configuring-the-database.md)
-      + [部署執行個體](installation/using/deploying-an-instance.md)
-      + [安裝內建套件](installation/using/installing-campaign-standard-packages.md)
+      + 部署Campaign （內部部署） {#initial-configuration}
+         + [主要步驟](installation/using/about-initial-configuration.md)
+         + [建立執行個體並登入](installation/using/creating-an-instance-and-logging-on.md)
+         + [建立及設定資料庫](installation/using/creating-and-configuring-the-database.md)
+         + [部署執行個體](installation/using/deploying-an-instance.md)
+         + [安裝內建套件](installation/using/installing-campaign-standard-packages.md)
    + 設定Campaign {#additional-configurations}
       + [Campaign 伺服器設定](installation/using/configuring-campaign-server.md)
       + [定義安全區](installation/using/security-zones.md)
@@ -670,10 +670,10 @@ ht-degree: 86%
             + [設定 Sybase IQ](installation/using/configure-fda-sybase.md)
             + [設定 Teradata](installation/using/configure-fda-teradata.md)
             + [設定 Vertica Analytics](installation/using/configure-fda-vertica.md)
-         + [遠端存取權限](installation/using/remote-database-access-rights.md)
-         + [連結資料庫](installation/using/connecting-to-database.md)
-         + [建立資料結構描述](installation/using/creating-data-schema.md)
-         + [定義資料對應](installation/using/defining-data-mapping.md)
+      + [遠端存取權限](installation/using/remote-database-access-rights.md)
+      + [連結資料庫](installation/using/connecting-to-database.md)
+      + [建立資料結構描述](installation/using/creating-data-schema.md)
+      + [定義資料對應](installation/using/defining-data-mapping.md)
    + 附錄 {#appendices}
       + [伺服器設定檔案](installation/using/the-server-configuration-file.md)
       + [Campaign 網路端點](installation/using/campaign-network-endpoints.md)
