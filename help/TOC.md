@@ -9,7 +9,7 @@ type: Documentation
 source-git-commit: 1e88021c9209bd23c3c949380f553473e890a9ce
 workflow-type: tm+mt
 source-wordcount: '2571'
-ht-degree: 89%
+ht-degree: 99%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 89%
    + [相容性對照表](rn/using/compatibility-matrix.md)
    + [文件更新](rn/using/documentation-updates.md)
 + 開始使用 {#getting-started}
-   + 開始使用Adobe Campaign {#starting-with-adobe-campaign}
+   + 開始使用 Adobe Campaign {#starting-with-adobe-campaign}
       + [開始使用 Adobe Campaign Classic ](platform/using/about-adobe-campaign-classic.md)
       + [啟動 Adobe Campaign ](platform/using/launching-adobe-campaign.md)
       + Adobe Campaign 工作區{#campaign-workspace}
@@ -60,7 +60,7 @@ ht-degree: 89%
             + [建立及管理隱私權請求](platform/using/privacy-requests-ui.md)
             + [自動隱私權請求流程](platform/using/privacy-requests-api.md)
          + [選擇退出個人資訊銷售](platform/using/privacy-requests-ccpa.md)
-   + 用戶檔案管理 {#profile-management}
+   + 輪廓管理 {#profile-management}
       + [關於輪廓](platform/using/about-profiles.md)
       + [編輯輪廓](platform/using/editing-a-profile.md)
       + [新增輪廓](platform/using/adding-profiles.md)
@@ -82,13 +82,13 @@ ht-degree: 89%
       + 管理資料加密和壓縮 {#managing-data-encryption-compression}
          + [在處理前先解壓縮或解密檔案](platform/using/unzip-decrypt.md)
          + [在處理前先壓縮或加密檔案](platform/using/zip-encrypt.md)
-      + 最佳作法和疑難排解 {#best-practices}
+      + 最佳實務及疑難排解 {#best-practices}
          + [匯入和匯出最佳實務](platform/using/import-export-best-practices.md)
          + [SFTP 伺服器最佳實務及疑難排解](platform/using/sftp-server-usage.md)
    + 篩選資料 {#filtering-data}
       + [篩選選項](platform/using/filtering-options.md)
       + [建立篩選器](platform/using/creating-filters.md)
-      + [使用實例](platform/using/use-case.md)
+      + [使用案例](platform/using/use-case.md)
    + 建立查詢 {#creating-queries}
       + [關於 Campaign 中的查詢](platform/using/about-queries-in-campaign.md)
       + [建立查詢的步驟](platform/using/steps-to-create-a-query.md)
@@ -108,7 +108,7 @@ ht-degree: 89%
       + [與 Salesforce.com 連結](platform/using/crm-sfdc.md)
       + [與 CRM 同步資料](platform/using/crm-data-sync.md)
    + [說明與支援選項](support.md)
-+ 建立和傳送訊息 {#sending-messages}
++ 建立及傳送訊息 {#sending-messages}
    + [開始使用訊息](delivery/using/communication-channels.md)
    + [傳遞設定](delivery/using/delivery-settings.md)
    + 快速入門 {#key-steps-when-creating-a-delivery}
@@ -186,7 +186,7 @@ ht-degree: 89%
    + A/B 測試 {#a-b-testing}
       + [開始使用 A/B 測試](delivery/using/get-started-a-b-testing.md)
       + [設定 A/B 測試](delivery/using/configuring-a-b-testing.md)
-      + 使用實例 {#use-case}
+      + 使用案例 {#use-case}
          + [關於此使用實例](delivery/using/a-b-testing-use-case.md)
          + [建立目標定位工作流程](delivery/using/a-b-testing-uc-targeting-workflow.md)
          + [設定群體樣本](delivery/using/a-b-testing-uc-population-samples.md)
@@ -220,7 +220,7 @@ ht-degree: 89%
       + [存取追蹤記錄](delivery/using/accessing-the-tracking-logs.md)
       + [測試追蹤](delivery/using/testing-tracking.md)
       + [追蹤疑難排解](delivery/using/tracking-troubleshooting.md)
-   + 傳遞能力管理 {#deliverability-management}
+   + 傳遞性管理 {#deliverability-management}
       + [什麼是傳遞性](delivery/using/about-deliverability.md)
       + [控制訊息內容](delivery/using/control-message-content.md)
       + [監視傳遞性](delivery/using/monitoring-deliverability.md)
@@ -281,26 +281,26 @@ ht-degree: 89%
    + [假設範本](response/using/hypothesis-templates.md)
    + [建立假設](response/using/creating-hypotheses.md)
    + [假設追蹤](response/using/hypothesis-tracking.md)
-+ 設計和共用報告 {#reporting}
++ 設計及共用報吿 {#reporting}
    + 開始使用報告功能 {#reporting-in-adobe-campaign}
       + [報告工具](reporting/using/about-adobe-campaign-reporting-tools.md)
       + [報告的最佳實務](reporting/using/best-practices.md)
    + 存取內建報吿 {#accessing-built-in-reports}
       + [關於內建報吿](reporting/using/about-campaign-built-in-reports.md)
       + [報告清單](reporting/using/list-of-reports.md)
-   + 傳遞報表{#reports-on-deliveries}
-      + [關於傳遞報表](reporting/using/reports-on-deliveries.md)
+   + 傳遞報告{#reports-on-deliveries}
+      + [關於傳遞報告](reporting/using/reports-on-deliveries.md)
       + [全域報告](reporting/using/global-reports.md)
       + [傳遞報告](reporting/using/delivery-reports.md)
       + [累積報告](reporting/using/cumulative-reports.md)
       + [指標計算](reporting/using/indicator-calculation.md)
       + [人員與收件者](reporting/using/person-people-recipients.md)
-   + 分析母體 {#analyzing-populations}
+   + 分析群體 {#analyzing-populations}
       + [什麼是描述性分析](reporting/using/about-descriptive-analysis.md)
       + [建立您第一個描述性分析報告](reporting/using/using-the-descriptive-analysis-wizard.md)
       + [管理並設定您的分析報告](reporting/using/processing-a-report.md)
       + [分析報告使用案例](reporting/using/use-cases.md)
-   + 建立新報告 {#creating-new-reports}
+   + 建立新報吿 {#creating-new-reports}
       + [設計報吿的關鍵步驟](reporting/using/about-reports-creation-in-campaign.md)
       + [建立新報吿](reporting/using/creating-a-new-report.md)
       + [收集資料以進行分析](reporting/using/collecting-data-to-analyze.md)
@@ -323,7 +323,7 @@ ht-degree: 89%
       + [追蹤網站應用程式](web/using/translating-a-web-application.md)
       + [追蹤網站應用程式的瀏覽次數](web/using/tracking-a-web-application.md)
       + [網站應用程式追蹤選擇退出](web/using/web-application-tracking-opt-out.md)
-   + 編輯HTML內容 {#editing-html-content}
+   + 編輯 HTML 內容 {#editing-html-content}
       + [開始使用 HTML 編輯器](web/using/about-campaign-html-editor.md)
       + [範本管理](web/using/template-management.md)
       + [內容編輯器介面](web/using/content-editor-interface.md)
@@ -353,7 +353,7 @@ ht-degree: 89%
    + [設定調查](surveys/using/configuring-surveys.md)
    + [使用實例：建立轉介表單](surveys/using/use-case-creating-a-refer-a-friend-form.md)
    + [使用案例：針對線上調查的回答顯示報吿](surveys/using/use-case-displaying-report-on-answers-to-an-online-survey.md)
-+ 整合Adobe Experience Cloud {#integrating-with-adobe-experience-cloud}
++ 整合 ADobe Experience Cloud {#integrating-with-adobe-experience-cloud}
    + [開始使用 Campaign 整合](integrations/using/about-campaign-integrations.md)
    + [建立 Adobe 技術帳戶](integrations/using/oauth-technical-account.md)
    + Adobe Experience Cloud Triggers {#experience-triggers}
@@ -362,7 +362,7 @@ ht-degree: 89%
       + [設定自訂實施的事件](integrations/using/events.md)
       + [管線監視](integrations/using/pipeline-monitoring.md)
       + [管線疑難排解](integrations/using/pipeline-troubleshooting.md)
-   + Adobe Experience Platform來源和目標 {#aep-sources-destinations}
+   + Adobe Experience Platform 來源和目標 {#aep-sources-destinations}
       + [使用來源和目的地](integrations/using/get-started-sources-destinations.md)
       + [將 Adobe Experience Platform 客群內嵌至 Campaign](integrations/using/ingest-aep-data.md)
       + [將資料從 Campaign 匯出至 Adobe Experience Platform](integrations/using/export-campaign-data.md)
@@ -470,7 +470,7 @@ ht-degree: 89%
       + [傳入電子郵件](workflow/using/inbound-emails.md)
       + [傳入簡訊](workflow/using/inbound-sms.md)
    + 使用案例 {#use-cases}
-      + [關於工作流程使用實例](workflow/using/about-workflow-use-cases.md)
+      + [關於工作流程使用案例](workflow/using/about-workflow-use-cases.md)
       + 傳遞 {#deliveries}
          + [使用本地核准活動](workflow/using/using-the-local-approval-activity.md)
          + [傳送生日電子郵件](workflow/using/sending-a-birthday-email.md)
@@ -505,7 +505,7 @@ ht-degree: 89%
       + [工作流程熱度圖](workflow/using/heatmap.md)
    + 進階管理 {#advanced-management}
       + [工作流程屬性](workflow/using/workflow-properties.md)
-      + [高級參數](workflow/using/advanced-parameters.md)
+      + [進階參數](workflow/using/advanced-parameters.md)
       + [JavaScript 指令碼和範本](workflow/using/javascript-scripts-and-templates.md)
       + [工作流程中的 JavaScript 程式碼範例](workflow/using/javascript-in-workflows.md)
       + [存取外部資料庫](workflow/using/accessing-an-external-database-fda.md)
@@ -513,7 +513,7 @@ ht-degree: 89%
       + [變更活動影像](workflow/using/managing-activity-images.md)
       + [管理時區](workflow/using/managing-time-zones.md)
       + [技術工作流程](workflow/using/about-technical-workflows.md)
-+ 管理優惠方案 {#managing-offers}
++ 管理產品建議 {#managing-offers}
    + 開始互動 {#interaction-overview}
       + [互動與產品建議管理](interaction/using/interaction-and-offer-management.md)
       + [字彙](interaction/using/i-glossary.md)
@@ -527,7 +527,7 @@ ht-degree: 89%
       + [即時/設計環境](interaction/using/live-design-environments.md)
       + [建立產品建議空間](interaction/using/creating-offer-spaces.md)
       + [建立預定義的篩選器](interaction/using/creating-predefined-filters.md)
-   + 管理優惠方案目錄 {#managing-an-offer-catalog}
+   + 管理產品建議目錄 {#managing-an-offer-catalog}
       + [產品建議目錄概觀](interaction/using/offer-catalog-overview.md)
       + [建立產品建議類別](interaction/using/creating-offer-categories.md)
       + [建議類別](interaction/using/recommending-a-category.md)
@@ -535,12 +535,12 @@ ht-degree: 89%
       + [核准並啟用產品建議](interaction/using/approving-and-activating-an-offer.md)
       + [管理產品建議範本](interaction/using/managing-offer-templates.md)
       + [管理產品建議簡報](interaction/using/managing-offer-presentation.md)
-   + 優惠方案模擬{#simulating-offers}
+   + 產品建議模擬{#simulating-offers}
       + [關於產品建議模擬](interaction/using/about-offers-simulation.md)
       + [執行設定](interaction/using/execution-settings.md)
       + [模擬範圍](interaction/using/simulation-scope.md)
       + [模擬追蹤](interaction/using/simulation-tracking.md)
-   + 傳遞優惠方案 {#delivering-an-offer}
+   + 傳遞產品建議 {#delivering-an-offer}
       + [關於傳出頻道](interaction/using/about-outbound-channels.md)
       + [透過助理整合產品建議](interaction/using/integrating-an-offer-via-the-wizard.md)
       + [透過工作流程整合產品建議](interaction/using/integrating-an-offer-via-a-workflow.md)
@@ -549,10 +549,10 @@ ht-degree: 89%
       + [透過 JavaScript 進行整合 (用戶端)](interaction/using/integration-via-javascript-client-side.md)
       + [透過 SOAP 整合 (伺服器端)](interaction/using/integration-via-soap-server-side.md)
       + [匿名互動](interaction/using/anonymous-interactions.md)
-   + 追蹤優惠方案 {#tracking-offers}
+   + 追蹤產品建議 {#tracking-offers}
       + [產品建議提議歷史記錄](interaction/using/offer-proposition-history.md)
       + [產品建議分析報告](interaction/using/offer-analysis-report.md)
-   + 高級參數 {#advanced-parameters}
+   + 進階參數 {#advanced-parameters}
       + [使用進階參數](interaction/using/using-advanced-parameters.md)
       + [其他資料](interaction/using/additional-data.md)
       + [擴充功能範例](interaction/using/extension-example.md)
@@ -560,13 +560,13 @@ ht-degree: 89%
       + [修改標準引擎行為](interaction/using/hooks.md)
       + [分佈式架構](interaction/using/distributed-architectures.md)
       + [資料緩衝區設定](installation/using/interaction-data-buffer.md)
-   + 使用實例 {#case-study}
+   + 使用案例 {#case-study}
       + [簡報規則](interaction/using/presentation-rules.md)
       + [傳入頻道上的產品建議](interaction/using/offers-on-an-inbound-channel.md)
       + [傳出頻道上的產品建議](interaction/using/offers-on-an-outbound-channel.md)
 + 交易型傳訊 {#transactional-messaging}
-   + [開始使用異動訊息](message-center/using/about-transactional-messaging.md)
-   + 設定異動訊息 {#configure-transactional-messaging}
+   + [開始使用交易型訊息](message-center/using/about-transactional-messaging.md)
+   + 設定交易型訊息 {#configure-transactional-messaging}
       + [異動訊息傳送架構](message-center/using/transactional-messaging-architecture.md)
       + [設定執行個體](message-center/using/configuring-instances.md)
       + [其他設定](message-center/using/additional-configurations.md)
@@ -584,8 +584,8 @@ ht-degree: 89%
       + [訊息中心事件的歷史記錄](message-center/using/history-of-message-center-events.md)
       + [訊息中心服務層級](message-center/using/message-center-service-level.md)
       + [訊息中心處理時間](message-center/using/message-center-processing-time.md)
-   + [使用實例](message-center/using/transactional-email-with-attachments.md)
-+ 整合社群媒體 {#integrating-with-social-media}
+   + [使用案例](message-center/using/transactional-email-with-attachments.md)
++ 整合社交媒體 {#integrating-with-social-media}
    + [關於社交行銷](social/using/about-social-marketing.md)
 + 安裝及設定指南 {#installing-campaign-classic}
    + 架構原則 {#architecture-and-hosting-models}
@@ -593,14 +593,14 @@ ht-degree: 89%
       + 託管模型{#hosting-models-lp}
          + [行銷活動託管模型](installation/using/hosting-models.md)
          + [功能對照表](installation/using/capability-matrix.md)
-   + 部署型別 {#deployment-types}
+   + 部署類型 {#deployment-types}
       + [關於部署類型](installation/using/about-deployment-types.md)
       + [獨立部署](installation/using/standalone-deployment.md)
       + [標準部署](installation/using/standard-deployment.md)
       + [企業部署](installation/using/enterprise-deployment.md)
       + [中間來源部署](installation/using/mid-sourcing-deployment.md)
       + [Power Booster 與 Power Cluster](installation/using/power-booster-and-power-cluster.md)
-   + 安全性和隱私設定 {#security-privacy}
+   + 安全性與隱私權設定 {#security-privacy}
       + [安全性與隱私權檢查清單](installation/using/get-started-security-privacy.md)
       + [個人化與隱私](installation/using/privacy.md)
       + [安全的存取管理](installation/using/access-management.md)
@@ -608,30 +608,30 @@ ht-degree: 89%
       + [網路、資料庫和 SSL/TLS](installation/using/network-database.md)
       + [伺服器安全性設定](installation/using/server-configuration.md)
       + [網路伺服器安全設定](installation/using/web-server-configuration.md)
-   + 安裝Campaign（內部部署）{#install-campaign-on-prem}
-      + 部署准則 {#deployment-guidelines}
+   + 安裝 Campaign（內部部署）{#install-campaign-on-prem}
+      + 部署指南 {#deployment-guidelines}
          + [資料庫伺服器](installation/using/database.md)
          + [應用程式伺服器](installation/using/application-server.md)
          + [傳訊伺服器](installation/using/messaging-server.md)
          + [網路設定](installation/using/network-configuration.md)
-      + Windows上的Campaign {#installing-campaign-in-windows}
+      + Windows 上的 Campaign {#installing-campaign-in-windows}
          + [開始使用](installation/using/prerequisites-of-campaign-installation-in-windows.md)
          + [安裝伺服器](installation/using/installing-the-server.md)
          + [整合至網路伺服器 (Windows)](installation/using/integration-into-a-web-server-for-windows.md)
          + [Windows 用戶端控制台的可用性](installation/using/client-console-availability-for-windows.md)
-      + Linux上的Campaign {#installing-campaign-in-linux}
+      + Linux 上的 Campaign {#installing-campaign-in-linux}
          + [先決條件](installation/using/prerequisites-of-campaign-installation-in-linux.md)
          + [安裝套件](installation/using/installing-packages-with-linux.md)
          + [整合至網站伺服器](installation/using/integration-into-a-web-server-for-linux.md)
       + [時區管理](installation/using/time-zone-management.md)
       + [安裝中間來源伺服器](installation/using/mid-sourcing-server.md)
-      + 部署Campaign （內部部署） {#initial-configuration}
+      + 部署 Campaign（內部部署） {#initial-configuration}
          + [主要步驟](installation/using/about-initial-configuration.md)
          + [建立執行個體並登入](installation/using/creating-an-instance-and-logging-on.md)
          + [建立及設定資料庫](installation/using/creating-and-configuring-the-database.md)
          + [部署執行個體](installation/using/deploying-an-instance.md)
          + [安裝內建套件](installation/using/installing-campaign-standard-packages.md)
-   + 設定Campaign {#additional-configurations}
+   + 設定 Campaign {#additional-configurations}
       + [Campaign 伺服器設定](installation/using/configuring-campaign-server.md)
       + [定義安全區](installation/using/security-zones.md)
       + [設定 URL 權限](installation/using/url-permissions.md)
@@ -644,13 +644,13 @@ ht-degree: 89%
       + [設定 SpamAssassin](installation/using/configuring-spamassassin.md)
    + 連線至 Campaign{#connect-to-campaign}
       + [安裝用戶端控制台](installation/using/installing-the-client-console.md)
-      + 透過Adobe ID連線 {#connecting-via-an-adobe-id}
+      + 透過 Adobe ID 連線 {#connecting-via-an-adobe-id}
          + [關於 [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
          + [設定 Adobe [!DNL IMS]](integrations/using/configuring-ims.md)
          + [實施 Adobe [!DNL IMS]](integrations/using/implementing-ims.md)
          + [IMS 疑難排解](integrations/using/ims-troubleshooting.md)
       + [透過 LDAP 連線](installation/using/connecting-through-ldap.md)
-   + 連線Campaign至外部系統 {#accessing-external-database}
+   + 連線 Campaign 至外部系統 {#accessing-external-database}
       + [設定外部帳戶](installation/using/external-accounts.md)
       + 設定同盟資料存取{#configure-fda}
          + [開始使用同盟資料存取](installation/using/about-fda.md)
@@ -687,7 +687,7 @@ ht-degree: 89%
       + [前言](production/using/foreword.md)
       + [一般架構](production/using/general-architecture.md)
       + [監視指南](production/using/monitoring-guidelines.md)
-   + 生產程式 {#production-procedures}
+   + 生產程序 {#production-procedures}
       + [設定原則](production/using/configuration-principle.md)
       + [操作原則](production/using/operating-principle.md)
       + [管理](production/using/administration.md)
@@ -701,13 +701,13 @@ ht-degree: 89%
       + [復原](production/using/restoration.md)
       + [複製環境](production/using/duplicating-environments.md)
       + [資料庫清除工作流程](production/using/database-cleanup-workflow.md)
-   + 更新Adobe Campaign {#updating-adobe-campaign}
+   + 更新 Adobe Campaign {#updating-adobe-campaign}
       + [簡介](production/using/introduction.md)
       + [執行建置升級](production/using/build-upgrade.md)
       + [升級程序 (內部部署)](production/using/upgrading.md)
       + [切換至 Unicode](production/using/switching-to-unicode.md)
       + [移轉程序](production/using/migration-procedures.md)
-   + 資料庫維護 {#database-maintenance}
+   + 維護資料庫 {#database-maintenance}
       + [建議](production/using/recommendations.md)
       + [需維護的表格](production/using/tables-to-maintain.md)
       + [維護類型](production/using/types-of-maintenance.md)
@@ -725,13 +725,13 @@ ht-degree: 89%
          + [影像顯示問題](production/using/image-display-issues.md)
          + [影像遺失](production/using/images-missing.md)
          + [臨時檔案](production/using/temporary-files.md)
-      + 使用記錄 {#working-with-log-toc}
+      + 使用記錄檔 {#working-with-log-toc}
          + [記錄檔精確度](production/using/log-precision.md)
          + [追蹤記錄檔問題](production/using/tracking-logs-issues.md)
       + 資料庫問題 {#database-issues-toc}
          + [資料庫效能](production/using/database-performances.md)
          + [Oracle 資料庫的編碼](production/using/encoding-of-the-oracle-database.md)
-      + 連線改善 {#connection-improvements-toc}
+      + 連線增強功能 {#connection-improvements-toc}
          + [無法連線](production/using/failure-to-connect.md)
          + [連線閾值](production/using/connection-thresholds.md)
       + 技術疑難排解 {#technical-troubleshooting-toc}
@@ -768,7 +768,7 @@ ht-degree: 89%
          + [SrcSchema](configuration/using/schema/srcschema.md)
          + [Sysfilter](configuration/using/schema/sysfilter.md)
          + [值](configuration/using/schema/value.md)
-   + 編輯方案 {#editing-schemas}
+   + 編輯結構描述 {#editing-schemas}
       + [關於結構描述版本](configuration/using/about-schema-edition.md)
       + [資料結構描述](configuration/using/data-schemas.md)
       + [現有表格結構描述](configuration/using/schema-of-an-existing-table.md)
@@ -805,7 +805,7 @@ ht-degree: 89%
       + [使用工作流程建立輪廓清單](configuration/using/creating-a-profile-list-with-a-workflow.md)
       + [管理工作流程](configuration/using/managing-workflows.md)
       + [管理報告](configuration/using/managing-reports.md)
-   + 設定網頁追蹤 {#setting-up-web-tracking}
+   + 設定網路追蹤 {#setting-up-web-tracking}
       + [關於網路追蹤](configuration/using/about-web-tracking.md)
       + [網路追蹤模式](configuration/using/web-tracking-mode.md)
       + [網路追蹤標籤：定義](configuration/using/web-tracking-tag-definition.md)
@@ -817,7 +817,7 @@ ht-degree: 89%
       + [匿名追蹤](configuration/using/anonymous-tracking.md)
 + 移轉指南 {#migrating-to-a-new-version}
    + [移轉至 Adobe Campaign v7](migration/using/about-migration.md)
-   + 移轉程式 {#migration-procedure}
+   + 移轉程序 {#migration-procedure}
       + [先決條件](migration/using/before-starting-migration.md)
       + [關於移轉測試](migration/using/testing-the-migration.md)
       + [調整您的設定](migration/using/configuring-your-platform.md)
@@ -828,7 +828,7 @@ ht-degree: 89%
 + 技術說明 {#technotes}
    + [硬體尺寸建議](technotes/using/hardware-sizing.md)
    + [中間來源基礎結構的傳入簡訊工作流程活動](technotes/using/inbound-sms-wf.md)
-   + 升級至IMS{#ims}
+   + 升級至 IMS{#ims}
       + [轉變為 Adobe IMS](technotes/using/ac-ims.md)
       + [將使用者移轉至 IMS](technotes/using/migrate-users-to-ims.md)
       + [將技術操作員移轉至 Developer Console](technotes/using/ims-migration.md)
@@ -847,7 +847,7 @@ ht-degree: 89%
       + [在 ISP 中斷後更新不正確的硬退件](delivery/using/update-bounces.md)
       + [iOS 憑證更新](technotes/using/ios-certificate-update.md)
       + [已追蹤 URL 更新](technotes/using/tracked-urls.md)
-   + 移轉至Adobe Managed Services{#dc-migration}
+   + 移轉至 Adobe Managed Services{#dc-migration}
       + [移轉至公用雲端](technotes/using/dc-migration.md)
       + [常見問答集](technotes/using/dc-migration-faq.md)
    + [以 GCM 為基礎的函式](technotes/using/gcm-functions.md)
