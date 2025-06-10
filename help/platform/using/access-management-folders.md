@@ -7,10 +7,10 @@ feature: Application Settings, Permissions
 role: User, Admin
 level: Beginner
 exl-id: 0ba8a3d0-36d7-42f3-b281-0255e49b5fa3
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+source-git-commit: 6e83067cef2b08b5bee37610bfef515714756ada
 workflow-type: tm+mt
-source-wordcount: '773'
-ht-degree: 1%
+source-wordcount: '517'
+ht-degree: 2%
 
 ---
 
@@ -33,7 +33,7 @@ Explorer導覽樹狀結構的每個資料夾都附加讀取、寫入和刪除存
 
 ![](assets/s_ncs_user_add_folder_in_tree.png)
 
-您可以自訂Explorer導覽樹狀結構。 在本節[&#128279;](adobe-campaign-workspace.md)中瞭解設定步驟和最佳實務。
+您可以自訂Explorer導覽樹狀結構。 在本節](adobe-campaign-workspace.md)中瞭解設定步驟和最佳實務[。
 
 ### 什麼是檢視 {#about-views}
 
@@ -55,16 +55,21 @@ Explorer導覽樹狀結構的每個資料夾都附加讀取、寫入和刪除存
 
 ### 新增資料夾並建立檢視 {#adding-folders-and-creating-views}
 
+>[!IMPORTANT]
+>
+>開箱即用的資料夾不應標示為檢視。
+
+
 在下列範例中，我們將建立新資料夾以顯示特定資料：
 
 1. 建立新的&#x200B;**[!UICONTROL Deliveries]**&#x200B;型別資料夾，並將其命名為&#x200B;**Deliveries France**。
 1. 以滑鼠右鍵按一下此資料夾並選取&#x200B;**[!UICONTROL Properties...]**。
 
-   ![](assets/s_ncs_user_add_folder_exple.png)
+   ![熒幕擷圖顯示以滑鼠右鍵進入屬性](assets/s_ncs_user_add_folder_exple.png)
 
 1. 在&#x200B;**[!UICONTROL Restriction]**&#x200B;索引標籤中，選取&#x200B;**[!UICONTROL This folder is a view]**。 然後資料庫中的所有傳遞都會顯示。
 
-   ![](assets/s_ncs_user_add_folder_exple01.png)
+   ![熒幕顯示正在勾選的檢視方塊](assets/s_ncs_user_add_folder_exple01.png)
 
 1. 從視窗中間的查詢編輯器定義傳送篩選條件：接著會顯示與已定義篩選對應的行銷活動。
 
@@ -74,7 +79,7 @@ Explorer導覽樹狀結構的每個資料夾都附加讀取、寫入和刪除存
 
    篩選條件：
 
-![](assets/s_ncs_user_add_folder_exple00.png)
+![顯示不同篩選條件的熒幕擷圖](assets/s_ncs_user_add_folder_exple00.png)
 
 檢視中將顯示下列傳送：
 
@@ -84,46 +89,48 @@ Explorer導覽樹狀結構的每個資料夾都附加讀取、寫入和刪除存
 >
 >管理[異動訊息](../../message-center/using/about-transactional-messaging.md)事件時，**[!UICONTROL Real time events]**&#x200B;或&#x200B;**[!UICONTROL Batch events]**&#x200B;資料夾不得在執行例項上設定為檢視，因為這樣可能會導致存取許可權問題。 如需事件集合的詳細資訊，請參閱[本節](../../message-center/using/about-event-processing.md#event-collection)。
 
-## 檔案夾的許可權
+<!--
+## Permissions on a folder
 
-### 編輯檔案夾的許可權 {#edit-permissions-on-a-folder}
+### Edit permissions on a folder {#edit-permissions-on-a-folder}
 
-若要編輯樹狀結構之特定資料夾的許可權，請遵循下列步驟：
+To edit permissions on a specific folder of the tree, follow the steps below:
 
-1. 在資料夾上按一下滑鼠右鍵，然後選取&#x200B;**[!UICONTROL Properties...]**。
+1. Right-click on the folder and select **[!UICONTROL Properties...]**.
 
    ![](assets/s_ncs_user_folder_properties.png)
 
-1. 按一下&#x200B;**[!UICONTROL Security]**&#x200B;標籤以檢視此資料夾的授權。
+1. Click the **[!UICONTROL Security]** tab to view authorizations on this folder.
 
    ![](assets/s_ncs_user_folder_properties_security.png)
 
-### 修改許可權 {#modify-permissions}
+### Modify permissions {#modify-permissions}
 
-若要修改許可權，您可以：
+To modify permissions, you can:
 
-* **取代群組或運運算元**。 若要這麼做，請按一下其中一個具有資料夾許可權的群組（或運運算元），然後從下拉式清單中選取新群組（或新運運算元）：
+* **Replace a group or an operator**. To do this, click one of the groups (or operators) with rights to the folder, and select a new group (or a new operator) from the drop-down list:
 
   ![](assets/s_ncs_user_folder_properties_security02.png)
 
-* **授權群組或操作員**。 若要這麼做，請按一下&#x200B;**[!UICONTROL Add]**&#x200B;按鈕，然後選取您要為此資料夾指派授權的群組或運運算元。
-* **禁止群組或運運算元**。 若要這麼做，請按一下&#x200B;**[!UICONTROL Delete]**&#x200B;並選取您要移除此資料夾授權的群組或運運算元。
-* **選取指派給群組或運運算元的許可權**。 若要這麼做，請按一下相關的群組或運運算元，然後選取您要授與的存取權，並取消選取其他存取權。
+* **Authorize a group or an operator**. To do this, click the **[!UICONTROL Add]** button and select the group or operator to which you want to assign authorizations for this folder.
+* **Forbid a group or an operator**. To do this, click **[!UICONTROL Delete]** and select the group or operator from which you want to remove authorization for this folder.
+* **Select the rights assigned to a group or an operator**. To do this, click the group or operator concerned, then select the access rights you want to grant and deselect the others.
 
   ![](assets/s_ncs_user_folder_properties_security03.png)
 
-### 傳播許可權 {#propagate-permissions}
+### Propagate permissions {#propagate-permissions}
 
-您可以傳播授權和存取許可權。 若要這麼做，請在資料夾屬性中選取&#x200B;**[!UICONTROL Propagate]**&#x200B;選項。
+You can propagate authorizations and access rights. To do this, select the **[!UICONTROL Propagate]** option in the folder properties.
 
-此視窗中定義的授權將套用至目前節點的所有子資料夾。 然後，您就可以為每個子資料夾多載這些授權。
+The authorizations defined in this window will then be applied to all the sub-folders of the current node. You can then overload these authorizations for each of the sub-folders.
 
 >[!NOTE]
 >
->為資料夾清除此選項並不會自動為子資料夾清除它。 您必須為每個子資料夾明確清除它。
+>Clearing this option for a folder does not automatically clear it for the sub-folders. You must clear it explicitly for each of the sub-folders.
 
-### 授與存取權給所有運運算元 {#grant-access-to-all-operators}
+### Grant access to all operators {#grant-access-to-all-operators}
 
-在&#x200B;**[!UICONTROL Security]**&#x200B;索引標籤中，如果選取&#x200B;**[!UICONTROL System folder]**&#x200B;選項，無論操作者的許可權為何，所有操作者都將可存取此資料。 如果清除此選項，您必須明確將運運算元（或其群組）新增至授權清單，才能讓運運算元（或其群組）存取許可權。
+In the **[!UICONTROL Security]** tab, if the **[!UICONTROL System folder]** option is selected, all operators will have access to this data, regardless of their rights. If this option is cleared, you must explicitly add the operator (or their group) to the list of authorizations in order for them to have access.
 
 ![](assets/s_ncs_user_folder_properties_security03b.png)
+-->
