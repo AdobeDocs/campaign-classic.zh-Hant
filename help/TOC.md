@@ -6,9 +6,9 @@ title: Campaign Classic v7 指南
 user-guide-description: Adobe Campaign Classic v7 產品文件。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 1e88021c9209bd23c3c949380f553473e890a9ce
+source-git-commit: d3d731c64cb5a430de6adac3aeb326f74134c436
 workflow-type: tm+mt
-source-wordcount: '2571'
+source-wordcount: '2569'
 ht-degree: 99%
 
 ---
@@ -125,9 +125,8 @@ ht-degree: 99%
       + [定義正確客群](delivery/using/define-the-right-audience.md)
       + [傳送前先檢查](delivery/using/check-before-sending.md)
       + [追蹤和監視](delivery/using/track-and-monitor.md)
+   + [傳送電子郵件](delivery/using/about-email-channel.md)
    + 傳送電子郵件 {#sending-emails}
-      + [開始使用電子郵件](delivery/using/about-email-channel.md)
-      + [使用增強的 MTA 傳送](delivery/using/sending-with-enhanced-mta.md)
       + [建立電子郵件傳遞](delivery/using/creating-an-email-delivery.md)
       + [定義電子郵件內容](delivery/using/defining-the-email-content.md)
       + [定義互動式內容](delivery/using/defining-interactive-content.md)
@@ -827,6 +826,7 @@ ht-degree: 99%
    + [反轉程序](migration/using/about-rollback.md)
 + 技術說明 {#technotes}
    + [硬體尺寸建議](technotes/using/hardware-sizing.md)
+   + [使用增強的 MTA 傳送](delivery/using/sending-with-enhanced-mta.md)
    + [中間來源基礎結構的傳入簡訊工作流程活動](technotes/using/inbound-sms-wf.md)
    + 升級至 IMS{#ims}
       + [轉變為 Adobe IMS](technotes/using/ac-ims.md)
