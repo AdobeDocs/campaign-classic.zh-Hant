@@ -5,10 +5,10 @@ description: 瞭解如何授與Campaign功能的存取權
 badge: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Access Management, Permissions
 exl-id: 9b616715-33cd-43ba-8548-8d96a179408e
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+source-git-commit: b27b85b126e002c0ea8b5d71da1ed60e1e817980
 workflow-type: tm+mt
-source-wordcount: '309'
-ht-degree: 6%
+source-wordcount: '202'
+ht-degree: 9%
 
 ---
 
@@ -30,22 +30,37 @@ Adobe Campaign可讓您定義並管理指派給各種運運算元的許可權。
 * 存取特定記錄，
 * 建立、修改及/或刪除記錄（動作、連絡人、行銷活動、群組等）。
 
-這些許可權適用於操作員設定檔或操作員群組。
+>[!BEGINTABS]
 
-它們是透過連結至操作員與Adobe Campaign的連線模式的安全引數完成的。 有關[此頁面](../../installation/using/security-zones.md)中安全性區域的詳細資訊。
+>[!TAB 許可權檔案]
 
-您可授予使用者兩種型別的許可權：
+若要進一步瞭解Adobe Campaign中的許可權，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/admin/permissions/gs-permissions?lang=en#_blank){target=_blank}。
 
-* 您可以定義您賦予許可權的運運算元群組，然後將運運算元與一或多個群組建立關聯。 這可讓您重複使用許可權，並讓運運算元設定檔更加一致。 它也能促進設定檔的管理和維護。 在[此區段](access-management-groups.md)中顯示群組建立與管理。
+[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/admin/permissions/gs-permissions?lang=en#_blank){target=_blank}
 
-* 您可以將已命名的許可權直接歸因於使用者，在某些情況下，這會使透過群組配置的許可權過載。 這些許可權會顯示在[此頁面](access-management-named-rights.md)中。
+>[!TAB 管理資料夾存取權]
+
+若要進一步瞭解資料夾存取權及管理資料夾的方式，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/admin/permissions/folder-permissions?lang=en#_blank){target=_blank}。
+
+[![影像](../../assets/do-not-localize/learn-more-button.svg)]([![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/admin/permissions/gs-permissions?lang=en#_blank){target=_blank}){target=_blank}
+
+>[!ENDTABS]
+
+<!--
+The permissions apply to operator profiles or operator groups.
+
+They are completed by safety parameters linked to the operator's connection mode to Adobe Campaign. For more about security zones in [this page](../../installation/using/security-zones.md).
+
+There are two types of permissions you can grant to a user:
+
+* You can define groups of operators to which you attribute rights, then associate the operators with one or more groups. This enables you to reuse rights and make operator profiles more consistent. It also facilitates the management and maintenance of profiles. Group creation and management are presented in [this section](access-management-groups.md).
+
+* You can attribute named rights directly to users, in some cases to overload the rights allocated via groups. These rights are presented in [this page](access-management-named-rights.md).
 
 >[!NOTE]
 >
-> * 開始定義許可權之前，Adobe建議您先閱讀[安全性設定檢查清單](https://helpx.adobe.com/tw/campaign/kb/acc-security.html)。
-> * 若要深入瞭解許可權，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/admin/permissions/gs-permissions){target=_blank}的詳細說明。
-
-<!--
+> * Before starting defining permissions, Adobe recommends you to read the [Security configuration checklist](https://helpx.adobe.com/campaign/kb/acc-security.html).
+> * To learn more about permissions, please refer to the detailed explanation on the [Campaign v8 documentation](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/admin/permissions/gs-permissions){target=_blank}.
 
 Learn how to grant access and set up permissions in these sections:
 

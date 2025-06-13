@@ -7,7 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 4d9c5b24-83a2-4495-a56c-5bc376d69703
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+hide: true
+hidefromtoc: true
+source-git-commit: 471018f09e5a14635fcce07aeca1e2cf48d9144f
 workflow-type: tm+mt
 source-wordcount: '77'
 ht-degree: 11%
@@ -26,7 +28,7 @@ Campaign使用者端主控台是豐富的使用者端，可讓您連線至您的
 
 >[!NOTE]
 >
-> 若要瞭解如何安裝並登入Adobe Campaign，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/new/connect){target=_blank}的詳細逐步說明。
+> 若要瞭解如何安裝並登入Adobe Campaign，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/connect){target=_blank}的詳細逐步說明。
 
 <!--
 ## Start Adobe Campaign {#starting-adobe-campaign}
@@ -111,6 +113,6 @@ Whenever you reach out to Adobe Customer Care team, you need to provide the vers
 
 * [Adobe Campaign Help and Support options](../../support.md)
 * [Adobe Campaign Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
-* [Adobe Experience Cloud Support and Expert sessions](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
+* [Adobe Experience Cloud Support and Expert sessions](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
 
 -->

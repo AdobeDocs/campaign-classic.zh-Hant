@@ -7,10 +7,10 @@ feature: Query Editor
 role: User, Data Architect
 level: Beginner
 exl-id: 2db1034d-cad6-4fb0-8646-dd9099080ab0
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+source-git-commit: 471018f09e5a14635fcce07aeca1e2cf48d9144f
 workflow-type: tm+mt
-source-wordcount: '203'
-ht-degree: 69%
+source-wordcount: '222'
+ht-degree: 64%
 
 ---
 
@@ -26,8 +26,22 @@ Adobe Campaign查詢工具可讓您使用專用助理來查詢資料庫：一般
 
 透過使用所選資料表的欄位或公式可以建立查詢。
 
->[!NOTE]
->
->若要進一步瞭解查詢以及如何建立查詢，請參閱[Campaign v8檔案](../../workflow/using/query.md)。
+>[!BEGINTABS]
+
+>[!TAB 查詢檔案]
+
+若要深入瞭解查詢，請參閱[Campaign v8檔案。](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/activities){target=_blank}
+
+
+[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/activities){target=_blank}
+
+
+>[!TAB 建立查詢]
+
+在[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}中瞭解與建立查詢相關的關鍵步驟。
+
+[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}
+
+>[!ENDTABS]
 
 ![顯示查詢範例的熒幕擷圖。](assets/query_recipients_4.png)

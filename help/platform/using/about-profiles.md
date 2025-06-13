@@ -6,10 +6,10 @@ feature: Profiles, Audiences
 role: User, Data Architect
 level: Beginner
 exl-id: 54f1ad6c-54b0-4448-8c38-806dd75c1dae
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+source-git-commit: 471018f09e5a14635fcce07aeca1e2cf48d9144f
 workflow-type: tm+mt
-source-wordcount: '234'
-ht-degree: 37%
+source-wordcount: '357'
+ht-degree: 24%
 
 ---
 
@@ -27,7 +27,32 @@ ht-degree: 37%
 
 >[!NOTE]
 >
->若要深入瞭解設定檔、如何建立及編輯設定檔，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/audience/gs-audiences){target=_blank}的詳細檔案。
+>若要深入瞭解設定檔、如何建立及編輯設定檔，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/gs-audiences){target=_blank}的詳細檔案。
+
+>[!BEGINTABS]
+
+>[!TAB 設定檔檔案]
+
+若要深入瞭解設定檔、如何建立及編輯設定檔，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/gs-audiences){target=_blank}的詳細檔案。
+
+[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/gs-audiences){target=_blank}
+
+>[!TAB 建立及編輯設定檔]
+
+在Campaign v8檔案中瞭解如何編輯、管理和新增設定檔：
+
+* [新增設定檔](https://experienceleague.adobe.com/en/docs/campaign-classic/using/getting-started/profile-management/adding-profiles){target=_blank}：瞭解新增和建立新設定檔的關鍵步驟。
+* [編輯設定檔](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/view-profiles?lang=en#_blank){target=_blank}：檢視並編輯現有的設定檔。
+* [管理設定檔](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/folders-and-views?lang=en#_blank){target=_blank}：使用資料夾管理工具存取和管理您現有的設定檔。
+
+>[!TAB 匯入/匯出設定檔]
+
+在Campaign v8檔案中瞭解如何匯入和匯出設定檔和資料：
+
+* [匯入設定檔](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/add-profiles/import-profiles){target=_blank}：您可以使用工作流程匯入設定檔。
+* [匯入/匯出資料](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/import){target=_blank}：瞭解如何使用一般匯入/匯出功能匯入或匯出資料和設定檔。
+
+>[!ENDTABS]
 
 <!--
 ## Profile types {#profile-types}
@@ -96,9 +121,9 @@ The general layout of the Adobe Campaign explorer is presented in [this page](..
 
 An active profile is a profile that customer has attempted to communicate with during the past 12 months via any channel.
 
-According to your contract, each of your Campaign instances is provisioned with a specific amount of active profiles that are counted for billing purposes. Please refer to your latest contract for reference on number of purchased active profiles. Learn more in [Adobe Campaign product description](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
+According to your contract, each of your Campaign instances is provisioned with a specific amount of active profiles that are counted for billing purposes. Please refer to your latest contract for reference on number of purchased active profiles. Learn more in [Adobe Campaign product description](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
 
-You can monitor the number of active profiles on your instance directly from Campaign Control Panel. For more on this, refer to the [Control Panel documentation](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html?lang=zh-Hant){target="_blank"}.
+You can monitor the number of active profiles on your instance directly from Campaign Control Panel. For more on this, refer to the [Control Panel documentation](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html){target="_blank"}.
 
 The following guardrails and limitations apply:
 
@@ -116,11 +141,11 @@ This video also explains the compliance of Adobe Campaign Classic with General D
 
 >[!VIDEO](https://video.tv.adobe.com/v/35611?quality=12)
 
-Additional Campaign Classic how-to videos are available [here](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant).
+Additional Campaign Classic how-to videos are available [here](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
 
 **See also**
 
-* [Privacy management in Campaign](https://helpx.adobe.com/tw/campaign/kb/acc-privacy.html)
+* [Privacy management in Campaign](https://helpx.adobe.com/campaign/kb/acc-privacy.html)
 
 * [Create queries and segment data in workflows](../../workflow/using/targeting-data.md)
 

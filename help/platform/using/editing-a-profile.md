@@ -7,7 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 exl-id: 0f3a5582-5c90-4393-bee8-d9e2f07e5982
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+hide: true
+hidefromtoc: true
+source-git-commit: 471018f09e5a14635fcce07aeca1e2cf48d9144f
 workflow-type: tm+mt
 source-wordcount: '115'
 ht-degree: 59%
@@ -36,7 +38,7 @@ ht-degree: 59%
 
 >[!NOTE]
 >
->若要進一步瞭解如何編輯設定檔及存取設定檔，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/audience/view-profiles){target=_blank}的詳細檔案。
+>若要進一步瞭解如何編輯設定檔及存取設定檔，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/view-profiles){target=_blank}的詳細檔案。
 
 
 
