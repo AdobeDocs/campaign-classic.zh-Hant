@@ -30,17 +30,17 @@ Adobe Campaign查詢工具可讓您使用專用助理來查詢資料庫：一般
 
 >[!TAB 查詢檔案]
 
-若要深入瞭解查詢，請參閱[Campaign v8檔案。](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/activities){target=_blank}
+若要深入瞭解查詢，請參閱[Campaign v8檔案。](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/workflows/wf-activities/activities){target=_blank}
 
 
-[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/activities){target=_blank}
+[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/workflows/wf-activities/activities){target=_blank}
 
 
 >[!TAB 建立查詢]
 
-在[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}中瞭解與建立查詢相關的關鍵步驟。
+在[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}中瞭解與建立查詢相關的關鍵步驟。
 
-[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}
+[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}
 
 >[!ENDTABS]
 

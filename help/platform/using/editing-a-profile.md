@@ -38,7 +38,7 @@ ht-degree: 59%
 
 >[!NOTE]
 >
->若要進一步瞭解如何編輯設定檔及存取設定檔，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/view-profiles){target=_blank}的詳細檔案。
+>若要進一步瞭解如何編輯設定檔及存取設定檔，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/audience/view-profiles){target=_blank}的詳細檔案。
 
 
 
