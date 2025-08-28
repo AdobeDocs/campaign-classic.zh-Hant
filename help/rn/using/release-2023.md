@@ -5,11 +5,13 @@ description: 進一步瞭解 Campaign Classic 2023 版本
 feature: Release Notes
 role: User
 level: Beginner
+hide: true
+hidefromtoc: true
 exl-id: 8ed11e96-9f23-4e2e-bae2-25c51cfb549a
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
-workflow-type: ht
-source-wordcount: '2337'
-ht-degree: 100%
+source-git-commit: 62fc46e45078fce56eadda3518251e61244bf5d0
+workflow-type: tm+mt
+source-wordcount: '2336'
+ht-degree: 99%
 
 ---
 
@@ -79,7 +81,7 @@ _2023 年 9 月 7 日_
 * 已增強 BigQuery 外部帳戶，並新增用於設定 GCloud SDK 的選項。 (NEO-63879) [閱讀全文](../../installation/using/configure-fda-google-big-query.md#google-external)
 * 已在伺服器設定檔案 (serverConf.xml) 中新增 `cusHeader` 區段。其可讓您從外部伺服器上傳檔案時新增自訂標頭。 (NEO-58339) [閱讀全文](../../installation/using/the-server-configuration-file.md#cusheaders)。
 * 已改善追蹤記錄管理，以避免 lastMsgId 出現負值的 ID。 其已從 int32 變更為 int64。 (NEO-52290)
-* 已新增現成可用的中間來源 (傳遞統計資料) 工作流程。 這個新的工作流程會將傳遞統計資料 (nms:deliveryStat) 從 MID 同步至行銷執行個體。 (NEO-36802)
+* 已新增現成可用的中間來源 (傳遞統計資料) 工作流程。 此新工作流程會將傳遞統計資料(nms:deliveryStat)從mid同步至行銷執行個體。 (NEO-36802)
 
 ### 修補程式 {#release-7-3-4-patches}
 
@@ -181,7 +183,7 @@ _2022 年 11 月 21 日_
 
 * Google BigQuery 連接器現在完全支援布林欄位。 (NEO-49181)
 * 您現在可以在 serverConf.xml 檔案的 `Configuration for the redirection service` 區段設定 IMS Cookie 有效期間。 這適用於下列 Cookie：`uuid230`、`nllastdelid` 和 `AMCV_` (NEO-42541)
-* 現在，您可以透過將 serverConf.xml 檔案的重新導向節點中的 `showSourceIP` 設定為 false，IP 可以隱藏在 &quot;/r/test&quot; 請求中。 [閱讀全文](../../installation/using/the-server-configuration-file.md#redirection-redirection)(NEO-46656)
+* 現在，您可以透過將 serverConf.xml 檔案的重新導向節點中的 `showSourceIP` 設定為假，IP 可以隱藏在 &quot;/r/test&quot; 請求中。 [閱讀全文](../../installation/using/the-server-configuration-file.md#redirection-redirection)(NEO-46656)
 * 自此版本開始，已傳送電子郵件上的追蹤連結在升級期間仍可運作。 [閱讀更多](../../platform/using/faq-build-upgrade.md)
 
 

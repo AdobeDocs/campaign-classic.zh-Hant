@@ -5,11 +5,13 @@ description: 進一步瞭解 Campaign Classic 2022 版本
 feature: Release Notes
 role: User
 level: Beginner
+hide: true
+hidefromtoc: true
 exl-id: 28490323-41d0-4d61-b309-6892fb826d21
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+source-git-commit: 62fc46e45078fce56eadda3518251e61244bf5d0
 workflow-type: tm+mt
-source-wordcount: '2100'
-ht-degree: 100%
+source-wordcount: '2099'
+ht-degree: 99%
 
 ---
 
@@ -72,7 +74,7 @@ _2022 年 7 月 1 日_
 * 已修正可能導致當機並需要完全重新啟動執行個體的問題。 (NEO-44645)
 * 已修正可能導致工作流程熱度圖無法載入結果的問題。 (NEO-43360)
 * 針對使用 FDA 外部連接器時可能導致的連線問題，已加以修正。 (NEO-42722)
-* 已修正使用地址替代與控制組排除時的證明問題。 (NEO-39695)
+* 已修正使用地址替代與控制組排除時的校樣問題。 (NEO-39695)
 * 因 Snowflake 連接器問題而可能導致的工作流程失敗問題，已進行修正。(NEO-46299)
 * 針對因個人化區塊包含無效字元而可能凍結用戶端主控台的問題，已加以修正。 (NEO-45761)
 * 建立 Snowflake 專用外部帳戶作為外部資料庫時，針對可能導致的連線問題，已加以修正。 (NEO-45744)
@@ -102,7 +104,7 @@ _2022 年 3 月 1 日_
 * 修復下列問題，當使用包含重複及連續的傳遞的&#x200B;**網站分析**&#x200B;外部帳戶時，導致遺失部分外部帳戶資料。 (NEO-38548)
 * 修復在更新 NmsActiveContact 表格時升級後速度變慢的問題。 (NEO-43206)
 * 修復下列升級後的問題，當出廠預裝資料夾從&#x200B;**管理**&#x200B;節點移動到任何其他位置時發生問題。 (NEO-42875)
-* 修正下列問題，當使用&#x200B;**更新資料**&#x200B;工作流程活動時，可能會使收件者綱要無法從 Google 雲端外部資料庫更新收件者資料。 (NEO-42343)
+* 修正下列問題，當使用&#x200B;**更新資料**&#x200B;工作流程活動時，可能會使收件者結構描述無法從 Google 雲端外部資料庫更新收件者資料。 (NEO-42343)
 * 修復了與 Adobe Analytics 連接器相關的升級後的問題。 (NEO-43318、NEO-38136)
 * 修復在升級後期間「VALUE_TO_CHANGE」覆寫 CUID 的問題。 (NEO-43267)
 * 修復下列問題，在多個中間設定上同步中間來源和行銷執行個體時導致錯誤。 (NEO-10432)
@@ -145,7 +147,7 @@ Adobe Campaign 現在相容於 Windows Server 2019。 請參閱 [Campaign 相容
 **其他變更**
 
 * 棄用後，Microsoft CRM、Salesforce、Oracle CRM 隨選操作活動已從介面中移除。若要設定 Adobe Campaign 與 CRM 系統之間的資料同步，您可以使用 CRM 連接器活動。[閱讀全文](../../workflow/using/crm-connector.md)
-* **[!UICONTROL Encrypted identifier]** 欄位已新增至訪客方案 (nms:visitor)。 此欄位已經過計算，將用於網路應用程式。當在中間來源執行個體上設定 Line 頻道時，即適用。
+* **[!UICONTROL Encrypted identifier]**&#x200B;欄位已新增至訪客結構描述(nms:visitor)。 此欄位已經過計算，將用於網路應用程式。當在中間來源執行個體上設定 Line 頻道時，即適用。
 * CRM 資料來源現在可用於&#x200B;**變更資料來源**&#x200B;活動。
 * 已在&#x200B;**錯誤管理**&#x200B;工作流程活動中新增屬性：**錯誤時中止**&#x200B;選項會自動停止工作流程。 之後將無法重新啟動 (NEO-29661)。 [閱讀全文](../../workflow/using/advanced-parameters.md#in-case-of-errors)
 * 專用序列現在用於產生 nmsGroup 表的主要金鑰，此表用於建立收件者的統計分組。 之前使用 xtknewId 序列。 (NEO-30832)
