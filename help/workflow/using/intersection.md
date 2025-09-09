@@ -6,10 +6,10 @@ feature: Workflows, Targeting Activity
 hide: true
 hidefromtoc: true
 exl-id: f426bf02-9899-49eb-b699-728d51b57c64
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 3ffa32fbaa588904b79a1343c39f5b5b5f2b134f
 workflow-type: tm+mt
-source-wordcount: '436'
-ht-degree: 13%
+source-wordcount: '432'
+ht-degree: 12%
 
 ---
 
@@ -19,10 +19,6 @@ ht-degree: 13%
 >id="ac_workflow_intersection"
 >title="交集活動"
 >abstract="交集類型活動會根據收到的目標的交集建立目標。交集讓您僅擷取所有傳入活動結果共有的母體。"
->additional-url="https://video.tv.adobe.com/v/329373" text="觀看示範影片"
-
-
-
 
 **交集**&#x200B;型別活動會從接收目標的交集建立目標。
 
