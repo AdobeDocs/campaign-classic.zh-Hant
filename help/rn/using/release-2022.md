@@ -9,9 +9,9 @@ hide: true
 hidefromtoc: true
 exl-id: 28490323-41d0-4d61-b309-6892fb826d21
 source-git-commit: 62fc46e45078fce56eadda3518251e61244bf5d0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2099'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -147,7 +147,7 @@ Adobe Campaign 現在相容於 Windows Server 2019。 請參閱 [Campaign 相容
 **其他變更**
 
 * 棄用後，Microsoft CRM、Salesforce、Oracle CRM 隨選操作活動已從介面中移除。若要設定 Adobe Campaign 與 CRM 系統之間的資料同步，您可以使用 CRM 連接器活動。[閱讀全文](../../workflow/using/crm-connector.md)
-* **[!UICONTROL Encrypted identifier]**&#x200B;欄位已新增至訪客結構描述(nms:visitor)。 此欄位已經過計算，將用於網路應用程式。當在中間來源執行個體上設定 Line 頻道時，即適用。
+* 此 **[!UICONTROL Encrypted identifier]** 欄位已新增至訪客結構描述 (nms:visitor)。此欄位已經過計算，將用於網路應用程式。當在中間來源執行個體上設定 Line 頻道時，即適用。
 * CRM 資料來源現在可用於&#x200B;**變更資料來源**&#x200B;活動。
 * 已在&#x200B;**錯誤管理**&#x200B;工作流程活動中新增屬性：**錯誤時中止**&#x200B;選項會自動停止工作流程。 之後將無法重新啟動 (NEO-29661)。 [閱讀全文](../../workflow/using/advanced-parameters.md#in-case-of-errors)
 * 專用序列現在用於產生 nmsGroup 表的主要金鑰，此表用於建立收件者的統計分組。 之前使用 xtknewId 序列。 (NEO-30832)

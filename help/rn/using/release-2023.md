@@ -9,9 +9,9 @@ hide: true
 hidefromtoc: true
 exl-id: 8ed11e96-9f23-4e2e-bae2-25c51cfb549a
 source-git-commit: 62fc46e45078fce56eadda3518251e61244bf5d0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2336'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -81,7 +81,7 @@ _2023 年 9 月 7 日_
 * 已增強 BigQuery 外部帳戶，並新增用於設定 GCloud SDK 的選項。 (NEO-63879) [閱讀全文](../../installation/using/configure-fda-google-big-query.md#google-external)
 * 已在伺服器設定檔案 (serverConf.xml) 中新增 `cusHeader` 區段。其可讓您從外部伺服器上傳檔案時新增自訂標頭。 (NEO-58339) [閱讀全文](../../installation/using/the-server-configuration-file.md#cusheaders)。
 * 已改善追蹤記錄管理，以避免 lastMsgId 出現負值的 ID。 其已從 int32 變更為 int64。 (NEO-52290)
-* 已新增現成可用的中間來源 (傳遞統計資料) 工作流程。 此新工作流程會將傳遞統計資料(nms:deliveryStat)從mid同步至行銷執行個體。 (NEO-36802)
+* 已新增現成可用的中間來源 (傳遞統計資料) 工作流程。 這個新的工作流程會將傳遞統計資料 (nms:deliveryStat) 從 MID 同步至行銷執行個體。(NEO-36802)
 
 ### 修補程式 {#release-7-3-4-patches}
 
