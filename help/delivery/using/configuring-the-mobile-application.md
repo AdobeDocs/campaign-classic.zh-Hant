@@ -82,8 +82,8 @@ ht-degree: 3%
 
    ![](assets/nmac_ios_2.png)
 
-1. 您可以視需要以約&#x200B;**[!UICONTROL Application variables]**擴充推送訊息內容，作為選項。 這些都是可完全自訂的專案，而且是傳送至行動裝置的訊息裝載的一部分。
-在下列範例中，我們新增**mediaURl**&#x200B;和&#x200B;**mediaExt**&#x200B;來建立豐富推送通知，然後提供應用程式要在通知內顯示的影像。
+1. 您可以視需要以約&#x200B;**[!UICONTROL Application variables]**&#x200B;擴充推送訊息內容，作為選項。 這些都是可完全自訂的專案，而且是傳送至行動裝置的訊息裝載的一部分。
+在下列範例中，我們新增&#x200B;**mediaURl**&#x200B;和&#x200B;**mediaExt**&#x200B;來建立豐富推送通知，然後提供應用程式要在通知內顯示的影像。
 
    ![](assets/nmac_ios_3.png)
 

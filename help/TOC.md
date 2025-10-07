@@ -31,8 +31,8 @@ ht-degree: 99%
    + [文件更新](rn/using/documentation-updates.md)
 + 開始使用 {#getting-started}
    + 開始使用 Adobe Campaign {#starting-with-adobe-campaign}
-      + [開始使用 Adobe Campaign Classic ](platform/using/about-adobe-campaign-classic.md)
-      + [啟動 Adobe Campaign ](platform/using/launching-adobe-campaign.md)
+      + [開始使用 Adobe Campaign Classic &#x200B;](platform/using/about-adobe-campaign-classic.md)
+      + [啟動 Adobe Campaign &#x200B;](platform/using/launching-adobe-campaign.md)
       + Adobe Campaign 工作區{#campaign-workspace}
          + [開始使用 Campaign UI](platform/using/adobe-campaign-workspace.md)
          + [使用 Campaign 探索工具](platform/using/adobe-campaign-explorer.md)
