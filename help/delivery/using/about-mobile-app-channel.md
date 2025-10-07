@@ -17,7 +17,7 @@ ht-degree: 2%
 
 透過Adobe Campaign建立推播通知傳遞，以傳送個人化訊息給您的行動應用程式使用者。
 
-推播通知可讓您即時與iOS和Android上的使用者互動。 不論是傳送更新、公告或促銷活動，您都可以控制內容、時間及目標。 在[Adobe Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/emails/email){target=_blank}中瞭解如何設定及使用推播頻道、管理訂閱、與APN和FCM整合，以及個人化訊息。
+推播通知可讓您即時與iOS和Android上的使用者互動。 不論是傳送更新、公告或促銷活動，您都可以控制內容、時間及目標。 在[Adobe Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/emails/email){target=_blank}中瞭解如何設定及使用推播頻道、管理訂閱、與APN和FCM整合，以及個人化訊息。
 
 做為Campaign v8促銷活動的一部分，Campaign Classic檔案已重新整理。 現在僅可在Campaign v8檔案集中使用常見功能。
 
@@ -25,29 +25,29 @@ ht-degree: 2%
 
 >[!TAB 推播通道檔案]
 
-若要進一步瞭解推播通知頻道，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push.html){target=_blank}。
+若要進一步瞭解推播通知頻道，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push.html?lang=zh-Hant){target=_blank}。
 
-[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push.html){target=_blank}
+[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push.html?lang=zh-Hant){target=_blank}
 
 
 >[!TAB 推播傳遞建立]
 
 在Campaign v8檔案中瞭解與推播傳送建立相關的關鍵步驟：
 
-* [建立推播通知](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push.html#push-create){target="_blank"}：瞭解建立推播傳遞所需的不同步驟。
-* [傳送及監視推播通知](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push.html#push-test){target="_blank"}：瞭解如何驗證、傳送及追蹤您的傳遞。
-* [設計Android豐富推送傳送](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/rich-push/rich-push-android.html){target="_blank"}：瞭解如何建立和設定Android裝置的豐富推送通知。
-* [設計iOS豐富推送傳送](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/rich-push/rich-push-ios.html){target="_blank"}：瞭解如何在Adobe Campaign v8中為iOS裝置設計和設定豐富推送通知。
+* [建立推播通知](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push.html?lang=zh-Hant#push-create){target="_blank"}：瞭解建立推播傳遞所需的不同步驟。
+* [傳送及監視推播通知](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push.html?lang=zh-Hant#push-test){target="_blank"}：瞭解如何驗證、傳送及追蹤您的傳遞。
+* [設計Android豐富推送傳送](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/rich-push/rich-push-android.html?lang=zh-Hant){target="_blank"}：瞭解如何建立和設定Android裝置的豐富推送通知。
+* [設計iOS豐富推送傳送](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/rich-push/rich-push-ios.html?lang=zh-Hant){target="_blank"}：瞭解如何在Adobe Campaign v8中為iOS裝置設計和設定豐富推送通知。
 
 
 >[!TAB 推播引數]
 
 請參閱這些頁面，以在Campaign v8檔案中瞭解推播引數：
 
-* [設定先決條件](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html#before-starting){target="_blank"}：瞭解如何設定許可權及設定您的應用程式。
-* [設定launch屬性](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html#launch-property){target="_blank"}：瞭解如何在Adobe Experience Platform資料收集中設定行動標籤屬性以啟用推播通知。
-* [設定推送服務行動服務](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html#push-service){target="_blank"}：在Adobe中設定iOS和Android推送服務，為您的行動應用程式使用者啟用目標式推送通知。
-* [在行動屬性中設定擴充功能](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html#configure-extension){target="_blank"}：將Campaign擴充功能整合至行動屬性，以啟用推播通知並有效管理使用者互動。
+* [設定先決條件](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html?lang=zh-Hant#before-starting){target="_blank"}：瞭解如何設定許可權及設定您的應用程式。
+* [設定launch屬性](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html?lang=zh-Hant#launch-property){target="_blank"}：瞭解如何在Adobe Experience Platform資料收集中設定行動標籤屬性以啟用推播通知。
+* [設定推送服務行動服務](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html?lang=zh-Hant#push-service){target="_blank"}：在Adobe中設定iOS和Android推送服務，為您的行動應用程式使用者啟用目標式推送通知。
+* [在行動屬性中設定擴充功能](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html?lang=zh-Hant#configure-extension){target="_blank"}：將Campaign擴充功能整合至行動屬性，以啟用推播通知並有效管理使用者互動。
 
 >[!ENDTABS]
 
@@ -56,7 +56,7 @@ ht-degree: 2%
 
 +++ **封裝安裝**
 
-![](assets/do-not-localize/how-to-video.png) [瞭解如何在影片中安裝行動應用程式套件](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/installing-the-mobile-app-channel.html#sending-messages)
+![](assets/do-not-localize/how-to-video.png) [瞭解如何在影片中安裝行動應用程式套件](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/installing-the-mobile-app-channel.html?lang=zh-Hant#sending-messages)
 
 身為混合/託管客戶，請聯絡[Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)團隊以存取Campaign中的推播通知頻道。
 
@@ -86,7 +86,7 @@ ht-degree: 2%
 
 1. **[!UICONTROL Close]**&#x200B;安裝視窗。
 
-完成此步驟後，您就可以設定您的Android和iOS應用程式。 請參閱Campaign v8 [檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push.html){target="_blank"}。
+完成此步驟後，您就可以設定您的Android和iOS應用程式。 請參閱Campaign v8 [檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push.html?lang=zh-Hant){target="_blank"}。
 
 +++
 
@@ -105,6 +105,6 @@ HTTP/2聯結器：您必須允許與下列伺服器之間的通訊：
 
 >[!NOTE]
 >
->如需這兩個聯結器的詳細資訊，請參閱Campaign v8 [檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html){target="_blank"}。
+>如需這兩個聯結器的詳細資訊，請參閱Campaign v8 [檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html?lang=zh-Hant){target="_blank"}。
 
 +++
