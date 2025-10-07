@@ -5,8 +5,10 @@ description: 瞭解如何定義直接郵件內容
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Direct Mail
 role: User
+hide: true
+hidefromtoc: true
 exl-id: 585b2017-9408-4953-8505-2f6d9db8032f
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 89e350c727fb9379d28916f79d9749f22fd4974f
 workflow-type: tm+mt
 source-wordcount: '176'
 ht-degree: 10%

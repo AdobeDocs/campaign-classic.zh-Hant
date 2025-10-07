@@ -6,22 +6,47 @@ badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v
 feature: Direct Mail
 role: User
 exl-id: 6474cf2e-c4db-4430-b001-18bf4911b0ea
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 89e350c727fb9379d28916f79d9749f22fd4974f
 workflow-type: tm+mt
-source-wordcount: '167'
-ht-degree: 7%
+source-wordcount: '289'
+ht-degree: 4%
 
 ---
 
+
 # 關於直接郵件頻道{#about-direct-mail-channel}
 
+使用Adobe Campaign建立直接郵件傳送，將個人化實體訊息傳送給您的對象。
 
-Adobe Campaign可讓您製作檔案，以大量傳送個人化信件。 收件者設定檔必須至少包含其名稱和郵寄地址。
+直接郵件仍然是與客戶建立實際聯絡的強大管道，非常適用於提供列印的優惠、目錄、忠誠度訊息或個人化信件，強化數位接觸點以外的品牌影響力。 在[Adobe Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/direct-mail.html){target=_blank}中瞭解如何有效設定和管理直接郵件行銷活動，從準備資料及產生路由合作夥伴的檔案到追蹤傳遞結果。
 
->[!NOTE]
->
->郵寄地址為計算欄位。 依預設，地址最多可包含6行：第一行包含名字和姓氏，下一行包含郵遞區號（道路等），而最後一行包含郵遞區號和城鎮。 您可以在nms：recipient綱要中檢閱預設計算postalAddress欄位的定義。
->
->如果名稱、郵遞區號欄位和城鎮/城市欄位並非空白，則會將地址視為完整。 所有位址不完整的收件者都會從直接郵件傳遞中排除。
+做為Campaign v8促銷活動的一部分，Campaign Classic檔案已重新整理。 現在僅可在Campaign v8檔案集中使用常見功能。
 
-以下各節提供直接郵件通道的特定資訊。 如需如何建立和傳送傳遞的全域資訊，請參閱[本節](steps-about-delivery-creation-steps.md)。
+>[!BEGINTABS]
+
+>[!TAB 直接郵件通道檔案]
+
+若要深入瞭解直接郵件頻道，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/direct-mail.html){target=_blank}。
+
+
+[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/direct-mail.html){target=_blank}
+
+
+>[!TAB 直接郵件傳遞建立]
+
+在Campaign v8檔案中瞭解與建立電子郵件傳遞和定義對象相關的重要步驟：
+
+* [建立直接電子郵件傳遞](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/direct-mail.html#creating-a-direct-mail-delivery){target="_blank"}：瞭解建立直接郵件傳遞所需的不同步驟。
+* [定義直接郵件對象](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/direct-mail.html#creating-a-direct-mail-delivery#defining-the-direct-mail-audience){target="_blank"}：瞭解如何識別目標設定檔，以定義直接郵件傳遞的對象。
+* [定義直接郵件內容](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/direct-mail.html#creating-a-direct-mail-delivery#defining-the-direct-mail-content){target="_blank"}：瞭解如何定義直接郵件傳遞的內容，包括個人化元素和資料欄位。
+
+>[!TAB 直接郵件驗證與傳送]
+
+請參閱這些頁面，在Campaign v8檔案中瞭解如何驗證及傳送您的直接郵件傳送：
+
+* [驗證傳遞](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/direct-mail.html#creating-a-direct-mail-delivery#defining-the-direct-mail-content){target="_blank"}：瞭解如何檢查分析結果和輸出檔案的內容。
+* [傳送傳遞](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/direct-mail.html#creating-a-direct-mail-delivery#defining-the-direct-mail-content){target="_blank"}：瞭解如何產生解壓縮檔案，以傳送您的直接郵件傳遞。
+
+
+
+>[!ENDTABS]

@@ -5,11 +5,13 @@ description: 瞭解如何設定Android的行動應用程式
 feature: Push
 role: User, Developer
 level: Intermediate, Experienced
+hide: true
+hidefromtoc: true
 exl-id: 32c35e61-d0a3-478f-b73b-396e2becf7f9
-source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
+source-git-commit: 89e350c727fb9379d28916f79d9749f22fd4974f
 workflow-type: tm+mt
-source-wordcount: '837'
-ht-degree: 10%
+source-wordcount: '843'
+ht-degree: 9%
 
 ---
 
@@ -44,7 +46,7 @@ Android提供兩種聯結器：
 1. 選取&#x200B;**[!UICONTROL Android routing]**&#x200B;外部帳戶。
 1. 在&#x200B;**[!UICONTROL Connector]**&#x200B;索引標籤中，填入&#x200B;**[!UICONTROL JavaScript used in the connector]**&#x200B;欄位：
 
-   若為Android V2： https://localhost:8080/nms/jsp/androidPushConnectorV2.js
+   適用於Android V2： https://localhost:8080/nms/jsp/androidPushConnectorV2.js
 
    >[!NOTE]
    >
@@ -58,7 +60,7 @@ Android提供兩種聯結器：
 
 ## 設定Android服務 {#configuring-android-service}
 
-![](assets/do-not-localize/how-to-video.png) [瞭解如何在影片中設定Android服務](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-an-android-service-in-campaign.html?lang=zh-Hant#configuring-an-android-service-and-creating-an-android-mobile-application-in-campaign){target="_blank"}。
+![](assets/do-not-localize/how-to-video.png) [瞭解如何在影片中設定Android服務](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-an-android-service-in-campaign.html#configuring-an-android-service-and-creating-an-android-mobile-application-in-campaign){target="_blank"}。
 
 1. 前往&#x200B;**[!UICONTROL Profiles and Targets > Services and subscriptions]**&#x200B;節點並按一下&#x200B;**[!UICONTROL New]**。
 
@@ -69,7 +71,7 @@ Android提供兩種聯結器：
 
    >[!NOTE]
    >
-   >預設&#x200B;**[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]**&#x200B;目標對應已連結至收件者表格。 如果您想使用不同的目標對應，則需要建立新的目標對應，並在服務的&#x200B;**[!UICONTROL Target mapping]**&#x200B;欄位中輸入它。 如需建立目標對應的詳細資訊，請參閱[本區段](../../configuration/using/about-custom-recipient-table.md)。
+   >預設&#x200B;**[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]**&#x200B;目標對應已連結至收件者資料表。 如果您想使用不同的目標對應，則需要建立新的目標對應，並在服務的&#x200B;**[!UICONTROL Target mapping]**&#x200B;欄位中輸入它。 如需建立目標對應的詳細資訊，請參閱[本區段](../../configuration/using/about-custom-recipient-table.md)。
 
    ![](assets/nmac_ios.png)
 
@@ -103,7 +105,7 @@ Android提供兩種聯結器：
 
 1. 按一下&#x200B;**[!UICONTROL Finish]**，然後再按&#x200B;**[!UICONTROL Save]**。 您的Android應用程式現在已準備好在Campaign Classic中使用。
 
-依預設，Adobe Campaign會在&#x200B;**[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]**&#x200B;表格的&#x200B;**[!UICONTROL User identifier]** (@userKey)欄位中儲存金鑰。 此金鑰可讓您將訂閱連結至收件者。 若要收集其他資料（例如複雜的調解金鑰），您必須套用下列設定：
+依預設，Adobe Campaign會在&#x200B;**[!UICONTROL User identifier]**)**[!UICONTROL Subscriber applications (nms:appSubscriptionRcp資料表的]** (@userKey)欄位中儲存金鑰。 此金鑰可讓您將訂閱連結至收件者。 若要收集其他資料（例如複雜的調解金鑰），您必須套用下列設定：
 
 ### 設定API版本{#select-api-version}
 
@@ -115,7 +117,7 @@ Android提供兩種聯結器：
 
 若要設定HTTP v1 API版本，請遵循下列步驟：
 
-1. 在&#x200B;**[!UICONTROL Mobile application creation wizard]**&#x200B;視窗的&#x200B;**[!UICONTROL API version]**&#x200B;下拉式清單中選取&#x200B;**[!UICONTROL HTTPV1]**。
+1. 在&#x200B;**[!UICONTROL Mobile application creation wizard]**&#x200B;視窗的&#x200B;**[!UICONTROL HTTPV1]**&#x200B;下拉式清單中選取&#x200B;**[!UICONTROL API version]**。
 
 1. 按一下&#x200B;**[!UICONTROL Load project json file to extract project details...]**&#x200B;直接載入您的JSON金鑰檔案。 如需有關如何解壓縮JSON檔案的詳細資訊，請參閱[此頁面](https://firebase.google.com/docs/admin/setup#initialize-sdk)。
 
@@ -147,7 +149,7 @@ Android提供兩種聯結器：
 
 ## 擴充appsubscriptionRcp結構描述 {#extend-subscription-schema}
 
-![](assets/do-not-localize/how-to-video.png) [瞭解如何在視訊中擴充appsubscriptionRcp結構描述](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/extending-the-app-subscription-schema.html?lang=zh-Hant#extending-the-app-subscription-schema-to-personalize-push-notifications)
+![](assets/do-not-localize/how-to-video.png) [瞭解如何在視訊中擴充appsubscriptionRcp結構描述](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/extending-the-app-subscription-schema.html#extending-the-app-subscription-schema-to-personalize-push-notifications)
 
 您必須擴充&#x200B;**appsubscriptionRcp**，以定義新的額外欄位，將應用程式中的引數儲存至Campaign資料庫。 例如，這些欄位用於個人化。 操作步驟：
 

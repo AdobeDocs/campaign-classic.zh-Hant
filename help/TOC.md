@@ -6,10 +6,10 @@ title: Campaign Classic v7 指南
 user-guide-description: Adobe Campaign Classic v7 產品文件。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: faed7f54dc72937b24ee1ece80d17150a513fa39
+source-git-commit: 89e350c727fb9379d28916f79d9749f22fd4974f
 workflow-type: tm+mt
-source-wordcount: '2565'
-ht-degree: 100%
+source-wordcount: '2561'
+ht-degree: 99%
 
 ---
 
@@ -144,8 +144,8 @@ ht-degree: 100%
       + [建立簡訊](delivery/using/sms-create.md)
       + [遷移到擴展的通用 SMPP 連接器](delivery/using/unsupported-connector-migration.md)
    + [傳送 LINE 訊息](delivery/using/line-channel.md)
+   + [傳送推播通知](delivery/using/about-mobile-app-channel.md)
    + 傳送推播通知 {#sending-push-notifications}
-      + [開始使用行動應用程式頻道](delivery/using/about-mobile-app-channel.md)
       + [將 Campaign SDK 整合至行動應用程式](delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
       + 設定行動應用程式{#configure-the-mobile-app}
          + [開始使用應用程式設定](delivery/using/get-started-app-config.md)
@@ -155,9 +155,9 @@ ht-degree: 100%
          + [為 iOS 建立推播訊息](delivery/using/create-notifications-ios.md)
          + [為 Android 建立推播訊息](delivery/using/create-notifications-android.md)
       + [疑難排解](delivery/using/troubleshooting.md)
+   + [傳送直接郵件](delivery/using/about-direct-mail-channel.md)
    + 傳送直接郵件 {#sending-direct-mail}
-      + [關於直接郵件頻道](delivery/using/about-direct-mail-channel.md)
-      + [建立新的直接郵件傳遞](delivery/using/creating-a-direct-mail-delivery.md)
+      + [建立直接郵件傳遞](delivery/using/creating-a-direct-mail-delivery.md)
       + [定義直接郵件內容](delivery/using/defining-the-direct-mail-content.md)
       + [驗證](delivery/using/validating.md)
    + 使用傳遞範本 {#using-delivery-templates}

@@ -1,19 +1,21 @@
 ---
 product: campaign
-title: 建立新的直接郵件傳遞
+title: 建立直接郵件傳遞
 description: 瞭解如何建立直接郵件傳送
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Direct Mail
 role: User
+hide: true
+hidefromtoc: true
 exl-id: 964cc600-19b8-449e-bac6-dc9da2b5ea12
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 89e350c727fb9379d28916f79d9749f22fd4974f
 workflow-type: tm+mt
 source-wordcount: '96'
 ht-degree: 10%
 
 ---
 
-# 建立新的直接郵件傳遞{#creating-a-direct-mail-delivery}
+# 建立直接郵件傳遞{#creating-a-direct-mail-delivery}
 
 若要建立新的直接郵件傳送，請遵循下列步驟：
 

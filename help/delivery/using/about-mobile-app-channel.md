@@ -6,101 +6,105 @@ badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v
 feature: Push
 role: User
 exl-id: c3b0406f-f652-42f4-ad0d-23fb719cd1b6
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 89e350c727fb9379d28916f79d9749f22fd4974f
 workflow-type: tm+mt
-source-wordcount: '772'
-ht-degree: 10%
+source-wordcount: '576'
+ht-degree: 2%
 
 ---
 
 # 開始使用行動應用程式頻道{#about-mobile-app-channel}
 
-**行動應用程式頻道**&#x200B;可讓您使用Adobe Campaign平台，透過應用程式將個人化推播通知傳送至iOS和Android終端。
+透過Adobe Campaign建立推播通知傳遞，以傳送個人化訊息給您的行動應用程式使用者。
 
-有兩種傳送通道可供使用：
+推播通知可讓您即時與iOS和Android上的使用者互動。 不論是傳送更新、公告或促銷活動，您都可以控制內容、時間及目標。 在[Adobe Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/emails/email){target=_blank}中瞭解如何設定及使用推播頻道、管理訂閱、與APN和FCM整合，以及個人化訊息。
 
-* 可讓您將通知傳送至Apple行動裝置的iOS頻道。
+做為Campaign v8促銷活動的一部分，Campaign Classic檔案已重新整理。 現在僅可在Campaign v8檔案集中使用常見功能。
 
-  ![](assets/nmac_intro_2.png)
+>[!BEGINTABS]
 
-* Android通道，可讓您將資料訊息傳送至Android行動裝置。
+>[!TAB 推播通道檔案]
 
-  ![](assets/nmac_intro_1.png)
+若要進一步瞭解推播通知頻道，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push.html){target=_blank}。
 
-  >[!IMPORTANT]
-  >
-  >Android Firebase Cloud Messaging (FCM) 服務的一些重要變更將於 2024 年發行，並可能影響 Adobe Campaign 實施。Android 推播訊息訂閱服務設定可能需要更新，才能支援此變更。您已經可以檢查並採取行動。 在此[Adobe Campaign v8技術檔案](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/push-technote.html?lang=zh-Hant){target="_blank"}中進一步瞭解。
-
-對應這兩個管道，行銷活動工作流程中有兩個傳遞活動。 有兩個異動訊息範本也可用於異動訊息。
-
-![](assets/nmac_intro_3.png)
+[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push.html){target=_blank}
 
 
-您可以定義當使用者啟動通知以顯示符合應用程式內容的畫面時的應用程式行為。 例如：
+>[!TAB 推播傳遞建立]
 
-* 系統會傳送通知給客戶，通知他們包裹已離開倉儲。 啟用通知會開啟一個頁面，其中包含傳遞相關的資訊。
-* 使用者已將專案新增到購物車，但未完成購買就離開了應用程式。 已傳送通知，通知他們已放棄購物車。 當他們啟動通知時，專案會顯示在畫面上。
+在Campaign v8檔案中瞭解與推播傳送建立相關的關鍵步驟：
+
+* [建立推播通知](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push.html#push-create){target="_blank"}：瞭解建立推播傳遞所需的不同步驟。
+* [傳送及監視推播通知](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push.html#push-test){target="_blank"}：瞭解如何驗證、傳送及追蹤您的傳遞。
+* [設計Android豐富推送傳送](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/rich-push/rich-push-android.html){target="_blank"}：瞭解如何建立和設定Android裝置的豐富推送通知。
+* [設計iOS豐富推送傳送](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/rich-push/rich-push-ios.html){target="_blank"}：瞭解如何在Adobe Campaign v8中為iOS裝置設計和設定豐富推送通知。
+
+
+>[!TAB 推播引數]
+
+請參閱這些頁面，以在Campaign v8檔案中瞭解推播引數：
+
+* [設定先決條件](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html#before-starting){target="_blank"}：瞭解如何設定許可權及設定您的應用程式。
+* [設定launch屬性](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html#launch-property){target="_blank"}：瞭解如何在Adobe Experience Platform資料收集中設定行動標籤屬性以啟用推播通知。
+* [設定推送服務行動服務](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html#push-service){target="_blank"}：在Adobe中設定iOS和Android推送服務，為您的行動應用程式使用者啟用目標式推送通知。
+* [在行動屬性中設定擴充功能](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html#configure-extension){target="_blank"}：將Campaign擴充功能整合至行動屬性，以啟用推播通知並有效管理使用者互動。
+
+>[!ENDTABS]
+
+
+以下是Campaign Classic的專屬資訊。
+
++++ **封裝安裝**
+
+![](assets/do-not-localize/how-to-video.png) [瞭解如何在影片中安裝行動應用程式套件](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/installing-the-mobile-app-channel.html#sending-messages)
+
+身為混合/託管客戶，請聯絡[Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)團隊以存取Campaign中的推播通知頻道。
+
+身為內部部署客戶，您必須安裝內建套件。
 
 >[!CAUTION]
 >
->* 您必須確保傳送至行動應用程式的通知符合Apple (Apple推播通知服務)和Google （Firebase雲端通訊）所指定的必要條件和條件。
->* 警告：在某些國家，法律要求您通知使用者您收集的資料型別行動應用程式及其處理的目的。 您必須檢查法規。
+>在[此頁面](../../installation/using/installing-campaign-standard-packages.md)中進一步瞭解Campaign內建套件、最佳實務和建議。
 
-**[!UICONTROL NMAC opt-out management]** (mobileAppOptOutMgt)工作流程會更新行動裝置上的通知取消訂閱。 如需此工作流程的詳細資訊，請參閱[技術工作流程清單](../../workflow/using/about-technical-workflows.md)。
+安裝步驟如下：
 
-Adobe Campaign與HTTP/2 APN相容。 如需設定步驟的詳細資訊，請參閱[本區段](configuring-the-mobile-application.md)區段。
+1. 從Adobe Campaign使用者端主控台的&#x200B;**[!UICONTROL Tools > Advanced > Import package]**&#x200B;存取套件匯入小幫手。
 
-如需如何建立傳遞的全域資訊，請參閱[本節](steps-about-delivery-creation-steps.md)。
+   ![](assets/package_ios.png)
 
+1. 選取 **[!UICONTROL Install a standard package]**。
 
-## 設定推播通知頻道 {#push-notification-configuration}
+1. 在出現的清單中，核取&#x200B;**[!UICONTROL Mobile App Channel]**。
 
-若要使用Adobe Campaign傳送推播通知，您必須先設定環境和應用程式。 開始使用Adobe Campaign傳送推播通知之前，您需要確保行動應用程式上和Adobe Experience Platform中的標籤已具備設定和整合。 Adobe Experience Platform Mobile SDK透過Android與iOS相容的SDK，為您的行動裝置提供使用者端整合API。 SDK 設定可透過資料彙集 UI 來管理，提供靈活的設定與可擴充的規則式整合。 在[Adobe Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/push/push-settings)中進一步瞭解。
+   ![](assets/package_ios_2.png)
 
+1. 按一下&#x200B;**[!UICONTROL Next]**，然後按一下&#x200B;**[!UICONTROL Start]**&#x200B;以開始安裝封裝。
 
-## 資料路徑 {#data-path}
+   安裝套件後，進度列會顯示&#x200B;**100%**，您可以在安裝記錄檔中看到下列訊息： **[!UICONTROL Installation of packages successful]**。
 
-下列結構描述詳細說明可讓行動應用程式與Adobe Campaign交換資料的步驟。 此程式涉及三個實體：
+   ![](assets/package_ios_3.png)
 
-* 行動應用計畫
-* 通知服務：適用於Apple的APN (Apple推播通知服務)和適用於Android的FCM (Firebase Cloud Messaging)
-* Adobe Campaign
+1. **[!UICONTROL Close]**&#x200B;安裝視窗。
 
-通知程式的三個主要步驟是：在Adobe Campaign中註冊應用程式（訂閱收集）、傳送和追蹤。
+完成此步驟後，您就可以設定您的Android和iOS應用程式。 請參閱Campaign v8 [檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push.html){target="_blank"}。
 
-### 步驟1：訂閱集合 {#step-1--subscription-collection}
++++
 
-使用者可以從App Store或Google Play下載行動應用程式。 此應用程式包含連線設定(Android的iOS憑證和專案金鑰)和整合金鑰。 第一次開啟應用程式時（視組態而定），系統會要求使用者輸入註冊資訊(例@userKey：電子郵件或帳號)。 同時，應用程式會詢問通知服務是否要收集通知ID （推播ID）。 所有這些資訊（連線設定、整合金鑰、通知識別碼、userKey）都會傳送至Adobe Campaign。
++++ **疑難排解**
 
-![](assets/nmac_register_view.png)
+如果您的行動裝置已連線至Wi-Fi，但您未收到通知，請檢查防火牆是否未封鎖FCM/APNs連線埠。
 
-### 步驟2：傳送 {#step-2--delivery}
+**Android**：行動裝置已連線到連線埠5228到5230上的FCM伺服器。 因此，您必須設定防火牆，使其可授權與FCM的連線。 要開啟的連線埠為：5228 （最常使用）、5229和5230。
 
-行銷人員鎖定應用程式訂閱者。 傳送程式會將連線設定傳送至通知服務(Android的iOS憑證和專案金鑰)、通知ID （推播ID）和通知內容。 通知服務會將通知傳送至目標終端。
+**iOS**：
 
-Adobe Campaign中有以下資訊：
+HTTP/2聯結器：您必須允許與下列伺服器之間的通訊：
 
-* 僅限Android：已顯示通知（曝光數）的裝置數
-* Android和iOS：通知的點按次數
+* api.push.apple.com：連線埠443
+* api.development.push.apple.com：連線埠443
 
-![](assets/nmac_delivery_view.png)
+>[!NOTE]
+>
+>如需這兩個聯結器的詳細資訊，請參閱Campaign v8 [檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html){target="_blank"}。
 
-Adobe Campaign伺服器必須能夠連絡iOS HTTP/2聯結器的443連線埠上的APNs伺服器。
-
-若要檢查它是否正常運作，請使用下列命令：
-
-* 對於測試：
-
-  ```
-  api.development.push.apple.com:443
-  ```
-
-* 生產中：
-
-  ```
-  api.push.apple.com:443
-  ```
-
-使用iOS HTTP/2聯結器時，MTA和Web伺服器必須能夠聯絡連線埠443上的APN。
-
-如果您需要透過Proxy使用iOS HTTP/2聯結器，請參閱此[頁面](../../installation/using/file-res-management.md#proxy-connection-configuration)。
++++

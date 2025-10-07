@@ -4,8 +4,10 @@ title: 為iOS裝置建立推播通知
 description: 瞭解如何建立iOS的推播通知
 feature: Push
 role: User, Developer, Data Engineer
+hide: true
+hidefromtoc: true
 exl-id: 4520504a-0d9f-4ea7-a5a8-0c07948af4f0
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 89e350c727fb9379d28916f79d9749f22fd4974f
 workflow-type: tm+mt
 source-wordcount: '971'
 ht-degree: 8%
@@ -42,7 +44,7 @@ ht-degree: 8%
 
    ![](assets/nmac_delivery_ios_3.png)
 
-1. 在&#x200B;**[!UICONTROL General notification (Alert, Sound, Badge)]**&#x200B;或&#x200B;**[!UICONTROL Silent notification]**&#x200B;之間選擇您的&#x200B;**[!UICONTROL Notification type]**。
+1. 在&#x200B;**[!UICONTROL Notification type]**&#x200B;或&#x200B;**[!UICONTROL General notification (Alert, Sound, Badge)]**&#x200B;之間選擇您的&#x200B;**[!UICONTROL Silent notification]**。
 
    ![](assets/nmac_delivery_ios_4.png)
 
@@ -140,11 +142,11 @@ ht-degree: 8%
 
 1. 前往&#x200B;**[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]**。
 
-1. 按一下&#x200B;**[!UICONTROL New]**。
+1. 按一下 **[!UICONTROL New]**。
 
    ![](assets/nmac_android_3.png)
 
-1. 在&#x200B;**[!UICONTROL Delivery template]**&#x200B;下拉式清單中選取&#x200B;**[!UICONTROL Deliver on iOS (ios)]**。 新增&#x200B;**[!UICONTROL Label]**&#x200B;至您的傳遞。
+1. 在&#x200B;**[!UICONTROL Deliver on iOS (ios)]**&#x200B;下拉式清單中選取&#x200B;**[!UICONTROL Delivery template]**。 新增&#x200B;**[!UICONTROL Label]**&#x200B;至您的傳遞。
 
 1. 按一下&#x200B;**[!UICONTROL To]**&#x200B;以定義目標母體。 依預設，會套用&#x200B;**[!UICONTROL Subscriber application]**&#x200B;目標對應。 按一下&#x200B;**[!UICONTROL Add]**&#x200B;以選取先前建立的服務。
 
