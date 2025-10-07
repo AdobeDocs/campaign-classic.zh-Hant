@@ -5,11 +5,13 @@ description: 瞭解如何使用個人化欄位
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Personalization
 role: User
+hide: true
+hidefromtoc: true
 exl-id: 67fd9a67-cb05-46cd-acd5-e42fde6f4d4f
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: a1e9fec0e9c85bf25b79e24a7432dfb45bd1a0cb
 workflow-type: tm+mt
 source-wordcount: '1024'
-ht-degree: 8%
+ht-degree: 9%
 
 ---
 
@@ -29,7 +31,7 @@ ht-degree: 8%
 
 根據所選的傳送模式，個人化欄位可能來自兩種型別的資料來源：
 
-* Adobe Campaign資料庫是資料來源。 這是最常見的案例，例如「收件者個人化欄位」。 無論標準欄位（通常是：姓氏、名字、地址、城鎮、出生日期等），這些都是收件者表格中定義的所有欄位 或使用者定義的欄位。
+* Adobe Campaign資料庫是資料來源。 這是最常見的案例，例如「收件者個人化欄位」。 這些是收件者表格中定義的所有欄位，無論是標準欄位（通常是：姓氏、名字、地址、城鎮、出生日期等）或使用者定義的欄位，都是如此。
 * 外部檔案是資料來源。 這些是使用外部檔案中的資料進行傳遞期間，在檔案的欄中定義的所有欄位都會呈現為輸入。
 
 >[!NOTE]
@@ -88,7 +90,7 @@ ht-degree: 8%
 1. 建立行銷活動。 如需詳細資訊，請參閱[本章節](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign)。
 1. 在行銷活動的&#x200B;**[!UICONTROL Targeting and workflows]**&#x200B;索引標籤中，新增&#x200B;**查詢**&#x200B;活動至您的工作流程。 有關使用此活動的詳細資訊，請參閱[本區段](../../workflow/using/query.md)。
 1. 將&#x200B;**[!UICONTROL Email delivery]**&#x200B;活動新增至工作流程並開啟它。 有關使用此活動的詳細資訊，請參閱[本區段](../../workflow/using/delivery.md)。
-1. 移至&#x200B;**[!UICONTROL Delivery properties]**&#x200B;的&#x200B;**[!UICONTROL Analysis]**&#x200B;標籤，並選取&#x200B;**[!UICONTROL Prepare the personalization data with a workflow]**&#x200B;選項。
+1. 移至&#x200B;**[!UICONTROL Analysis]**&#x200B;的&#x200B;**[!UICONTROL Delivery properties]**&#x200B;標籤，並選取&#x200B;**[!UICONTROL Prepare the personalization data with a workflow]**&#x200B;選項。
 
    ![](assets/perso_optimization.png)
 
@@ -106,7 +108,7 @@ Adobe Campaign介面中看不到此工作流程。 其目的僅在於成為快�
 
 若要改善傳送保護，您可以設定個人化階段的逾時期間。
 
-在&#x200B;**[!UICONTROL Delivery properties]**&#x200B;的&#x200B;**[!UICONTROL Delivery]**&#x200B;索引標籤中，選取&#x200B;**[!UICONTROL Maximum personalization run time]**&#x200B;選項的最大值（以秒為單位）。
+在&#x200B;**[!UICONTROL Delivery]**&#x200B;的&#x200B;**[!UICONTROL Delivery properties]**&#x200B;索引標籤中，選取&#x200B;**[!UICONTROL Maximum personalization run time]**&#x200B;選項的最大值（以秒為單位）。
 
 在預覽或傳送期間，如果個人化階段超過您在此欄位中設定的最大時間，流程將中止，並出現錯誤訊息，傳送將失敗。
 
@@ -142,4 +144,4 @@ Adobe Campaign介面中看不到此工作流程。 其目的僅在於成為快�
 
 >[!VIDEO](https://video.tv.adobe.com/v/24925?quality=12)
 
-[此處](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant)提供其他Campaign Classic操作說明影片。
+其他 Campaign Classic 作法影片可在[此處](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant)取得。

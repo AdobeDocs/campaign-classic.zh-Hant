@@ -5,11 +5,13 @@ description: 瞭解如何使用個人化區塊
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Personalization
 role: User
+hide: true
+hidefromtoc: true
 exl-id: 8d155844-d18a-4165-9886-c3b144109f6e
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: a1e9fec0e9c85bf25b79e24a7432dfb45bd1a0cb
 workflow-type: tm+mt
 source-wordcount: '870'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -17,7 +19,7 @@ ht-degree: 2%
 
 個人化區塊為動態、個人化的區塊，並包含您可插入傳遞中的特定轉譯。 例如，您可以新增標誌、問候語訊息或映象頁面的連結。 請參閱[插入個人化區塊](#inserting-personalization-blocks)。
 
-![](assets/do-not-localize/how-to-video.png)在影片[&#128279;](#personalization-blocks-video)中探索此功能
+![](assets/do-not-localize/how-to-video.png)在影片[中探索此功能](#personalization-blocks-video)
 
 透過Adobe Campaign總管的&#x200B;**[!UICONTROL Resources > Campaign Management > Personalization blocks]**&#x200B;節點存取個人化區塊。 預設提供數個區塊（請參閱[現成可用的個人化區塊](#out-of-the-box-personalization-blocks)）。
 
@@ -114,7 +116,7 @@ HTML原始碼會插入傳遞內容中。 例如，**[!UICONTROL Greetings]**&#x2
   >此區塊僅可用於以訪客為目標的傳遞。
 
 * **[!UICONTROL Registration confirmation]** ：插入連結，以確認訂閱。
-* **[!UICONTROL Social network sharing links]** ：插入可讓收件者與電子郵件使用者端、Facebook、X (先前稱為Twitter)和LinkedIn （請參閱[病毒式行銷：轉寄給朋友](viral-and-social-marketing.md#viral-marketing--forward-to-a-friend)）共用映象頁面內容連結的按鈕。
+* **[!UICONTROL Social network sharing links]** ：插入可讓收件者與電子郵件使用者端、Facebook、X （先前稱為Twitter）和LinkedIn共用映象頁面內容連結的按鈕（請參閱[病毒式行銷：轉寄給朋友](viral-and-social-marketing.md#viral-marketing--forward-to-a-friend)）。
 * **[!UICONTROL Style of content emails]**&#x200B;和&#x200B;**[!UICONTROL Notification style]** ：產生程式碼，使用預先定義的HTML樣式來格式化電子郵件。 這些區塊必須插入傳遞的原始程式碼中（在&#x200B;**[!UICONTROL ...]**&#x200B;區段中）的&#x200B;**`<style>...</style>`**&#x200B;標籤中。
 * **[!UICONTROL Offer acceptance URL in unitary mode]** ：插入URL以啟用設定互動選件至&#x200B;**[!UICONTROL Accepted]** （請參閱[此區段](../../interaction/using/offer-analysis-report.md)）。
 
@@ -132,13 +134,13 @@ HTML原始碼會插入傳遞內容中。 例如，**[!UICONTROL Greetings]**&#x2
 
    * 輸入區塊的標籤。 此標籤將顯示在個人化欄位插入視窗中。
    * 選取&#x200B;**[!UICONTROL Visible in the customization menus]**&#x200B;以從個人化欄位插入圖示存取此區塊。
-   * 如有必要，請選取&#x200B;**[!UICONTROL The content of the personalization block depends upon the format]**&#x200B;以為HTML格式和文字格式的電子郵件定義兩個個別的區塊。
+   * 如有必要，請選取&#x200B;**[!UICONTROL The content of the personalization block depends upon the format]**&#x200B;以為HTML格式的電子郵件和文字格式的電子郵件定義兩個個別的區塊。
 
      然後，兩個索引標籤會顯示在此編輯器的下方(HTML內容和文字內容)以定義對應的內容。
 
      ![](assets/s_ncs_user_personalized_block_b.png)
 
-   * 輸入內容(HTML、文字、JavaScript等) 個人化區塊的「 」，然後按一下&#x200B;**[!UICONTROL Save]**。
+   * 輸入個人化區塊的內容(在HTML、文字、JavaScript等)，然後按一下&#x200B;**[!UICONTROL Save]**。
 
 ## 教學課程影片 {#personalization-blocks-video}
 
@@ -146,4 +148,4 @@ HTML原始碼會插入傳遞內容中。 例如，**[!UICONTROL Greetings]**&#x2
 
 >[!VIDEO](https://video.tv.adobe.com/v/24924?quality=12)
 
-[此處](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant)提供其他Campaign Classic操作說明影片。
+其他 Campaign Classic 作法影片可在[此處](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant)取得。

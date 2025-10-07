@@ -5,8 +5,10 @@ description: 瞭解如何新增條件式內容
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Personalization, Multilingual Messages
 role: User
+hide: true
+hidefromtoc: true
 exl-id: 12595ee4-6a52-4e06-b80d-85fe633a5a11
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: a1e9fec0e9c85bf25b79e24a7432dfb45bd1a0cb
 workflow-type: tm+mt
 source-wordcount: '494'
 ht-degree: 7%
@@ -80,7 +82,7 @@ ht-degree: 7%
 在下列範例中，您將瞭解如何建立多語言電子郵件。 內容將會根據收件者偏好的語言，以一種或另一種語言顯示。
 
 1. 建立電子郵件並選取目標母體。 在此範例中，顯示一個版本或另一個版本的條件將依據收件者設定檔的&#x200B;**語言**&#x200B;值。 在此範例中，這些值設定為&#x200B;**EN**、**FR**、**ES**。
-1. 在電子郵件HTML內容中，按一下「**[!UICONTROL Source]**」標籤，然後貼上下列程式碼：
+1. 在電子郵件HTML內容中，按一下「**[!UICONTROL Source]**」索引標籤並貼上下列程式碼：
 
    ```
    <% if (language == "EN" ) { %>
