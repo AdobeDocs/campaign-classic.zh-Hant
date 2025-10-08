@@ -31,7 +31,6 @@ ht-degree: 29%
 >[!NOTE]
 >
 > * 若要顯示資料庫中所有收件者的清單，您必須建立檢視。 在[Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}中進一步瞭解。
-
 > * 若要深入瞭解如何管理您的設定檔，請參閱[Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}。
 
 
