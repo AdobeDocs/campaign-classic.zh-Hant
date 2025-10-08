@@ -6,9 +6,9 @@ feature: Overview
 role: User, Data Architect
 level: Beginner
 exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
-source-git-commit: f469689f9e8a4d805fb95a1ae120ccd35aba3731
+source-git-commit: d56038fc8baf766667d89bb73747c20ec041124c
 workflow-type: tm+mt
-source-wordcount: '5959'
+source-wordcount: '6002'
 ht-degree: 2%
 
 ---
@@ -119,7 +119,7 @@ Learn more about [Interaction](../../interaction/using/interaction-and-offer-man
 
 +++**頻道**
 
-頻道是用來傳送通訊的媒體。 Adobe Campaign中的內建頻道包括電子郵件、簡訊、直接郵件、推播通知、LINE和X (以前稱為Twitter)。 可針對非標準管道需求實作自訂管道。
+頻道是用來傳送通訊的媒體。 Adobe Campaign中的內建頻道包括電子郵件、簡訊、直接郵件、推播通知、LINE和X （先前稱為Twitter）。 可針對非標準管道需求實作自訂管道。
 
 深入瞭解[管道](../../delivery/using/communication-channels.md)。
 +++
@@ -278,7 +278,7 @@ Learn more about [Deliverability](../../delivery/using/about-deliverability.md).
 +++**網域委派**
 
 子網域設定可讓您設定網域的子區段（技術上稱為「DNS區域」），以便與Adobe Campaign搭配使用。
-網域委派可讓Adobe控制並維護DNS的所有層面，這些是傳遞、呈現和追蹤電子郵件行銷活動所需。
+網域委派可讓Adobe控制並維護傳遞、呈現和追蹤電子郵件行銷活動所需的DNS的各個層面。
 
 深入瞭解[網域委派](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=zh-Hant)
 +++
@@ -345,14 +345,16 @@ An engine call is a server call that starts real-time processing on server side 
 
 列舉是在結構描述中或在Platform層級定義的資料型別，可定義欄位的有效輸入值。 列舉會顯示在使用者介面中，並在查詢建置器中顯示為挑選清單。
 
-深入瞭解[分項清單](../../platform/using/managing-enumerations.md)。
+在&#x200B;**Adobe Campaign v8 （主控台）檔案**&#x200B;中進一步瞭解如何[使用分項清單](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}。
 +++
 
 +++**總管檢視**
 
 「總管」檢視是包含Adobe Campaign成品和資料的資料夾的階層式顯示。 請注意，Adobe Campaign中的資料夾系統運作方式與典型的樹狀檢視不同，每個資料夾內含特定型別的資料，例如傳送、工作流程或選件。
 
-深入瞭解[總管檢視](../../platform/using/adobe-campaign-explorer.md)。
+
+在[Adobe Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}中進一步瞭解Campaign使用者介面。
+
 +++
 
 +++**外部帳戶**
@@ -398,14 +400,15 @@ An engine call is a server call that starts real-time processing on server side 
 
 資料夾是儲存特定資料型別之資料庫記錄的「總管」檢視專案。 例外情況是用作組織元素的Generic資料夾型別，它本身不包含任何資料，只有其他資料夾。
 
-深入瞭解[資料夾](../../platform/using/adobe-campaign-explorer.md)。
+在[Adobe Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}中進一步瞭解Campaign使用者介面。
+
 +++
 
 +++**資料夾檢視**
 
 「資料夾」檢視是一種特殊的「總管」資料夾型別，用來顯示選定資料型別的所有記錄，無論其屬於哪個資料夾。 資料夾檢視可做為管理工具，用來管理分散在多個資料夾中的分割資料或資料。
 
-深入瞭解[資料夾檢視](../../platform/using/adobe-campaign-explorer.md)。
+在[Adobe Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}中進一步瞭解Campaign使用者介面。
 +++
 
 +++**Forms**
@@ -558,7 +561,8 @@ Learn more about [Navigation Bar](../../platform/using/adobe-campaign-workspace.
 
 導覽樹狀結構是Adobe Campaign之「總管」檢視中的主要導覽。 導覽樹狀結構的運作方式與檔案瀏覽器類似（例如Windows檔案總管）。 資料夾可能包含子資料夾。 選取節點會顯示與節點對應的檢視。 顯示的檢視是與結構描述關聯的清單，以及用來編輯所選行的輸入表單。 您可以自訂導覽樹狀結構並設定檔案夾的許可權。
 
-深入瞭解[導覽樹狀結構](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarch)。
+在[Adobe Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}中進一步瞭解Campaign使用者介面。
+
 +++
 
 +++**目標**
@@ -667,7 +671,7 @@ Learn more about [Navigation Bar](../../platform/using/adobe-campaign-workspace.
 
 *內容：行銷活動互動*
 
-優惠方案宣告是頻道用來顯示優惠方案的資訊。 優惠方案表示可從表示優惠方案的空間的演算函式建構，或直接輸入介面(例如，在HTML區塊中)。 選件可能以空格表示。
+優惠方案宣告是頻道用來顯示優惠方案的資訊。 優惠方案呈現方式可從呈現優惠方案的空間的呈現函式建構，或直接輸入介面(例如在HTML區塊中)。 選件可能以空格表示。
 
 深入瞭解[互動](../../interaction/using/interaction-and-offer-management.md)。
 +++
@@ -836,7 +840,7 @@ Adobe Campaign中的「公用資源」資料夾內含由應用程式伺服器託
 
 *內容：行動應用程式頻道*
 
-推播通知是行動應用程式收到的訊息。 推播通知的設定是透過在行動應用程式中包含Experience PlatformSDK程式碼來與Adobe Campaign搭配使用。 針對推播，提供兩種傳送頻道： iOS和Android。
+推播通知是行動應用程式收到的訊息。 推播通知已設定為在行動應用程式中包含Adobe Campaign SDK程式碼，以便與Experience Platform搭配使用。 針對推播，提供兩種傳送頻道： iOS和Android。
 
 深入瞭解[推播](../../delivery/using/about-mobile-app-channel.md)。
 +++
@@ -909,7 +913,7 @@ Adobe Campaign可讓您建立和管理資訊服務（例如電子報或產品更
 
 在「控制面板」中，您可以與所有連線至您可存取之 Campaign 執行個體的 SFTP 伺服器互動。 「控制面板」可以讓您對SFTP伺服器執行動作，例如監視儲存容量、管理IP位址允許清單及管理公開SSH金鑰。
 
-深入瞭解[SFTP管理](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html?lang=zh-Hant)。
+深入瞭解[SFTP管理](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html)。
 +++
 
 +++**訂閱服務活動**

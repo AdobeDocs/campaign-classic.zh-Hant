@@ -5,9 +5,9 @@ feature: Application Settings
 description: 瞭解如何設定Campaign Explorer導覽樹狀結構
 role: Data Engineer, Developer
 exl-id: c7ae7240-0c12-4420-bbb3-4268c9ade3e7
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: d56038fc8baf766667d89bb73747c20ec041124c
 workflow-type: tm+mt
-source-wordcount: '1186'
+source-wordcount: '1183'
 ht-degree: 0%
 
 ---
@@ -16,9 +16,9 @@ ht-degree: 0%
 
 身為資深使用者，您可以在瀏覽器樹狀結構中新增資料夾並加以自訂。
 
-在本節[&#128279;](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy)中進一步瞭解Campaign總管和導覽階層。
+在[Adobe Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}中進一步瞭解Campaign使用者介面。
 
-導覽清單使用的資料夾型別在遵循&#x200B;**xtk：navtree**&#x200B;結構描述語法的XML檔案中描述。
+導覽清單使用的資料夾型別在遵循&#x200B;**xtk:navtree**&#x200B;結構描述語法的XML檔案中描述。
 
 XML檔案的結構如下：
 
@@ -42,7 +42,7 @@ XML檔案的結構如下：
 </navtree>
 ```
 
-XML檔案包含具有&#x200B;**名稱**&#x200B;和&#x200B;**名稱空間**&#x200B;屬性的&#x200B;**`<navtree>`**&#x200B;根專案，以指定檔名稱和名稱空間。 檔案識別金鑰的名稱和名稱空間組成。
+XML檔案包含具有&#x200B;**`<navtree>`**&#x200B;名稱&#x200B;**和**&#x200B;名稱空間&#x200B;**屬性的**&#x200B;根專案，以指定檔名稱和名稱空間。 檔案識別金鑰的名稱和名稱空間組成。
 
 應用程式的全域命令是從&#x200B;**`<commands>`**&#x200B;元素的檔案中宣告。
 
@@ -82,7 +82,7 @@ XML檔案包含具有&#x200B;**名稱**&#x200B;和&#x200B;**名稱空間**&#x200
 * **名稱**：命令的內部名稱：名稱必須輸入且是唯一的
 * **label**：命令的標籤。
 * **desc**：可從主畫面的狀態列看到描述。
-* **表單**：要啟動的表單：要輸入的值是輸入表單的識別碼（例如「cus：recipient」）
+* **表單**：要啟動的表單：要輸入的值是輸入表單的識別碼（例如「cus:recipient」）
 * **rights**：允許存取此命令的已命名許可權清單（以逗號分隔）。 可從&#x200B;**[!UICONTROL Administration > Access management > Named rights]**&#x200B;資料夾存取可用許可權清單。
 * **promptLabel**：在執行命令之前顯示確認方塊。
 
@@ -92,13 +92,13 @@ XML檔案包含具有&#x200B;**名稱**&#x200B;和&#x200B;**名稱空間**&#x200
 
 命令分隔符號可讓您在命令之間顯示分隔列。 它由包含在命令標籤中的&#x200B;**&#39;-&#39;**&#x200B;值識別。
 
-**`<soapcall>`**&#x200B;標籤及其輸入引數的選擇性存在性定義要執行的SOAP方法呼叫。 如需SOAP API的詳細資訊，請參閱[Campaign JSAPI檔案](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hant)。
+**`<soapcall>`**&#x200B;標籤及其輸入引數的選擇性存在會定義要執行的SOAP方法呼叫。 如需SOAP API的詳細資訊，請參閱[Campaign JSAPI檔案](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hant)。
 
 從&#x200B;**`<enter>`**&#x200B;標籤初始化時可以更新表單內容。 如需有關此標籤的詳細資訊，請參閱有關輸入表單的檔案。
 
 **範例**：
 
-* 宣告全域命令以啟動「xtk：import」表單：
+* 宣告全域命令以啟動「xtk:import」表單：
 
   ```
   <command desc="Start the data import assistant" form="xtk:import" label="&amp;Data import..." name="import" rights="import,recipientImport"/>
@@ -122,7 +122,7 @@ XML檔案包含具有&#x200B;**名稱**&#x200B;和&#x200B;**名稱空間**&#x200
   </command>
   ```
 
-* SOAP方法的執行：
+* 執行SOAP方法：
 
   ```
   <command name="cmd3" label="Example 3" promptLabel="Do you really want to execute the command?">
@@ -167,9 +167,9 @@ XML檔案包含具有&#x200B;**名稱**&#x200B;和&#x200B;**名稱空間**&#x200
 * **newFolderShortCuts**：建立資料夾時模型上的捷徑清單（**`<nodemodel>`**，以逗號分隔）。
 * **insertRight**，**editRight**，**deleteRight**：插入、編輯和刪除資料夾的許可權。
 
-**`<nodemodel>`**&#x200B;專案下的&#x200B;**`<view>`**&#x200B;專案包含與檢視相關聯的清單組態。 清單的結構描述是在&#x200B;**`<view>`**&#x200B;專案的&#x200B;**結構描述**&#x200B;屬性中輸入的。
+**`<view>`**&#x200B;專案下的&#x200B;**`<nodemodel>`**&#x200B;專案包含與檢視相關聯的清單組態。 清單的結構描述是在&#x200B;**專案的**&#x200B;結構描述&#x200B;**`<view>`**&#x200B;屬性中輸入的。
 
-若要編輯清單的記錄，會隱含使用與清單結構描述同名的輸入表單。 **`<view>`**&#x200B;專案上的&#x200B;**type**&#x200B;屬性會影響表單的顯示。 可能的值包括：
+若要編輯清單的記錄，會隱含使用與清單結構描述同名的輸入表單。 **專案上的** type **`<view>`**&#x200B;屬性會影響表單的顯示。 可能的值包括：
 
 * **listdet**：在清單底部顯示表單。
 * **清單**：單獨顯示清單。 透過按兩下或透過選取清單時選單中的「開啟」來啟動表單。
@@ -178,11 +178,11 @@ XML檔案包含具有&#x200B;**名稱**&#x200B;和&#x200B;**名稱空間**&#x200
 
 >[!NOTE]
 >
->在&#x200B;**`<view>`**&#x200B;元素中輸入&#x200B;**form**&#x200B;屬性，可多載輸入表單的名稱。
+>在&#x200B;**元素中輸入** form **`<view>`**&#x200B;屬性，可多載輸入表單的名稱。
 
-清單欄的預設設定是透過&#x200B;**`<columns>`**&#x200B;專案輸入的。 在包含&#x200B;**xpath**&#x200B;屬性的&#x200B;**`<node>`**&#x200B;元素上宣告資料行，並在其結構描述中參考該欄位的值。
+清單欄的預設設定是透過&#x200B;**`<columns>`**&#x200B;專案輸入的。 在包含&#x200B;**`<node>`** xpath **屬性的**&#x200B;元素上宣告資料行，並在其結構描述中參考該欄位的值。
 
-**範例**： &quot;nms：recipient&quot;結構描述上的資料夾型別宣告。
+**範例**： &quot;nms:recipient&quot;結構描述上的資料夾型別宣告。
 
 ```
 <model label="Profiles and targets" name="nmsProfiles">
@@ -251,7 +251,7 @@ XML檔案包含具有&#x200B;**名稱**&#x200B;和&#x200B;**名稱空間**&#x200
 * **name**：命令的內部名稱：名稱必須輸入且是唯一的。
 * **label**：命令的標籤。
 * **desc**：可從主畫面的狀態列看到描述。
-* **表單**：要啟動的表單：要輸入的值是輸入表單的識別碼（例如「cus：recipient」）。
+* **表單**：要啟動的表單：要輸入的值是輸入表單的識別碼（例如「cus:recipient」）。
 * **rights**：允許存取此命令的已命名許可權清單（以逗號分隔）。 可從&#x200B;**[!UICONTROL Administration > Access management > Named rights]**&#x200B;資料夾存取可用許可權清單。
 * **promptLabel**：在執行命令之前顯示確認方塊
 * **monoSelection**：強制單選（預設為多重選取）。
@@ -265,7 +265,7 @@ XML檔案包含具有&#x200B;**名稱**&#x200B;和&#x200B;**名稱空間**&#x200
 
 命令分隔符號可讓您在命令之間顯示分隔列。 它由包含在命令標籤中的&#x200B;**&#39;-&#39;**&#x200B;值識別。
 
-**`<soapcall>`**&#x200B;標籤及其輸入引數的選擇性存在性定義要執行的SOAP方法呼叫。 如需SOAP API的詳細資訊，請參閱[Campaign JSAPI檔案](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hant)。
+**`<soapcall>`**&#x200B;標籤及其輸入引數的選擇性存在會定義要執行的SOAP方法呼叫。 如需SOAP API的詳細資訊，請參閱[Campaign JSAPI檔案](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hant)。
 
 初始化時可透過&#x200B;**`<enter>`**&#x200B;標籤更新表單內容。 如需此標籤的詳細資訊，請參閱輸入表單檔案。
 
@@ -293,7 +293,7 @@ XML檔案包含具有&#x200B;**名稱**&#x200B;和&#x200B;**名稱空間**&#x200
 1. 資料夾是一個檢視：清單會顯示與結構描述相關的所有記錄，並可能在資料夾屬性中輸入系統篩選。
 1. 資料夾已連結：清單中的記錄會在資料夾連結上以隱含的方式篩選。
 
-對於連結的資料夾，**`<nodemodel>`**&#x200B;專案上的&#x200B;**folderLink**&#x200B;屬性必須填入。 此屬性包含在資料架構中設定的資料夾上的連結名稱。
+對於連結的資料夾，**專案上的** folderLink **`<nodemodel>`**&#x200B;屬性必須填入。 此屬性包含在資料架構中設定的資料夾上的連結名稱。
 
 資料結構描述中連結資料夾的宣告範例：
 

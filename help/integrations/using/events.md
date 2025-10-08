@@ -8,9 +8,9 @@ audience: integrations
 content-type: reference
 level: Intermediate, Experienced
 exl-id: 13717b3b-d34a-40bc-9c9e-dcf578fc516e
-source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
+source-git-commit: d56038fc8baf766667d89bb73747c20ec041124c
 workflow-type: tm+mt
-source-wordcount: '1206'
+source-wordcount: '1200'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,7 @@ Pipeline會使用JavaScript函式來處理每則訊息。 此函式由使用者�
 
 已在「JSConnector」屬性下的&#x200B;**[!UICONTROL NmsPipeline_Config]**&#x200B;選項中設定。 每次收到事件時都會呼叫此JavaScript。 由[!DNL pipelined]處理序執行。
 
-範例Javascript檔案為cus：triggers.js。
+範例Javascript檔案為cus:triggers.js。
 
 ### JavaScript 函數 {#function-js}
 
@@ -64,7 +64,7 @@ function processPipelineMessage(xmlTrigger) {}
 * **[!UICONTROL @offset]**&#x200B;是訊息的「指標」。 其會指出佇列中訊息的順序。
 * **[!UICONTROL @partition]**&#x200B;是佇列中訊息的容器。 位移相對於分割區。 <br>佇列中約有15個分割區。
 
-例如：
+範例：
 
 ```
 <trigger offset="1500435" partition="4" triggerId="LogoUpload_1_Visits_from_specific_Channel_or_ppp">
@@ -79,14 +79,14 @@ function processPipelineMessage(xmlTrigger) {}
 >
 >這是各種可能實施作業中的特定範例。
 
-The content is defined in JSON format in Adobe Analytics for each trigger.
-For example, in a trigger LogoUpload_uploading_Visits:
+對於每個觸發程式，內容會在Adobe Analytics中以JSON格式定義。
+例如，在觸發器中LogoUpload_uploading_Visits：
 
-* **[!UICONTROL eVar01]** can contain the Shopper ID in String format which is used to reconcile with Adobe Campaign recipients. <br>必須協調以尋找購物者ID （主索引鍵）。
+* **[!UICONTROL eVar01]**&#x200B;可以包含字串格式的「購物者ID」，此字串格式可用來與Adobe Campaign收件者進行調解。 <br>必須協調以尋找購物者ID （主索引鍵）。
 
 * **[!UICONTROL timeGMT]**&#x200B;可在Adobe Analytics端包含觸發器的時間（UTC Epoch格式） （自01/01/1970 UTC以來的秒數）。
 
-例如：
+範例：
 
 ```
 {
@@ -114,9 +114,9 @@ For example, in a trigger LogoUpload_uploading_Visits:
 
 事件會依位移順序逐一處理。 [!DNL pipelined]的每個執行緒處理不同的資料分割。
 
-The &#39;offset&#39; of the last event retrieved is stored in the database. Therefore, if the process is stopped, it restarts from the last message. This data is stored in the built-in schema xtk:pipelineOffset.
+擷取的最後一個事件的「offset」會儲存在資料庫中。 因此，如果流程停止，它會從最後一個訊息重新啟動。 此資料儲存在內建結構描述xtk:pipelineOffset中。
 
-This pointer is specific to each instance and each consumer. Therefore, when many instances access the same pipeline with different consumers, they each get all the messages and in the same order.
+此指標是每個執行個體和每個取用者專屬的。 因此，當許多執行個體使用不同的消費者存取相同的管道時，他們每個人都會以相同的順序收到所有訊息。
 
 管線選項的&#x200B;**消費者**&#x200B;引數可識別呼叫的執行個體。
 
@@ -127,11 +127,11 @@ This pointer is specific to each instance and each consumer. Therefore, when man
 記錄檔(例如logInfo())會導向至[!DNL pipelined]記錄檔。 錯誤(例如logError())會寫入[!DNL pipelined]記錄檔，導致事件進入重試佇列。 在此情況下，您應該檢查管線記錄。
 在[!DNL pipelined]選項中設定的期間內，錯誤訊息會重試多次。
 
-為了偵錯和監控之目的，完整的觸發程式資料會以XML格式寫入「資料」欄位中的觸發程式表格中。 Alternatively, a logInfo() containing the trigger data serves the same purpose.
+為了偵錯和監控之目的，完整的觸發程式資料會以XML格式寫入「資料」欄位中的觸發程式表格中。 或者，包含觸發程式資料的logInfo()也可達到相同目的。
 
-### Parsing the data {#data-parsing}
+### 剖析資料 {#data-parsing}
 
-This sample Javascript code parses the eVar01 in the enrichments.
+此範例Javascript程式碼會剖析擴充功能中的eVar01。
 
 ```
 function processPipelineMessage(xmlTrigger)
@@ -150,7 +150,7 @@ function processPipelineMessage(xmlTrigger)
  }
 ```
 
-Be cautious when parsing to avoid errors.
+剖析時請小心，以免發生錯誤。
 由於此程式碼用於所有觸發器，因此大部分資料並非必要。 因此，當不存在時，可以保留空白。
 
 ### 儲存觸發器 {#storing-triggers-js}
@@ -183,7 +183,7 @@ function processPipelineMessage(xmlTrigger)
 
 ### 限制 {#constraints}
 
-Performance for this code must be optimal since it runs at high frequencies and could cause potential negative effects for other marketing activities. 特別是在行銷伺服器上每小時處理超過一百萬個觸發事件時，或是未正確調整時。
+此程式碼的效能必須是最佳的，因為它會在高頻率執行，而且可能會對其他行銷活動造成潛在的負面影響。 特別是在行銷伺服器上每小時處理超過一百萬個觸發事件時，或是未正確調整時。
 
 此Javascript的內容有限。 並非所有API函式都可使用。 例如，getOption()或getCurrentdate()無法運作。
 
@@ -210,7 +210,7 @@ triggerType欄位會識別觸發資料來源的來源。
 | triggerType | 字串50 | TriggerType | 觸發器的名稱。 識別客戶在網站上的行為。 |
 | shopper_id | 字串32 | shopper_id | 購物者的內部識別碼。 由調解工作流程設定。 如果為零，表示在Campaign中未知客戶。 |
 | shopper_key | 長整數 | shopper_key | 購物者的外部識別碼，如Analytics所擷取。 |
-| 已建立 | 日期時間 | 已建立 | 在Campaign中建立事件的時間。 |
+| 已建立 | 日期時間 | 建立時間 | 在Campaign中建立事件的時間。 |
 | lastModified | 日期時間 | 上次修改時間 | 上次在Adobe中修改事件的時間。 |
 | timeGMT | 日期時間 | 時間戳記 | 在Analytics中產生事件的時間。 |
 
@@ -220,7 +220,7 @@ triggerType欄位會識別觸發資料來源的來源。
 
 >[!NOTE]
 >
->The Pipeline Event node is not built-in and needs to be added, as well as the related form needs to be created in Campaign. These operations are restricted to expert users only. For more on this, refer to these sections: [Navigation hierarchy](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy). and [Editing forms](../../configuration/using/editing-forms.md).
+>管道事件節點不是內建的，需要新增，並且需要在Campaign中建立相關表單。 這些操作僅限專家使用者執行。 如需詳細資訊，請參閱[正在編輯表單](../../configuration/using/editing-forms.md)。
 
 ![](assets/triggers_7.png)
 
@@ -235,7 +235,7 @@ triggerType欄位會識別觸發資料來源的來源。
 
 ### JavaScript中用於單元協調的選項 {#options-unit-reconciliation}
 
-It is possible to run the reconciliation query for each trigger in the JavaScript. It has a higher performance impact and gives faster results. It could be required for specific use cases when reactivity is needed.
+您可以在JavaScript中為每個觸發程式執行調解查詢。 效能影響更大，成果更快速。 在需要反應性的特定使用案例中，可能有此需要。
 
 如果shopper_id上未設定索引，則可能很難實作。 如果條件位在與行銷伺服器不同的資料庫伺服器上，則會使用效能不佳的資料庫連結。
 

@@ -6,9 +6,9 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-source-git-commit: 7b71cac6f4c2fc2e8d30683130adb27eff757b73
+source-git-commit: d56038fc8baf766667d89bb73747c20ec041124c
 workflow-type: tm+mt
-source-wordcount: '903'
+source-wordcount: '894'
 ht-degree: 100%
 
 ---
@@ -152,7 +152,6 @@ Adobe 團隊將帶領並引導您的組織完成這個過程。
 * [尋找您的 Campaign 版本](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)。
 * [說明與支援](../../support.md)
 * [控制面板發行版本](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=zh-Hant)
-* [最新文件更新](../../rn/using/documentation-updates.md)
 * [已棄用及已移除的功能](../../rn/using/deprecated-features.md)
 * [版本編號升級常見問答集](../../platform/using/faq-build-upgrade.md)
 
