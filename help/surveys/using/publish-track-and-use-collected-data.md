@@ -5,9 +5,9 @@ description: 瞭解如何發佈、追蹤及使用調查中所收集的資料
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Surveys
 exl-id: 3cf3c486-6640-4d67-95cf-50d5767deb60
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 0db6f107d2c161b07f42dcf7a932d319130b31e0
 workflow-type: tm+mt
-source-wordcount: '843'
+source-wordcount: '855'
 ht-degree: 2%
 
 ---
@@ -162,4 +162,4 @@ ht-degree: 2%
 
 ## 標準化資料 {#standardizing-data}
 
-您可以在Adobe Campaign中為使用別名收集的資料設定標準化流程。 這可讓您標準化資料庫中儲存的資料：若要這麼做，請在包含相關資訊的逐項清單中定義別名。 [了解更多](../../platform/using/managing-enumerations.md#about-enumerations)
+您可以在Adobe Campaign中為使用別名收集的資料設定標準化流程。 這可讓您標準化資料庫中儲存的資料：若要這麼做，請在包含相關資訊的逐項清單中定義別名。 在&#x200B;**Adobe Campaign v8 （主控台）檔案**&#x200B;中進一步瞭解如何[使用分項清單](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}。

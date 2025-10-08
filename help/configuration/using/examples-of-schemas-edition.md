@@ -1,25 +1,25 @@
 ---
 product: campaign
-title: 方案版本範例
-description: 方案版本範例
+title: 結構描述版本範例
+description: 結構描述版本範例
 feature: Schema Extension
 role: Data Engineer, Developer
 exl-id: b7ee70e0-89c6-4cd3-8116-2f073d4a2f2f
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 0db6f107d2c161b07f42dcf7a932d319130b31e0
 workflow-type: tm+mt
-source-wordcount: '669'
+source-wordcount: '671'
 ht-degree: 2%
 
 ---
 
 
-# 方案版本範例{#examples-of-schemas-edition}
+# 結構描述版本範例{#examples-of-schemas-edition}
 
 ## 擴充表格 {#extending-a-table}
 
-若要擴充&#x200B;**nms：recipient**&#x200B;結構描述收件者表格，請套用下列程式：
+若要擴充&#x200B;**nms:recipient**&#x200B;結構描述收件者表格，請套用下列程式：
 
-1. 使用下列資料建立擴充功能結構描述(**cus：extension**)：
+1. 使用下列資料建立擴充功能結構描述(**cus:extension**)：
 
    ```
    <srcSchema mappingType="sql" name="extension" namespace="cus" xtkschema="xtk:srcSchema" extendedSchema="nms:recipient">  
@@ -40,13 +40,13 @@ ht-degree: 2%
    </srcSchema>
    ```
 
-   在此範例中，已新增索引欄位(**fidelity**)，且&#x200B;**位置**&#x200B;元素（已存在於&#x200B;**nms：recipient**&#x200B;結構描述中）已加入列舉欄位(**area**)。
+   在此範例中，已新增索引欄位(**fidelity**)，且&#x200B;**位置**&#x200B;元素（已存在於&#x200B;**nms:recipient**&#x200B;結構描述中）已加入列舉欄位(**area**)。
 
    >[!IMPORTANT]
    >
    >請記得新增&#x200B;**extendedSchema**&#x200B;屬性以參考擴充功能結構描述。
 
-1. 檢查擴充結構描述是否為&#x200B;**nms：recipient**&#x200B;結構描述，以及是否存在其他資料：
+1. 檢查擴充結構描述是否為&#x200B;**nms:recipient**&#x200B;結構描述，以及是否有其他資料存在：
 
    ```
    <schema dependingSchemas="cus:extension" mappingType="sql" name="recipient" namespace="nms" xtkschema="xtk:schema">
@@ -147,13 +147,13 @@ INSERT INTO CusOrder (iOrderId) VALUES (0);
 >
 >SQL命令INSERT INTO位於指令碼結尾，可讓您插入設為0的識別碼記錄，以模擬外部聯結。
 
-## 擴充功能表格 {#extension-table}
+## 擴充功能表 {#extension-table}
 
 擴充表格可讓您擴充連結基數1-1之連結表格中現有表格的內容。
 
 擴充功能表格的用途是避免表格中支援的欄位數限制，或最佳化資料佔用的空間（依需求使用）。
 
-正在建立擴充功能資料表結構描述(**cus：feature**)：
+正在建立擴充功能資料表結構描述(**cus:feature**)：
 
 ```
 <srcSchema mappingType="sql" name="feature" namespace="cus" xtkschema="xtk:srcSchema">  
@@ -203,7 +203,7 @@ CREATE INDEX NmsRecipient_featureId ON NmsRecipient(iFeatureId);
 
 溢位表格包含要擴充之表格的外部索引鍵。 因此，不會修改要擴充的表格。 兩個表格之間的關係是要擴充之表格的主鍵值。
 
-正在建立溢位資料表結構描述(**cus：overflow**)：
+正在建立溢位資料表結構描述(**cus:overflow**)：
 
 ```
 <srcSchema label="Overflow" name="overflow" namespace="cus" xtkschema="xtk:srcSchema">  
@@ -222,7 +222,7 @@ CREATE INDEX NmsRecipient_featureId ON NmsRecipient(iFeatureId);
 
 >[!NOTE]
 >
->溢位表格的主索引鍵是要擴充表格的連結（範例中為「nms：recipient」綱要）。
+>溢位資料表的主索引鍵是要擴充資料表的連結（範例中為「nms:recipient」綱要）。
 
 表格建立SQL命令檔如下：
 
@@ -235,7 +235,7 @@ CREATE UNIQUE INDEX CusOverflow2_id ON CusOverflow2(iRecipientId);
 
 關係表格可讓您連結兩個具有基數N-N的表格。此表格僅包含要連結之表格的外部索引鍵。
 
-群組(**nms：group**)與收件者(**nms：recipient**)之間的關係表範例。
+群組(**nms:group**)與收件者(**nms:recipient**)之間的關係表範例。
 
 關係表的Source結構描述：
 
@@ -335,8 +335,9 @@ xtkschema="xtk:srcSchema">
 
 ## 相關主題
 
-* [使用分項清單](../../platform/using/managing-enumerations.md)
+* 在&#x200B;**Adobe Campaign v8 （主控台）檔案**&#x200B;中進一步瞭解如何[使用分項清單](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}。
 
 * [開始使用Campaign綱要](../../configuration/using/about-schema-edition.md)
 
 * [更新資料庫結構](../../configuration/using/updating-the-database-structure.md)
+

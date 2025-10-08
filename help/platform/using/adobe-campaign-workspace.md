@@ -6,7 +6,7 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 5f689679-7148-4abd-a9bf-185854c64b13
-source-git-commit: b4059e43d98643f0f8b5b3f68f03e10b755e8ba3
+source-git-commit: 0db6f107d2c161b07f42dcf7a932d319130b31e0
 workflow-type: tm+mt
 source-wordcount: '858'
 ht-degree: 25%
@@ -59,7 +59,7 @@ ht-degree: 25%
 * 德文
 * 日文
 
-您為Adobe Campaign Classic執行個體選擇的語言可能會影響日期和時間格式。 如需詳細資訊，請參閱[Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/new/campaign-ui#formats){target=_blank}。
+您為Adobe Campaign Classic執行個體選擇的語言可能會影響日期和時間格式。 如需詳細資訊，請參閱[Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}。
 
 有關如何建立執行個體的詳細資訊，請參閱此[頁面](../../installation/using/creating-an-instance-and-logging-on.md)。
 
@@ -110,7 +110,7 @@ Adobe Campaign檔案總管可透過工具列圖示存取。 使用工具列圖�
 
 若要深入瞭解Adobe Campaign Explorer，請參閱Campaign v8 （主控台）檔案中的這些頁面：
 
-* [Campaign使用者介面概觀](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/new/campaign-ui#ac-explorer-ui){target=_blank}
+* [Campaign使用者介面概觀](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui#ac-explorer-ui){target=_blank}
 
 * [Campaign UI設定](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/ui-settings){target=_blank}
 
@@ -131,7 +131,7 @@ Adobe Campaign檔案總管可透過工具列圖示存取。 使用工具列圖�
 
 定義後，值會顯示在下拉式清單中。 您可以直接選取值，或使用預測性輸入來輸入值，這會建議並完成相符專案。 某些欄位包含預先定義的分項清單，如果需要，可以建立其他分項清單。
 
-在&#x200B;**Adobe Campaign v8 （主控台）檔案**&#x200B;中進一步瞭解如何[使用分項清單](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}。
+在&#x200B;**Adobe Campaign v8 （主控台）檔案**&#x200B;中進一步瞭解如何[使用分項清單](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}。
 
 ## 教學課程影片 {#video}
 

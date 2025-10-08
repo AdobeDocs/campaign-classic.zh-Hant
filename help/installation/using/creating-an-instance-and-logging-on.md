@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: a025026e-688e-4ec1-abc4-40ee040d2b3b
-source-git-commit: b4059e43d98643f0f8b5b3f68f03e10b755e8ba3
+source-git-commit: 0db6f107d2c161b07f42dcf7a932d319130b31e0
 workflow-type: tm+mt
 source-wordcount: '587'
 ht-degree: 9%
@@ -72,7 +72,7 @@ Adobe Campaign主控台啟動時，您會存取登入頁面。
 
 1. 在&#x200B;**[!UICONTROL Language]**&#x200B;下拉式清單中，選取&#x200B;**執行個體語言**：英文（美國）、英文（英國）、法文或日文。
 
-   美式英文與英式英文之間的差異在[Campaign v8 （主控台）檔案](.https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/new/campaign-ui#formats)中說明。
+   美式英文與英式英文之間的差異在[Campaign v8 （主控台）檔案](.https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui)中說明。
 
    >[!CAUTION]
    >
