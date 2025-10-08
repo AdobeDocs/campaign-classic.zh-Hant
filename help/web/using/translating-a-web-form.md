@@ -169,7 +169,7 @@ Web表單會以Web應用程式屬性之&#x200B;**[!UICONTROL Localization]**&#x2
 &lang=xx
 ```
 
-如果URL中的語言之前有其他引數。 例如： **https://myserver/webApp/APP34?status=1&amp;lang=en**
+如果URL中的語言之前有其他引數。 例如： **https://myserver/webApp/APP34?status=1&lang=en**
 
 以下列出預設可用的翻譯語言和字典。
 
@@ -430,7 +430,7 @@ Web表單會以Web應用程式屬性之&#x200B;**[!UICONTROL Localization]**&#x2
 >[!NOTE]
 >
 >如果此Web應用程式已使用其他引數，請新增&#x200B;**&amp;lang=**。\
->例如： **https://myserver/webApp/APP34?status=1&amp;lang=en**
+>例如： **https://myserver/webApp/APP34?status=1&lang=en**
 
 ## 進階翻譯設定 {#advanced-translation-configuration}
 
