@@ -7,9 +7,9 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 23a384d1-27ce-46c2-98c3-0fb60a5c50ee
-source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
+source-git-commit: 221e2ccdaadf793212fcacdf5e13823f1505f4dc
 workflow-type: tm+mt
-source-wordcount: '1236'
+source-wordcount: '1237'
 ht-degree: 1%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 1%
 
 ## 設定控制例項 {#control-instance}
 
-若要連線控制執行個體和執行執行個體，您必須先在控制執行個體&#x200B;**上建立並設定&#x200B;**&#x200B;[!UICONTROL Execution instance]&#x200B;**型別的外部帳戶**。 因此，一旦[發佈](../../message-center/using/publishing-message-templates.md#template-publication)，即可將異動訊息範本部署至執行個體。
+若要連線控制執行個體和執行執行個體，您必須先在控制執行個體&#x200B;**[!UICONTROL Execution instance]**&#x200B;上建立並設定&#x200B;**型別的外部帳戶**。 因此，一旦[發佈](../../message-center/using/publishing-message-templates.md#template-publication)，即可將異動訊息範本部署至執行個體。
 
 如果您使用數個執行例項，則必須建立與執行例項相同數量的外部帳戶。
 
@@ -106,7 +106,7 @@ ht-degree: 1%
 
 每個執行例項都必須與唯一識別碼相關聯，以區分在控制例項上檢視每個執行例項時的歷史記錄。
 
-此識別碼可手動歸因於每個執行執行個體&#x200B;**&#x200B;**。 在此情況下，必須在每個執行執行例項&#x200B;**上執行此步驟**。 要執行此操作，請使用部署精靈，如下所述：
+此識別碼可手動歸因於每個執行執行個體&#x200B;****。 在此情況下，必須在每個執行執行例項&#x200B;**上執行此步驟**。 要執行此操作，請使用部署精靈，如下所述：
 
 1. 在執行例項上開啟部署精靈。
 1. 前往&#x200B;**[!UICONTROL Message Center]**&#x200B;視窗。
@@ -185,7 +185,7 @@ ht-degree: 1%
 
 若要使用數個控制例項，必須在所有執行例項上執行此設定。
 
-1. 在&#x200B;**[!UICONTROL Administration > Production > Message Center]**&#x200B;節點中為每個運運算元建立一個資料夾： **資料夾1**&#x200B;和&#x200B;**資料夾2**。 有關建立資料夾和檢視的詳細資訊，請參閱[此頁面](../../platform/using/access-management-folders.md)。
+1. 在&#x200B;**[!UICONTROL Administration > Production > Message Center]**&#x200B;節點中為每個運運算元建立一個資料夾： **資料夾1**&#x200B;和&#x200B;**資料夾2**。 在[Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}中進一步瞭解資料夾和檢視。
 
    ![](assets/messagecenter_multi_control_3.png)
 

@@ -6,9 +6,9 @@ feature: Workflows
 hide: true
 hidefromtoc: true
 exl-id: d589180b-8e1d-4149-9b16-3f541018a41f
-source-git-commit: 8817b485fd5b6d6aeb9d71c1106f16fbb6bc3c5b
+source-git-commit: 221e2ccdaadf793212fcacdf5e13823f1505f4dc
 workflow-type: tm+mt
-source-wordcount: '2019'
+source-wordcount: '2020'
 ht-degree: 2%
 
 ---
@@ -271,7 +271,7 @@ Campaign Classic介面可讓您使用預先定義的&#x200B;**檢視**&#x200B;�
 
 1. 在您要新增檢視的資料夾上按一下滑鼠右鍵。
 1. 在&#x200B;**[!UICONTROL Add new folder]** / **[!UICONTROL Administration]**&#x200B;中，選取您要新增的檢視。
-1. 資料夾新增至樹狀結構後，請確定將其設定為檢視，以便顯示所有工作流程，無論其原始資料夾為何。如需如何設定檢視的詳細資訊，請參閱[本節](../../platform/using/access-management-folders.md)。
+1. 資料夾新增至樹狀結構後，請務必將其設定為檢視，以便顯示所有工作流程，無論其原始資料夾為何。 如需如何設定檢視的詳細資訊，請參閱[本節](../../platform/using/about-adobe-campaign-classic.md)。
 
 除了這些檢視之外，您還可以設定篩選資料夾，讓您根據工作流程的執行狀態來篩選工作流程清單。 操作步驟：
 
