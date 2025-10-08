@@ -71,4 +71,4 @@ ht-degree: 4%
 
 [此處](/help/platform/using/assets/access-rights-matrix.pdf)提供Adobe Campaign存取權矩陣。
 
-[![影像](assets/do-not-localize/user_management.png)](https://experienceleague.adobe.com/docs/campaign-classic/assets/access-rights-matrix.pdf)
+[![影像](assets/do-not-localize/user_management.png)](https://experienceleague.adobe.com/docs/campaign-classic/assets/access-rights-matrix.pdf?lang=zh-Hant)
