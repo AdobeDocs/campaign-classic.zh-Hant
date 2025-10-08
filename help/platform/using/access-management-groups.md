@@ -7,9 +7,9 @@ feature: Access Management, Permissions
 role: User, Admin
 level: Beginner
 exl-id: d5833d3d-e8ef-4f2b-8084-4ba825c79525
-source-git-commit: 8aceafa362b80f6e34edfd91a71551a58501a3d0
+source-git-commit: 34f875f583dd81c2229b66f3344f23965532e802
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '574'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,9 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->這些程式僅適用於使用原生驗證連線到Campaign的運運算元。 如需Adobe IMS驗證資訊，請參閱[此檔案](https://helpx.adobe.com/tw/enterprise/using/user-groups.html)。
+>這些程式僅適用於使用舊版原生驗證連線至Campaign的運運算元。 從Campaign Classic v7.3.1開始，所有操作員都應使用[Adobe Identity Management System (IMS)](https://helpx.adobe.com/tw/enterprise/using/identity.html){target="_blank"}連線至Campaign。 [了解更多](../../technotes/using/migrate-users-to-ims.md)
+>
+>使用Adobe ID連線至Campaign時，下一節不再適用。 在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/gs-permissions.html?lang=zh-Hant){target="_blank"}中瞭解如何使用Adobe IMS設定許可權。
 
 運運算元群組是透過樹狀結構中的&#x200B;**[!UICONTROL Administration > Access management > Operator groups]**&#x200B;節點所建立。
 
@@ -65,7 +67,7 @@ ht-degree: 1%
 
 1. **[!UICONTROL Campaign managers]**
 
-   此群組中的操作員可以管理行銷活動：它可讓您存取連結至行銷活動的物件（計畫、方案、工作流程、預算等） 在&#x200B;**[!UICONTROL Campaign]**&#x200B;的架構中(選擇性的Adobe Campaign模組)。
+   此群組中的操作者可以管理行銷活動：這可讓您存取&#x200B;**[!UICONTROL Campaign]** (選用Adobe Campaign模組)架構中連結至行銷活動的物件（計畫、方案、工作流程、預算等）。
 
    此群組包含下列已命名的許可權：
 

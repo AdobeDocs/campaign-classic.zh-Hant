@@ -2,23 +2,18 @@
 product: campaign
 title: 使用已命名的權限來設定權限
 description: 瞭解如何使用已命名的許可權來設定許可權
-badge: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Access Management, Permissions
 role: User, Admin
 level: Beginner
 exl-id: 07470a91-d8d2-4c41-9555-05522c8068f0
-source-git-commit: 8aceafa362b80f6e34edfd91a71551a58501a3d0
+source-git-commit: 34f875f583dd81c2229b66f3344f23965532e802
 workflow-type: tm+mt
-source-wordcount: '520'
-ht-degree: 5%
+source-wordcount: '492'
+ht-degree: 4%
 
 ---
 
 # 使用已命名的權限來設定權限{#named-rights}
-
->[!NOTE]
->
->此頁面僅適用於使用原生驗證連線至Campaign的運運算元。 如需Adobe IMS驗證資訊，請參閱[此檔案](https://helpx.adobe.com/tw/enterprise/using/manage-permissions-and-roles.html)。
 
 依預設，Adobe Campaign會建議一組已命名的許可權，讓您定義指派給運運算元和運運算元群組的授權。 可以從樹狀結構的&#x200B;**[!UICONTROL Administration > Access management > Named rights]**&#x200B;節點編輯這些許可權。
 
@@ -76,4 +71,4 @@ ht-degree: 5%
 
 [此處](/help/platform/using/assets/access-rights-matrix.pdf)提供Adobe Campaign存取權矩陣。
 
-[![影像](assets/do-not-localize/user_management.png)](https://experienceleague.adobe.com/docs/campaign-classic/assets/access-rights-matrix.pdf?lang=zh-Hant)
+[![影像](assets/do-not-localize/user_management.png)](https://experienceleague.adobe.com/docs/campaign-classic/assets/access-rights-matrix.pdf)

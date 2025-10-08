@@ -6,9 +6,9 @@ title: Campaign Classic v7 指南
 user-guide-description: Adobe Campaign Classic v7 產品文件。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 8817b485fd5b6d6aeb9d71c1106f16fbb6bc3c5b
+source-git-commit: 34f875f583dd81c2229b66f3344f23965532e802
 workflow-type: tm+mt
-source-wordcount: '2570'
+source-wordcount: '2574'
 ht-degree: 96%
 
 ---
@@ -30,8 +30,8 @@ ht-degree: 96%
    + [相容性對照表](rn/using/compatibility-matrix.md)
    + [檔案更新 — 隱藏](rn/using/documentation-updates.md)
 + 開始使用 {#getting-started}
-   + [開始使用 Adobe Campaign Classic &#x200B;](platform/using/about-adobe-campaign-classic.md)
-   + [啟動 Adobe Campaign &#x200B;](platform/using/launching-adobe-campaign.md)
+   + [開始使用 Adobe Campaign Classic ](platform/using/about-adobe-campaign-classic.md)
+   + [啟動 Adobe Campaign ](platform/using/launching-adobe-campaign.md)
    + [探索Campaign UI](platform/using/adobe-campaign-workspace.md)
    + [使用Campaign Explorer — 隱藏](platform/using/adobe-campaign-explorer.md)
    + [瀏覽及自訂清單 — 隱藏](platform/using/adobe-campaign-ui-lists.md)
@@ -92,10 +92,11 @@ ht-degree: 96%
    + [定義篩選條件 — 隱藏](platform/using/defining-filter-conditions.md)
    + 權限 {#permissions}
       + [開始使用權限](platform/using/access-management.md)
-      + [建立及管理操作者](platform/using/access-management-operators.md)
-      + [建立和管理群組](platform/using/access-management-groups.md)
+      + 原生驗證（舊版） {#native}
+         + [建立及管理操作者](platform/using/access-management-operators.md)
+         + [建立和管理群組](platform/using/access-management-groups.md)
       + [使用已命名的權限來設定權限](platform/using/access-management-named-rights.md)
-      + [管理對資料夾的存取](platform/using/access-management-folders.md)
+      + [管理對資料夾的存取 — 隱藏](platform/using/access-management-folders.md)
    + CRM 連接器 {#connectors}
       + [開始使用 CRM 連接器](platform/using/crm-connectors.md)
       + [與 Microsoft Dynamics 365 連結](platform/using/crm-ms-dynamics.md)
