@@ -88,7 +88,7 @@ MTA模組會當作SMTP廣播（連線埠25）的原生郵件傳輸代理程式�
 
    >[!NOTE]
    >
-   >在&#x200B;**Adobe Campaign v8 （主控台）檔案**&#x200B;中進一步瞭解如何[使用分項清單](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}。
+   >在&#x200B;**Adobe Campaign v8 （主控台）檔案**&#x200B;中進一步瞭解如何[使用分項清單](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}。
 
 
    然後，您可以選取要使用的相似性，如下面的型別所示：

@@ -86,7 +86,7 @@ ht-degree: 9%
 
 >[!NOTE]
 >
->此報告中顯示的網域名稱是在多維資料庫層級使用的分項清單中定義。 若要變更、新增或移除預設網域，請編輯&#x200B;**[!UICONTROL Domains]**&#x200B;專案清單，並修改值與別名。 在&#x200B;**Adobe Campaign v8 （主控台）檔案**&#x200B;中進一步瞭解如何[使用分項清單](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}。 **[!UICONTROL Others]**&#x200B;類別包含不屬於任何專案清單值的網域名稱。
+>此報告中顯示的網域名稱是在多維資料庫層級使用的分項清單中定義。 若要變更、新增或移除預設網域，請編輯&#x200B;**[!UICONTROL Domains]**&#x200B;專案清單，並修改值與別名。 在&#x200B;**Adobe Campaign v8 （主控台）檔案**&#x200B;中進一步瞭解如何[使用分項清單](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}。 **[!UICONTROL Others]**&#x200B;類別包含不屬於任何專案清單值的網域名稱。
 
 **[!UICONTROL 4. Generated click streams]**
 
