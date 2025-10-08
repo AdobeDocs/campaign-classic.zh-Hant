@@ -6,9 +6,9 @@ feature: Query Editor, Workflows
 hide: true
 hidefromtoc: true
 exl-id: 23bccb48-60ab-46c9-be26-2fa35243d61e
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 9df46ed923831ffdfb28acddfbc371cecafb251c
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '254'
 ht-degree: 3%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 3%
 
 * 需要選取哪個表格？
 
-  收件者表格(nms：recipient)
+  收件者資料表(nms:recipient)
 
 * 要在輸出欄中選取的欄位？
 
@@ -33,26 +33,26 @@ ht-degree: 3%
 
 若要建立此範例，請套用下列步驟：
 
-1. 開啟&#x200B;**[!UICONTROL Generic query editor]**&#x200B;並選擇收件者資料表(**nms：recipient**)。
+1. 開啟&#x200B;**[!UICONTROL Generic query editor]**&#x200B;並選擇收件者資料表(**nms:recipient**)。
 
    ![](assets/query_editor_02.png)
 
 1. 在&#x200B;**[!UICONTROL Data to extract]**&#x200B;視窗中，選取&#x200B;**[!UICONTROL Email domain]**&#x200B;及&#x200B;**[!UICONTROL Primary key]**&#x200B;欄位。 對&#x200B;**[!UICONTROL Primary key]**&#x200B;欄位執行計數。
 
-   如需主索引鍵計數的詳細資訊，請參閱[本區段](../../platform/using/defining-filter-conditions.md#building-expressions)。
+   如需主索引鍵計數的詳細資訊，請參閱[本區段](../../platform/using/about-queries-in-campaign.md)。
 
 1. 勾選&#x200B;**[!UICONTROL Handle groupings (GROUP BY + HAVING)]**&#x200B;方塊。
 
    ![](assets/query_editor_nveau_29.png)
 
-1. 在&#x200B;**[!UICONTROL Sorting]**&#x200B;視窗中，以遞減順序排序電子郵件網域。 若要這麼做，請檢查&#x200B;**[!UICONTROL Descending sort]**&#x200B;欄中的&#x200B;**[!UICONTROL Yes]**。 按一下&#x200B;**[!UICONTROL Next]**。
+1. 在&#x200B;**[!UICONTROL Sorting]**&#x200B;視窗中，以遞減順序排序電子郵件網域。 若要這麼做，請檢查&#x200B;**[!UICONTROL Yes]**&#x200B;欄中的&#x200B;**[!UICONTROL Descending sort]**。 按一下 **[!UICONTROL Next]**。
 
    ![](assets/query_editor_nveau_70.png)
 
 1. 在&#x200B;**[!UICONTROL Data filtering]**&#x200B;中，選取&#x200B;**[!UICONTROL Filtering conditions]**。 前往&#x200B;**[!UICONTROL Target elements]**&#x200B;視窗並按一下&#x200B;**[!UICONTROL Next]**。
-1. 在&#x200B;**[!UICONTROL Data grouping]**&#x200B;視窗中，按一下&#x200B;**[!UICONTROL Add]**&#x200B;以選取&#x200B;**[!UICONTROL Email domain]**。
+1. 在&#x200B;**[!UICONTROL Data grouping]**&#x200B;視窗中，按一下&#x200B;**[!UICONTROL Email domain]**&#x200B;以選取&#x200B;**[!UICONTROL Add]**。
 
-   此資料分組視窗只有在已核取&#x200B;**[!UICONTROL Handle groupings (GROUP BY + HAVING]**)方塊時才會顯示。
+   此資料分組視窗只有在已核取&#x200B;**[!UICONTROL Handle groupings (GROUP BY + HAVING])**&#x200B;方塊時才會顯示。
 
    ![](assets/query_editor_blocklist_04.png)
 

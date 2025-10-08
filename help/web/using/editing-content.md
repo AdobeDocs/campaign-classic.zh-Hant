@@ -5,9 +5,9 @@ description: 編輯內容
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Web Apps, Web Forms, Landing Pages, Email Design
 exl-id: 968430d6-b1dd-47f8-8b31-39aaa18bc05c
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 9df46ed923831ffdfb28acddfbc371cecafb251c
 workflow-type: tm+mt
-source-wordcount: '1227'
+source-wordcount: '1226'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->在[此頁面](../../platform/using/defining-filter-conditions.md#list-of-functions)上顯示進階運算式編輯。
+>在[此頁面](../../platform/using/about-queries-in-campaign.md)上顯示進階運算式編輯。
 
 ![](assets/dce_popup_visibilitycondition.png)
 
@@ -60,7 +60,7 @@ ht-degree: 0%
 
 **欄位**&#x200B;輸入區域可讓您選取要與表單欄位連結的資料庫欄位。
 
-依預設，提供的欄位是&#x200B;**nms：recipient**&#x200B;表格中的欄位。
+依預設，提供的欄位是&#x200B;**nms:recipient**&#x200B;表格中的欄位。
 
 ![](assets/dce_field_selection.png)
 
@@ -88,7 +88,7 @@ ht-degree: 0%
 
 * 使用&#x200B;**[!UICONTROL Delete]**&#x200B;圖示刪除包含表單欄位的區塊。
 * 使用&#x200B;**[!UICONTROL Duplicate]**&#x200B;圖示建立新區塊，以複製選取的欄位。
-* 使用&#x200B;**[!UICONTROL Edit]**&#x200B;圖示編輯&#x200B;**[!UICONTROL Form data]**&#x200B;視窗以將資料庫欄位連結至表單區域。
+* 使用&#x200B;**[!UICONTROL Form data]**&#x200B;圖示編輯&#x200B;**[!UICONTROL Edit]**&#x200B;視窗以將資料庫欄位連結至表單區域。
 
   ![](assets/dce_toolbar_formblock_edition.png)
 
@@ -233,7 +233,7 @@ ht-degree: 0%
 當您選取包含影像的區塊時，可以存取下列屬性：
 
 * **註解**&#x200B;可讓您定義連結至影像的註解(對應至&#x200B;**alt** HTML屬性)。
-* **Dimension**&#x200B;可讓您指定影像大小（畫素）。
+* **尺寸**&#x200B;可讓您指定影像大小（畫素）。
 
   ![](assets/dce_popup_imgsize.png)
 

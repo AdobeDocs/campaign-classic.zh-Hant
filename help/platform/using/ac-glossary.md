@@ -6,7 +6,7 @@ feature: Overview
 role: User, Data Architect
 level: Beginner
 exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
-source-git-commit: d56038fc8baf766667d89bb73747c20ec041124c
+source-git-commit: 9df46ed923831ffdfb28acddfbc371cecafb251c
 workflow-type: tm+mt
 source-wordcount: '6002'
 ht-degree: 2%
@@ -272,7 +272,7 @@ Learn more about [Deliverability](../../delivery/using/about-deliverability.md).
 
 值分佈是一種工具，可顯示目前存在於資料庫中之綱要屬性的值分佈。 這可協助您判斷哪些值可供使用、其計數和百分比，並在建立查詢或運算式時避免出現值的首字母大寫和拼字問題。
 
-深入瞭解[值的分佈](../../platform/using/defining-filter-conditions.md#selecting-data-to-extract)
+深入瞭解[值的分佈](../../platform/using/about-queries-in-campaign.md)
 +++
 
 +++**網域委派**
@@ -345,7 +345,7 @@ An engine call is a server call that starts real-time processing on server side 
 
 列舉是在結構描述中或在Platform層級定義的資料型別，可定義欄位的有效輸入值。 列舉會顯示在使用者介面中，並在查詢建置器中顯示為挑選清單。
 
-在&#x200B;**Adobe Campaign v8 （主控台）檔案**&#x200B;中進一步瞭解如何[使用分項清單](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}。
+在&#x200B;**Adobe Campaign v8 （主控台）檔案**&#x200B;中進一步瞭解如何[使用分項清單](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}。
 +++
 
 +++**總管檢視**
@@ -353,7 +353,7 @@ An engine call is a server call that starts real-time processing on server side 
 「總管」檢視是包含Adobe Campaign成品和資料的資料夾的階層式顯示。 請注意，Adobe Campaign中的資料夾系統運作方式與典型的樹狀檢視不同，每個資料夾內含特定型別的資料，例如傳送、工作流程或選件。
 
 
-在[Adobe Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}中進一步瞭解Campaign使用者介面。
+在[Adobe Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}中進一步瞭解Campaign使用者介面。
 
 +++
 
@@ -400,7 +400,7 @@ An engine call is a server call that starts real-time processing on server side 
 
 資料夾是儲存特定資料型別之資料庫記錄的「總管」檢視專案。 例外情況是用作組織元素的Generic資料夾型別，它本身不包含任何資料，只有其他資料夾。
 
-在[Adobe Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}中進一步瞭解Campaign使用者介面。
+在[Adobe Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}中進一步瞭解Campaign使用者介面。
 
 +++
 
@@ -408,7 +408,7 @@ An engine call is a server call that starts real-time processing on server side 
 
 「資料夾」檢視是一種特殊的「總管」資料夾型別，用來顯示選定資料型別的所有記錄，無論其屬於哪個資料夾。 資料夾檢視可做為管理工具，用來管理分散在多個資料夾中的分割資料或資料。
 
-在[Adobe Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}中進一步瞭解Campaign使用者介面。
+在[Adobe Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}中進一步瞭解Campaign使用者介面。
 +++
 
 +++**Forms**
@@ -561,7 +561,7 @@ Learn more about [Navigation Bar](../../platform/using/adobe-campaign-workspace.
 
 導覽樹狀結構是Adobe Campaign之「總管」檢視中的主要導覽。 導覽樹狀結構的運作方式與檔案瀏覽器類似（例如Windows檔案總管）。 資料夾可能包含子資料夾。 選取節點會顯示與節點對應的檢視。 顯示的檢視是與結構描述關聯的清單，以及用來編輯所選行的輸入表單。 您可以自訂導覽樹狀結構並設定檔案夾的許可權。
 
-在[Adobe Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}中進一步瞭解Campaign使用者介面。
+在[Adobe Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}中進一步瞭解Campaign使用者介面。
 
 +++
 
@@ -913,7 +913,7 @@ Adobe Campaign可讓您建立和管理資訊服務（例如電子報或產品更
 
 在「控制面板」中，您可以與所有連線至您可存取之 Campaign 執行個體的 SFTP 伺服器互動。 「控制面板」可以讓您對SFTP伺服器執行動作，例如監視儲存容量、管理IP位址允許清單及管理公開SSH金鑰。
 
-深入瞭解[SFTP管理](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html?lang=zh-Hant)。
+深入瞭解[SFTP管理](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html)。
 +++
 
 +++**訂閱服務活動**

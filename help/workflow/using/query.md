@@ -6,9 +6,9 @@ feature: Workflows, Targeting Activity, Query Editor
 hide: true
 hidefromtoc: true
 exl-id: 20d03627-cd56-46da-bc02-73b48a02a350
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 9df46ed923831ffdfb28acddfbc371cecafb251c
 workflow-type: tm+mt
-source-wordcount: '1631'
+source-wordcount: '1630'
 ht-degree: 0%
 
 ---
@@ -52,11 +52,11 @@ ht-degree: 0%
 
    ![](assets/s_user_segmentation_wizard.png)
 
-1. 如果您已在步驟1或使用&#x200B;**[!UICONTROL Filters]** > **[!UICONTROL Advanced filter...]**&#x200B;選項選取&#x200B;**[!UICONTROL Filtering conditions]**，則您稍後必須手動新增篩選條件。
+1. 如果您已在步驟1或使用&#x200B;**[!UICONTROL Filtering conditions]** > **[!UICONTROL Filters]**&#x200B;選項選取&#x200B;**[!UICONTROL Advanced filter...]**，則您稍後必須手動新增篩選條件。
 
    您也可以核取對應的方塊，以新增資料分組條件。 若要這麼做，篩選維度必須與查詢的目標維度不同。 如需分組的詳細資訊，請參閱此[區段](querying-using-grouping-management.md)。
 
-   您也可以使用運算式產生器，將其與邏輯選項AND、OR和EXCEPT結合，以新增更多條件。 然後，您可以預覽條件組合的&#x200B;**[!UICONTROL Corresponding SQL query...]**。 如需詳細資訊，請參閱此[區段](../../platform/using/defining-filter-conditions.md#building-expressions)。
+   您也可以使用運算式產生器，將其與邏輯選項AND、OR和EXCEPT結合，以新增更多條件。 然後，您可以預覽條件組合的&#x200B;**[!UICONTROL Corresponding SQL query...]**。 如需詳細資訊，請參閱此[區段](../../platform/using/about-queries-in-campaign.md)。
 
    如果您稍後要重複使用篩選器，請儲存篩選器。
 
@@ -106,7 +106,7 @@ ht-degree: 0%
 
 1. 必要時，請在&#x200B;**[!UICONTROL Data collected]**&#x200B;欄位中選取其中一個值，以指定要保留的集合元素數目。 依預設，會復原集合的所有行，然後根據下列步驟指定的條件進行篩選。
 
-   * 如果集合的單一專案符合此集合的篩選條件，請在&#x200B;**[!UICONTROL Data collected]**&#x200B;欄位中選取&#x200B;**[!UICONTROL Single row]**。
+   * 如果集合的單一專案符合此集合的篩選條件，請在&#x200B;**[!UICONTROL Single row]**&#x200B;欄位中選取&#x200B;**[!UICONTROL Data collected]**。
 
      >[!IMPORTANT]
      >
@@ -163,7 +163,7 @@ ht-degree: 0%
 * 結構描述
 * recCount
 
-這組三個值會識別查詢所定位的母體。 **[!UICONTROL tableName]**&#x200B;是記錄目標識別碼的資料表的名稱，**[!UICONTROL schema]**&#x200B;是母體的結構描述（通常是nms：recipient），而&#x200B;**[!UICONTROL recCount]**&#x200B;是資料表中的元素數目。
+這組三個值會識別查詢所定位的母體。 **[!UICONTROL tableName]**&#x200B;是記錄目標識別碼的資料表名稱，**[!UICONTROL schema]**&#x200B;是母體的結構描述（通常是nms:recipient），而&#x200B;**[!UICONTROL recCount]**&#x200B;是資料表中的元素數目。
 
 此值是工作表的結構描述。 此引數適用於所有具有&#x200B;**[!UICONTROL tableName]**&#x200B;和&#x200B;**[!UICONTROL schema]**&#x200B;的轉變。
 
@@ -188,16 +188,16 @@ ht-degree: 0%
 
   如需詳細資訊，請參閱Campaign版本的相關章節：
 
-  ![](assets/do-not-localize/v7.jpeg) [Campaign v7檔案](../../configuration/using/database-mapping.md)
+  ![](assets/do-not-localize/v7.jpeg)[Campaign v7檔案](../../configuration/using/database-mapping.md)
 
-  ![](assets/do-not-localize/v8.png) [Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/shemas-forms/database-mapping.html?lang=zh-Hant)
+  ![](assets/do-not-localize/v8.png)[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/shemas-forms/database-mapping.html)
 
 ### 函數 {#functions}
 
 * 請注意類似`Lower(...)`的功能。 使用Lower函式時，不會使用Index。
 * 仔細檢查使用「like」指示或「upper」或「lower」指示的查詢。 在使用者輸入上套用「Upper」，而不是在資料庫欄位上套用。
 
-  如需函式的詳細資訊，請參閱[本節](../../platform/using/defining-filter-conditions.md#list-of-functions)。
+  如需函式的詳細資訊，請參閱[本節](../../platform/using/about-queries-in-campaign.md)。
 
 ### 篩選維度 {#filtering-dimensions}
 

@@ -6,7 +6,7 @@ feature: Workflows, Targeting Activity, Data Management
 hide: true
 hidefromtoc: true
 exl-id: 9f5735d2-73b8-469f-bc10-482c99cdd4a1
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 9df46ed923831ffdfb28acddfbc371cecafb251c
 workflow-type: tm+mt
 source-wordcount: '852'
 ht-degree: 4%
@@ -102,7 +102,7 @@ ht-degree: 4%
 
 1. 選取要移至主要記錄的集合與要更新的欄位。
 
-   輸入一或多個次要記錄識別後套用至這些記錄的規則。 若要這麼做，您可以使用運算式產生器。 如需詳細資訊，請參閱此[區段](../../platform/using/defining-filter-conditions.md#building-expressions)。 例如，指定這是必須保留的所有不同記錄中最近更新的值。
+   輸入一或多個次要記錄識別後套用至這些記錄的規則。 若要這麼做，您可以使用運算式產生器。 如需詳細資訊，請參閱此[區段](../../platform/using/about-queries-in-campaign.md)。 例如，指定這是必須保留的所有不同記錄中最近更新的值。
 
    然後輸入規則要考慮的條件。
 

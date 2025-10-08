@@ -8,7 +8,7 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 94fc473a-dc49-41e8-b572-51c162b09996
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 9df46ed923831ffdfb28acddfbc371cecafb251c
 workflow-type: tm+mt
 source-wordcount: '947'
 ht-degree: 29%
@@ -21,7 +21,7 @@ ht-degree: 29%
 
 匯出作業可讓您存取及擷取資料庫的資料：連絡人、使用者端、清單、區段等。
 
-例如，使用行銷活動追蹤資料（追蹤歷史記錄等）會很有用 在試算表中。 輸出資料可以是 txt、CSV、TAB 或 XML 格式。
+例如，在試算表中使用行銷活動追蹤資料（追蹤歷史記錄等）會很有用。 輸出資料可以是 txt、CSV、TAB 或 XML 格式。
 
 匯出助理可以讓您設定匯出、定義其選項並啟動執行。 這是一系列畫面，其內容取決於匯出型別（簡單或多重）和操作者的權利。
 
@@ -85,7 +85,7 @@ ht-degree: 29%
 
    ![](assets/s_ncs_user_export_wizard04.png)
 
-1. 按一下&#x200B;**[!UICONTROL Add]**&#x200B;按鈕以呼叫函式。 如需詳細資訊，請參閱[函式清單](../../platform/using/defining-filter-conditions.md#list-of-functions)。
+1. 按一下&#x200B;**[!UICONTROL Add]**&#x200B;按鈕以呼叫函式。 如需詳細資訊，請參閱[函式清單](../../platform/using/about-queries-in-campaign.md)。
 
 ## 步驟5 — 排序欄 {#step-5---sorting-columns}
 
