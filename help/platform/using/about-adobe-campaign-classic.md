@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 8febceb0-9694-4045-a630-a7ff2fd18943
-source-git-commit: d78fe2e0fd85ba9c23e709a3f30a135cee411230
+source-git-commit: a1f655716d24ca199a68fd5df2381c9941db2c84
 workflow-type: tm+mt
-source-wordcount: '182'
-ht-degree: 53%
+source-wordcount: '181'
+ht-degree: 54%
 
 ---
 
@@ -24,23 +24,21 @@ ht-degree: 53%
 
 >[!TAB 開始使用 Campaign]
 
-若要進一步瞭解Adobe Campaign以及如何開始使用，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/new/get-started){target=_blank}。
+若要進一步瞭解Adobe Campaign功能以及如何開始，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/get-started){target=_blank}。
 
-[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/new/get-started){target=_blank}
+[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/get-started){target=_blank}
 
 >[!TAB 啟動促銷活動]
 
 * 在[相容性矩陣](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems)中檢查您的系統和工具與Adobe Campaign使用者端主控台的相容性
 
-* 若要瞭解如何在此頁面[上安裝並登入Adobe Campaign &#x200B;](launching-adobe-campaign.md)。
-
+* 若要瞭解如何在此頁面[上安裝並登入Adobe Campaign ](launching-adobe-campaign.md)。
 
 >[!TAB 瀏覽Campaign UI]
 
 * 在此頁面[上探索Adobe Campaign使用者介面](adobe-campaign-workspace.md)。
 
 * 瞭解如何使用[Campaign Explorer](adobe-campaign-workspace.md#use-adobe-campaign-explorer)。
-
 
 >[!ENDTABS]
 
@@ -86,7 +84,7 @@ You can combine the delivery functionalities and advanced campaign management fu
 
 ## Core capabilities and add-ons {#core-capabilities-and-add-ons}
 
-Adobe Campaign offers a set of capabilities to help you implementing and optimizing the conversational marketing functionalities depending on your needs and your architecture. Some of them are core capabilities and some depend on the installation of a package and on your configuration. A detailed product description is available here: [Adobe Campaign product description](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
+Adobe Campaign offers a set of capabilities to help you implementing and optimizing the conversational marketing functionalities depending on your needs and your architecture. Some of them are core capabilities and some depend on the installation of a package and on your configuration. A detailed product description is available here: [Adobe Campaign product description](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
 
 The following capabilities are available. Depending on your license agreement, some of these capabilities can be available or not in your instance.
 
