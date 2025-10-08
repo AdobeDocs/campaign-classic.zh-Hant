@@ -6,7 +6,7 @@ title: Campaign Classic v7 指南
 user-guide-description: Adobe Campaign Classic v7 產品文件。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: b4059e43d98643f0f8b5b3f68f03e10b755e8ba3
+source-git-commit: 28279c6ec0eab7f914cf6107cd1ec1cebd05113d
 workflow-type: tm+mt
 source-wordcount: '2559'
 ht-degree: 99%
@@ -30,8 +30,8 @@ ht-degree: 99%
    + [相容性對照表](rn/using/compatibility-matrix.md)
    + [檔案更新 — 隱藏](rn/using/documentation-updates.md)
 + 開始使用 {#getting-started}
-   + [開始使用 Adobe Campaign Classic &#x200B;](platform/using/about-adobe-campaign-classic.md)
-   + [啟動 Adobe Campaign &#x200B;](platform/using/launching-adobe-campaign.md)
+   + [開始使用 Adobe Campaign Classic ](platform/using/about-adobe-campaign-classic.md)
+   + [啟動 Adobe Campaign ](platform/using/launching-adobe-campaign.md)
    + [開始使用 Campaign UI](platform/using/adobe-campaign-workspace.md)
    + [使用Campaign Explorer — 隱藏](platform/using/adobe-campaign-explorer.md)
    + [瀏覽及自訂清單 — 隱藏](platform/using/adobe-campaign-ui-lists.md)
@@ -39,16 +39,16 @@ ht-degree: 99%
    + [Campaign 連接器](platform/using/about-connectors.md)
    + 常見問題集 {#faq}
       + [最常見的問題](platform/using/common-questions.md)
-         + [全域概念](platform/using/faq-key-concepts.md)
-         + [版本編號升級](platform/using/faq-build-upgrade.md)
-         + [隱私權](platform/using/privacy-faq.md)
-         + [客群](platform/using/faq-audiences.md)
-         + [設計訊息](platform/using/faq-designing.md)
-         + [傳送訊息](platform/using/faq-messages.md)
-         + [工作流程](platform/using/faq-workflows.md)
-         + [設定](platform/using/faq-campaign-config.md)
-         + [報告](platform/using/faq-reporting.md)
-         + [開發](platform/using/faq-developers.md)
+      + [全域概念](platform/using/faq-key-concepts.md)
+      + [版本編號升級](platform/using/faq-build-upgrade.md)
+      + [隱私權](platform/using/privacy-faq.md)
+      + [客群](platform/using/faq-audiences.md)
+      + [設計訊息](platform/using/faq-designing.md)
+      + [傳送訊息](platform/using/faq-messages.md)
+      + [工作流程](platform/using/faq-workflows.md)
+      + [設定](platform/using/faq-campaign-config.md)
+      + [報告](platform/using/faq-reporting.md)
+      + [開發](platform/using/faq-developers.md)
    + [字彙](platform/using/ac-glossary.md)
    + 隱私權 {#privacy}
       + [隱私權與同意](platform/using/privacy-and-recommendations.md)

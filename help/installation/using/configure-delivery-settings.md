@@ -8,9 +8,9 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 2968d8db-2b4b-48e6-a22e-daba5ffe0576
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: 28279c6ec0eab7f914cf6107cd1ec1cebd05113d
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '484'
 ht-degree: 5%
 
 ---
@@ -51,7 +51,7 @@ MTA模組會當作SMTP廣播（連線埠25）的原生郵件傳輸代理程式�
 
 ## MTA子處理序 {#mta-child-processes}
 
-您可以控制子處理序（預設為2）的數量，以根據伺服器的CPU效能和可用的網路資源來最佳化廣播效能。 此設定將在每台個別電腦上的MTA設定的&#x200B;**`<master>`**&#x200B;區段中進行。
+您可以控制子處理序（預設為2）的數量，以根據伺服器的CPU效能和可用的網路資源最佳化廣播效能。 此設定將在每台個別電腦上的MTA設定的&#x200B;**`<master>`**&#x200B;區段中進行。
 
 ```
 <master dataBasePoolPeriodSec="30" dataBaseRetryDelaySec="60" maxSpareServers="2" minSpareServers="0" startSpareServers="0">
@@ -69,11 +69,11 @@ MTA模組會當作SMTP廣播（連線埠25）的原生郵件傳輸代理程式�
 
 若要這麼做，請套用下列步驟：
 
-1. 在&#x200B;**serverConf.xml**&#x200B;檔案的&#x200B;**`<ipaffinity>`**&#x200B;區段中輸入相關性。
+1. 在&#x200B;**`<ipaffinity>`** serverConf.xml **檔案的**&#x200B;區段中輸入相關性。
 
    一個相似性可以有數個不同的名稱：若要分隔它們，請使用&#x200B;**；**&#x200B;字元。
 
-   例如：
+   範例：
 
    ```
     IPAffinity name="mid.Server;WWserver;local.Server">
@@ -88,7 +88,8 @@ MTA模組會當作SMTP廣播（連線埠25）的原生郵件傳輸代理程式�
 
    >[!NOTE]
    >
-   >列舉在[此檔案](../../platform/using/managing-enumerations.md)中有詳細說明。
+   >在&#x200B;**Adobe Campaign v8 （主控台）檔案**&#x200B;中進一步瞭解如何[使用分項清單](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}。
+
 
    然後，您可以選取要使用的相似性，如下面的型別所示：
 

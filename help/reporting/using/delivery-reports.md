@@ -5,10 +5,10 @@ description: 傳遞報告
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Reporting, Monitoring
 exl-id: 74feb13f-0994-4a6a-ae4f-2538b07cc9c0
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 28279c6ec0eab7f914cf6107cd1ec1cebd05113d
 workflow-type: tm+mt
-source-wordcount: '1461'
-ht-degree: 8%
+source-wordcount: '1467'
+ht-degree: 9%
 
 ---
 
@@ -67,7 +67,7 @@ ht-degree: 8%
 * **[!UICONTROL Distinct opens for the population reached]** ：預估已開啟訊息至少一次的目標收件者人數。 由於必須開啟電子郵件才能點按連結，因此會考量追蹤URL的點按次數。
 * **[!UICONTROL Sum of opens for the population reached]** ：目標收件者開啟的總數預估值。
 * **[!UICONTROL Clicks on opt-out link]** ：對取消訂閱連結的點按次數。
-* **[!UICONTROL Clicks on the mirror page link]** ：點按映象頁面連結的次數。 若要納入考量，必須在傳送助理（追蹤的URL）中定義連結。 請參閱此[頁面](../../delivery/using/about-delivery-monitoring.md)。
+* **[!UICONTROL Clicks on the mirror page link]** ：點按映象頁面連結的次數。 若要納入考量，必須在傳送助理（追蹤的URL）中定義連結。 請參見此[頁面](../../delivery/using/about-delivery-monitoring.md)。
 * **[!UICONTROL Estimation of forwards]** ：目標收件者轉寄的電子郵件預估數量。 此值的計算方式為減去相異人數與按一下電子郵件之相異收件者人數。
 
   >[!NOTE]
@@ -86,7 +86,7 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->此報告中顯示的網域名稱是在多維資料庫層級使用的分項清單中定義。 若要變更、新增或移除預設網域，請編輯&#x200B;**[!UICONTROL Domains]**&#x200B;專案清單，並修改值與別名。 如需詳細資訊，請參閱[本節](../../platform/using/managing-enumerations.md)。 **[!UICONTROL Others]**&#x200B;類別包含不屬於任何專案清單值的網域名稱。
+>此報告中顯示的網域名稱是在多維資料庫層級使用的分項清單中定義。 若要變更、新增或移除預設網域，請編輯&#x200B;**[!UICONTROL Domains]**&#x200B;專案清單，並修改值與別名。 在&#x200B;**Adobe Campaign v8 （主控台）檔案**&#x200B;中進一步瞭解如何[使用分項清單](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}。 **[!UICONTROL Others]**&#x200B;類別包含不屬於任何專案清單值的網域名稱。
 
 **[!UICONTROL 4. Generated click streams]**
 
@@ -123,7 +123,7 @@ ht-degree: 8%
 
 ![](assets/s_ncs_user_url_report.png)
 
-您可以選取下列專案來設定此報表的內容：要顯示的評分圖、時間篩選（自動作啟動以來、啟動後的前6小時等） 以及資料顯示模式（依標籤、依URL、依類別）。 按一下&#x200B;**[!UICONTROL Refresh]**&#x200B;以確認您的選擇。
+您可以選取下列專案來設定此報表的內容：要顯示的評分圖、時間篩選（自動作啟動後、啟動後的前6小時等）以及資料顯示模式（依標籤、依URL、依類別）。 按一下&#x200B;**[!UICONTROL Refresh]**&#x200B;以確認您的選擇。
 
 下列比率會顯示在報表的上半部分：
 
@@ -175,7 +175,7 @@ ht-degree: 8%
 
 ## 熱點點擊 {#hot-clicks}
 
-此報告顯示訊息內容 (HTML 和/或文字) 以及每個連結的連結點按百分比。個人化區塊取消訂閱連結、鏡像頁面連結和優惠連結有計入總累計點按數，但不顯示在報告中。
+此報告顯示訊息內容 (HTML 和/或文字) 以及每個連結的連結點按百分比。個人化區塊取消訂閱連結、鏡像頁面連結和產品建議連結有計入總累計點按數，但不顯示在報告中。
 
 >[!NOTE]
 >
