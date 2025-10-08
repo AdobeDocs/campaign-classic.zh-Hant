@@ -8,10 +8,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 8e308a9f-14a4-4a25-9fd0-8d4bdbcf74ce
-source-git-commit: ec774cc10a69a694b3c2bf5a6f662afd12a1435a
+source-git-commit: 8817b485fd5b6d6aeb9d71c1106f16fbb6bc3c5b
 workflow-type: tm+mt
-source-wordcount: '564'
-ht-degree: 98%
+source-wordcount: '569'
+ht-degree: 94%
 
 ---
 
@@ -27,7 +27,7 @@ GDPR 和 CCPA 都很常使用存取及刪除要求的設定與使用情況。本
 
 聯絡人可以透過您的系統決定不允許將其個人資訊銷售給協力廠商。 您將可在 Adobe Campaign 中儲存及追蹤此資訊。
 
-為了達到此目的，您需要延伸「設定檔」表格並新增&#x200B;**[!UICONTROL Opt-Out for CCPA]**&#x200B;欄位。
+為了達到此目的，您需要延伸「輪廓」表格並新增&#x200B;**[!UICONTROL Opt-Out for CCPA]**&#x200B;欄位。
 
 >[!IMPORTANT]
 >
@@ -39,11 +39,11 @@ GDPR 和 CCPA 都很常使用存取及刪除要求的設定與使用情況。本
 
 如果您使用自訂收件者表格，您也需要執行此作業。
 
-有關如何建立新欄位的詳細資訊，請參閱[架構版本文件](../../configuration/using/about-schema-edition.md)。
+有關如何建立新欄位的詳細資訊，請參閱[結構描述版本文件](../../configuration/using/about-schema-edition.md)。
 
 >[!IMPORTANT]
 >
->修改架構是敏感性作業，僅能由專家用戶執行。
+>修改結構描述是敏感性作業，僅能由專家用戶執行。
 
 1. 前往&#x200B;**[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Add new fields]**，選擇&#x200B;**[!UICONTROL Recipients]**&#x200B;作為&#x200B;**[!UICONTROL Document type]**，然後按一下&#x200B;**[!UICONTROL Next]**。 如需了解將欄位新增到表格的詳細資訊，請參閱[本節](../../configuration/using/new-field-wizard.md)。
 
@@ -53,7 +53,7 @@ GDPR 和 CCPA 都很常使用存取及刪除要求的設定與使用情況。本
 
    ![](assets/privacy-ccpa-2.png)
 
-   這將擴充或建立 **[!UICONTROL Recipient (cus)]** 架構。 按一下以驗證欄位，確認欄位已正確新增。
+   這將擴充或建立 **[!UICONTROL Recipient (cus)]** 結構描述。 按一下以驗證欄位，確認欄位已正確新增。
 
    ![](assets/privacy-ccpa-3.png)
 
@@ -73,11 +73,11 @@ GDPR 和 CCPA 都很常使用存取及刪除要求的設定與使用情況。本
 
 若要填入值，可使用數種方法：
 
-* 編輯收件者的詳細資料，以使用 Campaign 的介面
+* 編輯收件者的詳細資料，以使用Campaign的介面
 * 使用 API
 * 透過資料匯入工作流程
 
-之後，您應該確保您絕對不會向已選擇退出之任何第三方銷售設定檔的個人資訊。
+然後，您應確保絕不向任何第三方出售已選擇退出的輪廓的個人資訊。
 
 1. 若要變更選擇退出的狀態，請前往 **[!UICONTROL Profiles and Target]** > **[!UICONTROL Recipients]**&#x200B;並選取收件者。 在 **[!UICONTROL General]** 標籤中，您會看到在上一節中設定的欄位。
 
@@ -87,6 +87,7 @@ GDPR 和 CCPA 都很常使用存取及刪除要求的設定與使用情況。本
 
    ![](assets/privacy-ccpa-6.png)
 
-1. 您可以按一下該欄位，以依據選擇退出資訊來排序收件者。您也可以建立篩選，只顯示已選擇退出的收件者。 如需建立篩選的詳細資訊，請參閱[本節](../../platform/using/creating-filters.md)。
+1. 您可以按一下該欄位，以依據選擇退出資訊來排序收件者。您也可以建立篩選，只顯示已選擇退出的收件者。 如需篩選器的詳細資訊，請參閱[Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}。
+
 
    ![](assets/privacy-ccpa-7.png)

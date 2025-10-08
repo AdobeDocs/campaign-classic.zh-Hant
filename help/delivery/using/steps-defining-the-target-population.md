@@ -7,9 +7,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: d0ed7be7-3147-4cb8-9ce7-ea51602e9048
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+source-git-commit: 8817b485fd5b6d6aeb9d71c1106f16fbb6bc3c5b
 workflow-type: tm+mt
-source-wordcount: '1729'
+source-wordcount: '1730'
 ht-degree: 23%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 23%
 
    ![](assets/s_ncs_user_wizard_email02a.png)
 
-1. 在&#x200B;**[!UICONTROL Target mapping]**&#x200B;下拉式清單中選取目標對應。 Adobe Campaign預設目標對應是&#x200B;**[!UICONTROL Recipients]**，根據&#x200B;**nms：recipient**&#x200B;結構描述。
+1. 在&#x200B;**[!UICONTROL Target mapping]**&#x200B;下拉式清單中選取目標對應。 Adobe Campaign預設目標對應是&#x200B;**[!UICONTROL Recipients]**，根據&#x200B;**nms:recipient**&#x200B;結構描述。
 
    有其他目標對應可供使用，其中一些可能與您的特定設定相關。[了解更多](#select-a-target-mapping)。
 
@@ -48,7 +48,7 @@ ht-degree: 23%
 
    預設會提供下列目標型別：
 
-   * **[!UICONTROL Filtering conditions]** ：此選項可讓您定義查詢並顯示結果。 定義查詢的方法會顯示在[此區段](../../platform/using/creating-filters.md#creating-an-advanced-filter)中。
+   * **[!UICONTROL Filtering conditions]** ：此選項可讓您定義查詢並顯示結果。 如需篩選器的詳細資訊，請參閱[Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}。
    * **[!UICONTROL Subscribers of an information service]**：此選項可讓您選取收件者必須訂閱的電子報，才能成為正在建立的傳遞目標。
 
      ![](assets/s_ncs_user_wizard_email02c.png)
@@ -72,7 +72,7 @@ ht-degree: 23%
    * **[!UICONTROL Recipients included in a folder]** ：此選項可讓您定位樹狀結構之特定資料夾中所包含的設定檔。
    * **[!UICONTROL A recipient]** ：此選項可讓您從資料庫中的設定檔選取特定收件者。
    * **[!UICONTROL A list of recipients]** ：此選項可讓您鎖定收件者清單。 清單會顯示在[此區段](../../platform/using/creating-and-managing-lists.md)中。
-   * **[!UICONTROL User filters]** ：此選項可讓您存取預先設定的篩選器，以使用這些篩選器作為資料庫中設定檔的篩選條件。 預先設定的篩選器會顯示在[此區段](../../platform/using/creating-filters.md#saving-a-filter)之中。
+   * **[!UICONTROL User filters]** ：此選項可讓您存取預先設定的篩選器，以使用這些篩選器作為資料庫中設定檔的篩選條件。 如需篩選器的詳細資訊，請參閱[Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}。
    * 選項&#x200B;**[!UICONTROL Exclude recipients corresponding to this segment]**&#x200B;可讓您鎖定不符合已定義之目標條件的收件者。 若要使用此選項，請選取適當的方框，然後套用定位 (如先前所定義) 以排除產生的設定檔。
 
      ![](assets/s_ncs_user_wizard_email02g.png)
@@ -230,7 +230,7 @@ ht-degree: 23%
 
 ## 選擇目標對應 {#select-a-target-mapping}
 
-依預設，傳遞範本以&#x200B;**[!UICONTROL Recipients]**&#x200B;為目標。 因此，它們的目標對應使用&#x200B;**nms：recipient**&#x200B;資料表的欄位。 Adobe Campaign為您的傳送提供其他目標對應，以根據您的需求使用。
+依預設，傳遞範本以&#x200B;**[!UICONTROL Recipients]**&#x200B;為目標。 因此，它們的目標對應使用&#x200B;**nms:recipient**&#x200B;資料表的欄位。 Adobe Campaign為您的傳送提供其他目標對應，以根據您的需求使用。
 
 ![](assets/delivery_select_mapping.png)
 
@@ -238,12 +238,12 @@ ht-degree: 23%
 
 | 名稱 | 使用 | 標準結構描述 |
 |---|---|---|
-| 收件者 | 傳遞給Adobe Campaign資料庫的收件者 | nms：recipient |
-| 訪客 | 例如，將其傳送給已透過轉介（病毒式行銷）或社交網路（Facebook、X — 先前稱為Twitter）收集設定檔的訪客。 | mns：visitor |
-| 訂閱 | 傳遞給已訂閱資訊服務（例如電子報）的收件者 | nms：subscription |
-| 訪客訂閱 | 傳遞給訂閱資訊服務的訪客 | nms：visitorSub |
-| 服務 | 發佈至X帳戶或Facebook頁面 | nms：service |
-| 運算子 | 傳遞給Adobe Campaign操作者 | nms：operator |
+| 收件者 | 傳遞給Adobe Campaign資料庫的收件者 | nms:recipient |
+| 訪客 | 例如，將其傳送給已透過轉介（病毒式行銷）或社交網路（Facebook、X — 先前稱為Twitter）收集設定檔的訪客。 | mns:visitor |
+| 訂閱 | 傳遞給已訂閱資訊服務（例如電子報）的收件者 | nms:subscription |
+| 訪客訂閱 | 傳遞給訂閱資訊服務的訪客 | nms:visitorSub |
+| 服務 | 發佈至X帳戶或Facebook頁面 | nms:service |
+| 運算子 | 傳遞給Adobe Campaign操作者 | nms:operator |
 | 外部檔案 | 透過包含傳遞所需所有資訊的檔案傳遞 | 沒有連結的結構描述，沒有輸入目標 |
 
 

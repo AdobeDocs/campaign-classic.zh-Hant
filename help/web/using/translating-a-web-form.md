@@ -5,10 +5,10 @@ description: 翻譯網路表單
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Web Forms
 exl-id: 72959141-ca18-4512-80c7-239efd31f711
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 8817b485fd5b6d6aeb9d71c1106f16fbb6bc3c5b
 workflow-type: tm+mt
-source-wordcount: '1544'
-ht-degree: 1%
+source-wordcount: '1549'
+ht-degree: 0%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 1%
 
 ![](assets/s_ncs_admin_survey_add_lang.png)
 
-當您新增網頁應用程式的翻譯語言時（或預設語言與編輯語言不同時），**[!UICONTROL Edit]**&#x200B;標籤中會新增&#x200B;**[!UICONTROL Translation]**&#x200B;子標籤以管理翻譯。
+當您新增網頁應用程式的翻譯語言時（或預設語言與編輯語言不同時），**[!UICONTROL Translation]**&#x200B;標籤中會新增&#x200B;**[!UICONTROL Edit]**&#x200B;子標籤以管理翻譯。
 
 Adobe Campaign包含翻譯及管理多語言翻譯的工具。 此編輯器可讓您檢視要翻譯或核准的字串、直接在介面中輸入翻譯，或匯入/匯出字元字串以將翻譯外部化。
 
@@ -52,7 +52,7 @@ Adobe Campaign包含翻譯及管理多語言翻譯的工具。 此編輯器可�
 
 第一次開啟此索引標籤時，不會包含任何資料。 按一下&#x200B;**[!UICONTROL Collect the strings to translate]**&#x200B;連結以更新網頁應用程式中的字串。
 
-Adobe Campaign會收集在所有靜態元素的&#x200B;**[!UICONTROL Texts]**&#x200B;索引標籤中定義的欄位和字串標籤：HTML區塊、Javascript等。 靜態元素在網頁表單[&#128279;](static-elements-in-a-web-form.md)中的靜態元素中有詳細的說明。
+Adobe Campaign會收集在所有靜態元素的&#x200B;**[!UICONTROL Texts]**&#x200B;索引標籤中定義的欄位和字串標籤：HTML區塊、Javascript等。 靜態元素在網頁表單[中的](static-elements-in-a-web-form.md)靜態元素中有詳細的說明。
 
 ![](assets/s_ncs_admin_survey_trad_tab.png)
 
@@ -70,13 +70,13 @@ Adobe Campaign會收集在所有靜態元素的&#x200B;**[!UICONTROL Texts]**&#x
 
 ### 篩選字串 {#filtering-strings}
 
-依預設，會顯示Web應用程式的每種翻譯語言。 預設篩選器有兩種：語言和狀態。 按一下&#x200B;**[!UICONTROL Filters]**&#x200B;按鈕，然後按一下&#x200B;**[!UICONTROL By language or status]**&#x200B;以顯示相符的下拉式方塊。 您也可以建立進階篩選。 如需詳細資訊，請參閱[此頁面](../../platform/using/creating-filters.md#creating-an-advanced-filter)。
+依預設，會顯示Web應用程式的每種翻譯語言。 預設篩選器有兩種：語言和狀態。 按一下&#x200B;**[!UICONTROL Filters]**&#x200B;按鈕，然後按一下&#x200B;**[!UICONTROL By language or status]**&#x200B;以顯示相符的下拉式方塊。 您也可以建立進階篩選。 如需篩選器的詳細資訊，請參閱[Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}。
 
 ![](assets/s_ncs_admin_survey_trad_tab_en.png)
 
 移至&#x200B;**[!UICONTROL Language]**&#x200B;下拉式方塊以選取翻譯語言。
 
-若要只顯示未翻譯的字串，請在&#x200B;**[!UICONTROL Status]**&#x200B;下拉式方塊中選取&#x200B;**[!UICONTROL To translate]**。 您也可以只顯示翻譯或核准的字串。
+若要只顯示未翻譯的字串，請在&#x200B;**[!UICONTROL To translate]**&#x200B;下拉式方塊中選取&#x200B;**[!UICONTROL Status]**。 您也可以只顯示翻譯或核准的字串。
 
 ### 轉譯字串 {#translating-strings}
 

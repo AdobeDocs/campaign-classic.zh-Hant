@@ -6,9 +6,9 @@ feature: Workflows
 hide: true
 hidefromtoc: true
 exl-id: d589180b-8e1d-4149-9b16-3f541018a41f
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 8817b485fd5b6d6aeb9d71c1106f16fbb6bc3c5b
 workflow-type: tm+mt
-source-wordcount: '2018'
+source-wordcount: '2019'
 ht-degree: 2%
 
 ---
@@ -133,7 +133,7 @@ ht-degree: 2%
 
 ![](assets/wf-notification_error-console.png)
 
-您可以設定工作流程，使其在出現錯誤時不會暫停並繼續執行。若要這麼做，請編輯工作流程&#x200B;**[!UICONTROL Properties]**，並在&#x200B;**[!UICONTROL Error management]**&#x200B;區段中，選取&#x200B;**[!UICONTROL In case of error]**&#x200B;欄位中的&#x200B;**[!UICONTROL Ignore]**&#x200B;選項。 然後，您可以指定在程序暫停之前可以忽略的連續錯誤數。
+您可以設定工作流程，使其在出現錯誤時不會暫停並繼續執行。若要這麼做，請編輯工作流程&#x200B;**[!UICONTROL Properties]**，並在&#x200B;**[!UICONTROL Error management]**&#x200B;區段中，選取&#x200B;**[!UICONTROL Ignore]**&#x200B;欄位中的&#x200B;**[!UICONTROL In case of error]**&#x200B;選項。 然後，您可以指定在程序暫停之前可以忽略的連續錯誤數。
 
 在此情況下，錯誤工作會中止。 此模式特別適合用於設計為在稍後重新嘗試行銷活動（定期動作）的工作流程。
 
@@ -207,7 +207,7 @@ ht-degree: 2%
 >
 >**isRunning**&#x200B;是為這個範例選擇的變數名稱。 這不是內建變數。
 
-在&#x200B;**是**&#x200B;分支中緊接在&#x200B;**[!UICONTROL Test]**&#x200B;之後的活動，必須在其&#x200B;**初始化指令碼**&#x200B;中設定執行個體變數：
+在&#x200B;**[!UICONTROL Test]**&#x200B;是&#x200B;**分支中緊接在**&#x200B;之後的活動，必須在其&#x200B;**初始化指令碼**&#x200B;中設定執行個體變數：
 
 ```
 instance.vars.isRunning = true
@@ -232,7 +232,7 @@ instance.vars.isRunning = false
 
 此章節中會顯示使用案例： [協調資料更新](coordinating-data-updates.md)。
 
-## 資料庫維護 {#database-maintenance}
+## 維護資料庫 {#database-maintenance}
 
 工作流程會使用許多工作表格，消耗空間，如果不進行維護，最終會導致整個平台速度變慢。 如需資料庫維護的詳細資訊，請參閱此[區段](../../production/using/tables-to-maintain.md)。
 
@@ -281,7 +281,4 @@ Campaign Classic介面可讓您使用預先定義的&#x200B;**檢視**&#x200B;�
 
 ![](assets/workflow-monitoring-filter.png)
 
-如需詳細資訊，請參閱下列章節：
-
-* [建立進階篩選](../../platform/using/creating-filters.md#creating-an-advanced-filter)
-* [儲存篩選器](../../platform/using/creating-filters.md#saving-a-filter)
+如需篩選器的詳細資訊，請參閱[Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}。

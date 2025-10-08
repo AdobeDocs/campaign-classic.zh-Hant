@@ -6,10 +6,10 @@ title: Campaign Classic v7 指南
 user-guide-description: Adobe Campaign Classic v7 產品文件。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 11c81e4f04b978381d3803e2b60e23ed791eee44
+source-git-commit: 8817b485fd5b6d6aeb9d71c1106f16fbb6bc3c5b
 workflow-type: tm+mt
-source-wordcount: '2567'
-ht-degree: 97%
+source-wordcount: '2570'
+ht-degree: 96%
 
 ---
 
@@ -30,13 +30,14 @@ ht-degree: 97%
    + [相容性對照表](rn/using/compatibility-matrix.md)
    + [檔案更新 — 隱藏](rn/using/documentation-updates.md)
 + 開始使用 {#getting-started}
-   + [開始使用 Adobe Campaign Classic &#x200B;](platform/using/about-adobe-campaign-classic.md)
-   + [啟動 Adobe Campaign &#x200B;](platform/using/launching-adobe-campaign.md)
+   + [開始使用 Adobe Campaign Classic ](platform/using/about-adobe-campaign-classic.md)
+   + [啟動 Adobe Campaign ](platform/using/launching-adobe-campaign.md)
    + [探索Campaign UI](platform/using/adobe-campaign-workspace.md)
    + [使用Campaign Explorer — 隱藏](platform/using/adobe-campaign-explorer.md)
    + [瀏覽及自訂清單 — 隱藏](platform/using/adobe-campaign-ui-lists.md)
    + [分項清單 — 隱藏](platform/using/managing-enumerations.md)
    + [Campaign 連接器](platform/using/about-connectors.md)
+   + [在Campaign建立查詢](platform/using/about-queries-in-campaign.md)
    + 常見問題集 {#faq}
       + [最常見的問題](platform/using/common-questions.md)
       + [全域概念](platform/using/faq-key-concepts.md)
@@ -84,10 +85,9 @@ ht-degree: 97%
          + [匯入和匯出最佳實務](platform/using/import-export-best-practices.md)
          + [SFTP 伺服器最佳實務及疑難排解](platform/using/sftp-server-usage.md)
    + 篩選資料 {#filtering-data}
-      + [篩選選項](platform/using/filtering-options.md)
-      + [建立篩選器](platform/using/creating-filters.md)
-      + [使用案例](platform/using/use-case.md)
-   + [在Campaign建立查詢](platform/using/about-queries-in-campaign.md)
+      + [篩選選項 — 隱藏](platform/using/filtering-options.md)
+      + [建立篩選器 — 隱藏](platform/using/creating-filters.md)
+      + [使用案例 — 隱藏](platform/using/use-case.md)
    + [建立查詢的步驟 — 隱藏](platform/using/steps-to-create-a-query.md)
    + [定義篩選條件 — 隱藏](platform/using/defining-filter-conditions.md)
    + 權限 {#permissions}

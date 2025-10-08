@@ -1,23 +1,22 @@
 ---
 product: campaign
-title: 使用實例
-description: 使用實例
+title: 使用案例
+description: 使用案例
 feature: Subscriptions, Email, Data Management
-badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: filtering-data
 exl-id: 85ded096-7d27-41b3-8ef2-93f5ca8def82
 hide: true
 hidefromtoc: true
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+source-git-commit: 8817b485fd5b6d6aeb9d71c1106f16fbb6bc3c5b
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '264'
 ht-degree: 3%
 
 ---
 
-# 使用實例{#use-case}
+# 使用案例{#use-case}
 
 
 
@@ -36,7 +35,7 @@ ht-degree: 3%
 
    ![](assets/s_ncs_user_filter_choose_schema.png)
 
-1. 選取訂閱結構描述(nms：subscription)並按一下&#x200B;**[!UICONTROL OK]**。
+1. 選取訂閱結構描述(nms:subscription)並按一下&#x200B;**[!UICONTROL OK]**。
 
    ![](assets/s_ncs_user_filter_select_schema.png)
 
@@ -48,7 +47,8 @@ ht-degree: 3%
 
    ![](assets/s_ncs_user_filter_view_schema.png)
 
-   您可以存取這些欄位，以在篩選編輯器內文中定義篩選條件。 應用程式篩選的定義方式與進階篩選完全相同。 請參閱[建立進階篩選器](../../platform/using/creating-filters.md#creating-an-advanced-filter)。
+   您可以存取這些欄位，以在篩選編輯器內文中定義篩選條件。 應用程式篩選的定義方式與進階篩選完全相同。 如需篩選器的詳細資訊，請參閱[Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}。
+
 
 1. 在訂閱上建立新的篩選器，以僅顯示具有未定義電子郵件格式的訂閱：
 
