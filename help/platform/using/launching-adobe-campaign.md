@@ -34,7 +34,7 @@ Campaign使用者端主控台是豐富的使用者端，可讓您連線至您的
 
 ### 與您的Adobe ID連結
 
-Campaign 使用者透過 Adobe 身分管理系統 (IMS)，使用其 Adobe ID 連線至 Adobe Campaign 主控台。他們可以在所有 Adobe 解決方案中使用相同的 ID。搭配其他解決方案使用 Adobe Campaign 時，可以儲存連線。在此頁面[上進一步瞭解Adobe IMS ](https://helpx.adobe.com/tw/enterprise/using/identity.html)。
+Campaign 使用者透過 Adobe 身分管理系統 (IMS)，使用其 Adobe ID 連線至 Adobe Campaign 主控台。他們可以在所有 Adobe 解決方案中使用相同的 ID。搭配其他解決方案使用 Adobe Campaign 時，可以儲存連線。在此頁面[上進一步瞭解Adobe IMS &#x200B;](https://helpx.adobe.com/tw/enterprise/using/identity.html)。
 
 若要設定Campaign Classic v7與Adobe Identity Management Service (IMS)的連線，請參閱[此頁面](../../integrations/using/about-adobe-id.md)。
 
