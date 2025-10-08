@@ -4,9 +4,9 @@ title: 資料模型最佳實務
 description: 瞭解如何使用Campaign Classic資料模型
 feature: Data Model
 exl-id: 9c59b89c-3542-4a17-a46f-3a1e58de0748
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 4d8c4ba846148d3df00a76ecc29375b9047c2b20
 workflow-type: tm+mt
-source-wordcount: '4013'
+source-wordcount: '4005'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 閱讀[此檔案](../../configuration/using/about-schema-reference.md)以開始使用Campaign綱要。 在[本檔案](../../configuration/using/about-schema-edition.md)中瞭解如何設定延伸結構描述，以延伸Adobe Campaign資料庫的概念資料模型。
 
-## 概覽 {#overview}
+## 概觀 {#overview}
 
 Adobe Campaign系統極為靈活，可延伸至初始實施以外的範圍。 不過，雖然可能性是無限的，但做出明智的決策並奠定堅實的基礎以開始設計您的資料模型是至關重要的。
 
@@ -69,7 +69,7 @@ Adobe Campaign是功能強大的跨頻道行銷活動管理系統，可以協助
 * **expr**&#x200B;屬性允許將結構描述屬性定義為計算欄位，而不是表格中的實體集合值。 如此可讓您以不同格式（例如年齡和出生日期）存取資訊，而不需要儲存這兩個值。 這是避免重複欄位的好方法。 例如，收件者表格會使用網域的運算式，該運算式已存在於電子郵件欄位中。
 * 但是，當運算式計算複雜時，不建議使用&#x200B;**expr**&#x200B;屬性，因為即時計算可能會影響查詢的效能。
 * **XML**&#x200B;型別是避免建立太多欄位的好方法。 但它也會佔用磁碟空間，因為它使用資料庫中的CLOB欄。 這也會導致複雜的SQL查詢，並可能影響效能。
-* **字串**&#x200B;欄位的長度應該一律以欄定義。 依預設，Adobe Campaign中的長度上限為255，但Adobe建議，如果您已知道大小不會超過較短的長度，請縮短欄位。
+* **字串**&#x200B;欄位的長度應該一律以欄定義。 依預設，Adobe Campaign中的長度上限為255，但Adobe建議，如果您已確定大小不會超過較短的長度，請縮短欄位。
 * 如果您確定來源系統中的大小被高估而無法達到，在Adobe Campaign中的欄位會比在來源系統中的欄位短，這是可以接受的。 這可能表示Adobe Campaign中的字串長度較短或整數較小。
 
 ### 欄位選擇 {#choice-of-fields}
@@ -103,7 +103,7 @@ Adobe Campaign資源有三個識別碼，您可以新增另一個識別碼。
 | 識別碼 | 說明 | 最佳實務 |
 |--- |--- |--- |
 | ID | <ul><li>ID是Adobe Campaign表格的實體主索引鍵。 對於現成可用的表格，這是從序列產生的32位元數字</li><li>此識別碼通常是特定Adobe Campaign執行個體的唯一識別碼。 </li><li>可在結構描述定義中看到自動產生的ID。 搜尋&#x200B;*autopk=&quot;true&quot;*&#x200B;屬性。</li></ul> | <ul><li>自動產生的識別碼不應在工作流程或封裝定義中作為參考使用。</li><li>不應假設ID一律為遞增數字。</li><li>現成可用表格中的ID是32位元數字，且不應變更此型別。 此數字取自區段中所涵蓋的同名「序列」。</li></ul> |
-| 名稱（或內部名稱） | <ul><li>此資訊是表格中記錄的唯一識別碼。 此值可以手動更新，通常使用產生的名稱。</li><li>此識別碼在Adobe Campaign的不同執行個體中部署時保留其值，且不應空白。</li></ul> | <ul><li>如果物件要從某個環境部署至另一個環境，請重新命名Adobe Campaign產生的記錄名稱。</li><li>當物件具有名稱空間屬性（例如&#x200B;*結構描述*）時，將會在建立的所有自訂物件中運用這個通用名稱空間。 部分保留的名稱空間不應使用： *nms*、*xtk*、*nl*、*ncl*、*crm*、*xxl*。</li><li>當物件沒有任何名稱空間（例如&#x200B;*工作流程*&#x200B;或&#x200B;*傳遞*）時，此名稱空間概念將會新增為內部名稱物件的前置詞： *namespaceMyObjectName*。</li><li>請勿使用空格「 」、分號「： 」或連字型大小「 — 」等特殊字元。 所有這些字元都會取代為底線「_」（允許的字元）。 例如，「abc-def」和「abc：def」會儲存為「abc_def」並互相覆寫。</li></ul> |
+| 名稱（或內部名稱） | <ul><li>此資訊是表格中記錄的唯一識別碼。 此值可以手動更新，通常使用產生的名稱。</li><li>此識別碼在Adobe Campaign的不同執行個體中部署時保留其值，且不應空白。</li></ul> | <ul><li>如果物件要從某個環境部署至另一個環境，請重新命名Adobe Campaign產生的記錄名稱。</li><li>當物件具有名稱空間屬性（例如&#x200B;*結構描述*）時，將會在建立的所有自訂物件中運用這個通用名稱空間。 部分保留的名稱空間不應使用： *nms*、*xtk*、*nl*、*ncl*、*crm*、*xxl*。</li><li>當物件沒有任何名稱空間（例如&#x200B;*工作流程*&#x200B;或&#x200B;*傳遞*）時，此名稱空間概念將會新增為內部名稱物件的前置詞： *namespaceMyObjectName*。</li><li>請勿使用空格「 」、分號「： 」或連字型大小「 — 」等特殊字元。 所有這些字元都會取代為底線「_」（允許的字元）。 例如，「abc-def」和「abc:def」會儲存為「abc_def」並互相覆寫。</li></ul> |
 | 標籤 | <ul><li>標籤是Adobe Campaign中物件或記錄的商業識別碼。</li><li>此物件允許使用空格和特殊字元。</li><li>它無法保證記錄的唯一性。</li></ul> | <ul><li>建議您決定物件標籤的結構。</li><li>這是為Adobe Campaign使用者識別記錄或物件的最好用的解決方案。</li></ul> |
 
 ## 自訂內部索引鍵 {#custom-internal-keys}
@@ -146,7 +146,7 @@ Adobe Campaign主索引鍵是所有現成可用表格自動產生的id，且對�
 
 依預設，自訂序列的值介於+1,000到+2.1BB之間。 技術上，啟用負值ID可以取得完整的4BB範圍。 這應謹慎使用，從負數到正數時將會遺失一個ID：在產生的SQL查詢中，Adobe Campaign通常會忽略記錄0。
 
-如需序列耗竭的詳細資訊，請觀看[此影片](https://helpx.adobe.com/tw/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html)。
+如需序列耗竭的詳細資訊，請觀看[此影片](https://helpx.adobe.com/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html)。
 
 ## 索引 {#indexes}
 
@@ -165,12 +165,13 @@ Adobe建議定義其他索引，因為這可以改善效能。
 * 請仔細選取需要定義的索引。
 * 請勿從現成可用的資料表中移除原生索引。
 
-<!--When you are performing an initial import with very high volumes of data insert in Adobe Campaign database, it is recommended to run that import without custom indexes at first. It will allow to accelerate the insertion process. Once you’ve completed this important import, it is possible to enable the index(es).-->
+<!--When you are performing an initial import with very high volumes of data insert in Adobe Campaign database, it is recommended to run that import without custom indexes at first. It will allow to accelerate the insertion process. Once you've completed this important import, it is possible to enable the index(es).-->
 
 ### 範例
 
 管理索引可能會變得非常複雜，因此瞭解其運作方式非常重要。 為了說明此複雜性，我們以一個基本範例為例，例如透過篩選名字和姓氏來搜尋收件者。 操作步驟：
-1. 移至列出資料庫中所有收件者的資料夾。 如需詳細資訊，請參閱[管理設定檔](../../platform/using/managing-profiles.md)。
+
+1. 瀏覽到列出資料庫中所有收件者的資料夾。
 1. 在&#x200B;**[!UICONTROL First name]**&#x200B;欄位上按一下滑鼠右鍵。
 1. 選取 **[!UICONTROL Filter on this field]**。
 
@@ -247,7 +248,7 @@ Adobe Campaign既不是Data Warehouse也不是報表工具。 因此，為了確
 
 在[Campaign隱私權與安全性方針](../../platform/using/privacy-and-recommendations.md)中進一步瞭解資料保留。
 
-在本節[&#128279;](../../production/using/database-cleanup-workflow.md)中進一步瞭解Campaign資料庫清理工作流程。
+在本節[中進一步瞭解Campaign資料庫清理工作流程](../../production/using/database-cleanup-workflow.md)。
 
 >[!IMPORTANT]
 >
@@ -298,10 +299,10 @@ Adobe Campaign仰賴協力廠商資料庫引擎。 視提供者而定，為大�
 
 * **小型**&#x200B;資料表與傳遞資料表類似。
 * **中等大小**&#x200B;資料表與收件者資料表的大小相同。 每個客戶有一筆記錄。
-* **大型**&#x200B;資料表類似於Broad記錄資料表。 每個客戶有許多記錄。
+* **大型**資料表類似於Broad記錄資料表。 每個客戶有許多記錄。
 例如，如果您的資料庫包含1千萬位收件者，則廣泛記錄表格會包含約1億到2億則訊息，而傳遞表格則會包含數千筆記錄。
 
-在PostgreSQL上，資料列不應超過8KB，以避免[TOAST](https://wiki.postgresql.org/wiki/TOAST)機制。 因此，請儘量減少欄數及每列的大小，以保留系統的最佳效能（記憶體和CPU）。
+在PostgreSQL上，資料列不應超過8KB，以避免[TOAST](https://wiki.postgresql.org/wiki/TOAST)機制。 因此，請儘量減少欄數和每列大小，以保留系統的最佳效能(記憶體和CPU)。
 
 列數也會影響效能。 Adobe Campaign資料庫的設計目的，並非儲存主動未用於目標定位或個人化用途的歷史資料，而是儲存運作資料庫。
 

@@ -6,10 +6,10 @@ title: Campaign Classic v7 指南
 user-guide-description: Adobe Campaign Classic v7 產品文件。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: d78fe2e0fd85ba9c23e709a3f30a135cee411230
+source-git-commit: 4d8c4ba846148d3df00a76ecc29375b9047c2b20
 workflow-type: tm+mt
-source-wordcount: '2557'
-ht-degree: 99%
+source-wordcount: '2566'
+ht-degree: 97%
 
 ---
 
@@ -30,8 +30,8 @@ ht-degree: 99%
    + [相容性對照表](rn/using/compatibility-matrix.md)
    + [檔案更新 — 隱藏](rn/using/documentation-updates.md)
 + 開始使用 {#getting-started}
-   + [開始使用 Adobe Campaign Classic &#x200B;](platform/using/about-adobe-campaign-classic.md)
-   + [啟動 Adobe Campaign &#x200B;](platform/using/launching-adobe-campaign.md)
+   + [開始使用 Adobe Campaign Classic ](platform/using/about-adobe-campaign-classic.md)
+   + [啟動 Adobe Campaign ](platform/using/launching-adobe-campaign.md)
    + [探索Campaign UI](platform/using/adobe-campaign-workspace.md)
    + [使用Campaign Explorer — 隱藏](platform/using/adobe-campaign-explorer.md)
    + [瀏覽及自訂清單 — 隱藏](platform/using/adobe-campaign-ui-lists.md)
@@ -60,12 +60,12 @@ ht-degree: 99%
       + [選擇退出個人資訊銷售](platform/using/privacy-requests-ccpa.md)
    + 輪廓管理 {#profile-management}
       + [關於輪廓](platform/using/about-profiles.md)
-      + [編輯輪廓](platform/using/editing-a-profile.md)
-      + [新增輪廓](platform/using/adding-profiles.md)
-      + [管理輪廓](platform/using/managing-profiles.md)
+      + [編輯設定檔 — 隱藏](platform/using/editing-a-profile.md)
+      + [新增設定檔 — 隱藏](platform/using/adding-profiles.md)
+      + [管理設定檔 — 隱藏](platform/using/managing-profiles.md)
       + [更新資料](platform/using/updating-data.md)
-      + [匯入及匯出輪廓](platform/using/exporting-and-importing-profiles.md)
-   + [建立及管理清單](platform/using/creating-and-managing-lists.md)
+      + [匯入和匯出設定檔 — 隱藏](platform/using/exporting-and-importing-profiles.md)
+      + [建立及管理清單](platform/using/creating-and-managing-lists.md)
    + 匯入及匯出資料 {#importing-and-exporting-data}
       + [開始使用匯入及匯出資料](platform/using/get-started-data-import-export.md)
       + [利用工作流程匯入及匯出資料](platform/using/import-export-workflows.md)
@@ -382,11 +382,11 @@ ht-degree: 99%
       + [透過 [!DNL Adobe Target]設定整合](integrations/using/configuring-the-integration-with-adobe-target.md)
       + [插入動態影像](integrations/using/inserting-a-dynamic-image.md)
    + ACS Connector {#acs-connector}
-      + [開始使用 [!DNL ACS Connector]](integrations/using/acs-connector-principles-and-data-cycle.md)
-      + [同步輪廓](integrations/using/synchronizing-profiles.md)
-      + [同步客群](integrations/using/synchronizing-audiences.md)
-      + [同步化網站應用程式](integrations/using/synchronizing-web-applications.md)
-      + [疑難排解 [!DNL ACS Connector]](integrations/using/troubleshooting-the-acs-connector.md)
+      + [開始使用 [!DNL ACS Connector]  — 隱藏](integrations/using/acs-connector-principles-and-data-cycle.md)
+      + [同步設定檔 — 隱藏](integrations/using/synchronizing-profiles.md)
+      + [同步對象 — 隱藏](integrations/using/synchronizing-audiences.md)
+      + [同步化網站應用程式 — 隱藏](integrations/using/synchronizing-web-applications.md)
+      + [疑難排解 [!DNL ACS Connector]  — 隱藏](integrations/using/troubleshooting-the-acs-connector.md)
 + [使用工作流程自動化](workflow/using/about-workflow-automation.md)
 + 使用工作流程自動化 {#automating-with-workflows}
    + 開始使用工作流程 {#introduction}

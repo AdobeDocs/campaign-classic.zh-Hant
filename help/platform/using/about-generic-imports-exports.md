@@ -7,10 +7,10 @@ feature: Overview
 role: User, Data Architect
 level: Beginner
 exl-id: 9ac13db3-552f-43cc-ab67-3aea82e0519e
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 4d8c4ba846148d3df00a76ecc29375b9047c2b20
 workflow-type: tm+mt
-source-wordcount: '126'
-ht-degree: 3%
+source-wordcount: '121'
+ht-degree: 0%
 
 ---
 
@@ -19,8 +19,6 @@ ht-degree: 3%
 
 
 Adobe Campaign Classic提供一般匯入和匯出。 例如，它們可讓您擷取隨後將成為目標母體一部分的客戶或潛在客戶清單，或提供資料庫來自外部檔案的資料。
-
-![](assets/do-not-localize/how-to-video.png) [在影片中探索此功能](../../platform/using/exporting-and-importing-profiles.md#import-profiles-video)
 
 從Adobe Campaign樹狀結構的&#x200B;**[!UICONTROL Profiles and Targets > Jobs > Generic imports and exports]**&#x200B;節點管理一般匯入和匯出。
 

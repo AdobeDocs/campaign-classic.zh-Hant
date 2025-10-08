@@ -6,10 +6,10 @@ badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v
 feature: Monitoring, Email
 role: User
 exl-id: 43779505-9917-4e99-af25-b00a9d29a645
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 4d8c4ba846148d3df00a76ecc29375b9047c2b20
 workflow-type: tm+mt
-source-wordcount: '692'
-ht-degree: 9%
+source-wordcount: '684'
+ht-degree: 8%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 9%
 
 藉由Adobe Campaign的追蹤功能，您可以追蹤傳送的訊息，並檢查收件者的行為：開啟、點按連結、取消訂閱等。
 
-此資訊會在每個傳遞收件者之設定檔的&#x200B;**[!UICONTROL Tracking]**&#x200B;索引標籤中擷取。 此標籤會顯示從清單中選取的收件者所追蹤和點選的所有URL連結。 這是在傳送中追蹤的所有URL的累積，這些URL仍存在於傳送畫面中。 清單可以設定，通常包含：點選的URL、點選的日期和時間，以及找到URL的檔案。 如需詳細資訊，請參閱[本章節](../../platform/using/editing-a-profile.md#tracking-tab)。
+此資訊會在每個傳遞收件者之設定檔的&#x200B;**[!UICONTROL Tracking]**&#x200B;索引標籤中擷取。 此標籤會顯示從清單中選取的收件者所追蹤和點選的所有URL連結。 這是在傳送中追蹤的所有URL的累積，這些URL仍存在於傳送畫面中。 清單可以設定，通常包含：點選的URL、點選的日期和時間，以及找到URL的檔案。
 
 **傳遞儀表板**&#x200B;也是監視您的傳遞以及在傳送訊息期間遇到的最終問題的關鍵。 如需詳細資訊，請參閱[本節](delivery-dashboard.md)。
 

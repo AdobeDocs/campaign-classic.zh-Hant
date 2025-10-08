@@ -6,10 +6,10 @@ badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v
 feature: Monitoring, Deliverability
 role: User
 exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 4d8c4ba846148d3df00a76ecc29375b9047c2b20
 workflow-type: tm+mt
-source-wordcount: '2987'
-ht-degree: 8%
+source-wordcount: '2984'
+ht-degree: 7%
 
 ---
 
@@ -41,8 +41,7 @@ Adobe Campaign 管理隔離地址清單。在執行傳遞分析時，預設情�
 
 * 另一方面，如果位於&#x200B;**封鎖清單**，則會導致&#x200B;**設定檔**&#x200B;不再被傳遞設為目標，例如在特定頻道的取消訂閱（選擇退出）之後。 例如，如果電子郵件頻道封鎖清單上的設定檔有兩個電子郵件地址，則兩個地址都會從傳送中排除。
 
-  您可以在設定檔的&#x200B;**[!UICONTROL General]**&#x200B;索引標籤的&#x200B;**[!UICONTROL No longer contact]**&#x200B;區段中，檢查設定檔是否位於一或多個頻道的封鎖清單中。 請參閱[本節](../../platform/using/editing-a-profile.md#general-tab)。
-
+  您可以在設定檔的&#x200B;**[!UICONTROL No longer contact]**&#x200B;索引標籤的&#x200B;**[!UICONTROL General]**&#x200B;區段中，檢查設定檔是否位於一或多個頻道的封鎖清單中。
 >[!NOTE]
 >
 >隔離包括&#x200B;**[!UICONTROL Denylisted]**&#x200B;狀態，當收件者將您的訊息回報為垃圾訊息，或回覆具有如「STOP」之類關鍵字的SMS訊息時，就會套用此狀態。 在這種情況下，會將設定檔的相關地址或電話號碼傳送到隔離區，且狀態為&#x200B;**[!UICONTROL Denylisted]**。 如需管理STOP SMS訊息的詳細資訊，請參閱[本節](../../delivery/using/sms-send.md#processing-inbound-messages)。
@@ -104,7 +103,7 @@ Adobe Campaign會根據傳送失敗型別和錯誤訊息限定期間指派的原
 * **硬錯誤**：會立即將相對應的電子郵件地址傳送至隔離區。
 * **軟錯誤**：軟錯誤不會立即傳送要隔離的地址，但會增加錯誤計數器。如需詳細資訊，請參閱[軟性錯誤管理](#soft-error-management)。
 
-如果使用者將電子郵件歸類為垃圾訊息（[回饋迴路](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=zh-Hant#feedback-loops)），郵件會自動重新導向至由Adobe管理的技術信箱。 之後，系統會自動將使用者的電子郵件地址傳送到狀態為　**[!UICONTROL Denylisted]**　的隔離區。此狀態僅適用於地址，而且設定檔不在封鎖清單中，因此使用者會繼續收到SMS訊息和推播通知。
+如果使用者將電子郵件歸類為垃圾訊息（[回饋迴路](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#feedback-loops)），郵件會自動重新導向至Adobe所管理的技術信箱。 之後，系統會自動將使用者的電子郵件地址傳送到狀態為　**[!UICONTROL Denylisted]**　的隔離區。此狀態僅適用於地址，而且設定檔不在封鎖清單中，因此使用者會繼續收到SMS訊息和推播通知。
 
 >[!NOTE]
 >
@@ -125,7 +124,7 @@ Adobe Campaign會根據傳送失敗型別和錯誤訊息限定期間指派的原
 
 對於託管或混合安裝，如果您已升級至[增強型MTA](sending-with-enhanced-mta.md)，在&#x200B;**[!UICONTROL Erroneous]**&#x200B;狀態的情況下要執行的最大重試次數和重試之間的最小延遲，現在取決於IP在歷史和目前指定網域的執行狀況。
 
-對於使用舊版Campaign MTA的內部部署安裝和託管/混合安裝，您可以修改錯誤數量和兩個錯誤之間的期間。 若要這麼做，請變更[部署精靈](../../installation/using/deploying-an-instance.md) (**[!UICONTROL Email channel]** > **[!UICONTROL Advanced parameters]**)或傳遞層級[&#128279;](../../delivery/using/steps-sending-the-delivery.md#configuring-retries)的中的對應設定。
+對於使用舊版Campaign MTA的內部部署安裝和託管/混合安裝，您可以修改錯誤數量和兩個錯誤之間的期間。 若要這麼做，請變更[部署精靈](../../installation/using/deploying-an-instance.md) (**[!UICONTROL Email channel]** > **[!UICONTROL Advanced parameters]**)或傳遞層級[的](../../delivery/using/steps-sending-the-delivery.md#configuring-retries)中的對應設定。
 
 
 ## 從隔離中移除地址 {#removing-a-quarantined-address}
@@ -148,7 +147,7 @@ Adobe Campaign會根據傳送失敗型別和錯誤訊息限定期間指派的原
 
 ### 手動更新 {#unquarantine-manual}
 
-您也可以手動解除隔離地址。 若要從隔離清單手動移除地址，請將其狀態從&#x200B;**[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]**&#x200B;節點變更為&#x200B;**[!UICONTROL Valid]**。
+您也可以手動解除隔離地址。 若要從隔離清單手動移除地址，請將其狀態從&#x200B;**[!UICONTROL Valid]**&#x200B;節點變更為&#x200B;**[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]**。
 
 ![](assets/tech_quarant_error_status.png)
 
@@ -164,17 +163,17 @@ Adobe Campaign會根據傳送失敗型別和錯誤訊息限定期間指派的原
 
    * **錯誤文字（隔離文字）**&#x200B;包含「Momen_Code10_InvalidRecipient」
    * **電子郵件網域(@domain)**&#x200B;等於domain1.com或&#x200B;**電子郵件網域(@domain)**&#x200B;等於domain2.com或&#x200B;**電子郵件網域(@domain)**&#x200B;等於domain3.com
-   * 在`MM/DD/YYYY HH:MM:SS AM`或之後的&#x200B;**更新狀態(@lastModified)**
-   * 在`MM/DD/YYYY HH:MM:SS PM`或之前的&#x200B;**更新狀態(@lastModified)**
+   * 在&#x200B;**或之後的**&#x200B;更新狀態(@lastModified)`MM/DD/YYYY HH:MM:SS AM`
+   * 在&#x200B;**或之前的**&#x200B;更新狀態(@lastModified)`MM/DD/YYYY HH:MM:SS PM`
 
-* 對於在隔離清單的&#x200B;**[!UICONTROL Error text]**&#x200B;欄位中有SMTP退回回應資訊的Campaign Classicv7執行個體：
+* 對於在隔離清單的&#x200B;**[!UICONTROL Error text]**&#x200B;欄位中有SMTP退回回應資訊的Campaign Classic v7執行個體：
 
    * **錯誤文字（隔離文字）**&#x200B;包含「550-5.1.1」且&#x200B;**錯誤文字（隔離文字）**&#x200B;包含「support.ISP.com」
 
   其中「support.ISP.com」可以是：例如「support.apple.com」或「support.google.com」
 
-   * 在`MM/DD/YYYY HH:MM:SS AM`或之後的&#x200B;**更新狀態(@lastModified)**
-   * 在`MM/DD/YYYY HH:MM:SS PM`或之前的&#x200B;**更新狀態(@lastModified)**
+   * 在&#x200B;**或之後的**&#x200B;更新狀態(@lastModified)`MM/DD/YYYY HH:MM:SS AM`
+   * 在&#x200B;**或之前的**&#x200B;更新狀態(@lastModified)`MM/DD/YYYY HH:MM:SS PM`
 
 取得受影響的收件者清單後，請新增&#x200B;**[!UICONTROL Update data]**&#x200B;活動以將其電子郵件地址狀態設定為&#x200B;**[!UICONTROL Valid]**，以便透過&#x200B;**[!UICONTROL Database cleanup]**&#x200B;工作流程將其從隔離清單中移除。 您也可以從隔離表中刪除它們。
 
@@ -565,7 +564,7 @@ SMS訊息的隔離機制與一般程式在整體上相同。 請參閱[關於隔
  </tbody> 
 </table>
 
-延伸通用SMPP聯結器的&#x200B;**&#x200B;**
+延伸通用SMPP聯結器的&#x200B;****
 
 使用SMPP通訊協定傳送SMS訊息時，錯誤管理的處理方式不同。 如需有關Extended generic SMPP聯結器的詳細資訊，請參閱[此頁面](sms-set-up.md#creating-an-smpp-external-account)。
 
@@ -604,6 +603,6 @@ SR Generic DELIVRD 000|#MESSAGE#
 
   依預設，規則運算式會擷取&#x200B;**SMPP 3.4規格**&#x200B;的&#x200B;**附錄B**&#x200B;區段所定義的&#x200B;**err：**&#x200B;欄位。
 
-* 直立線符號(|)後面的所有專案只會顯示在&#x200B;**[!UICONTROL Delivery log qualification]**&#x200B;表格的&#x200B;**[!UICONTROL First text]**&#x200B;欄中。 訊息標準化之後，此內容一律會由&#x200B;**#MESSAGE#**&#x200B;取代。 此程式會避免因類似錯誤而出現多個專案，與電子郵件的情況相同。 如需詳細資訊，請參閱[退回郵件資格](understanding-delivery-failures.md#bounce-mail-qualification)。
+* 直立線符號(|)後面的所有專案只會顯示在&#x200B;**[!UICONTROL First text]**&#x200B;表格的&#x200B;**[!UICONTROL Delivery log qualification]**&#x200B;欄中。 訊息標準化之後，此內容一律會由&#x200B;**#MESSAGE#**&#x200B;取代。 此程式會避免因類似錯誤而出現多個專案，與電子郵件的情況相同。 如需詳細資訊，請參閱[退回郵件資格](understanding-delivery-failures.md#bounce-mail-qualification)。
 
 Extended generic SMPP聯結器會套用啟發式來尋找合理的預設值：如果狀態以&#x200B;**DELIV**&#x200B;開頭，則會被視為成功，因為它符合大多數提供者使用的一般狀態&#x200B;**DELIVRD**&#x200B;或&#x200B;**DELIVERED**。 任何其他狀態都會導致硬失敗。
