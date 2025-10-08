@@ -7,8 +7,10 @@ badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v
 audience: platform
 content-type: reference
 topic-tags: creating-queries
+hide: true
+hidefromtoc: true
 exl-id: b62e23e5-f1b7-44c4-82d9-95c6b3240352
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 11c81e4f04b978381d3803e2b60e23ed791eee44
 workflow-type: tm+mt
 source-wordcount: '3304'
 ht-degree: 34%
@@ -113,7 +115,7 @@ ht-degree: 34%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">未包含在</span> <br />中 </td> 
-   <td> 運作方式與</span>運運算元中的<span class="uicontrol">Include類似。 在此處，我們要根據輸入的值排除收件者。<br /> </td> 
+   <td> 運作方式與<span class="uicontrol">運運算元中的</span>Include類似。 在此處，我們要根據輸入的值排除收件者。<br /> </td> 
    <td> <strong>出生日期(@birthDate)不包含在'12/10/1979,12/10/1984'</strong>中。 與上一個範例不同，不會傳回這些日期內出生的收件者。<br /> </td> 
   </tr> 
  </tbody> 
@@ -268,7 +270,7 @@ ht-degree: 34%
 
 ## 建立計算欄位 {#creating-calculated-fields}
 
-如有必要，請在資料格式化期間新增欄。 計算欄位會將欄新增至資料預覽區段。 按一下&#x200B;**[!UICONTROL Add a calculated field]**。
+如有必要，請在資料格式化期間新增欄。 計算欄位會將欄新增至資料預覽區段。 按一下 **[!UICONTROL Add a calculated field]**。
 
 ![](assets/query_editor_nveau_43.png)
 
@@ -315,11 +317,11 @@ ht-degree: 34%
 
 應用以下步驟：
 
-1. 在&#x200B;**[!UICONTROL Data to extract]**&#x200B;視窗中按一下&#x200B;**[!UICONTROL Add]**。 在&#x200B;**[!UICONTROL Formula type]**&#x200B;視窗中，選取公式型別以輸入運算式。
+1. 在&#x200B;**[!UICONTROL Add]**&#x200B;視窗中按一下&#x200B;**[!UICONTROL Data to extract]**。 在&#x200B;**[!UICONTROL Formula type]**&#x200B;視窗中，選取公式型別以輸入運算式。
 
    有數種公式可供使用： **[!UICONTROL Field only]**、**[!UICONTROL Aggregate]**、**[!UICONTROL Expression]**。
 
-   選取&#x200B;**[!UICONTROL Process on an aggregate function]**&#x200B;和&#x200B;**[!UICONTROL Count]**。 按一下&#x200B;**[!UICONTROL Next]**。
+   選取&#x200B;**[!UICONTROL Process on an aggregate function]**&#x200B;和&#x200B;**[!UICONTROL Count]**。 按一下 **[!UICONTROL Next]**。
 
    ![](assets/query_editor_nveau_54.png)
 

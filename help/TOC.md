@@ -6,9 +6,9 @@ title: Campaign Classic v7 指南
 user-guide-description: Adobe Campaign Classic v7 產品文件。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 4d8c4ba846148d3df00a76ecc29375b9047c2b20
+source-git-commit: 11c81e4f04b978381d3803e2b60e23ed791eee44
 workflow-type: tm+mt
-source-wordcount: '2566'
+source-wordcount: '2567'
 ht-degree: 97%
 
 ---
@@ -30,8 +30,8 @@ ht-degree: 97%
    + [相容性對照表](rn/using/compatibility-matrix.md)
    + [檔案更新 — 隱藏](rn/using/documentation-updates.md)
 + 開始使用 {#getting-started}
-   + [開始使用 Adobe Campaign Classic &#x200B;](platform/using/about-adobe-campaign-classic.md)
-   + [啟動 Adobe Campaign &#x200B;](platform/using/launching-adobe-campaign.md)
+   + [開始使用 Adobe Campaign Classic ](platform/using/about-adobe-campaign-classic.md)
+   + [啟動 Adobe Campaign ](platform/using/launching-adobe-campaign.md)
    + [探索Campaign UI](platform/using/adobe-campaign-workspace.md)
    + [使用Campaign Explorer — 隱藏](platform/using/adobe-campaign-explorer.md)
    + [瀏覽及自訂清單 — 隱藏](platform/using/adobe-campaign-ui-lists.md)
@@ -87,10 +87,9 @@ ht-degree: 97%
       + [篩選選項](platform/using/filtering-options.md)
       + [建立篩選器](platform/using/creating-filters.md)
       + [使用案例](platform/using/use-case.md)
-   + 建立查詢 {#creating-queries}
-      + [關於 Campaign 中的查詢](platform/using/about-queries-in-campaign.md)
-      + [建立查詢的步驟](platform/using/steps-to-create-a-query.md)
-      + [定義篩選條件](platform/using/defining-filter-conditions.md)
+   + [在Campaign建立查詢](platform/using/about-queries-in-campaign.md)
+   + [建立查詢的步驟 — 隱藏](platform/using/steps-to-create-a-query.md)
+   + [定義篩選條件 — 隱藏](platform/using/defining-filter-conditions.md)
    + 權限 {#permissions}
       + [開始使用權限](platform/using/access-management.md)
       + [建立及管理操作者](platform/using/access-management-operators.md)
@@ -102,7 +101,7 @@ ht-degree: 97%
       + [與 Microsoft Dynamics 365 連結](platform/using/crm-ms-dynamics.md)
       + [與 Salesforce.com 連結](platform/using/crm-sfdc.md)
       + [與 CRM 同步資料](platform/using/crm-data-sync.md)
-   + [說明與支援選項](support.md)
+   + [說明與支援選項 — 隱藏](support.md)
 + 建立及傳送訊息 {#sending-messages}
    + [開始使用訊息](delivery/using/communication-channels.md)
    + [傳遞設定](delivery/using/delivery-settings.md)

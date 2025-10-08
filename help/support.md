@@ -4,11 +4,12 @@ title: Campaign Classic的說明與支援選項
 description: 需要Campaign Classic的支援嗎？ 您來對地方了！
 feature: Troubleshooting
 hidefromtoc: true
+hide: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
-source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
+source-git-commit: 11c81e4f04b978381d3803e2b60e23ed791eee44
 workflow-type: tm+mt
-source-wordcount: '657'
-ht-degree: 64%
+source-wordcount: '653'
+ht-degree: 68%
 
 ---
 
@@ -112,7 +113,7 @@ ht-degree: 64%
 
 ### SFTP 管理
 
-在「控制面板」中，您可以與所有連線至您可存取之 Campaign 執行個體的 SFTP 伺服器互動。 您可以監視其儲存容量、管理允許清單上的IP位址和公開SSH金鑰。 [按一下這裡](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html?lang=zh-Hant)以獲得更多資訊。
+在「控制面板」中，您可以與所有連線至您可存取之 Campaign 執行個體的 SFTP 伺服器互動。 您可以監視其儲存容量、管理允許清單上的IP位址和公開SSH金鑰。 [按一下這裡](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html)以獲得更多資訊。
 
 ### 子網域和憑證
 
@@ -133,7 +134,7 @@ ht-degree: 64%
 
 <img src="platform/using/assets/do-not-localize/icon-support.svg" width="60px">
 
-新的票證系統已透過[Adobe Admin Console](https://adminconsole.adobe.com/overview){_blank}啟動。 新系統要求每個使用者都需要有新的個別帳戶，並擁有正確的權限。 如果您發現無法使用 Adobe ID 登入，請透過 Experience League 申請存取權限，客戶服務團隊會盡快為您設定。 [了解更多](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html)
+新的票證系統已透過[Adobe Admin Console](https://adminconsole.adobe.com/overview){_blank}啟動。 新系統要求每個使用者都需要有新的個別帳戶，並擁有正確的權限。 如果您發現無法使用 Adobe ID 登入，請透過 Experience League 請求存取權限，客戶服務團隊會盡快為您設定。[了解更多](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html)
 
 ### 詢問專家！
 
@@ -147,4 +148,4 @@ ht-degree: 64%
 
 建立案例可讓您聯絡 Adobe 客戶支援團隊，瞭解您在 Adobe 產品上遇到的任何問題。為協助解決或疑難排解您的問題，您可使用 Adobe Admin Console 與 Adobe 客戶支援部門進行交談。
 
-若要在該新系統中記錄問題或啟動聊天工作階段，請連線至[Adobe Admin Console](https://adminconsole.adobe.com/overview){_blank}。 請依照[此頁面](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html){_blank}中說明的詳細過程進行操作。
+如要在該新系統中記錄問題或啟動聊天，請連結至 [Adobe Admin Console](https://adminconsole.adobe.com/overview){_blank}。請依照[本頁](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html){_blank}中說明的詳細過程進行操作。
