@@ -4,7 +4,7 @@ title: 個人化與隱私
 description: 瞭解隱私權與個人化的安全性最佳實務
 feature: Installation, Privacy, Privacy Tools, URL Personalization
 exl-id: 0a3473bf-0528-486d-a799-8db86fece522
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 192505e1c4d387de55ca18b578b837d237cc0607
 workflow-type: tm+mt
 source-wordcount: '805'
 ht-degree: 2%
@@ -25,9 +25,9 @@ ht-degree: 2%
 
 ### 建議
 
-若要驗證並確保您未使用上述功能，請透過[Campaign一般查詢編輯器](../../platform/using/steps-to-create-a-query.md)對追蹤URL表格執行查詢，或在[查詢活動](../../workflow/using/query.md)中建立具有篩選條件的工作流程。
+若要驗證並確保您未使用上述功能，請透過[Campaign一般查詢編輯器](../../platform/using/about-queries-in-campaign.md)對追蹤URL表格執行查詢，或在[查詢活動](../../workflow/using/query.md)中建立具有篩選條件的工作流程。
 
-例如：
+範例：
 
 1. 建立工作流程並新增&#x200B;**查詢**&#x200B;活動。 [了解更多](../../workflow/using/query.md)。
 
@@ -54,7 +54,7 @@ ht-degree: 2%
 
 如果您在19.1.4版本編號上執行，則可能會在使用追蹤連結或使用錨點標籤的推播通知傳送中遇到問題。 若是如此，建議您停用URL簽章。
 
-身為行銷活動託管、受管理的Cloud Service或混合型客戶，您必須聯絡[客戶服務](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html)以停用URL簽章。
+身為行銷活動託管、受管理的Cloud Services或混合型客戶，您必須聯絡[客戶服務](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html)以停用URL簽章。
 
 如果您在混合架構中執行Campaign，在啟用URL簽名之前，請確定已依下列方式升級代管的中間來源執行個體：
 
@@ -149,9 +149,9 @@ ht-degree: 2%
 
    >[!NOTE]
    >
-   >您可以使用`hasNamedRight('admin')`取代`$(loginId) = 0 or $(login) = 'admin'`，讓所有具有管理員許可權的使用者都能檢視這些密碼。
+   >您可以使用`$(loginId) = 0 or $(login) = 'admin'`取代`hasNamedRight('admin')`，讓所有具有管理員許可權的使用者都能檢視這些密碼。
 
-## 具有PI的Protect頁面
+## 使用PI保護頁面
 
 我們強烈建議內部部署客戶保護可能包含個人資訊(PI)的頁面，例如映象頁面、網頁應用程式等。
 

@@ -7,7 +7,7 @@ audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: c6dd2709-06e3-4227-bbec-99f3d80144fe
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 192505e1c4d387de55ca18b578b837d237cc0607
 workflow-type: tm+mt
 source-wordcount: '807'
 ht-degree: 2%
@@ -58,7 +58,7 @@ ht-degree: 2%
 
 您可以將篩選器套用至優惠方案目標。
 
-若要這麼做，請按一下&#x200B;**[!UICONTROL Edit query]**&#x200B;連結，並選取您要套用的篩選器。 （請參閱[此章節](../../platform/using/steps-to-create-a-query.md#step-4---filter-data)）。
+若要這麼做，請按一下&#x200B;**[!UICONTROL Edit query]**&#x200B;連結，並選取您要套用的篩選器。 請參閱[本節](../../platform/using/about-adobe-campaign-classic.md)。
 
 ![](assets/offer_eligibility_create_003.png)
 
@@ -66,7 +66,7 @@ ht-degree: 2%
 
 ![](assets/offer_eligibility_create_004.png)
 
-### 優惠方案權重 {#offer-weight}
+### 產品建議權重 {#offer-weight}
 
 若要讓引擎能夠決定目標符合資格的多個優惠方案，您必須為優惠方案指派一或多個權重。 如有需要，您也可以將篩選器套用至目標，或限制將套用權重的優惠方案空間。 較輕的優惠方案會偏好較重的優惠方案。
 
@@ -80,7 +80,7 @@ ht-degree: 2%
 
 若要在選件中建立權數，請套用下列步驟：
 
-1. 按一下&#x200B;**[!UICONTROL Add]**。
+1. 按一下 **[!UICONTROL Add]**。
 
    ![](assets/offer_weight_create_001.png)
 
@@ -131,7 +131,7 @@ ht-degree: 2%
    * **[!UICONTROL Title]** ：指定您想要顯示在選件中的標題。 警告：這並非指的是&#x200B;**[!UICONTROL General]**&#x200B;索引標籤中定義的選件標籤。
    * **[!UICONTROL Destination URL]** ：指定您選件的URL。 若要正確處理，其開頭必須是&quot;http://&quot;或&quot;https://&quot;。
    * **[!UICONTROL Image URL]** ：指定URL或選件影像的存取路徑。
-   * **[!UICONTROL HTML content]** / **[!UICONTROL Text content]** ：在想要的索引標籤中輸入優惠方案內文。 若要產生追蹤，**[!UICONTROL HTML content]**&#x200B;必須由可以包含在`<div>`型別專案中的HTML專案組成。 例如，HTML頁面中`<table>`元素的結果將如下所示：
+   * **[!UICONTROL HTML content]** / **[!UICONTROL Text content]** ：在想要的索引標籤中輸入優惠方案內文。 若要產生追蹤，**[!UICONTROL HTML content]**&#x200B;必須由可以包含在`<div>`型別元素中的HTML元素組成。 例如，HTML頁面中`<table>`元素的結果將如下：
 
    ```
       <div> 

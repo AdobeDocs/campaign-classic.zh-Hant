@@ -6,7 +6,7 @@ feature: Troubleshooting
 hidefromtoc: true
 hide: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
-source-git-commit: 11c81e4f04b978381d3803e2b60e23ed791eee44
+source-git-commit: 192505e1c4d387de55ca18b578b837d237cc0607
 workflow-type: tm+mt
 source-wordcount: '653'
 ht-degree: 68%
@@ -80,7 +80,7 @@ ht-degree: 68%
         <li><a href="delivery/using/understanding-quarantine-management.md">認識隔離管理</a></li>
         <li><a href="installation/using/get-started-security-privacy.md">安全性與隱私權檢查清單</a></li>
         <li><a href="platform/using/privacy-management.md">隱私權與同意管理</a></li>
-        <li><a href="platform/using/steps-to-create-a-query.md">設計查詢</a></li>
+        <li><a href="platform/using/about-queries-in-campaign.md">設計查詢</a></li>
         <li><a href="workflow/using/querying-recipient-table.md">查詢範例</a></li>
         <li><a href="workflow/using/building-a-workflow.md">建置工作流程</a></li>
         </ul>
@@ -113,7 +113,7 @@ ht-degree: 68%
 
 ### SFTP 管理
 
-在「控制面板」中，您可以與所有連線至您可存取之 Campaign 執行個體的 SFTP 伺服器互動。 您可以監視其儲存容量、管理允許清單上的IP位址和公開SSH金鑰。 [按一下這裡](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html?lang=zh-Hant)以獲得更多資訊。
+在「控制面板」中，您可以與所有連線至您可存取之 Campaign 執行個體的 SFTP 伺服器互動。 您可以監視其儲存容量、管理允許清單上的IP位址和公開SSH金鑰。 [按一下這裡](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html)以獲得更多資訊。
 
 ### 子網域和憑證
 
