@@ -9,7 +9,7 @@ topic-tags: profile-management
 exl-id: e1d0556a-6f30-4863-9025-eb9c1b8b53d3
 hide: true
 hidefromtoc: true
-source-git-commit: 221e2ccdaadf793212fcacdf5e13823f1505f4dc
+source-git-commit: d3a603bbb70dc63e72b6eed87a6503e155aff54e
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 29%
@@ -31,6 +31,7 @@ ht-degree: 29%
 >[!NOTE]
 >
 > * 若要顯示資料庫中所有收件者的清單，您必須建立檢視。 在[Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}中進一步瞭解。
+>
 > * 若要深入瞭解如何管理您的設定檔，請參閱[Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}。
 
 
