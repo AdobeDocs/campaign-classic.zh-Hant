@@ -87,7 +87,7 @@ Adobe Campaign可讓您以文字、CSV、TAB或XML格式，從一或多個檔案
 
    * **[!UICONTROL Do not update enumerations]**
 
-     選取此選項可避免擴充資料庫中的列舉值清單。 在&#x200B;**Adobe Campaign v8 （主控台）檔案**&#x200B;中進一步瞭解如何[使用分項清單](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}。
+     選取此選項可避免擴充資料庫中的列舉值清單。 在&#x200B;**Adobe Campaign v8 （主控台）檔案**&#x200B;中進一步瞭解如何[使用分項清單](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}。
 
 
 * **[!UICONTROL Variables]**&#x200B;索引標籤

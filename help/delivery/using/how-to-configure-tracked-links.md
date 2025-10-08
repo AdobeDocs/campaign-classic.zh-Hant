@@ -72,4 +72,4 @@ ht-degree: 10%
    * **[!UICONTROL Opt-out]** ：將此URL視為選擇退出或取消訂閱URL。
    * **[!UICONTROL Mirror page]** ：將此URL視為映象頁面URL。
 
-1. 此外，您可以在&#x200B;**[!UICONTROL Category]**&#x200B;欄的下拉式清單中，為每個追蹤的URL選取類別。 這些類別可以顯示報告，例如&#x200B;**[!UICONTROL URLs and click streams]** （請參閱[此區段](../../reporting/using/reports-on-deliveries.md#urls-and-click-streams)）。 類別是在特定分項清單中定義的。 在&#x200B;**Adobe Campaign v8 （主控台）檔案**&#x200B;中進一步瞭解如何[使用分項清單](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}。
+1. 此外，您可以在&#x200B;**[!UICONTROL Category]**&#x200B;欄的下拉式清單中，為每個追蹤的URL選取類別。 這些類別可以顯示報告，例如&#x200B;**[!UICONTROL URLs and click streams]** （請參閱[此區段](../../reporting/using/reports-on-deliveries.md#urls-and-click-streams)）。 類別是在特定分項清單中定義的。 在&#x200B;**Adobe Campaign v8 （主控台）檔案**&#x200B;中進一步瞭解如何[使用分項清單](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}。
