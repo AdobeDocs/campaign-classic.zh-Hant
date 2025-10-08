@@ -38,7 +38,7 @@ Campaign 使用者透過 Adobe 身分管理系統 (IMS)，使用其 Adobe ID 連
 
 若要設定Campaign Classic v7與Adobe Identity Management Service (IMS)的連線，請參閱[此頁面](../../integrations/using/about-adobe-id.md)。
 
-完成設定後，請在[Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/connect){target=_blank}中瞭解如何使用您的Adobe ID連線至Campaign。
+完成設定後，請在[Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/new/connect){target=_blank}中瞭解如何使用您的Adobe ID連線至Campaign。
 
 
 ### 使用登入/密碼連線
@@ -63,7 +63,7 @@ Campaign 使用者透過 Adobe 身分管理系統 (IMS)，使用其 Adobe ID 連
 
 ![](assets/s_ncs_user_connections_management.png)
 
-在[Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/connect#create-your-connection){target=_blank}中瞭解如何設定連線。
+在[Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/new/connect#create-your-connection){target=_blank}中瞭解如何設定連線。
 
 ## 操作者和許可 {#operators-and-permissions}
 
