@@ -6,9 +6,9 @@ title: Campaign Classic v7 指南
 user-guide-description: Adobe Campaign Classic v7 產品文件。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 89e350c727fb9379d28916f79d9749f22fd4974f
+source-git-commit: b4059e43d98643f0f8b5b3f68f03e10b755e8ba3
 workflow-type: tm+mt
-source-wordcount: '2561'
+source-wordcount: '2559'
 ht-degree: 99%
 
 ---
@@ -23,24 +23,22 @@ ht-degree: 99%
    + 先前版本 {#previous-releases}
       + [2024](rn/using/release-2024.md)
       + [2023](rn/using/release-2023.md)
-      + [2022](rn/using/release-2022.md)
-      + [2021 年](rn/using/release-2021.md)
-      + [[!DNL Gold Standard]](rn/using/gold-standard.md)
+      + [2022 — 隱藏](rn/using/release-2022.md)
+      + [2021 — 隱藏](rn/using/release-2021.md)
+      + [[!DNL Gold Standard - HIDDEN]](rn/using/gold-standard.md)
    + [已棄用功能](rn/using/deprecated-features.md)
    + [相容性對照表](rn/using/compatibility-matrix.md)
-   + [文件更新](rn/using/documentation-updates.md)
+   + [檔案更新 — 隱藏](rn/using/documentation-updates.md)
 + 開始使用 {#getting-started}
-   + 開始使用 Adobe Campaign {#starting-with-adobe-campaign}
-      + [開始使用 Adobe Campaign Classic &#x200B;](platform/using/about-adobe-campaign-classic.md)
-      + [啟動 Adobe Campaign &#x200B;](platform/using/launching-adobe-campaign.md)
-      + Adobe Campaign 工作區{#campaign-workspace}
-         + [開始使用 Campaign UI](platform/using/adobe-campaign-workspace.md)
-         + [使用 Campaign 探索工具](platform/using/adobe-campaign-explorer.md)
-         + [瀏覽及自訂清單](platform/using/adobe-campaign-ui-lists.md)
-         + [分項清單](platform/using/managing-enumerations.md)
-      + [Campaign 連接器](platform/using/about-connectors.md)
-      + 常見問題集 {#faq}
-         + [最常見的問題](platform/using/common-questions.md)
+   + [開始使用 Adobe Campaign Classic ](platform/using/about-adobe-campaign-classic.md)
+   + [啟動 Adobe Campaign ](platform/using/launching-adobe-campaign.md)
+   + [開始使用 Campaign UI](platform/using/adobe-campaign-workspace.md)
+   + [使用Campaign Explorer — 隱藏](platform/using/adobe-campaign-explorer.md)
+   + [瀏覽及自訂清單 — 隱藏](platform/using/adobe-campaign-ui-lists.md)
+   + [分項清單 — 隱藏](platform/using/managing-enumerations.md)
+   + [Campaign 連接器](platform/using/about-connectors.md)
+   + 常見問題集 {#faq}
+      + [最常見的問題](platform/using/common-questions.md)
          + [全域概念](platform/using/faq-key-concepts.md)
          + [版本編號升級](platform/using/faq-build-upgrade.md)
          + [隱私權](platform/using/privacy-faq.md)
@@ -51,16 +49,15 @@ ht-degree: 99%
          + [設定](platform/using/faq-campaign-config.md)
          + [報告](platform/using/faq-reporting.md)
          + [開發](platform/using/faq-developers.md)
-         + [教學課程](platform/using/tutorials.md)
-      + [字彙](platform/using/ac-glossary.md)
-      + 隱私權 {#privacy}
-         + [隱私權與同意](platform/using/privacy-and-recommendations.md)
-         + [隱私權管理](platform/using/privacy-management.md)
-         + 隱私權請求 {#privacy-requests}
-            + [關於隱私權請求](platform/using/privacy-requests.md)
-            + [建立及管理隱私權請求](platform/using/privacy-requests-ui.md)
-            + [自動隱私權請求流程](platform/using/privacy-requests-api.md)
-         + [選擇退出個人資訊銷售](platform/using/privacy-requests-ccpa.md)
+   + [字彙](platform/using/ac-glossary.md)
+   + 隱私權 {#privacy}
+      + [隱私權與同意](platform/using/privacy-and-recommendations.md)
+      + [隱私權管理](platform/using/privacy-management.md)
+      + 隱私權請求 {#privacy-requests}
+         + [關於隱私權請求](platform/using/privacy-requests.md)
+         + [建立及管理隱私權請求](platform/using/privacy-requests-ui.md)
+         + [自動隱私權請求流程](platform/using/privacy-requests-api.md)
+      + [選擇退出個人資訊銷售](platform/using/privacy-requests-ccpa.md)
    + 輪廓管理 {#profile-management}
       + [關於輪廓](platform/using/about-profiles.md)
       + [編輯輪廓](platform/using/editing-a-profile.md)

@@ -5,9 +5,11 @@ description: 本頁列出了 Adobe Campaign Classic 文件中的所有新功能�
 feature: Release Notes
 role: User
 level: Beginner
+hide: true
+hidefromtoc: true
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: b8a6a0db27826309456c285c08d4f1d85de70283
-workflow-type: ht
+source-git-commit: b4059e43d98643f0f8b5b3f68f03e10b755e8ba3
+workflow-type: tm+mt
 source-wordcount: '3864'
 ht-degree: 100%
 
@@ -284,7 +286,7 @@ Campaign Classic 的「說明與支援選項」頁面已整合至核心文件。
 
 「Adobe Campaign 增強型 MTA」部分已移至[此處](../../delivery/using/sending-with-enhanced-mta.md)。
 
-已新增頁面，以提供[!DNL Campaign Classic]中追蹤功能的概述。 [顯示全文](../../delivery/using/about-message-tracking.md)
+已新增頁面，以提供[!DNL Campaign Classic]中追蹤功能的概觀。 [顯示全文](../../delivery/using/about-message-tracking.md)
 
 已新增疑難排解部分，用以協助您解決與追蹤相關的常見問題。 [顯示全文](../../delivery/using/tracking-troubleshooting.md)
 
@@ -302,7 +304,7 @@ Campaign Classic 的「說明與支援選項」頁面已整合至核心文件。
 
 Oracle On Demand API 現在已不再作為與 Campaign 連接的 CRM。[顯示全文](../../rn/using/deprecated-features.md)。
 
-在[此處](../../production/using/locate-tomcat-version.md)了解如何確定 Adobe Campaign 執行個體中使用之內嵌 Tomcat Web Servlet 的目前版本。
+在[此處](../../production/using/locate-tomcat-version.md)了解如何確定 Adobe Campaign 執行個體中使用之嵌入 Tomcat Web Servlet 的目前版本。
 
 已將技術工作流程清單及其相關聯套件增強並集中至單一頁面。[顯示全文](../../workflow/using/about-technical-workflows.md)
 
@@ -438,7 +440,7 @@ Android 的推播通知改善 - [閱讀更多資訊](../../delivery/using/config
 
 已將有關如何使用增量查詢以自動更新清單的使用案例新增至工作流使用案例中。[顯示全文](../../workflow/using/about-workflow-use-cases.md)
 
-已重新整理[發行說明](../../rn/using/latest-release.md)：已新增[概述頁面](../../rn/using/latest-release.md)，其中包含有關建置狀態、升級流程、建議和重要連結資訊。此外，也新增了 [[!DNL Gold Standard]  發行版本](../../rn/using/gold-standard.md)專屬頁面，並整合[相容性矩陣](../../rn/using/compatibility-matrix.md)。
+已重新整理[發行說明](../../rn/using/latest-release.md)：已新增[概觀頁面](../../rn/using/latest-release.md)，其中包含有關建置狀態、升級流程、建議和重要連結資訊。此外，也新增了 [[!DNL Gold Standard]  發行版本](../../rn/using/gold-standard.md)專屬頁面，並整合[相容性矩陣](../../rn/using/compatibility-matrix.md)。
 
 新增了與 Campaign Classic 監視相關的准則。[顯示全文](../../production/using/monitoring-guidelines.md)
 
@@ -446,7 +448,7 @@ Android 的推播通知改善 - [閱讀更多資訊](../../delivery/using/config
 
 已更新 Campaign Classic 頁面的「隱私權管理」，其中包含「規範」欄位資訊，當您使用 API 允許設定自動隱私權要求流程時，便可使用此欄位。[深入了解](https://helpx.adobe.com/ie/campaign/kb/acc-privacy.html#ManagingPrivacyRequests)
 
-「隱私權管理概覽」頁面已更新，其中加入泰國個人資料保護法 (PDPA) 與巴西 Lei Geral de Proteção de Dados (LGPD) 的相關資訊。[深入了解](../../platform/using/privacy-and-recommendations.md)
+「隱私權管理概觀」頁面已更新，其中加入泰國個人資料保護法 (PDPA) 與巴西 Lei Geral de Proteção de Dados (LGPD) 的相關資訊。[深入了解](../../platform/using/privacy-and-recommendations.md)
 
 已將資訊新增至子工作流程記錄和行為中，以防發生錯誤。[顯示全文](../../workflow/using/sub-workflow.md)
 

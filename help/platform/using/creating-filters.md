@@ -2,21 +2,15 @@
 product: campaign
 title: 建立篩選器
 description: 建立篩選器
-feature: Profiles
-badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
-audience: platform
-content-type: reference
-topic-tags: filtering-data
 exl-id: 58e54f67-dc87-42f1-8426-6f801e8e4fb6
-source-git-commit: 813ef65ff45407a92c5f9d7f3d07189972a5742b
+source-git-commit: b4059e43d98643f0f8b5b3f68f03e10b755e8ba3
 workflow-type: tm+mt
-source-wordcount: '166'
+source-wordcount: '158'
 ht-degree: 3%
 
 ---
 
 # 建立篩選器{#creating-filters}
-
 
 資料篩選是選取資料集的較小部分（僅限符合特定條件的記錄）並將該子集用於特定動作（更新、建立對象）或分析的程式。
 
@@ -28,7 +22,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->若要進一步瞭解篩選器及其使用方式，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/audience/create-audiences/create-filters){target=_blank}。
+>若要進一步瞭解篩選器及其使用方式，請參閱[Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-audiences/create-filters){target=_blank}。
 
 
 <!--
