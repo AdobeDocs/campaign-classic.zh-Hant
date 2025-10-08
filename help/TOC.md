@@ -30,8 +30,8 @@ ht-degree: 99%
    + [相容性對照表](rn/using/compatibility-matrix.md)
    + [檔案更新 — 隱藏](rn/using/documentation-updates.md)
 + 開始使用 {#getting-started}
-   + [開始使用 Adobe Campaign Classic ](platform/using/about-adobe-campaign-classic.md)
-   + [啟動 Adobe Campaign ](platform/using/launching-adobe-campaign.md)
+   + [開始使用 Adobe Campaign Classic &#x200B;](platform/using/about-adobe-campaign-classic.md)
+   + [啟動 Adobe Campaign &#x200B;](platform/using/launching-adobe-campaign.md)
    + [開始使用 Campaign UI](platform/using/adobe-campaign-workspace.md)
    + [使用Campaign Explorer — 隱藏](platform/using/adobe-campaign-explorer.md)
    + [瀏覽及自訂清單 — 隱藏](platform/using/adobe-campaign-ui-lists.md)
