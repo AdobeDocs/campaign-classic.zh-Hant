@@ -281,4 +281,4 @@ Campaign Classic介面可讓您使用預先定義的&#x200B;**檢視**&#x200B;�
 
 ![](assets/workflow-monitoring-filter.png)
 
-如需篩選器的詳細資訊，請參閱[Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}。
+如需篩選器的詳細資訊，請參閱[Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/audience/create-filters){target=_blank}。
