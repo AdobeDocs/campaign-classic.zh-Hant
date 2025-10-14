@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: f0d884ae-0789-4ad9-a8fa-adeffbb560ea
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '828'
-ht-degree: 96%
+source-wordcount: '839'
+ht-degree: 91%
 
 ---
 
@@ -63,13 +63,13 @@ Adobe Campaign 提供一套工具，以協助您遵循隱私權法規（GDPR、C
 
 請閱讀[本小節](../../platform/using/adobe-campaign-workspace.md)，瞭解更多 Adobe Campaign 工作區基本知識。
 
-![](assets/do-not-localize/how-to-video.png) [在影片中探索行銷活動工作區](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/getting-started/exploring-the-adobe-campaign-classic-user-interface.html?lang=zh-Hant)
+![](assets/do-not-localize/how-to-video.png) [在影片中探索行銷活動工作區](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/getting-started/exploring-the-adobe-campaign-classic-user-interface.html)
 
 ## 如何選取訊息的對象？ {#how-can-i-select-the-target-population-of-my-messages-}
 
 透過 Adobe Campaign，您可以使用不同策略來建立客群，並選取收件者。
 
-[按一下這裡以瞭解更多](../../delivery/using/steps-defining-the-target-population.md)。
+按一下這裡以在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#target-population){target="_blank"}中進一步瞭解。
 
 ## 什麼是工作流程？ {#what-is-a-workflow-}
 
@@ -77,15 +77,15 @@ Adobe Campaign 的工作流程包含跨應用程式伺服器的不同模組策�
 
 例如，您可以使用工作流程從伺服器下載檔案、解壓縮，然後將其中的記錄匯入 Adobe Campaign 資料庫。
 
-此外，工作流程也涉及到要進行通知的一或多個操作者，或者是可以選擇並核准流程的相關人員。如此一來就可以實行傳遞行動，將任務指派給一或多位操作者，指定目標且在傳遞前進行核准。
+此外，工作流程也涉及到要進行通知的一或多個操作者，或者是可以選擇並核准流程的相關人員。如此一來，就可以在開始傳送前建立傳送動作、指派任務給一位或多位操作員來處理內容、指定目標以及核准校樣。
 
-[按一下協瞭解更多](../../workflow/using/about-workflows.md)工作流程。您也可以閱讀[工作流程最佳實務](../../workflow/using/building-a-workflow.md)。
+[按一下協瞭解更多](../../workflow/using/about-workflows.md)工作流程。您也可以閱讀[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=zh-Hant){target="_blank"}中的工作流程最佳實務。
 
 ## 如何建立並傳送第一封電子郵件？ {#how-to-create-and-send-a-first-email-}
 
 [按一下這裡以瞭解更多](../../delivery/using/about-email-channel.md)。
 
-![](assets/do-not-localize/how-to-video.png) [在影片中探索此內容](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/getting-started/creating-a-campaign-and-an-email.html?lang=zh-Hant)
+![](assets/do-not-localize/how-to-video.png) [在影片中探索此內容](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/getting-started/creating-a-campaign-and-an-email.html)
 
 ## 如何傳送 SMS 訊息？ {#how-to-send-sms-messages-}
 
@@ -93,7 +93,7 @@ Adobe Campaign 的工作流程包含跨應用程式伺服器的不同模組策�
 
 ## 如何傳送推播通知？ {#how-to-send-push-notifications-}
 
-瞭解如何使用 Adobe Campaign 透過應用程式[將個人化推播通知傳送](../../delivery/using/create-notifications-ios.md)至 iOS 和 Android 裝置。
+在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push.html){target="_blank"}中瞭解如何使用Adobe Campaign來傳送個人化推播通知。
 
 ## 如何設計和分享線上意見調查？ {#how-to-design-and-share-an-online-survey-}
 
@@ -131,6 +131,6 @@ Adobe 會持續評估產品功能，不斷使用更強大的版本進行替換�
 
 ## 是否發行新的文件更新和說明材料？ {#are-there-new-documentation-updates-and-help-materials-released-}
 
-在[本頁面中](https://experienceleague.adobe.com/docs/campaign-classic/using/documentation-updates.html?lang=zh-Hant)列出最新的 Campaign Classic 文件更新。
+在[本頁面中](https://experienceleague.adobe.com/docs/campaign-classic/using/documentation-updates.html)列出最新的 Campaign Classic 文件更新。
 
 您也可以參照[本頁面中](https://helpx.adobe.com/tw/campaign/kb/article-list.html)列出之最新的技術附註。

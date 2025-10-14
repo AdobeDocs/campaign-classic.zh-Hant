@@ -10,9 +10,9 @@ topic-tags: creating-queries
 hide: true
 hidefromtoc: true
 exl-id: b62e23e5-f1b7-44c4-82d9-95c6b3240352
-source-git-commit: 11c81e4f04b978381d3803e2b60e23ed791eee44
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '3304'
+source-wordcount: '3307'
 ht-degree: 34%
 
 ---
@@ -292,7 +292,7 @@ ht-degree: 34%
 
   您可以使用欄的來源值，並為它指定目標值。 此目的地值將顯示在新的輸出欄中。
 
-  有新增計算欄位型別&#x200B;**[!UICONTROL Enumerations]**&#x200B;的範例可用，請參閱[本區段](../../workflow/using/adding-enumeration-type-calculated-field.md)。
+  有新增計算欄位型別&#x200B;**[!UICONTROL Enumerations]**&#x200B;的範例可用，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/adding-enumeration-type-calculated-field.html){target="_blank"}。
 
   ![](assets/query_editor_nveau_63.png)
 

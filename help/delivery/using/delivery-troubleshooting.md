@@ -6,9 +6,9 @@ badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v
 feature: Monitoring, Deliverability, Troubleshooting
 role: User
 exl-id: 37b1d7fb-7ceb-4647-9aac-c8a80495c5bf
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '801'
+source-wordcount: '809'
 ht-degree: 1%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 1%
 
 * 有些電子郵件提供者可能會將您的IP位址新增至封鎖清單。 在此情況下，請檢查您的broadlogs並參閱[此區段](about-deliverability.md)。
 
-* 您的傳送可能太大而無法快速處理，這可能與JavaScript高度個人化或傳送超過60KB有關。 請參閱Adobe Campaign [傳遞最佳實務](delivery-best-practices.md)，瞭解內容指導方針。
+* 您的傳送可能太大而無法快速處理，這可能與JavaScript高度個人化或傳送超過60KB有關。 請參閱Adobe Campaign v8 [傳遞最佳實務](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html){target="_blank"}。  以深入瞭解內容指南。
 
 * 節流可能發生在Adobe Campaign MTA中。 原因如下：
 
@@ -45,7 +45,7 @@ ht-degree: 1%
 
 如果傳送未在確切排程日期執行，這可能與伺服器時區之間的差異有關。 中間來源執行個體和生產執行個體可能位於不同的時區。
 
-例如，如果中間來源執行個體在布里斯班時區，而生產執行個體在達爾文時區，兩個時區彼此相隔半小時，則在稽核記錄中，您會清楚地看到，如果排程在11:56進行生產的傳送，則排程為中間進行的相同傳送將為12:26，其差異為半小時。
+例如，如果中間來源執行個體在布里斯班時區，而生產執行個體在達爾文時區，兩個時區彼此相隔半小時，則在稽核記錄中，您會清楚地看到，如果排程在11:56進行生產的傳送，則排程為mid的相同傳送將在12:26，其差異為半小時。
 
 ## 失敗狀態 {#failed-status}
 
@@ -59,9 +59,9 @@ ht-degree: 1%
   Error while compiling script 'content htmlContent' line X: `[table]` is not defined. JavaScript: error while evaluating script 'content htmlContent
   ```
 
-  此問題的原因幾乎永遠是HTML內的個人化，嘗試呼叫尚未定義或對應到上游目標定位或傳送目標對應的表格或欄位。
+  此問題的原因幾乎永遠是HTML中的個人化，嘗試呼叫尚未定義或對應到上游目標定位或傳送目標對應的表格或欄位。
 
-  若要修正此問題，需要檢閱工作流程和傳遞內容，以明確決定哪些個人化嘗試呼叫相關表格，以及表格是否可以對應。 從那裡，在HTML中移除對此表格的呼叫或修正傳遞的對映將是解析的路徑。
+  若要修正此問題，需要檢閱工作流程和傳遞內容，以明確決定哪些個人化嘗試呼叫相關表格，以及表格是否可以對應。 從那裡，在HTML中移除對此表格的呼叫或修正傳遞的對應將是解析的路徑。
 
 * 在中間來源部署模型中，傳遞記錄中可能會顯示以下訊息：
 
@@ -73,7 +73,7 @@ ht-degree: 1%
 
   若要解決此問題，建議對資料庫執行真空並重新索引。 如需資料庫維護的詳細資訊，請參閱[本節](../../production/using/recommendations.md)。
 
-  您也應該重新啟動所有具有已排程活動的工作流程，以及所有處於失敗狀態的工作流程。 請參閱[本節](../../workflow/using/scheduler.md)。
+  您也應該重新啟動所有具有已排程活動的工作流程，以及所有處於失敗狀態的工作流程。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html){target="_blank"}。
 
 * 傳送失敗時，傳送記錄檔中可能會出現下列錯誤：
 
@@ -83,7 +83,7 @@ ht-degree: 1%
 
   通常，此錯誤表示電子郵件中有收件者的多個值之個人化欄位或區塊。 個人化區塊正在使用中，且正在為特定收件者擷取多個記錄。
 
-  若要解決此問題，請檢查使用的個人化資料，然後檢查目標，找出具有超過其中一個欄位專案的收件者。 您也可以在傳遞活動之前的目標工作流程中使用&#x200B;**[!UICONTROL Deduplication]**&#x200B;活動，以檢查一次只有一個個人化欄位。 如需重複資料刪除的詳細資訊，請參閱[此頁面](../../workflow/using/deduplication.md)。
+  若要解決此問題，請檢查使用的個人化資料，然後檢查目標，找出具有超過其中一個欄位專案的收件者。 您也可以在傳遞活動之前的目標工作流程中使用&#x200B;**[!UICONTROL Deduplication]**&#x200B;活動，以檢查一次只有一個個人化欄位。 如需重複資料刪除的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/deduplication.html){target="_blank"}。
 
 * 部分傳送可能會因為「無法聯絡」錯誤而失敗，並指出：
 

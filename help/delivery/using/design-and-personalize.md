@@ -8,16 +8,16 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 5bf727d2-83b1-4a99-be25-041eee8d234c
-source-git-commit: aa78a51ebea49f98ef7edad7e87a99a680f02b69
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1287'
-ht-degree: 4%
+source-wordcount: '1307'
+ht-degree: 3%
 
 ---
 
 # 建置個人化內容 {#build-personalized-content}
 
-在設計訊息內容時，請儘量避免可能會使您無法執行傳送的常見問題。 大多數時候，可能的錯誤與[個人化](about-personalization.md)、[格式](defining-the-email-content.md#message-content)和[影像](defining-the-email-content.md#adding-images)有關。
+在設計訊息內容時，請儘量避免可能會使您無法執行傳送的常見問題。 大多數時候，可能的錯誤與[個人化](about-personalization.md)、[格式](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#message-content){target="_blank"}和[影像](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#adding-images){target="_blank"}有關。
 
 ## 最佳化個人化 {#optimize-personalization}
 
@@ -58,7 +58,7 @@ ht-degree: 4%
 
 ### 主旨列
 
-處理[主旨列](defining-the-email-content.md#message-content)以改善開啟率：
+瞭解[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#sender){target="_blank"}中的主旨行以提高開啟率：
 
 * 避免主題過長。 最多使用50個字元
 
@@ -76,7 +76,7 @@ ht-degree: 4%
 
 **秘訣**：因為人因錯誤永遠可能發生，在您每次傳送前，請先檢查選擇退出連結是否正常運作。 例如，傳送校樣時，請確定連結有效、表單線上上，且「不再聯絡此收件者」欄位已變更為「是」。
 
-瞭解如何在本節[&#128279;](personalization-blocks.md#personalization-blocks-example)中插入選擇退出連結。
+瞭解如何在本節[中插入選擇退出連結](personalization-blocks.md#personalization-blocks-example)。
 
 ### 電子郵件大小
 
@@ -96,8 +96,8 @@ ht-degree: 4%
 
 根據預設，SMS中的字元數量符合GSM（行動通訊全球系統）標準。 使用 GSM 編碼的簡訊訊息最多只能有 160 個字元，若是以多個部分傳送的訊息，則每個簡訊的簡訊訊息最多只能有 153 個字元。
 
-音譯包括當GSM標準未考慮到SMS的一個字元時，用另一個字元取代該字元。 請注意，將個人化欄位插入您的SMS訊息內容，可能會引入GSM編碼未考慮的字元。 您可以核取對應&#x200B;**[!UICONTROL External account]**&#x200B;的SMPP通道設定索引標籤中對應的方塊，以授權字母音譯。
-在本節[&#128279;](sms-set-up.md#creating-an-smpp-external-account)瞭解更多。
+音譯包括當GSM標準未考慮到SMS的一個字元時，用另一個字元取代該字元。 請注意，將個人化欄位插入您的SMS訊息內容，可能會引入GSM編碼未考慮的字元。 您可以核取對應&#x200B;**[!UICONTROL External account]**的SMPP通道設定索引標籤中對應的方塊，以授權字母音譯。
+在本節[瞭解更多](sms-set-up.md#creating-an-smpp-external-account)。
 
 **提示**：
 
@@ -105,7 +105,7 @@ ht-degree: 4%
 
 * 不過，如果您的SMS訊息包含許多GSM標準未考慮的字元，請啟用音譯以限制傳送訊息的成本。
 
-在本節[&#128279;](sms-set-up.md#about-character-transliteration)瞭解更多。
+在本節[瞭解更多](sms-set-up.md#about-character-transliteration)。
 
 ## 處理格式設定 {#formatting}
 
@@ -113,15 +113,15 @@ ht-degree: 4%
 
 * 更正&#x200B;**日期格式**： Adobe Campaign為JavaScript範本和XSL樣式表提供日期格式功能。 [了解更多](formatting.md#date-display)
 
-* 在電子郵件中使用&#x200B;**授權字元**：電子郵件地址的有效字元清單定義於「XtkEmail_Characters」選項。 在本節[&#128279;](../../installation/using/configuring-campaign-options.md)中瞭解如何存取Campaign選項。 若要正確處理特殊字元，Adobe Campaign必須安裝在Unicode中。
+* 在電子郵件中使用&#x200B;**授權字元**：電子郵件地址的有效字元清單定義於「XtkEmail_Characters」選項。 在本節[中瞭解如何存取Campaign選項](../../installation/using/configuring-campaign-options.md)。 若要正確處理特殊字元，Adobe Campaign必須安裝在Unicode中。
 
-* **電子郵件驗證**&#x200B;的設定：請確定電子郵件標頭包含DKIM簽章。 DKIM （網域金鑰識別郵件）驗證可讓接收電子郵件伺服器驗證訊息是否確實是由其聲稱傳送訊息的個人或實體所傳送，以及訊息內容在最初傳送時間（和DKIM「簽署」）與接收時間之間是否有變更。 此標準通常使用寄件者或寄件者標題中的網域。 如需詳細資訊，請參閱[Adobe傳遞能力最佳實務指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=zh-Hant#authentication)。
+* **電子郵件驗證**&#x200B;的設定：請確定電子郵件標頭包含DKIM簽章。 DKIM (Domain Keys Identified Mail)驗證可讓接收電子郵件伺服器驗證訊息是否的確是由其聲稱傳送訊息的人員或實體傳送，以及訊息內容在最初傳送時間(和DKIM「簽署」)與接收時間之間是否曾變更。 此標準通常使用寄件者或寄件者標題中的網域。 如需詳細資訊，請參閱[Adobe傳遞能力最佳實務指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication)。
 
 ### 回應式電子郵件設計
 
 回應式設計可確保電子郵件以最佳方式呈現開啟所在裝置的內容。
 
-* 使用回應式電子郵件HTML，而不是網頁HTML
+* 使用回應式電子郵件HTML，而非網頁HTML
 
 * 使用預覽模式和傳送校樣，以測試儘可能多的裝置上的轉譯
 
@@ -151,14 +151,14 @@ ht-degree: 4%
 
 * 您可以檢查執行處理組態是否可啟用公用資源管理。 [了解更多](../../installation/using/deploying-an-instance.md#managing-public-resources)
 
-* 從傳遞小幫手，您可以匯入包含影像的HTML頁面，或透過&#x200B;**[!UICONTROL Image]**&#x200B;圖示直接使用HTML編輯器插入影像。 [了解更多](defining-the-email-content.md#adding-images)
+* 從傳遞小幫手，您可以匯入包含影像的HTML頁面，或透過&#x200B;**[!UICONTROL Image]**&#x200B;圖示直接使用HTML編輯器插入影像。 在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#adding-images){target="_blank"}中瞭解更多。
 
 * 如果未顯示影像，請檢查伺服器上是否有這些影像。 若要這麼做，請按一下傳送中的Source標籤。 尋找您的影像，並在網頁瀏覽器中複製並貼上每個影像的URL。 如果未顯示影像，請聯絡您的IT管理員或提供傳送內容的協力廠商廠商。
 
 ## 預覽您的訊息 {#preview-msg}
 
-Adobe建議預覽您的訊息，以檢查其個人化傾向以及收件者看到您傳遞內容的方式。
+Adobe建議預覽您的訊息，以檢查其個人化情況，以及收件者看到您傳遞內容的方式。
 
-* 在傳遞助理中，**[!UICONTROL Preview]**&#x200B;子索引標籤可讓您檢視每個收件者的內容轉譯。 個人化欄位和內容的條件元素會取代為所選設定檔的對應資訊。 [了解更多](defining-the-email-content.md#message-content)
+* 在傳遞助理中，**[!UICONTROL Preview]**&#x200B;子索引標籤可讓您檢視每個收件者的內容轉譯。 個人化欄位和內容的條件元素會取代為所選設定檔的對應資訊。 在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#message-content){target="_blank"}中瞭解更多。
 
 * 每次預覽期間都會執行自動反垃圾郵件檢查。 在&#x200B;**[!UICONTROL Preview]**&#x200B;子索引標籤中，檢查[SpamAssassin](spamassassin.md)垃圾郵件評分。  按一下&#x200B;**[!UICONTROL More...]**&#x200B;以進一步瞭解警告。  在執行此操作之前，請確定Adobe Campaign應用程式伺服器上已正確安裝和設定SpamAssassin。 [了解更多](../../installation/using/configuring-spamassassin.md)

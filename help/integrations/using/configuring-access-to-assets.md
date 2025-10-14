@@ -8,9 +8,9 @@ audience: integrations
 content-type: reference
 topic-tags: asset-sharing
 exl-id: f3897a40-b080-47e5-9e31-4d861c1bacd5
-source-git-commit: b11185da8236d6100d98eabcc9dc1cf2cffa70af
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '499'
 ht-degree: 2%
 
 ---
@@ -23,14 +23,14 @@ ht-degree: 2%
 >
 >這些整合是並行的。 在進行任何設定前，請仔細閱讀下列資訊。
 
-* 與&#x200B;**Experience CloudAssets**&#x200B;整合：此整合可讓您從Adobe Experience Cloud資料庫插入影像。 必須在Adobe Campaign中安裝&#x200B;**[!UICONTROL Integration with the Adobe Experience Cloud]**&#x200B;內建套件，以設定此整合。
+* 與&#x200B;**Experience Cloud Assets**&#x200B;整合：此整合可讓您從Adobe Experience Cloud資料庫插入影像。 必須在Adobe Campaign中安裝&#x200B;**[!UICONTROL Integration with the Adobe Experience Cloud]**&#x200B;內建套件，以設定此整合。
 * 與&#x200B;**AEM Assets**&#x200B;整合：此整合可讓您從Adobe Experience Manager Assets資料庫插入影像。 必須在Adobe Campaign中安裝&#x200B;**[!UICONTROL AEM Integration]**&#x200B;內建套件，以設定此整合。 請注意，從Adobe Experience Manager 6.4開始，將不再提供這項整合。
 
 >[!NOTE]
 >
 >如果已安裝兩個套件（**[!UICONTROL AEM Integration]**&#x200B;和&#x200B;**[!UICONTROL Integration with the Adobe Experience Cloud]** ），則只能使用Adobe Experience Cloud資料庫中可用的資產。
 
-## 整合Experience CloudAssets {#integrating-with-experience-cloud-assets}
+## 與Experience Cloud Assets整合 {#integrating-with-experience-cloud-assets}
 
 若要使用Adobe Campaign與Experience Cloud Assets之間的整合，您必須擁有：
 
@@ -51,7 +51,7 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->此功能已從Adobe Experience Manager 6.4開始停用。[深入瞭解](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html?lang=zh-Hant#removed-features)
+>此功能已從Adobe Experience Manager 6.4開始停用。[深入瞭解](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html#removed-features)
 
 若要將AEM Assets與Adobe Campaign整合，您必須先設定Adobe Experience Manager與Adobe Campaign之間的整合。 此設定主要需要：
 
@@ -62,14 +62,14 @@ ht-degree: 2%
 
 設定這項整合後，您可以在Adobe Campaign中設定新的傳遞範本，以使用AEM Assets資料庫。 要執行此操作，請遵循下列步驟：
 
-1. 建立新的傳遞範本，或複製現有範本。 如需傳遞範本的詳細資訊，請參閱[此頁面](../../delivery/using/about-templates.md)。
+1. 建立新的傳遞範本，或複製現有範本。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}。
 1. 編輯此範本的&#x200B;**屬性**。
 1. 在&#x200B;**[!UICONTROL Advanced]**&#x200B;索引標籤中，將&#x200B;**[!UICONTROL Content editing mode]**&#x200B;設定為&#x200B;**DCE**。
 1. 選取存取AEM Assets資料庫所需的外部&#x200B;**[!UICONTROL AEM account]**。
 
    ![](assets/dam_aem_assets1.png)
 
-當您根據此範本將影像插入傳遞的內容時，**[!UICONTROL Select a shared asset]**&#x200B;選項將可讓您瀏覽AEM Assets資料庫中的影像。 若要了解詳細資訊，請參閱[本章節](../../integrations/using/inserting-a-shared-asset.md)。
+當您根據此範本將影像插入傳遞的內容時，**[!UICONTROL Select a shared asset]**&#x200B;選項將可讓您瀏覽AEM Assets資料庫中的影像。 若要了解更多資訊，請參閱[此區段](../../integrations/using/inserting-a-shared-asset.md)。
 
 >[!NOTE]
 >

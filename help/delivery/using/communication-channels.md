@@ -5,9 +5,9 @@ description: 建立傳遞，以在不同通道上傳送個人化訊息。
 feature: Cross Channel Orchestration, Email, SMS, In App, Direct Mail, Push
 role: User
 exl-id: 92b5e013-b619-4f0b-b0b1-1fc2e653ceac
-source-git-commit: 89e350c727fb9379d28916f79d9749f22fd4974f
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '943'
+source-wordcount: '947'
 ht-degree: 14%
 
 ---
@@ -18,28 +18,26 @@ ht-degree: 14%
 
 核心功能包括目標定位、定義及個人化訊息、通訊執行及相關的營運報告。
 
-做為Campaign v8促銷活動的一部分，Campaign Classic檔案已重新整理。 現在僅可在Campaign v8檔案集中使用常見功能。
-
-
+作為從Campaign v7轉變到v8的一部分，Campaign Classic檔案集已簡化並重新組織。 Campaign v8檔案集中現在提供常見功能。
 
 >[!BEGINTABS]
 
 >[!TAB 通訊通道檔案]
 
-若要深入瞭解通訊管道，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html?lang=zh-Hant){target=_blank}。
+若要深入瞭解通訊管道，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html){target=_blank}。
 
 
-[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html?lang=zh-Hant){target=_blank}
+[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html){target=_blank}
 
 
 >[!TAB 傳遞內容與對象]
 
-在Campaign v8檔案中瞭解與傳送建立、內容和對象相關的重要步驟：
+在Campaign v8檔案&#x200B;**中瞭解與傳遞建立、內容及對象**&#x200B;相關的關鍵步驟：
 
-* [建立傳遞](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hant#create-the-delivery){target="_blank"}：瞭解如何建立單次傳遞。
-* [定義內容](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hant#content-of-the-delivery){target="_blank"}：設定每個頻道專屬的傳遞內容。
-* [指定對象](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hant#target-population){target="_blank"}：定義幾種目標型別：主要對象、證明目標、種子地址和控制群組。
-* [使用傳遞範本](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=zh-Hant){target="_blank"}：瞭解如何定義範本，以方便傳遞建立。
+* [建立傳遞](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#create-the-delivery){target="_blank"}：瞭解如何建立單次傳遞。
+* [定義內容](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#content-of-the-delivery){target="_blank"}：設定每個頻道專屬的傳遞內容。
+* [指定對象](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#target-population){target="_blank"}：定義幾種目標型別：主要對象、證明目標、種子地址和控制群組。
+* [使用傳遞範本](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}：瞭解如何定義範本，以方便傳遞建立。
 
 
 
@@ -47,15 +45,15 @@ ht-degree: 14%
 
 >[!TAB 傳遞驗證與傳送]
 
-請參閱這些頁面，在Campaign v8檔案中瞭解傳遞驗證、傳送和最佳實務：
+請參閱這些頁面，以在Campaign v8檔案&#x200B;**中瞭解傳遞驗證、傳送和最佳實務**：
 
-* [驗證傳遞](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hant#validate-the-delivery){target="_blank"}：瞭解如何先驗證傳遞，再將其傳送至主要目標。
-* [傳送傳遞](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hant#configuring-and-sending-the-delivery){target="_blank"}：設定傳遞設定並定義傳送訊息的方式。
-* [傳遞最佳實務](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=zh-Hant){target="_blank"}：請參閱與Campaign傳遞功能相關的最佳實務。
+* [驗證傳遞](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#validate-the-delivery){target="_blank"}：瞭解如何先驗證傳遞，再將其傳送至主要目標。
+* [傳送傳遞](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#configuring-and-sending-the-delivery){target="_blank"}：設定傳遞設定並定義傳送訊息的方式。
+* [傳遞最佳實務](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html){target="_blank"}：請參閱與Campaign傳遞功能相關的最佳實務。
 
 >[!ENDTABS]
 
-以下設定專屬於Campaign Classic。 如需其他傳遞設定，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html?lang=zh-Hant){target="_blank"}。
+以下設定專屬於Campaign Classic。 如需其他傳遞設定，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html){target="_blank"}。
 
 +++ **傳遞分析**
 
@@ -104,7 +102,7 @@ ht-degree: 14%
 
 ![](assets/s_ncs_user_wizard_retry_param.png)
 
-根據預設，排程在傳送的第一天進行五次重試，最小間隔為一小時分佈在一天中的24小時。 之後及傳遞期限（在&#x200B;**[!UICONTROL Validity]**&#x200B;索引標籤中定義）之前，每天會設定一次重試。 請參閱[定義有效期間](#defining-validity-period)。
+根據預設，排程在傳送的第一天進行五次重試，最小間隔為一小時分佈在一天中的24小時。 之後及傳遞期限（在&#x200B;**[!UICONTROL Validity]**&#x200B;索引標籤中定義）之前，每天會設定一次重試。 請參閱以下小節。
 
 **定義有效期間**
 
@@ -130,7 +128,7 @@ ht-degree: 14%
 
    Learn how to create a one-shot single delivery. You can create other types of deliveries to build your use cases. 
 
-For more information about the different types of deliveries and how to create them, refer to the [Campaign v8 documentation](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hant){target="_blank"}. 
+For more information about the different types of deliveries and how to create them, refer to the [Campaign v8 documentation](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}. 
 
 >[!NOTE]
 >

@@ -4,10 +4,10 @@ title: 監視指南
 description: 探索監控 Campaign 執行個體和程序的準則和最佳作法
 feature: Monitoring
 exl-id: ca0c33c5-7350-462a-bc65-4cab51e529d9
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '743'
-ht-degree: 18%
+source-wordcount: '758'
+ht-degree: 16%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 18%
 
 ![](assets/monitoring_tab.png)
 
-## 監控Campaign Classic流程 {#monitoring-campaign-classic-processes}
+## 監控Campaign Classic程式 {#monitoring-campaign-classic-processes}
 
 <table>
 <tr><td><img src="assets/do-not-localize/icon_system.svg" width="60px"><p><a href="#monitoring-instance">監視您的執行個體</a></p></td>
@@ -64,7 +64,7 @@ ht-degree: 18%
 
 **工作流程熱度圖**
 
-工作流程熱度圖提供執行個體上執行之所有工作流程的視覺化表示。 它可讓您輕鬆監控執行個體的負載，並據此規劃工作流程。 [按一下這裡](../../workflow/using/heatmap.md)以獲得更多資訊。
+工作流程熱度圖提供執行個體上執行之所有工作流程的視覺化表示。 它可讓您輕鬆監控執行個體的負載，並據此規劃工作流程。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/heatmap.html?lang=zh-Hant){target="_blank"}。
 
 **稽核軌跡**
 
@@ -76,13 +76,13 @@ ht-degree: 18%
 
 **工作流程狀態監視**
 
-除了熱度圖之外，您還可以建立工作流程，讓您監視一組工作流程的狀態，並傳送週期性訊息給主管。 [按一下這裡](../../workflow/using/supervising-workflows.md)以獲得更多資訊。
+除了熱度圖之外，您還可以建立工作流程，讓您監視一組工作流程的狀態，並傳送週期性訊息給主管。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/monitoring/workflow-supervision.html){target="_blank"}。
 
 **一般准則**
 
 使用工作流程時，遵循准則和最佳實務有助於改善效能。 如需詳細資訊，請參閱下列章節：
-* [使用工作流程時的最佳實務](../../workflow/using/workflow-best-practices.md)
-* [監控工作流程執行](../../workflow/using/monitoring-workflow-execution.md)
+* [使用工作流程時的最佳實務](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html){target="_blank"}
+* [監控工作流程執行](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}
 
 ### 監視傳遞 {#monitoring-deliveries}
 
@@ -94,7 +94,7 @@ SMTP報告會依網域顯示傳遞統計資料和SMTP錯誤。 [了解更多](..
 
 **最佳實務**
 
-[傳遞傳送和設計的最佳實務](../../delivery/using/delivery-best-practices.md)可協助您改善其效能。
+請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html){target="_blank"}以瞭解傳送和設計傳送的最佳實務，以改善效能。
 
 **傳遞疑難排解**
 遇到傳送問題時，可執行特定動作：

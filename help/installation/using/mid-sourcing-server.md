@@ -8,9 +8,9 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 3e55d7f5-2858-4390-bba9-8fb5be0c3d98
-source-git-commit: b500b2cbf68fd46bd84ddbfa71cf9431c6b60060
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1005'
+source-wordcount: '1006'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->設定中間來源伺服器且[同步工作流程](../../workflow/using/about-technical-workflows.md)首次執行後，請確定您未更新中間來源外部帳戶的內部名稱。
+>設定中間來源伺服器且[同步工作流程](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html){target="_blank"}首次執行後，請確定您未更新中間來源外部帳戶的內部名稱。
 
 ## 安裝和設定執行個體的步驟 {#steps-for-installing-and-configuring-an-instance}
 
@@ -125,7 +125,7 @@ ht-degree: 1%
 
    ![](assets/mid_recette_user_restrictions.png)
 
-1. 使用下列命令重新啟動Web模組： **&#x200B; web**。
+1. 使用下列命令重新啟動Web模組： ** web**。
 
 您必須變更serverConf.xml檔案中的中間來源伺服器設定。 下列行必須新增至「管理IP位址的相似性」區段（位於現有行下）：
 
@@ -139,9 +139,9 @@ ht-degree: 1%
 
 &#39;marketing_account_operator_name&#39;與中間來源執行個體中宣告的中間來源帳戶的內部名稱相關。
 
-&#39;affinity_name&#39;與指定給相似性的任意名稱相關。 此名稱必須是唯一的。 授權字元為`[a-z]` `[A-Z]` `[0-9]`。 其目的是宣告一組公用IP位址。
+&#39;affinity_name&#39;與指定給相似性的任意名稱相關。 此名稱必須是唯一的。 授權字元為`[a-z]``[A-Z]``[0-9]`。 其目的是宣告一組公用IP位址。
 
-&#39;affinity_group&#39;會與每個傳遞中使用的目標對應中所宣告的子相似性建立關聯。 最後一部分包含「。」 如果沒有Sub-affinity，則會被忽略。 授權字元為`[a-z]` `[A-Z]` `[0-9]`。
+&#39;affinity_group&#39;會與每個傳遞中使用的目標對應中所宣告的子相似性建立關聯。 最後一部分包含「。」 如果沒有Sub-affinity，則會被忽略。 授權字元為`[a-z]``[A-Z]``[0-9]`。
 
 您必須先停止再重新啟動伺服器，才能考慮修改。
 

@@ -8,9 +8,9 @@ audience: production
 content-type: reference
 topic-tags: database-maintenance
 exl-id: a586d70b-1b7f-47c2-a821-635098a70e45
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1243'
+source-wordcount: '1235'
 ht-degree: 1%
 
 ---
@@ -84,7 +84,7 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->Adobe強烈建議不要在CampaignAdobe託管的資料庫設定上執行VACUUM FULL。建議的維護作業僅適用於ON-PREMISE安裝。 對於自訂表格實作和結構描述，使用VACUUM FULL時，需自行承擔風險，因為VACUUM — 不進行監視 — 可以獨佔鎖定表格，導致查詢逾時，並且在某些情況下會鎖定整個資料庫。
+>Adobe強烈建議不要在Campaign Adobe託管的資料庫設定上執行VACUUM FULL。建議的維護作業僅是內部部署安裝的指南。 對於自訂表格實作和結構描述，使用VACUUM FULL時，需自行承擔風險，因為VACUUM — 不進行監視 — 可以獨佔鎖定表格，導致查詢逾時，並且在某些情況下會鎖定整個資料庫。
 
 在PostgreSQL中，您可以使用下列一般關鍵字：
 
@@ -144,8 +144,8 @@ VACUUM (FULL, ANALYZE, VERBOSE) nmsmirrorpageinfo;
 >* Adobe建議從較小的表格開始：如此一來，如果程式在大型表格（失敗風險最高的表格）上失敗，至少部分的維護作業已完成。
 >* Adobe建議您新增資料模型專屬的表格，這些表格可能會有重大更新。 如果您有大型的每日資料復寫流程，這可以是&#x200B;**NmsRecipient**&#x200B;的情況。
 >* VACUUM陳述式會鎖定表格，在執行維護作業時會暫停某些程式。
->* 對於非常大的表格（通常超過5 Gb），VACUUM FULL陳述式可能會變得相當低效，並需要很長的時間。 Adobe不建議將其用於&#x200B;**YyyyNmsBroadLogXxx**&#x200B;資料表。
->* 此維護作業可透過Adobe Campaign工作流程，使用&#x200B;**[!UICONTROL SQL]**&#x200B;活動來實作。 如需詳細資訊，請參閱[本節](../../workflow/using/architecture.md)。 請確定您排程進行維護作業的時間，以免與備份期間發生衝突。
+>* 對於非常大的表格（通常超過5 Gb），VACUUM FULL陳述式可能會變得相當低效，並需要很長的時間。 Adobe不建議將其用於&#x200B;**YyyyNmsBroadLogXxx**&#x200B;表格。
+>* 此維護作業可透過Adobe Campaign工作流程，使用&#x200B;**[!UICONTROL SQL]**&#x200B;活動來實作。 請確定您排程進行維護作業的時間，以免與備份期間發生衝突。
 >
 
 ### 重建資料庫 {#rebuilding-a-database}
@@ -157,7 +157,7 @@ VACUUM (FULL, ANALYZE, VERBOSE) nmsmirrorpageinfo;
 
 以下是使用特定函式產生必要DDL的表格重組範例。 下列SQL可讓您建立兩個新函式： **GenRebuildTablePart1**&#x200B;和&#x200B;**GenRebuildTablePart2**，它們可用來產生必要的DDL以重新建立資料表。
 
-* 第一個函式可讓您建立工作表(**_tmp**&#x200B;此處)，它是原始表格的副本。
+* 第一個函式可讓您建立工作表(**_tmp**此處)，它是原始表格的副本。
 * 然後第二個函式會刪除原始表格並重新命名工作表及其索引。
 * 使用兩個函式而非一個函式，表示如果第一個函式失敗，您就不會有刪除原始表格的風險。
 
@@ -406,7 +406,7 @@ function sqlGetMemo(strSql)
 
 ## Oracle {#oracle}
 
-請連絡您的資料庫管理員，瞭解最適合您Oracle版本的程式。
+請聯絡資料庫管理員，瞭解最適合您Oracle版本的程式。
 
 ## Microsoft SQL Server {#microsoft-sql-server}
 

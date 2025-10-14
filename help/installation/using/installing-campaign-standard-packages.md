@@ -5,10 +5,10 @@ description: 瞭解如何安裝Campaign內建套件
 feature: Installation, Application Settings
 badge-v7-prem: label="僅限內部部署/混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="僅適用於內部部署和混合部署"
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1264'
-ht-degree: 2%
+source-wordcount: '1270'
+ht-degree: 3%
 
 ---
 
@@ -66,12 +66,12 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td> 行銷活動（行銷活動）<br /> </td> 
-   <td> 定義、最佳化、執行和分析通訊和行銷活動。 <a href="../../campaign/using/designing-marketing-campaigns.md">進一步瞭解</a><br /> </td> 
+   <td> 定義、最佳化、執行和分析通訊和行銷活動。 <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html" target="_blank">進一步瞭解</a><br /> </td> 
    <td> 行銷</td>
   </tr> 
   <tr> 
    <td> 行銷資源(MRM)<br /> </td> 
-   <td> 藉由提供任務、預算與行銷資源的管理與追蹤，以合作模式控制行銷動作。 <a href="../../mrm/using/about-marketing-resource-management.md">深入瞭解</a> <br /> </td> 
+   <td> 藉由提供任務、預算與行銷資源的管理與追蹤，以合作模式控制行銷動作。 <a href="https://experienceleague.adobe.com/docs/campaign/automation/mrm/about-marketing-resource-management.html?lang=zh-Hant" target="_blank">深入瞭解</a> <br /> </td> 
    <td> 行銷</td> 
   </tr> 
   <tr> 
@@ -97,7 +97,7 @@ ht-degree: 2%
   </tr--> 
   <tr> 
    <td> 社交網路（社交行銷） <br /> </td> 
-   <td> 將Adobe Campaign與X (先前稱為Twitter)和Facebook同步。 <a href="../../social/using/about-social-marketing.md">深入瞭解</a> <br /> </td> 
+   <td> 將Adobe Campaign與X （先前稱為Twitter）和Facebook同步。 <a href="../../social/using/about-social-marketing.md">深入瞭解</a> <br /> </td> 
    <td> 全部</td> 
   </tr> 
   <tr> 
@@ -157,12 +157,12 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td> 存取外部資料（同盟資料存取）<br /> </td> 
-   <td> 提供同盟資料存取(FDA)選項，以處理儲存在一或多個外部資料庫中的資訊，因此您無需變更Adobe Campaign資料的結構即可存取外部資料。  選填。 <a href="../../workflow/using/accessing-an-external-database-fda.md">深入瞭解</a> <br /> </td> 
+   <td> 提供同盟資料存取(FDA)選項，以處理儲存在一或多個外部資料庫中的資訊，因此您無需變更Adobe Campaign資料的結構即可存取外部資料。  選填。 <a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/accessing-an-external-database-fda.html" target="_blank">深入瞭解</a> <br /> </td> 
    <td> 全部<br /> </td> 
   </tr> 
   <tr> 
    <td> 行銷活動最佳化<br /> </td> 
-   <td> 控制、篩選及監控傳遞的傳送，使傳送的訊息最符合客戶的需求和期望，並遵守公司的通訊政策。 選填。 <a href="../../campaign-opt/using/about-campaign-typologies.md">深入瞭解</a> <br /> </td> 
+   <td> 控制、篩選及監控傳遞的傳送，使傳送的訊息最符合客戶的需求和期望，並遵守公司的通訊政策。 選填。 <a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html?lang=zh-Hant" target="_blank">深入瞭解</a> <br /> </td> 
    <td> 行銷<br /> </td> 
   </tr> 
   <tr> 
@@ -182,7 +182,7 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td> 中央/區域行銷（分散式行銷）<br /> </td> 
-   <td> 在中央實體（總部、行銷部門等）與地方實體（銷售點、地區代理等）之間實施合作活動。 選填。 <a href="../../distributed/using/about-distributed-marketing.md">進一步瞭解</a><br /> </td> 
+   <td> 在中央實體（總部、行銷部門等）與地方實體（銷售點、地區代理等）之間實施合作活動。 選填。 <a href="https://experienceleague.adobe.com/docs/campaign/automation/distributed-marketing/about-distributed-marketing.html?lang=zh-Hant" target="_blank">進一步瞭解</a><br /> </td> 
    <td> 行銷 </td> 
   </tr> 
   <tr> 
@@ -227,7 +227,7 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td> AMP支援<br /> </td> 
-   <td> 可讓您使用新的互動式AMP傳送電子郵件格式，並傳送動態電子郵件。 選填。 <a href="../../delivery/using/defining-interactive-content.md">深入瞭解</a> <br /> </td> 
+   <td> 可讓您使用新的互動式AMP傳送電子郵件格式，並傳送動態電子郵件。 選填。 <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-interactive-content.html" target="_blank">深入瞭解</a> <br /> </td> 
    <td> 全部 </td> 
   </tr> 
   <tr> 
@@ -242,14 +242,14 @@ ht-degree: 2%
 
 您必須先安裝傳送頻道（電子郵件、行動頻道、行動應用程式頻道、LINE等），才能安裝異動訊息（訊息中心套件）。 如果您已開始僅限電子郵件的訊息中心專案，且之後需要新增頻道，您必須依照下列步驟進行：
 
-1. 使用套件匯入小幫手( **[!UICONTROL Tools > Advanced > Import package > Adobe Campaign package]**)安裝新頻道，例如&#x200B;**行動頻道**。
+1. 使用套件匯入小幫手( **)安裝新頻道，例如**&#x200B;行動頻道&#x200B;**[!UICONTROL Tools > Advanced > Import package > Adobe Campaign package]**。
 1. 匯入檔案( **[!UICONTROL Tools > Advanced > Import package > File]**)，並選取：
 
    ```
    \datakit\nms\[Your language]\package\messageCenter.xml
    ```
 
-1. 在&#x200B;**[!UICONTROL XML data content to import]**&#x200B;中，只保留對應至相關頻道的訊息中心傳遞範本。 例如，如果您已新增&#x200B;**行動裝置頻道**，請僅保留與&#x200B;**[!UICONTROL Mobile transactional message]** (smsTriggerMessage)範本相對應的&#x200B;**entities**&#x200B;元素。 如果您已新增&#x200B;**行動應用程式頻道**，請僅保留&#x200B;**iOS交易訊息**&#x200B;範本(iosTriggerMessage)和&#x200B;**Android交易訊息** (androidTriggerMessage)。
+1. 在&#x200B;**[!UICONTROL XML data content to import]**&#x200B;中，只保留對應至相關頻道的訊息中心傳遞範本。 例如，如果您已新增&#x200B;**行動裝置頻道**，請僅保留與&#x200B;**(smsTriggerMessage)範本相對應的** entities **[!UICONTROL Mobile transactional message]**&#x200B;元素。 如果您已新增&#x200B;**行動應用程式頻道**，請僅保留&#x200B;**iOS交易訊息**&#x200B;範本(iosTriggerMessage)和&#x200B;**Android交易訊息** (androidTriggerMessage)。
 
    ![](assets/messagecenter_install_channel.png)
 

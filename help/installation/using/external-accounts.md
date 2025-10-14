@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1784'
-ht-degree: 8%
+source-wordcount: '1791'
+ht-degree: 6%
 
 ---
 
@@ -39,7 +39,7 @@ Adobe Campaign 隨附一組預先定義的外部帳戶。若要設定與外部�
    所需資訊通常由您所連接的伺服器提供者提供。
 
 1. 核取&#x200B;**[!UICONTROL Enabled]**&#x200B;選項以啟動連線。
-1. 按一下&#x200B;**[!UICONTROL Save]**。
+1. 按一下 **[!UICONTROL Save]**。
 
 外部帳戶已建立並新增至外部帳戶清單。
 
@@ -47,7 +47,7 @@ Adobe Campaign 隨附一組預先定義的外部帳戶。若要設定與外部�
 
 ### 退回郵件 {#bounce-mails-external-account}
 
-**退回郵件**&#x200B;外部帳戶指定要用來連線至電子郵件服務的外部POP3帳戶。 如需此外部帳戶的詳細資訊，請參閱此[頁面](../../workflow/using/inbound-emails.md)。
+**退回郵件**&#x200B;外部帳戶指定要用來連線至電子郵件服務的外部POP3帳戶。 如需此外部帳戶的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/inbound-emails.html){target="_blank"}。
 
 所有設定為POP3存取的伺服器都可以用來接收傳回郵件。
 
@@ -118,9 +118,8 @@ Adobe Campaign 隨附一組預先定義的外部帳戶。若要設定與外部�
 * [電話](../../delivery/using/communication-channels.md#other-channels)
 * [直接郵件](../../delivery/using/about-direct-mail-channel.md)
 * [代理商](../../delivery/using/communication-channels.md#other-channels)
-* [X (先前稱為Twitter)](../../social/using/about-social-marketing.md)
-* [iOS 管道](../../delivery/using/configuring-the-mobile-application.md)
-* [Android 管道](../../delivery/using/configuring-the-mobile-application-android.md)
+* [X （先前稱為Twitter）](../../social/using/about-social-marketing.md)
+* [iOS和Android頻道](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html){target="_blank"}
 
 ### 電子郵件路由 {#email-routing-external-account}
 
@@ -130,7 +129,7 @@ Adobe Campaign 隨附一組預先定義的外部帳戶。若要設定與外部�
 
 * 您可以使用&#x200B;**中間來源**、**外部**&#x200B;路由或&#x200B;**大量**&#x200B;傳遞路由型別。
 
-* 對於&#x200B;**大量**&#x200B;和&#x200B;**中間來源**&#x200B;傳遞模式，您可以在&#x200B;**品牌**&#x200B;索引標籤中指定品牌引數。 這些引數是用來覆寫&#x200B;**映象頁面URL**&#x200B;和&#x200B;**錯誤位址**&#x200B;的[預設引數](../../installation/using/deploying-an-instance.md#email-channel-parameters)以及您品牌的特定設定。
+* 對於&#x200B;**大量**&#x200B;和&#x200B;**中間來源**&#x200B;傳遞模式，您可以在&#x200B;**品牌**&#x200B;索引標籤中指定品牌引數。 這些引數是用來覆寫[映象頁面URL](../../installation/using/deploying-an-instance.md#email-channel-parameters)和&#x200B;**錯誤位址**&#x200B;的&#x200B;**預設引數**&#x200B;以及您品牌的特定設定。
 
   ![](assets/ext-account-branding.png)
 
@@ -160,7 +159,7 @@ Adobe Campaign 隨附一組預先定義的外部帳戶。若要設定與外部�
 
 ### FTP {#ftp-external-account}
 
-FTP外部帳戶可讓您設定並測試對Adobe Campaign外部伺服器的存取權。 若要設定與外部系統（例如用於檔案傳輸的FTP伺服器898）的連線，您可以建立自己的外部帳戶。 如需關於此項目的詳細資訊，請參閱此[頁面](../../workflow/using/file-transfer.md)。
+FTP外部帳戶可讓您設定並測試對Adobe Campaign外部伺服器的存取權。 若要設定與外部系統（例如用於檔案傳輸的FTP伺服器898）的連線，您可以建立自己的外部帳戶。 如需詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}。
 
 若要這麼做，請在此外部帳戶中指定用來建立與FTP伺服器連線的位址和認證
 
@@ -190,7 +189,7 @@ FTP外部帳戶可讓您設定並測試對Adobe Campaign外部伺服器的存取
 
 ### SFTP {#sftp-external-account}
 
-SFTP外部帳戶可讓您設定並測試對Adobe Campaign外部伺服器的存取權。 若要設定與外部系統（例如用於檔案傳輸的SFTP）的連線，您可以建立自己的外部帳戶。 如需關於此項目的詳細資訊，請參閱此[頁面](../../workflow/using/file-transfer.md)。
+SFTP外部帳戶可讓您設定並測試對Adobe Campaign外部伺服器的存取權。 若要設定與外部系統（例如用於檔案傳輸的SFTP）的連線，您可以建立自己的外部帳戶。 如需詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}。
 
 ![](assets/ext_account_4.png)
 
@@ -229,10 +228,10 @@ SFTP外部帳戶可讓您設定並測試對Adobe Campaign外部伺服器的存�
 
 外部帳戶組態設定取決於資料庫引擎。 請在下列章節中瞭解更多資訊：
 
-* 設定[Vertica analytics](../../installation/using/configure-fda-vertica.md)的存取權
+* 設定[Vertica Analytics](../../installation/using/configure-fda-vertica.md)的存取權
 * 設定[Snowflake](../../installation/using/configure-fda-snowflake.md)的存取權
 * 設定[Google BigQuery](../../installation/using/configure-fda-google-big-query.md)的存取權
-* 設定[Azure synapse](../../installation/using/configure-fda-synapse.md)的存取權
+* 設定[Azure Synapse](../../installation/using/configure-fda-synapse.md)的存取權
 * 設定[Hadoop](../../installation/using/configure-fda-hadoop.md)的存取權
 * 設定[Oracle](../../installation/using/configure-fda-oracle.md)的存取權
 * 設定[Netezza](../../installation/using/configure-fda-netezza.md)的存取權
@@ -398,11 +397,11 @@ SFTP外部帳戶可讓您設定並測試對Adobe Campaign外部伺服器的存�
 
 * **[!UICONTROL Client identifier]**
 
-  若要瞭解在何處尋找您的使用者端識別碼，請參閱此[頁面](https://help.salesforce.com/articleView?id=000205876&amp;type=1)。
+  若要瞭解在何處尋找您的使用者端識別碼，請參閱此[頁面](https://help.salesforce.com/articleView?id=000205876&type=1)。
 
 * **[!UICONTROL Security token]**
 
-  若要瞭解在何處尋找您的安全性權杖，請參閱此[頁面](https://help.salesforce.com/articleView?id=000205876&amp;type=1)。
+  若要瞭解在何處尋找您的安全性權杖，請參閱此[頁面](https://help.salesforce.com/articleView?id=000205876&type=1)。
 
 * **[!UICONTROL API version]**
 
@@ -416,7 +415,7 @@ SFTP外部帳戶可讓您設定並測試對Adobe Campaign外部伺服器的存�
 
 ### Amazon簡單儲存服務(S3) {#amazon-simple-storage-service--s3--external-account}
 
-Amazon Simple Storage Service (S3)聯結器可用來匯入或匯出資料至Adobe Campaign。 您可以在工作流程活動中設定它。 如需關於此項目的詳細資訊，請參閱此[頁面](../../workflow/using/file-transfer.md)。
+Amazon Simple Storage Service (S3)聯結器可用來匯入或匯出資料至Adobe Campaign。 您可以在工作流程活動中設定它。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}。
 
 ![](assets/ext_account_3.png)
 
@@ -448,7 +447,7 @@ Amazon Simple Storage Service (S3)聯結器可用來匯入或匯出資料至Adob
 
 ### Azure Blob 儲存體 {#azure-blob-external-account}
 
-**Azure Blob儲存體**&#x200B;外部帳戶可用來使用&#x200B;**[!UICONTROL Transfer file]**&#x200B;工作流程活動將資料匯入或匯出至Adobe Campaign。 如需詳細資訊，請參閱本[區段](../../workflow/using/file-transfer.md)。
+**Azure Blob儲存體**&#x200B;外部帳戶可用來使用&#x200B;**[!UICONTROL Transfer file]**&#x200B;工作流程活動將資料匯入或匯出至Adobe Campaign。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}。
 
 ![](assets/ext_account_23.png)
 

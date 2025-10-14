@@ -7,9 +7,9 @@ audience: integrations
 content-type: reference
 topic-tags: asset-sharing
 exl-id: 30a94bce-6d96-4a6d-a62f-7451c822f0e3
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: '220'
 ht-degree: 1%
 
 ---
@@ -22,11 +22,11 @@ ht-degree: 1%
 
    如果您使用Adobe Experience Manager資產庫的資產，請使用在[設定整合](../../integrations/using/configuring-access-to-assets.md#integrating-with-aem-assets)時建立的傳遞範本。
 
-   如果您沒有此特定範本，請確定在傳遞&#x200B;**Properties**&#x200B;中，**[!UICONTROL Content editing mode]** （**[!UICONTROL Advanced]**&#x200B;索引標籤）已設定為&#x200B;**DCE**，並且已提供您要用來存取AEM Assets資源庫的AEM外部帳戶。
+   如果您沒有此特定範本，請確定在傳遞&#x200B;**Properties**&#x200B;中，**[!UICONTROL Content editing mode]** （**[!UICONTROL Advanced]**&#x200B;索引標籤）已設定為&#x200B;**DCE**，並且已提供您要用來存取AEM Assets資源程式庫的AEM外部帳戶。
 
 1. 在編輯視窗中，選取選項以新增影像：
 
-   * 如果您使用[標準編輯模式](../../delivery/using/defining-the-email-content.md#adding-images)，請選取&#x200B;**[!UICONTROL Image]** > **[!UICONTROL Select a shared asset]**。
+   * 如果您使用[標準編輯模式](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#adding-images){target="_blank"}，請選取&#x200B;**[!UICONTROL Image]** > **[!UICONTROL Select a shared asset]**。
 
      ![](assets/dam_insert_image_standard.png)
 

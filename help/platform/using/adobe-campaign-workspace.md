@@ -6,9 +6,9 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 5f689679-7148-4abd-a9bf-185854c64b13
-source-git-commit: 34f875f583dd81c2229b66f3344f23965532e802
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '965'
 ht-degree: 16%
 
 ---
@@ -43,7 +43,7 @@ ht-degree: 16%
 
 ![在瀏覽器中，相同的運運算元只能檢視和取消行銷活動。](assets/operation_from_web.png)
 
-進一步瞭解[使用網頁介面](../../campaign/using/accessing-marketing-campaigns.md#using-the-web-interface-)。
+在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-create.html#use-the-web-interface-){target=_blank}中進一步瞭解如何使用網頁介面。
 
 ### 語言 {#languages}
 
@@ -59,7 +59,7 @@ ht-degree: 16%
 * 德文
 * 日文
 
-您為Adobe Campaign Classic執行個體選擇的語言可能會影響日期和時間格式。 如需詳細資訊，請參閱[Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}。
+您為Adobe Campaign Classic執行個體選擇的語言可能會影響日期和時間格式。 如需詳細資訊，請參閱[Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}。
 
 有關如何建立執行個體的詳細資訊，請參閱此[頁面](../../installation/using/creating-an-instance-and-logging-on.md)。
 
@@ -110,7 +110,7 @@ Adobe Campaign檔案總管可透過工具列圖示存取。 使用工具列圖�
 
 若要深入瞭解Adobe Campaign Explorer，請參閱&#x200B;**Campaign v8 （主控台）檔案**&#x200B;中的下列頁面：
 
-* [Campaign使用者介面概觀](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}
+* [Campaign使用者介面概觀](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}
 
 * [Campaign UI設定](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/ui-settings){target=_blank}
 
@@ -123,7 +123,7 @@ Adobe Campaign檔案總管可透過工具列圖示存取。 使用工具列圖�
 
 瀏覽Campaign時，資料會顯示在清單中。 您可以套用內建篩選器快速存取定義的子集，例如隔離地址、未鎖定目標的收件者或特定年齡範圍或建立日期內的記錄。 此外，您可以建立自訂篩選器、儲存以供日後使用，以及與其他Campaign使用者共用。
 
-在&#x200B;**Campaign v8 （主控台）檔案**&#x200B;中瞭解如何[存取、設計和共用篩選器](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/audience/create-filters){target=_blank}。
+在&#x200B;**Campaign v8 （主控台）檔案**&#x200B;中瞭解如何[存取、設計和共用篩選器](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}。
 
 
 ## 使用清單 {#manage-and-customize-lists}
@@ -138,7 +138,7 @@ Adobe Campaign檔案總管可透過工具列圖示存取。 使用工具列圖�
 
 定義後，值會顯示在下拉式清單中。 您可以直接選取值，或使用預測性輸入來輸入值，這會建議並完成相符專案。 某些欄位包含預先定義的分項清單，如果需要，可以建立其他分項清單。
 
-在&#x200B;**Adobe Campaign v8 （主控台）檔案**&#x200B;中進一步瞭解如何[使用分項清單](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}。
+在&#x200B;**Adobe Campaign v8 （主控台）檔案**&#x200B;中進一步瞭解如何[使用分項清單](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}。
 
 ## 教學課程影片 {#video}
 

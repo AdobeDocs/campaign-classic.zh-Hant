@@ -5,10 +5,10 @@ description: 在內建或自訂的報表中分析促銷活動的成功
 feature: Reporting, Monitoring
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 exl-id: 1ef30004-e1b0-4dde-8104-0ee9e8aa9d8b
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '344'
-ht-degree: 18%
+source-wordcount: '347'
+ht-degree: 16%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 18%
 
 Adobe Campaign不是專門用於報表的工具：在Adobe Campaign中建立的報表主要為讓您檢視彙總的資料。 專用於分析和表示資料的Adobe Campaign報表並非設計用於資料庫匯出。
 
-若要從Adobe Campaign資料庫匯出資料，您需要建立工作流程並使用資料匯出活動。 如需詳細資訊，請參閱[本章節](../../workflow/using/about-action-activities.md)。
+若要從Adobe Campaign資料庫匯出資料，您需要建立工作流程並使用資料匯出活動。 如需詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/action-activities.html){target="_blank"}。
 
 Adobe Campaign提供數種報告工具：
 

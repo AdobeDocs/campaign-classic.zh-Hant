@@ -7,10 +7,10 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 94aa4628-d973-433d-b963-b078e2d6672b
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '437'
-ht-degree: 3%
+source-wordcount: '446'
+ht-degree: 1%
 
 ---
 
@@ -22,14 +22,14 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->在[本節](steps-about-delivery-creation-steps.md)中介紹了傳遞建立的全域概念。
+>在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}中介紹了傳遞建立的全域概念。
 
 1. 例如，從「傳遞」控制面板建立新傳遞。
 1. 選取您先前建立的傳遞範本&#x200B;**傳送至行動裝置(SMPP)**。 如需詳細資訊，請參閱[變更傳遞範本](sms-set-up.md#changing-the-delivery-template)區段。
 
    ![](assets/s_user_mobile_wizard.png)
 
-1. 使用標籤、程式碼和說明來識別您的傳遞。 如需詳細資訊，請參閱[本章節](steps-create-and-identify-the-delivery.md#identifying-the-delivery)。
+1. 使用標籤、程式碼和說明來識別您的傳遞。 如需詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#create-the-delivery){target="_blank"}中的本節。
 1. 按一下&#x200B;**[!UICONTROL Continue]**&#x200B;以確認此資訊並顯示訊息設定視窗。
 
 ## 定義簡訊內容 {#defining-the-sms-content}

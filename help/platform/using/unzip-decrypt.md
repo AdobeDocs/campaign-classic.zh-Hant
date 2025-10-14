@@ -8,17 +8,17 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 1a79da3b-2abc-4bfc-a0ee-8471c478638d
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '700'
-ht-degree: 9%
+source-wordcount: '709'
+ht-degree: 10%
 
 ---
 
 
 # 解壓縮或解密檔案 {#unzipping-or-decrypting-a-file-before-processing}
 
-Adobe Campaign可讓您匯入壓縮或加密的檔案。 在[資料載入（檔案）](../../workflow/using/data-loading-file.md)活動中讀取檔案之前，您可以定義解壓縮或解密檔案的預先處理。
+Adobe Campaign可讓您匯入壓縮或加密的檔案。 在[資料載入（檔案）](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html){target="_blank"})活動中讀取檔案之前，您可以定義解壓縮或解密檔案的預先處理。
 
 >[!IMPORTANT]
 >
@@ -26,7 +26,7 @@ Adobe Campaign可讓您匯入壓縮或加密的檔案。 在[資料載入（檔�
 
 若要這麼做：
 
-1. 使用[控制檯](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=zh-Hant#decrypting-data)產生公開/私密金鑰組，以允許檔案解密。
+1. 使用[控制檯](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data)產生公開/私密金鑰組，以允許檔案解密。
 
    >[!NOTE]
    >
@@ -36,7 +36,7 @@ Adobe Campaign可讓您匯入壓縮或加密的檔案。 在[資料載入（檔�
 
 1. 如果您安裝的Adobe Campaign是內部部署，請在應用程式伺服器上安裝您要使用的公用程式（例如：GPG、GZIP）以及必要的金鑰（加密金鑰）。
 
-   如果您的Adobe Campaign安裝是由Adobe託管，請連絡[Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)，以便在伺服器上安裝必要的公用程式。
+   如果您的Adobe Campaign安裝是由Adobe託管，請聯絡[Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)，以便在伺服器上安裝必要的公用程式。
 
 接著，您便可以在工作流程中使用所需的前置處理命令：
 
@@ -51,8 +51,8 @@ Adobe Campaign可讓您匯入壓縮或加密的檔案。 在[資料載入（檔�
 
 **相關主題：**
 
-* [資料載入（檔案）活動](../../workflow/using/data-loading-file.md)。
-* [壓縮或加密檔案](../../workflow/using/how-to-use-workflow-data.md#zipping-or-encrypting-a-file)。
+* [資料載入（檔案）活動](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html){target="_blank"}。
+* [壓縮或加密檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html){target="_blank"}。
 
 ## 使用案例：匯入使用控制面板產生的金鑰加密的資料 {#use-case-gpg-decrypt}
 
@@ -62,7 +62,7 @@ Adobe Campaign可讓您匯入壓縮或加密的檔案。 在[資料載入（檔�
 
 執行此使用案例的步驟如下：
 
-1. 使用「控制面板」產生金鑰組（公用/私用）。 詳細步驟可在[控制面板檔案](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=zh-Hant#decrypting-data)中取得。
+1. 使用「控制面板」產生金鑰組（公用/私用）。 詳細步驟可在[控制面板檔案](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data)中取得。
 
    * 公開金鑰將與外部系統共用，外部系統將使用公開金鑰來加密要傳送至Campaign的資料。
    * Campaign Classic會使用私密金鑰來解密傳入的加密資料。
@@ -82,17 +82,18 @@ Adobe Campaign可讓您匯入壓縮或加密的檔案。 在[資料載入（檔�
 
    ![](assets/gpg_key_transfer.png)
 
-   有關如何設定活動的全域概念可在[本節](../../workflow/using/file-transfer.md)中取得。
+   有關如何設定活動的全域概念可在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}中取得。
 
-1. 開啟&#x200B;**[!UICONTROL Data loading (file)]**&#x200B;活動，然後根據您的需求進行設定。 有關如何設定活動的全域概念可在[本節](../../workflow/using/data-loading-file.md)中取得。
 
-   為活動新增前置處理階段，以便解密傳入的資料。 若要這麼做，請選取&#x200B;**[!UICONTROL Pre-process the file]**&#x200B;選項，然後從&#x200B;**[!UICONTROL Command]**&#x200B;下拉式清單中選取&#x200B;**[!UICONTROL Decrypt]**：
+1. 開啟&#x200B;**[!UICONTROL Data loading (file)]**&#x200B;活動，然後根據您的需求進行設定。 有關如何設定活動的全域概念可在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html){target="_blank"}中取得。
+
+   為活動新增前置處理階段，以便解密傳入的資料。 若要這麼做，請選取&#x200B;**[!UICONTROL Pre-process the file]**&#x200B;選項，然後從&#x200B;**[!UICONTROL Decrypt]**&#x200B;下拉式清單中選取&#x200B;**[!UICONTROL Command]**：
 
    ![](assets/gpg_load.png)
 
    >[!NOTE]
    >
-   >如果可用命令需要變更，您可以聯絡[Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)以調整preProcessCommand設定。
+   >如需變更可用命令，您可以聯絡[Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)以調整preProcessCommand設定。
    >
    >如果您使用混合式部署，可以直接從伺服器組態檔(serverConf.xml)設定這些指令。 [瞭解如何在伺服器設定檔中設定前置處理命令](../../installation/using/the-server-configuration-file.md#preprocesscommand)
 
@@ -108,4 +109,4 @@ Adobe Campaign可讓您匯入壓縮或加密的檔案。 在[資料載入（檔�
 
 >[!VIDEO](https://video.tv.adobe.com/v/36482?quality=12)
 
-[此處](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant)提供其他Campaign Classic操作說明影片。
+其他 Campaign Classic 作法影片可在[此處](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant)取得。

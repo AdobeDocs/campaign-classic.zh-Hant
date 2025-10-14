@@ -7,9 +7,9 @@ audience: interaction
 content-type: reference
 topic-tags: delivering-an-offer
 exl-id: 64aea8b9-7f06-4db0-a3e6-6a0e17c3ddcb
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '803'
+source-wordcount: '807'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 ![](assets/offer_delivery_009.png)
 
-在本節[&#128279;](../../delivery/using/about-direct-mail-channel.md)中進一步瞭解直接郵件傳遞[。 在本節](../../campaign/using/setting-up-marketing-campaigns.md)中進一步瞭解行銷活動。
+在本節[中進一步瞭解直接郵件傳遞](../../delivery/using/about-direct-mail-channel.md)。 在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=zh-Hant){target=_blank}中進一步瞭解行銷活動。
 
 ### 將優惠方案插入傳遞的主要步驟 {#main-steps-for-inserting-an-offer-into-a-delivery}
 
@@ -53,11 +53,11 @@ ht-degree: 0%
 
    ![](assets/offer_delivery_005.png)
 
-1. 選取&#x200B;**[!UICONTROL Exclude non-eligible recipients]**&#x200B;選項（如有必要）。 如需詳細資訊，請參閱呼叫優惠方案引擎[&#128279;](#parameters-for-calling-offer-engine)的引數。
+1. 選取&#x200B;**[!UICONTROL Exclude non-eligible recipients]**&#x200B;選項（如有必要）。 如需詳細資訊，請參閱呼叫優惠方案引擎[的](#parameters-for-calling-offer-engine)引數。
 
    ![](assets/offer_delivery_006.png)
 
-1. 如有必要，請選取&#x200B;**[!UICONTROL Do not display anything if no offers are selected]**&#x200B;選項。 如需詳細資訊，請參閱呼叫優惠方案引擎[&#128279;](#parameters-for-calling-offer-engine)的引數。
+1. 如有必要，請選取&#x200B;**[!UICONTROL Do not display anything if no offers are selected]**&#x200B;選項。 如需詳細資訊，請參閱呼叫優惠方案引擎[的](#parameters-for-calling-offer-engine)引數。
 
    ![](assets/offer_delivery_007.png)
 
@@ -90,7 +90,7 @@ ht-degree: 0%
 
 您也可以使用傳送大綱，在傳送中顯示優惠方案。
 
-如需傳遞概要的詳細資訊，請參閱[Campaign - MRM](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline)指南。
+如需傳遞概要的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-assets#delivery-outlines.html){target="_blank"}。
 
 1. 建立新行銷活動或存取現有行銷活動。
 1. 透過行銷活動的&#x200B;**[!UICONTROL Edit]** > **[!UICONTROL Documents]**&#x200B;索引標籤存取傳遞大綱。

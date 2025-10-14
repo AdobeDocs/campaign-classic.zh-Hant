@@ -1,18 +1,18 @@
 ---
 product: campaign
-title: 開始使用CampaignHTML編輯器
+title: 開始使用Campaign HTML編輯器
 description: 開始使用Campaign DCE
 feature: Web Apps, Web Forms, Landing Pages, Email Design
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 exl-id: f5d65e89-6b18-482b-97d8-11ab94f6775e
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '271'
 ht-degree: 0%
 
 ---
 
-# 開始使用CampaignHTML編輯器{#about-campaign-html-editor}
+# 開始使用Campaign HTML編輯器{#about-campaign-html-editor}
 
 
 
@@ -41,7 +41,7 @@ ht-degree: 0%
 1. 建立Web應用程式 — [深入瞭解](creating-a-landing-page.md)
 1. 選取現有內容或從標準範本建立內容 — [深入瞭解](template-management.md)
 1. 編輯及設定內容 — [深入瞭解](editing-content.md)
-1. Publish Web應用程式 — [深入瞭解](creating-a-landing-page.md#step-3---publishing-content)
+1. 發佈Web應用程式 — [深入瞭解](creating-a-landing-page.md#step-3---publishing-content)
 
 >[!NOTE]
 >
@@ -52,7 +52,7 @@ ht-degree: 0%
 1. 從DCE範本建立傳遞 — [深入瞭解](use-case-creating-an-email-delivery.md)
 1. 選取現有內容或從[標準範本](template-management.md)建立內容
 1. 編輯和設定線上內容
-1. 傳送傳遞 — [深入瞭解](../../delivery/using/steps-about-delivery-creation-steps.md)
+1. 傳送傳遞 — 在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}中瞭解更多
 
 >[!NOTE]
 >

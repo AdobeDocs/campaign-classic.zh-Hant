@@ -6,9 +6,9 @@ badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v
 feature: Monitoring, Deliverability
 role: User
 exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
-source-git-commit: 4d8c4ba846148d3df00a76ecc29375b9047c2b20
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '2984'
+source-wordcount: '3008'
 ht-degree: 7%
 
 ---
@@ -29,7 +29,7 @@ Adobe Campaign 管理隔離地址清單。在執行傳遞分析時，預設情�
 
 此外，隔離有助於減少簡訊傳送成本，因為將錯誤的電話號碼排除在遞送服務之外。
 
-如需確保傳送安全並最佳化的最佳實務，請參閱[本頁面](delivery-best-practices.md)。
+如需確保傳送安全並最佳化的最佳實務，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html){target="_blank"}中的本頁面。
 
 ### 隔離與封鎖清單 {#quarantine-vs-denylist}
 
@@ -103,7 +103,7 @@ Adobe Campaign會根據傳送失敗型別和錯誤訊息限定期間指派的原
 * **硬錯誤**：會立即將相對應的電子郵件地址傳送至隔離區。
 * **軟錯誤**：軟錯誤不會立即傳送要隔離的地址，但會增加錯誤計數器。如需詳細資訊，請參閱[軟性錯誤管理](#soft-error-management)。
 
-如果使用者將電子郵件歸類為垃圾訊息（[回饋迴路](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=zh-Hant#feedback-loops)），郵件會自動重新導向至Adobe所管理的技術信箱。 之後，系統會自動將使用者的電子郵件地址傳送到狀態為　**[!UICONTROL Denylisted]**　的隔離區。此狀態僅適用於地址，而且設定檔不在封鎖清單中，因此使用者會繼續收到SMS訊息和推播通知。
+如果使用者將電子郵件歸類為垃圾訊息（[回饋迴路](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#feedback-loops)），郵件會自動重新導向至Adobe所管理的技術信箱。 之後，系統會自動將使用者的電子郵件地址傳送到狀態為　**[!UICONTROL Denylisted]**　的隔離區。此狀態僅適用於地址，而且設定檔不在封鎖清單中，因此使用者會繼續收到SMS訊息和推播通知。
 
 >[!NOTE]
 >
@@ -117,14 +117,14 @@ Adobe Campaign會根據傳送失敗型別和錯誤訊息限定期間指派的原
 
 與硬錯誤相反，軟錯誤不會立即傳送要隔離的地址，而是會增加錯誤計數器。
 
-將在[傳遞期間](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period)執行重試。 當錯誤計數器達到限制臨界值時，該地址就會進入隔離區。如需詳細資訊，請參閱[傳送暫時失敗後重試](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure)。
+將在傳送期間執行重試。 在[傳遞傳送](communication-channels.md) > **定義有效期間**&#x200B;下檢視此&#x200B;**頁面**。 當錯誤計數器達到限制臨界值時，該地址就會進入隔離區。如需詳細資訊，請參閱[傳送暫時失敗後重試](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure)。
 
 如果最後一次重大錯誤發生在10天以前，則會重新初始化錯誤計數器。 然後，位址狀態會變更為&#x200B;**有效**，而且會由[資料庫清理](../../production/using/database-cleanup-workflow.md)工作流程從隔離清單中刪除該位址。
 
 
 對於託管或混合安裝，如果您已升級至[增強型MTA](sending-with-enhanced-mta.md)，在&#x200B;**[!UICONTROL Erroneous]**&#x200B;狀態的情況下要執行的最大重試次數和重試之間的最小延遲，現在取決於IP在歷史和目前指定網域的執行狀況。
 
-對於使用舊版Campaign MTA的內部部署安裝和託管/混合安裝，您可以修改錯誤數量和兩個錯誤之間的期間。 若要這麼做，請變更[部署精靈](../../installation/using/deploying-an-instance.md) (**[!UICONTROL Email channel]** > **[!UICONTROL Advanced parameters]**)或傳遞層級[的](../../delivery/using/steps-sending-the-delivery.md#configuring-retries)中的對應設定。
+對於使用舊版Campaign MTA的內部部署安裝和託管/混合安裝，您可以修改錯誤數量和兩個錯誤之間的期間。 若要這麼做，請在[部署精靈](../../installation/using/deploying-an-instance.md) (**[!UICONTROL Email channel]** > **[!UICONTROL Advanced parameters]**)中或在傳遞層級變更對應的設定。 在[傳送傳遞](communication-channels.md) > **設定重試**&#x200B;下檢視此&#x200B;**頁面**。
 
 
 ## 從隔離中移除地址 {#removing-a-quarantined-address}
@@ -564,7 +564,7 @@ SMS訊息的隔離機制與一般程式在整體上相同。 請參閱[關於隔
  </tbody> 
 </table>
 
-延伸通用SMPP聯結器的&#x200B;**&#x200B;**
+延伸通用SMPP聯結器的&#x200B;****
 
 使用SMPP通訊協定傳送SMS訊息時，錯誤管理的處理方式不同。 如需有關Extended generic SMPP聯結器的詳細資訊，請參閱[此頁面](sms-set-up.md#creating-an-smpp-external-account)。
 

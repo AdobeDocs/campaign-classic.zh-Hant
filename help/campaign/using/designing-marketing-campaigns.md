@@ -7,9 +7,9 @@ feature: Campaigns
 hide: true
 hidefromtoc: true
 exl-id: 4e0df18f-3623-4dfb-a2f8-ad293dbc4dd5
-source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '441'
 ht-degree: 22%
 
 ---
@@ -24,7 +24,7 @@ Adobe Campaign可讓您定義、最佳化、執行和分析通訊與行銷活動
 >[!NOTE]
 >
 >如需Adobe Campaign核心功能的詳細資訊，請參閱[本節](../../platform/using/about-adobe-campaign-classic.md)部分。\
->與各種通道上的母體目標定位、訊息個人化和訊息傳遞相關的功能在[本節](../../delivery/using/steps-about-delivery-creation-steps.md)中有詳細說明。
+>與各種通道上的母體目標定位、訊息個人化和訊息傳送相關的功能，在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}中有詳細說明。
 
 ![](assets/do-not-localize/how-to-video.png) [在影片中探索行銷活動索引鍵概念](#video)
 

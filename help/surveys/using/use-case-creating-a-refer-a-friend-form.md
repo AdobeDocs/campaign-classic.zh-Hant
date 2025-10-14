@@ -5,9 +5,9 @@ description: 瞭解建立「推薦朋友」表單的步驟
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Surveys
 exl-id: bd94c41a-813a-4ddb-a2bd-c3deab022482
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '628'
+source-wordcount: '630'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >只要收件者未表示同意，您就無法將兩者與收件者儲存在資料庫中。 它們會暫時儲存在專為病毒式行銷活動設計的&#x200B;**訪客**&#x200B;資料表(**nms：visitor**)中。 由於&#x200B;**清除**&#x200B;作業，此表格會定期清除。
+   >只要收件者未表示同意，您就無法將兩者與收件者儲存在資料庫中。 它們會暫時儲存在專為病毒式行銷活動設計的&#x200B;**訪客**&#x200B;資料表(**nms:visitor**)中。 由於&#x200B;**清除**&#x200B;作業，此表格會定期清除。
    >
    >在此範例中，我們想要鎖定收件者，以建議他們參與反向連結建議的競爭。 不過，在這封郵件中，我們也要向他們提供我們其中一個資訊服務的訂閱。 如果他們訂閱，可以儲存在資料庫中。
 
@@ -88,7 +88,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >如需傳遞範本的詳細資訊，請參閱[此頁面](../../delivery/using/about-templates.md)。
+   >如需傳遞範本的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}。
 
 1. 建立用於傳遞訂閱訊息的第二個指令碼。
 
@@ -117,7 +117,7 @@ ht-degree: 0%
     </delivery>)
    ```
 
-1. Publish競爭表單，並傳送邀請給初始目標的收件者。 當其中一個邀請朋友時，會建立以&#x200B;**轉介選件**&#x200B;範本為基礎的傳遞。
+1. 發佈競爭表單並傳送邀請給初始目標的收件者。 當其中一個邀請朋友時，會建立以&#x200B;**轉介選件**&#x200B;範本為基礎的傳遞。
 
    ![](assets/s_ncs_admin_survey_viral_sample_8.png)
 

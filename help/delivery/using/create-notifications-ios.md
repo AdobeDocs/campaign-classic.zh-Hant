@@ -7,16 +7,16 @@ role: User, Developer, Data Engineer
 hide: true
 hidefromtoc: true
 exl-id: 4520504a-0d9f-4ea7-a5a8-0c07948af4f0
-source-git-commit: 89e350c727fb9379d28916f79d9749f22fd4974f
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '971'
-ht-degree: 8%
+source-wordcount: '980'
+ht-degree: 7%
 
 ---
 
 # 建立iOS通知{#create-notifications-ios}
 
-本節詳細說明特定於iOS通知傳送的元素。 在[本節](steps-about-delivery-creation-steps.md)中介紹了傳遞建立的全域概念。
+本節詳細說明特定於iOS通知傳送的元素。 在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}中介紹了傳遞建立的全域概念。
 
 從建立新傳遞開始。
 
@@ -34,7 +34,7 @@ ht-degree: 8%
 
    >[!NOTE]
    >
-   >選取傳遞的目標母體時的詳細程式會顯示在[本節](steps-defining-the-target-population.md)中。
+   >選取傳遞目標母體時的詳細程式，會顯示在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#target-population.){target="_blank"}的此章節中。
    >
    >如需使用個人化欄位的詳細資訊，請參閱[本區段](about-personalization.md)。
    >

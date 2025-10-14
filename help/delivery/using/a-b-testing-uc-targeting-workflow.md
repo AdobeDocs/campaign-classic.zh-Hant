@@ -1,23 +1,23 @@
 ---
 product: campaign
-title: 建立目標定位工作流程
+title: 建立目標選擇工作流程
 description: 瞭解如何透過專屬的使用案例執行A/B測試
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: A/B Testing
 role: User
 exl-id: aa21fa33-aef9-484a-b454-0cd5a6868a98
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '144'
-ht-degree: 4%
+source-wordcount: '150'
+ht-degree: 5%
 
 ---
 
 # AB測試：建立目標定位工作流程 {#step-1--creating-a-targeting-workflow}
 
-您必須在行銷活動的&#x200B;**[!UICONTROL Targeting and Workflows]**&#x200B;索引標籤中建立工作流程。 它由一個&#x200B;**[!UICONTROL Query]**&#x200B;活動、連結到兩個&#x200B;**[!UICONTROL Email delivery]**&#x200B;活動的&#x200B;**[!UICONTROL Split]**&#x200B;活動、**[!UICONTROL Wait]**&#x200B;活動、**[!UICONTROL JavaScript code]**&#x200B;活動和&#x200B;**[!UICONTROL Delivery]**&#x200B;活動組成。
+您必須在行銷活動的&#x200B;**[!UICONTROL Targeting and Workflows]**&#x200B;索引標籤中建立工作流程。 它由一個&#x200B;**[!UICONTROL Query]**&#x200B;活動、連結到兩個&#x200B;**[!UICONTROL Split]**&#x200B;活動的&#x200B;**[!UICONTROL Email delivery]**&#x200B;活動、**[!UICONTROL Wait]**&#x200B;活動、**[!UICONTROL JavaScript code]**&#x200B;活動和&#x200B;**[!UICONTROL Delivery]**&#x200B;活動組成。
 
-1. 如果您尚未這麼做，請建立行銷活動（如需詳細資訊，請參閱[本區段](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign)）。
+1. 如果您尚未這麼做，請建立行銷活動。 如需詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=zh-Hant){target=_blank}。
 
    ![](assets/use_case_abtesting_targetwkfl_001.png)
 
@@ -25,7 +25,7 @@ ht-degree: 4%
 
    ![](assets/use_case_abtesting_targetwkfl_002.png)
 
-1. 變更現有工作流程的標籤或按一下&#x200B;**[!UICONTROL Add]**&#x200B;以建立新工作流程（如需詳細資訊，請參閱[本區段](../../campaign/using/marketing-campaign-deliveries.md#selecting-the-target-population)）。
+1. 變更現有工作流程的標籤或按一下&#x200B;**[!UICONTROL Add]**&#x200B;以建立新工作流程(如需詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=zh-Hant){target="_blank"}。
 
    ![](assets/use_case_abtesting_targetwkfl_003.png)
 

@@ -6,7 +6,7 @@ badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v
 feature: Personalization
 role: User
 exl-id: e5239d99-256b-412b-be20-f64f822da9c3
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 1%
@@ -17,13 +17,13 @@ ht-degree: 1%
 
 ## 關於變數PDF檔案 {#about-variable-pdf-documents}
 
-Adobe Campaign可讓您從LibreOffice或Microsoft Word檔案，產生電子郵件附件的變數PDF檔案。
+Adobe Campaign可讓您從LibreOffice或Microsoft Word檔案，產生電子郵件附件的可變PDF檔案。
 
 支援下列擴充功能： 「.docx」、「.doc」和「.odt」。
 
 若要個人化您的檔案，可使用與電子郵件個人化相同的JavaScript功能。
 
-您必須啟用&#x200B;**[!UICONTROL "The content of the file is personalized and converted to PDF during the delivery of each message"]**&#x200B;選項。 將檔案附加至傳遞電子郵件時，可存取此選項。 如需附加計算檔案的詳細資訊，請參閱[附加檔案](attaching-files.md)區段。
+您必須啟用&#x200B;**[!UICONTROL "The content of the file is personalized and converted to PDF during the delivery of each message"]**&#x200B;選項。 將檔案附加至傳遞電子郵件時，可存取此選項。 如需附加計算檔案的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/attaching-files.html){target="_blank"}。
 
 商業發票表頭個人化的範例：
 

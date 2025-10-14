@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 exl-id: f7dfbc22-4ac3-4b61-927f-34ecc4e35154
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '717'
-ht-degree: 23%
+source-wordcount: '720'
+ht-degree: 22%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 23%
 
 ## 設定自動更新 {#setting-up-an-automatic-update}
 
-可透過工作流程設定自動更新。 如需詳細資訊，請參閱[本章節](../../workflow/using/update-data.md)。
+可透過工作流程設定自動更新。 如需詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/update-data.html){target="_blank"}。
 
 ## 執行大量更新 {#performing-a-mass-update}
 
@@ -123,7 +123,7 @@ ht-degree: 23%
 
 如果取消核取&#x200B;**[!UICONTROL Do not keep a trace of this job in the database]**&#x200B;選項，您可以選取（或建立）執行資料夾，以儲存此處理序的資訊。
 
-若要檢查此程式，請移至此作業相關收件者設定檔上的&#x200B;**[!UICONTROL Subscriptions]**&#x200B;標籤，或移至透過&#x200B;**[!UICONTROL Profiles and Targets > Services and Subscriptions]**&#x200B;節點存取的&#x200B;**[!UICONTROL Subscriptions]**&#x200B;標籤。
+若要檢查此程式，請移至此作業相關收件者設定檔上的&#x200B;**[!UICONTROL Subscriptions]**&#x200B;標籤，或移至透過&#x200B;**[!UICONTROL Subscriptions]**&#x200B;節點存取的&#x200B;**[!UICONTROL Profiles and Targets > Services and Subscriptions]**&#x200B;標籤。
 
 ![](assets/s_ncs_user_selection_subscribe_service_4.png)
 

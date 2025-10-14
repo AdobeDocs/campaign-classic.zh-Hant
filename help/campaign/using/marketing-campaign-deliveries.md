@@ -7,9 +7,9 @@ feature: Campaigns, Resource Management, Cross Channel Orchestration
 hide: true
 hidefromtoc: true
 exl-id: 1dd3c080-444d-45f8-9562-d2d01a9d2860
-source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1485'
+source-wordcount: '1491'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 從行銷活動建立傳遞時，會連結至此行銷活動，並在行銷活動層級合併。
 
-![](assets/do-not-localize/how-to-video.png) [在影片中探索此功能](#create-email-video)
+![](assets/do-not-localize/how-to-video.png)[在影片中探索此功能](#create-email-video)
 
 ## 建立傳遞 {#creating-deliveries}
 
@@ -28,7 +28,7 @@ ht-degree: 1%
 
 ![](assets/campaign_op_add_delivery.png)
 
-建議的設定適用於不同型別的傳遞：直接郵件、電子郵件、行動裝置頻道。 [了解更多](../../delivery/using/steps-about-delivery-creation-steps.md)。
+建議的設定適用於不同型別的傳遞：直接郵件、電子郵件、行動裝置頻道。 在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}中瞭解更多。
 
 ## 開始傳遞 {#starting-a-delivery}
 
@@ -117,7 +117,7 @@ ht-degree: 1%
 
 ## 管理相關檔案 {#managing-associated-documents}
 
-您可以為行銷活動跟各種檔案建立關聯：報告、照片、網頁、圖表等。這些檔案可以是任何格式(Microsoft Word、PowerPoint、PNG、JPG、Acrobat PDF等)。 在本節[&#128279;](../../campaign/using/marketing-campaign-assets.md)中瞭解如何將檔案與行銷活動連結。
+您可以為行銷活動跟各種檔案建立關聯：報告、照片、網頁、圖表等。這些檔案可以是任何格式(Microsoft Word、PowerPoint、PNG、JPG、Acrobat PDF等)。 在本節[中瞭解如何將檔案與行銷活動](../../campaign/using/marketing-campaign-assets.md)連結。
 
 >[!IMPORTANT]
 >
@@ -170,7 +170,7 @@ ht-degree: 1%
 
 #### 建立大綱 {#creating-an-outline}
 
-若要建立大綱，請按一下相關行銷活動之&#x200B;**[!UICONTROL Edit > Documents]**&#x200B;索引標籤中的&#x200B;**[!UICONTROL Delivery outlines]**&#x200B;子索引標籤。
+若要建立大綱，請按一下相關行銷活動之&#x200B;**[!UICONTROL Delivery outlines]**&#x200B;索引標籤中的&#x200B;**[!UICONTROL Edit > Documents]**&#x200B;子索引標籤。
 
 >[!NOTE]
 >
@@ -198,7 +198,7 @@ ht-degree: 1%
 
   ![](assets/s_ncs_user_op_add_composition_field_button.png)
 
-* 資源是在行銷資源儀表板中產生的行銷資源，透過&#x200B;**[!UICONTROL Campaigns]**&#x200B;標籤的&#x200B;**[!UICONTROL Resources]**&#x200B;連結存取。
+* 資源是在行銷資源儀表板中產生的行銷資源，透過&#x200B;**[!UICONTROL Resources]**&#x200B;標籤的&#x200B;**[!UICONTROL Campaigns]**&#x200B;連結存取。
 
   ![](assets/s_ncs_user_mkg_resource_ovv.png)
 

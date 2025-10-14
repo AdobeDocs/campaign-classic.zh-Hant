@@ -6,9 +6,9 @@ badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v
 feature: Monitoring
 role: User, Data Engineer
 exl-id: 44ecc8c6-6584-43eb-96b4-7d8463053123
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1186'
+source-wordcount: '1193'
 ht-degree: 5%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 5%
 
 * [瞭解傳遞故障](understanding-delivery-failures.md)
 * [瞭解隔離管理](understanding-quarantine-management.md)
-* [關於傳遞的最佳實務](delivery-best-practices.md)
+* [傳遞最佳實務](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html){target="_blank"}
 * [管理傳遞能力](about-deliverability.md)
 
 ## 傳遞摘要 {#delivery-summary}
@@ -44,7 +44,7 @@ ht-degree: 5%
 
 ## 傳遞報告 {#delivery-reports}
 
-可從&#x200B;**[!UICONTROL Summary]**&#x200B;標籤存取的&#x200B;**[!UICONTROL Reports]**&#x200B;連結可讓您檢視與傳遞動作相關的一組報告：一般傳遞報告、詳細報告、傳遞報告、失敗訊息的分發、年初匯率、點按和交易等。
+可從&#x200B;**[!UICONTROL Reports]**&#x200B;標籤存取的&#x200B;**[!UICONTROL Summary]**&#x200B;連結可讓您檢視與傳遞動作相關的一組報告：一般傳遞報告、詳細報告、傳遞報告、失敗訊息的分發、年初匯率、點按和交易等。
 
 您可以根據自己的需求設定此標籤的內容。 如需傳遞報告的詳細資訊，請參閱[本節](../../reporting/using/delivery-reports.md)。
 
@@ -64,7 +64,7 @@ ht-degree: 5%
 
 **[!UICONTROL Display the mirror page for this message...]**&#x200B;連結可讓您在新視窗中檢視從清單選取之傳遞內容的映象頁面。
 
-映象頁面僅適用於已定義HTML內容的傳送。 如需詳細資訊，請參閱[產生映象頁面](sending-messages.md#generating-the-mirror-page)。
+映象頁面僅適用於已定義HTML內容的傳送。 如需詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/mirror-page.html){target="_blank"}。
 
 ![](assets/s_ncs_user_wizard_miror_page_link.png)
 
@@ -98,7 +98,7 @@ ht-degree: 5%
 
 **[!UICONTROL Refresh]**&#x200B;按鈕可讓您更新資料。 使用&#x200B;**[!UICONTROL Filters]**&#x200B;按鈕來定義資料的篩選器。
 
-特殊圖示可讓您識別錯誤或警告。 請參閱[分析傳遞](steps-validating-the-delivery.md#analyzing-the-delivery)。
+特殊圖示可讓您識別錯誤或警告。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html){target="_blank"}中的本節。
 
 **[!UICONTROL Proofs]**&#x200B;子索引標籤可讓您檢視已傳送的校樣清單。
 

@@ -6,10 +6,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: b8a6a0db27826309456c285c08d4f1d85de70283
-workflow-type: ht
-source-wordcount: '846'
-ht-degree: 100%
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+workflow-type: tm+mt
+source-wordcount: '857'
+ht-degree: 97%
 
 ---
 
@@ -137,7 +137,7 @@ ht-degree: 100%
 <tr>
 <td><p>Libre Office</p></td>
 <td>
-<p>7 (及舊版，若是內嵌在您的系統中)</p>
+<p>7 (及舊版，若是嵌入在您的系統中)</p>
 </td>
 <td>
 <p></p>
@@ -437,7 +437,7 @@ ht-degree: 100%
 
 Campaign 用戶端主控台必須使用 Microsoft Edge WebView2 執行階段最新版本。
 
-從 [Microsoft 開發人員網站](https://www.adobe.com/go/acc-ms-webview2-runtime-download_tw)下載 Microsoft Edge WebView2。
+從 [Microsoft 開發人員網站](https://www.adobe.com/go/acc-ms-webview2-runtime-download)下載 Microsoft Edge WebView2。
 
 
 ## Mobile SDK {#MobileSDK}
@@ -472,7 +472,7 @@ Campaign 用戶端主控台必須使用 Microsoft Edge WebView2 執行階段最�
 
 ## 瀏覽器 {#Browsers}
 
-下列瀏覽器的最新版本與 Campaign for [Web Access](../../campaign/using/accessing-marketing-campaigns.md#using-the-web-interface-) 相容。
+下列瀏覽器在其最新版本中與Campaign相容，可用於網頁存取。 如需詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-create.html#use-the-web-interface-){target=_blank}。
 
 * Google Chrome
 * Microsoft Edge

@@ -8,9 +8,9 @@ audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 exl-id: c2293fc5-c9ba-4a73-8f39-fa7cdd06e8dd
-source-git-commit: b11185da8236d6100d98eabcc9dc1cf2cffa70af
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '592'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 
 
-## 匯入對象 {#importing-an-audience}
+## 匯入客群 {#importing-an-audience}
 
 您可以透過收件者清單，將對象/區段從Audience Manager匯入Adobe Campaign。
 
@@ -32,7 +32,7 @@ ht-degree: 0%
 1. 在開啟的視窗中，按一下「**[!UICONTROL Select a shared audience]**」以移至其他Adobe Experience Cloud解決方案所提供的共用對象/區段清單。
 1. 選取對象並進行確認。 對象的資訊會自動完成。
 
-   請注意，若要能夠匯入共用對象，您應該在Admin Console中被指派&#x200B;**[!UICONTROL Audience library]**&#x200B;產品，並成為Audience Manager的管理員。 如需詳細資訊，請參閱[Admin Console檔案](https://helpx.adobe.com/tw/enterprise/managing/user-guide.html)。
+   請注意，若要匯入共用的對象，您應該在Admin Console中被指派為&#x200B;**[!UICONTROL Audience library]**&#x200B;產品，並成為Audience Manager的管理員。 如需詳細資訊，請參閱[Admin Console檔案](https://helpx.adobe.com/tw/enterprise/managing/user-guide.html)。
 
    ![](assets/aam_import_audience_3.png)
 
@@ -50,13 +50,13 @@ ht-degree: 0%
 >
 >如果您要將對象從Adobe Analytics匯入至Adobe Campaign，首先需要在Audience Manager中共用這些對象。 此程式需要12到24小時，必須將其新增到與Campaign的24到36小時同步中。
 >
->在該特定情況下，對象共用時間範圍最長可達60小時。 如需Audience Manager中Adobe Analytics對象共用的詳細資訊，請參閱[Adobe Analytics檔案](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html?lang=zh-Hant){target="_blank"}。
+>在該特定情況下，對象共用時間範圍最長可達60小時。 如需Audience Manager中Adobe Analytics對象共用的詳細資訊，請參閱[Adobe Analytics檔案](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html){target="_blank"}。
 
 每次同步化時，對象資料都會完全取代。 只能匯入區段。 不支援包含鍵值組、特徵和規則的精細資料。
 
 ## 匯出對象 {#exporting-an-audience}
 
-您可以使用工作流程，將受眾從Adobe Campaign匯出至Audience Manager。 建立及使用工作流程的程式在[此檔案](../../workflow/using/building-a-workflow.md)中有詳細說明。 匯出的對象會儲存為區段：
+您可以使用工作流程，將受眾從Adobe Campaign匯出至Audience Manager。 建立及使用工作流程的詳細資訊載於[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=zh-Hant){target="_blank"}。 匯出的對象會儲存為區段：
 
 1. 建立新的目標定位工作流程。
 1. 使用不同的可用活動，鎖定一組收件者。
@@ -80,7 +80,7 @@ ht-degree: 0%
 
 然後會匯出對象。 儲存對象活動有兩個外站轉變。 主要轉變包含已成功匯出的收件者。 額外的轉變包含無法對應訪客ID或宣告ID的收件者。
 
-解決方案之間的同步化需要24到36小時的時間。 在這段期間後，您將能夠找到新的受眾，並在其他Adobe Experience Cloud解決方案中重複使用它。 如需使用Adobe Campaign共用對象的詳細資訊，請參閱此[檔案](https://experienceleague.adobe.com/zh-hant/docs/core-services/interface/services/audiences/create){target="_blank"}。
+解決方案之間的同步化需要24到36小時的時間。 在這段期間後，您將能夠找到新的受眾，並在其他Adobe Experience Cloud解決方案中重複使用它。 如需使用Adobe Campaign共用對象的詳細資訊，請參閱此[檔案](https://experienceleague.adobe.com/en/docs/core-services/interface/services/audiences/create){target="_blank"}。
 
 >[!NOTE]
 >

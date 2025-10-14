@@ -6,10 +6,10 @@ feature: Workflows, Data Management
 hide: true
 hidefromtoc: true
 exl-id: 366acc1e-d769-4053-9fa1-f47182627c07
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '510'
-ht-degree: 5%
+source-wordcount: '516'
+ht-degree: 4%
 
 ---
 
@@ -59,7 +59,7 @@ ht-degree: 5%
 
 **[!UICONTROL Target extension]** (targetData)型別個人化元素不適用於目標工作流程。 必須在工作流程中建置傳遞目標，並在傳遞的入站轉變中指定。
 
-如果您想要建立傳遞校樣，需要根據&#x200B;**[!UICONTROL Address substitution]**&#x200B;模式建置校樣目標，才能輸入個人化資料。 如需詳細資訊，請參閱本[區段](../../delivery/using/steps-defining-the-target-population.md#using-address-substitution-in-proof)。
+如果您想要建立傳遞校樣，需要根據&#x200B;**[!UICONTROL Address substitution]**&#x200B;模式建置校樣目標，才能輸入個人化資料。 如需詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#target-population){target="_blank"}中的本節。
 
 在下列範例中，我們將收集客戶資訊清單，用於個人化電子郵件中。
 

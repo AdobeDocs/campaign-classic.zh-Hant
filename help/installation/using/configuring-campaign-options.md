@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
-source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '3831'
+source-wordcount: '3834'
 ht-degree: 1%
 
 ---
@@ -57,8 +57,9 @@ ht-degree: 1%
   </tr>
   <tr> 
    <td> <span class="uicontrol">NMS_ActivateOwnerConfirmation</span> <br /> </td> 
-   <td><p> 可讓您允許負責傳遞的運運算元確認傳送（若指定的特定運運算元或運運算元群組用於傳遞的屬性中開始傳遞）。</p><p> 若要這麼做，請輸入"1"作為值來啟動選項。 若要停用此選項，請輸入「0」。</p><p> 然後，傳送確認程式將依預設運作：只有傳送屬性中針對傳送指定的操作員或操作員群組（或管理員）才能確認並執行傳送。 請參閱<a href="../../campaign/using/marketing-campaign-deliveries.md#starting-an-online-delivery">本節</a>。</p> </td> 
-   <tr> 
+   <td><p> 可讓您允許負責傳遞的運運算元確認傳送（若指定的特定運運算元或運運算元群組用於傳遞的屬性中開始傳遞）。</p><p> 若要這麼做，請輸入"1"作為值來啟動選項。 若要停用此選項，請輸入「0」。</p><p> 然後，傳送確認程式將依預設運作：只有傳送屬性中針對傳送指定的操作員或操作員群組（或管理員）才能確認並執行傳送。 請參閱<a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html#start-a-delivery" target="_blank">本節</a>。</p> </td>
+
+<tr> 
    <td> <span class="uicontrol">Nms_DefaultRcpSchema</span> <br /> </td> 
    <td> Adobe Campaign使用「Nms_DefaultRcpSchema」全域變數與預設收件者資料庫(nms：recipient)對話。<br />選項值必須對應至符合外部收件者資料表的結構描述名稱。<br /> </td> 
   </tr> 
@@ -208,7 +209,7 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_DeliveryPreparationWindow</span> <br /> </td> 
-   <td><p>計算執行中的傳遞數目時，<span class="uicontrol"><a href="../../workflow/using/about-technical-workflows.md">operationMgt</a></span>技術工作流程會使用此選項。</p>它可讓您定義天數，超過該天后，狀態不一致的傳送會從執行中的傳送計數中排除。</p><p>預設情況下，此值會設為「7」，這表示將排除超過7天的不一致傳送。</p></td> 
+   <td><p>計算執行中的傳遞數目時，<span class="uicontrol"><a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html" target="_blank">operationMgt</a></span>技術工作流程會使用此選項。</p>它可讓您定義天數，超過該天后，狀態不一致的傳送會從執行中的傳送計數中排除。</p><p>預設情況下，此值會設為「7」，這表示將排除超過7天的不一致傳送。</p></td> 
   </tr>
   <tr> 
    <td> <span class="uicontrol">NmsPaper_SenderLine1</span> <br /> </td> 
@@ -364,7 +365,7 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_OperationMgtDebug</span> <br /> </td> 
-   <td> 可讓您監視<a href="../../workflow/using/about-technical-workflows.md">operationMgt</a>技術工作流程執行。 啟動時（值為「1」），執行資訊會記錄在工作流程稽核記錄中。<br /> </td> 
+   <td> 可讓您監視<a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html" target="_blank">operationMgt</a>技術工作流程執行。 啟動時（值為「1」），執行資訊會記錄在工作流程稽核記錄中。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_TimeRange</span> <br /> </td> 
@@ -728,7 +729,7 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">nmsPipeline_config</span> <br /> </td> 
-   <td> 可讓您設定Experience Cloud觸發器。 資料型別為「長文字」，且必須採用JSON格式。 請參閱<a class="anchorLink" href="https://helpx.adobe.com/campaign/kb/triggers-and-campaign.html#PipelineoptionNmsPipelineConfig" target="_blank">如何搭配Adobe Campaign Classic使用Experience Cloud觸發程式</a>。<br /> </td> 
+   <td> 可讓您設定Experience Cloud Triggers。 資料型別為「長文字」，且必須採用JSON格式。 請參閱<a class="anchorLink" href="https://helpx.adobe.com/campaign/kb/triggers-and-campaign.html#PipelineoptionNmsPipelineConfig" target="_blank">如何搭配Adobe Campaign Classic使用Experience Cloud Triggers</a>。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">LASTIMPORT_&lt;%=instance.internalName%&gt;_&lt;%=activityName%&gt;</span> <br /> </td> 
@@ -756,7 +757,7 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcCapabilities_Teradata</span> <br /> </td> 
-   <td> teradata聯結器選項。<br /> </td> 
+   <td> Teradata聯結器選項。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcCapabilities_Hive</span> <br /> </td> 
@@ -765,7 +766,7 @@ ht-degree: 1%
  </tbody> 
 </table>
 
-## 優惠 {#offers}
+## 產品建議 {#offers}
 
 <table> 
  <thead> 

@@ -6,9 +6,9 @@ badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v
 feature: Monitoring, Deliverability
 role: User
 exl-id: 86c7169a-2c71-4c43-8a1a-f39871b29856
-source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '2567'
+source-wordcount: '2578'
 ht-degree: 12%
 
 ---
@@ -117,13 +117,13 @@ ht-degree: 12%
    <td> 無效的網域 </td> 
    <td> 柔光 </td> 
    <td> 2 </td> 
-   <td> 電子郵件地址的網域不正確或已不存在。 此設定檔將再次定位，直到錯誤計數達到5。之後，記錄將設定為隔離狀態，不會再重試。<br /> </td> 
+   <td> 電子郵件地址的網域不正確或已不存在。 此輪廓將再次定位，直到錯誤計數達到5。之後，記錄將設定為隔離狀態，不會再重試。<br /> </td> 
   </tr> 
   <tr> 
    <td> 郵箱已滿 </td> 
    <td> 柔光 </td> 
    <td> 5 </td> 
-   <td> 此使用者的信箱已滿，無法接受更多郵件。 此設定檔將再次定位，直到錯誤計數達到5。之後，記錄將設定為「隔離」狀態，不會再重試。<br />此型別的錯誤是由清理程式管理，地址在30天後會設定為有效狀態。<br />警告：為了從隔離位址清單自動移除位址，必須啟動資料庫清理技術工作流程。<br /> </td> 
+   <td> 此使用者的信箱已滿，無法接受更多郵件。 此輪廓將再次定位，直到錯誤計數達到5。之後，記錄將設定為「隔離」狀態，不會再重試。<br />此型別的錯誤是由清理程式管理，地址在30天後會設定為有效狀態。<br />警告：為了從隔離位址清單自動移除位址，必須啟動資料庫清理技術工作流程。<br /> </td> 
   </tr> 
   <tr> 
    <td> 未連線 </td> 
@@ -135,10 +135,10 @@ ht-degree: 12%
    <td> 未定義 </td> 
    <td> 未定義 </td> 
    <td> 0 </td> 
-   <td> 此位址正在限定中，因為錯誤尚未增加。 當伺服器傳送新錯誤訊息時，會發生此類錯誤：它可能是孤立的錯誤，但如果再次發生，錯誤計數器會增加，這會提醒技術團隊。 接著，他們可以透過樹狀結構中的<span class="uicontrol">管理</span> / <span class="uicontrol">Campaign Management</span> / <span class="uicontrol">無法傳遞的專案管理</span>節點，執行訊息分析並限定此錯誤。<br /> </td> 
+   <td> 此位址正在限定中，因為錯誤尚未增加。 當伺服器傳送新錯誤訊息時，會發生此類錯誤：它可能是孤立的錯誤，但如果再次發生，錯誤計數器會增加，這會提醒技術團隊。 接著，他們可以透過樹狀結構中的<span class="uicontrol">管理</span> / <span class="uicontrol">行銷活動管理</span> / <span class="uicontrol">無法傳遞的專案管理</span>節點，執行訊息分析並限定此錯誤。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 不符合優惠方案條件 </td> 
+   <td> 不符合產品建議條件 </td> 
    <td> 已忽略 </td> 
    <td> 16 </td> 
    <td> 收件者不符合傳遞中的優惠方案條件。<br /> </td> 
@@ -188,22 +188,22 @@ ht-degree: 12%
 >
 >對於託管或混合式安裝，如果您已升級至[Enhanced MTA](sending-with-enhanced-mta.md)，Campaign將不再使用傳送中的重試設定。 軟退信重試次數和兩次之間的時間長度由Enhanced MTA根據從訊息的電子郵件網域傳回的退信回應的型別和嚴重性來決定。
 
-對於使用舊版Campaign MTA的內部部署安裝和託管/混合安裝，若要修改傳送的持續時間，請轉至傳送或傳送範本的進階引數，並在對應欄位中指定所需的持續時間。 請參閱[定義有效期間](steps-sending-the-delivery.md#defining-validity-period)。
+對於使用舊版Campaign MTA的內部部署安裝和託管/混合安裝，若要修改傳送的持續時間，請轉至傳送或傳送範本的進階引數，並在對應欄位中指定所需的持續時間。 在[傳遞傳送](communication-channels.md) > **定義有效期間**&#x200B;下檢視此&#x200B;**頁面**。
 
-預設設定允許以一小時間隔重試五次，然後每天重試一次，持續四天。 重試次數可全域變更(請聯絡您的Adobe技術管理員)，或針對每個傳遞或傳遞範本進行變更。 請參閱[設定重試次數](steps-sending-the-delivery.md#configuring-retries)。
+預設設定允許以一小時間隔重試五次，然後每天重試一次，持續四天。 重試次數可全域變更(請聯絡您的Adobe技術管理員)，或針對每個傳遞或傳遞範本進行變更。 在[傳送傳遞](communication-channels.md) > **設定重試**&#x200B;下檢視此&#x200B;**頁面**。
 
 ## 同步與非同步錯誤 {#synchronous-and-asynchronous-errors}
 
 訊息可能會立即失敗（同步錯誤），或稍後在傳送後失敗（非同步錯誤）。
 
-* 同步錯誤： Adobe Campaign傳送伺服器連絡的遠端郵件伺服器會立即傳回錯誤訊息，不可傳送至設定檔的伺服器。 Adobe Campaign會對每個錯誤進行認證，以決定是否應隔離相關電子郵件地址。 請參閱[退信資格](#bounce-mail-qualification)。
+* 同步錯誤： Adobe Campaign傳送伺服器連絡的遠端郵件伺服器會立即傳回錯誤訊息，不可傳送至設定檔的伺服器。 Adobe Campaign會對每個錯誤進行認證，以決定是否應隔離相關電子郵件地址。 請參閱[退回電子郵件鑑定](#bounce-mail-qualification)。
 * 非同步錯誤：接收伺服器稍後會重新傳送退回郵件或SR。 此郵件已載入應用程式用來標示有錯誤之郵件的技術信箱。 傳送後一週內，可能會發生非同步錯誤。
 
   >[!NOTE]
   >
   >在[此區段](../../installation/using/deploying-an-instance.md#managing-bounced-emails)中詳細說明退回信箱的設定。
 
-  [回饋迴路](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=zh-Hant#feedback-loops)的運作方式與退回電子郵件類似。 當使用者將電子郵件歸類為垃圾郵件時，您可以在Adobe Campaign中設定電子郵件規則，以封鎖傳送給此使用者的所有郵件。 傳送給已將電子郵件限定為垃圾訊息之使用者的訊息，會自動重新導向至為此目的特別建立的電子郵件方塊。 這些使用者的位址位於封鎖清單中，即使他們未按一下取消訂閱連結。 地址在(**NmsAddress**)隔離資料表中處於封鎖清單中，而不是在(**NmsRecipient**)收件者資料表中。
+  [回饋迴路](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#feedback-loops)的運作方式與退回電子郵件類似。 當使用者將電子郵件歸類為垃圾郵件時，您可以在Adobe Campaign中設定電子郵件規則，以封鎖傳送給此使用者的所有郵件。 傳送給已將電子郵件限定為垃圾訊息之使用者的訊息，會自動重新導向至為此目的特別建立的電子郵件方塊。 這些使用者的位址位於封鎖清單中，即使他們未按一下取消訂閱連結。 地址在(**NmsAddress**)隔離資料表中處於封鎖清單中，而不是在(**NmsRecipient**)收件者資料表中。
 
   >[!NOTE]
   >
@@ -231,7 +231,7 @@ Adobe Campaign平台可讓您透過退回郵件功能管理電子郵件傳送失
 >
 >* **非同步**&#x200B;退信仍由inMail處理序透過&#x200B;**[!UICONTROL Inbound email]**&#x200B;規則限定。 如需詳細資訊，請參閱[電子郵件管理規則](#email-management-rules)。
 >
->* 對於使用不含Webhook的Enhanced MTA **的執行個體，**&#x200B;[!UICONTROL Inbound email]&#x200B;**規則也將用來處理來自Enhanced MTA的同步退信電子郵件，使用的電子郵件地址與非同步退信電子郵件相同。**
+>* 對於使用不含Webhook的Enhanced MTA **的執行個體，**&#x200B;規則也將用來處理來自Enhanced MTA的同步退信電子郵件，使用的電子郵件地址與非同步退信電子郵件相同。**[!UICONTROL Inbound email]**
 
 對於使用舊版Campaign MTA的內部部署安裝和託管/混合安裝，當電子郵件傳送失敗時，Adobe Campaign傳送伺服器會從傳訊伺服器或遠端DNS伺服器收到錯誤訊息。 錯誤清單是由遠端伺服器傳回之訊息中所包含的字串所組成。 系統會為每個錯誤訊息指定失敗型別和原因。
 
@@ -239,11 +239,11 @@ Adobe Campaign平台可讓您透過退回郵件功能管理電子郵件傳送失
 
 ![](assets/tech_quarant_rules_qualif.png)
 
-此錯誤型別第一次出現時，遠端伺服器傳回的訊息會顯示在&#x200B;**[!UICONTROL Delivery log qualification]**&#x200B;資料表的&#x200B;**[!UICONTROL First text]**&#x200B;資料行中。 如果未顯示此欄，請按一下清單右下方的&#x200B;**[!UICONTROL Configure list]**&#x200B;按鈕以選取它。
+此錯誤型別第一次出現時，遠端伺服器傳回的訊息會顯示在&#x200B;**[!UICONTROL First text]**&#x200B;資料表的&#x200B;**[!UICONTROL Delivery log qualification]**&#x200B;資料行中。 如果未顯示此欄，請按一下清單右下方的&#x200B;**[!UICONTROL Configure list]**&#x200B;按鈕以選取它。
 
 ![](assets/tech_quarant_rules_qualif_text.png)
 
-Adobe Campaign會篩選此郵件以刪除變數內容（例如ID、日期、電子郵件地址、電話號碼等） 並在&#x200B;**[!UICONTROL Text]**&#x200B;欄中顯示篩選的結果。 變數已取代為&#x200B;**`#xxx#`**，但取代為&#x200B;**`*`**&#x200B;的位址除外。
+Adobe Campaign篩選此郵件以刪除變數內容（例如ID、日期、電子郵件地址、電話號碼等），並在&#x200B;**[!UICONTROL Text]**&#x200B;欄中顯示篩選結果。 變數已取代為&#x200B;**`#xxx#`**，但取代為&#x200B;**`*`**&#x200B;的位址除外。
 
 此程式允許將相同型別的所有失敗集合在一起，並避免傳送記錄資格表格中出現多個類似錯誤的專案。
 
@@ -315,7 +315,7 @@ For on-premise installations and hosted/hybrid installations using the legacy Ca
 * 您可以選擇是否啟用某些識別標準和加密金鑰來檢查網域名稱，例如&#x200B;**寄件者識別碼**、**網域金鑰**、**DKIM**&#x200B;和&#x200B;**S/MIME**。
 * **SMTP轉送**&#x200B;引數可讓您為特定網域設定轉送伺服器的IP位址和連線埠。 如需詳細資訊，請參閱[本節](../../installation/using/configuring-campaign-server.md#smtp-relay)。
 
-如果郵件顯示於Outlook的寄件者地址中有&#x200B;**[!UICONTROL on behalf of]**，請確定您沒有使用&#x200B;**寄件者識別碼**&#x200B;簽署電子郵件，這是Microsoft過時的專有電子郵件驗證標準。 如果&#x200B;**[!UICONTROL Sender ID]**&#x200B;選項已啟用，請取消核取對應的方塊並聯絡[Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。 您的傳遞能力不受影響。
+如果郵件顯示於Outlook的寄件者地址中有&#x200B;**[!UICONTROL on behalf of]**，請確定您沒有使用&#x200B;**寄件者識別碼**&#x200B;簽署電子郵件，這是Microsoft過時的專有電子郵件驗證標準。 如果&#x200B;**[!UICONTROL Sender ID]**&#x200B;選項已啟用，請取消核取相對應的方塊並聯絡[Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。 您的傳遞能力不受影響。
 
 #### MX管理 {#mx-management}
 

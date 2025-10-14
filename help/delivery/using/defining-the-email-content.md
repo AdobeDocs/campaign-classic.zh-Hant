@@ -8,9 +8,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1958'
+source-wordcount: '1961'
 ht-degree: 1%
 
 ---
@@ -115,7 +115,7 @@ ht-degree: 1%
 
 Adobe Campaign可讓您嘗試新的互動式[AMP for Email](https://amp.dev/about/email/)格式，在特定條件下傳送動態電子郵件。
 
-如需詳細資訊，請參閱[本節](defining-interactive-content.md)。
+如需詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-interactive-content.html){target="_blank"}。
 
 ## 使用內容管理 {#using-content-management}
 
@@ -178,10 +178,10 @@ HTML格式電子郵件傳遞可包含影像。 從傳遞小幫手，您可以匯
 
 若要透過傳送助理管理影像：
 
-1. 按一下工具列中的&#x200B;**[!UICONTROL Tracking & Images]**&#x200B;圖示。
+1. 按一下工具列中的&#x200B;**[!UICONTROL Tracking & Images]**圖示。
    ![](assets/s_ncs_user_email_del_img_param.png)
 
-1. 在&#x200B;**[!UICONTROL Images]**&#x200B;索引標籤中選取&#x200B;**[!UICONTROL Upload images]**。
+1. 在&#x200B;**[!UICONTROL Upload images]**&#x200B;索引標籤中選取&#x200B;**[!UICONTROL Images]**。
 1. 然後，您可以選擇是否要將這些影像納入電子郵件中。
    ![](assets/s_ncs_user_email_del_img_upload.png)
 

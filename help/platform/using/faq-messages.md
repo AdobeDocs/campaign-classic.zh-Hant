@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 7fc24ef2-b021-440b-b1f2-8c77e2425328
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '735'
-ht-degree: 95%
+source-wordcount: '761'
+ht-degree: 84%
 
 ---
 
@@ -26,13 +26,13 @@ ht-degree: 95%
 
 傳遞分析是計算目標群體以及準備傳遞內容的階段。完成傳遞分析後便可傳遞內容。查閱記錄以確定所有事項都正確無誤。
 
-[按一下這裡以瞭解更多](../../delivery/using/steps-validating-the-delivery.md)。
+在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html){target="_blank"}中瞭解更多。
 
 ### 為何要建立測試？ {#why-should-i-create-proofs-}
 
 Adobe 強烈建議您先建立校樣訊息，並在正式發送前先行在核准組測試傳送內容。那麼您就可以驗證訊息內容、個人化及傳遞參數。
 
-[按一下這裡以瞭解更多](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)。
+在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html){target="_blank"}中瞭解更多。
 
 ### 如何在 Adobe Campaign 中使用種子地址？ {#how-to-use-seed-addresses-in-adobe-campaign-}
 
@@ -49,13 +49,13 @@ Adobe 強烈建議您先建立校樣訊息，並在正式發送前先行在核�
 
 若要檢測訊息設定中可能出現的錯誤，Adobe 強烈建議您配置傳遞驗證階段。透過傳送校樣給測試收件人，以確保內容在必要時經常獲得核准。每次進行變更時，都應發送校樣，以核准內容。
 
-[按一下這裡以瞭解更多](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)。
+在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html){target="_blank"}中瞭解更多。
 
 ### 什麼是類型規則？ {#what-is-a-typology-rule-}
 
 為了避免行銷活動之間發生衝突，Adobe Campaign 可以套用特定限制規則來測試各種組合。這樣可確保在遵守公司通訊原則的同時，傳送最符合客戶需求及期望的訊息。
 
-[按一下這裡以瞭解更多](../../campaign-opt/using/about-campaign-typologies.md)。
+請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html?lang=zh-Hant){target="_blank"}。
 
 ## 傳送您的訊息。 {#send-your-messages}
 
@@ -63,25 +63,25 @@ Adobe 強烈建議您先建立校樣訊息，並在正式發送前先行在核�
 
 ### 如何分批次傳送電子郵件？ {#how-can-i-send-emails-in-waves-}
 
-在將內容傳送給較大群體之前，您可以[配置批次](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves)以將訊息劃分為幾個批次，以平衡其負載。
+在將內容傳送給較大母體之前，您可以設定批次以將訊息劃分為幾個批次，以平衡其負載。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/configure-and-send.html#sending-using-multiple-waves){target="_blank"}。
 
 ### 在 Campaign 中建立電子郵件有哪些重要步驟？ {#which-are-the-key-steps-to-create-an-email-in-campaign-}
 
 建立並驗證電子郵件之後，您就可以進行傳送。您可以決定立即向主要目標傳送電子郵件，還是在以後排程傳遞。如有需要，您也可以先行估計目標群體。
 
-[按一下這裡以瞭解更多](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)。
+在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html){target="_blank"}中瞭解更多。
 
 ### 如何排程傳遞？ {#how-to-schedule-a-delivery-}
 
 為了排程傳遞，管理銷售壓力以及避免過度行銷，您可以推延郵件的傳遞。
 
-[按一下這裡以瞭解更多](../../delivery/using/steps-sending-the-delivery.md#scheduling-the-delivery-sending)。
+在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/configure-and-send.html#schedule-delivery-sending){target="_blank"}中瞭解更多。
 
 ### 我可以將附件新增至電子郵件嗎？ {#can-i-add-an-attachment-to-emails-}
 
 使用 Campaign Classic，您可以在電子郵件加入個人化的附件。
 
-[按一下這裡以深入暸解電子郵件附件](../../delivery/using/attaching-files.md)。
+在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/attaching-files.html){target="_blank"}中進一步瞭解電子郵件附件。
 
 ## 追蹤訊息並評估其帶來的影響 {#track-your-messages-and-measure-their-impact}
 
@@ -97,7 +97,7 @@ Adobe 強烈建議您先建立校樣訊息，並在正式發送前先行在核�
 
 ### 我可以在哪裡存取傳送內容和追蹤記錄？ {#where-can-i-access-delivery-and-tracking-logs-}
 
-從此頁面[&#128279;](../../delivery/using/delivery-dashboard.md)瞭解如何追蹤您的傳遞內容，並瞭解收件者的行為。
+從此頁面[瞭解如何追蹤您的傳遞內容，並瞭解收件者的行為](../../delivery/using/delivery-dashboard.md)。
 
 ### 我在哪裡可以取得傳遞報告？ {#where-can-i-get-delivery-reports-}
 

@@ -6,9 +6,9 @@ feature: SMS
 role: User, Developer, Admin
 level: Experienced
 exl-id: 6987cb5e-8821-4619-b0e4-f0fad3355bfb
-source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '981'
+source-wordcount: '982'
 ht-degree: 8%
 
 ---
@@ -71,13 +71,13 @@ ht-degree: 8%
 
 1. 在&#x200B;**[!UICONTROL Mid-Sourcing]**&#x200B;索引標籤中，指定中間來源伺服器連線引數。
 
-   在&#x200B;**[!UICONTROL Account]**&#x200B;和&#x200B;**[!UICONTROL Password]**&#x200B;欄位中輸入[先前建立的SMS聯結器](#create-sms-operator)的詳細資料。
+   在[和](#create-sms-operator)欄位中輸入&#x200B;**[!UICONTROL Account]**&#x200B;先前建立的SMS聯結器&#x200B;**[!UICONTROL Password]**&#x200B;的詳細資料。
 
    ![](assets/mid_external_account_7.png)
 
 1. 按一下&#x200B;**[!UICONTROL Test the connection]**&#x200B;以確認您的設定。
 
-1. 按一下&#x200B;**[!UICONTROL Save]**。
+1. 按一下 **[!UICONTROL Save]**。
 
 ## 在中間伺服器上建立SMPP外部帳戶 {#creating-smpp-mid}
 
@@ -97,7 +97,7 @@ ht-degree: 8%
 
    >[!WARNING]
    >
-   >指派&#x200B;**[!UICONTROL Internal name]**&#x200B;時，請務必遵循指定的命名慣例：
+   >指派&#x200B;**[!UICONTROL Internal name]**時，請務必遵循指定的命名慣例：
    > </br>`SMS Operator Name_Internal Name of the Marketing SMS external account`
 
    ![](assets/mid_external_account_6.png)
@@ -108,7 +108,7 @@ ht-degree: 8%
 
 1. 勾選&#x200B;**[!UICONTROL Enabled]**&#x200B;方塊。
 
-1. 在&#x200B;**[!UICONTROL Mobile]**&#x200B;索引標籤中，從&#x200B;**[!UICONTROL Connector]**&#x200B;下拉式清單中選取&#x200B;**[!UICONTROL Extended generic SMPP]**。
+1. 在&#x200B;**[!UICONTROL Mobile]**&#x200B;索引標籤中，從&#x200B;**[!UICONTROL Extended generic SMPP]**&#x200B;下拉式清單中選取&#x200B;**[!UICONTROL Connector]**。
 
    ![](assets/mid_external_account_4.png)
 
@@ -154,7 +154,7 @@ ht-degree: 8%
 
 ## 變更傳遞範本 {#changing-the-delivery-template}
 
-Adobe Campaign提供位於&#x200B;**[!UICONTROL Resources > Templates > Delivery templates]**&#x200B;節點中的行動傳遞範本。 如需詳細資訊，請參閱[關於範本](about-templates.md)區段。
+Adobe Campaign提供位於&#x200B;**[!UICONTROL Resources > Templates > Delivery templates]**&#x200B;節點中的行動傳遞範本。 如需詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}。
 
 若要透過SMS頻道傳送訊息，您必須建立包含頻道聯結器參照的範本。
 
@@ -170,7 +170,7 @@ Adobe Campaign提供位於&#x200B;**[!UICONTROL Resources > Templates > Delivery
 
    ![](assets/delivery_template_mid_2.png)
 
-1. 按一下&#x200B;**[!UICONTROL Properties]**。
+1. 按一下 **[!UICONTROL Properties]**。
 
 1. 在&#x200B;**[!UICONTROL General]**&#x200B;索引標籤中，選取與您在[在行銷伺服器上建立SMS外部帳戶](#create-accound-mkt)區段中建立的外部帳戶對應的路由模式。
 

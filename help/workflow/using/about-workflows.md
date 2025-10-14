@@ -3,78 +3,103 @@ product: campaign
 title: 關於工作流程
 description: 使用工作流程自動化程序、管理資料和客群、傳送訊息等
 feature: Workflows, Data Management
-hide: true
-hidefromtoc: true
-exl-id: 51be6b90-2a7a-4757-9754-d16c540a87ff
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+exl-id: 024a7344-9376-4ff3-926a-003148229f9f
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '650'
-ht-degree: 37%
+source-wordcount: '232'
+ht-degree: 9%
 
 ---
 
-# 開始使用工作流程{#gs-workflows}
+# 使用工作流程自動化 {#gs-workflows}
+
+Adobe Campaign的工作流程可讓您的團隊簡化並自動化整個平台的端對端業務流程。 透過直覺式的圖形介面，您可以設計和管理工作流程來協調工作，例如資料細分、行銷活動執行、檔案處理，甚至使用者核准 — 全都集中在一處。
+
+例如，您可以自動執行從遠端伺服器擷取檔案、擷取檔案內容，以及順暢地將資料載入Adobe Campaign伺服器的程式，減少手動工作量，並提升營運效率。 工作流程引擎可確保每個步驟都可靠地執行，並受到追蹤以利可視性和控制。
+
+>[!BEGINTABS]
+
+>[!TAB 工作流程檔案]
+
+若要進一步瞭解工作流程管理，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=zh-Hant){target=_blank}。
+
+
+[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=zh-Hant){target=_blank}
+
+
+>[!TAB 有用的連結]
+
+在Campaign v8檔案中瞭解與工作流程管理相關的關鍵步驟：
+
+* [工作流程活動](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/activities.html?lang=zh-Hant){target=_blank}：活動是任務範本。 工作流程包括目標定位、流量控制、動作和事件活動。
+
+* [建立工作流程](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=zh-Hant){target=_blank}：瞭解如何建立和執行目標定位、行銷活動和技術工作流程。
+
+* [最佳實務](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html){target=_blank}：瞭解最佳化行銷活動工作流程效能、改善工作流程設計和定義正確設定的指導方針。
+
+* [監視工作流程](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target=_blank}：瞭解如何監視工作流程執行，以確保一切正常執行。
+
+* [工作流程使用案例](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/workflow-use-cases.html){target=_blank}：瞭解哪些內容可以使用工作流程，以及如何透過端對端使用案例實作工作流程。
+
+
+>[!ENDTABS]
 
 
 
-## 關於工作流程{#about-workflows}
 
-Adobe Campaign 包括一個工作流程模組，可跨應用程式伺服器的不同模組策劃所有流程和任務。使用這個全方位的圖像式環境，您可以設計各式流程，包含細分、行銷活動執行、檔案處理、人力參與等。工作流程引擎將執行並追蹤這些流程。
 
-例如，您可以使用工作流程從伺服器下載檔案、解壓縮，然後將其中的記錄匯入 Adobe Campaign 資料庫。
+<!--
 
-此外，工作流程也涉及到要進行通知的一或多個操作者，或者是可以選擇並核准流程的相關人員。如此一來，就可以在開始傳送前建立傳送動作、指派任務給一位或多位操作員來處理內容、指定目標以及核准校樣。
+Adobe Campaign uses workflows to:
 
-工作流程會在行銷活動管理流程的不同內容和階段中進行。
+* Carry out targeting campaigns. [Learn more](building-a-workflow.md#implementation-steps-)
+* Build campaigns: for each campaign, the **[!UICONTROL Workflow]** tab lets you build the target and create the deliveries. [Learn more](building-a-workflow.md#campaign-workflows)
+* Perform technical processes: cleanup, collecting tracking information or provisional calculations. [Learn more](building-a-workflow.md#technical-workflows)
 
-Adobe Campaign使用工作流程來：
+A workflow can mean both a process definition (the workflow model, which is a representation of what is supposed to happen) and an instance of this process (a workflow instance, which is a representation of what is actually happening).
 
-* 執行目標定位行銷活動。 [了解更多](building-a-workflow.md#implementation-steps-)
-* 建立行銷活動：對於每個行銷活動，**[!UICONTROL Workflow]**&#x200B;索引標籤可讓您建立目標及建立傳送。 [了解更多](building-a-workflow.md#campaign-workflows)
-* 執行技術流程：清理、收集追蹤資訊或臨時計算。 [了解更多](building-a-workflow.md#technical-workflows)
-
-工作流程可能同時代表流程定義（工作流程模型，代表應該發生的事情）和此流程的執行個體（工作流程執行個體，代表實際發生的事情）。
-
-工作流程範本描述要執行的各種任務以及任務如何連結在一起。任務範本稱為活動並以圖示表示。它們透過轉變連結在一起。
+The workflow template describes the various tasks to be performed and how they are linked together. The task templates are called activities and are represented by icons. They are linked together by transitions.
 
 ![](assets/example1.png)
 
-每個工作流程都包含：
+Each workflow contains:
 
 * **[!UICONTROL Activities]**
 
-  活動說明任務範本。 各種可用活動在圖表中以圖示表示。每種型別都有共同屬性和特定屬性。 例如，雖然所有活動都有名稱和標籤，但只有&#x200B;**[!UICONTROL Approval]**&#x200B;活動有指派。
+  An activity describes a task template. The various activities available are represented on the diagram by icons. Each type has common properties and specific properties. For example, while all activities have a name and label, only the **[!UICONTROL Approval]** activity has an assignment.
 
-  在工作流程圖表中，指定的活動可以產生多個任務，尤其是當有回圈或循環（定期）動作時。
+  In a workflow diagram, a given activity can produce multiple tasks, in particular when there is a loop or recurrent (periodic) actions.
 
-  [本節](about-activities.md)中列出所有工作流程活動，包括使用案例和範例。
+  All workflow activities are listed in [this section](about-activities.md), including use cases and samples.
 
 * **[!UICONTROL Transitions]**
 
-  轉變可讓您連結活動並定義其順序。 轉變會將來源活動連結至目的地活動。 轉換有多種型別，視來源活動而定。 有些轉變還有其他引數，例如持續時間、條件或篩選器。
+  Transitions enable you to link activities and to define their sequence. A transition links a source activity to a destination activity. There are several sorts of transitions, which depend on the source activity. Some transitions have additional parameters such as a duration, a condition or a filter.
 
-  未連結至目的地活動的轉變顯示為橘色，而箭頭標頭顯示為菱形。
+  A transition which is not linked to a destination activity is colored orange and the arrow head is shown as a diamond.
 
   >[!NOTE]
   >
-  >仍可執行包含未終止轉變的工作流程：將會產生警告訊息，工作流程在轉變時會暫停，但不會產生錯誤。 因此，可以在工作流程未完成的情況下啟動工作流程，並在執行時將其新增。
+  >A workflow containing unterminated transitions can still be executed: a warning message will be generated and the workflow will pause once it reaches the transition but it will not generate an error. It is thus possible to start a workflow without it being finished and to add to it as you go along.
 
-  如需如何建立工作流程的詳細資訊，請參閱[本節](building-a-workflow.md)。
+  For more information about how to build a workflow, refer to [this section](building-a-workflow.md).
 
 * **[!UICONTROL Worktables]**
 
-  工作表包含轉接所攜帶的所有資訊。 每個工作流程會使用多個工作表。只要不清除資料，這些表格中傳送的資料就可以加速，並在整個工作流程的生命週期中使用。 事實上，每次工作流程不活躍時，不需要的工作表都會被清除，並且可能在最大工作流程執行期間被清除，以避免伺服器過載。
+  The worktable contains all the information carried by the transition. Each workflow uses several worktables. The data conveyed in these tables can be accelerated and used throughout the workflow's life cycle, as long as it is not purged. Indeed, unneeded tables are purged each time the workflow is passivated, and possibly during the execution of the largest workflows to avoid overloading the server.
 
-  在[本節](how-to-use-workflow-data.md)中進一步瞭解工作流程資料和表格。
+  Learn more on workflow data and tables in [this section](how-to-use-workflow-data.md).
 
-## 主要原則和最佳作法{#principles-workflows}
+## Key principles and best practices{#principles-workflows}
 
-請參閱下列章節，以尋找使用工作流程自動化流程的指引和最佳實務：
+Refer to these sections to find guidance and best practices to automate processes with workflows:
 
-* 在[此頁面](how-to-use-workflow-data.md)中進一步瞭解工作流程活動。
-* 在[本節](building-a-workflow.md)中瞭解如何建立工作流程。
-* 在[本節](../../platform/using/import-export-workflows.md)中探索如何使用工作流程匯入Campaign中的資料。
-* [此頁面](workflow-best-practices.md)中詳細說明了工作流程最佳實務。
-* 在[本節](starting-a-workflow.md)中尋找有關工作流程執行的指引。
-* 瞭解如何監視[此頁面](monitoring-workflow-execution.md)的工作流程。
-* 瞭解如何授予使用者存取權，以便在[此頁面](managing-rights.md)中使用工作流程。
+* Learn more about workflow activities in [this page](how-to-use-workflow-data.md).
+* Learn how to build a workflow in [this section](building-a-workflow.md).
+* Discover how to use workflows to import data in Campaign in [this section](../../platform/using/import-export-workflows.md).
+* Workflow best practices are detailed in [this page](workflow-best-practices.md).
+* Find guidance about workflow execution in [this section](starting-a-workflow.md).
+* Learn how to monitor workflows in [this page](monitoring-workflow-execution.md).
+* Learn how to grant access to users to use workflows in [this page](managing-rights.md).
+
+-->

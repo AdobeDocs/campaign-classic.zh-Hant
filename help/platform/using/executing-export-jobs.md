@@ -8,9 +8,9 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 94fc473a-dc49-41e8-b572-51c162b09996
-source-git-commit: 9df46ed923831ffdfb28acddfbc371cecafb251c
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '950'
 ht-degree: 29%
 
 ---
@@ -95,7 +95,7 @@ ht-degree: 29%
 
 ## 第 6 步 - 篩選條件 {#step-6---filter-conditions-}
 
-您可以新增篩選條件以避免匯出所有資料。 此篩選的設定與傳遞助理員中的收件者目標定位相同。 請參見[此頁面](../../delivery/using/steps-defining-the-target-population.md)。
+您可以新增篩選條件以避免匯出所有資料。 此篩選的設定與傳遞助理員中的收件者目標定位相同。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#target-population){target="_blank"}。
 
 ![](assets/s_ncs_user_export_wizard05_b.png)
 

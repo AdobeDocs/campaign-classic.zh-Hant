@@ -1,14 +1,14 @@
 ---
 product: campaign
-title: 「使用案例：依條件選取種子地址」
-description: 「使用案例：依條件選取種子地址」
+title: 使用實例：依條件選取種子地址
+description: 使用實例：依條件選取種子地址
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Seed Address
 exl-id: 091648b8-bf2d-4595-8be3-287f1ac48edd
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '851'
-ht-degree: 2%
+source-wordcount: '850'
+ht-degree: 3%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 2%
 
 ## 步驟1 — 建立傳遞 {#step-1---creating-a-delivery}
 
-建立傳遞的步驟在[建立電子郵件傳遞](creating-an-email-delivery.md)區段中詳細說明。
+建立傳遞的步驟已詳載於[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email.html){target="_blank"}。
 
 在此範例中，傳遞管理員已建立電子報並選取收件者。
 
@@ -53,7 +53,7 @@ ht-degree: 2%
 
    ![](assets/dlv_seeds_usecase_10.png)
 
-1. 按一下&#x200B;**[!UICONTROL Save]**。
+1. 按一下 **[!UICONTROL Save]**。
 1. 在結構描述編輯視窗中，複製下方的行並將它們貼到熒幕擷取畫面中指示的區域中。
 
    ```
@@ -78,7 +78,7 @@ ht-degree: 2%
 
    在此案例中，您指定已在種子位址表格中建立名為&#x200B;**[!UICONTROL Department]**&#x200B;的新列舉，且是以標準&#x200B;**[!UICONTROL @company]**&#x200B;列舉範本（在種子位址表單中標示在名稱&#x200B;**公司**&#x200B;下）為基礎。
 
-1. 按一下&#x200B;**[!UICONTROL Save]**。
+1. 按一下 **[!UICONTROL Save]**。
 1. 在&#x200B;**[!UICONTROL Tools > Advanced]**&#x200B;功能表中，選取&#x200B;**[!UICONTROL Update database structure]**&#x200B;選項。
 
    ![](assets/dlv_seeds_usecase_12.png)
@@ -99,7 +99,7 @@ ht-degree: 2%
 
 種子地址資料結構描述可以使用連結到收件者資料結構描述 — 收件者(nms)的表格中的值。
 
-例如，使用者想要整合連結至收件者結構描述的&#x200B;**[!UICONTROL Country]**&#x200B;資料表中找到的&#x200B;**[!UICONTROL Internet Extension]**。
+例如，使用者想要整合連結至收件者結構描述的&#x200B;**[!UICONTROL Internet Extension]**&#x200B;資料表中找到的&#x200B;**[!UICONTROL Country]**。
 
 ![](assets/dlv_seeds_usecase_06.png)
 
@@ -150,7 +150,7 @@ ht-degree: 2%
 
    ![](assets/dlv_seeds_usecase_22.png)
 
-1. 編輯您要用於傳遞的種子地址，並在&#x200B;**[!UICONTROL Department]**&#x200B;欄位中輸入&#x200B;**Purchasing**&#x200B;作為值。
+1. 編輯您要用於傳遞的種子地址，並在&#x200B;**欄位中輸入** Purchasing **[!UICONTROL Department]**&#x200B;作為值。
 
 ## 步驟3 — 定義條件 {#step-3---defining-the-condition}
 
@@ -176,7 +176,7 @@ ht-degree: 2%
    >
    >先前建立的結構描述擴充功能來自&#x200B;**收件者**&#x200B;結構描述。 上方熒幕顯示的值來自&#x200B;**收件者**&#x200B;綱要的列舉。
 
-1. 按一下&#x200B;**[!UICONTROL Ok]**。
+1. 按一下 **[!UICONTROL Ok]**。
 
    查詢會顯示在&#x200B;**[!UICONTROL Select target]**&#x200B;視窗中。
 

@@ -7,9 +7,9 @@ feature: Access Management, Permissions
 role: User, Admin
 level: Beginner
 exl-id: 580282ce-ee30-422a-8724-9c328637cc39
-source-git-commit: a5bbd2e6c102a8afa4cd5931b77b0c83705a7bfa
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1235'
+source-wordcount: '1237'
 ht-degree: 2%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->這些程式僅適用於使用原生驗證連線到Campaign的運運算元。 如需Adobe IMS驗證資訊，請參閱[此檔案](https://helpx.adobe.com/tw/enterprise/using/manage-users-individually.html#_blank)。
+>這些程式僅適用於使用原生驗證連線到Campaign的運運算元。 如需Adobe IMS驗證資訊，請參閱[此檔案](https://helpx.adobe.com/enterprise/using/manage-users-individually.html#_blank)。
 
 運運算元是有許可權登入及執行動作的Adobe Campaign使用者。
 
@@ -56,7 +56,7 @@ ht-degree: 2%
 
 1. 指定使用者的&#x200B;**[!UICONTROL Identification parameters]**：其登入、密碼和名稱。 操作員將使用登入和密碼來登入Adobe Campaign。 使用者登入後，即可透過&#x200B;**[!UICONTROL Tools > Change password]**&#x200B;功能表變更密碼。 操作員的電子郵件至關重要，因為它可讓操作員接收通知，例如在處理核準時。
 
-   此區段也可讓您將運運算元連結至組織實體。 如需詳細資訊，請參閱[此頁面](../../distributed/using/about-distributed-marketing.md)。
+   此區段也可讓您將運運算元連結至組織實體。 如需詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/distributed-marketing/about-distributed-marketing.html?lang=zh-Hant){target="_blank"}。
 
 1. 在&#x200B;**[!UICONTROL Operator access rights]**&#x200B;區段中選取授與運運算元的許可權。
 

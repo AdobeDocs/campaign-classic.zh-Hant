@@ -7,10 +7,10 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 58656aa1-aa95-451f-80b8-9e2d28223056
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '69'
-ht-degree: 13%
+source-wordcount: '71'
+ht-degree: 14%
 
 ---
 
@@ -20,11 +20,11 @@ ht-degree: 13%
 
 未轉送追蹤記錄的原因有好幾種。 建議您檢視下列資訊：
 
-* **&#x200B;**&#x200B;追蹤&#x200B;**工作流程是否有錯誤？**
+* ****&#x200B;追蹤&#x200B;**工作流程是否有錯誤？**
 
-  請參閱[監視技術工作流程](../../workflow/using/monitoring-technical-workflows.md)。
+請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-technical-workflows.html?lang=zh-Hant){target="_blank"}。
 
-  ![](assets/tracking_scheduled_task.png)
+![](assets/tracking_scheduled_task.png)
 
 * **模組** trackinglogd **是否正在伺服器上執行？**
 

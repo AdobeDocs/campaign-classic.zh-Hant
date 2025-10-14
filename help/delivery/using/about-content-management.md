@@ -6,20 +6,20 @@ badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v
 feature: Landing Pages, Email Design
 role: User
 exl-id: 87434cc2-1636-4558-ab60-255b7f873c0c
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '258'
+source-wordcount: '261'
 ht-degree: 2%
 
 ---
 
 # 關於內容管理{#about-content-management}
 
-Adobe Campaign Content Manager模組是特定的Campaign Classic[內建套件](../../installation/using/installing-campaign-standard-packages.md)，您可以安裝它來建立週期性電子報或網站。 它可以協助您建立、驗證及發佈訊息。
+Adobe Campaign Content Manager模組是特定的Campaign Classic [內建套件](../../installation/using/installing-campaign-standard-packages.md)，您可以安裝它以建立週期性電子報或網站。 它可以協助您建立、驗證及發佈訊息。
 
 >[!NOTE]
 >
->本節將介紹內容管理模組。 如需如何設計電子郵件傳遞內容的詳細資訊，請參閱[本節](defining-the-email-content.md)。
+>本節將介紹內容管理模組。 如需如何設計電子郵件傳遞內容的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html){target="_blank"}。
 
 內容管理模組整合了工作群組、工作流程和內容彙總功能。 這可讓訊息自動格式化：電子郵件、郵件、簡訊、網頁等。
 
@@ -35,7 +35,7 @@ Adobe Campaign Content Manager模組是特定的Campaign Classic[內建套件](.
 
 * 透過輸入介面編輯結構化訊息，
 * 分離資料內容及其呈現方式（以XML格式產生），
-* 以多種格式（html、txt、XML等）產生檔案 以樣式表為基礎，以確保符合圖形字元，
+* 根據樣式表以多種格式（html、txt、XML等）產生檔案，以確保符合圖形字元、
 * 外部內容流程的復原與自動彙總、
 * Collaboration具有資料驗證和檢查的工作流程。
 

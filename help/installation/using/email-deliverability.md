@@ -8,9 +8,9 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 515adad2-6129-450a-bb9e-fc80127835af
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '3094'
+source-wordcount: '3096'
 ht-degree: 0%
 
 ---
@@ -19,17 +19,17 @@ ht-degree: 0%
 
 
 
-## 概覽 {#overview}
+## 概觀 {#overview}
 
 下節提供在傳送電子郵件時控制Adobe Campaign執行個體輸出所需的設定概述。
 
 >[!NOTE]
 >
->某些設定只能由Adobe代管的部署Adobe執行，例如存取伺服器和執行個體設定檔案。 若要瞭解不同部署的詳細資訊，請參閱[託管模型](../../installation/using/hosting-models.md)區段或[此頁面](../../installation/using/capability-matrix.md)。
+>部分設定只能由Adobe針對Adobe託管的部署執行，例如存取伺服器和執行個體設定檔案。 若要瞭解不同部署的詳細資訊，請參閱[託管模型](../../installation/using/hosting-models.md)區段或[此頁面](../../installation/using/capability-matrix.md)。
 
 如需與Adobe Campaign傳遞能力相關的概念和最佳實務的詳細資訊，請參閱本[區段](../../delivery/using/about-deliverability.md)。
 
-如需深入瞭解傳遞能力是什麼，包括有關Adobe平台有效率傳送和接收電子郵件的所有技術建議，請參閱[Adobe傳遞能力最佳實務指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hant)。
+如需深入瞭解什麼是傳遞能力，包括有關Adobe平台有效率傳送和接收電子郵件的所有技術建議，請參閱[Adobe傳遞能力最佳實務指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hant)。
 
 ## 操作原則 {#operating-principle}
 
@@ -214,7 +214,7 @@ user:~ user$ host -t a mta6.am0.yahoodns.net
 
 ### 設定MX管理 {#configuring-mx-management}
 
-要針對MX遵守的規則定義於樹狀結構&#x200B;**[!UICONTROL Administration > Campaign Management > Non deliverables Management > Mail rule sets]**&#x200B;節點的&#x200B;**[!UICONTROL MX management]**&#x200B;檔案中。
+要針對MX遵守的規則定義於樹狀結構&#x200B;**[!UICONTROL MX management]**&#x200B;節點的&#x200B;**[!UICONTROL Administration > Campaign Management > Non deliverables Management > Mail rule sets]**&#x200B;檔案中。
 
 如果&#x200B;**[!UICONTROL MX management]**&#x200B;檔案不存在於節點中，您可以手動建立。 操作步驟：
 
@@ -223,7 +223,7 @@ user:~ user$ host -t a mta6.am0.yahoodns.net
 
    ![](assets/s_ncs_install_mx_mgt_rule.png)
 
-1. 在&#x200B;**[!UICONTROL Internal name]**&#x200B;欄位中輸入&#x200B;**defaultMXRules**。
+1. 在&#x200B;**欄位中輸入** defaultMXRules **[!UICONTROL Internal name]**。
 
 若要將變更列入考量，您必須重新啟動統計伺服器。
 
@@ -316,7 +316,7 @@ user:~ user$ host -t a mta6.am0.yahoodns.net
 
 若要這麼做，請前往&#x200B;**[!UICONTROL Management of email formats]**&#x200B;檔案，它位於&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Non deliverables management]** > **[!UICONTROL Mail rule sets]**。
 
-本檔案包含對應至Adobe Campaign所管理日文格式的所有預先定義網域清單。 如需詳細資訊，請參閱[此檔案](../../delivery/using/defining-the-email-content.md#sending-emails-on-japanese-mobiles)。
+本檔案包含對應至Adobe Campaign所管理日文格式的所有預先定義網域清單。 如需詳細資訊，請參閱 [Campaign v8 文件](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/sending-emails-on-japanese-mobiles.html){target="_blank"}。
 
 ![](assets/mail_rule_sets.png)
 
@@ -331,7 +331,7 @@ user:~ user$ host -t a mta6.am0.yahoodns.net
 
 如果&#x200B;**[!UICONTROL Image inclusion]**&#x200B;選項已啟用，這些會直接顯示在電子郵件內文中。 然後會上傳影像，並以其內容取代URL連結。
 
-日本市場特別使用這個選項來處理&#x200B;**裝飾郵件**、**裝飾郵件**&#x200B;或&#x200B;**裝飾郵件**。 如需詳細資訊，請參閱[此檔案](../../delivery/using/defining-the-email-content.md#sending-emails-on-japanese-mobiles)。
+日本市場特別使用這個選項來處理&#x200B;**裝飾郵件**、**裝飾郵件**&#x200B;或&#x200B;**裝飾郵件**。 如需詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/sending-emails-on-japanese-mobiles.html){target="_blank"}。
 
 >[!IMPORTANT]
 >
@@ -371,7 +371,7 @@ user:~ user$ host -t a mta6.am0.yahoodns.net
 
 對於每個&#x200B;**IPAffinity**&#x200B;專案，您必須宣告可用於電腦的IP位址。
 
-例如：
+範例：
 
 ```
 <IPAffinity localDomain="<domain>" name="default">

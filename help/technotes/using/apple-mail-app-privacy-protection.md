@@ -4,7 +4,7 @@ title: Apple郵件應用程式中的郵件隱私保護
 feature: Technote, Privacy, Privacy Tools
 description: 瞭解Apple的郵件隱私權保護功能可能會對您的行銷活動造成哪些影響
 exl-id: e044b35a-b49f-408a-900d-2afe8ff10212
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
 source-wordcount: '2064'
 ht-degree: 1%
@@ -62,7 +62,7 @@ Apple的新功能是未來產業在電子郵件隱私保護方面的面貌。 �
 
 * **[!UICONTROL Operating Systems]**&#x200B;報告
 
-  若要識別每個作業系統和每個版本的訪客比例，請使用此報表。 [閱讀全文](../../reporting/using/global-reports.md#operating-systems)。
+  若要識別每個作業系統和每個版本的訪客比例，請使用此報表。 [閱讀更多](../../reporting/using/global-reports.md#operating-systems)。
 
   您可以檢視每個作業系統相對於訪客總數的訪客劃分。
 
@@ -74,7 +74,7 @@ Apple的新功能是未來產業在電子郵件隱私保護方面的面貌。 �
 
 * **[!UICONTROL Breakdown of opens]**&#x200B;報告
 
-  若要識別每個作業系統的電子郵件開啟比例，請使用此報表。 [閱讀全文](../../reporting/using/global-reports.md#breakdown-of-opens)。
+  若要識別每個作業系統的電子郵件開啟比例，請使用此報表。 [閱讀更多](../../reporting/using/global-reports.md#breakdown-of-opens)。
 
   ![](../../reporting/using/assets/dlv_useragent_report.png)
 
@@ -82,7 +82,7 @@ Apple的新功能是未來產業在電子郵件隱私保護方面的面貌。 �
 
 您可以識別工作流程，其中電子郵件開啟作為分段、鎖定目標和重新定位的標準。
 
-若要這麼做，您可以使用追蹤連結URL (**[!UICONTROL url/@type]**)的&#x200B;**[!UICONTROL type]**&#x200B;屬性。 針對電子郵件開啟，此屬性設定為&#x200B;**[!UICONTROL Open]**。 此屬性可從查詢編輯器、工作流程中的&#x200B;**[!UICONTROL Query]**&#x200B;活動以及預先定義的篩選器取得。 您可以使用此屬性當作行銷活動的目標定位條件。
+若要這麼做，您可以使用追蹤連結URL (**[!UICONTROL type]**)的&#x200B;**[!UICONTROL url/@type]**&#x200B;屬性。 針對電子郵件開啟，此屬性設定為&#x200B;**[!UICONTROL Open]**。 此屬性可從查詢編輯器、工作流程中的&#x200B;**[!UICONTROL Query]**&#x200B;活動以及預先定義的篩選器取得。 您可以使用此屬性當作行銷活動的目標定位條件。
 
 ![](assets/identify-email-open-tracking-1.png)
 
@@ -94,7 +94,7 @@ Apple的新功能是未來產業在電子郵件隱私保護方面的面貌。 �
 
   ![](assets/identify-email-open-tracking-2.png)
 
-* 您可以使用預先定義的篩選器。 [了解更多](../../workflow/using/creating-a-filter.md)。
+* 您可以使用預先定義的篩選器。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/create-a-filter.html){target="_blank"}。
 
   ![](assets/identify-email-open-tracking-3.png)
 
@@ -260,7 +260,7 @@ Apple的新功能是未來產業在電子郵件隱私保護方面的面貌。 �
 
    ![](assets/identify-email-open-tracking-20.png)
 
-   如果清單不是空的，則會將其插入電子郵件通知的HTML表中。
+   如果清單不是空的，則會將其插入到HTML表格中，以傳送電子郵件通知。
 
    ![](assets/identify-email-open-tracking-21.png)
 
@@ -295,7 +295,7 @@ Apple的新功能是未來產業在電子郵件隱私保護方面的面貌。 �
    instance.vars.workflowList = sWorkflowList;
    ```
 
-1. HTML表格會新增至通知範本。
+1. 會將HTML表格新增至通知範本。
 
    ```js
    <%= instance.vars.workflowLIst%>
@@ -327,7 +327,7 @@ Apple的新功能是未來產業在電子郵件隱私保護方面的面貌。 �
 
 * Adobe Campaign會保留此資料一段有限的時間。 保留期間會因執行個體的設定而異。
 
-  檢查執行個體的設定。 [閱讀全文](../../platform/using/privacy-management.md#data-retention)。
+  檢查執行個體的設定。 [閱讀更多](../../platform/using/privacy-management.md#data-retention)。
 
 * 除了Apple最近的變更以外，您還可以使用追蹤資料來新增巨大價值，以吸引受眾參與。
 * Apple可能會對其原生郵件應用程式和郵件隱私權保護功能進行進一步的變更。
@@ -336,11 +336,11 @@ Apple的新功能是未來產業在電子郵件隱私保護方面的面貌。 �
 
 #### 如何保留追蹤資料？
 
-若要保留追蹤資料，您必須將其從Adobe Campaign匯出至資訊系統。 [閱讀全文](../../platform/using/get-started-data-import-export.md)。
+若要保留追蹤資料，您必須將其從Adobe Campaign匯出至資訊系統。 [閱讀更多](../../platform/using/get-started-data-import-export.md)。
 
 >[!IMPORTANT]
 >
->下列範例著重於現成可用的結構描述`nms:Recipient`，這是預設的設定檔結構描述。 如果您使用附加到自訂設定檔的其他自訂目標對應，我們建議您將此匯出策略擴充到所有自訂記錄表。 [閱讀全文](../../configuration/using/target-mapping.md)。
+>下列範例著重於現成可用的結構描述`nms:Recipient`，這是預設的設定檔結構描述。 如果您使用附加到自訂設定檔的其他自訂目標對應，我們建議您將此匯出策略擴充到所有自訂記錄表。 [閱讀更多](../../configuration/using/target-mapping.md)。
 
 ##### 原則
 
@@ -348,9 +348,9 @@ Apple的新功能是未來產業在電子郵件隱私保護方面的面貌。 �
 
 | 結構描述 | 內容 |
 | --- | --- |
-| nms：trackingLogRcp | 追蹤資料，對使用者、時間和相關訊息而言 |
-| nms：trackingUrl | 連結的詳細資訊，包括性質，例如開啟的電子郵件或點進 |
-| nms：userAgent | 裝置的相關資訊 |
+| nms:trackingLogRcp | 追蹤資料，對使用者、時間和相關訊息而言 |
+| nms:trackingUrl | 連結的詳細資訊，包括性質，例如開啟的電子郵件或點進 |
+| nms:userAgent | 裝置的相關資訊 |
 
 這些表格會在資料模型中連結。
 
@@ -364,8 +364,8 @@ Apple的新功能是未來產業在電子郵件隱私保護方面的面貌。 �
 
 | 結構描述 | 內容 |
 | --- | --- |
-| nms：Recipient | 與設定檔相關的詳細資料 |
-| nms：傳送 | 使用者回應之訊息的相關資訊 |
+| nms:Recipient | 與設定檔相關的詳細資料 |
+| nms:Delivery | 使用者回應之訊息的相關資訊 |
 
 您可以將結果匯出至Adobe Campaign支援的外部儲存解決方案：
 
@@ -373,7 +373,7 @@ Apple的新功能是未來產業在電子郵件隱私保護方面的面貌。 �
 * S3
 * Azure Blob
 
-##### 實施
+##### 實作
 
 此範例說明如何從Adobe Campaign匯出追蹤資料。
 
@@ -428,11 +428,11 @@ Apple的新功能是未來產業在電子郵件隱私保護方面的面貌。 �
    1. 初始&#x200B;**[!UICONTROL Query]**&#x200B;活動用於選取過去三個月所有開啟的電子郵件。
    1. **[!UICONTROL Split]**&#x200B;活動是用來依電子郵件應用程式、瀏覽器、作業系統和裝置來分割選取專案。
 
-   1. 每個&#x200B;**[!UICONTROL Split]**&#x200B;活動之後都有一個&#x200B;**[!UICONTROL Deduplication]**&#x200B;活動。 **[!UICONTROL Deduplication]**&#x200B;活動用於移除重複的電子郵件地址。
+   1. 每個&#x200B;**[!UICONTROL Deduplication]**&#x200B;活動之後都有一個&#x200B;**[!UICONTROL Split]**&#x200B;活動。 **[!UICONTROL Deduplication]**&#x200B;活動用於移除重複的電子郵件地址。
 
       **[!UICONTROL Deduplication]**&#x200B;活動位於&#x200B;**[!UICONTROL Split]**&#x200B;活動之後，以避免遺失使用各種裝置的收件者資訊。
 
-   1. 每個&#x200B;**[!UICONTROL Deduplication]**&#x200B;活動後面都有&#x200B;**[!UICONTROL End]**&#x200B;活動。
+   1. 每個&#x200B;**[!UICONTROL End]**&#x200B;活動後面都有&#x200B;**[!UICONTROL Deduplication]**&#x200B;活動。
 
   如果您僅將收件者儲存在現成可用的收件者表格中以進行目標定位，則此型別的工作流程會很有用。
 
@@ -447,7 +447,7 @@ Apple的新功能是未來產業在電子郵件隱私保護方面的面貌。 �
       * 在一個轉變中，**[!UICONTROL Change dimension]**&#x200B;活動用於尋找追蹤記錄所參照的收件者。
       * 在另一個轉變中，**[!UICONTROL Split]**&#x200B;活動是用來依電子郵件應用程式、瀏覽器、作業系統和裝置分割選取專案。
 
-   1. **[!UICONTROL Split]**&#x200B;活動之後的每個轉變都有&#x200B;**[!UICONTROL End]**&#x200B;活動。
+   1. **[!UICONTROL End]**&#x200B;活動之後的每個轉變都有&#x200B;**[!UICONTROL Split]**&#x200B;活動。
 
   如果您將收件者儲存在現成可用的收件者表格以外的表格中，此型別的工作流程會很有用。
 

@@ -6,9 +6,9 @@ feature: Access Management, Permissions
 role: User, Admin
 level: Beginner
 exl-id: 07470a91-d8d2-4c41-9555-05522c8068f0
-source-git-commit: 34f875f583dd81c2229b66f3344f23965532e802
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '496'
 ht-degree: 4%
 
 ---
@@ -55,7 +55,7 @@ ht-degree: 4%
 
 * **[!UICONTROL START DELIVERIES]**：核准先前分析的傳遞的許可權。 傳遞分析後，傳遞會在各種核准步驟暫停，並需要核准才能繼續。 具有&#x200B;**[!UICONTROL START DELIVERIES]**&#x200B;許可權的使用者可核准傳遞。
 
-* **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY]**：使用SQL資料管理活動撰寫您自己的SQL指令碼的權利，以建立和填入工作表（請參閱[本區段](../../workflow/using/sql-data-management.md)）。
+* **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY]**：使用SQL資料管理活動撰寫您自己的SQL指令碼，以建立和填入工作表格。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/sql-data-management.html){target="_blank"}。
 
 * **[!UICONTROL WORKFLOW]**：執行工作流程的許可權。 若無此許可權，使用者就無法啟動、停止或重新啟動工作流程。
 
@@ -71,4 +71,4 @@ ht-degree: 4%
 
 [此處](/help/platform/using/assets/access-rights-matrix.pdf)提供Adobe Campaign存取權矩陣。
 
-[![影像](assets/do-not-localize/user_management.png)](https://experienceleague.adobe.com/docs/campaign-classic/assets/access-rights-matrix.pdf?lang=zh-Hant)
+[![影像](assets/do-not-localize/user_management.png)](https://experienceleague.adobe.com/docs/campaign-classic/assets/access-rights-matrix.pdf)

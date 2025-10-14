@@ -7,9 +7,9 @@ audience: interaction
 content-type: reference
 topic-tags: delivering-an-offer
 exl-id: 33d318f3-1eb4-4c74-8c20-8b9f0442c7c3
-source-git-commit: de9ff0b50d819038c97e8515ddb7d6cfeb4547a1
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1043'
+source-wordcount: '1044'
 ht-degree: 1%
 
 ---
@@ -22,8 +22,8 @@ ht-degree: 1%
 
 * 傳遞大綱
 * 擴充
-* 優惠引擎
-* 依儲存格列出的優惠
+* 產品建議引擎
+* 依儲存格列出的產品建議
 
 ## 傳遞大綱 {#delivery-outline}
 
@@ -32,7 +32,7 @@ ht-degree: 1%
 1. 在工作流程中，新增傳遞活動之前，請先新增傳遞大網活動。
 1. 在傳遞大網活動中，指定您要使用的大網。
 
-   如需指定傳遞大網的詳細資訊，請參閱[Campaign - MRM](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline)指南。
+   如需指定傳遞大網的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-assets#delivery-outlines.html){target="_blank"}。
 
 1. 根據您的傳送完成可用的欄位。
 1. 有兩種可能的情況：
@@ -55,7 +55,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->如需擴充活動的詳細資訊，請參閱[工作流程手冊](../../workflow/using/enrichment.md)中的專屬檔案。
+>如需擴充活動的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html){target="_blank"}。
 
 例如，您可以在傳遞前擴充收件者查詢的資料。
 
@@ -68,7 +68,7 @@ ht-degree: 1%
 
 ### 指定優惠方案或呼叫優惠方案引擎 {#specifying-an-offer-or-a-call-to-the-offer-engine}
 
-設定查詢之後（請參閱[工作流程手冊](../../workflow/using/query.md)）：
+設定查詢之後（請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}）：
 
 1. 新增並開啟擴充活動。
 1. 在&#x200B;**[!UICONTROL Enrichment]**&#x200B;索引標籤中，選取&#x200B;**[!UICONTROL Add data]**。
@@ -99,7 +99,7 @@ ht-degree: 1%
 
 要執行此操作，請使用下列程式：
 
-1. 在活動的&#x200B;**[!UICONTROL Enrichment]**&#x200B;索引標籤中選取&#x200B;**[!UICONTROL Add data]**。
+1. 在活動的&#x200B;**[!UICONTROL Add data]**&#x200B;索引標籤中選取&#x200B;**[!UICONTROL Enrichment]**。
 1. 在您選擇要新增的資料型別視窗中，選取&#x200B;**[!UICONTROL A link]**。
 1. 選取您要建立的連結型別及其目標。 在此案例中，目標是選件結構描述。
 
@@ -138,7 +138,7 @@ ht-degree: 1%
 
 傳遞會自動儲存優惠方案的排名和權重。 此資訊會顯示在傳遞的&#x200B;**[!UICONTROL Offers]**&#x200B;標籤中。
 
-## 優惠引擎 {#offer-engine}
+## 產品建議引擎 {#offer-engine}
 
 **[!UICONTROL Offer engine]**&#x200B;活動也可讓您在傳遞前指定呼叫優惠方案引擎。
 
@@ -159,7 +159,7 @@ ht-degree: 1%
 
 1. 然後，設定與您所選管道對應的傳送活動。 如需詳細資訊，請參閱[將優惠方案主張插入傳遞](../../interaction/using/integrating-an-offer-via-the-wizard.md#inserting-an-offer-proposition-into-a-delivery)區段。
 
-## 依儲存格列出的優惠 {#offers-by-cell}
+## 依儲存格列出的產品建議 {#offers-by-cell}
 
 **[!UICONTROL Offers by cell]**&#x200B;活動可讓您將入站母體（例如從查詢）分配至數個區段，並指定要針對每個區段呈現的選件。
 

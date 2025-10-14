@@ -8,10 +8,10 @@ level: Beginner
 hide: true
 hidefromtoc: true
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: b4059e43d98643f0f8b5b3f68f03e10b755e8ba3
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '3864'
-ht-degree: 100%
+source-wordcount: '3865'
+ht-degree: 99%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 100%
 * 精心策劃行銷活動：本指南已由[登陸頁面](../../campaign/using/about-marketing-campaigns.md)取代。
 * 行銷資源管理：本指南已移除。
 * 分散式行銷：本指南已移除。
-* 使用工作流程自動化：本指南已被[登陸頁面](../../workflow/using/about-workflow-automation.md)取代
+* 使用工作流程自動化：本指南已被[登陸頁面](../../workflow/using/about-workflows.md)取代
 
 ## 2024
 
@@ -419,7 +419,7 @@ Android 的推播通知改善 - [閱讀更多資訊](../../delivery/using/config
 
 * [如何使用個人化欄位進行電子郵件個人化](../../delivery/using/personalization-fields.md)
 
-* [如何管理電子郵件中的種子和校樣](../../delivery/using/steps-defining-the-target-population.md)
+* [如何管理電子郵件中的種子和校樣](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#target-population){target="_blank"}。
 
 * [如何設定循環傳送](../../workflow/using/recurring-delivery.md)
 

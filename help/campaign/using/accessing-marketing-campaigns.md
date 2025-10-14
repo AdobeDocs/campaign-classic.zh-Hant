@@ -7,9 +7,9 @@ feature: Campaigns, Cross Channel Orchestration
 hide: true
 hidefromtoc: true
 exl-id: 1278bda1-f83c-4d38-8042-e6611755cf36
-source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1199'
+source-wordcount: '1202'
 ht-degree: 2%
 
 ---
@@ -30,7 +30,7 @@ Adobe Campaign可讓您建立、設定、執行和分析行銷活動。 所有�
 
 行銷活動元素可在&#x200B;**[!UICONTROL Campaigns]**&#x200B;標籤中找到：您可以在此處檢視行銷方案、行銷活動及其子集的概觀。 行銷方案由行銷活動組成，行銷活動由傳遞、任務、連結資源等組成。 在使用Campaign進行行銷活動管理的情況下，傳送、預算、稽核者和連結檔案的相關資訊可在行銷活動中找到。
 
-根據執行個體上安裝的模組，**[!UICONTROL Campaigns]**&#x200B;標籤的&#x200B;**[!UICONTROL Browsing]**&#x200B;區塊會提供各種專案。 例如，您可以存取：
+根據執行個體上安裝的模組，**[!UICONTROL Browsing]**&#x200B;標籤的&#x200B;**[!UICONTROL Campaigns]**&#x200B;區塊會提供各種專案。 例如，您可以存取：
 
 * **行銷活動行事曆**：計畫、行銷方案、傳遞和行銷活動的行事曆。 請參閱[行銷活動行事曆](#campaign-calendar)。
 * **行銷活動**：存取所有行銷方案中所包含的行銷活動。
@@ -41,11 +41,11 @@ Adobe Campaign可讓您建立、設定、執行和分析行銷活動。 所有�
 >
 >如需整體Adobe Campaign人體工學、許可權和設定檔管理功能的詳細資訊，請參閱[本節](../../platform/using/adobe-campaign-workspace.md)。
 >
->與管道和傳遞相關的所有功能都在[本節](../../delivery/using/steps-about-delivery-creation-steps.md)中詳細說明。
+>所有與管道和傳送相關的功能在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}中有詳細說明。
 
 ### 行銷活動行事曆 {#campaign-calendar}
 
-每個行銷活動都屬於一個方案，而該方案又屬於一個計畫。 透過&#x200B;**行銷活動**&#x200B;索引標籤中的&#x200B;**[!UICONTROL Campaign calendar]**&#x200B;功能表存取計畫、方案和行銷活動。
+每個行銷活動都屬於一個方案，而該方案又屬於一個計畫。 透過&#x200B;**[!UICONTROL Campaign calendar]**&#x200B;行銷活動&#x200B;**索引標籤中的**&#x200B;功能表存取計畫、方案和行銷活動。
 
 若要編輯計畫、方案、行銷活動或傳遞，請在行事曆中按一下其名稱，然後按一下&#x200B;**[!UICONTROL Open...]**。 然後它會顯示在新的標籤中，如下所示：
 
@@ -150,7 +150,7 @@ Campaign可讓您管理一組方案，由各種行銷活動組成。 每個行�
 
 >[!NOTE]
 >
->若要存取行銷活動設定並進行變更，請按一下「**[!UICONTROL Edit]**」標籤中的「**[!UICONTROL Advanced campaign parameters...]**」連結。
+>若要存取行銷活動設定並進行變更，請按一下「**[!UICONTROL Advanced campaign parameters...]**」標籤中的「**[!UICONTROL Edit]**」連結。
 
 ## 使用網頁介面 {#using-the-web-interface-}
 
@@ -177,7 +177,7 @@ Campaign可讓您管理一組方案，由各種行銷活動組成。 每個行�
 | Campaign | 取消行銷活動 |
 | 傳遞 | 核准傳遞內容及目標<br/>提交傳遞內容<br/>確認傳遞<br/>暫停並停止傳遞 |
 | 網頁應用程式 | 建立Web應用程式<br/>編輯應用程式內容和屬性<br/>將應用程式內容儲存為範本<br/>發佈應用程式 |
-| 優惠 | 核准優惠方案內容和資格<br/>停用線上優惠方案 |
+| 產品建議 | 核准優惠方案內容和資格<br/>停用線上優惠方案 |
 | 任務 | 完成工作<br/>取消工作 |
 | 行銷資源 | 核准資源<br/>鎖定並解除鎖定資源 |
 | 行銷活動套件 | 送出封裝以供核准<br/>核准或拒絕封裝<br/>取消封裝 |

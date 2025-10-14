@@ -5,7 +5,7 @@ description: 瞭解如何在Campaign傳送、監控和追蹤簡訊
 feature: SMS
 role: User
 exl-id: 442672ee-5037-49b7-a06f-3a99920ce2b6
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
 source-wordcount: '887'
 ht-degree: 1%
@@ -25,9 +25,9 @@ The detailed process when validating and sending a delivery is presented in the 
 * [Send the delivery](steps-sending-the-delivery.md)
 -->
 
-## 高級參數 {#advanced-parameters}
+## 進階參數 {#advanced-parameters}
 
-**[!UICONTROL Properties]**&#x200B;按鈕可讓您存取進階傳遞引數。 簡訊傳遞的特定引數位於&#x200B;**[!UICONTROL Delivery]**&#x200B;標籤的&#x200B;**[!UICONTROL SMS parameters]**&#x200B;區段。
+**[!UICONTROL Properties]**&#x200B;按鈕可讓您存取進階傳遞引數。 簡訊傳遞的特定引數位於&#x200B;**[!UICONTROL SMS parameters]**&#x200B;標籤的&#x200B;**[!UICONTROL Delivery]**&#x200B;區段。
 
 可以使用以下選項：
 
@@ -81,8 +81,6 @@ After sending messages, you can monitor and track your deliveries. For more on t
   > * SMS帳戶只能連結至單一外部帳戶，以確保狀態報表已歸因到正確的帳戶
 
 * **取消訂閱**：希望停止接收簡訊傳遞的收件者可以傳回包含STOP字樣的訊息。 如果您的提供者根據合約條款允許，您可以透過&#x200B;**傳入簡訊**&#x200B;工作流程活動擷取訊息，然後建立查詢以啟用相關收件者的&#x200B;**不再連絡此收件者**&#x200B;選項。
-
-  請參閱[工作流程](../../workflow/using/architecture.md)指南。
 
 ## InSMS結構描述 {#insms-schema}
 
@@ -142,7 +140,7 @@ InSMS結構描述包含與傳入SMS相關的資訊。 這些欄位的說明可�
    </autoreply>
    ```
 
-1. 針對&#x200B;**`<shortcode>`**&#x200B;標籤的&#x200B;**name**&#x200B;屬性，指定將顯示在郵件寄件者名稱位置的簡短代碼。
+1. 針對&#x200B;**標籤的** name **`<shortcode>`**&#x200B;屬性，指定將顯示在郵件寄件者名稱位置的簡短代碼。
 
    在每個&#x200B;**`<reply>`**&#x200B;標籤中，輸入具有關鍵字的&#x200B;**關鍵字**&#x200B;屬性，以及包含您要為此關鍵字傳送之訊息的&#x200B;**文字**&#x200B;屬性。
 
@@ -169,4 +167,4 @@ InSMS結構描述包含與傳入SMS相關的資訊。 這些欄位的說明可�
 >
 >這些型別的自動訊息不會保留歷史記錄。 因此，它們不會出現在傳送控制面板中。 [了解更多](delivery-dashboard.md)。
 >
->商業壓力規則不會考慮這些訊息。 [了解更多](../../campaign-opt/using/pressure-rules.md)。
+>商業壓力規則不會考慮這些訊息。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/pressure-rules.html){target="_blank"}。

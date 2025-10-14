@@ -8,9 +8,9 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 8b07447c-9a86-4b56-8d29-e0b01357a6ec
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '3389'
+source-wordcount: '3397'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->伺服器端設定只能由Adobe代管的部署Adobe執行。 若要瞭解不同部署的詳細資訊，請參閱[託管模型](../../installation/using/hosting-models.md)區段或[此頁面](../../installation/using/capability-matrix.md)。
+>伺服器端設定只能由Adobe針對Adobe託管的部署執行。 若要瞭解不同部署的詳細資訊，請參閱[託管模型](../../installation/using/hosting-models.md)區段或[此頁面](../../installation/using/capability-matrix.md)。
 
 ## 部署精靈 {#deployment-assistant}
 
@@ -79,13 +79,12 @@ Adobe Campaign提供圖形化助理，可在Adobe Campaign使用者端主控台�
 指示下列引數：
 
 * **[!UICONTROL Sender name]** ：輸入寄件者的名稱。
-* **[!UICONTROL Sender address]** ：輸入寄件者的電子郵件地址。 從Adobe Campaign傳送電子郵件時，**寄件者地址**&#x200B;信箱不受監視，且行銷使用者無法存取此信箱。 Adobe Campaign也不提供自動回覆或自動轉寄此信箱中接收之電子郵件的功能。 在本檔案[&#128279;](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/ac-starting-new-platform.html?lang=zh-Hant){_blank}中進一步瞭解傳遞能力最佳實務。
+* **[!UICONTROL Sender address]** ：輸入寄件者的電子郵件地址。 從Adobe Campaign傳送電子郵件時，**寄件者地址**&#x200B;信箱不受監視，且行銷使用者無法存取此信箱。 Adobe Campaign也不提供自動回覆或自動轉寄此信箱中接收之電子郵件的功能。 在本檔案[中進一步瞭解傳遞能力最佳實務](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/ac-starting-new-platform.html){_blank}。
 
 * **[!UICONTROL Reply address text]** ：輸入收件者按一下&#x200B;**[!UICONTROL Reply]**&#x200B;按鈕時使用的名稱。
 * **[!UICONTROL Reply address]** ：輸入當收件者按一下電子郵件使用者端軟體中的&#x200B;**[!UICONTROL Reply]**&#x200B;按鈕時要使用的電子郵件地址。 **回覆地址**&#x200B;欄位的用途是當您想要收件者回覆其他地址而不是&#x200B;**寄件者地址**&#x200B;時。  此地址必須是有效的電子郵件地址、連結至受監控的信箱，並由客戶代管。  它可能是支援信箱，例如`customer-care@customer.com`，其中會讀取並回應電子郵件。
 
-* **[!UICONTROL Error address]** ：輸入含有錯誤之訊息的電子郵件地址。 這是用於處理退信的技術地址，包括Adobe Campaign伺服器因目標地址不存在而收到的電子郵件。 此地址必須是有效的電子郵件地址、連結至受監控的信箱，並由客戶代管。 可能是退回信箱，例如`errors@customer.com`。 您可以從傳遞/傳遞範本屬性的&#x200B;**SMTP**&#x200B;索引標籤，為傳遞或傳遞範本變更此位址。 [了解更多](../../delivery/using/email-parameters.md#managing-bounce-emails-managing-bounce-emails)。
-
+* **[!UICONTROL Error address]** ：輸入含有錯誤之訊息的電子郵件地址。 這是用於處理退信的技術地址，包括Adobe Campaign伺服器因目標地址不存在而收到的電子郵件。 此地址必須是有效的電子郵件地址、連結至受監控的信箱，並由客戶代管。 可能是退回信箱，例如`errors@customer.com`。 您可以從傳遞/傳遞範本屬性的&#x200B;**SMTP**&#x200B;索引標籤，為傳遞或傳遞範本變更此位址。 在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email-parameters.html#managing-bounce-emails){target="_blank"}中瞭解更多。
 
 此外，您可以指定寄件者地址與錯誤地址所授權的&#x200B;**遮罩**。 如有必要，可以使用逗號分隔這些遮罩。 此設定是選用的。 輸入欄位時，Adobe Campaign會在傳送時（分析期間，如果地址不含任何變數）檢查地址是否有效。 此作業模式可確保不使用任何可能觸發傳送問題的地址。 必須在傳遞伺服器上設定傳遞位址。
 
@@ -124,7 +123,7 @@ Adobe Campaign提供圖形化助理，可在Adobe Campaign使用者端主控台�
 
 >[!NOTE]
 >
->對於託管或混合式安裝，如果您已升級至[增強型MTA](../../delivery/using/sending-with-enhanced-mta.md)，則只有在設為&#x200B;**3.5天或更短時間時，才會使用&#x200B;**&#x200B;[!UICONTROL Delivery duration of the messages]&#x200B;**。**&#x200B;如果您定義的值超過3.5天，則不會考慮該值。
+>對於託管或混合式安裝，如果您已升級至[增強型MTA](../../delivery/using/sending-with-enhanced-mta.md)，則只有在設為&#x200B;**[!UICONTROL Delivery duration of the messages]** 3.5天或更短時間時，才會使用&#x200B;**。**&#x200B;如果您定義的值超過3.5天，則不會考慮該值。
 
 ### 重試引數 {#retry-parameters}
 
@@ -166,7 +165,7 @@ Adobe Campaign提供圖形化助理，可在Adobe Campaign使用者端主控台�
 
 ### 未處理的退回郵件 {#unprocessed-bounce-mails}
 
-Adobe Campaign會套用&#x200B;**管理> Campaign Management >無法傳遞的專案管理>傳遞記錄資格**&#x200B;節點中列出的規則，自動處理退信。 如需詳細資訊，請參閱[退回郵件管理](../../delivery/using/understanding-delivery-failures.md#bounce-mail-management)。
+Adobe Campaign會套用&#x200B;**管理>行銷活動管理>無法傳遞的專案管理>傳遞記錄資格**&#x200B;節點中列出的規則，自動處理退信。 如需詳細資訊，請參閱[退回郵件管理](../../delivery/using/understanding-delivery-failures.md#bounce-mail-management)。
 
 未處理的退信不會顯示在Adobe Campaign介面中。 除非使用下列欄位將其傳輸到協力廠商信箱，否則會自動刪除這些信箱：
 
@@ -300,7 +299,7 @@ Adobe Campaign會套用&#x200B;**管理> Campaign Management >無法傳遞的專
 
 在&#x200B;**優先順序**&#x200B;下拉式清單中：選取[一般]、[高]或[緊急]以將其套用至要傳送的訊息。
 
-### 高級參數 {#advanced-parameters}
+### 進階參數 {#advanced-parameters}
 
 **進階引數……**&#x200B;連結可讓您存取重試和隔離選項。
 
@@ -342,7 +341,7 @@ Adobe Campaign會套用&#x200B;**管理> Campaign Management >無法傳遞的專
 1. 存取應用程式伺服器上未公開在網頁上的資源：表單、內部網路、確認頁面。
 1. 存取傳遞的映象頁面。
 
-   映象頁面是顯示電子郵件內容的動態頁面。 可透過插入至傳送給收件者之訊息中的連結來存取它，並且可以包含個人化元素。 映象頁面讓收件者有可能在網際網路瀏覽器中讀取郵件，而不是電子郵件軟體，無論傳遞格式(文字或HTML)為何。 不過，只有在已定義必要的HTML內容時，才會為指定的傳送產生映象頁面。
+   映象頁面是顯示電子郵件內容的動態頁面。 可透過插入至傳送給收件者之訊息中的連結來存取它，並且可以包含個人化元素。 無論傳遞格式(文字或HTML)為何，映象頁面都可讓收件者在網際網路瀏覽器中讀取訊息，而非電子郵件軟體。 不過，只有在已定義必要的HTML內容時，才會為指定的傳送產生映象頁面。
 
 Adobe Campaign可讓您區別這三個URL，以將負載分散到多個平台。
 
@@ -383,7 +382,7 @@ Adobe Campaign可讓您區別這三個URL，以將負載分散到多個平台。
 
   此值可針對每次傳遞覆寫。
 
-* 針對公用資源，URL **https://**&#x200B;伺服器&#x200B;**/res/**&#x200B;執行個體&#x200B;**&#x200B;**，其中&#x200B;**執行個體**&#x200B;是追蹤執行個體的名稱。
+* 針對公用資源，URL **https://**&#x200B;伺服器&#x200B;**/res/**&#x200B;執行個體&#x200B;****，其中&#x200B;**執行個體**是追蹤執行個體的名稱。
 
 ### 傳遞影像偵測 {#delivery-image-detection}
 
@@ -395,7 +394,7 @@ Adobe Campaign可讓您區別這三個URL，以將負載分散到多個平台。
 
 您可以使用逗號來指定多個URL遮罩，以分隔每個URL遮罩。
 
-* 如需在電子郵件中使用和管理影像的詳細資訊，請參閱[本節](../../delivery/using/defining-the-email-content.md#adding-images)。
+* 有關在電子郵件中使用和管理影像的資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#adding-images){target="_blank"}。
 * 在傳送助理中，從這些URL呼叫的影像會具有「已忽略」狀態。
 
 ### 發佈模式 {#publication-modes}
@@ -469,7 +468,7 @@ Adobe Campaign可讓您區別這三個URL，以將負載分散到多個平台。
 
 **配置**
 
-對於每個必須同步化的公用資源，您必須在`<relay>`部分的`<url>`元素中新增狀態屬性：
+對於每個必須同步化的公用資源，您必須在`<url>`部分的`<relay>`元素中新增狀態屬性：
 
 狀態屬性可以是下列三個值之一：
 

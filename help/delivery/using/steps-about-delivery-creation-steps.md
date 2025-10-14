@@ -7,10 +7,10 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 0188c3fe-8176-4904-8505-c47a72c20fcc
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '130'
-ht-degree: 22%
+source-wordcount: '144'
+ht-degree: 17%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 22%
 
 建立傳送時的主要步驟如下：
 
-1. **建立並識別傳遞**。 [閱讀更多](steps-create-and-identify-the-delivery.md)
+1. **建立並識別傳遞**。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#create-the-delivery){target="_blank"}以深入瞭解。
 
 1. **定義傳遞內容**。 每個管道都有專屬的傳遞內容定義。 如需詳細資訊，請參閱專用區段。
 
@@ -27,7 +27,7 @@ ht-degree: 22%
    * [直接郵件管道](defining-the-direct-mail-content.md)
    * [行動應用程式管道](about-mobile-app-channel.md)
 
-1. **定義目標母體**。 [閱讀更多](steps-defining-the-target-population.md)
+1. **定義目標母體**。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message#target-population.html){target="_blank"}以深入瞭解。
 
 1. **傳送傳遞**。 [閱讀更多](steps-sending-the-delivery.md)
 
@@ -35,4 +35,4 @@ ht-degree: 22%
 
 >[!NOTE]
 >
->本章所述的步驟假設所有目標收件者及其設定檔都儲存在資料庫中，外部傳遞除外（請參閱[選取外部收件者](steps-defining-the-target-population.md#selecting-external-recipients)）。
+>本章所述的步驟假設所有目標收件者及其設定檔都儲存在資料庫中，外部傳遞除外（請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#selecting-external-recipients){target="_blank"}）。

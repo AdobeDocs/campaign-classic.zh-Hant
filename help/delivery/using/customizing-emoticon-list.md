@@ -6,9 +6,9 @@ badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v
 feature: Email, Push
 role: User, Data Engineer
 exl-id: b8642df3-1960-4f2c-8273-c3988a3e85f0
-source-git-commit: 287d1bf60b39e9e2b389701097995dbea962dec9
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '448'
+source-wordcount: '454'
 ht-degree: 3%
 
 ---
@@ -18,7 +18,8 @@ ht-degree: 3%
 在快顯視窗中顯示的表情符號清單由列舉來排程，可讓您在清單中顯示值，以限制使用者在指定欄位中的選擇。
 表情符號清單順序可以自訂，您也可以將其他表情符號新增到清單中。
 
-請注意，表情符號僅可用於電子郵件和推播。 如需詳細資訊，請參閱此[頁面](defining-the-email-content.md#inserting-emoticons)。
+請注意，表情符號僅可用於電子郵件和推播。 如需詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#inserting-emoticons){target="_blank"}。
+
 
 ## 新增表情符號 {#add-new-emoticon}
 
@@ -36,7 +37,7 @@ ht-degree: 3%
 
    ![](assets/emoticon_1.png)
 
-1. 按一下&#x200B;**[!UICONTROL Add]**。
+1. 按一下 **[!UICONTROL Add]**。
 
 1. 填寫欄位：
 
@@ -62,7 +63,7 @@ ht-degree: 3%
 
 1. 若要將您的變更列入考量，請中斷連線，然後從Adobe Campaign Classic重新連線。 如果您的新表情符號仍未出現在&#x200B;**[!UICONTROL Insert emoticon]**&#x200B;快顯視窗中，您可能需要清除您的快取。 如需詳細資訊，請參閱本[區段](../../platform/using/faq-campaign-config.md#perform-soft-cache-clear)。
 
-1. 您的新表情符號現在可在傳送中找到了，位置位於先前步驟中設定的第61個位置的&#x200B;**[!UICONTROL Insert emoticon]**&#x200B;快顯視窗中。 如需如何在傳遞中使用表情符號的詳細資訊，請參閱此[頁面](defining-the-email-content.md#inserting-emoticons)。
+1. 您的新表情符號現在可在傳送中找到了，位置位於先前步驟中設定的第61個位置的&#x200B;**[!UICONTROL Insert emoticon]**&#x200B;快顯視窗中。 如需如何在傳遞中使用表情符號的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#inserting-emoticons){target="_blank"}。
 
    ![](assets/emoticon_4.png)
 

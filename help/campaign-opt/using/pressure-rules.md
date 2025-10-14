@@ -7,9 +7,9 @@ feature: Fatigue Management, Typology Rules, Campaigns
 hide: true
 hidefromtoc: true
 exl-id: c23212f2-fdf8-4820-b389-546f7c84db27
-source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '3336'
+source-wordcount: '3335'
 ht-degree: 6%
 
 ---
@@ -73,7 +73,7 @@ ht-degree: 6%
 
    ![](assets/campaign_opt_create_a_rule_03b.png)
 
-   若要定義變數臨界值，請在&#x200B;**[!UICONTROL Type of threshold]**&#x200B;欄位中選取&#x200B;**[!UICONTROL Depends on the recipient]**&#x200B;值，並使用右側的圖示開啟運算式編輯器。
+   若要定義變數臨界值，請在&#x200B;**[!UICONTROL Depends on the recipient]**&#x200B;欄位中選取&#x200B;**[!UICONTROL Type of threshold]**&#x200B;值，並使用右側的圖示開啟運算式編輯器。
 
    ![](assets/campaign_opt_create_a_rule_04.png)
 
@@ -92,7 +92,7 @@ ht-degree: 6%
 
    ![](assets/campaign_opt_create_a_rule_05.png)
 
-1. **[!UICONTROL Typologies]**&#x200B;索引標籤可讓您檢視套用此規則的促銷活動型別，或將規則連結至一或多個現有型別。 如需詳細資訊，請參閱[套用型別](about-campaign-typologies.md#applying-typologies)。
+1. **[!UICONTROL Typologies]**&#x200B;索引標籤可讓您檢視套用此規則的促銷活動型別，或將規則連結至一或多個現有型別。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html?lang=zh-Hant){target="_blank"}。
 
 ## 定義臨界值和權重 {#defining-thresholds-and-weights}
 
@@ -154,11 +154,11 @@ ht-degree: 6%
 
 若要將考慮的傳送限制在2週期間，您可以：
 
-1. 在「**[!UICONTROL Concerned period]**」欄位中輸入&#x200B;**15d**：在計算時將考慮在套用規則的傳遞日期前兩週傳送的傳遞，
+1. 在「**」欄位中輸入** 15d **[!UICONTROL Concerned period]**：在計算時將考慮在套用規則的傳遞日期前兩週傳送的傳遞，
 
 或
 
-1. 在&#x200B;**[!UICONTROL Period considered]**&#x200B;欄位中輸入&#x200B;**7d**&#x200B;並核取&#x200B;**[!UICONTROL Take the deliveries into account in the provisional calendar]**&#x200B;選項：在計算時，會考慮在傳送日期前7天傳送的傳送以及在套用規則的傳送日期後7天排程的傳送。
+1. 在&#x200B;**欄位中輸入** 7d **[!UICONTROL Period considered]**&#x200B;並核取&#x200B;**[!UICONTROL Take the deliveries into account in the provisional calendar]**&#x200B;選項：在計算時，會考慮在傳送日期前7天傳送的傳送以及在套用規則的傳送日期後7天排程的傳送。
 
 期間開始日期取決於資料庫的設定方式。
 
@@ -224,7 +224,7 @@ ht-degree: 6%
 若要建立規則，請套用以下步驟：
 
 1. 建立新的&#x200B;**壓力**&#x200B;型別型別規則。
-1. 編輯&#x200B;**[!UICONTROL Pressure]**&#x200B;標籤：在&#x200B;**[!UICONTROL Maximum number of messages]**&#x200B;區段中，我們要建立一個公式以根據每個收件者計算臨界值。 在&#x200B;**[!UICONTROL Threshold type]**&#x200B;欄位中選取&#x200B;**[!UICONTROL Depends on the recipient]**&#x200B;值，然後按一下&#x200B;**[!UICONTROL Formula]**&#x200B;欄位右側的&#x200B;**[!UICONTROL Edit expression]**。
+1. 編輯&#x200B;**[!UICONTROL Pressure]**&#x200B;標籤：在&#x200B;**[!UICONTROL Maximum number of messages]**&#x200B;區段中，我們要建立一個公式以根據每個收件者計算臨界值。 在&#x200B;**[!UICONTROL Depends on the recipient]**&#x200B;欄位中選取&#x200B;**[!UICONTROL Threshold type]**&#x200B;值，然後按一下&#x200B;**[!UICONTROL Edit expression]**&#x200B;欄位右側的&#x200B;**[!UICONTROL Formula]**。
 
    按一下&#x200B;**[!UICONTROL Advanced parameters]**&#x200B;按鈕以定義計算公式。
 
@@ -234,9 +234,9 @@ ht-degree: 6%
 
    ![](assets/campaign_opt_pressure_sample_1_2.png)
 
-1. 在函式清單中，連按兩下&#x200B;**[!UICONTROL Others]**&#x200B;節點中的&#x200B;**Iif**&#x200B;函式。
+1. 在函式清單中，連按兩下&#x200B;**節點中的** Iif **[!UICONTROL Others]**&#x200B;函式。
 
-   然後在&#x200B;**[!UICONTROL Available fields]**&#x200B;區段中選取收件者的&#x200B;**狀態**。
+   然後在&#x200B;**區段中選取收件者的**&#x200B;狀態&#x200B;**[!UICONTROL Available fields]**。
 
    ![](assets/campaign_opt_pressure_sample_1_3.png)
 
@@ -296,7 +296,7 @@ ht-degree: 6%
 套用下列設定步驟：
 
 1. 建立新的&#x200B;**壓力**&#x200B;型別型別規則。
-1. 編輯&#x200B;**[!UICONTROL Pressure]**&#x200B;標籤。 我們要建立以每個個別收件者為基礎的臨界值公式：按一下「**[!UICONTROL Weight formula]**」欄位右側的「**[!UICONTROL Edit expression]**」圖示。
+1. 編輯&#x200B;**[!UICONTROL Pressure]**&#x200B;標籤。 我們要建立以每個個別收件者為基礎的臨界值公式：按一下「**[!UICONTROL Edit expression]**」欄位右側的「**[!UICONTROL Weight formula]**」圖示。
 
    ![](assets/campaign_opt_pressure_sample_2_1.png)
 
@@ -341,11 +341,11 @@ ht-degree: 6%
 1. 建立行銷活動。 如需詳細資訊，請參閱[本章節](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign)。
 1. 在行銷活動的&#x200B;**[!UICONTROL Targeting and workflows]**&#x200B;索引標籤中，新增&#x200B;**查詢**&#x200B;活動至您的工作流程。 有關使用此活動的詳細資訊，請參閱[本區段](../../workflow/using/query.md)。
 1. 將&#x200B;**[!UICONTROL Email delivery]**&#x200B;活動新增至工作流程並開啟它。 有關使用此活動的詳細資訊，請參閱[本區段](../../workflow/using/delivery.md)。
-1. 前往&#x200B;**[!UICONTROL Delivery properties]**&#x200B;的&#x200B;**[!UICONTROL Approvals]**&#x200B;標籤，並停用所有核准。
+1. 前往&#x200B;**[!UICONTROL Approvals]**&#x200B;的&#x200B;**[!UICONTROL Delivery properties]**&#x200B;標籤，並停用所有核准。
 
    ![](assets/campaign_opt_pressure_example_2.png)
 
-1. 在&#x200B;**[!UICONTROL Delivery properties]**&#x200B;的&#x200B;**[!UICONTROL Typology]**&#x200B;標籤中，參考要套用規則的行銷活動型別。 定義傳遞的權重。
+1. 在&#x200B;**[!UICONTROL Typology]**&#x200B;的&#x200B;**[!UICONTROL Delivery properties]**&#x200B;標籤中，參考要套用規則的行銷活動型別。 定義傳遞的權重。
 
    ![](assets/campaign_opt_pressure_example_3.png)
 

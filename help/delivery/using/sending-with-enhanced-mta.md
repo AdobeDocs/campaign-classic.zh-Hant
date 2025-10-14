@@ -5,9 +5,9 @@ description: 瞭解使用Adobe Campaign Enhanced MTA傳送電子郵件的範圍�
 feature: Email
 role: User, Admin, Developer
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
-source-git-commit: b353b562bd2f0b0bd2dfde22c6477ab66d499483
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1368'
+source-wordcount: '1380'
 ht-degree: 1%
 
 ---
@@ -121,7 +121,7 @@ Campaign傳送輸送量圖表將不再顯示傳送給電子郵件收件者的輸
 
 Campaign不再使用傳送中的重試設定。 軟退信重試次數和兩次之間的時間長度由Enhanced MTA根據從訊息的電子郵件網域傳回的退信回應的型別和嚴重性來決定。
 
-如需重試的詳細資訊，請參閱[本節](steps-sending-the-delivery.md#configuring-retries)。
+如需重試的詳細資訊，請參閱[傳送傳遞](communication-channels.md) > **設定重試**&#x200B;下的此&#x200B;**頁面**。
 
 ### 有效期限
 
@@ -131,22 +131,22 @@ Campaign不再使用傳送中的重試設定。 軟退信重試次數和兩次�
 
 當訊息在Enhanced MTA佇列中停留3.5天且無法傳送時，訊息會逾時，其狀態會從傳送記錄檔中的&#x200B;**[!UICONTROL Sent]**&#x200B;更新為&#x200B;**[!UICONTROL Failed]**。
 
-如需有效期的詳細資訊，請參閱[本節](steps-sending-the-delivery.md#defining-validity-period)。
+如需有效期的詳細資訊，請參閱[傳送的傳遞](communication-channels.md) > **定義有效期**&#x200B;下的此&#x200B;**頁面**。
 
 ### DKIM簽署
 
 DKIM (DomainKeys Indified Mail)電子郵件驗證簽署是由Enhanced MTA完成。 原生Campaign MTA的DKIM簽署功能將會在Enhanced MTA升級過程中，於網域管理表格內關閉。
-如需DKIM的詳細資訊，請參閱[Adobe傳遞能力最佳實務指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=zh-Hant#authentication)。
+如需DKIM的詳細資訊，請參閱[Adobe傳遞能力最佳實務指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication)。
 
 ### 傳遞成功報告
 
-在電子郵件傳遞[儀表板](delivery-dashboard.md)的&#x200B;**[!UICONTROL Summary]**&#x200B;檢視中，**[!UICONTROL Success]**&#x200B;百分比從100%開始，然後在傳遞[有效期間](steps-sending-the-delivery.md#defining-validity-period)內逐步下降，因為軟跳出和硬跳出會從Enhanced MTA回報回Campaign。
+在電子郵件傳遞&#x200B;**[!UICONTROL Summary]**&#x200B;儀表板[的](delivery-dashboard.md)檢視中，**[!UICONTROL Success]**&#x200B;百分比從100%開始，然後在傳遞[有效期間](communication-channels.md)內逐步下降，因為軟跳出和硬跳出會從Enhanced MTA回報回Campaign。
 
-事實上，一旦訊息成功從Campaign轉送至Enhanced MTA，在[傳送記錄檔](delivery-dashboard.md#delivery-logs-and-history)中，所有訊息都會顯示為&#x200B;**[!UICONTROL Sent]**。 除非或直到該訊息的[跳出](understanding-delivery-failures.md#delivery-failure-types-and-reasons)從Enhanced MTA傳回Campaign，否則它們會維持該狀態。
+事實上，一旦訊息成功從Campaign轉送至Enhanced MTA，在&#x200B;**[!UICONTROL Sent]**&#x200B;傳送記錄檔[中，所有訊息都會顯示為](delivery-dashboard.md#delivery-logs-and-history)。 除非或直到該訊息的[跳出](understanding-delivery-failures.md#delivery-failure-types-and-reasons)從Enhanced MTA傳回Campaign，否則它們會維持該狀態。
 
 當硬退信從Enhanced MTA回傳時，其狀態會從&#x200B;**[!UICONTROL Sent]**&#x200B;變更為&#x200B;**[!UICONTROL Failed]**，而&#x200B;**[!UICONTROL Success]**&#x200B;百分比會因此減少。
 
-當從Enhanced MTA回報軟退信時，訊息仍顯示為&#x200B;**[!UICONTROL Sent]**，且&#x200B;**[!UICONTROL Success]**&#x200B;百分比尚未更新。 然後，軟退信會在整個傳遞有效期內重試[&#128279;](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure)：
+當從Enhanced MTA回報軟退信時，訊息仍顯示為&#x200B;**[!UICONTROL Sent]**，且&#x200B;**[!UICONTROL Success]**&#x200B;百分比尚未更新。 然後，軟退信會在整個傳遞有效期內重試[](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure)：
 
 * 如果在有效期間結束前重試成功，則訊息狀態會維持為&#x200B;**[!UICONTROL Sent]**，**[!UICONTROL Success]**&#x200B;百分比會維持不變。
 

@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 7d1bb3c6-d056-4212-9500-75459a0046fa
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '362'
-ht-degree: 97%
+source-wordcount: '382'
+ht-degree: 63%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 97%
 
 ## 建立工作流程的主要步驟是什麼？ {#what-are-the-key-steps-to-create-a-workflow-}
 
-[按一下這裡以瞭解如何建立第一個工作流程](../../workflow/using/building-a-workflow.md)：瞭解概念與最佳實務，以便在 Campaign 中建立工作流程。
+在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=zh-Hant){target="_blank"}中瞭解如何建立第一個工作流程：瞭解概念與最佳實務，以便在Campaign中建立工作流程。
 
 ## 如何將資料匯入 Campaign 中？ {#how-can-i-import-data-in-campaign-}
 
@@ -30,13 +30,14 @@ ht-degree: 97%
 
 ## 是否可以監視工作流程執行？ {#can-i-monitor-workflow-execution-}
 
-透過[本頁面](../../workflow/using/starting-a-workflow.md)瞭解如何監視 Campaign 工作流程執行情況。
+在[Campaign v8檔案]&#x200B;(https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution)中瞭解如何監視Campaign工作流程的執行
+.html){target="_blank"}。
 
 ## 如何使用工作流程更新 Campaign 資料？ {#how-can-i-update-campaign-data-with-a-workflow-}
 
 您可以大量執行更新、合併及插入資料庫資料。
 
-[按一下這裡以瞭解更多資訊](../../workflow/using/update-data.md)。
+在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/update-data.html){target="_blank"}中瞭解更多。
 
 ## 如何運用資料管理功能？ {#how-can-i-leverage-data-management-capabilities-}
 
@@ -46,15 +47,15 @@ ht-degree: 97%
 * 保持和傳達緩衝區計算，尤其是在目標建構階段或進行資料庫管理時。
 * 存取外部資料庫（選用）：在鎖定過程中考慮異質資料庫。
 
-[按一下這裡以深入瞭解](../../workflow/using/targeting-data.md#data-management)，並且能夠設計複雜的目標，並管理資料管理工作流程活動相關的資料。
+在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/targeting-workflows.html){target="_blank"}中瞭解如何設計複雜的目標，以及如何處理資料合併工作流程活動的資料。
 
 ## 我可以自動個人化訊息傳送嗎？ {#can-i-automate-personalized-messages-sending-}
 
-閱讀[此使用案例](../../workflow/using/enriching-data.md)，瞭解如何根據客戶的最高競爭得分，將個人化訊息傳送客戶。
+請檢視[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/enrich-data.html?lang=zh-Hant){target="_blank"}，瞭解如何根據客戶的最高競爭得分，將個人化訊息傳送客戶。
 
 ## 如何使用工作流程將受眾分隔到子集中？ {#how-can-i-split-an-audience-in-subsets-with-a-workflow-}
 
-[在本小節中](../../workflow/using/split.md)瞭解如何將目標分割成數個子集。
+在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/split.html){target="_blank"}中瞭解如何將目標分割成數個子集。
 
 ## 如何從外部檔案更新收件者資料？ {#how-can-i-update-recipient-data-from-an-external-file-}
 
@@ -64,4 +65,4 @@ ht-degree: 97%
 
 ## 如何識別和鎖定新的收件者？ {#how-can-i-identify-and-target-new-recipients-}
 
-透過[此使用案例](../../workflow/using/using-aggregates.md)，您將瞭解如何使用彙總自動識別料庫中上次新增的收件者，並向他們傳送歡迎訊息。
+請檢視[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/using-aggregates.html){target="_blank"}，瞭解如何使用彙總自動識別資料庫中上次新增的收件者，並向他們傳送歡迎訊息。

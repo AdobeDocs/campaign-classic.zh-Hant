@@ -6,9 +6,9 @@ badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v
 feature: Workflows
 role: User
 exl-id: bc6ebf5d-cc21-4750-9713-2bf259e7d6bf
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1197'
+source-wordcount: '1201'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 您可以使用透過Adobe Campaign使用者端介面設定的工作流程，自動建立、編輯和發佈內容。
 
-透過工作流程圖表的&#x200B;**[!UICONTROL Tools]**&#x200B;工具列存取&#x200B;**內容管理**&#x200B;活動。
+透過工作流程圖表的&#x200B;**工具列存取**&#x200B;內容管理&#x200B;**[!UICONTROL Tools]**&#x200B;活動。
 
 活動屬性可細分為四個步驟：
 
@@ -101,7 +101,7 @@ ht-degree: 0%
 </book>
 ```
 
-資料格式不符合在發佈範本中輸入的資料結構描述（範例中為&#x200B;**cus：book**）；**`<section>`**&#x200B;元素必須以&#x200B;**`<chapter>`**&#x200B;元素取代。 我們需要套用「cus：book-workflow.xsl」樣式表以進行必要的變更。
+資料格式不符合在發佈範本中輸入的資料結構描述（範例中為&#x200B;**cus:book**）；**`<section>`**&#x200B;元素必須以&#x200B;**`<chapter>`**&#x200B;元素取代。 我們需要套用「cus:book-workflow.xsl」樣式表以進行必要的變更。
 
 使用的XSLT樣式表的Source程式碼：
 
@@ -150,7 +150,7 @@ ht-degree: 0%
 
 系統會根據範本建立新的傳遞動作。
 
-活動的傳遞範本可用來選取出版物範本的轉換範本。 內容產生將會考量所有沒有傳遞範本的HTML和文字範本，或使用與活動相同範本參照的範本。
+活動的傳遞範本可用來選取出版物範本的轉換範本。 內容產生將會考量所有不含傳遞範本的HTML和文字範本，或使用與活動相同範本參照的範本。
 
 要傳遞的目標是透過傳入事件輸入的。
 
@@ -214,11 +214,13 @@ ht-degree: 0%
 
 ### 從FTP匯入內容 {#importing-content-from-ftp}
 
-如果您的傳送內容位於FTP或SFTP伺服器上的HTML檔案中，您可輕鬆將此內容載入到Adobe Campaign傳送中。 請參考[此範例](../../workflow/using/loading-delivery-content.md)。
+如果您的傳送內容位於FTP或SFTP伺服器上的HTML檔案中，您可輕鬆將此內容載入到Adobe Campaign傳送中。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html){target="_blank"}。
+
 
 ### 從Amazon Simple Storage Service (S3)聯結器匯入內容 {#importing-content-from-amazon-simple-storage-service--s3--connector}
 
-如果您的傳送內容位於Amazon Simple Storage Service (S3)貯體，您可輕鬆將此內容載入Adobe Campaign傳送中。 請參考[此範例](../../workflow/using/loading-delivery-content.md)。
+如果您的傳送內容位於Amazon Simple Storage Service (S3)貯體，您可輕鬆將此內容載入Adobe Campaign傳送中。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html){target="_blank"}。
+
 
 ## 半自動更新 {#semi-automatic-update}
 
@@ -230,7 +232,7 @@ ht-degree: 0%
 
 編輯區域可讓您填入用來建構要擷取之資料的XML摘要的URL的變數資料。
 
-此按鈕會執行&#x200B;**`<input>`**&#x200B;標籤下填入的&#x200B;**GetAndTransform** SOAP方法。
+此按鈕會執行&#x200B;**標籤下填入的** GetAndTransform **`<input>`** SOAP方法。
 
 表單中的控制項宣告如下：
 
@@ -246,11 +248,11 @@ ht-degree: 0%
 </input>
 ```
 
-**GetAndTransform**&#x200B;方法必須在&#x200B;**`<input>`**&#x200B;標籤的&#x200B;**`<enter>`**&#x200B;專案下宣告。 此標籤會將從動態建構的運算式復原XML資料的URL當成引數。 函式的第二個引數是選用引數，當傳入的XML資料與內容的格式不同時，會參考用於中間轉換的樣式表。
+**GetAndTransform**&#x200B;方法必須在&#x200B;**`<enter>`**&#x200B;標籤的&#x200B;**`<input>`**&#x200B;專案下宣告。 此標籤會將從動態建構的運算式復原XML資料的URL當成引數。 函式的第二個引數是選用引數，當傳入的XML資料與內容的格式不同時，會參考用於中間轉換的樣式表。
 
 輸出會根據在最後一個引數中輸入的路徑來更新內容。
 
-**範例**：為了說明此範例，我們從&quot;cus：book&quot;結構描述開始。
+**範例**：為了說明此範例，我們從&quot;cus:book&quot;結構描述開始。
 
 新增半自動更新編輯控制項輸入表單：
 
@@ -270,6 +272,6 @@ ht-degree: 0%
 
 編輯區域可讓您輸入要擷取的檔案名稱。 URL是根據此名稱建構的，例如：https://myserver.adobe.com/incomin/data.xml
 
-要擷取的資料格式與工作流程自動化的範例1相同。 我們將使用在此範例中看到的「cus：book-workflow.xsl」樣式表。
+要擷取的資料格式與工作流程自動化的範例1相同。 我們將使用在此範例中看到的「cus:book-workflow.xsl」樣式表。
 
 工作執行的結果會從路徑「。」更新內容執行個體。

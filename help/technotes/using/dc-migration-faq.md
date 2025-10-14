@@ -1,14 +1,14 @@
 ---
 product: campaign
-title: 移轉至Adobe Managed Services （公共雲端）常見問題集
+title: 移轉至Adobe Managed Services (Public Cloud)常見問題集
 description: Campaign Classic移轉至公用雲端常見問題集
 feature: Technote, Upgrade
 role: User
 level: Beginner
 exl-id: a9cd08b0-55c2-4405-9fb8-f0c623cd4ccb
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '2225'
+source-wordcount: '2226'
 ht-degree: 0%
 
 ---
@@ -17,11 +17,11 @@ ht-degree: 0%
 
 
 
-Adobe淘汰舊版資料中心：Campaign Classic例項必須轉移至Public Cloud Amazon Web Services (AWS)。 [進一步瞭解此方案](dc-migration.md)。
+Adobe免除舊版資料中心的委任：Campaign Classic例項必須轉移至Public Cloud Amazon Web Services (AWS)。 [進一步瞭解此方案](dc-migration.md)。
 
 以下是此專案的一組常見問題、對您的Campaign環境的影響以及其他實用資源。
 
-如有任何其他問題，請連絡[Adobe客戶服務](https://experienceleague.adobe.com/zh-hant?support-solution=Campaign#support)。
+如有任何其他問題，請連絡[Adobe客戶服務](https://experienceleague.adobe.com/?support-solution=Campaign#support)。
 
 ## 基礎架構影響
 
@@ -33,7 +33,7 @@ Adobe淘汰舊版資料中心：Campaign Classic例項必須轉移至Public Clou
 
   Adobe保留選擇及部署最合適資料庫管理引擎的權利，以便在最佳狀況下提供Adobe Campaign服務。
 
-  此外，為了保留最佳的安全性等級，Adobe將不會提供與基礎架構相關的任何詳細資訊。
+  此外，為了保留最佳安全等級，Adobe將不會提供與基礎架構相關的任何詳細資訊。
 
 * **是否有資料遺失的風險？**
 
@@ -45,13 +45,13 @@ Adobe淘汰舊版資料中心：Campaign Classic例項必須轉移至Public Clou
 
 * **組建編號或行銷活動版本是否會變更？**
 
-  首先，我們會保持移轉時的Campaign Classic建置不變。
+  首先，我們要保留移轉作業中相同的Campaign Classic組建。
 
-  在進一步步驟中，我們會繼續升級至最新的Campaign ClassicGA版本編號。 如需詳細資訊，請參閱[此頁面](../../rn/using/rn-overview.md)。
+  在進一步步驟中，我們會繼續升級至最新的Campaign Classic GA版本編號。 如需詳細資訊，請參閱[此頁面](../../rn/using/rn-overview.md)。
 
 * **解決任何移轉後問題的計畫為何？**
 
-  在生產系統移轉之前，將會進行廣泛的測試。 但是，如果發生任何問題，[Adobe客戶服務](https://experienceleague.adobe.com/zh-hant?support-solution=Campaign#support)將保留主要聯絡點。 Adobe已建立專家團隊，在需要時提供進階支援。
+  在生產系統移轉之前，將會進行廣泛的測試。 不過，如果發生任何問題，[Adobe客戶服務](https://experienceleague.adobe.com/?support-solution=Campaign#support)仍會是主要聯絡視窗。 Adobe已建立專家團隊，在需要時提供進階支援。
 
 ## 傳遞能力影響
 
@@ -77,11 +77,11 @@ Adobe淘汰舊版資料中心：Campaign Classic例項必須轉移至Public Clou
 
 * **如何處理子網域委派？**
 
-  現有的子網域將會從舊版資料中心移至公用雲端(AWS)。 此部分將由作為移轉程式一部分的Adobe傳遞團隊處理。
+  現有的子網域將會從舊版資料中心移至公用雲端(AWS)。 這部分工作將在移轉程式中由Adobe傳遞團隊處理。
 
   >[!NOTE]
   >
-  >傳遞能力團隊的參與是以合約為基礎，客戶應聯絡其Adobe代表以取得與傳遞能力參與相關的資訊。
+  >傳遞能力團隊的參與是以合約為基礎，客戶應聯絡其Adobe代表，瞭解與傳遞能力參與相關的資訊。
 
   Adobe將引導客戶進行所需的測試，以確保設定在移轉後的新公用雲端(AWS)伺服器上啟動並執行。
 
@@ -95,9 +95,9 @@ Adobe淘汰舊版資料中心：Campaign Classic例項必須轉移至Public Clou
 
 * **IP準備的計畫為何？**
 
-  首先，Adobe傳遞能力將評估平台的傳遞能力狀態，並推薦切換到新IP的計畫
+  首先，Adobe傳遞能力將評估平台傳遞能力狀態，並推薦切換至新IP的計畫
 
-  移轉後不需要熱身。 可能會出現例外狀況，在這種情況下，[Adobe客戶服務](https://experienceleague.adobe.com/zh-hant?support-solution=Campaign#support)將會聯絡客戶。
+  移轉後不需要熱身。 可能會出現一些例外狀況，在這種情況下，[Adobe客戶服務](https://experienceleague.adobe.com/?support-solution=Campaign#support)將會聯絡客戶。
 
   不過，計畫是讓這項作業對業務而言是透明的，不同於在上線期間進行的初始升級。
 
@@ -110,8 +110,8 @@ Adobe淘汰舊版資料中心：Campaign Classic例項必須轉移至Public Clou
 * **我們用來標示通訊的委派子網域有何影響？**
 
   用於行銷通訊的子網域保持不變。 不過，根據實作，使用者端需要執行動作：
-   * 如果子網域委派給Adobe （預設），Adobe會處理所有變更並確保順暢轉換。
-   * 若是CNAME設定（例外），使用者端必須與Adobe協調實施變更。
+   * 如果將子網域委派給Adobe （預設），Adobe會處理所有變更並確保順暢轉換。
+   * 若是CNAME設定（例外），使用者端需與Adobe協調實施變更。
 
 ## 組態與連線能力影響
 
@@ -137,13 +137,13 @@ Adobe淘汰舊版資料中心：Campaign Classic例項必須轉移至Public Clou
 
   是。 協力廠商整合（例如SMS提供者）應將新的Adobe Campaign應用程式伺服器IP位址新增至允許清單。
 
-* **移轉是否會影響使用Genesis聯結器的與Adobe Analytics的連線？ 要不要將Campaign IP位址新增至Adobe Analytics端的允許清單？**
+* **移轉是否會影響使用Genesis聯結器的Adobe Analytics連線？ 要不要將Campaign IP位址新增至Adobe Analytics端的允許清單？**
 
   Adobe Campaign應用程式伺服器IP位址將會變更。 此步驟將由移轉後的Adobe客戶服務處理。
 
 * **移轉是否會影響與其他Adobe解決方案(AEM、Target等)的連線？**
 
-  整合是在允許清單中宣告的IP位址與Web服務帳戶設定的組合。 這將由Adobe客戶服務負責和擁有。
+  整合是在允許清單中宣告的IP位址與Web服務帳戶設定的組合。 該帳戶將由Adobe客戶服務負責和擁有。
 
   由於應用程式伺服器IP將變更，外部解決方案將需要加入允許清單上的IP位址。 將會提供這項資訊。 整合的其他部分則以IMS為基礎，並應按原樣運作。
 
@@ -173,7 +173,7 @@ Adobe淘汰舊版資料中心：Campaign Classic例項必須轉移至Public Clou
 
   它可能會根據新伺服器的位置而變更。 不過，客戶將可保留其目前的時區。
 
-  [進一步瞭解](../../workflow/using/managing-time-zones.md)Adobe Campaign Classic v7中的時區管理。
+  在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/managing-time-zones.html){target="_blank"}中進一步瞭解時區管理。
 
 
 ## 安全性與許可權
@@ -227,7 +227,7 @@ Adobe淘汰舊版資料中心：Campaign Classic例項必須轉移至Public Clou
 
 * **我們是否需要在移轉期間計畫停止行銷活動？**
 
-  Adobe建議放慢速度，最好是在應用程式於舊版資料中心上關閉前暫停所有執行：傳送和工作流程。 這將有助於雲端伺服器(AWS)上的重新啟動作業，因為流程將有「正常」暫停的時間，並可儲存任何進行中的執行狀態。
+  Adobe建議在應用程式於舊型資料中心上關閉之前，先減慢執行速度，最好是暫停所有執行：傳送和工作流程。 這將有助於雲端伺服器(AWS)上的重新啟動作業，因為流程將有「正常」暫停的時間，並可儲存任何進行中的執行狀態。
 
 * **我們是否預期Adobe Campaign服務會停止運作？**
 

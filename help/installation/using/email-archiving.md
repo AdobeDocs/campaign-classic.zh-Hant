@@ -7,10 +7,10 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 424faf25-2fd5-40d1-a2fc-c715fc0b8190
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
 source-wordcount: '1211'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -24,13 +24,13 @@ ht-degree: 2%
 
 為此，會將與已傳送電子郵件相對應的.eml檔案傳輸到遠端伺服器，例如SMTP電子郵件伺服器。 封存目的地是您必須指定的密件副本電子郵件地址（傳送收件者無法看到）。
 
-## Recommendations和限制 {#recommendations-and-limitations}
+## 建議和限制 {#recommendations-and-limitations}
 
 * 電子郵件密件副本功能為選用。 請檢查您的授權合約。
-* 若為&#x200B;**託管和混合式架構**，請連絡您的帳戶管理員以啟用它。 您必須將您選擇的密件副本電子郵件地址提供給會為您設定該地址的Adobe團隊。
+* 若為&#x200B;**託管和混合式架構**，請連絡您的帳戶管理員以啟用它。 您選擇的密件副本電子郵件地址必須提供給將為您設定的Adobe團隊。
 * 若為&#x200B;**內部部署安裝**，請遵循下列准則加以啟用 — 請參閱[啟用電子郵件密件副本（內部部署）](#activating-email-archiving--on-premise-)與[設定密件副本電子郵件地址（內部部署）](#configuring-the-bcc-email-address--on-premise-)區段。
 * 您只能使用一個密件副本電子郵件地址。
-* 設定電子郵件密件副本後，請確定在傳遞範本中或透過&#x200B;**[!UICONTROL Email BCC]**&#x200B;選項在傳遞中啟用該功能。 如需詳細資訊，請參閱[本節](../../delivery/using/sending-messages.md#archiving-emails)。
+* 設定電子郵件密件副本後，請確定在傳遞範本中或透過&#x200B;**[!UICONTROL Email BCC]**&#x200B;選項在傳遞中啟用該功能。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/emails/email-bcc.html){target="_blank"}。
 * 只考慮成功傳送的電子郵件，不考慮跳出。
 * 電子郵件封存系統隨Adobe Campaign 17.2 （版本編號8795）而變更。 如果您已在使用電子郵件封存，則必須手動升級至新的電子郵件密件副本系統。 如需詳細資訊，請參閱[移至新的電子郵件密件副本](#updated-email-archiving-system--bcc-)區段。
 
@@ -61,7 +61,7 @@ ht-degree: 2%
 C:\emails\2018-12-02\13h
 ```
 
-當電子郵件的狀態不是&#x200B;**[!UICONTROL Sent]**&#x200B;時，封存檔案名稱為&#x200B;**`<deliveryid>-<broadlogid>.eml`**。 一旦狀態變更為&#x200B;**[!UICONTROL Sent]**，檔案名稱就會變成&#x200B;**`<deliveryid>-<broadlogid>-sent.eml`**。 例如：
+當電子郵件的狀態不是&#x200B;**`<deliveryid>-<broadlogid>.eml`**&#x200B;時，封存檔案名稱為&#x200B;**[!UICONTROL Sent]**。 一旦狀態變更為&#x200B;**[!UICONTROL Sent]**，檔案名稱就會變成&#x200B;**`<deliveryid>-<broadlogid>-sent.eml`**。 例如：
 
 ```
 C:\emails\2018-12-02\13h\4012-8040-sent.eml
@@ -134,7 +134,7 @@ C:\emails\2018-12-02\13h\4012-8040-sent.eml
 <!--
 ## Moving to the new Email BCC {#updated-email-archiving-system--bcc-}
 
-[!BADGE On-premise & Hybrid]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="Applies to on-premise and hybrid deployments only"}
+[!BADGE On-premise & Hybrid]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"}
 
 >[!IMPORTANT]
 >

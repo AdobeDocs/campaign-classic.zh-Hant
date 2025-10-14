@@ -8,9 +8,9 @@ audience: campaign
 content-type: reference
 topic-tags: response-manager
 exl-id: 428c7677-454b-4618-bae7-0be7df6dfcaa
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1387'
+source-wordcount: '1390'
 ht-degree: 2%
 
 ---
@@ -57,7 +57,7 @@ ht-degree: 2%
 
   >[!NOTE]
   >
-  >如果範本套用至選件，**[!UICONTROL Transactions]**&#x200B;索引標籤中會提供&#x200B;**[!UICONTROL Update offer proposition status]**&#x200B;選項。
+  >如果範本套用至選件，**[!UICONTROL Update offer proposition status]**&#x200B;索引標籤中會提供&#x200B;**[!UICONTROL Transactions]**&#x200B;選項。
 
 * **[!UICONTROL Measurement with control group]**：可讓您指出是否已為傳遞或行銷活動定義控制組，並將其納入測量指標中。 控制組不會接收傳遞，可讓您透過比較行銷活動與收到傳遞的目標母體，來測量傳遞後行銷活動的影響。
 
@@ -65,7 +65,7 @@ ht-degree: 2%
   >
   >如果範本設定為將控制組列入考量，但在假設相關的傳送中未定義任何組，則結果將僅以目標收件者為基礎。
 
-  有關定義及設定控制組的詳細資訊，請參閱[本節](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group)。
+  有關定義和設定控制組的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html#add-a-control-group){target=_blank}。
 
 * **[!UICONTROL Channel]**：您可以在下拉式清單中選取&#x200B;**[!UICONTROL All channels]**，以選擇特定管道或讓假設範本可供Adobe Campaign主控台中的所有管道使用。 如果您設定特定頻道的範本，這可讓您在建立假設時自動篩選每個頻道的傳送。 [了解更多](creating-hypotheses.md)
 

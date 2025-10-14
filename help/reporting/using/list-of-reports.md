@@ -5,9 +5,9 @@ description: 報告清單
 badge: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Reporting, Monitoring
 exl-id: c01f4850-ab17-44ac-a5e0-ff082ec206b3
-source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1018'
+source-wordcount: '1020'
 ht-degree: 2%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 2%
 
 
 
-## 傳遞報表 {#reports-on-deliveries}
+## 傳遞報告 {#reports-on-deliveries}
 
 下表提供Adobe Campaign提供的內建報表。
 
@@ -119,11 +119,11 @@ ht-degree: 2%
 
 ## 行銷活動報表 {#reports-on-campaigns}
 
-行銷活動的報表與&#x200B;**nms：operation**&#x200B;表格中的資料有關。
+行銷活動的報告與&#x200B;**nms:operation**&#x200B;表格中的資料有關。
 
 下表提供Adobe Campaign提供的內建報表。
 
-如需這些報告內容的詳細資訊，請參閱[本節](../../campaign/using/designing-marketing-campaigns.md)。
+如需這些報告內容的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html){target=_blank}。
 
 <table> 
  <tbody> 
@@ -180,7 +180,7 @@ ht-degree: 2%
 
 ## 服務報表 {#reports-on-services}
 
-服務報表涉及&#x200B;**nms：service**&#x200B;資料表中的資料。
+服務報表涉及&#x200B;**nms:service**&#x200B;資料表中的資料。
 
 下表提供Adobe Campaign提供的內建報表。
 
@@ -219,7 +219,7 @@ ht-degree: 2%
 
 下表提供Adobe Campaign提供的內建報表。
 
-如需這些報告內容的詳細資訊，請參閱[本節](../../campaign/using/designing-marketing-campaigns.md)。
+如需這些報告內容的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html){target=_blank}。
 
 <table> 
  <tbody> 
@@ -273,7 +273,7 @@ ht-degree: 2%
 
 ## 模擬報表 {#reports-on-simulations}
 
-模擬報表涉及&#x200B;**nms：simulation**&#x200B;資料表中的資料。
+模擬報表涉及&#x200B;**nms:simulation**&#x200B;資料表中的資料。
 
 下表提供Adobe Campaign提供的內建報表。
 
@@ -310,7 +310,7 @@ ht-degree: 2%
 
 ## 網頁應用程式報表 {#reports-on-web-applications}
 
-Web應用程式的報表涉及&#x200B;**nms：WebApp**&#x200B;資料表中的資料。
+Web應用程式的報表涉及&#x200B;**nms:WebApp**&#x200B;資料表中的資料。
 
 下表提供Adobe Campaign提供的內建報表。
 
@@ -360,7 +360,7 @@ Web應用程式的報表涉及&#x200B;**nms：WebApp**&#x200B;資料表中的資
   </tr> 
   <tr> 
    <td> 社交潛在客戶贏取的歷史記錄(socialVisitorStatistics)<br /> </td> 
-   <td> X (先前稱為Twitter)和Facebook潛在客戶收購的歷史記錄取決於Social行銷附加元件。<br /> </td> 
+   <td> X （先前稱為Twitter）和Facebook潛在客戶贏取的歷史記錄取決於社交行銷附加元件。<br /> </td> 
    <td> nms：visitor<br /> </td> 
   </tr> 
   <tr> 

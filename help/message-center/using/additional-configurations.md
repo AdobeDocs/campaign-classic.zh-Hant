@@ -7,9 +7,9 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 4d25d740-db57-4d18-8cae-2dd49c4a786e
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '793'
+source-wordcount: '798'
 ht-degree: 6%
 
 ---
@@ -120,7 +120,7 @@ Once the control and execution modules are installed on the same instance, you m
    >
    >瞭解如何在[本節](../../message-center/using/configuring-instances.md#control-instance)中建立執行個體型別的外部帳戶。
 
-1. 擴充nms：extAccount結構描述以新增追蹤URL：
+1. 擴充nms:extAccount結構描述以新增追蹤URL：
 
    ```
    <attribute advanced="true" desc="URL of the tracking servers" label="Tracking server URL"
@@ -131,7 +131,7 @@ Once the control and execution modules are installed on the same instance, you m
    >
    >瞭解如何延伸[延伸結構描述](../../configuration/using/extending-a-schema.md)區段中的現有結構描述。
 
-1. 修改nms：extAccount表單：
+1. 修改nms:extAccount表單：
 
    ```
    <container label="Message domain branding" type="frame">
@@ -169,6 +169,6 @@ Once the control and execution modules are installed on the same instance, you m
 
 1. 為每個品牌建立一個外部帳戶，其內部名稱與[執行執行個體](#execution-instance)上定義的名稱相同（步驟1）。
 
-1. 為每個品牌建立[傳遞範本](../../delivery/using/about-templates.md)。
+1. 為每個品牌建立傳遞範本。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}。
 
 1. 在傳遞範本的&#x200B;**[!UICONTROL Properties]**&#x200B;中，設定品牌外部帳戶的路由。

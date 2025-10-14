@@ -1,31 +1,31 @@
 ---
 product: campaign
-title: 開發人員常見問題
-description: 開發人員常見問題
+title: 開發人員常見問題集
+description: 開發人員常見問題集
 feature: Troubleshooting, Configuration
 audience: platform
 content-type: reference
 level: Intermediate, Experienced
 topic-tags: starting-with-adobe-campaign
 exl-id: 20552812-5c58-4d48-9636-d5135197685d
-source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '509'
-ht-degree: 90%
+source-wordcount: '511'
+ht-degree: 89%
 
 ---
 
-# 開發人員常見問題 {#dev-faq}
+# 開發人員常見問題集 {#dev-faq}
 
 
 
 作為一個開放式解決方案，Adobe Campaign 可進行自訂，以及供進階應用程式開發使用。
 
-## 什麼是Campaign數據模型？ {#what-is-the-campaign-data-model}
+## 什麼是Campaign資料模型？ {#what-is-the-campaign-data-model}
 
 Adobe Campaign 資料庫的概念資料模型由一組內建表格及其互動組成，並以 XML 描述了應用程式中資料的實體和邏輯結構。並且遵循 Adobe Campaign 專屬的語法，稱為結構描述 (schema)。如需 Adobe Campaign 結構描述的詳細資料，[請參閱本節](../../configuration/using/about-schema-edition.md)。
 
-[按兩下此處瞭解有關Campaign數據模型](https://helpx.adobe.com/tw/campaign/kb/acc-datamodel.html)的更多資訊。
+[按一下這裡以深入瞭解Campaign資料模型](https://helpx.adobe.com/tw/campaign/kb/acc-datamodel.html)。
 
 [本文](../../configuration/using/data-model-best-practices.md)列出最佳實務。
 
@@ -41,7 +41,7 @@ Adobe Campaign 資料庫的概念資料模型由一組內建表格及其互動�
 
 ## 如何使用自訂的收件者表格？ {#how-to-use-a-custom-recipient-table-}
 
-您可以在Campaign中創建和實施非內置收件者表以發送消息。
+您可以在Campaign中建立並實作非內建的收件者表格，以傳送訊息。
 
 [按一下這裡以獲得更多資訊。](../../configuration/using/about-custom-recipient-table.md)
 
@@ -55,7 +55,7 @@ Adobe Campaign 查詢編輯器是一種功能強大的工具，可探索資料�
 
 透過使用所選資料表的欄位或公式可以建立查詢。[本頁面](../../platform/using/about-queries-in-campaign.md)對在 Campaign 資料庫中建立查詢的主要原則進行了闡述。
 
-[按一下這裡](../../workflow/using/query.md) ，以探索 Campaign 查詢編輯器。
+瞭解有關[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}的查詢。
 
 ## 如何匯入資料包？ {#how-can-i-import-a-data-package-}
 
@@ -65,6 +65,6 @@ Adobe Campaign 查詢編輯器是一種功能強大的工具，可探索資料�
 
 [按一下這裡](../../platform/using/working-with-data-packages.md)瞭解如何使用資料包匯入和匯出 Campaign 配置。
 
-## 在哪裡可以找到 Campaign Classic API 的清單？ {#where-can-i-find-the-list-of-campaign-classic-apis}
+## 我可以在哪裡找到Campaign Classic API清單？ {#where-can-i-find-the-list-of-campaign-classic-apis}
 
 [本專屬文件](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hant)提供所有 Campaign API，及個別完整說明。

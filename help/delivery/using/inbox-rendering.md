@@ -6,9 +6,9 @@ badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v
 feature: Inbox Rendering, Monitoring, Email Rendering
 role: User
 exl-id: a3294e70-ac96-4e51-865f-b969624528ce
-source-git-commit: 9b93603a076b007d66aad52b05e560e17e316eeb
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '854'
+source-wordcount: '863'
 ht-degree: 7%
 
 ---
@@ -31,7 +31,7 @@ Litmus是功能豐富的電子郵件驗證和預覽應用程式。 它可讓電�
 
 >[!NOTE]
 >
->測試傳送中的個人化時，不需要收件匣轉譯。 可以使用&#x200B;**[!UICONTROL Preview]**&#x200B;和[校樣](steps-validating-the-delivery.md#sending-a-proof)等Adobe Campaign工具檢查Personalization。
+>測試傳送中的個人化時，不需要收件匣轉譯。 可以使用Adobe Campaign工具（例如&#x200B;**[!UICONTROL Preview]**&#x200B;和校樣）檢查Personalization。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html){target="_blank"}。
 
 ## 正在啟用收件匣轉譯 {#activating-inbox-rendering}
 
@@ -41,7 +41,7 @@ Litmus是功能豐富的電子郵件驗證和預覽應用程式。 它可讓電�
 
 若為內部部署安裝，請依照下列步驟設定收件匣轉譯。
 
-1. 透過&#x200B;**[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]**&#x200B;功能表安裝&#x200B;**[!UICONTROL Inbox rendering (IR)]**&#x200B;套件。 如需詳細資訊，請參閱[安裝Campaign Classic標準套件](../../installation/using/installing-campaign-standard-packages.md)。
+1. 透過&#x200B;**[!UICONTROL Inbox rendering (IR)]** > **[!UICONTROL Tools]** > **[!UICONTROL Advanced]**&#x200B;功能表安裝&#x200B;**[!UICONTROL Import package]**&#x200B;套件。 如需詳細資訊，請參閱[安裝Campaign Classic標準套件](../../installation/using/installing-campaign-standard-packages.md)。
 1. 透過&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL External Accounts]**&#x200B;節點設定HTTP型別的外部帳戶。 如需詳細資訊，請參閱[建立外部帳戶](../../installation/using/external-accounts.md#creating-an-external-account)。
 1. 設定外部帳戶引數，如下所示：
    * **[!UICONTROL Label]**：傳遞伺服器資訊
@@ -107,7 +107,7 @@ Litmus是功能豐富的電子郵件驗證和預覽應用程式。 它可讓電�
 
    ![](assets/s_tn_inbox_rendering_button.png)
 
-   已傳送證明。 傳送電子郵件後幾分鐘，即可在該校訂中存取轉譯縮圖。 如需傳送校樣的詳細資訊，請參閱[本節](steps-validating-the-delivery.md#sending-a-proof)。
+   已傳送證明。 傳送電子郵件後幾分鐘，即可在該校訂中存取轉譯縮圖。 如需傳送校樣的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html){target="_blank"}。
 
 1. 傳送後，證明會出現在傳送清單中。 按兩下。
 

@@ -1,22 +1,22 @@
 ---
 product: campaign
-title: 開始使用異動訊息
+title: 開始使用交易型訊息
 description: 進一步瞭解Adobe Campaign Classic異動訊息傳送操作原理和關鍵步驟
 feature: Transactional Messaging, Message Center
 exl-id: dc52e789-d0bf-4e8f-b448-9d69a2762cc1
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '641'
 ht-degree: 4%
 
 ---
 
 
-# 開始使用異動訊息 {#about-transactional-messaging}
+# 開始使用交易型訊息 {#about-transactional-messaging}
 
 
 
-## 概覽 {#overview}
+## 概觀 {#overview}
 
 **異動訊息** （訊息中心）是Campaign模組，專為管理從外部資訊系統傳送的事件產生的自訂觸發通知所設計。
 
@@ -44,7 +44,7 @@ Adobe Campaign異動訊息模組整合至資訊系統，可傳回要變更為個
 
 >[!NOTE]
 >
->若要為Adobe雲端上託管的訊息中心執行執行個體建立新使用者，您必須聯絡[Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。 訊息中心使用者是特定操作者，需要專用許可權才能存取&#x200B;**[!UICONTROL Real time events (nmsRtEvent)]**&#x200B;資料夾。
+>若要為Adobe Cloud上託管的訊息中心執行執行個體建立新使用者，您必須聯絡[Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。 訊息中心使用者是特定操作者，需要專用許可權才能存取&#x200B;**[!UICONTROL Real time events (nmsRtEvent)]**&#x200B;資料夾。
 
 交易式訊息傳遞整體程式的說明如下：
 
@@ -71,7 +71,7 @@ Adobe Campaign可讓您傳送通知電子郵件給已將產品新增至購物車
 1. [建立事件型別](../../message-center/using/creating-event-types.md)。
 1. [建立並設計訊息範本](../../message-center/using/creating-the-message-template.md)。 您必須在此步驟將事件連結至訊息。
 1. [測試訊息](../../message-center/using/testing-message-templates.md)。
-1. [Publish訊息範本](../../message-center/using/publishing-message-templates.md)。
+1. [發佈訊息範本](../../message-center/using/publishing-message-templates.md)。
 
 >[!NOTE]
 >
@@ -88,6 +88,6 @@ Adobe Campaign可讓您傳送通知電子郵件給已將產品新增至購物車
 ## 相關主題 {#related-topics}
 
 * [開始使用通訊頻道](../../delivery/using/communication-channels.md)
-* [傳遞建立關鍵步驟](../../delivery/using/steps-about-delivery-creation-steps.md)
+* [傳遞建立金鑰步驟](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}
 * [異動訊息傳送架構](../../message-center/using/transactional-messaging-architecture.md)
 * [關於異動訊息傳送報告](../../message-center/using/about-transactional-messaging-reports.md)

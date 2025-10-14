@@ -7,9 +7,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: a5f6b82d-5561-4e56-b2ed-7fd6fd8c2b55
-source-git-commit: 81b47231b027a189bc8b9029b7d48939734d08ed
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '983'
 ht-degree: 3%
 
 ---
@@ -18,15 +18,15 @@ ht-degree: 3%
 
 >[!CAUTION]
 >
->Adobe強烈建議您在資料收集UI中設定Adobe Campaign擴充功能，以使用Adobe Experience Platform Mobile SDK。 Adobe Experience Platform Mobile SDK 有助於在行動應用程式中，強化 Adobe Experience Cloud 解決方案與服務。 SDK 設定可透過資料彙集 UI 來管理，提供靈活的設定與可擴充的規則式整合。 [在Adobe Developer檔案中進一步瞭解](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}。
+>Adobe強烈建議您在資料收集UI中設定Adobe Experience Platform擴充功能，以使用Adobe Campaign Mobile SDK。 Adobe Experience Platform Mobile SDK 有助於在行動應用程式中，強化 Adobe Experience Cloud 解決方案與服務。 SDK 設定可透過資料彙集 UI 來管理，提供靈活的設定與可擴充的規則式整合。 [在Adobe Developer檔案中進一步瞭解](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}。
 
-若要取得Campaign SDK （先前稱為Neolane SDK），請聯絡[Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}。
+若要取得Campaign SDK (先前稱為Neolane SDK)，請聯絡[Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}。
 
 若要深入瞭解支援的不同Android和iOS版本，請參閱[相容性矩陣](../../rn/using/compatibility-matrix.md#MobileSDK)。
 
 您可以在下方找到Campaign SDK的整合步驟。
 
-+++**正在載入Campaign SDK**
++++**正在載入行銷活動SDK**
 
 * **在Android**&#x200B;中： **neolane_sdk-release.aar**&#x200B;檔案必須連結至專案。
 
@@ -46,25 +46,25 @@ ht-degree: 3%
 
   自SDK 1.0.24版開始，此許可權僅適用於Android 6.0之前的版本。
 
-  自SDK 1.0.26版起，即不再使用此許可權。
+  自SDK 1.0.26版開始，不再使用此許可權。
 
-* **在iOS**&#x200B;中： **libNeolaneSDK.a**&#x200B;和&#x200B;**Neolane_SDK.h**&#x200B;檔案必須連結至專案。 從SDK 1.0.24版開始，會啟動選項&#x200B;**ENABLE_BITCODE**。
+* **在iOS**&#x200B;中： **libNeolaneSDK.a**&#x200B;和&#x200B;**Neolane_SDK.h**&#x200B;檔案必須連結至專案。 從SDK 1.0.24版開始，會啟用&#x200B;**ENABLE_BITCODE**&#x200B;選項。
 
   >[!NOTE]
   >
-  >若是1.0.25版的SDK，**Neolane_SDK.h**&#x200B;檔案中有四個架構可供使用。
+  >若是1.0.25版的SDK，**Neolane_SDK.h**&#x200B;檔案中提供了四種架構。
 
 +++
 
 +++**宣告整合設定**
 
-若要將Campaign SDK整合至行動應用程式，功能管理員必須向開發人員提供下列資訊：
+若要將Campaign SDK整合至行動應用程式，功能管理員必須提供下列資訊給開發人員：
 
 * **整合索引鍵**：啟用Adobe Campaign平台以識別行動應用程式。
 
   >[!NOTE]
   >
-  >此整合金鑰是在Adobe Campaign主控台中，在行動應用程式專屬服務的&#x200B;**[!UICONTROL Information]**&#x200B;索引標籤中輸入的。 請參閱[在Adobe Campaign中設定行動應用程式](configuring-the-mobile-application.md)。
+  >此整合金鑰是在Adobe Campaign主控台中，在行動應用程式專屬服務的&#x200B;**[!UICONTROL Information]**&#x200B;索引標籤中輸入的。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html){target="_blank"}。
 
 * **追蹤URL**：符合Adobe Campaign追蹤伺服器的位址。
 * **行銷URL**：啟用訂閱集合。
@@ -152,7 +152,7 @@ ht-degree: 3%
 
   追蹤函式可讓您追蹤通知啟用（開啟）和通知顯示（熒幕擷圖）。
 
-  若要追蹤通知顯示（透過呼叫SDK的&#x200B;**notifyReceive**&#x200B;函式來完成），請遵循下列實作。 請注意，如果您使用FCM (Firebase Cloud Messaging)，我們建議您在Android系統呼叫&#x200B;**onMessageReceived**&#x200B;函式時使用&#x200B;**notifyReceive**&#x200B;函式。
+  若要追蹤通知顯示(透過呼叫SDK的&#x200B;**notifyReceive**&#x200B;函式來完成)，請遵循下列實作。 請注意，如果您使用FCM (Firebase Cloud Messaging)，我們建議您在Android系統呼叫&#x200B;**onMessageReceived**&#x200B;函式時使用&#x200B;**notifyReceive**&#x200B;函式。
 
   ```
   package com.android.YourApplication;
@@ -248,7 +248,7 @@ ht-degree: 3%
   }
   ```
 
-  以下為追蹤通知開啟的實作範例（透過呼叫SDK的&#x200B;**notifyOpening**&#x200B;函式來執行）。 **NotificationActivity**&#x200B;類別對應到上一個範例中用來建立&#x200B;**notifIntent**&#x200B;物件的類別。
+  以下為追蹤通知開啟的實作範例(透過呼叫SDK的&#x200B;**notifyOpening**&#x200B;函式來執行)。 **NotificationActivity**&#x200B;類別對應到上一個範例中用來建立&#x200B;**notifIntent**&#x200B;物件的類別。
 
   ```
   public class NotificationActivity extends Activity {
@@ -586,7 +586,7 @@ typedef NS_ENUM(NSUInteger, ACCRegisterDeviceStatus) {
 
 >[!CAUTION]
 >
->Adobe建議選擇短變數名稱，因為通知大小在iOS和Android限製為4kB。
+>Adobe建議您選擇短的變數名稱，因為通知大小在iOS和Android的上限為4kB。
 
 +++
 
