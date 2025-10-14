@@ -20,7 +20,7 @@ ht-degree: 14%
 
 未轉送追蹤記錄的原因有好幾種。 建議您檢視下列資訊：
 
-* ****&#x200B;追蹤&#x200B;**工作流程是否有錯誤？**
+* **&#x200B;**&#x200B;追蹤&#x200B;**工作流程是否有錯誤？**
 
 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-technical-workflows.html?lang=zh-Hant){target="_blank"}。
 

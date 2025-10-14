@@ -73,4 +73,4 @@ ht-degree: 4%
 
 為了最佳化應用程式中使用的SQL查詢效能，可以從資料結構描述的主要元素宣告索引。
 
-新增索引至電子郵件地址的步驟顯示於本節[](../../configuration/using/database-mapping.md#indexed-fields)。
+新增索引至電子郵件地址的步驟顯示於本節[&#128279;](../../configuration/using/database-mapping.md#indexed-fields)。

@@ -20,7 +20,7 @@ ht-degree: 1%
 
 從行銷活動建立傳遞時，會連結至此行銷活動，並在行銷活動層級合併。
 
-![](assets/do-not-localize/how-to-video.png)[在影片中探索此功能](#create-email-video)
+![](assets/do-not-localize/how-to-video.png) [在影片中探索此功能](#create-email-video)
 
 ## 建立傳遞 {#creating-deliveries}
 
