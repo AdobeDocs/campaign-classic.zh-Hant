@@ -28,7 +28,7 @@ ht-degree: 81%
 
 探索在您的資料庫中輕鬆[匯入輪廓](../../platform/using/import-operations-samples.md)的使用案例。
 
-![](assets/do-not-localize/how-to-video.png) [在影片中探索此功能](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/profile-management/importing-profiles.html)
+![](assets/do-not-localize/how-to-video.png) [在影片中探索此功能](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/profile-management/importing-profiles.html?lang=zh-Hant)
 
 ## 如何定義行銷宣傳活動的目標母體？ {#how-can-i-define-the-target-population-of-a-marketing-campaign-}
 
@@ -40,13 +40,13 @@ ht-degree: 81%
 
 [按一下這裡以了解更多資訊](../../platform/using/creating-and-managing-lists.md#creating-a-profile-list-from-a-group)。
 
-![](assets/do-not-localize/how-to-video.png)探索此功能[於此影片中](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients-with-a-workflow.html)和[其他影片中](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients.html)
+![](assets/do-not-localize/how-to-video.png)探索此功能[於此影片中](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients-with-a-workflow.html?lang=zh-Hant)和[其他影片中](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients.html?lang=zh-Hant)
 
 ## 如何在傳送訊息前排除重複的母體？ {#how-can-i-deduplicate-a-population-before-sending-a-message-}
 
 您可以使用工作流程來排除傳遞目標中重複收件者，以避免將相同訊息多次傳送給收件者。
 
-在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/deduplication.html){target="_blank"}中瞭解更多。
+在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/deduplication.html?lang=zh-Hant){target="_blank"}中瞭解更多。
 
 ## 如何識別和鎖定新聞稿的訂閱者？ {#how-to-identify-and-target-subscribers-to-a-newsletter-}
 
@@ -54,4 +54,4 @@ ht-degree: 81%
 
 ## 從目標母體中排除用戶檔案的最佳做法是什麼？ {#what-is-the-best-practice-to-exclude-profiles-from-a-target-population-}
 
-在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/read-list.html){target="_blank"}中瞭解如何從目標母體中排除設定檔清單。
+在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/read-list.html?lang=zh-Hant){target="_blank"}中瞭解如何從目標母體中排除設定檔清單。

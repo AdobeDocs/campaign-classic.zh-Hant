@@ -20,7 +20,7 @@ ht-degree: 16%
 
 Adobe Campaign不是專門用於報表的工具：在Adobe Campaign中建立的報表主要為讓您檢視彙總的資料。 專用於分析和表示資料的Adobe Campaign報表並非設計用於資料庫匯出。
 
-若要從Adobe Campaign資料庫匯出資料，您需要建立工作流程並使用資料匯出活動。 如需詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/action-activities.html){target="_blank"}。
+若要從Adobe Campaign資料庫匯出資料，您需要建立工作流程並使用資料匯出活動。 如需詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/action-activities.html?lang=zh-Hant){target="_blank"}。
 
 Adobe Campaign提供數種報告工具：
 

@@ -63,13 +63,13 @@ Adobe Campaign 提供一套工具，以協助您遵循隱私權法規（GDPR、C
 
 請閱讀[本小節](../../platform/using/adobe-campaign-workspace.md)，瞭解更多 Adobe Campaign 工作區基本知識。
 
-![](assets/do-not-localize/how-to-video.png) [在影片中探索行銷活動工作區](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/getting-started/exploring-the-adobe-campaign-classic-user-interface.html)
+![](assets/do-not-localize/how-to-video.png) [在影片中探索行銷活動工作區](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/getting-started/exploring-the-adobe-campaign-classic-user-interface.html?lang=zh-Hant)
 
 ## 如何選取訊息的對象？ {#how-can-i-select-the-target-population-of-my-messages-}
 
 透過 Adobe Campaign，您可以使用不同策略來建立客群，並選取收件者。
 
-按一下這裡以在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#target-population){target="_blank"}中進一步瞭解。
+按一下這裡以在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hant#target-population){target="_blank"}中進一步瞭解。
 
 ## 什麼是工作流程？ {#what-is-a-workflow-}
 
@@ -85,7 +85,7 @@ Adobe Campaign 的工作流程包含跨應用程式伺服器的不同模組策�
 
 [按一下這裡以瞭解更多](../../delivery/using/about-email-channel.md)。
 
-![](assets/do-not-localize/how-to-video.png) [在影片中探索此內容](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/getting-started/creating-a-campaign-and-an-email.html)
+![](assets/do-not-localize/how-to-video.png) [在影片中探索此內容](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/getting-started/creating-a-campaign-and-an-email.html?lang=zh-Hant)
 
 ## 如何傳送 SMS 訊息？ {#how-to-send-sms-messages-}
 
@@ -93,7 +93,7 @@ Adobe Campaign 的工作流程包含跨應用程式伺服器的不同模組策�
 
 ## 如何傳送推播通知？ {#how-to-send-push-notifications-}
 
-在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push.html){target="_blank"}中瞭解如何使用Adobe Campaign來傳送個人化推播通知。
+在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push.html?lang=zh-Hant){target="_blank"}中瞭解如何使用Adobe Campaign來傳送個人化推播通知。
 
 ## 如何設計和分享線上意見調查？ {#how-to-design-and-share-an-online-survey-}
 
@@ -131,6 +131,6 @@ Adobe 會持續評估產品功能，不斷使用更強大的版本進行替換�
 
 ## 是否發行新的文件更新和說明材料？ {#are-there-new-documentation-updates-and-help-materials-released-}
 
-在[本頁面中](https://experienceleague.adobe.com/docs/campaign-classic/using/documentation-updates.html)列出最新的 Campaign Classic 文件更新。
+在[本頁面中](https://experienceleague.adobe.com/docs/campaign-classic/using/documentation-updates.html?lang=zh-Hant)列出最新的 Campaign Classic 文件更新。
 
 您也可以參照[本頁面中](https://helpx.adobe.com/tw/campaign/kb/article-list.html)列出之最新的技術附註。

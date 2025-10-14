@@ -93,7 +93,7 @@ ajouter screenshot -->
 
 確認傳遞後，您可以看到傳遞的狀態為&#x200B;**[!UICONTROL Pending]**。 此狀態表示執行程式正在等待某些資源的可用性。
 
-**[!UICONTROL Pending]**&#x200B;狀態可能首先表示您的傳送已排程且擱置到指定日期。 如需詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/configure-and-send.html#schedule-delivery-sending){target="_blank"}
+**[!UICONTROL Pending]**&#x200B;狀態可能首先表示您的傳送已排程且擱置到指定日期。 如需詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/configure-and-send.html?lang=zh-Hant#schedule-delivery-sending){target="_blank"}
 
 如果您的傳遞尚未傳送且其狀態仍為&#x200B;**[!UICONTROL Pending]**，則可能是下列結果：
 

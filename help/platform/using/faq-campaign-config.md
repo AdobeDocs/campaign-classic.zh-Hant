@@ -51,7 +51,7 @@ Adobe Campaign 目前提供英文、法文、德文和日文供 4 種語言的�
 
 Campaign 可以讓您以協作模式，針對行銷活動的主要步驟設定核准流程。您可以針對每個行銷活動，核准傳遞目標、內容和成本。可以以電子郵件的形式通知負責核准的Adobe Campaign操作者，然後他們可透過主控台或網路連線核准或拒絕核准。
 
-在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval.html#review-and-approve-deliveries){target="_blank"}中瞭解如何實作傳遞內容核准。
+在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval.html?lang=zh-Hant#review-and-approve-deliveries){target="_blank"}中瞭解如何實作傳遞內容核准。
 
 ## 如何存取在外部資料庫中存儲的資料？ {#how-can-i-access-data-stored-in-an-external-database-}
 

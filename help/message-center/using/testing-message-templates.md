@@ -100,7 +100,7 @@ ht-degree: 2%
 
 您可以傳送證明至先前建立的種子地址，以測試訊息傳送。
 
-傳送證明的過程與定期傳送的過程相同。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html){target="_blank"}。 然而，使用交易式訊息時，您需要預先執行下列操作：
+傳送證明的過程與定期傳送的過程相同。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html?lang=zh-Hant){target="_blank"}。 然而，使用交易式訊息時，您需要預先執行下列操作：
 
 * 使用[個人化資料](#managing-seed-addresses-in-transactional-messages)建立一或多個[種子地址](#personalization-data)。
 * [建立訊息內容](../../message-center/using/creating-the-message-template.md#creating-message-content)。
@@ -117,7 +117,7 @@ ht-degree: 2%
 
    ![](assets/messagecenter_send_proof_002.png)
 
-可透過&#x200B;**[!UICONTROL Audit]**&#x200B;索引標籤在每個範本中存取校樣。 如需詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html){target="_blank"}。
+可透過&#x200B;**[!UICONTROL Audit]**&#x200B;索引標籤在每個範本中存取校樣。 如需詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html?lang=zh-Hant){target="_blank"}。
 
 ![](assets/messagecenter_send_proof_003.png)
 

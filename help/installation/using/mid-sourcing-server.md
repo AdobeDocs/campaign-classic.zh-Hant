@@ -27,7 +27,7 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->設定中間來源伺服器且[同步工作流程](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html){target="_blank"}首次執行後，請確定您未更新中間來源外部帳戶的內部名稱。
+>設定中間來源伺服器且[同步工作流程](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html?lang=zh-Hant){target="_blank"}首次執行後，請確定您未更新中間來源外部帳戶的內部名稱。
 
 ## 安裝和設定執行個體的步驟 {#steps-for-installing-and-configuring-an-instance}
 

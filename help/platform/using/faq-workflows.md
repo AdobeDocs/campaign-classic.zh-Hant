@@ -37,7 +37,7 @@ ht-degree: 63%
 
 您可以大量執行更新、合併及插入資料庫資料。
 
-在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/update-data.html){target="_blank"}中瞭解更多。
+在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/update-data.html?lang=zh-Hant){target="_blank"}中瞭解更多。
 
 ## 如何運用資料管理功能？ {#how-can-i-leverage-data-management-capabilities-}
 
@@ -47,7 +47,7 @@ ht-degree: 63%
 * 保持和傳達緩衝區計算，尤其是在目標建構階段或進行資料庫管理時。
 * 存取外部資料庫（選用）：在鎖定過程中考慮異質資料庫。
 
-在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/targeting-workflows.html){target="_blank"}中瞭解如何設計複雜的目標，以及如何處理資料合併工作流程活動的資料。
+在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/targeting-workflows.html?lang=zh-Hant){target="_blank"}中瞭解如何設計複雜的目標，以及如何處理資料合併工作流程活動的資料。
 
 ## 我可以自動個人化訊息傳送嗎？ {#can-i-automate-personalized-messages-sending-}
 
@@ -55,7 +55,7 @@ ht-degree: 63%
 
 ## 如何使用工作流程將受眾分隔到子集中？ {#how-can-i-split-an-audience-in-subsets-with-a-workflow-}
 
-在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/split.html){target="_blank"}中瞭解如何將目標分割成數個子集。
+在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/split.html?lang=zh-Hant){target="_blank"}中瞭解如何將目標分割成數個子集。
 
 ## 如何從外部檔案更新收件者資料？ {#how-can-i-update-recipient-data-from-an-external-file-}
 
@@ -65,4 +65,4 @@ ht-degree: 63%
 
 ## 如何識別和鎖定新的收件者？ {#how-can-i-identify-and-target-new-recipients-}
 
-請檢視[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/using-aggregates.html){target="_blank"}，瞭解如何使用彙總自動識別資料庫中上次新增的收件者，並向他們傳送歡迎訊息。
+請檢視[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/using-aggregates.html?lang=zh-Hant){target="_blank"}，瞭解如何使用彙總自動識別資料庫中上次新增的收件者，並向他們傳送歡迎訊息。

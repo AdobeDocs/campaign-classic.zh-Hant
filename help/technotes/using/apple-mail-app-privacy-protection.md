@@ -94,7 +94,7 @@ Apple的新功能是未來產業在電子郵件隱私保護方面的面貌。 �
 
   ![](assets/identify-email-open-tracking-2.png)
 
-* 您可以使用預先定義的篩選器。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/create-a-filter.html){target="_blank"}。
+* 您可以使用預先定義的篩選器。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/create-a-filter.html?lang=zh-Hant){target="_blank"}。
 
   ![](assets/identify-email-open-tracking-3.png)
 

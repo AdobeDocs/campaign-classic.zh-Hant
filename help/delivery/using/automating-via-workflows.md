@@ -214,12 +214,12 @@ ht-degree: 0%
 
 ### 從FTP匯入內容 {#importing-content-from-ftp}
 
-如果您的傳送內容位於FTP或SFTP伺服器上的HTML檔案中，您可輕鬆將此內容載入到Adobe Campaign傳送中。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html){target="_blank"}。
+如果您的傳送內容位於FTP或SFTP伺服器上的HTML檔案中，您可輕鬆將此內容載入到Adobe Campaign傳送中。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html?lang=zh-Hant){target="_blank"}。
 
 
 ### 從Amazon Simple Storage Service (S3)聯結器匯入內容 {#importing-content-from-amazon-simple-storage-service--s3--connector}
 
-如果您的傳送內容位於Amazon Simple Storage Service (S3)貯體，您可輕鬆將此內容載入Adobe Campaign傳送中。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html){target="_blank"}。
+如果您的傳送內容位於Amazon Simple Storage Service (S3)貯體，您可輕鬆將此內容載入Adobe Campaign傳送中。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html?lang=zh-Hant){target="_blank"}。
 
 
 ## 半自動更新 {#semi-automatic-update}

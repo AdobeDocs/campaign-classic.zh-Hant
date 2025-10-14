@@ -32,7 +32,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如需排程器的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html){target="_blank"}。
+>如需排程器的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html?lang=zh-Hant){target="_blank"}。
 
 根據預設，**[!UICONTROL Database cleanup]**&#x200B;工作流程設定為每天凌晨4:00開始。 排程器可讓您變更工作流程觸發頻率。 可使用下列頻率：
 

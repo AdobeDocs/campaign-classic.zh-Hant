@@ -23,7 +23,7 @@ ht-degree: 21%
 
 * 為避免密碼過期（密碼的有效期為90天），請使用以金鑰為基礎的驗證而非密碼驗證。 此外，以金鑰為基礎的驗證可讓您產生多個金鑰，例如在管理多個實體時。 相反，密碼身份驗證要求您與所管理的所有實體共享密碼。
 
-  支援的金鑰格式為SSH-2 RSA 2048。 為Windows產生SSH金鑰的工具為PuTTYgen，而為Linux產生ssh-keygen。 您可以透過Campaign「控制面板」上傳公開SSH金鑰。 [了解更多](https://experienceleague.adobe.com/en/docs/control-panel/using/sftp-management/key-management){target="_blank"}
+  支援的金鑰格式為SSH-2 RSA 2048。 為Windows產生SSH金鑰的工具為PuTTYgen，而為Linux產生ssh-keygen。 您可以透過Campaign「控制面板」上傳公開SSH金鑰。 [了解更多](https://experienceleague.adobe.com/zh-hant/docs/control-panel/using/sftp-management/key-management){target="_blank"}
 
 * 在 SFTP 上載和工作流程中使用批次處理。
 
@@ -31,7 +31,7 @@ ht-degree: 21%
 
 * 依預設，您建立的所有資料夾都處於唯有識別碼的讀/寫模式。 建立需要Campaign存取的資料夾時，請務必以整個群組的讀取/寫入許可權來設定資料夾。 否則，出於安全原因，工作流程可能無法建立/刪除檔案，因為它們在同一組內的不同標識符下運行。
 
-* 您嘗試啟動SFTP連線的公用IP必須新增至Campaign執行個體上的允許清單。 您可以透過「控制面板」新增公用IP。 [了解更多](https://experienceleague.adobe.com/en/docs/control-panel/using/sftp-management/ip-range-allow-listing){target="_blank"}
+* 您嘗試啟動SFTP連線的公用IP必須新增至Campaign執行個體上的允許清單。 您可以透過「控制面板」新增公用IP。 [了解更多](https://experienceleague.adobe.com/zh-hant/docs/control-panel/using/sftp-management/ip-range-allow-listing){target="_blank"}
 
 ## SFTP儲存空間使用量最佳實務 {#sftp-server-best-practices}
 
@@ -43,7 +43,7 @@ SFTP伺服器是設計作為暫存空間，您可以在其上控制檔案的保�
 
 >[!NOTE]
 >
->* 您可以使用Campaign Classic [控制面板](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html){target="_blank"}監視您的SFTP伺服器儲存空間。
+>* 您可以使用Campaign Classic [控制面板](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html?lang=zh-Hant){target="_blank"}監視您的SFTP伺服器儲存空間。
 >
 >* 所有管理員使用者都可存取控制面板。 授予使用者管理員存取權限的步驟已詳載於[本頁](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hant#discover-control-panel){target="_blank"}中。
 >
@@ -132,7 +132,7 @@ SFTP伺服器是設計作為暫存空間，您可以在其上控制檔案的保�
 
 1. 疑難排解&#x200B;**工作階段記錄**：
 
-   1. 在工作流程中，連按兩下[檔案傳輸](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}活動。
+   1. 在工作流程中，連按兩下[檔案傳輸](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=zh-Hant){target="_blank"}活動。
    1. 前往&#x200B;**[!UICONTROL File Transfer]**&#x200B;標籤，然後按一下&#x200B;**[!UICONTROL Advanced Parameters]**。
    1. 核取 **[!UICONTROL Display the session logs]** 選項。
 

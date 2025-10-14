@@ -55,7 +55,7 @@ Adobe Campaign 查詢編輯器是一種功能強大的工具，可探索資料�
 
 透過使用所選資料表的欄位或公式可以建立查詢。[本頁面](../../platform/using/about-queries-in-campaign.md)對在 Campaign 資料庫中建立查詢的主要原則進行了闡述。
 
-瞭解有關[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}的查詢。
+瞭解有關[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=zh-Hant){target="_blank"}的查詢。
 
 ## 如何匯入資料包？ {#how-can-i-import-a-data-package-}
 

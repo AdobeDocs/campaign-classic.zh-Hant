@@ -54,6 +54,6 @@ ht-degree: 1%
 * 檢查傳遞範本中的[重試](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure)是否已正確設定（重試期間為30分鐘，重試次數超過20次）。
 * 定期確認[退信](understanding-delivery-failures.md#bounce-mail-management)信箱可存取，且帳戶不會過期。
 * 檢查可從[傳遞儀表板](delivery-dashboard.md)存取的每個傳遞輸送量，以確保其與傳遞內容的有效性一致（例如，「Flash銷售」應在幾分鐘內傳遞，而非幾天）。
-* 使用波段時，請確認每個波段都有足夠的時間完成，才能觸發下一個波段。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/configure-and-send.html#sending-using-multiple-waves){target="_blank"}。
+* 使用波段時，請確認每個波段都有足夠的時間完成，才能觸發下一個波段。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/configure-and-send.html?lang=zh-Hant#sending-using-multiple-waves){target="_blank"}。
 * 檢查錯誤數目和新的[隔離](understanding-quarantine-management.md)是否與其他傳遞一致。
 * 仔細查閱[傳遞記錄](delivery-dashboard.md#delivery-logs-and-history)以詳細檢查反白顯示的錯誤型別（封鎖清單、DNS問題、反垃圾郵件規則等）。

@@ -59,7 +59,7 @@ ht-degree: 4%
 
 **[!UICONTROL Target extension]** (targetData)型別個人化元素不適用於目標工作流程。 必須在工作流程中建置傳遞目標，並在傳遞的入站轉變中指定。
 
-如果您想要建立傳遞校樣，需要根據&#x200B;**[!UICONTROL Address substitution]**&#x200B;模式建置校樣目標，才能輸入個人化資料。 如需詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#target-population){target="_blank"}中的本節。
+如果您想要建立傳遞校樣，需要根據&#x200B;**[!UICONTROL Address substitution]**&#x200B;模式建置校樣目標，才能輸入個人化資料。 如需詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hant#target-population){target="_blank"}中的本節。
 
 在下列範例中，我們將收集客戶資訊清單，用於個人化電子郵件中。
 

@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # 建立Android通知{#create-notificaations-android}
 
-使用Adobe Campaign在Android裝置上傳送推播通知。 在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}中介紹了傳遞建立的全域概念。
+使用Adobe Campaign在Android裝置上傳送推播通知。 在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hant){target="_blank"}中介紹了傳遞建立的全域概念。
 
 從建立新傳遞開始。
 
@@ -70,7 +70,7 @@ ht-degree: 0%
 
 ## 建立通知訊息 {#creating-notification-message}
 
-![](assets/do-not-localize/how-to-video.png) [瞭解如何在影片中建立Android推播通知](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-and-sending-push-notifications.html#additional-resources){target="_blank"}。
+![](assets/do-not-localize/how-to-video.png) [瞭解如何在影片中建立Android推播通知](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-and-sending-push-notifications.html?lang=zh-Hant#additional-resources){target="_blank"}。
 
 1. 前往&#x200B;**[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]**。
 

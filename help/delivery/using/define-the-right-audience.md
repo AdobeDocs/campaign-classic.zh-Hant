@@ -19,7 +19,7 @@ ht-degree: 4%
 
 目標人口是關鍵：仔細建立您的清單，在熱門電子郵件使用者端和行動裝置上測試您的電子郵件，並確保您的電子郵件清單是最新的（沒有未知或過時的地址）。 您也可以傳送校樣來幫助設定完整的驗證週期。
 
-在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}中瞭解本節中有關目標母體的更多資訊。
+在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hant){target="_blank"}中瞭解本節中有關目標母體的更多資訊。
 
 ## 鎖定正確的對象 {#target-the-right-audience}
 
@@ -33,13 +33,13 @@ ht-degree: 4%
 
 例如，您可以傳送給已透過社交網路收集設定檔的訪客，或訂閱資訊服務的訪客。
 
-這些對應會顯示在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/audience/add-profiles/target-mappings.html){target="_blank"}中。
+這些對應會顯示在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/audience/add-profiles/target-mappings.html?lang=zh-Hant){target="_blank"}中。
 
 您也可以建立並使用自訂的目標對應。 如需詳細資訊，請參閱[本章節](../../configuration/using/target-mapping.md)。
 
 ## 外部收件者 {#external-recipients}
 
-您可以傳遞至儲存在外部檔案中而非儲存在資料庫中的收件者。 在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#selecting-external-recipients){target="_blank"}中瞭解更多。
+您可以傳遞至儲存在外部檔案中而非儲存在資料庫中的收件者。 在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hant#selecting-external-recipients){target="_blank"}中瞭解更多。
 
 ## 傳送給您的訂閱者 {#send-to-subscribers}
 
@@ -50,7 +50,7 @@ ht-degree: 4%
 
 若要測試您的傳遞，請在傳送至主要目標之前使用證明。
 
-請務必選取適當的校樣收件者，因為他們會驗證訊息的表單和內容。 定義證明收件者的步驟會顯示在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#select-the-proof-target){target="_blank"}中。
+請務必選取適當的校樣收件者，因為他們會驗證訊息的表單和內容。 定義證明收件者的步驟會顯示在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hant#select-the-proof-target){target="_blank"}中。
 
 種子地址用於鎖定不符合所定義目標條件的收件者，以便在傳送至主要目標之前測試傳遞。 它們會顯示在此區段[中的](about-seed-addresses.md)。
 

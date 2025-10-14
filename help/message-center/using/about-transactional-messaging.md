@@ -88,6 +88,6 @@ Adobe Campaign可讓您傳送通知電子郵件給已將產品新增至購物車
 ## 相關主題 {#related-topics}
 
 * [開始使用通訊頻道](../../delivery/using/communication-channels.md)
-* [傳遞建立金鑰步驟](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}
+* [傳遞建立金鑰步驟](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hant){target="_blank"}
 * [異動訊息傳送架構](../../message-center/using/transactional-messaging-architecture.md)
 * [關於異動訊息傳送報告](../../message-center/using/about-transactional-messaging-reports.md)

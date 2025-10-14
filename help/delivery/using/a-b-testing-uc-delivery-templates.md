@@ -15,7 +15,7 @@ ht-degree: 6%
 
 # AB測試：建立傳遞範本 {#step-3--creating-two-delivery-templates}
 
-我們現在想要建立兩個傳遞範本。 每個範本都將在連結至&#x200B;**[!UICONTROL Email delivery]**&#x200B;活動的&#x200B;**[!UICONTROL Split]**&#x200B;活動中參考。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}。
+我們現在想要建立兩個傳遞範本。 每個範本都將在連結至&#x200B;**[!UICONTROL Email delivery]**&#x200B;活動的&#x200B;**[!UICONTROL Split]**&#x200B;活動中參考。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=zh-Hant){target="_blank"}。
 
 1. 瀏覽至&#x200B;**[!UICONTROL Resources > Delivery template]**&#x200B;資料夾。
 1. 複製&#x200B;**[!UICONTROL Email]**&#x200B;傳遞範本。

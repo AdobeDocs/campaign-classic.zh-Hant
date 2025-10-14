@@ -31,7 +31,7 @@ ht-degree: 1%
 
 * 有些電子郵件提供者可能會將您的IP位址新增至封鎖清單。 在此情況下，請檢查您的broadlogs並參閱[此區段](about-deliverability.md)。
 
-* 您的傳送可能太大而無法快速處理，這可能與JavaScript高度個人化或傳送超過60KB有關。 請參閱Adobe Campaign v8 [傳遞最佳實務](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html){target="_blank"}。  以深入瞭解內容指南。
+* 您的傳送可能太大而無法快速處理，這可能與JavaScript高度個人化或傳送超過60KB有關。 請參閱Adobe Campaign v8 [傳遞最佳實務](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=zh-Hant){target="_blank"}。  以深入瞭解內容指南。
 
 * 節流可能發生在Adobe Campaign MTA中。 原因如下：
 
@@ -73,7 +73,7 @@ ht-degree: 1%
 
   若要解決此問題，建議對資料庫執行真空並重新索引。 如需資料庫維護的詳細資訊，請參閱[本節](../../production/using/recommendations.md)。
 
-  您也應該重新啟動所有具有已排程活動的工作流程，以及所有處於失敗狀態的工作流程。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html){target="_blank"}。
+  您也應該重新啟動所有具有已排程活動的工作流程，以及所有處於失敗狀態的工作流程。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html?lang=zh-Hant){target="_blank"}。
 
 * 傳送失敗時，傳送記錄檔中可能會出現下列錯誤：
 
@@ -83,7 +83,7 @@ ht-degree: 1%
 
   通常，此錯誤表示電子郵件中有收件者的多個值之個人化欄位或區塊。 個人化區塊正在使用中，且正在為特定收件者擷取多個記錄。
 
-  若要解決此問題，請檢查使用的個人化資料，然後檢查目標，找出具有超過其中一個欄位專案的收件者。 您也可以在傳遞活動之前的目標工作流程中使用&#x200B;**[!UICONTROL Deduplication]**&#x200B;活動，以檢查一次只有一個個人化欄位。 如需重複資料刪除的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/deduplication.html){target="_blank"}。
+  若要解決此問題，請檢查使用的個人化資料，然後檢查目標，找出具有超過其中一個欄位專案的收件者。 您也可以在傳遞活動之前的目標工作流程中使用&#x200B;**[!UICONTROL Deduplication]**&#x200B;活動，以檢查一次只有一個個人化欄位。 如需重複資料刪除的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/deduplication.html?lang=zh-Hant){target="_blank"}。
 
 * 部分傳送可能會因為「無法聯絡」錯誤而失敗，並指出：
 

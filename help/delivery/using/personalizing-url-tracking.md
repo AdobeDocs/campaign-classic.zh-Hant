@@ -19,7 +19,7 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->電子郵件中的影像管理也在此視窗中設定。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#adding-images){target="_blank"}。
+>電子郵件中的影像管理也在此視窗中設定。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=zh-Hant#adding-images){target="_blank"}。
 
 ![](assets/s_ncs_user_email_del_tracking_ico.png)
 

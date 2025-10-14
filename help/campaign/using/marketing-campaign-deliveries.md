@@ -28,7 +28,7 @@ ht-degree: 1%
 
 ![](assets/campaign_op_add_delivery.png)
 
-建議的設定適用於不同型別的傳遞：直接郵件、電子郵件、行動裝置頻道。 在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}中瞭解更多。
+建議的設定適用於不同型別的傳遞：直接郵件、電子郵件、行動裝置頻道。 在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hant){target="_blank"}中瞭解更多。
 
 ## 開始傳遞 {#starting-a-delivery}
 

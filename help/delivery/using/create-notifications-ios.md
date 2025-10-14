@@ -16,7 +16,7 @@ ht-degree: 7%
 
 # 建立iOS通知{#create-notifications-ios}
 
-本節詳細說明特定於iOS通知傳送的元素。 在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}中介紹了傳遞建立的全域概念。
+本節詳細說明特定於iOS通知傳送的元素。 在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hant){target="_blank"}中介紹了傳遞建立的全域概念。
 
 從建立新傳遞開始。
 
@@ -34,7 +34,7 @@ ht-degree: 7%
 
    >[!NOTE]
    >
-   >選取傳遞目標母體時的詳細程式，會顯示在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#target-population.){target="_blank"}的此章節中。
+   >選取傳遞目標母體時的詳細程式，會顯示在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hant#target-population.){target="_blank"}的此章節中。
    >
    >如需使用個人化欄位的詳細資訊，請參閱[本區段](about-personalization.md)。
    >

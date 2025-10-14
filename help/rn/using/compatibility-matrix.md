@@ -437,7 +437,7 @@ ht-degree: 97%
 
 Campaign 用戶端主控台必須使用 Microsoft Edge WebView2 執行階段最新版本。
 
-從 [Microsoft 開發人員網站](https://www.adobe.com/go/acc-ms-webview2-runtime-download)下載 Microsoft Edge WebView2。
+從 [Microsoft 開發人員網站](https://www.adobe.com/go/acc-ms-webview2-runtime-download_tw)下載 Microsoft Edge WebView2。
 
 
 ## Mobile SDK {#MobileSDK}
@@ -472,7 +472,7 @@ Campaign 用戶端主控台必須使用 Microsoft Edge WebView2 執行階段最�
 
 ## 瀏覽器 {#Browsers}
 
-下列瀏覽器在其最新版本中與Campaign相容，可用於網頁存取。 如需詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-create.html#use-the-web-interface-){target=_blank}。
+下列瀏覽器在其最新版本中與Campaign相容，可用於網頁存取。 如需詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-create.html?lang=zh-Hant#use-the-web-interface-){target=_blank}。
 
 * Google Chrome
 * Microsoft Edge

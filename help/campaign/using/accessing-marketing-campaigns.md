@@ -41,7 +41,7 @@ Adobe Campaign可讓您建立、設定、執行和分析行銷活動。 所有�
 >
 >如需整體Adobe Campaign人體工學、許可權和設定檔管理功能的詳細資訊，請參閱[本節](../../platform/using/adobe-campaign-workspace.md)。
 >
->所有與管道和傳送相關的功能在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}中有詳細說明。
+>所有與管道和傳送相關的功能在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hant){target="_blank"}中有詳細說明。
 
 ### 行銷活動行事曆 {#campaign-calendar}
 

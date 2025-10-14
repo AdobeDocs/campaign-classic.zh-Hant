@@ -17,9 +17,9 @@ ht-degree: 3%
 
 本節詳細說明如何建立工作流程以執行A/B測試。
 
-1. 建立新的工作流程，然後設定查詢活動以定位所需的母體。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}。
+1. 建立新的工作流程，然後設定查詢活動以定位所需的母體。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=zh-Hant){target="_blank"}。
 
-1. 新增分割活動，將目標母體分割成多個子集。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/split.html){target="_blank"}。
+1. 新增分割活動，將目標母體分割成多個子集。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/split.html?lang=zh-Hant){target="_blank"}。
 
 1. 開啟活動，然後視需要設定每個子集。 如需如何設定&#x200B;**[!UICONTROL Split]**&#x200B;活動的詳細資訊，請參閱[本節](../../workflow/using/split.md)。
 

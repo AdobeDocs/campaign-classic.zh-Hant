@@ -19,7 +19,7 @@ Adobe Campaign Content Manager模組是特定的Campaign Classic [內建套件](
 
 >[!NOTE]
 >
->本節將介紹內容管理模組。 如需如何設計電子郵件傳遞內容的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html){target="_blank"}。
+>本節將介紹內容管理模組。 如需如何設計電子郵件傳遞內容的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=zh-Hant){target="_blank"}。
 
 內容管理模組整合了工作群組、工作流程和內容彙總功能。 這可讓訊息自動格式化：電子郵件、郵件、簡訊、網頁等。
 

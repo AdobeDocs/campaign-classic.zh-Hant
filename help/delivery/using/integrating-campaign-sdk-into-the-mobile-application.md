@@ -64,7 +64,7 @@ ht-degree: 3%
 
   >[!NOTE]
   >
-  >此整合金鑰是在Adobe Campaign主控台中，在行動應用程式專屬服務的&#x200B;**[!UICONTROL Information]**&#x200B;索引標籤中輸入的。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html){target="_blank"}。
+  >此整合金鑰是在Adobe Campaign主控台中，在行動應用程式專屬服務的&#x200B;**[!UICONTROL Information]**&#x200B;索引標籤中輸入的。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html?lang=zh-Hant){target="_blank"}。
 
 * **追蹤URL**：符合Adobe Campaign追蹤伺服器的位址。
 * **行銷URL**：啟用訂閱集合。
