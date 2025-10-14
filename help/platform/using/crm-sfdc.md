@@ -40,10 +40,10 @@ ht-degree: 0%
 用來登入Salesforce CRM的密碼。
 
    * **[!UICONTROL Client identifier]**
-若要瞭解在何處尋找您的使用者端識別碼，請參閱此[頁面](https://help.salesforce.com/articleView?id=000205876&amp;type=1)。
+若要瞭解在何處尋找您的使用者端識別碼，請參閱此[頁面](https://help.salesforce.com/articleView?id=000205876&type=1)。
 
    * **[!UICONTROL Security token]**
-若要瞭解在何處尋找您的安全性權杖，請參閱此[頁面](https://help.salesforce.com/articleView?id=000205876&amp;type=1)。
+若要瞭解在何處尋找您的安全性權杖，請參閱此[頁面](https://help.salesforce.com/articleView?id=000205876&type=1)。
 
    * **[!UICONTROL API version]**
 選取API的版本。

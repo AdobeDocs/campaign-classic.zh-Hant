@@ -29,7 +29,7 @@ Adobe想要為所有超過2021年6月30日的客戶保留IMS功能。 IMS是安�
 
 ## 您有受到影響嗎？
 
-如果您是透過Adobe ID[、透過Adobe Identity Management Service (IMS)連線至Campaign ](../../integrations/using/about-adobe-id.md)，且執行比下列版本舊的Campaign，則會受到影響。
+如果您是透過Adobe ID[、透過Adobe Identity Management Service (IMS)連線至Campaign &#x200B;](../../integrations/using/about-adobe-id.md)，且執行比下列版本舊的Campaign，則會受到影響。
 
 如果您已經升級，但使用的是舊版Microsoft Internet Explorer，則必須升級至Internet Explorer 11。
 

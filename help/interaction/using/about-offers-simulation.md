@@ -21,7 +21,7 @@ ht-degree: 3%
 
 若要瞭解如何模擬優惠方案，請閱讀以下步驟。
 
-![](assets/do-not-localize/how-to-video.png)您也可以觀看此[影片](https://helpx.adobe.com/campaign/classic/how-to/simulate-offer-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/introduction/collection.ccx.js&amp;ref=helpx.adobe.com)。
+![](assets/do-not-localize/how-to-video.png)您也可以觀看此[影片](https://helpx.adobe.com/campaign/classic/how-to/simulate-offer-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/introduction/collection.ccx.js&ref=helpx.adobe.com)。
 
 ## 建立模擬的主要步驟 {#main-steps-for-creating-a-simulation}
 

@@ -41,7 +41,7 @@ Adobe已停止支援較低版本的TLS （包括TLS 1.0和1.1）。 如需TLS 1.
 
 如果您使用其他瀏覽器，請確定其支援TLS 1.2。
 
-您的作業系統和應用程式架構也必須支援TLS 1.2。如果升級瀏覽器無法解決問題，請確定您的電腦符合[ Campaign相容性矩陣](../../rn/using/compatibility-matrix.md)所列的系統需求。
+您的作業系統和應用程式架構也必須支援TLS 1.2。如果升級瀏覽器無法解決問題，請確定您的電腦符合[&#x200B; Campaign相容性矩陣](../../rn/using/compatibility-matrix.md)所列的系統需求。
 
 ## 常見問題{#faq}
 

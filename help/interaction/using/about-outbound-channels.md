@@ -17,7 +17,7 @@ ht-degree: 6%
 
 可使用傳入或傳出頻道將優惠顯示在各種空間中。 本章詳細說明傳出頻道。
 
-![](assets/do-not-localize/how-to-video.png)您也可以觀看此[影片](https://helpx.adobe.com/campaign/classic/how-to/deliver-an-offer-on-outbound-channel-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com)，其中詳細說明如何在傳出頻道上傳送優惠方案。
+![](assets/do-not-localize/how-to-video.png)您也可以觀看此[影片](https://helpx.adobe.com/campaign/classic/how-to/deliver-an-offer-on-outbound-channel-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&ref=helpx.adobe.com)，其中詳細說明如何在傳出頻道上傳送優惠方案。
 
 為了讓優惠方案引擎選取優惠方案，其必須已核准且可在即時環境中使用。 如需詳細資訊，請參閱[核准及啟用優惠方案](../../interaction/using/approving-and-activating-an-offer.md)。
 
