@@ -66,7 +66,7 @@ ht-degree: 3%
   </tr> 
   <tr> 
    <td> 行銷活動（行銷活動）<br /> </td> 
-   <td> 定義、最佳化、執行和分析通訊和行銷活動。 <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html" target="_blank">進一步瞭解</a><br /> </td> 
+   <td> 定義、最佳化、執行和分析通訊和行銷活動。 <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html?lang=zh-Hant" target="_blank">進一步瞭解</a><br /> </td> 
    <td> 行銷</td>
   </tr> 
   <tr> 
@@ -157,7 +157,7 @@ ht-degree: 3%
   </tr> 
   <tr> 
    <td> 存取外部資料（同盟資料存取）<br /> </td> 
-   <td> 提供同盟資料存取(FDA)選項，以處理儲存在一或多個外部資料庫中的資訊，因此您無需變更Adobe Campaign資料的結構即可存取外部資料。  選填。 <a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/accessing-an-external-database-fda.html" target="_blank">深入瞭解</a> <br /> </td> 
+   <td> 提供同盟資料存取(FDA)選項，以處理儲存在一或多個外部資料庫中的資訊，因此您無需變更Adobe Campaign資料的結構即可存取外部資料。  選填。 <a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/accessing-an-external-database-fda.html?lang=zh-Hant" target="_blank">深入瞭解</a> <br /> </td> 
    <td> 全部<br /> </td> 
   </tr> 
   <tr> 
@@ -227,7 +227,7 @@ ht-degree: 3%
   </tr> 
   <tr> 
    <td> AMP支援<br /> </td> 
-   <td> 可讓您使用新的互動式AMP傳送電子郵件格式，並傳送動態電子郵件。 選填。 <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-interactive-content.html" target="_blank">深入瞭解</a> <br /> </td> 
+   <td> 可讓您使用新的互動式AMP傳送電子郵件格式，並傳送動態電子郵件。 選填。 <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-interactive-content.html?lang=zh-Hant" target="_blank">深入瞭解</a> <br /> </td> 
    <td> 全部 </td> 
   </tr> 
   <tr> 

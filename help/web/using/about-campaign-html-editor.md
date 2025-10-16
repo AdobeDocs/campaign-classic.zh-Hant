@@ -22,7 +22,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果您需要新增伺服器端JavaScript程式碼，請使用個人化區塊。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}。
+>如果您需要新增伺服器端JavaScript程式碼，請使用個人化區塊。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=zh-Hant){target="_blank"}。
 
 >[!CAUTION]
 >
@@ -52,7 +52,7 @@ ht-degree: 0%
 1. 從DCE範本建立傳遞 — [深入瞭解](use-case-creating-an-email-delivery.md)
 1. 選取現有內容或從[標準範本](template-management.md)建立內容
 1. 編輯和設定線上內容
-1. 傳送傳遞 — 在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}中瞭解更多
+1. 傳送傳遞 — 在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hant){target="_blank"}中瞭解更多
 
 >[!NOTE]
 >
