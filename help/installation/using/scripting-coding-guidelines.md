@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: 1f96c3df-0ef2-4f5f-9c36-988cbcc0769f
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
 workflow-type: tm+mt
-source-wordcount: '740'
+source-wordcount: '743'
 ht-degree: 4%
 
 ---
@@ -85,7 +85,7 @@ ht-degree: 4%
   </sysFilter>
   ```
 
-* 您也可以保護結構描述中定義的某些動作(SOAP方法)。 只需設定存取屬性，並將對應的已命名許可權設為值即可。
+* 您也可以保護結構描述中定義的部分動作(SOAP方法)。 只需設定存取屬性，並將對應的已命名許可權設為值即可。
 
   ```
   <method name="grantVIPAccess" access="myNewRole">
@@ -119,7 +119,7 @@ ht-degree: 4%
 
 1. 使用&#x200B;**[!UICONTROL Web application]**&#x200B;內容型別並檢查&#x200B;**[!UICONTROL Visible in the customization menus]**。
 
-   如需詳細資訊，請參閱[本頁面](../../delivery/using/personalization-blocks.md)。
+   如需詳細資訊，請參閱 [Campaign v8 文件](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}。
 
    以下是&#x200B;**行銷活動驗證碼**&#x200B;的範例：
 
@@ -148,7 +148,7 @@ ht-degree: 4%
 
      `<div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>`
 
-   您應該能夠停用驗證按鈕，但由於我們沒有任何標準按鈕/連結，所以最好在HTML中自行操作。 若要瞭解如何執行此動作，請參閱[此頁面](https://developers.google.com/recaptcha/)。
+   您應該可以停用驗證按鈕，但由於我們沒有任何標準按鈕/連結，所以最好在HTML中執行。 若要瞭解如何執行此動作，請參閱[此頁面](https://developers.google.com/recaptcha/)。
 
 ### 更新您的Web應用程式
 

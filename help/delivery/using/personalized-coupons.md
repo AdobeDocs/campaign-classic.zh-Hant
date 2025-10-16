@@ -5,10 +5,12 @@ description: 瞭解如何建立和插入個人化優惠券
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Personalization
 role: User
+hide: true
+hidefromtoc: true
 exl-id: 182939bb-7aff-4667-bda9-c5d48be3b946
-source-git-commit: 8e5a328bee7701adfedec6a533cc21b4ce548187
+source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
 workflow-type: tm+mt
-source-wordcount: '911'
+source-wordcount: '910'
 ht-degree: 1%
 
 ---
@@ -19,7 +21,7 @@ ht-degree: 1%
 
 >[!AVAILABILITY]
 >
->優惠券管理不適用於企業(FFDA)部署內容中的Campaign v8。 深入瞭解[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/config/architecture/ffda/enterprise-deployment){target="_blank"}。
+>優惠券管理不適用於企業(FFDA)部署內容中的Campaign v8。 深入瞭解[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/architecture/ffda/enterprise-deployment){target="_blank"}。
 
 優惠券管理依賴必須安裝的套件。 若要確認您有優惠券管理，請核取&#x200B;**[!UICONTROL Administration > Configuration > Package management > Installed packages.]**
 
@@ -48,7 +50,7 @@ ht-degree: 1%
 
    **[!UICONTROL Anonymous coupons]** ：所有收件者的匿名抵用券都相同。 確認已在&#x200B;**優惠券型別**&#x200B;功能表中選取「匿名」，然後按一下&#x200B;**儲存**&#x200B;以產生優惠券。
 
-   **[!UICONTROL Individual coupons]** ：個別優惠券可進一步個人化並提供額外優惠券代碼。 例如，在體育器材商店為銷售建立個別優惠券。 不過，收件者名單很長，他們對單一運動沒有相同的熱情。 您可以根據運動（例如足球、足球、棒球等）為個別優惠券新增程式碼名稱 並將每個程式碼傳送給適用的收件者。
+   **[!UICONTROL Individual coupons]** ：個別優惠券可進一步個人化並提供額外優惠券代碼。 例如，在體育器材商店為銷售建立個別優惠券。 不過，收件者名單很長，他們對單一運動沒有相同的熱情。 您可以根據運動（例如足球、足球、棒球等）為個別優惠券新增代碼名稱，並將每個代碼傳送給適用的收件者。
 
    1. 選擇「個人」時，新標籤「抵用券」會出現在左下方。 前往&#x200B;**[!UICONTROL Coupons]**&#x200B;標籤並按一下&#x200B;**[!UICONTROL Add]**。
    1. 在快顯視窗提示時，輸入個別優惠券的唯一代碼。
@@ -78,7 +80,7 @@ ht-degree: 1%
 在下列範例中，會從首頁建立傳送。 如需有關如何建立傳遞的詳細說明，請參閱[本節](about-email-channel.md)。 您也可以在工作流程中新增優惠券至傳遞。
 
 1. 移至&#x200B;**[!UICONTROL Campaigns]**&#x200B;並選擇&#x200B;**[!UICONTROL Deliveries]**。
-1. 按一下&#x200B;**[!UICONTROL Create]**。
+1. 按一下 **[!UICONTROL Create]**。
 
    ![](assets/deliv_coup_04.png)
 
@@ -150,16 +152,16 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->依預設，優惠券管理模組使用&#x200B;**nms：recipient**&#x200B;表格。 [了解更多](../../configuration/using/about-data-model.md#default-recipient-table)。
+>依預設，優惠券管理模組使用&#x200B;**nms:recipient**&#x200B;表格。 [了解更多](../../configuration/using/about-data-model.md#default-recipient-table)。
 >
->在此頁面[&#128279;](../../configuration/using/about-custom-recipient-table.md)中瞭解如何使用自訂收件者資料表。
+>在此頁面[中瞭解如何使用自訂收件者資料表](../../configuration/using/about-custom-recipient-table.md)。
 
 ## 管理不足的優惠券 {#managing-insufficient-coupons}
 
 如果抵用券少於訊息，則傳遞分析會停止。 在這種情況下，您可以匯入更多優惠券或限制訊息數量。 如果您要限制訊息數量，請依照下列指示操作。
 
 1. 前往電子郵件傳遞視窗。
-1. 按一下&#x200B;**[!UICONTROL To]**。
+1. 按一下 **[!UICONTROL To]**。
 1. 在&#x200B;**[!UICONTROL Select target]**&#x200B;中，移至&#x200B;**[!UICONTROL Exclusions]**&#x200B;標籤。
 
    ![](assets/deliv_coup_18.png)

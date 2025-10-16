@@ -6,9 +6,9 @@ title: Campaign Classic v7 指南
 user-guide-description: Adobe Campaign Classic v7 產品文件。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
 workflow-type: tm+mt
-source-wordcount: '2739'
+source-wordcount: '2744'
 ht-degree: 72%
 
 ---
@@ -30,8 +30,8 @@ ht-degree: 72%
    + [相容性對照表](rn/using/compatibility-matrix.md)
    + [檔案更新 — 隱藏](rn/using/documentation-updates.md)
 + 開始使用 {#getting-started}
-   + [開始使用 Adobe Campaign Classic &#x200B;](platform/using/about-adobe-campaign-classic.md)
-   + [啟動 Adobe Campaign &#x200B;](platform/using/launching-adobe-campaign.md)
+   + [開始使用 Adobe Campaign Classic ](platform/using/about-adobe-campaign-classic.md)
+   + [啟動 Adobe Campaign ](platform/using/launching-adobe-campaign.md)
    + [探索Campaign UI](platform/using/adobe-campaign-workspace.md)
    + [使用Campaign Explorer — 隱藏](platform/using/adobe-campaign-explorer.md)
    + [瀏覽及自訂清單 — 隱藏](platform/using/adobe-campaign-ui-lists.md)
@@ -164,11 +164,11 @@ ht-degree: 72%
       + [從範本建立傳遞 — 隱藏](delivery/using/creating-a-delivery-from-a-template.md)
    + 個人化傳遞 {#personalizing-deliveries}
       + [關於個人化](delivery/using/about-personalization.md)
-      + [個人化欄位](delivery/using/personalization-fields.md)
-      + [個人化區塊](delivery/using/personalization-blocks.md)
-      + [條件式內容](delivery/using/conditional-content.md)
-      + [個人化優惠券](delivery/using/personalized-coupons.md)
-      + [產生個人化 PDF 文件](delivery/using/generating-personalized-pdf-documents.md)
+      + [個人化欄位 — 隱藏](delivery/using/personalization-fields.md)
+      + [個人化區塊 — 隱藏](delivery/using/personalization-blocks.md)
+      + [條件式內容 — 隱藏](delivery/using/conditional-content.md)
+      + [個人化優惠券 — 隱藏](delivery/using/personalized-coupons.md)
+      + [產生個人化PDF檔案 — 隱藏](delivery/using/generating-personalized-pdf-documents.md)
       + [自訂表情符號清單](delivery/using/customizing-emoticon-list.md)
    + 使用種子地址 {#using-seed-addresses}
       + [關於種子地址](delivery/using/about-seed-addresses.md)

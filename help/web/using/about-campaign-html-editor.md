@@ -5,9 +5,9 @@ description: 開始使用Campaign DCE
 feature: Web Apps, Web Forms, Landing Pages, Email Design
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 exl-id: f5d65e89-6b18-482b-97d8-11ab94f6775e
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '276'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果您需要新增伺服器端JavaScript程式碼，請使用個人化區塊。 [了解更多](../../delivery/using/personalization-blocks.md)。
+>如果您需要新增伺服器端JavaScript程式碼，請使用個人化區塊。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}。
 
 >[!CAUTION]
 >
@@ -52,7 +52,7 @@ ht-degree: 0%
 1. 從DCE範本建立傳遞 — [深入瞭解](use-case-creating-an-email-delivery.md)
 1. 選取現有內容或從[標準範本](template-management.md)建立內容
 1. 編輯和設定線上內容
-1. 傳送傳遞 — 在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hant){target="_blank"}中瞭解更多
+1. 傳送傳遞 — 在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}中瞭解更多
 
 >[!NOTE]
 >
