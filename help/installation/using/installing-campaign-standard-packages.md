@@ -172,7 +172,7 @@ ht-degree: 3%
   </tr> 
   <tr> 
    <td> 優惠券管理<br /> </td> 
-   <td> 建立一組優惠券以新增至即將推出的行銷優惠方案。 選填。 <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalized-coupons.html" target="_blank">深入瞭解</a> <br /> </td> 
+   <td> 建立一組優惠券以新增至即將推出的行銷優惠方案。 選填。 <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalized-coupons.html?lang=zh-Hant" target="_blank">深入瞭解</a> <br /> </td> 
    <td> 行銷<br /> </td> 
   </tr> 
   <tr> 
