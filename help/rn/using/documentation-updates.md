@@ -419,7 +419,7 @@ Android 的推播通知改善 - [閱讀更多資訊](../../delivery/using/config
 
 * [如何使用個人化欄位進行電子郵件個人化](../../delivery/using/personalization-fields.md)
 
-* [如何管理電子郵件中的種子和校樣](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#target-population){target="_blank"}。
+* [如何管理電子郵件中的種子和校樣](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hant#target-population){target="_blank"}。
 
 * [如何設定循環傳送](../../workflow/using/recurring-delivery.md)
 
