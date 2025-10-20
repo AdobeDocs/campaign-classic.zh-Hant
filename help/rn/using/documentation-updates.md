@@ -10,8 +10,8 @@ hidefromtoc: true
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '3865'
-ht-degree: 99%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -419,7 +419,7 @@ Android 的推播通知改善 - [閱讀更多資訊](../../delivery/using/config
 
 * [如何使用個人化欄位進行電子郵件個人化](../../delivery/using/personalization-fields.md)
 
-* [如何管理電子郵件中的種子和校樣](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hant#target-population){target="_blank"}。
+* [如何管理電子郵件中的種子和校樣](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#target-population){target="_blank"}。
 
 * [如何設定循環傳送](../../workflow/using/recurring-delivery.md)
 

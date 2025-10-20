@@ -8,8 +8,8 @@ sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
 workflow-type: tm+mt
-source-wordcount: '2744'
-ht-degree: 72%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -23,21 +23,21 @@ ht-degree: 72%
    + 先前版本 {#previous-releases}
       + [2024](rn/using/release-2024.md)
       + [2023](rn/using/release-2023.md)
-      + [2022 — 隱藏](rn/using/release-2022.md)
-      + [2021 — 隱藏](rn/using/release-2021.md)
+      + [2022 - 隱藏](rn/using/release-2022.md)
+      + [2021 - 隱藏](rn/using/release-2021.md)
       + [[!DNL Gold Standard - HIDDEN]](rn/using/gold-standard.md)
    + [已棄用功能](rn/using/deprecated-features.md)
    + [相容性對照表](rn/using/compatibility-matrix.md)
-   + [檔案更新 — 隱藏](rn/using/documentation-updates.md)
+   + [文件更新 - 隱藏](rn/using/documentation-updates.md)
 + 開始使用 {#getting-started}
-   + [開始使用 Adobe Campaign Classic &#x200B;](platform/using/about-adobe-campaign-classic.md)
-   + [啟動 Adobe Campaign &#x200B;](platform/using/launching-adobe-campaign.md)
-   + [探索Campaign UI](platform/using/adobe-campaign-workspace.md)
-   + [使用Campaign Explorer — 隱藏](platform/using/adobe-campaign-explorer.md)
-   + [瀏覽及自訂清單 — 隱藏](platform/using/adobe-campaign-ui-lists.md)
-   + [分項清單 — 隱藏](platform/using/managing-enumerations.md)
+   + [開始使用 Adobe Campaign Classic ](platform/using/about-adobe-campaign-classic.md)
+   + [啟動 Adobe Campaign ](platform/using/launching-adobe-campaign.md)
+   + [瞭解 Campaign UI](platform/using/adobe-campaign-workspace.md)
+   + [使用 Campaign 探索工具 - 隱藏](platform/using/adobe-campaign-explorer.md)
+   + [瀏覽和自訂清單 - 隱藏](platform/using/adobe-campaign-ui-lists.md)
+   + [分項清單 - 隱藏](platform/using/managing-enumerations.md)
    + [Campaign 連接器](platform/using/about-connectors.md)
-   + [在Campaign建立查詢](platform/using/about-queries-in-campaign.md)
+   + [建立 Campaign 中的查詢](platform/using/about-queries-in-campaign.md)
    + 常見問題集 {#faq}
       + [最常見的問題](platform/using/common-questions.md)
       + [全域概念](platform/using/faq-key-concepts.md)
@@ -61,11 +61,11 @@ ht-degree: 72%
       + [選擇退出個人資訊銷售](platform/using/privacy-requests-ccpa.md)
    + 輪廓管理 {#profile-management}
       + [關於輪廓](platform/using/about-profiles.md)
-      + [編輯設定檔 — 隱藏](platform/using/editing-a-profile.md)
-      + [新增設定檔 — 隱藏](platform/using/adding-profiles.md)
-      + [管理設定檔 — 隱藏](platform/using/managing-profiles.md)
+      + [編輯輪廓 - 隱藏](platform/using/editing-a-profile.md)
+      + [新增輪廓 - 隱藏](platform/using/adding-profiles.md)
+      + [管理輪廓 - 隱藏](platform/using/managing-profiles.md)
       + [更新資料](platform/using/updating-data.md)
-      + [匯入和匯出設定檔 — 隱藏](platform/using/exporting-and-importing-profiles.md)
+      + [匯入和匯出輪廓 - 隱藏](platform/using/exporting-and-importing-profiles.md)
       + [建立及管理清單](platform/using/creating-and-managing-lists.md)
    + 匯入及匯出資料 {#importing-and-exporting-data}
       + [開始使用匯入及匯出資料](platform/using/get-started-data-import-export.md)
@@ -85,24 +85,24 @@ ht-degree: 72%
          + [匯入和匯出最佳實務](platform/using/import-export-best-practices.md)
          + [SFTP 伺服器最佳實務及疑難排解](platform/using/sftp-server-usage.md)
    + 篩選資料 {#filtering-data}
-      + [篩選選項 — 隱藏](platform/using/filtering-options.md)
-      + [建立篩選器 — 隱藏](platform/using/creating-filters.md)
-      + [使用案例 — 隱藏](platform/using/use-case.md)
-   + [建立查詢的步驟 — 隱藏](platform/using/steps-to-create-a-query.md)
-   + [定義篩選條件 — 隱藏](platform/using/defining-filter-conditions.md)
+      + [篩選選項 - 隱藏](platform/using/filtering-options.md)
+      + [建立篩選器 - 隱藏](platform/using/creating-filters.md)
+      + [使用案例 - 隱藏](platform/using/use-case.md)
+   + [建立查詢的步驟 - 隱藏](platform/using/steps-to-create-a-query.md)
+   + [定義篩選條件 - 隱藏](platform/using/defining-filter-conditions.md)
    + 權限 {#permissions}
       + [開始使用權限](platform/using/access-management.md)
-      + 原生驗證（舊版） {#native}
+      + 原生驗證 (舊版) {#native}
          + [建立及管理操作者](platform/using/access-management-operators.md)
          + [建立和管理群組](platform/using/access-management-groups.md)
       + [使用已命名的權限來設定權限](platform/using/access-management-named-rights.md)
-      + [管理對資料夾的存取 — 隱藏](platform/using/access-management-folders.md)
+      + [管理對資料夾的存取 - 隱藏](platform/using/access-management-folders.md)
    + CRM 連接器 {#connectors}
       + [開始使用 CRM 連接器](platform/using/crm-connectors.md)
       + [與 Microsoft Dynamics 365 連結](platform/using/crm-ms-dynamics.md)
       + [與 Salesforce.com 連結](platform/using/crm-sfdc.md)
       + [與 CRM 同步資料](platform/using/crm-data-sync.md)
-   + [說明與支援選項 — 隱藏](support.md)
+   + [說明與支援選項 - 隱藏](support.md)
 + 建立及傳送訊息 {#sending-messages}
    + [開始使用訊息](delivery/using/communication-channels.md)
    + [傳送設定 — 隱藏](delivery/using/delivery-settings.md)
@@ -382,11 +382,11 @@ ht-degree: 72%
       + [透過 [!DNL Adobe Target]設定整合](integrations/using/configuring-the-integration-with-adobe-target.md)
       + [插入動態影像](integrations/using/inserting-a-dynamic-image.md)
    + ACS Connector {#acs-connector}
-      + [開始使用 [!DNL ACS Connector]  — 隱藏](integrations/using/acs-connector-principles-and-data-cycle.md)
-      + [同步設定檔 — 隱藏](integrations/using/synchronizing-profiles.md)
-      + [同步對象 — 隱藏](integrations/using/synchronizing-audiences.md)
-      + [同步化網站應用程式 — 隱藏](integrations/using/synchronizing-web-applications.md)
-      + [疑難排解 [!DNL ACS Connector]  — 隱藏](integrations/using/troubleshooting-the-acs-connector.md)
+      + [開始使用  [!DNL ACS Connector]  - 隱藏](integrations/using/acs-connector-principles-and-data-cycle.md)
+      + [同步輪廓 - 隱藏](integrations/using/synchronizing-profiles.md)
+      + [同步客群- 隱藏](integrations/using/synchronizing-audiences.md)
+      + [同步網頁應用程式 - 隱藏](integrations/using/synchronizing-web-applications.md)
+      + [疑難排解 [!DNL ACS Connector]  - 隱藏](integrations/using/troubleshooting-the-acs-connector.md)
 + [使用工作流程自動化](workflow/using/about-workflows.md)
 + 使用工作流程自動化 {#automating-with-workflows}
    + 開始使用工作流程 {#introduction}
