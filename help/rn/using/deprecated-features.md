@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1658'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -83,7 +83,7 @@ Adobe 持續評估產品功能，尋找應以更現代的替代方式來取代�
     <tr>
   <td>技術傳遞能力監視報告<br></td>
    <td><p>不再提供「技術傳遞能力監視報告」。 已在 Campaign 21.1.3 版中棄用。</p>
-   <!--p>If needed, you can receive this report daily by email until the feature removal date. To request it, open a specific <a href="https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">Support Case</a> and specify the name of the instance and the email address(es) to send the report to.</p--> 
+   <!--p>If needed, you can receive this report daily by email until the feature removal date. To request it, open a specific <a href="https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">Support Case</a> and specify the name of the instance and the email address(es) to send the report to.</p--> 
   </td>
  </tr>
   <tr>
@@ -98,8 +98,8 @@ Adobe 持續評估產品功能，尋找應以更現代的替代方式來取代�
    <td><p>在 Adobe Flash Player 終結壽命後，量規報告和圖表轉譯引擎將不再可用。 <a href="../../reporting/using/creating-a-new-report.md">瞭解更多</a></p>
   </tr>
   <tr>  
-   <td>傳真頻道<br></td>
-   <td><p>自 Campaign 21.1.3 版開始，不再提供傳真頻道。 <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hant" target="_blank">在Campaign v8檔案中進一步瞭解</a></p>
+   <td>傳真管道<br></td>
+   <td><p>自 Campaign 21.1.3 版開始，不再提供傳真管道。<a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hant" target="_blank">在 Campaign v8 文件中瞭解更多資訊</a></p>
   </tr>
   <tr>
   <td>Demdex 網域<br></td>
@@ -137,7 +137,7 @@ Adobe 持續評估產品功能，尋找應以更現代的替代方式來取代�
   <tr> 
    <td>decryptString API</td>
    <td><p>出於安全原因，自 Campaign 18.6 發行版本起，新的安裝已不再預設提供 <em>decryptString</em> API。</p> 
-   <p>在 18.6 版本升級後（及更新版本）的設定檔，不再啟用此 API，並已由 <em>decryptPassword</em> 函式取代。<a href="https://experienceleague.adobe.com/developer/campaign-api/api/f-decryptPassword.html?lang=zh-Hant&hl=decrypt">瞭解更多</a></p></td>
+   <p>在 18.6 版本升級後（及更新版本）的設定檔，不再啟用此 API，並已由 <em>decryptPassword</em> 函式取代。<a href="https://experienceleague.adobe.com/developer/campaign-api/api/f-decryptPassword.html?hl=decrypt">瞭解更多</a></p></td>
   </tr> 
    <tr> 
    <td>行動裝置頻道 - MMS 和 WAP 推播訊息</td>

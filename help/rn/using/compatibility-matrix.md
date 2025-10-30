@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '857'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -472,7 +472,7 @@ Campaign 用戶端主控台必須使用 Microsoft Edge WebView2 執行階段最�
 
 ## 瀏覽器 {#Browsers}
 
-下列瀏覽器在其最新版本中與Campaign相容，可用於網頁存取。 如需詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-create.html?lang=zh-Hant#use-the-web-interface-){target=_blank}。
+下列瀏覽器的最新版本與 Campaign for Web Access 相容。有關更多資訊，請參閱[Campaign v8 文件](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-create.html?lang=zh-Hant#use-the-web-interface-){target=_blank}。
 
 * Google Chrome
 * Microsoft Edge
