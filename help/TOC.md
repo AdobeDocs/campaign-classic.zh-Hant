@@ -7,7 +7,7 @@ user-guide-description: Adobe Campaign Classic v7 產品文件。
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2744'
 ht-degree: 100%
 
@@ -596,7 +596,7 @@ ht-degree: 100%
    + 安全性與隱私權設定 {#security-privacy}
       + [安全性與隱私權檢查清單](installation/using/get-started-security-privacy.md)
       + [個人化與隱私](installation/using/privacy.md)
-      + [安全的存取管理](installation/using/access-management.md)
+      + [安全的存取權管理](installation/using/access-management.md)
       + [指令碼和程式碼指南](installation/using/scripting-coding-guidelines.md)
       + [網路、資料庫和 SSL/TLS](installation/using/network-database.md)
       + [伺服器安全性設定](installation/using/server-configuration.md)
