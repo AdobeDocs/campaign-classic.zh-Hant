@@ -3,13 +3,13 @@ audience: end-user
 breadcrumb-title: Campaign Classic v7 文件
 product: campaign
 title: Campaign Classic v7 指南
-user-guide-titel: Campaign Classic v7 Guide
+user-guide-title: Campaign Classic v7 指南
 user-guide-description: Adobe Campaign Classic v7 產品文件。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
-workflow-type: ht
-source-wordcount: '2744'
+source-git-commit: 3fc803ba8b7e367e199ba47ef05ba64d5f801506
+workflow-type: tm+mt
+source-wordcount: '2748'
 ht-degree: 100%
 
 ---
