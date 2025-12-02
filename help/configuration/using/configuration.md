@@ -16,7 +16,7 @@ ht-degree: 0%
 
 身為資深使用者，您可以在瀏覽器樹狀結構中新增資料夾並加以自訂。
 
-在[Adobe Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}中進一步瞭解Campaign使用者介面。
+在[Adobe Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}中進一步瞭解Campaign使用者介面。
 
 導覽清單使用的資料夾型別在遵循&#x200B;**xtk:navtree**&#x200B;結構描述語法的XML檔案中描述。
 

@@ -35,7 +35,7 @@ ht-degree: 6%
 
 * [瞭解傳遞故障](understanding-delivery-failures.md)
 * [瞭解隔離管理](understanding-quarantine-management.md)
-* [傳遞最佳實務](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html){target="_blank"}
+* [傳遞最佳實務](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=zh-Hant){target="_blank"}
 * [管理傳遞能力](about-deliverability.md)
 
 ## 傳遞摘要 {#delivery-summary}
@@ -64,7 +64,7 @@ ht-degree: 6%
 
 **[!UICONTROL Display the mirror page for this message...]**&#x200B;連結可讓您在新視窗中檢視從清單選取之傳遞內容的映象頁面。
 
-映象頁面僅適用於已定義HTML內容的傳送。 有關更多資訊，請參閱[Campaign v8 文件](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/mirror-page.html){target="_blank"}。
+映象頁面僅適用於已定義HTML內容的傳送。 有關更多資訊，請參閱[Campaign v8 文件](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/mirror-page.html?lang=zh-Hant){target="_blank"}。
 
 ![](assets/s_ncs_user_wizard_miror_page_link.png)
 
@@ -98,7 +98,7 @@ ht-degree: 6%
 
 **[!UICONTROL Refresh]**&#x200B;按鈕可讓您更新資料。 使用&#x200B;**[!UICONTROL Filters]**&#x200B;按鈕來定義資料的篩選器。
 
-特殊圖示可讓您識別錯誤或警告。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html){target="_blank"}中的本節。
+特殊圖示可讓您識別錯誤或警告。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html?lang=zh-Hant){target="_blank"}中的本節。
 
 **[!UICONTROL Proofs]**&#x200B;子索引標籤可讓您檢視已傳送的校樣清單。
 

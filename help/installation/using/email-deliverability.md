@@ -316,7 +316,7 @@ user:~ user$ host -t a mta6.am0.yahoodns.net
 
 若要這麼做，請前往&#x200B;**[!UICONTROL Management of email formats]**&#x200B;檔案，它位於&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Non deliverables management]** > **[!UICONTROL Mail rule sets]**。
 
-本檔案包含對應至Adobe Campaign所管理日文格式的所有預先定義網域清單。 如需詳細資訊，請參閱 [Campaign v8 文件](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/sending-emails-on-japanese-mobiles.html){target="_blank"}。
+本檔案包含對應至Adobe Campaign所管理日文格式的所有預先定義網域清單。 如需詳細資訊，請參閱 [Campaign v8 文件](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/sending-emails-on-japanese-mobiles.html?lang=zh-Hant){target="_blank"}。
 
 ![](assets/mail_rule_sets.png)
 
@@ -331,7 +331,7 @@ user:~ user$ host -t a mta6.am0.yahoodns.net
 
 如果&#x200B;**[!UICONTROL Image inclusion]**&#x200B;選項已啟用，這些會直接顯示在電子郵件內文中。 然後會上傳影像，並以其內容取代URL連結。
 
-日本市場特別使用這個選項來處理&#x200B;**裝飾郵件**、**裝飾郵件**&#x200B;或&#x200B;**裝飾郵件**。 如需詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/sending-emails-on-japanese-mobiles.html){target="_blank"}。
+日本市場特別使用這個選項來處理&#x200B;**裝飾郵件**、**裝飾郵件**&#x200B;或&#x200B;**裝飾郵件**。 如需詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/sending-emails-on-japanese-mobiles.html?lang=zh-Hant){target="_blank"}。
 
 >[!IMPORTANT]
 >
