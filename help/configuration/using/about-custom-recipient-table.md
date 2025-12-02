@@ -3,10 +3,10 @@ product: campaign
 title: 關於自訂收件者表格
 description: 關於自訂收件者表格
 feature: Configuration, Custom Resources
-role: User, Data Engineer, Developer
+role: User, Developer
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 exl-id: d8cea496-b3f3-420a-bf6e-b7cbb321b30d
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '676'
 ht-degree: 2%
@@ -32,7 +32,7 @@ ht-degree: 2%
 
 本節說明可讓您對應Adobe Campaign中現有表格的要點，以及套用以根據任何表格執行傳送的設定。 最後，說明如何提供使用者查詢介面，使其如同內建收件者表格所提供的介面一樣實用。 若要瞭解本節中介紹的材料，您必須精通熒幕和結構描述設計的原則。
 
-## Recommendations和限制 {#recommendations-and-limitations}
+## 建議和限制 {#recommendations-and-limitations}
 
 使用自訂收件者表格有下列限制：
 

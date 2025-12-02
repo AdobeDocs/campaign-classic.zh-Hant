@@ -3,11 +3,11 @@ product: campaign
 title: Web 服務呼叫
 description: Web 服務呼叫
 feature: API
-role: Data Engineer, Developer
+role: Developer
 exl-id: ce94e7e7-b8f8-4c82-937f-e87d15e50c34
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '918'
 ht-degree: 1%
 
 ---
@@ -45,15 +45,15 @@ Web服務在資料結構描述的文法中說明，並可從&#x200B;**`<methods>
 
 以下是名為&#x200B;**GenerateForm**&#x200B;之方法的定義範例。
 
-服務的說明以`<method>`專案開頭。 已從`<parameters>`專案完成方法的引數清單。 每個引數由名稱、型別（布林值、字串、DOMElement等）指定 和說明。 具有「out」值的「inout」屬性可讓您指定「result」引數位於SOAP呼叫輸出處。
+服務的說明以`<method>`專案開頭。 已從`<parameters>`專案完成方法的引數清單。 每個引數由名稱、型別（布林值、字串、DOMElement等）和說明指定。 具有「out」值的「inout」屬性可讓您指定「result」引數位於SOAP呼叫輸出處。
 
 「static」屬性（值為「true」）的存在說明此方法為static，這表示方法的所有引數都必須宣告。
 
 「const」方法隱含地以關聯結構描述格式的XML檔案作為其輸入。
 
-在[方法](../../configuration/using/schema/method.md)下的「結構描述參考」章節中，提供Adobe Campaign結構描述的`<method>`元素的完整說明
+在`<method>`方法[下的「結構描述參考」章節中，提供Adobe Campaign結構描述的](../../configuration/using/schema/method.md)元素的完整說明
 
-「xtk：queryDef」結構描述中的「const」型別「ExecuteQuery」方法範例：
+來自&quot;xtk:queryDef&quot;結構描述的&quot;const&quot;型別&quot;ExecuteQuery&quot;方法範例：
 
 ```
 <method name="ExecuteQuery" const="true">
@@ -64,7 +64,7 @@ Web服務在資料結構描述的文法中說明，並可從&#x200B;**`<methods>
 </method>
 ```
 
-此方法的輸入引數是採用「xtk：queryDef」結構描述格式的XML檔案。
+此方法的輸入引數是格式為「xtk:queryDef」結構描述的XML檔案。
 
 ## Web服務說明：WSDL {#web-service-description--wsdl}
 
@@ -79,9 +79,9 @@ https://`<server>`/nl/jsp/schemawsdl.jsp？schema=`<schema>`
 替換為：
 
 * **`<server>`**： Adobe Campaign應用程式伺服器(nlserver web)
-* **`<schema>`**：結構描述識別金鑰(namespace：schema_name)
+* **`<schema>`**：結構描述識別金鑰（名稱空間:schema_name）
 
-### 結構描述「xtk：queryDef」的「ExecuteQuery」方法範例 {#example-on-the--executequery--method-of-schema--xtk-querydef-}
+### 結構描述&#39;xtk:queryDef&#39;的&#39;ExecuteQuery&#39;方法範例 {#example-on-the--executequery--method-of-schema--xtk-querydef-}
 
 WSDL檔案是從URL產生：
 
@@ -91,7 +91,7 @@ WSDL說明首先會定義用來形成訊息的型別，這些訊息在「連線�
 
 #### 類型 {#types}
 
-型別定義以XML結構描述為基礎。 在我們的範例中，&quot;ExecuteQuery&quot;方法以&quot;s：string&quot;字串和XML檔案(`<s:complextype>`)作為引數。 方法(&quot;ExecuteQueryResponse&quot;)的傳回值是XML檔案( `<s:complextype>`)。
+型別定義以XML結構描述為基礎。 在我們的範例中，&quot;ExecuteQuery&quot;方法以&quot;s:string&quot;字串和XML檔案(`<s:complextype>`)為引數。 方法(&quot;ExecuteQueryResponse&quot;)的傳回值是XML檔案( `<s:complextype>`)。
 
 ```
 <types>
@@ -154,7 +154,7 @@ WSDL說明首先會定義用來形成訊息的型別，這些訊息在「連線�
 
 #### 繫結 {#binding}
 
-`<binding>`部分指定SOAP通訊協定( `<soap:binding>`)、HTTP中的資料傳輸（「傳輸」屬性的值）以及「ExecuteQuery」作業的資料格式。 SOAP信封的正文直接包含訊息區段，而不進行轉換。
+`<binding>`部分指定SOAP通訊協定( `<soap:binding>` )、HTTP中的資料傳輸（「傳輸」屬性的值）以及「ExecuteQuery」作業的資料格式。 SOAP信封的正文直接包含訊息區段，無需轉換。
 
 ```
 <binding name="queryDefMethodsSoap" type="tns:queryDefMethodsSoap">
@@ -193,7 +193,7 @@ Adobe Campaign已匯入[安全性區域](../../installation/using/security-zones
 
 或
 
-* 透過Adobe Campaign登入+建立工作階段權杖的密碼&#x200B;**&#x200B;**。 工作階段權杖會在設定的期間後自動到期。 不建議使用此模式，因為需要減少某些區域設定（allowUserPassword=&quot;true&quot;及sessionTokenOnly=&quot;true&quot;）的應用程式安全性設定。
+* 透過Adobe Campaign登入+建立工作階段權杖的密碼&#x200B;****。 工作階段權杖會在設定的期間後自動到期。 不建議使用此模式，因為需要減少某些區域設定（allowUserPassword=&quot;true&quot;及sessionTokenOnly=&quot;true&quot;）的應用程式安全性設定。
 
 ### 工作階段權杖特性 {#session-token-characteristics}
 
@@ -226,7 +226,7 @@ Adobe Campaign已匯入[安全性區域](../../installation/using/security-zones
 * 在登入回應中傳輸（在HTTP標題中）
 * 用於每個查詢（在HTTP標頭中）
 
-從POST和GETHTTP：
+從POST和GET HTTP：
 
 * 伺服器會完成具有權杖的連結
 * 伺服器會將隱藏欄位新增至表單

@@ -4,9 +4,9 @@ title: 傳遞效能最佳實務
 description: 進一步瞭解傳遞效能和最佳實務
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Deliverability
-role: User, Data Engineer
+role: User, Developer
 exl-id: cc793d7b-0a26-4a75-97ed-d79c87d9b3b8
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 5%
@@ -51,6 +51,6 @@ ht-degree: 5%
 
 * **傳遞的大小**：大型傳遞可能需要更長的時間才能完成。 MTA子系已設定為處理預設批次大小（這適用於大部分的執行個體），但在傳送速度持續緩慢時需要檢查。
 * **傳遞的目標**：傳遞效能禁止受到軟退信錯誤的影響，這些錯誤會根據重試組態處理。 錯誤數越多，所需的重試次數就越多。
-* **整體平台負載**：傳送多個大型傳遞時，整體平台可能會受到影響。 您也可以檢查IP信譽和傳遞能力問題。 如需詳細資訊，請參閱[本節](about-deliverability.md)及[Adobe傳遞性最佳實務指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hant)。
+* **整體平台負載**：傳送多個大型傳遞時，整體平台可能會受到影響。 您也可以檢查IP信譽和傳遞能力問題。 如需詳細資訊，請參閱[本節](about-deliverability.md)及[Adobe傳遞能力最佳實務指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hant)。
 
 平台和資料庫維護也會影響傳遞傳送效能。 如需詳細資訊，請參閱[此頁面](../../production/using/database-performances.md)。

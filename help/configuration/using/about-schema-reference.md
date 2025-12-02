@@ -3,13 +3,13 @@ product: campaign
 title: 開始使用Adobe Campaign中的結構描述
 description: 瞭解如何使用方案並延伸Adobe Campaign資料庫的概念資料模型
 feature: Schema Extension
-role: Data Engineer, Developer
+role: Developer
 level: Intermediate, Experienced
 exl-id: f36a1b01-a002-4a21-9255-ea78b5f173fe
-source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '369'
-ht-degree: 1%
+source-wordcount: '368'
+ht-degree: 2%
 
 ---
 
@@ -74,7 +74,7 @@ ht-degree: 1%
 
 名稱空間可讓您依感興趣的區域來分組一組結構描述。 例如，**cus**&#x200B;名稱空間是用於客戶特定的組態（**客戶**）。
 
-結構描述的識別索引鍵是使用名稱空間和以冒號分隔的名稱建置的字串；例如： **cus：recipient**。
+結構描述的識別索引鍵是使用名稱空間和名稱建置的字串，以冒號分隔；例如： **cus:recipient**。
 
 >[!IMPORTANT]
 >

@@ -3,11 +3,11 @@ product: campaign
 title: 關於 Web 服務
 description: 關於 Web 服務
 feature: API
-role: Data Engineer, Developer
+role: Developer
 exl-id: 7aa2aef1-2eb6-48a6-82fa-4451bed66216
-source-git-commit: 517b85f5d7691acc2522bf4541f07c34c60c7fbf
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '645'
+source-wordcount: '644'
 ht-degree: 3%
 
 ---
@@ -18,12 +18,12 @@ ht-degree: 3%
 
 Adobe Campaign應用程式伺服器的設計初衷是開放性以及可輕鬆整合日益多樣化且複雜的公司資訊系統。
 
-Adobe Campaign API可用於應用程式內的JavaScript中，以及應用程式外的SOAP中。 它們構成了可以擴充的一般函式庫。 如需進一步資訊，請參閱[實作SOAP方法](../../configuration/using/implementing-soap-methods.md)。
+Adobe Campaign API可用於應用程式內的JavaScript以及應用程式外的SOAP。 它們構成了可以擴充的一般函式庫。 如需詳細資訊，請參閱[實作SOAP方法](../../configuration/using/implementing-soap-methods.md)。
 
 >[!IMPORTANT]
 >
 >授權引擎每日的通話次數視您的授權合約而定。 如需詳細資訊，請參閱[此頁面](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-campaign-classic---product-description.html)。\
->[此專屬檔案](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hant)提供所有API的清單，包括其完整說明。
+>[此專屬檔案]&#x200B;(https://experienceleague.adobe.com/developer/campaign-api/api/index.html)提供所有API的清單，包括其完整說明。
 
 ## 先決條件 {#prerequisites}
 
@@ -40,7 +40,7 @@ Adobe Campaign使用兩種型別的API：
 * 用於查詢資料模型資料的一般資料存取API。 請參閱[資料導向API](../../configuration/using/data-oriented-apis.md)。
 * 業務特定API可讓您對每個物件執行動作：傳送、工作流程、訂閱等。 請參閱[商業導向API](../../configuration/using/business-oriented-apis.md)。
 
-為了開發API並與Adobe Campaign互動，您需要熟悉您的資料模型。 Adobe Campaign可讓您產生基底的完整說明。 請參閱模型[&#128279;](../../configuration/using/data-oriented-apis.md#description-of-the-model)的描述。
+為了開發API並與Adobe Campaign互動，您需要熟悉您的資料模型。 Adobe Campaign可讓您產生基底的完整說明。 請參閱模型[的](../../configuration/using/data-oriented-apis.md#description-of-the-model)描述。
 
 ## SOAP 呼叫 {#soap-calls}
 
@@ -63,9 +63,9 @@ SOAP訊息的結構如下：
 
 ## &#39;ExecuteQuery&#39;方法上的SOAP訊息範例 {#example-of-a-soap-message-on-the--executequery--method--}
 
-在此範例中，SOAP查詢會叫用「ExecuteQuery」方法，此方法會將字元字串當作用於驗證（工作階段權杖）的引數，以及當作要執行之查詢說明的XML內容。
+在此範例中，SOAP查詢會叫用「ExecuteQuery」方法，此方法會將字元字串當作驗證（工作階段權杖）的引數，並將XML內容當作要執行的查詢的說明。
 
-如需進一步資訊，請參閱[ExecuteQuery (xtk：queryDef)](../../configuration/using/data-oriented-apis.md#executequery--xtk-querydef-)。
+如需進一步資訊，請參閱[ExecuteQuery (xtk:queryDef)](../../configuration/using/data-oriented-apis.md#executequery--xtk-querydef-)。
 
 >[!NOTE]
 >

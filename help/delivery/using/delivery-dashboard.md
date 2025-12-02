@@ -4,12 +4,12 @@ title: 傳遞儀表板
 description: 進一步瞭解如何使用傳送儀表板來監視您的傳送
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Monitoring
-role: User, Data Engineer
+role: User, Developer
 exl-id: 44ecc8c6-6584-43eb-96b4-7d8463053123
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '1193'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 5%
 
 * [瞭解傳遞故障](understanding-delivery-failures.md)
 * [瞭解隔離管理](understanding-quarantine-management.md)
-* [傳遞最佳實務](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=zh-Hant){target="_blank"}
+* [傳遞最佳實務](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html){target="_blank"}
 * [管理傳遞能力](about-deliverability.md)
 
 ## 傳遞摘要 {#delivery-summary}
@@ -64,7 +64,7 @@ ht-degree: 5%
 
 **[!UICONTROL Display the mirror page for this message...]**&#x200B;連結可讓您在新視窗中檢視從清單選取之傳遞內容的映象頁面。
 
-映象頁面僅適用於已定義HTML內容的傳送。 如需詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/mirror-page.html?lang=zh-Hant){target="_blank"}。
+映象頁面僅適用於已定義HTML內容的傳送。 有關更多資訊，請參閱[Campaign v8 文件](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/mirror-page.html){target="_blank"}。
 
 ![](assets/s_ncs_user_wizard_miror_page_link.png)
 
@@ -98,7 +98,7 @@ ht-degree: 5%
 
 **[!UICONTROL Refresh]**&#x200B;按鈕可讓您更新資料。 使用&#x200B;**[!UICONTROL Filters]**&#x200B;按鈕來定義資料的篩選器。
 
-特殊圖示可讓您識別錯誤或警告。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html?lang=zh-Hant){target="_blank"}中的本節。
+特殊圖示可讓您識別錯誤或警告。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html){target="_blank"}中的本節。
 
 **[!UICONTROL Proofs]**&#x200B;子索引標籤可讓您檢視已傳送的校樣清單。
 

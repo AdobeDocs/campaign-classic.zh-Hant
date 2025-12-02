@@ -3,9 +3,9 @@ product: campaign
 title: 開始使用Campaign Classic資料模型
 description: 了解如何延伸 Campaign 資料模型、編輯結構描述，以及使用 API 等
 feature: Data Model, Configuration
-role: Data Engineer, Developer
+role: Developer
 exl-id: 655b5928-b005-442f-b026-2f1b0c1abb99
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '980'
 ht-degree: 5%
@@ -16,7 +16,7 @@ ht-degree: 5%
 
 Adobe Campaign 資料庫的概念資料模型由一組內建表格及其互動組成，本頁面列出主要表格和概念。
 
-## 概覽 {#data-model-overview}
+## 概觀 {#data-model-overview}
 
 Adobe Campaign仰賴包含連結在一起的表格的關聯式資料庫。 Adobe Campaign資料模型的基本結構描述如下。
 
@@ -108,13 +108,13 @@ Adobe Campaign中的內建收件者表格是建立資料模型的良好起點。
 
 在以下章節中進一步瞭解Campaign資料模型：
 
-* **主要資料表的描述** — 如需預設Campaign Classic資料模型描述的詳細資訊，請參閱[本節](../../configuration/using/data-model-description.md)。
+* **主要資料表的說明** — 如需預設Campaign Classic資料模型說明的詳細資訊，請參閱[本節](../../configuration/using/data-model-description.md)。
 
 * **每個資料表的完整說明** — 若要存取每個資料表的完整說明，請移至&#x200B;**[!UICONTROL Admin > Configuration > Data schemas]**，從清單中選取資源，然後按一下&#x200B;**[!UICONTROL Documentation]**&#x200B;索引標籤。
 
   ![](assets/data-model_documentation-tab.png)
 
 
-* **行銷活動結構描述** — 應用程式中資料的實體和邏輯結構以XML描述。 並且遵循 Adobe Campaign 專屬的語法，稱為綱要 (schema)。如需Adobe Campaign結構描述的詳細資訊，請閱讀[本節](../../configuration/using/about-schema-reference.md)。
+* **行銷活動結構描述** — 應用程式中資料的實體和邏輯結構以XML描述。 並且遵循 Adobe Campaign 專屬的語法，稱為結構描述 (schema)。如需Adobe Campaign結構描述的詳細資訊，請閱讀[本節](../../configuration/using/about-schema-reference.md)。
 
 * **資料模型最佳實務** — 在[本節](../../configuration/using/data-model-best-practices.md#data-model-architecture)中瞭解Campaign資料模型架構和相關最佳實務。

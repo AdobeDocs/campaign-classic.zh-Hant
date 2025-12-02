@@ -3,12 +3,12 @@ product: campaign
 title: 管理工作流程
 description: 管理工作流程
 feature: Workflows, Configuration
-role: Data Engineer, Developer
+role: Developer
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 exl-id: 617b0050-6b04-4c68-9f63-511baae99f41
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '142'
+source-wordcount: '141'
 ht-degree: 10%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 10%
 
 
 
-依預設，您的新工作流程以預先設定的工作流程範本為基礎，並以收件者表格(nms：recipient)為基礎。 若要讓收件者自動以&#x200B;**Nms_DefaultRcpSchema**&#x200B;選項中參考的收件者自訂表格為基礎（請參閱[設定介面](../../configuration/using/configuring-the-interface.md)區段），您必須建立新的工作流程範本。
+依預設，您的新工作流程是以預先設定的工作流程範本為基礎，並以收件者表格(nms:recipient)為基礎。 若要讓收件者自動以&#x200B;**Nms_DefaultRcpSchema**&#x200B;選項中參考的收件者自訂表格為基礎（請參閱[設定介面](../../configuration/using/configuring-the-interface.md)區段），您必須建立新的工作流程範本。
 
 透過&#x200B;**[!UICONTROL Resources > Templates > Workflow templates]**&#x200B;節點建立新範本。 在範本的屬性中，提供的維度符合外部收件者表格。
 

@@ -1,18 +1,18 @@
 ---
 product: campaign
-title: 關於方案版本
+title: 關於結構描述版本
 description: 開始使用結構描述版本
 feature: Schema Extension
-role: Data Engineer, Developer
+role: Developer
 exl-id: 9e10b24e-c4de-4e76-bbed-0d05f62120b7
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '1006'
+source-wordcount: '1005'
 ht-degree: 6%
 
 ---
 
-# 關於方案版本{#about-schema-edition}
+# 關於結構描述版本{#about-schema-edition}
 
 Adobe Campaign採用資料結構描述來：
 
@@ -24,7 +24,7 @@ Adobe Campaign採用資料結構描述來：
 
 ## 擴充或建立方案 {#extending-or-creating-schemas}
 
-若要將欄位或索引或其他元素新增至Campaign的其中一個核心資料結構，例如收件者表格(nms：recipient)，您必須擴充該結構。 如需詳細資訊，請參閱[擴充結構描述](../../configuration/using/extending-a-schema.md)區段。
+若要將欄位或索引或其他元素新增至Campaign中的其中一個核心資料結構，例如收件者表格(nms:recipient)，您必須擴充該結構。 如需詳細資訊，請參閱[擴充結構描述](../../configuration/using/extending-a-schema.md)區段。
 
 若要新增不存在於Adobe Campaign中的現成全新資料型別（例如合約表格），您可以直接建立自訂結構描述。 如需詳細資訊，請參閱[資料結構描述](../../configuration/using/data-schemas.md)區段。
 
@@ -36,7 +36,7 @@ Adobe Campaign採用資料結構描述來：
 
 分項清單會先定義，在結構描述的主要元素之前。 它們可讓您在清單中顯示值，以限制使用者在指定欄位中的選擇。
 
-例如：
+範例：
 
 ```
 <enumeration basetype="byte" name="exTransactionTypeEnum" default="store">
@@ -88,13 +88,13 @@ type="string" enum="exTransactionTypeEnum"/>
 
 如需索引的詳細資訊，請參閱[索引欄位](../../configuration/using/database-mapping.md#indexed-fields)區段。
 
-## 金鑰 {#keys}
+## 索引鍵 {#keys}
 
 每個資料表都必須至少有一個索引鍵，而且通常使用設為&quot;true&quot;的&#x200B;**@autopk=true**&#x200B;屬性，在結構描述的主要元素中自動建立該索引鍵。
 
 主索引鍵也可以使用&#x200B;**internal**&#x200B;屬性來定義。
 
-例如：
+範例：
 
 ```
 <key name="householdId" internal="true">

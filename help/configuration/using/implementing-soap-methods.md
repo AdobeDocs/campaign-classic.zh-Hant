@@ -3,11 +3,11 @@ product: campaign
 title: 實施 SOAP 方法
 description: 實施 SOAP 方法
 feature: Configuration
-role: Data Engineer, Developer
+role: Developer
 exl-id: 441a0e5c-fa7f-46c8-a65a-5cca4c846d43
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '417'
 ht-degree: 3%
 
 ---
@@ -37,9 +37,9 @@ ht-degree: 3%
 
 此名稱與「JavaScript程式碼」型別實體的名稱（連同名稱空間）一致。
 
-例如：
+範例：
 
-testLog(msg)方法在nms：recipient擴充功能中宣告
+testLog(msg)方法已在nms:recipient延伸中宣告
 
 ```
 <method name="testLog" static="true" library="cus:test">
@@ -71,9 +71,9 @@ SOAP方法會以JavaScript函式的形式實作，這些函式已分組在代表
  <schema-namespace>_<schema-name>_<method-name>
 ```
 
-例如：
+範例：
 
-下列JavaScript函式為上述方法的實作。 應使用「cus：test」名稱，在「JavaScript程式碼」型別實體中定義。
+下列JavaScript函式為上述方法的實作。 應使用&#39;cus:test&#39;名稱，在&#39;JavaScript Code&#39;型別實體中加以定義。
 
 ```
 function nms_recipient_testLog(message)
@@ -107,7 +107,7 @@ function nms_recipient_setLastName(self, name)
 
 要傳回數個值時，必須將其顯示在表格中。
 
-例如：
+範例：
 
 ```
 function nms_recipient_getKey(self)

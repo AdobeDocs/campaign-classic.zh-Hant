@@ -3,11 +3,11 @@ product: campaign
 title: JavaScript 中的 SOAP 方法
 feature: Configuration, Instance Settings
 description: JavaScript 中的 SOAP 方法
-role: Data Engineer, Developer
+role: Developer
 exl-id: 62020447-fe59-4363-994d-de4d8032bbd7
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '136'
+source-wordcount: '134'
 ht-degree: 9%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 9%
 
 靜態SOAP方法可透過在代表結構描述的物件上叫用方法來存取。 結構描述是「namespace」物件的屬性。 這些名稱空間是全域變數，因此，例如，xtk或nms變數代表對應的名稱空間
 
-以下範例會叫用xtk：workflow綱要的靜態PostEvent方法：
+下列範例會叫用xtk:workflow結構描述的靜態PostEvent方法：
 
 ```
 xtk.workflow.PostEvent("WKF1", "signal", "", $recipient-id='123', false) 
@@ -30,7 +30,7 @@ xtk.workflow.PostEvent("WKF1", "signal", "", $recipient-id='123', false)
 
 若要使用非靜態SOAP方法，必須先在對應結構描述上使用「get」或「create」方法擷取實體。
 
-下列範例會叫用「xtk：queryDef」結構描述的ExecuteQuery方法：
+下列範例會叫用「xtk:queryDef」結構描述的ExecuteQuery方法：
 
 ```
 var query = xtk.queryDef.create(

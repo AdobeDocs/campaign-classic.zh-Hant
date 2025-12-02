@@ -3,9 +3,9 @@ product: campaign
 title: 結構描述版本範例
 description: 結構描述版本範例
 feature: Schema Extension
-role: Data Engineer, Developer
+role: Developer
 exl-id: b7ee70e0-89c6-4cd3-8116-2f073d4a2f2f
-source-git-commit: 0db6f107d2c161b07f42dcf7a932d319130b31e0
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '671'
 ht-degree: 2%
@@ -335,7 +335,7 @@ xtkschema="xtk:srcSchema">
 
 ## 相關主題
 
-* 在&#x200B;**Adobe Campaign v8 （主控台）檔案**&#x200B;中進一步瞭解如何[使用分項清單](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}。
+* 在&#x200B;**Adobe Campaign v8 （主控台）檔案**&#x200B;中進一步瞭解如何[使用分項清單](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}。
 
 * [開始使用Campaign綱要](../../configuration/using/about-schema-edition.md)
 

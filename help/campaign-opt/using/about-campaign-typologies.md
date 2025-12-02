@@ -2,12 +2,12 @@
 product: campaign
 title: 關於行銷活動態樣
 description: 關於行銷活動態樣
-role: User, Data Engineer
+role: User, Developer
 feature: Typology Rules, Campaigns
 hide: true
 hidefromtoc: true
 exl-id: 6d5b8584-4aa1-4d9a-89d9-d41da75dd323
-source-git-commit: dd6bcb16fe41b6a3f1e3f5aaf2f753b29ad4bc1d
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '104'
 ht-degree: 50%
@@ -24,7 +24,7 @@ Campaign Optimization是Adobe Campaign模組，可讓您控制、篩選及監控
 
 >[!NOTE]
 >
->若要進一步瞭解Adobe Campaign的Campaign Optimization以及如何使用，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/campaign-optimization/campaign-typologies){target=_blank}。
+>若要進一步瞭解Adobe Campaign的Campaign Optimization以及如何使用，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/automation/campaign-optimization/campaign-typologies){target=_blank}。
 
 <!--
 
@@ -81,7 +81,7 @@ This video explains how to implement fatigue management in Adobe Campaign Classi
 
 >[!VIDEO](https://video.tv.adobe.com/v/25091?quality=12)
 
-Additional Campaign how-to videos are available [here](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant).
+Additional Campaign how-to videos are available [here](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
 
 **Related topic**
 

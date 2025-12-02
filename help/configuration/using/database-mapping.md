@@ -3,9 +3,9 @@ product: campaign
 title: 資料庫對應
 description: 資料庫對應
 feature: Configuration, Instance Settings
-role: Data Engineer, Developer
+role: Developer
 exl-id: 728b509f-2755-48df-8b12-449b7044e317
-source-git-commit: 517b85f5d7691acc2522bf4541f07c34c60c7fbf
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 3%
@@ -14,7 +14,7 @@ ht-degree: 3%
 
 # 資料庫對應{#database-mapping}
 
-此頁面[&#128279;](schema-structure.md)中描述的範例結構描述的SQL對應會產生下列XML檔案：
+此頁面[中描述的範例結構描述](schema-structure.md)的SQL對應會產生下列XML檔案：
 
 ```sql
 <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">
@@ -53,7 +53,7 @@ SQL命名規則如下：
 
 * **欄位**：前面有根據型別定義之前置詞的元素名稱：&#39;i&#39;代表整數，&#39;d&#39;代表雙精度，&#39;s&#39;代表字串，&#39;ts&#39;代表日期等。
 
-  欄位名稱是透過每個型別&#x200B;**`<attribute>`**&#x200B;和&#x200B;**`<element>`**&#x200B;的&#x200B;**sqlname**&#x200B;屬性輸入的：
+  欄位名稱是透過每個型別&#x200B;**和**&#x200B;的&#x200B;**`<attribute>`** sqlname **`<element>`**&#x200B;屬性輸入的：
 
   ```sql
   <attribute desc="Email address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/> 
@@ -98,7 +98,7 @@ SQL欄位限制如下：
   <element name="description" xml="true" type="html" label="Description"/>
   ```
 
-  「html」型別可讓您將HTML內容儲存在CDATA標籤中，並在Adobe Campaign使用者端介面中顯示特殊的HTML編輯檢查。
+  「html」型別可讓您將HTML內容儲存在CDATA標籤中，並在HTML使用者端介面中顯示特殊的Adobe Campaign編輯檢查。
 
 使用XML欄位來新增欄位，而不需修改資料庫的實體結構。 另一個優點是，您使用的資源較少（配置給SQL欄位的大小、限制每個表格的欄位數等）。 不過，請注意，您無法索引或篩選XML欄位。
 
@@ -175,4 +175,4 @@ SQL欄位限制如下：
 * [方案結構](schema-structure.md)
 * [金鑰管理](database-keys.md)
 * [連結管理](database-links.md)
-* [Campaign資料模型](about-data-model.md)
+* [Campaign 資料模型](about-data-model.md)

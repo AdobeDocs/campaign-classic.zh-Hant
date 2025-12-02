@@ -6,9 +6,9 @@ feature: Workflows, Targeting Activity
 hide: true
 hidefromtoc: true
 exl-id: 38add4fe-6238-45de-863e-895ebca189b7
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '1115'
+source-wordcount: '1114'
 ht-degree: 9%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 9%
 **[!UICONTROL Deduplication]**&#x200B;活動用於從資料集中移除重複資料列。 例如，下列記錄可能會被視為重複，因為它們有相同的電子郵件地址和相同的行動和/或住家電話。
 
 | 上次修改日期 | 名字 | 姓氏 | 電子郵件 | 行動電話 | 電話 |
------|------------|-----------|-------|--------------|------
+|-----|------------|-----------|-------|--------------|------|
 | 02/03/2020 | Bob | Tisner | bob@mycompany.com | 444-444-4444 | 888-888-8888 |
 | 05/19/2020 | Robert | Tisner | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
 | 07/22/2020 | Bobby | Tisner | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
@@ -30,7 +30,7 @@ ht-degree: 9%
 **[!UICONTROL Deduplication]**&#x200B;活動可在識別重複專案後，保留整列作為唯一記錄。 例如，在上述使用案例中，如果活動設定為只保留具有最舊&#x200B;**[!UICONTROL Date]**&#x200B;的記錄，則結果會是：
 
 | 日期 | 名字 | 姓氏 | 電子郵件 | 行動電話 | 電話 |
------|----------|------------|-------|--------------|------
+|-----|----------|------------|-------|--------------|------|
 | 02/03/2020 | Bob | Tisner | bob@mycompany.com | 444-444-4444 | 888-888-8888 |
 
 選取的主要記錄將結轉資料，不會將欄位資料與重複列中的其他相關資料進行任何合併。
@@ -38,7 +38,7 @@ ht-degree: 9%
 補充：
 
 | 日期 | 名字 | 姓氏 | 電子郵件 | 行動電話 | 電話 |
------|------------|-----------|-------|--------------|------
+|-----|------------|-----------|-------|--------------|------|
 | 05/19/2020 | Robert | Tisner | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
 | 07/22/2020 | Bobby | Tisner | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
 
@@ -96,7 +96,7 @@ ht-degree: 9%
 
    >[!NOTE]
    >
-   >可透過&#x200B;**[!UICONTROL Advanced parameters]**&#x200B;連結存取的&#x200B;**[!UICONTROL Merge]**&#x200B;功能可讓您設定一組規則，以便將欄位或欄位群組合併為單一結果資料記錄。 如需詳細資訊，請參閱[將欄位合併為單一記錄](#merging-fields-into-single-record)。
+   >可透過&#x200B;**[!UICONTROL Merge]**&#x200B;連結存取的&#x200B;**[!UICONTROL Advanced parameters]**&#x200B;功能可讓您設定一組規則，以便將欄位或欄位群組合併為單一結果資料記錄。 如需詳細資訊，請參閱[將欄位合併為單一記錄](#merging-fields-into-single-record)。
 
 1. 按一下&#x200B;**[!UICONTROL Finish]**&#x200B;以核准選取的重複資料刪除方法。
 
@@ -175,6 +175,6 @@ ht-degree: 9%
 * 結構描述
 * recCount
 
-這組三個值可識別重複資料刪除所產生的目標。 **[!UICONTROL tableName]**&#x200B;是儲存目標識別碼的資料表名稱，**[!UICONTROL schema]**&#x200B;是母體的結構描述（通常是nms：recipient），而&#x200B;**[!UICONTROL recCount]**&#x200B;是資料表中的元素數目。
+這組三個值可識別重複資料刪除所產生的目標。 **[!UICONTROL tableName]**&#x200B;是儲存目標識別碼的資料表名稱，**[!UICONTROL schema]**&#x200B;是母體的結構描述（通常是nms:recipient），而&#x200B;**[!UICONTROL recCount]**&#x200B;是資料表中的元素數目。
 
 與補充關聯的轉變有相同的引數。

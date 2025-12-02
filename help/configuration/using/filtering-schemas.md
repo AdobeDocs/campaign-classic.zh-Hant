@@ -1,13 +1,13 @@
 ---
 product: campaign
-title: 篩選方案
-description: 篩選方案
+title: 篩選結構描述
+description: 篩選結構描述
 feature: Custom Resources
-role: Data Engineer, Developer
+role: Developer
 exl-id: 009bed25-cd35-437c-b789-5b58a6d2d7c6
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '413'
+source-wordcount: '382'
 ht-degree: 1%
 
 ---
@@ -60,44 +60,44 @@ ht-degree: 1%
 >
 >如果未指定篩選器，則所有運運算元都將具有結構描述的讀取和寫入許可權。
 
-## Protect內建方案 {#protecting-built-in-schemas}
+## 保護內建方案 {#protecting-built-in-schemas}
 
 依預設，只有具備管理員許可權的運運算元才可透過寫入許可權存取內建方案：
 
-* ncm：publishing
-* nl：monitoring
-* nms：calendar
-* xtk：builder
-* xtk：連線
-* xtk：dbInit
-* xtk：entityBackupNew
-* xtk：entityBackupOriginal
-* xtk：entityOriginal
-* xtk：form
-* xtk：funcList
-* xtk：fusion
-* xtk：image
-* xtk：javascript
-* xtk：jssp
-* xtk：jst
-* xtk：navtree
-* xtk：operatorGroup
-* xtk：package
-* xtk：queryDef
-* xtk：resourceMenu
-* xtk：rights
-* xtk：schema
-* xtk：scriptContext
-* xtk：specFile
-* xtk：sql
-* xtk：sqlSchema
-* xtk：srcSchema
-* xtk：strings
-* xtk：xslt
+* ncm:publishing
+* nl:monitoring
+* nms:calendar
+* xtk:builder
+* xtk:connections
+* xtk:dbInit
+* xtk:entityBackupNew
+* xtk:entityBackupOriginal
+* xtk:entityOriginal
+* xtk:form
+* xtk:funcList
+* xtk:fusion
+* xtk:image
+* xtk:javascript
+* xtk:jssp
+* xtk:jst
+* xtk:navtree
+* xtk:operatorGroup
+* xtk:package
+* xtk:queryDef
+* xtk:resourceMenu
+* xtk:rights
+* xtk:schema
+* xtk:scriptContext
+* xtk:specFile
+* xtk:sql
+* xtk:sqlSchema
+* xtk:srcSchema
+* xtk:strings
+* xtk:xslt
 
 >[!IMPORTANT]
 >
->**xtk：sessionInfo**&#x200B;結構描述的讀取和寫入許可權只能由Adobe Campaign執行個體的內部帳戶存取。
+>**xtk:sessionInfo**&#x200B;結構描述的讀取和寫入許可權只能由Adobe Campaign執行個體的內部帳戶存取。
 
 ## 修改內建綱要的系統篩選器 {#modifying-system-filters-of-built-in-schemas}
 

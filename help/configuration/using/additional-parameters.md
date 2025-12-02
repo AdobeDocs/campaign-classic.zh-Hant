@@ -3,11 +3,11 @@ product: campaign
 title: 其他網頁追蹤引數
 description: 深入瞭解網路追蹤的引數
 feature: Configuration, Instance Settings
-role: Data Engineer, Developer
+role: Developer
 exl-id: d14d94fd-b078-4893-be84-31d37a1d50f5
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '351'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 * **amount**：代表交易的金額，
 * **article**：代表交易中的專案數。
 
-這些引數是在&#x200B;**nms：webTrackingLog**&#x200B;結構描述中定義，而且是報表中看到的一些指標。
+這些引數是在&#x200B;**nms:webTrackingLog**&#x200B;結構描述中定義，而且是報表中看到的一些指標。
 
 若要定義其他引數，您必須擴充此結構描述。
 

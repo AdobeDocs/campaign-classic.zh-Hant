@@ -3,10 +3,10 @@ product: campaign
 title: 建立篩選器
 description: 瞭解如何建立自訂表格的篩選器
 feature: Profiles, Custom Resources
-role: Data Engineer, Developer
+role: Developer
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 exl-id: 6fad3dac-9af0-4796-adcf-d1de4b255aca
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '105'
 ht-degree: 3%

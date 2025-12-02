@@ -3,18 +3,18 @@ product: campaign
 title: 結構描述參考
 description: 結構描述參考清單
 feature: Custom Resources
-role: Data Engineer, Developer
+role: Developer
 exl-id: 5745fc60-9df3-4ad0-bbeb-f6ae8c86a5aa
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '90'
+source-wordcount: '89'
 ht-degree: 21%
 
 ---
 
 # 結構描述參考 {#schema-reference}
 
-編輯結構描述時，可以使用根據來源結構描述(xtk：srcSchema)的核准系統。 使用「資料庫結構更新……」助理員更新資料庫時，也會發現一些錯誤。
+編輯結構描述時，可以使用以來源結構描述(xtk:srcSchema)為基礎的核准系統。 使用「資料庫結構更新……」助理員更新資料庫時，也會發現一些錯誤。
 
 依預設，在Adobe Campaign結構描述中，所有布林值型別屬性都是「false」。 若要啟用它們，您必須在結構描述中指定屬性，並將其值設為「true」。
 

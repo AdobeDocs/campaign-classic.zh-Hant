@@ -2,12 +2,12 @@
 product: campaign
 title: 控制規則
 description: 瞭解如何使用Adobe Campaign中的控制規則
-role: User, Data Engineer
+role: User, Developer
 feature: Typology Rules, Campaigns
 hide: true
 hidefromtoc: true
 exl-id: 5a5f26f6-38da-4488-aadb-81fcb5359331
-source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 2%

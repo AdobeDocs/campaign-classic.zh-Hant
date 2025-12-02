@@ -3,11 +3,11 @@ product: campaign
 title: 電子郵件參數
 description: 瞭解電子郵件傳送的專屬選項和設定
 feature: Email
-role: User, Developer, Data Engineer
+role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 1bb36e71-9f1a-4553-b266-eca3f48688e2
-source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '905'
 ht-degree: 10%
@@ -82,7 +82,7 @@ Adobe Campaign可讓您只要新增密件副本電子郵件地址至訊息目標
 
 鏡像頁面是可透過網頁瀏覽器線上存取的 HTML 頁面。其內容與電子郵件相同。
 
-依預設，如果將連結插入郵件內容中，則會產生映象頁面。 如需個人化區塊插入的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=zh-Hant){target="_blank"}。
+依預設，如果將連結插入郵件內容中，則會產生映象頁面。 如需個人化區塊插入的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}。
 
 在傳遞屬性中，**[!UICONTROL Mode]**&#x200B;索引標籤的&#x200B;**[!UICONTROL Validity]**&#x200B;欄位可讓您修改此頁面的產生模式。
 

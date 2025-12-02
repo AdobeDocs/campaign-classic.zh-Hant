@@ -2,12 +2,12 @@
 product: campaign
 title: Campaign 模擬
 description: 開始使用Campaign模擬
-role: User, Data Engineer
+role: User, Developer
 feature: Campaigns
 hide: true
 hidefromtoc: true
 exl-id: 709c64a8-34bf-43fa-a820-238295fb26b8
-source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '1245'
 ht-degree: 2%
@@ -36,7 +36,7 @@ ht-degree: 2%
 
 若要建立模擬，請套用下列步驟：
 
-1. 開啟「**[!UICONTROL Campaigns]**」標籤，按一下「**[!UICONTROL Create]**」區段內的「**[!UICONTROL More]**」連結，然後選取「**[!UICONTROL Simulation]**」選項。
+1. 開啟「**[!UICONTROL Campaigns]**」標籤，按一下「**[!UICONTROL More]**」區段內的「**[!UICONTROL Create]**」連結，然後選取「**[!UICONTROL Simulation]**」選項。
 
    ![](assets/simu_campaign_opti_01.png)
 
@@ -94,7 +94,7 @@ ht-degree: 2%
 
 * 根據所選的優先順序層級，**[!UICONTROL Schedule execution for down-time]**&#x200B;選項會將模擬啟動延遲到較不繁忙的時間段。 例如，模擬會使用大量的資料庫資源，因此非緊急模擬應該排程在夜間執行。
 * **[!UICONTROL Priority]**&#x200B;是套用到模擬以延遲其觸發的層級。
-* **[!UICONTROL Save SQL queries in the log]**。 SQL記錄檔可讓您在模擬結束時診斷錯誤。 它們也可以幫助您找出模擬太慢的原因。 在&#x200B;**[!UICONTROL Audit]**&#x200B;標籤的&#x200B;**[!UICONTROL SQL logs]**&#x200B;子標籤中進行模擬後，這些訊息將會顯示。
+* **[!UICONTROL Save SQL queries in the log]**。 SQL記錄檔可讓您在模擬結束時診斷錯誤。 它們也可以幫助您找出模擬太慢的原因。 在&#x200B;**[!UICONTROL SQL logs]**&#x200B;標籤的&#x200B;**[!UICONTROL Audit]**&#x200B;子標籤中進行模擬後，這些訊息將會顯示。
 
 ## 執行模擬 {#executing-a-simulation}
 
@@ -132,7 +132,7 @@ ht-degree: 2%
 
 #### 稽核 {#audit}
 
-**[!UICONTROL Audit]**&#x200B;索引標籤可讓您監視模擬執行。 **[!UICONTROL SQL Logs]**&#x200B;子標籤對專家使用者很有用。 它以SQL格式列出執行記錄。 只有在模擬執行前已在&#x200B;**[!UICONTROL General]**&#x200B;索引標籤中選取&#x200B;**[!UICONTROL Save SQL queries in the log]**&#x200B;選項時，才會顯示這些記錄。
+**[!UICONTROL Audit]**&#x200B;索引標籤可讓您監視模擬執行。 **[!UICONTROL SQL Logs]**&#x200B;子標籤對專家使用者很有用。 它以SQL格式列出執行記錄。 只有在模擬執行前已在&#x200B;**[!UICONTROL Save SQL queries in the log]**&#x200B;索引標籤中選取&#x200B;**[!UICONTROL General]**&#x200B;選項時，才會顯示這些記錄。
 
 ![](assets/simu_campaign_opti_11.png)
 

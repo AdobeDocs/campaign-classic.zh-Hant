@@ -3,12 +3,12 @@ product: campaign
 title: 新增欄位助理
 description: 新增欄位助理
 feature: Schema Extension
-role: Data Engineer, Developer
+role: Developer
 exl-id: 2350a531-7a26-4f26-90fe-8dac0cc26605
-source-git-commit: ec774cc10a69a694b3c2bf5a6f662afd12a1435a
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '200'
-ht-degree: 0%
+source-wordcount: '199'
+ht-degree: 4%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 1. 若要確認變更，請按一下&#x200B;**[!UICONTROL Finish]**&#x200B;按鈕。
 
-系統會自動建立擴充功能檔案（在範例中稱為「cus：recipient」），並執行對應的SQL指令碼：
+系統會自動建立擴充功能檔案（在範例中稱為「cus:recipient」），並執行對應的SQL指令碼：
 
 ```
 <srcSchema extendedSchema="nms:recipient" label="Recipients" name="recipient"  namespace="cus">  

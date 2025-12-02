@@ -4,11 +4,11 @@ title: 追蹤的URL的預處理指示
 description: 深入瞭解用於編寫電子郵件URL指令碼以及仍進行追蹤的預處理指示
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Monitoring
-role: User, Data Engineer, Developer
+role: User, Developer
 exl-id: 9d3f5c74-377a-4e24-81e5-bb605f69cf8a
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '651'
 ht-degree: 1%
 
 ---
@@ -74,7 +74,7 @@ ht-degree: 1%
 * **[!DNL object]**：物件的名稱（例如：傳遞、提供者等）。
 物件可以是：
    * **[!DNL delivery]**：針對目前的傳遞（請參閱以下子段落中的詳細資訊和限制）。
-   * **[!DNL provider]**：適用於目前的傳遞提供者/路由(nms：externalAccount)。
+   * **[!DNL provider]**：適用於目前的傳遞提供者/路由(nms:externalAccount)。
    * 額外的指令碼物件：如果物件是透過&#x200B;**屬性** > **Personalization** > **在執行內容中新增物件**，載入到內容中。
    * foreach回圈的專案：請參閱下方的[Foreach](#foreach)區段。
 * **[!DNL xpath]**：欄位的xpath。
@@ -101,7 +101,7 @@ ht-degree: 1%
 
 **警告**
 
-如果您對透過中間來源傳送的傳遞使用以下指示，則必須在行銷和中間來源平台上將自訂欄位&#x200B;**@myCustomField**&#x200B;新增到nms：delivery結構描述：
+如果您對透過中間來源傳送的傳遞使用下列指示，自訂欄位&#x200B;**@myCustomField**&#x200B;必須新增至行銷和中間來源平台上的nms:delivery結構描述：
 
 ```
 <%@ value object="delivery" xpath="@myCustomField" %>
@@ -146,7 +146,7 @@ ht-degree: 1%
 * **[!DNL index]** （選用）：如果xpath不是&quot;。&quot; 而且物件本身是一個陣列，物件的專案索引（從0開始）。
 * **[!DNL item]** （選用）：可在foreach回圈內使用&lt;%@值存取的新物件名稱。 在架構中具有連結名稱的預設值。
 
-例如：
+範例：
 
 在傳遞屬性/個人化中，載入一系列文章以及收件者和文章之間的關係表。
 

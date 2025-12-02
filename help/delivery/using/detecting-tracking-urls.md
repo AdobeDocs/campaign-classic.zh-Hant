@@ -3,9 +3,9 @@ product: campaign
 title: 偵測追蹤URL
 description: 深入瞭解追蹤URL的建議模式
 feature: Monitoring
-role: User, Developer, Data Engineer
+role: User, Developer
 exl-id: 7611d6a1-6c55-4ba3-b905-58426c944991
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 2%
@@ -39,7 +39,7 @@ ht-degree: 2%
 例如，`<a href="http://<%=myURL%>">`語法是&#x200B;**不安全**，必須避免。
 
 * 如果Adobe Campaign產生的連結包含一或多個引數，使用此語法可能會導致安全性問題。
-* 整備可能會錯誤地修補某些連結，這可能隨機發生。 典型症狀是可在電子郵件校樣中看到，但預覽中看不到的HTML片段。
+* 整備可能會錯誤地修補某些連結，這可能隨機發生。 典型症狀是一段HTML，可在電子郵件校樣中看到，但預覽中看不到。
 * URL的逸出有問題，URL中的某些字元可能會導致問題。
 * 名稱為ID的引數不能與重新導向URL中的引數相衝突。
 * 因此，追蹤的興趣會限製為傳送的統計資料，因為Adobe Campaign會以不同方式追蹤「myURL」的所有可能值。

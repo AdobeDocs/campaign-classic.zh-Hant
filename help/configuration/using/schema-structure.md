@@ -3,13 +3,13 @@ product: campaign
 title: 瞭解Adobe Campaign中的結構描述結構
 description: 方案結構
 feature: Custom Resources
-role: Data Engineer, Developer
+role: Developer
 audience: configuration
 content-type: reference
 level: Intermediate, Experienced
 topic-tags: schema-reference
 exl-id: 3405efb8-a37c-4622-a271-63d7a4148751
-source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '1511'
 ht-degree: 1%
@@ -65,7 +65,7 @@ ht-degree: 1%
 </srcSchema>
 ```
 
-資料結構描述的XML檔案必須包含具有&#x200B;**名稱**&#x200B;和&#x200B;**名稱空間**&#x200B;屬性的&#x200B;**`<srcschema>`**&#x200B;根元素，才能填入結構描述名稱及其名稱空間。
+資料結構描述的XML檔案必須包含具有&#x200B;**`<srcschema>`**&#x200B;名稱&#x200B;**和**&#x200B;名稱空間&#x200B;**屬性的**&#x200B;根元素，才能填入結構描述名稱及其名稱空間。
 
 ```sql
 <srcSchema name="schema_name" namespace="namespace">
@@ -133,7 +133,7 @@ ht-degree: 1%
 
 ## 資料類型 {#data-types}
 
-資料型別是透過&#x200B;**`<attribute>`**&#x200B;和&#x200B;**`<element>`**&#x200B;元素中的&#x200B;**type**&#x200B;屬性輸入的。
+資料型別是透過&#x200B;**和**&#x200B;元素中的&#x200B;**`<attribute>`** type **`<element>`**&#x200B;屬性輸入的。
 
 [`<attribute>`專案](../../configuration/using/schema/attribute.md)和[`<element>`專案](../../configuration/using/schema/element.md)的說明中有詳細清單。
 

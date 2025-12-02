@@ -4,11 +4,11 @@ title: 在Campaign中使用資料結構
 description: 瞭解如何在Campaign中使用資料結構描述
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Data Model
-role: User, Developer, Data Engineer
+role: User, Developer
 exl-id: 3e28bfee-0321-40f4-9ef6-1bdb5b25041b
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '567'
+source-wordcount: '566'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 ## 方案結構 {#schema-structure}
 
-資料結構描述的XML檔案必須包含具有&#x200B;**名稱**&#x200B;和&#x200B;**名稱空間**&#x200B;屬性的&#x200B;**`<srcschema>`**&#x200B;根元素，才能填入結構描述名稱及其名稱空間。
+資料結構描述的XML檔案必須包含具有&#x200B;**`<srcschema>`**&#x200B;名稱&#x200B;**和**&#x200B;名稱空間&#x200B;**屬性的**&#x200B;根元素，才能填入結構描述名稱及其名稱空間。
 
 ```
 <srcSchema name="schema_name" namespace="namespace">
@@ -39,7 +39,7 @@ ht-degree: 1%
 
 在主元素中輸入的&#x200B;**template**&#x200B;屬性可讓您使用一般屬性擴充結構描述至所有內容定義，例如名稱、建立日期、作者、關聯的字串等。
 
-這些屬性在&#x200B;**ncm：content**&#x200B;結構描述中有說明。
+這些屬性在&#x200B;**ncm:content**&#x200B;結構描述中有說明。
 
 >[!NOTE]
 >
@@ -128,7 +128,7 @@ ht-degree: 1%
 
 要參考的元素上的&#x200B;**ref**&#x200B;屬性必須以參考元素的路徑(XPath)來完成。
 
-**範例**：新增結構與我們範例結構描述的&#x200B;**`<chapter>`**&#x200B;元素相同的&#x200B;**Appendix**&#x200B;區段。
+**範例**：新增結構與我們範例結構描述的&#x200B;**元素相同的** Appendix **`<chapter>`**&#x200B;區段。
 
 ```
 <srcSchema name="book" namespace="cus">
@@ -165,7 +165,7 @@ ht-degree: 1%
 </srcSchema>
 ```
 
-## 編輯方案 {#editing-schemas}
+## 編輯結構描述 {#editing-schemas}
 
 編輯欄位可讓您輸入來源架構的XML內容：
 

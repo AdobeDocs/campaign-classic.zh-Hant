@@ -1,20 +1,20 @@
 ---
 product: campaign
-title: 現有表格方案
-description: 現有表格方案
+title: 現有表格結構描述
+description: 現有表格結構描述
 feature: Custom Resources
-role: Data Engineer, Developer
+role: Developer
 exl-id: 964f1027-627c-4f12-91b5-f258e9ba458b
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '216'
 ht-degree: 7%
 
 ---
 
-# 現有表格方案{#schema-of-an-existing-table}
+# 現有表格結構描述{#schema-of-an-existing-table}
 
-## 概覽 {#overview}
+## 概觀 {#overview}
 
 當應用程式需要存取現有表格、SQL檢視或遠端資料庫的資料時，請使用下列資料在Adobe Campaign中建立其綱要：
 
@@ -24,7 +24,7 @@ ht-degree: 7%
 * 這些欄位及其在XML結構中的位置：僅填寫應用程式中使用的欄位，
 * 連結：如果與基底的其他表格有聯結。
 
-## 實施 {#implementation}
+## 實作 {#implementation}
 
 若要建立對應的綱要，請套用下列階段：
 

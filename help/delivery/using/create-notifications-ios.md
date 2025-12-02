@@ -3,14 +3,14 @@ product: campaign
 title: 為iOS裝置建立推播通知
 description: 瞭解如何建立iOS的推播通知
 feature: Push
-role: User, Developer, Data Engineer
+role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 4520504a-0d9f-4ea7-a5a8-0c07948af4f0
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '980'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 7%
 
    >[!NOTE]
    >
-   >選取傳遞目標母體時的詳細程式，會顯示在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hant#target-population.){target="_blank"}的此章節中。
+   >選取傳遞目標母體時的詳細程式，會顯示在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#target-population.){target="_blank"}的此章節中。
    >
    >如需使用個人化欄位的詳細資訊，請參閱[本區段](about-personalization.md)。
    >

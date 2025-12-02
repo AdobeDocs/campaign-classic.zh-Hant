@@ -5,9 +5,9 @@ description: 瞭解使用Adobe Campaign Enhanced MTA傳送電子郵件的範圍�
 feature: Email
 role: User, Admin, Developer
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '1380'
+source-wordcount: '1379'
 ht-degree: 1%
 
 ---
@@ -136,7 +136,7 @@ Campaign不再使用傳送中的重試設定。 軟退信重試次數和兩次�
 ### DKIM簽署
 
 DKIM (DomainKeys Indified Mail)電子郵件驗證簽署是由Enhanced MTA完成。 原生Campaign MTA的DKIM簽署功能將會在Enhanced MTA升級過程中，於網域管理表格內關閉。
-如需DKIM的詳細資訊，請參閱[Adobe傳遞能力最佳實務指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=zh-Hant#authentication)。
+如需DKIM的詳細資訊，請參閱[Adobe傳遞能力最佳實務指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication)。
 
 ### 傳遞成功報告
 
@@ -146,7 +146,7 @@ DKIM (DomainKeys Indified Mail)電子郵件驗證簽署是由Enhanced MTA完成�
 
 當硬退信從Enhanced MTA回傳時，其狀態會從&#x200B;**[!UICONTROL Sent]**&#x200B;變更為&#x200B;**[!UICONTROL Failed]**，而&#x200B;**[!UICONTROL Success]**&#x200B;百分比會因此減少。
 
-當從Enhanced MTA回報軟退信時，訊息仍顯示為&#x200B;**[!UICONTROL Sent]**，且&#x200B;**[!UICONTROL Success]**&#x200B;百分比尚未更新。 然後，軟退信會在整個傳遞有效期內重試[&#128279;](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure)：
+當從Enhanced MTA回報軟退信時，訊息仍顯示為&#x200B;**[!UICONTROL Sent]**，且&#x200B;**[!UICONTROL Success]**&#x200B;百分比尚未更新。 然後，軟退信會在整個傳遞有效期內重試[](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure)：
 
 * 如果在有效期間結束前重試成功，則訊息狀態會維持為&#x200B;**[!UICONTROL Sent]**，**[!UICONTROL Success]**&#x200B;百分比會維持不變。
 
@@ -161,6 +161,5 @@ DKIM (DomainKeys Indified Mail)電子郵件驗證簽署是由Enhanced MTA完成�
 | 訊息已成功從Campaign轉送至增強型MTA | **[!UICONTROL Success]**&#x200B;百分比從100%開始 | 已傳送 |
 | 系統會從Enhanced MTA回報硬跳出訊息 | **[!UICONTROL Success]**&#x200B;百分比會相應減少 | 失敗 |
 | 系統會從Enhanced MTA回報軟退信訊息 | **[!UICONTROL Success]**&#x200B;百分比沒有變更 | 已傳送 |
-| 軟退信重試成功 | **[!UICONTROL Success]**&#x200B;百分比沒有變更 | 已傳送 | **[!UICONTROL Success]**&#x200B;百分比會相應增加 | 已傳送 |
+| 軟退信重試成功 | **[!UICONTROL Success]**&#x200B;百分比沒有變更\|  **[!UICONTROL Success]**&#x200B;百分比會相應增加 | 已傳送 |
 | 軟退信重試失敗 | **[!UICONTROL Success]**&#x200B;百分比會相應減少 | 失敗 |
-

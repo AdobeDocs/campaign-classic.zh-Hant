@@ -3,9 +3,9 @@ product: campaign
 title: 設定Campaign Explorer導覽樹狀結構
 feature: Application Settings
 description: 瞭解如何設定Campaign Explorer導覽樹狀結構
-role: Data Engineer, Developer
+role: Developer
 exl-id: c7ae7240-0c12-4420-bbb3-4268c9ade3e7
-source-git-commit: d56038fc8baf766667d89bb73747c20ec041124c
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '1183'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 身為資深使用者，您可以在瀏覽器樹狀結構中新增資料夾並加以自訂。
 
-在[Adobe Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}中進一步瞭解Campaign使用者介面。
+在[Adobe Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}中進一步瞭解Campaign使用者介面。
 
 導覽清單使用的資料夾型別在遵循&#x200B;**xtk:navtree**&#x200B;結構描述語法的XML檔案中描述。
 

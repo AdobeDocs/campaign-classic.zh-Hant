@@ -4,11 +4,11 @@ title: 建立種子地址
 description: 瞭解如何建立和使用種子地址
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Seed Address
-role: User, Data Engineer
+role: User, Developer
 exl-id: f7dc97f0-3423-4b6f-88e2-08180f9adf8a
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '422'
+source-wordcount: '421'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ Adobe Campaign也可讓您建立種子地址範本，這些範本會匯入至傳
 若要建立種子地址，請遵循下列步驟：
 
 1. 按一下種子地址清單上方的&#x200B;**[!UICONTROL New]**&#x200B;按鈕。
-1. 從&#x200B;**[!UICONTROL Recipient]**&#x200B;索引標籤的相符欄位中，輸入連結到位址的資料。 可用欄位與傳送收件者（nms：recipient表格）之設定檔中的標準欄位相對應：名稱、名字、電子郵件等。
+1. 從&#x200B;**[!UICONTROL Recipient]**&#x200B;索引標籤的相符欄位中，輸入連結到位址的資料。 可用欄位對應到傳遞收件者（nms:recipient表格）之設定檔中的標準欄位：名稱、名字、電子郵件等。
 
    >[!NOTE]
    >

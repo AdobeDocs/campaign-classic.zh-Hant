@@ -3,12 +3,12 @@ product: campaign
 title: 目標對應
 description: 瞭解如何建立目標對應
 feature: Application Settings
-role: Data Engineer, Developer
+role: Developer
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 exl-id: 38333669-5598-4811-a121-b677c1413f56
-source-git-commit: f469689f9e8a4d805fb95a1ae120ccd35aba3731
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '497'
 ht-degree: 2%
 
 ---
@@ -30,11 +30,11 @@ ht-degree: 2%
 
 1. 建立新的資料結構，整合您要使用的自訂表格欄位。
 
-   如需進一步資訊，請參閱[結構描述參考(xtk：srcSchema)](../../configuration/using/about-schema-reference.md)。
+   如需進一步資訊，請參閱[結構描述參考(xtk:srcSchema)](../../configuration/using/about-schema-reference.md)。
 
    在我們的範例中，我們將建立客戶結構，這是一個非常簡單的表格，包含下列欄位：ID、名字、姓氏、電子郵件地址、行動電話號碼。 目的是能夠傳送電子郵件或簡訊警示給儲存在此表格中的個人。
 
-   結構描述範例(cus：individual)
+   範例結構描述(cus:individual)
 
    ```
    <srcSchema name="individual" namespace="cus" label="Individuals">

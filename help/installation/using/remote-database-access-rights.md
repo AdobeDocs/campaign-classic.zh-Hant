@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 3d43010e-53f8-4aa2-a651-c422a02191fe
-source-git-commit: f032ed3bdc0b402c8281bc34e6cb29f3c575aaf9
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '922'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 1. 在Adobe Campaign總管中選取&#x200B;**[!UICONTROL Administration > Access Management > Named Rights]**&#x200B;節點。
 1. 指定您選擇的標籤，以建立新的權利。
-1. **[!UICONTROL Name]**&#x200B;欄位必須使用下列格式&#x200B;**user：base@server**，其中：
+1. **[!UICONTROL Name]**&#x200B;欄位必須使用下列格式&#x200B;**user:base@server**，其中：
 
    * **user**&#x200B;對應於外部資料庫中的使用者名稱。
    * **base**&#x200B;對應到外部資料庫的名稱。
@@ -30,7 +30,7 @@ ht-degree: 0%
 
      >[!NOTE]
      >
-     >**：base**&#x200B;部分在Oracle中是選用的。
+     >在Oracle中，**:base**&#x200B;部分是選用的。
 
 1. 儲存已命名的許可權，然後從Adobe Campaign檔案總管的&#x200B;**[!UICONTROL Administration > Access Management > Operators]**&#x200B;節點將其連結至您選擇的使用者。
 
@@ -64,7 +64,7 @@ ht-degree: 0%
 | **正在存取使用者端資料** | 選取（未來的）表格或檢視許可權 | SELECT許可權 | 選取或選取任何表格許可權 | 選取許可權 | SELECT許可權 | SELECT許可權 |
 | **存取中繼資料** | 選取INFORMATION_SCHEMA綱要許可權 | SELECT許可權 | 使用DESCRIBE陳述式不需要許可權 | 檢視定義許可權 | 使用「\d table」命令不需要許可權 | SELECT許可權 |
 
-|   | teradata | InfiniDB | sybase IQ/Sybase ASE | Netezza | AsterData |
+|   | Teradata | InfiniDB | Sybase IQ / Sybase ASE | Netezza | AsterData |
 |:-:|:-:|:-:|:-:|:-:|:-:|
 | **正在連線到遠端資料庫** | CONNECT許可權 | 建立繫結至遠端主機的使用者（具有ALL PRIVILEGES） | 使用CONNECT陳述式不需要許可權 | 不需要許可權 | CONNECT許可權 |
 | **正在建立資料表** | CREATE TABLE或TABLE關鍵字 | CREATE許可權 | RESOURCE授權和CREATE許可權 | TABLE許可權 | CREATE許可權 |
@@ -75,5 +75,5 @@ ht-degree: 0%
 | **監視執行** | 使用EXPLAIN陳述式不需要任何許可權 | SELECT許可權 | 只有系統管理員可以執行sp_showplan | 使用EXPLAIN陳述式不需要任何許可權 | 使用EXPLAIN陳述式不需要任何許可權 |
 | **正在寫入資料** | INSERT和UPDATE許可權 | INSERT和UPDATE許可權 | 插入和更新許可權 | INSERT和UPDATE許可權 | INSERT和UPDATE許可權 |
 | **正在將資料載入資料表** | SELECT和INSERT許可權分別使用COPY TO和COPY FROM陳述式 | FILE許可權 | 成為資料表的擁有者或ALTER許可權。 視於 — gl選項而定，只有在使用者具有DBA許可權時，才能執行LOAD TABLE | SELECT和INSERT許可權 | SELECT和INSERT許可權 |
-| **正在存取使用者端資料** | SELECT許可權 | 選取許可權 | SELECT許可權 | SELECT許可權 |
+| **正在存取使用者端資料** | SELECT許可權 | 選取許可權 | SELECT許可權 | SELECT許可權 |  |
 | **存取中繼資料** | SHOW許可權 | SELECT許可權 | 使用DESCRIBE陳述式不需要許可權 | 使用「\d table」命令不需要許可權 | 使用SHOW命令不需要任何許可權 |

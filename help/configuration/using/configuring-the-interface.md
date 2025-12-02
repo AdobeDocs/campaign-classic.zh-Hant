@@ -3,10 +3,10 @@ product: campaign
 title: 設定介面
 description: 瞭解如何設定Campaign介面
 feature: Application Settings
-role: Data Engineer, Developer
+role: Developer
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 exl-id: 9f50f258-845e-4895-b1ef-b73744dea326
-source-git-commit: d56038fc8baf766667d89bb73747c20ec041124c
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 0%

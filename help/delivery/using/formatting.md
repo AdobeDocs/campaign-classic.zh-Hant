@@ -4,11 +4,11 @@ title: 格式
 description: 格式
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Email Design
-role: User, Developer, Data Engineer
+role: User, Developer
 exl-id: d9688dc4-20c6-4a9a-990f-465f39b2faa2
-source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '1451'
+source-wordcount: '1446'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ JavaScript範本可由其名稱和名稱空間識別，就如結構描述和表�
 
 ### JavaScript範本的結構 {#structure-of-a-javascript-template}
 
-根據「cus：book」結構描述的JavaScriptHTML格式範本範例：
+以&quot;cus:book&quot;結構描述為基礎的JavaScript HTML格式化範本範例：
 
 ```
 <html>
@@ -175,7 +175,7 @@ JavaScript範本可由其名稱和名稱空間識別，就如結構描述和表�
 >
 >必須填入關聯的資料模型結構描述，才能初始化JavaScript物件。
 
-若要隨時產生輸出檔案的預覽，請選取內容和輸出格式(HTML、文字、XML)，然後按一下&#x200B;**[!UICONTROL Generate]**：
+若要隨時產生輸出檔案的預覽，請選取內容和輸出格式(HTML、文字、XML)，然後按一下「**[!UICONTROL Generate]**」：
 
 ![](assets/d_ncs_content_form17.png)
 
@@ -191,7 +191,7 @@ JavaScript範本可由其名稱和名稱空間識別，就如結構描述和表�
 
 此範例涉及下列步驟：
 
-1. 建立下列結構描述（在此案例中： **neo：news**）：
+1. 建立下列結構描述（在此案例中： **neo:news**）：
 
    ```
    <srcSchema _cs="Invitation (neo)"   entitySchema="xtk:srcSchema" img="xtk:schema.png" label="Invitation" mappingType="sql" name="news" namespace="neo" xtkschema="xtk:srcSchema">
@@ -230,7 +230,7 @@ JavaScript範本可由其名稱和名稱空間識別，就如結構描述和表�
    </srcSchema>
    ```
 
-1. 建立連結的&#x200B;**[!UICONTROL Content management]**&#x200B;型別表單(**neo：news**)
+1. 建立連結的&#x200B;**[!UICONTROL Content management]**&#x200B;型別表單(**neo:news**)
 
    ```
    <form _cs="News (neo)" entitySchema="xtk:form"  img="xtk:form.png" label="News"  name="news" namespace="neo" type="contentForm" xtkschema="xtk:form">
@@ -354,7 +354,7 @@ JavaScript範本可由其名稱和名稱空間識別，就如結構描述和表�
 
 1. 現在建立用於兩種格式的出版物範本：
 
-   * 對於HTML：
+   * 若為HTML：
 
      ![](assets/d_ncs_content_sample_2.png)
 
@@ -368,7 +368,7 @@ JavaScript範本可由其名稱和名稱空間識別，就如結構描述和表�
 
 ## XSL樣式表 {#xsl-stylesheets}
 
-XSLT語言可讓您將XML檔案變更為輸出檔案。 根據樣式表的輸出方法，產生的檔案可以以HTML、純文字或其他XML樹狀結構產生。
+XSLT語言可讓您將XML檔案變更為輸出檔案。 根據樣式表的輸出方法，產生的檔案可以在HTML、純文字或其他XML樹狀結構中產生。
 
 在稱為樣式表的檔案中，此轉換又以XML格式詳述。
 
@@ -376,11 +376,11 @@ XSLT語言可讓您將XML檔案變更為輸出檔案。 根據樣式表的輸出
 
 樣式表會以其名稱和名稱空間來識別，就像結構描述和表單一樣。 不過，建議您將&#x200B;**.xsl**&#x200B;副檔名新增至樣式表的名稱。
 
-樣式表的識別索引鍵是由名稱空間和名稱組成的字串，以冒號分隔；例如： **cus：book.xsl**。
+樣式表的識別索引鍵是由名稱空間和名稱組成的字串，以冒號分隔；例如： **cus:book.xsl**。
 
 ### 樣式表的結構 {#structure-of-a-stylesheet}
 
-根據範例結構描述「cus：book」的HTML格式化樣式表範例：
+根據範例結構描述&quot;cus:book&quot;的HTML格式化樣式表範例：
 
 ```
 <?xml version="1.0" encoding="ISO-8859-1" ?>
@@ -444,7 +444,7 @@ XSLT語言可讓您將XML檔案變更為輸出檔案。 根據樣式表的輸出
 
 依預設，XSLT處理器會搜尋套用至輸入XML檔案根或主節點的&#x200B;**範本**。 輸出檔案的建構從此&#x200B;**範本**&#x200B;開始。
 
-在我們的範例中，HTML頁面是從&quot;cus：book&quot;結構描述產生，並顯示書冊名稱和章節清單。
+在我們的範例中，HTML頁面是從&quot;cus:book&quot;結構描述產生，並顯示書籍名稱和章節清單。
 
 >[!NOTE]
 >
@@ -452,9 +452,9 @@ XSLT語言可讓您將XML檔案變更為輸出檔案。 根據樣式表的輸出
 
 ### 顯示HTML/XML {#displaying-html-xml}
 
-若要顯示&#x200B;**html**&#x200B;欄位，請使用&#x200B;**`<xsl:value-of>`**&#x200B;指示詞中的&#x200B;**disable-output-escaping=&quot;yes&quot;**&#x200B;選項。 這可讓您避免將字元取代為其XML實體（例如&lt;替換為&lt;）。
+若要顯示&#x200B;**html**&#x200B;欄位，請使用&#x200B;**指示詞中的** disable-output-escaping=&quot;yes&quot;**`<xsl:value-of>`**&#x200B;選項。 這可讓您避免將字元取代為其XML實體（例如&lt;替換為&lt;）。
 
-具有&#x200B;**disable-output-escaping=&quot;yes&quot;**&#x200B;選項的&#x200B;**`<xsl:text>`**&#x200B;指示詞可讓您為個人化欄位或條件測試插入JavaScript標籤。
+具有&#x200B;**`<xsl:text>`** disable-output-escaping=&quot;yes&quot;**選項的**&#x200B;指示詞可讓您為個人化欄位或條件測試插入JavaScript標籤。
 
 範例：
 

@@ -1,18 +1,18 @@
 ---
 product: campaign
-title: 資料方案
+title: 資料結構描述
 description: 開始使用Campaign資料結構
 feature: Schema Extension
-role: Data Engineer, Developer
+role: Developer
 exl-id: d4446035-3988-4d89-b7df-7b8528c2e371
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '392'
 ht-degree: 1%
 
 ---
 
-# 資料方案{#data-schemas}
+# 資料結構描述{#data-schemas}
 
 ## 原則 {#principles}
 

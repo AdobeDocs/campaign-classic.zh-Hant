@@ -3,22 +3,22 @@ product: campaign
 title: 限制 PI 檢視
 description: 瞭解如何限制PI檢視
 feature: PI
-role: Data Engineer, Developer
+role: Developer
 exl-id: 0f32d62d-a10a-4feb-99fe-4679b98957d4
-source-git-commit: e198defd60f4b12681025b04b12a1498df015047
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '439'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
 # 限制 PI 檢視{#restricting-pii-view}
 
-## 概覽 {#overview}
+## 概觀 {#overview}
 
 有些客戶需要行銷使用者能夠存取資料記錄，但不希望他們看到個人識別資訊(PII)，例如名字、姓氏或電子郵件地址。 Adobe Campaign提出一種方法來保護隱私權並防止資料被一般行銷活動運運算元誤用。
 
-## 實施 {#implementation}
+## 實作 {#implementation}
 
 可套用至任何元素或屬性的新屬性已新增至結構描述，它補充了現有的屬性&#x200B;**[!UICONTROL visibleIf]** 。 此屬性是： **[!UICONTROL accessibleIf]** 。 當包含與目前使用者內容相關的XTK運算式時，它可以利用&#x200B;**[!UICONTROL HasNamedRight]**&#x200B;或&#x200B;**[!UICONTROL $(login)]**，例如。
 

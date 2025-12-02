@@ -3,11 +3,11 @@ product: campaign
 title: 商業導向 API
 description: 商業導向 API
 feature: API
-role: Data Engineer, Developer
+role: Developer
 exl-id: e6638870-3141-4f12-b904-db436127c0d1
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '618'
 ht-degree: 2%
 
 ---
@@ -18,7 +18,7 @@ Business API是每種物件型別專屬的。 它們會影響：
 
 * 傳遞：
 
-   * 建立傳遞動作，請參閱[SubmitDelivery (nms：delivery)](#submitdelivery--nms-delivery-)，
+   * 正在建立傳遞動作，請參閱[SubmitDelivery (nms:delivery)](#submitdelivery--nms-delivery-)，
    * 傳送行銷活動（開始、暫停、停止、傳送證明）、
    * 復原傳遞記錄。
 
@@ -27,19 +27,19 @@ Business API是每種物件型別專屬的。 它們會影響：
    * 啟動工作流程，
    * 驗證流程等。
 
-     請參閱JavaScript[&#128279;](../../configuration/using/soap-methods-in-javascript.md)中的SOAP方法。
+     請參閱JavaScript[中的](../../configuration/using/soap-methods-in-javascript.md)SOAP方法。
 
 * 內容管理
-* 訂閱管理，請參閱[訂閱(nms：subscription)](#subscribe--nms-subscription-)和[取消訂閱(nms：subscription)](#unsubscribe--nms-subscription-)。
+* 訂閱管理，請參閱[訂閱(nms:subscription)](#subscribe--nms-subscription-)和[取消訂閱(nms:subscription)](#unsubscribe--nms-subscription-)。
 * 資料程式：匯入、匯出。
 
 本節詳細說明了「訂閱」、「取消訂閱」和「SubmitDelivery」服務的使用。
 
 >[!IMPORTANT]
 >
->[Campaign JSAPI檔案](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hant)包含有關SOAP呼叫和在Adobe Campaign中使用Javascript的其他資訊，以及應用程式中使用的所有方法和函式的完整參考。
+>[Campaign JSAPI檔案](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hant)包含有關Adobe Campaign中SOAP呼叫和使用Javascript的其他資訊，以及應用程式中使用的所有方法和函式的完整參考。
 
-## 訂閱(nms：subscription) {#subscribe--nms-subscription-}
+## 訂閱(nms:subscription) {#subscribe--nms-subscription-}
 
 此服務可讓您為收件者訂閱資訊服務並更新收件者設定檔。
 
@@ -47,10 +47,10 @@ Business API是每種物件型別專屬的。 它們會影響：
 
 * 驗證，
 * 訂閱服務的內部名稱，
-* 包含收件者資訊的XML檔案（來自「nms：recipient」綱要），
+* 包含收件者資訊的XML檔案（來自「nms:recipient」結構描述），
 * 如果還沒有布林值，則為建立收件者的布林值。
 
-「nms：subscription」結構描述中「subscription」方法的說明：
+「nms:subscription」結構描述中「subscribe」方法的說明：
 
 ```
 <method name="Subscribe" static="true">
@@ -62,7 +62,7 @@ Business API是每種物件型別專屬的。 它們會影響：
 </method>
 ```
 
-調解金鑰的定義必須透過XML檔案`<recipient>`專案上的_&#x200B;**key**&#x200B;屬性輸入。 此屬性的內容是以逗號分隔的XPath清單。
+調解金鑰的定義必須透過XML檔案&#x200B;**專案上的_** key`<recipient>`屬性輸入。 此屬性的內容是以逗號分隔的XPath清單。
 
 此呼叫不會傳回任何資料，錯誤除外。
 
@@ -112,7 +112,7 @@ Business API是每種物件型別專屬的。 它們會影響：
   </SOAP-ENV:Envelope>
   ```
 
-## 取消訂閱(nms：subscription) {#unsubscribe--nms-subscription-}
+## 取消訂閱(nms:subscription) {#unsubscribe--nms-subscription-}
 
 此服務可讓您取消訂閱資訊服務的收件者，並更新收件者設定檔。
 
@@ -120,9 +120,9 @@ Business API是每種物件型別專屬的。 它們會影響：
 
 * 驗證，
 * 要取消訂閱之服務的內部名稱，
-* 包含收件者資訊的XML檔案（來自「nms：recipient」綱要），
+* 包含收件者資訊的XML檔案（來自「nms:recipient」結構描述），
 
-「nms：subscription」結構描述中「Unsubscription」方法的說明：
+「nms:subscription」結構描述中「Unsubscribe」方法的說明：
 
 ```
 <method name="Unsubscribe" static="true">
@@ -173,7 +173,7 @@ Business API是每種物件型別專屬的。 它們會影響：
 </SOAP-ENV:Envelope>
 ```
 
-## 提交傳遞(nms：delivery) {#submitdelivery--nms-delivery-}
+## SubmitDelivery (nms:delivery) {#submitdelivery--nms-delivery-}
 
 此服務可讓您建立並提交傳遞動作。
 
@@ -198,7 +198,7 @@ Business API是每種物件型別專屬的。 它們會影響：
 
 必須從Adobe Campaign使用者端主控台建立傳遞範本。 它包含所有傳遞的通用引數（寄件者地址或訊息有效期間）。
 
-輸入XML檔案是符合「nms：delivery」結構描述的傳遞範本片段。 它會包含所有無法在傳遞範本中靜態定義的其他資料（例如要定位的收件者清單）。
+輸入XML檔案是符合「nms:delivery」結構描述的傳遞範本片段。 它會包含所有無法在傳遞範本中靜態定義的其他資料（例如要定位的收件者清單）。
 
 此呼叫不會傳回任何資料，錯誤除外。
 

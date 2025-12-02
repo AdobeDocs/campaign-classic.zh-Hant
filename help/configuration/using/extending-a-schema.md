@@ -2,13 +2,13 @@
 product: campaign
 title: 擴充綱要
 description: 瞭解如何擴充方案
-role: Data Engineer, Developer
+role: Developer
 feature: Schema Extension
 exl-id: 6e3e666d-6ab3-4346-93ca-fb0155a4660d
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '327'
-ht-degree: 4%
+source-wordcount: '302'
+ht-degree: 5%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 4%
 >
 >有些內建方案不可擴充：主要是針對已定義下列設定的方案：\
 >**dataSource=&quot;file&quot;**&#x200B;和&#x200B;**mappingType=&quot;xmlFile&quot;**。\
->下列結構描述不可延伸： **xtk：entityBackupNew**、**xtk：entityBackupOriginal**、**xtk：entityOriginal**、**xtk：form**、**xtk：srcSchema**、**ncm：publishing**、**nl：monitoring**、**nms：calendar**、**nms：remoteTracking**、**ms：userAgentRules**，**xtk：builder**，**xtk：connections**，**xtk：dbInit**，**xtk：funcList**，**xtk：fusion**，**xtk： jst**，**xtk：navtree**，**xtk：queryDef**，{3 6}xtk：resourceMenu **，** xtk：schema **，** xtk：scriptContext **，** xtk：session **，** xtk：sqlSchema **，** xtk：strings **。**
+>下列結構描述不可延伸： **xtk:entityBackupNew**、**xtk:entityBackupOriginal**、**xtk:entityOriginal**、**xtk:form**、**xtk:srcSchema**、**ncm:publishing**、**nl:monitoring**、**nms:calendar**、**nms:remoteTracking**、**nms:userAgentRules**、**xtk:builder**、**xtk:connections**， **xtk:dbInit**，**xtk:funcList**，**xtk:fusion**，**xtk： jst**，**xtk:navtree**，**xtk:queryDef**，**xtk:resourceMenu**，**xtk:schema**，**xtk:scriptContext**，**xtk:session**，**xtk:sqlSchema**， **xtk:strings**。
 >此清單並非詳盡無遺。
 
 擴充現有方案的方法有兩種：
@@ -34,7 +34,7 @@ ht-degree: 4%
    >
    >您不得修改應用程式的內建方案，而只能修改方案擴充機制。 否則，修改後的結構描述將不會在應用程式未來升級時更新。 這可能會導致Adobe Campaign的使用發生問題。
 
-   **範例**： **nms：recipient**&#x200B;結構描述的延伸。
+   **範例**： **nms:recipient**&#x200B;結構描述的延伸。
 
    ```
    <srcSchema extendedSchema="nms:recipient" name="recipient" namespace="cus">
@@ -44,7 +44,7 @@ ht-degree: 4%
    </srcSchema>
    ```
 
-   **nms：recipient**&#x200B;擴充結構描述已填入擴充結構描述中的欄位：
+   **nms:recipient**&#x200B;擴充結構描述已填入擴充結構描述中填入的欄位：
 
    ```
    <schema dependingSchemas="cus:recipient" name="recipient" namespace="nms">

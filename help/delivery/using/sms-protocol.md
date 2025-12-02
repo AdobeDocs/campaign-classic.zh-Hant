@@ -3,9 +3,9 @@ product: campaign
 title: 簡訊連接器通訊協定及設定
 description: 進一步瞭解簡訊聯結器及設定方式
 feature: SMS
-role: Developer, Data Engineer
+role: Developer
 exl-id: fded088a-11a2-4b87-a368-7b197334aca4
-source-git-commit: 41296a0acaee93d31874bf58287e51085c6c1261
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '8457'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 >透過此檔案，所有參考通訊協定、欄位名稱和值詳細資訊的參考均參考[SMPP 3.4規格](https://smpp.org/SMPP_v3_4_Issue1_2.pdf)。
 >
 
-## 概覽 {#overview}
+## 概觀 {#overview}
 
 SMS可能僅限於傳送無格式的短文字訊息，但其簡易性使其成為有價值的通訊頻道。
 
@@ -101,7 +101,7 @@ SMPP傳輸單位（「封包」）稱為PDU。 **PDU**&#x200B;包含命令、狀
 
 ![](assets/do-not-localize/sms_protocol_1.png)
 
-在Adobe Campaign Classic中，若要將SR與其對應的MT連結，SMSC會傳回包含`SUBMIT_SM_RESP`和`DELIVER_SM`步驟的ID。 識別碼儲存在`nms::providerMsgId`資料表的`providerId`欄位中，並連結至`broadLogId`和`deliveryId`。 此比對操作由SMS程式在寫入資料庫時完成。
+在Adobe Campaign Classic中，若要將SR與其對應的MT連結，SMSC會傳回包含`SUBMIT_SM_RESP`和`DELIVER_SM`步驟的ID。 識別碼儲存在`providerId`資料表的`nms::providerMsgId`欄位中，並連結至`broadLogId`和`deliveryId`。 此比對操作由SMS程式在寫入資料庫時完成。
 
 成功的`SUBMIT_SM_RESP PDU`會在傳送記錄中觸發「已傳送」訊息狀態，而成功的`DELIVER_SM (SR) PDU`則會觸發「已接收」訊息狀態。
 
@@ -245,13 +245,13 @@ SR和MO插入資料庫後，Adobe Campaign Classic會加以確認。 即使已�
 
 * **message_payload**：在單一`SUBMIT_SM PDU`中傳送整個長訊息的方式。 提供者必須加以分割，這表示Adobe Campaign無法得知已傳送的確切數量。 某些提供者需要此模式，但建議您僅在他們不支援UDH時才使用它。
 
-如需有關通訊協定和格式的詳細資訊，請參閱[SUBMIT_SM PDU](sms-protocol.md#information-pdu)的`esm_class`、`short_message`和`message_payload`欄位描述。
+如需有關通訊協定和格式的詳細資訊，請參閱`esm_class`SUBMIT_SM PDU`short_message`的`message_payload`、[和](sms-protocol.md#information-pdu)欄位描述。
 
 ### 輸送量上限與視窗 {#throughput-capping}
 
 大多數提供者需要每個SMPP連線的輸送量限制。 這可透過在外部帳戶中設定多個SMS來達成。 請注意，每個連線都會發生輸送量節流，總有效輸送量是每個連線的限制乘以連線總數。 這在[同時連線](sms-protocol.md#connection-settings)區段中詳細說明。
 
-若要達到最大可能的輸送量，您需要微調最大傳送時段。 傳送視窗是不需要等候`SUBMIT_SM_RESP`即可傳送的`SUBMIT_SM PDU`數目。 如需詳細資訊，請參閱[傳送視窗設定](sms-protocol.md#throughput-timeouts)區段。
+若要達到最大可能的輸送量，您需要微調最大傳送時段。 傳送視窗是不需要等候`SUBMIT_SM PDU`即可傳送的`SUBMIT_SM_RESP`數目。 如需詳細資訊，請參閱[傳送視窗設定](sms-protocol.md#throughput-timeouts)區段。
 
 ### 服務請求與錯誤管理（「附錄B」） {#sr-error-management}
 
@@ -384,7 +384,7 @@ SMPP通訊協定的每個實作都有許多變數。 為了改善相容性和適
 
 >[!NOTE]
 >
->傳遞能力團隊的參與是以合約為基礎，客戶應聯絡其Adobe代表以取得與傳遞能力參與相關的資訊。
+>傳遞能力團隊的參與是以合約為基礎，客戶應聯絡其Adobe代表，瞭解與傳遞能力參與相關的資訊。
 
 #### 伺服器 {#server}
 
@@ -446,7 +446,7 @@ Adobe Campaign Classic的接收器與傳送器連線數量可能有所不同：
 
 這些設定適用於處於傳送器+接收器模式的接收器。 它們的運作方式與傳送器部分類似，請參閱上方以取得詳細資訊。
 
-### SMPP頻道設定 {#smpp-channel-settings}
+### SMPP 管道設定 {#smpp-channel-settings}
 
 #### 允許字母音譯 {#allow-character-transliteration}
 
@@ -494,17 +494,17 @@ Adobe Campaign Classic的KPI機制完全不同，因此此選項無法使用。
 
 TON （號碼型別）和NPI （編號計畫指示器）在[SMPP 3.4規格](https://smpp.org/SMPP_v3_4_Issue1_2.pdf) （第117頁）的第5.2.5節中說明。 這些值應該設定為提供者的需求。
 
-在`SUBMIT_SM PDU`的`source_addr_ton`、`source_addr_npi`、`dest_addr_ton`及`dest_addr_npi`欄位中依原樣傳輸。
+在`source_addr_ton`的`source_addr_npi`、`dest_addr_ton`、`dest_addr_npi`及`SUBMIT_SM PDU`欄位中依原樣傳輸。
 
 #### 服務類型 {#service-type}
 
-此欄位在`SUBMIT_SM PDU`的`service_type`欄位中依原樣傳輸。 將此設定為提供者的需求。
+此欄位在`service_type`的`SUBMIT_SM PDU`欄位中依原樣傳輸。 將此設定為提供者的需求。
 
 ### 輸送量和逾時 {#throughput-timeouts}
 
 這些設定控制SMPP頻道的所有計時方面。 有些提供者需要非常精確的訊息速率、視窗和重試計時控制。 這些設定應設定為符合提供者容量與其合約中所指示條件的值。
 
-#### 傳送窗口 {#sending-window}
+#### 傳送時段 {#sending-window}
 
 視窗是可傳送的`SUBMIT_SM PDU`數目，不需等候相符的`SUBMIT_SM_RESP`。
 
@@ -589,7 +589,7 @@ MTA將嘗試使用清單中的第一個編碼進行編碼。 如果失敗，則�
 
 #### 傳送完整的電話號碼 {#send-full-phone-number}
 
-如果未核取此核取方塊，則只會傳送電話號碼的數字給提供者（`SUBMIT_SM`欄位的`destination_addr`欄位）。 這是預設行為，因為國際數字指標（通常是+前置詞）會由SMPP中的TON和NPI欄位取代。
+如果未核取此核取方塊，則只會傳送電話號碼的數字給提供者（`destination_addr`欄位的`SUBMIT_SM`欄位）。 這是預設行為，因為國際數字指標（通常是+前置詞）會由SMPP中的TON和NPI欄位取代。
 
 核取核取方塊時，電話號碼會依原樣傳送，不會預先處理及可能的空格、+前置詞或井號/雜湊/星號。
 
@@ -661,11 +661,11 @@ SMPP通訊協定規格並未嚴格執行SR格式。 這只是規格的[附錄B](
 
 遇到具有未知統計/錯誤欄位組合的訊息時，這些規則運算式會套用至統計欄位，以判斷SR是成功還是錯誤。 統計值不符合任何這些規則運算式的SR會遭到忽略。
 
-依預設，以`DELIV` （例如[附錄B](sms-protocol.md#sr-error-management)中的`DELIVRD`）開頭的stat值會被視為已成功傳遞，而所有符合錯誤的stat值（例如`REJECTED`、`UNDELIV`）則會被視為錯誤。
+依預設，以`DELIV` （例如`DELIVRD`附錄B[中的](sms-protocol.md#sr-error-management)）開頭的stat值會被視為已成功傳遞，而所有符合錯誤的stat值（例如`REJECTED`、`UNDELIV`）則會被視為錯誤。
 
 #### MT確認中的ID格式 {#id-format-mt}
 
-這表示`SUBMIT_SM_RESP PDU`的`message_id`欄位中傳回的ID格式。
+這表示`message_id`的`SUBMIT_SM_RESP PDU`欄位中傳回的ID格式。
 
 * **請勿修改**：識別碼會依原樣儲存在資料庫中，以ASCII編碼文字儲存。 不會進行前置處理或篩選。
 
@@ -729,7 +729,7 @@ SMPP通訊協定規格並未嚴格執行SR格式。 這只是規格的[附錄B](
 
 **關鍵字**&#x200B;和&#x200B;**短代碼**&#x200B;欄定義條件以觸發自動回覆。 如果兩個欄位相符，會傳送MO並觸發其他動作。 若要指定萬用字元，應將此欄位留空。 關鍵字會與MO文字中的第一個英數字元單字相符，忽略標點符號和前置空格。 這表示&#x200B;**Keyword**&#x200B;欄位不能包含空格，而且必須是單一字詞。
 
-**關鍵字**&#x200B;設定是前置詞。 例如，如果您指定「AD」，則會比對「AD」、「ADAPT」和「ADOBE」。 如果您有多個具有相同首碼的關鍵字，請務必留意順序，因為關鍵字是從上到下處理。
+**關鍵字**&#x200B;設定是前置詞。 例如，若您指定「AD」，則會比對「AD」、「ADAPT」和「ADOBE」。 如果您有多個具有相同首碼的關鍵字，請務必留意順序，因為關鍵字是從上到下處理。
 
 **回覆**&#x200B;資料行是要回覆的文字。 此欄位中沒有可用的個人化。 如果您將此欄位留空，將不會回覆任何訊息，但反正也會觸發其他動作。
 
@@ -747,7 +747,7 @@ SMPP通訊協定規格並未嚴格執行SR格式。 這只是規格的[附錄B](
 
 ### 來自欄位 {#from-field}
 
-此欄位為選用。 它允許覆寫寄件者地址(oADC)。 此欄位的內容置於`SUBMIT_SM PDU`的`source_addr`欄位中。
+此欄位為選用。 它允許覆寫寄件者地址(oADC)。 此欄位的內容置於`source_addr`的`SUBMIT_SM PDU`欄位中。
 
 根據SMPP規格，欄位限製為21個字元，但某些提供者可能允許較長的值。 另請注意，某些國家/地區可能會套用非常嚴格的限制，例如長度、內容、允許的字元。
 
@@ -765,7 +765,7 @@ SMS通訊協定將SMS限製為255個部分，但有些行動電話無法拼合�
 
 此欄位會指出您要傳輸的SMS型別：一般或快閃訊息，儲存在行動裝置或SIM卡上。
 
-此設定會在`SUBMIT_SM PDU`的`dest_addr_subunit`選用欄位中傳輸。
+此設定會在`dest_addr_subunit`的`SUBMIT_SM PDU`選用欄位中傳輸。
 
 * **未指定**&#x200B;未在PDU中傳送任何選用欄位。
 
@@ -779,7 +779,7 @@ SMS通訊協定將SMS限製為255個部分，但有些行動電話無法拼合�
 
 #### 有效期限 {#validity-period}
 
-有效期間在`SUBMIT_SM PDU`的`validity_period`欄位中傳輸。 日期始終格式化為絕對UTC時間格式，日期欄位將以「00+」結尾。
+有效期間在`validity_period`的`SUBMIT_SM PDU`欄位中傳輸。 日期始終格式化為絕對UTC時間格式，日期欄位將以「00+」結尾。
 
 ## 延伸的通用SMPP聯結器 {#acc-extended-connector}
 
@@ -830,7 +830,7 @@ SMS程式每分鐘會檢查一次完整行，然後非同步處理它們：
 ### 在檢查期間啟用詳細的SMPP追蹤 {#enable-verbose}
 
 檢查期間應一律啟用詳細的SMPP追蹤。
-即使您無法自行檢查記錄檔，[Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)也可以更輕鬆協助您。
+即使您無法自行檢查記錄檔，[Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)也可以更輕鬆為您提供幫助。
 
 ### 測試您的簡訊 {#test}
 
@@ -840,7 +840,7 @@ SMS程式每分鐘會檢查一次完整行，然後非同步處理它們：
 * **檢查SR是否已正確處理**
 SMS應在傳送記錄檔中標示為已接收。 傳送記錄應該會成功，並且如下所示：
   `SR yourProvider stat=DELIVRD err=000|#MESSAGE`
-檢查您是否已變更傳遞提供者名稱。 在生產環境中，傳遞記錄不應包含&#x200B;**SR Generic**。
+檢查您是否已變更傳遞提供者名稱。 在生產環境中，傳遞記錄不應包含**SR Generic**。
 
 * **檢查MO是否已處理**
 如果您需要處理MO （自動回覆、將MO儲存在資料庫等），請嘗試進行一些測試。 為所有自動回覆關鍵字傳送一些簡訊，並檢查回覆是否足夠快，不超過幾秒。

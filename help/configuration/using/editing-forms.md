@@ -3,10 +3,10 @@ product: campaign
 title: 編輯表單
 description: 編輯表單
 feature: Configuration
-role: Data Engineer, Developer
+role: Developer
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '1707'
 ht-degree: 2%
@@ -16,7 +16,7 @@ ht-degree: 2%
 
 # 編輯表單{#editing-forms}
 
-## 概覽
+## 概觀
 
 行銷人員和操作員使用輸入表單來建立、修改和預覽記錄。 Forms會顯示資訊的視覺化表示法。
 
@@ -35,7 +35,7 @@ Forms是`xtk:form`型別的實體。 您可以在`xtk:form`結構描述中檢視
 
 ![](assets/d_ncs_integration_form_edit.png)
 
-[閱讀全文](form-structure.md#formatting)。
+[閱讀更多](form-structure.md#formatting)。
 
 若要預覽表單，請按一下&#x200B;**[!UICONTROL Preview]**&#x200B;標籤：
 
@@ -59,7 +59,7 @@ Forms是`xtk:form`型別的實體。 您可以在`xtk:form`結構描述中檢視
 
 * 助理
 
-  此表單包含多個以特定順序排序的浮動熒幕。 使用者從一個畫面瀏覽至下一個畫面。 [閱讀全文](form-structure.md#wizards)。
+  此表單包含多個以特定順序排序的浮動熒幕。 使用者從一個畫面瀏覽至下一個畫面。 [閱讀更多](form-structure.md#wizards)。
 
 * 圖示方塊
 
@@ -89,7 +89,7 @@ Forms是`xtk:form`型別的實體。 您可以在`xtk:form`結構描述中檢視
 * 定義輸入欄位的存取權
 * 在其他表單中巢狀內嵌表單
 
-[閱讀全文](form-structure.md#containers)。
+[閱讀更多](form-structure.md#containers)。
 
 ### 組織內容
 
@@ -98,7 +98,7 @@ Forms是`xtk:form`型別的實體。 您可以在`xtk:form`結構描述中檢視
 * 您可以將欄位分組為區段。
 * 您可以將頁面新增至多頁表單。
 
-若要插入容器，請使用`<container>`元素。 [閱讀全文](form-structure.md#containers)。
+若要插入容器，請使用`<container>`元素。 [閱讀更多](form-structure.md#containers)。
 
 #### 群組欄位
 
@@ -145,17 +145,17 @@ Forms是`xtk:form`型別的實體。 您可以在`xtk:form`結構描述中檢視
 
 ### 巢狀內嵌表單
 
-使用容器在其他表單中巢狀內嵌表單。 [閱讀全文](#add-pages-to-multipage-forms)。
+使用容器在其他表單中巢狀內嵌表單。 [閱讀更多](#add-pages-to-multipage-forms)。
 
 ## 影像參考
 
 若要尋找影像，請從功能表中選擇&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Images]**。
 
-若要將影像與表單中的元素（例如圖示）相關聯，您可以新增影像的參照。 例如，在`<container>`元素中使用`img`屬性。
+若要將影像與表單中的元素（例如圖示）相關聯，您可以新增影像的參照。 例如，在`img`元素中使用`<container>`屬性。
 
 語法： `img="`*`namespace`*`:`*`filename`*`.`*`extension`*`"`
 
-此範例顯示從`ncm`名稱空間參考`book.png`和`detail.png`影像：
+此範例顯示從`book.png`名稱空間參考`detail.png`和`ncm`影像：
 
 ```xml
 <container img="ncm:book.png" label="General">
@@ -207,11 +207,11 @@ Forms是`xtk:form`型別的實體。 您可以在`xtk:form`結構描述中檢視
 
      如果您設計的是多頁表單，則可以省略`<form>`元素中的表單型別，並在容器中指定型別。
 
-1. 按一下&#x200B;**[!UICONTROL Save]**。
+1. 按一下 **[!UICONTROL Save]**。
 
 1. 插入表單元素。
 
-   例如，若要插入輸入欄位，請使用`<input>`元素。 將`xpath`屬性設定為欄位參考為XPath運算式。 [閱讀全文](schema-structure.md#referencing-with-xpath)。
+   例如，若要插入輸入欄位，請使用`<input>`元素。 將`xpath`屬性設定為欄位參考為XPath運算式。 [閱讀更多](schema-structure.md#referencing-with-xpath)。
 
    此範例顯示以`nms:recipient`結構描述為基礎的輸入欄位。
 
@@ -254,7 +254,7 @@ Forms是`xtk:form`型別的實體。 您可以在`xtk:form`結構描述中檢視
    | `<container>` | `type="visibleGroup" visibleIf="`*edit-expr*`"` | 有條件地顯示一組欄位 |
    | `<container>` | `type="enabledGroup" enabledIf="`*edit-expr*`"` | 有條件地啟用一組欄位 |
 
-   例如：
+   範例：
 
    ```xml
    <container type="enabledGroup" enabledIf="@gender=1">
@@ -292,7 +292,7 @@ Forms是`xtk:form`型別的實體。 您可以在`xtk:form`結構描述中檢視
 
 若要將現有表單的型別變更為`iconbox`，請遵循下列步驟：
 
-1. 將`<form>`專案的`type`屬性變更為`iconbox`：
+1. 將`type`專案的`<form>`屬性變更為`iconbox`：
 
    ```xml
    <form […] type="iconbox">
@@ -320,7 +320,7 @@ Forms是`xtk:form`型別的實體。 您可以在`xtk:form`結構描述中檢視
       </form>
       ```
 
-   或者，從現有`<container>`元素移除`type="frame"`屬性。
+   或者，從現有`type="frame"`元素移除`<container>`屬性。
 
 ### 建立Notebook表單
 
@@ -330,7 +330,7 @@ Forms是`xtk:form`型別的實體。 您可以在`xtk:form`結構描述中檢視
 
 若要將現有表單的型別變更為`notebook`，請遵循下列步驟：
 
-1. 將`<form>`專案的`type`屬性變更為`notebook`：
+1. 將`type`專案的`<form>`屬性變更為`notebook`：
 
    ```xml
    <form […] type="notebook">
@@ -358,7 +358,7 @@ Forms是`xtk:form`型別的實體。 您可以在`xtk:form`結構描述中檢視
      </form>
    ```
 
-   或者，從現有`<container>`元素移除`type="frame"`屬性。
+   或者，從現有`type="frame"`元素移除`<container>`屬性。
 
 ### 巢狀內嵌表單
 
@@ -451,7 +451,7 @@ Forms是`xtk:form`型別的實體。 您可以在`xtk:form`結構描述中檢視
    1. 從功能表中選擇&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Input forms]**。
    1. 選取輸入表單並加以修改。
 
-   您可以擴充工廠資料結構，但無法擴充工廠輸入表單。 建議您直接修改工廠輸入表單，而不重新建立它們。 在軟體升級期間，您在工廠輸入表單中的修改會與升級合併。 如果自動合併失敗，您可以解決衝突。 [閱讀全文](../../production/using/upgrading.md#resolving-conflicts)。
+   您可以擴充工廠資料結構，但無法擴充工廠輸入表單。 建議您直接修改工廠輸入表單，而不重新建立它們。 在軟體升級期間，您在工廠輸入表單中的修改會與升級合併。 如果自動合併失敗，您可以解決衝突。 [閱讀更多](../../production/using/upgrading.md#resolving-conflicts)。
 
    例如，如果您使用其他欄位擴充工廠綱要，則可將此欄位新增到相關的Factory表單。
 
@@ -461,9 +461,9 @@ Forms是`xtk:form`型別的實體。 您可以在`xtk:form`結構描述中檢視
 
 ### 授予欄位唯讀存取權
 
-若要授與欄位的唯讀存取權，請使用`readOnly="true"`屬性。 例如，您可能想要顯示記錄的主索引鍵，但具有唯讀存取權。 [閱讀全文](form-structure.md#non-editable-fields)。
+若要授與欄位的唯讀存取權，請使用`readOnly="true"`屬性。 例如，您可能想要顯示記錄的主索引鍵，但具有唯讀存取權。 [閱讀更多](form-structure.md#non-editable-fields)。
 
-在此範例中，`nms:recipient`結構描述的主索引鍵(`iRecipientId`)以唯讀存取方式顯示：
+在此範例中，`iRecipientId`結構描述的主索引鍵(`nms:recipient`)以唯讀存取方式顯示：
 
 ```xml
 <value xpath="@iRecipientId" readOnly="true"/>
@@ -491,11 +491,11 @@ Forms是`xtk:form`型別的實體。 您可以在`xtk:form`結構描述中檢視
 
 ### 驗證值
 
-您可以使用JavaScript SOAP呼叫，從主控台驗證表單資料。 使用這些呼叫進行複雜驗證，例如，根據授權值清單檢查值。 [閱讀全文](form-structure.md#soap-methods)。
+您可以使用JavaScript SOAP呼叫，從主控台驗證表單資料。 使用這些呼叫進行複雜驗證，例如，根據授權值清單檢查值。 [閱讀更多](form-structure.md#soap-methods)。
 
 1. 在JS檔案中建立驗證函式。
 
-   例如：
+   範例：
 
    ```js
    function nms_recipient_checkValue(value)
@@ -509,7 +509,7 @@ Forms是`xtk:form`型別的實體。 您可以在`xtk:form`結構描述中檢視
    }
    ```
 
-   在此範例中，函式名為`checkValue`。 此函式用於檢查`nms`名稱空間中的`recipient`資料型別。 正在檢查的值會記錄下來。 如果值無效，則會記錄錯誤訊息。 如果值有效，則會傳回值1。
+   在此範例中，函式名為`checkValue`。 此函式用於檢查`recipient`名稱空間中的`nms`資料型別。 正在檢查的值會記錄下來。 如果值無效，則會記錄錯誤訊息。 如果值有效，則會傳回值1。
 
    您可以使用傳回的值來修改表單。
 

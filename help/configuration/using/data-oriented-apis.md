@@ -3,11 +3,11 @@ product: campaign
 title: 資料導向 API
 description: 資料導向 API
 feature: API
-role: Data Engineer, Developer
+role: Developer
 exl-id: a392c55e-541a-40b1-a910-4a6dc79abd2d
-source-git-commit: 517b85f5d7691acc2522bf4541f07c34c60c7fbf
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '1813'
+source-wordcount: '1796'
 ht-degree: 0%
 
 ---
@@ -44,9 +44,9 @@ XML檔案儲存在資料庫的MEMO型別欄位中。
 
 這可讓您隔離基礎SQL。 查詢語言不取決於基礎引擎：某些函式將會重新對應，可能會產生數個SELECT SQL順序。
 
-如需詳細資訊，請參閱結構描述&#39;xtk：queryDef&#39;[&#128279;](../../configuration/using/web-service-calls.md#example-on-the--executequery--method-of-schema--xtk-querydef-)的&#39;ExecuteQuery&#39;方法的範例。
+如需詳細資訊，請參閱結構描述&#39;xtk[&#39;:queryDef的&#39;ExecuteQuery&#39;方法上的](../../configuration/using/web-service-calls.md#example-on-the--executequery--method-of-schema--xtk-querydef-)範例。
 
-**ExecuteQuery**&#x200B;方法出現在[ExecuteQuery (xtk：queryDef)](#executequery--xtk-querydef-)中。
+**ExecuteQuery**&#x200B;方法出現在[ExecuteQuery (xtk:queryDef)](#executequery--xtk-querydef-)中。
 
 ### 寫入 {#write}
 
@@ -56,13 +56,13 @@ XML檔案儲存在資料庫的MEMO型別欄位中。
 
 XML結構提供資料的邏輯檢視，可讓您略過SQL表格的實體結構。
 
-Write方法以[Write / WriteCollection (xtk：session)](#write---writecollection--xtk-session-)顯示。
+Write方法以[Write / WriteCollection (xtk:session)](#write---writecollection--xtk-session-)顯示。
 
-## ExecuteQuery (xtk：queryDef) {#executequery--xtk-querydef-}
+## ExecuteQuery (xtk:queryDef) {#executequery--xtk-querydef-}
 
 此方法可讓您從與結構描述相關聯的資料執行查詢。 它需要驗證字串（必須登入）和說明要作為引數提交的查詢的XML檔案。 return引數是XML檔案，包含查詢的結果，其格式為查詢所參照的結構描述格式。
 
-「xtk：queryDef」結構描述中「ExecuteQuery」方法的定義：
+「xtk:queryDef」結構描述中「ExecuteQuery」方法的定義：
 
 ```xml
 <method name="ExecuteQuery" const="true">
@@ -74,11 +74,11 @@ Write方法以[Write / WriteCollection (xtk：session)](#write---writecollection
 
 >[!NOTE]
 >
->這是「const」方法。 輸入引數會以「xtk：queryDef」結構描述的格式包含在XML檔案中。
+>這是「const」方法。 輸入引數包含在XML檔案中，格式為「xtk:queryDef」結構描述。
 
 ### 輸入查詢的XML檔案格式 {#format-of-the-xml-document-of-the-input-query}
 
-查詢的XML檔案結構在「xtk：queryDef」架構中進行了說明。 本檔案說明SQL查詢的子句：「select」、「where」、「order by」、「group by」、「having」。
+在「xtk:queryDef」結構描述中說明查詢的XML檔案結構。 本檔案說明SQL查詢的子句：「select」、「where」、「order by」、「group by」、「having」。
 
 ```xml
 <queryDef schema="schema_key" operation="operation_type">
@@ -110,7 +110,7 @@ Write方法以[Write / WriteCollection (xtk：session)](#write---writecollection
 </queryDef>
 ```
 
-可以在`<condition> `元素中定義子查詢( `<subquery>` )。 的語法   `<subquery> `   元素是根據    `<querydef>`。
+可以在`<subquery>`元素中定義子查詢( `<condition> ` )。 的語法   `<subquery> `   元素是根據    `<querydef>`。
 
 `<subquery>  : </subquery>`的範例
 
@@ -141,7 +141,7 @@ Write方法以[Write / WriteCollection (xtk：session)](#write---writecollection
 
 #### 具有&#39;get&#39;操作的範例 {#example-with-the--get--operation}
 
-使用電子郵件上的篩選條件擷取收件者（「nms：recipient」綱要）的姓氏和名字。
+擷取具有電子郵件篩選器的收件者（「nms:recipient」結構描述）的姓氏和名字。
 
 ```xml
 <queryDef schema="nms:recipient" operation="get">
@@ -306,7 +306,7 @@ Write方法以[Write / WriteCollection (xtk：session)](#write---writecollection
   </where>
   ```
 
-  若要從「nms：recipient」綱要擷取資料夾的欄位：
+  若要從「nms:recipient」結構描述擷取資料夾的欄位：
 
   ```xml
   <select>
@@ -391,7 +391,7 @@ Write方法以[Write / WriteCollection (xtk：session)](#write---writecollection
 
 return引數是XML檔案，採用與查詢相關聯的結構描述格式。
 
-從「nms：recipient」綱要對「get」作業傳回的範例：
+從「nms:recipient」結構描述對「get」作業傳回的範例：
 
 ```
 <recipient email="john.doe@adobe.com" lastName"Doe" firstName="John"/>
@@ -484,7 +484,7 @@ return引數是XML檔案，採用與查詢相關聯的結構描述格式。
   </SOAP-ENV:Envelope>
   ```
 
-## 寫入/寫入集合(xtk：session) {#write---writecollection--xtk-session-}
+## 寫入/寫入集合(xtk:session) {#write---writecollection--xtk-session-}
 
 這些服務用於插入、更新或刪除實體（「寫入」方法）或實體集合（「WriteCollection」方法）。
 
@@ -494,7 +494,7 @@ return引數是XML檔案，採用與查詢相關聯的結構描述格式。
 
 呼叫不會傳回任何資料，錯誤除外。
 
-「xtk：session」結構描述中「Write」和「WriteCollection」方法的定義：
+「xtk:session」結構描述中「Write」和「WriteCollection」方法的定義：
 
 ```xml
 <method name="Write" static="true">
@@ -513,7 +513,7 @@ return引數是XML檔案，採用與查詢相關聯的結構描述格式。
 >
 >這是「靜態」方法。 輸入引數會以要更新的結構描述格式包含在XML檔案中。
 
-### 概覽 {#overview}
+### 概觀 {#overview}
 
 資料協調會根據在關聯結構描述中輸入的索引鍵定義來運作。 寫入程式會根據輸入檔案中輸入的資料，尋找第一個符合條件的索引鍵。 會根據實體在資料庫中的存在性來插入或更新實體。
 
@@ -575,7 +575,7 @@ return引數是XML檔案，採用與查詢相關聯的結構描述格式。
 
 可以在連結的元素上輸入「_key」和「_operation」屬性。 此元素的行為與輸入結構描述的主要元素相同。
 
-主要實體(&quot;nms：recipient&quot;)的索引鍵定義包含連結表格（元素`<folder>`結構描述&quot;xtk：folder&quot;）和電子郵件的欄位。
+主要實體(&quot;nms:recipient&quot;)的索引鍵定義包含連結資料表（元素`<folder>`結構描述&quot;xtk:folder&quot;）和電子郵件的欄位。
 
 >[!NOTE]
 >
@@ -583,7 +583,7 @@ return引數是XML檔案，採用與查詢相關聯的結構描述格式。
 
 #### 範例2 {#example-2}
 
-從收件者更新公司（在「cus：company」綱要中連結的表格）：
+正在從收件者更新公司（在&quot;cus:company&quot;結構描述中連結的資料表）：
 
 ```xml
 <recipient _key="[folder/@name], @email" email="john.doe@adobe.net" lastName="Doe" firstName="John" xtkschema="nms:recipient">
@@ -593,7 +593,7 @@ return引數是XML檔案，採用與查詢相關聯的結構描述格式。
 
 #### 範例3 {#example-3}
 
-使用群組關係表(「nms：rcpGrpRel」)將收件者新增至群組：
+正在將收件者新增至具有群組關係表(&quot;nms:rcpGrpRel&quot;)的群組：
 
 ```xml
 <recipient _key="@email" email="martin.ledger@adobe.net" xtkschema="nms:recipient">
@@ -605,7 +605,7 @@ return引數是XML檔案，採用與查詢相關聯的結構描述格式。
 
 >[!NOTE]
 >
->`<rcpgroup>`元素中未輸入索引鍵的定義，因為「nms：group」結構描述中已定義以群組名稱為基礎的隱含索引鍵。
+>`<rcpgroup>`元素中未輸入索引鍵的定義，因為「nms:group」結構描述中已定義以群組名稱為基礎的隱含索引鍵。
 
 ### XML集合元素 {#xml-collection-elements}
 

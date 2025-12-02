@@ -3,9 +3,9 @@ product: campaign
 title: 建立網頁追蹤標籤
 description: 瞭解如何建立網路追蹤標籤
 feature: Application Settings
-role: Data Engineer, Developer
+role: Developer
 exl-id: 160df6e1-43e5-4eb9-ad2f-5db444e314ea
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '258'
 ht-degree: 0%
@@ -25,12 +25,12 @@ ht-degree: 0%
 
 ![](assets/d_ncs_integration_webtracking_screen.png)
 
-若要產生要插入頁面中的HTML代碼：
+若要產生要插入頁面中的HTML程式碼：
 
 * 輸入標籤的標籤：標籤會顯示在追蹤記錄中，
 * 指定來源URL：此欄位僅供參考，可讓您指定追蹤的頁面（選擇性）。
 * 如有需要，請輸入有效期間，
-* 按一下&#x200B;**[!UICONTROL Generate]** HTML代碼。
+* 按一下&#x200B;**[!UICONTROL Generate]** HTML程式碼。
 
 然後複製產生的程式碼並將其貼到要追蹤的頁面中。
 

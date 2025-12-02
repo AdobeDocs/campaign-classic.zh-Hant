@@ -3,10 +3,10 @@ product: campaign
 title: 關於連接器
 description: 關於連接器
 feature: Overview
-role: User, Data Architect
+role: User, Developer
 level: Beginner
 exl-id: 05080d7f-f2d6-4ffe-b112-05b26a3a8a1d
-source-git-commit: efd09fd71069878a5096bfa3592e6ebbaa9dd4e4
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '199'
 ht-degree: 9%
@@ -26,7 +26,7 @@ Adobe Campaign提供數個聯結器，可讓您與外部應用程式通訊、連
 您也可以將Campaign與多個其他系統整合，例如：
 
 * Adobe Experience Cloud解決方案：Adobe Experience Manager、Adobe Target、Adobe Audience Manager、Experience Cloud觸發器等。 [了解更多](../../integrations/using/about-campaign-integrations.md)
-* 使用單一登入(SSO)AdobeIdentity Management系統(IMS)，以保護對您的Campaign執行個體的存取，並與其他Adobe Campaign解決方案使用相同的Adobe ID連線至Adobe Experience Cloud。 [了解更多](../../integrations/using/about-adobe-id.md)。
+* 適用於單一登入(SSO)的Adobe Identity Management系統(IMS)，可保護對您的Campaign執行個體的存取，並使用與其他Adobe Campaign解決方案相同的Adobe ID連線至Adobe Experience Cloud。 [了解更多](../../integrations/using/about-adobe-id.md)。
 * LDAP目錄，以統一存取管理。 [了解更多](../../installation/using/connecting-through-ldap.md)。
 
 >[!NOTE]

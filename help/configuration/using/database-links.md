@@ -3,12 +3,12 @@ product: campaign
 title: 資料庫對應
 description: 資料庫對應
 feature: Configuration, Instance Settings
-role: Data Engineer, Developer
+role: Developer
 exl-id: e05dcd81-bbca-4767-8da3-ea064f7f6c8e
-source-git-commit: 517b85f5d7691acc2522bf4541f07c34c60c7fbf
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '933'
-ht-degree: 1%
+source-wordcount: '924'
+ht-degree: 2%
 
 ---
 
@@ -80,7 +80,7 @@ ht-degree: 1%
 
 ## 範例：反向連結 {#example-1}
 
-在以下範例中，我們會宣告與「cus：company」結構描述表格的1-N關係：
+在下列範例中，我們會宣告與&quot;cus:company&quot;結構描述資料表的1-N關係：
 
 ```sql
 <srcSchema name="recipient" namespace="cus">
@@ -112,7 +112,7 @@ ht-degree: 1%
 
 外部索引鍵會自動新增至與目的地表格中相關欄位使用相同特性的元素中，並遵循下列命名慣例：目標結構描述名稱后面接著相關欄位名稱（範例中為「company-id」）。
 
-目標(「cus：company」)的延伸結構描述：
+目標(&quot;cus:company&quot;)的延伸結構描述：
 
 ```sql
 <schema mappingType="sql" name="company" namespace="cus" xtkschema="xtk:schema">  
@@ -133,17 +133,17 @@ ht-degree: 1%
 </schema>
 ```
 
-已新增指向「cus：recipient」表格的反向連結，其中包含下列引數：
+已新增指向「cus:recipient」表格的反向連結，其中包含下列引數：
 
 * **name**：從來源結構描述的名稱自動推斷（可在來源結構描述的連結定義中使用「revLink」屬性強制推斷）
 * **revLink**：反向連結的名稱
-* **target**：連結結構描述的索引鍵（&quot;cus：recipient&quot;結構描述）
+* **目標**：連結結構描述的索引鍵（&quot;cus:recipient&quot;結構描述）
 * **未繫結**：連結宣告為1-N基數的集合專案（預設值）
 * **完整性**：預設為「定義」（可在來源結構描述上的連結定義中使用「revIntegrity」屬性強制執行）。
 
 ## 範例：簡單連結 {#example-2}
 
-在此範例中，我們會宣告指向「nms：address」架構表格的連結。 此聯結是外部聯結，並明確填入收件者的電子郵件地址和連結表格(「nms：address」)的「@address」欄位。
+在此範例中，我們會宣告指向「nms:address」結構描述表格的連結。 此聯結是外部聯結，並明確填入收件者的電子郵件地址和連結資料表(&quot;nms:address&quot;)的&quot;@address&quot;欄位。
 
 ```sql
 <srcSchema name="recipient" namespace="cus">
@@ -158,7 +158,7 @@ ht-degree: 1%
 
 ## 範例：不重複基數 {#example-3}
 
-在此範例中，我們會建立與「cus：extension」綱要表格的1-1關係：
+在此範例中，我們會建立與&quot;cus:extension&quot;結構描述表格的1-1關係：
 
 ```sql
 <element integrity="own" label="Extension" name="extension" revCardinality="single" revLink="recipient" target="cus:extension" type="link"/>
@@ -166,7 +166,7 @@ ht-degree: 1%
 
 ## 範例：資料夾的連結 {#example-4}
 
-在此範例中，我們會宣告資料夾（「xtk：folder」架構）的連結：
+在此範例中，我們會宣告資料夾（「xtk:folder」結構描述）的連結：
 
 ```sql
 <element default="DefaultFolder('nmsFolder')" label="Folder" name="folder" revDesc="Recipients in the folder" revIntegrity="own" revLabel="Recipients" target="xtk:folder" type="link"/>
@@ -176,7 +176,7 @@ ht-degree: 1%
 
 ## 範例：在連結上建立索引鍵 {#example-5}
 
-在此範例中，我們在具有&#x200B;**xlink**&#x200B;屬性的連結（「company」到「cus：company」結構描述）上建立索引鍵，以及(「email」)表格的欄位：
+在此範例中，我們在具有:companyxlink **屬性的連結（「company」至「cus**」結構描述）上建立索引鍵，以及(「email」)表格的欄位：
 
 ```sql
 <srcSchema name="recipient" namespace="cus">
@@ -230,4 +230,4 @@ ht-degree: 1%
 * [方案結構](schema-structure.md)
 * [資料庫對應](database-mapping.md)
 * [金鑰管理](database-keys.md)
-* [Campaign資料模型](about-data-model.md)
+* [Campaign 資料模型](about-data-model.md)

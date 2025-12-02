@@ -3,11 +3,11 @@ product: campaign
 title: 設定階段
 description: 設定階段
 feature: Configuration
-role: Data Engineer, Developer
+role: Developer
 exl-id: a5ae0b61-3377-46d9-a327-6c897eeda770
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '234'
+source-wordcount: '233'
 ht-degree: 2%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 2%
 套用下列步驟以設定這些標籤：
 
 1. 識別您要追蹤的頁面，並決定其型別（網頁或交易）。
-1. 決定您要收集哪些其他資訊，並使用此資訊的說明來擴充&#x200B;**nms：webTrackingLog**&#x200B;結構描述。 依預設，此結構描述可以儲存每筆交易的交易金額和專案數。
+1. 決定您要收集哪些其他資訊，並使用此資訊的說明來擴充&#x200B;**nms:webTrackingLog**&#x200B;結構描述。 依預設，此結構描述可以儲存每筆交易的交易金額和專案數。
 1. 建立網頁追蹤標籤。 有兩種方法可以達成此目的：
 
    * 將與這些頁面相對應的URL插入您的Adobe Campaign平台，然後產生並擷取關聯的網頁追蹤標籤（從使用者端主控台的&#x200B;**[!UICONTROL Campaign execution>Resources>Web tracking tags]**&#x200B;節點）。
