@@ -1,33 +1,38 @@
 ---
 product: campaign
 title: 版本編號升級常見問答集
-description: 與Campaign版本編號升級相關的常見問題
+description: 與Campaign Classic v7版本編號升級相關的常見問題
 feature: Upgrade, Troubleshooting
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
-source-git-commit: f39dc6077a7ddc3fb9b53d4082c08e65e7683f10
+source-git-commit: 295e3596d9291cbcc55e2d264309141526c3806b
 workflow-type: tm+mt
-source-wordcount: '2026'
+source-wordcount: '2066'
 ht-degree: 0%
 
 ---
 
 # 建置升級常見問答集 {#build-upgrade-faq}
 
+此常見問題集可解決有關Campaign Classic v7版本編號升級的問題，尤其是針對內部部署和混合部署的問題。
+
+>[!NOTE]
+>
+>如需關於工作流程、傳送、對象等常見Campaign問題的完整解答，請參閱[Campaign v8完整常見問題集](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html){target="_blank"}。
 
 Adobe Campaign 會定期更新。如果您熟悉我們發佈的[發行說明](../../rn/using/rn-overview.md)，您可能會知道每年平均會發行2/3個包含新功能、改進和修正的次要版本。 此外，我們定期發行只累積修正的組建版本。 此定期更新的目的是為了讓您掌握最新、最佳的資訊，讓您的環境完全安全，並明顯改善您使用我們產品的體驗。
 
-我們的客戶執行最新版Adobe Campaign是很重要的事。 此外，它還可讓您更有效率地Adobe以防止您遇到問題 — 識別、重製和修正舊組建上的問題通常需要更多時間，更不用說您可能遇到的某些問題已在最近的組建中得到了修正。
+我們的客戶執行最新版Adobe Campaign是很重要的事。 它也能讓Adobe更有效率地協助您避免發生問題 — 識別、重製和修正舊組建上的問題通常需要更多時間，更不用說您可能遇到的某些問題已在最近的組建中得到了修正。
 
 作為託管使用者，您無需採取任何操作便可透過最新穩定版本，自動受益於Campaign的年度升級。 內部部署和混合客戶也可以從此版本受益。 如果您從舊的版本編號移轉出，我們建議您先升級至此版本。 [了解更多](../../rn/using/rn-overview.md)。
 
 ## 什麼是組建版本升級？
 
-當將Adobe Campaign Classic軟體更新至最新的安全組建編號時，組建版本會升級，但會維持相同的主要/次要組建層級。 例如：將v7版本編號9026Campaign Classic至Campaign v7版本編號9032。
+當將Adobe Campaign Classic軟體更新至最新的安全組建編號時，組建版本會升級，但會維持相同的主要/次要組建層級。 例如： Campaign Classic v7版本編號9026至Campaign v7版本編號9032。
 
-在本節[&#128279;](../../rn/using/rn-overview.md)瞭解更多。
+在本節[瞭解更多](../../rn/using/rn-overview.md)。
 
 ## 最新版的Adobe Campaign Classic是什麼？
 
@@ -37,13 +42,13 @@ Adobe Campaign 會定期更新。如果您熟悉我們發佈的[發行說明](..
 
 從Adobe Campaign使用者端主控台的&#x200B;**[!UICONTROL Help > About...]**&#x200B;功能表檢查您的版本。 **[!UICONTROL About]**&#x200B;方塊包含您為主控台和伺服器執行的版本和組建的詳細資訊。
 
-在本節[&#128279;](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)瞭解更多。
+在本節[瞭解更多](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)。
 
 ## 組建狀態代表什麼？
 
-從Campaign Classic19.2開始，狀態會與每個組建相關聯。
+從Campaign Classic 19.2版開始，狀態會與每個版本編號相關聯。
 
-在本節[&#128279;](../../rn/using/rn-overview.md)瞭解更多。
+在本節[瞭解更多](../../rn/using/rn-overview.md)。
 
 ## 組建版本升級與版本升級是否相同？
 
@@ -90,7 +95,7 @@ Adobe會在任何變更前進行系統備份。 不過，如果您的非生產�
 
 組建版本升級程式需要下列資源：
 
-* Adobe架構師 — 對於託管或雲端通訊/混合式架構，架構師必須與客戶服務協調。
+* Adobe Architect — 針對託管或雲端通訊/混合式架構，架構師必須與客戶服務協調。
 * 專案經理 — 託管：託管團隊將與客戶服務團隊和客戶合作，協調所有執行個體的升級時間表。
 * Adobe Campaign管理員 — 託管：託管團隊會執行升級。
 * Adobe Campaign operator\marketing user — 操作員會在開發、測試和生產執行個體上執行測試。
@@ -131,15 +136,15 @@ Adobe會在任何變更前進行系統備份。 不過，如果您的非生產�
 
 ## 工作流程是否會繼續執行並傳送傳送？
 
-沒有。在建置升級期間，工作流程和郵件服務都會停止。 這表示不會執行工作流程，也不會傳送傳遞。 一旦系統重新啟動，它們就會繼續。 不過，Adobe強烈建議您在升級後檢查所有關鍵路徑工作流程，以確保其正常運作。
+沒有。在建置升級期間，工作流程和郵件服務都會停止。 這表示不會執行工作流程，也不會傳送傳遞。 一旦系統重新啟動，它們就會繼續。 不過，Adobe強烈建議您在升級後檢查所有重要路徑工作流程，以確保其正常運作。
 
 ## 在升級期間，我的追蹤連結是否仍然有效？
 
-從Campaign Classicv7.3.5開始，在升級期間追蹤已傳送的電子郵件連結仍然有效。
+從Campaign Classic v7.3.5開始，在升級期間追蹤已傳送的電子郵件連結仍然有效。
 
 ## 在建置升級過程中我是否需要隨時待命？
 
-是。 客戶應在生產執行個體升級期間或之後立即為Adobe提供聯絡點。  Adobe將透過電子郵件聯絡此人，除非另有安排。 這將確保順利轉換並立即驗證關鍵任務。 當建置升級完成後，Adobe將會聯絡客戶以進行確認。
+是。 客戶應在生產執行個體升級期間或之後，立即向Adobe提供可用的聯絡點。  除非另有安排，否則Adobe會透過電子郵件聯絡此人。 這將確保順利轉換並立即驗證關鍵任務。 當建置升級完成後，Adobe將會聯絡客戶以進行確認。
 
 ## 我是否需要更新使用者端主控台？
 
@@ -161,11 +166,11 @@ Adobe會在任何變更前進行系統備份。 不過，如果您的非生產�
 
 開發和預備環境會依序升級或一起升級，但在升級生產執行個體之前必須先登出。 這可讓每位客戶在簽署對生產環境所做的任何變更之前，先進行徹底的測試。
 
-檢視清單[&#128279;](#check-list)下的組建升級檢查清單。 客戶應該執行類似的測試，以及環境可能需要的其他測試。
+檢視清單[ ](#check-list)下的組建升級檢查清單。 客戶應該執行類似的測試，以及環境可能需要的其他測試。
 
 ## 我須多久執行一次組建版本升級？
 
-為確保系統的最佳效能、可用性及安全性，Adobe將與客戶合作，確保系統每年至少升級一次。
+為確保系統提供最佳效能、可用性及安全性，Adobe將與客戶合作，確保系統每年至少升級一次。
 
 ## 進行組建版本升級時會關機嗎？
 
@@ -175,7 +180,7 @@ Adobe會在任何變更前進行系統備份。 不過，如果您的非生產�
 
 如果您在組建版本升級後遇到問題，請聯絡[Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。 客戶服務會安排建置日期並開啟建置升級相關票證。
 
-深入瞭解Campaign Classic[&#128279;](../../support.md)的說明與支援選項
+深入瞭解Campaign Classic的[說明與支援選項](../../support.md)
 
 ## 建置升級檢查清單 {#check-list}
 

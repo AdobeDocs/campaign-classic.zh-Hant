@@ -8,10 +8,10 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: fe69efda-a052-4f67-9c13-665f011d0a2b
-source-git-commit: 6803b6628313db9108a191fd143dac68ee799149
+source-git-commit: 8b38d825aa9b0595226a444e0e463362468d51b3
 workflow-type: tm+mt
 source-wordcount: '738'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 2%
 * 檢查具有最大膨脹量的表格。 如果經常使用這些表格，則需要為這些表格吸塵。
 * 封鎖資料庫可能導致電子郵件停止傳送。
 
-Adobe Campaign也提供[工具](../../production/using/monitoring-processes.md#manual-monitoring)來檢查CPU和RAM使用量。 使用此工具並檢視特定指示器，例如： **記憶體**、**交換記憶體**、**磁碟**、**作用中的處理序**。 如果值太高，您可以嘗試減少工作流程的數量或排程工作流程以在不同時間開始。
+Adobe Campaign也提供[工具](../../production/using/monitoring-processes.md#manual-monitoring)來檢查CPU和RAM使用狀況。 使用此工具並檢視特定指示器，例如： **記憶體**、**交換記憶體**、**磁碟**、**作用中的處理序**。 如果值太高，您可以嘗試減少工作流程的數量或排程工作流程以在不同時間開始。
 
 ## 資料庫檢查 {#database-performances}
 
@@ -55,23 +55,23 @@ Adobe Campaign也提供[工具](../../production/using/monitoring-processes.md#m
 
   >[!NOTE]
   >
-  >傳遞能力團隊的參與是以合約為基礎，客戶應聯絡其Adobe代表以取得與傳遞能力參與相關的資訊。
+  >傳遞能力團隊的參與是以合約為基礎，客戶應聯絡其Adobe代表，瞭解與傳遞能力參與相關的資訊。
 
-* DKIM：為了確保DKIM的安全性等級，1024b是建議的最佳實務加密大小。 大多數存取提供者不會將下層DKIM金鑰視為有效。 請參見[此頁面](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=zh-Hant#authentication)。
+* DKIM：為了確保DKIM的安全性等級，建議的最佳實務加密大小為1024b。 大部分存取提供者不會將下層DKIM金鑰視為有效。 請參見[此頁面](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication)。
 
 ## 傳遞能力問題 {#deliverability-issues}
 
 以下是有關傳遞能力的最佳實務和文章清單：
 
-* IP信譽：如果IP信譽不夠好，將會對效能造成影響。 **傳遞能力監視**&#x200B;模組提供多種工具來追蹤平台的傳遞能力效能。 請參閱此[頁面](../../delivery/using/monitoring-deliverability.md)。
+* IP信譽：如果IP信譽不夠好，將會對效能造成影響。 **傳遞能力監視**&#x200B;模組提供多種工具來追蹤平台的傳遞能力效能。 請參見此[頁面](../../delivery/using/about-delivery-monitoring.md#deliverability-monitoring)。
 * IP熱身： IP熱身是由傳遞團隊執行。 這涉及在幾週內透過新IP逐漸增加電子郵件數量。
 
   >[!NOTE]
   >
-  >傳遞能力團隊的參與是以合約為基礎，客戶應聯絡其Adobe代表以取得與傳遞能力參與相關的資訊。
+  >傳遞能力團隊的參與是以合約為基礎，客戶應聯絡其Adobe代表，瞭解與傳遞能力參與相關的資訊。
 
-* IP相關性設定：不正確的IP相關性設定可能會完全停止電子郵件（設定中的運運算元/相關性名稱不正確）或減少輸送量（相關性中的少量IP）。 請參閱此[頁面](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)。
-* 電子郵件大小：電子郵件大小在輸送量中起著重要作用。 建議的最大電子郵件大小為60 KB。 請參閱此[頁面](https://helpx.adobe.com/tw/legal/product-descriptions/campaign.html)。 在[傳遞輸送量](../../reporting/using/global-reports.md#delivery-throughput)報告中，檢查依小時傳輸的位元組數。
+* IP相關性設定：不正確的IP相關性設定可能會完全停止電子郵件（設定中的運運算元/相關性名稱不正確）或減少輸送量（相關性中的少量IP）。 請參見此[頁面](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)。
+* 電子郵件大小：電子郵件大小在輸送量中起著重要作用。 建議的最大電子郵件大小為60 KB。 請參閱此[頁面](https://helpx.adobe.com/legal/product-descriptions/campaign.html)。 在[傳遞輸送量](../../reporting/using/global-reports.md#delivery-throughput)報告中，檢查依小時傳輸的位元組數。
 * 大量無效收件者：當存在大量無效收件者時，可能會影響輸送量。 MTA不斷重試傳送電子郵件給無效的收件者。 請確定您的資料庫已妥善維護。
 * 個人化的數量：如果傳送持續在「Personalization進行中」，請檢查個人化區塊中使用的JavaScript 。
 

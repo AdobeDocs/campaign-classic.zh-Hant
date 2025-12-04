@@ -6,9 +6,9 @@ feature: Troubleshooting
 hidefromtoc: true
 hide: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: 85bafbac26b5f127499f35f373e96ecfd12b1db8
 workflow-type: tm+mt
-source-wordcount: '656'
+source-wordcount: '631'
 ht-degree: 67%
 
 ---
@@ -33,28 +33,22 @@ ht-degree: 67%
 
 ### 常見問題集
 
-如何升級至新建置版本？ 如何監視工作流程執行？ 什麼是資料庫清理工作流程？... [閱讀前10個問題](platform/using/common-questions.md)。
-
 <table>
     <tr><td><strong>主題常見問答</strong></td><td><strong>常見問題</strong></td><td><strong>最佳實務</strong></td><td><strong>操作說明</strong></td></tr>
     <tr>
     <td valign="top">
         <ul>
-        <li><a href="platform/using/faq-key-concepts.md">重要概念</a></li>
-        <li><a href="platform/using/faq-campaign-config.md">行銷活動設定</a></li>
-        <li><a href="platform/using/faq-reporting.md">報告</a></li>
+        <li><a href="platform/using/faq-campaign-classic-v7.md">Campaign Classic v7常見問題集</a></li>
         <li><a href="platform/using/faq-build-upgrade.md">版本編號升級</a></li>
-        <li><a href="platform/using/faq-messages.md">測試、傳送及追蹤訊息</a></li>
-        <li><a href="platform/using/faq-workflows.md">工作流程</a></li>
-        <li><a href="platform/using/faq-developers.md">開發人員</a></li>
-        <li><a href="delivery/using/monitoring-deliverability.md">達成能力</a></li>
+        <li><a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html" target="_blank">Campaign v8完整常見問題集</a></li>
+        <li><a href="delivery/using/about-delivery-monitoring.md">傳遞監視</a></li>
         </ul>
     </td>
     <td valign="top">
         <ul>
         <li><a href="production/using/performance-and-throughput-issues.md">效能和輸送量的相關問題</a></li>
         <li><a href="delivery/using/delivery-performances.md">傳遞效能</a></li>
-        <li><a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=zh-Hant" target="_blank">最佳化工作流程效能</a></li>
+        <li><a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html" target="_blank">最佳化工作流程效能</a></li>
         <li><a href="workflow/using/monitoring-workflow-execution.md">工作流程執行疑難排解</a></li>
         <li><a href="platform/using/sftp-server-usage.md">SFTP 伺服器使用情況</a></li>
         <li><a href="delivery/using/understanding-delivery-failures.md">瞭解傳遞失敗</a></li>
@@ -62,14 +56,14 @@ ht-degree: 67%
     </td>
    <td valign="top">
         <ul>
-        <li><a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=zh-Hant" target="_blank">工作流程最佳實務</a></li>
+        <li><a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html" target="_blank">工作流程最佳實務</a></li>
         <li><a href="workflow/using/monitoring-technical-workflows.md">技術工作流程監視</a></li>
         <li><a href="delivery/using/about-message-tracking.md">認識追蹤管理</a></li>
         <li><a href="production/using/monitoring-guidelines.md">探索監控工具</a></li>
         <li><a href="platform/using/import-export-workflows.md">透過工作流程匯入資料</a></li>
         <li><a href="delivery/using/steps-sending-the-delivery.md">以多個波段傳送訊息</a></li>
         <li><a href="delivery/using/defining-the-email-content.md">設計電子郵件內容</a></li>
-        <li><a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=zh-Hant" target="_blank">關於傳遞的最佳實務</a></li>
+        <li><a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html" target="_blank">關於傳遞的最佳實務</a></li>
         </ul>
     </td>
     <td valign="top">
@@ -113,7 +107,7 @@ ht-degree: 67%
 
 ### SFTP 管理
 
-在「控制面板」中，您可以與所有連線至您可存取之 Campaign 執行個體的 SFTP 伺服器互動。 您可以監視其儲存容量、管理允許清單上的IP位址和公開SSH金鑰。 [按一下這裡](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html?lang=zh-Hant)以獲得更多資訊。
+在「控制面板」中，您可以與所有連線至您可存取之 Campaign 執行個體的 SFTP 伺服器互動。 您可以監視其儲存容量、管理允許清單上的IP位址和公開SSH金鑰。 [按一下這裡](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html)以獲得更多資訊。
 
 ### 子網域和憑證
 

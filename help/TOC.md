@@ -7,10 +7,10 @@ user-guide-title: Campaign Classic v7 指南
 user-guide-description: Adobe Campaign Classic v7 產品文件。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 3fc803ba8b7e367e199ba47ef05ba64d5f801506
+source-git-commit: 93f32cda33acc53fb0e497f619be35c1c76ff85e
 workflow-type: tm+mt
-source-wordcount: '2748'
-ht-degree: 100%
+source-wordcount: '2692'
+ht-degree: 99%
 
 ---
 
@@ -40,17 +40,8 @@ ht-degree: 100%
    + [Campaign 連接器](platform/using/about-connectors.md)
    + [建立 Campaign 中的查詢](platform/using/about-queries-in-campaign.md)
    + 常見問題集 {#faq}
-      + [最常見的問題](platform/using/common-questions.md)
-      + [全域概念](platform/using/faq-key-concepts.md)
+      + [Campaign Classic 常見問題集](platform/using/faq-campaign-classic-v7.md)
       + [版本編號升級](platform/using/faq-build-upgrade.md)
-      + [隱私權](platform/using/privacy-faq.md)
-      + [客群](platform/using/faq-audiences.md)
-      + [設計訊息](platform/using/faq-designing.md)
-      + [傳送訊息](platform/using/faq-messages.md)
-      + [工作流程](platform/using/faq-workflows.md)
-      + [設定](platform/using/faq-campaign-config.md)
-      + [報告](platform/using/faq-reporting.md)
-      + [開發](platform/using/faq-developers.md)
    + [字彙](platform/using/ac-glossary.md)
    + 隱私權 {#privacy}
       + [隱私權與同意](platform/using/privacy-and-recommendations.md)
@@ -120,7 +111,6 @@ ht-degree: 100%
       + [建置個人化內容 - 隱藏](delivery/using/design-and-personalize.md)
       + [定義正確客群 - 隱藏](delivery/using/define-the-right-audience.md)
       + [傳送前先檢查 - 隱藏](delivery/using/check-before-sending.md)
-      + [追蹤和監視 - 隱藏](delivery/using/track-and-monitor.md)
    + [傳送電子郵件](delivery/using/about-email-channel.md)
    + 傳送電子郵件 {#sending-emails}
       + [建立電子郵件傳遞 - 隱藏](delivery/using/creating-an-email-delivery.md)
@@ -197,28 +187,15 @@ ht-degree: 100%
       + [病毒式行銷及社交行銷](delivery/using/viral-and-social-marketing.md)
    + 監視傳遞 {#monitoring-deliveries}
       + [開始使用傳遞監視](delivery/using/about-delivery-monitoring.md)
-      + [存取傳遞清單](delivery/using/list-of-deliveries.md)
-      + [傳遞儀表板](delivery/using/delivery-dashboard.md)
+      + [在Campaign UI中監視您的傳遞](delivery/using/delivery-dashboard.md)
       + [傳遞效能最佳實務](delivery/using/delivery-performances.md)
       + [傳遞疑難排解](delivery/using/delivery-troubleshooting.md)
-      + [傳遞狀態](delivery/using/delivery-statuses.md)
       + [瞭解傳遞失敗](delivery/using/understanding-delivery-failures.md)
       + [認識隔離管理](delivery/using/understanding-quarantine-management.md)
-      + 追蹤訊息 {#tracking-messages}
-         + [關於訊息追蹤](delivery/using/about-message-tracking.md)
-         + [如何設定追蹤的連結](delivery/using/how-to-configure-tracked-links.md)
-      + 追蹤個人化連結 {#tracking-personalized-links}
-         + [開始使用個人化連結追蹤](delivery/using/tracking-personalized-links.md)
-         + [偵測追蹤 URL](delivery/using/detecting-tracking-urls.md)
-         + [追蹤的預處理指令](delivery/using/pre-processing-instructions.md)
-      + [設定 URL 追蹤選項](delivery/using/personalizing-url-tracking.md)
-      + [存取追蹤記錄](delivery/using/accessing-the-tracking-logs.md)
-      + [測試追蹤](delivery/using/testing-tracking.md)
-      + [追蹤疑難排解](delivery/using/tracking-troubleshooting.md)
+      + [訊息追蹤](delivery/using/about-message-tracking.md)
    + 傳遞性管理 {#deliverability-management}
       + [什麼是傳遞性](delivery/using/about-deliverability.md)
       + [控制訊息內容](delivery/using/control-message-content.md)
-      + [監視傳遞性](delivery/using/monitoring-deliverability.md)
       + [收件匣轉譯](delivery/using/inbox-rendering.md)
       + [SpamAssassin](delivery/using/spamassassin.md)
       + [疑難排解](delivery/using/deliverability-faq.md)

@@ -4,7 +4,7 @@ title: Campaign內部部署、混合及託管功能矩陣
 description: 瞭解託管部署和內部部署之間的主要差異
 feature: Installation, Architecture
 exl-id: a2c425a8-9bde-4259-9140-5ada5397ed5f
-source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
+source-git-commit: 8b38d825aa9b0595226a444e0e463362468d51b3
 workflow-type: tm+mt
 source-wordcount: '287'
 ht-degree: 26%
@@ -35,7 +35,7 @@ Adobe Campaign Classic 隨附了一套模組和選項。這些模組的可用性
 | 壓縮/解壓縮檔案 | 隨選 | 可用 | 可用 | [了解更多](../../platform/using/unzip-decrypt.md) |
 | 網域名稱委派 | 隨選 | 隨選 | 不適用 | [了解更多](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=zh-Hant) |
 | 安裝SpamAssassin | 隨選 | 可用 | 可用 | [了解更多](../../delivery/using/spamassassin.md) |
-| 存取傳遞能力報告 | 可用 | 隨選 | 可用 | [了解更多](../../delivery/using/monitoring-deliverability.md) |
+| 存取傳遞能力報告 | 可用 | 隨選 | 可用 | [了解更多](../../delivery/using/about-delivery-monitoring.md#deliverability-monitoring) |
 | 設定LDAP驗證 | 無法使用 | 可用 | 可用 | [了解更多](../../installation/using/connecting-through-ldap.md) |
 
 
