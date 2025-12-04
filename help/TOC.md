@@ -7,7 +7,7 @@ user-guide-title: Campaign Classic v7 指南
 user-guide-description: Adobe Campaign Classic v7 產品文件。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 2ebae2b84741bf26dd44c872702dbf3b0ebfc453
+source-git-commit: a0b8f6adef371bad5342524aaf4ce30f3933f2da
 workflow-type: tm+mt
 source-wordcount: '2685'
 ht-degree: 99%
@@ -31,8 +31,8 @@ ht-degree: 99%
    + [相容性對照表](rn/using/compatibility-matrix.md)
    + [文件更新 - 隱藏](rn/using/documentation-updates.md)
 + 開始使用 {#getting-started}
-   + [開始使用 Adobe Campaign Classic &#x200B;](platform/using/about-adobe-campaign-classic.md)
-   + [啟動 Adobe Campaign &#x200B;](platform/using/launching-adobe-campaign.md)
+   + [開始使用 Adobe Campaign Classic ](platform/using/about-adobe-campaign-classic.md)
+   + [啟動 Adobe Campaign ](platform/using/launching-adobe-campaign.md)
    + [瞭解 Campaign UI](platform/using/adobe-campaign-workspace.md)
    + [使用 Campaign 探索工具 - 隱藏](platform/using/adobe-campaign-explorer.md)
    + [瀏覽和自訂清單 - 隱藏](platform/using/adobe-campaign-ui-lists.md)
@@ -186,7 +186,8 @@ ht-degree: 99%
       + [管理訂閱](delivery/using/managing-subscriptions.md)
       + [病毒式行銷及社交行銷](delivery/using/viral-and-social-marketing.md)
    + 監視傳遞 {#monitoring-deliveries}
-      + [開始使用傳遞監視](delivery/using/about-delivery-monitoring.md)
+      + [監視傳遞效能](delivery/using/about-delivery-monitoring.md)
+      + [追蹤訊息](delivery/using/about-message-tracking.md)
       + [傳遞效能與疑難排解](delivery/using/delivery-performance-troubleshooting.md)
       + [傳送失敗和隔離管理](delivery/using/delivery-failures-quarantine.md)
       + [進階：自訂傳遞記錄](delivery/using/customize-delivery-logs.md)
