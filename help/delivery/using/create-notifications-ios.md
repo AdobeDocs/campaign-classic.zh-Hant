@@ -7,7 +7,7 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 4520504a-0d9f-4ea7-a5a8-0c07948af4f0
-source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
+source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
 workflow-type: tm+mt
 source-wordcount: '980'
 ht-degree: 8%
@@ -34,7 +34,7 @@ ht-degree: 8%
 
    >[!NOTE]
    >
-   >選取傳遞目標母體時的詳細程式，會顯示在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hant#target-population.){target="_blank"}的此章節中。
+   >選取傳遞目標母體時的詳細程式，會顯示在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#target-population.){target="_blank"}的此章節中。
    >
    >如需使用個人化欄位的詳細資訊，請參閱[本區段](about-personalization.md)。
    >
@@ -130,9 +130,9 @@ ht-degree: 8%
 
 傳送訊息後，您可以監視和追蹤您的傳遞。 如需詳細資訊，請參閱下列區段。
 
-* [推播通知隔離](understanding-quarantine-management.md#push-notification-quarantines)
+* [推播通知隔離](delivery-failures-quarantine.md#push-notification-quarantines)
 * [監視傳遞](about-delivery-monitoring.md)
-* [瞭解傳遞故障](understanding-delivery-failures.md)
+* [瞭解傳遞故障](delivery-failures-quarantine.md)
 
 ## 建立iOS豐富型通知 {#creating-ios-delivery}
 

@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: additional-configurations
 hidefromtoc: true
 exl-id: 47f50bf5-4d5b-4c07-af71-de4390177cf5
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
 workflow-type: tm+mt
-source-wordcount: '824'
+source-wordcount: '823'
 ht-degree: 1%
 
 ---
@@ -64,7 +64,7 @@ Adobe Campaign會透過錯誤型別和原因之間的比對來管理此程式：
 
 >[!NOTE]
 >
->若要進一步瞭解傳送失敗型別和原因，請參閱此[區段](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons)。
+>若要進一步瞭解傳送失敗型別和原因，請參閱此[區段](../../delivery/using/delivery-failures-quarantine.md#delivery-failure-types-and-reasons)。
 
 ## 傳遞能力執行個體 {#deliveratbility-env}
 
@@ -80,7 +80,7 @@ MX規則有6個不同的輸送量層級，主要是在提升過程中使用：
 
 ## 退回範例
 
-* **使用者不明** （硬退回）： 550 5.1.1 ...使用者未知{mx003}
+* **使用者不明** （硬退回）： 550 5.1.1 ...使用者未知 {mx003}
 * **信箱已滿** （軟退信）：超過550 5.2.2使用者配額
 * **非使用中信箱** （軟退信）： 550 5.7.1 ：收件者地址已拒絕：非使用中信箱，超過6個月未使用Pop
 * **網域無效** （軟退信）： &#39;ourdan.com&#39;的DNS查詢失敗
@@ -90,5 +90,5 @@ MX規則有6個不同的輸送量層級，主要是在提升過程中使用：
 **相關主題：**
 * [MX組態](../../installation/using/email-deliverability.md#mx-configuration)
 * [技術電子郵件設定](../../installation/using/email-deliverability.md)
-* [瞭解傳遞失敗](../../delivery/using/understanding-delivery-failures.md)
-* [Campaign Classic — 技術Recommendations](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=zh-Hant)
+* [瞭解傳遞失敗](../../delivery/using/delivery-failures-quarantine.md)
+* [Campaign Classic — 技術建議](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html)

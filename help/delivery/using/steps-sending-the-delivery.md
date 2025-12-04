@@ -7,7 +7,7 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
-source-git-commit: a85d94e8ff66e8468b4fe2f071df48437393bbce
+source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
 workflow-type: tm+mt
 source-wordcount: '1518'
 ht-degree: 11%
@@ -61,7 +61,7 @@ ht-degree: 11%
 傳送訊息後，您可以監視和追蹤您的傳遞。 如需詳細資訊，請參閱下列區段。
 
 * [監視傳遞](about-delivery-monitoring.md)
-* [瞭解傳遞失敗](understanding-delivery-failures.md)
+* [瞭解傳遞失敗](delivery-failures-quarantine.md)
 * [關於訊息追蹤](about-message-tracking.md)
 
 ## 排程傳遞傳送 {#scheduling-the-delivery-sending}
@@ -171,7 +171,7 @@ ht-degree: 11%
 
 ## 設定重試 {#configuring-retries}
 
-因為&#x200B;**Soft**&#x200B;或&#x200B;**Ignored**&#x200B;錯誤而暫時未傳遞的郵件可能會自動重試。 傳送失敗型別和原因顯示於此[區段](understanding-delivery-failures.md#delivery-failure-types-and-reasons)。
+因為&#x200B;**Soft**&#x200B;或&#x200B;**Ignored**&#x200B;錯誤而暫時未傳遞的郵件可能會自動重試。 傳送失敗型別和原因顯示於此[區段](delivery-failures-quarantine.md#delivery-failure-types-and-reasons)。
 
 >[!IMPORTANT]
 >

@@ -1,15 +1,15 @@
 ---
 product: campaign
-title: 在 ISP 中斷後更新跳出資格
+title: 在 ISP 中斷後更新跳出鑑定
 description: 瞭解如何在ISP中斷後更新跳出資格
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Deliverability
 hide: true
 hidefromtoc: true
 exl-id: 7a9afe0a-0219-40f1-9fe2-6374db8d555c
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '490'
 ht-degree: 3%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 3%
 >
 >您可以在[此頁面](https://www.apple.com/support/systemstatus/){_blank}上檢視Apple系統狀態儀表板。
 >
->您可以在[此頁面](https://www.google.com/appsstatus#hl=en&amp;v=status){_blank}上檢視Google Workspace狀態儀表板。
+>您可以在[此頁面](https://www.google.com/appsstatus#hl=en&v=status){_blank}上檢視Google Workspace狀態儀表板。
 >
 
 ## 影響{#update-bounce-impact}
@@ -55,8 +55,8 @@ ht-degree: 3%
 
    * **錯誤文字（隔離文字）**&#x200B;包含「Momen_Code10_InvalidRecipient」
    * **電子郵件網域(@domain)**&#x200B;等於domain1.com或&#x200B;**電子郵件網域(@domain)**&#x200B;等於domain2.com或&#x200B;**電子郵件網域(@domain)**&#x200B;等於domain3.com
-   * 在`MM/DD/YYYY HH:MM:SS AM`或之後的&#x200B;**更新狀態(@lastModified)**
-   * 在`MM/DD/YYYY HH:MM:SS PM`或之前的&#x200B;**更新狀態(@lastModified)**
+   * 在&#x200B;**或之後的**&#x200B;更新狀態(@lastModified)`MM/DD/YYYY HH:MM:SS AM`
+   * 在&#x200B;**或之前的**&#x200B;更新狀態(@lastModified)`MM/DD/YYYY HH:MM:SS PM`
 
 * 對於在隔離清單的&#x200B;**[!UICONTROL Error text]**&#x200B;欄位中有SMTP退回回應資訊的Campaign環境：
 
@@ -64,12 +64,12 @@ ht-degree: 3%
 
      其中「support.ISP.com」可以是：例如「support.apple.com」或「support.google.com」
 
-   * 在`MM/DD/YYYY HH:MM:SS AM`或之後的&#x200B;**更新狀態(@lastModified)**
-   * 在`MM/DD/YYYY HH:MM:SS PM`或之前的&#x200B;**更新狀態(@lastModified)**
+   * 在&#x200B;**或之後的**&#x200B;更新狀態(@lastModified)`MM/DD/YYYY HH:MM:SS AM`
+   * 在&#x200B;**或之前的**&#x200B;更新狀態(@lastModified)`MM/DD/YYYY HH:MM:SS PM`
 
 
 一旦您擁有受影響的收件者清單，您就可以將他們的狀態設定為&#x200B;**[!UICONTROL Valid]**，以便透過&#x200B;**[!UICONTROL Database cleanup]**&#x200B;工作流程將其從隔離清單中移除，或者只是從表格中刪除他們。
 
 **相關主題：**
-* [瞭解傳遞失敗](understanding-delivery-failures.md)
-* [退回郵件資格](understanding-delivery-failures.md#bounce-mail-qualification)
+* [瞭解傳遞失敗](delivery-failures-quarantine.md)
+* [退回郵件資格](delivery-failures-quarantine.md#bounce-mail-qualification)
