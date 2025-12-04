@@ -18,7 +18,7 @@ ht-degree: 17%
 
 建立傳送時的主要步驟如下：
 
-1. **建立並識別傳遞**。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#create-the-delivery){target="_blank"}以深入瞭解。
+1. **建立並識別傳遞**。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hant#create-the-delivery){target="_blank"}以深入瞭解。
 
 1. **定義傳遞內容**。 每個管道都有專屬的傳遞內容定義。 如需詳細資訊，請參閱專用區段。
 
@@ -35,4 +35,4 @@ ht-degree: 17%
 
 >[!NOTE]
 >
->本章所述的步驟假設所有目標收件者及其設定檔都儲存在資料庫中，外部傳遞除外（請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#selecting-external-recipients){target="_blank"}）。
+>本章所述的步驟假設所有目標收件者及其設定檔都儲存在資料庫中，外部傳遞除外（請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hant#selecting-external-recipients){target="_blank"}）。
