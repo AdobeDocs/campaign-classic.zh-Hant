@@ -5,10 +5,10 @@ description: 進一步瞭解Campaign Classic傳遞監視功能
 feature: Monitoring, Deliverability
 role: User
 exl-id: 9ce11da0-e37b-459e-8ec7-d2bddf59bdf7
-source-git-commit: eac670cd4e7371ca386cee5f1735dc201bf5410a
+source-git-commit: 2ebae2b84741bf26dd44c872702dbf3b0ebfc453
 workflow-type: tm+mt
-source-wordcount: '698'
-ht-degree: 2%
+source-wordcount: '812'
+ht-degree: 1%
 
 ---
 
@@ -89,24 +89,37 @@ ht-degree: 2%
 * [傳遞效能問題](delivery-performances.md)
 * [暫存檔案問題](../../production/using/temporary-files.md) — 僅限&#x200B;*內部部署客戶*
 
-## 一般監視主題
+## 監視您的傳遞
 
-**監視您的傳遞：**
+下列資源將協助您監視及追蹤Campaign Classic v7的傳遞效能：
 
-* [在Campaign UI中監視傳遞](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} （Campaign v8檔案）
-* [傳遞效能和最佳實務](delivery-performances.md)
-* [瞭解傳送失敗](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} （Campaign v8檔案 — v7和v8的全面指南）
+### 存取傳遞儀表板
 
-**v7專屬組態：**
+瞭解如何存取傳遞清單，並使用傳遞儀表板來監視您的傳送活動：
 
-* [退回郵件管理設定](understanding-delivery-failures.md) （v7混合式/內部部署）
-* [隔離管理](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} （Campaign v8檔案 — v7和v8的完整指南）
-* [隔離設定](understanding-quarantine-management.md) （v7混合/內部部署）
-
-**追蹤訊息：**
-
-* [開始使用訊息追蹤](about-message-tracking.md)
-
-## 相關主題
-
+* [在Campaign UI中監視傳遞](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} （Campaign v8檔案 — 適用於v7和v8）
 * [傳遞狀態](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-statuses){target="_blank"} （Campaign v8檔案）
+* [進階：自訂傳遞記錄](customize-delivery-logs.md) （僅限v7混合/內部部署 — 結構描述延伸）
+
+### 追蹤訊息互動
+
+追蹤開啟、點按次數，以及收件者與您傳送內容的互動：
+
+* [訊息追蹤檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracking){target="_blank"} （Campaign v8檔案 — 適用於v7和v8）
+* [設定追蹤的連結](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracked-links){target="_blank"} （Campaign v8檔案）
+* [存取追蹤記錄](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracking-logs){target="_blank"} （Campaign v8檔案）
+
+### 最佳化傳遞效能
+
+傳遞效能問題的最佳實務及疑難排解：
+
+* [傳遞最佳實務](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"} （Campaign v8檔案 — 適用於v7和v8）
+* [傳遞效能與疑難排解](delivery-performance-troubleshooting.md) （v7混合/內部部署特定設定）
+
+### 瞭解失敗和隔離
+
+管理傳送失敗、退回郵件和隔離地址：
+
+* [瞭解傳送失敗](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} （Campaign v8檔案 — v7和v8的全面指南）
+* [隔離管理](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} （Campaign v8檔案 — v7和v8的完整指南）
+* [傳送失敗和隔離設定](delivery-failures-quarantine.md) （v7混合/內部部署特定設定）

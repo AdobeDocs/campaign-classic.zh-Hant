@@ -7,9 +7,9 @@ user-guide-title: Campaign Classic v7 指南
 user-guide-description: Adobe Campaign Classic v7 產品文件。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 93f32cda33acc53fb0e497f619be35c1c76ff85e
+source-git-commit: 2ebae2b84741bf26dd44c872702dbf3b0ebfc453
 workflow-type: tm+mt
-source-wordcount: '2692'
+source-wordcount: '2685'
 ht-degree: 99%
 
 ---
@@ -31,8 +31,8 @@ ht-degree: 99%
    + [相容性對照表](rn/using/compatibility-matrix.md)
    + [文件更新 - 隱藏](rn/using/documentation-updates.md)
 + 開始使用 {#getting-started}
-   + [開始使用 Adobe Campaign Classic &#x200B;](platform/using/about-adobe-campaign-classic.md)
-   + [啟動 Adobe Campaign &#x200B;](platform/using/launching-adobe-campaign.md)
+   + [開始使用 Adobe Campaign Classic ](platform/using/about-adobe-campaign-classic.md)
+   + [啟動 Adobe Campaign ](platform/using/launching-adobe-campaign.md)
    + [瞭解 Campaign UI](platform/using/adobe-campaign-workspace.md)
    + [使用 Campaign 探索工具 - 隱藏](platform/using/adobe-campaign-explorer.md)
    + [瀏覽和自訂清單 - 隱藏](platform/using/adobe-campaign-ui-lists.md)
@@ -187,12 +187,9 @@ ht-degree: 99%
       + [病毒式行銷及社交行銷](delivery/using/viral-and-social-marketing.md)
    + 監視傳遞 {#monitoring-deliveries}
       + [開始使用傳遞監視](delivery/using/about-delivery-monitoring.md)
-      + [在Campaign UI中監視您的傳遞](delivery/using/delivery-dashboard.md)
-      + [傳遞效能最佳實務](delivery/using/delivery-performances.md)
-      + [傳遞疑難排解](delivery/using/delivery-troubleshooting.md)
-      + [瞭解傳遞失敗](delivery/using/understanding-delivery-failures.md)
-      + [認識隔離管理](delivery/using/understanding-quarantine-management.md)
-      + [訊息追蹤](delivery/using/about-message-tracking.md)
+      + [傳遞效能與疑難排解](delivery/using/delivery-performance-troubleshooting.md)
+      + [傳送失敗和隔離管理](delivery/using/delivery-failures-quarantine.md)
+      + [進階：自訂傳遞記錄](delivery/using/customize-delivery-logs.md)
    + 傳遞性管理 {#deliverability-management}
       + [什麼是傳遞性](delivery/using/about-deliverability.md)
       + [控制訊息內容](delivery/using/control-message-content.md)

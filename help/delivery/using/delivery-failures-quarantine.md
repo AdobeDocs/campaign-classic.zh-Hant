@@ -1,0 +1,217 @@
+---
+product: campaign
+title: 傳送失敗和隔離管理
+description: 瞭解如何在Campaign Classic v7中瞭解傳送失敗並管理隔離
+feature: Monitoring, Deliverability
+role: User
+exl-id: 86c7169a-2c71-4c43-8a1a-f39871b29856
+source-git-commit: 2ebae2b84741bf26dd44c872702dbf3b0ebfc453
+workflow-type: tm+mt
+source-wordcount: '1559'
+ht-degree: 1%
+
+---
+
+# 傳送失敗和隔離管理 {#delivery-failures-quarantine}
+
+>[!NOTE]
+>
+>Campaign v8檔案中會記錄傳送失敗和隔離管理的全面指引。 此內容適用於Campaign Classic v7和Campaign v8使用者：
+>
+>* [瞭解傳遞失敗](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} — 涵蓋失敗型別、錯誤原因、同步/非同步錯誤、重試管理和疑難排解
+>* [隔離管理](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} — 涵蓋隔離與封鎖清單、軟性錯誤臨界值、隔離報告，以及地址移除
+>
+>此頁面記錄了&#x200B;**Campaign Classic v7的特定設定**，用於混合部署和內部部署中的退信和隔離管理。
+
+## 瞭解傳遞故障
+
+如需常見的傳送失敗概念、錯誤型別和疑難排解指南，請參閱[Campaign v8瞭解傳送失敗檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}。
+
+## 退回郵件設定 {#bounce-mail-config}
+
+下列組態選項適用於&#x200B;**Campaign Classic v7混合/內部部署**，以管理退信處理。
+
+### 彈回信箱設定 {#bounce-mailbox-configuration}
+
+對於內部部署安裝，退回信箱的設定在[此區段](../../installation/using/deploying-an-instance.md#managing-bounced-emails)中有詳細說明。
+
+非同步錯誤訊息由Adobe Campaign平台透過退信箱收集，並由inMail程式限定，以擴充電子郵件管理規則的清單。
+
+>[!NOTE]
+>
+>對於Campaign v8受管理的Cloud Services使用者，彈回信箱設定是由Adobe執行和管理。 不需要設定。
+
+### 彈回郵件資格管理 {#bounce-mail-qualification-management}
+
+對於使用舊版Campaign MTA的內部部署安裝和託管/混合安裝，當電子郵件傳送失敗時，Adobe Campaign傳送伺服器會從傳訊伺服器或遠端DNS伺服器收到錯誤訊息。 錯誤清單是由遠端伺服器傳回之訊息中所包含的字串所組成。 系統會為每個錯誤訊息指定失敗型別和原因。
+
+此清單可透過&#x200B;**[!UICONTROL Administration > Campaign Management > Non deliverables Management > Delivery log qualification]**&#x200B;節點取得。 它包含Adobe Campaign用來限定傳送失敗的所有規則。 內容並非詳盡無遺，且會由Adobe Campaign定期更新，使用者也可自行管理。
+
+![](assets/tech_quarant_rules_qualif.png)
+
+此錯誤型別第一次出現時，遠端伺服器傳回的訊息會顯示在&#x200B;**[!UICONTROL First text]**&#x200B;資料表的&#x200B;**[!UICONTROL Delivery log qualification]**&#x200B;資料行中。 如果未顯示此欄，請按一下清單右下方的&#x200B;**[!UICONTROL Configure list]**&#x200B;按鈕以選取它。
+
+![](assets/tech_quarant_rules_qualif_text.png)
+
+Adobe Campaign篩選此郵件以刪除變數內容（例如ID、日期、電子郵件地址、電話號碼等），並在&#x200B;**[!UICONTROL Text]**&#x200B;欄中顯示篩選結果。 變數已取代為&#x200B;**`#xxx#`**，但取代為&#x200B;**`*`**&#x200B;的位址除外。
+
+此程式允許將相同型別的所有失敗集合在一起，並避免傳送記錄資格表格中出現多個類似錯誤的專案。
+
+>[!NOTE]
+>
+>**[!UICONTROL Number of occurrences]**&#x200B;欄位會顯示清單中訊息的出現次數。 僅限100,000次發生。 例如，如果您想要重設欄位，可以編輯該欄位。
+
+退回郵件可能具有下列資格狀態：
+
+* **[!UICONTROL To qualify]**：無法限定退回郵件。 資格必須指派給傳遞團隊，以確保有效的平台傳遞能力。 只要不符合，跳出郵件就不會用來擴充電子郵件管理規則的清單。
+* **[!UICONTROL Keep]**：退信已合格，將由&#x200B;**重新整理傳遞能力**&#x200B;工作流程使用，以與現有電子郵件管理規則比較，並擴充清單。
+* **[!UICONTROL Ignore]**： Campaign MTA會忽略退信郵件，這表示此退信絕對不會導致收件者的地址被隔離。 **重新整理傳遞能力**&#x200B;工作流程不會使用此專案，也不會傳送給使用者端執行個體。
+
+![](assets/deliverability_qualif_status.png)
+
+>[!NOTE]
+>
+>如果ISP發生中斷，透過Campaign傳送的電子郵件將會錯誤地標示為跳出。 若要修正此問題，您需要更新退回資格。 如需詳細資訊，請參閱[此頁面](update-bounce-qualification.md)。
+
+### 電子郵件管理規則設定 {#email-management-rules}
+
+透過&#x200B;**[!UICONTROL Administration > Campaign Management > Non deliverables Management > Mail rule sets]**&#x200B;節點存取郵件規則。 電子郵件管理規則會顯示在視窗的下方。
+
+![](assets/tech_quarant_rules.png)
+
+>[!NOTE]
+>
+>平台的預設引數是在部署精靈中設定的。 如需進一步資訊，請參閱[本節](../../installation/using/deploying-an-instance.md)。
+
+預設規則如下：
+
+>[!IMPORTANT]
+>
+>* 如果引數已變更，則必須重新啟動傳遞伺服器(MTA)。
+>* 管理規則的修改或建立僅供專家使用者使用。
+
+#### 傳入電子郵件 {#inbound-email}
+
+這些規則包含可由遠端伺服器傳回的字串，可讓您限定錯誤（**Hard**、**Soft**&#x200B;或&#x200B;**Ignored**）。
+
+電子郵件失敗時，遠端伺服器會傳回退回訊息至平台引數中指定的位址。 Adobe Campaign會比較每個退回訊息的內容與規則清單中的字串，然後為其指派三種錯誤型別之一。
+
+>[!NOTE]
+>
+>使用者可以建立自己的規則。 當匯入套件以及透過&#x200B;**重新整理傳遞能力**&#x200B;工作流程更新資料時，使用者建立的規則會被覆寫。
+
+有關退信限定的詳細資訊，請參閱[本節](#bounce-mail-qualification-management)。
+
+#### 網域管理 {#domain-management}
+
+對於內部部署安裝，MTA會將單一&#x200B;**網域管理**&#x200B;規則套用至所有網域。
+
+<!--![](assets/tech_quarant_domain_rules_02.png)-->
+
+* 您可以選擇是否啟用某些識別標準和加密金鑰來檢查網域名稱，例如&#x200B;**寄件者識別碼**、**網域金鑰**、**DKIM**&#x200B;和&#x200B;**S/MIME**。
+* **SMTP轉送**&#x200B;引數可讓您為特定網域設定轉送伺服器的IP位址和連線埠。 如需詳細資訊，請參閱[本章節](../../installation/using/configuring-campaign-server.md#smtp-relay)。
+
+如果您的郵件在寄件者地址中顯示&#x200B;**[!UICONTROL on behalf of]**，請確定不要使用&#x200B;**寄件者識別碼**&#x200B;簽署電子郵件，這是Microsoft過時的專有電子郵件驗證標準。 如果&#x200B;**[!UICONTROL Sender ID]**&#x200B;選項已啟用，請取消核取相對應的方塊並聯絡[Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。 您的傳遞能力不受影響。
+
+#### MX 管理 {#mx-management}
+
+對於內部部署安裝，MX管理規則是用來針對特定網域規範傳出電子郵件的流程。
+
+<!--![](assets/tech_quarant_domain_rules_01.png)-->
+
+這些規則可在部署精靈中使用，並可進行自訂：
+
+* **[!UICONTROL MX Management]**：此規則用來控制網域外寄電子郵件的流程。 它會適時取樣退回訊息和傳送區塊。
+
+* **[!UICONTROL Period]**：調整或封鎖訊息的時間範圍。
+
+* **[!UICONTROL Limit]**：每個時段允許的最大訊息數。
+
+* **[!UICONTROL Type]**：用來判斷傳送行為的錯誤型別（硬式、軟式或略過）。 如需錯誤型別定義，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}。
+
+有關MX管理的詳細資訊，請參閱[本節](../../installation/using/email-deliverability.md#about-mx-rules)。
+
+>[!NOTE]
+>
+>對於Campaign v8受管理的Cloud Services使用者，MX規則和電子郵件流程管理是由Adobe作為受管理基礎結構的一部分進行管理。 如果您需要針對特定使用案例調整MX設定，請聯絡Adobe客戶服務。
+
+## 隔離管理 {#quarantine-management}
+
+如需完整的隔離管理指南，請參閱[Campaign v8隔離管理檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"}。
+
+## 隔離設定 {#quarantine-config}
+
+下列組態選項可用於&#x200B;**Campaign Classic v7混合/內部部署**&#x200B;來自訂隔離行為。
+
+### 軟性錯誤臨界值設定 {#soft-error-threshold}
+
+對於使用舊版Campaign MTA的內部部署，您可以在隔離地址之前修改錯誤數量以及兩個錯誤之間的期間。
+
+若要配置這些設定：
+
+1. 從&#x200B;**[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Deployment wizard]**&#x200B;存取部署精靈
+2. 導覽至&#x200B;**[!UICONTROL Email channel]** > **[!UICONTROL Advanced parameters]**
+3. 設定：
+   * **錯誤數**：隔離位址前的軟錯誤數上限（預設值： 5）
+   * **兩個重大錯誤之間的期間**：錯誤計數的時間範圍（以秒為單位） （預設值： 86,400秒= 1天）
+
+當錯誤計數器達到臨界值時，就會隔離該地址。 如果上次重大錯誤發生在10天以前，則會重新初始化錯誤計數器。
+
+如需詳細資訊，請參閱[傳送傳遞](communication-channels.md) > **設定重試**&#x200B;下的&#x200B;**此頁面**。
+
+>[!NOTE]
+>
+>對於Campaign v8受管理的Cloud Services使用者，重試設定和錯誤臨界值由Adobe根據IP效能和網域信譽進行管理。 不需要設定。
+
+### 資料庫清除工作流程 {#database-cleanup-workflow}
+
+對於內部部署安裝，**[!UICONTROL Database cleanup]**&#x200B;技術工作流程會自動移除符合特定條件的隔離地址。
+
+從&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]** > **[!UICONTROL Database cleanup]**&#x200B;存取此工作流程。
+
+在下列情況下，工作流程會從隔離中移除地址：
+
+* 成功傳遞後處於&#x200B;**[!UICONTROL With errors]**&#x200B;狀態的地址
+* 如果上次軟退信發生於10天以前，則是&#x200B;**[!UICONTROL With errors]**&#x200B;狀態的地址
+* 30天後出現&#x200B;**[!UICONTROL With errors]**&#x200B;錯誤且處於&#x200B;**[!UICONTROL Mailbox full]**&#x200B;狀態的地址
+
+確保此工作流程定期執行（建議：每天）以維持隔離清單衛生。
+
+如需資料庫清理的詳細資訊，請參閱[本節](../../production/using/database-cleanup-workflow.md)。
+
+>[!NOTE]
+>
+>對於Campaign v8受管理的Cloud Services使用者，資料庫清理工作流程會由Adobe監控和管理。
+
+### 推播通知隔離細節 {#push-quarantine-specifics}
+
+對於Campaign Classic v7，推播通知隔離會遵循一般隔離機制，包含一些通道專屬行為。
+
+對於&#x200B;**iOS**&#x200B;和&#x200B;**Android**&#x200B;推播通知，隔離機制會使用裝置代號，而非電子郵件地址。 解除安裝或重新安裝行動應用程式時，會隔離關聯的Token。
+
+如需推播通知隔離情況(iOS和Android錯誤型別、重試行為等)的詳細資訊，請參閱[瞭解傳送失敗](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}檔案，其中包括完整的推播通知錯誤型別表格。
+
+### 簡訊隔離細節 {#sms-quarantine-specifics}
+
+對於Campaign Classic v7，SMS隔離遵循一般隔離機制，某些通道特定行為與電話號碼而不是電子郵件地址有關。
+
+SMS隔離機制會因使用的聯結器而異：
+
+* **標準SMPP聯結器**： **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Delivery log qualification]**&#x200B;中定義的錯誤資格規則適用於SMS傳遞。
+
+* **延伸通用SMPP聯結器**：錯誤管理使用規則運算式(regexes)以不同的方式處理，以剖析SMSC提供者傳回的狀態報告(SR)訊息。
+
+如需SMS隔離案例和錯誤型別的詳細資訊，請參閱[瞭解傳送失敗](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}檔案，其中包含完整的SMS錯誤型別表格。
+
+## 相關主題
+
+* [瞭解傳遞失敗](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} （Campaign v8檔案）
+* [隔離管理](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} （Campaign v8檔案）
+* [傳遞最佳實務](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"} （Campaign v8檔案）
+* [傳遞狀態](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-statuses){target="_blank"} （Campaign v8檔案）
+* [資料庫清理工作流程](../../production/using/database-cleanup-workflow.md) （v7混合/內部部署）
+* [設定傳遞重試](communication-channels.md) （v7混合/內部部署）
+* [更新退信資格](update-bounce-qualification.md) （v7混合/內部部署）
+* [電子郵件傳遞能力設定](../../installation/using/email-deliverability.md) （v7混合式/內部部署）
+* [正在部署執行個體](../../installation/using/deploying-an-instance.md#managing-bounced-emails) （v7混合/內部部署）
+
