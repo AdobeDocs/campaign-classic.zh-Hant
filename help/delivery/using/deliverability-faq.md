@@ -5,7 +5,7 @@ description: 瞭解在Adobe Campaign中管理傳遞能力時需檢查的關鍵�
 feature: Deliverability, Troubleshooting
 role: User
 exl-id: f94897c1-b44c-4100-ac50-a89b13fa6f2f
-source-git-commit: b353b562bd2f0b0bd2dfde22c6477ab66d499483
+source-git-commit: 0c639cc8b9636c190c868980ab5182a0eccb5f74
 workflow-type: tm+mt
 source-wordcount: '648'
 ht-degree: 1%
@@ -49,13 +49,13 @@ Adobe Campaign中針對每小時可傳送的電子郵件數量進行設定。 �
 
    * 狀態&#x200B;**[!UICONTROL Quarantined]**&#x200B;是軟退信或硬退信的結果。
 
-  如需詳細資訊，請參閱[本節](understanding-quarantine-management.md#quarantine-vs-denylist)。
+  如需詳細資訊，請參閱[本節](delivery-failures-quarantine.md#quarantine-vs-denylist)。
 
 * **不同的隔離錯誤原因代表什麼意思？**
 
   可能的原因有10個：未定義、使用者不明、網域無效、加入封鎖清單、已拒絕、已忽略錯誤、無法連線、帳戶已停用、信箱已滿、未連線。
 
-  如需詳細資訊，請參閱[瞭解隔離管理](understanding-quarantine-management.md)。
+  如需詳細資訊，請參閱[瞭解隔離管理](delivery-failures-quarantine.md)。
 
 ## 從封鎖清單移除 {#remove-from-denylist}
 
