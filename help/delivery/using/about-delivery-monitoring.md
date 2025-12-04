@@ -5,9 +5,9 @@ description: 進一步瞭解Campaign Classic傳遞監視功能
 feature: Monitoring, Deliverability
 role: User
 exl-id: 9ce11da0-e37b-459e-8ec7-d2bddf59bdf7
-source-git-commit: 2ebae2b84741bf26dd44c872702dbf3b0ebfc453
+source-git-commit: a85d94e8ff66e8468b4fe2f071df48437393bbce
 workflow-type: tm+mt
-source-wordcount: '812'
+source-wordcount: '814'
 ht-degree: 1%
 
 ---
@@ -75,10 +75,10 @@ ht-degree: 1%
 * 定期檢查整個平台的[傳遞輸送量](../../reporting/using/global-reports.md#delivery-throughput)，以確認其是否與原始設定一致。
 * 檢查傳遞範本中的[重試](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure)是否已正確設定（重試期間為30分鐘，重試次數超過20次）。
 * 定期確認[退信](understanding-delivery-failures.md#bounce-mail-management)信箱可存取，且帳戶不會過期。
-* 檢查可從[傳遞儀表板](delivery-dashboard.md)存取的每個傳遞輸送量，以確保其與傳遞內容的有效性一致（例如，「Flash銷售」應在幾分鐘內傳遞，而非幾天）。
+* 檢查可從[傳遞儀表板](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}存取的每個傳遞輸送量，以確保其與傳遞內容的有效性一致（例如，「Flash銷售」應在幾分鐘內傳遞，而非幾天）。
 * 使用波段時，請確認每個波段都有足夠的時間完成，才能觸發下一個波段。
 * 檢查錯誤數目和新的[隔離](understanding-quarantine-management.md)是否與其他傳遞一致。
-* 仔細查閱[傳遞記錄](delivery-dashboard.md#delivery-logs-and-history)以詳細檢查反白顯示的錯誤型別（封鎖清單、DNS問題、反垃圾郵件規則等）。
+* 仔細查閱[傳遞記錄](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"}以詳細檢查反白顯示的錯誤型別（封鎖清單、DNS問題、反垃圾郵件規則等）。
 
 ### 疑難排解 {#delivery-troubleshooting}
 

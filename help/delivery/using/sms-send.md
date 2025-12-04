@@ -5,9 +5,9 @@ description: 瞭解如何在Campaign傳送、監控和追蹤簡訊
 feature: SMS
 role: User
 exl-id: 442672ee-5037-49b7-a06f-3a99920ce2b6
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: a85d94e8ff66e8468b4fe2f071df48437393bbce
 workflow-type: tm+mt
-source-wordcount: '887'
+source-wordcount: '888'
 ht-degree: 1%
 
 ---
@@ -165,6 +165,6 @@ InSMS結構描述包含與傳入SMS相關的資訊。 這些欄位的說明可�
 
 >[!IMPORTANT]
 >
->這些型別的自動訊息不會保留歷史記錄。 因此，它們不會出現在傳送控制面板中。 [了解更多](delivery-dashboard.md)。
+>這些型別的自動訊息不會保留歷史記錄。 因此，它們不會出現在傳送控制面板中。 [了解更多](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}。
 >
->商業壓力規則不會考慮這些訊息。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/pressure-rules.html?lang=zh-Hant){target="_blank"}。
+>商業壓力規則不會考慮這些訊息。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/pressure-rules.html){target="_blank"}。
