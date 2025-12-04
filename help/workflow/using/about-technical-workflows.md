@@ -6,7 +6,7 @@ feature: Workflows
 hide: true
 hidefromtoc: true
 exl-id: 9aed2665-cd4b-419c-b9f2-ea04fc1d8f01
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 2186b8a30449cb023cb07305ba64d53f2c8adab1
 workflow-type: tm+mt
 source-wordcount: '1704'
 ht-degree: 1%
@@ -63,7 +63,7 @@ ht-degree: 1%
 | **MessageCenter完整彙總計算** (agg_messageCenter_full) | 異動訊息控制（訊息中心 — 控制） | 此工作流程會更新訊息中心Cube的「完整」彙總。 預設會每天凌晨3:00觸發。 此彙總會擷取下列維度：管道、日期、狀態和事件型別。 然後，訊息中心Cube可用於根據事件產生報表。 您可以在[本節](../../reporting/using/ac-cubes.md)中進一步瞭解立方體 |
 | **中間來源（傳遞計數器）** (defaultMidSourcingDlv) | 轉移至中間來源 | 此工作流程會收集中間來源伺服器上傳遞的計數資訊。 計數資訊包括一般傳遞指標，例如已傳送的傳遞數量等。 未包含開啟之類的追蹤資訊。 預設會每十分鐘觸發一次。 |
 | **中間來源（傳遞記錄）** (defaultMidSourcingLog) | 轉移至中間來源 | 此工作流程會收集中間來源伺服器上的傳遞記錄。 預設會每小時觸發一次。 |
-| **NMAC選擇退出管理** (mobileAppOptOutMgt) | 行動應用程式頻道 | 此工作流程會更新行動裝置上的取消訂閱通知。 從上午1:00到午夜，每6小時觸發一次。 如需詳細資訊，請參閱[本節](../../delivery/using/understanding-quarantine-management.md#push-notification-quarantines)。 |
+| **NMAC選擇退出管理** (mobileAppOptOutMgt) | 行動應用程式頻道 | 此工作流程會更新行動裝置上的取消訂閱通知。 從上午1:00到午夜，每6小時觸發一次。 如需詳細資訊，請參閱[本節](../../delivery/using/delivery-failures-quarantine.md#push-notification-quarantines)。 |
 | **優惠通知** (offerMgt) | 傳遞 | 此工作流程會將核准的優惠方案以及優惠方案目錄中包含的每個類別部署至線上環境。 |
 | **暫停的工作流程清理** (cleanupPausedWorkflows) | 傳遞 | 此工作流程會分析嚴重程度設定為正常的暫停工作流程，並在暫停太久時觸發警告和通知。 一個月後，暫停的技術工作流程會無條件停止。 預設會每週一早上5:00觸發。 如需詳細資訊，請參閱[處理暫停的工作流程](monitoring-workflow-execution.md#handling-of-paused-workflows)。 |
 | **隱私權要求清除** (cleanupPrivacyRequests) | 隱私權資料保護規範 | 此工作流程會清除90天以前的存取請求檔案。 |

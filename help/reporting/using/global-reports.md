@@ -5,7 +5,7 @@ description: 全域報告
 badge: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Reporting, Monitoring
 exl-id: 6839fd7e-ecf4-4504-90a8-0207bc3991e4
-source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
+source-git-commit: 2186b8a30449cb023cb07305ba64d53f2c8adab1
 workflow-type: tm+mt
 source-wordcount: '2292'
 ht-degree: 7%
@@ -52,7 +52,7 @@ ht-degree: 7%
 
 >[!NOTE]
 >
->如果您的執行個體託管於AWS，您也可以使用Campaign Classic[控制面板](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html?lang=zh-Hant)來監視每小時傳送的傳遞數目。 若要檢查您的執行個體是否託管在 AWS 上，請按照[本頁面](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hant)詳述的步驟操作。
+>如果您的執行個體託管於AWS，您也可以使用Campaign Classic [控制面板](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html)監控每小時傳送的傳遞數目。 若要檢查您的執行個體是否託管在 AWS 上，請按照[本頁面](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hant)詳述的步驟操作。
 >
 >所有管理員使用者都可存取控制面板。 授予使用者管理員存取權限的步驟已詳載於[本頁](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hant#discover-control-panel)中。
 >
@@ -82,7 +82,7 @@ ht-degree: 7%
 
 >[!NOTE]
 >
->此報告中顯示的錯誤會觸發隔離程式。 如需隔離管理的詳細資訊，請參閱[隔離管理](../../delivery/using/understanding-quarantine-management.md)。
+>此報告中顯示的錯誤會觸發隔離程式。 如需隔離管理的詳細資訊，請參閱[隔離管理](../../delivery/using/delivery-failures-quarantine.md)。
 
 此報表的第一區段以值表格和圖表的形式顯示無法傳遞專案的劃分。
 
@@ -167,9 +167,9 @@ ht-degree: 7%
 
 ### 分享至社交網路 {#sharing-to-social-networks}
 
-病毒式行銷可讓傳遞收件者與其聯絡網路共用資訊：他們可以將連結新增至其設定檔(Facebook、X — 先前稱為Twitter等) 或傳送訊息給朋友。 在傳遞中會追蹤每個共用和每個共用資訊的存取。 如需病毒式行銷的詳細資訊，請參閱[本節](../../delivery/using/viral-and-social-marketing.md)。
+病毒式行銷可讓傳遞收件者與其聯絡網路共用資訊：他們可以將連結新增至其設定檔(Facebook、X （先前稱為Twitter等），或傳送訊息給朋友。 在傳遞中會追蹤每個共用和每個共用資訊的存取。 如需病毒式行銷的詳細資訊，請參閱[本節](../../delivery/using/viral-and-social-marketing.md)。
 
-此報表顯示每個社交網路(Facebook、X等)的共用和開啟訊息劃分 和/或每封電子郵件。
+此報表顯示每個社交網路（Facebook、X等）及/或每封電子郵件的共用和開啟訊息劃分。
 
 ![](assets/s_ncs_user_social_report.png)
 
@@ -202,7 +202,7 @@ ht-degree: 7%
 
 ## 共用活動的統計資料 {#statistics-on-sharing-activities}
 
-此報表顯示分享至社交網路(Facebook、X — 先前稱為Twitter、電子郵件等)的進化 時間。
+此報表顯示分享及時演化為社交網路（Facebook、X — 先前稱為Twitter、電子郵件等）。
 
 如需病毒式行銷的詳細資訊，請參閱[本節](../../delivery/using/viral-and-social-marketing.md)。
 
@@ -294,7 +294,7 @@ ht-degree: 7%
 
   >[!NOTE]
   >
-  >有關硬退信和軟退信的詳細資訊，請參閱[隔離管理](../../delivery/using/understanding-quarantine-management.md)。
+  >有關硬退信和軟退信的詳細資訊，請參閱[隔離管理](../../delivery/using/delivery-failures-quarantine.md)。
 
 * **[!UICONTROL Opens]** ：與成功處理的訊息數相比，至少開啟過一次訊息的目標收件者數目百分比。
 * **[!UICONTROL Clicks]** ：與成功處理的訊息數相比至少點按一次傳遞的人員數百分比。
