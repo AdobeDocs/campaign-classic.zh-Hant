@@ -7,9 +7,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 0188c3fe-8176-4904-8505-c47a72c20fcc
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: 8a2a3239c08521765592491a6fe88c94d9db0640
 workflow-type: tm+mt
-source-wordcount: '144'
+source-wordcount: '145'
 ht-degree: 17%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 17%
 
 建立傳送時的主要步驟如下：
 
-1. **建立並識別傳遞**。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hant#create-the-delivery){target="_blank"}以深入瞭解。
+1. **建立並識別傳遞**。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#create-the-delivery){target="_blank"}以深入瞭解。
 
 1. **定義傳遞內容**。 每個管道都有專屬的傳遞內容定義。 如需詳細資訊，請參閱專用區段。
 
@@ -31,8 +31,8 @@ ht-degree: 17%
 
 1. **傳送傳遞**。 [閱讀更多](steps-sending-the-delivery.md)
 
-1. **監視傳遞** （追蹤、隔離、報告等）。 如需詳細資訊，請參閱[監視傳遞](about-delivery-monitoring.md)及[追蹤傳遞](about-message-tracking.md)區段。
+1. **監視傳遞** （追蹤、隔離、報告等）。 如需詳細資訊，請參閱[監視傳遞](about-delivery-monitoring.md)和[訊息追蹤](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracking){target="_blank"}區段。
 
 >[!NOTE]
 >
->本章所述的步驟假設所有目標收件者及其設定檔都儲存在資料庫中，外部傳遞除外（請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hant#selecting-external-recipients){target="_blank"}）。
+>本章所述的步驟假設所有目標收件者及其設定檔都儲存在資料庫中，外部傳遞除外（請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#selecting-external-recipients){target="_blank"}）。
