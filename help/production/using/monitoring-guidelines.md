@@ -4,7 +4,7 @@ title: 監視指南
 description: 探索監控 Campaign 執行個體和程序的準則和最佳作法
 feature: Monitoring
 exl-id: ca0c33c5-7350-462a-bc65-4cab51e529d9
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: e60a8391416bc9899548971bddb61705467a80e5
 workflow-type: tm+mt
 source-wordcount: '758'
 ht-degree: 16%
@@ -76,13 +76,13 @@ ht-degree: 16%
 
 **工作流程狀態監視**
 
-除了熱度圖之外，您還可以建立工作流程，讓您監視一組工作流程的狀態，並傳送週期性訊息給主管。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/monitoring/workflow-supervision.html?lang=zh-Hant){target="_blank"}。
+除了熱度圖之外，您還可以建立工作流程，讓您監視一組工作流程的狀態，並傳送週期性訊息給主管。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/monitoring/workflow-supervision.html){target="_blank"}。
 
 **一般准則**
 
 使用工作流程時，遵循准則和最佳實務有助於改善效能。 如需詳細資訊，請參閱下列章節：
-* [使用工作流程時的最佳實務](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=zh-Hant){target="_blank"}
-* [監控工作流程執行](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=zh-Hant){target="_blank"}
+* [使用工作流程時的最佳實務](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html){target="_blank"}
+* [監控工作流程執行](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}
 
 ### 監視傳遞 {#monitoring-deliveries}
 
@@ -94,13 +94,13 @@ SMTP報告會依網域顯示傳遞統計資料和SMTP錯誤。 [了解更多](..
 
 **最佳實務**
 
-請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=zh-Hant){target="_blank"}以瞭解傳送和設計傳送的最佳實務，以改善效能。
+請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html){target="_blank"}以瞭解傳送和設計傳送的最佳實務，以改善效能。
 
 **傳遞疑難排解**
 遇到傳送問題時，可執行特定動作：
 * [傳遞能力問題](../../production/using/performance-and-throughput-issues.md#deliverability_issues)
 * [影像顯示問題](../../production/using/image-display-issues.md)
-* [傳遞效能問題](../../delivery/using/delivery-performances.md)
+* [傳遞效能問題](../../delivery/using/delivery-performance-troubleshooting.md)
 * [暫存檔案問題](../../production/using/temporary-files.md) - *僅限內部部署託管模型*
 
 ### 監視資料庫 {#monitoring-database}

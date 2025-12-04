@@ -7,9 +7,9 @@ audience: message-center
 content-type: reference
 topic-tags: event-processing
 exl-id: 930c6395-0c00-40ee-a925-3e0cae67c55f
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: e60a8391416bc9899548971bddb61705467a80e5
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '234'
 ht-degree: 1%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 1%
 
 ## 異動訊息監視 {#transactional-message-monitoring}
 
-若要監視您的異動訊息，請檢查[傳遞記錄](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history)。
+若要監視您的異動訊息，請檢查[傳遞記錄](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"}。
 
 從執行執行個體傳送的交易式傳遞會透過每小時執行的技術工作流程(**[!UICONTROL Message Center execution instance]**)同步回控制執行個體。
 

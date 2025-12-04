@@ -5,7 +5,7 @@ description: 進一步瞭解Campaign Classic傳遞監視功能
 feature: Monitoring, Deliverability
 role: User
 exl-id: 9ce11da0-e37b-459e-8ec7-d2bddf59bdf7
-source-git-commit: a85d94e8ff66e8468b4fe2f071df48437393bbce
+source-git-commit: e60a8391416bc9899548971bddb61705467a80e5
 workflow-type: tm+mt
 source-wordcount: '814'
 ht-degree: 1%
@@ -86,7 +86,7 @@ ht-degree: 1%
 
 * [傳遞能力問題](../../production/using/performance-and-throughput-issues.md#deliverability_issues)
 * [影像顯示問題](../../production/using/image-display-issues.md)
-* [傳遞效能問題](delivery-performances.md)
+* [傳遞效能問題](delivery-performance-troubleshooting.md)
 * [暫存檔案問題](../../production/using/temporary-files.md) — 僅限&#x200B;*內部部署客戶*
 
 ## 監視您的傳遞
