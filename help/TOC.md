@@ -7,9 +7,9 @@ user-guide-title: Campaign Classic v7 指南
 user-guide-description: Adobe Campaign Classic v7 產品文件。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: a0b8f6adef371bad5342524aaf4ce30f3933f2da
+source-git-commit: 7b3d34ddde08f0bfc8d35f4e17e9eef4eb640483
 workflow-type: tm+mt
-source-wordcount: '2685'
+source-wordcount: '2686'
 ht-degree: 99%
 
 ---
@@ -31,8 +31,8 @@ ht-degree: 99%
    + [相容性對照表](rn/using/compatibility-matrix.md)
    + [文件更新 - 隱藏](rn/using/documentation-updates.md)
 + 開始使用 {#getting-started}
-   + [開始使用 Adobe Campaign Classic &#x200B;](platform/using/about-adobe-campaign-classic.md)
-   + [啟動 Adobe Campaign &#x200B;](platform/using/launching-adobe-campaign.md)
+   + [開始使用 Adobe Campaign Classic ](platform/using/about-adobe-campaign-classic.md)
+   + [啟動 Adobe Campaign ](platform/using/launching-adobe-campaign.md)
    + [瞭解 Campaign UI](platform/using/adobe-campaign-workspace.md)
    + [使用 Campaign 探索工具 - 隱藏](platform/using/adobe-campaign-explorer.md)
    + [瀏覽和自訂清單 - 隱藏](platform/using/adobe-campaign-ui-lists.md)
@@ -42,7 +42,7 @@ ht-degree: 99%
    + 常見問題集 {#faq}
       + [Campaign Classic 常見問題集](platform/using/faq-campaign-classic-v7.md)
       + [版本編號升級](platform/using/faq-build-upgrade.md)
-   + [字彙](platform/using/ac-glossary.md)
+   + [字彙表 — 隱藏](platform/using/ac-glossary.md)
    + 隱私權 {#privacy}
       + [隱私權與同意](platform/using/privacy-and-recommendations.md)
       + [隱私權管理](platform/using/privacy-management.md)
