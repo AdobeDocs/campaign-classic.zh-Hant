@@ -87,7 +87,7 @@ GDPR 和 CCPA 都很常使用存取及刪除要求的設定與使用情況。本
 
    ![](assets/privacy-ccpa-6.png)
 
-1. 您可以按一下該欄位，以依據選擇退出資訊來排序收件者。您也可以建立篩選，只顯示已選擇退出的收件者。 如需篩選器的詳細資訊，請參閱[Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}。
+1. 您可以按一下該欄位，以依據選擇退出資訊來排序收件者。您也可以建立篩選，只顯示已選擇退出的收件者。 如需篩選器的詳細資訊，請參閱[Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/audience/create-filters){target=_blank}。
 
 
    ![](assets/privacy-ccpa-7.png)

@@ -59,7 +59,7 @@ ht-degree: 11%
 * 德文
 * 日文
 
-您為Adobe Campaign Classic執行個體選擇的語言可能會影響日期和時間格式。 如需詳細資訊，請參閱[Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}。
+您為Adobe Campaign Classic執行個體選擇的語言可能會影響日期和時間格式。 如需詳細資訊，請參閱[Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}。
 
 有關如何建立執行個體的詳細資訊，請參閱此[頁面](../../installation/using/creating-an-instance-and-logging-on.md)。
 
@@ -110,7 +110,7 @@ Adobe Campaign檔案總管可透過工具列圖示存取。 它可讓您存取�
 
 若要深入瞭解Adobe Campaign Explorer，請參閱&#x200B;**Campaign v8 （主控台）檔案**&#x200B;中的下列頁面：
 
-* [Campaign使用者介面概觀](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}
+* [Campaign使用者介面概觀](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}
 
 * [Campaign UI設定](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/ui-settings){target=_blank}
 
@@ -125,7 +125,7 @@ Adobe Campaign檔案總管可透過工具列圖示存取。 它可讓您存取�
 
 瀏覽Campaign時，資料會顯示在清單中。 您可以套用內建篩選器快速存取定義的子集，例如隔離地址、未鎖定目標的收件者或特定年齡範圍或建立日期內的記錄。 此外，您可以建立自訂篩選器、儲存以供日後使用，以及與其他Campaign使用者共用。
 
-在&#x200B;**Campaign v8 （主控台）檔案**&#x200B;中瞭解如何[存取、設計和共用篩選器](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}。
+在&#x200B;**Campaign v8 （主控台）檔案**&#x200B;中瞭解如何[存取、設計和共用篩選器](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/audience/create-filters){target=_blank}。
 
 ### 查詢資料庫{#about-queries-in-campaign}
 
@@ -145,23 +145,23 @@ Adobe Campaign檔案總管可透過工具列圖示存取。 它可讓您存取�
 
 >[!TAB 查詢資料庫]
 
-建立查詢的步驟已詳載於&#x200B;**[Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/query/query-editor){target=_blank}**
+建立查詢的步驟已詳載於&#x200B;**[Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/data/query/query-editor){target=_blank}**
 
 
-[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/query/query-editor){target=_blank}
+[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/data/query/query-editor){target=_blank}
 
 
 >[!TAB 在工作流程中新增查詢]
 
-在&#x200B;**[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}**&#x200B;中，瞭解在工作流程的內容中建立查詢的相關關鍵步驟
+在&#x200B;**[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}**&#x200B;中，瞭解在工作流程的內容中建立查詢的相關關鍵步驟
 
-[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}
+[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}
 
 >[!TAB 篩選條件]
 
-若要設計查詢，您必須在查詢編輯器中選取篩選條件。 可用的功能和使用案例在&#x200B;**[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/query/filter-conditions){target=_blank}**&#x200B;中詳細說明
+若要設計查詢，您必須在查詢編輯器中選取篩選條件。 可用的功能和使用案例在&#x200B;**[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/data/query/filter-conditions){target=_blank}**&#x200B;中詳細說明
 
-[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/query/filter-conditions){target=_blank}
+[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/data/query/filter-conditions){target=_blank}
 
 >[!ENDTABS]
 
@@ -177,7 +177,7 @@ Adobe Campaign檔案總管可透過工具列圖示存取。 它可讓您存取�
 
 定義後，值會顯示在下拉式清單中。 您可以直接選取值，或使用預測性輸入來輸入值，這會建議並完成相符專案。 某些欄位包含預先定義的分項清單，如果需要，可以建立其他分項清單。
 
-在&#x200B;**Adobe Campaign v8 （主控台）檔案**&#x200B;中進一步瞭解如何[使用分項清單](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}。
+在&#x200B;**Adobe Campaign v8 （主控台）檔案**&#x200B;中進一步瞭解如何[使用分項清單](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}。
 
 ## 教學課程影片 {#video}
 
