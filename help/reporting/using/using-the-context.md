@@ -5,10 +5,10 @@ description: 瞭解如何在您的報告中使用內容
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Reporting, Monitoring
 exl-id: a19e2843-d3f9-48c3-af72-cc1bc54f6360
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
 workflow-type: tm+mt
 source-wordcount: '506'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 這可讓您直接透過報告的&#x200B;**[!UICONTROL Page]**&#x200B;活動選取要在報告中顯示的資料。
 
-若要這麼做，請按一下&#x200B;**[!UICONTROL Data]**&#x200B;索引標籤中的&#x200B;**[!UICONTROL Filter data...]**&#x200B;連結：此連結可讓您存取運算式編輯器，以定義要分析之資料的查詢。
+若要這麼做，請按一下&#x200B;**[!UICONTROL Filter data...]**&#x200B;索引標籤中的&#x200B;**[!UICONTROL Data]**&#x200B;連結：此連結可讓您存取運算式編輯器，以定義要分析之資料的查詢。
 
 ![](assets/reporting_filter_data_from_page.png)
 
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 在以下範例中，我們希望圖表只顯示住在法國以及在該年期間進行購買的收件者設定檔。
 
-若要定義此篩選器，請將頁面放入圖表並加以編輯。 按一下&#x200B;**[!UICONTROL Filter data]**&#x200B;連結，並建立符合您要顯示之資料的篩選器。 如需在Adobe Campaign中建立查詢的詳細資訊，請參閱[本節](../../platform/using/about-queries-in-campaign.md)。
+若要定義此篩選器，請將頁面放入圖表並加以編輯。 按一下&#x200B;**[!UICONTROL Filter data]**&#x200B;連結，並建立符合您要顯示之資料的篩選器。 如需在Adobe Campaign中建立查詢的詳細資訊，請參閱[本節](../../platform/using/adobe-campaign-workspace.md#about-queries-in-campaign)。
 
 ![](assets/s_ncs_advuser_report_wizard_029.png)
 
@@ -72,7 +72,7 @@ ht-degree: 0%
 ![](assets/s_ncs_advuser_report_datasource_3.png)
 
 * **[!UICONTROL New query]**&#x200B;選項可讓您建立查詢以收集資料。 如需詳細資訊，請參閱[定義資料](#defining-a-direct-filter-on-data)的直接篩選。
-* **[!UICONTROL Context data]**&#x200B;選項可讓您使用輸入資料：報表的內容與包含圖表或表格的頁面之入站轉變中所包含的資訊一致。 例如，此內容可能包含透過放置在&#x200B;**[!UICONTROL Page]**&#x200B;活動之前的&#x200B;**[!UICONTROL Query]**&#x200B;活動所收集的資料，且您需要指定報告涉及的表格和欄位。
+* **[!UICONTROL Context data]**&#x200B;選項可讓您使用輸入資料：報表的內容與包含圖表或表格的頁面之入站轉變中所包含的資訊一致。 例如，此內容可能包含透過放置在&#x200B;**[!UICONTROL Query]**&#x200B;活動之前的&#x200B;**[!UICONTROL Page]**&#x200B;活動所收集的資料，且您需要指定報告涉及的表格和欄位。
 
 例如，在查詢方塊中，建立收件者的下列查詢：
 

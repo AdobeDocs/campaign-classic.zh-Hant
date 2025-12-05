@@ -6,10 +6,10 @@ feature: Overview
 role: Developer
 level: Beginner
 exl-id: 5f689679-7148-4abd-a9bf-185854c64b13
-source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
+source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
 workflow-type: tm+mt
-source-wordcount: '965'
-ht-degree: 16%
+source-wordcount: '1166'
+ht-degree: 11%
 
 ---
 
@@ -59,7 +59,7 @@ ht-degree: 16%
 * 德文
 * 日文
 
-您為Adobe Campaign Classic執行個體選擇的語言可能會影響日期和時間格式。 如需詳細資訊，請參閱[Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}。
+您為Adobe Campaign Classic執行個體選擇的語言可能會影響日期和時間格式。 如需詳細資訊，請參閱[Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}。
 
 有關如何建立執行個體的詳細資訊，請參閱此[頁面](../../installation/using/creating-an-instance-and-logging-on.md)。
 
@@ -69,13 +69,13 @@ ht-degree: 16%
 
 ## 基本的導覽功能 {#navigation-basics}
 
-### 瀏覽頁面 {#browsing-pages}
-
 平台功能各式各樣，可歸類為幾大核心功能，您可使用介面上方的連結來存取這些功能。
 
 ![](assets/overview_home.png)
 
 哪些核心功能可用取決於您所安裝的套件、附加元件以及您的存取權。
+
+### 瀏覽頁面 {#browsing-pages}
 
 每個功能根據任務相關需求和使用上下文包含一組功能。 例如，**[!UICONTROL Profiles and targets]**&#x200B;連結可讓您存取收件者清單、訂閱服務、現有的鎖定目標工作流程，以及建立這些元素的捷徑。
 
@@ -106,39 +106,78 @@ ht-degree: 16%
 
 ## 使用Adobe Campaign Explorer {#using-adobe-campaign-explorer}
 
-Adobe Campaign檔案總管可透過工具列圖示存取。 使用工具列圖示，您可以存取 Adobe Campaign、所有 Adobe Campaign 功能、設定畫面以及部分平台元素的更詳細視圖。
+Adobe Campaign檔案總管可透過工具列圖示存取。 它可讓您存取所有Adobe Campaign功能、設定畫面以及部分平台元素的更詳細檢視。
 
 若要深入瞭解Adobe Campaign Explorer，請參閱&#x200B;**Campaign v8 （主控台）檔案**&#x200B;中的下列頁面：
 
-* [Campaign使用者介面概觀](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}
+* [Campaign使用者介面概觀](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}
 
 * [Campaign UI設定](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/ui-settings){target=_blank}
 
-* [管理檔案總管中的資料夾和檢視](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}。
+* [在檔案總管中管理資料夾和檢視](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}
 
 
-## 篩選資料 {#filters}
+## 使用資料 {#work-with-data}
+
+### 篩選資料 {#filters}
 
 資料篩選是將資料集縮小至符合特定條件的那些記錄的程式。 然後可將此子集用於目標動作（例如更新或建立對象）或分析。
 
 瀏覽Campaign時，資料會顯示在清單中。 您可以套用內建篩選器快速存取定義的子集，例如隔離地址、未鎖定目標的收件者或特定年齡範圍或建立日期內的記錄。 此外，您可以建立自訂篩選器、儲存以供日後使用，以及與其他Campaign使用者共用。
 
-在&#x200B;**Campaign v8 （主控台）檔案**&#x200B;中瞭解如何[存取、設計和共用篩選器](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/audience/create-filters){target=_blank}。
+在&#x200B;**Campaign v8 （主控台）檔案**&#x200B;中瞭解如何[存取、設計和共用篩選器](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}。
+
+### 查詢資料庫{#about-queries-in-campaign}
+
+查詢工具可用於應用程式的各個層級，並可用來定義目標人口、劃分客戶、擷取及篩選追蹤記錄、建立篩選器等。
+
++++關於一般查詢編輯器
+
+它提供可從&#x200B;**[!UICONTROL Tools > Generic query editor...]**&#x200B;功能表存取的專用助理（一般查詢編輯器）。 此編輯器可讓資料庫查詢擷取、組織、分組和排序資訊。 例如，它可以擷取在指定期間內點選電子報連結超過n次的收件者。
+
+一般查詢編輯器會集中所有查詢功能。 它允許限制篩選器的建立和儲存，然後可以在其他內容中重複使用，例如定位工作流程的Query方塊。
+
+![存取查詢編輯器並選取資料表](assets/query_editor_nveau_21.png)
+
++++
+
+>[!BEGINTABS]
+
+>[!TAB 查詢資料庫]
+
+建立查詢的步驟已詳載於&#x200B;**[Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/query/query-editor){target=_blank}**
 
 
-## 使用清單 {#manage-and-customize-lists}
+[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/query/query-editor){target=_blank}
+
+
+>[!TAB 在工作流程中新增查詢]
+
+在&#x200B;**[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}**&#x200B;中，瞭解在工作流程的內容中建立查詢的相關關鍵步驟
+
+[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}
+
+>[!TAB 篩選條件]
+
+若要設計查詢，您必須在查詢編輯器中選取篩選條件。 可用的功能和使用案例在&#x200B;**[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/query/filter-conditions){target=_blank}**&#x200B;中詳細說明
+
+[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/query/filter-conditions){target=_blank}
+
+>[!ENDTABS]
+
+### 管理清單 {#manage-and-customize-lists}
 
 在Campaign使用者端主控台中，資料會顯示在清單中。 您可以根據自己的需求調整這些清單。 例如，您可以新增欄、篩選資料、計算記錄、儲存和共用您的設定。
 
 在&#x200B;**Campaign v8 （主控台）檔案**&#x200B;中瞭解如何[管理和自訂清單](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/ui-settings#customize-lists){target=_blank}。
 
-## 管理列舉{#managing-enumerations}
+### 管理列舉{#managing-enumerations}
 
 分項清單（也稱為分項清單）是預先定義的值清單，可用於填寫某些欄位。 列舉有助於標準化欄位值，使資料輸入更一致並簡化查詢。
 
 定義後，值會顯示在下拉式清單中。 您可以直接選取值，或使用預測性輸入來輸入值，這會建議並完成相符專案。 某些欄位包含預先定義的分項清單，如果需要，可以建立其他分項清單。
 
-在&#x200B;**Adobe Campaign v8 （主控台）檔案**&#x200B;中進一步瞭解如何[使用分項清單](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}。
+在&#x200B;**Adobe Campaign v8 （主控台）檔案**&#x200B;中進一步瞭解如何[使用分項清單](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}。
 
 ## 教學課程影片 {#video}
 

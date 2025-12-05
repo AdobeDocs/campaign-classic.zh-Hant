@@ -6,7 +6,7 @@ feature: Workflows, Targeting Activity, Query Editor
 hide: true
 hidefromtoc: true
 exl-id: 20d03627-cd56-46da-bc02-73b48a02a350
-source-git-commit: 9df46ed923831ffdfb28acddfbc371cecafb251c
+source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
 workflow-type: tm+mt
 source-wordcount: '1630'
 ht-degree: 0%
@@ -56,7 +56,7 @@ ht-degree: 0%
 
    您也可以核取對應的方塊，以新增資料分組條件。 若要這麼做，篩選維度必須與查詢的目標維度不同。 如需分組的詳細資訊，請參閱此[區段](querying-using-grouping-management.md)。
 
-   您也可以使用運算式產生器，將其與邏輯選項AND、OR和EXCEPT結合，以新增更多條件。 然後，您可以預覽條件組合的&#x200B;**[!UICONTROL Corresponding SQL query...]**。 如需詳細資訊，請參閱此[區段](../../platform/using/about-queries-in-campaign.md)。
+   您也可以使用運算式產生器，將其與邏輯選項AND、OR和EXCEPT結合，以新增更多條件。 然後，您可以預覽條件組合的&#x200B;**[!UICONTROL Corresponding SQL query...]**。 如需詳細資訊，請參閱此[區段](../../platform/using/adobe-campaign-workspace.md#about-queries-in-campaign)。
 
    如果您稍後要重複使用篩選器，請儲存篩選器。
 
@@ -188,16 +188,16 @@ ht-degree: 0%
 
   如需詳細資訊，請參閱Campaign版本的相關章節：
 
-  ![](assets/do-not-localize/v7.jpeg) [Campaign v7檔案](../../configuration/using/database-mapping.md)
+  ![](assets/do-not-localize/v7.jpeg)[Campaign v7檔案](../../configuration/using/database-mapping.md)
 
-  ![](assets/do-not-localize/v8.png) [Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/shemas-forms/database-mapping.html?lang=zh-Hant)
+  ![](assets/do-not-localize/v8.png)[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/shemas-forms/database-mapping.html)
 
 ### 函數 {#functions}
 
 * 請注意類似`Lower(...)`的功能。 使用Lower函式時，不會使用Index。
 * 仔細檢查使用「like」指示或「upper」或「lower」指示的查詢。 在使用者輸入上套用「Upper」，而不是在資料庫欄位上套用。
 
-  如需函式的詳細資訊，請參閱[本節](../../platform/using/about-queries-in-campaign.md)。
+  如需函式的詳細資訊，請參閱[本節](../../platform/using/adobe-campaign-workspace.md#about-queries-in-campaign)。
 
 ### 篩選維度 {#filtering-dimensions}
 

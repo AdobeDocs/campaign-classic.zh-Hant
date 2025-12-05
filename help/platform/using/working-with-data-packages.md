@@ -8,7 +8,7 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: d3369b63-a29b-43b7-b2ad-d36d4f46c82e
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
 workflow-type: tm+mt
 source-wordcount: '127'
 ht-degree: 39%
@@ -29,7 +29,7 @@ ht-degree: 39%
 
 >[!NOTE]
 >
->若要深入瞭解資料套件，請參閱[Campaign v8檔案。](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/packages){target=_blank}
+>若要深入瞭解資料套件，請參閱[Campaign v8檔案。](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/packages){target=_blank}
 
 
 <!--
@@ -114,7 +114,7 @@ For the three types of packages, the assistant offers the following steps:
 
    >[!NOTE]
    >
-   >The query editor is presented in [this section](../../platform/using/about-queries-in-campaign.md).
+   >The query editor is presented in [this section](../../platform/using/adobe-campaign-workspace.md#about-queries-in-campaign).
 
 1. Click **[!UICONTROL Next]** and select the sorting columns to order the data during extraction:
 

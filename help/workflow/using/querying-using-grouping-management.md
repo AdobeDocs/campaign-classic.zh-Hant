@@ -6,7 +6,7 @@ feature: Query Editor, Workflows
 hide: true
 hidefromtoc: true
 exl-id: 23bccb48-60ab-46c9-be26-2fa35243d61e
-source-git-commit: 9df46ed923831ffdfb28acddfbc371cecafb251c
+source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 3%
@@ -39,7 +39,7 @@ ht-degree: 3%
 
 1. 在&#x200B;**[!UICONTROL Data to extract]**&#x200B;視窗中，選取&#x200B;**[!UICONTROL Email domain]**&#x200B;及&#x200B;**[!UICONTROL Primary key]**&#x200B;欄位。 對&#x200B;**[!UICONTROL Primary key]**&#x200B;欄位執行計數。
 
-   如需主索引鍵計數的詳細資訊，請參閱[本區段](../../platform/using/about-queries-in-campaign.md)。
+   如需主索引鍵計數的詳細資訊，請參閱[本區段](../../platform/using/adobe-campaign-workspace.md#about-queries-in-campaign)。
 
 1. 勾選&#x200B;**[!UICONTROL Handle groupings (GROUP BY + HAVING)]**&#x200B;方塊。
 

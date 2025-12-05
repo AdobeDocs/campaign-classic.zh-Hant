@@ -6,7 +6,7 @@ feature: Profiles
 role: User
 level: Beginner
 exl-id: 711b84cd-bac8-4f1a-9999-0124fbfc3a01
-source-git-commit: f188c9ce4c47d05638d9d28e2175cb4d32775ba2
+source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
 workflow-type: tm+mt
 source-wordcount: '89'
 ht-degree: 25%
@@ -21,13 +21,13 @@ ht-degree: 25%
 
 清單是一組靜態的設定檔，可在傳遞動作中定位，或在匯入作業或工作流程執行期間更新。 例如，透過查詢而從資料庫中摘取出的群體可形成一個清單。
 
-清單是透過&#x200B;**[!UICONTROL Profiles and targets]**&#x200B;索引標籤中的&#x200B;**[!UICONTROL Lists]**&#x200B;連結建立及管理的。
+清單是透過&#x200B;**[!UICONTROL Lists]**&#x200B;索引標籤中的&#x200B;**[!UICONTROL Profiles and targets]**&#x200B;連結建立及管理的。
 
 ![](assets/s_ncs_user_interface_group_link.png)
 
 >[!NOTE]
 >
->若要進一步瞭解清單以及如何建立和管理清單，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/audience/create-audiences/create-audiences){target=_blank}。
+>若要進一步瞭解清單以及如何建立和管理清單，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-audiences/create-audiences){target=_blank}。
 
 <!--
 Two types of lists are available in Adobe Campaign:
@@ -74,7 +74,7 @@ You can create new profiles directly from the 'add profiles' window by clicking 
 
 ![](assets/s_ncs_user_new_recipient_from_group.png)
 
-The profile list can be configured just like other lists. See [this section](../../platform/using/adobe-campaign-workspace.md#configuring-lists).
+The profile list can be configured just like other lists. See [this section](../../platform/using/adobe-campaign-ui-lists.md#configuring-lists).
 
 ## Link data to a list {#linking-data-to-a-list}
 
@@ -147,6 +147,6 @@ Learn how create a workflow in order to target recipients and how to make it rec
 
 >[!VIDEO](https://video.tv.adobe.com/v/25603?quality=12)
 
-Additional Campaign Classic how-to videos are available [here](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant).
+Additional Campaign Classic how-to videos are available [here](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
 
 -->

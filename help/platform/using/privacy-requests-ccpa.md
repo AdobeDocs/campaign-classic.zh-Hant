@@ -8,7 +8,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 8e308a9f-14a4-4a25-9fd0-8d4bdbcf74ce
-source-git-commit: 8817b485fd5b6d6aeb9d71c1106f16fbb6bc3c5b
+source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
 workflow-type: tm+mt
 source-wordcount: '569'
 ht-degree: 94%
@@ -25,7 +25,7 @@ GDPR 和 CCPA 都很常使用存取及刪除要求的設定與使用情況。本
 
 除了 Adobe Campaign 提供的[同意管理](privacy-management.md#consent-management)工具以外，您還可以追蹤消費者是否選擇退出個人資訊銷售。
 
-聯絡人可以透過您的系統決定不允許將其個人資訊銷售給協力廠商。 您將可在 Adobe Campaign 中儲存及追蹤此資訊。
+聯絡人可以透過您的系統決定不允許將其個人資訊銷售給第三方。 您將可在 Adobe Campaign 中儲存及追蹤此資訊。
 
 為了達到此目的，您需要延伸「輪廓」表格並新增&#x200B;**[!UICONTROL Opt-Out for CCPA]**&#x200B;欄位。
 
@@ -83,11 +83,11 @@ GDPR 和 CCPA 都很常使用存取及刪除要求的設定與使用情況。本
 
    ![](assets/privacy-ccpa-5.png)
 
-1. 設定收件者清單以顯示選擇退出欄位。 如要瞭解如何設定清單，請參閱[詳細文件](../../platform/using/adobe-campaign-workspace.md#configuring-lists)。
+1. 設定收件者清單以顯示選擇退出欄位。 如要瞭解如何設定清單，請參閱[詳細文件](../../platform/using/adobe-campaign-ui-lists.md#configuring-lists)。
 
    ![](assets/privacy-ccpa-6.png)
 
-1. 您可以按一下該欄位，以依據選擇退出資訊來排序收件者。您也可以建立篩選，只顯示已選擇退出的收件者。 如需篩選器的詳細資訊，請參閱[Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/audience/create-filters){target=_blank}。
+1. 您可以按一下該欄位，以依據選擇退出資訊來排序收件者。您也可以建立篩選，只顯示已選擇退出的收件者。 如需篩選器的詳細資訊，請參閱[Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}。
 
 
    ![](assets/privacy-ccpa-7.png)

@@ -5,7 +5,7 @@ description: 編輯內容
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Web Apps, Web Forms, Landing Pages, Email Design
 exl-id: 968430d6-b1dd-47f8-8b31-39aaa18bc05c
-source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
+source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
 workflow-type: tm+mt
 source-wordcount: '1229'
 ht-degree: 0%
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->在[此頁面](../../platform/using/about-queries-in-campaign.md)上顯示進階運算式編輯。
+>在[此頁面](../../platform/using/adobe-campaign-workspace.md#about-queries-in-campaign)上顯示進階運算式編輯。
 
 ![](assets/dce_popup_visibilitycondition.png)
 
@@ -259,4 +259,4 @@ ht-degree: 0%
 
 插入後，個人化區塊名稱會顯示在編輯器中，並以黃色反白顯示。 產生個人化時，會自動調整成適合收件者設定檔。
 
-如需內建個人化區塊以及如何定義自訂個人化區塊的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=zh-Hant){target="_blank"}。
+如需內建個人化區塊以及如何定義自訂個人化區塊的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}。

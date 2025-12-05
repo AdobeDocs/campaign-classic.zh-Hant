@@ -7,7 +7,7 @@ badge: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 hide: true
 hidefromtoc: true
 exl-id: 5f22fa2c-b648-4126-9a24-1798adfa8f34
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
 workflow-type: tm+mt
 source-wordcount: '1506'
 ht-degree: 1%
@@ -50,9 +50,9 @@ Adobe Campaign也提供自動量化的輔助程式：值可以細分為N個群�
 
 ![](assets/s_advuser_cube_class_03.png)
 
-您可以使用SQL遮罩將數個值組合成濾鏡。 若要這麼做，請檢查&#x200B;**[!UICONTROL Use an SQL mask]**&#x200B;欄中的&#x200B;**[!UICONTROL Yes]**，並輸入要套用到&#x200B;**[!UICONTROL Value or expression]**&#x200B;欄中的SQL篩選器。
+您可以使用SQL遮罩將數個值組合成濾鏡。 若要這麼做，請檢查&#x200B;**[!UICONTROL Yes]**&#x200B;欄中的&#x200B;**[!UICONTROL Use an SQL mask]**，並輸入要套用到&#x200B;**[!UICONTROL Value or expression]**&#x200B;欄中的SQL篩選器。
 
-在下列範例中，以&#x200B;**yahoo** (yahoo.fr、yahoo.com、yahoo.be等)開頭或以&#x200B;**ymail** (ymail.com、ymail.eu等)開頭的所有電子郵件網域 將分組在標籤&#x200B;**YAHOO！下**，以及具有&#x200B;**rocketmail.com**&#x200B;網域的地址。
+在下列範例中，所有以&#x200B;**yahoo** (yahoo.fr、yahoo.com、yahoo.be等)開頭或以&#x200B;**ymail** (ymail.com、ymail.eu等)開頭的電子郵件網域，都會歸類到標籤&#x200B;**YAHOO！**，以及具有&#x200B;**rocketmail.com**&#x200B;網域的地址。
 
 ![](assets/s_advuser_cube_class_03b.png)
 
@@ -171,7 +171,7 @@ Adobe Campaign也提供網域列舉，可讓您顯示資料庫中所有連絡人
 
 1. 視需要並根據運運算元，選擇作業涉及的運算式。
 
-   **[!UICONTROL Advanced selection]**&#x200B;按鈕可讓您建立複雜的計算公式。 如需詳細資訊，請參閱[本章節](../../platform/using/about-queries-in-campaign.md)。
+   **[!UICONTROL Advanced selection]**&#x200B;按鈕可讓您建立複雜的計算公式。 如需詳細資訊，請參閱[本章節](../../platform/using/adobe-campaign-workspace.md#about-queries-in-campaign)。
 
    ![](assets/s_advuser_cube_create_a_measure_01.png)
 

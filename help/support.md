@@ -6,7 +6,7 @@ feature: Troubleshooting
 hidefromtoc: true
 hide: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
-source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
+source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
 workflow-type: tm+mt
 source-wordcount: '632'
 ht-degree: 67%
@@ -48,7 +48,7 @@ ht-degree: 67%
         <ul>
         <li><a href="production/using/performance-and-throughput-issues.md">效能和輸送量的相關問題</a></li>
         <li><a href="delivery/using/delivery-performance-troubleshooting.md">傳遞效能</a></li>
-        <li><a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=zh-Hant" target="_blank">最佳化工作流程效能</a></li>
+        <li><a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html" target="_blank">最佳化工作流程效能</a></li>
         <li><a href="workflow/using/monitoring-workflow-execution.md">工作流程執行疑難排解</a></li>
         <li><a href="platform/using/sftp-server-usage.md">SFTP 伺服器使用情況</a></li>
         <li><a href="delivery/using/delivery-failures-quarantine.md">瞭解傳遞失敗</a></li>
@@ -56,14 +56,14 @@ ht-degree: 67%
     </td>
    <td valign="top">
         <ul>
-        <li><a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=zh-Hant" target="_blank">工作流程最佳實務</a></li>
+        <li><a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html" target="_blank">工作流程最佳實務</a></li>
         <li><a href="workflow/using/monitoring-technical-workflows.md">技術工作流程監視</a></li>
-        <li><a href="https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/analytics/tracking/tracking" target="_blank">認識追蹤管理</a></li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracking" target="_blank">認識追蹤管理</a></li>
         <li><a href="production/using/monitoring-guidelines.md">探索監控工具</a></li>
         <li><a href="platform/using/import-export-workflows.md">透過工作流程匯入資料</a></li>
         <li><a href="delivery/using/steps-sending-the-delivery.md">以多個波段傳送訊息</a></li>
         <li><a href="delivery/using/defining-the-email-content.md">設計電子郵件內容</a></li>
-        <li><a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=zh-Hant" target="_blank">關於傳遞的最佳實務</a></li>
+        <li><a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html" target="_blank">關於傳遞的最佳實務</a></li>
         </ul>
     </td>
     <td valign="top">
@@ -74,7 +74,7 @@ ht-degree: 67%
         <li><a href="delivery/using/delivery-failures-quarantine.md">認識隔離管理</a></li>
         <li><a href="installation/using/get-started-security-privacy.md">安全性與隱私權檢查清單</a></li>
         <li><a href="platform/using/privacy-management.md">隱私權與同意管理</a></li>
-        <li><a href="platform/using/about-queries-in-campaign.md">設計查詢</a></li>
+        <li><a href="platform/using/adobe-campaign-workspace.md#about-queries-in-campaign">設計查詢</a></li>
         <li><a href="workflow/using/querying-recipient-table.md">查詢範例</a></li>
         <li><a href="workflow/using/building-a-workflow.md">建置工作流程</a></li>
         </ul>
@@ -107,7 +107,7 @@ ht-degree: 67%
 
 ### SFTP 管理
 
-在「控制面板」中，您可以與所有連線至您可存取之 Campaign 執行個體的 SFTP 伺服器互動。 您可以監視其儲存容量、管理允許清單上的IP位址和公開SSH金鑰。 [按一下這裡](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html?lang=zh-Hant)以獲得更多資訊。
+在「控制面板」中，您可以與所有連線至您可存取之 Campaign 執行個體的 SFTP 伺服器互動。 您可以監視其儲存容量、管理允許清單上的IP位址和公開SSH金鑰。 [按一下這裡](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html)以獲得更多資訊。
 
 ### 子網域和憑證
 
