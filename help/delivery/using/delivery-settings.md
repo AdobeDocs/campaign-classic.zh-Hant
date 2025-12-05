@@ -7,16 +7,16 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 66250817-f829-4b8b-92dd-2daa92a97fe0
-source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
+source-git-commit: 2e3a14c97706a873f0791ef83708d704d2eed6c3
 workflow-type: tm+mt
-source-wordcount: '696'
+source-wordcount: '709'
 ht-degree: 12%
 
 ---
 
 # 傳遞設定 {#about-delivery-settings}
 
-以下設定專屬於Campaign Classic。 如需其他傳遞設定，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html?lang=zh-Hant){target="_blank"}。
+以下設定專屬於Campaign Classic。 如需其他傳遞設定，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html){target="_blank"}。
 
 ## 傳遞分析 {#delivery-analysis}
 
@@ -81,4 +81,4 @@ ht-degree: 12%
 
 * **資源效度限制**： **[!UICONTROL Validity limit]**&#x200B;欄位是用於上傳的資源，主要用於映象頁面和影像。 本頁上的資源在限定時間內有效（以節省磁碟空間）。
 
-  此欄位中的值可以以[此區段](../../platform/using/adobe-campaign-workspace.md#default-units)中列出的單位來表示。
+  此欄位中的值可以下列單位表示： **s**&#x200B;代表秒數，**m**&#x200B;代表分鐘，**h**&#x200B;代表小時，**d**&#x200B;代表天（預設），**y**&#x200B;代表年。

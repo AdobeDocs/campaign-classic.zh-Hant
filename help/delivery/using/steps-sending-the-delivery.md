@@ -7,9 +7,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
-source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
+source-git-commit: 2e3a14c97706a873f0791ef83708d704d2eed6c3
 workflow-type: tm+mt
-source-wordcount: '1518'
+source-wordcount: '1531'
 ht-degree: 11%
 
 ---
@@ -143,7 +143,7 @@ ht-degree: 11%
    >
    >在設定最後一個波段時，您也必須允許足夠的重試時間。 請參閱[本節](steps-sending-the-delivery.md#configuring-retries)。
 
-1. 若要監視您的傳送，請前往傳送記錄檔。 請參閱[此頁面](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"}。
+1. 若要監視您的傳送，請前往傳送記錄檔。 請參閱[此頁面](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"}。
 
    您可以看到已在已處理波段（**[!UICONTROL Sent]**&#x200B;狀態）中傳送的傳遞，以及將在剩餘波段（**[!UICONTROL Pending]**&#x200B;狀態）中傳送的傳遞。
 
@@ -199,4 +199,4 @@ ht-degree: 11%
 
 * **資源效度限制**： **[!UICONTROL Validity limit]**&#x200B;欄位是用於上傳的資源，主要用於映象頁面和影像。 本頁上的資源在限定時間內有效（以節省磁碟空間）。
 
-  此欄位中的值可以以[此區段](../../platform/using/adobe-campaign-workspace.md#default-units)中列出的單位來表示。
+  此欄位中的值可以下列單位表示： **s**&#x200B;代表秒數，**m**&#x200B;代表分鐘，**h**&#x200B;代表小時，**d**&#x200B;代表天（預設），**y**&#x200B;代表年。

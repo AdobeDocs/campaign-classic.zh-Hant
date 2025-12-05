@@ -7,9 +7,9 @@ user-guide-title: Campaign Classic v7 指南
 user-guide-description: Adobe Campaign Classic v7 產品文件。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 7b3d34ddde08f0bfc8d35f4e17e9eef4eb640483
+source-git-commit: 2e3a14c97706a873f0791ef83708d704d2eed6c3
 workflow-type: tm+mt
-source-wordcount: '2686'
+source-wordcount: '2682'
 ht-degree: 99%
 
 ---
@@ -31,14 +31,13 @@ ht-degree: 99%
    + [相容性對照表](rn/using/compatibility-matrix.md)
    + [文件更新 - 隱藏](rn/using/documentation-updates.md)
 + 開始使用 {#getting-started}
-   + [開始使用 Adobe Campaign Classic &#x200B;](platform/using/about-adobe-campaign-classic.md)
-   + [啟動 Adobe Campaign &#x200B;](platform/using/launching-adobe-campaign.md)
+   + [開始使用 Adobe Campaign Classic ](platform/using/about-adobe-campaign-classic.md)
+   + [啟動 Adobe Campaign ](platform/using/launching-adobe-campaign.md)
    + [瞭解 Campaign UI](platform/using/adobe-campaign-workspace.md)
    + [使用 Campaign 探索工具 - 隱藏](platform/using/adobe-campaign-explorer.md)
    + [瀏覽和自訂清單 - 隱藏](platform/using/adobe-campaign-ui-lists.md)
    + [分項清單 - 隱藏](platform/using/managing-enumerations.md)
    + [Campaign 連接器](platform/using/about-connectors.md)
-   + [建立 Campaign 中的查詢](platform/using/about-queries-in-campaign.md)
    + 常見問題集 {#faq}
       + [Campaign Classic 常見問題集](platform/using/faq-campaign-classic-v7.md)
       + [版本編號升級](platform/using/faq-build-upgrade.md)
