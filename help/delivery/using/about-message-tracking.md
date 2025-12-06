@@ -16,12 +16,12 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
->如需同時適用於Campaign Classic v7和Campaign v8的&#x200B;**一般追蹤指引**，請參閱[Campaign v8訊息追蹤檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracking){target="_blank"}：
+>如需同時適用於Campaign Classic v7和Campaign v8的&#x200B;**一般追蹤指引**，請參閱[Campaign v8訊息追蹤檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/analytics/tracking/tracking){target="_blank"}：
 >
->* [設定追蹤的連結](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracked-links){target="_blank"}
->* [設定 URL 追蹤選項](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/url-tracking){target="_blank"}
->* [追蹤個人化連結](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/personalized-links){target="_blank"}
->* [存取追蹤記錄](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracking-logs){target="_blank"}
+>* [設定追蹤的連結](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/analytics/tracking/tracked-links){target="_blank"}
+>* [設定 URL 追蹤選項](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/analytics/tracking/url-tracking){target="_blank"}
+>* [追蹤個人化連結](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/analytics/tracking/personalized-links){target="_blank"}
+>* [存取追蹤記錄](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/analytics/tracking/tracking-logs){target="_blank"}
 >* [測試追蹤](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/testing-tracking){target="_blank"}
 >* [追蹤報告](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/reporting/delivery-reports#tracking-indicators){target="_blank"}
 >
@@ -82,7 +82,7 @@ ht-degree: 2%
 
 下列疑難排解提示適用於&#x200B;**Campaign Classic v7混合/內部部署**。 部分資訊可能也會套用至Campaign v8內部部署。 如需Campaign v8受管理的Cloud Services，請聯絡您的Adobe代表以尋求協助。
 
-如需Campaign v8的基本追蹤疑難排解步驟，請參閱Campaign v8檔案[中的](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracking-logs#troubleshooting){target="_blank"}疑難排解追蹤。
+如需Campaign v8的基本追蹤疑難排解步驟，請參閱Campaign v8檔案[中的](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/analytics/tracking/tracking-logs#troubleshooting){target="_blank"}疑難排解追蹤。
 
 ### 基本檢查 {#basic-checks}
 

@@ -31,7 +31,7 @@ ht-degree: 17%
 
 1. **傳送傳遞**。 [閱讀更多](steps-sending-the-delivery.md)
 
-1. **監視傳遞** （追蹤、隔離、報告等）。 如需詳細資訊，請參閱[監視傳遞](about-delivery-monitoring.md)和[訊息追蹤](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracking){target="_blank"}區段。
+1. **監視傳遞** （追蹤、隔離、報告等）。 如需詳細資訊，請參閱[監視傳遞](about-delivery-monitoring.md)和[訊息追蹤](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/analytics/tracking/tracking){target="_blank"}區段。
 
 >[!NOTE]
 >

@@ -79,8 +79,8 @@ Adobe Campaign管理的清單會收集持續發生的垃圾郵件投訴、硬跳
 
 如需詳細資訊，請參閱下列章節：
 
-* [瞭解傳遞失敗](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} （Campaign v8檔案 — 完整指南）
-* [瞭解隔離管理](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} （Campaign v8檔案 — 完整指南）
+* [瞭解傳遞失敗](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} （Campaign v8檔案 — 完整指南）
+* [瞭解隔離管理](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} （Campaign v8檔案 — 完整指南）
 
 ### 使用監控和報告工具
 

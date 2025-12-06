@@ -60,8 +60,8 @@ ht-degree: 0%
 >
 >Campaign v8檔案中已記錄傳遞疑難排解的全面指引，適用於Campaign Classic v7和Campaign v8使用者：
 >
->* 常見傳遞失敗與解決方案： [瞭解傳遞失敗](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}
->* 傳送診斷緩慢： [在Campaign UI中監視傳送](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}
+>* 常見傳遞失敗與解決方案： [瞭解傳遞失敗](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}
+>* 傳送診斷緩慢： [在Campaign UI中監視傳送](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}
 >* 傳遞最佳實務：[傳遞最佳實務](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"}
 >
 >本節記錄針對混合式部署和內部部署的&#x200B;**Campaign Classic v7專屬疑難排解**。
@@ -100,13 +100,13 @@ Error during the call of method 'AppendDeliveryPart' on the mid sourcing server:
 
 >[!NOTE]
 >
->對於Campaign v8受管理的Cloud Services使用者，技術工作流程和基礎架構監控由Adobe管理。 如[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}所述，著重於傳遞內容和目標定位。
+>對於Campaign v8受管理的Cloud Services使用者，技術工作流程和基礎架構監控由Adobe管理。 如[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}所述，著重於傳遞內容和目標定位。
 
 ## 相關主題
 
-* [瞭解傳遞失敗](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} （Campaign v8檔案）
+* [瞭解傳遞失敗](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} （Campaign v8檔案）
 * [傳遞最佳實務](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"} （Campaign v8檔案）
-* [在Campaign UI中監視傳遞](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} （Campaign v8檔案）
+* [在Campaign UI中監視傳遞](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} （Campaign v8檔案）
 * [資料庫維護](../../production/using/recommendations.md) （v7混合/內部部署）
 * [電子郵件傳遞能力](../../installation/using/email-deliverability.md) （v7混合/內部部署）
 * [資料庫效能](../../production/using/database-performances.md) （v7混合/內部部署）
