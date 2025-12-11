@@ -89,7 +89,7 @@ Android Firebase Cloud Messaging (FCM) 服務的一些重要變更將於 2024 �
     <td>
       <img src="assets/do-not-localize/icon-send.svg" width="35px">
     <br/>
-      <strong>傳送訊息</strong><br/><a href="delivery/using/communication-channels.md">通訊頻道</a> - <a href="delivery/using/steps-about-delivery-creation-steps.md#sending-a-proof">傳送校樣</a> - <a href="delivery/using/get-started-a-b-testing.md">A/B 測試</a> - <a href="https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/analytics/tracking/tracking" target="_blank">訊息追蹤</a> - <a href="delivery/using/about-deliverability.md">傳遞能力</a> - <a href="message-center/using/about-transactional-messaging.md">交易型訊息傳遞</a>
+      <strong>傳送訊息</strong><br/><a href="delivery/using/communication-channels.md">通訊管道</a> - <a href="delivery/using/steps-about-delivery-creation-steps.md#sending-a-proof">傳送校樣</a> - <a href="delivery/using/get-started-a-b-testing.md">A/B 測試</a> - <a href="https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/analytics/tracking/tracking" target="_blank">訊息追蹤</a> - <a href="delivery/using/about-deliverability.md">傳遞能力</a> - <a href="message-center/using/about-transactional-messaging.md">交易型訊息傳遞</a>
     </td>
   </tr>
   <tr style="border: 0;">

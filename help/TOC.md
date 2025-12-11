@@ -31,8 +31,8 @@ ht-degree: 99%
    + [相容性對照表](rn/using/compatibility-matrix.md)
    + [文件更新 - 隱藏](rn/using/documentation-updates.md)
 + 開始使用 {#getting-started}
-   + [開始使用 Adobe Campaign Classic &#x200B;](platform/using/about-adobe-campaign-classic.md)
-   + [啟動 Adobe Campaign &#x200B;](platform/using/launching-adobe-campaign.md)
+   + [開始使用 Adobe Campaign Classic ](platform/using/about-adobe-campaign-classic.md)
+   + [啟動 Adobe Campaign ](platform/using/launching-adobe-campaign.md)
    + [瞭解 Campaign UI](platform/using/adobe-campaign-workspace.md)
    + [使用 Campaign 探索工具 - 隱藏](platform/using/adobe-campaign-explorer.md)
    + [瀏覽和自訂清單 - 隱藏](platform/using/adobe-campaign-ui-lists.md)
@@ -40,7 +40,7 @@ ht-degree: 99%
    + [Campaign 連接器](platform/using/about-connectors.md)
    + 常見問題集 {#faq}
       + [Campaign Classic 常見問題集](platform/using/faq-campaign-classic-v7.md)
-      + [版本編號升級](platform/using/faq-build-upgrade.md)
+      + [版本升級](platform/using/faq-build-upgrade.md)
    + [字彙表 — 隱藏](platform/using/ac-glossary.md)
    + 隱私權 {#privacy}
       + [隱私權與同意](platform/using/privacy-and-recommendations.md)
@@ -187,8 +187,8 @@ ht-degree: 99%
    + 監視傳遞 {#monitoring-deliveries}
       + [監視傳遞效能](delivery/using/about-delivery-monitoring.md)
       + [追蹤訊息](delivery/using/about-message-tracking.md)
-      + [傳遞效能與疑難排解](delivery/using/delivery-performance-troubleshooting.md)
-      + [傳送失敗和隔離管理](delivery/using/delivery-failures-quarantine.md)
+      + [傳遞效能及疑難排解](delivery/using/delivery-performance-troubleshooting.md)
+      + [傳遞失敗與隔離管理](delivery/using/delivery-failures-quarantine.md)
       + [進階：自訂傳遞記錄](delivery/using/customize-delivery-logs.md)
    + 傳遞性管理 {#deliverability-management}
       + [什麼是傳遞性](delivery/using/about-deliverability.md)
