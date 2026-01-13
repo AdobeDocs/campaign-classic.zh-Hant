@@ -25,13 +25,13 @@ ht-degree: 3%
 
   >[!IMPORTANT]
   >
-  >**移轉至IMS後：**&#x200B;一旦移轉至Adobe Identity Management系統(IMS)，任何名稱中包含「管理員」字樣的產品設定檔或命名許可權（例如「管理員」、「管理員」、「管理員」等）都會自動授與Campaign「控制面板」的存取權。 建議您避免在已命名的許可權或角色名稱中使用「管理員」，除非您想讓這些使用者擁有控制面板存取權。 深入瞭解[IMS移轉](../../technotes/using/migrate-users-to-ims.md)和[管理控制面板存取](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html){target="_blank"}。
+  >**移轉至IMS後：**&#x200B;一旦移轉至Adobe Identity Management系統(IMS)，任何名稱中包含「管理員」字樣的產品設定檔或命名許可權（例如「管理員」、「管理員」、「管理員」等）都會自動授與Campaign「控制面板」的存取權。 建議您避免在已命名的許可權或角色名稱中使用「管理員」，除非您想讓這些使用者擁有控制面板存取權。 深入瞭解[IMS移轉](../../technotes/using/migrate-users-to-ims.md)和[管理控制面板存取](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hant){target="_blank"}。
 
 * **[!UICONTROL APPROVAL ADMINISTRATION]**：您可以在工作流程與傳遞中設定多個核准步驟，以確保指派的運運算元或群組已核准目前狀態。 具有&#x200B;**[!UICONTROL APPROVAL ADMINISTRATION]**&#x200B;許可權的使用者可以設定核准步驟，也可以指派應核准這些步驟的運運算元或運運算元群組。
 
   >[!IMPORTANT]
   >
-  >**移轉至IMS後：**&#x200B;產品設定檔或包含「管理員」字樣的已命名許可權（例如「核准管理員」）將授予對Campaign控制面板的存取權。 深入瞭解[IMS移轉](../../technotes/using/migrate-users-to-ims.md)和[管理控制面板存取](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html){target="_blank"}。
+  >**移轉至IMS後：**&#x200B;產品設定檔或包含「管理員」字樣的已命名許可權（例如「核准管理員」）將授予對Campaign控制面板的存取權。 深入瞭解[IMS移轉](../../technotes/using/migrate-users-to-ims.md)和[管理控制面板存取](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hant){target="_blank"}。
 
 * **[!UICONTROL CENTRAL]**：適用於集中管理（分散式行銷）。
 
@@ -63,7 +63,7 @@ ht-degree: 3%
 
 * **[!UICONTROL START DELIVERIES]**：核准先前分析的傳遞的許可權。 傳遞分析後，傳遞會在各種核准步驟暫停，並需要核准才能繼續。 具有&#x200B;**[!UICONTROL START DELIVERIES]**&#x200B;許可權的使用者可核准傳遞。
 
-* **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY]**：使用SQL資料管理活動撰寫您自己的SQL指令碼，以建立和填入工作表格。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/sql-data-management.html){target="_blank"}。
+* **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY]**：使用SQL資料管理活動撰寫您自己的SQL指令碼，以建立和填入工作表格。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/sql-data-management.html?lang=zh-Hant){target="_blank"}。
 
 * **[!UICONTROL WORKFLOW]**：執行工作流程的許可權。 若無此許可權，使用者就無法啟動、停止或重新啟動工作流程。
 
@@ -79,4 +79,4 @@ ht-degree: 3%
 
 [此處](/help/platform/using/assets/access-rights-matrix.pdf)提供Adobe Campaign存取權矩陣。
 
-[![影像](assets/do-not-localize/user_management.png)](https://experienceleague.adobe.com/docs/campaign-classic/assets/access-rights-matrix.pdf)
+[![影像](assets/do-not-localize/user_management.png)](https://experienceleague.adobe.com/docs/campaign-classic/assets/access-rights-matrix.pdf?lang=zh-Hant)
