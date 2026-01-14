@@ -141,7 +141,7 @@ _2023 年 3 月 20 日_
 
 * 已改善「帳單」工作流程以最佳化效能。(NEO-47658)
 * 已改善追蹤工作流程，以在傳送大小較大的情況下最佳化效能。(NEO-45064)
-* 已改善追蹤管理，以修正 URL 中動態參數可能出現的問題。追蹤管理 v3 現在可處理 ajax 類型的 URL (參數在「#」之後)，並避免協力廠商工具修改追蹤 URL。若要套用此變更，您必須聯絡 Adobe。(NEO-46535)
+* 已改善追蹤管理，以修正 URL 中動態參數可能出現的問題。追蹤管理 v3 現在可處理 ajax 類型的 URL (參數在「#」之後)，並避免協力第三方修改追蹤 URL。若要套用此變更，您必須聯絡 Adobe。(NEO-46535)
 * 自此版本開始，已傳送電子郵件上的追蹤連結在升級期間仍可運作。 [閱讀更多](../../platform/using/faq-build-upgrade.md)
 
 <!--To apply this change, the marketing, tracking and mid servers need to be updated to 7.3.3. To enable the new tracking management mode, set the `emailLinksVersion` parameter to '3' in the configuration file of the marketing server. (NEO-46535)-->
