@@ -9,7 +9,7 @@ ht-degree: 4%
 
 **Génere un rapport Markdown avec vue d&#39;ensemble de tous les dossiers v7**
 
----
+&#x200B;---
 
 ## 📋 COPIER CE提示
 
@@ -483,7 +483,7 @@ Make it:
 - ✅ Ready to present to stakeholders
 ```
 
----
+&#x200B;---
 
 ## 使用狀況
 
@@ -493,7 +493,7 @@ Make it:
 4. **取得完整的Markdown報告**
 5. **另存新檔**： `v7-reorganization-overview.md`
 
----
+&#x200B;---
 
 ## 輸出預覽
 

@@ -9,7 +9,7 @@ ht-degree: 0%
 
 **Génere un rapport Markdown détaillé pour UN資料夾avec % de match**
 
----
+&#x200B;---
 
 ## 📋 COPIER CE提示
 
@@ -465,7 +465,7 @@ Include:
 Make all links clickable (v7 files + Experience League URLs).
 ```
 
----
+&#x200B;---
 
 ## 使用狀況
 
@@ -475,12 +475,13 @@ Make all links clickable (v7 files + Experience League URLs).
    ```
    📁 **Analyze**: /Users/.../help/[YOUR-FOLDER]/using/
    ```
+
 3. **貼上至游標**
 4. **執行分析**
 5. **取得完整的Markdown報告**
 6. **另存新檔**： `[folder]-detailed-analysis.md`
 
----
+&#x200B;---
 
 ## 資料夾範例
 
@@ -490,7 +491,7 @@ Make all links clickable (v7 files + Experience League URLs).
 - `/help/platform/using/` （61個檔案）
 - `/help/web/using/` （26個檔案）
 
----
+&#x200B;---
 
 ## 輸出預覽
 
