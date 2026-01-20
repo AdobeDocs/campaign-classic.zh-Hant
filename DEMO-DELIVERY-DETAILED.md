@@ -35,11 +35,11 @@ ht-degree: 7%
 |---|---------|----------|---------|-------|--------|
 | 1 | `about-email-channel.md` | [campaign-web/v8/電子郵件](https://experienceleague.adobe.com/en/docs/campaign-web/v8/email) | 95% | v8提供完整的電子郵件基本知識 | 🗑️ DELETE |
 | 2 | `communication-channels.md` | [campaign-web/v8/msg](https://experienceleague.adobe.com/en/docs/campaign-web/v8/msg) | 85% | v8中的管道概觀 | 🗑️ DELETE |
-| 3 | `steps-about-delivery-creation-steps.md` | [campaign-web/v8/msg/gs-deliveries](https://experienceleague.adobe.com/en/docs/campaign-web/v8/msg/gs-deliveries) | 90% | v8中的傳遞流程 | 🗑️ DELETE |
-| 4 | `key-steps-when-creating-a-delivery.md` | [campaign-web/v8/msg/gs-deliveries](https://experienceleague.adobe.com/en/docs/campaign-web/v8/msg/gs-deliveries) | 90% | 與上述相同 | 🗑️ DELETE |
+| 3 | `steps-about-delivery-creation-steps.md` | [campaign-web/v8/msg/gs-deliveries](https://experienceleague.adobe.com/zh-hant/docs/campaign-web/v8/msg/gs-deliveries) | 90% | v8中的傳遞流程 | 🗑️ DELETE |
+| 4 | `key-steps-when-creating-a-delivery.md` | [campaign-web/v8/msg/gs-deliveries](https://experienceleague.adobe.com/zh-hant/docs/campaign-web/v8/msg/gs-deliveries) | 90% | 與上述相同 | 🗑️ DELETE |
 | 5 | `delivery-best-practices.md` | [行銷活動/v8/傳送/最佳實務](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/best-practices) | 85% | v8中的最佳實務 | 🗑️ DELETE |
-| 6 | `steps-validating-the-delivery.md` | [campaign-web/v8/msg/gs-deliveries](https://experienceleague.adobe.com/en/docs/campaign-web/v8/msg/gs-deliveries) | 80% | v8中的驗證 | 🗑️ DELETE |
-| 7 | `steps-sending-the-delivery.md` | [campaign-web/v8/msg/gs-deliveries](https://experienceleague.adobe.com/en/docs/campaign-web/v8/msg/gs-deliveries) | 85% | 在v8中傳送 | 🗑️ DELETE |
+| 6 | `steps-validating-the-delivery.md` | [campaign-web/v8/msg/gs-deliveries](https://experienceleague.adobe.com/zh-hant/docs/campaign-web/v8/msg/gs-deliveries) | 80% | v8中的驗證 | 🗑️ DELETE |
+| 7 | `steps-sending-the-delivery.md` | [campaign-web/v8/msg/gs-deliveries](https://experienceleague.adobe.com/zh-hant/docs/campaign-web/v8/msg/gs-deliveries) | 85% | 在v8中傳送 | 🗑️ DELETE |
 | 8 | `deliveries-with-recurring-dates.md` | [campaign-web/v8/workflows](https://experienceleague.adobe.com/en/docs/campaign-web/v8/workflows) | 70% | 檢查v8中的工作流程排程器 | 🔍個評論 |
 
 **摘要**： 7 DELETE， 0 KEEP， 0 MOVE， 1個評論
@@ -53,7 +53,7 @@ ht-degree: 7%
 | 9 | `creating-an-email-delivery.md` | [campaign-web/v8/email/create-email](https://experienceleague.adobe.com/en/docs/campaign-web/v8/email/create-email) | 95% | 電子郵件建立完整記錄 | 🗑️ DELETE |
 | 10 | `email-parameters.md` | [campaign-web/v8/email/configure-and-send](https://experienceleague.adobe.com/en/docs/campaign-web/v8/email/configure-and-send) | 85% | v8中的設定 | 🗑️ DELETE |
 | 11 | `defining-the-email-content.md` | [campaign-web/v8/email/edit-content](https://experienceleague.adobe.com/en/docs/campaign-web/v8/email/edit-content) | 90% | v8中的內容編輯 | 🗑️ DELETE |
-| 12 | `email-content-templates.md` | [campaign-web/v8/msg/delivery-template](https://experienceleague.adobe.com/en/docs/campaign-web/v8/msg/delivery-template) | 85% | v8中的範本 | 🗑️ DELETE |
+| 12 | `email-content-templates.md` | [campaign-web/v8/msg/delivery-template](https://experienceleague.adobe.com/zh-hant/docs/campaign-web/v8/msg/delivery-template) | 85% | v8中的範本 | 🗑️ DELETE |
 | 13 | `formatting.md` | [campaign-web/v8/email/edit-content](https://experienceleague.adobe.com/en/docs/campaign-web/v8/email/edit-content) | 80% | v8中的電子郵件設計工具 | 🗑️ DELETE |
 | 14 | `inserting-images.md` | [campaign-web/v8/email/edit-content](https://experienceleague.adobe.com/en/docs/campaign-web/v8/email/edit-content) | 85% | v8中的影像處理 | 🗑️ DELETE |
 | 15 | `attaching-files.md` | [campaign-web/v8/電子郵件](https://experienceleague.adobe.com/en/docs/campaign-web/v8/email) | 90% | v8中的附件 | 🗑️ DELETE |
@@ -73,7 +73,7 @@ ht-degree: 7%
 | 27 | `sms-channel.md` | [campaign-web/v8/msg/send-sms](https://experienceleague.adobe.com/en/docs/campaign-web/v8/msg/send-sms) | 90% | v8中的SMS基本概念 | 🗑️ DELETE |
 | 28 | `sms-send.md` | [campaign-web/v8/msg/send-sms](https://experienceleague.adobe.com/en/docs/campaign-web/v8/msg/send-sms) | 95% | SMS在v8中傳送 | 🗑️ DELETE |
 | 29 | **`sms-set-up-mid.md`** | 無 | **0%** | **中間來源設定（僅限內部部署）** | ✅ **保留** |
-| 30 | `sms-protocol.md` | [行銷活動/v8/傳送/簡訊/smpp](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/sms) | 60% | 進階SMPP，檢查v8深度 | 🔍個評論 |
+| 30 | `sms-protocol.md` | [行銷活動/v8/傳送/簡訊/smpp](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/sms) | 60% | 進階SMPP，檢查v8深度 | 🔍個評論 |
 | 31 | `sms-create.md` | [campaign-web/v8/msg/send-sms](https://experienceleague.adobe.com/en/docs/campaign-web/v8/msg/send-sms) | 90% | 在v8中建立簡訊 | 🗑️ DELETE |
 | 32 | `line-channel.md` | [行銷活動/v8/傳送/行](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/line) | 85% | v8中的LINE頻道 | 🗑️ DELETE |
 | 33 | `sms-content.md` | [campaign-web/v8/msg/send-sms](https://experienceleague.adobe.com/en/docs/campaign-web/v8/msg/send-sms) | 90% | v8中的簡訊內容 | 🗑️ DELETE |
@@ -129,8 +129,8 @@ ht-degree: 7%
 
 | # | v7檔案 | v8符合 | 符合% | 注意 | 動作 |
 |---|---------|----------|---------|-------|--------|
-| 55 | `about-templates.md` | [campaign-web/v8/msg/delivery-template](https://experienceleague.adobe.com/en/docs/campaign-web/v8/msg/delivery-template) | 90% | v8中的範本 | 🗑️ DELETE |
-| 56 | `creating-a-delivery-template.md` | [campaign-web/v8/msg/delivery-template](https://experienceleague.adobe.com/en/docs/campaign-web/v8/msg/delivery-template) | 95% | 在v8中建立範本 | 🗑️ DELETE |
+| 55 | `about-templates.md` | [campaign-web/v8/msg/delivery-template](https://experienceleague.adobe.com/zh-hant/docs/campaign-web/v8/msg/delivery-template) | 90% | v8中的範本 | 🗑️ DELETE |
+| 56 | `creating-a-delivery-template.md` | [campaign-web/v8/msg/delivery-template](https://experienceleague.adobe.com/zh-hant/docs/campaign-web/v8/msg/delivery-template) | 95% | 在v8中建立範本 | 🗑️ DELETE |
 | 57 | `about-seed-addresses.md` | [campaign/v8/send/test-and-send](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/test-and-send) | 95% | 種子完全在v8中 | 🗑️ DELETE |
 | 58-60 | *（其他3個範本檔案）* | 各種v8 | 85-95% | v8中的所有功能 | 🗑️ DELETE |
 
@@ -157,7 +157,7 @@ ht-degree: 7%
 |---|---------|----------|---------|-------|--------|
 | 75 | `understanding-delivery-failures.md` | [campaign/v8/send/delivery-failures](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/delivery-failures) | 85% | v8中紀錄的失敗 | 🗑️ DELETE |
 | 76 | `delivery-troubleshooting.md` | [campaign/v8/send/delivery-failures](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/delivery-failures) | 70% | 良好的秘訣，**移轉遺漏的內容** | ➡️移動 |
-| 77 | `troubleshooting-sms.md` | [行銷活動/v8/傳送/簡訊](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/sms) | 65% | SMS特定問題，**移轉** | ➡️移動 |
+| 77 | `troubleshooting-sms.md` | [行銷活動/v8/傳送/簡訊](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/sms) | 65% | SMS特定問題，**移轉** | ➡️移動 |
 | 78 | **`monitoring-deliverability.md`** | 無 | **0%** | **內部部署監視工具** | ✅ **保留** |
 | 79-83 | *（其他5個疑難排解檔案）* | 各種v8 | 60-85% | 混合，逐一檢閱 | 🗑️ DELETE / ➡️移動 |
 
