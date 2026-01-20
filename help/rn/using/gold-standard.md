@@ -56,7 +56,7 @@ _2021年 4 月 14 日_
 
 >[!CAUTION]
 >
-> * 如果您使用 Adobe ID 並透過 Adobe Identity Management Service (IMS) 連線至 Campaign，則必須升級 Campaign 伺服器和用戶端主控台，才能在 2021 年 6 月 30 日&#x200B;**之後連線至 Campaign**。[深入瞭解](../../technotes/using/ims-updates.md)
+> * 如果您使用 Adobe ID 並透過 Adobe Identity Management Service (IMS) 連線至 Campaign，則必須升級 Campaign 伺服器和用戶端主控台，才能在 2021 年 6 月 30 日&#x200B;**之後連線至 Campaign**。[了解更多](../../technotes/using/ims-updates.md)
 > * 此版本隨附[安全性修正](https://helpx.adobe.com/tw/security/products/campaign/apsb21-04.html)：升級為強制性以便強化環境安全性。
 > * 如果您透過 OAuth 驗證使用 Experience Cloud 觸發程序整合，您必須依照[本頁](../../integrations/using/about-triggers.md#implement)所述移至 Adobe I/O。**2021 年 9 月**[已淘汰](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)具有 Campaign 的舊版 oAuth 驗證模式。 託管環境繼續使用延伸功能，直到 **2022 年 2 月 23 日**。若為內部部署或混型合客戶，請聯絡 Adobe 客戶服務，延長支援時間至 2022 年 2 月。 您必須向 Adobe 提供 [OAuth 應用程式的 AppID](../../integrations/using/configuring-pipeline.md#step-optional)。
 >
@@ -66,7 +66,7 @@ _2021年 3 月 2 日_
 
 建置 9032@10c2709 包含以下修正：
 
-* 修正迴歸，防止在傳遞中使用主控台的某些元件，例如日期選擇器和影像管理。 （NEO-31453、NEO-31454）
+* 修正迴歸，防止在傳遞中使用主控台的某些元件，例如日期選擇器和影像管理。 (NEO-31453、NEO-31454)
 
 **僅主控台升級為強制性。不需要升級伺服器。**
 
@@ -110,7 +110,7 @@ _2020 年 6 月 22 日_
 
 建置 9032@800be2e 包含以下修正：
 
-* 改善了 iOS HTTP2 連接器（協力廠商更新和錯誤管理）。(NEO-25904、NEO-25903、NEO-25799)
+* 改善了 iOS HTTP2 連接器（第三方更新和錯誤管理）。(NEO-25904、NEO-25903、NEO-25799)
 
 以下為與追蹤連結安全性機制相關之修正（參閱[「安全性與隱私權檢查清單](https://helpx.adobe.com/tw/campaign/kb/acc-security.html#signature-mechanism)」以瞭解更多）：
 
@@ -137,13 +137,13 @@ _2020 年 4 月 29 日_
 * 修正了無法在 Line 傳遞顯示影像的問題。(NEO-23207)
 * 修正&#x200B;**檔案傳輸**&#x200B;活動使 SFTP 金鑰驗證無法在 Debian 9 運作的問題。(NEO-23183)
 * 修正了在高頻率傳送時，可能影響推播通知的問題。(NEO-20516)
-* 修正了在優惠方案回應管理中，可能導致 Web 伺服器當機的問題。(NEO-19482)
+* 修正了在產品建議回應管理中，可能導致 Web 伺服器當機的問題。(NEO-19482)
 * 修正了在 LibreOffice 管理中，無法匯出報告的錯誤。(NEO-20982)
 * 修正了使用意見調查活動升級許多工作流程時，而導致錯誤的問題。
 * 改善了 LibreOffice 管理，以防止在電子郵件預覽時，無法預覽 .odt 檔案。
 * 改善了 Apache 連線管理，以防止網站服務的延遲。
 * 改善了在&#x200B;**「關於」**&#x200B;功能表中的版本標籤顯示（7 位數）。
-* 修正了清單管理中，造成無法發佈優惠方案的迴歸。
+* 修正了清單管理中，造成無法發佈產品建議的迴歸。
 * 修正了造成清理工作流程當機的迴歸。
 * 修正了清理工作流程記錄檔的次要迴歸。
 
@@ -211,7 +211,7 @@ _2019 年 8 月 13 日_
 * 修正了在設定助理時，排程器活動產生無用錯誤訊息的問題。正在還原 NEO-11662 更新。(NEO-17097)
 * 修正了 NEO-12727 所導致的迴歸，其在執行兩次測試活動時，可能會導致工作流程停止運行。(NEO-16835)
 * 修正了在 API 調用中使用無效或過期的續存期間權杖時，導致回傳錯誤 HTTP 代碼的問題（為 HTTP 200 OK，而非 HTTP 403 Forbidden）。(NEO-16826)
-* 修正了 DKIM 金鑰不再內嵌在電子郵件中的問題，其導致的傳遞問題。(NEO-16804)
+* 修正了 DKIM 金鑰不再嵌入在電子郵件中的問題，其導致的傳遞問題。(NEO-16804)
 * 修正了各種工作流程排程的問題。排程工作流程以進行每天一次的運行，無需考慮排程器配置。(NEO-16619、NEO-16426)
 
 
@@ -297,7 +297,7 @@ _2019 年 8 月 13 日_
 <tr>
 <td>Libre Office</td>
 <td>
-<p>6（及舊版，若是內嵌在您的系統中）</p>
+<p>6 (及舊版，若是嵌入在您的系統中)</p>
 </td>
 </tr>
 <tr>
@@ -368,14 +368,14 @@ _2019 年 8 月 13 日_
 <tr>
 <td>Salesforce 連接器 API</td>
 <td>
-<p>API 37 版</p>
+<p>API 37 版本</p>
 </td>
 </tr>
 <tr>
 <td>SFDC API</td>
 <td>
-<p>API 21 版</p>
-<p>API 15 版</p>
+<p>API 21 版本</p>
+<p>API 15 版本</p>
 </td>
 </tr>
 <tr>
