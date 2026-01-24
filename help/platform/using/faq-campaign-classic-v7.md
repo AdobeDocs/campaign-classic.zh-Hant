@@ -60,7 +60,7 @@ Adobe Campaign Classic v7隨附一組模組和選項。 這些模組及其組態
 
 **快速入門：**&#x200B;請聯絡您的Adobe代表，評估您的環境並透過Adobe Professional Services制定詳細的移轉計畫。
 
-深入瞭解[移轉至Managed Services](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic-blogs/migrate-your-adobe-campaign-v7-onprem-hybrid-environment-to/ba-p/681605){target="_blank"}。
+深入瞭解[移轉至Managed Services](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic-blogs/migrate-your-adobe-campaign-v7-onprem-hybrid-environment-to/ba-p/681605?profile.language=zh-Hant){target="_blank"}。
 
 ## 組建版本升級(Campaign Classic v7) {#build-upgrades-v7}
 
@@ -214,7 +214,7 @@ Adobe Campaign v7使用者介面提供4種語言版本：英文、法文、德�
 
 **社群和支援：**
 
-* [Campaign社群論壇](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){target="_blank"}
+* [Campaign社群論壇](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=zh-Hant){target="_blank"}
 * [Adobe支援](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}
 * [控制面板（託管客戶）](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hant){target="_blank"}
 

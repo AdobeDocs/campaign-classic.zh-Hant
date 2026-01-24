@@ -106,7 +106,7 @@ Adobe身分服務(IMS)將從2021年6月30日&#x200B;**起停止支援舊版Inter
 
 ## 與Experience Cloud觸發程式整合 {#acc-triggers-updates}
 
-舊版oAuth驗證服務已到期。 已將Triggers整合驗證（最初根據oAUTH驗證設定來存取管道）移至Adobe I/O。促銷活動[的舊版oAuth驗證模式已於&#x200B;**2021年9月日**&#x200B;淘汰](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)。 託管環境繼續使用延伸功能，直到 **2022 年 2 月 23 日**。若為內部部署或混合客戶，請聯絡Adobe客戶服務，將支援延長至2022年2月。 您必須向 Adobe 提供 [OAuth 應用程式的 AppID](../../integrations/using/configuring-pipeline.md#step-optional)。
+舊版oAuth驗證服務已到期。 已將Triggers整合驗證（最初根據oAUTH驗證設定來存取管道）移至Adobe I/O。促銷活動[的舊版oAuth驗證模式已於&#x200B;**2021年9月日**&#x200B;淘汰](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411?profile.language=zh-Hant)。 託管環境繼續使用延伸功能，直到 **2022 年 2 月 23 日**。若為內部部署或混合客戶，請聯絡Adobe客戶服務，將支援延長至2022年2月。 您必須向 Adobe 提供 [OAuth 應用程式的 AppID](../../integrations/using/configuring-pipeline.md#step-optional)。
 
 **您有受到影響嗎？**
 

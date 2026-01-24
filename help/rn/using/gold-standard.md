@@ -58,7 +58,7 @@ _2021年 4 月 14 日_
 >
 > * 如果您使用 Adobe ID 並透過 Adobe Identity Management Service (IMS) 連線至 Campaign，則必須升級 Campaign 伺服器和用戶端主控台，才能在 2021 年 6 月 30 日&#x200B;**之後連線至 Campaign**。[了解更多](../../technotes/using/ims-updates.md)
 > * 此版本隨附[安全性修正](https://helpx.adobe.com/tw/security/products/campaign/apsb21-04.html)：升級為強制性以便強化環境安全性。
-> * 如果您透過 OAuth 驗證使用 Experience Cloud 觸發程序整合，您必須依照[本頁](../../integrations/using/about-triggers.md#implement)所述移至 Adobe I/O。**2021 年 9 月**[已淘汰](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)具有 Campaign 的舊版 oAuth 驗證模式。 託管環境繼續使用延伸功能，直到 **2022 年 2 月 23 日**。若為內部部署或混型合客戶，請聯絡 Adobe 客戶服務，延長支援時間至 2022 年 2 月。 您必須向 Adobe 提供 [OAuth 應用程式的 AppID](../../integrations/using/configuring-pipeline.md#step-optional)。
+> * 如果您透過 OAuth 驗證使用 Experience Cloud 觸發程序整合，您必須依照[本頁](../../integrations/using/about-triggers.md#implement)所述移至 Adobe I/O。**2021 年 9 月**[已淘汰](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411?profile.language=zh-Hant)具有 Campaign 的舊版 oAuth 驗證模式。 託管環境繼續使用延伸功能，直到 **2022 年 2 月 23 日**。若為內部部署或混型合客戶，請聯絡 Adobe 客戶服務，延長支援時間至 2022 年 2 月。 您必須向 Adobe 提供 [OAuth 應用程式的 AppID](../../integrations/using/configuring-pipeline.md#step-optional)。
 >
 >在[[!DNL Gold Standard] 本節](../../rn/using/gold-standard.md)了解更多資訊
 

@@ -132,7 +132,7 @@ ht-degree: 67%
 
 ### 詢問專家！
 
-加入 Campaign Classic 社群：在現有問題中搜尋答案，或向社群提出問題。 [加入交談](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){_blank}。
+加入 Campaign Classic 社群：在現有問題中搜尋答案，或向社群提出問題。 [加入交談](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=zh-Hant){_blank}。
 
 ### 存取 Campaign 下載中心
 
