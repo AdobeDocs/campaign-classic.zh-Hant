@@ -6,22 +6,26 @@ feature: Overview, Troubleshooting
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-source-git-commit: 295e3596d9291cbcc55e2d264309141526c3806b
+source-git-commit: 8d9bb9d2ff4450646bbf218804b8c8b4459b5a91
 workflow-type: tm+mt
-source-wordcount: '1527'
-ht-degree: 2%
+source-wordcount: '1345'
+ht-degree: 3%
 
 ---
 
 # Campaign Classic v7常見問題集 {#campaign-classic-v7-faq}
 
-此常見問題集解決Adobe Campaign Classic v7架構、部署模式和v7特定功能的特定問題。
-
-**如需Campaign常見問題的完整解答** （工作流程、傳送、對象、報表、個人化等），請參閱&#x200B;[**Campaign v8完整常見問答集**](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html){target="_blank"}，此問答集提供依主題整理的詳細解答。
+>[!NOTE]
+>
+>此常見問題集解決Adobe Campaign Classic v7架構、部署模式和v7特定功能的特定問題。
+>
+>**如需Campaign常見問題的完整解答** （工作流程、傳送、對象、報表、個人化等），請參閱&#x200B;[**Campaign v8完整常見問答集**](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-faq-comprehensive){target="_blank"}，此問答集提供依主題整理的詳細解答。
 
 ## Campaign Classic v7架構和部署 {#v7-architecture}
 
-### Campaign Classic v7提供哪些託管模型？ {#what-are-the-hosting-models-available-in-campaign-classic-v7}
+尋找Campaign Classic v7的託管模式、部署差異和移轉路徑的相關解答。 這些問題著重於基礎架構選擇和相關責任。
+
++++ Campaign Classic v7提供哪些託管模型？{#what-are-the-hosting-models-available-in-campaign-classic-v7}
 
 Adobe Campaign Classic v7提供三種部署模式：
 
@@ -33,9 +37,11 @@ Adobe Campaign Classic v7提供三種部署模式：
 
 [按一下這裡以深入瞭解](../../installation/using/hosting-models.md)託管模式及其差異。
 
-**注意：** Campaign v8僅以Managed Cloud Services的形式提供。 [瞭解行銷活動v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/new/whats-new.html?lang=zh-Hant){target="_blank"}。
+**注意：** Campaign v8僅以Managed Cloud Services的形式提供。 [瞭解行銷活動v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/new/whats-new.html){target="_blank"}。
 
-### 在內部部署環境與託管環境中運作有何不同？ {#what-are-the-differences-when-working-on-premise-vs-in-a-hosted-environment}
++++
+
++++ 在內部部署環境與託管環境下運作有何不同？{#what-are-the-differences-when-working-on-premise-vs-in-a-hosted-environment}
 
 Adobe Campaign Classic v7隨附一組模組和選項。 這些模組及其組態是否可用取決於安裝的[部署型別](../../installation/using/hosting-models.md)：託管(Managed Services)、混合或內部部署。
 
@@ -47,7 +53,9 @@ Adobe Campaign Classic v7隨附一組模組和選項。 這些模組及其組態
 
 [按一下這裡以取得完整功能矩陣](../../installation/using/capability-matrix.md)。
 
-### 如何從內部部署/混合部署移轉至Adobe Managed Services？ {#how-do-i-migrate-from-on-premise-hybrid-to-adobe-managed-services}
++++
+
++++ 如何從內部部署/混合部署移轉至Adobe Managed Services？{#how-do-i-migrate-from-on-premise-hybrid-to-adobe-managed-services}
 
 移轉至Adobe Managed Services可改善擴充性、安全性，並降低IT負荷。 在轉換至Campaign v8之前，這通常是踏腳石。
 
@@ -60,47 +68,49 @@ Adobe Campaign Classic v7隨附一組模組和選項。 這些模組及其組態
 
 **快速入門：**&#x200B;請聯絡您的Adobe代表，評估您的環境並透過Adobe Professional Services制定詳細的移轉計畫。
 
-深入瞭解[移轉至Managed Services](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic-blogs/migrate-your-adobe-campaign-v7-onprem-hybrid-environment-to/ba-p/681605?profile.language=zh-Hant){target="_blank"}。
+深入瞭解[移轉至Managed Services](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic-blogs/migrate-your-adobe-campaign-v7-onprem-hybrid-environment-to/ba-p/681605){target="_blank"}。
+
++++
+
++++ 我應該從Campaign Classic v7移轉至Campaign v8嗎？{#should-i-migrate-to-v8}
+
+Campaign v8是Adobe的策略平台，適用於需要大量行銷活動、現代Web UI、雲端原生優勢和長期支援的組織。 Campaign Classic v7將於未來幾年終止支援。
+
+**如果您：**，請考慮移轉至Campaign v8
+
+* 處理大量資料或體驗效能問題
+* 想要減少IT開銷和基礎建設管理（v8僅限於「受管理的雲端服務」）
+* 需要現代化的UI和Adobe Experience Platform整合
+* 想要具備自動更新功能的未來防護技術
+* 目前位於託管/受管理服務上（更簡單的移轉路徑）
+
+**重要考量：**
+
+* Campaign v8是以Managed Cloud Services獨家提供的功能（無內部部署/混合選項）
+* 需要規劃自訂和整合的移轉
+* FFDA架構帶來效能，但需要某些工作流程/API調整
+
+**後續步驟：**&#x200B;請聯絡您的Adobe代表，評估移轉準備程度並存取移轉工具。
+
+了解更多：
+
+* [Campaign v8總覽](https://experienceleague.adobe.com/docs/campaign/campaign-v8/new/whats-new.html){target="_blank"}
+* [從Campaign Classic v7轉變到v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/v7-to-v8.html){target="_blank"}
+* [Campaign v8完整常見問題集](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html){target="_blank"}
+
+**如需工作流程、傳送、對象、報表、個人化等促銷活動相關常見問題的詳細解答**，請造訪[Campaign v8完整常見問題集](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html){target="_blank"}。
+
++++
 
 ## 組建版本升級(Campaign Classic v7) {#build-upgrades-v7}
 
-### 什麼是Campaign Classic v7的組建版本升級？ {#what-is-a-build-upgrade-v7}
-
-組建版本升級指的是Adobe Campaign Classic v7軟體更新至最新的安全組建編號，但仍維持相同的主要/次要組建層級。 例如： Campaign Classic v7版本編號9026至Campaign v7版本編號9032。
-
-Adobe Campaign 會定期更新。次要版本已發行，其中包含新功能、改進和修正。 此外，僅具有累積修正的組建版本會定期發行。
-
-在本節[瞭解更多](../../rn/using/rn-overview.md)。
-
-### 如何將Campaign Classic v7升級至最新版本？ {#how-can-i-upgrade-campaign-classic-v7}
-
-Adobe Campaign Classic使用多種技術來傳遞價值。 這種技術組合，需要您定期升級Campaign Classic v7執行個體，以確保使用最新版本來提供優越的安全性、穩定性和效能。
-
-**對於託管客戶：**&#x200B;您會透過最新穩定版本，自動受益於Campaign的年度升級。 Adobe會管理升級程式並協調與您進行的時機。
-
-**對於內部部署/混合部署客戶：**&#x200B;您負責執行升級。 Adobe強烈建議每年升級至少一次。
-
-[閱讀本節](../../production/using/build-upgrade.md)以瞭解如何更新您的環境，並閱讀[組建升級常見問答集](../../platform/using/faq-build-upgrade.md)以瞭解有關此特定主題的詳細問題。
-
-### Adobe Campaign Classic v7的最新版本是什麼？ {#what-is-the-latest-version-v7}
-
-最新Campaign Classic v7版本（包括新功能和檔案）已在最新[發行說明](../../rn/using/latest-release.md)中詳細說明。
-
-### 如何知道我執行的是哪個Campaign Classic v7版本？ {#how-do-i-know-which-version-v7}
-
-從Adobe Campaign使用者端主控台的&#x200B;**[!UICONTROL Help > About...]**&#x200B;功能表檢查您的版本和組建編號。 **[!UICONTROL About]**&#x200B;方塊包含您為主控台和伺服器執行的版本和組建的詳細資訊。
-
-在本節[瞭解更多](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)。
-
-### 組建版本升級與版本升級是否相同？ {#is-build-upgrade-same-as-version-upgrade}
-
-沒有。組建版本升級是指定主要版本中的累加式更新，而版本升級則是主要版本之間的變更。 組建升級簡單明瞭，通常不會涉及重大的架構、技術或資料模型變更。
-
-版本升級（例如v7到v8）通常伴隨著重大的技術變更，並且根據您的自訂，可能需要設定變更或部分重新實施。
+如需組建版本升級指南及相關常見問答集，請參閱[組建版本升級常見問答集](faq-build-upgrade.md)及[組建版本升級檔案](../../production/using/build-upgrade.md)。
 
 ## Campaign Classic v7設定 {#v7-configuration}
 
-### 我可以變更Campaign Classic v7介面的語言嗎？ {#can-i-change-language-v7}
+這些問題涵蓋Campaign Classic v7中的常見設定任務和原則，從語言設定到安全性強化。 使用這些選項來驗證設定選擇和操作實務。
+
++++ 我可以變更Campaign Classic v7介面的語言嗎？{#can-i-change-language-v7}
 
 建立執行個體時，會選取Campaign Classic v7語言。 **您之後無法變更它。**
 
@@ -110,9 +120,11 @@ Adobe Campaign v7使用者介面提供4種語言版本：英文、法文、德�
 
 [在本章節了解更多資訊](../../installation/using/creating-an-instance-and-logging-on.md)。
 
-**注意：** Campaign v8網頁UI可讓使用者獨立變更其介面語言。 [了解更多](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/connect.html#language-pref){target="_blank"}。
+**注意：** Campaign v8網頁UI可讓使用者獨立變更其介面語言。 [了解更多資訊](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/connect.html#language-pref){target="_blank"}。
 
-### 如何在Campaign Classic v7中設定安全性區域？ {#how-can-i-configure-security-zones-v7}
++++
+
++++ 如何在Campaign Classic v7中設定安全性區域？{#how-can-i-configure-security-zones-v7}
 
 您可以使用Security Zones自助服務介面來管理Adobe Campaign Classic v7部署之VPN Security Zone設定中的專案。 這主要與內部部署和混合部署有關。
 
@@ -122,7 +134,9 @@ Adobe Campaign v7使用者介面提供4種語言版本：英文、法文、德�
 
 **注意：**&#x200B;託管/Managed Services客戶應聯絡Adobe以設定安全性區域。
 
-### Adobe Campaign Classic v7可以與輕型目錄存取協定(LDAP)整合嗎？ {#can-campaign-classic-integrate-with-ldap}
++++
+
++++ Adobe Campaign Classic v7可以與輕型目錄存取協定(LDAP)整合嗎？{#can-campaign-classic-integrate-with-ldap}
 
 是。 作為&#x200B;**內部部署/混合式客戶**，您可以將Campaign Classic v7與LDAP目錄整合，以進行集中驗證和使用者管理。
 
@@ -137,7 +151,9 @@ Adobe Campaign v7使用者介面提供4種語言版本：英文、法文、德�
 
 **注意：** LDAP整合可用於內部部署和混合部署。 託管客戶使用Adobe IMS進行驗證。
 
-### 內部部署的安全性最佳實務是什麼？ {#security-best-practices-on-premise}
++++
+
++++ 內部部署的安全性最佳實務是什麼？{#security-best-practices-on-premise}
 
 與託管環境相比，內部部署和混合部署需要額外的安全設定和強化。
 
@@ -155,7 +171,9 @@ Adobe Campaign v7使用者介面提供4種語言版本：英文、法文、德�
 
 閱讀[安全性設定檢查清單](https://helpx.adobe.com/tw/campaign/kb/acc-security.html){target="_blank"}，以探索有關安全性設定和強化內部部署的重點要素。
 
-### 如何清除使用者端主控台快取？ {#how-do-i-clear-console-cache}
++++
+
++++ 如何清除使用者端主控台快取？{#how-do-i-clear-console-cache}
 
 清除Campaign使用者端主控台快取可解決許多常見的顯示和功能問題。 快取會儲存本機設定檔，這些設定檔有時可能會損毀或過時。
 
@@ -188,9 +206,25 @@ Adobe Campaign v7使用者介面提供4種語言版本：英文、法文、德�
 
 深入瞭解[Campaign使用者端主控台檔案](../../platform/using/launching-adobe-campaign.md)。
 
++++
+
++++ 託管客戶可在何處管理執行個體設定？{#where-to-manage-instance-settings}
+
+[控制面板](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hant){target="_blank"}可協助Adobe Campaign的產品管理員管理設定並追蹤每個執行個體的使用情形。 其直覺式介面可讓您監視關鍵資產並執行管理工作，例如IP允許清單更新、SFTP儲存空間監控、金鑰管理等。
+
+**主要優點：**
+
+* 無需聯絡客戶服務，即可快速變更設定。
+* 根據不同時間的不同業務需求進行設定。
+* 根據需求控制存取設定，以加強安全性。
+
++++
+
 ## 取得協助 {#getting-help}
 
-### 何處可以找到有關Campaign Classic v7的詳細資訊？ {#where-to-find-more-info-v7}
+尋找Campaign Classic v7的重要檔案、常見問題集和支援管道，包括社群論壇和Adobe支援的連結。
+
++++ 在哪裡可以找到Campaign Classic v7檔案？{#where-to-find-more-info-v7}
 
 **檔案與資源：**
 
@@ -212,36 +246,13 @@ Adobe Campaign v7使用者介面提供4種語言版本：英文、法文、德�
 * 開發人員資源
 * 隱私權與合規性
 
++++
+
++++ 如何取得Campaign Classic v7的社群或Adobe支援？{#where-to-get-support-v7}
+
 **社群和支援：**
 
-* [Campaign社群論壇](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=zh-Hant){target="_blank"}
+* [Campaign社群論壇](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){target="_blank"}
 * [Adobe支援](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}
-* [控制面板（託管客戶）](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hant){target="_blank"}
 
-### 我應該從Campaign Classic v7移轉至Campaign v8嗎？ {#should-i-migrate-to-v8}
-
-Campaign v8是Adobe的策略平台，適用於需要大量行銷活動、現代Web UI、雲端原生優勢和長期支援的組織。 Campaign Classic v7將於未來幾年終止支援。
-
-**如果您：**，請考慮移轉至Campaign v8
-
-* 處理大量資料或體驗效能問題
-* 想要減少IT開銷和基礎建設管理（v8僅限於「受管理的雲端服務」）
-* 需要現代化的UI和Adobe Experience Platform整合
-* 想要具備自動更新功能的未來防護技術
-* 目前位於託管/受管理服務上（更簡單的移轉路徑）
-
-**重要考量：**
-
-* Campaign v8是以Managed Cloud Services獨家提供的功能（無內部部署/混合選項）
-* 需要規劃自訂和整合的移轉
-* FFDA架構帶來效能，但需要某些工作流程/API調整
-
-**後續步驟：**&#x200B;請聯絡您的Adobe代表，評估移轉準備程度並存取移轉工具。
-
-了解更多：
-
-* [Campaign v8總覽](https://experienceleague.adobe.com/docs/campaign/campaign-v8/new/whats-new.html?lang=zh-Hant){target="_blank"}
-* [從Campaign Classic v7轉變到v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/v7-to-v8.html){target="_blank"}
-* [Campaign v8完整常見問題集](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html){target="_blank"}
-
-**如需工作流程、傳送、對象、報表、個人化等促銷活動相關常見問題的詳細解答**，請造訪[Campaign v8完整常見問題集](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html){target="_blank"}。
++++
