@@ -24,7 +24,7 @@ ht-degree: 19%
 >[!NOTE]
 >
 >如需[!DNL Adobe Campaign]核心功能的詳細資訊，請參閱[本節](../../platform/using/about-adobe-campaign-classic.md)。\
->[!DNL Campaign v8 documentation](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hant){target="_blank"}中詳細說明了與各種通道上的母體目標定位、訊息個人化和訊息傳遞相關的功能。
+>[[!DNL Campaign v8 documentation]](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hant){target="_blank"}中詳細說明了與各種通道上的母體目標定位、訊息個人化和訊息傳遞相關的功能。
 
 ![作法影片縮圖](assets/do-not-localize/how-to-video.png) [在影片中探索行銷活動的主要概念](#video)
 
