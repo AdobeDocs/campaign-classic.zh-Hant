@@ -7,15 +7,15 @@ feature: Campaigns
 hide: true
 hidefromtoc: true
 exl-id: 4e0df18f-3623-4dfb-a2f8-ad293dbc4dd5
-source-git-commit: 4a7ecd170bd27f43d515da71c212bbdaa306d602
+source-git-commit: df014d3f3029a61176e5117e27f3d2e8228fc407
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '434'
 ht-degree: 19%
 
 ---
 
-# 設計和執行行銷活動{#designing-marketing-campaigns}
 
+# 設計和執行行銷活動{#designing-marketing-campaigns}
 
 [!DNL Adobe Campaign]可讓您定義、最佳化、執行和分析通訊與行銷活動。 [!DNL Adobe Campaign]就像行銷策略的統一訂單和執行中心。 如需詳細資訊，請參閱[存取行銷活動](../../distributed/using/accessing-campaigns.md)和[建立行銷活動](../../campaign/using/setting-up-marketing-campaigns.md)。
 
@@ -23,8 +23,10 @@ ht-degree: 19%
 
 >[!NOTE]
 >
->如需[!DNL Adobe Campaign]核心功能的詳細資訊，請參閱[本節](../../platform/using/about-adobe-campaign-classic.md)。\
->[[!DNL Campaign v8 documentation]](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hant){target="_blank"}中詳細說明了與各種通道上的母體目標定位、訊息個人化和訊息傳遞相關的功能。
+>如需[!DNL Adobe Campaign]核心功能的詳細資訊，請參閱[本節](../../platform/using/about-adobe-campaign-classic.md)。
+>
+>與各種通道上的母體目標定位、訊息個人化和訊息傳送相關的功能，在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hant){target="_blank"}中有詳細說明。
+
 
 ![作法影片縮圖](assets/do-not-localize/how-to-video.png) [在影片中探索行銷活動的主要概念](#video)
 

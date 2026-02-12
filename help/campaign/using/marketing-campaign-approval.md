@@ -1,22 +1,22 @@
 ---
-source-git-commit: 4a7ecd170bd27f43d515da71c212bbdaa306d602
+product: campaign
+title: 設定及管理核准流程
+description: 瞭解如何管理行銷活動的核准
+language: en
+role: User
+feature: Approvals, Campaigns
+hide: true
+hidefromtoc: true
+exl-id: 8cbb2445-f5e4-4a25-ba7e-56e39ca9d3ce
+source-git-commit: df014d3f3029a61176e5117e27f3d2e8228fc407
 workflow-type: tm+mt
-source-wordcount: '2684'
+source-wordcount: '2665'
 ht-degree: 0%
 
 ---
-—product： campaign
-標題：設定及管理核准流程
-description：瞭解如何管理行銷活動的核准
-語言： en
-角色：使用者
-功能：核准、行銷活動
-隱藏：是
-hidefromtoc：是
-exl-id： 8cbb2445-f5e4-4a25-ba7e-56e39ca9d3ce
----
-# 設定及管理核准流程 {#approving-marketing-campaigns}
 
+
+# 設定及管理核准流程 {#approving-marketing-campaigns}
 
 傳遞的每個步驟都須經核准，以確保完全監控和控制行銷活動流程。 這些功能包括目標定位、內容、預算、擷取和傳送證明。
 
