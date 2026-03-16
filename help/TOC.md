@@ -7,9 +7,9 @@ user-guide-title: Campaign Classic v7 指南
 user-guide-description: Adobe Campaign Classic v7 產品文件。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 2e3a14c97706a873f0791ef83708d704d2eed6c3
-workflow-type: ht
-source-wordcount: '2682'
+source-git-commit: b10055781ff32fb30280adbea281ad9fbddb79e8
+workflow-type: tm+mt
+source-wordcount: '2683'
 ht-degree: 100%
 
 ---
@@ -22,6 +22,7 @@ ht-degree: 100%
    + [開始升級](rn/using/rn-overview.md)
    + [最新版本](rn/using/latest-release.md)
    + 先前版本 {#previous-releases}
+      + [2025](rn/using/release-2025.md)
       + [2024](rn/using/release-2024.md)
       + [2023](rn/using/release-2023.md)
       + [2022 - 隱藏](rn/using/release-2022.md)
