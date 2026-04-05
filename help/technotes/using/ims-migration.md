@@ -86,7 +86,7 @@ For this migration, you must add below APIs in your project: **I/O Management AP
 
 若要將API新增至專案，請依照下列步驟執行：
 
-1. 按一下&#x200B;**新增API**以選取要新增至專案的API。
+1. 按一下&#x200B;**新增API**&#x200B;以選取要新增至專案的API。
    ![](assets/do-not-translate/ims-updates-01.png)
 1. 勾選Adobe Campaign卡片右上角的方塊，選取Adobe Campaign API並將其新增至您的專案，當您將滑鼠停留在卡片上時，就會顯示這個方塊
    ![](assets/do-not-translate/ims-updates-02.png)

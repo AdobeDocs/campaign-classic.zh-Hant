@@ -540,7 +540,7 @@ Adobe Campaign的整體組態定義於位於安裝目錄&#x200B;**conf**&#x200B;
 
 >[!NOTE]
 >
->**nameSevers**上的備註：預設使用網路
+>**nameSevers**&#x200B;上的備註：預設使用網路
 >在Windows中宣告的第一個網路介面的引數
 >未定義於UNIX。 定義網域名稱伺服器(DNS)
 >MTA用來取得宣告給的郵件交換器
@@ -1625,9 +1625,9 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
    <td> statServerAddress<br /> </td> 
    <td> 傳遞統計伺服器的位址，指定為 
     &lt;dns或ip&gt; 
-      <code>[</code>： 
+      <code>&lbrack;</code>： 
      &lt;連線埠&gt; 
-       <code>]</code>。 另請參閱 
+       <code>&rbrack;</code>。 另請參閱 
       <a href="../../installation/using/email-deliverability.md#coordinates-of-the-statistics-server" target="_blank">統計伺服器</a>的座標。 
       <br /> 
      </td> 
