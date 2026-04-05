@@ -5,7 +5,7 @@ description: 瞭解如何安裝Campaign內建套件
 feature: Installation, Application Settings
 badge-v7-prem: label="僅限內部部署/混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="僅適用於內部部署和混合部署"
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
+source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
 source-wordcount: '1271'
 ht-degree: 3%
@@ -66,7 +66,7 @@ ht-degree: 3%
   </tr> 
   <tr> 
    <td> 行銷活動（行銷活動）<br /> </td> 
-   <td> 定義、最佳化、執行和分析通訊和行銷活動。 <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html?lang=zh-Hant" target="_blank">進一步瞭解</a><br /> </td> 
+   <td> 定義、最佳化、執行和分析通訊和行銷活動。 <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html" target="_blank">進一步瞭解</a><br /> </td> 
    <td> 行銷</td>
   </tr> 
   <tr> 
@@ -89,12 +89,14 @@ ht-degree: 3%
    <td> 要在優惠方案引擎的執行例項上安裝的套件（互動）。 <a href="../../interaction/using/distributed-architectures.md">進一步瞭解</a> </td> 
    <td> 中間，執行<br /> </td>  
   </tr> 
-  <!--tr> 
+  <!--
+  tr> 
    <td> Lead Management (Leads) (deprecated)<br /> </td> 
    <td> Simplifies the process of building and maintaining the entire leads management life cycle. <br /> </td> 
    <td> Yes<br /> </td> 
    <td> Optional, <a href="https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html">Learn More</a> </td> 
-  </tr--> 
+  </tr
+  --> 
   <tr> 
    <td> 社交網路（社交行銷） <br /> </td> 
    <td> 將Adobe Campaign與X （先前稱為Twitter）和Facebook同步。 <a href="../../social/using/about-social-marketing.md">深入瞭解</a> <br /> </td> 
@@ -157,7 +159,7 @@ ht-degree: 3%
   </tr> 
   <tr> 
    <td> 存取外部資料（同盟資料存取）<br /> </td> 
-   <td> 提供同盟資料存取(FDA)選項，以處理儲存在一或多個外部資料庫中的資訊，因此您無需變更Adobe Campaign資料的結構即可存取外部資料。  選填。 <a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/accessing-an-external-database-fda.html?lang=zh-Hant" target="_blank">深入瞭解</a> <br /> </td> 
+   <td> 提供同盟資料存取(FDA)選項，以處理儲存在一或多個外部資料庫中的資訊，因此您無需變更Adobe Campaign資料的結構即可存取外部資料。  選填。 <a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/accessing-an-external-database-fda.html" target="_blank">深入瞭解</a> <br /> </td> 
    <td> 全部<br /> </td> 
   </tr> 
   <tr> 
@@ -172,7 +174,7 @@ ht-degree: 3%
   </tr> 
   <tr> 
    <td> 優惠券管理<br /> </td> 
-   <td> 建立一組優惠券以新增至即將推出的行銷優惠方案。 選填。 <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalized-coupons.html?lang=zh-Hant" target="_blank">深入瞭解</a> <br /> </td> 
+   <td> 建立一組優惠券以新增至即將推出的行銷優惠方案。 選填。 <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalized-coupons.html" target="_blank">深入瞭解</a> <br /> </td> 
    <td> 行銷<br /> </td> 
   </tr> 
   <tr> 
@@ -227,7 +229,7 @@ ht-degree: 3%
   </tr> 
   <tr> 
    <td> AMP支援<br /> </td> 
-   <td> 可讓您使用新的互動式AMP傳送電子郵件格式，並傳送動態電子郵件。 選填。 <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-interactive-content.html?lang=zh-Hant" target="_blank">深入瞭解</a> <br /> </td> 
+   <td> 可讓您使用新的互動式AMP傳送電子郵件格式，並傳送動態電子郵件。 選填。 <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-interactive-content.html" target="_blank">深入瞭解</a> <br /> </td> 
    <td> 全部 </td> 
   </tr> 
   <tr> 

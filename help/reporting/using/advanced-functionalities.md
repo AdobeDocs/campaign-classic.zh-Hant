@@ -5,7 +5,7 @@ description: 進一步瞭解使用報告時的進階功能
 feature: Reporting, Monitoring
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 exl-id: 8b51d0fc-1692-41cd-9aa8-3bb8f4ee454e
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
 source-wordcount: '610'
 ht-degree: 4%
@@ -66,7 +66,7 @@ if( ctx.@_historyId.toString().length == 0 )
 
 ## 新增URL引數 {#defining-additional-settings}
 
-[報告屬性](../../reporting/using/properties-of-the-report.md)的&#x200B;**[!UICONTROL Parameters]**&#x200B;索引標籤可讓您定義報告的其他設定：這些設定將在呼叫期間傳遞到URL。
+**[!UICONTROL Parameters]**&#x200B;報告屬性[的](../../reporting/using/properties-of-the-report.md)索引標籤可讓您定義報告的其他設定：這些設定將在呼叫期間傳遞到URL。
 
 >[!CAUTION]
 >
@@ -90,11 +90,11 @@ if( ctx.@_historyId.toString().length == 0 )
 
    **[!UICONTROL Variable]**&#x200B;選項可讓您建立或選取變數，該變數將作為URL的引數傳遞，並可在篩選中使用。
 
-**[!UICONTROL Response HTTP headers]**&#x200B;可讓您在使用iframe將報告頁面納入HTML頁面時，防止點選劫持。 若要避免點選劫持，您可以選擇&#x200B;**[!UICONTROL X-Frame-options header]**&#x200B;行為：
+**[!UICONTROL Response HTTP headers]**&#x200B;可讓您在使用iframe將報表頁面納入HTML頁面時，防止點選劫持。 若要避免點選劫持，您可以選擇&#x200B;**[!UICONTROL X-Frame-options header]**&#x200B;行為：
 
 * **[!UICONTROL None]**：報告將沒有&#x200B;**[!UICONTROL X-Frame-options header]**。
 * **[!UICONTROL Same as origin]**：預設為新報告和重新發佈的報告設定。 主機名稱將與報表的URL相同。
-* **[!UICONTROL Deny]**：報告不能包含在使用iframe的HTML頁面中。
+* **[!UICONTROL Deny]**：該報告不能包含在使用iframe的HTML頁面中。
 
 ![](assets/s_ncs_advuser_report_properties_09c.png)
 
@@ -113,7 +113,8 @@ if( ctx.@_historyId.toString().length == 0 )
 在以下影片範例中，您將瞭解如何新增「_type」引數，以根據此屬性的值建立不同的報告檢視。
 
 <!--
-![](assets/do-not-localize/how-to-video.png) [Discover this feature in video](https://helpx.adobe.com/campaign/classic/how-to/add-url-parameter-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/business-practitioners/explevel/intermediate/applaunch/how-to-4/collection.ccx.js&ref=helpx.adobe.com)-->
+![](assets/do-not-localize/how-to-video.png) [Discover this feature in video](https://helpx.adobe.com/campaign/classic/how-to/add-url-parameter-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/business-practitioners/explevel/intermediate/applaunch/how-to-4/collection.ccx.js&ref=helpx.adobe.com)
+-->
 
 
 ## 呼叫其他報表 {#calling-up-another-report}

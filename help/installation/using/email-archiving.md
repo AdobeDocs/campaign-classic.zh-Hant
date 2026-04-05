@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 424faf25-2fd5-40d1-a2fc-c715fc0b8190
-source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
+source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
 source-wordcount: '1211'
 ht-degree: 1%
@@ -95,7 +95,8 @@ C:\emails\2018-12-02\13h\4012-8040-sent.eml
 * **archivingType**：要使用的封存策略。 唯一可能的值為&#x200B;**1**。 已傳送電子郵件的原始復本會以.eml格式儲存至&#x200B;**dataLogPath**&#x200B;資料夾，並透過SMTP傳送至密件副本電子郵件地址。 將電子郵件復本傳送至密件副本位址後，封存檔案名稱會變成&#x200B;**`<deliveryid>-<broadlogid>-sent-archived.eml`**，且檔案會移至&#x200B;**dataLogPath/封存**&#x200B;資料夾。 已傳送及密件副本封存的電子郵件檔案路徑為&#x200B;**`<datalogpath>archivesYYYY-MM-DDHHh<deliveryid>- <broadlogid>-sent-archived.eml`**。
 
   <!--
-  **0**: raw copies of sent emails are saved in .eml format to the **dataLogPath** folder (default value). An archiving copy of the **`<deliveryid>-<broadlogid>-sent.eml`** file is saved to the **dataLogPath/archives** folder. The sent email file path becomes **`<datalogpath>archivesYYYY-MM-DDHHh <deliveryid>-<broadlogid>-sent.eml`**.-->
+  **0**: raw copies of sent emails are saved in .eml format to the **dataLogPath** folder (default value). An archiving copy of the **`<deliveryid>-<broadlogid>-sent.eml`** file is saved to the **dataLogPath/archives** folder. The sent email file path becomes **`<datalogpath>archivesYYYY-MM-DDHHh <deliveryid>-<broadlogid>-sent.eml`**.
+  -->
 
 * **expirationDelay**： .eml檔案保留存檔的天數。 延遲之後，它們會自動移至&#x200B;**dataLogPath/archives**&#x200B;資料夾進行壓縮。 根據預設，.eml檔案會在兩天後過期。
 * **purgeArchivesDelay**： **dataLogPath/`<archives>`**&#x200B;資料夾中保留的封存天數。 在這段期間後，它們將會永久刪除。 清除作業會在MTA啟動時開始。 預設會每七天執行一次。
@@ -134,7 +135,7 @@ C:\emails\2018-12-02\13h\4012-8040-sent.eml
 <!--
 ## Moving to the new Email BCC {#updated-email-archiving-system--bcc-}
 
-[!BADGE On-premise & Hybrid]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="Applies to on-premise and hybrid deployments only"}
+[!BADGE On-premise & Hybrid]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"}
 
 >[!IMPORTANT]
 >
@@ -160,7 +161,8 @@ Once email BCC is configured, make sure you select the **[!UICONTROL Email BCC]*
 * **每個連線的電子郵件**： BCC電子郵件封存的運作方式是開啟連線，並嘗試透過該連線傳送所有電子郵件。 Adobe建議您與內部技術連絡人確認指定的連線可接受的電子郵件數量。 增加此數目可能會對BCC輸送量產生重大影響。
 * **BCC傳送IP**：目前，BCC電子郵件不會透過一般MTA代理程式傳送。 而是會開啟從MTA伺服器到目的地電子郵件伺服器的直接連線。 這表示根據您的電子郵件伺服器設定，您可能需要將其他IP新增到您網路上的允許清單。
 
-<!--## Email BCC with Enhanced MTA {#email-bcc-with-enhanced-mta}
+<!--
+## Email BCC with Enhanced MTA {#email-bcc-with-enhanced-mta}
 
 For **hosted and hybrid architectures**, if you have the latest instance of Adobe Campaign, or if you have upgraded to the Enhanced MTA and using Adobe Campaign 19.2 or later, you can use Email BCC with Enhanced MTA, which is more reliable, efficient, and has lower latency.
 
@@ -186,4 +188,6 @@ Consequently, make sure:
 
 * Email BCC with Enhanced MTA delivers to the BCC email address before delivering to the recipients, which can result in BCC messages being sent even though the original deliveries may have bounced. For more on bounces, see [Understanding delivery failures](../../delivery/using/delivery-failures-quarantine.md).
 
-* There is no reporting available on the delivery status of the emails sent to the BCC email address.-->
+* There is no reporting available on the delivery status of the emails sent to the BCC email address.
+
+-->

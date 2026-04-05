@@ -5,7 +5,7 @@ description: 本檔案說明Adobe Campaign資料模型
 feature: Data Model
 role: Developer
 exl-id: fc0fd23c-f9ea-4e30-b47b-a84143d882ca
-source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
+source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
 source-wordcount: '2354'
 ht-degree: 2%
@@ -44,7 +44,7 @@ Adobe Campaign仰賴包含連結在一起的表格的關聯式資料庫。
 這是用於傳遞&#x200B;**收件者**&#x200B;的預設資料表。 因此，它包含透過各種頻道傳遞所需的資訊：
 
 * sEmail：電子郵件地址。
-* iEmailFormat：偏好使用的電子郵件格式(1代表文字，2代表HTML，0代表未定義)。
+* iEmailFormat：偏好使用的電子郵件格式（1代表文字，2代表HTML，0代表未定義）。
 * sAddress1、sAddress2、sAddress3、sAddress4、sZipCode、sCity是用來建立郵遞區號（符合1997年5月的XPZ 10-011 AFNOR標準）。
 * sPhone、sMobilePhone和sFax分別包含電話、行動電話和傳真號碼。
 * iBlackList是用於設定檔的預設選擇退出標幟（1表示「已取消訂閱」，0表示不然）。
@@ -113,7 +113,7 @@ NmsRcpGrpRel關係表格僅包含與iRecipientId及iGroupId連結表格識別碼
 
 ## 行銷活動管理 {#campaign-management}
 
-這組表格連結至&#x200B;**行銷活動**&#x200B;模組，可讓您定義、最佳化、執行和分析通訊與行銷活動。 有關更多資訊，請參閱[Campaign v8 文件](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html?lang=zh-Hant){target=_blank}。
+這組表格連結至&#x200B;**行銷活動**&#x200B;模組，可讓您定義、最佳化、執行和分析通訊與行銷活動。 有關更多資訊，請參閱[Campaign v8 文件](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html){target=_blank}。
 
 ![](assets/data-model_campaign.png)
 
@@ -238,7 +238,8 @@ NmsRcpGrpRel關係表格僅包含與iRecipientId及iGroupId連結表格識別碼
 
 此資料表符合&#x200B;**nms:batchEvent**&#x200B;結構描述。 其中包含批次事件的定義。
 
-<!--## Microsites Module {#microsites-module}
+<!--
+## Microsites Module {#microsites-module}
 
 This set of tables is linked to the **Web applications** functionality, which allows to create and publish dynamic and interactive web applications with data from the database and content adapted to the rights of the connected user. For more on this, see [About web applications](../../web/using/about-web-applications.md).
 
@@ -246,7 +247,8 @@ This set of tables is linked to the **Web applications** functionality, which al
 
 * **NmsTrackingUrl**: This table matches the **nms:trackingUrl** schema.
 
-* **NmsPurl**: This table matches the **nms:purl** schema.-->
+* **NmsPurl**: This table matches the **nms:purl** schema.
+-->
 
 ## NMAC模組 {#nmac-module}
 

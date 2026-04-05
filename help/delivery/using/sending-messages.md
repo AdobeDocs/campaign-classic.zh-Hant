@@ -8,10 +8,10 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: c75a5ea2-8d62-4f98-bccd-7116a4d404fd
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
 source-wordcount: '223'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -33,8 +33,10 @@ ht-degree: 0%
 >驗證傳遞的整個程式在[本節](steps-validating-the-delivery.md)中說明。 設定及傳送傳遞的完整詳細步驟會顯示在[本節](steps-sending-the-delivery.md)中。
 
 以下小節詳細說明傳送電子郵件所特有的設定和配置：
-<!--* [Generating the mirror page](generating-mirror-page.md)
-* [Email BCC](email-bcc.md)-->
+<!--
+* [Generating the mirror page](generating-mirror-page.md)
+* [Email BCC](email-bcc.md)
+-->
 * [電子郵件參數](email-parameters.md)
 * [使用增強的MTA傳送電子郵件](sending-with-enhanced-mta.md)
 * [在日文的行動裝置上傳送電子郵件](sending-emails-on-japanese-mobiles.md)

@@ -5,7 +5,7 @@ description: 發佈網路表單
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Web Forms
 exl-id: 1c66b8e8-7590-4767-9b2f-a9a509df4508
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
 source-wordcount: '1284'
 ht-degree: 1%
@@ -136,7 +136,7 @@ ht-degree: 1%
 
 * 按一下&#x200B;**[!UICONTROL Personalize the message displayed if the form is closed...]**&#x200B;連結以定義若使用者在表單無效時嘗試存取表單，則要顯示的錯誤訊息。
 
-  請參閱表單[&#128279;](defining-web-forms-properties.md#accessibility-of-the-form)的協助工具。
+  請參閱表單[的](defining-web-forms-properties.md#accessibility-of-the-form)協助工具。
 
 ### 透過電子郵件傳遞表單 {#delivering-a-form-via-email}
 
@@ -196,6 +196,7 @@ ht-degree: 1%
   >
   >您可以使用&#x200B;**[!UICONTROL Preview]**&#x200B;索引標籤來檢查網頁表單的最新版本。
 
-<!--For RN:
+<!--
+For RN:
 * Now, when a web form has the **Pending publication** status, it must be published before it becomes **Online** and accessible through the web form URL in a web browser. [Read more](../../web/using/publishing-a-web-form.md#life-cycle-of-a-form)
 -->

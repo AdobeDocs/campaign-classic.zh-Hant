@@ -7,7 +7,7 @@ audience: message-center
 content-type: reference
 topic-tags: event-processing
 exl-id: 930c6395-0c00-40ee-a925-3e0cae67c55f
-source-git-commit: e60a8391416bc9899548971bddb61705467a80e5
+source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
 source-wordcount: '234'
 ht-degree: 1%
@@ -40,7 +40,7 @@ ht-degree: 1%
 
 ## 異動訊息監視 {#transactional-message-monitoring}
 
-若要監視您的異動訊息，請檢查[傳遞記錄](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"}。
+若要監視您的異動訊息，請檢查[傳遞記錄](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"}。
 
 從執行執行個體傳送的交易式傳遞會透過每小時執行的技術工作流程(**[!UICONTROL Message Center execution instance]**)同步回控制執行個體。
 
@@ -48,7 +48,8 @@ ht-degree: 1%
 >
 >傳遞每週會根據最新的事件更新累積事件，而不是根據事件建立日期累積事件。 因此，從控制執行個體擷取異動訊息傳送記錄時，與每個傳送記錄ID相關聯的傳送ID可能會隨著記錄更新的時間（例如，當收到事件的入站退回時）而變更。
 
-<!--The transactional deliveries sent from the execution instance are synchronized back to the control instance as follows.
+<!--
+The transactional deliveries sent from the execution instance are synchronized back to the control instance as follows.
 
 Let's take a [delivery template](../../message-center/using/introduction.md) labelled *Template_1*.
 
@@ -73,6 +74,8 @@ Let's take a [delivery template](../../message-center/using/introduction.md) lab
 
 To summarize, the deliveries weekly accumulate the events based on the latest event update, and not on the event creation date.
 
-Therefore, when extracting transactional messaging delivery logs from the control instance, the delivery ID associated with each delivery log ID changes every week.-->
+Therefore, when extracting transactional messaging delivery logs from the control instance, the delivery ID associated with each delivery log ID changes every week.
+
+-->
 
 若要監視執行個體的活動和執行，請參閱[異動訊息傳送報告](../../message-center/using/about-transactional-messaging-reports.md)。

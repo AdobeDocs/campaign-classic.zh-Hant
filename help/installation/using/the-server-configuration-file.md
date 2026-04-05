@@ -7,10 +7,10 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
-source-git-commit: f032ed3bdc0b402c8281bc34e6cb29f3c575aaf9
+source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
-source-wordcount: '8067'
-ht-degree: 3%
+source-wordcount: '8066'
+ht-degree: 5%
 
 ---
 
@@ -20,7 +20,7 @@ Adobe Campaign的整體組態定義於位於安裝目錄&#x200B;**conf**&#x200B;
 
 >[!NOTE]
 >
->伺服器端設定只能由Adobe代管的部署Adobe執行。 若要瞭解不同部署的詳細資訊，請參閱[託管模型](../../installation/using/hosting-models.md)區段或[此頁面](../../installation/using/capability-matrix.md)。 此[區段](../../installation/using/hosting-models.md)中顯示了託管及混合模型的安裝及設定步驟。
+>伺服器端設定只能由Adobe針對Adobe託管的部署執行。 若要瞭解不同部署的詳細資訊，請參閱[託管模型](../../installation/using/hosting-models.md)區段或[此頁面](../../installation/using/capability-matrix.md)。 此[區段](../../installation/using/hosting-models.md)中顯示了託管及混合模型的安裝及設定步驟。
 
 第一個引數位於&#x200B;**共用**&#x200B;節點內。 這些都會與執行個體相關。 它們可能會被所有nlserver命令（nlserver web、nlserver wfserver等）使用。 其他段落與特定的nlserver子指令有關。
 
@@ -337,7 +337,7 @@ Adobe Campaign的整體組態定義於位於安裝目錄&#x200B;**conf**&#x200B;
   </tr> 
   <tr> 
    <td> 提供者<br /> </td> 
-   <td> 型別（分項清單）。 可能的值包括「Oracle」、「MSSQL」(Microsoft SQL Server)、「PostgreSQL」(PostgreSQL)、「Teradata」、「MySQL」、「Netezza」、「AsterData」、「SAPHANA」(SAP HANA)、「RedShift」(Amazon Redshift)、「ODBC」(ODBC (Sybase ASE，Sybase IQ))、「轉送」（HTTP轉送至遠端資料庫）。<br /> </td> 
+   <td> 型別（分項清單）。 可能的值包括'Oracle'、'MSSQL' (Microsoft SQL Server)、'PostgreSQL' (PostgreSQL)、'Teradata'、'MySQL'、'Netezza'、'AsterData'、'SAPHANA' (SAP HANA)、'RedShift' (Amazon Redshift)、'ODBC' (ODBC (Sybase ASE、Sybase IQ))、'Relay' （HTTP轉送至遠端資料庫）。<br /> </td> 
    <td> 字串<br /> </td> 
    <td> 'Oracle'<br /> </td> 
   </tr> 
@@ -410,7 +410,7 @@ Adobe Campaign的整體組態定義於位於安裝目錄&#x200B;**conf**&#x200B;
   </tr> 
   <tr> 
    <td> maxCnx<br /> </td> 
-   <td> 拒絕新連線之前允許的最大連線數量。 檢視此<a href="https://helpx.adobe.com/tw/campaign/kb/how-to-increase-the-maximum-number-of-database-connections-from-.html">技術說明</a>.<br /> </td> 
+   <td> 拒絕新連線之前允許的最大連線數量。 檢視此<a href="https://helpx.adobe.com/campaign/kb/how-to-increase-the-maximum-number-of-database-connections-from-.html">技術說明</a>.<br /> </td> 
    <td> 短整數<br /> </td> 
   </tr> 
   <tr> 
@@ -540,13 +540,13 @@ Adobe Campaign的整體組態定義於位於安裝目錄&#x200B;**conf**&#x200B;
 
 >[!NOTE]
 >
->**nameSevers**&#x200B;上的備註：預設使用網路
+>**nameSevers**上的備註：預設使用網路
 >在Windows中宣告的第一個網路介面的引數
 >未定義於UNIX。 定義網域名稱伺服器(DNS)
 >MTA用來取得宣告給的郵件交換器
 >網域。
 >
->如果未定義此值，MTA會在主機網路設定中尋找此資訊。 如果可能有數個DNS，不同的DNS位址必須以逗號分隔（例如：212.155.207.1,212.155.207.2）。 如果您的傳送伺服器具有數個網路介面，則MTA使用的DNS清單是第一個清單。 在此情況下，建議您指定&#x200B;**nameServer**&#x200B;引數以避免任何模稜兩可。
+>如果未定義此值，MTA會在主機網路設定中尋找此資訊。 如果可能有數個DNS，不同的DNS位址必須以逗號分隔（例如： 212.155.207.1，212.155.207.2）。 如果您的傳送伺服器具有數個網路介面，則MTA使用的DNS清單是第一個清單。 在此情況下，建議您指定&#x200B;**nameServer**&#x200B;引數以避免任何模稜兩可。
 
 >[!CAUTION]
 >
@@ -582,7 +582,7 @@ Adobe Campaign的整體組態定義於位於安裝目錄&#x200B;**conf**&#x200B;
 
 ## htmlToPdf {#htmltopdf}
 
-以下是&#x200B;**htmlToPdf**&#x200B;節點的不同引數。 這是將網頁轉換為PDF檔案的服務的設定。
+以下是&#x200B;**htmlToPdf**&#x200B;節點的不同引數。 這是將網頁轉換為PDF檔案的服務設定。
 
 <table> 
  <thead> 
@@ -1625,9 +1625,9 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
    <td> statServerAddress<br /> </td> 
    <td> 傳遞統計伺服器的位址，指定為 
     &lt;dns或ip&gt; 
-      <code>&lbrack;</code>： 
+      <code>[</code>： 
      &lt;連線埠&gt; 
-       <code>&rbrack;</code>。 另請參閱 
+       <code>]</code>。 另請參閱 
       <a href="../../installation/using/email-deliverability.md#coordinates-of-the-statistics-server" target="_blank">統計伺服器</a>的座標。 
       <br /> 
      </td> 
@@ -1640,12 +1640,14 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
    <td> 布林值<br /> </td> 
    <td> true <br /> </td> 
   </tr> 
-  <!--tr> 
+  <!--
+  tr> 
    <td> statServerVersion<br /> </td> 
    <td> Protocol version used: communication protocol version (1 for a v5.11 and 6.0.2 server, 2 for a v6.1 server).<br /> </td> 
    <td> String<br /> </td> 
    <td> If undefined, the latest version is used. <br /> </td> 
-  </tr--> 
+  </tr
+  --> 
   <tr> 
    <td> useMomentum<br /> </td> 
    <td> 如果設為「true」，表示您的執行個體正在使用<a href="../../delivery/using/sending-with-enhanced-mta.md" target="_blank">增強型MTA</a>.<br /> </td> 
@@ -1759,7 +1761,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
  <tbody> 
   <tr> 
    <td> dataBasePoolPeriodSec<br /> </td> 
-   <td> 要傳遞的工作的資料庫輪詢頻率。 此值代表資料庫輪詢頻率（以秒為單位）。為了取得等待傳送的工作清單，MTA會定期輪詢資料庫。當沒有工作等待時，輪詢週期就會由此值定義。否則，如果工作已傳輸到子伺服器，則此輪詢持續時間會自動縮短為一秒，以便新工作可以儘快再次處理，亦即子伺服器再次可用時。這並不意味著每秒都會執行資料庫查詢，直到子伺服器再次可用為止。 事實上，只有當至少有一部子伺服器可供使用時，才會完成資料庫存取。<br /> </td> 
+   <td> 要傳遞的工作的資料庫輪詢頻率。 此值代表資料庫輪詢頻率（以秒為單位）。 為了取得等待傳送的工作清單，MTA會定期輪詢資料庫。當沒有工作等待時，輪詢週期就會由此值定義。否則，如果工作已傳輸到子伺服器，則此輪詢持續時間會自動縮短為一秒，以便新工作可以儘快再次處理，亦即子伺服器再次可用時。這並不意味著每秒都會執行資料庫查詢，直到子伺服器再次可用為止。 事實上，只有當至少有一部子伺服器可供使用時，才會完成資料庫存取。<br /> </td> 
    <td> 長<br /> </td> 
    <td> 30<br /> </td> 
   </tr> 
@@ -2897,7 +2899,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> maxDeliveryQueueSize<br /> </td> 
-   <td> SubmitDelivery呼叫的佇列大小：可排入佇列的SubmitDelivery SOAP呼叫數上限。<br /> </td> 
+   <td> SubmitDelivery呼叫的佇列大小：可佇列的SubmitDelivery SOAP呼叫數上限。<br /> </td> 
    <td> 長<br /> </td> 
    <td> 50<br /> </td> 
   </tr> 
@@ -2974,7 +2976,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> soapRouter<br /> </td> 
-   <td> SOAP路由器的URL (http://myserver/xxx、http://jni或mailto:xxx)。<br /> </td> 
+   <td> SOAP路由器的URL （http://myserver/xxx、http://jni或mailto:xxx）。<br /> </td> 
    <td> 字串<br /> </td> 
    <td> 'http://jni'<br /> </td> 
   </tr> 
@@ -3311,7 +3313,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
    <td> P3PCompactPolicy<br /> </td> 
    <td> 描述用於永久Cookie的原則值（符合P3P壓縮原則格式）。<br /> </td> 
    <td> 字串<br /> </td> 
-   <td> 'CAO DSP COR CURa DEVa TAIA OUR BUS IND UNI COM NAV'<br /> </td> 
+   <td> 'CAO DSP COR CURA DEVa TAIA OUR BUS IND UNI COM NAV'<br /> </td> 
   </tr> 
   <tr> 
    <td> cookieDomain<br /> </td> 
