@@ -4,11 +4,10 @@ title: JavaScript 指令碼和範本
 description: JavaScript 指令碼和範本
 feature: Workflows
 hide: true
-hidefromtoc: true
 exl-id: 4a3647d1-cf8c-4867-871e-472287be7c6a
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
-source-wordcount: '1247'
+source-wordcount: '1243'
 ht-degree: 2%
 
 ---
@@ -32,10 +31,10 @@ ht-degree: 2%
 
 在工作流程內容中執行的JavaScripts會存取一系列其他全域物件。
 
-* **執行個體**：代表正在執行的工作流程。 此物件的結構描述是&#x200B;**xtk：workflow**。
-* **任務**：代表正在執行的任務。 此物件的結構描述是&#x200B;**xtk：workflowTask**。
-* **event**：代表啟動執行中工作的事件。 此物件的結構描述是&#x200B;**xtk：workflowEvent**。 此物件未針對已從多個轉變啟動的&#x200B;**AND-join**&#x200B;型別活動初始化。
-* **事件**：代表啟動目前工作的事件清單。 此物件的結構描述是&#x200B;**xtk：workflowEvent**。 此資料表通常包含一個專案，但可能包含已根據數個轉變啟動的&#x200B;**AND-join**&#x200B;型別活動的數個。
+* **執行個體**：代表正在執行的工作流程。 此物件的結構描述是&#x200B;**xtk:workflow**。
+* **任務**：代表正在執行的任務。 此物件的結構描述是&#x200B;**xtk:workflowTask**。
+* **event**：代表啟動執行中工作的事件。 此物件的結構描述是&#x200B;**xtk:workflowEvent**。 此物件未針對已從多個轉變啟動的&#x200B;**AND-join**&#x200B;型別活動初始化。
+* **事件**：代表啟動目前工作的事件清單。 此物件的結構描述是&#x200B;**xtk:workflowEvent**。 此資料表通常包含一個專案，但可能包含已根據數個轉變啟動的&#x200B;**AND-join**&#x200B;型別活動的數個。
 * **活動**：代表正在執行的工作的模式。 此物件的結構描述取決於活動型別。 此物件可由初始化指令碼修改，而在其他指令碼中，修改會產生無法確定的效果。
 
 您可以按一下指令碼工具列右側的按鈕，在下拉式清單中檢視這些物件可用的屬性。

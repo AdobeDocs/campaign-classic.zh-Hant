@@ -6,9 +6,8 @@ badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v
 feature: Email, Push
 role: User, Developer
 hide: true
-hidefromtoc: true
 exl-id: b8642df3-1960-4f2c-8273-c3988a3e85f0
-source-git-commit: 17ac1e0d68d2945b01aecc7c45fc5be7e6bd38af
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 3%

@@ -4,9 +4,8 @@ title: 外部訊號
 description: 進一步瞭解外部訊號工作流程活動
 feature: Workflows
 hide: true
-hidefromtoc: true
 exl-id: da84d3ff-1e64-45ef-bef0-da4a24d93461
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '168'
 ht-degree: 2%

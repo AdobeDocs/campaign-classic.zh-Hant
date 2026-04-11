@@ -4,9 +4,8 @@ title: 傳送生日電子郵件
 description: 瞭解如何使用工作流程傳送生日電子郵件
 feature: Workflows
 hide: true
-hidefromtoc: true
 exl-id: 38006cca-e945-4b9d-8e2d-ed537b8541d9
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '878'
 ht-degree: 2%
@@ -132,7 +131,7 @@ ht-degree: 2%
 
 如果測試通過驗證（該年不是閏年 — 沒有2月29日 — 而目前日期確實是3月1日），則會啟用&#x200B;**[!UICONTROL True]**&#x200B;轉換，並將在2月29日出生的收件者新增至3月1日傳遞。 否則，會啟用&#x200B;**[!UICONTROL False]**&#x200B;轉變，而且只有生於目前日期的收件者才會收到傳遞。
 
-將下列程式碼複製並貼到&#x200B;**[!UICONTROL Advanced]**&#x200B;索引標籤的&#x200B;**[!UICONTROL Initialization script]**&#x200B;區段中。
+將下列程式碼複製並貼到&#x200B;**[!UICONTROL Initialization script]**&#x200B;索引標籤的&#x200B;**[!UICONTROL Advanced]**&#x200B;區段中。
 
 ```
 function isLeapYear(iYear)

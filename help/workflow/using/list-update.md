@@ -4,9 +4,8 @@ title: 清單更新
 description: 清單更新
 feature: Workflows, Targeting Activity
 hide: true
-hidefromtoc: true
 exl-id: fcc51131-15d0-4d39-95cb-371d7044373b
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 3%

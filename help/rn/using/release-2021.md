@@ -5,12 +5,11 @@ description: 進一步瞭解 Campaign Classic 2021 版本
 feature: Release Notes
 role: User
 level: Beginner
-hidefromtoc: true
 exl-id: 0cd6bf20-da72-4cf0-9f5d-d4e8acdd324d
-source-git-commit: a1dbef3e1feca1e3347de013db8bd7809d315016
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
-source-wordcount: '2584'
-ht-degree: 100%
+source-wordcount: '2579'
+ht-degree: 97%
 
 ---
 
@@ -32,7 +31,7 @@ _2021 年 10 月 8 日_
 
 * 改善建置 9342 中可用的計費工作流程修正，該修正需要手動重新啟動工作流程以套用修正。 現在，升級後會自動重新啟動工作流程。
 
-* 修正了將 **互動** 模組與 [Power Booster](../../installation/using/power-booster-and-power-cluster.md) 選項搭配使用時，無法正確管理優惠的問題。 (NEO-39263)
+* 修正了將 **互動** 模組與 [Power Booster](../../installation/using/power-booster-and-power-cluster.md) 選項搭配使用時，無法正確管理產品建議的問題。 (NEO-39263)
 
 * 修正了在多中間來源執行個體上使用多個 IP 相似性時，傳遞傳送時可能會發生「在 mid 伺服器 xxx 上找不到 ipaffinity xxx」的錯誤。 (NEO-37514)
 
@@ -46,23 +45,23 @@ _2021 年 9 月 7 日_
 
 * 修正安全性問題，以針對目錄周遊攻擊加強保護。 (NEO-28547)
 
-**功能改善**
+**功能改進**
 
-* Flash 的生命週期結束後，已從所有相關的 Campaign 功能和元件中移除，並更換為 HTML5。 **量測**&#x200B;類型圖表已移除。 (NEO-30330) [了解詳情](../../reporting/using/creating-a-chart.md)
+* Flash 的生命週期結束後，已從所有相關的 Campaign 功能和元件中移除，並更換為 HTML5。 **量測**&#x200B;類型圖表已移除。 (NEO-30330) [閱讀全文](../../reporting/using/creating-a-chart.md)
 * 在 Windows 上安裝客戶端控制台時，安裝程式現在會檢查是否有父代登錄節點，如果沒有，會建立一個。 這可防止啟動主控台時發生潛在問題。 (NEO-34854)
-* 追蹤簽章功能已經過改良，以防止連結至協力廠商工具 (電子郵件用戶端、網際網路瀏覽器等) 的錯誤 處理特殊字元。 URL 參數現在已編碼。
+* 追蹤簽章功能已經過改良，以防止連結至第三方工具 (電子郵件用戶端、網際網路瀏覽器等) 的錯誤 URL 參數現在已編碼。
 
 **其他變更**
 
 * 修正 21.1.3 中引入的回歸，其中包含計費工作流程新護欄。 計費工作流程在錯誤的執行個體上執行，並嘗試傳送未產生的計費報告而當機。 您必須手動重新啟動要套用之修正的工作流程。
-* 先前已棄用的 Microsoft CRM 連接器 (Office 365 和內部部署) 已從介面中移除。 [顯示全文](../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft)
+* 先前已棄用的 Microsoft CRM 連接器 (Office 365 和內部部署) 已從介面中移除。 [閱讀更多](../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft)
 * 遷移到 Tomcat 8 後，已更新 IIS 安裝指令碼，修正了 IIS 整合問題。 (NEO-31019)
-* 已在工作流程轉變&#x200B;**檢視母體**&#x200B;視窗的資料和架構標籤中改善資料來源識別。
-* 已將缺少的資料庫索引添加到以下架構中，以防止出現資料庫更新問題：xtk:rights, nms:dlvExclusion, nms:seedMember, nms:trackingUrl
+* 已在工作流程轉變&#x200B;**檢視群體**&#x200B;視窗的資料和結構描述標籤中改善資料來源識別。
+* 已將缺少的資料庫索引新增到下列結構描述中，以防止資料庫更新問題： xtk:rights、nms:dlvExclusion、nms:seedMember、nms:trackingUrl
 
 **修補程式**
 
-* 修正當選件連結至傳遞時，「熱點點按」報表無法運作的問題。 (NEO-26295)
+* 修正當產品建議連結至傳遞時，「熱點點按」報表無法運作的問題。 (NEO-26295)
 * 修正&#x200B;**子工作流程**&#x200B;活動執行未產生輸出表格時的問題。 (NEO-36242)
 * 修正將&#x200B;**描述性分析**&#x200B;報表匯出為 PDF 時的各種問題。 (NEO-25847)
 * 修正使用外部郵件傳遞時，可能導致傳遞失敗的問題。 (NEO-37435)
@@ -78,7 +77,7 @@ _2021 年 9 月 7 日_
 
 _2021 年 6 月 5 日_
 
-**有哪些新增功能？**
+**有哪些新功能？**
 
 
 <table>
@@ -169,7 +168,7 @@ _2021 年 6 月 5 日_
 
 **安全性增強功能**
 
-* 傳回完整資料庫連線詳細資訊的 **xtk:session#GetCnxInfo** API 方法現在僅限管理員使用者存取。 (NEO-27779)
+* 傳回完整資料庫連線詳細資料的&#x200B;**xtk:session#GetCnxInfo** API方法現在僅限管理員使用者存取。 (NEO-27779)
 * 在 CRM 相關的 JavaScript 檔案中，已棄用的 decryptString 函式已取代為 decryptPassword。
 * 已改善追蹤簽章功能，以在第三方工具 (電子郵件用戶端、網際網路瀏覽器、安全連結安全工具) 修改追蹤連結時，降低追蹤重新導向錯誤的風險。
 * 修正了當包含大寫字元時，追蹤的 URL 無法運作的問題。 追蹤的 URL 簽署機制現在區分大小寫。 (NEO-28414)
@@ -181,7 +180,7 @@ _2021 年 6 月 5 日_
 * Vertica Analytics FDA 連接器
 * PostgreSQL 13
 
-瞭解更多與[ Campaign 相容性矩陣相關的資訊](../../rn/using/compatibility-matrix.md)。
+瞭解更多與[&#x200B; Campaign 相容性矩陣相關的資訊](../../rn/using/compatibility-matrix.md)。
 
 **棄用的功能**
 
@@ -189,18 +188,18 @@ _2021 年 6 月 5 日_
 * 不再支援 Debian 8。
 * 在 20.3 版中淘汰 Oracle CRM 後，相關外部帳戶已從介面中移除。
 
-瞭解更多[與已棄用和已移除的功能頁面相關的資訊](../../rn/using/deprecated-features.md)。
+在[與已棄用和已移除的功能頁面](../../rn/using/deprecated-features.md)瞭解更多相關的資訊。
 
-**功能改善**
+**功能改進**
 
 * 儲存工作流程時已新增額外檢查，以確定活動名稱是唯一的，且轉變後一律會有活動。
-* **「帳單」 (帳單)**&#x200B;技術工作流程現在包含原本由&#x200B;**活動帳單設定檔數**(billingActiveContactCount) 工作流程執行的任務，此工作流程已移除。 工作流程每月傳送的電子郵件報告現在會提供執行個體上主要設定檔數目的資訊。 [顯示全文](../../workflow/using/about-technical-workflows.md)。
+* **「帳單」**&#x200B;技術工作流程現在包含原本由&#x200B;**活動帳單輪廓數**(billingActiveContactCount) 工作流程執行的任務，此工作流程已移除。 工作流程每月傳送的電子郵件報告現在會提供執行個體上活躍輪廓數目的資訊。 [顯示全文](../../workflow/using/about-technical-workflows.md)。
 * 已新增新的 **_keyOnMData** 屬性，以便能夠使用鍵對備忘錄資料進行操作。
 
 **其他變更**
 
 * 已新增護欄，僅允許[帳單技術工作流程](../../production/using/monitoring-processes.md#billing-report)在行銷執行個體上執行。
-* 適用於 Windows 的 openssl 協力廠商已更新至 1.1.1h 版。
+* 適用於 Windows 的 openssl 第三方已更新至 1.1.1h 版。
 * 在 Debian 套件說明中，nlserver 已變更為 Adobe Campaign Classic 伺服器。
 
 **修補程式**
@@ -219,12 +218,12 @@ _2021 年 6 月 5 日_
 * 修正導致建立 SAP HANA FDA 索引失敗的問題。 (NEO-29664)
 * 針對當執行包含標題的 SOAP 呼叫時，修正異動訊息可能維持在&#x200B;**等待中**&#x200B;狀態的問題。 (NEO-28737)
 * 修正使用 Teradata FDA 連接器時發生的問題：所有臨時表格都只建立在叢集的一個節點上，這最終會佔用整個多工緩衝空間並導致 Teradata 當機。 現在會在許多節點上產生臨時表格。 (NEO-28230)
-* 修正了使用 Web 應用程式時，追蹤標記在 **nms:trackingURL** 綱要中產生錯誤主鍵的問題。 (NEO-27931)
+* 修正了使用Web應用程式時，追蹤標籤在&#x200B;**nms:trackingURL**&#x200B;結構描述中產生錯誤主鍵的問題。 (NEO-27931)
 * 與 ODBC 3.x 的相容性已增強，以確保錯誤訊息的準確性。
 * 修正當電子郵件傳送中使用自訂內容範本時，可能導致主控台當機的問題。 (NEO-31547)
 * 修正了因連線速度緩慢或大規模回應而導致 Tomcat 無法傳送有效回應的問題。(NEO-30858)
 * 修正從 PostgreSQL 資料庫讀取 UUID 時可能發生的問題。
-* 修正搜尋連結至優惠方案的主張資料時，可能導致效能問題的問題。 (NEO-27554)
+* 修正搜尋連結至產品建議的提議資料時，可能導致效能問題的問題。 (NEO-27554)
 * 修正了在啟動 IMS 服務但未回應時，導致 Web 程式未回應的問題。
 * 修正由於傳送個人化失敗的特定加入機制，您無法傳送包含一組校樣的傳送的問題。 (NEO-14391)
 * 修正了當查詢和擴充活動以傳送表格為目標時，無法連同警報活動傳送警報的問題。 (NEO-25157)
@@ -259,9 +258,9 @@ _2021 年 2 月 22 日_
 
  **技術傳遞能力監控**&#x200B;報告現在已被取代。
 
-瞭解更多[與已棄用和已移除的功能頁面相關的資訊](../../rn/using/deprecated-features.md)。
+在[與已棄用和已移除的功能頁面](../../rn/using/deprecated-features.md)瞭解更多相關的資訊。
 
-**功能改善**
+**功能改進**
 
 **電子郵件回饋服務 (EFS)**&#x200B;是一種可擴展的服務，它直接從增強型 MTA 中擷取回饋，從而提高報告的準確性。這項功能會以私人測試版發佈，未來發佈的版本將逐步提供給所有客戶。
 
@@ -273,9 +272,9 @@ _2021 年 2 月 22 日_
 
 * 透過使用壓縮功能，已改善大型追蹤記錄的傳輸速度。
 * Workflow Heatmap 已經過改善，可避免在執行包含多個活動的工作流程時逾時。 (NEO-27423)。
-* 即使優惠方案結束日期已過，卻仍可能顯示的問題已修正。 Campaign Classic 現在會考慮結束日期的整個時間標記，而非僅考慮日期。 (NEO-27590)
+* 即使產品建議結束日期已過，卻仍可能顯示的問題已修正。 Campaign Classic 現在會考慮結束日期的整個時間標記，而非僅考慮日期。 (NEO-27590)
 * Google+ 連結已從&#x200B;**社交網路共用連結**&#x200B;個人化區塊中移除。
-* 修正上一版本中實施錯誤修正後的問題。 使用 SSL/TLS 連線時，在主機名稱上新增檢查，導致簡訊傳遞失敗。 已針對大多數通訊協定停用主機名稱驗證，例如使用 proxy 的 POP3、SMS 和 HTTP，而 SMS 外部帳戶的憑證檢查已改進為使用三個值 (NEO-29581)。 [進一步了解](../../delivery/using/sms-protocol.md#skip-tls)
+* 修正上一版本中實施錯誤修正後的問題。 使用 SSL/TLS 連線時，在主機名稱上新增檢查，導致簡訊傳遞失敗。 已針對大多數通訊協定停用主機名稱驗證，例如使用 proxy 的 POP3、SMS 和 HTTP，而 SMS 外部帳戶的憑證檢查已改進為使用三個值 (NEO-29581)。 [了解更多](../../delivery/using/sms-protocol.md#skip-tls)
 
 **修補程式**
 

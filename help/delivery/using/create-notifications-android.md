@@ -5,9 +5,8 @@ description: 瞭解如何建立Android的推播通知
 feature: Push
 role: User, Developer
 hide: true
-hidefromtoc: true
 exl-id: 13ccc5d6-4355-42ba-80dc-30a45d3b69a4
-source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '650'
 ht-degree: 0%

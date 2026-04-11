@@ -4,9 +4,8 @@ title: 管理工作流程許可權
 description: 瞭解如何管理工作流程許可權
 feature: Workflows
 hide: true
-hidefromtoc: true
 exl-id: 88995fb3-d336-4355-acd4-33118dd0e2b0
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '321'
 ht-degree: 1%

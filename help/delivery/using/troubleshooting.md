@@ -5,9 +5,8 @@ description: 推播疑難排解
 feature: Push, Troubleshooting
 role: User
 hide: true
-hidefromtoc: true
 exl-id: 313eae5f-40db-4b1a-b013-f4adf8781763
-source-git-commit: 89e350c727fb9379d28916f79d9749f22fd4974f
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '108'
 ht-degree: 0%

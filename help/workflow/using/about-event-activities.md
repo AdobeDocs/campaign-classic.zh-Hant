@@ -4,9 +4,8 @@ title: 關於事件活動
 description: 關於事件活動
 feature: Workflows, Data Management
 hide: true
-hidefromtoc: true
 exl-id: ed27159e-2fce-4b1c-92e8-581901b82f60
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '105'
 ht-degree: 5%

@@ -5,9 +5,8 @@ description: 瞭解如何建立iOS的推播通知
 feature: Push
 role: User, Developer
 hide: true
-hidefromtoc: true
 exl-id: 4520504a-0d9f-4ea7-a5a8-0c07948af4f0
-source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '980'
 ht-degree: 8%

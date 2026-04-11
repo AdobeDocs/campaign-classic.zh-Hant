@@ -5,16 +5,15 @@ description: 瞭解如何使用Campaign建立簡訊
 feature: SMS
 role: User
 hide: true
-hidefromtoc: true
 exl-id: 94aa4628-d973-433d-b963-b078e2d6672b
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '446'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-# 建立簡訊傳遞 {#creating-a-sms-delivery}
+# 建立簡訊傳送 {#creating-a-sms-delivery}
 
 ## 選取傳遞管道 {#selecting-the-delivery-channel}
 

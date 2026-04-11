@@ -4,9 +4,8 @@ title: 載入傳遞內容
 description: 正在載入傳遞內容
 feature: Workflows
 hide: true
-hidefromtoc: true
 exl-id: a52baffd-402b-4b33-ab72-ac954e4dee85
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 2%
@@ -44,7 +43,7 @@ ht-degree: 2%
 
    ![](assets/delivery_loadcontent_activityexample.png)
 
-1. 在&#x200B;**[!UICONTROL Delivery]**&#x200B;活動的&#x200B;**[!UICONTROL Script]**&#x200B;索引標籤中，新增下列命令以載入傳遞中匯入檔案的內容：
+1. 在&#x200B;**[!UICONTROL Script]**&#x200B;活動的&#x200B;**[!UICONTROL Delivery]**&#x200B;索引標籤中，新增下列命令以載入傳遞中匯入檔案的內容：
 
    ```
    delivery.content.html.source=loadFile(vars.filename)
@@ -56,4 +55,4 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->有關SFTP伺服器使用方式的最佳實務及疑難排解在本頁面[&#128279;](../../platform/using/sftp-server-usage.md)中有詳細說明。
+>有關SFTP伺服器使用方式的最佳實務及疑難排解在本頁面[中有詳細說明](../../platform/using/sftp-server-usage.md)。

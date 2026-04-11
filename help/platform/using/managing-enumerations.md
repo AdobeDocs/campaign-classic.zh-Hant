@@ -5,8 +5,7 @@ description: 管理分項清單
 feature: Data Management
 exl-id: 2ece058d-b493-4fea-b3db-322cf7ea7f4f
 hide: true
-hidefromtoc: true
-source-git-commit: b4059e43d98643f0f8b5b3f68f03e10b755e8ba3
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '93'
 ht-degree: 2%

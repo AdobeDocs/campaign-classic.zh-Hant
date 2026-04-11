@@ -1,19 +1,18 @@
 ---
 product: campaign
-title: 高級參數
-description: 高級參數
+title: 進階參數
+description: 進階參數
 feature: Workflows, Data Management
 hide: true
-hidefromtoc: true
 exl-id: 6c90ac2f-0d2b-48b0-9245-3e5e3a3d027c
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '501'
 ht-degree: 5%
 
 ---
 
-# 高級參數{#advanced-parameters}
+# 進階參數{#advanced-parameters}
 
 
 
@@ -81,6 +80,6 @@ ht-degree: 5%
 
 此欄位可讓您初始化變數或修改活動屬性。 如需詳細資訊，請參閱： [JavaScript指令碼和範本](javascript-scripts-and-templates.md)。
 
-## 備註 {#comment}
+## 評論 {#comment}
 
 **[!UICONTROL Comment]**&#x200B;欄位是免費欄位，可讓您新增說明。

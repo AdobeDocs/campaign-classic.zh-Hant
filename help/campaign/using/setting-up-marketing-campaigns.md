@@ -5,9 +5,8 @@ description: 瞭解如何建立和執行行銷活動
 role: User
 feature: Campaigns, Cross Channel Orchestration, Programs
 hide: true
-hidefromtoc: true
 exl-id: a8fce21f-ffe3-4819-87ca-ac0ad9f21e41
-source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '1248'
 ht-degree: 5%
@@ -22,17 +21,17 @@ ht-degree: 5%
 
 若要建立行銷活動：
 
-1. 建立行銷活動：探索行銷活動及其特性：標籤、型別、開始和結束日期、預算、相關資源、管理員和參與者。 [了解更多](#creating-a-campaign)。
+1. 建立行銷活動：探索行銷活動及其特性：標籤、型別、開始和結束日期、預算、相關資源、管理員和參與者。 [了解更多資訊](#creating-a-campaign)。
 
-1. 定義目標母體：使用目標查詢建立工作流程。 [了解更多](../../campaign/using/marketing-campaign-deliveries.md#selecting-the-target-population)。
+1. 定義目標母體：使用目標查詢建立工作流程。 [了解更多資訊](../../campaign/using/marketing-campaign-deliveries.md#selecting-the-target-population)。
 
-1. 建立傳送：選取管道並定義要傳送的內容。 [了解更多](../../campaign/using/marketing-campaign-deliveries.md#creating-deliveries)。
+1. 建立傳送：選取管道並定義要傳送的內容。 [了解更多資訊](../../campaign/using/marketing-campaign-deliveries.md#creating-deliveries)。
 
-1. 核准傳遞。 [了解更多](../../campaign/using/marketing-campaign-approval.md)。
+1. 核准傳遞。 [了解更多資訊](../../campaign/using/marketing-campaign-approval.md)。
 
-1. 監視傳遞。 [了解更多](../../campaign/using/marketing-campaign-monitoring.md)。
+1. 監視傳遞。 [了解更多資訊](../../campaign/using/marketing-campaign-monitoring.md)。
 
-1. 計畫行銷活動和相關成本。 [了解更多](../../campaign/using/providers-stocks-and-budgets.md#creating-service-providers-and-their-cost-structures)。
+1. 計畫行銷活動和相關成本。 [了解更多資訊](../../campaign/using/providers-stocks-and-budgets.md#creating-service-providers-and-their-cost-structures)。
 
 完成這些步驟後，您可以開始傳遞（請參閱[本區段](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery)）、檢查與傳遞相關的資料、流程和資訊，並在必要時管理相關檔案（請參閱[本區段](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents)）。 您也可以追蹤行銷活動和傳遞的處理階段執行情況（請參閱[本區段](../../campaign/using/marketing-campaign-monitoring.md)）。
 
@@ -68,7 +67,7 @@ ht-degree: 5%
 
 ![](assets/s_ncs_user_new_op_wz_a.png)
 
-行銷活動也可以透過方案建立。 若要這麼做，請按一下相關程式&#x200B;**[!UICONTROL Schedule]**&#x200B;索引標籤中的&#x200B;**[!UICONTROL Add]**&#x200B;按鈕。
+行銷活動也可以透過方案建立。 若要這麼做，請按一下相關程式&#x200B;**[!UICONTROL Add]**&#x200B;索引標籤中的&#x200B;**[!UICONTROL Schedule]**&#x200B;按鈕。
 
 ![](assets/s_ncs_user_add_an_op.png)
 
@@ -137,7 +136,7 @@ ht-degree: 5%
 
    >[!NOTE]
    >
-   >此工作流程必須儲存為週期性工作流程範本。 若要這麼做，請編輯工作流程屬性，並在&#x200B;**[!UICONTROL Execution]**&#x200B;索引標籤中選取&#x200B;**[!UICONTROL Recurring workflow template]**&#x200B;選項。
+   >此工作流程必須儲存為週期性工作流程範本。 若要這麼做，請編輯工作流程屬性，並在&#x200B;**[!UICONTROL Recurring workflow template]**&#x200B;索引標籤中選取&#x200B;**[!UICONTROL Execution]**&#x200B;選項。
 
    ![](assets/s_ncs_user_op_template_recur_wf_option.png)
 
@@ -167,7 +166,7 @@ ht-degree: 5%
 
    循環工作流程例項的標籤由其範本標籤和工作流程編號組成，其中的#字元介於。
 
-   從排程建立的工作流程會自動與&#x200B;**[!UICONTROL Schedule]**&#x200B;索引標籤的&#x200B;**[!UICONTROL Workflow]**&#x200B;欄相關聯。
+   從排程建立的工作流程會自動與&#x200B;**[!UICONTROL Workflow]**&#x200B;索引標籤的&#x200B;**[!UICONTROL Schedule]**&#x200B;欄相關聯。
 
    ![](assets/s_ncs_user_op_recur_planning_wfs_1.png)
 

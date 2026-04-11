@@ -4,9 +4,8 @@ title: 架構
 description: 工作流程由特定模組處理，可在多個伺服器上啟動以共用處理負載
 feature: Workflows
 hide: true
-hidefromtoc: true
 exl-id: 46801f78-706c-4dfa-bce7-3d15f569f222
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '116'
 ht-degree: 1%

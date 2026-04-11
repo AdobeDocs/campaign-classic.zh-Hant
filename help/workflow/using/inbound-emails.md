@@ -4,9 +4,8 @@ title: 傳入電子郵件
 description: 深入瞭解傳入電子郵件工作流程活動
 feature: Workflows, Channels Activity
 hide: true
-hidefromtoc: true
 exl-id: b2a05e07-a7d7-436b-b2c6-90ab55d031cd
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '342'
 ht-degree: 1%

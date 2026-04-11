@@ -5,9 +5,8 @@ description: 瞭解如何在Adobe Campaign中使用壓力規則
 role: User, Developer
 feature: Fatigue Management, Typology Rules, Campaigns
 hide: true
-hidefromtoc: true
 exl-id: c23212f2-fdf8-4820-b389-546f7c84db27
-source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '3335'
 ht-degree: 6%

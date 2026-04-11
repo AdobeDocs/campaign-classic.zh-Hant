@@ -4,11 +4,10 @@ title: 執行彙總運算
 description: 瞭解如何在查詢中執行彙總計算
 feature: Workflows
 hide: true
-hidefromtoc: true
 exl-id: 5b05788f-498b-4a84-bdde-2852900f0129
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
-source-wordcount: '231'
+source-wordcount: '230'
 ht-degree: 0%
 
 ---
@@ -21,7 +20,7 @@ ht-degree: 0%
 
 * 需要選取哪個表格？
 
-  收件者資料表(**nms：recipient**)
+  收件者資料表(**nms:recipient**)
 
 * 在輸出欄中應該選取哪些欄位？
 
@@ -33,7 +32,7 @@ ht-degree: 0%
 
 若要建立此範例，請套用下列步驟：
 
-1. 在&#x200B;**[!UICONTROL Data to extract]**&#x200B;中，定義主索引鍵的計數（如上一個範例所示）。 在輸出欄中新增&#x200B;**[!UICONTROL Gender]**&#x200B;欄位。 檢查&#x200B;**[!UICONTROL Gender]**&#x200B;欄中的&#x200B;**[!UICONTROL Group]**&#x200B;選項。 如此一來，收件者就會依性別分組。
+1. 在&#x200B;**[!UICONTROL Data to extract]**&#x200B;中，定義主索引鍵的計數（如上一個範例所示）。 在輸出欄中新增&#x200B;**[!UICONTROL Gender]**&#x200B;欄位。 檢查&#x200B;**[!UICONTROL Group]**&#x200B;欄中的&#x200B;**[!UICONTROL Gender]**&#x200B;選項。 如此一來，收件者就會依性別分組。
 
    ![](assets/query_editor_nveau_27.png)
 

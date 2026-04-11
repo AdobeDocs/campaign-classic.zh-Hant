@@ -3,10 +3,9 @@ product: campaign
 title: Campaign Classic的說明與支援選項
 description: 需要Campaign Classic的支援嗎？ 您來對地方了！
 feature: Troubleshooting
-hidefromtoc: true
 hide: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
-source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '632'
 ht-degree: 67%
@@ -39,7 +38,7 @@ ht-degree: 67%
     <td valign="top">
         <ul>
         <li><a href="platform/using/faq-campaign-classic-v7.md">Campaign Classic v7常見問題集</a></li>
-        <li><a href="platform/using/faq-build-upgrade.md">版本編號升級</a></li>
+        <li><a href="platform/using/faq-build-upgrade.md">版本升級</a></li>
         <li><a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html" target="_blank">Campaign v8完整常見問題集</a></li>
         <li><a href="delivery/using/about-delivery-monitoring.md">傳遞監視</a></li>
         </ul>

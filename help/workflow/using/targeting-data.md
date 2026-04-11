@@ -4,9 +4,8 @@ title: 目標定位資料
 description: 進一步瞭解在工作流程中鎖定資料目標
 feature: Query Editor, Data Management, Workflows
 hide: true
-hidefromtoc: true
 exl-id: 74b82019-bdab-4442-84cf-5ad18d0db788
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '1919'
 ht-degree: 4%
@@ -27,7 +26,7 @@ ht-degree: 4%
 
 可在整個工作流程生命週期中收集要轉送及處理的其他資料。 如需詳細資訊，請參閱[新增資料](query.md#adding-data)和[編輯其他資料](#editing-additional-data)。
 
-### 編輯其他資料 {#editing-additional-data}
+### 編輯額外資料 {#editing-additional-data}
 
 新增其他資料後，您可以編輯資料或使用這些資料來調整查詢活動中定義的目標。
 
@@ -159,7 +158,7 @@ ht-degree: 4%
 
    ![](assets/split-subset-config-all-data.png)
 
-   在[本節](cross-channel-delivery-workflow.md)中說明如何在&#x200B;**[!UICONTROL Split]**&#x200B;活動中使用篩選條件將目標分割成不同母體的範例。
+   在&#x200B;**[!UICONTROL Split]**&#x200B;本節[中說明如何在](cross-channel-delivery-workflow.md)活動中使用篩選條件將目標分割成不同母體的範例。
 
    **[!UICONTROL Label]**&#x200B;欄位可讓您為新建立的子集命名，以符合出站轉變。
 

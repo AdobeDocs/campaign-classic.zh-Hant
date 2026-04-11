@@ -4,9 +4,8 @@ title: 更新資料
 description: 進一步瞭解更新資料工作流程活動
 feature: Workflows, Targeting Activity, Data Management
 hide: true
-hidefromtoc: true
 exl-id: 9f5735d2-73b8-469f-bc10-482c99cdd4a1
-source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '852'
 ht-degree: 4%

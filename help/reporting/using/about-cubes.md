@@ -5,9 +5,8 @@ description: 開始使用多維度資料集
 feature: Reporting, Monitoring
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 hide: true
-hidefromtoc: true
 exl-id: ade4c857-9233-4bc8-9ba1-2fec84b7c3e6
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 2%
@@ -26,7 +25,7 @@ ht-degree: 2%
 
 * **事實資料表/結構描述** — 事實資料表（或事實結構描述）包含分析所依據的原始資料或基本資料。 這些主要是大型磁碟區表格（可能有連結表格），可能會有較長的計算。 例如，事實表格可以是：broadlog表格、purchase表格等。
 
-* **Dimension** -Dimension可讓您將資料分割成群組：建立後，維度會作為分析軸。 在大多數情況下，會針對指定維度定義數個層級。 例如，對於暫時維度，層次將為月、日、小時、分鐘等。 這組層級代表維度階層，並可啟用各種層級的資料分析。
+* **Dimension** — 維度可讓您將資料分成多個群組：建立之後，維度就會當作分析軸。 在大多數情況下，會針對指定維度定義數個層級。 例如，對於暫時維度，層次將為月、日、小時、分鐘等。 這組層級代表維度階層，並可啟用各種層級的資料分析。
 
 * **量化** — 對於某些欄位，您可以定義量化為群組值，使其更容易讀取資訊。 量化會套用至層級。 建議您在可能有許多不同值時定義量化。
 

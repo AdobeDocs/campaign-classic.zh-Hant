@@ -5,9 +5,8 @@ description: 進一步瞭解行銷活動檔案和傳遞大網
 role: User
 feature: Campaigns
 hide: true
-hidefromtoc: true
 exl-id: 891252b0-4700-4a2a-a632-63aad5ce75d7
-source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '755'
 ht-degree: 0%
@@ -16,17 +15,17 @@ ht-degree: 0%
 
 # 管理相關檔案 {#managing-associated-documents}
 
-您可以將各種檔案與行銷活動建立關聯：報表、像片、網頁、圖表等。 這些檔案可以是任何格式(Microsoft Word、PowerPoint、PNG、JPG、Acrobat PDF等)。
+您可以將各種檔案與行銷活動建立關聯：報表、像片、網頁、圖表等。 這些檔案可以是任何格式（Microsoft Word、PowerPoint、PNG、JPG、Acrobat PDF等）。
 
 >[!IMPORTANT]
 >
 >此功能僅適用於小型資產和檔案。
 
-在行銷活動中，您也可以參考其他專案，例如促銷優惠券、與特定品牌或商店相關的特殊優惠等。 當這些元素包含在大綱中時，它們可以與直接郵件傳遞相關聯。 請參閱透過傳遞大網[&#128279;](#associating-and-structuring-resources-linked-via-a-delivery-outline)連結的關聯和結構資源。
+在行銷活動中，您也可以參考其他專案，例如促銷優惠券、與特定品牌或商店相關的特殊優惠等。 當這些元素包含在大綱中時，它們可以與直接郵件傳遞相關聯。 請參閱透過傳遞大網[連結的](#associating-and-structuring-resources-linked-via-a-delivery-outline)關聯和結構資源。
 
 >[!NOTE]
 >
->如果您使用「行銷活動行銷資源管理」模組，您也可以管理行銷資源資料庫，以供多位使用者共同作業。 [了解更多](../../mrm/using/managing-marketing-resources.md)。
+>如果您使用「行銷活動行銷資源管理」模組，您也可以管理行銷資源資料庫，以供多位使用者共同作業。 [了解更多資訊](../../mrm/using/managing-marketing-resources.md)。
 
 ## 新增檔案 {#adding-documents}
 
@@ -69,7 +68,7 @@ ht-degree: 0%
 
 ### 建立大綱 {#creating-an-outline}
 
-若要建立大綱，請按一下相關行銷活動之&#x200B;**[!UICONTROL Edit > Documents]**&#x200B;索引標籤中的&#x200B;**[!UICONTROL Delivery outlines]**&#x200B;子索引標籤。
+若要建立大綱，請按一下相關行銷活動之&#x200B;**[!UICONTROL Delivery outlines]**&#x200B;索引標籤中的&#x200B;**[!UICONTROL Edit > Documents]**&#x200B;子索引標籤。
 
 >[!NOTE]
 >
@@ -97,7 +96,7 @@ ht-degree: 0%
 
   ![](assets/s_ncs_user_op_add_composition_field_button.png)
 
-* 資源是在行銷資源儀表板中產生的行銷資源，透過&#x200B;**[!UICONTROL Campaigns]**&#x200B;標籤的&#x200B;**[!UICONTROL Resources]**&#x200B;連結存取。
+* 資源是在行銷資源儀表板中產生的行銷資源，透過&#x200B;**[!UICONTROL Resources]**&#x200B;標籤的&#x200B;**[!UICONTROL Campaigns]**&#x200B;連結存取。
 
   ![](assets/s_ncs_user_mkg_resource_ovv.png)
 

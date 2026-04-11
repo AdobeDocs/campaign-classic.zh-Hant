@@ -7,9 +7,8 @@ audience: migration
 content-type: reference
 topic-tags: migrating-to-adobe-campaign-7
 hide: true
-hidefromtoc: true
 exl-id: 3743d018-3316-4ce3-ae1c-25760aaf5785
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '1088'
 ht-degree: 0%
@@ -259,7 +258,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >從Adobe Campaign舊版報告配置到Adobe Campaign v7時，請確保物理目錄的路徑指向Adobe Campaign v7 (而非Neolane v5、Neolane v6或Adobe Campaign v6)。
+   >從Adobe Campaign舊版報告配置到Adobe Campaign v7時，請確保物理目錄的路徑指向Adobe Campaign v7 （而非Neolane v5、Neolane v6或Adobe Campaign v6）。
 
 1. 使用下列命令重新載入Adobe Campaign v7設定：
 

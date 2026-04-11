@@ -5,9 +5,8 @@ description: 瞭解如何定義目標母體
 feature: Audiences, Proofs
 role: User
 hide: true
-hidefromtoc: true
 exl-id: d0ed7be7-3147-4cb8-9ce7-ea51602e9048
-source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '1730'
 ht-degree: 23%
@@ -21,7 +20,7 @@ ht-degree: 23%
 * **主要對象**：將接收訊息的設定檔。 [了解更多](steps-defining-the-target-population.md#selecting-the-main-target)
 * **校訂**：校訂訊息的收件者，涉及驗證週期。 [了解更多](steps-defining-the-target-population.md#defining-a-specific-proof-target)
 * **種子地址**：不在傳遞目標但將接收傳遞的收件者（僅適用於行銷活動的內容）。 [了解更多](about-seed-addresses.md)
-* **控制組**：不會接收傳遞的母體，用於追蹤行為和行銷活動影響（僅適用於行銷活動的內容）。 [了解更多](../../campaign/using/marketing-campaign-target.md#defining-a-control-group)。
+* **控制組**：不會接收傳遞的母體，用於追蹤行為和行銷活動影響（僅適用於行銷活動的內容）。 [了解更多資訊](../../campaign/using/marketing-campaign-target.md#defining-a-control-group)。
 
 ## 選取傳遞的主要收件者 {#selecting-the-main-target}
 
@@ -36,7 +35,7 @@ ht-degree: 23%
 
 1. 在&#x200B;**[!UICONTROL Target mapping]**&#x200B;下拉式清單中選取目標對應。 Adobe Campaign預設目標對應是&#x200B;**[!UICONTROL Recipients]**，根據&#x200B;**nms:recipient**&#x200B;結構描述。
 
-   有其他目標對應可供使用，其中一些可能與您的特定設定相關。[了解更多](#select-a-target-mapping)。
+   有其他目標對應可供使用，其中一些可能與您的特定設定相關。[了解更多資訊](#select-a-target-mapping)。
 
 1. 按一下 **[!UICONTROL Add]** 按鈕來定義限制篩選器。
 

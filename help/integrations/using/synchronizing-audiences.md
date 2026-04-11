@@ -4,11 +4,10 @@ title: 同步客群
 description: 瞭解如何使用ACS Connector同步受眾
 feature: ACS Connector
 hide: true
-hidefromtoc: true
 exl-id: 88e581cf-43cd-4c43-9347-d016c62fdf42
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
-source-wordcount: '1110'
+source-wordcount: '1109'
 ht-degree: 1%
 
 ---
@@ -17,9 +16,9 @@ ht-degree: 1%
 
 
 
-您可以使用Campaign v7進階功能建立複雜的清單，並以順暢的方式與Campaign Standard（包括其他資料）直接即時以對象身分共用此清單。 您的Campaign Standard使用者就可以在Adobe Campaign Standard中取用受眾。
+您可以使用Campaign v7進階功能建立複雜的清單，並以順暢的方式直接即時與Campaign Standard （包括其他資料）分享此清單作為對象。 您的Campaign Standard使用者就可以在Adobe Campaign Standard中取用受眾。
 
-涉及在Campaign Standard中未複製之其他資料的複雜目標定位，只能使用Campaign v7來達成。
+涉及未在Campaign Standard中複製之其他資料的複雜目標定位，只能使用Campaign v7來達成。
 
 您也可以透過Campaign Standard共用收件者清單或透過Microsoft Dynamics等聯結器的資料。
 
@@ -34,15 +33,15 @@ ht-degree: 1%
 若要完成此操作，您需要：
 
 * 收件者儲存在Campaign v7資料庫並與Campaign Standard同步。 請參閱[同步設定檔](../../integrations/using/synchronizing-profiles.md)區段。
-* 其他資料，例如儲存在Campaign v7資料庫中與nms：recipients相關的表格中的訂閱或交易。 這些資料可以來自Campaign v7 OOB結構描述或自訂表格。 由於未同步化，因此Campaign Standard預設不會提供這些專案。
-* 有權執行Campaign v7和Campaign Standard的工作流程。
-* 在Campaign Standard中建立及執行傳送的權利。
+* 其他資料，例如儲存在Campaign v7資料庫中與nms:recipients相關的表格中的訂閱或交易。 這些資料可以來自Campaign v7 OOB結構描述或自訂表格。 由於未同步化，因此預設無法在Campaign Standard中使用。
+* 有權在Campaign v7和Campaign Standard中執行工作流程。
+* 在Campaign Standard中建立和執行傳送的權利。
 
 ## 在Campaign v7中使用其他資料建立目標定位工作流程 {#create-a-targeting-workflow-with-additional-data-in-campaign-v7}
 
-涉及在Campaign Standard中未複製之其他資料的複雜目標定位，只能使用Campaign v7來達成。
+涉及未在Campaign Standard中複製之其他資料的複雜目標定位，只能使用Campaign v7來達成。
 
-定義目標及其其他資料後，可以將其儲存為清單以供與Campaign Standard共用。
+定義目標及其其他資料後，可將其儲存為清單，以便與Campaign Standard共用。
 
 >[!NOTE]
 >
@@ -71,7 +70,7 @@ ht-degree: 1%
 
    ![](assets/acs_connect_query4.png)
 
-1. 在&#x200B;**[!UICONTROL Data collected]**&#x200B;欄位中選取&#x200B;**[!UICONTROL Aggregates]**&#x200B;並按一下&#x200B;**[!UICONTROL Next]**。
+1. 在&#x200B;**[!UICONTROL Aggregates]**&#x200B;欄位中選取&#x200B;**[!UICONTROL Data collected]**&#x200B;並按一下&#x200B;**[!UICONTROL Next]**。
 
    ![](assets/acs_connect_query5.png)
 
@@ -98,7 +97,7 @@ ht-degree: 1%
 
 1. 在先前建立的工作流程中，新增&#x200B;**[!UICONTROL List update]**&#x200B;活動，並指定您要更新或建立的清單。
 
-   指定您要在Campaign v7中儲存清單的資料夾。 清單受制於實施期間定義的資料夾對應，一旦在Campaign Standard中共用，可能會影響其可見性。 請參閱[許可權轉換](../../integrations/using/acs-connector-principles-and-data-cycle.md#rights-conversion)區段。
+   指定您要在Campaign v7中儲存清單的資料夾。 清單須受實施期間定義的資料夾對應約束，一旦在Campaign Standard中共用，可能會影響其可見性。 請參閱[許可權轉換](../../integrations/using/acs-connector-principles-and-data-cycle.md#rights-conversion)區段。
 
 1. 請確定已核取&#x200B;**[!UICONTROL Share with ACS]**&#x200B;選項。 預設會勾選。
 
@@ -106,17 +105,17 @@ ht-degree: 1%
 
 1. 儲存並執行工作流程。
 
-   目標及其他Campaign Standard會儲存在Campaign v7的清單中，並立即以清單對象的形式共用。 只有已複製的設定檔會與ACS共用。
+   目標與其他Data會儲存在Campaign v7的清單中，並立即在Campaign Standard中分享為清單對象。 只有已複製的設定檔會與ACS共用。
 
 如果&#x200B;**[!UICONTROL List update]**&#x200B;活動發生錯誤，表示與Campaign Standard的同步處理可能已失敗。 若要檢視發生問題的詳細資訊，請前往「**[!UICONTROL Administration]** > **[!UICONTROL ACS Connector]** > **[!UICONTROL Process]** > **[!UICONTROL Diagnosis]**」。 此資料夾包含由&#x200B;**[!UICONTROL List update]**&#x200B;活動執行觸發的同步工作流程。 請參閱[疑難排解ACS聯結器](../../integrations/using/troubleshooting-the-acs-connector.md)區段。
 
-## 擷取Campaign Standard中的資料，並將其用於傳遞 {#retrieve-the-data-in-campaign-standard-and-use-it-in-a-delivery}
+## 在Campaign Standard中擷取資料並將其用於傳送 {#retrieve-the-data-in-campaign-standard-and-use-it-in-a-delivery}
 
 在Campaign v7中執行目標定位工作流程後，您就可以從Campaign Standard的&#x200B;**[!UICONTROL Audiences]**&#x200B;功能表以唯讀模式找到清單對象。
 
 ![](assets/acs_connect_deliveryworkflow_audience.png)
 
-透過Campaign Standard建立傳送工作流程，然後就可以使用此對象及其在傳送中包含的其他資料。
+在Campaign Standard中建立傳送工作流程後，您就可以在傳送中使用此對象及其包含的其他資料。
 
 1. 從&#x200B;**[!UICONTROL Marketing activities]**&#x200B;功能表建立新的工作流程。
 1. 新增&#x200B;**[!UICONTROL Read audience]**&#x200B;活動並選取您先前從Campaign v7共用的對象。
@@ -145,8 +144,8 @@ ht-degree: 1%
 1. 從傳遞控制面板，手動確認可傳送傳遞。
 1. 監視傳送的報告和記錄：
 
-   * **在Campaign Standard**&#x200B;中：存取與任何傳遞相關的傳遞[報告](https://experienceleague.adobe.com/docs/campaign-standard/using/reporting/about-reporting/about-dynamic-reports.html?lang=zh-Hant)和[記錄](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/monitoring-a-delivery.html?lang=zh-Hant)。
-   * Campaign v7和Campaign Standard **中的**：傳遞ID、電子郵件廣泛記錄檔和電子郵件追蹤記錄檔已同步至Campaign v7。 然後您就可以從Campaign v7取得行銷活動的360°檢視。
+   * **在Campaign Standard**&#x200B;中：存取與任何傳遞相關的[報告](https://experienceleague.adobe.com/docs/campaign-standard/using/reporting/about-reporting/about-dynamic-reports.html?lang=zh-Hant)和[記錄檔](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/monitoring-a-delivery.html?lang=zh-Hant)。
+   * Campaign v7和Campaign Standard中的&#x200B;**&#x200B;**：傳遞ID、電子郵件廣泛記錄檔和電子郵件追蹤記錄檔已同步至Campaign v7。 然後您就可以從Campaign v7取得行銷活動的360°檢視。
 
      隔離會自動同步回Campaign v7。 這允許將無法傳遞的資訊納入考量，以便在Campaign v7中執行的下一個目標定位。
 

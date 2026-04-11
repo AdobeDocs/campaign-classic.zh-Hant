@@ -5,9 +5,8 @@ description: 供應商、庫存和預算
 role: User
 feature: Budget Management, Campaigns
 hide: true
-hidefromtoc: true
 exl-id: c60c4f86-a957-4c44-a0fe-39b6e3f0e5d6
-source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '1918'
 ht-degree: 0%
@@ -205,7 +204,7 @@ Adobe Campaign可讓您定義服務提供者，讓他們參與促銷活動內所
 
 ### 庫存管理 {#stock-management}
 
-如果庫存耗盡或達到最小臨界值，Adobe Campaign可以提醒一組操作員。 可透過導覽區域的&#x200B;**[!UICONTROL Other choices]**&#x200B;連結，透過&#x200B;**[!UICONTROL Campaigns]**&#x200B;標籤的&#x200B;**[!UICONTROL Stocks]**&#x200B;連結存取庫存量。
+如果庫存耗盡或達到最小臨界值，Adobe Campaign可以提醒一組操作員。 可透過導覽區域的&#x200B;**[!UICONTROL Stocks]**&#x200B;連結，透過&#x200B;**[!UICONTROL Campaigns]**&#x200B;標籤的&#x200B;**[!UICONTROL Other choices]**&#x200B;連結存取庫存量。
 
 ![](assets/s_ncs_user_stocks_view.png)
 
@@ -284,7 +283,7 @@ Adobe Campaign可讓您定義服務提供者，讓他們參與促銷活動內所
 
 行銷活動的傳遞成本會在行銷活動層級合併，而方案的所有行銷活動的成本都會傳遞至與其關聯的方案。 專用報告可讓您追蹤整個平台或每個計畫與每個方案的預算。
 
-### 實施 {#implementation}
+### 實作 {#implementation}
 
 在行銷活動中，當您選取預算時，必須輸入初始金額。 已計算的成本將根據所輸入金額的履約承諾層次（費用、預期、預留、已承諾）自動更新。 請參閱[計算金額](../../mrm/using/controlling-costs.md#calculating-amounts)。
 

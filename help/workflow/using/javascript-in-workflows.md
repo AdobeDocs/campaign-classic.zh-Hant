@@ -4,9 +4,8 @@ title: 工作流程中的 JavaScript 程式碼範例
 description: 這些範例說明如何在工作流程中使用JavaScript程式碼
 feature: Workflows
 hide: true
-hidefromtoc: true
 exl-id: 7213ea64-3dec-4b16-9d93-4ae941ddfaa7
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '1695'
 ht-degree: 3%
@@ -37,24 +36,24 @@ ht-degree: 3%
 
    [進一步瞭解](building-a-workflow.md)建置工作流程。
 
-1. 將JavaScript程式碼新增至活動。 [了解更多](advanced-parameters.md)。
+1. 將JavaScript程式碼新增至活動。 [了解更多資訊](advanced-parameters.md)。
 1. 儲存工作流程。
 1. 測試範例：
-   1. 啟動工作流程。 [了解更多](starting-a-workflow.md)。
-   1. 開啟日誌。 [了解更多](monitoring-workflow-execution.md#displaying-logs)。
+   1. 啟動工作流程。 [了解更多資訊](starting-a-workflow.md)。
+   1. 開啟日誌。 [了解更多資訊](monitoring-workflow-execution.md#displaying-logs)。
 
 ## 範例1：寫入資料庫{#write-example}
 
-若要寫入資料庫，您可以在`xtk:session`結構描述上使用靜態`Write`方法：
+若要寫入資料庫，您可以在`Write`結構描述上使用靜態`xtk:session`方法：
 
 1. 以XML撰寫寫入要求。
 
 1. 寫入記錄：
 
-   1. 呼叫`xtk:session`結構描述上的`Write`方法。
+   1. 呼叫`Write`結構描述上的`xtk:session`方法。
 
       >[!IMPORTANT]
-      > 如果您使用Adobe Campaign v8，建議您針對Snowflake表格中的`Write`方法，搭配&#x200B;**擷取**&#x200B;和&#x200B;**資料更新/刪除** API使用預備機制。 [深入了解](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html?lang=zh-Hant){target="_blank"}。
+      > 如果您使用Adobe Campaign v8，建議您針對Snowflake表格中的&#x200B;**方法，搭配**&#x200B;擷取&#x200B;**和**&#x200B;資料更新/刪除`Write` API使用預備機制。 [閱讀更多](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html){target="_blank"}。
 
    1. 傳遞XML程式碼作為寫入要求的引數。
 
@@ -71,7 +70,7 @@ ht-degree: 3%
 * 要修改之資料表的綱要
 * 要填入的表格欄位
 
-例如：
+範例：
 
 ```javascript
 var myXML = <recipient xtkschema="nms:recipient"
@@ -82,7 +81,7 @@ var myXML = <recipient xtkschema="nms:recipient"
 
 #### 更新記錄
 
-使用`_update`作業。 [了解更多](../../configuration/using/data-oriented-apis.md)。
+使用`_update`作業。 [了解更多資訊](../../configuration/using/data-oriented-apis.md)。
 
 將此資訊指定為XML屬性：
 
@@ -90,7 +89,7 @@ var myXML = <recipient xtkschema="nms:recipient"
 * 要更新的表格欄位
 * 識別要更新的記錄所需的索引鍵引數
 
-例如：
+範例：
 
 ```javascript
 var myXML = <recipient xtkschema="nms:recipient"
@@ -102,14 +101,14 @@ var myXML = <recipient xtkschema="nms:recipient"
 
 #### 刪除記錄
 
-使用`DeleteCollection`方法。 [了解更多](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-DeleteCollection.html?lang=zh-Hant)。
+使用`DeleteCollection`方法。 [了解更多資訊](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-DeleteCollection.html?lang=zh-Hant)。
 
 指定此資訊：
 
 * 要修改之資料表的綱要
 * 以XML元素的形式識別要更新的記錄所需的`where`子句
 
-例如：
+範例：
 
 ```javascript
 xtk.session.DeleteCollection(
@@ -123,7 +122,7 @@ xtk.session.DeleteCollection(
 
 ### 步驟2：寫入記錄
 
-呼叫`xtk:session`結構描述上的非靜態`Write`方法：
+呼叫`Write`結構描述上的非靜態`xtk:session`方法：
 
 ```javascript
 xtk.session.Write(myXML)
@@ -247,7 +246,7 @@ var query = xtk.queryDef.create(
 
 請依照下列步驟操作：
 
-1. 呼叫`queryDef`實體上的`ExecuteQuery`方法：
+1. 呼叫`ExecuteQuery`實體上的`queryDef`方法：
 
    ```javascript
    var res = query.ExecuteQuery()
@@ -362,8 +361,8 @@ for each (var rcp in res.recipient)
 
 工作流程觸發可透過使用事件來運作。 您可以對事件使用這些功能：
 
-* 若要張貼事件，您可以使用靜態`PostEvent`方法。 [了解更多](https://experienceleague.adobe.com/developer/campaign-api/api/sm-workflow-PostEvent.html?lang=zh-Hant)。
-* 若要接收事件，您可以使用&#x200B;**[!UICONTROL External signal]**&#x200B;活動。 [了解更多](external-signal.md)。
+* 若要張貼事件，您可以使用靜態`PostEvent`方法。 [了解更多資訊](https://experienceleague.adobe.com/developer/campaign-api/api/sm-workflow-PostEvent.html?lang=zh-Hant)。
+* 若要接收事件，您可以使用&#x200B;**[!UICONTROL External signal]**&#x200B;活動。 [了解更多資訊](external-signal.md)。
 
 您可以透過不同方式觸發工作流程：
 
@@ -429,14 +428,14 @@ xtk.workflow.PostEvent(
 
 1. 定義查詢：
 
-   * 使用對應結構描述上的`create`方法擷取實體，例如`xtk:workflow`結構描述。 [了解更多](https://experienceleague.adobe.com/developer/campaign-api/api/f-create.html?lang=zh-Hant)。
+   * 使用對應結構描述上的`create`方法擷取實體，例如`xtk:workflow`結構描述。 [了解更多資訊](https://experienceleague.adobe.com/developer/campaign-api/api/f-create.html?lang=zh-Hant)。
    * 使用`queryDef`方法發出SQL查詢。
 
-1. 使用`ExecuteQuery`方法執行查詢。 [了解更多](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-ExecuteQuery.html?lang=zh-Hant)。
+1. 使用`ExecuteQuery`方法執行查詢。 [了解更多資訊](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-ExecuteQuery.html?lang=zh-Hant)。
 
    使用`for each`回圈來擷取結果。
 
-### 具有`select`子句的`queryDef`方法語法
+### 具有`queryDef`子句的`select`方法語法
 
 ```xml
 <queryDef schema="schema_key" operation="operation_type">
@@ -564,7 +563,7 @@ for each (var w in res.recipient)
 * `delete`作業
 
 >[!IMPORTANT]
-> 如果您使用Adobe Campaign v8，建議您針對Snowflake表格中的`Write`方法，搭配&#x200B;**擷取**&#x200B;和&#x200B;**資料更新/刪除** API使用預備機制。 [深入了解](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html?lang=zh-Hant){target="_blank"}。
+> 如果您使用Adobe Campaign v8，建議您針對Snowflake表格中的&#x200B;**方法，搭配**&#x200B;擷取&#x200B;**和**&#x200B;資料更新/刪除`Write` API使用預備機制。 [閱讀更多](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html){target="_blank"}。
 
 #### 範例1：插入或更新記錄
 

@@ -5,8 +5,7 @@ description: 管理Campaign與您的CRM之間的資料
 feature: Microsoft CRM Integration, Salesforce Integration
 exl-id: 7f9eda15-76e8-40a1-8302-004cea085778
 hide: true
-hidefromtoc: true
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '1529'
 ht-degree: 1%
@@ -88,7 +87,7 @@ Adobe Campaign與CRM之間的資料同步是透過專用的工作流程活動來
 
 ![](assets/crm_task_import_option.png)
 
-上次同步化的日期儲存在組態視窗中指定的選項中，預設為： **LASTIMPORT_&lt;%=instance.internalName%>_&lt;%=activityName%>**。
+上次同步化的日期會儲存在組態視窗中指定的選項中，預設為： **LASTIMPORT_&lt;%=instance.internalName%>_&lt;%=activityName%>**。
 
 >[!NOTE]
 >
@@ -210,7 +209,7 @@ Adobe Campaign與CRM之間的資料同步是透過專用的工作流程活動來
 
 ### 錯誤處理 {#error-processing}
 
-在資料匯入或匯出的架構中，您可以將特定程式套用至錯誤和拒絕。 若要這麼做，請在&#x200B;**[!UICONTROL Behavior]**&#x200B;索引標籤中選取&#x200B;**[!UICONTROL Process rejects]**&#x200B;和&#x200B;**[!UICONTROL Process errors]**&#x200B;選項。
+在資料匯入或匯出的架構中，您可以將特定程式套用至錯誤和拒絕。 若要這麼做，請在&#x200B;**[!UICONTROL Process rejects]**&#x200B;索引標籤中選取&#x200B;**[!UICONTROL Process errors]**&#x200B;和&#x200B;**[!UICONTROL Behavior]**&#x200B;選項。
 
 ![](assets/crm_export_options.png)
 

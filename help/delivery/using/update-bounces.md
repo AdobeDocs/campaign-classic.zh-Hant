@@ -5,9 +5,8 @@ description: 瞭解如何在ISP中斷後更新跳出資格
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Deliverability
 hide: true
-hidefromtoc: true
 exl-id: 7a9afe0a-0219-40f1-9fe2-6374db8d555c
-source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '490'
 ht-degree: 3%

@@ -4,11 +4,10 @@ title: 聯合
 description: 進一步瞭解聯合工作流程活動
 feature: Workflows, Targeting Activity
 hide: true
-hidefromtoc: true
 exl-id: 1cda3146-c333-4743-a871-c44583b6e5b2
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
-source-wordcount: '305'
+source-wordcount: '304'
 ht-degree: 1%
 
 ---
@@ -55,4 +54,4 @@ ht-degree: 1%
 * 結構描述
 * recCount
 
-這組三個值會識別聯合產生的目標。 **[!UICONTROL tableName]**&#x200B;是記錄目標識別碼的資料表的名稱，**[!UICONTROL schema]**&#x200B;是母體的結構描述（通常是nms：recipient），而&#x200B;**[!UICONTROL recCount]**&#x200B;是資料表中的元素數目。
+這組三個值會識別聯合產生的目標。 **[!UICONTROL tableName]**&#x200B;是記錄目標識別碼的資料表名稱，**[!UICONTROL schema]**&#x200B;是母體的結構描述（通常是nms:recipient），而&#x200B;**[!UICONTROL recCount]**&#x200B;是資料表中的元素數目。

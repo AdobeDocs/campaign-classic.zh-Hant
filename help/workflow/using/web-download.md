@@ -4,9 +4,8 @@ title: 網頁下載
 description: 進一步瞭解網頁下載工作流程活動
 feature: Workflows
 hide: true
-hidefromtoc: true
 exl-id: b6005eae-5fbc-4e22-ab3a-c9b7ed6506f6
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '483'
 ht-degree: 2%
@@ -47,7 +46,7 @@ ht-degree: 2%
 
    可以使用以下選項：
 
-   * **[!UICONTROL Use a default storage directory]**：檔案一律會在處理前移動。 如果核取此選項，檔案會移至預設儲存目錄(Adobe Campaign安裝資料夾的&#x200B;**vars**&#x200B;目錄)。 若要指定儲存目錄，請取消核取方塊並在&#x200B;**[!UICONTROL Storage directory]**&#x200B;欄位中輸入其路徑
+   * **[!UICONTROL Use a default storage directory]**：檔案一律會在處理前移動。 如果核取此選項，檔案會移至預設儲存目錄（Adobe Campaign安裝資料夾的&#x200B;**vars**&#x200B;目錄）。 若要指定儲存目錄，請取消核取方塊並在&#x200B;**[!UICONTROL Storage directory]**&#x200B;欄位中輸入其路徑
    * **[!UICONTROL Number of files]**：輸入要保留在儲存目錄中的檔案數目上限。
    * **[!UICONTROL Maximum size (in Mb)]**：輸入儲存目錄的最大容量(MB)。
 

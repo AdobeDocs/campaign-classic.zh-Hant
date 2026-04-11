@@ -4,10 +4,9 @@ title: 建立傳遞範本
 description: 建立傳遞範本
 feature: Delivery Templates
 hide: true
-hidefromtoc: true
 role: User
 exl-id: 40a03e04-56c7-48c0-95b8-aa7bf1121048
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 9%
@@ -36,7 +35,7 @@ ht-degree: 9%
 
 >[!NOTE]
 >
->為避免組態錯誤，Adobe建議您複製原生範本並自訂其設定，而非建立新範本。
+>為避免設定錯誤，Adobe建議您複製原生範本並自訂其設定，而非建立新範本。
 
 若要設定傳送範本，請執行下列步驟：
 

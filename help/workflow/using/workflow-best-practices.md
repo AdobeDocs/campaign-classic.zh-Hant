@@ -4,9 +4,8 @@ title: 工作流程最佳實務
 description: 瞭解行銷活動工作流程最佳實務
 feature: Workflows
 hide: true
-hidefromtoc: true
 exl-id: 39c57f61-2629-4214-91e4-cb97dc039deb
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '1381'
 ht-degree: 11%
@@ -138,7 +137,7 @@ Adobe建議您在專用資料夾中建立工作流程。
 
 ### 訊號 {#signal}
 
-在大多數情況下，您不會知道從哪裡呼叫訊號。 為了避免此問題，請使用訊號活動&#x200B;**[!UICONTROL Advanced]**&#x200B;索引標籤內的&#x200B;**[!UICONTROL Comment]**&#x200B;欄位，來記錄此活動的訊號預期來源。
+在大多數情況下，您不會知道從哪裡呼叫訊號。 為了避免此問題，請使用訊號活動&#x200B;**[!UICONTROL Comment]**&#x200B;索引標籤內的&#x200B;**[!UICONTROL Advanced]**&#x200B;欄位，來記錄此活動的訊號預期來源。
 
 ![](assets/workflow-signal-bp.png)
 

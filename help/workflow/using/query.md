@@ -4,9 +4,8 @@ title: 查詢
 description: 進一步瞭解查詢工作流程活動
 feature: Workflows, Targeting Activity, Query Editor
 hide: true
-hidefromtoc: true
 exl-id: 20d03627-cd56-46da-bc02-73b48a02a350
-source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '1630'
 ht-degree: 0%

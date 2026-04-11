@@ -4,9 +4,8 @@ title: 使用本地核准活動
 description: 瞭解如何使用本機核准活動
 feature: Workflows
 hide: true
-hidefromtoc: true
 exl-id: cc29eec9-9c97-4d1b-9567-2581154d7b3f
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '1283'
 ht-degree: 2%
@@ -120,7 +119,7 @@ ht-degree: 2%
 
    ![](assets/local_validation_split_1bis.png)
 
-1. 在&#x200B;**[!UICONTROL Sort columns]**&#x200B;區段中，新增套用排序的欄位。 我們已選取&#x200B;**[!UICONTROL Email]**&#x200B;欄位。 按一下&#x200B;**[!UICONTROL Next]**。
+1. 在&#x200B;**[!UICONTROL Sort columns]**&#x200B;區段中，新增套用排序的欄位。 我們已選取&#x200B;**[!UICONTROL Email]**&#x200B;欄位。 按一下 **[!UICONTROL Next]**。
 
    ![](assets/local_validation_split_2.png)
 

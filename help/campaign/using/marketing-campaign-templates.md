@@ -5,9 +5,8 @@ description: 行銷活動範本
 role: User
 feature: Campaigns, Templates
 hide: true
-hidefromtoc: true
 exl-id: d272d4b9-f1b2-4fb2-9ed9-91a4aea7eca3
-source-git-commit: 0db6f107d2c161b07f42dcf7a932d319130b31e0
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '1131'
 ht-degree: 3%

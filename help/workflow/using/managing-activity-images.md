@@ -4,9 +4,8 @@ title: 變更活動影像
 description: 瞭解如何變更活動影像
 feature: Workflows
 hide: true
-hidefromtoc: true
 exl-id: cafdbc10-9c10-4d42-a485-c9880df8d371
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '158'
 ht-degree: 3%
@@ -23,7 +22,7 @@ ht-degree: 3%
 
   ![](assets/s_user_segmentation_properties_tab.png)
 
-  若要選取要使用的影像，請按一下&#x200B;**[!UICONTROL Background image]**&#x200B;欄位右側的&#x200B;**[!UICONTROL Select link]**&#x200B;圖示。
+  若要選取要使用的影像，請按一下&#x200B;**[!UICONTROL Select link]**&#x200B;欄位右側的&#x200B;**[!UICONTROL Background image]**&#x200B;圖示。
 
   >[!NOTE]
   >
@@ -35,7 +34,7 @@ ht-degree: 3%
 
 * 若要變更與活動相關聯的影像，請連按兩下物件，然後按一下&#x200B;**[!UICONTROL Advanced]**&#x200B;標籤。
 
-  若要選取要使用的影像，請按一下&#x200B;**[!UICONTROL Image]**&#x200B;欄位右側的&#x200B;**[!UICONTROL Select link]**&#x200B;圖示。
+  若要選取要使用的影像，請按一下&#x200B;**[!UICONTROL Select link]**&#x200B;欄位右側的&#x200B;**[!UICONTROL Image]**&#x200B;圖示。
 
   ![](assets/s_user_segmentation_activity_image.png)
 

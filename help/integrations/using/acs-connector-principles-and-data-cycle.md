@@ -4,9 +4,8 @@ title: 開始使用ACS聯結器
 description: ACS Connector原理和資料週期
 feature: ACS Connector
 hide: true
-hidefromtoc: true
 exl-id: 689b6117-5143-4f85-8582-2c74cae72ca2
-source-git-commit: 2186b8a30449cb023cb07305ba64d53f2c8adab1
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '2034'
 ht-degree: 0%

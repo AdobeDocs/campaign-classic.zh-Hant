@@ -4,9 +4,8 @@ title: 測試
 description: 進一步瞭解測試工作流程活動
 feature: Workflows
 hide: true
-hidefromtoc: true
 exl-id: 6f246d56-01c8-43f5-b12b-c40d258b93c8
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '187'
 ht-degree: 1%

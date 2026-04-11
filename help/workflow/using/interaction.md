@@ -3,9 +3,8 @@ product: campaign
 title: 互動
 description: 互動
 hide: true
-hidefromtoc: true
 feature: Workflows, Interaction, Offers
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '160'
 ht-degree: 3%

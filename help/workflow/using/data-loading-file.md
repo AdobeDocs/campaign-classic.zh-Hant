@@ -4,9 +4,8 @@ title: 資料載入 (檔案)
 description: 進一步瞭解資料載入（檔案）工作流程活動
 feature: Workflows, Data Management Activity
 hide: true
-hidefromtoc: true
 exl-id: a380e486-a40c-4bf6-b7f4-7dcd76c34085
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '1140'
 ht-degree: 14%
@@ -45,7 +44,7 @@ ht-degree: 14%
 
 載入檔案時，會自動偵測欄格式，以及每種資料型別的預設引數。 您可以修改這些預設參數，以指定要套用至資料的特定程式，尤其是當有錯誤或空值時。
 
-若要這麼做，請在&#x200B;**[!UICONTROL Data loading (file)]**&#x200B;活動的主視窗中選取&#x200B;**[!UICONTROL Click here to change the file format...]**。 然後會開啟格式詳細資訊視窗。
+若要這麼做，請在&#x200B;**[!UICONTROL Click here to change the file format...]**&#x200B;活動的主視窗中選取&#x200B;**[!UICONTROL Data loading (file)]**。 然後會開啟格式詳細資訊視窗。
 
 ![](assets/file_loading_columns_format.png)
 
@@ -98,7 +97,7 @@ ht-degree: 14%
 
    **[!UICONTROL Directory]**&#x200B;索引標籤包含要復原的檔案資訊。 在我們的範例中，將會復原名稱包含&#39;customers&#39;一字且儲存在伺服器的tmp/Adobe/Data/files目錄中的所有文字格式檔案。
 
-   [檔案收集器](file-collector.md)區段中詳細說明使用&#x200B;**[!UICONTROL File collector]**。
+   **[!UICONTROL File collector]**&#x200B;檔案收集器[區段中詳細說明使用](file-collector.md)。
 
    ![](assets/s_advuser_load_file_sample_1.png)
 

@@ -5,8 +5,7 @@ description: 瞭解如何連結Campaign和Microsoft Dynamics
 feature: Microsoft CRM Integration
 exl-id: 26737940-b3ce-425c-9604-f4cefd19afaa
 hide: true
-hidefromtoc: true
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '1104'
 ht-degree: 2%
@@ -21,7 +20,7 @@ ht-degree: 2%
 
 可能的部署是透過&#x200B;**Web API** （建議使用）。 請參閱[下節](#microsoft-dynamics-implementation-step)以瞭解設定Microsoft Dynamics連線的步驟。
 
-資料同步是透過專屬的工作流程活動來執行。 [了解更多](../../platform/using/crm-data-sync.md)。
+資料同步是透過專屬的工作流程活動來執行。 [了解更多資訊](../../platform/using/crm-data-sync.md)。
 
 ## 實施步驟{#microsoft-dynamics-implementation-steps}
 
@@ -52,13 +51,13 @@ ht-degree: 2%
 
 ## 設定Microsoft Dynamics CRM {#config-crm-microsoft}
 
-若要產生存取權杖和金鑰以設定帳戶，您必須使用&#x200B;**全域系統管理員**&#x200B;認證登入[Microsoft Azure目錄](https://portal.azure.com)。 然後遵循以下概述的步驟。
+若要產生存取權杖和金鑰以設定帳戶，您需要使用[全域系統管理員](https://portal.azure.com)認證登入&#x200B;**Microsoft Azure目錄**。 然後遵循以下概述的步驟。
 
 ### 取得Microsoft Dynamics使用者端ID {#get-client-id-microsoft}
 
 若要取得使用者端ID，您必須在Azure Active Directory中註冊應用程式。 使用者端ID與應用程式ID相同。
 
-1. 瀏覽至&#x200B;**Azure Active Directory >應用程式註冊**，然後按一下&#x200B;**新增應用程式註冊**。
+1. 導覽至&#x200B;**Azure Active Directory >應用程式註冊**，然後按一下&#x200B;**新增應用程式註冊**。
 1. 提供唯一的名稱，以協助識別執行個體，例如&#x200B;**adobecampaign`<instance identifier>`**。
 1. 選擇&#x200B;**應用程式型別**&#x200B;做為&#x200B;**網頁應用程式/API**。
 1. 使用`http://localhost`作為&#x200B;**登入URL**。
@@ -106,7 +105,7 @@ ht-degree: 2%
 
 **步驟2**：授予管理員同意
 
-1. 瀏覽至&#x200B;**Azure Active Directory >企業應用程式**。
+1. 導覽至&#x200B;**Azure Active Directory >企業應用程式**。
 
 1. 選取您要授與租使用者範圍管理同意的應用程式。
 
@@ -148,14 +147,14 @@ ht-degree: 2%
    >使用相同名稱會擲回重複的金鑰錯誤，因此在我們收到是否需要此步驟的確認之前，請使用不同的使用者名稱並繼續。
    >
 
-1. 為您先前建立的[應用程式](#get-client-id-microsoft)指派&#x200B;**應用程式識別碼**。
+1. 為您先前建立的&#x200B;**應用程式**&#x200B;指派[應用程式識別碼](#get-client-id-microsoft)。
 1. 按一下&#x200B;**管理角色**&#x200B;並選擇使用者的&#x200B;**系統管理員**&#x200B;角色。
 
-## 設定Campaign {#configure-acc-for-microsoft}
+## 設定 Campaign {#configure-acc-for-microsoft}
 
 >[!NOTE]
 >
-> 從Microsoft[&#128279;](https://docs.microsoft.com/previous-versions/dynamicscrm-2016/developers-guide/dn281891%28v=crm.8%29#microsoft-dynamics-crm-2011-endpoint)停用RDS後，內部部署和Office 365型別的CRM部署不再與Campaign相容。 Adobe Campaign現在只支援CRM版本&#x200B;**Dynamic CRM 365**&#x200B;的Web API部署。 [了解更多](../../rn/using/deprecated-features.md#crm-connectors)。
+> 從Microsoft[停用](https://docs.microsoft.com/previous-versions/dynamicscrm-2016/developers-guide/dn281891%28v=crm.8%29#microsoft-dynamics-crm-2011-endpoint)RDS後，內部部署和Office 365型別的CRM部署不再與Campaign相容。 Adobe Campaign現在只支援CRM版本&#x200B;**Dynamic CRM 365**&#x200B;的Web API部署。 [了解更多資訊](../../rn/using/deprecated-features.md#crm-connectors)。
 
 若要連線Microsoft Dynamics 365和Campaign，您需要在Campaign中建立並設定專用的&#x200B;**[!UICONTROL External Account]**。
 
@@ -167,7 +166,7 @@ ht-degree: 2%
 
    >[!NOTE]
    >
-   >本節[&#128279;](../../installation/using/external-accounts.md#microsoft-dynamics-crm-external-account)中詳細說明每個&#x200B;**[!UICONTROL CRM O-Auth type]**&#x200B;的Microsoft Dynamics CRM外部帳戶組態。
+   >本節&#x200B;**[!UICONTROL CRM O-Auth type]**&#x200B;中詳細說明每個[的Microsoft Dynamics CRM外部帳戶組態](../../installation/using/external-accounts.md#microsoft-dynamics-crm-external-account)。
 
    ![](assets/crm-ms-dynamics-ext-account.png)
 

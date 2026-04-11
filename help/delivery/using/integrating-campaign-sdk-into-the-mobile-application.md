@@ -5,9 +5,8 @@ description: 瞭解如何將Campaign SDK整合至您的行動應用程式
 feature: Mobile SDK Integration, Push
 role: User, Developer
 hide: true
-hidefromtoc: true
 exl-id: a5f6b82d-5561-4e56-b2ed-7fd6fd8c2b55
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '983'
 ht-degree: 3%
@@ -20,7 +19,7 @@ ht-degree: 3%
 >
 >Adobe強烈建議您在資料收集UI中設定Adobe Experience Platform擴充功能，以使用Adobe Campaign Mobile SDK。 Adobe Experience Platform Mobile SDK 有助於在行動應用程式中，強化 Adobe Experience Cloud 解決方案與服務。 SDK 設定可透過資料彙集 UI 來管理，提供靈活的設定與可擴充的規則式整合。 [在Adobe Developer檔案中進一步瞭解](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}。
 
-若要取得Campaign SDK (先前稱為Neolane SDK)，請聯絡[Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}。
+若要取得Campaign SDK （先前稱為Neolane SDK），請聯絡[Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}。
 
 若要深入瞭解支援的不同Android和iOS版本，請參閱[相容性矩陣](../../rn/using/compatibility-matrix.md#MobileSDK)。
 
@@ -92,7 +91,7 @@ ht-degree: 3%
 
 註冊功能可讓您：
 
-* 將通知ID或推播ID (iOS的deviceToken和Android的註冊ID)傳送至Adobe Campaign。
+* 將通知ID或推播ID （iOS的deviceToken和Android的註冊ID）傳送至Adobe Campaign。
 * 復原調解金鑰或userKey （例如，電子郵件或帳號）
 
 * 在Android **中的**：
@@ -152,7 +151,7 @@ ht-degree: 3%
 
   追蹤函式可讓您追蹤通知啟用（開啟）和通知顯示（熒幕擷圖）。
 
-  若要追蹤通知顯示(透過呼叫SDK的&#x200B;**notifyReceive**&#x200B;函式來完成)，請遵循下列實作。 請注意，如果您使用FCM (Firebase Cloud Messaging)，我們建議您在Android系統呼叫&#x200B;**onMessageReceived**&#x200B;函式時使用&#x200B;**notifyReceive**&#x200B;函式。
+  若要追蹤通知顯示（透過呼叫SDK的&#x200B;**notifyReceive**&#x200B;函式來完成），請遵循下列實作。 請注意，如果您使用FCM (Firebase Cloud Messaging)，我們建議您在Android系統呼叫&#x200B;**onMessageReceived**&#x200B;函式時使用&#x200B;**notifyReceive**&#x200B;函式。
 
   ```
   package com.android.YourApplication;
@@ -248,7 +247,7 @@ ht-degree: 3%
   }
   ```
 
-  以下為追蹤通知開啟的實作範例(透過呼叫SDK的&#x200B;**notifyOpening**&#x200B;函式來執行)。 **NotificationActivity**&#x200B;類別對應到上一個範例中用來建立&#x200B;**notifIntent**&#x200B;物件的類別。
+  以下為追蹤通知開啟的實作範例（透過呼叫SDK的&#x200B;**notifyOpening**&#x200B;函式來執行）。 **NotificationActivity**&#x200B;類別對應到上一個範例中用來建立&#x200B;**notifIntent**&#x200B;物件的類別。
 
   ```
   public class NotificationActivity extends Activity {
@@ -542,7 +541,7 @@ typedef NS_ENUM(NSUInteger, ACCRegisterDeviceStatus) {
 
 +++**變數**
 
-變數可讓您定義在收到通知後的行動應用程式行為。 這些變數必須在行動應用程式程式碼中，以及在Adobe Campaign主控台、專用行動應用程式的&#x200B;**[!UICONTROL Variables]**&#x200B;索引標籤中定義(請參閱[在Adobe Campaign中設定行動應用程式](configuring-the-mobile-application.md))。 以下是程式碼範例，此程式碼可讓行動應用程式收集通知中新增的任何變數。 在範例中，我們使用「VAR」變數。
+變數可讓您定義在收到通知後的行動應用程式行為。 這些變數必須在行動應用程式程式碼中，以及在Adobe Campaign主控台、專用行動應用程式的&#x200B;**[!UICONTROL Variables]**&#x200B;索引標籤中定義（請參閱[在Adobe Campaign中設定行動應用程式](configuring-the-mobile-application.md)）。 以下是程式碼範例，此程式碼可讓行動應用程式收集通知中新增的任何變數。 在範例中，我們使用「VAR」變數。
 
 * 在Android **中的**：
 

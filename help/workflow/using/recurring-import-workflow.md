@@ -4,9 +4,8 @@ title: 設定週期性匯入
 description: 瞭解如何設定週期性匯入的工作流程範本
 feature: Workflows, Data Management
 hide: true
-hidefromtoc: true
 exl-id: e6e140cb-8de0-4ab9-bddc-95abe04124c6
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '1015'
 ht-degree: 0%
@@ -76,7 +75,7 @@ ht-degree: 0%
 
    * 在前兩個子集中未選取的所有記錄都會在&#x200B;**[!UICONTROL Complement]**&#x200B;中選取。
 
-1. 設定位於先前設定之&#x200B;**[!UICONTROL Split]**&#x200B;活動的第一個出站轉變之後的&#x200B;**[!UICONTROL Update data]**&#x200B;活動。
+1. 設定位於先前設定之&#x200B;**[!UICONTROL Update data]**&#x200B;活動的第一個出站轉變之後的&#x200B;**[!UICONTROL Split]**&#x200B;活動。
 
    * 選取&#x200B;**[!UICONTROL Update]**&#x200B;作為&#x200B;**[!UICONTROL Operation type]**，因為入站轉變僅包含資料庫中已存在的收件者。
    * 在&#x200B;**[!UICONTROL Record identification]**&#x200B;區段中，選取&#x200B;**[!UICONTROL Using reconciliation keys]**&#x200B;並定義目標維度與在&#x200B;**[!UICONTROL Enrichment]**&#x200B;中建立的連結之間的索引鍵。 在此範例中，使用&#x200B;**CRM ID**&#x200B;自訂欄位。
@@ -95,7 +94,7 @@ ht-degree: 0%
 
    ![](assets/import_template_example7.png)
 
-1. 設定位於先前設定的&#x200B;**[!UICONTROL Deduplication]**&#x200B;活動之後的&#x200B;**[!UICONTROL Update data]**&#x200B;活動。
+1. 設定位於先前設定的&#x200B;**[!UICONTROL Update data]**&#x200B;活動之後的&#x200B;**[!UICONTROL Deduplication]**&#x200B;活動。
 
    * 選取&#x200B;**[!UICONTROL Insert]**&#x200B;作為&#x200B;**[!UICONTROL Operation type]**，因為入站轉變只包含不在資料庫中的收件者。
    * 在&#x200B;**[!UICONTROL Record identification]**&#x200B;區段中，選取&#x200B;**[!UICONTROL Directly using the targeting dimension]**&#x200B;並選擇&#x200B;**[!UICONTROL Recipients]**&#x200B;維度。

@@ -5,9 +5,8 @@ description: 監視行銷活動
 role: User
 feature: Campaigns, Monitoring
 hide: true
-hidefromtoc: true
 exl-id: c2b523ac-e900-4db8-85b0-dafc6ddb3eca
-source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 2%
@@ -52,6 +51,6 @@ ht-degree: 2%
 
 ## 執行追蹤 {#execution-tracking}
 
-您可以按一下&#x200B;**[!UICONTROL Deliveries]** (可透過Adobe Campaign首頁存取)來查詢傳遞狀態。 請參閱[傳遞追蹤](#delivery-tracking)。
+您可以按一下&#x200B;**[!UICONTROL Deliveries]** （可透過Adobe Campaign首頁存取）來查詢傳遞狀態。 請參閱[傳遞追蹤](#delivery-tracking)。
 
-行銷活動中執行之程式的相關資訊會收集在行銷活動的&#x200B;**[!UICONTROL Edit > Audit]**&#x200B;索引標籤中。 在那裡，您可以檢視行銷活動中的傳遞清單。 [了解更多](#tracking-a-campaign)。
+行銷活動中執行之程式的相關資訊會收集在行銷活動的&#x200B;**[!UICONTROL Edit > Audit]**&#x200B;索引標籤中。 在那裡，您可以檢視行銷活動中的傳遞清單。 [了解更多資訊](#tracking-a-campaign)。
