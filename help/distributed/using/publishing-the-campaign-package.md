@@ -4,9 +4,8 @@ title: 發佈行銷活動套件
 description: 發佈行銷活動套件
 feature: Distributed Marketing
 hide: true
-hidefromtoc: true
 exl-id: e96add16-cbc8-43af-acff-06a95d5b7749
-source-git-commit: 36fe54cf6d4d762d96205bd637311a426c741427
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '459'
 ht-degree: 2%
@@ -41,7 +40,7 @@ ht-degree: 2%
 
 ## 新增其他檢閱者 {#adding-other-reviewers}
 
-您可以從行銷活動套件&#x200B;**[!UICONTROL Approval parameters...]**&#x200B;索引標籤中的&#x200B;**[!UICONTROL Edit...]**&#x200B;連結新增其他稽核者。
+您可以從行銷活動套件&#x200B;**[!UICONTROL Edit...]**&#x200B;索引標籤中的&#x200B;**[!UICONTROL Approval parameters...]**&#x200B;連結新增其他稽核者。
 
 ![](assets/s_advuser_mkg_dist_select_op_valid.png)
 

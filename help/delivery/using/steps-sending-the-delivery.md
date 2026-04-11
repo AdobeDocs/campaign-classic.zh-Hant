@@ -5,9 +5,8 @@ description: 瞭解如何設定並傳送傳遞
 feature: Channel Configuration
 role: User
 hide: true
-hidefromtoc: true
 exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
-source-git-commit: 2e3a14c97706a873f0791ef83708d704d2eed6c3
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '1531'
 ht-degree: 11%
@@ -18,7 +17,7 @@ ht-degree: 11%
 
 ## 權限{#delivery-permissions}
 
-只有傳遞擁有者可以開始傳遞。 若要讓其他操作員（或操作員群組）能夠開始傳遞，請在&#x200B;**[!UICONTROL Delivery start:]**&#x200B;欄位中將他們新增為稽核者。 [了解更多](../../campaign/using/marketing-campaign-approval.md#selecting-reviewers)。
+只有傳遞擁有者可以開始傳遞。 若要讓其他操作員（或操作員群組）能夠開始傳遞，請在&#x200B;**[!UICONTROL Delivery start:]**&#x200B;欄位中將他們新增為稽核者。 [了解更多資訊](../../campaign/using/marketing-campaign-approval.md#selecting-reviewers)。
 
 ## 傳遞其他引數 {#delivery-additiona-parameters}
 
@@ -34,7 +33,7 @@ ht-degree: 11%
   >
   >當透過複製現有傳遞建立傳遞時，此引數會重設。
 
-* **[!UICONTROL Send using multiple waves]**：使用此選項可分批傳送訊息，而非一次傳送給整個對象。 [了解更多](#sending-using-multiple-waves)。
+* **[!UICONTROL Send using multiple waves]**：使用此選項可分批傳送訊息，而非一次傳送給整個對象。 [了解更多資訊](#sending-using-multiple-waves)。
 
 * **[!UICONTROL Test SMTP delivery]**：使用此選項來測試透過SMTP的傳送。 處理傳遞直到連線到 SMTP 伺服器，但不傳送：對於傳遞的每個收件者，Campaign 會連線到 SMTP 提供者伺服器，執行 SMTP RCPT TO 命令，並在 SMTP DATA 命令之前關閉連線。
 
@@ -44,13 +43,13 @@ ht-degree: 11%
   >
   >* 在[本節](../../installation/using/configure-delivery-settings.md)中進一步瞭解SMTP伺服器組態。
 
-* **[!UICONTROL Email BCC]**：使用此選項，只要將密件副本電子郵件地址新增至您的訊息目標，即可透過密件副本在外部系統上儲存電子郵件。 [了解更多](sending-messages.md#archiving-emails)。
+* **[!UICONTROL Email BCC]**：使用此選項，只要將密件副本電子郵件地址新增至您的訊息目標，即可透過密件副本在外部系統上儲存電子郵件。 [了解更多資訊](sending-messages.md#archiving-emails)。
 
 ## 確認傳遞 {#confirming-delivery}
 
 當傳送已設定好並準備好傳送時，請執行傳送分析。
 
-若要這麼做，請按一下&#x200B;**[!UICONTROL Send]**，選取所需的動作，然後按一下&#x200B;**[!UICONTROL Analyze]**。 [了解更多](steps-validating-the-delivery.md#analyzing-the-delivery)。
+若要這麼做，請按一下&#x200B;**[!UICONTROL Send]**，選取所需的動作，然後按一下&#x200B;**[!UICONTROL Analyze]**。 [了解更多資訊](steps-validating-the-delivery.md#analyzing-the-delivery)。
 
 ![](assets/s_ncs_user_email_del_send.png)
 
@@ -143,7 +142,7 @@ ht-degree: 11%
    >
    >在設定最後一個波段時，您也必須允許足夠的重試時間。 請參閱[本節](steps-sending-the-delivery.md#configuring-retries)。
 
-1. 若要監視您的傳送，請前往傳送記錄檔。 請參閱[此頁面](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"}。
+1. 若要監視您的傳送，請前往傳送記錄檔。 請參閱[此頁面](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"}。
 
    您可以看到已在已處理波段（**[!UICONTROL Sent]**&#x200B;狀態）中傳送的傳遞，以及將在剩餘波段（**[!UICONTROL Pending]**&#x200B;狀態）中傳送的傳遞。
 

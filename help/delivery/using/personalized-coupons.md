@@ -6,9 +6,8 @@ badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v
 feature: Personalization
 role: User
 hide: true
-hidefromtoc: true
 exl-id: 182939bb-7aff-4667-bda9-c5d48be3b946
-source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '910'
 ht-degree: 1%
@@ -25,7 +24,7 @@ ht-degree: 1%
 
 優惠券管理依賴必須安裝的套件。 若要確認您有優惠券管理，請核取&#x200B;**[!UICONTROL Administration > Configuration > Package management > Installed packages.]**
 
-抵用券資料可以使用CSV和XML格式匯入和匯出。 [了解更多](../../platform/using/get-started-data-import-export.md)。
+抵用券資料可以使用CSV和XML格式匯入和匯出。 [了解更多資訊](../../platform/using/get-started-data-import-export.md)。
 
 ## 建立抵用券 {#creating-a-coupon}
 
@@ -152,7 +151,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->依預設，優惠券管理模組使用&#x200B;**nms:recipient**&#x200B;表格。 [了解更多](../../configuration/using/about-data-model.md#default-recipient-table)。
+>依預設，優惠券管理模組使用&#x200B;**nms:recipient**&#x200B;表格。 [了解更多資訊](../../configuration/using/about-data-model.md#default-recipient-table)。
 >
 >在此頁面[中瞭解如何使用自訂收件者資料表](../../configuration/using/about-custom-recipient-table.md)。
 

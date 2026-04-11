@@ -4,11 +4,10 @@ title: 持續傳遞
 description: 持續傳遞
 feature: Workflows, Channels Activity
 hide: true
-hidefromtoc: true
 exl-id: 9c228cdb-331e-476e-a24c-3c7e23add3bf
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '358'
 ht-degree: 12%
 
 ---
@@ -46,7 +45,7 @@ ht-degree: 12%
 * 結構描述
 * recCount
 
-這組三個值會識別即時傳送中產生的目標。 **[!UICONTROL tableName]**&#x200B;是記憶目標識別碼的資料表名稱，**[!UICONTROL schema]**&#x200B;是母體的結構描述（通常是nms：recipient），而&#x200B;**[!UICONTROL recCount]**&#x200B;是資料表中的元素數目。
+這組三個值會識別即時傳送中產生的目標。 **[!UICONTROL tableName]**&#x200B;是記憶目標識別碼的資料表名稱，**[!UICONTROL schema]**&#x200B;是母體的結構描述（通常是nms:recipient），而&#x200B;**[!UICONTROL recCount]**&#x200B;是資料表中的元素數目。
 
 與補充關聯的轉變有相同的引數。
 

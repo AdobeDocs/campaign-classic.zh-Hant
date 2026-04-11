@@ -4,9 +4,8 @@ title: 工作流程屬性
 description: 進一步瞭解Campaign工作流程屬性
 feature: Workflows
 hide: true
-hidefromtoc: true
 exl-id: c7bff902-4f5d-4783-aec4-13561fa7d242
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '553'
 ht-degree: 38%
@@ -19,7 +18,7 @@ ht-degree: 38%
 
 ## 執行標籤 {#execution-tab}
 
-工作流程中&#x200B;**[!UICONTROL Properties]**&#x200B;視窗的&#x200B;**[!UICONTROL Execution]**&#x200B;標籤分為3個區段：
+工作流程中&#x200B;**[!UICONTROL Execution]**&#x200B;視窗的&#x200B;**[!UICONTROL Properties]**&#x200B;標籤分為3個區段：
 
 ![](assets/wf_execution_tab.png)
 
@@ -70,13 +69,13 @@ ht-degree: 38%
 
 * **[!UICONTROL Consecutive errors]**
 
-  在&#x200B;**[!UICONTROL In case of errors]**&#x200B;欄位中選取&#x200B;**[!UICONTROL Ignore]**&#x200B;值時，此欄位將變為可用。 您可以指定程序停止之前可以忽略的錯誤數。一旦達到此數目，工作流程狀態就會變更為&#x200B;**[!UICONTROL Failed]**。 如果此欄位的值為 0，則無論錯誤數為何，工作流程都不會停止。
+  在&#x200B;**[!UICONTROL Ignore]**&#x200B;欄位中選取&#x200B;**[!UICONTROL In case of errors]**&#x200B;值時，此欄位將變為可用。 您可以指定程序停止之前可以忽略的錯誤數。一旦達到此數目，工作流程狀態就會變更為&#x200B;**[!UICONTROL Failed]**。 如果此欄位的值為 0，則無論錯誤數為何，工作流程都不會停止。
 
 * **[!UICONTROL Template]**
 
   此欄位可讓您選取當工作流程主管的狀態變更為&#x200B;**[!UICONTROL Failed]**&#x200B;時，要傳送給其的通知範本。
 
-  如果相關操作員的設定檔中有電子郵件地址，則會以電子郵件通知相關操作員。 若要定義工作流程監督員，請移至屬性（**[!UICONTROL General]**&#x200B;標籤）的&#x200B;**[!UICONTROL Supervisor(s)]**&#x200B;欄位。
+  如果相關操作員的設定檔中有電子郵件地址，則會以電子郵件通知相關操作員。 若要定義工作流程監督員，請移至屬性（**[!UICONTROL Supervisor(s)]**&#x200B;標籤）的&#x200B;**[!UICONTROL General]**&#x200B;欄位。
 
   ![](assets/wf-properties_select-supervisors.png)
 

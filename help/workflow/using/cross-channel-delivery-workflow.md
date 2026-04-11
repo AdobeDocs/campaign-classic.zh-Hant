@@ -4,9 +4,8 @@ title: 跨頻道傳遞工作流程
 description: 進一步瞭解跨頻道傳遞工作流程
 feature: Workflows, Channels Activity
 hide: true
-hidefromtoc: true
 exl-id: dfd36d2c-44ff-49a9-80b4-09eaf3377072
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '670'
 ht-degree: 3%
@@ -84,16 +83,16 @@ ht-degree: 3%
 
    ![](assets/wkf_cross-channel_9.png)
 
-1. 在篩選設定中，從&#x200B;**[!UICONTROL Behavior]**&#x200B;下拉式清單中選取&#x200B;**[!UICONTROL Recipients who have not opened or clicked (email)]**，然後從傳遞清單中選取包含您要傳送之優惠方案的電子郵件。 按一下&#x200B;**[!UICONTROL Finish]**。
+1. 在篩選設定中，從&#x200B;**[!UICONTROL Recipients who have not opened or clicked (email)]**&#x200B;下拉式清單中選取&#x200B;**[!UICONTROL Behavior]**，然後從傳遞清單中選取包含您要傳送之優惠方案的電子郵件。 按一下 **[!UICONTROL Finish]**。
 
    ![](assets/wkf_cross-channel_10.png)
 
-1. 以類似方式繼續第二個子集，並從&#x200B;**[!UICONTROL Behavior]**&#x200B;下拉式清單中選取&#x200B;**[!UICONTROL Recipients who have not clicked (email)]**。
+1. 以類似方式繼續第二個子集，並從&#x200B;**[!UICONTROL Recipients who have not clicked (email)]**&#x200B;下拉式清單中選取&#x200B;**[!UICONTROL Behavior]**。
 
    ![](assets/wkf_cross-channel_11.png)
 
 1. 對於第三個子集，在選取&#x200B;**[!UICONTROL Add a filtering condition on the inbound population]**&#x200B;並按一下&#x200B;**[!UICONTROL Edit]**&#x200B;後，選取&#x200B;**[!UICONTROL Use a specific filtering dimension]**&#x200B;選項。
-1. 從&#x200B;**[!UICONTROL Filtering dimension]**&#x200B;下拉式清單中選取&#x200B;**[!UICONTROL Recipient tracking log]**，從&#x200B;**[!UICONTROL List of restriction filters]**&#x200B;反白顯示&#x200B;**[!UICONTROL Filtering conditions]**，然後按一下&#x200B;**[!UICONTROL Next]**。
+1. 從&#x200B;**[!UICONTROL Recipient tracking log]**&#x200B;下拉式清單中選取&#x200B;**[!UICONTROL Filtering dimension]**，從&#x200B;**[!UICONTROL Filtering conditions]**&#x200B;反白顯示&#x200B;**[!UICONTROL List of restriction filters]**，然後按一下&#x200B;**[!UICONTROL Next]**。
 
    ![](assets/wkf_cross-channel_12.png)
 

@@ -4,9 +4,8 @@ title: 使用自訂日期欄位擴充電子郵件
 description: 瞭解如何使用自訂日期欄位豐富電子郵件
 feature: Workflows
 hide: true
-hidefromtoc: true
 exl-id: 85e0ec2a-b7cb-4d0b-a281-9ad72594403a
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '538'
 ht-degree: 3%
@@ -47,7 +46,7 @@ ht-degree: 3%
 
    ![](assets/uc_enrichment_4.png)
 
-1. 按一下 **[!UICONTROL Finish]**。然後，在您&#x200B;**[!UICONTROL Split]**&#x200B;活動的&#x200B;**[!UICONTROL General]**&#x200B;索引標籤中，按一下&#x200B;**[!UICONTROL Results]**&#x200B;類別中的&#x200B;**[!UICONTROL Generate complement]**。
+1. 按一下 **[!UICONTROL Finish]**。然後，在您&#x200B;**[!UICONTROL General]**&#x200B;活動的&#x200B;**[!UICONTROL Split]**&#x200B;索引標籤中，按一下&#x200B;**[!UICONTROL Generate complement]**&#x200B;類別中的&#x200B;**[!UICONTROL Results]**。
 
    有了該&#x200B;**[!UICONTROL Complement]**&#x200B;結果，您就可以新增傳遞活動或更新清單。 我們剛才已新增&#x200B;**[!UICONTROL End]**&#x200B;活動。
 
@@ -86,14 +85,14 @@ ht-degree: 3%
 
 在您的&#x200B;**[!UICONTROL Enrichment]**&#x200B;活動後，您可以新增傳遞。 在此案例中，我們新增了電子郵件傳遞，以向收件者傳送包含有效日期的特殊優惠，給本月慶祝其生日的客戶。
 
-1. 在您的&#x200B;**[!UICONTROL Enrichment]**&#x200B;活動之後拖放&#x200B;**[!UICONTROL Email delivery]**&#x200B;活動。
+1. 在您的&#x200B;**[!UICONTROL Email delivery]**&#x200B;活動之後拖放&#x200B;**[!UICONTROL Enrichment]**&#x200B;活動。
 
    ![](assets/uc_enrichment_15.png)
 
 1. 連按兩下您的&#x200B;**[!UICONTROL Email delivery]**&#x200B;活動，以開始個人化您的傳遞。
 1. 新增&#x200B;**[!UICONTROL Label]**&#x200B;至您的傳遞，然後按一下&#x200B;**[!UICONTROL Continue]**。
 1. 按一下&#x200B;**[!UICONTROL Save]**&#x200B;以建立您的電子郵件傳遞。
-1. 在電子郵件傳遞&#x200B;**[!UICONTROL Properties]**&#x200B;的&#x200B;**[!UICONTROL Approval]**&#x200B;索引標籤中籤入&#x200B;**[!UICONTROL Confirm delivery before sending option]**&#x200B;是否已核取。
+1. 在電子郵件傳遞&#x200B;**[!UICONTROL Approval]**&#x200B;的&#x200B;**[!UICONTROL Properties]**&#x200B;索引標籤中籤入&#x200B;**[!UICONTROL Confirm delivery before sending option]**&#x200B;是否已核取。
 
    然後，開始您的工作流程，以使用目標資訊擴充您的出站轉變。
 

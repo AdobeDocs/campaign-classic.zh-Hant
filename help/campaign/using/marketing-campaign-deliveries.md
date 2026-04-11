@@ -5,9 +5,8 @@ description: 進一步瞭解行銷活動傳遞
 role: User
 feature: Campaigns, Resource Management, Cross Channel Orchestration
 hide: true
-hidefromtoc: true
 exl-id: 1dd3c080-444d-45f8-9562-d2d01a9d2860
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '1491'
 ht-degree: 1%
@@ -20,7 +19,7 @@ ht-degree: 1%
 
 從行銷活動建立傳遞時，會連結至此行銷活動，並在行銷活動層級合併。
 
-![](assets/do-not-localize/how-to-video.png) [在影片中探索此功能](#create-email-video)
+![](assets/do-not-localize/how-to-video.png)[在影片中探索此功能](#create-email-video)
 
 ## 建立傳遞 {#creating-deliveries}
 
@@ -117,13 +116,13 @@ ht-degree: 1%
 
 ## 管理相關檔案 {#managing-associated-documents}
 
-您可以為行銷活動跟各種檔案建立關聯：報告、照片、網頁、圖表等。這些檔案可以是任何格式(Microsoft Word、PowerPoint、PNG、JPG、Acrobat PDF等)。 在本節[中瞭解如何將檔案與行銷活動](../../campaign/using/marketing-campaign-assets.md)連結。
+您可以為行銷活動跟各種檔案建立關聯：報告、照片、網頁、圖表等。這些檔案可以是任何格式（Microsoft Word、PowerPoint、PNG、JPG、Acrobat PDF等）。 在本節[中瞭解如何將檔案與行銷活動](../../campaign/using/marketing-campaign-assets.md)連結。
 
 >[!IMPORTANT]
 >
 >此模式為小型檔案保留。
 
-在行銷活動中，您也可以參考其他專案，例如促銷優惠券、與特定分公司或商店相關的特殊優惠方案等。 當這些元素包含在大綱中時，它們可以與直接郵件傳遞相關聯。 [了解更多](#associating-and-structuring-resources-linked-via-a-delivery-outline)。
+在行銷活動中，您也可以參考其他專案，例如促銷優惠券、與特定分公司或商店相關的特殊優惠方案等。 當這些元素包含在大綱中時，它們可以與直接郵件傳遞相關聯。 [了解更多資訊](#associating-and-structuring-resources-linked-via-a-delivery-outline)。
 
 >[!NOTE]
 >

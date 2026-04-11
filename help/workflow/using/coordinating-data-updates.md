@@ -4,9 +4,8 @@ title: 協調資料更新
 description: 協調資料更新
 feature: Workflows, Data Management
 hide: true
-hidefromtoc: true
 exl-id: 9959e22e-9aa0-410f-b22c-9ca1cac46b97
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '300'
 ht-degree: 4%
@@ -43,11 +42,11 @@ ht-degree: 4%
 
 1. 將&#x200B;**End**&#x200B;活動新增至&#x200B;**No**&#x200B;分支。 如此一來，如果工作流程已執行，則不會執行任何動作。
 1. 將所需的活動新增至&#x200B;**是**&#x200B;分支。 在我們的案例中，**查詢**&#x200B;和&#x200B;**更新資料**&#x200B;活動。
-1. 開啟第一個活動，然後在&#x200B;**[!UICONTROL Advanced]**&#x200B;索引標籤中新增&#x200B;**instance.vars.isRunning = true**&#x200B;命令。 如此一來，執行個體變數就會設定為執行中。
+1. 開啟第一個活動，然後在&#x200B;**索引標籤中新增** instance.vars.isRunning = true **[!UICONTROL Advanced]**&#x200B;命令。 如此一來，執行個體變數就會設定為執行中。
 
    ![](assets/uc_dataupdate_query.png)
 
-1. 在&#x200B;**[!UICONTROL Yes]**&#x200B;分叉的結尾新增&#x200B;**End**&#x200B;活動，然後在&#x200B;**[!UICONTROL Advanced]**&#x200B;索引標籤中新增&#x200B;**instance.vars.isRunning = false**&#x200B;命令。
+1. 在&#x200B;**分叉的結尾新增** End **[!UICONTROL Yes]**&#x200B;活動，然後在&#x200B;**索引標籤中新增** instance.vars.isRunning = false **[!UICONTROL Advanced]**&#x200B;命令。
 
    如此一來，只要工作流程仍在執行中，就不會執行任何動作。
 

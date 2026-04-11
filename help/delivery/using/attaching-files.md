@@ -6,16 +6,15 @@ badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v
 feature: Email
 role: User
 hide: true
-hidefromtoc: true
 exl-id: db65e83e-276f-4163-98c3-3658a48acffc
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '975'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-# 將檔案附加至電子郵件{#attaching-files}
+# 將檔案附加到電子郵件{#attaching-files}
 
 ## 關於電子郵件附件 {#about-email-attachments}
 

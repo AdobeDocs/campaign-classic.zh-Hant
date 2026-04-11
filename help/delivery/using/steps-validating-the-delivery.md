@@ -5,9 +5,8 @@ description: 瞭解如何驗證傳遞
 feature: Deliverability, Email Rendering, Proofs
 role: User
 hide: true
-hidefromtoc: true
 exl-id: c2f4d8d0-f0fe-4d1a-92fd-91edaf9729f3
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '1653'
 ht-degree: 10%
@@ -20,7 +19,7 @@ ht-degree: 10%
 
 操作步驟：
 
-1. **分析傳遞**：此步驟可讓您準備要傳遞的訊息。 [了解更多](#analyzing-the-delivery)。
+1. **分析傳遞**：此步驟可讓您準備要傳遞的訊息。 [了解更多資訊](#analyzing-the-delivery)。
 
    分析期間套用的規則會顯示在[此區段](#validation-process-with-typologies)中。 可用的驗證模式在[變更核准模式](#changing-the-approval-mode)區段中詳細說明。
 
@@ -96,7 +95,7 @@ ht-degree: 10%
 * **[!UICONTROL Prepare the personalization data with a workflow]** ：此選項可讓您以自動工作流程準備傳遞中包含的個人化資料，這可讓您大幅提升執行個人化的效能。 如需詳細資訊，請參閱[最佳化個人化](personalization-fields.md#optimizing-personalization)。
 * **[!UICONTROL Start job in a detached process]** ：此選項可讓您以個別程式啟動傳遞分析。 依預設，分析函式會使用Adobe Campaign應用程式伺服器處理序(web nlserver)。 選取此選項，即可確保即使應用程式伺服器發生故障，也能完成分析。
 * **[!UICONTROL Log SQL queries generated during the analysis in the journal]** ：此選項會在分析階段將SQL查詢記錄檔新增至傳遞日誌。
-* **[!UICONTROL Ignore personalization scripts during sending]** ：此選項可讓您略過HTML內容中JavaScript指示詞的解譯。 它們將顯示為已傳送內容中的原樣。 這些指示詞是以&#x200B;**&lt;%=**&#x200B;標籤匯入的。
+* **[!UICONTROL Ignore personalization scripts during sending]** ：此選項可讓您略過HTML內容中JavaScript指示詞的解譯。 它們將顯示為已傳送內容中的原樣。 這些指示詞是在&#x200B;**&lt;%=**&#x200B;標籤中引入。
 
 ### 改善傳遞分析效能 {#improving-delivery-analysis}
 
@@ -107,8 +106,8 @@ ht-degree: 10%
 目前，此選項只有在符合下列條件時才可用：
 
 * 傳遞必須是電子郵件。 目前不支援其他管道。
-* 您不得使用中間來源或外部路由，只能使用大量傳遞路由型別。 您可以檢查&#x200B;**[!UICONTROL Delivery properties]**&#x200B;之&#x200B;**[!UICONTROL General]**&#x200B;索引標籤中使用的路由。
-* 您無法鎖定來自外部檔案的母體。 若為單一傳遞，請從&#x200B;**[!UICONTROL Email parameters]**&#x200B;按一下&#x200B;**[!UICONTROL To]**&#x200B;連結，並檢查是否已選取&#x200B;**[!UICONTROL Defined in the database]**&#x200B;選項。 針對工作流程中使用的傳遞，檢查收件者在&#x200B;**[!UICONTROL Delivery]**&#x200B;索引標籤中是否為&#x200B;**[!UICONTROL Specified by the inbound event(s)]**。
+* 您不得使用中間來源或外部路由，只能使用大量傳遞路由型別。 您可以檢查&#x200B;**[!UICONTROL General]**&#x200B;之&#x200B;**[!UICONTROL Delivery properties]**&#x200B;索引標籤中使用的路由。
+* 您無法鎖定來自外部檔案的母體。 若為單一傳遞，請從&#x200B;**[!UICONTROL To]**&#x200B;按一下&#x200B;**[!UICONTROL Email parameters]**&#x200B;連結，並檢查是否已選取&#x200B;**[!UICONTROL Defined in the database]**&#x200B;選項。 針對工作流程中使用的傳遞，檢查收件者在&#x200B;**[!UICONTROL Specified by the inbound event(s)]**&#x200B;索引標籤中是否為&#x200B;**[!UICONTROL Delivery]**。
 * 您必須使用PostgreSQL資料庫。
 
 ### 設定分析優先順序 {#analysis-priority-}
@@ -152,7 +151,7 @@ ht-degree: 10%
 
    >[!NOTE]
    >
-   >如果為傳遞建立了幾種格式(HTML和文字)，您可以在視窗的下半部分選擇要傳送給校樣收件者的訊息格式。
+   >如果為傳遞建立了幾種格式（HTML和文字），您可以在視窗的下半部分選擇要傳送給校樣收件者的訊息格式。
 
    ![](assets/s_ncs_user_email_del_send_proof_formats.png)
 
@@ -195,7 +194,7 @@ ht-degree: 10%
 
 如需型別規則的詳細資訊，請參閱[此頁面](../../campaign-opt/using/about-campaign-typologies.md)。
 
-若要編輯目前的型別，請按一下&#x200B;**[!UICONTROL Typology]**&#x200B;欄位右側的&#x200B;**[!UICONTROL Edit link]**&#x200B;圖示。
+若要編輯目前的型別，請按一下&#x200B;**[!UICONTROL Edit link]**&#x200B;欄位右側的&#x200B;**[!UICONTROL Typology]**&#x200B;圖示。
 
 ![](assets/s_ncs_user_email_del_typo_tab.png)
 

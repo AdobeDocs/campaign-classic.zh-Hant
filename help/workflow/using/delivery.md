@@ -4,11 +4,10 @@ title: 傳遞
 description: 深入瞭解傳遞型別工作流程活動
 feature: Workflows, Channels Activity
 hide: true
-hidefromtoc: true
 exl-id: 72fbdd1d-a105-4e9f-9e17-2e9d62d2bb80
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
-source-wordcount: '917'
+source-wordcount: '916'
 ht-degree: 1%
 
 ---
@@ -78,10 +77,10 @@ ht-degree: 1%
    選取要執行的動作型別：
 
    * **[!UICONTROL Save]**：此選項可讓您建立傳遞並儲存。 它不會分析或傳遞。
-   * **[!UICONTROL Estimate the target]**：此選項可讓您計算傳遞目標，以評估其潛在（第一個分析階段）。 此動作等同於選取&#x200B;**[!UICONTROL Estimate the population to be targeted]**&#x200B;選項，並在透過&#x200B;**傳遞**&#x200B;將傳遞傳送到主要目標時按一下&#x200B;**[!UICONTROL Analyze]**。
-   * **[!UICONTROL Prepare]**：此選項可讓您執行完整分析程式（目標計算與內容準備）。 不會傳送傳遞。 此動作等同於選取&#x200B;**[!UICONTROL Deliver as soon as possible]**&#x200B;選項，並在傳送傳遞至具有&#x200B;**傳遞**&#x200B;的主要目標時按一下&#x200B;**[!UICONTROL Analyze]**。
-   * **[!UICONTROL Send a proof]**：此選項可讓您傳送傳遞的證明。 此動作等同於在具有&#x200B;**傳遞**&#x200B;的傳遞工具列中按一下&#x200B;**[!UICONTROL Send a proof]**&#x200B;按鈕
-   * **[!UICONTROL Prepare and start]**：此選項會啟動完整分析程式（目標計算與內容準備）並傳送傳遞。 此動作等同於使用&#x200B;**傳遞**&#x200B;將傳遞傳送到主要目標時按一下&#x200B;**[!UICONTROL Deliver as soon as possible]**、**[!UICONTROL Analyze]**&#x200B;和&#x200B;**[!UICONTROL Confirm delivery]**&#x200B;選項。
+   * **[!UICONTROL Estimate the target]**：此選項可讓您計算傳遞目標，以評估其潛在（第一個分析階段）。 此動作等同於選取&#x200B;**[!UICONTROL Estimate the population to be targeted]**&#x200B;選項，並在透過&#x200B;**[!UICONTROL Analyze]**&#x200B;傳遞&#x200B;**將傳遞傳送到主要目標時按一下**。
+   * **[!UICONTROL Prepare]**：此選項可讓您執行完整分析程式（目標計算與內容準備）。 不會傳送傳遞。 此動作等同於選取&#x200B;**[!UICONTROL Deliver as soon as possible]**&#x200B;選項，並在傳送傳遞至具有&#x200B;**[!UICONTROL Analyze]**&#x200B;傳遞&#x200B;**的主要目標時按一下**。
+   * **[!UICONTROL Send a proof]**：此選項可讓您傳送傳遞的證明。 此動作等同於在具有&#x200B;**[!UICONTROL Send a proof]**&#x200B;傳遞&#x200B;**的傳遞工具列中按一下**&#x200B;按鈕
+   * **[!UICONTROL Prepare and start]**：此選項會啟動完整分析程式（目標計算與內容準備）並傳送傳遞。 此動作等同於使用&#x200B;**[!UICONTROL Deliver as soon as possible]**&#x200B;傳遞&#x200B;**[!UICONTROL Analyze]**&#x200B;將傳遞傳送到主要目標時按一下&#x200B;**[!UICONTROL Confirm delivery]**、**和**&#x200B;選項。
 
    在工作流程中繼續使用的&#x200B;**[!UICONTROL Act on a delivery]**&#x200B;活動可讓您啟動啟動啟動傳送（目標計算、內容準備、傳送）所需的所有剩餘步驟。 如需詳細資訊，請參閱[傳遞控制](delivery-control.md)。
 
@@ -136,7 +135,7 @@ ht-degree: 1%
 
 ## 輸入引數 {#input-parameters}
 
-傳遞識別碼，如果在&#x200B;**[!UICONTROL Delivery]**&#x200B;區段中選取&#x200B;**[!UICONTROL Specified in the transition]**&#x200B;選項。
+傳遞識別碼，如果在&#x200B;**[!UICONTROL Specified in the transition]**&#x200B;區段中選取&#x200B;**[!UICONTROL Delivery]**&#x200B;選項。
 
 * deliveryId
 * tableName
@@ -146,15 +145,15 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->只有在&#x200B;**[!UICONTROL Recipients]**&#x200B;區段中選取&#x200B;**[!UICONTROL Specified by inbound event(s)]**&#x200B;選項時，此引數才會出現。
+>只有在&#x200B;**[!UICONTROL Specified by inbound event(s)]**&#x200B;區段中選取&#x200B;**[!UICONTROL Recipients]**&#x200B;選項時，此引數才會出現。
 
 * 檔案名稱
 
-  在&#x200B;**[!UICONTROL Recipients]**&#x200B;區段中選取&#x200B;**[!UICONTROL File(s) specified by inbound event(s)]**&#x200B;選項時所產生檔案的完整名稱。
+  在&#x200B;**[!UICONTROL File(s) specified by inbound event(s)]**&#x200B;區段中選取&#x200B;**[!UICONTROL Recipients]**&#x200B;選項時所產生檔案的完整名稱。
 
 * contentId
 
-  如果在&#x200B;**[!UICONTROL Content]**&#x200B;區段中選取&#x200B;**[!UICONTROL Specified by inbound events]**&#x200B;選項，則為內容識別碼。
+  如果在&#x200B;**[!UICONTROL Specified by inbound events]**&#x200B;區段中選取&#x200B;**[!UICONTROL Content]**&#x200B;選項，則為內容識別碼。
 
 ## 輸出引數 {#output-parameters}
 
@@ -162,7 +161,7 @@ ht-degree: 1%
 * 結構描述
 * recCount
 
-這組三個值可識別傳送產生的目標。 **[!UICONTROL tableName]**&#x200B;是記憶目標識別碼的資料表名稱，**[!UICONTROL schema]**&#x200B;是母體的結構描述（通常是nms：recipient），而&#x200B;**[!UICONTROL recCount]**&#x200B;是資料表中的元素數目。
+這組三個值可識別傳送產生的目標。 **[!UICONTROL tableName]**&#x200B;是記憶目標識別碼的資料表名稱，**[!UICONTROL schema]**&#x200B;是母體的結構描述（通常是nms:recipient），而&#x200B;**[!UICONTROL recCount]**&#x200B;是資料表中的元素數目。
 
 與補充關聯的轉變有相同的引數。
 

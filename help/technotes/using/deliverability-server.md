@@ -4,12 +4,11 @@ title: 更新至新的傳遞能力伺服器
 description: 瞭解如何更新至新的Campaign傳遞能力伺服器
 feature: Technote, Deliverability
 hide: true
-hidefromtoc: true
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: c42d4022587846081442a39d03546c0ef335c7a0
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '986'
+ht-degree: 1%
 
 ---
 
@@ -17,7 +16,7 @@ ht-degree: 0%
 
 從[v7.2.2版本](../../rn/using/latest-release.md#release-7-2-2)開始，Adobe Campaign依賴新的傳遞伺服器來提供高可用性，並解決安全性法規遵循問題。 Campaign Classic現在會將與之間的傳遞能力規則、broadlog和隱藏位址同步到新的傳遞能力伺服器。 舊的傳遞伺服器將於2022年8月31日淘汰。
 
-作為Campaign Classic客戶，您必須在2022年8月31日之前實作新的傳遞能力伺服器&#x200B;**&#x200B;**。
+身為Campaign Classic客戶，您必須在2022年8月31日之前實作新的傳遞能力伺服器&#x200B;****。
 
 >[!NOTE]
 >
@@ -38,7 +37,7 @@ ht-degree: 0%
 
 作為&#x200B;**託管客戶**，Adobe將與您合作，將您的執行個體升級至較新版本，並在Adobe Developer Console中建立專案。
 
-作為&#x200B;**內部部署/混合客戶**，您需要升級至[Campaign v7.2.2](../../rn/using/latest-release.md#release-7-2-2) （或更多），以受益於新的傳遞伺服器。 升級所有執行個體後，您必須[實作新的整合](#implementation-steps)以Adobe傳遞伺服器，並確保順暢轉換。
+作為&#x200B;**內部部署/混合客戶**，您需要升級至[Campaign v7.2.2](../../rn/using/latest-release.md#release-7-2-2) （或更多），以受益於新的傳遞伺服器。 升級所有執行個體後，您必須[實作新的整合](#implementation-steps)到Adobe傳遞伺服器，並確保順暢轉換。
 
 ## 實施步驟 {#implementation-steps}
 
@@ -46,7 +45,7 @@ ht-degree: 0%
 >
 >這些步驟只應在混合及內部部署實作中執行。
 
-作為新傳遞能力伺服器整合的一部分，Campaign需要透過Identity Management Service (IMS)驗證與Adobe Shared Services通訊。 首選的方式是使用Adobe Developer型閘道權杖(也稱為技術帳戶權杖或AdobeIO JWT)。
+作為新傳遞能力伺服器整合的一部分，Campaign需要透過Adobe Service (IMS)型驗證與Identity Management Shared Services通訊。 慣用的方式是使用Adobe Developer型閘道權杖（也稱為技術帳戶權杖或Adobe IO JWT）。
 
 >[!AVAILABILITY]
 >
@@ -54,7 +53,7 @@ ht-degree: 0%
 >
 > * 如果您已實作與Campaign的傳入整合，您必須移轉您的技術帳戶，如[本檔案](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank)所詳述。 現有的[服務帳戶(JWT)認證](../../integrations/using/oauth-technical-account.md)將持續運作到2025年1月27日。</br>
 >
-> * 如果您已實作輸出整合(例如Campaign-Analytics整合或Experience Cloud Triggers整合)，則在2025年1月27日前都能正常運作。 不過，在該日期之前，您必須將您的Campaign環境升級至v7.4.1，並將您的技術帳戶移轉至oAuth。
+> * 如果您已實作傳出整合（例如Campaign-Analytics整合或Experience Cloud Triggers整合），則這些功能將持續運作，直到2025年1月27日為止。 不過，在該日期之前，您必須將您的Campaign環境升級至v7.4.1，並將您的技術帳戶移轉至oAuth。
 
 ### 先決條件{#prerequisites}
 
@@ -65,7 +64,7 @@ ht-degree: 0%
 1. 檢查是否已填入`DmRendering_cuid`選項值。
 
    * 如果填入選項，您可以開始實作。
-   * 如果未填入任何值，請連絡[Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank}以取得您的CUID。
+   * 如果未填入任何值，請聯絡[Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank}以取得您的CUID。
 
    您必須在所有Campaign執行個體(MKT、MID、RT、EXEC)上以正確的值填入此選項。 身為混合型客戶，請聯絡Adobe以在MID、RT和EXEC執行個體上設定選項。
 
@@ -73,16 +72,16 @@ ht-degree: 0%
 
 1. 以系統管理員身分，連線至[Adobe Admin Console](https://adminconsole.adobe.com/){_blank}。
 1. 存取&#x200B;**產品及服務**&#x200B;區段，並檢查是否已列出&#x200B;**Adobe Campaign**。
-如果您看不到&#x200B;**Adobe Campaign**，請聯絡[Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank}以將其新增。
-1. 按一下&#x200B;**Adobe Campaign**&#x200B;並選取您的組織。
-   **警告**：如果您有多個組織，請務必選取正確的組織。 在此頁面[&#128279;](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=zh-Hant#ims-org-id){_blank}中進一步瞭解組織。
+如果您看不到**Adobe Campaign**，請聯絡[Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank}以將其新增。
+1. 按一下&#x200B;**Adobe Campaign**並選取您的組織。
+   **警告**：如果您有多個組織，請務必選取正確的組織。 在此頁面[中進一步瞭解組織](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#ims-org-id){_blank}。
 
 1. 檢查&#x200B;**[!UICONTROL Product profile]**&#x200B;是否存在。 如果沒有，請建立它。 此&#x200B;**[!UICONTROL Product profile]**&#x200B;不需要許可權。
 
 
 >[!CAUTION]
 >
->作為內部部署客戶，如果您已實施防火牆，則必須將此URL `https://deliverability-service.adobe.io`新增至允許清單。 [了解更多](../../installation/using/url-permissions.md)。
+>作為內部部署客戶，如果您已實施防火牆，則必須將此URL `https://deliverability-service.adobe.io`新增至允許清單。 [了解更多資訊](../../installation/using/url-permissions.md)。
 
 
 ### 步驟1：建立/更新您的Adobe Developer專案 {#adobe-io-project}

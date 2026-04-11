@@ -4,11 +4,10 @@ title: 分割
 description: 進一步瞭解分割工作流程活動
 feature: Workflows, Targeting Activity
 hide: true
-hidefromtoc: true
 exl-id: 4204350a-c2d2-4033-9bdf-87b49d8211b9
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
-source-wordcount: '1971'
+source-wordcount: '1970'
 ht-degree: 3%
 
 ---
@@ -50,7 +49,7 @@ ht-degree: 3%
 
    ![](assets/s_user_segmentation_partage4.png)
 
-1. 您也可以&#x200B;**使用&#x200B;**&#x200B;[!UICONTROL Add]&#x200B;**按鈕**&#x200B;新增其他子集。
+1. 您也可以&#x200B;**使用**&#x200B;按鈕&#x200B;**[!UICONTROL Add]**&#x200B;新增其他子集。
 
    ![](assets/s_user_segmentation_partage_add.png)
 
@@ -62,7 +61,7 @@ ht-degree: 3%
 
    ![](assets/s_user_segmentation_partage_add2.png)
 
-   您可以選擇產生單一出站轉變（例如使用區段代碼識別集合）：若要這麼做，請選取&#x200B;**[!UICONTROL General]**&#x200B;索引標籤中的&#x200B;**[!UICONTROL Generate subsets in the same table]**&#x200B;選項。
+   您可以選擇產生單一出站轉變（例如使用區段代碼識別集合）：若要這麼做，請選取&#x200B;**[!UICONTROL Generate subsets in the same table]**&#x200B;索引標籤中的&#x200B;**[!UICONTROL General]**&#x200B;選項。
 
    完成後，每個子集的區段代碼會自動儲存在其他欄中。 您可在傳遞層級的個人化欄位中存取此欄。
 
@@ -189,7 +188,7 @@ ht-degree: 3%
    * **[!UICONTROL Value]**：輸入分佈值。
    * **[!UICONTROL Percentage / Set]**：輸入連結至每個值的記錄限制（固定或百分比）。
 
-     此資料行是由&#x200B;**[!UICONTROL General]**&#x200B;索引標籤內的&#x200B;**[!UICONTROL Distribution type]**&#x200B;欄位所定義。
+     此資料行是由&#x200B;**[!UICONTROL Distribution type]**&#x200B;索引標籤內的&#x200B;**[!UICONTROL General]**&#x200B;欄位所定義。
 
    * **[!UICONTROL Label]**：輸入連結到每個值的標籤。
    * **[!UICONTROL Group or operator]**：如果您使用&#x200B;**[!UICONTROL Local approval]**&#x200B;活動（請參閱[本機核准](local-approval.md)），請選取指派給每個散發值的運運算元或運運算元群組。
@@ -214,7 +213,7 @@ ht-degree: 3%
 
 若要讓此選項正確運作，傳入資料必須具有主索引鍵。
 
-例如，如果透過&#x200B;**[!UICONTROL Data loading (RDBMS)]**&#x200B;活動直接從外部資料庫(例如Netezza，不支援索引的概念)讀取資料，則&#x200B;**[!UICONTROL Split]**&#x200B;活動產生的補數將會不正確。
+例如，如果透過&#x200B;**[!UICONTROL Data loading (RDBMS)]**&#x200B;活動直接從外部資料庫（例如Netezza，不支援索引的概念）讀取資料，則&#x200B;**[!UICONTROL Split]**&#x200B;活動產生的補數將會不正確。
 
 若要避免此問題，您可以將&#x200B;**[!UICONTROL Enrichment]**&#x200B;活動拖放到&#x200B;**[!UICONTROL Split]**&#x200B;活動之前。 在&#x200B;**[!UICONTROL Enrichment]**&#x200B;活動中，核取&#x200B;**[!UICONTROL Keep all additional data from the main set]**，並在其他資料中指定您要用來設定&#x200B;**[!UICONTROL Split]**&#x200B;活動篩選器的資料行。 然後，**[!UICONTROL Split]**&#x200B;活動之入站轉變的資料會儲存在Adobe Campaign伺服器上的暫存表格中，且補碼可以正確產生。
 
@@ -236,6 +235,6 @@ ht-degree: 3%
 * 結構描述
 * recCount
 
-這組三個值可識別排除所產生的目標。 **[!UICONTROL tableName]**&#x200B;是記錄目標識別碼的資料表的名稱，**[!UICONTROL schema]**&#x200B;是母體的結構描述（通常是nms：recipient），而&#x200B;**[!UICONTROL recCount]**&#x200B;是資料表中的元素數目。
+這組三個值可識別排除所產生的目標。 **[!UICONTROL tableName]**&#x200B;是記錄目標識別碼的資料表名稱，**[!UICONTROL schema]**&#x200B;是母體的結構描述（通常是nms:recipient），而&#x200B;**[!UICONTROL recCount]**&#x200B;是資料表中的元素數目。
 
 與補充關聯的轉變有相同的引數。

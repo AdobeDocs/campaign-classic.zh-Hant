@@ -5,8 +5,7 @@ description: 瞭解如何連結Campaign和Salesforce
 feature: Salesforce Integration
 exl-id: 94a1f00d-e952-4edd-9012-f71c87b897ca
 hide: true
-hidefromtoc: true
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '321'
 ht-degree: 0%
@@ -19,7 +18,7 @@ ht-degree: 0%
 
 在本頁中，您將瞭解如何將Campaign Classic連線至&#x200B;**Salesforce**。
 
-資料同步是透過專屬的工作流程活動來執行。 [了解更多](../../platform/using/crm-data-sync.md)。
+資料同步是透過專屬的工作流程活動來執行。 [了解更多資訊](../../platform/using/crm-data-sync.md)。
 
 
 外部帳戶可讓您將Salesforce資料匯入和匯出至Adobe Campaign。
@@ -71,7 +70,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >您可以將Adobe Campaign列舉的所有值取代為CRM的值：若要這麼做，請在&#x200B;**[!UICONTROL Replace]**&#x200B;欄中選取&#x200B;**[!UICONTROL Yes]**。
+   >您可以將Adobe Campaign列舉的所有值取代為CRM的值：若要這麼做，請在&#x200B;**[!UICONTROL Yes]**&#x200B;欄中選取&#x200B;**[!UICONTROL Replace]**。
 
 
    按一下&#x200B;**[!UICONTROL Next]**，然後按&#x200B;**[!UICONTROL Start]**，開始匯入清單。
@@ -90,4 +89,4 @@ Campaign和Salesforce.com現已連線。 您可以設定兩個系統之間的資
 
 ![](assets/crm_connectors_sfdc_wf.png)
 
-在此頁面[&#128279;](../../platform/using/crm-data-sync.md)中進一步瞭解資料同步處理。
+在此頁面[中進一步瞭解資料同步處理](../../platform/using/crm-data-sync.md)。

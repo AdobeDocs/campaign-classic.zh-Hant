@@ -7,9 +7,8 @@ audience: migration
 content-type: reference
 topic-tags: migration-procedure
 hide: true
-hidefromtoc: true
 exl-id: 228ee9e4-46a0-4d82-b8ba-b019bc0e7cac
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '715'
 ht-degree: 0%
@@ -164,7 +163,7 @@ nlserver.exe config -postupgrade -check -instance:<instance-name>
    <td> CRM v1(mscrmWorkflow/sfdcWorkflow)<br /> </td> 
    <td> PU-0008<br /> </td> 
    <td> 錯誤<br /> </td> 
-   <td> Microsoft CRM、Salesforce、OracleCRM隨選動作活動已無法使用。 若要設定Adobe Campaign與CRM系統之間的資料同步，您必須使用<a href="../../workflow/using/crm-connector.md" target="_blank">CRM聯結器</a>目標定位活動。<br /> </td>
+   <td> Microsoft CRM、Salesforce、Oracle CRM隨選動作活動已無法使用。 若要設定Adobe Campaign與CRM系統之間的資料同步，您必須使用<a href="../../workflow/using/crm-connector.md" target="_blank">CRM聯結器</a>目標定位活動。<br /> </td>
   </tr> 
  </tbody> 
 </table>

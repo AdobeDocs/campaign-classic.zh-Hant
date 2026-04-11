@@ -5,9 +5,8 @@ description: 瞭解如何定義行銷活動的對象
 role: User
 feature: Campaigns, Audiences
 hide: true
-hidefromtoc: true
 exl-id: 04daa67c-4057-42a7-b993-a6eddf2b883d
-source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '1492'
 ht-degree: 1%
@@ -184,7 +183,7 @@ ht-degree: 1%
 您可以在行銷活動層級定義控制組，在這種情況下，控制組將套用至相關行銷活動的每個傳送。
 
 1. 編輯相關行銷活動，然後按一下「**[!UICONTROL Edit]**」標籤。
-1. 按一下&#x200B;**[!UICONTROL Advanced campaign settings]**。
+1. 按一下 **[!UICONTROL Advanced campaign settings]**。
 
    ![](assets/s_ncs_user_edit_op_target.png)
 
@@ -205,7 +204,7 @@ ht-degree: 1%
 >
 >如果您已定義行銷活動的控制組，且還將其設定為連結至此行銷活動的傳送，則只會套用為傳送定義的控制組。
 
-1. 編輯相關的傳遞，然後按一下&#x200B;**[!UICONTROL Email parameters]**&#x200B;區段中的&#x200B;**[!UICONTROL To]**&#x200B;連結。
+1. 編輯相關的傳遞，然後按一下&#x200B;**[!UICONTROL To]**&#x200B;區段中的&#x200B;**[!UICONTROL Email parameters]**&#x200B;連結。
 
    ![](assets/s_ncs_user_edit_op_target_del.png)
 

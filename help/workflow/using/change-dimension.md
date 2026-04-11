@@ -4,9 +4,8 @@ title: 變更維度
 description: 變更維度
 feature: Workflows, Targeting Activity
 hide: true
-hidefromtoc: true
 exl-id: c3de99f8-089f-4c7c-be11-f375a9463eaa
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '371'
 ht-degree: 2%
@@ -59,7 +58,7 @@ ht-degree: 2%
      >
      >如需建立和管理其他資料行的詳細資訊，請參閱[新增資料](query.md#adding-data)。
 
-   * 選取前一個目標維度（在軸切換前），並在收件者的&#x200B;**[!UICONTROL Location]**&#x200B;子樹狀結構中選取&#x200B;**[!UICONTROL Zip Code]**，然後按一下&#x200B;**[!UICONTROL Edit expression]**。
+   * 選取前一個目標維度（在軸切換前），並在收件者的&#x200B;**[!UICONTROL Zip Code]**&#x200B;子樹狀結構中選取&#x200B;**[!UICONTROL Location]**，然後按一下&#x200B;**[!UICONTROL Edit expression]**。
 
      ![](assets/wf_change-dimension_sample_02.png)
 

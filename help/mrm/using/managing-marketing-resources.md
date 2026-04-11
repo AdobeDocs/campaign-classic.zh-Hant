@@ -6,10 +6,9 @@ feature: Resource Management
 audience: campaign
 content-type: reference
 hide: true
-hidefromtoc: true
 topic-tags: tasks--resources-and-budgets
 exl-id: f661e1d1-de2f-4c6a-bbff-e3ffcd1831f0
-source-git-commit: 942edcf028207eab2ea583949ebc99ab61539ea0
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '1386'
 ht-degree: 1%
@@ -152,7 +151,7 @@ Adobe Campaign可讓您管理和追蹤行銷活動生命週期中涉及的行銷
 工作流程將會執行：
 
 * 當稽核者按一下&#x200B;**[!UICONTROL Publish resource]**&#x200B;連結時（或者，如果未定義稽核者，則為負責資源的人員）。
-* 如果資源是透過行銷資源建立任務來管理，只要勾選任務中的&#x200B;**[!UICONTROL Publish the marketing resource]**&#x200B;方塊，它就會在工作設為&#x200B;**[!UICONTROL Finished]**&#x200B;時執行（請參閱[行銷資源建立任務](../../mrm/using/creating-and-managing-tasks.md#marketing-resource-creation-task)）
+* 如果資源是透過行銷資源建立任務來管理，只要勾選任務中的&#x200B;**[!UICONTROL Finished]**&#x200B;方塊，它就會在工作設為&#x200B;**[!UICONTROL Publish the marketing resource]**&#x200B;時執行（請參閱[行銷資源建立任務](../../mrm/using/creating-and-managing-tasks.md#marketing-resource-creation-task)）
 
 如果未立即啟動工作流程（如果執行個體已停止工作流程），資源的狀態會變更為&#x200B;**[!UICONTROL Pending publication]**。 工作流程啟動後，資源的狀態會變更為&#x200B;**[!UICONTROL Published]**。 此狀態未考慮發佈程式中可能出現的錯誤。 檢查工作流程的狀態，確認工作流程已正確執行。
 

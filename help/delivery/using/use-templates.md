@@ -5,9 +5,8 @@ description: 使用傳遞範本
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Delivery Templates
 hide: true
-hidefromtoc: true
 exl-id: a5da3f29-5eab-428c-b7c3-d9e4243fe628
-source-git-commit: f469689f9e8a4d805fb95a1ae120ccd35aba3731
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '590'
 ht-degree: 1%
@@ -40,7 +39,7 @@ ht-degree: 1%
 
 * 地址必須明確識別寄件者。 網域必須屬於寄件者且已註冊給寄件者。
 
-* Adobe建議建立對應至傳送和回覆所指定地址的電子郵件帳戶。 請洽詢您的傳訊系統管理員。
+* Adobe建議建立與為傳送和回覆指定的地址對應的電子郵件帳戶。 請洽詢您的傳訊系統管理員。
 
 若要在Campaign介面中設定地址，請遵循下列步驟：
 
@@ -48,7 +47,7 @@ ht-degree: 1%
 
    ![](assets/d_best_practices_email_header.png)
 
-1. 在&#x200B;**[!UICONTROL Sender address]**&#x200B;欄位中，確定位址網域與您委派給Adobe的子網域相同。 您可以變更&#39;@&#39;之前的部分，但無法變更網域位址。
+1. 在&#x200B;**[!UICONTROL Sender address]**&#x200B;欄位中，確認位址網域與您委派給Adobe的子網域相同。 您可以變更&#39;@&#39;之前的部分，但無法變更網域位址。
 
 1. 在&#x200B;**[!UICONTROL From]**&#x200B;欄位中，使用收件者可輕鬆辨識的名稱（例如您的品牌名稱），以提高您傳送的開頭率。 若要進一步改善收件者的體驗，您可以新增個人名稱，例如「Emma from Megastore」。
 

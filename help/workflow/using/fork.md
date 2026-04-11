@@ -4,9 +4,8 @@ title: 分支
 description: 進一步瞭解分支工作流程活動
 feature: Workflows
 hide: true
-hidefromtoc: true
 exl-id: 7a38653b-c15d-4ed8-85dc-f7214409f42b
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '417'
 ht-degree: 1%
@@ -30,7 +29,7 @@ ht-degree: 1%
    ![](assets/s_user_segmentation_fork.png)
 
 1. 開啟並設定每個出站轉變。
-1. 或者，若要聯結出站轉變，請新增AND — 聯結活動。 [了解更多](and-join.md)。
+1. 或者，若要聯結出站轉變，請新增AND — 聯結活動。 [了解更多資訊](and-join.md)。
 
    工作流程的後續部分只會在聯結的對外轉變完成後執行。
 
@@ -80,6 +79,6 @@ ht-degree: 1%
 
 ## 相關主題
 
-* [AND-join 活動](and-join.md)
+* [合併連結活動](and-join.md)
 * [使用案例：生日電子郵件](sending-a-birthday-email.md)
 * [使用案例：內容建立和傳遞](../../delivery/using/automating-via-workflows.md#creating-the-delivery-and-its-content)

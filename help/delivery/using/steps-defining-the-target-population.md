@@ -5,9 +5,8 @@ description: 瞭解如何定義目標母體
 feature: Audiences, Proofs
 role: User
 hide: true
-hidefromtoc: true
 exl-id: d0ed7be7-3147-4cb8-9ce7-ea51602e9048
-source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '1730'
 ht-degree: 23%
@@ -21,7 +20,7 @@ ht-degree: 23%
 * **主要對象**：將接收訊息的設定檔。 [了解更多](steps-defining-the-target-population.md#selecting-the-main-target)
 * **校訂**：校訂訊息的收件者，涉及驗證週期。 [了解更多](steps-defining-the-target-population.md#defining-a-specific-proof-target)
 * **種子地址**：不在傳遞目標但將接收傳遞的收件者（僅適用於行銷活動的內容）。 [了解更多](about-seed-addresses.md)
-* **控制組**：不會接收傳遞的母體，用於追蹤行為和行銷活動影響（僅適用於行銷活動的內容）。 [了解更多](../../campaign/using/marketing-campaign-target.md#defining-a-control-group)。
+* **控制組**：不會接收傳遞的母體，用於追蹤行為和行銷活動影響（僅適用於行銷活動的內容）。 [了解更多資訊](../../campaign/using/marketing-campaign-target.md#defining-a-control-group)。
 
 ## 選取傳遞的主要收件者 {#selecting-the-main-target}
 
@@ -36,7 +35,7 @@ ht-degree: 23%
 
 1. 在&#x200B;**[!UICONTROL Target mapping]**&#x200B;下拉式清單中選取目標對應。 Adobe Campaign預設目標對應是&#x200B;**[!UICONTROL Recipients]**，根據&#x200B;**nms:recipient**&#x200B;結構描述。
 
-   有其他目標對應可供使用，其中一些可能與您的特定設定相關。[了解更多](#select-a-target-mapping)。
+   有其他目標對應可供使用，其中一些可能與您的特定設定相關。[了解更多資訊](#select-a-target-mapping)。
 
 1. 按一下 **[!UICONTROL Add]** 按鈕來定義限制篩選器。
 
@@ -48,7 +47,7 @@ ht-degree: 23%
 
    預設會提供下列目標型別：
 
-   * **[!UICONTROL Filtering conditions]** ：此選項可讓您定義查詢並顯示結果。 如需篩選器的詳細資訊，請參閱[Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/audience/create-filters){target=_blank}。
+   * **[!UICONTROL Filtering conditions]** ：此選項可讓您定義查詢並顯示結果。 如需篩選器的詳細資訊，請參閱[Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}。
    * **[!UICONTROL Subscribers of an information service]**：此選項可讓您選取收件者必須訂閱的電子報，才能成為正在建立的傳遞目標。
 
      ![](assets/s_ncs_user_wizard_email02c.png)
@@ -72,7 +71,7 @@ ht-degree: 23%
    * **[!UICONTROL Recipients included in a folder]** ：此選項可讓您定位樹狀結構之特定資料夾中所包含的設定檔。
    * **[!UICONTROL A recipient]** ：此選項可讓您從資料庫中的設定檔選取特定收件者。
    * **[!UICONTROL A list of recipients]** ：此選項可讓您鎖定收件者清單。 清單會顯示在[此區段](../../platform/using/creating-and-managing-lists.md)中。
-   * **[!UICONTROL User filters]** ：此選項可讓您存取預先設定的篩選器，以使用這些篩選器作為資料庫中設定檔的篩選條件。 如需篩選器的詳細資訊，請參閱[Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/audience/create-filters){target=_blank}。
+   * **[!UICONTROL User filters]** ：此選項可讓您存取預先設定的篩選器，以使用這些篩選器作為資料庫中設定檔的篩選條件。 如需篩選器的詳細資訊，請參閱[Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}。
    * 選項&#x200B;**[!UICONTROL Exclude recipients corresponding to this segment]**&#x200B;可讓您鎖定不符合已定義之目標條件的收件者。 若要使用此選項，請選取適當的方框，然後套用定位 (如先前所定義) 以排除產生的設定檔。
 
      ![](assets/s_ncs_user_wizard_email02g.png)

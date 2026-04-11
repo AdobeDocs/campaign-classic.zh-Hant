@@ -4,9 +4,8 @@ title: 讀取清單
 description: 進一步了解讀取清單工作流程活動
 feature: Workflows, Targeting Activity
 hide: true
-hidefromtoc: true
 exl-id: 99f82e91-45cd-4dff-b8a4-3ad87f2f9639
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '488'
 ht-degree: 0%
@@ -65,8 +64,8 @@ ht-degree: 0%
 
 1. 在&#x200B;**[!UICONTROL Exclusion set]**&#x200B;欄位中，選取&#x200B;**[!UICONTROL Read list]**&#x200B;活動：此活動中的資料將從主要集中排除。
 
-   在我們的範例中，聯結上有排除專案：清單中包含的資料將透過包含電子郵件地址的欄位，與主要集的資料進行調解。 若要設定加入，請在&#x200B;**[!UICONTROL Change dimension]**&#x200B;欄位中選取&#x200B;**[!UICONTROL Joins]**。
+   在我們的範例中，聯結上有排除專案：清單中包含的資料將透過包含電子郵件地址的欄位，與主要集的資料進行調解。 若要設定加入，請在&#x200B;**[!UICONTROL Joins]**&#x200B;欄位中選取&#x200B;**[!UICONTROL Change dimension]**。
 
    ![](assets/s_advuser_list_read_sample_4.png)
 
-1. 然後選取與兩組中(Source和目的地)的電子郵件地址相對應的欄位。 然後會連結欄，而且其電子郵件地址在匯入地址清單中的收件者將從目標中排除。
+1. 然後選取與兩組中（Source和目的地）的電子郵件地址相對應的欄位。 然後會連結欄，而且其電子郵件地址在匯入地址清單中的收件者將從目標中排除。

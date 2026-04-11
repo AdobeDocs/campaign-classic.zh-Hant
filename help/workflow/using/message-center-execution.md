@@ -3,9 +3,8 @@ product: campaign
 title: 訊息中心（執行）
 description: 訊息中心（執行）
 hide: true
-hidefromtoc: true
 feature: Workflows
-source-git-commit: 0d8cef312371192ee97f88eb33276df9d7fb11f6
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 2%
@@ -21,9 +20,9 @@ ht-degree: 2%
 
 如需詳細資訊，請參閱Campaign版本的相關章節：
 
-![](assets/do-not-localize/v7.jpeg) [Campaign v7檔案](../../message-center/using/about-transactional-messaging.md)
+![](assets/do-not-localize/v7.jpeg)[Campaign v7檔案](../../message-center/using/about-transactional-messaging.md)
 
-![](assets/do-not-localize/v8.png) [Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/transactional.html)
+![](assets/do-not-localize/v8.png)[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/transactional.html)
 
 <table> 
  <tbody> 

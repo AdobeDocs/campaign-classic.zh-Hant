@@ -4,9 +4,8 @@ title: 同步化網站應用程式
 description: 瞭解如何使用ACS Connector同步化網頁應用程式
 feature: ACS Connector
 hide: true
-hidefromtoc: true
 exl-id: 975bdc94-5da4-45ae-a3bd-e8674b447098
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '796'
 ht-degree: 1%
@@ -19,7 +18,7 @@ ht-degree: 1%
 
 在此使用案例中，我們將使用Campaign Standard傳送包含指向Campaign v7網頁應用程式連結的通訊。 當收件者按一下電子郵件中的連結時，網頁應用程式會顯示一個表單，其中包含數個預先載入收件者資料的欄位，以及一個電子報訂閱連結。 收件者可以更新其資料並訂閱服務。 他的設定檔將會在Campaign v7中更新，而資訊將會在Campaign Standard中複製。
 
-如果您在Campaign v7中有許多服務和Web應用程式，您可能會選擇不要以Campaign Standard重新建立它們。 ACS Connector可讓您使用所有現有的Campaign v7網頁應用程式和服務，並將其連結至Campaign Standard傳送的傳遞。
+如果您在Campaign v7中有許多服務和Web應用程式，您可能會選擇不要在Campaign Standard中全部重新建立。 ACS Connector可讓您使用所有現有的Campaign v7網頁應用程式和服務，並將其連結至Campaign Standard傳送的傳遞。
 
 ## 先決條件 {#prerequisites}
 
@@ -27,11 +26,11 @@ ht-degree: 1%
 
 * 收件者儲存在Campaign v7資料庫並與Campaign Standard同步。 請參閱[同步設定檔](../../integrations/using/synchronizing-profiles.md)區段。
 * 在Campaign v7中建立和發佈的服務和網頁應用程式。
-* 網頁應用程式必須包含使用&#x200B;**[!UICONTROL Adobe Campaign encryption]**&#x200B;識別方法的&#x200B;**[!UICONTROL Pre-loading]**&#x200B;活動。
+* 網頁應用程式必須包含使用&#x200B;**[!UICONTROL Pre-loading]**&#x200B;識別方法的&#x200B;**[!UICONTROL Adobe Campaign encryption]**&#x200B;活動。
 
 ## 建立Web應用程式和服務 {#creating-the-web-application-and-service}
 
-在Campaign v7中，您可以建立網站應用程式，讓收件者訂閱服務。 網頁應用程式和服務是在Campaign v7中設計和儲存的，您可以透過Campaign Standard通訊更新此服務。 若要進一步瞭解Campaign v7中的網頁應用程式，請參閱[本節](../../web/using/adding-fields-to-a-web-form.md#subscription-checkboxes)。
+在Campaign v7中，您可以建立網站應用程式，讓收件者訂閱服務。 網頁應用程式和服務是在Campaign v7中設計和儲存，您可以透過Campaign Standard通訊更新此服務。 若要進一步瞭解Campaign v7中的網頁應用程式，請參閱[本節](../../web/using/adding-fields-to-a-web-form.md#subscription-checkboxes)。
 
 在Campaign v7中，已建立下列物件：
 
@@ -50,7 +49,7 @@ ht-degree: 1%
 
    ![](assets/acs_connect_lp_3.png)
 
-1. 移至&#x200B;**[!UICONTROL Profiles and Target > Services and subscriptions]**&#x200B;並開啟&#x200B;**[!UICONTROL Newsletter]**&#x200B;服務。 這是將從Campaign Standard通訊更新的服務。 您可以看到還沒有收件者訂閱此服務。
+1. 移至&#x200B;**[!UICONTROL Profiles and Target > Services and subscriptions]**&#x200B;並開啟&#x200B;**[!UICONTROL Newsletter]**&#x200B;服務。 此服務將會從Campaign Standard通訊更新。 您可以看到還沒有收件者訂閱此服務。
 
    ![](assets/acs_connect_lp_5.png)
 
@@ -64,7 +63,7 @@ ht-degree: 1%
 
 ![](assets/acs_connect_lp_1.png)
 
-若要檢查資料是否已正確複製，請按照Campaign Standard中的以下步驟操作：
+若要檢查資料是否正確複製，請依照Campaign Standard中的以下步驟操作：
 
 1. 從主畫面按一下&#x200B;**[!UICONTROL Customer profiles]**。
 

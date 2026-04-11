@@ -5,9 +5,8 @@ description: 瞭解如何使用Adobe Campaign中的控制規則
 role: User, Developer
 feature: Typology Rules, Campaigns
 hide: true
-hidefromtoc: true
 exl-id: 5a5f26f6-38da-4488-aadb-81fcb5359331
-source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 2%
@@ -29,7 +28,7 @@ ht-degree: 2%
 * **[!UICONTROL Validity period check]** （電子郵件）：檢查傳遞的有效期是否足夠長，以傳送所有訊息。
 * **[!UICONTROL Proof size check]** （所有管道）：如果校訂目標母體超過100個收件者，則產生錯誤訊息。
 * **[!UICONTROL Wave scheduling check]** （電子郵件）：如果傳遞劃分為數個批次，則檢查最後一個傳遞批次是否已排程在有效期間結束前開始。
-* **[!UICONTROL Unsubscription link approval]** （電子郵件）：檢查每個內容(HTML和文字)中是否有至少一個取消訂閱（選擇退出） URL。
+* **[!UICONTROL Unsubscription link approval]** （電子郵件）：檢查每個內容（HTML和文字）中是否有至少一個取消訂閱（選擇退出） URL。
 
 ## 建立控制規則 {#creating-a-control-rule}
 

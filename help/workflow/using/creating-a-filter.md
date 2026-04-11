@@ -4,9 +4,8 @@ title: 建立篩選器
 description: 瞭解如何在執行查詢時建立篩選器
 feature: Query Editor, Workflows
 hide: true
-hidefromtoc: true
 exl-id: 297ea1e1-39ef-4b99-aaaa-9e88611fb1bf
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '213'
 ht-degree: 2%
@@ -29,7 +28,7 @@ Adobe Campaign中可用的篩選器是透過篩選條件來定義，這些條件
 
 ![](assets/query_editor_filter_sample_1.png)
 
-符合的篩選器包含對&#x200B;**[!UICONTROL Operators]**&#x200B;結構描述的&#x200B;**[!UICONTROL Account disabled]**&#x200B;值的查詢：
+符合的篩選器包含對&#x200B;**[!UICONTROL Account disabled]**&#x200B;結構描述的&#x200B;**[!UICONTROL Operators]**&#x200B;值的查詢：
 
 ![](assets/query_editor_filter_sample_2.png)
 

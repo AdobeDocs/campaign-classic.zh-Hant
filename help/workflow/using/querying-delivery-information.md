@@ -4,9 +4,8 @@ title: 查詢傳遞資訊
 description: 瞭解如何查詢傳遞資訊
 feature: Query Editor, Workflows
 hide: true
-hidefromtoc: true
 exl-id: b699b064-1287-41c9-8d94-1c1aa2c145ab
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '1252'
 ht-degree: 1%
@@ -43,17 +42,17 @@ ht-degree: 1%
 
    操作步驟：
 
-   * 按一下&#x200B;**[!UICONTROL Output columns]**&#x200B;欄位右側的&#x200B;**[!UICONTROL Add]**&#x200B;圖示。 在&#x200B;**[!UICONTROL Formula type]**&#x200B;視窗中，選取&#x200B;**[!UICONTROL Edit the formula using an expression]**&#x200B;選項並按一下&#x200B;**[!UICONTROL Next]**。 在&#x200B;**[!UICONTROL Field to select]**&#x200B;視窗中，按一下&#x200B;**[!UICONTROL Advanced selection]**。
+   * 按一下&#x200B;**[!UICONTROL Add]**&#x200B;欄位右側的&#x200B;**[!UICONTROL Output columns]**&#x200B;圖示。 在&#x200B;**[!UICONTROL Formula type]**&#x200B;視窗中，選取&#x200B;**[!UICONTROL Edit the formula using an expression]**&#x200B;選項並按一下&#x200B;**[!UICONTROL Next]**。 在&#x200B;**[!UICONTROL Field to select]**&#x200B;視窗中，按一下&#x200B;**[!UICONTROL Advanced selection]**。
 
      ![](assets/query_editor_tracklog_06.png)
 
    * 在&#x200B;**[!UICONTROL Formula type]**&#x200B;視窗中，對彙總函式執行程式。 此程式將會是主鍵計數。
 
-     在&#x200B;**[!UICONTROL Aggregate]**&#x200B;區段中選取&#x200B;**[!UICONTROL Process on an aggregate function]**&#x200B;並按一下&#x200B;**[!UICONTROL Count]**。
+     在&#x200B;**[!UICONTROL Process on an aggregate function]**&#x200B;區段中選取&#x200B;**[!UICONTROL Aggregate]**&#x200B;並按一下&#x200B;**[!UICONTROL Count]**。
 
      ![](assets/query_editor_nveau_18.png)
 
-     按一下&#x200B;**[!UICONTROL Next]**。
+     按一下 **[!UICONTROL Next]**。
 
    * 選取&#x200B;**[!UICONTROL Primary key (@id)]**&#x200B;欄位。 已設定&#x200B;**[!UICONTROL count (primary key)]**&#x200B;輸出資料行。
 
@@ -63,7 +62,7 @@ ht-degree: 1%
 
    ![](assets/query_editor_nveau_20.png)
 
-1. 設定欄排序，以便最先顯示最活躍的收件者（具有最多的追蹤記錄）。 檢查&#x200B;**[!UICONTROL Descending sort]**&#x200B;欄中的&#x200B;**[!UICONTROL Yes]**。
+1. 設定欄排序，以便最先顯示最活躍的收件者（具有最多的追蹤記錄）。 檢查&#x200B;**[!UICONTROL Yes]**&#x200B;欄中的&#x200B;**[!UICONTROL Descending sort]**。
 
    ![](assets/query_editor_nveau_64.png)
 
@@ -77,13 +76,13 @@ ht-degree: 1%
 
    * 在特定期間內復原特定傳送的追蹤記錄。 需要三個篩選條件：兩個日期條件，可設定目前日期前2週與目前日期前一天之間的搜尋期間；另一個條件，可限制搜尋至特定傳遞。
 
-     在&#x200B;**[!UICONTROL Target element]**&#x200B;視窗中，設定開始考慮追蹤記錄的日期。 按一下 **[!UICONTROL Add]**。會顯示條件行。 按一下&#x200B;**[!UICONTROL Edit expression]**&#x200B;函式以編輯&#x200B;**[!UICONTROL Expression]**&#x200B;欄。 在&#x200B;**[!UICONTROL Field to select]**&#x200B;視窗中選擇&#x200B;**[!UICONTROL Date (@logDate)]**。
+     在&#x200B;**[!UICONTROL Target element]**&#x200B;視窗中，設定開始考慮追蹤記錄的日期。 按一下 **[!UICONTROL Add]**。會顯示條件行。 按一下&#x200B;**[!UICONTROL Expression]**&#x200B;函式以編輯&#x200B;**[!UICONTROL Edit expression]**&#x200B;欄。 在&#x200B;**[!UICONTROL Field to select]**&#x200B;視窗中選擇&#x200B;**[!UICONTROL Date (@logDate)]**。
 
      ![](assets/query_editor_nveau_23.png)
 
      選取&#x200B;**[!UICONTROL greater than]**&#x200B;運運算元。 在&#x200B;**[!UICONTROL Value]**&#x200B;欄中按一下&#x200B;**[!UICONTROL Edit expression]**，然後在&#x200B;**[!UICONTROL Formula type]**&#x200B;視窗中選取&#x200B;**[!UICONTROL Process on dates]**。 最後，在&#x200B;**[!UICONTROL Current date minus n days]**&#x200B;中輸入「15」。
 
-     按一下&#x200B;**[!UICONTROL Finish]**。
+     按一下 **[!UICONTROL Finish]**。
 
      ![](assets/query_editor_nveau_24.png)
 
@@ -91,15 +90,15 @@ ht-degree: 1%
 
      選取&#x200B;**[!UICONTROL less than]**&#x200B;運運算元。 在&#x200B;**[!UICONTROL Value]**&#x200B;欄中按一下&#x200B;**[!UICONTROL Edit expression]**。 若要處理日期，請移至&#x200B;**[!UICONTROL Formula type]**&#x200B;視窗，在&#x200B;**[!UICONTROL Current date minus n days]**&#x200B;中輸入「1」。
 
-     按一下&#x200B;**[!UICONTROL Finish]**。
+     按一下 **[!UICONTROL Finish]**。
 
      ![](assets/query_editor_nveau_65.png)
 
      現在，我們要設定第三個篩選條件，即查詢關注的傳送標籤。
 
-   * 按一下&#x200B;**[!UICONTROL Add]**&#x200B;函式以建立另一個篩選條件。 在&#x200B;**[!UICONTROL Expression]**&#x200B;欄中按一下&#x200B;**[!UICONTROL Edit expression]**。 在&#x200B;**[!UICONTROL Field to select]**&#x200B;視窗的&#x200B;**[!UICONTROL Delivery]**&#x200B;節點中選擇&#x200B;**[!UICONTROL Label]**。
+   * 按一下&#x200B;**[!UICONTROL Add]**&#x200B;函式以建立另一個篩選條件。 在&#x200B;**[!UICONTROL Expression]**&#x200B;欄中按一下&#x200B;**[!UICONTROL Edit expression]**。 在&#x200B;**[!UICONTROL Field to select]**&#x200B;視窗的&#x200B;**[!UICONTROL Label]**&#x200B;節點中選擇&#x200B;**[!UICONTROL Delivery]**。
 
-     按一下&#x200B;**[!UICONTROL Finish]**。
+     按一下 **[!UICONTROL Finish]**。
 
      ![](assets/query_editor_nveau_66.png)
 
@@ -129,11 +128,11 @@ ht-degree: 1%
 
 1. 選取&#x200B;**[!UICONTROL Filtering conditions]**，然後按一下&#x200B;**[!UICONTROL Next]**。
 1. 按一下&#x200B;**[!UICONTROL Add]**&#x200B;按鈕並選取&#x200B;**[!UICONTROL Tracking logs]**。
-1. 將&#x200B;**[!UICONTROL Tracking logs]**&#x200B;運算式的&#x200B;**[!UICONTROL Operator]**&#x200B;設定為&#x200B;**[!UICONTROL Do not exist such as]**。
+1. 將&#x200B;**[!UICONTROL Operator]**&#x200B;運算式的&#x200B;**[!UICONTROL Tracking logs]**&#x200B;設定為&#x200B;**[!UICONTROL Do not exist such as]**。
 
    ![](assets/query_open_1.png)
 
-1. 新增另一個運算式。 在&#x200B;**[!UICONTROL URL]**&#x200B;類別中選取&#x200B;**[!UICONTROL Type]**。
+1. 新增另一個運算式。 在&#x200B;**[!UICONTROL Type]**&#x200B;類別中選取&#x200B;**[!UICONTROL URL]**。
 1. 然後，將其&#x200B;**[!UICONTROL Operator]**&#x200B;設定為&#x200B;**[!UICONTROL equal to]**，將其&#x200B;**[!UICONTROL Value]**&#x200B;設定為&#x200B;**[!UICONTROL Open]**。
 
    ![](assets/query_open_2.png)
@@ -142,7 +141,7 @@ ht-degree: 1%
 
    ![](assets/query_open_3.png)
 
-1. 若要設定過去7天的值，請按一下&#x200B;**[!UICONTROL Value]**&#x200B;欄位中的&#x200B;**[!UICONTROL Edit expression]**&#x200B;按鈕。
+1. 若要設定過去7天的值，請按一下&#x200B;**[!UICONTROL Edit expression]**&#x200B;欄位中的&#x200B;**[!UICONTROL Value]**&#x200B;按鈕。
 1. 在&#x200B;**[!UICONTROL Function]**&#x200B;類別中，選取&#x200B;**[!UICONTROL Current date minus n days]**&#x200B;並新增您想要鎖定的天數。 在此處，我們想要鎖定過去7天。
 
    ![](assets/query_open_4.png)
@@ -171,7 +170,7 @@ ht-degree: 1%
 
    ![](assets/s_advuser_query_sample1.4.png)
 
-   然後按一下&#x200B;**[!UICONTROL Value]**&#x200B;欄中的&#x200B;**[!UICONTROL Edit expression]**&#x200B;圖示以定義要套用的計算公式。 選取&#x200B;**[!UICONTROL Current date minus n days]**&#x200B;公式，並在相關欄位中輸入15。
+   然後按一下&#x200B;**[!UICONTROL Edit expression]**&#x200B;欄中的&#x200B;**[!UICONTROL Value]**&#x200B;圖示以定義要套用的計算公式。 選取&#x200B;**[!UICONTROL Current date minus n days]**&#x200B;公式，並在相關欄位中輸入15。
 
    ![](assets/s_advuser_query_sample1.5.png)
 
@@ -204,7 +203,7 @@ ht-degree: 1%
    ![](assets/query_editor_ex_04.png)
 
 1. 在&#x200B;**[!UICONTROL Subsets]**&#x200B;索引標籤中，定義第一個分割分支。 例如，輸入此分支的&#x200B;**已點按**&#x200B;標籤。
-1. 選取&#x200B;**[!UICONTROL Add a filtering condition on the incoming population]**&#x200B;選項。 按一下&#x200B;**[!UICONTROL Edit]**。
+1. 選取&#x200B;**[!UICONTROL Add a filtering condition on the incoming population]**&#x200B;選項。 按一下 **[!UICONTROL Edit]**。
 1. 在&#x200B;**[!UICONTROL Targeting and filtering dimension]**&#x200B;視窗中，連按兩下&#x200B;**[!UICONTROL Recipients of a delivery]**&#x200B;篩選器。
 
    ![](assets/query_editor_ex_05.png)
@@ -226,7 +225,7 @@ ht-degree: 1%
 
    ![](assets/query_editor_ex_07.png)
 
-1. 在&#x200B;**[!UICONTROL Targeting and filtering dimension]**&#x200B;視窗中按一下&#x200B;**[!UICONTROL Delivery recipients]**。
+1. 在&#x200B;**[!UICONTROL Delivery recipients]**&#x200B;視窗中按一下&#x200B;**[!UICONTROL Targeting and filtering dimension]**。
 1. 在&#x200B;**[!UICONTROL Target element]**&#x200B;視窗中，選取&#x200B;**[!UICONTROL Recipients who did not click (email)]**&#x200B;行為。 選取為最後一個分支顯示的&#x200B;**[!UICONTROL Delivery specified by the transition]**&#x200B;選項。
 
    **[!UICONTROL Split]**&#x200B;方塊現在已完整設定。

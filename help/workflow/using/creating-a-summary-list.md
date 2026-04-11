@@ -4,9 +4,8 @@ title: 建立摘要清單
 description: 建立摘要清單
 feature: Workflows, Data Management
 hide: true
-hidefromtoc: true
 exl-id: 39cec42a-c7ac-41b1-8f61-799b559ce002
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '978'
 ht-degree: 2%
@@ -103,7 +102,7 @@ Phone;500;London 5
 現在連結已建立，我們會從「商店」結構描述新增欄至工作流程的工作表：「郵遞區號參考」欄位。
 
 1. 開啟擴充活動。
-1. 按一下&#x200B;**[!UICONTROL Edit additional data]**。
+1. 按一下 **[!UICONTROL Edit additional data]**。
 1. 將「郵遞區號參考」欄位新增至&#x200B;**[!UICONTROL Output columns]**。
 
 ![](assets/uc2_enrich_enrich5.png)
@@ -128,8 +127,8 @@ Phone;500;London 5
 
 在&#x200B;**更新資料**&#x200B;活動中，需要下列設定：
 
-1. 在&#x200B;**[!UICONTROL Operation type]**&#x200B;欄位中選取&#x200B;**[!UICONTROL Insert or update]**&#x200B;選項，以避免每次收集檔案時都建立新記錄。
-1. 選取&#x200B;**[!UICONTROL Record identification]**&#x200B;選項的&#x200B;**[!UICONTROL By directly using the targeting dimension]**&#x200B;值。
+1. 在&#x200B;**[!UICONTROL Insert or update]**&#x200B;欄位中選取&#x200B;**[!UICONTROL Operation type]**&#x200B;選項，以避免每次收集檔案時都建立新記錄。
+1. 選取&#x200B;**[!UICONTROL By directly using the targeting dimension]**&#x200B;選項的&#x200B;**[!UICONTROL Record identification]**&#x200B;值。
 1. 選取「購買」結構描述做為&#x200B;**[!UICONTROL Document type]**。
 1. 指定要更新的欄位清單。 **[!UICONTROL Destination]**&#x200B;欄可讓您定義「購買」結構描述的欄位。 **[!UICONTROL Expression]**&#x200B;欄可讓您選取工作表中的欄位以執行對應。
 1. 按一下&#x200B;**[!UICONTROL Generate an outbound transition]**&#x200B;選項。
@@ -146,16 +145,16 @@ Phone;500;London 5
 1. 新增&#x200B;**擴充**&#x200B;活動，然後選取上一個查詢產生的主要集。
 1. 按一下[新增&#x200B;**[!UICONTROL Data]**]。
 1. 按一下&#x200B;**[!UICONTROL Data linked to the targeting dimension]**&#x200B;選項。
-1. 在&#x200B;**[!UICONTROL Select fields to add]**&#x200B;視窗中按一下&#x200B;**[!UICONTROL Data linked to the filtering dimension]**&#x200B;選項。
+1. 在&#x200B;**[!UICONTROL Data linked to the filtering dimension]**&#x200B;視窗中按一下&#x200B;**[!UICONTROL Select fields to add]**&#x200B;選項。
 1. 選取&#x200B;**[!UICONTROL Purchases]**&#x200B;節點，然後按一下&#x200B;**[!UICONTROL Next]**。
 
    ![](assets/uc2_enrich_enrich9.png)
 
-1. 選取&#x200B;**[!UICONTROL Aggregates]**&#x200B;選項以變更&#x200B;**[!UICONTROL Collected data]**&#x200B;欄位。
+1. 選取&#x200B;**[!UICONTROL Collected data]**&#x200B;選項以變更&#x200B;**[!UICONTROL Aggregates]**&#x200B;欄位。
 
    ![](assets/uc2_enrich_enrich10.png)
 
-1. 按一下&#x200B;**[!UICONTROL Next]**。
+1. 按一下 **[!UICONTROL Next]**。
 1. 新增下列運算式以計算每個聯絡人的購買總計：&quot;Sum(@prodprice)&quot;。
 
    ![](assets/uc2_enrich_enrich6.png)

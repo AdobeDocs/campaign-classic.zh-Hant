@@ -6,9 +6,8 @@ badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v
 feature: Personalization
 role: User
 hide: true
-hidefromtoc: true
 exl-id: 8d155844-d18a-4165-9886-c3b144109f6e
-source-git-commit: a1e9fec0e9c85bf25b79e24a7432dfb45bd1a0cb
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '870'
 ht-degree: 3%
@@ -136,11 +135,11 @@ HTML原始碼會插入傳遞內容中。 例如，**[!UICONTROL Greetings]**&#x2
    * 選取&#x200B;**[!UICONTROL Visible in the customization menus]**&#x200B;以從個人化欄位插入圖示存取此區塊。
    * 如有必要，請選取&#x200B;**[!UICONTROL The content of the personalization block depends upon the format]**&#x200B;以為HTML格式的電子郵件和文字格式的電子郵件定義兩個個別的區塊。
 
-     然後，兩個索引標籤會顯示在此編輯器的下方(HTML內容和文字內容)以定義對應的內容。
+     然後，兩個索引標籤會顯示在此編輯器的下方（HTML內容和文字內容）以定義對應的內容。
 
      ![](assets/s_ncs_user_personalized_block_b.png)
 
-   * 輸入個人化區塊的內容(在HTML、文字、JavaScript等)，然後按一下&#x200B;**[!UICONTROL Save]**。
+   * 輸入個人化區塊的內容（在HTML、文字、JavaScript等），然後按一下&#x200B;**[!UICONTROL Save]**。
 
 ## 教學課程影片 {#personalization-blocks-video}
 

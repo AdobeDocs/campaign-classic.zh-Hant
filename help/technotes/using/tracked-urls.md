@@ -4,9 +4,8 @@ title: 追蹤的 URL 簽名問題
 description: 追蹤的 URL 簽名問題
 feature: Technote
 hide: true
-hidefromtoc: true
 exl-id: e7d4331b-7149-4768-8e46-2e2911319074
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 30%
@@ -38,7 +37,7 @@ ht-degree: 30%
 * Campaign 19.1.5 (build 9033)至19.1.7 (build 9036)版本。
 
 
-在本節[&#128279;](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中瞭解如何確認您的版本。
+在本節[中瞭解如何確認您的](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)版本。
 
 **如何更新？**
 

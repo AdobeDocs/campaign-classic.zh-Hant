@@ -6,12 +6,11 @@ badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v
 feature: Personalization
 role: User
 hide: true
-hidefromtoc: true
 exl-id: 67fd9a67-cb05-46cd-acd5-e42fde6f4d4f
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '1027'
-ht-degree: 8%
+ht-degree: 9%
 
 ---
 
@@ -19,7 +18,7 @@ ht-degree: 8%
 
 個人化欄位係用於傳遞訊息內容的第一層級個人化。您在主要內容插入的欄位，將顯示從選取的資料來源插入資料的位置。
 
-例如，使用&#x200B;**&lt;%= recipient.LastName %>**&#x200B;語法的個人化欄位會告訴Adobe Campaign將收件者的名稱插入資料庫（收件者表格）。
+例如，**&lt;%= recipient.LastName %>**&#x200B;語法的個人化欄位會告訴Adobe Campaign將收件者的名稱插入資料庫（收件者表格）。
 
 ![](assets/do-not-localize/how-to-video.png) [在影片中探索此功能](#personalization-fields-video)
 
@@ -36,7 +35,7 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->Adobe Campaign個人化標籤一律會有下清單單&#x200B;**&lt;%=table.field%>**。
+>Adobe Campaign個人化標籤一律會有以下形式&#x200B;**&lt;%=table.field%>**。
 
 ## 插入個人化欄位 {#inserting-a-personalization-field}
 
@@ -87,7 +86,7 @@ ht-degree: 8%
 
 若要使用此選項，請遵循下列步驟：
 
-1. 建立行銷活動。 如需詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=zh-Hant){target=_blank}。
+1. 建立行銷活動。 有關更多資訊，請參閱[Campaign v8 文件](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=zh-Hant){target=_blank}。
 1. 在行銷活動的&#x200B;**[!UICONTROL Targeting and workflows]**&#x200B;索引標籤中，新增&#x200B;**查詢**&#x200B;活動至您的工作流程。 有關使用此活動的詳細資訊，請參閱[本區段](../../workflow/using/query.md)。
 1. 將&#x200B;**[!UICONTROL Email delivery]**&#x200B;活動新增至工作流程並開啟它。 有關使用此活動的詳細資訊，請參閱[本區段](../../workflow/using/delivery.md)。
 1. 移至&#x200B;**[!UICONTROL Analysis]**&#x200B;的&#x200B;**[!UICONTROL Delivery properties]**&#x200B;標籤，並選取&#x200B;**[!UICONTROL Prepare the personalization data with a workflow]**&#x200B;選項。

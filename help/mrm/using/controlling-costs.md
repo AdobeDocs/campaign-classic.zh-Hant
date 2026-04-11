@@ -6,10 +6,9 @@ feature: Resource Management
 audience: campaign
 content-type: reference
 hide: true
-hidefromtoc: true
 topic-tags: tasks--resources-and-budgets
 exl-id: 6765e307-915a-44d2-a486-85c64e8ec52e
-source-git-commit: 942edcf028207eab2ea583949ebc99ab61539ea0
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '2488'
 ht-degree: 0%
@@ -228,7 +227,7 @@ Adobe Campaign可讓您控制已排程、已確認及已開立商業發票的行
 
 1. 透過&#x200B;**[!UICONTROL Campaign management > Budgets]**&#x200B;節點建立新預算。
 
-1. 在&#x200B;**[!UICONTROL Amounts]**&#x200B;區段的&#x200B;**[!UICONTROL Allocated]**&#x200B;欄位中定義10,000歐元的預算。 在視窗的下半部新增兩個費用類別：
+1. 在&#x200B;**[!UICONTROL Allocated]**&#x200B;區段的&#x200B;**[!UICONTROL Amounts]**&#x200B;欄位中定義10,000歐元的預算。 在視窗的下半部新增兩個費用類別：
 
 ![](assets/s_user_cost_mgmt_sample_1.png)
 

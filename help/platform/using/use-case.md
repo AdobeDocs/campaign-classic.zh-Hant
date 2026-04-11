@@ -8,8 +8,7 @@ content-type: reference
 topic-tags: filtering-data
 exl-id: 85ded096-7d27-41b3-8ef2-93f5ca8def82
 hide: true
-hidefromtoc: true
-source-git-commit: 8817b485fd5b6d6aeb9d71c1106f16fbb6bc3c5b
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '264'
 ht-degree: 3%
@@ -47,7 +46,7 @@ ht-degree: 3%
 
    ![](assets/s_ncs_user_filter_view_schema.png)
 
-   您可以存取這些欄位，以在篩選編輯器內文中定義篩選條件。 應用程式篩選的定義方式與進階篩選完全相同。 如需篩選器的詳細資訊，請參閱[Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/audience/create-filters){target=_blank}。
+   您可以存取這些欄位，以在篩選編輯器內文中定義篩選條件。 應用程式篩選的定義方式與進階篩選完全相同。 如需篩選器的詳細資訊，請參閱[Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}。
 
 
 1. 在訂閱上建立新的篩選器，以僅顯示具有未定義電子郵件格式的訂閱：

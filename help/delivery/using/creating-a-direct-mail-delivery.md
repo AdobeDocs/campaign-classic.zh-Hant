@@ -6,12 +6,11 @@ badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v
 feature: Direct Mail
 role: User
 hide: true
-hidefromtoc: true
 exl-id: 964cc600-19b8-449e-bac6-dc9da2b5ea12
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '105'
-ht-degree: 9%
+ht-degree: 10%
 
 ---
 
@@ -28,5 +27,5 @@ ht-degree: 9%
 
    ![](assets/direct_mail.png)
 
-1. 使用標籤、程式碼和說明來識別您的傳遞。 如需詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hant#create-the-delivery){target="_blank"}中的本節。
+1. 使用標籤、程式碼和說明來識別您的傳遞。 如需詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#create-the-delivery){target="_blank"}中的本節。
 1. 按一下&#x200B;**繼續**&#x200B;以確認此資訊並顯示訊息設定視窗。

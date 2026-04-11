@@ -4,9 +4,8 @@ title: 技術檔案 — Adobe Campaign系統升級
 description: Adobe Campaign系統升級
 feature: Technote, Upgrade
 hide: true
-hidefromtoc: true
 exl-id: 78949d94-60b3-44f1-8e5a-d61b5b723e87
-source-git-commit: 62fc46e45078fce56eadda3518251e61244bf5d0
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '502'
 ht-degree: 4%
@@ -70,5 +69,5 @@ Campaign基礎架構仰賴協力廠商系統，且必須定期以最新版本和
 
 * [升級您的環境](../../production/using/build-upgrade.md)
 * [版本編號升級常見問答集](../../platform/using/faq-build-upgrade.md)
-* [下載最新的Campaign Classic組建版本](https://experience.adobe.com/#/downloads/content/software-distribution/tw/campaign.html)
+* [下載最新的Campaign Classic組建版本](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
 * [讓使用者可以使用新的使用者端主控台](../../installation/using/client-console-availability-for-windows.md)

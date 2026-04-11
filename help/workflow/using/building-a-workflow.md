@@ -4,9 +4,8 @@ title: 建置工作流程
 description: 瞭解如何建立工作流程
 feature: Workflows
 hide: true
-hidefromtoc: true
 exl-id: 8ba20ccd-b03f-4c4f-87c1-a21e80d8e4be
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '1624'
 ht-degree: 4%
@@ -35,7 +34,7 @@ ht-degree: 4%
 
 ![](assets/create_a_wf_icon.png)
 
-或者，您也可以使用工作流程概觀（**[!UICONTROL Monitoring]** > **[!UICONTROL Workflow]**&#x200B;連結）中的&#x200B;**[!UICONTROL Create]**&#x200B;按鈕。
+或者，您也可以使用工作流程概觀（**[!UICONTROL Create]** > **[!UICONTROL Monitoring]**&#x200B;連結）中的&#x200B;**[!UICONTROL Workflow]**&#x200B;按鈕。
 
 ![](assets/create_a_wf.png)
 
@@ -153,7 +152,7 @@ ht-degree: 4%
 
 鎖定目標期間執行的所有增強功能和所有處理的結果都會儲存在個人化欄位中以供存取，尤其是在建立個人化訊息時使用。 如需詳細資訊，請參閱[目標資料](data-life-cycle.md#target-data)
 
-### 目標定位和篩選維度 {#targeting-and-filtering-dimensions}
+### 目標選擇和篩選維度 {#targeting-and-filtering-dimensions}
 
 在資料細分作業期間，目標定位鍵對應到篩選維度。目標市場選擇維度可讓您定義作業的目標群體：收件者、合約受益人、操作者、訂閱者等。篩選維度可讓您可以根據特定標準選取群體：合約持有人、電子報訂閱者等。
 

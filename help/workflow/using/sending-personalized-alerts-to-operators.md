@@ -4,9 +4,8 @@ title: 傳送個人化警示給營運商
 description: 瞭解如何傳送個人化警示給營運商
 feature: Workflows
 hide: true
-hidefromtoc: true
 exl-id: 21c97eb3-60cd-4d19-bc0f-5ba9ec17e70a
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 2%
@@ -26,7 +25,7 @@ ht-degree: 2%
 1. 使用&#x200B;**[!UICONTROL Query]**&#x200B;活動來鎖定資料。
 1. 將&#x200B;**[!UICONTROL JavaScript code]**&#x200B;活動新增至工作流程，以將查詢的母體儲存至執行個體變數。
 1. 使用&#x200B;**[!UICONTROL Test]**&#x200B;活動檢查母體計數。
-1. 根據&#x200B;**[!UICONTROL Test]**&#x200B;活動結果，使用&#x200B;**[!UICONTROL Alert]**&#x200B;活動傳送警示給運運算元。
+1. 根據&#x200B;**[!UICONTROL Alert]**&#x200B;活動結果，使用&#x200B;**[!UICONTROL Test]**&#x200B;活動傳送警示給運運算元。
 
 ![](assets/uc_operator_1.png)
 

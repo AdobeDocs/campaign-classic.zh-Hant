@@ -4,9 +4,8 @@ title: 追蹤行銷活動
 description: 瞭解如何使用Campaign分散式行銷追蹤行銷活動
 feature: Distributed Marketing
 hide: true
-hidefromtoc: true
 exl-id: 87d1909c-d2eb-47ce-a860-0e78a64d2914
-source-git-commit: 36fe54cf6d4d762d96205bd637311a426c741427
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 1%
@@ -62,7 +61,7 @@ ht-degree: 1%
 
 中央實體可隨時取消行銷活動套件。
 
-按一下行銷活動套件&#x200B;**[!UICONTROL Dashboard]**&#x200B;中的&#x200B;**[!UICONTROL Cancel]**。
+按一下行銷活動套件&#x200B;**[!UICONTROL Cancel]**&#x200B;中的&#x200B;**[!UICONTROL Dashboard]**。
 
 ![](assets/mkg_dist_cancel_op_from_dashboard.png)
 

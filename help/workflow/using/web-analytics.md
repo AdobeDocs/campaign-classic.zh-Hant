@@ -3,9 +3,8 @@ product: campaign
 title: 網站分析
 description: 進一步瞭解網站分析套件
 hide: true
-hidefromtoc: true
 feature: Workflows, Analytics Integration
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 3%
@@ -29,7 +28,7 @@ ht-degree: 3%
   <tr> 
    <td> <span class="uicontrol">正在傳送指標和行銷活動屬性</span> <br /> </td> 
    <td> <span class="uicontrol">webAnalyticsSendMetrics</span> <br /> </td> 
-   <td> 此工作流程可讓您透過Adobe® Analytics聯結器，從Adobe Campaign傳送電子郵件行銷活動指標至Adobe Experience Cloud套裝。 相關指標如下： <strong>已傳送</strong> (iSent)、<strong>開啟總數</strong> (iTotalRecipientOpen)、<strong>已點按</strong> (iTotalRecipientClick)的收件者總數<strong>錯誤</strong> (iError)、<strong>選擇退出</strong> （選擇退出） (iOptOut)。<br /> </td> 
+   <td> 此工作流程可讓您透過® Analytics聯結器，從Adobe Campaign傳送電子郵件行銷活動指標至Adobe Experience Cloud套裝。 相關指標如下： <strong>已傳送</strong> (iSent)、<strong>開啟總數</strong> (iTotalRecipientOpen)、<strong>已點按</strong> (iTotalRecipientClick)的收件者總數<strong>錯誤</strong> (iError)、<strong>選擇退出</strong> （選擇退出） (iOptOut)。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">已轉換連絡人的識別碼</span> <br /> </td> 
