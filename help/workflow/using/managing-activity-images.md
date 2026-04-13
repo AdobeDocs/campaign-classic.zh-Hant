@@ -5,7 +5,7 @@ description: 瞭解如何變更活動影像
 feature: Workflows
 hide: true
 exl-id: cafdbc10-9c10-4d42-a485-c9880df8d371
-source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
 source-wordcount: '158'
 ht-degree: 3%

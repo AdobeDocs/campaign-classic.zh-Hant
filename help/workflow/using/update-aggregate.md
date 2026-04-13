@@ -5,7 +5,7 @@ description: 深入瞭解更新彙總工作流程活動
 feature: Workflows
 hide: true
 exl-id: d2b26af0-30a1-4852-acd5-996795f198a1
-source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
 source-wordcount: '123'
 ht-degree: 3%

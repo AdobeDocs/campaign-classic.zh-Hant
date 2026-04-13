@@ -5,7 +5,7 @@ description: 進一步了解讀取清單工作流程活動
 feature: Workflows, Targeting Activity
 hide: true
 exl-id: 99f82e91-45cd-4dff-b8a4-3ad87f2f9639
-source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
 source-wordcount: '488'
 ht-degree: 0%

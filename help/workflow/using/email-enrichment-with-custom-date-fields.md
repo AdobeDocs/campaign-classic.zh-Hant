@@ -5,7 +5,7 @@ description: 瞭解如何使用自訂日期欄位豐富電子郵件
 feature: Workflows
 hide: true
 exl-id: 85e0ec2a-b7cb-4d0b-a281-9ad72594403a
-source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
 source-wordcount: '538'
 ht-degree: 3%

@@ -5,7 +5,7 @@ description: 進一步瞭解訂閱服務工作流程活動
 feature: Workflows, Targeting Activity, Subscription Services Activity
 hide: true
 exl-id: 1b526d1c-4a33-45a1-98f4-dcb803c8d228
-source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 3%
