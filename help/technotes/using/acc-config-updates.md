@@ -78,7 +78,7 @@ Adobe Identity服務(IMS)將從2021年6月30日&#x200B;**起停止支援舊版In
 
 **您有受到影響嗎？**
 
-如果您要透過Adobe ID[並透過Adobe Identity Management Service (IMS)連線至Campaign ](../../integrations/using/about-adobe-id.md)，則必須升級至下列新版本之一：
+如果您要透過Adobe ID[並透過Adobe Identity Management Service (IMS)連線至Campaign &#x200B;](../../integrations/using/about-adobe-id.md)，則必須升級至下列新版本之一：
 
 * Gold Standard 11. [了解更多](../../rn/using/gold-standard.md)
 * Campaign 21.1.1版。 [了解更多](../../rn/using/latest-release.md)

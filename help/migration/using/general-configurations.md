@@ -438,7 +438,7 @@ allowSQLInjection="false"
 
   如果警告與資源衝突有關，操作員必須注意解決衝突。
 
-* Postupgrade **.log`<server version number>`檔案的`>`postupgrade_**_time包含同步處理結果。 預設可在下列目錄中取得： **安裝目錄/var/`<instance>`升級後**。 **錯誤**&#x200B;和&#x200B;**警告**&#x200B;屬性表示錯誤和警告。
+* Postupgrade **.log`<server version number>`檔案的`>`postupgrade_**&#x200B;_time包含同步處理結果。 預設可在下列目錄中取得： **安裝目錄/var/`<instance>`升級後**。 **錯誤**&#x200B;和&#x200B;**警告**&#x200B;屬性表示錯誤和警告。
 
 ### 解決衝突 {#resolve-a-conflict}
 
