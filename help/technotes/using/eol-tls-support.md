@@ -8,7 +8,7 @@ content-type: reference
 topic-tags: tracking-messages
 hide: true
 exl-id: e18d43b6-2a77-4881-85e7-ca36248d4634
-source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 4%
@@ -40,7 +40,7 @@ Adobe已停止支援較低版本的TLS （包括TLS 1.0和1.1）。 如需TLS 1.
 
 如果您使用其他瀏覽器，請確定其支援TLS 1.2。
 
-您的作業系統和應用程式架構也必須支援TLS 1.2。如果升級瀏覽器無法解決問題，請確定您的電腦符合[&#x200B; Campaign相容性矩陣](../../rn/using/compatibility-matrix.md)所列的系統需求。
+您的作業系統和應用程式架構也必須支援TLS 1.2。如果升級瀏覽器無法解決問題，請確定您的電腦符合[ Campaign相容性矩陣](../../rn/using/compatibility-matrix.md)所列的系統需求。
 
 ## 常見問題{#faq}
 

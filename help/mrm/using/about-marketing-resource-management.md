@@ -8,7 +8,7 @@ content-type: reference
 topic-tags: tasks--resources-and-budgets
 hide: true
 exl-id: 8cf4d30d-f914-438d-8836-030202b6a449
-source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
 source-wordcount: '199'
 ht-degree: 0%
@@ -31,4 +31,4 @@ Adobe Campaign操作者可透過完整的驗證程式和適當的追蹤工具（
 
 >[!NOTE]
 >
->若要進一步瞭解Adobe Campaign的MRM及其使用方式，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/mrm/about-marketing-resource-management){target=_blank}。
+>若要進一步瞭解Adobe Campaign的MRM及其使用方式，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/automation/mrm/about-marketing-resource-management){target=_blank}。

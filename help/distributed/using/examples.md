@@ -5,7 +5,7 @@ description: 分散式行銷範例
 feature: Distributed Marketing
 hide: true
 exl-id: 2bef6b5e-887e-4c56-bb4b-3583472ca333
-source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
 source-wordcount: '1296'
 ht-degree: 0%
@@ -88,7 +88,7 @@ ht-degree: 0%
 
 步驟如下：
 
-本機實體的&#x200B;**&#x200B;**
+本機實體的&#x200B;****
 
 1. 使用行銷活動建立通知來存取中央實體選取的聯絡人清單。
 1. 選取聯絡人並核准參與率。
@@ -191,7 +191,7 @@ ht-degree: 0%
 
 步驟如下：
 
-本機實體的&#x200B;**&#x200B;**
+本機實體的&#x200B;****
 
 1. 使用行銷活動建立通知來存取線上表單。
 1. 個人化行銷活動（目標、內容、傳遞量）。

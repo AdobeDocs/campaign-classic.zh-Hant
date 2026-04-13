@@ -4,7 +4,7 @@ title: 分散式行銷
 description: 深入瞭解分散式行銷套件
 hide: true
 feature: Workflows, Data Management, Distributed Marketing
-source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
 source-wordcount: '69'
 ht-degree: 8%

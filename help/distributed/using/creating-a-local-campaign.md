@@ -5,7 +5,7 @@ description: 建立本機行銷活動
 feature: Distributed Marketing
 hide: true
 exl-id: 17b5865a-5e04-4b3b-8b6a-12d5c1a9c1da
-source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
 source-wordcount: '1565'
 ht-degree: 1%
@@ -25,7 +25,7 @@ ht-degree: 1%
 1. 發佈行銷活動套件。
 1. 正在核准訂單。
 
-本機實體的&#x200B;**&#x200B;**
+本機實體的&#x200B;****
 
 1. 訂購行銷活動。
 1. 執行行銷活動。

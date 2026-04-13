@@ -4,7 +4,7 @@ title: 傳遞
 description: 深入瞭解預設傳遞工作流程
 hide: true
 feature: Workflows
-source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 4%

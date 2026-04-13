@@ -5,7 +5,7 @@ description: Adobe Campaign設定更新
 feature: Technote, Upgrade
 hide: true
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
-source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
 source-wordcount: '1103'
 ht-degree: 8%
@@ -72,13 +72,13 @@ ht-degree: 8%
 
 ## Adobe Identity Management系統(IMS)更新
 
-Adobe Identity服務(IMS)將從2021年6月30日&#x200B;**起停止支援舊版Internet Explorer**。 [了解更多資訊](https://helpx.adobe.com/tw/x-productkb/global/update-operating-system-and-browser.html)。
+Adobe Identity服務(IMS)將從2021年6月30日&#x200B;**起停止支援舊版Internet Explorer**。 [了解更多資訊](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html)。
 
 需要升級Campaign使用者端主控台，以確保與Adobe IMS相容。
 
 **您有受到影響嗎？**
 
-如果您要透過Adobe ID[並透過Adobe Identity Management Service (IMS)連線至Campaign &#x200B;](../../integrations/using/about-adobe-id.md)，則必須升級至下列新版本之一：
+如果您要透過Adobe ID[並透過Adobe Identity Management Service (IMS)連線至Campaign ](../../integrations/using/about-adobe-id.md)，則必須升級至下列新版本之一：
 
 * Gold Standard 11. [了解更多](../../rn/using/gold-standard.md)
 * Campaign 21.1.1版。 [了解更多](../../rn/using/latest-release.md)
@@ -105,7 +105,7 @@ Adobe Identity服務(IMS)將從2021年6月30日&#x200B;**起停止支援舊版In
 
 ## 與Experience Cloud Triggers整合 {#acc-triggers-updates}
 
-舊版oAuth驗證服務已到期。 觸發整合驗證（最初根據oAUTH驗證設定來存取管道）已移至Adobe I/O。促銷活動[的舊版oAuth驗證模式已於](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411?profile.language=zh-Hant)2021年9月日&#x200B;**淘汰**。 託管環境繼續使用延伸功能，直到 **2022 年 2 月 23 日**。若為內部部署或混合客戶，請聯絡Adobe客戶服務，將支援延長至2022年2月。 您必須向 Adobe 提供 [OAuth 應用程式的 AppID](../../integrations/using/configuring-pipeline.md#step-optional)。
+舊版oAuth驗證服務已到期。 觸發整合驗證（最初根據oAUTH驗證設定來存取管道）已移至Adobe I/O。促銷活動[的舊版oAuth驗證模式已於](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)2021年9月日&#x200B;**淘汰**。 託管環境繼續使用延伸功能，直到 **2022 年 2 月 23 日**。若為內部部署或混合客戶，請聯絡Adobe客戶服務，將支援延長至2022年2月。 您必須向 Adobe 提供 [OAuth 應用程式的 AppID](../../integrations/using/configuring-pipeline.md#step-optional)。
 
 **您有受到影響嗎？**
 

@@ -4,7 +4,7 @@ description: 瞭解如何使用重複資料刪除活動的合併功能
 feature: Workflows, Data Management
 hide: true
 exl-id: a6b10585-7bf9-4fef-b886-db081b6d3acc
-source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
 source-wordcount: '570'
 ht-degree: 4%

@@ -6,7 +6,7 @@ role: User
 feature: Campaigns, Cross Channel Orchestration, Programs
 hide: true
 exl-id: a8fce21f-ffe3-4819-87ca-ac0ad9f21e41
-source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
 source-wordcount: '1248'
 ht-degree: 5%
@@ -17,7 +17,7 @@ ht-degree: 5%
 
 行銷活動包括動作 (傳送) 和流程 (匯入或擷取檔案)，以及資源 (行銷文件、傳遞大綱)。 它們會用於行銷活動。 行銷活動是方案的一部分，而方案則包含在行銷活動計畫中。
 
-![](assets/do-not-localize/how-to-video.png)在影片中探索如何建立行銷計畫、方案和行銷活動[&#128279;](#video)
+![](assets/do-not-localize/how-to-video.png)在影片中探索如何建立行銷計畫、方案和行銷活動[](#video)
 
 若要建立行銷活動：
 

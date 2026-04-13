@@ -5,7 +5,7 @@ description: 進一步瞭解Campaign工作流程屬性
 feature: Workflows
 hide: true
 exl-id: c7bff902-4f5d-4783-aec4-13561fa7d242
-source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
 source-wordcount: '553'
 ht-degree: 38%

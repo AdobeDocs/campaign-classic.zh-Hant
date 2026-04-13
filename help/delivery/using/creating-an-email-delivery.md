@@ -6,7 +6,7 @@ feature: Email
 role: User
 hide: true
 exl-id: 7f44e732-4257-4d2a-800c-bde847e20f52
-source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
 source-wordcount: '107'
 ht-degree: 8%
@@ -26,5 +26,5 @@ ht-degree: 8%
 
    ![](assets/s_ncs_user_wizard_email01_1.png)
 
-1. 使用標籤、程式碼和說明來識別您的傳遞。 如需詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hant#create-the-delivery){target="_blank"}中的本節。
+1. 使用標籤、程式碼和說明來識別您的傳遞。 如需詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#create-the-delivery){target="_blank"}中的本節。
 1. 按一下&#x200B;**繼續**&#x200B;以確認此資訊並顯示訊息設定視窗。

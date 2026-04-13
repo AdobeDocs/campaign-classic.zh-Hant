@@ -5,7 +5,7 @@ description: ACS Connector原理和資料週期
 feature: ACS Connector
 hide: true
 exl-id: 689b6117-5143-4f85-8582-2c74cae72ca2
-source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
 source-wordcount: '2034'
 ht-degree: 0%
@@ -82,7 +82,7 @@ ACS Connector會定期將下列專案從Campaign Standard複製到Campaign v7：
 
 ACS Connector會同步Campaign v7和Campaign Standard之間的隔離。
 
-例如，從Campaign v7復寫至Campaign Standard的設定檔包含電子郵件地址。 如果電子郵件地址由Campaign Standard隔離，資料會在下次同步期間傳遞到Campaign v7。 如需隔離的詳細資訊，請參閱[隔離管理](../../delivery/using/delivery-failures-quarantine.md)和[Campaign Standard隔離](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=zh-Hant)。
+例如，從Campaign v7復寫至Campaign Standard的設定檔包含電子郵件地址。 如果電子郵件地址由Campaign Standard隔離，資料會在下次同步期間傳遞到Campaign v7。 如需隔離的詳細資訊，請參閱[隔離管理](../../delivery/using/delivery-failures-quarantine.md)和[Campaign Standard隔離](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html)。
 
 ### 使用複製的設定檔 {#using-replicated-profiles}
 
