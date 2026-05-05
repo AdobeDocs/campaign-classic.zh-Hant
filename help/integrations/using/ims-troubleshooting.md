@@ -8,17 +8,17 @@ audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: 1ce89c3a-1fe6-4ed6-9547-2eb9713a0ec3
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: f7f88eac33921f60dfe72ce2200132c5ac6acf49
 workflow-type: tm+mt
-source-wordcount: '413'
-ht-degree: 1%
+source-wordcount: '501'
+ht-degree: 5%
 
 ---
 
 # IMS 疑難排解{#ims-troubleshooting}
 
 
-下列疑難排解提示可協助&#x200B;**內部部署**&#x200B;和&#x200B;**混合式**&#x200B;客戶解決使用IMS整合時最常發生的問題。 針對&#x200B;**託管**&#x200B;客戶，請連絡Adobe。
+下列疑難排解提示可協助&#x200B;**內部部署**&#x200B;和&#x200B;**混合式**&#x200B;客戶解決使用IMS整合時最常發生的問題。 若為&#x200B;**託管**&#x200B;客戶，請聯絡Adobe。
 
 **外部帳戶**
 
@@ -33,9 +33,9 @@ ht-degree: 1%
 
 如果外部帳戶有&#x200B;**產品內容**&#x200B;欄位，請檢查其值是否設為： **dma_campaign_classic**
 
-請確定您的產品內容與Campaign和Experience Cloud相同。
+請確定Campaign和Experience Cloud的產品內容相同。
 
-例如，如果未出現&#x200B;**產品內容**，則促銷活動和Experience Cloud中的預設產品內容應該是&#x200B;**dma_campaign**。 如果出現「**產品內容**」欄位，促銷活動和Experience Cloud中的預設產品內容應該是&#x200B;**dma_campaign_classic**。
+例如，如果未出現&#x200B;**產品內容**，則促銷活動和Experience Cloud中的預設產品內容應該是&#x200B;**dma_campaign**。 如果出現「**產品內容**」欄位，Campaign和Experience Cloud中的預設產品內容都應是&#x200B;**dma_campaign_classic**。
 
 **[!UICONTROL IMS Server URL]**
 
@@ -83,3 +83,16 @@ Campaign外部帳戶與IMS布建的帳戶之間的使用者端ID相符。
 * 使用者無法存取Adobe ID登入頁面：
 
   請參閱先前步驟以檢查範圍組態。
+
+**WebView2快取問題**
+
+如果您在使用Adobe ID登入&#x200B;**[!UICONTROL Client Console]**&#x200B;時發生問題，請嘗試清除本機WebView2快取。 在大多數情況下，這可以解決問題。 請遵循以下步驟：
+
+1. 關閉&#x200B;**[!UICONTROL Client Console]**&#x200B;並停止任何執行中的`nlclient`處理序。
+
+1. 從下列位置刪除所有`webview2`和`webview2Cache`資料夾：
+
+   * `C:\ProgramData\Neolane\NL_5\nlclient\`
+   * `C:\Users\<username>\AppData\Roaming\Neolane\NL_5\nlclient\`
+
+1. 重新啟動&#x200B;**[!UICONTROL Client Console]**&#x200B;並使用您的Adobe ID登入。 快取資料夾將在下次啟動時自動重新建立。
