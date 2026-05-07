@@ -78,7 +78,7 @@ ht-degree: 2%
 
 為了開始進行這項工作，需要此移轉的帳戶將收到Adobe的電子郵件通訊，並提供時間表和檔案存取權。 這是您的帳戶已排定移轉的通知。
 
-[開啟新的客戶服務支援票證](https://experienceleague.adobe.com/?support-solution=Campaign#support)即可開始移轉。 使用主旨列「移轉至AWS」。
+[開啟新的客戶服務支援票證](https://experienceleague.adobe.com/zh-hant?support-solution=Campaign#support)即可開始移轉。 使用主旨列「移轉至AWS」。
 
 ### 此移轉是否為強制性？
 

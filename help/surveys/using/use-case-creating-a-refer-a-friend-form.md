@@ -88,7 +88,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >如需傳遞範本的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}。
+   >如需傳遞範本的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=zh-Hant){target="_blank"}。
 
 1. 建立用於傳遞訂閱訊息的第二個指令碼。
 

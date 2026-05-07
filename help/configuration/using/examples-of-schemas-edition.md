@@ -335,7 +335,7 @@ xtkschema="xtk:srcSchema">
 
 ## 相關主題
 
-* 在[Adobe Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}中進一步瞭解如何&#x200B;**使用分項清單**。
+* 在[Adobe Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}中進一步瞭解如何&#x200B;**使用分項清單**。
 
 * [開始使用Campaign綱要](../../configuration/using/about-schema-edition.md)
 

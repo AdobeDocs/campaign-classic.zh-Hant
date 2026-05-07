@@ -35,4 +35,4 @@ Adobe Analytics 連接器可讓 Adobe Campaign 和 Adobe Analytics 透過 **[!UI
 
 若要啟用這項整合，您必須建立您的Adobe技術帳戶，如[此頁面](oauth-technical-account.md)所詳述。
 
-在[Adobe Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/ac-aa){target="_blank"}中瞭解如何使用Adobe Campaign和Adobe Analytics。
+在[Adobe Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/connect/ac-aa){target="_blank"}中瞭解如何使用Adobe Campaign和Adobe Analytics。

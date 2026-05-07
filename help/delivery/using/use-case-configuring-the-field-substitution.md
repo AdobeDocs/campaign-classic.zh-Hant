@@ -33,7 +33,7 @@ ht-degree: 5%
 
 ## 建立傳遞 {#step-1---creating-a-delivery}
 
-建立傳遞的步驟已詳載於[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email.html){target="_blank"}。
+建立傳遞的步驟已詳載於[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email.html?lang=zh-Hant){target="_blank"}。
 
 在此範例中，傳遞管理員已建立電子報。
 

@@ -23,7 +23,7 @@ ht-degree: 3%
 * [使用靜態SOAP方法觸發工作流程](#trigger-example)
 * [使用非靜態SOAP方法與資料庫互動](#interact-example)
 
-[進一步瞭解](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html)靜態和非靜態SOAP方法。
+[進一步瞭解](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html?lang=zh-Hant)靜態和非靜態SOAP方法。
 
 在這些範例中，會使用ECMAScript for XML (E4X)擴充功能。 透過此擴充功能，您可以在相同指令碼中合併JavaScript呼叫和XML原始專案。
 
@@ -101,7 +101,7 @@ var myXML = <recipient xtkschema="nms:recipient"
 
 #### 刪除記錄
 
-使用`DeleteCollection`方法。 [了解更多資訊](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-DeleteCollection.html)。
+使用`DeleteCollection`方法。 [了解更多資訊](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-DeleteCollection.html?lang=zh-Hant)。
 
 指定此資訊：
 
@@ -275,7 +275,7 @@ for each (var rcp in res:recipient)
     logInfo(rcp.@email)
 ```
 
-回圈包含本機收件者變數。 對於收件者集合中傳回的每個收件者，都會列印出收件者的電子郵件。 [深入瞭解](https://experienceleague.adobe.com/developer/campaign-api/api/f-logInfo.html)有關`logInfo`函式的資訊。
+回圈包含本機收件者變數。 對於收件者集合中傳回的每個收件者，都會列印出收件者的電子郵件。 [深入瞭解](https://experienceleague.adobe.com/developer/campaign-api/api/f-logInfo.html?lang=zh-Hant)有關`logInfo`函式的資訊。
 
 #### `getIfExists`作業的結果
 
@@ -361,7 +361,7 @@ for each (var rcp in res.recipient)
 
 工作流程觸發可透過使用事件來運作。 您可以對事件使用這些功能：
 
-* 若要張貼事件，您可以使用靜態`PostEvent`方法。 [了解更多資訊](https://experienceleague.adobe.com/developer/campaign-api/api/sm-workflow-PostEvent.html)。
+* 若要張貼事件，您可以使用靜態`PostEvent`方法。 [了解更多資訊](https://experienceleague.adobe.com/developer/campaign-api/api/sm-workflow-PostEvent.html?lang=zh-Hant)。
 * 若要接收事件，您可以使用&#x200B;**[!UICONTROL External signal]**&#x200B;活動。 [了解更多資訊](external-signal.md)。
 
 您可以透過不同方式觸發工作流程：
@@ -428,10 +428,10 @@ xtk.workflow.PostEvent(
 
 1. 定義查詢：
 
-   * 使用對應結構描述上的`create`方法擷取實體，例如`xtk:workflow`結構描述。 [了解更多資訊](https://experienceleague.adobe.com/developer/campaign-api/api/f-create.html)。
+   * 使用對應結構描述上的`create`方法擷取實體，例如`xtk:workflow`結構描述。 [了解更多資訊](https://experienceleague.adobe.com/developer/campaign-api/api/f-create.html?lang=zh-Hant)。
    * 使用`queryDef`方法發出SQL查詢。
 
-1. 使用`ExecuteQuery`方法執行查詢。 [了解更多資訊](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-ExecuteQuery.html)。
+1. 使用`ExecuteQuery`方法執行查詢。 [了解更多資訊](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-ExecuteQuery.html?lang=zh-Hant)。
 
    使用`for each`回圈來擷取結果。
 
@@ -617,11 +617,11 @@ xtk.session.Write(
 
 ### API檔案
 
-* [SOAP呼叫範例](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html)
+* [SOAP呼叫範例](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html?lang=zh-Hant)
 * 方法：
-   * [建立](https://experienceleague.adobe.com/developer/campaign-api/api/f-create.html)
-   * [DeleteCollection](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-DeleteCollection.html)
-   * [Executequery](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-ExecuteQuery.html)
-   * [PostEvent](https://experienceleague.adobe.com/developer/campaign-api/api/sm-workflow-PostEvent.html)
-   * [寫入](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-Write.html)
-* [logInfo函式](https://experienceleague.adobe.com/developer/campaign-api/api/f-logInfo.html)
+   * [建立](https://experienceleague.adobe.com/developer/campaign-api/api/f-create.html?lang=zh-Hant)
+   * [DeleteCollection](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-DeleteCollection.html?lang=zh-Hant)
+   * [Executequery](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-ExecuteQuery.html?lang=zh-Hant)
+   * [PostEvent](https://experienceleague.adobe.com/developer/campaign-api/api/sm-workflow-PostEvent.html?lang=zh-Hant)
+   * [寫入](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-Write.html?lang=zh-Hant)
+* [logInfo函式](https://experienceleague.adobe.com/developer/campaign-api/api/f-logInfo.html?lang=zh-Hant)

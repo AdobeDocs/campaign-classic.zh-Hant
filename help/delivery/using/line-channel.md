@@ -27,7 +27,7 @@ ht-degree: 0%
 若要深入瞭解LINE頻道，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/line.html){target=_blank}。
 
 
-[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/emails/email){target=_blank}
+[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/emails/email){target=_blank}
 
 
 >[!TAB LINE傳遞建立]

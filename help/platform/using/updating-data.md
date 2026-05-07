@@ -24,7 +24,7 @@ ht-degree: 23%
 
 ## 設定自動更新 {#setting-up-an-automatic-update}
 
-可透過工作流程設定自動更新。 有關更多資訊，請參閱[Campaign v8 文件](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/update-data.html){target="_blank"}。
+可透過工作流程設定自動更新。 有關更多資訊，請參閱[Campaign v8 文件](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/update-data.html?lang=zh-Hant){target="_blank"}。
 
 ## 執行大量更新 {#performing-a-mass-update}
 

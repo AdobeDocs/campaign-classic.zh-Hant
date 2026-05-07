@@ -60,8 +60,8 @@ Durance;Allison;15/12/1978;allison.durance@example.com;120987
 
 **相關主題：**
 
-* [資料載入（檔案）活動](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html){target="_blank"}
-* [資料擷取（檔案）活動](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html){target="_blank"}。
+* [資料載入（檔案）活動](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html?lang=zh-Hant){target="_blank"}
+* [資料擷取（檔案）活動](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html?lang=zh-Hant){target="_blank"}。
 
 ## 以差異模式匯入 {#importing-in-delta-mode}
 

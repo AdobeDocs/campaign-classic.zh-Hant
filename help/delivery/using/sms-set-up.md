@@ -353,7 +353,7 @@ CR：歸位
 
 ## 變更傳遞範本 {#changing-the-delivery-template}
 
-Adobe Campaign提供您傳送至行動裝置的範本。 此範本可在&#x200B;**[!UICONTROL Resources > Templates > Delivery templates]**&#x200B;節點中使用。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}。
+Adobe Campaign提供您傳送至行動裝置的範本。 此範本可在&#x200B;**[!UICONTROL Resources > Templates > Delivery templates]**&#x200B;節點中使用。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=zh-Hant){target="_blank"}。
 
 若要透過SMS頻道傳遞，您必須建立其中引用頻道聯結器的範本。
 

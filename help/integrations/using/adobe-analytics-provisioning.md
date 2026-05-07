@@ -114,4 +114,4 @@ Adobe Campaign Classic與Adobe Analytics驗證之間的整合可支援Adobe Iden
 
 ## 設定與使用 {#adobe-analytics-connector-usage}
 
-在[Adobe Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/ac-aa){target="_blank"}中瞭解如何使用Adobe Campaign和Adobe Analytics。
+在[Adobe Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/connect/ac-aa){target="_blank"}中瞭解如何使用Adobe Campaign和Adobe Analytics。
