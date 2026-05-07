@@ -136,7 +136,7 @@ ht-degree: 1%
 
 * 按一下&#x200B;**[!UICONTROL Personalize the message displayed if the form is closed...]**&#x200B;連結以定義若使用者在表單無效時嘗試存取表單，則要顯示的錯誤訊息。
 
-  請參閱表單](defining-web-forms-properties.md#accessibility-of-the-form)的[協助工具。
+  請參閱表單[&#128279;](defining-web-forms-properties.md#accessibility-of-the-form)的協助工具。
 
 ### 透過電子郵件傳遞表單 {#delivering-a-form-via-email}
 

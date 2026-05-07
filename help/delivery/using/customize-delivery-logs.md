@@ -20,7 +20,7 @@ ht-degree: 2%
 >
 >此頁面記錄混合式部署和內部部署的&#x200B;**Campaign Classic v7專屬進階自訂**。
 
-若要在Campaign UI中監視傳遞，請參閱Campaign UI檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}中的[Campaign v8監視傳遞。
+若要在Campaign UI中監視傳遞，請參閱Campaign UI檔案[&#128279;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}中的Campaign v8監視傳遞。
 
 ## 自訂傳遞記錄 {#use-case}
 

@@ -1012,7 +1012,7 @@ Learn more about [Total database storage](../../workflow/using/about-workflows.m
 
 傳送傳遞並啟用追蹤後，「追蹤」技術工作流程會擷取追蹤資料。 此資料可在您傳送的「追蹤」標籤中找到。 您可以找到開啟和點選電子郵件或其他與收件者所收到訊息互動的資訊。
 
-深入瞭解Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/tracking-logs){target="_blank"}中的[追蹤記錄。
+深入瞭解Campaign v8[&#128279;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/tracking-logs){target="_blank"}中的追蹤記錄。
 +++
 
 +++**交易型訊息**

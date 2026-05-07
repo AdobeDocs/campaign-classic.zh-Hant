@@ -20,7 +20,7 @@ ht-degree: 2%
 
 Adobe已棄用服務帳戶(JWT)憑證。 Campaign與Adobe解決方案和應用程式的整合現在必須依賴OAuth伺服器對伺服器認證。
 
-如果您在2024年6月之前已實作與行銷活動的傳入或傳出整合，您必須將行銷活動環境升級至v7.4.1，並將您的技術帳戶移轉至oAuth，如本檔案](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration){target="_blank"}所述。 [現有的服務帳戶(JWT)認證將持續運作到&#x200B;**2025年6月30日**。
+如果您在2024年6月之前已實作與行銷活動的傳入或傳出整合，您必須將行銷活動環境升級至v7.4.1，並將您的技術帳戶移轉至oAuth，如本檔案[&#128279;](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration){target="_blank"}所述。 現有的服務帳戶(JWT)認證將持續運作到&#x200B;**2025年6月30日**。
 
 完成移轉後，您必須依照[本節](#add-credentials)的說明，將新的認證與Campaign建立關聯。
 

@@ -145,7 +145,7 @@ ht-degree: 1%
 1. 監視傳送的報告和記錄：
 
    * **在Campaign Standard**&#x200B;中：存取與任何傳遞相關的[報告](https://experienceleague.adobe.com/docs/campaign-standard/using/reporting/about-reporting/about-dynamic-reports.html)和[記錄檔](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/monitoring-a-delivery.html)。
-   * Campaign v7和Campaign Standard中的&#x200B;****：傳遞ID、電子郵件廣泛記錄檔和電子郵件追蹤記錄檔已同步至Campaign v7。 然後您就可以從Campaign v7取得行銷活動的360°檢視。
+   * Campaign v7和Campaign Standard中的&#x200B;**&#x200B;**：傳遞ID、電子郵件廣泛記錄檔和電子郵件追蹤記錄檔已同步至Campaign v7。 然後您就可以從Campaign v7取得行銷活動的360°檢視。
 
      隔離會自動同步回Campaign v7。 這允許將無法傳遞的資訊納入考量，以便在Campaign v7中執行的下一個目標定位。
 

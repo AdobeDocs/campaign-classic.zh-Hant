@@ -50,7 +50,7 @@ ht-degree: 0%
 
 可以為行銷活動範本、為每個個別行銷活動或傳遞啟用核准。
 
-已在行銷活動範本中選取所有需要核准的工作（**[!UICONTROL Properties]** > **[!UICONTROL Advanced campaign settings...]** > **[!UICONTROL Approvals]**&#x200B;索引標籤）。 除非停用此選項，否則在此也會選取負責核准的操作者並接收通知。 如需詳細資訊，請參閱核准傳遞](#approving-processes)的[步驟。
+已在行銷活動範本中選取所有需要核准的工作（**[!UICONTROL Properties]** > **[!UICONTROL Advanced campaign settings...]** > **[!UICONTROL Approvals]**&#x200B;索引標籤）。 除非停用此選項，否則在此也會選取負責核准的操作者並接收通知。 如需詳細資訊，請參閱核准傳遞[&#128279;](#approving-processes)的步驟。
 
 可針對使用此範本建立的每個行銷活動覆寫這些設定，也可針對每個行銷活動傳遞覆寫這些設定：按一下「**[!UICONTROL Properties]**」按鈕，然後按一下「**[!UICONTROL Approvals]**」標籤。
 

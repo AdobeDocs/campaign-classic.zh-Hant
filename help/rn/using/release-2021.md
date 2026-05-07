@@ -180,7 +180,7 @@ _2021 年 6 月 5 日_
 * Vertica Analytics FDA 連接器
 * PostgreSQL 13
 
-瞭解更多與[ Campaign 相容性矩陣相關的資訊](../../rn/using/compatibility-matrix.md)。
+瞭解更多與[&#x200B; Campaign 相容性矩陣相關的資訊](../../rn/using/compatibility-matrix.md)。
 
 **棄用的功能**
 

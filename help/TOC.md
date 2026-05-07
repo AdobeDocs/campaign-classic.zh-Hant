@@ -91,7 +91,7 @@ ht-degree: 68%
       + {hide-from-toc}[管理對資料夾的存取 — 隱藏](platform/using/access-management-folders.md)
    + CRM 連接器 {#connectors}
       + [開始使用 CRM 連接器](platform/using/crm-connectors.md)
-      + {hide-from-toc}[與Microsoft Dynamics 365](platform/using/crm-ms-dynamics.md)連線
+      + {hide-from-toc}[與Microsoft Dynamics 365連線](platform/using/crm-ms-dynamics.md)
       + {hide-from-toc}[與Salesforce.com連線](platform/using/crm-sfdc.md)
       + {hide-from-toc}[與CRM同步資料](platform/using/crm-data-sync.md)
    + {hide-from-toc}[說明與支援選項 — 隱藏](support.md)
@@ -119,7 +119,7 @@ ht-degree: 68%
       + 傳送電子郵件傳遞 {#sending-an-email}
          + {hide-from-toc}[傳送電子郵件的主要步驟 — 隱藏](delivery/using/sending-messages.md)
          + {hide-from-toc}[電子郵件引數 — 隱藏](delivery/using/email-parameters.md)
-         + 在日文的行動裝置上傳送{hide-from-toc}[ — 隱藏](delivery/using/sending-emails-on-japanese-mobiles.md)
+         + {hide-from-toc}[在日文的行動裝置上傳送 — 隱藏](delivery/using/sending-emails-on-japanese-mobiles.md)
       + {hide-from-toc}[附加檔案 — 隱藏](delivery/using/attaching-files.md)
    + 傳送簡訊 {#sending-messages-on-mobiles}
       + [開始使用簡訊](delivery/using/sms-channel.md)
@@ -137,8 +137,8 @@ ht-degree: 68%
       + {hide-from-toc}[將Campaign SDK整合至行動應用程式](delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
       + 設定行動應用程式{#configure-the-mobile-app}
          + {hide-from-toc}[開始使用應用程式設定 — 隱藏](delivery/using/get-started-app-config.md)
-         + iOS的{hide-from-toc}[設定步驟 — 隱藏](delivery/using/configuring-the-mobile-application.md)
-         + Android的{hide-from-toc}[設定步驟 — 隱藏](delivery/using/configuring-the-mobile-application-android.md)
+         + {hide-from-toc}[iOS的設定步驟 — 隱藏](delivery/using/configuring-the-mobile-application.md)
+         + {hide-from-toc}[Android的設定步驟 — 隱藏](delivery/using/configuring-the-mobile-application-android.md)
       + 建立推播通知{#create-a-push-msg}
          + {hide-from-toc}[建立iOS的推送訊息 — 隱藏](delivery/using/create-notifications-ios.md)
          + {hide-from-toc}[建立Android的推送訊息 — 隱藏](delivery/using/create-notifications-android.md)
@@ -458,7 +458,7 @@ ht-degree: 68%
       + {hide-from-toc}[使用重複資料刪除活動的合併功能 — HIDDEN](workflow/using/deduplication-merge.md)
       + {hide-from-toc}[設定週期性匯入工作流程 — 隱藏](workflow/using/recurring-import-workflow.md)
    + 設計查詢 {#designing-queries}
-      + 使用增量查詢{hide-from-toc}[每季更新清單 — HIDDEN](workflow/using/quarterly-list-update.md)
+      + {hide-from-toc}[使用增量查詢每季更新清單 — HIDDEN](workflow/using/quarterly-list-update.md)
    + 查詢和篩選 {#query-and-filter-hidden}
       + {hide-from-toc}[查詢收件者資料表 — 隱藏](workflow/using/querying-recipient-table.md)
       + {hide-from-toc}[查詢傳遞資訊 — 隱藏](workflow/using/querying-delivery-information.md)

@@ -1621,9 +1621,9 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
    <td> statServerAddress<br /> </td> 
    <td> 傳遞統計伺服器的位址，指定為 
     &lt;dns或ip&gt; 
-      <code>[</code>: 
+      <code>&lbrack;</code>: 
      &lt;連線埠&gt; 
-       <code>]</code>. 查看 
+       <code>&rbrack;</code>. 查看 
       <a href="../../installation/using/email-deliverability.md#coordinates-of-the-statistics-server" target="_blank">統計伺服器</a>的座標。 
       <br /> 
      </td> 

@@ -31,7 +31,7 @@ ht-degree: 4%
 
 若要透過FDA設定外部資料庫的存取權，設定步驟如下：
 
-1. 安裝驅動程式，並設定與Adobe Campaign伺服器上的資料庫對應的外部帳戶。 請參閱下列的資料庫特定頁面[](#fda-specific-configuration)
+1. 安裝驅動程式，並設定與Adobe Campaign伺服器上的資料庫對應的外部帳戶。 請參閱下列的資料庫特定頁面[&#128279;](#fda-specific-configuration)
 1. 測試外部帳戶，或在Adobe Campaign和外部資料庫之間建立暫時連線。 [了解更多](../../installation/using/connecting-to-database.md)
 1. 在Adobe Campaign中建立外部資料庫的結構描述。 這可讓您識別外部資料庫的資料結構。 [了解更多](../../installation/using/creating-data-schema.md)
 1. 如有需要，請從先前建立的綱要建立新的目標對應。 如果傳送的收件者來自外部資料庫，則需要此專案。 此實施隨附與訊息個人化相關的限制。 [了解更多](../../installation/using/defining-data-mapping.md)

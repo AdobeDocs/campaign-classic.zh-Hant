@@ -29,7 +29,7 @@ ht-degree: 1%
 
 ![](assets/offer_delivery_009.png)
 
-在本節](../../delivery/using/about-direct-mail-channel.md)中進一步瞭解直接郵件傳遞[。 在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=zh-Hant){target=_blank}中進一步瞭解行銷活動。
+在本節[&#128279;](../../delivery/using/about-direct-mail-channel.md)中進一步瞭解直接郵件傳遞。 在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=zh-Hant){target=_blank}中進一步瞭解行銷活動。
 
 ### 將優惠方案插入傳遞的主要步驟 {#main-steps-for-inserting-an-offer-into-a-delivery}
 
@@ -53,11 +53,11 @@ ht-degree: 1%
 
    ![](assets/offer_delivery_005.png)
 
-1. 選取&#x200B;**[!UICONTROL Exclude non-eligible recipients]**&#x200B;選項（如有必要）。 如需詳細資訊，請參閱呼叫優惠方案引擎](#parameters-for-calling-offer-engine)的[引數。
+1. 選取&#x200B;**[!UICONTROL Exclude non-eligible recipients]**&#x200B;選項（如有必要）。 如需詳細資訊，請參閱呼叫優惠方案引擎[&#128279;](#parameters-for-calling-offer-engine)的引數。
 
    ![](assets/offer_delivery_006.png)
 
-1. 如有必要，請選取&#x200B;**[!UICONTROL Do not display anything if no offers are selected]**&#x200B;選項。 如需詳細資訊，請參閱呼叫優惠方案引擎](#parameters-for-calling-offer-engine)的[引數。
+1. 如有必要，請選取&#x200B;**[!UICONTROL Do not display anything if no offers are selected]**&#x200B;選項。 如需詳細資訊，請參閱呼叫優惠方案引擎[&#128279;](#parameters-for-calling-offer-engine)的引數。
 
    ![](assets/offer_delivery_007.png)
 
