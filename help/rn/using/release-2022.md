@@ -8,9 +8,9 @@ level: Beginner
 hide: true
 exl-id: 28490323-41d0-4d61-b309-6892fb826d21
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2151'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -173,7 +173,7 @@ Adobe Campaign 現在相容於 Windows Server 2019。 請參閱 [Campaign 相容
 * 修正了妨礙&#x200B;**清除資料夾**&#x200B;功能正常運作的問題。 (NEO-37459)
 * 修復在搭配 Microsoft Dynamics CRM 帳戶使用 xml 資料欄位時，因參考的 xml 包含雙引號導致錯誤要求的問題。
 * 修復在網路逾時，導致不正確記錄為指令碼中斷而非網路錯誤的問題。 如果 HTTP 要求包含在 JavaScript 活動中，會發生此問題。 (NEO-38079)
-* 修正在嘗試擷取時間元件時，執行Amazon Redshift HoursDiff和MinutesDiff函式時傳回錯誤結果的問題。(NEO-31673)
+* 修正了在嘗試提取時間元件時，執行 Amazon Redshift HoursDiff 和 MinutesDiff 函式時傳回錯誤結果的問題。(NEO-31673)
 * 修正自版本編號 9182 以來，無法載入傳遞&#x200B;**熱門點擊**&#x200B;報告的問題。 (NEO-28900)
 * 修復在以字元實體參照 (`&amp;`) 取代 URL 中的 &amp; 符號時，導致使用者無法存取連結至 QR 碼 URL 的錯誤。 (NEO-28621)
 * 修復當使用者建立新促銷活動工作流程並連結至 Web Analytics 帳戶的傳遞活動時，會建立新外部帳戶的問題。 這是因為 webAnalyticsAccount 傳遞物件中缺少 ID 所致。 (NEO-39691)

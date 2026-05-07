@@ -8,9 +8,9 @@ level: Beginner
 hide: true
 exl-id: 8ed11e96-9f23-4e2e-bae2-25c51cfb549a
 source-git-commit: 4cae5fdb2b78f446f84352046b523d8862e9060c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2391'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,7 @@ _2023 年 12 月 5 日_
 * 修正了在按一下 Campaign 報告中的 `Back` 按鈕時要求使用者重新驗證的問題。 (NEO-65087)
 * 修正資料庫清理工作流程中，在傳遞校樣之前刪除傳遞時所發生的錯誤。 (NEO-48114)
 * 修正連線至用戶端主控台時的問題：最近 TLS 驗證更新導致連線錯誤。 (NEO-50488)
-* 修正Campaign升級至7.3.1後HTTP Proxy驗證的問題。 行銷活動工作流程中的HTTP要求失敗，出現`error 407 – proxy auth required is returned`。 (NEO-49624)
+* 修正了 Campaign 升級至 7.3.1 後 HTTP Proxy 驗證的問題。行銷活動工作流程中的 HTTP 請求失敗，因為`error 407 – proxy auth required is returned`。(NEO-49624)
 * 修正&#x200B;**指令碼**&#x200B;工作流程活動中 GPG 解密的間歇性失敗。 相關的錯誤訊息為：`gpg: decryption failed: No secret key`。 (NEO-50257)
   <!--* Workflow temporary tables now have a primary index in Teradata with a Federated Data Access (FDA) connection. (NEO-62575)-->
 
@@ -108,11 +108,11 @@ _2023 年 9 月 7 日_
 * 已修正可能影響傳遞效能的查詢管理問題。 (NEO-49991)
 * 已修正在行銷活動工作流程傳遞活動中使用外部帳戶時，可能導致發生外部帳戶設定問題的問題。 (NEO-49959)
 * 已修正傳送推播通知時發生的效能問題。 (NEO-49953)
-修正在匯出報告時可能導致日文字元顯示錯誤的問題(NEO-49308)。
+修正了匯出報告時，可能導致日文字元無法正確顯示的問題。(NEO-49308)
 * 已修正造成 Tomcat 錯誤報告顯示過多錯誤詳細資料的問題。 (NEO-49029)
 * 已修正使用大量活動內容時，可能導致發生傳遞錯誤的問題。 (NEO-48807)
 * 已修正可能導致&#x200B;**更新資料**&#x200B;工作流程活動無法正常運作的問題。 (NEO-48140)
-* 修正了無法使用電子郵件以外的外部帳戶來同步傳遞的點選追蹤資料的問題。(NEO-47277)
+* 修正了使用與電子郵件不同的外部帳戶無法對傳遞同步點擊追蹤資料的問題。(NEO-47277)
 * 已修正無法在訊息中心行銷執行個體上同步即時追蹤記錄的問題。 (NEO-42540)
 * 已修正 Snowflake 資料庫資料表無法在結構描述的探索視窗中顯示工作區前置詞的問題。 (NEO-40297)
 * 已修正導致 `<img-amp>` 標記無法在電子郵件內容中運作的問題。 (NEO-38685)
@@ -172,7 +172,7 @@ _2022 年 11 月 21 日_
 
 * Microsoft Internet Explorer 11 生命週期結束後，用戶端主控台中的儀表板轉譯引擎現在使用 Edge Chromium。 (NEO-20741)
 
-瞭解更多與[&#x200B; Campaign 相容性矩陣相關的資訊](../../rn/using/compatibility-matrix.md#RDBMSservers)。
+瞭解更多與[ Campaign 相容性矩陣相關的資訊](../../rn/using/compatibility-matrix.md#RDBMSservers)。
 
 >[!CAUTION]
 >
