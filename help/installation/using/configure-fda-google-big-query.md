@@ -9,7 +9,7 @@ topic-tags: connectors
 exl-id: ebaad59f-0607-4090-92d0-e457fbf9a348
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '960'
+source-wordcount: '1042'
 ht-degree: 2%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 2%
 
 ### 在Windows上設定的驅動程式 {#driver-window}
 
-1. 下載適用於Windows[&#128279;](https://cloud.google.com/bigquery/docs/reference/odbc-jdbc-drivers)的ODBC驅動程式。
+1. 下載適用於Windows](https://cloud.google.com/bigquery/docs/reference/odbc-jdbc-drivers)的[ODBC驅動程式。
 
 1. 在Windows中設定ODBC驅動程式。 如需詳細資訊，請參閱[此頁面](https://storage.googleapis.com/simba-bq-release/jdbc/Simba%20JDBC%20Driver%20for%20Google%20BigQuery%20Install%20and%20Configuration%20Guide.pdf)。
 
@@ -66,7 +66,7 @@ ht-degree: 2%
 >
 >我們建議使用Python3，請參閱此[頁面](https://www.python.org/downloads/)。
 
-大量載入公用程式可讓您透過Google Cloud SDK更快地進行傳輸。
+大量載入公用程式可讓您更快速地傳輸，這是透過Google Cloud SDK實現的。
 
 1. 從此[頁面](https://cloud.google.com/sdk/docs/downloads-versioned-archives)下載Windows 64位元(x86_64)封存，並將它解壓縮到對應的目錄中。
 
@@ -86,7 +86,7 @@ ht-degree: 2%
 
 ### 在Linux上設定的驅動程式 {#driver-linux}
 
-設定驅動程式之前，請注意，指令碼和命令必須由root使用者執行。 此外也建議在執行指令碼時使用Google DNS 8.8.8.8。
+設定驅動程式之前，請注意，指令碼和命令必須由root使用者執行。 也建議在執行指令碼時使用Google DNS 8.8.8.8。
 
 若要在Linux上設定[!DNL Google BigQuery]，請遵循下列步驟：
 
@@ -146,7 +146,7 @@ ht-degree: 2%
 >
 >我們建議使用Python3，請參閱此[頁面](https://www.python.org/downloads/)。
 
-大量載入公用程式可讓您透過Google Cloud SDK更快地進行傳輸。
+大量載入公用程式可讓您更快速地傳輸，這是透過Google Cloud SDK實現的。
 
 1. 在ODBC安裝之前，請檢查您的Linux發行版本上是否已安裝下列套裝軟體：
 
@@ -179,19 +179,19 @@ ht-degree: 2%
 
 1. 從Adobe Campaign Classic **[!UICONTROL Explorer]**，按一下&#x200B;**[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**。
 
-1. 按一下&#x200B;**[!UICONTROL New]**。
+1. 按一下 **[!UICONTROL New]**。
 
 1. 選取&#x200B;**[!UICONTROL External database]**&#x200B;作為外部帳戶的&#x200B;**[!UICONTROL Type]**。
 
 1. 設定[!DNL Google BigQuery]外部帳戶，您必須指定：
 
-   * **[!UICONTROL Type]**： [!DNL Google BigQuery]
+   * **[!UICONTROL Type]**: [!DNL Google BigQuery]
 
    * **[!UICONTROL Service account]**：您&#x200B;**[!UICONTROL Service account]**&#x200B;的電子郵件。 如需詳細資訊，請參閱[Google Cloud檔案](https://cloud.google.com/iam/docs/creating-managing-service-accounts)。
 
    * **[!UICONTROL Project]**：您的&#x200B;**[!UICONTROL Project]**&#x200B;名稱。 如需詳細資訊，請參閱[Google Cloud檔案](https://cloud.google.com/resource-manager/docs/creating-managing-projects)。
 
-   * **[!UICONTROL Key file Path]**：
+   * **[!UICONTROL Key file Path]**:
       * **[!UICONTROL Upload key file to the server]**：如果您選擇透過Adobe Campaign Classic上傳金鑰，請選取&#x200B;**[!UICONTROL Click here to upload]**。
 
       * **[!UICONTROL Enter manually the key file path]**：如果您選擇使用預先存在的金鑰，請在此欄位中複製/貼上您的絕對路徑。
@@ -209,8 +209,8 @@ ht-degree: 2%
 | ProxyPort | 執行Proxy的連線埠號碼，例如8080 |
 | ProxyUid | 用於已驗證Proxy的使用者名稱 |
 | proxypwd | ProxyUid密碼 |
-| bqpath | 請注意，這僅適用於大量載入工具(Cloud SDK)。 </br>若要避免使用PATH變數或必須將google-cloud-sdk目錄移至其他位置，您可以使用此選項指定伺服器上cloud sdk bin目錄的精確路徑。 |
-| GCloudConfigName | 請注意，這適用於7.3.4版開始並僅適用於大量載入工具(Cloud SDK)。</br> Google Cloud SDK使用設定將資料載入BigQuery表格。 名為`accfda`的組態儲存用來載入資料的引數。 不過，此選項可讓使用者為組態指定不同的名稱。 |
-| GCloudDefaultConfigName | 請注意，這適用於7.3.4版開始並僅適用於大量載入工具(Cloud SDK)。</br>必須先將作用中的標籤傳輸至新的設定，才能刪除作用中的Google Cloud SDK設定。 此暫時設定是重新建立載入資料的主要設定所必需的。 暫存組態的預設名稱為`default`，如有需要，可以變更此名稱。 |
-| GCloudRecreateConfig | 請注意，這適用於7.3.4版開始並僅適用於大量載入工具(Cloud SDK)。</br>設為`false`時，大量載入機制不會嘗試重新建立、刪除或修改Google Cloud SDK設定。 相反地，它會使用電腦上現有的設定繼續進行資料載入。 當其他作業取決於Google Cloud SDK設定時，此功能很有價值。 </br>如果使用者在沒有適當組態的情況下啟用此引擎選項，大量載入機制將會發出警告訊息： `No active configuration found. Please either create it manually or remove the GCloudRecreateConfig option`。 為避免進一步的錯誤，它會恢復為使用預設的ODBC陣列插入大量載入機制。 |
+| bqpath | 請注意，這僅適用於大量載入工具（雲端SDK）。</br> 若要避免使用PATH變數或google-cloud-sdk目錄必須移至其他位置，您可以使用此選項指定伺服器上cloud sdk bin目錄的精確路徑。 |
+| GCloudConfigName | 請注意，這適用於7.3.4發行版本開始並僅適用於大量載入工具(Cloud SDK)。</br> Google Cloud SDK使用設定將資料載入BigQuery表格。 名為`accfda`的組態儲存用來載入資料的引數。 不過，此選項可讓使用者為組態指定不同的名稱。 |
+| GCloudDefaultConfigName | 請注意，這適用於7.3.4發行版本開始並僅適用於大量載入工具(Cloud SDK)。</br> 必須先將作用中的標籤傳輸至新設定，才能刪除作用中的Google Cloud SDK設定。 此暫時設定是重新建立載入資料的主要設定所必需的。 暫存組態的預設名稱為`default`，如有需要，可以變更此名稱。 |
+| GCloudRecreateConfig | 請注意，這適用於7.3.4發行版本開始並僅適用於大量載入工具(Cloud SDK)。</br> 設定為`false`時，大量載入機制不會嘗試重新建立、刪除或修改Google Cloud SDK設定。 相反地，它會使用電腦上現有的設定繼續進行資料載入。 當其他作業取決於Google Cloud SDK設定時，此功能很有價值。</br> 如果使用者在沒有適當組態的情況下啟用此引擎選項，大量載入機制將會發出警告訊息： `No active configuration found. Please either create it manually or remove the GCloudRecreateConfig option`。 為避免進一步的錯誤，它會恢復為使用預設的ODBC陣列插入大量載入機制。 |
 

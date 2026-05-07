@@ -7,8 +7,8 @@ feature: Landing Pages, Web Apps
 exl-id: df58221f-f71b-49d5-a6a1-c81ddff27fdb
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
-source-wordcount: '694'
-ht-degree: 20%
+source-wordcount: '702'
+ht-degree: 19%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 20%
 
 Adobe Campaign可讓您使用來自資料庫的資料，以及根據連線使用者的許可權而改寫的內容，建立及發佈動態和互動式Web應用程式。
 
-您可以建立頁面，例如外部網路上的編輯表單，或通知表單，其中包含來自資料庫的資料，以及表格、圖表、輸入表單等。 此功能可讓您設計和張貼網頁，讓使用者在其中查閱或輸入資訊。
+您可以建立頁面，例如外部網路上的編輯表單，或通知表單，其中包含來自資料庫的資料，以及表格、圖表、輸入表單等。此功能可讓您設計和張貼網頁，讓使用者在其中查閱或輸入資訊。
 
 這可以是訂閱表單，其中包含已預先載入Adobe Campaign資料庫所含資訊的資料，如下所示：
 
@@ -48,7 +48,7 @@ Adobe Campaign中的網頁應用程式可存取下列功能：
 * 根據預期的資料型別（編號、電子郵件地址、日期等），在驗證之前檢查資訊 和必填欄位。 如需關於此項目的詳細資訊，請參閱此[頁面](form-rendering.md#defining-control-settings)。
 * 電子郵件邀請或通知。 如需關於此項目的詳細資訊，請參閱此[頁面](publishing-a-web-form.md#delivering-a-form-via-email)。
 * Personalization的錯誤和結束訊息。 如需關於此項目的詳細資訊，請參閱此[頁面](defining-web-forms-properties.md#setting-up-an-error-page)。
-* 使用影像、影片、超文字連結、驗證碼等。 如需關於此項目的詳細資訊，請參閱此[頁面](editing-content.md)。
+* 使用影像、影片、超文字連結、驗證碼等。如需詳細資訊，請參閱此[頁面](editing-content.md)。
 * 即時監控回應。 如需關於此項目的詳細資訊，請參閱此[頁面](../../surveys/using/publish-track-and-use-collected-data.md#response-tracking)。
 
 選用的&#x200B;**調查**&#x200B;建立模組提供下列附加功能：

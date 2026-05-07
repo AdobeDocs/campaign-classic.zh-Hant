@@ -10,8 +10,8 @@ topic-tags: importing-and-exporting-data
 exl-id: 266ecd49-7101-4ff1-941f-1f9b39b44955
 source-git-commit: 4fb262c616276f785f97b42bec22c150afc6e5c8
 workflow-type: tm+mt
-source-wordcount: '87'
-ht-degree: 25%
+source-wordcount: '98'
+ht-degree: 22%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 25%
 
 >[!NOTE]
 >
->若要進一步瞭解使用工作流程匯入和匯出資料，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/audience/add-profiles/import-profiles){target=_blank}。
+>若要進一步瞭解使用工作流程匯入和匯出資料，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/add-profiles/import-profiles){target=_blank}。
 
 
 <!--

@@ -7,14 +7,14 @@ role: Developer
 exl-id: 655b5928-b005-442f-b026-2f1b0c1abb99
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '980'
-ht-degree: 5%
+source-wordcount: '997'
+ht-degree: 6%
 
 ---
 
 # 開始使用 Campaign 資料模型{#about-data-model}
 
-Adobe Campaign 資料庫的概念資料模型由一組內建表格及其互動組成，本頁面列出主要表格和概念。
+Adobe Campaign 資料庫的概念資料模型由一組內建表格及其互動組成， 本頁面列出主要表格和概念。
 
 ## 概觀 {#data-model-overview}
 
@@ -115,6 +115,6 @@ Adobe Campaign中的內建收件者表格是建立資料模型的良好起點。
   ![](assets/data-model_documentation-tab.png)
 
 
-* **行銷活動結構描述** — 應用程式中資料的實體和邏輯結構以XML描述。 並且遵循 Adobe Campaign 專屬的語法，稱為結構描述 (schema)。如需Adobe Campaign結構描述的詳細資訊，請閱讀[本節](../../configuration/using/about-schema-reference.md)。
+* **行銷活動結構描述** — 應用程式中資料的實體和邏輯結構以XML描述。 並且遵循 Adobe Campaign 專屬的語法，稱為結構描述 (schema)。 如需Adobe Campaign結構描述的詳細資訊，請閱讀[本節](../../configuration/using/about-schema-reference.md)。
 
 * **資料模型最佳實務** — 在[本節](../../configuration/using/data-model-best-practices.md#data-model-architecture)中瞭解Campaign資料模型架構和相關最佳實務。

@@ -7,8 +7,8 @@ feature: Web Forms
 exl-id: 364d90af-4b18-4104-8b6a-be80cfde3b0b
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '1036'
-ht-degree: 2%
+source-wordcount: '1049'
+ht-degree: 3%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 2%
 
 
 
-您可以在表單的頁面中加入使用者不會互動的元素；這些是靜態元素，例如影像、HTML內容、水準列或超文字連結。 這些元素是透過工具列中的第一個按鈕建立，方法是選取&#x200B;**[!UICONTROL Static elements]**。
+您可以在表單的頁面中加入使用者不會互動的元素；這些是靜態元素，例如影像、HTML內容、橫條圖或超文字連結。 這些元素是透過工具列中的第一個按鈕建立，方法是選取&#x200B;**[!UICONTROL Static elements]**。
 
 ![](assets/s_ncs_admin_survey_add_static_element.png)
 
@@ -86,7 +86,7 @@ HTML編輯器可讓您輸入要插入表單頁面的內容。 若要開啟編輯
 
   ![](assets/s_ncs_admin_survey_link_next.png)
 
-  如果要以連結取代&#x200B;**[!UICONTROL Next]**&#x200B;和/或&#x200B;**[!UICONTROL Back]**&#x200B;按鈕，您可以隱藏這些按鈕。 請參閱此[頁面](defining-web-forms-page-sequencing.md)。
+  如果要以連結取代&#x200B;**[!UICONTROL Next]**&#x200B;和/或&#x200B;**[!UICONTROL Back]**&#x200B;按鈕，您可以隱藏這些按鈕。 請參見此[頁面](defining-web-forms-page-sequencing.md)。
 
   連結將取代預設使用的&#x200B;**[!UICONTROL Next]**&#x200B;按鈕。
 
@@ -137,7 +137,7 @@ HTML編輯器可讓您輸入要插入表單頁面的內容。 若要開啟編輯
 
 ### 使用文字變數 {#using-text-variables}
 
-**[!UICONTROL Text]**&#x200B;索引標籤可讓您建立變數欄位，這些欄位可用於&lt;%=和%>字元之間的HTML，語法如下： **$(IDENTIFIER)**。
+**[!UICONTROL Text]**&#x200B;索引標籤可讓您建立可在HTML中使用的&lt;%=和%>字元之間的變數欄位，其語法如下： **$(IDENTIFIER)**。
 
 使用此方法可輕鬆將字串當地語系化。 請參閱[轉譯網路表單](translating-a-web-form.md)
 
@@ -174,6 +174,6 @@ HTML編輯器可讓您輸入要插入表單頁面的內容。 若要開啟編輯
 
 ![](assets/s_ncs_admin_survey_add_img.png)
 
-如果這是資料庫中的影像，請在欄位的下拉式方塊中選取影像；如果影像位於外部檔案中，請輸入存取路徑。 將游標移到影像上時(與HTML中的ALT欄位一致)，或是影像未顯示時，就會顯示標籤。
+如果這是資料庫中的影像，請在欄位的下拉式方塊中選取影像；如果影像位於外部檔案中，請輸入存取路徑。 將游標移至影像上（與HTML中的ALT欄位一致）或未顯示影像時，標籤就會顯示。
 
 您可在編輯器的中央區段中檢視影像。

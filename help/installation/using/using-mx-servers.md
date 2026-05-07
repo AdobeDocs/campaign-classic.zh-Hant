@@ -10,8 +10,8 @@ topic-tags: additional-configurations
 exl-id: 47f50bf5-4d5b-4c07-af71-de4390177cf5
 source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
-source-wordcount: '823'
-ht-degree: 1%
+source-wordcount: '855'
+ht-degree: 3%
 
 ---
 
@@ -90,4 +90,4 @@ MX規則有6個不同的輸送量層級，主要是在提升過程中使用：
 * [MX組態](../../installation/using/email-deliverability.md#mx-configuration)
 * [技術電子郵件設定](../../installation/using/email-deliverability.md)
 * [瞭解傳遞失敗](../../delivery/using/delivery-failures-quarantine.md)
-* [Campaign Classic — 技術建議](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=zh-Hant)
+* [Campaign Classic — 技術建議](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html)

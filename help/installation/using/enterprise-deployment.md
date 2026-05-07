@@ -9,7 +9,7 @@ topic-tags: deployment-types-
 exl-id: 38c14010-203a-47ab-b23d-6f431dab9a88
 source-git-commit: 1be1528d657537786c430ea9c8bdb3aad58ba20d
 workflow-type: tm+mt
-source-wordcount: '1218'
+source-wordcount: '1251'
 ht-degree: 3%
 
 ---
@@ -59,10 +59,10 @@ ht-degree: 3%
 * 可透過POP3存取的彈回信箱，
 * 在負載平衡器上建立兩個DNS別名：
 
-   * 第一個公開給大眾用於追蹤和指向虛擬IP位址(VIP)上的負載平衡器，然後分發給兩個前端伺服器，
-   * 第二個透過主控台公開給內部使用者以存取，並指向虛擬IP位址(VIP)上的負載平衡器，然後將其分發給兩個應用程式伺服器。
+   * 第一個公開給大眾用於追蹤和指向虛擬IP位址上的負載平衡器(VIP)，然後將其分發到兩個前端伺服器，
+   * 第二個透過主控台向內部使用者公開，以存取並指向虛擬IP位址(VIP)上的負載平衡器，然後將其分發到兩個應用程式伺服器。
 
-* 防火牆已設定為開啟STMP (25)、DNS (53)、HTTP (80)、HTTPS (443)、SQL (1521 (Oracle)、5432 (PostgreSQL)等) 連線埠。 如需進一步資訊，請參閱區段[資料庫存取](../../installation/using/network-configuration.md#database-access)。
+* 防火牆已設定為開啟STMP (25)、DNS (53)、HTTP (80)、HTTPS (443)、SQL （1521 for Oracle、5432 for PostgreSQL等） 連線埠。 如需進一步資訊，請參閱區段[資料庫存取](../../installation/using/network-configuration.md#database-access)。
 
 >[!CAUTION]
 >
@@ -79,7 +79,7 @@ ht-degree: 3%
 * 執行個體的名稱：示範
 * DNS遮罩： tracking.campaign.net&#42;， console.campaign.net&#42; （應用程式伺服器會處理使用者端主控台連線和報告，以及映象頁面和取消訂閱頁面的URL）
 * 語言：英文
-* 資料庫： campaign：demo@dbsrv
+* 資料庫： campaign:demo@dbsrv
 
 安裝第一台伺服器的步驟如下：
 
@@ -166,7 +166,7 @@ ht-degree: 3%
 
    如需詳細資訊，請參閱[Campaign伺服器組態](../../installation/using/configuring-campaign-server.md)。
 
-1. 將使用者端主控台安裝程式&#x200B;**setup-client-7.XX**、**YYYY.exe**&#x200B;複製到&#x200B;**/datakit/nl/eng/jsp**&#x200B;資料夾。 [了解更多](../../installation/using/client-console-availability-for-windows.md)。
+1. 將使用者端主控台安裝程式&#x200B;**setup-client-7.XX**、**YYYY.exe**&#x200B;複製到&#x200B;**/datakit/nl/eng/jsp**&#x200B;資料夾。 [了解更多資訊](../../installation/using/client-console-availability-for-windows.md)。
 
 1. 啟動Adobe Campaign伺服器(**net start nlserver6** （在Windows中），**/etc/init.d/nlserver6 start** （在Linux中）)，然後再次執行命令&#x200B;**nlserver pdump**&#x200B;以檢查所有啟用的模組是否存在。
 
@@ -190,7 +190,7 @@ ht-degree: 3%
 
 1. 使用URL測試&#x200B;**nlserver web**&#x200B;模組： [https://console.campaign.net/nl/jsp/logon.jsp](https://tracking.campaign.net/r/test)。
 
-   此URL可讓您存取使用者端安裝程式的下載頁面。 [了解更多](../../installation/using/client-console-availability-for-windows.md)。
+   此URL可讓您存取使用者端安裝程式的下載頁面。 [了解更多資訊](../../installation/using/client-console-availability-for-windows.md)。
 
    進入存取控制頁面時，請輸入&#x200B;**內部**&#x200B;登入及相關密碼。
 

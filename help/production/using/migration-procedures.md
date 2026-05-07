@@ -11,8 +11,8 @@ topic-tags: updating-adobe-campaign
 exl-id: 0b71a4d3-b340-4742-bd69-4073ce271cf3
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '91'
-ht-degree: 13%
+source-wordcount: '116'
+ht-degree: 26%
 
 ---
 
@@ -27,5 +27,5 @@ ht-degree: 13%
 
 如需移轉程式與最佳實務的詳細資訊，請參閱：
 
-* [執行版本編號升級](https://helpx.adobe.com/tw/campaign/kb/acc-build-upgrade.html)
+* [執行建置升級](https://helpx.adobe.com/tw/campaign/kb/acc-build-upgrade.html)
 * [移轉概述](../../migration/using/about-migration.md)

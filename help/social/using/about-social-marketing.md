@@ -9,14 +9,14 @@ topic-tags: introduction
 exl-id: c8fd5f75-9386-42dd-bfb6-8086a86aa324
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '88'
-ht-degree: 7%
+source-wordcount: '99'
+ht-degree: 15%
 
 ---
 
 # 關於社交行銷{#about-social-marketing}
 
-專為管理社交網路所設計的&#x200B;**管理社交網路** （社交行銷）應用程式可讓您透過X (以前稱為Twitter)與客戶和潛在客戶互動。
+專為管理社交網路所設計的&#x200B;**管理社交網路** （社交行銷）應用程式可讓您透過X （先前稱為Twitter）與客戶和潛在客戶互動。
 
 瞭解在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/ac-tw.html?lang=zh-Hant){target="_blank"}中整合Campaign和X的關鍵步驟。
 

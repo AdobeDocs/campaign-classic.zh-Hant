@@ -7,7 +7,7 @@ exl-id: 94a1f00d-e952-4edd-9012-f71c87b897ca
 hide: true
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '321'
+source-wordcount: '333'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >您可以將Adobe Campaign列舉的所有值取代為CRM的值：若要這麼做，請在&#x200B;**[!UICONTROL Yes]**&#x200B;欄中選取&#x200B;**[!UICONTROL Replace]**。
+   >您可以將Adobe Campaign列舉的所有值取代為CRM的值：若要這麼做，請在&#x200B;**[!UICONTROL Replace]**&#x200B;欄中選取&#x200B;**[!UICONTROL Yes]**。
 
 
    按一下&#x200B;**[!UICONTROL Next]**，然後按&#x200B;**[!UICONTROL Start]**，開始匯入清單。
@@ -89,4 +89,4 @@ Campaign和Salesforce.com現已連線。 您可以設定兩個系統之間的資
 
 ![](assets/crm_connectors_sfdc_wf.png)
 
-在此頁面[中進一步瞭解資料同步處理](../../platform/using/crm-data-sync.md)。
+在此頁面](../../platform/using/crm-data-sync.md)中進一步瞭解資料同步處理[。

@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 設定Sybase IQ的存取權
-description: 瞭解如何在FDA中設定Sybase IQ存取權
+description: 瞭解如何在FDA中設定Sybase IQ的存取權
 feature: Installation, Federated Data Access
 audience: platform
 content-type: reference
@@ -9,7 +9,7 @@ topic-tags: connectors
 exl-id: 0fdf8259-5cab-4a9d-adb3-6c55ec5c8851
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '314'
 ht-degree: 0%
 
 ---
@@ -21,11 +21,11 @@ ht-degree: 0%
 使用Campaign **同盟資料存取** (FDA)選項來處理儲存在外部資料庫中的資訊。 請依照下列步驟設定對Sybase IQ的存取權。
 
 1. 設定[Sybase IQ資料庫](#configuring-sybase)
-1. 在Campaign中設定Sybase IQ[外部帳戶](#sybase-external)
+1. 在Campaign中設定Sybase IQ [外部帳戶](#sybase-external)
 
-## sybase IQ設定 {#configuring-sybase}
+## Sybase IQ設定 {#configuring-sybase}
 
-在FDA中連線Sybase IQ外部資料庫需要在Adobe Campaign伺服器上設定以下其他設定。
+在FDA中連線至Sybase IQ外部資料庫時，需要在Adobe Campaign伺服器上設定以下其他設定。
 
 >[!NOTE]
 >
@@ -67,9 +67,9 @@ ht-degree: 0%
    * 如果您使用customer.sh檔案宣告路徑：新增路徑/opt/sybase/IQ-16_0/lib64作為LD_LIBRARY_PATH變數。
    * 否則，請使用Unix指令。
 
-## sybase IQ外部帳戶 {#sybase-external}
+## Sybase IQ外部帳戶 {#sybase-external}
 
-sybase IQ外部帳戶可讓您將您的Campaign執行個體連線至Sybase IQ外部資料庫。
+Sybase IQ外部帳戶可讓您將您的Campaign執行個體連線至Sybase IQ外部資料庫。
 
 1. 從行銷活動&#x200B;**[!UICONTROL Explorer]**，按一下&#x200B;**[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**。
 
@@ -77,7 +77,7 @@ sybase IQ外部帳戶可讓您將您的Campaign執行個體連線至Sybase IQ外
 
 1. 若要設定&#x200B;**[!UICONTROL Sybase IQ]**&#x200B;外部帳戶，您必須指定：
 
-   * **[!UICONTROL Type]**： ODBC (Sybase ASE，Sybase IQ)
+   * **[!UICONTROL Type]**： ODBC (Sybase ASE、Sybase IQ)
 
    * **[!UICONTROL Server]**：對應到步驟5中定義的ODBC連線(`<server_alias>`)。 不一定是伺服器本身的名稱。
 

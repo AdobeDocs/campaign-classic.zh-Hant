@@ -7,7 +7,7 @@ feature: Web Apps, Reporting, Monitoring
 exl-id: 07bd36ce-c701-4998-974f-81fd4fac22a0
 source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
 workflow-type: tm+mt
-source-wordcount: '410'
+source-wordcount: '411'
 ht-degree: 4%
 
 ---
@@ -35,7 +35,7 @@ Adobe Campaign可讓您插入追蹤標籤，藉此追蹤及測量網站應用程
 
    * **轉換率**：顯示導覽路徑所有步驟的人數。
    * **跳出率**：僅顯示第一個步驟的人數
-   * **轉換漏斗**：每個步驟之間的遺失率。
+   * **轉換funnel**：每個步驟之間的遺失率。
 
   此外，**磁區**&#x200B;型別圖表會依據其來源顯示母體。
 

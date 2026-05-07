@@ -9,7 +9,7 @@ hide: true
 exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1961'
+source-wordcount: '1981'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 ![](assets/s_ncs_user_wizard_email02.png)
 
-此視窗可讓您輸入建立電子郵件標頭所需的所有資訊。 此資訊可個人化。 若要這麼做，請使用輸入欄位右側的按鈕，插入個人化欄位。
+此視窗可讓您輸入建立電子郵件標頭所需的所有資訊。 可將此資訊加以個人化。 若要這麼做，請使用輸入欄位右側的按鈕，插入個人化欄位。
 
 若要瞭解如何插入和使用個人化欄位，請參閱[關於個人化](about-personalization.md)區段。
 
@@ -114,7 +114,7 @@ ht-degree: 1%
 
 Adobe Campaign可讓您嘗試新的互動式[AMP for Email](https://amp.dev/about/email/)格式，在特定條件下傳送動態電子郵件。
 
-如需詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-interactive-content.html?lang=zh-Hant){target="_blank"}。
+如需詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-interactive-content.html){target="_blank"}。
 
 ## 使用內容管理 {#using-content-management}
 
@@ -177,10 +177,10 @@ HTML格式電子郵件傳遞可包含影像。 從傳遞小幫手，您可以匯
 
 若要透過傳送助理管理影像：
 
-1. 按一下工具列中的&#x200B;**[!UICONTROL Tracking & Images]**&#x200B;圖示。
+1. 按一下工具列中的&#x200B;**[!UICONTROL Tracking & Images]**圖示。
    ![](assets/s_ncs_user_email_del_img_param.png)
 
-1. 在&#x200B;**[!UICONTROL Upload images]**&#x200B;索引標籤中選取&#x200B;**[!UICONTROL Images]**。
+1. 在&#x200B;**[!UICONTROL Images]**&#x200B;索引標籤中選取&#x200B;**[!UICONTROL Upload images]**。
 1. 然後，您可以選擇是否要將這些影像納入電子郵件中。
    ![](assets/s_ncs_user_email_del_img_upload.png)
 

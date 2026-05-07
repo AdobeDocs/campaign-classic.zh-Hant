@@ -9,8 +9,8 @@ topic-tags: additional-configurations
 exl-id: 424faf25-2fd5-40d1-a2fc-c715fc0b8190
 source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
-source-wordcount: '1211'
-ht-degree: 1%
+source-wordcount: '1264'
+ht-degree: 4%
 
 ---
 
@@ -61,7 +61,7 @@ ht-degree: 1%
 C:\emails\2018-12-02\13h
 ```
 
-當電子郵件的狀態不是&#x200B;**`<deliveryid>-<broadlogid>.eml`**&#x200B;時，封存檔案名稱為&#x200B;**[!UICONTROL Sent]**。 一旦狀態變更為&#x200B;**[!UICONTROL Sent]**，檔案名稱就會變成&#x200B;**`<deliveryid>-<broadlogid>-sent.eml`**。 例如：
+當電子郵件的狀態不是&#x200B;**[!UICONTROL Sent]**&#x200B;時，封存檔案名稱為&#x200B;**`<deliveryid>-<broadlogid>.eml`**。 一旦狀態變更為&#x200B;**[!UICONTROL Sent]**，檔案名稱就會變成&#x200B;**`<deliveryid>-<broadlogid>-sent.eml`**。 例如：
 
 ```
 C:\emails\2018-12-02\13h\4012-8040-sent.eml
@@ -135,7 +135,7 @@ C:\emails\2018-12-02\13h\4012-8040-sent.eml
 <!--
 ## Moving to the new Email BCC {#updated-email-archiving-system--bcc-}
 
-[!BADGE On-premise & Hybrid]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="Applies to on-premise and hybrid deployments only"}
+[!BADGE On-premise & Hybrid]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"}
 
 >[!IMPORTANT]
 >

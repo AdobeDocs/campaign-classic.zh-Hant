@@ -1,14 +1,14 @@
 ---
 product: campaign
-title: 傳遞報表
-description: 傳遞報表
+title: 傳遞報告
+description: 傳遞報告
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Reporting, Monitoring
 exl-id: dcbf280c-3040-4218-a453-1497662fef2e
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
 source-wordcount: '220'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -37,7 +37,7 @@ Adobe Campaign提供多種型別的報表，可透過客戶主控台或網際網
 
 您可以：
 
-* 將報表匯出至Excel、PDF或開啟檔案，
+* 將報表匯出至Excel、PDF或Open Document，
 * 列印報表，
 * 建立報告歷史記錄，
 * 顯示不同的報表歷史記錄，
@@ -45,6 +45,6 @@ Adobe Campaign提供多種型別的報表，可透過客戶主控台或網際網
 
 >[!NOTE]
 >
->有些報表會提供圖表（曲線、長條圖、漏斗等）的功能。 將游標移至圖表上以顯示其值。
+>有些報表會提供圖表（曲線、長條圖、funnel等）的功能。 將游標移至圖表上以顯示其值。
 
 如需這些選項的詳細資訊，請參閱[本節](../../reporting/using/about-adobe-campaign-reporting-tools.md)。

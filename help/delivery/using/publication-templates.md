@@ -8,7 +8,7 @@ role: User
 exl-id: 3b6e4974-4551-4da2-8eca-577c4f9cbd91
 source-git-commit: a94774daa4005fe95066b85f921d9baa981b2a7c
 workflow-type: tm+mt
-source-wordcount: '823'
+source-wordcount: '822'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 1%
 
 發佈範本由其名稱和名稱空間識別。
 
-樣式表的識別索引鍵是由名稱空間和名稱組成的字串，以冒號分隔；例如： **cus：newsletter**。
+樣式表的識別索引鍵是由名稱空間和名稱組成的字串，以冒號分隔；例如： **cus:newsletter**。
 
 >[!NOTE]
 >
@@ -89,7 +89,7 @@ ht-degree: 1%
 
 ### 傳遞 {#delivery}
 
-此索引標籤可讓您選取案例，以直接在內容上啟動傳送。 電子郵件內容將會根據輸出格式(HTML或文字)自動填入。
+此索引標籤可讓您選取案例，以直接在內容上啟動傳送。 電子郵件內容將會根據輸出格式（HTML或文字）自動填入。
 
 ![](assets/d_ncs_content_model3.png)
 
@@ -109,13 +109,13 @@ ht-degree: 1%
 
 **`<xsl:comment> #nl:output_replace(<name_of_file>) </xsl:comment>`**，其中&#x200B;**`<name_of_file>`**&#x200B;是要產生之頁面的檔案名稱。
 
-**範例：**&#x200B;使用&quot;cus：book&quot;結構描述產生多個檔案。
+**範例：**&#x200B;使用&quot;cus:book&quot;結構描述產生多個檔案。
 
 其原理是產生一個列出章節的首頁面，並可能在外部頁面中顯示章節的詳細資訊。
 
 ![](assets/d_ncs_content_chunk.png)
 
-對應的樣式表(「cus：book.xsl」)如下：
+對應的樣式表(&quot;cus:book.xsl&quot;)如下：
 
 ```xml
 <?xml version="1.0" encoding="ISO-8859-1" ?>
@@ -138,7 +138,7 @@ ht-degree: 1%
 </xsl:stylesheet>
 ```
 
-需要第二個樣式表(「cus：chapter.xsl」)來產生章節的詳細資訊：
+需要第二個樣式表(&quot;cus:chapter.xsl&quot;)來產生章節的詳細資訊：
 
 ```xml
 <?xml version="1.0" encoding="ISO-8859-1" ?>
@@ -173,7 +173,7 @@ ht-degree: 1%
 
 檔案名稱是以&#x200B;**$（路徑）**&#x200B;變數建構的，該變數包含發佈路徑和&#x200B;**`<xsl:value-of select="@id" />`**，且符合輸入檔案中章節的識別碼。
 
-出版物模型必須填入兩個樣式表「cus：book.xsl」和「cus：chapter.xsl」。
+發行集模型必須填入兩個樣式表「cus:book.xsl」和「cus:chapter.xsl」。
 
 **[!UICONTROL Multi-file generation]**&#x200B;選項在章節轉換模型上必須是作用中：
 

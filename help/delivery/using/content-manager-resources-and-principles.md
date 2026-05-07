@@ -20,7 +20,7 @@ ht-degree: 4%
 
 內容區塊會在XML檔案中結構化，以儲存資料。 編輯介面可用於從Adobe Campaign使用者端主控台或透過網頁瀏覽器輸入內容。 您也可以透過擷取XML流程或資料庫中彙總的資料來自動輸入內容。
 
-結合XML檔案和XSL或JavaScript範本樣式表會自動產生各種格式(HTML、文字)的出版物範本投影。
+結合XML檔案和XSL或JavaScript範本樣式表會自動產生各種格式（HTML、文字）的出版物範本投影。
 
 ![](assets/d_ncs_content_process.png)
 

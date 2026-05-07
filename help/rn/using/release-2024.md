@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 8e20391d-3628-4d0c-b413-c34e046ae810
 source-git-commit: bf45c8bcdd41e614f9be09bc0fd6385707159841
-workflow-type: ht
-source-wordcount: '387'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '410'
+ht-degree: 94%
 
 ---
 
@@ -42,18 +42,18 @@ _2024 年 6 月 18 日_
 
 * Adobe Campaign 現在相容於 **Microsoft SQL Server 2022** 和 **Oracle 23c** 關聯資料庫管理系統，以及與同盟資料存取 (FDA) 相容。
 
-* Adobe Campaign 現在至少需要 Java 開發套件 (JDK) 11。在 Windows 上，必須如[本節](../../installation/using/application-server.md#jdk)所述提供 JRE。
+* Adobe Campaign 現在至少需要 Java 開發套件 (JDK) 11。 在 Windows 上，必須如[本節](../../installation/using/application-server.md#jdk)所述提供 JRE。
 
-* 適用於行動應用程式的 Campaign (Neolane) SDK 現已棄用。您現在必須轉變為 Adobe Experience Platform SDK。 [了解更多](deprecated-features.md)。
+* 適用於行動應用程式的 Campaign (Neolane) SDK 現已棄用。 您現在必須轉變為 Adobe Experience Platform SDK。 [了解更多資訊](deprecated-features.md)。
 
   同時，為確保服務持續性，Campaign v7.4 隨附：
 
-   * 適用於 iOS 的新 Campaign SDK 1.0.27，與 iOS 16 和 17 相容，並提供最新 [Apple iOS 隱私權請求需求](https://developer.apple.com/news/?id=r1henawx){target="_blank"}。
+   * 適用於iOS的全新Campaign SDK 1.0.27，與iOS 16和17相容，以及最新的[Apple iOS隱私權要求要求](https://developer.apple.com/news/?id=r1henawx){target="_blank"}。
    * 適用於 Android 14 的新 Campaign SDK。
 
 ### 其他變更 {#release-7-4-1-other}
 
-從 v7.4.1 版開始，Campaign 不再包含 RPM Linux 套件的 XML 資料庫。身為內部部署或混合客戶，您的管理員必須安裝這些資料庫。[了解更多](../../installation/using/installing-packages-with-linux.md)
+從 v7.4.1 版開始，Campaign 不再包含 RPM Linux 套件的 XML 資料庫。 身為內部部署或混合客戶，您的管理員必須安裝這些資料庫。 [了解更多](../../installation/using/installing-packages-with-linux.md)
 
 ### 修補程式 {#release-7-4-1-patches}
 

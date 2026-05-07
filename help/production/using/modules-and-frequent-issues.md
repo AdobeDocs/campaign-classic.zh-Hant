@@ -10,8 +10,8 @@ topic-tags: troubleshooting
 exl-id: dbd50178-0a16-46ed-bfad-47beb3c2a420
 source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
 workflow-type: tm+mt
-source-wordcount: '267'
-ht-degree: 7%
+source-wordcount: '288'
+ht-degree: 12%
 
 ---
 
@@ -77,7 +77,7 @@ ht-degree: 7%
   </tr> 
   <tr> 
    <td> 網頁 </td> 
-   <td> 應用程式伺服器(HTTP和SOAP)<br /> </td> 
+   <td> 應用程式伺服器（HTTP和SOAP）<br /> </td> 
    <td> 如果主控台和Web連線無法運作並觸發<strong>xtk：session</strong>型別錯誤，則檢查此模組<br /> </td> 
   </tr> 
   <tr> 

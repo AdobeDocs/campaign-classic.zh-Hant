@@ -6,8 +6,8 @@ feature: Installation, Architecture
 exl-id: a2c425a8-9bde-4259-9140-5ada5397ed5f
 source-git-commit: 8b38d825aa9b0595226a444e0e463362468d51b3
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 26%
+source-wordcount: '323'
+ht-degree: 27%
 
 ---
 
@@ -15,11 +15,11 @@ ht-degree: 26%
 
 
 
-Adobe Campaign Classic 隨附了一套模組和選項。這些模組的可用性及其使用方式會視您安裝的部署型別而定。 本文將分享完全託管(Managed Services)和內部部署之間特定功能主要差異的詳細資訊。
+Adobe Campaign Classic 隨附了一套模組和選項。 這些模組的可用性及其使用方式會視您安裝的部署型別而定。 本文將分享完全託管(Managed Services)和內部部署之間特定功能主要差異的詳細資訊。
 
 此頁面顯示託管(Managed Services)和內部部署之間的主要差異。 混合部署特性取決於Adobe所託管且在您的內部部署中託管的元素。
 
-在本節[中引進了不同的託管模型](../../installation/using/hosting-models.md)。
+在本節](../../installation/using/hosting-models.md)中引進了不同的託管模型[。
 
 ## 每個部署模式的可用性 {#capability-matrix}
 
@@ -50,7 +50,7 @@ Adobe Campaign提供&#x200B;**同盟資料存取** (FDA)選項，以處理儲存
 
 **另請參閱**
 
-* [相容性比較表](../../rn/using/compatibility-matrix.md)
+* [相容性對照表](../../rn/using/compatibility-matrix.md)
 * [發行說明](../../rn/using/latest-release.md)
 * [Campaign Classic升級](../../rn/using/rn-overview.md)
 * [已棄用及已移除的功能](../../rn/using/deprecated-features.md)

@@ -8,8 +8,8 @@ hide: true
 exl-id: 04daa67c-4057-42a7-b993-a6eddf2b883d
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1492'
-ht-degree: 1%
+source-wordcount: '1508'
+ht-degree: 2%
 
 ---
 
@@ -92,7 +92,7 @@ ht-degree: 1%
 
 可以按照排程（排程器）或事件（外部訊號、檔案匯入等）將目標設定為自動執行。
 
-與執行目標工作流程相關的動作（啟動、停止、暫停等）為&#x200B;**非同步**&#x200B;程式：命令已儲存，一旦伺服器可供套用命令就會生效。
+與執行目標定位工作流程相關的動作（啟動、停止、暫停等） 是&#x200B;**非同步**&#x200B;處理序：命令已儲存，一旦伺服器可供套用就會生效。
 
 工具列圖示可讓您執行定位工作流程的相關動作。
 
@@ -204,7 +204,7 @@ ht-degree: 1%
 >
 >如果您已定義行銷活動的控制組，且還將其設定為連結至此行銷活動的傳送，則只會套用為傳送定義的控制組。
 
-1. 編輯相關的傳遞，然後按一下&#x200B;**[!UICONTROL To]**&#x200B;區段中的&#x200B;**[!UICONTROL Email parameters]**&#x200B;連結。
+1. 編輯相關的傳遞，然後按一下&#x200B;**[!UICONTROL Email parameters]**&#x200B;區段中的&#x200B;**[!UICONTROL To]**&#x200B;連結。
 
    ![](assets/s_ncs_user_edit_op_target_del.png)
 

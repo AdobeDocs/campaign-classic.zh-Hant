@@ -9,7 +9,7 @@ topic-tags: managing-environments
 exl-id: bdda98f7-a083-4f3b-b691-c28ec79af780
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '986'
+source-wordcount: '987'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ HTML或XML演算會透過演算函式建立。 轉譯函式中定義的欄位順
 
 1. 按一下&#x200B;**[!UICONTROL Edit functions]**&#x200B;以建立演算函式。
 
-   這些函式用於在優惠方案空間上產生優惠方案宣告。 有幾種可能的格式：傳出互動的HTML或文字，以及傳入互動的XML。
+   這些函式用於在優惠方案空間上產生優惠方案宣告。 有幾種可能的格式：輸出互動的HTML或文字，以及輸入互動的XML。
 
    ![](assets/offer_space_create_006.png)
 
@@ -84,12 +84,12 @@ HTML或XML演算會透過演算函式建立。 轉譯函式中定義的欄位順
 
 互動會提供下列值，這些值可用來限定優惠方案主張的狀態：
 
-* **[!UICONTROL Accepted]**。
-* **[!UICONTROL Scheduled]**。
-* **[!UICONTROL Generated]**。
-* **[!UICONTROL Interested]**。
-* **[!UICONTROL Presented]**。
-* **[!UICONTROL Rejected]**。
+* **[!UICONTROL Accepted]**.
+* **[!UICONTROL Scheduled]**.
+* **[!UICONTROL Generated]**.
+* **[!UICONTROL Interested]**.
+* **[!UICONTROL Presented]**.
+* **[!UICONTROL Rejected]**.
 
 預設不會套用這些值：必須加以設定。
 
@@ -129,7 +129,7 @@ HTML或XML演算會透過演算函式建立。 轉譯函式中定義的欄位順
 <BASE_URL>?a=UpdateStatus&p=<PRIMARY_KEY_OF_THE_PROPOSITION>&st=<NEW_STATUS_OF_THE_PROPOSITION>&r=<REDIRECT_URL>
 ```
 
-例如，符合&#x200B;**Neobank**&#x200B;網站上顯示之&#x200B;**家庭保險**&#x200B;優惠方案的主張(識別碼&#x200B;**40004**)包含下列URL：
+例如，符合&#x200B;**Neobank**&#x200B;網站上顯示之&#x200B;**家庭保險**&#x200B;優惠方案的主張（識別碼&#x200B;**40004**）包含下列URL：
 
 ```
 <BASE_URL>?a=UpdateStatus&p=<40004>&st=<3>&r=<"http://www.neobank.com/insurance/subscribe.html">

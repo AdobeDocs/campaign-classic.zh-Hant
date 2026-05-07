@@ -7,7 +7,7 @@ badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v
 exl-id: b30cdeaf-4ad6-473d-bdbc-91984755b609
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '554'
 ht-degree: 3%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 3%
 
 當報表包含數個頁面時，您需要為每個頁面重複此作業。
 
-您可以設定報表以檢視匯出PDF、Excel或OpenOffice格式的報表。 開啟Adobe Campaign檔案總管並選取相關報表。
+您可以設定報表以檢視匯出為PDF、Excel或OpenOffice格式的報表。 開啟Adobe Campaign檔案總管並選取相關報表。
 
 匯出選項是透過報告的&#x200B;**[!UICONTROL Page]**&#x200B;活動（在&#x200B;**[!UICONTROL Advanced]**&#x200B;索引標籤中）存取。
 
@@ -54,7 +54,7 @@ ht-degree: 3%
 
 * 報表不必使用在儲存格層級定義的特定格式。 最好使用&#x200B;**[!UICONTROL Form rendering]**&#x200B;來定義表格中儲存格的格式。 **[!UICONTROL Form rendering]**&#x200B;可以透過&#x200B;**[!UICONTROL Administration > Configuration > Form rendering]**&#x200B;存取。
 * 我們不建議插入HTML內容。
-* 如果報告包含數個表格、圖表等， 文字元素，它們會一個匯出到另一個之下。
+* 如果報表包含數個表格、圖表等型別元素，則會將它們一個匯出到另一個之下。
 * 您可以在儲存格中強制歸位：此設定將保留在Excel中。 如需詳細資訊，請參閱[本章節](../../reporting/using/creating-a-table.md#defining-cell-format)。
 
 ### 延遲匯出 {#postpone-the-export}
@@ -65,7 +65,7 @@ ht-degree: 3%
 document.nl_waitBeforeRender = true;
 ```
 
-若要啟動匯出並開始轉換為PDF，請使用不含任何引數的&#x200B;**document.nl_renderToPdf()**&#x200B;函式。
+若要啟動匯出並開始轉換成PDF，請使用不含任何引數的&#x200B;**document.nl_renderToPdf()**&#x200B;函式。
 
 ### 記憶體配置 {#memory-allocation}
 

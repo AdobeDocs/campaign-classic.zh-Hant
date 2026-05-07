@@ -8,7 +8,7 @@ role: User
 exl-id: 6adf2e75-63b1-44ad-8925-03beb3bc0bdd
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '236'
+source-wordcount: '260'
 ht-degree: 3%
 
 ---
@@ -17,9 +17,9 @@ ht-degree: 3%
 
 本節詳細說明如何建立工作流程以執行A/B測試。
 
-1. 建立新的工作流程，然後設定查詢活動以定位所需的母體。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=zh-Hant){target="_blank"}。
+1. 建立新的工作流程，然後設定查詢活動以定位所需的母體。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}。
 
-1. 新增分割活動，將目標母體分割成多個子集。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/split.html?lang=zh-Hant){target="_blank"}。
+1. 新增分割活動，將目標母體分割成多個子集。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/split.html){target="_blank"}。
 
 1. 開啟活動，然後視需要設定每個子集。 如需如何設定&#x200B;**[!UICONTROL Split]**&#x200B;活動的詳細資訊，請參閱[本節](../../workflow/using/split.md)。
 
@@ -27,7 +27,7 @@ ht-degree: 3%
 
    ![](assets/ab-testing-split.png)
 
-1. 新增轉變，以向其餘母體傳送具有目前主旨的Newsletter。 若要這麼做，請從「**[!UICONTROL Generate complement]**」標籤啟動「**[!UICONTROL General]**」選項。
+1. 新增轉變，以向其餘母體傳送具有目前主旨的Newsletter。 若要這麼做，請從「**[!UICONTROL General]**」標籤啟動「**[!UICONTROL Generate complement]**」選項。
 
    ![](assets/ab-testing-complement.png)
 

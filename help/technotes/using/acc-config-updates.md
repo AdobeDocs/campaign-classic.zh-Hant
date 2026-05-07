@@ -7,8 +7,8 @@ hide: true
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1103'
-ht-degree: 8%
+source-wordcount: '1178'
+ht-degree: 12%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 8%
 * Campaign 19.2.4版。
 * Campaign 19.1.8版。
 
-在本節[中瞭解如何確認您的](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)版本。
+在本節](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中瞭解如何確認您的[版本。
 
 **如何更新？**
 
@@ -72,13 +72,13 @@ ht-degree: 8%
 
 ## Adobe Identity Management系統(IMS)更新
 
-Adobe Identity服務(IMS)將從2021年6月30日&#x200B;**起停止支援舊版Internet Explorer**。 [了解更多資訊](https://helpx.adobe.com/tw/x-productkb/global/update-operating-system-and-browser.html)。
+Adobe Identity服務(IMS)將從2021年6月30日&#x200B;**起停止支援舊版Internet Explorer**。 [了解更多資訊](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html)。
 
 需要升級Campaign使用者端主控台，以確保與Adobe IMS相容。
 
 **您有受到影響嗎？**
 
-如果您要透過Adobe ID[並透過Adobe Identity Management Service (IMS)連線至Campaign &#x200B;](../../integrations/using/about-adobe-id.md)，則必須升級至下列新版本之一：
+如果您要透過Adobe ID](../../integrations/using/about-adobe-id.md)並透過Adobe Identity Management Service (IMS)連線至Campaign [，則必須升級至下列新版本之一：
 
 * Gold Standard 11. [了解更多](../../rn/using/gold-standard.md)
 * Campaign 21.1.1版。 [了解更多](../../rn/using/latest-release.md)
@@ -89,7 +89,7 @@ Adobe Identity服務(IMS)將從2021年6月30日&#x200B;**起停止支援舊版In
 
 這些發行版本隨附新的連線通訊協定：Campaign伺服器和使用者端主控台都必須升級，才能在&#x200B;**2021年6月30日**&#x200B;後連線至Campaign。
 
-在本節[中瞭解如何確認您的](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)版本。
+在本節](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中瞭解如何確認您的[版本。
 
 **如何更新？**
 
@@ -105,7 +105,7 @@ Adobe Identity服務(IMS)將從2021年6月30日&#x200B;**起停止支援舊版In
 
 ## 與Experience Cloud Triggers整合 {#acc-triggers-updates}
 
-舊版oAuth驗證服務已到期。 觸發整合驗證（最初根據oAUTH驗證設定來存取管道）已移至Adobe I/O。促銷活動[的舊版oAuth驗證模式已於](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411?profile.language=zh-Hant)2021年9月日&#x200B;**淘汰**。 託管環境繼續使用延伸功能，直到 **2022 年 2 月 23 日**。若為內部部署或混合客戶，請聯絡Adobe客戶服務，將支援延長至2022年2月。 您必須向 Adobe 提供 [OAuth 應用程式的 AppID](../../integrations/using/configuring-pipeline.md#step-optional)。
+舊版oAuth驗證服務已到期。 觸發整合驗證（最初根據oAUTH驗證設定來存取管道）已移至Adobe I/O。促銷活動[的舊版oAuth驗證模式已於&#x200B;**2021年9月日**&#x200B;淘汰](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)。 託管環境繼續使用延伸功能，直到 **2022 年 2 月 23 日**。 若為內部部署或混合客戶，請聯絡Adobe客戶服務，將支援延長至2022年2月。 您必須向 Adobe 提供 [OAuth 應用程式的 AppID](../../integrations/using/configuring-pipeline.md#step-optional)。
 
 **您有受到影響嗎？**
 
@@ -118,7 +118,7 @@ Adobe Identity服務(IMS)將從2021年6月30日&#x200B;**起停止支援舊版In
 * Campaign 20.2.5版。
 * Campaign 19.1.8版。
 
-在本節[中瞭解如何確認您的](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)版本。
+在本節](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中瞭解如何確認您的[版本。
 
 **如何更新？**
 
@@ -138,7 +138,7 @@ Adobe Identity服務(IMS)將從2021年6月30日&#x200B;**起停止支援舊版In
 
 如果您的執行個體是在比Campaign 21.1，**舊的**&#x200B;版本上執行，而您傳送推播通知使用的是舊版Apple二進位通訊協定，則需要更新為以HTTP/2為基礎的APN提供者API。
 
-在本節[中瞭解如何確認您的](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)版本。
+在本節](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中瞭解如何確認您的[版本。
 
 **如何更新？**
 
@@ -150,7 +150,7 @@ Adobe Identity服務(IMS)將從2021年6月30日&#x200B;**起停止支援舊版In
 
 2021年3月29日，Apple推播通知服務(APN)基礎架構更新影響Adobe Campaign Classic iOS頻道。 作業系統設定變更為&#x200B;**必要**，以避免iOS推播頻道中斷。
 
-在此頁面[中進一步瞭解APN變更](https://developer.apple.com/news/?id=7gx0a2lp)。
+在此頁面](https://developer.apple.com/news/?id=7gx0a2lp)中進一步瞭解APN變更[。
 
 **您有受到影響嗎？**
 
@@ -168,5 +168,5 @@ Adobe Identity服務(IMS)將從2021年6月30日&#x200B;**起停止支援舊版In
 
 * [升級您的環境](../../production/using/build-upgrade.md)
 * [版本編號升級常見問答集](../../platform/using/faq-build-upgrade.md)
-* [下載Campaign Classic組建](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
+* [下載Campaign Classic版本編號](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
 * [讓使用者可以使用新的使用者端主控台](../../installation/using/client-console-availability-for-windows.md)

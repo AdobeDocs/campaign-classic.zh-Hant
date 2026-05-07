@@ -7,7 +7,7 @@ badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v
 exl-id: 1e5ab922-481c-4dce-a05e-a58408002e24
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: '770'
 ht-degree: 2%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 2%
 
 ### 選取類型 {#selection-type}
 
-報表的存取權可限制在特定內容或優惠方案空間，例如，傳送、收件者、選定的收件者等。 已在&#x200B;**[!UICONTROL Display]**&#x200B;索引標籤的&#x200B;**[!UICONTROL Selection type]**&#x200B;區段中設定此存取權。
+報表的存取權可限制在特定內容或優惠方案空間，例如，傳送、收件者、選定的收件者等。已在&#x200B;**[!UICONTROL Display]**&#x200B;索引標籤的&#x200B;**[!UICONTROL Selection type]**&#x200B;區段中設定此存取權。
 
 ![](assets/s_ncs_advuser_report_visibility_4.png)
 
@@ -78,7 +78,7 @@ ht-degree: 2%
 
 ## 建立報表連結 {#creating-a-link-to-a-report-}
 
-您可以透過樹狀結構的特定節點（例如清單、收件者、傳遞等）存取報告。 要執行此操作，只需建立相關報告的連結，並指定您想提供該連結的實體。
+您可以透過樹狀結構的特定節點（例如清單、收件者、傳遞等）存取報告。要執行此操作，只需建立相關報告的連結，並指定您想提供該連結的實體。
 
 例如，我們將建立報表連結，使其可透過收件者清單存取。
 
@@ -101,7 +101,7 @@ ht-degree: 2%
 
    ![](assets/s_ncs_advuser_report_wizard_link_04.png)
 
-1. Publish您的報表。
+1. 發佈您的報告。
 1. 前往您的其中一個收件者清單，然後按一下&#x200B;**[!UICONTROL Reports]**&#x200B;連結：您剛建立的報告可供存取。
 
    ![](assets/s_ncs_advuser_report_wizard_link_05.png)
@@ -122,7 +122,7 @@ ht-degree: 2%
 
 若要深入瞭解這些設定，請參閱[網頁表單](../../web/using/about-web-forms.md)章節的&#x200B;**定義網頁表單屬性**&#x200B;區段。
 
-## Publish報表 {#publishing-the-report}
+## 發佈報表 {#publishing-the-report}
 
 必須發佈報表，才能與其他運運算元共用報表並在可用報表清單中顯示它們（也請參閱[報表顯示內容](#report-display-context)）。 每次變更報告時，都必須再次執行此作業。
 

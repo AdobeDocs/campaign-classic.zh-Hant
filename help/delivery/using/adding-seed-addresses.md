@@ -41,7 +41,7 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->當使用的收件者資料表不是預設的&#x200B;**nms：recipient**&#x200B;資料表，而且您正在使用Adobe Campaign **[!UICONTROL Deliverability]**&#x200B;模組隨附的收件匣轉譯功能時，就會使用此選項。
+>當使用的收件者資料表不是預設的&#x200B;**nms:recipient**&#x200B;資料表，而且您正在使用Adobe Campaign **[!UICONTROL Deliverability]**&#x200B;模組隨附的收件匣轉譯功能時，就會使用此選項。
 >
 >如需詳細資訊，請參閱[使用外部收件者資料表](using-an-external-recipient-table.md)以及有關[收件匣轉譯](inbox-rendering.md)的檔案。
 

@@ -10,8 +10,8 @@ topic-tags: production-procedures
 exl-id: 12a255fe-66f9-40ce-b19e-c24322c2e009
 source-git-commit: b7dedddc080d1ea8db700fabc9ee03238b3706cc
 workflow-type: tm+mt
-source-wordcount: '425'
-ht-degree: 1%
+source-wordcount: '449'
+ht-degree: 5%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 1%
 >
 >從20.1開始，建議您改用下列命令（適用於Linux）： **systemctl start nlserver** / **systemctl stop nlserver**
 
-以下是可在Linux中存取的常見管理命令清單(如&#x200B;**Adobe Campaign**)：
+以下是可在Linux中存取的常見管理命令清單（如&#x200B;**Adobe Campaign**）：
 
 * 顯示所有已啟動的Adobe Campaign模組： **/etc/init.d/nlserver6 pdump**&#x200B;或&#x200B;**/etc/init.d/nlserver6狀態**
 
@@ -60,7 +60,7 @@ ht-degree: 1%
 
   您也可以使用&#x200B;**nlserver restart`<module>[@<instance>]`**&#x200B;命令來重新啟動模組。
 
-  例如：
+  範例：
 
   **nlserver啟動web**
 
@@ -81,7 +81,7 @@ ht-degree: 1%
   >* 使用&#x200B;**-noconsole**&#x200B;選項，確保啟動的模組不會在主控台上顯示任何內容。 其記錄檔將透過&#x200B;**syslogd**&#x200B;模組寫入磁碟。
   >* 使用&#x200B;**-verbose**&#x200B;選項可顯示程式動作的額外資訊。
   >
-  >   例如：
+  >   範例：
   >
   >   **nlserver重新啟動web -verbose**
   >

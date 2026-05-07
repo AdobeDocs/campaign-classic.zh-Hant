@@ -7,7 +7,7 @@ feature: Web Apps
 exl-id: 4bff6b55-3335-433e-a2ff-5d8c83e8f0d3
 source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
 workflow-type: tm+mt
-source-wordcount: '676'
+source-wordcount: '719'
 ht-degree: 2%
 
 ---
@@ -22,13 +22,13 @@ Adobe Campaign可讓您停止追蹤選擇退出透過Cookie或網路信標進行
 
 >[!NOTE]
 >
->當指令碼一律遵循[安全性與隱私權檢查清單](https://helpx.adobe.com/tw/campaign/kb/acc-security.html#dev)中說明的准則時。
+>當指令碼一律遵循[安全性與隱私權檢查清單](https://helpx.adobe.com/campaign/kb/acc-security.html#dev)中說明的准則時。
 
 ## 設定橫幅 {#configuring-the-banner-}
 
 橫幅必須設定才能顯示在網頁應用程式或登入頁面中。
 
-Adobe Campaign隨附範例橫幅，您必須根據自己的需求進行調整。 此橫幅版本會在內容模型資料夾中顯示為個人化區塊。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=zh-Hant){target="_blank"}。
+Adobe Campaign隨附範例橫幅，您必須根據自己的需求進行調整。 此橫幅版本會在內容模型資料夾中顯示為個人化區塊。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}。
 
 >[!IMPORTANT]
 >
@@ -96,7 +96,7 @@ Cookie名稱為&#x200B;**apottout**。 常見的值包括：
 
   它會傳回需要在頁面中列印的選擇退出橫幅標籤的HTML。
 
-* **NL.ServerWebTracking。_displayOptOutBanner()**
+* **NL.ServerWebTracking._displayOptOutBanner()**
 
   如果選擇退出橫幅在管理員選取選擇退出橫幅後應該顯示，則傳回「true」
 

@@ -9,7 +9,7 @@ topic-tags: deployment-types-
 exl-id: 194366ab-fd9f-4431-9163-ae16c1f96db2
 source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
 workflow-type: tm+mt
-source-wordcount: '1077'
+source-wordcount: '1094'
 ht-degree: 3%
 
 ---
@@ -71,13 +71,13 @@ ht-degree: 3%
    * 首次公開給大眾使用公開IP追蹤及指向電腦；
    * 向內部使用者公開的第二個別名，用於主控台存取並指向相同的電腦。
 
-* 防火牆已設定為開啟SMTP (25)、DNS (53)、HTTP (80)、HTTPS (443)、SQL (1521用於Oracle、5432用於PostgreSQL等) 連線埠。 如需進一步資訊，請參閱[網路組態](../../installation/using/network-configuration.md)。
+* 防火牆已設定為開啟SMTP (25)、DNS (53)、HTTP (80)、HTTPS (443)、SQL （1521 for Oracle、5432 for PostgreSQL等） 連線埠。 如需進一步資訊，請參閱[網路組態](../../installation/using/network-configuration.md)。
 
 在下列範例中，例項的引數為：
 
 * 執行個體的名稱： **示範**
 * DNS遮罩： **console.campaign.net&#42;** （僅適用於使用者端主控台連線和報表）
-* 資料庫： **行銷活動：demo@dbsrv**
+* 資料庫： **行銷活動:demo@dbsrv**
 
 ### 安裝和設定（單一電腦） {#installing-and-configuring--single-machine-}
 
@@ -165,7 +165,7 @@ ht-degree: 3%
 
    如需詳細資訊，請參閱[Campaign伺服器組態](../../installation/using/configuring-campaign-server.md)。
 
-1. 將使用者端主控台安裝程式&#x200B;**setup-client-7.XXX.exe**&#x200B;複製到&#x200B;**/datakit/nl/eng/jsp**&#x200B;資料夾。 [了解更多](../../installation/using/client-console-availability-for-windows.md)。
+1. 將使用者端主控台安裝程式&#x200B;**setup-client-7.XXX.exe**&#x200B;複製到&#x200B;**/datakit/nl/eng/jsp**&#x200B;資料夾。 [了解更多資訊](../../installation/using/client-console-availability-for-windows.md)。
 
 1. 請依照下列各節中說明的Web伺服器整合程式(IIS、Apache)操作：
 
@@ -208,7 +208,7 @@ ht-degree: 3%
 
    此URL可讓您存取使用者端安裝程式的下載頁面。
 
-   進入存取控制頁面時，請輸入&#x200B;**內部**&#x200B;登入及相關密碼。 [了解更多](../../installation/using/client-console-availability-for-windows.md)。
+   進入存取控制頁面時，請輸入&#x200B;**內部**&#x200B;登入及相關密碼。 [了解更多資訊](../../installation/using/client-console-availability-for-windows.md)。
 
    ![](assets/s_ncs_install_access_client.png)
 
@@ -239,7 +239,7 @@ ht-degree: 3%
 
      ![](assets/s_ncs_install_deployment_wiz_09.png)
 
-     由於Adobe Campaign伺服器同時作為應用程式伺服器和重新導向伺服器使用，因此用於收集追蹤記錄和傳輸URL的內部URL是與Tomcat的直接內部連線(https://localhost:8080)。
+     由於Adobe Campaign伺服器同時作為應用程式伺服器和重新導向伺服器使用，因此用於收集追蹤記錄檔和傳輸URL的內部URL是與Tomcat (https://localhost:8080)的直接內部連線。
 
    * 退回管理：輸入引數以處理退回郵件（不考慮&#x200B;**未處理的退回郵件**&#x200B;區段）。
    * 存取來源：提供報表、網路表單及映象頁面的兩個URL。

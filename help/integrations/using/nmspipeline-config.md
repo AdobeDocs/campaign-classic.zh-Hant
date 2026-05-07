@@ -8,7 +8,7 @@ audience: integrations
 content-type: reference
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '381'
 ht-degree: 0%
 
 ---
@@ -78,7 +78,7 @@ ht-degree: 0%
 
 ## 如何設定管道選項 {#configure-pipeline-option}
 
-在「觸發程式」陣列下新增或編輯Experience Cloud觸發程式；請勿編輯其餘的觸發程式。
+在「觸發器」陣列下新增或編輯Experience Cloud觸發器，請勿編輯其餘觸發器。
 在此[網站](https://jsonlint.com/)的協助下，確定JSON有效。
 
 * &quot;name&quot;是觸發程式ID。 萬用字元「*」會攔截所有觸發器。

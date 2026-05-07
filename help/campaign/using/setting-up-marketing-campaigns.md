@@ -8,8 +8,8 @@ hide: true
 exl-id: a8fce21f-ffe3-4819-87ca-ac0ad9f21e41
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1248'
-ht-degree: 5%
+source-wordcount: '1259'
+ht-degree: 6%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 5%
 
 行銷活動包括動作 (傳送) 和流程 (匯入或擷取檔案)，以及資源 (行銷文件、傳遞大綱)。 它們會用於行銷活動。 行銷活動是方案的一部分，而方案則包含在行銷活動計畫中。
 
-![](assets/do-not-localize/how-to-video.png)在影片中探索如何建立行銷計畫、方案和行銷活動[&#128279;](#video)
+![](assets/do-not-localize/how-to-video.png)在影片中探索如何建立行銷計畫、方案和行銷活動[](#video)
 
 若要建立行銷活動：
 
@@ -67,7 +67,7 @@ ht-degree: 5%
 
 ![](assets/s_ncs_user_new_op_wz_a.png)
 
-行銷活動也可以透過方案建立。 若要這麼做，請按一下相關程式&#x200B;**[!UICONTROL Add]**&#x200B;索引標籤中的&#x200B;**[!UICONTROL Schedule]**&#x200B;按鈕。
+行銷活動也可以透過方案建立。 若要這麼做，請按一下相關程式&#x200B;**[!UICONTROL Schedule]**&#x200B;索引標籤中的&#x200B;**[!UICONTROL Add]**&#x200B;按鈕。
 
 ![](assets/s_ncs_user_add_an_op.png)
 
@@ -136,7 +136,7 @@ ht-degree: 5%
 
    >[!NOTE]
    >
-   >此工作流程必須儲存為週期性工作流程範本。 若要這麼做，請編輯工作流程屬性，並在&#x200B;**[!UICONTROL Recurring workflow template]**&#x200B;索引標籤中選取&#x200B;**[!UICONTROL Execution]**&#x200B;選項。
+   >此工作流程必須儲存為週期性工作流程範本。 若要這麼做，請編輯工作流程屬性，並在&#x200B;**[!UICONTROL Execution]**&#x200B;索引標籤中選取&#x200B;**[!UICONTROL Recurring workflow template]**&#x200B;選項。
 
    ![](assets/s_ncs_user_op_template_recur_wf_option.png)
 
@@ -166,7 +166,7 @@ ht-degree: 5%
 
    循環工作流程例項的標籤由其範本標籤和工作流程編號組成，其中的#字元介於。
 
-   從排程建立的工作流程會自動與&#x200B;**[!UICONTROL Workflow]**&#x200B;索引標籤的&#x200B;**[!UICONTROL Schedule]**&#x200B;欄相關聯。
+   從排程建立的工作流程會自動與&#x200B;**[!UICONTROL Schedule]**&#x200B;索引標籤的&#x200B;**[!UICONTROL Workflow]**&#x200B;欄相關聯。
 
    ![](assets/s_ncs_user_op_recur_planning_wfs_1.png)
 

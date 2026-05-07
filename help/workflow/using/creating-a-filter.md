@@ -7,7 +7,7 @@ hide: true
 exl-id: 297ea1e1-39ef-4b99-aaaa-9e88611fb1bf
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '211'
 ht-degree: 2%
 
 ---
@@ -28,7 +28,7 @@ Adobe Campaign中可用的篩選器是透過篩選條件來定義，這些條件
 
 ![](assets/query_editor_filter_sample_1.png)
 
-符合的篩選器包含對&#x200B;**[!UICONTROL Account disabled]**&#x200B;結構描述的&#x200B;**[!UICONTROL Operators]**&#x200B;值的查詢：
+符合的篩選器包含對&#x200B;**[!UICONTROL Operators]**&#x200B;結構描述的&#x200B;**[!UICONTROL Account disabled]**&#x200B;值的查詢：
 
 ![](assets/query_editor_filter_sample_2.png)
 
@@ -56,4 +56,4 @@ Adobe Campaign中可用的篩選器是透過篩選條件來定義，這些條件
 
 在這裡，**$(/tmp/@text)=&#39;機構&#39;**
 
-**$(/tmp/@text)！=&quot;**&#x200B;運算式會在輸入欄位非空白時套用每個條件。
+當輸入欄位不是空白時，**$(/tmp/@text)!=「**」運算式會套用每個條件。

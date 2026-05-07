@@ -10,7 +10,7 @@ topic-tags: asset-sharing
 exl-id: f3897a40-b080-47e5-9e31-4d861c1bacd5
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '522'
 ht-degree: 2%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 2%
 * Adobe Experience Cloud組織
 * Adobe IMS驗證模式已啟用
 
-若要啟用Adobe Campaign與Adobe Experience Cloud之間的連線，請透過IMS (Adobe ID連線服務)設定連線。 此設定在[透過Adobe ID連線](../../integrations/using/about-adobe-id.md)檔案中有詳細說明。 其中涉及：
+若要啟用Adobe Campaign與Adobe Experience Cloud之間的連線，請透過IMS （Adobe ID連線服務）設定連線。 此設定在[透過Adobe ID連線](../../integrations/using/about-adobe-id.md)檔案中有詳細說明。 其中涉及：
 
 * 正在安裝&#x200B;**[!UICONTROL Integration with the Adobe Experience Cloud]**&#x200B;封裝。
 * 設定Adobe Experience Cloud外部帳戶。
@@ -51,7 +51,7 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->此功能已從Adobe Experience Manager 6.4開始停用。[深入瞭解](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html?lang=zh-Hant#removed-features)
+>自Adobe Experience Manager 6.4起，此功能已停止服務。 [了解更多](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html#removed-features)
 
 若要將AEM Assets與Adobe Campaign整合，您必須先設定Adobe Experience Manager與Adobe Campaign之間的整合。 此設定主要需要：
 
@@ -62,7 +62,7 @@ ht-degree: 2%
 
 設定這項整合後，您可以在Adobe Campaign中設定新的傳遞範本，以使用AEM Assets資料庫。 要執行此操作，請遵循下列步驟：
 
-1. 建立新的傳遞範本，或複製現有範本。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=zh-Hant){target="_blank"}。
+1. 建立新的傳遞範本，或複製現有範本。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}。
 1. 編輯此範本的&#x200B;**屬性**。
 1. 在&#x200B;**[!UICONTROL Advanced]**&#x200B;索引標籤中，將&#x200B;**[!UICONTROL Content editing mode]**&#x200B;設定為&#x200B;**DCE**。
 1. 選取存取AEM Assets資料庫所需的外部&#x200B;**[!UICONTROL AEM account]**。

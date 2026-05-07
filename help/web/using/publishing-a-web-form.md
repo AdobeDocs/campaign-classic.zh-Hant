@@ -7,7 +7,7 @@ feature: Web Forms
 exl-id: 1c66b8e8-7590-4767-9b2f-a9a509df4508
 source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
-source-wordcount: '1284'
+source-wordcount: '1289'
 ht-degree: 1%
 
 ---
@@ -136,7 +136,7 @@ ht-degree: 1%
 
 * 按一下&#x200B;**[!UICONTROL Personalize the message displayed if the form is closed...]**&#x200B;連結以定義若使用者在表單無效時嘗試存取表單，則要顯示的錯誤訊息。
 
-  請參閱表單[的](defining-web-forms-properties.md#accessibility-of-the-form)協助工具。
+  請參閱表單](defining-web-forms-properties.md#accessibility-of-the-form)的[協助工具。
 
 ### 透過電子郵件傳遞表單 {#delivering-a-form-via-email}
 

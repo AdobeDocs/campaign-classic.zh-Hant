@@ -7,7 +7,7 @@ hide: true
 exl-id: 87d1909c-d2eb-47ce-a860-0e78a64d2914
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '417'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 1%
 
 ## 篩選封裝 {#filter-packages}
 
-從「**[!UICONTROL Campaigns]**」索引標籤，您可以顯示&#x200B;**[!UICONTROL Campaign packages]**&#x200B;的清單，其會重新分組所有現有的分散式行銷活動。 您可以篩選此清單，使其僅顯示已發佈、延遲、未決核准等行銷活動。 若要這麼做，請按一下此檢視上方區段中的連結，或使用&#x200B;**[!UICONTROL Filter list]**&#x200B;連結並選取要顯示的行銷活動套件狀態。
+從「**[!UICONTROL Campaigns]**」索引標籤，您可以顯示&#x200B;**[!UICONTROL Campaign packages]**&#x200B;的清單，其會重新分組所有現有的分散式行銷活動。 您可以篩選此清單，使其僅顯示已發佈、延遲、未決核准等行銷活動。若要這麼做，請按一下此檢視上方區段中的連結，或使用&#x200B;**[!UICONTROL Filter list]**&#x200B;連結並選取要顯示的行銷活動套件狀態。
 
 ![](assets/mkg_dist_catalog_filter.png)
 
@@ -61,7 +61,7 @@ ht-degree: 1%
 
 中央實體可隨時取消行銷活動套件。
 
-按一下行銷活動套件&#x200B;**[!UICONTROL Cancel]**&#x200B;中的&#x200B;**[!UICONTROL Dashboard]**。
+按一下行銷活動套件&#x200B;**[!UICONTROL Dashboard]**&#x200B;中的&#x200B;**[!UICONTROL Cancel]**。
 
 ![](assets/mkg_dist_cancel_op_from_dashboard.png)
 

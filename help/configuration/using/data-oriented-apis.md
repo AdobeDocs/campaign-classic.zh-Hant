@@ -7,7 +7,7 @@ role: Developer
 exl-id: a392c55e-541a-40b1-a910-4a6dc79abd2d
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '1796'
+source-wordcount: '1803'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ XML檔案儲存在資料庫的MEMO型別欄位中。
 
 ## 查詢與寫入器 {#query-and-writer}
 
-下列簡介結構描述詳細說明資料庫和客戶(網頁或Adobe Campaign使用者端主控台)之間讀取(ExecuteQuery)和寫入(Writer)的低階交換。
+下列簡介結構描述詳細說明資料庫和客戶（網頁或Adobe Campaign使用者端主控台）之間讀取(ExecuteQuery)和寫入(Writer)的低階交換。
 
 ![](assets/s_ncs_integration_webservices_schema_writer.png)
 
@@ -44,7 +44,7 @@ XML檔案儲存在資料庫的MEMO型別欄位中。
 
 這可讓您隔離基礎SQL。 查詢語言不取決於基礎引擎：某些函式將會重新對應，可能會產生數個SELECT SQL順序。
 
-如需詳細資訊，請參閱結構描述&#39;xtk[&#39;:queryDef的&#39;ExecuteQuery&#39;方法上的](../../configuration/using/web-service-calls.md#example-on-the--executequery--method-of-schema--xtk-querydef-)範例。
+如需詳細資訊，請參閱結構描述&#39;xtk:queryDef&#39;](../../configuration/using/web-service-calls.md#example-on-the--executequery--method-of-schema--xtk-querydef-)的&#39;ExecuteQuery&#39;方法上的[範例。
 
 **ExecuteQuery**&#x200B;方法出現在[ExecuteQuery (xtk:queryDef)](#executequery--xtk-querydef-)中。
 
@@ -110,7 +110,7 @@ Write方法以[Write / WriteCollection (xtk:session)](#write---writecollection--
 </queryDef>
 ```
 
-可以在`<subquery>`元素中定義子查詢( `<condition> ` )。 的語法   `<subquery> `   元素是根據    `<querydef>`。
+可以在`<condition> `元素中定義子查詢( `<subquery>` )。 `<subquery> `元素的語法是以`<querydef>`的語法為基礎。
 
 `<subquery>  : </subquery>`的範例
 
@@ -369,7 +369,7 @@ Write方法以[Write / WriteCollection (xtk:session)](#write---writecollection--
 
 引數的繫結可讓引擎設定查詢中使用的引數值。 這非常有用，因為引擎負責逸出值，而且快取還有一個好處，就是可以擷取引數。
 
-當建構查詢時，「界限」值會以字元(？ 在ODBC中，在SQL查詢主體中的`#[index]#` postgres...)。
+當建構查詢時，「界限」值會以字元(？ 在ODBC中，`#[index]#`在postgres...) 在SQL查詢的正文中。
 
 ```xml
 <select>

@@ -7,7 +7,7 @@ hide: true
 exl-id: 0d3e7046-313a-42a6-9155-3365e8d60bac
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '277'
+source-wordcount: '278'
 ht-degree: 5%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 5%
 ![](assets/incremental_query_example.png)
 
 1. 將增量查詢和清單更新活動新增到新工作流程中。
-1. 依照&#x200B;**[!UICONTROL Incremental query]**&#x200B;建立查詢[中指定的方式設定活動的](query.md#creating-a-query)索引標籤。
+1. 依照[建立查詢](query.md#creating-a-query)中指定的方式設定活動的&#x200B;**[!UICONTROL Incremental query]**&#x200B;索引標籤。
 1. 選取「**[!UICONTROL Scheduling & History]**」標籤，然後指定270天的歷程記錄。 已設定目標的收件者在270天或大約9個月的期間內將不再設定目標。
 
    然後按一下&#x200B;**[!UICONTROL Change...]**&#x200B;按鈕。

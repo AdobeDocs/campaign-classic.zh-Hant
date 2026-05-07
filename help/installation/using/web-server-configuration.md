@@ -9,7 +9,7 @@ topic-tags: prerequisites-and-recommendations-
 exl-id: fc0d3f16-5f62-473d-a1de-aab574eff734
 source-git-commit: dba90a154e08400ae6ab6478623a50d48d72207c
 workflow-type: tm+mt
-source-wordcount: '285'
+source-wordcount: '332'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ ht-degree: 0%
   **在IIS** （請參閱[檔案](https://www.iis.net/configreference/system.webserver/security/requestfiltering/verbs)）上，執行下列設定：
 
    * 請確定已安裝&#x200B;**要求篩選**&#x200B;角色服務或功能。
-   * 在&#x200B;**要求篩選**&#x200B;窗格中，按一下HTTP動詞標籤，然後按一下[拒絕動詞]。 在「動作」窗格中，在開啟的對話方塊中輸入TRACE。
+   * 在&#x200B;**要求篩選**&#x200B;窗格中，按一下HTTP動詞標籤，然後按一下[拒絕動詞]。 在「動作」窗格中，在開啟的對話方塊中輸入TRACE 。
 
 * 移除橫幅：
 
@@ -81,5 +81,5 @@ ht-degree: 0%
 
 相關主題：
 
-* [Adobe Marketing Cloud法規遵循概述](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/landing/governance-privacy-security/overview#privacy)
-* [Adobe Campaign安全性總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/landing/governance-privacy-security/overview#security)
+* [Adobe Marketing Cloud合規性概觀](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/overview#privacy)
+* [Adobe Campaign安全性總覽](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/overview#security)

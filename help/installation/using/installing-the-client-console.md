@@ -9,8 +9,8 @@ topic-tags: installing-campaign-in-windows-
 exl-id: 7cc78214-92b8-4b1f-a307-96ec6af818d1
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
-source-wordcount: '1124'
-ht-degree: 2%
+source-wordcount: '1159'
+ht-degree: 18%
 
 ---
 
@@ -20,10 +20,10 @@ Campaign使用者端主控台是豐富的使用者端，可讓您連線至您的
 
 開始安裝使用者端主控台之前，您需要：
 
-* 在[相容性矩陣](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems)中檢查您的系統與工具與Adobe Campaign的相容性
-* 取得您的Campaign伺服器URL
+* 在[相容性矩陣](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems)中檢查您的系統和工具與 Adobe Campaign 的相容性
+* 取得 Campaign 伺服器 URL
 * 取得您的使用者認證
-* 在您的系統上安裝Microsoft Edge Webview2執行階段(來自Campaign Classic7.3建置版本)。 [了解更多](#webview)
+* 在您的系統上安裝Microsoft Edge Webview2執行階段（來自Campaign Classic 7.3建置版本）。 [了解更多](#webview)
 
 安裝或更新使用者端主控台的程式會依您實作的Adobe Campaign Classic而有所不同。
 請檢閱下列詳細資料，以瞭解實作所需的內容。
@@ -40,15 +40,15 @@ Campaign使用者端主控台是豐富的使用者端，可讓您連線至您的
 
 ## Microsoft Edge Webview2執行階段安裝 {#webview}
 
-從Campaign Classic7.3建置版本開始，任何主控台安裝都需要安裝Microsoft Edge Webview 2執行階段。
+從Campaign Classic 7.3建置版本開始，任何主控台安裝都需要安裝Microsoft Edge Webview 2執行階段。
 
-Web View預設會安裝為Windows 11作業系統的一部分。 如果系統尚未安裝該程式，則Campaign Classic主控台安裝程式會提示您從[Microsoft開發人員網站](https://www.adobe.com/go/acc-ms-webview2-runtime-download_tw)下載它。 請注意，下載連結在Internet Explorer 11瀏覽器上無法運作，因為Microsoft已停止支援。 請確定您使用不同的瀏覽器來存取連結。
+Web View 預設會安裝為 Windows 11 作業系統的一部分。 如果系統尚未安裝該應用程式，Campaign Classic主控台安裝程式會提示您從[Microsoft開發人員網站](https://www.adobe.com/go/acc-ms-webview2-runtime-download_tw)下載應用程式。 請注意，下載連結在 Internet Explorer 11 瀏覽器上無法運作，因為 Microsoft 已停止支援。 請確定您使用不同的瀏覽器來存取連結。
 
 ## Adobe託管實作 {#hosted-customers}
 
 作為託管客戶，您有兩個選項可安裝或更新使用者端主控台：
 
-1. Adobe可以直接部署。 主控台更新後，系統會提示使用者在快顯視窗中下載最新的使用者端主控台版本。
+1. Adobe可直接部署。 主控台更新後，系統會提示使用者在快顯視窗中下載最新的使用者端主控台版本。
 
 1. 您可以從[Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)下載到您的使用者端主控台
 
@@ -106,7 +106,7 @@ Adobe建議取消選取選項&#x200B;**[!UICONTROL No longer ask this question]*
 
 1. 開啟網頁瀏覽器，並從下列地址下載主控台：
 
-   `https://<your adobe campaign server>:<port number>/nl/jsp/logon.jsp`。
+   `https://<your adobe campaign server>:<port number>/nl/jsp/logon.jsp`.
 
 1. 在識別視窗中，輸入您的登入和密碼。
 
@@ -116,7 +116,7 @@ Adobe建議取消選取選項&#x200B;**[!UICONTROL No longer ask this question]*
 
 1. 按一下安裝頁面上的&#x200B;**[!UICONTROL Download]**&#x200B;連結。
 1. 下載並儲存使用者端安裝檔案。
-1. 在Windows上的電腦上執行下載的檔案：安裝會啟動。 使用者端主控台的預設安裝路徑為&#x200B;**$PROGRAMFILES$/Adobe/Adobe Campaign Classic vX Client**，其中&#39;X&#39;為&#39;6&#39;或&#39;7&#39;(根據您的Adobe Campaign版本)。
+1. 在Windows上的電腦上執行下載的檔案：安裝會啟動。 使用者端主控台的預設安裝路徑為&#x200B;**$PROGRAMFILES$/Adobe/Adobe Campaign Classic vX Client**，其中&#39;X&#39;為&#39;6&#39;或&#39;7&#39;（根據您的Adobe Campaign版本）。
 
 ### 建立連線 — 僅首次使用者{#create-the-connection}
 
@@ -128,25 +128,25 @@ Adobe建議取消選取選項&#x200B;**[!UICONTROL No longer ask this question]*
 
    ![](assets/s_ncs_install_define_connection_01.png)
 
-1. 按一下&#x200B;**[!UICONTROL Add > Connection]**&#x200B;並輸入Adobe Campaign應用程式伺服器的標籤和URL。
+1. 按一下 **[!UICONTROL Add > Connection]** 並輸入 Adobe Campaign 應用程式伺服器的標籤和 URL。
 
    ![](assets/s_ncs_install_define_connection_02.png)
 
-1. 指定透過URL連線至您的Adobe Campaign應用程式伺服器。 請使用電腦的DNS或別名，或您的IP位址。
+1. 指定透過 URL 連線至您的 Adobe Campaign 應用程式伺服器。 請使用電腦的 DNS 或別名，或您的 IP 位址。
 
-   例如，您可以使用`https://<machine>.<domain>.com`型別URL。
+   例如，您可以使用 `https://<machine>.<domain>.com` 類型 URL。
 
 1. 如果貴組織已設定Adobe IMS，請核取選項&#x200B;**[!UICONTROL Connect with an Adobe ID]**
 
-1. 按一下&#x200B;**[!UICONTROL Ok]**&#x200B;儲存您的設定。
+1. 按一下 **[!UICONTROL Ok]** 以儲存您的設定。
 
-例如，您可以視需要新增許多連線，以連線至您的測試、中繼和生產環境。
+例如，您可以視需要新增許多連線，以連線至您的測試、階段和生產環境。
 
 >[!NOTE]
 >
->「**[!UICONTROL Add]**」按鈕可讓您建立&#x200B;**[!UICONTROL folders]**&#x200B;以組織所有連線。 只需將每個連線拖放到資料夾中即可。
+>使用 **[!UICONTROL Add]** 按鈕，您可以建立 **[!UICONTROL folders]** 來管理所有連線。 只需將每個連線拖放到資料夾中即可。
 
-### 登入Adobe Campaign
+### 登入 Adobe Campaign
 
 若要登入現有執行個體，請遵循下列步驟：
 
@@ -154,7 +154,7 @@ Adobe建議取消選取選項&#x200B;**[!UICONTROL No longer ask this question]*
 
 1. 按一下認證欄位右上角的連結以存取連線設定視窗。
 
-1. 選取您需要登入的Campaign執行個體。
+1. 選取您需要登入的 Campaign 執行個體。
 
 1. 按一下&#x200B;**[!UICONTROL Ok]**
 

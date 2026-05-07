@@ -7,7 +7,7 @@ hide: true
 exl-id: 17313fe5-ad42-45ca-a35a-1e7aa89380ef
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '915'
+source-wordcount: '920'
 ht-degree: 4%
 
 ---
@@ -60,7 +60,7 @@ ht-degree: 4%
 
 本機實體會執行子行銷活動。 中央實體執行父級行銷活動。
 
-中央實體可從此儀表板（透過&#x200B;**連結）檢視與**&#x200B;合作行銷活動（依行銷活動）**[!UICONTROL List of associated campaigns]**&#x200B;連結的所有子行銷活動。
+中央實體可從此儀表板（透過&#x200B;**[!UICONTROL List of associated campaigns]**&#x200B;連結）檢視與&#x200B;**合作行銷活動（依行銷活動）**&#x200B;連結的所有子行銷活動。
 
 ![](assets/mkg_dist_mutual_op_by_op.png)
 
@@ -110,7 +110,7 @@ ht-degree: 4%
 
 應用以下步驟：
 
-1. 在&#x200B;**[!UICONTROL Navigation]**&#x200B;行銷活動&#x200B;**頁面的**&#x200B;區段中，按一下&#x200B;**[!UICONTROL Campaign packages]**&#x200B;連結。
+1. 在&#x200B;**行銷活動**&#x200B;頁面的&#x200B;**[!UICONTROL Navigation]**&#x200B;區段中，按一下&#x200B;**[!UICONTROL Campaign packages]**&#x200B;連結。
 1. 按一下 **[!UICONTROL Create]** 按鈕。
 1. 視窗頂端的區段可讓您選取&#x200B;**[!UICONTROL New collaborative package (mutualizedEmpty)]**&#x200B;範本。
 1. 選取參考行銷活動。

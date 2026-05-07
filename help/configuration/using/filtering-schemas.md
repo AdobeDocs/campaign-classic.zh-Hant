@@ -7,7 +7,7 @@ role: Developer
 exl-id: 009bed25-cd35-437c-b789-5b58a6d2d7c6
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '387'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,7 @@ ht-degree: 1%
 
 * 限制讀取和寫入許可權：
 
-  在此處，篩選器用於禁止所有運運算元在結構描述上同時具有讀取和寫入許可權。 只有&#x200B;**internal**&#x200B;帳戶，由運算式&quot;$(loginId)！表示=0」擁有這些許可權。
+  在此處，篩選器用於禁止所有運運算元在結構描述上同時具有讀取和寫入許可權。 只有&#x200B;**internal**&#x200B;帳戶(由運算式&quot;$(loginId)!=0&quot;表示)具有這些許可權。
 
   ```
   <sysFilter name="readAccess"> 

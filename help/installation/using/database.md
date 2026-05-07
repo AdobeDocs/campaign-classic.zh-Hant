@@ -10,8 +10,8 @@ topic-tags: prerequisites-and-recommendations-
 exl-id: 8a0426c1-9e8d-4053-bc2b-6a550e2eed2f
 source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
 workflow-type: tm+mt
-source-wordcount: '282'
-ht-degree: 2%
+source-wordcount: '310'
+ht-degree: 7%
 
 ---
 
@@ -68,7 +68,7 @@ SELECT * FROM nls_database_parameters ;
   NLS_CHARACTERSET WE8MSWIN1252
 ```
 
-若要登入&#x200B;**sqlplus**，請使用Oracle的使用者設定檔：
+若要登入&#x200B;**sqlplus**，請使用Oracle使用者設定檔：
 
 ```
 su - oracle 
@@ -84,4 +84,4 @@ sqlplus
 
 **相關主題**
 
-* [Adobe Campaign Classic資料表中未記錄的選項](https://helpx.adobe.com/campaign/kb/unlogged-tables-classic.html)
+* [Adobe Campaign Classic表格中的取消記錄選項](https://helpx.adobe.com/campaign/kb/unlogged-tables-classic.html)

@@ -6,7 +6,7 @@ feature: Schema Extension
 exl-id: a7ca0300-d250-429c-8ae1-2ae7dee82cf5
 source-git-commit: 254c89490fefa5d405bcecd2f1781df46450a873
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '217'
 ht-degree: 2%
 
 ---
@@ -49,8 +49,8 @@ join：==EMPTY
 ## 屬性說明 {#attribute-description-7}
 
 * **dstFilterExpr （字串）**：此屬性可讓您限制遠端資料表中符合條件的值數目。
-* **xpath-dst （字串）**：此屬性會接收Xpath (遠端資料表的@name屬性)。
-* **xpath-src （字串）**：此屬性會接收Xpath (目前結構描述中的@name屬性)。
+* **xpath-dst （字串）**：此屬性會接收Xpath （遠端資料表的@name屬性）。
+* **xpath-src （字串）**：此屬性會接收Xpath （目前結構描述中的@name屬性）。
 
 ## 範例 {#examples-6}
 
@@ -60,7 +60,7 @@ join：==EMPTY
 <join xpath-dst="@compagny-id" xpath-src="@email"/>
 ```
 
-根據「@country」欄位的內容（必須包含「EN」值），篩選指向「cus：Country」表格的連結：
+根據「@country」欄位的內容（必須包含「EN」值），篩選指向「cus:Country」表格的連結：
 
 ```
 <element name="StockEN" type="link" label="MyLink" target="cus:Stock">

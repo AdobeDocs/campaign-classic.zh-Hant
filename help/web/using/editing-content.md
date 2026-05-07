@@ -7,7 +7,7 @@ feature: Web Apps, Web Forms, Landing Pages, Email Design
 exl-id: 968430d6-b1dd-47f8-8b31-39aaa18bc05c
 source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
 workflow-type: tm+mt
-source-wordcount: '1229'
+source-wordcount: '1250'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 ![](assets/dce_popup_visibilitycondition.png)
 
-這些條件採用XTK運算式語法（例如&#x200B;**ctx.recipient）。@email！= &quot;**&#x200B;或&#x200B;**ctx.recipient。@status==&quot;0&quot;**)。 依預設，所有欄位都是可見的。
+這些條件採用XTK運算式語法（例如&#x200B;**ctx.recipient.@email != &quot;&quot;**&#x200B;或&#x200B;**ctx.recipient.@status==&quot;0&quot;**）。 依預設，所有欄位都是可見的。
 
 >[!NOTE]
 >
@@ -82,13 +82,13 @@ ht-degree: 0%
 
 ### 修改表單欄位 {#modifying-form-fields}
 
-表單欄位，例如選項按鈕、輸入區域、下拉式清單等。 可使用其工具列進行修改。
+單選按鈕、輸入區域、下拉式清單等表單欄位可以從其工具列進行修改。
 
 這表示您可以：
 
 * 使用&#x200B;**[!UICONTROL Delete]**&#x200B;圖示刪除包含表單欄位的區塊。
 * 使用&#x200B;**[!UICONTROL Duplicate]**&#x200B;圖示建立新區塊，以複製選取的欄位。
-* 使用&#x200B;**[!UICONTROL Form data]**&#x200B;圖示編輯&#x200B;**[!UICONTROL Edit]**&#x200B;視窗以將資料庫欄位連結至表單區域。
+* 使用&#x200B;**[!UICONTROL Edit]**&#x200B;圖示編輯&#x200B;**[!UICONTROL Form data]**&#x200B;視窗以將資料庫欄位連結至表單區域。
 
   ![](assets/dce_toolbar_formblock_edition.png)
 
@@ -232,7 +232,7 @@ ht-degree: 0%
 
 當您選取包含影像的區塊時，可以存取下列屬性：
 
-* **註解**&#x200B;可讓您定義連結至影像的註解(對應至&#x200B;**alt** HTML屬性)。
+* **註解**&#x200B;可讓您定義連結至影像的註解（對應至&#x200B;**alt** HTML屬性）。
 * **尺寸**&#x200B;可讓您指定影像大小（畫素）。
 
   ![](assets/dce_popup_imgsize.png)
@@ -259,4 +259,4 @@ ht-degree: 0%
 
 插入後，個人化區塊名稱會顯示在編輯器中，並以黃色反白顯示。 產生個人化時，會自動調整成適合收件者設定檔。
 
-如需內建個人化區塊以及如何定義自訂個人化區塊的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=zh-Hant){target="_blank"}。
+如需內建個人化區塊以及如何定義自訂個人化區塊的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}。

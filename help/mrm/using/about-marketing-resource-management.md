@@ -10,7 +10,7 @@ hide: true
 exl-id: 8cf4d30d-f914-438d-8836-030202b6a449
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '199'
+source-wordcount: '212'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 **行銷資源管理(MRM)**&#x200B;模組可讓您透過提供相關工作、預算和行銷資源的完整管理和即時追蹤，以合作模式控制行銷動作。
 
-Adobe Campaign操作者可透過完整的驗證程式和適當的追蹤工具（報告、追蹤核准、通知、討論論壇等），協調其動作並核准所有階段的進度。 在事件或錯誤或延遲以及驗證週期的每個新階段都會收到警報。
+Adobe Campaign操作者可透過完整的驗證程式和適當的追蹤工具（報告、追蹤核准、通知、討論論壇等），協調其動作並核准所有階段的進度。在事件或錯誤或延遲以及驗證週期的每個新階段都會收到警報。
 
 因此，在行銷計畫的方案和子方案的內容中，可以建立任務並指派給有關操作者，然後透過其所有階段進行管理。
 
@@ -31,4 +31,4 @@ Adobe Campaign操作者可透過完整的驗證程式和適當的追蹤工具（
 
 >[!NOTE]
 >
->若要進一步瞭解Adobe Campaign的MRM及其使用方式，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/mrm/about-marketing-resource-management){target=_blank}。
+>若要進一步瞭解Adobe Campaign的MRM及其使用方式，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/automation/mrm/about-marketing-resource-management){target=_blank}。

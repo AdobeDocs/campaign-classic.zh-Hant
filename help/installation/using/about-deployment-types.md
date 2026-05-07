@@ -9,7 +9,7 @@ topic-tags: deployment-types-
 exl-id: 08628efb-9186-4b67-9431-310d4bc276b4
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '136'
+source-wordcount: '137'
 ht-degree: 6%
 
 ---
@@ -24,6 +24,6 @@ Adobe Campaign的模組化設計可支援廣泛的部署組態，從獨立設定
 
 >[!NOTE]
 >
->主要安裝設定步驟只能由Adobe所託管部署的Adobe執行，以設定伺服器和執行個體設定檔案等。
+>主要安裝設定步驟只能由Adobe針對Adobe託管的部署執行，以設定伺服器和執行個體設定檔案。
 >
 >若要深入瞭解部署之間的主要差異，請參閱[託管模型](../../installation/using/hosting-models.md)區段或託管與內部部署的[功能差異](../../installation/using/capability-matrix.md)。

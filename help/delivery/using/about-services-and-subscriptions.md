@@ -8,7 +8,7 @@ role: User
 exl-id: eb72f19a-7669-4596-bf9b-8c0ce22b67bf
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '167'
+source-wordcount: '168'
 ht-degree: 4%
 
 ---
@@ -21,4 +21,4 @@ Adobe Campaign可讓您建立和管理電子報等資訊服務，並管理這些
 
 >[!NOTE]
 >
->此功能作為Adobe Campaign的標準提供。 選用的應用程式「社交行銷」可讓您透過Facebook和X (先前稱為Twitter)聯絡客戶和潛在客戶。
+>此功能作為Adobe Campaign的標準提供。 選用的應用程式「社交行銷」可讓您透過Facebook和X （先前稱為Twitter）聯絡客戶和潛在客戶。

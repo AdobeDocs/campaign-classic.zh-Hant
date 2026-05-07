@@ -7,7 +7,7 @@ hide: true
 exl-id: e4806bb8-de9d-47e4-8b37-d6c0565b7f5a
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '715'
+source-wordcount: '716'
 ht-degree: 2%
 
 ---
@@ -120,7 +120,7 @@ ht-degree: 2%
 
 操作步驟：
 
-1. 按一下&#x200B;**[!UICONTROL Create]**&#x200B;索引標籤的&#x200B;**[!UICONTROL Reports]**&#x200B;按鈕，然後選取您剛建立的Cube。
+1. 按一下&#x200B;**[!UICONTROL Reports]**&#x200B;索引標籤的&#x200B;**[!UICONTROL Create]**&#x200B;按鈕，然後選取您剛建立的Cube。
 
    ![](assets/s_advuser_cube_wz_14.png)
 
@@ -130,7 +130,7 @@ ht-degree: 2%
 
    ![](assets/s_advuser_cube_wz_15.png)
 
-1. 您可以切換尺寸的軸、刪除它們、新增測量等。 在[此頁面](../../reporting/using/using-cubes-to-explore-data.md)中詳細說明可能的作業。
+1. 您可以切換尺寸的軸、刪除它們、新增測量等。在[此頁面](../../reporting/using/using-cubes-to-explore-data.md)中詳細說明可能的作業。
 
    要執行此操作，請使用適當的圖示。
 

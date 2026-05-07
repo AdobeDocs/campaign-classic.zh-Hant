@@ -10,8 +10,8 @@ topic-tags: importing-and-exporting-data
 exl-id: 94fc473a-dc49-41e8-b572-51c162b09996
 source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
 workflow-type: tm+mt
-source-wordcount: '950'
-ht-degree: 29%
+source-wordcount: '963'
+ht-degree: 28%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 29%
 
 匯出作業可讓您存取及擷取資料庫的資料：連絡人、使用者端、清單、區段等。
 
-例如，在試算表中使用行銷活動追蹤資料（追蹤歷史記錄等）會很有用。 輸出資料可以是 txt、CSV、TAB 或 XML 格式。
+例如，使用行銷活動追蹤資料（追蹤歷史記錄等）會很有用 在試算表中。 輸出資料可以是 txt、CSV、TAB 或 XML 格式。
 
 匯出助理可以讓您設定匯出、定義其選項並啟動執行。 這是一系列畫面，其內容取決於匯出型別（簡單或多重）和操作者的權利。
 
@@ -74,7 +74,7 @@ ht-degree: 29%
 * 針對&#x200B;**[!UICONTROL Text]**&#x200B;格式，選取分隔符號以分隔欄（定位字元、逗號、分號或自訂）和字串（單引號、雙引號或無）。
 * 對於&#x200B;**[!UICONTROL text]**&#x200B;和&#x200B;**[!UICONTROL CSV]**，您可以選取選項&#x200B;**[!UICONTROL Use first lines as column titles]**。
 * 指示日期格式和數字格式。 若要這麼做，請按一下相關欄位的&#x200B;**[!UICONTROL Edit]**&#x200B;按鈕，然後使用編輯器。
-* 對於包含列舉值的欄位，您可以選取&#x200B;**[!UICONTROL Export labels instead of internal values of enumerations]**。 例如，標題可以以&#x200B;**1=Mr格式儲存。**，**2=小姐**，**3=夫人**。 如果選擇此選項，將匯出&#x200B;**先生**、**小姐**&#x200B;和&#x200B;**太太**。
+* 對於包含列舉值的欄位，您可以選取&#x200B;**[!UICONTROL Export labels instead of internal values of enumerations]**。 例如，標題可以儲存為格式&#x200B;**1=Mr.**，**2=Miss**，**3=Mrs.**。如果選取此選項，將會匯出&#x200B;**先生**、**小姐**&#x200B;和&#x200B;**太太**。
 
 ## 第 4 步 - 資料選擇 {#step-4---data-selection}
 

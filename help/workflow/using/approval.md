@@ -7,7 +7,7 @@ hide: true
 exl-id: 7ff5da71-ef82-48a2-a608-06a4ca188bb9
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '547'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 如有必要，您可以將核准任務指派給單一運運算元，或由篩選器定義的一組運運算元。
 
-* 若要選取單一運運算元，請在&#x200B;**[!UICONTROL Operator]**&#x200B;欄位中選取&#x200B;**[!UICONTROL Assignment type]**&#x200B;值，並在&#x200B;**[!UICONTROL Assignee]**&#x200B;欄位的下拉式清單中選取相關運運算元。
+* 若要選取單一運運算元，請在&#x200B;**[!UICONTROL Assignment type]**&#x200B;欄位中選取&#x200B;**[!UICONTROL Operator]**&#x200B;值，並在&#x200B;**[!UICONTROL Assignee]**&#x200B;欄位的下拉式清單中選取相關運運算元。
 
   ![](assets/s_advuser_validation_box_assign.png)
 
@@ -32,7 +32,7 @@ ht-degree: 0%
   >
   >只有選取的運運算元才有權核准任務。
 
-* 您可以定義用於篩選核准運運算元的查詢。 若要這麼做，請在&#x200B;**[!UICONTROL Filter]**&#x200B;欄位中選取&#x200B;**[!UICONTROL Assignment type]**&#x200B;值，然後按一下&#x200B;**[!UICONTROL Advanced parameters...]**&#x200B;連結以定義篩選條件，如下列範例所示：
+* 您可以定義用於篩選核准運運算元的查詢。 若要這麼做，請在&#x200B;**[!UICONTROL Assignment type]**&#x200B;欄位中選取&#x200B;**[!UICONTROL Filter]**&#x200B;值，然後按一下&#x200B;**[!UICONTROL Advanced parameters...]**&#x200B;連結以定義篩選條件，如下列範例所示：
 
   ![](assets/s_advuser_validation_box_filter.png)
 
@@ -46,7 +46,7 @@ ht-degree: 0%
 
 修改活動的標題或訊息本文並不會影響目前的工作，但另一方面，修改可能的選擇會直接影響目前的工作，這會自動繼承新的選擇清單。
 
-可從&#x200B;**節點存取**&#x200B;核准&#x200B;**[!UICONTROL Administration > Production > Objects created automatically > Approvals pending]**&#x200B;型別工作：操作者可直接透過此檢視存取核准表單。
+可從&#x200B;**[!UICONTROL Administration > Production > Objects created automatically > Approvals pending]**&#x200B;節點存取&#x200B;**核准**&#x200B;型別工作：操作者可直接透過此檢視存取核准表單。
 
 ![](assets/s_advuser_validation_from_console.png)
 

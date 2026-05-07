@@ -10,8 +10,8 @@ topic-tags: database-maintenance
 exl-id: 194f12de-4671-4a56-8cdc-cd5e3dac147b
 source-git-commit: 517b85f5d7691acc2522bf4541f07c34c60c7fbf
 workflow-type: tm+mt
-source-wordcount: '1142'
-ht-degree: 0%
+source-wordcount: '1165'
+ht-degree: 2%
 
 ---
 
@@ -48,7 +48,7 @@ ht-degree: 0%
    <td> NmsDeliveryPart<br /> </td> 
    <td> Medium<br /> </td> 
    <td> 插入、更新、刪除<br /> </td> 
-   <td> 在傳遞準備期間插入記錄的工作表。 它們會在傳送期間更新，最後在傳送完成後刪除。<br />即使資料表的平均大小相當有限，資料表仍會快速分割。<br /> </td> 
+   <td> 在傳遞準備期間插入記錄的工作表。 然後在傳遞期間更新，最後在傳遞完成後刪除。<br /> 此資料表的平均大小相當受限，卻容易迅速分割。<br /> </td> 
   </tr> 
   <tr> 
    <td> NmsMirrorPageInfo<br /> </td> 
@@ -205,4 +205,4 @@ ht-degree: 0%
 
 ## 客戶表格 {#customer-tables}
 
-除了上述清單，包含客戶(不存在於Adobe Campaign資料模型中)在平台設定期間建立的表格也可能遭到分割，尤其是在資料載入或同步程式期間經常更新這些表格時。 這些資料表可以是預設Adobe Campaign資料模型的一部分（例如&#x200B;**NmsRecipient**）。 在這種情況下，由Adobe Campaign平台的管理員負責稽核其特定的資料庫模型，以尋找這些自訂表格。 這些表格不一定會在我們的維護程式中明確提及。
+除了上述清單，包含客戶（不存在於Adobe Campaign資料模型中）在平台設定期間建立的表格也可能遭到分割，尤其是在資料載入或同步程式期間經常更新這些表格時。 這些資料表可以是預設Adobe Campaign資料模型的一部分（例如&#x200B;**NmsRecipient**）。 在這種情況下，由Adobe Campaign平台的管理員負責稽核其特定的資料庫模型，以尋找這些自訂表格。 這些表格不一定會在我們的維護程式中明確提及。

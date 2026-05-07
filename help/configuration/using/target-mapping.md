@@ -8,7 +8,7 @@ badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v
 exl-id: 38333669-5598-4811-a121-b677c1413f56
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '500'
 ht-degree: 2%
 
 ---
@@ -104,7 +104,7 @@ ht-degree: 2%
    >
    >Adobe Campaign不支援多個收件者結構描述（也稱為目標定位結構描述），連結至相同的broadlog和/或trackinglog結構描述。 否則，這可能會導致之後資料協調出現異常。 如需詳細資訊，請參閱[建議與限制](../../configuration/using/about-custom-recipient-table.md)頁面。
 
-1. 在&#x200B;**擴充功能**&#x200B;視窗中，選取您要產生的選用結構描述(可用結構描述清單取決於Adobe Campaign平台上安裝的模組)。
+1. 在&#x200B;**擴充功能**&#x200B;視窗中，選取您要產生的選用結構描述（可用結構描述清單取決於Adobe Campaign平台上安裝的模組）。
 
    ![](assets/mapping_diffusion_wizard_4.png)
 

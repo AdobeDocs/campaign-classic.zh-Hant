@@ -6,8 +6,8 @@ feature: Technote, SMS
 exl-id: 756039b2-5f57-4dc5-8166-a421206b886b
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 5%
+source-wordcount: '440'
+ht-degree: 6%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 5%
 * 請勿在中間來源執行個體上實作此使用案例。
 * 每個外部中間來源帳戶只有一個自訂工作流程。
 
-## 實施 {#implementation}
+## 實作 {#implementation}
 
 1. 將擴充功能新增至行銷執行個體上的`nms:inSMS`結構描述。 擴充功能會將新屬性新增至`nms:inSMS`結構描述，並追蹤來自中間來源執行個體的inSMS記錄主索引鍵。
 
@@ -41,7 +41,7 @@ ht-degree: 5%
 
    以下列格式`SMS_MO_INDEX_{internal name of the workflow}_{name of the insms workflow activity}_{internal name of the external account to access the mid}`備份對應的選項指標。
 
-[進一步瞭解備份](../../production/using/backup.md)
+   [進一步瞭解備份](../../production/using/backup.md)
 
 1. （**選擇性**）如果您已在使用排程器活動，請開啟工作流程並按如下方式重新設定：
 

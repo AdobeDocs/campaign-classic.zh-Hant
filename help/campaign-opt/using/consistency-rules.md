@@ -8,7 +8,7 @@ hide: true
 exl-id: 757328fa-4698-4f85-a5fa-074b5152ec45
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '773'
+source-wordcount: '774'
 ht-degree: 3%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 3%
 
 Adobe Campaign藉由行銷活動型別中所包含的一組規則，確保通訊的一致性。 其目的是控制傳送給收件者的傳送內容，例如傳送量、性質、相關性等。
 
-例如，**容量**&#x200B;規則可避免訊息傳遞所關注的平台超載。 例如，包含下載連結的特殊優惠方案不得一次傳送給太多人，以免伺服器耗盡；電話促銷活動不得超出客服中心的處理能力等。 如需詳細資訊，請參閱[控制容量](#controlling-capacity)。
+例如，**容量**&#x200B;規則可避免訊息傳遞所關注的平台超載。 例如，包含下載連結的特殊優惠方案不得一次傳送給太多人，以免伺服器耗盡；電話促銷活動不得超出客服中心的處理能力等。如需詳細資訊，請參閱[控制容量](#controlling-capacity)。
 
 ## 控制容量 {#controlling-capacity}
 
@@ -115,7 +115,7 @@ Adobe Campaign藉由行銷活動型別中所包含的一組規則，確保通訊
 
 依預設，容量規則僅供指示之用。 選取&#x200B;**[!UICONTROL Exclude messages in excess of capacity from the target]**&#x200B;選項，以防止超過定義的負載。 在此情況下，過多訊息將會使用此型別規則從傳送中自動排除。
 
-若要監視使用，請檢視型別規則中&#x200B;**[!UICONTROL Consumed]**&#x200B;索引標籤的&#x200B;**[!UICONTROL Capacity]**&#x200B;欄中顯示的值。
+若要監視使用，請檢視型別規則中&#x200B;**[!UICONTROL Capacity]**&#x200B;索引標籤的&#x200B;**[!UICONTROL Consumed]**&#x200B;欄中顯示的值。
 
 ![](assets/campaign_opt_create_capacity_04.png)
 

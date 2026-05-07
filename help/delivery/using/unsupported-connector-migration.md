@@ -46,7 +46,7 @@ ht-degree: 1%
 
 首先，您需要建立新的&#x200B;**[!UICONTROL Extended Generic SMPP]**&#x200B;外部帳戶，然後您或許可以轉置某些引數。 您可以在此[頁面](sms-set-up.md#creating-an-smpp-external-account)中找到詳細步驟。
 
-您現在需要根據先前的聯結器，從新建立的&#x200B;**[!UICONTROL Mobile]**&#x200B;外部帳戶的&#x200B;**[!UICONTROL Extended Generic SMPP]**&#x200B;標籤中填入引數。
+您現在需要根據先前的聯結器，從新建立的&#x200B;**[!UICONTROL Extended Generic SMPP]**&#x200B;外部帳戶的&#x200B;**[!UICONTROL Mobile]**&#x200B;標籤中填入引數。
 
 ### 從一般聯結器 {#from-generic-connector}
 

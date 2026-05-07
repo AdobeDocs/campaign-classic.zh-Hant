@@ -10,7 +10,7 @@ hide: true
 exl-id: 228ee9e4-46a0-4d82-b8ba-b019bc0e7cac
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '715'
+source-wordcount: '722'
 ht-degree: 0%
 
 ---
@@ -97,7 +97,7 @@ ht-degree: 0%
 
 ### 驗證程式 {#verification-process}
 
-在升級後命令中整合為標準，此程式可讓您顯示可能導致移轉失敗的警告和錯誤。 **如果顯示錯誤，表示移轉尚未執行。**&#x200B;如果發生此情況，請更正所有錯誤，然後重新啟動升級後。
+在升級後命令中整合為標準，此程式可讓您顯示可能導致移轉失敗的警告和錯誤。 **如果顯示錯誤，則表示移轉尚未執行。** 如果發生此情況，請更正所有錯誤，然後重新啟動升級後。
 
 您可以使用下列命令自行啟動驗證程式（不進行移轉）：
 

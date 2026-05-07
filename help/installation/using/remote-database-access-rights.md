@@ -9,7 +9,7 @@ topic-tags: connectors
 exl-id: 3d43010e-53f8-4aa2-a651-c422a02191fe
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '922'
+source-wordcount: '923'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ ht-degree: 0%
 * **讀取資料**：對包含客戶資料的資料表的唯讀存取權，
 * **讀取&#39;MetaData&#39;**：存取伺服器資料目錄以取得資料表結構，
 * **LOAD**：在工作表中大量載入（處理集合和聯結時需要），
-* **TABLE/INDEX/PROCEDURE/FUNCTION**&#x200B;的&#x200B;**建立/卸除** (僅適用於Adobe Campaign產生的工作表)，
+* **TABLE/INDEX/PROCEDURE/FUNCTION**&#x200B;的&#x200B;**建立/卸除** （僅適用於Adobe Campaign產生的工作表），
 * **EXPLAIN** （建議）：若發生問題，請監視效能，
 * **寫入資料** （視整合情況而定）。
 

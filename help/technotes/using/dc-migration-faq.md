@@ -8,7 +8,7 @@ level: Beginner
 exl-id: a9cd08b0-55c2-4405-9fb8-f0c623cd4ccb
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '2226'
+source-wordcount: '2269'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Adobe免除舊版資料中心的委任：Campaign Classic例項必須轉移至Pu
 
 以下是此專案的一組常見問題、對您的Campaign環境的影響以及其他實用資源。
 
-如有任何其他問題，請連絡[Adobe客戶服務](https://experienceleague.adobe.com/zh-hant?support-solution=Campaign#support)。
+如有任何其他問題，請連絡[Adobe客戶服務](https://experienceleague.adobe.com/?support-solution=Campaign#support)。
 
 ## 基礎架構影響
 
@@ -41,7 +41,7 @@ Adobe免除舊版資料中心的委任：Campaign Classic例項必須轉移至Pu
 
 * **舊版資料中心與公用雲端之間的封裝大小是否有任何差異？**
 
-  我們正在布建公用雲端(AWS)中，根據目前的資料庫大小、磁碟大小等使用新的套件定義。 例如，如果客戶在舊版資料中心有一部應用程式伺服器，根據套件定義，他們可以在公共雲端(AWS)有兩部應用程式伺服器。
+  我們正在布建公用雲端(AWS)中，根據目前的資料庫大小、磁碟大小等使用新的套件定義。例如，如果客戶在舊版資料中心有一部應用程式伺服器，根據套件定義，他們可以在公共雲端(AWS)有兩部應用程式伺服器。
 
 * **組建編號或行銷活動版本是否會變更？**
 
@@ -51,7 +51,7 @@ Adobe免除舊版資料中心的委任：Campaign Classic例項必須轉移至Pu
 
 * **解決任何移轉後問題的計畫為何？**
 
-  在生產系統移轉之前，將會進行廣泛的測試。 不過，如果發生任何問題，[Adobe客戶服務](https://experienceleague.adobe.com/zh-hant?support-solution=Campaign#support)仍會是主要聯絡視窗。 Adobe已建立專家團隊，在需要時提供進階支援。
+  在生產系統移轉之前，將會進行廣泛的測試。 不過，如果發生任何問題，[Adobe客戶服務](https://experienceleague.adobe.com/?support-solution=Campaign#support)仍會是主要聯絡視窗。 Adobe已建立專家團隊，在需要時提供進階支援。
 
 ## 傳遞能力影響
 
@@ -97,7 +97,7 @@ Adobe免除舊版資料中心的委任：Campaign Classic例項必須轉移至Pu
 
   首先，Adobe傳遞能力將評估平台傳遞能力狀態，並推薦切換至新IP的計畫
 
-  移轉後不需要熱身。 可能會出現一些例外狀況，在這種情況下，[Adobe客戶服務](https://experienceleague.adobe.com/zh-hant?support-solution=Campaign#support)將會聯絡客戶。
+  移轉後不需要熱身。 可能會出現一些例外狀況，在這種情況下，[Adobe客戶服務](https://experienceleague.adobe.com/?support-solution=Campaign#support)將會聯絡客戶。
 
   不過，計畫是讓這項作業對業務而言是透明的，不同於在上線期間進行的初始升級。
 
@@ -141,7 +141,7 @@ Adobe免除舊版資料中心的委任：Campaign Classic例項必須轉移至Pu
 
   Adobe Campaign應用程式伺服器IP位址將會變更。 此步驟將由移轉後的Adobe客戶服務處理。
 
-* **移轉是否會影響與其他Adobe解決方案(AEM、Target等)的連線？**
+* **移轉是否會影響與其他Adobe解決方案（AEM、Target等）的連線？**
 
   整合是在允許清單中宣告的IP位址與Web服務帳戶設定的組合。 該帳戶將由Adobe客戶服務負責和擁有。
 
@@ -173,7 +173,7 @@ Adobe免除舊版資料中心的委任：Campaign Classic例項必須轉移至Pu
 
   它可能會根據新伺服器的位置而變更。 不過，客戶將可保留其目前的時區。
 
-  在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/managing-time-zones.html?lang=zh-Hant){target="_blank"}中進一步瞭解時區管理。
+  在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/managing-time-zones.html){target="_blank"}中進一步瞭解時區管理。
 
 
 ## 安全性與許可權

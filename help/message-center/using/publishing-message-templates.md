@@ -9,7 +9,7 @@ topic-tags: message-templates
 exl-id: 1d55f42b-64bf-4b1f-a317-c1f7456aa5b3
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: '499'
 ht-degree: 2%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 2%
 
 1. 在控制項執行個體上，移至樹狀結構的&#x200B;**[!UICONTROL Message Center > Transactional message templates]**&#x200B;資料夾。
 1. 選取您要在執行例項上發佈的範本。
-1. 按一下&#x200B;**[!UICONTROL Publish]**。
+1. 按一下 **[!UICONTROL Publish]**。
 
    ![](assets/messagecenter_publish_model_008.png)
 
@@ -68,11 +68,11 @@ ht-degree: 2%
 
 1. 在控制項執行個體上，移至樹狀結構的&#x200B;**[!UICONTROL Message Center > Transactional message templates]**&#x200B;資料夾。
 1. 選取您要取消發佈的範本。
-1. 按一下&#x200B;**[!UICONTROL Unpublish]**。
+1. 按一下 **[!UICONTROL Unpublish]**。
 
    <!--1. Fill in the **[!UICONTROL Log of the process]** field.-->
 
-1. 按一下&#x200B;**[!UICONTROL Start]**。
+1. 按一下 **[!UICONTROL Start]**。
 
 ![](assets/message-center-unpublish.png)
 

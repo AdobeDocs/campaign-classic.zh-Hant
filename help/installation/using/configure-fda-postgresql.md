@@ -6,8 +6,8 @@ feature: Installation, Instance Settings
 exl-id: 2c678f45-2555-4647-9885-bd002db7df37
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '336'
-ht-degree: 2%
+source-wordcount: '379'
+ht-degree: 1%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 2%
 
 1. 從行銷活動&#x200B;**[!UICONTROL Explorer]**，按一下&#x200B;**[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**。
 
-1. 按一下&#x200B;**[!UICONTROL New]**。
+1. 按一下 **[!UICONTROL New]**。
 
 1. 選取&#x200B;**[!UICONTROL External database]**&#x200B;作為外部帳戶的&#x200B;**[!UICONTROL Type]**。
 
@@ -75,7 +75,7 @@ ht-degree: 2%
 
 | 選項 | 說明 |
 |:-:|:-:|
-| PGSQL_CONNECT_逾時 | 連線等待時間上限（以秒為單位）。 <br>如需詳細資訊，請參閱[PostgreSQL檔案](https://www.postgresql.org/docs/12/libpq-connect.html#LIBPQ-CONNECT-CONNECT-TIMEOUT)。 |
+| PGSQL_CONNECT_TIMEOUT | 連線等待時間上限（以秒為單位）。 <br>如需詳細資訊，請參閱[PostgreSQL檔案](https://www.postgresql.org/docs/12/libpq-connect.html#LIBPQ-CONNECT-CONNECT-TIMEOUT)。 |
 | PGSQL_KEEPALIVES_IDLE | TCP應該傳送保持連線訊息至伺服器之後未使用的秒數。 <br>如需詳細資訊，請參閱[PostgreSQL檔案](https://www.postgresql.org/docs/12/libpq-connect.html#LIBPQ-KEEPALIVES-IDLE)。 |
 | PGSQL_KEEPALIVES_INTVL | 伺服器未確認的TCP keepalive訊息應該重新傳輸的秒數。  <br>如需詳細資訊，請參閱[PostgreSQL檔案](https://www.postgresql.org/docs/12/libpq-connect.html#LIBPQ-KEEPALIVES-INTERVAL)。 |
 | PGSQL_KEEPALIVES_CNT | 在使用者端與伺服器的連線被視為失效之前，可以遺失的TCP keepalive數目。 <br>如需詳細資訊，請參閱[PostgreSQL檔案](https://www.postgresql.org/docs/12/libpq-connect.html#LIBPQ-KEEPALIVES-COUNT)。 |

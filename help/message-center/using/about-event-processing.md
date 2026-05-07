@@ -9,8 +9,8 @@ topic-tags: event-processing
 exl-id: 3d85866a-6339-458c-807a-b267cce772b8
 source-git-commit: 221e2ccdaadf793212fcacdf5e13823f1505f4dc
 workflow-type: tm+mt
-source-wordcount: '697'
-ht-degree: 2%
+source-wordcount: '708'
+ht-degree: 3%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 2%
 1. [事件轉移至訊息範本](#routing-towards-a-template)
 1. 使用個人化資料擴充事件
 1. [傳遞執行](../../message-center/using/delivery-execution.md)
-1. [回收連結傳遞失敗的事件](#event-recycling) (透過Adobe Campaign工作流程)
+1. [回收連結傳遞失敗的事件](#event-recycling) （透過Adobe Campaign工作流程）
 
 透過執行例項執行上述所有步驟後，每個目標收件者都會收到個人化訊息。
 
@@ -81,7 +81,7 @@ ht-degree: 2%
 
 ## 事件狀態 {#event-statuses}
 
-在&#x200B;**>**&#x200B;下方的&#x200B;**[!UICONTROL Message Center]**&#x200B;事件歷史記錄&#x200B;**[!UICONTROL Event history]**&#x200B;會將所有已處理的事件分組為一個單一檢視。 它們可以依事件型別或&#x200B;**狀態**&#x200B;分類。 這些狀態包括：
+在&#x200B;**[!UICONTROL Message Center]** > **[!UICONTROL Event history]**&#x200B;下方的&#x200B;**事件歷史記錄**&#x200B;會將所有已處理的事件分組為一個單一檢視。 它們可以依事件型別或&#x200B;**狀態**&#x200B;分類。 這些狀態包括：
 
 * **擱置中**：事件可以是：
 

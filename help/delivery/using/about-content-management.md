@@ -8,7 +8,7 @@ role: User
 exl-id: 87434cc2-1636-4558-ab60-255b7f873c0c
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '273'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,7 @@ Adobe Campaign Content Manager模組是特定的Campaign Classic [內建套件](
 
 >[!NOTE]
 >
->本節將介紹內容管理模組。 如需如何設計電子郵件傳遞內容的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=zh-Hant){target="_blank"}。
+>本節將介紹內容管理模組。 如需如何設計電子郵件傳遞內容的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html){target="_blank"}。
 
 內容管理模組整合了工作群組、工作流程和內容彙總功能。 這可讓訊息自動格式化：電子郵件、郵件、簡訊、網頁等。
 
@@ -35,7 +35,7 @@ Adobe Campaign Content Manager模組是特定的Campaign Classic [內建套件](
 
 * 透過輸入介面編輯結構化訊息，
 * 分離資料內容及其呈現方式（以XML格式產生），
-* 根據樣式表以多種格式（html、txt、XML等）產生檔案，以確保符合圖形字元、
+* 以多種格式（html、txt、XML等）產生檔案 以樣式表為基礎，以確保符合圖形字元，
 * 外部內容流程的復原與自動彙總、
 * Collaboration具有資料驗證和檢查的工作流程。
 

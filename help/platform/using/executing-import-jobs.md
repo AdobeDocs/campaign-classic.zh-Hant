@@ -10,7 +10,7 @@ topic-tags: importing-and-exporting-data
 exl-id: 05909ea6-2c93-42ff-9142-1dd14fa6fdec
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '2983'
+source-wordcount: '3009'
 ht-degree: 31%
 
 ---
@@ -23,7 +23,7 @@ Adobe Campaign可讓您以文字、CSV、TAB或XML格式，從一或多個檔案
 
 >[!NOTE]
 >
->您可以使用&#x200B;**[!UICONTROL Import a list]**&#x200B;函式，匯入資料時不必與資料庫資料對應。 然後可透過&#x200B;**[!UICONTROL Read list]**&#x200B;物件將資料僅用於工作流程中。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/read-list.html?lang=zh-Hant){target="_blank"}。
+>您可以使用&#x200B;**[!UICONTROL Import a list]**&#x200B;函式，匯入資料時不必與資料庫資料對應。 然後可透過&#x200B;**[!UICONTROL Read list]**&#x200B;物件將資料僅用於工作流程中。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/read-list.html){target="_blank"}。
 
 匯入助理可以讓您設定匯入、定義其選項（例如資料轉換）並啟動執行。 它是一系列屏幕，其內容取決於匯入類型 (簡單或多個) 和操作員權限。
 
@@ -53,7 +53,7 @@ Adobe Campaign可讓您以文字、CSV、TAB或XML格式，從一或多個檔案
 1. 在&#x200B;**[!UICONTROL Label]**&#x200B;欄位中輸入此匯入的名稱。 您可以添加描述。
 1. 在適當的欄位中選取匯入型別。 有兩種可能的匯入型別： **[!UICONTROL Simple import]**&#x200B;僅匯入一個檔案，以及&#x200B;**[!UICONTROL Multiple import]**&#x200B;在單一執行中匯入多個檔案。
 
-   若要多重匯入，請從匯入助理第一個畫面的&#x200B;**[!UICONTROL Multiple import]**&#x200B;下拉式清單中選取&#x200B;**[!UICONTROL Import type]**。
+   若要多重匯入，請從匯入助理第一個畫面的&#x200B;**[!UICONTROL Import type]**&#x200B;下拉式清單中選取&#x200B;**[!UICONTROL Multiple import]**。
 
    ![](assets/s_ncs_user_import_wizard01_2.png)
 
@@ -87,7 +87,7 @@ Adobe Campaign可讓您以文字、CSV、TAB或XML格式，從一或多個檔案
 
    * **[!UICONTROL Do not update enumerations]**
 
-     選取此選項可避免擴充資料庫中的列舉值清單。 在&#x200B;**Adobe Campaign v8 （主控台）檔案**&#x200B;中進一步瞭解如何[使用分項清單](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}。
+     選取此選項可避免擴充資料庫中的列舉值清單。 在[Adobe Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}中進一步瞭解如何&#x200B;**使用分項清單**。
 
 
 * **[!UICONTROL Variables]**&#x200B;索引標籤
@@ -136,7 +136,7 @@ Adobe Campaign可讓您以文字、CSV、TAB或XML格式，從一或多個檔案
 
 ![](assets/s_ncs_user_import_wizard03_1.png)
 
-* **[!UICONTROL Destination schema]**&#x200B;欄位可讓您選取要匯入資料的結構描述。 此資訊為必填。 按一下&#x200B;**[!UICONTROL Select link]**&#x200B;圖示以選取其中一個現有結構描述。 按一下&#x200B;**[!UICONTROL Edit link]**&#x200B;以顯示所選資料表的內容。
+* **[!UICONTROL Destination schema]**&#x200B;欄位可讓您選取要匯入資料的結構描述。 此資訊是強制性的。 按一下&#x200B;**[!UICONTROL Select link]**&#x200B;圖示以選取其中一個現有結構描述。 按一下&#x200B;**[!UICONTROL Edit link]**&#x200B;以顯示所選資料表的內容。
 * 中央表格會顯示來源檔案中定義的所有欄位。 選取要匯入的欄位，以將目的地檔案與其建立關聯。 可以手動或自動對應這些欄位。
 
   若要手動對應欄位，請按一下核取方塊以選取來源欄位，然後按一下第二欄以啟動與所選欄位相對應的儲存格。 接著，按一下&#x200B;**[!UICONTROL Edit expression]**&#x200B;圖示以顯示目前表格的所有欄位。 選取目的地欄位並按一下&#x200B;**[!UICONTROL OK]**&#x200B;以驗證對應。
@@ -290,7 +290,7 @@ Adobe Campaign可讓您以文字、CSV、TAB或XML格式，從一或多個檔案
 
    1. 匯入到資料夾中
 
-      **[!UICONTROL Edit...]**&#x200B;區段的&#x200B;**[!UICONTROL Import into a folder]**&#x200B;連結可讓您選取或建立收件者將匯入的資料夾。 按照預設，如果未定義分區，則會將資料匯入到操作員的預設資料夾中。
+      **[!UICONTROL Import into a folder]**&#x200B;區段的&#x200B;**[!UICONTROL Edit...]**&#x200B;連結可讓您選取或建立收件者將匯入的資料夾。 按照預設，如果未定義分區，則會將資料匯入到操作員的預設資料夾中。
 
       >[!NOTE]
       >
@@ -310,7 +310,7 @@ Adobe Campaign可讓您以文字、CSV、TAB或XML格式，從一或多個檔案
 
    1. 與清單相關聯
 
-      **[!UICONTROL Edit...]**&#x200B;區段中的&#x200B;**[!UICONTROL Add recipients to a list]**&#x200B;連結可讓您選取或建立收件者將匯入其中的清單。
+      **[!UICONTROL Add recipients to a list]**&#x200B;區段中的&#x200B;**[!UICONTROL Edit...]**&#x200B;連結可讓您選取或建立收件者將匯入其中的清單。
 
       ![](assets/s_ncs_user_import_wizard05_5.png)
 
@@ -322,7 +322,7 @@ Adobe Campaign可讓您以文字、CSV、TAB或XML格式，從一或多個檔案
 
    1. 訂閱服務
 
-      若要讓所有匯入的收件者訂閱資訊服務，請按一下&#x200B;**[!UICONTROL Edit...]**&#x200B;區段的&#x200B;**[!UICONTROL Subscribe recipients to a service]**&#x200B;連結，以選取或建立收件者將訂閱的資訊服務。 您可以選取&#x200B;**[!UICONTROL Send a confirmation message]**&#x200B;選項：此訊息的內容定義在與訂閱服務相關聯的傳遞範本中。
+      若要讓所有匯入的收件者訂閱資訊服務，請按一下&#x200B;**[!UICONTROL Subscribe recipients to a service]**&#x200B;區段的&#x200B;**[!UICONTROL Edit...]**&#x200B;連結，以選取或建立收件者將訂閱的資訊服務。 您可以選取&#x200B;**[!UICONTROL Send a confirmation message]**&#x200B;選項：此訊息的內容定義在與訂閱服務相關聯的傳遞範本中。
 
       ![](assets/s_ncs_user_import_wizard05_7.png)
 

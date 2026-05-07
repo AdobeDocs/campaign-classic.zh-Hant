@@ -8,16 +8,16 @@ level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: b9a716f327b8fdd68c3bf36dbe864535308def30
 workflow-type: tm+mt
-source-wordcount: '281'
-ht-degree: 28%
+source-wordcount: '294'
+ht-degree: 27%
 
 ---
 
 # 最新版本 {#latest-release}
 
-本頁面列出&#x200B;**最新 Campaign Classic v7 版本**&#x200B;的新功能、改善和修正。每個新版本都會提供以顏色具體化的狀態。 請於[本頁](rn-overview.md)進一步了解 Campaign Classic v7 版本編號狀態。
+本頁面列出&#x200B;**最新 Campaign Classic v7 版本**&#x200B;的新功能、改善和修正。 每個新版本都會提供以顏色具體化的狀態。 請於[本頁](rn-overview.md)進一步了解 Campaign Classic v7 版本編號狀態。
 
-## 版本 7.4.3 - 版本編號 9394 {#release-7-4-3}
+## 版本7.4.3 — 版本編號9394 {#release-7-4-3}
 
 [!BADGE 一般可用性]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="一般可用性"}
 
@@ -25,7 +25,7 @@ _2026年3月16日_
 
 >[!CAUTION]
 >
-> 使用者端主控台升級為強制性。
+> 用戶端主控台升級為強制。
 
 ### 安全性改善 {#security-7-4-3}
 

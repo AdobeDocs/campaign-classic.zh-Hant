@@ -9,7 +9,7 @@ hide: true
 exl-id: 8cbb2445-f5e4-4a25-ba7e-56e39ca9d3ce
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '2665'
+source-wordcount: '2672'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ ht-degree: 0%
 
 可以為行銷活動範本、為每個個別行銷活動或傳遞啟用核准。
 
-已在行銷活動範本中選取所有需要核准的工作（**[!UICONTROL Properties]** > **[!UICONTROL Advanced campaign settings...]** > **[!UICONTROL Approvals]**&#x200B;索引標籤）。 除非停用此選項，否則在此也會選取負責核准的操作者並接收通知。 如需詳細資訊，請參閱核准傳遞[的](#approving-processes)步驟。
+已在行銷活動範本中選取所有需要核准的工作（**[!UICONTROL Properties]** > **[!UICONTROL Advanced campaign settings...]** > **[!UICONTROL Approvals]**&#x200B;索引標籤）。 除非停用此選項，否則在此也會選取負責核准的操作者並接收通知。 如需詳細資訊，請參閱核准傳遞](#approving-processes)的[步驟。
 
 可針對使用此範本建立的每個行銷活動覆寫這些設定，也可針對每個行銷活動傳遞覆寫這些設定：按一下「**[!UICONTROL Properties]**」按鈕，然後按一下「**[!UICONTROL Approvals]**」標籤。
 
@@ -70,7 +70,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->其他所有具有[!DNL Adobe Campaign]許可權的&#x200B;**[!UICONTROL Administrator]**&#x200B;操作員也可以核准工作，但他們不會收到通知。\
+>其他所有具有&#x200B;**[!UICONTROL Administrator]**&#x200B;許可權的[!DNL Adobe Campaign]操作員也可以核准工作，但他們不會收到通知。\
 >依預設，如果已定義核准操作員，行銷活動經理無法執行核准或開始傳送。 您可以建立具有&#x200B;**1**&#x200B;值的&#x200B;**NmsCampaign_Activate_OwnerConfirmation**&#x200B;選項，修改此行為並授權行銷活動經理核准/開始傳遞。
 
 ## 核准模式 {#approval-modes}
@@ -107,15 +107,15 @@ ht-degree: 0%
 
 此資訊包括以下幾個位置：
 
-* 在行銷活動核准記錄中，**[!UICONTROL Approvals]**&#x200B;索引標籤的&#x200B;**[!UICONTROL Edit > Tracking]**&#x200B;子索引標籤：
+* 在行銷活動核准記錄中，**[!UICONTROL Edit > Tracking]**&#x200B;索引標籤的&#x200B;**[!UICONTROL Approvals]**&#x200B;子索引標籤：
 
   ![行銷活動核准記錄清單](assets/s_user_validation_log_from_op.png)
 
-* 在行銷活動傳遞記錄中，**[!UICONTROL Deliveries]**&#x200B;索引標籤的&#x200B;**[!UICONTROL Edit > Tracking]**&#x200B;子索引標籤：
+* 在行銷活動傳遞記錄中，**[!UICONTROL Edit > Tracking]**&#x200B;索引標籤的&#x200B;**[!UICONTROL Deliveries]**&#x200B;子索引標籤：
 
   ![具有核准狀態的傳遞記錄清單](assets/s_user_validation_log_from_delivery_list.png)
 
-* 按一下&#x200B;**[!UICONTROL Hide/show log]**&#x200B;索引標籤的&#x200B;**[!UICONTROL Summary]**&#x200B;選項，即可檢視每個傳遞的核准狀態。
+* 按一下&#x200B;**[!UICONTROL Summary]**&#x200B;索引標籤的&#x200B;**[!UICONTROL Hide/show log]**&#x200B;選項，即可檢視每個傳遞的核准狀態。
 
   ![顯示核准記錄檔的傳遞摘要](assets/s_user_validation_log_delivery.png)
 
@@ -163,7 +163,7 @@ ht-degree: 0%
 
 ### 通知內容 {#notification-content}
 
-通知內容已在特定範本中定義： **[!UICONTROL Notification of validations for the marketing campaign]**。 此範本儲存在&#x200B;**[!UICONTROL Administration > Campaign management > Technical delivery templates]**&#x200B;樹狀結構的[!DNL Adobe Campaign]資料夾中。
+通知內容已在特定範本中定義： **[!UICONTROL Notification of validations for the marketing campaign]**。 此範本儲存在[!DNL Adobe Campaign]樹狀結構的&#x200B;**[!UICONTROL Administration > Campaign management > Technical delivery templates]**&#x200B;資料夾中。
 
 ## 檢閱及核准傳遞 {#checking-and-approving-deliveries}
 
@@ -335,7 +335,7 @@ ht-degree: 0%
 
    要執行此操作，他們可以：
 
-   * 透過&#x200B;**[!UICONTROL Available content]**&#x200B;主控台按一下[!DNL Adobe Campaign]連結。
+   * 透過[!DNL Adobe Campaign]主控台按一下&#x200B;**[!UICONTROL Available content]**&#x200B;連結。
 
      ![讓內容可用的主控台連結](assets/s_ncs_user_validation_submit_content_available.png)
 
@@ -353,7 +353,7 @@ ht-degree: 0%
 
 #### 外部內容核准 {#external-content-approval}
 
-此選項可讓您定義負責核准傳遞呈現（例如品牌通訊一致性、費率等）的外部運運算元。 在核准設定視窗中選取&#x200B;**[!UICONTROL External content approval]**&#x200B;選項時，在內容核准與將通知傳送給行銷活動負責人之間會新增數個核准步驟：
+此選項可讓您定義負責核准傳遞呈現（例如品牌通訊一致性、費率等）的外部運運算元。在核准設定視窗中選取&#x200B;**[!UICONTROL External content approval]**&#x200B;選項時，在內容核准與將通知傳送給行銷活動負責人之間會新增數個核准步驟：
 
 1. 外部內容管理員會收到通知電子郵件，告知他們內容已核准並請求外部核准。
 1. 通知電子郵件包含已傳送校樣的連結（可讓您檢視傳遞呈現），以及核准或拒絕傳遞內容的按鈕。

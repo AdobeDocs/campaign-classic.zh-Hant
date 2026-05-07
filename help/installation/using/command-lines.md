@@ -9,7 +9,7 @@ topic-tags: appendices
 exl-id: 5cd4abb0-2bd2-4b23-902c-41b08a1d2f7a
 source-git-commit: f032ed3bdc0b402c8281bc34e6cb29f3c575aaf9
 workflow-type: tm+mt
-source-wordcount: '145'
+source-wordcount: '144'
 ht-degree: 4%
 
 ---
@@ -30,7 +30,7 @@ nlserver config -addinstance:instance/masques DNS[/lang]
 
 （**eng**&#x200B;和&#x200B;**fra**&#x200B;可能是`[lang]`引數的值）
 
-命令&#x200B;**nlserver config -addinstance：instance1/demo&#42;/eng**&#x200B;可讓您使用DNS遮罩示範&#42;以英文建立名為&#x200B;**instance1**&#x200B;的執行個體。
+命令&#x200B;**nlserver config -addinstance:instance1/demo&#42;/eng**&#x200B;可讓您使用DNS遮罩示範&#42;以英文建立名為&#x200B;**instance1**&#x200B;的執行個體。
 
 ## 宣告資料庫 {#declaring-a-database}
 

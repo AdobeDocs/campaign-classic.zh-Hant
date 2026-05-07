@@ -7,7 +7,7 @@ hide: true
 exl-id: bc64ca11-2c50-4896-b6c6-ae42c0315924
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '418'
+source-wordcount: '436'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,7 @@ ht-degree: 1%
    ![](assets/subworkflow_selection.png)
 
 1. 您也可以新增設定指令碼，以變更參考的工作流程。
-1. 按一下 **[!UICONTROL Ok]**。它會從選取的工作流程中，以&#x200B;**[!UICONTROL Jump (start point)]**&#x200B;活動的標籤自動建立出站轉變。
+1. 按一下 **[!UICONTROL Ok]**。 它會從選取的工作流程中，以&#x200B;**[!UICONTROL Jump (start point)]**&#x200B;活動的標籤自動建立出站轉變。
 
    ![](assets/subworkflow_outbound.png)
 

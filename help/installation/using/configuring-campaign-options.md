@@ -9,7 +9,7 @@ topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
 source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
-source-wordcount: '3834'
+source-wordcount: '3898'
 ht-degree: 1%
 
 ---
@@ -57,11 +57,11 @@ ht-degree: 1%
   </tr>
   <tr> 
    <td> <span class="uicontrol">NMS_ActivateOwnerConfirmation</span> <br /> </td> 
-   <td><p> 可讓您允許負責傳遞的運運算元確認傳送（若指定的特定運運算元或運運算元群組用於傳遞的屬性中開始傳遞）。</p><p> 若要這麼做，請輸入"1"作為值來啟動選項。 若要停用此選項，請輸入「0」。</p><p> 然後，傳送確認程式將依預設運作：只有傳送屬性中針對傳送指定的操作員或操作員群組（或管理員）才能確認並執行傳送。 請參閱<a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html?lang=zh-Hant#start-a-delivery" target="_blank">本節</a>。</p> </td>
+   <td><p> 可讓您允許負責傳遞的運運算元確認傳送（若指定的特定運運算元或運運算元群組用於傳遞的屬性中開始傳遞）。</p><p> 若要這麼做，請輸入"1"作為值來啟動選項。 若要停用此選項，請輸入「0」。</p><p> 然後，傳送確認程式將依預設運作：只有傳送屬性中針對傳送指定的操作員或操作員群組（或管理員）才能確認並執行傳送。 請參閱<a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html#start-a-delivery" target="_blank">本節</a>。</p> </td>
 
 <tr> 
    <td> <span class="uicontrol">Nms_DefaultRcpSchema</span> <br /> </td> 
-   <td> Adobe Campaign使用「Nms_DefaultRcpSchema」全域變數與預設收件者資料庫(nms：recipient)對話。<br />選項值必須對應至符合外部收件者資料表的結構描述名稱。<br /> </td> 
+   <td> Adobe Campaign使用「Nms_DefaultRcpSchema」全域變數與預設收件者資料庫(nms：recipient)對話。<br /> 選項值必須對應到符合外部收件者資料表的結構描述名稱。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBilling_MainActionThreshold</span> <br /> </td> 
@@ -149,7 +149,7 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_ExpOrganization</span> <br /> </td> 
-   <td> 客戶的一般名稱。 用於顯示給收件者的部分警告訊息。<br /> 「您收到此郵件是因為您曾與'Organization'或附屬公司連絡。 不再接收來自'Organization'<br />的訊息 </td> 
+   <td> 客戶的一般名稱。 用於顯示給收件者的部分警告訊息。<br /> 「您收到此訊息是因為您曾與'Organization'或附屬公司聯絡。 不再接收來自'Organization'<br />的訊息 </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_FromName</span> <br /> </td> 
@@ -173,7 +173,7 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsInmail_AllowlistEmails</span> <br /> </td> 
-   <td> 授權轉寄電子郵件地址的清單（來自傳入郵件處理模組）。 位址必須以逗號分隔（或*以允許全部）。 例如xyz@abc.com，pqr@abc.com.<br /> </td> 
+   <td> 授權轉寄電子郵件地址的清單（來自傳入郵件處理模組）。 位址必須以逗號分隔（或*以允許全部）。 E.g. xyz@abc.com，pqr@abc.com.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsLine_AESKey</span> <br /> </td> 
@@ -209,7 +209,7 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_DeliveryPreparationWindow</span> <br /> </td> 
-   <td><p>計算執行中的傳遞數目時，<span class="uicontrol"><a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html?lang=zh-Hant" target="_blank">operationMgt</a></span>技術工作流程會使用此選項。</p>它可讓您定義天數，超過該天后，狀態不一致的傳送會從執行中的傳送計數中排除。</p><p>預設情況下，此值會設為「7」，這表示將排除超過7天的不一致傳送。</p></td> 
+   <td><p>計算執行中的傳遞數目時，<span class="uicontrol"><a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html" target="_blank">operationMgt</a></span>技術工作流程會使用此選項。</p>它可讓您定義天數，超過該天后，狀態不一致的傳送會從執行中的傳送計數中排除。</p><p>預設情況下，此值會設為「7」，這表示將排除超過7天的不一致傳送。</p></td> 
   </tr>
   <tr> 
    <td> <span class="uicontrol">NmsPaper_SenderLine1</span> <br /> </td> 
@@ -233,7 +233,7 @@ ht-degree: 1%
   </tr>
   <tr> 
    <td> <span class="uicontrol">NmsServer_MirrorPageUrl</span> <br /> </td> 
-   <td> 映象頁面伺服器的URL （預設應與NmsTracking_ServerUrl相同）。<br />路由定義中未指定URL時，此為電子郵件傳遞的預設值。<br /> </td> 
+   <td> 映象頁面伺服器的URL （預設應與NmsTracking_ServerUrl相同）。<br /> 路由定義中未指定URL時，這是電子郵件傳遞的預設值。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsSMS_Priority</span> <br /> </td> 
@@ -313,11 +313,11 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NcmPublishingDir</span> <br /> </td> 
-   <td> 出版物的根資料夾。<br />有關HTML和文字內容產生的詳細資訊，請參閱<a href="../../delivery/using/using-a-content-template.md">本節</a>。<br /> </td> 
+   <td> 發行集的根資料夾。<br /> 如需HTML和文字內容產生的詳細資訊，請參閱<a href="../../delivery/using/using-a-content-template.md">本節</a>。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkImageUrl</span> <br /> </td> 
-   <td> 可讓您定義儲存傳送中所用影像的伺服器，讓瀏覽器能夠取得。<br />對於組建版本&lt;= 5098，我們會使用已上傳至執行個體的影像URL。<br />若為組建版本&gt; 5098，我們會改用傳遞的公用URL或<span class="uicontrol">XtkFileRes_Public_URL</span>選項的URL。<br /> </td> 
+   <td> 可讓您定義儲存傳遞中所用影像的伺服器，讓瀏覽器可以取得這些影像。<br /> 若為組建版本&lt;= 5098，我們會使用已上傳至執行個體的影像URL。<br /> 若為組建版本&gt; 5098，我們會改用傳送的公用URL或<span class="uicontrol">XtkFileRes_Public_URL</span>選項的URL。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_MediaInstance</span> <br /> </td> 
@@ -366,7 +366,7 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_OperationMgtDebug</span> <br /> </td> 
-   <td> 可讓您監視<a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html?lang=zh-Hant" target="_blank">operationMgt</a>技術工作流程執行。 啟動時（值為「1」），執行資訊會記錄在工作流程稽核記錄中。<br /> </td> 
+   <td> 可讓您監視<a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html" target="_blank">operationMgt</a>技術工作流程執行。 啟動時（值為「1」），執行資訊會記錄在工作流程稽核記錄中。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_TimeRange</span> <br /> </td> 
@@ -693,7 +693,7 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NlMigration_KeepFolderStructure</span> <br /> </td> 
-   <td> 在移轉期間，樹狀結構會根據新版本標準自動重新組織。<br />此選項可讓您停用導覽樹狀結構的自動移轉。 如果使用它，移轉後您必須刪除過時的資料夾、新增資料夾並執行所有必要的檢查。<br /> 
+   <td> 移轉期間，樹狀結構會根據新版本標準自動重新組織。<br /> 此選項可讓您停用導覽樹狀結構的自動移轉。 如果使用它，移轉後您必須刪除過時的資料夾、新增資料夾並執行所有必要的檢查。<br /> 
     <ul> 
      <li> <p> <span class="uicontrol">資料型別：</span>整數</p> </li> 
      <li> <p> <span class="uicontrol">值（文字）</span> ： 1 </p> </li> 
@@ -742,11 +742,11 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">TNT_EdgeServer</span> <br /> </td> 
-   <td> 用於整合的Adobe Target伺服器。 依預設，已選取此選項。 此值對應至Adobe Target網域伺服器，然後是值/m2。 例如： tt.omtrdc.net/m2。<br />請參閱<a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">此節</a>.<br /> </td> 
+   <td> 用於整合的Adobe Target伺服器。 依預設，已選取此選項。 此值對應至Adobe Target網域伺服器，然後是值/m2。 例如： tt.omtrdc.net/m2.<br /> 請參閱<a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">此節</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">TNT_TenantName</span> <br /> </td> 
-   <td> Adobe Target組織名稱。 此值對應至Adobe Target使用者端的名稱。<br />請參閱<a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">此節</a>.<br /> </td> 
+   <td> Adobe Target組織名稱。 此值對應至Adobe Target使用者端的名稱。<br /> 請參閱<a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">此節</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">AAM_DataSourceId</span> <br /> </td> 
@@ -783,11 +783,11 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsInteraction_LastPropositionSynchControl_</span> <br /> </td> 
-   <td> '+ [主張的結構描述] + "_" + extAccountSource。@executionInstanceId + [主張的結構描述] + "_" + vars.executionInstanceIdFilter<br /> </td> 
+   <td> '+ [主張的結構描述] + "_" + extAccountSource.@executionInstanceId + [主張的結構描述] + "_" + vars.executionInstanceIdFilter<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsInteraction_LastPropositionSynchExec_</span> <br /> </td> 
-   <td> '+ [主張的結構描述] + "_" + extAccountSource。@executionInstanceId + "_" + extAccountTarget。@executionInstanceId<br /> </td> 
+   <td> '+ [主張的結構描述] + "_" + extAccountSource.@executionInstanceId + "_" + extAccountTarget.@executionInstanceId<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsInteraction_SynchWorkflowIds</span> <br /> </td> 

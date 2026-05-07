@@ -10,7 +10,7 @@ topic-tags: tasks--resources-and-budgets
 exl-id: 6765e307-915a-44d2-a486-85c64e8ec52e
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '2488'
+source-wordcount: '2489'
 ht-degree: 0%
 
 ---
@@ -65,7 +65,7 @@ Adobe Campaign可讓您控制已排程、已確認及已開立商業發票的行
 
 * 費用
 
-  建立費用類別，將行銷活動、任務等成本指派給此預算。 可連結。 檢視[費用類別](#expense-categories)。
+  建立費用類別，將行銷活動、任務等指派給此預算的成本可連結至該類別。 檢視[費用類別](#expense-categories)。
 
   ![](assets/s_ncs_user_budget_create_and_save.png)
 
@@ -192,7 +192,7 @@ Adobe Campaign可讓您控制已排程、已確認及已開立商業發票的行
 
 1. 計算成本
 
-   計算的成本取決於相關的元素（行銷活動、傳遞、任務等）及其狀態（正在編輯、進行中、已完成）。 在任何情況下，如果指定了實際成本，則計算的成本將使用此金額。
+   計算的成本取決於相關的元素（行銷活動、傳遞、任務等） 及其狀態（正在編輯、進行中、已完成）。 在任何情況下，如果指定了實際成本，則計算的成本將使用此金額。
 
    如果未提供實際成本，則套用下列規則：
 
@@ -227,7 +227,7 @@ Adobe Campaign可讓您控制已排程、已確認及已開立商業發票的行
 
 1. 透過&#x200B;**[!UICONTROL Campaign management > Budgets]**&#x200B;節點建立新預算。
 
-1. 在&#x200B;**[!UICONTROL Allocated]**&#x200B;區段的&#x200B;**[!UICONTROL Amounts]**&#x200B;欄位中定義10,000歐元的預算。 在視窗的下半部新增兩個費用類別：
+1. 在&#x200B;**[!UICONTROL Amounts]**&#x200B;區段的&#x200B;**[!UICONTROL Allocated]**&#x200B;欄位中定義10,000歐元的預算。 在視窗的下半部新增兩個費用類別：
 
 ![](assets/s_user_cost_mgmt_sample_1.png)
 

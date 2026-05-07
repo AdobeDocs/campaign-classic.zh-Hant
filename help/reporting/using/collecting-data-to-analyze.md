@@ -24,7 +24,7 @@ ht-degree: 5%
 1. 處理清單中包含的資料。
 1. 使用現有Cube中包含的資料。
 
-方法的選擇取決於計算型別、資料量及其耐久性等。 必須仔細檢查所有這些引數，以避免Adobe Campaign資料庫超載，並最佳化已建立報告的產生和操作。 如需詳細資訊，請參閱[此頁面](../../reporting/using/best-practices.md#optimizing-report-creation)。
+方法的選擇取決於計算型別、資料量及其耐久性等。必須仔細檢查所有這些引數，以避免Adobe Campaign資料庫超載，並最佳化已建立報告的產生和操作。 如需詳細資訊，請參閱[此頁面](../../reporting/using/best-practices.md#optimizing-report-creation)。
 
 在所有情況下，資料都是透過&#x200B;**[!UICONTROL Query]**&#x200B;型別活動所收集。
 

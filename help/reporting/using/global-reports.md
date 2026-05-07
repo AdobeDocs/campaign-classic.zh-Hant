@@ -7,8 +7,8 @@ feature: Reporting, Monitoring
 exl-id: 6839fd7e-ecf4-4504-90a8-0207bc3991e4
 source-git-commit: 2186b8a30449cb023cb07305ba64d53f2c8adab1
 workflow-type: tm+mt
-source-wordcount: '2292'
-ht-degree: 7%
+source-wordcount: '2330'
+ht-degree: 8%
 
 ---
 
@@ -44,19 +44,19 @@ ht-degree: 7%
 
 ## 傳遞總處理能力 {#delivery-throughput}
 
-此報表包含指定期間內整個平台的傳遞輸送量資訊。 若要測量訊息傳遞的速度，標準是每小時傳送的訊息數和訊息的大小 (以位元/秒為單位)。在下面的範例中，第一個圖表以藍色顯示成功傳遞，以橘色顯示錯誤傳遞的數量。
+此報表包含指定期間內整個平台的傳遞輸送量資訊。 若要測量訊息傳遞的速度，標準是每小時傳送的訊息數和訊息的大小 (以位元/秒為單位)。 在下面的範例中，第一個圖表以藍色顯示成功傳遞，以橘色顯示錯誤傳遞的數量。
 
 ![](assets/s_ncs_user_report_toolbar.png)
 
-您可以透過變更時程來設定顯示的值：1小時檢視、3小時檢視、24小時檢視等。 按一下&#x200B;**[!UICONTROL Refresh]**&#x200B;以確認您的選擇。
+您可以透過變更時程來設定顯示的值：1小時檢視、3小時檢視、24小時檢視等。按一下&#x200B;**[!UICONTROL Refresh]**&#x200B;以確認您的選擇。
 
 >[!NOTE]
 >
->如果您的執行個體託管於AWS，您也可以使用Campaign Classic [控制面板](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html?lang=zh-Hant)監控每小時傳送的傳遞數目。 若要檢查您的執行個體是否託管在 AWS 上，請按照[本頁面](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hant)詳述的步驟操作。
+>如果您的執行個體託管於AWS，您也可以使用Campaign Classic [控制面板](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html)監控每小時傳送的傳遞數目。 若要檢查您的執行個體是否託管在 AWS 上，請按照[本頁面](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hant)詳述的步驟操作。
 >
 >所有管理員使用者都可存取控制面板。 授予使用者管理員存取權限的步驟已詳載於[本頁](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hant#discover-control-panel)中。
 >
->請注意，您的執行個體必須升級為最新的[Gold Standard](../../rn/using/gold-standard.md)組建或[最新的GA組建(21.1.3)](../../rn/using/latest-release.md)。 在[本節](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中瞭解如何確認您的版本。
+>請注意，您的執行個體必須升級為最新的[Gold Standard](../../rn/using/gold-standard.md)組建或[最新的GA組建(21.1.3)](../../rn/using/latest-release.md)。 在[本章節](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中瞭解如何確認您的版本。
 
 ## 使用者活動 {#user-activities}
 
@@ -126,7 +126,7 @@ ht-degree: 7%
 
 >[!NOTE]
 >
->此報告中顯示的網域名稱是在多維資料庫層級定義的。 若要變更這些值，請編輯&#x200B;**[!UICONTROL Delivery logs (broadlogrcp)]** Cube。 如需詳細資訊，請參閱[本節](../../reporting/using/ac-cubes.md)。 **[!UICONTROL Others]**&#x200B;類別包含不屬於特定類別的網域名稱。
+>此報告中顯示的網域名稱是在多維資料庫層級定義的。 若要變更這些值，請編輯&#x200B;**[!UICONTROL Delivery logs (broadlogrcp)]** Cube。 如需詳細資訊，請參閱[本章節](../../reporting/using/ac-cubes.md)。 **[!UICONTROL Others]**&#x200B;類別包含不屬於特定類別的網域名稱。
 
 ## 瀏覽器 {#browsers}
 
@@ -167,9 +167,9 @@ ht-degree: 7%
 
 ### 分享至社交網路 {#sharing-to-social-networks}
 
-病毒式行銷可讓傳遞收件者與其聯絡網路共用資訊：他們可以將連結新增至其設定檔(Facebook、X （先前稱為Twitter等），或傳送訊息給朋友。 在傳遞中會追蹤每個共用和每個共用資訊的存取。 如需病毒式行銷的詳細資訊，請參閱[本節](../../delivery/using/viral-and-social-marketing.md)。
+病毒式行銷可讓傳遞收件者與其聯絡網路共用資訊：他們可以將連結新增至其設定檔（Facebook、X — 先前稱為Twitter等） 或傳送訊息給朋友。 在傳遞中會追蹤每個共用和每個共用資訊的存取。 如需病毒式行銷的詳細資訊，請參閱[本節](../../delivery/using/viral-and-social-marketing.md)。
 
-此報表顯示每個社交網路（Facebook、X等）及/或每封電子郵件的共用和開啟訊息劃分。
+此報表顯示每個社交網路（Facebook、X等）的共用和開啟訊息劃分 和/或每封電子郵件。
 
 ![](assets/s_ncs_user_social_report.png)
 
@@ -202,7 +202,7 @@ ht-degree: 7%
 
 ## 共用活動的統計資料 {#statistics-on-sharing-activities}
 
-此報表顯示分享及時演化為社交網路（Facebook、X — 先前稱為Twitter、電子郵件等）。
+此報表顯示分享至社交網路（Facebook、X — 先前稱為Twitter、電子郵件等）的進化 時間。
 
 如需病毒式行銷的詳細資訊，請參閱[本節](../../delivery/using/viral-and-social-marketing.md)。
 
@@ -302,7 +302,7 @@ ht-degree: 7%
 
 ## 開啟次數的劃分 {#breakdown-of-opens}
 
-此報表顯示相關期間內依作業系統、裝置和瀏覽器劃分的開啟專案。 每個類別有兩個圖表。第一個圖表顯示在電腦和行動裝置上的開啟數統計資料。第二個圖表僅顯示在行動裝置上的開啟數統計資料。
+此報表顯示相關期間內依作業系統、裝置和瀏覽器劃分的開啟專案。 每個類別有兩個圖表。 第一個圖表顯示在電腦和行動裝置上的開啟數統計資料。 第二個圖表僅顯示在行動裝置上的開啟數統計資料。
 
 開啟次數與開啟的訊息總數相對應。 不計入文字格式的電子郵件。 如需追蹤開啟的詳細資訊，請參閱[追蹤開啟](../../reporting/using/indicator-calculation.md#tracking-opens-)區段。
 

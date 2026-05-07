@@ -7,8 +7,8 @@ feature: Web Apps, Web Forms, Landing Pages, Email Design
 exl-id: c1eccb48-59bf-412f-9c18-9cda2a022096
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '563'
-ht-degree: 3%
+source-wordcount: '571'
+ht-degree: 4%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 3%
 
   ![](assets/dce_sidebar_inputtypechanges.png)
 
-  這個網站[&#128279;](https://www.w3schools.com/tags/att_input_type.asp)中的&#39;type&#39;屬性正式清單為。
+  這個網站](https://www.w3schools.com/tags/att_input_type.asp)中的&#39;type&#39;屬性正式清單為[。
 
 * 使用DCE模擬結束頁面的步驟：
 
@@ -68,7 +68,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->HTML內碼表必須在中繼標籤(HTML4或HTML5)或BOM中定義。 如果沒有可用的程式碼頁，請以latin1開啟檔案。
+>HTML程式碼頁面必須在中繼標籤（HTML 4或HTML 5）或BOM中定義。 如果沒有可用的程式碼頁，請以latin1開啟檔案。
 
 ## HTML內容狀態 {#html-content-statuses}
 

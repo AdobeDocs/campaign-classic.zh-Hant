@@ -6,8 +6,8 @@ feature: Transactional Messaging, Message Center
 exl-id: dc52e789-d0bf-4e8f-b448-9d69a2762cc1
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '641'
-ht-degree: 4%
+source-wordcount: '660'
+ht-degree: 7%
 
 ---
 
@@ -24,11 +24,11 @@ ht-degree: 4%
 
 異動訊息功能的設計可支援擴充性並提供7天24小時的服務。
 
-* **何時到期？**&#x200B;因為此訊息包含重要資訊，所以使用者預期訊息會即時傳送。 因此，觸發的事件與到達的訊息之間的延遲必須非常短。
+* **何時到期？** 由於此訊息包含重要資訊，使用者預期會即時傳送。 因此，觸發的事件與到達的訊息之間的延遲必須非常短。
 
-* **為什麼這很重要？**&#x200B;一般而言，交易式訊息的開啟率很高。 因此，應謹慎設計，因為它在定義使用者端關係時可能對客戶行為產生強烈影響。
+* **為什麼這很重要？** 一般而言，交易式訊息具有高開啟率。 因此，應謹慎設計，因為它在定義使用者端關係時可能對客戶行為產生強烈影響。
 
-* **例如？**&#x200B;可能是建立帳戶後的歡迎訊息、訂單已送出的確認、發票、確認密碼變更的訊息、客戶瀏覽您的網站後的通知、產品無法使用通訊、帳戶宣告等。
+* **例如？** 可能是建立帳戶後的歡迎訊息、確認訂單已出貨、發票、確認密碼變更的訊息、客戶瀏覽您的網站後的通知、產品無法使用通訊、帳戶宣告等。
 
 >[!IMPORTANT]
 >
@@ -88,6 +88,6 @@ Adobe Campaign可讓您傳送通知電子郵件給已將產品新增至購物車
 ## 相關主題 {#related-topics}
 
 * [開始使用通訊頻道](../../delivery/using/communication-channels.md)
-* [傳遞建立金鑰步驟](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hant){target="_blank"}
+* [傳遞建立關鍵步驟](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hant){target="_blank"}
 * [異動訊息傳送架構](../../message-center/using/transactional-messaging-architecture.md)
 * [關於異動訊息傳送報告](../../message-center/using/about-transactional-messaging-reports.md)

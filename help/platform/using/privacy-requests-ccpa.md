@@ -10,8 +10,8 @@ topic-tags: starting-with-adobe-campaign
 exl-id: 8e308a9f-14a4-4a25-9fd0-8d4bdbcf74ce
 source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
 workflow-type: tm+mt
-source-wordcount: '569'
-ht-degree: 94%
+source-wordcount: '591'
+ht-degree: 93%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 94%
 
 **加州消費者隱私保護法 (CCPA)** 為加州居民提供新的個資權利，並對在加州經營業務的特定實體賦予資料保護責任。
 
-GDPR 和 CCPA 都很常使用存取及刪除要求的設定與使用情況。本節說明專屬於 CCPA 的選擇退出個人資訊銷售。
+GDPR 和 CCPA 都很常使用存取及刪除要求的設定與使用情況。 本節說明專屬於 CCPA 的選擇退出個人資訊銷售。
 
 除了 Adobe Campaign 提供的[同意管理](privacy-management.md#consent-management)工具以外，您還可以追蹤消費者是否選擇退出個人資訊銷售。
 
@@ -31,11 +31,11 @@ GDPR 和 CCPA 都很常使用存取及刪除要求的設定與使用情況。本
 
 >[!IMPORTANT]
 >
->您身為資料控制方，有責任接收資料主體的要求並追蹤 CCPA 的要求日期。身為技術提供者，我們只提供選擇退出的方式。有關您擔任資料控制方的詳細資訊，請參閱[個人資料和角色](privacy-and-recommendations.md#personal-data)。
+>您身為資料控制方，有責任接收資料主體的要求並追蹤 CCPA 的要求日期。 身為技術提供者，我們只提供選擇退出的方式。 有關您擔任資料控制方的詳細資訊，請參閱[個人資料和角色](privacy-and-recommendations.md#personal-data)。
 
 ## 先決條件 {#ccpa-prerequisite}
 
-您需要在 Adobe Campaign Classic 中建立此欄位，才能善用此資訊。為此，您將向 **[!UICONTROL Recipient]** 表格新增一個布林欄位。 建立新欄位時，Campaign API 會自動支援該欄位。
+您需要在 Adobe Campaign Classic 中建立此欄位，才能善用此資訊。 為此，您將向 **[!UICONTROL Recipient]** 表格新增一個布林欄位。 建立新欄位時，Campaign API 會自動支援該欄位。
 
 如果您使用自訂收件者表格，您也需要執行此作業。
 
@@ -87,7 +87,7 @@ GDPR 和 CCPA 都很常使用存取及刪除要求的設定與使用情況。本
 
    ![](assets/privacy-ccpa-6.png)
 
-1. 您可以按一下該欄位，以依據選擇退出資訊來排序收件者。您也可以建立篩選，只顯示已選擇退出的收件者。 如需篩選器的詳細資訊，請參閱[Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/audience/create-filters){target=_blank}。
+1. 您可以按一下該欄位，以依據選擇退出資訊來排序收件者。 您也可以建立篩選，只顯示已選擇退出的收件者。 如需篩選器的詳細資訊，請參閱[Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}。
 
 
    ![](assets/privacy-ccpa-7.png)

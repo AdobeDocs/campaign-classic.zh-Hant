@@ -7,7 +7,7 @@ role: Developer
 exl-id: e05dcd81-bbca-4767-8da3-ea064f7f6c8e
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '924'
+source-wordcount: '935'
 ht-degree: 2%
 
 ---
@@ -176,7 +176,7 @@ ht-degree: 2%
 
 ## 範例：在連結上建立索引鍵 {#example-5}
 
-在此範例中，我們在具有:companyxlink **屬性的連結（「company」至「cus**」結構描述）上建立索引鍵，以及(「email」)表格的欄位：
+在此範例中，我們在具有&#x200B;**xlink**&#x200B;屬性的連結（「company」至「cus:company」結構描述）上建立索引鍵，以及(「email」)表格的欄位：
 
 ```sql
 <srcSchema name="recipient" namespace="cus">

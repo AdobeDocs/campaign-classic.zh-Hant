@@ -7,7 +7,7 @@ feature: Web Forms
 exl-id: 37aaaa03-0656-4a9b-bcae-74de33e3737b
 source-git-commit: 1d4990917fea54e67ed23cd0771295de03a4f01a
 workflow-type: tm+mt
-source-wordcount: '1375'
+source-wordcount: '1379'
 ht-degree: 1%
 
 ---
@@ -104,7 +104,7 @@ ht-degree: 1%
 
 這些影像會放置在執行個體&#x200B;*datakit\nms\fra\img\activities*&#x200B;或&#x200B;*datakit\nms\eng\img\activities*&#x200B;的後端目錄中（eng或fra，視執行個體的語言而定）。
 
-若要在此目錄（以及影像中）中使用新影像，請聯絡Adobe支援以變更後端目錄。
+若要在此目錄（和影像中）中使用新影像，請聯絡Adobe支援以變更後端目錄。
 
 對於內部部署執行個體，您可以自行將影像新增至Datakit。
 

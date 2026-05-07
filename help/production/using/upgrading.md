@@ -10,8 +10,8 @@ topic-tags: updating-adobe-campaign
 exl-id: 4aaa6256-256a-441d-80c9-430f8e427875
 source-git-commit: 0da7fb912a909af222d796652efba4b30e39dc1c
 workflow-type: tm+mt
-source-wordcount: '1220'
-ht-degree: 2%
+source-wordcount: '1281'
+ht-degree: 6%
 
 ---
 
@@ -125,7 +125,7 @@ ht-degree: 2%
 
 >[!AVAILABILITY]
 >
->從 v7.4.1 版開始，Campaign 不再包含 RPM Linux 套件的 XML 資料庫。您必須安裝這些程式庫。
+>從 v7.4.1 版開始，Campaign 不再包含 RPM Linux 套件的 XML 資料庫。 您必須安裝這些程式庫。
 > 
 
 然後，您可以安裝所需的套件，如下所述：

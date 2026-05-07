@@ -7,8 +7,8 @@ role: Developer
 exl-id: 7aa2aef1-2eb6-48a6-82fa-4451bed66216
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '644'
-ht-degree: 3%
+source-wordcount: '665'
+ht-degree: 4%
 
 ---
 
@@ -23,7 +23,7 @@ Adobe Campaign API可用於應用程式內的JavaScript以及應用程式外的S
 >[!IMPORTANT]
 >
 >授權引擎每日的通話次數視您的授權合約而定。 如需詳細資訊，請參閱[此頁面](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-campaign-classic---product-description.html)。\
->[此專屬檔案]&#x200B;(https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hant)提供所有API的清單，包括其完整說明。
+>[此專屬檔案]&#x200B;(https://experienceleague.adobe.com/developer/campaign-api/api/index.html)提供所有API的清單，包括其完整說明。
 
 ## 先決條件 {#prerequisites}
 
@@ -38,9 +38,9 @@ Adobe Campaign API可用於應用程式內的JavaScript以及應用程式外的S
 Adobe Campaign使用兩種型別的API：
 
 * 用於查詢資料模型資料的一般資料存取API。 請參閱[資料導向API](../../configuration/using/data-oriented-apis.md)。
-* 業務特定API可讓您對每個物件執行動作：傳送、工作流程、訂閱等。 請參閱[商業導向API](../../configuration/using/business-oriented-apis.md)。
+* 業務特定API可讓您對每個物件執行動作：傳送、工作流程、訂閱等。請參閱[商業導向API](../../configuration/using/business-oriented-apis.md)。
 
-為了開發API並與Adobe Campaign互動，您需要熟悉您的資料模型。 Adobe Campaign可讓您產生基底的完整說明。 請參閱模型[的](../../configuration/using/data-oriented-apis.md#description-of-the-model)描述。
+為了開發API並與Adobe Campaign互動，您需要熟悉您的資料模型。 Adobe Campaign可讓您產生基底的完整說明。 請參閱模型](../../configuration/using/data-oriented-apis.md#description-of-the-model)的[描述。
 
 ## SOAP 呼叫 {#soap-calls}
 

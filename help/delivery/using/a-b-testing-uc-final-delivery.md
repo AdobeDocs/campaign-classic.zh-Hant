@@ -26,4 +26,4 @@ ht-degree: 5%
 
 透過準備轉變中指定的傳遞（透過&#x200B;**[!UICONTROL Javascript Code]**&#x200B;活動定義），您就可以核准它並開始傳送，如下一個步驟所述。
 
-您現在可以開始工作流程。 [了解更多](a-b-testing-uc-start-workflow.md)。
+您現在可以開始工作流程。 [了解更多資訊](a-b-testing-uc-start-workflow.md)。

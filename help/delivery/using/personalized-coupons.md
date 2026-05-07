@@ -9,7 +9,7 @@ hide: true
 exl-id: 182939bb-7aff-4667-bda9-c5d48be3b946
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '910'
+source-wordcount: '922'
 ht-degree: 1%
 
 ---
@@ -49,7 +49,7 @@ ht-degree: 1%
 
    **[!UICONTROL Anonymous coupons]** ：所有收件者的匿名抵用券都相同。 確認已在&#x200B;**優惠券型別**&#x200B;功能表中選取「匿名」，然後按一下&#x200B;**儲存**&#x200B;以產生優惠券。
 
-   **[!UICONTROL Individual coupons]** ：個別優惠券可進一步個人化並提供額外優惠券代碼。 例如，在體育器材商店為銷售建立個別優惠券。 不過，收件者名單很長，他們對單一運動沒有相同的熱情。 您可以根據運動（例如足球、足球、棒球等）為個別優惠券新增代碼名稱，並將每個代碼傳送給適用的收件者。
+   **[!UICONTROL Individual coupons]** ：個別優惠券可進一步個人化並提供額外優惠券代碼。 例如，在體育器材商店為銷售建立個別優惠券。 不過，收件者名單很長，他們對單一運動沒有相同的熱情。 您可以根據運動（例如足球、足球、棒球等）為個別優惠券新增程式碼名稱 並將每個程式碼傳送給適用的收件者。
 
    1. 選擇「個人」時，新標籤「抵用券」會出現在左下方。 前往&#x200B;**[!UICONTROL Coupons]**&#x200B;標籤並按一下&#x200B;**[!UICONTROL Add]**。
    1. 在快顯視窗提示時，輸入個別優惠券的唯一代碼。
@@ -132,7 +132,7 @@ ht-degree: 1%
 
    ![](assets/deliv_coup_15.png)
 
-1. 按一下 **[!UICONTROL Analyze]**。如果分析記錄檔確認所有收件者都有足夠的優惠券，請按一下&#x200B;**[!UICONTROL Confirm delivery]**&#x200B;以傳送。
+1. 按一下 **[!UICONTROL Analyze]**。 如果分析記錄檔確認所有收件者都有足夠的優惠券，請按一下&#x200B;**[!UICONTROL Confirm delivery]**&#x200B;以傳送。
 
    ![](assets/deliv_coup_16.png)
 
@@ -153,7 +153,7 @@ ht-degree: 1%
 >
 >依預設，優惠券管理模組使用&#x200B;**nms:recipient**&#x200B;表格。 [了解更多資訊](../../configuration/using/about-data-model.md#default-recipient-table)。
 >
->在此頁面[中瞭解如何使用自訂收件者資料表](../../configuration/using/about-custom-recipient-table.md)。
+>在此頁面](../../configuration/using/about-custom-recipient-table.md)中瞭解如何使用自訂收件者資料表[。
 
 ## 管理不足的優惠券 {#managing-insufficient-coupons}
 

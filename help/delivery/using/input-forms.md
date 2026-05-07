@@ -8,7 +8,7 @@ role: User, Developer
 exl-id: 8ec52c96-44a2-4544-93b6-9ba251510682
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '843'
 ht-degree: 2%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 2%
 
 依預設，表單會與具有相同名稱和名稱空間的資料結構描述相關聯。 若要將表單與不同的名稱建立關聯，請在&#x200B;**`<form>`**&#x200B;專案的&#x200B;**entity-schema**&#x200B;屬性中輸入結構描述金鑰。
 
-為了說明輸入表單的結構，我們根據範例結構描述「cus：book」描述了一個介面：
+為了說明輸入表單的結構，我們根據範例結構描述&quot;cus:book&quot;描述介面：
 
 ![](assets/d_ncs_content_form1.png)
 

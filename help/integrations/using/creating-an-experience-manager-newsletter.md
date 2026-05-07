@@ -9,7 +9,7 @@ content-type: reference
 exl-id: 9fa3ce08-3007-4c65-9841-bad339428b7c
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '288'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 來自Adobe Experience Manager的&#x200B;**：**
 
-1. 從您的AEM作者執行個體中，按一下頁面左上方的&#x200B;**Adobe體驗**&#x200B;標誌，然後選取&#x200B;**[!UICONTROL Sites]**。
+1. 從您的AEM作者執行個體中，按一下頁面左上方的&#x200B;**Adobe Experience**&#x200B;標誌，然後選取&#x200B;**[!UICONTROL Sites]**。
 
    ![](assets/aem_uc_1.png)
 
@@ -78,7 +78,7 @@ ht-degree: 1%
    ![](assets/aem_uc_11.png)
 
 1. 選取先前在Adobe Experience Manager中建立的傳遞，然後按一下&#x200B;**[!UICONTROL Ok]**。
-1. 對您的AEM傳遞進行一些變更後，請按一下&#x200B;**[!UICONTROL Refresh content]**&#x200B;按鈕。
+1. 對您的AEM傳遞進行一些變更後，請按一下「**[!UICONTROL Refresh content]**」按鈕。
 
    ![](assets/aem_uc_12.png)
 

@@ -7,7 +7,7 @@ role: Developer
 exl-id: 0b5575be-57e7-4eee-9c0a-e9ef4b0931bf
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '332'
+source-wordcount: '362'
 ht-degree: 2%
 
 ---
@@ -108,17 +108,17 @@ ht-degree: 2%
 
 * 正在收集業務量資料
 
-  **https://myserver.adobe.com/r/4567?tagid=command&amount=100&article=2l**
+  **https://myserver.adobe.com/r/4567?tagid=command&amp;amount=100&amp;article=2l**
 
 * 指定欄位以尋找收件者
 
-  **https://myserver.adobe.com/r/2353?tagid=home&rcpid=saccount%3D10**
+  **https://myserver.adobe.com/r/2353?tagid=home&amp;rcpid=saccount%3D10**
 
   帳號為10的收件者會傳送到首頁。
 
 * 使用預設傳遞
 
-  **https://myserver.adobe.com/r/2456?tagid=home&jobid=e6**
+  **https://myserver.adobe.com/r/2456?tagid=home&amp;jobid=e6**
 
   收件者會傳送到首頁。 除非使用此查詢傳送包含傳遞識別碼的工作階段Cookie，否則此資訊將會以識別碼230 （資料庫16中的e6）儲存在傳遞中。
 
@@ -130,5 +130,5 @@ ht-degree: 2%
 
 可以使用下列方法：
 
-* 將URL插入您要追蹤之網頁中所整合之HTML **標籤的**&quot;src&quot;**`<img>`**&#x200B;屬性中。
+* 將URL插入您要追蹤之網頁中所整合之HTML **`<img>`**&#x200B;標籤的&#x200B;**&quot;src&quot;**&#x200B;屬性中。
 * 產生您要追蹤的網頁時，直接呼叫重新導向伺服器。

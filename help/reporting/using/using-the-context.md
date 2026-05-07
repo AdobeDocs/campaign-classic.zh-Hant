@@ -7,7 +7,7 @@ feature: Reporting, Monitoring
 exl-id: a19e2843-d3f9-48c3-af72-cc1bc54f6360
 source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
 workflow-type: tm+mt
-source-wordcount: '506'
+source-wordcount: '507'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 1%
 
 這可讓您直接透過報告的&#x200B;**[!UICONTROL Page]**&#x200B;活動選取要在報告中顯示的資料。
 
-若要這麼做，請按一下&#x200B;**[!UICONTROL Filter data...]**&#x200B;索引標籤中的&#x200B;**[!UICONTROL Data]**&#x200B;連結：此連結可讓您存取運算式編輯器，以定義要分析之資料的查詢。
+若要這麼做，請按一下&#x200B;**[!UICONTROL Data]**&#x200B;索引標籤中的&#x200B;**[!UICONTROL Filter data...]**&#x200B;連結：此連結可讓您存取運算式編輯器，以定義要分析之資料的查詢。
 
 ![](assets/reporting_filter_data_from_page.png)
 
@@ -72,7 +72,7 @@ ht-degree: 1%
 ![](assets/s_ncs_advuser_report_datasource_3.png)
 
 * **[!UICONTROL New query]**&#x200B;選項可讓您建立查詢以收集資料。 如需詳細資訊，請參閱[定義資料](#defining-a-direct-filter-on-data)的直接篩選。
-* **[!UICONTROL Context data]**&#x200B;選項可讓您使用輸入資料：報表的內容與包含圖表或表格的頁面之入站轉變中所包含的資訊一致。 例如，此內容可能包含透過放置在&#x200B;**[!UICONTROL Query]**&#x200B;活動之前的&#x200B;**[!UICONTROL Page]**&#x200B;活動所收集的資料，且您需要指定報告涉及的表格和欄位。
+* **[!UICONTROL Context data]**&#x200B;選項可讓您使用輸入資料：報表的內容與包含圖表或表格的頁面之入站轉變中所包含的資訊一致。 例如，此內容可能包含透過放置在&#x200B;**[!UICONTROL Page]**&#x200B;活動之前的&#x200B;**[!UICONTROL Query]**&#x200B;活動所收集的資料，且您需要指定報告涉及的表格和欄位。
 
 例如，在查詢方塊中，建立收件者的下列查詢：
 

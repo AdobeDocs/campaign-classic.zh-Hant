@@ -41,7 +41,7 @@ ht-degree: 5%
 
    有三個特定案例：
 
-   * 當選取的區塊包含數個字串/區塊時，系統會將其標示為單一字串以供翻譯。 字串則包含此區塊中元素的HTML程式碼。
+   * 當選取的區塊包含數個字串/區塊時，系統會將其標示為單一字串以供翻譯。 該字串接著會包含此區塊中元素的HTML程式碼。
    * 當您想要標幟包含數個字串的區塊時，如果至少其中一個字串已經標幟，則會顯示警告。 然後，您可以從隔離字串中移除標幟，並新增整個區塊。
 
      ![](assets/dce_translation_4.png)
@@ -51,7 +51,7 @@ ht-degree: 5%
      ![](assets/dce_translation_2.png)
 
 1. 完成標幟字串後，請返回Web應用程式並選取&#x200B;**[!UICONTROL Translations]**&#x200B;標籤。
-1. 選取 **[!UICONTROL Collect the strings to translate]**。在DCE中標幟的字串會新增至Web應用程式的字串。
+1. 選取 **[!UICONTROL Collect the strings to translate]**。 在DCE中標幟的字串會新增至Web應用程式的字串。
 
    >[!NOTE]
    >

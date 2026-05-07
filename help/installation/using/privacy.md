@@ -6,8 +6,8 @@ feature: Installation, Privacy, Privacy Tools, URL Personalization
 exl-id: 0a3473bf-0528-486d-a799-8db86fece522
 source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
 workflow-type: tm+mt
-source-wordcount: '817'
-ht-degree: 2%
+source-wordcount: '896'
+ht-degree: 4%
 
 ---
 
@@ -25,11 +25,11 @@ ht-degree: 2%
 
 ### 建議
 
-若要驗證並確保您未使用上文，請透過[Campaign一般查詢編輯器](../../platform/using/adobe-campaign-workspace.md#about-queries-in-campaign)對追蹤URL表格執行查詢，或在查詢活動中建立具有篩選條件的工作流程。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=zh-Hant){target="_blank"}。
+若要驗證並確保您未使用上文，請透過[Campaign一般查詢編輯器](../../platform/using/adobe-campaign-workspace.md#about-queries-in-campaign)對追蹤URL表格執行查詢，或在查詢活動中建立具有篩選條件的工作流程。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}。
 
 範例：
 
-1. 建立工作流程並新增&#x200B;**查詢**&#x200B;活動。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=zh-Hant){target="_blank"}。
+1. 建立工作流程並新增&#x200B;**查詢**&#x200B;活動。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}。
 
 1. 開啟&#x200B;**查詢**&#x200B;活動並在`nmsTrackingUrl`資料表上建立篩選器，如下所示：
 
@@ -44,7 +44,7 @@ ht-degree: 2%
 
 ### URL簽章
 
-為了提高安全性，我們引進了簽名機制，用於追蹤電子郵件中的連結。 它會從19.1.4 (9032@3a9dc9c)和20.2版本開始提供。此功能預設為啟用。
+為了提高安全性，我們引進了簽名機制，用於追蹤電子郵件中的連結。 它會從19.1.4 (9032@3a9dc9c)和20.2版本開始提供。 此功能預設為啟用。
 
 >[!NOTE]
 >
@@ -82,7 +82,7 @@ ht-degree: 2%
 
 您必須確定加密密碼無法由低許可權驗證的使用者存取。 若要這麼做，請限制僅能存取密碼欄位，或存取整個實體（需要組建>= 8770）。
 
-此限制可讓您移除密碼欄位，但允許所有使用者從介面存取外部帳戶。 [了解更多](../../configuration/using/restricting-pii-view.md)。
+此限制可讓您移除密碼欄位，但允許所有使用者從介面存取外部帳戶。 [了解更多資訊](../../configuration/using/restricting-pii-view.md)。
 
 若要執行此作業，請依照下列步驟操作：
 
@@ -149,7 +149,7 @@ ht-degree: 2%
 
    >[!NOTE]
    >
-   >您可以使用`$(loginId) = 0 or $(login) = 'admin'`取代`hasNamedRight('admin')`，讓所有具有管理員許可權的使用者都能檢視這些密碼。
+   >您可以使用`hasNamedRight('admin')`取代`$(loginId) = 0 or $(login) = 'admin'`，讓所有具有管理員許可權的使用者都能檢視這些密碼。
 
 ## 使用PI保護頁面
 

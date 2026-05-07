@@ -9,8 +9,8 @@ hide: true
 exl-id: 32c35e61-d0a3-478f-b73b-396e2becf7f9
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '843'
-ht-degree: 9%
+source-wordcount: '930'
+ht-degree: 12%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 9%
 
 >[!IMPORTANT]
 >
->Android Firebase Cloud Messaging (FCM) 服務的一些重要變更將於 2024 年發行，並可能影響 Adobe Campaign 實施。Android 推播訊息訂閱服務設定可能需要更新，才能支援此變更。您已經可以檢查並採取行動。 閱讀此[Adobe Campaign v8技術檔案](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/push-technote.html?lang=zh-Hant){target="_blank"}以深入瞭解。
+>Android Firebase Cloud Messaging (FCM) 服務的一些重要變更將於 2024 年發行，並可能影響 Adobe Campaign 實施。 Android 推播訊息訂閱服務設定可能需要更新，才能支援此變更。 您已經可以檢查並採取動作。 閱讀此[Adobe Campaign v8技術檔案](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/push-technote.html?lang=zh-Hant){target="_blank"}以深入瞭解。
 
 
 ## 設定Android外部帳戶 {#configuring-external-account-android}
@@ -59,7 +59,7 @@ Android提供兩種聯結器：
 
 ## 設定Android服務 {#configuring-android-service}
 
-![](assets/do-not-localize/how-to-video.png) [瞭解如何在影片中設定Android服務](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-an-android-service-in-campaign.html?lang=zh-Hant#configuring-an-android-service-and-creating-an-android-mobile-application-in-campaign){target="_blank"}。
+![](assets/do-not-localize/how-to-video.png) [瞭解如何在影片中設定Android服務](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-an-android-service-in-campaign.html#configuring-an-android-service-and-creating-an-android-mobile-application-in-campaign){target="_blank"}。
 
 1. 前往&#x200B;**[!UICONTROL Profiles and Targets > Services and subscriptions]**&#x200B;節點並按一下&#x200B;**[!UICONTROL New]**。
 
@@ -102,21 +102,21 @@ Android提供兩種聯結器：
 
 1. 填寫&#x200B;**[!UICONTROL Firebase Cloud Messaging the Android connection settings]**&#x200B;欄位。
 
-1. 按一下&#x200B;**[!UICONTROL Finish]**，然後再按&#x200B;**[!UICONTROL Save]**。 您的Android應用程式現在已準備好在Campaign Classic中使用。
+1. 按一下 **[!UICONTROL Finish]**，之後 **[!UICONTROL Save]**。 您的Android應用程式現在已準備好在Campaign Classic中使用。
 
-依預設，Adobe Campaign會在&#x200B;**[!UICONTROL User identifier]**)**[!UICONTROL Subscriber applications (nms:appSubscriptionRcp資料表的]** (@userKey)欄位中儲存金鑰。 此金鑰可讓您將訂閱連結至收件者。 若要收集其他資料（例如複雜的調解金鑰），您必須套用下列設定：
+依預設，Adobe Campaign會在&#x200B;**[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]**&#x200B;資料表的&#x200B;**[!UICONTROL User identifier]** (@userKey)欄位中儲存金鑰。 此金鑰可讓您將訂閱連結至收件者。 若要收集其他資料（例如複雜的調解金鑰），您必須套用下列設定：
 
 ### 設定API版本{#select-api-version}
 
 >[!IMPORTANT]
 >
->Android Firebase Cloud Messaging (FCM) 服務的一些重要變更將於 2024 年發行，並可能影響 Adobe Campaign 實施。Google持續改善服務，其中舊版FCM API將於&#x200B;**2024年6月20日**&#x200B;終止服務。 閱讀此[Adobe Campaign v8技術檔案](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/push-technote.html?lang=zh-Hant){target="_blank"}以深入瞭解。
+>Android Firebase Cloud Messaging (FCM) 服務的一些重要變更將於 2024 年發行，並可能影響 Adobe Campaign 實施。 Google持續改善服務，其中舊版FCM API將於&#x200B;**2024年6月20日**&#x200B;終止服務。 閱讀此[Adobe Campaign v8技術檔案](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/push-technote.html?lang=zh-Hant){target="_blank"}以深入瞭解。
 
 建立服務和新的行動應用程式後，您需要設定行動應用程式。 不應選取&#x200B;**HTTP （舊版）** API，因為它已被Google取代。
 
 若要設定HTTP v1 API版本，請遵循下列步驟：
 
-1. 在&#x200B;**[!UICONTROL Mobile application creation wizard]**&#x200B;視窗的&#x200B;**[!UICONTROL HTTPV1]**&#x200B;下拉式清單中選取&#x200B;**[!UICONTROL API version]**。
+1. 在&#x200B;**[!UICONTROL Mobile application creation wizard]**&#x200B;視窗的&#x200B;**[!UICONTROL API version]**&#x200B;下拉式清單中選取&#x200B;**[!UICONTROL HTTPV1]**。
 
 1. 按一下&#x200B;**[!UICONTROL Load project json file to extract project details...]**&#x200B;直接載入您的JSON金鑰檔案。 如需有關如何解壓縮JSON檔案的詳細資訊，請參閱[此頁面](https://firebase.google.com/docs/admin/setup#initialize-sdk)。
 
@@ -137,7 +137,7 @@ Android提供兩種聯結器：
 
 1. 您可以視需要以約&#x200B;**[!UICONTROL Application variables]**&#x200B;擴充推送訊息內容，作為選項。 這些都是可完全自訂的專案，而且是傳送至行動裝置的訊息裝載的一部分。
 
-1. 按一下&#x200B;**[!UICONTROL Finish]**，然後再按&#x200B;**[!UICONTROL Save]**。 您的Android應用程式現在已準備好在Campaign Classic中使用。
+1. 按一下 **[!UICONTROL Finish]**，之後 **[!UICONTROL Save]**。 您的Android應用程式現在已準備好在Campaign Classic中使用。
 
 以下是FCM裝載名稱，可進一步個人化您的推播通知：
 
@@ -148,7 +148,7 @@ Android提供兩種聯結器：
 
 ## 擴充appsubscriptionRcp結構描述 {#extend-subscription-schema}
 
-![](assets/do-not-localize/how-to-video.png) [瞭解如何在視訊中擴充appsubscriptionRcp結構描述](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/extending-the-app-subscription-schema.html?lang=zh-Hant#extending-the-app-subscription-schema-to-personalize-push-notifications)
+![](assets/do-not-localize/how-to-video.png) [瞭解如何在視訊中擴充appsubscriptionRcp結構描述](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/extending-the-app-subscription-schema.html#extending-the-app-subscription-schema-to-personalize-push-notifications)
 
 您必須擴充&#x200B;**appsubscriptionRcp**，以定義新的額外欄位，將應用程式中的引數儲存至Campaign資料庫。 例如，這些欄位用於個人化。 操作步驟：
 

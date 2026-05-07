@@ -1,10 +1,10 @@
 ---
 title: IMS移轉後更新Campaign介面
-description: 瞭解如何啟用AdobeIdentity Management系統移轉介面影響
+description: 瞭解如何啟用Adobe Identity Management系統移轉介面影響
 exl-id: 8b13fe4d-d8d3-43b3-bbe4-c8c5574f585a
 source-git-commit: 8eadea9f9cc0a44522726024bfbc825e3b4cad98
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '463'
 ht-degree: 1%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 1%
 
 ## 啟用IMS限制 {#ims-restrictions}
 
-若要完成移轉至Adobe識別管理系統(IMS)，您必須封鎖新的原生使用者建立、原生使用者登入及原生操作員的API存取。 接著您的環境就會受到保護並標準化。
+若要完成移轉至Adobe Identify Management System (IMS)的程式，您必須封鎖新的原生使用者建立、原生使用者登入及原生操作員的API存取。 接著您的環境就會受到保護並標準化。
 
-請以「受管理的Cloud Service/託管」使用者身分聯絡Adobe以啟用此限制，並更新產品使用者介面中的相關更新。
+請以「受管理的Cloud Service/託管」使用者身分聯絡Adobe以啟用此限制，並啟用產品使用者介面中的相關更新。
 
 作為內部部署/混合部署使用者，請遵循下列步驟：
 
@@ -94,7 +94,7 @@ ht-degree: 1%
 
 因此，使用者端主控台中已停用這些動作。
 
-操作員的管理集中於Adobe Admin Console，而下列工作現在只能透過此主控台管理。 在[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/admin/permissions/manage-permissions){target="_blank"}中瞭解如何建立使用者並指派許可權。
+操作員的管理集中於Adobe Admin Console，而下列工作現在只能透過此主控台管理。 在[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/admin/permissions/manage-permissions){target="_blank"}中瞭解如何建立使用者並指派許可權。
 
 ### 無法使用的選項 {#unavailable-migration}
 
@@ -120,4 +120,4 @@ ht-degree: 1%
 >* [將一般使用者移轉至IMS](migrate-users-to-ims.md)
 >* [將技術運運算元移轉至Adobe Developer主控台](ims-migration.md)
 >* [Adobe Campaign Classic v7最新發行說明](../../rn/using/latest-release.md)
->* [什麼是AdobeIdentity Management系統(IMS)](https://helpx.adobe.com/tw/enterprise/using/identity.html){target="_blank"}
+>* [什麼是Adobe Identity Management System (IMS)](https://helpx.adobe.com/tw/enterprise/using/identity.html){target="_blank"}

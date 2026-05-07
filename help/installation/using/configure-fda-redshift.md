@@ -9,7 +9,7 @@ topic-tags: connectors
 exl-id: ef2b98bd-441e-4e59-bb41-4e835e250663
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '253'
 ht-degree: 1%
 
 ---
@@ -57,7 +57,7 @@ ht-degree: 1%
      ./redshift_odbc-setup.sh
    ```
 
-1. 安裝ODBC驅動程式之後，您需要重新啟動Campaign Classic。 要執行此操作，請執行以下命令：
+1. 安裝ODBC驅動程式後，您需要重新啟動Campaign Classic。 要執行此操作，請執行以下命令：
 
    ```
    systemctl stop nlserver.service
@@ -72,7 +72,7 @@ ht-degree: 1%
 
 1. 在Campaign Classic中，設定您的[!DNL Amazon Redshift]外部帳戶。 從&#x200B;**[!UICONTROL Explorer]**，按一下&#x200B;**[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**。
 
-1. 按一下&#x200B;**[!UICONTROL New]**。
+1. 按一下 **[!UICONTROL New]**。
 
 1. 選取&#x200B;**[!UICONTROL External database]**&#x200B;作為外部帳戶的&#x200B;**[!UICONTROL Type]**。
 
@@ -94,4 +94,4 @@ ht-degree: 1%
 
    ![](assets/amazon_redshift.png)
 
-1. 按一下&#x200B;**[!UICONTROL Save]**。
+1. 按一下 **[!UICONTROL Save]**。

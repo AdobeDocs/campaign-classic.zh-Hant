@@ -10,8 +10,8 @@ exl-id: 0ba8a3d0-36d7-42f3-b281-0255e49b5fa3
 hide: true
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '517'
-ht-degree: 2%
+source-wordcount: '529'
+ht-degree: 4%
 
 ---
 
@@ -34,7 +34,7 @@ Explorer導覽樹狀結構的每個資料夾都附加讀取、寫入和刪除存
 
 ![](assets/s_ncs_user_add_folder_in_tree.png)
 
-您可以自訂Explorer導覽樹狀結構。 在本節[中瞭解設定步驟和最佳實務](adobe-campaign-workspace.md)。
+您可以自訂Explorer導覽樹狀結構。 在本節](adobe-campaign-workspace.md)中瞭解設定步驟和最佳實務[。
 
 ### 什麼是檢視 {#about-views}
 

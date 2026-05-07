@@ -7,8 +7,8 @@ feature: Web Apps
 exl-id: 5ccf5a21-48aa-4c0d-8cc8-457eb07d9f74
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '365'
-ht-degree: 20%
+source-wordcount: '372'
+ht-degree: 19%
 
 ---
 
@@ -18,13 +18,13 @@ ht-degree: 20%
 
 Web應用程式型別是在建立期間選取的。
 
-前往&#x200B;**行銷活動**&#x200B;標籤，然後選取&#x200B;**[!UICONTROL Web Applications]**&#x200B;功能表。 按一下 **[!UICONTROL Create]** 按鈕。選取您要使用的Web應用程式範本：
+前往&#x200B;**行銷活動**&#x200B;標籤，然後選取&#x200B;**[!UICONTROL Web Applications]**&#x200B;功能表。 按一下 **[!UICONTROL Create]** 按鈕。 選取您要使用的Web應用程式範本：
 
 ![](assets/webapp_create_from_campaign.png)
 
 >[!NOTE]
 >
->一律保護可能包含個人資訊的頁面。 請參閱[安全性與隱私權檢查清單](https://helpx.adobe.com/tw/campaign/kb/acc-security.html#privacy)。
+>一律保護可能包含個人資訊的頁面。 請參閱[安全性與隱私權檢查清單](https://helpx.adobe.com/campaign/kb/acc-security.html#privacy)。
 
 此範本決定了Web應用程式的型別。 您可以建立：
 
@@ -48,7 +48,7 @@ Web應用程式型別是在建立期間選取的。
    >
    >**調查管理員**&#x200B;是選用的Adobe Campaign模組。 請檢查您的授權合約。
 
-1. facebook應用程式
+1. Facebook應用程式
 
    有了&#x200B;**社交行銷**&#x200B;選項，Adobe Campaign可讓您在Facebook應用程式中發佈個人化內容。 如需詳細資訊，請參閱[本章節](../../social/using/about-social-marketing.md)。
 

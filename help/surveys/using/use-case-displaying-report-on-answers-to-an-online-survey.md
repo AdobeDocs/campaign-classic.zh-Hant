@@ -1,13 +1,13 @@
 ---
 product: campaign
-title: 「使用案例：顯示線上意見調查之答案的報表」
-description: 「使用案例：顯示線上意見調查之答案的報表」
+title: 使用案例：顯示線上意見調查之答案的報表
+description: 使用案例：顯示線上意見調查之答案的報表
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Surveys
 exl-id: 6be12518-86d1-4a13-bbc2-b2ec5141b505
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '489'
 ht-degree: 1%
 
 ---

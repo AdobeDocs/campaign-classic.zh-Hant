@@ -64,7 +64,7 @@ ht-degree: 0%
 
 1. 在&#x200B;**[!UICONTROL Exclusion set]**&#x200B;欄位中，選取&#x200B;**[!UICONTROL Read list]**&#x200B;活動：此活動中的資料將從主要集中排除。
 
-   在我們的範例中，聯結上有排除專案：清單中包含的資料將透過包含電子郵件地址的欄位，與主要集的資料進行調解。 若要設定加入，請在&#x200B;**[!UICONTROL Joins]**&#x200B;欄位中選取&#x200B;**[!UICONTROL Change dimension]**。
+   在我們的範例中，聯結上有排除專案：清單中包含的資料將透過包含電子郵件地址的欄位，與主要集的資料進行調解。 若要設定加入，請在&#x200B;**[!UICONTROL Change dimension]**&#x200B;欄位中選取&#x200B;**[!UICONTROL Joins]**。
 
    ![](assets/s_advuser_list_read_sample_4.png)
 

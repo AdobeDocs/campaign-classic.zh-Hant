@@ -7,14 +7,14 @@ role: Developer
 exl-id: 728b509f-2755-48df-8b12-449b7044e317
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '527'
 ht-degree: 3%
 
 ---
 
 # 資料庫對應{#database-mapping}
 
-此頁面[中描述的範例結構描述](schema-structure.md)的SQL對應會產生下列XML檔案：
+此頁面](schema-structure.md)中描述的範例結構描述[的SQL對應會產生下列XML檔案：
 
 ```sql
 <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">
@@ -53,7 +53,7 @@ SQL命名規則如下：
 
 * **欄位**：前面有根據型別定義之前置詞的元素名稱：&#39;i&#39;代表整數，&#39;d&#39;代表雙精度，&#39;s&#39;代表字串，&#39;ts&#39;代表日期等。
 
-  欄位名稱是透過每個型別&#x200B;**和**&#x200B;的&#x200B;**`<attribute>`** sqlname **`<element>`**&#x200B;屬性輸入的：
+  欄位名稱是透過每個型別&#x200B;**`<attribute>`**&#x200B;和&#x200B;**`<element>`**&#x200B;的&#x200B;**sqlname**&#x200B;屬性輸入的：
 
   ```sql
   <attribute desc="Email address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/> 

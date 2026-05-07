@@ -9,8 +9,8 @@ hide: true
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1774'
-ht-degree: 100%
+source-wordcount: '2018'
+ht-degree: 98%
 
 ---
 
@@ -37,7 +37,7 @@ _2021 年 8 月 27 日_
 
 建置 9032@99a3894 包含以下修正：
 
-* 追蹤簽章功能已經過改良，以防止連結至第三方工具 (電子郵件用戶端、網際網路瀏覽器等) 的錯誤 URL 參數現在已編碼。
+* 追蹤簽章功能已經過改良，以防止連結至協力廠商工具（電子郵件使用者端、網際網路瀏覽器等）的錯誤 處理特殊字元。 URL 參數現在已編碼。
 * 修正日期選擇器可能導致主控台顯示封鎖程式錯誤訊息的問題。 (NEO-36345)
 
 ### [!DNL Gold Standard] 11 發行版本{#gs-11}
@@ -51,13 +51,13 @@ _2021年 4 月 14 日_
 * 修正 IMS 連線畫面上造成持續錯誤訊息的用戶端主控台迴歸。 (NEO-34821)
 * 維護 [IMS 存取](../../technotes/using/ims-updates.md)需要此主控台建置。
 
-**僅主控台升級為強制性。不需要升級伺服器。**
+**僅主控台升級為強制性。 不需要升級伺服器。**
 
 >[!CAUTION]
 >
-> * 如果您使用 Adobe ID 並透過 Adobe Identity Management Service (IMS) 連線至 Campaign，則必須升級 Campaign 伺服器和用戶端主控台，才能在 2021 年 6 月 30 日&#x200B;**之後連線至 Campaign**。[了解更多](../../technotes/using/ims-updates.md)
+> * 如果您使用 Adobe ID 並透過 Adobe Identity Management Service (IMS) 連線至 Campaign，則必須升級 Campaign 伺服器和用戶端主控台，才能在 2021 年 6 月 30 日&#x200B;**之後連線至 Campaign**。 [了解更多](../../technotes/using/ims-updates.md)
 > * 此版本隨附[安全性修正](https://helpx.adobe.com/tw/security/products/campaign/apsb21-04.html)：升級為強制性以便強化環境安全性。
-> * 如果您透過 OAuth 驗證使用 Experience Cloud 觸發程序整合，您必須依照[本頁](../../integrations/using/about-triggers.md#implement)所述移至 Adobe I/O。**2021 年 9 月**[已淘汰](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411?profile.language=zh-Hant)具有 Campaign 的舊版 oAuth 驗證模式。 託管環境繼續使用延伸功能，直到 **2022 年 2 月 23 日**。若為內部部署或混型合客戶，請聯絡 Adobe 客戶服務，延長支援時間至 2022 年 2 月。 您必須向 Adobe 提供 [OAuth 應用程式的 AppID](../../integrations/using/configuring-pipeline.md#step-optional)。
+> * 如果您透過 OAuth 驗證使用 Experience Cloud 觸發程序整合，您必須依照[本頁](../../integrations/using/about-triggers.md#implement)所述移至 Adobe I/O。 **2021 年 9 月**[已淘汰](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)具有 Campaign 的舊版 oAuth 驗證模式。 託管環境繼續使用延伸功能，直到 **2022 年 2 月 23 日**。 若為內部部署或混型合客戶，請聯絡 Adobe 客戶服務，延長支援時間至 2022 年 2 月。 您必須向 Adobe 提供 [OAuth 應用程式的 AppID](../../integrations/using/configuring-pipeline.md#step-optional)。
 >
 >在[[!DNL Gold Standard] 本節](../../rn/using/gold-standard.md)了解更多資訊
 
@@ -67,7 +67,7 @@ _2021年 3 月 2 日_
 
 * 修正迴歸，防止在傳遞中使用主控台的某些元件，例如日期選擇器和影像管理。 (NEO-31453、NEO-31454)
 
-**僅主控台升級為強制性。不需要升級伺服器。**
+**僅主控台升級為強制性。 不需要升級伺服器。**
 
 >[!NOTE]
 >
@@ -83,9 +83,9 @@ _2020 年 12 月 22 日_
 
 * [在 iOS APN 舊版二進位通訊協定支援結束之後，在升級後期間，](https://developer.apple.com/news/?id=c88acm2b)使用此通訊協定的所有執行個體都會更新為 HTTP/2 通訊協定。
 
-* 修正了安全性問題，以針對伺服器端請求偽造 (SSRF) 問題而加強保護。(NEO-27777)
+* 修正了安全性問題，以針對伺服器端請求偽造 (SSRF) 問題而加強保護。 (NEO-27777)
 
-* 修正執行&#x200B;**擴充**&#x200B;活動時，工作流程可能失敗的問題。(NEO-17338)
+* 修正執行&#x200B;**擴充**&#x200B;活動時，工作流程可能失敗的問題。 (NEO-17338)
 
 ### [!DNL Gold Standard] 10 發行版本{#gs-10}
 
@@ -95,11 +95,11 @@ _2020 年 7 月 7 日_
 
 建置 9032@efd8a94 包含以下修正：
 
-修正了在停用簽名功能時，無法進行追蹤的問題。(NEO-26411)
+修正了在停用簽名功能時，無法進行追蹤的問題。 (NEO-26411)
 
 >[!CAUTION]
 >
->我們建議您使用此版本中可用的用戶端控制台進行升級。請參見[此頁面](../../installation/using/installing-the-client-console.md)。
+>我們建議您使用此版本中可用的用戶端控制台進行升級。 請參見[此頁面](../../installation/using/installing-the-client-console.md)。
 
 ### [!DNL Gold Standard] 9 發行版本{#gs-9}
 
@@ -109,15 +109,15 @@ _2020 年 6 月 22 日_
 
 建置 9032@800be2e 包含以下修正：
 
-* 改善了 iOS HTTP2 連接器（第三方更新和錯誤管理）。(NEO-25904、NEO-25903、NEO-25799)
+* 改善了 iOS HTTP2 連接器（第三方更新和錯誤管理）。 (NEO-25904、NEO-25903、NEO-25799)
 
 以下為與追蹤連結安全性機制相關之修正（參閱[「安全性與隱私權檢查清單](https://helpx.adobe.com/tw/campaign/kb/acc-security.html#signature-mechanism)」以瞭解更多）：
 
-* 修正了「通知單擊」無法進行追蹤的問題（iOS 和 Android 推播通知）。(NEO-25965)
-* 修正了在使用某些特定 Outlook 舊版本時，無法開啟/按一下追蹤 URL 的問題。(NEO-25688)
-* 修正了在個人化參數（井字鍵符號的錨點標記）中無法使用片段追蹤 URL 的問題。(NEO-25774)
-* 修正了反網路釣魚服務的問題。(NEO-25283)
-* 修正了在使用特定自訂追蹤公式時的追蹤問題。(NEO-25277)
+* 修正了「通知單擊」無法進行追蹤的問題（iOS 和 Android 推播通知）。 (NEO-25965)
+* 修正了在使用某些特定 Outlook 舊版本時，無法開啟/按一下追蹤 URL 的問題。  (NEO-25688)
+* 修正了在個人化參數（井字鍵符號的錨點標記）中無法使用片段追蹤 URL 的問題。 (NEO-25774)
+* 修正了反網路釣魚服務的問題。 (NEO-25283)
+* 修正了在使用特定自訂追蹤公式時的追蹤問題。 (NEO-25277)
 
 ### [!DNL Gold Standard] 8 發行版本{#gs-8}
 
@@ -127,17 +127,17 @@ _2020 年 4 月 29 日_
 
 建置 9032@3a9dc9c 包含以下修正：
 
-* 改善了電子郵件中追蹤連結的安全性。依預設為所有客戶啟用此功能。另外還提供增強的安全性功能，您可以透過連絡客戶服務來啟用此功能。有關非托管客戶啟用此功能的詳細資訊和步驟，請參閱 [「安全性與隱私權」檢查清單](https://helpx.adobe.com/tw/campaign/kb/acc-security.html#signature-mechanism)。
+* 改善了電子郵件中追蹤連結的安全性。 依預設為所有客戶啟用此功能。 另外還提供增強的安全性功能，您可以透過連絡客戶服務來啟用此功能。 有關非托管客戶啟用此功能的詳細資訊和步驟，請參閱 [「安全性與隱私權」檢查清單](https://helpx.adobe.com/tw/campaign/kb/acc-security.html#signature-mechanism)。
 
 >[!CAUTION]
 >
->如果您在使用追蹤連結或使用錨點標籤時，遇到推播通知的問題，我們建議您停用追蹤連結的新簽名機制。[本頁面](https://helpx.adobe.com/tw/campaign/kb/acc-security.html#signature-mechanism)詳細介紹此程序
+>如果您在使用追蹤連結或使用錨點標籤時，遇到推播通知的問題，我們建議您停用追蹤連結的新簽名機制。 [本頁面](https://helpx.adobe.com/tw/campaign/kb/acc-security.html#signature-mechanism)詳細介紹此程序
 
-* 修正了無法在 Line 傳遞顯示影像的問題。(NEO-23207)
-* 修正&#x200B;**檔案傳輸**&#x200B;活動使 SFTP 金鑰驗證無法在 Debian 9 運作的問題。(NEO-23183)
-* 修正了在高頻率傳送時，可能影響推播通知的問題。(NEO-20516)
-* 修正了在產品建議回應管理中，可能導致 Web 伺服器當機的問題。(NEO-19482)
-* 修正了在 LibreOffice 管理中，無法匯出報告的錯誤。(NEO-20982)
+* 修正了無法在 Line 傳遞顯示影像的問題。 (NEO-23207)
+* 修正&#x200B;**檔案傳輸**&#x200B;活動使 SFTP 金鑰驗證無法在 Debian 9 運作的問題。 (NEO-23183)
+* 修正了在高頻率傳送時，可能影響推播通知的問題。 (NEO-20516)
+* 修正了在產品建議回應管理中，可能導致 Web 伺服器當機的問題。 (NEO-19482)
+* 修正了在 LibreOffice 管理中，無法匯出報告的錯誤。 (NEO-20982)
 * 修正了使用意見調查活動升級許多工作流程時，而導致錯誤的問題。
 * 改善了 LibreOffice 管理，以防止在電子郵件預覽時，無法預覽 .odt 檔案。
 * 改善了 Apache 連線管理，以防止網站服務的延遲。
@@ -154,7 +154,7 @@ _2020 年 3 月 9 日_
 
 建置 9032@19f73c5 包含以下修正：
 
-* 修正了使用 FTP over SSL 的外部帳戶的問題。(NEO-20498)
+* 修正了使用 FTP over SSL 的外部帳戶的問題。 (NEO-20498)
 
 ### [!DNL Gold Standard] 5 發行版本{#gs-5}
 
@@ -164,7 +164,7 @@ _2019 年 12 月 17 日_
 
 建置 9032@d6b8062 包含以下修正：
 
-* 修正以下通訊通道的追蹤問題：行動 (SMS、MMS)、推播 (iOS、Android) 和社交網路 (Facebook、X - 原 Twitter)。(NEO-19595)
+* 修正以下通訊通道的追蹤問題：行動 (SMS、MMS)、推播 (iOS、Android) 和社交網路 (Facebook、X - 原 Twitter)。 (NEO-19595)
 
 ### [!DNL Gold Standard] 4 發行版本{#gs-4}
 
@@ -174,7 +174,7 @@ _2019 年 12 月 11 日_
 
 建置 9032@bc4a935 包含以下修正：
 
-* 修正了在使用 MSSQL 資料庫傳送訊息時，所導致的效能問題。(NEO-17558)
+* 修正了在使用 MSSQL 資料庫傳送訊息時，所導致的效能問題。 (NEO-17558)
 
 ### [!DNL Gold Standard] 3 發行版本{#gs-3}
 
@@ -184,8 +184,8 @@ _2019 年 11 月 20 日_
 
 建置 9032@3468c7b 包含以下修正：
 
-* 修正了透過 IMS 驗證的登入問題。(NEO-17312)
-* 修正了在多個傳遞顯示累積報告時所產生的問題。(NEO-18165)
+* 修正了透過 IMS 驗證的登入問題。 (NEO-17312)
+* 修正了在多個傳遞顯示累積報告時所產生的問題。 (NEO-18165)
 * 修正了可能封鎖或造成 Web 伺服器當機的問題。
 
 ### [!DNL Gold Standard] 2 發行版本{#gs-2}
@@ -196,7 +196,7 @@ _2019 年 9 月 19 日_
 
 建置 9032@cee805c 包含以下修正：
 
-* 修正了為 Salesforce 而使用 CRM 連接器所產生的問題。(NEO-17712)
+* 修正了為 Salesforce 而使用 CRM 連接器所產生的問題。 (NEO-17712)
 * 修正了正在傳送異動訊息時，可能導致效能問題的索引問題。
 
 ### 版本 19.1.4 - 版本編號 9032{#release-19-1-4-build-9032}
@@ -207,21 +207,21 @@ _2019 年 8 月 13 日_
 
 初始 19.1.4 版本編號包含以下修正：
 
-* 修正了在設定助理時，排程器活動產生無用錯誤訊息的問題。正在還原 NEO-11662 更新。(NEO-17097)
-* 修正了 NEO-12727 所導致的迴歸，其在執行兩次測試活動時，可能會導致工作流程停止運行。(NEO-16835)
-* 修正了在 API 調用中使用無效或過期的續存期間權杖時，導致回傳錯誤 HTTP 代碼的問題（為 HTTP 200 OK，而非 HTTP 403 Forbidden）。(NEO-16826)
-* 修正了 DKIM 金鑰不再嵌入在電子郵件中的問題，其導致的傳遞問題。(NEO-16804)
-* 修正了各種工作流程排程的問題。排程工作流程以進行每天一次的運行，無需考慮排程器配置。(NEO-16619、NEO-16426)
+* 修正了在設定助理時，排程器活動產生無用錯誤訊息的問題。 正在還原 NEO-11662 更新。 (NEO-17097)
+* 修正了 NEO-12727 所導致的迴歸，其在執行兩次測試活動時，可能會導致工作流程停止運行。 (NEO-16835)
+* 修正了在 API 調用中使用無效或過期的續存期間權杖時，導致回傳錯誤 HTTP 代碼的問題（為 HTTP 200 OK，而非 HTTP 403 Forbidden）。 (NEO-16826)
+* 修正了 DKIM 金鑰不再嵌入在電子郵件中的問題，其導致的傳遞問題。 (NEO-16804)
+* 修正了各種工作流程排程的問題。 排程工作流程以進行每天一次的運行，無需考慮排程器配置。 (NEO-16619、NEO-16426)
 
 
 ## [!DNL Gold Standard] 相容性比較表{#compatibility-matrix-gs}
 
-本節列出 **Adobe Campaign Classic[!DNL Gold Standard]** 19.1 版本編號支援的所有系統和元件。不屬於此清單的產品和版本與此版本的 Adobe Campaign 不相容。
+本節列出 **Adobe Campaign Classic[!DNL Gold Standard]** 19.1 版本編號支援的所有系統和元件。 不屬於此清單的產品和版本與此版本的 Adobe Campaign 不相容。
 
 >[!CAUTION]
 >除非另有提及，否則支援所有次要版本。
 >
->Adobe Campaign Classic 與此頁面列出的所有系統和工具相容。這些協力廠商系統和工具的特定版本生命週期結束 (EOL) 時，Adobe Campaign 不再與那些版本相容：我們將不再使用這些系統和功能，後續的產品發行版本亦會將這些系統和功能從相容性矩陣移除。請確保您使用相容性矩陣列出的任何系統的支援版本，以避免出現任何問題。
+>Adobe Campaign Classic 與此頁面列出的所有系統和工具相容。 這些協力廠商系統和工具的特定版本生命週期結束 (EOL) 時，Adobe Campaign 不再與那些版本相容：我們將不再使用這些系統和功能，後續的產品發行版本亦會將這些系統和功能從相容性矩陣移除。 請確保您使用相容性矩陣列出的任何系統的支援版本，以避免出現任何問題。
 >
 
 ### 作業系統{#OperatingSystems-gs}

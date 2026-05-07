@@ -7,7 +7,7 @@ exl-id: 26737940-b3ce-425c-9604-f4cefd19afaa
 hide: true
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1104'
+source-wordcount: '1157'
 ht-degree: 2%
 
 ---
@@ -51,7 +51,7 @@ ht-degree: 2%
 
 ## 設定Microsoft Dynamics CRM {#config-crm-microsoft}
 
-若要產生存取權杖和金鑰以設定帳戶，您需要使用[全域系統管理員](https://portal.azure.com)認證登入&#x200B;**Microsoft Azure目錄**。 然後遵循以下概述的步驟。
+若要產生存取權杖和金鑰以設定帳戶，您需要使用&#x200B;**全域系統管理員**&#x200B;認證登入[Microsoft Azure目錄](https://portal.azure.com)。 然後遵循以下概述的步驟。
 
 ### 取得Microsoft Dynamics使用者端ID {#get-client-id-microsoft}
 
@@ -147,14 +147,14 @@ ht-degree: 2%
    >使用相同名稱會擲回重複的金鑰錯誤，因此在我們收到是否需要此步驟的確認之前，請使用不同的使用者名稱並繼續。
    >
 
-1. 為您先前建立的&#x200B;**應用程式**&#x200B;指派[應用程式識別碼](#get-client-id-microsoft)。
+1. 為您先前建立的[應用程式](#get-client-id-microsoft)指派&#x200B;**應用程式識別碼**。
 1. 按一下&#x200B;**管理角色**&#x200B;並選擇使用者的&#x200B;**系統管理員**&#x200B;角色。
 
 ## 設定 Campaign {#configure-acc-for-microsoft}
 
 >[!NOTE]
 >
-> 從Microsoft[停用](https://docs.microsoft.com/previous-versions/dynamicscrm-2016/developers-guide/dn281891%28v=crm.8%29#microsoft-dynamics-crm-2011-endpoint)RDS後，內部部署和Office 365型別的CRM部署不再與Campaign相容。 Adobe Campaign現在只支援CRM版本&#x200B;**Dynamic CRM 365**&#x200B;的Web API部署。 [了解更多資訊](../../rn/using/deprecated-features.md#crm-connectors)。
+> 從Microsoft](https://docs.microsoft.com/previous-versions/dynamicscrm-2016/developers-guide/dn281891%28v=crm.8%29#microsoft-dynamics-crm-2011-endpoint)停用[RDS後，內部部署和Office 365型別的CRM部署不再與Campaign相容。 Adobe Campaign現在只支援CRM版本&#x200B;**Dynamic CRM 365**&#x200B;的Web API部署。 [了解更多資訊](../../rn/using/deprecated-features.md#crm-connectors)。
 
 若要連線Microsoft Dynamics 365和Campaign，您需要在Campaign中建立並設定專用的&#x200B;**[!UICONTROL External Account]**。
 
@@ -166,7 +166,7 @@ ht-degree: 2%
 
    >[!NOTE]
    >
-   >本節&#x200B;**[!UICONTROL CRM O-Auth type]**&#x200B;中詳細說明每個[的Microsoft Dynamics CRM外部帳戶組態](../../installation/using/external-accounts.md#microsoft-dynamics-crm-external-account)。
+   >本節](../../installation/using/external-accounts.md#microsoft-dynamics-crm-external-account)中詳細說明每個&#x200B;**[!UICONTROL CRM O-Auth type]**&#x200B;的Microsoft Dynamics CRM外部帳戶組態[。
 
    ![](assets/crm-ms-dynamics-ext-account.png)
 

@@ -7,7 +7,7 @@ role: Developer
 exl-id: b7ee70e0-89c6-4cd3-8116-2f073d4a2f2f
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '671'
+source-wordcount: '688'
 ht-degree: 2%
 
 ---
@@ -335,7 +335,7 @@ xtkschema="xtk:srcSchema">
 
 ## 相關主題
 
-* 在&#x200B;**Adobe Campaign v8 （主控台）檔案**&#x200B;中進一步瞭解如何[使用分項清單](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}。
+* 在[Adobe Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}中進一步瞭解如何&#x200B;**使用分項清單**。
 
 * [開始使用Campaign綱要](../../configuration/using/about-schema-edition.md)
 

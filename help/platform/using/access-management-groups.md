@@ -9,8 +9,8 @@ level: Beginner
 exl-id: d5833d3d-e8ef-4f2b-8084-4ba825c79525
 source-git-commit: a5bbd2e6c102a8afa4cd5931b77b0c83705a7bfa
 workflow-type: tm+mt
-source-wordcount: '574'
-ht-degree: 1%
+source-wordcount: '589'
+ht-degree: 4%
 
 ---
 
@@ -67,7 +67,7 @@ ht-degree: 1%
 
 1. **[!UICONTROL Campaign managers]**
 
-   此群組中的操作者可以管理行銷活動：這可讓您存取&#x200B;**[!UICONTROL Campaign]** (選用Adobe Campaign模組)架構中連結至行銷活動的物件（計畫、方案、工作流程、預算等）。
+   此群組中的操作員可以管理行銷活動：它可讓您存取連結至行銷活動的物件（計畫、方案、工作流程、預算等） 在&#x200B;**[!UICONTROL Campaign]**&#x200B;的架構中（選擇性的Adobe Campaign模組）。
 
    此群組包含下列已命名的許可權：
 
@@ -80,7 +80,7 @@ ht-degree: 1%
 
 1. **[!UICONTROL Content contributors]**
 
-   此群組中的運運算元可以存取&#x200B;**[!UICONTROL Content management]**&#x200B;架構內的內容資料夾(選擇性的Adobe Campaign模組)。 此群組不會授予任何其他權利。
+   此群組中的運運算元可以存取&#x200B;**[!UICONTROL Content management]**&#x200B;架構內的內容資料夾（選擇性的Adobe Campaign模組）。 此群組不會授予任何其他權利。
 
 1. **[!UICONTROL Access to reports]**
 
@@ -96,7 +96,7 @@ ht-degree: 1%
 
 1. 本機/中央管理
 
-   這些群組可讓您使用&#x200B;**[!UICONTROL Distributed marketing]** (選擇性的Adobe Campaign模組)。
+   這些群組可讓您使用&#x200B;**[!UICONTROL Distributed marketing]** （選擇性的Adobe Campaign模組）。
 
 1. **[!UICONTROL Offer managers]**
 

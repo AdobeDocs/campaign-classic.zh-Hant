@@ -7,7 +7,7 @@ hide: true
 exl-id: 88e581cf-43cd-4c43-9347-d016c62fdf42
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1109'
+source-wordcount: '1161'
 ht-degree: 1%
 
 ---
@@ -70,7 +70,7 @@ ht-degree: 1%
 
    ![](assets/acs_connect_query4.png)
 
-1. 在&#x200B;**[!UICONTROL Aggregates]**&#x200B;欄位中選取&#x200B;**[!UICONTROL Data collected]**&#x200B;並按一下&#x200B;**[!UICONTROL Next]**。
+1. 在&#x200B;**[!UICONTROL Data collected]**&#x200B;欄位中選取&#x200B;**[!UICONTROL Aggregates]**&#x200B;並按一下&#x200B;**[!UICONTROL Next]**。
 
    ![](assets/acs_connect_query5.png)
 
@@ -122,9 +122,9 @@ ht-degree: 1%
 
    此活動用於擷取所選對象的資料。 如有需要，您也可以使用此活動的相應索引標籤，套用額外的&#x200B;**[!UICONTROL Source Filtering]**。
 
-1. 新增&#x200B;**[!UICONTROL Email delivery]**&#x200B;活動，並將其設定為任何其他[電子郵件傳遞活動](https://experienceleague.adobe.com/docs/campaign-standard/using/managing-processes-and-data/channel-activities/email-delivery.html?lang=zh-Hant)。
+1. 新增&#x200B;**[!UICONTROL Email delivery]**&#x200B;活動，並將其設定為任何其他[電子郵件傳遞活動](https://experienceleague.adobe.com/docs/campaign-standard/using/managing-processes-and-data/channel-activities/email-delivery.html)。
 1. 開啟傳遞內容。
-1. 新增個人化欄位。從快顯視窗中找到&#x200B;**[!UICONTROL Additional data (targetData)]**&#x200B;節點。 此節點包含已在初始定位工作流程中計算的對象其他資料。 您可以使用它們做為任何其他個人化欄位。
+1. 新增個人化欄位。 從快顯視窗中找到&#x200B;**[!UICONTROL Additional data (targetData)]**&#x200B;節點。 此節點包含已在初始定位工作流程中計算的對象其他資料。 您可以使用它們做為任何其他個人化欄位。
 
    在此範例中，來自原始定位工作流程的其他資料是過去365天內傳送給每個收件者的傳送數量。 此處會顯示目標工作流程中所指定的NBdeliveries別名。
 
@@ -144,9 +144,9 @@ ht-degree: 1%
 1. 從傳遞控制面板，手動確認可傳送傳遞。
 1. 監視傳送的報告和記錄：
 
-   * **在Campaign Standard**&#x200B;中：存取與任何傳遞相關的[報告](https://experienceleague.adobe.com/docs/campaign-standard/using/reporting/about-reporting/about-dynamic-reports.html?lang=zh-Hant)和[記錄檔](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/monitoring-a-delivery.html?lang=zh-Hant)。
-   * Campaign v7和Campaign Standard中的&#x200B;**&#x200B;**：傳遞ID、電子郵件廣泛記錄檔和電子郵件追蹤記錄檔已同步至Campaign v7。 然後您就可以從Campaign v7取得行銷活動的360°檢視。
+   * **在Campaign Standard**&#x200B;中：存取與任何傳遞相關的[報告](https://experienceleague.adobe.com/docs/campaign-standard/using/reporting/about-reporting/about-dynamic-reports.html)和[記錄檔](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/monitoring-a-delivery.html)。
+   * Campaign v7和Campaign Standard中的&#x200B;****：傳遞ID、電子郵件廣泛記錄檔和電子郵件追蹤記錄檔已同步至Campaign v7。 然後您就可以從Campaign v7取得行銷活動的360°檢視。
 
      隔離會自動同步回Campaign v7。 這允許將無法傳遞的資訊納入考量，以便在Campaign v7中執行的下一個目標定位。
 
-     您可以在[本節](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=zh-Hant)中找到有關Campaign Standard隔離管理的詳細資訊。
+     您可以在[本節](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html)中找到有關Campaign Standard隔離管理的詳細資訊。

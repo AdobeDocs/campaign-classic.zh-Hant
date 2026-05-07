@@ -6,8 +6,8 @@ feature: Reporting, Monitoring
 exl-id: 71d24f03-d41d-49bc-b9a5-8237902f7d6a
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '336'
-ht-degree: 25%
+source-wordcount: '350'
+ht-degree: 27%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 25%
 
 您可以擴充資料庫的探索和分析能力，同時讓最終使用者更容易設定報告和表格：他們只需在建立其報告或表格時，選取現有的（全設定好的）多維度資料集，以處理計算、測量和統計數據。
 
-建立並設定多維度資料集後，便可以用於報告查詢方塊和網頁應用程式；可以在樞紐分析表內使用及操作多維度資料集。
+建立並設定多維度資料集後，便可以用於報告查詢方塊和網頁應用程式； 可以在樞紐分析表內使用及操作多維度資料集。
 
 >[!CAUTION]
 >

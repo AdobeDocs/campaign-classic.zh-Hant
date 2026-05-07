@@ -7,7 +7,7 @@ role: Developer
 exl-id: fc0fd23c-f9ea-4e30-b47b-a84143d882ca
 source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
-source-wordcount: '2354'
+source-wordcount: '2376'
 ht-degree: 2%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 2%
 # Campaign資料模型說明{#data-model-description}
 
 
-Adobe Campaign 附有預定義的資料模型。本節提供Adobe Campaign資料模型的內建表格及其互動的相關細節。
+Adobe Campaign 附有預定義的資料模型。 本節提供Adobe Campaign資料模型的內建表格及其互動的相關細節。
 
 若要存取每個資料表的描述，請移至&#x200B;**[!UICONTROL Admin > Configuration > Data schemas]**，從清單中選取資源，然後按一下&#x200B;**[!UICONTROL Documentation]**&#x200B;索引標籤。
 
@@ -23,7 +23,7 @@ Adobe Campaign 附有預定義的資料模型。本節提供Adobe Campaign資料
 
 >[!NOTE]
 >
->並以 XML 描述了應用程式中資料的實體和邏輯結構。並且遵循 Adobe Campaign 專屬的語法，稱為結構描述 (schema)。如需Adobe Campaign結構描述的詳細資訊，請閱讀[本節](../../configuration/using/about-schema-reference.md)。
+>並以 XML 描述了應用程式中資料的實體和邏輯結構。 並且遵循 Adobe Campaign 專屬的語法，稱為結構描述 (schema)。 如需Adobe Campaign結構描述的詳細資訊，請閱讀[本節](../../configuration/using/about-schema-reference.md)。
 
 ## 主要表格的說明 {#description-main-tables}
 
@@ -113,7 +113,7 @@ NmsRcpGrpRel關係表格僅包含與iRecipientId及iGroupId連結表格識別碼
 
 ## 行銷活動管理 {#campaign-management}
 
-這組表格連結至&#x200B;**行銷活動**&#x200B;模組，可讓您定義、最佳化、執行和分析通訊與行銷活動。 有關更多資訊，請參閱[Campaign v8 文件](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html?lang=zh-Hant){target=_blank}。
+這組表格連結至&#x200B;**行銷活動**&#x200B;模組，可讓您定義、最佳化、執行和分析通訊與行銷活動。 有關更多資訊，請參閱[Campaign v8 文件](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html){target=_blank}。
 
 ![](assets/data-model_campaign.png)
 

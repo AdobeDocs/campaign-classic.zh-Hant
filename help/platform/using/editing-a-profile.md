@@ -10,8 +10,8 @@ exl-id: 0f3a5582-5c90-4393-bee8-d9e2f07e5982
 hide: true
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '115'
-ht-degree: 59%
+source-wordcount: '124'
+ht-degree: 54%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 59%
 
 >[!NOTE]
 >
->若要進一步瞭解如何編輯設定檔及存取設定檔，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/audience/view-profiles){target=_blank}的詳細檔案。
+>若要進一步瞭解如何編輯設定檔及存取設定檔，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/view-profiles){target=_blank}的詳細檔案。
 
 
 
@@ -106,6 +106,6 @@ The list is configurable, and usually contains: the URL clicked, date and time o
 
 >[!NOTE]
 >
->For more on tracking functionality, please refer to [this page](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}.
+>For more on tracking functionality, please refer to [this page](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}.
 
 -->

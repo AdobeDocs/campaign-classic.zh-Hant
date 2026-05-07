@@ -7,7 +7,7 @@ hide: true
 exl-id: 4204350a-c2d2-4033-9bdf-87b49d8211b9
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1970'
+source-wordcount: '1974'
 ht-degree: 3%
 
 ---
@@ -49,7 +49,7 @@ ht-degree: 3%
 
    ![](assets/s_user_segmentation_partage4.png)
 
-1. 您也可以&#x200B;**使用**&#x200B;按鈕&#x200B;**[!UICONTROL Add]**&#x200B;新增其他子集。
+1. 您也可以&#x200B;**使用&#x200B;**[!UICONTROL Add]**按鈕**&#x200B;新增其他子集。
 
    ![](assets/s_user_segmentation_partage_add.png)
 
@@ -61,7 +61,7 @@ ht-degree: 3%
 
    ![](assets/s_user_segmentation_partage_add2.png)
 
-   您可以選擇產生單一出站轉變（例如使用區段代碼識別集合）：若要這麼做，請選取&#x200B;**[!UICONTROL Generate subsets in the same table]**&#x200B;索引標籤中的&#x200B;**[!UICONTROL General]**&#x200B;選項。
+   您可以選擇產生單一出站轉變（例如使用區段代碼識別集合）：若要這麼做，請選取&#x200B;**[!UICONTROL General]**&#x200B;索引標籤中的&#x200B;**[!UICONTROL Generate subsets in the same table]**&#x200B;選項。
 
    完成後，每個子集的區段代碼會自動儲存在其他欄中。 您可在傳遞層級的個人化欄位中存取此欄。
 
@@ -188,7 +188,7 @@ ht-degree: 3%
    * **[!UICONTROL Value]**：輸入分佈值。
    * **[!UICONTROL Percentage / Set]**：輸入連結至每個值的記錄限制（固定或百分比）。
 
-     此資料行是由&#x200B;**[!UICONTROL Distribution type]**&#x200B;索引標籤內的&#x200B;**[!UICONTROL General]**&#x200B;欄位所定義。
+     此資料行是由&#x200B;**[!UICONTROL General]**&#x200B;索引標籤內的&#x200B;**[!UICONTROL Distribution type]**&#x200B;欄位所定義。
 
    * **[!UICONTROL Label]**：輸入連結到每個值的標籤。
    * **[!UICONTROL Group or operator]**：如果您使用&#x200B;**[!UICONTROL Local approval]**&#x200B;活動（請參閱[本機核准](local-approval.md)），請選取指派給每個散發值的運運算元或運運算元群組。
@@ -219,8 +219,8 @@ ht-degree: 3%
 
 **[!UICONTROL Enable overlapping of output populations]**&#x200B;選項可讓您管理屬於數個子集的母體：
 
-* 當未選取該方塊時，分割活動將確保收件者不能出現在多個輸出轉換中，即使其滿足多個子集的條件也是如此。它們會位於具有相符條件的第一個標籤的目標中。
-* 當選取該方塊時，符合篩選條件的收件者，會出現在多個子集中。Adobe Campaign 建議使用排除條件。
+* 當未選取該方塊時，分割活動將確保收件者不能出現在多個輸出轉換中，即使其滿足多個子集的條件也是如此。 它們將位於具有符合條件的第一個標籤的目標中。
+* 當選取該方塊時，符合篩選條件的收件者，會出現在多個子集中。 Adobe Campaign 建議使用排除條件。
 
 ## 輸入引數 {#input-parameters}
 

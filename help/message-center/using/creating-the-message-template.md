@@ -6,7 +6,7 @@ feature: Transactional Messaging, Message Center, Templates
 exl-id: a52bc140-072e-4f81-b6da-f1b38662bce5
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '498'
+source-wordcount: '500'
 ht-degree: 0%
 
 ---
@@ -71,7 +71,7 @@ ht-degree: 0%
 
 若要將個人化標籤插入電子郵件內文，請套用下列步驟：
 
-1. 在訊息範本中，按一下符合電子郵件格式(HTML或文字)的索引標籤。
+1. 在訊息範本中，按一下符合電子郵件格式（HTML或文字）的索引標籤。
 
 1. 輸入訊息內文。
 
@@ -79,7 +79,7 @@ ht-degree: 0%
 
    ![](assets/messagecenter_create_custo_002.png)
 
-1. 使用下列語法填入標籤： **元素名稱**。@**屬性名稱**，如下所示。
+1. 使用下列語法填入標籤： **元素名稱**.@**屬性名稱**，如下所示。
 
    ![](assets/messagecenter_create_custo_003.png)
 

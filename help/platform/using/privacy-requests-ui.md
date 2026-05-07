@@ -9,7 +9,7 @@ topic-tags: starting-with-adobe-campaign
 exl-id: 73b90d79-88b6-4aaf-8103-4564de5e06be
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '774'
+source-wordcount: '781'
 ht-degree: 100%
 
 ---
@@ -54,20 +54,20 @@ ht-degree: 100%
 * 收件者追蹤記錄 (trackingLogRcp)
 * 封存的事件傳遞記錄 (broadLogEventHisto)
 * 收件者清單內容 (rcpGrpRel)
-* 訪客優惠方案主張 (propositionVisitor)
+* 訪客產品建議提議 (propositionVisitor)
 * 訪客 (visitor)
 * 訂閱歷史記錄 (subHisto)
 * 訂閱 (subscription)
-* 收件者優惠方案主張 (propositionRcp)
+* 收件者產品建議提議 (propositionRcp)
 
-如果您建立的自訂資源具有收件者表格 (自有類型) 的連結，也會將這些帳戶列入考量。例如，如果您有連結至收件者表格的交易表格和連結至交易表格的交易詳細資料，則會同時將這些帳戶列入考量。
+如果您建立的自訂資源具有收件者表格 (自有類型) 的連結，也會將這些帳戶列入考量。 例如，如果您有連結至收件者表格的交易表格和連結至交易表格的交易詳細資料，則會同時將這些帳戶列入考量。
 
 >[!IMPORTANT]
 >
->如果您使用設定檔刪除工作流程來執行隱私權批次要求，請考慮下列備註：
->* 透過工作流程刪除設定檔時，不會處理子表格。
+>如果您使用輪廓刪除工作流程來執行隱私權批次要求，請考慮下列備註：
+>* 透過工作流程刪除輪廓時，不會處理子表格。
 >* 您需要處理所有子表格的刪除。
->* Adobe 建議您建立 ETL 工作流程，在「隱私權存取」表格中新增要刪除的行，讓 **[!UICONTROL Delete privacy requests data]** 工作流程執行刪除。 出於效能方面的因素，我們建議每天限制刪除 200 個設定檔。
+>* Adobe 建議您建立 ETL 工作流程，在「隱私權存取」表格中新增要刪除的行，讓 **[!UICONTROL Delete privacy requests data]** 工作流程執行刪除。 出於效能方面的因素，我們建議每天限制刪除 200 個輪廓。
 
 ## 隱私權請求狀態 {#privacy-request-statuses}
 
@@ -77,13 +77,13 @@ ht-degree: 100%
 * **[!UICONTROL Processing]** / **[!UICONTROL Retry in progress]**：工作流程正在處理要求。
 * **[!UICONTROL Delete pending]**：工作流程已識別所有要刪除的收件者資料。
 * **[!UICONTROL Delete in progress]**：工作流程正在處理刪除。
-* **[!UICONTROL Delete Confirmation Pending]** (在兩步驟處理模式中刪除請求)：工作流程已處理存取請求。已請求手動確認以執行刪除。 此按鈕可使用 15 天。
+* **[!UICONTROL Delete Confirmation Pending]** (在兩步驟處理模式中刪除請求)：工作流程已處理存取請求。 已請求手動確認以執行刪除。 此按鈕可使用 15 天。
 * **[!UICONTROL Complete]**：要求處理已完成，並未發生錯誤。
-* **[!UICONTROL Error]**：工作流程發生錯誤。原因會顯示在 **[!UICONTROL Request status]** 欄位的「隱私權要求」清單中。例如，**[!UICONTROL Error data not found]** 代表在資料庫中找不到與資料主體 **[!UICONTROL Reconciliation value]** 相符的收件者資料。
+* **[!UICONTROL Error]**：工作流程發生錯誤。 原因會顯示在 **[!UICONTROL Request status]** 欄位的「隱私權要求」清單中。 例如，**[!UICONTROL Error data not found]** 代表在資料庫中找不到與資料主體 **[!UICONTROL Reconciliation value]** 相符的收件者資料。
 
 ## 兩步驟流程 {#two-step-process}
 
-依照預設，會啟動&#x200B;**兩步驟流程**。當您使用此模式建立新的刪除請求時，Adobe Campaign 一律會先執行存取請求。 這可讓您在確認刪除之前先檢查資料。
+依照預設，會啟動&#x200B;**兩步驟流程**。 當您使用此模式建立新的刪除請求時，Adobe Campaign 一律會先執行存取請求。 這可讓您在確認刪除之前先檢查資料。
 
 您可以從隱私權請求版本畫面變更此模式。 按一下 **[!UICONTROL Advanced settings]**。
 
@@ -103,7 +103,7 @@ ht-degree: 100%
 
 其中 @id 是隱私權要求 ID。
 
-此 URL 儲存在 **[!UICONTROL Privacy Requests (gdprRequest)]** 架構的 **[!UICONTROL "File location" (@urlFile)]** 欄位中。
+此 URL 儲存在 **[!UICONTROL Privacy Requests (gdprRequest)]** 結構描述的 **[!UICONTROL "File location" (@urlFile)]** 欄位中。
 
 該資訊在資料庫中可用 90 天。 一旦技術工作流程清除請求後，資訊就會從資料庫中移除，而 URL 就會過時。 請在從網頁下載資料之前，先檢查 URL 是否仍然有效。
 

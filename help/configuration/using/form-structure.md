@@ -8,7 +8,7 @@ badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v
 exl-id: e61f2b63-06d3-4b8c-867f-1c729176d2da
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '2394'
+source-wordcount: '2411'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 表單的描述是結構化XML檔案，它遵循表單結構描述&#x200B;**xtk:form**&#x200B;的語法。
 
-輸入表單的XML檔案必須包含具有`<form>`名稱&#x200B;**和**&#x200B;名稱空間&#x200B;**屬性的**&#x200B;根專案，才能填入表單名稱和名稱空間。
+輸入表單的XML檔案必須包含具有&#x200B;**名稱**&#x200B;和&#x200B;**名稱空間**&#x200B;屬性的`<form>`根專案，才能填入表單名稱和名稱空間。
 
 ```xml
 <form name="form_name" namespace="name_space">
@@ -27,7 +27,7 @@ ht-degree: 0%
 </form>
 ```
 
-依預設，表單會與具有相同名稱和名稱空間的資料結構描述相關聯。 若要將表單與不同名稱建立關聯，請將&#x200B;**專案的** entity-schema`<form>`屬性設定為結構描述金鑰的名稱。 為了說明輸入表單的結構，讓我們使用&quot;cus:recipient&quot;範例結構描述來說明介面：
+依預設，表單會與具有相同名稱和名稱空間的資料結構描述相關聯。 若要將表單與不同名稱建立關聯，請將`<form>`專案的&#x200B;**entity-schema**&#x200B;屬性設定為結構描述金鑰的名稱。 為了說明輸入表單的結構，讓我們使用&quot;cus:recipient&quot;範例結構描述來說明介面：
 
 ```xml
 <srcSchema name="recipient" namespace="cus">
@@ -86,7 +86,7 @@ ht-degree: 0%
 </form>
 ```
 
-具有&#x200B;**`<container>`** colcount **屬性的**&#x200B;元素可讓您強制在兩個資料行上顯示子控制項。
+具有&#x200B;**colcount**&#x200B;屬性的&#x200B;**`<container>`**&#x200B;元素可讓您強制在兩個資料行上顯示子控制項。
 
 控制項上的&#x200B;**colspan**&#x200B;屬性會將控制項擴充到其值中所輸入的資料行數目：
 
@@ -130,7 +130,7 @@ ht-degree: 0%
 </form>
 ```
 
-具有&#x200B;**`<static>`**&#x200B;分隔符號&#x200B;**型別的**&#x200B;標籤可讓您新增分隔符號列，其標籤包含在&#x200B;**label**&#x200B;屬性中。
+具有&#x200B;**分隔符號**&#x200B;型別的&#x200B;**`<static>`**&#x200B;標籤可讓您新增分隔符號列，其標籤包含在&#x200B;**label**&#x200B;屬性中。
 
 已使用帶有說明型別的`<static>`標籤新增說明文字。 已在&#x200B;**標籤**&#x200B;屬性中輸入文字的內容。
 
@@ -138,7 +138,7 @@ ht-degree: 0%
 
 容器可讓您將一組控制項分組。 它們由&#x200B;**`<container>`**&#x200B;元素表示。 上面用來格式化數欄的控制項。
 
-**上的** xpath`<container>`屬性可讓您簡化子控制項的參考。 然後，控制項的參照會相對於父`<container>`元素。
+`<container>`上的&#x200B;**xpath**&#x200B;屬性可讓您簡化子控制項的參考。 然後，控制項的參照會相對於父`<container>`元素。
 
 不含「xpath」的容器範例：
 
@@ -187,7 +187,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->**style=&quot;down|up**（依預設）**&quot;**&#x200B;功能會強制將索引標籤垂直定位在控制項下方或上方。 此功能為選用。
+>**style=&quot;down|up**（依預設）**&quot;**功能會強制將索引標籤垂直定位在控制項下方或上方。 此功能為選用。
 >`<container style="down" type="notebook">  … </container>`
 
 #### 圖示清單 {#icon-list}
@@ -235,7 +235,7 @@ ht-degree: 0%
 條件語法的範例：
 
 * **visibleIf=&quot;@email=&#39;peter.martinezATneeolane.net&#39;&quot;**：測試字串型別資料的相等性。 比較值必須以引號括住。
-* **visibleIf=&quot;@gender >= 1和@gender！= 2&quot;**：數值的條件。
+* **visibleIf=&quot;@gender >= 1和@gender != 2&quot;**：數值的條件。
 * **visibleIf=&quot;@boolean1=true or @boolean2=false&quot;**：測試布林值欄位。
 
 #### 正在啟用容器 {#enabling-container}
@@ -346,7 +346,7 @@ ht-degree: 0%
 
 **[!UICONTROL Add]**&#x200B;和&#x200B;**[!UICONTROL Delete]**&#x200B;按鈕可讓您新增和刪除連結上的集合元素。 依預設，新增元素會啟動目標架構的編輯表單。
 
-在清單的&#x200B;**[!UICONTROL Detail]**&#x200B;標籤上完成&#x200B;**zoom=&quot;true&quot;**&#x200B;屬性時，**`<input>`**&#x200B;按鈕會自動新增：它可讓您啟動所選行的編輯表單。
+在清單的&#x200B;**`<input>`**&#x200B;標籤上完成&#x200B;**zoom=&quot;true&quot;**&#x200B;屬性時，**[!UICONTROL Detail]**&#x200B;按鈕會自動新增：它可讓您啟動所選行的編輯表單。
 
 載入清單時可套用篩選和排序：
 
@@ -464,7 +464,7 @@ ht-degree: 0%
 </input>
 ```
 
-從清單定義下的`<form>`元素完成編輯表單。 其結構與輸入表單的結構相同。 在清單的&#x200B;**[!UICONTROL Detail]**&#x200B;標籤上完成&#x200B;**zoom=&quot;true&quot;**&#x200B;屬性時，會自動新增&#x200B;**`<input>`**&#x200B;按鈕。 此屬性可讓您啟動所選行的編輯表單。
+從清單定義下的`<form>`元素完成編輯表單。 其結構與輸入表單的結構相同。 在清單的&#x200B;**`<input>`**&#x200B;標籤上完成&#x200B;**zoom=&quot;true&quot;**&#x200B;屬性時，會自動新增&#x200B;**[!UICONTROL Detail]**&#x200B;按鈕。 此屬性可讓您啟動所選行的編輯表單。
 
 >[!NOTE]
 >
@@ -483,7 +483,7 @@ ht-degree: 0%
 
 ## 不可編輯的欄位 {#non-editable-fields}
 
-若要顯示欄位並防止編輯它，請使用&#x200B;**`<value>`**&#x200B;標籤或完成&#x200B;**標籤上的** readOnly=&quot;true&quot;**`<input>`**&#x200B;屬性。
+若要顯示欄位並防止編輯它，請使用&#x200B;**`<value>`**&#x200B;標籤或完成&#x200B;**`<input>`**&#x200B;標籤上的&#x200B;**readOnly=&quot;true&quot;**&#x200B;屬性。
 
 「性別」欄位範例：
 
@@ -527,7 +527,7 @@ ht-degree: 0%
 
 此控制項會在一組要編輯的欄位上建立樹狀結構。
 
-要編輯的控制項會分組在樹狀結構控制項的&#x200B;**`<container>`**&#x200B;標籤下輸入的&#x200B;**`<input>`**&#x200B;中：
+要編輯的控制項會分組在樹狀結構控制項的&#x200B;**`<input>`**&#x200B;標籤下輸入的&#x200B;**`<container>`**&#x200B;中：
 
 ```xml
 <input nolabel="true" type="treeEdit">
@@ -599,7 +599,7 @@ ht-degree: 0%
 </if>
 ```
 
-與&#x200B;**`<check expr="<condition>" />`**&#x200B;標籤合併的&#x200B;**`<error>`**&#x200B;標籤會阻止表單驗證，且如果未滿足條件，會顯示錯誤訊息：
+與&#x200B;**`<error>`**&#x200B;標籤合併的&#x200B;**`<check expr="<condition>" />`**&#x200B;標籤會阻止表單驗證，且如果未滿足條件，會顯示錯誤訊息：
 
 ```xml
 <leave>
@@ -632,7 +632,7 @@ ht-degree: 0%
 
 ![](assets/d_ncs_integration_form_exemple19.png)
 
-**元素上存在** type=&quot;wizard&quot;`<form>`屬性，可讓您定義表單建構中的助理模式。 這些頁面是從`<container>`個元素完成的，這些元素是`<form>`元素的子項。 頁面的`<container>`元素已填入標題的標題屬性和desc，以在頁面標題下顯示說明。 **[!UICONTROL Previous]**&#x200B;和&#x200B;**[!UICONTROL Next]**&#x200B;按鈕會自動新增，以允許在不同頁面之間瀏覽。
+`<form>`元素上存在&#x200B;**type=&quot;wizard&quot;**&#x200B;屬性，可讓您定義表單建構中的助理模式。 這些頁面是從`<container>`個元素完成的，這些元素是`<form>`元素的子項。 頁面的`<container>`元素已填入標題的標題屬性和desc，以在頁面標題下顯示說明。 **[!UICONTROL Previous]**&#x200B;和&#x200B;**[!UICONTROL Next]**&#x200B;按鈕會自動新增，以允許在不同頁面之間瀏覽。
 
 「**[!UICONTROL Finish]**」按鈕會儲存輸入的資料並關閉表單。
 
@@ -649,9 +649,9 @@ ht-degree: 0%
 </soapCall>
 ```
 
-服務的名稱及其實作結構描述是透過&#x200B;**標籤的**&#x200B;名稱&#x200B;**和**&#x200B;服務&#x200B;**`<soapcall>`**&#x200B;屬性輸入的。
+服務的名稱及其實作結構描述是透過&#x200B;**`<soapcall>`**&#x200B;標籤的&#x200B;**名稱**&#x200B;和&#x200B;**服務**&#x200B;屬性輸入的。
 
-輸入引數在&#x200B;**`<param>`**&#x200B;標籤下的&#x200B;**`<soapcall>`**&#x200B;專案上描述。
+輸入引數在&#x200B;**`<soapcall>`**&#x200B;標籤下的&#x200B;**`<param>`**&#x200B;專案上描述。
 
 必須透過&#x200B;**type**&#x200B;屬性指定引數型別。 可能的型別如下：
 

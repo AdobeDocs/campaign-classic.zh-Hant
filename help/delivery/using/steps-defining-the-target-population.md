@@ -8,8 +8,8 @@ hide: true
 exl-id: d0ed7be7-3147-4cb8-9ce7-ea51602e9048
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1730'
-ht-degree: 23%
+source-wordcount: '1763'
+ht-degree: 24%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 23%
 
 ## 選取傳遞的主要收件者 {#selecting-the-main-target}
 
-在大多數情況下，主要目標會從 Adobe Campaign 資料庫 (預設模式) 擷取。不過，收件者也可以儲存在外部檔案中。 若要了解更多資訊，請參閱[此區段](steps-defining-the-target-population.md#selecting-external-recipients)。
+在大多數情況下，主要目標會從 Adobe Campaign 資料庫 (預設模式) 擷取。 不過，收件者也可以儲存在外部檔案中。 若要了解更多資訊，請參閱[此區段](steps-defining-the-target-population.md#selecting-external-recipients)。
 
 若要選取傳遞的收件者，請遵循下列步驟：
 
@@ -47,7 +47,7 @@ ht-degree: 23%
 
    預設會提供下列目標型別：
 
-   * **[!UICONTROL Filtering conditions]** ：此選項可讓您定義查詢並顯示結果。 如需篩選器的詳細資訊，請參閱[Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/audience/create-filters){target=_blank}。
+   * **[!UICONTROL Filtering conditions]** ：此選項可讓您定義查詢並顯示結果。 如需篩選器的詳細資訊，請參閱[Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}。
    * **[!UICONTROL Subscribers of an information service]**：此選項可讓您選取收件者必須訂閱的電子報，才能成為正在建立的傳遞目標。
 
      ![](assets/s_ncs_user_wizard_email02c.png)
@@ -71,7 +71,7 @@ ht-degree: 23%
    * **[!UICONTROL Recipients included in a folder]** ：此選項可讓您定位樹狀結構之特定資料夾中所包含的設定檔。
    * **[!UICONTROL A recipient]** ：此選項可讓您從資料庫中的設定檔選取特定收件者。
    * **[!UICONTROL A list of recipients]** ：此選項可讓您鎖定收件者清單。 清單會顯示在[此區段](../../platform/using/creating-and-managing-lists.md)中。
-   * **[!UICONTROL User filters]** ：此選項可讓您存取預先設定的篩選器，以使用這些篩選器作為資料庫中設定檔的篩選條件。 如需篩選器的詳細資訊，請參閱[Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/audience/create-filters){target=_blank}。
+   * **[!UICONTROL User filters]** ：此選項可讓您存取預先設定的篩選器，以使用這些篩選器作為資料庫中設定檔的篩選條件。 如需篩選器的詳細資訊，請參閱[Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}。
    * 選項&#x200B;**[!UICONTROL Exclude recipients corresponding to this segment]**&#x200B;可讓您鎖定不符合已定義之目標條件的收件者。 若要使用此選項，請選取適當的方框，然後套用定位 (如先前所定義) 以排除產生的設定檔。
 
      ![](assets/s_ncs_user_wizard_email02g.png)
@@ -130,7 +130,7 @@ ht-degree: 23%
 
 可以使用以下選項：
 
-* **[!UICONTROL Exclude duplicate addresses during delivery]**。 此選項預設為作用中：可讓您在傳送期間消除重複的電子郵件地址。 套用的策略可能會因Adobe Campaign的使用方式及資料庫中的資料型別而異。
+* **[!UICONTROL Exclude duplicate addresses during delivery]**. 此選項預設為作用中：可讓您在傳送期間消除重複的電子郵件地址。 套用的策略可能會因 Adobe Campaign 的使用方式及資料庫的資料類型而異。
 
   可為每個傳遞範本設定選項的預設值。
 
@@ -144,7 +144,7 @@ ht-degree: 23%
      ![](assets/s_ncs_user_wizard_email02j.png)
 
 * **[!UICONTROL Exclude recipients who no longer want to be contacted]** ，即電子郵件地址位於封鎖清單上的收件者 (「選擇退出」)。 為了遵守電子行銷的職業道德和電子商務的相關法律，必須保持選取此選項。
-* **[!UICONTROL Exclude quarantined recipients]**。 此選項可讓您從目標排除位址未回應的任何設定檔。 我們強烈建議維持選取此選項。
+* **[!UICONTROL Exclude quarantined recipients]**. 此選項可讓您從目標排除位址未回應的任何設定檔。 我們強烈建議維持選取此選項。
 
   >[!NOTE]
   >

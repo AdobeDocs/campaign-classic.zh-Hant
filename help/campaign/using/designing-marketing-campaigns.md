@@ -8,8 +8,8 @@ hide: true
 exl-id: 4e0df18f-3623-4dfb-a2f8-ad293dbc4dd5
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '434'
-ht-degree: 19%
+source-wordcount: '453'
+ht-degree: 17%
 
 ---
 
@@ -35,13 +35,13 @@ ht-degree: 19%
 
 * **Campaign**
 
-  行銷活動會集中與行銷活動相關的所有元素：傳送、目標定位規則、成本、匯出檔案、相關檔案等。 每個行銷活動都會附加至一個方案。
+  行銷活動會集中與行銷活動相關的所有元素：傳送、目標定位規則、成本、匯出檔案、相關檔案等。每個行銷活動都會附加至一個方案。
 
   如需詳細資訊，請參閱[新增行銷活動](../../campaign/using/setting-up-marketing-campaigns.md#adding-a-campaign)。
 
 * **方案**
 
-  方案可讓您定義日曆期間的行銷動作：啟動、游說、忠誠度等。 每個方案都包含連結至日曆的行銷活動，提供整體檢視。
+  方案可讓您定義日曆期間的行銷動作：啟動、游說、忠誠度等。每個方案都包含連結至日曆的行銷活動，可提供整體檢視。
 
 * **計畫**
 
@@ -71,4 +71,4 @@ ht-degree: 19%
 
 >[!VIDEO](https://video.tv.adobe.com/v/35131?quality=12)
 
-[!DNL Campaign Classic]此處[提供其他](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant)操作說明影片。
+[此處](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant)提供其他[!DNL Campaign Classic]操作說明影片。

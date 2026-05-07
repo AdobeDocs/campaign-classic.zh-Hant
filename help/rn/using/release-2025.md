@@ -1,14 +1,15 @@
 ---
 product: campaign
-title: Campaign Classic 2025 版本
-description: 進一步瞭解 Campaign Classic 2025 版本
+title: Campaign Classic 2025版本
+description: 深入瞭解Campaign Classic 2025版本
 feature: Release Notes
 role: User
 level: Beginner
-source-git-commit: b9a716f327b8fdd68c3bf36dbe864535308def30
+exl-id: 8fd7a66b-cdff-427d-b78f-4becaba51129
+source-git-commit: b757b7ebc297acd10b4c57ab03862a039ae930cb
 workflow-type: tm+mt
-source-wordcount: '866'
-ht-degree: 100%
+source-wordcount: '894'
+ht-degree: 98%
 
 ---
 
@@ -24,8 +25,8 @@ _2025 年 5 月 12 日_
 
 此版本編號包含以下修正：
 
-* 修正了在非 Oracle 設定中遇到的升級後問題。(NEO-87012)
-* 修正了同時影響用戶端主控台和伺服器的 TLS / HTTPS 後端問題。(NEO-87432)
+* 修正了在非 Oracle 設定中遇到的升級後問題。 (NEO-87012)
+* 修正了同時影響用戶端主控台和伺服器的 TLS / HTTPS 後端問題。 (NEO-87432)
 
 ### 版本編號 9390 {#build-9390}
 
@@ -72,29 +73,29 @@ This release comes with the following compatibility updates:
 
 此版本還修正下列問題：
 
-* 修正&#x200B;**資料載入 (檔案)** 活動無法將檔案上傳至伺服器<!--after an upgrade to version 8.3.8-->的問題。 使用者現在可以成功上傳檔案，並且不會遇到進度卡住或控制台錯誤的問題。(NEO-47269)
+* 修正&#x200B;**資料載入 (檔案)** 活動無法將檔案上傳至伺服器<!--after an upgrade to version 8.3.8-->的問題。 使用者現在可以成功上傳檔案，並且不會遇到進度卡住或控制台錯誤的問題。 (NEO-47269)
 
-* 已解決 Apache <!--following an upgrade to Adobe Campaign Classic 7.2.2 build 9349--> 中的分段錯誤問題。此修正可防止核心檔案產生，並確保伺服器穩定運作。 (NEO-59059)
+* 已解決 Apache <!--following an upgrade to Adobe Campaign Classic 7.2.2 build 9349--> 中的分段錯誤問題。 此修正可防止核心檔案產生，並確保伺服器穩定運作。 (NEO-59059)
 
 * 已解決與 Google BigQuery 資料庫 <!--after upgrading to version 7.3.3 build 9359--> 的連線問題。 使用者現在可以使用 GCP 外部帳戶成功測試連線。 (NEO-62455)
 
-* 增強與使用同盟資料存取 (FDA) Google BigQuery 表格中布林值和日期時間欄更新的相容性。 此修正可確保在插入/更新作業期間正確處理資料類型。(NEO-65774)
+* 增強與使用同盟資料存取 (FDA) Google BigQuery 表格中布林值和日期時間欄更新的相容性。 此修正可確保在插入/更新作業期間正確處理資料類型。 (NEO-65774)
 
-* 修正了允許攻擊者將 HTML 元素插入電子郵件端點的資源插入漏洞。 此安全性增強功能可防止未經授權的存取和網路釣魚攻擊。(NEO-66462)
+* 修正了允許攻擊者將 HTML 元素插入電子郵件端點的資源插入漏洞。 此安全性增強功能可防止未經授權的存取和網路釣魚攻擊。 (NEO-66462)
 
-* 解決因 HTTP 內容或傳輸編碼問題而導致插入資料至 Google BigQuery 資料表時出現的間歇性錯誤。此修正可確保穩定的資料載入工作流程。 (NEO-66989)
+* 解決因 HTTP 內容或傳輸編碼問題而導致插入資料至 Google BigQuery 資料表時出現的間歇性錯誤。 此修正可確保穩定的資料載入工作流程。 (NEO-66989)
 
-* 已解決工作流程中`File.list()`方法的路徑周遊漏洞。此安全性增強功能可防止未經授權的目錄存取並保護敏感檔案。 (NEO-77898)
+* 已解決工作流程中`File.list()`方法的路徑周遊漏洞。 此安全性增強功能可防止未經授權的目錄存取並保護敏感檔案。 (NEO-77898)
 
 * 修正 SMS 傳送記錄檔未正確更新為「在行動裝置上接收」狀態的問題。 此增強功能可確保傳送報告的準確性。 (NEO-78843)
 
-* 解決在使用 Azure 同盟資料存取 (FDA) 時，Adobe Campaign Classic 登入錯誤的問題。使用者現在可以透過使用者端主控台成功登入。 (NEO-79373)
+* 解決在使用 Azure 同盟資料存取 (FDA) 時，Adobe Campaign Classic 登入錯誤的問題。 使用者現在可以透過使用者端主控台成功登入。 (NEO-79373)
 
 * 修正由 `CCurlAzureBlobStorage::UploadStream()` 方法造成的工作流程當機問題。 此增強功能可確保穩定的工作流程執行。 (NEO-79598)
 
 * 在 Windows 上啟用兩個重要編譯旗標 (`ControlFlowGuard`和`StackProtection`)，以增強產品安全性並降低利用風險。 (NEO-80145)
 
-* 已修復在 Broadlog 處於失敗狀態時，事件狀態傳送不正確的問題。此增強功能可確保提供準確的事件報告。 (NEO-80245)
+* 已修復在 Broadlog 處於失敗狀態時，事件狀態傳送不正確的問題。 此增強功能可確保提供準確的事件報告。 (NEO-80245)
 
 * POP3 OAuth 重新整理和存取權杖現在儲存在資料庫中，重新整理權杖過期後，`Authentication failure: unknown user name or bad password` 錯誤不再出現。 (NEO-80683)
 
@@ -112,11 +113,11 @@ This release comes with the following compatibility updates:
 
 * 解決 MTA 下層處理序卡住、封鎖傳送槽的問題。 此修正可確保推播和 WhatsApp 通訊的順暢傳送作業。 (NEO-82351)
 
-* 修正傳送因暫停傳送活動而卡在個人化待處理狀態的問題。此增強功能可確保成功執行傳送。 (NEO-82781)
+* 修正傳送因暫停傳送活動而卡在個人化待處理狀態的問題。 此增強功能可確保成功執行傳送。 (NEO-82781)
 
-* 運用 CampaignIO 端點進行驗證，增強了 IMS 登入功能。此項改善能簡化登入過程。(NEO-82838)
+* 運用 CampaignIO 端點進行驗證，增強了 IMS 登入功能。 此項改善能簡化登入過程。 (NEO-82838)
 
-* 重新處理了 Google BigQuery 同盟資料存取 (FDA) 逾時錯誤，確保熱修復部署後查詢執行穩定。(NEO-82923)
+* 重新處理了 Google BigQuery 同盟資料存取 (FDA) 逾時錯誤，確保熱修復部署後查詢執行穩定。 (NEO-82923)
 
 * 解決將大型資料磁碟區載入 Teradata 表格時的空間問題。 此增強功能可確保穩定的資料載入作業。 (NEO-83252)
 
@@ -128,4 +129,4 @@ This release comes with the following compatibility updates:
 
 * 實施了監控程式變更，以解決因程式停滯所導致的 MTA 下層插槽封鎖。 此增強功能可確保順暢的傳送作業。 (NEO-84553)
 
-* 增強了 JavaScript 等待檢查，以解決由處於工作狀態的處理序所導致的 MTA 下層插槽封鎖問題。此修正可確保穩定傳送作業。 (NEO-85150)
+* 增強了 JavaScript 等待檢查，以解決由處於工作狀態的處理序所導致的 MTA 下層插槽封鎖問題。 此修正可確保穩定傳送作業。 (NEO-85150)

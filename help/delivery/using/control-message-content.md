@@ -8,7 +8,7 @@ role: User
 exl-id: dcd3a9f9-5fe9-4c28-a4a5-5aed67b036ab
 source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '842'
 ht-degree: 5%
 
 ---
@@ -25,11 +25,11 @@ ht-degree: 5%
 * [取消訂閱連結](#opt-out)和登陸頁面：取消訂閱連結是必要的。 它必須可見且有效，而且表單必須有效。
 * 預覽：使用Adobe Campaign提供的工具來檢查並最佳化您的電子郵件內容（[收件匣轉譯](#message-responsiveness)，[SpamAssassin](#spamassassin)）。
 
-如需在設計內容時最佳化傳遞能力的其他秘訣，請參閱[Adobe傳遞能力最佳實務指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/content-best-practices-for-optimal-delivery.html?lang=zh-Hant)。
+如需在設計內容時最佳化傳遞能力的其他秘訣，請參閱[Adobe傳遞能力最佳實務指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/content-best-practices-for-optimal-delivery.html)。
 
 >[!NOTE]
 >
->如需編輯電子郵件內容的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=zh-Hant){target="_blank"}。
+>如需編輯電子郵件內容的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html){target="_blank"}。
 
 ## 寄件者地址 {#sender-address}
 
@@ -37,33 +37,33 @@ ht-degree: 5%
 
 您必須確定在執行個體層級（功能表&#x200B;**[!UICONTROL Tools > Advanced > deployment wizard...]**）或最常使用的案例中指定了正確的地址。
 
-如需詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=zh-Hant){target="_blank"}。
+有關更多資訊，請參閱[Campaign v8 文件](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html){target="_blank"}。
 
 ## 個人化 {#personalization}
 
 為了改善收件者的體驗並讓他們開啟您的電子郵件，Adobe Campaign可讓您個人化您的訊息。
 
-如需在Adobe Campaign中使用個人化欄位的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/personalize/personalization-fields){target="_blank"}。
+如需在Adobe Campaign中使用個人化欄位的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/personalize/personalization-fields){target="_blank"}。
 
 ## 選擇退出連結和表單 {#opt-out}
 
-依預設，分析訊息時，型別規則會檢查是否包含退出連結，如果缺少該連結，則會產生警告。 您可以變更此規則，以引發錯誤（而非簡單的警告），並阻止傳送在沒有此連結的情況下傳出。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html?lang=zh-Hant){target="_blank"}。
+依預設，分析訊息時，型別規則會檢查是否包含退出連結，如果缺少該連結，則會產生警告。 您可以變更此規則，以引發錯誤（而非簡單的警告），並阻止傳送在沒有此連結的情況下傳出。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html){target="_blank"}。
 
 每次傳送前，您必須先檢查選擇退出連結是否正常運作。 例如，傳送校樣時，請確定連結有效、表單線上上，且驗證後會將&#x200B;**[!UICONTROL No longer contact this recipient]**&#x200B;欄位的值變更為&#x200B;**[!UICONTROL Yes]**。 您應該系統地進行此檢查，因為輸入連結或變更表單時總是可能發生人為錯誤。
 
-在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=zh-Hant){target="_blank"}中瞭解如何插入選擇退出。
+在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}中瞭解如何插入選擇退出。
 
 如果在開始傳遞後偵測到有關取消訂閱的問題，則仍可以為按一下選擇退出連結的收件者手動執行取消訂閱（例如使用大量更新函式），即使他們無法確認自己的選擇。
 
 一般而言，請勿透過要求收件者填寫電子郵件地址或名稱等欄位，來妨礙想要選擇退出的收件者。 表單應只有一個驗證按鈕，並且只應對加密的識別碼執行調解。
 
-要求額外確認並不可靠：使用者可能有兩個電子郵件地址會重新導向至同一個方塊(例如：firstname.lastname@club.com和firstname.lastname@internet-club.com)。 如果收件者僅能記住第一個地址，並想要透過傳送給另一個地址的訊息取消訂閱，則表單將拒絕此操作，因為加密的識別碼和輸入的電子郵件地址不相符。
+要求額外確認並不可靠：使用者可能有兩個電子郵件地址會重新導向至同一個方塊（例如：firstname.lastname@club.com和firstname.lastname@internet-club.com）。 如果收件者僅能記住第一個地址，並想要透過傳送給另一個地址的訊息取消訂閱，則表單將拒絕此操作，因為加密的識別碼和輸入的電子郵件地址不相符。
 
 ## 收件匣轉譯 {#message-responsiveness}
 
 在傳送訊息之前，您可以檢查訊息在不同裝置上的外觀，以測試訊息回應能力。 這是為了確保以最佳方式顯示在各種Web使用者端、網頁郵件與裝置上。
 
-為了執行此操作，Adobe Campaign 會擷取呈現，並將之用於專用報告中。這可讓您在可接收訊息的不同內容中預覽所傳送的訊息。
+為了執行此操作，Adobe Campaign 會擷取呈現，並將之用於專用報告中。 這可讓您在可接收訊息的不同內容中預覽所傳送的訊息。
 
 如需詳細資訊，請參閱[收件匣轉譯](inbox-rendering.md)。
 

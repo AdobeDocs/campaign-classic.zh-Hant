@@ -8,7 +8,7 @@ hide: true
 exl-id: c23212f2-fdf8-4820-b389-546f7c84db27
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '3335'
+source-wordcount: '3362'
 ht-degree: 6%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 6%
 行銷活動是根據定義的臨界值和訊息權重來選取。
 
 * 臨界值是指定期間內指定收件者獲授權的最高傳遞數量。 可以是設定或變數。 這是在型別規則設定中設定或計算的。 請參閱[訊息數目上限](#maximum-number-of-messages)。
-* 傳遞權重可讓您確認壓力管理架構內最優先的傳遞。具有最高權重的訊息具有優先順序。 請參閱[訊息權重](#message-weight)。
+* 傳遞權重可讓您確認壓力管理架構內最優先的傳遞。 權重最高的訊息具有最高優先。 請參閱[訊息權重](#message-weight)。
 
 仲裁包括確保權重大於進行中行銷活動的已排程行銷活動不會導致過多的設定檔請求：如果是這種情況，則會將設定檔從傳送中排除。
 
@@ -72,7 +72,7 @@ ht-degree: 6%
 
    ![](assets/campaign_opt_create_a_rule_03b.png)
 
-   若要定義變數臨界值，請在&#x200B;**[!UICONTROL Depends on the recipient]**&#x200B;欄位中選取&#x200B;**[!UICONTROL Type of threshold]**&#x200B;值，並使用右側的圖示開啟運算式編輯器。
+   若要定義變數臨界值，請在&#x200B;**[!UICONTROL Type of threshold]**&#x200B;欄位中選取&#x200B;**[!UICONTROL Depends on the recipient]**&#x200B;值，並使用右側的圖示開啟運算式編輯器。
 
    ![](assets/campaign_opt_create_a_rule_04.png)
 
@@ -82,7 +82,7 @@ ht-degree: 6%
 
    每個傳遞都有權重，即代表其優先順序等級的值：這會啟用行銷活動之間的仲裁。 權重是使用型別規則及/或其屬性中定義的公式來計算。 如需詳細資訊，請參閱[訊息權重](#message-weight)。
 
-1. 預設情況下，所有訊息都將考慮到臨界值計算。**[!UICONTROL Restriction]**&#x200B;索引標籤可讓您篩選型別規則關注的訊息：
+1. 預設情況下，所有訊息都將考慮到臨界值計算。 **[!UICONTROL Restriction]**&#x200B;索引標籤可讓您篩選型別規則關注的訊息：
 
    * 此索引標籤的上方區段可讓您限制相關收件者。
    * 此索引標籤的下方區域可讓您篩選要計數的訊息。
@@ -97,7 +97,7 @@ ht-degree: 6%
 
 ### 最大訊息數 {#maximum-number-of-messages}
 
-每個壓力規則會定義一個臨界值，即在指定時段內可以傳送給一個收件者的訊息數量上限。 一旦達到此臨界值時，在考慮到該期間結束之前，將不再進行傳送。此程式可讓您在訊息超過設定的臨界值時，自動將收件者從傳遞中排除，以避免過度請求。
+每個壓力規則會定義一個臨界值，即在指定時段內可以傳送給一個收件者的訊息數量上限。 一旦達到此臨界值時，在考慮到該期間結束之前，將不再進行傳送。 此程式可讓您在訊息超過設定的臨界值時，自動將收件者從傳遞中排除，以避免過度請求。
 
 臨界值可以是常數，或透過包含變數的公式計算。 這表示在指定期間，臨界值可能會因收件者而異，甚至會針對相同收件者而有所不同。
 
@@ -119,9 +119,9 @@ ht-degree: 6%
 
 ### 訊息權重 {#message-weight}
 
-每個傳遞都有權重，代表其優先順序。傳遞的預設權重為 5。壓力規則可讓您定義要套用至傳遞的權重。
+每個傳遞都有權重，代表其優先順序。 傳遞的預設權重為 5。 壓力規則可讓您定義要套用至傳遞的權重。
 
-權重可以設定或透過公式計算以適合收件者。例如，您可以根據收件者的興趣定義傳遞權重。
+權重可以設定或透過公式計算以適合收件者。 例如，您可以根據收件者的興趣定義傳遞權重。
 
 >[!CAUTION]
 >
@@ -137,7 +137,7 @@ ht-degree: 6%
 
    ![](assets/campaign_opt_pressure_weight_sample.png)
 
-1. 將此規則套用至包含下列主題的訊息：電子報、特殊優惠等。 這些傳送的權重，因此其優先順序層級，將取決於每個收件者的傾向分數。
+1. 將此規則套用至包含下列主題的訊息：電子報、特殊優惠等。這些傳送的權重，因此其優先順序層級，將取決於每個收件者的傾向分數。
 
 ## 設定期間 {#setting-the-period}
 
@@ -153,11 +153,11 @@ ht-degree: 6%
 
 若要將考慮的傳送限制在2週期間，您可以：
 
-1. 在「**」欄位中輸入** 15d **[!UICONTROL Concerned period]**：在計算時將考慮在套用規則的傳遞日期前兩週傳送的傳遞，
+1. 在「**[!UICONTROL Concerned period]**」欄位中輸入&#x200B;**15d**：在計算時將考慮在套用規則的傳遞日期前兩週傳送的傳遞，
 
 或
 
-1. 在&#x200B;**欄位中輸入** 7d **[!UICONTROL Period considered]**&#x200B;並核取&#x200B;**[!UICONTROL Take the deliveries into account in the provisional calendar]**&#x200B;選項：在計算時，會考慮在傳送日期前7天傳送的傳送以及在套用規則的傳送日期後7天排程的傳送。
+1. 在&#x200B;**[!UICONTROL Period considered]**&#x200B;欄位中輸入&#x200B;**7d**&#x200B;並核取&#x200B;**[!UICONTROL Take the deliveries into account in the provisional calendar]**&#x200B;選項：在計算時，會考慮在傳送日期前7天傳送的傳送以及在套用規則的傳送日期後7天排程的傳送。
 
 期間開始日期取決於資料庫的設定方式。
 
@@ -223,7 +223,7 @@ ht-degree: 6%
 若要建立規則，請套用以下步驟：
 
 1. 建立新的&#x200B;**壓力**&#x200B;型別型別規則。
-1. 編輯&#x200B;**[!UICONTROL Pressure]**&#x200B;標籤：在&#x200B;**[!UICONTROL Maximum number of messages]**&#x200B;區段中，我們要建立一個公式以根據每個收件者計算臨界值。 在&#x200B;**[!UICONTROL Depends on the recipient]**&#x200B;欄位中選取&#x200B;**[!UICONTROL Threshold type]**&#x200B;值，然後按一下&#x200B;**[!UICONTROL Edit expression]**&#x200B;欄位右側的&#x200B;**[!UICONTROL Formula]**。
+1. 編輯&#x200B;**[!UICONTROL Pressure]**&#x200B;標籤：在&#x200B;**[!UICONTROL Maximum number of messages]**&#x200B;區段中，我們要建立一個公式以根據每個收件者計算臨界值。 在&#x200B;**[!UICONTROL Threshold type]**&#x200B;欄位中選取&#x200B;**[!UICONTROL Depends on the recipient]**&#x200B;值，然後按一下&#x200B;**[!UICONTROL Formula]**&#x200B;欄位右側的&#x200B;**[!UICONTROL Edit expression]**。
 
    按一下&#x200B;**[!UICONTROL Advanced parameters]**&#x200B;按鈕以定義計算公式。
 
@@ -233,9 +233,9 @@ ht-degree: 6%
 
    ![](assets/campaign_opt_pressure_sample_1_2.png)
 
-1. 在函式清單中，連按兩下&#x200B;**節點中的** Iif **[!UICONTROL Others]**&#x200B;函式。
+1. 在函式清單中，連按兩下&#x200B;**[!UICONTROL Others]**&#x200B;節點中的&#x200B;**Iif**&#x200B;函式。
 
-   然後在&#x200B;**區段中選取收件者的**&#x200B;狀態&#x200B;**[!UICONTROL Available fields]**。
+   然後在&#x200B;**[!UICONTROL Available fields]**&#x200B;區段中選取收件者的&#x200B;**狀態**。
 
    ![](assets/campaign_opt_pressure_sample_1_3.png)
 
@@ -295,7 +295,7 @@ ht-degree: 6%
 套用下列設定步驟：
 
 1. 建立新的&#x200B;**壓力**&#x200B;型別型別規則。
-1. 編輯&#x200B;**[!UICONTROL Pressure]**&#x200B;標籤。 我們要建立以每個個別收件者為基礎的臨界值公式：按一下「**[!UICONTROL Edit expression]**」欄位右側的「**[!UICONTROL Weight formula]**」圖示。
+1. 編輯&#x200B;**[!UICONTROL Pressure]**&#x200B;標籤。 我們要建立以每個個別收件者為基礎的臨界值公式：按一下「**[!UICONTROL Weight formula]**」欄位右側的「**[!UICONTROL Edit expression]**」圖示。
 
    ![](assets/campaign_opt_pressure_sample_2_1.png)
 
@@ -340,11 +340,11 @@ ht-degree: 6%
 1. 建立行銷活動。 如需詳細資訊，請參閱[本章節](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign)。
 1. 在行銷活動的&#x200B;**[!UICONTROL Targeting and workflows]**&#x200B;索引標籤中，新增&#x200B;**查詢**&#x200B;活動至您的工作流程。 有關使用此活動的詳細資訊，請參閱[本區段](../../workflow/using/query.md)。
 1. 將&#x200B;**[!UICONTROL Email delivery]**&#x200B;活動新增至工作流程並開啟它。 有關使用此活動的詳細資訊，請參閱[本區段](../../workflow/using/delivery.md)。
-1. 前往&#x200B;**[!UICONTROL Approvals]**&#x200B;的&#x200B;**[!UICONTROL Delivery properties]**&#x200B;標籤，並停用所有核准。
+1. 前往&#x200B;**[!UICONTROL Delivery properties]**&#x200B;的&#x200B;**[!UICONTROL Approvals]**&#x200B;標籤，並停用所有核准。
 
    ![](assets/campaign_opt_pressure_example_2.png)
 
-1. 在&#x200B;**[!UICONTROL Typology]**&#x200B;的&#x200B;**[!UICONTROL Delivery properties]**&#x200B;標籤中，參考要套用規則的行銷活動型別。 定義傳遞的權重。
+1. 在&#x200B;**[!UICONTROL Delivery properties]**&#x200B;的&#x200B;**[!UICONTROL Typology]**&#x200B;標籤中，參考要套用規則的行銷活動型別。 定義傳遞的權重。
 
    ![](assets/campaign_opt_pressure_example_3.png)
 

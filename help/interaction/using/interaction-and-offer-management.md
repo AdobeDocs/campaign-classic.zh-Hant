@@ -1,17 +1,17 @@
 ---
 product: campaign
-title: 互動與優惠管理
+title: 互動與產品建議管理
 description: 瞭解如何根據資格規則將最佳優惠方案傳送給您的聯絡人
 feature: Interaction, Offers
 exl-id: 62b8fdcd-8423-496c-8407-ab89a3a70721
 source-git-commit: de9ff0b50d819038c97e8515ddb7d6cfeb4547a1
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: '293'
 ht-degree: 6%
 
 ---
 
-# 互動與優惠管理{#interaction-and-offer-management}
+# 互動與產品建議管理{#interaction-and-offer-management}
 
 
 
@@ -29,8 +29,8 @@ ht-degree: 6%
 
 ## 相關主題
 
-| 有用的頁面 | 其他資源 |
+| 有用的頁面 | 額外資源 |
 |---|---|
 | [互動實作步驟](../../interaction/using/implementation-steps.md) | [正在測試優惠方案發佈](../../interaction/using/about-offers-simulation.md) |
 | [即時/設計環境](../../interaction/using/live-design-environments.md) | [在電子郵件中新增選件](../../interaction/using/integrating-an-offer-via-the-wizard.md) |
-| [建立優惠方案空間](../../interaction/using/creating-offer-spaces.md) | [使用案例：在網站中新增選件](../../interaction/using/offers-on-an-inbound-channel.md) |
+| [建立產品建議空間](../../interaction/using/creating-offer-spaces.md) | [使用案例：在網站中新增選件](../../interaction/using/offers-on-an-inbound-channel.md) |

@@ -8,7 +8,7 @@ hide: true
 exl-id: c60c4f86-a957-4c44-a0fe-39b6e3f0e5d6
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1918'
+source-wordcount: '1924'
 ht-degree: 0%
 
 ---
@@ -62,7 +62,7 @@ Adobe Campaign可讓您定義服務提供者，讓他們參與促銷活動內所
 >
 >如需詳細資訊，請參閱[定義成本結構](#defining-the-cost-structure)。
 
-成本類別是一個實體，其中包含一組符合傳送型別（電子郵件、直接郵件等）或任務資格的成本。 成本類別會分組在與服務提供者相關的服務範本中。 每個服務提供者都可以參考一或多個服務範本。
+成本類別是包含一組成本的實體，符合傳送型別（電子郵件、直接郵件等） 或針對任務。 成本類別會分組在與服務提供者相關的服務範本中。 每個服務提供者都可以參考一或多個服務範本。
 
 若要建立服務範本並定義其內容，請套用下列步驟：
 
@@ -70,7 +70,7 @@ Adobe Campaign可讓您定義服務提供者，讓他們參與促銷活動內所
 
    ![](assets/s_ncs_user_supplier_node_create_template.png)
 
-1. 針對每種處理型別（透過直接郵件/電子郵件/等傳遞），建立成本類別。 或任務)。 若要這麼做，請按一下「**[!UICONTROL Cost categories]**」標籤，然後按「**[!UICONTROL Add]**」按鈕，然後輸入每個成本類別的引數。
+1. 針對每種處理型別（透過直接郵件/電子郵件/等或任務傳遞），建立成本類別。 若要這麼做，請按一下「**[!UICONTROL Cost categories]**」標籤，然後按「**[!UICONTROL Add]**」按鈕，然後輸入每個成本類別的引數。
 
    ![](assets/s_ncs_user_supplier_node_03.png)
 
@@ -159,7 +159,7 @@ Adobe Campaign可讓您定義服務提供者，讓他們參與促銷活動內所
 
 服務透過傳遞或任務與行銷活動相關聯。 服務提供者會連結至傳遞範本，以在透過此範本建立的傳遞中提供其服務。
 
-選取服務時，與傳送型別（直接郵件、電子郵件等）相對應的成本類別會與已定義的處理選項一起自動在中央表格中標示。
+選取服務時，與傳送型別（直接郵件、電子郵件等）相對應的成本類別 會連同已定義的處理選項自動在中央表格中標示。
 
 >[!NOTE]
 >
@@ -204,7 +204,7 @@ Adobe Campaign可讓您定義服務提供者，讓他們參與促銷活動內所
 
 ### 庫存管理 {#stock-management}
 
-如果庫存耗盡或達到最小臨界值，Adobe Campaign可以提醒一組操作員。 可透過導覽區域的&#x200B;**[!UICONTROL Stocks]**&#x200B;連結，透過&#x200B;**[!UICONTROL Campaigns]**&#x200B;標籤的&#x200B;**[!UICONTROL Other choices]**&#x200B;連結存取庫存量。
+如果庫存耗盡或達到最小臨界值，Adobe Campaign可以提醒一組操作員。 可透過導覽區域的&#x200B;**[!UICONTROL Other choices]**&#x200B;連結，透過&#x200B;**[!UICONTROL Campaigns]**&#x200B;標籤的&#x200B;**[!UICONTROL Stocks]**&#x200B;連結存取庫存量。
 
 ![](assets/s_ncs_user_stocks_view.png)
 

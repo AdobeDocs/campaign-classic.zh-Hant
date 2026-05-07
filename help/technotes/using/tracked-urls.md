@@ -8,7 +8,7 @@ exl-id: e7d4331b-7149-4768-8e46-2e2911319074
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
 source-wordcount: '387'
-ht-degree: 30%
+ht-degree: 33%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 30%
 * Campaign 19.1.5 (build 9033)至19.1.7 (build 9036)版本。
 
 
-在本節[中瞭解如何確認您的](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)版本。
+在本節](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中瞭解如何確認您的[版本。
 
 **如何更新？**
 

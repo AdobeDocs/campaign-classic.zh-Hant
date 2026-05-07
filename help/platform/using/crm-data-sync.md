@@ -7,7 +7,7 @@ exl-id: 7f9eda15-76e8-40a1-8302-004cea085778
 hide: true
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1529'
+source-wordcount: '1537'
 ht-degree: 1%
 
 ---
@@ -209,7 +209,7 @@ Adobe Campaign與CRM之間的資料同步是透過專用的工作流程活動來
 
 ### 錯誤處理 {#error-processing}
 
-在資料匯入或匯出的架構中，您可以將特定程式套用至錯誤和拒絕。 若要這麼做，請在&#x200B;**[!UICONTROL Process rejects]**&#x200B;索引標籤中選取&#x200B;**[!UICONTROL Process errors]**&#x200B;和&#x200B;**[!UICONTROL Behavior]**&#x200B;選項。
+在資料匯入或匯出的架構中，您可以將特定程式套用至錯誤和拒絕。 若要這麼做，請在&#x200B;**[!UICONTROL Behavior]**&#x200B;索引標籤中選取&#x200B;**[!UICONTROL Process rejects]**&#x200B;和&#x200B;**[!UICONTROL Process errors]**&#x200B;選項。
 
 ![](assets/crm_export_options.png)
 

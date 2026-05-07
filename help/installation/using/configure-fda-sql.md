@@ -6,7 +6,7 @@ feature: Installation, Federated Data Access
 exl-id: 65ab4577-3126-4579-8fcc-e93772ebd1e8
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '464'
+source-wordcount: '527'
 ht-degree: 1%
 
 ---
@@ -80,7 +80,7 @@ ht-degree: 1%
 
 1. 從行銷活動&#x200B;**[!UICONTROL Explorer]**，按一下&#x200B;**[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**。
 
-1. 按一下&#x200B;**[!UICONTROL New]**。
+1. 按一下 **[!UICONTROL New]**。
 
 1. 選取&#x200B;**[!UICONTROL External database]**&#x200B;作為外部帳戶的&#x200B;**[!UICONTROL Type]**。
 
@@ -112,6 +112,6 @@ ht-degree: 1%
 
 | 選項 | 說明 |
 |---|---|
-| 驗證 | 聯結器支援的驗證型別。 目前支援的值： ActiveDirectoryMSI。 <br>如需詳細資訊，請參閱[Microsoft檔案](https://docs.microsoft.com/en-us/sql/connect/odbc/using-azure-active-directory?view=sql-server-ver15#example-connection-strings)的範例8。 |
+| 驗證 | 聯結器支援的驗證型別。 目前支援的值： ActiveDirectoryMSI。<br> 如需詳細資訊，請參閱[Microsoft檔案](https://docs.microsoft.com/en-us/sql/connect/odbc/using-azure-active-directory?view=sql-server-ver15#example-connection-strings)的範例8。 |
 | 加密 | 指定連線是否透過網路使用TLS加密。 可能的值是&#x200B;**是/強制（18.0和更新版本）**、**否/選用（18.0和更新版本）**&#x200B;和&#x200B;**嚴格（18.0和更新版本）**。 在18.0版及更新版本中，預設值設為&#x200B;**是**，而在舊版中則設為&#x200B;**否**。 <br>如需詳細資訊，請參閱[Microsoft檔案](https://docs.microsoft.com/en-us/sql/connect/odbc/dsn-connection-string-attribute?view=azure-sqldw-latest#encrypt)。 |
 | TrustServerCertificate | 與&#x200B;**Encrypt**&#x200B;搭配使用時，啟用使用自我簽署伺服器憑證的加密。 <br>接受的值： **是**&#x200B;或&#x200B;**否** （預設值，表示將驗證伺服器憑證）。 |

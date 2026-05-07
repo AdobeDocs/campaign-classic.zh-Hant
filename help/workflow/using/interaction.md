@@ -6,8 +6,8 @@ hide: true
 feature: Workflows, Interaction, Offers
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '160'
-ht-degree: 3%
+source-wordcount: '169'
+ht-degree: 2%
 
 ---
 
@@ -20,9 +20,9 @@ ht-degree: 3%
 
 如需詳細資訊，請參閱Campaign版本的相關章節：
 
-![](assets/do-not-localize/v7.jpeg) [Campaign v7檔案](../../interaction/using/interaction-and-offer-management.md)
+![](assets/do-not-localize/v7.jpeg)[Campaign v7檔案](../../interaction/using/interaction-and-offer-management.md)
 
-![](assets/do-not-localize/v8.png) [Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/interaction/interaction.html)
+![](assets/do-not-localize/v8.png)[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/interaction/interaction.html)
 
 
 <table> 
@@ -35,12 +35,12 @@ ht-degree: 3%
   <tr> 
    <td> <span class="uicontrol">完整彙總計算(propositionrcp cube)</span> <br /> </td> 
    <td> <span class="uicontrol">agg_nmspropositionrcp_full</span> <br /> </td> 
-   <td> 此工作流程會更新<strong>優惠方案主張</strong> Cube的<strong>完整</strong>彙總。 預設會每天早上6:00觸發。 此彙總會擷取下列維度：管道、傳送、行銷優惠和日期。<br /> <strong>優惠方案主張</strong> Cube隨後用於根據優惠方案產生報告。 您可以在<a href="../../reporting/using/ac-cubes.md">本節</a>.<br />中進一步瞭解多維度資料集 </td> 
+   <td> 此工作流程會更新<strong>優惠方案主張</strong> Cube的<strong>完整</strong>彙總。 預設會每天早上6:00觸發。 此彙總會擷取下列維度：管道、傳遞、行銷優惠和日期。<br /> 接著會使用<strong>優惠方案主張</strong> Cube來根據優惠方案產生報表。 您可以在<a href="../../reporting/using/ac-cubes.md">本節</a>.<br />中進一步瞭解多維度資料集 </td> 
   </tr> 
    <tr> 
    <td> <span class="uicontrol">MessageCenter完整彙總計算</span> <br /> </td> 
    <td> <span class="uicontrol">agg_messageCenter_full</span> <br /> </td> 
-   <td> 此工作流程會更新<strong>訊息中心</strong> Cube的<strong>完整</strong>彙總。 預設會每天凌晨3:00觸發。 此彙總會擷取下列維度：管道、日期、狀態和事件型別。<br /> <strong>訊息中心</strong> Cube隨後用於根據事件產生報告。 您可以在<a href="../../reporting/using/ac-cubes.md">本節</a>.<br />中進一步瞭解多維度資料集 </td> 
+   <td> 此工作流程會更新<strong>訊息中心</strong> Cube的<strong>完整</strong>彙總。 預設會每天凌晨3:00觸發。 此彙總會擷取下列維度：管道、日期、狀態和事件型別。<br /> 接著會使用<strong>訊息中心</strong> Cube來根據事件產生報表。 您可以在<a href="../../reporting/using/ac-cubes.md">本節</a>.<br />中進一步瞭解多維度資料集 </td> 
    <td> <br /> </td> 
   </tr> 
  </tbody> 

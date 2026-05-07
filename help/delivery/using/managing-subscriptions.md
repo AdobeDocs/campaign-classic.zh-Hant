@@ -8,7 +8,7 @@ role: User
 exl-id: 16dddd4a-2e1a-4c78-8168-f656657bb9b8
 source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
 workflow-type: tm+mt
-source-wordcount: '1106'
+source-wordcount: '1122'
 ht-degree: 2%
 
 ---
@@ -70,7 +70,7 @@ ht-degree: 2%
 
 ![](assets/s_ncs_user_services_modify.png)
 
-在儀表板上，按一下&#x200B;**[!UICONTROL Reports]**&#x200B;索引標籤以追蹤訂閱：訂閱層級的變更、訂閱者總數等。 您可以封存報告並檢視此索引標籤的歷史。
+在儀表板上，按一下&#x200B;**[!UICONTROL Reports]**&#x200B;索引標籤以追蹤訂閱：訂閱層級的變更、訂閱者總數等。您可以封存報告並檢視此索引標籤的歷史。
 
 ## 新增和刪除訂閱者 {#adding-and-deleting-subscribers}
 
@@ -146,7 +146,7 @@ ht-degree: 2%
 
 預設取消訂閱連結會透過傳遞助理員中提供的內容編輯器工具列中的最後一個按鈕插入（請參閱[關於個人化](about-personalization.md)）。 收件者按一下此連結時，設定檔會新增至封鎖清單（選擇退出），表示任何傳遞動作都不會再鎖定此收件者。
 
-但是，收件者可以選擇取消訂閱服務，而不取消訂閱所有服務。 若要允許，您可以使用網路表單（請參閱[本區段](../../web/using/adding-fields-to-a-web-form.md#subscription-checkboxes)）或插入個人化的取消訂閱連結。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=zh-Hant){target="_blank"}。
+但是，收件者可以選擇取消訂閱服務，而不取消訂閱所有服務。 若要允許，您可以使用網路表單（請參閱[本區段](../../web/using/adding-fields-to-a-web-form.md#subscription-checkboxes)）或插入個人化的取消訂閱連結。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}。
 
 您也可以從收件者設定檔手動取消訂閱收件者。 若要這麼做，請按一下相關收件者的&#x200B;**[!UICONTROL Subscriptions]**&#x200B;標籤，選取相關資訊服務，然後按一下&#x200B;**[!UICONTROL Delete]**。
 

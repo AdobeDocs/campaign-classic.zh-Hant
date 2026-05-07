@@ -7,7 +7,7 @@ hide: true
 exl-id: e1d40ba1-2493-45c1-bd54-af9cb332028d
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '389'
+source-wordcount: '399'
 ht-degree: 1%
 
 ---
@@ -46,7 +46,7 @@ ht-degree: 1%
 1. 在&#x200B;**[!UICONTROL Data filtering]**&#x200B;視窗中，選取&#x200B;**[!UICONTROL Filtering conditions]**。
 1. 在&#x200B;**[!UICONTROL Target element]**&#x200B;視窗中，擷取過去7天沒有追蹤記錄之設定檔的篩選條件包含兩個步驟。 您需要選取的元素為多對多連結。
 
-   * 首先，請為前&#x200B;**[!UICONTROL Recipient delivery logs (broadlog)]**&#x200B;欄選取&#x200B;**[!UICONTROL Value]**&#x200B;集合專案（橘色節點）。
+   * 首先，請為前&#x200B;**[!UICONTROL Value]**&#x200B;欄選取&#x200B;**[!UICONTROL Recipient delivery logs (broadlog)]**&#x200B;集合專案（橘色節點）。
 
      ![](assets/query_editor_nveau_67.png)
 
@@ -56,7 +56,7 @@ ht-degree: 1%
 
      ![](assets/query_editor_nveau_36.png)
 
-     使用&#x200B;**[!UICONTROL Event date]**&#x200B;運運算元選取&#x200B;**[!UICONTROL greater than or equal to]**。 選取&#x200B;**[!UICONTROL DaysAgo (7)]**&#x200B;值。 若要這麼做，請按一下&#x200B;**[!UICONTROL Edit expression]**&#x200B;欄位中的&#x200B;**[!UICONTROL Value]**。 在&#x200B;**[!UICONTROL Formula type]**&#x200B;視窗中，選取&#x200B;**[!UICONTROL Process on dates]**&#x200B;和&#x200B;**[!UICONTROL Current date minus n days]**，並指定&quot;7&quot;作為值。
+     使用&#x200B;**[!UICONTROL greater than or equal to]**&#x200B;運運算元選取&#x200B;**[!UICONTROL Event date]**。 選取&#x200B;**[!UICONTROL DaysAgo (7)]**&#x200B;值。 若要這麼做，請按一下&#x200B;**[!UICONTROL Value]**&#x200B;欄位中的&#x200B;**[!UICONTROL Edit expression]**。 在&#x200B;**[!UICONTROL Formula type]**&#x200B;視窗中，選取&#x200B;**[!UICONTROL Process on dates]**&#x200B;和&#x200B;**[!UICONTROL Current date minus n days]**，並指定&quot;7&quot;作為值。
 
      ![](assets/query_editor_nveau_37.png)
 
@@ -64,7 +64,7 @@ ht-degree: 1%
 
      ![](assets/query_editor_nveau_38.png)
 
-1. 在&#x200B;**[!UICONTROL Data formatting]**&#x200B;視窗中，將姓氏切換為大寫。 按一下&#x200B;**[!UICONTROL Last name]**&#x200B;欄中的&#x200B;**[!UICONTROL Transformation]**&#x200B;行，然後在下拉式功能表中選取&#x200B;**[!UICONTROL Switch to upper case]**。
+1. 在&#x200B;**[!UICONTROL Data formatting]**&#x200B;視窗中，將姓氏切換為大寫。 按一下&#x200B;**[!UICONTROL Transformation]**&#x200B;欄中的&#x200B;**[!UICONTROL Last name]**&#x200B;行，然後在下拉式功能表中選取&#x200B;**[!UICONTROL Switch to upper case]**。
 
    ![](assets/query_editor_nveau_39.png)
 
@@ -79,7 +79,7 @@ ht-degree: 1%
 
    ![](assets/query_editor_nveau_40.png)
 
-   按一下 **[!UICONTROL OK]**。已設定&#x200B;**[!UICONTROL Data formatting]**&#x200B;視窗。
+   按一下 **[!UICONTROL OK]**。 已設定&#x200B;**[!UICONTROL Data formatting]**&#x200B;視窗。
 
    如需新增計算欄位的詳細資訊，請參閱本區段。
 

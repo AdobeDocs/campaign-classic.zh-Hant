@@ -10,8 +10,8 @@ topic-tags: data-processing
 exl-id: 2c933fc5-1c0a-4c2f-9ff2-90d09a79c55a
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
-source-wordcount: '1311'
-ht-degree: 1%
+source-wordcount: '1333'
+ht-degree: 3%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 ## 簡介 {#introduction}
 
-### 概覽 {#overview}
+### 概觀 {#overview}
 
 >[!IMPORTANT]
 >
@@ -37,7 +37,7 @@ ht-degree: 1%
 
 1. 在來源環境的所有執行個體上建立資料庫復本，
 1. 在目標環境的所有執行個體上還原這些復本，
-1. 在啟動之前，請在目標環境中執行&#x200B;**nms：freezeInstance.js**&#x200B;燒錄指令碼。
+1. 在啟動之前，請在目標環境中執行&#x200B;**nms:freezeInstance.js**&#x200B;燒錄指令碼。
 
    此程式不會影響伺服器及其設定。
 
@@ -59,7 +59,7 @@ ht-degree: 1%
 
 為了讓此程式發揮作用，來源和目標環境必須具有相同的執行個體數量、相同的目的（行銷執行個體、傳遞執行個體）和類似的設定。 技術設定必須符合軟體先決條件。 兩個環境中都必須安裝相同的元件。
 
-## 實施 {#implementation}
+## 實作 {#implementation}
 
 ### 傳輸程式 {#transfer-procedure}
 
@@ -69,7 +69,7 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->* 下列程式在PostgreSQL語言中有效。 如果SQL語言不同(例如Oracle)，則必須調整SQL查詢。
+>* 下列程式在PostgreSQL語言中有效。 如果SQL語言不同（例如Oracle），則必須調整SQL查詢。
 >* 以下命令適用於PostgreSQL底下的&#x200B;**prod**&#x200B;執行個體和&#x200B;**dev**&#x200B;執行個體的內容。
 >
 
@@ -95,8 +95,8 @@ pg_dump mydatabase > mydatabase.sql
 
 為此，請針對下列兩個元素執行封裝匯出：
 
-* 將&#x200B;**xtk：option**&#x200B;資料表匯出至&#39;options_dev.xml&#39;檔案，不含具有下列內部名稱的記錄：&#39;WdbcTimeZone&#39;、&#39;NmsServer_LastPostUpgrade&#39;和&#39;NmsBroadcast_RegexRules&#39;。
-* 在&#39;extaccount_dev.xml&#39;檔案中，匯出ID不是0 (@id &lt;> 0)的所有記錄的&#x200B;**nms：extAccount**&#x200B;表格。
+* 將&#x200B;**xtk:option**&#x200B;資料表匯出至&#39;options_dev.xml&#39;檔案，不含具有下列內部名稱的記錄： &#39;WdbcTimeZone&#39;、&#39;NmsServer_LastPostUpgrade&#39;和&#39;NmsBroadcast_RegexRules&#39;。
+* 在&#39;extaccount_dev.xml&#39;檔案中，匯出ID不是0 (@id &lt;> 0)的所有記錄的&#x200B;**nms:extAccount**&#x200B;表格。
 
 檢查匯出的選項/帳戶數目是否等於每個檔案中要匯出的行數。
 
@@ -220,7 +220,7 @@ nlserver pdump
 
 若要從目標環境資料庫(dev)匯入組態：
 
-1. 開啟資料庫的Admin Console，並清除識別碼不是0 (@id &lt;> 0)的外部帳戶（表格nms：extAccount）。
+1. 開啟資料庫的Admin Console，並清除識別碼不是0 (@id &lt;> 0)的外部帳戶（資料表nms:extAccount）。
 1. 在Adobe Campaign主控台中，匯入先前透過匯入套件功能建立的options_dev.xml套件。
 
    檢查&#x200B;**[!UICONTROL Administration > Platform > Options]**&#x200B;節點中的選項是否確實已更新。

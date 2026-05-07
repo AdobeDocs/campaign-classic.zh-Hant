@@ -9,8 +9,8 @@ content-type: reference
 exl-id: 54ee88b2-e646-4fb9-abec-957f0096f15f
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '506'
-ht-degree: 2%
+source-wordcount: '556'
+ht-degree: 4%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 2%
 1. [設定外部帳戶](#configure-the-external-account)
 1. [設定AEM資源篩選](#configure-aem-resources-filtering)
 
-適用於進階設定，例如管理個人化欄位和區塊。 請參閱Adobe Experience Manager [檔案](https://helpx.adobe.com/tw/experience-manager/6-5/sites/administering/using/campaignonpremise.html)。
+適用於進階設定，例如管理個人化欄位和區塊。 請參閱Adobe Experience Manager [檔案](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/campaignonpremise.html)。
 
 ### 在Adobe Campaign中安裝AEM整合套件 {#install-the-aem-integration-package-in-adobe-campaign}
 
@@ -54,7 +54,7 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->我們強烈建議您建立專用於AEM的安全區域，以避免任何安全性問題。 如需詳細資訊，請參閱安裝[指南](../../installation/using/security-zones.md)。
+>我們強烈建議您為AEM建立專屬的安全區域，以避免任何安全性問題。 如需詳細資訊，請參閱安裝[指南](../../installation/using/security-zones.md)。
 
 如果您的Campaign執行個體是由Adobe代管，請聯絡[Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)團隊。 如果您是內部部署Campaign，請遵循下列步驟：
 
@@ -92,7 +92,7 @@ ht-degree: 2%
 
 ### 設定AEM資源篩選 {#configure-aem-resources-filtering}
 
-**AEMResourceTypeFilter**&#x200B;選項是用來篩選可以在Adobe Campaign中使用的Experience Manager資源型別。 這可讓Adobe Campaign擷取專門設計成僅用於Adobe Campaign的Experience Manager內容。
+**AEMResourceTypeFilter**&#x200B;選項是用來篩選可以在Adobe Campaign中使用的Experience Manager資源型別。 這可讓Adobe Campaign擷取專門設計為僅用於Adobe Campaign的Experience Manager內容。
 
 若要檢查是否已設定&#x200B;**[!UICONTROL AEMResourceTypeFilter]**&#x200B;選項：
 
@@ -117,14 +117,14 @@ ht-degree: 2%
 
 請依照下列步驟，在Adobe Experience Manager中開始設定：
 
-1. 設定&#x200B;**復寫**&#x200B;以從AEM編寫執行個體復寫到AEM發佈執行個體。
+1. 設定&#x200B;**復寫**&#x200B;以從AEM編寫執行個體復寫至AEM發佈執行個體。
 
-   若要瞭解如何設定復寫，請參閱Adobe Experience Manager [檔案](https://helpx.adobe.com/tw/experience-manager/6-5/sites/deploying/using/replication.html)。
+   若要瞭解如何設定復寫，請參閱Adobe Experience Manager [檔案](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/replication.html)。
 
-1. 透過設定專用的&#x200B;**Cloud Service**&#x200B;將Adobe Experience Manager連線到Adobe Campaign。
+1. 透過設定專用的&#x200B;**Adobe Experience Manager**&#x200B;將Cloud Service連線到Adobe Campaign。
 
-   若要瞭解如何透過Cloud Service連結兩個解決方案，請參閱Adobe Experience Manager [檔案](https://helpx.adobe.com/tw/experience-manager/6-5/sites/administering/using/campaignonpremise.html#ConfiguringAdobeExperienceManager) 。
+   若要瞭解如何透過Cloud Services連結這兩個解決方案，請參閱Adobe Experience Manager [檔案](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/campaignonpremise.html#ConfiguringAdobeExperienceManager) 。
 
 1. 設定&#x200B;**外部化器服務**。
 
-   若要瞭解如何進行設定，請參閱Adobe Experience Manager [檔案](https://helpx.adobe.com/tw/experience-manager/6-5/sites/developing/using/externalizer.html)。
+   若要瞭解如何進行設定，請參閱Adobe Experience Manager [檔案](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/externalizer.html)。

@@ -6,7 +6,7 @@ feature: Schema Extension
 exl-id: fb0862f9-5dcc-49f2-b99b-9822aaf3a680
 source-git-commit: 254c89490fefa5d405bcecd2f1781df46450a873
 workflow-type: tm+mt
-source-wordcount: '103'
+source-wordcount: '104'
 ht-degree: 4%
 
 ---
@@ -25,7 +25,7 @@ keyfield：==EMPTY
 
 ## 父項 {#parents-9}
 
-`<key>` ， `<dbindex />`
+`<key>`  ,  `<dbindex />`
 
 ## 子系 {#children-9}
 
@@ -42,7 +42,7 @@ keyfield：==EMPTY
 
 ## 範例 {#examples-}
 
-在索引中選取「sName」欄位(其中Xpath位於「@name」上)：
+在索引中選取「sName」欄位（其中Xpath位於「@name」上）：
 
 ```
 <keyfield xpath="@name"/>

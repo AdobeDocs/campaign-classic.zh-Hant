@@ -6,8 +6,8 @@ feature: Monitoring
 exl-id: ca0c33c5-7350-462a-bc65-4cab51e529d9
 source-git-commit: e60a8391416bc9899548971bddb61705467a80e5
 workflow-type: tm+mt
-source-wordcount: '758'
-ht-degree: 16%
+source-wordcount: '835'
+ht-degree: 19%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 16%
 
 **自動監視工具**
 
-有數種自動方法可供使用。 協助您監控執行個體。 例如，您可以設定包含偵測到異常的電子郵件報表、擷取XML格式的指標清單等。 [按一下這裡](../../production/using/monitoring-processes.md#automatic-monitoring)以獲得更多資訊。
+有數種自動方法可供使用。 協助您監控執行個體。 例如，您可以設定包含偵測到的異常的電子郵件報表、擷取XML格式的指標清單等。[按一下這裡](../../production/using/monitoring-processes.md#automatic-monitoring)以取得詳細資訊。
 
 **稽核軌跡**
 
@@ -50,7 +50,7 @@ ht-degree: 16%
 
 **控制面板**
 
-「控制面板」可以讓您管理執行個體的多項設定：管理URL許可權、檢查執行個體的詳細資訊（例如伺服器的組建版本）等。 它也可讓您監視連線到執行個體的SFTP伺服器上的可用空間。 [按一下這裡](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hant)以獲得更多資訊。
+「控制面板」可以讓您管理執行個體的多項設定：管理URL許可權、檢查執行個體的詳細資訊（例如伺服器的組建版本）等。它也可讓您監視連線到執行個體的SFTP伺服器上的可用空間。 [按一下這裡](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hant)以獲得更多資訊。
 
 >[!NOTE]
 >
@@ -76,13 +76,13 @@ ht-degree: 16%
 
 **工作流程狀態監視**
 
-除了熱度圖之外，您還可以建立工作流程，讓您監視一組工作流程的狀態，並傳送週期性訊息給主管。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/monitoring/workflow-supervision.html?lang=zh-Hant){target="_blank"}。
+除了熱度圖之外，您還可以建立工作流程，讓您監視一組工作流程的狀態，並傳送週期性訊息給主管。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/monitoring/workflow-supervision.html){target="_blank"}。
 
 **一般准則**
 
 使用工作流程時，遵循准則和最佳實務有助於改善效能。 如需詳細資訊，請參閱下列章節：
-* [使用工作流程時的最佳實務](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=zh-Hant){target="_blank"}
-* [監控工作流程執行](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=zh-Hant){target="_blank"}
+* [使用工作流程時的最佳實務](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html){target="_blank"}
+* [監控工作流程執行](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}
 
 ### 監視傳遞 {#monitoring-deliveries}
 
@@ -94,7 +94,7 @@ SMTP報告會依網域顯示傳遞統計資料和SMTP錯誤。 [了解更多](..
 
 **最佳實務**
 
-請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=zh-Hant){target="_blank"}以瞭解傳送和設計傳送的最佳實務，以改善效能。
+請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html){target="_blank"}以瞭解傳送和設計傳送的最佳實務，以改善效能。
 
 **傳遞疑難排解**
 遇到傳送問題時，可執行特定動作：
@@ -125,7 +125,7 @@ SMTP報告會依網域顯示傳遞統計資料和SMTP錯誤。 [了解更多](..
 
 *僅限內部部署和混合託管模型*
 
-若要避免在電腦上發生問題（無論是實體或系統相關問題）時遺失資料，備份是必要的。 [按一下這裡](../../production/using/backup.md)以取得詳細資訊。 [本節](../../production/using/restoration.md)中說明還原程式。
+若要避免在電腦上發生問題（無論是實體或系統相關問題）時遺失資料，備份是必要的。 [按一下這裡](../../production/using/backup.md)以獲得更多資訊。 [本節](../../production/using/restoration.md)中說明還原程式。
 
 ## Campaign Classic技術原則 {#campaign-classic-technical-principles}
 

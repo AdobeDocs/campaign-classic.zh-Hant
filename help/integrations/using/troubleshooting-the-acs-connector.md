@@ -10,7 +10,7 @@ hide: true
 exl-id: 4693dca1-ee55-43f0-b3dc-62a5b67a8058
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '869'
+source-wordcount: '870'
 ht-degree: 0%
 
 ---
@@ -94,7 +94,7 @@ ht-degree: 0%
 
   首先要檢查的工作流程是否已順利完成。 如果您在&#x200B;**[!UICONTROL List update]**&#x200B;活動上發現錯誤，這表示與Campaign Standard的同步可能已失敗。 若要檢視發生問題的詳細資訊，請前往「**[!UICONTROL Administration]** > **[!UICONTROL ACS Connector]** > **[!UICONTROL Process]** > **[!UICONTROL Diagnosis]**」。 此資料夾包含由&#x200B;**[!UICONTROL List update]**&#x200B;活動執行觸發的同步工作流程。
 
-  此外，請確定已在&#x200B;**[!UICONTROL Share with ACS]**&#x200B;活動中勾選&#x200B;**[!UICONTROL List update]**&#x200B;選項，且工作流程已正確執行。
+  此外，請確定已在&#x200B;**[!UICONTROL List update]**&#x200B;活動中勾選&#x200B;**[!UICONTROL Share with ACS]**&#x200B;選項，且工作流程已正確執行。
 
   請注意，清單中包含的收件者設定檔必須在工作流程執行前與Campaign Standard同步。 在與Campaign Standard共用後，清單的收件者會與Campaign Standard設定檔進行調解，這表示這些設定檔必須存在於那裡。 清單中無法與Campaign Standard中的設定檔進行調解的收件者會遭到忽略。
 

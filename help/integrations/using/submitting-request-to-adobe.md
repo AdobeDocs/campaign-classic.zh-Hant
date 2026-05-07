@@ -10,8 +10,8 @@ topic-tags: audience-sharing
 exl-id: f3c19fcd-12cb-4ca3-b4b7-7dc4be57f4ea
 source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
-source-wordcount: '130'
-ht-degree: 2%
+source-wordcount: '146'
+ht-degree: 6%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 2%
 >
 >身為v7使用者，若要繼續進行，請確定您的系統上已啟用Adobe Identity Management系統(IMS)。 [了解更多資訊](../../integrations/using/about-adobe-id.md)。
 
-為您的組織啟用Adobe Identity Management Service (IMS)後，您就可以請求布建[Experience Cloud Audience](https://experienceleague.adobe.com/zh-hant/docs/core-services/interface/services/audiences/overview){target="_blank"}與Campaign的整合。 若要這麼做，請聯絡您的Adobe代表，並提供下列資訊：
+為您的組織啟用Adobe Identity Management Service (IMS)後，您就可以請求布建[Experience Cloud Audience](https://experienceleague.adobe.com/en/docs/core-services/interface/services/audiences/overview){target="_blank"}與Campaign的整合。 若要這麼做，請聯絡您的Adobe代表，並提供下列資訊：
 
 <table> 
  <tbody> 
@@ -35,7 +35,7 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td> <strong>組織ID</strong><br /> </td> 
-   <td> 您的組織ID。 <br>若要尋找您的組織識別碼，請參閱<a href="https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-Hant">此頁面</a></td> 
+   <td> 您的組織ID。<br> 若要尋找您的組織ID，請參閱<a href="https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-Hant">此頁面</a></td> 
   </tr> 
   <tr> 
    <td> <strong>環境</strong><br /> </td> 

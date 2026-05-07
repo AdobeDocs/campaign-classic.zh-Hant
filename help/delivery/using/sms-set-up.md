@@ -8,8 +8,8 @@ level: Experienced
 exl-id: a2783a5e-6d38-41a1-b5c6-24ab489116f8
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1736'
-ht-degree: 27%
+source-wordcount: '1740'
+ht-degree: 31%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 27%
    ![](assets/extended_smpp_create_account.png)
 
 1. 勾選&#x200B;**[!UICONTROL Enabled]**&#x200B;方塊。
-1. 在&#x200B;**[!UICONTROL Mobile]**&#x200B;索引標籤中，從&#x200B;**[!UICONTROL Extended generic SMPP]**&#x200B;下拉式清單中選取&#x200B;**[!UICONTROL Connector]**。
+1. 在&#x200B;**[!UICONTROL Mobile]**&#x200B;索引標籤中，從&#x200B;**[!UICONTROL Connector]**&#x200B;下拉式清單中選取&#x200B;**[!UICONTROL Extended generic SMPP]**。
 
    ![](assets/extended_smpp_connector.png)
 
@@ -66,7 +66,7 @@ ht-degree: 27%
 
    >[!NOTE]
    >
-   >某些字元會計為兩個字元（大括弧、方括弧、歐元符號等）。
+   >某些字元會計為兩個字元（括弧、方括弧、歐元符號等）。
    >
    >可用的GSM字元清單如下所示。
 
@@ -100,18 +100,18 @@ ht-degree: 27%
 
 音譯包括當 GSM 標準未考慮到簡訊的一個字元時，用另一個字元取代該字元。
 
-* 如果音譯為&#x200B;**[!UICONTROL authorized]**，則傳送訊息時，未考慮的每個字元會由GSM字元取代。 例如，字元 &quot;ë&quot; 會由 &quot;e&quot; 取代。因此，訊息會稍微變更，但字元限制將維持不變。
-* 音譯為&#x200B;**[!UICONTROL not authorized]**&#x200B;時，包含未納入考量之字元的每則訊息都會以二進位格式(Unicode)傳送：因此，所有字元都會依原樣傳送。 不過，使用 Unicode 的簡訊訊息最多只能有 70 個字元（若是以多個部分傳送的訊息，則每個簡訊有 67 個字元）。如果超出字元數上限，則會傳送數則訊息，這可能會造成額外成本。
+* 如果音譯為&#x200B;**[!UICONTROL authorized]**，則傳送訊息時，未考慮的每個字元會由GSM字元取代。 例如，字元 &quot;ë&quot; 會由 &quot;e&quot; 取代。 因此，訊息會稍微變更，但字元限制將維持不變。
+* 音譯為&#x200B;**[!UICONTROL not authorized]**&#x200B;時，包含未納入考量之字元的每則訊息都會以二進位格式(Unicode)傳送：因此，所有字元都會依原樣傳送。 不過，使用 Unicode 的簡訊訊息最多只能有 70 個字元（若是以多個部分傳送的訊息，則每個簡訊有 67 個字元）。 如果超出字元數上限，則會傳送數則訊息，這可能會造成額外成本。
 
 >[!IMPORTANT]
 >
->將個人化欄位插入您的SMS訊息內容，可能會引入GSM編碼未考慮的字元。
+>將個人化欄位插入您的簡訊訊息內容，可能會引入 GSM 編碼未考慮的字元。
 
-依預設，會停用字元音譯。如果您希望簡訊訊息中的所有字元都保持原樣，不要變更正確名稱（例如），建議您不要啟用此選項。
+依預設，會停用字元音譯。 如果您希望簡訊訊息中的所有字元都保持原樣，不要變更正確名稱（例如），建議您不要啟用此選項。
 
 不過，如果您的簡訊訊息包含許多產生 Unicode 訊息的字元，您可以選取啟用此選項，以限制傳送訊息的成本。
 
-下表顯示GSM標準所考慮的字元。 除了下面提到的字元外，所有插入訊息內文的字元都會將整個訊息轉換為二進位格式(Unicode)，因此限製為70個字元。
+下表顯示GSM標準所考慮的字元。 除下面提及的字元外，所有插入訊息內文的字元都會將整個訊息轉換為二進位格式 (Unicode)，因此限制為 70 個字元。
 
 **基本字元**
 
@@ -130,7 +130,7 @@ ht-degree: 27%
   <tr> 
    <td> £ </td> 
    <td> _ </td> 
-   <td> ！ </td> 
+   <td> ! </td> 
    <td> 1 </td> 
    <td> A </td> 
    <td> Q </td> 
@@ -140,7 +140,7 @@ ht-degree: 27%
   <tr> 
    <td> $ </td> 
    <td> <img height="21px" src="assets/phi.png" /> </td> 
-   <td> 」 </td> 
+   <td> " </td> 
    <td> 2 </td> 
    <td> byte </td> 
    <td> R </td> 
@@ -155,7 +155,7 @@ ht-degree: 27%
    <td> C </td> 
    <td> S </td> 
    <td> c </td> 
-   <td>   </td> 
+   <td>  </td> 
   </tr> 
   <tr> 
    <td> è </td> 
@@ -190,7 +190,7 @@ ht-degree: 27%
   <tr> 
    <td> ì </td> 
    <td> <img height="21px" src="assets/psi.png" /> </td> 
-   <td> 『 </td> 
+   <td> ' </td> 
    <td> 7 </td> 
    <td> G </td> 
    <td> W </td> 
@@ -221,7 +221,7 @@ ht-degree: 27%
    <td> 換行字元 </td> 
    <td> <img height="21px" src="assets/xi.png" /> </td> 
    <td> * </td> 
-   <td> ： </td> 
+   <td> : </td> 
    <td> J </td> 
    <td> Z </td> 
    <td> j </td> 
@@ -231,7 +231,7 @@ ht-degree: 27%
    <td> Ø </td> 
    <td> ESC </td> 
    <td> + </td> 
-   <td> ； </td> 
+   <td> ; </td> 
    <td> K </td> 
    <td> 月 </td> 
    <td> k </td> 
@@ -240,7 +240,7 @@ ht-degree: 27%
   <tr> 
    <td> ø </td> 
    <td> AE </td> 
-   <td> ， </td> 
+   <td> , </td> 
    <td> &lt; </td> 
    <td> L </td> 
    <td> Ö </td> 
@@ -260,7 +260,7 @@ ht-degree: 27%
   <tr> 
    <td> Å </td> 
    <td> ß </td> 
-   <td> 。 </td> 
+   <td> . </td> 
    <td> &gt; </td> 
    <td> N </td> 
    <td> U </td> 
@@ -294,13 +294,13 @@ CR：歸位
 
 ## 文字編碼 {#about-text-encodings}
 
-傳送簡訊訊息時，Adobe Campaign 可以使用一或多種文字編碼。每個編碼都有其專屬的字元集，並決定符合簡訊訊息的字元數。
+傳送簡訊訊息時，Adobe Campaign 可以使用一或多種文字編碼。 每個編碼都有其專屬的字元集，並決定符合簡訊訊息的字元數。
 
-設定新的SMPP行動傳遞外部帳戶時，您可以在&#x200B;**[!UICONTROL Mapping of encodings]**&#x200B;索引標籤中定義&#x200B;**[!UICONTROL Mobile]**： **[!UICONTROL data_coding]**&#x200B;欄位可讓Adobe Campaign通訊要對SMSC使用哪種編碼。
+設定新的SMPP行動傳遞外部帳戶時，您可以在&#x200B;**[!UICONTROL Mobile]**&#x200B;索引標籤中定義&#x200B;**[!UICONTROL Mapping of encodings]**： **[!UICONTROL data_coding]**&#x200B;欄位可讓Adobe Campaign通訊要對SMSC使用哪種編碼。
 
 >[!NOTE]
 >
->**data_coding** 值及實際使用編碼之間的對應是標準化的。不過，特定SMSC有其專屬的對應：在這種情況下，您的&#x200B;**Adobe Campaign**&#x200B;管理員需要宣告此對應。 請洽詢您的提供者以瞭解更多資訊。
+>**data_coding** 值及實際使用編碼之間的對應是標準化的。 不過，特定SMSC有其專屬的對應：在這種情況下，您的&#x200B;**Adobe Campaign**&#x200B;管理員需要宣告此對應。 請洽詢您的提供者以瞭解更多資訊。
 
 您可以宣告&#x200B;**data_codings**，並視需要強制進行編碼：若要這麼做，請在資料表中指定單一編碼。
 
@@ -315,7 +315,7 @@ CR：歸位
 >
 >宣告的順序非常重要：建議您以&#x200B;**成本**&#x200B;的遞增順序顯示清單，以利於編碼，讓您在每則簡訊訊息中盡可能多地顯示字元。
 >
->僅宣告您要使用的編碼。如果SMSC提供的某些編碼不符合您的使用目的，請勿在清單中宣告。
+>僅宣告您要使用的編碼。 如果SMSC提供的某些編碼不符合您的使用目的，請勿在清單中宣告。
 
 ## 自動回覆 {#automatic-reply}
 
@@ -335,7 +335,7 @@ CR：歸位
 
 如果您將&#x200B;**[!UICONTROL Remove from quarantine]**&#x200B;動作連結至自動回應，則傳送對應關鍵字的收件者會自動從隔離中移除。
 
-收件者列於&#x200B;**[!UICONTROL Non deliverables and addresses]** > **[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]**&#x200B;功能表可用的&#x200B;**[!UICONTROL Non deliverables Management]**&#x200B;表格中。
+收件者列於&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]**&#x200B;功能表可用的&#x200B;**[!UICONTROL Non deliverables and addresses]**&#x200B;表格中。
 
 * 若要無論短程式碼為何，都傳送相同的回覆，請將&#x200B;**[!UICONTROL Short code]**&#x200B;欄留空。
 * 無論關鍵字為何，若要傳送相同的回覆，請將&#x200B;**[!UICONTROL Keyword]**&#x200B;欄留空。
@@ -345,7 +345,7 @@ CR：歸位
 為避免此問題，請根據您使用的提供者，套用下列解決方案之一：
 
 * 為每個外部帳戶建立一個提供者帳戶。
-* 使用&#x200B;**[!UICONTROL System type]** > **[!UICONTROL Mobile]**&#x200B;索引標籤中的&#x200B;**[!UICONTROL Connection settings]**&#x200B;欄位來區分每個簡短代碼。 請向您的提供者詢問每個帳戶的不同值。
+* 使用&#x200B;**[!UICONTROL Mobile]** > **[!UICONTROL Connection settings]**&#x200B;索引標籤中的&#x200B;**[!UICONTROL System type]**&#x200B;欄位來區分每個簡短代碼。 請向您的提供者詢問每個帳戶的不同值。
 
   ![](assets/extended_smpp_system-type.png)
 
@@ -353,7 +353,7 @@ CR：歸位
 
 ## 變更傳遞範本 {#changing-the-delivery-template}
 
-Adobe Campaign提供您傳送至行動裝置的範本。 此範本可在&#x200B;**[!UICONTROL Resources > Templates > Delivery templates]**&#x200B;節點中使用。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=zh-Hant){target="_blank"}。
+Adobe Campaign提供您傳送至行動裝置的範本。 此範本可在&#x200B;**[!UICONTROL Resources > Templates > Delivery templates]**&#x200B;節點中使用。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}。
 
 若要透過SMS頻道傳遞，您必須建立其中引用頻道聯結器的範本。
 
