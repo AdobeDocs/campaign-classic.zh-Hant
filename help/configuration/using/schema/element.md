@@ -6,8 +6,8 @@ feature: Schema Extension
 exl-id: 60f15ae5-b2bd-48f9-aa45-8f795a3071aa
 source-git-commit: 254c89490fefa5d405bcecd2f1781df46450a873
 workflow-type: tm+mt
-source-wordcount: '2029'
-ht-degree: 0%
+source-wordcount: '2035'
+ht-degree: 1%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## 內容模型 {#content-model-4}
 
-元素：==(屬性 | 計算字串 | dbindex | 預設 | 元素 | 說明 | 加入 | key | sysFilter | translatedDefault)
+元素：==(屬性 |計算字串 | dbindex |預設 |元素 |說明 |加入 |索引鍵 | sysFilter | translatedDefault)
 
 ## 屬性 {#attributes-4}
 
@@ -46,7 +46,7 @@ _operation （字串）、advanced （布林值）、aggregate （字串）、ap
 Adobe Campaign中有四種型別的`<element>`元素：
 
 * 根`<element>` ：定義符合結構描述的SQL資料表名稱。
-* 結構`<element>` ：定義`<element>`的群組   或   `<attribute>`    元素。
+* 結構`<element>` ：定義一組`<element>`或`<attribute>`個元素。
 * 連結`<element>` ：定義連結。 此元素必須包含「@type=link」屬性。
 * XML `<element>` ：定義文字型別「mData」欄位。 此元素必須包含「@type=xml」屬性。
 
@@ -65,7 +65,7 @@ Adobe Campaign中有四種型別的`<element>`元素：
    * &quot;delete&quot;：刪除。 這表示Adobe Campaign將復原和刪除元素。
 
 * **進階（布林值）**：啟動此選項時(@advanced=&quot;true&quot;)，它可讓您隱藏可用欄位清單上的屬性，以設定表單中的清單。
-* **彙總（字串）**：可讓您透過其他結構描述複製`<element>`的定義。 此屬性會收到「namespace：name」形式的結構描述宣告。
+* **彙總（字串）**：可讓您透過其他結構描述複製`<element>`的定義。 此屬性會收到「名稱空間:name」形式的結構描述宣告。
 * **applicableIf （字串）**：套用索引的條件。 此屬性會接收XTK運算式。
 * **autopk （布林值）**：如果已啟動此選項(autopk=&quot;true&quot;)，將自動定義唯一金鑰。 此選項只能用於結構描述的主要元素。 警告，Adobe Campaign僅保證產生的索引鍵是唯一的。 不保證索引鍵值為連續和累加。
 * **dataPolicy （字串）**：可讓您針對SQL欄位中允許的值指定核准限制。 此屬性的值為：
@@ -80,7 +80,7 @@ Adobe Campaign中有四種型別的`<element>`元素：
    * &quot;resIdentifier&quot;：檔案名稱
 
 * **dbEnum （字串）**：接收「已關閉」列舉的內部名稱。 列舉值必須在`<srcschema>`中定義。
-* **defOnDuplicate （布林值）**：如果此屬性已啟用，則在複製記錄時，預設值(在@default中定義)會自動重新套用至記錄。
+* **defOnDuplicate （布林值）**：如果此屬性已啟用，則在複製記錄時，預設值（在@default中定義）會自動重新套用至記錄。
 * **預設（字串）**：可讓您定義元素行為（呼叫函式，預設值）。 此屬性會接收XTK運算式。
 * **desc （字串）**：可讓您插入專案的說明。 此說明用於瞭解什麼是元素及其用途。 您可以將其顯示在表單中。
 * **displayAsField （布林值）**：如果啟動此屬性，「連結」型別`<element>`將顯示為結構描述樹狀檢視中的欄位（「結構」標籤）。 如此一來，就可將連結顯示為本機欄位，並可在查詢期間變更其行為。 在查詢的SELECT中找到元素時，將會使用連結目標的值。 在查詢的WHERE中找到元素時，將會使用連結的基礎索引鍵。
@@ -108,7 +108,7 @@ Adobe Campaign中有四種型別的`<element>`元素：
 * **folderModel （字串）**：定義啟用實體儲存的資料夾型別。 此屬性僅在出現「@folderLink」時定義。
 * **folderProcess （字串）**：定義儲存實體模型執行個體的連結。 此屬性僅在出現「@folderLink」時定義。
 * **fullLoad （布林值）**：在表單中選取欄位時，此屬性會強制顯示表格中的所有記錄。
-* **img （字串）**：接收連結至專案的影像路徑。 此屬性的值為「namespace：image name」型別。 例如： img=&quot;cus：myImage.jpg&quot;。 實際上，必須將影像匯入應用程式伺服器。
+* **img （字串）**：接收連結至專案的影像路徑。 這個屬性的值為「namespace:image name」型別。 例如： img=&quot;cus:myImage.jpg&quot;。 實際上，必須將影像匯入應用程式伺服器。
 * **完整性（字串）**：來源資料表指向目標資料表的出現參照完整性。
 
   可存取的值包括：
@@ -188,14 +188,14 @@ Adobe Campaign中有四種型別的`<element>`元素：
    * 列舉
    * 浮點數
    * html
-   * int64
+   * 64 位元整數
    * 連結
-   * 長
+   * 長整數
    * 備忘錄
    * MNTOKEN
    * 百分比
    * 主要金鑰
-   * 短
+   * 短整數
    * 字串
    * 時間
    * 時間範圍

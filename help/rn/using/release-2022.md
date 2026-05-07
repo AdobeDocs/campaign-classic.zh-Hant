@@ -9,8 +9,8 @@ hide: true
 exl-id: 28490323-41d0-4d61-b309-6892fb826d21
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '2099'
-ht-degree: 100%
+source-wordcount: '2151'
+ht-degree: 98%
 
 ---
 
@@ -43,14 +43,14 @@ _2022 年 7 月 1 日_
 
 * Adobe Campaign SDK 現在支援 Android 12 與 iOS 15 的推播通知。
 * Adobe Campaign 現在與 MySQL 8 相容。
-* Adobe Campaign 現在相容於 Windows 11。 
-* Adobe Campaign 現在與 Debian 11 相容。如需詳細資訊，請參閱本[技術說明](../../technotes/using/tech-stack-upgrade.md)。
+* Adobe Campaign 現在相容於 Windows 11。
+* Adobe Campaign 現在與 Debian 11 相容。 如需詳細資訊，請參閱本[技術說明](../../technotes/using/tech-stack-upgrade.md)。
 
 請參閱 [Campaign 相容性對照表](../../rn/using/compatibility-matrix.md#OperatingSystems)。
 
 **功能改進**
 
-* Microsoft Internet Explorer 11 生命週期結束後，在用戶端控制台 Adobe Services (登入頁面) 專用的 HTML 轉譯引擎現在使用 Edge Chromium。請注意，Microsoft Internet Explorer 11 仍是用戶端主控台中控制面板的 HTML 轉譯引擎。  此外，任何用戶端主控台安裝 (從 Campaign Classic 7.3 版本編號版本) 現在都需要安裝 Microsoft Edge Webview 2 執行階段。 [閱讀全文](../../installation/using/installing-the-client-console.md)
+* Microsoft Internet Explorer 11 生命週期結束後，在用戶端控制台 Adobe Services (登入頁面) 專用的 HTML 轉譯引擎現在使用 Edge Chromium。 請注意，Microsoft Internet Explorer 11 仍是用戶端主控台中控制面板的 HTML 轉譯引擎。  此外，任何用戶端主控台安裝 (從 Campaign Classic 7.3 版本編號版本) 現在都需要安裝 Microsoft Edge Webview 2 執行階段。 [閱讀全文](../../installation/using/installing-the-client-console.md)
 * 為了最佳化穩定性，已改善 Adobe Campaign 的資料庫連線管理。
 * Microsoft Exchange Online OAuth 2.0 在 Campaign 中支援 POP3 驗證。 [閱讀全文](../../installation/using/external-accounts.md#bounce-mails-external-account)
 * 透過外部資料使用擴充工作流程活動時，所發生的各種問題已解決。 (NEO-38069)
@@ -60,12 +60,12 @@ _2022 年 7 月 1 日_
 
 **修補程式**
 
-* 修正先前版本中阻止使用者調整 IMS 登入頁面大小的錯誤。(NEO-30085)
-* 修正在現有執行個體安裝內容管理員套件時發生的錯誤。(NEO-32349)
-* 修正 **Campaigns** 功能表持續顯示「作業進行中」訊息的問題。(NEO-44904)
-* 在傳送包含 URL 的電子郵件時，URL 的 BID (Broadlog ID) 與 CID (Campig ID) 遭刪除而未儲存傳遞，此問題已啟用 Adobe Analytics 加以修正。(NEO-38678)
-* 修正在具有訊息中心特定設定的執行個體中的公共資源資料夾上傳影像時發生的問題。 將顯示以下錯誤訊息：「無法上傳影像至追蹤伺服器」。(NEO-38546、NEO-45572)
-* 修正在重新產生設定時設定檔案錯誤導致系統當機的問題。(NEO-38752)
+* 修正先前版本中阻止使用者調整 IMS 登入頁面大小的錯誤。 (NEO-30085)
+* 修正在現有執行個體安裝內容管理員套件時發生的錯誤。 (NEO-32349)
+* 修正 **Campaigns** 功能表持續顯示「作業進行中」訊息的問題。 (NEO-44904)
+* 在傳送包含 URL 的電子郵件時，URL 的 BID (Broadlog ID) 與 CID (Campig ID) 遭刪除而未儲存傳遞，此問題已啟用 Adobe Analytics 加以修正。 (NEO-38678)
+* 修正在具有訊息中心特定設定的執行個體中的公共資源資料夾上傳影像時發生的問題。 將顯示以下錯誤訊息：「無法上傳影像至追蹤伺服器」。 (NEO-38546、NEO-45572)
+* 修正在重新產生設定時設定檔案錯誤導致系統當機的問題。 (NEO-38752)
 * 已修正可能導致傳送指標未正確更新的問題。 (NEO-44827)
 * 使用複雜查詢時可能導致升級後錯誤的問題，已加以修正。 (NEO-43648)
 * 已修正可能導致 WebApps 預覽無法運作的問題。 (NEO-43242)
@@ -74,7 +74,7 @@ _2022 年 7 月 1 日_
 * 已修正可能導致工作流程熱度圖無法載入結果的問題。 (NEO-43360)
 * 針對使用 FDA 外部連接器時可能導致的連線問題，已加以修正。 (NEO-42722)
 * 已修正使用地址替代與控制組排除時的校樣問題。 (NEO-39695)
-* 因 Snowflake 連接器問題而可能導致的工作流程失敗問題，已進行修正。(NEO-46299)
+* 因 Snowflake 連接器問題而可能導致的工作流程失敗問題，已進行修正。 (NEO-46299)
 * 針對因個人化區塊包含無效字元而可能凍結用戶端主控台的問題，已加以修正。 (NEO-45761)
 * 建立 Snowflake 專用外部帳戶作為外部資料庫時，針對可能導致的連線問題，已加以修正。 (NEO-45744)
 * 受 visibleIf 屬性保護的表格資訊，可能遭到顯示的問題，已進行修正。 (NEO-37865)
@@ -145,8 +145,8 @@ Adobe Campaign 現在相容於 Windows Server 2019。 請參閱 [Campaign 相容
 
 **其他變更**
 
-* 棄用後，Microsoft CRM、Salesforce、Oracle CRM 隨選操作活動已從介面中移除。若要設定 Adobe Campaign 與 CRM 系統之間的資料同步，您可以使用 CRM 連接器活動。[閱讀全文](../../workflow/using/crm-connector.md)
-* 此 **[!UICONTROL Encrypted identifier]** 欄位已新增至訪客結構描述 (nms:visitor)。此欄位已經過計算，將用於網路應用程式。當在中間來源執行個體上設定 Line 頻道時，即適用。
+* 棄用後，Microsoft CRM、Salesforce、Oracle CRM 隨選操作活動已從介面中移除。 若要設定 Adobe Campaign 與 CRM 系統之間的資料同步，您可以使用 CRM 連接器活動。 [閱讀全文](../../workflow/using/crm-connector.md)
+* 此 **[!UICONTROL Encrypted identifier]** 欄位已新增至訪客結構描述 (nms:visitor)。 此欄位已經過計算，將用於網路應用程式。 當在中間來源執行個體上設定 Line 頻道時，即適用。
 * CRM 資料來源現在可用於&#x200B;**變更資料來源**&#x200B;活動。
 * 已在&#x200B;**錯誤管理**&#x200B;工作流程活動中新增屬性：**錯誤時中止**&#x200B;選項會自動停止工作流程。 之後將無法重新啟動 (NEO-29661)。 [閱讀全文](../../workflow/using/advanced-parameters.md#in-case-of-errors)
 * 專用序列現在用於產生 nmsGroup 表的主要金鑰，此表用於建立收件者的統計分組。 之前使用 xtknewId 序列。 (NEO-30832)
@@ -157,28 +157,28 @@ Adobe Campaign 現在相容於 Windows Server 2019。 請參閱 [Campaign 相容
 
 * 修正在建立傳遞時，導致&#x200B;**追蹤與影像**&#x200B;視窗的&#x200B;**影像**&#x200B;標籤發生錯誤的問題。 使用自動代理設定時會發生此問題。 (NEO-33260)
 * 修正可能導致您無法在同步模式下，在 Debian 10 伺服器 (HTTPS) 上傳檔案的問題。
-* 修正在刪除相關傳遞後，可能導致無法在資料庫清理期間從中間來源執行個體中清除傳遞統計資訊表 (`nmsDeliveryLogStats`) 記錄的問題。(NEO-31034)
+* 修正在刪除相關傳遞後，可能導致無法在資料庫清理期間從中間來源執行個體中清除傳遞統計資訊表 (`nmsDeliveryLogStats`) 記錄的問題。 (NEO-31034)
 * 修正在使用權杖進行身份驗證時，導致無法在 iOS 上傳送行動應用程式通知的問題 (NEO-38640)。
 * 修正在嘗試建立和設定報表時，可能導致顯示指令碼錯誤訊息的問題 (NEO-38393)。
 * 修正在同時更新大量傳送指標時，導致 Oracle 追蹤工作流程失敗的問題 (NEO-39653)。
 * 修正問題，在執行控制類型時，該問題導致錯誤而無法送出傳遞 (NEO-39833)。
 * 修正登陸頁面上，可能導致線上意見調查回覆 HTML 頁面無法正確顯示特殊字元的問題 (NEO-39438)。
 * 修正在探索工具標籤以滑鼠右鍵按一下任何資料夾時，可能導致 Campaign Classic 主控台無法運作的問題 (NEO-38884)。
-* 修正在新傳遞中使用先前建立的傳遞範本時，導致缺少 Web Analytics 設定的錯誤。(NEO-28666)
+* 修正在新傳遞中使用先前建立的傳遞範本時，導致缺少 Web Analytics 設定的錯誤。 (NEO-28666)
 * 修正可能導致您無法預覽附加至工作流程的行動傳遞問題。
 * 修正在啟用追蹤連結的 URL 簽章機制時，發生無法重新導向個人化追蹤 URL 的錯誤。
 * 修正因索引管理問題在升級後導致失敗的問題。
 * 修正在&#x200B;**匯入**&#x200B;或&#x200B;**匯出**&#x200B;工作流程活動中使用 Microsoft Dynamics CRM 查閱欄位資料類型時產生的錯誤。
-* 修復因代理設定問題而無法登入主控台的問題。(NEO-38388)
+* 修復因代理設定問題而無法登入主控台的問題。 (NEO-38388)
 * 修正了妨礙&#x200B;**清除資料夾**&#x200B;功能正常運作的問題。 (NEO-37459)
 * 修復在搭配 Microsoft Dynamics CRM 帳戶使用 xml 資料欄位時，因參考的 xml 包含雙引號導致錯誤要求的問題。
-* 修復在網路逾時，導致不正確記錄為指令碼中斷而非網路錯誤的問題。 如果 HTTP 要求包含在 JavaScript 活動中，會發生此問題。(NEO-38079)
-* 修正了在嘗試提取時間元件時，執行 Amazon Redshift HoursDiff 和 MinutesDiff 函式時傳回錯誤結果的問題。(NEO-31673)
+* 修復在網路逾時，導致不正確記錄為指令碼中斷而非網路錯誤的問題。 如果 HTTP 要求包含在 JavaScript 活動中，會發生此問題。 (NEO-38079)
+* 修正在嘗試擷取時間元件時，執行Amazon Redshift HoursDiff和MinutesDiff函式時傳回錯誤結果的問題。(NEO-31673)
 * 修正自版本編號 9182 以來，無法載入傳遞&#x200B;**熱門點擊**&#x200B;報告的問題。 (NEO-28900)
-* 修復在以字元實體參照 (`&amp;`) 取代 URL 中的 &amp; 符號時，導致使用者無法存取連結至 QR 碼 URL 的錯誤。(NEO-28621)
-* 修復當使用者建立新促銷活動工作流程並連結至 Web Analytics 帳戶的傳遞活動時，會建立新外部帳戶的問題。這是因為 webAnalyticsAccount 傳遞物件中缺少 ID 所致。 (NEO-39691)
+* 修復在以字元實體參照 (`&amp;`) 取代 URL 中的 &amp; 符號時，導致使用者無法存取連結至 QR 碼 URL 的錯誤。 (NEO-28621)
+* 修復當使用者建立新促銷活動工作流程並連結至 Web Analytics 帳戶的傳遞活動時，會建立新外部帳戶的問題。 這是因為 webAnalyticsAccount 傳遞物件中缺少 ID 所致。 (NEO-39691)
 * 修正了&#x200B;**讀取清單** 在資料庫中以負 ID 識別清單時，工作流程活動無法運作的問題。 (NEO-39607)
-* 修正可能導致&#x200B;**中間來源 (傳遞記錄)**&#x200B;工作流程失敗的問題。(NEO-39662)
-* 修正可能導致無法預覽附加至工作流程的電子郵件傳遞的問題。(NEO-37840)
+* 修正可能導致&#x200B;**中間來源 (傳遞記錄)**&#x200B;工作流程失敗的問題。 (NEO-39662)
+* 修正可能導致無法預覽附加至工作流程的電子郵件傳遞的問題。 (NEO-37840)
 * 修正可能導致資料庫清理工作流程刪除包含清單值的有效表格的問題。 (NEO-34911)
 * 修正可能導致計費工作流程在行銷執行個體中造成當機的問題。

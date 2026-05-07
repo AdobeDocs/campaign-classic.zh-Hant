@@ -7,7 +7,7 @@ hide: true
 exl-id: 2bef6b5e-887e-4c56-bb4b-3583472ca333
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1296'
+source-wordcount: '1300'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ## 建立本機行銷活動（依表單） {#creating-a-local-campaign--by-form-}
 
-**By表單**&#x200B;型別Web介面涉及使用&#x200B;**Web應用程式**。 根據設定，此Web應用程式可包含任何型別的已定義個人化元素。 例如，您可以建議連結以評估目標、預算、內容等。 透過專用API。
+**By表單**&#x200B;型別Web介面涉及使用&#x200B;**Web應用程式**。 根據設定，此Web應用程式可包含任何型別的已定義個人化元素。 例如，您可以透過專用的API來建議用於評估目標、預算、內容等的連結。
 
 >[!NOTE]
 >
@@ -26,7 +26,7 @@ ht-degree: 0%
 >
 >此範例中使用的網頁應用程式，並非隨Adobe Campaign提供的現成網頁應用程式。 若要在行銷活動中使用表單，您必須建立專用的Web應用程式。
 
-建立行銷活動範本時，請按一下&#x200B;**[!UICONTROL Zoom]**&#x200B;連結之&#x200B;**[!UICONTROL Web interface]**&#x200B;選項內的&#x200B;**[!UICONTROL Advanced campaign settings...]**&#x200B;圖示，以存取網頁應用程式的詳細資料。
+建立行銷活動範本時，請按一下&#x200B;**[!UICONTROL Advanced campaign settings...]**&#x200B;連結之&#x200B;**[!UICONTROL Web interface]**&#x200B;選項內的&#x200B;**[!UICONTROL Zoom]**&#x200B;圖示，以存取網頁應用程式的詳細資料。
 
 ![](assets/mkg_dist_local_op_form1.png)
 
@@ -119,7 +119,7 @@ ht-degree: 0%
 
 #### 建立資料發佈活動 {#creating-a-data-distribution-activity}
 
-1. 若要設定合作行銷活動（依目標核准），您必須先建立&#x200B;**[!UICONTROL Data distribution activity]**。 按一下&#x200B;**[!UICONTROL New]**&#x200B;節點中的&#x200B;**[!UICONTROL Resources > Campaign management > Data distribution]**&#x200B;圖示。
+1. 若要設定合作行銷活動（依目標核准），您必須先建立&#x200B;**[!UICONTROL Data distribution activity]**。 按一下&#x200B;**[!UICONTROL Resources > Campaign management > Data distribution]**&#x200B;節點中的&#x200B;**[!UICONTROL New]**&#x200B;圖示。
 
    ![](assets/mkg_dist_use_case_target_valid3.png)
 
@@ -144,7 +144,7 @@ ht-degree: 0%
 #### 建立協作行銷活動 {#creating-a-collaborative-campaign}
 
 1. 從&#x200B;**[!UICONTROL Campaign management > Campaign]**&#x200B;節點，建立新的&#x200B;**[!UICONTROL collaborative campaign (by target approval)]**。
-1. 在&#x200B;**[!UICONTROL Targeting and workflows]**&#x200B;索引標籤中，為您的行銷活動建立工作流程。 這必須包含由&#x200B;**活動定義**&#x200B;的&#x200B;**[!UICONTROL Record count limitation]**&#x200B;分割&#x200B;**[!UICONTROL Data distribution]**&#x200B;活動。
+1. 在&#x200B;**[!UICONTROL Targeting and workflows]**&#x200B;索引標籤中，為您的行銷活動建立工作流程。 這必須包含由&#x200B;**[!UICONTROL Data distribution]**&#x200B;活動定義&#x200B;**[!UICONTROL Record count limitation]**&#x200B;的&#x200B;**分割**&#x200B;活動。
 
    ![](assets/mkg_dist_use_case_target_valid5.png)
 
@@ -160,7 +160,7 @@ ht-degree: 0%
 
 #### 發佈行銷活動 {#publishing-the-campaign}
 
-您現在可以從&#x200B;**索引標籤新增**&#x200B;行銷活動套件&#x200B;**[!UICONTROL Campaigns]**。
+您現在可以從&#x200B;**[!UICONTROL Campaigns]**&#x200B;索引標籤新增&#x200B;**行銷活動套件**。
 
 1. 選擇您的&#x200B;**[!UICONTROL Reference campaign]**。 在封裝的&#x200B;**[!UICONTROL Edit]**&#x200B;標籤中，您可以選取要用於行銷活動的&#x200B;**[!UICONTROL Approval mode]**：
 

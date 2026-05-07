@@ -10,8 +10,8 @@ topic-tags: additional-configurations
 exl-id: 46c8ed46-0947-47fb-abda-6541b12b6f0c
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
-source-wordcount: '1569'
-ht-degree: 1%
+source-wordcount: '1630'
+ht-degree: 3%
 
 ---
 
@@ -25,13 +25,13 @@ ht-degree: 1%
 
 這些程式僅限於&#x200B;**內部部署**/**混合**&#x200B;部署，且需要管理許可權。
 
-對於&#x200B;**託管**&#x200B;部署，伺服器端設定只能由Adobe設定。 不過，某些設定可以在[Campaign控制面板](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=zh-Hant)中設定，例如IP允許清單管理或URL許可權。 [了解更多](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=zh-Hant)。
+對於&#x200B;**託管**&#x200B;部署，伺服器端設定只能由Adobe設定。 不過，某些設定可以在[Campaign控制面板](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=zh-Hant)中設定，例如IP允許清單管理或URL許可權。 [了解更多資訊](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=zh-Hant)。
 
 如需詳細資訊，請參閱下列章節：
 
-* [控制面板文件](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hant)
+* [控制面板檔案](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hant)
 * [託管模型](../../installation/using/hosting-models.md)
-* [Campaign Classic內部部署和託管功能矩陣](../../installation/using/capability-matrix.md)
+* [Campaign Classic內部部署與託管功能矩陣](../../installation/using/capability-matrix.md)
 
 ## 組態檔
 

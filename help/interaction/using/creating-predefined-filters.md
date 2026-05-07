@@ -9,7 +9,7 @@ topic-tags: managing-environments
 exl-id: 399e9468-bf70-425d-af0b-72c29636b513
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '96'
+source-wordcount: '97'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 1%
 
    ![](assets/offer_filter_create_005.png)
 
-1. 按一下&#x200B;**[!UICONTROL New]**。
+1. 按一下 **[!UICONTROL New]**。
 
    ![](assets/offer_filter_create_001.png)
 

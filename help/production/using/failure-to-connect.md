@@ -10,8 +10,8 @@ topic-tags: troubleshooting
 exl-id: 3c793dc1-9654-4289-a3d2-30c3078fd848
 source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
 workflow-type: tm+mt
-source-wordcount: '371'
-ht-degree: 2%
+source-wordcount: '417'
+ht-degree: 9%
 
 ---
 
@@ -51,12 +51,12 @@ ht-degree: 2%
 如果您沒有取得此結果，請檢查Web伺服器設定，確認整合已納入考量。</td>
 </tr>
 <tr> 
-<td>連線到下列URL： <b>http(s)：//&lt;URLSERVER&gt;/nl/jsp/logon.jsp</b></td>
+<td>連線至下列URL： <b>http(s)：//&lt;URLSERVER&gt;/nl/jsp/logon.jsp</b></td>
 <td>如果您收到Tomcat Java錯誤，請檢查JAVA整合是否正確執行。 已整合至檔案[path of application]/nl6/customer.sh</td>
 </tr>
 <tr> 
-<td>連線到下列URL： <b>http(s)：//&lt;URLSERVER&gt;/nl/jsp/logon.jsp</b></td>
-<td>如果您取得空白頁面，請檢查Adobe Campaign網頁模組是否已啟動。 命令nlserver pdump應傳回DD/MM/YYYY的Adobe Campaign Classic (7.X YY.R建置XXX@SHA1)應用程式伺服器。 如果沒有，請使用命令nlserver start web重新啟動模組</td>
+<td>連線至下列URL： <b>http(s)：//&lt;URLSERVER&gt;/nl/jsp/logon.jsp</b></td>
+<td>如果您取得空白頁面，請檢查Adobe Campaign網頁模組是否已啟動。 命令nlserver pdump應傳回DD/MM/YYYY的Adobe Campaign Classic （7.X YY.R建置XXX@SHA1）應用程式伺服器。 如果沒有，請使用命令nlserver start web重新啟動模組</td>
 </tr>
 <tr>
 <td>檢查安全性區域的一般設定。</td>

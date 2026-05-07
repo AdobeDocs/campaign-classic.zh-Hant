@@ -7,7 +7,7 @@ feature: Web Apps
 exl-id: 4bff6b55-3335-433e-a2ff-5d8c83e8f0d3
 source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
 workflow-type: tm+mt
-source-wordcount: '676'
+source-wordcount: '719'
 ht-degree: 2%
 
 ---
@@ -96,7 +96,7 @@ Cookie名稱為&#x200B;**apottout**。 常見的值包括：
 
   它會傳回需要在頁面中列印的選擇退出橫幅標籤的HTML。
 
-* **NL.ServerWebTracking。_displayOptOutBanner()**
+* **NL.ServerWebTracking._displayOptOutBanner()**
 
   如果選擇退出橫幅在管理員選取選擇退出橫幅後應該顯示，則傳回「true」
 

@@ -9,8 +9,8 @@ hide: true
 exl-id: c0533148-b027-4158-9b95-8d2df769e963
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '511'
-ht-degree: 4%
+source-wordcount: '554'
+ht-degree: 7%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 4%
 
 內容準備就緒後，您需要仔細定義將接收訊息的人員。
 
-若要成功傳遞，您想要將最相關的個人化內容傳送給正確的收件者。 Adobe Campaign可讓您建立最精確的目標：您可以根據收件者的年齡、本地化、購買內容、是否在上一次傳送中按一下連結等來選取收件者。 透過Adobe Campaign，您還可以定義測試設定檔、控制組和種子地址，以確保您的目標正確無誤。
+若要成功傳遞，您想要將最相關的個人化內容傳送給正確的收件者。 Adobe Campaign可讓您建立最精確的目標：您可以根據收件者的年齡、本地化、購買內容、是否在上一次傳送中按一下連結等來選取收件者。透過Adobe Campaign，您還可以定義測試設定檔、控制組和種子地址，以確保您的目標正確無誤。
 
 ## 目標對應 {#target-mappings}
 
@@ -42,7 +42,7 @@ ht-degree: 4%
 
 ## 傳送給您的訂閱者 {#send-to-subscribers}
 
-若要傳送訊息給電子報的訂閱者，您可以直接將訂閱者定位到對應的資訊服務。 在本節[瞭解更多](managing-subscriptions.md#delivering-to-the-subscribers-of-a-service)。
+若要傳送訊息給電子報的訂閱者，您可以直接將訂閱者定位到對應的資訊服務。 在本節[&#128279;](managing-subscriptions.md#delivering-to-the-subscribers-of-a-service)瞭解更多。
 
 
 ## 測試收件者和種子地址 {#test-recipients-seed-addresses}
@@ -51,7 +51,7 @@ ht-degree: 4%
 
 請務必選取適當的校樣收件者，因為他們會驗證訊息的表單和內容。 定義證明收件者的步驟會顯示在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hant#select-the-proof-target){target="_blank"}中。
 
-種子地址用於鎖定不符合所定義目標條件的收件者，以便在傳送至主要目標之前測試傳遞。 它們會顯示在此區段[中的](about-seed-addresses.md)。
+種子地址用於鎖定不符合所定義目標條件的收件者，以便在傳送至主要目標之前測試傳遞。 它們會顯示在此區段[&#128279;](about-seed-addresses.md)中的。
 
 ## 重複位址 {#deduplicate-addresses}
 

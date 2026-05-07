@@ -7,7 +7,7 @@ exl-id: 4cd67278-2623-4508-9a9f-9007c6a5f8ac
 source-git-commit: 254c89490fefa5d405bcecd2f1781df46450a873
 workflow-type: tm+mt
 source-wordcount: '198'
-ht-degree: 8%
+ht-degree: 11%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 8%
 
 ## 內容模型 {#content-model-5}
 
-分項清單：==(help| value)
+分項清單：==（help|值）
 
 ## 屬性 {#attributes-5}
 
@@ -66,14 +66,14 @@ ht-degree: 8%
    * 列舉
    * 浮點數
    * html
-   * int64
+   * 64 位元整數
    * 連結
-   * 長
+   * 長整數
    * 備忘錄
    * MNTOKEN
    * 百分比
    * 主要金鑰
-   * 短
+   * 短整數
    * 字串
    * 時間
    * 時間範圍

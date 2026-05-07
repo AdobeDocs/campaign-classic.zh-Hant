@@ -10,8 +10,8 @@ topic-tags: initial-configuration
 exl-id: 236afdfe-fb23-4ebb-b000-76e14bf01d9e
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
-source-wordcount: '653'
-ht-degree: 1%
+source-wordcount: '675'
+ht-degree: 3%
 
 ---
 
@@ -25,11 +25,11 @@ ht-degree: 1%
 
 此屬性可在&#x200B;**serverConf.xml**&#x200B;檔案的&#x200B;**dataStore**&#x200B;元素中使用。 **serverConf.xml**&#x200B;中可用的所有引數都列在此[區段](../../installation/using/the-server-configuration-file.md)中。
 
-此屬性的預設值為&#x200B;**。+**&#x200B;並讓您上傳任何檔案型別。
+此屬性的預設值為&#x200B;**.+**，可讓您上傳任何檔案型別。
 
 若要限制可能的格式，請以有效的Java規則運算式取代屬性值。 您可以輸入數個值，方法是以逗號分隔。
 
-例如：**uploadWhiteList=&quot;。&#42;.png，。&#42;.jpg&quot;**&#x200B;可讓您在伺服器上上傳PNG和JPG格式。 將不接受任何其他格式。
+例如： **uploadWhiteList=&quot;。&#42;.png，.&#42;.jpg&quot;**&#x200B;可讓您在伺服器上上傳PNG和JPG格式。 將不接受任何其他格式。
 
 您也可以藉由設定Web伺服器來防止重要檔案上傳。 [了解更多](web-server-configuration.md)
 
@@ -122,7 +122,7 @@ FTP/FTPS連線會在proxyFTP引數中定義：
 
 ## 管理公用資源 {#managing-public-resources}
 
-若要公開發佈，連結至行銷活動的電子郵件和公共資源中使用的影像，必須存在於外部可存取的伺服器上。 然後，外部收件者或操作員便可使用這些值。 [了解更多](../../installation/using/deploying-an-instance.md#managing-public-resources)。
+若要公開發佈，連結至行銷活動的電子郵件和公共資源中使用的影像，必須存在於外部可存取的伺服器上。 然後，外部收件者或操作員便可使用這些值。 [了解更多資訊](../../installation/using/deploying-an-instance.md#managing-public-resources)。
 
 公用資源儲存在Adobe Campaign安裝目錄的&#x200B;**/var/res/instance**&#x200B;目錄中。
 

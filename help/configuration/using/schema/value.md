@@ -9,8 +9,8 @@ topic-tags: schema-reference
 exl-id: bad7fb4b-43d9-4033-ae0d-cf191d89114b
 source-git-commit: 254c89490fefa5d405bcecd2f1781df46450a873
 workflow-type: tm+mt
-source-wordcount: '148'
-ht-degree: 2%
+source-wordcount: '147'
+ht-degree: 4%
 
 ---
 
@@ -48,7 +48,7 @@ value：==help
 * **applicableIf （字串）**：此屬性可讓您將列舉值設為選用。 它會接收XTK運算式。
 * **desc （字串）**：列舉值的描述。
 * **enabledIf （字串）**：啟用列舉值的條件。
-* **img （字串）**：連結至「namespace：image_name」表單列舉的影像。 必須將影像匯入至應用程式伺服器。
+* **img （字串）**：連結到「名稱空間:image_name」表單列舉的影像。 必須將影像匯入至應用程式伺服器。
 * **標籤（字串）**：列舉值的標籤。
 * **名稱（字串）**：列舉值的內部名稱。
 * **值（字串）**：列舉值的值。 值的型別是根據分項清單的型別來定義。 如果列舉是字元字串型別，則只能包含字元字串型別值。

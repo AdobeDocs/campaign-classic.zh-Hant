@@ -10,8 +10,8 @@ topic-tags: troubleshooting
 exl-id: 064eb41f-6685-4ac1-adc5-40f9d5a2f96d
 source-git-commit: 8aceafa362b80f6e34edfd91a71551a58501a3d0
 workflow-type: tm+mt
-source-wordcount: '221'
-ht-degree: 3%
+source-wordcount: '252'
+ht-degree: 9%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->此程式僅適用於使用原生驗證連線至Campaign的運運算元。 若為Adobe IMS驗證，請參閱[此檔案](https://helpx.adobe.com/ie/manage-account/using/change-or-reset-password.html){target="_blank"}。
+>此程式僅適用於使用原生驗證連線至Campaign的運運算元。 如需Adobe IMS驗證資訊，請參閱[此檔案](https://helpx.adobe.com/ie/manage-account/using/change-or-reset-password.html){target="_blank"}。
 
 若要重設Campaign密碼，請遵循下列步驟：
 

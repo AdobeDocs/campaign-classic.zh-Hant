@@ -8,7 +8,7 @@ level: Beginner
 exl-id: a9cd08b0-55c2-4405-9fb8-f0c623cd4ccb
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '2226'
+source-wordcount: '2269'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Adobe免除舊版資料中心的委任：Campaign Classic例項必須轉移至Pu
 
 * **舊版資料中心與公用雲端之間的封裝大小是否有任何差異？**
 
-  我們正在布建公用雲端(AWS)中，根據目前的資料庫大小、磁碟大小等使用新的套件定義。 例如，如果客戶在舊版資料中心有一部應用程式伺服器，根據套件定義，他們可以在公共雲端(AWS)有兩部應用程式伺服器。
+  我們正在布建公用雲端(AWS)中，根據目前的資料庫大小、磁碟大小等使用新的套件定義。例如，如果客戶在舊版資料中心有一部應用程式伺服器，根據套件定義，他們可以在公共雲端(AWS)有兩部應用程式伺服器。
 
 * **組建編號或行銷活動版本是否會變更？**
 
@@ -141,7 +141,7 @@ Adobe免除舊版資料中心的委任：Campaign Classic例項必須轉移至Pu
 
   Adobe Campaign應用程式伺服器IP位址將會變更。 此步驟將由移轉後的Adobe客戶服務處理。
 
-* **移轉是否會影響與其他Adobe解決方案(AEM、Target等)的連線？**
+* **移轉是否會影響與其他Adobe解決方案（AEM、Target等）的連線？**
 
   整合是在允許清單中宣告的IP位址與Web服務帳戶設定的組合。 該帳戶將由Adobe客戶服務負責和擁有。
 

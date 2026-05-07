@@ -7,7 +7,7 @@ role: Developer
 exl-id: 441a0e5c-fa7f-46c8-a65a-5cca4c846d43
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '417'
+source-wordcount: '418'
 ht-degree: 3%
 
 ---
@@ -82,7 +82,7 @@ function nms_recipient_testLog(message)
  }
 ```
 
-**2。 簽章**
+**2. 簽章**
 
 函式的簽章必須為宣告的每個&#39;in&#39;或&#39;inout&#39;引數包含一個引數。
 
@@ -91,7 +91,7 @@ function nms_recipient_testLog(message)
 * **非靜態方法**：函式必須先包含額外的引數，與以&#39;xml&#39; (E4X)型別物件形式傳遞的XML實體一致。
 * **「僅限索引鍵」型別方法**：函式必須先包含額外的引數，與以字元字串形式傳遞的索引鍵一致。
 
-**3。 傳回的值**
+**3. 傳回的值**
 
 函式必須傳回每個&#39;out&#39;或&#39;inout&#39;型別引數的值。 特定案例：如果宣告方法時不含任何「static」、「key only」或「const」屬性，則第一個傳回值必須與修改的實體一致。 可以傳回新物件或傳回第一個修改過的引數。
 

@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: 優惠目錄概覽
+title: 產品建議目錄概觀
 description: 深入瞭解Campaign中的優惠方案目錄
 feature: Interaction, Offers
 audience: interaction
@@ -9,12 +9,12 @@ topic-tags: managing-an-offer-catalog
 exl-id: 464a6548-1b91-4e09-b620-3b820ef69653
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '131'
+source-wordcount: '132'
 ht-degree: 4%
 
 ---
 
-# 優惠目錄概覽{#offer-catalog-overview}
+# 產品建議目錄概觀{#offer-catalog-overview}
 
 
 

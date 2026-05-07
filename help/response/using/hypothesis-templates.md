@@ -10,7 +10,7 @@ topic-tags: response-manager
 exl-id: 428c7677-454b-4618-bae7-0be7df6dfcaa
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1390'
+source-wordcount: '1410'
 ht-degree: 2%
 
 ---
@@ -57,7 +57,7 @@ ht-degree: 2%
 
   >[!NOTE]
   >
-  >如果範本套用至選件，**[!UICONTROL Update offer proposition status]**&#x200B;索引標籤中會提供&#x200B;**[!UICONTROL Transactions]**&#x200B;選項。
+  >如果範本套用至選件，**[!UICONTROL Transactions]**&#x200B;索引標籤中會提供&#x200B;**[!UICONTROL Update offer proposition status]**&#x200B;選項。
 
 * **[!UICONTROL Measurement with control group]**：可讓您指出是否已為傳遞或行銷活動定義控制組，並將其納入測量指標中。 控制組不會接收傳遞，可讓您透過比較行銷活動與收到傳遞的目標母體，來測量傳遞後行銷活動的影響。
 

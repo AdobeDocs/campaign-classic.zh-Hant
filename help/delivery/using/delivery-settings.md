@@ -8,7 +8,7 @@ hide: true
 exl-id: 66250817-f829-4b8b-92dd-2daa92a97fe0
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '709'
+source-wordcount: '719'
 ht-degree: 12%
 
 ---
@@ -28,8 +28,8 @@ ht-degree: 12%
 目前，此選項只有在符合下列條件時才可用：
 
 * 傳遞必須是電子郵件。 目前不支援其他管道。
-* 您不得使用中間來源或外部路由，只能使用大量傳遞路由型別。 您可以檢查&#x200B;**[!UICONTROL General]**&#x200B;之&#x200B;**[!UICONTROL Delivery properties]**&#x200B;索引標籤中使用的路由。
-* 您無法鎖定來自外部檔案的母體。 若為單一傳遞，請從&#x200B;**[!UICONTROL To]**&#x200B;按一下&#x200B;**[!UICONTROL Email parameters]**&#x200B;連結，並檢查是否已選取&#x200B;**[!UICONTROL Defined in the database]**&#x200B;選項。 針對工作流程中使用的傳遞，檢查收件者在&#x200B;**[!UICONTROL Specified by the inbound event(s)]**&#x200B;索引標籤中是否為&#x200B;**[!UICONTROL Delivery]**。
+* 您不得使用中間來源或外部路由，只能使用大量傳遞路由型別。 您可以檢查&#x200B;**[!UICONTROL Delivery properties]**&#x200B;之&#x200B;**[!UICONTROL General]**&#x200B;索引標籤中使用的路由。
+* 您無法鎖定來自外部檔案的母體。 若為單一傳遞，請從&#x200B;**[!UICONTROL Email parameters]**&#x200B;按一下&#x200B;**[!UICONTROL To]**&#x200B;連結，並檢查是否已選取&#x200B;**[!UICONTROL Defined in the database]**&#x200B;選項。 針對工作流程中使用的傳遞，檢查收件者在&#x200B;**[!UICONTROL Delivery]**&#x200B;索引標籤中是否為&#x200B;**[!UICONTROL Specified by the inbound event(s)]**。
 * 您必須使用PostgreSQL資料庫。
 
 ### 設定分析優先順序 {#analysis-priority-}
@@ -72,11 +72,11 @@ ht-degree: 12%
 
 * **[!UICONTROL Delivery duration]**&#x200B;欄位可讓您輸入全域傳遞重試的限制。 這表示 Adobe Campaign 會傳送從開始日期開始的訊息，然後，對於僅傳回錯誤的訊息，會執行一般、可設定的重試，直到達到效度限制為止。
 
-  您也可以選擇指定日期。若要這麼做，請選取&#x200B;**[!UICONTROL Explicitly set validity dates]**。 在此情況下，傳遞和有效期限制日期也讓您指定時間。預設使用目前時間，但您可以直接在輸入欄位中修改。
+  您也可以選擇指定日期。 若要這麼做，請選取&#x200B;**[!UICONTROL Explicitly set validity dates]**。 在此情況下，傳遞和有效期限制日期也讓您指定時間。 預設使用目前時間，但您可以直接在輸入欄位中修改。
 
   >[!IMPORTANT]
   >
-  >針對託管或混合式安裝，如果您已升級至[Enhanced MTA](sending-with-enhanced-mta.md)，則只有在設為&#x200B;**[!UICONTROL Delivery duration]** 3.5天或更短時間時，才會使用Campaign電子郵件傳遞中的&#x200B;**設定**。 如果您定義的值超過3.5天，則不會考慮該值。
+  >針對託管或混合式安裝，如果您已升級至[Enhanced MTA](sending-with-enhanced-mta.md)，則只有在設為&#x200B;**3.5天或更短時間時，才會使用Campaign電子郵件傳遞中的&#x200B;**&#x200B;[!UICONTROL Delivery duration]&#x200B;**設定**。 如果您定義的值超過3.5天，則不會考慮該值。
 
 * **資源效度限制**： **[!UICONTROL Validity limit]**&#x200B;欄位是用於上傳的資源，主要用於映象頁面和影像。 本頁上的資源在限定時間內有效（以節省磁碟空間）。
 

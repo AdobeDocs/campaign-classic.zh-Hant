@@ -7,8 +7,8 @@ role: Developer
 exl-id: e6638870-3141-4f12-b904-db436127c0d1
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '618'
-ht-degree: 2%
+source-wordcount: '625'
+ht-degree: 3%
 
 ---
 
@@ -27,7 +27,7 @@ Business API是每種物件型別專屬的。 它們會影響：
    * 啟動工作流程，
    * 驗證流程等。
 
-     請參閱JavaScript[中的](../../configuration/using/soap-methods-in-javascript.md)SOAP方法。
+     請參閱JavaScript[&#128279;](../../configuration/using/soap-methods-in-javascript.md)中的SOAP方法。
 
 * 內容管理
 * 訂閱管理，請參閱[訂閱(nms:subscription)](#subscribe--nms-subscription-)和[取消訂閱(nms:subscription)](#unsubscribe--nms-subscription-)。
@@ -62,7 +62,7 @@ Business API是每種物件型別專屬的。 它們會影響：
 </method>
 ```
 
-調解金鑰的定義必須透過XML檔案&#x200B;**專案上的_** key`<recipient>`屬性輸入。 此屬性的內容是以逗號分隔的XPath清單。
+調解金鑰的定義必須透過XML檔案`<recipient>`專案上的_&#x200B;**key**&#x200B;屬性輸入。 此屬性的內容是以逗號分隔的XPath清單。
 
 此呼叫不會傳回任何資料，錯誤除外。
 

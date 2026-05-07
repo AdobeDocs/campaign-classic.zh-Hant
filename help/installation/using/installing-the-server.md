@@ -10,8 +10,8 @@ topic-tags: installing-campaign-in-windows-
 exl-id: c0cb4efa-cae9-4312-88fb-738857a89595
 source-git-commit: 7906e9fee164d731659bbb9f96394faca5961240
 workflow-type: tm+mt
-source-wordcount: '384'
-ht-degree: 1%
+source-wordcount: '405'
+ht-degree: 5%
 
 ---
 
@@ -135,7 +135,7 @@ nlserver stop web
 
 Adobe Campaign伺服器定義名稱為&#x200B;**internal**&#x200B;的技術登入，其擁有所有執行個體的所有權利。 安裝之後，登入沒有密碼。 必須定義一個。
 
-若要了解詳細資訊，請參閱[本章節](../../installation/using/configuring-campaign-server.md#internal-identifier)。
+若要了解更多資訊，請參閱[此區段](../../installation/using/configuring-campaign-server.md#internal-identifier)。
 
 ## 啟動Adobe Campaign服務 {#starting-adobe-campaign-services}
 

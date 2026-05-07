@@ -8,8 +8,8 @@ role: User
 exl-id: 40a03e04-56c7-48c0-95b8-aa7bf1121048
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '378'
-ht-degree: 9%
+source-wordcount: '391'
+ht-degree: 11%
 
 ---
 
@@ -64,7 +64,7 @@ ht-degree: 9%
 
    ![](assets/delivery_template_5.png)
 
-1. 按一下&#x200B;**儲存**。 您的範本現在已準備好用於傳遞。
+1. 按一下「**儲存**」。 您的範本現在已準備好用於傳遞。
 
 
 ## 教學課程影片 {#delivery-template-video}

@@ -7,7 +7,7 @@ hide: true
 exl-id: d589180b-8e1d-4149-9b16-3f541018a41f
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '2020'
+source-wordcount: '2040'
 ht-degree: 2%
 
 ---
@@ -96,7 +96,7 @@ ht-degree: 2%
 
 ## 清除記錄 {#purging-the-logs}
 
-系統不會自動清除工作流程歷史記錄：預設會保留所有訊息。 您可以透過&#x200B;**[!UICONTROL File > Actions]**&#x200B;功能表或按一下位於清單上方工具列中的&#x200B;**[!UICONTROL Actions]**&#x200B;按鈕，清除歷史記錄。 選取 **[!UICONTROL Purge history]**。**[!UICONTROL Actions]**&#x200B;功能表中可用的選項在[動作工具列](starting-a-workflow.md)區段中詳細說明。
+系統不會自動清除工作流程歷史記錄：預設會保留所有訊息。 您可以透過&#x200B;**[!UICONTROL File > Actions]**&#x200B;功能表或按一下位於清單上方工具列中的&#x200B;**[!UICONTROL Actions]**&#x200B;按鈕，清除歷史記錄。 選取 **[!UICONTROL Purge history]**。 **[!UICONTROL Actions]**&#x200B;功能表中可用的選項在[動作工具列](starting-a-workflow.md)區段中詳細說明。
 
 ![](assets/purge_historique.png)
 
@@ -132,7 +132,7 @@ ht-degree: 2%
 
 ![](assets/wf-notification_error-console.png)
 
-您可以設定工作流程，使其在出現錯誤時不會暫停並繼續執行。若要這麼做，請編輯工作流程&#x200B;**[!UICONTROL Properties]**，並在&#x200B;**[!UICONTROL Error management]**&#x200B;區段中，選取&#x200B;**[!UICONTROL Ignore]**&#x200B;欄位中的&#x200B;**[!UICONTROL In case of error]**&#x200B;選項。 然後，您可以指定在程序暫停之前可以忽略的連續錯誤數。
+您可以設定工作流程，使其在出現錯誤時不會暫停並繼續執行。 若要這麼做，請編輯工作流程&#x200B;**[!UICONTROL Properties]**，並在&#x200B;**[!UICONTROL Error management]**&#x200B;區段中，選取&#x200B;**[!UICONTROL In case of error]**&#x200B;欄位中的&#x200B;**[!UICONTROL Ignore]**&#x200B;選項。 然後，您可以指定在程序暫停之前可以忽略的連續錯誤數。
 
 在此情況下，錯誤工作會中止。 此模式特別適合用於設計為在稍後重新嘗試行銷活動（定期動作）的工作流程。
 
@@ -206,7 +206,7 @@ ht-degree: 2%
 >
 >**isRunning**&#x200B;是為這個範例選擇的變數名稱。 這不是內建變數。
 
-在&#x200B;**[!UICONTROL Test]**&#x200B;是&#x200B;**分支中緊接在**&#x200B;之後的活動，必須在其&#x200B;**初始化指令碼**&#x200B;中設定執行個體變數：
+在&#x200B;**是**&#x200B;分支中緊接在&#x200B;**[!UICONTROL Test]**&#x200B;之後的活動，必須在其&#x200B;**初始化指令碼**&#x200B;中設定執行個體變數：
 
 ```
 instance.vars.isRunning = true

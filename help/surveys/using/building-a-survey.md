@@ -7,7 +7,7 @@ feature: Surveys
 exl-id: 8d83dfd5-70ec-4656-965b-f6b5e6f9eec1
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
-source-wordcount: '793'
+source-wordcount: '798'
 ht-degree: 2%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 2%
 
 ![](assets/s_ncs_admin_survey_select_template.png)
 
-表單頁面是使用特殊編輯器建立的，可讓您定義和設定（文字）輸入欄位、選擇欄位（清單、核取方塊等） 和靜態元素(影像、HTML內容等)。 可在「容器」中收集資料，並根據需求進行編排。 [深入瞭解](#adding-questions))。
+表單頁面是使用特殊編輯器建立的，可讓您定義和設定（文字）輸入欄位、選擇欄位（清單、核取方塊等） 和靜態元素（影像、HTML內容等）。 可在「容器」中收集資料，並根據需求進行編排。 [深入瞭解](#adding-questions))。
 
 >[!NOTE]
 >
@@ -46,7 +46,7 @@ ht-degree: 2%
 
 將欄位新增至調查時，您需要選取其型別。 可以使用以下選項：
 
-1. **[!UICONTROL Answer a question]**：此選項可讓您宣告新欄位（稱為「已封存的欄位」）以儲存答案。 在此情況下，會儲存所有收集的值，即使參與者多次填寫表單亦然。 此儲存模式僅適用於&#x200B;**調查**。 [了解更多](../../surveys/using/managing-answers.md#storing-collected-answers)。
+1. **[!UICONTROL Answer a question]**：此選項可讓您宣告新欄位（稱為「已封存的欄位」）以儲存答案。 在此情況下，會儲存所有收集的值，即使參與者多次填寫表單亦然。 此儲存模式僅適用於&#x200B;**調查**。 [了解更多資訊](../../surveys/using/managing-answers.md#storing-collected-answers)。
 1. **[!UICONTROL Edit a recipient]**：此選項可讓您選取資料庫中的欄位。 在這種情況下，使用者答案將儲存在此欄位中。 對於每個參與者，僅會保留最後儲存的值，並將其新增至設定檔資料。
 1. **[!UICONTROL Add a variable]**：此選項可讓您建立安裝程式，讓資訊不會儲存在資料庫中。 區域變數可以宣告到上游。 您也可以在建立欄位時直接新增它們。
 1. **[!UICONTROL Import an existing question]**：此選項可讓您匯入在其他調查中建立的現有問題。
@@ -90,11 +90,11 @@ ht-degree: 2%
 >[!CAUTION]
 >
 >* 此功能僅適用於&#x200B;**調查**&#x200B;型別表單。
->* 此選項與隨機問題顯示不相容。 [了解更多](#adding-questions)。
+>* 此選項與隨機問題顯示不相容。 [了解更多資訊](#adding-questions)。
 
 ### 新增問題 {#adding-questions}
 
-有兩種型別的容器：標準容器和問題容器。 標準容器可用來設定頁面版面以及在頁面中的條件式顯示。 [了解更多](../../web/using/about-web-forms.md)。
+有兩種型別的容器：標準容器和問題容器。 標準容器可用來設定頁面版面以及在頁面中的條件式顯示。 [了解更多資訊](../../web/using/about-web-forms.md)。
 
 使用&#x200B;**問題**&#x200B;容器將問題新增至頁面，並在階層中插入下列可能的答案。 使用者對於這類容器中所提問題的回應，可以在報表中分析。
 
@@ -104,7 +104,7 @@ ht-degree: 2%
 
 ![](assets/s_ncs_admin_question_label.png)
 
-在標籤欄位中輸入問題的標籤。 在這種情況下，將會套用表單樣式表中的樣式。 選取&#x200B;**[!UICONTROL Enter the title in HTML format]**&#x200B;選項加以個人化。 這將為您提供HTML編輯器的存取權。
+在標籤欄位中輸入問題的標籤。 在這種情況下，將會套用表單樣式表中的樣式。 選取&#x200B;**[!UICONTROL Enter the title in HTML format]**&#x200B;選項加以個人化。 這可讓您存取HTML編輯器。
 
 >[!NOTE]
 >

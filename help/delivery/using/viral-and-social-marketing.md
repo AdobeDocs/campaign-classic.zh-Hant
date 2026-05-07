@@ -7,7 +7,7 @@ badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v
 exl-id: 10fd561f-1b07-490e-9f66-d67e44a0def5
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '574'
+source-wordcount: '575'
 ht-degree: 2%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 2%
 
 Adobe Campaign可讓您設定鼓勵病毒式行銷的工具。
 
-這可讓傳遞收件者或網站訪客與其網路共用資訊：從新增連結至其Facebook或X (先前稱為Twitter)設定檔，到傳送訊息給朋友。
+這可讓傳遞收件者或網站訪客與其網路共用資訊：從新增連結至其Facebook或X （先前稱為Twitter）設定檔，到傳送訊息給朋友。
 
 ![](assets/s_ncs_user_viral_icons.png)
 

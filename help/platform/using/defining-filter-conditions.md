@@ -11,7 +11,7 @@ hide: true
 exl-id: b62e23e5-f1b7-44c4-82d9-95c6b3240352
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '3307'
+source-wordcount: '3342'
 ht-degree: 34%
 
 ---
@@ -89,7 +89,7 @@ ht-degree: 34%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Like</span> <br /> </td> 
-   <td> <span class="uicontrol">Like</span> 與　<span class="uicontrol">Contains</span>　運算子非常類似。它可讓您在值中插入<span class="uicontrol">%</span>萬用字元。<br /> </td> 
+   <td> <span class="uicontrol">Like</span> 與　<span class="uicontrol">Contains</span>　運算子非常類似。 它可讓您在值中插入<span class="uicontrol">%</span>萬用字元。<br /> </td> 
    <td> <strong>姓氏(@lastName)，例如'Jon%s'</strong>。 在此處，萬一運運算元忘了'n'與's'之間的遺漏字母，萬一使用萬用字元作為"joker"來尋找名稱"Jones"。<br /> </td> 
   </tr> 
   <tr> 
@@ -114,7 +114,7 @@ ht-degree: 34%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">未包含在</span> <br />中 </td> 
-   <td> 運作方式與<span class="uicontrol">運運算元中的</span>Include類似。 在此處，我們要根據輸入的值排除收件者。<br /> </td> 
+   <td> 運作方式與</span>運運算元中的<span class="uicontrol">Include類似。 在此處，我們要根據輸入的值排除收件者。<br /> </td> 
    <td> <strong>出生日期(@birthDate)不包含在'12/10/1979,12/10/1984'</strong>中。 與上一個範例不同，不會傳回這些日期內出生的收件者。<br /> </td> 
   </tr> 
  </tbody> 
@@ -316,7 +316,7 @@ ht-degree: 34%
 
 應用以下步驟：
 
-1. 在&#x200B;**[!UICONTROL Add]**&#x200B;視窗中按一下&#x200B;**[!UICONTROL Data to extract]**。 在&#x200B;**[!UICONTROL Formula type]**&#x200B;視窗中，選取公式型別以輸入運算式。
+1. 在&#x200B;**[!UICONTROL Data to extract]**&#x200B;視窗中按一下&#x200B;**[!UICONTROL Add]**。 在&#x200B;**[!UICONTROL Formula type]**&#x200B;視窗中，選取公式型別以輸入運算式。
 
    有數種公式可供使用： **[!UICONTROL Field only]**、**[!UICONTROL Aggregate]**、**[!UICONTROL Expression]**。
 
@@ -333,13 +333,13 @@ ht-degree: 34%
 ![](assets/query_editor_nveau_05.png)
 
 1. **[!UICONTROL Field only]**&#x200B;可讓您返回&#x200B;**[!UICONTROL Field to select]**&#x200B;視窗。
-1. **[!UICONTROL Aggregate (Process on an aggregate function)]**。 以下是彙總使用的一些範例：
+1. **[!UICONTROL Aggregate (Process on an aggregate function)]**. 以下是彙總使用的一些範例：
 
    * **[!UICONTROL Count]**&#x200B;可讓您執行主索引鍵計數。
    * **[!UICONTROL Sum]**&#x200B;可讓您加總客戶在一年以上的所有購買。
    * **[!UICONTROL Maximum value]**&#x200B;可讓您找出購買最多「n」個產品的客戶。
    * **[!UICONTROL Minimum value]**&#x200B;可讓您排序客戶，並尋找最近訂閱了優惠方案的客戶。
-   * **[!UICONTROL Average]**。 此函式可讓您計算收件者的平均年齡。
+   * **[!UICONTROL Average]**. 此函式可讓您計算收件者的平均年齡。
 
      **[!UICONTROL Distinct]**&#x200B;方塊可讓您復原資料行的唯一和非零值。 例如，您可以復原所有收件者的追蹤記錄，而這些追蹤記錄會變更為值1，因為它們都與相同的收件者有關。
 

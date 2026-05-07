@@ -8,14 +8,14 @@ hide: true
 exl-id: b500bde4-6c81-4420-b1bf-e8eff1c53877
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '104'
-ht-degree: 50%
+source-wordcount: '113'
+ht-degree: 53%
 
 ---
 
 # 關於行銷活動態樣{#about-campaign-typologies}
 
-Campaign Optimization是Adobe Campaign模組，可讓您控制、篩選及監控傳送的傳送。 為了避免行銷活動之間發生衝突，Adobe Campaign 可以套用特定限制規則來測試各種組合。這樣可確保傳送的訊息符合客戶和公司通訊政策的需求及期望。
+Campaign Optimization是Adobe Campaign模組，可讓您控制、篩選及監控傳送的傳送。 為了避免行銷活動之間發生衝突，Adobe Campaign 可以套用特定限制規則來測試各種組合。 這樣可確保傳送的訊息符合客戶和公司通訊政策的需求及期望。
 
 ![](assets/do-not-localize/how-to-video.png) [在影片中探索此功能](#typologies-video)
 

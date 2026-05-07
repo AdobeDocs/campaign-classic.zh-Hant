@@ -6,8 +6,8 @@ hide: true
 exl-id: a6b10585-7bf9-4fef-b886-db081b6d3acc
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '570'
-ht-degree: 4%
+source-wordcount: '590'
+ht-degree: 12%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 4%
 
 ## 關於此使用實例 {#about-this-use-case}
 
-此使用案例說明如何在&#x200B;**[!UICONTROL Merge]**&#x200B;活動中使用&#x200B;**[!UICONTROL Deduplication]**&#x200B;功能。
+此使用案例說明如何在&#x200B;**[!UICONTROL Deduplication]**&#x200B;活動中使用&#x200B;**[!UICONTROL Merge]**&#x200B;功能。
 
 如需有關此功能的詳細資訊，請參閱[此章節](deduplication.md#merging-fields-into-single-record)。
 

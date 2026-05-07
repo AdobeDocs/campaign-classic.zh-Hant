@@ -8,8 +8,8 @@ hide: true
 exl-id: 6e37bc14-b1a9-42af-8c28-ae4b5bcaa055
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '275'
-ht-degree: 29%
+source-wordcount: '277'
+ht-degree: 35%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 29%
 >
 >清單中提供的管道取決於您的授權合約。
 
-您可以建立新的傳遞範本，以預先設定特定引數以符合您的需求。 如需範本的詳細資訊，請參閱[本節](about-templates.md)。
+您可以建立新的傳遞範本，以便預先設定特定參數來符合您的需求。 如需範本的詳細資訊，請參閱[本節](about-templates.md)。
 
 ## 識別傳遞 {#identifying-the-delivery}
 

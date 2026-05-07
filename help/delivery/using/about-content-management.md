@@ -8,7 +8,7 @@ role: User
 exl-id: 87434cc2-1636-4558-ab60-255b7f873c0c
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '273'
 ht-degree: 2%
 
 ---
@@ -35,7 +35,7 @@ Adobe Campaign Content Manager模組是特定的Campaign Classic [內建套件](
 
 * 透過輸入介面編輯結構化訊息，
 * 分離資料內容及其呈現方式（以XML格式產生），
-* 根據樣式表以多種格式（html、txt、XML等）產生檔案，以確保符合圖形字元、
+* 以多種格式（html、txt、XML等）產生檔案 以樣式表為基礎，以確保符合圖形字元，
 * 外部內容流程的復原與自動彙總、
 * Collaboration具有資料驗證和檢查的工作流程。
 

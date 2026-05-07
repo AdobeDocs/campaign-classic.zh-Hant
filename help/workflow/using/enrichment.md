@@ -7,7 +7,7 @@ hide: true
 exl-id: 4c7bc0f3-5877-47dc-bd72-dc94fb7bd479
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1297'
+source-wordcount: '1301'
 ht-degree: 1%
 
 ---
@@ -41,13 +41,13 @@ ht-degree: 1%
 
 * **[!UICONTROL Define a collection]**：可讓您定義表格之間具有1-N基數的連結。
 * **[!UICONTROL Define a link whose target is still available]**：可讓您定義表格之間具有1-1基數的連結。 連線條件必須由目標表格中的單一記錄定義。
-* **[!UICONTROL Define a link whose target does not necessarily exist in the base]**：可讓您定義表格之間具有0-1基數的連結。 連線條件必須由目標表格中的0或1 （最大）記錄定義。
+* **[!UICONTROL Define a link whose target does not necessarily exist in the base]**：可讓您定義表格之間具有0-1基數的連結。 連線條件必須由0或1 （最大值）定義 記錄。
 
-  此選項設定於&#x200B;**[!UICONTROL Simple Join]**&#x200B;索引標籤中，可透過&#x200B;**[!UICONTROL Edit additional data]**&#x200B;活動的&#x200B;**[!UICONTROL Enrichment]**&#x200B;連結存取。
+  此選項設定於&#x200B;**[!UICONTROL Simple Join]**&#x200B;索引標籤中，可透過&#x200B;**[!UICONTROL Enrichment]**&#x200B;活動的&#x200B;**[!UICONTROL Edit additional data]**&#x200B;連結存取。
 
 * **[!UICONTROL Define a link by searching for a reference among several options]**：此型別的連結會定義對唯一記錄的調解。 Adobe Campaign會在目標表格中新增外部索引鍵，以儲存唯一記錄的參考，藉此建立指向目標表格的連結。
 
-  此選項設定於&#x200B;**[!UICONTROL Reconciliation and deduplication]**&#x200B;索引標籤中，可透過&#x200B;**[!UICONTROL Edit additional data]**&#x200B;活動的&#x200B;**[!UICONTROL Enrichment]**&#x200B;連結存取。
+  此選項設定於&#x200B;**[!UICONTROL Reconciliation and deduplication]**&#x200B;索引標籤中，可透過&#x200B;**[!UICONTROL Enrichment]**&#x200B;活動的&#x200B;**[!UICONTROL Edit additional data]**&#x200B;連結存取。
 
 詳細說明擴充活動在其內容中運作的使用案例，也可在以下章節中取得：
 
@@ -124,7 +124,7 @@ ht-degree: 1%
 
    ![](assets/enrichment_edit_after_file_box.png)
 
-1. 選取&#x200B;**[!UICONTROL Link definition]**&#x200B;選項並按一下&#x200B;**[!UICONTROL Next]**&#x200B;按鈕。 指定要建立的連結型別。 在此範例中，我們想將檔案收件者的國家/地區與資料庫專用表格中可用國家/地區清單中的國家/地區進行調解。 選擇&#x200B;**[!UICONTROL Define a link by searching for a reference among several options]**&#x200B;選項。 在&#x200B;**[!UICONTROL Target schema]**&#x200B;欄位中選取國家/地區表格。
+1. 選取&#x200B;**[!UICONTROL Link definition]**&#x200B;選項並按一下&#x200B;**[!UICONTROL Next]**&#x200B;按鈕。 指定要建立的連結型別。 在此範例中，我們想將檔案收件者的國家/地區與資料庫專用表格中可用國家/地區清單中的國家/地區進行調解。 選取 **[!UICONTROL Define a link by searching for a reference among several options]** 選項。 在&#x200B;**[!UICONTROL Target schema]**&#x200B;欄位中選取國家/地區表格。
 
    ![](assets/enrichment_add_a_link_select_option4.png)
 
@@ -189,7 +189,7 @@ ht-degree: 1%
 
 操作步驟：
 
-1. 在活動的&#x200B;**[!UICONTROL Add data]**&#x200B;索引標籤中選取&#x200B;**[!UICONTROL Enrichment]**。
+1. 在活動的&#x200B;**[!UICONTROL Enrichment]**&#x200B;索引標籤中選取&#x200B;**[!UICONTROL Add data]**。
 1. 在您選擇要新增的資料型別視窗中，選取&#x200B;**[!UICONTROL A link]**。
 1. 選取您要建立的連結型別及其目標。 在此案例中，目標是選件結構描述。
 

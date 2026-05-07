@@ -10,8 +10,8 @@ topic-tags: additional-configurations
 exl-id: 0533cd50-3aa4-4160-9152-e916e149e77f
 source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
 workflow-type: tm+mt
-source-wordcount: '1045'
-ht-degree: 0%
+source-wordcount: '1070'
+ht-degree: 1%
 
 ---
 
@@ -118,15 +118,15 @@ LDAP設定會在部署精靈中執行。 必須在第一個組態步驟中選取
 
   ![](assets/s_ncs_install_deployment_wiz_ldap_03.png)
 
-   1. **[!UICONTROL Recursive (default mode)]**。
+   1. **[!UICONTROL Recursive (default mode)]**.
 
       會從指定的層級開始完整搜尋LDAP目錄。
 
-   1. **[!UICONTROL Limited to the base]**。
+   1. **[!UICONTROL Limited to the base]**.
 
       所有屬性都包含在搜尋中。
 
-   1. **[!UICONTROL Limited to the first sub-level of the base]**。
+   1. **[!UICONTROL Limited to the first sub-level of the base]**.
 
       對目錄的所有屬性執行搜尋，並從屬性的第一層級開始。
 
@@ -182,4 +182,4 @@ LDAP設定會在部署精靈中執行。 必須在第一個組態步驟中選取
 
    無論透過Adobe Campaign還是LDAP，群組都不會即時建立。 兩者都需要在Adobe Campaign和LDAP目錄中個別建立。
 
-   LDAP目錄中的群組名稱必須與Adobe Campaign群組的名稱一致。 其關聯遮罩定義於部署精靈的最後設定階段：Adobe Campaign_(。&#42;)，例如。
+   LDAP目錄中的群組名稱必須與Adobe Campaign群組的名稱一致。 它們的關聯遮罩定義於部署精靈的最後設定階段：例如Adobe Campaign_(.&#42;)。

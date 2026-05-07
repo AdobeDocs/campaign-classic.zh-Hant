@@ -1,18 +1,18 @@
 ---
 product: campaign
-title: 傳遞效能與疑難排解
+title: 傳遞效能及疑難排解
 description: 瞭解如何最佳化傳遞效能和疑難排解Campaign Classic v7中的問題
 feature: Monitoring, Deliverability, Troubleshooting
 role: User, Developer
 exl-id: cc793d7b-0a26-4a75-97ed-d79c87d9b3b8
 source-git-commit: 2ebae2b84741bf26dd44c872702dbf3b0ebfc453
 workflow-type: tm+mt
-source-wordcount: '665'
-ht-degree: 0%
+source-wordcount: '791'
+ht-degree: 2%
 
 ---
 
-# 傳遞效能與疑難排解 {#delivery-performance-troubleshooting}
+# 傳遞效能及疑難排解 {#delivery-performance-troubleshooting}
 
 >[!NOTE]
 >

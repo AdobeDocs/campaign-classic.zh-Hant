@@ -9,8 +9,8 @@ level: Beginner
 exl-id: 580282ce-ee30-422a-8724-9c328637cc39
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1237'
-ht-degree: 2%
+source-wordcount: '1274'
+ht-degree: 5%
 
 ---
 
@@ -56,7 +56,7 @@ ht-degree: 2%
 
 1. 指定使用者的&#x200B;**[!UICONTROL Identification parameters]**：其登入、密碼和名稱。 操作員將使用登入和密碼來登入Adobe Campaign。 使用者登入後，即可透過&#x200B;**[!UICONTROL Tools > Change password]**&#x200B;功能表變更密碼。 操作員的電子郵件至關重要，因為它可讓操作員接收通知，例如在處理核準時。
 
-   此區段也可讓您將運運算元連結至組織實體。 如需詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/distributed-marketing/about-distributed-marketing.html?lang=zh-Hant){target="_blank"}。
+   此區段也可讓您將運運算元連結至組織實體。 有關更多資訊，請參閱[Campaign v8 文件](https://experienceleague.adobe.com/docs/campaign/automation/distributed-marketing/about-distributed-marketing.html?lang=zh-Hant){target="_blank"}。
 
 1. 在&#x200B;**[!UICONTROL Operator access rights]**&#x200B;區段中選取授與運運算元的許可權。
 
@@ -160,7 +160,7 @@ ht-degree: 2%
 
 ## 預設運運算元 {#default-operators}
 
-Adobe Campaign會使用具有預設設定之設定檔的技術操作員：管理員（「管理員」）、帳單（「帳單」）、監控、Web應用程式代理程式(「webapp」)等。 其中有部分取決於平台上安裝的應用程式和選項：例如，「中央」和「本機」運運算元，只有在安裝了「分散式行銷」選項時才會顯示。
+Adobe Campaign會使用具有預設設定之設定檔的技術操作員：管理員（「管理員」）、帳單（「帳單」）、監控、Web應用程式代理程式(「webapp」)等。其中有部分取決於平台上安裝的應用程式和選項：例如，「中央」和「本機」運運算元，只有在安裝了「分散式行銷」選項時才會顯示。
 
 >[!IMPORTANT]
 >

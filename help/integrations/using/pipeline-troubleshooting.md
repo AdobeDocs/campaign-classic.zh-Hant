@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: 管線疑難排解
-description: 管線疑難排解
+title: 管道疑難排解
+description: 管道疑難排解
 feature: Triggers
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 audience: integrations
@@ -9,16 +9,16 @@ content-type: reference
 exl-id: 76645a6f-9536-49d6-b12a-fdd6113d31fa
 source-git-commit: 8de62db2499449fc9966b6464862748e2514a774
 workflow-type: tm+mt
-source-wordcount: '713'
-ht-degree: 0%
+source-wordcount: '722'
+ht-degree: 1%
 
 ---
 
-# 管線疑難排解 {#pipeline-troubleshooting}
+# 管道疑難排解 {#pipeline-troubleshooting}
 
 
 
-**管線化失敗，錯誤為「沒有工作對應到遮罩管線化@&lt;執行個體>」**
+**管線化失敗，錯誤為「沒有工作對應到遮色片pipelined@&lt; instance >」**
 
 您的Adobe Campaign Classic版本不支援管道。
 
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 1. 檢查組織ID (ImsOrgId)是否已在serverConf.xml中設定。
 1. 檢查執行個體設定檔案中的空白組織ID能否覆寫預設組織ID。 若是如此，請將其移除。
-1. 檢查組織ID是否正確。 若要尋找您的組織ID，請參閱[此頁面](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-hant){_blank}
+1. 檢查組織ID是否正確。 若要尋找您的組織ID，請參閱[此頁面](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-Hant){_blank}
 
 **管線失敗，因為「金鑰無效」**
 
@@ -69,7 +69,7 @@ ht-degree: 0%
 2021-05-31T08:43:09.160Z        66462   66501   1       error   log     Error while authenticating: '{"error":"This client: df73c224e5-triggers-test is no longer allowed to get access token."}' (iRc=16384)
 ```
 
-此錯誤訊息表示驗證是使用舊版Omniture基底OAuth進行設定。 請參閱[為Adobe Experience Cloud Triggers設定Adobe I/O](../../integrations/using/about-triggers.md#implement)檔案以升級您的驗證。
+此錯誤訊息表示驗證是使用舊版Omniture基底OAuth進行設定。 請參閱[為Adobe Experience Cloud觸發器設定Adobe I/O](../../integrations/using/about-triggers.md#implement)檔案，以升級您的驗證。
 
 **未擷取任何觸發程式**
 
@@ -102,8 +102,8 @@ ht-degree: 0%
 1. 檢查[!DNL pipelined]狀態頁面以取得佇列大小。 如果佇列大小很大，請改善JS的效能。
 1. 由於延遲似乎會隨著音量增加，請使用較少的訊息在Analytics上設定觸發程式。
 
-**正在將階段執行個體從舊版驗證升級為AdobeIO驗證**
+**正在將階段執行個體從舊版驗證升級為Adobe IO驗證**
 
-變更階段執行個體上的整合驗證不會影響生產執行個體的設定。 您可以選擇升級中繼執行個體，然後更新驗證以AdobeIO，並在中繼執行個體上測試您的觸發程式。
+變更階段執行個體上的整合驗證不會影響生產執行個體的設定。 您可以選擇升級您的中繼執行個體，然後將驗證更新為Adobe IO，並在您的中繼執行個體上測試您的觸發器。
 
 您的生產執行個體將繼續使用舊版驗證，此變更不會影響執行個體。

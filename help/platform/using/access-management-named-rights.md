@@ -8,8 +8,8 @@ level: Beginner
 exl-id: 07470a91-d8d2-4c41-9555-05522c8068f0
 source-git-commit: 02ecc0e6bb3bd361f512baeefc9e0f2271063387
 workflow-type: tm+mt
-source-wordcount: '606'
-ht-degree: 3%
+source-wordcount: '652'
+ht-degree: 4%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 3%
 
   >[!IMPORTANT]
   >
-  >**移轉至IMS後：**&#x200B;一旦移轉至Adobe Identity Management系統(IMS)，任何名稱中包含「管理員」字樣的產品設定檔或命名許可權（例如「管理員」、「管理員」、「管理員」等）都會自動授與Campaign「控制面板」的存取權。 建議您避免在已命名的許可權或角色名稱中使用「管理員」，除非您想讓這些使用者擁有控制面板存取權。 深入瞭解[IMS移轉](../../technotes/using/migrate-users-to-ims.md)和[管理控制面板存取](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hant){target="_blank"}。
+  >**移轉至IMS後：**&#x200B;移轉至Adobe Identity Management系統(IMS)後，任何名稱中包含「管理員」字樣的產品設定檔或命名許可權（例如「管理員」、「管理員」、「管理員」等） 會自動授與「Campaign控制面板」的存取權。 建議您避免在已命名的許可權或角色名稱中使用「管理員」，除非您想讓這些使用者擁有控制面板存取權。 深入瞭解[IMS移轉](../../technotes/using/migrate-users-to-ims.md)和[管理控制面板存取](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hant){target="_blank"}。
 
 * **[!UICONTROL APPROVAL ADMINISTRATION]**：您可以在工作流程與傳遞中設定多個核准步驟，以確保指派的運運算元或群組已核准目前狀態。 具有&#x200B;**[!UICONTROL APPROVAL ADMINISTRATION]**&#x200B;許可權的使用者可以設定核准步驟，也可以指派應核准這些步驟的運運算元或運運算元群組。
 

@@ -1,17 +1,17 @@
 ---
 product: campaign
 title: 在Linux安裝Campaign的必要條件
-description: 在 Linux 中安裝Campaign的先決條件
+description: 在Linux安裝Campaign的必要條件
 feature: Installation, Instance Settings
-badge-v7-prem: label="僅限內部部署/混合部署" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="僅適用於內部部署和混合部署"
+badge-v7-prem: label="僅限內部部署/混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="僅適用於內部部署和混合部署"
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 exl-id: acbd2873-7b1c-4d81-bc62-cb1246c330af
 source-git-commit: f032ed3bdc0b402c8281bc34e6cb29f3c575aaf9
 workflow-type: tm+mt
-source-wordcount: '829'
-ht-degree: 0%
+source-wordcount: '854'
+ht-degree: 2%
 
 ---
 
@@ -33,13 +33,13 @@ ht-degree: 0%
 * 字型，請參考[MTA統計資料的字型](#fonts-for-mta-statistics)以及日文執行個體的[字型](#fonts-for-japanese-instances)。
 
 
-### 圖書館 {#libraries}
+### 資料庫 {#libraries}
 
-要在 Linux 中安裝 Adobe Campaign，請確保您具有所需的資料庫。
+若要在Linux中安裝Adobe Campaign，請確定您擁有必要的程式庫。
 
-* 庫 C 必須能夠支援 TLS（線程本地存儲）模式。 此模式在大多數情況下處於活動狀態，但某些內核已禁用 Xen 支援。
+* 程式庫C必須能夠支援TLS （執行緒本機儲存）模式。 除了某些已停用Xen支援的核心以外，此模式在大多數情況下是作用中的。
 
-  例如，要檢查這一點，您可以使用 **uname -a | grep xen** 命令。
+  若要檢查此專案，您可以使用&#x200B;**uname -a | grep xen**&#x200B;命令範例。
 
   如果命令未傳回空白行，則表示設定正確。
 
@@ -51,7 +51,7 @@ ht-degree: 0%
 
 ### SELinux {#selinux}
 
-使用時，必須正確配置 SELinux 模組。
+使用時，必須正確設定SELinux模組。
 
 要執行此操作，請以root身份登入並輸入以下命令：
 
@@ -95,15 +95,15 @@ dnf install xorg-x11-fonts-misc xorg-x11-fonts-75dpi dejavu-lgc-sans-fonts  deja
 
 ### 日文執行個體的字型 {#fonts-for-japanese-instances}
 
-日文實例必須字型特定字元才能將報表匯出為 PDF 格式。
+日文執行個體需要特定字元的字型，才能將報表匯出為PDF格式。
 
-在 Debian 中，添加命令：
+在Debian中新增命令：
 
 ```
 apt install fonts-ipafont
 ```
 
-對於 RHEL，請添加以下命令：
+對於RHEL，請新增下列指令：
 
 ```
 dnf install epel-release # if required
@@ -120,23 +120,23 @@ dnf install vlgothic-fonts
    apt-get install libreoffice-writer libreoffice-calc libreoffice-java-common
    ```
 
-1. 安裝以下字體（可選字體，但強烈建議用於日文實例）：
+1. 安裝下列字型（可選用，但強烈建議用於日文執行個體）：
 
    ```
    apt-get install fonts-ipafont
    ```
 
-### 安裝 LibreOffice for CentOS {#installing-libreoffice-for-centos}
+### 安裝LibreOffice for CentOS {#installing-libreoffice-for-centos}
 
-CentOS 需要以下設定：
+CentOS需要下列設定：
 
 ```
 yum install libreoffice-headless libreoffice-writer libreoffice-calc
 ```
 
-## 資料庫訪問層 {#database-access-layers}
+## 資料庫存取層 {#database-access-layers}
 
-您正在使用的資料庫引擎的訪問層必須安裝在您的伺服器上，並且可以通過Adobe Campaign 帳戶進行訪問。 版本和安裝模式可能會因使用的資料庫引擎而有所不同。
+您所使用的資料庫引擎存取層必須安裝在伺服器上，並可透過Adobe Campaign帳戶存取。 版本和安裝模式可能會因使用的資料庫引擎而有所不同。
 
 支援的試驗版本在[相容性矩陣](../../rn/using/compatibility-matrix.md)中詳細說明。
 
@@ -150,29 +150,29 @@ Adobe Campaign支援9.6版之PostgreSQL使用者端程式庫的所有版本： *
 
 ### Oracle {#oracle}
 
-檢索 64 位 Debian 的 資料庫 版本，即：libclntsh.so、libclntsh.so.19.1 **、libclntsh.so.18.1**、**libclntsh.so.12.1**、**libclntsh.so.11.1** 或 **libclntsh.so.10.1。**&#x200B;**&#x200B;**&#x200B;**&#x200B;**
+擷取64位元Debian的資料庫版本，例如： **libclntsh.so**、**libclntsh.so.19.1**、**libclntsh.so.18.1**、**libclntsh.so.12.1**、**libclntsh.so.11.1**&#x200B;或&#x200B;**libclntsh.so.10.1**。
 
-您可以從 Oracle 技術網路獲取 Linux RPM 軟體包。
+您可以從Oracle技術網路取得Linux RPM套件。
 
 >[!NOTE]
 >
->如果已安裝 Oracle 用戶端，但全域環境（對於執行個體：/etc/設定檔）未正確配置，則可以將缺少的信息添加到 nl6/客戶.sh 腳本中 **有關詳細信息，請參閱[環境變數](../../installation/using/installing-packages-with-linux.md#environment-variables)。**
+>如果您已安裝Oracle使用者端，但全域環境（例如： /etc/profile）未正確設定，您可以將遺漏的資訊新增至&#x200B;**nl6/customer.sh**&#x200B;指令碼。如需詳細資訊，請參閱[環境變數](../../installation/using/installing-packages-with-linux.md#environment-variables)。
 
-**疑難解答和最佳做法**
+**疑難排解和最佳作法**
 
 在Oracle使用者端或伺服器更新、版本變更或首次安裝執行個體時，可能會出現問題。
 
-如果您在使用者端主控台注意到記錄、工作流程上次處理、下次處理等作業中有非預期的時間延遲（一小時以上），則Oracle使用者端的程式庫和Oracle伺服器之間可能會發生問題。 若要避免這類問題
+如果您在使用者端主控台注意到記錄、工作流程上次處理、下次處理等作業中有非預期的時間延遲（一小時以上），則Oracle使用者端的程式庫與Oracle伺服器之間可能會發生問題。 若要避免這類問題
 
 1. 請確定使用&#x200B;**完整使用者端**。
 
-   在使用 Oracle Instant Client 版本時發現了各種問題。 此外，無法在即時用戶端上更改時區檔。
+   在使用Oracle Instant Client版本時，已經發現各種問題。 此外，無法在即時使用者端上變更時區檔案。
 
-1. 確保&#x200B;**用戶端版本**&#x200B;和&#x200B;**資料庫伺服器版本**&#x200B;**相同**。
+1. 確定&#x200B;**使用者端版本**&#x200B;和&#x200B;**資料庫伺服器版本**&#x200B;為&#x200B;**相同**。
 
-   儘管Oracle有相容性矩陣，並且建議調整使用者端和伺服器版本，但混合使用版本已知會導致問題。
+   儘管Oracle有相容性矩陣，並且建議調整使用者端與伺服器版本，但混合使用版本已知會導致問題。
 
-   同時請檢查ORACLE_HOME值，確定它指向預期的使用者端版本（如果電腦上安裝了多個版本）。
+   同時請檢查ORACLE_HOME值，確定它指向預期的使用者端版本（如果電腦上安裝了數個版本）。
 
 1. 請確定使用者端和伺服器使用相同的&#x200B;**時區檔案**。
 

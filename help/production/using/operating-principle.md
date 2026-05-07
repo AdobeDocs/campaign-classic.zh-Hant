@@ -10,8 +10,8 @@ topic-tags: production-procedures
 exl-id: 1c032ef9-af11-4947-90c6-76cb9434ae85
 source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
 workflow-type: tm+mt
-source-wordcount: '506'
-ht-degree: 2%
+source-wordcount: '530'
+ht-degree: 7%
 
 ---
 
@@ -63,16 +63,16 @@ Adobe Campaign模組分為三種型別：
 | runwf | 工作流程執行個體的執行 |
 | 關機 | 系統完全關機 |
 | 簡訊 | SMS通知處理 |
-| sql | SQL指令碼執行 |
+| sql | SQL 指令碼執行。 |
 | 開始 | 其他開始 |
-| stat | 維護MTA連線統計資料 |
+| stat | 維護 MTA 連接統計資料 |
 | 停止 | 部分系統關機 |
 | submitda | 提交傳遞動作 |
 | syslogd | 記錄及追蹤寫入伺服器 |
 | 追蹤 | 合併和擷取追蹤記錄 |
 | trackinglogd | 追蹤記錄檔寫入和清除伺服器 |
 | 看門狗 | 啟動和監視執行個體 |
-| 網頁 | 應用程式伺服器(HTTP和SOAP) |
+| 網頁 | 應用程式伺服器（HTTP和SOAP） |
 | wfserver | 工作流程伺服器 |
 
 >[!IMPORTANT]
@@ -81,7 +81,7 @@ Adobe Campaign模組分為三種型別：
 
 使用下列命令顯示模組使用方式及其引數的語法： **nlserver `[module]` -？**
 
-例如：
+範例：
 
 **nlserver設定 — ？**
 

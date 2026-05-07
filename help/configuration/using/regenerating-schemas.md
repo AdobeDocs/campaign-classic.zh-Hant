@@ -26,6 +26,6 @@ ht-degree: 2%
 >
 >如果您需要強制重新產生所有結構描述，例如解決反向連結中的某些相依性問題，您可以從Adobe Campaign應用程式伺服器啟動下列命令：
 >
-> `nlserver config -postupgrade -instance:`&lt;執行個體名稱>` -force`
+> `nlserver config -postupgrade -instance:`&lt;instance_name>` -force`
 >
 >接著，您必須重新啟動Adobe Campaign應用程式伺服器，並中斷使用者端主控台的連線/重新連線。

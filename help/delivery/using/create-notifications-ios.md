@@ -8,7 +8,7 @@ hide: true
 exl-id: 4520504a-0d9f-4ea7-a5a8-0c07948af4f0
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '980'
+source-wordcount: '1000'
 ht-degree: 8%
 
 ---
@@ -43,13 +43,13 @@ ht-degree: 8%
 
    ![](assets/nmac_delivery_ios_3.png)
 
-1. 在&#x200B;**[!UICONTROL Notification type]**&#x200B;或&#x200B;**[!UICONTROL General notification (Alert, Sound, Badge)]**&#x200B;之間選擇您的&#x200B;**[!UICONTROL Silent notification]**。
+1. 在&#x200B;**[!UICONTROL General notification (Alert, Sound, Badge)]**&#x200B;或&#x200B;**[!UICONTROL Silent notification]**&#x200B;之間選擇您的&#x200B;**[!UICONTROL Notification type]**。
 
    ![](assets/nmac_delivery_ios_4.png)
 
    >[!NOTE]
    >
-   >**無訊息推播**&#x200B;模式允許將「無訊息」通知傳送至行動應用程式。 使用者不會發現有通知傳到。而是直接傳輸到應用程式。
+   >**無訊息推播**&#x200B;模式允許將「無訊息」通知傳送至行動應用程式。 使用者不會發現有通知傳到。 而是直接傳輸到應用程式。
 
 1. 在&#x200B;**[!UICONTROL Title]**&#x200B;欄位中，輸入您要顯示在通知中心可用通知清單中的標題標籤。
 
@@ -101,7 +101,7 @@ ht-degree: 8%
 
    * **[!UICONTROL Launch image]**：要顯示的啟動影像檔名稱。 如果使用者選擇啟動您的應用程式，則會顯示選取的影像，而非您應用程式的啟動畫面。
 
-   * **[!UICONTROL Interruption level]**：
+   * **[!UICONTROL Interruption level]**:
 
       * **[!UICONTROL Active]**：依預設設定，系統會立即顯示通知、開啟熒幕，並可播放音效。 通知不會突破焦點模式。
 
@@ -145,7 +145,7 @@ ht-degree: 8%
 
    ![](assets/nmac_android_3.png)
 
-1. 在&#x200B;**[!UICONTROL Deliver on iOS (ios)]**&#x200B;下拉式清單中選取&#x200B;**[!UICONTROL Delivery template]**。 新增&#x200B;**[!UICONTROL Label]**&#x200B;至您的傳遞。
+1. 在&#x200B;**[!UICONTROL Delivery template]**&#x200B;下拉式清單中選取&#x200B;**[!UICONTROL Deliver on iOS (ios)]**。 新增&#x200B;**[!UICONTROL Label]**&#x200B;至您的傳遞。
 
 1. 按一下&#x200B;**[!UICONTROL To]**&#x200B;以定義目標母體。 依預設，會套用&#x200B;**[!UICONTROL Subscriber application]**&#x200B;目標對應。 按一下&#x200B;**[!UICONTROL Add]**&#x200B;以選取先前建立的服務。
 

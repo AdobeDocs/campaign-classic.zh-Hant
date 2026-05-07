@@ -48,7 +48,7 @@ ht-degree: 3%
 1. 在&#x200B;**[!UICONTROL Data filtering]**&#x200B;視窗中，調整您的搜尋：選擇&#x200B;**[!UICONTROL Filtering conditions]**&#x200B;並按一下&#x200B;**[!UICONTROL Next]**。
 1. **[!UICONTROL Target element]**&#x200B;視窗可讓您輸入篩選設定。
 
-   定義下列篩選條件：電子郵件網域等於「orange.co.uk」的收件者。 若要這麼做，請在&#x200B;**欄中選擇**&#x200B;電子郵件網域(@email)**[!UICONTROL Expression]**，在&#x200B;**欄中選擇**&#x200B;等於&#x200B;**[!UICONTROL Operator]**，並在&#x200B;**[!UICONTROL Value]**&#x200B;欄中輸入&quot;orange.co.uk&quot;。
+   定義下列篩選條件：電子郵件網域等於「orange.co.uk」的收件者。 若要這麼做，請在&#x200B;**[!UICONTROL Expression]**&#x200B;欄中選擇&#x200B;**電子郵件網域(@email)**，在&#x200B;**[!UICONTROL Operator]**&#x200B;欄中選擇&#x200B;**等於**，並在&#x200B;**[!UICONTROL Value]**&#x200B;欄中輸入&quot;orange.co.uk&quot;。
 
    ![](assets/query_editor_05.png)
 
@@ -62,7 +62,7 @@ ht-degree: 3%
 
 1. 我們現在將變更查詢，以尋找不在倫敦的聯絡人。
 
-   在&#x200B;**[!UICONTROL City (location/@city)]**&#x200B;欄中選取&#x200B;**[!UICONTROL Expression]**，**[!UICONTROL different from]**&#x200B;作為運運算元，並在&#x200B;**[!UICONTROL London]**&#x200B;欄中輸入&#x200B;**[!UICONTROL Value]**。
+   在&#x200B;**[!UICONTROL Expression]**&#x200B;欄中選取&#x200B;**[!UICONTROL City (location/@city)]**，**[!UICONTROL different from]**&#x200B;作為運運算元，並在&#x200B;**[!UICONTROL Value]**&#x200B;欄中輸入&#x200B;**[!UICONTROL London]**。
 
    ![](assets/query_editor_08.png)
 

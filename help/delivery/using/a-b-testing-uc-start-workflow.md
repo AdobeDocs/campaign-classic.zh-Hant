@@ -8,7 +8,7 @@ role: User
 exl-id: 9528b67a-8ba7-45d6-a2c0-06ac117d5324
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '96'
+source-wordcount: '97'
 ht-degree: 5%
 
 ---
@@ -31,4 +31,4 @@ ht-degree: 5%
 
 1. 決定第三次傳送的內容後，核准目標和內容。
 
-您現在可以分析結果。 [了解更多](a-b-testing-uc-analyzing.md)。
+您現在可以分析結果。 [了解更多資訊](a-b-testing-uc-analyzing.md)。

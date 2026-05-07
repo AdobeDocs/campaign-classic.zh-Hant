@@ -9,7 +9,7 @@ topic-tags: delivering-an-offer
 exl-id: 33d318f3-1eb4-4c74-8c20-8b9f0442c7c3
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1044'
+source-wordcount: '1077'
 ht-degree: 1%
 
 ---
@@ -99,7 +99,7 @@ ht-degree: 1%
 
 要執行此操作，請使用下列程式：
 
-1. 在活動的&#x200B;**[!UICONTROL Add data]**&#x200B;索引標籤中選取&#x200B;**[!UICONTROL Enrichment]**。
+1. 在活動的&#x200B;**[!UICONTROL Enrichment]**&#x200B;索引標籤中選取&#x200B;**[!UICONTROL Add data]**。
 1. 在您選擇要新增的資料型別視窗中，選取&#x200B;**[!UICONTROL A link]**。
 1. 選取您要建立的連結型別及其目標。 在此案例中，目標是選件結構描述。
 

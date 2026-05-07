@@ -7,8 +7,8 @@ role: User, Developer
 exl-id: 44ecc8c6-6584-43eb-96b4-7d8463053123
 source-git-commit: 2ebae2b84741bf26dd44c872702dbf3b0ebfc453
 workflow-type: tm+mt
-source-wordcount: '484'
-ht-degree: 1%
+source-wordcount: '552'
+ht-degree: 2%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 1%
 >
 >此頁面記錄混合式部署和內部部署的&#x200B;**Campaign Classic v7專屬進階自訂**。
 
-若要在Campaign UI中監視傳遞，請參閱Campaign UI檔案[中的](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}Campaign v8監視傳遞。
+若要在Campaign UI中監視傳遞，請參閱Campaign UI檔案[&#128279;](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}中的Campaign v8監視傳遞。
 
 ## 自訂傳遞記錄 {#use-case}
 

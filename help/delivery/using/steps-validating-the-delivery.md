@@ -8,8 +8,8 @@ hide: true
 exl-id: c2f4d8d0-f0fe-4d1a-92fd-91edaf9729f3
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1653'
-ht-degree: 10%
+source-wordcount: '1658'
+ht-degree: 9%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 10%
 
    分析期間套用的規則會顯示在[此區段](#validation-process-with-typologies)中。 可用的驗證模式在[變更核准模式](#changing-the-approval-mode)區段中詳細說明。
 
-1. **傳送校樣**：此步驟可讓您控制內容、URL、個人化等。 深入瞭解[傳送校樣](steps-validating-the-delivery.md#sending-a-proof)和[定義特定校樣目標](steps-defining-the-target-population.md#defining-a-specific-proof-target)。
+1. **傳送校樣**：此步驟可讓您控制內容、URL、個人化等。深入瞭解[傳送校樣](steps-validating-the-delivery.md#sending-a-proof)和[定義特定校樣目標](steps-defining-the-target-population.md#defining-a-specific-proof-target)。
 
 >[!IMPORTANT]
 >
@@ -62,7 +62,7 @@ ht-degree: 10%
 
 1. 等候分析完成。
 
-   分析完成後，視窗的上半部會指出傳遞準備是否已完成或是否發生任何錯誤。 會列出所有驗證步驟、警告和錯誤。彩色圖示顯示訊息類型：
+   分析完成後，視窗的上半部會指出傳遞準備是否已完成或是否發生任何錯誤。 會列出所有驗證步驟、警告和錯誤。 彩色圖示顯示訊息類型：
    * 藍色圖示表示資訊訊息。
    * 黃色圖示表示非嚴重的處理錯誤。
    * 紅色圖示表示會阻止傳送傳遞的嚴重錯誤。
@@ -106,8 +106,8 @@ ht-degree: 10%
 目前，此選項只有在符合下列條件時才可用：
 
 * 傳遞必須是電子郵件。 目前不支援其他管道。
-* 您不得使用中間來源或外部路由，只能使用大量傳遞路由型別。 您可以檢查&#x200B;**[!UICONTROL General]**&#x200B;之&#x200B;**[!UICONTROL Delivery properties]**&#x200B;索引標籤中使用的路由。
-* 您無法鎖定來自外部檔案的母體。 若為單一傳遞，請從&#x200B;**[!UICONTROL To]**&#x200B;按一下&#x200B;**[!UICONTROL Email parameters]**&#x200B;連結，並檢查是否已選取&#x200B;**[!UICONTROL Defined in the database]**&#x200B;選項。 針對工作流程中使用的傳遞，檢查收件者在&#x200B;**[!UICONTROL Specified by the inbound event(s)]**&#x200B;索引標籤中是否為&#x200B;**[!UICONTROL Delivery]**。
+* 您不得使用中間來源或外部路由，只能使用大量傳遞路由型別。 您可以檢查&#x200B;**[!UICONTROL Delivery properties]**&#x200B;之&#x200B;**[!UICONTROL General]**&#x200B;索引標籤中使用的路由。
+* 您無法鎖定來自外部檔案的母體。 若為單一傳遞，請從&#x200B;**[!UICONTROL Email parameters]**&#x200B;按一下&#x200B;**[!UICONTROL To]**&#x200B;連結，並檢查是否已選取&#x200B;**[!UICONTROL Defined in the database]**&#x200B;選項。 針對工作流程中使用的傳遞，檢查收件者在&#x200B;**[!UICONTROL Delivery]**&#x200B;索引標籤中是否為&#x200B;**[!UICONTROL Specified by the inbound event(s)]**。
 * 您必須使用PostgreSQL資料庫。
 
 ### 設定分析優先順序 {#analysis-priority-}
@@ -128,7 +128,7 @@ ht-degree: 10%
 
 ## 傳送校樣 {#sending-a-proof}
 
-為了偵測訊息設定中可能出現的錯誤，Adobe強烈建議您設定傳遞驗證週期。 透過傳送校樣給測試收件人，以確保內容在必要時經常獲得核准。每次進行變更時，都應發送校樣，以核准內容。
+為了偵測訊息設定中可能出現的錯誤，Adobe強烈建議您設定傳遞驗證週期。 透過傳送校樣給測試收件人，以確保內容在必要時經常獲得核准。 每次進行變更時，都應發送校樣，以核准內容。
 
 >[!NOTE]
 >
@@ -194,7 +194,7 @@ ht-degree: 10%
 
 如需型別規則的詳細資訊，請參閱[此頁面](../../campaign-opt/using/about-campaign-typologies.md)。
 
-若要編輯目前的型別，請按一下&#x200B;**[!UICONTROL Edit link]**&#x200B;欄位右側的&#x200B;**[!UICONTROL Typology]**&#x200B;圖示。
+若要編輯目前的型別，請按一下&#x200B;**[!UICONTROL Typology]**&#x200B;欄位右側的&#x200B;**[!UICONTROL Edit link]**&#x200B;圖示。
 
 ![](assets/s_ncs_user_email_del_typo_tab.png)
 

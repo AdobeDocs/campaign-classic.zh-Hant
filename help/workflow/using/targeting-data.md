@@ -7,7 +7,7 @@ hide: true
 exl-id: 74b82019-bdab-4442-84cf-5ad18d0db788
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1919'
+source-wordcount: '1931'
 ht-degree: 4%
 
 ---
@@ -66,7 +66,7 @@ ht-degree: 4%
 
 ### 與其他資料協調 {#reconciliation-with-additional-data}
 
-資料調解階段(**[!UICONTROL Union]**、**[!UICONTROL Intersection]**&#x200B;等 活動)，則可從其他欄中選取要用於資料協調的欄。 要執行此操作，請在選取的欄上設定調解，並指定主集。 然後選取視窗下方欄中的欄，如下列範例所示：
+在資料調解階段（**[!UICONTROL Union]**、**[!UICONTROL Intersection]**&#x200B;等活動）中，您可以從其他資料行中選取要用於資料調解的資料行。 要執行此操作，請在選取的欄上設定調解，並指定主集。 然後選取視窗下方欄中的欄，如下列範例所示：
 
 ![](assets/select-column-and-join.png)
 
@@ -132,7 +132,7 @@ ht-degree: 4%
 
 排除活動可讓您從不同的目標母體中排除目標的元素。 此活動的輸出目標維度將是主要集的輸出目標維度。
 
-必要時，可以操控傳入表格。 事實上，若要從另一個維度排除目標，必須將此目標傳回主要目標的同一目標定位維度。若要這麼做，請按一下&#x200B;**[!UICONTROL Add]**&#x200B;按鈕並指定維度變更條件。
+必要時，可以操控傳入表格。 事實上，若要從另一個維度排除目標，必須將此目標傳回主要目標的同一目標定位維度。 若要這麼做，請按一下&#x200B;**[!UICONTROL Add]**&#x200B;按鈕並指定維度變更條件。
 
 資料調解可透過識別碼、變更軸或連線來執行。 在[使用清單中的資料中可取得範例：讀取清單](../../platform/using/import-export-workflows.md#using-data-from-a-list--read-list)。
 
@@ -158,7 +158,7 @@ ht-degree: 4%
 
    ![](assets/split-subset-config-all-data.png)
 
-   在&#x200B;**[!UICONTROL Split]**&#x200B;本節[中說明如何在](cross-channel-delivery-workflow.md)活動中使用篩選條件將目標分割成不同母體的範例。
+   在[本節](cross-channel-delivery-workflow.md)中說明如何在&#x200B;**[!UICONTROL Split]**&#x200B;活動中使用篩選條件將目標分割成不同母體的範例。
 
    **[!UICONTROL Label]**&#x200B;欄位可讓您為新建立的子集命名，以符合出站轉變。
 
@@ -232,7 +232,7 @@ ht-degree: 4%
 
 ## 資料管理 {#data-management}
 
-在Adobe Campaign中，資料管理結合了一系列活動，提供更有效率、更靈活的工具以解決複雜的鎖定問題。 這可讓您使用合約、訂閱、傳遞再活動等的相關資訊，對與聯絡人的所有通訊進行一致的管理。 「資料管理」可讓您在細分作業期間追蹤資料生命週期，特別是：
+在Adobe Campaign中，資料管理結合了一系列活動，提供更有效率、更靈活的工具以解決複雜的鎖定問題。 這可讓您使用合約、訂閱、傳遞再活動等的相關資訊，對與聯絡人的所有通訊進行一致的管理。「資料管理」可讓您在細分作業期間追蹤資料生命週期，特別是：
 
 * 透過包含未在資料超市中模型化的資料，來簡化及最佳化鎖定過程（建立新的資料表：根據配置，對目標工作流程進行本地擴展）。
 * 保持和傳達緩衝區計算，尤其是在目標建構階段或進行資料庫管理時。

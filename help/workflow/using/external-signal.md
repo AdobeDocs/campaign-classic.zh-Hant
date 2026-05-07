@@ -18,7 +18,7 @@ ht-degree: 2%
 
 **外部訊號**&#x200B;活動可讓您觸發執行工作流程中的一組工作至排程。
 
-「外部訊號」任務啟動時，會無限期暫停或直到指定時段結束。 其轉變由SOAP呼叫&#x200B;**PostEvent(sessionToken， workflowId， activity， transition， parameters， complete)啟動。** **[!UICONTROL complete]**&#x200B;引數允許工作完成，因此不會回應後續的呼叫。
+「外部訊號」任務啟動時，會無限期暫停或直到指定時段結束。 其轉變由SOAP呼叫&#x200B;**PostEvent(sessionToken， workflowId， activity， transition， parameters， complete)啟動。** **[!UICONTROL complete]**&#x200B;引數可讓工作完成，因此不會對後續呼叫做出反應。
 
 如需有關PostEvent函式的進一步資訊，請參閱有關SOAP呼叫的線上檔案。
 

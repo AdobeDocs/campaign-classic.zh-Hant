@@ -43,7 +43,7 @@ ht-degree: 2%
 
    ![](assets/delivery_loadcontent_activityexample.png)
 
-1. 在&#x200B;**[!UICONTROL Script]**&#x200B;活動的&#x200B;**[!UICONTROL Delivery]**&#x200B;索引標籤中，新增下列命令以載入傳遞中匯入檔案的內容：
+1. 在&#x200B;**[!UICONTROL Delivery]**&#x200B;活動的&#x200B;**[!UICONTROL Script]**&#x200B;索引標籤中，新增下列命令以載入傳遞中匯入檔案的內容：
 
    ```
    delivery.content.html.source=loadFile(vars.filename)
@@ -55,4 +55,4 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->有關SFTP伺服器使用方式的最佳實務及疑難排解在本頁面[中有詳細說明](../../platform/using/sftp-server-usage.md)。
+>有關SFTP伺服器使用方式的最佳實務及疑難排解在本頁面[&#128279;](../../platform/using/sftp-server-usage.md)中有詳細說明。

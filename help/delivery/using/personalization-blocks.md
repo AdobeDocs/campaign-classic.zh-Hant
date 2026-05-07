@@ -9,7 +9,7 @@ hide: true
 exl-id: 8d155844-d18a-4165-9886-c3b144109f6e
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '870'
+source-wordcount: '894'
 ht-degree: 3%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 3%
 
 個人化區塊為動態、個人化的區塊，並包含您可插入傳遞中的特定轉譯。 例如，您可以新增標誌、問候語訊息或映象頁面的連結。 請參閱[插入個人化區塊](#inserting-personalization-blocks)。
 
-![](assets/do-not-localize/how-to-video.png)在影片[中探索此功能](#personalization-blocks-video)
+![](assets/do-not-localize/how-to-video.png)在影片[&#128279;](#personalization-blocks-video)中探索此功能
 
 透過Adobe Campaign總管的&#x200B;**[!UICONTROL Resources > Campaign Management > Personalization blocks]**&#x200B;節點存取個人化區塊。 預設提供數個區塊（請參閱[現成可用的個人化區塊](#out-of-the-box-personalization-blocks)）。
 
@@ -63,9 +63,9 @@ HTML原始碼會插入傳遞內容中。 例如，**[!UICONTROL Greetings]**&#x2
 
 為此，我們需要插入以下個人化區塊：
 
-* **[!UICONTROL Link to mirror page]** 。
-* **[!UICONTROL Social network sharing links]** 。
-* **[!UICONTROL Unsubscription link]** 。
+* **[!UICONTROL Link to mirror page]** .
+* **[!UICONTROL Social network sharing links]** .
+* **[!UICONTROL Unsubscription link]** .
 
 >[!NOTE]
 >
@@ -139,7 +139,7 @@ HTML原始碼會插入傳遞內容中。 例如，**[!UICONTROL Greetings]**&#x2
 
      ![](assets/s_ncs_user_personalized_block_b.png)
 
-   * 輸入個人化區塊的內容（在HTML、文字、JavaScript等），然後按一下&#x200B;**[!UICONTROL Save]**。
+   * 輸入內容（在HTML、文字、JavaScript等） 個人化區塊的「 」，然後按一下&#x200B;**[!UICONTROL Save]**。
 
 ## 教學課程影片 {#personalization-blocks-video}
 

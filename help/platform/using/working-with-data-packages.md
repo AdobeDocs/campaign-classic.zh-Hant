@@ -10,8 +10,8 @@ topic-tags: administration-basics
 exl-id: d3369b63-a29b-43b7-b2ad-d36d4f46c82e
 source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
-source-wordcount: '127'
-ht-degree: 39%
+source-wordcount: '135'
+ht-degree: 37%
 
 ---
 
@@ -21,9 +21,9 @@ ht-degree: 39%
 
 ## 關於資料套件 {#about-data-packages}
 
-使用 Adobe Campaign，您可以透過資料包系統匯出或匯入平台配置和資料。套件可以包含不同型別的設定、元素、已篩選或不篩選。
+使用 Adobe Campaign，您可以透過資料包系統匯出或匯入平台配置和資料。 套件可以包含不同型別的設定、元素、已篩選或不篩選。
 
-資料包可以 XML 格式檔案的形式顯示 Adobe Campaign 資料庫的實體。資料包中包含的每個實體都會以其所有資料表示。
+資料包可以 XML 格式檔案的形式顯示 Adobe Campaign 資料庫的實體。 資料包中包含的每個實體都會以其所有資料表示。
 
 **資料套件**&#x200B;的原理是匯出資料組態，並將其整合到另一個Adobe Campaign系統中。 瞭解如何在此[區段](#data-package-best-practices)中維持一組一致的資料封裝。
 

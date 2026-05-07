@@ -9,8 +9,8 @@ topic-tags: connectors
 exl-id: 240d7e11-da3a-4d64-8986-1f1c8ebcea3c
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '645'
-ht-degree: 0%
+source-wordcount: '644'
+ht-degree: 1%
 
 ---
 
@@ -58,7 +58,7 @@ ht-degree: 0%
 例如，在查詢活動中，建立與外部資料庫的定期連線的步驟如下：
 
 1. 按一下&#x200B;**[!UICONTROL Add data...]**&#x200B;並選取&#x200B;**[!UICONTROL External data]**&#x200B;選項。
-1. 選取&#x200B;**[!UICONTROL Locally defining the data source]**&#x200B;選項。
+1. 選取 **[!UICONTROL Locally defining the data source]** 選項。
 
    ![](assets/wf_add_data_local_external_data.png)
 
@@ -95,7 +95,7 @@ ht-degree: 0%
 
 設定外部FDA帳戶時，您可以保護對外部資料庫的存取權。
 
-若要這麼做，請在所用連線埠的伺服器位址和位址之後新增&quot;**：ssl**&quot;。 例如： **192.168.0.52:4501:ssl**。
+若要這麼做，請在使用的伺服器位址和連線埠位址之後新增&quot;**:ssl**&quot;。 例如： **192.168.0.52:4501:ssl**。
 
 然後，資料會透過安全SSL通訊協定傳送。
 

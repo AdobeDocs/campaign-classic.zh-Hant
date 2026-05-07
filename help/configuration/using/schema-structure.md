@@ -11,7 +11,7 @@ topic-tags: schema-reference
 exl-id: 3405efb8-a37c-4622-a271-63d7a4148751
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '1511'
+source-wordcount: '1519'
 ht-degree: 1%
 
 ---
@@ -65,7 +65,7 @@ ht-degree: 1%
 </srcSchema>
 ```
 
-資料結構描述的XML檔案必須包含具有&#x200B;**`<srcschema>`**&#x200B;名稱&#x200B;**和**&#x200B;名稱空間&#x200B;**屬性的**&#x200B;根元素，才能填入結構描述名稱及其名稱空間。
+資料結構描述的XML檔案必須包含具有&#x200B;**名稱**&#x200B;和&#x200B;**名稱空間**&#x200B;屬性的&#x200B;**`<srcschema>`**&#x200B;根元素，才能填入結構描述名稱及其名稱空間。
 
 ```sql
 <srcSchema name="schema_name" namespace="namespace">
@@ -133,7 +133,7 @@ ht-degree: 1%
 
 ## 資料類型 {#data-types}
 
-資料型別是透過&#x200B;**和**&#x200B;元素中的&#x200B;**`<attribute>`** type **`<element>`**&#x200B;屬性輸入的。
+資料型別是透過&#x200B;**`<attribute>`**&#x200B;和&#x200B;**`<element>`**&#x200B;元素中的&#x200B;**type**&#x200B;屬性輸入的。
 
 [`<attribute>`專案](../../configuration/using/schema/attribute.md)和[`<element>`專案](../../configuration/using/schema/element.md)的說明中有詳細清單。
 
@@ -152,7 +152,7 @@ ht-degree: 1%
 * **datetimenotz**：沒有時區資料的日期+時間。
 * **時間跨度**：持續時間。 範例：資歷。
 * **備忘錄**：長文字欄位（多行）。 範例：說明、註解等。
-* **uuid**：「uniqueidentifier」欄位支援GUID (僅在Microsoft SQL Server中支援)。
+* **uuid**：「uniqueidentifier」欄位支援GUID （僅在Microsoft SQL Server中支援）。
 
   >[!NOTE]
   >
@@ -310,7 +310,7 @@ ht-degree: 1%
   >
   >在Adobe Campaign使用者端主控台中，瀏覽至總管的&#x200B;**[!UICONTROL Administration > Counters]**&#x200B;資料夾以管理計數器。
 
-若要將預設值連結至欄位，您可以使用`<default>`或`<sqldefault>`   欄位。
+若要將預設值連結至欄位，您可以使用`<default>`或`<sqldefault>`欄位。
 
 `<default>` ：可讓您在建立實體時，使用預設值預先填寫欄位。 此值不會是預設SQL值。
 

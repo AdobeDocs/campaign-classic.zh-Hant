@@ -7,7 +7,7 @@ role: Developer
 exl-id: 0b5575be-57e7-4eee-9c0a-e9ef4b0931bf
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '332'
+source-wordcount: '362'
 ht-degree: 2%
 
 ---
@@ -130,5 +130,5 @@ ht-degree: 2%
 
 可以使用下列方法：
 
-* 將URL插入您要追蹤之網頁中所整合之HTML **標籤的**&quot;src&quot;**`<img>`**&#x200B;屬性中。
+* 將URL插入您要追蹤之網頁中所整合之HTML **`<img>`**&#x200B;標籤的&#x200B;**&quot;src&quot;**&#x200B;屬性中。
 * 產生您要追蹤的網頁時，直接呼叫重新導向伺服器。

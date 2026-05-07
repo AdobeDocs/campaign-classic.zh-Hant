@@ -10,8 +10,8 @@ topic-tags: production-procedures
 exl-id: 472ccc04-e68e-4ccb-90e9-7d626a4e794f
 source-git-commit: b8a6a0db27826309456c285c08d4f1d85de70283
 workflow-type: tm+mt
-source-wordcount: '439'
-ht-degree: 4%
+source-wordcount: '458'
+ht-degree: 7%
 
 ---
 
@@ -61,7 +61,7 @@ Datasource Server Provider Login
 default xxxxx myserver myprovider test400
 ```
 
-另一個有用的命令是&#x200B;**nlserver monitor**。 它列出監視XML檔案(在Adobe Campaign使用者端或透過&#x200B;**monitor.jsp**&#x200B;網頁取得)。
+另一個有用的命令是&#x200B;**nlserver monitor**。 它列出監視XML檔案（在Adobe Campaign使用者端或透過&#x200B;**monitor.jsp**&#x200B;網頁取得）。
 
 您可以新增引數&#x200B;**-missing**，列出缺少的模組（模組、模組關閉等錯誤）
 
@@ -160,7 +160,7 @@ nlserver config -setdblogin:PostgreSQL:<accountName>:test6@dbserver
 >[!NOTE]
 >
 >* 一般而言，您可以使用&#x200B;**config**&#x200B;命令，而不必手動修改組態檔
->* 若要取得引數清單，請使用&#x200B;**-？**&#x200B;引數： **nlserver config -？**
+>* 若要取得引數清單，請使用&#x200B;**-？** 引數： **nlserver設定 — ？**
 >* 若是Oracle資料庫，則不得指定帳戶。 語法如下：
 >
 >  `nlserver config -setdblogin:Oracle:test6@dbserver`
@@ -172,6 +172,6 @@ nlserver config -setdblogin:PostgreSQL:<accountName>:test6@dbserver
 nlserver config -setdblogin:mssql:<login>/"<password>"@<server> -instance:<instance_name> 
 ```
 
-* 在config-&lt;instance_name>.xml檔案的dataSource節點中可以找到login （例如account：user）和server。
+* 登入（例如account:user）和伺服器可以在config-&lt;instance_name>.xml檔案的dataSource節點中找到。
 * 密碼必須以引號「」括住。
 

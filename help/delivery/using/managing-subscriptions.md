@@ -8,7 +8,7 @@ role: User
 exl-id: 16dddd4a-2e1a-4c78-8168-f656657bb9b8
 source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
 workflow-type: tm+mt
-source-wordcount: '1106'
+source-wordcount: '1122'
 ht-degree: 2%
 
 ---
@@ -70,7 +70,7 @@ ht-degree: 2%
 
 ![](assets/s_ncs_user_services_modify.png)
 
-在儀表板上，按一下&#x200B;**[!UICONTROL Reports]**&#x200B;索引標籤以追蹤訂閱：訂閱層級的變更、訂閱者總數等。 您可以封存報告並檢視此索引標籤的歷史。
+在儀表板上，按一下&#x200B;**[!UICONTROL Reports]**&#x200B;索引標籤以追蹤訂閱：訂閱層級的變更、訂閱者總數等。您可以封存報告並檢視此索引標籤的歷史。
 
 ## 新增和刪除訂閱者 {#adding-and-deleting-subscribers}
 

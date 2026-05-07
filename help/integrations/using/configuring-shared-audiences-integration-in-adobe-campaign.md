@@ -10,15 +10,15 @@ topic-tags: audience-sharing
 exl-id: a3e26cff-9609-4d91-8976-9213a30c3fd2
 source-git-commit: b11185da8236d6100d98eabcc9dc1cf2cffa70af
 workflow-type: tm+mt
-source-wordcount: '551'
-ht-degree: 0%
+source-wordcount: '617'
+ht-degree: 5%
 
 ---
 
 # 在Adobe Campaign中設定共用受眾整合{#configuring-shared-audiences-integration-in-adobe-campaign}
 
 
-提交此請求後，Adobe將會繼續為您布建整合，並連絡您以提供您必須完成設定的詳細資訊和資訊：
+在您提交此請求後，Adobe將會繼續為您布建整合，並連絡您以提供您必須完成設定的詳細資訊和資訊：
 
 1. [步驟1：在Adobe Campaign中設定或檢查外部帳戶](#step-1--configure-or-check-the-external-accounts-in-adobe-campaign)
 1. [步驟2：設定資料Source](#step-2--configure-the-data-source)
@@ -38,7 +38,7 @@ ht-degree: 0%
 首先，我們需要在Adobe Campaign中設定或檢查外部帳戶，如下所示：
 
 1. 按一下&#x200B;**[!UICONTROL Explorer]**&#x200B;圖示。
-1. 移至&#x200B;**[!UICONTROL Administration > Platform > External accounts]**。 Adobe應已設定提及的SFTP帳戶，且您應已收到必要的資訊。
+1. 移至&#x200B;**[!UICONTROL Administration > Platform > External accounts]**。 上述SFTP帳戶應已由Adobe設定，且必要的資訊應已通知您。
 
    * **[!UICONTROL importSharedAudience]**：專用於匯入對象的帳戶。
    * **[!UICONTROL exportSharedAudience]**：專用於匯出對象的帳戶。
@@ -75,7 +75,7 @@ ht-degree: 0%
 
 ## 步驟2：設定資料Source {#step-2--configure-the-data-source}
 
-**收件者 — 訪客ID**&#x200B;是在Audience Manager內建立。 這是訪客ID預設設定的現成資料來源。 從Campaign建立的區段將成為此資料來源的一部分。
+**收件者 — 訪客ID**&#x200B;是在Audience Manager中建立。 這是訪客ID預設設定的現成資料來源。 從Campaign建立的區段將成為此資料來源的一部分。
 
 若要設定&#x200B;**[!UICONTROL Recipient - Visitor ID]**&#x200B;資料來源：
 
@@ -99,6 +99,6 @@ ht-degree: 0%
 
 如果您的訪客ID服務從未在您的Web屬性或網站上設定過，請參閱下列[檔案](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-aam-analytics.html?lang=zh-Hant)以瞭解如何設定您的服務或下列[影片](https://helpx.adobe.com/tw/marketing-cloud/how-to/email-marketing.html#step-two)。
 
-使用Experience Cloud識別碼服務中的`setCustomerID`函式將客戶識別碼與宣告的識別碼同步，整合代碼： `AdobeCampaignID`。 `AdobeCampaignID`應該符合[步驟2：設定資料來源](#step-2--configure-the-data-sources)中設定的收件者資料Source中設定的調解金鑰值。
+使用Experience Cloud ID服務中的`setCustomerID`函式與整合代碼`AdobeCampaignID`將客戶識別碼與宣告ID同步。 `AdobeCampaignID`應該符合[步驟2：設定資料來源](#step-2--configure-the-data-sources)中設定的收件者資料Source中設定的調解金鑰值。
 
 您的設定和布建已完成，整合現在可用於匯入和匯出對象或區段。

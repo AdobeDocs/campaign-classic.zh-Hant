@@ -9,7 +9,7 @@ sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: 4cae5fdb2b78f446f84352046b523d8862e9060c
 workflow-type: tm+mt
-source-wordcount: '2684'
+source-wordcount: '2710'
 ht-degree: 68%
 
 ---
@@ -24,16 +24,16 @@ ht-degree: 68%
    + 先前版本 {#previous-releases}
       + [2025](rn/using/release-2025.md)
       + [2024](rn/using/release-2024.md)
-      + {hide-from-toc}[2023 - 隱藏](rn/using/release-2023.md)
+      + {hide-from-toc}[2023 — 隱藏](rn/using/release-2023.md)
       + {hide-from-toc}[2022 - 隱藏](rn/using/release-2022.md)
-      + {hide-from-toc}[2021 - 隱藏](rn/using/release-2021.md)
+      + {hide-from-toc}[2021 — 隱藏](rn/using/release-2021.md)
       + {hide-from-toc}[[!DNL Gold Standard - HIDDEN]](rn/using/gold-standard.md)
    + [已棄用功能](rn/using/deprecated-features.md)
    + [相容性對照表](rn/using/compatibility-matrix.md)
    + {hide-from-toc}[檔案更新 — 隱藏](rn/using/documentation-updates.md)
 + 開始使用 {#getting-started}
-   + [開始使用 Adobe Campaign Classic &#x200B;](platform/using/about-adobe-campaign-classic.md)
-   + [啟動 Adobe Campaign &#x200B;](platform/using/launching-adobe-campaign.md)
+   + [開始使用 Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
+   + [啟動 Adobe Campaign](platform/using/launching-adobe-campaign.md)
    + [瞭解 Campaign UI](platform/using/adobe-campaign-workspace.md)
    + {hide-from-toc}[使用Campaign Explorer — 隱藏](platform/using/adobe-campaign-explorer.md)
    + {hide-from-toc}[瀏覽及自訂清單 — 隱藏](platform/using/adobe-campaign-ui-lists.md)

@@ -7,7 +7,7 @@ feature: Web Forms
 exl-id: 5d48bb27-1884-47f1-acb7-dff5113565bc
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
-source-wordcount: '869'
+source-wordcount: '875'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->預設參考檔案是&#x200B;**nms：recipient**&#x200B;結構描述。 若要檢視表單或選擇新表單，請從清單中選取表單，然後按一下&#x200B;**[!UICONTROL Properties]**&#x200B;按鈕。
+>預設參考檔案是&#x200B;**nms:recipient**&#x200B;結構描述。 若要檢視表單或選擇新表單，請從清單中選取表單，然後按一下&#x200B;**[!UICONTROL Properties]**&#x200B;按鈕。
 
 ### 將資料儲存在區域變數中 {#storing-data-in-a-local-variable}
 
@@ -97,7 +97,7 @@ ht-degree: 0%
   <%= ctx.vars.variable name %
   ```
 
-* 對於儲存在HTML文字欄位中的內容：
+* 針對儲存在HTML文字欄位中的內容：
 
   ```
   <%== HTML field name %
@@ -105,7 +105,7 @@ ht-degree: 0%
 
   >[!NOTE]
   >
-  >與其他以Escape字元取代`<%=`字元的欄位不同，HTML內容會使用`<%==`語法依原樣儲存。
+  >與其他以ESC字元取代`<%=`字元的欄位不同，HTML內容是使用`<%==`語法依原樣儲存。
 
 ## 儲存網路表單答案 {#saving-web-forms-answers}
 

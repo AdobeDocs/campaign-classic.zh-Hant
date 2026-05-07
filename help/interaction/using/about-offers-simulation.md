@@ -1,17 +1,17 @@
 ---
 product: campaign
-title: 關於優惠方案模擬
-description: 關於優惠方案模擬
+title: 關於產品建議模擬
+description: 關於產品建議模擬
 feature: Interaction, Offers
 exl-id: facaa88e-1fa2-4189-9d8f-348aaef3e235
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '237'
+source-wordcount: '264'
 ht-degree: 3%
 
 ---
 
-# 關於優惠方案模擬{#about-offers-simulation}
+# 關於產品建議模擬{#about-offers-simulation}
 
 
 

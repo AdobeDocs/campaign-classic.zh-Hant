@@ -7,7 +7,7 @@ feature: Surveys
 exl-id: 22e14b24-59ba-4a92-8ffb-f5336793d64f
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '945'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 1%
 1. [步驟3 — 建立意見調查](#step-3---building-the-survey)，
 1. [步驟4 — 建立頁面內容](#step-4---creating-the-page-content)，
 1. [步驟5 — 儲存調查資料](#step-5---storing-the-survey-data-)，
-1. [步驟6 - Publish頁面](#step-6---publishing-the-pages)，
+1. [步驟6 — 發佈頁面](#step-6---publishing-the-pages)，
 1. [步驟7 — 分享您的線上意見調查](#step-7---sharing-your-online-survey)。
 
 ## 步驟1 — 建立調查 {#step-1---creating-a-survey}
@@ -81,7 +81,7 @@ ht-degree: 1%
 
   ![](assets/s_ncs_admin_survey_change_label.png)
 
-  現在為使用者帳號建立輸入欄位。 重複操作並選取「帳戶號碼」。 欄位。
+  現在為使用者帳號建立輸入欄位。 重複操作並選取[帳戶編號]欄位。
 
   套用相同的程式，新增欄位讓使用者輸入電子郵件地址。
 
@@ -125,7 +125,7 @@ ht-degree: 1%
 
 按一下&#x200B;**[!UICONTROL OK]**&#x200B;確認，然後按一下&#x200B;**[!UICONTROL Save]**&#x200B;儲存問卷
 
-## 步驟6 -Publish頁面 {#step-6---publishing-the-pages}
+## 步驟6 — 發佈頁面 {#step-6---publishing-the-pages}
 
 使用者若要存取HTML頁面，應用程式必須可供使用。 它必須不再處於編輯階段，而是處於生產階段。 若要在生產環境中放置調查，您必須將其發佈。 操作步驟：
 

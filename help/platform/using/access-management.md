@@ -7,8 +7,8 @@ feature: Access Management, Permissions
 exl-id: 9b616715-33cd-43ba-8548-8d96a179408e
 source-git-commit: a5bbd2e6c102a8afa4cd5931b77b0c83705a7bfa
 workflow-type: tm+mt
-source-wordcount: '256'
-ht-degree: 8%
+source-wordcount: '315'
+ht-degree: 21%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 8%
 >移轉後，請注意下一節不再適用。  在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/gs-permissions.html?lang=zh-Hant){target="_blank"}中瞭解如何使用Adobe IMS設定許可權。
 
 
-Adobe Campaign可讓您定義並管理指派給各種運運算元的許可權。 這些是一組授權或拒絕的許可權和限制：
+Adobe Campaign 可讓您定義並管理指派給各個操作者的權限。 這些是一組授權或拒絕的許可權和限制：
 
 * 存取特定功能（透過已命名的許可權），
 * 存取特定記錄，
@@ -34,9 +34,9 @@ Adobe Campaign可讓您定義並管理指派給各種運運算元的許可權。
 
 >[!TAB 許可權檔案]
 
-若要進一步瞭解Adobe Campaign **中的**&#x200B;許可權，請參閱&#x200B;**[Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/admin/permissions/gs-permissions?lang=en#_blank){target=_blank}**。
+若要進一步瞭解Adobe Campaign **中的**&#x200B;許可權，請參閱&#x200B;**[Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/admin/permissions/gs-permissions?lang=en#_blank){target=_blank}**。
 
-[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/admin/permissions/gs-permissions?lang=en#_blank){target=_blank}
+[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/admin/permissions/gs-permissions?lang=en#_blank){target=_blank}
 
 
 >[!TAB 管理檔案夾的許可權]
@@ -71,7 +71,7 @@ There are two types of permissions you can grant to a user:
 >[!NOTE]
 >
 > * Before starting defining permissions, Adobe recommends you to read the [Security configuration checklist](https://helpx.adobe.com/tw/campaign/kb/acc-security.html).
-> * To learn more about permissions, please refer to the detailed explanation on the [Campaign v8 documentation](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/admin/permissions/gs-permissions){target=_blank}.
+> * To learn more about permissions, please refer to the detailed explanation on the [Campaign v8 documentation](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/admin/permissions/gs-permissions){target=_blank}.
 
 Learn how to grant access and set up permissions in these sections:
 

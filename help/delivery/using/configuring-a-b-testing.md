@@ -8,7 +8,7 @@ role: User
 exl-id: 6adf2e75-63b1-44ad-8925-03beb3bc0bdd
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '236'
+source-wordcount: '260'
 ht-degree: 3%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 3%
 
    ![](assets/ab-testing-split.png)
 
-1. 新增轉變，以向其餘母體傳送具有目前主旨的Newsletter。 若要這麼做，請從「**[!UICONTROL Generate complement]**」標籤啟動「**[!UICONTROL General]**」選項。
+1. 新增轉變，以向其餘母體傳送具有目前主旨的Newsletter。 若要這麼做，請從「**[!UICONTROL General]**」標籤啟動「**[!UICONTROL Generate complement]**」選項。
 
    ![](assets/ab-testing-complement.png)
 

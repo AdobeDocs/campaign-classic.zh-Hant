@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: 設定母體樣本
+title: 設定群體樣本
 description: 瞭解如何透過專屬的使用案例執行A/B測試
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: A/B Testing
@@ -8,8 +8,8 @@ role: User
 exl-id: 1ca01cab-734a-4299-b112-04eec51222fb
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '183'
-ht-degree: 4%
+source-wordcount: '185'
+ht-degree: 8%
 
 ---
 
@@ -43,7 +43,7 @@ ht-degree: 4%
 
      ![](assets/use_case_abtesting_createrecipients_005.png)
 
-   * 選取&#x200B;**[!UICONTROL Limit the selected records]**&#x200B;選項。
+   * 選取 **[!UICONTROL Limit the selected records]** 選項。
 
      ![](assets/use_case_abtesting_createrecipients_006.png)
 
@@ -67,7 +67,7 @@ ht-degree: 4%
 
 1. 建立剩餘母體：
 
-   * 前往&#x200B;**[!UICONTROL General]**&#x200B;標籤。
+   * 移至 **[!UICONTROL General]** 索引標籤。
 
      ![](assets/use_case_abtesting_createrecipients_011.png)
 

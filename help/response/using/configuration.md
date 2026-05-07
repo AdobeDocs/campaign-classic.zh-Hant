@@ -10,7 +10,7 @@ topic-tags: response-manager
 exl-id: 1a115ca9-2532-4bd3-be77-814e43250c51
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '759'
+source-wordcount: '760'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果要保留描述假設中預期行為的收款識別碼，可以擴充nms：remaMatchRcp表格範本，以新增該識別碼（在此情況下，ROI計算不會連結到這些欄位）。
+>如果要保留描述假設中預期行為的收款識別碼，可以擴充nms:remaMatchRcp表格範本，以新增識別碼（在這種情況下，不會將任何ROI計算連結到這些欄位）。
 
 我們強烈建議您新增事件日期。
 
@@ -61,7 +61,7 @@ ht-degree: 0%
 
 在此範例中，我們將使用Adobe Campaign內建的收件者表格&#x200B;**[!UICONTROL nms:recipient]**，在回應管理模組中整合購買表格。
 
-**[!UICONTROL nms:remaMatchRcp]**&#x200B;收件者上的回應記錄表已延伸，以新增購買表格結構描述的連結。 在下列範例中，購買資料表名為&#x200B;**demo：purchase**。
+**[!UICONTROL nms:remaMatchRcp]**&#x200B;收件者上的回應記錄表已延伸，以新增購買表格結構描述的連結。 在下列範例中，購買資料表稱為&#x200B;**demo:purchase**。
 
 1. 透過Adobe Campaign總管，選取&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Target mappings]**。
 1. 用滑鼠右鍵按一下&#x200B;**收件者**，然後選取&#x200B;**[!UICONTROL Actions]**&#x200B;和&#x200B;**[!UICONTROL Modify the options of the targeting dimensions]**。
@@ -74,7 +74,7 @@ ht-degree: 0%
 
 1. 在&#x200B;**[!UICONTROL Response management]**&#x200B;類別中，確定已核取&#x200B;**[!UICONTROL Generate a storage schema for reactions]**&#x200B;方塊。
 
-   然後按一下&#x200B;**[!UICONTROL Define additional fields...]**&#x200B;以選取相關的交易表格，並將所需的欄位新增到nms：remaMatchRcp結構描述的延伸模組。
+   然後按一下&#x200B;**[!UICONTROL Define additional fields...]**&#x200B;以選取相關的交易表格，並將所需的欄位新增到nms:remaMatchRcp結構描述的延伸模組。
 
    ![](assets/delivery_mapping3.png)
 
@@ -110,7 +110,7 @@ name="remaMatchRcp" namespace="cus">
 
   由於個人表格與Adobe Campaign收件者表格不同，因此必須根據&#x200B;**[!UICONTROL nms:remaMatch]**&#x200B;結構描述建立回應記錄檔的新結構描述。 然後填寫傳送記錄和購買表格的連結。
 
-  在下列範例中，我們將使用&#x200B;**demo：broadLogPers**&#x200B;結構描述和&#x200B;**demo：purchase**&#x200B;交易表：
+  在下列範例中，我們將使用&#x200B;**demo:broadLogPers**&#x200B;結構描述和&#x200B;**demo:purchase**&#x200B;交易表：
 
   ```
   <srcSchema desc="Linking of a recipient transaction to a hypothesis"    

@@ -8,8 +8,8 @@ hide: true
 exl-id: d0ed7be7-3147-4cb8-9ce7-ea51602e9048
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1730'
-ht-degree: 23%
+source-wordcount: '1763'
+ht-degree: 24%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 23%
 
 ## 選取傳遞的主要收件者 {#selecting-the-main-target}
 
-在大多數情況下，主要目標會從 Adobe Campaign 資料庫 (預設模式) 擷取。不過，收件者也可以儲存在外部檔案中。 若要了解更多資訊，請參閱[此區段](steps-defining-the-target-population.md#selecting-external-recipients)。
+在大多數情況下，主要目標會從 Adobe Campaign 資料庫 (預設模式) 擷取。 不過，收件者也可以儲存在外部檔案中。 若要了解更多資訊，請參閱[此區段](steps-defining-the-target-population.md#selecting-external-recipients)。
 
 若要選取傳遞的收件者，請遵循下列步驟：
 
@@ -130,7 +130,7 @@ ht-degree: 23%
 
 可以使用以下選項：
 
-* **[!UICONTROL Exclude duplicate addresses during delivery]**。 此選項預設為作用中：可讓您在傳送期間消除重複的電子郵件地址。 套用的策略可能會因Adobe Campaign的使用方式及資料庫中的資料型別而異。
+* **[!UICONTROL Exclude duplicate addresses during delivery]**. 此選項預設為作用中：可讓您在傳送期間消除重複的電子郵件地址。 套用的策略可能會因 Adobe Campaign 的使用方式及資料庫的資料類型而異。
 
   可為每個傳遞範本設定選項的預設值。
 
@@ -144,7 +144,7 @@ ht-degree: 23%
      ![](assets/s_ncs_user_wizard_email02j.png)
 
 * **[!UICONTROL Exclude recipients who no longer want to be contacted]** ，即電子郵件地址位於封鎖清單上的收件者 (「選擇退出」)。 為了遵守電子行銷的職業道德和電子商務的相關法律，必須保持選取此選項。
-* **[!UICONTROL Exclude quarantined recipients]**。 此選項可讓您從目標排除位址未回應的任何設定檔。 我們強烈建議維持選取此選項。
+* **[!UICONTROL Exclude quarantined recipients]**. 此選項可讓您從目標排除位址未回應的任何設定檔。 我們強烈建議維持選取此選項。
 
   >[!NOTE]
   >

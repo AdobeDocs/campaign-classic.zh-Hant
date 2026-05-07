@@ -8,8 +8,8 @@ level: Experienced
 exl-id: 6987cb5e-8821-4619-b0e4-f0fad3355bfb
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '982'
-ht-degree: 8%
+source-wordcount: '1008'
+ht-degree: 11%
 
 ---
 
@@ -71,7 +71,7 @@ ht-degree: 8%
 
 1. 在&#x200B;**[!UICONTROL Mid-Sourcing]**&#x200B;索引標籤中，指定中間來源伺服器連線引數。
 
-   在[和](#create-sms-operator)欄位中輸入&#x200B;**[!UICONTROL Account]**&#x200B;先前建立的SMS聯結器&#x200B;**[!UICONTROL Password]**&#x200B;的詳細資料。
+   在&#x200B;**[!UICONTROL Account]**&#x200B;和&#x200B;**[!UICONTROL Password]**&#x200B;欄位中輸入[先前建立的SMS聯結器](#create-sms-operator)的詳細資料。
 
    ![](assets/mid_external_account_7.png)
 
@@ -108,7 +108,7 @@ ht-degree: 8%
 
 1. 勾選&#x200B;**[!UICONTROL Enabled]**&#x200B;方塊。
 
-1. 在&#x200B;**[!UICONTROL Mobile]**&#x200B;索引標籤中，從&#x200B;**[!UICONTROL Extended generic SMPP]**&#x200B;下拉式清單中選取&#x200B;**[!UICONTROL Connector]**。
+1. 在&#x200B;**[!UICONTROL Mobile]**&#x200B;索引標籤中，從&#x200B;**[!UICONTROL Connector]**&#x200B;下拉式清單中選取&#x200B;**[!UICONTROL Extended generic SMPP]**。
 
    ![](assets/mid_external_account_4.png)
 
@@ -126,7 +126,7 @@ ht-degree: 8%
 
    >[!NOTE]
    >
-   >某些字元會計為兩個字元（大括弧、方括弧、歐元符號等）。
+   >某些字元會計為兩個字元（括弧、方括弧、歐元符號等）。
    >
    >可用GSM字元的清單會顯示在[本節](sms-set-up.md#about-character-transliteration)中。
 
@@ -154,7 +154,7 @@ ht-degree: 8%
 
 ## 變更傳遞範本 {#changing-the-delivery-template}
 
-Adobe Campaign提供位於&#x200B;**[!UICONTROL Resources > Templates > Delivery templates]**&#x200B;節點中的行動傳遞範本。 如需詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=zh-Hant){target="_blank"}。
+Adobe Campaign提供位於&#x200B;**[!UICONTROL Resources > Templates > Delivery templates]**&#x200B;節點中的行動傳遞範本。 有關更多資訊，請參閱[Campaign v8 文件](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=zh-Hant){target="_blank"}。
 
 若要透過SMS頻道傳送訊息，您必須建立包含頻道聯結器參照的範本。
 

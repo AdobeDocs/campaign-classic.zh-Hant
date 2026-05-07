@@ -7,7 +7,7 @@ feature: Reporting, Monitoring
 exl-id: 79d5c901-905b-4a0e-adb9-91fd6acb186f
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: '425'
 ht-degree: 1%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 1%
 
 ## 新增頁首和頁尾 {#adding-a-header-and-a-footer}
 
-報表屬性視窗也可讓您定義版面配置元素，例如：視窗標題、頁首與頁尾的HTML內容。
+報表屬性視窗也可讓您定義版面元素，例如：視窗標題、頁首和頁尾的HTML內容。
 
 若要存取屬性視窗，請按一下報告的&#x200B;**[!UICONTROL Properties]**&#x200B;按鈕。
 
@@ -62,4 +62,4 @@ ht-degree: 1%
 
 報表顯示時，會自動以適當的內容取代。
 
-就像HTML文字一樣，此作業模式可讓您集中報表中使用的文字，並管理其翻譯。 此索引標籤中建立的文字會由Adobe Campaign整合式翻譯工具自動收集。
+和HTML文字一樣，此作業模式可讓您集中處理報表中使用的文字，並管理其翻譯。 此索引標籤中建立的文字會由Adobe Campaign整合式翻譯工具自動收集。

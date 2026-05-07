@@ -10,7 +10,7 @@ topic-tags: response-manager
 exl-id: e0b3bc9f-5e81-463f-a59e-cd972a47109b
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1025'
+source-wordcount: '1063'
 ht-degree: 3%
 
 ---
@@ -116,7 +116,7 @@ ht-degree: 3%
 
 在優惠方案主張上建立假設，類似於建立即時傳遞假設。 只要優惠方案有效，就可以執行假設。 計算期間以優惠方案主張日期為基礎。 當假設可讓您將收件者連結至購買時，可能會被接受的優惠方案主張的狀態可以自動變更。 [了解更多](hypothesis-templates.md#transactions)
 
-1. 依照&#x200B;**[!UICONTROL Offer]**&#x200B;本節[的說明，建立一或多個](hypothesis-templates.md#creating-a-hypothesis-model)型別模型。
+1. 依照[本節](hypothesis-templates.md#creating-a-hypothesis-model)的說明，建立一或多個&#x200B;**[!UICONTROL Offer]**&#x200B;型別模型。
 1. 前往&#x200B;**[!UICONTROL Campaign management > Measurement hypotheses]**&#x200B;節點。
 1. 選取先前建立的模型，以建立&#x200B;**[!UICONTROL Offers]**&#x200B;型別假設。
 

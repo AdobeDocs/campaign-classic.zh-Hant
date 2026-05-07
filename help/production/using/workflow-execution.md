@@ -10,8 +10,8 @@ topic-tags: troubleshooting
 exl-id: b5aa5663-1902-4f50-9202-783e73a28838
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '652'
-ht-degree: 3%
+source-wordcount: '762'
+ht-degree: 11%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 3%
 
    如果工作流程仍然失敗，請檢查稽核記錄檔中的特定錯誤，並據此進行疑難排解，然後再次重新啟動工作流程。
 
-1. 檢查&#x200B;**[!UICONTROL wfserver]**&#x200B;索引標籤中的&#x200B;**[!UICONTROL Monitoring]**&#x200B;模組狀態，可從Campaign Classic首頁存取（請參閱[監視處理序](../../production/using/monitoring-processes.md)）。 此程式負責執行所有工作流程。
+1. 檢查&#x200B;**[!UICONTROL Monitoring]**&#x200B;索引標籤中的&#x200B;**[!UICONTROL wfserver]**&#x200B;模組狀態，可從Campaign Classic首頁存取（請參閱[監視處理序](../../production/using/monitoring-processes.md)）。 此程式負責執行所有工作流程。
 
    管理員使用者也可以使用以下命令，檢查是否已在您的主要應用程式伺服器上啟動&#x200B;**wfserver@`<instance>`**&#x200B;模組。
 
@@ -87,7 +87,7 @@ ht-degree: 3%
 
 若要勾選此專案並在必要時啟動模組，請套用下列步驟：
 
-1. 檢查&#x200B;**[!UICONTROL wfserver]**&#x200B;索引標籤中的&#x200B;**[!UICONTROL Monitoring]**&#x200B;模組狀態，可從Campaign Classic首頁存取（請參閱[監視處理序](../../production/using/monitoring-processes.md)）。
+1. 檢查&#x200B;**[!UICONTROL Monitoring]**&#x200B;索引標籤中的&#x200B;**[!UICONTROL wfserver]**&#x200B;模組狀態，可從Campaign Classic首頁存取（請參閱[監視處理序](../../production/using/monitoring-processes.md)）。
 
    管理員使用者也可以使用以下命令，檢查是否已在您的主要應用程式伺服器上啟動&#x200B;**wfserver@`<instance>`**&#x200B;模組。
 
@@ -118,6 +118,6 @@ ht-degree: 3%
 
 如果工作流程失敗，請執行以下步驟：
 
-1. 檢查工作流程日誌。 如需詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=zh-Hant){target="_blank"}。
+1. 檢查工作流程日誌。 有關更多資訊，請參閱[Campaign v8 文件](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=zh-Hant){target="_blank"}。
 1. 監視技術工作流程。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-technical-workflows.html?lang=zh-Hant){target="_blank"}。
 1. 尋找個別工作流程活動上的失敗。

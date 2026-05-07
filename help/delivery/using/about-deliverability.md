@@ -8,7 +8,7 @@ role: User
 exl-id: f301b34c-244c-4279-b23f-8224ea8eedbe
 source-git-commit: b2b188ee3f202c247ceac1f59a49b7ad1771d537
 workflow-type: tm+mt
-source-wordcount: '663'
+source-wordcount: '851'
 ht-degree: 6%
 
 ---
@@ -59,7 +59,7 @@ Adobe Campaign提供數個工具，用於追蹤及改善平台的可遞送性效
 * [傳遞最佳實務](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=zh-Hant){target="_blank"}。
 * [控制電子郵件內容](control-message-content.md)
 * [收件匣轉譯](inbox-rendering.md)
-* [傳送校樣](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html?lang=zh-Hant){target="_blank"}
+* [傳送證明](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html?lang=zh-Hant){target="_blank"}
 
 ### 透過雙重選擇加入驗證同意 {#double-opt-in}
 
@@ -75,7 +75,7 @@ Adobe Campaign管理的清單會收集持續發生的垃圾郵件投訴、硬跳
 
 為了保護您的傳送能力，該清單中地址在清單中的收件者預設會從所有未來的傳送中排除，因為傳送給這些聯絡人可能會損害您的傳送信譽。
 
-如果無效地址的比率過高，某些網際網路存取提供者會自動將電子郵件視為垃圾郵件。因此，隔離可讓您避免被這些提供者新增到封鎖清單中。
+如果無效地址的比率過高，某些網際網路存取提供者會自動將電子郵件視為垃圾郵件。 因此，隔離可讓您避免被這些提供者新增到封鎖清單中。
 
 如需詳細資訊，請參閱下列章節：
 

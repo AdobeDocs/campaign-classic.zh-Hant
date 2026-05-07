@@ -8,7 +8,7 @@ exl-id: 19920058-e8e8-4e17-9cc3-24ddf9f96d04
 source-git-commit: 5e062f9dbdf6c148e442ac10dbb12cf72ba0179b
 workflow-type: tm+mt
 source-wordcount: '209'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 ![](assets/reporting_descriptive_quantitative_sample.png)
 
-這些報表是透過「描述性分析助理」建立的，它會根據不同的步驟，讓您選擇要建立的報表型別以及資料和配置。 報表會顯示在最後一個步驟中。 如有必要，可以發佈報告並與其他操作員共用，列印、匯出為Excel、PDF或OpenDocument格式。
+這些報表是透過「描述性分析助理」建立的，它會根據不同的步驟，讓您選擇要建立的報表型別以及資料和配置。 報表會顯示在最後一個步驟中。 如有必要，可以發佈報告並與其他操作者共用，以Excel、PDF或OpenDocument格式列印、匯出。
 
 描述性分析精靈並不如Adobe Campaign報表功能強大，但可讓您快速概略瞭解資料庫內容或資料選擇。
 

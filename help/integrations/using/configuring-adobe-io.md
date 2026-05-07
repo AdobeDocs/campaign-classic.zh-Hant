@@ -12,8 +12,8 @@ exl-id: ab30f697-3022-4a29-bbdb-14ca12ec9c3e
 hide: true
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '312'
-ht-degree: 1%
+source-wordcount: '344'
+ht-degree: 3%
 
 ---
 
@@ -37,7 +37,7 @@ This integration only applies starting **Campaign Classic 20.2.4 and above, 19.1
 開始此實作前，請檢查您是否擁有：
 
 * 有效的&#x200B;**組織識別碼**：組織ID是Adobe Experience Cloud中的唯一識別碼，例如VisitorID服務和IMS單一登入(SSO)。 [了解更多](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-Hant)
-* 您組織的&#x200B;**開發人員存取權**。 組織的系統管理員必須遵循&#x200B;**將開發人員新增至單一產品設定檔**&#x200B;程式（在此頁面[中詳述](https://helpx.adobe.com/tw/enterprise/using/manage-developers.html)），以提供與觸發器相關聯之Adobe Analytics產品的`Analytics - {tenantID}`產品設定檔的開發者存取權。
+* 您組織的&#x200B;**開發人員存取權**。 組織的系統管理員必須遵循&#x200B;**將開發人員新增至單一產品設定檔**&#x200B;程式（在此頁面[&#128279;](https://helpx.adobe.com/tw/enterprise/using/manage-developers.html)中詳述），以提供與觸發器相關聯之Adobe Analytics產品的`Analytics - {tenantID}`產品設定檔的開發者存取權。
 
 ## 步驟1：建立/更新OAuth專案 {#creating-adobe-io-project}
 

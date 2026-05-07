@@ -7,7 +7,7 @@ role: Developer
 exl-id: ce94e7e7-b8f8-4c82-937f-e87d15e50c34
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '918'
+source-wordcount: '923'
 ht-degree: 1%
 
 ---
@@ -45,13 +45,13 @@ Web服務在資料結構描述的文法中說明，並可從&#x200B;**`<methods>
 
 以下是名為&#x200B;**GenerateForm**&#x200B;之方法的定義範例。
 
-服務的說明以`<method>`專案開頭。 已從`<parameters>`專案完成方法的引數清單。 每個引數由名稱、型別（布林值、字串、DOMElement等）和說明指定。 具有「out」值的「inout」屬性可讓您指定「result」引數位於SOAP呼叫輸出處。
+服務的說明以`<method>`專案開頭。 已從`<parameters>`專案完成方法的引數清單。 每個引數由名稱、型別（布林值、字串、DOMElement等）指定 和說明。 具有「out」值的「inout」屬性可讓您指定「result」引數位於SOAP呼叫輸出處。
 
 「static」屬性（值為「true」）的存在說明此方法為static，這表示方法的所有引數都必須宣告。
 
 「const」方法隱含地以關聯結構描述格式的XML檔案作為其輸入。
 
-在`<method>`方法[下的「結構描述參考」章節中，提供Adobe Campaign結構描述的](../../configuration/using/schema/method.md)元素的完整說明
+在[方法](../../configuration/using/schema/method.md)下的「結構描述參考」章節中，提供Adobe Campaign結構描述的`<method>`元素的完整說明
 
 來自&quot;xtk:queryDef&quot;結構描述的&quot;const&quot;型別&quot;ExecuteQuery&quot;方法範例：
 
@@ -74,7 +74,7 @@ Web服務在資料結構描述的文法中說明，並可從&#x200B;**`<methods>
 
 若要產生WSDL檔案，您必須從Web瀏覽器輸入下列URL：
 
-https://`<server>`/nl/jsp/schemawsdl.jsp？schema=`<schema>`
+https://`<server>`/nl/jsp/schemawsdl.jsp?schema=`<schema>`
 
 替換為：
 
@@ -215,7 +215,7 @@ Adobe Campaign已匯入[安全性區域](../../installation/using/security-zones
 * 它會儲存在Adobe Campaign主控台中
 * 透過Web存取時：
 
-   * 它會儲存在檔案中。__securityToken屬性
+   * 它儲存在document.__securityToken屬性中
    * 頁面URL已更新，以更新安全性權杖
    * 表單也會透過包含代號的隱藏欄位進行更新
 

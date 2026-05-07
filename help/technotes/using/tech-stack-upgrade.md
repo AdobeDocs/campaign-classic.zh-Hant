@@ -7,8 +7,8 @@ hide: true
 exl-id: 78949d94-60b3-44f1-8e5a-d61b5b723e87
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '502'
-ht-degree: 4%
+source-wordcount: '529'
+ht-degree: 9%
 
 ---
 
@@ -24,7 +24,7 @@ Campaign基礎架構仰賴協力廠商系統，且必須定期以最新版本和
 
 >[!NOTE]
 >
->若對這些變更有任何疑問，請連絡[Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。 另請參閱[組建版本升級常見問題集](../../platform/using/faq-build-upgrade.md)。
+>如對這些變更有任何疑問，請聯絡 [Adobe 客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。 另請參閱[組建版本升級常見問題集](../../platform/using/faq-build-upgrade.md)。
 >
 
 ## Campaign版本編號升級 {#ac-upgrade}
@@ -69,5 +69,5 @@ Campaign基礎架構仰賴協力廠商系統，且必須定期以最新版本和
 
 * [升級您的環境](../../production/using/build-upgrade.md)
 * [版本編號升級常見問答集](../../platform/using/faq-build-upgrade.md)
-* [下載最新的Campaign Classic組建版本](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
+* [下載最新的Campaign Classic版本編號](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
 * [讓使用者可以使用新的使用者端主控台](../../installation/using/client-console-availability-for-windows.md)

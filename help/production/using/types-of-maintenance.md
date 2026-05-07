@@ -10,8 +10,8 @@ topic-tags: database-maintenance
 exl-id: 08e179aa-fd83-4c0a-879e-ab7aec168d92
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
-source-wordcount: '505'
-ht-degree: 2%
+source-wordcount: '528'
+ht-degree: 5%
 
 ---
 
@@ -81,7 +81,7 @@ Adobe Campaign提供內建的工作流程，可讓您排程某些資料庫維護
    <td> 複製、重新命名及卸除<br /> </td> 
    <td> 這樣會建立表格及其索引的復本，然後捨棄現有的復本，並重新命名復本以取而代之。<br /> </td> 
    <td> 此方法比第一種方法更快，因為它產生的IO較少（沒有檔案復本，且不會從此檔案讀取）。<br /> </td> 
-   <td> 需要兩倍的空間。<br />必須停止在處理期間寫入資料表的所有作用中處理序。 不過，讀取程式不會受到影響，因為表格在重建後的最後時刻會被交換。<br /> </td> 
+   <td> 需要兩倍的空間。<br /> 必須停止在處理期間寫入資料表的所有作用中處理序。 不過，讀取程式不會受到影響，因為表格在重建後的最後時刻會被交換。<br /> </td> 
   </tr> 
  </tbody> 
 </table>

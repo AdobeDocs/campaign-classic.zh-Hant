@@ -7,7 +7,7 @@ hide: true
 exl-id: 2d9cbfc8-1f99-4b38-8460-77c7c986e9ca
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '643'
+source-wordcount: '645'
 ht-degree: 3%
 
 ---
@@ -48,7 +48,7 @@ ht-degree: 3%
 
 ![](assets/local_validation_3.png)
 
-* **[!UICONTROL Distribution context]**：如果您使用&#x200B;**[!UICONTROL Specified in the transition]**&#x200B;型別活動來限制目標母體，請選取&#x200B;**[!UICONTROL Split]**&#x200B;選項。 在此情況下，會在分割活動中輸入發佈範本。 如果您未限制目標母體，請在此處選取&#x200B;**[!UICONTROL Explicit]**&#x200B;選項，並在&#x200B;**[!UICONTROL Data distribution]**&#x200B;欄位中輸入分佈範本。
+* **[!UICONTROL Distribution context]**：如果您使用&#x200B;**[!UICONTROL Split]**&#x200B;型別活動來限制目標母體，請選取&#x200B;**[!UICONTROL Specified in the transition]**&#x200B;選項。 在此情況下，會在分割活動中輸入發佈範本。 如果您未限制目標母體，請在此處選取&#x200B;**[!UICONTROL Explicit]**&#x200B;選項，並在&#x200B;**[!UICONTROL Data distribution]**&#x200B;欄位中輸入分佈範本。
 
   如需建立資料發佈範本的詳細資訊，請參閱[限制每個資料發佈的子集記錄數目](split.md#limiting-the-number-of-subset-records-per-data-distribution)。
 

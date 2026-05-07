@@ -8,7 +8,7 @@ exl-id: f426bf02-9899-49eb-b699-728d51b57c64
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
 source-wordcount: '432'
-ht-degree: 12%
+ht-degree: 15%
 
 ---
 
@@ -17,17 +17,17 @@ ht-degree: 12%
 >[!CONTEXTUALHELP]
 >id="ac_workflow_intersection"
 >title="交集活動"
->abstract="交集類型活動會根據收到的目標的交集建立目標。交集讓您僅擷取所有傳入活動結果共有的母體。"
+>abstract="交集類型活動會根據收到的目標的交集建立目標。 交集讓您僅擷取所有傳入活動結果共有的母體。"
 
 **交集**&#x200B;型別活動會從接收目標的交集建立目標。
 
-交集可讓您僅擷取所有入站活動結果通用的母體。 建立目標時會收到所有結果：因此，必須先完成所有先前的活動，才能執行交集。 若要設定此活動，您必須輸入其標籤以及有關結果的選項。
+交集讓您僅擷取所有傳入活動結果共有的母體。 建立目標時會收到所有結果：因此，必須先完成所有先前的活動，才能執行交集。 若要設定此活動，您必須輸入其標籤以及有關結果的選項。
 
 ![](assets/s_user_segmentation_inter.png)
 
 如需設定及使用交集活動的詳細資訊，請參閱[擷取聯合資料（交集）](targeting-data.md#extracting-joint-data--intersection-)。
 
-如果要處理剩餘母體，請核取&#x200B;**[!UICONTROL Generate complement]**&#x200B;選項。 此補集會包含所有傳入活動減去交集的聯合結果。然後，會將額外的出站轉變新增至活動，如下所示：
+如果要處理剩餘母體，請核取&#x200B;**[!UICONTROL Generate complement]**&#x200B;選項。 此補集會包含所有傳入活動減去交集的聯合結果。 然後，會將額外的出站轉變新增至活動，如下所示：
 
 ![](assets/s_user_segmentation_inter_compl.png)
 

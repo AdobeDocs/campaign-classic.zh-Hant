@@ -10,8 +10,8 @@ topic-tags: connecting-via-an-adobe-id
 exl-id: b70ca220-1c81-4b23-b07a-a2cd694877fe
 source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
 workflow-type: tm+mt
-source-wordcount: '329'
-ht-degree: 1%
+source-wordcount: '380'
+ht-degree: 11%
 
 ---
 
@@ -24,12 +24,12 @@ ht-degree: 1%
 
 ## 先決條件 {#prerequisites}
 
-* 您必須有Adobe Experience Cloud組織名稱和ID。 若要尋找您的組織ID，請參閱[此頁面](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-hant){_blank}。
+* 您必須有Adobe Experience Cloud組織名稱和ID。 若要尋找您的組織ID，請參閱[此頁面](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-Hant){_blank}。
 * 您必須在Experience Cloud中新增使用者。 如需詳細資訊，請參閱[此頁面](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=zh-Hant){_blank}。
 
 >[!NOTE]
 >
->請確定您的使用者已連結至將與Adobe Campaign同步的Adobe Experience Cloud群組。 [了解更多](#configuring-the-external-account)。
+>請確定您的使用者已連結至將與Adobe Campaign同步的Adobe Experience Cloud群組。 [了解更多資訊](#configuring-the-external-account)。
 
 ## 更新主控台 {#updating-the-console}
 
@@ -53,8 +53,8 @@ ht-degree: 1%
 
   必須在&#x200B;**https**&#x200B;中指定&#x200B;**[!UICONTROL Callback server]**&#x200B;位址。 此欄位對應至Adobe Campaign執行個體的存取URL。
 
-* 組織識別碼：若要尋找您的組織識別碼，請參閱[此頁面](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-hant){_blank}。
+* 組織識別碼：若要尋找您的組織識別碼，請參閱[此頁面](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-Hant){_blank}。
 
-* 關聯遮罩：此欄位可讓您定義語法，讓Enterprise Dashboard中的組態名稱與Adobe Campaign中的群組同步。 如果您使用語法「Campaign - tenant_id - (.&#42;)」，則在Adobe Campaign中建立的安全性群組將會連結至Enterprise Dashboard中的設定名稱「Campaign - tenant_id - internal_name」。
+* 關聯遮罩：此欄位可讓您定義語法，讓Enterprise Dashboard中的組態名稱與Adobe Campaign中的群組同步。 如果您使用語法「Campaign - tenant_id - (.&#42;)」，在Adobe Campaign中建立的安全性群組將連結至Enterprise Dashboard中的設定名稱「Campaign - tenant_id - internal_name」。
 
 * Adobe Experience Cloud連線資訊，即Adobe Experience Cloud租使用者的名稱。

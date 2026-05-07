@@ -21,7 +21,7 @@ ht-degree: 1%
 
 ## 方案結構 {#schema-structure}
 
-資料結構描述的XML檔案必須包含具有&#x200B;**`<srcschema>`**&#x200B;名稱&#x200B;**和**&#x200B;名稱空間&#x200B;**屬性的**&#x200B;根元素，才能填入結構描述名稱及其名稱空間。
+資料結構描述的XML檔案必須包含具有&#x200B;**名稱**&#x200B;和&#x200B;**名稱空間**&#x200B;屬性的&#x200B;**`<srcschema>`**&#x200B;根元素，才能填入結構描述名稱及其名稱空間。
 
 ```
 <srcSchema name="schema_name" namespace="namespace">
@@ -128,7 +128,7 @@ ht-degree: 1%
 
 要參考的元素上的&#x200B;**ref**&#x200B;屬性必須以參考元素的路徑(XPath)來完成。
 
-**範例**：新增結構與我們範例結構描述的&#x200B;**元素相同的** Appendix **`<chapter>`**&#x200B;區段。
+**範例**：新增結構與我們範例結構描述的&#x200B;**`<chapter>`**&#x200B;元素相同的&#x200B;**Appendix**&#x200B;區段。
 
 ```
 <srcSchema name="book" namespace="cus">

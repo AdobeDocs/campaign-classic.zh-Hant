@@ -8,8 +8,8 @@ level: Beginner
 exl-id: 0cd6bf20-da72-4cf0-9f5d-d4e8acdd324d
 source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
-source-wordcount: '2579'
-ht-degree: 97%
+source-wordcount: '2670'
+ht-degree: 96%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 97%
 ## 版本 7.1 (21.1)
 
 >[!CAUTION]
->使用 **[!UICONTROL Help > About...]** 功能表以檢查您的 Adobe Campaign [版本編號](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)。不過請注意，本頁所列的 9277 與 9343 之間的所有版本編號都顯示 7.0 而非 7.1。
+>使用 **[!UICONTROL Help > About...]** 功能表以檢查您的 Adobe Campaign [版本編號](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)。 不過請注意，本頁所列的 9277 與 9343 之間的所有版本編號都顯示 7.0 而非 7.1。
 > 
 
 ### 版本 21.1.4 - 版本編號 9343 {#release-21-1-4-build-9343}
@@ -49,7 +49,7 @@ _2021 年 9 月 7 日_
 
 * Flash 的生命週期結束後，已從所有相關的 Campaign 功能和元件中移除，並更換為 HTML5。 **量測**&#x200B;類型圖表已移除。 (NEO-30330) [閱讀全文](../../reporting/using/creating-a-chart.md)
 * 在 Windows 上安裝客戶端控制台時，安裝程式現在會檢查是否有父代登錄節點，如果沒有，會建立一個。 這可防止啟動主控台時發生潛在問題。 (NEO-34854)
-* 追蹤簽章功能已經過改良，以防止連結至第三方工具 (電子郵件用戶端、網際網路瀏覽器等) 的錯誤 URL 參數現在已編碼。
+* 追蹤簽章功能已經過改良，以防止連結至協力廠商工具（電子郵件使用者端、網際網路瀏覽器等）的錯誤 處理特殊字元。 URL 參數現在已編碼。
 
 **其他變更**
 
@@ -108,7 +108,7 @@ _2021 年 6 月 5 日_
 <td>
 <p>Journey Orchestration 與 Adobe Campaign Classic 的整合現已正式推出。 它可讓 Journey Orchestration 使用 Adobe Campaign Classic 異動訊息功能來傳送電子郵件、推播通知和簡訊。</p>
 <p>Journey Orchestration 與 Campaign Classic 執行個體之間的連線在佈建時由 Adobe 設定。</p>
-<p>如需詳細資訊，請參閱 <a href="https://experienceleague.adobe.com/docs/journeys/using/action-journeys/acc-action.html?lang=zh-Hant">Journey Orchestration 文件</a>。<a href="https://experienceleague.adobe.com/docs/journeys/using/use-cases-journeys/campaign-classic-use-case.html?lang=zh-Hant">本節</a>中提供了逐步使用案例</p>
+<p>如需詳細資訊，請參閱 <a href="https://experienceleague.adobe.com/docs/journeys/using/action-journeys/acc-action.html?lang=zh-Hant">Journey Orchestration 文件</a>。 <a href="https://experienceleague.adobe.com/docs/journeys/using/use-cases-journeys/campaign-classic-use-case.html?lang=zh-Hant">本節</a>中提供了逐步使用案例</p>
 </td>
 </tr>
 </tbody>
@@ -221,7 +221,7 @@ _2021 年 6 月 5 日_
 * 修正了使用Web應用程式時，追蹤標籤在&#x200B;**nms:trackingURL**&#x200B;結構描述中產生錯誤主鍵的問題。 (NEO-27931)
 * 與 ODBC 3.x 的相容性已增強，以確保錯誤訊息的準確性。
 * 修正當電子郵件傳送中使用自訂內容範本時，可能導致主控台當機的問題。 (NEO-31547)
-* 修正了因連線速度緩慢或大規模回應而導致 Tomcat 無法傳送有效回應的問題。(NEO-30858)
+* 修正了因連線速度緩慢或大規模回應而導致 Tomcat 無法傳送有效回應的問題。 (NEO-30858)
 * 修正從 PostgreSQL 資料庫讀取 UUID 時可能發生的問題。
 * 修正搜尋連結至產品建議的提議資料時，可能導致效能問題的問題。 (NEO-27554)
 * 修正了在啟動 IMS 服務但未回應時，導致 Web 程式未回應的問題。
@@ -246,7 +246,7 @@ _2021 年 2 月 22 日_
 **安全性增強功能**
 
 * 控制台驗證機制已經改善，以最佳化安全性。 (NEO-26944)
-* 修正了安全性問題，針對伺服器端請求偽造 (SSRF) 問題加強保護。(NEO-28532)
+* 修正了安全性問題，針對伺服器端請求偽造 (SSRF) 問題加強保護。 (NEO-28532)
 
 **相容性更新**
 
@@ -256,13 +256,13 @@ _2021 年 2 月 22 日_
 
 **已棄用功能**
 
- **技術傳遞能力監控**&#x200B;報告現在已被取代。
+**技術傳遞能力監控**&#x200B;報告現在已被取代。
 
 在[與已棄用和已移除的功能頁面](../../rn/using/deprecated-features.md)瞭解更多相關的資訊。
 
 **功能改進**
 
-**電子郵件回饋服務 (EFS)**&#x200B;是一種可擴展的服務，它直接從增強型 MTA 中擷取回饋，從而提高報告的準確性。這項功能會以私人測試版發佈，未來發佈的版本將逐步提供給所有客戶。
+**電子郵件回饋服務 (EFS)**&#x200B;是一種可擴展的服務，它直接從增強型 MTA 中擷取回饋，從而提高報告的準確性。 這項功能會以私人測試版發佈，未來發佈的版本將逐步提供給所有客戶。
 
 * 現在，您可擷取所有類別的回饋，以進行完整精確的報告。
 * 已傳遞指標的計算現在以增強型 MTA 的即時回饋為依據，以改進精確度和反應度。
@@ -284,7 +284,7 @@ _2021 年 2 月 22 日_
 * 修正在重新開啟先前建立和儲存的 Web 應用程式時，造成原始程式碼中某些字元變更的問題。 (NEO-27597)
 * 修正升級至包含追蹤連結 (來自 Build 19.1.4 和 Campaign 20.2) 之新簽名機制的建置時可能發生的問題：當多個範本與事件相關聯時，升級可能會導致在傳送異動訊息時選擇錯誤的範本。 (NEO-28326)
 * 修正 MTA 在未重新啟動時無法回應且無法處理傳遞的問題。 (NEO-27455)
-* 修正 MSSQL 資料庫，在日期時間輸入欄位的大量載入作業期間，與時區管理相關的問題。(NEO-27375)
+* 修正 MSSQL 資料庫，在日期時間輸入欄位的大量載入作業期間，與時區管理相關的問題。 (NEO-27375)
 * 修正使用 Redshift xtk 函式時的工作流程查詢問題。 SubDays、SubSeconds、SubMinutes 和 SubHours 現在接受兩種 Redshift 時間標記類型 (NEO-24962)。
 * 修正嘗試預覽具有匿名存取權的報表時，顯示指令碼錯誤訊息的問題。 (NEO-27081)
 * 修正執行傳遞分析時，可能會減少伺服器上記憶體使用量的問題。

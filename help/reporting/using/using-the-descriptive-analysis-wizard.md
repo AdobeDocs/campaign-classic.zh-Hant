@@ -1,28 +1,28 @@
 ---
 product: campaign
-title: 建立您的第一個描述性分析報表
+title: 建立您第一個描述性分析報告
 description: 瞭解如何使用助理建立您的第一個描述性分析報告
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Reporting, Monitoring
 exl-id: 848d67c7-d1dc-4eba-bcb8-672e76d8ce87
 source-git-commit: 5e062f9dbdf6c148e442ac10dbb12cf72ba0179b
 workflow-type: tm+mt
-source-wordcount: '1580'
-ht-degree: 0%
+source-wordcount: '1587'
+ht-degree: 1%
 
 ---
 
-# 建立您的第一個描述性分析報表 {#using-the-descriptive-analysis-wizard}
+# 建立您第一個描述性分析報告 {#using-the-descriptive-analysis-wizard}
 
 若要建立描述性分析報告，請使用專用助理。 設定取決於要分析的資料以及所需的呈現。
 
 ## 分析資料庫中的資料 {#analyzing-data-in-the-database}
 
-描述性分析助理可以透過&#x200B;**[!UICONTROL Tools > Descriptive analysis]**&#x200B;功能表啟動：在此情況下，分析預設與收件者有關(**nms：recipient**)。 此維度會套用至Adobe Campaign資料庫中的所有資料。
+描述性分析助理可以透過&#x200B;**[!UICONTROL Tools > Descriptive analysis]**&#x200B;功能表啟動：在此情況下，分析預設與收件者有關(**nms:recipient**)。 此維度會套用至Adobe Campaign資料庫中的所有資料。
 
 ![](assets/reporting_descriptive_wz_launch.png)
 
-若要分析標準收件者(**nms：recipient**)以外的表格，請按一下助理員最後階段的&#x200B;**[!UICONTROL Advanced settings...]**&#x200B;連結，並選取符合您設定的表格，在此例中為&#x200B;**cus：individual**：
+若要分析標準收件者之一(**nms:recipient**)以外的資料表，請按一下助理員最後階段的&#x200B;**[!UICONTROL Advanced settings...]**&#x200B;連結，並選取符合您設定的資料表，在此例中為&#x200B;**cus:individual**：
 
 ![](assets/reporting_descriptive_other_schema.png)
 

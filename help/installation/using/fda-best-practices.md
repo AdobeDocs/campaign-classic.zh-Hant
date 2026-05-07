@@ -9,7 +9,7 @@ topic-tags: connectors
 exl-id: f3980859-2837-416b-a0ef-2b369d2d50bd
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '509'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 ## 使用外部資料最佳化電子郵件個人化 {#optimizing-email-personalization-with-external-data}
 
-您可以在專屬的工作流程中預先處理訊息個人化。 若要執行此動作，請使用傳遞屬性的&#x200B;**[!UICONTROL Prepare the personalization data with a workflow]**&#x200B;索引標籤中的&#x200B;**[!UICONTROL Analysis]**&#x200B;選項。
+您可以在專屬的工作流程中預先處理訊息個人化。 若要執行此動作，請使用傳遞屬性的&#x200B;**[!UICONTROL Analysis]**&#x200B;索引標籤中的&#x200B;**[!UICONTROL Prepare the personalization data with a workflow]**&#x200B;選項。
 
 在傳遞分析期間，此選項會自動建立並執行工作流程，將所有連結至目標的資料儲存在暫存表格中，包括連結至外部資料庫之表格的資料。
 

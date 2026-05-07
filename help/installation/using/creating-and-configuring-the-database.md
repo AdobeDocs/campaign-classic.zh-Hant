@@ -10,8 +10,8 @@ topic-tags: initial-configuration
 exl-id: f40bab8c-5064-40d9-beed-101a9f22c094
 source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
 workflow-type: tm+mt
-source-wordcount: '1306'
-ht-degree: 1%
+source-wordcount: '1329'
+ht-degree: 2%
 
 ---
 
@@ -75,7 +75,7 @@ ht-degree: 1%
 
 若要這麼做，請輸入有權存取資料庫的&#x200B;**系統管理系統帳戶**&#x200B;的名稱和密碼，例如：
 
-* oracle資料庫的&#x200B;**系統**，
+* Oracle資料庫的&#x200B;**系統**，
 * Microsoft SQL Server資料庫的&#x200B;**sa**，
 * PostgreSQL資料庫的&#x200B;**postgres**，
 
@@ -97,7 +97,7 @@ ht-degree: 1%
   >
   >使用Oracle資料庫時，**[!UICONTROL Unicode storage]**&#x200B;選項可讓您使用&#x200B;**NCLOB**&#x200B;和&#x200B;**NVARCHAR**&#x200B;型別欄位。
   > 
-  >如果未選取此選項，Oracle資料庫的字元集（字元集）必須啟用所有語言的資料儲存（建議使用AL32UTF8）。
+  >如果不選取此選項，Oracle資料庫的字元集（字元集）必須啟用所有語言的資料儲存（建議使用AL32UTF8）。
 
 * 選擇資料庫的時區，並指定是否要以UTC格式（如果可用）顯示。
 
@@ -153,7 +153,7 @@ ht-degree: 1%
 
 資料庫以及使用者都必須由資料庫管理員建立，而且存取許可權必須已正確設定。
 
-例如，對於Oracle資料庫，最低必要許可權為：GRANTCONNECT、RESOURCE和UNLIMITED TABLESPACE。
+例如，Oracle資料庫的最低必要許可權為：授予CONNECT、RESOURCE和UNLIMITED表格空間。
 
 若要使用現有資料庫，設定步驟如下：
 
@@ -198,7 +198,7 @@ ht-degree: 1%
   >[!NOTE]
   >
   >請確定結構描述名稱和使用者名稱相符。 建立資料庫的建議方式是透過Campaign主控台使用者端。
-  >對於Oracle資料庫，您不需要輸入帳戶名稱。
+  >若為Oracle資料庫，您不需要輸入帳戶名稱。
 
 * 指示資料庫是否應為Unicode。
 

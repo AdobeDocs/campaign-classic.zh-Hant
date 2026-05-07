@@ -9,8 +9,8 @@ hide: true
 exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '6200'
-ht-degree: 2%
+source-wordcount: '6654'
+ht-degree: 5%
 
 ---
 
@@ -53,7 +53,7 @@ Learn more about [ACS Connector](../../integrations/using/acs-connector-principl
 
 +++**使用中的設定檔**
 
-如果設定檔在過去12個月期間，曾經透過任何通道而被設為目標或進行通訊，則會視為作用中。 根據您的合約，您的每個Campaign執行個體都已布建特定數量的作用中設定檔，而且會計算這些設定檔數量以結算費用。
+如果輪廓在過去 12 個月期間，曾經透過任何通道而被設為目標或進行通訊，請將此類輪廓視為「作用中」。 根據您的合約，您的每個Campaign執行個體都已布建特定數量的作用中設定檔，而且會計算這些設定檔數量以結算費用。
 
 深入瞭解[作用中設定檔](../../platform/using/about-profiles.md#active-profiles)。
 +++
@@ -242,7 +242,7 @@ Learn more about [Deliverability](../../delivery/using/about-deliverability.md).
 
 *內容：直接郵件*
 
-傳遞大網是由公司針對特定行銷活動建立的結構化元素集（檔案、商店、促銷優惠券等）。 它用於直接郵件傳遞的情境下。
+傳遞大網是一組結構化的元素（檔案、商店、促銷優惠券等） 由公司針對特定行銷活動所建立。 它用於直接郵件傳遞的情境下。
 
 深入瞭解[直接郵件](../../delivery/using/about-direct-mail-channel.md)。
 +++
@@ -265,7 +265,7 @@ Learn more about [Deliverability](../../delivery/using/about-deliverability.md).
 
 *內容：分散式行銷*
 
-分散式行銷附加元件為Campaign操作員提供合作工作區，用於在中央實體（總部、行銷部門等）和地方實體（銷售點、區域機構等）之間實施行銷活動。 此合作基於共用工作區，稱為&#x200B;**行銷活動套件清單**，其中集中建立的行銷活動範本和執行個體提供給本機實體。
+分散式行銷附加元件為Campaign操作員提供合作工作區，用於在中央實體（總部、行銷部門等）之間實施行銷活動 和地方實體（銷售點、地區代理等）。 此合作基於共用工作區，稱為&#x200B;**行銷活動套件清單**，其中集中建立的行銷活動範本和執行個體提供給本機實體。
 
 在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/distributed-marketing/about-distributed-marketing.html?lang=zh-Hant){target="_blank"}中進一步瞭解分散式行銷。
 +++
@@ -279,7 +279,7 @@ Learn more about [Deliverability](../../delivery/using/about-deliverability.md).
 
 +++**網域委派**
 
-子網域設定可讓您設定網域的子區段（技術上稱為「DNS區域」），以便與Adobe Campaign搭配使用。
+子網域設定可讓您設定網域的子區域 (技術上稱為「DNS 區域」)，以便與 Adobe Campaign 搭配使用。
 網域委派可讓Adobe控制並維護傳遞、呈現和追蹤電子郵件行銷活動所需的DNS的各個層面。
 
 深入瞭解[網域委派](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=zh-Hant)
@@ -348,7 +348,7 @@ An engine call is a server call that starts real-time processing on server side 
 
 列舉是在結構描述中或在Platform層級定義的資料型別，可定義欄位的有效輸入值。 列舉會顯示在使用者介面中，並在查詢建置器中顯示為挑選清單。
 
-在&#x200B;**Adobe Campaign v8 （主控台）檔案**&#x200B;中進一步瞭解如何[使用分項清單](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}。
+在[Adobe Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}中進一步瞭解如何&#x200B;**使用分項清單**。
 +++
 
 +++**總管檢視**
@@ -683,7 +683,7 @@ Learn more about [Navigation Bar](../../platform/using/adobe-campaign-workspace.
 
 *內容：行銷活動互動*
 
-優惠方案模擬可讓營運商在實際傳送優惠方案之前，測試已定義範圍（傳送日期、目標區段、優惠方案數量、主題等）的優惠方案分佈。 它可用來調整優惠方案優先順序和適用性規則，以將優惠方案效益最大化。
+優惠方案模擬可讓操作員測試已定義範圍（傳送日期、目標區段、優惠方案數量、主題等）的優惠方案分佈 實際傳送優惠方案之前。 它可用來調整優惠方案優先順序和適用性規則，以將優惠方案效益最大化。
 
 深入瞭解[優惠方案模擬](../../interaction/using/about-offers-simulation.md)。
 +++
@@ -852,7 +852,7 @@ Adobe Campaign中的「公用資源」資料夾內含由應用程式伺服器託
 
 +++**收件者**
 
-在Adobe Campaign中，收件者是用於傳送傳遞（電子郵件、簡訊等）給客戶的預設設定檔。 儲存在資料庫中的收件者資料可讓您篩選目標並新增個人化資料。 這通常是個人、連絡人、人口統計和交易資訊，但可能是任何型別的支援行銷和分析的資訊。
+在Adobe Campaign中，收件者是用於傳送內容（電子郵件、簡訊等）的預設設定檔 傳送給您的客戶。 儲存在資料庫中的收件者資料可讓您篩選目標並新增個人化資料。 這通常是個人、連絡人、人口統計和交易資訊，但可能是任何型別的支援行銷和分析的資訊。
 
 深入瞭解[收件者](../../configuration/using/about-data-model.md)。
 +++
@@ -890,7 +890,7 @@ Campaigns that re-target the recipients of a previous delivery or deliveries.
 
 +++**種子地址**
 
-種子地址用於鎖定不符合所定義的目標準則的收件者。如此一來，不在傳遞範圍的收件者可以像任何其他目標收件者一樣接收傳遞。 已將他們新增至訊息的對象，以偵測任何詐用收件者資料庫的行為或確保傳遞。
+種子地址用於鎖定不符合所定義的目標準則的收件者。 如此一來，不在傳遞範圍的收件者可以像任何其他目標收件者一樣接收傳遞。 已將他們新增至訊息的對象，以偵測任何詐用收件者資料庫的行為或確保傳遞。
 
 深入瞭解[種子地址](../../delivery/using/about-seed-addresses.md)。
 +++
@@ -1012,7 +1012,7 @@ Learn more about [Total database storage](../../workflow/using/about-workflows.m
 
 傳送傳遞並啟用追蹤後，「追蹤」技術工作流程會擷取追蹤資料。 此資料可在您傳送的「追蹤」標籤中找到。 您可以找到開啟和點選電子郵件或其他與收件者所收到訊息互動的資訊。
 
-深入瞭解Campaign v8[中的](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/tracking-logs){target="_blank"}追蹤記錄。
+深入瞭解Campaign v8[&#128279;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/tracking-logs){target="_blank"}中的追蹤記錄。
 +++
 
 +++**交易型訊息**
@@ -1071,7 +1071,7 @@ Learn more about [Triggers](../../workflow/using/about-workflows.md).
 
 +++**網頁應用程式**
 
-網頁應用程式是由Campaign執行個體託管的動態互動式應用程式頁面。 其中包含來自資料庫的資料，以及適合已連線使用者許可權的內容。 例如，您可以在外部網路上建立編輯表單，或建立通知表單（包含來自資料庫的資料），其中包含表格、圖表、輸入表單等。 此功能可讓您設計和張貼網頁，讓使用者在其中查閱或輸入資訊。
+網頁應用程式是由Campaign執行個體託管的動態互動式應用程式頁面。 其中包含來自資料庫的資料，以及適合已連線使用者許可權的內容。 例如，您可以在外部網路上建立編輯表單，或建立通知表單（包含來自資料庫的資料），其中包含表格、圖表、輸入表單等。此功能可讓您設計和張貼網頁，讓使用者在其中查閱或輸入資訊。
 
 深入瞭解[網頁應用程式](../../web/using/about-web-applications.md)。
 +++
@@ -1092,7 +1092,7 @@ Learn more about [Triggers](../../workflow/using/about-workflows.md).
 
 +++**工作表**
 
-工作表包含工作流程轉變所攜帶的所有資訊。 每個工作流程會使用多個工作表。工作表會保留其原始活動的結果，且其內容會用作工作流程中下一個（已連線）活動的輸入。  操控工作表（擴充功能、自訂）是Adobe Campaign運運算元的主要技能之一。
+工作表包含工作流程轉變所攜帶的所有資訊。 每個工作流程會使用多個工作表。 工作表會保留其原始活動的結果，且其內容會用作工作流程中下一個（已連線）活動的輸入。  操控工作表（擴充功能、自訂）是Adobe Campaign運運算元的主要技能之一。
 
 深入瞭解[工作表](../../workflow/using/about-workflows.md)。
 +++

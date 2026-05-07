@@ -6,7 +6,7 @@ role: Admin
 exl-id: 1a409daf-57be-43c9-a3d9-b8ab54c88068
 source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
-source-wordcount: '1775'
+source-wordcount: '1838'
 ht-degree: 0%
 
 ---
@@ -456,7 +456,7 @@ response = requests.post(url, headers=headers, data=xml_data)
 
 此步驟為選用步驟，且僅適用於行銷執行個體，不可用於任何Message Center執行個體。 如果已經為技術操作員定義了特定檔案夾許可權或已命名許可權，但未透過指派的操作員群組。 您現在需要更新Admin Console中新建立的技術帳戶使用者，以授予所需的檔案夾許可權或已命名許可權。
 
-請注意，對Campaign執行個體進行至少一個API呼叫之前，技術帳戶使用者不會存在於Adobe Campaign中，此時IMS將會在Campaign中建立使用者。 如果您在Campaign內找不到技術使用者，請確定您已能夠成功傳送API呼叫，如步驟7[中所述](#ims-migration-step-7)。
+請注意，對Campaign執行個體進行至少一個API呼叫之前，技術帳戶使用者不會存在於Adobe Campaign中，此時IMS將會在Campaign中建立使用者。 如果您在Campaign內找不到技術使用者，請確定您已能夠成功傳送API呼叫，如步驟7[&#128279;](#ims-migration-step-7)中所述。
 
 1. 若要套用新技術帳戶使用者所需的變更，請依電子郵件地址在Campaign使用者端主控台中找出這些變更。 此電子郵件地址是在上述專案建立和驗證步驟期間建立的。
 

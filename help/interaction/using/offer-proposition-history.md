@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: 優惠主張歷史記錄
-description: 優惠主張歷史記錄
+title: 產品建議提議歷史記錄
+description: 產品建議提議歷史記錄
 feature: Interaction, Offers
 audience: interaction
 content-type: reference
@@ -14,7 +14,7 @@ ht-degree: 15%
 
 ---
 
-# 優惠主張歷史記錄{#offer-proposition-history}
+# 產品建議提議歷史記錄{#offer-proposition-history}
 
 
 

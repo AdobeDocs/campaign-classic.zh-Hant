@@ -8,8 +8,8 @@ level: Beginner
 exl-id: 985cf088-7546-4875-8e11-cafe5bd3e323
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
-source-wordcount: '197'
-ht-degree: 13%
+source-wordcount: '209'
+ht-degree: 12%
 
 ---
 
@@ -21,14 +21,14 @@ Adobe Analytics 連接器可讓 Adobe Campaign 和 Adobe Analytics 透過 **[!UI
 
 開始使用Adobe Campaign-Adobe Analytics聯結器之前，請考量下列護欄和先決條件。
 
-* 針對此整合，需要使用AdobeIdentity Management系統(IMS)連線至Campaign。 [了解更多](../../integrations/using/about-adobe-id.md)。
+* 針對此整合，需要使用Adobe Identity Management System (IMS)連線至Campaign。 [了解更多資訊](../../integrations/using/about-adobe-id.md)。
 
 * Adobe Analytics 連接器與異動訊息 (訊息中心) 不相容。
 
 * 必須透過專用套件將Web Analytics聯結器附加元件安裝在您的環境中。
 
    * 對於混合式與內部部署實作，請務必遵循此[頁面](adobe-analytics-provisioning.md)中詳述的布建步驟。
-   * 請以「主機」或「受管理的Cloud Service」使用者身分聯絡Adobe，將Campaign與Adobe Experience Cloud服務和解決方案連結。
+   * 請以「主機」或「受管理的Cloud Services」使用者身分聯絡Adobe，將Campaign與Adobe Experience Cloud服務和解決方案連結。
 
 
 ## 設定與使用 {#adobe-analytics-connector-usage}

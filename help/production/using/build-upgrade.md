@@ -10,8 +10,8 @@ topic-tags: updating-adobe-campaign
 exl-id: c5a9c99a-4078-45d8-847b-6df9047a2fe2
 source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
 workflow-type: tm+mt
-source-wordcount: '2324'
-ht-degree: 1%
+source-wordcount: '2422'
+ht-degree: 4%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 1%
 
 您可在下列章節中找到更多資訊： [更新Adobe Campaign](../../production/using/upgrading.md)、[移轉至新版本](../../migration/using/about-migration.md)。
 
-對於託管和混合式執行個體，您必須向Adobe技術營運團隊請求組建升級。 如需詳細資訊，請參閱底部的「常見問題」區段（若此頁面）。 另請參閱[組建版本升級常見問答集](../../platform/using/faq-build-upgrade.md)。
+針對託管和混合式執行個體，您必須向Adobe技術營運團隊請求組建版本升級。 如需詳細資訊，請參閱底部的「常見問題」區段（若此頁面）。 另請參閱[組建版本升級常見問答集](../../platform/using/faq-build-upgrade.md)。
 
 ## 準備升級
 
@@ -53,7 +53,7 @@ ht-degree: 1%
 
 1. 至少保留2小時進行升級。
 1. 為Adobe和客戶員工分配聯絡詳細資訊。
-1. 對於託管例項：Adobe和客戶員工將協調升級時間以及執行人員。
+1. 對於託管例項： Adobe和客戶員工將協調升級時間以及執行人員。
 1. 對於內部部署執行個體：客戶員工管理整個流程 — 如果需要測試自訂工作流程和傳送邏輯的協助，則應引入諮詢服務。
 1. 決定並確認您要升級至哪個Adobe Campaign版本 — 請參閱[Adobe Campaign Classic發行說明](../../rn/using/rn-overview.md)。
 1. 確認擁有升級可執行檔。
@@ -86,7 +86,7 @@ ht-degree: 1%
 
 1. 取得[伺服器組態檔](../../installation/using/the-server-configuration-file.md)的最新版本。
 
-1. [下載最新的組建](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)。 [了解更多](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hant)。
+1. [下載最新的組建](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)。 [了解更多資訊](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hant)。
 
 在開始組建升級之前，您還需要知道所有[有用的命令列](../../installation/using/command-lines.md)：
 
@@ -115,7 +115,7 @@ ht-degree: 1%
 
 1. 在目標環境的所有執行個體上還原這些復本。
 
-1. 在啟動之前，請在目標環境中執行&#x200B;**nms：freezeInstance.js**&#x200B;燒錄指令碼。 這將停止所有與外界互動的流程：記錄、追蹤、傳送、行銷活動工作流程等。
+1. 在啟動之前，請在目標環境中執行&#x200B;**nms:freezeInstance.js**&#x200B;燒錄指令碼。 這將停止所有與外界互動的流程：記錄、追蹤、傳送、行銷活動工作流程等。
 
    ```
    nlserverjavacsriptnms:freezeInstance.js–instance:<dev> -arg:run
@@ -242,7 +242,7 @@ Setup-client-7.xxxx.exe in [path of the application]\datakit\nl\en\jsp
    * 中斷連線並重新連線
    * 執行工作流程的快速健康狀態檢查
 
-1. Publish Message Center範本，確保伺服器與Message Center執行個體之間的介面運作正常。
+1. 發佈訊息中心範本，以確保伺服器與Message Center執行個體之間的介面運作正常。
 1. 執行測試以確保透過訊息中心生產執行個體成功接收電子郵件。
 1. 在生產環境中執行工作流程測試，以確保接收傳遞。
 
@@ -250,7 +250,7 @@ Setup-client-7.xxxx.exe in [path of the application]\datakit\nl\en\jsp
 
 在中間來源環境中，您需要執行這些額外的步驟以進行升級：
 
-1. 聯絡[Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)以協調中間來源伺服器的升級。
+1. 請連絡[Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)協調中間來源伺服器的升級。
 1. 執行測試連結以驗證版本是否已更新。 例如：
 
    ```
@@ -289,7 +289,7 @@ YYYY-MM-DD HH:MM:SS.750Z 00002E7A 1 warning log Document of identifier 'nms:incl
 
 在相關伺服器的postupgrade.log或Campaign使用者端介面（「管理>設定>封裝管理>編輯衝突」）中，可能會發現衝突。
 
-識別碼為「stockOverview」且型別為「nms：webApp」的檔案與新版本發生衝突。
+識別碼為&#39;stockOverview&#39;且型別為&#39;nms:webApp&#39;的檔案與新版本發生衝突。
 
 如果發現衝突，請檢查以下條件是否相符：
 

@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: 運算子設定檔
-description: 運算子設定檔
+title: 操作者設定檔
+description: 操作者設定檔
 feature: Interaction, Offers
 audience: interaction
 content-type: reference
@@ -10,11 +10,11 @@ exl-id: e11fb28c-d530-45a2-862a-ff1c20975577
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
 source-wordcount: '384'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
-# 運算子設定檔{#operator-profiles}
+# 操作者設定檔{#operator-profiles}
 
 
 
@@ -23,7 +23,7 @@ ht-degree: 2%
 * **[!UICONTROL Offer manager]** ：建立和維護優惠方案。 請注意，如果工作流程中使用選件，運運算元必須位於&#x200B;**[!UICONTROL Administrator]**&#x200B;或&#x200B;**[!UICONTROL Offer managers]**&#x200B;運運算元群組中，才能執行工作流程。
 * **[!UICONTROL Delivery manager]** ：核准並使用優惠方案
 
-建立「互動」專屬運運算元的步驟，與在Platform上建立所有其他運運算元所用的步驟相同。 如需詳細資訊，請參閱[本節](../../platform/using/access-management.md)。 許可權是在建立運運算元時設定的。
+建立「互動」專屬運運算元的步驟，與在Platform上建立所有其他運運算元所用的步驟相同。 如需詳細資訊，請參閱[本章節](../../platform/using/access-management.md)。 許可權是在建立運運算元時設定的。
 
 ## 優惠方案管理員 {#offer-manager}
 

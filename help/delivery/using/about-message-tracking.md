@@ -7,8 +7,8 @@ role: User
 exl-id: 43779505-9917-4e99-af25-b00a9d29a645
 source-git-commit: ba53107ce06c0484070cbe0943ba439d33d5f710
 workflow-type: tm+mt
-source-wordcount: '1267'
-ht-degree: 2%
+source-wordcount: '1364'
+ht-degree: 3%
 
 ---
 
@@ -82,7 +82,7 @@ ht-degree: 2%
 
 下列疑難排解提示適用於&#x200B;**Campaign Classic v7混合/內部部署**。 部分資訊可能也會套用至Campaign v8內部部署。 如需Campaign v8受管理的Cloud Services，請聯絡您的Adobe代表以尋求協助。
 
-如需Campaign v8的基本追蹤疑難排解步驟，請參閱Campaign v8檔案[中的](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/analytics/tracking/tracking-logs#troubleshooting){target="_blank"}疑難排解追蹤。
+如需Campaign v8的基本追蹤疑難排解步驟，請參閱Campaign v8檔案[&#128279;](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/analytics/tracking/tracking-logs#troubleshooting){target="_blank"}中的疑難排解追蹤。
 
 ### 基本檢查 {#basic-checks}
 

@@ -8,7 +8,7 @@ badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '1707'
+source-wordcount: '1721'
 ht-degree: 2%
 
 ---
@@ -151,11 +151,11 @@ Forms是`xtk:form`型別的實體。 您可以在`xtk:form`結構描述中檢視
 
 若要尋找影像，請從功能表中選擇&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Images]**。
 
-若要將影像與表單中的元素（例如圖示）相關聯，您可以新增影像的參照。 例如，在`img`元素中使用`<container>`屬性。
+若要將影像與表單中的元素（例如圖示）相關聯，您可以新增影像的參照。 例如，在`<container>`元素中使用`img`屬性。
 
 語法： `img="`*`namespace`*`:`*`filename`*`.`*`extension`*`"`
 
-此範例顯示從`book.png`名稱空間參考`detail.png`和`ncm`影像：
+此範例顯示從`ncm`名稱空間參考`book.png`和`detail.png`影像：
 
 ```xml
 <container img="ncm:book.png" label="General">
@@ -292,7 +292,7 @@ Forms是`xtk:form`型別的實體。 您可以在`xtk:form`結構描述中檢視
 
 若要將現有表單的型別變更為`iconbox`，請遵循下列步驟：
 
-1. 將`type`專案的`<form>`屬性變更為`iconbox`：
+1. 將`<form>`專案的`type`屬性變更為`iconbox`：
 
    ```xml
    <form […] type="iconbox">
@@ -320,7 +320,7 @@ Forms是`xtk:form`型別的實體。 您可以在`xtk:form`結構描述中檢視
       </form>
       ```
 
-   或者，從現有`type="frame"`元素移除`<container>`屬性。
+   或者，從現有`<container>`元素移除`type="frame"`屬性。
 
 ### 建立Notebook表單
 
@@ -330,7 +330,7 @@ Forms是`xtk:form`型別的實體。 您可以在`xtk:form`結構描述中檢視
 
 若要將現有表單的型別變更為`notebook`，請遵循下列步驟：
 
-1. 將`type`專案的`<form>`屬性變更為`notebook`：
+1. 將`<form>`專案的`type`屬性變更為`notebook`：
 
    ```xml
    <form […] type="notebook">
@@ -358,7 +358,7 @@ Forms是`xtk:form`型別的實體。 您可以在`xtk:form`結構描述中檢視
      </form>
    ```
 
-   或者，從現有`type="frame"`元素移除`<container>`屬性。
+   或者，從現有`<container>`元素移除`type="frame"`屬性。
 
 ### 巢狀內嵌表單
 
@@ -463,7 +463,7 @@ Forms是`xtk:form`型別的實體。 您可以在`xtk:form`結構描述中檢視
 
 若要授與欄位的唯讀存取權，請使用`readOnly="true"`屬性。 例如，您可能想要顯示記錄的主索引鍵，但具有唯讀存取權。 [閱讀更多](form-structure.md#non-editable-fields)。
 
-在此範例中，`iRecipientId`結構描述的主索引鍵(`nms:recipient`)以唯讀存取方式顯示：
+在此範例中，`nms:recipient`結構描述的主索引鍵(`iRecipientId`)以唯讀存取方式顯示：
 
 ```xml
 <value xpath="@iRecipientId" readOnly="true"/>
@@ -509,7 +509,7 @@ Forms是`xtk:form`型別的實體。 您可以在`xtk:form`結構描述中檢視
    }
    ```
 
-   在此範例中，函式名為`checkValue`。 此函式用於檢查`recipient`名稱空間中的`nms`資料型別。 正在檢查的值會記錄下來。 如果值無效，則會記錄錯誤訊息。 如果值有效，則會傳回值1。
+   在此範例中，函式名為`checkValue`。 此函式用於檢查`nms`名稱空間中的`recipient`資料型別。 正在檢查的值會記錄下來。 如果值無效，則會記錄錯誤訊息。 如果值有效，則會傳回值1。
 
    您可以使用傳回的值來修改表單。
 

@@ -9,8 +9,8 @@ topic-tags: instance-configuration
 exl-id: 23a384d1-27ce-46c2-98c3-0fb60a5c50ee
 source-git-commit: 221e2ccdaadf793212fcacdf5e13823f1505f4dc
 workflow-type: tm+mt
-source-wordcount: '1237'
-ht-degree: 1%
+source-wordcount: '1256'
+ht-degree: 2%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 1%
 
 ## 設定控制例項 {#control-instance}
 
-若要連線控制執行個體和執行執行個體，您必須先在控制執行個體&#x200B;**[!UICONTROL Execution instance]**&#x200B;上建立並設定&#x200B;**型別的外部帳戶**。 因此，一旦[發佈](../../message-center/using/publishing-message-templates.md#template-publication)，即可將異動訊息範本部署至執行個體。
+若要連線控制執行個體和執行執行個體，您必須先在控制執行個體&#x200B;**上建立並設定&#x200B;**&#x200B;[!UICONTROL Execution instance]&#x200B;**型別的外部帳戶**。 因此，一旦[發佈](../../message-center/using/publishing-message-templates.md#template-publication)，即可將異動訊息範本部署至執行個體。
 
 如果您使用數個執行例項，則必須建立與執行例項相同數量的外部帳戶。
 

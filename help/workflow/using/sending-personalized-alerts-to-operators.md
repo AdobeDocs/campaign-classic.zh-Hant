@@ -7,7 +7,7 @@ hide: true
 exl-id: 21c97eb3-60cd-4d19-bc0f-5ba9ec17e70a
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '346'
 ht-degree: 2%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 2%
 1. 使用&#x200B;**[!UICONTROL Query]**&#x200B;活動來鎖定資料。
 1. 將&#x200B;**[!UICONTROL JavaScript code]**&#x200B;活動新增至工作流程，以將查詢的母體儲存至執行個體變數。
 1. 使用&#x200B;**[!UICONTROL Test]**&#x200B;活動檢查母體計數。
-1. 根據&#x200B;**[!UICONTROL Alert]**&#x200B;活動結果，使用&#x200B;**[!UICONTROL Test]**&#x200B;活動傳送警示給運運算元。
+1. 根據&#x200B;**[!UICONTROL Test]**&#x200B;活動結果，使用&#x200B;**[!UICONTROL Alert]**&#x200B;活動傳送警示給運運算元。
 
 ![](assets/uc_operator_1.png)
 

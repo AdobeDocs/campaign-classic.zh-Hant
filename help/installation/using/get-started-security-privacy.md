@@ -9,7 +9,7 @@ topic-tags: prerequisites-and-recommendations-
 exl-id: ec40498e-e673-4792-8dcf-8bb7e852b532
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '450'
 ht-degree: 7%
 
 ---
@@ -26,14 +26,14 @@ ht-degree: 7%
 
 隱私權設定和強化是安全性最佳化的關鍵元素。 以下是隱私權方面的一些最佳實務：
 
-* 使用HTTPS而非HTTPProtect您的客戶PII
+* 使用HTTPS而非HTTP來保護您的客戶PII
 * 使用PII檢視限制來保護隱私權並防止資料被濫用。
 * 請確定加密的密碼受到限制。
-* Protect中可能包含個人資訊的頁面，例如映象頁面、網頁應用程式等。
+* 保護可能包含個人資訊的頁面，例如映象頁面、網頁應用程式等。
 
 [閱讀全文](../../installation/using/privacy.md)
 
-## 存取管理
+## 存取權管理
 
 <img src="assets/do-not-localize/icon_access.svg" width="60px">
 
@@ -84,7 +84,7 @@ ht-degree: 7%
 
 * **傳出連線保護**&#x200B;和&#x200B;**命令限制** （伺服器端）
 
-* 您也可以新增額外的HTTP標頭、啟用checkIPConsistent、enableTLS、sessionTimeOutSec等。 如需詳細資訊，請參閱[Campaign伺服器設定檔案](../../installation/using/configuring-campaign-server.md)和[伺服器設定檔描述](../../installation/using/the-server-configuration-file.md)。
+* 您也可以新增額外的HTTP標頭、啟用checkIPConsistent、enableTLS、sessionTimeOutSec等。如需詳細資訊，請參閱[Campaign伺服器設定檔案](../../installation/using/configuring-campaign-server.md)和[伺服器設定檔描述](../../installation/using/the-server-configuration-file.md)。
 
 [閱讀全文](../../installation/using/server-configuration.md)
 

@@ -10,8 +10,8 @@ topic-tags: prerequisites-and-recommendations-
 exl-id: b86236ae-95e9-4406-b60f-6d90ad0d4a01
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
-source-wordcount: '704'
-ht-degree: 1%
+source-wordcount: '725'
+ht-degree: 4%
 
 ---
 
@@ -123,7 +123,7 @@ ht-degree: 1%
  </tbody> 
 </table>
 
-### 豐富型使用者端 {#rich-client}
+### Rich 用戶端 {#rich-client}
 
 對於Adobe Campaign RTF使用者端(**nlclient**)，必須開啟下列連線埠：
 
@@ -192,7 +192,7 @@ ht-degree: 1%
 
 ### 外部Web伺服器 {#external-web-server}
 
-此伺服器可託管網路表單、映象頁面等。 需要開啟下列連線埠：
+此伺服器可託管網路表單、映象頁面等。需要開啟下列連線埠：
 
 <table> 
  <tbody> 

@@ -7,7 +7,7 @@ feature: Surveys
 exl-id: 0b5dc602-e16f-4bf1-bd8f-352e0bc78996
 source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
 workflow-type: tm+mt
-source-wordcount: '848'
+source-wordcount: '853'
 ht-degree: 1%
 
 ---
@@ -108,7 +108,7 @@ ht-degree: 1%
 
 操作步驟：
 
-* 透過&#x200B;**[!UICONTROL Properties]**&#x200B;索引標籤的&#x200B;**[!UICONTROL Edit]**&#x200B;按鈕編輯意見調查屬性。
+* 透過&#x200B;**[!UICONTROL Edit]**&#x200B;索引標籤的&#x200B;**[!UICONTROL Properties]**&#x200B;按鈕編輯意見調查屬性。
 * 按一下&#x200B;**[!UICONTROL Advanced parameters]**&#x200B;連結並核取&#x200B;**[!UICONTROL Save a copy of raw answers]**&#x200B;選項。
 
 ![](assets/s_ncs_admin_survey_xml_archive_option.png)

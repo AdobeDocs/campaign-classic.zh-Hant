@@ -10,8 +10,8 @@ topic-tags: prerequisites-and-recommendations-
 exl-id: 87103c31-1530-4f8d-ab3a-6ff73093b80c
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
-source-wordcount: '649'
-ht-degree: 1%
+source-wordcount: '677'
+ht-degree: 3%
 
 ---
 
@@ -27,7 +27,7 @@ Java Development Kit （簡稱JDK）是軟體開發套件。 它是啟用Java應
 
 您必須先在要執行Adobe Campaign應用程式伺服器（**nlserver web**&#x200B;處理序）的電腦上安裝JDK，因為它整合了servlet容器Apache Tomcat，用於產生動態網頁（報表、網頁表單等）。
 
-此應用程式已針對Oracle開發的Java開發套件(JDK)以及&#x200B;**OpenJDK**&#x200B;核准。
+此應用程式已核准用於Oracle開發的Java開發套件(JDK)以及&#x200B;**OpenJDK**。
 
 Campaign [相容性矩陣](../../rn/using/compatibility-matrix.md)中詳細說明支援的版本。
 
@@ -65,7 +65,7 @@ Java Development Kit是平台專屬的：每個作業系統都需要個別的安
 > 請務必下載Java開發套件(JDK)，而不是Java執行階段環境(JRE)。
 
 
-若要在Linux環境中安裝JDSL，Adobe建議使用封裝管理員。
+若要在Linux環境中安裝JDSL，Adobe建議使用套件管理員。
 
 對於Debian，請使用下列指令：
 

@@ -7,7 +7,7 @@ feature: Web Apps, Web Forms, Landing Pages, Email Design
 exl-id: e2679f12-459b-466d-9c82-60a28363b104
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '747'
+source-wordcount: '755'
 ht-degree: 1%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 1%
 
 ## 步驟2 — 選取範本 {#step-2---selecting-a-template}
 
-選取傳遞範本，然後為您的傳遞命名。 此名稱將僅對Adobe Campaign主控台的使用者可見，不會由您的收件者可見，不過此標題將顯示在您的傳遞清單中。 按一下&#x200B;**[!UICONTROL Continue]**。
+選取傳遞範本，然後為您的傳遞命名。 此名稱將僅對Adobe Campaign主控台的使用者可見，不會由您的收件者可見，不過此標題將顯示在您的傳遞清單中。 按一下 **[!UICONTROL Continue]**。
 
 ![](assets/dce_delivery_model.png)
 

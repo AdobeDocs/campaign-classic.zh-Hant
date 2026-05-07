@@ -9,7 +9,7 @@ topic-tags: data-processing
 exl-id: 75d3a0af-9a14-4083-b1da-2c1b22f57cbe
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '2829'
+source-wordcount: '2862'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## 簡介 {#introduction}
 
-可透過&#x200B;**[!UICONTROL Database cleanup]**&#x200B;節點存取的&#x200B;**[!UICONTROL Administration > Production > Technical workflows]**&#x200B;工作流程可讓您刪除過時的資料，以避免資料庫呈指數增長。 工作流程會自動觸發，使用者無需另行干預。
+可透過&#x200B;**[!UICONTROL Administration > Production > Technical workflows]**&#x200B;節點存取的&#x200B;**[!UICONTROL Database cleanup]**&#x200B;工作流程可讓您刪除過時的資料，以避免資料庫呈指數增長。 工作流程會自動觸發，使用者無需另行干預。
 
 ![清理](assets/ncs_cleanup_workflow.png)
 
@@ -49,7 +49,7 @@ ht-degree: 0%
 
 ### 部署精靈 {#deployment-assistant}
 
-透過&#x200B;**[!UICONTROL deployment wizard]**&#x200B;功能表存取的&#x200B;**[!UICONTROL Tools > Advanced]**&#x200B;可讓您設定儲存資料的時間長度。 值以天為單位表示。 如果未變更這些值，工作流程將使用預設值。
+透過&#x200B;**[!UICONTROL Tools > Advanced]**&#x200B;功能表存取的&#x200B;**[!UICONTROL deployment wizard]**&#x200B;可讓您設定儲存資料的時間長度。 值以天為單位表示。 如果未變更這些值，工作流程將使用預設值。
 
 ![](assets/ncs_cleanup_deployment-wizard.png)
 
@@ -59,7 +59,7 @@ ht-degree: 0%
 * 傳遞記錄： **NmsCleanup_BroadLogPurgeDelay** （請參閱[傳遞記錄的清理](#cleanup-of-delivery-logs)）
 * 追蹤記錄： **NmsCleanup_TrackingLogPurgeDelay** （請參閱[追蹤記錄的清除](#cleanup-of-tracking-logs)）
 * 已刪除的傳遞： **NmsCleanup_RecycledDeliveryPurgeDelay** （請參閱[清除要刪除或回收的傳遞](#cleanup-of-deliveries-to-be-deleted-or-recycled)）
-* 匯入拒絕： **NmsCleanup_RejectsPurgeDelay** （請參閱清除匯入產生的拒絕[）](#cleanup-of-rejects-generated-by-imports-)
+* 匯入拒絕： **NmsCleanup_RejectsPurgeDelay** （請參閱清除匯入產生的拒絕[&#128279;](#cleanup-of-rejects-generated-by-imports-)）
 * 訪客設定檔： **NmsCleanup_VisitorPurgeDelay** （請參閱[訪客清理](#cleanup-of-visitors)）
 * 優惠方案主張： **NmsCleanup_PropositionPurgeDelay** （請參閱[主張的清除](#cleanup-of-propositions)）
 
@@ -91,7 +91,7 @@ ht-degree: 0%
 
 ### 要刪除清除的清單 {#lists-to-delete-cleanup}
 
-**[!UICONTROL Database cleanup]**&#x200B;工作流程執行的第一個任務會刪除所有具有&#x200B;**deleteStatus ！=來自** NmsGroup **的0**&#x200B;屬性。 連結至這些群組以及存在於其他表格中的記錄也會被刪除。
+**[!UICONTROL Database cleanup]**&#x200B;工作流程執行的第一個工作會從&#x200B;**NmsGroup**&#x200B;中刪除所有具有&#x200B;**deleteStatus != 0**&#x200B;屬性的群組。 連結至這些群組以及存在於其他表格中的記錄也會被刪除。
 
 1. 使用下列SQL查詢復原要刪除的清單：
 
@@ -564,7 +564,7 @@ DELETE FROM NmsPropositionXxx WHERE iPropositionId IN (SELECT iPropositionId FRO
    SELECT iSimulationId FROM NmsSimulation WHERE iSimulationId<>0
    ```
 
-1. 要刪除的資料表名稱包含&#x200B;**wkSimu_**&#x200B;首碼，後面接著模擬的識別碼(例如： **wkSimu_456831_aggr**)：
+1. 要刪除的資料表名稱包含&#x200B;**wkSimu_**&#x200B;首碼，後面接著模擬的識別碼（例如： **wkSimu_456831_aggr**）：
 
    ```sql
    DROP TABLE wkSimu_456831_aggr

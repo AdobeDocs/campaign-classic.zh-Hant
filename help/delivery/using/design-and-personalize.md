@@ -9,8 +9,8 @@ hide: true
 exl-id: 5bf727d2-83b1-4a99-be25-041eee8d234c
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1304'
-ht-degree: 3%
+source-wordcount: '1390'
+ht-degree: 6%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 3%
 
 請確定您的訊息內容經過適當設計，以避免發生任何錯誤，這些錯誤通常與個人化有關。
 
-**提示**：在來自協力廠商所提供外部檔案的個人化欄位中，外部HTML內容可能有誤。 要避免此問題，請檢查語法、標籤的使用和字元等。 例如，Adobe Campaign個人化標籤的格式一律如下： &lt;%=table.field%>。 如需詳細資訊，請參閱[本節](about-personalization.md)。
+**提示**：在來自協力廠商所提供外部檔案的個人化欄位中，外部HTML內容可能有誤。 要避免此問題，請檢查語法、標籤的使用和字元等。例如，Adobe Campaign個人化標籤的格式一律如下： &lt;%=table.field%>。 如需詳細資訊，請參閱[本節](about-personalization.md)。
 
 個人化區塊中引數的使用不正確可能是個問題。 例如，JavaScript中的變數使用方式如下：
 
@@ -77,7 +77,7 @@ ht-degree: 3%
 
 **秘訣**：因為人因錯誤永遠可能發生，在您每次傳送前，請先檢查選擇退出連結是否正常運作。 例如，傳送校樣時，請確定連結有效、表單線上上，且「不再聯絡此收件者」欄位已變更為「是」。
 
-瞭解如何在本節[中插入選擇退出連結](personalization-blocks.md#personalization-blocks-example)。
+瞭解如何在本節[&#128279;](personalization-blocks.md#personalization-blocks-example)中插入選擇退出連結。
 
 ### 電子郵件大小
 
@@ -95,10 +95,10 @@ ht-degree: 3%
 
 ### 簡訊長度
 
-根據預設，SMS中的字元數量符合GSM（行動通訊全球系統）標準。 使用 GSM 編碼的簡訊訊息最多只能有 160 個字元，若是以多個部分傳送的訊息，則每個簡訊的簡訊訊息最多只能有 153 個字元。
+根據預設，簡訊中的字元數量符合 GSM（行動通訊全球系統）標準。 使用 GSM 編碼的簡訊訊息最多只能有 160 個字元，若是以多個部分傳送的訊息，則每個簡訊的簡訊訊息最多只能有 153 個字元。
 
-音譯包括當GSM標準未考慮到SMS的一個字元時，用另一個字元取代該字元。 請注意，將個人化欄位插入您的SMS訊息內容，可能會引入GSM編碼未考慮的字元。 您可以核取對應&#x200B;**[!UICONTROL External account]**&#x200B;的SMPP通道設定索引標籤中對應的方塊，以授權字母音譯。
-在本節[瞭解更多](sms-set-up.md#creating-an-smpp-external-account)。
+音譯包括當 GSM 標準未考慮到簡訊的一個字元時，用另一個字元取代該字元。 請注意，將個人化欄位插入您的SMS訊息內容，可能會引入GSM編碼未考慮的字元。 您可以核取對應&#x200B;**[!UICONTROL External account]**&#x200B;的SMPP通道設定索引標籤中對應的方塊，以授權字母音譯。
+在本節[&#128279;](sms-set-up.md#creating-an-smpp-external-account)瞭解更多。
 
 **提示**：
 
@@ -106,7 +106,7 @@ ht-degree: 3%
 
 * 不過，如果您的SMS訊息包含許多GSM標準未考慮的字元，請啟用音譯以限制傳送訊息的成本。
 
-在本節[瞭解更多](sms-set-up.md#about-character-transliteration)。
+在本節[&#128279;](sms-set-up.md#about-character-transliteration)瞭解更多。
 
 ## 處理格式設定 {#formatting}
 
@@ -114,7 +114,7 @@ ht-degree: 3%
 
 * 更正&#x200B;**日期格式**： Adobe Campaign為JavaScript範本和XSL樣式表提供日期格式功能。 [了解更多](formatting.md#date-display)
 
-* 在電子郵件中使用&#x200B;**授權字元**：電子郵件地址的有效字元清單定義於「XtkEmail_Characters」選項。 在本節[中瞭解如何存取Campaign選項](../../installation/using/configuring-campaign-options.md)。 若要正確處理特殊字元，Adobe Campaign必須安裝在Unicode中。
+* 在電子郵件中使用&#x200B;**授權字元**：電子郵件地址的有效字元清單定義於「XtkEmail_Characters」選項。 在本節[&#128279;](../../installation/using/configuring-campaign-options.md)中瞭解如何存取Campaign選項。 若要正確處理特殊字元，Adobe Campaign必須安裝在Unicode中。
 
 * **電子郵件驗證**&#x200B;的設定：請確定電子郵件標頭包含DKIM簽章。 DKIM (Domain Keys Identified Mail)驗證可讓接收電子郵件伺服器驗證訊息是否的確是由其聲稱傳送訊息的人員或實體傳送，以及訊息內容在最初傳送時間（和DKIM「簽署」）與接收時間之間是否曾變更。 此標準通常使用寄件者或寄件者標題中的網域。 如需詳細資訊，請參閱[Adobe傳遞能力最佳實務指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=zh-Hant#authentication)。
 

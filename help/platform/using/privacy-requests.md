@@ -9,8 +9,8 @@ topic-tags: starting-with-adobe-campaign
 exl-id: c7688c2a-f0a7-4c51-a4cf-bf96fe8bf9b6
 source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
-source-wordcount: '189'
-ht-degree: 92%
+source-wordcount: '198'
+ht-degree: 88%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 92%
 
 如需隱私權管理的一般簡報，請參閱[本節](privacy-management.md)。
 
-此資訊適用於 GDPR、CCPA、PDPA 及 LGPD。如需這些法規的詳細資訊，請參閱[本節](privacy-management.md#privacy-management-regulations)。
+此資訊適用於 GDPR、CCPA、PDPA 及 LGPD。 如需這些法規的詳細資訊，請參閱[本節](privacy-management.md#privacy-management-regulations)。
 
 >[!NOTE]
 >
@@ -28,16 +28,16 @@ ht-degree: 92%
 
 <!--Installation procedures described in this document are applicable starting Campaign Classic 18.4 (build 8931+). If you are running on a previous version, refer to this [technote](https://helpx.adobe.com/campaign/kb/how-to-install-gdpr-package-on-legacy-versions.html).-->
 
-為協助您加速隱私權準備，Adobe Campaign 可讓您處理存取和刪除要求。[本節](privacy-management.md#right-access-forgotten)說明&#x200B;**存取權限**&#x200B;及&#x200B;**被遺忘的權利**（刪除要求）。
+為協助您加速隱私權準備，Adobe Campaign 可讓您處理存取和刪除要求。 [本節](privacy-management.md#right-access-forgotten)說明&#x200B;**存取權限**&#x200B;及&#x200B;**被遺忘的權利**（刪除要求）。
 
 Adobe Campaign 為資料控制方執行隱私權存取和刪除請求提供兩種可能性：
 
-* 透過 **Adobe Campaign 介面**：針對每個隱私權請求，資料控制方會在 Adobe Campaign 建立新的隱私權請求。請參閱[本節](privacy-requests-ui.md)。
-* 透過&#x200B;**API**：Adobe Campaign 提供 API允許使用 SOAP 自動處理隱私權請求。請參閱[本節](privacy-requests-api.md)。
+* 透過 **Adobe Campaign 介面**：針對每個隱私權請求，資料控制方會在 Adobe Campaign 建立新的隱私權請求。 請參閱[本節](privacy-requests-ui.md)。
+* 透過&#x200B;**API**：Adobe Campaign 提供 API允許使用 SOAP 自動處理隱私權請求。 請參閱[本節](privacy-requests-api.md)。
 
 >[!NOTE]
 >
->* 如需關於個人資料及管理資料之不同實體 (資料控制方、資料處理方和資料主體) 的詳細資訊，請參閱[個人資料和人員](privacy-and-recommendations.md#personal-data)。
+>* 如需關於個人資料及管理資料之不同實體（資料控制方、資料處理方和資料主體）的詳細資訊，請參閱[個人資料和人員](privacy-and-recommendations.md#personal-data)。
 >* 若要深入瞭解隱私權要求，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/privacy/privacy){target=_blank}。
 
 <!--

@@ -8,7 +8,7 @@ exl-id: 12b173e9-5068-4d45-9e1e-2aecc9866e9c
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
 source-wordcount: '615'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -34,11 +34,11 @@ ht-degree: 1%
 1. 建立查詢。 在此處，目標是計算資料庫中所有收件者的最後已知建立日期。 因此，查詢不包含篩選器。
 1. 選取 **[!UICONTROL Add data]**。
 1. 在開啟的視窗中，依序選取&#x200B;**[!UICONTROL Data linked to the filtering dimension]**&#x200B;及&#x200B;**[!UICONTROL Filtering dimension data]**。
-1. 在&#x200B;**[!UICONTROL Data to add]**&#x200B;視窗中，新增計算收件者表格中&#x200B;**建立日期**&#x200B;欄位最大值的欄。 您可以使用運算式編輯器，或直接在&#x200B;**欄的欄位中輸入** max(@created)**[!UICONTROL Expression]**。 然後按一下&#x200B;**[!UICONTROL Finish]**&#x200B;按鈕。
+1. 在&#x200B;**[!UICONTROL Data to add]**&#x200B;視窗中，新增計算收件者表格中&#x200B;**建立日期**&#x200B;欄位最大值的欄。 您可以使用運算式編輯器，或直接在&#x200B;**[!UICONTROL Expression]**&#x200B;欄的欄位中輸入&#x200B;**max(@created)**。 然後按一下&#x200B;**[!UICONTROL Finish]**&#x200B;按鈕。
 
    ![](assets/datamanagement_usecase_2.png)
 
-1. 按一下&#x200B;**[!UICONTROL Edit additional data]**，然後再按&#x200B;**[!UICONTROL Advanced parameters...]**。 核取 **[!UICONTROL Disable automatic adding of the primary keys of the targeting dimension]** 選項。
+1. 按一下 **[!UICONTROL Edit additional data]**，之後 **[!UICONTROL Advanced parameters...]**。 核取 **[!UICONTROL Disable automatic adding of the primary keys of the targeting dimension]** 選項。
 
    此選項可確保不會顯示所有收件者，且不會保留明確新增的資料。 在此案例中，該日期是指上次建立收件者的日期。
 
@@ -73,7 +73,7 @@ ht-degree: 1%
 
    因此，用於條件的運算式為：
 
-   * **[!UICONTROL Expression]**： `toDate([target/@created])`。
+   * **[!UICONTROL Expression]**: `toDate([target/@created])`.
    * **[!UICONTROL Value]**： `toDate([datemax/expr####])`，其中expr####與彙總函式查詢中指定的彙總相關。
 
    ![](assets/datamanagement_usecase_4.png)

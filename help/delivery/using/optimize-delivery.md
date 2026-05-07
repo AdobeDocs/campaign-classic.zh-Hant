@@ -9,8 +9,8 @@ hide: true
 exl-id: 24b2ee47-bec7-43ce-81b3-0b2d1a5cebae
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '733'
-ht-degree: 4%
+source-wordcount: '758'
+ht-degree: 9%
 
 ---
 
@@ -30,9 +30,9 @@ ht-degree: 4%
 
   **秘訣** — 若要避免此問題，請與團隊的其他成員協調傳送排程，以確保最佳效能。
 
-* 工作流程執行：監控工作流程是避免平台效能問題的關鍵。 請遵循此檔案[中列出的准則](../../workflow/using/workflow-best-practices.md#execution-and-performance)。
+* 工作流程執行：監控工作流程是避免平台效能問題的關鍵。 請遵循此檔案[&#128279;](../../workflow/using/workflow-best-practices.md#execution-and-performance)中列出的准則。
 
-* 如果您符合資格，可以使用[效能監視](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=zh-Hant)功能，利用[Campaign控制面板功能](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html?lang=zh-Hant)來監視您的平台。
+* 如果您符合資格，可以使用[效能監視](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html?lang=zh-Hant)功能，利用[Campaign控制面板功能](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=zh-Hant)來監視您的平台。
 
 ## 檢查網路設定 {#network-config}
 
@@ -50,7 +50,7 @@ ht-degree: 4%
 
    * 在檢查電子郵件是否可傳遞時，您想要將焦點放在四個主要類別上：資料品質、訊息和內容、傳送基礎結構和信譽。 如需深入瞭解此主題，請參閱[本節](about-deliverability.md)。
 
-* 套用此檔案[中詳細](about-deliverability.md)的建議。
+* 套用此檔案[&#128279;](about-deliverability.md)中詳細的建議。
 
 * 請聯絡您的Adobe代表以尋求協助。
 
@@ -69,7 +69,7 @@ ht-degree: 4%
 * Adobe Campaign會根據傳回的錯誤型別管理錯誤地址。 如需詳細資訊，請參閱[本章節](delivery-failures-quarantine.md)。
 
 
-* 如果無效地址的比率過高，某些網際網路存取提供者會自動將電子郵件視為垃圾郵件。因此，隔離可讓您避免被這些提供者新增到封鎖清單中。
+* 如果無效地址的比率過高，某些網際網路存取提供者會自動將電子郵件視為垃圾郵件。 因此，隔離可讓您避免被這些提供者新增到封鎖清單中。
 
 * 隔離管理還能將錯誤的電話號碼排除在遞送服務之外，有助於降低簡訊傳送成本。
 

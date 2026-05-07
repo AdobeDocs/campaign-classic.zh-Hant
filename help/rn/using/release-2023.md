@@ -9,8 +9,8 @@ hide: true
 exl-id: 8ed11e96-9f23-4e2e-bae2-25c51cfb549a
 source-git-commit: 4cae5fdb2b78f446f84352046b523d8862e9060c
 workflow-type: tm+mt
-source-wordcount: '2336'
-ht-degree: 100%
+source-wordcount: '2391'
+ht-degree: 97%
 
 ---
 
@@ -25,11 +25,11 @@ _2023 年 12 月 5 日_
 ### 安全性增強功能 {#release-7-3-5-security}
 
 
-* 透過 Campaign Classic v7.3.5，驗證流程已獲得改善並提高安全性。技術操作者現在應使用 Adobe Identity Management System (IMS) 來連線至 Campaign。透過[此技術說明](../../technotes/using/ims-migration.md)了解如何移轉您現有的技術帳戶。
+* 透過 Campaign Classic v7.3.5，驗證流程已獲得改善並提高安全性。 技術操作者現在應使用 Adobe Identity Management System (IMS) 來連線至 Campaign。 透過[此技術說明](../../technotes/using/ims-migration.md)了解如何移轉您現有的技術帳戶。
 
-* 此外，為了強化安全性和驗證流程，Adobe Campaign 強烈建議將一般使用者驗證模式從登入/密碼原生驗證移轉至 Adobe Identity Management System (IMS)。閱讀此[技術說明](../../technotes/using/migrate-users-to-ims.md)，了解如何移轉操作者。
+* 此外，為了強化安全性和驗證流程，Adobe Campaign 強烈建議將一般使用者驗證模式從登入/密碼原生驗證移轉至 Adobe Identity Management System (IMS)。 閱讀此[技術說明](../../technotes/using/migrate-users-to-ims.md)，了解如何移轉操作者。
 
-* 現在，當網頁表單具有&#x200B;**待發佈**&#x200B;狀態，其不會自動上線。為了防止安全性問題，務必在&#x200B;**上線**&#x200B;之前予以發佈，並透過網頁瀏覽器中的網頁表單 URL 存取。[深入了解](../../web/using/publishing-a-web-form.md#life-cycle-of-a-form)
+* 現在，當網頁表單具有&#x200B;**待發佈**&#x200B;狀態，其不會自動上線。 為了防止安全性問題，務必在&#x200B;**上線**&#x200B;之前予以發佈，並透過網頁瀏覽器中的網頁表單 URL 存取。 [深入了解](../../web/using/publishing-a-web-form.md#life-cycle-of-a-form)
 
 ### 其他增強功能 {#release-7-3-5-other}
 
@@ -38,12 +38,12 @@ _2023 年 12 月 5 日_
 ### 修補程式 {#release-7-3-5-patches}
 
 * 修正使用來自 Google Big Query 資料庫的資料並更新 Oracle 資料庫中的資料時的問題： 工作流程暫存表格中所有金鑰皆設為 `0`。 (NEO-65091)
-* 修正將 Google Big Query 資料庫上的兩個查詢合併到&#x200B;**聯合**&#x200B;工作流程活動時，導致工作流程執行失敗的問題。(NEO-63705)
-* 修正了在按一下 Campaign 報告中的 `Back` 按鈕時要求使用者重新驗證的問題。(NEO-65087)
+* 修正將 Google Big Query 資料庫上的兩個查詢合併到&#x200B;**聯合**&#x200B;工作流程活動時，導致工作流程執行失敗的問題。 (NEO-63705)
+* 修正了在按一下 Campaign 報告中的 `Back` 按鈕時要求使用者重新驗證的問題。 (NEO-65087)
 * 修正資料庫清理工作流程中，在傳遞校樣之前刪除傳遞時所發生的錯誤。 (NEO-48114)
-* 修正連線至用戶端主控台時的問題：最近 TLS 驗證更新導致連線錯誤。(NEO-50488)
-* 修正 Campaign 升級至 7.3.1 後 HTTP Proxy 驗證的問題。行銷活動工作流程中的 HTTP 請求失敗，因為 `error 407 – proxy auth required is returned`。 (NEO-49624)
-* 修正&#x200B;**指令碼**&#x200B;工作流程活動中 GPG 解密的間歇性失敗。相關的錯誤訊息為：`gpg: decryption failed: No secret key`。(NEO-50257)
+* 修正連線至用戶端主控台時的問題：最近 TLS 驗證更新導致連線錯誤。 (NEO-50488)
+* 修正Campaign升級至7.3.1後HTTP Proxy驗證的問題。 行銷活動工作流程中的HTTP要求失敗，出現`error 407 – proxy auth required is returned`。 (NEO-49624)
+* 修正&#x200B;**指令碼**&#x200B;工作流程活動中 GPG 解密的間歇性失敗。 相關的錯誤訊息為：`gpg: decryption failed: No secret key`。 (NEO-50257)
   <!--* Workflow temporary tables now have a primary index in Teradata with a Federated Data Access (FDA) connection. (NEO-62575)-->
 
 
@@ -78,9 +78,9 @@ _2023 年 9 月 7 日_
 
 * 已修改伺服器設定檔案 (serverConf.xml) 中的 MaxWorkingSetMb 參數，以最佳化傳遞的記憶體配置。 (NEO-49204)
 * 已增強 BigQuery 外部帳戶，並新增用於設定 GCloud SDK 的選項。 (NEO-63879) [閱讀全文](../../installation/using/configure-fda-google-big-query.md#google-external)
-* 已在伺服器設定檔案 (serverConf.xml) 中新增 `cusHeader` 區段。其可讓您從外部伺服器上傳檔案時新增自訂標頭。 (NEO-58339) [閱讀全文](../../installation/using/the-server-configuration-file.md#cusheaders)。
+* 已在伺服器設定檔案 (serverConf.xml) 中新增 `cusHeader` 區段。 其可讓您從外部伺服器上傳檔案時新增自訂標頭。 (NEO-58339) [閱讀全文](../../installation/using/the-server-configuration-file.md#cusheaders)。
 * 已改善追蹤記錄管理，以避免 lastMsgId 出現負值的 ID。 其已從 int32 變更為 int64。 (NEO-52290)
-* 已新增現成可用的中間來源 (傳遞統計資料) 工作流程。 這個新的工作流程會將傳遞統計資料 (nms:deliveryStat) 從 MID 同步至行銷執行個體。(NEO-36802)
+* 已新增現成可用的中間來源 (傳遞統計資料) 工作流程。 這個新的工作流程會將傳遞統計資料 (nms:deliveryStat) 從 MID 同步至行銷執行個體。 (NEO-36802)
 
 ### 修補程式 {#release-7-3-4-patches}
 
@@ -108,11 +108,11 @@ _2023 年 9 月 7 日_
 * 已修正可能影響傳遞效能的查詢管理問題。 (NEO-49991)
 * 已修正在行銷活動工作流程傳遞活動中使用外部帳戶時，可能導致發生外部帳戶設定問題的問題。 (NEO-49959)
 * 已修正傳送推播通知時發生的效能問題。 (NEO-49953)
-已修正匯出報告時，可能導致日文字元無法正確顯示的問題。(NEO-49308)
+修正在匯出報告時可能導致日文字元顯示錯誤的問題(NEO-49308)。
 * 已修正造成 Tomcat 錯誤報告顯示過多錯誤詳細資料的問題。 (NEO-49029)
 * 已修正使用大量活動內容時，可能導致發生傳遞錯誤的問題。 (NEO-48807)
-* 已修正可能導致&#x200B;**更新資料**&#x200B;工作流程活動無法正常運作的問題。(NEO-48140)
-* 已修正使用與電子郵件不同的外部帳戶無法對傳遞同步點擊追蹤資料的問題。(NEO-47277)
+* 已修正可能導致&#x200B;**更新資料**&#x200B;工作流程活動無法正常運作的問題。 (NEO-48140)
+* 修正了無法使用電子郵件以外的外部帳戶來同步傳遞的點選追蹤資料的問題。(NEO-47277)
 * 已修正無法在訊息中心行銷執行個體上同步即時追蹤記錄的問題。 (NEO-42540)
 * 已修正 Snowflake 資料庫資料表無法在結構描述的探索視窗中顯示工作區前置詞的問題。 (NEO-40297)
 * 已修正導致 `<img-amp>` 標記無法在電子郵件內容中運作的問題。 (NEO-38685)
@@ -125,7 +125,7 @@ _2023 年 9 月 7 日_
 
 >[!AVAILABILITY]
 >
->此版本提供特定的 Campaign v7.3.3.IMS 修補程式升級 - 如果沒有其他修補程式套用至您的環境。它帶來了 [Adobe Identity Management System (IMS) 安全性更新，包含 v7.3.5](#release-7-3-5-security) 至現有的 v7.3.3 環境。
+>此版本提供特定的 Campaign v7.3.3.IMS 修補程式升級 - 如果沒有其他修補程式套用至您的環境。 它帶來了 [Adobe Identity Management System (IMS) 安全性更新，包含 v7.3.5](#release-7-3-5-security) 至現有的 v7.3.3 環境。
 
 
 _2023 年 3 月 20 日_
@@ -133,14 +133,14 @@ _2023 年 3 月 20 日_
 
 ### 安全性增強功能 {#release-7-3-3-security}
 
-* 為了最佳化安全性，已將 Tomcat 從 8.5.81 版更新至 8.5.85 版。(NEO-56936)
+* 為了最佳化安全性，已將 Tomcat 從 8.5.81 版更新至 8.5.85 版。 (NEO-56936)
 
 
 ### 功能改進 {#release-7-3-3-improvements}
 
-* 已改善「帳單」工作流程以最佳化效能。(NEO-47658)
-* 已改善追蹤工作流程，以在傳送大小較大的情況下最佳化效能。(NEO-45064)
-* 已改善追蹤管理，以修正 URL 中動態參數可能出現的問題。追蹤管理 v3 現在可處理 ajax 類型的 URL (參數在「#」之後)，並避免協力第三方修改追蹤 URL。若要套用此變更，您必須聯絡 Adobe。(NEO-46535)
+* 已改善「帳單」工作流程以最佳化效能。 (NEO-47658)
+* 已改善追蹤工作流程，以在傳送大小較大的情況下最佳化效能。 (NEO-45064)
+* 已改善追蹤管理，以修正 URL 中動態參數可能出現的問題。 追蹤管理 v3 現在可處理 ajax 類型的 URL (參數在「#」之後)，並避免協力第三方修改追蹤 URL。 若要套用此變更，您必須聯絡 Adobe。 (NEO-46535)
 * 自此版本開始，已傳送電子郵件上的追蹤連結在升級期間仍可運作。 [閱讀更多](../../platform/using/faq-build-upgrade.md)
 
 <!--To apply this change, the marketing, tracking and mid servers need to be updated to 7.3.3. To enable the new tracking management mode, set the `emailLinksVersion` parameter to '3' in the configuration file of the marketing server. (NEO-46535)-->
@@ -151,9 +151,9 @@ _2023 年 3 月 20 日_
 
 ### 修補程式 {#release-7-3-3-patches}
 
-* 修正了可能無法從控制項執行個體 (交易式訊息內容) 傳送 iOS 校訂推播通知的問題。(NEO-54713)
+* 修正了可能無法從控制項執行個體 (交易式訊息內容) 傳送 iOS 校訂推播通知的問題。 (NEO-54713)
 * 修正了無法在數位內容編輯器 (DCE) 捲動&#x200B;**編輯**&#x200B;索引標籤的問題。 (NEO-54474)
-* 修正當兩個擴充活動在其連結中使用相同名稱識別碼時，導致第二個擴充活動使用第一個活動的連結問題。(NEO-48851)
+* 修正當兩個擴充活動在其連結中使用相同名稱識別碼時，導致第二個擴充活動使用第一個活動的連結問題。 (NEO-48851)
 
 ## 版本 7.3.2 - 版本編號 9356 {#release-7-3-2}
 
@@ -162,7 +162,7 @@ _2023 年 3 月 20 日_
 
 >[!AVAILABILITY]
 >
->此版本提供特定的 Campaign v7.3.2.IMS 修補程式升級 - 如果沒有其他修補程式套用至您的環境。它帶來了 [Adobe Identity Management System (IMS) 安全性更新，包含 v7.3.5](#release-7-3-5-security) 至現有的 v7.3.3 環境。
+>此版本提供特定的 Campaign v7.3.2.IMS 修補程式升級 - 如果沒有其他修補程式套用至您的環境。 它帶來了 [Adobe Identity Management System (IMS) 安全性更新，包含 v7.3.5](#release-7-3-5-security) 至現有的 v7.3.3 環境。
 
 _2022 年 11 月 21 日_
 
@@ -170,9 +170,9 @@ _2022 年 11 月 21 日_
 
 * Adobe Campaign 現在相容於 PostgreSQL 14。 如需詳細資訊，請參閱本[技術說明](../../technotes/using/tech-stack-upgrade.md)。
 
-* Microsoft Internet Explorer 11 生命週期結束後，用戶端主控台中的儀表板轉譯引擎現在使用 Edge Chromium。(NEO-20741)
+* Microsoft Internet Explorer 11 生命週期結束後，用戶端主控台中的儀表板轉譯引擎現在使用 Edge Chromium。 (NEO-20741)
 
-瞭解更多與[ Campaign 相容性矩陣相關的資訊](../../rn/using/compatibility-matrix.md#RDBMSservers)。
+瞭解更多與[&#x200B; Campaign 相容性矩陣相關的資訊](../../rn/using/compatibility-matrix.md#RDBMSservers)。
 
 >[!CAUTION]
 >
@@ -188,7 +188,7 @@ _2022 年 11 月 21 日_
 
 ### 已棄用功能  {#release-7-3-2-deprecated}
 
-* 使用 Facebook 的社交行銷現已棄用。您可以使用 X (原 Twitter) 整合在社交媒體上發佈貼文，或使用 Adobe 建立自訂通道。
+* 使用 Facebook 的社交行銷現已棄用。 您可以使用 X (原 Twitter) 整合在社交媒體上發佈貼文，或使用 Adobe 建立自訂通道。
 * ACS Connector (Prime 產品) 現已棄用。 您可以使用 Campaign 匯出/匯入功能，在兩個產品中擷取和插入資料。
 
 在[與已棄用和已移除的功能頁面](deprecated-features.md)瞭解更多相關的資訊。
@@ -212,7 +212,7 @@ _2022 年 11 月 21 日_
 * 修正了使用權杖式驗證時，無法從執行實例傳送 iOS 行動應用程式通知的問題。 (NEO-45961)
 * 修正當有太多要同步的 broadlog 時，**傳遞能力重新整理**&#x200B;工作流程 (deliverabilityUpdate) 卡住的問題。 (NEO-48287)
 * 修正封鎖&#x200B;**訊息中心同步** (mcSynch) 工作流程的事件類型問題。
-* 修正在&#x200B;**查詢** 工作流程活動的其他資料中新增&#x200B;**已開啟的收件者**  (estimatedRecipientOpen) 指標導致錯誤的問題。(NEO-46665)
+* 修正在&#x200B;**查詢** 工作流程活動的其他資料中新增&#x200B;**已開啟的收件者**  (estimatedRecipientOpen) 指標導致錯誤的問題。 (NEO-46665)
 * 修正在同一執行個體上安裝訊息中心控制和執行套件時失敗的&#x200B;**帳單**&#x200B;工作流程的問題。 (NEO-47674)
 * 修正將主要金鑰定義為字串而非整數的表格時失敗的&#x200B;**帳單**&#x200B;工作流程的問題。 (NEO-46254)
 * 修正工作流程名稱太長時的熱度圖篩選器問題。 (NEO-46301)

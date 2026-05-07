@@ -7,7 +7,7 @@ hide: true
 exl-id: 30a9bd2a-afb1-481c-ab5f-5acebd9cbb5a
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '333'
+source-wordcount: '335'
 ht-degree: 10%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 10%
 
 **排程器**&#x200B;是持續性工作，會在排程所指定的時間啟動其轉換。
 
-**[!UICONTROL Scheduler]** 活動應視為已排程的開始。圖表中的活動定位規則與活動 **[!UICONTROL Start]** 的定位規則相同。此活動不得具有入站轉變。
+**[!UICONTROL Scheduler]** 活動應視為已排程的開始。 圖表中的活動定位規則與活動 **[!UICONTROL Start]** 的定位規則相同。 此活動不得具有入站轉變。
 
 ## 最佳實務 {#best-practices}
 

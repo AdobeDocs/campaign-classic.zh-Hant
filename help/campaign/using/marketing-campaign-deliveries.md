@@ -8,7 +8,7 @@ hide: true
 exl-id: 1dd3c080-444d-45f8-9562-d2d01a9d2860
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1491'
+source-wordcount: '1511'
 ht-degree: 1%
 
 ---
@@ -116,13 +116,13 @@ ht-degree: 1%
 
 ## 管理相關檔案 {#managing-associated-documents}
 
-您可以為行銷活動跟各種檔案建立關聯：報告、照片、網頁、圖表等。這些檔案可以是任何格式（Microsoft Word、PowerPoint、PNG、JPG、Acrobat PDF等）。 在本節[中瞭解如何將檔案與行銷活動](../../campaign/using/marketing-campaign-assets.md)連結。
+您可以將各種檔案與行銷活動建立關聯：報告、照片、網頁、圖表等。這些檔案可以是任何格式（Microsoft Word、PowerPoint、PNG、JPG、Acrobat PDF等）。 在本節[&#128279;](../../campaign/using/marketing-campaign-assets.md)中瞭解如何將檔案與行銷活動連結。
 
 >[!IMPORTANT]
 >
 >此模式為小型檔案保留。
 
-在行銷活動中，您也可以參考其他專案，例如促銷優惠券、與特定分公司或商店相關的特殊優惠方案等。 當這些元素包含在大綱中時，它們可以與直接郵件傳遞相關聯。 [了解更多資訊](#associating-and-structuring-resources-linked-via-a-delivery-outline)。
+在行銷活動中，您也可以參考其他專案，例如促銷優惠券、與特定分公司或商店相關的特殊優惠方案等。當這些元素包含在大綱中時，它們可以與直接郵件傳遞相關聯。 [了解更多資訊](#associating-and-structuring-resources-linked-via-a-delivery-outline)。
 
 >[!NOTE]
 >
@@ -134,7 +134,7 @@ ht-degree: 1%
 
 **[!UICONTROL Documents]**&#x200B;索引標籤包含：
 
-* 內容所需的所有檔案清單（範本、影像等），可由Adobe Campaign運運算元透過適當的許可權從本機下載。
+* 內容所需的所有檔案清單（範本、影像等） 這些軟體可由具有適當許可權的Adobe Campaign運運算元在本機下載，
 * 包含路由器資訊的檔案（如果有的話）。
 
 檔案透過&#x200B;**[!UICONTROL Edit > Documents]**&#x200B;索引標籤連結至方案或行銷活動。
@@ -161,7 +161,7 @@ ht-degree: 1%
 >
 >傳遞大綱僅用於直接郵件行銷活動的內容。
 
-傳遞大網表示在公司中為特定行銷活動建立的結構化元素集（檔案、分支/商店、促銷優惠券等）。
+傳遞大網表示一組結構化元素（檔案、分支/商店、促銷優惠券等） 在公司中為特定行銷活動建立。
 
 這些元素會分組在傳遞大網中，而特定傳遞大網將與傳遞相關聯；它將在傳送至&#x200B;**服務提供者**&#x200B;的擷取檔案中參考，以便附加至傳遞。 例如，您可以建立參考分支及其使用之行銷手冊的傳遞大網。
 
@@ -169,7 +169,7 @@ ht-degree: 1%
 
 #### 建立大綱 {#creating-an-outline}
 
-若要建立大綱，請按一下相關行銷活動之&#x200B;**[!UICONTROL Delivery outlines]**&#x200B;索引標籤中的&#x200B;**[!UICONTROL Edit > Documents]**&#x200B;子索引標籤。
+若要建立大綱，請按一下相關行銷活動之&#x200B;**[!UICONTROL Edit > Documents]**&#x200B;索引標籤中的&#x200B;**[!UICONTROL Delivery outlines]**&#x200B;子索引標籤。
 
 >[!NOTE]
 >
@@ -197,7 +197,7 @@ ht-degree: 1%
 
   ![](assets/s_ncs_user_op_add_composition_field_button.png)
 
-* 資源是在行銷資源儀表板中產生的行銷資源，透過&#x200B;**[!UICONTROL Resources]**&#x200B;標籤的&#x200B;**[!UICONTROL Campaigns]**&#x200B;連結存取。
+* 資源是在行銷資源儀表板中產生的行銷資源，透過&#x200B;**[!UICONTROL Campaigns]**&#x200B;標籤的&#x200B;**[!UICONTROL Resources]**&#x200B;連結存取。
 
   ![](assets/s_ncs_user_mkg_resource_ovv.png)
 
@@ -221,7 +221,7 @@ ht-degree: 1%
 
 #### 擷取結果 {#extraction-result}
 
-在擷取並傳送給服務提供者的檔案中，大綱的名稱以及適當時其特性（成本、說明等）會根據與服務提供者相關的匯出範本中的資訊新增到內容中。
+在擷取並傳送給服務提供者的檔案中，大綱的名稱以及適當時其特徵（成本、說明等） 會根據與服務提供者相關聯之匯出範本中的資訊來新增至內容。
 
 在下列範例中，與傳遞相關的大綱的標籤、預估成本和說明將新增至摘取檔案。
 

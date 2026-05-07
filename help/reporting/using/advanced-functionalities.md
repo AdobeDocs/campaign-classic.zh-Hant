@@ -7,7 +7,7 @@ badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v
 exl-id: 8b51d0fc-1692-41cd-9aa8-3bb8f4ee454e
 source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
-source-wordcount: '610'
+source-wordcount: '609'
 ht-degree: 4%
 
 ---
@@ -66,7 +66,7 @@ if( ctx.@_historyId.toString().length == 0 )
 
 ## 新增URL引數 {#defining-additional-settings}
 
-**[!UICONTROL Parameters]**&#x200B;報告屬性[的](../../reporting/using/properties-of-the-report.md)索引標籤可讓您定義報告的其他設定：這些設定將在呼叫期間傳遞到URL。
+[報告屬性](../../reporting/using/properties-of-the-report.md)的&#x200B;**[!UICONTROL Parameters]**&#x200B;索引標籤可讓您定義報告的其他設定：這些設定將在呼叫期間傳遞到URL。
 
 >[!CAUTION]
 >

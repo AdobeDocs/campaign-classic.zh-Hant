@@ -7,7 +7,7 @@ hide: true
 exl-id: c166409b-e040-491e-840a-a41310935d75
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '136'
+source-wordcount: '146'
 ht-degree: 3%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 3%
 
 
 
-Adobe Campaign提供&#x200B;**分散式行銷**&#x200B;應用程式，用於在中央實體（總部、行銷部門等）與當地實體（銷售點、地區代理等）之間實施合作行銷活動。 此合作是以稱為&#x200B;**[!UICONTROL list of campaign packages]**&#x200B;的共用工作區為基礎，集中式建立的行銷活動範本和執行個體會提供給本機實體。
+Adobe Campaign提供&#x200B;**分散式行銷**&#x200B;應用程式，用於在中央實體（總部、行銷部門等）之間實施合作行銷活動 和地方實體（銷售點、地區代理等）。 此合作是以稱為&#x200B;**[!UICONTROL list of campaign packages]**&#x200B;的共用工作區為基礎，集中式建立的行銷活動範本和執行個體會提供給本機實體。
 
 中央實體提供當地實體可使用的行銷活動。 行銷活動由代表本機或合作行銷活動的套件具體化。 若要使用行銷活動，當地實體必須對其進行訂購，並且訂單必須獲得核准。
 

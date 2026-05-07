@@ -10,14 +10,14 @@ topic-tags: asset-sharing
 exl-id: b28aa5a5-afba-458b-8a85-375493c6c836
 source-git-commit: a38d53f4b37aadbc53446b5e399af2eae56c12af
 workflow-type: tm+mt
-source-wordcount: '167'
+source-wordcount: '190'
 ht-degree: 0%
 
 ---
 
 # 與Adobe Experience Cloud共用資產{#sharing-assets-with-adobe-experience-cloud}
 
-[Experience CloudAssets](https://experienceleague.adobe.com/zh-hant/docs/core-services/interface/services/audiences/overview){target="_blank"}提供單一集中存放庫，內含您可跨解決方案共用的行銷資產。 資產是數位檔案、影像、視訊或音訊檔案。
+[Experience Cloud Assets](https://experienceleague.adobe.com/zh-hant/docs/core-services/interface/services/audiences/overview){target="_blank"}提供單一集中存放庫，內含您可跨解決方案共用的行銷資產。 資產是數位檔案、影像、視訊或音訊檔案。
 
 資產服務包括：
 

@@ -8,8 +8,8 @@ level: Beginner
 exl-id: 711b84cd-bac8-4f1a-9999-0124fbfc3a01
 source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
 workflow-type: tm+mt
-source-wordcount: '89'
-ht-degree: 25%
+source-wordcount: '100'
+ht-degree: 23%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 25%
 
 清單是一組靜態的設定檔，可在傳遞動作中定位，或在匯入作業或工作流程執行期間更新。 例如，透過查詢而從資料庫中摘取出的群體可形成一個清單。
 
-清單是透過&#x200B;**[!UICONTROL Lists]**&#x200B;索引標籤中的&#x200B;**[!UICONTROL Profiles and targets]**&#x200B;連結建立及管理的。
+清單是透過&#x200B;**[!UICONTROL Profiles and targets]**&#x200B;索引標籤中的&#x200B;**[!UICONTROL Lists]**&#x200B;連結建立及管理的。
 
 ![](assets/s_ncs_user_interface_group_link.png)
 

@@ -8,7 +8,7 @@ hide: true
 exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1531'
+source-wordcount: '1551'
 ht-degree: 11%
 
 ---
@@ -164,7 +164,7 @@ ht-degree: 11%
 
   使用波段時，您可以將訊息數量限製為每天20則，例如考量客服中心的每日處理能力。
 
-  若要這麼做，請選取&#x200B;**[!UICONTROL Schedule multiple waves of the same size]**&#x200B;選項。 輸入&#x200B;**[!UICONTROL 20]**&#x200B;作為波段大小，並在&#x200B;**[!UICONTROL 1d]**&#x200B;欄位中輸入&#x200B;**[!UICONTROL Period]**。
+  若要這麼做，請選取&#x200B;**[!UICONTROL Schedule multiple waves of the same size]**&#x200B;選項。 輸入&#x200B;**[!UICONTROL 20]**&#x200B;作為波段大小，並在&#x200B;**[!UICONTROL Period]**&#x200B;欄位中輸入&#x200B;**[!UICONTROL 1d]**。
 
   ![](assets/s_ncs_user_wizard_waves_call_center.png)
 
@@ -190,11 +190,11 @@ ht-degree: 11%
 
 * **[!UICONTROL Delivery duration]**&#x200B;欄位可讓您輸入全域傳遞重試的限制。 這表示 Adobe Campaign 會傳送從開始日期開始的訊息，然後，對於僅傳回錯誤的訊息，會執行一般、可設定的重試，直到達到效度限制為止。
 
-  您也可以選擇指定日期。若要這麼做，請選取&#x200B;**[!UICONTROL Explicitly set validity dates]**。 在此情況下，傳遞和有效期限制日期也讓您指定時間。預設使用目前時間，但您可以直接在輸入欄位中修改。
+  您也可以選擇指定日期。 若要這麼做，請選取&#x200B;**[!UICONTROL Explicitly set validity dates]**。 在此情況下，傳遞和有效期限制日期也讓您指定時間。 預設使用目前時間，但您可以直接在輸入欄位中修改。
 
   >[!IMPORTANT]
   >
-  >針對託管或混合式安裝，如果您已升級至[Enhanced MTA](sending-with-enhanced-mta.md)，則只有在設為&#x200B;**[!UICONTROL Delivery duration]** 3.5天或更短時間時，才會使用Campaign電子郵件傳遞中的&#x200B;**設定**。 如果您定義的值超過3.5天，則不會考慮該值。
+  >針對託管或混合式安裝，如果您已升級至[Enhanced MTA](sending-with-enhanced-mta.md)，則只有在設為&#x200B;**3.5天或更短時間時，才會使用Campaign電子郵件傳遞中的&#x200B;**&#x200B;[!UICONTROL Delivery duration]&#x200B;**設定**。 如果您定義的值超過3.5天，則不會考慮該值。
 
 * **資源效度限制**： **[!UICONTROL Validity limit]**&#x200B;欄位是用於上傳的資源，主要用於映象頁面和影像。 本頁上的資源在限定時間內有效（以節省磁碟空間）。
 

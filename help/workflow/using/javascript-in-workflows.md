@@ -7,7 +7,7 @@ hide: true
 exl-id: 7213ea64-3dec-4b16-9d93-4ae941ddfaa7
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1695'
+source-wordcount: '1825'
 ht-degree: 3%
 
 ---
@@ -44,16 +44,16 @@ ht-degree: 3%
 
 ## 範例1：寫入資料庫{#write-example}
 
-若要寫入資料庫，您可以在`Write`結構描述上使用靜態`xtk:session`方法：
+若要寫入資料庫，您可以在`xtk:session`結構描述上使用靜態`Write`方法：
 
 1. 以XML撰寫寫入要求。
 
 1. 寫入記錄：
 
-   1. 呼叫`Write`結構描述上的`xtk:session`方法。
+   1. 呼叫`xtk:session`結構描述上的`Write`方法。
 
       >[!IMPORTANT]
-      > 如果您使用Adobe Campaign v8，建議您針對Snowflake表格中的&#x200B;**方法，搭配**&#x200B;擷取&#x200B;**和**&#x200B;資料更新/刪除`Write` API使用預備機制。 [閱讀更多](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html){target="_blank"}。
+      > 如果您使用Adobe Campaign v8，建議您針對Snowflake表格中的`Write`方法，搭配&#x200B;**擷取**&#x200B;和&#x200B;**資料更新/刪除** API使用預備機制。 [閱讀更多](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html){target="_blank"}。
 
    1. 傳遞XML程式碼作為寫入要求的引數。
 
@@ -122,7 +122,7 @@ xtk.session.DeleteCollection(
 
 ### 步驟2：寫入記錄
 
-呼叫`Write`結構描述上的非靜態`xtk:session`方法：
+呼叫`xtk:session`結構描述上的非靜態`Write`方法：
 
 ```javascript
 xtk.session.Write(myXML)
@@ -246,7 +246,7 @@ var query = xtk.queryDef.create(
 
 請依照下列步驟操作：
 
-1. 呼叫`ExecuteQuery`實體上的`queryDef`方法：
+1. 呼叫`queryDef`實體上的`ExecuteQuery`方法：
 
    ```javascript
    var res = query.ExecuteQuery()
@@ -435,7 +435,7 @@ xtk.workflow.PostEvent(
 
    使用`for each`回圈來擷取結果。
 
-### 具有`queryDef`子句的`select`方法語法
+### 具有`select`子句的`queryDef`方法語法
 
 ```xml
 <queryDef schema="schema_key" operation="operation_type">
@@ -563,7 +563,7 @@ for each (var w in res.recipient)
 * `delete`作業
 
 >[!IMPORTANT]
-> 如果您使用Adobe Campaign v8，建議您針對Snowflake表格中的&#x200B;**方法，搭配**&#x200B;擷取&#x200B;**和**&#x200B;資料更新/刪除`Write` API使用預備機制。 [閱讀更多](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html){target="_blank"}。
+> 如果您使用Adobe Campaign v8，建議您針對Snowflake表格中的`Write`方法，搭配&#x200B;**擷取**&#x200B;和&#x200B;**資料更新/刪除** API使用預備機制。 [閱讀更多](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html){target="_blank"}。
 
 #### 範例1：插入或更新記錄
 
@@ -621,7 +621,7 @@ xtk.session.Write(
 * 方法：
    * [建立](https://experienceleague.adobe.com/developer/campaign-api/api/f-create.html?lang=zh-Hant)
    * [DeleteCollection](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-DeleteCollection.html?lang=zh-Hant)
-   * [ExecuteQuery](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-ExecuteQuery.html?lang=zh-Hant)
+   * [Executequery](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-ExecuteQuery.html?lang=zh-Hant)
    * [PostEvent](https://experienceleague.adobe.com/developer/campaign-api/api/sm-workflow-PostEvent.html?lang=zh-Hant)
    * [寫入](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-Write.html?lang=zh-Hant)
 * [logInfo函式](https://experienceleague.adobe.com/developer/campaign-api/api/f-logInfo.html?lang=zh-Hant)

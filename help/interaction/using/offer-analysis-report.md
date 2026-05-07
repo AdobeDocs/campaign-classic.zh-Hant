@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: 優惠分析報告
-description: 優惠分析報告
+title: 產品建議分析報告
+description: 產品建議分析報告
 feature: Interaction, Offers, Reporting
 audience: interaction
 content-type: reference
@@ -14,7 +14,7 @@ ht-degree: 10%
 
 ---
 
-# 優惠分析報告{#offer-analysis-report}
+# 產品建議分析報告{#offer-analysis-report}
 
 
 

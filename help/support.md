@@ -7,8 +7,8 @@ hide: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '632'
-ht-degree: 67%
+source-wordcount: '842'
+ht-degree: 70%
 
 ---
 
@@ -111,7 +111,7 @@ ht-degree: 67%
 ### 子網域和憑證
 
 您可以監視子網域及其憑證。 請前往下列頁面，瞭解更多資訊：
-* [子網域品牌](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/subdomains-branding.html?lang=zh-Hant)
+* [子網域品牌化](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/subdomains-branding.html?lang=zh-Hant)
 * [設定新子網域](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=zh-Hant)
 * [監視 SSL 憑證](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html?lang=zh-Hant)
 
@@ -119,15 +119,15 @@ ht-degree: 67%
 
 瞭解如何在「控制面板」中管理Campaign Classic執行個體設定。 請前往下列頁面，瞭解更多資訊：
 * [在允許清單](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=zh-Hant)上新增IP以存取您的Campaign執行個體
-* [管理URL許可權](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=zh-Hant)
-* [存取執行個體詳細資料](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html?lang=zh-Hant)
-* [管理資料加密的GPG金鑰](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=zh-Hant)
+* [管理URL](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=zh-Hant)
+* [存取執行個體詳細資訊](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html?lang=zh-Hant)
+* [管理用於資料加密的GPG金鑰](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=zh-Hant)
 
 ## 請求協助 {#support}
 
 <img src="platform/using/assets/do-not-localize/icon-support.svg" width="60px">
 
-新的票證系統已透過[Adobe Admin Console](https://adminconsole.adobe.com/overview){_blank}啟動。 新系統要求每個使用者都需要有新的個別帳戶，並擁有正確的權限。 如果您發現無法使用 Adobe ID 登入，請透過 Experience League 請求存取權限，客戶服務團隊會盡快為您設定。[了解更多](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html)
+新的票證系統已透過[Adobe Admin Console](https://adminconsole.adobe.com/overview){_blank}啟動。 新系統要求每個使用者都需要有新的個別帳戶，並擁有正確的權限。 如果您發現無法使用 Adobe ID 登入，請透過 Experience League 請求存取權限，客戶服務團隊會盡快為您設定。 [了解更多](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html)
 
 ### 詢問專家！
 
@@ -139,6 +139,6 @@ ht-degree: 67%
 
 ### 建立票證或開始聊天
 
-建立案例可讓您聯絡 Adobe 客戶支援團隊，瞭解您在 Adobe 產品上遇到的任何問題。為協助解決或疑難排解您的問題，您可使用 Adobe Admin Console 與 Adobe 客戶支援部門進行交談。
+建立案例可讓您聯絡 Adobe 客戶支援團隊，瞭解您在 Adobe 產品上遇到的任何問題。 為協助解決或疑難排解您的問題，您可使用 Adobe Admin Console 與 Adobe 客戶支援部門進行交談。
 
-如要在該新系統中記錄問題或啟動聊天，請連結至 [Adobe Admin Console](https://adminconsole.adobe.com/overview){_blank}。請依照[本頁](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html){_blank}中說明的詳細過程進行操作。
+如要在該新系統中記錄問題或啟動聊天工作階段，請連結到 [Adobe Admin Console](https://adminconsole.adobe.com/overview){_blank}。 請依照[此頁面](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html){_blank}中說明的詳細過程進行操作。

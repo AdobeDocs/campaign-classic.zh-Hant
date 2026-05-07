@@ -10,8 +10,8 @@ topic-tags: database-maintenance
 exl-id: a586d70b-1b7f-47c2-a821-635098a70e45
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1235'
-ht-degree: 1%
+source-wordcount: '1267'
+ht-degree: 2%
 
 ---
 
@@ -84,7 +84,7 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->Adobe強烈建議不要在Campaign Adobe託管的資料庫設定上執行VACUUM FULL。建議的維護作業僅是內部部署安裝的指南。 對於自訂表格實作和結構描述，使用VACUUM FULL時，需自行承擔風險，因為VACUUM — 不進行監視 — 可以獨佔鎖定表格，導致查詢逾時，並且在某些情況下會鎖定整個資料庫。
+>Adobe強烈建議不要在Campaign Adobe託管的資料庫設定上執行VACUUM FULL。建議的維護作業僅適用於ON-PREMISE安裝。 對於自訂表格實作和結構描述，使用VACUUM FULL時，需自行承擔風險，因為VACUUM — 不進行監視 — 可以獨佔鎖定表格，導致查詢逾時，並且在某些情況下會鎖定整個資料庫。
 
 在PostgreSQL中，您可以使用下列一般關鍵字：
 
@@ -157,7 +157,7 @@ VACUUM (FULL, ANALYZE, VERBOSE) nmsmirrorpageinfo;
 
 以下是使用特定函式產生必要DDL的表格重組範例。 下列SQL可讓您建立兩個新函式： **GenRebuildTablePart1**&#x200B;和&#x200B;**GenRebuildTablePart2**，它們可用來產生必要的DDL以重新建立資料表。
 
-* 第一個函式可讓您建立工作表(**_tmp**&#x200B;此處)，它是原始表格的副本。
+* 第一個函式可讓您建立工作表（**_tmp**&#x200B;此處），它是原始表格的副本。
 * 然後第二個函式會刪除原始表格並重新命名工作表及其索引。
 * 使用兩個函式而非一個函式，表示如果第一個函式失敗，您就不會有刪除原始表格的風險。
 

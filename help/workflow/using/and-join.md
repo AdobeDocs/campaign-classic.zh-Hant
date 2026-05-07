@@ -7,8 +7,8 @@ hide: true
 exl-id: 8b6d5c03-e104-4cf0-82ab-a08467e3e478
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '190'
-ht-degree: 14%
+source-wordcount: '195'
+ht-degree: 22%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 14%
 
 活動的傳出已傳送母體是透過在活動的入站轉變中選擇主集來決定。
 
-出站轉變只能包含其中一個入站轉變母體。 如果未設定活動，出站轉變將會隨機選取其中一個入站母體。
+傳出轉變只能包含其中一個傳入轉變群體。 如果未設定活動，出站轉變將會隨機選取其中一個入站母體。
 
 >[!CAUTION]
 >

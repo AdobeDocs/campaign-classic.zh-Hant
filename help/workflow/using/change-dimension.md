@@ -7,7 +7,7 @@ hide: true
 exl-id: c3de99f8-089f-4c7c-be11-f375a9463eaa
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '372'
 ht-degree: 2%
 
 ---
@@ -58,7 +58,7 @@ ht-degree: 2%
      >
      >如需建立和管理其他資料行的詳細資訊，請參閱[新增資料](query.md#adding-data)。
 
-   * 選取前一個目標維度（在軸切換前），並在收件者的&#x200B;**[!UICONTROL Zip Code]**&#x200B;子樹狀結構中選取&#x200B;**[!UICONTROL Location]**，然後按一下&#x200B;**[!UICONTROL Edit expression]**。
+   * 選取前一個目標維度（在軸切換前），並在收件者的&#x200B;**[!UICONTROL Location]**&#x200B;子樹狀結構中選取&#x200B;**[!UICONTROL Zip Code]**，然後按一下&#x200B;**[!UICONTROL Edit expression]**。
 
      ![](assets/wf_change-dimension_sample_02.png)
 

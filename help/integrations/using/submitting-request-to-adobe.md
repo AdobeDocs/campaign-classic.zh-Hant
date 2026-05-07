@@ -10,8 +10,8 @@ topic-tags: audience-sharing
 exl-id: f3c19fcd-12cb-4ca3-b4b7-7dc4be57f4ea
 source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
-source-wordcount: '130'
-ht-degree: 2%
+source-wordcount: '146'
+ht-degree: 6%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td> <strong>組織ID</strong><br /> </td> 
-   <td> 您的組織ID。 <br>若要尋找您的組織識別碼，請參閱<a href="https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-Hant">此頁面</a></td> 
+   <td> 您的組織ID。<br> 若要尋找您的組織ID，請參閱<a href="https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-Hant">此頁面</a></td> 
   </tr> 
   <tr> 
    <td> <strong>環境</strong><br /> </td> 

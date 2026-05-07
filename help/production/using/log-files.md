@@ -10,8 +10,8 @@ topic-tags: production-procedures
 exl-id: c9d427da-6965-4945-90f0-d0770701d55e
 source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
 workflow-type: tm+mt
-source-wordcount: '445'
-ht-degree: 2%
+source-wordcount: '470'
+ht-degree: 6%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 2%
 
 | 檔案 | 說明 |
 |---|---|
-| web.log | Web模組記錄(使用者端主控台、報表、SOAP API等) |
+| web.log | 網頁模組記錄（使用者端主控台、報表、SOAP API等） |
 | webmdl.log | 來自重新導向模組的記錄 |
 | watchdog.log | Adobe Campaign流程監視模組的記錄 |
 | trackinglogd.log | 追蹤記錄 |

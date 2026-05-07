@@ -7,8 +7,8 @@ role: User
 exl-id: 9ce11da0-e37b-459e-8ec7-d2bddf59bdf7
 source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
 workflow-type: tm+mt
-source-wordcount: '814'
-ht-degree: 1%
+source-wordcount: '931'
+ht-degree: 2%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 1%
 如果未傳送傳遞且其狀態仍為&#x200B;**擱置中**，該怎麼辦？
 
 * 執行程式正在等待某些資源的可用性。 MTA可能尚未啟動。
-檢查您的mta@instance模組是否已在MTA伺服器上啟動，並視需要啟動MTA模組。 [了解更多](../../production/using/administration.md)。
+檢查您的mta@instance模組是否已在MTA伺服器上啟動，並視需要啟動MTA模組。 [了解更多資訊](../../production/using/administration.md)。
 
 * 傳遞可能使用傳送執行個體上尚未設定的相似性。
 提示：檢查流量管理（IP相似性）的設定。 如需詳細資訊，請參閱控制傳出SMTP流量。
@@ -46,7 +46,7 @@ ht-degree: 1%
 
 * 針對託管及混合式使用者端，Adobe技術支援和顧問已在您的執行個體上設定&#x200B;**傳遞能力監視**。 如需詳細資訊，請聯絡您的Adobe客戶主管。
 
-* 對於內部部署安裝，您必須透過&#x200B;**[!UICONTROL Deliverability monitoring (Email Deliverability)]** > **[!UICONTROL Tools]** > **[!UICONTROL Advanced]**&#x200B;功能表安裝&#x200B;**[!UICONTROL Import package]**&#x200B;套件。 如需詳細資訊，請參閱[安裝Campaign Classic標準套件](../../installation/using/installing-campaign-standard-packages.md)。
+* 對於內部部署安裝，您必須透過&#x200B;**[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]**&#x200B;功能表安裝&#x200B;**[!UICONTROL Deliverability monitoring (Email Deliverability)]**&#x200B;套件。 如需詳細資訊，請參閱[安裝Campaign Classic標準套件](../../installation/using/installing-campaign-standard-packages.md)。
 
 #### 傳遞能力工作流程 {#deliverability-workflow}
 

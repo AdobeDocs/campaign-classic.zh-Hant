@@ -6,7 +6,7 @@ feature: Technote, Push
 exl-id: 263fb4b5-ca62-4b92-a82d-8820ee998296
 source-git-commit: 0143e0d6ebcdbd96d183ddd0c7f07beb149a9670
 workflow-type: tm+mt
-source-wordcount: '143'
+source-wordcount: '160'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 在此頁面[&#128279;](https://developer.apple.com/news/?id=09za8wzy)中進一步瞭解APN變更。
 
-作為託管客戶，無需採取任何動作：Adobe已將新的根憑證整合至您的環境。
+作為託管客戶，無需採取任何動作： Adobe已將新的根憑證整合至您的環境。
 
 作為內部部署/混合部署客戶，您需要更新設定，以確保在2025年2月24日之前順暢轉換&#x200B;**&#x200B;**。
 

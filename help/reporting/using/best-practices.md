@@ -7,8 +7,8 @@ badge: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 exl-id: 0c7f00f3-b16d-41c5-a7b1-f5a59201bf8c
 source-git-commit: 517b85f5d7691acc2522bf4541f07c34c60c7fbf
 workflow-type: tm+mt
-source-wordcount: '852'
-ht-degree: 5%
+source-wordcount: '857'
+ht-degree: 6%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 5%
 
 1. 識別目標母體
 
-   接下來，您需要找出您要建立之報告的目標對象、瞭解將檢視報告的公眾型別，以及報告顯示模式(在瀏覽器中、在Adobe Campaign中、針對特定物件、針對整個平台等)。
+   接下來，您需要找出您要建立之報告的目標對象、瞭解將檢視報告的公眾型別，以及報告顯示模式（在瀏覽器中、在Adobe Campaign中、針對特定物件、針對整個平台等）。
 
    您也可以為以下專案建立報表：
 
@@ -57,7 +57,7 @@ ht-degree: 5%
 
    之後，您需要找出要顯示的資料型別：傳遞指標、資料庫設定檔的報告等。
 
-   您還需要瞭解此資料的性質（簡單、由計算產生、重要等）、其位置(在Adobe Campaign中、在協力廠商系統中)、定義計算週期的更新頻率（每日、每週、即時）及其數量。
+   您還需要瞭解此資料的性質（簡單、由計算產生、重要等）、其位置（在Adobe Campaign中、在協力廠商系統中）、定義計算週期的更新頻率（每日、每週、即時）及其數量。
 
    必須仔細審視與資料量和更新連結的問題，以避免報告顯示問題，尤其是時間方面的問題。 因此，我們建議您建立彙總，以在報表外部預先計算一些資料。 包含追蹤和傳送記錄的表格可包含數百萬筆記錄：這表示資料必須透過工作流程進行彙總，才能用於報告中。
 
@@ -113,4 +113,4 @@ if(string(ctx@_historyId)!==""))
 
 ### 匯出您的報告 {#exporting-reports}
 
-在[本區段](../../reporting/using/actions-on-reports.md#exporting-a-report)中詳細說明匯出報告的特定Recommendations。
+匯出報告的特定建議在[此區段](../../reporting/using/actions-on-reports.md#exporting-a-report)中有詳細說明。

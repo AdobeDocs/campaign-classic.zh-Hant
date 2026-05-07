@@ -24,7 +24,7 @@ ht-degree: 0%
 Adobe Campaign使用「Nms_DefaultRcpSchema」全域變數與預設收件者資料庫(nms:recipient)對話。 因此，需要變更此變數。
 
 1. 前往總管的&#x200B;**[!UICONTROL Administration>Platform>Options]**&#x200B;節點。
-1. 以符合外部收件者資料表（在此案例中為cus **）的結構描述名稱變更** Nms_DefaultRcpSchema:individual變數的值。
+1. 以符合外部收件者資料表（在此案例中為cus:individual）的結構描述名稱變更&#x200B;**Nms_DefaultRcpSchema**&#x200B;變數的值。
 1. 儲存變更。
 
 ## 建立新表單 {#creating-a-new-form-}

@@ -6,8 +6,8 @@ feature: Monitoring
 exl-id: ca0c33c5-7350-462a-bc65-4cab51e529d9
 source-git-commit: e60a8391416bc9899548971bddb61705467a80e5
 workflow-type: tm+mt
-source-wordcount: '758'
-ht-degree: 16%
+source-wordcount: '835'
+ht-degree: 19%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 16%
 
 **自動監視工具**
 
-有數種自動方法可供使用。 協助您監控執行個體。 例如，您可以設定包含偵測到異常的電子郵件報表、擷取XML格式的指標清單等。 [按一下這裡](../../production/using/monitoring-processes.md#automatic-monitoring)以獲得更多資訊。
+有數種自動方法可供使用。 協助您監控執行個體。 例如，您可以設定包含偵測到的異常的電子郵件報表、擷取XML格式的指標清單等。[按一下這裡](../../production/using/monitoring-processes.md#automatic-monitoring)以取得詳細資訊。
 
 **稽核軌跡**
 
@@ -50,7 +50,7 @@ ht-degree: 16%
 
 **控制面板**
 
-「控制面板」可以讓您管理執行個體的多項設定：管理URL許可權、檢查執行個體的詳細資訊（例如伺服器的組建版本）等。 它也可讓您監視連線到執行個體的SFTP伺服器上的可用空間。 [按一下這裡](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hant)以獲得更多資訊。
+「控制面板」可以讓您管理執行個體的多項設定：管理URL許可權、檢查執行個體的詳細資訊（例如伺服器的組建版本）等。它也可讓您監視連線到執行個體的SFTP伺服器上的可用空間。 [按一下這裡](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hant)以獲得更多資訊。
 
 >[!NOTE]
 >
@@ -125,7 +125,7 @@ SMTP報告會依網域顯示傳遞統計資料和SMTP錯誤。 [了解更多](..
 
 *僅限內部部署和混合託管模型*
 
-若要避免在電腦上發生問題（無論是實體或系統相關問題）時遺失資料，備份是必要的。 [按一下這裡](../../production/using/backup.md)以取得詳細資訊。 [本節](../../production/using/restoration.md)中說明還原程式。
+若要避免在電腦上發生問題（無論是實體或系統相關問題）時遺失資料，備份是必要的。 [按一下這裡](../../production/using/backup.md)以獲得更多資訊。 [本節](../../production/using/restoration.md)中說明還原程式。
 
 ## Campaign Classic技術原則 {#campaign-classic-technical-principles}
 

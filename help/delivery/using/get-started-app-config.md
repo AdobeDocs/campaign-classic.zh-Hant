@@ -9,8 +9,8 @@ hide: true
 exl-id: 95bc07cc-8837-4511-81bc-05fad28191c9
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '285'
-ht-degree: 5%
+source-wordcount: '334'
+ht-degree: 13%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 5%
 
 若要在Adobe Campaign中傳送推播通知，您需要：
 
-* 為Neotrips行動應用程式建立&#x200B;**[!UICONTROL Mobile application]**&#x200B;型別資訊服務。 請參閱iOS[的](configuring-the-mobile-application.md#configuring-ios-service)本節。 和[Android](configuring-the-mobile-application-android.md#configuring-android-service)的此區段。
+* 為Neotrips行動應用程式建立&#x200B;**[!UICONTROL Mobile application]**&#x200B;型別資訊服務。 請參閱iOS[&#128279;](configuring-the-mobile-application.md#configuring-ios-service)的本節。 和[Android](configuring-the-mobile-application-android.md#configuring-android-service)的此區段。
 * 將應用程式的iOS和Android版本新增至此服務。
 * 建立[iOS](create-notifications-ios.md)和[Android](create-notifications-android.md)的傳遞。
 

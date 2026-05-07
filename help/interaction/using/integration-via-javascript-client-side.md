@@ -75,7 +75,7 @@ Adobe建議使用JavaScript整合方法。
 
    此行為可讓您在同一個頁面上使用數個選件空間，以便透過對引擎的單一呼叫來管理。
 
-1. HTML頁面中有&#x200B;**個結果**
+1. 在HTML頁面中找到&#x200B;**個結果**
 
    優惠方案表示的內容會由互動引擎傳回HTML頁面：
 
@@ -129,7 +129,7 @@ Adobe建議使用JavaScript整合方法。
 
 ### 使用HTML演算函式 {#using-an-html-rendering-function}
 
-若要自動產生HTML選件表示，您可以使用演算功能。
+若要自動產生HTML選件表示，您可以使用演算函式。
 
 1. 前往優惠方案空間並按一下&#x200B;**[!UICONTROL Edit functions]**&#x200B;連結。
 1. 選取 **[!UICONTROL Overload the HTML rendering function]**。
@@ -186,7 +186,7 @@ Adobe建議使用JavaScript整合方法。
 
    此結構描述將定義下列欄位：標題編號2和價格。
 
-   範例中的結構描述名稱為&#x200B;**cus：offer**
+   範例中的結構描述名稱為&#x200B;**cus:offer**
 
    ```
    <srcSchema _cs="Marketing offers (cus)" created="2 AAAA-MM-DD HH:MM:SS.762Z" createdBy-id="0"
@@ -219,7 +219,7 @@ Adobe建議使用JavaScript整合方法。
 
    >[!NOTE]
    >
-   >您可以擴充優惠方案結構，以批次和單一模式及任何格式(文字、HTML和XML)新增欄位。
+   >您可以擴充優惠方案結構，以批次和單一模式及任何格式（文字、HTML和XML）新增欄位。
 
 1. **擴充優惠方案公式以編輯新欄位並修改現有欄位**
 
@@ -271,7 +271,7 @@ Adobe建議使用JavaScript整合方法。
 
    已新增&#x200B;**[!UICONTROL Title 2]**&#x200B;及&#x200B;**[!UICONTROL Price]**&#x200B;欄位，且不再顯示&#x200B;**[!UICONTROL Destination URL]**&#x200B;欄位。
 
-1. **建立優惠方案**
+1. **建立產品建議**
 
    如需建立優惠方案的詳細資訊，請參閱[建立優惠方案](../../interaction/using/creating-an-offer.md)。
 
@@ -280,9 +280,9 @@ Adobe建議使用JavaScript整合方法。
    ![](assets/interaction_xmlmode_offer.png)
 
 1. 核准優惠或由其他人核准，然後在最後一個步驟建立的優惠方案空間上啟用它，以便在連結的即時環境中可用。
-1. 在HTML頁面&#x200B;**上執行**&#x200B;引擎呼叫和結果
+1. 在HTML頁面上執行&#x200B;**引擎呼叫和結果**
 
-   對HTML頁面中互動引擎的呼叫看起來像這樣：
+   在HTML頁面中呼叫互動引擎看起來像這樣：
 
    ```
    <script id="interactionProposalScript" src="https://<SERVER_URL>/nl/interactionProposal.js?env=OE7&cb=alert" type="text/javascript">

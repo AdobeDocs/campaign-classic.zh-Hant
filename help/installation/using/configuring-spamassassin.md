@@ -10,8 +10,8 @@ topic-tags: additional-configurations
 exl-id: 1f1004e2-dcd2-4ec5-98ec-720c205646d5
 source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
 workflow-type: tm+mt
-source-wordcount: '986'
-ht-degree: 0%
+source-wordcount: '1027'
+ht-degree: 3%
 
 ---
 
@@ -21,9 +21,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->部分設定只能由Adobe代管的部署Adobe執行。 例如，存取伺服器和執行個體組態檔。 若要瞭解不同部署的詳細資訊，請參閱[託管模型](../../installation/using/hosting-models.md)區段或[此頁面](../../installation/using/capability-matrix.md)。
+>對於Adobe託管的部署，部分設定只能由Adobe執行。 例如，存取伺服器和執行個體組態檔。 若要瞭解不同部署的詳細資訊，請參閱[託管模型](../../installation/using/hosting-models.md)區段或[此頁面](../../installation/using/capability-matrix.md)。
 
-## 概覽 {#overview}
+## 概觀 {#overview}
 
 SpamAssassin是專為篩選不想要的電子郵件而設計的軟體。 結合此軟體，Adobe Campaign可為電子郵件指派分數，並在啟動傳遞前判斷訊息是否有可能被視為不想要的訊息。 為此，必須在Adobe Campaign的應用程式伺服器上安裝和設定SpamAssassin，並需要一定數量的額外Perl模組才能運作。
 

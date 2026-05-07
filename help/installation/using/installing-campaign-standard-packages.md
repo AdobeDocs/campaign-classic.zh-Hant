@@ -7,8 +7,8 @@ badge-v7-prem: label="僅限內部部署/混合" type="Caution" url="https://exp
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
 source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
-source-wordcount: '1271'
-ht-degree: 3%
+source-wordcount: '1381'
+ht-degree: 6%
 
 ---
 
@@ -184,7 +184,7 @@ ht-degree: 3%
   </tr> 
   <tr> 
    <td> 中央/區域行銷（分散式行銷）<br /> </td> 
-   <td> 在中央實體（總部、行銷部門等）與地方實體（銷售點、地區代理等）之間實施合作活動。 選填。 <a href="https://experienceleague.adobe.com/docs/campaign/automation/distributed-marketing/about-distributed-marketing.html?lang=zh-Hant" target="_blank">進一步瞭解</a><br /> </td> 
+   <td> 在中央實體（總部、行銷部門等）之間實施合作活動 和地方實體（銷售點、地區代理等）。 選填。 <a href="https://experienceleague.adobe.com/docs/campaign/automation/distributed-marketing/about-distributed-marketing.html?lang=zh-Hant" target="_blank">進一步瞭解</a><br /> </td> 
    <td> 行銷 </td> 
   </tr> 
   <tr> 
@@ -242,16 +242,16 @@ ht-degree: 3%
 
 ### 訊息中心套件 {#message-center-package}
 
-您必須先安裝傳送頻道（電子郵件、行動頻道、行動應用程式頻道、LINE等），才能安裝異動訊息（訊息中心套件）。 如果您已開始僅限電子郵件的訊息中心專案，且之後需要新增頻道，您必須依照下列步驟進行：
+您必須安裝傳送頻道（電子郵件、行動裝置頻道、行動應用程式頻道、LINE等） 安裝異動訊息（訊息中心封裝）之前。 如果您已開始僅限電子郵件的訊息中心專案，且之後需要新增頻道，您必須依照下列步驟進行：
 
-1. 使用套件匯入小幫手( **)安裝新頻道，例如**&#x200B;行動頻道&#x200B;**[!UICONTROL Tools > Advanced > Import package > Adobe Campaign package]**。
+1. 使用套件匯入小幫手( **[!UICONTROL Tools > Advanced > Import package > Adobe Campaign package]**)安裝新頻道，例如&#x200B;**行動頻道**。
 1. 匯入檔案( **[!UICONTROL Tools > Advanced > Import package > File]**)，並選取：
 
    ```
    \datakit\nms\[Your language]\package\messageCenter.xml
    ```
 
-1. 在&#x200B;**[!UICONTROL XML data content to import]**&#x200B;中，只保留對應至相關頻道的訊息中心傳遞範本。 例如，如果您已新增&#x200B;**行動裝置頻道**，請僅保留與&#x200B;**(smsTriggerMessage)範本相對應的** entities **[!UICONTROL Mobile transactional message]**&#x200B;元素。 如果您已新增&#x200B;**行動應用程式頻道**，請僅保留&#x200B;**iOS交易訊息**&#x200B;範本(iosTriggerMessage)和&#x200B;**Android交易訊息** (androidTriggerMessage)。
+1. 在&#x200B;**[!UICONTROL XML data content to import]**&#x200B;中，只保留對應至相關頻道的訊息中心傳遞範本。 例如，如果您已新增&#x200B;**行動裝置頻道**，請僅保留與&#x200B;**[!UICONTROL Mobile transactional message]** (smsTriggerMessage)範本相對應的&#x200B;**entities**&#x200B;元素。 如果您已新增&#x200B;**行動應用程式頻道**，請僅保留&#x200B;**iOS交易訊息**&#x200B;範本(iosTriggerMessage)和&#x200B;**Android交易訊息** (androidTriggerMessage)。
 
    ![](assets/messagecenter_install_channel.png)
 

@@ -10,15 +10,15 @@ topic-tags: installing-campaign-in-linux-
 exl-id: 4f8ea358-a38d-4137-9dea-f398e60c5f5d
 source-git-commit: 1be1528d657537786c430ea9c8bdb3aad58ba20d
 workflow-type: tm+mt
-source-wordcount: '565'
-ht-degree: 2%
+source-wordcount: '589'
+ht-degree: 5%
 
 ---
 
 # 與Linux網頁伺服器整合 {#integration-into-a-web-server-for-linux}
 
 
-Adobe Campaign包含Apache Tomcat，可透過HTTP (和SOAP)作為應用程式伺服器的進入點。
+Adobe Campaign包含Apache Tomcat，可透過HTTP （和SOAP）作為應用程式伺服器的進入點。
 
 您可以使用這個整合的Tomcat伺服器來處理HTTP要求。
 

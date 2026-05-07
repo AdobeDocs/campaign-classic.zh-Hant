@@ -9,8 +9,8 @@ topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
 source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
-source-wordcount: '8066'
-ht-degree: 5%
+source-wordcount: '8103'
+ht-degree: 8%
 
 ---
 
@@ -540,11 +540,7 @@ Adobe Campaign的整體組態定義於位於安裝目錄&#x200B;**conf**&#x200B;
 
 >[!NOTE]
 >
->**nameSevers**&#x200B;上的備註：預設使用網路
->在Windows中宣告的第一個網路介面的引數
->未定義於UNIX。 定義網域名稱伺服器(DNS)
->MTA用來取得宣告給的郵件交換器
->網域。
+>**nameSevers**&#x200B;上的備註：預設使用網路>在Windows中宣告的第一個網路介面的引數>未定義於UNIX。 定義網域名稱伺服器(DNS)>MTA用來取得宣告給的郵件交換器>網域。
 >
 >如果未定義此值，MTA會在主機網路設定中尋找此資訊。 如果可能有數個DNS，不同的DNS位址必須以逗號分隔（例如： 212.155.207.1，212.155.207.2）。 如果您的傳送伺服器具有數個網路介面，則MTA使用的DNS清單是第一個清單。 在此情況下，建議您指定&#x200B;**nameServer**&#x200B;引數以避免任何模稜兩可。
 
@@ -1276,7 +1272,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> ignoreSize<br /> </td> 
-   <td> 忽略訊息大小：用於忽略POP3伺服器傳回的訊息大小。 在此情況下，模組需要「。」 在訊息結束時。<br /> </td> 
+   <td> 忽略訊息大小：用於忽略POP3伺服器傳回的訊息大小。 在此情況下，模組會預期訊息結尾有一個「。」。<br /> </td> 
    <td> 布林值<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
@@ -1625,9 +1621,9 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
    <td> statServerAddress<br /> </td> 
    <td> 傳遞統計伺服器的位址，指定為 
     &lt;dns或ip&gt; 
-      <code>&lbrack;</code>： 
+      <code>&lbrack;</code>: 
      &lt;連線埠&gt; 
-       <code>&rbrack;</code>。 另請參閱 
+       <code>&rbrack;</code>. 查看 
       <a href="../../installation/using/email-deliverability.md#coordinates-of-the-statistics-server" target="_blank">統計伺服器</a>的座標。 
       <br /> 
      </td> 
@@ -1761,25 +1757,25 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
  <tbody> 
   <tr> 
    <td> dataBasePoolPeriodSec<br /> </td> 
-   <td> 要傳遞的工作的資料庫輪詢頻率。 此值代表資料庫輪詢頻率（以秒為單位）。 為了取得等待傳送的工作清單，MTA會定期輪詢資料庫。當沒有工作等待時，輪詢週期就會由此值定義。否則，如果工作已傳輸到子伺服器，則此輪詢持續時間會自動縮短為一秒，以便新工作可以儘快再次處理，亦即子伺服器再次可用時。這並不意味著每秒都會執行資料庫查詢，直到子伺服器再次可用為止。 事實上，只有當至少有一部子伺服器可供使用時，才會完成資料庫存取。<br /> </td> 
+   <td> 要傳遞的工作的資料庫輪詢頻率。 此值代表資料庫輪詢頻率（以秒為單位）。 為了取得等待傳送的工作清單，MTA會定期輪詢資料庫。 當沒有工作等待時，輪詢週期就會由此值定義。 否則，如果工作已傳輸到子伺服器，則此輪詢持續時間會自動縮短為一秒，以便新工作可以儘快再次處理，亦即子伺服器再次可用時。 這並不意味著每秒都會執行資料庫查詢，直到子伺服器再次可用為止。 事實上，只有當至少有一部子伺服器可供使用時，才會完成資料庫存取。<br /> </td> 
    <td> 長<br /> </td> 
    <td> 30<br /> </td> 
   </tr> 
   <tr> 
    <td> dataBaseRetryDelaySec<br /> </td> 
-   <td> 資料庫連線失敗後的等待期間。 資料庫連線失敗通常是由資料庫伺服器本身所造成。例如，伺服器也可能因維護目的而停止。 DataBaseRetryDelay引數定義在資料庫連線失敗的情況下兩次連線嘗試之間的持續時間。<br /> </td> 
+   <td> 資料庫連線失敗之後的等待期。 資料庫連線失敗通常是由資料庫伺服器本身所造成。 例如，伺服器也可能因維護目的而停止。 DataBaseRetryDelay引數定義在資料庫連線失敗的情況下兩次連線嘗試之間的持續時間。<br /> </td> 
    <td> 長<br /> </td> 
    <td> 60<br /> </td> 
   </tr> 
   <tr> 
    <td> domainKeysReloadPeriodSec<br /> </td> 
-   <td> 私密金鑰(DomainKeys)快取的有效期。 用於根據DomainKeys建議(http://antispam.yahoo.com/domainkeys)簽署電子郵件的私密金鑰會儲存為資料庫中的選項。domainKeysReloadPeriodSec引數會定義MTA可以在快取中保留這些金鑰的秒數。 在此延遲之後，必須從資料庫重新載入所有金鑰。<br /> </td> 
+   <td> 私密金鑰 (DomainKeys) 快取的有效期。 用於根據DomainKeys建議(http://antispam.yahoo.com/domainkeys)簽署電子郵件的私密金鑰會儲存為資料庫中的選項。 domainKeysReloadPeriodSec引數會定義MTA可以在快取中保留這些金鑰的秒數。 在此延遲之後，必須從資料庫重新載入所有金鑰。<br /> </td> 
    <td> 長<br /> </td> 
    <td> 600<br /> </td> 
   </tr> 
   <tr> 
    <td> maxSpareServers<br /> </td> 
-   <td> 子伺服器的最大數量。 代表執行中的伺服器數目上限。建議將此數目限制在與伺服器記憶體資源相容的最佳值。這可以在傳遞期間進行檢查。 使用的記憶體不應超過可用的實體記憶體的三分之一，否則將會使用交換功能。 檢視<a href="../../installation/using/configuring-campaign-server.md#mta-child-processes" target="_blank">MTA子處理序</a>.<br /> </td> 
+   <td> 子伺服器的最大數量。 代表執行中的伺服器數目上限。 建議將此數目限制在與伺服器記憶體資源相容的最佳值。 這可以在傳遞期間進行檢查。 使用的記憶體不應超過可用的實體記憶體的三分之一，否則將會使用交換功能。 檢視<a href="../../installation/using/configuring-campaign-server.md#mta-child-processes" target="_blank">MTA子處理序</a>.<br /> </td> 
    <td> 長<br /> </td> 
    <td> 2<br /> </td> 
   </tr> 
@@ -1791,7 +1787,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> startSpareServers<br /> </td> 
-   <td> 啟動時的子伺服器數目。 動態監控子伺服器的數量；當MTA啟動時，它會建立此值所指示的子伺服器數量。通常，為了節省主機資源，子伺服器的啟動速度不能超過每秒一部伺服器。 但是，當MTA啟動時，此限制會遭撤銷，因此子伺服器將可儘快使用。<br /> </td> 
+   <td> 啟動時的子伺服器數量。 動態監控子伺服器的數量；當MTA啟動時，它會建立此值所指示的子伺服器數量。 通常，為了節省主機資源，子伺服器的啟動速度不能超過每秒一部伺服器。 但是，當MTA啟動時，此限制會遭撤銷，因此子伺服器將可儘快使用。<br /> </td> 
    <td> 長<br /> </td> 
    <td> 0<br /> </td> 
   </tr> 
@@ -1840,7 +1836,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> maxMsgPerChild<br /> </td> 
-   <td> 每部子伺服器的最大訊息數量。 每個MTA子系都會處理此數量的訊息並終止。請務必指定一個數字，讓MTA中的記憶體或資源流失不會造成損害（通常為幾千）。 即使MTA程式碼中沒有已知的記憶體流失，內嵌JavaScript和XSL引擎也並非完全可靠。<br /> </td> 
+   <td> 每部子伺服器的最大訊息數量。 每個MTA子系都會處理此數量的訊息並終止。 請務必指定一個數字，讓MTA中的記憶體或資源流失不會造成損害（通常為幾千）。 即使MTA程式碼中沒有已知的記憶體流失，內嵌JavaScript和XSL引擎也並非完全可靠。<br /> </td> 
    <td> 長<br /> </td> 
    <td> 5000000<br /> </td> 
   </tr> 
@@ -1897,7 +1893,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> idleSessionTimeoutSec<br /> </td> 
-   <td> 閒置工作階段逾時。 只有在工作階段被重複用來將數個訊息傳輸至指定網域時，才會使用此引數。當MTA完成訊息傳輸時，它使用的SMTP工作階段沒有系統地關閉。如果訊息已準備好傳送給這個相同的網域，則會重複使用相同的SMTP工作階段，這就是工作階段未自動關閉的原因。引數IdleSessionTimeout引數可讓您定義SMTP工作階段可以保持作用中狀態以等待其他訊息的時間。 經過此期間後，工作階段會自動關閉。<br /> </td> 
+   <td> 閒置工作階段逾時。 只有在工作階段被重複用來將數個訊息傳輸至指定網域時，才會使用此引數。 當MTA完成訊息傳輸時，它使用的SMTP工作階段沒有系統地關閉。 如果訊息已準備好傳送給這個相同的網域，則會重複使用相同的SMTP工作階段，這就是工作階段未自動關閉的原因。 引數IdleSessionTimeout引數可讓您定義SMTP工作階段可以保持作用中狀態以等待其他訊息的時間。 經過此期間後，工作階段會自動關閉。<br /> </td> 
    <td> 長<br /> </td> 
    <td> 5<br /> </td> 
   </tr> 
@@ -1909,7 +1905,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> maxSessionsPerChild<br /> </td> 
-   <td> 子伺服器的最大SMTP工作階段數目。 為了傳遞訊息，MTA會初始化與收件者MTA的SMTP連線。指定子伺服器的並行與作用中SMTP工作階段數上限受此值限制。 若將此值乘以maxSpareServers，您會得到指定的子伺服器可並行處理的訊息數目上限。<br /> </td> 
+   <td> 子伺服器的最大 SMTP 工作階段數量。 為了傳遞訊息，MTA會初始化與收件者MTA的SMTP連線。 指定子伺服器的並行與作用中SMTP工作階段數上限受此值限制。 若將此值乘以maxSpareServers，您會得到指定的子伺服器可並行處理的訊息數目上限。<br /> </td> 
    <td> 長<br /> </td> 
    <td> 1000<br /> </td> 
   </tr> 
@@ -1962,7 +1958,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
   </tr> 
   <tr> 
    <td> publicId<br /> </td> 
-   <td> 關聯的公用位址ID。用作統計伺服器的金鑰。 必須為數字。 檢視此<a href="../../installation/using/email-deliverability.md#managing-ip-addresses">區段</a>.<br /> </td> 
+   <td> 關聯的公用位址ID。 用作統計伺服器的金鑰。 必須為數字。 檢視此<a href="../../installation/using/email-deliverability.md#managing-ip-addresses">區段</a>.<br /> </td> 
    <td> 長<br /> </td> 
   </tr> 
   <tr> 
@@ -3078,13 +3074,13 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
    <td> forbiddenCharsInAuthority<br /> </td> 
    <td> 禁用的字元（網域）： URI 'authority'區段中的禁用的字元清單。<br /> </td> 
    <td> 字串<br /> </td> 
-   <td> '.？#@/：' <br /> </td> 
+   <td> '.?#@/:' <br /> </td> 
   </tr> 
   <tr> 
    <td> forbiddenCharsInPath<br /> </td> 
    <td> 禁用的字元（路徑）： URI「路徑」區段中的禁用的字元清單。<br /> </td> 
    <td> 字串<br /> </td> 
-   <td> '？#/'<br /> </td> 
+   <td> '?#/'<br /> </td> 
   </tr> 
   <tr> 
    <td> modDir<br /> </td> 

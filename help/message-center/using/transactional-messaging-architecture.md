@@ -6,7 +6,7 @@ feature: Transactional Messaging, Message Center, Architecture
 exl-id: 0a059397-b037-405b-b9c1-94a4a072674d
 source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
-source-wordcount: '1103'
+source-wordcount: '1104'
 ht-degree: 1%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 1%
 
 ## 控制例項 {#control-instance}
 
-若要在您的電腦上安裝控制項執行個體，請透過&#x200B;**[!UICONTROL Transactional message control]** > **[!UICONTROL Tools]** > **[!UICONTROL Advanced]**&#x200B;功能表選取&#x200B;**[!UICONTROL Import package]**&#x200B;套件。 如需詳細資訊，請參閱[安裝Campaign Classic標準套件](../../installation/using/installing-campaign-standard-packages.md)。
+若要在您的電腦上安裝控制項執行個體，請透過&#x200B;**[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]**&#x200B;功能表選取&#x200B;**[!UICONTROL Transactional message control]**&#x200B;套件。 如需詳細資訊，請參閱[安裝Campaign Classic標準套件](../../installation/using/installing-campaign-standard-packages.md)。
 
 ![](assets/messagecenter_install_controlinstance_001.png)
 
@@ -61,7 +61,7 @@ ht-degree: 1%
 
 ## 執行執行個體 {#execution-instance}
 
-若要在您的電腦上安裝執行個體，請透過&#x200B;**[!UICONTROL Transactional message execution]** > **[!UICONTROL Tools]** > **[!UICONTROL Advanced]**&#x200B;功能表選取&#x200B;**[!UICONTROL Import package]**&#x200B;套件。 如需詳細資訊，請參閱[安裝Campaign Classic標準套件](../../installation/using/installing-campaign-standard-packages.md)。
+若要在您的電腦上安裝執行個體，請透過&#x200B;**[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]**&#x200B;功能表選取&#x200B;**[!UICONTROL Transactional message execution]**&#x200B;套件。 如需詳細資訊，請參閱[安裝Campaign Classic標準套件](../../installation/using/installing-campaign-standard-packages.md)。
 
 ![](assets/messagecenter_install_executioninstance_001.png)
 
@@ -73,7 +73,7 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->必須先新增傳遞頻道（行動裝置頻道、行動應用程式頻道等），才能安裝異動訊息套件。
+>新增傳送頻道（行動裝置頻道、行動應用程式頻道等） 必須先執行，才能安裝異動訊息套件。
 
 ### 新增傳遞管道 {#adding-a-delivery-channel}
 
@@ -85,9 +85,9 @@ Adobe建議您&#x200B;**在安裝Transactional訊息封裝**&#x200B;之前，一
 >
 >此程式僅適用於使用安裝在相同電腦上的Windows NLServer的客戶。
 
-1. 使用套件匯入小幫手(**)安裝您需要的頻道，例如**&#x200B;行動頻道&#x200B;**[!UICONTROL Tools > Advanced > Import package... > Adobe Campaign Package]**。
+1. 使用套件匯入小幫手(**[!UICONTROL Tools > Advanced > Import package... > Adobe Campaign Package]**)安裝您需要的頻道，例如&#x200B;**行動頻道**。
 1. 執行檔案匯入(**[!UICONTROL Tools > Advanced > Import package... > File]**)，並選取&#x200B;**datakitnms &#x200B;**`[Your language]`**packagemessageCenter.xml**&#x200B;檔案。
-1. 在&#x200B;**[!UICONTROL XML content of the data to import]**&#x200B;中，僅保留對應至新增頻道的傳遞範本。 例如，如果您已新增&#x200B;**行動裝置頻道**，請僅保留與&#x200B;**(smsTriggerMessage)相對應的** entities **[!UICONTROL Mobile transactional message]**&#x200B;元素。 如果您已新增&#x200B;**行動應用程式頻道**，請僅保留&#x200B;**iOS交易式訊息** (iosTriggerMessage)和&#x200B;**Android交易式訊息** (androidTriggerMessage)。
+1. 在&#x200B;**[!UICONTROL XML content of the data to import]**&#x200B;中，僅保留對應至新增頻道的傳遞範本。 例如，如果您已新增&#x200B;**行動裝置頻道**，請僅保留與&#x200B;**[!UICONTROL Mobile transactional message]** (smsTriggerMessage)相對應的&#x200B;**entities**&#x200B;元素。 如果您已新增&#x200B;**行動應用程式頻道**，請僅保留&#x200B;**iOS交易式訊息** (iosTriggerMessage)和&#x200B;**Android交易式訊息** (androidTriggerMessage)。
 
    ![](assets/messagecenter_install_channel.png)
 
@@ -188,7 +188,7 @@ You also have to enable the unitary mode on your offer spaces. For more on this,
 
 然後，從&#x200B;**[!UICONTROL Explorer]**，在&#x200B;**[!UICONTROL Platform]** > **[!UICONTROL External account]**&#x200B;中，您需要在兩個執行個體上設定不同的外部帳戶：
 
-1. 使用下列設定，在您的&#x200B;**[!UICONTROL External database]**&#x200B;執行&#x200B;**執行個體中建立**&#x200B;外部帳戶：
+1. 使用下列設定，在您的&#x200B;**執行**&#x200B;執行個體中建立&#x200B;**[!UICONTROL External database]**&#x200B;外部帳戶：
 
    ![](assets/line_config_mc.png)
 
@@ -210,7 +210,7 @@ You also have to enable the unitary mode on your offer spaces. For more on this,
    * **[!UICONTROL Database]** ：輸入執行個體的資料庫名稱。
    * 必須核取&#x200B;**[!UICONTROL Target of an HTTP relay to remote database's account]**&#x200B;方塊。
 
-1. 使用下列設定，在您的&#x200B;**[!UICONTROL External Database]**&#x200B;行銷&#x200B;**執行個體中建立**&#x200B;帳戶。
+1. 使用下列設定，在您的&#x200B;**行銷**&#x200B;執行個體中建立&#x200B;**[!UICONTROL External Database]**&#x200B;帳戶。
 
    ![](assets/line_config_mc_1.png)
 
@@ -226,7 +226,7 @@ You also have to enable the unitary mode on your offer spaces. For more on this,
    * **[!UICONTROL Password]** ：輸入用來存取執行個體的帳戶密碼。
    * **[!UICONTROL Data Source]** ：在執行執行個體中輸入外部資料庫帳戶的下列語法&#x200B;**`nms:extAccount:ID`**。
 
-1. 使用下列設定，在您的&#x200B;**[!UICONTROL Execution instance]**&#x200B;行銷&#x200B;**執行個體中建立**&#x200B;外部帳戶，以建立資料同步工作流程：
+1. 使用下列設定，在您的&#x200B;**行銷**&#x200B;執行個體中建立&#x200B;**[!UICONTROL Execution instance]**&#x200B;外部帳戶，以建立資料同步工作流程：
 
    ![](assets/line_config_mc_2.png)
 

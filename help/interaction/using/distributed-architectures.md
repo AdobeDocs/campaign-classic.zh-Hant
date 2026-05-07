@@ -9,7 +9,7 @@ topic-tags: advanced-parameters
 exl-id: 083be073-aad4-4c81-aff2-77f5ef3e80db
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
-source-wordcount: '1014'
+source-wordcount: '1016'
 ht-degree: 1%
 
 ---
@@ -57,13 +57,13 @@ ht-degree: 1%
 
 ## 套件設定 {#packages-configuration}
 
-任何直接連結至&#x200B;**互動**&#x200B;的結構描述延伸模組（選件、主張、收件者等）都必須部署在執行例項上。
+任何直接連結至&#x200B;**互動**&#x200B;的結構描述延伸模組（優惠方案、主張、收件者等） 必須在執行例項上部署。
 
 Interaction套件必須安裝在所有執行個體（控制和執行）上。 另外兩個套件可供使用：一個套件將安裝在控制執行個體上，另一個將安裝在每個執行個體上。
 
 >[!NOTE]
 >
->安裝套件時，**nms：proposition**&#x200B;資料表的&#x200B;**long**&#x200B;型別欄位（例如主張ID）會變成&#x200B;**int64**&#x200B;型別欄位。 此型別的資料在[此區段](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data)中有詳細說明。
+>安裝套件時，**nms:proposition**&#x200B;資料表的&#x200B;**long**&#x200B;型別欄位（例如主張識別碼）會變成&#x200B;**int64**&#x200B;型別欄位。 此型別的資料在[此區段](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data)中有詳細說明。
 
 必須在每個執行個體上設定資料保留期間（透過部署精靈中的&#x200B;**[!UICONTROL Data purge]**&#x200B;視窗）。 在執行例項上，此期間必須對應於要計算的型別規則（滑動期間）和適用性規則所需的歷史深度。
 

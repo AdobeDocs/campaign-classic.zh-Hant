@@ -10,7 +10,7 @@ topic-tags: tasks--resources-and-budgets
 exl-id: cc1200fa-f6d8-4f41-aed1-d1a7f229447a
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '3741'
+source-wordcount: '3750'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ Adobe Campaign可讓您直接在應用程式中建立任務並管理其完整的
 
 ## 建立新任務 {#creating-a-new-task}
 
-若要建立任務，請按一下&#x200B;**[!UICONTROL Tasks]**&#x200B;索引標籤中的&#x200B;**[!UICONTROL Campaigns]**&#x200B;連結，然後選取&#x200B;**[!UICONTROL Create]**。
+若要建立任務，請按一下&#x200B;**[!UICONTROL Campaigns]**&#x200B;索引標籤中的&#x200B;**[!UICONTROL Tasks]**&#x200B;連結，然後選取&#x200B;**[!UICONTROL Create]**。
 
 ![](assets/s_ncs_user_task_create_new.png)
 
@@ -121,7 +121,7 @@ Adobe Campaign可讓您直接在應用程式中建立任務並管理其完整的
 
 ### 檢閱者 {#reviewers}
 
-除了參與者之外，您還可以定義作業執行者，當作業執行者關閉作業後，他們將會複查作業。 若要這麼做，請按一下&#x200B;**[!UICONTROL Enable task approval]**&#x200B;視窗左下角的&#x200B;**[!UICONTROL Resources]**&#x200B;選項。 這可以是個別運運算元、一組運運算元或運運算元清單。
+除了參與者之外，您還可以定義作業執行者，當作業執行者關閉作業後，他們將會複查作業。 若要這麼做，請按一下&#x200B;**[!UICONTROL Resources]**&#x200B;視窗左下角的&#x200B;**[!UICONTROL Enable task approval]**&#x200B;選項。 這可以是個別運運算元、一組運運算元或運運算元清單。
 
 ![](assets/s_ncs_user_task_edit_resource_validation.png)
 
@@ -345,7 +345,7 @@ Adobe Campaign可讓您直接在應用程式中建立任務並管理其完整的
 
 ![](assets/mrm_task_grouped_create.png)
 
-不過，如果您已建立要連結至分組任務的任務，則可透過&#x200B;**[!UICONTROL Linked to]**&#x200B;方塊的&#x200B;**[!UICONTROL Properties]**&#x200B;欄位進行連結。
+不過，如果您已建立要連結至分組任務的任務，則可透過&#x200B;**[!UICONTROL Properties]**&#x200B;方塊的&#x200B;**[!UICONTROL Linked to]**&#x200B;欄位進行連結。
 
 ![](assets/s_ncs_user_task_group_with.png)
 
@@ -500,7 +500,7 @@ Adobe Campaign可讓您直接在應用程式中建立任務並管理其完整的
 
    >[!NOTE]
    >
-   >只有在您已在任務的&#x200B;**[!UICONTROL To approve]**&#x200B;視窗中啟用&#x200B;**[!UICONTROL Enable task validation]**&#x200B;選項時，任務狀態才會變更為&#x200B;**[!UICONTROL Resources]**。\
+   >只有在您已在任務的&#x200B;**[!UICONTROL Resources]**&#x200B;視窗中啟用&#x200B;**[!UICONTROL Enable task validation]**&#x200B;選項時，任務狀態才會變更為&#x200B;**[!UICONTROL To approve]**。\
    >如果檢閱者拒絕任務，其狀態會變更為&#x200B;**[!UICONTROL Rejected]**，且任務生命週期會自動重新開始。
 
 1. 任務狀態變更為&#x200B;**[!UICONTROL Finished]**。 會傳送通知給每個相關人員。

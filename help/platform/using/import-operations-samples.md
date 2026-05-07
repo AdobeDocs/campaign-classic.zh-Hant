@@ -10,7 +10,7 @@ topic-tags: importing-and-exporting-data
 exl-id: 4582b524-2b6d-484c-bace-29d2e69f60e9
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '1011'
+source-wordcount: '1010'
 ht-degree: 55%
 
 ---
@@ -73,7 +73,7 @@ ht-degree: 55%
 
 1. 調和
 
-   * 轉到&#x200B;**收件者 (nms:recipient)** 表。
+   * 移至&#x200B;**收件者(nms:recipient)**&#x200B;資料表。
    * 選取&#x200B;**[!UICONTROL Insertion]**&#x200B;作業，並將預設值保留在其他欄位中。
 
      ![](assets/s_ncs_user_import_example04_01.png)
@@ -86,7 +86,7 @@ ht-degree: 55%
 
 1. 啟動匯入
 
-   * 按一下&#x200B;**[!UICONTROL Start]**。
+   * 按一下 **[!UICONTROL Start]**。
 
      在編輯器的中心區欄位，您可以檢查匯入操作是否成功並查看已處理的記錄數。
 
@@ -132,7 +132,7 @@ ht-degree: 55%
 
 1. 啟動匯入
 
-   * 按一下&#x200B;**[!UICONTROL Start]**。
+   * 按一下 **[!UICONTROL Start]**。
 
      在追蹤視窗中，您可以檢查匯入是否成功並查看已處理的記錄數。
 
@@ -185,7 +185,7 @@ ht-degree: 55%
 
 1. 啟動匯入
 
-   按一下&#x200B;**[!UICONTROL Start]**。
+   按一下 **[!UICONTROL Start]**。
 
    查看收件者表以檢查匯入已修改記錄。
 
@@ -233,7 +233,7 @@ ht-degree: 55%
 
 1. 啟動匯入
 
-   * 按一下&#x200B;**[!UICONTROL Start]**。
+   * 按一下 **[!UICONTROL Start]**。
    * 查看收件者表以檢查操作已修改記錄。
 
      ![](assets/s_ncs_user_import_example06_06.png)

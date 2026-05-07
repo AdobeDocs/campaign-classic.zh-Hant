@@ -8,16 +8,16 @@ level: Beginner
 exl-id: 8febceb0-9694-4045-a630-a7ff2fd18943
 source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
 workflow-type: tm+mt
-source-wordcount: '181'
-ht-degree: 54%
+source-wordcount: '208'
+ht-degree: 51%
 
 ---
 
 # 開始使用Campaign Classic{#about-adobe-campaign-classic}
 
-為了實現高水準的客戶參與度並打造精彩的體驗，企業必須在所有接觸點建立一致的客戶歷程。現在，行銷人員可以有效地設計、規劃、執行、管理以及最佳化跨通路行銷活動，為行銷投資帶來更高的投資報酬，並且提高客戶的忠誠度。
+為了實現高水準的客戶參與度並打造精彩的體驗，企業必須在所有接觸點建立一致的客戶歷程。 現在，行銷人員可以有效地設計、規劃、執行、管理以及最佳化跨通路行銷活動，為行銷投資帶來更高的投資報酬，並且提高客戶的忠誠度。
 
-您可以使用 Adobe Campaign 協調建立對話式的行銷活動。Adobe Campaign 提供創新功能，用於模型化、簡化和自動化行銷和客戶通訊流程。
+您可以使用 Adobe Campaign 協調建立對話式的行銷活動。 Adobe Campaign 提供創新功能，用於模型化、簡化和自動化行銷和客戶通訊流程。
 
 
 >[!BEGINTABS]
@@ -32,11 +32,11 @@ ht-degree: 54%
 
 * 在[相容性矩陣](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems)中檢查您的系統和工具與Adobe Campaign使用者端主控台的相容性
 
-* 若要瞭解如何在此頁面[上安裝並登入Adobe Campaign &#x200B;](launching-adobe-campaign.md)。
+* 若要瞭解如何在此頁面[&#128279;](launching-adobe-campaign.md)上安裝並登入Adobe Campaign 。
 
 >[!TAB 瀏覽Campaign UI]
 
-* 在此頁面[上探索Adobe Campaign使用者介面](adobe-campaign-workspace.md)。
+* 在此頁面[&#128279;](adobe-campaign-workspace.md)上探索Adobe Campaign使用者介面。
 
 * 瞭解如何使用[Campaign Explorer](adobe-campaign-workspace.md#using-adobe-campaign-explorer)。
 

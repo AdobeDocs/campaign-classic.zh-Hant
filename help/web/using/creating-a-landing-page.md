@@ -7,7 +7,7 @@ feature: Landing Pages
 exl-id: 71c737c2-b0d6-4ae8-a5df-28a08dff82d7
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '736'
+source-wordcount: '739'
 ht-degree: 2%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 2%
 
 此使用案例顯示如何使用數位編輯器從Adobe Campaign主控台建立登入頁面。
 
-開始在Adobe Campaign中設定登入頁面之前，請確定您有&#x200B;**一個或多個範本**&#x200B;代表HTML頁面。
+開始在Adobe Campaign中設定登入頁面之前，請確定您有&#x200B;**一或多個範本**&#x200B;可代表HTML頁面。
 
 此使用案例的主要目的，是使用DCE中的函式，將登入頁面表單欄位對應至Adobe Campaign中的內部欄位。
 
@@ -70,7 +70,7 @@ ht-degree: 2%
 1. 選取要使用的HTML檔案。
 1. 按一下&#x200B;**開啟**&#x200B;開始匯入。
 
-   在載入期間，會顯示共用檔案的清單。 匯入系統會檢查連結至所選HTML的所有檔案（CSS、影像等）是否都存在。
+   在載入期間，會顯示共用檔案的清單。 匯入系統會檢查所有連結至選定HTML的檔案是否都存在（CSS、影像等）。
 
    匯入完成後，按一下&#x200B;**[!UICONTROL Close]**&#x200B;按鈕。
 
@@ -89,7 +89,7 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->**DCE會針對載入的HTML頁面執行JavaScript程式碼。HTML範本中有**&#x200B;個JavaScript錯誤，這些錯誤可能會顯示在Adobe Campaign介面中。 這些錯誤與編輯器無關。 若要檢查匯入的檔案中是否沒有錯誤，建議您在將檔案匯入DCE之前，先在網頁瀏覽器中測試它們。
+>**DCE會針對載入的HTML頁面執行JavaScript程式碼。** HTML範本中的JavaScript錯誤，可能會顯示在Adobe Campaign介面中。 這些錯誤與編輯器無關。 若要檢查匯入的檔案中是否沒有錯誤，建議您在將檔案匯入DCE之前，先在網頁瀏覽器中測試它們。
 
 ## 步驟2 — 設定內容 {#step-2---configuring-the-content}
 

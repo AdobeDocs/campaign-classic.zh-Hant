@@ -9,7 +9,7 @@ topic-tags: message-templates
 exl-id: 417004c9-ed96-4b98-a518-a3aa6123ee7b
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '568'
+source-wordcount: '589'
 ht-degree: 2%
 
 ---
@@ -38,11 +38,11 @@ ht-degree: 2%
 
    ![](assets/messagecenter_create_seedaddr_003.png)
 
-1. 輸入外部識別碼：此選擇性欄位可讓您輸入網站上的所有應用程式通用的商業金鑰（唯一ID、名稱+電子郵件等），用於識別您的設定檔。 如果此欄位也出現在Adobe Campaign行銷資料庫中，您可以接著將事件與資料庫中的設定檔進行調解。
+1. 輸入外部識別碼：此選擇性欄位可讓您輸入商業金鑰（唯一ID、名稱+電子郵件等） 這是您網站上所有應用程式通用的功能，用來識別您的設定檔。 如果此欄位也出現在Adobe Campaign行銷資料庫中，您可以接著將事件與資料庫中的設定檔進行調解。
 
    ![](assets/messagecenter_create_seedaddr_003bis.png)
 
-1. 插入測試資料(請參閱[Personalization資料](#personalization-data))。
+1. 插入測試資料（請參閱[Personalization資料](#personalization-data)）。
 
    ![](assets/messagecenter_create_custo_001.png)
 
@@ -102,7 +102,7 @@ ht-degree: 2%
 
 傳送證明的過程與定期傳送的過程相同。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html?lang=zh-Hant){target="_blank"}。 然而，使用交易式訊息時，您需要預先執行下列操作：
 
-* 使用[個人化資料](#managing-seed-addresses-in-transactional-messages)建立一或多個[種子地址](#personalization-data)。
+* 使用[個人化資料](#personalization-data)建立一或多個[種子地址](#managing-seed-addresses-in-transactional-messages)。
 * [建立訊息內容](../../message-center/using/creating-the-message-template.md#creating-message-content)。
 
 若要傳送證明：

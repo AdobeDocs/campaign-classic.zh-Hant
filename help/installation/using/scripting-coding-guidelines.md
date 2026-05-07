@@ -9,8 +9,8 @@ topic-tags: prerequisites-and-recommendations-
 exl-id: 1f96c3df-0ef2-4f5f-9c36-988cbcc0769f
 source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
 workflow-type: tm+mt
-source-wordcount: '743'
-ht-degree: 4%
+source-wordcount: '773'
+ht-degree: 6%
 
 ---
 
@@ -85,7 +85,7 @@ ht-degree: 4%
   </sysFilter>
   ```
 
-* 您也可以保護結構描述中定義的部分動作(SOAP方法)。 只需設定存取屬性，並將對應的已命名許可權設為值即可。
+* 您也可以保護結構描述中定義的部分動作（SOAP方法）。 只需設定存取屬性，並將對應的已命名許可權設為值即可。
 
   ```
   <method name="grantVIPAccess" access="myNewRole">

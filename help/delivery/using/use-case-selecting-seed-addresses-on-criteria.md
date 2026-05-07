@@ -7,7 +7,7 @@ feature: Seed Address
 exl-id: 091648b8-bf2d-4595-8be3-287f1ac48edd
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '850'
+source-wordcount: '860'
 ht-degree: 3%
 
 ---
@@ -99,7 +99,7 @@ ht-degree: 3%
 
 種子地址資料結構描述可以使用連結到收件者資料結構描述 — 收件者(nms)的表格中的值。
 
-例如，使用者想要整合連結至收件者結構描述的&#x200B;**[!UICONTROL Internet Extension]**&#x200B;資料表中找到的&#x200B;**[!UICONTROL Country]**。
+例如，使用者想要整合連結至收件者結構描述的&#x200B;**[!UICONTROL Country]**&#x200B;資料表中找到的&#x200B;**[!UICONTROL Internet Extension]**。
 
 ![](assets/dlv_seeds_usecase_06.png)
 
@@ -150,7 +150,7 @@ ht-degree: 3%
 
    ![](assets/dlv_seeds_usecase_22.png)
 
-1. 編輯您要用於傳遞的種子地址，並在&#x200B;**欄位中輸入** Purchasing **[!UICONTROL Department]**&#x200B;作為值。
+1. 編輯您要用於傳遞的種子地址，並在&#x200B;**[!UICONTROL Department]**&#x200B;欄位中輸入&#x200B;**Purchasing**&#x200B;作為值。
 
 ## 步驟3 — 定義條件 {#step-3---defining-the-condition}
 

@@ -10,8 +10,8 @@ topic-tags: additional-configurations
 exl-id: 3e55d7f5-2858-4390-bba9-8fb5be0c3d98
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1006'
-ht-degree: 1%
+source-wordcount: '1084'
+ht-degree: 2%
 
 ---
 
@@ -135,13 +135,13 @@ ht-degree: 1%
 
 &#39;@name&#39;屬性必須符合下列規則：
 
-**&#39;marketing_account_operator_name&#39;.&#39;親和性名稱。&#39;affinity_group&#39;**
+**&#39;marketing_account_operator_name&#39;.&#39;affinity_name&#39;.&#39;affinity_group&#39;**
 
 &#39;marketing_account_operator_name&#39;與中間來源執行個體中宣告的中間來源帳戶的內部名稱相關。
 
 &#39;affinity_name&#39;與指定給相似性的任意名稱相關。 此名稱必須是唯一的。 授權字元為`[a-z]` `[A-Z]` `[0-9]`。 其目的是宣告一組公用IP位址。
 
-&#39;affinity_group&#39;會與每個傳遞中使用的目標對應中所宣告的子相似性建立關聯。 最後一部分包含「。」 如果沒有Sub-affinity，則會被忽略。 授權字元為`[a-z]` `[A-Z]` `[0-9]`。
+&#39;affinity_group&#39;會與每個傳遞中使用的目標對應中所宣告的子相似性建立關聯。 如果沒有Sub-affinity，則會忽略最後包含&#39;.&#39;的部分。 授權字元為`[a-z]` `[A-Z]` `[0-9]`。
 
 您必須先停止再重新啟動伺服器，才能考慮修改。
 

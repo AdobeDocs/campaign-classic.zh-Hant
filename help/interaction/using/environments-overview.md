@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: 環境概覽
-description: 環境概覽
+title: 環境概觀
+description: 環境概觀
 feature: Interaction, Offers
 audience: interaction
 content-type: reference
@@ -9,12 +9,12 @@ topic-tags: managing-environments
 exl-id: ba588591-5171-4c35-bc8c-3979274e21b2
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '73'
-ht-degree: 8%
+source-wordcount: '101'
+ht-degree: 5%
 
 ---
 
-# 環境概覽{#environments-overview}
+# 環境概觀{#environments-overview}
 
 
 

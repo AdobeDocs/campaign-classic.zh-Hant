@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 設定Snowflake的存取權
-description: 瞭解如何在FDA中設定Snowflake存取權
+description: 瞭解如何在FDA中設定Snowflake的存取權
 feature: Installation, Federated Data Access
 audience: platform
 content-type: reference
@@ -9,7 +9,7 @@ topic-tags: connectors
 exl-id: bdb5e422-ecfe-42eb-bd15-39fe5ec0ff1d
 source-git-commit: 22420452d4df2e8161c91a42ad0d20ceb4796e82
 workflow-type: tm+mt
-source-wordcount: '503'
+source-wordcount: '534'
 ht-degree: 2%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 2%
 
 ![](assets/snowflake_3.png)
 
-## 在Linux上的Snowflake {#snowflake-linux}
+## Linux上的Snowflake {#snowflake-linux}
 
 若要在Linux上設定[!DNL Snowflake]，請遵循下列步驟：
 
@@ -66,7 +66,7 @@ ht-degree: 2%
    ./snowflake_odbc-setup.sh
    ```
 
-1. 安裝ODBC驅動程式之後，您需要重新啟動Campaign Classic。 要執行此操作，請執行以下命令：
+1. 安裝ODBC驅動程式後，您需要重新啟動Campaign Classic。 要執行此操作，請執行以下命令：
 
    ```
    systemctl stop nlserver.service
@@ -81,7 +81,7 @@ ht-degree: 2%
 
 1. 從行銷活動&#x200B;**[!UICONTROL Explorer]**，按一下&#x200B;**[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**。
 
-1. 按一下&#x200B;**[!UICONTROL New]**。
+1. 按一下 **[!UICONTROL New]**。
 
 1. 選取&#x200B;**[!UICONTROL External database]**&#x200B;作為外部帳戶的&#x200B;**[!UICONTROL Type]**。
 
@@ -124,6 +124,6 @@ ht-degree: 2%
 | 時區名稱 | 預設為空白，這表示會使用Campaign Classic應用程式伺服器的系統時區。 選項可用來強制TIMEZONE工作階段引數。 <br>如需詳細資訊，請參閱[此頁面](https://docs.snowflake.net/manuals/sql-reference/parameters.html#timezone)。 |
 | weekstart | WEEK_START階段作業引數。 預設為0。 <br>如需詳細資訊，請參閱[此頁面](https://docs.snowflake.com/en/sql-reference/parameters.html#week-start)。 |
 | UseCachedResult | USE_CACHED_RESULTS工作階段引數。 預設為TRUE。 此選項可用來停用Snowflake快取結果。 <br>如需詳細資訊，請參閱[此頁面](https://docs.snowflake.net/manuals/user-guide/querying-persisted-results.html)。 |
-| bulkThread | 用於Snowflake大量載入器的執行緒數量，執行緒越多，批次載入量越大，效能就越好。 預設為1。 根據機器執行緒計數，數字可以調整。 |
+| bulkThread | 用於Snowflake大量載入器的執行緒數量，使用更多執行緒時，代表較大型大量載入的效能更高。 預設為1。 根據機器執行緒計數，數字可以調整。 |
 | chunkSize | 決定大量載入器區塊的檔案大小。 預設為128MB。 可以修改以獲得最佳效能（當與bulkThreads一起使用時）。 同時作用中的執行緒越多，效能就越好。 <br>如需詳細資訊，請參閱[Snowflake檔案](https://docs.snowflake.net/manuals/sql-reference/sql/put.html)。 |
 | 階段名稱 | 預先布建的內部階段名稱。 它將用於大量載入，而不是建立新的臨時階段。 |

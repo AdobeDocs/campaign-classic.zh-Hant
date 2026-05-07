@@ -7,8 +7,8 @@ hide: true
 exl-id: cada78cb-658f-4b9e-8136-31c17cb1d82f
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '412'
-ht-degree: 4%
+source-wordcount: '420'
+ht-degree: 5%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 4%
 
    >[!CAUTION]
    >
-   >SQL指令碼編寫者應負責確認SQL指令碼運作正常，且其參照（欄位名稱等）符合輸出結構描述。
+   >SQL指令碼編寫者有責任確認SQL指令碼正常運作，以及其參考（欄位名稱等） 符合傳出綱要。
 
    如果要載入現有的SQL程式碼，請選取&#x200B;**[!UICONTROL The SQL script is contained in an entity stored in the database]**&#x200B;選項。 SQL指令碼必須建立並儲存在&#x200B;**[!UICONTROL Administration]** / **[!UICONTROL Configuration]** / **[!UICONTROL SQL scripts]**&#x200B;功能表中。
 
@@ -66,7 +66,7 @@ ht-degree: 4%
 1. 如果SQL指令碼已經包含建立外送工作表的命令，請取消選取&#x200B;**[!UICONTROL Automatically create work table]**&#x200B;選項。 否則，工作流程執行後會自動建立工作表。
 1. 按一下&#x200B;**[!UICONTROL Ok]**&#x200B;以確認活動設定。
 
-該活動現已完成設定。它可以在工作流程中執行。
+該活動現已完成設定。 它可以在工作流程中執行。
 
 >[!CAUTION]
 >

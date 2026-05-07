@@ -7,7 +7,7 @@ feature: Deliverability
 exl-id: 34be23f7-17fa-475e-9663-2e353d76b172
 source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '457'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 ## 更新流程
 
-您將需要在隔離表格上執行查詢，以篩選出所有可能受到中斷影響的Apple收件者(包括、@icloud.com、@me.com、@mac.com)，以便將其從隔離清單中移除，並包含在將來的Campaign電子郵件傳送中。
+您將需要在隔離表格上執行查詢，以篩選出所有可能受到中斷影響的Apple收件者（包括、@icloud.com、@me.com、@mac.com），以便將其從隔離清單中移除，並包含在將來的Campaign電子郵件傳送中。
 
 根據事件的時間範圍，以下是此查詢的建議准則。
 
@@ -43,15 +43,15 @@ ht-degree: 0%
 * 對於在隔離清單的&#x200B;**[!UICONTROL Error text]**&#x200B;欄位中有SMTP退回回應資訊的Campaign執行個體：
 
    * **錯誤文字（隔離文字）**&#x200B;包含「使用者查詢成功但找不到使用者記錄」以及&#x200B;**錯誤文字（隔離文字）**&#x200B;包含「support.apple.com」
-   * 上午4/26/2021 07 **00或之後的**&#x200B;更新狀態(@lastModified):00:
-   * 下午4/26/2021 01 **00或之前的**&#x200B;更新狀態(@lastModified):00:
+   * 上午4/26/2021 07:00:00或之後的&#x200B;**更新狀態(@lastModified)**
+   * 下午4/26/2021 01:00:00或之前的&#x200B;**更新狀態(@lastModified)**
 
 * 對於在隔離清單的&#x200B;**[!UICONTROL Error text]**&#x200B;欄位中有傳入電子郵件規則資訊的Campaign執行個體：
 
    * **錯誤文字（隔離文字）**&#x200B;包含「Momen_Code10_InvalidRecipient」
    * **電子郵件網域(@domain)**&#x200B;等於icloud.com或&#x200B;**電子郵件網域(@domain)**&#x200B;等於me.com或&#x200B;**電子郵件網域(@domain)**&#x200B;等於mac.com
-   * 上午4/26/2021 07 **00或之後的**&#x200B;更新狀態(@lastModified):00:
-   * 下午4/26/2021 01 **00或之前的**&#x200B;更新狀態(@lastModified):00:
+   * 上午4/26/2021 07:00:00或之後的&#x200B;**更新狀態(@lastModified)**
+   * 下午4/26/2021 01:00:00或之前的&#x200B;**更新狀態(@lastModified)**
 
 一旦您擁有受影響的收件者清單，您就可以將他們的狀態設定為&#x200B;**[!UICONTROL Valid]**，以便透過&#x200B;**[!UICONTROL Database cleanup]**&#x200B;工作流程將其從隔離清單中移除，或者只是從表格中刪除他們。
 

@@ -8,7 +8,7 @@ hide: true
 exl-id: d272d4b9-f1b2-4fb2-9ed9-91a4aea7eca3
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1131'
+source-wordcount: '1147'
 ht-degree: 3%
 
 ---
@@ -53,7 +53,7 @@ ht-degree: 3%
 
 1. 完成&#x200B;**標籤**&#x200B;欄位並按一下&#x200B;**確定**。
 1. 根據您的要求建立您的工作流程。
-1. 按一下&#x200B;**儲存**。 您的範本現在已準備好用於行銷活動。
+1. 按一下「**儲存**」。 您的範本現在已準備好用於行銷活動。
 
 您也可以&#x200B;**複製**&#x200B;預設範本以重複使用並調整其設定。
 
@@ -67,7 +67,7 @@ ht-degree: 3%
 
 ![](assets/s_ncs_user_op_template_tab1.3.png)
 
-如果未選取功能，則與流程相關的元素（功能表、圖示、選項、標籤、子標籤等）將不會顯示在範本的介面或根據此範本的行銷活動中。 行銷活動詳細資訊左側的標籤通常與範本中選取的程式一致。 例如，如果未選取&#x200B;**費用和目標**，則根據此範本的行銷活動中將不會顯示對應的&#x200B;**[!UICONTROL Budget]**&#x200B;標籤。
+如果未選取權能，則與流&#39;b5&#39;7b相關的元素（選單、圖示、選項、標籤、子標籤等） 將不會顯示在範本的介面或根據此範本的行銷活動中。 行銷活動詳細資訊左側的標籤通常與範本中選取的程式一致。 例如，如果未選取&#x200B;**費用和目標**，則根據此範本的行銷活動中將不會顯示對應的&#x200B;**[!UICONTROL Budget]**&#x200B;標籤。
 
 此外，設定視窗的捷徑會新增至行銷活動控制面板。 啟用功能時，直接連結可讓您從Campaign控制面板存取功能。
 
@@ -156,7 +156,7 @@ ht-degree: 3%
 
   >[!NOTE]
   >
-  >在&#x200B;**Adobe Campaign v8 （主控台）檔案**&#x200B;中進一步瞭解如何[使用分項清單](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}。
+  >在[Adobe Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}中進一步瞭解如何&#x200B;**使用分項清單**。
 
 * 選取行銷活動&#x200B;**的**&#x200B;型別：唯一、循環或定期。 依預設，行銷活動範本適用於不重複行銷活動。 在[此區段](../../campaign/using/setting-up-marketing-campaigns.md#recurring-and-periodic-campaigns)中詳細說明週期性行銷活動和週期性行銷活動。
 * 指定行銷活動的持續時間，即行銷活動將發生的天數。 根據此範本建立行銷活動時，會自動填入行銷活動的開始和結束日期。
@@ -167,7 +167,7 @@ ht-degree: 3%
 
 ### 範本執行引數 {#template-execution-parameters}
 
-**[!UICONTROL Advanced campaign settings...]**&#x200B;連結可讓您設定範本的進階選項，以處理傳遞目標（控制組、種子地址等）以及行銷活動測量和工作流程執行的設定。
+**[!UICONTROL Advanced campaign settings...]**&#x200B;連結可讓您設定範本的進階選項，以處理傳遞目標（控制組、種子地址等） 以及行銷活動測量與工作流程執行的設定。
 
 ![](assets/s_ncs_user_op_template_tab1.2.png)
 

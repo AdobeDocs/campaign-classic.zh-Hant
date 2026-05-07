@@ -7,7 +7,7 @@ feature: Web Forms
 exl-id: c5b5c398-c13b-4ebe-88b2-8ff84741422e
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '711'
+source-wordcount: '714'
 ht-degree: 0%
 
 ---
@@ -122,5 +122,5 @@ ht-degree: 0%
 
 ![](assets/s_ncs_admin_survey_end_page_edit.png)
 
-* 您可以複製並貼上現有的HTML內容。 若要這麼做，請按一下&#x200B;**[!UICONTROL Display source code]**&#x200B;並插入HTML代碼。
+* 您可以複製並貼上現有的HTML內容。 若要這麼做，請按一下&#x200B;**[!UICONTROL Display source code]**&#x200B;並插入HTML程式碼。
 * 您可以使用外部URL；若要這麼做，請選取對應的選項，然後輸入要顯示之頁面的URL。

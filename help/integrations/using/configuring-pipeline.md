@@ -10,7 +10,7 @@ level: Intermediate, Experienced
 exl-id: 2d214c36-8429-4b2b-b1f5-fe2730581bba
 source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
 workflow-type: tm+mt
-source-wordcount: '832'
+source-wordcount: '854'
 ht-degree: 1%
 
 ---
@@ -126,9 +126,9 @@ ht-degree: 1%
 | dumpStatePeriodSec | 在```var/INSTANCE/pipelined.json.``` <br>中內部狀態處理序的兩個傾印之間的期間，也可以在此隨選存取內部狀態： ```http://INSTANCE:7781/pipelined/status``` |
 | forcedPipelineEndpoint | 停用偵測PipelineServicesEndpoint以強制執行 |
 | monitorServerPort | 管線處理序將在此連線埠上接聽，以提供內部狀態處理序： ```http://INSTANCE:PORT/pipelined/status```。 <br>預設為7781 |
-| pointerFlushMessageCount | 處理此數量的訊息時，位移會儲存在資料庫中。 <br>預設為1000 |
+| pointerFlushMessageCount | 處理此數量的訊息時，位移會儲存在資料庫中。<br> 預設為1000 |
 | pointerFlushPeriodSec | 在此期間之後，位移會儲存在資料庫中。 <br>預設為5 （秒） |
-| processingJSThreads | 使用自訂JS聯結器處理訊息的專用執行緒數量。 <br>預設為4 |
+| processingJSThreads | 使用自訂JS聯結器處理訊息的專用執行緒數量。<br> 預設值為4 |
 | processingThreads | 使用內建程式碼處理訊息的專用執行緒數目。 <br>預設為4 |
 | retryPeriodSec | 發生處理錯誤時重試之間的延遲。 <br>預設為30 （秒） |
 | retryValiditySec | 如果在此期間之後未成功處理訊息（重試次數過多），請捨棄訊息。 <br>預設為300 （秒） |

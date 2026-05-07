@@ -7,7 +7,7 @@ hide: true
 exl-id: ab786cf1-74a4-4185-a63d-84e776a2f776
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '752'
+source-wordcount: '756'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ ht-degree: 0%
 
 ## 步驟2：擴充 {#step-2--enrichment}
 
-在此範例中，我們想要根據儲存在&#x200B;**[!UICONTROL Score]**&#x200B;表格中的&#x200B;**[!UICONTROL Competition results]**&#x200B;欄位來個人化傳遞。 此表格與收件者表格有1-n型別的關係。 **[!UICONTROL Enrichment]**&#x200B;活動可讓我們從連結至篩選維度的資料表，將資料新增至工作流程的工作表。
+在此範例中，我們想要根據儲存在&#x200B;**[!UICONTROL Competition results]**&#x200B;表格中的&#x200B;**[!UICONTROL Score]**&#x200B;欄位來個人化傳遞。 此表格與收件者表格有1-n型別的關係。 **[!UICONTROL Enrichment]**&#x200B;活動可讓我們從連結至篩選維度的資料表，將資料新增至工作流程的工作表。
 
 1. 在擴充活動的編輯畫面中，依序選取&#x200B;**[!UICONTROL Add data]**、**[!UICONTROL Data linked to the filtering dimension]**&#x200B;並按一下&#x200B;**[!UICONTROL Next]**。
 
@@ -71,7 +71,7 @@ ht-degree: 0%
 
    ![](assets/uc1_enrich_7.png)
 
-1. 輸入ID和標籤，並在&#x200B;**[!UICONTROL Limit the line count]**&#x200B;欄位中選取&#x200B;**[!UICONTROL Data collected]**&#x200B;選項。 在&#x200B;**[!UICONTROL Lines to retrieve]**&#x200B;欄位中，選取&#39;1&#39;作為值。 擴充活動會針對每個收件者，從&#x200B;**[!UICONTROL Competition results]**&#x200B;表格新增單一明細行至工作流程的工作表。 按一下 **[!UICONTROL Next]**。
+1. 輸入ID和標籤，並在&#x200B;**[!UICONTROL Data collected]**&#x200B;欄位中選取&#x200B;**[!UICONTROL Limit the line count]**&#x200B;選項。 在&#x200B;**[!UICONTROL Lines to retrieve]**&#x200B;欄位中，選取&#39;1&#39;作為值。 擴充活動會針對每個收件者，從&#x200B;**[!UICONTROL Competition results]**&#x200B;表格新增單一明細行至工作流程的工作表。 按一下 **[!UICONTROL Next]**。
 
    ![](assets/uc1_enrich_8.png)
 

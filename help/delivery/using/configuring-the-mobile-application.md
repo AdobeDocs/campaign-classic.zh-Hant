@@ -9,8 +9,8 @@ hide: true
 exl-id: 67eee1c5-a918-46b9-875d-7c3c71c00635
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '588'
-ht-degree: 3%
+source-wordcount: '600'
+ht-degree: 4%
 
 ---
 
@@ -96,7 +96,7 @@ ht-degree: 3%
 
 1. 按一下&#x200B;**[!UICONTROL Next]**&#x200B;開始設定開發應用程式。
 
-1. 確定透過SDK在Adobe Campaign和應用程式程式碼中定義了相同的&#x200B;**[!UICONTROL Integration key]**。 <!--For more on this, refer to [this page](integrating-campaign-sdk-into-the-mobile-application.md).-->此整合金鑰是每個應用程式專屬的金鑰，可讓您將行動應用程式連結至Adobe Campaign平台。
+1. 確定透過SDK在Adobe Campaign和應用程式程式碼中定義了相同的&#x200B;**[!UICONTROL Integration key]**。<!--For more on this, refer to [this page](integrating-campaign-sdk-into-the-mobile-application.md).--> 此整合金鑰是每個應用程式專屬的金鑰，可讓您將行動應用程式連結至Adobe Campaign平台。
 
    >[!NOTE]
    >

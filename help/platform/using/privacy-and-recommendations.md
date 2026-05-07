@@ -10,8 +10,8 @@ topic-tags: starting-with-adobe-campaign
 exl-id: d2451b62-bddf-4dee-8789-35aaae8348e1
 source-git-commit: 933f67d594d343dc15b6e8a9c89d2413cb0ea2ac
 workflow-type: tm+mt
-source-wordcount: '143'
-ht-degree: 80%
+source-wordcount: '151'
+ht-degree: 76%
 
 ---
 
@@ -20,11 +20,11 @@ ht-degree: 80%
 
 ## 一般性建議 {#general-recommendations}
 
-Adobe Campaign 是一款強大的工具，用於收集和處理包括個人資訊及敏感資料在內的超大資料。這就是需要謹慎管理隱私權的原因。
+Adobe Campaign 是一款強大的工具，用於收集和處理包括個人資訊及敏感資料在內的超大資料。 這就是需要謹慎管理隱私權的原因。
 
 * 一律以負責任且符合道德的方式使用個人資訊。
 
-* 避免傳送未經請求的電子郵件、推播通知和簡訊訊息（「垃圾訊息」）。在打造顧客終生價值及忠誠度的過程中，Adobe 篤信許可式行銷原則，因此我們嚴格禁止使用 Adobe Campaign 傳送未經請求的訊息。
+* 避免傳送未經請求的電子郵件、推播通知和簡訊訊息（「垃圾訊息」）。 在打造顧客終生價值及忠誠度的過程中，Adobe 篤信許可式行銷原則，因此我們嚴格禁止使用 Adobe Campaign 傳送未經請求的訊息。
 
 請詳閱[安全性和隱私權檢查清單](../../installation/using/get-started-security-privacy.md)，以瞭解有關安全性和隱私權需要檢查的核心元素。
 

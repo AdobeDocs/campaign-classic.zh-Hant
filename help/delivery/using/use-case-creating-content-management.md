@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: 「使用案例：建立內容管理」
-description: 「使用案例：建立內容管理」
+title: 使用案例：建立內容管理
+description: 使用案例：建立內容管理
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Delivery Templates
 exl-id: b0d1cf0e-656e-4d24-9a31-16fef4cd40d0
@@ -27,9 +27,9 @@ ht-degree: 0%
 
 ## 步驟1 — 分析要產生的內容 {#step-1---analyzing-the-content-to-be-produced}
 
-開始之前，您需要對要產生的內容進行精確分析：識別要顯示的元素、研究與其連結的限制、定義每個元素的型別等。 您也需要區分靜態元素和變數元素。
+開始之前，您需要對要產生的內容進行精確分析：識別要顯示的元素、研究與其連結的限制、定義每個元素的型別等。您也需要區分靜態元素和變數元素。
 
-例如，若要建立具有以下內容型別的HTML電子報：
+例如，若要在HTML中建立具有以下內容型別的電子報：
 
 ![](assets/s_ncs_content_newsletter.png)
 
@@ -136,7 +136,7 @@ ht-degree: 0%
    <td> 作者<br /> </td> 
   </tr> 
   <tr> 
-   <td> 頁首標誌(儲存在Adobe Campaign公用資源中)<br /> </td> 
+   <td> 頁首標誌（儲存在Adobe Campaign公用資源中）<br /> </td> 
    <td> 屬性<br /> </td> 
    <td> 連結<br /> </td> 
    <td> 影像<br /> </td> 
@@ -165,7 +165,7 @@ ht-degree: 0%
 
 輸入表單可讓您透過Adobe Campaign使用者端主控台的輸入介面編輯內容執行個體。
 
-表單的說明是結構化XML檔案，可遵循「xtk：form」表單結構描述的語法。
+表單的描述是結構化XML檔案，可遵循「xtk:form」表單結構描述的語法。
 
 >[!NOTE]
 >
@@ -221,7 +221,7 @@ XSLT語言可讓您將XML檔案轉換為另一個輸出檔案。 在稱為樣式
 
 >[!NOTE]
 >
->連結至檔案建置(JavaScript或XSL範本)的限制在[格式](formatting.md)中有詳細說明。
+>連結至檔案建置（JavaScript或XSL範本）的限制在[格式](formatting.md)中有詳細說明。
 
 若要在Adobe Campaign中使用JavaScript範本，請套用下列步驟：
 

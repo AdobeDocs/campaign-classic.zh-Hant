@@ -7,7 +7,7 @@ hide: true
 exl-id: 17b5865a-5e04-4b3b-8b6a-12d5c1a9c1da
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1565'
+source-wordcount: '1566'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 
 
-本機行銷活動是從包含&#x200B;**[!UICONTROL campaign packages]**&#x200B;特定執行排程&#x200B;**的**&#x200B;清單中參考的範本建立的執行個體。 其目的在於使用由中央實體設定和設定的行銷活動範本，滿足本機通訊需求。 實作本機作業的主要階段如下：
+本機行銷活動是從包含&#x200B;**特定執行排程**&#x200B;的&#x200B;**[!UICONTROL campaign packages]**&#x200B;清單中參考的範本建立的執行個體。 其目的在於使用由中央實體設定和設定的行銷活動範本，滿足本機通訊需求。 實作本機作業的主要階段如下：
 
 中央實體&#x200B;**的**
 
@@ -32,7 +32,7 @@ ht-degree: 1%
 
 ## 建立本機行銷活動範本 {#creating-a-local-campaign-template}
 
-若要建立行銷活動套件，您必須先透過&#x200B;**節點建立**&#x200B;行銷活動範本&#x200B;**[!UICONTROL Resources > Templates]**。
+若要建立行銷活動套件，您必須先透過&#x200B;**[!UICONTROL Resources > Templates]**&#x200B;節點建立&#x200B;**行銷活動範本**。
 
 若要建立新的本機範本，請複製預設的&#x200B;**[!UICONTROL Local campaign (opLocal)]**&#x200B;範本。
 
@@ -66,7 +66,7 @@ Web介面對應於由本機實體在訂購行銷活動時填寫的表單。
 
   ![](assets/mkt_distr_8.png)
 
-  提供的表單是在Web應用程式中指定的，必須從範本&#x200B;**[!UICONTROL web Interface]**&#x200B;連結的&#x200B;**[!UICONTROL Advanced campaign settings...]**&#x200B;欄位從下拉式清單中選取。 請參閱[建立本機行銷活動（依表單）](examples.md#creating-a-local-campaign--by-form-)。
+  提供的表單是在Web應用程式中指定的，必須從範本&#x200B;**[!UICONTROL Advanced campaign settings...]**&#x200B;連結的&#x200B;**[!UICONTROL web Interface]**&#x200B;欄位從下拉式清單中選取。 請參閱[建立本機行銷活動（依表單）](examples.md#creating-a-local-campaign--by-form-)。
 
   >[!NOTE]
   >
@@ -106,7 +106,7 @@ Web介面對應於由本機實體在訂購行銷活動時填寫的表單。
 
 ### 文件 {#documents}
 
-建立訂單時，您可以允許本機實體運運算元將檔案（文字檔、試算表、影像、行銷活動說明等）連結至本機行銷活動。 **[!UICONTROL Advanced parameters for campaign entry...]**&#x200B;連結可讓您限制檔案數目。 若要這麼做，只要在&#x200B;**[!UICONTROL Number of documents]**&#x200B;欄位中輸入允許的最大數目即可。
+您可以允許本機實體運運算元連結檔案（文字檔案、試算表、影像、行銷活動說明等） 至本機行銷活動。 **[!UICONTROL Advanced parameters for campaign entry...]**&#x200B;連結可讓您限制檔案數目。 若要這麼做，只要在&#x200B;**[!UICONTROL Number of documents]**&#x200B;欄位中輸入允許的最大數目即可。
 
 ![](assets/s_advuser_mkg_dist_local_docs.png)
 
@@ -114,17 +114,17 @@ Web介面對應於由本機實體在訂購行銷活動時填寫的表單。
 
 ![](assets/s_advuser_mkg_dist_add_docs.png)
 
-如果您不想顯示檔案上傳欄位，請在&#x200B;**[!UICONTROL 0]**&#x200B;欄位中輸入&#x200B;**[!UICONTROL Number of documents]**。
+如果您不想顯示檔案上傳欄位，請在&#x200B;**[!UICONTROL Number of documents]**&#x200B;欄位中輸入&#x200B;**[!UICONTROL 0]**。
 
 >[!NOTE]
 >
->可透過勾選&#x200B;**[!UICONTROL Advanced parameters for campaign entry]**&#x200B;來停用&#x200B;**[!UICONTROL Do not display the page used to enter the campaign parameters]**。
+>可透過勾選&#x200B;**[!UICONTROL Do not display the page used to enter the campaign parameters]**&#x200B;來停用&#x200B;**[!UICONTROL Advanced parameters for campaign entry]**。
 
 ![](assets/s_advuser_mkg_dist_disable_op_parameters.png)
 
 ### 工作流程 {#workflow}
 
-在&#x200B;**[!UICONTROL Targeting and workflows]**&#x200B;索引標籤中，建立行銷活動工作流程，以收集&#x200B;**[!UICONTROL Default values]**&#x200B;中指定的&#x200B;**[!UICONTROL Advanced campaign settings...]**&#x200B;並建立傳遞。
+在&#x200B;**[!UICONTROL Targeting and workflows]**&#x200B;索引標籤中，建立行銷活動工作流程，以收集&#x200B;**[!UICONTROL Advanced campaign settings...]**&#x200B;中指定的&#x200B;**[!UICONTROL Default values]**&#x200B;並建立傳遞。
 
 ![](assets/mkg_dist_local_op_creation4b.png)
 
@@ -150,7 +150,7 @@ Web介面對應於由本機實體在訂購行銷活動時填寫的表單。
 
 ![](assets/mkt_dist_local_campaign_localize_html.png)
 
-儲存您的行銷活動範本。 您現在可以從&#x200B;**[!UICONTROL Campaign packages]**&#x200B;索引標籤的&#x200B;**[!UICONTROL Campaigns]**&#x200B;檢視中按一下&#x200B;**[!UICONTROL Create]**&#x200B;按鈕來使用它。
+儲存您的行銷活動範本。 您現在可以從&#x200B;**[!UICONTROL Campaigns]**&#x200B;索引標籤的&#x200B;**[!UICONTROL Campaign packages]**&#x200B;檢視中按一下&#x200B;**[!UICONTROL Create]**&#x200B;按鈕來使用它。
 
 ![](assets/mkt_distr_9.png)
 
@@ -164,7 +164,7 @@ Web介面對應於由本機實體在訂購行銷活動時填寫的表單。
 
 應用以下步驟：
 
-1. 在&#x200B;**[!UICONTROL Navigation]**&#x200B;行銷活動&#x200B;**頁面的**&#x200B;區段中，按一下&#x200B;**[!UICONTROL Campaign packages]**&#x200B;連結。
+1. 在&#x200B;**行銷活動**&#x200B;頁面的&#x200B;**[!UICONTROL Navigation]**&#x200B;區段中，按一下&#x200B;**[!UICONTROL Campaign packages]**&#x200B;連結。
 1. 按一下 **[!UICONTROL Create]** 按鈕。
 
    ![](assets/mkg_dist_add_an_entry.png)
@@ -279,7 +279,7 @@ Web介面對應於由本機實體在訂購行銷活動時填寫的表單。
 
 若要確認行銷活動訂單，中央實體必須核准它。
 
-透過&#x200B;**[!UICONTROL Campaign orders]**&#x200B;行銷活動&#x200B;**索引標籤存取的**&#x200B;總覽可讓您檢視行銷活動訂單的狀態並核准它們。
+透過&#x200B;**行銷活動**&#x200B;索引標籤存取的&#x200B;**[!UICONTROL Campaign orders]**&#x200B;總覽可讓您檢視行銷活動訂單的狀態並核准它們。
 
 >[!NOTE]
 >

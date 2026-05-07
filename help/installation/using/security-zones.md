@@ -10,8 +10,8 @@ topic-tags: additional-configurations
 exl-id: 67dda58f-97d1-4df5-9648-5f8a1453b814
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
-source-wordcount: '1452'
-ht-degree: 0%
+source-wordcount: '1511'
+ht-degree: 2%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 每個運運算元都必須連結到區域才能登入執行個體，而且運運算元IP必須包含在安全性區域中定義的位址或位址集中。 安全性區域設定是在Adobe Campaign伺服器的設定檔案中執行。
 
-運運算元會從其在主控台中的設定檔連結至安全性區域，可在&#x200B;**[!UICONTROL Administration > Access management > Operators]**&#x200B;節點中存取。 [了解更多](#linking-a-security-zone-to-an-operator)。
+運運算元會從其在主控台中的設定檔連結至安全性區域，可在&#x200B;**[!UICONTROL Administration > Access management > Operators]**&#x200B;節點中存取。 [了解更多資訊](#linking-a-security-zone-to-an-operator)。
 
 >[!NOTE]
 >
@@ -46,7 +46,7 @@ ht-degree: 0%
 每個區域都會定義許可權，例如：
 
 * HTTP連線而非HTTPS
-* 錯誤顯示(Java錯誤、JavaScript、C++等)
+* 錯誤顯示（Java錯誤、JavaScript、C++等）
 * 報表和WebApp預覽
 * 透過登入/密碼驗證
 * 非安全連線模式
@@ -143,7 +143,7 @@ ht-degree: 0%
 >
 >如果已設定Proxy且可以覆寫它（如果不存在，則覆寫它），將進行測試的IP位址將能夠被偽造。
 >
->此外，中繼的產生方式現在類似代理。 因此，您可以將IP位址127.0.0.1新增至安全區域設定中的代理程式清單。
+>此外，中繼的產生方式現在類似代理。 因此，您可以將IP位址127.0.0.1新增至安全性區域組態中的代理程式清單。
 >
 >例如：「`<subnetwork label="Lan 1" mask="192.168.0.0/16" name="lan1" proxy="127.0.0.1,10.100.2.135" />`」。
 
@@ -161,7 +161,7 @@ ht-degree: 0%
 
   ![](assets/8101_proxy3.png)
 
-可能存取Adobe Campaign伺服器的代理伺服器的IP位址必須在相關&#x200B;**`<subnetwork>`**&#x200B;和第一層子網路&#x200B;**`<subnetwork name="all"/>`**&#x200B;中輸入。 例如，此處針對IP位址為10.131.146.102的Proxy：
+可能存取Adobe Campaign伺服器的代理伺服器的IP位址必須在相關&#x200B;**`<subnetwork>`**&#x200B;和第一層子網路&#x200B;**`<subnetwork name="all"/>`**&#x200B;中輸入。 例如，此處為IP位址為10.131.146.102的Proxy：
 
 ```
 <securityZone allowDebug="false" allowHTTP="false" label="Public Network" 
@@ -257,7 +257,7 @@ ht-degree: 0%
 
    * **allowUserPassword**&#x200B;可讓操作員傳送其認證作為引數（以便由apache/IIS/proxy記錄它們）。 此功能過去曾用於簡化API的使用。 無論某些協力廠商應用程式是否使用此功能，您都可以簽入您的逐步指南（或規格）。 若是如此，您必須通知他們變更使用API的方式，並儘快移除此功能。
 
-   * **allowSQLInjection**&#x200B;可讓使用者使用舊語法執行SQL插入。 此屬性應設為false。 您可以使用/nl/jsp/ping.jsp？zones=true來檢查您的安全區域設定。 此頁面顯示目前IP的安全性措施（使用這些安全性旗標計算）的有效狀態。
+   * **allowSQLInjection**&#x200B;可讓使用者使用舊語法執行SQL插入。 此屬性應設為false。 您可以使用/nl/jsp/ping.jsp?zones=true來檢查您的安全性區域設定。 此頁面顯示目前IP的安全性措施（使用這些安全性旗標計算）的有效狀態。
 
 * HttpOnly Cookie/useSecurityToken：參考&#x200B;**sessionTokenOnly**&#x200B;旗標。
 

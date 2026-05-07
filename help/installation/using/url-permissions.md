@@ -10,8 +10,8 @@ topic-tags: additional-configurations
 exl-id: 6fe8da3b-57b9-4a69-8602-a03993630b27
 source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
 workflow-type: tm+mt
-source-wordcount: '333'
-ht-degree: 24%
+source-wordcount: '380'
+ht-degree: 26%
 
 ---
 
@@ -19,9 +19,9 @@ ht-degree: 24%
 
 
 
-可由您的 Campaign Classic 執行個體的 JavaScript 程式碼 (工作流程等等) 呼叫之預設 URL 清單有限。這些是可讓您的執行個體正常運作的 URL。
+可由JavaScript程式碼（工作流程等）呼叫的預設URL清單 有限。 這些是可讓您的執行個體正常運作的 URL。
 
-依預設，執行個體不得連線到外部 URL。不過，您可以將一些外部URL新增至授權URL清單，以便您的執行個體可以連結到這些URL。 這可讓您將 Campaign 執行個體連結到外部系統，例如 SFTP 伺服器或網站，以啟用檔案和/或資料傳輸。
+依預設，執行個體不得連線到外部 URL。 不過，您可以將一些外部URL新增至授權URL清單，以便您的執行個體可以連結到這些URL。 這可讓您將 Campaign 執行個體連結到外部系統，例如 SFTP 伺服器或網站，以啟用檔案和/或資料傳輸。
 
 >[!NOTE]
 >
@@ -57,7 +57,7 @@ ht-degree: 24%
 
 如需詳細資訊，請參閱下列章節：
 
-* [控制面板文件](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hant)
+* [控制面板檔案](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hant)
 * [託管模型](hosting-models.md)
 * [Campaign 伺服器設定](configuring-campaign-server.md)
 * [Campaign伺服器設定檔案引數](the-server-configuration-file.md)

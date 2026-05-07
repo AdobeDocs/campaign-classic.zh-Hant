@@ -10,7 +10,7 @@ hide: true
 exl-id: 7aad0e49-8d9c-40c7-9d6a-42fee0ae5870
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '2517'
+source-wordcount: '2546'
 ht-degree: 1%
 
 ---
@@ -151,7 +151,7 @@ nlserver config -internalpassword
 
 ### Sessiontoken引數 {#sessiontoken-parameter}
 
-在v5中，**sessiontoken**&#x200B;引數同時適用於使用者端（概觀型別熒幕、連結編輯器等清單）和伺服器端（網頁應用程式、報表、jsp、jssp等）。 在v7中，它僅適用於伺服器端。 如果要恢復到v5上的完整功能，您必須使用此引數修改連結，並透過連線頁面傳遞：
+在v5中，**sessiontoken**&#x200B;引數可在兩個使用者端（概觀型別熒幕、連結編輯器等清單）上運作 和伺服器端（網頁應用程式、報表、jsp、jssp等）。 在v7中，它僅適用於伺服器端。 如果要恢復到v5上的完整功能，您必須使用此引數修改連結，並透過連線頁面傳遞：
 
 連結範例：
 
@@ -171,7 +171,7 @@ nlserver config -internalpassword
 
 ### SQL函式 {#sql-functions}
 
-不明的SQL函式呼叫不再自然傳送到伺服器。 目前，所有SQL函式都必須新增至&#x200B;**xtk:funcList**&#x200B;結構描述（如需詳細資訊，請參閱[本區段](../../configuration/using/adding-additional-sql-functions.md)）。 移轉時，會在升級後期間新增一個選項，可讓您維持與舊未宣告SQL函式的相容性。 如果要繼續使用這些函式，請檢查是否確實在&#x200B;**節點層級定義了** XtkPassUnknownSQLFunctionsToRDBMS **[!UICONTROL Administration > Platform > Options]**&#x200B;選項。
+不明的SQL函式呼叫不再自然傳送到伺服器。 目前，所有SQL函式都必須新增至&#x200B;**xtk:funcList**&#x200B;結構描述（如需詳細資訊，請參閱[本區段](../../configuration/using/adding-additional-sql-functions.md)）。 移轉時，會在升級後期間新增一個選項，可讓您維持與舊未宣告SQL函式的相容性。 如果要繼續使用這些函式，請檢查是否確實在&#x200B;**[!UICONTROL Administration > Platform > Options]**&#x200B;節點層級定義了&#x200B;**XtkPassUnknownSQLFunctionsToRDBMS**&#x200B;選項。
 
 >[!IMPORTANT]
 >
@@ -181,7 +181,7 @@ nlserver config -internalpassword
 
 如果您想要透過HTTP通訊協定（而非HTTPS）授權存取某些頁面，例如在您的Web應用程式中，無論在安全性區域中執行的設定為何，您都必須在對應的轉送規則中指定&#x200B;**httpAllowed=&quot;true&quot;**&#x200B;引數。
 
-如果您使用匿名JSSP，則必須在JSSP （**檔案）的轉送規則中新增** httpAllowed=&quot;true&quot;**[!UICONTROL serverConf.xml]**&#x200B;引數：
+如果您使用匿名JSSP，則必須在JSSP （**[!UICONTROL serverConf.xml]**&#x200B;檔案）的轉送規則中新增&#x200B;**httpAllowed=&quot;true&quot;**&#x200B;引數：
 
 例如：
 
@@ -390,7 +390,7 @@ allowSQLInjection="false"
 
 **提示與秘訣**
 
-在`<subQuery>`元素中，參照主要`<queryDef>`的「欄位」欄位   元素，請使用下列語法： `[../@field]`
+在`<subQuery>`元素中，若要參照主要`<queryDef>`元素的「欄位」欄位，請使用下列語法： `[../@field]`
 
 範例：
 
@@ -438,7 +438,7 @@ allowSQLInjection="false"
 
   如果警告與資源衝突有關，操作員必須注意解決衝突。
 
-* Postupgrade **.log`<server version number>`檔案的`>`postupgrade_**&#x200B;_time包含同步處理結果。 預設可在下列目錄中取得： **安裝目錄/var/`<instance>`升級後**。 **錯誤**&#x200B;和&#x200B;**警告**&#x200B;屬性表示錯誤和警告。
+* Postupgrade`>`.log **檔案的** postupgrade_`<server version number>`_time包含同步處理結果。 預設可在下列目錄中取得： **安裝目錄/var/`<instance>`升級後**。 **錯誤**&#x200B;和&#x200B;**警告**&#x200B;屬性表示錯誤和警告。
 
 ### 解決衝突 {#resolve-a-conflict}
 
@@ -590,7 +590,7 @@ logInfo("Done");
 
    ![](assets/migration_interaction_2.png)
 
-1. 在&#x200B;**[!UICONTROL Type of Environment]**&#x200B;索引標籤內的&#x200B;**[!UICONTROL General]**&#x200B;欄位中，選取&#x200B;**[!UICONTROL Live]**。
+1. 在&#x200B;**[!UICONTROL General]**&#x200B;索引標籤內的&#x200B;**[!UICONTROL Type of Environment]**&#x200B;欄位中，選取&#x200B;**[!UICONTROL Live]**。
 
    ![](assets/migration_interaction_3.png)
 
@@ -618,7 +618,7 @@ logInfo("Done");
 
 ### 標準報告 {#standard-reports}
 
-目前所有標準報表都使用轉譯引擎v6.x。如果您已將JavaScript新增至這些報表，則某些元素可能無法再運作。 事實上，舊版JavaScript與v6.x轉譯引擎不相容。 因此，您必須檢查JavaScript程式碼，並在稍後加以調整。 您應該測試每個報表，特別是匯出函式。
+目前所有標準報表都使用轉譯引擎v6.x。 如果您已將JavaScript新增至這些報表，則某些元素可能無法再運作。 事實上，舊版JavaScript與v6.x轉譯引擎不相容。 因此，您必須檢查JavaScript程式碼，並在稍後加以調整。 您應該測試每個報表，特別是匯出函式。
 
 ### 個人化報表 {#personalized-reports}
 

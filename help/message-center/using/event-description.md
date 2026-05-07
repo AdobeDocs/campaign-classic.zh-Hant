@@ -9,7 +9,7 @@ topic-tags: introduction
 exl-id: 9f7f4b6c-2ee8-4091-847d-f616d6abeb6b
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
-source-wordcount: '749'
+source-wordcount: '758'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 本節詳細說明與異動訊息模組結構描述相關的SOAP方法。
 
-兩個&#x200B;**PushEvent**&#x200B;或&#x200B;**PushEvents** SOAP方法連結至兩個&#x200B;**nms：rtEvent**&#x200B;和&#x200B;**nms：BatchEvent**&#x200B;資料架構。 此資訊系統可判斷事件是「批次」或「即時」型別。
+兩個&#x200B;**PushEvent**&#x200B;或&#x200B;**PushEvents** SOAP方法連結至兩個&#x200B;**nms:rtEvent**&#x200B;和&#x200B;**nms:BatchEvent**&#x200B;資料架構。 此資訊系統可判斷事件是「批次」或「即時」型別。
 
 * **PushEvent**&#x200B;可讓您在訊息中插入單一事件，
 * **PushEvents**&#x200B;可讓您在訊息中插入一系列事件。
@@ -40,7 +40,7 @@ ht-degree: 0%
 
 兩種方法都包含用於登入交易式訊息模組的&#x200B;**`<urn:sessiontoken>`**&#x200B;元素。 我們建議您透過受信任的IP位址使用身分識別方法。 若要擷取工作階段權杖，請執行登入SOAP呼叫，然後執行get權杖和登出。 對多個RT呼叫使用相同的權杖。 本節包含的範例是使用工作階段權杖方法（建議使用）。
 
-如果您使用負載平衡的伺服器，則可以使用使用者/密碼驗證（在RT訊息的層級）。 例如：
+如果您使用負載平衡的伺服器，則可以使用使用者/密碼驗證（在RT訊息的層級）。 範例：
 
 ```
 <PushEvent xmlns="urn:nms:rtEvent">
@@ -128,7 +128,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->在&#x200B;**nms：rtEvent**&#x200B;和&#x200B;**nms：BatchEvent**&#x200B;資料結構的描述中，可以找到所有授權屬性及其值的詳細描述。
+>在&#x200B;**nms:rtEvent**&#x200B;和&#x200B;**nms:BatchEvent**&#x200B;資料架構的說明中可取得所有授權屬性及其值的詳細說明。
 
 **`<ctx>`**&#x200B;元素包含訊息資料。 其XML內容是開放的，這表示可以根據要傳送的內容來設定它。
 
@@ -163,7 +163,7 @@ Adobe Campaign在收到事件時，會產生唯一的傳回ID。 這是已封存
 
 >[!IMPORTANT]
 >
->接收SOAP呼叫時，Adobe Campaign會驗證電子郵件地址格式。 如果電子郵件地址的格式不正確，則會傳回錯誤。
+>在收到SOAP呼叫時，Adobe Campaign會驗證電子郵件地址格式。 如果電子郵件地址的格式不正確，則會傳回錯誤。
 
 * 事件處理成功時方法傳回的識別碼範例：
 

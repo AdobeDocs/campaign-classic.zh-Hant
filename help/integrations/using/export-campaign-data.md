@@ -8,8 +8,8 @@ content-type: reference
 exl-id: 8d1404c5-030b-47fe-a4c3-e72f15f09bbb
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '476'
-ht-degree: 3%
+source-wordcount: '536'
+ht-degree: 4%
 
 ---
 
@@ -19,11 +19,11 @@ ht-degree: 3%
 
 若要將Campaign Classic資料匯出至Adobe Real-time Customer Data Platform (RTCDP)，您首先需要在Campaign Classic中建立工作流程，以將您要共用的資料匯出至S3或Azure Blob儲存位置。
 
-設定好工作流程並將資料傳送至您的儲存位置後，您需要在Adobe Experience Platform中以&#x200B;**Source**&#x200B;的形式連線您的S3或Azure Blob儲存位置。
+設定好工作流程並將資料傳送至您的儲存位置後，您需要在Adobe Experience Platform中將S3或Azure blob儲存位置連線為&#x200B;**Source**。
 
 >[!NOTE]
 >
->請注意，我們建議僅將Campaign產生的資料（例如傳送、開啟、點按等）匯出至Adobe Experience Platform。 從第三方來源（例如您的CRM）擷取的資料應直接匯入Adobe Experience Platform。
+>請注意，我們建議僅匯出Campaign產生的資料（例如傳送、開啟、點按等） 前往Adobe Experience Platform。 從第三方來源（例如您的CRM）擷取的資料應直接匯入Adobe Experience Platform。
 
 ## 在Campaign Classic中建立匯出工作流程
 
@@ -45,7 +45,7 @@ ht-degree: 3%
 
 ## 連線您的儲存位置作為Source
 
-以下列出在Adobe Experience Platform中以&#x200B;**Source**&#x200B;連線您的S3或Azure Blob儲存位置的主要步驟。 [Source聯結器檔案](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=zh-Hant)提供這些步驟的詳細資訊。
+以下列出在Adobe Experience Platform中以&#x200B;**Source**&#x200B;形式連線您的S3或Azure Blob儲存位置的主要步驟。 [Source聯結器檔案](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=zh-Hant)提供這些步驟的詳細資訊。
 
 1. 在Adobe Experience Platform **[!UICONTROL Sources]**&#x200B;功能表中，建立與儲存位置的連線：
 

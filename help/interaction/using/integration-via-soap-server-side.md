@@ -9,7 +9,7 @@ topic-tags: unitary-interactions
 exl-id: 3eaef689-44fa-41b3-ade8-9fe447e165ec
 source-git-commit: b8a6a0db27826309456c285c08d4f1d85de70283
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '326'
 ht-degree: 3%
 
 ---
@@ -22,11 +22,11 @@ ht-degree: 3%
 
 ## 產品建議提議 {#offer-proposition}
 
-若要透過SOAP提出優惠方案，請新增&#x200B;**nms：proposition#Propose**&#x200B;命令，後面接著下列引數：
+若要透過SOAP提出優惠方案，請新增&#x200B;**nms:proposition#Propose**&#x200B;命令，然後新增下列引數：
 
 * **targetId**：收件者的主索引鍵（可以是複合索引鍵）。
 * **maxCount**：指定連絡人的優惠方案主張數目。
-* **內容**：可讓您在空間結構描述中新增內容資訊。 如果使用的結構描述是&#x200B;**nms：interaction**，則應新增&#x200B;**`<empty>`**。
+* **內容**：可讓您在空間結構描述中新增內容資訊。 如果使用的結構描述是&#x200B;**nms:interaction**，則應新增&#x200B;**`<empty>`**。
 * **類別**：指定優惠必須屬於的類別。
 * **主題**：指定選件必須屬於的主題。
 * **uuid**： Adobe Campaign永久cookie的值(「uuid230」)。
@@ -44,11 +44,11 @@ ht-degree: 3%
 
 ## 優惠更新 {#offer-update}
 
-將&#x200B;**nms：interaction#UpdateStatus**&#x200B;命令新增至URL，後面接著這些引數：
+將&#x200B;**nms:interaction#UpdateStatus**&#x200B;命令新增至URL，後面接著這些引數：
 
 * **主張**：字元字串，它包含在優惠方案主張期間作為輸出提供的主張ID。 請參閱[優惠方案主張](#offer-proposition)。
-* **狀態**：字串型別，它指定選件的新狀態。 可能的值列在&#x200B;**nms：common**&#x200B;結構描述的&#x200B;**propositionStatus**&#x200B;列舉中。 例如，數字3是現成可用的，對應至&#x200B;**已接受**&#x200B;狀態。
-* **context**： XML元素，可讓您在空間結構描述中新增內容資訊。 如果使用的結構描述是&#x200B;**nms：interaction**，則應新增&#x200B;**`<empty>`**。
+* **狀態**：字串型別，它指定選件的新狀態。 可能的值列在&#x200B;**nms:common**&#x200B;結構描述的&#x200B;**propositionStatus**&#x200B;列舉中。 例如，數字3是現成可用的，對應至&#x200B;**已接受**&#x200B;狀態。
+* **context**： XML元素，可讓您在空間結構描述中新增內容資訊。 如果使用的結構描述是&#x200B;**nms:interaction**，則應新增&#x200B;**`<empty>`**。
 
 ## 使用SOAP呼叫的範例 {#example-using-a-soap-call}
 

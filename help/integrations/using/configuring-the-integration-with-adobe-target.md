@@ -9,7 +9,7 @@ topic-tags: adobe-target
 exl-id: ae8c680f-52a6-4d00-91cd-44d1c3807546
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '195'
+source-wordcount: '198'
 ht-degree: 2%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
-> 身為託管或混合型客戶，請聯絡您的Adobe代表以設定這項整合。 以下步驟僅適用於內部部署客戶。
+> 作為託管或混合型客戶，請聯絡您的Adobe代表以設定此整合。 以下步驟僅適用於內部部署客戶。
 
 這項整合需要：
 
@@ -34,7 +34,7 @@ ht-degree: 2%
 
    此套件可讓您透過Digital Asset Manager存取共用資產。
 
-1. 啟用透過IMS的連線(Adobe ID連線服務)，以在您的電子郵件中使用透過Adobe Experience Cloud共用的影像。 [了解更多](../../integrations/using/about-adobe-id.md)
+1. 啟用透過IMS的連線（Adobe ID連線服務），以在您的電子郵件中使用透過Adobe Experience Cloud共用的影像。 [了解更多](../../integrations/using/about-adobe-id.md)
 1. 瀏覽至&#x200B;**[!UICONTROL Administration > Platform > Options]**&#x200B;以設定Adobe Target的伺服器和組織（租使用者）選項：
 
    ![](assets/tar_options.png)
