@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 0cd6bf20-da72-4cf0-9f5d-d4e8acdd324d
 source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2670'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -49,7 +49,7 @@ _2021 年 9 月 7 日_
 
 * Flash 的生命週期結束後，已從所有相關的 Campaign 功能和元件中移除，並更換為 HTML5。 **量測**&#x200B;類型圖表已移除。 (NEO-30330) [閱讀全文](../../reporting/using/creating-a-chart.md)
 * 在 Windows 上安裝客戶端控制台時，安裝程式現在會檢查是否有父代登錄節點，如果沒有，會建立一個。 這可防止啟動主控台時發生潛在問題。 (NEO-34854)
-* 追蹤簽章功能已經過改良，以防止連結至協力廠商工具（電子郵件使用者端、網際網路瀏覽器等）的錯誤 處理特殊字元。 URL 參數現在已編碼。
+* 追蹤簽章功能已經過改良，以防止連結至第三方工具 (電子郵件用戶端、網際網路瀏覽器等) 以處理特殊字元的錯誤。URL 參數現在已編碼。
 
 **其他變更**
 
@@ -57,7 +57,7 @@ _2021 年 9 月 7 日_
 * 先前已棄用的 Microsoft CRM 連接器 (Office 365 和內部部署) 已從介面中移除。 [閱讀更多](../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft)
 * 遷移到 Tomcat 8 後，已更新 IIS 安裝指令碼，修正了 IIS 整合問題。 (NEO-31019)
 * 已在工作流程轉變&#x200B;**檢視群體**&#x200B;視窗的資料和結構描述標籤中改善資料來源識別。
-* 已將缺少的資料庫索引新增到下列結構描述中，以防止資料庫更新問題： xtk:rights、nms:dlvExclusion、nms:seedMember、nms:trackingUrl
+* 已將缺少的資料庫索引新增到下列結構描述中，以防止資料庫更新問題：xtk:rights、nms:dlvExclusion、nms:seedMember、nms:trackingUrl
 
 **修補程式**
 
@@ -168,7 +168,7 @@ _2021 年 6 月 5 日_
 
 **安全性增強功能**
 
-* 傳回完整資料庫連線詳細資料的&#x200B;**xtk:session#GetCnxInfo** API方法現在僅限管理員使用者存取。 (NEO-27779)
+* 傳回完整資料庫連線詳細資料的 **xtk:session#GetCnxInfo** API 方法現在僅限管理員使用者存取。(NEO-27779)
 * 在 CRM 相關的 JavaScript 檔案中，已棄用的 decryptString 函式已取代為 decryptPassword。
 * 已改善追蹤簽章功能，以在第三方工具 (電子郵件用戶端、網際網路瀏覽器、安全連結安全工具) 修改追蹤連結時，降低追蹤重新導向錯誤的風險。
 * 修正了當包含大寫字元時，追蹤的 URL 無法運作的問題。 追蹤的 URL 簽署機制現在區分大小寫。 (NEO-28414)
@@ -180,7 +180,7 @@ _2021 年 6 月 5 日_
 * Vertica Analytics FDA 連接器
 * PostgreSQL 13
 
-瞭解更多與[&#x200B; Campaign 相容性矩陣相關的資訊](../../rn/using/compatibility-matrix.md)。
+瞭解更多與[ Campaign 相容性矩陣相關的資訊](../../rn/using/compatibility-matrix.md)。
 
 **棄用的功能**
 
@@ -218,7 +218,7 @@ _2021 年 6 月 5 日_
 * 修正導致建立 SAP HANA FDA 索引失敗的問題。 (NEO-29664)
 * 針對當執行包含標題的 SOAP 呼叫時，修正異動訊息可能維持在&#x200B;**等待中**&#x200B;狀態的問題。 (NEO-28737)
 * 修正使用 Teradata FDA 連接器時發生的問題：所有臨時表格都只建立在叢集的一個節點上，這最終會佔用整個多工緩衝空間並導致 Teradata 當機。 現在會在許多節點上產生臨時表格。 (NEO-28230)
-* 修正了使用Web應用程式時，追蹤標籤在&#x200B;**nms:trackingURL**&#x200B;結構描述中產生錯誤主鍵的問題。 (NEO-27931)
+* 修正了使用網頁應用程式時，追蹤標籤在 **nms:trackingURL** 結構描述中產生錯誤主索引鍵的問題。(NEO-27931)
 * 與 ODBC 3.x 的相容性已增強，以確保錯誤訊息的準確性。
 * 修正當電子郵件傳送中使用自訂內容範本時，可能導致主控台當機的問題。 (NEO-31547)
 * 修正了因連線速度緩慢或大規模回應而導致 Tomcat 無法傳送有效回應的問題。 (NEO-30858)

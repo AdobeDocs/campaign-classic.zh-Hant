@@ -8,9 +8,9 @@ level: Beginner
 hide: true
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '415'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 98%
 
 已減少並簡化版本狀態。 [閱讀更多](rn-overview.md)
 
-針對v7.4.1更新Linux套件安裝。 [閱讀更多](../../installation/using/installing-packages-with-linux.md)
+Linux 套件安裝已更新為 v7.4.1。[閱讀更多](../../installation/using/installing-packages-with-linux.md)
 
 ### 2024 年 6 月 {#june-2024}
 

@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 8e20391d-3628-4d0c-b413-c34e046ae810
 source-git-commit: bf45c8bcdd41e614f9be09bc0fd6385707159841
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '410'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -48,7 +48,7 @@ _2024 年 6 月 18 日_
 
   同時，為確保服務持續性，Campaign v7.4 隨附：
 
-   * 適用於iOS的全新Campaign SDK 1.0.27，與iOS 16和17相容，以及最新的[Apple iOS隱私權要求要求](https://developer.apple.com/news/?id=r1henawx){target="_blank"}。
+   * 適用於 iOS 的全新 Campaign SDK 1.0.27，與 iOS 16 和 17 相容，以及符合最新的 [Apple iOS 隱私請求需求](https://developer.apple.com/news/?id=r1henawx){target="_blank"}。
    * 適用於 Android 14 的新 Campaign SDK。
 
 ### 其他變更 {#release-7-4-1-other}
