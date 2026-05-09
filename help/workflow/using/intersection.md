@@ -5,7 +5,7 @@ description: 交集
 feature: Workflows, Targeting Activity
 hide: true
 exl-id: f426bf02-9899-49eb-b699-728d51b57c64
-source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
+source-git-commit: 036c937224135f7b372010736f2040a8a6c69b4c
 workflow-type: tm+mt
 source-wordcount: '432'
 ht-degree: 15%
@@ -63,3 +63,4 @@ ht-degree: 15%
 * recCount
 
 這組三個值會識別從交集產生的目標。 **[!UICONTROL tableName]**&#x200B;是記錄目標識別碼的資料表的名稱，**[!UICONTROL schema]**&#x200B;是母體的結構描述（通常是&#x200B;**[!UICONTROL nms:recipient]**），**[!UICONTROL recCount]**&#x200B;是資料表中的元素數目。
+
