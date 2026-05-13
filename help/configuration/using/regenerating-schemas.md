@@ -5,9 +5,18 @@ description: 瞭解如何重新產生Campaign綱要
 feature: Custom Resources
 role: Developer
 exl-id: 6c48cfea-6d20-4462-a485-71e1575a08a7
-source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
+TQID: https://experienceleague.adobe.com/gkWtbp4Vw-wY5yHsd4xJbDx04u3aPhdg-8kB5OXZu94
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2:
+  - id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
+subfeature_v2:
+  - id: cfc95e9b-b035-4403-a6a9-b27a8a053a37
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: '131'
+source-wordcount: 131
 ht-degree: 2%
 
 ---
@@ -26,6 +35,6 @@ ht-degree: 2%
 >
 >如果您需要強制重新產生所有結構描述，例如解決反向連結中的某些相依性問題，您可以從Adobe Campaign應用程式伺服器啟動下列命令：
 >
-> `nlserver config -postupgrade -instance:`&lt;instance_name>` -force`
+> `nlserver config -postupgrade -instance:`&lt;執行個體名稱>` -force`
 >
 >接著，您必須重新啟動Adobe Campaign應用程式伺服器，並中斷使用者端主控台的連線/重新連線。

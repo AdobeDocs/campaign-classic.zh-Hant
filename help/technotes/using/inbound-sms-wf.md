@@ -4,9 +4,14 @@ title: 中間來源基礎結構的傳入簡訊工作流程活動
 description: 中間來源基礎結構的傳入簡訊工作流程活動
 feature: Technote, SMS
 exl-id: 756039b2-5f57-4dc5-8166-a421206b886b
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+TQID: https://experienceleague.adobe.com/wIOQi9sSeY4YPy5GmPFucVQsOEzg4FY1DGXpII0MrCk
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: 440
 ht-degree: 6%
 
 ---

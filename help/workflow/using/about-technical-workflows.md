@@ -5,9 +5,22 @@ description: 進一步瞭解Campaign Classic套件提供的技術工作流程
 feature: Workflows
 hide: true
 exl-id: 9aed2665-cd4b-419c-b9f2-ea04fc1d8f01
-source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
+TQID: https://experienceleague.adobe.com/XyvGCXDK-0pAX09kPyfGkZFTITlQRuMN0N-Yee-06EM
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2:
+  - id: a075b2c1-7748-4328-b7f6-343aa314616a
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+subfeature_v2:
+  - id: e3988c18-3cfa-4f16-b812-ac2d2b1056fa
+  - id: ee25c34b-ea50-427b-9369-ba0a160f7d70
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: '1723'
+source-wordcount: 1723
 ht-degree: 2%
 
 ---
@@ -58,7 +71,7 @@ ht-degree: 2%
 | **LINE V2存取權杖更新** (updateLineV2AccessToken) | LINE頻道 — 僅限Campaign v7 | 此工作流程會將存取Token重新整理至LINE V2。 |
 | **MID到LineUserID移轉** (MIDToUserIDMigration) | LINE 管道 | 此工作流程會產生LINE V2使用者ID，以便從LINE V1移轉至LINE V2。 |
 | **行銷資源通知** (assetMgt) | 行銷資源(MRM) | 此工作流程會管理連結至行銷資源核准和發佈的通知。 |
-| **訊息中心&lt;external_account_name>** (mcSynch_&lt;external_account_name>) | 異動訊息控制（訊息中心 — 控制） | 此工作流程： <ul><li>復原作業處理的事件清單。</li><li>與NmsBroadLogMsg表格同步，以復原傳遞訊息資格。</li><li>與NmsBroadLogMsg表格的同步一完成，就會復原事件傳送記錄檔。</li><li>會與NmsTrackingUrl表格同步，以復原傳遞URL的追蹤。</li><li>與NmsTrackingUrl表同步完成後，立即復原事件追蹤URL。</li><li>可讓您在傳送傳遞後，每三小時復原一次所有置於隔離的電子郵件地址。</li></ul> |
+| **訊息中心&lt;外部帳戶名稱>** （mcSynch_&lt;外部帳戶名稱>） | 異動訊息控制（訊息中心 — 控制） | 此工作流程： <ul><li>復原作業處理的事件清單。</li><li>與NmsBroadLogMsg表格同步，以復原傳遞訊息資格。</li><li>與NmsBroadLogMsg表格的同步一完成，就會復原事件傳送記錄檔。</li><li>會與NmsTrackingUrl表格同步，以復原傳遞URL的追蹤。</li><li>與NmsTrackingUrl表同步完成後，立即復原事件追蹤URL。</li><li>可讓您在傳送傳遞後，每三小時復原一次所有置於隔離的電子郵件地址。</li></ul> |
 | **MessageCenter完整彙總計算** (agg_messageCenter_full) | 異動訊息控制（訊息中心 — 控制） | 此工作流程會更新訊息中心Cube的「完整」彙總。 預設會每天凌晨3:00觸發。 此彙總會擷取下列維度：管道、日期、狀態和事件型別。 然後，訊息中心Cube可用於根據事件產生報表。 您可以在[本節](../../reporting/using/ac-cubes.md)中進一步瞭解立方體 |
 | **中間來源（傳遞計數器）** (defaultMidSourcingDlv) | 轉移至中間來源 | 此工作流程會收集中間來源伺服器上傳遞的計數資訊。 計數資訊包括一般傳遞指標，例如已傳送的傳遞數量等。未包含開啟之類的追蹤資訊。 預設會每十分鐘觸發一次。 |
 | **中間來源（傳遞記錄）** (defaultMidSourcingLog) | 轉移至中間來源 | 此工作流程會收集中間來源伺服器上的傳遞記錄。 預設會每小時觸發一次。 |

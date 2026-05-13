@@ -8,9 +8,19 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-target
 exl-id: 6177f57b-534c-4d86-8f73-d96980c48a77
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+TQID: https://experienceleague.adobe.com/ZAYETj1vL8BW-5r9YkP0teEP47bUbfmQ0GqctUrJqxs
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2:
+  - id: d5ef99fa-df0c-4153-bf94-105ad0724167
+subfeature_v2:
+  - id: b1fd1501-3105-4d6b-b4d4-9af53126df75
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: '854'
+source-wordcount: 854
 ht-degree: 2%
 
 ---
@@ -62,7 +72,7 @@ ht-degree: 2%
 * **[!UICONTROL Landing Page]**：如果您要將預設影像重新導向至預設登陸頁面。 此URL僅適用於預設影像顯示在最終電子郵件中且為選用的情況。
 * **[!UICONTROL Additional decision parameters]**：指定Adobe Target區段中所定義欄位與Adobe Campaign欄位之間的對應。 使用的Adobe Campaign欄位必須在rawbox中指定。 在我們的範例中，已新增「國家/地區」欄位。
 
-如果您在Adobe Target的設定中使用企業許可權，請在此欄位中新增對應的屬性。 在[此頁面](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html?lang=zh-Hant)中進一步瞭解Target Enterprise許可權。
+如果您在Adobe Target的設定中使用企業許可權，請在此欄位中新增對應的屬性。 在[此頁面](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html)中進一步瞭解Target Enterprise許可權。
 
 ![](assets/target_13.png)
 
@@ -154,7 +164,7 @@ ht-degree: 2%
 
 ## 預覽和傳送電子郵件 {#preview-send-email}
 
-在Adobe Campaign中，您現在可以預覽電子郵件，並測試其對不同收件者的轉譯。 您會發現影像會根據建立的不同體驗而變更。 若要瞭解電子郵件建立的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=zh-Hant){target="_blank"}。
+在Adobe Campaign中，您現在可以預覽電子郵件，並測試其對不同收件者的轉譯。 您會發現影像會根據建立的不同體驗而變更。 若要瞭解電子郵件建立的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html){target="_blank"}。
 
 您現在已準備好傳送包含Target動態優惠方案的電子郵件。
 

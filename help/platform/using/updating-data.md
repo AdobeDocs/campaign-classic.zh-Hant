@@ -7,9 +7,14 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 exl-id: f7dfbc22-4ac3-4b61-927f-34ecc4e35154
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+TQID: https://experienceleague.adobe.com/Ao7kTRz1lHY0sDhOLoWIZNkHEXnL2wIv-0BU0e-2cOs
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+topic_v2:
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: '738'
+source-wordcount: 738
 ht-degree: 23%
 
 ---
@@ -24,7 +29,7 @@ ht-degree: 23%
 
 ## 設定自動更新 {#setting-up-an-automatic-update}
 
-可透過工作流程設定自動更新。 有關更多資訊，請參閱[Campaign v8 文件](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/update-data.html?lang=zh-Hant){target="_blank"}。
+可透過工作流程設定自動更新。 有關更多資訊，請參閱[Campaign v8 文件](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/update-data.html){target="_blank"}。
 
 ## 執行大量更新 {#performing-a-mass-update}
 
