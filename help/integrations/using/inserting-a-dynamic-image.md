@@ -92,7 +92,7 @@ ht-degree: 2%
 
    ![](assets/target_6.png)
 
-1. 對其餘的重新導向選件遵循相同程式。 如需關於此項目的詳細資訊，請參閱此[頁面](https://experienceleague.adobe.com/docs/target/using/experiences/offers/offer-redirect.html)。
+1. 對其餘的重新導向選件遵循相同程式。 如需關於此項目的詳細資訊，請參閱此[頁面](https://experienceleague.adobe.com/docs/target/using/experiences/offers/offer-redirect.html?lang=zh-Hant)。
 
 ## 建立客群 {#audiences-target}
 

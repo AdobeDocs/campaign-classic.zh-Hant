@@ -235,7 +235,7 @@ Learn more about [Transactional Messaging](../../message-center/using/about-tran
 
 傳遞分析是傳遞的準備。 此程式會將內容與收件者設定檔資料結合，以產生收件者收到的個人化電子郵件。 傳遞分析邏輯可以根據定義的邏輯，從目標中排除收件者或完全停止傳遞。 此程式也包含動態內容邏輯的評估，以及插入個別收件者設定檔專屬的優惠。
 
-在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html){target="_blank"}中進一步瞭解傳遞分析。
+在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html?lang=zh-Hant){target="_blank"}中進一步瞭解傳遞分析。
 +++
 
 +++**傳遞記錄**
@@ -415,7 +415,7 @@ An engine call is a server call that starts real-time processing on server side 
 
 篩選維度是包含資料或屬性的結構描述，這些資料或屬性由查詢用來篩選所需的列。 篩選維度結構描述必須直接連結至定義的目標維度，以允許Adobe Campaign跨資料庫聯結並傳回回應列。
 
-在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/targeting-workflows.html#targeting-and-filtering-dimensions){target="_blank"}中進一步瞭解篩選維度。
+在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/targeting-workflows.html?lang=zh-Hant#targeting-and-filtering-dimensions){target="_blank"}中進一步瞭解篩選維度。
 +++
 
 +++**資料夾**

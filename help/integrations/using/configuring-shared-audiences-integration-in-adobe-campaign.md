@@ -107,7 +107,7 @@ ht-degree: 5%
 
 ## 步驟4：設定訪客ID服務 {#step-4--configure-the-visitor-id-service}
 
-如果您的訪客ID服務從未在您的Web屬性或網站上設定過，請參閱下列[檔案](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-aam-analytics.html)以瞭解如何設定您的服務或下列[影片](https://helpx.adobe.com/tw/marketing-cloud/how-to/email-marketing.html#step-two)。
+如果您的訪客ID服務從未在您的Web屬性或網站上設定過，請參閱下列[檔案](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-aam-analytics.html?lang=zh-Hant)以瞭解如何設定您的服務或下列[影片](https://helpx.adobe.com/tw/marketing-cloud/how-to/email-marketing.html#step-two)。
 
 使用Experience Cloud ID服務中的`setCustomerID`函式與整合代碼`AdobeCampaignID`將客戶識別碼與宣告ID同步。 `AdobeCampaignID`應該符合[步驟2：設定資料來源](#step-2--configure-the-data-sources)中設定的收件者資料Source中設定的調解金鑰值。
 

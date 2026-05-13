@@ -28,7 +28,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->如果您需要新增伺服器端JavaScript程式碼，請使用個人化區塊。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}。
+>如果您需要新增伺服器端JavaScript程式碼，請使用個人化區塊。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=zh-Hant){target="_blank"}。
 
 >[!CAUTION]
 >

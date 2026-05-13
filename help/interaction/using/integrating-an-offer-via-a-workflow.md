@@ -71,7 +71,7 @@ ht-degree: 1%
 
 ### 指定優惠方案或呼叫優惠方案引擎 {#specifying-an-offer-or-a-call-to-the-offer-engine}
 
-設定查詢之後（請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}）：
+設定查詢之後（請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=zh-Hant){target="_blank"}）：
 
 1. 新增並開啟擴充活動。
 1. 在&#x200B;**[!UICONTROL Enrichment]**&#x200B;索引標籤中，選取&#x200B;**[!UICONTROL Add data]**。

@@ -28,11 +28,11 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard)已記錄存取傳遞清單及使用傳遞儀表板的完整指引。 此內容適用於Campaign Classic v7和Campaign v8使用者。
+>[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/monitor/delivery-dashboard)已記錄存取傳遞清單及使用傳遞儀表板的完整指引。 此內容適用於Campaign Classic v7和Campaign v8使用者。
 >
 >此頁面記錄混合式部署和內部部署的&#x200B;**Campaign Classic v7專屬進階自訂**。
 
-若要在Campaign UI中監視傳遞，請參閱Campaign UI檔案[&#128279;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}中的Campaign v8監視傳遞。
+若要在Campaign UI中監視傳遞，請參閱Campaign UI檔案[&#128279;](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}中的Campaign v8監視傳遞。
 
 ## 自訂傳遞記錄 {#use-case}
 
@@ -125,9 +125,9 @@ ht-degree: 2%
 
 ## 相關主題
 
-* [在Campaign UI中監視傳遞](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} （Campaign v8檔案）
-* [傳遞狀態](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-statuses){target="_blank"} （Campaign v8檔案）
-* [瞭解傳遞失敗](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} （Campaign v8檔案）
-* [隔離管理](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} （Campaign v8檔案）
+* [在Campaign UI中監視傳遞](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} （Campaign v8檔案）
+* [傳遞狀態](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/monitor/delivery-statuses){target="_blank"} （Campaign v8檔案）
+* [瞭解傳遞失敗](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} （Campaign v8檔案）
+* [隔離管理](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} （Campaign v8檔案）
 * [擴充結構描述](../../configuration/using/extending-a-schema.md) （v7混合式/內部部署）
 
