@@ -6,9 +6,15 @@ feature: Technote, Upgrade
 role: User
 level: Beginner
 exl-id: a9cd08b0-55c2-4405-9fb8-f0c623cd4ccb
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+TQID: https://experienceleague.adobe.com/r3qtW9ZsCD85N9qAnN1EOje-VMhDoyPuqea2xZnBWLs
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: b12f6872-9271-4369-85e5-86969a0b99a2id: d5ef99fa-df0c-4153-bf94-105ad0724167
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: '2269'
+source-wordcount: 2269
 ht-degree: 0%
 
 ---
@@ -21,7 +27,7 @@ Adobe免除舊版資料中心的委任：Campaign Classic例項必須轉移至Pu
 
 以下是此專案的一組常見問題、對您的Campaign環境的影響以及其他實用資源。
 
-如有任何其他問題，請連絡[Adobe客戶服務](https://experienceleague.adobe.com/zh-hant?support-solution=Campaign#support)。
+如有任何其他問題，請連絡[Adobe客戶服務](https://experienceleague.adobe.com/?support-solution=Campaign#support)。
 
 ## 基礎架構影響
 
@@ -51,7 +57,7 @@ Adobe免除舊版資料中心的委任：Campaign Classic例項必須轉移至Pu
 
 * **解決任何移轉後問題的計畫為何？**
 
-  在生產系統移轉之前，將會進行廣泛的測試。 不過，如果發生任何問題，[Adobe客戶服務](https://experienceleague.adobe.com/zh-hant?support-solution=Campaign#support)仍會是主要聯絡視窗。 Adobe已建立專家團隊，在需要時提供進階支援。
+  在生產系統移轉之前，將會進行廣泛的測試。 不過，如果發生任何問題，[Adobe客戶服務](https://experienceleague.adobe.com/?support-solution=Campaign#support)仍會是主要聯絡視窗。 Adobe已建立專家團隊，在需要時提供進階支援。
 
 ## 傳遞能力影響
 
@@ -97,7 +103,7 @@ Adobe免除舊版資料中心的委任：Campaign Classic例項必須轉移至Pu
 
   首先，Adobe傳遞能力將評估平台傳遞能力狀態，並推薦切換至新IP的計畫
 
-  移轉後不需要熱身。 可能會出現一些例外狀況，在這種情況下，[Adobe客戶服務](https://experienceleague.adobe.com/zh-hant?support-solution=Campaign#support)將會聯絡客戶。
+  移轉後不需要熱身。 可能會出現一些例外狀況，在這種情況下，[Adobe客戶服務](https://experienceleague.adobe.com/?support-solution=Campaign#support)將會聯絡客戶。
 
   不過，計畫是讓這項作業對業務而言是透明的，不同於在上線期間進行的初始升級。
 
@@ -173,7 +179,7 @@ Adobe免除舊版資料中心的委任：Campaign Classic例項必須轉移至Pu
 
   它可能會根據新伺服器的位置而變更。 不過，客戶將可保留其目前的時區。
 
-  在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/managing-time-zones.html?lang=zh-Hant){target="_blank"}中進一步瞭解時區管理。
+  在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/managing-time-zones.html){target="_blank"}中進一步瞭解時區管理。
 
 
 ## 安全性與許可權

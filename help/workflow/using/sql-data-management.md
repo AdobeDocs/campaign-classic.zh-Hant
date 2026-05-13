@@ -5,9 +5,13 @@ description: 深入瞭解SQL資料管理工作流程活動
 feature: Workflows
 hide: true
 exl-id: cada78cb-658f-4b9e-8136-31c17cb1d82f
-source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
+TQID: https://experienceleague.adobe.com/69utVGZghklulU5x5HcHF-hA-UKbSgGLQZ-CtlVanL0
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a658c786-869b-4194-a780-2594d663adda
+topic_v2: id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: '420'
+source-wordcount: 420
 ht-degree: 5%
 
 ---
@@ -26,9 +30,9 @@ ht-degree: 5%
 
   如需詳細資訊，請參閱Campaign版本的相關章節：
 
-  ![](assets/do-not-localize/v7.jpeg) [Campaign v7檔案](../../installation/using/about-fda.md)
+  ![](assets/do-not-localize/v7.jpeg)[Campaign v7檔案](../../installation/using/about-fda.md)
 
-  ![](assets/do-not-localize/v8.png) [Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html?lang=zh-Hant)
+  ![](assets/do-not-localize/v8.png)[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html?lang=zh-Hant)
 
 * 傳出綱要必須存在於資料庫中，並連結至FDA資料庫。
 * 執行工作流程的運運算元必須具有&#x200B;**[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY (useSqlDmActivity)]**&#x200B;已命名的許可權。 [了解更多資訊](../../platform/using/access-management-named-rights.md)。

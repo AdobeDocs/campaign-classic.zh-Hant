@@ -6,9 +6,13 @@ feature: SMS
 role: User, Developer, Admin
 level: Experienced
 exl-id: 6987cb5e-8821-4619-b0e4-f0fad3355bfb
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+TQID: https://experienceleague.adobe.com/HJK4w85OgzUx9BPSvExm8c91CQYIecDfw7Uxv3rzrJU
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c1579802-ddd4-4214-8a91-97b2066abe11id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: '1008'
+source-wordcount: 1008
 ht-degree: 11%
 
 ---
@@ -97,7 +101,7 @@ ht-degree: 11%
 
    >[!WARNING]
    >
-   >指派&#x200B;**[!UICONTROL Internal name]**&#x200B;時，請務必遵循指定的命名慣例：
+   >指派&#x200B;**[!UICONTROL Internal name]**時，請務必遵循指定的命名慣例：
    > </br>`SMS Operator Name_Internal Name of the Marketing SMS external account`
 
    ![](assets/mid_external_account_6.png)
@@ -154,7 +158,7 @@ ht-degree: 11%
 
 ## 變更傳遞範本 {#changing-the-delivery-template}
 
-Adobe Campaign提供位於&#x200B;**[!UICONTROL Resources > Templates > Delivery templates]**&#x200B;節點中的行動傳遞範本。 有關更多資訊，請參閱[Campaign v8 文件](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=zh-Hant){target="_blank"}。
+Adobe Campaign提供位於&#x200B;**[!UICONTROL Resources > Templates > Delivery templates]**&#x200B;節點中的行動傳遞範本。 有關更多資訊，請參閱[Campaign v8 文件](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}。
 
 若要透過SMS頻道傳送訊息，您必須建立包含頻道聯結器參照的範本。
 

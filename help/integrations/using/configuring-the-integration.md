@@ -7,9 +7,14 @@ badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v
 audience: integrations
 content-type: reference
 exl-id: 54ee88b2-e646-4fb9-abec-957f0096f15f
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+TQID: https://experienceleague.adobe.com/9IREhm2ZwMGCGIMbTQYOpSA4PiLxoJOVPQty4WreUWY
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: c5474392-5419-4296-9e41-f6f4ce4f6e9bid: d5ef99fa-df0c-4153-bf94-105ad0724167
+subfeature_v2: id: df0d6518-6f49-46e2-b46e-3bcc513f553fid: e656c701-3899-4db3-989c-de0980ddfffa
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080bid: e0eb8757-182f-49f3-94a4-1587d16f5094id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: '556'
+source-wordcount: 556
 ht-degree: 4%
 
 ---
@@ -28,7 +33,7 @@ ht-degree: 4%
 1. [設定外部帳戶](#configure-the-external-account)
 1. [設定AEM資源篩選](#configure-aem-resources-filtering)
 
-適用於進階設定，例如管理個人化欄位和區塊。 請參閱Adobe Experience Manager [檔案](https://helpx.adobe.com/tw/experience-manager/6-5/sites/administering/using/campaignonpremise.html)。
+適用於進階設定，例如管理個人化欄位和區塊。 請參閱Adobe Experience Manager [檔案](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/campaignonpremise.html)。
 
 ### 在Adobe Campaign中安裝AEM整合套件 {#install-the-aem-integration-package-in-adobe-campaign}
 
@@ -119,12 +124,12 @@ ht-degree: 4%
 
 1. 設定&#x200B;**復寫**&#x200B;以從AEM編寫執行個體復寫至AEM發佈執行個體。
 
-   若要瞭解如何設定復寫，請參閱Adobe Experience Manager [檔案](https://helpx.adobe.com/tw/experience-manager/6-5/sites/deploying/using/replication.html)。
+   若要瞭解如何設定復寫，請參閱Adobe Experience Manager [檔案](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/replication.html)。
 
 1. 透過設定專用的&#x200B;**Adobe Experience Manager**&#x200B;將Cloud Service連線到Adobe Campaign。
 
-   若要瞭解如何透過Cloud Services連結這兩個解決方案，請參閱Adobe Experience Manager [檔案](https://helpx.adobe.com/tw/experience-manager/6-5/sites/administering/using/campaignonpremise.html#ConfiguringAdobeExperienceManager) 。
+   若要瞭解如何透過Cloud Services連結這兩個解決方案，請參閱Adobe Experience Manager [檔案](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/campaignonpremise.html#ConfiguringAdobeExperienceManager) 。
 
 1. 設定&#x200B;**外部化器服務**。
 
-   若要瞭解如何進行設定，請參閱Adobe Experience Manager [檔案](https://helpx.adobe.com/tw/experience-manager/6-5/sites/developing/using/externalizer.html)。
+   若要瞭解如何進行設定，請參閱Adobe Experience Manager [檔案](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/externalizer.html)。

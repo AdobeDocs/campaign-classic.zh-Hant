@@ -7,9 +7,14 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
-source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
+TQID: https://experienceleague.adobe.com/ZyGxEznt4l0SbCiUySGjKwJwqSUCKJ-TjwGHltVWIzE
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+subfeature_v2: id: cebd7cfa-b9fa-4d9f-a2ab-fce31f32c4a3id: cfc95e9b-b035-4403-a6a9-b27a8a053a37id: eff19c99-440a-4318-b319-444edc4d8d8f
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d095671a-1355-40aa-8b5f-06c33c68080bid: eddd9b14-83bd-4ff4-9072-54a4a484abb7id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: '3898'
+source-wordcount: 3898
 ht-degree: 1%
 
 ---
@@ -57,7 +62,7 @@ ht-degree: 1%
   </tr>
   <tr> 
    <td> <span class="uicontrol">NMS_ActivateOwnerConfirmation</span> <br /> </td> 
-   <td><p> 可讓您允許負責傳遞的運運算元確認傳送（若指定的特定運運算元或運運算元群組用於傳遞的屬性中開始傳遞）。</p><p> 若要這麼做，請輸入"1"作為值來啟動選項。 若要停用此選項，請輸入「0」。</p><p> 然後，傳送確認程式將依預設運作：只有傳送屬性中針對傳送指定的操作員或操作員群組（或管理員）才能確認並執行傳送。 請參閱<a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html?lang=zh-Hant#start-a-delivery" target="_blank">本節</a>。</p> </td>
+   <td><p> 可讓您允許負責傳遞的運運算元確認傳送（若指定的特定運運算元或運運算元群組用於傳遞的屬性中開始傳遞）。</p><p> 若要這麼做，請輸入"1"作為值來啟動選項。 若要停用此選項，請輸入「0」。</p><p> 然後，傳送確認程式將依預設運作：只有傳送屬性中針對傳送指定的操作員或操作員群組（或管理員）才能確認並執行傳送。 請參閱<a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html#start-a-delivery" target="_blank">本節</a>。</p> </td>
 
 <tr> 
    <td> <span class="uicontrol">Nms_DefaultRcpSchema</span> <br /> </td> 
@@ -209,7 +214,7 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_DeliveryPreparationWindow</span> <br /> </td> 
-   <td><p>計算執行中的傳遞數目時，<span class="uicontrol"><a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html?lang=zh-Hant" target="_blank">operationMgt</a></span>技術工作流程會使用此選項。</p>它可讓您定義天數，超過該天后，狀態不一致的傳送會從執行中的傳送計數中排除。</p><p>預設情況下，此值會設為「7」，這表示將排除超過7天的不一致傳送。</p></td> 
+   <td><p>計算執行中的傳遞數目時，<span class="uicontrol"><a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html" target="_blank">operationMgt</a></span>技術工作流程會使用此選項。</p>它可讓您定義天數，超過該天后，狀態不一致的傳送會從執行中的傳送計數中排除。</p><p>預設情況下，此值會設為「7」，這表示將排除超過7天的不一致傳送。</p></td> 
   </tr>
   <tr> 
    <td> <span class="uicontrol">NmsPaper_SenderLine1</span> <br /> </td> 
@@ -366,7 +371,7 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_OperationMgtDebug</span> <br /> </td> 
-   <td> 可讓您監視<a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html?lang=zh-Hant" target="_blank">operationMgt</a>技術工作流程執行。 啟動時（值為「1」），執行資訊會記錄在工作流程稽核記錄中。<br /> </td> 
+   <td> 可讓您監視<a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html" target="_blank">operationMgt</a>技術工作流程執行。 啟動時（值為「1」），執行資訊會記錄在工作流程稽核記錄中。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_TimeRange</span> <br /> </td> 

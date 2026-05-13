@@ -7,9 +7,13 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
-source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
+TQID: https://experienceleague.adobe.com/BZ4rjzbXYikNoGAVHq4Gy7tY8OugKDgsmVLkKuIB9tw
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: b12f6872-9271-4369-85e5-86969a0b99a2
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: '8103'
+source-wordcount: 8103
 ht-degree: 8%
 
 ---
@@ -410,7 +414,7 @@ Adobe Campaign的整體組態定義於位於安裝目錄&#x200B;**conf**&#x200B;
   </tr> 
   <tr> 
    <td> maxCnx<br /> </td> 
-   <td> 拒絕新連線之前允許的最大連線數量。 檢視此<a href="https://helpx.adobe.com/tw/campaign/kb/how-to-increase-the-maximum-number-of-database-connections-from-.html">技術說明</a>.<br /> </td> 
+   <td> 拒絕新連線之前允許的最大連線數量。 檢視此<a href="https://helpx.adobe.com/campaign/kb/how-to-increase-the-maximum-number-of-database-connections-from-.html">技術說明</a>.<br /> </td> 
    <td> 短整數<br /> </td> 
   </tr> 
   <tr> 
@@ -1621,9 +1625,9 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
    <td> statServerAddress<br /> </td> 
    <td> 傳遞統計伺服器的位址，指定為 
     &lt;dns或ip&gt; 
-      <code>&lbrack;</code>: 
+      <code>[</code>: 
      &lt;連線埠&gt; 
-       <code>&rbrack;</code>. 查看 
+       <code>]</code>. 查看 
       <a href="../../installation/using/email-deliverability.md#coordinates-of-the-statistics-server" target="_blank">統計伺服器</a>的座標。 
       <br /> 
      </td> 

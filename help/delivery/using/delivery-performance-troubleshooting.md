@@ -5,9 +5,13 @@ description: 瞭解如何最佳化傳遞效能和疑難排解Campaign Classic v7
 feature: Monitoring, Deliverability, Troubleshooting
 role: User, Developer
 exl-id: cc793d7b-0a26-4a75-97ed-d79c87d9b3b8
-source-git-commit: 2ebae2b84741bf26dd44c872702dbf3b0ebfc453
+TQID: https://experienceleague.adobe.com/B6Fu-5VqsHGkXOX88d4MdTSkczdPGDfd79cFUhfe9tI
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: '791'
+source-wordcount: 791
 ht-degree: 2%
 
 ---
@@ -60,8 +64,8 @@ ht-degree: 2%
 >
 >Campaign v8檔案中已記錄傳遞疑難排解的全面指引，適用於Campaign Classic v7和Campaign v8使用者：
 >
->* 常見傳遞失敗與解決方案： [瞭解傳遞失敗](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}
->* 傳送診斷緩慢： [在Campaign UI中監視傳送](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}
+>* 常見傳遞失敗與解決方案： [瞭解傳遞失敗](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}
+>* 傳送診斷緩慢： [在Campaign UI中監視傳送](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}
 >* 傳遞最佳實務：[傳遞最佳實務](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"}
 >
 >本節記錄針對混合式部署和內部部署的&#x200B;**Campaign Classic v7專屬疑難排解**。
@@ -100,13 +104,13 @@ Error during the call of method 'AppendDeliveryPart' on the mid sourcing server:
 
 >[!NOTE]
 >
->對於Campaign v8受管理的Cloud Services使用者，技術工作流程和基礎架構監控由Adobe管理。 如[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}所述，著重於傳遞內容和目標定位。
+>對於Campaign v8受管理的Cloud Services使用者，技術工作流程和基礎架構監控由Adobe管理。 如[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}所述，著重於傳遞內容和目標定位。
 
 ## 相關主題
 
-* [瞭解傳遞失敗](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} （Campaign v8檔案）
+* [瞭解傳遞失敗](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} （Campaign v8檔案）
 * [傳遞最佳實務](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"} （Campaign v8檔案）
-* [在Campaign UI中監視傳遞](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} （Campaign v8檔案）
+* [在Campaign UI中監視傳遞](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} （Campaign v8檔案）
 * [資料庫維護](../../production/using/recommendations.md) （v7混合/內部部署）
 * [電子郵件傳遞能力](../../installation/using/email-deliverability.md) （v7混合/內部部署）
 * [資料庫效能](../../production/using/database-performances.md) （v7混合/內部部署）

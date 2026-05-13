@@ -6,16 +6,19 @@ feature: Channel Configuration
 role: User
 hide: true
 exl-id: 66250817-f829-4b8b-92dd-2daa92a97fe0
-source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
+TQID: https://experienceleague.adobe.com/kKHRuZJPtIFepdBJs8IT-gADxhLm-LCaKN5DZ31GFww
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: '719'
+source-wordcount: 719
 ht-degree: 12%
 
 ---
 
 # 傳遞設定 {#about-delivery-settings}
 
-以下設定專屬於Campaign Classic。 如需其他傳遞設定，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html?lang=zh-Hant){target="_blank"}。
+以下設定專屬於Campaign Classic。 如需其他傳遞設定，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html){target="_blank"}。
 
 ## 傳遞分析 {#delivery-analysis}
 
@@ -76,7 +79,7 @@ ht-degree: 12%
 
   >[!IMPORTANT]
   >
-  >針對託管或混合式安裝，如果您已升級至[Enhanced MTA](sending-with-enhanced-mta.md)，則只有在設為&#x200B;**3.5天或更短時間時，才會使用Campaign電子郵件傳遞中的&#x200B;**&#x200B;[!UICONTROL Delivery duration]&#x200B;**設定**。 如果您定義的值超過3.5天，則不會考慮該值。
+  >針對託管或混合式安裝，如果您已升級至[Enhanced MTA](sending-with-enhanced-mta.md)，則只有在設為&#x200B;**3.5天或更短時間時，才會使用Campaign電子郵件傳遞中的&#x200B;**[!UICONTROL Delivery duration]**設定**。 如果您定義的值超過3.5天，則不會考慮該值。
 
 * **資源效度限制**： **[!UICONTROL Validity limit]**&#x200B;欄位是用於上傳的資源，主要用於映象頁面和影像。 本頁上的資源在限定時間內有效（以節省磁碟空間）。
 

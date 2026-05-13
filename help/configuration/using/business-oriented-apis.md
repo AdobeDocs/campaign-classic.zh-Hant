@@ -5,9 +5,13 @@ description: 商業導向 API
 feature: API
 role: Developer
 exl-id: e6638870-3141-4f12-b904-db436127c0d1
-source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
+TQID: https://experienceleague.adobe.com/lPAawM33zS2tws0EyHFHW1jD-Vw3ZLDtDcMEd1eJA1c
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: b12f6872-9271-4369-85e5-86969a0b99a2
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: 625
 ht-degree: 3%
 
 ---
@@ -27,7 +31,7 @@ Business API是每種物件型別專屬的。 它們會影響：
    * 啟動工作流程，
    * 驗證流程等。
 
-     請參閱JavaScript[&#128279;](../../configuration/using/soap-methods-in-javascript.md)中的SOAP方法。
+     請參閱JavaScript](../../configuration/using/soap-methods-in-javascript.md)中的[SOAP方法。
 
 * 內容管理
 * 訂閱管理，請參閱[訂閱(nms:subscription)](#subscribe--nms-subscription-)和[取消訂閱(nms:subscription)](#unsubscribe--nms-subscription-)。
@@ -62,7 +66,7 @@ Business API是每種物件型別專屬的。 它們會影響：
 </method>
 ```
 
-調解金鑰的定義必須透過XML檔案`<recipient>`專案上的_&#x200B;**key**&#x200B;屬性輸入。 此屬性的內容是以逗號分隔的XPath清單。
+調解金鑰的定義必須透過XML檔案`<recipient>`專案上的_**key**&#x200B;屬性輸入。 此屬性的內容是以逗號分隔的XPath清單。
 
 此呼叫不會傳回任何資料，錯誤除外。
 

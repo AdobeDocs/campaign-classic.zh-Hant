@@ -7,13 +7,17 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 23a384d1-27ce-46c2-98c3-0fb60a5c50ee
-source-git-commit: 221e2ccdaadf793212fcacdf5e13823f1505f4dc
+TQID: https://experienceleague.adobe.com/e4mk1nx7CoqoUJv39nnr5ynkz629kEzR3jdP-lyMUzA
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+subfeature_v2: id: e3988c18-3cfa-4f16-b812-ac2d2b1056faid: efa38731-2723-4334-8d8b-a778af834835
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080bid: d3cdead0-685a-4489-9250-4bb709942f66id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: '1256'
+source-wordcount: 1256
 ht-degree: 2%
 
 ---
-
 
 # 設定執行個體 {#creating-a-shared-connection}
 
@@ -37,7 +41,7 @@ ht-degree: 2%
 
 ## 設定控制例項 {#control-instance}
 
-若要連線控制執行個體和執行執行個體，您必須先在控制執行個體&#x200B;**上建立並設定&#x200B;**&#x200B;[!UICONTROL Execution instance]&#x200B;**型別的外部帳戶**。 因此，一旦[發佈](../../message-center/using/publishing-message-templates.md#template-publication)，即可將異動訊息範本部署至執行個體。
+若要連線控制執行個體和執行執行個體，您必須先在控制執行個體&#x200B;**上建立並設定&#x200B;**[!UICONTROL Execution instance]**型別的外部帳戶**。 因此，一旦[發佈](../../message-center/using/publishing-message-templates.md#template-publication)，即可將異動訊息範本部署至執行個體。
 
 如果您使用數個執行例項，則必須建立與執行例項相同數量的外部帳戶。
 
@@ -106,7 +110,7 @@ ht-degree: 2%
 
 每個執行例項都必須與唯一識別碼相關聯，以區分在控制例項上檢視每個執行例項時的歷史記錄。
 
-此識別碼可手動歸因於每個執行執行個體&#x200B;**&#x200B;**。 在此情況下，必須在每個執行執行例項&#x200B;**上執行此步驟**。 要執行此操作，請使用部署精靈，如下所述：
+此識別碼可手動歸因於每個執行執行個體&#x200B;****。 在此情況下，必須在每個執行執行例項&#x200B;**上執行此步驟**。 要執行此操作，請使用部署精靈，如下所述：
 
 1. 在執行例項上開啟部署精靈。
 1. 前往&#x200B;**[!UICONTROL Message Center]**&#x200B;視窗。

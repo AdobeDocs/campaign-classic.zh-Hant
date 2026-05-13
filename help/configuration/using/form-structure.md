@@ -6,9 +6,14 @@ feature: Application Settings
 role: Developer
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 exl-id: e61f2b63-06d3-4b8c-867f-1c729176d2da
-source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
+TQID: https://experienceleague.adobe.com/zLWHKhH-T-g54pQDAhbOC4v7JvrX-LM-Vn8lCXE-aYI
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: '2411'
+source-wordcount: 2411
 ht-degree: 0%
 
 ---
@@ -187,7 +192,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->**style=&quot;down|up**（依預設）**&quot;**&#x200B;功能會強制將索引標籤垂直定位在控制項下方或上方。 此功能為選用。
+>**style=&quot;down|up**（依預設）**&quot;**功能會強制將索引標籤垂直定位在控制項下方或上方。 此功能為選用。
 >`<container style="down" type="notebook">  … </container>`
 
 #### 圖示清單 {#icon-list}

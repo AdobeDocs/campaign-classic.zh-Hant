@@ -5,9 +5,12 @@ description: 追蹤的 URL 簽名問題
 feature: Technote
 hide: true
 exl-id: e7d4331b-7149-4768-8e46-2e2911319074
-source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
+TQID: https://experienceleague.adobe.com/qZr50JJz-Z0qffT8ZR1Y4PrBC31Oqz5BkgBpg-ScnJM
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: '387'
+source-wordcount: 387
 ht-degree: 33%
 
 ---
@@ -37,7 +40,7 @@ ht-degree: 33%
 * Campaign 19.1.5 (build 9033)至19.1.7 (build 9036)版本。
 
 
-在本節[&#128279;](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中瞭解如何確認您的版本。
+在本節](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中瞭解如何確認您的[版本。
 
 **如何更新？**
 

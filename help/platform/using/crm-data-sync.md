@@ -5,9 +5,12 @@ description: 管理Campaign與您的CRM之間的資料
 feature: Microsoft CRM Integration, Salesforce Integration
 exl-id: 7f9eda15-76e8-40a1-8302-004cea085778
 hide: true
-source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
+TQID: https://experienceleague.adobe.com/ZsejqtL7ja3l0R2bkd99Xc9ukjvcpF9H7iQ1O98D6fg
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: '1537'
+source-wordcount: 1537
 ht-degree: 1%
 
 ---
@@ -87,7 +90,7 @@ Adobe Campaign與CRM之間的資料同步是透過專用的工作流程活動來
 
 ![](assets/crm_task_import_option.png)
 
-上次同步化的日期會儲存在組態視窗中指定的選項中，預設為： **LASTIMPORT_&lt;%=instance.internalName%>_&lt;%=activityName%>**。
+上次同步化的日期儲存在組態視窗中指定的選項中，預設為： **LASTIMPORT_&lt;%=instance.internalName%>_&lt;%=activityName%>**。
 
 >[!NOTE]
 >

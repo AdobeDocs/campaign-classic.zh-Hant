@@ -6,9 +6,14 @@ role: User
 feature: Campaigns
 hide: true
 exl-id: 891252b0-4700-4a2a-a632-63aad5ce75d7
-source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
+TQID: https://experienceleague.adobe.com/ZHqo0izYPVfaxPIShcjgPpg-5SIGkdQAwbD6dV1r6bE
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616a
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: '759'
+source-wordcount: 759
 ht-degree: 0%
 
 ---
@@ -21,7 +26,7 @@ ht-degree: 0%
 >
 >此功能僅適用於小型資產和檔案。
 
-在行銷活動中，您也可以參考其他專案，例如促銷優惠券、與特定品牌或商店相關的特殊優惠等。當這些元素包含在大綱中時，它們可以與直接郵件傳遞相關聯。 請參閱透過傳遞大網[&#128279;](#associating-and-structuring-resources-linked-via-a-delivery-outline)連結的關聯和結構資源。
+在行銷活動中，您也可以參考其他專案，例如促銷優惠券、與特定品牌或商店相關的特殊優惠等。當這些元素包含在大綱中時，它們可以與直接郵件傳遞相關聯。 請參閱透過傳遞大網](#associating-and-structuring-resources-linked-via-a-delivery-outline)連結的[關聯和結構資源。
 
 >[!NOTE]
 >

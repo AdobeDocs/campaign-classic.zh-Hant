@@ -7,9 +7,12 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 58656aa1-aa95-451f-80b8-9e2d28223056
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+TQID: https://experienceleague.adobe.com/9u8xqAINLPKmeptZOZf94Ms-GiEciCL4nFBaw7SjRss
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: '81'
+source-wordcount: 81
 ht-degree: 24%
 
 ---
@@ -20,7 +23,7 @@ ht-degree: 24%
 
 未轉送追蹤記錄的原因有好幾種。 建議您檢視下列資訊：
 
-* **&#x200B;**&#x200B;追蹤&#x200B;**工作流程是否有錯誤？**
+* ****&#x200B;追蹤&#x200B;**工作流程是否有錯誤？**
 
 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-technical-workflows.html?lang=zh-Hant){target="_blank"}。
 

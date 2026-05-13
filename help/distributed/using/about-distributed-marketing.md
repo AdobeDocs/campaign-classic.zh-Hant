@@ -5,9 +5,12 @@ description: 開始使用分散式行銷
 feature: Distributed Marketing
 hide: true
 exl-id: c166409b-e040-491e-840a-a41310935d75
-source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
+TQID: https://experienceleague.adobe.com/1T-VO8AH7Rhk9HAhMufgPSSh4lNIC-D65ldnJIfDFvA
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616a
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: '146'
+source-wordcount: 146
 ht-degree: 3%
 
 ---
@@ -26,7 +29,7 @@ Adobe Campaign提供&#x200B;**分散式行銷**&#x200B;應用程式，用於在�
 
 >[!NOTE]
 >
->若要進一步瞭解Adobe Campaign的Distributed Marketing及其使用方式，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/distributed-marketing/about-distributed-marketing){target=_blank}。
+>若要進一步瞭解Adobe Campaign的Distributed Marketing及其使用方式，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/automation/distributed-marketing/about-distributed-marketing){target=_blank}。
 
 <!--
 ## Terminology {#terminology}

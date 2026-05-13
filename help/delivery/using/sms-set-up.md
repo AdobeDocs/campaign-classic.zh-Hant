@@ -6,9 +6,13 @@ feature: SMS
 role: User, Developer, Admin
 level: Experienced
 exl-id: a2783a5e-6d38-41a1-b5c6-24ab489116f8
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+TQID: https://experienceleague.adobe.com/quIMssNONhvwEBVIEic9Dhe2x4-E0H5U8nIEruSUhtg
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c1579802-ddd4-4214-8a91-97b2066abe11id: e0eb8757-182f-49f3-94a4-1587d16f5094id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: '1740'
+source-wordcount: 1740
 ht-degree: 31%
 
 ---
@@ -353,7 +357,7 @@ CR：歸位
 
 ## 變更傳遞範本 {#changing-the-delivery-template}
 
-Adobe Campaign提供您傳送至行動裝置的範本。 此範本可在&#x200B;**[!UICONTROL Resources > Templates > Delivery templates]**&#x200B;節點中使用。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=zh-Hant){target="_blank"}。
+Adobe Campaign提供您傳送至行動裝置的範本。 此範本可在&#x200B;**[!UICONTROL Resources > Templates > Delivery templates]**&#x200B;節點中使用。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}。
 
 若要透過SMS頻道傳遞，您必須建立其中引用頻道聯結器的範本。
 

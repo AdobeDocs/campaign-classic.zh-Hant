@@ -7,9 +7,13 @@ audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: 8dad8fa9-674c-433c-af30-8c6d0aadf525
-source-git-commit: ffab91fc9fa7e60973fdda930239f5836671a341
+TQID: https://experienceleague.adobe.com/i9Ncu86b4PZaAY6yROb-6kUdOgjbYNV1nE0Rj-Jb-OY
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: d5ef99fa-df0c-4153-bf94-105ad0724167
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: '194'
+source-wordcount: 194
 ht-degree: 16%
 
 ---
@@ -50,6 +54,6 @@ Campaign使用者可以使用其Adobe ID連線至Adobe Campaign主控台，而�
 
 | 有用的頁面 | 額外資源 |
 |---|---|
-| [設定IMS](../../integrations/using/configuring-ims.md) | [Experience Cloud常見問題集](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/faq.html?lang=zh-Hant) |
+| [設定IMS](../../integrations/using/configuring-ims.md) | [Experience Cloud常見問題集](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/faq.html) |
 | [實作IMS](../../integrations/using/implementing-ims.md) | [存取權管理](../../platform/using/access-management.md) |
 | [IMS疑難排解](../../integrations/using/ims-troubleshooting.md) | [正在安裝Campaign套件](../../installation/using/installing-campaign-standard-packages.md) |

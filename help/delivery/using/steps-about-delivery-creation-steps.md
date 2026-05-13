@@ -6,9 +6,12 @@ feature: Channel Configuration
 role: User
 hide: true
 exl-id: 0188c3fe-8176-4904-8505-c47a72c20fcc
-source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
+TQID: https://experienceleague.adobe.com/r1Fnouqf-4hqCJ9jYqWI4pzNhqP0-XZBUHoZQr65DGI
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: '186'
+source-wordcount: 186
 ht-degree: 18%
 
 ---
@@ -17,7 +20,7 @@ ht-degree: 18%
 
 建立傳送時的主要步驟如下：
 
-1. **建立並識別傳遞**。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hant#create-the-delivery){target="_blank"}以深入瞭解。
+1. **建立並識別傳遞**。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#create-the-delivery){target="_blank"}以深入瞭解。
 
 1. **定義傳遞內容**。 每個管道都有專屬的傳遞內容定義。 如需詳細資訊，請參閱專用區段。
 
@@ -34,4 +37,4 @@ ht-degree: 18%
 
 >[!NOTE]
 >
->本章所述的步驟假設所有目標收件者及其設定檔都儲存在資料庫中，外部傳遞除外（請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hant#selecting-external-recipients){target="_blank"}）。
+>本章所述的步驟假設所有目標收件者及其設定檔都儲存在資料庫中，外部傳遞除外（請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#selecting-external-recipients){target="_blank"}）。

@@ -5,9 +5,15 @@ description: 本檔案說明Adobe Campaign資料模型
 feature: Data Model
 role: Developer
 exl-id: fc0fd23c-f9ea-4e30-b47b-a84143d882ca
-source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
+TQID: https://experienceleague.adobe.com/Yru-hRxtlHGZpLXmNIPxRbZjgvfz8siQOc9wiOPOP1w
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616aid: a4671286-a59f-47e3-b97b-90627a1977d5
+subfeature_v2: id: d3b34fea-a110-482f-adb2-aae8d686bac8id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281id: ede6e1ec-9279-415e-b828-a09735018d48
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: '2376'
+source-wordcount: 2376
 ht-degree: 2%
 
 ---
@@ -113,7 +119,7 @@ NmsRcpGrpRel關係表格僅包含與iRecipientId及iGroupId連結表格識別碼
 
 ## 行銷活動管理 {#campaign-management}
 
-這組表格連結至&#x200B;**行銷活動**&#x200B;模組，可讓您定義、最佳化、執行和分析通訊與行銷活動。 有關更多資訊，請參閱[Campaign v8 文件](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html?lang=zh-Hant){target=_blank}。
+這組表格連結至&#x200B;**行銷活動**&#x200B;模組，可讓您定義、最佳化、執行和分析通訊與行銷活動。 有關更多資訊，請參閱[Campaign v8 文件](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html){target=_blank}。
 
 ![](assets/data-model_campaign.png)
 

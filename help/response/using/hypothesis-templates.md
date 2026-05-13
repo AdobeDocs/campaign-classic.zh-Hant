@@ -8,9 +8,13 @@ audience: campaign
 content-type: reference
 topic-tags: response-manager
 exl-id: 428c7677-454b-4618-bae7-0be7df6dfcaa
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+TQID: https://experienceleague.adobe.com/FKf9pDlOZI1NEhwmdSpcpvEbNsT28wEvgy81TBEQQgo
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616a
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: '1410'
+source-wordcount: 1410
 ht-degree: 2%
 
 ---
@@ -65,7 +69,7 @@ ht-degree: 2%
   >
   >如果範本設定為將控制組列入考量，但在假設相關的傳送中未定義任何組，則結果將僅以目標收件者為基礎。
 
-  有關定義和設定控制組的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=zh-Hant#add-a-control-group){target=_blank}。
+  有關定義和設定控制組的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html#add-a-control-group){target=_blank}。
 
 * **[!UICONTROL Channel]**：您可以在下拉式清單中選取&#x200B;**[!UICONTROL All channels]**，以選擇特定管道或讓假設範本可供Adobe Campaign主控台中的所有管道使用。 如果您設定特定頻道的範本，這可讓您在建立假設時自動篩選每個頻道的傳送。 [了解更多](creating-hypotheses.md)
 

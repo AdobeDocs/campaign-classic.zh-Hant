@@ -7,9 +7,14 @@ badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v
 audience: integrations
 content-type: reference
 exl-id: 76645a6f-9536-49d6-b12a-fdd6113d31fa
-source-git-commit: 8de62db2499449fc9966b6464862748e2514a774
+TQID: https://experienceleague.adobe.com/CRFuACW6lPivyn8-BuA2Phb1Mzqdqf-9D3pezBfjPCU
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: d5ef99fa-df0c-4153-bf94-105ad0724167
+subfeature_v2: id: c3bf7e1e-1db5-4c72-9293-e2f0b1ab73d0
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c1579802-ddd4-4214-8a91-97b2066abe11id: d3cdead0-685a-4489-9250-4bb709942f66id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: '722'
+source-wordcount: 722
 ht-degree: 1%
 
 ---
@@ -18,7 +23,7 @@ ht-degree: 1%
 
 
 
-**管線化失敗，錯誤為「沒有工作對應到遮色片pipelined@&lt; instance >」**
+**管線化失敗，錯誤為「沒有工作對應到遮罩管線化@&lt;執行個體>」**
 
 您的Adobe Campaign Classic版本不支援管道。
 
@@ -27,8 +32,8 @@ ht-degree: 1%
 
 **管線失敗，錯誤為「`[` ou `{` (iRc=16384)」**
 
-未設定&#x200B;**NmsPipeline_Config**&#x200B;選項。 這實際上是JSON剖析錯誤。
-在選項&#x200B;**NmsPipeline_Config**&#x200B;中設定JSON設定。 請參閱本頁面的「路由選項」。
+未設定&#x200B;**NmsPipeline_Config**選項。 這實際上是JSON剖析錯誤。
+在選項**NmsPipeline_Config**&#x200B;中設定JSON設定。 請參閱本頁面的「路由選項」。
 
 **管線失敗，因為「主體必須是有效的組織或使用者端」**
 

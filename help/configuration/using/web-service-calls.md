@@ -5,9 +5,15 @@ description: Web 服務呼叫
 feature: API
 role: Developer
 exl-id: ce94e7e7-b8f8-4c82-937f-e87d15e50c34
-source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
+TQID: https://experienceleague.adobe.com/-VSnXHtg3Zi3VGHVAF72uRpJa3gulT3h40BIsdnGjqo
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: b12f6872-9271-4369-85e5-86969a0b99a2id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
+subfeature_v2: id: cfc95e9b-b035-4403-a6a9-b27a8a053a37
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: 923
 ht-degree: 1%
 
 ---
@@ -193,7 +199,7 @@ Adobe Campaign已匯入[安全性區域](../../installation/using/security-zones
 
 或
 
-* 透過Adobe Campaign登入+建立工作階段權杖的密碼&#x200B;**&#x200B;**。 工作階段權杖會在設定的期間後自動到期。 不建議使用此模式，因為需要減少某些區域設定（allowUserPassword=&quot;true&quot;及sessionTokenOnly=&quot;true&quot;）的應用程式安全性設定。
+* 透過Adobe Campaign登入+建立工作階段權杖的密碼&#x200B;****。 工作階段權杖會在設定的期間後自動到期。 不建議使用此模式，因為需要減少某些區域設定（allowUserPassword=&quot;true&quot;及sessionTokenOnly=&quot;true&quot;）的應用程式安全性設定。
 
 ### 工作階段權杖特性 {#session-token-characteristics}
 

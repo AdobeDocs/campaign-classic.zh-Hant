@@ -6,9 +6,13 @@ badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v
 feature: Workflows
 role: User
 exl-id: bc6ebf5d-cc21-4750-9713-2bf259e7d6bf
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+TQID: https://experienceleague.adobe.com/1SOn2SJRorjHHnLSjPM16K5lFSkRcWvm9wpiEI7WsQk
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616a
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: '1229'
+source-wordcount: 1229
 ht-degree: 0%
 
 ---
@@ -214,12 +218,12 @@ ht-degree: 0%
 
 ### 從FTP匯入內容 {#importing-content-from-ftp}
 
-如果您的傳送內容位於FTP或SFTP伺服器上的HTML檔案中，您可輕鬆將此內容載入到Adobe Campaign傳送中。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html?lang=zh-Hant){target="_blank"}。
+如果您的傳送內容位於FTP或SFTP伺服器上的HTML檔案中，您可輕鬆將此內容載入到Adobe Campaign傳送中。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html){target="_blank"}。
 
 
 ### 從Amazon Simple Storage Service (S3)聯結器匯入內容 {#importing-content-from-amazon-simple-storage-service--s3--connector}
 
-如果您的傳送內容位於Amazon Simple Storage Service (S3)貯體，您可輕鬆將此內容載入Adobe Campaign傳送中。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html?lang=zh-Hant){target="_blank"}。
+如果您的傳送內容位於Amazon Simple Storage Service (S3)貯體，您可輕鬆將此內容載入Adobe Campaign傳送中。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html){target="_blank"}。
 
 
 ## 半自動更新 {#semi-automatic-update}

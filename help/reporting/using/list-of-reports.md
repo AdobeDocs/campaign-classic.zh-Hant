@@ -5,9 +5,13 @@ description: 報告清單
 badge: label="v7" type="Informative" tooltip="僅適用於 Campaign Classic v7"
 feature: Reporting, Monitoring
 exl-id: c01f4850-ab17-44ac-a5e0-ff082ec206b3
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+TQID: https://experienceleague.adobe.com/HBJBBT-HPVgcMZnXAZ5ddn7m1ELtaV-obxy8lYo0ZLo
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616a
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: '1024'
+source-wordcount: 1024
 ht-degree: 2%
 
 ---
@@ -123,7 +127,7 @@ ht-degree: 2%
 
 下表提供Adobe Campaign提供的內建報表。
 
-如需這些報告內容的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html?lang=zh-Hant){target=_blank}。
+如需這些報告內容的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html){target=_blank}。
 
 <table> 
  <tbody> 
@@ -219,7 +223,7 @@ ht-degree: 2%
 
 下表提供Adobe Campaign提供的內建報表。
 
-如需這些報告內容的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html?lang=zh-Hant){target=_blank}。
+如需這些報告內容的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html){target=_blank}。
 
 <table> 
  <tbody> 

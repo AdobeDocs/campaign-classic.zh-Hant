@@ -5,9 +5,11 @@ description: 瞭解如何設定線上調查
 badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
 feature: Surveys
 exl-id: 387bc362-4064-4181-9385-8e0c3423ba3e
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+TQID: https://experienceleague.adobe.com/1BTkZ--FyHkp7u0eya-lmuELDu8AMmeC96eGsonYcVM
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: '127'
+source-wordcount: 127
 ht-degree: 0%
 
 ---
