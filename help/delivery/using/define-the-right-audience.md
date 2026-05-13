@@ -8,8 +8,10 @@ role: User
 hide: true
 exl-id: c0533148-b027-4158-9b95-8d2df769e963
 TQID: https://experienceleague.adobe.com/bA0bwsoCEGaC0-R64f08j8vLzGFDI7hhN3rFYnKdRWA
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
 source-wordcount: 554
@@ -45,7 +47,7 @@ ht-degree: 7%
 
 ## 傳送給您的訂閱者 {#send-to-subscribers}
 
-若要傳送訊息給電子報的訂閱者，您可以直接將訂閱者定位到對應的資訊服務。 在本節](managing-subscriptions.md#delivering-to-the-subscribers-of-a-service)瞭解更多[。
+若要傳送訊息給電子報的訂閱者，您可以直接將訂閱者定位到對應的資訊服務。 在本節[&#128279;](managing-subscriptions.md#delivering-to-the-subscribers-of-a-service)瞭解更多。
 
 
 ## 測試收件者和種子地址 {#test-recipients-seed-addresses}
@@ -54,7 +56,7 @@ ht-degree: 7%
 
 請務必選取適當的校樣收件者，因為他們會驗證訊息的表單和內容。 定義證明收件者的步驟會顯示在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#select-the-proof-target){target="_blank"}中。
 
-種子地址用於鎖定不符合所定義目標條件的收件者，以便在傳送至主要目標之前測試傳遞。 它們會顯示在此區段](about-seed-addresses.md)中的[。
+種子地址用於鎖定不符合所定義目標條件的收件者，以便在傳送至主要目標之前測試傳遞。 它們會顯示在此區段[&#128279;](about-seed-addresses.md)中的。
 
 ## 重複位址 {#deduplicate-addresses}
 
@@ -75,4 +77,4 @@ ht-degree: 7%
 
 為了最佳化應用程式中使用的SQL查詢效能，可以從資料結構描述的主要元素宣告索引。
 
-新增索引至電子郵件地址的步驟顯示於本節[](../../configuration/using/database-mapping.md#indexed-fields)。
+新增索引至電子郵件地址的步驟顯示於本節[&#128279;](../../configuration/using/database-mapping.md#indexed-fields)。

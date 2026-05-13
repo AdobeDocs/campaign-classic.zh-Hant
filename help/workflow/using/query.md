@@ -6,7 +6,8 @@ feature: Workflows, Targeting Activity, Query Editor
 hide: true
 exl-id: 20d03627-cd56-46da-bc02-73b48a02a350
 TQID: https://experienceleague.adobe.com/Htrpo3hCrbp9H7cQD4KWTnMbA-rjgM0K1PFHh-Fak1M
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
 source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
 source-wordcount: 1647
@@ -189,9 +190,9 @@ ht-degree: 0%
 
   如需詳細資訊，請參閱Campaign版本的相關章節：
 
-  ![](assets/do-not-localize/v7.jpeg)[Campaign v7檔案](../../configuration/using/database-mapping.md)
+  ![](assets/do-not-localize/v7.jpeg) [Campaign v7檔案](../../configuration/using/database-mapping.md)
 
-  ![](assets/do-not-localize/v8.png)[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/shemas-forms/database-mapping.html)
+  ![](assets/do-not-localize/v8.png) [Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/shemas-forms/database-mapping.html)
 
 ### 函數 {#functions}
 

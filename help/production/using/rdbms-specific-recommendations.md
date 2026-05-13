@@ -9,8 +9,10 @@ content-type: reference
 topic-tags: database-maintenance
 exl-id: a586d70b-1b7f-47c2-a821-635098a70e45
 TQID: https://experienceleague.adobe.com/WmadkiwNNUMeQSnm8O4NJjnv1GQHvO6hZ9kqtoGBySA
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
 source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
 source-wordcount: 1267
@@ -160,7 +162,7 @@ VACUUM (FULL, ANALYZE, VERBOSE) nmsmirrorpageinfo;
 
 以下是使用特定函式產生必要DDL的表格重組範例。 下列SQL可讓您建立兩個新函式： **GenRebuildTablePart1**&#x200B;和&#x200B;**GenRebuildTablePart2**，它們可用來產生必要的DDL以重新建立資料表。
 
-* 第一個函式可讓您建立工作表（**_tmp**此處），它是原始表格的副本。
+* 第一個函式可讓您建立工作表（**_tmp**&#x200B;此處），它是原始表格的副本。
 * 然後第二個函式會刪除原始表格並重新命名工作表及其索引。
 * 使用兩個函式而非一個函式，表示如果第一個函式失敗，您就不會有刪除原始表格的風險。
 

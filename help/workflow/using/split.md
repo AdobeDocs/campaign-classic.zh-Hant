@@ -6,8 +6,10 @@ feature: Workflows, Targeting Activity
 hide: true
 exl-id: 4204350a-c2d2-4033-9bdf-87b49d8211b9
 TQID: https://experienceleague.adobe.com/mddmI88wgsUP0rd5vhnJYn83gXqwTLPkQRPmvuOX3GY
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
-topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
 source-wordcount: 1974
@@ -52,7 +54,7 @@ ht-degree: 3%
 
    ![](assets/s_user_segmentation_partage4.png)
 
-1. 您也可以&#x200B;**使用&#x200B;**[!UICONTROL Add]**按鈕**&#x200B;新增其他子集。
+1. 您也可以&#x200B;**使用&#x200B;**&#x200B;[!UICONTROL Add]&#x200B;**按鈕**&#x200B;新增其他子集。
 
    ![](assets/s_user_segmentation_partage_add.png)
 

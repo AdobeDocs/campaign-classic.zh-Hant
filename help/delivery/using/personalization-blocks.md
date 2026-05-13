@@ -8,9 +8,12 @@ role: User
 hide: true
 exl-id: 8d155844-d18a-4165-9886-c3b144109f6e
 TQID: https://experienceleague.adobe.com/KfD6zudZg8B6r8ftdINuXjWAqRiHLP9dtGi--H-E6RU
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
 source-wordcount: 894
@@ -22,7 +25,7 @@ ht-degree: 3%
 
 個人化區塊為動態、個人化的區塊，並包含您可插入傳遞中的特定轉譯。 例如，您可以新增標誌、問候語訊息或映象頁面的連結。 請參閱[插入個人化區塊](#inserting-personalization-blocks)。
 
-![](assets/do-not-localize/how-to-video.png)在影片](#personalization-blocks-video)中探索此功能[
+![](assets/do-not-localize/how-to-video.png)在影片[&#128279;](#personalization-blocks-video)中探索此功能
 
 透過Adobe Campaign總管的&#x200B;**[!UICONTROL Resources > Campaign Management > Personalization blocks]**&#x200B;節點存取個人化區塊。 預設提供數個區塊（請參閱[現成可用的個人化區塊](#out-of-the-box-personalization-blocks)）。
 

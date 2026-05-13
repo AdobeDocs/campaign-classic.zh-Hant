@@ -7,9 +7,13 @@ role: User, Developer
 hide: true
 exl-id: 1bb36e71-9f1a-4553-b266-eca3f48688e2
 TQID: https://experienceleague.adobe.com/MmKuHkMyqQizW9agSWTlcNOzrzG12TkBXcHVHjGvhxA
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
 source-wordcount: 920
@@ -119,7 +123,7 @@ Adobe Campaign可讓您只要新增密件副本電子郵件地址至訊息目標
 
 傳遞引數的&#x200B;**[!UICONTROL SMTP]**&#x200B;索引標籤可讓您設定退回郵件的管理。
 
-依預設，平台](../../installation/using/deploying-an-instance.md#parameters-for-delivered-emails-parameters-for-delivered-emails)的[預設錯誤方塊中會收到退回的電子郵件，但您可以定義傳遞的特定錯誤位址。
+依預設，平台[&#128279;](../../installation/using/deploying-an-instance.md#parameters-for-delivered-emails-parameters-for-delivered-emails)的預設錯誤方塊中會收到退回的電子郵件，但您可以定義傳遞的特定錯誤位址。
 
 您也可以從此畫面定義特定地址，以便調查當應用程式無法自動限定郵件時退回郵件的原因。 對於每個欄位，**新增個人化欄位**&#x200B;圖示可讓您新增個人化引數。
 

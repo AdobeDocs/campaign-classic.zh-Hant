@@ -6,10 +6,17 @@ feature: Workflows, Data Management
 hide: true
 exl-id: 8025d207-3bc0-400f-b6a4-a72765e5a9d2
 TQID: https://experienceleague.adobe.com/Y8ggbKYhnIg8ncfMNoCG7-9J-GxhVrNQmK-PPFqRk04
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2: id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
-subfeature_v2: id: a39dbcf0-89cb-4765-9bcb-cf9dfbe2875fid: b5852c32-876b-41ae-92a7-9f588865ae52
-topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2:
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+subfeature_v2:
+  - id: a39dbcf0-89cb-4765-9bcb-cf9dfbe2875f
+  - id: b5852c32-876b-41ae-92a7-9f588865ae52
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
 source-wordcount: 575
@@ -21,12 +28,12 @@ ht-degree: 1%
 
 
 
-**檔案傳輸**活動可讓您接收或傳送檔案、測試檔案是否存在，或列出伺服器上的檔案。 使用的通訊協定為Azure Blob儲存、Amazon Simple Storage Service (S3)、FTP或SFTP。
+**檔案傳輸**&#x200B;活動可讓您接收或傳送檔案、測試檔案是否存在，或列出伺服器上的檔案。 使用的通訊協定為Azure Blob儲存、Amazon Simple Storage Service (S3)、FTP或SFTP。
 透過S3、Azure Blob儲存或SFTP連線，您也可以透過Adobe即時客戶資料平台將區段資料匯入至Adobe Campaign。 如需詳細資訊，請參閱此[檔案](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html)。
 
 >[!NOTE]
 >
->有關SFTP伺服器使用方式的最佳實務及疑難排解在本頁面](../../platform/using/sftp-server-usage.md)中有詳細說明[。
+>有關SFTP伺服器使用方式的最佳實務及疑難排解在本頁面[&#128279;](../../platform/using/sftp-server-usage.md)中有詳細說明。
 
 ## 屬性 {#properties}
 

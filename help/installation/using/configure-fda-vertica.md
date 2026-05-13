@@ -8,8 +8,10 @@ content-type: reference
 topic-tags: connectors
 exl-id: 8b2a9c73-807a-4936-9fd6-9d26c805a31f
 TQID: https://experienceleague.adobe.com/R0BzuzvaCahMWtHor24mNcwEiK7LtT97hpRMyOXNljg
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
-topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+topic_v2:
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
 source-wordcount: 380
@@ -84,7 +86,7 @@ ht-degree: 1%
 
 ## Windows上的[!DNL Vertica Analytics] {#vertica-windows}
 
-1. 下載適用於Windows](https://www.vertica.com/download/vertica/client-drivers/)的[ODBC驅動程式。 若要安裝適用於Windows的驅動程式，您必須啟用.NET Framework 3.5，否則安裝助理會嘗試自動啟用並下載驅動程式。
+1. 下載適用於Windows[&#128279;](https://www.vertica.com/download/vertica/client-drivers/)的ODBC驅動程式。 若要安裝適用於Windows的驅動程式，您必須啟用.NET Framework 3.5，否則安裝助理會嘗試自動啟用並下載驅動程式。
 
 1. 在Windows中設定ODBC驅動程式。 如需詳細資訊，請參閱[此頁面](https://www.vertica.com/docs/9.2.x/HTML/Content/Authoring/ConnectingToVertica/ClientODBC/SettingUpADSN.htm)
 

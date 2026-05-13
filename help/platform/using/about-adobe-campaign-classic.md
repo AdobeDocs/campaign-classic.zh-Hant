@@ -7,11 +7,17 @@ role: User
 level: Beginner
 exl-id: 8febceb0-9694-4045-a630-a7ff2fd18943
 TQID: https://experienceleague.adobe.com/qngVGmYzQ0Qrr1erTTlSEO7FX6djL-mfax-N4ypchy8
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616a
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2: id: b5520579-b31f-4df7-9281-f0d9f91e2edcid: d00e9f03-e50b-4162-b143-0c0817c937c2
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2:
+  - id: a075b2c1-7748-4328-b7f6-343aa314616a
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: b5520579-b31f-4df7-9281-f0d9f91e2edc
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
 source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
 source-wordcount: 208
@@ -38,11 +44,11 @@ ht-degree: 51%
 
 * 在[相容性矩陣](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems)中檢查您的系統和工具與Adobe Campaign使用者端主控台的相容性
 
-* 若要瞭解如何在此頁面](launching-adobe-campaign.md)上安裝並登入Adobe Campaign [。
+* 若要瞭解如何在此頁面[&#128279;](launching-adobe-campaign.md)上安裝並登入Adobe Campaign 。
 
 >[!TAB 瀏覽Campaign UI]
 
-* 在此頁面](adobe-campaign-workspace.md)上探索Adobe Campaign使用者介面[。
+* 在此頁面[&#128279;](adobe-campaign-workspace.md)上探索Adobe Campaign使用者介面。
 
 * 瞭解如何使用[Campaign Explorer](adobe-campaign-workspace.md#using-adobe-campaign-explorer)。
 

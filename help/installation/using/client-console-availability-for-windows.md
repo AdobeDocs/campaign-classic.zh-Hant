@@ -9,7 +9,8 @@ content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: 57845eae-1f1a-42f4-b2ba-46d454677ae0
 TQID: https://experienceleague.adobe.com/9FqLCew1PO-oxl2hBlK1-4L3SG7tVp28x8GUAPkK6gI
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
 source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
 source-wordcount: 359
@@ -44,7 +45,7 @@ https://<your Adobe Campaign server>:>port number>/nl/jsp/logon.jsp
 
 此頁面需要應用程式中定義的登入和密碼。
 
-在本節](../../installation/using/installing-the-client-console.md)中瞭解如何安裝主控台[。
+在本節[&#128279;](../../installation/using/installing-the-client-console.md)中瞭解如何安裝主控台。
 
 ## 建議使用者升級其使用者端主控台
 

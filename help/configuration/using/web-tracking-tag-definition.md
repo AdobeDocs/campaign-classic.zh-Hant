@@ -6,8 +6,10 @@ feature: Application Settings
 role: Developer
 exl-id: 0b5575be-57e7-4eee-9c0a-e9ef4b0931bf
 TQID: https://experienceleague.adobe.com/UkA0XyCzaDt2qlxpODQ-zoyC0YdKs3K5qg4UacvT8ck
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
 source-wordcount: 362
@@ -111,17 +113,17 @@ ht-degree: 2%
 
 * 正在收集業務量資料
 
-  **https://myserver.adobe.com/r/4567?tagid=command&amp;amount=100&amp;article=2l**
+  **https://myserver.adobe.com/r/4567?tagid=command&amount=100&article=2l**
 
 * 指定欄位以尋找收件者
 
-  **https://myserver.adobe.com/r/2353?tagid=home&amp;rcpid=saccount%3D10**
+  **https://myserver.adobe.com/r/2353?tagid=home&rcpid=saccount%3D10**
 
   帳號為10的收件者會傳送到首頁。
 
 * 使用預設傳遞
 
-  **https://myserver.adobe.com/r/2456?tagid=home&amp;jobid=e6**
+  **https://myserver.adobe.com/r/2456?tagid=home&jobid=e6**
 
   收件者會傳送到首頁。 除非使用此查詢傳送包含傳遞識別碼的工作階段Cookie，否則此資訊將會以識別碼230 （資料庫16中的e6）儲存在傳遞中。
 

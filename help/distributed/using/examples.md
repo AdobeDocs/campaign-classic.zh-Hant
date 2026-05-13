@@ -6,8 +6,11 @@ feature: Distributed Marketing
 hide: true
 exl-id: 2bef6b5e-887e-4c56-bb4b-3583472ca333
 TQID: https://experienceleague.adobe.com/76BtaM1C72-GcMxXoFHtIFV4-dIQTzcNoamtyQ9-gcg
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616aid: b12f6872-9271-4369-85e5-86969a0b99a2
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2:
+  - id: a075b2c1-7748-4328-b7f6-343aa314616a
+  - id: b12f6872-9271-4369-85e5-86969a0b99a2
 source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
 source-wordcount: 1300
@@ -91,7 +94,7 @@ ht-degree: 0%
 
 步驟如下：
 
-本機實體的&#x200B;****
+本機實體的&#x200B;**&#x200B;**
 
 1. 使用行銷活動建立通知來存取中央實體選取的聯絡人清單。
 1. 選取聯絡人並核准參與率。
@@ -194,7 +197,7 @@ ht-degree: 0%
 
 步驟如下：
 
-本機實體的&#x200B;****
+本機實體的&#x200B;**&#x200B;**
 
 1. 使用行銷活動建立通知來存取線上表單。
 1. 個人化行銷活動（目標、內容、傳遞量）。
