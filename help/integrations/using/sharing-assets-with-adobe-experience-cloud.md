@@ -22,7 +22,7 @@ ht-degree: 0%
 
 # 與Adobe Experience Cloud共用資產{#sharing-assets-with-adobe-experience-cloud}
 
-[Experience Cloud Assets](https://experienceleague.adobe.com/en/docs/core-services/interface/services/audiences/overview){target="_blank"}提供單一集中存放庫，內含您可跨解決方案共用的行銷資產。 資產是數位檔案、影像、視訊或音訊檔案。
+[Experience Cloud Assets](https://experienceleague.adobe.com/zh-hant/docs/core-services/interface/services/audiences/overview){target="_blank"}提供單一集中存放庫，內含您可跨解決方案共用的行銷資產。 資產是數位檔案、影像、視訊或音訊檔案。
 
 資產服務包括：
 

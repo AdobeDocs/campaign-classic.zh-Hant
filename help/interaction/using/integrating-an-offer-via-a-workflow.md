@@ -58,7 +58,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->如需擴充活動的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html){target="_blank"}。
+>如需擴充活動的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html?lang=zh-Hant){target="_blank"}。
 
 例如，您可以在傳遞前擴充收件者查詢的資料。
 
