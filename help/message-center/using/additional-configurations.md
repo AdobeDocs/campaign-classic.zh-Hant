@@ -114,7 +114,7 @@ Once the control and execution modules are installed on the same instance, you m
 
 ### 相容性注意事項 {#compatibility-note}
 
-此舊版品牌設定與Campaign v8中推出的新[集中式品牌](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/branding/branding-gs.html){target="_blank"}模式不相容。
+此舊版品牌設定與Campaign v8中推出的新[集中式品牌](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/branding/branding-gs.html?lang=zh-Hant){target="_blank"}模式不相容。
 
 如果您的現有環境使用此舊版設定，則無法將其直接移轉至新的集中式品牌模型。 採用新系統需完全重新實作品牌設定。
 

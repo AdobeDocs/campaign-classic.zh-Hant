@@ -34,7 +34,7 @@ ht-degree: 6%
 >
 >此常見問題集解決Adobe Campaign Classic v7架構、部署模式和v7特定功能的特定問題。
 >
->**如需Campaign常見問題的完整解答** （工作流程、傳送、對象、報表、個人化等），請參閱&#x200B;[**Campaign v8完整常見問答集**](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-faq-comprehensive){target="_blank"}，此問答集提供依主題整理的詳細解答。
+>**如需Campaign常見問題的完整解答** （工作流程、傳送、對象、報表、個人化等），請參閱&#x200B;[**Campaign v8完整常見問答集**](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/new/campaign-faq-comprehensive){target="_blank"}，此問答集提供依主題整理的詳細解答。
 
 ## Campaign Classic v7架構和部署 {#v7-architecture}
 
@@ -52,7 +52,7 @@ Adobe Campaign Classic v7提供三種部署模式：
 
 [按一下這裡以深入瞭解](../../installation/using/hosting-models.md)託管模式及其差異。
 
-**注意：** Campaign v8僅以Managed Cloud Services的形式提供。 [瞭解行銷活動v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/new/whats-new.html){target="_blank"}。
+**注意：** Campaign v8僅以Managed Cloud Services的形式提供。 [瞭解行銷活動v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/new/whats-new.html?lang=zh-Hant){target="_blank"}。
 
 +++
 
@@ -109,7 +109,7 @@ Campaign v8是Adobe的策略平台，適用於需要大量行銷活動、現代W
 
 了解更多：
 
-* [Campaign v8概述](https://experienceleague.adobe.com/docs/campaign/campaign-v8/new/whats-new.html){target="_blank"}
+* [Campaign v8概述](https://experienceleague.adobe.com/docs/campaign/campaign-v8/new/whats-new.html?lang=zh-Hant){target="_blank"}
 * [從Campaign Classic v7轉變至v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/v7-to-v8.html){target="_blank"}
 * [Campaign v8完整常見問題集](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html){target="_blank"}
 
