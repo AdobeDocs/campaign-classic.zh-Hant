@@ -8,18 +8,12 @@ level: Intermediate, Experienced
 hide: true
 exl-id: 67eee1c5-a918-46b9-875d-7c3c71c00635
 TQID: https://experienceleague.adobe.com/GupiG2H4tr3aUKc265ABDhVXpiZBFr9IzG-0s4pxwmU
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 8f9e8344b77e50bd2823cc7fa3922466e515327f
 workflow-type: tm+mt
 source-wordcount: 600
 ht-degree: 4%
@@ -46,7 +40,7 @@ ht-degree: 4%
 
 1. 移至&#x200B;**[!UICONTROL Administration > Platform > External accounts]**。
 1. 選取&#x200B;**[!UICONTROL iOS routing]**&#x200B;外部帳戶。
-1. 在&#x200B;**[!UICONTROL Connector]**&#x200B;索引標籤中，使用下列URL填入&#x200B;**[!UICONTROL Access URL of the connector]**&#x200B;欄位： ```http://localhost:8080/nms/jsp/iosHTTP2.jsp```
+1. 在&#x200B;**[!UICONTROL Connector]**&#x200B;索引標籤中，使用下列URL填入&#x200B;**[!UICONTROL Access URL of the connector]**&#x200B;欄位： `http://localhost:8080/nms/jsp/iosHTTP2.jsp`
 
    ![](assets/nmac_connectors.png)
 
@@ -93,8 +87,8 @@ ht-degree: 4%
 
    ![](assets/nmac_ios_2.png)
 
-1. 您可以視需要以約&#x200B;**[!UICONTROL Application variables]**&#x200B;擴充推送訊息內容，作為選項。 這些都是可完全自訂的專案，而且是傳送至行動裝置的訊息裝載的一部分。
-在下列範例中，我們新增&#x200B;**mediaURl**&#x200B;和&#x200B;**mediaExt**&#x200B;來建立豐富推送通知，然後提供應用程式要在通知內顯示的影像。
+1. 您可以視需要以約&#x200B;**[!UICONTROL Application variables]**擴充推送訊息內容，作為選項。 這些都是可完全自訂的專案，而且是傳送至行動裝置的訊息裝載的一部分。
+在下列範例中，我們新增**mediaURl**&#x200B;和&#x200B;**mediaExt**&#x200B;來建立豐富推送通知，然後提供應用程式要在通知內顯示的影像。
 
    ![](assets/nmac_ios_3.png)
 
