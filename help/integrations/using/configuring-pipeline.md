@@ -20,7 +20,7 @@ level_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+source-git-commit: 8f9e8344b77e50bd2823cc7fa3922466e515327f
 workflow-type: tm+mt
 source-wordcount: 854
 ht-degree: 1%
@@ -131,13 +131,13 @@ ht-degree: 1%
 | 選項 | 說明 |
 |:-:|:-:|
 | appName（舊版） | 在上傳公開金鑰的舊版Oath應用程式中註冊的OAuth應用程式的AppID。 如需關於此項目的詳細資訊，請參閱此[頁面](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md) |
-| authGatewayEndpoint（舊版） | 取得閘道權杖的URL。 預設： ```https://api.omniture.com``` |
-| authPrivateKey(Legacy) | 私密金鑰、舊版Oath應用程式中上傳的公開部分、以XtkKey選項加密的AES： ```cryptString("PRIVATE_KEY")``` |
+| authGatewayEndpoint（舊版） | 取得閘道權杖的URL。 預設： `https://api.omniture.com` |
+| authPrivateKey(Legacy) | 私密金鑰、舊版Oath應用程式中上傳的公開部分、以XtkKey選項加密的AES： `cryptString("PRIVATE_KEY")` |
 | disableAuth（舊版） | 停用驗證，只有某些開發管道端點接受沒有閘道權杖的連線。 |
-| discoverPipelineEndpoint | 用於尋找要用於此租使用者的管道服務端點的URL。 預設： ```https://producer-pipeline-pnw.adobe.net``` |
-| dumpStatePeriodSec | 在```var/INSTANCE/pipelined.json.``` <br>中內部狀態處理序的兩個傾印之間的期間，也可以在此隨選存取內部狀態： ```http://INSTANCE:7781/pipelined/status``` |
+| discoverPipelineEndpoint | 用於尋找要用於此租使用者的管道服務端點的URL。 預設： `https://producer-pipeline-pnw.adobe.net` |
+| dumpStatePeriodSec | 在`var/INSTANCE/pipelined.json.` <br>中內部狀態處理序的兩個傾印之間的期間，也可以在此隨選存取內部狀態： `http://INSTANCE:7781/pipelined/status` |
 | forcedPipelineEndpoint | 停用偵測PipelineServicesEndpoint以強制執行 |
-| monitorServerPort | 管線處理序將在此連線埠上接聽，以提供內部狀態處理序： ```http://INSTANCE:PORT/pipelined/status```。 <br>預設為7781 |
+| monitorServerPort | 管線處理序將在此連線埠上接聽，以提供內部狀態處理序： `http://INSTANCE:PORT/pipelined/status`。 <br>預設為7781 |
 | pointerFlushMessageCount | 處理此數量的訊息時，位移會儲存在資料庫中。<br> 預設為1000 |
 | pointerFlushPeriodSec | 在此期間之後，位移會儲存在資料庫中。 <br>預設為5 （秒） |
 | processingJSThreads | 使用自訂JS聯結器處理訊息的專用執行緒數量。<br> 預設值為4 |

@@ -13,7 +13,7 @@ product_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+source-git-commit: 8f9e8344b77e50bd2823cc7fa3922466e515327f
 workflow-type: tm+mt
 source-wordcount: 1761
 ht-degree: 0%
@@ -188,7 +188,7 @@ Adobe Campaign不會在其將在資料庫中建立的物件上設定保護模式
 
 | 停用預設遞補 |
 | :-: |
-| ```MODIFY USER $login$ AS NO FALLBACK;``` |
+| `MODIFY USER $login$ AS NO FALLBACK;` |
 
 ### MD5安裝 {#md5-installation}
 
