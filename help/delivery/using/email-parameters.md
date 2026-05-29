@@ -7,14 +7,12 @@ role: User, Developer
 hide: true
 exl-id: 1bb36e71-9f1a-4553-b266-eca3f48688e2
 TQID: https://experienceleague.adobe.com/MmKuHkMyqQizW9agSWTlcNOzrzG12TkBXcHVHjGvhxA
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+feature_v2: id: b631758a-142d-425f-b9aa-f756d85cb979id: c858a28b-ea19-49b0-8d48-828717fad89c
+subfeature_v2: id: e95a583b-fcfa-4524-8666-46a29c828119id: c8da4fdd-eb94-4751-a43c-f82733fb2d6eid: d5bbe3da-ba85-4242-817e-54f7c4b943e0id: f4da0e76-df77-451e-ad61-21afb7bd8810
+source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
 source-wordcount: 920
 ht-degree: 12%
@@ -89,7 +87,7 @@ Adobe Campaign可讓您只要新增密件副本電子郵件地址至訊息目標
 
 鏡像頁面是可透過網頁瀏覽器線上存取的 HTML 頁面。 其內容與電子郵件相同。
 
-依預設，如果將連結插入郵件內容中，則會產生映象頁面。 如需個人化區塊插入的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=zh-Hant){target="_blank"}。
+依預設，如果將連結插入郵件內容中，則會產生映象頁面。 如需個人化區塊插入的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}。
 
 在傳遞屬性中，**[!UICONTROL Validity]**&#x200B;索引標籤的&#x200B;**[!UICONTROL Mode]**&#x200B;欄位可讓您修改此頁面的產生模式。
 
@@ -123,7 +121,7 @@ Adobe Campaign可讓您只要新增密件副本電子郵件地址至訊息目標
 
 傳遞引數的&#x200B;**[!UICONTROL SMTP]**&#x200B;索引標籤可讓您設定退回郵件的管理。
 
-依預設，平台[&#128279;](../../installation/using/deploying-an-instance.md#parameters-for-delivered-emails-parameters-for-delivered-emails)的預設錯誤方塊中會收到退回的電子郵件，但您可以定義傳遞的特定錯誤位址。
+依預設，平台](../../installation/using/deploying-an-instance.md#parameters-for-delivered-emails-parameters-for-delivered-emails)的[預設錯誤方塊中會收到退回的電子郵件，但您可以定義傳遞的特定錯誤位址。
 
 您也可以從此畫面定義特定地址，以便調查當應用程式無法自動限定郵件時退回郵件的原因。 對於每個欄位，**新增個人化欄位**&#x200B;圖示可讓您新增個人化引數。
 

@@ -8,19 +8,11 @@ content-type: reference
 topic-tags: data-processing
 exl-id: 75d3a0af-9a14-4083-b1da-2c1b22f57cbe
 TQID: https://experienceleague.adobe.com/dka5G-03UMUH8Gzlu2JhbI9sw5alaTaoClsxEKhhEPY
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
-  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
-subfeature_v2:
-  - id: cebd7cfa-b9fa-4d9f-a2ab-fce31f32c4a3
-  - id: cfc95e9b-b035-4403-a6a9-b27a8a053a37
-topic_v2:
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+subfeature_v2: id: cebd7cfa-b9fa-4d9f-a2ab-fce31f32c4a3id: c03a11ff-bdf9-4e5b-b279-f468b4293464id: e519a22f-a06a-42fc-9d09-d78a3ab2c434
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e0eb8757-182f-49f3-94a4-1587d16f5094id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
 source-wordcount: 2862
 ht-degree: 0%
@@ -45,7 +37,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如需排程器的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html?lang=zh-Hant){target="_blank"}。
+>如需排程器的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html){target="_blank"}。
 
 根據預設，**[!UICONTROL Database cleanup]**&#x200B;工作流程設定為每天凌晨4:00開始。 排程器可讓您變更工作流程觸發頻率。 可使用下列頻率：
 
@@ -72,7 +64,7 @@ ht-degree: 0%
 * 傳遞記錄： **NmsCleanup_BroadLogPurgeDelay** （請參閱[傳遞記錄的清理](#cleanup-of-delivery-logs)）
 * 追蹤記錄： **NmsCleanup_TrackingLogPurgeDelay** （請參閱[追蹤記錄的清除](#cleanup-of-tracking-logs)）
 * 已刪除的傳遞： **NmsCleanup_RecycledDeliveryPurgeDelay** （請參閱[清除要刪除或回收的傳遞](#cleanup-of-deliveries-to-be-deleted-or-recycled)）
-* 匯入拒絕： **NmsCleanup_RejectsPurgeDelay** （請參閱清除匯入產生的拒絕[&#128279;](#cleanup-of-rejects-generated-by-imports-)）
+* 匯入拒絕： **NmsCleanup_RejectsPurgeDelay** （請參閱清除匯入產生的拒絕](#cleanup-of-rejects-generated-by-imports-)）[
 * 訪客設定檔： **NmsCleanup_VisitorPurgeDelay** （請參閱[訪客清理](#cleanup-of-visitors)）
 * 優惠方案主張： **NmsCleanup_PropositionPurgeDelay** （請參閱[主張的清除](#cleanup-of-propositions)）
 

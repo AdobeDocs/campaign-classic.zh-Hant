@@ -7,11 +7,11 @@ badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v
 feature: A/B Testing
 exl-id: 77b3a906-b76e-49e1-b524-b6f1ae537259
 TQID: https://experienceleague.adobe.com/eble-fTf8Rk7fFGnKNh5pLUhMaLdZlJrG-vjrhbHx1I
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+feature_v2: id: b631758a-142d-425f-b9aa-f756d85cb979id: c858a28b-ea19-49b0-8d48-828717fad89c
+subfeature_v2: id: d5bbe3da-ba85-4242-817e-54f7c4b943e0id: e739ee2b-6228-412e-878f-45de0791417d
+source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
 source-wordcount: 104
 ht-degree: 5%
@@ -20,7 +20,7 @@ ht-degree: 5%
 
 # AB測試：建立傳遞範本 {#step-3--creating-two-delivery-templates}
 
-我們現在想要建立兩個傳遞範本。 每個範本都將在連結至&#x200B;**[!UICONTROL Split]**&#x200B;活動的&#x200B;**[!UICONTROL Email delivery]**&#x200B;活動中參考。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=zh-Hant){target="_blank"}。
+我們現在想要建立兩個傳遞範本。 每個範本都將在連結至&#x200B;**[!UICONTROL Split]**&#x200B;活動的&#x200B;**[!UICONTROL Email delivery]**&#x200B;活動中參考。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}。
 
 1. 瀏覽至&#x200B;**[!UICONTROL Resources > Delivery template]**&#x200B;資料夾。
 1. 複製&#x200B;**[!UICONTROL Email]**&#x200B;傳遞範本。

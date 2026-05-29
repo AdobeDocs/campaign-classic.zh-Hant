@@ -6,16 +6,14 @@ feature: SMS, Troubleshooting
 role: User
 exl-id: 841f0c2f-90ef-4db0-860a-75fc7c48804a
 TQID: https://experienceleague.adobe.com/h0vsbqdwW-21Ay-v8v8eUQzHyDkCVZoxXWHx5m1Qd7g
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c1579802-ddd4-4214-8a91-97b2066abe11
+feature_v2: id: b631758a-142d-425f-b9aa-f756d85cb979id: c858a28b-ea19-49b0-8d48-828717fad89c
+subfeature_v2: id: e95a583b-fcfa-4524-8666-46a29c828119id: c8da4fdd-eb94-4751-a43c-f82733fb2d6eid: d5bbe3da-ba85-4242-817e-54f7c4b943e0id: f4da0e76-df77-451e-ad61-21afb7bd8810
+source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 3072
+source-wordcount: 2904
 ht-degree: 0%
 
 ---
@@ -50,9 +48,9 @@ Adobe Campaign會將外部帳戶視為不相關的實體。
 您必須連絡提供者，才能診斷其身邊的潛在衝突。
 
    * 部分外部帳戶共用相同的登入/密碼組合。
-提供者無法辨識`BIND PDU`來自哪個外部帳戶，因此他們將來自多個帳戶的所有連線視為單一連線。 他們可能已隨機將MO和SR路由到兩個帳戶，從而導致問題。
-如果提供者支援相同登入/密碼組合的多個短程式碼，您必須詢問他們要將短程式碼放在`BIND PDU`中的哪個位置。 請注意，此資訊必須放在`BIND PDU`中，而非`SUBMIT_SM`中，因為`BIND PDU`是唯一允許正確路由傳送MO的位置。
-請參閱上面各種PDU[&#128279;](sms-protocol.md#information-pdu)區段中的資訊，以瞭解`BIND PDU`中可用的欄位，通常是您在`address_range`中新增短程式碼，但需要提供者的特殊支援。 請聯絡他們，以瞭解他們如何獨立路由多個短程式碼。
+提供者無法辨識`BIND PDU`來自哪個外部帳戶，因此他們將來自多個帳戶的所有連線視為單一連線。他們可能已隨機將MO和SR路由到兩個帳戶，從而導致問題。
+如果提供者支援相同登入/密碼組合的多個短程式碼，您必須詢問他們要將短程式碼放在`BIND PDU`中的哪個位置。請注意，此資訊必須放在`BIND PDU`中，而非`SUBMIT_SM`中，因為`BIND PDU`是唯一允許正確路由傳送MO的位置。
+請參閱上面各種PDU](sms-protocol.md#information-pdu)區段中的[資訊，以瞭解`BIND PDU`中可用的欄位，通常是您在`address_range`中新增短程式碼，但需要提供者的特殊支援。請聯絡他們，以瞭解他們如何獨立路由多個短程式碼。
 Adobe Campaign支援在相同的外部帳戶上處理多個短程式碼。
 
 ## 一般外部帳戶問題 {#external-account-issues}

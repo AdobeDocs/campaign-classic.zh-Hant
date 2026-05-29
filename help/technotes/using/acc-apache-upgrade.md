@@ -6,13 +6,11 @@ feature: Technote, Upgrade
 hide: true
 exl-id: 3d2f5d1d-4b31-4cc6-b6fb-13589856e00c
 TQID: https://experienceleague.adobe.com/iTszfeybA8gTvgRCpTAXNEKQIbTeGHUDx-1plG77NUo
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a075b2c1-7748-4328-b7f6-343aa314616a
-topic_v2:
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616a
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
+subfeature_v2: id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
 source-wordcount: 549
 ht-degree: 0%
@@ -32,7 +30,7 @@ Adobe Campaign團隊將在&#x200B;**2022年6月15日**&#x200B;前執行Apache版
 
 此升級預計會在您正常營業時間以外自動執行，以便您繼續使用Campaign服務而不會造成任何中斷。
 
-您的非生產執行個體將先由Adobe升級，然後您的生產執行個體將升級。 由於這是Adobe所擁有的自動升級程式，因此您不需要採取任何動作。 不過，如果您發生任何問題，請連絡[Adobe客戶服務](https://experienceleague.adobe.com/zh-hant?support-solution=Campaign#support)。
+您的非生產執行個體將先由Adobe升級，然後您的生產執行個體將升級。 由於這是Adobe所擁有的自動升級程式，因此您不需要採取任何動作。 不過，如果您發生任何問題，請連絡[Adobe客戶服務](https://experienceleague.adobe.com/?support-solution=Campaign#support)。
 
 
 >[!NOTE]
@@ -63,7 +61,7 @@ Adobe Campaign團隊將在&#x200B;**2022年6月15日**&#x200B;前執行Apache版
 
 * **客戶需要執行哪些驗證？**
 
-  此安全性升級不需要任何特定測試。 如果發現任何問題，請聯絡[Adobe客戶服務](https://experienceleague.adobe.com/zh-hant?support-solution=Campaign#support)。
+  此安全性升級不需要任何特定測試。 如果發現任何問題，請聯絡[Adobe客戶服務](https://experienceleague.adobe.com/?support-solution=Campaign#support)。
 
 
 * **我可以要求變更排定的安全性升級位置的日期/時間嗎？**
@@ -71,4 +69,4 @@ Adobe Campaign團隊將在&#x200B;**2022年6月15日**&#x200B;前執行Apache版
   由於這是安全性修正，強烈建議您調整以符合現有的排程。
 
 
-如有任何其他問題，請連絡[Adobe客戶服務](https://experienceleague.adobe.com/zh-hant?support-solution=Campaign#support)。
+如有任何其他問題，請連絡[Adobe客戶服務](https://experienceleague.adobe.com/?support-solution=Campaign#support)。

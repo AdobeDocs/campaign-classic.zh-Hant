@@ -8,10 +8,12 @@ audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: b70ca220-1c81-4b23-b07a-a2cd694877fe
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+feature_v2: []
+subfeature_v2: id: cbcf4d90-26be-46e2-b16a-aebc529dc41eid: df0d6518-6f49-46e2-b46e-3bcc513f553fid: eb007b6d-6e57-46ab-9485-3f24d6102304id: b1fd1501-3105-4d6b-b4d4-9af53126df75
+source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: '380'
-ht-degree: 11%
+source-wordcount: 349
+ht-degree: 12%
 
 ---
 
@@ -19,13 +21,13 @@ ht-degree: 11%
 
 >[!IMPORTANT]
 >
->作為Campaign託管或受管理的服務使用者，您的Adobe IMS實作屬於Adobe。 以下所述的步驟僅適用於內部部署和混合客戶。
-> Adobe IMS實作只能由Adobe技術管理員執行。 請聯絡您的Adobe代表，以開始實作程式。
+>作為Campaign託管或受管理的服務使用者，您的Adobe IMS實作屬於Adobe。以下所述的步驟僅適用於內部部署和混合客戶。
+> Adobe IMS實作只能由Adobe技術管理員執行。請聯絡您的Adobe代表，以開始實作程式。
 
 ## 先決條件 {#prerequisites}
 
 * 您必須有Adobe Experience Cloud組織名稱和ID。 若要尋找您的組織ID，請參閱[此頁面](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-Hant){_blank}。
-* 您必須在Experience Cloud中新增使用者。 如需詳細資訊，請參閱[此頁面](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=zh-Hant){_blank}。
+* 您必須在Experience Cloud中新增使用者。 如需詳細資訊，請參閱[此頁面](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html){_blank}。
 
 >[!NOTE]
 >
@@ -49,7 +51,7 @@ ht-degree: 11%
 
 輸入下列資訊：
 
-* 使用的IMS伺服器的連線資訊（識別碼和密碼）。 此資訊由Adobe客戶服務團隊提供。 如需詳細資訊，請參閱[Adobe Experience Cloud管理員常見問題集](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/faq.html?lang=zh-Hant)。
+* 使用的IMS伺服器的連線資訊（識別碼和密碼）。 此資訊由Adobe客戶服務團隊提供。 如需詳細資訊，請參閱[Adobe Experience Cloud管理員常見問題集](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/faq.html)。
 
   必須在&#x200B;**https**&#x200B;中指定&#x200B;**[!UICONTROL Callback server]**&#x200B;位址。 此欄位對應至Adobe Campaign執行個體的存取URL。
 

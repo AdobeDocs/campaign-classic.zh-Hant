@@ -9,16 +9,13 @@ content-type: reference
 topic-tags: troubleshooting
 exl-id: b5aa5663-1902-4f50-9202-783e73a28838
 TQID: https://experienceleague.adobe.com/rLTECFw79UslNFzXs7WArBoo0YmqHjAWojkXCgQOmuk
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a075b2c1-7748-4328-b7f6-343aa314616a
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616a
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+subfeature_v2: id: c03a11ff-bdf9-4e5b-b279-f468b4293464id: e519a22f-a06a-42fc-9d09-d78a3ab2c434
+source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 762
+source-wordcount: 744
 ht-degree: 11%
 
 ---
@@ -34,7 +31,7 @@ ht-degree: 11%
 * [關於工作流程](../../workflow/using/about-workflows.md)
 * [正在啟動工作流程](https://experienceleague.adobe.com/docs/campaign/automation/workflows/executing-a-workflow/start-a-workflow.html?lang=zh-Hant){target="_blank"}。
 * [工作流程生命週期](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=zh-Hant){target="_blank"}。
-* [使用工作流程時的最佳實務](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=zh-Hant){target="_blank"}。
+* [使用工作流程時的最佳實務](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html){target="_blank"}。
 
 ## 在行銷活動中儘快開始 {#start-as-soon-as-possible-in-campaigns}
 
@@ -42,7 +39,7 @@ ht-degree: 11%
 
 此問題可能有幾個原因，請遵循下列步驟加以解決：
 
-1. 檢查&#x200B;[**[!UICONTROL operationMgt]**](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html?lang=zh-Hant){target="_blank"}技術工作流程狀態。 此工作流程可管理行銷活動內的工作或工作流程。 如果失敗，會導致工作流程無法啟動/停止。 重新啟動以繼續行銷活動工作流程執行。
+1. 檢查&#x200B;[**[!UICONTROL operationMgt]**](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html){target="_blank"}技術工作流程狀態。 此工作流程可管理行銷活動內的工作或工作流程。 如果失敗，會導致工作流程無法啟動/停止。 重新啟動以繼續行銷活動工作流程執行。
 
    如需技術工作流程監視的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-technical-workflows.html?lang=zh-Hant){target="_blank"}。
 
@@ -72,7 +69,7 @@ ht-degree: 11%
 
    >[!NOTE]
    >
-   >將&#x200B;**`<instance-name>`**&#x200B;取代為您執行個體的名稱（生產、開發等）。 執行個體名稱會透過設定檔案識別：
+   >將&#x200B;**`<instance-name>`**取代為您執行個體的名稱（生產、開發等）。執行個體名稱會透過設定檔案識別：
    >`[path of application]nl6/conf/config-<instance-name>.xml`
 
    如需如何重新啟動模組的詳細資訊，請參閱[本節](../../production/using/usual-commands.md#module-launch-commands)。
@@ -81,13 +78,13 @@ ht-degree: 11%
 
    若要解決此問題，請停止不需要的工作流程並刪除失敗的傳送。 如果達到臨界值，將允許執行新程式。
 
-   若要檢查執行個體正在執行的工作流程數目，我們建議使用預先定義的檢視，預設可在&#x200B;**[!UICONTROL Administration]** / **[!UICONTROL Audit]**&#x200B;資料夾中存取。 如需詳細資訊，請參閱 [Campaign v8 文件](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=zh-Hant){target="_blank"}。
+   若要檢查執行個體正在執行的工作流程數目，我們建議使用預先定義的檢視，預設可在&#x200B;**[!UICONTROL Administration]** / **[!UICONTROL Audit]**&#x200B;資料夾中存取。 如需詳細資訊，請參閱 [Campaign v8 文件](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}。
 
    >[!IMPORTANT]
    >
    >提高&#x200B;**[!UICONTROL NmsOperation_LimitConcurrency]**&#x200B;選項臨界值可能會導致執行個體出現效能問題。 無論如何，請勿自行執行此動作，並聯絡Adobe Campaign聯絡人。
 
-如需如何監視工作流程的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=zh-Hant){target="_blank"}。
+如需如何監視工作流程的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}。
 
 ## 開始進行中 {#start-in-progress}
 
@@ -117,7 +114,7 @@ ht-degree: 11%
 
    >[!NOTE]
    >
-   >將&#x200B;**`<instance-name>`**&#x200B;取代為您執行個體的名稱（生產、開發等）。 執行個體名稱會透過設定檔案識別：
+   >將&#x200B;**`<instance-name>`**取代為您執行個體的名稱（生產、開發等）。執行個體名稱會透過設定檔案識別：
    >`[path of application]nl6/conf/config-<instance-name>.xml`
 
    如需如何重新啟動模組的詳細資訊，請參閱[本節](../../production/using/usual-commands.md#module-launch-commands)。
@@ -126,6 +123,6 @@ ht-degree: 11%
 
 如果工作流程失敗，請執行以下步驟：
 
-1. 檢查工作流程日誌。 有關更多資訊，請參閱[Campaign v8 文件](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=zh-Hant){target="_blank"}。
+1. 檢查工作流程日誌。 有關更多資訊，請參閱[Campaign v8 文件](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}。
 1. 監視技術工作流程。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-technical-workflows.html?lang=zh-Hant){target="_blank"}。
 1. 尋找個別工作流程活動上的失敗。

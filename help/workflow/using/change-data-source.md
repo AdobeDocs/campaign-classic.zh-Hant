@@ -5,13 +5,13 @@ feature: Workflows, Data Management, Federated Data Access
 hide: true
 exl-id: d7bf9d62-6f9e-415f-8160-446210f6392e
 TQID: https://experienceleague.adobe.com/VhOrIcFK-BbCuzPTC6Y8Px8u-VY0-4O86F8z8muZIHM
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-topic_v2:
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+topic_v2: id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+feature_v2: []
+subfeature_v2: id: ee25c34b-ea50-427b-9369-ba0a160f7d70id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22fid: d1110311-2ca4-442b-be37-088a6db845ee
+source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 270
+source-wordcount: 236
 ht-degree: 3%
 
 ---
@@ -24,11 +24,11 @@ ht-degree: 3%
 
 **[!UICONTROL Change data source]**&#x200B;活動可讓您變更工作流程&#x200B;**[!UICONTROL Working table]**&#x200B;的資料來源。 這為管理不同資料來源（例如FDA、FFDA和本機資料庫）的資料提供更大的彈性。
 
-**[!UICONTROL Working table]**&#x200B;可讓Adobe Campaign Classic工作流程處理資料，並與工作流程活動共用資料。
+**[!UICONTROL Working table]**可讓Adobe Campaign Classic工作流程處理資料，並與工作流程活動共用資料。
 根據預設，**[!UICONTROL Working table]**&#x200B;會與我們查詢的資料來源建立在同一資料庫中。
 
 例如，當查詢儲存在雲端資料庫上的&#x200B;**[!UICONTROL Profiles]**&#x200B;資料表時，您將在相同的雲端資料庫上建立&#x200B;**[!UICONTROL Working table]**。
-若要變更此專案，您可以新增&#x200B;**[!UICONTROL Change Data Source]**&#x200B;活動，為您的&#x200B;**[!UICONTROL Working table]**&#x200B;選擇不同的資料來源。
+若要變更此專案，您可以新增**[!UICONTROL Change Data Source]**&#x200B;活動，為您的&#x200B;**[!UICONTROL Working table]**&#x200B;選擇不同的資料來源。
 
 請注意，使用&#x200B;**[!UICONTROL Change Data Source]**&#x200B;活動時，您必須切換回雲端資料庫才能繼續執行工作流程。
 

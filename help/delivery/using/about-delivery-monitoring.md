@@ -6,18 +6,14 @@ feature: Monitoring, Deliverability
 role: User
 exl-id: 9ce11da0-e37b-459e-8ec7-d2bddf59bdf7
 TQID: https://experienceleague.adobe.com/IRAgAQvquHFcfGDRU9Sof8NpSn3khyRRPOdpIRKUOzg
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b4dd41a7-ccf8-4e9d-918e-acaab534a307
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b4dd41a7-ccf8-4e9d-918e-acaab534a307id: c1579802-ddd4-4214-8a91-97b2066abe11id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+feature_v2: id: b631758a-142d-425f-b9aa-f756d85cb979id: c858a28b-ea19-49b0-8d48-828717fad89c
+subfeature_v2: id: e95a583b-fcfa-4524-8666-46a29c828119id: c8da4fdd-eb94-4751-a43c-f82733fb2d6eid: d5bbe3da-ba85-4242-817e-54f7c4b943e0id: f4da0e76-df77-451e-ad61-21afb7bd8810
+source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 931
+source-wordcount: 885
 ht-degree: 2%
 
 ---
@@ -38,11 +34,11 @@ ht-degree: 2%
 
 如果未傳送傳遞且其狀態仍為&#x200B;**擱置中**，該怎麼辦？
 
-* 執行程式正在等待某些資源的可用性。 MTA可能尚未啟動。
-檢查您的mta@instance模組是否已在MTA伺服器上啟動，並視需要啟動MTA模組。 [了解更多資訊](../../production/using/administration.md)。
+* 執行程式正在等待某些資源的可用性。MTA可能尚未啟動。
+檢查您的mta@instance模組是否已在MTA伺服器上啟動，並視需要啟動MTA模組。[深入瞭解](../../production/using/administration.md)。
 
 * 傳遞可能使用傳送執行個體上尚未設定的相似性。
-提示：檢查流量管理（IP相似性）的設定。 如需詳細資訊，請參閱控制傳出SMTP流量。
+提示：檢查流量管理（IP相似性）的設定。如需詳細資訊，請參閱控制傳出SMTP流量。
 
 >[!NOTE]
 >
@@ -85,10 +81,10 @@ ht-degree: 2%
 * 定期檢查整個平台的[傳遞輸送量](../../reporting/using/global-reports.md#delivery-throughput)，以確認其是否與原始設定一致。
 * 檢查傳遞範本中的[重試](delivery-failures-quarantine.md#retries-after-a-delivery-temporary-failure)是否已正確設定（重試期間為30分鐘，重試次數超過20次）。
 * 定期確認[退信](delivery-failures-quarantine.md#bounce-mail-management)信箱可存取，且帳戶不會過期。
-* 檢查可從[傳遞儀表板](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}存取的每個傳遞輸送量，以確保其與傳遞內容的有效性一致（例如，「Flash銷售」應在幾分鐘內傳遞，而非幾天）。
+* 檢查可從[傳遞儀表板](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}存取的每個傳遞輸送量，以確保其與傳遞內容的有效性一致（例如，「Flash銷售」應在幾分鐘內傳遞，而非幾天）。
 * 使用波段時，請確認每個波段都有足夠的時間完成，才能觸發下一個波段。
 * 檢查錯誤數目和新的[隔離](delivery-failures-quarantine.md)是否與其他傳遞一致。
-* 仔細查閱[傳遞記錄](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"}以詳細檢查反白顯示的錯誤型別（封鎖清單、DNS問題、反垃圾郵件規則等）。
+* 仔細查閱[傳遞記錄](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"}以詳細檢查反白顯示的錯誤型別（封鎖清單、DNS問題、反垃圾郵件規則等）。
 
 ### 疑難排解 {#delivery-troubleshooting}
 
@@ -107,8 +103,8 @@ ht-degree: 2%
 
 瞭解如何存取傳遞清單，並使用傳遞儀表板來監視您的傳送活動：
 
-* [在Campaign UI中監視傳遞](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} （Campaign v8檔案 — 適用於v7和v8）
-* [傳遞狀態](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/monitor/delivery-statuses){target="_blank"} （Campaign v8檔案）
+* [在Campaign UI中監視傳遞](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} （Campaign v8檔案 — 適用於v7和v8）
+* [傳遞狀態](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-statuses){target="_blank"} （Campaign v8檔案）
 * [進階：自訂傳遞記錄](customize-delivery-logs.md) （僅限v7混合/內部部署 — 結構描述延伸）
 
 ### 追蹤訊息互動
@@ -116,8 +112,8 @@ ht-degree: 2%
 追蹤開啟、點按次數，以及收件者與您傳送內容的互動：
 
 * [訊息追蹤檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/analytics/tracking/tracking){target="_blank"} （Campaign v8檔案 — 適用於v7和v8）
-* [設定追蹤的連結](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/analytics/tracking/tracked-links){target="_blank"} （Campaign v8檔案）
-* [存取追蹤記錄](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/analytics/tracking/tracking-logs){target="_blank"} （Campaign v8檔案）
+* [設定追蹤的連結](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracked-links){target="_blank"} （Campaign v8檔案）
+* [存取追蹤記錄](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracking-logs){target="_blank"} （Campaign v8檔案）
 
 ### 最佳化傳遞效能
 
@@ -130,6 +126,6 @@ ht-degree: 2%
 
 管理傳送失敗、退回郵件和隔離地址：
 
-* [瞭解傳送失敗](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} （Campaign v8檔案 — v7和v8的全面指南）
-* [隔離管理](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} （Campaign v8檔案 — v7和v8的完整指南）
+* [瞭解傳送失敗](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} （Campaign v8檔案 — v7和v8的全面指南）
+* [隔離管理](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} （Campaign v8檔案 — v7和v8的完整指南）
 * [傳送失敗和隔離設定](delivery-failures-quarantine.md) （v7混合/內部部署特定設定）

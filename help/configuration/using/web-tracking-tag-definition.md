@@ -6,13 +6,13 @@ feature: Application Settings
 role: Developer
 exl-id: 0b5575be-57e7-4eee-9c0a-e9ef4b0931bf
 TQID: https://experienceleague.adobe.com/UkA0XyCzaDt2qlxpODQ-zoyC0YdKs3K5qg4UacvT8ck
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+feature_v2: []
+subfeature_v2: []
+source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 362
+source-wordcount: 324
 ht-degree: 2%
 
 ---
@@ -83,7 +83,7 @@ ht-degree: 2%
                               <p>URL引數</p> 
                            </td>
                            <td>
-                              <p>沒有工作階段Cookie時要使用的傳遞識別碼。 此值將為
+                              <p>沒有工作階段Cookie時要使用的傳遞識別碼。此值將為
                                  以十六進位表示。
                               </p> 
                            </td> 
@@ -96,8 +96,8 @@ ht-degree: 2%
                               <p>URL引數</p> 
                            </td>
                            <td>
-                              <p>用於識別網際網路使用者的引數。 此引數的格式為「name=value」，
-                                 其中名稱是收件者綱要的欄位。 此引數的優先順序高於
+                              <p>用於識別網際網路使用者的引數。此引數的格式為「name=value」，
+                                 其中名稱是收件者綱要的欄位。此引數的優先順序高於
                                  工作階段Cookie中包含的識別碼。
                               </p> 
                            </td> 
@@ -113,17 +113,17 @@ ht-degree: 2%
 
 * 正在收集業務量資料
 
-  **https://myserver.adobe.com/r/4567?tagid=command&amount=100&article=2l**
+  **https://myserver.adobe.com/r/4567?tagid=command&amp;amount=100&amp;article=2l**
 
 * 指定欄位以尋找收件者
 
-  **https://myserver.adobe.com/r/2353?tagid=home&rcpid=saccount%3D10**
+  **https://myserver.adobe.com/r/2353?tagid=home&amp;rcpid=saccount%3D10**
 
   帳號為10的收件者會傳送到首頁。
 
 * 使用預設傳遞
 
-  **https://myserver.adobe.com/r/2456?tagid=home&jobid=e6**
+  **https://myserver.adobe.com/r/2456?tagid=home&amp;jobid=e6**
 
   收件者會傳送到首頁。 除非使用此查詢傳送包含傳遞識別碼的工作階段Cookie，否則此資訊將會以識別碼230 （資料庫16中的e6）儲存在傳遞中。
 

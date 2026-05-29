@@ -4,9 +4,11 @@ title: 關於工作流程
 description: 使用工作流程自動化程序、管理資料和客群、傳送訊息等
 feature: Workflows, Data Management
 exl-id: 024a7344-9376-4ff3-926a-003148229f9f
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+feature_v2: []
+subfeature_v2: id: ee25c34b-ea50-427b-9369-ba0a160f7d70id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22fid: d1110311-2ca4-442b-be37-088a6db845ee
+source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: 298
 ht-degree: 18%
 
 ---
@@ -35,11 +37,11 @@ Adobe Campaign的工作流程可讓您的團隊簡化並自動化整個平台的
 
 * [建立工作流程](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=zh-Hant){target=_blank}：瞭解如何建立和執行目標定位、行銷活動和技術工作流程。
 
-* [最佳實務](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=zh-Hant){target=_blank}：瞭解最佳化行銷活動工作流程效能、改善工作流程設計和定義正確設定的指導方針。
+* [最佳實務](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html){target=_blank}：瞭解最佳化行銷活動工作流程效能、改善工作流程設計和定義正確設定的指導方針。
 
-* [監視工作流程](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=zh-Hant){target=_blank}：瞭解如何監視工作流程執行，以確保一切正常執行。
+* [監視工作流程](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target=_blank}：瞭解如何監視工作流程執行，以確保一切正常執行。
 
-* [工作流程使用案例](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/workflow-use-cases.html?lang=zh-Hant){target=_blank}：瞭解哪些內容可以使用工作流程，以及如何透過端對端使用案例實作工作流程。
+* [工作流程使用案例](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/workflow-use-cases.html){target=_blank}：瞭解哪些內容可以使用工作流程，以及如何透過端對端使用案例實作工作流程。
 
 
 >[!ENDTABS]

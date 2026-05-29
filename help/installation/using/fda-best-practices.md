@@ -8,11 +8,11 @@ content-type: reference
 topic-tags: connectors
 exl-id: f3980859-2837-416b-a0ef-2b369d2d50bd
 TQID: https://experienceleague.adobe.com/o9F-VJpel6oYo-4N8nd25xW69ZAN-RpH9TaZ2jJeq-k
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+feature_v2: []
+subfeature_v2: []
+source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
 source-wordcount: 509
 ht-degree: 1%
@@ -35,13 +35,13 @@ ht-degree: 1%
 
 在多個Adobe Campaign工作流程活動中，您可以使用儲存在外部資料庫中的資料。
 
-* **篩選外部資料** — 查詢活動可讓您新增外部資料，並將其用於定義的篩選設定。 如需詳細資訊，請參閱[Campaign v8檔案]https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/targeting-workflows.html?lang=zh-Hant){target="_blank"}。
+* **篩選外部資料** — 查詢活動可讓您新增外部資料，並將其用於定義的篩選設定。 如需詳細資訊，請參閱[Campaign v8檔案]https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/targeting-workflows.html){target="_blank"}。
 
-* **建立子集** — 分割活動可讓您建立子集。 您可以使用外部資料來定義要使用的篩選條件。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/split.html?lang=zh-Hant){target="_blank"}。
+* **建立子集** — 分割活動可讓您建立子集。 您可以使用外部資料來定義要使用的篩選條件。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/split.html){target="_blank"}。
 
-* **載入外部資料庫** — 您可以在資料載入(RDBMS)活動中使用外部資料。 在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-rdbms.html?lang=zh-Hant){target="_blank"}中瞭解更多。
+* **載入外部資料庫** — 您可以在資料載入(RDBMS)活動中使用外部資料。 在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-rdbms.html){target="_blank"}中瞭解更多。
 
-* **新增資訊和連結** — 擴充活動可讓您新增其他資料至工作流程的工作表，以及外部表格的連結。 在這種情況下，它可以使用來自外部資料庫的資料。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html?lang=zh-Hant){target="_blank"}。
+* **新增資訊和連結** — 擴充活動可讓您新增其他資料至工作流程的工作表，以及外部表格的連結。 在這種情況下，它可以使用來自外部資料庫的資料。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html){target="_blank"}。
 
 ## 護欄和限制 {#fda-limitations}
 
