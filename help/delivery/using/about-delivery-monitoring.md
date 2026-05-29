@@ -15,9 +15,17 @@ topic_v2:
   - id: b4dd41a7-ccf8-4e9d-918e-acaab534a307
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+feature_v2:
+  - id: b631758a-142d-425f-b9aa-f756d85cb979
+  - id: c858a28b-ea19-49b0-8d48-828717fad89c
+subfeature_v2:
+  - id: e95a583b-fcfa-4524-8666-46a29c828119
+  - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
+  - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
+  - id: f4da0e76-df77-451e-ad61-21afb7bd8810
+source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 931
+source-wordcount: 885
 ht-degree: 2%
 
 ---
@@ -38,11 +46,11 @@ ht-degree: 2%
 
 如果未傳送傳遞且其狀態仍為&#x200B;**擱置中**，該怎麼辦？
 
-* 執行程式正在等待某些資源的可用性。 MTA可能尚未啟動。
-檢查您的mta@instance模組是否已在MTA伺服器上啟動，並視需要啟動MTA模組。 [了解更多資訊](../../production/using/administration.md)。
+* 執行程式正在等待某些資源的可用性。MTA可能尚未啟動。
+檢查您的mta@instance模組是否已在MTA伺服器上啟動，並視需要啟動MTA模組。[深入瞭解](../../production/using/administration.md)。
 
 * 傳遞可能使用傳送執行個體上尚未設定的相似性。
-提示：檢查流量管理（IP相似性）的設定。 如需詳細資訊，請參閱控制傳出SMTP流量。
+提示：檢查流量管理（IP相似性）的設定。如需詳細資訊，請參閱控制傳出SMTP流量。
 
 >[!NOTE]
 >

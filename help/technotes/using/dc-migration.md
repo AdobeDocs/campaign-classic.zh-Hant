@@ -21,9 +21,11 @@ topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+subfeature_v2:
+  - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 1557
+source-wordcount: 1539
 ht-degree: 2%
 
 ---
@@ -143,7 +145,7 @@ Adobe會處理大部分的動作。 我們需要您進行驗證和簽核。
 
 **資料整合IP**
 
-使用者端的資料整合可能會受到資料整合的IP變更影響。 視Campaign做為伺服器或使用者端而定，此變更可能會雙向影響。
+使用者端的資料整合可能會受到資料整合的IP變更影響。視Campaign做為伺服器或使用者端而定，此變更可能會雙向影響。
 典型案例：
 
 * SFTP，可能向兩個方向

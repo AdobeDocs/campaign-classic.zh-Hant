@@ -13,6 +13,8 @@ feature_v2:
   - id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
 subfeature_v2:
   - id: cfc95e9b-b035-4403-a6a9-b27a8a053a37
+  - id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405
+  - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 level_v2:
@@ -22,10 +24,10 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 2670
-ht-degree: 100%
+source-wordcount: 2661
+ht-degree: 99%
 
 ---
 
@@ -174,7 +176,7 @@ _2021 年 6 月 5 日_
 </thead> 
 <tbody> 
 <tr> 
-<td> <p>您現在可以將 Adobe Campaign Classic 執行個體連線至 Google BigQuery 外部資料庫。 此連線透過新的外部帳戶進行管理。
+<td> <p>您現在可以將Adobe Campaign Classic執行個體連線至Google Big Query外部資料庫。此連線透過新的外部帳戶進行管理。
 </p>
 <p>如需詳細資訊，請參閱<a href="../../installation/using/configure-fda-google-big-query.md">詳細文件</a>。</p>
 </td> 
@@ -196,7 +198,7 @@ _2021 年 6 月 5 日_
 * Vertica Analytics FDA 連接器
 * PostgreSQL 13
 
-瞭解更多與[ Campaign 相容性矩陣相關的資訊](../../rn/using/compatibility-matrix.md)。
+瞭解更多與[&#x200B; Campaign 相容性矩陣相關的資訊](../../rn/using/compatibility-matrix.md)。
 
 **棄用的功能**
 

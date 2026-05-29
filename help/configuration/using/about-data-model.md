@@ -9,7 +9,6 @@ TQID: https://experienceleague.adobe.com/jyvz5WCdNhYtusE-HwPRwXNlr9Wh0swcQoOT05l
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
 feature_v2:
-  - id: a075b2c1-7748-4328-b7f6-343aa314616a
   - id: b12f6872-9271-4369-85e5-86969a0b99a2
   - id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
 subfeature_v2:
@@ -18,9 +17,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 997
+source-wordcount: 916
 ht-degree: 6%
 
 ---
@@ -47,9 +46,9 @@ Adobe Campaign仰賴包含連結在一起的表格的關聯式資料庫。 Adobe
 
 資料模型的另一個部分可讓您暫時儲存與行銷活動執行相關的所有記錄。
 
-傳遞記錄檔是跨所有通道傳送給收件者或裝置的所有訊息。 主要傳遞記錄表(**NmsBroadLog**)包含所有收件者的傳遞記錄。
-主要追蹤記錄表(**NmsTrackingLog**)儲存所有收件者的追蹤記錄。 追蹤記錄會參照收件者的回應，例如電子郵件開啟次數和點按次數。 每個回應都會對應至追蹤記錄。
-傳送記錄檔和追蹤記錄檔會在特定時段後刪除，該特定時段會在Adobe Campaign中指定並加以修改。 因此，強烈建議您定期匯出記錄檔。
+傳遞記錄檔是跨所有通道傳送給收件者或裝置的所有訊息。主要傳遞記錄表(**NmsBroadLog**)包含所有收件者的傳遞記錄。
+主要追蹤記錄表(**NmsTrackingLog**)儲存所有收件者的追蹤記錄。追蹤記錄會參照收件者的回應，例如電子郵件開啟次數和點按次數。每個回應都會對應至追蹤記錄。
+傳送記錄檔和追蹤記錄檔會在特定時段後刪除，該特定時段會在Adobe Campaign中指定並加以修改。因此，強烈建議您定期匯出記錄檔。
 
 ### 技術表格 {#technical-tables}
 

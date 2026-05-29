@@ -18,9 +18,17 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+feature_v2:
+  - id: b631758a-142d-425f-b9aa-f756d85cb979
+  - id: c858a28b-ea19-49b0-8d48-828717fad89c
+subfeature_v2:
+  - id: e95a583b-fcfa-4524-8666-46a29c828119
+  - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
+  - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
+  - id: f4da0e76-df77-451e-ad61-21afb7bd8810
+source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 1740
+source-wordcount: 1699
 ht-degree: 31%
 
 ---
@@ -353,7 +361,7 @@ CR：歸位
 * 無論關鍵字為何，若要傳送相同的回覆，請將&#x200B;**[!UICONTROL Keyword]**&#x200B;欄留空。
 * 若要執行動作而不傳送回應，請將&#x200B;**[!UICONTROL Response]**&#x200B;欄留空。 例如，這可讓您從隔離區中移除回複訊息不是「STOP」的使用者。
 
-如果您有多個外部帳戶使用Extended generic SMPP聯結器且提供者帳戶相同，則可能會發生以下問題：傳送簡短的程式碼回覆時，您可能會收到任何外部帳戶連線的回覆。 因此，傳送的自動回覆不能是預期的訊息。
+如果您有多個外部帳戶使用Extended generic SMPP聯結器且提供者帳戶相同，則可能會發生以下問題：傳送簡短的程式碼回覆時，您可能會收到任何外部帳戶連線的回覆。因此，傳送的自動回覆不能是預期的訊息。
 為避免此問題，請根據您使用的提供者，套用下列解決方案之一：
 
 * 為每個外部帳戶建立一個提供者帳戶。

@@ -12,19 +12,21 @@ TQID: https://experienceleague.adobe.com/zoNgRb4L1EWAtQsLDNs6YNlakXeRXMn6DE2McoC
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
 feature_v2:
-  - id: a075b2c1-7748-4328-b7f6-343aa314616a
   - id: b12f6872-9271-4369-85e5-86969a0b99a2
   - id: d5ef99fa-df0c-4153-bf94-105ad0724167
 subfeature_v2:
-  - id: c3bf7e1e-1db5-4c72-9293-e2f0b1ab73d0
+  - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+  - id: df0d6518-6f49-46e2-b46e-3bcc513f553f
+  - id: eb007b6d-6e57-46ab-9485-3f24d6102304
+  - id: b1fd1501-3105-4d6b-b4d4-9af53126df75
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 1204
-ht-degree: 1%
+source-wordcount: 1009
+ht-degree: 2%
 
 ---
 
@@ -137,7 +139,7 @@ function processPipelineMessage(xmlTrigger) {}
 
 ### 記錄與錯誤處理 {#logging-error-handling}
 
-記錄檔(例如logInfo())會導向至[!DNL pipelined]記錄檔。 錯誤(例如logError())會寫入[!DNL pipelined]記錄檔，導致事件進入重試佇列。 在此情況下，您應該檢查管線記錄。
+記錄檔(例如logInfo())會導向至[!DNL pipelined]記錄檔。諸如logError()之類的錯誤會寫入[!DNL pipelined]記錄檔中，並導致事件放入重試佇列中。在此情況下，您應該檢查管線記錄。
 在[!DNL pipelined]選項中設定的期間內，錯誤訊息會重試多次。
 
 為了偵錯和監控之目的，完整的觸發程式資料會以XML格式寫入「資料」欄位中的觸發程式表格中。 或者，包含觸發程式資料的logInfo()也可達到相同目的。
@@ -164,7 +166,7 @@ function processPipelineMessage(xmlTrigger)
 ```
 
 剖析時請小心，以免發生錯誤。
-由於此程式碼用於所有觸發器，因此大部分資料並非必要。 因此，當不存在時，可以保留空白。
+由於此程式碼用於所有觸發器，因此大部分資料並非必要。因此，當不存在時，可以保留空白。
 
 ### 儲存觸發器 {#storing-triggers-js}
 
@@ -210,7 +212,7 @@ function processPipelineMessage(xmlTrigger)
 
 ### 管道事件結構描述 {#pipeline-event-schema}
 
-事件儲存在資料庫表格中。 行銷活動會使用它來鎖定客戶，並使用觸發器豐富電子郵件。
+事件儲存在資料庫表格中。行銷活動會使用它來鎖定客戶，並使用觸發器豐富電子郵件。
 雖然每個觸發器可以有不同的資料結構，但所有觸發器都可儲存在單一表格中。
 triggerType欄位會識別觸發資料來源的來源。
 
@@ -244,7 +246,7 @@ triggerType欄位會識別觸發資料來源的來源。
 調解是將客戶從Adobe Analytics對應到Adobe Campaign資料庫的程式。 例如，相符的標準可以是shopper_id。
 
 基於效能考量，相符必須由工作流程以批次模式完成。
-頻率必須設定為15分鐘以最佳化工作負載。 因此，在Adobe Campaign中接收事件與行銷工作流程處理事件之間的延遲最長為15分鐘。
+頻率必須設定為15分鐘以最佳化工作負載。因此，在Adobe Campaign中接收事件與行銷工作流程處理事件之間的延遲最長為15分鐘。
 
 ### JavaScript中用於單元協調的選項 {#options-unit-reconciliation}
 
@@ -259,4 +261,4 @@ triggerType欄位會識別觸發資料來源的來源。
 ### 行銷活動工作流程 {#campaign-workflow}
 
 觸發行銷活動工作流程通常與其他已使用的週期性行銷活動類似。
-例如，它可以從對最後一天期間尋找特定事件的觸發器的查詢開始。 該目標用於傳送電子郵件。 擴充功能或資料可以來自觸發器。 行銷人員可以安全地使用它，因為它不需要設定。
+例如，它可以從對最後一天期間尋找特定事件的觸發器的查詢開始。該目標用於傳送電子郵件。擴充功能或資料可以來自觸發器。行銷人員可以安全地使用它，因為它不需要設定。

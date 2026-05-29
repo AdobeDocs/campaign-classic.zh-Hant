@@ -8,10 +8,16 @@ audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: b70ca220-1c81-4b23-b07a-a2cd694877fe
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+feature_v2: []
+subfeature_v2:
+  - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+  - id: df0d6518-6f49-46e2-b46e-3bcc513f553f
+  - id: eb007b6d-6e57-46ab-9485-3f24d6102304
+  - id: b1fd1501-3105-4d6b-b4d4-9af53126df75
+source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: '380'
-ht-degree: 11%
+source-wordcount: 349
+ht-degree: 12%
 
 ---
 
@@ -19,8 +25,8 @@ ht-degree: 11%
 
 >[!IMPORTANT]
 >
->作為Campaign託管或受管理的服務使用者，您的Adobe IMS實作屬於Adobe。 以下所述的步驟僅適用於內部部署和混合客戶。
-> Adobe IMS實作只能由Adobe技術管理員執行。 請聯絡您的Adobe代表，以開始實作程式。
+>作為Campaign託管或受管理的服務使用者，您的Adobe IMS實作屬於Adobe。以下所述的步驟僅適用於內部部署和混合客戶。
+> Adobe IMS實作只能由Adobe技術管理員執行。請聯絡您的Adobe代表，以開始實作程式。
 
 ## 先決條件 {#prerequisites}
 

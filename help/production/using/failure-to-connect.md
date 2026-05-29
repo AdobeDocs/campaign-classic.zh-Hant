@@ -14,7 +14,11 @@ product_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+feature_v2: []
+subfeature_v2:
+  - id: c03a11ff-bdf9-4e5b-b279-f468b4293464
+  - id: e519a22f-a06a-42fc-9d09-d78a3ab2c434
+source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
 source-wordcount: 417
 ht-degree: 9%
@@ -66,7 +70,7 @@ ht-degree: 9%
 </tr>
 <tr>
 <td>檢查安全性區域的一般設定。</td>
-<td>如需設定安全性區域的詳細資訊，請參閱<a href="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configuring-campaign-server.html?lang=zh-Hant#configuring-campaign-server"/>本節。</a></td>
+<td>如需設定安全性區域的詳細資訊，請參閱<a href="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configuring-campaign-server.html#configuring-campaign-server"/>本節。</a></td>
 </tr>
 <tr>
 <td>命令nlserver pdump傳回<b>沒有工作</b></td>

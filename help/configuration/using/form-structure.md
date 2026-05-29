@@ -16,9 +16,10 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+subfeature_v2: []
+source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 2411
+source-wordcount: 2407
 ht-degree: 0%
 
 ---
@@ -197,7 +198,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->**style=&quot;down|up**（依預設）**&quot;**&#x200B;功能會強制將索引標籤垂直定位在控制項下方或上方。 此功能為選用。
+>**style=&quot;down|up**（依預設）**&quot;**&#x200B;功能會強制將索引標籤垂直定位在控制項下方或上方。此功能是選用的。
 >`<container style="down" type="notebook">  … </container>`
 
 #### 圖示清單 {#icon-list}

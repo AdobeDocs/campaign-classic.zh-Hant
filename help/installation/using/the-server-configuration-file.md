@@ -16,9 +16,10 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+subfeature_v2: []
+source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 8103
+source-wordcount: 8061
 ht-degree: 8%
 
 ---
@@ -549,7 +550,7 @@ Adobe Campaign的整體組態定義於位於安裝目錄&#x200B;**conf**&#x200B;
 
 >[!NOTE]
 >
->**nameSevers**&#x200B;上的備註：預設使用網路>在Windows中宣告的第一個網路介面的引數>未定義於UNIX。 定義網域名稱伺服器(DNS)>MTA用來取得宣告給的郵件交換器>網域。
+>**nameSevers**&#x200B;上的備註：預設會使用在Windows>中宣告的第一個網路介面的network>引數（未定義於UNIX）。定義MTA用來取得Mail Exchange宣告給>網域的網域名稱伺服器(DNS)>。
 >
 >如果未定義此值，MTA會在主機網路設定中尋找此資訊。 如果可能有數個DNS，不同的DNS位址必須以逗號分隔（例如： 212.155.207.1，212.155.207.2）。 如果您的傳送伺服器具有數個網路介面，則MTA使用的DNS清單是第一個清單。 在此情況下，建議您指定&#x200B;**nameServer**&#x200B;引數以避免任何模稜兩可。
 
@@ -1630,10 +1631,10 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
    <td> statServerAddress<br /> </td> 
    <td> 傳遞統計伺服器的位址，指定為 
     &lt;dns或ip&gt; 
-      <code>&lbrack;</code>: 
+      <code>&lbrack;</code>： 
      &lt;連線埠&gt; 
-       <code>&rbrack;</code>. 查看 
-      <a href="../../installation/using/email-deliverability.md#coordinates-of-the-statistics-server" target="_blank">統計伺服器</a>的座標。 
+       <code>&rbrack;</code>。另請參閱 
+      <a href="../../installation/using/email-deliverability.md#coordinates-of-the-statistics-server" target="_blank">統計伺服器的座標</a>。 
       <br /> 
      </td> 
    <td> 字串<br /> </td> 
