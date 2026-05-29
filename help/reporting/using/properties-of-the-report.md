@@ -6,10 +6,17 @@ badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v
 feature: Reporting, Monitoring
 exl-id: dfa9d329-1086-4f6d-9d03-df159cad5495
 TQID: https://experienceleague.adobe.com/NAcXKBNoDJRopQf-QpqnFhwxFRvvScp7xShJotE0s1A
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
-feature_v2: id: c309ee4e-82e4-4f7e-b608-ef345678c34e
-subfeature_v2: id: b3a4149f-2b3a-44d1-894e-e3ac4c77fb47id: cfda811a-e413-43a4-adf0-7370888f5cfcid: afe938ea-bc18-44a4-a3fb-03e1031466cb
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
+feature_v2:
+  - id: c309ee4e-82e4-4f7e-b608-ef345678c34e
+subfeature_v2:
+  - id: b3a4149f-2b3a-44d1-894e-e3ac4c77fb47
+  - id: cfda811a-e413-43a4-adf0-7370888f5cfc
+  - id: afe938ea-bc18-44a4-a3fb-03e1031466cb
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
 source-wordcount: 440
@@ -25,7 +32,7 @@ ht-degree: 3%
 
 ![](assets/s_ncs_advuser_report_properties_01.png)
 
-一般屬性說明如下。 在&#x200B;**[!UICONTROL Parameters]**、**[!UICONTROL Variables]**&#x200B;和&#x200B;**[!UICONTROL Scripts]**&#x200B;索引標籤中設定的進階功能在此區段](../../reporting/using/advanced-functionalities.md)中說明[。
+一般屬性說明如下。 在&#x200B;**[!UICONTROL Parameters]**、**[!UICONTROL Variables]**&#x200B;和&#x200B;**[!UICONTROL Scripts]**&#x200B;索引標籤中設定的進階功能在此區段[&#128279;](../../reporting/using/advanced-functionalities.md)中說明。
 
 ## 一般屬性 {#overall-properties}
 
@@ -51,7 +58,7 @@ ht-degree: 3%
 
 * **[!UICONTROL Anonymous access]**：此選項可啟用報表的無限制存取。 但是，無法進行任何操作。
 
-  「webapp」技術運運算元的許可權用於顯示報表元素。 在本節](../../platform/using/access-management-operators.md)瞭解更多[。
+  「webapp」技術運運算元的許可權用於顯示報表元素。 在本節[&#128279;](../../platform/using/access-management-operators.md)瞭解更多。
 
 * **[!UICONTROL Access control]**：此選項可讓Adobe Campaign運運算元在登入後存取它。
 * **[!UICONTROL Specific account]**：此選項可讓您使用在&#x200B;**[!UICONTROL Operator]**&#x200B;欄位中選取之運運算元的許可權來執行報告。

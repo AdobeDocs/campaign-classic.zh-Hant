@@ -8,11 +8,21 @@ feature: Approvals, Campaigns
 hide: true
 exl-id: 8cbb2445-f5e4-4a25-ba7e-56e39ca9d3ce
 TQID: https://experienceleague.adobe.com/xRSXwdwAWrtY5l-khF8ewhOZR9IUvTl3aWLO3eb-6cw
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616aid: c5474392-5419-4296-9e41-f6f4ce4f6e9bid: afa4204e-6d08-4e29-bc35-26aafb656d48
-subfeature_v2: id: e3988c18-3cfa-4f16-b812-ac2d2b1056faid: f863efa9-030c-4466-a2b8-a52aea6b722c
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080bid: e0eb8757-182f-49f3-94a4-1587d16f5094id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2:
+  - id: a075b2c1-7748-4328-b7f6-343aa314616a
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+  - id: afa4204e-6d08-4e29-bc35-26aafb656d48
+subfeature_v2:
+  - id: e3988c18-3cfa-4f16-b812-ac2d2b1056fa
+  - id: f863efa9-030c-4466-a2b8-a52aea6b722c
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
 source-wordcount: 2672
@@ -55,7 +65,7 @@ ht-degree: 0%
 
 可以為行銷活動範本、為每個個別行銷活動或傳遞啟用核准。
 
-已在行銷活動範本中選取所有需要核准的工作（**[!UICONTROL Properties]** > **[!UICONTROL Advanced campaign settings...]** > **[!UICONTROL Approvals]**&#x200B;索引標籤）。 除非停用此選項，否則在此也會選取負責核准的操作者並接收通知。 如需詳細資訊，請參閱核准傳遞](#approving-processes)的[步驟。
+已在行銷活動範本中選取所有需要核准的工作（**[!UICONTROL Properties]** > **[!UICONTROL Advanced campaign settings...]** > **[!UICONTROL Approvals]**&#x200B;索引標籤）。 除非停用此選項，否則在此也會選取負責核准的操作者並接收通知。 如需詳細資訊，請參閱核准傳遞[&#128279;](#approving-processes)的步驟。
 
 可針對使用此範本建立的每個行銷活動覆寫這些設定，也可針對每個行銷活動傳遞覆寫這些設定：按一下「**[!UICONTROL Properties]**」按鈕，然後按一下「**[!UICONTROL Approvals]**」標籤。
 

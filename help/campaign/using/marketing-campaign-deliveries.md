@@ -7,11 +7,19 @@ feature: Campaigns, Resource Management, Cross Channel Orchestration
 hide: true
 exl-id: 1dd3c080-444d-45f8-9562-d2d01a9d2860
 TQID: https://experienceleague.adobe.com/1fiKNiq5Q2q4cN-wCMLSnZdW-IDA-bw6KwJGhSJYZkY
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616aid: c5474392-5419-4296-9e41-f6f4ce4f6e9bid: afa4204e-6d08-4e29-bc35-26aafb656d48
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-subfeature_v2: id: f863efa9-030c-4466-a2b8-a52aea6b722c
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2:
+  - id: a075b2c1-7748-4328-b7f6-343aa314616a
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+  - id: afa4204e-6d08-4e29-bc35-26aafb656d48
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+subfeature_v2:
+  - id: f863efa9-030c-4466-a2b8-a52aea6b722c
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
 source-wordcount: 1511
@@ -25,7 +33,7 @@ ht-degree: 1%
 
 從行銷活動建立傳遞時，會連結至此行銷活動，並在行銷活動層級合併。
 
-![](assets/do-not-localize/how-to-video.png)[在影片中探索此功能](#create-email-video)
+![](assets/do-not-localize/how-to-video.png) [在影片中探索此功能](#create-email-video)
 
 ## 建立傳遞 {#creating-deliveries}
 
@@ -122,7 +130,7 @@ ht-degree: 1%
 
 ## 管理相關檔案 {#managing-associated-documents}
 
-您可以將各種檔案與行銷活動建立關聯：報告、照片、網頁、圖表等。這些檔案可以是任何格式（Microsoft Word、PowerPoint、PNG、JPG、Acrobat PDF等）。 在本節](../../campaign/using/marketing-campaign-assets.md)中瞭解如何將檔案與行銷活動[連結。
+您可以將各種檔案與行銷活動建立關聯：報告、照片、網頁、圖表等。這些檔案可以是任何格式（Microsoft Word、PowerPoint、PNG、JPG、Acrobat PDF等）。 在本節[&#128279;](../../campaign/using/marketing-campaign-assets.md)中瞭解如何將檔案與行銷活動連結。
 
 >[!IMPORTANT]
 >

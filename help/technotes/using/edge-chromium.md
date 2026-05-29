@@ -5,10 +5,13 @@ description: Campaign - Edge Chromium
 feature: Technote, Upgrade
 exl-id: 22f4cbaf-ca37-47b9-b7dd-1ee73d5b348d
 TQID: https://experienceleague.adobe.com/6CrzuBxAxGlXi08NxwdnigO2bNu700luLxnz-3KzZ18
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
-topic_v2: id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+topic_v2:
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 feature_v2: []
-subfeature_v2: id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+subfeature_v2:
+  - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
 source-wordcount: 274
@@ -22,7 +25,7 @@ ht-degree: 10%
 
 Microsoft Internet Explorer 11生命週期結束後，使用者端主控台中控制面板的HTML轉譯引擎使用Edge Chromium，從Campaign Classic v7.3開始。
 
-除了安裝Microsoft Edge Webview 2執行階段（現在任何使用者端主控台安裝](../../installation/using/installing-the-client-console.md#webview)都需要[）之外，您必須在執行個體上啟用Microsoft Edge Chromium。
+除了安裝Microsoft Edge Webview 2執行階段（現在任何使用者端主控台安裝[&#128279;](../../installation/using/installing-the-client-console.md#webview)都需要）之外，您必須在執行個體上啟用Microsoft Edge Chromium。
 
 >[!NOTE]
 >
