@@ -77,7 +77,7 @@ Campaign 使用者透過 Adobe 身分管理系統 (IMS)，使用其 Adobe ID 連
 
 ![](assets/s_ncs_user_connections_management.png)
 
-在[Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/connect#create-your-connection){target=_blank}中瞭解如何設定連線。
+在[Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/new/connect#create-your-connection){target=_blank}中瞭解如何設定連線。
 
 ## 操作者和許可 {#operators-and-permissions}
 

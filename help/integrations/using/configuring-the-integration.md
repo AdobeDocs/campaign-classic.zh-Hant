@@ -43,7 +43,7 @@ ht-degree: 4%
 1. [設定外部帳戶](#configure-the-external-account)
 1. [設定AEM資源篩選](#configure-aem-resources-filtering)
 
-適用於進階設定，例如管理個人化欄位和區塊。 請參閱Adobe Experience Manager [檔案](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/campaignonpremise.html)。
+適用於進階設定，例如管理個人化欄位和區塊。 請參閱Adobe Experience Manager [檔案](https://helpx.adobe.com/tw/experience-manager/6-5/sites/administering/using/campaignonpremise.html)。
 
 ### 在Adobe Campaign中安裝AEM整合套件 {#install-the-aem-integration-package-in-adobe-campaign}
 
@@ -134,7 +134,7 @@ ht-degree: 4%
 
 1. 設定&#x200B;**復寫**&#x200B;以從AEM編寫執行個體復寫至AEM發佈執行個體。
 
-   若要瞭解如何設定復寫，請參閱Adobe Experience Manager [檔案](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/replication.html)。
+   若要瞭解如何設定復寫，請參閱Adobe Experience Manager [檔案](https://helpx.adobe.com/tw/experience-manager/6-5/sites/deploying/using/replication.html)。
 
 1. 透過設定專用的&#x200B;**Adobe Experience Manager**&#x200B;將Cloud Service連線到Adobe Campaign。
 
