@@ -138,8 +138,8 @@ ht-degree: 4%
 
 1. 透過設定專用的&#x200B;**Adobe Experience Manager**&#x200B;將Cloud Service連線到Adobe Campaign。
 
-   若要瞭解如何透過Cloud Services連結這兩個解決方案，請參閱Adobe Experience Manager [檔案](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/campaignonpremise.html#ConfiguringAdobeExperienceManager) 。
+   若要瞭解如何透過Cloud Services連結這兩個解決方案，請參閱Adobe Experience Manager [檔案](https://helpx.adobe.com/tw/experience-manager/6-5/sites/administering/using/campaignonpremise.html#ConfiguringAdobeExperienceManager) 。
 
 1. 設定&#x200B;**外部化器服務**。
 
-   若要瞭解如何進行設定，請參閱Adobe Experience Manager [檔案](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/externalizer.html)。
+   若要瞭解如何進行設定，請參閱Adobe Experience Manager [檔案](https://helpx.adobe.com/tw/experience-manager/6-5/sites/developing/using/externalizer.html)。

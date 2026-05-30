@@ -33,7 +33,7 @@ Adobe Campaign可讓您以文字、CSV、TAB或XML格式，從一或多個檔案
 
 >[!NOTE]
 >
->您可以使用&#x200B;**[!UICONTROL Import a list]**&#x200B;函式，匯入資料時不必與資料庫資料對應。 然後可透過&#x200B;**[!UICONTROL Read list]**&#x200B;物件將資料僅用於工作流程中。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/read-list.html){target="_blank"}。
+>您可以使用&#x200B;**[!UICONTROL Import a list]**&#x200B;函式，匯入資料時不必與資料庫資料對應。 然後可透過&#x200B;**[!UICONTROL Read list]**&#x200B;物件將資料僅用於工作流程中。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/read-list.html?lang=zh-Hant){target="_blank"}。
 
 匯入助理可以讓您設定匯入、定義其選項（例如資料轉換）並啟動執行。 它是一系列屏幕，其內容取決於匯入類型 (簡單或多個) 和操作員權限。
 
