@@ -69,7 +69,7 @@ Adobe Campaign也提供[工具](../../production/using/monitoring-processes.md#m
   >
   >傳遞能力團隊的參與是以合約為基礎，客戶應聯絡其Adobe代表，瞭解與傳遞能力參與相關的資訊。
 
-* DKIM：為了確保DKIM的安全性等級，建議的最佳實務加密大小為1024b。 大部分存取提供者不會將下層DKIM金鑰視為有效。 請參見[此頁面](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication)。
+* DKIM：為了確保DKIM的安全性等級，建議的最佳實務加密大小為1024b。 大部分存取提供者不會將下層DKIM金鑰視為有效。 請參見[此頁面](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=zh-Hant#authentication)。
 
 ## 傳遞能力問題 {#deliverability-issues}
 

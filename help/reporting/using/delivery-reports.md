@@ -171,7 +171,7 @@ ht-degree: 9%
 本節提供兩種指標：
 
 * **[!UICONTROL Initial population]** ：傳遞鎖定的收件者總數。
-* **[!UICONTROL Messages rejected by the rule]** ：套用型別規則時，分析期間忽略的地址數：地址遺失、隔離、封鎖清單上等。如需型別規則的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html){target="_blank"}。
+* **[!UICONTROL Messages rejected by the rule]** ：套用型別規則時，分析期間忽略的地址數：地址遺失、隔離、封鎖清單上等。如需型別規則的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html?lang=zh-Hant){target="_blank"}。
 
 **[!UICONTROL Causes of exclusion]**
 
