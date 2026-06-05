@@ -22,9 +22,9 @@ subfeature_v2:
   - id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 376
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 76%
 >
 > 用戶端主控台升級為強制。
 
-_2026年3月31日_
+_2026 年 3 月 31 日_
 
 ### 安全性改善 {#security-7-4-3}
 
@@ -50,7 +50,7 @@ _2026年3月31日_
 
 >[!NOTE]
 >
-> 下列修正專案已逐步在後續的7.4.3版本編號中推出。 導覽至&#x200B;**[!UICONTROL Help > About...]** [功能表](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)，檢查您是否擁有最新的9394@28aaec9組建。 如需詳細資訊，請聯絡您的Adobe代表。
+> 下列修正程式已逐步在後續的 7.4.3 版本中推出。瀏覽至&#x200B;**[!UICONTROL Help > About...]** [功能表](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)，檢查您是否擁有最新的 9394@28aaec9 版本。如需詳細資訊，請聯絡您的 Adobe 代表。
 
 * 修正了條碼元件允許不受限制的高度參數的問題，因為這可能會造成安全性弱點。 (NEO-89984)
 * 修正了透過工作流程建立的清單中，列舉欄位缺少臨時名稱屬性的問題，因為這會導致介面中顯示不正確或空白列舉標籤。 (NEO-91158)
@@ -63,8 +63,8 @@ _2026年3月31日_
 <!-- BUILD 7.0.9394.28aaec9 -->
 
 * 修正了某些傳送的傳送統計資料未完全重新計算的問題，尤其是會影響成功指標。 (NEO-88106) <!-- moved from original 7.4.3 GA Fixes section -->
-* 修正開啟某些參考缺少上游目標定位結構描述的工作流程時，使用者端主控台可能當機的問題。 (NEO-28727)
-* 修正了在啟動失敗後無法識別使用者端主控台版本的問題，因為安裝套件中缺少版本檔案。 (NEO-94798)
+* 修正了開啟某些參考缺失上游目標定位結構描述的工作流程時，用戶端主控台可能當機的問題。(NEO-28727)
+* 修正了在啟動失敗後無法識別用戶端主控台版本的問題，因為安裝套件中缺少版本檔案。(NEO-94798)
 
 <!--
 other fixes - ommitted from release notes
