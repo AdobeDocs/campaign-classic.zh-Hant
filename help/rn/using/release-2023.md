@@ -8,27 +8,16 @@ level: Beginner
 hide: true
 exl-id: 8ed11e96-9f23-4e2e-bae2-25c51cfb549a
 TQID: https://experienceleague.adobe.com/77yWdkBQIi4XnEr8ZqBuz-2Vm0vg07AQxgI2wh6B150
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a075b2c1-7748-4328-b7f6-343aa314616a
-  - id: b12f6872-9271-4369-85e5-86969a0b99a2
-  - id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
-subfeature_v2:
-  - id: cfc95e9b-b035-4403-a6a9-b27a8a053a37
-  - id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405
-  - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616aid: b12f6872-9271-4369-85e5-86969a0b99a2id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
+subfeature_v2: id: cfc95e9b-b035-4403-a6a9-b27a8a053a37id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080bid: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 2384
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -61,7 +50,7 @@ _2023 年 12 月 5 日_
 * 修正資料庫清理工作流程中，在傳遞校樣之前刪除傳遞時所發生的錯誤。 (NEO-48114)
 * 修正連線至用戶端主控台時的問題：最近 TLS 驗證更新導致連線錯誤。 (NEO-50488)
 * 修正了 Campaign 升級至 7.3.1 後 HTTP Proxy 驗證的問題。 行銷活動工作流程中的 HTTP 請求失敗，因為`error 407 – proxy auth required is returned`。 (NEO-49624)
-* 修正&#x200B;**指令碼**&#x200B;工作流程活動中GPG解密的間歇性失敗。相關的錯誤訊息為： `gpg: decryption failed: No secret key`。(NEO-50257)
+* 修正了&#x200B;**指令碼**&#x200B;工作流程活動中 GPG 解密的間歇性失敗。相關錯誤訊息為：`gpg: decryption failed: No secret key`。(NEO-50257)
   <!--* Workflow temporary tables now have a primary index in Teradata with a Federated Data Access (FDA) connection. (NEO-62575)-->
 
 
@@ -190,7 +179,7 @@ _2022 年 11 月 21 日_
 
 * Microsoft Internet Explorer 11 生命週期結束後，用戶端主控台中的儀表板轉譯引擎現在使用 Edge Chromium。 (NEO-20741)
 
-瞭解更多與[&#x200B; Campaign 相容性矩陣相關的資訊](../../rn/using/compatibility-matrix.md#RDBMSservers)。
+瞭解更多與[ Campaign 相容性矩陣相關的資訊](../../rn/using/compatibility-matrix.md#RDBMSservers)。
 
 >[!CAUTION]
 >
