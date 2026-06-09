@@ -21,10 +21,10 @@ feature_v2: []
 subfeature_v2:
   - id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: ht
-source-wordcount: 376
-ht-degree: 100%
+source-git-commit: a35dcdddded4483beefc126ee3d603bab36bf9c9
+workflow-type: tm+mt
+source-wordcount: 415
+ht-degree: 93%
 
 ---
 
@@ -32,9 +32,19 @@ ht-degree: 100%
 
 本頁面列出&#x200B;**最新 Campaign Classic v7 版本**&#x200B;的新功能、改善和修正。 每個新版本都會提供以顏色具體化的狀態。 請於[本頁](rn-overview.md)進一步了解 Campaign Classic v7 版本編號狀態。
 
-## 版本 7.4.3 - 版本編號 9394 {#release-7-4-3}
+## 版本7.4.3 {#release-7-4-3}
+
+### 建置9396 {#build-9396}
 
 [!BADGE 一般可用性]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="一般可用性"}
+
+_2026年6月9日_
+
+此版本編號包含安全性修正。 此為建議的一般可用性版本，並取代先前的Campaign Classic v7版本。
+
+### 建置9394 {#build-9394}
+
+[!BADGE 已棄用]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="已棄用"}
 
 >[!CAUTION]
 >
@@ -42,15 +52,15 @@ ht-degree: 100%
 
 _2026 年 3 月 31 日_
 
-### 安全性改善 {#security-7-4-3}
+#### 安全性改善 {#security-7-4-3}
 
 * 為了維持最佳的安全性、穩定性和合規性，Debian 已升級至版本 13，而 PostgreSQL 已升級至版本 17。 請參閱[相容性矩陣](compatibility-matrix.md)。
 
-### 修正 {#fixes-7-4-3}
+#### 修正 {#fixes-7-4-3}
 
 >[!NOTE]
 >
-> 下列修正程式已逐步在後續的 7.4.3 版本中推出。瀏覽至&#x200B;**[!UICONTROL Help > About...]** [功能表](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)，檢查您是否擁有最新的 9394@28aaec9 版本。如需詳細資訊，請聯絡您的 Adobe 代表。
+> 下列修正程式已逐步在後續的 7.4.3 版本中推出。 瀏覽至&#x200B;**[!UICONTROL Help > About...]** [功能表](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)，檢查您是否擁有最新的 9394@28aaec9 版本。 如需詳細資訊，請聯絡您的 Adobe 代表。
 
 * 修正了條碼元件允許不受限制的高度參數的問題，因為這可能會造成安全性弱點。 (NEO-89984)
 * 修正了透過工作流程建立的清單中，列舉欄位缺少臨時名稱屬性的問題，因為這會導致介面中顯示不正確或空白列舉標籤。 (NEO-91158)
@@ -63,8 +73,8 @@ _2026 年 3 月 31 日_
 <!-- BUILD 7.0.9394.28aaec9 -->
 
 * 修正了某些傳送的傳送統計資料未完全重新計算的問題，尤其是會影響成功指標。 (NEO-88106) <!-- moved from original 7.4.3 GA Fixes section -->
-* 修正了開啟某些參考缺失上游目標定位結構描述的工作流程時，用戶端主控台可能當機的問題。(NEO-28727)
-* 修正了在啟動失敗後無法識別用戶端主控台版本的問題，因為安裝套件中缺少版本檔案。(NEO-94798)
+* 修正了開啟某些參考缺失上游目標定位結構描述的工作流程時，用戶端主控台可能當機的問題。 (NEO-28727)
+* 修正了在啟動失敗後無法識別用戶端主控台版本的問題，因為安裝套件中缺少版本檔案。 (NEO-94798)
 
 <!--
 other fixes - ommitted from release notes

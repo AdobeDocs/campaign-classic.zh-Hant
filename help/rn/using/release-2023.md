@@ -25,9 +25,9 @@ level_v2:
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: ht
-source-wordcount: 2384
+source-git-commit: c372a3d67ec413fa8cf9fdbb4530762a8f2f5177
+workflow-type: tm+mt
+source-wordcount: 2376
 ht-degree: 100%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 100%
 
 ## 版本 7.3.5 - 版本編號 9368 {#release-7-3-5}
 
-[!BADGE 有限可用性]{type=Informative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="有限可用性"}
+[!BADGE 已棄用]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="已棄用"}
 
 _2023 年 12 月 5 日_
 
@@ -69,7 +69,7 @@ _2023 年 12 月 5 日_
 
 ## 版本 7.3.4 - 版本編號 9364 {#release-7-3-4}
 
-[!BADGE 有限可用性]{type=Informative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="有限可用性"}
+[!BADGE 已棄用]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="已棄用"}
 
 
 >[!CAUTION]
@@ -139,7 +139,7 @@ _2023 年 9 月 7 日_
 
 ## 版本 7.3.3 - 版本編號 9359 {#release-7-3-3}
 
-[!BADGE 有限可用性]{type=Informative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="有限可用性"}
+[!BADGE 已棄用]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="已棄用"}
 
 >[!AVAILABILITY]
 >
@@ -175,7 +175,7 @@ _2023 年 3 月 20 日_
 
 ## 版本 7.3.2 - 版本編號 9356 {#release-7-3-2}
 
-[!BADGE 有限可用性]{type=Informative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="有限可用性"}
+[!BADGE 已棄用]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="已棄用"}
 
 
 >[!AVAILABILITY]
