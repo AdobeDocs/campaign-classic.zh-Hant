@@ -18,10 +18,10 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: a35dcdddded4483beefc126ee3d603bab36bf9c9
+source-git-commit: 50418c4e818f04008a5d47a982fa5bb0185bd597
 workflow-type: tm+mt
-source-wordcount: 330
-ht-degree: 93%
+source-wordcount: 347
+ht-degree: 84%
 
 ---
 
@@ -128,4 +128,4 @@ Android Firebase Cloud Messaging (FCM) 服務的一些重要變更將於 2024 �
 
 ## 額外資源
 
-[錯誤訊息清單](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=zh-Hant) - [Adobe Campaign 產品說明](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} - [相容性矩陣](rn/using/compatibility-matrix.md) - [教學課程](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant){target="_blank"} - [Campaign 控制面板](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=zh-Hant){target="_blank"}
+[錯誤訊息清單](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=zh-Hant) - [Adobe Campaign產品說明](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} - [相容性矩陣](rn/using/compatibility-matrix.md) - [教學課程](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant){target="_blank"} - [促銷活動控制面板](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=zh-Hant){target="_blank"} - [電子郵件追蹤畫素和CNIL指引](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/new/cnil-pixel-tracking){target="_blank"}
