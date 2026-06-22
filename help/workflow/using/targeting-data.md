@@ -19,7 +19,7 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+source-git-commit: c35995a47788db080636c66827a4bd6dc98806cf
 workflow-type: tm+mt
 source-wordcount: 1931
 ht-degree: 4%
@@ -273,3 +273,4 @@ ht-degree: 4%
 * **[!UICONTROL Enrichment]**&#x200B;活動可讓您暫時將欄新增至結構描述，以及將資訊新增至特定元素。 它在活動存放庫的[擴充](enrichment.md)區段中詳細說明。
 * **[!UICONTROL Edit schema]**&#x200B;活動可讓您修改結構描述的結構。 活動存放庫的[編輯結構描述](edit-schema.md)區段中會詳細說明此專案。
 * **[!UICONTROL Change dimension]**&#x200B;活動可讓您在目標建構週期中變更目標維度。 在[變更維度](change-dimension.md)區段中會詳細說明。
+

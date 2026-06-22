@@ -13,7 +13,7 @@ subfeature_v2:
   - id: ee25c34b-ea50-427b-9369-ba0a160f7d70
   - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
   - id: d1110311-2ca4-442b-be37-088a6db845ee
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+source-git-commit: c35995a47788db080636c66827a4bd6dc98806cf
 workflow-type: tm+mt
 source-wordcount: 1284
 ht-degree: 2%
@@ -226,3 +226,4 @@ ht-degree: 2%
 核准記錄檔的&#x200B;**[!UICONTROL Targeted]**&#x200B;索引標籤會顯示目標收件者的清單及其核准狀態。 您可以視需要變更此狀態。
 
 ![](assets/local_validation_admin_6.png)
+

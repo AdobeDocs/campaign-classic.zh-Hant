@@ -23,7 +23,7 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+source-git-commit: c35995a47788db080636c66827a4bd6dc98806cf
 workflow-type: tm+mt
 source-wordcount: 2672
 ht-degree: 0%
@@ -394,3 +394,4 @@ ht-degree: 0%
 您可以檢視擷取檔案的內容（按一下其名稱）、核准該檔案，或視需要變更格式，然後使用控制面板上的連結來重新啟動擷取。
 
 一旦檔案獲得核准，您就可以將通知電子郵件傳送給路由器。 如需詳細資訊，請參閱[開始離線傳遞](../../campaign/using/marketing-campaign-deliveries.md#starting-an-offline-delivery)。
+

@@ -13,7 +13,7 @@ subfeature_v2:
   - id: ee25c34b-ea50-427b-9369-ba0a160f7d70
   - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
   - id: d1110311-2ca4-442b-be37-088a6db845ee
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+source-git-commit: c35995a47788db080636c66827a4bd6dc98806cf
 workflow-type: tm+mt
 source-wordcount: 192
 ht-degree: 1%
@@ -39,3 +39,4 @@ ht-degree: 1%
 * 舉例來說，若地區設定設為&#39;Français&#39;： **s**&#x200B;代表秒數，**mn**&#x200B;代表分鐘，**h**&#x200B;代表小時，**j**&#x200B;代表天，**m**&#x200B;代表月，**a**&#x200B;代表年。 在核準時，值會自動轉換為最易讀的單位，如上述範例中的&#x200B;**90s**&#x200B;已轉換為&#x200B;**1mn 30s**。
 
   預設單位是日(**d**)。
+
