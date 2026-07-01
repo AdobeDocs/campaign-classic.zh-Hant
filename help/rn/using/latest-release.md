@@ -7,24 +7,16 @@ role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 TQID: https://experienceleague.adobe.com/Xq9y8r6xU-hypq1Eeo9ijaiGng7qqkWVqiCXW5fYx2c
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: d095671a-1355-40aa-8b5f-06c33c68080bid: e0eb8757-182f-49f3-94a4-1587d16f5094
 feature_v2: []
-subfeature_v2:
-  - id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405
-  - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
-source-git-commit: a35dcdddded4483beefc126ee3d603bab36bf9c9
+subfeature_v2: id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+source-git-commit: a9e48513ed4ceb2650d0eeff18563a010a148c80
 workflow-type: tm+mt
-source-wordcount: 415
-ht-degree: 93%
+source-wordcount: 498
+ht-degree: 81%
 
 ---
 
@@ -34,13 +26,37 @@ ht-degree: 93%
 
 ## 版本7.4.3 {#release-7-4-3}
 
-### 建置9396 {#build-9396}
+### 建置9397 {#build-9397}
 
 [!BADGE 一般可用性]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="一般可用性"}
 
-_2026年6月9日_
+_2026年6月30日_
+
+#### 安全性改善 {#security-7-4-3-9397}
 
 此版本編號包含安全性修正。 此為建議的一般可用性版本，並取代先前的Campaign Classic v7版本。
+
+#### 其他變更 {#changes-7-4-3-9397}
+
+依預設，webForm.jsp現在會忽略使用者端提供的`ctx`引數。 這是由`disableCtxInWebForm`引數所控制，其預設設定為「true」。
+
+如果您的WebForm要求目前傳入了`ctx`引數，您可以將下列專案新增至 <web> 個元素（屬於config） — <instance>.xml檔案。 計畫逐步淘汰此使用方式。
+
+```
+<web>
+  ...
+  <jsp disableCtxInWebForm="false" />
+  ...
+</web>
+```
+
+### 建置9396 {#build-9396}
+
+[!BADGE 已棄用]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="已棄用"}
+
+_2026年6月9日_
+
+此版本編號包含安全性修正。
 
 ### 建置9394 {#build-9394}
 
