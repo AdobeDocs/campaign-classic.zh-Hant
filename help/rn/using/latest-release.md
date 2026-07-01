@@ -21,10 +21,10 @@ feature_v2: []
 subfeature_v2:
   - id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
-source-git-commit: a35dcdddded4483beefc126ee3d603bab36bf9c9
+source-git-commit: a9e48513ed4ceb2650d0eeff18563a010a148c80
 workflow-type: tm+mt
-source-wordcount: 415
-ht-degree: 93%
+source-wordcount: 498
+ht-degree: 81%
 
 ---
 
@@ -34,13 +34,37 @@ ht-degree: 93%
 
 ## 版本7.4.3 {#release-7-4-3}
 
-### 建置9396 {#build-9396}
+### 建置9397 {#build-9397}
 
 [!BADGE 一般可用性]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="一般可用性"}
 
-_2026年6月9日_
+_2026年6月30日_
+
+#### 安全性改善 {#security-7-4-3-9397}
 
 此版本編號包含安全性修正。 此為建議的一般可用性版本，並取代先前的Campaign Classic v7版本。
+
+#### 其他變更 {#changes-7-4-3-9397}
+
+依預設，webForm.jsp現在會忽略使用者端提供的`ctx`引數。 這是由`disableCtxInWebForm`引數所控制，其預設設定為「true」。
+
+如果您的WebForm要求目前傳入了`ctx`引數，您可以將下列專案新增至 &lt;web> 個元素（屬於config） — &lt;instance>.xml檔案。 計畫逐步淘汰此使用方式。
+
+```
+<web>
+  ...
+  <jsp disableCtxInWebForm="false" />
+  ...
+</web>
+```
+
+### 建置9396 {#build-9396}
+
+[!BADGE 已棄用]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="已棄用"}
+
+_2026年6月9日_
+
+此版本編號包含安全性修正。
 
 ### 建置9394 {#build-9394}
 
