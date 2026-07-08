@@ -13,9 +13,9 @@ product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
 feature_v2: []
 subfeature_v2: []
-source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
+source-git-commit: d711ea40185e9860ea20773ae1dfebfc7cc3e4d0
 workflow-type: tm+mt
-source-wordcount: 1145
+source-wordcount: 1152
 ht-degree: 3%
 
 ---
@@ -42,7 +42,7 @@ Adobe Campaign隨附&#x200B;**nlserver**&#x200B;套件，其中包含指定版�
 
 >[!AVAILABILITY]
 >
->從 v7.4.1 版開始，Campaign 不再包含 RPM Linux 套件的 XML 資料庫。 您必須安裝這些程式庫。
+>從 v7.4.1 版開始，Campaign 不再包含 RPM Linux 套件的 XML 資料庫。 您必須安裝&#x200B;**xalan-c** （可從`epel-release`取得），這是必要步驟。 [了解更多](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#libraries)
 > 
 
 若要將Adobe Campaign安裝在RPM (RHEL、CentOS)作業系統上，請執行下列步驟：
