@@ -26,8 +26,8 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: c372a3d67ec413fa8cf9fdbb4530762a8f2f5177
-workflow-type: tm+mt
-source-wordcount: 2376
+workflow-type: ht
+source-wordcount: 2383
 ht-degree: 100%
 
 ---
@@ -61,8 +61,7 @@ _2023 年 12 月 5 日_
 * 修正資料庫清理工作流程中，在傳遞校樣之前刪除傳遞時所發生的錯誤。 (NEO-48114)
 * 修正連線至用戶端主控台時的問題：最近 TLS 驗證更新導致連線錯誤。 (NEO-50488)
 * 修正了 Campaign 升級至 7.3.1 後 HTTP Proxy 驗證的問題。 行銷活動工作流程中的 HTTP 請求失敗，因為`error 407 – proxy auth required is returned`。 (NEO-49624)
-* 修正了&#x200B;**指令碼**&#x200B;工作流程活動中 GPG 解密的間歇性失敗。相關錯誤訊息為：`gpg: decryption failed: No secret key`。(NEO-50257)
-  <!--* Workflow temporary tables now have a primary index in Teradata with a Federated Data Access (FDA) connection. (NEO-62575)-->
+* 修正&#x200B;**指令碼**&#x200B;工作流程活動中 GPG 解密的間歇性失敗。 相關的錯誤訊息為：`gpg: decryption failed: No secret key`。 (NEO-50257)  <!--* Workflow temporary tables now have a primary index in Teradata with a Federated Data Access (FDA) connection. (NEO-62575)-->
 
 
 

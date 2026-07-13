@@ -19,9 +19,9 @@ topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 50418c4e818f04008a5d47a982fa5bb0185bd597
-workflow-type: tm+mt
-source-wordcount: 347
-ht-degree: 84%
+workflow-type: ht
+source-wordcount: 663
+ht-degree: 100%
 
 ---
 
@@ -36,9 +36,9 @@ ht-degree: 84%
 >[!BEGINTABS]
 
 
->[!TAB 2026年6月版本已上線！]
+>[!TAB 2026 年 6 月版本已上線！]
 
-Campaign Classic v7.4.3 - 2026年6月版本編號在上一個版本的基礎上提供安全性更新。
+Campaign Classic v7.4.3 - 2026 年 6 月版本在上一個版本的基礎上提供安全性更新。
 
 [![影像](assets/do-not-localize/learn-more-button.svg)](rn/using/latest-release.md)
 
@@ -92,34 +92,34 @@ Android Firebase Cloud Messaging (FCM) 服務的一些重要變更將於 2024 �
 <table style="table-layout:auto">
   <tr style="border: 0;">
     <td>
-      <img src="assets/do-not-localize/icon-start.svg" width="35px">
+      
     <br/>
-      <strong>開始使用</strong><br/><a href="platform/using/adobe-campaign-workspace.md">使用者介面</a> - <a href="platform/using/launching-adobe-campaign.md">連線至行銷活動</a> - <a href="platform/using/get-started-data-import-export.md">匯入、匯出資料</a> - <a href="platform/using/access-management.md">權限</a>
+      <strong>開始使用</strong><br/><a href="platform/using/adobe-campaign-workspace.md">使用者介面</a> - <a href="platform/using/launching-adobe-campaign.md">連線至行銷活動</a> - <a href="platform/using/get-started-data-import-export.md">匯入與匯出資料</a> - <a href="platform/using/access-management.md">權限</a>
     </td>
     <td>
-      <img src="assets/do-not-localize/icon-experience.svg" width="35px">
+      
     <br/>
       <strong>客戶體驗</strong><br/><a href="workflow/using/about-workflows.md">使用工作流程自動化</a> - <a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=zh-Hant" target="_blank">行銷活動</a> - <a href="interaction/using/interaction-and-offer-management.md">互動與產品建議管理</a> - <a href="delivery/using/about-personalization.md">個人化</a> - <a href="reporting/using/about-adobe-campaign-reporting-tools.md">報告</a>
     </td>
     <td>
-      <img src="assets/do-not-localize/icon-send.svg" width="35px">
+      
     <br/>
       <strong>傳送訊息</strong><br/><a href="delivery/using/communication-channels.md">通訊管道</a> - <a href="delivery/using/steps-about-delivery-creation-steps.md#sending-a-proof">傳送校樣</a> - <a href="delivery/using/get-started-a-b-testing.md">A/B 測試</a> - <a href="https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/analytics/tracking/tracking" target="_blank">訊息追蹤</a> - <a href="delivery/using/about-deliverability.md">傳遞能力</a> - <a href="message-center/using/about-transactional-messaging.md">交易型訊息傳遞</a>
     </td>
   </tr>
   <tr style="border: 0;">
     <td>
-      <img src="assets/do-not-localize/icon_profile-audience.svg" width="35px">
+      
       <br/>
       <strong>輪廓與客群</strong><br/> <a href="platform/using/creating-and-managing-lists.md">建立清單</a> - <a href="delivery/using/about-services-and-subscriptions.md">服務與訂閱</a> - <a href="platform/using/privacy-management.md">隱私權與同意</a>
     </td>
     <td>
-      <img src="assets/do-not-localize/icon-configure.svg" width="35px">
+      
       <br/>
       <strong>架構與設定</strong><br/><a href="production/using/general-architecture.md">架構原則</a> - <a href="production/using/build-upgrade.md">執行建置升級</a> - <a href="production/using/configuration.md">設定 Campaign</a> - <a href="installation/using/external-accounts.md">連線到外部系統</a>
     </td>
     <td>
-      <img src="assets/do-not-localize/icon-dev.svg" width="35px">
+      
       <br/>
       <strong>開發人員資源</strong><br/><a href="configuration/using/about-data-model.md">資料模型說明</a> - <a href="configuration/using/about-schema-reference.md">結構描述結構</a> - <a href="configuration/using/editing-forms.md">結構描述結構</a> - <a href="configuration/using/about-web-services.md">API</a> - <a href="https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hant">JSAPI 參考文件</a> - <a href="configuration/using/about-custom-recipient-table.md">自訂收件者表格</a>
     </td>
@@ -128,4 +128,4 @@ Android Firebase Cloud Messaging (FCM) 服務的一些重要變更將於 2024 �
 
 ## 額外資源
 
-[錯誤訊息清單](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=zh-Hant) - [Adobe Campaign產品說明](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} - [相容性矩陣](rn/using/compatibility-matrix.md) - [教學課程](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant){target="_blank"} - [促銷活動控制面板](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=zh-Hant){target="_blank"} - [電子郵件追蹤畫素和CNIL指引](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/new/cnil-pixel-tracking){target="_blank"}
+[錯誤訊息清單](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=zh-Hant) - [Adobe Campaign 產品說明](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} - [相容性矩陣](rn/using/compatibility-matrix.md) - [教學課程](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hant){target="_blank"} - [Campaign 控制面板](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=zh-Hant){target="_blank"} - [電子郵件追蹤像素與 CNIL 指南](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/new/cnil-pixel-tracking){target="_blank"}
