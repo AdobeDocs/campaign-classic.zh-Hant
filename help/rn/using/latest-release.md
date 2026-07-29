@@ -7,24 +7,16 @@ role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 TQID: https://experienceleague.adobe.com/Xq9y8r6xU-hypq1Eeo9ijaiGng7qqkWVqiCXW5fYx2c
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: d095671a-1355-40aa-8b5f-06c33c68080bid: e0eb8757-182f-49f3-94a4-1587d16f5094
 feature_v2: []
-subfeature_v2:
-  - id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405
-  - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
-source-git-commit: a9e48513ed4ceb2650d0eeff18563a010a148c80
-workflow-type: ht
-source-wordcount: 498
-ht-degree: 100%
+subfeature_v2: id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+source-git-commit: 7aea93eee16cdcdae6c4bf2466ab12a0aaf6052e
+workflow-type: tm+mt
+source-wordcount: 631
+ht-degree: 78%
 
 ---
 
@@ -34,21 +26,33 @@ ht-degree: 100%
 
 ## 版本 7.4.3 {#release-7-4-3}
 
+### 建置9398 {#build-9398}
+
+[!BADGE 有限可用性]{type=Informative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="有限可用性"}
+
+_2026年7月29日_
+
+#### 安全性改善 {#security-7-4-3-9398}
+
+Adobe已發佈Adobe Campaign Classic的安全性更新，解決重大漏洞。 我們鼓勵客戶進行內部部署和混合部署，以便儘快安裝更新。 Adobe代管的執行個體已經修正，不需要客戶採取任何動作。 您可以在[安全性公告](https://helpx.adobe.com/security/products/campaign/apsb26-114.html){target="_blank"}中找到更多資訊。
+
+需要[重新啟動Adobe Campaign伺服器(nlserver)](../../production/using/usual-commands.md#restart-services)，才能載入組建並完成部署。 此修正在重新啟動後預設為作用中。
+
 ### 版本 9397 {#build-9397}
 
-[!BADGE 一般可用性]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="一般可用性"}
+[!BADGE 有限可用性]{type=Informative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="有限可用性"}
 
 _2026 年 6 月 30 日_
 
 #### 安全性改善 {#security-7-4-3-9397}
 
-此版本包含安全性修正。此為建議的一般可用性版本，並取代先前的 Campaign Classic v7 版本。
+此版本編號包含安全性修正，並取代先前的Campaign Classic v7版本編號。 內部部署和混合部署現已棄用此組建；我們鼓勵處於這些部署模式的客戶升級至[Build 9398](#build-9398)或更新版本，儘快安裝更新。
 
 #### 其他變更 {#changes-7-4-3-9397}
 
-依預設，webForm.jsp 現在會忽略用戶端提供的 `ctx` 參數。這是由 `disableCtxInWebForm` 參數所控制，其預設設定為「真」。
+依預設，webForm.jsp 現在會忽略用戶端提供的 `ctx` 參數。 這是由 `disableCtxInWebForm` 參數所控制，其預設設定為「真」。
 
-如果您的 webForm 要求目前傳入了 `ctx` 參數，您可以臨時重新啟用此行為，只需將下列項目新增至 <web>config-<instance>.xml 檔案的元素中即可。計劃逐步淘汰此使用方式。
+如果您的 webForm 要求目前傳入了 `ctx` 參數，您可以臨時重新啟用此行為，只需將下列項目新增至 <web> config-<instance>.xml 檔案的元素中即可。 計劃逐步淘汰此使用方式。
 
 ```
 <web>
