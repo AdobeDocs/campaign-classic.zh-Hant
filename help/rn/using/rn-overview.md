@@ -7,23 +7,16 @@ role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
 TQID: https://experienceleague.adobe.com/xs5sqsIqs9u-a9TrKo5EgFIpNTtxhy8y0-YIlDyUxp0
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d095671a-1355-40aa-8b5f-06c33c68080b
 feature_v2: []
-subfeature_v2:
-  - id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405
-  - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: ht
-source-wordcount: 922
-ht-degree: 100%
+subfeature_v2: id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+source-git-commit: e71b0658b2458b05799c28e79d871f025348962a
+workflow-type: tm+mt
+source-wordcount: 1045
+ht-degree: 88%
 
 ---
 
@@ -64,7 +57,15 @@ Adobe Campaign 會定期更新。 此定期更新的目的是為了讓您掌握�
 
 這就是您需要&#x200B;**執行最新穩定 Adobe Campaign 版本編號**&#x200B;的重要原因。 此外，它還可確保您取得更好的支援體驗，因為通常可快速進行最近版本編號問題的識別、重制和修正。 同樣地，已在最近建立的版本編號中修正了許多您可能會遇到的問題。
 
+>[!NOTE]
+>
+> 每個版本編號都有累積性：除了自己的變更，也包含相同版本之先前版本編號中提供的所有功能、改良與修正。 您不需要安裝每個中繼版本即可受益於先前的修正：安裝最新版本可讓您使用先前版本中包含的所有內容保持最新狀態。
+
 作為託管客戶，您無需採取任何動作便可透過最新穩定版本編號，自動享受升級的好處。 在[年度升級一節](#yearly-upgrade)中深入了解。 如果您從舊的版本編號移轉，Adobe 建議您先升級至此版本編號。
+
+### 託管環境的安全性修補 {#security-patching}
+
+為了保護託管環境的完整性，Adobe保留隨時在不事先通知的情況下套用重要安全性修補程式的權利，以儘快修正漏洞。 這些修補程式部署時不會中斷服務。 此做法符合Adobe的安全性治理標準，根據該標準，修正重大漏洞的緊迫性優先於預先通知。
 
 ## 建議 {#rn-recommendations}
 
