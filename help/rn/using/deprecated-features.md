@@ -26,10 +26,10 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: ht
-source-wordcount: 1767
-ht-degree: 100%
+source-git-commit: c094a1fa9adf80708154b5532ae9fbeb18993b9f
+workflow-type: tm+mt
+source-wordcount: 1792
+ht-degree: 98%
 
 ---
 
@@ -64,9 +64,14 @@ Adobe 持續評估產品功能，尋找應以更現代的替代方式來取代�
    <td><strong>詳細資料</strong></td>
   </tr>
   <tr>
+ <td>Netsize SMPP聯結器</td>
+ <td><p>Netsize SMPP聯結器現已棄用。 我們建議移轉至<strong>Extended generic SMPP</strong>聯結器。 如需詳細資訊，請參閱<a href="../../delivery/using/unsupported-connector-migration.md">本頁面</a>。</p>
+<p>目標移除日期：2027年1月</p>
+</td>
+</tr>
+<tr>
  <td>Campaign (Neolane) 舊版 SDK</td>
  <td><p>適用於行動應用程式的 Campaign (Neolane) SDK 現已棄用。 請改為在資料彙集 UI 設定 Adobe Campaign 擴充功能，以便使用 Adobe Experience Platform Mobile SDK。 Adobe Experience Platform Mobile SDK 有助於在行動應用程式中，強化 Adobe Experience Cloud 解決方案與服務。 SDK 設定可透過資料彙集 UI 來管理，提供靈活的設定與可擴充的規則式整合。 若要了解如何設定行動應用程式管道，請參閱 <a href="https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/push/push-settings">Campaign v8 文件</a>。</p>
-<p>目標移除日期：2025 年 7 月 31 日 </p>
 </td>
 </tr>
 <tr>
@@ -206,11 +211,11 @@ Adobe Campaign Classic 用戶端主控台無法在下列系統執行，因為編
 
 * 自 19.1 發行版本開始，Adobe Campaign 不再與下列作業系統相容。
 
-   * CentOS 6。 [了解更多](https://wiki.centos.org/Download)
-   * Debian 7。 [瞭解更多](https://wiki.debian.org/DebianReleases)
-   * RHEL 6.x。 [了解更多](https://access.redhat.com/support/policy/updates/errata)
-   * Windows Server 2008。 [瞭解更多](https://support.microsoft.com/en-us/lifecycle/search/1163)
-   * SLES 11。 [瞭解更多](https://www.suse.com/lifecycle)
+  * CentOS 6。 [了解更多](https://wiki.centos.org/Download)
+  * Debian 7。 [瞭解更多](https://wiki.debian.org/DebianReleases)
+  * RHEL 6.x。 [了解更多](https://access.redhat.com/support/policy/updates/errata)
+  * Windows Server 2008。 [瞭解更多](https://support.microsoft.com/en-us/lifecycle/search/1163)
+  * SLES 11。 [瞭解更多](https://www.suse.com/lifecycle)
 
 ### Web 伺服器 {#web-server-eol}
 
