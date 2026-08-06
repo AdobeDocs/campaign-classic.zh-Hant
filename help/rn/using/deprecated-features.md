@@ -7,29 +7,16 @@ role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
 TQID: https://experienceleague.adobe.com/g1JuaL9ijMzzZ-OjRY5RNEvMBiX1rGtwKdq-mdKNiHI
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: b12f6872-9271-4369-85e5-86969a0b99a2
-  - id: d5ef99fa-df0c-4153-bf94-105ad0724167
-subfeature_v2:
-  - id: bea9e610-36b4-4df2-94bb-0fb6fe46cb50
-  - id: c3bf7e1e-1db5-4c72-9293-e2f0b1ab73d0
-  - id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405
-  - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: b12f6872-9271-4369-85e5-86969a0b99a2id: d5ef99fa-df0c-4153-bf94-105ad0724167
+subfeature_v2: id: bea9e610-36b4-4df2-94bb-0fb6fe46cb50id: c3bf7e1e-1db5-4c72-9293-e2f0b1ab73d0id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d095671a-1355-40aa-8b5f-06c33c68080bid: d3cdead0-685a-4489-9250-4bb709942f66
 source-git-commit: c094a1fa9adf80708154b5532ae9fbeb18993b9f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1792
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -64,9 +51,9 @@ Adobe 持續評估產品功能，尋找應以更現代的替代方式來取代�
    <td><strong>詳細資料</strong></td>
   </tr>
   <tr>
- <td>Netsize SMPP聯結器</td>
- <td><p>Netsize SMPP聯結器現已棄用。 我們建議移轉至<strong>Extended generic SMPP</strong>聯結器。 如需詳細資訊，請參閱<a href="../../delivery/using/unsupported-connector-migration.md">本頁面</a>。</p>
-<p>目標移除日期：2027年1月</p>
+ <td>Netsize SMPP 連接器</td>
+ <td><p>Netsize SMPP 連接器現已棄用。建議移轉至 <strong>Extended generic SMPP</strong> 連接器。如需詳細資訊，請參閱<a href="../../delivery/using/unsupported-connector-migration.md">本頁面</a>。</p>
+<p>目標移除日期：2027 年 1 月</p>
 </td>
 </tr>
 <tr>
@@ -108,7 +95,7 @@ Adobe 持續評估產品功能，尋找應以更現代的替代方式來取代�
     <tr>
   <td>技術傳遞能力監視報告<br></td>
    <td><p>不再提供「技術傳遞能力監視報告」。 已在 Campaign 21.1.3 版中棄用。</p>
-   <!--p>If needed, you can receive this report daily by email until the feature removal date. To request it, open a specific <a href="https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">Support Case</a> and specify the name of the instance and the email address(es) to send the report to.</p--> 
+   <!--p>If needed, you can receive this report daily by email until the feature removal date. To request it, open a specific <a href="https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">Support Case</a> and specify the name of the instance and the email address(es) to send the report to.</p--> 
   </td>
  </tr>
   <tr>
@@ -162,7 +149,7 @@ Adobe 持續評估產品功能，尋找應以更現代的替代方式來取代�
   <tr> 
    <td>decryptString API</td>
    <td><p>出於安全原因，自 Campaign 18.6 發行版本起，新的安裝已不再預設提供 <em>decryptString</em> API。</p> 
-   <p>在 18.6 版本升級後（及更新版本）的設定檔，不再啟用此 API，並已由 <em>decryptPassword</em> 函式取代。 <a href="https://experienceleague.adobe.com/developer/campaign-api/api/f-decryptPassword.html?lang=zh-Hant&hl=decrypt">瞭解更多</a></p></td>
+   <p>在 18.6 版本升級後（及更新版本）的設定檔，不再啟用此 API，並已由 <em>decryptPassword</em> 函式取代。 <a href="https://experienceleague.adobe.com/developer/campaign-api/api/f-decryptPassword.html?hl=decrypt">瞭解更多</a></p></td>
   </tr> 
    <tr> 
    <td>行動裝置頻道 - MMS 和 WAP 推播訊息</td>

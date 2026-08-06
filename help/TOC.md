@@ -9,7 +9,7 @@ sub-product: adobe campaign classic
 type: Documentation
 nudge: false
 source-git-commit: cc6c1969f230f3aac405b9169505a8bb39d41dfd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2710'
 ht-degree: 100%
 
@@ -729,7 +729,7 @@ ht-degree: 100%
       + [元素](configuration/using/schema/element.md)
       + [分項清單](configuration/using/schema/enumeration.md)
       + [說明](configuration/using/schema/help.md)
-      + [加入](configuration/using/schema/join.md)
+      + [連接](configuration/using/schema/join.md)
       + [金鑰](configuration/using/schema/key.md)
       + [金鑰欄位](configuration/using/schema/keyfield.md)
       + [方法](configuration/using/schema/method.md)
