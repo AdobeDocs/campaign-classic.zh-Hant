@@ -21,10 +21,10 @@ feature_v2: []
 subfeature_v2:
   - id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
-source-git-commit: 5356cd82fdbec264ebbdebadc490bb6f6aa29f07
-workflow-type: ht
-source-wordcount: 734
-ht-degree: 100%
+source-git-commit: 6d58d7b0af036eeae1297ef3162c8740be064402
+workflow-type: tm+mt
+source-wordcount: 912
+ht-degree: 88%
 
 ---
 
@@ -32,19 +32,39 @@ ht-degree: 100%
 
 本頁面列出&#x200B;**最新 Campaign Classic v7 版本**&#x200B;的新功能、改善和修正。 每個新版本都會提供以顏色具體化的狀態。 請於[本頁](rn-overview.md)進一步了解 Campaign Classic v7 版本編號狀態。
 
+## 版本7.4.4 {#release-7-4-4}
+
+### 建置9400 {#build-9400}
+
+[!BADGE 一般可用性]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="一般可用性"}
+
+_2026年8月11日_
+
+此版本編號包含多項產品改良、安全性修正，以及適用於Adobe Analytics聯結器的Adobe Analytics 2.0 API升級。
+
+#### 安全性改善 {#security-7-4-4-9400}
+
+Adobe 已發佈 Adobe Campaign Classic 的安全性更新，以解決關鍵弱點。 我們鼓勵採用內部部署和混合部署的客戶儘快安裝更新。 Adobe 代管的執行個體已完成修復，客戶不需要採取任何動作。 您可以在[安全性公告](https://helpx.adobe.com/security/products/campaign/apsb26-123.html){target="_blank"}中找到更多資訊。
+
+需要重新啟動Adobe Campaign伺服器(nlserver)，才能載入組建並完成部署。 此修正在重新啟動後預設為作用中。
+
+#### Adobe Analytics 2.0升級 {#analytics-2-0-7-4-4}
+
+Adobe Analytics 1.4 API即將終止服務。 如果您使用Adobe Analytics聯結器，您必須升級至此組建版本，並根據您的部署和使用案例完成數個移轉步驟。 [瞭解如何移轉至Adobe Analytics 2.0 API](../../technotes/using/analytics-2-migration.md)。
+
 ## 版本 7.4.3 {#release-7-4-3}
 
 ### 建置 9399 {#build-9399}
 
-[!BADGE 一般可用性]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="一般可用性"}
+[!BADGE 已棄用]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="已棄用"}
 
 _2026 年 8 月 3 日_
 
 #### 安全性改善 {#security-7-4-3-9399}
 
-Adobe 已發佈 Adobe Campaign Classic 的安全性更新，以解決關鍵弱點。我們鼓勵採用內部部署和混合部署的客戶儘快安裝更新。Adobe 代管的執行個體已完成修復，客戶不需要採取任何動作。您可以在[安全性公告](https://helpx.adobe.com/tw/security/products/campaign/apsb26-120.html){target="_blank"}中找到更多資訊。
+Adobe 已發佈 Adobe Campaign Classic 的安全性更新，以解決關鍵弱點。 我們鼓勵採用內部部署和混合部署的客戶儘快安裝更新。 Adobe 代管的執行個體已完成修復，客戶不需要採取任何動作。 您可以在[安全性公告](https://helpx.adobe.com/tw/security/products/campaign/apsb26-120.html){target="_blank"}中找到更多資訊。
 
-[重新啟動 Adobe Campaign 伺服器 (nlserver)](../../production/using/usual-commands.md#restart-services)，才能載入建置並完成部署。此修正在重新啟動後預設為作用中。
+[重新啟動 Adobe Campaign 伺服器 (nlserver)](../../production/using/usual-commands.md#restart-services)，才能載入建置並完成部署。 此修正在重新啟動後預設為作用中。
 
 ### 建置 9398 {#build-9398}
 
@@ -54,9 +74,9 @@ _2026 年 7 月 29 日_
 
 #### 安全性改善 {#security-7-4-3-9398}
 
-Adobe 已發佈 Adobe Campaign Classic 的安全性更新，以解決關鍵弱點。我們鼓勵採用內部部署和混合部署的客戶儘快安裝更新。Adobe 代管的執行個體已完成修復，客戶不需要採取任何動作。您可以在[安全性公告](https://helpx.adobe.com/tw/security/products/campaign/apsb26-114.html){target="_blank"}中找到更多資訊。
+Adobe 已發佈 Adobe Campaign Classic 的安全性更新，以解決關鍵弱點。 我們鼓勵採用內部部署和混合部署的客戶儘快安裝更新。 Adobe 代管的執行個體已完成修復，客戶不需要採取任何動作。 您可以在[安全性公告](https://helpx.adobe.com/tw/security/products/campaign/apsb26-114.html){target="_blank"}中找到更多資訊。
 
-[重新啟動 Adobe Campaign 伺服器 (nlserver)](../../production/using/usual-commands.md#restart-services)，才能載入建置並完成部署。此修正在重新啟動後預設為作用中。
+[重新啟動 Adobe Campaign 伺服器 (nlserver)](../../production/using/usual-commands.md#restart-services)，才能載入建置並完成部署。 此修正在重新啟動後預設為作用中。
 
 ### 建置 9397 {#build-9397}
 
@@ -66,7 +86,7 @@ _2026 年 6 月 30 日_
 
 #### 安全性改善 {#security-7-4-3-9397}
 
-此建置包含安全性修正，並取代先前的 Campaign Classic v7 建置。此建置現已不再適用於內部部署和混合部署；我們鼓勵使用這些部署模式的客戶儘快升級至[建置 9398](#build-9398)或更新版本，以安裝更新。
+此建置包含安全性修正，並取代先前的 Campaign Classic v7 建置。 此建置現已不再適用於內部部署和混合部署；我們鼓勵使用這些部署模式的客戶儘快升級至[建置 9398](#build-9398)或更新版本，以安裝更新。
 
 #### 其他變更 {#changes-7-4-3-9397}
 
