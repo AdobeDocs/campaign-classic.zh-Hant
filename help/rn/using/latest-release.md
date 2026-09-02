@@ -24,7 +24,7 @@ subfeature_v2:
 source-git-commit: d1e083ac90731e9f55d64156fbd6038df3c4d432
 workflow-type: tm+mt
 source-wordcount: 1017
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -32,37 +32,37 @@ ht-degree: 86%
 
 本頁面列出&#x200B;**最新 Campaign Classic v7 版本**&#x200B;的新功能、改善和修正。 每個新版本都會提供以顏色具體化的狀態。 請於[本頁](rn-overview.md)進一步了解 Campaign Classic v7 版本編號狀態。
 
-## 版本7.4.4 {#release-7-4-4}
+## 版本 7.4.4 {#release-7-4-4}
 
-### 建置9401 {#build-9401}
+### 版本編號 9401 {#build-9401}
 
 [!BADGE 一般可用性]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="一般可用性"}
 
-_2026年8月25日_
+_2026 年 8 月 25 日_
 
 #### 安全性改善 {#security-7-4-4-9401}
 
 Adobe 已發佈 Adobe Campaign Classic 的安全性更新，以解決關鍵弱點。 我們鼓勵採用內部部署和混合部署的客戶儘快安裝更新。 Adobe 代管的執行個體已完成修復，客戶不需要採取任何動作。 您可以在[安全性公告](https://helpx.adobe.com/tw/security/products/campaign/apsb26-134.html){target="_blank"}中找到更多資訊。
 
-需要重新啟動Adobe Campaign伺服器(nlserver)，才能載入組建並完成部署。 此修正在重新啟動後預設為作用中。
+必須重新啟動 Adobe Campaign 伺服器 (nlserver)，才能載入建置並完成部署。 此修正在重新啟動後預設為作用中。
 
-### 建置9400 {#build-9400}
+### 版本編號 9400 {#build-9400}
 
 [!BADGE 已棄用]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="已棄用"}
 
-_2026年8月11日_
+_2026 年 8 月 11 日_
 
-此版本編號包含多項產品改良、安全性修正，以及適用於Adobe Analytics聯結器的Adobe Analytics 2.0 API升級。
+此建置包含多項產品改善、安全性修正，以及 Adobe Analytics 連接器的 Adobe Analytics 2.0 API 升級。
 
 #### 安全性改善 {#security-7-4-4-9400}
 
 Adobe 已發佈 Adobe Campaign Classic 的安全性更新，以解決關鍵弱點。 我們鼓勵採用內部部署和混合部署的客戶儘快安裝更新。 Adobe 代管的執行個體已完成修復，客戶不需要採取任何動作。 您可以在[安全性公告](https://helpx.adobe.com/tw/security/products/campaign/apsb26-123.html){target="_blank"}中找到更多資訊。
 
-需要重新啟動Adobe Campaign伺服器(nlserver)，才能載入組建並完成部署。 此修正在重新啟動後預設為作用中。
+必須重新啟動 Adobe Campaign 伺服器 (nlserver)，才能載入建置並完成部署。 此修正在重新啟動後預設為作用中。
 
-#### Adobe Analytics 2.0升級 {#analytics-2-0-7-4-4}
+#### Adobe Analytics 2.0 升級 {#analytics-2-0-7-4-4}
 
-Adobe Analytics 1.4 API即將終止服務。 如果您使用Adobe Analytics聯結器，您必須升級至此組建版本，並根據您的部署和使用案例完成數個移轉步驟。 [瞭解如何移轉至Adobe Analytics 2.0 API](../../technotes/using/analytics-2-migration.md)。
+Adobe Analytics 1.4 API 即將終止服務。 如果您使用 Adobe Analytics 連接器，必須升級至此建置，並視您的部署和使用案例完成幾個移轉步驟。 [了解如何移轉至 Adobe Analytics 2.0 API](../../technotes/using/analytics-2-migration.md)。
 
 ## 版本 7.4.3 {#release-7-4-3}
 
