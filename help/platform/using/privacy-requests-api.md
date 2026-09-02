@@ -68,7 +68,7 @@ Adobe Campaign 提供&#x200B;**API**，可讓您設定自動隱私權請求流�
 
 ## 在外部叫用 API {#invoking-api-externally}
 
-以下是如何從外部叫用 API 的範例 (特別透過 API 以及隱私權 API 的詳細資訊進行驗證)。 如需隱私權 API 的詳細資訊，請參閱 [API 文件](https://experienceleague.adobe.com/en/tools/campaign-api)。 您也可以參閱 [Web 服務呼叫文件](../../configuration/using/web-service-calls.md)。
+以下是如何從外部叫用 API 的範例 (特別透過 API 以及隱私權 API 的詳細資訊進行驗證)。 如需隱私權 API 的詳細資訊，請參閱 [API 文件](https://experienceleague.adobe.com/zh-hant/tools/campaign-api)。 您也可以參閱 [Web 服務呼叫文件](../../configuration/using/web-service-calls.md)。
 
 首先，您需要透過 API 執行驗證：
 

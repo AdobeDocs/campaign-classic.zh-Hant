@@ -28,7 +28,7 @@ ht-degree: 0%
 
 身為資深使用者，您可以在瀏覽器樹狀結構中新增資料夾並加以自訂。
 
-在[Adobe Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}中進一步瞭解Campaign使用者介面。
+在[Adobe Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}中進一步瞭解Campaign使用者介面。
 
 導覽清單使用的資料夾型別在遵循&#x200B;**xtk:navtree**&#x200B;結構描述語法的XML檔案中描述。
 
@@ -104,7 +104,7 @@ XML檔案包含具有&#x200B;**名稱**&#x200B;和&#x200B;**名稱空間**&#x200
 
 命令分隔符號可讓您在命令之間顯示分隔列。 它由包含在命令標籤中的&#x200B;**&#39;-&#39;**&#x200B;值識別。
 
-**`<soapcall>`**&#x200B;標籤及其輸入引數的選擇性存在會定義要執行的SOAP方法呼叫。 如需SOAP API的詳細資訊，請參閱[Campaign JSAPI檔案](https://experienceleague.adobe.com/en/tools/campaign-api)。
+**`<soapcall>`**&#x200B;標籤及其輸入引數的選擇性存在會定義要執行的SOAP方法呼叫。 如需SOAP API的詳細資訊，請參閱[Campaign JSAPI檔案](https://experienceleague.adobe.com/zh-hant/tools/campaign-api)。
 
 從&#x200B;**`<enter>`**&#x200B;標籤初始化時可以更新表單內容。 如需有關此標籤的詳細資訊，請參閱有關輸入表單的檔案。
 
@@ -277,7 +277,7 @@ XML檔案包含具有&#x200B;**名稱**&#x200B;和&#x200B;**名稱空間**&#x200
 
 命令分隔符號可讓您在命令之間顯示分隔列。 它由包含在命令標籤中的&#x200B;**&#39;-&#39;**&#x200B;值識別。
 
-**`<soapcall>`**&#x200B;標籤及其輸入引數的選擇性存在會定義要執行的SOAP方法呼叫。 如需SOAP API的詳細資訊，請參閱[Campaign JSAPI檔案](https://experienceleague.adobe.com/en/tools/campaign-api)。
+**`<soapcall>`**&#x200B;標籤及其輸入引數的選擇性存在會定義要執行的SOAP方法呼叫。 如需SOAP API的詳細資訊，請參閱[Campaign JSAPI檔案](https://experienceleague.adobe.com/zh-hant/tools/campaign-api)。
 
 初始化時可透過&#x200B;**`<enter>`**&#x200B;標籤更新表單內容。 如需此標籤的詳細資訊，請參閱輸入表單檔案。
 

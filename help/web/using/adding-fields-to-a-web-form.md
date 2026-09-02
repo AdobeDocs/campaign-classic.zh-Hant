@@ -379,7 +379,7 @@ ht-degree: 0%
 
 若要將上傳欄位插入表單頁面，請選取頁面編輯器工具列中的&#x200B;**[!UICONTROL Advanced controls > File...]**&#x200B;功能表。
 
-依預設，上傳的檔案會儲存在可透過&#x200B;**[!UICONTROL Resources > Online > Public resources]**&#x200B;功能表存取的資源檔案中。 您可以使用指令碼來變更此行為。 此指令碼可以使用[Campaign JSAPI檔案](https://experienceleague.adobe.com/en/tools/campaign-api)中定義的函式，包括涉及檔案操作的函式。
+依預設，上傳的檔案會儲存在可透過&#x200B;**[!UICONTROL Resources > Online > Public resources]**&#x200B;功能表存取的資源檔案中。 您可以使用指令碼來變更此行為。 此指令碼可以使用[Campaign JSAPI檔案](https://experienceleague.adobe.com/zh-hant/tools/campaign-api)中定義的函式，包括涉及檔案操作的函式。
 
 您可以將這些檔案的連結儲存在本機變數或資料庫欄位中。 例如，您可以擴充收件者綱要以新增檔案型資源的連結。
 

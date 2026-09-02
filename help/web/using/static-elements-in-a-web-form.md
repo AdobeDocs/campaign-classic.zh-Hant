@@ -41,7 +41,7 @@ ht-degree: 2%
 
   >[!NOTE]
   >
-  >在伺服器端，指令碼可以使用[Campaign JSAPI檔案](https://experienceleague.adobe.com/en/tools/campaign-api)中定義的函式。
+  >在伺服器端，指令碼可以使用[Campaign JSAPI檔案](https://experienceleague.adobe.com/zh-hant/tools/campaign-api)中定義的函式。
 
 ## 插入HTML內容 {#inserting-html-content}
 
