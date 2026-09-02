@@ -21,7 +21,7 @@ feature_v2: []
 subfeature_v2:
   - id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
-source-git-commit: 8717bd4451d64cbd7a2d760274a0bf1564c61d22
+source-git-commit: d1e083ac90731e9f55d64156fbd6038df3c4d432
 workflow-type: tm+mt
 source-wordcount: 1017
 ht-degree: 86%
@@ -48,7 +48,7 @@ Adobe 已發佈 Adobe Campaign Classic 的安全性更新，以解決關鍵弱�
 
 ### 建置9400 {#build-9400}
 
-[!BADGE 已棄用]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="已棄用"}
+[!BADGE 已棄用]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="已棄用"}
 
 _2026年8月11日_
 
