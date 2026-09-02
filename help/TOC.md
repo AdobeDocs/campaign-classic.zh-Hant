@@ -9,9 +9,9 @@ sub-product: adobe campaign classic
 type: Documentation
 nudge: false
 source-git-commit: df5d87ca4fccb927f770957ec1c00157d14e95dc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2717'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -813,7 +813,7 @@ ht-degree: 99%
     + {hide-from-toc}[2023 年系統升級](technotes/using/tech-stack-upgrade.md)
     + {hide-from-toc}[IMS 更新](technotes/using/ims-updates.md)
     + {hide-from-toc}[終止支援 TLS 1.0 和 1.1](technotes/using/eol-tls-support.md)
-    + {hide-from-toc}[移轉至Adobe Analytics 2.0 API](technotes/using/analytics-2-migration.md)
+    + {hide-from-toc}[移轉至 Adobe Analytics 2.0 API](technotes/using/analytics-2-migration.md)
   + 電子郵件和推播通知{#technotes-email}
     + [Apple iOS 上的郵件隱私保護](technotes/using/apple-mail-app-privacy-protection.md)
     + [如何更新錯誤的硬退件](delivery/using/update-bounce-qualification.md)
