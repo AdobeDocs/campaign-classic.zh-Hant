@@ -8,18 +8,14 @@ content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: 1f96c3df-0ef2-4f5f-9c36-988cbcc0769f
 TQID: https://experienceleague.adobe.com/daz7TEa76-e6V3DbFHIzggxj07CKsh1pS-ShT6d-Tfo
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-topic_v2:
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080bid: e0eb8757-182f-49f3-94a4-1587d16f5094id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 feature_v2: []
 subfeature_v2: []
-source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
+source-git-commit: 073ad5eccc52ad63e92829de4a4c6ac6178635e1
 workflow-type: tm+mt
-source-wordcount: 773
-ht-degree: 6%
+source-wordcount: 771
+ht-degree: 4%
 
 ---
 
@@ -29,7 +25,7 @@ ht-degree: 6%
 
 ## 指令碼
 
-如需詳細資訊，請參閱[Campaign JSAPI檔案](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hant)。
+如需詳細資訊，請參閱[Campaign JSAPI檔案](https://experienceleague.adobe.com/en/tools/campaign-api)。
 
 如果您使用工作流程、網頁應用程式、jssp編寫指令碼，請遵循以下最佳實務：
 
@@ -66,7 +62,7 @@ ht-degree: 6%
 >
 >如果您使用的組建版本早於8140，則&#x200B;**XtkPassUnknownSQLFunctionsToRDBMS**&#x200B;選項可能會設為&#39;1&#39;。 如果要保護資料庫的安全，請刪除此選項（或將它設定為&#39;0&#39;）。
 
-如果您使用使用者輸入在查詢或SQL陳述式中建立篩選器，您必須一律將其逸出（請參閱[Campaign JSAPI檔案](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hant) — 資料保護：逸出函式）。 這些函式包括：
+如果您使用使用者輸入在查詢或SQL陳述式中建立篩選器，您必須一律將其逸出（請參閱[Campaign JSAPI檔案](https://experienceleague.adobe.com/en/tools/campaign-api) — 資料保護：逸出函式）。 這些函式包括：
 
 * NL.XML.escape(data)
 * NL.SQL.escape(data)
@@ -128,7 +124,7 @@ ht-degree: 6%
 
 1. 使用&#x200B;**[!UICONTROL Web application]**&#x200B;內容型別並檢查&#x200B;**[!UICONTROL Visible in the customization menus]**。
 
-   如需詳細資訊，請參閱 [Campaign v8 文件](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=zh-Hant){target="_blank"}。
+   如需詳細資訊，請參閱 [Campaign v8 文件](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}。
 
    以下是&#x200B;**行銷活動驗證碼**&#x200B;的範例：
 

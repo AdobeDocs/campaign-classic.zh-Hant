@@ -6,16 +6,13 @@ feature: API
 role: Developer
 exl-id: 7aa2aef1-2eb6-48a6-82fa-4451bed66216
 TQID: https://experienceleague.adobe.com/fZRtM-J9LP9AqvrRMeyzErpCXsfBbC1UIUpskV4PEqU
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: b12f6872-9271-4369-85e5-86969a0b99a2
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: b12f6872-9271-4369-85e5-86969a0b99a2
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 subfeature_v2: []
-source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
+source-git-commit: 073ad5eccc52ad63e92829de4a4c6ac6178635e1
 workflow-type: tm+mt
-source-wordcount: 665
+source-wordcount: 664
 ht-degree: 4%
 
 ---
@@ -31,7 +28,7 @@ Adobe Campaign API可用於應用程式內的JavaScript以及應用程式外的S
 >[!IMPORTANT]
 >
 >授權引擎每日的通話次數視您的授權合約而定。 如需詳細資訊，請參閱[此頁面](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-campaign-classic---product-description.html)。\
->[此專屬檔案]&#x200B;(https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hant)提供所有API的清單，包括其完整說明。
+>[此專屬檔案]&#x200B;(https://experienceleague.adobe.com/en/tools/campaign-api)提供所有API的清單，包括其完整說明
 
 ## 先決條件 {#prerequisites}
 
@@ -48,7 +45,7 @@ Adobe Campaign使用兩種型別的API：
 * 用於查詢資料模型資料的一般資料存取API。 請參閱[資料導向API](../../configuration/using/data-oriented-apis.md)。
 * 業務特定API可讓您對每個物件執行動作：傳送、工作流程、訂閱等。請參閱[商業導向API](../../configuration/using/business-oriented-apis.md)。
 
-為了開發API並與Adobe Campaign互動，您需要熟悉您的資料模型。 Adobe Campaign可讓您產生基底的完整說明。 請參閱模型[&#128279;](../../configuration/using/data-oriented-apis.md#description-of-the-model)的描述。
+為了開發API並與Adobe Campaign互動，您需要熟悉您的資料模型。 Adobe Campaign可讓您產生基底的完整說明。 請參閱模型](../../configuration/using/data-oriented-apis.md#description-of-the-model)的[描述。
 
 ## SOAP 呼叫 {#soap-calls}
 
@@ -144,10 +141,10 @@ SOAP訊息內文中的`<soap-env:fault>`元素是用來傳達處理網站服務�
 
 * `<faultcode>` ：指出錯誤的型別。 錯誤型別為：
 
-   * 若與所使用的SOAP版本不相容，
-   * 「MustUnderstand」在訊息標頭發生問題的情況下，
-   * 「使用者端」在使用者端遺失某些資訊時，
-   * 「伺服器」（在伺服器執行處理時發生問題的事件中）。
+  * 若與所使用的SOAP版本不相容，
+  * 「MustUnderstand」在訊息標頭發生問題的情況下，
+  * 「使用者端」在使用者端遺失某些資訊時，
+  * 「伺服器」（在伺服器執行處理時發生問題的事件中）。
 
 * `<faultstring>` ：描述錯誤的訊息
 * `<detail>` ：長錯誤訊息

@@ -8,21 +8,14 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: a93bac61-f615-4178-bc12-0f056e48687d
 TQID: https://experienceleague.adobe.com/FamgSPCsG0flxP4eUriwPD3SCzGvvsfnqQXZwiMpnYI
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-topic_v2:
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-feature_v2:
-  - id: afa4204e-6d08-4e29-bc35-26aafb656d48
-subfeature_v2:
-  - id: f529d0bd-1401-4c88-9833-43228cc1d40f
-  - id: d6330382-c886-4f7a-a4f7-74e3f36c0d9c
-  - id: f5293531-9312-4099-bfa3-9e67df6a8750
-  - id: efa38731-2723-4334-8d8b-a778af834835
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+topic_v2: id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+feature_v2: id: afa4204e-6d08-4e29-bc35-26aafb656d48
+subfeature_v2: id: f529d0bd-1401-4c88-9833-43228cc1d40fid: d6330382-c886-4f7a-a4f7-74e3f36c0d9cid: f5293531-9312-4099-bfa3-9e67df6a8750id: efa38731-2723-4334-8d8b-a778af834835
+source-git-commit: 073ad5eccc52ad63e92829de4a4c6ac6178635e1
 workflow-type: tm+mt
-source-wordcount: 662
-ht-degree: 91%
+source-wordcount: 659
+ht-degree: 90%
 
 ---
 
@@ -32,7 +25,7 @@ ht-degree: 91%
 
 Adobe Campaign 提供&#x200B;**API**，可讓您設定自動隱私權請求流程。
 
-使用 API 時，一般的隱私權流程與使用介面[&#128279;](privacy-requests-ui.md)的流程相同。 唯一的不同是隱私權請求的建立。 系統不會在 Adobe Campaign 建立請求，而會傳送包含請求資訊的 POST 至 Campaign。 對於每個請求，都會在 **[!UICONTROL Privacy Requests]** 畫面中新增一個項目。 然後，隱私權技術工作流程會處理請求，與使用介面新增請求的方式相同。
+使用 API 時，一般的隱私權流程與使用介面](privacy-requests-ui.md)的[流程相同。 唯一的不同是隱私權請求的建立。 系統不會在 Adobe Campaign 建立請求，而會傳送包含請求資訊的 POST 至 Campaign。 對於每個請求，都會在 **[!UICONTROL Privacy Requests]** 畫面中新增一個項目。 然後，隱私權技術工作流程會處理請求，與使用介面新增請求的方式相同。
 
 如果您使用 API 來提交隱私權請求，建議您保留針對第一個刪除請求啟動的&#x200B;**兩步驟流程**，以測試傳回的資料。 測試完成後，您可以停用兩步驟流程，讓刪除請求流程自動執行。
 
@@ -68,7 +61,7 @@ Adobe Campaign 提供&#x200B;**API**，可讓您設定自動隱私權請求流�
 
 ## 在外部叫用 API {#invoking-api-externally}
 
-以下是如何從外部叫用 API 的範例 (特別透過 API 以及隱私權 API 的詳細資訊進行驗證)。 如需隱私權 API 的詳細資訊，請參閱 [API 文件](https://experienceleague.adobe.com/developer/campaign-api/api/s-nms-privacyRequest.html?lang=zh-Hant)。 您也可以參閱 [Web 服務呼叫文件](../../configuration/using/web-service-calls.md)。
+以下是如何從外部叫用 API 的範例 (特別透過 API 以及隱私權 API 的詳細資訊進行驗證)。 如需隱私權 API 的詳細資訊，請參閱 [API 文件](https://experienceleague.adobe.com/en/tools/campaign-api)。 您也可以參閱 [Web 服務呼叫文件](../../configuration/using/web-service-calls.md)。
 
 首先，您需要透過 API 執行驗證：
 
