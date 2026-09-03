@@ -24,9 +24,9 @@ subfeature_v2:
   - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+source-git-commit: e615a6fdd6dc78b2c5e80d6aeb92cd9291ccf5e7
 workflow-type: tm+mt
-source-wordcount: 1981
+source-wordcount: 2051
 ht-degree: 1%
 
 ---
@@ -79,6 +79,10 @@ ht-degree: 1%
 >[!IMPORTANT]
 >
 >基於隱私權原因，我們建議對所有外部資源使用HTTPS。
+
+>[!IMPORTANT]
+>
+>版本7.4.4 (build 9401)包含外部URL允許清單的更新。 請確定訊息內容中使用的網域已新增至執行個體的已核准允許清單，以便資源能夠繼續載入而不會中斷。 作為Campaign管理員，請使用「控制面板」新增及管理允許清單的URL。 如需步驟，請參閱[新增URL許可權](https://experienceleague.adobe.com/zh-hant/docs/control-panel/using/instances-settings/url-permissions){target="_blank"}。
 
 訊息的內容會在傳遞設定視窗的下半部分中定義。
 

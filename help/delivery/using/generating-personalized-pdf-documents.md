@@ -23,9 +23,9 @@ subfeature_v2:
   - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+source-git-commit: e615a6fdd6dc78b2c5e80d6aeb92cd9291ccf5e7
 workflow-type: tm+mt
-source-wordcount: 461
+source-wordcount: 533
 ht-degree: 1%
 
 ---
@@ -64,6 +64,10 @@ Adobe Campaign可讓您從LibreOffice或Microsoft Word檔案，產生電子郵�
 
 ## 插入外部影像 {#inserting-external-images}
 
+>[!IMPORTANT]
+>
+>版本7.4.4 (build 9401)包含外部URL允許清單的更新。 確認附件中用於外部影像的網域已新增至執行個體的已核准允許清單，以便資源能夠繼續載入而不會中斷。 作為Campaign管理員，請使用「控制面板」新增及管理允許清單的URL。 如需步驟，請參閱[新增URL許可權](https://experienceleague.adobe.com/zh-hant/docs/control-panel/using/instances-settings/url-permissions){target="_blank"}。
+
 例如，如果您想要個人化包含其URL已輸入收件者欄位中的影像的檔案，則插入外部影像會很有用。
 
 若要這麼做，您需要設定個人化區塊，然後在附件中包含對個人化區塊的呼叫。
@@ -87,8 +91,8 @@ Adobe Campaign可讓您從LibreOffice或Microsoft Word檔案，產生電子郵�
 
   您需要在個人化區塊中區分兩種型別的宣告：
 
-   * 個人化欄位的Adobe Campaign程式碼，「開啟」和「關閉」V形箭號必須替換為逸出字元（分別為`&lt;`和`&gt;`）。
-   * 整個OpenOffice XML程式碼將會複製到OpenOffice檔案中。
+  * 個人化欄位的Adobe Campaign程式碼，「開啟」和「關閉」V形箭號必須替換為逸出字元（分別為`&lt;`和`&gt;`）。
+  * 整個OpenOffice XML程式碼將會複製到OpenOffice檔案中。
 
 在範例中，個人化區塊看起來像這樣：
 

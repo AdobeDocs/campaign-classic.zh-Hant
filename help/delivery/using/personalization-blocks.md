@@ -22,10 +22,10 @@ subfeature_v2:
   - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+source-git-commit: e615a6fdd6dc78b2c5e80d6aeb92cd9291ccf5e7
 workflow-type: tm+mt
-source-wordcount: 894
-ht-degree: 3%
+source-wordcount: 988
+ht-degree: 4%
 
 ---
 
@@ -135,6 +135,10 @@ HTML原始碼會插入傳遞內容中。 例如，**[!UICONTROL Greetings]**&#x2
 * **[!UICONTROL Offer acceptance URL in unitary mode]** ：插入URL以啟用設定互動選件至&#x200B;**[!UICONTROL Accepted]** （請參閱[此區段](../../interaction/using/offer-analysis-report.md)）。
 
 ## 定義自訂個人化區塊 {#defining-custom-personalization-blocks}
+
+>[!IMPORTANT]
+>
+>版本7.4.4 (build 9401)包含外部URL允許清單的更新。 如果自訂個人化區塊參考外部URL （例如外部託管的影像），請確保將網域新增到您執行個體的已核准允許清單中，讓資源持續載入而不會中斷。 作為Campaign管理員，請使用「控制面板」新增及管理允許清單的URL。 如需步驟，請參閱[新增URL許可權](https://experienceleague.adobe.com/zh-hant/docs/control-panel/using/instances-settings/url-permissions){target="_blank"}。
 
 您可以透過&#x200B;**[!UICONTROL Include...]**&#x200B;功能表，從個人化欄點陣圖示定義要插入的新個人化欄位。 這些欄位會在個人化區塊中定義。
 
