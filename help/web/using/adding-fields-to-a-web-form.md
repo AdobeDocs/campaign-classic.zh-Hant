@@ -17,10 +17,10 @@ subfeature_v2:
   - id: f391046b-0cf3-4e76-bd3b-97fe06654506
   - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
   - id: d7be2b01-dc9c-40f7-aace-a151707504ed
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+source-git-commit: 073ad5eccc52ad63e92829de4a4c6ac6178635e1
 workflow-type: tm+mt
-source-wordcount: 2373
-ht-degree: 1%
+source-wordcount: 2399
+ht-degree: 0%
 
 ---
 
@@ -231,7 +231,7 @@ ht-degree: 1%
 >[!NOTE]
 >
 >您無法在Web應用程式中啟用多重選取範圍。
->但是，可以將&#x200B;**[!UICONTROL Multiple choice]**&#x200B;型別欄位插入網頁應用程式，但使用者無法選取數個值。
+>但是，可以將&#x200B;**[!UICONTROL Multiple choice]**&#x200B;型別欄位插入Web應用程式，但這無法讓使用者選取數個值。
 
 ## 新增格點 {#adding-grids}
 
@@ -379,7 +379,7 @@ ht-degree: 1%
 
 若要將上傳欄位插入表單頁面，請選取頁面編輯器工具列中的&#x200B;**[!UICONTROL Advanced controls > File...]**&#x200B;功能表。
 
-依預設，上傳的檔案會儲存在可透過&#x200B;**[!UICONTROL Resources > Online > Public resources]**&#x200B;功能表存取的資源檔案中。 您可以使用指令碼來變更此行為。 此指令碼可以使用[Campaign JSAPI檔案](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hant)中定義的函式，包括涉及檔案操作的函式。
+依預設，上傳的檔案會儲存在可透過&#x200B;**[!UICONTROL Resources > Online > Public resources]**&#x200B;功能表存取的資源檔案中。 您可以使用指令碼來變更此行為。 此指令碼可以使用[Campaign JSAPI檔案](https://experienceleague.adobe.com/zh-hant/tools/campaign-api)中定義的函式，包括涉及檔案操作的函式。
 
 您可以將這些檔案的連結儲存在本機變數或資料庫欄位中。 例如，您可以擴充收件者綱要以新增檔案型資源的連結。
 

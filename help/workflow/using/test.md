@@ -13,10 +13,10 @@ subfeature_v2:
   - id: ee25c34b-ea50-427b-9369-ba0a160f7d70
   - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
   - id: d1110311-2ca4-442b-be37-088a6db845ee
-source-git-commit: c35995a47788db080636c66827a4bd6dc98806cf
+source-git-commit: 073ad5eccc52ad63e92829de4a4c6ac6178635e1
 workflow-type: tm+mt
-source-wordcount: 193
-ht-degree: 4%
+source-wordcount: 192
+ht-degree: 1%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 4%
 
 ![](assets/edit_test.png)
 
-如需透過工作流程JavaScript存取之應用程式伺服器的所有其他JavaScript函式和SOAP方法的詳細資訊，請參閱[JSAPI檔案](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hant)。
+如需透過工作流程JavaScript存取之應用程式伺服器的所有其他JavaScript函式和SOAP方法的詳細資訊，請參閱[JSAPI檔案](https://experienceleague.adobe.com/zh-hant/tools/campaign-api)。
 
 您也可以從此編輯器直接插入變數。 有關如何使用變數的詳細資訊，請參閱[本節](javascript-scripts-and-templates.md#variables)。
 

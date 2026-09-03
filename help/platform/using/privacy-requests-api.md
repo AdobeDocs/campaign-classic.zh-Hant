@@ -19,10 +19,10 @@ subfeature_v2:
   - id: d6330382-c886-4f7a-a4f7-74e3f36c0d9c
   - id: f5293531-9312-4099-bfa3-9e67df6a8750
   - id: efa38731-2723-4334-8d8b-a778af834835
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+source-git-commit: 073ad5eccc52ad63e92829de4a4c6ac6178635e1
 workflow-type: tm+mt
-source-wordcount: 662
-ht-degree: 91%
+source-wordcount: 659
+ht-degree: 90%
 
 ---
 
@@ -68,7 +68,7 @@ Adobe Campaign 提供&#x200B;**API**，可讓您設定自動隱私權請求流�
 
 ## 在外部叫用 API {#invoking-api-externally}
 
-以下是如何從外部叫用 API 的範例 (特別透過 API 以及隱私權 API 的詳細資訊進行驗證)。 如需隱私權 API 的詳細資訊，請參閱 [API 文件](https://experienceleague.adobe.com/developer/campaign-api/api/s-nms-privacyRequest.html?lang=zh-Hant)。 您也可以參閱 [Web 服務呼叫文件](../../configuration/using/web-service-calls.md)。
+以下是如何從外部叫用 API 的範例 (特別透過 API 以及隱私權 API 的詳細資訊進行驗證)。 如需隱私權 API 的詳細資訊，請參閱 [API 文件](https://experienceleague.adobe.com/zh-hant/tools/campaign-api)。 您也可以參閱 [Web 服務呼叫文件](../../configuration/using/web-service-calls.md)。
 
 首先，您需要透過 API 執行驗證：
 

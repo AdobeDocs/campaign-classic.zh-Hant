@@ -13,10 +13,10 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 subfeature_v2: []
-source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
+source-git-commit: 073ad5eccc52ad63e92829de4a4c6ac6178635e1
 workflow-type: tm+mt
-source-wordcount: 625
-ht-degree: 3%
+source-wordcount: 624
+ht-degree: 2%
 
 ---
 
@@ -26,16 +26,16 @@ Business API是每種物件型別專屬的。 它們會影響：
 
 * 傳遞：
 
-   * 正在建立傳遞動作，請參閱[SubmitDelivery (nms:delivery)](#submitdelivery--nms-delivery-)，
-   * 傳送行銷活動（開始、暫停、停止、傳送證明）、
-   * 復原傳遞記錄。
+  * 正在建立傳遞動作，請參閱[SubmitDelivery (nms:delivery)](#submitdelivery--nms-delivery-)，
+  * 傳送行銷活動（開始、暫停、停止、傳送證明）、
+  * 復原傳遞記錄。
 
 * 工作流程：
 
-   * 啟動工作流程，
-   * 驗證流程等。
+  * 啟動工作流程，
+  * 驗證流程等。
 
-     請參閱JavaScript[&#128279;](../../configuration/using/soap-methods-in-javascript.md)中的SOAP方法。
+    請參閱JavaScript[&#128279;](../../configuration/using/soap-methods-in-javascript.md)中的SOAP方法。
 
 * 內容管理
 * 訂閱管理，請參閱[訂閱(nms:subscription)](#subscribe--nms-subscription-)和[取消訂閱(nms:subscription)](#unsubscribe--nms-subscription-)。
@@ -45,7 +45,7 @@ Business API是每種物件型別專屬的。 它們會影響：
 
 >[!IMPORTANT]
 >
->[Campaign JSAPI檔案](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hant)包含有關Adobe Campaign中SOAP呼叫和使用Javascript的其他資訊，以及應用程式中使用的所有方法和函式的完整參考。
+>[Campaign JSAPI檔案](https://experienceleague.adobe.com/zh-hant/tools/campaign-api)包含有關Adobe Campaign中SOAP呼叫和使用Javascript的其他資訊，以及應用程式中使用的所有方法和函式的完整參考。
 
 ## 訂閱(nms:subscription) {#subscribe--nms-subscription-}
 

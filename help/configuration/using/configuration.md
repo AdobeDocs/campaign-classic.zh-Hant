@@ -17,10 +17,10 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+source-git-commit: 073ad5eccc52ad63e92829de4a4c6ac6178635e1
 workflow-type: tm+mt
-source-wordcount: 1212
-ht-degree: 1%
+source-wordcount: 1210
+ht-degree: 0%
 
 ---
 
@@ -104,7 +104,7 @@ XML檔案包含具有&#x200B;**名稱**&#x200B;和&#x200B;**名稱空間**&#x200
 
 命令分隔符號可讓您在命令之間顯示分隔列。 它由包含在命令標籤中的&#x200B;**&#39;-&#39;**&#x200B;值識別。
 
-**`<soapcall>`**&#x200B;標籤及其輸入引數的選擇性存在會定義要執行的SOAP方法呼叫。 如需SOAP API的詳細資訊，請參閱[Campaign JSAPI檔案](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hant)。
+**`<soapcall>`**&#x200B;標籤及其輸入引數的選擇性存在會定義要執行的SOAP方法呼叫。 如需SOAP API的詳細資訊，請參閱[Campaign JSAPI檔案](https://experienceleague.adobe.com/zh-hant/tools/campaign-api)。
 
 從&#x200B;**`<enter>`**&#x200B;標籤初始化時可以更新表單內容。 如需有關此標籤的詳細資訊，請參閱有關輸入表單的檔案。
 
@@ -277,7 +277,7 @@ XML檔案包含具有&#x200B;**名稱**&#x200B;和&#x200B;**名稱空間**&#x200
 
 命令分隔符號可讓您在命令之間顯示分隔列。 它由包含在命令標籤中的&#x200B;**&#39;-&#39;**&#x200B;值識別。
 
-**`<soapcall>`**&#x200B;標籤及其輸入引數的選擇性存在會定義要執行的SOAP方法呼叫。 如需SOAP API的詳細資訊，請參閱[Campaign JSAPI檔案](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hant)。
+**`<soapcall>`**&#x200B;標籤及其輸入引數的選擇性存在會定義要執行的SOAP方法呼叫。 如需SOAP API的詳細資訊，請參閱[Campaign JSAPI檔案](https://experienceleague.adobe.com/zh-hant/tools/campaign-api)。
 
 初始化時可透過&#x200B;**`<enter>`**&#x200B;標籤更新表單內容。 如需此標籤的詳細資訊，請參閱輸入表單檔案。
 

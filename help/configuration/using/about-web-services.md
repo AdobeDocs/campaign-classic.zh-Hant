@@ -13,9 +13,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 subfeature_v2: []
-source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
+source-git-commit: 073ad5eccc52ad63e92829de4a4c6ac6178635e1
 workflow-type: tm+mt
-source-wordcount: 665
+source-wordcount: 664
 ht-degree: 4%
 
 ---
@@ -31,7 +31,7 @@ Adobe Campaign API可用於應用程式內的JavaScript以及應用程式外的S
 >[!IMPORTANT]
 >
 >授權引擎每日的通話次數視您的授權合約而定。 如需詳細資訊，請參閱[此頁面](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-campaign-classic---product-description.html)。\
->[此專屬檔案]&#x200B;(https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hant)提供所有API的清單，包括其完整說明。
+>[此專屬檔案]&#x200B;(https://experienceleague.adobe.com/zh-hant/tools/campaign-api)提供所有API的清單，包括其完整說明
 
 ## 先決條件 {#prerequisites}
 
@@ -144,10 +144,10 @@ SOAP訊息內文中的`<soap-env:fault>`元素是用來傳達處理網站服務�
 
 * `<faultcode>` ：指出錯誤的型別。 錯誤型別為：
 
-   * 若與所使用的SOAP版本不相容，
-   * 「MustUnderstand」在訊息標頭發生問題的情況下，
-   * 「使用者端」在使用者端遺失某些資訊時，
-   * 「伺服器」（在伺服器執行處理時發生問題的事件中）。
+  * 若與所使用的SOAP版本不相容，
+  * 「MustUnderstand」在訊息標頭發生問題的情況下，
+  * 「使用者端」在使用者端遺失某些資訊時，
+  * 「伺服器」（在伺服器執行處理時發生問題的事件中）。
 
 * `<faultstring>` ：描述錯誤的訊息
 * `<detail>` ：長錯誤訊息
