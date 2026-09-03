@@ -82,7 +82,7 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->版本7.4.4 (build 9401)包含外部URL允許清單的更新。 請確定訊息內容中使用的網域已新增至執行個體的已核准允許清單，以便資源能夠繼續載入而不會中斷。 作為Campaign管理員，請使用「控制面板」新增及管理允許清單的URL。 如需步驟，請參閱[新增URL許可權](https://experienceleague.adobe.com/en/docs/control-panel/using/instances-settings/url-permissions){target="_blank"}。
+>版本7.4.4 (build 9401)包含外部URL允許清單的更新。 請確定訊息內容中使用的網域已新增至執行個體的已核准允許清單，以便資源能夠繼續載入而不會中斷。 作為Campaign管理員，請使用「控制面板」新增及管理允許清單的URL。 如需步驟，請參閱[新增URL許可權](https://experienceleague.adobe.com/zh-hant/docs/control-panel/using/instances-settings/url-permissions){target="_blank"}。
 
 訊息的內容會在傳遞設定視窗的下半部分中定義。
 
@@ -135,7 +135,7 @@ ht-degree: 1%
 
 Adobe Campaign可讓您嘗試新的互動式[AMP for Email](https://amp.dev/about/email/)格式，在特定條件下傳送動態電子郵件。
 
-如需詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-interactive-content.html){target="_blank"}。
+如需詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-interactive-content.html?lang=zh-Hant){target="_blank"}。
 
 ## 使用內容管理 {#using-content-management}
 

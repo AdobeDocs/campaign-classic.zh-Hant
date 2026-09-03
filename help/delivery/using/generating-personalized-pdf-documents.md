@@ -40,7 +40,7 @@ Adobe Campaign可讓您從LibreOffice或Microsoft Word檔案，產生電子郵�
 
 若要個人化您的檔案，可使用與電子郵件個人化相同的JavaScript功能。
 
-您必須啟用&#x200B;**[!UICONTROL "The content of the file is personalized and converted to PDF during the delivery of each message"]**&#x200B;選項。 將檔案附加至傳遞電子郵件時，可存取此選項。 如需附加計算檔案的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/attaching-files.html){target="_blank"}。
+您必須啟用&#x200B;**[!UICONTROL "The content of the file is personalized and converted to PDF during the delivery of each message"]**&#x200B;選項。 將檔案附加至傳遞電子郵件時，可存取此選項。 如需附加計算檔案的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/attaching-files.html?lang=zh-Hant){target="_blank"}。
 
 商業發票表頭個人化的範例：
 
@@ -66,7 +66,7 @@ Adobe Campaign可讓您從LibreOffice或Microsoft Word檔案，產生電子郵�
 
 >[!IMPORTANT]
 >
->版本7.4.4 (build 9401)包含外部URL允許清單的更新。 確認附件中用於外部影像的網域已新增至執行個體的已核准允許清單，以便資源能夠繼續載入而不會中斷。 作為Campaign管理員，請使用「控制面板」新增及管理允許清單的URL。 如需步驟，請參閱[新增URL許可權](https://experienceleague.adobe.com/en/docs/control-panel/using/instances-settings/url-permissions){target="_blank"}。
+>版本7.4.4 (build 9401)包含外部URL允許清單的更新。 確認附件中用於外部影像的網域已新增至執行個體的已核准允許清單，以便資源能夠繼續載入而不會中斷。 作為Campaign管理員，請使用「控制面板」新增及管理允許清單的URL。 如需步驟，請參閱[新增URL許可權](https://experienceleague.adobe.com/zh-hant/docs/control-panel/using/instances-settings/url-permissions){target="_blank"}。
 
 例如，如果您想要個人化包含其URL已輸入收件者欄位中的影像的檔案，則插入外部影像會很有用。
 

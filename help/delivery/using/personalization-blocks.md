@@ -138,7 +138,7 @@ HTML原始碼會插入傳遞內容中。 例如，**[!UICONTROL Greetings]**&#x2
 
 >[!IMPORTANT]
 >
->版本7.4.4 (build 9401)包含外部URL允許清單的更新。 如果自訂個人化區塊參考外部URL （例如外部託管的影像），請確保將網域新增到您執行個體的已核准允許清單中，讓資源持續載入而不會中斷。 作為Campaign管理員，請使用「控制面板」新增及管理允許清單的URL。 如需步驟，請參閱[新增URL許可權](https://experienceleague.adobe.com/en/docs/control-panel/using/instances-settings/url-permissions){target="_blank"}。
+>版本7.4.4 (build 9401)包含外部URL允許清單的更新。 如果自訂個人化區塊參考外部URL （例如外部託管的影像），請確保將網域新增到您執行個體的已核准允許清單中，讓資源持續載入而不會中斷。 作為Campaign管理員，請使用「控制面板」新增及管理允許清單的URL。 如需步驟，請參閱[新增URL許可權](https://experienceleague.adobe.com/zh-hant/docs/control-panel/using/instances-settings/url-permissions){target="_blank"}。
 
 您可以透過&#x200B;**[!UICONTROL Include...]**&#x200B;功能表，從個人化欄點陣圖示定義要插入的新個人化欄位。 這些欄位會在個人化區塊中定義。
 

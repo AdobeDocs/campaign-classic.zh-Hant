@@ -50,7 +50,7 @@ Adobe 已發佈 Adobe Campaign Classic 的安全性更新，以解決關鍵弱�
 
 此版本包含用於傳遞內容和附件的外部URL允許清單的更新。 確定您目前參考的所有網域都已新增至您執行個體的已核准允許清單。
 
-身為Campaign管理員，請使用「控制面板」將目前用於傳遞中的外部URL新增至允許清單，並對任何未來的新外部URL遵循相同程式。 在2026年9月5日之前完成此活動，以避免影響受影響的傳送。 如需步驟，請參閱[新增URL許可權](https://experienceleague.adobe.com/en/docs/control-panel/using/instances-settings/url-permissions){target="_blank"}。
+身為Campaign管理員，請使用「控制面板」將目前用於傳遞中的外部URL新增至允許清單，並對任何未來的新外部URL遵循相同程式。 在2026年9月5日之前完成此活動，以避免影響受影響的傳送。 如需步驟，請參閱[新增URL許可權](https://experienceleague.adobe.com/zh-hant/docs/control-panel/using/instances-settings/url-permissions){target="_blank"}。
 
 ### 版本編號 9400 {#build-9400}
 
