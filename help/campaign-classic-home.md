@@ -43,12 +43,12 @@
 <target xml:lang="en-XX">快速一覽 Adobe Campaign Classic v7 產品和文件的最新增強功能！ 如需功能、改進項目與修正的完整清單，請參閱詳細的<ph id="1" ctype="x-LINK">[</ph>發行說明<ph id="2" ctype="x-LINK">](rn/using/latest-release.md)</ph>。</target>
 </trans-unit>
 <trans-unit id="tu6" xml:space="preserve">
-<source xml:lang="en-US"><ph id="1" ctype="x-regxph" equiv-text="[!BEGINTABS">[!BEGINTABS]</ph></source>
-<target xml:lang="en-XX"><ph id="1" ctype="x-regxph" equiv-text="[!BEGINTABS">[!BEGINTABS]</ph></target>
+<source xml:lang="en-US"><ph id="1" ctype="x-regxph" equiv-text="&lbrack;!BEGINTABS">[!BEGINTABS]</ph></source>
+<target xml:lang="en-XX"><ph id="1" ctype="x-regxph" equiv-text="&lbrack;!BEGINTABS">[!BEGINTABS]</ph></target>
 </trans-unit>
 <trans-unit id="tu7" xml:space="preserve">
-<source xml:lang="en-US"><ph id="1" ctype="x-regxph" equiv-text="[!TAB ">[!TAB </ph>August 2026 release is live!<ph id="2" ctype="x-LINK_REF">]</ph></source>
-<target xml:lang="en-XX"><ph id="1" ctype="x-regxph" equiv-text="[!TAB ">[!TAB </ph>2026 年 8 月版本已上線！<ph id="2" ctype="x-LINK_REF">]</ph></target>
+<source xml:lang="en-US"><ph id="1" ctype="x-regxph" equiv-text="&lbrack;!TAB ">[!TAB </ph>August 2026 release is live!<ph id="2" ctype="x-LINK_REF">]</ph></source>
+<target xml:lang="en-XX"><ph id="1" ctype="x-regxph" equiv-text="&lbrack;!TAB ">[!TAB </ph>2026 年 8 月版本已上線！<ph id="2" ctype="x-LINK_REF">]</ph></target>
 </trans-unit>
 <trans-unit id="tu8" xml:space="preserve">
 <source xml:lang="en-US">The Campaign Classic v7.4.4 - August '26 build delivers security updates and upgrades the Adobe Analytics connector to the Analytics 2.0 API.</source>
@@ -59,8 +59,8 @@
 <target xml:lang="en-XX"><ph id="1" ctype="x-LINK">[![</ph>影像<ph id="3" ctype="x-IMAGE">](assets/do-not-localize/learn-more-button.svg)](rn/using/latest-release.md)</ph></target>
 </trans-unit>
 <trans-unit id="tu10" xml:space="preserve">
-<source xml:lang="en-US"><ph id="1" ctype="x-regxph" equiv-text="[!TAB ">[!TAB </ph>Move to Adobe IMS<ph id="2" ctype="x-LINK_REF">]</ph></source>
-<target xml:lang="en-XX"><ph id="1" ctype="x-regxph" equiv-text="[!TAB ">[!TAB </ph>移至 Adobe IMS<ph id="2" ctype="x-LINK_REF">]</ph></target>
+<source xml:lang="en-US"><ph id="1" ctype="x-regxph" equiv-text="&lbrack;!TAB ">[!TAB </ph>Move to Adobe IMS<ph id="2" ctype="x-LINK_REF">]</ph></source>
+<target xml:lang="en-XX"><ph id="1" ctype="x-regxph" equiv-text="&lbrack;!TAB ">[!TAB </ph>移至 Adobe IMS<ph id="2" ctype="x-LINK_REF">]</ph></target>
 </trans-unit>
 <trans-unit id="tu11" xml:space="preserve">
 <source xml:lang="en-US">To reinforce security and authentication process, Adobe Campaign highly recommends to migrate end user authentication mode from the login/password native authentication to Adobe Identity Management System (IMS).</source>
@@ -71,20 +71,20 @@
 <target xml:lang="en-XX"><ph id="1" ctype="x-LINK">[![</ph>影像<ph id="3" ctype="x-IMAGE">](assets/do-not-localize/learn-more-button.svg)](technotes/using/ac-ims.md)</ph></target>
 </trans-unit>
 <trans-unit id="tu13" xml:space="preserve">
-<source xml:lang="en-US"><ph id="1" ctype="x-regxph" equiv-text="[!TAB ">[!TAB </ph>Push channel changes<ph id="2" ctype="x-LINK_REF">]</ph></source>
-<target xml:lang="en-XX"><ph id="1" ctype="x-regxph" equiv-text="[!TAB ">[!TAB </ph>推播管道變更<ph id="2" ctype="x-LINK_REF">]</ph></target>
+<source xml:lang="en-US"><ph id="1" ctype="x-regxph" equiv-text="&lbrack;!TAB ">[!TAB </ph>Push channel changes<ph id="2" ctype="x-LINK_REF">]</ph></source>
+<target xml:lang="en-XX"><ph id="1" ctype="x-regxph" equiv-text="&lbrack;!TAB ">[!TAB </ph>推播管道變更<ph id="2" ctype="x-LINK_REF">]</ph></target>
 </trans-unit>
 <trans-unit id="tu14" xml:space="preserve">
 <source xml:lang="en-US">Some important changes to the Android Firebase Cloud Messaging (FCM) service will be released in 2024, and may impact your Adobe Campaign implementation. Your subscription services configuration for Android push messages may need to be updated to support this change. You can already check and take action.</source>
 <target xml:lang="en-XX">Android Firebase Cloud Messaging (FCM) 服務的一些重要變更將於 2024 年發行，並可能影響 Adobe Campaign 實施。 Android 推播訊息訂閱服務設定可能需要更新，才能支援此變更。 您已經可以檢查並採取動作。</target>
 </trans-unit>
 <trans-unit id="tu15" xml:space="preserve">
-<source xml:lang="en-US"><ph id="1" ctype="x-LINK">[![</ph>image<ph id="3" ctype="x-IMAGE">](assets/do-not-localize/learn-more-button.svg)</ph><ph id="4" ctype="x-LINK">[#$tu16]{target="_blank"}</ph></source>
-<target xml:lang="en-XX"><ph id="1" ctype="x-LINK">[![</ph>影像<ph id="3" ctype="x-IMAGE">](assets/do-not-localize/learn-more-button.svg)</ph><ph id="4" ctype="x-LINK">[#$tu16]{target="_blank"}</ph></target>
+<source xml:lang="en-US"><ph id="1" ctype="x-LINK">&lbrack;![</ph>image<ph id="3" ctype="x-IMAGE">](assets/do-not-localize/learn-more-button.svg)</ph><ph id="4" ctype="x-LINK">[#$tu16]{target="_blank"}</ph></source>
+<target xml:lang="en-XX"><ph id="1" ctype="x-LINK">&lbrack;![</ph>影像<ph id="3" ctype="x-IMAGE">](assets/do-not-localize/learn-more-button.svg)</ph><ph id="4" ctype="x-LINK">[#$tu16]{target="_blank"}</ph></target>
 </trans-unit>
 <trans-unit id="tu17" xml:space="preserve">
-<source xml:lang="en-US"><ph id="1" ctype="x-regxph" equiv-text="[!ENDTABS">[!ENDTABS]</ph></source>
-<target xml:lang="en-XX"><ph id="1" ctype="x-regxph" equiv-text="[!ENDTABS">[!ENDTABS]</ph></target>
+<source xml:lang="en-US"><ph id="1" ctype="x-regxph" equiv-text="&lbrack;!ENDTABS">[!ENDTABS]</ph></source>
+<target xml:lang="en-XX"><ph id="1" ctype="x-regxph" equiv-text="&lbrack;!ENDTABS">[!ENDTABS]</ph></target>
 </trans-unit>
 <trans-unit id="tu18" xml:space="preserve">
 <source xml:lang="en-US">Start with the basics</source>
@@ -253,8 +253,8 @@
 <target xml:lang="en-XX">額外資源</target>
 </trans-unit>
 <trans-unit id="tu21" xml:space="preserve">
-<source xml:lang="en-US"><ph id="1" ctype="x-LINK">[</ph>Adobe Campaign Product Description<ph id="2" ctype="x-LINK">[#$tu22]{target="_blank"}</ph> - <ph id="3" ctype="x-LINK">[</ph>Compatibility matrix<ph id="4" ctype="x-LINK">](rn/using/compatibility-matrix.md)</ph> - <ph id="5" ctype="x-LINK">[</ph>Tutorials<ph id="6" ctype="x-LINK">[#$tu23]{target="_blank"}</ph> - <ph id="7" ctype="x-LINK">[</ph>Control Panel for Campaign<ph id="8" ctype="x-LINK">[#$tu24]{target="_blank"}</ph> - <ph id="9" ctype="x-LINK">[</ph>Email Tracking Pixels and CNIL Guidance<ph id="10" ctype="x-LINK">[#$tu25]{target="_blank"}</ph></source>
-<target xml:lang="en-XX"><ph id="1" ctype="x-LINK">[</ph>Adobe Campaign 產品說明<ph id="2" ctype="x-LINK">[#$tu22]{target="_blank"}</ph> - <ph id="3" ctype="x-LINK">[</ph>相容性矩陣<ph id="4" ctype="x-LINK">](rn/using/compatibility-matrix.md)</ph> - <ph id="5" ctype="x-LINK">[</ph>教學課程<ph id="6" ctype="x-LINK">[#$tu23]{target="_blank"}</ph> - <ph id="7" ctype="x-LINK">[</ph>Campaign 控制面板<ph id="8" ctype="x-LINK">[#$tu24]{target="_blank"}</ph> - <ph id="9" ctype="x-LINK">[</ph>電子郵件追蹤像素與 CNIL 指南<ph id="10" ctype="x-LINK">[#$tu25]{target="_blank"}</ph></target>
+<source xml:lang="en-US"><ph id="1" ctype="x-LINK">&lbrack;</ph>Adobe Campaign Product Description<ph id="2" ctype="x-LINK">[#$tu22]{target="_blank"}</ph> - <ph id="3" ctype="x-LINK">[</ph>Compatibility matrix<ph id="4" ctype="x-LINK">](rn/using/compatibility-matrix.md){target="_blank"}</ph> - <ph id="5" ctype="x-LINK">&lbrack;</ph>Tutorials<ph id="6" ctype="x-LINK">[#$tu23]</ph> - <ph id="7" ctype="x-LINK">&lbrack;</ph>Control Panel for Campaign<ph id="8" ctype="x-LINK">[#$tu24]{target="_blank"}</ph> - <ph id="9" ctype="x-LINK">&lbrack;</ph>Email Tracking Pixels and CNIL Guidance<ph id="10" ctype="x-LINK">[#$tu25]{target="_blank"}</ph></source>
+<target xml:lang="en-XX"><ph id="1" ctype="x-LINK">&lbrack;</ph>Adobe Campaign 產品說明<ph id="2" ctype="x-LINK">[#$tu22]{target="_blank"}</ph> - <ph id="3" ctype="x-LINK">[</ph>相容性矩陣<ph id="4" ctype="x-LINK">](rn/using/compatibility-matrix.md){target="_blank"}</ph> - <ph id="5" ctype="x-LINK">&lbrack;</ph>教學課程<ph id="6" ctype="x-LINK">[#$tu23]</ph> - <ph id="7" ctype="x-LINK">&lbrack;</ph>Campaign 控制面板<ph id="8" ctype="x-LINK">[#$tu24]{target="_blank"}</ph> - <ph id="9" ctype="x-LINK">&lbrack;</ph>電子郵件追蹤像素與 CNIL 指南<ph id="10" ctype="x-LINK">[#$tu25]{target="_blank"}</ph></target>
 </trans-unit>
 </body>
 </file>
