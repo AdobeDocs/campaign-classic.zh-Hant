@@ -2,7 +2,7 @@
 product: campaign
 title: 產生個人化 PDF 文件
 description: 瞭解如何產生個人化PDF檔案
-badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Personalization
 role: User
 hide: true
@@ -10,26 +10,34 @@ exl-id: e5239d99-256b-412b-be20-f64f822da9c3
 TQID: https://experienceleague.adobe.com/5hETJLlKZ9iWu2k1nW-RMeDlzpSm7wFwfe3QwSEZCa4
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 feature_v2:
   - id: b631758a-142d-425f-b9aa-f756d85cb979
+    internal-label: Campaign Email Designer
   - id: c858a28b-ea19-49b0-8d48-828717fad89c
+    internal-label: Prepare and test messages
 subfeature_v2:
   - id: e95a583b-fcfa-4524-8666-46a29c828119
+    internal-label: Email messaging
   - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
+    internal-label: Email design
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
+    internal-label: A/B testing
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
+    internal-label: Manage deliverability
 source-git-commit: e615a6fdd6dc78b2c5e80d6aeb92cd9291ccf5e7
 workflow-type: tm+mt
-source-wordcount: 533
-ht-degree: 1%
-
+source-wordcount: '524'
+ht-degree: 4%
 ---
-
 # 產生個人化 PDF 文件{#generating-personalized-pdf-documents}
 
 ## 關於變數PDF檔案 {#about-variable-pdf-documents}
@@ -40,7 +48,7 @@ Adobe Campaign可讓您從LibreOffice或Microsoft Word檔案，產生電子郵�
 
 若要個人化您的檔案，可使用與電子郵件個人化相同的JavaScript功能。
 
-您必須啟用&#x200B;**[!UICONTROL "The content of the file is personalized and converted to PDF during the delivery of each message"]**&#x200B;選項。 將檔案附加至傳遞電子郵件時，可存取此選項。 如需附加計算檔案的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/attaching-files.html?lang=zh-Hant){target="_blank"}。
+您必須啟用&#x200B;**[!UICONTROL "The content of the file is personalized and converted to PDF during the delivery of each message"]**&#x200B;選項。 將檔案附加至傳遞電子郵件時，可存取此選項。 如需附加計算檔案的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/attaching-files.html){target="_blank"}。
 
 商業發票表頭個人化的範例：
 
@@ -66,7 +74,7 @@ Adobe Campaign可讓您從LibreOffice或Microsoft Word檔案，產生電子郵�
 
 >[!IMPORTANT]
 >
->版本7.4.4 (build 9401)包含外部URL允許清單的更新。 確認附件中用於外部影像的網域已新增至執行個體的已核准允許清單，以便資源能夠繼續載入而不會中斷。 作為Campaign管理員，請使用「控制面板」新增及管理允許清單的URL。 如需步驟，請參閱[新增URL許可權](https://experienceleague.adobe.com/zh-hant/docs/control-panel/using/instances-settings/url-permissions){target="_blank"}。
+>版本7.4.4 (build 9401)包含外部URL允許清單的更新。 確認附件中用於外部影像的網域已新增至執行個體的已核准允許清單，以便資源能夠繼續載入而不會中斷。 作為Campaign管理員，請使用「控制面板」新增及管理允許清單的URL。 如需步驟，請參閱[新增 URL 權限](https://experienceleague.adobe.com/zh-hant/docs/control-panel/using/instances-settings/url-permissions){target="_blank"}。
 
 例如，如果您想要個人化包含其URL已輸入收件者欄位中的影像的檔案，則插入外部影像會很有用。
 
