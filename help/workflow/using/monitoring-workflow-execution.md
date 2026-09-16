@@ -8,25 +8,33 @@ exl-id: d589180b-8e1d-4149-9b16-3f541018a41f
 TQID: https://experienceleague.adobe.com/PdqoAAfpNfS1GIdnbtMkkm-2sd0GcidR99za2Nxgbfo
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 subfeature_v2:
   - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
+    internal-label: Workflows
   - id: ee25c34b-ea50-427b-9369-ba0a160f7d70
+    internal-label: Workflow HeatMap
   - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
+    internal-label: Execution activities
   - id: d1110311-2ca4-442b-be37-088a6db845ee
+    internal-label: Data Management activities
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 2040
+source-wordcount: '2040'
 ht-degree: 2%
-
 ---
-
 # 監視工作流程的執行 {#monitoring-workflow-execution}
 
 
@@ -93,21 +101,21 @@ ht-degree: 2%
 
   您也可以檢視每個活動的執行記錄檔和詳細資訊。 有兩種方法可以達成此目的：
 
-   1. 選取目標活動，然後按一下&#x200B;**[!UICONTROL Display the tasks and the log]**&#x200B;圖示。
+  1. 選取目標活動，然後按一下&#x200B;**[!UICONTROL Display the tasks and the log]**&#x200B;圖示。
 
-      ![](assets/s_user_segmentation_show_logs.png)
+     ![](assets/s_user_segmentation_show_logs.png)
 
-      圖表的下半部分顯示兩個標籤：記錄檔和工作。
+     圖表的下半部分顯示兩個標籤：記錄檔和工作。
 
-      在圖表中選取的活動在記錄和工作清單中作為篩選器。
+     在圖表中選取的活動在記錄和工作清單中作為篩選器。
 
-      ![](assets/s_user_segmentation_logs.png)
+     ![](assets/s_user_segmentation_logs.png)
 
-   1. 以滑鼠右鍵按一下目標活動，然後選取&#x200B;**[!UICONTROL Display logs]**。
+  1. 以滑鼠右鍵按一下目標活動，然後選取&#x200B;**[!UICONTROL Display logs]**。
 
-      ![](assets/s_user_segmentation_logs_menu.png)
+     ![](assets/s_user_segmentation_logs_menu.png)
 
-      記錄會顯示在另一個視窗中。
+     記錄會顯示在另一個視窗中。
 
 ## 清除記錄 {#purging-the-logs}
 
@@ -295,4 +303,4 @@ Campaign Classic介面可讓您使用預先定義的&#x200B;**檢視**&#x200B;�
 
 ![](assets/workflow-monitoring-filter.png)
 
-如需篩選器的詳細資訊，請參閱[Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/audience/create-filters){target=_blank}。
+如需篩選器的詳細資訊，請參閱[Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}。

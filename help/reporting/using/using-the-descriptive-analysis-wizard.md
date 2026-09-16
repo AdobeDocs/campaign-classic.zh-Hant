@@ -2,29 +2,35 @@
 product: campaign
 title: 建立您第一個描述性分析報告
 description: 瞭解如何使用助理建立您的第一個描述性分析報告
-badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Reporting, Monitoring
 exl-id: 848d67c7-d1dc-4eba-bcb8-672e76d8ce87
 TQID: https://experienceleague.adobe.com/ilSq3cfWpljwwRtjgjbgJe2NmBFnPJhIK5e0PMBMJVI
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 feature_v2:
   - id: c309ee4e-82e4-4f7e-b608-ef345678c34e
+    internal-label: Dynamic Reporting
 subfeature_v2:
   - id: b3a4149f-2b3a-44d1-894e-e3ac4c77fb47
+    internal-label: Reporting interface
   - id: cfda811a-e413-43a4-adf0-7370888f5cfc
+    internal-label: Customize reports
   - id: afe938ea-bc18-44a4-a3fb-03e1031466cb
+    internal-label: Cubes and multidimensional analysis
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 1587
+source-wordcount: '1578'
 ht-degree: 1%
-
 ---
-
 # 建立您第一個描述性分析報告 {#using-the-descriptive-analysis-wizard}
 
 若要建立描述性分析報告，請使用專用助理。 設定取決於要分析的資料以及所需的呈現。
@@ -180,17 +186,17 @@ ht-degree: 1%
 
   操作步驟：
 
-   1. 計算購買總計。
+  1. 計算購買總計。
 
-      ![](assets/report_compute_data_sample2.png)
+     ![](assets/report_compute_data_sample2.png)
 
-   1. 此統計資料不會顯示在表格中。 您必須取消核取&#x200B;**[!UICONTROL Advanced]**&#x200B;索引標籤的&#x200B;**[!UICONTROL Display in the table]**&#x200B;選項。
+  1. 此統計資料不會顯示在表格中。 您必須取消核取&#x200B;**[!UICONTROL Advanced]**&#x200B;索引標籤的&#x200B;**[!UICONTROL Display in the table]**&#x200B;選項。
 
-      ![](assets/report_compute_data_sample3.png)
+     ![](assets/report_compute_data_sample3.png)
 
-   1. 建立新的&#x200B;**[!UICONTROL Calculated field]**&#x200B;型別統計資料，並在&#x200B;**[!UICONTROL User function]**&#x200B;欄位中輸入下列公式： **@purchases/@count**。
+  1. 建立新的&#x200B;**[!UICONTROL Calculated field]**&#x200B;型別統計資料，並在&#x200B;**[!UICONTROL User function]**&#x200B;欄位中輸入下列公式： **@purchases/@count**。
 
-      ![](assets/report_compute_data_sample4.png)
+     ![](assets/report_compute_data_sample4.png)
 
 ### 顯示報表 {#displaying-the-report}
 

@@ -8,41 +8,50 @@ exl-id: 86c7169a-2c71-4c43-8a1a-f39871b29856
 TQID: https://experienceleague.adobe.com/JPAKipxGVdTfSKfmCm-4xgoaOe6sC257Spc00ddNnRY
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
   - id: b631758a-142d-425f-b9aa-f756d85cb979
+    internal-label: Campaign Email Designer
   - id: c858a28b-ea19-49b0-8d48-828717fad89c
+    internal-label: Prepare and test messages
 subfeature_v2:
   - id: e95a583b-fcfa-4524-8666-46a29c828119
+    internal-label: Email messaging
   - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
+    internal-label: Email design
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
+    internal-label: A/B testing
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
+    internal-label: Manage deliverability
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 1695
+source-wordcount: '1695'
 ht-degree: 3%
-
 ---
-
 # 傳遞失敗與隔離管理 {#delivery-failures-quarantine}
 
 >[!NOTE]
 >
 >Campaign v8檔案中會記錄傳送失敗和隔離管理的全面指引。 此內容適用於Campaign Classic v7和Campaign v8使用者：
 >
->* [瞭解傳遞失敗](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} — 涵蓋失敗型別、錯誤原因、同步/非同步錯誤、重試管理和疑難排解
->* [隔離管理](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} — 涵蓋隔離與封鎖清單、軟性錯誤臨界值、隔離報告，以及地址移除
+>* [瞭解傳遞失敗](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} — 涵蓋失敗型別、錯誤原因、同步/非同步錯誤、重試管理和疑難排解
+>* [隔離管理](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} — 涵蓋隔離與封鎖清單、軟性錯誤臨界值、隔離報告，以及地址移除
 >
 >此頁面記錄了&#x200B;**Campaign Classic v7的特定設定**，用於混合部署和內部部署中的退信和隔離管理。
 
 ## 瞭解傳遞故障
 
-如需常見的傳送失敗概念、錯誤型別和疑難排解指南，請參閱[Campaign v8瞭解傳送失敗檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}。
+如需常見的傳送失敗概念、錯誤型別和疑難排解指南，請參閱[Campaign v8瞭解傳送失敗檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}。
 
 ## 退回郵件設定 {#bounce-mail-config}
 
@@ -144,7 +153,7 @@ Adobe Campaign會篩選此郵件以刪除變數內容（例如ID、日期、電�
 
 * **[!UICONTROL Limit]**：每個時段允許的最大訊息數。
 
-* **[!UICONTROL Type]**：用來判斷傳送行為的錯誤型別（硬式、軟式或略過）。 如需錯誤型別定義，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}。
+* **[!UICONTROL Type]**：用來判斷傳送行為的錯誤型別（硬式、軟式或略過）。 如需錯誤型別定義，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}。
 
 有關MX管理的詳細資訊，請參閱[本節](../../installation/using/email-deliverability.md#about-mx-rules)。
 
@@ -154,7 +163,7 @@ Adobe Campaign會篩選此郵件以刪除變數內容（例如ID、日期、電�
 
 ## 隔離管理 {#quarantine-management}
 
-如需完整的隔離管理指南，請參閱[Campaign v8隔離管理檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"}。
+如需完整的隔離管理指南，請參閱[Campaign v8隔離管理檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"}。
 
 ## 隔離設定 {#quarantine-config}
 
@@ -206,7 +215,7 @@ Adobe Campaign會篩選此郵件以刪除變數內容（例如ID、日期、電�
 
 對於&#x200B;**iOS**&#x200B;和&#x200B;**Android**&#x200B;推播通知，隔離機制會使用裝置代號，而非電子郵件地址。 解除安裝或重新安裝行動應用程式時，會隔離關聯的Token。
 
-如需推播通知隔離情況（iOS和Android錯誤型別、重試行為等）的詳細資訊，請參閱[瞭解傳送失敗](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}檔案，其中包括完整的推播通知錯誤型別表格。
+如需推播通知隔離情況（iOS和Android錯誤型別、重試行為等）的詳細資訊，請參閱[瞭解傳送失敗](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}檔案，其中包括完整的推播通知錯誤型別表格。
 
 ### 簡訊隔離細節 {#sms-quarantine-specifics}
 
@@ -218,14 +227,14 @@ SMS隔離機制會因使用的聯結器而異：
 
 * **延伸通用SMPP聯結器**：錯誤管理使用規則運算式(regexes)以不同的方式處理，以剖析SMSC提供者傳回的狀態報告(SR)訊息。
 
-如需SMS隔離案例和錯誤型別的詳細資訊，請參閱[瞭解傳送失敗](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}檔案，其中包含完整的SMS錯誤型別表格。
+如需SMS隔離案例和錯誤型別的詳細資訊，請參閱[瞭解傳送失敗](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}檔案，其中包含完整的SMS錯誤型別表格。
 
 ## 相關主題
 
-* [瞭解傳遞失敗](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} （Campaign v8檔案）
-* [隔離管理](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} （Campaign v8檔案）
+* [瞭解傳遞失敗](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} （Campaign v8檔案）
+* [隔離管理](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} （Campaign v8檔案）
 * [傳遞最佳實務](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"} （Campaign v8檔案）
-* [傳遞狀態](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/monitor/delivery-statuses){target="_blank"} （Campaign v8檔案）
+* [傳遞狀態](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-statuses){target="_blank"} （Campaign v8檔案）
 * [資料庫清理工作流程](../../production/using/database-cleanup-workflow.md) （v7混合/內部部署）
 * [設定傳遞重試](communication-channels.md) （v7混合/內部部署）
 * [更新退信資格](update-bounce-qualification.md) （v7混合/內部部署）

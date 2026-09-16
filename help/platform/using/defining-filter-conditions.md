@@ -3,7 +3,7 @@ product: campaign
 title: 定義篩選條件
 description: 定義篩選條件
 feature: Query Editor
-badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: creating-queries
@@ -12,20 +12,24 @@ exl-id: b62e23e5-f1b7-44c4-82d9-95c6b3240352
 TQID: https://experienceleague.adobe.com/QyGgyPI1vfy54m-3nNtEOt5tFr-RqWT9tfOg2GMQRdo
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: afa4204e-6d08-4e29-bc35-26aafb656d48
+    internal-label: Profiles and audiences
 subfeature_v2:
   - id: f529d0bd-1401-4c88-9833-43228cc1d40f
+    internal-label: Profiles
   - id: d6330382-c886-4f7a-a4f7-74e3f36c0d9c
+    internal-label: Audiences
   - id: f5293531-9312-4099-bfa3-9e67df6a8750
+    internal-label: Query Editor
   - id: efa38731-2723-4334-8d8b-a778af834835
+    internal-label: Access management
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 3342
+source-wordcount: '3342'
 ht-degree: 34%
-
 ---
-
 # 定義篩選條件{#defining-filter-conditions}
 
 
@@ -301,16 +305,16 @@ ht-degree: 34%
 
   您可以使用欄的來源值，並為它指定目標值。 此目的地值將顯示在新的輸出欄中。
 
-  有新增計算欄位型別&#x200B;**[!UICONTROL Enumerations]**&#x200B;的範例可用，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/adding-enumeration-type-calculated-field.html?lang=zh-Hant){target="_blank"}。
+  有新增計算欄位型別&#x200B;**[!UICONTROL Enumerations]**&#x200B;的範例可用，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/adding-enumeration-type-calculated-field.html){target="_blank"}。
 
   ![](assets/query_editor_nveau_63.png)
 
   **[!UICONTROL Enumerations]**&#x200B;型別計算欄位可包含4個條件：
 
-   * **[!UICONTROL Keep the source value]**&#x200B;將來源值還原到目標而不變更它。
-   * **[!UICONTROL Use the following value]**&#x200B;可讓您為未定義的來源值輸入預設目的地值。
-   * **[!UICONTROL Generate a warning and continue]**&#x200B;警告使用者無法變更來源值。
-   * **[!UICONTROL Generate an error and reject the line]**&#x200B;會防止行被計算及匯入。
+  * **[!UICONTROL Keep the source value]**&#x200B;將來源值還原到目標而不變更它。
+  * **[!UICONTROL Use the following value]**&#x200B;可讓您為未定義的來源值輸入預設目的地值。
+  * **[!UICONTROL Generate a warning and continue]**&#x200B;警告使用者無法變更來源值。
+  * **[!UICONTROL Generate an error and reject the line]**&#x200B;會防止行被計算及匯入。
 
 按一下&#x200B;**[!UICONTROL Detail of calculated field]**&#x200B;以檢視插入欄位的詳細資訊。
 

@@ -3,7 +3,7 @@ product: campaign
 title: 常用指令
 description: 常用指令
 feature: Monitoring
-badge-v7-prem: label="僅限內部部署/混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="僅適用於內部部署和混合部署"
+badge-v7-prem: label="On-premise/hybrid only" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="Applies to on-premise and hybrid deployments only"
 audience: production
 content-type: reference
 topic-tags: production-procedures
@@ -11,17 +11,18 @@ exl-id: 472ccc04-e68e-4ccb-90e9-7d626a4e794f
 TQID: https://experienceleague.adobe.com/54ErpGUWBV076fqJIdr2ZsJlKVicuFf4xNgk-qDvvmQ
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2: []
 subfeature_v2:
   - id: c03a11ff-bdf9-4e5b-b279-f468b4293464
+    internal-label: Performance Monitoring
   - id: e519a22f-a06a-42fc-9d09-d78a3ab2c434
+    internal-label: Monitoring guidelines
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 458
+source-wordcount: '446'
 ht-degree: 7%
-
 ---
-
 # 常用指令{#usual-commands}
 
 
@@ -30,7 +31,7 @@ ht-degree: 7%
 
 命令&#x200B;**nlserver**&#x200B;是整個Adobe Campaign應用程式的輸入命令。
 
-這個命令的語法如下： **nlserver &#x200B;**`<command>`**&#x200B;**`<arguments>`**&#x200B;**
+這個命令的語法如下： **nlserver **`<command>`****`<arguments>`****
 
 引數&#x200B;**`<command>`**&#x200B;對應至模組。
 
@@ -104,21 +105,21 @@ nlserver stop <module>@<INSTANCE>
 
 * 如果您擁有根或管理員存取權：
 
-   * 在Linux中：
+  * 在Linux中：
 
-     ```sql
-     /etc/init.d/nlserver6 stop
-     ```
+    ```sql
+    /etc/init.d/nlserver6 stop
+    ```
 
-     >[!NOTE]
-     >
-     >從20.1開始，我們建議改用以下命令（適用於Linux）： **systemctl stop nlserver**
+    >[!NOTE]
+    >
+    >從20.1開始，我們建議改用以下命令（適用於Linux）： **systemctl stop nlserver**
 
-   * 在Windows中：
+  * 在Windows中：
 
-     ```sql
-     net stop nlserver6
-     ```
+    ```sql
+    net stop nlserver6
+    ```
 
 * 如果沒有，則在Adobe Campaign帳戶中：
 
@@ -132,13 +133,13 @@ nlserver stop <module>@<INSTANCE>
 
 * 如果您擁有根或管理員存取權：
 
-   * 在Linux中： `/etc/init.d/nlserver6 start`
+  * 在Linux中： `/etc/init.d/nlserver6 start`
 
-     >[!NOTE]
-     >
-     >從20.1開始，我們建議改用以下命令（適用於Linux）： **systemctl start nlserver**
+    >[!NOTE]
+    >
+    >從20.1開始，我們建議改用以下命令（適用於Linux）： **systemctl start nlserver**
 
-   * 在Windows中： `net start nlserver6`
+  * 在Windows中： `net start nlserver6`
 
 * 否則，在Adobe Campaign帳戶中： **nlserver watchdog -svc -noconsole**
 

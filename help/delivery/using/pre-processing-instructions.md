@@ -2,25 +2,27 @@
 product: campaign
 title: 追蹤的URL的預處理指示
 description: 深入瞭解用於編寫電子郵件URL指令碼以及仍進行追蹤的預處理指示
-badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Monitoring
 role: User, Developer
 exl-id: 9d3f5c74-377a-4e24-81e5-bb605f69cf8a
 TQID: https://experienceleague.adobe.com/cDB7CFuf6Gv0eyik3yEyJh4auo97LkazDSahUNPFtec
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: 664
+source-wordcount: '655'
 ht-degree: 1%
-
 ---
-
 # 前置處理指示 {#pre-processing-instructions}
 
 您可以在傳送內容中使用特定語法，新增指示並編寫追蹤電子郵件URL的指令碼。 &lt;%@指示不是JavaScript：此語法特定於Adobe Campaign。
@@ -81,10 +83,10 @@ ht-degree: 1%
 
 * **[!DNL object]**：物件的名稱（例如：傳遞、提供者等）。
 物件可以是：
-   * **[!DNL delivery]**：針對目前的傳遞（請參閱以下子段落中的詳細資訊和限制）。
-   * **[!DNL provider]**：適用於目前的傳遞提供者/路由(nms:externalAccount)。
-   * 額外的指令碼物件：如果物件是透過&#x200B;**屬性** > **Personalization** > **在執行內容中新增物件**，載入到內容中。
-   * foreach回圈的專案：請參閱下方的[Foreach](#foreach)區段。
+  * **[!DNL delivery]**：針對目前的傳遞（請參閱以下子段落中的詳細資訊和限制）。
+  * **[!DNL provider]**：適用於目前的傳遞提供者/路由(nms:externalAccount)。
+  * 額外的指令碼物件：如果物件是透過&#x200B;**屬性** > **Personalization** > **在執行內容中新增物件**，載入到內容中。
+  * foreach回圈的專案：請參閱下方的[Foreach](#foreach)區段。
 * **[!DNL xpath]**：欄位的xpath。
 * **[!DNL index]** （選擇性）：如果&#x200B;**[!DNL object]**&#x200B;是陣列（用於額外的指令碼物件），則陣列中的專案索引（從0開始）。
 

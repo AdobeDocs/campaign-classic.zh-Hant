@@ -2,28 +2,33 @@
 product: campaign
 title: 使用實例：依條件選取種子地址
 description: 使用實例：依條件選取種子地址
-badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Seed Address
 exl-id: 091648b8-bf2d-4595-8be3-287f1ac48edd
 TQID: https://experienceleague.adobe.com/vVOd7BFN-EgiwiYk-ssMDkkmcUnRyI62tpMk2R-FVAQ
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
   - id: b631758a-142d-425f-b9aa-f756d85cb979
+    internal-label: Campaign Email Designer
   - id: c858a28b-ea19-49b0-8d48-828717fad89c
+    internal-label: Prepare and test messages
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 subfeature_v2:
   - id: e95a583b-fcfa-4524-8666-46a29c828119
+    internal-label: Email messaging
   - id: e739ee2b-6228-412e-878f-45de0791417d
+    internal-label: Use cases
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 860
+source-wordcount: '851'
 ht-degree: 3%
-
 ---
-
 # 使用實例：依條件選取種子地址{#use-case-selecting-seed-addresses-on-criteria}
 
 
@@ -42,7 +47,7 @@ ht-degree: 3%
 
 ## 步驟1 — 建立傳遞 {#step-1---creating-a-delivery}
 
-建立傳遞的步驟已詳載於[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email.html?lang=zh-Hant){target="_blank"}。
+建立傳遞的步驟已詳載於[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email.html){target="_blank"}。
 
 在此範例中，傳遞管理員已建立電子報並選取收件者。
 

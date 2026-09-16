@@ -3,7 +3,7 @@ product: campaign
 title: 設定安全性區域
 description: 瞭解如何設定安全性區域
 feature: Installation, Instance Settings
-badge-v7-prem: label="僅限內部部署/混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="僅適用於內部部署和混合部署"
+badge-v7-prem: label="On-premise/hybrid only" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
@@ -11,21 +11,25 @@ exl-id: 67dda58f-97d1-4df5-9648-5f8a1453b814
 TQID: https://experienceleague.adobe.com/eL2iPF1yqueza7P0yRE0KEPdxEezRW81gT4QgRno3Ys
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 subfeature_v2:
   - id: b5852c32-876b-41ae-92a7-9f588865ae52
+    internal-label: Best practices
   - id: efa38731-2723-4334-8d8b-a778af834835
+    internal-label: Access management
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: 1511
-ht-degree: 2%
-
+source-wordcount: '1499'
+ht-degree: 3%
 ---
-
 # 定義安全性區域（內部部署）{#defining-security-zones}
 
 
@@ -239,36 +243,36 @@ ht-degree: 2%
 
 * 儘量不使用sessionTokenOnly=&quot;true&quot;：
 
-   * 警告：如果此屬性設定為true，運運算元可能會遭到&#x200B;**CRSF攻擊**。
-   * 此外，sessionToken Cookie並未以httpOnly標幟設定，因此某些使用者端JavaScript程式碼可加以讀取。
-   * 不過，多個執行儲存格上的Message Center需要sessionTokenOnly：在sessionTokenOnly設為&quot;true&quot;的情況下建立新的安全性區域，並將&#x200B;**僅新增所需的IP**&#x200B;至此區域。
+  * 警告：如果此屬性設定為true，運運算元可能會遭到&#x200B;**CRSF攻擊**。
+  * 此外，sessionToken Cookie並未以httpOnly標幟設定，因此某些使用者端JavaScript程式碼可加以讀取。
+  * 不過，多個執行儲存格上的Message Center需要sessionTokenOnly：在sessionTokenOnly設為&quot;true&quot;的情況下建立新的安全性區域，並將&#x200B;**僅新增所需的IP**&#x200B;至此區域。
 
 * 可能的話，請將所有allowHTTP、showErrors設定為false （不適用於localhost）並檢查它們。
 
-   * allowHTTP = &quot;false&quot;：強制運運算元使用HTTPS
-   * showErrors = &quot;false&quot;：隱藏技術錯誤（包括SQL錯誤）。 它可防止顯示太多資訊，但會降低行銷人員解決錯誤的能力（無需向管理員要求更多資訊）
+  * allowHTTP = &quot;false&quot;：強制運運算元使用HTTPS
+  * showErrors = &quot;false&quot;：隱藏技術錯誤（包括SQL錯誤）。 它可防止顯示太多資訊，但會降低行銷人員解決錯誤的能力（無需向管理員要求更多資訊）
 
 * 僅針對需要建立（事實上是預覽）調查、webApps和報表的行銷使用者/管理員所使用的IP，將allowDebug設定為true。 此旗標可讓這些IP顯示轉送規則並為其偵錯。
 
-   * 當allowDebug設為false時，輸出為：
+  * 當allowDebug設為false時，輸出為：
 
-     ```
-     <redir status='OK' date='...' sourceIP='...'/>
-     ```
+    ```
+    <redir status='OK' date='...' sourceIP='...'/>
+    ```
 
-   * 當allowDebug設定為true時，輸出為：
+  * 當allowDebug設定為true時，輸出為：
 
-     ```
-     <redir status='OK' date='...' build='...' OR version='...' sha1='...' instance='...' sourceIP='...' host='...' localHost='...'/>
-     ```
+    ```
+    <redir status='OK' date='...' build='...' OR version='...' sha1='...' instance='...' sourceIP='...' host='...' localHost='...'/>
+    ```
 
 * 切勿將allowEmptyPassword、allowUserPassword、allowSQLInjection設定為true。
 
-   * **allowEmptyPassword**&#x200B;可讓操作員擁有空白密碼。 如果您遇到這種情況，請通知所有操作員要求他們設定截止日期的密碼。 一旦過了這個期限，就將此屬性變更為false。
+  * **allowEmptyPassword**&#x200B;可讓操作員擁有空白密碼。 如果您遇到這種情況，請通知所有操作員要求他們設定截止日期的密碼。 一旦過了這個期限，就將此屬性變更為false。
 
-   * **allowUserPassword**&#x200B;可讓操作員傳送其認證作為引數（以便由apache/IIS/proxy記錄它們）。 此功能過去曾用於簡化API的使用。 無論某些協力廠商應用程式是否使用此功能，您都可以簽入您的逐步指南（或規格）。 若是如此，您必須通知他們變更使用API的方式，並儘快移除此功能。
+  * **allowUserPassword**&#x200B;可讓操作員傳送其認證作為引數（以便由apache/IIS/proxy記錄它們）。 此功能過去曾用於簡化API的使用。 無論某些協力廠商應用程式是否使用此功能，您都可以簽入您的逐步指南（或規格）。 若是如此，您必須通知他們變更使用API的方式，並儘快移除此功能。
 
-   * **allowSQLInjection**&#x200B;可讓使用者使用舊語法執行SQL插入。 此屬性應設為false。 您可以使用/nl/jsp/ping.jsp?zones=true來檢查您的安全性區域設定。 此頁面顯示目前IP的安全性措施（使用這些安全性旗標計算）的有效狀態。
+  * **allowSQLInjection**&#x200B;可讓使用者使用舊語法執行SQL插入。 此屬性應設為false。 您可以使用/nl/jsp/ping.jsp?zones=true來檢查您的安全性區域設定。 此頁面顯示目前IP的安全性措施（使用這些安全性旗標計算）的有效狀態。
 
 * HttpOnly Cookie/useSecurityToken：參考&#x200B;**sessionTokenOnly**&#x200B;旗標。
 

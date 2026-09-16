@@ -7,25 +7,28 @@ exl-id: 8508d879-fb38-4b1f-9f55-0341bb8d0c67
 TQID: https://experienceleague.adobe.com/y8kDwxCY0MkBcDPUPY7hmFlpJc3l3qsEiDRhhMGqT00
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 subfeature_v2:
   - id: c03a11ff-bdf9-4e5b-b279-f468b4293464
+    internal-label: Performance Monitoring
   - id: e519a22f-a06a-42fc-9d09-d78a3ab2c434
+    internal-label: Monitoring guidelines
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 444
+source-wordcount: '444'
 ht-degree: 2%
-
 ---
-
 # 稽核軌跡{#audit-trail}
 
 >[!INFO]
 >
->在[Adobe Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/analytics/audit-trail)中進一步瞭解稽核軌跡功能。
+>在[Adobe Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/audit-trail)中進一步瞭解稽核軌跡功能。
 
 在Adobe Campaign中，**[!UICONTROL Audit trail]**&#x200B;可讓您存取執行個體中所做變更的完整歷史記錄。
 
@@ -46,18 +49,18 @@ ht-degree: 2%
 
 * **工作流程稽核軌跡**&#x200B;會追蹤與工作流程相關的所有動作，包括：
 
-   * 開始
-   * 暫停
-   * 停止
-   * 重新啟動
-   * 清除等於動作清除歷史記錄
-   * 模擬在模擬模式下等於動作「開始」的專案
-   * 立即喚醒等於動作執行擱置中的工作
-   * 無條件停止
+  * 開始
+  * 暫停
+  * 停止
+  * 重新啟動
+  * 清除等於動作清除歷史記錄
+  * 模擬在模擬模式下等於動作「開始」的專案
+  * 立即喚醒等於動作執行擱置中的工作
+  * 無條件停止
 
   如需工作流程的詳細資訊，請參閱此[頁面](../../workflow/using/about-workflows.md)。
 
-  如需如何監視工作流程的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=zh-Hant){target="_blank"}。
+  如需如何監視工作流程的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}。
 
 
 * **選項稽核軌跡**&#x200B;可讓您檢查活動和對選項進行的最後修改。

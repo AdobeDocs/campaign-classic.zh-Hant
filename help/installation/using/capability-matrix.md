@@ -7,15 +7,14 @@ exl-id: a2c425a8-9bde-4259-9140-5ada5397ed5f
 TQID: https://experienceleague.adobe.com/kHWVPyk02eyH47xBzGgik3fq6BSHGKpDXPMrEuVaYM8
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 323
-ht-degree: 27%
-
+source-wordcount: '323'
+ht-degree: 38%
 ---
-
 # 各型號的功能矩陣{#capability-matrix-per-model}
 
 
@@ -24,23 +23,23 @@ Adobe Campaign Classic 隨附了一套模組和選項。 這些模組的可用�
 
 此頁面顯示託管(Managed Services)和內部部署之間的主要差異。 混合部署特性取決於Adobe所託管且在您的內部部署中託管的元素。
 
-在本節[&#128279;](../../installation/using/hosting-models.md)中引進了不同的託管模型。
+在本節](../../installation/using/hosting-models.md)中引進了不同的託管模型[。
 
 ## 每個部署模式的可用性 {#capability-matrix}
 
 | 功能 | 託管 | 混合式 | 內部部署 | 詳細資料 |
 |-----------------------------------------------|------------------|-----------|---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 設定Campaign伺服器 | 隨選 | 可用 | 可用 | [了解更多](../../installation/using/the-server-configuration-file.md) |
-| 電子郵件密件副本 | 隨選 | 隨選 | 可用 | [了解更多](../../installation/using/email-archiving.md) |
-| 管理訊息中心執行例項 | 隨選 | 隨選 | 可用 | [了解更多](../../message-center/using/about-transactional-messaging.md) |
-| 管理中間來源平台 | 隨選 | 隨選 | 可用 | [了解更多](../../installation/using/mid-sourcing-server.md) |
-| 透過Litmus的收件匣轉譯 | 隨選 | 隨選 | 可用 | [了解更多](../../delivery/using/inbox-rendering.md) |
-| 與IMS整合(Adobe ID) | 隨選 | 隨選 | 隨選 | [了解更多](../../integrations/using/about-adobe-id.md) |
-| 加密/解密檔案傳輸的資料 | 隨選 | 可用 | 可用 | [了解更多](../../platform/using/unzip-decrypt.md) |
-| 壓縮/解壓縮檔案 | 隨選 | 可用 | 可用 | [了解更多](../../platform/using/unzip-decrypt.md) |
-| 網域名稱委派 | 隨選 | 隨選 | 不適用 | [了解更多](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=zh-Hant) |
-| 安裝SpamAssassin | 隨選 | 可用 | 可用 | [了解更多](../../delivery/using/spamassassin.md) |
-| 存取傳遞能力報告 | 可用 | 隨選 | 可用 | [了解更多](../../delivery/using/about-delivery-monitoring.md#deliverability-monitoring) |
+| 設定Campaign伺服器 | 按需 | 可用 | 可用 | [了解更多](../../installation/using/the-server-configuration-file.md) |
+| 電子郵件密件副本 | 按需 | 按需 | 可用 | [了解更多](../../installation/using/email-archiving.md) |
+| 管理訊息中心執行例項 | 按需 | 按需 | 可用 | [了解更多](../../message-center/using/about-transactional-messaging.md) |
+| 管理中間來源平台 | 按需 | 按需 | 可用 | [了解更多](../../installation/using/mid-sourcing-server.md) |
+| 透過Litmus的收件匣轉譯 | 按需 | 按需 | 可用 | [了解更多](../../delivery/using/inbox-rendering.md) |
+| 與IMS整合(Adobe ID) | 按需 | 按需 | 按需 | [了解更多](../../integrations/using/about-adobe-id.md) |
+| 加密/解密檔案傳輸的資料 | 按需 | 可用 | 可用 | [了解更多](../../platform/using/unzip-decrypt.md) |
+| 壓縮/解壓縮檔案 | 按需 | 可用 | 可用 | [了解更多](../../platform/using/unzip-decrypt.md) |
+| 網域名稱委派 | 按需 | 按需 | 不適用 | [了解更多](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=zh-Hant) |
+| 安裝SpamAssassin | 按需 | 可用 | 可用 | [了解更多](../../delivery/using/spamassassin.md) |
+| 存取傳遞能力報告 | 可用 | 按需 | 可用 | [了解更多](../../delivery/using/about-delivery-monitoring.md#deliverability-monitoring) |
 | 設定LDAP驗證 | 無法使用 | 可用 | 可用 | [了解更多](../../installation/using/connecting-through-ldap.md) |
 
 

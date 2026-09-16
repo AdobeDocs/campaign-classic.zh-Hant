@@ -3,7 +3,7 @@ product: campaign
 title: 部署執行個體
 description: 深入瞭解Campaign部署精靈
 feature: Installation, Instance Settings, Deployment
-badge-v7-prem: label="僅限內部部署/混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="僅適用於內部部署和混合部署"
+badge-v7-prem: label="On-premise/hybrid only" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
@@ -11,23 +11,29 @@ exl-id: 8b07447c-9a86-4b56-8d29-e0b01357a6ec
 TQID: https://experienceleague.adobe.com/M1uqZA6cfopJkJ-pg3m-1R-eBbM55zv7R-FSxOfFUwI
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 subfeature_v2:
   - id: b5852c32-876b-41ae-92a7-9f588865ae52
+    internal-label: Best practices
   - id: e656c701-3899-4db3-989c-de0980ddfffa
+    internal-label: Installation
   - id: eff19c99-440a-4318-b319-444edc4d8d8f
+    internal-label: Upgrade
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 3479
+source-wordcount: '3471'
 ht-degree: 2%
-
 ---
-
 # 部署執行個體{#deploying-an-instance}
 
 >[!NOTE]
@@ -92,12 +98,12 @@ Adobe Campaign提供圖形化助理，可在Adobe Campaign使用者端主控台�
 指示下列引數：
 
 * **[!UICONTROL Sender name]** ：輸入寄件者的名稱。
-* **[!UICONTROL Sender address]** ：輸入寄件者的電子郵件地址。 從Adobe Campaign傳送電子郵件時，**寄件者地址**&#x200B;信箱不受監視，且行銷使用者無法存取此信箱。 Adobe Campaign也不提供自動回覆或自動轉寄此信箱中接收之電子郵件的功能。 在本檔案[&#128279;](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/ac-starting-new-platform.html?lang=zh-Hant){_blank}中進一步瞭解傳遞能力最佳實務。
+* **[!UICONTROL Sender address]** ：輸入寄件者的電子郵件地址。 從Adobe Campaign傳送電子郵件時，**寄件者地址**&#x200B;信箱不受監視，且行銷使用者無法存取此信箱。 Adobe Campaign也不提供自動回覆或自動轉寄此信箱中接收之電子郵件的功能。 在本檔案](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/ac-starting-new-platform.html){_blank}中進一步瞭解傳遞能力最佳實務[。
 
 * **[!UICONTROL Reply address text]** ：輸入收件者按一下&#x200B;**[!UICONTROL Reply]**&#x200B;按鈕時使用的名稱。
 * **[!UICONTROL Reply address]** ：輸入當收件者按一下電子郵件使用者端軟體中的&#x200B;**[!UICONTROL Reply]**&#x200B;按鈕時要使用的電子郵件地址。 **回覆地址**&#x200B;欄位的用途是當您想要收件者回覆其他地址而不是&#x200B;**寄件者地址**&#x200B;時。  此地址必須是有效的電子郵件地址、連結至受監控的信箱，並由客戶代管。  它可能是支援信箱，例如`customer-care@customer.com`，其中會讀取並回應電子郵件。
 
-* **[!UICONTROL Error address]** ：輸入含有錯誤之訊息的電子郵件地址。 這是用於處理退信的技術地址，包括Adobe Campaign伺服器因目標地址不存在而收到的電子郵件。 此地址必須是有效的電子郵件地址、連結至受監控的信箱，並由客戶代管。 可能是退回信箱，例如`errors@customer.com`。 您可以從傳遞/傳遞範本屬性的&#x200B;**SMTP**&#x200B;索引標籤，為傳遞或傳遞範本變更此位址。 在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email-parameters.html?lang=zh-Hant#managing-bounce-emails){target="_blank"}中瞭解更多。
+* **[!UICONTROL Error address]** ：輸入含有錯誤之訊息的電子郵件地址。 這是用於處理退信的技術地址，包括Adobe Campaign伺服器因目標地址不存在而收到的電子郵件。 此地址必須是有效的電子郵件地址、連結至受監控的信箱，並由客戶代管。 可能是退回信箱，例如`errors@customer.com`。 您可以從傳遞/傳遞範本屬性的&#x200B;**SMTP**&#x200B;索引標籤，為傳遞或傳遞範本變更此位址。 在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email-parameters.html#managing-bounce-emails){target="_blank"}中瞭解更多。
 
 此外，您可以指定寄件者地址與錯誤地址所授權的&#x200B;**遮罩**。 如有必要，可以使用逗號分隔這些遮罩。 此設定是選用的。 輸入欄位時，Adobe Campaign會在傳送時（分析期間，如果地址不含任何變數）檢查地址是否有效。 此作業模式可確保不使用任何可能觸發傳送問題的地址。 必須在傳遞伺服器上設定傳遞位址。
 
@@ -136,7 +142,7 @@ Adobe Campaign提供圖形化助理，可在Adobe Campaign使用者端主控台�
 
 >[!NOTE]
 >
->對於託管或混合式安裝，如果您已升級至[增強型MTA](../../delivery/using/sending-with-enhanced-mta.md)，則只有在設為&#x200B;**3.5天或更短時間時，才會使用&#x200B;**&#x200B;[!UICONTROL Delivery duration of the messages]&#x200B;**。**&#x200B;如果您定義的值超過3.5天，則不會考慮該值。
+>對於託管或混合式安裝，如果您已升級至[增強型MTA](../../delivery/using/sending-with-enhanced-mta.md)，則只有在設為&#x200B;**3.5天或更短時間時，才會使用&#x200B;**[!UICONTROL Delivery duration of the messages]**。**&#x200B;如果您定義的值超過3.5天，則不會考慮該值。
 
 ### 重試引數 {#retry-parameters}
 
@@ -395,7 +401,7 @@ Adobe Campaign可讓您區別這三個URL，以將負載分散到多個平台。
 
   此值可針對每次傳遞覆寫。
 
-* 針對公用資源，URL **https://**&#x200B;伺服器&#x200B;**/res/**&#x200B;執行個體&#x200B;**&#x200B;**，其中&#x200B;**執行個體**&#x200B;是追蹤執行個體的名稱。
+* 針對公用資源，URL **https://**&#x200B;伺服器&#x200B;**/res/**&#x200B;執行個體&#x200B;****，其中&#x200B;**執行個體**是追蹤執行個體的名稱。
 
 ### 傳遞影像偵測 {#delivery-image-detection}
 
@@ -407,7 +413,7 @@ Adobe Campaign可讓您區別這三個URL，以將負載分散到多個平台。
 
 您可以使用逗號來指定多個URL遮罩，以分隔每個URL遮罩。
 
-* 有關在電子郵件中使用和管理影像的資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=zh-Hant#adding-images){target="_blank"}。
+* 有關在電子郵件中使用和管理影像的資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#adding-images){target="_blank"}。
 * 在傳送助理中，從這些URL呼叫的影像會具有「已忽略」狀態。
 
 ### 發佈模式 {#publication-modes}
@@ -442,16 +448,16 @@ Adobe Campaign可讓您區別這三個URL，以將負載分散到多個平台。
 
   您可以使用指令碼發佈影像：
 
-   * 您必須建立此指令碼：其內容取決於您的設定。
-   * 指令碼將透過以下命令來呼叫：
+  * 您必須建立此指令碼：其內容取決於您的設定。
+  * 指令碼將透過以下命令來呼叫：
 
-     ```
-     [INSTALL]/copyToFrontal.vbs "$(XTK_INSTALL_DIR)\var\<instance>\upload\" "img1,img2,img3"
-     ```
+    ```
+    [INSTALL]/copyToFrontal.vbs "$(XTK_INSTALL_DIR)\var\<instance>\upload\" "img1,img2,img3"
+    ```
 
-     其中`[INSTALL]`是Adobe Campaign安裝資料夾的存取路徑。
+    其中`[INSTALL]`是Adobe Campaign安裝資料夾的存取路徑。
 
-   * 在Unix中，請確定指令碼是可執行檔。
+  * 在Unix中，請確定指令碼是可執行檔。
 
 對於影像，它必須從透過&#x200B;**NmsDelivery_ImageSubDirectory**&#x200B;選項指定的「影像」資料夾，將影像複製到一或多個前端伺服器。 這些伺服器會儲存影像，以供透過新設定的URL存取。
 

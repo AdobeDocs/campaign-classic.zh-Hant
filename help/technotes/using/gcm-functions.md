@@ -7,20 +7,23 @@ exl-id: 154dee7a-a1e9-40a2-bfa5-3641382d0574
 TQID: https://experienceleague.adobe.com/816d3Tu4JM17gYVA-ekpwc2w-ziQYNqm948KnvZxrUg
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: b12f6872-9271-4369-85e5-86969a0b99a2
+    internal-label: APIs
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
 subfeature_v2:
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+    internal-label: Adobe Analytics integration
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 582
+source-wordcount: '582'
 ht-degree: 2%
-
 ---
-
 # 以 GCM 為基礎的函式 {#new-functions}
 
 為了改善安全性，我們不再將AES （進階加密標準）演演算法與CBC （密碼區塊鏈結）模式搭配用於密碼編譯操作。 已引入新的加密功能。 這些函式會將AES與Galois/Counter Mode (AES-GCM)搭配使用，提供更安全的替代方案。 這些函式可在JavaScript、JSP、SOAP API和XML結構描述中使用，可讓客戶從CBC轉換到GCM進行加密和解密。

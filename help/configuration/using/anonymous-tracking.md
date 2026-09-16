@@ -8,17 +8,17 @@ exl-id: f251eb21-0f3c-4b46-927a-57a3291e705f
 TQID: https://experienceleague.adobe.com/jQ4x9zONaJacdqaNqRL--oeMUAyn53Rk-u3jOvKv-20
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 212
+source-wordcount: '212'
 ht-degree: 5%
-
 ---
-
 # 匿名追蹤{#anonymous-tracking}
 
 當收件者匿名瀏覽您的網站時，Adobe Campaign可讓您將收集的網頁追蹤資訊連結至該收件者。 當使用者瀏覽您網站的已標籤頁面時，系統會收集此瀏覽資訊，這樣當使用者按一下Adobe Campaign傳送的電子郵件後，系統就會識別這些頁面，且資訊會自動連結至這些頁面。

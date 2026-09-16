@@ -8,28 +8,38 @@ exl-id: fded088a-11a2-4b87-a368-7b197334aca4
 TQID: https://experienceleague.adobe.com/-e39I2kK3veYtZTufN0ZZrnZPAAco47dU8HFlCtlIxY
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 feature_v2:
   - id: b631758a-142d-425f-b9aa-f756d85cb979
+    internal-label: Campaign Email Designer
   - id: c858a28b-ea19-49b0-8d48-828717fad89c
+    internal-label: Prepare and test messages
 subfeature_v2:
   - id: e95a583b-fcfa-4524-8666-46a29c828119
+    internal-label: Email messaging
   - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
+    internal-label: Email design
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
+    internal-label: A/B testing
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
+    internal-label: Manage deliverability
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 8283
+source-wordcount: '8527'
 ht-degree: 1%
-
 ---
-
 # 簡訊連接器通訊協定及設定 {#sms-connector-protocol}
 
 >[!NOTE]
@@ -44,7 +54,7 @@ SMS可能僅限於傳送無格式的短文字訊息，但其簡易性使其成�
 傳送SMS有兩個主要方法：
 
 * 手動透過電話傳送，這是人們直接溝通的常見方式。
-* 透過Adobe Campaign傳送訊息的方式，從網際網路傳送。為此，您需要將網際網路連線至行動網路的SMS服務提供者。
+* 透過Adobe Campaign傳送訊息的方式，從網際網路傳送。 為此，您需要將網際網路連線至行動網路的SMS服務提供者。
 Adobe Campaign使用SMPP通訊協定傳送SMS給服務提供者。
 
 本檔案將引導您完成Adobe Campaign與SMPP提供者之間的連線設定。
@@ -95,8 +105,8 @@ SMS服務提供者端的網路裝置通常稱為SMSC。
 
 ### smpp連線 {#smpp-connections}
 
-Adobe Campaign透過TCP連線至SMS服務提供者的網路裝置。SMPP通訊協定會設定從Adobe Campaign到提供者的永久TCP連線。TCP連線一律由Adobe Campaign起始，即使是接收訊息亦然。
-SMPP會根據其模式開啟1或2個TCP連線。所有連線一律由Adobe Campaign起始。
+Adobe Campaign透過TCP連線至SMS服務提供者的網路裝置。 SMPP通訊協定會設定從Adobe Campaign到提供者的永久TCP連線。 TCP連線一律由Adobe Campaign起始，即使是接收訊息亦然。
+SMPP會根據其模式開啟1或2個TCP連線。 所有連線一律由Adobe Campaign起始。
 
 SMPP通訊協定可以在兩種模式中運作：
 
@@ -530,9 +540,9 @@ TON （號碼型別）和NPI （編號計畫指示器）在[SMPP 3.4規格](http
 
 ![](assets/do-not-localize/sms_protocol_2.png)
 
-當網路連結具有高延遲時，此視窗有助於增加輸送量。 視窗的值必須至少是SMS/s數乘以連結的延遲
+當網路連結具有高延遲時，此視窗有助於增加輸送量。  視窗的值必須至少是SMS/s數乘以連結的延遲
 以秒為單位，聯結器絕不會等待`SUBMIT_SM_RESP`再傳送下一個訊息。
-如果視窗太大，您可以在連線發生問題時傳送更多重複的訊息。此外，大多數提供者對視窗有非常嚴格的限制，並拒絕超過限制的訊息。
+如果視窗太大，您可以在連線發生問題時傳送更多重複的訊息。 此外，大多數提供者對視窗有非常嚴格的限制，並拒絕超過限制的訊息。
 
 如何計算最佳傳送時間公式：
 
@@ -856,12 +866,12 @@ SMS程式每分鐘會檢查一次完整行，然後非同步處理它們：
 如果您需要傳送包含非GSM或非ASCII字元的SMS，請嘗試傳送一些包含儘可能多不同字元的訊息。 如果您設定自訂字元對應表，請為所有可能的`data_coding`值傳送至少一個SMS。
 
 * **檢查SR是否已正確處理**
-SMS應在傳送記錄檔中標示為已接收。傳送記錄應該會成功，並且如下所示：
+SMS應在傳送記錄檔中標示為已接收。 傳送記錄應該會成功，並且如下所示：
   `SR yourProvider stat=DELIVRD err=000|#MESSAGE`
-檢查您是否已變更傳遞提供者名稱。 在生產環境中，傳遞記錄不應包含&#x200B;**SR Generic**。
+  檢查您是否已變更傳遞提供者名稱。 在生產環境中，傳遞記錄不應包含**SR Generic**。
 
-* **檢查MO是否已處理**
-如果您需要處理MO （自動回覆、將MO儲存在資料庫等），請嘗試進行一些測試。為所有自動回覆關鍵字傳送一些簡訊，並檢查回覆是否足夠快，不超過幾秒。
+* **檢查是否已處理MO**
+如果您需要處理MO （自動回覆、將MO儲存在資料庫等）， 嘗試進行一些測試。 為所有自動回覆關鍵字傳送一些簡訊，並檢查回覆是否足夠快，不超過幾秒。
 在記錄中檢查Adobe Campaign是否回覆成功`DELIVER_SM_RESP` (command_status=0)。
 
 ### 檢查PDU {#check-pdus}

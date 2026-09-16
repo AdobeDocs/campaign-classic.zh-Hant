@@ -10,19 +10,21 @@ exl-id: fc0d3f16-5f62-473d-a1de-aab574eff734
 TQID: https://experienceleague.adobe.com/ylf7sIKiO9ip-yC3M4zqbhu0ITaXqmTMQJ-4KfNQlt8
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 332
+source-wordcount: '332'
 ht-degree: 0%
-
 ---
-
 # Web伺服器設定 {#web-server-configuration}
 
 
@@ -35,17 +37,17 @@ ht-degree: 0%
 
   **在Apache**&#x200B;上，編輯/etc/apache2/mods-available/ssl.conf。 範例如下：
 
-   * `SSLProtocol all -SSLv2 -SSLv3 -TLSv1`
-   * `SSLCipherSuite HIGH:MEDIUM:!aNULL:!MD5:!SSLv3:!SSLv2:!TLSv1`
+  * `SSLProtocol all -SSLv2 -SSLv3 -TLSv1`
+  * `SSLCipherSuite HIGH:MEDIUM:!aNULL:!MD5:!SSLv3:!SSLv2:!TLSv1`
 
   **在IIS** （請參閱[檔案](https://support.microsoft.com/en-us/kb/245030)）上，執行下列設定：
 
-   * 在HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL中新增登入子機碼
-   * 若要讓系統使用預設不會交涉的通訊協定（例如TLS 1.2），請在&#x200B;**Protocols**&#x200B;機碼下的下列登入機碼中，將DisabledByDefault值的DWORD值資料變更為0x0：
+  * 在HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL中新增登入子機碼
+  * 若要讓系統使用預設不會交涉的通訊協定（例如TLS 1.2），請在&#x200B;**Protocols**&#x200B;機碼下的下列登入機碼中，將DisabledByDefault值的DWORD值資料變更為0x0：
 
-     SCHANNEL\Protocols\TLS 1.2\Client
+    SCHANNEL\Protocols\TLS 1.2\Client
 
-     SCHANNEL\Protocols\TLS 1.2\Server
+    SCHANNEL\Protocols\TLS 1.2\Server
 
   **停用SSL x.0**
 
@@ -59,20 +61,20 @@ ht-degree: 0%
 
   **在IIS** （請參閱[檔案](https://www.iis.net/configreference/system.webserver/security/requestfiltering/verbs)）上，執行下列設定：
 
-   * 請確定已安裝&#x200B;**要求篩選**&#x200B;角色服務或功能。
-   * 在&#x200B;**要求篩選**&#x200B;窗格中，按一下HTTP動詞標籤，然後按一下[拒絕動詞]。 在「動作」窗格中，在開啟的對話方塊中輸入TRACE 。
+  * 請確定已安裝&#x200B;**要求篩選**&#x200B;角色服務或功能。
+  * 在&#x200B;**要求篩選**&#x200B;窗格中，按一下HTTP動詞標籤，然後按一下[拒絕動詞]。 在「動作」窗格中，在開啟的對話方塊中輸入TRACE 。
 
 * 移除橫幅：
 
   **在Apache**&#x200B;上，編輯/etc/apache2/conf.d/security：
 
-   * ServerSignature **關閉**
-   * ServerToken **Prod**
+  * ServerSignature **關閉**
+  * ServerToken **Prod**
 
   **在IIS**&#x200B;上，執行下列設定：
 
-   * 安裝&#x200B;**URLcan**。
-   * 編輯&#x200B;**Urlscan.ini**&#x200B;檔案以使&#x200B;**RemoveServerHeader=1**
+  * 安裝&#x200B;**URLcan**。
+  * 編輯&#x200B;**Urlscan.ini**&#x200B;檔案以使&#x200B;**RemoveServerHeader=1**
 
 * 限制查詢大小以防止重要檔案上傳：
 
@@ -90,5 +92,5 @@ ht-degree: 0%
 
 相關主題：
 
-* [Adobe Marketing Cloud合規性概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/landing/governance-privacy-security/overview#privacy)
-* [Adobe Campaign安全性總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/landing/governance-privacy-security/overview#security)
+* [Adobe Marketing Cloud合規性概觀](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/overview#privacy)
+* [Adobe Campaign安全性總覽](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/overview#security)

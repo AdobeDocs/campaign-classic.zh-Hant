@@ -8,9 +8,7 @@ source-git-commit: 64460d51b002a7821bba9c2998d9ccccab3046ad
 workflow-type: tm+mt
 source-wordcount: '874'
 ht-degree: 1%
-
 ---
-
 # 移轉至Adobe Analytics 2.0 API {#analytics-2-migration}
 
 Adobe Analytics 1.4 API [即將結束生命週期](https://developer.adobe.com/analytics-apis/docs/1.4/guides/eol){target="_blank"}。 將您的Campaign執行個體連結至Adobe Analytics的[Web Analytics聯結器](../../integrations/using/gs-aa.md)仰賴這些API，因此您需要升級至使用新Analytics 2.0 API的組建，以維持整合正常運作。
@@ -53,8 +51,8 @@ Adobe Analytics 1.4 API [即將結束生命週期](https://developer.adobe.com/a
       ```
 
    1. 在SFTP伺服器上將Adobe Analytics加入允許清單，因為再行銷匯出只會從一組固定的Adobe IP範圍啟動：
-      * [查詢目前的Adobe Analytics資料收集IP位址](https://experienceleague.adobe.com/zh-hant/docs/core-services/interface/data-collection/ip-addresses){target="_blank"}，並將其新增至您的SFTP伺服器允許清單。 以FTP為基礎的Analytics匯出（包括資料摘要）只會來自倫敦、奧勒岡和新加坡區域的IPv4位址。
-      * [擷取Adobe Analytics公開金鑰](https://experienceleague.adobe.com/zh-hant/docs/experience-cloud-kcs/kbarticles/ka-18141){target="_blank"}並將其新增至SFTP伺服器上的`authorized_keys`檔案，以便Analytics能夠進行驗證。
+      * [查詢目前的Adobe Analytics資料收集IP位址](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/ip-addresses){target="_blank"}，並將其新增至您的SFTP伺服器允許清單。 以FTP為基礎的Analytics匯出（包括資料摘要）只會來自倫敦、奧勒岡和新加坡區域的IPv4位址。
+      * [擷取Adobe Analytics公開金鑰](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-18141){target="_blank"}並將其新增至SFTP伺服器上的`authorized_keys`檔案，以便Analytics能夠進行驗證。
 1. 在Campaign Explorer樹狀結構中的&#x200B;**[!UICONTROL Administration]> [!UICONTROL Platform] >[!UICONTROL Options]**&#x200B;下，在[!UICONTROL xtkOption]中建立或設定選項`longvalue`為`1`，以在您的執行個體上啟用`FEATUREFLAG_USE_ANALYTICS_20_API`功能標幟。 無論上述使用案例適用於您，都需要執行此步驟。
 1. 在停用任何舊的連線之前，透過實施適用於您執行個體的每個使用案例來驗證移轉(傳送測試行銷活動、檢查指標是否進入Analytics，以及確認再行銷資料（如果適用）)。
 
@@ -83,7 +81,7 @@ Adobe Analytics 1.4 API [即將結束生命週期](https://developer.adobe.com/a
 
 1. 按一下 **[!UICONTROL Save]**。
 
-當您在下一步設定外部帳戶時，Campaign會自動探索此分類集。 如需分類集的詳細資訊，請參閱[Adobe Analytics檔案](https://experienceleague.adobe.com/zh-hant/docs/analytics/components/classifications/sets/create-set){target="_blank"}。
+當您在下一步設定外部帳戶時，Campaign會自動探索此分類集。 如需分類集的詳細資訊，請參閱[Adobe Analytics檔案](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/sets/create-set){target="_blank"}。
 
 ## 需要協助嗎? {#need-help}
 

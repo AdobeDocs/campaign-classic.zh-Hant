@@ -3,7 +3,7 @@ product: campaign
 title: 監控流程
 description: 瞭解如何監視Campaign流程
 feature: Monitoring
-badge-v7-prem: label="僅限內部部署/混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="僅適用於內部部署和混合部署"
+badge-v7-prem: label="On-premise/hybrid only" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="Applies to on-premise and hybrid deployments only"
 audience: production
 content-type: reference
 topic-tags: production-procedures
@@ -11,21 +11,25 @@ exl-id: 1f5d8c7e-6f9b-46cd-a9b4-a3b48afb1794
 TQID: https://experienceleague.adobe.com/rTFIt6bZHR9dwiUr2KTTsoFCPX48cItfbE7u8l8mEqA
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: b12f6872-9271-4369-85e5-86969a0b99a2
+    internal-label: APIs
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 subfeature_v2:
   - id: c03a11ff-bdf9-4e5b-b279-f468b4293464
+    internal-label: Performance Monitoring
   - id: e519a22f-a06a-42fc-9d09-d78a3ab2c434
+    internal-label: Monitoring guidelines
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 3682
+source-wordcount: '3671'
 ht-degree: 1%
-
 ---
-
 # 監控流程{#monitoring-processes}
 
 
@@ -564,7 +568,7 @@ XML組態檔包含下列元素：
 * **mailServer**：用來傳送電子郵件的SMTP伺服器（例如： smtp.domain.net）。
 * **mailFrom**：報告寄件者的電子郵件地址（例如：monitoring@domain.net）。
 * **recipientList**：監視收件者的電子郵件地址清單。 位址必須以逗號分隔（無空格）。
-* &#39;**night**&#39;模式（選擇性）用於避免在指定的時段之間傳送電子郵件。 相反地，會合併資料，並在結束時間（預設為7:00）後傳送有關夜間活動的電子郵件。
+* &#39;**night**&#39;模式（選擇性）用於避免在指定的時段之間傳送電子郵件。 相反地，資料會經過合併，並在結束時間後傳送一封有關夜間活動的電子郵件（預設為7:00）。
 * **buildRange**&#x200B;子專案（選擇性）可讓您指定最小和最大組建編號。 組建編號未落在此範圍的所有電腦都會產生錯誤
 
   ```

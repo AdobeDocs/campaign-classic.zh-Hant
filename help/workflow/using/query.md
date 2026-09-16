@@ -8,25 +8,27 @@ exl-id: 20d03627-cd56-46da-bc02-73b48a02a350
 TQID: https://experienceleague.adobe.com/Htrpo3hCrbp9H7cQD4KWTnMbA-rjgM0K1PFHh-Fak1M
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2: []
 subfeature_v2:
   - id: ee25c34b-ea50-427b-9369-ba0a160f7d70
+    internal-label: Workflow HeatMap
   - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
+    internal-label: Execution activities
   - id: d1110311-2ca4-442b-be37-088a6db845ee
+    internal-label: Data Management activities
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 1620
+source-wordcount: '1650'
 ht-degree: 0%
-
 ---
-
 # 查詢{#query}
 
 
 
 ## 建立查詢 {#creating-a-query}
 
-查詢可讓您根據條件選取目標。您可以將區段代碼與查詢結果相關聯，並插入其他資料。
+查詢可讓您根據條件選取目標。 您可以將區段代碼與查詢結果相關聯，並插入其他資料。
 如需查詢範例的詳細資訊，請參閱此[此區段](querying-recipient-table.md)。
 
 >[!NOTE]
@@ -195,9 +197,9 @@ ht-degree: 0%
 
   如需詳細資訊，請參閱Campaign版本的相關章節：
 
-  ![](assets/do-not-localize/v7.jpeg) [Campaign v7檔案](../../configuration/using/database-mapping.md)
+  ![](assets/do-not-localize/v7.jpeg)[Campaign v7檔案](../../configuration/using/database-mapping.md)
 
-  ![](assets/do-not-localize/v8.png) [Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/shemas-forms/database-mapping.html)
+  ![](assets/do-not-localize/v8.png)[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/shemas-forms/database-mapping.html)
 
 ### 函數 {#functions}
 
@@ -231,11 +233,11 @@ SQL中篩選維度的對等項是內部聯結：
 * 使用與生產平台類似的磁碟區、引數和架構來建置開發平台。
 * 在開發和生產環境中使用相同的值。 請儘可能使用相同專案：
 
-   * 作業系統，
-   * 版本，
-   * 資料，
-   * 應用程式，
-   * 磁碟區。
+  * 作業系統，
+  * 版本，
+  * 資料，
+  * 應用程式，
+  * 磁碟區。
 
   >[!NOTE]
   >

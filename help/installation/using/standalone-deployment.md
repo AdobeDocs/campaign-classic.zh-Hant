@@ -10,15 +10,14 @@ exl-id: 194366ab-fd9f-4431-9163-ae16c1f96db2
 TQID: https://experienceleague.adobe.com/AgGQgham1xWf9U5mAAc-Eul-izsp-tW6aNNPMobLvT4
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 1094
+source-wordcount: '1095'
 ht-degree: 3%
-
 ---
-
 # 獨立部署{#standalone-deployment}
 
 
@@ -73,8 +72,8 @@ ht-degree: 3%
 * 可透過POP3存取的彈回信箱，
 * 建立兩個DNS別名：
 
-   * 首次公開給大眾使用公開IP追蹤及指向電腦；
-   * 向內部使用者公開的第二個別名，用於主控台存取並指向相同的電腦。
+  * 首次公開給大眾使用公開IP追蹤及指向電腦；
+  * 向內部使用者公開的第二個別名，用於主控台存取並指向相同的電腦。
 
 * 防火牆已設定為開啟SMTP (25)、DNS (53)、HTTP (80)、HTTPS (443)、SQL （1521 for Oracle、5432 for PostgreSQL等） 連線埠。 如需進一步資訊，請參閱[網路組態](../../installation/using/network-configuration.md)。
 
@@ -244,7 +243,7 @@ ht-degree: 3%
 
      ![](assets/s_ncs_install_deployment_wiz_09.png)
 
-     由於Adobe Campaign伺服器同時作為應用程式伺服器和重新導向伺服器使用，因此用於收集追蹤記錄檔和傳輸URL的內部URL是與Tomcat (https://localhost:8080)的直接內部連線。
+     由於Adobe Campaign伺服器同時作為應用程式伺服器和重新導向伺服器使用，因此用於收集追蹤記錄和傳輸URL的內部URL是與Tomcat的直接內部連線(https://localhost:8080)。
 
    * 退回管理：輸入引數以處理退回郵件（不考慮&#x200B;**未處理的退回郵件**&#x200B;區段）。
    * 存取來源：提供報表、網路表單及映象頁面的兩個URL。

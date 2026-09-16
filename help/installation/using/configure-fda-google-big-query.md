@@ -10,18 +10,19 @@ exl-id: ebaad59f-0607-4090-92d0-e457fbf9a348
 TQID: https://experienceleague.adobe.com/jmeyOWDTkOmCKOVGlNAdYzNHfaK1QeSxnIjDDnl8yj0
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: b12f6872-9271-4369-85e5-86969a0b99a2
+    internal-label: APIs
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 1042
+source-wordcount: '1051'
 ht-degree: 2%
-
 ---
-
 # 設定Google BigQuery的存取權 {#configure-fda-google-big-query}
 
 
@@ -42,7 +43,7 @@ ht-degree: 2%
 
 ### 在Windows上設定的驅動程式 {#driver-window}
 
-1. 下載適用於Windows[&#128279;](https://cloud.google.com/bigquery/docs/reference/odbc-jdbc-drivers)的ODBC驅動程式。
+1. 下載適用於Windows](https://cloud.google.com/bigquery/docs/reference/odbc-jdbc-drivers)的[ODBC驅動程式。
 
 1. 在Windows中設定ODBC驅動程式。 如需詳細資訊，請參閱[此頁面](https://storage.googleapis.com/simba-bq-release/jdbc/Simba%20JDBC%20Driver%20for%20Google%20BigQuery%20Install%20and%20Configuration%20Guide.pdf)。
 
@@ -200,9 +201,9 @@ ht-degree: 2%
    * **[!UICONTROL Project]**：您的&#x200B;**[!UICONTROL Project]**&#x200B;名稱。 如需詳細資訊，請參閱[Google Cloud檔案](https://cloud.google.com/resource-manager/docs/creating-managing-projects)。
 
    * **[!UICONTROL Key file Path]**:
-      * **[!UICONTROL Upload key file to the server]**：如果您選擇透過Adobe Campaign Classic上傳金鑰，請選取&#x200B;**[!UICONTROL Click here to upload]**。
+     * **[!UICONTROL Upload key file to the server]**：如果您選擇透過Adobe Campaign Classic上傳金鑰，請選取&#x200B;**[!UICONTROL Click here to upload]**。
 
-      * **[!UICONTROL Enter manually the key file path]**：如果您選擇使用預先存在的金鑰，請在此欄位中複製/貼上您的絕對路徑。
+     * **[!UICONTROL Enter manually the key file path]**：如果您選擇使用預先存在的金鑰，請在此欄位中複製/貼上您的絕對路徑。
 
    * **[!UICONTROL Dataset]**：您的&#x200B;**[!UICONTROL Dataset]**&#x200B;名稱。 如需詳細資訊，請參閱[Google Cloud檔案](https://cloud.google.com/bigquery/docs/datasets-intro)。
 

@@ -10,18 +10,19 @@ exl-id: e1aff73a-54fb-444e-b183-df11c9b3df31
 TQID: https://experienceleague.adobe.com/geVW1WFvlnZJmiLeaI01ww-TsQvEN3-zpr57jmz2Miw
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 630
-ht-degree: 2%
-
+source-wordcount: '630'
+ht-degree: 4%
 ---
-
 # 伺服器安全性設定 {#server-configuration}
 
 ## 檔案上傳保護
@@ -51,7 +52,7 @@ Adobe Campaign不會限制檔案大小。 但您可以透過設定IIS/Apache來�
 
 ## 傳出連線的保護
 
-可由JavaScript程式碼（工作流程等）呼叫的預設URL清單 有限。 若要允許新的URL，管理員必須在[serverConf.xml檔案](../../installation/using/the-server-configuration-file.md)中參照它。
+透過您的 Campaign 執行個體，由 JavaScript 程式碼 (工作流程等) 有限。 若要允許新的URL，管理員必須在[serverConf.xml檔案](../../installation/using/the-server-configuration-file.md)中參照它。
 
 有三種連線保護模式：
 
@@ -79,7 +80,7 @@ Adobe Campaign不會限制檔案大小。 但您可以透過設定IIS/Apache來�
 
 您可以為所有頁面新增額外的HTTP標頭（如需詳細資訊，請參閱[此頁面](../../installation/using/configuring-campaign-server.md#restricting-authorized-external-commands)）：
 
-* 您可以新增一些其他標頭，例如HSTS、X-FRAME-OPTIONS、CSP...
+* 您可以新增一些額外的標頭，例如HSTS、X-FRAME-OPTIONS、CSP...
 * 您必須在測試環境中測試這些變數，才能將其套用於生產環境。
 
   >[!IMPORTANT]

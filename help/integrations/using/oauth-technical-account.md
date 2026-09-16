@@ -8,26 +8,34 @@ exl-id: 5d830ea0-a0a3-4b35-8dc4-e955380431fb
 TQID: https://experienceleague.adobe.com/cZi5LdGtTnT8wMtI8nmg3Ue5LPfTkn3OKFZkxxdg3F0
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: b12f6872-9271-4369-85e5-86969a0b99a2
+    internal-label: APIs
   - id: d5ef99fa-df0c-4153-bf94-105ad0724167
+    internal-label: Integrations
 subfeature_v2:
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+    internal-label: Adobe Analytics integration
   - id: df0d6518-6f49-46e2-b46e-3bcc513f553f
+    internal-label: Adobe Experience Manager integration
   - id: eb007b6d-6e57-46ab-9485-3f24d6102304
+    internal-label: Adobe Experience Platform integration
   - id: b1fd1501-3105-4d6b-b4d4-9af53126df75
+    internal-label: Adobe Target integration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 366
+source-wordcount: '366'
 ht-degree: 2%
-
 ---
-
 # 建立 Adobe 技術帳戶 {#create-service-account}
 
 伺服器對伺服器驗證認證可讓應用程式的伺服器產生存取權杖，並代表應用程式本身進行API呼叫。 [了解更多](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/)
@@ -36,7 +44,7 @@ ht-degree: 2%
 
 Adobe已棄用服務帳戶(JWT)憑證。 Campaign與Adobe解決方案和應用程式的整合現在必須依賴OAuth伺服器對伺服器認證。
 
-如果您在2024年6月之前已實作與行銷活動的傳入或傳出整合，您必須將行銷活動環境升級至v7.4.1，並將您的技術帳戶移轉至oAuth，如本檔案[&#128279;](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration){target="_blank"}所述。 現有的服務帳戶(JWT)認證將持續運作到&#x200B;**2025年6月30日**。
+如果您在2024年6月之前已實作與行銷活動的傳入或傳出整合，您必須將行銷活動環境升級至v7.4.1，並將您的技術帳戶移轉至oAuth，如本檔案](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration){target="_blank"}所述。 [現有的服務帳戶(JWT)認證將持續運作到&#x200B;**2025年6月30日**。
 
 完成移轉後，您必須依照[本節](#add-credentials)的說明，將新的認證與Campaign建立關聯。
 
@@ -46,7 +54,7 @@ Adobe已棄用服務帳戶(JWT)憑證。 Campaign與Adobe解決方案和應用�
 
 1. 存取Adobe Developer主控台，並以您組織的&#x200B;**系統管理員**&#x200B;身分登入。
 
-   如需管理員角色的詳細資訊，請參閱此[頁面](https://helpx.adobe.com/tw/enterprise/using/admin-roles.html)。
+   如需管理員角色的詳細資訊，請參閱此[頁面](https://helpx.adobe.com/enterprise/using/admin-roles.html)。
 
 1. 按一下 **[!UICONTROL Create a new project]**。
 
@@ -64,7 +72,7 @@ Adobe已棄用服務帳戶(JWT)憑證。 Campaign與Adobe解決方案和應用�
 
 1. 選取專案的&#x200B;**[!UICONTROL Product profile]**&#x200B;連結。
 
-   您可以視需要建立新檔案。 [了解更多](https://helpx.adobe.com/tw/enterprise/using/manage-product-profiles.html)
+   您可以視需要建立新檔案。 [了解更多](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html)
 
 1. 然後，按一下&#x200B;**[!UICONTROL Save Configured API]**。
 

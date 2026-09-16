@@ -3,7 +3,7 @@ product: campaign
 title: 擴充功能範例
 description: 擴充功能範例
 feature: Interaction, Offers
-badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
@@ -11,17 +11,18 @@ exl-id: d4acf99b-cef4-48f7-b4cd-c032ec12592f
 TQID: https://experienceleague.adobe.com/TQZaYrJop03HAw47XPFqgmoxb073iC-xztTp-f-5dEk
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: b6fcaf36-3bc4-4604-94f3-81b5d3f41ecf
+    internal-label: Offer Management
 subfeature_v2:
   - id: e739ee2b-6228-412e-878f-45de0791417d
+    internal-label: Use cases
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 160
+source-wordcount: '151'
 ht-degree: 3%
-
 ---
-
 # 擴充功能範例{#extension-example}
 
 

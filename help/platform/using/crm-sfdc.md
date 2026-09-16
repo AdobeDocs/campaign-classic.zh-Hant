@@ -8,24 +8,31 @@ hide: true
 TQID: https://experienceleague.adobe.com/LeUJ-F5dAECUrtkbvgwL0BN88Alofnh2rBWe7hIVGgI
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
   - id: afa4204e-6d08-4e29-bc35-26aafb656d48
+    internal-label: Profiles and audiences
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 subfeature_v2:
   - id: f529d0bd-1401-4c88-9833-43228cc1d40f
+    internal-label: Profiles
   - id: d6330382-c886-4f7a-a4f7-74e3f36c0d9c
+    internal-label: Audiences
   - id: f5293531-9312-4099-bfa3-9e67df6a8750
+    internal-label: Query Editor
   - id: efa38731-2723-4334-8d8b-a778af834835
+    internal-label: Access management
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 323
+source-wordcount: '333'
 ht-degree: 0%
-
 ---
-
 # 連線Campaign和Salesforce.com{#connect-to-sfdc}
 
 
@@ -47,19 +54,19 @@ ht-degree: 0%
    若要設定Salesforce CRM外部帳戶以搭配Adobe Campaign使用，您必須提供下列詳細資料：
 
    * **[!UICONTROL Account]**
-用來登入Salesforce CRM的帳戶。
+     用來登入Salesforce CRM的帳戶。
 
    * **[!UICONTROL Password]**
-用來登入Salesforce CRM的密碼。
+     用來登入Salesforce CRM的密碼。
 
    * **[!UICONTROL Client identifier]**
-若要瞭解在何處尋找您的使用者端識別碼，請參閱此[頁面](https://help.salesforce.com/articleView?id=000205876&type=1)。
+     若要瞭解在何處尋找您的使用者端識別碼，請參閱此[頁面](https://help.salesforce.com/articleView?id=000205876&type=1)。
 
    * **[!UICONTROL Security token]**
-若要瞭解在何處尋找您的安全性權杖，請參閱此[頁面](https://help.salesforce.com/articleView?id=000205876&type=1)。
+     若要瞭解在何處尋找您的安全性權杖，請參閱此[頁面](https://help.salesforce.com/articleView?id=000205876&type=1)。
 
    * **[!UICONTROL API version]**
-選取API的版本。
+     選取API的版本。
 1. 執行Configuration Assistant以產生可用的CRM表格：Configuration Assistant可讓您收集表格並建立相符的結構描述。
 
    ![](assets/crm_connectors_sfdc_launch.png)
@@ -103,4 +110,4 @@ Campaign和Salesforce.com現已連線。 您可以設定兩個系統之間的資
 
 ![](assets/crm_connectors_sfdc_wf.png)
 
-在此頁面[&#128279;](../../platform/using/crm-data-sync.md)中進一步瞭解資料同步處理。
+在此頁面](../../platform/using/crm-data-sync.md)中進一步瞭解資料同步處理[。

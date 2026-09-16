@@ -3,7 +3,7 @@ product: campaign
 title: 使用Linux安裝套件
 description: 使用Linux安裝套件
 feature: Installation, Application Settings
-badge-v7-prem: label="僅限內部部署/混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="僅適用於內部部署和混合部署"
+badge-v7-prem: label="On-premise/hybrid only" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
@@ -11,15 +11,14 @@ exl-id: f41c7510-5ad7-44f3-9485-01f54994b6cb
 TQID: https://experienceleague.adobe.com/mpN0TwuPILae7Y-jbkyvbBR1zdo4IvtnuzGQObLI0rc
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2: []
 subfeature_v2: []
 source-git-commit: d711ea40185e9860ea20773ae1dfebfc7cc3e4d0
 workflow-type: tm+mt
-source-wordcount: 1152
+source-wordcount: '1140'
 ht-degree: 3%
-
 ---
-
 # 使用Linux安裝套件 {#installing-packages-with-linux}
 
 Adobe Campaign隨附&#x200B;**nlserver**&#x200B;套件，其中包含指定版本的二進位檔和組態檔。
@@ -164,23 +163,23 @@ touch /usr/local/neolane/nl6/unicodeenv
 
   若要在現有LibreOffice版本上執行Adobe Campaign，需要進行其他設定：您必須指定安裝目錄的存取路徑。 例如：
 
-   * Debian
+  * Debian
 
-     提供了OOO_INSTALL_DIR和OOO_BASIS_INSTALL_DIR的預設值。 如果LibreOffice安裝的配置不同，您可以在&#x200B;**customer.sh**&#x200B;中覆寫它們：
+    提供了OOO_INSTALL_DIR和OOO_BASIS_INSTALL_DIR的預設值。 如果LibreOffice安裝的配置不同，您可以在&#x200B;**customer.sh**&#x200B;中覆寫它們：
 
-     ```sql
-     export OOO_BASIS_INSTALL_DIR=/usr/lib/libreoffice/ 
-     export OOO_INSTALL_DIR=/usr/lib/libreoffice/
-     ```
+    ```sql
+    export OOO_BASIS_INSTALL_DIR=/usr/lib/libreoffice/ 
+    export OOO_INSTALL_DIR=/usr/lib/libreoffice/
+    ```
 
-   * CentOs
+  * CentOs
 
-     使用下列預設值：
+    使用下列預設值：
 
-     ```sql
-     export OOO_BASIS_INSTALL_DIR=/usr/lib64/libreoffice/
-     export OOO_INSTALL_DIR=/usr/lib64/libreoffice/
-     ```
+    ```sql
+    export OOO_BASIS_INSTALL_DIR=/usr/lib64/libreoffice/
+    export OOO_INSTALL_DIR=/usr/lib64/libreoffice/
+    ```
 
 * 適用於Java開發套件(JDK)：
 

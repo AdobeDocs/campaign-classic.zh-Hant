@@ -10,20 +10,24 @@ exl-id: 30a94bce-6d96-4a6d-a62f-7451c822f0e3
 TQID: https://experienceleague.adobe.com/5SrvIw1sYSNd4Hw1we554AfxDj3VgeTeqIOOzTTrWuY
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: d5ef99fa-df0c-4153-bf94-105ad0724167
+    internal-label: Integrations
 subfeature_v2:
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+    internal-label: Adobe Analytics integration
   - id: df0d6518-6f49-46e2-b46e-3bcc513f553f
+    internal-label: Adobe Experience Manager integration
   - id: eb007b6d-6e57-46ab-9485-3f24d6102304
+    internal-label: Adobe Experience Platform integration
   - id: b1fd1501-3105-4d6b-b4d4-9af53126df75
+    internal-label: Adobe Target integration
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 233
+source-wordcount: '233'
 ht-degree: 1%
-
 ---
-
 # 插入共用資產{#inserting-a-shared-asset}
 
 從Adobe Experience Cloud共用的Assets可用於您的電子郵件和登入頁面，如下所示：
@@ -36,7 +40,7 @@ ht-degree: 1%
 
 1. 在編輯視窗中，選取選項以新增影像：
 
-   * 如果您使用[標準編輯模式](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=zh-Hant#adding-images){target="_blank"}，請選取&#x200B;**[!UICONTROL Image]** > **[!UICONTROL Select a shared asset]**。
+   * 如果您使用[標準編輯模式](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#adding-images){target="_blank"}，請選取&#x200B;**[!UICONTROL Image]** > **[!UICONTROL Select a shared asset]**。
 
      ![](assets/dam_insert_image_standard.png)
 
@@ -50,7 +54,7 @@ ht-degree: 1%
 
 1. 在開啟的選取範圍視窗中，選取影像，然後確認。
 
-   可用的影像來自Adobe Experience Cloud資料庫或AEM Assets資料庫，視您的Adobe Campaign執行個體的設定方式而定。 請參閱[設定Assets存取權](../../integrations/using/configuring-access-to-assets.md)區段。
+   可用的影像來自您的Adobe Experience Cloud資料庫或AEM Assets資料庫，視您的Adobe Campaign執行個體的設定方式而定。 請參閱[設定Assets存取權](../../integrations/using/configuring-access-to-assets.md)區段。
 
    ![](assets/dam_shared_image_selection.png)
 

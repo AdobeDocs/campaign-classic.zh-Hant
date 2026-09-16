@@ -10,17 +10,17 @@ exl-id: bdb5e422-ecfe-42eb-bd15-39fe5ec0ff1d
 TQID: https://experienceleague.adobe.com/1Je4UdKtftgQaeTX77rBrgezn2pIBRlHAG4DPavfE14
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 534
+source-wordcount: '534'
 ht-degree: 2%
-
 ---
-
 # 設定Snowflake的存取權 {#configure-access-to-snowflake}
 
 使用Campaign **同盟資料存取** (FDA)選項來處理儲存在外部資料庫中的資訊。 請依照下列步驟設定[!DNL Snowflake]的存取權。
@@ -102,9 +102,9 @@ ht-degree: 2%
 
    * 針對帳戶/密碼驗證，您必須指定：
 
-      * **[!UICONTROL Account]**：使用者名稱
+     * **[!UICONTROL Account]**：使用者名稱
 
-      * **[!UICONTROL Password]**：使用者帳戶密碼。
+     * **[!UICONTROL Password]**：使用者帳戶密碼。
 
      ![](assets/snowflake.png)
 

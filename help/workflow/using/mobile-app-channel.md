@@ -8,9 +8,7 @@ source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
 source-wordcount: '66'
 ht-degree: 4%
-
 ---
-
 
 # 行動應用程式頻道{#mobile-app-channel}
 

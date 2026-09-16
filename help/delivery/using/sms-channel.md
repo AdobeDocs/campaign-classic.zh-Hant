@@ -8,31 +8,39 @@ exl-id: 6fc2ab09-8ea7-4865-88ad-bd45eee68958
 TQID: https://experienceleague.adobe.com/bk-HUOGv3u60NzOnXD0huo74lBJJuiBOaOJeGmPa2E4
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
   - id: b631758a-142d-425f-b9aa-f756d85cb979
+    internal-label: Campaign Email Designer
   - id: c858a28b-ea19-49b0-8d48-828717fad89c
+    internal-label: Prepare and test messages
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
 subfeature_v2:
   - id: e95a583b-fcfa-4524-8666-46a29c828119
+    internal-label: Email messaging
   - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
+    internal-label: Email design
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
+    internal-label: A/B testing
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
+    internal-label: Manage deliverability
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 484
+source-wordcount: '484'
 ht-degree: 10%
-
 ---
-
 # 開始使用簡訊頻道{#sms-channel}
 
 使用Adobe Campaign傳送簡訊給行動裝置上的客戶。 您可以從SMS編輯器以文字格式建立、個人化和預覽訊息。
 
-SMS是直接且高效的管道，無論使用者身在何處，都可聯絡上他們。 SMS具有高開放率及幾乎即時的傳送方式，非常適合用於時效性高的警示、交易式更新及簡明的促銷訊息。 使用簡訊補充您的跨頻道策略，並提供有影響力的即時通訊。 在[Adobe Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/sms.html?lang=zh-Hant){target=_blank}中瞭解如何有效設定和使用簡訊頻道。
+SMS是直接且高效的管道，無論使用者身在何處，都可聯絡上他們。 SMS具有高開放率及幾乎即時的傳送方式，非常適合用於時效性高的警示、交易式更新及簡明的促銷訊息。 使用簡訊補充您的跨頻道策略，並提供有影響力的即時通訊。 在[Adobe Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/sms.html){target=_blank}中瞭解如何有效設定和使用簡訊頻道。
 
 作為從Campaign v7轉變到v8的一部分，Campaign Classic檔案集已簡化並重新組織。 Campaign v8檔案集中現在提供常見功能。
 
@@ -40,23 +48,23 @@ SMS是直接且高效的管道，無論使用者身在何處，都可聯絡上�
 
 >[!TAB 簡訊頻道檔案]
 
-若要深入瞭解簡訊頻道，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/sms.html?lang=zh-Hant){target=_blank}。
+若要深入瞭解簡訊頻道，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/sms.html){target=_blank}。
 
 
-[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/sms.html?lang=zh-Hant){target=_blank}
+[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/sms.html){target=_blank}
 
 
 >[!TAB SMS傳遞建立]
 
 在Campaign v8檔案&#x200B;**中瞭解與建立SMS傳遞**&#x200B;相關的關鍵步驟：
 
-* [簡訊通道概觀](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/sms.html?lang=zh-Hant){target="_blank"}：瞭解您如何透過行動裝置傳送簡訊給您的客戶。
+* [簡訊通道概觀](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/sms.html){target="_blank"}：瞭解您如何透過行動裝置傳送簡訊給您的客戶。
 * [建立SMS傳遞](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/create-sms/create-sms.html){target="_blank"}：探索建立新SMS傳遞所需的不同步驟。
 * [定義內容](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/create-sms/sms-content.html){target="_blank"}：瞭解如何個人化SMS訊息的內容。
 * [選取對象](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/create-sms/sms-audience.html){target="_blank"}：主要目標已從Adobe Campaign資料庫擷取，或也可以儲存在外部檔案中。
 * [傳送SMS校樣](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/validate-sms/sms-proofs.html)：必須設定傳遞驗證週期。 將內容傳送給對象之前，請確定內容已核准。
 * [傳送給對象](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/validate-sms/sms-send.html?lang=zh-Hant)：當您的SMS通過驗證時，您現在可以傳送給其對象。
-* [監視及追蹤SMS](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/sms-monitor.html?lang=zh-Hant)：監視您的SMS傳遞，以確保您的行銷活動有效率。
+* [監視及追蹤SMS](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/sms-monitor.html)：監視您的SMS傳遞，以確保您的行銷活動有效率。
 
 
 >[!TAB 簡訊設定]

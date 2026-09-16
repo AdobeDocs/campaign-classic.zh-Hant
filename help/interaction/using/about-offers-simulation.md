@@ -7,19 +7,21 @@ exl-id: facaa88e-1fa2-4189-9d8f-348aaef3e235
 TQID: https://experienceleague.adobe.com/034-CFbQIFVm9QiSpDyRHlVsIrF46NSqKMwp-Gm3-mc
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
 feature_v2:
   - id: b6fcaf36-3bc4-4604-94f3-81b5d3f41ecf
+    internal-label: Offer Management
 subfeature_v2: []
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 264
+source-wordcount: '264'
 ht-degree: 3%
-
 ---
-
 # 關於產品建議模擬{#about-offers-simulation}
 
 
@@ -53,7 +55,7 @@ ht-degree: 3%
 
 1. 指定模擬範圍。
 
-   如需詳細資訊，請參閱領域[&#128279;](../../interaction/using/simulation-scope.md#definition-of-the-scope)的定義。
+   如需詳細資訊，請參閱領域](../../interaction/using/simulation-scope.md#definition-of-the-scope)的[定義。
 
    ![](assets/offer_simulation_004.png)
 

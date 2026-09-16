@@ -10,19 +10,21 @@ exl-id: 4d25d740-db57-4d18-8cae-2dd49c4a786e
 TQID: https://experienceleague.adobe.com/TJ5R6T1pu5JQU5SaGoWRgZLG2m29TWWPVB8nniorRUg
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 868
+source-wordcount: '868'
 ht-degree: 5%
-
 ---
-
 # 其他設定 {#mc-additional-configurations}
 
 
@@ -96,12 +98,12 @@ Once the control and execution modules are installed on the same instance, you m
 
   可使用下列事件狀態：
 
-   * **[!UICONTROL Pending]** ：事件在佇列中。 尚未為其指派訊息範本。
-   * **[!UICONTROL Pending delivery]** ：事件在佇列中，已指派訊息範本給該事件，並由傳遞處理。
-   * **[!UICONTROL Sent]** ：此狀態是從傳送記錄檔複製而來。 這表示傳送已進行。
-   * **[!UICONTROL Ignored by the delivery]** ：此狀態是從傳送記錄檔複製而來。 這表示會由傳送忽略。
-   * **[!UICONTROL Delivery failed]** ：此狀態是從傳送記錄檔複製而來。 這表示傳送失敗。
-   * **[!UICONTROL Event not taken into account]** ：無法將事件連結至訊息範本。 將不會處理事件。
+  * **[!UICONTROL Pending]** ：事件在佇列中。 尚未為其指派訊息範本。
+  * **[!UICONTROL Pending delivery]** ：事件在佇列中，已指派訊息範本給該事件，並由傳遞處理。
+  * **[!UICONTROL Sent]** ：此狀態是從傳送記錄檔複製而來。 這表示傳送已進行。
+  * **[!UICONTROL Ignored by the delivery]** ：此狀態是從傳送記錄檔複製而來。 這表示會由傳送忽略。
+  * **[!UICONTROL Delivery failed]** ：此狀態是從傳送記錄檔複製而來。 這表示傳送失敗。
+  * **[!UICONTROL Event not taken into account]** ：無法將事件連結至訊息範本。 將不會處理事件。
 
 ### 封存工作流程排程
 
@@ -115,7 +117,7 @@ Once the control and execution modules are installed on the same instance, you m
 
 ### 相容性注意事項 {#compatibility-note}
 
-此舊版品牌設定與Campaign v8中推出的新[集中式品牌](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/branding/branding-gs.html?lang=zh-Hant){target="_blank"}模式不相容。
+此舊版品牌設定與Campaign v8中推出的新[集中式品牌](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/branding/branding-gs.html){target="_blank"}模式不相容。
 
 如果您的現有環境使用此舊版設定，則無法將其直接移轉至新的集中式品牌模型。 採用新系統需完全重新實作品牌設定。
 
@@ -186,6 +188,6 @@ Once the control and execution modules are installed on the same instance, you m
 
 1. 為每個品牌建立一個外部帳戶，其內部名稱與[執行執行個體](#execution-instance)上定義的名稱相同（步驟1）。
 
-1. 為每個品牌建立傳遞範本。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=zh-Hant){target="_blank"}。
+1. 為每個品牌建立傳遞範本。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}。
 
 1. 在傳遞範本的&#x200B;**[!UICONTROL Properties]**&#x200B;中，設定品牌外部帳戶的路由。

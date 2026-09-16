@@ -3,7 +3,7 @@ product: campaign
 title: 透過LDAP連線
 description: 瞭解如何使用LDAP登入Campaign
 feature: Installation, Instance Settings
-badge-v7-prem: label="僅限內部部署/混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="僅適用於內部部署和混合部署"
+badge-v7-prem: label="On-premise/hybrid only" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
@@ -11,17 +11,17 @@ exl-id: 0533cd50-3aa4-4160-9152-e916e149e77f
 TQID: https://experienceleague.adobe.com/GMKB83dj65iqnlu97uX-d672TWOysjd4gspRLEfz-y8
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 1070
-ht-degree: 1%
-
+source-wordcount: '1077'
+ht-degree: 3%
 ---
-
 # 透過LDAP連線 {#connecting-through-ldap}
 
 ## 設定Campaign和LDAP {#configuring-campaign-and-ldap}
@@ -42,19 +42,19 @@ LDAP設定會在部署精靈中執行。 必須在第一個組態步驟中選取
 * 在&#x200B;**[!UICONTROL LDAP server]**&#x200B;欄位中指定LDAP伺服器的位址。 您可以新增連線埠號碼。 依預設，使用的連線埠為389。
 * 在下拉式清單中，選取使用者的驗證方法：
 
-   * 加密密碼(**md5**) — 預設模式。
+  * 加密密碼(**md5**) — 預設模式。
 
-   * 純文字密碼+ SSL (**TLS**) — 整個驗證程式（包含密碼）已加密。 安全連線埠636不可在此模式中使用： Adobe Campaign會自動切換至安全模式。
+  * 純文字密碼+ SSL (**TLS**) — 整個驗證程式（包含密碼）已加密。 安全連線埠636不可在此模式中使用： Adobe Campaign會自動切換至安全模式。
 
-     當您使用此驗證模式時，在Linux中，憑證會由openLDAP使用者端程式庫驗證。 建議您使用有效的SSL憑證，以便加密驗證程式。 否則，資訊將以純文字顯示。
+    當您使用此驗證模式時，在Linux中，憑證會由openLDAP使用者端程式庫驗證。 建議您使用有效的SSL憑證，以便加密驗證程式。 否則，資訊將以純文字顯示。
 
-     憑證也會在Windows中驗證。
+    憑證也會在Windows中驗證。
 
-   * Windows NT LAN管理員(**NTLM**) — 專屬Windows驗證。 **[!UICONTROL Unique identifier]**&#x200B;僅用於網域名稱。
+  * Windows NT LAN管理員(**NTLM**) — 專屬Windows驗證。 **[!UICONTROL Unique identifier]**&#x200B;僅用於網域名稱。
 
-   * 分散式密碼驗證(**DPA**) — 專屬Windows驗證。 **[!UICONTROL Unique identifier]**&#x200B;僅用於網域名稱(domain.com)。
+  * 分散式密碼驗證(**DPA**) — 專屬Windows驗證。 **[!UICONTROL Unique identifier]**&#x200B;僅用於網域名稱(domain.com)。
 
-   * 純文字密碼 — 不加密（僅供測試階段使用）。
+  * 純文字密碼 — 不加密（僅供測試階段使用）。
 
 * 選取使用者驗證模式： **[!UICONTROL Automatically compute the unique user identifier]** （請參閱步驟[辨別名稱計算](#distinguished-name-calculation)）或&#x200B;**[!UICONTROL Search the unique user identifier in the directory]** （請參閱步驟[搜尋識別碼](#searching-for-identifiers)）。
 
@@ -125,17 +125,17 @@ LDAP設定會在部署精靈中執行。 必須在第一個組態步驟中選取
 
   ![](assets/s_ncs_install_deployment_wiz_ldap_03.png)
 
-   1. **[!UICONTROL Recursive (default mode)]**.
+  1. **[!UICONTROL Recursive (default mode)]**.
 
-      會從指定的層級開始完整搜尋LDAP目錄。
+     會從指定的層級開始完整搜尋LDAP目錄。
 
-   1. **[!UICONTROL Limited to the base]**.
+  1. **[!UICONTROL Limited to the base]**.
 
-      所有屬性都包含在搜尋中。
+     所有屬性都包含在搜尋中。
 
-   1. **[!UICONTROL Limited to the first sub-level of the base]**.
+  1. **[!UICONTROL Limited to the first sub-level of the base]**.
 
-      對目錄的所有屬性執行搜尋，並從屬性的第一層級開始。
+     對目錄的所有屬性執行搜尋，並從屬性的第一層級開始。
 
 * **[!UICONTROL Filter]**&#x200B;欄位可讓您指定元素來縮小搜尋的範圍。
 

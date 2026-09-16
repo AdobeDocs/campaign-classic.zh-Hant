@@ -2,27 +2,31 @@
 product: campaign
 title: 內容編輯最佳實務
 description: 內容編輯最佳實務
-badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Web Apps, Web Forms, Landing Pages, Email Design
 exl-id: c1eccb48-59bf-412f-9c18-9cda2a022096
 TQID: https://experienceleague.adobe.com/9ei3-06pNnCbg0airicWrcVLosdZLvuq7RCUrEfHxGc
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 feature_v2:
   - id: a4671286-a59f-47e3-b97b-90627a1977d5
+    internal-label: Communication channels
 subfeature_v2:
   - id: f391046b-0cf3-4e76-bd3b-97fe06654506
+    internal-label: Web Apps
   - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
+    internal-label: Web Forms
   - id: d7be2b01-dc9c-40f7-aace-a151707504ed
+    internal-label: Landing pages
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 571
+source-wordcount: '562'
 ht-degree: 4%
-
 ---
-
 # 內容編輯最佳實務{#content-editing-best-practices}
 
 
@@ -43,7 +47,7 @@ ht-degree: 4%
 
   ![](assets/dce_sidebar_inputtypechanges.png)
 
-  這個網站[&#128279;](https://www.w3schools.com/tags/att_input_type.asp)中的&#39;type&#39;屬性正式清單為。
+  這個網站](https://www.w3schools.com/tags/att_input_type.asp)中的&#39;type&#39;屬性正式清單為[。
 
 * 使用DCE模擬結束頁面的步驟：
 

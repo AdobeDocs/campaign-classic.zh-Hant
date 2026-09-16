@@ -10,18 +10,19 @@ exl-id: 424faf25-2fd5-40d1-a2fc-c715fc0b8190
 TQID: https://experienceleague.adobe.com/DkmZBc4Awifbwqo7zqniEu6RlHDc91788XKN2nNg-Pg
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 1264
+source-wordcount: '1264'
 ht-degree: 4%
-
 ---
-
 # 設定電子郵件密件副本 {#email-archiving}
 
 
@@ -143,7 +144,7 @@ C:\emails\2018-12-02\13h\4012-8040-sent.eml
 <!--
 ## Moving to the new Email BCC {#updated-email-archiving-system--bcc-}
 
-[!BADGE On-premise & Hybrid]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="Applies to on-premise and hybrid deployments only"}
+[!BADGE On-premise & Hybrid]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"}
 
 >[!IMPORTANT]
 >
@@ -163,8 +164,8 @@ Once email BCC is configured, make sure you select the **[!UICONTROL Email BCC]*
 * **密件副本位址信箱**：請確定它有足夠的接收容量來封存MTA所傳送的所有電子郵件。
 * **MTA集區**： BCC封存功能可在MTA層級運作。 它可讓您複製MTA傳送的每封電子郵件。 由於MTA可以跨多個執行個體（例如開發、測試或生產）或甚至跨多個客戶（在中間來源環境中）進行集區，因此設定此功能會影響安全性：
 
-   * 如果您與多個使用者端共用MTA，且其中一個已啟用此選項，則此使用者端將存取共用相同MTA的其他使用者端的所有電子郵件。 若要避免這種情況，請對每個使用者端使用不同的MTA。
-   * 如果您針對單一使用者端在多個執行個體（開發、測試、生產）中使用相同的MTA，則從所有三個執行個體傳送的訊息將由dataLogPath選項複製。
+  * 如果您與多個使用者端共用MTA，且其中一個已啟用此選項，則此使用者端將存取共用相同MTA的其他使用者端的所有電子郵件。 若要避免這種情況，請對每個使用者端使用不同的MTA。
+  * 如果您針對單一使用者端在多個執行個體（開發、測試、生產）中使用相同的MTA，則從所有三個執行個體傳送的訊息將由dataLogPath選項複製。
 
 * **每個連線的電子郵件**： BCC電子郵件封存的運作方式是開啟連線，並嘗試透過該連線傳送所有電子郵件。 Adobe建議您與內部技術連絡人確認指定的連線可接受的電子郵件數量。 增加此數目可能會對BCC輸送量產生重大影響。
 * **BCC傳送IP**：目前，BCC電子郵件不會透過一般MTA代理程式傳送。 而是會開啟從MTA伺服器到目的地電子郵件伺服器的直接連線。 這表示根據您的電子郵件伺服器設定，您可能需要將其他IP新增到您網路上的允許清單。

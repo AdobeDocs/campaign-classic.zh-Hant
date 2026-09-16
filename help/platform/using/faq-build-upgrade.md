@@ -10,27 +10,37 @@ exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
 TQID: https://experienceleague.adobe.com/ivE0WuT3rnpH0ro0cBHgJXxXRiRELmJLwHrYVi-Md6Y
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: d5ef99fa-df0c-4153-bf94-105ad0724167
+    internal-label: Integrations
   - id: afa4204e-6d08-4e29-bc35-26aafb656d48
+    internal-label: Profiles and audiences
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 subfeature_v2:
   - id: f529d0bd-1401-4c88-9833-43228cc1d40f
+    internal-label: Profiles
   - id: d6330382-c886-4f7a-a4f7-74e3f36c0d9c
+    internal-label: Audiences
   - id: f5293531-9312-4099-bfa3-9e67df6a8750
+    internal-label: Query Editor
   - id: efa38731-2723-4334-8d8b-a778af834835
+    internal-label: Access management
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 2093
+source-wordcount: '2105'
 ht-degree: 2%
-
 ---
-
 # 建置升級常見問答集 {#build-upgrade-faq}
 
 此常見問題集可解決有關Campaign Classic v7版本編號升級的問題，尤其是針對內部部署和混合部署的問題。
@@ -49,7 +59,7 @@ Adobe Campaign 會定期更新。 如果您熟悉我們發佈的[發行說明](.
 
 當將Adobe Campaign Classic軟體更新至最新的安全組建編號時，組建版本會升級，但會維持相同的主要/次要組建層級。 例如： Campaign Classic v7版本編號9026至Campaign v7版本編號9032。
 
-在本節[&#128279;](../../rn/using/rn-overview.md)瞭解更多。
+在本節](../../rn/using/rn-overview.md)瞭解更多[。
 
 ## 最新版的Adobe Campaign Classic是什麼？
 
@@ -59,13 +69,13 @@ Adobe Campaign 會定期更新。 如果您熟悉我們發佈的[發行說明](.
 
 從Adobe Campaign使用者端主控台的&#x200B;**[!UICONTROL Help > About...]**&#x200B;功能表檢查您的版本。 **[!UICONTROL About]**&#x200B;方塊包含您為主控台和伺服器執行的版本和組建的詳細資訊。
 
-在本節[&#128279;](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)瞭解更多。
+在本節](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)瞭解更多[。
 
 ## 組建狀態代表什麼？
 
 從Campaign Classic 19.2版開始，狀態會與每個版本編號相關聯。
 
-在本節[&#128279;](../../rn/using/rn-overview.md)瞭解更多。
+在本節](../../rn/using/rn-overview.md)瞭解更多[。
 
 ## 組建版本升級與版本升級是否相同？
 
@@ -184,7 +194,7 @@ Adobe會在任何變更前進行系統備份。 不過，如果您的非生產�
 
 開發和預備環境會依序升級或一起升級，但在升級生產執行個體之前必須先登出。 這可讓每位客戶在簽署對生產環境所做的任何變更之前，先進行徹底的測試。
 
-檢視清單[&#x200B; &#x200B;](#check-list)下的組建升級檢查清單。 客戶應該執行類似的測試，以及環境可能需要的其他測試。
+檢視清單[ ](#check-list)下的組建升級檢查清單。 客戶應該執行類似的測試，以及環境可能需要的其他測試。
 
 ## 我須多久執行一次組建版本升級？
 
@@ -221,22 +231,22 @@ Adobe會在任何變更前進行系統備份。 不過，如果您的非生產�
 一個測試收件者、驗證個人化、取消子連結、映象頁面全部運作。
 * 您的所有重要路徑工作流程都在執行嗎？ 檢查工作流程，開啟工作流程日誌，驗證
 沒有錯誤。
-* 您的所有資料夾是否都會出現、顯示和存取？瀏覽不同的資料夾並勾選。
+* 您的所有資料夾是否都會出現、顯示和存取？ 瀏覽不同的資料夾並勾選。
 所有內容都會顯示並呈現。
 * 您的傳送是否以正確的時區進行？
 
-   * 使用時間戳記和時區驗證建立日期和修改日期
-   * 確認排程器的執行在指定的時間在工作流程中運作
-   * 擷取處於「已暫停」和「失敗」狀態的工作流程清單。 啟動並監視它們
-   * 針對一個案例執行AB Testing
-   * 測試推播通知及其對深層連結的追蹤功能
-   * 測試傳送SMS
-   * 如果您已連線任何外部FDA，請測試資料是否以雙向傳送
-   * 如果您使用Adobe Campaign-Adobe Experience Manager、Adobe Campaign-Adobe Analytics等整合，請測試它們是否仍如以前般運作
+  * 使用時間戳記和時區驗證建立日期和修改日期
+  * 確認排程器的執行在指定的時間在工作流程中運作
+  * 擷取處於「已暫停」和「失敗」狀態的工作流程清單。 啟動並監視它們
+  * 針對一個案例執行AB Testing
+  * 測試推播通知及其對深層連結的追蹤功能
+  * 測試傳送SMS
+  * 如果您已連線任何外部FDA，請測試資料是否以雙向傳送
+  * 如果您使用Adobe Campaign-Adobe Experience Manager、Adobe Campaign-Adobe Analytics等整合，請測試它們是否仍如以前般運作
 
 **另請參閱**
 
-* [執行建置升級](../../production/using/build-upgrade.md)
+* [執行版本編號升級](../../production/using/build-upgrade.md)
 * [Campaign Classic發行說明](../../rn/using/rn-overview.md)
 * [Campaign Classic的說明與支援選項](../../support.md)
 * [年度升級計畫](../../rn/using/rn-overview.md#yearly-upgrade)

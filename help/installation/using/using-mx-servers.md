@@ -3,7 +3,7 @@ product: campaign
 title: 以 Campaign 使用 MX 伺服器
 description: 瞭解MX伺服器如何與Adobe Campaign Classic搭配運作
 feature: Installation, Instance Settings
-badge-v7-prem: label="僅限內部部署/混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="僅適用於內部部署和混合部署"
+badge-v7-prem: label="On-premise/hybrid only" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
@@ -11,15 +11,14 @@ exl-id: 47f50bf5-4d5b-4c07-af71-de4390177cf5
 TQID: https://experienceleague.adobe.com/iXiiqwE6-FqHpRFes1bzJ5mLc3-z-HQBUR7ASL5A1G8
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 855
+source-wordcount: '843'
 ht-degree: 3%
-
 ---
-
 # 以 Campaign 使用 MX 伺服器 {#using-mx-servers}
 
 
@@ -95,4 +94,4 @@ MX規則有6個不同的輸送量層級，主要是在提升過程中使用：
 * [MX組態](../../installation/using/email-deliverability.md#mx-configuration)
 * [技術電子郵件設定](../../installation/using/email-deliverability.md)
 * [瞭解傳遞失敗](../../delivery/using/delivery-failures-quarantine.md)
-* [Campaign Classic — 技術建議](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=zh-Hant)
+* [Campaign Classic — 技術建議](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html)

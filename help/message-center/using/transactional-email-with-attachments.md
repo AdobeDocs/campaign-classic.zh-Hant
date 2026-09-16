@@ -7,18 +7,19 @@ exl-id: 755d2364-f6c4-4943-97e8-3ed52a0f2665
 TQID: https://experienceleague.adobe.com/xc89iwDzHmUWU4PfAZ-LWpO3ggN6ySCv-n0iVrdlEKc
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 684
+source-wordcount: '684'
 ht-degree: 1%
-
 ---
-
 # 使用案例：傳送含附件的異動電子郵件 {#transactional-email-with-attachments}
 
 
@@ -72,7 +73,7 @@ Adobe也建議限制附加檔案的大小和數量。 依預設，您只能新�
 
 若要即時新增電子郵件附件至交易式訊息，請遵循下列步驟：
 
-1. 從設計附件開始。 如需詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/attaching-files.html?lang=zh-Hant#attach-a-personalized-file){target="_blank"}。
+1. 從設計附件開始。 如需詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/attaching-files.html#attach-a-personalized-file){target="_blank"}。
 
    這可讓您將檔案附加至電子郵件，即使它們並非在執行例項上託管。
 

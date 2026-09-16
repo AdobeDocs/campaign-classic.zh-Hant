@@ -3,7 +3,7 @@ product: campaign
 title: 建立和設定資料庫
 description: 建立和設定資料庫
 feature: Installation, Instance Settings
-badge-v7-prem: label="僅限內部部署/混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="僅適用於內部部署和混合部署"
+badge-v7-prem: label="On-premise/hybrid only" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
@@ -11,22 +11,27 @@ exl-id: f40bab8c-5064-40d9-beed-101a9f22c094
 TQID: https://experienceleague.adobe.com/wu8xP0ls5jakl0XYtBV5Ktag7hCBFwl4o0EiqNrUMnc
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
+    internal-label: Schemas
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 subfeature_v2:
   - id: cfc95e9b-b035-4403-a6a9-b27a8a053a37
+    internal-label: PI
   - id: e656c701-3899-4db3-989c-de0980ddfffa
+    internal-label: Installation
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: 1329
+source-wordcount: '1317'
 ht-degree: 2%
-
 ---
-
 # 建立和設定資料庫{#creating-and-configuring-the-database}
 
 當您建立資料庫時，Adobe Campaign提供兩種不同的選項：
@@ -133,10 +138,10 @@ ht-degree: 2%
 
   這些引數會收到完全相同的表格空間名稱（警告：區分大小寫）。 它們分別儲存在下列選項的&#x200B;**[!UICONTROL Administration > Platform > Options]**&#x200B;節點中（請參閱[本區段](../../installation/using/configuring-campaign-options.md#database)）：
 
-   * **WdbcOptions_TableSpaceUser**：以結構描述為基礎的使用者資料表
-   * **WdbcOptions_TableSpaceIndex**：根據結構描述的使用者資料表索引
-   * **WdbcOptions_TableSpaceWork**：沒有結構描述的工作表
-   * **WdbcOptions_TableSpaceWorkIndex**：沒有結構描述的工作表索引
+  * **WdbcOptions_TableSpaceUser**：以結構描述為基礎的使用者資料表
+  * **WdbcOptions_TableSpaceIndex**：根據結構描述的使用者資料表索引
+  * **WdbcOptions_TableSpaceWork**：沒有結構描述的工作表
+  * **WdbcOptions_TableSpaceWorkIndex**：沒有結構描述的工作表索引
 
 * 若為Oracle資料庫，Adobe Campaign使用者必須擁有Oracle資料庫的存取權，通常是&#x200B;**oinstall**&#x200B;群組的成員。
 * **[!UICONTROL Set or change the administrator password]**&#x200B;選項可讓您輸入連結至具有管理員許可權的Adobe Campaign運運算元的密碼。
@@ -191,10 +196,10 @@ ht-degree: 2%
 * 對於&#x200B;**PostgreSQL**&#x200B;引擎，您必須指定應用程式伺服器上定義的DNS名稱（或IP位址），才能存取資料庫伺服器。
 * 針對&#x200B;**Microsoft SQL Server**&#x200B;引擎，您必須定義：
 
-   1. 應用程式伺服器上定義的DNS名稱（或IP位址），用來存取資料庫伺服器，
-   1. 用來存取Microsoft SQL Server的安全性方法： **[!UICONTROL SQL Server authentication]**&#x200B;或&#x200B;**[!UICONTROL Windows NT authentication]**。
+  1. 應用程式伺服器上定義的DNS名稱（或IP位址），用來存取資料庫伺服器，
+  1. 用來存取Microsoft SQL Server的安全性方法： **[!UICONTROL SQL Server authentication]**&#x200B;或&#x200B;**[!UICONTROL Windows NT authentication]**。
 
-      ![](assets/s_ncs_install_db_mssql_exists_01.png)
+     ![](assets/s_ncs_install_db_mssql_exists_01.png)
 
 ### 步驟2 — 資料庫連線設定 {#step-2---database-connection-settings}
 

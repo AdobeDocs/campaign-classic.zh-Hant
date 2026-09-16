@@ -8,20 +8,23 @@ exl-id: 39c57f61-2629-4214-91e4-cb97dc039deb
 TQID: https://experienceleague.adobe.com/q-RWgRUdcXuXub4yBi0elAJKVa2OvJZqst87K1KTv0A
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
 feature_v2: []
 subfeature_v2:
   - id: ee25c34b-ea50-427b-9369-ba0a160f7d70
+    internal-label: Workflow HeatMap
   - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
+    internal-label: Execution activities
   - id: d1110311-2ca4-442b-be37-088a6db845ee
+    internal-label: Data Management activities
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 1350
+source-wordcount: '1399'
 ht-degree: 13%
-
 ---
-
 # 工作流程最佳實務{#workflow-best-practices}
 
 
@@ -52,7 +55,7 @@ JavaScript方法&#x200B;**[!UICONTROL logInfo()]**&#x200B;是偵錯工作流程�
 
   此選項可在工作流程屬性的&#x200B;**[!UICONTROL Execution]**&#x200B;標籤中使用，將記錄工具從不同活動產生的所有SQL查詢。 這是檢視平台實際執行動作的好方法。 不過，此選項僅應在開發期間暫時使用，而不應在生產環境中啟用。
 
-當不再需要記錄時，請清除這些記錄。系統不會自動清除工作流程歷史記錄：預設會保留所有訊息。您可以透過&#x200B;**[!UICONTROL File > Actions]**&#x200B;功能表或按一下位於清單上方工具列中的[動作]按鈕，清除歷史記錄。選取永久刪除歷史記錄。
+當不再需要記錄時，請清除這些記錄。 系統不會自動清除工作流程歷史記錄：預設會保留所有訊息。 您可以透過&#x200B;**[!UICONTROL File > Actions]**功能表或按一下位於清單上方工具列中的[動作]按鈕，清除歷史記錄。 選取永久刪除歷史記錄。
 若要瞭解如何清除記錄檔，請參閱此[檔案](starting-a-workflow.md)。
 
 ### 工作流程規劃 {#workflow-planning}

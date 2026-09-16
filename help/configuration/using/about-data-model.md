@@ -8,22 +8,26 @@ exl-id: 655b5928-b005-442f-b026-2f1b0c1abb99
 TQID: https://experienceleague.adobe.com/jyvz5WCdNhYtusE-HwPRwXNlr9Wh0swcQoOT05lkOYA
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: b12f6872-9271-4369-85e5-86969a0b99a2
+    internal-label: APIs
   - id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
+    internal-label: Schemas
 subfeature_v2:
   - id: cfc95e9b-b035-4403-a6a9-b27a8a053a37
+    internal-label: PI
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 916
+source-wordcount: '989'
 ht-degree: 6%
-
 ---
-
 # 開始使用 Campaign 資料模型{#about-data-model}
 
 Adobe Campaign 資料庫的概念資料模型由一組內建表格及其互動組成， 本頁面列出主要表格和概念。
@@ -46,9 +50,9 @@ Adobe Campaign仰賴包含連結在一起的表格的關聯式資料庫。 Adobe
 
 資料模型的另一個部分可讓您暫時儲存與行銷活動執行相關的所有記錄。
 
-傳遞記錄檔是跨所有通道傳送給收件者或裝置的所有訊息。主要傳遞記錄表(**NmsBroadLog**)包含所有收件者的傳遞記錄。
-主要追蹤記錄表(**NmsTrackingLog**)儲存所有收件者的追蹤記錄。追蹤記錄會參照收件者的回應，例如電子郵件開啟次數和點按次數。每個回應都會對應至追蹤記錄。
-傳送記錄檔和追蹤記錄檔會在特定時段後刪除，該特定時段會在Adobe Campaign中指定並加以修改。因此，強烈建議您定期匯出記錄檔。
+傳遞記錄檔是跨所有通道傳送給收件者或裝置的所有訊息。 主要傳遞記錄表(**NmsBroadLog**)包含所有收件者的傳遞記錄。
+主要追蹤記錄表(**NmsTrackingLog**)儲存所有收件者的追蹤記錄。 追蹤記錄會參照收件者的回應，例如電子郵件開啟次數和點按次數。 每個回應都會對應至追蹤記錄。
+傳送記錄檔和追蹤記錄檔會在特定時段後刪除，該特定時段會在Adobe Campaign中指定並加以修改。 因此，強烈建議您定期匯出記錄檔。
 
 ### 技術表格 {#technical-tables}
 

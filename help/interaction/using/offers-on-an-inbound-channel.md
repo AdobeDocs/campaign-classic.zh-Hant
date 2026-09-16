@@ -3,7 +3,7 @@ product: campaign
 title: 傳入頻道上的產品建議
 description: 傳入頻道上的產品建議
 feature: Interaction, Offers
-badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: interaction
 content-type: reference
 topic-tags: case-study
@@ -11,18 +11,19 @@ exl-id: 90afced3-465d-4370-8a33-51a7e4356135
 TQID: https://experienceleague.adobe.com/HkXtRV9hn2hZSZyxx86o2muGafhdhWuLp-uYBe4xTaU
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 feature_v2:
   - id: b6fcaf36-3bc4-4604-94f3-81b5d3f41ecf
+    internal-label: Offer Management
 subfeature_v2: []
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 2102
+source-wordcount: '2093'
 ht-degree: 1%
-
 ---
-
 # 傳入頻道上的產品建議{#offers-on-an-inbound-channel}
 
 
@@ -187,21 +188,21 @@ Neobank公司想要針對兩個不同的目標建立行銷優惠方案。 想要
 
 * 使用下列步驟，建立匿名傳入互動專屬的優惠方案目錄：
 
-   1. [建立匿名連絡人的環境](#creating-an-environment-for-anonymous-contacts)
-   1. [為匿名環境設定優惠方案空間](#configuring-offer-spaces-for-the-anonymous-environment)
-   1. [在匿名環境中建立優惠方案類別](#creating-offer-categories-in-an-anonymous-environment)
-   1. [建立匿名訪客的優惠](#creating-offers-for-anonymous-visitors)
+  1. [建立匿名連絡人的環境](#creating-an-environment-for-anonymous-contacts)
+  1. [為匿名環境設定優惠方案空間](#configuring-offer-spaces-for-the-anonymous-environment)
+  1. [在匿名環境中建立優惠方案類別](#creating-offer-categories-in-an-anonymous-environment)
+  1. [建立匿名訪客的優惠](#creating-offers-for-anonymous-visitors)
 
 * 使用下列步驟，建立已識別之入站互動專屬的優惠方案目錄：
 
-   1. [在已識別的環境中設定優惠方案空間](#configure-the-offer-spaces-in-the-identified-environment)
-   1. [在已識別的環境中建立優惠方案類別](#creating-offer-categories-in-an-identified-environment)
-   1. [建立個人化優惠方案](#creating-personalized-offers)
+  1. [在已識別的環境中設定優惠方案空間](#configure-the-offer-spaces-in-the-identified-environment)
+  1. [在已識別的環境中建立優惠方案類別](#creating-offer-categories-in-an-identified-environment)
+  1. [建立個人化優惠方案](#creating-personalized-offers)
 
 * 設定對優惠方案引擎的呼叫：
 
-   1. [在網頁上設定優惠方案空間](#configuring-offer-spaces-on-the-web-page)
-   1. [指定已識別優惠方案空間的進階設定](#specifying-the-advanced-settings-of-the-identified-offer-spaces)
+  1. [在網頁上設定優惠方案空間](#configuring-offer-spaces-on-the-web-page)
+  1. [指定已識別優惠方案空間的進階設定](#specifying-the-advanced-settings-of-the-identified-offer-spaces)
 
 ### 建立匿名連絡人的環境 {#creating-an-environment-for-anonymous-contacts}
 

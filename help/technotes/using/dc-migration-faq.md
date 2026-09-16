@@ -9,25 +9,31 @@ exl-id: a9cd08b0-55c2-4405-9fb8-f0c623cd4ccb
 TQID: https://experienceleague.adobe.com/r3qtW9ZsCD85N9qAnN1EOje-VMhDoyPuqea2xZnBWLs
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: b12f6872-9271-4369-85e5-86969a0b99a2
+    internal-label: APIs
   - id: d5ef99fa-df0c-4153-bf94-105ad0724167
+    internal-label: Integrations
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
 subfeature_v2:
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+    internal-label: Adobe Analytics integration
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 2269
+source-wordcount: '2269'
 ht-degree: 0%
-
 ---
-
 # 移轉至公用雲端常見問題集{#dc-faq}
 
 
@@ -36,7 +42,7 @@ Adobe免除舊版資料中心的委任：Campaign Classic例項必須轉移至Pu
 
 以下是此專案的一組常見問題、對您的Campaign環境的影響以及其他實用資源。
 
-如有任何其他問題，請連絡[Adobe客戶服務](https://experienceleague.adobe.com/zh-hant?support-solution=Campaign#support)。
+如有任何其他問題，請連絡[Adobe客戶服務](https://experienceleague.adobe.com/?support-solution=Campaign#support)。
 
 ## 基礎架構影響
 
@@ -66,7 +72,7 @@ Adobe免除舊版資料中心的委任：Campaign Classic例項必須轉移至Pu
 
 * **解決任何移轉後問題的計畫為何？**
 
-  在生產系統移轉之前，將會進行廣泛的測試。 不過，如果發生任何問題，[Adobe客戶服務](https://experienceleague.adobe.com/zh-hant?support-solution=Campaign#support)仍會是主要聯絡視窗。 Adobe已建立專家團隊，在需要時提供進階支援。
+  在生產系統移轉之前，將會進行廣泛的測試。 不過，如果發生任何問題，[Adobe客戶服務](https://experienceleague.adobe.com/?support-solution=Campaign#support)仍會是主要聯絡視窗。 Adobe已建立專家團隊，在需要時提供進階支援。
 
 ## 傳遞能力影響
 
@@ -112,7 +118,7 @@ Adobe免除舊版資料中心的委任：Campaign Classic例項必須轉移至Pu
 
   首先，Adobe傳遞能力將評估平台傳遞能力狀態，並推薦切換至新IP的計畫
 
-  移轉後不需要熱身。 可能會出現一些例外狀況，在這種情況下，[Adobe客戶服務](https://experienceleague.adobe.com/zh-hant?support-solution=Campaign#support)將會聯絡客戶。
+  移轉後不需要熱身。 可能會出現一些例外狀況，在這種情況下，[Adobe客戶服務](https://experienceleague.adobe.com/?support-solution=Campaign#support)將會聯絡客戶。
 
   不過，計畫是讓這項作業對業務而言是透明的，不同於在上線期間進行的初始升級。
 
@@ -125,8 +131,8 @@ Adobe免除舊版資料中心的委任：Campaign Classic例項必須轉移至Pu
 * **我們用來標示通訊的委派子網域有何影響？**
 
   用於行銷通訊的子網域保持不變。 不過，根據實作，使用者端需要執行動作：
-   * 如果將子網域委派給Adobe （預設），Adobe會處理所有變更並確保順暢轉換。
-   * 若是CNAME設定（例外），使用者端需與Adobe協調實施變更。
+  * 如果將子網域委派給Adobe （預設），Adobe會處理所有變更並確保順暢轉換。
+  * 若是CNAME設定（例外），使用者端需與Adobe協調實施變更。
 
 ## 組態與連線能力影響
 
@@ -188,7 +194,7 @@ Adobe免除舊版資料中心的委任：Campaign Classic例項必須轉移至Pu
 
   它可能會根據新伺服器的位置而變更。 不過，客戶將可保留其目前的時區。
 
-  在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/managing-time-zones.html?lang=zh-Hant){target="_blank"}中進一步瞭解時區管理。
+  在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/managing-time-zones.html){target="_blank"}中進一步瞭解時區管理。
 
 
 ## 安全性與許可權
@@ -250,13 +256,13 @@ Adobe免除舊版資料中心的委任：Campaign Classic例項必須轉移至Pu
 
   資料中心之間的資料傳輸是停機期間的關鍵路徑。 資料以兩種方式儲存：
 
-   * 目前最重要的是資料庫
-   * 應用程式伺服器上的檔案（資料匯入和匯出）
+  * 目前最重要的是資料庫
+  * 應用程式伺服器上的檔案（資料匯入和匯出）
 
   縮減資料庫大小對於加快資料傳輸極為重要。 建議：
 
-   * 縮短歷史資料（傳遞記錄、追蹤記錄等）的保留時間
-   * 刪除其他表格（傳送、收件者、自訂表格）上的無用記錄
+  * 縮短歷史資料（傳遞記錄、追蹤記錄等）的保留時間
+  * 刪除其他表格（傳送、收件者、自訂表格）上的無用記錄
 
 * **移轉執行個體的預估停機時間是多少？**
 
@@ -274,11 +280,11 @@ Adobe免除舊版資料中心的委任：Campaign Classic例項必須轉移至Pu
 
   環境將依下列順序移轉：
 
-   1. 開發環境
-   1. 中繼環境
-   1. 生產環境
-   1. RT環境
-   1. 中間來源環境
+  1. 開發環境
+  1. 中繼環境
+  1. 生產環境
+  1. RT環境
+  1. 中間來源環境
 
 * **什麼是復原計畫？**
 

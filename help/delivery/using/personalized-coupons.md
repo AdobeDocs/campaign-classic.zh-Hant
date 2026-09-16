@@ -2,7 +2,7 @@
 product: campaign
 title: 個人化優惠券
 description: 瞭解如何建立和插入個人化優惠券
-badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Personalization
 role: User
 hide: true
@@ -10,28 +10,38 @@ exl-id: 182939bb-7aff-4667-bda9-c5d48be3b946
 TQID: https://experienceleague.adobe.com/KFX8BeFujupcQEKCfHrTxf71axwDi0RMe3zquaDVG7c
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
   - id: b631758a-142d-425f-b9aa-f756d85cb979
+    internal-label: Campaign Email Designer
   - id: c858a28b-ea19-49b0-8d48-828717fad89c
+    internal-label: Prepare and test messages
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 subfeature_v2:
   - id: e95a583b-fcfa-4524-8666-46a29c828119
+    internal-label: Email messaging
   - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
+    internal-label: Email design
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
+    internal-label: A/B testing
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
+    internal-label: Manage deliverability
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 922
+source-wordcount: '913'
 ht-degree: 1%
-
 ---
-
 # 個人化優惠券{#personalized-coupons}
 
 為傳遞新增優惠券，可讓收件者獲得提升的產品和服務價值。 您可以使用Campaign抵用券模組建立一組抵用券，預計新增至即將推出的行銷優惠方案。 當您準備好建立傳遞時，請指派適用的優惠券。 由於優惠券在選取的期間內有效，因此指派的優惠券會唯一連結至其傳遞訊息。 此外，Campaign會在傳送傳遞前，確認訊息數量有足夠的抵用券。
@@ -171,7 +181,7 @@ ht-degree: 1%
 >
 >依預設，優惠券管理模組使用&#x200B;**nms:recipient**&#x200B;表格。 [了解更多資訊](../../configuration/using/about-data-model.md#default-recipient-table)。
 >
->在此頁面[&#128279;](../../configuration/using/about-custom-recipient-table.md)中瞭解如何使用自訂收件者資料表。
+>在此頁面](../../configuration/using/about-custom-recipient-table.md)中瞭解如何使用自訂收件者資料表[。
 
 ## 管理不足的優惠券 {#managing-insufficient-coupons}
 

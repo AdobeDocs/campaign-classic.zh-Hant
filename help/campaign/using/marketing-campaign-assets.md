@@ -9,22 +9,26 @@ exl-id: 891252b0-4700-4a2a-a632-63aad5ce75d7
 TQID: https://experienceleague.adobe.com/ZHqo0izYPVfaxPIShcjgPpg-5SIGkdQAwbD6dV1r6bE
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
   - id: afa4204e-6d08-4e29-bc35-26aafb656d48
+    internal-label: Profiles and audiences
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 subfeature_v2:
   - id: f863efa9-030c-4466-a2b8-a52aea6b722c
+    internal-label: Subscription services
 source-git-commit: c35995a47788db080636c66827a4bd6dc98806cf
 workflow-type: tm+mt
-source-wordcount: 759
+source-wordcount: '759'
 ht-degree: 0%
-
 ---
-
 # 管理相關檔案 {#managing-associated-documents}
 
 您可以將各種檔案與行銷活動建立關聯：報表、像片、網頁、圖表等。這些檔案可以是任何格式（Microsoft Word、PowerPoint、PNG、JPG、Acrobat PDF等）。
@@ -33,7 +37,7 @@ ht-degree: 0%
 >
 >此功能僅適用於小型資產和檔案。
 
-在行銷活動中，您也可以參考其他專案，例如促銷優惠券、與特定品牌或商店相關的特殊優惠等。當這些元素包含在大綱中時，它們可以與直接郵件傳遞相關聯。 請參閱透過傳遞大網[&#128279;](#associating-and-structuring-resources-linked-via-a-delivery-outline)連結的關聯和結構資源。
+在行銷活動中，您也可以參考其他專案，例如促銷優惠券、與特定品牌或商店相關的特殊優惠等。當這些元素包含在大綱中時，它們可以與直接郵件傳遞相關聯。 請參閱透過傳遞大網](#associating-and-structuring-resources-linked-via-a-delivery-outline)連結的[關聯和結構資源。
 
 >[!NOTE]
 >

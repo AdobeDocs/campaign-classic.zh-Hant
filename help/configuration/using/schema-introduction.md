@@ -8,17 +8,17 @@ exl-id: 5745fc60-9df3-4ad0-bbeb-f6ae8c86a5aa
 TQID: https://experienceleague.adobe.com/M8NNQbT-Kt4wYQhIVeq0sceBctFGvHjrfT7qe-X-u0U
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 89
+source-wordcount: '89'
 ht-degree: 21%
-
 ---
-
 # 結構描述參考 {#schema-reference}
 
 編輯結構描述時，可以使用以來源結構描述(xtk:srcSchema)為基礎的核准系統。 使用「資料庫結構更新……」更新資料庫時，也會發現一些錯誤 助理員。
@@ -34,7 +34,7 @@ ht-degree: 21%
 * [元素](schema/element.md)
 * [分項清單](schema/enumeration.md)
 * [說明](schema/help.md)
-* [加入](schema/join.md)
+* [連接](schema/join.md)
 * [索引鍵](schema/key.md)
 * [金鑰欄位](schema/keyfield.md)
 * [方法](schema/method.md)

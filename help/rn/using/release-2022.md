@@ -10,25 +10,31 @@ exl-id: 28490323-41d0-4d61-b309-6892fb826d21
 TQID: https://experienceleague.adobe.com/8QWEJN9tpxBdDZlYqEmY2JIuxWPShtfRxCUf6thXXWA
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 subfeature_v2:
   - id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405
+    internal-label: Release notes
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+    internal-label: Adobe Analytics integration
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: ht
-source-wordcount: 2151
+workflow-type: tm+mt
+source-wordcount: '2151'
 ht-degree: 100%
-
 ---
-
 # 2022 版本{#release-2022}
 
 ## 版本 7.3.1 - 版本編號 9352 {#release-7-3-1}
@@ -149,14 +155,14 @@ Adobe Campaign 現在相容於 Windows Server 2019。 請參閱 [Campaign 相容
 
   已套用有關 Microsoft Dynamics 連接器網頁 API 的重要修正：
 
-   * 修正在工作流程觸發的匯入期間，字串類型欄位的 Null 值儲存為 Null 而非空白值的問題。
-   * 修正使用網頁 API 呼叫匯入或匯出資料時，導致下列錯誤的問題：「無效的 URI：URI 方案太長」。
-   * 針對從 Microsoft Dynamics 365 匯入資料時，修正因包含查閱欄位而導致的各種問題。
+  * 修正在工作流程觸發的匯入期間，字串類型欄位的 Null 值儲存為 Null 而非空白值的問題。
+  * 修正使用網頁 API 呼叫匯入或匯出資料時，導致下列錯誤的問題：「無效的 URI：URI 方案太長」。
+  * 針對從 Microsoft Dynamics 365 匯入資料時，修正因包含查閱欄位而導致的各種問題。
 
 * Google BigQuery FDA 連結器
 
-   * Google BigQuery FDA 連結器現在可用於托管部署。 [閱讀全文](../../installation/using/configure-fda-google-big-query.md)
-   * 新增支援，以便啟用 Google BigQuery FDA 連接器的代理伺服器連線。 可透過外部帳戶設定的「選項」欄位設定所需的代理選項。 [閱讀全文](../../installation/using/configure-fda-google-big-query.md#google-external)
+  * Google BigQuery FDA 連結器現在可用於托管部署。 [閱讀全文](../../installation/using/configure-fda-google-big-query.md)
+  * 新增支援，以便啟用 Google BigQuery FDA 連接器的代理伺服器連線。 可透過外部帳戶設定的「選項」欄位設定所需的代理選項。 [閱讀全文](../../installation/using/configure-fda-google-big-query.md#google-external)
 
 **其他變更**
 

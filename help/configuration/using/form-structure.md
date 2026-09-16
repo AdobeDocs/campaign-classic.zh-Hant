@@ -4,26 +4,29 @@ title: 表單結構
 description: 表單結構
 feature: Application Settings
 role: Developer
-badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 exl-id: e61f2b63-06d3-4b8c-867f-1c729176d2da
 TQID: https://experienceleague.adobe.com/zLWHKhH-T-g54pQDAhbOC4v7JvrX-LM-Vn8lCXE-aYI
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 2407
+source-wordcount: '2402'
 ht-degree: 0%
-
 ---
-
 # 表單結構{#form-structure}
 
 
@@ -198,7 +201,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->**style=&quot;down|up**（依預設）**&quot;**&#x200B;功能會強制將索引標籤垂直定位在控制項下方或上方。此功能是選用的。
+>**style=&quot;down|up**（依預設）**&quot;**功能會強制將索引標籤垂直定位在控制項下方或上方。 此功能為選用。
 >`<container style="down" type="notebook">  … </container>`
 
 #### 圖示清單 {#icon-list}
@@ -315,9 +318,9 @@ ht-degree: 0%
 * **noAutoComplete**：停用預先輸入（值為「true」）
 * **createMode**：如果連結不存在，就會立即建立連結。 可能的值包括：
 
-   * **none**：停用建立。 如果連結不存在，則會顯示錯誤訊息
-   * **inline**：在編輯欄位中建立與內容的連結
-   * **edition**：在連結上顯示編輯表單。 驗證表單時，資料會儲存（預設模式）
+  * **none**：停用建立。 如果連結不存在，則會顯示錯誤訊息
+  * **inline**：在編輯欄位中建立與內容的連結
+  * **edition**：在連結上顯示編輯表單。 驗證表單時，資料會儲存（預設模式）
 
 * **noZoom**：連結上沒有編輯表單（值為「true」）
 * **表單**：多載目標專案的編輯表單

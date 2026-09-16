@@ -10,17 +10,17 @@ exl-id: 3d85866a-6339-458c-807a-b267cce772b8
 TQID: https://experienceleague.adobe.com/pex7wiGCNMdY86-Ug7dyLxE3RRT-ejlgz8eH7zVmZc4
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 708
+source-wordcount: '708'
 ht-degree: 3%
-
 ---
-
 # 事件處理 {#about-event-processing}
 
 
@@ -92,8 +92,8 @@ ht-degree: 3%
 
 * **擱置中**：事件可以是：
 
-   * 已收集但尚未處理的事件。 **[!UICONTROL Number of errors]**&#x200B;欄顯示值0。 尚未連結電子郵件範本。
-   * 事件已處理，但其確認錯誤。 **[!UICONTROL Number of errors]**&#x200B;資料行顯示的值不是0。 若要知道何時再次處理此事件，請參閱&#x200B;**[!UICONTROL Process requested on]**&#x200B;欄。
+  * 已收集但尚未處理的事件。 **[!UICONTROL Number of errors]**&#x200B;欄顯示值0。 尚未連結電子郵件範本。
+  * 事件已處理，但其確認錯誤。 **[!UICONTROL Number of errors]**&#x200B;資料行顯示的值不是0。 若要知道何時再次處理此事件，請參閱&#x200B;**[!UICONTROL Process requested on]**&#x200B;欄。
 
 * **擱置的傳遞**：事件已處理且傳遞範本已連結。 電子郵件正在等候傳遞，且已套用傳統傳遞程式。 如需詳細資訊，您可以開啟傳遞。
 * **已傳送**、**已忽略**&#x200B;及&#x200B;**傳遞錯誤**：這些傳遞狀態是透過&#x200B;**updateEventsStatus**&#x200B;工作流程復原。 如需詳細資訊，您可以開啟相關的傳送。

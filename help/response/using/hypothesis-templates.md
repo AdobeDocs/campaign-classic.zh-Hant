@@ -3,7 +3,7 @@ product: campaign
 title: 假設範本
 description: 瞭解如何在Campaign回應管理員中建立假設範本
 feature: Campaigns, Templates
-badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: campaign
 content-type: reference
 topic-tags: response-manager
@@ -11,20 +11,23 @@ exl-id: 428c7677-454b-4618-bae7-0be7df6dfcaa
 TQID: https://experienceleague.adobe.com/FKf9pDlOZI1NEhwmdSpcpvEbNsT28wEvgy81TBEQQgo
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+    internal-label: Measurement
 subfeature_v2:
   - id: d72afaa0-c842-48c8-9a3c-51b7911edc1b
+    internal-label: Response Management
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 1410
+source-wordcount: '1401'
 ht-degree: 2%
-
 ---
-
 # 假設範本{#hypothesis-templates}
 
 
@@ -75,7 +78,7 @@ ht-degree: 2%
   >
   >如果範本設定為將控制組列入考量，但在假設相關的傳送中未定義任何組，則結果將僅以目標收件者為基礎。
 
-  有關定義和設定控制組的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=zh-Hant#add-a-control-group){target=_blank}。
+  有關定義和設定控制組的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html#add-a-control-group){target=_blank}。
 
 * **[!UICONTROL Channel]**：您可以在下拉式清單中選取&#x200B;**[!UICONTROL All channels]**，以選擇特定管道或讓假設範本可供Adobe Campaign主控台中的所有管道使用。 如果您設定特定頻道的範本，這可讓您在建立假設時自動篩選每個頻道的傳送。 [了解更多](creating-hypotheses.md)
 
@@ -102,17 +105,17 @@ ht-degree: 2%
 
   若要指定排程，請套用下列程式：
 
-   1. 按一下&#x200B;**[!UICONTROL Frequency of execution...]**&#x200B;連結，然後按&#x200B;**[!UICONTROL Change...]**&#x200B;按鈕。
+  1. 按一下&#x200B;**[!UICONTROL Frequency of execution...]**&#x200B;連結，然後按&#x200B;**[!UICONTROL Change...]**&#x200B;按鈕。
 
-      ![](assets/response_frequency_execution_001.png)
+     ![](assets/response_frequency_execution_001.png)
 
-   1. 設定頻率、相關事件和有效期。
+  1. 設定頻率、相關事件和有效期。
 
-      ![](assets/response_frequency_execution_002.png)
+     ![](assets/response_frequency_execution_002.png)
 
-   1. 按一下&#x200B;**[!UICONTROL Finish]**&#x200B;以儲存排程。
+  1. 按一下&#x200B;**[!UICONTROL Finish]**&#x200B;以儲存排程。
 
-      ![](assets/response_frequency_execution_003.png)
+     ![](assets/response_frequency_execution_003.png)
 
 * **[!UICONTROL Log SQL queries in journal]**：此函式已保留給專家使用者。 它可讓您在測量假設稽核中新增索引標籤，以顯示SQL查詢。 如此一來，在模擬完成時若發生錯誤，即可偵測可能的故障。
 * **[!UICONTROL Keep execution workflow]**：可讓您保留假設計算開始時自動產生的工作流程。 在從已核取此選項的範本建立的假設中，產生的工作流程可用於遵循該流程。
@@ -157,31 +160,31 @@ ht-degree: 2%
 
 * **篩選交易**：在&#x200B;**[!UICONTROL Scope]**&#x200B;索引標籤中，您可以設定假設的篩選器。 操作步驟：
 
-   1. 按一下&#x200B;**[!UICONTROL Edit query]**&#x200B;連結。
+  1. 按一下&#x200B;**[!UICONTROL Edit query]**&#x200B;連結。
 
-      ![](assets/response_scope_filtering_001.png)
+     ![](assets/response_scope_filtering_001.png)
 
-   1. 指定您的篩選條件。
+  1. 指定您的篩選條件。
 
-      ![](assets/response_scope_filtering_002.png)
+     ![](assets/response_scope_filtering_002.png)
 
-   1. 選取假設將關注的交易。
+  1. 選取假設將關注的交易。
 
-      ![](assets/response_scope_filtering_003.png)
+     ![](assets/response_scope_filtering_003.png)
 
 * **篩選收件者**：在&#x200B;**[!UICONTROL Scope]**&#x200B;索引標籤中，您可以將假設限製為連結至郵件的任何資訊（傳遞、收件者、電子郵件地址、服務等）：
 
-   1. 按一下&#x200B;**[!UICONTROL Add a filter]**&#x200B;連結，然後按&#x200B;**[!UICONTROL Edit query]**。
+  1. 按一下&#x200B;**[!UICONTROL Add a filter]**&#x200B;連結，然後按&#x200B;**[!UICONTROL Edit query]**。
 
-      ![](assets/response_scope_filtering_004.png)
+     ![](assets/response_scope_filtering_004.png)
 
-   1. 指定您的篩選條件。
+  1. 指定您的篩選條件。
 
-      ![](assets/response_scope_filtering_005.png)
+     ![](assets/response_scope_filtering_005.png)
 
-   1. 按一下&#x200B;**[!UICONTROL Finish]**&#x200B;以儲存查詢。
+  1. 按一下&#x200B;**[!UICONTROL Finish]**&#x200B;以儲存查詢。
 
-      ![](assets/response_scope_filtering_006.png)
+     ![](assets/response_scope_filtering_006.png)
 
 * **指令碼**：您可以使用JavaScript指令碼，在執行期間動態多載假設設定。
 

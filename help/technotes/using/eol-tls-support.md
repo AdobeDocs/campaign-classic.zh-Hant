@@ -11,20 +11,23 @@ exl-id: e18d43b6-2a77-4881-85e7-ca36248d4634
 TQID: https://experienceleague.adobe.com/QqPQkow0oa3RgI2k7xNouJgX6OwNuObuFuk2zWxy8Lc
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 feature_v2: []
 subfeature_v2:
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+    internal-label: Adobe Analytics integration
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 880
-ht-degree: 4%
-
+source-wordcount: '880'
+ht-degree: 5%
 ---
-
 # 終止支援 TLS 1.0 和 1.1{#eol-tls-support}
 
 
@@ -50,7 +53,7 @@ Adobe已停止支援較低版本的TLS （包括TLS 1.0和1.1）。 如需TLS 1.
 
 如果您使用其他瀏覽器，請確定其支援TLS 1.2。
 
-您的作業系統和應用程式架構也必須支援TLS 1.2。 如果升級瀏覽器無法解決問題，請確定您的電腦符合[&#x200B; Campaign相容性矩陣](../../rn/using/compatibility-matrix.md)所列的系統需求。
+您的作業系統和應用程式架構也必須支援TLS 1.2。 如果升級瀏覽器無法解決問題，請確定您的電腦符合[ Campaign相容性矩陣](../../rn/using/compatibility-matrix.md)所列的系統需求。
 
 ## 常見問題{#faq}
 
@@ -104,6 +107,6 @@ Adobe已停止支援較低版本的TLS （包括TLS 1.0和1.1）。 如需TLS 1.
 
   Internet Explorer 11預設會啟用TLS 1.2，但若關閉，您可以將其開啟。 在這種情況下，請從進階設定對話方塊開啟TLS 1.2，而不使用其他選項。 也可能會發生其他錯誤，例如：
 
-   * 無法連線到服務
-   * 服務無法提供
-   * 連線錯誤
+  * 無法連線至服務。
+  * 服務無法提供
+  * 連線錯誤
