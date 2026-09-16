@@ -23,7 +23,7 @@ Adobe Campaign Classic 隨附了一套模組和選項。 這些模組的可用�
 
 此頁面顯示託管(Managed Services)和內部部署之間的主要差異。 混合部署特性取決於Adobe所託管且在您的內部部署中託管的元素。
 
-在本節](../../installation/using/hosting-models.md)中引進了不同的託管模型[。
+在本節[&#128279;](../../installation/using/hosting-models.md)中引進了不同的託管模型。
 
 ## 每個部署模式的可用性 {#capability-matrix}
 

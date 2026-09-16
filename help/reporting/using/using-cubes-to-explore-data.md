@@ -166,4 +166,4 @@ Marketing Analytics可讓您更輕鬆地建立報表，以及透過多維度資�
 
    ![](assets/s_advuser_cube_in_report_02.png)
 
-   這可讓您建立要顯示的報表。 如需詳細資訊，請參閱步驟2 — 選取行和欄](#step-2---selecting-lines-and-columns)。[
+   這可讓您建立要顯示的報表。 如需詳細資訊，請參閱步驟2 — 選取行和欄[&#128279;](#step-2---selecting-lines-and-columns)。

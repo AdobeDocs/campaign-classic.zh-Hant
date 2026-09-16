@@ -37,7 +37,7 @@ Adobe Campaign包含Apache Tomcat，可透過HTTP （和SOAP）作為應用程�
 在此案例中：
 
 * 預設的接聽連線埠為8080。 若要變更，請參閱[本節](../../installation/using/configure-tomcat.md)。
-* 使用者端主控台接著使用URL （例如`https://``<computer>``:8080`）連線。
+* 使用者端主控台接著使用URL （例如`https://`&#x200B;`<computer>`&#x200B;`:8080`）連線。
 
 不過，基於安全性與管理考量，當執行Adobe Campaign的電腦公開在網際網路上，而您想要開啟網路外部主控台的存取權時，我們建議使用專用的Web伺服器作為HTTP流量的主要進入點。
 

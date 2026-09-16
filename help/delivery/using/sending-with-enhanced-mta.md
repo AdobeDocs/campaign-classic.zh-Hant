@@ -179,7 +179,7 @@ DKIM (DomainKeys Indified Mail)電子郵件驗證簽署是由Enhanced MTA完成�
 
 當硬退信從Enhanced MTA回傳時，其狀態會從&#x200B;**[!UICONTROL Sent]**&#x200B;變更為&#x200B;**[!UICONTROL Failed]**，而&#x200B;**[!UICONTROL Success]**&#x200B;百分比會因此減少。
 
-當從Enhanced MTA回報軟退信時，訊息仍顯示為&#x200B;**[!UICONTROL Sent]**，且&#x200B;**[!UICONTROL Success]**&#x200B;百分比尚未更新。 然後，軟退信會在整個傳遞有效期內重試[](delivery-failures-quarantine.md#retries-after-a-delivery-temporary-failure)：
+當從Enhanced MTA回報軟退信時，訊息仍顯示為&#x200B;**[!UICONTROL Sent]**，且&#x200B;**[!UICONTROL Success]**&#x200B;百分比尚未更新。 然後，軟退信會在整個傳遞有效期內重試[&#128279;](delivery-failures-quarantine.md#retries-after-a-delivery-temporary-failure)：
 
 * 如果在有效期間結束前重試成功，則訊息狀態會維持為&#x200B;**[!UICONTROL Sent]**，**[!UICONTROL Success]**&#x200B;百分比會維持不變。
 

@@ -69,7 +69,7 @@ Adobe Campaign包含翻譯及管理多語言翻譯的工具。 此編輯器可�
 
 第一次開啟此索引標籤時，不會包含任何資料。 按一下&#x200B;**[!UICONTROL Collect the strings to translate]**&#x200B;連結以更新網頁應用程式中的字串。
 
-Adobe Campaign會收集在所有靜態元素的&#x200B;**[!UICONTROL Texts]**&#x200B;索引標籤中定義的欄位和字串標籤：HTML區塊、Javascript等。靜態元素在網頁表單](static-elements-in-a-web-form.md)中的[靜態元素中有詳細的說明。
+Adobe Campaign會收集在所有靜態元素的&#x200B;**[!UICONTROL Texts]**&#x200B;索引標籤中定義的欄位和字串標籤：HTML區塊、Javascript等。靜態元素在網頁表單[&#128279;](static-elements-in-a-web-form.md)中的靜態元素中有詳細的說明。
 
 ![](assets/s_ncs_admin_survey_trad_tab.png)
 
@@ -186,7 +186,7 @@ Web表單會以Web應用程式屬性之&#x200B;**[!UICONTROL Localization]**&#x2
 &lang=xx
 ```
 
-如果URL中的語言之前有其他引數。 例如： **https://myserver/webApp/APP34?status=1&amp;lang=en**
+如果URL中的語言之前有其他引數。 例如： **https://myserver/webApp/APP34?status=1&lang=en**
 
 以下列出預設可用的翻譯語言和字典。
 
@@ -447,7 +447,7 @@ Web表單會以Web應用程式屬性之&#x200B;**[!UICONTROL Localization]**&#x2
 >[!NOTE]
 >
 >如果此Web應用程式已使用其他引數，請新增&#x200B;**&amp;lang=**。\
->例如： **https://myserver/webApp/APP34?status=1&amp;lang=en**
+>例如： **https://myserver/webApp/APP34?status=1&lang=en**
 
 ## 進階翻譯設定 {#advanced-translation-configuration}
 
