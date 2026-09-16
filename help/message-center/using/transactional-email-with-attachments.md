@@ -73,7 +73,7 @@ Adobe也建議限制附加檔案的大小和數量。 依預設，您只能新�
 
 若要即時新增電子郵件附件至交易式訊息，請遵循下列步驟：
 
-1. 從設計附件開始。 如需詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/attaching-files.html#attach-a-personalized-file){target="_blank"}。
+1. 從設計附件開始。 如需詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/attaching-files.html?lang=zh-Hant#attach-a-personalized-file){target="_blank"}。
 
    這可讓您將檔案附加至電子郵件，即使它們並非在執行例項上託管。
 

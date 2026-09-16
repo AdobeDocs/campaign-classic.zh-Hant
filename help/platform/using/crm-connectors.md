@@ -44,7 +44,7 @@ Adobe Campaign 提供各種 CRM 連接器，用於將您的 Adobe Campaign 平�
 >[!NOTE]
 >
 >* 此功能可透過&#x200B;**CRM聯結器**&#x200B;專用套件在Adobe Campaign中使用。
->* 若要進一步瞭解CRM聯結器，以及如何連線至Microsoft Dynamics和Salesforce，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/ac-crm/crm){target=_blank}。
+>* 若要進一步瞭解CRM聯結器，以及如何連線至Microsoft Dynamics和Salesforce，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/connect/ac-crm/crm){target=_blank}。
 
 <!--
 ### Compatible systems {#compatible-crm-systems-and-limitations}

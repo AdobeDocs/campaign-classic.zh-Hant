@@ -50,7 +50,7 @@ ht-degree: 39%
 
 >[!NOTE]
 >
->若要深入瞭解資料套件，請參閱[Campaign v8檔案。](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/packages){target=_blank}
+>若要深入瞭解資料套件，請參閱[Campaign v8檔案。](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/packages){target=_blank}
 
 
 <!--

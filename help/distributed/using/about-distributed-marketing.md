@@ -34,7 +34,7 @@ Adobe Campaign提供&#x200B;**分散式行銷**&#x200B;應用程式，用於在�
 
 >[!NOTE]
 >
->若要進一步瞭解Adobe Campaign的Distributed Marketing及其使用方式，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/automation/distributed-marketing/about-distributed-marketing){target=_blank}。
+>若要進一步瞭解Adobe Campaign的Distributed Marketing及其使用方式，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/distributed-marketing/about-distributed-marketing){target=_blank}。
 
 <!--
 ## Terminology {#terminology}

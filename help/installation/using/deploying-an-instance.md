@@ -98,12 +98,12 @@ Adobe Campaign提供圖形化助理，可在Adobe Campaign使用者端主控台�
 指示下列引數：
 
 * **[!UICONTROL Sender name]** ：輸入寄件者的名稱。
-* **[!UICONTROL Sender address]** ：輸入寄件者的電子郵件地址。 從Adobe Campaign傳送電子郵件時，**寄件者地址**&#x200B;信箱不受監視，且行銷使用者無法存取此信箱。 Adobe Campaign也不提供自動回覆或自動轉寄此信箱中接收之電子郵件的功能。 在本檔案[&#128279;](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/ac-starting-new-platform.html){_blank}中進一步瞭解傳遞能力最佳實務。
+* **[!UICONTROL Sender address]** ：輸入寄件者的電子郵件地址。 從Adobe Campaign傳送電子郵件時，**寄件者地址**&#x200B;信箱不受監視，且行銷使用者無法存取此信箱。 Adobe Campaign也不提供自動回覆或自動轉寄此信箱中接收之電子郵件的功能。 在本檔案[&#128279;](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/ac-starting-new-platform.html?lang=zh-Hant){_blank}中進一步瞭解傳遞能力最佳實務。
 
 * **[!UICONTROL Reply address text]** ：輸入收件者按一下&#x200B;**[!UICONTROL Reply]**&#x200B;按鈕時使用的名稱。
 * **[!UICONTROL Reply address]** ：輸入當收件者按一下電子郵件使用者端軟體中的&#x200B;**[!UICONTROL Reply]**&#x200B;按鈕時要使用的電子郵件地址。 **回覆地址**&#x200B;欄位的用途是當您想要收件者回覆其他地址而不是&#x200B;**寄件者地址**&#x200B;時。  此地址必須是有效的電子郵件地址、連結至受監控的信箱，並由客戶代管。  它可能是支援信箱，例如`customer-care@customer.com`，其中會讀取並回應電子郵件。
 
-* **[!UICONTROL Error address]** ：輸入含有錯誤之訊息的電子郵件地址。 這是用於處理退信的技術地址，包括Adobe Campaign伺服器因目標地址不存在而收到的電子郵件。 此地址必須是有效的電子郵件地址、連結至受監控的信箱，並由客戶代管。 可能是退回信箱，例如`errors@customer.com`。 您可以從傳遞/傳遞範本屬性的&#x200B;**SMTP**&#x200B;索引標籤，為傳遞或傳遞範本變更此位址。 在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email-parameters.html#managing-bounce-emails){target="_blank"}中瞭解更多。
+* **[!UICONTROL Error address]** ：輸入含有錯誤之訊息的電子郵件地址。 這是用於處理退信的技術地址，包括Adobe Campaign伺服器因目標地址不存在而收到的電子郵件。 此地址必須是有效的電子郵件地址、連結至受監控的信箱，並由客戶代管。 可能是退回信箱，例如`errors@customer.com`。 您可以從傳遞/傳遞範本屬性的&#x200B;**SMTP**&#x200B;索引標籤，為傳遞或傳遞範本變更此位址。 在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email-parameters.html?lang=zh-Hant#managing-bounce-emails){target="_blank"}中瞭解更多。
 
 此外，您可以指定寄件者地址與錯誤地址所授權的&#x200B;**遮罩**。 如有必要，可以使用逗號分隔這些遮罩。 此設定是選用的。 輸入欄位時，Adobe Campaign會在傳送時（分析期間，如果地址不含任何變數）檢查地址是否有效。 此作業模式可確保不使用任何可能觸發傳送問題的地址。 必須在傳遞伺服器上設定傳遞位址。
 
@@ -413,7 +413,7 @@ Adobe Campaign可讓您區別這三個URL，以將負載分散到多個平台。
 
 您可以使用逗號來指定多個URL遮罩，以分隔每個URL遮罩。
 
-* 有關在電子郵件中使用和管理影像的資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#adding-images){target="_blank"}。
+* 有關在電子郵件中使用和管理影像的資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=zh-Hant#adding-images){target="_blank"}。
 * 在傳送助理中，從這些URL呼叫的影像會具有「已忽略」狀態。
 
 ### 發佈模式 {#publication-modes}
