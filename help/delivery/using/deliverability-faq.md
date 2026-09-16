@@ -8,27 +8,36 @@ exl-id: f94897c1-b44c-4100-ac50-a89b13fa6f2f
 TQID: https://experienceleague.adobe.com/ZRai7Bd-IRaWUQQmkuUYwXhNXp2BI-B4k-4cGq1k6uk
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
   - id: b631758a-142d-425f-b9aa-f756d85cb979
+    internal-label: Campaign Email Designer
   - id: c858a28b-ea19-49b0-8d48-828717fad89c
+    internal-label: Prepare and test messages
 subfeature_v2:
   - id: e95a583b-fcfa-4524-8666-46a29c828119
+    internal-label: Email messaging
   - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
+    internal-label: Email design
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
+    internal-label: A/B testing
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
+    internal-label: Manage deliverability
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 660
+source-wordcount: '660'
 ht-degree: 2%
-
 ---
-
 # 傳遞能力疑難排解{#deliverability-faq}
 
 您是否遇到傳遞能力問題？ 您可以在這裡找到解決方案。
@@ -62,9 +71,9 @@ Adobe Campaign中針對每小時可傳送的電子郵件數量進行設定。 �
 
 * **封鎖清單上的電子郵件地址與隔離的電子郵件地址有何不同？**
 
-   * 狀態&#x200B;**[!UICONTROL Denylisted]**&#x200B;是回饋回圈（當某人回報訊息為垃圾訊息時）的結果。
+  * 狀態&#x200B;**[!UICONTROL Denylisted]**&#x200B;是回饋回圈（當某人回報訊息為垃圾訊息時）的結果。
 
-   * 狀態&#x200B;**[!UICONTROL Quarantined]**&#x200B;是軟退信或硬退信的結果。
+  * 狀態&#x200B;**[!UICONTROL Quarantined]**&#x200B;是軟退信或硬退信的結果。
 
   如需詳細資訊，請參閱[本節](delivery-failures-quarantine.md#quarantine-vs-denylist)。
 
@@ -78,15 +87,15 @@ Adobe Campaign中針對每小時可傳送的電子郵件數量進行設定。 �
 
 * **我的其中一個收件者被誤新增至封鎖清單。 如何將他們從封鎖清單中移除，以便我可以再次向他們傳送訊息？**
 
-   * 移至&#x200B;**[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]**。
-   * 在對應的記錄的詳細資訊中，將&#x200B;**[!UICONTROL Status]**&#x200B;欄位的值設定為&#x200B;**[!UICONTROL Valid]**。
-   * 儲存記錄。
+  * 移至&#x200B;**[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]**。
+  * 在對應的記錄的詳細資訊中，將&#x200B;**[!UICONTROL Status]**&#x200B;欄位的值設定為&#x200B;**[!UICONTROL Valid]**。
+  * 儲存記錄。
 
 * **如何找出我的IP是否位於封鎖清單中？ 如何從封鎖清單移除我的IP？**
 
   若要檢查您的IP位址是否位於封鎖清單上，您可以使用各種網站來進行驗證，例如：
-   * [MX Toolbox](https://mxtoolbox.com/)
-   * [我的IP位址是什麼](https://whatismyipaddress.com)
+  * [MX Toolbox](https://mxtoolbox.com/)
+  * [我的IP位址是什麼](https://whatismyipaddress.com)
 
   一般而言，IP位址檢查的結果會傳回包含封鎖清單詳細資訊以及拒絕IP位址之網站名稱的清單。
 

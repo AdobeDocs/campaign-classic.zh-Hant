@@ -8,22 +8,26 @@ exl-id: ce94e7e7-b8f8-4c82-937f-e87d15e50c34
 TQID: https://experienceleague.adobe.com/-VSnXHtg3Zi3VGHVAF72uRpJa3gulT3h40BIsdnGjqo
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: b12f6872-9271-4369-85e5-86969a0b99a2
+    internal-label: APIs
   - id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
+    internal-label: Schemas
 subfeature_v2:
   - id: cfc95e9b-b035-4403-a6a9-b27a8a053a37
+    internal-label: PI
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
 source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: 923
+source-wordcount: '923'
 ht-degree: 1%
-
 ---
-
 # Web 服務呼叫{#web-service-calls}
 
 ## 一般資訊 {#general-information}
@@ -215,8 +219,8 @@ Adobe Campaign已匯入[安全性區域](../../installation/using/security-zones
 * 隨機建構（不再包含使用者登入和密碼）
 * 透過Web存取時：
 
-   * 工作階段權杖會成為永久權杖，瀏覽器關閉後就不會損毀
-   * 它會放在HTTP-ONLY Cookie中（必須為運運算元啟用Cookie）
+  * 工作階段權杖會成為永久權杖，瀏覽器關閉後就不會損毀
+  * 它會放在HTTP-ONLY Cookie中（必須為運運算元啟用Cookie）
 
 ### 安全性權杖特性 {#security-token-characteristics}
 
@@ -227,9 +231,9 @@ Adobe Campaign已匯入[安全性區域](../../installation/using/security-zones
 * 它會儲存在Adobe Campaign主控台中
 * 透過Web存取時：
 
-   * 它儲存在document.__securityToken屬性中
-   * 頁面URL已更新，以更新安全性權杖
-   * 表單也會透過包含代號的隱藏欄位進行更新
+  * 它儲存在document.__securityToken屬性中
+  * 頁面URL已更新，以更新安全性權杖
+  * 表單也會透過包含代號的隱藏欄位進行更新
 
 #### 安全性權杖移動 {#security-token-movement}
 

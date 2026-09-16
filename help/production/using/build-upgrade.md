@@ -3,7 +3,7 @@ product: campaign
 title: 開始進行組建版本升級
 description: 瞭解升級至新組建版本的關鍵步驟
 feature: Monitoring, Upgrade
-badge-v7-prem: label="僅限內部部署/混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="僅適用於內部部署和混合部署"
+badge-v7-prem: label="On-premise/hybrid only" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="Applies to on-premise and hybrid deployments only"
 audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
@@ -11,24 +11,30 @@ exl-id: c5a9c99a-4078-45d8-847b-6df9047a2fe2
 TQID: https://experienceleague.adobe.com/XC0Q-35cYPjVHM-h2GNE570DqM8vxjSicu4vxnqYuSo
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
+    internal-label: Schemas
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 subfeature_v2:
   - id: c03a11ff-bdf9-4e5b-b279-f468b4293464
+    internal-label: Performance Monitoring
   - id: e519a22f-a06a-42fc-9d09-d78a3ab2c434
+    internal-label: Monitoring guidelines
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 2379
+source-wordcount: '2410'
 ht-degree: 4%
-
 ---
-
-# 執行建置升級{#performing-a-build-upgrade}
+# 執行版本編號升級{#performing-a-build-upgrade}
 
 
 
@@ -78,14 +84,14 @@ ht-degree: 4%
 * Adobe架構師：針對託管或混合式架構，架構師必須與Adobe Campaign Client Care協調。
 
 * 專案經理：
-   * 對於內部部署：客戶的內部專案主管會領導升級並管理生命週期測試。
+  * 對於內部部署：客戶的內部專案主管會領導升級並管理生命週期測試。
 
-   * 針對託管安裝：託管團隊將與Adobe Campaign客戶服務團隊和客戶合作，協調所有執行個體的升級時間表。
+  * 針對託管安裝：託管團隊將與Adobe Campaign客戶服務團隊和客戶合作，協調所有執行個體的升級時間表。
 
 * Adobe Campaign管理員：
-   * 對於內部部署安裝：管理員會執行升級。
+  * 對於內部部署安裝：管理員會執行升級。
 
-   * 對於託管安裝：託管團隊會執行升級。
+  * 對於託管安裝：託管團隊會執行升級。
 
 * Adobe Campaign operator\marketing user：此操作員會在開發、測試和生產執行個體上執行測試。
 

@@ -4,27 +4,31 @@ title: 關於自訂收件者表格
 description: 關於自訂收件者表格
 feature: Configuration, Custom Resources
 role: User, Developer
-badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 exl-id: d8cea496-b3f3-420a-bf6e-b7cbb321b30d
 TQID: https://experienceleague.adobe.com/Okjz7RRmzZCTCBNbBqR1nHDq7ML8WjrJrs1XR0aDZSE
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
+    internal-label: Schemas
 subfeature_v2:
   - id: cfc95e9b-b035-4403-a6a9-b27a8a053a37
+    internal-label: PI
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: 692
+source-wordcount: '683'
 ht-degree: 2%
-
 ---
-
 # 使用自訂收件者表格{#about-custom-recipient-table}
 
 本節詳細說明使用自訂（或外部）收件者表格的原則。
@@ -55,8 +59,8 @@ ht-degree: 2%
 
   我們建議：
 
-   * 將&#x200B;**[!UICONTROL nms:BroadLogRcp]**&#x200B;和&#x200B;**[!UICONTROL nms:TrackingLogRcp]**&#x200B;結構描述專用於現成可用的&#x200B;**[!UICONTROL nms:Recipientschema]**。 這兩個記錄檔表格不應連結至任何其他自訂收件者表格。
-   * 為每個新的自訂收件者綱要定義專用的自訂broadlog和trackinglog綱要。 設定目標對應時會自動完成此作業，請參閱[目標對應](../../configuration/using/target-mapping.md)。
+  * 將&#x200B;**[!UICONTROL nms:BroadLogRcp]**&#x200B;和&#x200B;**[!UICONTROL nms:TrackingLogRcp]**&#x200B;結構描述專用於現成可用的&#x200B;**[!UICONTROL nms:Recipientschema]**。 這兩個記錄檔表格不應連結至任何其他自訂收件者表格。
+  * 為每個新的自訂收件者綱要定義專用的自訂broadlog和trackinglog綱要。 設定目標對應時會自動完成此作業，請參閱[目標對應](../../configuration/using/target-mapping.md)。
 
 * 您無法使用產品中提供的標準&#x200B;**[!UICONTROL Services and Subscriptions]**。
 

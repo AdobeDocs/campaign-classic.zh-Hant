@@ -7,25 +7,33 @@ exl-id: e044b35a-b49f-408a-900d-2afe8ff10212
 TQID: https://experienceleague.adobe.com/i3aMiL43o3Sj7aR1u2KJmlMVe3UiS6j-tLc5augCryk
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
   - id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
+    internal-label: Schemas
 subfeature_v2:
   - id: cfc95e9b-b035-4403-a6a9-b27a8a053a37
+    internal-label: PI
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+    internal-label: Adobe Analytics integration
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 2042
+source-wordcount: '2101'
 ht-degree: 1%
-
 ---
-
 # Apple郵件應用程式中的郵件隱私保護
 
 ## 哪些部分有所變更？
@@ -59,7 +67,7 @@ Apple的新功能是未來產業在電子郵件隱私保護方面的面貌。 �
 ### 評估目前未結費率的趨勢
 
 決定您的對象中哪些比例在iOS裝置上使用Apple的郵件應用程式。
-使用此評估，您可以找出潛在的異常差距及其原因。您可以判斷間隙是否是因為行銷活動效能問題或Apple的隱私權保護功能所造成。閱讀[提示與秘訣](#measure-ios-footprint)。
+使用此評估，您可以找出潛在的異常差距及其原因。 您可以判斷間隙是否是因為行銷活動效能問題或Apple的隱私權保護功能所造成。 閱讀[提示與秘訣](#measure-ios-footprint)。
 
 ### 重新評估您的行銷活動策略和績效量度
 
@@ -393,7 +401,7 @@ Apple的新功能是未來產業在電子郵件隱私保護方面的面貌。 �
 1. 建立以查詢開頭的工作流程。
 
    初始查詢是用來擷取過去三個月的追蹤記錄。
-您可以使用增量查詢來僅擷取尚未匯出的記錄。
+   您可以使用增量查詢來僅擷取尚未匯出的記錄。
 
    從&#x200B;**[!UICONTROL Additional data]**&#x200B;節點新增所有必要資訊。
 
@@ -438,14 +446,14 @@ Apple的新功能是未來產業在電子郵件隱私保護方面的面貌。 �
 
 * 第一個工作流程範例包含下列活動：
 
-   1. 初始&#x200B;**[!UICONTROL Query]**&#x200B;活動用於選取過去三個月所有開啟的電子郵件。
-   1. **[!UICONTROL Split]**&#x200B;活動是用來依電子郵件應用程式、瀏覽器、作業系統和裝置來分割選取專案。
+  1. 初始&#x200B;**[!UICONTROL Query]**&#x200B;活動用於選取過去三個月所有開啟的電子郵件。
+  1. **[!UICONTROL Split]**&#x200B;活動是用來依電子郵件應用程式、瀏覽器、作業系統和裝置來分割選取專案。
 
-   1. 每個&#x200B;**[!UICONTROL Split]**&#x200B;活動之後都有一個&#x200B;**[!UICONTROL Deduplication]**&#x200B;活動。 **[!UICONTROL Deduplication]**&#x200B;活動用於移除重複的電子郵件地址。
+  1. 每個&#x200B;**[!UICONTROL Split]**&#x200B;活動之後都有一個&#x200B;**[!UICONTROL Deduplication]**&#x200B;活動。 **[!UICONTROL Deduplication]**&#x200B;活動用於移除重複的電子郵件地址。
 
-      **[!UICONTROL Deduplication]**&#x200B;活動位於&#x200B;**[!UICONTROL Split]**&#x200B;活動之後，以避免遺失使用各種裝置的收件者資訊。
+     **[!UICONTROL Deduplication]**&#x200B;活動位於&#x200B;**[!UICONTROL Split]**&#x200B;活動之後，以避免遺失使用各種裝置的收件者資訊。
 
-   1. 每個&#x200B;**[!UICONTROL Deduplication]**&#x200B;活動後面都有&#x200B;**[!UICONTROL End]**&#x200B;活動。
+  1. 每個&#x200B;**[!UICONTROL Deduplication]**&#x200B;活動後面都有&#x200B;**[!UICONTROL End]**&#x200B;活動。
 
   如果您僅將收件者儲存在現成可用的收件者表格中以進行目標定位，則此型別的工作流程會很有用。
 
@@ -453,14 +461,14 @@ Apple的新功能是未來產業在電子郵件隱私保護方面的面貌。 �
 
 * 第二個工作流程範例包含下列活動：
 
-   1. 初始&#x200B;**[!UICONTROL Query]**&#x200B;活動用於選取過去三個月所有開啟的電子郵件。
-   1. **[!UICONTROL Deduplication]**&#x200B;活動用於移除重複的電子郵件地址。
-   1. 已使用&#x200B;**[!UICONTROL Fork]**&#x200B;活動：
+  1. 初始&#x200B;**[!UICONTROL Query]**&#x200B;活動用於選取過去三個月所有開啟的電子郵件。
+  1. **[!UICONTROL Deduplication]**&#x200B;活動用於移除重複的電子郵件地址。
+  1. 已使用&#x200B;**[!UICONTROL Fork]**&#x200B;活動：
 
-      * 在一個轉變中，**[!UICONTROL Change dimension]**&#x200B;活動用於尋找追蹤記錄所參照的收件者。
-      * 在另一個轉變中，**[!UICONTROL Split]**&#x200B;活動是用來依電子郵件應用程式、瀏覽器、作業系統和裝置分割選取專案。
+     * 在一個轉變中，**[!UICONTROL Change dimension]**&#x200B;活動用於尋找追蹤記錄所參照的收件者。
+     * 在另一個轉變中，**[!UICONTROL Split]**&#x200B;活動是用來依電子郵件應用程式、瀏覽器、作業系統和裝置分割選取專案。
 
-   1. **[!UICONTROL Split]**&#x200B;活動之後的每個轉變都有&#x200B;**[!UICONTROL End]**&#x200B;活動。
+  1. **[!UICONTROL Split]**&#x200B;活動之後的每個轉變都有&#x200B;**[!UICONTROL End]**&#x200B;活動。
 
   如果您將收件者儲存在現成可用的收件者表格以外的表格中，此型別的工作流程會很有用。
 

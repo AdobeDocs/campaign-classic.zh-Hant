@@ -7,15 +7,14 @@ exl-id: d8960a2e-6900-4346-9f06-e7dd9d7b5139
 TQID: https://experienceleague.adobe.com/fiMkJtGU90FP-G6BJhTnIrgBJ39uIJaakqKD49EhXS0
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 177
+source-wordcount: '177'
 ht-degree: 12%
-
 ---
-
 # 引數元素 {#param--element}
 
 
@@ -58,34 +57,34 @@ param：==help
 
   可用型別清單：
 
-   * 任何
-   * 紙匣
-   * blob
-   * 布林值
-   * 位元組
-   * CDATA
-   * 日期時間
-   * datetimetz
-   * datetimenotz
-   * 日期
-   * DOMDocument
-   * DOMElement
-   * 雙精度浮點數
-   * 列舉
-   * 浮點數
-   * html
-   * 64 位元整數
-   * 連結
-   * 長整數
-   * 備忘錄
-   * MNTOKEN
-   * 百分比
-   * 主要金鑰
-   * 短整數
-   * 字串
-   * 時間
-   * 時間範圍
-   * uuid
+  * 任何
+  * 分類箱
+  * blob
+  * 布林值
+  * 位元組
+  * CDATA
+  * 日期時間
+  * datetimetz
+  * datetimenotz
+  * 日期
+  * DOMDocument
+  * DOMElement
+  * 雙精度浮點數
+  * 列舉
+  * 浮點數
+  * html
+  * 64 位元整數
+  * 連結
+  * 長整數
+  * 備忘錄
+  * MNTOKEN
+  * 百分比
+  * 主要金鑰
+  * 短整數
+  * 字串
+  * 時間
+  * 時間範圍
+  * uuid
 
 ## 範例 {#examples-9}
 

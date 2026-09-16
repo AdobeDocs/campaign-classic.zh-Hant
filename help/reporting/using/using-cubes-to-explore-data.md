@@ -2,17 +2,15 @@
 product: campaign
 title: 使用 cubes 來探索資料
 description: 使用 cubes 來探索資料
-badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Reporting, Monitoring
 hide: true
 exl-id: 32696bbf-1415-4214-837f-5437fdb8b4d4
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '977'
+source-wordcount: '968'
 ht-degree: 2%
-
 ---
-
 # 使用 cubes 來探索資料{#using-cubes-to-explore-data}
 
 

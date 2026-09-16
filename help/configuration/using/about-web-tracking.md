@@ -8,20 +8,22 @@ exl-id: 91c31703-75e6-47a4-a877-35682dd687a9
 TQID: https://experienceleague.adobe.com/FfA6FEH5WP2JJGVR4BhpjO19Yj4mt8irvyJLwuzCThs
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 192
+source-wordcount: '192'
 ht-degree: 4%
-
 ---
-
 # 關於網路追蹤{#about-web-tracking}
 
 除了可顯示網際網路使用者點按電子郵件訊息中連結之行為的標準追蹤之外，Adobe Campaign平台還讓您收集網際網路使用者如何瀏覽您網站的資訊。 此資料收集由網頁追蹤模組執行。

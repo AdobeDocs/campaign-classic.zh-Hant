@@ -2,7 +2,7 @@
 product: campaign
 title: 自訂表情符號清單
 description: 瞭解如何使用Adobe Campaign自訂表情符號清單
-badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Email, Push
 role: User, Developer
 hide: true
@@ -10,26 +10,34 @@ exl-id: b8642df3-1960-4f2c-8273-c3988a3e85f0
 TQID: https://experienceleague.adobe.com/QtOpkl4Sa6PJe5IGz4ffvpQdl2QfKA5J47WBKtIg2j8
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 feature_v2:
   - id: b631758a-142d-425f-b9aa-f756d85cb979
+    internal-label: Campaign Email Designer
   - id: c858a28b-ea19-49b0-8d48-828717fad89c
+    internal-label: Prepare and test messages
 subfeature_v2:
   - id: e95a583b-fcfa-4524-8666-46a29c828119
+    internal-label: Email messaging
   - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
+    internal-label: Email design
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
+    internal-label: A/B testing
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
+    internal-label: Manage deliverability
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 450
+source-wordcount: '498'
 ht-degree: 3%
-
 ---
-
 # 自訂表情符號清單 {#customize-emoticons}
 
 在快顯視窗中顯示的表情符號清單由列舉來排程，可讓您在清單中顯示值，以限制使用者在指定欄位中的選擇。
@@ -58,8 +66,8 @@ ht-degree: 3%
 
 1. 填寫欄位：
 
-   * **[!UICONTROL U+]**：您新表情符號的代碼。您可以在此[頁面](https://unicode.org/emoji/charts/full-emoji-list.html)中找到表情符號的程式碼清單。
-為避免相容性問題，我們建議您選擇支援瀏覽器和每個作業系統的表情符號。
+   * **[!UICONTROL U+]**：您新表情符號的代碼。 您可以在此[頁面](https://unicode.org/emoji/charts/full-emoji-list.html)中找到表情符號的程式碼清單。
+     為避免相容性問題，我們建議您選擇支援瀏覽器和每個作業系統的表情符號。
 
    * **[!UICONTROL Label]**：您新表情符號的標籤。
 

@@ -10,17 +10,18 @@ exl-id: e4d34f56-b065-4dce-8974-11dc2767873a
 TQID: https://experienceleague.adobe.com/kd15Dm8jY6xE0RpGTImgoL27wDbYmvuuLs-jK4-BwVo
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
+    internal-label: Schemas
 subfeature_v2:
   - id: cfc95e9b-b035-4403-a6a9-b27a8a053a37
+    internal-label: PI
 source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: 1573
+source-wordcount: '1573'
 ht-degree: 1%
-
 ---
-
 # attribute element {#attribute--element}
 
 
@@ -58,11 +59,11 @@ _operation （字串）、advanced （布林值）、applicatedIf （字串）�
 
   可存取的值包括：
 
-   * &quot;none&quot;：僅調解。 這表示Adobe Campaign將會復原元素，而不會更新元素，如果元素不存在則會產生錯誤。
-   * &quot;insertOrUpdate&quot;：以插入更新。 這表示Adobe Campaign將更新元素，或如果元素不存在則建立元素。
-   * &quot;insert&quot;： insertion. 這表示Adobe Campaign會插入元素，而不檢查元素是否存在。
-   * &quot;update&quot;：更新。 這表示Adobe Campaign將更新元素，如果元素不存在則會產生錯誤。
-   * &quot;delete&quot;：刪除。 這表示Adobe Campaign將復原和刪除元素。
+  * &quot;none&quot;：僅調解。 這表示Adobe Campaign將會復原元素，而不會更新元素，如果元素不存在則會產生錯誤。
+  * &quot;insertOrUpdate&quot;：以插入更新。 這表示Adobe Campaign將更新元素，或如果元素不存在則建立元素。
+  * &quot;insert&quot;： insertion. 這表示Adobe Campaign會插入元素，而不檢查元素是否存在。
+  * &quot;update&quot;：更新。 這表示Adobe Campaign將更新元素，如果元素不存在則會產生錯誤。
+  * &quot;delete&quot;：刪除。 這表示Adobe Campaign將復原和刪除元素。
 
 * **進階（布林值）**：啟動此選項時(@advanced=&quot;true&quot;)，它可讓您隱藏可用欄位清單上的屬性，以設定表單中的清單。
 * **applicableIf （字串）**：此屬性可讓您將欄位設為選用欄位。 當符合條件約束時，更新資料庫時將考慮`<attribute>`元素。 &quot;applicableIf&quot;會收到XTK運算式。
@@ -70,14 +71,14 @@ _operation （字串）、advanced （布林值）、applicatedIf （字串）�
 * **fallsTo （字串）**：取得共用欄位之資料表的名稱和名稱空間，並填入宣告屬性的結構描述。 （僅用於`<schema>`）。
 * **dataPolicy （字串）**：可讓您針對SQL或XML欄位中允許的值指定核准限制。 此屬性的值為：
 
-   * &quot;none&quot;：沒有值
-   * &quot;smartCase&quot;：第一字母大寫
-   * &quot;lowerCase&quot;：全部小寫
-   * &quot;upperCase&quot;：全部大寫
-   * &quot;email&quot;：電子郵件地址
-   * &quot;phone&quot;：電話號碼
-   * &quot;identifier&quot;：識別碼名稱
-   * &quot;resIdentifier&quot;：檔案名稱
+  * &quot;none&quot;：沒有值
+  * &quot;smartCase&quot;：第一字母大寫
+  * &quot;lowerCase&quot;：全部小寫
+  * &quot;upperCase&quot;：全部大寫
+  * &quot;email&quot;：電子郵件地址
+  * &quot;phone&quot;：電話號碼
+  * &quot;identifier&quot;：識別碼名稱
+  * &quot;resIdentifier&quot;：檔案名稱
 
 * **dbEnum （字串）**：接收「已關閉」列舉的內部名稱。 列舉值必須在`<srcschema>`中定義。
 * **defOnDuplicate （布林值）**：如果此屬性已啟用，則在複製記錄時，預設值（在@default中定義）會自動重新套用至記錄。
@@ -88,13 +89,13 @@ _operation （字串）、advanced （布林值）、applicatedIf （字串）�
 * **expr （字串）**：定義欄位預先計算運算式。 此屬性會接收Xpath或XTK運算式。
 * **功能（字串）**：定義特性欄位：這些欄位是用來擴充現有表格中的資料，但儲存於附件表格中。 接受的值包括：
 
-   * &quot;shared&quot;：內容會根據資料型別儲存在共用表格中
-   * &quot;dedicated&quot;：內容會儲存在專用表格中
+  * &quot;shared&quot;：內容會根據資料型別儲存在共用表格中
+  * &quot;dedicated&quot;：內容會儲存在專用表格中
 
   SQL特性表格是根據特性型別自動建置：
 
-   * 專用： `Ft_[name_of_the_schema_containing_the_characteristic]_[name_of_the_characteristic]`
-   * 已共用： `Ft_[type_of_key_of_the_schema_containing_the_characteristic]_[type_of_the_characteristic]`
+  * 專用： `Ft_[name_of_the_schema_containing_the_characteristic]_[name_of_the_characteristic]`
+  * 已共用： `Ft_[type_of_key_of_the_schema_containing_the_characteristic]_[type_of_the_characteristic]`
 
   有兩種特性欄位：簡單oà<sup>1</sup>欄位（單一值授權於特性）和oà<sup>1</sup>多選欄位（特性連結至可能包含數個值的集合元素）。
 
@@ -109,19 +110,19 @@ _operation （字串）、advanced （布林值）、applicatedIf （字串）�
 
   當結構描述寫入資料庫時，Adobe Campaign會自動將字首新增到欄位名稱中：
 
-   * &quot;i&quot;： &#39;integer&#39;型別的前置詞。
-   * &quot;d&quot;： &#39;double&#39;型別的前置詞。
-   * 「s」：字元字串型別的前置詞。
-   * &quot;ts&quot;： &#39;date&#39;型別的前置詞。
+  * &quot;i&quot;： &#39;integer&#39;型別的前置詞。
+  * &quot;d&quot;： &#39;double&#39;型別的前置詞。
+  * 「s」：字元字串型別的前置詞。
+  * &quot;ts&quot;： &#39;date&#39;型別的前置詞。
 
   若要完整定義表格中的欄位名稱，請在定義屬性時使用「@sqlname」選項。
 
 * **notNull （布林值）**：可讓您重新定義Adobe Campaign管理資料庫中NULL記錄的行為。 依預設，數值欄位不是Null，字串和日期型別欄位可以是Null。
 * **pkgStatus （字串）**：在套件匯出期間，會根據「@pkgStatus」的值考慮值：
 
-   * &quot;always&quot;：永遠存在
-   * &quot;never&quot;：永遠不存在
-   * &quot;default (or nothing)&quot;：會匯出值，除非這是預設值或不是與其他執行個體不相容的內部欄位。
+  * &quot;always&quot;：永遠存在
+  * &quot;never&quot;：永遠不存在
+  * &quot;default (or nothing)&quot;：會匯出值，除非這是預設值或不是與其他執行個體不相容的內部欄位。
 
 * **ref （字串）**：此屬性會定義由數個結構描述（定義分解）共用之`<attribute>`元素的參考。 定義不會複製到目前的結構描述中。
 * **必要（布林值）**：如果此屬性已啟用(@required=&quot;true&quot;)，介面中會反白顯示欄位。 欄位的標籤在表單中將為紅色。
@@ -137,32 +138,32 @@ _operation （字串）、advanced （布林值）、applicatedIf （字串）�
 
   可用型別清單：
 
-   * 任何
-   * 紙匣
-   * blob
-   * 布林值
-   * 位元組
-   * CDATA
-   * 日期時間
-   * datetimetz
-   * datetimenotz
-   * 日期
-   * 雙精度浮點數
-   * 列舉
-   * 浮點數
-   * html
-   * 64 位元整數
-   * 連結
-   * 長整數
-   * 備忘錄
-   * MNTOKEN
-   * 百分比
-   * 主要金鑰
-   * 短整數
-   * 字串
-   * 時間
-   * 時間範圍
-   * uuid
+  * 任何
+  * 分類箱
+  * blob
+  * 布林值
+  * 位元組
+  * CDATA
+  * 日期時間
+  * datetimetz
+  * datetimenotz
+  * 日期
+  * 雙精度浮點數
+  * 列舉
+  * 浮點數
+  * html
+  * 64 位元整數
+  * 連結
+  * 長整數
+  * 備忘錄
+  * MNTOKEN
+  * 百分比
+  * 主要金鑰
+  * 短整數
+  * 字串
+  * 時間
+  * 時間範圍
+  * uuid
 
   如果「@type」屬性留空，Adobe Campaign預設會將長度為100的字元字串（字串）連結至欄位。
 

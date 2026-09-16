@@ -8,18 +8,19 @@ exl-id: ecb5a258-a150-46a3-8b83-2b2c06d873ee
 TQID: https://experienceleague.adobe.com/JEGK7xRIWwipkqKnRGEByK7pCBCkgXzOrbMPHoXCDUU
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
 feature_v2: []
 subfeature_v2:
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+    internal-label: Adobe Analytics integration
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 617
+source-wordcount: '617'
 ht-degree: 9%
-
 ---
-
 # 如何更新您的環境，以便使用IMS連線至Adobe Campaign {#acc-ims-faq}
 
 
@@ -48,11 +49,11 @@ Adobe想要為所有超過2021年6月30日的客戶保留IMS功能。 IMS是安�
 
   必須升級至下列新版本之一：
 
-   * Gold Standard 11. [了解更多](../../rn/using/gold-standard.md)
-   * Campaign 21.1.3版本。 [了解更多](../../rn/using/latest-release.md)
-   * Campaign 20.2.5版。
-   * Campaign 20.1.4版。
-   * Campaign 19.2.4版。
+  * Gold Standard 11. [了解更多](../../rn/using/gold-standard.md)
+  * Campaign 21.1.3版本。 [了解更多](../../rn/using/latest-release.md)
+  * Campaign 20.2.5版。
+  * Campaign 20.1.4版。
+  * Campaign 19.2.4版。
 
   這些版本隨附新的連線通訊協定。 Campaign伺服器和使用者端主控台都必須升級：所有執行個體升級後，使用者端主控台都必須升級為此版本，並且必須在&#x200B;**2021年6月30日**&#x200B;之後連線至Campaign。
 

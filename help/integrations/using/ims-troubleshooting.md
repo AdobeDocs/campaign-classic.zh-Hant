@@ -3,7 +3,7 @@ product: campaign
 title: IMS 疑難排解
 description: IMS 疑難排解
 feature: Configuration
-badge-v7-prem: label="僅限內部部署/混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="僅適用於內部部署和混合部署"
+badge-v7-prem: label="On-premise/hybrid only" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="Applies to on-premise and hybrid deployments only"
 audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
@@ -11,22 +11,27 @@ exl-id: 1ce89c3a-1fe6-4ed6-9547-2eb9713a0ec3
 TQID: https://experienceleague.adobe.com/cUoMAlp8ExhammApiilFqRyrOkyyqxk1om0AifZVxb0
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: d5ef99fa-df0c-4153-bf94-105ad0724167
+    internal-label: Integrations
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
 subfeature_v2:
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+    internal-label: Adobe Analytics integration
   - id: df0d6518-6f49-46e2-b46e-3bcc513f553f
+    internal-label: Adobe Experience Manager integration
   - id: eb007b6d-6e57-46ab-9485-3f24d6102304
+    internal-label: Adobe Experience Platform integration
   - id: b1fd1501-3105-4d6b-b4d4-9af53126df75
+    internal-label: Adobe Target integration
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 501
+source-wordcount: '489'
 ht-degree: 5%
-
 ---
-
 # IMS 疑難排解{#ims-troubleshooting}
 
 
@@ -45,9 +50,9 @@ ht-degree: 5%
 
 如果外部帳戶有&#x200B;**產品內容**&#x200B;欄位，請檢查其值是否設為： **dma_campaign_classic**
 
-請確定Campaign和Experience Cloud的產品內容相同。
+請確定您的產品內容與Campaign和Experience Cloud相同。
 
-例如，如果未出現&#x200B;**產品內容**，則促銷活動和Experience Cloud中的預設產品內容應該是&#x200B;**dma_campaign**。 如果出現「**產品內容**」欄位，Campaign和Experience Cloud中的預設產品內容都應是&#x200B;**dma_campaign_classic**。
+例如，如果未顯示&#x200B;**產品內容**，則在Campaign和Experience Cloud中，預設產品內容應為&#x200B;**dma_campaign**。 如果出現「**產品內容**」欄位，Campaign和Experience Cloud中的預設產品內容都應是&#x200B;**dma_campaign_classic**。
 
 **[!UICONTROL IMS Server URL]**
 

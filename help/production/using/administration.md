@@ -3,7 +3,7 @@ product: campaign
 title: 管理
 description: 管理
 feature: Monitoring
-badge-v7-prem: label="僅限內部部署/混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="僅適用於內部部署和混合部署"
+badge-v7-prem: label="On-premise/hybrid only" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="Applies to on-premise and hybrid deployments only"
 audience: production
 content-type: reference
 topic-tags: production-procedures
@@ -11,20 +11,23 @@ exl-id: 12a255fe-66f9-40ce-b19e-c24322c2e009
 TQID: https://experienceleague.adobe.com/s-FvcKmvrRP7l91MkglXI2ITjrFQYbV5Lj92k6UO7WE
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 subfeature_v2:
   - id: c03a11ff-bdf9-4e5b-b279-f468b4293464
+    internal-label: Performance Monitoring
   - id: e519a22f-a06a-42fc-9d09-d78a3ab2c434
+    internal-label: Monitoring guidelines
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 449
+source-wordcount: '437'
 ht-degree: 5%
-
 ---
-
 # 管理{#administration}
 
 自動啟動Adobe Campaign模組（**網頁**、**mta**、**wfserver**&#x200B;等） 由&#x200B;**nlserver**&#x200B;伺服器提供。
@@ -35,13 +38,13 @@ ht-degree: 5%
 
 * 在Windows中：
 
-   * **網路啟動nlserver6**
-   * **網路停止nlserver6**
+  * **網路啟動nlserver6**
+  * **網路停止nlserver6**
 
 * 在Linux中（作為根）：
 
-   * **/etc/init.d/nlserver6開始**
-   * **/etc/init.d/nlserver6停止**
+  * **/etc/init.d/nlserver6開始**
+  * **/etc/init.d/nlserver6停止**
 
 >[!NOTE]
 >

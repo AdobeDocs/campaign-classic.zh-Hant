@@ -3,7 +3,7 @@ product: campaign
 title: 向Adobe提交請求
 description: 向Adobe提交請求
 feature: Audiences
-badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: integrations
 content-type: reference
 topic-tags: audience-sharing
@@ -11,22 +11,27 @@ exl-id: f3c19fcd-12cb-4ca3-b4b7-7dc4be57f4ea
 TQID: https://experienceleague.adobe.com/IIiDeR9teIgEBsbUb70DP-PA56Ux2MmpmBZuVIVF0M0
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: d5ef99fa-df0c-4153-bf94-105ad0724167
+    internal-label: Integrations
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 subfeature_v2:
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+    internal-label: Adobe Analytics integration
   - id: df0d6518-6f49-46e2-b46e-3bcc513f553f
+    internal-label: Adobe Experience Manager integration
   - id: eb007b6d-6e57-46ab-9485-3f24d6102304
+    internal-label: Adobe Experience Platform integration
   - id: b1fd1501-3105-4d6b-b4d4-9af53126df75
+    internal-label: Adobe Target integration
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 146
-ht-degree: 6%
-
+source-wordcount: '137'
+ht-degree: 7%
 ---
-
 # 向Adobe提交請求{#submitting-request-to-adobe}
 
 >[!NOTE]

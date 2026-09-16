@@ -8,20 +8,22 @@ exl-id: 04b0a0e5-d6df-447c-ac67-66adb1bdf717
 TQID: https://experienceleague.adobe.com/HRym19p3YGAa3PEPgFBfU3ka39l5348CkdQaWcHZOJk
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 1037
+source-wordcount: '1037'
 ht-degree: 0%
-
 ---
-
 # 定義其他SQL函式{#adding-additional-sql-functions}
 
 Adobe Campaign可讓使用者定義可存取SQL函式的&#x200B;**自己的函式**，包括資料庫所提供的函式以及主控台中尚未提供的函式。 例如，這對於彙總函式(average、maximum、sum)非常有用，這些函式只能在伺服器上計算，或者在資料庫提供更簡單的方式實作某些函式時，才可以計算，而不是在主控台中「手動」寫入運算式（例如日期管理）。
@@ -131,8 +133,8 @@ Adobe Campaign可讓使用者定義可存取SQL函式的&#x200B;**自己的函�
 * **@minArgs**&#x200B;和&#x200B;**maxArgs**&#x200B;指定引數的引數數目（最小值和最大值）。 例如，若是有2個引數的函式，minArgs和maxArgs將分別為2和2。 若為3個引數加上1個選用引數，則分別為3個和4個。
 * 最後，**providerPart**&#x200B;元素提供函式實作。
 
-   * **provider**&#x200B;屬性是必要的，它指定提供實作的資料庫系統。 如範例所示，當運算式語法或基礎函式不同時，可以根據資料庫提供替代實作。
-   * **@body**&#x200B;屬性包含函式實作。 請注意：此實作必須是資料庫語言的運算式（不是程式碼區塊）。 視資料庫而定，運算式可以是子查詢(&quot;（從表格中選取資料行，其中……）&quot;) 只傳回單一值。 例如，Oracle就是這種情況（查詢必須用方括弧撰寫）。
+  * **provider**&#x200B;屬性是必要的，它指定提供實作的資料庫系統。 如範例所示，當運算式語法或基礎函式不同時，可以根據資料庫提供替代實作。
+  * **@body**&#x200B;屬性包含函式實作。 請注意：此實作必須是資料庫語言的運算式（不是程式碼區塊）。 視資料庫而定，運算式可以是子查詢(&quot;（從表格中選取資料行，其中……）&quot;) 只傳回單一值。 例如，Oracle就是這種情況（查詢必須用方括弧撰寫）。
 
   >[!NOTE]
   >

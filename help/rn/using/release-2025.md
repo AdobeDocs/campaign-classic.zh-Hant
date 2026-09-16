@@ -9,14 +9,14 @@ exl-id: 8fd7a66b-cdff-427d-b78f-4becaba51129
 feature_v2: []
 subfeature_v2:
   - id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405
+    internal-label: Release notes
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+    internal-label: Adobe Analytics integration
 source-git-commit: c372a3d67ec413fa8cf9fdbb4530762a8f2f5177
-workflow-type: ht
-source-wordcount: 890
+workflow-type: tm+mt
+source-wordcount: '890'
 ht-degree: 100%
-
 ---
-
 # 2025 版本{#release-2025}
 
 ## 發行版本 7.4.2  {#release-7-4-2}
@@ -62,13 +62,13 @@ This release comes with the following compatibility updates:
 
 * Google BigQuery 修正：
 
-   * 修正 BOOLEAN 資料類型的回歸問題
-   * 修正 Proxy 設定問題
-   * 修正 DATETIME 資料類型的回歸問題
-   * 固定大量負載穩定性
-   * 改善 ODBC 版本的內部測試
-   * 修正連接字串特殊字元的問題
-   * 已移除 Google BigQuery 查詢的預設逾時 (5 分鐘)
+  * 修正 BOOLEAN 資料類型的回歸問題
+  * 修正 Proxy 設定問題
+  * 修正 DATETIME 資料類型的回歸問題
+  * 固定大量負載穩定性
+  * 改善 ODBC 版本的內部測試
+  * 修正連接字串特殊字元的問題
+  * 已移除 Google BigQuery 查詢的預設逾時 (5 分鐘)
 
 * 郵件傳輸代理程式 (MTA) — 已修正孤立 MTA 子代理卡在 **[!UICONTROL Start pending]** 狀態的問題。
 

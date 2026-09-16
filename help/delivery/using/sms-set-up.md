@@ -9,30 +9,42 @@ exl-id: a2783a5e-6d38-41a1-b5c6-24ab489116f8
 TQID: https://experienceleague.adobe.com/quIMssNONhvwEBVIEic9Dhe2x4-E0H5U8nIEruSUhtg
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 feature_v2:
   - id: b631758a-142d-425f-b9aa-f756d85cb979
+    internal-label: Campaign Email Designer
   - id: c858a28b-ea19-49b0-8d48-828717fad89c
+    internal-label: Prepare and test messages
 subfeature_v2:
   - id: e95a583b-fcfa-4524-8666-46a29c828119
+    internal-label: Email messaging
   - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
+    internal-label: Email design
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
+    internal-label: A/B testing
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
+    internal-label: Manage deliverability
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 1699
-ht-degree: 31%
-
+source-wordcount: '1742'
+ht-degree: 30%
 ---
-
 # 在獨立執行個體上設定簡訊頻道 {#setting-up-sms-channel}
 
 若要傳送至行動電話，您需要：
@@ -326,8 +338,8 @@ CR：歸位
 
 * 未定義編碼對應時，聯結器會採取一般行為：
 
-   * 它會嘗試使用 GSM 編碼，將 **data_coding = 0** 的值指派給它。
-   * 如果 GSM 編碼失敗，則會使用 **UCS2** 編碼，並對其指派值 **data_coding = 8**。
+  * 它會嘗試使用 GSM 編碼，將 **data_coding = 0** 的值指派給它。
+  * 如果 GSM 編碼失敗，則會使用 **UCS2** 編碼，並對其指派值 **data_coding = 8**。
 
 * 當您定義要使用的編碼以及連結的&#x200B;**[!UICONTROL data_coding]**&#x200B;欄位值時，Adobe Campaign會嘗試使用清單中的第一個編碼，如果第一個編碼不可能，則請執行下列操作。
 
@@ -361,7 +373,7 @@ CR：歸位
 * 無論關鍵字為何，若要傳送相同的回覆，請將&#x200B;**[!UICONTROL Keyword]**&#x200B;欄留空。
 * 若要執行動作而不傳送回應，請將&#x200B;**[!UICONTROL Response]**&#x200B;欄留空。 例如，這可讓您從隔離區中移除回複訊息不是「STOP」的使用者。
 
-如果您有多個外部帳戶使用Extended generic SMPP聯結器且提供者帳戶相同，則可能會發生以下問題：傳送簡短的程式碼回覆時，您可能會收到任何外部帳戶連線的回覆。因此，傳送的自動回覆不能是預期的訊息。
+如果您有多個外部帳戶使用Extended generic SMPP聯結器且提供者帳戶相同，則可能會發生以下問題：傳送簡短的程式碼回覆時，您可能會收到任何外部帳戶連線的回覆。 因此，傳送的自動回覆不能是預期的訊息。
 為避免此問題，請根據您使用的提供者，套用下列解決方案之一：
 
 * 為每個外部帳戶建立一個提供者帳戶。

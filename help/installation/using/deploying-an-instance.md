@@ -3,7 +3,7 @@ product: campaign
 title: 部署執行個體
 description: 深入瞭解Campaign部署精靈
 feature: Installation, Instance Settings, Deployment
-badge-v7-prem: label="僅限內部部署/混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="僅適用於內部部署和混合部署"
+badge-v7-prem: label="On-premise/hybrid only" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
@@ -11,23 +11,29 @@ exl-id: 8b07447c-9a86-4b56-8d29-e0b01357a6ec
 TQID: https://experienceleague.adobe.com/M1uqZA6cfopJkJ-pg3m-1R-eBbM55zv7R-FSxOfFUwI
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 subfeature_v2:
   - id: b5852c32-876b-41ae-92a7-9f588865ae52
+    internal-label: Best practices
   - id: e656c701-3899-4db3-989c-de0980ddfffa
+    internal-label: Installation
   - id: eff19c99-440a-4318-b319-444edc4d8d8f
+    internal-label: Upgrade
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 3479
+source-wordcount: '3471'
 ht-degree: 2%
-
 ---
-
 # 部署執行個體{#deploying-an-instance}
 
 >[!NOTE]
@@ -442,16 +448,16 @@ Adobe Campaign可讓您區別這三個URL，以將負載分散到多個平台。
 
   您可以使用指令碼發佈影像：
 
-   * 您必須建立此指令碼：其內容取決於您的設定。
-   * 指令碼將透過以下命令來呼叫：
+  * 您必須建立此指令碼：其內容取決於您的設定。
+  * 指令碼將透過以下命令來呼叫：
 
-     ```
-     [INSTALL]/copyToFrontal.vbs "$(XTK_INSTALL_DIR)\var\<instance>\upload\" "img1,img2,img3"
-     ```
+    ```
+    [INSTALL]/copyToFrontal.vbs "$(XTK_INSTALL_DIR)\var\<instance>\upload\" "img1,img2,img3"
+    ```
 
-     其中`[INSTALL]`是Adobe Campaign安裝資料夾的存取路徑。
+    其中`[INSTALL]`是Adobe Campaign安裝資料夾的存取路徑。
 
-   * 在Unix中，請確定指令碼是可執行檔。
+  * 在Unix中，請確定指令碼是可執行檔。
 
 對於影像，它必須從透過&#x200B;**NmsDelivery_ImageSubDirectory**&#x200B;選項指定的「影像」資料夾，將影像複製到一或多個前端伺服器。 這些伺服器會儲存影像，以供透過新設定的URL存取。
 

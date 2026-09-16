@@ -2,28 +2,33 @@
 product: campaign
 title: 發佈網路表單
 description: 發佈網路表單
-badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Web Forms
 exl-id: 1c66b8e8-7590-4767-9b2f-a9a509df4508
 TQID: https://experienceleague.adobe.com/2lsNN7oxSizIC1wsv5S5fwkgCcKd3so5qeq-pHr8odY
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
+    internal-label: Accessibility
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 feature_v2:
   - id: a4671286-a59f-47e3-b97b-90627a1977d5
+    internal-label: Communication channels
 subfeature_v2:
   - id: f391046b-0cf3-4e76-bd3b-97fe06654506
+    internal-label: Web Apps
   - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
+    internal-label: Web Forms
   - id: d7be2b01-dc9c-40f7-aace-a151707504ed
+    internal-label: Landing pages
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 1289
+source-wordcount: '1280'
 ht-degree: 1%
-
 ---
-
 # 發佈網路表單{#publishing-a-web-form}
 
 
@@ -192,17 +197,17 @@ ht-degree: 1%
 
 * 如果從第一個執行個體匯出時Web表單狀態為&#x200B;**[!UICONTROL Pending publication]**&#x200B;或&#x200B;**[!UICONTROL Online]**：
 
-   * 網頁表單在新執行個體上匯入時取得&#x200B;**[!UICONTROL Pending publication]**&#x200B;狀態。
+  * 網頁表單在新執行個體上匯入時取得&#x200B;**[!UICONTROL Pending publication]**&#x200B;狀態。
 
-   * 如果新執行個體上已存在網頁表單，則會以新版本的表單取代，且會採用&#x200B;**[!UICONTROL Pending publication]**&#x200B;狀態，即使舊版本的表單為&#x200B;**[!UICONTROL Online]**&#x200B;亦然。
+  * 如果新執行個體上已存在網頁表單，則會以新版本的表單取代，且會採用&#x200B;**[!UICONTROL Pending publication]**&#x200B;狀態，即使舊版本的表單為&#x200B;**[!UICONTROL Online]**&#x200B;亦然。
 
-   * 無論表單存在與否，表單都必須是[已發佈](#publishing-a-form)，才能在新執行個體上變成&#x200B;**[!UICONTROL Online]**，並可在瀏覽器中透過網頁表單URL存取。
+  * 無論表單存在與否，表單都必須是[已發佈](#publishing-a-form)，才能在新執行個體上變成&#x200B;**[!UICONTROL Online]**，並可在瀏覽器中透過網頁表單URL存取。
 
 * 如果網頁表單在匯出時的狀態為&#x200B;**[!UICONTROL Being edited]**：
 
-   * 如果網頁表單是匯入封裝的執行個體上的新表單，則網頁表單會取得&#x200B;**[!UICONTROL Being edited]**&#x200B;狀態。
+  * 如果網頁表單是匯入封裝的執行個體上的新表單，則網頁表單會取得&#x200B;**[!UICONTROL Being edited]**&#x200B;狀態。
 
-   * 如果新執行個體上已存在網頁表單，則這是對現有表單的修改。 如果表單的舊版本是&#x200B;**[!UICONTROL Online]**，則舊版本會保持上線，直到表單的新版本在新執行個體上再次發佈[為](#publishing-a-form)為止。
+  * 如果新執行個體上已存在網頁表單，則這是對現有表單的修改。 如果表單的舊版本是&#x200B;**[!UICONTROL Online]**，則舊版本會保持上線，直到表單的新版本在新執行個體上再次發佈[為](#publishing-a-form)為止。
 
   >[!NOTE]
   >

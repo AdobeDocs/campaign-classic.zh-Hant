@@ -11,19 +11,21 @@ exl-id: cc1200fa-f6d8-4f41-aed1-d1a7f229447a
 TQID: https://experienceleague.adobe.com/Mv-2GGcnP%2D%2D%2D%2DL-D2h5DDz3StnT5rH4TlnQdxn9bdnY
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
 subfeature_v2:
   - id: a6eada7c-dc79-4b66-a7d3-206cf47dc9d8
+    internal-label: Marketing Resource Management
 source-git-commit: 48d000a7ceada7e027f27f436ef643b321a7695c
 workflow-type: tm+mt
-source-wordcount: 3750
+source-wordcount: '3752'
 ht-degree: 0%
-
 ---
-
 # 建立及管理設定檔{#creating-and-managing-tasks}
 
 
@@ -320,8 +322,8 @@ Adobe Campaign可讓您直接在應用程式中建立任務並管理其完整的
 
   您可以使用一系列連結的工作來定義完整的核准週期。 僅針對最後一個任務核取&#x200B;**[!UICONTROL Publish the marketing resource]**&#x200B;選項：所有任務都需要完成才能發佈資源。 此外，當您建立子行銷資源任務時，將會自動在子任務中選取資源。
 
-   * **透過資源**：如果您提交資源以供核准或核准，這些動作將不會影響工作。
-   * **透過工作**：如果工作中的&#x200B;**[!UICONTROL Publish the marketing resource]**&#x200B;選項已核取，則資源會在工作完成後自動核准和發佈（請參閱上文）。 如果未核取選項，則任務與資源不會互動：對一個專案執行動作不會影響另一個專案。
+  * **透過資源**：如果您提交資源以供核准或核准，這些動作將不會影響工作。
+  * **透過工作**：如果工作中的&#x200B;**[!UICONTROL Publish the marketing resource]**&#x200B;選項已核取，則資源會在工作完成後自動核准和發佈（請參閱上文）。 如果未核取選項，則任務與資源不會互動：對一個專案執行動作不會影響另一個專案。
 
 #### 設定行銷資源建立任務 {#configuring-a-marketing-resource-creation-task}
 
@@ -417,7 +419,7 @@ Adobe Campaign可讓您直接在應用程式中建立任務並管理其完整的
 
 ![](assets/s_ncs_user_task_dependencies_from_board.png)
 
-若為已分組的任務，Adobe Campaign會自動將父任務的結束日期指派給子任務，作為開始日期。 例如，如果&#x200B;**建立邀請**&#x200B;任務於10月15日3:30PM結束，**傳送邀請電子郵件**&#x200B;子任務將於10月15日3:30PM開始。
+若為已分組的任務，Adobe Campaign會自動將父任務的結束日期指派給子任務，作為開始日期。 舉例來說，如果&#x200B;**建立邀請**&#x200B;工作於10月15日下午3:30結束，**傳送邀請電子郵件**&#x200B;子工作將於10月15日下午3:30開始。
 
 此外，如果您延遲父系任務的結束，其部分子系任務可能會受到影響：這些是狀態為&#x200B;**[!UICONTROL Scheduled]**&#x200B;且開始日期早於父系任務新結束日期的子系任務。 任務的持續時間保持不變。 如果子任務的開始日期晚於父任務的新結束日期，則子任務不受影響。
 

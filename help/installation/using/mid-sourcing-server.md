@@ -3,7 +3,7 @@ product: campaign
 title: 在Campaign中安裝中間來源伺服器
 description: 本節詳細說明了Campaign中中間來源伺服器的安裝和設定
 feature: Installation, Instance Settings
-badge-v7-prem: label="僅限內部部署/混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="僅適用於內部部署和混合部署"
+badge-v7-prem: label="On-premise/hybrid only" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
@@ -12,11 +12,9 @@ feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 1084
+source-wordcount: '1072'
 ht-degree: 2%
-
 ---
-
 # 中間來源伺服器{#mid-sourcing-server}
 
 
@@ -141,9 +139,9 @@ ht-degree: 2%
 
 &#39;marketing_account_operator_name&#39;與中間來源執行個體中宣告的中間來源帳戶的內部名稱相關。
 
-&#39;affinity_name&#39;與指定給相似性的任意名稱相關。 此名稱必須是唯一的。 授權字元為`[a-z]` `[A-Z]` `[0-9]`。 其目的是宣告一組公用IP位址。
+&#39;affinity_name&#39;與指定給相似性的任意名稱相關。 此名稱必須是唯一的。 授權字元為`[a-z]`&#x200B;`[A-Z]`&#x200B;`[0-9]`。 其目的是宣告一組公用IP位址。
 
-&#39;affinity_group&#39;會與每個傳遞中使用的目標對應中所宣告的子相似性建立關聯。 如果沒有Sub-affinity，則會忽略最後包含&#39;.&#39;的部分。 授權字元為`[a-z]` `[A-Z]` `[0-9]`。
+&#39;affinity_group&#39;會與每個傳遞中使用的目標對應中所宣告的子相似性建立關聯。 如果沒有Sub-affinity，則會忽略最後包含&#39;.&#39;的部分。 授權字元為`[a-z]`&#x200B;`[A-Z]`&#x200B;`[0-9]`。
 
 您必須先停止再重新啟動伺服器，才能考慮修改。
 

@@ -3,7 +3,7 @@ product: campaign
 title: 一般匯入範例
 description: 深入瞭解您可以使用匯入作業執行的一般匯入
 feature: Data Management
-badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
@@ -11,21 +11,25 @@ exl-id: 4582b524-2b6d-484c-bace-29d2e69f60e9
 TQID: https://experienceleague.adobe.com/NkKTg-a9jjxPxMawe-IUgd9V99qaoxUwWaM3-h4aUf0
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
+    internal-label: Schemas
   - id: afa4204e-6d08-4e29-bc35-26aafb656d48
+    internal-label: Profiles and audiences
 subfeature_v2:
   - id: f529d0bd-1401-4c88-9833-43228cc1d40f
+    internal-label: Profiles
   - id: e739ee2b-6228-412e-878f-45de0791417d
+    internal-label: Use cases
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 1010
+source-wordcount: '1001'
 ht-degree: 55%
-
 ---
-
 # 一般匯入範例 {#import-operations-samples}
 
 
@@ -105,13 +109,13 @@ ht-degree: 55%
 
      **[!UICONTROL Tracking]**&#x200B;模式可讓您追蹤來源檔案中每個記錄的匯入詳細資料。 若要這麼做，請從首頁按一下&#x200B;**[!UICONTROL Profiles and Targets]**，然後按一下&#x200B;**[!UICONTROL Processes]**，選取相關的匯入，並查閱&#x200B;**[!UICONTROL General]**、**[!UICONTROL Journal]**&#x200B;和&#x200B;**[!UICONTROL Rejects]**&#x200B;索引標籤。
 
-      * 檢查匯入進度
+     * 檢查匯入進度
 
-        ![](assets/s_ncs_user_import_example07_01.png)
+       ![](assets/s_ncs_user_import_example07_01.png)
 
-      * 處理每條記錄的查看
+     * 處理每條記錄的查看
 
-        ![](assets/s_ncs_user_import_example07_02.png)
+       ![](assets/s_ncs_user_import_example07_02.png)
 
 ## 更新並插入收件者 {#example--update-and-insert-recipients}
 

@@ -5,21 +5,25 @@ exl-id: 8b13fe4d-d8d3-43b3-bbe4-c8c5574f585a
 TQID: https://experienceleague.adobe.com/RkgX2M0BnO5pjgI7oAp7NlycXY551manwFHhcA1LMjw
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 subfeature_v2:
   - id: a39dbcf0-89cb-4765-9bcb-cf9dfbe2875f
+    internal-label: Troubleshooting
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+    internal-label: Adobe Analytics integration
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 463
+source-wordcount: '463'
 ht-degree: 1%
-
 ---
-
 # IMS移轉後更新Campaign介面 {#impact-ims-migration}
 
 在您[將您的Campaign技術操作員移轉至Developer Console](ims-migration.md)且[移轉至IMS以進行一般使用者驗證](migrate-users-to-ims.md)後，最後一個步驟是啟用使用者介面和API限制，以移除原生驗證特有的選項和功能。 此更新自Campaign v7.4.1起可用。
@@ -114,10 +118,10 @@ ht-degree: 1%
 * 使用[合併選取的行選項](../../platform/using/updating-data.md#merge-data)來合併運運算元。
 
 * 更新運運算元的下列欄位：
-   * 名稱
-   * 密碼
-   * 標籤
-   * 電子郵件
+  * 名稱
+  * 密碼
+  * 標籤
+  * 電子郵件
 
 * [重設您的Campaign密碼](../../production/using/lost-password.md)
 

@@ -2,28 +2,32 @@
 product: campaign
 title: 分析結果
 description: 瞭解如何透過專屬的使用案例執行A/B測試
-badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: A/B Testing
 role: User
 exl-id: e6f39180-d161-4226-810a-10bb1c3682ca
 TQID: https://experienceleague.adobe.com/WeKPxg-eyHRxKWXK4LM0djXr-HlKkpH0FnW-utZoG10
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 feature_v2:
   - id: b631758a-142d-425f-b9aa-f756d85cb979
+    internal-label: Campaign Email Designer
   - id: c858a28b-ea19-49b0-8d48-828717fad89c
+    internal-label: Prepare and test messages
 subfeature_v2:
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
+    internal-label: A/B testing
   - id: e739ee2b-6228-412e-878f-45de0791417d
+    internal-label: Use cases
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 114
+source-wordcount: '105'
 ht-degree: 2%
-
 ---
-
 # AB測試：分析結果 {#step-8--analyzing-the-result}
 
 傳送測試傳送後，您可以檢查傳送給哪些收件者，以及是否已開啟這些收件者。

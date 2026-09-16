@@ -7,15 +7,14 @@ exl-id: 4cd67278-2623-4508-9a9f-9007c6a5f8ac
 TQID: https://experienceleague.adobe.com/w8b-2HEtYRMOd9yHFLtvS0vS2tdLDzuIakLfrqImsGo
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 198
+source-wordcount: '198'
 ht-degree: 11%
-
 ---
-
 # 列舉元素 {#enumeration--element}
 
 
@@ -55,34 +54,34 @@ ht-degree: 11%
 
   可用型別清單：
 
-   * 任何
-   * 紙匣
-   * blob
-   * 布林值
-   * 位元組
-   * CDATA
-   * 日期時間
-   * datetimetz
-   * datetimenotz
-   * 日期
-   * DOMDocument
-   * DOMElement
-   * 雙精度浮點數
-   * 列舉
-   * 浮點數
-   * html
-   * 64 位元整數
-   * 連結
-   * 長整數
-   * 備忘錄
-   * MNTOKEN
-   * 百分比
-   * 主要金鑰
-   * 短整數
-   * 字串
-   * 時間
-   * 時間範圍
-   * uuid
+  * 任何
+  * 分類箱
+  * blob
+  * 布林值
+  * 位元組
+  * CDATA
+  * 日期時間
+  * datetimetz
+  * datetimenotz
+  * 日期
+  * DOMDocument
+  * DOMElement
+  * 雙精度浮點數
+  * 列舉
+  * 浮點數
+  * html
+  * 64 位元整數
+  * 連結
+  * 長整數
+  * 備忘錄
+  * MNTOKEN
+  * 百分比
+  * 主要金鑰
+  * 短整數
+  * 字串
+  * 時間
+  * 時間範圍
+  * uuid
 
 * **預設（字串）**：預設值。 預設值也可以是列舉中定義的其中一個值。
 * **desc （字串）**：列舉描述。

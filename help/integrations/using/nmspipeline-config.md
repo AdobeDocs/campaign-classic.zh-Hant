@@ -3,16 +3,14 @@ product: campaign
 title: 管線選項NmsPipeline_Config
 description: 管線選項NmsPipeline_Config
 feature: Triggers
-badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: integrations
 content-type: reference
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '373'
 ht-degree: 0%
-
 ---
-
 
 # 管線選項NmsPipeline_Config {#nmspipeline_config}
 
@@ -78,7 +76,7 @@ ht-degree: 0%
 
 ## 如何設定管道選項 {#configure-pipeline-option}
 
-在「觸發器」陣列下新增或編輯Experience Cloud觸發器，請勿編輯其餘觸發器。
+在「觸發器」陣列下新增或編輯Experience Cloud觸發器；請勿編輯其餘觸發器。
 在此[網站](https://jsonlint.com/)的協助下，確定JSON有效。
 
 * &quot;name&quot;是觸發程式ID。 萬用字元「*」會攔截所有觸發器。

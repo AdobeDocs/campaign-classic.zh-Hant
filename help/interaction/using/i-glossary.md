@@ -10,16 +10,16 @@ exl-id: 9e199b7c-9307-4797-bf86-7940388555bc
 TQID: https://experienceleague.adobe.com/d6fevvmNur-4TC1KFM-09o68GnPFEM6S6SaFICwyCsw
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: b6fcaf36-3bc4-4604-94f3-81b5d3f41ecf
+    internal-label: Offer Management
 subfeature_v2: []
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 1109
+source-wordcount: '1109'
 ht-degree: 0%
-
 ---
-
 # Campaign整合字彙表{#i-glossary}
 
 
@@ -28,8 +28,8 @@ ht-degree: 0%
 
 * **環境**：包含優惠方案目錄和鉤點（優惠方案空間）的集合。 您需要透過目標維度建立一個環境。 有兩種型別的環境：
 
-   * **設計環境**：在其中建立優惠方案和/或定義型別規則的環境（將決定要呈現或不呈現給目標使用者的優惠方案的規則）。 此中也定義了優惠方案將定位的個人表格以及儲存所有優惠方案主張的表格。 **[!UICONTROL Design environment]**&#x200B;節點包含優惠方案空間子資料夾、預先定義的篩選器和優惠方案類別。 每個&#x200B;**[!UICONTROL Design environment]**&#x200B;都有一個對應的唯讀&#x200B;**[!UICONTROL Live environment]**，是從這個&#x200B;**[!UICONTROL Design environment]**&#x200B;產生。
-   * **即時環境**：連結至&#x200B;**[!UICONTROL Design environment]**&#x200B;的環境。 它包含唯讀優惠方案，其內容和資格已透過&#x200B;**[!UICONTROL Design environment]**&#x200B;核准。 它們將被選取以在網站上展示或插入郵件中。
+  * **設計環境**：在其中建立優惠方案和/或定義型別規則的環境（將決定要呈現或不呈現給目標使用者的優惠方案的規則）。 此中也定義了優惠方案將定位的個人表格以及儲存所有優惠方案主張的表格。 **[!UICONTROL Design environment]**&#x200B;節點包含優惠方案空間子資料夾、預先定義的篩選器和優惠方案類別。 每個&#x200B;**[!UICONTROL Design environment]**&#x200B;都有一個對應的唯讀&#x200B;**[!UICONTROL Live environment]**，是從這個&#x200B;**[!UICONTROL Design environment]**&#x200B;產生。
+  * **即時環境**：連結至&#x200B;**[!UICONTROL Design environment]**&#x200B;的環境。 它包含唯讀優惠方案，其內容和資格已透過&#x200B;**[!UICONTROL Design environment]**&#x200B;核准。 它們將被選取以在網站上展示或插入郵件中。
 
 * **優惠方案空間**：定義優惠方案公開位置的資料夾。 定義空間可讓您指定使用的管道、指定其是否可用在單一模式（預設為：僅適用於批次模式）、使用演算函式建立選件內容，以及指定顯示的選件選件。 空格是管道和優惠方案引擎之間的介面。
 
@@ -58,12 +58,12 @@ ht-degree: 0%
 * **套利**：選取將在環境中顯示的優惠方案（合格的優惠方案）。 套利原則會根據類別、優惠方案和內容優惠方案中定義的條件，依優先順序排列優惠方案。
 * **連絡人**：來自傳入互動的連絡人。 在引擎呼叫處理期間，聯絡人與目標維度相關聯。 有兩種連絡人型別：
 
-   * **[!UICONTROL Identified contact]** ：已在頻道上自願識別的連絡人。 在對外互動中，會自動識別聯絡人。
-   * **[!UICONTROL Anonymous contact]** ：未透過頻道自願訂閱，但可透過Cookie隱含識別的連絡人。 此術語僅用於傳入的互動。
+  * **[!UICONTROL Identified contact]** ：已在頻道上自願識別的連絡人。 在對外互動中，會自動識別聯絡人。
+  * **[!UICONTROL Anonymous contact]** ：未透過頻道自願訂閱，但可透過Cookie隱含識別的連絡人。 此術語僅用於傳入的互動。
 
-     >[!NOTE]
-     >
-     >未識別的匿名聯絡人會歸因於訪客目標維度。
+    >[!NOTE]
+    >
+    >未識別的匿名聯絡人會歸因於訪客目標維度。
 
 * **傳出互動**：從連絡人清單呼叫互動引擎（用於傳遞電子郵件、直接郵件等）。 相同的規則和程式會套用到每個連絡人。 這類互動通常以批次模式處理。
 * **傳入互動**：由頻道上連絡人的動作產生的傳入呼叫之後的互動。 這類互動通常以單一模式處理。
@@ -71,9 +71,9 @@ ht-degree: 0%
 * **單一模式**：一次處理單一連絡人。 此模式通常用於傳入互動和異動訊息。
 * **識別模式**：參考連絡人的狀態。
 
-   * **[!UICONTROL explicit]** ：在連絡人登入通道介面後，即可識別連絡人。
-   * **[!UICONTROL implicit]** ：連絡人已由Cookie識別（永久或工作階段）。 可將它處理為匿名或識別的連絡人。
-   * **[!UICONTROL anonymous]** ：無法識別連絡人。
+  * **[!UICONTROL explicit]** ：在連絡人登入通道介面後，即可識別連絡人。
+  * **[!UICONTROL implicit]** ：連絡人已由Cookie識別（永久或工作階段）。 可將它處理為匿名或識別的連絡人。
+  * **[!UICONTROL anonymous]** ：無法識別連絡人。
 
 * **符合資格的優惠**：優惠符合上游定義的限制，且可一致地提供給目標。
 * **簡報規則**：優惠方案環境中參考的型別規則，可讓您考慮主張歷程記錄來排除部分優惠方案。

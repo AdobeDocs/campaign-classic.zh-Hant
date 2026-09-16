@@ -9,25 +9,31 @@ exl-id: a9cd08b0-55c2-4405-9fb8-f0c623cd4ccb
 TQID: https://experienceleague.adobe.com/r3qtW9ZsCD85N9qAnN1EOje-VMhDoyPuqea2xZnBWLs
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: b12f6872-9271-4369-85e5-86969a0b99a2
+    internal-label: APIs
   - id: d5ef99fa-df0c-4153-bf94-105ad0724167
+    internal-label: Integrations
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
 subfeature_v2:
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+    internal-label: Adobe Analytics integration
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 2269
+source-wordcount: '2269'
 ht-degree: 0%
-
 ---
-
 # 移轉至公用雲端常見問題集{#dc-faq}
 
 
@@ -125,8 +131,8 @@ Adobe免除舊版資料中心的委任：Campaign Classic例項必須轉移至Pu
 * **我們用來標示通訊的委派子網域有何影響？**
 
   用於行銷通訊的子網域保持不變。 不過，根據實作，使用者端需要執行動作：
-   * 如果將子網域委派給Adobe （預設），Adobe會處理所有變更並確保順暢轉換。
-   * 若是CNAME設定（例外），使用者端需與Adobe協調實施變更。
+  * 如果將子網域委派給Adobe （預設），Adobe會處理所有變更並確保順暢轉換。
+  * 若是CNAME設定（例外），使用者端需與Adobe協調實施變更。
 
 ## 組態與連線能力影響
 
@@ -250,13 +256,13 @@ Adobe免除舊版資料中心的委任：Campaign Classic例項必須轉移至Pu
 
   資料中心之間的資料傳輸是停機期間的關鍵路徑。 資料以兩種方式儲存：
 
-   * 目前最重要的是資料庫
-   * 應用程式伺服器上的檔案（資料匯入和匯出）
+  * 目前最重要的是資料庫
+  * 應用程式伺服器上的檔案（資料匯入和匯出）
 
   縮減資料庫大小對於加快資料傳輸極為重要。 建議：
 
-   * 縮短歷史資料（傳遞記錄、追蹤記錄等）的保留時間
-   * 刪除其他表格（傳送、收件者、自訂表格）上的無用記錄
+  * 縮短歷史資料（傳遞記錄、追蹤記錄等）的保留時間
+  * 刪除其他表格（傳送、收件者、自訂表格）上的無用記錄
 
 * **移轉執行個體的預估停機時間是多少？**
 
@@ -274,11 +280,11 @@ Adobe免除舊版資料中心的委任：Campaign Classic例項必須轉移至Pu
 
   環境將依下列順序移轉：
 
-   1. 開發環境
-   1. 中繼環境
-   1. 生產環境
-   1. RT環境
-   1. 中間來源環境
+  1. 開發環境
+  1. 中繼環境
+  1. 生產環境
+  1. RT環境
+  1. 中間來源環境
 
 * **什麼是復原計畫？**
 

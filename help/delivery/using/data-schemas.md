@@ -2,32 +2,40 @@
 product: campaign
 title: 在Campaign中使用資料結構
 description: 瞭解如何在Campaign中使用資料結構描述
-badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Data Model
 role: User, Developer
 exl-id: 3e28bfee-0321-40f4-9ef6-1bdb5b25041b
 TQID: https://experienceleague.adobe.com/o90zid7-rdTsQVYd-PZZEWFhrBLiK-Yo7KhAHmzv2is
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
+    internal-label: Schemas
   - id: b631758a-142d-425f-b9aa-f756d85cb979
+    internal-label: Campaign Email Designer
   - id: c858a28b-ea19-49b0-8d48-828717fad89c
+    internal-label: Prepare and test messages
 subfeature_v2:
   - id: e95a583b-fcfa-4524-8666-46a29c828119
+    internal-label: Email messaging
   - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
+    internal-label: Email design
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
+    internal-label: A/B testing
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
+    internal-label: Manage deliverability
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 566
+source-wordcount: '557'
 ht-degree: 1%
-
 ---
-
 # 在Campaign中使用資料結構{#data-schemas}
 
 以下是有關在Adobe Campaign中使用資料結構描述的一些一般原則。

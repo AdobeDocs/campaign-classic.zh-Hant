@@ -10,18 +10,20 @@ exl-id: bc4329b4-d272-4d32-bdaa-290cb9912af4
 TQID: https://experienceleague.adobe.com/nUdM-iVzh7yI2Z3ZnFh5JK8FDZpmHAR1crzEb9S5xYg
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
+    internal-label: Schemas
 subfeature_v2:
   - id: a72a22e0-8c8d-4019-ba42-3f2644aa91a3
+    internal-label: Schema extension
   - id: cfc95e9b-b035-4403-a6a9-b27a8a053a37
+    internal-label: PI
 source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: 459
+source-wordcount: '459'
 ht-degree: 1%
-
 ---
-
 # srcschema元素 {#srcschema--element}
 
 
@@ -71,10 +73,10 @@ created (datetime)、createdBy-id (long)、desc (string)、entitySchema (string)
 * **資料庫（布林值）**：使用結構描述做為資料庫，而不是實體。 因此，由於「@ref」和「@template」屬性，此結構描述可能會被其他結構描述參考。
 * **mappingType （字串）**：
 
-   * &quot;sql&quot;：資料庫對應
-   * &quot;textFile&quot;：文字檔對應
-   * 「xmlFile」： XML格式文字檔案對應
-   * &quot;binaryFile&quot;：二進位檔案對應
+  * &quot;sql&quot;：資料庫對應
+  * &quot;textFile&quot;：文字檔對應
+  * 「xmlFile」： XML格式文字檔案對應
+  * &quot;binaryFile&quot;：二進位檔案對應
 
 * **modifiedBy-id (long)**：符合變更結構描述之運運算元的識別碼。
 * **名稱（字串）**：唯一的結構描述名稱。

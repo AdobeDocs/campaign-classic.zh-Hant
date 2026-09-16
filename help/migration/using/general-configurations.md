@@ -10,11 +10,9 @@ hide: true
 exl-id: 7aad0e49-8d9c-40c7-9d6a-42fee0ae5870
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '2546'
+source-wordcount: '2548'
 ht-degree: 1%
-
 ---
-
 # 一般設定{#general-configurations}
 
 本節詳細說明從v5.11或v6.02遷移時，在Adobe Campaign v7中執行的設定。
@@ -30,11 +28,11 @@ ht-degree: 1%
 
 在v6.02中，「多時區」模式僅適用於PostgreSQL資料庫引擎。 現在不論使用何種資料庫引擎，都提供此功能。 我們強烈建議您轉換基準為「多時區」基準。
 
-若要使用TIMESTAMP WITH TIMEZONE模式，您還需要將&#x200B;**-userTimestamptz:1**&#x200B;選項新增到升級後命令列。
+若要使用TIMESTAMP WITH TIMEZONE模式，您還需要將&#x200B;**-userTimestamptz：1**&#x200B;選項新增到升級後命令列。
 
 >[!IMPORTANT]
 >
->如果&#x200B;**-usetimestamptz:1**&#x200B;引數搭配不相容的資料庫引擎使用，您的資料庫將會損毀，您必須還原資料庫的備份，然後重新執行上述命令。
+>如果&#x200B;**-usetimestamptz：1**&#x200B;引數搭配不相容的資料庫引擎使用，您的資料庫將會損毀，您必須還原資料庫的備份，然後重新執行上述命令。
 
 >[!NOTE]
 >
@@ -500,7 +498,7 @@ $(XTK_INSTALL_DIR)/tomcat-X/lib/el-api.jar
 * nms:mobileOfferView
 * nms:paperOfferView
 
-### 選件內容 {#offer-content}
+### 產品建議內容 {#offer-content}
 
 在v7中，已移動選件內容。 在v6.02中，內容位於每個呈現結構描述(**nms:emailOfferView**)中。 在v7中，內容現在位於選件結構描述中。 因此，升級後內容將不會顯示在介面中。 升級後，您必須重新建立優惠方案內容，或開發指令碼，自動將內容從代表結構描述移至優惠方案結構描述。
 

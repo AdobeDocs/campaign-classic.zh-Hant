@@ -3,7 +3,7 @@ product: campaign
 title: 傳出頻道上的產品建議
 description: 傳出頻道上的產品建議
 feature: Interaction, Offers
-badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: interaction
 content-type: reference
 topic-tags: case-study
@@ -11,16 +11,16 @@ exl-id: 77fee343-09d1-4d60-be43-efe02953a70c
 TQID: https://experienceleague.adobe.com/WGoYaHNR13J47UVmKpHRSm9aw0T8ZrvHUl9zGXezQBU
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: b6fcaf36-3bc4-4604-94f3-81b5d3f41ecf
+    internal-label: Offer Management
 subfeature_v2: []
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 458
+source-wordcount: '449'
 ht-degree: 3%
-
 ---
-
 # 傳出頻道上的產品建議{#offers-on-an-outbound-channel}
 
 

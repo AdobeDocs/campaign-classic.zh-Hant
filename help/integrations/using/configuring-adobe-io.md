@@ -14,9 +14,7 @@ source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 3%
-
 ---
-
 # 為Adobe Experience Cloud觸發器配置Developer Console {#configuring-adobe-io}
 
 <!--
@@ -47,7 +45,7 @@ This integration only applies starting **Campaign Classic 20.2.4 and above, 19.1
 >
 > * 如果您已實作與Campaign的傳入整合，您必須移轉您的技術帳戶，如[本檔案](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank)所詳述。 現有的[服務帳戶(JWT)認證](oauth-technical-account.md)將持續運作到2025年1月27日。</br>
 >
-> * 如果您已實作傳出整合（例如Campaign-Analytics整合或Experience Cloud Triggers整合），則這些功能將持續運作，直到2025年1月27日為止。 不過，在該日期之前，您必須將您的Campaign環境升級至v7.4.1，並將您的技術帳戶移轉至oAuth。
+> * 如果您已實作輸出整合（例如Campaign-Analytics整合或Experience Cloud觸發器整合），則這些整合可繼續運作，直到2025年1月27日。 不過，在該日期之前，您必須將您的Campaign環境升級至v7.4.1，並將您的技術帳戶移轉至oAuth。
 
 若要繼續設定Adobe Analytics聯結器，請存取Adobe Developer主控台並建立您的OAuth伺服器對伺服器專案。
 

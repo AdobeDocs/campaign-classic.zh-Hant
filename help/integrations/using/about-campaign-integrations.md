@@ -3,7 +3,7 @@ product: campaign
 title: 關於 Campaign 整合
 description: 使用其他 Adobe 解決方案，並將其不同的功能與 Campaign 結合
 feature: Overview
-badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: integrations
 content-type: reference
 level: Intermediate, Experienced
@@ -12,24 +12,30 @@ exl-id: ceb584da-bc97-4b71-9499-59df5e6d10c3
 TQID: https://experienceleague.adobe.com/PUFoWjnwax8oHM3dH-FJDH7b26p4qNBMaJfm2qWGNz0
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: d5ef99fa-df0c-4153-bf94-105ad0724167
+    internal-label: Integrations
 subfeature_v2:
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+    internal-label: Adobe Analytics integration
   - id: df0d6518-6f49-46e2-b46e-3bcc513f553f
+    internal-label: Adobe Experience Manager integration
   - id: eb007b6d-6e57-46ab-9485-3f24d6102304
+    internal-label: Adobe Experience Platform integration
   - id: b1fd1501-3105-4d6b-b4d4-9af53126df75
+    internal-label: Adobe Target integration
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 740
+source-wordcount: '731'
 ht-degree: 5%
-
 ---
-
 # 開始使用Adobe Campaign整合 {#about-campaign-integrations}
 
 Adobe Experience Cloud是一組同級最佳的全方位整合式解決方案，建置於具有功能強大的通用解決方案和應用程式集的通用資料平台上。
@@ -45,15 +51,15 @@ Adobe Experience Cloud是一組同級最佳的全方位整合式解決方案，�
 
 ## 連結您的解決方案 {#working-with-experience-cloud-solutions}
 
-多個解決方案可連結至Adobe Experience Cloud。 **組織**&#x200B;是客戶實體，可讓管理員設定群組和使用者，以及控制Adobe Experience Cloud中的單一登入(SSO)。 組織的作用就像一間登入公司，涵蓋所有Experience Cloud產品和解決方案。 通常，組織就是您的公司名稱。 但是，一個公司可以有許多組織。
+多個解決方案可連結至Adobe Experience Cloud。 **組織**&#x200B;是客戶實體，可讓管理員設定群組和使用者，以及控制Adobe Experience Cloud中的單一登入(SSO)。 組織的作用就像一個登入公司，涵蓋所有Experience Cloud產品和解決方案。 通常，組織就是您的公司名稱。 但是，一個公司可以有許多組織。
 
 在[Adobe Experience Cloud說明入口網站](https://experienceleague.adobe.com/zh-hant/docs/core-services/interface/administration/organizations){_blank}中詳細說明組織管理和連結Adobe Experience Cloud帳戶。
 
 ## 身分和Cookie管理 {#id-and-cookies}
 
-安裝Adobe Campaign或整合現有安裝與Adobe Experience Cloud時，[Adobe Experience Cloud Identity服務](https://experienceleague.adobe.com/zh-hant/docs/id-service/using/home){_blank}已啟用。 此服務會取代Adobe Campaign追蹤功能時最先使用的永久Cookie。
+安裝Adobe Campaign或整合現有安裝與Adobe Experience Cloud時，[Adobe Experience Cloud Identity Service](https://experienceleague.adobe.com/zh-hant/docs/id-service/using/home){_blank}已啟用。 此服務會取代Adobe Campaign追蹤功能時最先使用的永久Cookie。
 
-Adobe Experience Cloud Identity服務（以下簡稱為「ID服務」）提供永續性的通用ID，可識別Experience Cloud所有解決方案的訪客。
+Adobe Experience Cloud Identity Service （以下簡稱為「ID服務」）提供永續性的通用ID，可識別Experience Cloud所有解決方案的訪客。
 
 系統會為產生追蹤記錄的收件者指派不重複訪客ID。 此ID將會儲存在&#x200B;**[!UICONTROL nms:trackingLogRcp]**&#x200B;資料表的&#x200B;**[!UICONTROL Requester UUID (@sourceID)]**&#x200B;欄位中。 **在訪客ID服務實作前存在的收件者追蹤資料將不再可用**。
 
@@ -93,14 +99,14 @@ Adobe Experience Cloud Identity服務（以下簡稱為「ID服務」）提供�
   </tr> 
   <tr> 
    <td> <strong>Assets</strong><br /> </td> 
-   <td> 設定此整合，將您的Adobe Experience Cloud資料庫中的資產插入到Adobe Campaign中建立的電子郵件和登入頁面中。<br /> <p><a href="../../integrations/using/configuring-access-to-assets.md#integrating-with-experience-cloud-assets">深入瞭解</a>Adobe Campaign - Assets整合</p><br /> </td> 
+   <td> 設定此整合，將您Adobe Experience Cloud資料庫中的資產插入到Adobe Campaign中建立的電子郵件和登入頁面中。<br /> <p><a href="../../integrations/using/configuring-access-to-assets.md#integrating-with-experience-cloud-assets">深入瞭解</a>Adobe Campaign - Assets整合</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>AEM Assets</strong><br /> </td> 
    <td> 設定此整合，將您<strong>AEM Assets</strong>資料庫的資產插入到Adobe Campaign中建立的電子郵件和登入頁面中。<br /> <p><a href="../../integrations/using/configuring-access-to-assets.md#integrating-with-aem-assets">深入瞭解</a>Adobe Campaign - AEM Assets整合。</p><br /> </td> 
   </tr> 
   <tr> 
-   <td> <strong>Experience Cloud Triggers</strong><br /> </td> 
+   <td> <strong>Experience Cloud觸發器</strong><br /> </td> 
    <td> 設定<strong>Adobe Experience Cloud Triggers</strong>與Adobe Campaign之間的整合，以針對Adobe Analytics在您網站上追蹤的特定行為，傳送個人化電子郵件給您的客戶。<br /> <p><a href="about-triggers.md">深入瞭解</a>Adobe Campaign - Experience Cloud觸發器整合。</p><br /> </td> 
   </tr> 
   <tr> 

@@ -2,16 +2,14 @@
 product: campaign
 title: 在電子郵件中插入條碼
 description: 在電子郵件中插入條碼
-badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Email Design
 role: User
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '524'
 ht-degree: 0%
-
 ---
-
 # 在電子郵件中插入條碼{#insert-a-barcode-in-an-email}
 
 條碼產生模組可讓您建立符合許多常見標準的幾種條碼，包括2D條碼。

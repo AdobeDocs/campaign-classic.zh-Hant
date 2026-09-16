@@ -10,17 +10,17 @@ exl-id: 7cc78214-92b8-4b1f-a307-96ec6af818d1
 TQID: https://experienceleague.adobe.com/TSJbp95dm2tysQBxN7E7JktnHmMJndR1hXVvKkLzRIg
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 1146
-ht-degree: 18%
-
+source-wordcount: '1169'
+ht-degree: 19%
 ---
-
 # 安裝和更新Campaign使用者端主控台{#installing-the-client-console}
 
 Campaign使用者端主控台是豐富的使用者端，可讓您連線至您的Campaign應用程式伺服器。

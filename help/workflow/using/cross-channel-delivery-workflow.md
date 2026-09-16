@@ -8,20 +8,23 @@ exl-id: dfd36d2c-44ff-49a9-80b4-09eaf3377072
 TQID: https://experienceleague.adobe.com/oW8I9CvGs9L0tubxdAtdD1kviQbgsC7rKTSeCIWSKy8
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2: []
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
 subfeature_v2:
   - id: ee25c34b-ea50-427b-9369-ba0a160f7d70
+    internal-label: Workflow HeatMap
   - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
+    internal-label: Execution activities
   - id: d1110311-2ca4-442b-be37-088a6db845ee
+    internal-label: Data Management activities
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 683
+source-wordcount: '683'
 ht-degree: 3%
-
 ---
-
 # 跨頻道傳遞工作流程{#cross-channel-delivery-workflow}
 
 
@@ -123,7 +126,7 @@ ht-degree: 3%
 1. 在工作流程中按兩下傳送活動以進行編輯。 如需建立電子郵件和簡訊的詳細資訊，請參閱[電子郵件頻道](../../delivery/using/about-email-channel.md)和[簡訊頻道](../../delivery/using/sms-channel.md)。
 1. 連按兩下&#x200B;**[!UICONTROL List update]**&#x200B;活動並選取&#x200B;**[!UICONTROL Generate an outbound transition]**&#x200B;選項。
 
-   然後，您可以將產生的收件者從Adobe Campaign匯出至Adobe Experience Cloud。 例如，您可以將&#x200B;**[!UICONTROL Update shared audience]**&#x200B;活動新增至工作流程，以在Adobe Target中使用對象。 如需詳細資訊，請參閱[匯出對象](../../integrations/using/importing-and-exporting-audiences.md#exporting-an-audience)。
+   接著，您可以將產生的收件者從Adobe Campaign匯出至Adobe Experience Cloud。 例如，您可以將&#x200B;**[!UICONTROL Update shared audience]**&#x200B;活動新增至工作流程，以在Adobe Target中使用對象。 如需詳細資訊，請參閱[匯出對象](../../integrations/using/importing-and-exporting-audiences.md#exporting-an-audience)。
 
 1. 按一下動作列中的&#x200B;**開始**&#x200B;按鈕以執行工作流程。
 

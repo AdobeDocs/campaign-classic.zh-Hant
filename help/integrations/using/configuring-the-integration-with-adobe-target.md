@@ -10,23 +10,29 @@ exl-id: ae8c680f-52a6-4d00-91cd-44d1c3807546
 TQID: https://experienceleague.adobe.com/k6TljRgymSefOITPaogJdR7HOrl1BnnZm9jbkemrcyg
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
   - id: d5ef99fa-df0c-4153-bf94-105ad0724167
+    internal-label: Integrations
 subfeature_v2:
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+    internal-label: Adobe Analytics integration
   - id: df0d6518-6f49-46e2-b46e-3bcc513f553f
+    internal-label: Adobe Experience Manager integration
   - id: eb007b6d-6e57-46ab-9485-3f24d6102304
+    internal-label: Adobe Experience Platform integration
   - id: b1fd1501-3105-4d6b-b4d4-9af53126df75
+    internal-label: Adobe Target integration
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 198
+source-wordcount: '198'
 ht-degree: 2%
-
 ---
-
 # 設定與Adobe Target的整合{#configuring-the-integration-with-adobe-target}
 
 
@@ -47,7 +53,7 @@ ht-degree: 2%
 
    此套件可讓您透過Digital Asset Manager存取共用資產。
 
-1. 啟用透過IMS的連線（Adobe ID連線服務），以在您的電子郵件中使用透過Adobe Experience Cloud共用的影像。 [了解更多](../../integrations/using/about-adobe-id.md)
+1. 啟用透過IMS （Adobe ID連線服務）的連線，以在您的電子郵件中使用透過Adobe Experience Cloud共用的影像。 [了解更多](../../integrations/using/about-adobe-id.md)
 1. 瀏覽至&#x200B;**[!UICONTROL Administration > Platform > Options]**&#x200B;以設定Adobe Target的伺服器和組織（租使用者）選項：
 
    ![](assets/tar_options.png)

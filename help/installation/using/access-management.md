@@ -7,20 +7,23 @@ exl-id: af88e4e7-0ee3-48b4-9db4-7dd390d9d46a
 TQID: https://experienceleague.adobe.com/dbC74X04V5SFr7fWOl1b0-Br-x-jjHFNvMSX9Y6M-JQ
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 377
+source-wordcount: '377'
 ht-degree: 8%
-
 ---
-
 # 存取權管理 {#access-management}
 
 
@@ -35,11 +38,11 @@ WebApp運運算元是立即可用的管理員。 若要改善安全性，請遵�
 
 * 如果使用多品牌（或多地理）執行個體，您可能會想要將Web應用程式存取權分割至不同的收件者資料夾。 若要這麼做：
 
-   1. 複製webApp運運算元
+  1. 複製webApp運運算元
 
-   1. 輸入每個重複專案的名稱。 例如：webapp_brand、webapp_brand2等。
+  1. 輸入每個重複專案的名稱。 例如：webapp_brand、webapp_brand2等。
 
-   1. 複製Web應用程式範本讓每個品牌擁有一個範本，並選取「使用特定帳戶」來編輯屬性以變更運運算元。  在[本頁](../../web/using/defining-web-forms-properties.md)中瞭解更多。
+  1. 複製Web應用程式範本讓每個品牌擁有一個範本，並選取「使用特定帳戶」來編輯屬性以變更運運算元。  在[本頁](../../web/using/defining-web-forms-properties.md)中瞭解更多。
 
 ## 安全性群組與管理員操作員
 

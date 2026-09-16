@@ -10,18 +10,19 @@ exl-id: 59d0277a-7588-4504-94e3-50f87b60da8a
 TQID: https://experienceleague.adobe.com/CogezJk2Xg8Pv7d7upxrVWzOAWMkPS475yPeMJ6Uw-E
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 854
+source-wordcount: '854'
 ht-degree: 1%
-
 ---
-
 # 設定Azure Synapse的存取權 {#configure-access-to-azure-synapse}
 
 
@@ -221,23 +222,23 @@ ht-degree: 1%
 
    * 對於標準驗證，您必須指定：
 
-      * **[!UICONTROL Server]**： Azure Synapse伺服器的URL
+     * **[!UICONTROL Server]**： Azure Synapse伺服器的URL
 
-      * **[!UICONTROL Account]**：使用者名稱
+     * **[!UICONTROL Account]**：使用者名稱
 
-      * **[!UICONTROL Password]**：使用者帳戶密碼
+     * **[!UICONTROL Password]**：使用者帳戶密碼
 
-      * **[!UICONTROL Database]**：資料庫的名稱
+     * **[!UICONTROL Database]**：資料庫的名稱
 
      ![](assets/azure_3.png)
 
    * 對於系統指派的Managed身分驗證，您必須指定：
 
-      * **[!UICONTROL Server]**： Azure Synapse伺服器的URL
+     * **[!UICONTROL Server]**： Azure Synapse伺服器的URL
 
-      * **[!UICONTROL Database]**：資料庫的名稱
+     * **[!UICONTROL Database]**：資料庫的名稱
 
-      * **[!UICONTROL Options]**：新增下列語法`Authentication=ActiveDirectoryMsi`
+     * **[!UICONTROL Options]**：新增下列語法`Authentication=ActiveDirectoryMsi`
 
      ![](assets/azure_4.png)
 

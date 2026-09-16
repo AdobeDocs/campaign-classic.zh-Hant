@@ -7,17 +7,18 @@ exl-id: 60f15ae5-b2bd-48f9-aa45-8f795a3071aa
 TQID: https://experienceleague.adobe.com/MbBmc-H9eZfmqWy-vZb6dd-m-l0G-UxtY-HAboNURjc
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
+    internal-label: Schemas
 subfeature_v2:
   - id: cfc95e9b-b035-4403-a6a9-b27a8a053a37
+    internal-label: PI
 source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: 2035
+source-wordcount: '2035'
 ht-degree: 1%
-
 ---
-
 # 元素元素 {#element--element}
 
 
@@ -65,11 +66,11 @@ Adobe Campaign中有四種型別的`<element>`元素：
 
   可存取的值包括：
 
-   * &quot;none&quot;：僅調解。 這表示Adobe Campaign將會復原元素，而不會更新元素，如果元素不存在則會產生錯誤。
-   * &quot;insertOrUpdate&quot;：以插入更新。 這表示Adobe Campaign將更新元素，或如果元素不存在則建立元素。
-   * &quot;insert&quot;： insertion. 這表示Adobe Campaign會插入元素，而不檢查元素是否存在。
-   * &quot;update&quot;：更新。 這表示Adobe Campaign將更新元素，如果元素不存在則會產生錯誤。
-   * &quot;delete&quot;：刪除。 這表示Adobe Campaign將復原和刪除元素。
+  * &quot;none&quot;：僅調解。 這表示Adobe Campaign將會復原元素，而不會更新元素，如果元素不存在則會產生錯誤。
+  * &quot;insertOrUpdate&quot;：以插入更新。 這表示Adobe Campaign將更新元素，或如果元素不存在則建立元素。
+  * &quot;insert&quot;： insertion. 這表示Adobe Campaign會插入元素，而不檢查元素是否存在。
+  * &quot;update&quot;：更新。 這表示Adobe Campaign將更新元素，如果元素不存在則會產生錯誤。
+  * &quot;delete&quot;：刪除。 這表示Adobe Campaign將復原和刪除元素。
 
 * **進階（布林值）**：啟動此選項時(@advanced=&quot;true&quot;)，它可讓您隱藏可用欄位清單上的屬性，以設定表單中的清單。
 * **彙總（字串）**：可讓您透過其他結構描述複製`<element>`的定義。 此屬性會收到「名稱空間:name」形式的結構描述宣告。
@@ -77,14 +78,14 @@ Adobe Campaign中有四種型別的`<element>`元素：
 * **autopk （布林值）**：如果已啟動此選項(autopk=&quot;true&quot;)，將自動定義唯一金鑰。 此選項只能用於結構描述的主要元素。 警告，Adobe Campaign僅保證產生的索引鍵是唯一的。 不保證索引鍵值為連續和累加。
 * **dataPolicy （字串）**：可讓您針對SQL欄位中允許的值指定核准限制。 此屬性的值為：
 
-   * &quot;none&quot;：沒有值
-   * &quot;smartCase&quot;：第一字母大寫
-   * &quot;lowerCase&quot;：全部小寫
-   * &quot;upperCase&quot;：全部大寫
-   * &quot;email&quot;：電子郵件地址
-   * &quot;phone&quot;：電話號碼
-   * &quot;identifier&quot;：識別碼名稱
-   * &quot;resIdentifier&quot;：檔案名稱
+  * &quot;none&quot;：沒有值
+  * &quot;smartCase&quot;：第一字母大寫
+  * &quot;lowerCase&quot;：全部小寫
+  * &quot;upperCase&quot;：全部大寫
+  * &quot;email&quot;：電子郵件地址
+  * &quot;phone&quot;：電話號碼
+  * &quot;identifier&quot;：識別碼名稱
+  * &quot;resIdentifier&quot;：檔案名稱
 
 * **dbEnum （字串）**：接收「已關閉」列舉的內部名稱。 列舉值必須在`<srcschema>`中定義。
 * **defOnDuplicate （布林值）**：如果此屬性已啟用，則在複製記錄時，預設值（在@default中定義）會自動重新套用至記錄。
@@ -97,13 +98,13 @@ Adobe Campaign中有四種型別的`<element>`元素：
 * **externalJoin （布林值）**： &quot;link&quot;型別專案中的外部聯結。
 * **功能（字串）**：定義特性欄位：這些欄位是用來擴充現有表格中的資料，但儲存於附件表格中。 接受的值包括：
 
-   * &quot;shared&quot;：內容會根據資料型別儲存在共用表格中
-   * &quot;dedicated&quot;：內容會儲存在專用表格中
+  * &quot;shared&quot;：內容會根據資料型別儲存在共用表格中
+  * &quot;dedicated&quot;：內容會儲存在專用表格中
 
   SQL特性表格是根據特性型別自動建置：
 
-   * 專用： `Ft_[name_of_the_schema_containing_the_characteristic]_[name_of_the_characteristic]`
-   * 已共用： `Ft_[type_of_key_of_the_schema_containing_the_characteristic]_[type_of_the_characteristic]`
+  * 專用： `Ft_[name_of_the_schema_containing_the_characteristic]_[name_of_the_characteristic]`
+  * 已共用： `Ft_[type_of_key_of_the_schema_containing_the_characteristic]_[type_of_the_characteristic]`
 
   特性欄位有兩種型別：簡單欄位（單一值授權於特性）以及多選欄位（特性連結至可能包含數個值的收集要素）。
 
@@ -120,11 +121,11 @@ Adobe Campaign中有四種型別的`<element>`元素：
 
   可存取的值包括：
 
-   * &quot;define&quot;：如果透過連結參照，Adobe Campaign不會刪除實體
-   * &quot;normal&quot;：刪除來源出現位置會初始化目標出現位置上連結的索引鍵（預設模式），此型別的完整性會初始化所有外來索引鍵
-   * &quot;own&quot;：刪除來源事件會觸發目標事件的刪除
-   * &quot;owncopy&quot;：類似於&quot;own&quot; （若刪除）或重複發生次數（若重複）
-   * &quot;neutral&quot;：不執行任何動作
+  * &quot;define&quot;：如果透過連結參照，Adobe Campaign不會刪除實體
+  * &quot;normal&quot;：刪除來源出現位置會初始化目標出現位置上連結的索引鍵（預設模式），此型別的完整性會初始化所有外來索引鍵
+  * &quot;own&quot;：刪除來源事件會觸發目標事件的刪除
+  * &quot;owncopy&quot;：類似於&quot;own&quot; （若刪除）或重複發生次數（若重複）
+  * &quot;neutral&quot;：不執行任何動作
 
 * **標籤（字串）**：元素標籤。
 * **labelSingular （字串）**：在介面的某些部分使用的元素標籤（單一形式）。
@@ -134,10 +135,10 @@ Adobe Campaign中有四種型別的`<element>`元素：
 
   當結構描述寫入資料庫時，Adobe Campaign會自動將字首新增到欄位名稱中。
 
-   * &quot;i&quot;： &#39;integer&#39;型別的前置詞。
-   * &quot;d&quot;： &#39;double&#39;型別的前置詞。
-   * 「s」：字元字串型別的前置詞。
-   * &quot;ts&quot;： &#39;date&#39;型別的前置詞。
+  * &quot;i&quot;： &#39;integer&#39;型別的前置詞。
+  * &quot;d&quot;： &#39;double&#39;型別的前置詞。
+  * 「s」：字元字串型別的前置詞。
+  * &quot;ts&quot;： &#39;date&#39;型別的前置詞。
 
   若要以自主方式定義表格名稱，您必須在主要結構描述元素的定義中使用「@sqltable」屬性。
 
@@ -146,9 +147,9 @@ Adobe Campaign中有四種型別的`<element>`元素：
 * **pkSequence （字串）**：接收要用於計算自動增量金鑰的序列名稱。 只有在架構的根元素上定義了自動增量索引鍵時，才能使用此屬性。
 * **pkgStatus （字串）**：在套件匯出期間，將會考量值作為這個屬性值的函式：
 
-   * &quot;always&quot;：元素將永遠存在
-   * &quot;never&quot;：元素絕不會出現
-   * &quot;default (or nothing)&quot;：除非元素是預設元素，或不是內部欄位且與其他執行個體不相容，否則會匯出元素
+  * &quot;always&quot;：元素將永遠存在
+  * &quot;never&quot;：元素絕不會出現
+  * &quot;default (or nothing)&quot;：除非元素是預設元素，或不是內部欄位且與其他執行個體不相容，否則會匯出元素
 
 * **ref （字串）**：此屬性會定義由數個結構描述共用之>element>元素的參考（定義分解）。 定義不會複製到目前的結構描述中。
 * **必要（布林值）**：如果此屬性已啟用(@required=&quot;true&quot;)，介面中會反白顯示欄位。 欄位的標籤在表單中將為紅色。
@@ -157,8 +158,8 @@ Adobe Campaign中有四種型別的`<element>`元素：
 
   可能的值包括：
 
-   * &quot;single&quot; ：簡單的1-1型別連結
-   * &quot;unbound&quot;： 1-N型別集合連結
+  * &quot;single&quot; ：簡單的1-1型別連結
+  * &quot;unbound&quot;： 1-N型別集合連結
 
   根據預設，如果在建立連結期間未指定屬性，基數將為1-N。
 
@@ -181,32 +182,32 @@ Adobe Campaign中有四種型別的`<element>`元素：
 
   可用型別清單：
 
-   * 任何
-   * 紙匣
-   * blob
-   * 布林值
-   * 位元組
-   * CDATA
-   * 日期時間
-   * datetimetz
-   * datetimenotz
-   * 日期
-   * 雙精度浮點數
-   * 列舉
-   * 浮點數
-   * html
-   * 64 位元整數
-   * 連結
-   * 長整數
-   * 備忘錄
-   * MNTOKEN
-   * 百分比
-   * 主要金鑰
-   * 短整數
-   * 字串
-   * 時間
-   * 時間範圍
-   * uuid
+  * 任何
+  * 分類箱
+  * blob
+  * 布林值
+  * 位元組
+  * CDATA
+  * 日期時間
+  * datetimetz
+  * datetimenotz
+  * 日期
+  * 雙精度浮點數
+  * 列舉
+  * 浮點數
+  * html
+  * 64 位元整數
+  * 連結
+  * 長整數
+  * 備忘錄
+  * MNTOKEN
+  * 百分比
+  * 主要金鑰
+  * 短整數
+  * 字串
+  * 時間
+  * 時間範圍
+  * uuid
 
 * **未繫結（布林值）**：如果啟動屬性(unbound=&quot;true&quot;)，連結會宣告為1-N基數的集合元素。
 * **userEnum （字串）**：接收「開啟」列舉的內部名稱。 列舉值可由使用者在介面中定義。

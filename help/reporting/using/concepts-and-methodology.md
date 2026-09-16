@@ -10,9 +10,7 @@ source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
 source-wordcount: '1510'
 ht-degree: 1%
-
 ---
-
 # 多維度資料集的最佳作法{#concepts-and-methodology}
 
 

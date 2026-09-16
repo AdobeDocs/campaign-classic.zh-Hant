@@ -11,17 +11,18 @@ exl-id: d666bc0b-596a-4908-9364-7df5bb8d68d0
 TQID: https://experienceleague.adobe.com/FBbSwRfACqdgT1S9aXlDvR4tqqBOuv1BnMYqASi4OoQ
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 subfeature_v2:
   - id: eff19c99-440a-4318-b319-444edc4d8d8f
+    internal-label: Upgrade
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 323
+source-wordcount: '323'
 ht-degree: 2%
-
 ---
-
 # 先決條件{#before-starting-migration}
 
 
@@ -43,16 +44,16 @@ ht-degree: 2%
 * 在&#x200B;**獨立平台** （單一電腦模式）的情況下，應用程式會完整移轉。
 * 在&#x200B;**標準平台** （企業）的情況下，移轉步驟如下：
 
-   1. 移轉行銷伺服器。
-   1. 移轉郵件伺服器(mta)。
-   1. 移轉重新導向與追蹤伺服器(Apache / IIS)。
+  1. 移轉行銷伺服器。
+  1. 移轉郵件伺服器(mta)。
+  1. 移轉重新導向與追蹤伺服器(Apache / IIS)。
 
 * 在&#x200B;**雲端傳訊平台**&#x200B;中，執行伺服器是在Adobe Campaign上託管。 請聯絡Adobe Campaign協調不同伺服器之間的移轉。
 * 在&#x200B;**Power Booster或Power Cluster平台**&#x200B;的情況下，移轉步驟如下：
 
-   1. 移轉重新導向與追蹤伺服器(Apache / IIS)。
-   1. 移轉Power Booster/Cluster伺服器。
-   1. 移轉行銷伺服器。
+  1. 移轉重新導向與追蹤伺服器(Apache / IIS)。
+  1. 移轉Power Booster/Cluster伺服器。
+  1. 移轉行銷伺服器。
 
 ## 使用者密碼 {#user-passwords}
 

@@ -9,20 +9,24 @@ exl-id: 6db8a653-b649-402c-8814-24826edadba7
 TQID: https://experienceleague.adobe.com/gZ3arUya5UYcZckqtlDObZTA7laUmVttTDHxgOb97vE
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: d5ef99fa-df0c-4153-bf94-105ad0724167
+    internal-label: Integrations
 subfeature_v2:
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+    internal-label: Adobe Analytics integration
   - id: df0d6518-6f49-46e2-b46e-3bcc513f553f
+    internal-label: Adobe Experience Manager integration
   - id: eb007b6d-6e57-46ab-9485-3f24d6102304
+    internal-label: Adobe Experience Platform integration
   - id: b1fd1501-3105-4d6b-b4d4-9af53126df75
+    internal-label: Adobe Target integration
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 322
+source-wordcount: '322'
 ht-degree: 0%
-
 ---
-
 # 將Adobe Experience Platform區段擷取至Campaign {#destinations}
 
 
@@ -45,7 +49,7 @@ ht-degree: 0%
 
 將Campaign Classic設定為目的地後，您需要建立專用的工作流程，以匯入Adobe Experience Platform已匯出的檔案。
 
-若要這麼做，您必須新增及設定&#x200B;**[!UICONTROL File transfer]**&#x200B;活動。 有關如何設定此活動的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=zh-Hant){target="_blank"}。
+若要這麼做，您必須新增及設定&#x200B;**[!UICONTROL File transfer]**&#x200B;活動。 有關如何設定此活動的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}。
 
 ![](assets/rtcdp-file-transfer.png)
 

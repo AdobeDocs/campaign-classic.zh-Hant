@@ -10,17 +10,17 @@ exl-id: 4df126fa-4a6e-46a7-af6e-1e2e97f0072e
 TQID: https://experienceleague.adobe.com/qg59AtZmUGDO0bLwykBdMxL9pEUDwsyxn98faauXCdc
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2: []
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 844
+source-wordcount: '844'
 ht-degree: 3%
-
 ---
-
 # 標準部署{#standard-deployment}
 
 
@@ -59,8 +59,8 @@ LAN中的應用程式伺服器為一般使用者提供服務，並執行所有�
 * 可透過POP3存取的彈回信箱，
 * 建立兩個DNS別名：
 
-   * 第一個公開給大眾用於追蹤和指向虛擬IP位址上的負載平衡器(VIP)，然後將其分發到兩個前端伺服器，
-   * 第二個透過主控台向內部使用者公開，以存取並指向相同的應用程式伺服器。
+  * 第一個公開給大眾用於追蹤和指向虛擬IP位址上的負載平衡器(VIP)，然後將其分發到兩個前端伺服器，
+  * 第二個透過主控台向內部使用者公開，以存取並指向相同的應用程式伺服器。
 
 * 防火牆已設定為開啟STMP (25)、DNS (53)、HTTP (80)、HTTPS (443)、SQL （1521 for Oracle、5432 for PostgreSQL等） 連線埠。 如需進一步資訊，請參閱區段[資料庫存取](../../installation/using/network-configuration.md#database-access)。
 

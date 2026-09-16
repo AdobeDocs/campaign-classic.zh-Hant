@@ -9,24 +9,31 @@ exl-id: d0ed7be7-3147-4cb8-9ce7-ea51602e9048
 TQID: https://experienceleague.adobe.com/0x1K997AEHhX-ozmIJH5I6NZPb388PKFkrXaK-EgoTY
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
   - id: b631758a-142d-425f-b9aa-f756d85cb979
+    internal-label: Campaign Email Designer
   - id: c858a28b-ea19-49b0-8d48-828717fad89c
+    internal-label: Prepare and test messages
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 subfeature_v2:
   - id: e95a583b-fcfa-4524-8666-46a29c828119
+    internal-label: Email messaging
   - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
+    internal-label: Email design
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
+    internal-label: A/B testing
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
+    internal-label: Manage deliverability
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 1763
-ht-degree: 24%
-
+source-wordcount: '1773'
+ht-degree: 25%
 ---
-
 # 定義目標母體 {#defining-the-target-population}
 
 對於每個傳送，您可以定義幾種目標母體：
@@ -150,12 +157,12 @@ ht-degree: 24%
 
   例如：
 
-   * 電子報或電子檔案傳遞的傳遞。 若資料沒有原生重複專案，則某些情況下不會排除重複專案。 使用相同電子郵件地址訂閱的一對夫婦可能會收到兩則特定的個人化電子郵件訊息：一則以姓名傳送給每個人。 在此情況下，可取消選取此選項。
-   * 行銷活動的傳遞：重複排除是避免傳送太多訊息給相同收件者的基本條件。 在此情況下，可以選取此選項。
+  * 電子報或電子檔案傳遞的傳遞。 若資料沒有原生重複專案，則某些情況下不會排除重複專案。 使用相同電子郵件地址訂閱的一對夫婦可能會收到兩則特定的個人化電子郵件訊息：一則以姓名傳送給每個人。 在此情況下，可取消選取此選項。
+  * 行銷活動的傳遞：重複排除是避免傳送太多訊息給相同收件者的基本條件。 在此情況下，可以選取此選項。
 
-     如果取消選取此選項，您可以存取其他選項： **[!UICONTROL Keep duplicate records (same identifier)]**。 它可讓您授權傳送多筆訊息給符合數個鎖定目標的收件者。
+    如果取消選取此選項，您可以存取其他選項： **[!UICONTROL Keep duplicate records (same identifier)]**。 它可讓您授權傳送多筆訊息給符合數個鎖定目標的收件者。
 
-     ![](assets/s_ncs_user_wizard_email02j.png)
+    ![](assets/s_ncs_user_wizard_email02j.png)
 
 * **[!UICONTROL Exclude recipients who no longer want to be contacted]** ，即電子郵件地址位於封鎖清單上的收件者 (「選擇退出」)。 為了遵守電子行銷的職業道德和電子商務的相關法律，必須保持選取此選項。
 * **[!UICONTROL Exclude quarantined recipients]**. 此選項可讓您從目標排除位址未回應的任何設定檔。 我們強烈建議維持選取此選項。

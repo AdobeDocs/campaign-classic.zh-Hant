@@ -8,18 +8,20 @@ exl-id: d345ba62-c2fb-43df-a2a1-e9e4292d301a
 TQID: https://experienceleague.adobe.com/dCnvgLZ-5ST-VJqWLXZ2c5XxXqXUxO1G78WnrCFyIqA
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2: []
 subfeature_v2:
   - id: ee25c34b-ea50-427b-9369-ba0a160f7d70
+    internal-label: Workflow HeatMap
   - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
+    internal-label: Execution activities
   - id: d1110311-2ca4-442b-be37-088a6db845ee
+    internal-label: Data Management activities
 source-git-commit: c35995a47788db080636c66827a4bd6dc98806cf
 workflow-type: tm+mt
-source-wordcount: 1187
+source-wordcount: '1187'
 ht-degree: 1%
-
 ---
-
 # 開始工作流程 {#starting-a-workflow}
 
 
@@ -75,14 +77,14 @@ ht-degree: 1%
   **[!UICONTROL Start / Pause / Stop / Restart]**&#x200B;動作也可透過工具列中的執行圖示使用。 如需詳細資訊，請參閱本[區段](../../campaign/using/marketing-campaign-deliveries.md#creating-a-targeting-workflow)。
 
   請注意，**重新啟動**&#x200B;動作不會清除與&#x200B;**執行**、**停止**&#x200B;和&#x200B;**開始**&#x200B;動作相較的工作流程執行個體變數（執行個體變數會在啟動動作時清除）。 重新啟動工作流程時，執行個體變數仍可與保留值搭配使用。 若要清除這些專案，您可以：
-   * 執行&#x200B;**停止**&#x200B;和&#x200B;**啟動**&#x200B;動作。
-   * 在工作流程執行結束時，新增以下javascript程式碼：
+  * 執行&#x200B;**停止**&#x200B;和&#x200B;**啟動**&#x200B;動作。
+  * 在工作流程執行結束時，新增以下javascript程式碼：
 
-     ```
-     var wkf = xtk.workflow.load(instance.id)
-     wkf.variables='<variables/>'
-     wkf.save()
-     ```
+    ```
+    var wkf = xtk.workflow.load(instance.id)
+    wkf.variables='<variables/>'
+    wkf.save()
+    ```
 
 * **[!UICONTROL Purge history]**
 

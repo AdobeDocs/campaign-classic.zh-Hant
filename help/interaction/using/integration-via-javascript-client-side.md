@@ -10,18 +10,19 @@ exl-id: a9842e59-120c-4a35-abdf-6540a0bbdd6d
 TQID: https://experienceleague.adobe.com/o78NLFSbsXqQgJQEU5KSN5PkheQHtHlPh2KdB0RBINA
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 feature_v2:
   - id: b6fcaf36-3bc4-4604-94f3-81b5d3f41ecf
+    internal-label: Offer Management
 subfeature_v2: []
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 1139
+source-wordcount: '1139'
 ht-degree: 2%
-
 ---
-
 # 透過 JavaScript 進行整合 (用戶端){#integration-via-javascript-client-side}
 
 
@@ -61,7 +62,7 @@ Adobe建議使用JavaScript整合方法。
    HTML頁面必須包含
 
    元素的@id屬性，其值為已建立之選件空間（「i_internal名稱空間」）的內部名稱。 選件將會插入此
-元素。
+   元素。
 
    在我們的範例中，@id屬性會收到「i_SPC12」值，其中「SPC12」是先前建立之優惠空間的內部名稱：
 

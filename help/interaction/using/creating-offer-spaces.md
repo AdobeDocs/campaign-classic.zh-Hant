@@ -10,16 +10,16 @@ exl-id: bdda98f7-a083-4f3b-b691-c28ec79af780
 TQID: https://experienceleague.adobe.com/sfD2AC1pBRsuvD-SScCQRjB1oL5ok55ZOEaoGuLhzmQ
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: b6fcaf36-3bc4-4604-94f3-81b5d3f41ecf
+    internal-label: Offer Management
 subfeature_v2: []
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 987
-ht-degree: 0%
-
+source-wordcount: '999'
+ht-degree: 2%
 ---
-
 # 建立優惠方案空間{#creating-offer-spaces}
 
 

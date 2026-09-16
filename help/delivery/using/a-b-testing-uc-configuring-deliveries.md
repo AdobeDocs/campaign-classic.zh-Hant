@@ -2,25 +2,28 @@
 product: campaign
 title: 設定傳遞
 description: 瞭解如何透過專屬的使用案例執行A/B測試
-badge-v8: label="也適用於v8" type="Positive" tooltip="亦適用於Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: A/B Testing
 exl-id: 809de30b-7d08-40de-bf3e-dc80d62eae80
 TQID: https://experienceleague.adobe.com/7fr4R6dly8-CJh9XYRpAwus1-AUJaz496LOPrWebt0k
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: b631758a-142d-425f-b9aa-f756d85cb979
+    internal-label: Campaign Email Designer
   - id: c858a28b-ea19-49b0-8d48-828717fad89c
+    internal-label: Prepare and test messages
 subfeature_v2:
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
+    internal-label: A/B testing
   - id: e739ee2b-6228-412e-878f-45de0791417d
+    internal-label: Use cases
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 250
+source-wordcount: '241'
 ht-degree: 0%
-
 ---
-
 # AB測試：在工作流程中設定傳送 {#step-4--configuring-the-deliveries-in-the-workflow}
 
 建立[母體](a-b-testing-uc-population-samples.md)後，您就可以設定傳送。 在此使用案例中，前兩個傳送可讓您傳送不同的內容給母體A和B。第三個傳遞是後援傳遞：會傳送給不屬於A或B的收件者。其內容將由指令碼計算，並將與A或B相同，具體取決於哪一個的開啟率最高。 我們需要設定第三次傳送的等待時間，以找出傳送A和B的結果。這就是第三個傳遞包含&#x200B;**[!UICONTROL Wait]**&#x200B;活動的原因。
