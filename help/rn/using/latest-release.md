@@ -29,10 +29,10 @@ subfeature_v2:
     internal-label: Release notes
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
     internal-label: Adobe Analytics integration
-source-git-commit: e615a6fdd6dc78b2c5e80d6aeb92cd9291ccf5e7
+source-git-commit: 92ed76435fca32fc4ad96aa6a5a4c1fed0b3ca08
 workflow-type: tm+mt
-source-wordcount: '1117'
-ht-degree: 100%
+source-wordcount: '1223'
+ht-degree: 98%
 ---
 # 最新版本 {#latest-release}
 
@@ -40,9 +40,21 @@ ht-degree: 100%
 
 ## 版本 7.4.4 {#release-7-4-4}
 
-### 版本編號 9401 {#build-9401}
+### 建置9402 {#build-9402}
 
 [!BADGE 一般可用性]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="一般可用性"}
+
+_2026年9月11日_
+
+#### 安全性改善 {#security-7-4-4-9402}
+
+Adobe 已發佈 Adobe Campaign Classic 的安全性更新，以解決關鍵弱點。 我們鼓勵採用內部部署和混合部署的客戶儘快安裝更新。 Adobe 代管的執行個體已完成修復，客戶不需要採取任何動作。 您可以在[安全性公告](https://helpx.adobe.com/au/security/products/campaign/apsb26-142.html){target="_blank"}中找到更多資訊。
+
+必須重新啟動 Adobe Campaign 伺服器 (nlserver)，才能載入建置並完成部署。 此修正在重新啟動後預設為作用中。
+
+### 版本編號 9401 {#build-9401}
+
+[!BADGE 已棄用]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="已棄用"}
 
 _2026 年 8 月 25 日_
 
