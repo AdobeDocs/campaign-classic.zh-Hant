@@ -24,7 +24,7 @@ topic_v2:
 subfeature_v2:
   - id: f863efa9-030c-4466-a2b8-a52aea6b722c
     internal-label: Subscription services
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+source-git-commit: 72ba334fe01dfcf701438e8550ae14abae7bd323
 workflow-type: tm+mt
 source-wordcount: '1259'
 ht-degree: 6%
@@ -33,7 +33,7 @@ ht-degree: 6%
 
 行銷活動包括動作 (傳送) 和流程 (匯入或擷取檔案)，以及資源 (行銷文件、傳遞大綱)。 它們會用於行銷活動。 行銷活動是方案的一部分，而方案則包含在行銷活動計畫中。
 
-![](assets/do-not-localize/how-to-video.png)在影片中探索如何建立行銷計畫、方案和行銷活動[&#128279;](#video)
+![](assets/do-not-localize/how-to-video.png)在影片中探索如何建立行銷計畫、方案和行銷活動[](#video)
 
 若要建立行銷活動：
 
@@ -137,15 +137,15 @@ ht-degree: 6%
 
 1. 針對此型別的行銷活動，已新增&#x200B;**[!UICONTROL Schedule]**&#x200B;索引標籤以建立範本執行排程。
 
-在此索引標籤中，根據此範本指定行銷活動的計畫執行日期。
+   在此索引標籤中，根據此範本指定行銷活動的計畫執行日期。
 
-![](assets/s_ncs_user_op_template_recur_planning.png)
+   ![](assets/s_ncs_user_op_template_recur_planning.png)
 
-執行排程的設定模式與工作流程的&#x200B;**[!UICONTROL Scheduler]**&#x200B;物件一致。 如需詳細資訊，請參閱[本章節](../../workflow/using/architecture.md)。
+   執行排程的設定模式與工作流程的&#x200B;**[!UICONTROL Scheduler]**&#x200B;物件一致。 如需詳細資訊，請參閱[本章節](../../workflow/using/architecture.md)。
 
->[!IMPORTANT]
->
->必須小心執行執行排程設定，以避免資料庫超載。 週期性行銷活動會根據指定的排程複製其範本的工作流程。 執行過於頻繁的工作流程建立可能會阻礙資料庫的操作。
+   >[!IMPORTANT]
+   >
+   >必須小心執行執行排程設定，以避免資料庫超載。 週期性行銷活動會根據指定的排程複製其範本的工作流程。 執行過於頻繁的工作流程建立可能會阻礙資料庫的操作。
 
 1. 在&#x200B;**[!UICONTROL Create in advance for]**&#x200B;欄位中指定一個值，以便在指定的期間內建立對應的工作流程。
 1. 使用目標引數以及一或多個一般傳送，根據此範本建立要用於行銷活動的工作流程範本。

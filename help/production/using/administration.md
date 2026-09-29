@@ -23,7 +23,7 @@ subfeature_v2:
     internal-label: Performance Monitoring
   - id: e519a22f-a06a-42fc-9d09-d78a3ab2c434
     internal-label: Monitoring guidelines
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+source-git-commit: 72ba334fe01dfcf701438e8550ae14abae7bd323
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 5%
@@ -46,9 +46,9 @@ ht-degree: 5%
   * **/etc/init.d/nlserver6開始**
   * **/etc/init.d/nlserver6停止**
 
->[!NOTE]
->
->從20.1開始，建議您改用下列命令（適用於Linux）： **systemctl start nlserver** / **systemctl stop nlserver**
+  >[!NOTE]
+  >
+  >從20.1開始，建議您改用下列命令（適用於Linux）： **systemctl start nlserver** / **systemctl stop nlserver**
 
 以下是可在Linux中存取的常見管理命令清單（如&#x200B;**Adobe Campaign**）：
 
