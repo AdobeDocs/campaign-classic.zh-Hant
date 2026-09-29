@@ -29,9 +29,9 @@ subfeature_v2:
     internal-label: Release notes
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
     internal-label: Adobe Analytics integration
-source-git-commit: 92ed76435fca32fc4ad96aa6a5a4c1fed0b3ca08
+source-git-commit: 386b8ebdc7d46e8b3003872932d8104f2dd3f933
 workflow-type: tm+mt
-source-wordcount: '1223'
+source-wordcount: '1225'
 ht-degree: 98%
 ---
 # 最新版本 {#latest-release}
@@ -54,7 +54,7 @@ Adobe 已發佈 Adobe Campaign Classic 的安全性更新，以解決關鍵弱�
 
 ### 版本編號 9401 {#build-9401}
 
-[!BADGE 已棄用]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="已棄用"}
+[!BADGE 一般可用性]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="一般可用性"}
 
 _2026 年 8 月 25 日_
 
