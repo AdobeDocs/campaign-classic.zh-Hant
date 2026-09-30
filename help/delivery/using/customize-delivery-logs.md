@@ -33,7 +33,7 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+source-git-commit: 72ba334fe01dfcf701438e8550ae14abae7bd323
 workflow-type: tm+mt
 source-wordcount: '552'
 ht-degree: 2%
@@ -117,9 +117,9 @@ ht-degree: 2%
 
    ![](assets/start-database-update.png)
 
->[!NOTE]
->
->成功更新資料庫的實體結構後，您需要中斷連線並重新連線，以便考慮您的修改。
+   >[!NOTE]
+   >
+   >成功更新資料庫的實體結構後，您需要中斷連線並重新連線，以便考慮您的修改。
 
 ### 步驟3：驗證修改
 
