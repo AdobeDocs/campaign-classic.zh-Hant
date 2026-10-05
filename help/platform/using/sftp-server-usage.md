@@ -56,7 +56,7 @@ ht-degree: 24%
 
 * 依預設，您建立的所有資料夾都處於唯有識別碼的讀/寫模式。 建立需要Campaign存取的資料夾時，請務必以整個群組的讀取/寫入許可權來設定資料夾。 否則，出於安全原因，工作流程可能無法建立/刪除檔案，因為它們在同一組內的不同標識符下運行。
 
-* 您嘗試啟動SFTP連線的公用IP必須新增至Campaign執行個體上的允許清單。 您可以透過「控制面板」新增公用IP。 [了解更多](https://experienceleague.adobe.com/en/docs/control-panel/using/sftp-management/ip-range-allow-listing){target="_blank"}
+* 您嘗試啟動SFTP連線的公用IP必須新增至Campaign執行個體上的允許清單。 您可以透過「控制面板」新增公用IP。 [了解更多](https://experienceleague.adobe.com/zh-hant/docs/control-panel/using/sftp-management/ip-range-allow-listing){target="_blank"}
 
 ## SFTP儲存空間使用量最佳實務 {#sftp-server-best-practices}
 
@@ -157,7 +157,7 @@ SFTP伺服器是設計作為暫存空間，您可以在其上控制檔案的保�
 
 1. 疑難排解&#x200B;**工作階段記錄**：
 
-   1. 在工作流程中，連按兩下[檔案傳輸](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}活動。
+   1. 在工作流程中，連按兩下[檔案傳輸](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=zh-Hant){target="_blank"}活動。
    1. 前往&#x200B;**[!UICONTROL File Transfer]**&#x200B;標籤，然後按一下&#x200B;**[!UICONTROL Advanced Parameters]**。
    1. 核取 **[!UICONTROL Display the session logs]** 選項。
 

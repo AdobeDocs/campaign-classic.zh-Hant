@@ -56,15 +56,15 @@ ht-degree: 20%
 
 >[!NOTE]
 >
->若要深入瞭解設定檔、如何建立及編輯設定檔，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/gs-audiences){target=_blank}的詳細檔案。
+>若要深入瞭解設定檔、如何建立及編輯設定檔，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/audience/gs-audiences){target=_blank}的詳細檔案。
 
 >[!BEGINTABS]
 
 >[!TAB 設定檔檔案]
 
-若要深入瞭解設定檔、如何建立及編輯設定檔，請參閱&#x200B;**[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/gs-audiences){target=_blank}**&#x200B;的詳細檔案。
+若要深入瞭解設定檔、如何建立及編輯設定檔，請參閱&#x200B;**[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/audience/gs-audiences){target=_blank}**&#x200B;的詳細檔案。
 
-[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/gs-audiences){target=_blank}
+[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/audience/gs-audiences){target=_blank}
 
 >[!TAB 建立及編輯設定檔]
 
@@ -78,7 +78,7 @@ ht-degree: 20%
 
 在&#x200B;**Campaign v8檔案**&#x200B;中瞭解如何匯入及匯出設定檔和資料：
 
-* [匯入設定檔](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/add-profiles/import-profiles){target=_blank}：您可以使用工作流程匯入設定檔。
+* [匯入設定檔](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/audience/add-profiles/import-profiles){target=_blank}：您可以使用工作流程匯入設定檔。
 * [匯入/匯出資料](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/import){target=_blank}：瞭解如何使用一般匯入/匯出功能匯入或匯出資料和設定檔。
 
 >[!ENDTABS]
@@ -152,7 +152,7 @@ An active profile is a profile that customer has attempted to communicate with d
 
 According to your contract, each of your Campaign instances is provisioned with a specific amount of active profiles that are counted for billing purposes. Please refer to your latest contract for reference on number of purchased active profiles. Learn more in [Adobe Campaign product description](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
 
-You can monitor the number of active profiles on your instance directly from Campaign Control Panel. For more on this, refer to the [Control Panel documentation](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html){target="_blank"}.
+You can monitor the number of active profiles on your instance directly from Campaign Control Panel. For more on this, refer to the [Control Panel documentation](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html?lang=zh-Hant){target="_blank"}.
 
 The following guardrails and limitations apply:
 

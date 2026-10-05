@@ -96,13 +96,13 @@ ht-degree: 11%
 
    若要解決此問題，請停止不需要的工作流程並刪除失敗的傳送。 如果達到臨界值，將允許執行新程式。
 
-   若要檢查執行個體正在執行的工作流程數目，我們建議使用預先定義的檢視，預設可在&#x200B;**[!UICONTROL Administration]** / **[!UICONTROL Audit]**&#x200B;資料夾中存取。 如需詳細資訊，請參閱 [Campaign v8 文件](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}。
+   若要檢查執行個體正在執行的工作流程數目，我們建議使用預先定義的檢視，預設可在&#x200B;**[!UICONTROL Administration]** / **[!UICONTROL Audit]**&#x200B;資料夾中存取。 如需詳細資訊，請參閱 [Campaign v8 文件](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=zh-Hant){target="_blank"}。
 
    >[!IMPORTANT]
    >
    >提高&#x200B;**[!UICONTROL NmsOperation_LimitConcurrency]**&#x200B;選項臨界值可能會導致執行個體出現效能問題。 無論如何，請勿自行執行此動作，並聯絡Adobe Campaign聯絡人。
 
-如需如何監視工作流程的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}。
+如需如何監視工作流程的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=zh-Hant){target="_blank"}。
 
 ## 開始進行中 {#start-in-progress}
 
@@ -141,6 +141,6 @@ ht-degree: 11%
 
 如果工作流程失敗，請執行以下步驟：
 
-1. 檢查工作流程日誌。 有關更多資訊，請參閱[Campaign v8 文件](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}。
+1. 檢查工作流程日誌。 有關更多資訊，請參閱[Campaign v8 文件](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=zh-Hant){target="_blank"}。
 1. 監視技術工作流程。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-technical-workflows.html?lang=zh-Hant){target="_blank"}。
 1. 尋找個別工作流程活動上的失敗。

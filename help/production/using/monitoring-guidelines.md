@@ -95,7 +95,7 @@ ht-degree: 19%
 
 **工作流程狀態監視**
 
-除了熱度圖之外，您還可以建立工作流程，讓您監視一組工作流程的狀態，並傳送週期性訊息給主管。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/monitoring/workflow-supervision.html){target="_blank"}。
+除了熱度圖之外，您還可以建立工作流程，讓您監視一組工作流程的狀態，並傳送週期性訊息給主管。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/monitoring/workflow-supervision.html?lang=zh-Hant){target="_blank"}。
 
 **一般准則**
 

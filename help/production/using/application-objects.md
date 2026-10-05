@@ -69,8 +69,8 @@ Adobe Campaign使用的ID序列必須據此使用： **xtkNewId**。 如果序�
 
 ## 異動資料和記錄 {#transactional-data-and-logs}
 
-每個將資料匯入Adobe Campaign的工作流程都會導致資料庫大小增加。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/use-workflow-data.html){target="_blank"}。
+每個將資料匯入Adobe Campaign的工作流程都會導致資料庫大小增加。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/use-workflow-data.html?lang=zh-Hant){target="_blank"}。
 
-檢查清除或永久刪除工作流程是否正在執行並有效永久刪除記錄。 必須清除所有交易式資料和記錄檔。 清理工作只會清除標準表格：追蹤和廣泛記錄。 特定表格必須由特定工作流程清除。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}。
+檢查清除或永久刪除工作流程是否正在執行並有效永久刪除記錄。 必須清除所有交易式資料和記錄檔。 清理工作只會清除標準表格：追蹤和廣泛記錄。 特定表格必須由特定工作流程清除。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=zh-Hant){target="_blank"}。
 
 檢查記錄的最舊建立日期，以觀察交易式資料是否過時。

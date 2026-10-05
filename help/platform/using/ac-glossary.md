@@ -380,7 +380,7 @@ An engine call is a server call that starts real-time processing on server side 
 
 「擴充」活動是進階的工作流程活動，可讓運運算元擴充產生的工作表資料，以便在工作流程中處理。 此活動通常用於目標定位活動後或匯入檔案後，以及使用目標定位資料的活動前。 增強功能可以轉換入站轉變資料，並設定活動以使用增強型資料完成輸出轉變。 它可讓運運算元結合來自多個資料集的資料，或建立臨時資源的連結。
 
-在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html){target="_blank"}中進一步瞭解擴充活動。
+在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html?lang=zh-Hant){target="_blank"}中進一步瞭解擴充活動。
 +++
 
 +++**分項清單**
@@ -395,7 +395,7 @@ An engine call is a server call that starts real-time processing on server side 
 「總管」檢視是包含Adobe Campaign成品和資料的資料夾的階層式顯示。 請注意，Adobe Campaign中的資料夾系統運作方式與典型的樹狀檢視不同，每個資料夾內含特定型別的資料，例如傳送、工作流程或選件。
 
 
-在[Adobe Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}中進一步瞭解Campaign使用者介面。
+在[Adobe Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}中進一步瞭解Campaign使用者介面。
 
 +++
 
@@ -412,7 +412,7 @@ An engine call is a server call that starts real-time processing on server side 
 
 疲勞管理可協助您控制訊息的頻率和數量，以避免收件者過度請求，且通常會套用型別規則。
 
-在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/pressure-rules.html){target="_blank"}中進一步瞭解疲勞管理。
+在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/pressure-rules.html?lang=zh-Hant){target="_blank"}中進一步瞭解疲勞管理。
 +++
 
 +++**同盟資料存取(FDA)**
@@ -442,7 +442,7 @@ An engine call is a server call that starts real-time processing on server side 
 
 資料夾是儲存特定資料型別之資料庫記錄的「總管」檢視專案。 例外情況是用作組織元素的Generic資料夾型別，它本身不包含任何資料，只有其他資料夾。
 
-在[Adobe Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}中進一步瞭解Campaign使用者介面。
+在[Adobe Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}中進一步瞭解Campaign使用者介面。
 
 +++
 
@@ -450,7 +450,7 @@ An engine call is a server call that starts real-time processing on server side 
 
 「資料夾」檢視是一種特殊的「總管」資料夾型別，用來顯示選定資料型別的所有記錄，無論其屬於哪個資料夾。 資料夾檢視可做為管理工具，用來管理分散在多個資料夾中的分割資料或資料。
 
-在[Adobe Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}中進一步瞭解Campaign使用者介面。
+在[Adobe Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}中進一步瞭解Campaign使用者介面。
 +++
 
 +++**Forms**
@@ -603,7 +603,7 @@ Learn more about [Navigation Bar](../../platform/using/adobe-campaign-workspace.
 
 導覽樹狀結構是Adobe Campaign之「總管」檢視中的主要導覽。 導覽樹狀結構的運作方式與檔案瀏覽器類似（例如Windows檔案總管）。 資料夾可能包含子資料夾。 選取節點會顯示與節點對應的檢視。 顯示的檢視是與結構描述關聯的清單，以及用來編輯所選行的輸入表單。 您可以自訂導覽樹狀結構並設定檔案夾的許可權。
 
-在[Adobe Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}中進一步瞭解Campaign使用者介面。
+在[Adobe Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}中進一步瞭解Campaign使用者介面。
 
 +++
 
@@ -816,7 +816,7 @@ Adobe Campaign提供可插入傳遞中的內建個人化區塊。 這些變數�
 
 個人化欄位是將特定收件者的傳遞個人化時使用的單一資料欄位參考。 實際資料值會在傳遞分析階段插入。
 
-在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-fields.html){target="_blank"}中進一步瞭解個人化欄位。
+在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-fields.html?lang=zh-Hant){target="_blank"}中進一步瞭解個人化欄位。
 +++
 
 +++**Personalization變數**
@@ -962,7 +962,7 @@ Adobe Campaign可讓您建立和管理資訊服務（例如電子報或產品更
 
 訂閱服務工作流程活動可讓您為轉變中指定的母體建立或刪除資訊服務的訂閱。
 
-在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/subscription-services.html){target="_blank"}中進一步瞭解訂閱服務活動。
+在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/subscription-services.html?lang=zh-Hant){target="_blank"}中進一步瞭解訂閱服務活動。
 +++
 
 +++**目標核准**
@@ -1066,7 +1066,7 @@ Learn more about [Total database storage](../../workflow/using/about-workflows.m
 
 觸發的行銷活動是在工作流程中收到API請求時執行的行銷活動。 API呼叫由啟動工作流程執行的工作流程中的Signal活動使用。
 
-在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/external-signal.html){target="_blank"}中進一步瞭解觸發的行銷活動。
+在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/external-signal.html?lang=zh-Hant){target="_blank"}中進一步瞭解觸發的行銷活動。
 +++
 
 <!--

@@ -55,9 +55,9 @@ ht-degree: 51%
 
 >[!TAB 開始使用 Campaign]
 
-若要進一步瞭解Adobe Campaign功能以及如何開始，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/get-started){target=_blank}。
+若要進一步瞭解Adobe Campaign功能以及如何開始，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/new/get-started){target=_blank}。
 
-[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/get-started){target=_blank}
+[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/new/get-started){target=_blank}
 
 >[!TAB 啟動促銷活動]
 
