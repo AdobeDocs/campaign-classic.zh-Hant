@@ -6,18 +6,28 @@ feature: Installation, Architecture, Deployment
 role: Developer
 level: Beginner
 exl-id: a06b1365-d487-4df1-8f4a-7268b871a427
-TQID: https://experienceleague.adobe.com/9pZQYt2gLVR94ZWsw21JCv7CL55KDRyiqocvuS54SbM
+TQID: 'https://experienceleague.adobe.com/9pZQYt2gLVR94ZWsw21JCv7CL55KDRyiqocvuS54SbM'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
+  - id: fd6e6e36-54e4-4f1a-96fc-1a750e400d50
+    internal-label: Campaign Classic v7
 feature_v2:
   - id: a7760dfc-5c44-4d77-bb68-c50b1e265c93
     internal-label: Security and privacy
+  - id: bae31391-3416-5fbd-bc4b-2cdcae2922db
+    internal-label: Architecture
+  - id: 5b4bbd22-07a0-59e8-ada0-54a763ae2394
+    internal-label: Deployment
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 subfeature_v2:
   - id: ac9c0a9c-8a76-4419-bd64-9c34c5782666
     internal-label: Privacy
   - id: fb2a841f-c522-491f-9901-a1b939d252df
     internal-label: Security
+  - id: e656c701-3899-4db3-989c-de0980ddfffa
+    internal-label: Installation
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
@@ -33,7 +43,7 @@ topic_v2:
     internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
 workflow-type: tm+mt
 source-wordcount: '637'
 ht-degree: 3%
@@ -71,12 +81,12 @@ Adobe Campaign可部署於內部部署：Adobe Campaign的所有元件（包括�
 身為內部部署客戶，在開始部署Campaign Classic之前，請注意下列必要條件和建議：
 
 * 閱讀[相容性矩陣](../../rn/using/compatibility-matrix.md)，其中列出Adobe Campaign支援的所有系統和元件版本。
-* 根據您的環境，閱讀Windows[&#128279;](../../installation/using/prerequisites-of-campaign-installation-in-windows.md)的[必要條件和Linux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md)的必要條件。
-* 在本節[&#128279;](../../installation/using/database.md)中瞭解與資料庫引擎相關的建議。
+* 根據您的環境，閱讀Windows](../../installation/using/prerequisites-of-campaign-installation-in-windows.md)的[必要條件和Linux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md)的[必要條件。
+* 在本節](../../installation/using/database.md)中瞭解與資料庫引擎[相關的建議。
 * 檢查伺服器上是否已安裝必要的資料庫存取層，以及是否可從Adobe Campaign帳戶存取。 [了解更多資訊](../../installation/using/application-server.md)。
 * 根據某些程式需要與其他程式通訊或存取區域網路和網際網路來設定您的網路。 這表示有些TCP連線埠需要為這些處理序開啟。 [進一步瞭解](../../installation/using/network-configuration.md)網路組態需求。
 * 閱讀[行銷活動安全性與隱私權檢查清單](https://helpx.adobe.com/tw/campaign/kb/acc-security.html)。
-* 請參閱本文[&#128279;](https://helpx.adobe.com/tw/campaign/kb/hardware-sizing-guide.html)中評估內部部署硬體需求的一般准則。
+* 請參閱本文](https://helpx.adobe.com/tw/campaign/kb/hardware-sizing-guide.html)中評估內部部署硬體需求[的一般准則。
 
 ## 混合式
 
@@ -94,4 +104,4 @@ Adobe Campaign可部署於內部部署：Adobe Campaign的所有元件（包括�
 * 設定Campaign選項：請參閱[本節內容](../../installation/using/configuring-campaign-options.md)。
 * 設定外部資料庫（同盟資料存取）：請參考[此章節](../../installation/using/about-fda.md)。
 * 正在設定CRM聯結器：請參閱[此章節](../../platform/using/crm-connectors.md)。
-* 若要深入瞭解中間來源部署原則，請參閱本節[&#128279;](../../installation/using/mid-sourcing-deployment.md)中的。
+* 若要深入瞭解中間來源部署原則，請參閱本節](../../installation/using/mid-sourcing-deployment.md)中的[。

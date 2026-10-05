@@ -6,7 +6,22 @@ badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Ca
 feature: Reporting, Monitoring
 hide: true
 exl-id: 32696bbf-1415-4214-837f-5437fdb8b4d4
-source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: fd6e6e36-54e4-4f1a-96fc-1a750e400d50
+    internal-label: Campaign Classic v7
+feature_v2:
+  - id: c309ee4e-82e4-4f7e-b608-ef345678c34e
+    internal-label: Dynamic reporting
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
+subfeature_v2:
+  - id: b3a4149f-2b3a-44d1-894e-e3ac4c77fb47
+    internal-label: Reporting interface
+  - id: e519a22f-a06a-42fc-9d09-d78a3ab2c434
+    internal-label: Monitoring guidelines
+source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
 workflow-type: tm+mt
 source-wordcount: '968'
 ht-degree: 2%
@@ -166,4 +181,4 @@ Marketing Analytics可讓您更輕鬆地建立報表，以及透過多維度資�
 
    ![](assets/s_advuser_cube_in_report_02.png)
 
-   這可讓您建立要顯示的報表。 如需詳細資訊，請參閱步驟2 — 選取行和欄[&#128279;](#step-2---selecting-lines-and-columns)。
+   這可讓您建立要顯示的報表。 如需詳細資訊，請參閱步驟2 — 選取行和欄](#step-2---selecting-lines-and-columns)。[

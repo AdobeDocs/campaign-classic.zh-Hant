@@ -7,20 +7,24 @@ audience: production
 content-type: reference
 topic-tags: database-maintenance
 exl-id: fb4798d7-0a2c-455b-86b6-3dcb5fd25c82
-TQID: https://experienceleague.adobe.com/nOgBluxhfvlY0n8yEY2tUGRn762U3HMUIvEvW1-X-KY
+TQID: 'https://experienceleague.adobe.com/nOgBluxhfvlY0n8yEY2tUGRn762U3HMUIvEvW1-X-KY'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-    internal-label: Troubleshooting
-feature_v2: []
+  - id: fd6e6e36-54e4-4f1a-96fc-1a750e400d50
+    internal-label: Campaign Classic v7
+feature_v2:
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 subfeature_v2:
   - id: c03a11ff-bdf9-4e5b-b279-f468b4293464
     internal-label: Performance Monitoring
   - id: e519a22f-a06a-42fc-9d09-d78a3ab2c434
     internal-label: Monitoring guidelines
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
+source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
 workflow-type: tm+mt
 source-wordcount: '523'
 ht-degree: 3%
@@ -51,7 +55,7 @@ Adobe Campaign使用的ID序列必須據此使用： **xtkNewId**。 如果序�
 
 ## 傳遞 {#deliveries}
 
-執行個體上隨時應該有少於1000個傳遞。 大量的傳遞會消耗資料庫空間並產生問題。 每天建立超過10個傳遞的執行個體必須根據業務需求進行檢查。 請考慮使用連續傳遞來建立較少的傳遞。 有關更多資訊，請參閱[Campaign v8 文件](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/continuous-delivery.html?lang=zh-Hant){target="_blank"}。
+執行個體上隨時應該有少於1000個傳遞。 大量的傳遞會消耗資料庫空間並產生問題。 每天建立超過10個傳遞的執行個體必須根據業務需求進行檢查。 請考慮使用連續傳遞來建立較少的傳遞。 有關更多資訊，請參閱[Campaign v8 文件](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/continuous-delivery.html){target="_blank"}。
 
 應從執行個體中清除超過兩年的傳遞。
 
@@ -59,14 +63,14 @@ Adobe Campaign使用的ID序列必須據此使用： **xtkNewId**。 如果序�
 
 應用程式伺服器磁碟上的檔案數不應無限增加。
 
-匯入工作流程會建立檔案，因此造成磁碟擴充。 使用標準[檔案收集器](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-collector.html?lang=zh-Hant){target="_blank"}活動可避免此問題。 檔案收集器會將檔案移至暫存資料夾，並自動將其清除。
+匯入工作流程會建立檔案，因此造成磁碟擴充。 使用標準[檔案收集器](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-collector.html){target="_blank"}活動可避免此問題。 檔案收集器會將檔案移至暫存資料夾，並自動將其清除。
 
 如果工作流程匯入檔案但未使用標準功能，則需要清除該工作流程以將磁碟空間維持在最低限度。
 
 ## 異動資料和記錄 {#transactional-data-and-logs}
 
-每個將資料匯入Adobe Campaign的工作流程都會導致資料庫大小增加。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/use-workflow-data.html?lang=zh-Hant){target="_blank"}。
+每個將資料匯入Adobe Campaign的工作流程都會導致資料庫大小增加。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/use-workflow-data.html){target="_blank"}。
 
-檢查清除或永久刪除工作流程是否正在執行並有效永久刪除記錄。 必須清除所有交易式資料和記錄檔。 清理工作只會清除標準表格：追蹤和廣泛記錄。 特定表格必須由特定工作流程清除。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=zh-Hant){target="_blank"}。
+檢查清除或永久刪除工作流程是否正在執行並有效永久刪除記錄。 必須清除所有交易式資料和記錄檔。 清理工作只會清除標準表格：追蹤和廣泛記錄。 特定表格必須由特定工作流程清除。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}。
 
 檢查記錄的最舊建立日期，以觀察交易式資料是否過時。

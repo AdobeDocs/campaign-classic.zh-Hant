@@ -4,16 +4,26 @@ title: 異動訊息傳送架構
 description: 本節說明Adobe Campaign Classic異動訊息傳送架構，以及傳送異動訊息的可用通道
 feature: Transactional Messaging, Message Center, Architecture
 exl-id: 0a059397-b037-405b-b9c1-94a4a072674d
-TQID: https://experienceleague.adobe.com/37Nw8x5SwRELOeJd8BXvE-tcN66Kb1vraEgkkzeaKI8
+TQID: 'https://experienceleague.adobe.com/37Nw8x5SwRELOeJd8BXvE-tcN66Kb1vraEgkkzeaKI8'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
+  - id: fd6e6e36-54e4-4f1a-96fc-1a750e400d50
+    internal-label: Campaign Classic v7
+feature_v2:
+  - id: 6d358f27-4f3c-5ddf-9159-05192e672ba7
+    internal-label: Message Center
+  - id: bae31391-3416-5fbd-bc4b-2cdcae2922db
+    internal-label: Architecture
+  - id: a4671286-a59f-47e3-b97b-90627a1977d5
+    internal-label: Communication channels
+subfeature_v2:
+  - id: d3b34fea-a110-482f-adb2-aae8d686bac8
+    internal-label: Transactional messaging
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-feature_v2: []
-subfeature_v2: []
-source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
+source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
 workflow-type: tm+mt
 source-wordcount: '1104'
 ht-degree: 1%
@@ -93,7 +103,7 @@ Adobe建議您&#x200B;**在安裝Transactional訊息封裝**&#x200B;之前，一
 >此程式僅適用於使用安裝在相同電腦上的Windows NLServer的客戶。
 
 1. 使用套件匯入小幫手(**[!UICONTROL Tools > Advanced > Import package... > Adobe Campaign Package]**)安裝您需要的頻道，例如&#x200B;**行動頻道**。
-1. 執行檔案匯入(**[!UICONTROL Tools > Advanced > Import package... > File]**)，並選取&#x200B;**datakitnms &#x200B;**`[Your language]`**packagemessageCenter.xml**&#x200B;檔案。
+1. 執行檔案匯入(**[!UICONTROL Tools > Advanced > Import package... > File]**)，並選取&#x200B;**datakitnms **`[Your language]`**packagemessageCenter.xml**&#x200B;檔案。
 1. 在&#x200B;**[!UICONTROL XML content of the data to import]**&#x200B;中，僅保留對應至新增頻道的傳遞範本。 例如，如果您已新增&#x200B;**行動裝置頻道**，請僅保留與&#x200B;**[!UICONTROL Mobile transactional message]** (smsTriggerMessage)相對應的&#x200B;**entities**&#x200B;元素。 如果您已新增&#x200B;**行動應用程式頻道**，請僅保留&#x200B;**iOS交易式訊息** (iosTriggerMessage)和&#x200B;**Android交易式訊息** (androidTriggerMessage)。
 
    ![](assets/messagecenter_install_channel.png)

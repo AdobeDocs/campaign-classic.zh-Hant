@@ -8,13 +8,19 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 1a79da3b-2abc-4bfc-a0ee-8471c478638d
-TQID: https://experienceleague.adobe.com/bKs1NqCHtMzrqdNZFCYQuj659V6GOHfD-LKClp3aacE
+TQID: 'https://experienceleague.adobe.com/bKs1NqCHtMzrqdNZFCYQuj659V6GOHfD-LKClp3aacE'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
+  - id: fd6e6e36-54e4-4f1a-96fc-1a750e400d50
+    internal-label: Campaign Classic v7
 feature_v2:
   - id: afa4204e-6d08-4e29-bc35-26aafb656d48
     internal-label: Profiles and audiences
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
+  - id: a7760dfc-5c44-4d77-bb68-c50b1e265c93
+    internal-label: Security and privacy
 subfeature_v2:
   - id: f529d0bd-1401-4c88-9833-43228cc1d40f
     internal-label: Profiles
@@ -24,14 +30,18 @@ subfeature_v2:
     internal-label: Query Editor
   - id: efa38731-2723-4334-8d8b-a778af834835
     internal-label: Access management
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+  - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
+    internal-label: Workflows
+  - id: d0dbac2b-cbd2-42b3-956e-60af02966728
+    internal-label: Encryption
+source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
 workflow-type: tm+mt
 source-wordcount: '835'
 ht-degree: 14%
 ---
 # 解壓縮或解密檔案 {#unzipping-or-decrypting-a-file-before-processing}
 
-Adobe Campaign可讓您匯入壓縮或加密的檔案。 在[資料載入（檔案）](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html?lang=zh-Hant){target="_blank"})活動中讀取檔案之前，您可以定義解壓縮或解密檔案的預先處理。
+Adobe Campaign可讓您匯入壓縮或加密的檔案。 在[資料載入（檔案）](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html){target="_blank"})活動中讀取檔案之前，您可以定義解壓縮或解密檔案的預先處理。
 
 >[!IMPORTANT]
 >
@@ -39,7 +49,7 @@ Adobe Campaign可讓您匯入壓縮或加密的檔案。 在[資料載入（檔�
 
 若要這麼做：
 
-1. 使用[控制檯](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=zh-Hant#decrypting-data)產生公開/私密金鑰組，以允許檔案解密。
+1. 使用[控制檯](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data)產生公開/私密金鑰組，以允許檔案解密。
 
    >[!NOTE]
    >
@@ -64,8 +74,8 @@ Adobe Campaign可讓您匯入壓縮或加密的檔案。 在[資料載入（檔�
 
 **相關主題：**
 
-* [資料載入（檔案）活動](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html?lang=zh-Hant){target="_blank"}。
-* [壓縮或加密檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html?lang=zh-Hant){target="_blank"}。
+* [資料載入（檔案）活動](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html){target="_blank"}。
+* [壓縮或加密檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html){target="_blank"}。
 
 ## 使用案例：匯入使用控制面板產生的金鑰加密的資料 {#use-case-gpg-decrypt}
 
@@ -75,7 +85,7 @@ Adobe Campaign可讓您匯入壓縮或加密的檔案。 在[資料載入（檔�
 
 執行此使用案例的步驟如下：
 
-1. 使用「控制面板」產生金鑰組（公用/私用）。 詳細步驟可在[控制面板檔案](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=zh-Hant#decrypting-data)中取得。
+1. 使用「控制面板」產生金鑰組（公用/私用）。 詳細步驟可在[控制面板檔案](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data)中取得。
 
    * 公開金鑰將與外部系統共用，外部系統將使用公開金鑰來加密要傳送至Campaign的資料。
    * Campaign Classic會使用私密金鑰來解密傳入的加密資料。
@@ -95,10 +105,10 @@ Adobe Campaign可讓您匯入壓縮或加密的檔案。 在[資料載入（檔�
 
    ![](assets/gpg_key_transfer.png)
 
-   有關如何設定活動的全域概念可在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=zh-Hant){target="_blank"}中取得。
+   有關如何設定活動的全域概念可在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}中取得。
 
 
-1. 開啟&#x200B;**[!UICONTROL Data loading (file)]**&#x200B;活動，然後根據您的需求進行設定。 有關如何設定活動的全域概念可在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html?lang=zh-Hant){target="_blank"}中取得。
+1. 開啟&#x200B;**[!UICONTROL Data loading (file)]**&#x200B;活動，然後根據您的需求進行設定。 有關如何設定活動的全域概念可在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html){target="_blank"}中取得。
 
    為活動新增前置處理階段，以便解密傳入的資料。 若要這麼做，請選取&#x200B;**[!UICONTROL Pre-process the file]**&#x200B;選項，然後從&#x200B;**[!UICONTROL Command]**&#x200B;下拉式清單中選取&#x200B;**[!UICONTROL Decrypt]**：
 

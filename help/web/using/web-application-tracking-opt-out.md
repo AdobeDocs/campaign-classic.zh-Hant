@@ -5,10 +5,12 @@ description: 網站應用程式追蹤選擇退出
 badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Web Apps
 exl-id: 4bff6b55-3335-433e-a2ff-5d8c83e8f0d3
-TQID: https://experienceleague.adobe.com/-5Bp8qdxH8DTEJ0-NASuorQrjwDMUmvuhBNbW1alqyc
+TQID: 'https://experienceleague.adobe.com/-5Bp8qdxH8DTEJ0-NASuorQrjwDMUmvuhBNbW1alqyc'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
+  - id: fd6e6e36-54e4-4f1a-96fc-1a750e400d50
+    internal-label: Campaign Classic v7
 feature_v2:
   - id: a7760dfc-5c44-4d77-bb68-c50b1e265c93
     internal-label: Security and privacy
@@ -30,7 +32,7 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
 workflow-type: tm+mt
 source-wordcount: '710'
 ht-degree: 2%
@@ -45,13 +47,13 @@ Adobe Campaign可讓您停止追蹤選擇退出透過Cookie或網路信標進行
 
 >[!NOTE]
 >
->當指令碼一律遵循[安全性與隱私權檢查清單](https://helpx.adobe.com/tw/campaign/kb/acc-security.html#dev)中說明的准則時。
+>當指令碼一律遵循[安全性與隱私權檢查清單](https://helpx.adobe.com/campaign/kb/acc-security.html#dev)中說明的准則時。
 
 ## 設定橫幅 {#configuring-the-banner-}
 
 橫幅必須設定才能顯示在網頁應用程式或登入頁面中。
 
-Adobe Campaign隨附範例橫幅，您必須根據自己的需求進行調整。 此橫幅版本會在內容模型資料夾中顯示為個人化區塊。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=zh-Hant){target="_blank"}。
+Adobe Campaign隨附範例橫幅，您必須根據自己的需求進行調整。 此橫幅版本會在內容模型資料夾中顯示為個人化區塊。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}。
 
 >[!IMPORTANT]
 >

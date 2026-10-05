@@ -7,10 +7,28 @@ feature: Deliverability
 role: User
 hide: true
 exl-id: 24b2ee47-bec7-43ce-81b3-0b2d1a5cebae
-TQID: https://experienceleague.adobe.com/XiK0I9mZTlGWACRL-TTdDO5pByzBg-6oFdfcTNfhX44
+TQID: 'https://experienceleague.adobe.com/XiK0I9mZTlGWACRL-TTdDO5pByzBg-6oFdfcTNfhX44'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
+  - id: fd6e6e36-54e4-4f1a-96fc-1a750e400d50
+    internal-label: Campaign Classic v7
+feature_v2:
+  - id: b631758a-142d-425f-b9aa-f756d85cb979
+    internal-label: Campaign Email Designer
+  - id: c858a28b-ea19-49b0-8d48-828717fad89c
+    internal-label: Prepare and test messages
+  - id: 63876777-85c3-57e1-a2da-81f02956c63c
+    internal-label: Deliverability
+subfeature_v2:
+  - id: e95a583b-fcfa-4524-8666-46a29c828119
+    internal-label: Email messaging
+  - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
+    internal-label: Email design
+  - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
+    internal-label: A/B testing
+  - id: f4da0e76-df77-451e-ad61-21afb7bd8810
+    internal-label: Manage deliverability
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -21,21 +39,7 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-feature_v2:
-  - id: b631758a-142d-425f-b9aa-f756d85cb979
-    internal-label: Campaign Email Designer
-  - id: c858a28b-ea19-49b0-8d48-828717fad89c
-    internal-label: Prepare and test messages
-subfeature_v2:
-  - id: e95a583b-fcfa-4524-8666-46a29c828119
-    internal-label: Email messaging
-  - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
-    internal-label: Email design
-  - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
-    internal-label: A/B testing
-  - id: f4da0e76-df77-451e-ad61-21afb7bd8810
-    internal-label: Manage deliverability
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
 workflow-type: tm+mt
 source-wordcount: '749'
 ht-degree: 9%
@@ -56,7 +60,7 @@ ht-degree: 9%
 
   **秘訣** — 若要避免此問題，請與團隊的其他成員協調傳送排程，以確保最佳效能。
 
-* 工作流程執行：監控工作流程是避免平台效能問題的關鍵。 請遵循此檔案[&#128279;](../../workflow/using/workflow-best-practices.md#execution-and-performance)中列出的准則。
+* 工作流程執行：監控工作流程是避免平台效能問題的關鍵。 請遵循此檔案](../../workflow/using/workflow-best-practices.md#execution-and-performance)中列出的准則[。
 
 * 如果您符合資格，可以使用[效能監視](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html?lang=zh-Hant)功能，利用[Campaign控制面板功能](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=zh-Hant)來監視您的平台。
 
@@ -76,7 +80,7 @@ ht-degree: 9%
 
   * 在檢查電子郵件是否可傳遞時，您想要將焦點放在四個主要類別上：資料品質、訊息和內容、傳送基礎結構和信譽。 如需深入瞭解此主題，請參閱[本節](about-deliverability.md)。
 
-* 套用此檔案[&#128279;](about-deliverability.md)中詳細的建議。
+* 套用此檔案](about-deliverability.md)中詳細[的建議。
 
 * 請聯絡您的Adobe代表以尋求協助。
 

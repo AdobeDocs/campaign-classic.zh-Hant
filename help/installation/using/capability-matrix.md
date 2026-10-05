@@ -4,13 +4,21 @@ title: Campaign內部部署、混合及託管功能矩陣
 description: 瞭解託管部署和內部部署之間的主要差異
 feature: Installation, Architecture
 exl-id: a2c425a8-9bde-4259-9140-5ada5397ed5f
-TQID: https://experienceleague.adobe.com/kHWVPyk02eyH47xBzGgik3fq6BSHGKpDXPMrEuVaYM8
+TQID: 'https://experienceleague.adobe.com/kHWVPyk02eyH47xBzGgik3fq6BSHGKpDXPMrEuVaYM8'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
-feature_v2: []
-subfeature_v2: []
-source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
+  - id: fd6e6e36-54e4-4f1a-96fc-1a750e400d50
+    internal-label: Campaign Classic v7
+feature_v2:
+  - id: bae31391-3416-5fbd-bc4b-2cdcae2922db
+    internal-label: Architecture
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
+subfeature_v2:
+  - id: e656c701-3899-4db3-989c-de0980ddfffa
+    internal-label: Installation
+source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 38%
@@ -23,7 +31,7 @@ Adobe Campaign Classic 隨附了一套模組和選項。 這些模組的可用�
 
 此頁面顯示託管(Managed Services)和內部部署之間的主要差異。 混合部署特性取決於Adobe所託管且在您的內部部署中託管的元素。
 
-在本節[&#128279;](../../installation/using/hosting-models.md)中引進了不同的託管模型。
+在本節](../../installation/using/hosting-models.md)中引進了不同的託管模型[。
 
 ## 每個部署模式的可用性 {#capability-matrix}
 

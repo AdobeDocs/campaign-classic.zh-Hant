@@ -7,15 +7,19 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 89356b5a-d99c-43d1-892b-5a1d003e76cc
-TQID: https://experienceleague.adobe.com/FL-v5m07U-OzscVIiQONAa-RMu323ZpTuBrL29ukMc4
+TQID: 'https://experienceleague.adobe.com/FL-v5m07U-OzscVIiQONAa-RMu323ZpTuBrL29ukMc4'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
+  - id: fd6e6e36-54e4-4f1a-96fc-1a750e400d50
+    internal-label: Campaign Classic v7
 feature_v2:
   - id: d5ef99fa-df0c-4153-bf94-105ad0724167
     internal-label: Integrations
   - id: afa4204e-6d08-4e29-bc35-26aafb656d48
     internal-label: Profiles and audiences
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 subfeature_v2:
   - id: f529d0bd-1401-4c88-9833-43228cc1d40f
     internal-label: Profiles
@@ -25,6 +29,10 @@ subfeature_v2:
     internal-label: Query Editor
   - id: efa38731-2723-4334-8d8b-a778af834835
     internal-label: Access management
+  - id: e8d937ec-9046-41b5-834b-d22a624e0d37
+    internal-label: Campaign overview
+  - id: a39dbcf0-89cb-4765-9bcb-cf9dfbe2875f
+    internal-label: Troubleshooting
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
@@ -36,7 +44,7 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
 workflow-type: tm+mt
 source-wordcount: '1517'
 ht-degree: 6%
@@ -47,7 +55,7 @@ ht-degree: 6%
 >
 >此常見問題集解決Adobe Campaign Classic v7架構、部署模式和v7特定功能的特定問題。
 >
->**如需Campaign常見問題的完整解答** （工作流程、傳送、對象、報表、個人化等），請參閱&#x200B;[**Campaign v8完整常見問答集**](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/new/campaign-faq-comprehensive){target="_blank"}，此問答集提供依主題整理的詳細解答。
+>**如需Campaign常見問題的完整解答** （工作流程、傳送、對象、報表、個人化等），請參閱&#x200B;[**Campaign v8完整常見問答集**](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-faq-comprehensive){target="_blank"}，此問答集提供依主題整理的詳細解答。
 
 ## Campaign Classic v7架構和部署 {#v7-architecture}
 
@@ -65,7 +73,7 @@ Adobe Campaign Classic v7提供三種部署模式：
 
 [按一下這裡以深入瞭解](../../installation/using/hosting-models.md)託管模式及其差異。
 
-**注意：** Campaign v8僅以Managed Cloud Services的形式提供。 [瞭解行銷活動v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/new/whats-new.html?lang=zh-Hant){target="_blank"}。
+**注意：** Campaign v8僅以Managed Cloud Services的形式提供。 [瞭解行銷活動v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/new/whats-new.html){target="_blank"}。
 
 +++
 
@@ -96,7 +104,7 @@ Adobe Campaign Classic v7隨附一組模組和選項。 這些模組及其組態
 
 **快速入門：**&#x200B;請聯絡您的Adobe代表，評估您的環境並透過Adobe Professional Services制定詳細的移轉計畫。
 
-深入瞭解[移轉至Managed Services](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic-blogs/migrate-your-adobe-campaign-v7-onprem-hybrid-environment-to/ba-p/681605?profile.language=zh-Hant){target="_blank"}。
+深入瞭解[移轉至Managed Services](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic-blogs/migrate-your-adobe-campaign-v7-onprem-hybrid-environment-to/ba-p/681605){target="_blank"}。
 
 +++
 
@@ -122,7 +130,7 @@ Campaign v8是Adobe的策略平台，適用於需要大量行銷活動、現代W
 
 了解更多：
 
-* [Campaign v8概述](https://experienceleague.adobe.com/docs/campaign/campaign-v8/new/whats-new.html?lang=zh-Hant){target="_blank"}
+* [Campaign v8概述](https://experienceleague.adobe.com/docs/campaign/campaign-v8/new/whats-new.html){target="_blank"}
 * [從Campaign Classic v7轉變至v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/v7-to-v8.html){target="_blank"}
 * [Campaign v8完整常見問題集](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html){target="_blank"}
 
@@ -280,7 +288,7 @@ Adobe Campaign v7使用者介面提供4種語言版本：英文、法文、德�
 
 **社群和支援：**
 
-* [Campaign社群論壇](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=zh-Hant){target="_blank"}
+* [Campaign社群論壇](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){target="_blank"}
 * [Adobe 支援](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}
 
 +++

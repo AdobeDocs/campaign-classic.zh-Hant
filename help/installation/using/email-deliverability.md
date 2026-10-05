@@ -8,13 +8,17 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 515adad2-6129-450a-bb9e-fc80127835af
-TQID: https://experienceleague.adobe.com/JRN8-kfrbG-UDAJz8wShf-0vi-LyqrUBxNBa3wn83cc
+TQID: 'https://experienceleague.adobe.com/JRN8-kfrbG-UDAJz8wShf-0vi-LyqrUBxNBa3wn83cc'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
+  - id: fd6e6e36-54e4-4f1a-96fc-1a750e400d50
+    internal-label: Campaign Classic v7
 feature_v2:
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
     internal-label: Administration
+  - id: 63876777-85c3-57e1-a2da-81f02956c63c
+    internal-label: Deliverability
 subfeature_v2:
   - id: b5852c32-876b-41ae-92a7-9f588865ae52
     internal-label: Best practices
@@ -29,7 +33,7 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
 workflow-type: tm+mt
 source-wordcount: '3151'
 ht-degree: 2%
@@ -335,7 +339,7 @@ user:~ user$ host -t a mta6.am0.yahoodns.net
 
 若要這麼做，請前往&#x200B;**[!UICONTROL Management of email formats]**&#x200B;檔案，它位於&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Non deliverables management]** > **[!UICONTROL Mail rule sets]**。
 
-本檔案包含對應至Adobe Campaign所管理日文格式的所有預先定義網域清單。 如需詳細資訊，請參閱 [Campaign v8 文件](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/sending-emails-on-japanese-mobiles.html?lang=zh-Hant){target="_blank"}。
+本檔案包含對應至Adobe Campaign所管理日文格式的所有預先定義網域清單。 如需詳細資訊，請參閱 [Campaign v8 文件](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/sending-emails-on-japanese-mobiles.html){target="_blank"}。
 
 ![](assets/mail_rule_sets.png)
 
@@ -350,7 +354,7 @@ user:~ user$ host -t a mta6.am0.yahoodns.net
 
 如果&#x200B;**[!UICONTROL Image inclusion]**&#x200B;選項已啟用，這些會直接顯示在電子郵件內文中。 然後會上傳影像，並以其內容取代URL連結。
 
-日本市場特別使用這個選項來處理&#x200B;**裝飾郵件**、**裝飾郵件**&#x200B;或&#x200B;**裝飾郵件**。 如需詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/sending-emails-on-japanese-mobiles.html?lang=zh-Hant){target="_blank"}。
+日本市場特別使用這個選項來處理&#x200B;**裝飾郵件**、**裝飾郵件**&#x200B;或&#x200B;**裝飾郵件**。 如需詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/sending-emails-on-japanese-mobiles.html){target="_blank"}。
 
 >[!IMPORTANT]
 >

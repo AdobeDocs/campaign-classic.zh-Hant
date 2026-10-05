@@ -2,10 +2,12 @@
 title: IMS移轉後更新Campaign介面
 description: 瞭解如何啟用Adobe Identity Management系統移轉介面影響
 exl-id: 8b13fe4d-d8d3-43b3-bbe4-c8c5574f585a
-TQID: https://experienceleague.adobe.com/RkgX2M0BnO5pjgI7oAp7NlycXY551manwFHhcA1LMjw
+TQID: 'https://experienceleague.adobe.com/RkgX2M0BnO5pjgI7oAp7NlycXY551manwFHhcA1LMjw'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
+  - id: fd6e6e36-54e4-4f1a-96fc-1a750e400d50
+    internal-label: Campaign Classic v7
 feature_v2:
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
     internal-label: Administration
@@ -13,13 +15,13 @@ subfeature_v2:
   - id: a39dbcf0-89cb-4765-9bcb-cf9dfbe2875f
     internal-label: Troubleshooting
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
-    internal-label: Adobe Analytics integration
+    internal-label: Analytics integration
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
 workflow-type: tm+mt
 source-wordcount: '463'
 ht-degree: 1%
@@ -109,7 +111,7 @@ ht-degree: 1%
 
 因此，使用者端主控台中已停用這些動作。
 
-操作員的管理集中於Adobe Admin Console，而下列工作現在只能透過此主控台管理。 在[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/admin/permissions/manage-permissions){target="_blank"}中瞭解如何建立使用者並指派許可權。
+操作員的管理集中於Adobe Admin Console，而下列工作現在只能透過此主控台管理。 在[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/admin/permissions/manage-permissions){target="_blank"}中瞭解如何建立使用者並指派許可權。
 
 ### 無法使用的選項 {#unavailable-migration}
 

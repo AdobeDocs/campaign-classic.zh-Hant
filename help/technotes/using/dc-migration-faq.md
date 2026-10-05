@@ -6,15 +6,26 @@ feature: Technote, Upgrade
 role: User
 level: Beginner
 exl-id: a9cd08b0-55c2-4405-9fb8-f0c623cd4ccb
-TQID: https://experienceleague.adobe.com/r3qtW9ZsCD85N9qAnN1EOje-VMhDoyPuqea2xZnBWLs
+TQID: 'https://experienceleague.adobe.com/r3qtW9ZsCD85N9qAnN1EOje-VMhDoyPuqea2xZnBWLs'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
+  - id: fd6e6e36-54e4-4f1a-96fc-1a750e400d50
+    internal-label: Campaign Classic v7
 feature_v2:
   - id: b12f6872-9271-4369-85e5-86969a0b99a2
     internal-label: APIs
   - id: d5ef99fa-df0c-4153-bf94-105ad0724167
     internal-label: Integrations
+  - id: ab81f6c3-9317-564f-af92-6670a8784294
+    internal-label: Technote
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
+subfeature_v2:
+  - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+    internal-label: Analytics integration
+  - id: eff19c99-440a-4318-b319-444edc4d8d8f
+    internal-label: Upgrade
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -26,10 +37,7 @@ topic_v2:
     internal-label: Implementation
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-subfeature_v2:
-  - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
-    internal-label: Adobe Analytics integration
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
 workflow-type: tm+mt
 source-wordcount: '2269'
 ht-degree: 0%
@@ -42,7 +50,7 @@ Adobe免除舊版資料中心的委任：Campaign Classic例項必須轉移至Pu
 
 以下是此專案的一組常見問題、對您的Campaign環境的影響以及其他實用資源。
 
-如有任何其他問題，請連絡[Adobe客戶服務](https://experienceleague.adobe.com/zh-hant?support-solution=Campaign#support)。
+如有任何其他問題，請連絡[Adobe客戶服務](https://experienceleague.adobe.com/?support-solution=Campaign#support)。
 
 ## 基礎架構影響
 
@@ -72,7 +80,7 @@ Adobe免除舊版資料中心的委任：Campaign Classic例項必須轉移至Pu
 
 * **解決任何移轉後問題的計畫為何？**
 
-  在生產系統移轉之前，將會進行廣泛的測試。 不過，如果發生任何問題，[Adobe客戶服務](https://experienceleague.adobe.com/zh-hant?support-solution=Campaign#support)仍會是主要聯絡視窗。 Adobe已建立專家團隊，在需要時提供進階支援。
+  在生產系統移轉之前，將會進行廣泛的測試。 不過，如果發生任何問題，[Adobe客戶服務](https://experienceleague.adobe.com/?support-solution=Campaign#support)仍會是主要聯絡視窗。 Adobe已建立專家團隊，在需要時提供進階支援。
 
 ## 傳遞能力影響
 
@@ -118,7 +126,7 @@ Adobe免除舊版資料中心的委任：Campaign Classic例項必須轉移至Pu
 
   首先，Adobe傳遞能力將評估平台傳遞能力狀態，並推薦切換至新IP的計畫
 
-  移轉後不需要熱身。 可能會出現一些例外狀況，在這種情況下，[Adobe客戶服務](https://experienceleague.adobe.com/zh-hant?support-solution=Campaign#support)將會聯絡客戶。
+  移轉後不需要熱身。 可能會出現一些例外狀況，在這種情況下，[Adobe客戶服務](https://experienceleague.adobe.com/?support-solution=Campaign#support)將會聯絡客戶。
 
   不過，計畫是讓這項作業對業務而言是透明的，不同於在上線期間進行的初始升級。
 
@@ -194,7 +202,7 @@ Adobe免除舊版資料中心的委任：Campaign Classic例項必須轉移至Pu
 
   它可能會根據新伺服器的位置而變更。 不過，客戶將可保留其目前的時區。
 
-  在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/managing-time-zones.html?lang=zh-Hant){target="_blank"}中進一步瞭解時區管理。
+  在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/managing-time-zones.html){target="_blank"}中進一步瞭解時區管理。
 
 
 ## 安全性與許可權

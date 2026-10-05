@@ -2,10 +2,12 @@
 title: 將Campaign運運算元移轉至Adobe Identity Management系統(IMS)
 description: 瞭解如何將Campaign運運算元移轉至Adobe Identity Management系統(IMS)
 exl-id: f01948c7-b523-492d-a4e8-67f4adde5fc5
-TQID: https://experienceleague.adobe.com/drpNkA9cj7Prid--GixHMQ48CO7ZC9qqX4w5fnTiD88
+TQID: 'https://experienceleague.adobe.com/drpNkA9cj7Prid--GixHMQ48CO7ZC9qqX4w5fnTiD88'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
+  - id: fd6e6e36-54e4-4f1a-96fc-1a750e400d50
+    internal-label: Campaign Classic v7
 feature_v2:
   - id: b12f6872-9271-4369-85e5-86969a0b99a2
     internal-label: APIs
@@ -15,13 +17,13 @@ subfeature_v2:
   - id: efa38731-2723-4334-8d8b-a778af834835
     internal-label: Access management
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
-    internal-label: Adobe Analytics integration
+    internal-label: Analytics integration
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
 workflow-type: tm+mt
 source-wordcount: '1266'
 ht-degree: 3%
@@ -58,7 +60,7 @@ Adobe可協助您進行這項移轉工作。 您可在下文中找到詳細的�
 >
 >將使用者移轉至IMS後，請注意Adobe Admin Console中名稱包含「管理員」字樣的任何產品設定檔（例如「管理員」、「管理員」、「管理員」、「核准管理員」等） 會自動授與「Campaign控制面板」的存取權。 「控制面板」是自助式工具，可讓您對Campaign執行個體進行重大變更。
 >
->請仔細檢閱您的產品設定檔命名慣例，以確保只有授權使用者才能存取「控制面板」。 在[控制面板檔案](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hant){target="_blank"}中進一步瞭解如何管理控制面板許可權。
+>請仔細檢閱您的產品設定檔命名慣例，以確保只有授權使用者才能存取「控制面板」。 在[控制面板檔案](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html){target="_blank"}中進一步瞭解如何管理控制面板許可權。
 
 
 ## 如何移轉託管和Managed Services環境？ {#ims-migration-procedure}
@@ -90,7 +92,7 @@ Adobe可協助您進行這項移轉工作。 您可在下文中找到詳細的�
 1. 升級後，您仍然可以透過兩種方法建立新使用者，以原生使用者身分或透過IMS。
 1. 您的內部Campaign管理員必須設定Adobe IMS，如[本節](../../integrations/using/configuring-ims.md)所述。
 1. 然後新增唯一電子郵件至Campaign使用者端主控台上的所有原生使用者。 此步驟在[此區段](#ims-migration-id)中有詳細說明。
-1. 在Adobe Admin Console中建立使用者和產品設定檔，如[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/manage-permissions.html?lang=zh-Hant){target="_blank"}中所述。
+1. 在Adobe Admin Console中建立使用者和產品設定檔，如[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/manage-permissions.html){target="_blank"}中所述。
 1. 為所有運運算元啟用&#x200B;**與Adobe ID連線**&#x200B;選項。
 1. 實作您連線的Adobe IMS，如[此頁面](../../integrations/using/implementing-ims.md)所詳述。
 

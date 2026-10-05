@@ -6,21 +6,19 @@ badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Ca
 feature: Subscriptions
 role: User
 exl-id: 16dddd4a-2e1a-4c78-8168-f656657bb9b8
-TQID: https://experienceleague.adobe.com/BrXFZAa9EiCWFYN6DabgLk9pjw3rS5TXCgzV63e5xmE
+TQID: 'https://experienceleague.adobe.com/BrXFZAa9EiCWFYN6DabgLk9pjw3rS5TXCgzV63e5xmE'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-    internal-label: User
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-    internal-label: Personalization
+  - id: fd6e6e36-54e4-4f1a-96fc-1a750e400d50
+    internal-label: Campaign Classic v7
 feature_v2:
   - id: b631758a-142d-425f-b9aa-f756d85cb979
     internal-label: Campaign Email Designer
   - id: c858a28b-ea19-49b0-8d48-828717fad89c
     internal-label: Prepare and test messages
+  - id: afa4204e-6d08-4e29-bc35-26aafb656d48
+    internal-label: Profiles and audiences
 subfeature_v2:
   - id: e95a583b-fcfa-4524-8666-46a29c828119
     internal-label: Email messaging
@@ -30,7 +28,15 @@ subfeature_v2:
     internal-label: A/B testing
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
     internal-label: Manage deliverability
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+  - id: d4adbfcb-4ec0-5691-b003-d940294aa34c
+    internal-label: Subscriptions
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
+source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
 workflow-type: tm+mt
 source-wordcount: '1113'
 ht-degree: 2%
@@ -168,7 +174,7 @@ ht-degree: 2%
 
 預設取消訂閱連結會透過傳遞助理員中提供的內容編輯器工具列中的最後一個按鈕插入（請參閱[關於個人化](about-personalization.md)）。 收件者按一下此連結時，設定檔會新增至封鎖清單（選擇退出），表示任何傳遞動作都不會再鎖定此收件者。
 
-但是，收件者可以選擇取消訂閱服務，而不取消訂閱所有服務。 若要允許，您可以使用網路表單（請參閱[本區段](../../web/using/adding-fields-to-a-web-form.md#subscription-checkboxes)）或插入個人化的取消訂閱連結。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=zh-Hant){target="_blank"}。
+但是，收件者可以選擇取消訂閱服務，而不取消訂閱所有服務。 若要允許，您可以使用網路表單（請參閱[本區段](../../web/using/adding-fields-to-a-web-form.md#subscription-checkboxes)）或插入個人化的取消訂閱連結。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}。
 
 您也可以從收件者設定檔手動取消訂閱收件者。 若要這麼做，請按一下相關收件者的&#x200B;**[!UICONTROL Subscriptions]**&#x200B;標籤，選取相關資訊服務，然後按一下&#x200B;**[!UICONTROL Delete]**。
 

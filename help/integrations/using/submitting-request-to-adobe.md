@@ -8,26 +8,32 @@ audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 exl-id: f3c19fcd-12cb-4ca3-b4b7-7dc4be57f4ea
-TQID: https://experienceleague.adobe.com/IIiDeR9teIgEBsbUb70DP-PA56Ux2MmpmBZuVIVF0M0
+TQID: 'https://experienceleague.adobe.com/IIiDeR9teIgEBsbUb70DP-PA56Ux2MmpmBZuVIVF0M0'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
+  - id: fd6e6e36-54e4-4f1a-96fc-1a750e400d50
+    internal-label: Campaign Classic v7
 feature_v2:
   - id: d5ef99fa-df0c-4153-bf94-105ad0724167
     internal-label: Integrations
+  - id: afa4204e-6d08-4e29-bc35-26aafb656d48
+    internal-label: Profiles and audiences
+subfeature_v2:
+  - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+    internal-label: Analytics integration
+  - id: df0d6518-6f49-46e2-b46e-3bcc513f553f
+    internal-label: Experience Manager integration
+  - id: eb007b6d-6e57-46ab-9485-3f24d6102304
+    internal-label: Experience Platform integration
+  - id: b1fd1501-3105-4d6b-b4d4-9af53126df75
+    internal-label: Target integration
+  - id: d6330382-c886-4f7a-a4f7-74e3f36c0d9c
+    internal-label: Audiences
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-subfeature_v2:
-  - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
-    internal-label: Adobe Analytics integration
-  - id: df0d6518-6f49-46e2-b46e-3bcc513f553f
-    internal-label: Adobe Experience Manager integration
-  - id: eb007b6d-6e57-46ab-9485-3f24d6102304
-    internal-label: Adobe Experience Platform integration
-  - id: b1fd1501-3105-4d6b-b4d4-9af53126df75
-    internal-label: Adobe Target integration
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 7%
@@ -38,7 +44,7 @@ ht-degree: 7%
 >
 >身為v7使用者，若要繼續進行，請確定您的系統上已啟用Adobe Identity Management系統(IMS)。 [了解更多資訊](../../integrations/using/about-adobe-id.md)。
 
-為您的組織啟用Adobe Identity Management Service (IMS)後，您就可以請求布建[Experience Cloud Audience](https://experienceleague.adobe.com/zh-hant/docs/core-services/interface/services/audiences/overview){target="_blank"}與Campaign的整合。 若要這麼做，請聯絡您的Adobe代表，並提供下列資訊：
+為您的組織啟用Adobe Identity Management Service (IMS)後，您就可以請求布建[Experience Cloud Audience](https://experienceleague.adobe.com/en/docs/core-services/interface/services/audiences/overview){target="_blank"}與Campaign的整合。 若要這麼做，請聯絡您的Adobe代表，並提供下列資訊：
 
 <table> 
  <tbody> 

@@ -8,23 +8,29 @@ audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 exl-id: c2293fc5-c9ba-4a73-8f39-fa7cdd06e8dd
-TQID: https://experienceleague.adobe.com/bOM6WFh4gyejeYtHdOSBO3jbY4LFvLB--P5pxN5t5O0
+TQID: 'https://experienceleague.adobe.com/bOM6WFh4gyejeYtHdOSBO3jbY4LFvLB--P5pxN5t5O0'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
+  - id: fd6e6e36-54e4-4f1a-96fc-1a750e400d50
+    internal-label: Campaign Classic v7
 feature_v2:
   - id: d5ef99fa-df0c-4153-bf94-105ad0724167
     internal-label: Integrations
+  - id: afa4204e-6d08-4e29-bc35-26aafb656d48
+    internal-label: Profiles and audiences
 subfeature_v2:
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
-    internal-label: Adobe Analytics integration
+    internal-label: Analytics integration
   - id: df0d6518-6f49-46e2-b46e-3bcc513f553f
-    internal-label: Adobe Experience Manager integration
+    internal-label: Experience Manager integration
   - id: eb007b6d-6e57-46ab-9485-3f24d6102304
-    internal-label: Adobe Experience Platform integration
+    internal-label: Experience Platform integration
   - id: b1fd1501-3105-4d6b-b4d4-9af53126df75
-    internal-label: Adobe Target integration
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+    internal-label: Target integration
+  - id: d6330382-c886-4f7a-a4f7-74e3f36c0d9c
+    internal-label: Audiences
+source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
 workflow-type: tm+mt
 source-wordcount: '616'
 ht-degree: 3%
@@ -63,7 +69,7 @@ ht-degree: 3%
 >
 >如果您要將對象從Adobe Analytics匯入至Adobe Campaign，首先需要在Audience Manager中共用這些對象。 此程式需要12到24小時，必須將其新增到與Campaign的24到36小時同步中。
 >
->在該特定情況下，對象共用時間範圍最長可達60小時。 如需Audience Manager中Adobe Analytics對象共用的詳細資訊，請參閱[Adobe Analytics檔案](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html?lang=zh-Hant){target="_blank"}。
+>在該特定情況下，對象共用時間範圍最長可達60小時。 如需Audience Manager中Adobe Analytics對象共用的詳細資訊，請參閱[Adobe Analytics檔案](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html){target="_blank"}。
 
 每次同步化時，對象資料都會完全取代。 只能匯入區段。 不支援包含鍵值組、特徵和規則的精細資料。
 
@@ -93,7 +99,7 @@ ht-degree: 3%
 
 然後會匯出對象。 儲存對象活動有兩個外站轉變。 主要轉變包含已成功匯出的收件者。 額外的轉變包含無法對應訪客ID或宣告ID的收件者。
 
-解決方案之間的同步化需要24到36小時的時間。 在此期間後，您將能夠找到新受眾，並在其他Adobe Experience Cloud解決方案中重複使用它。 如需使用Adobe Campaign共用對象的詳細資訊，請參閱此[檔案](https://experienceleague.adobe.com/zh-hant/docs/core-services/interface/services/audiences/create){target="_blank"}。
+解決方案之間的同步化需要24到36小時的時間。 在此期間後，您將能夠找到新受眾，並在其他Adobe Experience Cloud解決方案中重複使用它。 如需使用Adobe Campaign共用對象的詳細資訊，請參閱此[檔案](https://experienceleague.adobe.com/en/docs/core-services/interface/services/audiences/create){target="_blank"}。
 
 >[!NOTE]
 >

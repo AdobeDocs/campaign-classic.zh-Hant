@@ -7,10 +7,22 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 0b53b165-a6d8-4604-b3f0-3fa6fce35146
-TQID: https://experienceleague.adobe.com/F1-F9k9cn7jFb-xmYCQUq5h1-3A6-bajr1cfxeHNPf0
+TQID: 'https://experienceleague.adobe.com/F1-F9k9cn7jFb-xmYCQUq5h1-3A6-bajr1cfxeHNPf0'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
+  - id: fd6e6e36-54e4-4f1a-96fc-1a750e400d50
+    internal-label: Campaign Classic v7
+feature_v2:
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
+subfeature_v2:
+  - id: e656c701-3899-4db3-989c-de0980ddfffa
+    internal-label: Installation
+  - id: ee3dfd63-9a21-4961-9f24-ea3385284a21
+    internal-label: Federated Data Access
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
@@ -18,9 +30,7 @@ topic_v2:
     internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-feature_v2: []
-subfeature_v2: []
-source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
+source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 4%
@@ -42,7 +52,7 @@ ht-degree: 4%
 
 若要透過FDA設定外部資料庫的存取權，設定步驟如下：
 
-1. 安裝驅動程式，並設定與Adobe Campaign伺服器上的資料庫對應的外部帳戶。 請參閱下列的資料庫特定頁面[&#128279;](#fda-specific-configuration)
+1. 安裝驅動程式，並設定與Adobe Campaign伺服器上的資料庫對應的外部帳戶。 請參閱下列的資料庫特定頁面[](#fda-specific-configuration)
 1. 測試外部帳戶，或在Adobe Campaign和外部資料庫之間建立暫時連線。 [了解更多](../../installation/using/connecting-to-database.md)
 1. 在Adobe Campaign中建立外部資料庫的結構描述。 這可讓您識別外部資料庫的資料結構。 [了解更多](../../installation/using/creating-data-schema.md)
 1. 如有需要，請從先前建立的綱要建立新的目標對應。 如果傳送的收件者來自外部資料庫，則需要此專案。 此實施隨附與訊息個人化相關的限制。 [了解更多](../../installation/using/defining-data-mapping.md)

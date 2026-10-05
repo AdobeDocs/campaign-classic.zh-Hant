@@ -8,16 +8,19 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 4596638c-d75a-4e07-a2d8-5befcaad3430
-TQID: https://experienceleague.adobe.com/mnkVYu3ibG6yFi1Zd5q1b1-CnzdheG8xvmM8q92-8vQ
+TQID: 'https://experienceleague.adobe.com/mnkVYu3ibG6yFi1Zd5q1b1-CnzdheG8xvmM8q92-8vQ'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
-topic_v2:
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-    internal-label: Data management
+  - id: fd6e6e36-54e4-4f1a-96fc-1a750e400d50
+    internal-label: Campaign Classic v7
 feature_v2:
   - id: afa4204e-6d08-4e29-bc35-26aafb656d48
     internal-label: Profiles and audiences
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
+  - id: a7760dfc-5c44-4d77-bb68-c50b1e265c93
+    internal-label: Security and privacy
 subfeature_v2:
   - id: f529d0bd-1401-4c88-9833-43228cc1d40f
     internal-label: Profiles
@@ -27,7 +30,12 @@ subfeature_v2:
     internal-label: Query Editor
   - id: efa38731-2723-4334-8d8b-a778af834835
     internal-label: Access management
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+  - id: d0dbac2b-cbd2-42b3-956e-60af02966728
+    internal-label: Encryption
+topic_v2:
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
+source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
 workflow-type: tm+mt
 source-wordcount: '608'
 ht-degree: 10%
@@ -38,7 +46,7 @@ Adobe Campaign可讓您匯出壓縮或加密的檔案。 透過&#x200B;**[!UICON
 
 若要這麼做：
 
-1. 使用[控制面板](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=zh-Hant#encrypting-data)為您的執行個體安裝GPG金鑰組。
+1. 使用[控制面板](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html#encrypting-data)為您的執行個體安裝GPG金鑰組。
 
    >[!NOTE]
    >
@@ -53,7 +61,7 @@ Adobe Campaign可讓您匯出壓縮或加密的檔案。 透過&#x200B;**[!UICON
 **相關主題：**
 
 * [在處理前先解壓縮或解密檔案](../../platform/using/unzip-decrypt.md)
-* [資料擷取（檔案）活動](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html?lang=zh-Hant){target="_blank"}
+* [資料擷取（檔案）活動](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html){target="_blank"}
 
 ## 使用案例：使用安裝於控制面板的金鑰加密及匯出資料 {#use-case-gpg-encrypt}
 
@@ -63,7 +71,7 @@ Adobe Campaign可讓您匯出壓縮或加密的檔案。 透過&#x200B;**[!UICON
 
 執行此使用案例的步驟如下：
 
-1. 使用GPG公用程式產生GPG金鑰組（公用/私用），然後將公用金鑰安裝至「控制面板」。 詳細步驟可在[控制面板檔案](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=zh-Hant#encrypting-data)中取得。
+1. 使用GPG公用程式產生GPG金鑰組（公用/私用），然後將公用金鑰安裝至「控制面板」。 詳細步驟可在[控制面板檔案](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html#encrypting-data)中取得。
 
 1. 在Campaign Classic中，建立工作流程以匯出資料，並使用已透過「控制面板」安裝的私密金鑰加以加密。 為此，我們將建立工作流程，如下所示：
 
@@ -74,9 +82,9 @@ Adobe Campaign可讓您匯出壓縮或加密的檔案。 透過&#x200B;**[!UICON
    * **[!UICONTROL JavaScript code]**&#x200B;活動：加密要擷取的資料。
    * **[!UICONTROL File transfer]**&#x200B;活動：將資料傳送至外部來源（在此範例中為SFTP伺服器）。
 
-1. 設定&#x200B;**[!UICONTROL Query]**&#x200B;活動，從資料庫中鎖定所需的資料。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=zh-Hant){target="_blank"}。
+1. 設定&#x200B;**[!UICONTROL Query]**&#x200B;活動，從資料庫中鎖定所需的資料。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}。
 
-1. 開啟&#x200B;**[!UICONTROL Data extraction (file)]**&#x200B;活動，然後根據您的需求進行設定。 有關如何設定活動的全域概念可在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html?lang=zh-Hant){target="_blank"}中取得。
+1. 開啟&#x200B;**[!UICONTROL Data extraction (file)]**&#x200B;活動，然後根據您的需求進行設定。 有關如何設定活動的全域概念可在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html){target="_blank"}中取得。
 
    ![](assets/gpg-data-extraction.png)
 
@@ -98,7 +106,7 @@ Adobe Campaign可讓您匯出壓縮或加密的檔案。 透過&#x200B;**[!UICON
 
    ![](assets/gpg-script.png)
 
-1. 開啟&#x200B;**[!UICONTROL File transfer]**&#x200B;活動，然後指定您要傳送檔案的SFTP伺服器。 有關如何設定活動的全域概念可在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=zh-Hant){target="_blank"}中取得。
+1. 開啟&#x200B;**[!UICONTROL File transfer]**&#x200B;活動，然後指定您要傳送檔案的SFTP伺服器。 有關如何設定活動的全域概念可在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}中取得。
 
    ![](assets/gpg-file-transfer.png)
 
