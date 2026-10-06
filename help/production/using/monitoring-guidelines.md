@@ -4,13 +4,17 @@ title: 監視指南
 description: 探索監控 Campaign 執行個體和程序的準則和最佳作法
 feature: Monitoring
 exl-id: ca0c33c5-7350-462a-bc65-4cab51e529d9
-TQID: https://experienceleague.adobe.com/qki-Rd3f6TAOiXDXaZ-N4YCxDwg-cc8LZspHtTbYcrE
+TQID: 'https://experienceleague.adobe.com/qki-Rd3f6TAOiXDXaZ-N4YCxDwg-cc8LZspHtTbYcrE'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
+  - id: fd6e6e36-54e4-4f1a-96fc-1a750e400d50
+    internal-label: Campaign Classic v7
 feature_v2:
   - id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
     internal-label: Schemas
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 subfeature_v2:
   - id: c03a11ff-bdf9-4e5b-b279-f468b4293464
     internal-label: Performance Monitoring
@@ -21,7 +25,7 @@ topic_v2:
     internal-label: Troubleshooting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
 workflow-type: tm+mt
 source-wordcount: '835'
 ht-degree: 19%
@@ -96,8 +100,8 @@ ht-degree: 19%
 **一般准則**
 
 使用工作流程時，遵循准則和最佳實務有助於改善效能。 如需詳細資訊，請參閱下列章節：
-* [使用工作流程時的最佳實務](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=zh-Hant){target="_blank"}
-* [監控工作流程執行](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=zh-Hant){target="_blank"}
+* [使用工作流程時的最佳實務](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html){target="_blank"}
+* [監控工作流程執行](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}
 
 ### 監視傳遞 {#monitoring-deliveries}
 
@@ -109,7 +113,7 @@ SMTP報告會依網域顯示傳遞統計資料和SMTP錯誤。 [了解更多](..
 
 **最佳實務**
 
-請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=zh-Hant){target="_blank"}以瞭解傳送和設計傳送的最佳實務，以改善效能。
+請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html){target="_blank"}以瞭解傳送和設計傳送的最佳實務，以改善效能。
 
 **傳遞疑難排解**
 遇到傳送問題時，可執行特定動作：
