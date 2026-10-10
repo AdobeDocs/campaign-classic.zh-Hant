@@ -47,7 +47,7 @@ ht-degree: 4%
 
 若要這麼做，請新增並設定：
 
-* 將目標資料擷取至CSV檔案的&#x200B;**[!UICONTROL Data extraction (file)]**&#x200B;活動。 有關如何設定此活動的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html){target="_blank"}。
+* 將目標資料擷取至CSV檔案的&#x200B;**[!UICONTROL Data extraction (file)]**&#x200B;活動。 有關如何設定此活動的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html?lang=zh-Hant){target="_blank"}。
 
   ![](assets/rtcdp-extract-file.png)
 
@@ -65,7 +65,7 @@ ht-degree: 4%
 
 1. 在Adobe Experience Platform **[!UICONTROL Sources]**&#x200B;功能表中，建立與儲存位置的連線：
 
-   * [建立Amazon S3來源連線](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/s3.html)
+   * [建立Amazon S3來源連線](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/s3.html?lang=zh-Hant)
    * [Azure Blob聯結器](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/cloud-storage/blob.html?lang=zh-Hant)
 
    >[!NOTE]

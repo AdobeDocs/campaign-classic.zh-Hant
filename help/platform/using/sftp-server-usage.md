@@ -48,7 +48,7 @@ ht-degree: 24%
 
 * 為避免密碼過期（密碼的有效期為90天），請使用以金鑰為基礎的驗證而非密碼驗證。 此外，以金鑰為基礎的驗證可讓您產生多個金鑰，例如在管理多個實體時。 相反，密碼身份驗證要求您與所管理的所有實體共享密碼。
 
-  支援的金鑰格式為SSH-2 RSA 2048。 為Windows產生SSH金鑰的工具為PuTTYgen，而為Linux產生ssh-keygen。 您可以透過Campaign「控制面板」上傳公開SSH金鑰。 [了解更多](https://experienceleague.adobe.com/en/docs/control-panel/using/sftp-management/key-management){target="_blank"}
+  支援的金鑰格式為SSH-2 RSA 2048。 為Windows產生SSH金鑰的工具為PuTTYgen，而為Linux產生ssh-keygen。 您可以透過Campaign「控制面板」上傳公開SSH金鑰。 [了解更多](https://experienceleague.adobe.com/zh-hant/docs/control-panel/using/sftp-management/key-management){target="_blank"}
 
 * 在 SFTP 上載和工作流程中使用批次處理。
 
@@ -68,7 +68,7 @@ SFTP伺服器是設計作為暫存空間，您可以在其上控制檔案的保�
 
 >[!NOTE]
 >
->* 您可以使用Campaign Classic [控制面板](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html){target="_blank"}監視您的SFTP伺服器儲存空間。
+>* 您可以使用Campaign Classic [控制面板](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html?lang=zh-Hant){target="_blank"}監視您的SFTP伺服器儲存空間。
 >
 >* 所有管理員使用者都可存取控制面板。 授予使用者管理員存取權限的步驟已詳載於[本頁](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hant#discover-control-panel){target="_blank"}中。
 >

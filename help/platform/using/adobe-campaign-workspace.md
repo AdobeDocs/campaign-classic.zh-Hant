@@ -179,15 +179,15 @@ Adobe Campaign檔案總管可透過工具列圖示存取。 它可讓您存取�
 
 >[!TAB 在工作流程中新增查詢]
 
-在&#x200B;**[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}**&#x200B;中，瞭解在工作流程的內容中建立查詢的相關關鍵步驟
+在&#x200B;**[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}**&#x200B;中，瞭解在工作流程的內容中建立查詢的相關關鍵步驟
 
-[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}
+[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}
 
 >[!TAB 篩選條件]
 
-若要設計查詢，您必須在查詢編輯器中選取篩選條件。 可用的功能和使用案例在&#x200B;**[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/query/filter-conditions){target=_blank}**&#x200B;中詳細說明
+若要設計查詢，您必須在查詢編輯器中選取篩選條件。 可用的功能和使用案例在&#x200B;**[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/data/query/filter-conditions){target=_blank}**&#x200B;中詳細說明
 
-[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/query/filter-conditions){target=_blank}
+[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/data/query/filter-conditions){target=_blank}
 
 >[!ENDTABS]
 
@@ -203,7 +203,7 @@ Adobe Campaign檔案總管可透過工具列圖示存取。 它可讓您存取�
 
 定義後，值會顯示在下拉式清單中。 您可以直接選取值，或使用預測性輸入來輸入值，這會建議並完成相符專案。 某些欄位包含預先定義的分項清單，如果需要，可以建立其他分項清單。
 
-在[Adobe Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}中進一步瞭解如何&#x200B;**使用分項清單**。
+在[Adobe Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}中進一步瞭解如何&#x200B;**使用分項清單**。
 
 ## 教學課程影片 {#video}
 

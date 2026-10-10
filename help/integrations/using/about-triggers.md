@@ -56,7 +56,7 @@ ht-degree: 8%
 由於設定最小且不含第三方，因此可容許更敏捷的整合。
 它也能支援大量流量，而不會影響行銷活動的效能。 例如，整合每小時可處理100萬個觸發器。
 
-![](assets/do-not-localize/book.png)探索如何[建立Experience Cloud觸發程式](https://experienceleague.adobe.com/docs/experience-cloud/triggers/create.html)，並識別、定義及監控重要的消費者行為。
+![](assets/do-not-localize/book.png)探索如何[建立Experience Cloud觸發程式](https://experienceleague.adobe.com/docs/experience-cloud/triggers/create.html?lang=zh-Hant)，並識別、定義及監控重要的消費者行為。
 
 ## [!DNL Triggers]架構 {#triggers-architecture}
 
