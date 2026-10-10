@@ -49,7 +49,7 @@ ht-degree: 1%
 
 * **篩選外部資料** — 查詢活動可讓您新增外部資料，並將其用於定義的篩選設定。 如需詳細資訊，請參閱[Campaign v8檔案]https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/targeting-workflows.html?lang=zh-Hant){target="_blank"}。
 
-* **建立子集** — 分割活動可讓您建立子集。 您可以使用外部資料來定義要使用的篩選條件。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/split.html){target="_blank"}。
+* **建立子集** — 分割活動可讓您建立子集。 您可以使用外部資料來定義要使用的篩選條件。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/split.html?lang=zh-Hant){target="_blank"}。
 
 * **載入外部資料庫** — 您可以在資料載入(RDBMS)活動中使用外部資料。 在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-rdbms.html?lang=zh-Hant){target="_blank"}中瞭解更多。
 

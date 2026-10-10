@@ -94,7 +94,7 @@ Adobe Analytics 1.4 API [即將結束生命週期](https://developer.adobe.com/a
 
 1. 按一下 **[!UICONTROL Save]**。
 
-當您在下一步設定外部帳戶時，Campaign會自動探索此分類集。 如需分類集的詳細資訊，請參閱[Adobe Analytics檔案](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/sets/create-set){target="_blank"}。
+當您在下一步設定外部帳戶時，Campaign會自動探索此分類集。 如需分類集的詳細資訊，請參閱[Adobe Analytics檔案](https://experienceleague.adobe.com/zh-hant/docs/analytics/components/classifications/sets/create-set){target="_blank"}。
 
 ## 需要協助嗎? {#need-help}
 

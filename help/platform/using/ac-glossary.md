@@ -142,7 +142,7 @@ Learn more about [Campaigns](../../campaign/using/designing-marketing-campaigns.
 
 Campaign是協調、定義及執行行銷活動的介面。 行銷活動可以將一或多個工作流程、傳遞、檔案和其他相關資料點整合到單一、易用的介面中。
 
-在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html){target=_blank}中進一步瞭解行銷活動。
+在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html?lang=zh-Hant){target=_blank}中進一步瞭解行銷活動。
 +++
 
 <!--
@@ -183,7 +183,7 @@ Campaign使用者端主控台是豐富的使用者端，可讓您連線至您的
 
 使用控制組組，透過排除其閱聽眾的一部分來評估行銷活動的影響。 操作員可以將收到訊息的目標群體的行為與未作為目標的連絡人的行為進行比較。 根據傳送記錄，操作員也可以在未來的行銷活動中以控制群組為目標。
 
-在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html#add-a-control-group){target="_blank"}中進一步瞭解控制組。
+在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=zh-Hant#add-a-control-group){target="_blank"}中進一步瞭解控制組。
 +++
 
 +++**控制面板**
@@ -255,14 +255,14 @@ Learn more about [Transactional Messaging](../../message-center/using/about-tran
 
 傳遞分析是傳遞的準備。 此程式會將內容與收件者設定檔資料結合，以產生收件者收到的個人化電子郵件。 傳遞分析邏輯可以根據定義的邏輯，從目標中排除收件者或完全停止傳遞。 此程式也包含動態內容邏輯的評估，以及插入個別收件者設定檔專屬的優惠。
 
-在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html){target="_blank"}中進一步瞭解傳遞分析。
+在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html?lang=zh-Hant){target="_blank"}中進一步瞭解傳遞分析。
 +++
 
 +++**傳遞記錄**
 
 傳遞記錄檔包含傳送訊息時產生的資訊。 這些記錄會顯示傳送的詳細資料，其中訊息已準備、忽略、傳送或失敗。 可直接從傳遞控制面板存取這些值。
 
-深入瞭解[傳遞記錄](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"}。
+深入瞭解[傳遞記錄](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"}。
 +++
 
 <!--
@@ -387,7 +387,7 @@ An engine call is a server call that starts real-time processing on server side 
 
 列舉是在結構描述中或在Platform層級定義的資料型別，可定義欄位的有效輸入值。 列舉會顯示在使用者介面中，並在查詢建置器中顯示為挑選清單。
 
-在[Adobe Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}中進一步瞭解如何&#x200B;**使用分項清單**。
+在[Adobe Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}中進一步瞭解如何&#x200B;**使用分項清單**。
 +++
 
 +++**總管檢視**
@@ -435,7 +435,7 @@ An engine call is a server call that starts real-time processing on server side 
 
 篩選維度是包含資料或屬性的結構描述，這些資料或屬性由查詢用來篩選所需的列。 篩選維度結構描述必須直接連結至定義的目標維度，以允許Adobe Campaign跨資料庫聯結並傳回回應列。
 
-在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/targeting-workflows.html#targeting-and-filtering-dimensions){target="_blank"}中進一步瞭解篩選維度。
+在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/targeting-workflows.html?lang=zh-Hant#targeting-and-filtering-dimensions){target="_blank"}中進一步瞭解篩選維度。
 +++
 
 +++**資料夾**
@@ -613,7 +613,7 @@ Learn more about [Navigation Bar](../../platform/using/adobe-campaign-workspace.
 
 在行銷活動、方案或計畫中，操作員可以陳述目標清單。 這些是可達到的量化值。 在行銷活動、方案或計畫結束時，MRM模組可讓操作員比較專用報告中的目標和結果。
 
-在[Adobe Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/mrm/creating-and-managing-tasks.html#expenses-and-revenues){target=_blank}中進一步瞭解目標。
+在[Adobe Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/mrm/creating-and-managing-tasks.html?lang=zh-Hant#expenses-and-revenues){target=_blank}中進一步瞭解目標。
 +++
 
 +++**優惠方案目錄**
@@ -795,7 +795,7 @@ Learn more about [Navigation Bar](../../platform/using/adobe-campaign-workspace.
 
 工作流程浮動視窗會顯示可新增至工作流程的可用活動。 此元件以標籤格式顯示，工作流程活動按其使用邏輯分組。 浮動視窗上可用的活動取決於已安裝至Campaign執行個體的附加元件，以及顯示工作流程的前後關聯。
 
-在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html#add-and-link-activities){target="_blank"}中進一步了解調色盤。
+在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=zh-Hant#add-and-link-activities){target="_blank"}中進一步了解調色盤。
 +++
 
 +++**效能監視**
@@ -809,7 +809,7 @@ Learn more about [Navigation Bar](../../platform/using/adobe-campaign-workspace.
 
 Adobe Campaign提供可插入傳遞中的內建個人化區塊。 這些變數是動態的、個人化的，並包含特定轉譯。 例如，您可以新增標誌、問候語訊息或映象頁面的連結。 預設提供數個個人化區塊。 您也可以定義自訂個人化區塊，以讓您將傳送個人化最佳化。 實際資料會在傳遞的分析階段插入每個產生的訊息中。
 
-在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}中進一步瞭解個人化區塊。
+在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=zh-Hant){target="_blank"}中進一步瞭解個人化區塊。
 +++
 
 +++**Personalization欄位**
@@ -837,7 +837,7 @@ Personalization變數是傳遞中的程式碼片段，可根據收件者的資�
 
 預先定義的篩選器是已儲存以供重複使用的查詢。 使用預先定義的篩選器可提升生產力（因為這些篩選器只會建立一次）、協助建立一致性（因為所有行銷人員都可以使用篩選器），並降低行銷人員所需的技能，因為他們可能會使用可能無法自行建立的程式碼或邏輯。
 
-如需篩選器的詳細資訊，請參閱[Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}。
+如需篩選器的詳細資訊，請參閱[Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/audience/create-filters){target=_blank}。
 +++
 
 <!--
@@ -955,7 +955,7 @@ Adobe Campaign可讓您建立和管理資訊服務（例如電子報或產品更
 
 在「控制面板」中，您可以與所有連線至您可存取之 Campaign 執行個體的 SFTP 伺服器互動。 「控制面板」可以讓您對SFTP伺服器執行動作，例如監視儲存容量、管理IP位址允許清單及管理公開SSH金鑰。
 
-深入瞭解[SFTP管理](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html)。
+深入瞭解[SFTP管理](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html?lang=zh-Hant)。
 +++
 
 +++**訂閱服務活動**
@@ -971,21 +971,21 @@ Adobe Campaign可讓您建立和管理資訊服務（例如電子報或產品更
 
 目標核准是讓個別操作員或操作員群組核准傳遞的最終目標的程式（在分析階段產生目標後），然後才能傳送傳遞。
 
-在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/approval.html){target="_blank"}中進一步瞭解Target核准活動。
+在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/approval.html?lang=zh-Hant){target="_blank"}中進一步瞭解Target核准活動。
 +++
 
 +++**目標資料**
 
 目標資料是儲存在工作流程的工作表（轉變）中的資料。 此資料可在傳遞中使用，以個人化傳遞內容或定義傳遞的動態元素邏輯。
 
-在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/use-workflow-data.html#target-data){target="_blank"}中進一步瞭解目標資料。
+在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/use-workflow-data.html?lang=zh-Hant#target-data){target="_blank"}中進一步瞭解目標資料。
 +++
 
 +++**目標對應**
 
 目標對應是傳遞管道與特定資料型別的對應。 目標對應定義不同傳遞通道如何連結至結構描述的資料欄位。 它會定義Campaign使用特定欄位或運算式傳送至該資料型別的方式。
 
-在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/audience/add-profiles/target-mappings.html){target="_blank"}中進一步瞭解目標對應。
+在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/audience/add-profiles/target-mappings.html?lang=zh-Hant){target="_blank"}中進一步瞭解目標對應。
 +++
 
 +++**目標定位活動**
@@ -1000,7 +1000,7 @@ Adobe Campaign可讓您建立和管理資訊服務（例如電子報或產品更
 
 目標維度是由查詢或其他工作流程活動產生（傳回）的資料型別。 請注意，無論使用什麼查詢來取得回應資料庫列，Adobe Campaign只會傳回回應資料庫列的主索引鍵。
 
-在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/targeting-workflows.html){target="_blank"}中進一步瞭解目標維度。
+在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/targeting-workflows.html?lang=zh-Hant){target="_blank"}中進一步瞭解目標維度。
 +++
 
 +++**任務活動**
@@ -1126,7 +1126,7 @@ Learn more about [Triggers](../../workflow/using/about-workflows.md).
 
 工作流程日誌是工作流程的逐步執行記錄。 它包含工作流程的所有歷史記錄或稽核軌跡。 它可用於開發、疑難排解或偵錯。
 
-在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}中進一步瞭解工作流程日誌。
+在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=zh-Hant){target="_blank"}中進一步瞭解工作流程日誌。
 +++
 
 +++**工作表**

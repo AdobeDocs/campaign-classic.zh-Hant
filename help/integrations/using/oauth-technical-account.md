@@ -76,7 +76,7 @@ Adobe已棄用服務帳戶(JWT)憑證。 Campaign與Adobe解決方案和應用�
 
 1. 選取專案的&#x200B;**[!UICONTROL Product profile]**&#x200B;連結。
 
-   您可以視需要建立新檔案。 [了解更多](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html)
+   您可以視需要建立新檔案。 [了解更多](https://helpx.adobe.com/tw/enterprise/using/manage-product-profiles.html)
 
 1. 然後，按一下&#x200B;**[!UICONTROL Save Configured API]**。
 

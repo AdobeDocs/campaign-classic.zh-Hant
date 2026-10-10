@@ -75,7 +75,7 @@ Adobe Campaign可讓您匯入壓縮或加密的檔案。 在[資料載入（檔�
 **相關主題：**
 
 * [資料載入（檔案）活動](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html?lang=zh-Hant){target="_blank"}。
-* [壓縮或加密檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html){target="_blank"}。
+* [壓縮或加密檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html?lang=zh-Hant){target="_blank"}。
 
 ## 使用案例：匯入使用控制面板產生的金鑰加密的資料 {#use-case-gpg-decrypt}
 
@@ -105,7 +105,7 @@ Adobe Campaign可讓您匯入壓縮或加密的檔案。 在[資料載入（檔�
 
    ![](assets/gpg_key_transfer.png)
 
-   有關如何設定活動的全域概念可在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}中取得。
+   有關如何設定活動的全域概念可在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=zh-Hant){target="_blank"}中取得。
 
 
 1. 開啟&#x200B;**[!UICONTROL Data loading (file)]**&#x200B;活動，然後根據您的需求進行設定。 有關如何設定活動的全域概念可在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html?lang=zh-Hant){target="_blank"}中取得。

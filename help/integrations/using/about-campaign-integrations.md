@@ -61,7 +61,7 @@ Adobe Experience Cloud是一組同級最佳的全方位整合式解決方案，�
 
 多個解決方案可連結至Adobe Experience Cloud。 **組織**&#x200B;是客戶實體，可讓管理員設定群組和使用者，以及控制Adobe Experience Cloud中的單一登入(SSO)。 組織的作用就像一個登入公司，涵蓋所有Experience Cloud產品和解決方案。 通常，組織就是您的公司名稱。 但是，一個公司可以有許多組織。
 
-在[Adobe Experience Cloud說明入口網站](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations){_blank}中詳細說明組織管理和連結Adobe Experience Cloud帳戶。
+在[Adobe Experience Cloud說明入口網站](https://experienceleague.adobe.com/zh-hant/docs/core-services/interface/administration/organizations){_blank}中詳細說明組織管理和連結Adobe Experience Cloud帳戶。
 
 ## 身分和Cookie管理 {#id-and-cookies}
 
@@ -71,7 +71,7 @@ Adobe Experience Cloud Identity Service （以下簡稱為「ID服務」）提�
 
 系統會為產生追蹤記錄的收件者指派不重複訪客ID。 此ID將會儲存在&#x200B;**[!UICONTROL nms:trackingLogRcp]**&#x200B;資料表的&#x200B;**[!UICONTROL Requester UUID (@sourceID)]**&#x200B;欄位中。 **在訪客ID服務實作前存在的收件者追蹤資料將不再可用**。
 
-之後，具有相同CNAME的其他Adobe Experience Cloud解決方案將會識別該ID。 [了解更多資訊](https://experienceleague.adobe.com/en/docs/id-service/using/reference/analytics-reference/cname){_blank}。
+之後，具有相同CNAME的其他Adobe Experience Cloud解決方案將會識別該ID。 [了解更多資訊](https://experienceleague.adobe.com/zh-hant/docs/id-service/using/reference/analytics-reference/cname){_blank}。
 
 ## Experience Cloud 整合 {#experience-cloud-integrations}
 

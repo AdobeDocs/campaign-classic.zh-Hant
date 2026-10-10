@@ -49,7 +49,7 @@ ht-degree: 11%
 * [關於工作流程](../../workflow/using/about-workflows.md)
 * [正在啟動工作流程](https://experienceleague.adobe.com/docs/campaign/automation/workflows/executing-a-workflow/start-a-workflow.html?lang=zh-Hant){target="_blank"}。
 * [工作流程生命週期](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=zh-Hant){target="_blank"}。
-* [使用工作流程時的最佳實務](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html){target="_blank"}。
+* [使用工作流程時的最佳實務](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=zh-Hant){target="_blank"}。
 
 ## 在行銷活動中儘快開始 {#start-as-soon-as-possible-in-campaigns}
 
@@ -57,7 +57,7 @@ ht-degree: 11%
 
 此問題可能有幾個原因，請遵循下列步驟加以解決：
 
-1. 檢查&#x200B;[**[!UICONTROL operationMgt]**](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html){target="_blank"}技術工作流程狀態。 此工作流程可管理行銷活動內的工作或工作流程。 如果失敗，會導致工作流程無法啟動/停止。 重新啟動以繼續行銷活動工作流程執行。
+1. 檢查&#x200B;[**[!UICONTROL operationMgt]**](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html?lang=zh-Hant){target="_blank"}技術工作流程狀態。 此工作流程可管理行銷活動內的工作或工作流程。 如果失敗，會導致工作流程無法啟動/停止。 重新啟動以繼續行銷活動工作流程執行。
 
    如需技術工作流程監視的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-technical-workflows.html?lang=zh-Hant){target="_blank"}。
 

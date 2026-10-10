@@ -57,7 +57,7 @@ Adobe Campaign 是一款強大的工具，用於收集和處理包括個人資�
 
 >[!NOTE]
 >
->若要進一步瞭解Adobe Campaign的隱私權與安全法規，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/privacy/security){target=_blank}。
+>若要進一步瞭解Adobe Campaign的隱私權與安全法規，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/privacy/security){target=_blank}。
 
 
 <!--
