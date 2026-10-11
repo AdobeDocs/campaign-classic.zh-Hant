@@ -18,6 +18,8 @@ feature_v2:
     internal-label: Campaign Email Designer
   - id: c858a28b-ea19-49b0-8d48-828717fad89c
     internal-label: Prepare and test messages
+  - id: a4671286-a59f-47e3-b97b-90627a1977d5
+    internal-label: Communication channels
 subfeature_v2:
   - id: e95a583b-fcfa-4524-8666-46a29c828119
     internal-label: Email messaging
@@ -35,7 +37,7 @@ topic_v2:
     internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
 workflow-type: tm+mt
 source-wordcount: '1528'
 ht-degree: 3%
@@ -167,7 +169,7 @@ AMP for Email與現有電子郵件相容。 除了HTML和/或純文字外，AMP�
 * AMP MIME部分必須包含[有效的AMP檔案](https://amp.dev/documentation/guides-and-tutorials/learn/validation-workflow/validate_emails/?format=email)。
 * AMP MIME部分必須小於100KB。
 
-您也可以參閱Gmail[&#128279;](https://developers.google.com/gmail/ampemail/tips)檔案的提示和已知限制。
+您也可以參閱Gmail](https://developers.google.com/gmail/ampemail/tips)檔案的[提示和已知限制。
 
 ## AMP電子郵件定位 {#targeting-amp-email}
 

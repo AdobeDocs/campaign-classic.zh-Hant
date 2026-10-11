@@ -16,6 +16,8 @@ feature_v2:
     internal-label: Technote
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
     internal-label: Administration
+  - id: d5ef99fa-df0c-4153-bf94-105ad0724167
+    internal-label: Integrations
 subfeature_v2:
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
     internal-label: Analytics integration
@@ -24,7 +26,7 @@ subfeature_v2:
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
 workflow-type: tm+mt
 source-wordcount: '617'
 ht-degree: 9%
@@ -37,7 +39,7 @@ ht-degree: 9%
 
 ## 哪些部分有所變更？
 
-Adobe Identity Management服務(IMS)已於2021年6月30日&#x200B;**停止支援舊版Internet Explorer**。 [了解更多資訊](https://helpx.adobe.com/tw/x-productkb/global/update-operating-system-and-browser.html)。
+Adobe Identity Management服務(IMS)已於2021年6月30日&#x200B;**停止支援舊版Internet Explorer**。 [了解更多資訊](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html)。
 
 Adobe想要為所有超過2021年6月30日的客戶保留IMS功能。 IMS是安全性架構的一部分，可讓使用者登入使用者端主控台，即Adobe Campaign。
 
@@ -45,7 +47,7 @@ Adobe想要為所有超過2021年6月30日的客戶保留IMS功能。 IMS是安�
 
 ## 您有受到影響嗎？
 
-如果您是透過Adobe ID[&#128279;](../../integrations/using/about-adobe-id.md)、透過Adobe Identity Management Service (IMS)連線至Campaign ，且執行比下列版本舊的Campaign，則會受到影響。
+如果您是透過Adobe ID](../../integrations/using/about-adobe-id.md)、透過Adobe Identity Management Service (IMS)連線至Campaign [，且執行比下列版本舊的Campaign，則會受到影響。
 
 如果您已經升級，但使用的是舊版Microsoft Internet Explorer，則必須升級至Internet Explorer 11。
 
@@ -71,7 +73,7 @@ Adobe想要為所有超過2021年6月30日的客戶保留IMS功能。 IMS是安�
 
 **如何檢查我的Campaign版本？**
 
-在本節[&#128279;](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中瞭解如何確認您的版本。
+在本節](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中瞭解如何確認您的[版本。
 
 
 **如何檢查我是否使用IMS？**
@@ -94,7 +96,7 @@ Adobe想要為所有超過2021年6月30日的客戶保留IMS功能。 IMS是安�
 
 ![](../../integrations/using/assets/do-not-localize/errorMsg.png)
 
-如果您看到這類警告，請確定您已安裝目前使用之作業系統的最新更新。 [了解更多](https://helpx.adobe.com/tw/x-productkb/global/update-operating-system-and-browser.html)
+如果您看到這類警告，請確定您已安裝目前使用之作業系統的最新更新。 [了解更多](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html)
 
 如果您未更新Internet Explorer版本，則會看到以下訊息，且無法再連線至Adobe Campaign：
 

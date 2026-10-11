@@ -18,6 +18,8 @@ feature_v2:
     internal-label: Technote
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
     internal-label: Administration
+  - id: d5ef99fa-df0c-4153-bf94-105ad0724167
+    internal-label: Integrations
 subfeature_v2:
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
     internal-label: Analytics integration
@@ -26,7 +28,7 @@ subfeature_v2:
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
 workflow-type: tm+mt
 source-wordcount: '549'
 ht-degree: 0%
@@ -44,7 +46,7 @@ Adobe Campaign團隊將在&#x200B;**2022年6月15日**&#x200B;前執行Apache版
 
 此升級預計會在您正常營業時間以外自動執行，以便您繼續使用Campaign服務而不會造成任何中斷。
 
-您的非生產執行個體將先由Adobe升級，然後您的生產執行個體將升級。 由於這是Adobe所擁有的自動升級程式，因此您不需要採取任何動作。 不過，如果您發生任何問題，請連絡[Adobe客戶服務](https://experienceleague.adobe.com/zh-hant?support-solution=Campaign#support)。
+您的非生產執行個體將先由Adobe升級，然後您的生產執行個體將升級。 由於這是Adobe所擁有的自動升級程式，因此您不需要採取任何動作。 不過，如果您發生任何問題，請連絡[Adobe客戶服務](https://experienceleague.adobe.com/?support-solution=Campaign#support)。
 
 
 >[!NOTE]
@@ -75,7 +77,7 @@ Adobe Campaign團隊將在&#x200B;**2022年6月15日**&#x200B;前執行Apache版
 
 * **客戶需要執行哪些驗證？**
 
-  此安全性升級不需要任何特定測試。 如果發現任何問題，請聯絡[Adobe客戶服務](https://experienceleague.adobe.com/zh-hant?support-solution=Campaign#support)。
+  此安全性升級不需要任何特定測試。 如果發現任何問題，請聯絡[Adobe客戶服務](https://experienceleague.adobe.com/?support-solution=Campaign#support)。
 
 
 * **我可以要求變更排定的安全性升級位置的日期/時間嗎？**
@@ -83,4 +85,4 @@ Adobe Campaign團隊將在&#x200B;**2022年6月15日**&#x200B;前執行Apache版
   由於這是安全性修正，強烈建議您調整以符合現有的排程。
 
 
-如有任何其他問題，請連絡[Adobe客戶服務](https://experienceleague.adobe.com/zh-hant?support-solution=Campaign#support)。
+如有任何其他問題，請連絡[Adobe客戶服務](https://experienceleague.adobe.com/?support-solution=Campaign#support)。

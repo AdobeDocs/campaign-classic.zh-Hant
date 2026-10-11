@@ -13,6 +13,8 @@ product_v2:
 feature_v2:
   - id: a658c786-869b-4194-a780-2594d663adda
     internal-label: Data management
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 subfeature_v2:
   - id: ee25c34b-ea50-427b-9369-ba0a160f7d70
     internal-label: HeatMap
@@ -27,7 +29,7 @@ subfeature_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
 workflow-type: tm+mt
 source-wordcount: '280'
 ht-degree: 3%
@@ -40,11 +42,11 @@ ht-degree: 3%
 
 **[!UICONTROL Change data source]**&#x200B;活動可讓您變更工作流程&#x200B;**[!UICONTROL Working table]**&#x200B;的資料來源。 這為管理不同資料來源（例如FDA、FFDA和本機資料庫）的資料提供更大的彈性。
 
-**[!UICONTROL Working table]**&#x200B;可讓Adobe Campaign Classic工作流程處理資料，並與工作流程活動共用資料。
+**[!UICONTROL Working table]**可讓Adobe Campaign Classic工作流程處理資料，並與工作流程活動共用資料。
 根據預設，**[!UICONTROL Working table]**&#x200B;會與我們查詢的資料來源建立在同一資料庫中。
 
 例如，當查詢儲存在雲端資料庫上的&#x200B;**[!UICONTROL Profiles]**&#x200B;資料表時，您將在相同的雲端資料庫上建立&#x200B;**[!UICONTROL Working table]**。
-若要變更此專案，您可以新增&#x200B;**[!UICONTROL Change Data Source]**&#x200B;活動，為您的&#x200B;**[!UICONTROL Working table]**&#x200B;選擇不同的資料來源。
+若要變更此專案，您可以新增**[!UICONTROL Change Data Source]**&#x200B;活動，為您的&#x200B;**[!UICONTROL Working table]**&#x200B;選擇不同的資料來源。
 
 請注意，使用&#x200B;**[!UICONTROL Change Data Source]**&#x200B;活動時，您必須切換回雲端資料庫才能繼續執行工作流程。
 

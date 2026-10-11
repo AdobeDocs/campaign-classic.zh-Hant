@@ -19,6 +19,8 @@ feature_v2:
     internal-label: Prepare and test messages
   - id: fc09322a-8f3d-5905-be3d-96adfa806a40
     internal-label: Delivery Templates
+  - id: a4671286-a59f-47e3-b97b-90627a1977d5
+    internal-label: Communication channels
 subfeature_v2:
   - id: e95a583b-fcfa-4524-8666-46a29c828119
     internal-label: Email messaging
@@ -31,7 +33,7 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
 workflow-type: tm+mt
 source-wordcount: '200'
 ht-degree: 4%
@@ -49,4 +51,4 @@ ht-degree: 4%
 1. 預先定義的傳遞範本 — Adobe Campaign管理員可以建立新的傳遞範本。 操作者（擁有適當存取許可權者）或伺服器程式可自動重複使用這些存取許可權。 例如，您可以設定電子郵件傳遞範本，當使用者使用此範本建立傳遞時，他們只需輸入文字或HTML內容然後傳遞即可；管理員已定義其他選項。
 
 
-在[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/create-templates){target="_blank"}中瞭解如何建立和使用傳遞範本。
+在[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/create-templates){target="_blank"}中瞭解如何建立和使用傳遞範本。

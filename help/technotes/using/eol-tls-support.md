@@ -17,6 +17,8 @@ product_v2:
 feature_v2:
   - id: ab81f6c3-9317-564f-af92-6670a8784294
     internal-label: Technote
+  - id: d5ef99fa-df0c-4153-bf94-105ad0724167
+    internal-label: Integrations
 subfeature_v2:
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
     internal-label: Analytics integration
@@ -27,7 +29,7 @@ topic_v2:
     internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
 workflow-type: tm+mt
 source-wordcount: '880'
 ht-degree: 5%
@@ -57,7 +59,7 @@ Adobe已停止支援較低版本的TLS （包括TLS 1.0和1.1）。 如需TLS 1.
 
 如果您使用其他瀏覽器，請確定其支援TLS 1.2。
 
-您的作業系統和應用程式架構也必須支援TLS 1.2。 如果升級瀏覽器無法解決問題，請確定您的電腦符合[&#x200B; Campaign相容性矩陣](../../rn/using/compatibility-matrix.md)所列的系統需求。
+您的作業系統和應用程式架構也必須支援TLS 1.2。 如果升級瀏覽器無法解決問題，請確定您的電腦符合[ Campaign相容性矩陣](../../rn/using/compatibility-matrix.md)所列的系統需求。
 
 ## 常見問題{#faq}
 

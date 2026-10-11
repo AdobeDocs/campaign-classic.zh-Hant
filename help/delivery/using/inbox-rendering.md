@@ -19,6 +19,8 @@ feature_v2:
     internal-label: Prepare and test messages
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
     internal-label: Administration
+  - id: a4671286-a59f-47e3-b97b-90627a1977d5
+    internal-label: Communication channels
 subfeature_v2:
   - id: e95a583b-fcfa-4524-8666-46a29c828119
     internal-label: Email messaging
@@ -42,7 +44,7 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
 workflow-type: tm+mt
 source-wordcount: '910'
 ht-degree: 9%
@@ -65,7 +67,7 @@ Litmus是功能豐富的電子郵件驗證和預覽應用程式。 它可讓電�
 
 >[!NOTE]
 >
->測試傳送中的個人化時，不需要收件匣轉譯。 可以使用Adobe Campaign工具（例如&#x200B;**[!UICONTROL Preview]**&#x200B;和校樣）檢查Personalization。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html?lang=zh-Hant){target="_blank"}。
+>測試傳送中的個人化時，不需要收件匣轉譯。 可以使用Adobe Campaign工具（例如&#x200B;**[!UICONTROL Preview]**&#x200B;和校樣）檢查Personalization。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html){target="_blank"}。
 
 ## 正在啟用收件匣轉譯 {#activating-inbox-rendering}
 
@@ -141,7 +143,7 @@ Litmus是功能豐富的電子郵件驗證和預覽應用程式。 它可讓電�
 
    ![](assets/s_tn_inbox_rendering_button.png)
 
-   已傳送證明。 傳送電子郵件後幾分鐘，即可在該校訂中存取轉譯縮圖。 如需傳送校樣的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html?lang=zh-Hant){target="_blank"}。
+   已傳送證明。 傳送電子郵件後幾分鐘，即可在該校訂中存取轉譯縮圖。 如需傳送校樣的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html){target="_blank"}。
 
 1. 傳送後，證明會出現在傳送清單中。 按兩下。
 

@@ -11,6 +11,8 @@ product_v2:
 feature_v2:
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
     internal-label: Administration
+  - id: d5ef99fa-df0c-4153-bf94-105ad0724167
+    internal-label: Integrations
 subfeature_v2:
   - id: a39dbcf0-89cb-4765-9bcb-cf9dfbe2875f
     internal-label: Troubleshooting
@@ -21,7 +23,7 @@ topic_v2:
     internal-label: Troubleshooting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
 workflow-type: tm+mt
 source-wordcount: '463'
 ht-degree: 1%
@@ -111,7 +113,7 @@ ht-degree: 1%
 
 因此，使用者端主控台中已停用這些動作。
 
-操作員的管理集中於Adobe Admin Console，而下列工作現在只能透過此主控台管理。 在[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/admin/permissions/manage-permissions){target="_blank"}中瞭解如何建立使用者並指派許可權。
+操作員的管理集中於Adobe Admin Console，而下列工作現在只能透過此主控台管理。 在[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/admin/permissions/manage-permissions){target="_blank"}中瞭解如何建立使用者並指派許可權。
 
 ### 無法使用的選項 {#unavailable-migration}
 

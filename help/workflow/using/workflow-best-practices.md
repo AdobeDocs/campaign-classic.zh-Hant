@@ -14,6 +14,8 @@ product_v2:
 feature_v2:
   - id: a658c786-869b-4194-a780-2594d663adda
     internal-label: Data management
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 subfeature_v2:
   - id: ee25c34b-ea50-427b-9369-ba0a160f7d70
     internal-label: HeatMap
@@ -26,7 +28,7 @@ subfeature_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
 workflow-type: tm+mt
 source-wordcount: '1399'
 ht-degree: 13%
@@ -61,7 +63,7 @@ JavaScript方法&#x200B;**[!UICONTROL logInfo()]**&#x200B;是偵錯工作流程�
 
   此選項可在工作流程屬性的&#x200B;**[!UICONTROL Execution]**&#x200B;標籤中使用，將記錄工具從不同活動產生的所有SQL查詢。 這是檢視平台實際執行動作的好方法。 不過，此選項僅應在開發期間暫時使用，而不應在生產環境中啟用。
 
-當不再需要記錄時，請清除這些記錄。 系統不會自動清除工作流程歷史記錄：預設會保留所有訊息。 您可以透過&#x200B;**[!UICONTROL File > Actions]**&#x200B;功能表或按一下位於清單上方工具列中的[動作]按鈕，清除歷史記錄。 選取永久刪除歷史記錄。
+當不再需要記錄時，請清除這些記錄。 系統不會自動清除工作流程歷史記錄：預設會保留所有訊息。 您可以透過&#x200B;**[!UICONTROL File > Actions]**功能表或按一下位於清單上方工具列中的[動作]按鈕，清除歷史記錄。 選取永久刪除歷史記錄。
 若要瞭解如何清除記錄檔，請參閱此[檔案](starting-a-workflow.md)。
 
 ### 工作流程規劃 {#workflow-planning}

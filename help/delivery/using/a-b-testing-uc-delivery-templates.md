@@ -17,6 +17,8 @@ feature_v2:
     internal-label: Campaign Email Designer
   - id: c858a28b-ea19-49b0-8d48-828717fad89c
     internal-label: Prepare and test messages
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 subfeature_v2:
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
     internal-label: A/B testing
@@ -25,14 +27,14 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
 workflow-type: tm+mt
 source-wordcount: '95'
 ht-degree: 6%
 ---
 # AB測試：建立傳遞範本 {#step-3--creating-two-delivery-templates}
 
-我們現在想要建立兩個傳遞範本。 每個範本都將在連結至&#x200B;**[!UICONTROL Split]**&#x200B;活動的&#x200B;**[!UICONTROL Email delivery]**&#x200B;活動中參考。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=zh-Hant){target="_blank"}。
+我們現在想要建立兩個傳遞範本。 每個範本都將在連結至&#x200B;**[!UICONTROL Split]**&#x200B;活動的&#x200B;**[!UICONTROL Email delivery]**&#x200B;活動中參考。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}。
 
 1. 瀏覽至&#x200B;**[!UICONTROL Resources > Delivery template]**&#x200B;資料夾。
 1. 複製&#x200B;**[!UICONTROL Email]**&#x200B;傳遞範本。

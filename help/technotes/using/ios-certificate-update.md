@@ -15,12 +15,14 @@ feature_v2:
     internal-label: Technote
   - id: a4671286-a59f-47e3-b97b-90627a1977d5
     internal-label: Communication channels
+  - id: d5ef99fa-df0c-4153-bf94-105ad0724167
+    internal-label: Integrations
 subfeature_v2:
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
     internal-label: Analytics integration
   - id: a4657621-810c-498b-8a27-7ced9c176dda
     internal-label: Push notifications
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
 workflow-type: tm+mt
 source-wordcount: '160'
 ht-degree: 0%
@@ -31,15 +33,15 @@ ht-degree: 0%
 
 2024年10月17日，Apple推播通知服務(APN)基礎架構更新影響Adobe Campaign Classic iOS頻道。 作業系統設定變更為&#x200B;**必要**，以避免iOS推播頻道中斷。
 
-在此頁面[&#128279;](https://developer.apple.com/news/?id=09za8wzy)中進一步瞭解APN變更。
+在此頁面](https://developer.apple.com/news/?id=09za8wzy)中進一步瞭解APN變更[。
 
 作為託管客戶，無需採取任何動作： Adobe已將新的根憑證整合至您的環境。
 
-作為內部部署/混合部署客戶，您需要更新設定，以確保在2025年2月24日之前順暢轉換&#x200B;**&#x200B;**。
+作為內部部署/混合部署客戶，您需要更新設定，以確保在2025年2月24日之前順暢轉換&#x200B;****。
 
 若要合併新憑證，請遵循下列步驟：
 
-1. 從此頁面[&#128279;](https://www.sectigo.com/knowledge-base/detail/Sectigo-Intermediate-Certificates/kA01N000000rfBO)下載&#x200B;**SHA-2根： USERTrust RSA Certification Authority憑證**&#x200B;根憑證。
+1. 從此頁面](https://www.sectigo.com/knowledge-base/detail/Sectigo-Intermediate-Certificates/kA01N000000rfBO)下載&#x200B;**SHA-2根： USERTrust RSA Certification Authority憑證**&#x200B;根憑證[。
 
 1. 檢查您的OS和JAVA Trustores中是否都有AAA憑證。 如果沒有，請新增它。
 
