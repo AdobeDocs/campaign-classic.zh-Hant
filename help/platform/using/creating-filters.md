@@ -37,7 +37,7 @@ ht-degree: 4%
 
 當您在Adobe Campaign樹狀結構中進行導覽（從首頁的&#x200B;**[!UICONTROL Explorer]**&#x200B;功能表）時，資料庫中包含的資料會顯示於清單中。 這些清單可設定為僅顯示運運算元所需的資料。 接著，您就可以針對篩選的資料啟動動作。 篩選設定可讓您從清單&#x200B;**[!UICONTROL dynamically]**&#x200B;中選取資料。 如果修改資料，則會更新篩選的資料。
 
-在[Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-audiences/create-filters){target=_blank}中進一步瞭解&#x200B;**篩選器以及如何使用**。
+在[Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/audience/create-audiences/create-filters){target=_blank}中進一步瞭解&#x200B;**篩選器以及如何使用**。
 
 
 <!--
@@ -213,7 +213,7 @@ Advanced filters can use functions; **filters with functions** are created via a
 
       >[!NOTE]
       >
-      >For an example of filter creation based on an expression, refer to [this section](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email#identifying-recipients-whose-birthday-it-is){target="_blank"} (Campaign v8 documentation).
+      >For an example of filter creation based on an expression, refer to [this section](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email#identifying-recipients-whose-birthday-it-is){target="_blank"} (Campaign v8 documentation).
 
 ## Save a filter {#saving-a-filter}
 
