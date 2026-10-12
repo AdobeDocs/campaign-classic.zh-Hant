@@ -93,7 +93,7 @@ ht-degree: 4%
 * **[!UICONTROL Distribution context]** ：明確。
 * **[!UICONTROL Data distribution]** ：本機實體發佈。
 
-必須建立&#x200B;**本機實體發佈**&#x200B;型別資料發佈。 資料分佈範本可讓您限制分組值清單中的記錄數。 在&#x200B;**[!UICONTROL Resources > Campaign management > Data distribution]**&#x200B;中，按一下&#x200B;**[!UICONTROL New]**&#x200B;圖示以建立新的&#x200B;**[!UICONTROL Data distribution]**。 如需資料發佈的詳細資訊，請參閱[工作流程](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/use-cases/deliveries/local-approval-activity#step-1--creating-the-data-distribution-template-){target="_blank"} （Campaign v8檔案）指南。
+必須建立&#x200B;**本機實體發佈**&#x200B;型別資料發佈。 資料分佈範本可讓您限制分組值清單中的記錄數。 在&#x200B;**[!UICONTROL Resources > Campaign management > Data distribution]**&#x200B;中，按一下&#x200B;**[!UICONTROL New]**&#x200B;圖示以建立新的&#x200B;**[!UICONTROL Data distribution]**。 如需資料發佈的詳細資訊，請參閱[工作流程](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/workflows/use-cases/deliveries/local-approval-activity#step-1--creating-the-data-distribution-template-){target="_blank"} （Campaign v8檔案）指南。
 
 ![](assets/mkg_dist_data_distribution.png)
 

@@ -83,7 +83,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->與Campaign套件相關的技術工作流程會顯示在[技術工作流程清單](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows){target="_blank"} （Campaign v8檔案）中。
+>與Campaign套件相關的技術工作流程會顯示在[技術工作流程清單](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows){target="_blank"} （Campaign v8檔案）中。
 
 **步驟1 — 檔案核准**
 

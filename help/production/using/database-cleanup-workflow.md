@@ -59,7 +59,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如需排程器的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html){target="_blank"}。
+>如需排程器的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html?lang=zh-Hant){target="_blank"}。
 
 根據預設，**[!UICONTROL Database cleanup]**&#x200B;工作流程設定為每天凌晨4:00開始。 排程器可讓您變更工作流程觸發頻率。 可使用下列頻率：
 
@@ -349,7 +349,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->已針對&#x200B;**以天為單位的歷程記錄**&#x200B;欄位中的每個工作流程指定歷程記錄的清除頻率（預設值為30天）。 此欄位可在工作流程屬性的&#x200B;**執行**&#x200B;索引標籤中找到。 如需詳細資訊，請參閱[本節](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/advanced-management/workflow-properties#execution){target="_blank"} （Campaign v8檔案）。
+>已針對&#x200B;**以天為單位的歷程記錄**&#x200B;欄位中的每個工作流程指定歷程記錄的清除頻率（預設值為30天）。 此欄位可在工作流程屬性的&#x200B;**執行**&#x200B;索引標籤中找到。 如需詳細資訊，請參閱[本節](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/workflows/advanced-management/workflow-properties#execution){target="_blank"} （Campaign v8檔案）。
 
 1. 若要復原要刪除的工作流程清單，請使用以下查詢：
 

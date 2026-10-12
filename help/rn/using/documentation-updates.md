@@ -65,15 +65,15 @@ Linux 套件安裝已更新為 v7.4.1。 [閱讀更多](../../installation/using
 
 更新發行說明一節，提供 7.4.1 改善、相容性更新以及修補程式。 [閱讀更多](latest-release.md)
 
-已新增附註，以指定重新啟動工作流程時如何清除執行個體變數。 [瞭解詳情](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/executing-a-workflow/start-a-workflow){target="_blank"} （Campaign v8檔案）
+已新增附註，以指定重新啟動工作流程時如何清除執行個體變數。 [瞭解詳情](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/workflows/executing-a-workflow/start-a-workflow){target="_blank"} （Campaign v8檔案）
 
 ### 2024 年 4 月 {#apr-2024}
 
 新增了使用 Adobe Identity Management System (IMS) 建立使用者的警告說明。 [閱讀更多](../../platform/using/access-management.md)
 
-新增了 Web 下載工作流程活動缺少的選項。 [瞭解詳情](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/event-activities/web-download){target="_blank"} （Campaign v8檔案）
+新增了 Web 下載工作流程活動缺少的選項。 [瞭解詳情](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/workflows/wf-activities/event-activities/web-download){target="_blank"} （Campaign v8檔案）
 
-警告說明已新增到&#x200B;**變更維度**&#x200B;和&#x200B;**變更資料來源**&#x200B;關於它們在工作流程的使用活動。 [瞭解詳情](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/change-data-source){target="_blank"} （Campaign v8檔案）
+警告說明已新增到&#x200B;**變更維度**&#x200B;和&#x200B;**變更資料來源**&#x200B;關於它們在工作流程的使用活動。 [瞭解詳情](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/workflows/wf-activities/targeting-activities/change-data-source){target="_blank"} （Campaign v8檔案）
 
 ### 2024 年 3 月 {#mar-2024}
 

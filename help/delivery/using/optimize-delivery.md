@@ -62,7 +62,7 @@ ht-degree: 9%
 
   **秘訣** — 若要避免此問題，請與團隊的其他成員協調傳送排程，以確保最佳效能。
 
-* 工作流程執行：監控工作流程是避免平台效能問題的關鍵。 請遵循此檔案[&#128279;](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/workflow-best-practices#execution-and-performance){target="_blank"}中列出的准則 （Campaign v8檔案）。
+* 工作流程執行：監控工作流程是避免平台效能問題的關鍵。 請遵循此檔案[&#128279;](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/workflows/introduction/workflow-best-practices#execution-and-performance){target="_blank"}中列出的准則 （Campaign v8檔案）。
 
 * 如果您符合資格，可以使用[效能監視](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html?lang=zh-Hant)功能，利用[Campaign控制面板功能](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=zh-Hant)來監視您的平台。
 

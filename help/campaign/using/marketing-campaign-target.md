@@ -75,7 +75,7 @@ ht-degree: 2%
 
 ![](assets/s_ncs_user_edit_op_wf_link.png)
 
-透過置於工作流程中的一或多個查詢，會從Adobe Campaign資料庫擷取目標母體。 若要瞭解如何建立查詢，請參閱[本節](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target="_blank"} （Campaign v8檔案）。
+透過置於工作流程中的一或多個查詢，會從Adobe Campaign資料庫擷取目標母體。 若要瞭解如何建立查詢，請參閱[本節](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target="_blank"} （Campaign v8檔案）。
 
 您可以透過「聯合」、「交集」、「共用」、「排除」等方塊啟動查詢及共用母體。
 
@@ -87,7 +87,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->定義查詢的範例和程式會顯示在[本節](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target="_blank"} （Campaign v8檔案）中。
+>定義查詢的範例和程式會顯示在[本節](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target="_blank"} （Campaign v8檔案）中。
 
 編輯器的左側區段包含代表活動的圖形物件庫。 第一個標籤包含目標定位活動，第二個標籤則包含流量控制活動，這些活動偶爾會用來協調目標定位活動。
 
@@ -97,7 +97,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->可用來建置圖表的活動以及所有顯示和配置功能在[使用工作流程自動化](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/activities){target="_blank"} （Campaign v8檔案）指南中有詳細說明。
+>可用來建置圖表的活動以及所有顯示和配置功能在[使用工作流程自動化](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/workflows/wf-activities/activities){target="_blank"} （Campaign v8檔案）指南中有詳細說明。
 
 您可以為單一行銷活動建立數個目標工作流程。 若要新增工作流程：
 
@@ -250,7 +250,7 @@ ht-degree: 2%
 
 ![](assets/s_ncs_user_edit_op_target_param.png)
 
-此設定等同於工作流程中的共用活動，可讓您將目標分割為子集。 控制組是這些子集的其中之一。 如需詳細資訊，請參閱[本節](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/split){target="_blank"} （Campaign v8檔案）。
+此設定等同於工作流程中的共用活動，可讓您將目標分割為子集。 控制組是這些子集的其中之一。 如需詳細資訊，請參閱[本節](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/workflows/wf-activities/targeting-activities/split){target="_blank"} （Campaign v8檔案）。
 
 ### 使用新母體作為控制組 {#adding-a-population}
 
@@ -260,7 +260,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->Adobe Campaign查詢編輯器出現在[本節](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target="_blank"} （Campaign v8檔案）中。
+>Adobe Campaign查詢編輯器出現在[本節](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target="_blank"} （Campaign v8檔案）中。
 
 
 #### 教學課程影片 {#create-email-video}

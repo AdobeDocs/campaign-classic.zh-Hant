@@ -77,7 +77,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->型別與篩選規則可用於&#x200B;**[!UICONTROL Delivery outline]**&#x200B;活動的工作流程。 如需詳細資訊，請參閱[本節](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/delivery-outline){target="_blank"} （Campaign v8檔案）。
+>型別與篩選規則可用於&#x200B;**[!UICONTROL Delivery outline]**&#x200B;活動的工作流程。 如需詳細資訊，請參閱[本節](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/workflows/wf-activities/targeting-activities/delivery-outline){target="_blank"} （Campaign v8檔案）。
 
 ## 建立並使用篩選型別 {#creating-and-using-a-filtering-typology}
 
