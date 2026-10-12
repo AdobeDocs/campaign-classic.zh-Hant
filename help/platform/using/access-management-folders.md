@@ -120,7 +120,7 @@ Explorer導覽樹狀結構的每個資料夾都附加讀取、寫入和刪除存
 
 >[!NOTE]
 >
->管理[異動訊息](../../message-center/using/about-transactional-messaging.md)事件時，**[!UICONTROL Real time events]**&#x200B;或&#x200B;**[!UICONTROL Batch events]**&#x200B;資料夾不得在執行例項上設定為檢視，因為這樣可能會導致存取許可權問題。 如需事件集合的詳細資訊，請參閱[本節](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/event/event-processing#event-collection){target="_blank"} （Campaign v8檔案）。
+>管理[異動訊息](../../message-center/using/about-transactional-messaging.md)事件時，**[!UICONTROL Real time events]**&#x200B;或&#x200B;**[!UICONTROL Batch events]**&#x200B;資料夾不得在執行例項上設定為檢視，因為這樣可能會導致存取許可權問題。 如需事件集合的詳細資訊，請參閱[本節](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/real-time/event/event-processing#event-collection){target="_blank"} （Campaign v8檔案）。
 
 <!--
 ## Permissions on a folder

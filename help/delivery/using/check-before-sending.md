@@ -98,7 +98,7 @@ ht-degree: 1%
 
 ### 進行驗證程式
 
-您可以定義涉及Adobe Campaign運運算元和群組的完整驗證程式，以驗證目標和訊息內容。 這將確保完全監控和控制行銷活動的各種流程：目標定位、內容、預算、摘錄和傳送證明。 根據使用者的許可權，使用者會收到通知、收到校樣並能夠驗證或拒絕訊息。 在本節[&#128279;](https://experienceleague.adobe.com/en/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval){target="_blank"}中瞭解更多 （Campaign v8檔案）。
+您可以定義涉及Adobe Campaign運運算元和群組的完整驗證程式，以驗證目標和訊息內容。 這將確保完全監控和控制行銷活動的各種流程：目標定位、內容、預算、摘錄和傳送證明。 根據使用者的許可權，使用者會收到通知、收到校樣並能夠驗證或拒絕訊息。 在本節[&#128279;](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval){target="_blank"}中瞭解更多 （Campaign v8檔案）。
 
 ### 使用波段
 
@@ -126,7 +126,7 @@ ht-degree: 1%
 
 * 針對每個IPAffinity元素，宣告可以使用的IP位址。 [了解更多](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)
 
-* 在您選擇的[型別](https://experienceleague.adobe.com/en/docs/campaign/automation/campaign-optimization/campaign-typologies){target="_blank"} （Campaign v8檔案）中，使用&#x200B;**[!UICONTROL Managing affinities with IP addresses]**&#x200B;欄位將傳遞連結至管理上述相似性的傳遞伺服器(MTA)。 [深入瞭解](https://experienceleague.adobe.com/en/docs/campaign/automation/campaign-optimization/apply-rules#control-outgoing-smtp-traffic){target="_blank"} （Campaign v8檔案）。
+* 在您選擇的[型別](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/campaign-optimization/campaign-typologies){target="_blank"} （Campaign v8檔案）中，使用&#x200B;**[!UICONTROL Managing affinities with IP addresses]**&#x200B;欄位將傳遞連結至管理上述相似性的傳遞伺服器(MTA)。 [深入瞭解](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/campaign-optimization/apply-rules#control-outgoing-smtp-traffic){target="_blank"} （Campaign v8檔案）。
 
 * 傳送電子郵件後，檢查標題以確認傳送來自的IP位址。 您的電子郵件管理員應協助您取得標題資訊。
 
@@ -138,7 +138,7 @@ ht-degree: 1%
 
 ### 使用型別
 
-您可以使用型別規則，根據特定條件排除部分目標。 這可確保在遵守公司通訊政策的同時，傳送最符合客戶需求及期望的訊息。 例如，您可以從電子報的目標篩選未成年的收件者。 在此範例[&#128279;](https://experienceleague.adobe.com/en/docs/campaign/automation/campaign-optimization/filtering-rules){target="_blank"}中瞭解更多 （Campaign v8檔案）。
+您可以使用型別規則，根據特定條件排除部分目標。 這可確保在遵守公司通訊政策的同時，傳送最符合客戶需求及期望的訊息。 例如，您可以從電子報的目標篩選未成年的收件者。 在此範例[&#128279;](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/campaign-optimization/filtering-rules){target="_blank"}中瞭解更多 （Campaign v8檔案）。
 
 ### 避免附件
 

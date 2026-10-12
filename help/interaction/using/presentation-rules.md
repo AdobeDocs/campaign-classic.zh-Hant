@@ -113,7 +113,7 @@ ht-degree: 1%
 
    ![](assets/offer_typology_example_016.png)
 
-1. 在訊息內文中插入您的優惠方案並傳送傳遞。 如需詳細資訊，請參閱[關於傳出頻道](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/interaction-send-offers){target="_blank"} （Campaign v8檔案）。
+1. 在訊息內文中插入您的優惠方案並傳送傳遞。 如需詳細資訊，請參閱[關於傳出頻道](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/offers/interaction-send-offers){target="_blank"} （Campaign v8檔案）。
 
    收件者已收到其符合資格的優惠。
 

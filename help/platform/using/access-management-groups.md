@@ -135,7 +135,7 @@ ht-degree: 3%
 
 1. **[!UICONTROL Offer managers]**
 
-   此群組中的運運算元可以建立和維護優惠方案。 如需詳細資訊，請參閱此[頁面](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/interaction-settings/interaction-operators){target="_blank"} （Campaign v8檔案）。
+   此群組中的運運算元可以建立和維護優惠方案。 如需詳細資訊，請參閱此[頁面](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/offers/interaction-settings/interaction-operators){target="_blank"} （Campaign v8檔案）。
    此群組包含下列已命名的許可權：
 
    * **[!UICONTROL INSERT FOLDERS]**：將資料夾插入Adobe Campaign樹狀結構的許可權（前提是您擁有相關分支的編輯許可權），

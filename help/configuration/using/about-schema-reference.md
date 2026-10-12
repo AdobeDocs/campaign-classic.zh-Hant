@@ -39,7 +39,7 @@ ht-degree: 3%
 
 本章說明如何設定擴充功能綱要，以擴充Adobe Campaign資料庫的概念資料模型。
 
-如需Campaign內建表格及其互動的詳細資訊，請參閱[Campaign Classic資料模型](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/datamodel){target="_blank"} （Campaign v8檔案）。
+如需Campaign內建表格及其互動的詳細資訊，請參閱[Campaign Classic資料模型](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/datamodel){target="_blank"} （Campaign v8檔案）。
 
 在Adobe Campaign中，應用程式中所攜帶資料的實體和邏輯結構會以XML進行說明。 **結構描述**&#x200B;是與資料庫表格關聯的XML檔案。 它會定義資料結構，並描述表格的SQL定義：
 
@@ -62,6 +62,6 @@ ht-degree: 3%
 
 ![](assets/reference_schema_intro.png)
 
-作為從Campaign v7轉變到v8的一部分，Campaign Classic檔案集已簡化並重新組織。 Campaign v8檔案集中現在提供常見功能。 若要瞭解結構描述的語法和識別，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target=_blank}。
+作為從Campaign v7轉變到v8的一部分，Campaign Classic檔案集已簡化並重新組織。 Campaign v8檔案集中現在提供常見功能。 若要瞭解結構描述的語法和識別，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target=_blank}。
 
-[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target=_blank}
+[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target=_blank}

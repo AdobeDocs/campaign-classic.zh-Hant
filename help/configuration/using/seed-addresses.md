@@ -107,7 +107,7 @@ ht-degree: 5%
    >    
    >
 
-1. 相應地修改&#x200B;**[!UICONTROL seedMember]**&#x200B;表單，以在&#x200B;**[!UICONTROL Seed addresses]**&#x200B;視窗中定義新的「內部收件者」索引標籤。 如需詳細資訊，請參閱[此頁面](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"} （Campaign v8檔案）。
+1. 相應地修改&#x200B;**[!UICONTROL seedMember]**&#x200B;表單，以在&#x200B;**[!UICONTROL Seed addresses]**&#x200B;視窗中定義新的「內部收件者」索引標籤。 如需詳細資訊，請參閱[此頁面](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"} （Campaign v8檔案）。
 
    ```
    <container colcount="2" label="Internal recipient" name="internal"

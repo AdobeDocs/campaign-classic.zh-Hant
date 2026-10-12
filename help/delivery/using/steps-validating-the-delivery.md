@@ -232,7 +232,7 @@ ht-degree: 9%
 
 您可以從此節點建立新規則及定義新型別。 不過，這些工作會保留給熟悉JavaScript的專家使用者。
 
-如需型別規則的詳細資訊，請參閱[此頁面](https://experienceleague.adobe.com/en/docs/campaign/automation/campaign-optimization/campaign-typologies){target="_blank"} （Campaign v8檔案）。
+如需型別規則的詳細資訊，請參閱[此頁面](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/campaign-optimization/campaign-typologies){target="_blank"} （Campaign v8檔案）。
 
 若要編輯目前的型別，請按一下&#x200B;**[!UICONTROL Typology]**&#x200B;欄位右側的&#x200B;**[!UICONTROL Edit link]**&#x200B;圖示。
 
@@ -244,7 +244,7 @@ ht-degree: 9%
 
 >[!NOTE]
 >
->**[!UICONTROL Arbitration]**&#x200B;型別型別用於銷售壓力管理的架構中。 如需詳細資訊，請參閱[本節](https://experienceleague.adobe.com/en/docs/campaign/automation/mrm/about-marketing-resource-management){target="_blank"} （Campaign v8檔案）。
+>**[!UICONTROL Arbitration]**&#x200B;型別型別用於銷售壓力管理的架構中。 如需詳細資訊，請參閱[本節](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/mrm/about-marketing-resource-management){target="_blank"} （Campaign v8檔案）。
 
 ## 變更核准模式 {#changing-the-approval-mode}
 

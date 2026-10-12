@@ -126,4 +126,4 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->如需在Adobe Campaign中建立結構描述及定義新資料對應的詳細資訊，請參閱[此頁面](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"} （Campaign v8檔案）。
+>如需在Adobe Campaign中建立結構描述及定義新資料對應的詳細資訊，請參閱[此頁面](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"} （Campaign v8檔案）。

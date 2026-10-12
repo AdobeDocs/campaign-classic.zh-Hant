@@ -87,7 +87,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->您也可以使用非標準表格。 如果您想要使用特定目標維度，您將需要使用目標對應建立表格以及專用環境。 如需詳細資訊，請參閱[建立優惠方案環境](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/interaction-settings/interaction-env#create-an-offer-environment){target="_blank"} （Campaign v8檔案）。
+>您也可以使用非標準表格。 如果您想要使用特定目標維度，您將需要使用目標對應建立表格以及專用環境。 如需詳細資訊，請參閱[建立優惠方案環境](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/offers/interaction-settings/interaction-env#create-an-offer-environment){target="_blank"} （Campaign v8檔案）。
 
 ### 期間 {#period}
 

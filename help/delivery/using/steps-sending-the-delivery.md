@@ -46,7 +46,7 @@ ht-degree: 11%
 
 ## 權限{#delivery-permissions}
 
-只有傳遞擁有者可以開始傳遞。 若要讓其他操作員（或操作員群組）能夠開始傳遞，請在&#x200B;**[!UICONTROL Delivery start:]**&#x200B;欄位中將他們新增為稽核者。 [深入瞭解](https://experienceleague.adobe.com/en/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval#select-reviewers){target="_blank"} （Campaign v8檔案）。
+只有傳遞擁有者可以開始傳遞。 若要讓其他操作員（或操作員群組）能夠開始傳遞，請在&#x200B;**[!UICONTROL Delivery start:]**&#x200B;欄位中將他們新增為稽核者。 [深入瞭解](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval#select-reviewers){target="_blank"} （Campaign v8檔案）。
 
 ## 傳遞其他引數 {#delivery-additiona-parameters}
 
@@ -171,7 +171,7 @@ ht-degree: 11%
    >
    >在設定最後一個波段時，您也必須允許足夠的重試時間。 請參閱[本節](steps-sending-the-delivery.md#configuring-retries)。
 
-1. 若要監視您的傳送，請前往傳送記錄檔。 請參閱[此頁面](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"}。
+1. 若要監視您的傳送，請前往傳送記錄檔。 請參閱[此頁面](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"}。
 
    您可以看到已在已處理波段（**[!UICONTROL Sent]**&#x200B;狀態）中傳送的傳遞，以及將在剩餘波段（**[!UICONTROL Pending]**&#x200B;狀態）中傳送的傳遞。
 

@@ -49,14 +49,14 @@ Adobe Campaign提供多種型別的報表，可透過客戶主控台或網際網
 
 可用的報表型別如下：
 
-* 整個平台的報告，請參閱[全域報告](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports){target="_blank"} （Campaign v8檔案）。
-* 傳遞報告，請參閱[傳遞報告](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/reports/ac-reports/delivery-reports){target="_blank"} （Campaign v8檔案）。
-* 累積報告，請參閱[累積報告](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/reports/ac-reports/delivery-reports){target="_blank"} （Campaign v8檔案）。
+* 整個平台的報告，請參閱[全域報告](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports){target="_blank"} （Campaign v8檔案）。
+* 傳遞報告，請參閱[傳遞報告](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/analytics/reports/ac-reports/delivery-reports){target="_blank"} （Campaign v8檔案）。
+* 累積報告，請參閱[累積報告](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/analytics/reports/ac-reports/delivery-reports){target="_blank"} （Campaign v8檔案）。
 
 您可以從使用者端主控台首頁、報告控制面板或傳遞清單存取報告。 報告的顯示模式取決於其內容。 主要報告清單可在首頁上取得，並讓您快速存取傳遞資料。 您可以視需要變更此清單。 如需詳細資訊，請參閱[本節](../../reporting/using/about-reports-creation-in-campaign.md)。
 
-作為從Campaign v7轉變到v8的一部分，Campaign Classic檔案集已簡化並重新組織。 Campaign v8檔案集中現在提供常見功能。 若要瞭解如何存取及使用內建報告，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/reports/ac-reports/built-in-reports){target=_blank}。
+作為從Campaign v7轉變到v8的一部分，Campaign Classic檔案集已簡化並重新組織。 Campaign v8檔案集中現在提供常見功能。 若要瞭解如何存取及使用內建報告，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/analytics/reports/ac-reports/built-in-reports){target=_blank}。
 
-[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/reports/ac-reports/built-in-reports){target=_blank}
+[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/analytics/reports/ac-reports/built-in-reports){target=_blank}
 
 正在編輯之報告上的其他可能動作在[此頁面](../../reporting/using/actions-on-reports.md)中有詳細說明。

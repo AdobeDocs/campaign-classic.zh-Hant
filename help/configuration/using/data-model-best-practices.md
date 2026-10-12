@@ -54,9 +54,9 @@ ht-degree: 1%
 
 本檔案概述設計Adobe Campaign資料模型時的主要建議。
 
-如需深入瞭解Campaign內建表格及其互動，請參閱[本節](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/datamodel){target="_blank"} （Campaign v8檔案）一節。
+如需深入瞭解Campaign內建表格及其互動，請參閱[本節](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/datamodel){target="_blank"} （Campaign v8檔案）一節。
 
-閱讀[此檔案](../../configuration/using/about-schema-reference.md)以開始使用Campaign綱要。 在[本檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"} （Campaign v8檔案）中瞭解如何設定延伸結構描述，以延伸Adobe Campaign資料庫的概念資料模型。
+閱讀[此檔案](../../configuration/using/about-schema-reference.md)以開始使用Campaign綱要。 在[本檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"} （Campaign v8檔案）中瞭解如何設定延伸結構描述，以延伸Adobe Campaign資料庫的概念資料模型。
 
 ## 概觀 {#overview}
 
@@ -82,7 +82,7 @@ Adobe Campaign是功能強大的跨頻道行銷活動管理系統，可以協助
 
 >[!NOTE]
 >
->Adobe Campaign Classic可建置自訂客戶表格。 但是，在大多數情況下，建議使用已預先建立其他表格和功能的標準[收件者表格](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/datamodel#ootb-profiles){target="_blank"} （Campaign v8檔案）。
+>Adobe Campaign Classic可建置自訂客戶表格。 但是，在大多數情況下，建議使用已預先建立其他表格和功能的標準[收件者表格](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/datamodel#ootb-profiles){target="_blank"} （Campaign v8檔案）。
 
 ### 適用於Adobe Campaign的資料 {#data-for-campaign}
 
@@ -185,7 +185,7 @@ Adobe Campaign主索引鍵是所有現成可用表格自動產生的id，且對�
 
 依預設，自訂序列的值介於+1,000到+2.1BB之間。 技術上，啟用負值ID可以取得完整的4BB範圍。 這應謹慎使用，從負數到正數時將會遺失一個ID：在產生的SQL查詢中，Adobe Campaign通常會忽略記錄0。
 
-如需序列耗竭的詳細資訊，請觀看[此影片](https://helpx.adobe.com/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html)。
+如需序列耗竭的詳細資訊，請觀看[此影片](https://helpx.adobe.com/tw/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html)。
 
 ## 索引 {#indexes}
 

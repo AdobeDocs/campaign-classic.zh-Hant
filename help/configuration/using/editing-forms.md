@@ -46,7 +46,7 @@ ht-degree: 1%
 * 您可以修改預設提供的工廠輸入表單。 工廠輸入表單是以工廠資料結構描述為基礎。
 * 您可以根據您定義的資料結構描述建立自訂輸入表單。
 
-Forms是`xtk:form`型別的實體。 您可以在`xtk:form`結構描述中檢視輸入表單結構。 若要檢視此結構描述，請從功能表中選擇&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data schemas]**。 深入瞭解[表單結構](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"} （Campaign v8檔案）。
+Forms是`xtk:form`型別的實體。 您可以在`xtk:form`結構描述中檢視輸入表單結構。 若要檢視此結構描述，請從功能表中選擇&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data schemas]**。 深入瞭解[表單結構](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"} （Campaign v8檔案）。
 
 若要存取輸入表單，請從功能表選擇&#x200B;**[!UICONTROL Administration]> [!UICONTROL Configuration] >[!UICONTROL Input forms]**：
 
@@ -56,7 +56,7 @@ Forms是`xtk:form`型別的實體。 您可以在`xtk:form`結構描述中檢視
 
 ![](assets/d_ncs_integration_form_edit.png)
 
-[瞭解詳情](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms#formatting){target="_blank"} （Campaign v8檔案）。
+[瞭解詳情](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/forms#formatting){target="_blank"} （Campaign v8檔案）。
 
 若要預覽表單，請按一下&#x200B;**[!UICONTROL Preview]**&#x200B;標籤：
 
@@ -80,7 +80,7 @@ Forms是`xtk:form`型別的實體。 您可以在`xtk:form`結構描述中檢視
 
 * 助理
 
-  此表單包含多個以特定順序排序的浮動熒幕。 使用者從一個畫面瀏覽至下一個畫面。 [瞭解詳情](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms#wizards){target="_blank"} （Campaign v8檔案）。
+  此表單包含多個以特定順序排序的浮動熒幕。 使用者從一個畫面瀏覽至下一個畫面。 [瞭解詳情](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/forms#wizards){target="_blank"} （Campaign v8檔案）。
 
 * 圖示方塊
 
@@ -110,7 +110,7 @@ Forms是`xtk:form`型別的實體。 您可以在`xtk:form`結構描述中檢視
 * 定義輸入欄位的存取權
 * 在其他表單中巢狀內嵌表單
 
-[瞭解詳情](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms#containers){target="_blank"} （Campaign v8檔案）。
+[瞭解詳情](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/forms#containers){target="_blank"} （Campaign v8檔案）。
 
 ### 組織內容
 
@@ -119,7 +119,7 @@ Forms是`xtk:form`型別的實體。 您可以在`xtk:form`結構描述中檢視
 * 您可以將欄位分組為區段。
 * 您可以將頁面新增至多頁表單。
 
-若要插入容器，請使用`<container>`元素。 [瞭解詳情](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms#containers){target="_blank"} （Campaign v8檔案）。
+若要插入容器，請使用`<container>`元素。 [瞭解詳情](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/forms#containers){target="_blank"} （Campaign v8檔案）。
 
 #### 群組欄位
 
@@ -232,7 +232,7 @@ Forms是`xtk:form`型別的實體。 您可以在`xtk:form`結構描述中檢視
 
 1. 插入表單元素。
 
-   例如，若要插入輸入欄位，請使用`<input>`元素。 將`xpath`屬性設定為欄位參考為XPath運算式。 [瞭解詳情](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/schema-structure#reference-with-xpath){target="_blank"} （Campaign v8檔案）。
+   例如，若要插入輸入欄位，請使用`<input>`元素。 將`xpath`屬性設定為欄位參考為XPath運算式。 [瞭解詳情](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/schema-structure#reference-with-xpath){target="_blank"} （Campaign v8檔案）。
 
    此範例顯示以`nms:recipient`結構描述為基礎的輸入欄位。
 
@@ -265,7 +265,7 @@ Forms是`xtk:form`型別的實體。 您可以在`xtk:form`結構描述中檢視
    | 核取方塊 | `type="checkbox"` |
    | 編輯樹狀 | `type="tree"` |
 
-   深入瞭解[記憶體清單控制項](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms#memory-list-controls){target="_blank"} （Campaign v8檔案）。
+   深入瞭解[記憶體清單控制項](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/forms#memory-list-controls){target="_blank"} （Campaign v8檔案）。
 
 1. 選擇性地定義欄位的存取權：
 
@@ -482,7 +482,7 @@ Forms是`xtk:form`型別的實體。 您可以在`xtk:form`結構描述中檢視
 
 ### 授予欄位唯讀存取權
 
-若要授與欄位的唯讀存取權，請使用`readOnly="true"`屬性。 例如，您可能想要顯示記錄的主索引鍵，但具有唯讀存取權。 [瞭解詳情](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms#non-editable-fields){target="_blank"} （Campaign v8檔案）。
+若要授與欄位的唯讀存取權，請使用`readOnly="true"`屬性。 例如，您可能想要顯示記錄的主索引鍵，但具有唯讀存取權。 [瞭解詳情](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/forms#non-editable-fields){target="_blank"} （Campaign v8檔案）。
 
 在此範例中，`nms:recipient`結構描述的主索引鍵(`iRecipientId`)以唯讀存取方式顯示：
 
@@ -508,11 +508,11 @@ Forms是`xtk:form`型別的實體。 您可以在`xtk:form`結構描述中檢視
 </leave>
 ```
 
-深入瞭解[運算式欄位](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms#expression-field){target="_blank"} （Campaign v8檔案）和[表單內容](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms#context-of-forms){target="_blank"} （Campaign v8檔案）。
+深入瞭解[運算式欄位](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/forms#expression-field){target="_blank"} （Campaign v8檔案）和[表單內容](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/forms#context-of-forms){target="_blank"} （Campaign v8檔案）。
 
 ### 驗證值
 
-您可以使用JavaScript SOAP呼叫，從主控台驗證表單資料。 使用這些呼叫進行複雜驗證，例如，根據授權值清單檢查值。 [瞭解詳情](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms#soap-methods){target="_blank"} （Campaign v8檔案）。
+您可以使用JavaScript SOAP呼叫，從主控台驗證表單資料。 使用這些呼叫進行複雜驗證，例如，根據授權值清單檢查值。 [瞭解詳情](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/forms#soap-methods){target="_blank"} （Campaign v8檔案）。
 
 1. 在JS檔案中建立驗證函式。
 
@@ -569,4 +569,4 @@ Forms是`xtk:form`型別的實體。 您可以在`xtk:form`結構描述中檢視
 </enter>
 ```
 
-在此範例中，輸入為ID，為主索引鍵。 當使用者填寫此ID的表單時，會使用此ID作為輸入引數進行SOAP呼叫。 輸出是寫入此欄位的布林值： `/tmp/@count`。 您可以在表單內使用此布林值。 深入瞭解[表單內容](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms#context-of-forms){target="_blank"} （Campaign v8檔案）。
+在此範例中，輸入為ID，為主索引鍵。 當使用者填寫此ID的表單時，會使用此ID作為輸入引數進行SOAP呼叫。 輸出是寫入此欄位的布林值： `/tmp/@count`。 您可以在表單內使用此布林值。 深入瞭解[表單內容](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/forms#context-of-forms){target="_blank"} （Campaign v8檔案）。

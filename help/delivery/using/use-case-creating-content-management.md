@@ -82,7 +82,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如需在Adobe Campaign中建立和設定資料結構的詳細資訊，請參閱[本節](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"} （Campaign v8檔案）。
+>如需在Adobe Campaign中建立和設定資料結構的詳細資訊，請參閱[本節](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"} （Campaign v8檔案）。
 >
 >在[資料結構描述](data-schemas.md)中詳細說明內容管理專屬的組態元素。
 
@@ -194,7 +194,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如需在Adobe Campaign中建立和設定表單的詳細資訊，請參閱[本節](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"} （Campaign v8檔案）。
+>如需在Adobe Campaign中建立和設定表單的詳細資訊，請參閱[本節](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"} （Campaign v8檔案）。
 >
 >在[輸入表單](input-forms.md)中詳細說明內容管理專屬的組態元素。
 

@@ -33,7 +33,7 @@ ht-degree: 3%
 
 **Simulation**&#x200B;模組可讓您在將您的主張傳送給收件者之前，先測試屬於類別或環境的優惠方案分佈。
 
-模擬會考量先前套用至優惠方案的內容與適用性規則(請參閱[優惠方案目錄概觀](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/interaction-offer-catalog){target="_blank"} （Campaign v8檔案）)，及其簡報規則（請參閱[管理優惠方案簡報](../../interaction/using/managing-offer-presentation.md)）。 這可讓您測試和調整優惠方案主張的各種版本，而無須實際使用優惠方案，或過度/過少向目標行銷，因為模擬不會對目標收件者造成影響。
+模擬會考量先前套用至優惠方案的內容與適用性規則(請參閱[優惠方案目錄概觀](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/offers/interaction-offer-catalog){target="_blank"} （Campaign v8檔案）)，及其簡報規則（請參閱[管理優惠方案簡報](../../interaction/using/managing-offer-presentation.md)）。 這可讓您測試和調整優惠方案主張的各種版本，而無須實際使用優惠方案，或過度/過少向目標行銷，因為模擬不會對目標收件者造成影響。
 
 若要瞭解如何模擬優惠方案，請閱讀以下步驟。
 

@@ -37,7 +37,7 @@ ht-degree: 2%
 1. 按一下滑鼠右鍵並選擇&#x200B;**[!UICONTROL Actions > Regenerate selected schemas...]** 。
 1. 按一下&#x200B;**[!UICONTROL OK]**&#x200B;以確認並啟動程式。
 
-然後，您可以在預覽和檔案索引標籤中檢查產生的結構描述的結構。 如需詳細資訊，請參閱[原則](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/create-schema){target="_blank"} （Campaign v8檔案）區段。
+然後，您可以在預覽和檔案索引標籤中檢查產生的結構描述的結構。 如需詳細資訊，請參閱[原則](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/create-schema){target="_blank"} （Campaign v8檔案）區段。
 
 >[!NOTE]
 >

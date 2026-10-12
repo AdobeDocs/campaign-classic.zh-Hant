@@ -47,7 +47,7 @@ ht-degree: 1%
 
 以下是有關在Adobe Campaign中使用輸入表單的一些一般原則。
 
-在[本節](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"}中詳細說明Forms （Campaign v8檔案）。
+在[本節](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"}中詳細說明Forms （Campaign v8檔案）。
 
 ## 表單結構 {#form-structure}
 
@@ -105,7 +105,7 @@ XPath是一種語法，可讓您在XML檔案的樹狀結構中尋找節點。
 
 控制項相對於彼此的排列方式看起來類似於HTML表格中使用的排列方式，可能會將控制項分割為數個欄、交錯元素或指定可用空間的佔用。 但是請記住，格式僅授權比例分配；您不能為物件指定固定尺寸。
 
-如需詳細資訊，請參閱[本節](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms#formatting){target="_blank"} （Campaign v8檔案）。
+如需詳細資訊，請參閱[本節](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/forms#formatting){target="_blank"} （Campaign v8檔案）。
 
 ## 清單型別控制項 {#list-type-controls}
 
@@ -214,7 +214,7 @@ XPath是一種語法，可讓您在XML檔案的樹狀結構中尋找節點。
 
 容器可讓您將一組控制項分組。 它們透過&#x200B;**`<container>`**&#x200B;元素存在。 它們已用來格式化數個欄中的控制項，並用來控制索引標籤清單。
 
-如需有關容器，以及如何在輸入表單中使用容器的詳細資訊，請參閱[本節](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms#containers){target="_blank"} （Campaign v8檔案）。
+如需有關容器，以及如何在輸入表單中使用容器的詳細資訊，請參閱[本節](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/forms#containers){target="_blank"} （Campaign v8檔案）。
 
 ## 編輯表單 {#editing-forms}
 
@@ -226,4 +226,4 @@ XPath是一種語法，可讓您在XML檔案的樹狀結構中尋找節點。
 
 ![](assets/d_ncs_content_form13.png)
 
-深入瞭解[編輯表單](../../configuration/using/editing-forms.md)和[表單結構](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"} （Campaign v8檔案）。
+深入瞭解[編輯表單](../../configuration/using/editing-forms.md)和[表單結構](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"} （Campaign v8檔案）。

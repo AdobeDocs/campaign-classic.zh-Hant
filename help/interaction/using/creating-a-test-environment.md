@@ -33,7 +33,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->僅將此環境建立方法用於測試環境。 在所有其他情況下，請使用目標對應助理。 如需詳細資訊，請參閱[建立優惠方案環境](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/interaction-settings/interaction-env#create-an-offer-environment){target="_blank"} （Campaign v8檔案）。
+>僅將此環境建立方法用於測試環境。 在所有其他情況下，請使用目標對應助理。 如需詳細資訊，請參閱[建立優惠方案環境](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/offers/interaction-settings/interaction-env#create-an-offer-environment){target="_blank"} （Campaign v8檔案）。
 
 1. 啟動Adobe Campaign Explorer並前往執行個體根目錄。
 1. 按一下滑鼠右鍵，然後使用下拉式功能表新增&#x200B;**[!UICONTROL Generic folder]**。

@@ -142,7 +142,7 @@ Create your delivery templates the way you would for an email campaign:
 * Add the offer to your transactional message template.
 * Check the preview, send a proof and publish the template.
 
-You also have to enable the unitary mode on your offer spaces. For more on this, refer to [this section](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/interaction-settings/interaction-offer-spaces){target="_blank"} (Campaign v8 documentation).
+You also have to enable the unitary mode on your offer spaces. For more on this, refer to [this section](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/offers/interaction-settings/interaction-offer-spaces){target="_blank"} (Campaign v8 documentation).
 
 -->
 
@@ -264,4 +264,4 @@ You also have to enable the unitary mode on your offer spaces. For more on this,
    * 按一下 **[!UICONTROL Create the archiving workflow]** 按鈕。
    * 按一下&#x200B;**[!UICONTROL Create data synchronization workflow]**&#x200B;按鈕以建立LINE資料同步工作流程。
 
-1. 您現在可以開始[建立異動訊息](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/transactional-template){target="_blank"} （Campaign v8檔案）。
+1. 您現在可以開始[建立異動訊息](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/real-time/transactional-template){target="_blank"} （Campaign v8檔案）。

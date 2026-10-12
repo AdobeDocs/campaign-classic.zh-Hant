@@ -102,7 +102,7 @@ Android提供兩種聯結器：
 
 ## 設定Android服務 {#configuring-android-service}
 
-![](assets/do-not-localize/how-to-video.png) [瞭解如何在影片中設定Android服務](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-an-android-service-in-campaign.html#configuring-an-android-service-and-creating-an-android-mobile-application-in-campaign){target="_blank"}。
+![](assets/do-not-localize/how-to-video.png) [瞭解如何在影片中設定Android服務](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-an-android-service-in-campaign.html?lang=zh-Hant#configuring-an-android-service-and-creating-an-android-mobile-application-in-campaign){target="_blank"}。
 
 1. 前往&#x200B;**[!UICONTROL Profiles and Targets > Services and subscriptions]**&#x200B;節點並按一下&#x200B;**[!UICONTROL New]**。
 
@@ -191,11 +191,11 @@ Android提供兩種聯結器：
 
 ## 擴充appsubscriptionRcp結構描述 {#extend-subscription-schema}
 
-![](assets/do-not-localize/how-to-video.png) [瞭解如何在視訊中擴充appsubscriptionRcp結構描述](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/extending-the-app-subscription-schema.html#extending-the-app-subscription-schema-to-personalize-push-notifications)
+![](assets/do-not-localize/how-to-video.png) [瞭解如何在視訊中擴充appsubscriptionRcp結構描述](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/extending-the-app-subscription-schema.html?lang=zh-Hant#extending-the-app-subscription-schema-to-personalize-push-notifications)
 
 您必須擴充&#x200B;**appsubscriptionRcp**，以定義新的額外欄位，將應用程式中的引數儲存至Campaign資料庫。 例如，這些欄位用於個人化。 操作步驟：
 
-1. 建立&#x200B;**[!UICONTROL Subscriber applications (nms:appsubscriptionRcp)]**&#x200B;結構描述的延伸並定義新欄位。 在[本頁](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"}中進一步瞭解結構描述延伸（Campaign v8檔案）
+1. 建立&#x200B;**[!UICONTROL Subscriber applications (nms:appsubscriptionRcp)]**&#x200B;結構描述的延伸並定義新欄位。 在[本頁](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"}中進一步瞭解結構描述延伸（Campaign v8檔案）
 
 1. 在&#x200B;**[!UICONTROL Subscription parameters]**&#x200B;索引標籤中定義對應。
 

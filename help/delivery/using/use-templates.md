@@ -82,7 +82,7 @@ ht-degree: 1%
 
 ### 設定控制組
 
-傳送傳遞後，您可以將排除的收件者與收到傳遞的收件者之行為進行比較。 接著，您就可以評估行銷活動的效率。 深入瞭解控制組[本節](https://experienceleague.adobe.com/en/docs/campaign/automation/campaign-orchestration/marketing-campaign-target#add-a-control-group){target="_blank"} （Campaign v8檔案）。
+傳送傳遞後，您可以將排除的收件者與收到傳遞的收件者之行為進行比較。 接著，您就可以評估行銷活動的效率。 深入瞭解控制組[本節](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/campaign-orchestration/marketing-campaign-target#add-a-control-group){target="_blank"} （Campaign v8檔案）。
 
 若要設定控制組，請按一下&#x200B;**[!UICONTROL To]**&#x200B;連結。 在&#x200B;**[!UICONTROL Select target]**&#x200B;視窗中，選取&#x200B;**[!UICONTROL Control group]**&#x200B;標籤。 您可以擷取部分目標，例如5%隨機抽樣。
 
@@ -96,4 +96,4 @@ ht-degree: 1%
 
 例如，為了更能控制傳出流量，您可以定義要使用的IP位址，方法為為每個子網域定義一個相似性，並為每個相似性建立一種型別。 相似性是在執行個體的組態檔案中定義。 請連絡您的Adobe Campaign管理員。
 
-如需型別的詳細資訊，請參閱[本節](https://experienceleague.adobe.com/en/docs/campaign/automation/campaign-optimization/campaign-typologies){target="_blank"} （Campaign v8檔案）。
+如需型別的詳細資訊，請參閱[本節](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/campaign-optimization/campaign-typologies){target="_blank"} （Campaign v8檔案）。

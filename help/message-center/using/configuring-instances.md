@@ -61,7 +61,7 @@ ht-degree: 2%
 
 ## 設定控制例項 {#control-instance}
 
-若要連線控制執行個體和執行執行個體，您必須先在控制執行個體&#x200B;**上建立並設定&#x200B;**&#x200B;[!UICONTROL Execution instance]&#x200B;**型別的外部帳戶**。 因此，一旦[發佈](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/transactional-template#publish-message-template){target="_blank"} （Campaign v8檔案），即可將異動訊息範本部署至執行個體。
+若要連線控制執行個體和執行執行個體，您必須先在控制執行個體&#x200B;**上建立並設定&#x200B;**&#x200B;[!UICONTROL Execution instance]&#x200B;**型別的外部帳戶**。 因此，一旦[發佈](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/real-time/transactional-template#publish-message-template){target="_blank"} （Campaign v8檔案），即可將異動訊息範本部署至執行個體。
 
 如果您使用數個執行例項，則必須建立與執行例項相同數量的外部帳戶。
 

@@ -33,11 +33,11 @@ ht-degree: 1%
 ---
 # 測試異動訊息範本 {#testing-message-templates}
 
-在您的[訊息範本](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/transactional-template){target="_blank"} （Campaign v8檔案）準備就緒後，請依照下列步驟預覽及測試。
+在您的[訊息範本](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/real-time/transactional-template){target="_blank"} （Campaign v8檔案）準備就緒後，請依照下列步驟預覽及測試。
 
-作為從Campaign v7轉變到v8的一部分，Campaign Classic檔案集已簡化並重新組織。 Campaign v8檔案集中現在提供常見功能。 若要瞭解如何新增種子地址、預覽交易式訊息及傳送校樣，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/transactional-template#test-message-template){target=_blank}。
+作為從Campaign v7轉變到v8的一部分，Campaign Classic檔案集已簡化並重新組織。 Campaign v8檔案集中現在提供常見功能。 若要瞭解如何新增種子地址、預覽交易式訊息及傳送校樣，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/real-time/transactional-template#test-message-template){target=_blank}。
 
-[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/transactional-template#test-message-template){target=_blank}
+[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/real-time/transactional-template#test-message-template){target=_blank}
 
 ## 個人化資料 {#personalization-data}
 
@@ -47,7 +47,7 @@ ht-degree: 1%
 
 ![](assets/messagecenter_create_custo_006.png)
 
-此資訊可讓您使用個人化標籤來個人化訊息內容(如需詳細資訊，請參閱[建立訊息內容](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/transactional-template#create-message-content){target="_blank"} （Campaign v8檔案）。
+此資訊可讓您使用個人化標籤來個人化訊息內容(如需詳細資訊，請參閱[建立訊息內容](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/real-time/transactional-template#create-message-content){target="_blank"} （Campaign v8檔案）。
 
 1. 選取異動訊息範本。
 

@@ -53,7 +53,7 @@ ht-degree: 3%
 
 ### 宣告 {#declaration}
 
-首先，請在結構描述中宣告方法(如需如何建立和編輯結構描述的詳細資訊，請參閱[本節](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"} （Campaign v8檔案）。
+首先，請在結構描述中宣告方法(如需如何建立和編輯結構描述的詳細資訊，請參閱[本節](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"} （Campaign v8檔案）。
 
 它們的宣告與原生方法的宣告類似，但是您必須新增「library」屬性，指定定義所在的方法程式庫名稱。
 

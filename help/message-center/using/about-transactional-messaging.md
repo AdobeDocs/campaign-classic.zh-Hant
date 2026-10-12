@@ -31,9 +31,9 @@ ht-degree: 8%
 
 **異動訊息** （訊息中心）是Campaign模組，專為管理從外部資訊系統傳送的事件產生的自訂觸發通知所設計。
 
-作為從Campaign v7轉變到v8的一部分，Campaign Classic檔案集已簡化並重新組織。 Campaign v8檔案集中現在提供常見功能。 若要進一步瞭解異動訊息，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/transactional){target=_blank}。
+作為從Campaign v7轉變到v8的一部分，Campaign Classic檔案集已簡化並重新組織。 Campaign v8檔案集中現在提供常見功能。 若要進一步瞭解異動訊息，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/real-time/transactional){target=_blank}。
 
-[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/transactional){target=_blank}
+[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/real-time/transactional){target=_blank}
 
 本節說明交易式傳訊架構，以及控制和執行執行個體的設定，尤其是內部部署和混合部署。
 
@@ -65,10 +65,10 @@ Adobe Campaign異動訊息模組整合至資訊系統，可傳回要變更為個
 
 在&#x200B;**控制項執行個體**&#x200B;上，您必須執行下列動作：
 
-1. [建立事件型別](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/transactional){target="_blank"} （Campaign v8檔案）。
-1. [建立及設計訊息範本](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/transactional-template){target="_blank"} （Campaign v8檔案）。 您必須在此步驟將事件連結至訊息。
+1. [建立事件型別](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/real-time/transactional){target="_blank"} （Campaign v8檔案）。
+1. [建立及設計訊息範本](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/real-time/transactional-template){target="_blank"} （Campaign v8檔案）。 您必須在此步驟將事件連結至訊息。
 1. [測試訊息](../../message-center/using/testing-message-templates.md)。
-1. [發佈訊息範本](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/transactional-template){target="_blank"} （Campaign v8檔案）。
+1. [發佈訊息範本](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/real-time/transactional-template){target="_blank"} （Campaign v8檔案）。
 
 >[!NOTE]
 >
@@ -78,13 +78,13 @@ Adobe Campaign異動訊息模組整合至資訊系統，可傳回要變更為個
 
 設計和發佈異動訊息範本後，如果觸發了對應的事件，則會在&#x200B;**執行執行個體**&#x200B;上執行以下主要步驟：
 
-1. 當外部資訊系統產生事件時，相關資料會透過&#x200B;**PushEvent**&#x200B;和&#x200B;**PushEvents**&#x200B;方法傳送至Campaign。 請參閱[事件集合](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/event/event-processing#event-collection){target="_blank"} （Campaign v8檔案）。
-1. 事件會連結至適當的訊息範本。 請參閱[路由至範本](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/event/event-processing#event-to-template){target="_blank"} （Campaign v8檔案）。
-1. 擴充階段完成後，會傳送傳遞。 請參閱[傳遞執行](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/event/delivery-execution){target="_blank"} （Campaign v8檔案）。 每個目標收件者都會收到個人化訊息。
+1. 當外部資訊系統產生事件時，相關資料會透過&#x200B;**PushEvent**&#x200B;和&#x200B;**PushEvents**&#x200B;方法傳送至Campaign。 請參閱[事件集合](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/real-time/event/event-processing#event-collection){target="_blank"} （Campaign v8檔案）。
+1. 事件會連結至適當的訊息範本。 請參閱[路由至範本](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/real-time/event/event-processing#event-to-template){target="_blank"} （Campaign v8檔案）。
+1. 擴充階段完成後，會傳送傳遞。 請參閱[傳遞執行](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/real-time/event/delivery-execution){target="_blank"} （Campaign v8檔案）。 每個目標收件者都會收到個人化訊息。
 
 ## 相關主題 {#related-topics}
 
 * [開始使用通訊頻道](../../delivery/using/communication-channels.md)
 * [傳遞建立關鍵步驟](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hant){target="_blank"}
 * [異動訊息傳送架構](../../message-center/using/transactional-messaging-architecture.md)
-* [存取異動訊息傳送報告](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/event/delivery-execution){target="_blank"} （Campaign v8檔案）
+* [存取異動訊息傳送報告](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/real-time/event/delivery-execution){target="_blank"} （Campaign v8檔案）

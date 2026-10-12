@@ -49,4 +49,4 @@ ht-degree: 3%
 
   ![](assets/s_ncs_configuration_offer_context.png)
 
-* 設定SOAP呼叫時，請插入&#x200B;**context** XML元素，以參考加入互動結構描述中的內容資訊。 如需進一步資訊，請參閱[透過SOAP整合（伺服器端）](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/inbound/interaction-integration){target="_blank"} （Campaign v8檔案）。
+* 設定SOAP呼叫時，請插入&#x200B;**context** XML元素，以參考加入互動結構描述中的內容資訊。 如需進一步資訊，請參閱[透過SOAP整合（伺服器端）](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/offers/inbound/interaction-integration){target="_blank"} （Campaign v8檔案）。
