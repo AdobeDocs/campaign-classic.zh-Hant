@@ -41,7 +41,7 @@ topic_v2:
     internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
+source-git-commit: 75d65377f93a40be104f7ec817e6a7609cccaf93
 workflow-type: tm+mt
 source-wordcount: '2702'
 ht-degree: 98%
@@ -87,7 +87,7 @@ _2021 年 9 月 7 日_
 **其他變更**
 
 * 修正 21.1.3 中引入的回歸，其中包含計費工作流程新護欄。 計費工作流程在錯誤的執行個體上執行，並嘗試傳送未產生的計費報告而當機。 您必須手動重新啟動要套用之修正的工作流程。
-* 先前已棄用的 Microsoft CRM 連接器 (Office 365 和內部部署) 已從介面中移除。 [閱讀更多](../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft)
+* 先前已棄用的 Microsoft CRM 連接器 (Office 365 和內部部署) 已從介面中移除。 [閱讀更多](../../platform/using/crm-connectors.md)
 * 遷移到 Tomcat 8 後，已更新 IIS 安裝指令碼，修正了 IIS 整合問題。 (NEO-31019)
 * 已在工作流程轉變&#x200B;**檢視群體**&#x200B;視窗的資料和結構描述標籤中改善資料來源識別。
 * 已將缺少的資料庫索引新增到下列結構描述中，以防止資料庫更新問題：xtk:rights、nms:dlvExclusion、nms:seedMember、nms:trackingUrl
@@ -124,7 +124,7 @@ _2021 年 6 月 5 日_
 <td>
 <p>新的<b>變更資料來源</b>工作流程活動可讓您變更工作流程工作表格的資料來源。 這為管理不同資料來源 (FDA &amp; 本機資料庫) 的資料提供更強大的彈性。</p>
 <p>在 Adobe Campaign 工作流程中，使用工作 (或暫時) 表格來管理資料。 工作流程執行時，工作表格會在各工作流程活動中共用資料。 在預設情況下，工作表格與我們查詢的資料來源建立在同一資料庫上。</p>
-<p>如需詳細資訊，請參閱<a href="https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/workflows/wf-activities/targeting-activities/change-data-source" target="_blank">詳細檔案</a> （Campaign v8檔案）。</p>
+<p>如需詳細資訊，請參閱<a href="https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/change-data-source" target="_blank">詳細檔案</a> （Campaign v8檔案）。</p>
 </td>
 </tr>
 </tbody>
@@ -213,7 +213,7 @@ _2021 年 6 月 5 日_
 * Vertica Analytics FDA 連接器
 * PostgreSQL 13
 
-瞭解更多與[&#x200B; Campaign 相容性矩陣相關的資訊](../../rn/using/compatibility-matrix.md)。
+瞭解更多與[ Campaign 相容性矩陣相關的資訊](../../rn/using/compatibility-matrix.md)。
 
 **棄用的功能**
 
@@ -226,7 +226,7 @@ _2021 年 6 月 5 日_
 **功能改進**
 
 * 儲存工作流程時已新增額外檢查，以確定活動名稱是唯一的，且轉變後一律會有活動。
-* **「帳單」**&#x200B;技術工作流程現在包含原本由&#x200B;**活動帳單輪廓數**(billingActiveContactCount) 工作流程執行的任務，此工作流程已移除。 工作流程每月傳送的電子郵件報告現在會提供執行個體上活躍輪廓數目的資訊。 [瞭解詳情](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows){target="_blank"} （Campaign v8檔案）。
+* **「帳單」**&#x200B;技術工作流程現在包含原本由&#x200B;**活動帳單輪廓數**(billingActiveContactCount) 工作流程執行的任務，此工作流程已移除。 工作流程每月傳送的電子郵件報告現在會提供執行個體上活躍輪廓數目的資訊。 [瞭解詳情](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows){target="_blank"} （Campaign v8檔案）。
 * 已新增新的 **_keyOnMData** 屬性，以便能夠使用鍵對備忘錄資料進行操作。
 
 **其他變更**

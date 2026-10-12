@@ -8,9 +8,9 @@ user-guide-description: Adobe Campaign Classic v7 產品文件。
 sub-product: adobe campaign classic
 type: Documentation
 nudge: false
-source-git-commit: 4bc1e76d129c6a6aa15b7e3915232043bd6f4286
+source-git-commit: 75d65377f93a40be104f7ec817e6a7609cccaf93
 workflow-type: tm+mt
-source-wordcount: '1992'
+source-wordcount: '1953'
 ht-degree: 100%
 ---
 
@@ -51,11 +51,7 @@ ht-degree: 100%
     + [選擇退出個人資訊銷售](platform/using/privacy-requests-ccpa.md)
   + 輪廓管理 {#profile-management}
     + [關於輪廓](platform/using/about-profiles.md)
-    + {hide-from-toc}[編輯輪廓 - 隱藏](platform/using/editing-a-profile.md)
-    + {hide-from-toc}[新增輪廓 - 隱藏](platform/using/adding-profiles.md)
-    + {hide-from-toc}[管理輪廓 - 隱藏](platform/using/managing-profiles.md)
     + [更新資料](platform/using/updating-data.md)
-    + {hide-from-toc}[匯入和匯出輪廓 - 隱藏](platform/using/exporting-and-importing-profiles.md)
     + [建立及管理清單](platform/using/creating-and-managing-lists.md)
   + 匯入及匯出資料 {#importing-and-exporting-data}
     + [開始使用匯入及匯出資料](platform/using/get-started-data-import-export.md)
@@ -75,9 +71,7 @@ ht-degree: 100%
       + [匯入和匯出最佳實務](platform/using/import-export-best-practices.md)
       + [SFTP 伺服器最佳實務及疑難排解](platform/using/sftp-server-usage.md)
   + 篩選資料 {#filtering-data}
-    + {hide-from-toc}[篩選選項 - 隱藏](platform/using/filtering-options.md)
     + {hide-from-toc}[建立篩選器 - 隱藏](platform/using/creating-filters.md)
-    + {hide-from-toc}[使用案例 - 隱藏](platform/using/use-case.md)
   + {hide-from-toc}[建立查詢的步驟 - 隱藏](platform/using/steps-to-create-a-query.md)
   + {hide-from-toc}[定義篩選條件 - 隱藏](platform/using/defining-filter-conditions.md)
   + 權限 {#permissions}
@@ -86,12 +80,8 @@ ht-degree: 100%
       + [建立及管理操作者](platform/using/access-management-operators.md)
       + [建立和管理群組](platform/using/access-management-groups.md)
     + [使用已命名的權限來設定權限](platform/using/access-management-named-rights.md)
-    + {hide-from-toc}[管理對資料夾的存取 - 隱藏](platform/using/access-management-folders.md)
   + CRM 連接器 {#connectors}
     + [開始使用 CRM 連接器](platform/using/crm-connectors.md)
-    + {hide-from-toc}[與 Microsoft Dynamics 365 連結](platform/using/crm-ms-dynamics.md)
-    + {hide-from-toc}[與 Salesforce.com 連結](platform/using/crm-sfdc.md)
-    + {hide-from-toc}[與 CRM 同步資料](platform/using/crm-data-sync.md)
 + 建立及傳送訊息 {#sending-messages}
   + [開始使用訊息](delivery/using/communication-channels.md)
   + {hide-from-toc}[傳遞設定 - 隱藏](delivery/using/delivery-settings.md)

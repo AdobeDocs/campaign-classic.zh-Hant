@@ -38,7 +38,7 @@ subfeature_v2:
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
     internal-label: Data integration
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 75d65377f93a40be104f7ec817e6a7609cccaf93
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 44%
@@ -56,7 +56,7 @@ Adobe Campaign 提供各種 CRM 連接器，用於將您的 Adobe Campaign 平�
 >[!NOTE]
 >
 >* 此功能可透過&#x200B;**CRM聯結器**&#x200B;專用套件在Adobe Campaign中使用。
->* 若要進一步瞭解CRM聯結器，以及如何連線至Microsoft Dynamics和Salesforce，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/connect/ac-crm/crm){target=_blank}。
+>* 若要進一步瞭解CRM聯結器，以及如何連線至Microsoft Dynamics和Salesforce，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/ac-crm/crm){target=_blank}。
 
 <!--
 ### Compatible systems {#compatible-crm-systems-and-limitations}
@@ -69,9 +69,9 @@ Supported CRM and versions are detailed in Campaign [Compatibility matrix](../..
 
 ### Implementation steps {#crm-implementation-steps}
 
-Learn step-by-step procedure to connect Campaign and Microsoft Dynamics [in this section](../../platform/using/crm-ms-dynamics.md)
+Learn step-by-step procedure to connect Campaign and Microsoft Dynamics [in this section](crm-connectors.md)
 
 
-Learn step-by-step procedure to connect Campaign and Salesforce [in this section](../../platform/using/crm-sfdc.md)
+Learn step-by-step procedure to connect Campaign and Salesforce [in this section](crm-connectors.md)
 
 -->

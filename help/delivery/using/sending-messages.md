@@ -58,8 +58,8 @@ ht-degree: 3%
 
 以下小節詳細說明傳送電子郵件所特有的設定和配置：
 <!--
-* [Generating the mirror page](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/emails/mirror-page){target="_blank"} (Campaign v8 documentation)
-* [Email BCC](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/emails/email-bcc){target="_blank"} (Campaign v8 documentation)
+* [Generating the mirror page](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/emails/mirror-page){target="_blank"} (Campaign v8 documentation)
+* [Email BCC](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/emails/email-bcc){target="_blank"} (Campaign v8 documentation)
 -->
 * [電子郵件參數](email-parameters.md)
 * [使用增強的MTA傳送電子郵件](sending-with-enhanced-mta.md)

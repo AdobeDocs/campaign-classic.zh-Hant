@@ -29,7 +29,7 @@ topic_v2:
     internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
+source-git-commit: 75d65377f93a40be104f7ec817e6a7609cccaf93
 workflow-type: tm+mt
 source-wordcount: '739'
 ht-degree: 0%
@@ -176,13 +176,13 @@ nlserver.exe config -postupgrade -check -instance:<instance-name>
    <td> 錯誤<br /> </td> 
    <td> 不再支援此型別的部署。 Office 365和內部部署Microsoft CRM聯結器部署型別現已棄用。 
    </br>如果您在外部帳戶中使用這些已棄用的部署型別之一，應刪除此外部帳戶，然後您應該執行<b>升級後</b>命令。 
-   </br>若要變更網頁API部署，請參閱<a href="../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft" target="_blank">網頁應用程式</a>。<br /> </td>
+   </br>若要變更網頁API部署，請參閱<a href="../../platform/using/crm-connectors.md">網頁應用程式</a>。<br /> </td>
   </tr> 
   <tr> 
    <td> CRM v1(mscrmWorkflow/sfdcWorkflow)<br /> </td> 
    <td> PU-0008<br /> </td> 
    <td> 錯誤<br /> </td> 
-   <td> Microsoft CRM、Salesforce、Oracle CRM隨選動作活動已無法使用。 若要設定Adobe Campaign與CRM系統之間的資料同步，您必須使用<a href="https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/workflows/wf-activities/targeting-activities/crm-connector" target="_blank">CRM聯結器</a> （Campaign v8檔案）鎖定目標活動。<br /> </td>
+   <td> Microsoft CRM、Salesforce、Oracle CRM隨選動作活動已無法使用。 若要設定Adobe Campaign與CRM系統之間的資料同步，您必須使用<a href="https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/crm-connector" target="_blank">CRM聯結器</a> （Campaign v8檔案）鎖定目標活動。<br /> </td>
   </tr> 
  </tbody> 
 </table>
