@@ -33,10 +33,10 @@ subfeature_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
 workflow-type: tm+mt
-source-wordcount: '124'
-ht-degree: 54%
+source-wordcount: '138'
+ht-degree: 44%
 ---
 # 編輯輪廓{#editing-a-profile}
 
@@ -56,11 +56,11 @@ ht-degree: 54%
 >
 >透過Adobe Campaign樹狀結構的&#x200B;**[!UICONTROL Administration > Configuration > Data schemas]**&#x200B;節點存取與設定檔表格中的欄位有關的XML結構描述和表單。 只有資深使用者可以變更這些結構描述。
 >
->如需詳細資訊，請參閱[本頁面](../../configuration/using/about-schema-edition.md)。
+>如需進一步資訊，請參閱[此頁面](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"} （Campaign v8檔案）。
 
 >[!NOTE]
 >
->若要進一步瞭解如何編輯設定檔及存取設定檔，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/audience/view-profiles){target=_blank}的詳細檔案。
+>若要進一步瞭解如何編輯設定檔及存取設定檔，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/view-profiles){target=_blank}的詳細檔案。
 
 
 
@@ -129,6 +129,6 @@ The list is configurable, and usually contains: the URL clicked, date and time o
 
 >[!NOTE]
 >
->For more on tracking functionality, please refer to [this page](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}.
+>For more on tracking functionality, please refer to [this page](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}.
 
 -->

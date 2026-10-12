@@ -24,9 +24,9 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '302'
 ht-degree: 0%
 ---
 # 設定介面{#configuring-the-interface}
@@ -57,7 +57,7 @@ Adobe Campaign使用「Nms_DefaultRcpSchema」全域變數與預設收件者資�
 
    >[!NOTE]
    >
-   >若要進一步瞭解&#x200B;**表單**&#x200B;型別檔案，請參閱[此頁面](../../configuration/using/identifying-a-form.md)。
+   >若要瞭解有關&#x200B;**表單**&#x200B;型別檔案的詳細資訊，請參閱[此頁面](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"} （Campaign v8檔案）。
 
    在我們目前的範例中，**表單**&#x200B;檔案必須以&#x200B;**cus:individual**&#x200B;結構描述為基礎，因此具有以下配置：
 

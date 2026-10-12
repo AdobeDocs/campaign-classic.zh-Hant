@@ -22,9 +22,9 @@ topic_v2:
     internal-label: Reporting
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 323ff901668895588a6e9587fa2a8b7804cf2fb4
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '278'
 ht-degree: 3%
 ---
 # 關於產品建議模擬{#about-offers-simulation}
@@ -33,7 +33,7 @@ ht-degree: 3%
 
 **Simulation**&#x200B;模組可讓您在將您的主張傳送給收件者之前，先測試屬於類別或環境的優惠方案分佈。
 
-模擬會考量先前套用至優惠方案的內容與適用性規則（請參閱[優惠方案目錄概觀](../../interaction/using/offer-catalog-overview.md)），以及其呈現規則（請參閱[管理優惠方案呈現方式](../../interaction/using/managing-offer-presentation.md)）。 這可讓您測試和調整優惠方案主張的各種版本，而無須實際使用優惠方案，或過度/過少向目標行銷，因為模擬不會對目標收件者造成影響。
+模擬會考量先前套用至優惠方案的內容與適用性規則(請參閱[優惠方案目錄概觀](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/interaction-offer-catalog){target="_blank"} （Campaign v8檔案）)，及其簡報規則（請參閱[管理優惠方案簡報](../../interaction/using/managing-offer-presentation.md)）。 這可讓您測試和調整優惠方案主張的各種版本，而無須實際使用優惠方案，或過度/過少向目標行銷，因為模擬不會對目標收件者造成影響。
 
 若要瞭解如何模擬優惠方案，請閱讀以下步驟。
 
@@ -60,7 +60,7 @@ ht-degree: 3%
 
 1. 指定模擬範圍。
 
-   如需詳細資訊，請參閱領域[&#128279;](../../interaction/using/simulation-scope.md#definition-of-the-scope)的定義。
+   如需詳細資訊，請參閱領域](../../interaction/using/simulation-scope.md#definition-of-the-scope)的[定義。
 
    ![](assets/offer_simulation_004.png)
 

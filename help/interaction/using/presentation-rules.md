@@ -24,9 +24,9 @@ feature_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 323ff901668895588a6e9587fa2a8b7804cf2fb4
 workflow-type: tm+mt
-source-wordcount: '451'
+source-wordcount: '465'
 ht-degree: 1%
 ---
 # 簡報規則{#presentation-rules}
@@ -113,7 +113,7 @@ ht-degree: 1%
 
    ![](assets/offer_typology_example_016.png)
 
-1. 在訊息內文中插入您的優惠方案並傳送傳遞。 如需詳細資訊，請參閱[關於傳出頻道](../../interaction/using/about-outbound-channels.md)。
+1. 在訊息內文中插入您的優惠方案並傳送傳遞。 如需詳細資訊，請參閱[關於傳出頻道](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/interaction-send-offers){target="_blank"} （Campaign v8檔案）。
 
    收件者已收到其符合資格的優惠。
 

@@ -45,18 +45,18 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
 workflow-type: tm+mt
-source-wordcount: '4078'
+source-wordcount: '4118'
 ht-degree: 1%
 ---
 # 資料模型最佳實務{#data-model-best-practices}
 
 本檔案概述設計Adobe Campaign資料模型時的主要建議。
 
-如需深入瞭解Campaign內建表格及其互動，請參閱[本節](../../configuration/using/about-data-model.md)部分。
+如需深入瞭解Campaign內建表格及其互動，請參閱[本節](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/datamodel){target="_blank"} （Campaign v8檔案）一節。
 
-閱讀[此檔案](../../configuration/using/about-schema-reference.md)以開始使用Campaign綱要。 在[本檔案](../../configuration/using/about-schema-edition.md)中瞭解如何設定延伸結構描述，以延伸Adobe Campaign資料庫的概念資料模型。
+閱讀[此檔案](../../configuration/using/about-schema-reference.md)以開始使用Campaign綱要。 在[本檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"} （Campaign v8檔案）中瞭解如何設定延伸結構描述，以延伸Adobe Campaign資料庫的概念資料模型。
 
 ## 概觀 {#overview}
 
@@ -82,7 +82,7 @@ Adobe Campaign是功能強大的跨頻道行銷活動管理系統，可以協助
 
 >[!NOTE]
 >
->Adobe Campaign Classic可建置自訂客戶表格。 但是，在大多數情況下，建議使用已預先建立其他表格和功能的標準[收件者表格](../../configuration/using/about-data-model.md#default-recipient-table)。
+>Adobe Campaign Classic可建置自訂客戶表格。 但是，在大多數情況下，建議使用已預先建立其他表格和功能的標準[收件者表格](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/datamodel#ootb-profiles){target="_blank"} （Campaign v8檔案）。
 
 ### 適用於Adobe Campaign的資料 {#data-for-campaign}
 
@@ -185,7 +185,7 @@ Adobe Campaign主索引鍵是所有現成可用表格自動產生的id，且對�
 
 依預設，自訂序列的值介於+1,000到+2.1BB之間。 技術上，啟用負值ID可以取得完整的4BB範圍。 這應謹慎使用，從負數到正數時將會遺失一個ID：在產生的SQL查詢中，Adobe Campaign通常會忽略記錄0。
 
-如需序列耗竭的詳細資訊，請觀看[此影片](https://helpx.adobe.com/tw/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html)。
+如需序列耗竭的詳細資訊，請觀看[此影片](https://helpx.adobe.com/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html)。
 
 ## 索引 {#indexes}
 
@@ -287,7 +287,7 @@ Adobe Campaign既不是Data Warehouse也不是報表工具。 因此，為了確
 
 在[Campaign隱私權與安全性方針](../../platform/using/privacy-and-recommendations.md)中進一步瞭解資料保留。
 
-在本節[&#128279;](../../production/using/database-cleanup-workflow.md)中進一步瞭解Campaign資料庫清理工作流程。
+在本節](../../production/using/database-cleanup-workflow.md)中進一步瞭解Campaign資料庫清理工作流程[。
 
 >[!IMPORTANT]
 >
@@ -338,7 +338,7 @@ Adobe Campaign仰賴協力廠商資料庫引擎。 視提供者而定，為大�
 
 * **小型**&#x200B;資料表與傳遞資料表類似。
 * **中等大小**&#x200B;資料表與收件者資料表的大小相同。 每個客戶有一筆記錄。
-* **大型**&#x200B;資料表類似於Broad記錄資料表。 每個客戶有許多記錄。
+* **大型**資料表類似於Broad記錄資料表。 每個客戶有許多記錄。
 例如，如果您的資料庫包含1千萬位收件者，則廣泛記錄表格會包含約1億到2億則訊息，而傳遞表格則會包含數千筆記錄。
 
 在PostgreSQL上，資料列不應超過8KB，以避免[TOAST](https://wiki.postgresql.org/wiki/TOAST)機制。 因此，請儘量減少欄數和每列大小，以保留系統的最佳效能（記憶體和CPU）。

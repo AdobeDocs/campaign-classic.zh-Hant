@@ -27,10 +27,10 @@ subfeature_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 586c6688e2abd3b6e55389bd1fa219d2c596d07d
 workflow-type: tm+mt
-source-wordcount: '350'
-ht-degree: 27%
+source-wordcount: '398'
+ht-degree: 21%
 ---
 # 開始使用多維度資料集{#about-cubes}
 
@@ -66,4 +66,6 @@ ht-degree: 27%
 1. 使用在Cube中計算和聚總的資料，建置查詢。
 1. 識別母體並在清單中加以參照。
 
-在[Adobe Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/analytics/reports/cubes/gs-cubes.html?lang=zh-Hant){target="_blank"}中瞭解如何建立和使用多維度資料集。
+作為從Campaign v7轉變到v8的一部分，Campaign Classic檔案集已簡化並重新組織。 Campaign v8檔案集中現在提供常見功能。 若要瞭解如何建立和使用多維度資料集，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/reports/cubes/gs-cubes){target=_blank}。
+
+[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/reports/cubes/gs-cubes){target=_blank}

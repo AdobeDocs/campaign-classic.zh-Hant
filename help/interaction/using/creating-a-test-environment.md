@@ -20,9 +20,9 @@ feature_v2:
     internal-label: Interaction
   - id: ea08db70-4682-59a2-9408-9aedd9548e07
     internal-label: Offers
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 323ff901668895588a6e9587fa2a8b7804cf2fb4
 workflow-type: tm+mt
-source-wordcount: '125'
+source-wordcount: '144'
 ht-degree: 0%
 ---
 # 建立測試環境{#creating-a-test-environment}
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->僅將此環境建立方法用於測試環境。 在所有其他情況下，請使用目標對應助理。 如需詳細資訊，請參閱[建立優惠方案環境](../../interaction/using/live-design-environments.md#creating-an-offer-environment)。
+>僅將此環境建立方法用於測試環境。 在所有其他情況下，請使用目標對應助理。 如需詳細資訊，請參閱[建立優惠方案環境](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/interaction-settings/interaction-env#create-an-offer-environment){target="_blank"} （Campaign v8檔案）。
 
 1. 啟動Adobe Campaign Explorer並前往執行個體根目錄。
 1. 按一下滑鼠右鍵，然後使用下拉式功能表新增&#x200B;**[!UICONTROL Generic folder]**。

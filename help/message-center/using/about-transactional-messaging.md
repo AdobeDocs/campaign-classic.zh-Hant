@@ -18,10 +18,10 @@ feature_v2:
 subfeature_v2:
   - id: d3b34fea-a110-482f-adb2-aae8d686bac8
     internal-label: Transactional messaging
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 617db6f51887118c965b8938b2b9f14335293875
 workflow-type: tm+mt
-source-wordcount: '660'
-ht-degree: 7%
+source-wordcount: '606'
+ht-degree: 8%
 ---
 # 開始使用交易型訊息 {#about-transactional-messaging}
 
@@ -31,15 +31,11 @@ ht-degree: 7%
 
 **異動訊息** （訊息中心）是Campaign模組，專為管理從外部資訊系統傳送的事件產生的自訂觸發通知所設計。
 
-交易式訊息是個別且唯一的通訊，由提供者（例如網站）即時傳送。 此為特別預期行為，因為它包含收件者要檢查或確認的重要資訊。
+作為從Campaign v7轉變到v8的一部分，Campaign Classic檔案集已簡化並重新組織。 Campaign v8檔案集中現在提供常見功能。 若要進一步瞭解異動訊息，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/transactional){target=_blank}。
 
-異動訊息功能的設計可支援擴充性並提供7天24小時的服務。
+[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/transactional){target=_blank}
 
-* **何時到期？** 由於此訊息包含重要資訊，使用者預期會即時傳送。 因此，觸發的事件與到達的訊息之間的延遲必須非常短。
-
-* **為什麼這很重要？** 一般而言，交易式訊息具有高開啟率。 因此，應謹慎設計，因為它在定義使用者端關係時可能對客戶行為產生強烈影響。
-
-* **例如？** 可能是建立帳戶後的歡迎訊息、確認訂單已出貨、發票、確認密碼變更的訊息、客戶瀏覽您的網站後的通知、產品無法使用通訊、帳戶宣告等。
+本節說明交易式傳訊架構，以及控制和執行執行個體的設定，尤其是內部部署和混合部署。
 
 >[!IMPORTANT]
 >
@@ -57,16 +53,6 @@ Adobe Campaign異動訊息模組整合至資訊系統，可傳回要變更為個
 >
 >若要為Adobe Cloud上託管的訊息中心執行執行個體建立新使用者，您必須聯絡[Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。 訊息中心使用者是特定操作者，需要專用許可權才能存取&#x200B;**[!UICONTROL Real time events (nmsRtEvent)]**&#x200B;資料夾。
 
-交易式訊息傳遞整體程式的說明如下：
-
-![](assets/transactional-msg-overview.png)
-
-例如，假設您是一間擁有網站的公司，客戶可以在其中購買產品。
-
-Adobe Campaign可讓您傳送通知電子郵件給已將產品新增至購物車的客戶。 當其中一人離開您的網站而未完成購買（觸發促銷活動事件的外部事件）時，就會自動傳送購物車放棄電子郵件給他們（交易式訊息傳送）。
-
-要設定此專案的主要步驟在[本節](#key-steps)中詳細說明。
-
 >[!NOTE]
 >
 >Adobe Campaign會優先處理交易式訊息，而非其他傳送。
@@ -79,10 +65,10 @@ Adobe Campaign可讓您傳送通知電子郵件給已將產品新增至購物車
 
 在&#x200B;**控制項執行個體**&#x200B;上，您必須執行下列動作：
 
-1. [建立事件型別](../../message-center/using/creating-event-types.md)。
-1. [建立並設計訊息範本](../../message-center/using/creating-the-message-template.md)。 您必須在此步驟將事件連結至訊息。
+1. [建立事件型別](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/transactional){target="_blank"} （Campaign v8檔案）。
+1. [建立及設計訊息範本](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/transactional-template){target="_blank"} （Campaign v8檔案）。 您必須在此步驟將事件連結至訊息。
 1. [測試訊息](../../message-center/using/testing-message-templates.md)。
-1. [發佈訊息範本](../../message-center/using/publishing-message-templates.md)。
+1. [發佈訊息範本](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/transactional-template){target="_blank"} （Campaign v8檔案）。
 
 >[!NOTE]
 >
@@ -92,13 +78,13 @@ Adobe Campaign可讓您傳送通知電子郵件給已將產品新增至購物車
 
 設計和發佈異動訊息範本後，如果觸發了對應的事件，則會在&#x200B;**執行執行個體**&#x200B;上執行以下主要步驟：
 
-1. 當外部資訊系統產生事件時，相關資料會透過&#x200B;**PushEvent**&#x200B;和&#x200B;**PushEvents**&#x200B;方法傳送至Campaign。 請參閱[事件集合](../../message-center/using/about-event-processing.md#event-collection)。
-1. 事件會連結至適當的訊息範本。 請參閱[路由至範本](../../message-center/using/about-event-processing.md#routing-towards-a-template)。
-1. 擴充階段完成後，會傳送傳遞。 請參閱[傳遞執行](../../message-center/using/delivery-execution.md)。 每個目標收件者都會收到個人化訊息。
+1. 當外部資訊系統產生事件時，相關資料會透過&#x200B;**PushEvent**&#x200B;和&#x200B;**PushEvents**&#x200B;方法傳送至Campaign。 請參閱[事件集合](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/event/event-processing#event-collection){target="_blank"} （Campaign v8檔案）。
+1. 事件會連結至適當的訊息範本。 請參閱[路由至範本](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/event/event-processing#event-to-template){target="_blank"} （Campaign v8檔案）。
+1. 擴充階段完成後，會傳送傳遞。 請參閱[傳遞執行](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/event/delivery-execution){target="_blank"} （Campaign v8檔案）。 每個目標收件者都會收到個人化訊息。
 
 ## 相關主題 {#related-topics}
 
 * [開始使用通訊頻道](../../delivery/using/communication-channels.md)
 * [傳遞建立關鍵步驟](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hant){target="_blank"}
 * [異動訊息傳送架構](../../message-center/using/transactional-messaging-architecture.md)
-* [關於異動訊息傳送報告](../../message-center/using/about-transactional-messaging-reports.md)
+* [存取異動訊息傳送報告](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/event/delivery-execution){target="_blank"} （Campaign v8檔案）

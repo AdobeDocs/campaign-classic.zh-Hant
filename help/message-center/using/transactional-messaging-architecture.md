@@ -23,9 +23,9 @@ subfeature_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 617db6f51887118c965b8938b2b9f14335293875
 workflow-type: tm+mt
-source-wordcount: '1104'
+source-wordcount: '1119'
 ht-degree: 1%
 ---
 # 異動訊息傳送架構 {#transactional-messaging-architecture}
@@ -103,7 +103,7 @@ Adobe建議您&#x200B;**在安裝Transactional訊息封裝**&#x200B;之前，一
 >此程式僅適用於使用安裝在相同電腦上的Windows NLServer的客戶。
 
 1. 使用套件匯入小幫手(**[!UICONTROL Tools > Advanced > Import package... > Adobe Campaign Package]**)安裝您需要的頻道，例如&#x200B;**行動頻道**。
-1. 執行檔案匯入(**[!UICONTROL Tools > Advanced > Import package... > File]**)，並選取&#x200B;**datakitnms &#x200B;**`[Your language]`**packagemessageCenter.xml**&#x200B;檔案。
+1. 執行檔案匯入(**[!UICONTROL Tools > Advanced > Import package... > File]**)，並選取&#x200B;**datakitnms **`[Your language]`**packagemessageCenter.xml**&#x200B;檔案。
 1. 在&#x200B;**[!UICONTROL XML content of the data to import]**&#x200B;中，僅保留對應至新增頻道的傳遞範本。 例如，如果您已新增&#x200B;**行動裝置頻道**，請僅保留與&#x200B;**[!UICONTROL Mobile transactional message]** (smsTriggerMessage)相對應的&#x200B;**entities**&#x200B;元素。 如果您已新增&#x200B;**行動應用程式頻道**，請僅保留&#x200B;**iOS交易式訊息** (iosTriggerMessage)和&#x200B;**Android交易式訊息** (androidTriggerMessage)。
 
    ![](assets/messagecenter_install_channel.png)
@@ -142,7 +142,7 @@ Create your delivery templates the way you would for an email campaign:
 * Add the offer to your transactional message template.
 * Check the preview, send a proof and publish the template.
 
-You also have to enable the unitary mode on your offer spaces. For more on this, refer to [this section](../../interaction/using/creating-offer-spaces.md).
+You also have to enable the unitary mode on your offer spaces. For more on this, refer to [this section](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/interaction-settings/interaction-offer-spaces){target="_blank"} (Campaign v8 documentation).
 
 -->
 
@@ -264,4 +264,4 @@ You also have to enable the unitary mode on your offer spaces. For more on this,
    * 按一下 **[!UICONTROL Create the archiving workflow]** 按鈕。
    * 按一下&#x200B;**[!UICONTROL Create data synchronization workflow]**&#x200B;按鈕以建立LINE資料同步工作流程。
 
-1. 您現在可以開始[建立交易式訊息](../../message-center/using/creating-the-message-template.md)。
+1. 您現在可以開始[建立異動訊息](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/transactional-template){target="_blank"} （Campaign v8檔案）。

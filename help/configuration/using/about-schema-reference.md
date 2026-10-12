@@ -28,10 +28,10 @@ level_v2:
     internal-label: Intermediate
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
 workflow-type: tm+mt
-source-wordcount: '372'
-ht-degree: 2%
+source-wordcount: '264'
+ht-degree: 3%
 ---
 # 開始使用結構描述 {#about-schema-reference}
 
@@ -39,7 +39,7 @@ ht-degree: 2%
 
 本章說明如何設定擴充功能綱要，以擴充Adobe Campaign資料庫的概念資料模型。
 
-如需Campaign內建表格及其互動的詳細資訊，請參閱[Campaign Classic資料模型](about-data-model.md)。
+如需Campaign內建表格及其互動的詳細資訊，請參閱[Campaign Classic資料模型](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/datamodel){target="_blank"} （Campaign v8檔案）。
 
 在Adobe Campaign中，應用程式中所攜帶資料的實體和邏輯結構會以XML進行說明。 **結構描述**&#x200B;是與資料庫表格關聯的XML檔案。 它會定義資料結構，並描述表格的SQL定義：
 
@@ -62,45 +62,6 @@ ht-degree: 2%
 
 ![](assets/reference_schema_intro.png)
 
-## 結構描述的語法 {#syntax-of-schemas}
+作為從Campaign v7轉變到v8的一部分，Campaign Classic檔案集已簡化並重新組織。 Campaign v8檔案集中現在提供常見功能。 若要瞭解結構描述的語法和識別，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target=_blank}。
 
-結構描述的根專案是&#x200B;**`<srcschema>`**。 它包含&#x200B;**`<element>`**&#x200B;和&#x200B;**`<attribute>`**&#x200B;個子元素。
-
-第一個&#x200B;**`<element>`**&#x200B;子元素與實體的根一致。
-
-```
-<srcSchema name="recipient" namespace="cus">
-  <element name="recipient">  
-    <attribute name="lastName"/>
-    <attribute name="email"/>
-    <element name="location">
-      <attribute name="city"/>
-   </element>
-  </element>
-</srcSchema>
-```
-
->[!NOTE]
->
->實體的根元素與結構描述同名。
-
-![](assets/s_ncs_configuration_schema_and_entity.png)
-
-**`<element>`**&#x200B;標籤定義實體元素的名稱。 結構描述的&#x200B;**`<attribute>`**&#x200B;標籤會定義這些標籤所連結到&#x200B;**`<element>`**&#x200B;標籤中的屬性名稱。
-
-## 結構描述的識別 {#identification-of-a-schema}
-
-資料結構是以其名稱和名稱空間來識別。
-
-名稱空間可讓您依感興趣的區域來分組一組結構描述。 例如，**cus**&#x200B;名稱空間是用於客戶特定的組態（**客戶**）。
-
-結構描述的識別索引鍵是使用名稱空間和名稱建置的字串，以冒號分隔；例如： **cus:recipient**。
-
->[!IMPORTANT]
->
->* 名稱空間的名稱必須簡潔，而且只能包含符合XML命名規則的授權字元。
->
->* 識別碼不能以數字字元開頭。
->
->* 下列名稱空間是保留給Adobe Campaign應用程式作業所需的系統實體描述，且不得使用： **xtk**、**nl**、**nms**、**ncm**、**temp**、**ncl**、**crm**、**xxl**。
->
+[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target=_blank}

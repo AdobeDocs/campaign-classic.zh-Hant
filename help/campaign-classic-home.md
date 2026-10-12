@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
 workflow-type: tm+mt
-source-wordcount: '656'
-ht-degree: 100%
+source-wordcount: '674'
+ht-degree: 79%
 ---
 # Campaign Classic v7 文件 {#campaign-classic-documentation}
 
@@ -109,7 +109,7 @@ Android Firebase Cloud Messaging (FCM) 服務的一些重要變更將於 2024 �
     <td>
       <img src="assets/do-not-localize/icon-experience.svg" width="35px">
     <br/>
-      <strong>客戶體驗</strong><br/><a href="workflow/using/about-workflows.md">使用工作流程自動化</a> - <a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=zh-Hant" target="_blank">行銷活動</a> - <a href="interaction/using/interaction-and-offer-management.md">互動與產品建議管理</a> - <a href="delivery/using/about-personalization.md">個人化</a> - <a href="reporting/using/about-adobe-campaign-reporting-tools.md">報告</a>
+      <strong>客戶體驗</strong><br/><a href="workflow/using/about-workflows.md">使用工作流程自動化</a> - <a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=zh-Hant" target="_blank">行銷活動</a> - <a href="interaction/using/interaction-and-offer-management.md">互動與優惠方案管理</a> - <a href="delivery/using/about-personalization.md">Personalization</a> - <a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/reports/gs-reporting" target="_blank">報告</a> （Campaign v8檔案）
     </td>
     <td>
       <img src="assets/do-not-localize/icon-send.svg" width="35px">
@@ -131,7 +131,7 @@ Android Firebase Cloud Messaging (FCM) 服務的一些重要變更將於 2024 �
     <td>
       <img src="assets/do-not-localize/icon-dev.svg" width="35px">
       <br/>
-      <strong>開發人員資源</strong><br/><a href="configuration/using/about-data-model.md">資料模型說明</a> - <a href="configuration/using/about-schema-reference.md">結構描述結構</a> - <a href="configuration/using/editing-forms.md">結構描述結構</a> - <a href="configuration/using/about-web-services.md">API</a> - <a href="https://experienceleague.adobe.com/zh-hant/tools/campaign-api">JSAPI 參考文件</a> - <a href="configuration/using/about-custom-recipient-table.md">自訂收件者表格</a>
+      <strong>開發人員資源</strong><br/><a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/datamodel" target="_blank">資料模型說明</a> （Campaign v8檔案） - <a href="configuration/using/about-schema-reference.md">結構描述結構</a> - <a href="configuration/using/editing-forms.md">結構描述結構</a> - <a href="configuration/using/about-web-services.md">API</a> - <a href="https://experienceleague.adobe.com/zh-hant/tools/campaign-api">JSAPI參考檔案</a> - <a href="configuration/using/about-custom-recipient-table.md">自訂收件者表格</a>
     </td>
   </tr>
 </table>

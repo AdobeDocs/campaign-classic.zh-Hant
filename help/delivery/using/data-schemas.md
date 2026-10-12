@@ -39,16 +39,16 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '571'
 ht-degree: 1%
 ---
 # 在Campaign中使用資料結構{#data-schemas}
 
 以下是有關在Adobe Campaign中使用資料結構描述的一些一般原則。
 
-如需在Adobe Campaign中建立和設定資料結構描述的詳細資訊，請參閱[本節](../../configuration/using/about-schema-edition.md)。
+如需在Adobe Campaign中建立和設定資料結構的詳細資訊，請參閱[本節](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"} （Campaign v8檔案）。
 
 ## 方案結構 {#schema-structure}
 

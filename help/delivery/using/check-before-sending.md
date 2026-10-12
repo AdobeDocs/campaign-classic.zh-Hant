@@ -43,10 +43,10 @@ topic_v2:
     internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 86e1df82ff7fe9142b0ba75b697d3262e8d7a9d5
 workflow-type: tm+mt
-source-wordcount: '895'
-ht-degree: 2%
+source-wordcount: '952'
+ht-degree: 1%
 ---
 # 傳送前執行所有檢查 {#perform-all-checks}
 
@@ -60,7 +60,7 @@ ht-degree: 2%
 
 此步驟可讓您在傳送到主要目標之前，偵測並修正可能的錯誤。
 
-本節[&#128279;](steps-validating-the-delivery.md)中顯示了驗證傳遞的步驟。
+本節](steps-validating-the-delivery.md)中顯示了驗證傳遞的步驟[。
 
 ## 收件匣轉譯 {#inbox-and-email-rendering}
 
@@ -72,13 +72,13 @@ ht-degree: 2%
 
 * 收件匣轉譯功能對於識別您的電子郵件行銷活動是否成功通過主要ISP （網際網路服務提供者）的篩選器和網頁郵件服務至關重要。 這類工具會將電子郵件的預檢復本傳送至測試收件匣的網路，以便您檢視這些服務中訊息的顯示或呈現方式。 它們也可能包括報表和程式碼更正選項，協助您快速識別並進行修正，以改善傳遞能力。
 
-在本節[&#128279;](inbox-rendering.md)瞭解更多。
+在本節](inbox-rendering.md)瞭解更多[。
 
 ## 校樣訊息 {#proof-messages}
 
 傳送校樣可讓您檢查選擇退出連結、映象頁面和任何其他連結、驗證訊息、驗證影像是否已顯示、偵測可能的錯誤等。您可能也會想要檢查您在不同裝置上的設計和演算。
 
-在本節[&#128279;](steps-validating-the-delivery.md#sending-a-proof)瞭解更多。
+在本節](steps-validating-the-delivery.md#sending-a-proof)瞭解更多[。
 
 ## 設定A/B測試傳送 {#a-b-testing-deliveries}
 
@@ -90,7 +90,7 @@ ht-degree: 2%
 
 * 選取成功率最高的專案，並將其傳送至目標的其餘部分
 
-在本節[&#128279;](get-started-a-b-testing.md)瞭解更多。
+在本節](get-started-a-b-testing.md)瞭解更多[。
 
 ## 請確定您的訊息已傳送 {#make-sure-your-message-is-delivered}
 
@@ -98,11 +98,11 @@ ht-degree: 2%
 
 ### 進行驗證程式
 
-您可以定義涉及Adobe Campaign運運算元和群組的完整驗證程式，以驗證目標和訊息內容。 這將確保完全監控和控制行銷活動的各種流程：目標定位、內容、預算、摘錄和傳送證明。 根據使用者的許可權，使用者會收到通知、收到校樣並能夠驗證或拒絕訊息。 在本節[&#128279;](../../campaign/using/marketing-campaign-approval.md)瞭解更多。
+您可以定義涉及Adobe Campaign運運算元和群組的完整驗證程式，以驗證目標和訊息內容。 這將確保完全監控和控制行銷活動的各種流程：目標定位、內容、預算、摘錄和傳送證明。 根據使用者的許可權，使用者會收到通知、收到校樣並能夠驗證或拒絕訊息。 在本節](https://experienceleague.adobe.com/en/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval){target="_blank"}中瞭解更多[ （Campaign v8檔案）。
 
 ### 使用波段
 
-您可以逐步增加使用波段傳送的容量。 這可避免您的郵件被標示為垃圾郵件，或您想要限制每天的郵件數。 使用波段您可以將傳送劃分為幾個批次，而不是同時傳送大量訊息。 在本節[&#128279;](steps-sending-the-delivery.md#sending-using-multiple-waves)瞭解更多。
+您可以逐步增加使用波段傳送的容量。 這可避免您的郵件被標示為垃圾郵件，或您想要限制每天的郵件數。 使用波段您可以將傳送劃分為幾個批次，而不是同時傳送大量訊息。 在本節](steps-sending-the-delivery.md#sending-using-multiple-waves)瞭解更多[。
 
 ### 排定訊息的優先順序
 
@@ -126,7 +126,7 @@ ht-degree: 2%
 
 * 針對每個IPAffinity元素，宣告可以使用的IP位址。 [了解更多](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)
 
-* 在您選擇的[型別](../../campaign-opt/using/about-campaign-typologies.md)中，使用&#x200B;**[!UICONTROL Managing affinities with IP addresses]**&#x200B;欄位將傳遞連結至管理上述相似性的傳遞伺服器(MTA)。 [了解更多資訊](../../campaign-opt/using/applying-rules.md#control-outgoing-smtp-traffic)。
+* 在您選擇的[型別](https://experienceleague.adobe.com/en/docs/campaign/automation/campaign-optimization/campaign-typologies){target="_blank"} （Campaign v8檔案）中，使用&#x200B;**[!UICONTROL Managing affinities with IP addresses]**&#x200B;欄位將傳遞連結至管理上述相似性的傳遞伺服器(MTA)。 [深入瞭解](https://experienceleague.adobe.com/en/docs/campaign/automation/campaign-optimization/apply-rules#control-outgoing-smtp-traffic){target="_blank"} （Campaign v8檔案）。
 
 * 傳送電子郵件後，檢查標題以確認傳送來自的IP位址。 您的電子郵件管理員應協助您取得標題資訊。
 
@@ -138,7 +138,7 @@ ht-degree: 2%
 
 ### 使用型別
 
-您可以使用型別規則，根據特定條件排除部分目標。 這可確保在遵守公司通訊政策的同時，傳送最符合客戶需求及期望的訊息。 例如，您可以從電子報的目標篩選未成年的收件者。 在此範例[&#128279;](../../campaign-opt/using/filtering-rules.md)中瞭解更多。
+您可以使用型別規則，根據特定條件排除部分目標。 這可確保在遵守公司通訊政策的同時，傳送最符合客戶需求及期望的訊息。 例如，您可以從電子報的目標篩選未成年的收件者。 在此範例](https://experienceleague.adobe.com/en/docs/campaign/automation/campaign-optimization/filtering-rules){target="_blank"}中瞭解更多[ （Campaign v8檔案）。
 
 ### 避免附件
 

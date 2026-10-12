@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Implementation
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
 workflow-type: tm+mt
-source-wordcount: '320'
-ht-degree: 8%
+source-wordcount: '334'
+ht-degree: 5%
 ---
 # 種子地址{#seed-addresses}
 
@@ -107,7 +107,7 @@ ht-degree: 8%
    >    
    >
 
-1. 相應地修改&#x200B;**[!UICONTROL seedMember]**&#x200B;表單，以在&#x200B;**[!UICONTROL Seed addresses]**&#x200B;視窗中定義新的「內部收件者」索引標籤。 如需詳細資訊，請參閱[此頁面](../../configuration/using/form-structure.md)。
+1. 相應地修改&#x200B;**[!UICONTROL seedMember]**&#x200B;表單，以在&#x200B;**[!UICONTROL Seed addresses]**&#x200B;視窗中定義新的「內部收件者」索引標籤。 如需詳細資訊，請參閱[此頁面](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"} （Campaign v8檔案）。
 
    ```
    <container colcount="2" label="Internal recipient" name="internal"

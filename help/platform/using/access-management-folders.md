@@ -42,9 +42,9 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 617db6f51887118c965b8938b2b9f14335293875
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '547'
 ht-degree: 4%
 ---
 # 管理對資料夾的存取{#folder-access-management}
@@ -66,7 +66,7 @@ Explorer導覽樹狀結構的每個資料夾都附加讀取、寫入和刪除存
 
 ![](assets/s_ncs_user_add_folder_in_tree.png)
 
-您可以自訂Explorer導覽樹狀結構。 在本節[&#128279;](adobe-campaign-workspace.md)中瞭解設定步驟和最佳實務。
+您可以自訂Explorer導覽樹狀結構。 在本節](adobe-campaign-workspace.md)中瞭解設定步驟和最佳實務[。
 
 ### 什麼是檢視 {#about-views}
 
@@ -120,7 +120,7 @@ Explorer導覽樹狀結構的每個資料夾都附加讀取、寫入和刪除存
 
 >[!NOTE]
 >
->管理[異動訊息](../../message-center/using/about-transactional-messaging.md)事件時，**[!UICONTROL Real time events]**&#x200B;或&#x200B;**[!UICONTROL Batch events]**&#x200B;資料夾不得在執行例項上設定為檢視，因為這樣可能會導致存取許可權問題。 如需事件集合的詳細資訊，請參閱[本節](../../message-center/using/about-event-processing.md#event-collection)。
+>管理[異動訊息](../../message-center/using/about-transactional-messaging.md)事件時，**[!UICONTROL Real time events]**&#x200B;或&#x200B;**[!UICONTROL Batch events]**&#x200B;資料夾不得在執行例項上設定為檢視，因為這樣可能會導致存取許可權問題。 如需事件集合的詳細資訊，請參閱[本節](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/event/event-processing#event-collection){target="_blank"} （Campaign v8檔案）。
 
 <!--
 ## Permissions on a folder

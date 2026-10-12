@@ -37,16 +37,16 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 86e1df82ff7fe9142b0ba75b697d3262e8d7a9d5
 workflow-type: tm+mt
-source-wordcount: '1551'
+source-wordcount: '1567'
 ht-degree: 11%
 ---
 # 設定並傳送傳遞 {#configuring-and-sending-the-delivery}
 
 ## 權限{#delivery-permissions}
 
-只有傳遞擁有者可以開始傳遞。 若要讓其他操作員（或操作員群組）能夠開始傳遞，請在&#x200B;**[!UICONTROL Delivery start:]**&#x200B;欄位中將他們新增為稽核者。 [了解更多資訊](../../campaign/using/marketing-campaign-approval.md#selecting-reviewers)。
+只有傳遞擁有者可以開始傳遞。 若要讓其他操作員（或操作員群組）能夠開始傳遞，請在&#x200B;**[!UICONTROL Delivery start:]**&#x200B;欄位中將他們新增為稽核者。 [深入瞭解](https://experienceleague.adobe.com/en/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval#select-reviewers){target="_blank"} （Campaign v8檔案）。
 
 ## 傳遞其他引數 {#delivery-additiona-parameters}
 
@@ -171,7 +171,7 @@ ht-degree: 11%
    >
    >在設定最後一個波段時，您也必須允許足夠的重試時間。 請參閱[本節](steps-sending-the-delivery.md#configuring-retries)。
 
-1. 若要監視您的傳送，請前往傳送記錄檔。 請參閱[此頁面](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"}。
+1. 若要監視您的傳送，請前往傳送記錄檔。 請參閱[此頁面](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"}。
 
    您可以看到已在已處理波段（**[!UICONTROL Sent]**&#x200B;狀態）中傳送的傳遞，以及將在剩餘波段（**[!UICONTROL Pending]**&#x200B;狀態）中傳送的傳遞。
 
@@ -223,7 +223,7 @@ ht-degree: 11%
 
   >[!IMPORTANT]
   >
-  >針對託管或混合式安裝，如果您已升級至[Enhanced MTA](sending-with-enhanced-mta.md)，則只有在設為&#x200B;**3.5天或更短時間時，才會使用Campaign電子郵件傳遞中的&#x200B;**&#x200B;[!UICONTROL Delivery duration]&#x200B;**設定**。 如果您定義的值超過3.5天，則不會考慮該值。
+  >針對託管或混合式安裝，如果您已升級至[Enhanced MTA](sending-with-enhanced-mta.md)，則只有在設為&#x200B;**3.5天或更短時間時，才會使用Campaign電子郵件傳遞中的&#x200B;**[!UICONTROL Delivery duration]**設定**。 如果您定義的值超過3.5天，則不會考慮該值。
 
 * **資源效度限制**： **[!UICONTROL Validity limit]**&#x200B;欄位是用於上傳的資源，主要用於映象頁面和影像。 本頁上的資源在限定時間內有效（以節省磁碟空間）。
 

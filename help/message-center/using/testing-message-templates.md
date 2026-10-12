@@ -26,54 +26,18 @@ subfeature_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 617db6f51887118c965b8938b2b9f14335293875
 workflow-type: tm+mt
-source-wordcount: '589'
-ht-degree: 2%
+source-wordcount: '298'
+ht-degree: 1%
 ---
 # 測試異動訊息範本 {#testing-message-templates}
 
+在您的[訊息範本](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/transactional-template){target="_blank"} （Campaign v8檔案）準備就緒後，請依照下列步驟預覽及測試。
 
+作為從Campaign v7轉變到v8的一部分，Campaign Classic檔案集已簡化並重新組織。 Campaign v8檔案集中現在提供常見功能。 若要瞭解如何新增種子地址、預覽交易式訊息及傳送校樣，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/transactional-template#test-message-template){target=_blank}。
 
-在您的[訊息範本](../../message-center/using/creating-the-message-template.md)準備就緒後，請依照下列步驟預覽並測試。
-
-## 管理異動訊息中的種子地址 {#managing-seed-addresses-in-transactional-messages}
-
-種子地址可讓您在電子郵件或簡訊傳送之前顯示訊息預覽、傳送校樣並測試訊息個人化。 種子地址會連結至傳遞，且無法用於其他傳遞。
-
-若要在交易式訊息中建立種子地址，請執行以下步驟：
-
-1. 在交易式訊息範本中，按一下&#x200B;**[!UICONTROL Seed addresses]**&#x200B;標籤。
-
-   ![](assets/messagecenter_create_seedaddr_001.png)
-
-1. 指派標籤給它，以便稍後輕鬆選取。
-
-   ![](assets/messagecenter_create_seedaddr_002.png)
-
-1. 輸入種子地址（電子郵件或行動電話，視通訊通道而定）。
-
-   ![](assets/messagecenter_create_seedaddr_003.png)
-
-1. 輸入外部識別碼：此選擇性欄位可讓您輸入商業金鑰（唯一ID、名稱+電子郵件等） 這是您網站上所有應用程式通用的功能，用來識別您的設定檔。 如果此欄位也出現在Adobe Campaign行銷資料庫中，您可以接著將事件與資料庫中的設定檔進行調解。
-
-   ![](assets/messagecenter_create_seedaddr_003bis.png)
-
-1. 插入測試資料（請參閱[Personalization資料](#personalization-data)）。
-
-   ![](assets/messagecenter_create_custo_001.png)
-
-   <!--## Creating several seed addresses {#creating-several-seed-addresses}-->
-1. 按一下&#x200B;**[!UICONTROL Add other seed addresses]**&#x200B;連結，然後按一下&#x200B;**[!UICONTROL Add]**&#x200B;按鈕。
-
-   ![](assets/messagecenter_create_seedaddr_004.png)
-
-   <!--1. Follow the configuration steps for a seed address detailed in the [Creating a seed address](#creating-a-seed-address) section.-->
-1. 重複此程式，視需要儘量建立地址。
-
-   ![](assets/messagecenter_create_seedaddr_008.png)
-
-地址建立後，您就可以顯示其預覽和個人化。 請參閱[異動訊息預覽](#transactional-message-preview)。
+[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/transactional-template#test-message-template){target=_blank}
 
 ## 個人化資料 {#personalization-data}
 
@@ -83,7 +47,7 @@ ht-degree: 2%
 
 ![](assets/messagecenter_create_custo_006.png)
 
-此資訊可讓您使用個人化標籤來個人化訊息內容（如需詳細資訊，請參閱[建立訊息內容](../../message-center/using/creating-the-message-template.md#creating-message-content)）。
+此資訊可讓您使用個人化標籤來個人化訊息內容(如需詳細資訊，請參閱[建立訊息內容](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/transactional-template#create-message-content){target="_blank"} （Campaign v8檔案）。
 
 1. 選取異動訊息範本。
 
@@ -94,48 +58,3 @@ ht-degree: 2%
    ![](assets/messagecenter_create_custo_001.png)
 
 1. 按一下 **[!UICONTROL Save]**。
-
-## 異動訊息預覽 {#transactional-message-preview}
-
-建立一或多個種子地址和訊息本文後，您可以預覽訊息並檢查其個人化。
-
-1. 在訊息範本中，按一下&#x200B;**[!UICONTROL Preview]**&#x200B;標籤。
-
-   ![](assets/messagecenter_preview_001.png)
-
-1. 在下拉式清單中選取&#x200B;**[!UICONTROL A seed address]**。
-
-   ![](assets/messagecenter_preview_002.png)
-
-1. 選取先前建立的種子地址，以顯示個人化訊息。
-
-   ![](assets/messagecenter_create_seedaddr_009.png)
-
-使用種子地址，您還可以為各種網際網路存取提供者顯示訊息的呈現。 如需詳細資訊，請參閱[收件匣轉譯](../../delivery/using/inbox-rendering.md)。
-
-## 傳送校樣 {#sending-a-proof}
-
-您可以傳送證明至先前建立的種子地址，以測試訊息傳送。
-
-傳送證明的過程與定期傳送的過程相同。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html?lang=zh-Hant){target="_blank"}。 然而，使用交易式訊息時，您需要預先執行下列操作：
-
-* 使用[個人化資料](#personalization-data)建立一或多個[種子地址](#managing-seed-addresses-in-transactional-messages)。
-* [建立訊息內容](../../message-center/using/creating-the-message-template.md#creating-message-content)。
-
-若要傳送證明：
-
-1. 按一下傳遞視窗中的&#x200B;**[!UICONTROL Send a proof]**&#x200B;按鈕。
-1. 分析傳遞。
-1. 更正任何錯誤並確認傳遞。
-
-   ![](assets/messagecenter_send_proof_001.png)
-
-1. 檢查訊息是否已送達種子地址，其內容是否符合您的設定。
-
-   ![](assets/messagecenter_send_proof_002.png)
-
-可透過&#x200B;**[!UICONTROL Audit]**&#x200B;索引標籤在每個範本中存取校樣。 如需詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html?lang=zh-Hant){target="_blank"}。
-
-![](assets/messagecenter_send_proof_003.png)
-
-您的訊息範本現在已準備好進行[發佈](../../message-center/using/publishing-message-templates.md)。
