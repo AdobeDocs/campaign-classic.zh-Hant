@@ -41,10 +41,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 4%
+source-wordcount: '912'
+ht-degree: 3%
 ---
 # 個人化與隱私 {#privacy}
 
@@ -117,7 +117,7 @@ ht-degree: 4%
 
 您必須確定加密密碼無法由低許可權驗證的使用者存取。 若要這麼做，請限制僅能存取密碼欄位，或存取整個實體（需要組建>= 8770）。
 
-此限制可讓您移除密碼欄位，但允許所有使用者從介面存取外部帳戶。 [了解更多資訊](../../configuration/using/restricting-pii-view.md)。
+此限制可讓您移除密碼欄位，但允許所有使用者從介面存取外部帳戶。 [深入瞭解](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/restrict-pi-view){target="_blank"} （Campaign v8檔案）。
 
 若要執行此作業，請依照下列步驟操作：
 

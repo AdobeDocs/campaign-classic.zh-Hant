@@ -43,9 +43,9 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '927'
 ht-degree: 1%
 ---
 # 個人化優惠券{#personalized-coupons}
@@ -54,7 +54,7 @@ ht-degree: 1%
 
 >[!AVAILABILITY]
 >
->優惠券管理不適用於企業(FFDA)部署內容中的Campaign v8。 深入瞭解[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/architecture/ffda/enterprise-deployment){target="_blank"}。
+>優惠券管理不適用於企業(FFDA)部署內容中的Campaign v8。 深入瞭解[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/config/architecture/ffda/enterprise-deployment){target="_blank"}。
 
 優惠券管理依賴必須安裝的套件。 若要確認您有優惠券管理，請核取&#x200B;**[!UICONTROL Administration > Configuration > Package management > Installed packages.]**
 
@@ -185,7 +185,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->依預設，優惠券管理模組使用&#x200B;**nms:recipient**&#x200B;表格。 [了解更多資訊](../../configuration/using/about-data-model.md#default-recipient-table)。
+>依預設，優惠券管理模組使用&#x200B;**nms:recipient**&#x200B;表格。 [深入瞭解](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/datamodel#ootb-profiles){target="_blank"} （Campaign v8檔案）。
 >
 >在此頁面[&#128279;](../../configuration/using/about-custom-recipient-table.md)中瞭解如何使用自訂收件者資料表。
 

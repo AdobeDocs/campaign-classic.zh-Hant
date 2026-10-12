@@ -50,10 +50,10 @@ topic_v2:
     internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
 workflow-type: tm+mt
-source-wordcount: '6654'
-ht-degree: 5%
+source-wordcount: '6917'
+ht-degree: 4%
 ---
 # Adobe Campaign字彙表{#ac-glossary}
 
@@ -127,7 +127,7 @@ Learn more about [ACS Connector](../../integrations/using/acs-connector-principl
 
 Campaigns that run on a schedule, such as for targeting recipients who have a birthday or an anniversary. Can also be used to execute look-ahead and look-back logic, such as who purchased yesterday or who has a payment due tomorrow.
 
-Learn more about [Campaigns](../../campaign/using/designing-marketing-campaigns.md).
+Learn more about [Campaigns](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/campaign-orchestration/set-up-campaigns){target="_blank"} (Campaign v8 documentation).
 +++
 -->
 
@@ -208,14 +208,14 @@ Cube是Adobe Campaign的直覺式資料探索工具，可協助使用者建立�
 
 Adobe Campaign隨附預先定義的資料模型，其中資料型別是透過安裝各種套件來定義。 運運算元可以擴充資源，以新增自訂欄位或自訂表格，例如交易或產品表格，藉此豐富資料模型。
 
-深入瞭解[自訂資源](../../configuration/using/about-schema-edition.md)。
+深入瞭解[自訂資源](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"} （Campaign v8檔案）。
 +++
 
 +++**資料模型**
 
 Campaign資料模型是一組結構描述，用於定義資料型別及其關係（連結）。 資料模型是抽象定義，以包含實際資料的資料庫實際實作。
 
-深入瞭解[資料模型](../../configuration/using/about-data-model.md)。
+深入瞭解[資料模型](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/datamodel){target="_blank"} （Campaign v8檔案）。
 +++
 
 +++**資料庫清除工作流程**
@@ -430,7 +430,7 @@ An engine call is a server call that starts real-time processing on server side 
 
 檔案擷取核准是讓個別操作員或操作員群組核准擷取檔案的內容和設定的程式，然後再傳送給外部廠商，例如直接郵件傳送。
 
-在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/direct-mail.html#validating){target="_blank"}中進一步瞭解檔案擷取核准。
+在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/direct-mail.html?lang=zh-Hant#validating){target="_blank"}中進一步瞭解檔案擷取核准。
 +++
 
 +++**正在篩選維度**
@@ -459,7 +459,7 @@ An engine call is a server call that starts real-time processing on server side 
 
 Forms定義特定結構描述型別的介面表示。 Forms是用來輕鬆建立和編輯產品中資料元素的方法，例如收件者、傳遞和行銷活動。 Adobe Campaign中的所有介面元素，都是使用Forms在產品本身中建立。 請注意，表單為選用專案，並非所有結構描述都有表單。
 
-深入瞭解[Forms](../../configuration/using/identifying-a-form.md)。
+深入瞭解[Forms](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"} （Campaign v8檔案）。
 +++
 
 <!--
@@ -519,7 +519,7 @@ Learn more about [Image serving](../../delivery/using/defining-the-email-content
 
 傳入互動是指頻道中連絡人的動作（例如網路、客服中心或行動裝置）產生傳入呼叫後的互動。 這類互動通常會在單一模式下處理（即每個收件者）。
 
-深入瞭解[傳入互動](../../interaction/using/about-inbound-channels.md)。
+深入瞭解[傳入互動](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/offers/inbound/interaction-present-offers){target="_blank"} （Campaign v8檔案）。
 +++
 
 +++**收件匣轉譯**
@@ -588,7 +588,7 @@ This template type is used to manage multilingual messages.  It is available for
 
 名稱空間是將客戶資料型別與Adobe Campaign在資料模型中的原生資料型別區分開的分割區。 也可用來協助定義從一個執行個體移轉至另一個執行個體，例如將結構描述或範本從開發執行個體移至生產執行個體。
 
-深入瞭解[名稱空間](../../configuration/using/about-schema-reference.md#identification-of-a-schema)。
+深入瞭解[名稱空間](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/schemas#identification-of-a-schema){target="_blank"} （Campaign v8檔案）。
 +++
 
 <!--
@@ -624,7 +624,7 @@ Learn more about [Navigation Bar](../../platform/using/adobe-campaign-workspace.
 
 優惠方案目錄是在Adobe Campaign中定義的一組優惠方案，可在互動期間加以選取。 目錄會以階層方式組織，每個節點都會與類別相對應。
 
-深入瞭解[優惠方案目錄](../../interaction/using/offer-catalog-overview.md)。
+深入瞭解[優惠方案目錄](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/offers/interaction-offer-catalog){target="_blank"} （Campaign v8檔案）。
 +++
 
 +++**優惠連絡人**
@@ -645,7 +645,7 @@ Learn more about [Navigation Bar](../../platform/using/adobe-campaign-workspace.
 
 優惠方案&#x200B;**設計環境**&#x200B;是運運算元建立優惠方案、定義型別規則，以及選取優惠方案鎖定目標的結構描述的環境。 用來儲存產生之優惠方案主張的表格也由環境定義。 依預設，Interaction附加元件會提供&#x200B;**設計**&#x200B;環境以及連結至它的&#x200B;**即時**&#x200B;環境。 這兩個環境都已預先設定為鎖定內建的收件者表格。
 
-深入瞭解[優惠方案設計環境](../../interaction/using/fundamental-principles.md)。
+深入瞭解[優惠方案設計環境](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/offers/interaction-architecture){target="_blank"} （Campaign v8檔案）。
 +++
 
 +++**優惠方案引擎套利**
@@ -672,7 +672,7 @@ Learn more about [Navigation Bar](../../platform/using/adobe-campaign-workspace.
 
 優惠方案環境是根資料夾，用於定義優惠方案目錄、其可用空間和環境預先定義的篩選器。 運運算元需要為每個目標維度建立一個環境。 選件環境有兩種型別：設計和即時。
 
-深入瞭解[優惠方案環境](../../interaction/using/fundamental-principles.md)。
+深入瞭解[優惠方案環境](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/offers/interaction-architecture){target="_blank"} （Campaign v8檔案）。
 +++
 
 +++**提供即時環境**
@@ -681,7 +681,7 @@ Learn more about [Navigation Bar](../../platform/using/adobe-campaign-workspace.
 
 優惠方案即時環境已連結至行銷活動&#x200B;**設計環境**。 它包含唯讀優惠方案，其內容和資格已透過&#x200B;**設計環境**&#x200B;核准。 您可以選取它們以在網站上顯示，或插入至外寄訊息。
 
-深入瞭解[優惠方案即時環境](../../interaction/using/fundamental-principles.md)。
+深入瞭解[優惠方案即時環境](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/offers/interaction-architecture){target="_blank"} （Campaign v8檔案）。
 +++
 
 +++**優惠方案簡報規則**
@@ -699,7 +699,7 @@ Learn more about [Navigation Bar](../../platform/using/adobe-campaign-workspace.
 
 這是選件顯示在其資料夾中的預覽。 可從優惠預覽標籤或連絡人設定檔存取。
 
-深入瞭解[優惠預覽](../../interaction/using/creating-an-offer.md#previewing-the-offer)。
+深入瞭解[優惠預覽](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/offers/interaction-offer#previewing-the-offer){target="_blank"} （Campaign v8檔案）。
 +++
 
 +++**優惠方案主張**
@@ -708,7 +708,7 @@ Learn more about [Navigation Bar](../../platform/using/adobe-campaign-workspace.
 
 優惠方案主張是動作的結果，其中包括在指定的優惠方案空間向聯絡人簡報優惠方案，例如網站上的橫幅、電子郵件或簡訊內容。 此結果會儲存在優惠方案主張表格中，該表格定義優惠方案、收件者和時間戳記，提供收件者已收到的所有優惠方案的記錄。
 
-深入瞭解[優惠方案主張](../../interaction/using/creating-offer-spaces.md#offer-proposition-statuses)。
+深入瞭解[優惠方案主張](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/offers/interaction-settings/interaction-offer-spaces#offer-proposition-statuses){target="_blank"} （Campaign v8檔案）。
 +++
 
 +++**優惠方案宣告**
@@ -735,7 +735,7 @@ Learn more about [Navigation Bar](../../platform/using/adobe-campaign-workspace.
 
 優惠方案空間是定義優惠方案公開位置的資料夾。 定義空間可讓您指定使用的管道、建置優惠方案的內容，以及指定顯示的優惠方案。 優惠方案空間是頻道與優惠方案引擎之間的介面。
 
-深入瞭解[優惠方案空間](../../interaction/using/creating-offer-spaces.md)。
+深入瞭解[優惠方案空間](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/offers/interaction-settings/interaction-offer-spaces){target="_blank"} （Campaign v8檔案）。
 +++
 
 +++**優惠方案主題**
@@ -744,7 +744,7 @@ Learn more about [Navigation Bar](../../platform/using/adobe-campaign-workspace.
 
 優惠方案主題是類別中定義的關鍵字，可讓運運算元在顯示優惠方案時篩選優惠方案。 主題允許從目錄結構非階層式選取優惠方案。
 
-深入瞭解[優惠方案主題](../../interaction/using/integrating-an-offer-via-the-wizard.md)。
+深入瞭解[優惠方案主題](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/offers/interaction-send-offers){target="_blank"} （Campaign v8檔案）。
 +++
 
 +++**優惠方案權重**
@@ -753,7 +753,7 @@ Learn more about [Navigation Bar](../../platform/using/adobe-campaign-workspace.
 
 優惠權重是根據精確定義優惠相關性的公式，以便讓引擎選取最相關的優惠。 權重在選件中定義，而乘數在類別中定義。 在降低權重順序時，會考慮合格的優惠。
 
-深入瞭解[優惠方案權重](../../interaction/using/creating-an-offer.md#offer-weight)。
+深入瞭解[優惠方案權重](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/offers/interaction-offer#offer-weight){target="_blank"} （Campaign v8檔案）。
 +++
 
 +++**運運算元**
@@ -783,7 +783,7 @@ Learn more about [Navigation Bar](../../platform/using/adobe-campaign-workspace.
 
 傳出互動是從聯絡人清單（用於傳遞電子郵件、直接郵件等）對互動引擎發出的呼叫。 相同的規則和程式會套用到每個連絡人。 這類互動通常以批次模式處理。
 
-深入瞭解[傳出互動](../../interaction/using/about-outbound-channels.md)。
+深入瞭解[傳出互動](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/offers/interaction-send-offers){target="_blank"} （Campaign v8檔案）。
 +++
 
 +++**封裝匯出/匯入**
@@ -895,7 +895,7 @@ Adobe Campaign中的「公用資源」資料夾內含由應用程式伺服器託
 
 在Adobe Campaign中，收件者是用於傳送內容（電子郵件、簡訊等）的預設設定檔 傳送給您的客戶。 儲存在資料庫中的收件者資料可讓您篩選目標並新增個人化資料。 這通常是個人、連絡人、人口統計和交易資訊，但可能是任何型別的支援行銷和分析的資訊。
 
-深入瞭解[收件者](../../configuration/using/about-data-model.md)。
+深入瞭解[收件者](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/datamodel){target="_blank"} （Campaign v8檔案）。
 +++
 
 +++**演算函式**
@@ -904,7 +904,7 @@ Adobe Campaign中的「公用資源」資料夾內含由應用程式伺服器託
 
 演算函式定義於選件空間中。 它可用來根據優惠方案中定義的屬性來建構其優惠方案表示。 有三種不同的演算功能模式：HTML、XML和文字。
 
-深入瞭解[演算函式](../../interaction/using/creating-offer-spaces.md)。
+深入瞭解[演算函式](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/offers/interaction-settings/interaction-offer-spaces){target="_blank"} （Campaign v8檔案）。
 +++
 
 <!--
@@ -1053,7 +1053,7 @@ Learn more about [Total database storage](../../workflow/using/about-workflows.m
 
 傳送傳遞並啟用追蹤後，「追蹤」技術工作流程會擷取追蹤資料。 此資料可在您傳送的「追蹤」標籤中找到。 您可以找到開啟和點選電子郵件或其他與收件者所收到訊息互動的資訊。
 
-深入瞭解Campaign v8[&#128279;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/tracking-logs){target="_blank"}中的追蹤記錄。
+深入瞭解Campaign v8[&#128279;](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/tracking-logs){target="_blank"}中的追蹤記錄。
 +++
 
 +++**交易型訊息**
@@ -1107,7 +1107,7 @@ Learn more about [Triggers](../../workflow/using/about-workflows.md).
 
 在單一模式中，單一連絡人會在執行階段由優惠方案引擎處理。 此模式通常用於傳入互動和異動訊息。
 
-深入瞭解[單一模式](../../interaction/using/about-inbound-channels.md)。
+深入瞭解[單一模式](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/offers/inbound/interaction-present-offers){target="_blank"} （Campaign v8檔案）。
 +++
 
 +++**網頁應用程式**

@@ -44,10 +44,10 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 323ff901668895588a6e9587fa2a8b7804cf2fb4
 workflow-type: tm+mt
-source-wordcount: '589'
-ht-degree: 4%
+source-wordcount: '604'
+ht-degree: 3%
 ---
 # 建立及管理操作員群組 {#operator-groups}
 
@@ -135,7 +135,7 @@ ht-degree: 4%
 
 1. **[!UICONTROL Offer managers]**
 
-   此群組中的運運算元可以建立和維護優惠方案。 如需詳細資訊，請參閱此[頁面](../../interaction/using/operator-profiles.md)。
+   此群組中的運運算元可以建立和維護優惠方案。 如需詳細資訊，請參閱此[頁面](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/offers/interaction-settings/interaction-operators){target="_blank"} （Campaign v8檔案）。
    此群組包含下列已命名的許可權：
 
    * **[!UICONTROL INSERT FOLDERS]**：將資料夾插入Adobe Campaign樹狀結構的許可權（前提是您擁有相關分支的編輯許可權），

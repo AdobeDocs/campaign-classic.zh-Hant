@@ -24,9 +24,9 @@ subfeature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
 workflow-type: tm+mt
-source-wordcount: '131'
+source-wordcount: '146'
 ht-degree: 2%
 ---
 # 重新產生方案{#regenerating-schemas}
@@ -37,7 +37,7 @@ ht-degree: 2%
 1. 按一下滑鼠右鍵並選擇&#x200B;**[!UICONTROL Actions > Regenerate selected schemas...]** 。
 1. 按一下&#x200B;**[!UICONTROL OK]**&#x200B;以確認並啟動程式。
 
-然後，您可以在預覽和檔案索引標籤中檢查產生的結構描述的結構。 如需詳細資訊，請參閱[原則](../../configuration/using/data-schemas.md#principles)區段。
+然後，您可以在預覽和檔案索引標籤中檢查產生的結構描述的結構。 如需詳細資訊，請參閱[原則](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/create-schema){target="_blank"} （Campaign v8檔案）區段。
 
 >[!NOTE]
 >

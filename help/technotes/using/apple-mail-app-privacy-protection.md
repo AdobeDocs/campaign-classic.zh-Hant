@@ -41,10 +41,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 586c6688e2abd3b6e55389bd1fa219d2c596d07d
 workflow-type: tm+mt
-source-wordcount: '2101'
-ht-degree: 1%
+source-wordcount: '2138'
+ht-degree: 0%
 ---
 # Apple郵件應用程式中的郵件隱私保護
 
@@ -95,7 +95,7 @@ Apple的新功能是未來產業在電子郵件隱私保護方面的面貌。 �
 
 * **[!UICONTROL Operating Systems]**&#x200B;報告
 
-  若要識別每個作業系統和每個版本的訪客比例，請使用此報表。 [閱讀更多](../../reporting/using/global-reports.md#operating-systems)。
+  若要識別每個作業系統和每個版本的訪客比例，請使用此報表。 [瞭解詳情](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports#operating-systems){target="_blank"} （Campaign v8檔案）。
 
   您可以檢視每個作業系統相對於訪客總數的訪客劃分。
 
@@ -107,7 +107,7 @@ Apple的新功能是未來產業在電子郵件隱私保護方面的面貌。 �
 
 * **[!UICONTROL Breakdown of opens]**&#x200B;報告
 
-  若要識別每個作業系統的電子郵件開啟比例，請使用此報表。 [閱讀更多](../../reporting/using/global-reports.md#breakdown-of-opens)。
+  若要識別每個作業系統的電子郵件開啟比例，請使用此報表。 [瞭解詳情](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports#breakdown-of-opens){target="_blank"} （Campaign v8檔案）。
 
   ![](../../reporting/using/assets/dlv_useragent_report.png)
 

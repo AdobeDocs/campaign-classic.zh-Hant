@@ -40,7 +40,7 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 4bc1e76d129c6a6aa15b7e3915232043bd6f4286
 workflow-type: tm+mt
 source-wordcount: '2105'
 ht-degree: 2%
@@ -51,7 +51,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->如需關於工作流程、傳送、對象等常見Campaign問題的完整解答，請參閱[Campaign v8完整常見問題集](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html){target="_blank"}。
+>如需關於工作流程、傳送、對象等常見Campaign問題的完整解答，請參閱[Campaign v8完整常見問題集](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html?lang=zh-Hant){target="_blank"}。
 
 Adobe Campaign 會定期更新。 如果您熟悉我們發佈的[發行說明](../../rn/using/rn-overview.md)，您可能會知道每年平均會發行2/3個包含新功能、改進和修正的次要版本。 此外，我們定期發行只累積修正的版本編號。 此定期更新的目的是為了讓您掌握最新、最佳的資訊，讓您的環境完全安全，並明顯改善您使用我們產品的體驗。
 
@@ -212,7 +212,7 @@ Adobe會在任何變更前進行系統備份。 不過，如果您的非生產�
 
 如果您在組建版本升級後遇到問題，請聯絡[Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。 客戶服務會安排建置日期並開啟建置升級相關票證。
 
-深入瞭解Campaign Classic的[說明與支援選項](../../support.md)
+深入瞭解Campaign Classic的[說明與支援選項](../../campaign-classic-home.md)
 
 ## 建置升級檢查清單 {#check-list}
 
@@ -252,5 +252,5 @@ Adobe會在任何變更前進行系統備份。 不過，如果您的非生產�
 
 * [執行版本編號升級](../../production/using/build-upgrade.md)
 * [Campaign Classic發行說明](../../rn/using/rn-overview.md)
-* [Campaign Classic的說明與支援選項](../../support.md)
+* [Campaign Classic的說明與支援選項](../../campaign-classic-home.md)
 * [年度升級計畫](../../rn/using/rn-overview.md#yearly-upgrade)

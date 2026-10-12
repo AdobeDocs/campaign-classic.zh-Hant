@@ -36,9 +36,9 @@ topic_v2:
     internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 86e1df82ff7fe9142b0ba75b697d3262e8d7a9d5
 workflow-type: tm+mt
-source-wordcount: '1054'
+source-wordcount: '1071'
 ht-degree: 4%
 ---
 # 更新至新的傳遞能力伺服器 {#acc-deliverability}
@@ -150,4 +150,4 @@ ht-degree: 4%
 
 如果您不升級環境，電子郵件設定將停止同步（MX管理規則、傳入電子郵件規則、網域管理規則和退回限定規則）。 這可能會隨著時間影響您的傳遞能力。 若對這些規則進行重大變更，則必須從此刻手動套用這些規則。
 
-對於MKT執行個體，只有[全域隱藏清單](../../campaign-opt/using/filtering-rules.md#default-deliverability-exclusion-rules)受到影響。
+對於MKT執行個體，只有[全域隱藏清單](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/campaign-optimization/filtering-rules#default-deliverability-exclusion-rules){target="_blank"} （Campaign v8檔案）受到影響。

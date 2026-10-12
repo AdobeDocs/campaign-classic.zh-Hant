@@ -17,9 +17,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
 workflow-type: tm+mt
-source-wordcount: '1803'
+source-wordcount: '1818'
 ht-degree: 0%
 ---
 # 資料導向 API{#data-oriented-apis}
@@ -147,7 +147,7 @@ Write方法以[Write / WriteCollection (xtk:session)](#write---writecollection--
 * **選取**：建立游標以傳回數筆記錄，如果沒有資料，則傳回空白檔案。
 * **count**：傳回資料計數。
 
-**XPath**&#x200B;語法是用來根據輸入結構描述來尋找資料。 如需XPath的詳細資訊，請參閱[資料結構描述](../../configuration/using/data-schemas.md)。
+**XPath**&#x200B;語法是用來根據輸入結構描述來尋找資料。 如需XPath的詳細資訊，請參閱[資料結構描述](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/create-schema){target="_blank"} （Campaign v8檔案）。
 
 #### 具有&#39;get&#39;操作的範例 {#example-with-the--get--operation}
 

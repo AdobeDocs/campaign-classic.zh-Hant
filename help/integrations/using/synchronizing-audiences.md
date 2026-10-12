@@ -42,9 +42,9 @@ topic_v2:
     internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
 workflow-type: tm+mt
-source-wordcount: '1161'
+source-wordcount: '1178'
 ht-degree: 1%
 ---
 # 同步客群{#synchronizing-audiences}
@@ -89,7 +89,7 @@ ht-degree: 1%
 
    ![](assets/acs_connect_query1.png)
 
-1. 從查詢中新增其他資料。 如需詳細資訊，請參閱[新增資料](../../workflow/using/query.md#adding-data)區段。
+1. 從查詢中新增其他資料。 如需詳細資訊，請參閱[新增資料](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/workflows/wf-activities/targeting-activities/query#adding-data){target="_blank"} （Campaign v8檔案）區段。
 
    此範例說明如何新增彙總，以計算收件者在一年內收到多少傳遞。
 

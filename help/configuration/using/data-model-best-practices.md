@@ -45,18 +45,18 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
 workflow-type: tm+mt
-source-wordcount: '4078'
+source-wordcount: '4118'
 ht-degree: 1%
 ---
 # 資料模型最佳實務{#data-model-best-practices}
 
 本檔案概述設計Adobe Campaign資料模型時的主要建議。
 
-如需深入瞭解Campaign內建表格及其互動，請參閱[本節](../../configuration/using/about-data-model.md)部分。
+如需深入瞭解Campaign內建表格及其互動，請參閱[本節](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/datamodel){target="_blank"} （Campaign v8檔案）一節。
 
-閱讀[此檔案](../../configuration/using/about-schema-reference.md)以開始使用Campaign綱要。 在[本檔案](../../configuration/using/about-schema-edition.md)中瞭解如何設定延伸結構描述，以延伸Adobe Campaign資料庫的概念資料模型。
+閱讀[此檔案](../../configuration/using/about-schema-reference.md)以開始使用Campaign綱要。 在[本檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"} （Campaign v8檔案）中瞭解如何設定延伸結構描述，以延伸Adobe Campaign資料庫的概念資料模型。
 
 ## 概觀 {#overview}
 
@@ -82,7 +82,7 @@ Adobe Campaign是功能強大的跨頻道行銷活動管理系統，可以協助
 
 >[!NOTE]
 >
->Adobe Campaign Classic可建置自訂客戶表格。 但是，在大多數情況下，建議使用已預先建立其他表格和功能的標準[收件者表格](../../configuration/using/about-data-model.md#default-recipient-table)。
+>Adobe Campaign Classic可建置自訂客戶表格。 但是，在大多數情況下，建議使用已預先建立其他表格和功能的標準[收件者表格](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/datamodel#ootb-profiles){target="_blank"} （Campaign v8檔案）。
 
 ### 適用於Adobe Campaign的資料 {#data-for-campaign}
 

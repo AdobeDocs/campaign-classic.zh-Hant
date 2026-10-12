@@ -27,9 +27,9 @@ topic_v2:
     internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
 workflow-type: tm+mt
-source-wordcount: '2376'
+source-wordcount: '2390'
 ht-degree: 2%
 ---
 # Campaign資料模型說明{#data-model-description}
@@ -73,7 +73,7 @@ iFolderId欄位是將收件者連結至其執行資料夾的外部索引鍵。 �
 
 sCountryCode欄位是與收件者相關聯之國家的3166-1 Alpha 2 ISO代碼（2個字元）。 此欄位實際上是國家/地區參考表格(NmsCountry)上的外部索引鍵，其中包含國家/地區標籤和其他國家/地區代碼資料。 若未填入國家/地區，則會儲存「XX」值（並使用它來取代零識別碼記錄）。
 
-如需收件者資料表的詳細資訊，請參閱[此區段](../../configuration/using/about-data-model.md#default-recipient-table)。
+如需收件者表格的詳細資訊，請參閱[本節](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/datamodel#ootb-profiles){target="_blank"} （Campaign v8檔案）。
 
 ### NmsGroup {#NmsGroup}
 

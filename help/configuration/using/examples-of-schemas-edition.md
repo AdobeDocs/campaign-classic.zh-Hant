@@ -26,9 +26,9 @@ subfeature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
 workflow-type: tm+mt
-source-wordcount: '688'
+source-wordcount: '702'
 ht-degree: 2%
 ---
 # 結構描述版本範例{#examples-of-schemas-edition}
@@ -355,7 +355,7 @@ xtkschema="xtk:srcSchema">
 
 * 在[Adobe Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}中進一步瞭解如何&#x200B;**使用分項清單**。
 
-* [開始使用Campaign綱要](../../configuration/using/about-schema-edition.md)
+* [開始使用Campaign綱要](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"} （Campaign v8檔案）
 
 * [更新資料庫結構](../../configuration/using/updating-the-database-structure.md)
 

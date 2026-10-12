@@ -28,9 +28,9 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
 workflow-type: tm+mt
-source-wordcount: '771'
+source-wordcount: '786'
 ht-degree: 5%
 ---
 # 指令碼和程式碼指南 {#scripting-coding-guidelines}
@@ -96,7 +96,7 @@ ht-degree: 5%
 
 除了資料夾式安全性模型之外，您還可以使用已命名的許可權來限制操作員動作：
 
-* 您可以新增一些系統篩選器(sysFilter)，以防止讀取/寫入您的資料（請參閱[此頁面](../../configuration/using/filtering-schemas.md)）。
+* 您可以新增一些系統篩選器(sysFilter)，以防止讀取/寫入您的資料(請參閱[此頁面](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/filter-schema){target="_blank"} （Campaign v8檔案）)。
 
   ```
   <sysFilter name="writeAccess">    

@@ -31,10 +31,10 @@ subfeature_v2:
     internal-label: Query Editor
   - id: efa38731-2723-4334-8d8b-a778af834835
     internal-label: Access management
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 75d65377f93a40be104f7ec817e6a7609cccaf93
 workflow-type: tm+mt
-source-wordcount: '138'
-ht-degree: 10%
+source-wordcount: '165'
+ht-degree: 9%
 ---
 # 建立查詢的步驟{#steps-to-create-a-query}
 
@@ -52,8 +52,8 @@ ht-degree: 10%
 >[!NOTE]
 >
 >* 所有這些步驟都可在一般查詢編輯器中使用。 在另一個前後關聯中建立查詢時，可能會忽略某些步驟。\
->查詢活動出現在[此區段](../../workflow/using/query.md)中。
->* 若要進一步瞭解查詢以及如何建立查詢，請參閱[Campaign v8檔案](../../workflow/using/query.md)。
+>查詢活動在[本節](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target="_blank"}中顯示（Campaign v8檔案）。
+>* 若要進一步瞭解查詢以及如何建立查詢，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target="_blank"}。
 
 <!--
 ## Step 1 - Choose a table {#step-1---choose-a-table}
@@ -74,13 +74,13 @@ You can edit an expression by inserting a formula into it or running a process o
 
 ![](assets/query_editor_nveau_97.png)
 
-It is possible to group output column data: to do this, check **[!UICONTROL Yes]** in the **[!UICONTROL Group]** column of the **[!UICONTROL Data to extract]** window. This function generates a result around the checked grouping axis. An example of a query with grouping is available in [this section](../../workflow/using/querying-delivery-information.md).
+It is possible to group output column data: to do this, check **[!UICONTROL Yes]** in the **[!UICONTROL Group]** column of the **[!UICONTROL Data to extract]** window. This function generates a result around the checked grouping axis. An example of a query with grouping is available in [this section](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/workflows/use-cases/designing-queries/query-delivery-info){target="_blank"} (Campaign v8 documentation).
 
 ![](assets/query_editor_nveau_56.png)
 
 * The **[!UICONTROL Handle groupings (GROUP BY + HAVING)]** function lets you "group by" and select what has been grouped ("having"). This function applies to all fields in the output column. For example, this option lets you group all choices of an output column and recover a specific type of information, such as recipients between 35 and 50.
 
-  For more on this, refer to [this section](../../workflow/using/querying-using-grouping-management.md).
+  For more on this, refer to [this section](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/workflows/use-cases/designing-queries/query-grouping-management){target="_blank"} (Campaign v8 documentation).
 
 * The **[!UICONTROL Remove duplicate rows (DISTINCT)]** function lets you deduplicate identical results obtained in the output column. For example, if you take a census by selecting the Last name, First name and Email fields in the output column, those with identical data will be eliminated, since it means the same contact has been entered several times in the database: only one result will be taken into account.
 
@@ -114,7 +114,7 @@ Once you select the **[!UICONTROL Filtering conditions]** you will access the **
 
   >[!NOTE]
   >
-  >For more on creating and using filters, refer to [Filtering options](../../platform/using/filtering-options.md).
+  >For more on creating and using filters, refer to [Filtering options](creating-filters.md).
 
 As shown in the following example, to recover all English-speaking recipients, select: "recipient language **equal to** EN".
 

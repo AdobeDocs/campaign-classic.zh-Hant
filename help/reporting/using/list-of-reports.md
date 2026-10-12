@@ -32,9 +32,9 @@ topic_v2:
     internal-label: Reporting
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
     internal-label: Measurement
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 586c6688e2abd3b6e55389bd1fa219d2c596d07d
 workflow-type: tm+mt
-source-wordcount: '1024'
+source-wordcount: '1040'
 ht-degree: 2%
 ---
 # 報告清單{#list-of-reports}
@@ -45,7 +45,7 @@ ht-degree: 2%
 
 下表提供Adobe Campaign提供的內建報表。
 
-如需這些報告內容的詳細資訊，請參閱[本節](../../reporting/using/delivery-reports.md)。
+如需這些報告內容的詳細資訊，請參閱[本節](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/analytics/reports/ac-reports/delivery-reports){target="_blank"} （Campaign v8檔案）。
 
 <table> 
  <tbody> 

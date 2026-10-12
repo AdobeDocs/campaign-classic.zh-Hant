@@ -45,10 +45,10 @@ topic_v2:
     internal-label: Troubleshooting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 586c6688e2abd3b6e55389bd1fa219d2c596d07d
 workflow-type: tm+mt
-source-wordcount: '948'
-ht-degree: 4%
+source-wordcount: '1002'
+ht-degree: 3%
 ---
 # 開始使用傳遞監視 {#about-delivery-monitoring}
 
@@ -99,18 +99,18 @@ ht-degree: 4%
 
 **對於內部部署安裝**，您可以使用下列監視工具：
 
-* **[!UICONTROL Delivery throughput]**&#x200B;報告提供指定期間內整個平台的輸送量概觀。 如需詳細資訊，請參閱[本節](../../reporting/using/global-reports.md#delivery-throughput)。
+* **[!UICONTROL Delivery throughput]**&#x200B;報告提供指定期間內整個平台的輸送量概觀。 如需詳細資訊，請參閱[本節](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports#delivery-throughput){target="_blank"} （Campaign v8檔案）。
 * 每次傳送都會產生不同網際網路服務提供者(ISP)的廣播統計報表。 它會顯示一些可能影響您傳送能力的資料品質和信譽量度，包括下列數字：
   * **[!UICONTROL Hard bounces]**&#x200B;表示資料品質。 此數字應小於2%。
   * **[!UICONTROL Soft bounces]**&#x200B;表示信譽。 任何特定ISP的這個數字都不應超過10%。
 
-  如需詳細資訊，請參閱[傳遞統計資料](../../reporting/using/global-reports.md#delivery-statistics)區段。
+  如需詳細資訊，請參閱[傳遞統計資料](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports#delivery-statistics){target="_blank"} （Campaign v8檔案）區段。
 
 #### 監視指南 {#monitoring-guidelines}
 
 **對於內部部署安裝**，以下是傳遞能力監視的其他准則：
 
-* 定期檢查整個平台的[傳遞輸送量](../../reporting/using/global-reports.md#delivery-throughput)，以確認其是否與原始設定一致。
+* 定期檢查整個平台的[傳遞輸送量](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports#delivery-throughput){target="_blank"} （Campaign v8檔案），以確認其是否與原始設定一致。
 * 檢查傳遞範本中的[重試](delivery-failures-quarantine.md#retries-after-a-delivery-temporary-failure)是否已正確設定（重試期間為30分鐘，重試次數超過20次）。
 * 定期確認[退信](delivery-failures-quarantine.md#bounce-mail-management)信箱可存取，且帳戶不會過期。
 * 檢查可從[傳遞儀表板](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}存取的每個傳遞輸送量，以確保其與傳遞內容的有效性一致（例如，「Flash銷售」應在幾分鐘內傳遞，而非幾天）。
@@ -151,7 +151,7 @@ ht-degree: 4%
 
 傳遞效能問題的最佳實務及疑難排解：
 
-* [傳遞最佳實務](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"} （Campaign v8檔案 — 適用於v7和v8）
+* [傳遞最佳實務](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"} （Campaign v8檔案 — 適用於v7和v8）
 * [傳遞效能與疑難排解](delivery-performance-troubleshooting.md) （v7混合/內部部署特定設定）
 
 ### 瞭解失敗和隔離

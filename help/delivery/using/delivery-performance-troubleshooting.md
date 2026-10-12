@@ -47,10 +47,10 @@ topic_v2:
     internal-label: Optimization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
 workflow-type: tm+mt
-source-wordcount: '791'
-ht-degree: 2%
+source-wordcount: '807'
+ht-degree: 1%
 ---
 # 傳遞效能及疑難排解 {#delivery-performance-troubleshooting}
 
@@ -124,7 +124,7 @@ Error during the call of method 'AppendDeliveryPart' on the mid sourcing server:
 
 **對於內部部署安裝**，請在資料庫上執行真空並重新索引。 如需資料庫維護的詳細資訊，請參閱[本節](../../production/using/recommendations.md)。
 
-您也應該重新啟動所有具有已排程活動的工作流程，以及所有處於失敗狀態的工作流程。 請參閱[本節](../../workflow/using/scheduler.md)。
+您也應該重新啟動所有具有已排程活動的工作流程，以及所有處於失敗狀態的工作流程。 請參閱[本節](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler){target="_blank"} （Campaign v8檔案）。
 
 ### 技術工作流程監視
 

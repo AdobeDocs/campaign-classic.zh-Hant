@@ -28,122 +28,18 @@ subfeature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
 workflow-type: tm+mt
-source-wordcount: '627'
-ht-degree: 2%
+source-wordcount: '591'
+ht-degree: 1%
 ---
 # 結構描述中的金鑰管理 {#management-of-keys}
 
-每個與資料結構描述關聯的表格必須至少有一個索引鍵來識別表格中的記錄。
+每個與資料結構描述關聯的表格必須至少有一個索引鍵來識別表格中的記錄。 本頁說明Campaign Classic v7表格中使用的自動增量索引鍵。
 
-從資料結構描述的主要元素中宣告索引鍵。
+作為從Campaign v7轉變到v8的一部分，Campaign Classic檔案集已簡化並重新組織。 Campaign v8檔案集中現在提供常見功能。 若要深入瞭解金鑰管理，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/database-keys){target=_blank}。
 
-```sql
-<key name="name_of_key">
-  <keyfield xpath="xpath_of_field1"/>
-  <keyfield xpath="xpath_of_field2"/>
-  ...
-</key>
-```
-
-當索引鍵是結構描述中第一個要填入的索引鍵，或是包含設定為「true」的`internal`屬性時，就稱為「主索引鍵」。
-
-下列規則適用於機碼：
-
-* 索引鍵可參考表格中的一或多個欄位
-* 每個索引鍵定義都會以隱含方式宣告唯一索引。 可透過將`noDbIndex`屬性設定為「true」來防止在索引鍵上建立索引。
-
->[!NOTE]
->
->* 作為標準，索引鍵是在定義索引後，從結構描述的主要元素宣告的元素。
->
->* 金鑰是在表格對應期間建立（標準或FDA），Adobe Campaign會尋找唯一索引。
-
-**範例**：
-
-* 將金鑰新增至電子郵件地址和城市：
-
-  ```sql
-  <srcSchema name="recipient" namespace="cus">
-    <element name="recipient">
-      <key name="email">
-        <keyfield xpath="@email"/> 
-        <keyfield xpath="location/@city"/> 
-      </key>
-  
-      <attribute name="email" type="string" length="80" label="Email" desc="Email address of recipient"/>
-      <element name="location" label="Location">
-        <attribute name="city" type="string" length="50" label="City" userEnum="city"/>
-      </element>
-    </element>
-  </srcSchema>
-  ```
-
-  產生的結構描述：
-
-  ```sql
-  <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">  
-    <element name="recipient" sqltable="CusRecipient">    
-     <dbindex name="email" unique="true">      
-       <keyfield xpath="@email"/>      
-       <keyfield xpath="location/@city"/>    
-     </dbindex>    
-  
-     <key name="email">      
-      <keyfield xpath="@email"/>      
-      <keyfield xpath="location/@city"/>    
-     </key>    
-  
-     <attribute desc="Email address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/>    
-     <element label="Location" name="location">      
-       <attribute label="City" length="50" name="city" sqlname="sCity" type="string" userEnum="city"/>    
-     </element>  
-    </element>
-  </schema>
-  ```
-
-* 在「id」名稱欄位中新增主要或內部索引鍵：
-
-  ```sql
-  <srcSchema name="recipient" namespace="cus">
-    <element name="recipient">
-      <key name="id" internal="true">
-        <keyfield xpath="@id"/> 
-      </key>
-  
-      <key name="email" noDbIndex="true">
-        <keyfield xpath="@email"/> 
-      </key>
-  
-      <attribute name="id" type="long" label="Identifier"/>
-      <attribute name="email" type="string" length="80" label="Email" desc="Email address of recipient"/>
-    </element>
-  </srcSchema>
-  ```
-
-  產生的結構描述：
-
-  ```sql
-  <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">  
-    <element name="recipient" sqltable="CusRecipient">    
-      <key name="email">      
-        <keyfield xpath="@email"/>    
-      </key>    
-  
-      <dbindex name="id" unique="true">      
-        <keyfield xpath="@id"/>    
-      </dbindex>    
-  
-      <key internal="true" name="id">      
-       <keyfield xpath="@id"/>    
-      </key>    
-  
-      <attribute label="Identifier" name="id" sqlname="iRecipientId" type="long"/>    
-      <attribute desc="Email address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/>  
-    </element>
-  </schema>
-  ```
+[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/database-keys){target=_blank}
 
 ## 自動增量索引鍵 {#auto-incremental-key}
 
@@ -207,5 +103,5 @@ ht-degree: 2%
 * [開始使用結構描述](about-schema-reference.md)
 * [方案結構](schema-structure.md)
 * [資料庫對應](database-mapping.md)
-* [連結管理](database-links.md)
-* [Campaign 資料模型](about-data-model.md)
+* [連結管理](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/database-links){target="_blank"} （Campaign v8檔案）
+* [Campaign資料模型](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/datamodel){target="_blank"} （Campaign v8檔案）

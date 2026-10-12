@@ -28,7 +28,7 @@ topic_v2:
     internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 75d65377f93a40be104f7ec817e6a7609cccaf93
 workflow-type: tm+mt
 source-wordcount: '1959'
 ht-degree: 7%
@@ -345,7 +345,7 @@ To add SSH keys on Windows:
 
 **[!UICONTROL Microsoft Dynamics CRM]**&#x200B;外部帳戶可讓您將Microsoft Dynamics資料匯入及匯出至Adobe Campaign。
 
-在此[頁面](../../platform/using/crm-ms-dynamics.md)中進一步瞭解Campaign - Microsoft Dynamics CRM聯結器。
+在此[頁面](../../platform/using/crm-connectors.md)中進一步瞭解Campaign - Microsoft Dynamics CRM聯結器。
 
 使用&#x200B;**[!UICONTROL Web API]**&#x200B;部署型別和&#x200B;**[!UICONTROL Password credentials]**&#x200B;驗證，您需要提供下列詳細資料：
 

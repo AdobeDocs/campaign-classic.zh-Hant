@@ -41,10 +41,10 @@ subfeature_v2:
 topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
 workflow-type: tm+mt
-source-wordcount: '582'
-ht-degree: 94%
+source-wordcount: '610'
+ht-degree: 86%
 ---
 # 選擇退出個人資訊銷售 (CCPA) {#sale-of-personal-information-ccpa}
 
@@ -70,7 +70,7 @@ GDPR 和 CCPA 都很常使用存取及刪除要求的設定與使用情況。 �
 
 如果您使用自訂收件者表格，您也需要執行此作業。
 
-有關如何建立新欄位的詳細資訊，請參閱[結構描述版本文件](../../configuration/using/about-schema-edition.md)。
+有關如何建立新欄位的詳細資訊，請參閱[結構描述版本檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"} （Campaign v8檔案）。
 
 >[!IMPORTANT]
 >
@@ -88,7 +88,7 @@ GDPR 和 CCPA 都很常使用存取及刪除要求的設定與使用情況。 �
 
    ![](assets/privacy-ccpa-3.png)
 
-1. 按一下探索工具的&#x200B;**[!UICONTROL Configuration]** > **[!UICONTROL Input forms]**&#x200B;節點。 在&#x200B;**[!UICONTROL Recipient (nms)]**&#x200B;的「一般套件」下，新增 `<input>` 元素，並使用步驟 2 中定義的相對路徑作為 xpath 值。 如需定義表格的詳細資訊，請參閱[本節](../../configuration/using/identifying-a-form.md)。
+1. 按一下探索工具的&#x200B;**[!UICONTROL Configuration]** > **[!UICONTROL Input forms]**&#x200B;節點。 在&#x200B;**[!UICONTROL Recipient (nms)]**&#x200B;的「一般套件」下，新增 `<input>` 元素，並使用步驟 2 中定義的相對路徑作為 xpath 值。 如需識別表單的詳細資訊，請參閱[本節](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"} （Campaign v8檔案）。
 
    ```
    <input  colspan="2" type="checkbox" xpath="@OPTOUTCCPA"/>

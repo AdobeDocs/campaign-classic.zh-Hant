@@ -52,10 +52,10 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
 workflow-type: tm+mt
-source-wordcount: '932'
-ht-degree: 12%
+source-wordcount: '946'
+ht-degree: 11%
 ---
 # 針對 Android 的設定步驟
 
@@ -195,7 +195,7 @@ Android提供兩種聯結器：
 
 您必須擴充&#x200B;**appsubscriptionRcp**，以定義新的額外欄位，將應用程式中的引數儲存至Campaign資料庫。 例如，這些欄位用於個人化。 操作步驟：
 
-1. 建立&#x200B;**[!UICONTROL Subscriber applications (nms:appsubscriptionRcp)]**&#x200B;結構描述的延伸並定義新欄位。 在[此頁面](../../configuration/using/about-schema-edition.md)中進一步瞭解結構描述延伸
+1. 建立&#x200B;**[!UICONTROL Subscriber applications (nms:appsubscriptionRcp)]**&#x200B;結構描述的延伸並定義新欄位。 在[本頁](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"}中進一步瞭解結構描述延伸（Campaign v8檔案）
 
 1. 在&#x200B;**[!UICONTROL Subscription parameters]**&#x200B;索引標籤中定義對應。
 

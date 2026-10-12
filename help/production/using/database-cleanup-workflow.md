@@ -36,9 +36,9 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
 workflow-type: tm+mt
-source-wordcount: '2862'
+source-wordcount: '2877'
 ht-degree: 0%
 ---
 # 資料庫清除工作流程{#database-cleanup-workflow}
@@ -349,7 +349,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->已針對&#x200B;**以天為單位的歷程記錄**&#x200B;欄位中的每個工作流程指定歷程記錄的清除頻率（預設值為30天）。 此欄位可在工作流程屬性的&#x200B;**執行**&#x200B;索引標籤中找到。 如需詳細資訊，請參閱[本章節](../../workflow/using/workflow-properties.md#execution)。
+>已針對&#x200B;**以天為單位的歷程記錄**&#x200B;欄位中的每個工作流程指定歷程記錄的清除頻率（預設值為30天）。 此欄位可在工作流程屬性的&#x200B;**執行**&#x200B;索引標籤中找到。 如需詳細資訊，請參閱[本節](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/workflows/advanced-management/workflow-properties#execution){target="_blank"} （Campaign v8檔案）。
 
 1. 若要復原要刪除的工作流程清單，請使用以下查詢：
 

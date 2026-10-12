@@ -17,9 +17,9 @@ feature_v2:
 subfeature_v2:
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
     internal-label: Analytics integration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
 workflow-type: tm+mt
-source-wordcount: '874'
+source-wordcount: '889'
 ht-degree: 1%
 ---
 # 移轉至Adobe Analytics 2.0 API {#analytics-2-migration}
@@ -28,7 +28,7 @@ Adobe Analytics 1.4 API [即將結束生命週期](https://developer.adobe.com/a
 
 >[!CAUTION]
 >
->升級時會重新匯入兩個內建的技術工作流程（支援聯結器[!UICONTROL webAnalyticsSendMetrics]和[!UICONTROL webAnalyticsGetWebEvents]） （請參閱[Web Analytics工作流程參考](../../workflow/using/web-analytics.md)，瞭解每個工作流程的用途）。 您在這些工作流程之上自訂的任何內容，都會被重新匯入覆寫。 避免直接修改這些內建工作流程 — 改為在個別的自訂工作流程中建置自訂專案，以免日後升級時覆寫自訂專案。 此升級也會更新內建的Analytics JavaScript檔案：如果您的任何自訂工作流程參考這些檔案，這些檔案將會中斷，且需要加以調整以符合新的程式碼。
+>升級時會重新匯入兩個內建的技術工作流程（支援聯結器[!UICONTROL webAnalyticsSendMetrics]和[!UICONTROL webAnalyticsGetWebEvents]） (請參閱[網站分析工作流程參考](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows){target="_blank"} （Campaign v8檔案），以瞭解每個工作流程的用途)。 您在這些工作流程之上自訂的任何內容，都會被重新匯入覆寫。 避免直接修改這些內建工作流程 — 改為在個別的自訂工作流程中建置自訂專案，以免日後升級時覆寫自訂專案。 此升級也會更新內建的Analytics JavaScript檔案：如果您的任何自訂工作流程參考這些檔案，這些檔案將會中斷，且需要加以調整以符合新的程式碼。
 
 ## 您有受到影響嗎？ {#are-you-impacted}
 

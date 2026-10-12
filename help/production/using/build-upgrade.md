@@ -29,7 +29,7 @@ topic_v2:
     internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+source-git-commit: 4bc1e76d129c6a6aa15b7e3915232043bd6f4286
 workflow-type: tm+mt
 source-wordcount: '2410'
 ht-degree: 4%
@@ -437,5 +437,5 @@ YYYY-MM-DD HH:MM:SS.750Z 00002E7A 1 warning log Document of identifier 'nms:incl
 
 * [版本編號升級常見問答集](../../platform/using/faq-build-upgrade.md)
 * [Campaign Classic發行說明](../../rn/using/rn-overview.md)
-* [Campaign Classic的說明與支援選項](../../support.md)
+* [Campaign Classic的說明與支援選項](../../campaign-classic-home.md)
 * [Campaign年度升級計畫](../../rn/using/rn-overview.md)

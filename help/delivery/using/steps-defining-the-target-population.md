@@ -39,10 +39,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 86e1df82ff7fe9142b0ba75b697d3262e8d7a9d5
 workflow-type: tm+mt
-source-wordcount: '1773'
-ht-degree: 25%
+source-wordcount: '1791'
+ht-degree: 24%
 ---
 # 定義目標母體 {#defining-the-target-population}
 
@@ -51,7 +51,7 @@ ht-degree: 25%
 * **主要對象**：將接收訊息的設定檔。 [了解更多](steps-defining-the-target-population.md#selecting-the-main-target)
 * **校訂**：校訂訊息的收件者，涉及驗證週期。 [了解更多](steps-defining-the-target-population.md#defining-a-specific-proof-target)
 * **種子地址**：不在傳遞目標但將接收傳遞的收件者（僅適用於行銷活動的內容）。 [了解更多](about-seed-addresses.md)
-* **控制組**：不會接收傳遞的母體，用於追蹤行為和行銷活動影響（僅適用於行銷活動的內容）。 [了解更多資訊](../../campaign/using/marketing-campaign-target.md#defining-a-control-group)。
+* **控制組**：不會接收傳遞的母體，用於追蹤行為和行銷活動影響（僅適用於行銷活動的內容）。 [深入瞭解](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/campaign-orchestration/marketing-campaign-target#add-a-control-group){target="_blank"} （Campaign v8檔案）。
 
 ## 選取傳遞的主要收件者 {#selecting-the-main-target}
 

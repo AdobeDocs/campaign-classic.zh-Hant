@@ -22,100 +22,18 @@ subfeature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
 workflow-type: tm+mt
-source-wordcount: '527'
-ht-degree: 3%
+source-wordcount: '256'
+ht-degree: 6%
 ---
 # 資料庫對應{#database-mapping}
 
-此頁面[&#128279;](schema-structure.md)中描述的範例結構描述的SQL對應會產生下列XML檔案：
+此頁面說明如何在綱要的欄位上宣告索引。
 
-```sql
-<schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">
-  <enumeration basetype="byte" name="gender">    
-    <value label="Not specified" name="unknown" value="0"/>    
-    <value label="Male" name="male" value="1"/>    
-    <value label="Female" name="female" value="2"/> 
-  </enumeration>  
+作為從Campaign v7轉變到v8的一部分，Campaign Classic檔案集已簡化並重新組織。 Campaign v8檔案集中現在提供常見功能。 若要進一步瞭解結構描述的SQL對應，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/database-mapping){target=_blank}。
 
-  <element name="recipient" sqltable="CusRecipient">    
-    <attribute desc="Recipient email address" label="Email" length="80" name="email" sqlname="sEmail" type="string"/>    
-    <attribute default="GetDate()" label="Date of creation" name="created" sqlname="tsCreated" type="datetime"/>    
-    <attribute enum="gender" label="Gender" name="gender" sqlname="iGender" type="byte"/>    
-    <element label="Location" name="location">      
-      <attribute label="City" length="50" name="city" sqlname="sCity" type="string" userEnum="city"/>    
-    </element>  
-  </element>
-</schema>
-```
-
-結構描述的根專案變更為&#x200B;**`<srcschema>`**&#x200B;為&#x200B;**`<schema>`**。
-
-這種其他型別的檔案會自動從來源結構描述產生，並僅被簡稱為結構描述。
-
-SQL名稱是根據元素名稱和型別自動決定的。
-
-SQL命名規則如下：
-
-* **table**：結構描述名稱空間和名稱的串連
-
-  在我們的範例中，資料表的名稱是透過&#x200B;**sqltable**&#x200B;屬性中結構描述的主要元素輸入的：
-
-  ```sql
-  <element name="recipient" sqltable="CusRecipient">
-  ```
-
-* **欄位**：前面有根據型別定義之前置詞的元素名稱：&#39;i&#39;代表整數，&#39;d&#39;代表雙精度，&#39;s&#39;代表字串，&#39;ts&#39;代表日期等。
-
-  欄位名稱是透過每個型別&#x200B;**`<attribute>`**&#x200B;和&#x200B;**`<element>`**&#x200B;的&#x200B;**sqlname**&#x200B;屬性輸入的：
-
-  ```sql
-  <attribute desc="Email address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/> 
-  ```
-
->[!NOTE]
->
->可以從來源結構描述多載SQL名稱。 若要這麼做，請在相關元素上填入「sqltable」或「sqlname」屬性。
-
-用來建立從擴充綱要產生之表格的SQL命令檔如下：
-
-```sql
-CREATE TABLE CusRecipient(
-  iGender NUMERIC(3) NOT NULL Default 0,   
-  sCity VARCHAR(50),   
-  sEmail VARCHAR(80),
-  tsCreated TIMESTAMP Default NULL);
-```
-
-SQL欄位限制如下：
-
-* 數值和日期欄位中沒有null值
-* 數值欄位已初始化為0
-
-## XML欄位 {#xml-fields}
-
-依預設，任何&#x200B;**`<attribute>`**&#x200B;和&#x200B;**`<element>`** -typed專案都會對應到資料結構描述表格的SQL欄位。 不過，您可以用XML來參照此欄位，而非SQL，這表示資料會儲存在包含所有XML欄位值的表格之備忘錄欄位(「mData」)中。 這些資料的儲存是觀察結構描述結構的XML檔案。
-
-若要在XML中填入欄位，您必須將值為「true」的&#x200B;**xml**&#x200B;屬性新增到相關專案。
-
-**範例**：以下是兩個XML欄位使用範例。
-
-* 多行註解欄位：
-
-  ```sql
-  <element name="comment" xml="true" type="memo" label="Comment"/>
-  ```
-
-* HTML格式的資料說明：
-
-  ```sql
-  <element name="description" xml="true" type="html" label="Description"/>
-  ```
-
-  「html」型別可讓您將HTML內容儲存在CDATA標籤中，並在HTML使用者端介面中顯示特殊的Adobe Campaign編輯檢查。
-
-使用XML欄位來新增欄位，而不需修改資料庫的實體結構。 另一個優點是，您使用的資源較少（配置給SQL欄位的大小、限制每個表格的欄位數等）。 不過，請注意，您無法索引或篩選XML欄位。
+[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/database-mapping){target=_blank}
 
 ## 索引欄位 {#indexed-fields}
 
@@ -189,5 +107,4 @@ SQL欄位限制如下：
 * [開始使用結構描述](about-schema-reference.md)
 * [方案結構](schema-structure.md)
 * [金鑰管理](database-keys.md)
-* [連結管理](database-links.md)
-* [Campaign 資料模型](about-data-model.md)
+* [連結管理](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/database-links){target="_blank"} （Campaign v8檔案）

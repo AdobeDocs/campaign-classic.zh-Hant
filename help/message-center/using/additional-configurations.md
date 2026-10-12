@@ -28,9 +28,9 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 617db6f51887118c965b8938b2b9f14335293875
 workflow-type: tm+mt
-source-wordcount: '868'
+source-wordcount: '884'
 ht-degree: 5%
 ---
 # 其他設定 {#mc-additional-configurations}
@@ -39,7 +39,7 @@ ht-degree: 5%
 
 ## 監視臨界值 {#monitoring-thresholds}
 
-您可以設定出現在&#x200B;**訊息中心服務層級**&#x200B;和&#x200B;**訊息中心處理時間**&#x200B;報告中的指示器的警告臨界值（橘色）和警示臨界值（紅色） （請參閱[存取異動訊息報告](../../message-center/using/about-transactional-messaging-reports.md)）。
+您可以設定出現在&#x200B;**訊息中心服務層級**&#x200B;和&#x200B;**訊息中心處理時間**&#x200B;報告中的指標的警告臨界值（橘色）和警示臨界值（紅色） (請參閱[存取異動訊息報告](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/real-time/event/delivery-execution){target="_blank"} （Campaign v8檔案）)。
 
 要執行此操作，請遵循下列步驟：
 

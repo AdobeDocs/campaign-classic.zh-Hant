@@ -26,9 +26,9 @@ feature_v2:
 subfeature_v2:
   - id: e739ee2b-6228-412e-878f-45de0791417d
     internal-label: Use cases
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 323ff901668895588a6e9587fa2a8b7804cf2fb4
 workflow-type: tm+mt
-source-wordcount: '151'
+source-wordcount: '165'
 ht-degree: 3%
 ---
 # 擴充功能範例{#extension-example}
@@ -49,4 +49,4 @@ ht-degree: 3%
 
   ![](assets/s_ncs_configuration_offer_context.png)
 
-* 設定SOAP呼叫時，請插入&#x200B;**context** XML元素，以參考加入互動結構描述中的內容資訊。 如需進一步資訊，請參閱[透過SOAP整合（伺服器端）](../../interaction/using/integration-via-soap-server-side.md)。
+* 設定SOAP呼叫時，請插入&#x200B;**context** XML元素，以參考加入互動結構描述中的內容資訊。 如需進一步資訊，請參閱[透過SOAP整合（伺服器端）](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/offers/inbound/interaction-integration){target="_blank"} （Campaign v8檔案）。

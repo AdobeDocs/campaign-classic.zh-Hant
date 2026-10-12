@@ -41,10 +41,10 @@ topic_v2:
     internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
 workflow-type: tm+mt
-source-wordcount: '1038'
-ht-degree: 10%
+source-wordcount: '1082'
+ht-degree: 9%
 ---
 # 個人化欄位{#personalization-fields}
 
@@ -104,7 +104,7 @@ ht-degree: 10%
 
    >[!NOTE]
    >
-   >當傳送屬於工作流程的一部分時，您可以使用暫時工作流程表格中的資料。 此資料會分組到&#x200B;**[!UICONTROL Target extension]**&#x200B;功能表中。 如需詳細資訊，請參閱[本章節](../../workflow/using/data-life-cycle.md#target-data)。
+   >當傳送屬於工作流程的一部分時，您可以使用暫時工作流程表格中的資料。 此資料會分組到&#x200B;**[!UICONTROL Target extension]**&#x200B;功能表中。 如需詳細資訊，請參閱[本節](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/workflows/introduction/use-workflow-data){target="_blank"} （Campaign v8檔案）。
 
 ## 最佳化個人化 {#optimizing-personalization}
 
@@ -119,8 +119,8 @@ ht-degree: 10%
 若要使用此選項，請遵循下列步驟：
 
 1. 建立行銷活動。 有關更多資訊，請參閱[Campaign v8 文件](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=zh-Hant){target=_blank}。
-1. 在行銷活動的&#x200B;**[!UICONTROL Targeting and workflows]**&#x200B;索引標籤中，新增&#x200B;**查詢**&#x200B;活動至您的工作流程。 有關使用此活動的詳細資訊，請參閱[本區段](../../workflow/using/query.md)。
-1. 將&#x200B;**[!UICONTROL Email delivery]**&#x200B;活動新增至工作流程並開啟它。 有關使用此活動的詳細資訊，請參閱[本區段](../../workflow/using/delivery.md)。
+1. 在行銷活動的&#x200B;**[!UICONTROL Targeting and workflows]**&#x200B;索引標籤中，新增&#x200B;**查詢**&#x200B;活動至您的工作流程。 有關使用此活動的詳細資訊，請參閱[本節](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target="_blank"} （Campaign v8檔案）。
+1. 將&#x200B;**[!UICONTROL Email delivery]**&#x200B;活動新增至工作流程並開啟它。 有關使用此活動的詳細資訊，請參閱[本節](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/workflows/wf-activities/action-activities/delivery){target="_blank"} （Campaign v8檔案）。
 1. 移至&#x200B;**[!UICONTROL Delivery properties]**&#x200B;的&#x200B;**[!UICONTROL Analysis]**&#x200B;標籤，並選取&#x200B;**[!UICONTROL Prepare the personalization data with a workflow]**&#x200B;選項。
 
    ![](assets/perso_optimization.png)

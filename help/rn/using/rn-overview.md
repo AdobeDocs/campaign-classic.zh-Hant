@@ -33,7 +33,7 @@ topic_v2:
     internal-label: Implementation
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 4bc1e76d129c6a6aa15b7e3915232043bd6f4286
 workflow-type: tm+mt
 source-wordcount: '1045'
 ht-degree: 100%
@@ -183,7 +183,7 @@ Adobe 團隊將帶領並引導您的組織完成這個過程。
 ## 額外資源{#support}
 
 * [尋找您的 Campaign 版本](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)。
-* [說明與支援](../../support.md)
+* [說明與支援](../../campaign-classic-home.md)
 * [控制面板發行版本](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=zh-Hant)
 * [已棄用及已移除的功能](../../rn/using/deprecated-features.md)
 * [版本編號升級常見問答集](../../platform/using/faq-build-upgrade.md)

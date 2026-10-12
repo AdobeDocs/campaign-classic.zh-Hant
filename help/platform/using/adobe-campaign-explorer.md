@@ -32,7 +32,7 @@ subfeature_v2:
     internal-label: Access management
   - id: e8d937ec-9046-41b5-834b-d22a624e0d37
     internal-label: Campaign overview
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 75d65377f93a40be104f7ec817e6a7609cccaf93
 workflow-type: tm+mt
 source-wordcount: '120'
 ht-degree: 30%
@@ -44,7 +44,7 @@ Adobe Campaign檔案總管可透過工具列圖示存取。 使用工具列圖�
 
 >[!NOTE]
 >
->若要深入瞭解Adobe Campaign總管，請參閱Campaign v8檔案中的這些頁面：深入瞭解[使用者介面](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/new/campaign-ui#ac-explorer-ui){target=_blank}、其[設定](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/ui-settings){target=_blank}或[如何在總管中管理資料夾和檢視](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}。
+>若要深入瞭解Adobe Campaign總管，請參閱Campaign v8檔案中的這些頁面：深入瞭解[使用者介面](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/new/campaign-ui#ac-explorer-ui){target=_blank}、其[設定](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/config/configuration/ui-settings){target=_blank}或[如何在總管中管理資料夾和檢視](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}。
 
 
 <!--
@@ -72,7 +72,7 @@ To add a new folder to the tree, right-click the folder in the branch where you 
 
 Learn how to configure Campaign navigation tree [in this section](../../configuration/using/configuration.md).
 
-Learn how to set permissions on folders [in this section](access-management-folders.md).
+Learn how to set permissions on folders [in this section](access-management.md).
 
 ## Folder configuration best practices
 

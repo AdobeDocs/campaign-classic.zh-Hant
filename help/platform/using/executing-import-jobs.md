@@ -32,7 +32,7 @@ subfeature_v2:
     internal-label: Access management
   - id: e8d937ec-9046-41b5-834b-d22a624e0d37
     internal-label: Campaign overview
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 75d65377f93a40be104f7ec817e6a7609cccaf93
 workflow-type: tm+mt
 source-wordcount: '3000'
 ht-degree: 31%
@@ -316,7 +316,7 @@ Adobe Campaign可讓您以文字、CSV、TAB或XML格式，從一或多個檔案
 
      >[!NOTE]
      >
-     >運運算元的預設資料夾是該運運算元具有寫入許可權的第一個資料夾。 深入瞭解[資料夾存取管理](../../platform/using/access-management-folders.md)。
+     >運運算元的預設資料夾是該運運算元具有寫入許可權的第一個資料夾。 深入瞭解[資料夾存取管理](access-management.md)。
 
      若要選取匯入資料夾，請按一下&#x200B;**[!UICONTROL Folder]**&#x200B;欄位右側的箭頭，然後選取相關的資料夾。 您也可以使用&#x200B;**[!UICONTROL Select link]**&#x200B;圖示在新視窗中顯示樹狀結構或建立新資料夾。
 

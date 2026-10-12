@@ -31,9 +31,9 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '266'
 ht-degree: 3%
 ---
 # 設定 A/B 測試 {#configuring-a-b-testing}
@@ -44,7 +44,7 @@ ht-degree: 3%
 
 1. 新增分割活動，將目標母體分割成多個子集。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/split.html?lang=zh-Hant){target="_blank"}。
 
-1. 開啟活動，然後視需要設定每個子集。 如需如何設定&#x200B;**[!UICONTROL Split]**&#x200B;活動的詳細資訊，請參閱[本節](../../workflow/using/split.md)。
+1. 開啟活動，然後視需要設定每個子集。 如需如何設定&#x200B;**[!UICONTROL Split]**&#x200B;活動的詳細資訊，請參閱[本節](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/workflows/wf-activities/targeting-activities/split){target="_blank"} （Campaign v8檔案）。
 
    在此範例中，我們要測試電子報的2個新主題，每個主題會向目標人口的10%進行簡報。
 

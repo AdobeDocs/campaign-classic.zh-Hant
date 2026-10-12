@@ -37,9 +37,9 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 323ff901668895588a6e9587fa2a8b7804cf2fb4
 workflow-type: tm+mt
-source-wordcount: '979'
+source-wordcount: '992'
 ht-degree: 6%
 ---
 # 個人化區塊{#personalization-blocks}
@@ -145,7 +145,7 @@ HTML原始碼會插入傳遞內容中。 例如，**[!UICONTROL Greetings]**&#x2
 * **[!UICONTROL Registration confirmation]** ：插入連結，以確認訂閱。
 * **[!UICONTROL Social network sharing links]** ：插入可讓收件者與電子郵件使用者端、Facebook、X （先前稱為Twitter）和LinkedIn共用映象頁面內容連結的按鈕（請參閱[病毒式行銷：轉寄給朋友](viral-and-social-marketing.md#viral-marketing--forward-to-a-friend)）。
 * **[!UICONTROL Style of content emails]**&#x200B;和&#x200B;**[!UICONTROL Notification style]** ：產生程式碼，使用預先定義的HTML樣式來格式化電子郵件。 這些區塊必須插入傳遞的原始程式碼中（在&#x200B;**[!UICONTROL ...]**&#x200B;區段中）的&#x200B;**`<style>...</style>`**&#x200B;標籤中。
-* **[!UICONTROL Offer acceptance URL in unitary mode]** ：插入URL以啟用設定互動選件至&#x200B;**[!UICONTROL Accepted]** （請參閱[此區段](../../interaction/using/offer-analysis-report.md)）。
+* **[!UICONTROL Offer acceptance URL in unitary mode]** ：插入URL以啟用將互動選件設定為&#x200B;**[!UICONTROL Accepted]** (請參閱[此章節](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/offers/interaction-tracking){target="_blank"} （Campaign v8檔案）)。
 
 ## 定義自訂個人化區塊 {#defining-custom-personalization-blocks}
 

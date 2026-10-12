@@ -45,9 +45,9 @@ topic_v2:
     internal-label: Implementation
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 586c6688e2abd3b6e55389bd1fa219d2c596d07d
 workflow-type: tm+mt
-source-wordcount: '1428'
+source-wordcount: '1446'
 ht-degree: 1%
 ---
 # 使用增強的MTA傳送 {#sending-with-enhanced-mta}
@@ -154,7 +154,7 @@ No, there is no extra fee associated with the upgrade process to enable the use 
 
 Campaign傳送輸送量圖表將不再顯示傳送給電子郵件收件者的輸送量。 該圖表現在會顯示從Campaign轉送訊息至Enhanced MTA的輸送量速度。
 
-如需傳遞輸送量的詳細資訊，請參閱[本節](../../reporting/using/global-reports.md#delivery-throughput)。
+如需傳遞輸送量的詳細資訊，請參閱[本節](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports#delivery-throughput){target="_blank"} （Campaign v8檔案）。
 
 ### 重試次數
 
