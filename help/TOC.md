@@ -8,9 +8,9 @@ user-guide-description: Adobe Campaign Classic v7 產品文件。
 sub-product: adobe campaign classic
 type: Documentation
 nudge: false
-source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
+source-git-commit: 4bc1e76d129c6a6aa15b7e3915232043bd6f4286
 workflow-type: tm+mt
-source-wordcount: '2298'
+source-wordcount: '1992'
 ht-degree: 100%
 ---
 
@@ -29,7 +29,6 @@ ht-degree: 100%
     + {hide-from-toc}[[!DNL Gold Standard - HIDDEN]](rn/using/gold-standard.md)
   + [已棄用功能](rn/using/deprecated-features.md)
   + [相容性對照表](rn/using/compatibility-matrix.md)
-  + {hide-from-toc}[文件更新 - 隱藏](rn/using/documentation-updates.md)
 + 開始使用 {#getting-started}
   + [開始使用 Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
   + [啟動 Adobe Campaign](platform/using/launching-adobe-campaign.md)
@@ -93,7 +92,6 @@ ht-degree: 100%
     + {hide-from-toc}[與 Microsoft Dynamics 365 連結](platform/using/crm-ms-dynamics.md)
     + {hide-from-toc}[與 Salesforce.com 連結](platform/using/crm-sfdc.md)
     + {hide-from-toc}[與 CRM 同步資料](platform/using/crm-data-sync.md)
-  + {hide-from-toc}[說明與支援選項 - 隱藏](support.md)
 + 建立及傳送訊息 {#sending-messages}
   + [開始使用訊息](delivery/using/communication-channels.md)
   + {hide-from-toc}[傳遞設定 - 隱藏](delivery/using/delivery-settings.md)
@@ -208,42 +206,6 @@ ht-degree: 100%
     + [豐富內容](delivery/using/enriching-content.md)
     + [透過工作流程自動化](delivery/using/automating-via-workflows.md)
 + [協調行銷活動](campaign/using/about-marketing-campaigns.md)
-+ 協調行銷活動 {#orchestrating-campaigns}
-  + {hide-from-toc}[關於行銷活動最佳化 - 隱藏](campaign-opt/using/about-campaign-optimization.md)
-  + 關於行銷活動 {#about-marketing-campaigns}
-    + {hide-from-toc}[設計行銷活動 - 隱藏](campaign/using/designing-marketing-campaigns.md)
-    + {hide-from-toc}[存取行銷活動 - 隱藏](campaign/using/accessing-marketing-campaigns.md)
-  + 協調行銷活動 {#orchestrate-campaigns}
-    + {hide-from-toc}[開始使用行銷活動 - 隱藏](campaign/using/setting-up-marketing-campaigns.md)
-    + {hide-from-toc}[建立及設定範本 - 隱藏](campaign/using/marketing-campaign-templates.md)
-    + {hide-from-toc}[新增傳遞 - 隱藏](campaign/using/marketing-campaign-deliveries.md)
-    + {hide-from-toc}[選取客群 - 隱藏](campaign/using/marketing-campaign-target.md)
-    + {hide-from-toc}[管理文件和資產 - 隱藏](campaign/using/marketing-campaign-assets.md)
-    + {hide-from-toc}[設定及管理核准 - 隱藏](campaign/using/marketing-campaign-approval.md)
-    + {hide-from-toc}[監視您的行銷活動 - 隱藏](campaign/using/marketing-campaign-monitoring.md)
-    + {hide-from-toc}[供應商、庫存和預算 - 隱藏](campaign/using/providers-stocks-and-budgets.md)
-  + 行銷活動最佳化 {#campaign-optimization}
-    + {hide-from-toc}[關於行銷活動類型 - 隱藏](campaign-opt/using/about-campaign-typologies.md)
-    + {hide-from-toc}[壓力規則 - 隱藏](campaign-opt/using/pressure-rules.md)
-    + {hide-from-toc}[一致性規則 - 隱藏](campaign-opt/using/consistency-rules.md)
-    + {hide-from-toc}[控制規則 - 隱藏](campaign-opt/using/control-rules.md)
-    + {hide-from-toc}[篩選規則 - 隱藏](campaign-opt/using/filtering-rules.md)
-    + {hide-from-toc}[套用規則 - 隱藏](campaign-opt/using/applying-rules.md)
-    + {hide-from-toc}[行銷活動模擬 - 隱藏](campaign-opt/using/campaign-simulations.md)
-+ 行銷資源管理 {#mrm}
-  + {hide-from-toc}[關於行銷資源管理 - 隱藏](mrm/using/about-marketing-resource-management.md)
-  + {hide-from-toc}[建立及管理任務 - 隱藏](mrm/using/creating-and-managing-tasks.md)
-  + {hide-from-toc}[控制成本 - 隱藏](mrm/using/controlling-costs.md)
-  + {hide-from-toc}[管理行銷資源 - 隱藏](mrm/using/managing-marketing-resources.md)
-  + {hide-from-toc}[討論論壇 - 隱藏](mrm/using/discussion-forums.md)
-+ 分散式行銷 {#distributed-marketing}
-  + {hide-from-toc}[關於分散式行銷 - 隱藏](distributed/using/about-distributed-marketing.md)
-  + {hide-from-toc}[建立當地行銷活動 - 隱藏](distributed/using/creating-a-local-campaign.md)
-  + {hide-from-toc}[建立協作行銷活動 - 隱藏](distributed/using/creating-a-collaborative-campaign.md)
-  + {hide-from-toc}[發佈行銷活動套件 - 隱藏](distributed/using/publishing-the-campaign-package.md)
-  + {hide-from-toc}[存取行銷活動 - 隱藏](distributed/using/accessing-campaigns.md)
-  + {hide-from-toc}[追蹤行銷活動 - 隱藏](distributed/using/tracking-a-campaign.md)
-  + {hide-from-toc}[使用案例 - 隱藏](distributed/using/examples.md)
 + 回應管理員 {#response-manager}
   + [開始使用回應管理員](response/using/about-response-manager.md)
   + [設定](response/using/configuration.md)
@@ -252,18 +214,12 @@ ht-degree: 100%
   + [假設追蹤](response/using/hypothesis-tracking.md)
 + 設計及共用報吿 {#reporting}
   + 開始使用報告功能 {#reporting-in-adobe-campaign}
-    + [報告工具](reporting/using/about-adobe-campaign-reporting-tools.md)
     + [報告的最佳實務](reporting/using/best-practices.md)
   + 存取內建報吿 {#accessing-built-in-reports}
     + [關於內建報吿](reporting/using/about-campaign-built-in-reports.md)
     + [報告清單](reporting/using/list-of-reports.md)
   + 傳遞報告{#reports-on-deliveries}
-    + [關於傳遞報告](reporting/using/reports-on-deliveries.md)
-    + [全域報告](reporting/using/global-reports.md)
-    + [傳遞報告](reporting/using/delivery-reports.md)
-    + [累積報告](reporting/using/cumulative-reports.md)
     + [指標計算](reporting/using/indicator-calculation.md)
-    + [人員與收件者](reporting/using/person-people-recipients.md)
   + 分析群體 {#analyzing-populations}
     + [什麼是描述性分析](reporting/using/about-descriptive-analysis.md)
     + [建立您第一個描述性分析報告](reporting/using/using-the-descriptive-analysis-wizard.md)
@@ -366,22 +322,7 @@ ht-degree: 100%
 + 管理產品建議 {#managing-offers}
   + 開始互動 {#interaction-overview}
     + [互動與產品建議管理](interaction/using/interaction-and-offer-management.md)
-    + [字彙](interaction/using/i-glossary.md)
-    + [互動最佳實務](interaction/using/interaction-best-practices.md)
-  + 一般操作 {#general-operation}
-    + [實施步驟](interaction/using/implementation-steps.md)
-    + [基本原則](interaction/using/fundamental-principles.md)
-  + 管理環境 {#managing-environments}
-    + [環境概觀](interaction/using/environments-overview.md)
-    + [操作者設定檔](interaction/using/operator-profiles.md)
-    + [即時/設計環境](interaction/using/live-design-environments.md)
-    + [建立產品建議空間](interaction/using/creating-offer-spaces.md)
-    + [建立預定義的篩選器](interaction/using/creating-predefined-filters.md)
   + 管理產品建議目錄 {#managing-an-offer-catalog}
-    + [產品建議目錄概觀](interaction/using/offer-catalog-overview.md)
-    + [建立產品建議類別](interaction/using/creating-offer-categories.md)
-    + [建議類別](interaction/using/recommending-a-category.md)
-    + [建立產品建議](interaction/using/creating-an-offer.md)
     + [核准並啟用產品建議](interaction/using/approving-and-activating-an-offer.md)
     + [管理產品建議範本](interaction/using/managing-offer-templates.md)
     + [管理產品建議簡報](interaction/using/managing-offer-presentation.md)
@@ -390,18 +331,6 @@ ht-degree: 100%
     + [執行設定](interaction/using/execution-settings.md)
     + [模擬範圍](interaction/using/simulation-scope.md)
     + [模擬追蹤](interaction/using/simulation-tracking.md)
-  + 傳遞產品建議 {#delivering-an-offer}
-    + [關於傳出頻道](interaction/using/about-outbound-channels.md)
-    + [透過助理整合產品建議](interaction/using/integrating-an-offer-via-the-wizard.md)
-    + [透過工作流程整合產品建議](interaction/using/integrating-an-offer-via-a-workflow.md)
-  + 單一互動 {#unitary-interactions}
-    + [關於傳入頻道](interaction/using/about-inbound-channels.md)
-    + [透過 JavaScript 進行整合 (用戶端)](interaction/using/integration-via-javascript-client-side.md)
-    + [透過 SOAP 整合 (伺服器端)](interaction/using/integration-via-soap-server-side.md)
-    + [匿名互動](interaction/using/anonymous-interactions.md)
-  + 追蹤產品建議 {#tracking-offers}
-    + [產品建議提議歷史記錄](interaction/using/offer-proposition-history.md)
-    + [產品建議分析報告](interaction/using/offer-analysis-report.md)
   + 進階參數 {#advanced-parameters}
     + [使用進階參數](interaction/using/using-advanced-parameters.md)
     + [其他資料](interaction/using/additional-data.md)
@@ -421,19 +350,7 @@ ht-degree: 100%
     + [設定執行個體](message-center/using/configuring-instances.md)
     + [其他設定](message-center/using/additional-configurations.md)
   + 訊息範本 {#message-templates}
-    + [建立事件類型](message-center/using/creating-event-types.md)
-    + [設計訊息範本](message-center/using/creating-the-message-template.md)
     + [測試訊息範本](message-center/using/testing-message-templates.md)
-    + [發佈訊息範本](message-center/using/publishing-message-templates.md)
-  + 異動事件處理 {#processing}
-    + [事件說明](message-center/using/event-description.md)
-    + [事件處理](message-center/using/about-event-processing.md)
-    + [傳遞執行](message-center/using/delivery-execution.md)
-  + 報告 {#reports}
-    + [關於異動訊息傳送報告](message-center/using/about-transactional-messaging-reports.md)
-    + [訊息中心事件的歷史記錄](message-center/using/history-of-message-center-events.md)
-    + [訊息中心服務層級](message-center/using/message-center-service-level.md)
-    + [訊息中心處理時間](message-center/using/message-center-processing-time.md)
   + [使用案例](message-center/using/transactional-email-with-attachments.md)
 + 整合社交媒體 {#integrating-with-social-media}
   + [關於社交行銷](social/using/about-social-marketing.md)
@@ -591,7 +508,6 @@ ht-degree: 100%
 + 開發人員指南 {#configuring-campaign-classic}
   + [資料套件](platform/using/working-with-data-packages.md)
   + 資料模型 {#data-model}
-    + [關於資料模型](configuration/using/about-data-model.md)
     + [資料模型說明](configuration/using/data-model-description.md)
     + [最佳實務](configuration/using/data-model-best-practices.md)
   + 使用結構描述 {#schema-reference}
@@ -599,7 +515,6 @@ ht-degree: 100%
     + [方案結構](configuration/using/schema-structure.md)
     + [資料庫對應](configuration/using/database-mapping.md)
     + [金鑰管理](configuration/using/database-keys.md)
-    + [連結管理](configuration/using/database-links.md)
     + 元素和屬性 {#elements-attributes}
       + [簡介](configuration/using/schema-introduction.md)
       + [屬性](configuration/using/schema/attribute.md)
@@ -620,21 +535,15 @@ ht-degree: 100%
       + [Sysfilter](configuration/using/schema/sysfilter.md)
       + [值](configuration/using/schema/value.md)
   + 編輯結構描述 {#editing-schemas}
-    + [關於結構描述版本](configuration/using/about-schema-edition.md)
-    + [資料結構描述](configuration/using/data-schemas.md)
     + [現有表格結構描述](configuration/using/schema-of-an-existing-table.md)
     + [擴展結構描述](configuration/using/extending-a-schema.md)
-    + [篩選結構描述](configuration/using/filtering-schemas.md)
-    + [限制 PII 檢視](configuration/using/restricting-pii-view.md)
     + [更新資料庫結構](configuration/using/updating-the-database-structure.md)
     + [新增欄位助理](configuration/using/new-field-wizard.md)
     + [資料方案結構](configuration/using/structure-of-a-data-schema.md)
     + [重新產生結構描述](configuration/using/regenerating-schemas.md)
     + [結構描述版本範例](configuration/using/examples-of-schemas-edition.md)
   + 輸入表單 {#input-forms}
-    + [識別表單](configuration/using/identifying-a-form.md)
     + [編輯表單](configuration/using/editing-forms.md)
-    + [表單結構](configuration/using/form-structure.md)
   + API {#api}
     + [關於 Web 服務](configuration/using/about-web-services.md)
     + [Web 服務呼叫](configuration/using/web-service-calls.md)
@@ -686,13 +595,11 @@ ht-degree: 100%
     + [將技術操作員移轉至 Developer Console](technotes/using/ims-migration.md)
     + [IMS 移轉後的介面影響](technotes/using/impact-ims-migration.md)
   + 升級與相容性{#technote-migration}
-    + {hide-from-toc}[技術說明](technotes/using/technote.md)
     + [啟用 Microsoft Edge Chromium](technotes/using/edge-chromium.md)
     + {hide-from-toc}[新傳遞能力伺服器](technotes/using/deliverability-server.md)
     + {hide-from-toc}[Apache 安全性升級](technotes/using/acc-apache-upgrade.md)
     + {hide-from-toc}[2023 年系統升級](technotes/using/tech-stack-upgrade.md)
     + {hide-from-toc}[IMS 更新](technotes/using/ims-updates.md)
-    + {hide-from-toc}[終止支援 TLS 1.0 和 1.1](technotes/using/eol-tls-support.md)
     + {hide-from-toc}[移轉至 Adobe Analytics 2.0 API](technotes/using/analytics-2-migration.md)
   + 電子郵件和推播通知{#technotes-email}
     + [Apple iOS 上的郵件隱私保護](technotes/using/apple-mail-app-privacy-protection.md)
