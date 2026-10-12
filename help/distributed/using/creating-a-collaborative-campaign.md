@@ -20,9 +20,9 @@ topic_v2:
 subfeature_v2:
   - id: a6187aac-0a00-4394-8937-e8d4c1a40aa4
     internal-label: Distributed Marketing
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '943'
 ht-degree: 4%
 ---
 # 建立協作行銷活動{#creating-a-collaborative-campaign-intro}
@@ -93,7 +93,7 @@ ht-degree: 4%
 * **[!UICONTROL Distribution context]** ：明確。
 * **[!UICONTROL Data distribution]** ：本機實體發佈。
 
-必須建立&#x200B;**本機實體發佈**&#x200B;型別資料發佈。 資料分佈範本可讓您限制分組值清單中的記錄數。 在&#x200B;**[!UICONTROL Resources > Campaign management > Data distribution]**&#x200B;中，按一下&#x200B;**[!UICONTROL New]**&#x200B;圖示以建立新的&#x200B;**[!UICONTROL Data distribution]**。 如需資料分配的詳細資訊，請參閱[工作流程](../../workflow/using/using-the-local-approval-activity.md#step-1--creating-the-data-distribution-template-)指南。
+必須建立&#x200B;**本機實體發佈**&#x200B;型別資料發佈。 資料分佈範本可讓您限制分組值清單中的記錄數。 在&#x200B;**[!UICONTROL Resources > Campaign management > Data distribution]**&#x200B;中，按一下&#x200B;**[!UICONTROL New]**&#x200B;圖示以建立新的&#x200B;**[!UICONTROL Data distribution]**。 如需資料發佈的詳細資訊，請參閱[工作流程](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/use-cases/deliveries/local-approval-activity#step-1--creating-the-data-distribution-template-){target="_blank"} （Campaign v8檔案）指南。
 
 ![](assets/mkg_dist_data_distribution.png)
 

@@ -21,9 +21,9 @@ subfeature_v2:
     internal-label: Reporting interface
   - id: e519a22f-a06a-42fc-9d09-d78a3ab2c434
     internal-label: Monitoring guidelines
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
 workflow-type: tm+mt
-source-wordcount: '1510'
+source-wordcount: '1526'
 ht-degree: 1%
 ---
 # 多維度資料集的最佳作法{#concepts-and-methodology}
@@ -162,7 +162,7 @@ Adobe Campaign也提供網域列舉，可讓您顯示資料庫中所有連絡人
 
    ![](assets/s_advuser_cube_agregate_04.png)
 
-   * **[!UICONTROL Scheduler]**&#x200B;活動可讓您定義計算更新的頻率。 排程器在[此區段](../../workflow/using/scheduler.md)中有詳細說明。
+   * **[!UICONTROL Scheduler]**&#x200B;活動可讓您定義計算更新的頻率。 排程器在[本節](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler){target="_blank"}中有詳細說明（Campaign v8檔案）。
    * **[!UICONTROL Aggregate update]**&#x200B;活動可讓您選取要套用的更新模式：完整或部分。
 
      依預設，每次計算期間都會執行完整更新。 若要啟用部分更新，請選取相關選項並定義更新條件。

@@ -17,9 +17,9 @@ feature_v2:
 subfeature_v2:
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
     internal-label: Analytics integration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
 workflow-type: tm+mt
-source-wordcount: '874'
+source-wordcount: '889'
 ht-degree: 1%
 ---
 # 移轉至Adobe Analytics 2.0 API {#analytics-2-migration}
@@ -28,7 +28,7 @@ Adobe Analytics 1.4 API [即將結束生命週期](https://developer.adobe.com/a
 
 >[!CAUTION]
 >
->升級時會重新匯入兩個內建的技術工作流程（支援聯結器[!UICONTROL webAnalyticsSendMetrics]和[!UICONTROL webAnalyticsGetWebEvents]） （請參閱[Web Analytics工作流程參考](../../workflow/using/web-analytics.md)，瞭解每個工作流程的用途）。 您在這些工作流程之上自訂的任何內容，都會被重新匯入覆寫。 避免直接修改這些內建工作流程 — 改為在個別的自訂工作流程中建置自訂專案，以免日後升級時覆寫自訂專案。 此升級也會更新內建的Analytics JavaScript檔案：如果您的任何自訂工作流程參考這些檔案，這些檔案將會中斷，且需要加以調整以符合新的程式碼。
+>升級時會重新匯入兩個內建的技術工作流程（支援聯結器[!UICONTROL webAnalyticsSendMetrics]和[!UICONTROL webAnalyticsGetWebEvents]） (請參閱[網站分析工作流程參考](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows){target="_blank"} （Campaign v8檔案），以瞭解每個工作流程的用途)。 您在這些工作流程之上自訂的任何內容，都會被重新匯入覆寫。 避免直接修改這些內建工作流程 — 改為在個別的自訂工作流程中建置自訂專案，以免日後升級時覆寫自訂專案。 此升級也會更新內建的Analytics JavaScript檔案：如果您的任何自訂工作流程參考這些檔案，這些檔案將會中斷，且需要加以調整以符合新的程式碼。
 
 ## 您有受到影響嗎？ {#are-you-impacted}
 
@@ -64,8 +64,8 @@ Adobe Analytics 1.4 API [即將結束生命週期](https://developer.adobe.com/a
       ```
 
    1. 在SFTP伺服器上將Adobe Analytics加入允許清單，因為再行銷匯出只會從一組固定的Adobe IP範圍啟動：
-      * [查詢目前的Adobe Analytics資料收集IP位址](https://experienceleague.adobe.com/zh-hant/docs/core-services/interface/data-collection/ip-addresses){target="_blank"}，並將其新增至您的SFTP伺服器允許清單。 以FTP為基礎的Analytics匯出（包括資料摘要）只會來自倫敦、奧勒岡和新加坡區域的IPv4位址。
-      * [擷取Adobe Analytics公開金鑰](https://experienceleague.adobe.com/zh-hant/docs/experience-cloud-kcs/kbarticles/ka-18141){target="_blank"}並將其新增至SFTP伺服器上的`authorized_keys`檔案，以便Analytics能夠進行驗證。
+      * [查詢目前的Adobe Analytics資料收集IP位址](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/ip-addresses){target="_blank"}，並將其新增至您的SFTP伺服器允許清單。 以FTP為基礎的Analytics匯出（包括資料摘要）只會來自倫敦、奧勒岡和新加坡區域的IPv4位址。
+      * [擷取Adobe Analytics公開金鑰](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-18141){target="_blank"}並將其新增至SFTP伺服器上的`authorized_keys`檔案，以便Analytics能夠進行驗證。
 1. 在Campaign Explorer樹狀結構中的&#x200B;**[!UICONTROL Administration]> [!UICONTROL Platform] >[!UICONTROL Options]**&#x200B;下，在[!UICONTROL xtkOption]中建立或設定選項`longvalue`為`1`，以在您的執行個體上啟用`FEATUREFLAG_USE_ANALYTICS_20_API`功能標幟。 無論上述使用案例適用於您，都需要執行此步驟。
 1. 在停用任何舊的連線之前，透過實施適用於您執行個體的每個使用案例來驗證移轉(傳送測試行銷活動、檢查指標是否進入Analytics，以及確認再行銷資料（如果適用）)。
 
@@ -94,7 +94,7 @@ Adobe Analytics 1.4 API [即將結束生命週期](https://developer.adobe.com/a
 
 1. 按一下 **[!UICONTROL Save]**。
 
-當您在下一步設定外部帳戶時，Campaign會自動探索此分類集。 如需分類集的詳細資訊，請參閱[Adobe Analytics檔案](https://experienceleague.adobe.com/zh-hant/docs/analytics/components/classifications/sets/create-set){target="_blank"}。
+當您在下一步設定外部帳戶時，Campaign會自動探索此分類集。 如需分類集的詳細資訊，請參閱[Adobe Analytics檔案](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/sets/create-set){target="_blank"}。
 
 ## 需要協助嗎? {#need-help}
 

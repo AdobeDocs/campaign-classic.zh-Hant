@@ -36,16 +36,16 @@ subfeature_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
 workflow-type: tm+mt
-source-wordcount: '1537'
+source-wordcount: '1553'
 ht-degree: 1%
 ---
 # 在Campaign和CRM之間同步資料 {#data-synchronization}
 
 
 
-Adobe Campaign與CRM之間的資料同步是透過專用的工作流程活動來執行： [CRM聯結器](../../workflow/using/crm-connector.md)。
+Adobe Campaign與CRM之間的資料同步是透過專用的工作流程活動來執行： [CRM聯結器](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/crm-connector){target="_blank"} （Campaign v8檔案）。
 
 例如，若要將Microsoft Dynamics資料匯入Adobe Campaign，請建立下列型別的工作流程：
 

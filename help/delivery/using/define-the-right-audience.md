@@ -36,10 +36,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
 workflow-type: tm+mt
-source-wordcount: '545'
-ht-degree: 7%
+source-wordcount: '576'
+ht-degree: 6%
 ---
 # 定義正確客群 {#define-the-right-audience}
 
@@ -59,26 +59,26 @@ ht-degree: 7%
 
 例如，您可以傳送給已透過社交網路收集設定檔的訪客，或訂閱資訊服務的訪客。
 
-這些對應會顯示在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/audience/add-profiles/target-mappings.html?lang=zh-Hant){target="_blank"}中。
+這些對應會顯示在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/audience/add-profiles/target-mappings.html){target="_blank"}中。
 
 您也可以建立並使用自訂的目標對應。 如需詳細資訊，請參閱[本章節](../../configuration/using/target-mapping.md)。
 
 ## 外部收件者 {#external-recipients}
 
-您可以傳遞至儲存在外部檔案中而非儲存在資料庫中的收件者。 在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hant#selecting-external-recipients){target="_blank"}中瞭解更多。
+您可以傳遞至儲存在外部檔案中而非儲存在資料庫中的收件者。 在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#selecting-external-recipients){target="_blank"}中瞭解更多。
 
 ## 傳送給您的訂閱者 {#send-to-subscribers}
 
-若要傳送訊息給電子報的訂閱者，您可以直接將訂閱者定位到對應的資訊服務。 在本節[&#128279;](managing-subscriptions.md#delivering-to-the-subscribers-of-a-service)瞭解更多。
+若要傳送訊息給電子報的訂閱者，您可以直接將訂閱者定位到對應的資訊服務。 在本節](managing-subscriptions.md#delivering-to-the-subscribers-of-a-service)瞭解更多[。
 
 
 ## 測試收件者和種子地址 {#test-recipients-seed-addresses}
 
 若要測試您的傳遞，請在傳送至主要目標之前使用證明。
 
-請務必選取適當的校樣收件者，因為他們會驗證訊息的表單和內容。 定義證明收件者的步驟會顯示在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hant#select-the-proof-target){target="_blank"}中。
+請務必選取適當的校樣收件者，因為他們會驗證訊息的表單和內容。 定義證明收件者的步驟會顯示在[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#select-the-proof-target){target="_blank"}中。
 
-種子地址用於鎖定不符合所定義目標條件的收件者，以便在傳送至主要目標之前測試傳遞。 它們會顯示在此區段[&#128279;](about-seed-addresses.md)中的。
+種子地址用於鎖定不符合所定義目標條件的收件者，以便在傳送至主要目標之前測試傳遞。 它們會顯示在此區段](about-seed-addresses.md)中的[。
 
 ## 重複位址 {#deduplicate-addresses}
 
@@ -92,11 +92,11 @@ ht-degree: 7%
 
 **相關主題：**
 
-* [重複資料刪除活動](../../workflow/using/deduplication.md)。
-* [使用案例：使用重複資料刪除活動的合併功能](../../workflow/using/deduplication-merge.md)
+* [重複資料刪除活動](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/deduplication){target="_blank"} （Campaign v8檔案）。
+* [使用案例：使用重複資料刪除活動的合併功能](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/use-cases/data-management/deduplication-merge){target="_blank"} （Campaign v8檔案）
 
 ## 為電子郵件地址建立索引 {#index-addresses}
 
 為了最佳化應用程式中使用的SQL查詢效能，可以從資料結構描述的主要元素宣告索引。
 
-新增索引至電子郵件地址的步驟顯示於本節[&#128279;](../../configuration/using/database-mapping.md#indexed-fields)。
+新增索引至電子郵件地址的步驟顯示於本節[](../../configuration/using/database-mapping.md#indexed-fields)。

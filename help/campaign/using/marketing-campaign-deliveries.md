@@ -34,9 +34,9 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
 workflow-type: tm+mt
-source-wordcount: '1511'
+source-wordcount: '1526'
 ht-degree: 1%
 ---
 # 行銷活動傳遞 {#marketing-campaign-deliveries}
@@ -45,7 +45,7 @@ ht-degree: 1%
 
 從行銷活動建立傳遞時，會連結至此行銷活動，並在行銷活動層級合併。
 
-![](assets/do-not-localize/how-to-video.png) [在影片中探索此功能](#create-email-video)
+![](assets/do-not-localize/how-to-video.png)[在影片中探索此功能](#create-email-video)
 
 ## 建立傳遞 {#creating-deliveries}
 
@@ -83,7 +83,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->與行銷活動套件相關的技術工作流程出現在[技術工作流程清單](../../workflow/using/about-technical-workflows.md)中。
+>與Campaign套件相關的技術工作流程會顯示在[技術工作流程清單](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows){target="_blank"} （Campaign v8檔案）中。
 
 **步驟1 — 檔案核准**
 
@@ -142,7 +142,7 @@ ht-degree: 1%
 
 ## 管理相關檔案 {#managing-associated-documents}
 
-您可以將各種檔案與行銷活動建立關聯：報告、照片、網頁、圖表等。這些檔案可以是任何格式（Microsoft Word、PowerPoint、PNG、JPG、Acrobat PDF等）。 在本節[&#128279;](../../campaign/using/marketing-campaign-assets.md)中瞭解如何將檔案與行銷活動連結。
+您可以將各種檔案與行銷活動建立關聯：報告、照片、網頁、圖表等。這些檔案可以是任何格式（Microsoft Word、PowerPoint、PNG、JPG、Acrobat PDF等）。 在本節](../../campaign/using/marketing-campaign-assets.md)中瞭解如何將檔案與行銷活動[連結。
 
 >[!IMPORTANT]
 >

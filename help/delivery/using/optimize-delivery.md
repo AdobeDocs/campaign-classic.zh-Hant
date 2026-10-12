@@ -41,9 +41,9 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
 workflow-type: tm+mt
-source-wordcount: '749'
+source-wordcount: '766'
 ht-degree: 9%
 ---
 # 最佳化傳遞 {#optimize-delivery}
@@ -62,7 +62,7 @@ ht-degree: 9%
 
   **秘訣** — 若要避免此問題，請與團隊的其他成員協調傳送排程，以確保最佳效能。
 
-* 工作流程執行：監控工作流程是避免平台效能問題的關鍵。 請遵循此檔案[&#128279;](../../workflow/using/workflow-best-practices.md#execution-and-performance)中列出的准則。
+* 工作流程執行：監控工作流程是避免平台效能問題的關鍵。 請遵循此檔案](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/workflow-best-practices#execution-and-performance){target="_blank"}中列出的准則[ （Campaign v8檔案）。
 
 * 如果您符合資格，可以使用[效能監視](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html?lang=zh-Hant)功能，利用[Campaign控制面板功能](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=zh-Hant)來監視您的平台。
 
@@ -82,7 +82,7 @@ ht-degree: 9%
 
   * 在檢查電子郵件是否可傳遞時，您想要將焦點放在四個主要類別上：資料品質、訊息和內容、傳送基礎結構和信譽。 如需深入瞭解此主題，請參閱[本節](about-deliverability.md)。
 
-* 套用此檔案[&#128279;](about-deliverability.md)中詳細的建議。
+* 套用此檔案](about-deliverability.md)中詳細[的建議。
 
 * 請聯絡您的Adobe代表以尋求協助。
 

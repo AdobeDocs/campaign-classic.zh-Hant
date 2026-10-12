@@ -25,9 +25,9 @@ feature_v2:
 subfeature_v2:
   - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
     internal-label: Workflows
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
 workflow-type: tm+mt
-source-wordcount: '1077'
+source-wordcount: '1092'
 ht-degree: 1%
 ---
 # 透過工作流程整合優惠方案{#integrating-an-offer-via-a-workflow}
@@ -71,7 +71,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->如需擴充活動的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html?lang=zh-Hant){target="_blank"}。
+>如需擴充活動的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html){target="_blank"}。
 
 例如，您可以在傳遞前擴充收件者查詢的資料。
 
@@ -84,7 +84,7 @@ ht-degree: 1%
 
 ### 指定優惠方案或呼叫優惠方案引擎 {#specifying-an-offer-or-a-call-to-the-offer-engine}
 
-設定查詢之後（請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=zh-Hant){target="_blank"}）：
+設定查詢之後（請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}）：
 
 1. 新增並開啟擴充活動。
 1. 在&#x200B;**[!UICONTROL Enrichment]**&#x200B;索引標籤中，選取&#x200B;**[!UICONTROL Add data]**。
@@ -162,7 +162,7 @@ ht-degree: 1%
 
 ![](assets/int_offerengine_activity2.png)
 
-設定查詢之後（請參閱[工作流程手冊](../../workflow/using/query.md)）：
+設定查詢之後(請參閱[工作流程手冊](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target="_blank"} （Campaign v8檔案）)：
 
 1. 新增並開啟&#x200B;**[!UICONTROL Offer engine]**&#x200B;活動。
 1. 完成各種可用欄位，以指定呼叫優惠方案引擎引數（優惠方案空間、類別或主題、聯絡日期、要保留的優惠方案數量）。 引擎將根據這些引數自動計算要新增的選件。

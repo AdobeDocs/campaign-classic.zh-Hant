@@ -29,9 +29,9 @@ topic_v2:
     internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
 workflow-type: tm+mt
-source-wordcount: '723'
+source-wordcount: '739'
 ht-degree: 0%
 ---
 # 移轉測試{#testing-the-migration}
@@ -182,7 +182,7 @@ nlserver.exe config -postupgrade -check -instance:<instance-name>
    <td> CRM v1(mscrmWorkflow/sfdcWorkflow)<br /> </td> 
    <td> PU-0008<br /> </td> 
    <td> 錯誤<br /> </td> 
-   <td> Microsoft CRM、Salesforce、Oracle CRM隨選動作活動已無法使用。 若要設定Adobe Campaign與CRM系統之間的資料同步，您必須使用<a href="../../workflow/using/crm-connector.md" target="_blank">CRM聯結器</a>目標定位活動。<br /> </td>
+   <td> Microsoft CRM、Salesforce、Oracle CRM隨選動作活動已無法使用。 若要設定Adobe Campaign與CRM系統之間的資料同步，您必須使用<a href="https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/crm-connector" target="_blank">CRM聯結器</a> （Campaign v8檔案）鎖定目標活動。<br /> </td>
   </tr> 
  </tbody> 
 </table>

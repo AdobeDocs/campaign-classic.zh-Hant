@@ -30,16 +30,16 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
 workflow-type: tm+mt
-source-wordcount: '1259'
-ht-degree: 6%
+source-wordcount: '1275'
+ht-degree: 5%
 ---
 # 開始使用行銷活動{#setting-up-marketing-campaigns}
 
 行銷活動包括動作 (傳送) 和流程 (匯入或擷取檔案)，以及資源 (行銷文件、傳遞大綱)。 它們會用於行銷活動。 行銷活動是方案的一部分，而方案則包含在行銷活動計畫中。
 
-![](assets/do-not-localize/how-to-video.png)在影片中探索如何建立行銷計畫、方案和行銷活動[&#128279;](#video)
+![](assets/do-not-localize/how-to-video.png)在影片中探索如何建立行銷計畫、方案和行銷活動[](#video)
 
 若要建立行銷活動：
 
@@ -147,7 +147,7 @@ ht-degree: 6%
 
    ![](assets/s_ncs_user_op_template_recur_planning.png)
 
-   執行排程的設定模式與工作流程的&#x200B;**[!UICONTROL Scheduler]**&#x200B;物件一致。 如需詳細資訊，請參閱[本章節](../../workflow/using/architecture.md)。
+   執行排程的設定模式與工作流程的&#x200B;**[!UICONTROL Scheduler]**&#x200B;物件一致。 如需詳細資訊，請參閱[本節](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler){target="_blank"} （Campaign v8檔案）。
 
    >[!IMPORTANT]
    >

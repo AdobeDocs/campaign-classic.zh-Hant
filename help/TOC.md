@@ -8,9 +8,9 @@ user-guide-description: Adobe Campaign Classic v7 產品文件。
 sub-product: adobe campaign classic
 type: Documentation
 nudge: false
-source-git-commit: df5d87ca4fccb927f770957ec1c00157d14e95dc
+source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
 workflow-type: tm+mt
-source-wordcount: '2717'
+source-wordcount: '2298'
 ht-degree: 100%
 ---
 
@@ -363,124 +363,6 @@ ht-degree: 100%
     + {hide-from-toc}[同步網頁應用程式 - 隱藏](integrations/using/synchronizing-web-applications.md)
     + {hide-from-toc}[對  [!DNL ACS Connector]  進行疑難排解 - 隱藏](integrations/using/troubleshooting-the-acs-connector.md)
 + [使用工作流程自動化](workflow/using/about-workflows.md)
-+ 使用工作流程自動化 {#automating-with-workflows}
-  + 開始使用工作流程 {#introduction}
-    + {hide-from-toc}[關於活動 - 隱藏](workflow/using/about-activities.md)
-    + {hide-from-toc}[建立工作流程 - 隱藏](workflow/using/building-a-workflow.md)
-    + {hide-from-toc}[目標資料 - 隱藏](workflow/using/targeting-data.md)
-    + {hide-from-toc}[使用工作流程資料 - 隱藏](workflow/using/how-to-use-workflow-data.md)
-    + {hide-from-toc}[工作流程最佳做法 - 隱藏](workflow/using/workflow-best-practices.md)
-  + 執行工作流程 {#executing-a-workflow}
-    + {hide-from-toc}[開始工作流程 - 隱藏](workflow/using/starting-a-workflow.md)
-    + {hide-from-toc}[工作流程生命週期 - 隱藏](workflow/using/workflow-life-cycle.md)
-    + {hide-from-toc}[資料生命週期 - 隱藏](workflow/using/data-life-cycle.md)
-    + {hide-from-toc}[定義核准 - 隱藏](workflow/using/defining-approvals.md)
-    + {hide-from-toc}[架構 - 隱藏](workflow/using/architecture.md)
-  + 目標定位活動 {#targeting-activities}
-    + {hide-from-toc}[關於目標定位活動 - 隱藏](workflow/using/about-targeting-activities.md)
-    + {hide-from-toc}[查詢 - 隱藏](workflow/using/query.md)
-    + {hide-from-toc}[增量查詢 - 隱藏](workflow/using/incremental-query.md)
-    + {hide-from-toc}[讀取清單 - 隱藏](workflow/using/read-list.md)
-    + {hide-from-toc}[聯合 - 隱藏](workflow/using/union.md)
-    + {hide-from-toc}[交集 - 隱藏](workflow/using/intersection.md)
-    + {hide-from-toc}[排除 - 隱藏](workflow/using/exclusion.md)
-    + {hide-from-toc}[分割 - 隱藏](workflow/using/split.md)
-    + {hide-from-toc}[儲存格 - 隱藏](workflow/using/cells.md)
-    + {hide-from-toc}[依儲存格列出的產品建議 - 隱藏](workflow/using/offers-by-cell.md)
-    + {hide-from-toc}[傳遞大網 - 隱藏](workflow/using/delivery-outline.md)
-    + {hide-from-toc}[擴充 - 隱藏](workflow/using/enrichment.md)
-    + {hide-from-toc}[編輯結構描述 - 隱藏](workflow/using/edit-schema.md)
-    + {hide-from-toc}[產品建議引擎 - 隱藏](workflow/using/offer-engine.md)
-    + {hide-from-toc}[重複資料刪除 - 隱藏](workflow/using/deduplication.md)
-    + {hide-from-toc}[變更維度 - 隱藏](workflow/using/change-dimension.md)
-    + {hide-from-toc}[清單更新 - 隱藏](workflow/using/list-update.md)
-    + {hide-from-toc}[訂閱服務 - 隱藏](workflow/using/subscription-services.md)
-    + {hide-from-toc}[更新資料 - 隱藏](workflow/using/update-data.md)
-    + {hide-from-toc}[CRM 連接器 - 隱藏](workflow/using/crm-connector.md)
-    + {hide-from-toc}[變更資料來源 - 隱藏](workflow/using/change-data-source.md)
-  + 流程控制活動 {#flow-control-activities}
-    + {hide-from-toc}[關於流程控制活動 - 隱藏](workflow/using/about-flow-control-activities.md)
-    + {hide-from-toc}[開始和結束 - 隱藏](workflow/using/start-and-end.md)
-    + {hide-from-toc}[分支 - 隱藏](workflow/using/fork.md)
-    + {hide-from-toc}[合併聯結 - 隱藏](workflow/using/and-join.md)
-    + {hide-from-toc}[排程器 - 隱藏](workflow/using/scheduler.md)
-    + {hide-from-toc}[測試 - 隱藏](workflow/using/test.md)
-    + {hide-from-toc}[等待 - 隱藏](workflow/using/wait.md)
-    + {hide-from-toc}[時間限制 - 隱藏](workflow/using/time-constraint.md)
-    + {hide-from-toc}[子工作流程 - 隱藏](workflow/using/sub-workflow.md)
-    + {hide-from-toc}[跳轉 (起點和終點 - 隱藏)](workflow/using/jump-start-point-and-end-point.md)
-    + {hide-from-toc}[外部訊號 - 隱藏](workflow/using/external-signal.md)
-    + {hide-from-toc}[核准 - 隱藏](workflow/using/approval.md)
-    + {hide-from-toc}[警報 - 隱藏](workflow/using/alert.md)
-    + {hide-from-toc}[任務 - 隱藏](workflow/using/task.md)
-  + 動作活動 {#action-activities}
-    + {hide-from-toc}[關於動作活動 - 隱藏](workflow/using/about-action-activities.md)
-    + {hide-from-toc}[傳遞 - 隱藏](workflow/using/delivery.md)
-    + {hide-from-toc}[傳遞控制 - 隱藏](workflow/using/delivery-control.md)
-    + {hide-from-toc}[持續傳遞 - 隱藏](workflow/using/continuous-delivery.md)
-    + {hide-from-toc}[定期傳遞 - 隱藏](workflow/using/recurring-delivery.md)
-    + {hide-from-toc}[跨管道傳遞 - 隱藏](workflow/using/cross-channel-deliveries.md)
-    + {hide-from-toc}[本地核准 - 隱藏](workflow/using/local-approval.md)
-    + {hide-from-toc}[資料載入中 (RDBMS) - 隱藏](workflow/using/data-loading-rdbms.md)
-    + {hide-from-toc}[載入中 (SOAP) - 隱藏](workflow/using/loading-soap.md)
-    + {hide-from-toc}[資料載入中 (檔案) - 隱藏](workflow/using/data-loading-file.md)
-    + {hide-from-toc}[內容管理 - 隱藏](workflow/using/content-management.md)
-    + {hide-from-toc}[資料擷取 (檔案) - 隱藏](workflow/using/extraction-file.md)
-    + {hide-from-toc}[SQL 程式碼和 JavaScript 程式碼 - 隱藏](workflow/using/sql-code-and-javascript-code.md)
-    + {hide-from-toc}[SQL 資料管理 - 隱藏](workflow/using/sql-data-management.md)
-    + {hide-from-toc}[Nlserver 模組 - 隱藏](workflow/using/nlserver-module.md)
-    + {hide-from-toc}[更新彙總 - 隱藏](workflow/using/update-aggregate.md)
-  + 事件活動 {#event-activities}
-    + {hide-from-toc}[關於事件活動 - 隱藏](workflow/using/about-event-activities.md)
-    + {hide-from-toc}[檔案收集器 - 隱藏](workflow/using/file-collector.md)
-    + {hide-from-toc}[檔案傳輸 - 隱藏](workflow/using/file-transfer.md)
-    + {hide-from-toc}[網頁下載 - 隱藏](workflow/using/web-download.md)
-    + {hide-from-toc}[傳入電子郵件 - 隱藏](workflow/using/inbound-emails.md)
-    + {hide-from-toc}[傳入簡訊 - 隱藏](workflow/using/inbound-sms.md)
-  + 使用案例 {#use-cases}
-    + {hide-from-toc}[關於工作流程使用案例 - 隱藏](workflow/using/about-workflow-use-cases.md)
-    + 傳遞 {#deliveries}
-      + {hide-from-toc}[使用本地核准活動 - 隱藏](workflow/using/using-the-local-approval-activity.md)
-      + {hide-from-toc}[傳送生日電子郵件 - 隱藏](workflow/using/sending-a-birthday-email.md)
-      + {hide-from-toc}[載入傳遞內容 - 隱藏](workflow/using/loading-delivery-content.md)
-      + {hide-from-toc}[跨管道傳遞工作流程 - 隱藏](workflow/using/cross-channel-delivery-workflow.md)
-      + {hide-from-toc}[使用自訂日期欄位擴充電子郵件 - 隱藏](workflow/using/email-enrichment-with-custom-date-fields.md)
-  + 監視 {#monitoring}
-    + {hide-from-toc}[傳送報吿至清單 - 隱藏](workflow/using/sending-a-report-to-a-list.md)
-    + {hide-from-toc}[監督您的工作流程 - 隱藏](workflow/using/supervising-workflows.md)
-    + {hide-from-toc}[傳送個人化警報給操作者 - 隱藏](workflow/using/sending-personalized-alerts-to-operators.md)
-  + 資料管理 {#data-management}
-    + {hide-from-toc}[協調資料更新 - 隱藏](workflow/using/coordinating-data-updates.md)
-    + {hide-from-toc}[建立摘要清單 - 隱藏](workflow/using/creating-a-summary-list.md)
-    + {hide-from-toc}[豐富資料 - 隱藏](workflow/using/enriching-data.md)
-    + {hide-from-toc}[使用彙總 - 隱藏](workflow/using/using-aggregates.md)
-    + {hide-from-toc}[使用重複資料刪除活動的合併功能 - 隱藏](workflow/using/deduplication-merge.md)
-    + {hide-from-toc}[設定週期性匯入工作流程 - 隱藏](workflow/using/recurring-import-workflow.md)
-  + 設計查詢 {#designing-queries}
-    + {hide-from-toc}[使用增量查詢更新每季清單 - 隱藏](workflow/using/quarterly-list-update.md)
-  + 查詢和篩選 {#query-and-filter-hidden}
-    + {hide-from-toc}[查詢收件者表格 - 隱藏](workflow/using/querying-recipient-table.md)
-    + {hide-from-toc}[查詢傳遞資訊 - 隱藏](workflow/using/querying-delivery-information.md)
-    + {hide-from-toc}[執行彙總計算 - 隱藏](workflow/using/performing-aggregate-computing.md)
-    + {hide-from-toc}[使用分組管理進行查詢 - 隱藏](workflow/using/querying-using-grouping-management.md)
-    + {hide-from-toc}[使用多對多關係進行查詢 - 隱藏](workflow/using/querying-using-many-to-many-relationship.md)
-    + {hide-from-toc}[新增分項清單類型計算欄位 - 隱藏](workflow/using/adding-enumeration-type-calculated-field.md)
-    + {hide-from-toc}[建立篩選器 - 隱藏](workflow/using/creating-a-filter.md)
-    + {hide-from-toc}[篩選重複的收件者 - 隱藏](workflow/using/filtering-duplicated-recipients.md)
-  + 監視工作流程 {#monitoring-workflows}
-    + {hide-from-toc}[監視工作流程的執行 - 隱藏](workflow/using/monitoring-workflow-execution.md)
-    + {hide-from-toc}[監視技術工作流程 - 隱藏](workflow/using/monitoring-technical-workflows.md)
-    + {hide-from-toc}[工作流程熱度圖 - 隱藏](workflow/using/heatmap.md)
-  + 進階管理 {#advanced-management}
-    + {hide-from-toc}[工作流程屬性 - 隱藏](workflow/using/workflow-properties.md)
-    + {hide-from-toc}[進階參數 - 隱藏](workflow/using/advanced-parameters.md)
-    + {hide-from-toc}[JavaScript 指令碼和範本 - 隱藏](workflow/using/javascript-scripts-and-templates.md)
-    + {hide-from-toc}[工作流程中的 JavaScript 程式碼範例 - 隱藏](workflow/using/javascript-in-workflows.md)
-    + {hide-from-toc}[存取外部資料庫 - 隱藏](workflow/using/accessing-an-external-database-fda.md)
-    + {hide-from-toc}[管理權限 - 隱藏](workflow/using/managing-rights.md)
-    + {hide-from-toc}[變更活動影像 - 隱藏](workflow/using/managing-activity-images.md)
-    + {hide-from-toc}[管理時區 - 隱藏](workflow/using/managing-time-zones.md)
-    + {hide-from-toc}[技術工作流程 - 隱藏](workflow/using/about-technical-workflows.md)
 + 管理產品建議 {#managing-offers}
   + 開始互動 {#interaction-overview}
     + [互動與產品建議管理](interaction/using/interaction-and-offer-management.md)
