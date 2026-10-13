@@ -41,20 +41,20 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '565'
 ht-degree: 2%
 ---
 # 進階：自訂傳遞記錄 {#customize-delivery-logs}
 
 >[!NOTE]
 >
->[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/monitor/delivery-dashboard)已記錄存取傳遞清單及使用傳遞儀表板的完整指引。 此內容適用於Campaign Classic v7和Campaign v8使用者。
+>[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard)已記錄存取傳遞清單及使用傳遞儀表板的完整指引。 此內容適用於Campaign Classic v7和Campaign v8使用者。
 >
 >此頁面記錄混合式部署和內部部署的&#x200B;**Campaign Classic v7專屬進階自訂**。
 
-若要在Campaign UI中監視傳遞，請參閱Campaign UI檔案[&#128279;](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}中的Campaign v8監視傳遞。
+若要在Campaign UI中監視傳遞，請參閱Campaign UI檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}中的[Campaign v8監視傳遞。
 
 ## 自訂傳遞記錄 {#use-case}
 
@@ -139,7 +139,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->若要瞭解如何在Campaign Classic介面中設定清單，請參閱[此頁面](../../platform/using/adobe-campaign-workspace.md)。
+>若要瞭解如何在Campaign Classic介面中設定清單，請參閱[此頁面](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target="_blank"} （Campaign v8檔案）。
 
 以下是修改後您在&#x200B;**[!UICONTROL Delivery]**&#x200B;標籤中應該看到的內容：
 
@@ -147,9 +147,9 @@ ht-degree: 2%
 
 ## 相關主題
 
-* [在Campaign UI中監視傳遞](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} （Campaign v8檔案）
-* [傳遞狀態](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/monitor/delivery-statuses){target="_blank"} （Campaign v8檔案）
-* [瞭解傳遞失敗](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} （Campaign v8檔案）
-* [隔離管理](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} （Campaign v8檔案）
+* [在Campaign UI中監視傳遞](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} （Campaign v8檔案）
+* [傳遞狀態](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-statuses){target="_blank"} （Campaign v8檔案）
+* [瞭解傳遞失敗](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} （Campaign v8檔案）
+* [隔離管理](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} （Campaign v8檔案）
 * [擴充結構描述](../../configuration/using/extending-a-schema.md) （v7混合式/內部部署）
 

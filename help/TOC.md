@@ -8,9 +8,9 @@ user-guide-description: Adobe Campaign Classic v7 產品文件。
 sub-product: adobe campaign classic
 type: Documentation
 nudge: false
-source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
+source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
 workflow-type: tm+mt
-source-wordcount: '1739'
+source-wordcount: '1657'
 ht-degree: 100%
 ---
 
@@ -32,36 +32,22 @@ ht-degree: 100%
 + 開始使用 {#getting-started}
   + [開始使用 Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
   + [啟動 Adobe Campaign](platform/using/launching-adobe-campaign.md)
-  + [瞭解 Campaign UI](platform/using/adobe-campaign-workspace.md)
-  + {hide-from-toc}[使用 Campaign 探索工具 - 隱藏](platform/using/adobe-campaign-explorer.md)
-  + {hide-from-toc}[瀏覽和自訂清單 - 隱藏](platform/using/adobe-campaign-ui-lists.md)
-  + {hide-from-toc}[分項清單 - 隱藏](platform/using/managing-enumerations.md)
   + [Campaign 連接器](platform/using/about-connectors.md)
   + 常見問題集 {#faq}
     + [Campaign Classic 常見問題集](platform/using/faq-campaign-classic-v7.md)
     + [版本升級](platform/using/faq-build-upgrade.md)
-  + {hide-from-toc}[詞彙表 - 隱藏](platform/using/ac-glossary.md)
   + 隱私權 {#privacy}
     + [隱私權與同意](platform/using/privacy-and-recommendations.md)
     + [隱私權管理](platform/using/privacy-management.md)
     + 隱私權請求 {#privacy-requests}
-      + [關於隱私權請求](platform/using/privacy-requests.md)
       + [建立及管理隱私權請求](platform/using/privacy-requests-ui.md)
       + [自動隱私權請求流程](platform/using/privacy-requests-api.md)
     + [選擇退出個人資訊銷售](platform/using/privacy-requests-ccpa.md)
   + 輪廓管理 {#profile-management}
     + [關於輪廓](platform/using/about-profiles.md)
     + [更新資料](platform/using/updating-data.md)
-    + [建立及管理清單](platform/using/creating-and-managing-lists.md)
   + 匯入及匯出資料 {#importing-and-exporting-data}
-    + [開始使用匯入及匯出資料](platform/using/get-started-data-import-export.md)
-    + [利用工作流程匯入及匯出資料](platform/using/import-export-workflows.md)
     + 建立一般匯入和匯出 {#generic-imports-exports}
-      + [開始使用一般匯入和匯出](platform/using/about-generic-imports-exports.md)
-      + [建立匯入和匯出範本](platform/using/creating-import-export-templates.md)
-      + [建立匯入和匯出作業](platform/using/creating-import-export-jobs.md)
-      + [設定匯入作業](platform/using/executing-import-jobs.md)
-      + [設定匯出作業](platform/using/executing-export-jobs.md)
       + [監視作業執行](platform/using/monitoring-jobs-execution.md)
       + [一般匯入範例](platform/using/import-operations-samples.md)
     + 管理資料加密和壓縮 {#managing-data-encryption-compression}
@@ -70,16 +56,11 @@ ht-degree: 100%
     + 最佳實務及疑難排解 {#best-practices}
       + [匯入和匯出最佳實務](platform/using/import-export-best-practices.md)
       + [SFTP 伺服器最佳實務及疑難排解](platform/using/sftp-server-usage.md)
-  + 篩選資料 {#filtering-data}
-    + {hide-from-toc}[建立篩選器 - 隱藏](platform/using/creating-filters.md)
-  + {hide-from-toc}[建立查詢的步驟 - 隱藏](platform/using/steps-to-create-a-query.md)
-  + {hide-from-toc}[定義篩選條件 - 隱藏](platform/using/defining-filter-conditions.md)
   + 權限 {#permissions}
     + [開始使用權限](platform/using/access-management.md)
     + 原生驗證 (舊版) {#native}
       + [建立及管理操作者](platform/using/access-management-operators.md)
       + [建立和管理群組](platform/using/access-management-groups.md)
-    + [使用已命名的權限來設定權限](platform/using/access-management-named-rights.md)
   + CRM 連接器 {#connectors}
     + [開始使用 CRM 連接器](platform/using/crm-connectors.md)
 + 建立及傳送訊息 {#sending-messages}

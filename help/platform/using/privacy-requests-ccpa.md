@@ -41,10 +41,10 @@ subfeature_v2:
 topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
+source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
 workflow-type: tm+mt
-source-wordcount: '610'
-ht-degree: 86%
+source-wordcount: '626'
+ht-degree: 82%
 ---
 # 選擇退出個人資訊銷售 (CCPA) {#sale-of-personal-information-ccpa}
 
@@ -70,7 +70,7 @@ GDPR 和 CCPA 都很常使用存取及刪除要求的設定與使用情況。 �
 
 如果您使用自訂收件者表格，您也需要執行此作業。
 
-有關如何建立新欄位的詳細資訊，請參閱[結構描述版本檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"} （Campaign v8檔案）。
+有關如何建立新欄位的詳細資訊，請參閱[結構描述版本檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"} （Campaign v8檔案）。
 
 >[!IMPORTANT]
 >
@@ -88,7 +88,7 @@ GDPR 和 CCPA 都很常使用存取及刪除要求的設定與使用情況。 �
 
    ![](assets/privacy-ccpa-3.png)
 
-1. 按一下探索工具的&#x200B;**[!UICONTROL Configuration]** > **[!UICONTROL Input forms]**&#x200B;節點。 在&#x200B;**[!UICONTROL Recipient (nms)]**&#x200B;的「一般套件」下，新增 `<input>` 元素，並使用步驟 2 中定義的相對路徑作為 xpath 值。 如需識別表單的詳細資訊，請參閱[本節](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"} （Campaign v8檔案）。
+1. 按一下探索工具的&#x200B;**[!UICONTROL Configuration]** > **[!UICONTROL Input forms]**&#x200B;節點。 在&#x200B;**[!UICONTROL Recipient (nms)]**&#x200B;的「一般套件」下，新增 `<input>` 元素，並使用步驟 2 中定義的相對路徑作為 xpath 值。 如需識別表單的詳細資訊，請參閱[本節](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"} （Campaign v8檔案）。
 
    ```
    <input  colspan="2" type="checkbox" xpath="@OPTOUTCCPA"/>
@@ -114,11 +114,11 @@ GDPR 和 CCPA 都很常使用存取及刪除要求的設定與使用情況。 �
 
    ![](assets/privacy-ccpa-5.png)
 
-1. 設定收件者清單以顯示選擇退出欄位。 如要瞭解如何設定清單，請參閱[詳細文件](../../platform/using/adobe-campaign-ui-lists.md#configuring-lists)。
+1. 設定收件者清單以顯示選擇退出欄位。 若要瞭解如何設定清單，請參閱[詳細檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/ui-settings#customize-lists){target="_blank"} （Campaign v8檔案）。
 
    ![](assets/privacy-ccpa-6.png)
 
-1. 您可以按一下該欄位，以依據選擇退出資訊來排序收件者。 您也可以建立篩選，只顯示已選擇退出的收件者。 如需篩選器的詳細資訊，請參閱[Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/audience/create-filters){target=_blank}。
+1. 您可以按一下該欄位，以依據選擇退出資訊來排序收件者。 您也可以建立篩選，只顯示已選擇退出的收件者。 如需篩選器的詳細資訊，請參閱[Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}。
 
 
    ![](assets/privacy-ccpa-7.png)

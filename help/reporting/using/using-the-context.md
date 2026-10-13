@@ -28,9 +28,9 @@ subfeature_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
 workflow-type: tm+mt
-source-wordcount: '498'
+source-wordcount: '512'
 ht-degree: 1%
 ---
 # 在報表中使用內容{#using-the-context}
@@ -55,7 +55,7 @@ ht-degree: 1%
 
 在以下範例中，我們希望圖表只顯示住在法國以及在該年期間進行購買的收件者設定檔。
 
-若要定義此篩選器，請將頁面放入圖表並加以編輯。 按一下&#x200B;**[!UICONTROL Filter data]**&#x200B;連結，並建立符合您要顯示之資料的篩選器。 如需在Adobe Campaign中建立查詢的詳細資訊，請參閱[本節](../../platform/using/adobe-campaign-workspace.md#about-queries-in-campaign)。
+若要定義此篩選器，請將頁面放入圖表並加以編輯。 按一下&#x200B;**[!UICONTROL Filter data]**&#x200B;連結，並建立符合您要顯示之資料的篩選器。 如需在Adobe Campaign中建立查詢的詳細資訊，請參閱[本節](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/query/query-editor){target="_blank"} （Campaign v8檔案）。
 
 ![](assets/s_ncs_advuser_report_wizard_029.png)
 

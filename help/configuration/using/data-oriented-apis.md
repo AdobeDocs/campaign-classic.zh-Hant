@@ -17,9 +17,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
+source-git-commit: 7b7f6d2ad5e5d09880f05c7e99ea8ede770532ab
 workflow-type: tm+mt
-source-wordcount: '1818'
+source-wordcount: '1821'
 ht-degree: 0%
 ---
 # 資料導向 API{#data-oriented-apis}
@@ -54,7 +54,7 @@ XML檔案儲存在資料庫的MEMO型別欄位中。
 
 這可讓您隔離基礎SQL。 查詢語言不取決於基礎引擎：某些函式將會重新對應，可能會產生數個SELECT SQL順序。
 
-如需詳細資訊，請參閱結構描述&#39;xtk:queryDef&#39;[&#128279;](../../configuration/using/web-service-calls.md#example-on-the--executequery--method-of-schema--xtk-querydef-)的&#39;ExecuteQuery&#39;方法上的範例。
+如需詳細資訊，請參閱結構描述&#39;xtk:queryDef&#39;](../../configuration/using/web-service-calls.md#example-on-the--executequery--method-of-schema--xtk-querydef-)的&#39;ExecuteQuery&#39;方法上的[範例。
 
 **ExecuteQuery**&#x200B;方法出現在[ExecuteQuery (xtk:queryDef)](#executequery--xtk-querydef-)中。
 
@@ -147,7 +147,7 @@ Write方法以[Write / WriteCollection (xtk:session)](#write---writecollection--
 * **選取**：建立游標以傳回數筆記錄，如果沒有資料，則傳回空白檔案。
 * **count**：傳回資料計數。
 
-**XPath**&#x200B;語法是用來根據輸入結構描述來尋找資料。 如需XPath的詳細資訊，請參閱[資料結構描述](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/create-schema){target="_blank"} （Campaign v8檔案）。
+**XPath**&#x200B;語法是用來根據輸入結構描述來尋找資料。 如需XPath的詳細資訊，請參閱[資料結構描述](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/schema-structure#reference-with-xpath){target="_blank"} （Campaign v8檔案）。
 
 #### 具有&#39;get&#39;操作的範例 {#example-with-the--get--operation}
 

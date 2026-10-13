@@ -25,19 +25,19 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
 workflow-type: tm+mt
-source-wordcount: '185'
-ht-degree: 11%
+source-wordcount: '224'
+ht-degree: 7%
 ---
 # 使用工作流程建立輪廓清單{#creating-a-profile-list-with-a-workflow}
 
 
 若要根據新的收件者表格建立&#x200B;**[!UICONTROL List]**&#x200B;型別清單，您必須建立將產生清單的目標工作流程。
 
-如需Campaign中清單的詳細資訊，請參閱[本節](../../platform/using/creating-and-managing-lists.md#about-lists-in-adobe-campaign)。
+如需Campaign中清單的詳細資訊，請參閱[本節](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-audiences/create-audiences#create-a-list-of-contacts){target="_blank"} （Campaign v8檔案）。
 
-![](assets/do-not-localize/how-to-video.png) [在影片中探索此功能](../../platform/using/creating-and-managing-lists.md#create-list-in-a-wf-video)
+![](assets/do-not-localize/how-to-video.png) [在影片](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-audiences/create-audiences#create-a-list-wf){target="_blank"}中探索此功能（Campaign v8檔案）
 
 若要在自訂收件者表格中建立目標工作流程及更新收件者，請遵循下列步驟：
 

@@ -32,9 +32,9 @@ subfeature_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
 workflow-type: tm+mt
-source-wordcount: '738'
+source-wordcount: '750'
 ht-degree: 23%
 ---
 # 更新資料{#updating-data}
@@ -47,7 +47,7 @@ ht-degree: 23%
 
 ## 設定自動更新 {#setting-up-an-automatic-update}
 
-可透過工作流程設定自動更新。 有關更多資訊，請參閱[Campaign v8 文件](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/update-data.html?lang=zh-Hant){target="_blank"}。
+可透過工作流程設定自動更新。 有關更多資訊，請參閱[Campaign v8 文件](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/update-data.html){target="_blank"}。
 
 ## 執行大量更新 {#performing-a-mass-update}
 
@@ -118,7 +118,7 @@ ht-degree: 23%
 
    ![](assets/s_ncs_user_export_list_start.png)
 
-   如需如何設定匯出助理的詳細資訊，請參閱[本節](../../platform/using/executing-export-jobs.md)。
+   如需如何設定匯出助理的詳細資訊，請參閱[本節](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/import){target="_blank"} （Campaign v8檔案）。
 
 ## 訂閱服務 {#subscribing-to-a-service}
 

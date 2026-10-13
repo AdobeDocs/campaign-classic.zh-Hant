@@ -28,9 +28,9 @@ subfeature_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
 workflow-type: tm+mt
-source-wordcount: '1241'
+source-wordcount: '1255'
 ht-degree: 0%
 ---
 # 編輯內容{#editing-content}
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->在[此頁面](../../platform/using/adobe-campaign-workspace.md#about-queries-in-campaign)上顯示進階運算式編輯。
+>在[此頁面](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/query/query-editor){target="_blank"}上呈現進階運算式編輯（Campaign v8檔案）。
 
 ![](assets/dce_popup_visibilitycondition.png)
 
@@ -280,4 +280,4 @@ ht-degree: 0%
 
 插入後，個人化區塊名稱會顯示在編輯器中，並以黃色反白顯示。 產生個人化時，會自動調整成適合收件者設定檔。
 
-如需內建個人化區塊以及如何定義自訂個人化區塊的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=zh-Hant){target="_blank"}。
+如需內建個人化區塊以及如何定義自訂個人化區塊的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}。

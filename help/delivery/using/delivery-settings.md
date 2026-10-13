@@ -35,18 +35,18 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
+source-git-commit: 7b7f6d2ad5e5d09880f05c7e99ea8ede770532ab
 workflow-type: tm+mt
-source-wordcount: '714'
+source-wordcount: '718'
 ht-degree: 7%
 ---
 # 傳遞設定 {#about-delivery-settings}
 
-以下設定專屬於Campaign Classic。 如需其他傳遞設定，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html?lang=zh-Hant){target="_blank"}。
+以下設定專屬於Campaign Classic。 如需其他傳遞設定，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html){target="_blank"}。
 
-作為從Campaign v7轉變到v8的一部分，Campaign Classic檔案集已簡化並重新組織。 Campaign v8檔案集中現在提供常見功能。 若要深入瞭解傳遞設定，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign-web/v8/msg/delivery-settings){target=_blank}。
+作為從Campaign v7轉變到v8的一部分，Campaign Classic檔案集已簡化並重新組織。 Campaign v8檔案集中現在提供常見功能。 若要深入瞭解傳遞設定，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/validate/configure-and-send){target=_blank}。
 
-[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hant/docs/campaign-web/v8/msg/delivery-settings){target=_blank}
+[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/validate/configure-and-send){target=_blank}
 
 ## 傳遞分析 {#delivery-analysis}
 
@@ -103,7 +103,7 @@ ht-degree: 7%
 
   >[!IMPORTANT]
   >
-  >針對託管或混合式安裝，如果您已升級至[Enhanced MTA](sending-with-enhanced-mta.md)，則只有在設為&#x200B;**3.5天或更短時間時，才會使用Campaign電子郵件傳遞中的&#x200B;**&#x200B;[!UICONTROL Delivery duration]&#x200B;**設定**。 如果您定義的值超過3.5天，則不會考慮該值。
+  >針對託管或混合式安裝，如果您已升級至[Enhanced MTA](sending-with-enhanced-mta.md)，則只有在設為&#x200B;**3.5天或更短時間時，才會使用Campaign電子郵件傳遞中的&#x200B;**[!UICONTROL Delivery duration]**設定**。 如果您定義的值超過3.5天，則不會考慮該值。
 
 * **資源效度限制**： **[!UICONTROL Validity limit]**&#x200B;欄位是用於上傳的資源，主要用於映象頁面和影像。 本頁上的資源在限定時間內有效（以節省磁碟空間）。
 
