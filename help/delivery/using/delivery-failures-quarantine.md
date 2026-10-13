@@ -41,10 +41,10 @@ topic_v2:
     internal-label: Troubleshooting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
 workflow-type: tm+mt
-source-wordcount: '1695'
-ht-degree: 3%
+source-wordcount: '1721'
+ht-degree: 2%
 ---
 # 傳遞失敗與隔離管理 {#delivery-failures-quarantine}
 
@@ -105,7 +105,7 @@ Adobe Campaign會篩選此郵件以刪除變數內容（例如ID、日期、電�
 
 >[!NOTE]
 >
->如果ISP發生中斷，透過Campaign傳送的電子郵件將會錯誤地標示為跳出。 若要修正此問題，您需要更新退回資格。 如需詳細資訊，請參閱[此頁面](update-bounce-qualification.md)。
+>如果ISP發生中斷，透過Campaign傳送的電子郵件將會錯誤地標示為跳出。 若要修正此問題，您需要更新退回資格。 如需詳細資訊，請參閱[此頁面](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} （Campaign v8檔案）。
 
 ### 電子郵件管理規則設定 {#email-management-rules}
 
@@ -241,11 +241,11 @@ SMS隔離機制會因使用的聯結器而異：
 
 * [瞭解傳遞失敗](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} （Campaign v8檔案）
 * [隔離管理](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} （Campaign v8檔案）
-* [傳遞最佳實務](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"} （Campaign v8檔案）
+* [傳遞最佳實務](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"} （Campaign v8檔案）
 * [傳遞狀態](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/monitor/delivery-statuses){target="_blank"} （Campaign v8檔案）
 * [資料庫清理工作流程](../../production/using/database-cleanup-workflow.md) （v7混合/內部部署）
 * [設定傳遞重試](communication-channels.md) （v7混合/內部部署）
-* [更新退信資格](update-bounce-qualification.md) （v7混合/內部部署）
+* [更新退回資格](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} （Campaign v8檔案） （v7混合/內部部署）
 * [電子郵件傳遞能力設定](../../installation/using/email-deliverability.md) （v7混合式/內部部署）
 * [正在部署執行個體](../../installation/using/deploying-an-instance.md#managing-bounced-emails) （v7混合/內部部署）
 

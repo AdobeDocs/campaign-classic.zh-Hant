@@ -35,9 +35,9 @@ topic_v2:
     internal-label: Troubleshooting
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
 workflow-type: tm+mt
-source-wordcount: '534'
+source-wordcount: '546'
 ht-degree: 2%
 ---
 # 匯入和匯出最佳實務 {#import-export-best-practices}
@@ -56,7 +56,7 @@ ht-degree: 2%
 
 請勿假設傳入的資料一致且正確，或IT部門或Adobe Campaign主管會處理。 在專案期間，請記得要清除資料。 匯入資料時，請進行重複資料刪除、調解及維持一致性。
 
-在[範例：匯入資料的工作流程範本](../../platform/using/creating-import-export-templates.md)區段中，提供了為匯入資料而設計的一般工作流程範本範例。
+在[範例：匯入資料的工作流程範本](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/data/import){target="_blank"} （Campaign v8檔案）區段中，提供了為匯入資料而設計的一般工作流程範本範例。
 
 ## 使用一般檔案格式 {#using-flat-file-formats}
 

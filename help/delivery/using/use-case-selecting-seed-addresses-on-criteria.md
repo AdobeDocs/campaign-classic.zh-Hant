@@ -30,7 +30,7 @@ subfeature_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
+source-git-commit: 7b7f6d2ad5e5d09880f05c7e99ea8ede770532ab
 workflow-type: tm+mt
 source-wordcount: '866'
 ht-degree: 3%
@@ -65,7 +65,7 @@ ht-degree: 3%
 
 ### 擴充資料架構 {#extending-the-data-schema}
 
-如需結構描述擴充功能的詳細資訊，請參閱[本節](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/create-schema){target="_blank"} （Campaign v8檔案）。
+如需結構描述擴充功能的詳細資訊，請參閱[本節](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/extend-schema){target="_blank"} （Campaign v8檔案）。
 
 1. 在&#x200B;**[!UICONTROL Administration > Configuration > Data schemas]**&#x200B;節點中，按一下&#x200B;**[!UICONTROL New]**&#x200B;圖示。
 1. 在&#x200B;**[!UICONTROL Creation of a data schema]**&#x200B;視窗中，選取&#x200B;**[!UICONTROL Extension of a schema]**&#x200B;選項並按一下&#x200B;**[!UICONTROL Next]**。

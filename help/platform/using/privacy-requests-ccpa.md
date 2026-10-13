@@ -41,10 +41,10 @@ subfeature_v2:
 topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
+source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
 workflow-type: tm+mt
-source-wordcount: '610'
-ht-degree: 86%
+source-wordcount: '626'
+ht-degree: 82%
 ---
 # 選擇退出個人資訊銷售 (CCPA) {#sale-of-personal-information-ccpa}
 
@@ -114,7 +114,7 @@ GDPR 和 CCPA 都很常使用存取及刪除要求的設定與使用情況。 �
 
    ![](assets/privacy-ccpa-5.png)
 
-1. 設定收件者清單以顯示選擇退出欄位。 如要瞭解如何設定清單，請參閱[詳細文件](../../platform/using/adobe-campaign-ui-lists.md#configuring-lists)。
+1. 設定收件者清單以顯示選擇退出欄位。 若要瞭解如何設定清單，請參閱[詳細檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/config/settings/ui-settings#customize-lists){target="_blank"} （Campaign v8檔案）。
 
    ![](assets/privacy-ccpa-6.png)
 

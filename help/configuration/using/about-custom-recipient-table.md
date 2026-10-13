@@ -34,9 +34,9 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
 workflow-type: tm+mt
-source-wordcount: '683'
+source-wordcount: '698'
 ht-degree: 2%
 ---
 # 使用自訂收件者表格{#about-custom-recipient-table}
@@ -84,7 +84,7 @@ ht-degree: 2%
 
 * 您無法在清單中手動新增設定檔。
 
-  因此，如果沒有其他組態，[此區段](../../platform/using/creating-and-managing-lists.md)中詳述的程式將不適用。
+  因此，若無其他設定，[此區段](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/audience/create-audiences/create-audiences){target="_blank"} （Campaign v8檔案）中詳述的程式將不適用。
 
   >[!NOTE]
   >

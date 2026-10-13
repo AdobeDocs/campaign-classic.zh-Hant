@@ -41,10 +41,10 @@ topic_v2:
     internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 75d65377f93a40be104f7ec817e6a7609cccaf93
+source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
 workflow-type: tm+mt
-source-wordcount: '2702'
-ht-degree: 98%
+source-wordcount: '2716'
+ht-degree: 97%
 ---
 # 2021 版本{#release-2021}
 
@@ -162,7 +162,7 @@ _2021 年 6 月 5 日_
 <li><p>支援 LINE 合作夥伴註冊 API</p></li>
 <li><p>支援在出現 LINE 伺服器端錯誤或網路逾時時重試傳送訊息</p></li>
 </ul>
-<p>如需詳細資訊，請參閱<a href="../../delivery/using/line-channel.md">詳細文件</a>。</p>
+<p>如需詳細資訊，請參閱<a href="https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/other-channels/line" target="_blank">詳細檔案</a> （Campaign v8檔案）。</p>
 </td> 
 </tr> 
 </tbody> 

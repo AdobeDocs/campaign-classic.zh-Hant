@@ -36,10 +36,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
 workflow-type: tm+mt
-source-wordcount: '451'
-ht-degree: 29%
+source-wordcount: '464'
+ht-degree: 27%
 ---
 # 啟動 Adobe Campaign {#launching-adobe-campaign}
 
@@ -82,7 +82,7 @@ Campaign 使用者透過 Adobe 身分管理系統 (IMS)，使用其 Adobe ID 連
 
 1. 按一下 **[!UICONTROL LOG IN]** 確認。
 
-您現在可以存取 [Adobe Campaign 工作區](../../platform/using/adobe-campaign-workspace.md)。
+您現在可以存取[Adobe Campaign工作區](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/new/campaign-ui){target="_blank"} （Campaign v8檔案）。
 
 ## 設定連線 {#setting-up-connections}
 

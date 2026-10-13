@@ -32,10 +32,10 @@ subfeature_v2:
     internal-label: Access management
   - id: e519a22f-a06a-42fc-9d09-d78a3ab2c434
     internal-label: Monitoring guidelines
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
 workflow-type: tm+mt
-source-wordcount: '184'
-ht-degree: 36%
+source-wordcount: '203'
+ht-degree: 31%
 ---
 # 監視作業執行 {#monitoring-job-execution}
 
@@ -46,7 +46,7 @@ ht-degree: 36%
 ![](assets/s_ncs_user_export_list_and_details.png)
 
 * **[!UICONTROL Journal]**&#x200B;索引標籤可讓您檢視有關執行的記錄訊息。
-* **[!UICONTROL Rejects]**&#x200B;索引標籤包含拒絕的記錄。 請參閱[本節](../../platform/using/executing-import-jobs.md#behavior-in-the-event-of-an-error)。
+* **[!UICONTROL Rejects]**&#x200B;索引標籤包含拒絕的記錄。 請參閱[本節](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/data/import#behavior-in-the-event-of-an-error){target="_blank"} （Campaign v8檔案）。
 
 在&#x200B;**[!UICONTROL General]**&#x200B;索引標籤中，**[!UICONTROL Status]**&#x200B;欄位表示工作的目前狀態。
 

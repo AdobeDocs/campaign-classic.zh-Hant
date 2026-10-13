@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
+source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
 workflow-type: tm+mt
-source-wordcount: '674'
-ht-degree: 79%
+source-wordcount: '707'
+ht-degree: 54%
 ---
 # Campaign Classic v7 文件 {#campaign-classic-documentation}
 
@@ -104,7 +104,7 @@ Android Firebase Cloud Messaging (FCM) 服務的一些重要變更將於 2024 �
     <td>
       <img src="assets/do-not-localize/icon-start.svg" width="35px">
     <br/>
-      <strong>開始使用</strong><br/><a href="platform/using/adobe-campaign-workspace.md">使用者介面</a> - <a href="platform/using/launching-adobe-campaign.md">連線至行銷活動</a> - <a href="platform/using/get-started-data-import-export.md">匯入與匯出資料</a> - <a href="platform/using/access-management.md">權限</a>
+      <strong>開始使用</strong><br/><a href="https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/new/campaign-ui" target="_blank">使用者介面</a> （Campaign v8檔案） - <a href="platform/using/launching-adobe-campaign.md">連線至Campaign</a> - <a href="https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/data/import" target="_blank">匯入及匯出資料</a> （Campaign v8檔案） - <a href="platform/using/access-management.md">許可權</a>
     </td>
     <td>
       <img src="assets/do-not-localize/icon-experience.svg" width="35px">
@@ -114,14 +114,14 @@ Android Firebase Cloud Messaging (FCM) 服務的一些重要變更將於 2024 �
     <td>
       <img src="assets/do-not-localize/icon-send.svg" width="35px">
     <br/>
-      <strong>傳送訊息</strong><br/><a href="delivery/using/communication-channels.md">通訊管道</a> - <a href="delivery/using/steps-about-delivery-creation-steps.md#sending-a-proof">傳送校樣</a> - <a href="delivery/using/get-started-a-b-testing.md">A/B 測試</a> - <a href="https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/analytics/tracking/tracking" target="_blank">訊息追蹤</a> - <a href="delivery/using/about-deliverability.md">傳遞能力</a> - <a href="message-center/using/about-transactional-messaging.md">交易型訊息傳遞</a>
+      <strong>傳送訊息</strong><br/><a href="delivery/using/communication-channels.md">通訊通道</a> - <a href="https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/create-message" target="_blank">傳送校樣</a> （Campaign v8檔案） - <a href="delivery/using/get-started-a-b-testing.md">A/B測試</a> - <a href="https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/analytics/tracking/tracking" target="_blank">訊息追蹤</a> - <a href="delivery/using/about-deliverability.md">傳遞能力</a> - <a href="message-center/using/about-transactional-messaging.md">異動訊息</a>
     </td>
   </tr>
   <tr style="border: 0;">
     <td>
       <img src="assets/do-not-localize/icon_profile-audience.svg" width="35px">
       <br/>
-      <strong>輪廓與客群</strong><br/> <a href="platform/using/creating-and-managing-lists.md">建立清單</a> - <a href="delivery/using/about-services-and-subscriptions.md">服務與訂閱</a> - <a href="platform/using/privacy-management.md">隱私權與同意</a>
+      <strong>設定檔與對象</strong><br/> <a href="https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/audience/create-audiences/create-audiences" target="_blank">建立清單</a> （Campaign v8檔案） - <a href="delivery/using/about-services-and-subscriptions.md">服務與訂閱</a> - <a href="platform/using/privacy-management.md">隱私權與同意</a>
     </td>
     <td>
       <img src="assets/do-not-localize/icon-configure.svg" width="35px">

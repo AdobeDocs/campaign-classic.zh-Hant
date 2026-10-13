@@ -43,10 +43,10 @@ topic_v2:
     internal-label: Implementation
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
 workflow-type: tm+mt
-source-wordcount: '907'
-ht-degree: 80%
+source-wordcount: '919'
+ht-degree: 77%
 ---
 # 隱私權管理 {#privacy-management}
 
@@ -97,7 +97,7 @@ Adobe Campaign 的功能可協助您遵循下列法規：
 
 * 「**被遺忘的權利**」(刪除要求) 也稱為「資料抹除」，其可賦予資料主體權利，讓資料庫控制人員得以清除其個人資料、停止進一步散發資料，並可能讓第三方停止處理資料。
 
-如要了解如何建立&#x200B;**存取**&#x200B;及&#x200B;**刪除**&#x200B;要求，以及 Adobe Campaign 如何處理這些要求，請參閱[實施步驟](../../platform/using/privacy-requests.md)。
+若要瞭解如何建立&#x200B;**存取**&#x200B;和&#x200B;**刪除**&#x200B;要求，以及Adobe Campaign如何處理這些要求，請參閱[實作步驟](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/privacy/privacy){target="_blank"} （Campaign v8檔案）。
 
 <!--
 Tutorials on Privacy management in Campaign Standard are also available [here](https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/privacy/privacy-overview.html?lang=zh-Hant).
@@ -123,7 +123,7 @@ Adobe Campaign 自始至終都採用有助於管理同意部分的功能。 透�
 
 有關「同意管理」的詳細資訊，請參閱[詳細說明文件](../../delivery/using/managing-subscriptions.md)。
 
-除了 Adobe Campaign 提供的同意管理工具以外，您還可以追蹤消費者是否選擇退出個人資訊銷售。 請參閱[本節](../../platform/using/privacy-requests.md#sale-of-personal-information-ccpa)。
+除了 Adobe Campaign 提供的同意管理工具以外，您還可以追蹤消費者是否選擇退出個人資訊銷售。 請參閱[本節](privacy-requests-ccpa.md)。
 
 ### 資料保留 {#data-retention}
 

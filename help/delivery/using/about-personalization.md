@@ -36,7 +36,7 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
 workflow-type: tm+mt
 source-wordcount: '391'
 ht-degree: 2%
@@ -72,7 +72,7 @@ Personalization可協助您讓訊息更具相關性和吸引力。 您可以使�
 
 請參閱這些頁面，瞭解Campaign v8檔案&#x200B;**中的個人化優惠券、PDF檔案和表情符號自訂**：
 
-* [個人化優惠券](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/ppersonalized-coupons.html){target="_blank"}：瞭解如何在電子郵件傳遞中建立並指派個人化或匿名優惠券。
+* [個人化優惠券](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/ppersonalized-coupons.html?lang=zh-Hant){target="_blank"}：瞭解如何在電子郵件傳遞中建立並指派個人化或匿名優惠券。
 * [產生個人化PDF檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/generating-personalized-pdf-documents.html?lang=zh-Hant){target="_blank"}：瞭解如何為每個收件者產生具有個人化內容的PDF附件。
 * [自訂表情符號清單](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/customizing-emoticon-list.html?lang=zh-Hant){target="_blank"}：瞭解如何新增和管理表情符號，以強化電子郵件訊息。
 
@@ -88,16 +88,16 @@ Adobe Campaign lets you mass deliver personalized electronic messages to a targe
 Before starting sending emails:
 
 * Make sure recipient profiles contain at least an email address.
-* Learn more about the Adobe Campaign [Delivery best practices](delivery-best-practices.md).
+* Learn more about the Adobe Campaign [Delivery best practices](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/delivery-best-practices){target="_blank"} (Campaign v8 documentation).
 * Read out these sections to learn more about Deliverability: [Deliverability management in Campaign](about-deliverability.md) and [Deliverability best practices guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hant).
 
 The key steps to send an email are as follows:
 
-* [Create an email delivery](creating-an-email-delivery.md)
-* [Define the target population](steps-defining-the-target-population.md)
-* [Define the email content](defining-the-email-content.md)
-* [Send the email](sending-messages.md)
+* [Create an email delivery](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/emails/email){target="_blank"} (Campaign v8 documentation)
+* [Define the target population](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/create-message){target="_blank"} (Campaign v8 documentation)
+* [Define the email content](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/emails/defining-the-email-content){target="_blank"} (Campaign v8 documentation)
+* [Send the email](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/emails/send){target="_blank"} (Campaign v8 documentation)
 * [Monitor the delivery](about-delivery-monitoring.md)
 
-The sections below provide information that is specific to the email channel. For global information on how to create a delivery, refer to [this section](steps-about-delivery-creation-steps.md).
+The sections below provide information that is specific to the email channel. For global information on how to create a delivery, refer to [this section](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/create-message){target="_blank"} (Campaign v8 documentation).
 -->

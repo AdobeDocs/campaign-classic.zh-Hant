@@ -29,9 +29,9 @@ subfeature_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
+source-git-commit: 7b7f6d2ad5e5d09880f05c7e99ea8ede770532ab
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '458'
 ht-degree: 2%
 ---
 # 稽核軌跡{#audit-trail}
@@ -55,7 +55,7 @@ ht-degree: 2%
 
 * **結構描述稽核軌跡**：可讓您探索對結構描述所做的變更，以及識別進行這些修改的人和發生時間。
 
-  如需結構描述的詳細資訊，請參閱此[頁面](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/create-schema){target="_blank"} （Campaign v8檔案）。
+  如需結構描述的詳細資訊，請參閱此[頁面](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"} （Campaign v8檔案）。
 
 * **工作流程稽核軌跡**&#x200B;會追蹤與工作流程相關的所有動作，包括：
 

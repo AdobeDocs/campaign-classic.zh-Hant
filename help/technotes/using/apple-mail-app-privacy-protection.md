@@ -41,9 +41,9 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 586c6688e2abd3b6e55389bd1fa219d2c596d07d
+source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
 workflow-type: tm+mt
-source-wordcount: '2138'
+source-wordcount: '2150'
 ht-degree: 0%
 ---
 # Apple郵件應用程式中的郵件隱私保護
@@ -369,7 +369,7 @@ Apple的新功能是未來產業在電子郵件隱私保護方面的面貌。 �
 
 #### 如何保留追蹤資料？
 
-若要保留追蹤資料，您必須將其從Adobe Campaign匯出至資訊系統。 [閱讀更多](../../platform/using/get-started-data-import-export.md)。
+若要保留追蹤資料，您必須將其從Adobe Campaign匯出至資訊系統。 [瞭解詳情](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/data/import){target="_blank"} （Campaign v8檔案）。
 
 >[!IMPORTANT]
 >

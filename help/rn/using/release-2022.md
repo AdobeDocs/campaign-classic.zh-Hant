@@ -36,10 +36,10 @@ topic_v2:
     internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
+source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
 workflow-type: tm+mt
-source-wordcount: '2185'
-ht-degree: 98%
+source-wordcount: '2202'
+ht-degree: 97%
 ---
 # 2022 版本{#release-2022}
 
@@ -60,7 +60,7 @@ _2022 年 7 月 1 日_
 <tbody> 
 <tr> 
 <td> <p>在 iOS15 ，Apple 增加了具時效性通知的概念，當通知被視為具時效性，需要即時聯絡使用者時，可以讓應用程式開發人員繞過專注模式。</p>
-<p>了解如何在<a href="../../delivery/using/create-notifications-ios.md">詳細文件</a>建立敏感性通知。</p>
+<p>在<a href="https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/push/rich-push/rich-push-ios" target="_blank">詳細檔案</a> （Campaign v8檔案）中瞭解如何建立敏感性通知。</p>
 </td> 
 </tr> 
 </tbody> 

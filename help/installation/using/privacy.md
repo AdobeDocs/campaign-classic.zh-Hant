@@ -41,9 +41,9 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
+source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
 workflow-type: tm+mt
-source-wordcount: '912'
+source-wordcount: '926'
 ht-degree: 3%
 ---
 # 個人化與隱私 {#privacy}
@@ -60,7 +60,7 @@ ht-degree: 3%
 
 ### 建議
 
-若要驗證並確保您未使用上文，請透過[Campaign一般查詢編輯器](../../platform/using/adobe-campaign-workspace.md#about-queries-in-campaign)對追蹤URL表格執行查詢，或在查詢活動中建立具有篩選條件的工作流程。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=zh-Hant){target="_blank"}。
+若要驗證並確保您未使用上文，請透過[Campaign一般查詢編輯器](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/data/query/query-editor){target="_blank"} （Campaign v8檔案）對追蹤URL表格執行查詢，或在查詢活動中建立具有篩選條件的工作流程。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=zh-Hant){target="_blank"}。
 
 範例：
 

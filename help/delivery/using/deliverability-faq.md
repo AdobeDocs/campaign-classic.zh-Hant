@@ -41,14 +41,18 @@ topic_v2:
     internal-label: Troubleshooting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
 workflow-type: tm+mt
-source-wordcount: '660'
+source-wordcount: '598'
 ht-degree: 2%
 ---
 # 傳遞能力疑難排解{#deliverability-faq}
 
 您是否遇到傳遞能力問題？ 您可以在這裡找到解決方案。
+
+作為從Campaign v7轉變到v8的一部分，Campaign Classic檔案集已簡化並重新組織。 Campaign v8檔案集中現在提供常見功能。 若要瞭解隔離、封鎖清單以及如何從中移除地址，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/monitor/quarantines){target=_blank}。
+
+[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/monitor/quarantines){target=_blank}
 
 ## MX規則錯誤 {#mx-rule-error}
 
@@ -75,29 +79,7 @@ Adobe Campaign中針對每小時可傳送的電子郵件數量進行設定。 �
 
 如果問題仍然存在，請連絡商業或傳遞服務，[Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
 
-## 封鎖清單與隔離 {#denylist-versus-quarantine}
-
-* **封鎖清單上的電子郵件地址與隔離的電子郵件地址有何不同？**
-
-  * 狀態&#x200B;**[!UICONTROL Denylisted]**&#x200B;是回饋回圈（當某人回報訊息為垃圾訊息時）的結果。
-
-  * 狀態&#x200B;**[!UICONTROL Quarantined]**&#x200B;是軟退信或硬退信的結果。
-
-  如需詳細資訊，請參閱[本節](delivery-failures-quarantine.md#quarantine-vs-denylist)。
-
-* **不同的隔離錯誤原因代表什麼意思？**
-
-  可能的原因有10個：未定義、使用者不明、網域無效、加入封鎖清單、已拒絕、已忽略錯誤、無法連線、帳戶已停用、信箱已滿、未連線。
-
-  如需詳細資訊，請參閱[瞭解隔離管理](delivery-failures-quarantine.md)。
-
-## 從封鎖清單移除 {#remove-from-denylist}
-
-* **我的其中一個收件者被誤新增至封鎖清單。 如何將他們從封鎖清單中移除，以便我可以再次向他們傳送訊息？**
-
-  * 移至&#x200B;**[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]**。
-  * 在對應的記錄的詳細資訊中，將&#x200B;**[!UICONTROL Status]**&#x200B;欄位的值設定為&#x200B;**[!UICONTROL Valid]**。
-  * 儲存記錄。
+## 從封鎖清單移除IP {#remove-from-denylist}
 
 * **如何找出我的IP是否位於封鎖清單中？ 如何從封鎖清單移除我的IP？**
 

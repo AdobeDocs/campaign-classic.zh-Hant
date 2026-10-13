@@ -23,9 +23,9 @@ subfeature_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 617db6f51887118c965b8938b2b9f14335293875
+source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
 workflow-type: tm+mt
-source-wordcount: '1119'
+source-wordcount: '1137'
 ht-degree: 1%
 ---
 # 異動訊息傳送架構 {#transactional-messaging-architecture}
@@ -201,7 +201,7 @@ You also have to enable the unitary mode on your offer spaces. For more on this,
 
 * 在兩個執行個體上安裝&#x200B;**[!UICONTROL LINE Connect]**&#x200B;套件。
 * 在行銷執行個體上安裝&#x200B;**[!UICONTROL Transactional message control]**&#x200B;套件，在執行執行個體上安裝&#x200B;**[!UICONTROL Transactional message execution]**&#x200B;套件。
-* 在兩個執行個體上建立具有相同命名的LINE **外部帳戶**&#x200B;和&#x200B;**服務**，以便進行同步處理。 如需如何建立LINE外部帳戶和服務的詳細資訊，請參閱[本節](../../delivery/using/line-channel.md#setting-up-line-channel)。
+* 在兩個執行個體上建立具有相同命名的LINE **外部帳戶**&#x200B;和&#x200B;**服務**，以便進行同步處理。 如需如何建立LINE外部帳戶和服務的詳細資訊，請參閱[本節](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/other-channels/line#setting-up-line-channel){target="_blank"} （Campaign v8檔案）。
 
 然後，從&#x200B;**[!UICONTROL Explorer]**，在&#x200B;**[!UICONTROL Platform]** > **[!UICONTROL External account]**&#x200B;中，您需要在兩個執行個體上設定不同的外部帳戶：
 

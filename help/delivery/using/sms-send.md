@@ -39,12 +39,16 @@ topic_v2:
     internal-label: Troubleshooting
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
 workflow-type: tm+mt
-source-wordcount: '906'
+source-wordcount: '907'
 ht-degree: 2%
 ---
 # 其他設定{#sms-properties}
+
+作為從Campaign v7轉變到v8的一部分，Campaign Classic檔案集已簡化並重新組織。 Campaign v8檔案集中現在提供常見功能。 若要深入瞭解簡訊傳送設定，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/sms/config-sms/sms-delivery-settings){target=_blank}。
+
+[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/sms/config-sms/sms-delivery-settings){target=_blank}
 
 <!--
 ## Send SMS messages {#sending-sms-messages}
@@ -53,7 +57,7 @@ To approve your message and send it to the recipients of the delivery being crea
 
 The detailed process when validating and sending a delivery is presented in the sections below:
 
-* [Validate the delivery](steps-validating-the-delivery.md)
+* [Validate the delivery](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/validate/delivery-analysis){target="_blank"} (Campaign v8 documentation)
 * [Send the delivery](steps-sending-the-delivery.md)
 -->
 
@@ -73,7 +77,6 @@ The detailed process when validating and sending a delivery is presented in the 
   >
   >檢查您所在國家/地區有關編輯寄件者名稱的法律。 您也應洽詢您的操作員，瞭解他們是否提供此功能。
 
-* **傳輸模式**：由SMS傳送訊息。
 * **優先順序**：指派給訊息的重要等級。 預設會選取&#x200B;**[!UICONTROL Normal]**&#x200B;優先順序。 詢問您的服務提供者有關以&#x200B;**[!UICONTROL High]**&#x200B;優先順序傳送的SMS費用。
 * **應用程式型別**：選擇您要指派給SMS傳遞的應用程式。 預設會選取&#x200B;**[!UICONTROL Direct Marketing]**&#x200B;選項，並且是最常用的選項。
 
@@ -82,12 +85,6 @@ The detailed process when validating and sending a delivery is presented in the 
 ![](assets/s_user_mobile_sms_adv_netsize.png)
 
 * **單一訊息使用數個SMS**：這可讓您透過數個SMS訊息傳送長度超過160個字元的訊息。
-
-**SMPP聯結器專屬的引數**
-
-![](assets/s_user_mobile_sms_adv_smpp.png)
-
-* **每則訊息的SMS數目上限**：此選項可讓您設定用於傳送訊息的SMS數目。 如果數字設為0，您可以使用簡訊傳送訊息。 舉例來說，如果SMS數量設為1或2，而訊息超過此臨界值，則不會傳送。
 
 <!--
 ## Monitor and track SMS {#monitoring-and-tracking-sms-deliveries}

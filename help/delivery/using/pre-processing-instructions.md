@@ -26,9 +26,9 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
 workflow-type: tm+mt
-source-wordcount: '655'
+source-wordcount: '651'
 ht-degree: 1%
 ---
 # 前置處理指示 {#pre-processing-instructions}
@@ -44,6 +44,10 @@ ht-degree: 1%
 * **[!DNL foreach]**：重複載入為自訂物件的陣列。 [了解更多](#foreach)
 
 可直接從傳送助理測試這些變數。 註解會套用於內容預覽，以及當您按一下追蹤按鈕以檢視URL清單時。
+
+作為從Campaign v7轉變到v8的一部分，Campaign Classic檔案集已簡化並重新組織。 Campaign v8檔案集中現在提供常見功能。 若要進一步瞭解前置處理指示，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/analytics/tracking/personalized-links#pre-processing-instructions){target=_blank}。
+
+[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/analytics/tracking/personalized-links#pre-processing-instructions){target=_blank}
 
 ## [!DNL include] {#include}
 
@@ -150,19 +154,6 @@ ht-degree: 1%
 ## [!DNL foreach] {#foreach}
 
 此指示允許載入傳遞中的物件陣列上的反複專案追蹤與物件相關的個別連結。
-
-語法：
-
-```
-<%@ foreach object="myObject" xpath="myLink" index="3" item="myItem" %> <%@ end %>
-```
-
-其中：
-
-* **[!DNL object]**：要開始的物件名稱，通常是額外的指令碼物件，但可以是傳遞。
-* **[!DNL xpath]** （選用）：要回圈的集合的xpath。 預設值為「。」，表示物件是要重複播放的陣列。
-* **[!DNL index]** （選用）：如果xpath不是&quot;。&quot; 而且物件本身是一個陣列，物件的專案索引（從0開始）。
-* **[!DNL item]** （選用）：可在foreach回圈內使用&lt;%@值存取的新物件名稱。 在架構中具有連結名稱的預設值。
 
 範例：
 

@@ -30,9 +30,9 @@ subfeature_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '469'
 ht-degree: 5%
 ---
 # 使用實例：設定欄位替代{#use-case-configuring-the-field-substitution}
@@ -85,7 +85,7 @@ ht-degree: 5%
 
    ![](assets/dlv_seeds_usecase_25.png)
 
-1. 設定您的傳遞清單和種子地址。 請參閱[識別目標母體](steps-defining-the-target-population.md)。
+1. 設定您的傳遞清單和種子地址。 請參閱[識別目標母體](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/create-message){target="_blank"} （Campaign v8檔案）。
 
    在此範例中，使用者會選取&#x200B;**最喜愛的文學型別**&#x200B;為Sci-Fi的使用者作為主要目標母體。
 

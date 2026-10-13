@@ -26,9 +26,9 @@ topic_v2:
     internal-label: Optimization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
 workflow-type: tm+mt
-source-wordcount: '1369'
+source-wordcount: '1413'
 ht-degree: 7%
 ---
 # 安裝Campaign Classic內建套件{#installing-campaign-standard-packages}
@@ -133,7 +133,7 @@ ht-degree: 7%
   </tr> 
   <tr> 
    <td> LINE頻道<br /> </td> 
-   <td> 透過Adobe Campaign使用LINE頻道傳送傳遞。 選填。 強制異動訊息（訊息中心封裝）。 <a href="../../delivery/using/line-channel.md">深入瞭解</a> <br /> </td> 
+   <td> 透過Adobe Campaign使用LINE頻道傳送傳遞。 選填。 強制異動訊息（訊息中心封裝）。 <a href="https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/other-channels/line" target="_blank">深入瞭解</a> （Campaign v8檔案） <br /> </td> 
    <td> 全部<br /> </td> 
   </tr> 
   <tr> 
@@ -143,7 +143,7 @@ ht-degree: 7%
   </tr> 
   <tr> 
    <td> 行動裝置頻道（簡訊） <br /> </td> 
-   <td> 透過Adobe Campaign使用行動/簡訊通道傳送傳遞。 選填。 <a href="../../delivery/using/sms-channel.md">深入瞭解</a> <br /> </td> 
+   <td> 透過Adobe Campaign使用行動/簡訊通道傳送傳遞。 選填。 <a href="https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/sms/sms" target="_blank">深入瞭解</a> （Campaign v8檔案） <br /> </td> 
    <td> 全部<br /> </td> 
   </tr> 
    <tr> 
@@ -283,7 +283,7 @@ ht-degree: 7%
 
 * 在行銷和MID執行個體上安裝[!DNL LINE]套件
 
-* 透過變更傳遞模式，在mkt執行個體上設定[!DNL LINE]外部帳戶以指向mid執行個體。 [了解更多](../../delivery/using/line-channel.md#configure-line-external)
+* 透過變更傳遞模式，在mkt執行個體上設定[!DNL LINE]外部帳戶以指向mid執行個體。 [深入瞭解](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/other-channels/line#configure-line-external){target="_blank"} （Campaign v8檔案）
 
 * 在MID執行個體的外部帳戶中設定[!DNL LINE]認證。
 

@@ -22,9 +22,9 @@ subfeature_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
 workflow-type: tm+mt
-source-wordcount: '860'
+source-wordcount: '872'
 ht-degree: 2%
 ---
 # 發佈、追蹤及使用收集的資料{#publish-track-and-use-collected-data}
@@ -125,7 +125,7 @@ ht-degree: 2%
 
    >[!NOTE]
    >
-   >[此區段](../../platform/using/about-generic-imports-exports.md)中詳細說明了資料匯出及其設定的階段。
+   >[本節](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/data/import){target="_blank"} （Campaign v8檔案）中詳細介紹了資料匯出及其設定的階段。
 
 ## 使用收集的資料 {#using-the-collected-data}
 

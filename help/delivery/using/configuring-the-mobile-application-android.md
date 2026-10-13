@@ -52,9 +52,9 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
+source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
 workflow-type: tm+mt
-source-wordcount: '946'
+source-wordcount: '963'
 ht-degree: 11%
 ---
 # 針對 Android 的設定步驟
@@ -68,7 +68,7 @@ ht-degree: 11%
 1. [在Campaign中建立行動應用程式](#creating-android-app)
 1. [使用其他資料擴充應用程式綱要](#extend-subscription-schema)
 
-然後，您就可以[建立Android豐富型通知](create-notifications-android.md)。
+然後，您就可以[建立Android豐富型通知](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/push/rich-push/rich-push-android){target="_blank"} （Campaign v8檔案）。
 
 >[!IMPORTANT]
 >
@@ -135,7 +135,7 @@ Android提供兩種聯結器：
 
    ![](assets/nmac_android.png)
 
-1. 確定透過SDK在Adobe Campaign和應用程式程式碼中定義了相同的&#x200B;**[!UICONTROL Integration key]**。<!--For more on this, refer to [this section](integrating-campaign-sdk-into-the-mobile-application.md).-->
+1. 確定透過SDK在Adobe Campaign和應用程式程式碼中定義了相同的&#x200B;**[!UICONTROL Integration key]**。<!--For more on this, refer to [this section](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/config/settings/push-config){target="_blank"} (Campaign v8 documentation).-->
 
    >[!NOTE]
    >
@@ -201,4 +201,4 @@ Android提供兩種聯結器：
 
    >[!CAUTION]
    >
-   >確定&#x200B;**[!UICONTROL Subscription parameters]**&#x200B;標籤中的設定名稱與行動應用程式程式碼中的設定名稱相同。<!--Refer to [this section](integrating-campaign-sdk-into-the-mobile-application.md).-->
+   >確定&#x200B;**[!UICONTROL Subscription parameters]**&#x200B;標籤中的設定名稱與行動應用程式程式碼中的設定名稱相同。<!--Refer to [this section](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/config/settings/push-config){target="_blank"} (Campaign v8 documentation).-->
