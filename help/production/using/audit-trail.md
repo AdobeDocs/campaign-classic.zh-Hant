@@ -38,7 +38,7 @@ ht-degree: 2%
 
 >[!INFO]
 >
->在[Adobe Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/audit-trail)中進一步瞭解稽核軌跡功能。
+>在[Adobe Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/analytics/audit-trail)中進一步瞭解稽核軌跡功能。
 
 在Adobe Campaign中，**[!UICONTROL Audit trail]**&#x200B;可讓您存取執行個體中所做變更的完整歷史記錄。
 
@@ -55,7 +55,7 @@ ht-degree: 2%
 
 * **結構描述稽核軌跡**：可讓您探索對結構描述所做的變更，以及識別進行這些修改的人和發生時間。
 
-  如需結構描述的詳細資訊，請參閱此[頁面](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"} （Campaign v8檔案）。
+  如需結構描述的詳細資訊，請參閱此[頁面](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"} （Campaign v8檔案）。
 
 * **工作流程稽核軌跡**&#x200B;會追蹤與工作流程相關的所有動作，包括：
 
@@ -70,7 +70,7 @@ ht-degree: 2%
 
   如需工作流程的詳細資訊，請參閱此[頁面](../../workflow/using/about-workflows.md)。
 
-  如需如何監視工作流程的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}。
+  如需如何監視工作流程的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=zh-Hant){target="_blank"}。
 
 
 * **選項稽核軌跡**&#x200B;可讓您檢查活動和對選項進行的最後修改。

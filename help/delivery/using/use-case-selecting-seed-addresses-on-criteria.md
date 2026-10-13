@@ -53,7 +53,7 @@ ht-degree: 3%
 
 ## 步驟1 — 建立傳遞 {#step-1---creating-a-delivery}
 
-建立傳遞的步驟已詳載於[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email.html){target="_blank"}。
+建立傳遞的步驟已詳載於[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email.html?lang=zh-Hant){target="_blank"}。
 
 在此範例中，傳遞管理員已建立電子報並選取收件者。
 
@@ -65,7 +65,7 @@ ht-degree: 3%
 
 ### 擴充資料架構 {#extending-the-data-schema}
 
-如需結構描述擴充功能的詳細資訊，請參閱[本節](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/extend-schema){target="_blank"} （Campaign v8檔案）。
+如需結構描述擴充功能的詳細資訊，請參閱[本節](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/extend-schema){target="_blank"} （Campaign v8檔案）。
 
 1. 在&#x200B;**[!UICONTROL Administration > Configuration > Data schemas]**&#x200B;節點中，按一下&#x200B;**[!UICONTROL New]**&#x200B;圖示。
 1. 在&#x200B;**[!UICONTROL Creation of a data schema]**&#x200B;視窗中，選取&#x200B;**[!UICONTROL Extension of a schema]**&#x200B;選項並按一下&#x200B;**[!UICONTROL Next]**。

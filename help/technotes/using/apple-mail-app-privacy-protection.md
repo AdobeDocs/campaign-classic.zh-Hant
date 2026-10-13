@@ -95,7 +95,7 @@ Apple的新功能是未來產業在電子郵件隱私保護方面的面貌。 �
 
 * **[!UICONTROL Operating Systems]**&#x200B;報告
 
-  若要識別每個作業系統和每個版本的訪客比例，請使用此報表。 [瞭解詳情](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports#operating-systems){target="_blank"} （Campaign v8檔案）。
+  若要識別每個作業系統和每個版本的訪客比例，請使用此報表。 [瞭解詳情](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports#operating-systems){target="_blank"} （Campaign v8檔案）。
 
   您可以檢視每個作業系統相對於訪客總數的訪客劃分。
 
@@ -107,7 +107,7 @@ Apple的新功能是未來產業在電子郵件隱私保護方面的面貌。 �
 
 * **[!UICONTROL Breakdown of opens]**&#x200B;報告
 
-  若要識別每個作業系統的電子郵件開啟比例，請使用此報表。 [瞭解詳情](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports#breakdown-of-opens){target="_blank"} （Campaign v8檔案）。
+  若要識別每個作業系統的電子郵件開啟比例，請使用此報表。 [瞭解詳情](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports#breakdown-of-opens){target="_blank"} （Campaign v8檔案）。
 
   ![](../../reporting/using/assets/dlv_useragent_report.png)
 
@@ -127,7 +127,7 @@ Apple的新功能是未來產業在電子郵件隱私保護方面的面貌。 �
 
   ![](assets/identify-email-open-tracking-2.png)
 
-* 您可以使用預先定義的篩選器。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/create-a-filter.html){target="_blank"}。
+* 您可以使用預先定義的篩選器。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/create-a-filter.html?lang=zh-Hant){target="_blank"}。
 
   ![](assets/identify-email-open-tracking-3.png)
 
@@ -369,7 +369,7 @@ Apple的新功能是未來產業在電子郵件隱私保護方面的面貌。 �
 
 #### 如何保留追蹤資料？
 
-若要保留追蹤資料，您必須將其從Adobe Campaign匯出至資訊系統。 [瞭解詳情](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/import){target="_blank"} （Campaign v8檔案）。
+若要保留追蹤資料，您必須將其從Adobe Campaign匯出至資訊系統。 [瞭解詳情](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/data/import){target="_blank"} （Campaign v8檔案）。
 
 >[!IMPORTANT]
 >

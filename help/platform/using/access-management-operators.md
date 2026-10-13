@@ -63,7 +63,7 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->這些程式僅適用於使用原生驗證連線到Campaign的運運算元。 如需Adobe IMS驗證資訊，請參閱[此檔案](https://helpx.adobe.com/enterprise/using/manage-users-individually.html#_blank)。
+>這些程式僅適用於使用原生驗證連線到Campaign的運運算元。 如需Adobe IMS驗證資訊，請參閱[此檔案](https://helpx.adobe.com/tw/enterprise/using/manage-users-individually.html#_blank)。
 
 運運算元是有許可權登入及執行動作的Adobe Campaign使用者。
 
@@ -151,7 +151,7 @@ ht-degree: 5%
   >
   >即使其帳戶已停用，操作員仍可接收來自Campaign的警報或通知。 若要停止傳送Campaign通知給此操作員，Adobe建議您從他們的設定檔中移除電子郵件地址。
 
-* **[!UICONTROL Forbid access from the rich client]**&#x200B;選項可讓您將使用Adobe Campaign限製為[網頁存取](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui#ui-access){target="_blank"} （Campaign v8檔案），或是透過API：無法再存取Adobe Campaign使用者端主控台。
+* **[!UICONTROL Forbid access from the rich client]**&#x200B;選項可讓您將使用Adobe Campaign限製為[網頁存取](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/new/campaign-ui#ui-access){target="_blank"} （Campaign v8檔案），或是透過API：無法再存取Adobe Campaign使用者端主控台。
 * 您可以將安全區域連結到操作員。 如需詳細資訊，請參閱[此頁面](../../installation/using/security-zones.md)。
 * 您也可以使用適當的連結，定義信任的IP遮罩。
 

@@ -56,7 +56,7 @@ ht-degree: 2%
 
 請勿假設傳入的資料一致且正確，或IT部門或Adobe Campaign主管會處理。 在專案期間，請記得要清除資料。 匯入資料時，請進行重複資料刪除、調解及維持一致性。
 
-在[範例：匯入資料的工作流程範本](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/import){target="_blank"} （Campaign v8檔案）區段中，提供了為匯入資料而設計的一般工作流程範本範例。
+在[範例：匯入資料的工作流程範本](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/data/import){target="_blank"} （Campaign v8檔案）區段中，提供了為匯入資料而設計的一般工作流程範本範例。
 
 ## 使用一般檔案格式 {#using-flat-file-formats}
 
@@ -85,8 +85,8 @@ Durance;Allison;15/12/1978;allison.durance@example.com;120987
 
 **相關主題：**
 
-* [資料載入（檔案）活動](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html){target="_blank"}
-* [資料擷取（檔案）活動](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html){target="_blank"}。
+* [資料載入（檔案）活動](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html?lang=zh-Hant){target="_blank"}
+* [資料擷取（檔案）活動](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html?lang=zh-Hant){target="_blank"}。
 
 ## 以差異模式匯入 {#importing-in-delta-mode}
 

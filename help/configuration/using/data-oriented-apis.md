@@ -147,7 +147,7 @@ Write方法以[Write / WriteCollection (xtk:session)](#write---writecollection--
 * **選取**：建立游標以傳回數筆記錄，如果沒有資料，則傳回空白檔案。
 * **count**：傳回資料計數。
 
-**XPath**&#x200B;語法是用來根據輸入結構描述來尋找資料。 如需XPath的詳細資訊，請參閱[資料結構描述](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/schema-structure#reference-with-xpath){target="_blank"} （Campaign v8檔案）。
+**XPath**&#x200B;語法是用來根據輸入結構描述來尋找資料。 如需XPath的詳細資訊，請參閱[資料結構描述](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/schema-structure#reference-with-xpath){target="_blank"} （Campaign v8檔案）。
 
 #### 具有&#39;get&#39;操作的範例 {#example-with-the--get--operation}
 

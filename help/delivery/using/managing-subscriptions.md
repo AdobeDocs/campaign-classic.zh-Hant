@@ -156,7 +156,7 @@ ht-degree: 1%
 * 自動為一組收件者訂閱此服務。 收件者清單可來自篩選操作、群組、資料夾、匯入或使用滑鼠的直接選取。 若要訂閱這些收件者，請選取設定檔，然後按一下滑鼠右鍵。 選取&#x200B;**[!UICONTROL Actions > Subscribe selection to a service...]**，選取相關的服務，然後啟動作業。
 * 匯入收件者並自動訂閱資訊服務。 要執行此操作，請選取匯入助理員最後一步中涉及的服務。
 
-  如需詳細資訊，請參閱[本節](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/import){target="_blank"} （Campaign v8檔案）。
+  如需詳細資訊，請參閱[本節](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/data/import){target="_blank"} （Campaign v8檔案）。
 
 * 使用網路表單，讓收件者可以訂閱服務。
 
@@ -176,7 +176,7 @@ ht-degree: 1%
 
 預設取消訂閱連結會透過傳遞助理員中提供的內容編輯器工具列中的最後一個按鈕插入（請參閱[關於個人化](about-personalization.md)）。 收件者按一下此連結時，設定檔會新增至封鎖清單（選擇退出），表示任何傳遞動作都不會再鎖定此收件者。
 
-但是，收件者可以選擇取消訂閱服務，而不取消訂閱所有服務。 若要允許，您可以使用網路表單（請參閱[本區段](../../web/using/adding-fields-to-a-web-form.md#subscription-checkboxes)）或插入個人化的取消訂閱連結。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}。
+但是，收件者可以選擇取消訂閱服務，而不取消訂閱所有服務。 若要允許，您可以使用網路表單（請參閱[本區段](../../web/using/adding-fields-to-a-web-form.md#subscription-checkboxes)）或插入個人化的取消訂閱連結。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=zh-Hant){target="_blank"}。
 
 您也可以從收件者設定檔手動取消訂閱收件者。 若要這麼做，請按一下相關收件者的&#x200B;**[!UICONTROL Subscriptions]**&#x200B;標籤，選取相關資訊服務，然後按一下&#x200B;**[!UICONTROL Delete]**。
 

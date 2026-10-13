@@ -84,7 +84,7 @@ ht-degree: 2%
 
 * 您無法在清單中手動新增設定檔。
 
-  因此，若無其他設定，[此區段](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-audiences/create-audiences){target="_blank"} （Campaign v8檔案）中詳述的程式將不適用。
+  因此，若無其他設定，[此區段](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/audience/create-audiences/create-audiences){target="_blank"} （Campaign v8檔案）中詳述的程式將不適用。
 
   >[!NOTE]
   >

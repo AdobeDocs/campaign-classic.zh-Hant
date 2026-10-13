@@ -52,11 +52,11 @@ Adobe Campaign的工作流程可讓您的團隊簡化並自動化整個平台的
 
 * [建立工作流程](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=zh-Hant){target=_blank}：瞭解如何建立和執行目標定位、行銷活動和技術工作流程。
 
-* [最佳實務](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html){target=_blank}：瞭解最佳化行銷活動工作流程效能、改善工作流程設計和定義正確設定的指導方針。
+* [最佳實務](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=zh-Hant){target=_blank}：瞭解最佳化行銷活動工作流程效能、改善工作流程設計和定義正確設定的指導方針。
 
-* [監視工作流程](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target=_blank}：瞭解如何監視工作流程執行，以確保一切正常執行。
+* [監視工作流程](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=zh-Hant){target=_blank}：瞭解如何監視工作流程執行，以確保一切正常執行。
 
-* [工作流程使用案例](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/workflow-use-cases.html){target=_blank}：瞭解哪些內容可以使用工作流程，以及如何透過端對端使用案例實作工作流程。
+* [工作流程使用案例](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/workflow-use-cases.html?lang=zh-Hant){target=_blank}：瞭解哪些內容可以使用工作流程，以及如何透過端對端使用案例實作工作流程。
 
 
 >[!ENDTABS]
@@ -69,9 +69,9 @@ Adobe Campaign的工作流程可讓您的團隊簡化並自動化整個平台的
 
 Adobe Campaign uses workflows to:
 
-* Carry out targeting campaigns. [Learn more](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/build-a-workflow){target="_blank"} (Campaign v8 documentation)
-* Build campaigns: for each campaign, the **[!UICONTROL Workflow]** tab lets you build the target and create the deliveries. [Learn more](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/build-a-workflow){target="_blank"} (Campaign v8 documentation)
-* Perform technical processes: cleanup, collecting tracking information or provisional calculations. [Learn more](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/build-a-workflow){target="_blank"} (Campaign v8 documentation)
+* Carry out targeting campaigns. [Learn more](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/workflows/introduction/build-a-workflow){target="_blank"} (Campaign v8 documentation)
+* Build campaigns: for each campaign, the **[!UICONTROL Workflow]** tab lets you build the target and create the deliveries. [Learn more](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/workflows/introduction/build-a-workflow){target="_blank"} (Campaign v8 documentation)
+* Perform technical processes: cleanup, collecting tracking information or provisional calculations. [Learn more](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/workflows/introduction/build-a-workflow){target="_blank"} (Campaign v8 documentation)
 
 A workflow can mean both a process definition (the workflow model, which is a representation of what is supposed to happen) and an instance of this process (a workflow instance, which is a representation of what is actually happening).
 
@@ -87,7 +87,7 @@ Each workflow contains:
 
   In a workflow diagram, a given activity can produce multiple tasks, in particular when there is a loop or recurrent (periodic) actions.
 
-  All workflow activities are listed in [this section](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/activities){target="_blank"} (Campaign v8 documentation), including use cases and samples.
+  All workflow activities are listed in [this section](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/workflows/wf-activities/activities){target="_blank"} (Campaign v8 documentation), including use cases and samples.
 
 * **[!UICONTROL Transitions]**
 
@@ -99,24 +99,24 @@ Each workflow contains:
   >
   >A workflow containing unterminated transitions can still be executed: a warning message will be generated and the workflow will pause once it reaches the transition but it will not generate an error. It is thus possible to start a workflow without it being finished and to add to it as you go along.
 
-  For more information about how to build a workflow, refer to [this section](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/build-a-workflow){target="_blank"} (Campaign v8 documentation).
+  For more information about how to build a workflow, refer to [this section](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/workflows/introduction/build-a-workflow){target="_blank"} (Campaign v8 documentation).
 
 * **[!UICONTROL Worktables]**
 
   The worktable contains all the information carried by the transition. Each workflow uses several worktables. The data conveyed in these tables can be accelerated and used throughout the workflow's life cycle, as long as it is not purged. Indeed, unneeded tables are purged each time the workflow is passivated, and possibly during the execution of the largest workflows to avoid overloading the server.
 
-  Learn more on workflow data and tables in [this section](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/use-workflow-data){target="_blank"} (Campaign v8 documentation).
+  Learn more on workflow data and tables in [this section](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/workflows/introduction/use-workflow-data){target="_blank"} (Campaign v8 documentation).
 
 ## Key principles and best practices{#principles-workflows}
 
 Refer to these sections to find guidance and best practices to automate processes with workflows:
 
-* Learn more about workflow activities in [this page](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/use-workflow-data){target="_blank"} (Campaign v8 documentation).
-* Learn how to build a workflow in [this section](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/build-a-workflow){target="_blank"} (Campaign v8 documentation).
-* Discover how to use workflows to import data in Campaign in [this section](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/add-profiles/import-profiles){target="_blank"} (Campaign v8 documentation).
-* Workflow best practices are detailed in [this page](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/workflow-best-practices){target="_blank"} (Campaign v8 documentation).
-* Find guidance about workflow execution in [this section](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/executing-a-workflow/start-a-workflow){target="_blank"} (Campaign v8 documentation).
-* Learn how to monitor workflows in [this page](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution){target="_blank"} (Campaign v8 documentation).
-* Learn how to grant access to users to use workflows in [this page](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/advanced-management/managing-rights){target="_blank"} (Campaign v8 documentation).
+* Learn more about workflow activities in [this page](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/workflows/introduction/use-workflow-data){target="_blank"} (Campaign v8 documentation).
+* Learn how to build a workflow in [this section](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/workflows/introduction/build-a-workflow){target="_blank"} (Campaign v8 documentation).
+* Discover how to use workflows to import data in Campaign in [this section](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/audience/add-profiles/import-profiles){target="_blank"} (Campaign v8 documentation).
+* Workflow best practices are detailed in [this page](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/workflows/introduction/workflow-best-practices){target="_blank"} (Campaign v8 documentation).
+* Find guidance about workflow execution in [this section](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/workflows/executing-a-workflow/start-a-workflow){target="_blank"} (Campaign v8 documentation).
+* Learn how to monitor workflows in [this page](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution){target="_blank"} (Campaign v8 documentation).
+* Learn how to grant access to users to use workflows in [this page](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/workflows/advanced-management/managing-rights){target="_blank"} (Campaign v8 documentation).
 
 -->

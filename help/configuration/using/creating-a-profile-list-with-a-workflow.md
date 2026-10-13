@@ -35,9 +35,9 @@ ht-degree: 7%
 
 若要根據新的收件者表格建立&#x200B;**[!UICONTROL List]**&#x200B;型別清單，您必須建立將產生清單的目標工作流程。
 
-如需Campaign中清單的詳細資訊，請參閱[本節](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-audiences/create-audiences#create-a-list-of-contacts){target="_blank"} （Campaign v8檔案）。
+如需Campaign中清單的詳細資訊，請參閱[本節](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/audience/create-audiences/create-audiences#create-a-list-of-contacts){target="_blank"} （Campaign v8檔案）。
 
-![](assets/do-not-localize/how-to-video.png) [在影片](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-audiences/create-audiences#create-a-list-wf){target="_blank"}中探索此功能（Campaign v8檔案）
+![](assets/do-not-localize/how-to-video.png) [在影片](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/audience/create-audiences/create-audiences#create-a-list-wf){target="_blank"}中探索此功能（Campaign v8檔案）
 
 若要在自訂收件者表格中建立目標工作流程及更新收件者，請遵循下列步驟：
 

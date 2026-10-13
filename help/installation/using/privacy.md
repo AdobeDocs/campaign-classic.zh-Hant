@@ -60,11 +60,11 @@ ht-degree: 3%
 
 ### 建議
 
-若要驗證並確保您未使用上文，請透過[Campaign一般查詢編輯器](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/query/query-editor){target="_blank"} （Campaign v8檔案）對追蹤URL表格執行查詢，或在查詢活動中建立具有篩選條件的工作流程。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}。
+若要驗證並確保您未使用上文，請透過[Campaign一般查詢編輯器](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/data/query/query-editor){target="_blank"} （Campaign v8檔案）對追蹤URL表格執行查詢，或在查詢活動中建立具有篩選條件的工作流程。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=zh-Hant){target="_blank"}。
 
 範例：
 
-1. 建立工作流程並新增&#x200B;**查詢**&#x200B;活動。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}。
+1. 建立工作流程並新增&#x200B;**查詢**&#x200B;活動。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=zh-Hant){target="_blank"}。
 
 1. 開啟&#x200B;**查詢**&#x200B;活動並在`nmsTrackingUrl`資料表上建立篩選器，如下所示：
 
@@ -117,7 +117,7 @@ ht-degree: 3%
 
 您必須確定加密密碼無法由低許可權驗證的使用者存取。 若要這麼做，請限制僅能存取密碼欄位，或存取整個實體（需要組建>= 8770）。
 
-此限制可讓您移除密碼欄位，但允許所有使用者從介面存取外部帳戶。 [深入瞭解](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/restrict-pi-view){target="_blank"} （Campaign v8檔案）。
+此限制可讓您移除密碼欄位，但允許所有使用者從介面存取外部帳戶。 [深入瞭解](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/restrict-pi-view){target="_blank"} （Campaign v8檔案）。
 
 若要執行此作業，請依照下列步驟操作：
 

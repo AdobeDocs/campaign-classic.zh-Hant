@@ -108,7 +108,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->針對其他型別的欄位，語法在[本節](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/query/query-editor){target="_blank"} （Campaign v8檔案）中有詳細說明。
+>針對其他型別的欄位，語法在[本節](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/data/query/query-editor){target="_blank"} （Campaign v8檔案）中有詳細說明。
 
 ### 儲存設定 {#storage-settings}
 

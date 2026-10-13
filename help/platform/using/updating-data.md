@@ -47,7 +47,7 @@ ht-degree: 23%
 
 ## 設定自動更新 {#setting-up-an-automatic-update}
 
-可透過工作流程設定自動更新。 有關更多資訊，請參閱[Campaign v8 文件](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/update-data.html){target="_blank"}。
+可透過工作流程設定自動更新。 有關更多資訊，請參閱[Campaign v8 文件](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/update-data.html?lang=zh-Hant){target="_blank"}。
 
 ## 執行大量更新 {#performing-a-mass-update}
 
@@ -118,7 +118,7 @@ ht-degree: 23%
 
    ![](assets/s_ncs_user_export_list_start.png)
 
-   如需如何設定匯出助理的詳細資訊，請參閱[本節](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/import){target="_blank"} （Campaign v8檔案）。
+   如需如何設定匯出助理的詳細資訊，請參閱[本節](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/data/import){target="_blank"} （Campaign v8檔案）。
 
 ## 訂閱服務 {#subscribing-to-a-service}
 
