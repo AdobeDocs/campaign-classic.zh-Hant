@@ -8,9 +8,9 @@ user-guide-description: Adobe Campaign Classic v7 產品文件。
 sub-product: adobe campaign classic
 type: Documentation
 nudge: false
-source-git-commit: 75d65377f93a40be104f7ec817e6a7609cccaf93
+source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
 workflow-type: tm+mt
-source-wordcount: '1953'
+source-wordcount: '1739'
 ht-degree: 100%
 ---
 
@@ -86,73 +86,27 @@ ht-degree: 100%
   + [開始使用訊息](delivery/using/communication-channels.md)
   + {hide-from-toc}[傳遞設定 - 隱藏](delivery/using/delivery-settings.md)
   + 快速入門 {#key-steps-when-creating-a-delivery}
-    + {hide-from-toc}[傳遞快速入門 - 隱藏](delivery/using/steps-about-delivery-creation-steps.md)
-    + {hide-from-toc}[建立並識別傳遞 - 隱藏](delivery/using/steps-create-and-identify-the-delivery.md)
-    + {hide-from-toc}[定義客群 - 隱藏](delivery/using/steps-defining-the-target-population.md)
-    + {hide-from-toc}[驗證傳遞 - 隱藏](delivery/using/steps-validating-the-delivery.md)
     + {hide-from-toc}[傳送傳遞 - 隱藏](delivery/using/steps-sending-the-delivery.md)
-    + {hide-from-toc}[傳遞最佳做法 - 隱藏](delivery/using/delivery-best-practices.md)
-  + 關於傳遞的最佳實務 {#delivery-bestpractices}
-    + {hide-from-toc}[最佳化傳遞 - 隱藏](delivery/using/optimize-delivery.md)
-    + {hide-from-toc}[使用範本 - 隱藏](delivery/using/use-templates.md)
-    + {hide-from-toc}[建立個人化內容 - 隱藏](delivery/using/design-and-personalize.md)
-    + {hide-from-toc}[定義正確客群 - 隱藏](delivery/using/define-the-right-audience.md)
-    + {hide-from-toc}[傳送前先檢查 - 隱藏](delivery/using/check-before-sending.md)
   + [傳送電子郵件](delivery/using/about-email-channel.md)
-  + 傳送電子郵件 {#sending-emails}
-    + {hide-from-toc}[建立電子郵件傳遞 - 隱藏](delivery/using/creating-an-email-delivery.md)
-    + {hide-from-toc}[定義電子郵件內容 - 隱藏](delivery/using/defining-the-email-content.md)
-    + {hide-from-toc}[定義互動式內容 - 隱藏](delivery/using/defining-interactive-content.md)
-    + 傳送電子郵件傳遞 {#sending-an-email}
-      + {hide-from-toc}[傳送電子郵件的主要步驟 - 隱藏](delivery/using/sending-messages.md)
-      + {hide-from-toc}[電子郵件參數 - 隱藏](delivery/using/email-parameters.md)
-      + {hide-from-toc}[在日文的行動裝置上傳送 - 隱藏](delivery/using/sending-emails-on-japanese-mobiles.md)
-    + {hide-from-toc}[附加檔案 - 隱藏](delivery/using/attaching-files.md)
   + 傳送簡訊 {#sending-messages-on-mobiles}
-    + [開始使用簡訊](delivery/using/sms-channel.md)
     + 設定簡訊頻道 {#sms-set-up}
       + [在獨立執行個體上設定簡訊](delivery/using/sms-set-up.md)
       + [在中間來源基礎結構上設定簡訊](delivery/using/sms-set-up-mid.md)
       + [簡訊連接器通訊協定及設定](delivery/using/sms-protocol.md)
       + [其他設定](delivery/using/sms-send.md)
       + [簡訊疑難排解](delivery/using/troubleshooting-sms.md)
-    + {hide-from-toc}[建立簡訊 - 隱藏](delivery/using/sms-create.md)
     + {hide-from-toc}[移轉至擴展的通用 SMPP 連接器](delivery/using/unsupported-connector-migration.md)
-  + [傳送 LINE 訊息](delivery/using/line-channel.md)
   + [傳送推播通知](delivery/using/about-mobile-app-channel.md)
   + 傳送推播通知 {#sending-push-notifications}
-    + {hide-from-toc}[將 Campaign SDK 整合至行動應用程式](delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
     + 設定行動應用程式{#configure-the-mobile-app}
       + {hide-from-toc}[應用程式設定快速入門 - 隱藏](delivery/using/get-started-app-config.md)
       + {hide-from-toc}[針對 iOS 的設定步驟 - 隱藏](delivery/using/configuring-the-mobile-application.md)
       + {hide-from-toc}[針對 Android 的設定步驟 - 隱藏](delivery/using/configuring-the-mobile-application-android.md)
-    + 建立推播通知{#create-a-push-msg}
-      + {hide-from-toc}[為 iOS 建立推播訊息 - 隱藏](delivery/using/create-notifications-ios.md)
-      + {hide-from-toc}[為 Android 建立推播訊息 - 隱藏](delivery/using/create-notifications-android.md)
     + {hide-from-toc}[疑難排解 - 隱藏](delivery/using/troubleshooting.md)
   + [傳送直接郵件](delivery/using/about-direct-mail-channel.md)
-  + 傳送直接郵件 {#sending-direct-mail}
-    + {hide-from-toc}[建立直接郵件傳遞 - 隱藏](delivery/using/creating-a-direct-mail-delivery.md)
-    + {hide-from-toc}[定義直接郵件內容 - 隱藏](delivery/using/defining-the-direct-mail-content.md)
-    + {hide-from-toc}[驗證 - 隱藏](delivery/using/validating.md)
-  + 使用傳遞範本 {#using-delivery-templates}
-    + {hide-from-toc}[使用傳遞範本 - 隱藏](delivery/using/about-templates.md)
-    + {hide-from-toc}[建立傳遞範本 - 隱藏](delivery/using/creating-a-delivery-template.md)
-    + {hide-from-toc}[選取目標對應 - 隱藏](delivery/using/selecting-a-target-mapping.md)
-    + {hide-from-toc}[使用範本建立傳遞 - 隱藏](delivery/using/creating-a-delivery-from-a-template.md)
   + 個人化傳遞 {#personalizing-deliveries}
     + [關於個人化](delivery/using/about-personalization.md)
-    + {hide-from-toc}[個人化欄位 - 隱藏](delivery/using/personalization-fields.md)
-    + {hide-from-toc}[個人化區塊 - 隱藏](delivery/using/personalization-blocks.md)
-    + {hide-from-toc}[條件式內容 - 隱藏](delivery/using/conditional-content.md)
-    + {hide-from-toc}[個人化抵用券 - 隱藏](delivery/using/personalized-coupons.md)
-    + {hide-from-toc}[產生個人化 PDF 文件 - 隱藏](delivery/using/generating-personalized-pdf-documents.md)
-    + {hide-from-toc}[自訂表情符號清單](delivery/using/customizing-emoticon-list.md)
   + 使用種子地址 {#using-seed-addresses}
-    + [關於種子地址](delivery/using/about-seed-addresses.md)
-    + [建立種子地址](delivery/using/creating-seed-addresses.md)
-    + [新增種子地址](delivery/using/adding-seed-addresses.md)
-    + [使用外部收件者表格](delivery/using/using-an-external-recipient-table.md)
     + [使用實例：依條件選取種子地址](delivery/using/use-case-selecting-seed-addresses-on-criteria.md)
     + [使用實例：設定欄位替代](delivery/using/use-case-configuring-the-field-substitution.md)
   + A/B 測試 {#a-b-testing}
@@ -180,9 +134,7 @@ ht-degree: 100%
     + [進階：自訂傳遞記錄](delivery/using/customize-delivery-logs.md)
   + 傳遞性管理 {#deliverability-management}
     + [什麼是傳遞性](delivery/using/about-deliverability.md)
-    + [控制訊息內容](delivery/using/control-message-content.md)
     + [收件匣轉譯](delivery/using/inbox-rendering.md)
-    + [SpamAssassin](delivery/using/spamassassin.md)
     + [疑難排解](delivery/using/deliverability-faq.md)
   + 內容管理模組 {#content-management}
     + [關於內容管理](delivery/using/about-content-management.md)
@@ -593,8 +545,6 @@ ht-degree: 100%
     + {hide-from-toc}[移轉至 Adobe Analytics 2.0 API](technotes/using/analytics-2-migration.md)
   + 電子郵件和推播通知{#technotes-email}
     + [Apple iOS 上的郵件隱私保護](technotes/using/apple-mail-app-privacy-protection.md)
-    + [如何更新錯誤的硬退件](delivery/using/update-bounce-qualification.md)
-    + {hide-from-toc}[在 ISP 中斷後更新不正確的硬退回](delivery/using/update-bounces.md)
     + [iOS 憑證更新](technotes/using/ios-certificate-update.md)
     + {hide-from-toc}[已追蹤 URL 更新](technotes/using/tracked-urls.md)
   + 移轉至 Adobe Managed Services{#dc-migration}

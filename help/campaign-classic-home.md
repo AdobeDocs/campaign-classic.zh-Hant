@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
+source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
 workflow-type: tm+mt
-source-wordcount: '674'
-ht-degree: 79%
+source-wordcount: '679'
+ht-degree: 69%
 ---
 # Campaign Classic v7 文件 {#campaign-classic-documentation}
 
@@ -109,12 +109,12 @@ Android Firebase Cloud Messaging (FCM) 服務的一些重要變更將於 2024 �
     <td>
       <img src="assets/do-not-localize/icon-experience.svg" width="35px">
     <br/>
-      <strong>客戶體驗</strong><br/><a href="workflow/using/about-workflows.md">使用工作流程自動化</a> - <a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=zh-Hant" target="_blank">行銷活動</a> - <a href="interaction/using/interaction-and-offer-management.md">互動與優惠方案管理</a> - <a href="delivery/using/about-personalization.md">Personalization</a> - <a href="https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/analytics/reports/gs-reporting" target="_blank">報告</a> （Campaign v8檔案）
+      <strong>客戶體驗</strong><br/><a href="workflow/using/about-workflows.md">使用工作流程自動化</a> - <a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=zh-Hant" target="_blank">行銷活動</a> - <a href="interaction/using/interaction-and-offer-management.md">互動與優惠方案管理</a> - <a href="delivery/using/about-personalization.md">Personalization</a> - <a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/reports/gs-reporting" target="_blank">報告</a> （Campaign v8檔案）
     </td>
     <td>
       <img src="assets/do-not-localize/icon-send.svg" width="35px">
     <br/>
-      <strong>傳送訊息</strong><br/><a href="delivery/using/communication-channels.md">通訊管道</a> - <a href="delivery/using/steps-about-delivery-creation-steps.md#sending-a-proof">傳送校樣</a> - <a href="delivery/using/get-started-a-b-testing.md">A/B 測試</a> - <a href="https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/analytics/tracking/tracking" target="_blank">訊息追蹤</a> - <a href="delivery/using/about-deliverability.md">傳遞能力</a> - <a href="message-center/using/about-transactional-messaging.md">交易型訊息傳遞</a>
+      <strong>傳送訊息</strong><br/><a href="delivery/using/communication-channels.md">通訊通道</a> - <a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/create-message" target="_blank">傳送校樣</a> （Campaign v8檔案） - <a href="delivery/using/get-started-a-b-testing.md">A/B測試</a> - <a href="https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/analytics/tracking/tracking" target="_blank">訊息追蹤</a> - <a href="delivery/using/about-deliverability.md">傳遞能力</a> - <a href="message-center/using/about-transactional-messaging.md">異動訊息</a>
     </td>
   </tr>
   <tr style="border: 0;">
@@ -131,7 +131,7 @@ Android Firebase Cloud Messaging (FCM) 服務的一些重要變更將於 2024 �
     <td>
       <img src="assets/do-not-localize/icon-dev.svg" width="35px">
       <br/>
-      <strong>開發人員資源</strong><br/><a href="https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/datamodel" target="_blank">資料模型說明</a> （Campaign v8檔案） - <a href="configuration/using/about-schema-reference.md">結構描述結構</a> - <a href="configuration/using/editing-forms.md">結構描述結構</a> - <a href="configuration/using/about-web-services.md">API</a> - <a href="https://experienceleague.adobe.com/zh-hant/tools/campaign-api">JSAPI參考檔案</a> - <a href="configuration/using/about-custom-recipient-table.md">自訂收件者表格</a>
+      <strong>開發人員資源</strong><br/><a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/datamodel" target="_blank">資料模型說明</a> （Campaign v8檔案） - <a href="configuration/using/about-schema-reference.md">結構描述結構</a> - <a href="configuration/using/editing-forms.md">結構描述結構</a> - <a href="configuration/using/about-web-services.md">API</a> - <a href="https://experienceleague.adobe.com/zh-hant/tools/campaign-api">JSAPI參考檔案</a> - <a href="configuration/using/about-custom-recipient-table.md">自訂收件者表格</a>
     </td>
   </tr>
 </table>

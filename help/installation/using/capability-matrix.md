@@ -18,10 +18,10 @@ feature_v2:
 subfeature_v2:
   - id: e656c701-3899-4db3-989c-de0980ddfffa
     internal-label: Installation
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
 workflow-type: tm+mt
-source-wordcount: '323'
-ht-degree: 38%
+source-wordcount: '337'
+ht-degree: 36%
 ---
 # 各型號的功能矩陣{#capability-matrix-per-model}
 
@@ -31,7 +31,7 @@ Adobe Campaign Classic 隨附了一套模組和選項。 這些模組的可用�
 
 此頁面顯示託管(Managed Services)和內部部署之間的主要差異。 混合部署特性取決於Adobe所託管且在您的內部部署中託管的元素。
 
-在本節[&#128279;](../../installation/using/hosting-models.md)中引進了不同的託管模型。
+在本節](../../installation/using/hosting-models.md)中引進了不同的託管模型[。
 
 ## 每個部署模式的可用性 {#capability-matrix}
 
@@ -46,7 +46,7 @@ Adobe Campaign Classic 隨附了一套模組和選項。 這些模組的可用�
 | 加密/解密檔案傳輸的資料 | 按需 | 可用 | 可用 | [了解更多](../../platform/using/unzip-decrypt.md) |
 | 壓縮/解壓縮檔案 | 按需 | 可用 | 可用 | [了解更多](../../platform/using/unzip-decrypt.md) |
 | 網域名稱委派 | 按需 | 按需 | 不適用 | [了解更多](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=zh-Hant) |
-| 安裝SpamAssassin | 按需 | 可用 | 可用 | [了解更多](../../delivery/using/spamassassin.md) |
+| 安裝SpamAssassin | 按需 | 可用 | 可用 | [深入瞭解](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/deliverability-management/spamassassin){target="_blank"} （Campaign v8檔案） |
 | 存取傳遞能力報告 | 可用 | 按需 | 可用 | [了解更多](../../delivery/using/about-delivery-monitoring.md#deliverability-monitoring) |
 | 設定LDAP驗證 | 無法使用 | 可用 | 可用 | [了解更多](../../installation/using/connecting-through-ldap.md) |
 

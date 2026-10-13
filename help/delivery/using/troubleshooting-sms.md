@@ -41,7 +41,7 @@ topic_v2:
     internal-label: Reporting
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
 workflow-type: tm+mt
 source-wordcount: '3088'
 ht-degree: 0%
@@ -78,7 +78,7 @@ Adobe Campaign會將外部帳戶視為不相關的實體。
   * 部分外部帳戶共用相同的登入/密碼組合。
     提供者無法辨識`BIND PDU`來自哪個外部帳戶，因此他們將來自多個帳戶的所有連線視為單一連線。 他們可能已隨機將MO和SR路由到兩個帳戶，從而導致問題。
     如果提供者支援相同登入/密碼組合的多個短程式碼，您必須詢問他們要將短程式碼放在`BIND PDU`中的哪個位置。 請注意，此資訊必須放在`BIND PDU`中，而非`SUBMIT_SM`中，因為`BIND PDU`是唯一允許正確路由傳送MO的位置。
-    請參閱上面各種PDU[&#128279;](sms-protocol.md#information-pdu)區段中的資訊，以瞭解`BIND PDU`中可用的欄位，通常是您在`address_range`中新增短程式碼，但需要提供者的特殊支援。 請聯絡他們，以瞭解他們如何獨立路由多個短程式碼。
+    請參閱上面各種PDU](sms-protocol.md#information-pdu)區段中的[資訊，以瞭解`BIND PDU`中可用的欄位，通常是您在`address_range`中新增短程式碼，但需要提供者的特殊支援。 請聯絡他們，以瞭解他們如何獨立路由多個短程式碼。
     Adobe Campaign支援在相同的外部帳戶上處理多個短程式碼。
 
 ## 一般外部帳戶問題 {#external-account-issues}
@@ -148,7 +148,7 @@ Adobe Campaign會將外部帳戶視為不相關的實體。
 
 ## 傳送MT （傳送給一般使用者的一般SMS）時的問題{#issue-MT}
 
-* 檢查連線是否穩定。 除了Adobe Campaign Classic上的傳送器外，SMPP連線應持續保持至少1小時。 請參閱[不穩定連線的問題](sms-protocol.md#issues-unstable-connection)一節。
+* 檢查連線是否穩定。 除了Adobe Campaign Classic上的傳送器外，SMPP連線應持續保持至少1小時。 請參閱[不穩定連線的問題](#issues-unstable-connection)一節。
 
 * 如果重新啟動MTA讓傳送MT在短時間內再次運作，則可能是因為連線不穩定而發生節流。 請參閱[不穩定連線的問題](troubleshooting-sms.md#issues-unstable-connection)一節。
 

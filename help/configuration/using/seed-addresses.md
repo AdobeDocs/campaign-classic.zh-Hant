@@ -32,9 +32,9 @@ topic_v2:
     internal-label: Implementation
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
+source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '349'
 ht-degree: 5%
 ---
 # 種子地址{#seed-addresses}
@@ -45,7 +45,7 @@ ht-degree: 5%
 
 ![](assets/s_ncs_user_seedlist_new_tab.png)
 
-如需使用種子地址的詳細資訊，請參閱[本節](../../delivery/using/about-seed-addresses.md)。
+如需使用種子地址的詳細資訊，請參閱[本節](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/add-profiles/test-profiles){target="_blank"} （Campaign v8檔案）。
 
 ## 實作 {#implementation}
 
@@ -107,7 +107,7 @@ ht-degree: 5%
    >    
    >
 
-1. 相應地修改&#x200B;**[!UICONTROL seedMember]**&#x200B;表單，以在&#x200B;**[!UICONTROL Seed addresses]**&#x200B;視窗中定義新的「內部收件者」索引標籤。 如需詳細資訊，請參閱[此頁面](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"} （Campaign v8檔案）。
+1. 相應地修改&#x200B;**[!UICONTROL seedMember]**&#x200B;表單，以在&#x200B;**[!UICONTROL Seed addresses]**&#x200B;視窗中定義新的「內部收件者」索引標籤。 如需詳細資訊，請參閱[此頁面](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"} （Campaign v8檔案）。
 
    ```
    <container colcount="2" label="Internal recipient" name="internal"

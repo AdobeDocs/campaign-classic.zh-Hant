@@ -37,71 +37,18 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
 workflow-type: tm+mt
-source-wordcount: '1220'
+source-wordcount: '915'
 ht-degree: 0%
 ---
 # 使用工作流程自動化{#automating-via-workflows}
 
-## 內容管理活動 {#content-management-activity}
+使用工作流程可自動建立、編輯和發佈內容管理內容。
 
-您可以使用透過Adobe Campaign使用者端介面設定的工作流程，自動建立、編輯和發佈內容。
+作為從Campaign v7轉變到v8的一部分，Campaign Classic檔案集已簡化並重新組織。 Campaign v8檔案集中現在提供常見功能。 若要瞭解如何設定&#x200B;**內容管理**&#x200B;活動，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/action-activities/content-management){target=_blank}。
 
-透過工作流程圖表的&#x200B;**[!UICONTROL Tools]**&#x200B;工具列存取&#x200B;**內容管理**&#x200B;活動。
-
-活動屬性可細分為四個步驟：
-
-* **[!UICONTROL Content]** ：讓您輸入現有內容或建立內容，
-* **[!UICONTROL Update content]** ：可讓您修改內容的主體或透過XML資料流量更新內容，
-* **[!UICONTROL Action to execute]** ：讓您儲存或產生內容，
-* **[!UICONTROL Transition]** ：可讓您選擇是否要產生輸出轉換，並為其命名。
-
-![](assets/d_ncs_content_wf.png)
-
-### 內容 {#content}
-
-* **由轉換指定**
-
-  要使用的內容先前已建立。 處理程式將涉及由傳入事件傳播的內容例項。 可透過事件的「contentId」變數存取內容識別碼。
-
-* **明確**
-
-  可讓您選擇先前建立的內容。
-
-* **由指令碼計算**
-
-  根據JavaScript範本選取內容例項。 要評估的程式碼可讓您擷取內容識別碼。
-
-* **新增，已透過出版物範本建立**
-
-  透過出版物範本建立新內容。 內容例項將會儲存在填入的「String」資料夾中。
-
-### 更新內容 {#update-the-content}
-
-* **主旨**
-
-  可讓您在發佈時修改傳遞動作的主題。
-
-* **從XML摘要存取資料**
-
-  內容會從外部來源的XML摘要更新。 必須輸入URL才能進行資料下載。
-
-  XSL樣式表可用來轉換傳入的XML資料。
-
-### 要執行的動作 {#action-to-execute}
-
-* **儲存**
-
-  儲存建立或修改的內容。 儲存內容的識別碼會傳播到傳出事件的「contentId」變數中。
-
-* **產生**
-
-  為具有「檔案」型別發佈的每個轉換範本產生輸出檔案。 使用下列引數，為每個產生的檔案啟動傳出轉變：儲存在「contentId」變數中的內容的識別碼，以及「filename」變數的檔案名稱。
-
-### 轉變 {#transition}
-
-**產生輸出轉變**&#x200B;選項可讓您將輸出轉變新增至&#x200B;**[!UICONTROL Content management]**&#x200B;活動，以將新活動連結至工作流程執行。 核取此選項後，輸入轉變的標籤。
+[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/action-activities/content-management){target=_blank}
 
 ## 範例 {#examples}
 
@@ -241,14 +188,9 @@ ht-degree: 0%
 
 活動的最終動作是準備並啟動傳送。
 
-### 從FTP匯入內容 {#importing-content-from-ftp}
-
-如果您的傳送內容位於FTP或SFTP伺服器上的HTML檔案中，您可輕鬆將此內容載入到Adobe Campaign傳送中。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html?lang=zh-Hant){target="_blank"}。
-
-
 ### 從Amazon Simple Storage Service (S3)聯結器匯入內容 {#importing-content-from-amazon-simple-storage-service--s3--connector}
 
-如果您的傳送內容位於Amazon Simple Storage Service (S3)貯體，您可輕鬆將此內容載入Adobe Campaign傳送中。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html?lang=zh-Hant){target="_blank"}。
+如果您的傳送內容位於Amazon Simple Storage Service (S3)貯體，您可輕鬆將此內容載入Adobe Campaign傳送中。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html){target="_blank"}。
 
 
 ## 半自動更新 {#semi-automatic-update}

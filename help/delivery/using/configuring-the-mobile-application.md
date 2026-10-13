@@ -46,9 +46,9 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
 workflow-type: tm+mt
-source-wordcount: '600'
+source-wordcount: '617'
 ht-degree: 4%
 ---
 # 針對 iOS 的設定步驟 {#configuring-the-mobile-application-in-adobe-campaign-ios}
@@ -61,7 +61,7 @@ ht-degree: 4%
 1. [設定iOS服務](#configuring-ios-service)
 1. [在Campaign中整合iOS行動應用程式](#creating-ios-app)
 
-然後，您就可以[建立iOS裝置的推播通知](create-notifications-ios.md)。
+之後，您就可以[建立iOS裝置的推播通知](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/push/rich-push/rich-push-ios){target="_blank"} （Campaign v8檔案）。
 
 ## 設定iOS外部帳戶 {#configuring-external-account-ios}
 
@@ -118,8 +118,8 @@ ht-degree: 4%
 
    ![](assets/nmac_ios_2.png)
 
-1. 您可以視需要以約&#x200B;**[!UICONTROL Application variables]**&#x200B;擴充推送訊息內容，作為選項。 這些都是可完全自訂的專案，而且是傳送至行動裝置的訊息裝載的一部分。
-在下列範例中，我們新增&#x200B;**mediaURl**&#x200B;和&#x200B;**mediaExt**&#x200B;來建立豐富推送通知，然後提供應用程式要在通知內顯示的影像。
+1. 您可以視需要以約&#x200B;**[!UICONTROL Application variables]**擴充推送訊息內容，作為選項。 這些都是可完全自訂的專案，而且是傳送至行動裝置的訊息裝載的一部分。
+在下列範例中，我們新增**mediaURl**&#x200B;和&#x200B;**mediaExt**&#x200B;來建立豐富推送通知，然後提供應用程式要在通知內顯示的影像。
 
    ![](assets/nmac_ios_3.png)
 
@@ -133,7 +133,7 @@ ht-degree: 4%
 
 1. 按一下&#x200B;**[!UICONTROL Next]**&#x200B;開始設定開發應用程式。
 
-1. 確定透過SDK在Adobe Campaign和應用程式程式碼中定義了相同的&#x200B;**[!UICONTROL Integration key]**。<!--For more on this, refer to [this page](integrating-campaign-sdk-into-the-mobile-application.md).--> 此整合金鑰是每個應用程式專屬的金鑰，可讓您將行動應用程式連結至Adobe Campaign平台。
+1. 確定透過SDK在Adobe Campaign和應用程式程式碼中定義了相同的&#x200B;**[!UICONTROL Integration key]**。<!--For more on this, refer to [this page](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/push-config){target="_blank"} (Campaign v8 documentation).--> 此整合金鑰是每個應用程式專屬的金鑰，可讓您將行動應用程式連結至Adobe Campaign平台。
 
    >[!NOTE]
    >
