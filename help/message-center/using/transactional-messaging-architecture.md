@@ -142,7 +142,7 @@ Create your delivery templates the way you would for an email campaign:
 * Add the offer to your transactional message template.
 * Check the preview, send a proof and publish the template.
 
-You also have to enable the unitary mode on your offer spaces. For more on this, refer to [this section](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/interaction-settings/interaction-offer-spaces){target="_blank"} (Campaign v8 documentation).
+You also have to enable the unitary mode on your offer spaces. For more on this, refer to [this section](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/offers/interaction-settings/interaction-offer-spaces){target="_blank"} (Campaign v8 documentation).
 
 -->
 
@@ -201,7 +201,7 @@ You also have to enable the unitary mode on your offer spaces. For more on this,
 
 * 在兩個執行個體上安裝&#x200B;**[!UICONTROL LINE Connect]**&#x200B;套件。
 * 在行銷執行個體上安裝&#x200B;**[!UICONTROL Transactional message control]**&#x200B;套件，在執行執行個體上安裝&#x200B;**[!UICONTROL Transactional message execution]**&#x200B;套件。
-* 在兩個執行個體上建立具有相同命名的LINE **外部帳戶**&#x200B;和&#x200B;**服務**，以便進行同步處理。 如需如何建立LINE外部帳戶和服務的詳細資訊，請參閱[本節](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/other-channels/line#setting-up-line-channel){target="_blank"} （Campaign v8檔案）。
+* 在兩個執行個體上建立具有相同命名的LINE **外部帳戶**&#x200B;和&#x200B;**服務**，以便進行同步處理。 如需如何建立LINE外部帳戶和服務的詳細資訊，請參閱[本節](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/other-channels/line#setting-up-line-channel){target="_blank"} （Campaign v8檔案）。
 
 然後，從&#x200B;**[!UICONTROL Explorer]**，在&#x200B;**[!UICONTROL Platform]** > **[!UICONTROL External account]**&#x200B;中，您需要在兩個執行個體上設定不同的外部帳戶：
 
@@ -264,4 +264,4 @@ You also have to enable the unitary mode on your offer spaces. For more on this,
    * 按一下 **[!UICONTROL Create the archiving workflow]** 按鈕。
    * 按一下&#x200B;**[!UICONTROL Create data synchronization workflow]**&#x200B;按鈕以建立LINE資料同步工作流程。
 
-1. 您現在可以開始[建立異動訊息](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/transactional-template){target="_blank"} （Campaign v8檔案）。
+1. 您現在可以開始[建立異動訊息](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/real-time/transactional-template){target="_blank"} （Campaign v8檔案）。

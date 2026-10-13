@@ -181,11 +181,11 @@ Adobe 持續評估產品功能，尋找應以更現代的替代方式來取代�
   </tr> 
    <tr> 
    <td>行動裝置頻道 - MMS 和 WAP 推播訊息</td>
-   <td>自 Campaign 第 18.4 發行版本開始，不再提供 MMS 和 Wap 推播頻道。 作為取代，您可以利用<a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/sms/sms" target="_blank">簡訊</a> （Campaign v8檔案）和<a href="../../delivery/using/about-mobile-app-channel.md">推播</a>傳遞。</td>
+   <td>自 Campaign 第 18.4 發行版本開始，不再提供 MMS 和 Wap 推播頻道。 作為取代，您可以利用<a href="https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/sms/sms" target="_blank">簡訊</a> （Campaign v8檔案）和<a href="../../delivery/using/about-mobile-app-channel.md">推播</a>傳遞。</td>
   </tr> 
    <tr> 
    <td>行動裝置頻道 - LINE v1</td>
-   <td>自 Campaign 第 18.4 發行版本開始，不再提供 LINE Connect 套件。 Adobe 建議使用新的 LINE Channel 套件取而代之。 <a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/other-channels/line" target="_blank">深入瞭解</a> （Campaign v8檔案）</td>
+   <td>自 Campaign 第 18.4 發行版本開始，不再提供 LINE Connect 套件。 Adobe 建議使用新的 LINE Channel 套件取而代之。 <a href="https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/other-channels/line" target="_blank">深入瞭解</a> （Campaign v8檔案）</td>
   </tr>
  </tbody> 
 </table>

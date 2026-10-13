@@ -61,7 +61,7 @@ ht-degree: 4%
 1. [設定iOS服務](#configuring-ios-service)
 1. [在Campaign中整合iOS行動應用程式](#creating-ios-app)
 
-之後，您就可以[建立iOS裝置的推播通知](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/push/rich-push/rich-push-ios){target="_blank"} （Campaign v8檔案）。
+之後，您就可以[建立iOS裝置的推播通知](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/push/rich-push/rich-push-ios){target="_blank"} （Campaign v8檔案）。
 
 ## 設定iOS外部帳戶 {#configuring-external-account-ios}
 
@@ -133,7 +133,7 @@ ht-degree: 4%
 
 1. 按一下&#x200B;**[!UICONTROL Next]**&#x200B;開始設定開發應用程式。
 
-1. 確定透過SDK在Adobe Campaign和應用程式程式碼中定義了相同的&#x200B;**[!UICONTROL Integration key]**。<!--For more on this, refer to [this page](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/push-config){target="_blank"} (Campaign v8 documentation).--> 此整合金鑰是每個應用程式專屬的金鑰，可讓您將行動應用程式連結至Adobe Campaign平台。
+1. 確定透過SDK在Adobe Campaign和應用程式程式碼中定義了相同的&#x200B;**[!UICONTROL Integration key]**。<!--For more on this, refer to [this page](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/config/settings/push-config){target="_blank"} (Campaign v8 documentation).--> 此整合金鑰是每個應用程式專屬的金鑰，可讓您將行動應用程式連結至Adobe Campaign平台。
 
    >[!NOTE]
    >

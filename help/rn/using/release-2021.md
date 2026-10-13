@@ -124,7 +124,7 @@ _2021 年 6 月 5 日_
 <td>
 <p>新的<b>變更資料來源</b>工作流程活動可讓您變更工作流程工作表格的資料來源。 這為管理不同資料來源 (FDA &amp; 本機資料庫) 的資料提供更強大的彈性。</p>
 <p>在 Adobe Campaign 工作流程中，使用工作 (或暫時) 表格來管理資料。 工作流程執行時，工作表格會在各工作流程活動中共用資料。 在預設情況下，工作表格與我們查詢的資料來源建立在同一資料庫上。</p>
-<p>如需詳細資訊，請參閱<a href="https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/change-data-source" target="_blank">詳細檔案</a> （Campaign v8檔案）。</p>
+<p>如需詳細資訊，請參閱<a href="https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/workflows/wf-activities/targeting-activities/change-data-source" target="_blank">詳細檔案</a> （Campaign v8檔案）。</p>
 </td>
 </tr>
 </tbody>
@@ -162,7 +162,7 @@ _2021 年 6 月 5 日_
 <li><p>支援 LINE 合作夥伴註冊 API</p></li>
 <li><p>支援在出現 LINE 伺服器端錯誤或網路逾時時重試傳送訊息</p></li>
 </ul>
-<p>如需詳細資訊，請參閱<a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/other-channels/line" target="_blank">詳細檔案</a> （Campaign v8檔案）。</p>
+<p>如需詳細資訊，請參閱<a href="https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/other-channels/line" target="_blank">詳細檔案</a> （Campaign v8檔案）。</p>
 </td> 
 </tr> 
 </tbody> 
@@ -226,7 +226,7 @@ _2021 年 6 月 5 日_
 **功能改進**
 
 * 儲存工作流程時已新增額外檢查，以確定活動名稱是唯一的，且轉變後一律會有活動。
-* **「帳單」**&#x200B;技術工作流程現在包含原本由&#x200B;**活動帳單輪廓數**(billingActiveContactCount) 工作流程執行的任務，此工作流程已移除。 工作流程每月傳送的電子郵件報告現在會提供執行個體上活躍輪廓數目的資訊。 [瞭解詳情](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows){target="_blank"} （Campaign v8檔案）。
+* **「帳單」**&#x200B;技術工作流程現在包含原本由&#x200B;**活動帳單輪廓數**(billingActiveContactCount) 工作流程執行的任務，此工作流程已移除。 工作流程每月傳送的電子郵件報告現在會提供執行個體上活躍輪廓數目的資訊。 [瞭解詳情](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows){target="_blank"} （Campaign v8檔案）。
 * 已新增新的 **_keyOnMData** 屬性，以便能夠使用鍵對備忘錄資料進行操作。
 
 **其他變更**

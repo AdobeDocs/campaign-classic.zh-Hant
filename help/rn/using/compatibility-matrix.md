@@ -474,7 +474,7 @@ Campaign 用戶端主控台必須使用 Microsoft Edge WebView2 執行階段最�
 
 您可以在資料收集 UI 設定 Adobe Experience Platform 擴充功能，透過 Adobe Campaign Mobile SDK 使用 Campaign 來[傳送推播通知](../../delivery/using/about-mobile-app-channel.md)。
 
-從 Campaign v7.4 開始，Campaign SDK [已棄用](deprecated-features.md)。 為確保現有實作能順利轉換至 AEP Mobile SDK，您仍可在下列作業系統上使用它<!--, using the associated [mobile SDK](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/push-config){target="_blank"} (Campaign v8 documentation)-->。
+從 Campaign v7.4 開始，Campaign SDK [已棄用](deprecated-features.md)。 為確保現有實作能順利轉換至 AEP Mobile SDK，您仍可在下列作業系統上使用它<!--, using the associated [mobile SDK](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/config/settings/push-config){target="_blank"} (Campaign v8 documentation)-->。
 
 
 <table>

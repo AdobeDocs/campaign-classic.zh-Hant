@@ -53,9 +53,9 @@ ht-degree: 1%
 >透過此檔案，所有參考通訊協定、欄位名稱和值詳細資訊的參考均參考[SMPP 3.4規格](https://smpp.org/SMPP_v3_4_Issue1_2.pdf)。
 >
 
-作為從Campaign v7轉變到v8的一部分，Campaign Classic檔案集已簡化並重新組織。 Campaign v8檔案集中現在提供常見功能。 若要深入瞭解SMS聯結器設定，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/sms/config-sms/smpp-external-account){target=_blank}。
+作為從Campaign v7轉變到v8的一部分，Campaign Classic檔案集已簡化並重新組織。 Campaign v8檔案集中現在提供常見功能。 若要深入瞭解SMS聯結器設定，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/sms/config-sms/smpp-external-account){target=_blank}。
 
-[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/sms/config-sms/smpp-external-account){target=_blank}
+[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/sms/config-sms/smpp-external-account){target=_blank}
 
 ## 概觀 {#overview}
 
@@ -181,7 +181,7 @@ PDU可以有選填欄位。 此處僅說明最常見的欄位。 如需詳細資
 
 * **registered_delivery**：告知是否要求SR。 Adobe Campaign一律會設定此標幟，自動回覆除外。 對於多部分訊息，僅針對第一部分設定標籤。 所有版本都有相同的行為。
 
-* **data_coding**：表示文字欄位中使用的編碼。 如需詳細資訊，請參閱[SMS文字編碼](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/sms/sms-channel#sms-text-encoding){target="_blank"} （Campaign v8檔案）一節。
+* **data_coding**：表示文字欄位中使用的編碼。 如需詳細資訊，請參閱[SMS文字編碼](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/sms/sms-channel#sms-text-encoding){target="_blank"} （Campaign v8檔案）一節。
 
 * **short_message**：訊息的文字。 若使用UDH，這也會包含UHD標頭。
 
@@ -243,7 +243,7 @@ SR和MO插入資料庫後，Adobe Campaign Classic會加以確認。 即使已�
 
 大多數提供者需要每個SMPP連線的輸送量限制。 這可透過在外部帳戶中設定多個SMS來達成。 請注意，每個連線都會發生輸送量節流，總有效輸送量是每個連線的限制乘以連線總數。 這在[同時連線](sms-protocol.md#connection-settings)區段中詳細說明。
 
-若要達到最大可能的輸送量，您需要微調最大傳送時段。 傳送視窗是不需要等候`SUBMIT_SM_RESP`即可傳送的`SUBMIT_SM PDU`數目。 如需詳細資訊，請參閱[傳送視窗設定](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/sms/config-sms/smpp-external-account#smpp-delays){target="_blank"} （Campaign v8檔案）一節。
+若要達到最大可能的輸送量，您需要微調最大傳送時段。 傳送視窗是不需要等候`SUBMIT_SM_RESP`即可傳送的`SUBMIT_SM PDU`數目。 如需詳細資訊，請參閱[傳送視窗設定](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/sms/config-sms/smpp-external-account#smpp-delays){target="_blank"} （Campaign v8檔案）一節。
 
 ### 服務請求與錯誤管理（「附錄B」） {#sr-error-management}
 
