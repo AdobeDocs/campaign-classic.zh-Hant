@@ -65,11 +65,11 @@ ht-degree: 44%
 
 * 在[相容性矩陣](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems)中檢查您的系統和工具與Adobe Campaign使用者端主控台的相容性
 
-* 若要瞭解如何在此頁面](launching-adobe-campaign.md)上安裝並登入Adobe Campaign [。
+* 若要瞭解如何在此頁面[&#128279;](launching-adobe-campaign.md)上安裝並登入Adobe Campaign 。
 
 >[!TAB 瀏覽Campaign UI]
 
-* 在此頁面](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target="_blank"}上探索Adobe Campaign使用者介面[ （Campaign v8檔案）。
+* 在此頁面[&#128279;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target="_blank"}上探索Adobe Campaign使用者介面 （Campaign v8檔案）。
 
 * 瞭解如何使用[Campaign Explorer](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui#ac-explorer-ui){target="_blank"} （Campaign v8檔案）。
 
