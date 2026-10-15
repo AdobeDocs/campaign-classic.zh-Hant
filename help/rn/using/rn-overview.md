@@ -33,10 +33,10 @@ topic_v2:
     internal-label: Implementation
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 4bc1e76d129c6a6aa15b7e3915232043bd6f4286
+source-git-commit: f079b19ac78b331499a6f3cf5fcc21e55827998c
 workflow-type: tm+mt
-source-wordcount: '1045'
-ht-degree: 100%
+source-wordcount: '1204'
+ht-degree: 86%
 ---
 # 版本更新 {#rn-overview}
 
@@ -80,6 +80,16 @@ Adobe Campaign 會定期更新。 此定期更新的目的是為了讓您掌握�
 > 每個建置都是累積性的：除了本身的變更外，也包含同一版本先前建置中提供的所有功能、改善和修正。 若要取得先前修正的效益，您不需要安裝每個中間建置：安裝最新建置即可讓您取得先前建置中包含的所有內容。
 
 作為託管客戶，您無需採取任何動作便可透過最新穩定版本編號，自動享受升級的好處。 在[年度升級一節](#yearly-upgrade)中深入了解。 如果您從舊的版本編號移轉，Adobe 建議您先升級至此版本編號。
+
+## Hotflix {#hotflixes}
+
+在特殊情況下，Adobe可能會提供客戶特定的Hotfix，以便在標準版本提供修正之前解決問題。 Hotfix要求會逐一進行評估，且不屬於標準發行週期。
+
+應透過Adobe客戶服務提出Hotfix請求。 如果獲得核准，系統會為受影響的客戶和產品組建準備一個Hotfix。 Hotfix並非適用於所有客戶的一般版本；Adobe可在檢閱後核准與其他受影響客戶共用。
+
+傳送Hotfix時，Hotfix詳細資料可能不會包含在公開發行說明中。 Adobe稍後可能會在適用版本的標準發行版本中包含hotfix。 我們並不保證包含性和時機。 如需瞭解每個標準版本所含的變更，請參閱版本注意事項。
+
+此客戶特定的Hotfix程式與上述重要安全性修補程式原則不同，Adobe可在此原則下將重要安全性修補程式套用至託管環境，恕不另行通知。
 
 ### 託管環境的安全性修補 {#security-patching}
 
