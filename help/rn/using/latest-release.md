@@ -35,20 +35,50 @@ topic_v2:
     internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 63ece0ce7bfca75468776da84e2eac8b34b13af8
 workflow-type: tm+mt
-source-wordcount: '1225'
-ht-degree: 98%
+source-wordcount: '1449'
+ht-degree: 90%
 ---
 # 最新版本 {#latest-release}
 
 本頁面列出&#x200B;**最新 Campaign Classic v7 版本**&#x200B;的新功能、改善和修正。 每個新版本都會提供以顏色具體化的狀態。 請於[本頁](rn-overview.md)進一步了解 Campaign Classic v7 版本編號狀態。
 
+## 版本7.4.5 {#release-7-4-5}
+
+### 建置9420 {#build-9420}
+
+[!BADGE 一般可用性]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="一般可用性"}
+
+_2026年10月15日_
+
+#### 修正 {#fixes-7-4-5}
+
+* 修正Analytics外部帳戶可能因「過去」(410)錯誤而失敗的問題。 (NEO-99019)
+* 修正即使成功傳送相對應的訊息，部分傳送仍可能卡在個人化擱置狀態的問題。 (NEO-94471)
+* 修正內部鎖定機制可能進入重試回圈，導致伺服器上CPU使用率高的問題。 (NEO-94845)
+* 修正資料模型更新可能會斷斷續續失敗的問題。 (NEO-84347， NEO-84824)
+* 修正在建立或編輯傳送時，可能錯誤顯示「垃圾郵件檢查失敗」錯誤的問題。 (NEO-53888)
+* 修正收件者在重複軟退信後未按預期隔離的問題。 (NEO-94422)
+
 ## 版本 7.4.4 {#release-7-4-4}
+
+### 建置9403 {#build-9403}
+
+[!BADGE 一般可用性]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="一般可用性"}
+
+_2026年10月15日_
+
+#### 安全性改善 {#security-7-4-4-9403}
+
+Adobe 已發佈 Adobe Campaign Classic 的安全性更新，以解決關鍵弱點。 我們鼓勵採用內部部署和混合部署的客戶儘快安裝更新。 Adobe 代管的執行個體已完成修復，客戶不需要採取任何動作。
+
+必須重新啟動 Adobe Campaign 伺服器 (nlserver)，才能載入建置並完成部署。 此修正在重新啟動後預設為作用中。
+
 
 ### 建置9402 {#build-9402}
 
-[!BADGE 一般可用性]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="一般可用性"}
+[!BADGE 已棄用]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="已棄用"}
 
 _2026年9月11日_
 
@@ -60,7 +90,7 @@ Adobe 已發佈 Adobe Campaign Classic 的安全性更新，以解決關鍵弱�
 
 ### 版本編號 9401 {#build-9401}
 
-[!BADGE 一般可用性]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="一般可用性"}
+[!BADGE 已棄用]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="已棄用"}
 
 _2026 年 8 月 25 日_
 
