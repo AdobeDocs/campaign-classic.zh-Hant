@@ -56,11 +56,11 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->有關傳遞效能和最佳實務的完整指引記錄在[Campaign v8傳遞最佳實務](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices)頁面中。 此內容適用於Campaign Classic v7和Campaign v8使用者。
+>有關傳遞效能和最佳實務的完整指引記錄在[Campaign v8傳遞最佳實務](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/start/delivery-best-practices)頁面中。 此內容適用於Campaign Classic v7和Campaign v8使用者。
 >
 >此頁面記錄了&#x200B;**Campaign Classic v7的特定設定**，用於混合部署和內部部署中的效能最佳化和疑難排解。
 
-如需傳遞效能、平台最佳化、隔離管理、資料庫維護和排程建議的完整最佳實務，請參閱[Campaign v8傳遞最佳實作檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"}。
+如需傳遞效能、平台最佳化、隔離管理、資料庫維護和排程建議的完整最佳實務，請參閱[Campaign v8傳遞最佳實作檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"}。
 
 ## 效能最佳化 {#performance-optimization}
 
@@ -76,7 +76,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->對於Campaign v8受管理的Cloud Services使用者，基礎架構最佳化和MTA設定由Adobe管理。 如需適用於您部署的效能建議，請參閱[Campaign v8傳遞最佳實務](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"}。
+>對於Campaign v8受管理的Cloud Services使用者，基礎架構最佳化和MTA設定由Adobe管理。 如需適用於您部署的效能建議，請參閱[Campaign v8傳遞最佳實務](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"}。
 
 ### 維護資料庫 {#database-maintenance}
 
@@ -92,7 +92,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->對於Campaign v8受管理的Cloud Services使用者，資料庫維護和技術工作流程會由Adobe監控和管理。 如[Campaign v8監視器傳遞檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitoring-deliverability){target="_blank"}中所述，專注於傳遞特定的監視。
+>對於Campaign v8受管理的Cloud Services使用者，資料庫維護和技術工作流程會由Adobe監控和管理。 如[Campaign v8監視器傳遞檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/monitoring-deliverability){target="_blank"}中所述，專注於傳遞特定的監視。
 
 ## 疑難排解傳送問題 {#troubleshooting}
 
@@ -102,7 +102,7 @@ ht-degree: 1%
 >
 >* 常見傳遞失敗與解決方案： [瞭解傳遞失敗](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}
 >* 傳送診斷緩慢： [在Campaign UI中監視傳送](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}
->* 傳遞最佳實務：[傳遞最佳實務](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"}
+>* 傳遞最佳實務：[傳遞最佳實務](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"}
 >
 >本節記錄針對混合式部署和內部部署的&#x200B;**Campaign Classic v7專屬疑難排解**。
 
@@ -145,7 +145,7 @@ Error during the call of method 'AppendDeliveryPart' on the mid sourcing server:
 ## 相關主題
 
 * [瞭解傳遞失敗](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} （Campaign v8檔案）
-* [傳遞最佳實務](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"} （Campaign v8檔案）
+* [傳遞最佳實務](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"} （Campaign v8檔案）
 * [在Campaign UI中監視傳遞](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} （Campaign v8檔案）
 * [資料庫維護](../../production/using/recommendations.md) （v7混合/內部部署）
 * [電子郵件傳遞能力](../../installation/using/email-deliverability.md) （v7混合/內部部署）

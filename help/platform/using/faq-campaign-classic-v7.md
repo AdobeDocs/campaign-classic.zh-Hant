@@ -133,10 +133,10 @@ Campaign v8是Adobe的策略平台，適用於需要大量行銷活動、現代W
 了解更多：
 
 * [Campaign v8概述](https://experienceleague.adobe.com/docs/campaign/campaign-v8/new/whats-new.html?lang=zh-Hant){target="_blank"}
-* [從Campaign Classic v7轉變至v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/v7-to-v8.html){target="_blank"}
-* [Campaign v8完整常見問題集](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html){target="_blank"}
+* [從Campaign Classic v7轉變至v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/v7-to-v8.html?lang=zh-Hant){target="_blank"}
+* [Campaign v8完整常見問題集](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html?lang=zh-Hant){target="_blank"}
 
-**如需工作流程、傳送、對象、報表、個人化等促銷活動相關常見問題的詳細解答**，請造訪[Campaign v8完整常見問題集](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html){target="_blank"}。
+**如需工作流程、傳送、對象、報表、個人化等促銷活動相關常見問題的詳細解答**，請造訪[Campaign v8完整常見問題集](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html?lang=zh-Hant){target="_blank"}。
 
 +++
 
@@ -158,7 +158,7 @@ Adobe Campaign v7使用者介面提供4種語言版本：英文、法文、德�
 
 [在本章節了解更多資訊](../../installation/using/creating-an-instance-and-logging-on.md)。
 
-**注意：** Campaign v8網頁UI可讓使用者獨立變更其介面語言。 [了解更多資訊](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/connect.html#language-pref){target="_blank"}。
+**注意：** Campaign v8網頁UI可讓使用者獨立變更其介面語言。 [了解更多資訊](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/connect.html?lang=zh-Hant#language-pref){target="_blank"}。
 
 +++
 
@@ -273,7 +273,7 @@ Adobe Campaign v7使用者介面提供4種語言版本：英文、法文、德�
 
 **常見行銷活動問題：**
 
-請參閱&#x200B;[**Campaign v8完整常見問題集**](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html){target="_blank"}，其中提供下列問題的詳細解答：
+請參閱&#x200B;[**Campaign v8完整常見問題集**](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html?lang=zh-Hant){target="_blank"}，其中提供下列問題的詳細解答：
 
 * Campaign快速入門
 * 輪廓與客群

@@ -60,8 +60,8 @@ ht-degree: 3%
 >* [設定 URL 追蹤選項](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/analytics/tracking/url-tracking){target="_blank"}
 >* [追蹤個人化連結](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/analytics/tracking/personalized-links){target="_blank"}
 >* [存取追蹤記錄](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/analytics/tracking/tracking-logs){target="_blank"}
->* [測試追蹤](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/testing-tracking){target="_blank"}
->* [追蹤報告](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/reporting/delivery-reports#tracking-indicators){target="_blank"}
+>* [測試追蹤](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/testing-tracking){target="_blank"}
+>* [追蹤報告](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/reporting/delivery-reports#tracking-indicators){target="_blank"}
 >
 >**此頁面僅記錄Campaign Classic v7的特定追蹤功能**，主要用於混合部署和內部部署。
 
