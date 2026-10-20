@@ -77,7 +77,7 @@ HTML編輯器可讓您輸入要插入表單頁面的內容。 若要開啟編輯
 ![](assets/s_ncs_admin_survey_add_link.png)
 
 * **[!UICONTROL Label]**&#x200B;是超文字連結的內容，因為它將顯示在表單頁面上。
-* **[!UICONTROL URL]**&#x200B;是需要的位址，例如： [https://www.adobe.com](https://www.adobe.com)網站，或[info@adobe.com](mailto:info@adobe.com)傳送訊息。
+* **[!UICONTROL URL]**&#x200B;是需要的位址，例如： [https://www.adobe.com/tw](https://www.adobe.com/tw)網站，或[info@adobe.com](mailto:info@adobe.com)傳送訊息。
 * **[!UICONTROL Window]**&#x200B;欄位可讓您選取網站中連結的顯示模式。 您可以決定在新視窗、目前視窗或其他視窗中開啟連結。
 * 您可以新增工具提示，如下所示：
 
