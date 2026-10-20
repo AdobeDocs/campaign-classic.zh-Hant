@@ -37,9 +37,9 @@ topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
 source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2202'
-ht-degree: 97%
+ht-degree: 100%
 ---
 # 2022 版本{#release-2022}
 
@@ -60,7 +60,7 @@ _2022 年 7 月 1 日_
 <tbody> 
 <tr> 
 <td> <p>在 iOS15 ，Apple 增加了具時效性通知的概念，當通知被視為具時效性，需要即時聯絡使用者時，可以讓應用程式開發人員繞過專注模式。</p>
-<p>在<a href="https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/push/rich-push/rich-push-ios" target="_blank">詳細檔案</a> （Campaign v8檔案）中瞭解如何建立敏感性通知。</p>
+<p>在<a href="https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/push/rich-push/rich-push-ios" target="_blank">詳細文件</a> (Campaign v8 文件) 中了解如何建立具時效性通知。</p>
 </td> 
 </tr> 
 </tbody> 
@@ -172,10 +172,10 @@ Adobe Campaign 現在相容於 Windows Server 2019。 請參閱 [Campaign 相容
 
 **其他變更**
 
-* 棄用後，Microsoft CRM、Salesforce、Oracle CRM 隨選操作活動已從介面中移除。 若要設定 Adobe Campaign 與 CRM 系統之間的資料同步，您可以使用 CRM 連接器活動。 [瞭解詳情](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/workflows/wf-activities/targeting-activities/crm-connector){target="_blank"} （Campaign v8檔案）
+* 棄用後，Microsoft CRM、Salesforce、Oracle CRM 隨選操作活動已從介面中移除。 若要設定 Adobe Campaign 與 CRM 系統之間的資料同步，您可以使用 CRM 連接器活動。 [閱讀全文](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/workflows/wf-activities/targeting-activities/crm-connector){target="_blank"} (Campaign v8 文件)
 * 此 **[!UICONTROL Encrypted identifier]** 欄位已新增至訪客結構描述 (nms:visitor)。 此欄位已經過計算，將用於網路應用程式。 當在中間來源執行個體上設定 Line 頻道時，即適用。
 * CRM 資料來源現在可用於&#x200B;**變更資料來源**&#x200B;活動。
-* 已在&#x200B;**錯誤管理**&#x200B;工作流程活動中新增屬性：**錯誤時中止**&#x200B;選項會自動停止工作流程。 之後將無法重新啟動 (NEO-29661)。 [瞭解詳情](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/workflows/advanced-management/advanced-parameters#in-case-of-errors){target="_blank"} （Campaign v8檔案）
+* 已在&#x200B;**錯誤管理**&#x200B;工作流程活動中新增屬性：**錯誤時中止**&#x200B;選項會自動停止工作流程。 之後將無法重新啟動 (NEO-29661)。 [閱讀全文](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/workflows/advanced-management/advanced-parameters#in-case-of-errors){target="_blank"} (Campaign v8 文件)
 * 專用序列現在用於產生 nmsGroup 表的主要金鑰，此表用於建立收件者的統計分組。 之前使用 xtknewId 序列。 (NEO-30832)
 * 新增支援，以便使用 CRM 連接器活動批次更新作業。
 * 改進傳送交易訊息的處理時間。 (NEO-40370)
