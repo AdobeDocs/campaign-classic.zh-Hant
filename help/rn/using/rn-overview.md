@@ -190,7 +190,7 @@ Adobe 團隊將帶領並引導您的組織完成這個過程。
 </tr>
 </table>
 
-## 額外資源{#support}
+## 其他資源{#support}
 
 * [尋找您的 Campaign 版本](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)。
 * [說明與支援](../../campaign-classic-home.md)
