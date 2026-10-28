@@ -34,9 +34,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
 source-git-commit: f079b19ac78b331499a6f3cf5fcc21e55827998c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1204'
-ht-degree: 86%
+ht-degree: 100%
 ---
 # 版本更新 {#rn-overview}
 
@@ -81,15 +81,15 @@ Adobe Campaign 會定期更新。 此定期更新的目的是為了讓您掌握�
 
 作為託管客戶，您無需採取任何動作便可透過最新穩定版本編號，自動享受升級的好處。 在[年度升級一節](#yearly-upgrade)中深入了解。 如果您從舊的版本編號移轉，Adobe 建議您先升級至此版本編號。
 
-## Hotflix {#hotflixes}
+## Hotfix {#hotflixes}
 
-在特殊情況下，Adobe可能會提供客戶特定的Hotfix，以便在標準版本提供修正之前解決問題。 Hotfix要求會逐一進行評估，且不屬於標準發行週期。
+在例外情況下，Adobe 可能會提供客戶專屬的 Hotfix，以便在標準版本提供修正之前解決問題。Hotfix 請求會逐案評估，不屬於標準版本週期。
 
-應透過Adobe客戶服務提出Hotfix請求。 如果獲得核准，系統會為受影響的客戶和產品組建準備一個Hotfix。 Hotfix並非適用於所有客戶的一般版本；Adobe可在檢閱後核准與其他受影響客戶共用。
+Hotfix 請求應透過 Adobe 客戶服務提出。若核准，會為受影響的客戶和產品建置準備 Hotfix。Hotfix 不是提供給所有客戶的一般版本；Adobe 可能在審閱後，核准與其他受影響的客戶共用。
 
-傳送Hotfix時，Hotfix詳細資料可能不會包含在公開發行說明中。 Adobe稍後可能會在適用版本的標準發行版本中包含hotfix。 我們並不保證包含性和時機。 如需瞭解每個標準版本所含的變更，請參閱版本注意事項。
+交付 Hotfix 時，其詳細資料可能不會寫進公開的發行說明。Adobe 之後可能會把 Hotfix 的修正納入適用版本的標準版本。是否納入以及時程均不保證。請參閱發行說明，了解每個標準版本包含的變更
 
-此客戶特定的Hotfix程式與上述重要安全性修補程式原則不同，Adobe可在此原則下將重要安全性修補程式套用至託管環境，恕不另行通知。
+這項客戶專屬的 Hotfix 流程不同於上述重大安全性修補原則。根據該原則，Adobe 可能在不事先通知的情況下，將重大安全性修補套用至代管環境。
 
 ### 託管環境的安全性修補 {#security-patching}
 
