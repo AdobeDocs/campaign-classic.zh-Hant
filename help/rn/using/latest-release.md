@@ -36,38 +36,38 @@ topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
 source-git-commit: 63ece0ce7bfca75468776da84e2eac8b34b13af8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1449'
-ht-degree: 91%
+ht-degree: 100%
 ---
 # 最新版本 {#latest-release}
 
 本頁面列出&#x200B;**最新 Campaign Classic v7 版本**&#x200B;的新功能、改善和修正。 每個新版本都會提供以顏色具體化的狀態。 請於[本頁](rn-overview.md)進一步了解 Campaign Classic v7 版本編號狀態。
 
-## 版本7.4.5 {#release-7-4-5}
+## 版本 7.4.5 {#release-7-4-5}
 
-### 建置9420 {#build-9420}
+### 版本編號 9420 {#build-9420}
 
 [!BADGE 一般可用性]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="一般可用性"}
 
-_2026年10月15日_
+_2026 年 10 月 15 日_
 
 #### 修正 {#fixes-7-4-5}
 
-* 修正Analytics外部帳戶可能因「過去」(410)錯誤而失敗的問題。 (NEO-99019)
-* 修正即使成功傳送相對應的訊息，部分傳送仍可能卡在個人化擱置狀態的問題。 (NEO-94471)
-* 修正內部鎖定機制可能進入重試回圈，導致伺服器上CPU使用率高的問題。 (NEO-94845)
-* 修正資料模型更新可能會斷斷續續失敗的問題。 (NEO-84347， NEO-84824)
-* 修正在建立或編輯傳送時，可能錯誤顯示「垃圾郵件檢查失敗」錯誤的問題。 (NEO-53888)
-* 修正收件者在重複軟退信後未按預期隔離的問題。 (NEO-94422)
+* 修正 Analytics 外部帳戶可能因「Gone」(410) 錯誤而失敗的問題。(NEO-99019)
+* 修正即使對應的訊息已成功傳送，部分傳遞仍可能卡在個人化待處理狀態的問題。(NEO-94471)
+* 修正內部鎖定機制可能進入重試迴圈，導致伺服器 CPU 使用率過高的問題。(NEO-94845)
+* 修正資料模型更新可能間歇失敗的問題。(NEO-84347, NEO-84824)
+* 修正建立或編輯傳遞時，可能誤出現「垃圾郵件檢查失敗」錯誤的問題。(NEO-53888)
+* 修正收件者在重複軟退回後未如預期遭到隔離的問題。(NEO-94422)
 
 ## 版本 7.4.4 {#release-7-4-4}
 
-### 建置9403 {#build-9403}
+### 版本編號 9403 {#build-9403}
 
 [!BADGE 一般可用性]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="一般可用性"}
 
-_2026年10月15日_
+_2026 年 10 月 15 日_
 
 #### 安全性改善 {#security-7-4-4-9403}
 
