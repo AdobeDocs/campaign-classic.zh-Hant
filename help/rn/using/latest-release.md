@@ -96,7 +96,7 @@ _2026 年 8 月 25 日_
 
 #### 安全性改善 {#security-7-4-4-9401}
 
-Adobe 已發佈 Adobe Campaign Classic 的安全性更新，以解決關鍵弱點。 我們鼓勵採用內部部署和混合部署的客戶儘快安裝更新。 Adobe 代管的執行個體已完成修復，客戶不需要採取任何動作。 您可以在[安全性公告](https://helpx.adobe.com/security/products/campaign/apsb26-134.html){target="_blank"}中找到更多資訊。
+Adobe 已發佈 Adobe Campaign Classic 的安全性更新，以解決關鍵弱點。 我們鼓勵採用內部部署和混合部署的客戶儘快安裝更新。 Adobe 代管的執行個體已完成修復，客戶不需要採取任何動作。 您可以在[安全性公告](https://helpx.adobe.com/tw/security/products/campaign/apsb26-134.html){target="_blank"}中找到更多資訊。
 
 必須重新啟動 Adobe Campaign 伺服器 (nlserver)，才能載入建置並完成部署。 重新啟動後，此修正預設即生效。
 
