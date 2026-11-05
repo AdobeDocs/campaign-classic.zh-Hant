@@ -28,9 +28,9 @@ topic_v2:
     internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 75d65377f93a40be104f7ec817e6a7609cccaf93
+source-git-commit: a119d402631c5d2dd3ab8d6d11dfd0cdba0d662f
 workflow-type: tm+mt
-source-wordcount: '1959'
+source-wordcount: '2010'
 ht-degree: 7%
 ---
 # 外部帳戶{#external-accounts}
@@ -484,3 +484,7 @@ Amazon Simple Storage Service (S3)聯結器可用來匯入或匯出資料至Adob
 * **[!UICONTROL Access key]**
 
   若要瞭解在何處尋找您的&#x200B;**[!UICONTROL Access key]**，請參閱此[頁面](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal)。
+
+  >[!NOTE]
+  >
+  >Azure Blob儲存體會依名稱首碼（而非模式）篩選檔案。 檔案遮罩中的尾端星號(`*`)已移除，因此`TEST_EXPORT_AZURE_*`會比對所有以`TEST_EXPORT_AZURE_`開頭的檔案。 不支援星號後的字元，例如`TEST_EXPORT_AZURE_*.csv`。 [在Microsoft檔案中進一步瞭解](https://learn.microsoft.com/en-us/rest/api/storageservices/list-blobs){target="_blank"}。
