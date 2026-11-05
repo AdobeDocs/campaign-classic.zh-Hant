@@ -28,9 +28,9 @@ topic_v2:
     internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 75d65377f93a40be104f7ec817e6a7609cccaf93
+source-git-commit: a119d402631c5d2dd3ab8d6d11dfd0cdba0d662f
 workflow-type: tm+mt
-source-wordcount: '1959'
+source-wordcount: '2010'
 ht-degree: 7%
 ---
 # 外部帳戶{#external-accounts}
@@ -66,7 +66,7 @@ Adobe Campaign 隨附一組預先定義的外部帳戶。 若要設定與外部�
 
 ### 退回郵件 {#bounce-mails-external-account}
 
-**退回郵件**&#x200B;外部帳戶指定要用來連線至電子郵件服務的外部POP3帳戶。 如需此外部帳戶的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/inbound-emails.html?lang=zh-Hant){target="_blank"}。
+**退回郵件**&#x200B;外部帳戶指定要用來連線至電子郵件服務的外部POP3帳戶。 如需此外部帳戶的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/inbound-emails.html){target="_blank"}。
 
 所有設定為POP3存取的伺服器都可以用來接收傳回郵件。
 
@@ -138,7 +138,7 @@ Adobe Campaign 隨附一組預先定義的外部帳戶。 若要設定與外部�
 * [直接郵件](../../delivery/using/about-direct-mail-channel.md)
 * [代理商](../../delivery/using/communication-channels.md#other-channels)
 * [X （先前稱為Twitter）](../../social/using/about-social-marketing.md)
-* [iOS和Android管道](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html?lang=zh-Hant){target="_blank"}
+* [iOS和Android管道](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html){target="_blank"}
 
 ### 電子郵件路由 {#email-routing-external-account}
 
@@ -178,7 +178,7 @@ Adobe Campaign 隨附一組預先定義的外部帳戶。 若要設定與外部�
 
 ### FTP {#ftp-external-account}
 
-FTP外部帳戶可讓您設定並測試對Adobe Campaign外部伺服器的存取權。 若要設定與外部系統（例如用於檔案傳輸的FTP伺服器898）的連線，您可以建立自己的外部帳戶。 有關更多資訊，請參閱[Campaign v8 文件](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=zh-Hant){target="_blank"}。
+FTP外部帳戶可讓您設定並測試對Adobe Campaign外部伺服器的存取權。 若要設定與外部系統（例如用於檔案傳輸的FTP伺服器898）的連線，您可以建立自己的外部帳戶。 有關更多資訊，請參閱[Campaign v8 文件](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}。
 
 若要這麼做，請在此外部帳戶中指定用來建立與FTP伺服器連線的位址和認證
 
@@ -208,7 +208,7 @@ FTP外部帳戶可讓您設定並測試對Adobe Campaign外部伺服器的存取
 
 ### SFTP {#sftp-external-account}
 
-SFTP外部帳戶可讓您設定並測試對Adobe Campaign外部伺服器的存取權。 若要設定與外部系統（例如用於檔案傳輸的SFTP）的連線，您可以建立自己的外部帳戶。 有關更多資訊，請參閱[Campaign v8 文件](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=zh-Hant){target="_blank"}。
+SFTP外部帳戶可讓您設定並測試對Adobe Campaign外部伺服器的存取權。 若要設定與外部系統（例如用於檔案傳輸的SFTP）的連線，您可以建立自己的外部帳戶。 有關更多資訊，請參閱[Campaign v8 文件](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}。
 
 ![](assets/ext_account_4.png)
 
@@ -435,7 +435,7 @@ To add SSH keys on Windows:
 
 ### Amazon簡單儲存服務(S3) {#amazon-simple-storage-service--s3--external-account}
 
-Amazon Simple Storage Service (S3)聯結器可用來匯入或匯出資料至Adobe Campaign。 您可以在工作流程活動中設定它。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=zh-Hant){target="_blank"}。
+Amazon Simple Storage Service (S3)聯結器可用來匯入或匯出資料至Adobe Campaign。 您可以在工作流程活動中設定它。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}。
 
 ![](assets/ext_account_3.png)
 
@@ -467,7 +467,7 @@ Amazon Simple Storage Service (S3)聯結器可用來匯入或匯出資料至Adob
 
 ### Azure Blob 儲存體 {#azure-blob-external-account}
 
-**Azure Blob儲存空間**&#x200B;外部帳戶可用來匯入或匯出資料至Adobe Campaign （使用&#x200B;**[!UICONTROL Transfer file]**&#x200B;工作流程活動）。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=zh-Hant){target="_blank"}。
+**Azure Blob儲存空間**&#x200B;外部帳戶可用來匯入或匯出資料至Adobe Campaign （使用&#x200B;**[!UICONTROL Transfer file]**&#x200B;工作流程活動）。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}。
 
 ![](assets/ext_account_23.png)
 
@@ -484,3 +484,7 @@ Amazon Simple Storage Service (S3)聯結器可用來匯入或匯出資料至Adob
 * **[!UICONTROL Access key]**
 
   若要瞭解在何處尋找您的&#x200B;**[!UICONTROL Access key]**，請參閱此[頁面](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal)。
+
+  >[!NOTE]
+  >
+  >Azure Blob儲存體會依名稱首碼（而非模式）篩選檔案。 檔案遮罩中的尾端星號(`*`)已移除，因此`TEST_EXPORT_AZURE_*`會比對所有以`TEST_EXPORT_AZURE_`開頭的檔案。 不支援星號後的字元，例如`TEST_EXPORT_AZURE_*.csv`。 [在Microsoft檔案中進一步瞭解](https://learn.microsoft.com/en-us/rest/api/storageservices/list-blobs){target="_blank"}。
