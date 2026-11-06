@@ -236,7 +236,7 @@ ht-degree: 4%
 
 ## 與Adobe Experience Manager整合 {#integration-with-adobe-experience-manager}
 
-如果安裝是「內部部署」，Adobe Campaign與Adobe Experience Manager之間的整合需要開啟多個連線埠。 如需設定此整合的詳細資訊，請參閱[詳細檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/ac-aem){target="_blank"} （Campaign v8檔案）。
+如果安裝是「內部部署」，Adobe Campaign與Adobe Experience Manager之間的整合需要開啟多個連線埠。 如需設定此整合的詳細資訊，請參閱[詳細檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/connect/ac-aem){target="_blank"} （Campaign v8檔案）。
 
 <table> 
  <tbody> 
