@@ -50,9 +50,9 @@ ht-degree: 3%
 
 本頁涵蓋URL個人化、URL簽名以及包含個人資訊的頁面的保護。
 
-作為從Campaign v7轉變到v8的一部分，Campaign Classic檔案集已簡化並重新組織。 Campaign v8檔案集中現在提供常見功能。 若要進一步瞭解資料限制和隱私權要求，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/privacy/security#data-restriction){target=_blank}。
+作為從Campaign v7轉變到v8的一部分，Campaign Classic檔案集已簡化並重新組織。 Campaign v8檔案集中現在提供常見功能。 若要進一步瞭解資料限制和隱私權要求，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/privacy/security#data-restriction){target=_blank}。
 
-[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/privacy/security#data-restriction){target=_blank}
+[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/privacy/security#data-restriction){target=_blank}
 
 在Campaign Classic v7中，限制存取整個實體需要版本編號8770或更新版本。
 
@@ -68,11 +68,11 @@ ht-degree: 3%
 
 ### 建議
 
-若要驗證並確保您未使用上文，請透過[Campaign一般查詢編輯器](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/query/query-editor){target="_blank"} （Campaign v8檔案）對追蹤URL表格執行查詢，或在查詢活動中建立具有篩選條件的工作流程。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}。
+若要驗證並確保您未使用上文，請透過[Campaign一般查詢編輯器](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/data/query/query-editor){target="_blank"} （Campaign v8檔案）對追蹤URL表格執行查詢，或在查詢活動中建立具有篩選條件的工作流程。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=zh-Hant){target="_blank"}。
 
 範例：
 
-1. 建立工作流程並新增&#x200B;**查詢**&#x200B;活動。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}。
+1. 建立工作流程並新增&#x200B;**查詢**&#x200B;活動。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=zh-Hant){target="_blank"}。
 
 1. 開啟&#x200B;**查詢**&#x200B;活動並在`nmsTrackingUrl`資料表上建立篩選器，如下所示：
 

@@ -42,6 +42,6 @@ ht-degree: 4%
 
 因此，工作流程中使用的所有活動都會使用自訂表格，不需要任何其他手動設定。
 
-如需工作流程的詳細資訊，請參閱[本節](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/about-workflows){target="_blank"} （Campaign v8檔案）。
+如需工作流程的詳細資訊，請參閱[本節](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/workflows/introduction/about-workflows){target="_blank"} （Campaign v8檔案）。
 
 ![](assets/cfg_external_table_workflow.png)

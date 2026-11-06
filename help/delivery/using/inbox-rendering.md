@@ -53,9 +53,9 @@ ht-degree: 8%
 
 Adobe Campaign運用[Litmus](https://litmus.com/email-testing)網頁式電子郵件測試解決方案來擷取電子郵件呈現，並將這些呈現呈現提供給專屬的報告使用。
 
-作為從Campaign v7轉變到v8的一部分，Campaign Classic檔案集已簡化並重新組織。 Campaign v8檔案集中現在提供常見功能。 若要深入瞭解收件匣轉譯，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/deliverability-management/inbox-rendering){target=_blank}。
+作為從Campaign v7轉變到v8的一部分，Campaign Classic檔案集已簡化並重新組織。 Campaign v8檔案集中現在提供常見功能。 若要深入瞭解收件匣轉譯，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/deliverability-management/inbox-rendering){target=_blank}。
 
-[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/deliverability-management/inbox-rendering){target=_blank}
+[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/deliverability-management/inbox-rendering){target=_blank}
 
 ## 正在啟用收件匣轉譯 {#activating-inbox-rendering}
 

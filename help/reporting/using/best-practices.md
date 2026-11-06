@@ -61,7 +61,7 @@ ht-degree: 6%
    * 新增指標至現有報表。 若要了解詳細資訊，請參閱[本章節](../../reporting/using/about-reports-creation-in-campaign.md)
    * 檢視資料庫中的資料。 若要了解詳細資訊，請參閱[本章節](../../reporting/using/about-descriptive-analysis.md)
    * 建立新的傳遞報告。 在本節[&#128279;](../../reporting/using/about-reports-creation-in-campaign.md)瞭解更多，
-   * 從Adobe Campaign資料庫匯出資料(透過工作流程，請參閱[本節](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/about-workflows){target="_blank"} （Campaign v8檔案）
+   * 從Adobe Campaign資料庫匯出資料(透過工作流程，請參閱[本節](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/workflows/introduction/about-workflows){target="_blank"} （Campaign v8檔案）
    * 建立樞紐分析表。 若要了解詳細資訊，請參閱[本章節](../../reporting/using/creating-a-table.md#creating-a-breakdown-or-pivot-table)
    * 探索彙總的資料。 若要了解詳細資訊，請參閱[本章節](../../reporting/using/ac-cubes.md)
    * 使用助理來分析資料。 若要了解詳細資訊，請參閱[本章節](../../reporting/using/about-descriptive-analysis.md)
