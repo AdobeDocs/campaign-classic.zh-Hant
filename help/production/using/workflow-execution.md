@@ -87,7 +87,7 @@ ht-degree: 11%
 
    >[!NOTE]
    >
-   >將&#x200B;**`<instance-name>`**取代為您執行個體的名稱（生產、開發等）。 執行個體名稱會透過設定檔案識別：
+   >將&#x200B;**`<instance-name>`**&#x200B;取代為您執行個體的名稱（生產、開發等）。 執行個體名稱會透過設定檔案識別：
    >`[path of application]nl6/conf/config-<instance-name>.xml`
 
    如需如何重新啟動模組的詳細資訊，請參閱[本節](../../production/using/usual-commands.md#module-launch-commands)。
@@ -132,7 +132,7 @@ ht-degree: 11%
 
    >[!NOTE]
    >
-   >將&#x200B;**`<instance-name>`**取代為您執行個體的名稱（生產、開發等）。 執行個體名稱會透過設定檔案識別：
+   >將&#x200B;**`<instance-name>`**&#x200B;取代為您執行個體的名稱（生產、開發等）。 執行個體名稱會透過設定檔案識別：
    >`[path of application]nl6/conf/config-<instance-name>.xml`
 
    如需如何重新啟動模組的詳細資訊，請參閱[本節](../../production/using/usual-commands.md#module-launch-commands)。
