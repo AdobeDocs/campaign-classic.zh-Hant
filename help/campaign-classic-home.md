@@ -76,7 +76,7 @@ Campaign Classic v7.4.5 - 2026年10月建置版本（建置版本9420）針對An
     <div><strong>新增和管理輪廓</strong><br/>輕鬆探索 Adobe Campaign v7 資料庫中的輪廓管理。 手動或透過匯入新增輪廓，輕鬆精簡客戶資料和自訂行銷活動。</div>
     </td>
     <td>
-    <a href="https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/about-workflows" target="_blank"><img src="assets/do-not-localize/start-workflows.jpeg"></a>
+    <a href="https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/workflows/introduction/about-workflows" target="_blank"><img src="assets/do-not-localize/start-workflows.jpeg"></a>
     <div><strong>使用工作流程自動化</strong><br/>了解如何利用工作流程來設計流程，包括細分、行銷活動執行、檔案處理、人員參與等。
     </div></td>
     <td>
@@ -87,7 +87,7 @@ Campaign Classic v7.4.5 - 2026年10月建置版本（建置版本9420）針對An
   <tr style="border: 0;">
     <td align="center"><a href="platform/using/launching-adobe-campaign.md"><img src="assets/do-not-localize/learn-more-button.svg"></a></td>
     <td align="center"><a href="platform/using/about-profiles.md"><img src="assets/do-not-localize/learn-more-button.svg"></a></td>
-    <td align="center"><a href="https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/about-workflows" target="_blank"><img src="assets/do-not-localize/learn-more-button.svg"></a></td>
+    <td align="center"><a href="https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/workflows/introduction/about-workflows" target="_blank"><img src="assets/do-not-localize/learn-more-button.svg"></a></td>
     <td align="center"><a href="delivery/using/communication-channels.md"><img src="assets/do-not-localize/learn-more-button.svg"></a></td>
     </tr>
 </table>
@@ -104,7 +104,7 @@ Campaign Classic v7.4.5 - 2026年10月建置版本（建置版本9420）針對An
     <td>
       <img src="assets/do-not-localize/icon-experience.svg" width="35px">
     <br/>
-      <strong>客戶體驗</strong><br/><a href="https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/about-workflows" target="_blank">使用工作流程自動化</a> （Campaign v8檔案） - <a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=zh-Hant" target="_blank">行銷活動</a> - <a href="interaction/using/interaction-and-offer-management.md">互動與優惠方案管理</a> - <a href="delivery/using/about-personalization.md">Personalization</a> - <a href="https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/analytics/reports/gs-reporting" target="_blank">報告</a> （Campaign v8檔案）
+      <strong>客戶體驗</strong><br/><a href="https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/workflows/introduction/about-workflows" target="_blank">使用工作流程自動化</a> （Campaign v8檔案） - <a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=zh-Hant" target="_blank">行銷活動</a> - <a href="interaction/using/interaction-and-offer-management.md">互動與優惠方案管理</a> - <a href="delivery/using/about-personalization.md">Personalization</a> - <a href="https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/analytics/reports/gs-reporting" target="_blank">報告</a> （Campaign v8檔案）
     </td>
     <td>
       <img src="assets/do-not-localize/icon-send.svg" width="35px">
@@ -139,12 +139,12 @@ Campaign v8檔案中記錄的內容已從v7檔案中移除。 使用此表格來
 | --- | --- |
 | 使用者介面 | [探索使用者介面](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/new/campaign-ui){target="_blank"} |
 | 設定檔、清單、匯入和匯出 | [匯入設定檔和資料](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/data/import){target="_blank"} |
-| 工作流程 | [關於工作流程](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/about-workflows){target="_blank"} |
-| 行銷活動 | [開始使用行銷活動](https://experienceleague.adobe.com/en/docs/campaign/automation/campaign-orchestration/set-up-campaigns){target="_blank"} |
+| 工作流程 | [關於工作流程](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/workflows/introduction/about-workflows){target="_blank"} |
+| 行銷活動 | [開始使用行銷活動](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/campaign-orchestration/set-up-campaigns){target="_blank"} |
 | 建立和傳送傳遞 | [建立訊息](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/create-message){target="_blank"} |
 | 內建報告 | [開始使用報告](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/analytics/reports/gs-reporting){target="_blank"} |
-| 權限 | [開始使用許可權](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/permissions/gs-permissions){target="_blank"} |
-| 輸入表單 | [開始使用輸入表單](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"} |
+| 權限 | [開始使用許可權](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/permissions/gs-permissions){target="_blank"} |
+| 輸入表單 | [開始使用輸入表單](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"} |
 
 ## 其他資源
 
