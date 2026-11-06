@@ -28,14 +28,18 @@ topic_v2:
     internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 2e00628a95aa333698f11233e851b54423f11f29
+source-git-commit: 3d6f0751869871f811046dd52bab59dbcf587350
 workflow-type: tm+mt
-source-wordcount: '2023'
+source-wordcount: '1897'
 ht-degree: 6%
 ---
 # 外部帳戶{#external-accounts}
 
 Adobe Campaign 隨附一組預先定義的外部帳戶。 若要設定與外部系統的連線，您可以建立新的外部帳戶。
+
+作為從Campaign v7轉變到v8的一部分，Campaign Classic檔案集已簡化並重新組織。 Campaign v8檔案集中現在提供常見功能。 若要進一步瞭解外部帳戶，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/external-accounts){target=_blank}。
+
+[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/external-accounts){target=_blank}
 
 技術流程（例如技術工作流程或宣傳工作流程）會使用外部帳戶。 例如，在工作流程中或與任何其他應用程式（Adobe Target、Experience Manager等）進行資料交換時，您需要選取外部帳戶。
 
@@ -66,7 +70,7 @@ Adobe Campaign 隨附一組預先定義的外部帳戶。 若要設定與外部�
 
 ### 退回郵件 {#bounce-mails-external-account}
 
-**退回郵件**&#x200B;外部帳戶指定要用來連線至電子郵件服務的外部POP3帳戶。 如需此外部帳戶的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/inbound-emails.html?lang=zh-Hant){target="_blank"}。
+**退回郵件**&#x200B;外部帳戶指定要用來連線至電子郵件服務的外部POP3帳戶。 如需此外部帳戶的詳細資訊，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/inbound-emails.html){target="_blank"}。
 
 所有設定為POP3存取的伺服器都可以用來接收傳回郵件。
 
@@ -138,7 +142,7 @@ Adobe Campaign 隨附一組預先定義的外部帳戶。 若要設定與外部�
 * [直接郵件](../../delivery/using/about-direct-mail-channel.md)
 * [代理商](../../delivery/using/communication-channels.md#other-channels)
 * [X （先前稱為Twitter）](../../social/using/about-social-marketing.md)
-* [iOS和Android管道](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html?lang=zh-Hant){target="_blank"}
+* [iOS和Android管道](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html){target="_blank"}
 
 ### 電子郵件路由 {#email-routing-external-account}
 
@@ -178,7 +182,7 @@ Adobe Campaign 隨附一組預先定義的外部帳戶。 若要設定與外部�
 
 ### FTP {#ftp-external-account}
 
-FTP外部帳戶可讓您設定並測試對Adobe Campaign外部伺服器的存取權。 若要設定與外部系統（例如用於檔案傳輸的FTP伺服器898）的連線，您可以建立自己的外部帳戶。 有關更多資訊，請參閱[Campaign v8 文件](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=zh-Hant){target="_blank"}。
+FTP外部帳戶可讓您設定並測試對Adobe Campaign外部伺服器的存取權。 若要設定與外部系統（例如用於檔案傳輸的FTP伺服器898）的連線，您可以建立自己的外部帳戶。 有關更多資訊，請參閱[Campaign v8 文件](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}。
 
 若要這麼做，請在此外部帳戶中指定用來建立與FTP伺服器連線的位址和認證
 
@@ -208,7 +212,7 @@ FTP外部帳戶可讓您設定並測試對Adobe Campaign外部伺服器的存取
 
 ### SFTP {#sftp-external-account}
 
-SFTP外部帳戶可讓您設定並測試對Adobe Campaign外部伺服器的存取權。 若要設定與外部系統（例如用於檔案傳輸的SFTP）的連線，您可以建立自己的外部帳戶。 有關更多資訊，請參閱[Campaign v8 文件](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=zh-Hant){target="_blank"}。
+SFTP外部帳戶可讓您設定並測試對Adobe Campaign外部伺服器的存取權。 若要設定與外部系統（例如用於檔案傳輸的SFTP）的連線，您可以建立自己的外部帳戶。 有關更多資訊，請參閱[Campaign v8 文件](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}。
 
 ![](assets/ext_account_4.png)
 
@@ -333,7 +337,7 @@ To add SSH keys on Windows:
 
   用來連線至Adobe Experience Manager編寫執行個體的密碼。
 
-如需詳細資訊，請參閱此[區段](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/connect/ac-aem){target="_blank"} （Campaign v8檔案）。
+如需詳細資訊，請參閱此[區段](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/ac-aem){target="_blank"} （Campaign v8檔案）。
 
 ## CRM聯結器外部帳戶
 
@@ -433,41 +437,9 @@ To add SSH keys on Windows:
 
 ## 傳輸資料外部帳戶
 
-### Amazon簡單儲存服務(S3) {#amazon-simple-storage-service--s3--external-account}
-
-Amazon Simple Storage Service (S3)聯結器可用來匯入或匯出資料至Adobe Campaign。 您可以在工作流程活動中設定它。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=zh-Hant){target="_blank"}。
-
-![](assets/ext_account_3.png)
-
-當您設定此新外部帳戶時，您必須提供下列詳細資訊：
-
-* **[!UICONTROL AWS S3 Account Server]**
-
-  您伺服器的URL，應填入如下：
-
-  ```
-  <S3bucket name>.s3.amazonaws.com/<s3object path>
-  ```
-
-* **[!UICONTROL AWS access key ID]**
-
-  若要瞭解在何處尋找您的AWS存取金鑰ID，請參閱此[頁面](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys) 。
-
-* **[!UICONTROL Secret access key to AWS]**
-
-  若要瞭解在何處尋找您的AWS秘密存取金鑰，請參閱此[頁面](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/)。
-
-* **[!UICONTROL AWS Region]**
-
-  若要深入瞭解AWS地區，請參閱此[頁面](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/)。
-
-* **[!UICONTROL Use server side encryption]**&#x200B;核取方塊可讓您以S3加密模式儲存檔案。
-
-若要瞭解在何處尋找存取金鑰ID和機密存取金鑰，請參閱Amazon網站服務[檔案](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys)。
-
 ### Azure Blob 儲存體 {#azure-blob-external-account}
 
-**Azure Blob儲存空間**&#x200B;外部帳戶可用來匯入或匯出資料至Adobe Campaign （使用&#x200B;**[!UICONTROL Transfer file]**&#x200B;工作流程活動）。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=zh-Hant){target="_blank"}。
+**Azure Blob儲存空間**&#x200B;外部帳戶可用來匯入或匯出資料至Adobe Campaign （使用&#x200B;**[!UICONTROL Transfer file]**&#x200B;工作流程活動）。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}。
 
 ![](assets/ext_account_23.png)
 

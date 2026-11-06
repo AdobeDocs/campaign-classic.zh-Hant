@@ -29,9 +29,9 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 9753491edbeba9df2c0a9dcf53b3bd5ea87c32ca
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '393'
 ht-degree: 8%
 ---
 # 存取權管理 {#access-management}
@@ -62,7 +62,7 @@ WebApp運運算元是立即可用的管理員。 若要改善安全性，請遵�
 
 避免在管理員群組中新增太多運運算元（或具有管理員命名許可權）。 它們是功能非常強大的運運算元（它們可以執行所有SQL陳述式、在伺服器上執行命令等等）。
 
-Adobe Campaign透過[已命名的許可權](../../platform/using/access-management.md#named-rights)提供三個高階許可權：
+Adobe Campaign透過[已命名的許可權](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/permissions/manage-permissions#use-named-rights){target="_blank"}提供三個高階許可權（Campaign v8檔案）：
 
 * **管理** （管理員）：提供存取所有專案的許可權，並允許執行所有專案，略過所有命名的許可權檢查，因此包含程式執行(createProcess)和SQL命名的許可權
 

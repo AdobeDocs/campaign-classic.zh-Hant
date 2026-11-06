@@ -30,10 +30,10 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
+source-git-commit: 9753491edbeba9df2c0a9dcf53b3bd5ea87c32ca
 workflow-type: tm+mt
-source-wordcount: '1904'
-ht-degree: 1%
+source-wordcount: '1269'
+ht-degree: 3%
 ---
 # 編輯表單{#editing-forms}
 
@@ -41,12 +41,16 @@ ht-degree: 1%
 
 行銷人員和操作員使用輸入表單來建立、修改和預覽記錄。 Forms會顯示資訊的視覺化表示法。
 
+作為從Campaign v7轉變到v8的一部分，Campaign Classic檔案集已簡化並重新組織。 Campaign v8檔案集中現在提供常見功能。 若要深入瞭解輸入表單，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms){target=_blank}。
+
+[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms){target=_blank}
+
 您可以建立和修改輸入表單：
 
 * 您可以修改預設提供的工廠輸入表單。 工廠輸入表單是以工廠資料結構描述為基礎。
 * 您可以根據您定義的資料結構描述建立自訂輸入表單。
 
-Forms是`xtk:form`型別的實體。 您可以在`xtk:form`結構描述中檢視輸入表單結構。 若要檢視此結構描述，請從功能表中選擇&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data schemas]**。 深入瞭解[表單結構](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"} （Campaign v8檔案）。
+Forms是`xtk:form`型別的實體。 您可以在`xtk:form`結構描述中檢視輸入表單結構。 若要檢視此結構描述，請從功能表中選擇&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data schemas]**。 深入瞭解[表單結構](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"} （Campaign v8檔案）。
 
 若要存取輸入表單，請從功能表選擇&#x200B;**[!UICONTROL Administration]> [!UICONTROL Configuration] >[!UICONTROL Input forms]**：
 
@@ -56,7 +60,7 @@ Forms是`xtk:form`型別的實體。 您可以在`xtk:form`結構描述中檢視
 
 ![](assets/d_ncs_integration_form_edit.png)
 
-[瞭解詳情](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/forms#formatting){target="_blank"} （Campaign v8檔案）。
+[閱讀更多](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms#formatting){target="_blank"} (Campaign v8 文件)。
 
 若要預覽表單，請按一下&#x200B;**[!UICONTROL Preview]**&#x200B;標籤：
 
@@ -80,7 +84,7 @@ Forms是`xtk:form`型別的實體。 您可以在`xtk:form`結構描述中檢視
 
 * 助理
 
-  此表單包含多個以特定順序排序的浮動熒幕。 使用者從一個畫面瀏覽至下一個畫面。 [瞭解詳情](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/forms#wizards){target="_blank"} （Campaign v8檔案）。
+  此表單包含多個以特定順序排序的浮動熒幕。 使用者從一個畫面瀏覽至下一個畫面。 [閱讀更多](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms#wizards){target="_blank"} (Campaign v8 文件)。
 
 * 圖示方塊
 
@@ -101,72 +105,6 @@ Forms是`xtk:form`型別的實體。 您可以在`xtk:form`結構描述中檢視
 * 水平窗格
 
   此表單會顯示專案清單。
-
-## 容器
-
-在表單中，您可以將容器用於各種用途：
-
-* 在表單中整理內容
-* 定義輸入欄位的存取權
-* 在其他表單中巢狀內嵌表單
-
-[瞭解詳情](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/forms#containers){target="_blank"} （Campaign v8檔案）。
-
-### 組織內容
-
-使用容器來組織表單中的內容：
-
-* 您可以將欄位分組為區段。
-* 您可以將頁面新增至多頁表單。
-
-若要插入容器，請使用`<container>`元素。 [瞭解詳情](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/forms#containers){target="_blank"} （Campaign v8檔案）。
-
-#### 群組欄位
-
-使用容器將輸入欄位分組為有組織的區段。
-
-若要將區段插入表單中，請使用此專案： `<container type="frame">`。 若要新增章節標題，可選擇使用`label`屬性。
-
-語法： `<container type="frame" label="`*section_title*`"> […] </container>`
-
-在此範例中，容器定義&#x200B;**建立**&#x200B;區段，包含&#x200B;**[!UICONTROL Created by]**&#x200B;和&#x200B;**[!UICONTROL Name]**&#x200B;輸入欄位：
-
-```xml
-<form _cs="Coupons (nms)" entitySchema="xtk:form" img="xtk:form.png" label="Coupons"
-      name="coupon" namespace="nms" type="default" xtkschema="xtk:form">
-  <input xpath="@code"/>
-  <input xpath="@type"/>
-  <container label="Creation" type="frame">
-    <input xpath="createdBy"/>
-    <input xpath="createdBy/@name"/>
-  </container>
-</form>
-```
-
-![](assets/console_screen_form.png)
-
-#### 將頁面新增至多頁表單
-
-若為多頁表單，請使用容器建立表單頁面。
-
-此範例顯示表單之&#x200B;**一般**&#x200B;和&#x200B;**詳細資料**&#x200B;頁面的容器：
-
-```xml
-<container img="ncm:book.png" label="General">
-[…]
-</container>
-<container img="ncm:detail.png" label="Details">
-[…]
-</container>
-```
-
-### 定義欄位存取權
-
-使用容器來定義可見專案並定義欄位的存取權。 您可以開啟或關閉欄位群組。
-
-### 巢狀內嵌表單
-
-使用容器在其他表單中巢狀內嵌表單。 [閱讀更多](#add-pages-to-multipage-forms)。
 
 ## 影像參考
 
@@ -232,7 +170,7 @@ Forms是`xtk:form`型別的實體。 您可以在`xtk:form`結構描述中檢視
 
 1. 插入表單元素。
 
-   例如，若要插入輸入欄位，請使用`<input>`元素。 將`xpath`屬性設定為欄位參考為XPath運算式。 [瞭解詳情](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/schema-structure#reference-with-xpath){target="_blank"} （Campaign v8檔案）。
+   例如，若要插入輸入欄位，請使用`<input>`元素。 將`xpath`屬性設定為欄位參考為XPath運算式。 [閱讀更多](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/schema-structure#reference-with-xpath){target="_blank"} (Campaign v8 文件)。
 
    此範例顯示以`nms:recipient`結構描述為基礎的輸入欄位。
 
@@ -265,7 +203,7 @@ Forms是`xtk:form`型別的實體。 您可以在`xtk:form`結構描述中檢視
    | 核取方塊 | `type="checkbox"` |
    | 編輯樹狀 | `type="tree"` |
 
-   深入瞭解[記憶體清單控制項](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/forms#memory-list-controls){target="_blank"} （Campaign v8檔案）。
+   深入瞭解[記憶體清單控制項](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms#memory-list-controls){target="_blank"} （Campaign v8檔案）。
 
 1. 選擇性地定義欄位的存取權：
 
@@ -303,165 +241,7 @@ Forms是`xtk:form`型別的實體。 您可以在`xtk:form`結構描述中檢視
 
 ## 建立多頁表單 {#create-multipage-form}
 
-您可以建立多頁表單。 您也可以在其他表單中巢狀內嵌表單。
-
-### 建立`iconbox`表單
-
-使用`iconbox`表單型別在表單左側顯示圖示，將使用者帶往表單的不同頁面。
-
-![](assets/iconbox_form_preview.png)
-
-若要將現有表單的型別變更為`iconbox`，請遵循下列步驟：
-
-1. 將`<form>`專案的`type`屬性變更為`iconbox`：
-
-   ```xml
-   <form […] type="iconbox">
-   ```
-
-1. 為每個表單頁面設定容器：
-
-   1. 新增`<container>`專案做為`<form>`專案的子項。
-   1. 若要定義圖示的標籤和影像，請使用`label`和`img`屬性。
-
-      ```xml
-      <form entitySchema="xtk:form" name="Service provider" namespace="nms" type="iconbox" xtkschema="xtk:form">
-          <container img="xtk:properties.png" label="General">
-              <input xpath="@label"/>
-              <input xpath="@name"/>
-              […]
-          </container>
-          <container img="nms:msgfolder.png" label="Details">
-              <input xpath="@address"/>
-              […]
-          </container>
-          <container img="nms:supplier.png" label="Services">
-              […]
-          </container>
-      </form>
-      ```
-
-   或者，從現有`<container>`元素移除`type="frame"`屬性。
-
-### 建立Notebook表單
-
-使用`notebook`表單型別在表單頂端顯示索引標籤，將使用者帶往不同的頁面。
-
-![](assets/notebook_form_preview.png)
-
-若要將現有表單的型別變更為`notebook`，請遵循下列步驟：
-
-1. 將`<form>`專案的`type`屬性變更為`notebook`：
-
-   ```xml
-   <form […] type="notebook">
-   ```
-
-1. 為每個表單頁面新增容器：
-
-   1. 新增`<container>`專案做為`<form>`專案的子項。
-   1. 若要定義圖示的標籤和影像，請使用`label`和`img`屬性。
-
-   ```xml
-     <form entitySchema="xtk:form" name="Service provider" namespace="nms" type="notebook" xtkschema="xtk:form">
-         <container label="General">
-             <input xpath="@label"/>
-             <input xpath="@name"/>
-             […]
-         </container>
-         <container label="Details">
-             <input xpath="@address"/>
-             […]
-         </container>
-         <container label="Services">
-             […]
-         </container>
-     </form>
-   ```
-
-   或者，從現有`<container>`元素移除`type="frame"`屬性。
-
-### 巢狀內嵌表單
-
-您可以將表單巢狀內嵌在其他表單中。 例如，您可以在iconbox表單中巢狀內嵌記事本表單。
-
-巢狀層級會控制導覽。 使用者可向下展開至子表單。
-
-若要在其他表單中巢狀內嵌表單，請插入`<container>`元素並將`type`屬性設定為表單型別。 對於最上層表單，您可以在外部容器或`<form>`元素中設定表單型別。
-
-### 範例
-
-此範例顯示一個複雜的形式：
-
-* 最上層表單是圖示方塊表單。 此表單包含兩個標示為&#x200B;**一般**&#x200B;和&#x200B;**詳細資料**&#x200B;的容器。
-
-  因此，外部表單會在最上層顯示&#x200B;**一般**&#x200B;和&#x200B;**詳細資料**&#x200B;頁面。 若要存取這些頁面，使用者請按一下表單左側的圖示。
-
-* 子表單是巢狀在&#x200B;**一般**&#x200B;容器中的筆記本表單。 子表單包含兩個標示為&#x200B;**名稱**&#x200B;和&#x200B;**連絡人**&#x200B;的容器。
-
-```xml
-<form _cs="Profile (nms)" entitySchema="xtk:form" img="xtk:form.png" label="Profile" name="profile" namespace="nms" xtkschema="xtk:form">
-  <container type="iconbox">
-    <container img="ncm:general.png" label="General">
-      <container type="notebook">
-        <container label="Name">
-          <input xpath="@firstName"/>
-          <input xpath="@lastName"/>
-        </container>
-        <container label="Contact">
-          <input xpath="@email"/>
-        </container>
-      </container>
-    </container>
-    <container img="ncm:detail.png" label="Details">
-      <input xpath="@birthDate"/>
-    </container>
-  </container>
-</form>
-```
-
-因此，外部表單的&#x200B;**一般**&#x200B;頁面會顯示&#x200B;**名稱**&#x200B;和&#x200B;**連絡人**&#x200B;標籤。
-
-![](assets/nested_forms_preview.png)
-
-若要在其他表單中巢狀內嵌表單，請插入`<container>`元素並將`type`屬性設定為表單型別。 對於最上層表單，您可以在外部容器或`<form>`元素中設定表單型別。
-
-### 範例
-
-此範例顯示一個複雜的形式：
-
-* 最上層表單是圖示方塊表單。 此表單包含兩個標示為&#x200B;**一般**&#x200B;和&#x200B;**詳細資料**&#x200B;的容器。
-
-  因此，外部表單會在最上層顯示&#x200B;**一般**&#x200B;和&#x200B;**詳細資料**&#x200B;頁面。 若要存取這些頁面，使用者請按一下表單左側的圖示。
-
-* 子表單是巢狀在&#x200B;**一般**&#x200B;容器中的筆記本表單。 子表單包含兩個標示為&#x200B;**名稱**&#x200B;和&#x200B;**連絡人**&#x200B;的容器。
-
-```xml
-<form _cs="Profile (nms)" entitySchema="xtk:form" img="xtk:form.png" label="Profile" name="profile" namespace="nms" xtkschema="xtk:form">
-  <container type="iconbox">
-    <container img="ncm:general.png" label="General">
-      <container type="notebook">
-        <container label="Name">
-          <input xpath="@firstName"/>
-          <input xpath="@lastName"/>
-        </container>
-        <container label="Contact">
-          <input xpath="@email"/>
-        </container>
-      </container>
-    </container>
-    <container img="ncm:detail.png" label="Details">
-      <input xpath="@birthDate"/>
-    </container>
-  </container>
-</form>
-```
-
-因此，外部表單的&#x200B;**一般**&#x200B;頁面會顯示&#x200B;**名稱**&#x200B;和&#x200B;**連絡人**&#x200B;標籤。
-
-![](assets/nested_forms_preview.png)
-
-
+您可以建立多頁表單。 您也可以在其他表單中巢狀內嵌表單。 深入瞭解[容器、筆記本和iconbox表單](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms#containers){target="_blank"} （Campaign v8檔案）。
 
 ## 修改工廠輸入表單 {#modify-factory-form}
 
@@ -479,16 +259,6 @@ Forms是`xtk:form`型別的實體。 您可以在`xtk:form`結構描述中檢視
 ## 驗證表單 {#validate-forms}
 
 您可以在表單中包含驗證控制項。
-
-### 授予欄位唯讀存取權
-
-若要授與欄位的唯讀存取權，請使用`readOnly="true"`屬性。 例如，您可能想要顯示記錄的主索引鍵，但具有唯讀存取權。 [瞭解詳情](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/forms#non-editable-fields){target="_blank"} （Campaign v8檔案）。
-
-在此範例中，`nms:recipient`結構描述的主索引鍵(`iRecipientId`)以唯讀存取方式顯示：
-
-```xml
-<value xpath="@iRecipientId" readOnly="true"/>
-```
 
 ### 檢查必填欄位
 
@@ -508,11 +278,11 @@ Forms是`xtk:form`型別的實體。 您可以在`xtk:form`結構描述中檢視
 </leave>
 ```
 
-深入瞭解[運算式欄位](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/forms#expression-field){target="_blank"} （Campaign v8檔案）和[表單內容](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/forms#context-of-forms){target="_blank"} （Campaign v8檔案）。
+深入瞭解[運算式欄位](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms#expression-field){target="_blank"} （Campaign v8檔案）和[表單內容](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms#context-of-forms){target="_blank"} （Campaign v8檔案）。
 
 ### 驗證值
 
-您可以使用JavaScript SOAP呼叫，從主控台驗證表單資料。 使用這些呼叫進行複雜驗證，例如，根據授權值清單檢查值。 [瞭解詳情](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/forms#soap-methods){target="_blank"} （Campaign v8檔案）。
+您可以使用JavaScript SOAP呼叫，從主控台驗證表單資料。 使用這些呼叫進行複雜驗證，例如，根據授權值清單檢查值。 [閱讀更多](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms#soap-methods){target="_blank"} (Campaign v8 文件)。
 
 1. 在JS檔案中建立驗證函式。
 
@@ -569,4 +339,4 @@ Forms是`xtk:form`型別的實體。 您可以在`xtk:form`結構描述中檢視
 </enter>
 ```
 
-在此範例中，輸入為ID，為主索引鍵。 當使用者填寫此ID的表單時，會使用此ID作為輸入引數進行SOAP呼叫。 輸出是寫入此欄位的布林值： `/tmp/@count`。 您可以在表單內使用此布林值。 深入瞭解[表單內容](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/forms#context-of-forms){target="_blank"} （Campaign v8檔案）。
+在此範例中，輸入為ID，為主索引鍵。 當使用者填寫此ID的表單時，會使用此ID作為輸入引數進行SOAP呼叫。 輸出是寫入此欄位的布林值： `/tmp/@count`。 您可以在表單內使用此布林值。 深入瞭解[表單內容](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms#context-of-forms){target="_blank"} （Campaign v8檔案）。

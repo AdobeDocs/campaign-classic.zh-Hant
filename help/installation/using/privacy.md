@@ -41,12 +41,20 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
+source-git-commit: 9753491edbeba9df2c0a9dcf53b3bd5ea87c32ca
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '848'
 ht-degree: 3%
 ---
 # 個人化與隱私 {#privacy}
+
+本頁涵蓋URL個人化、URL簽名以及包含個人資訊的頁面的保護。
+
+作為從Campaign v7轉變到v8的一部分，Campaign Classic檔案集已簡化並重新組織。 Campaign v8檔案集中現在提供常見功能。 若要進一步瞭解資料限制和隱私權要求，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/privacy/security#data-restriction){target=_blank}。
+
+[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/privacy/security#data-restriction){target=_blank}
+
+在Campaign Classic v7中，限制存取整個實體需要版本編號8770或更新版本。
 
 ## URL PERSONALIZATION {#url-personalization}
 
@@ -60,11 +68,11 @@ ht-degree: 3%
 
 ### 建議
 
-若要驗證並確保您未使用上文，請透過[Campaign一般查詢編輯器](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/data/query/query-editor){target="_blank"} （Campaign v8檔案）對追蹤URL表格執行查詢，或在查詢活動中建立具有篩選條件的工作流程。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=zh-Hant){target="_blank"}。
+若要驗證並確保您未使用上文，請透過[Campaign一般查詢編輯器](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/query/query-editor){target="_blank"} （Campaign v8檔案）對追蹤URL表格執行查詢，或在查詢活動中建立具有篩選條件的工作流程。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}。
 
 範例：
 
-1. 建立工作流程並新增&#x200B;**查詢**&#x200B;活動。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=zh-Hant){target="_blank"}。
+1. 建立工作流程並新增&#x200B;**查詢**&#x200B;活動。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}。
 
 1. 開啟&#x200B;**查詢**&#x200B;活動並在`nmsTrackingUrl`資料表上建立篩選器，如下所示：
 
@@ -113,79 +121,6 @@ ht-degree: 3%
 1. 重新啟動&#x200B;**nlserver**&#x200B;服務。
 1. 在`tracking`伺服器上，重新啟動`web`伺服器（Debian上的apache2、CentOS/RedHat上的httpd、Windows上的IIS）。
 
-## 資料限制
-
-您必須確定加密密碼無法由低許可權驗證的使用者存取。 若要這麼做，請限制僅能存取密碼欄位，或存取整個實體（需要組建>= 8770）。
-
-此限制可讓您移除密碼欄位，但允許所有使用者從介面存取外部帳戶。 [深入瞭解](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/restrict-pi-view){target="_blank"} （Campaign v8檔案）。
-
-若要執行此作業，請依照下列步驟操作：
-
-1. 瀏覽至Campaign檔案總管的&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data schemas]**&#x200B;資料夾。
-
-1. 建立資料結構描述，做為&#x200B;**[!UICONTROL Extension of a schema]**。
-
-   ![](assets/privacy-data-restriction.png)
-
-1. 選擇&#x200B;**[!UICONTROL External Account]** (extAccount)。
-
-1. 在上一個助理畫面中，編輯新的「srcSchema」以限制所有密碼欄位的存取權：
-
-   您可以將主要元素(`<element name="extAccount" ... >`)取代為：
-
-   ```sql
-   <element name="extAccount">
-       <attribute accessibleIf="$(loginId) = 0 or $(login) = 'admin'" name="password"/>
-       <attribute accessibleIf="$(loginId) = 0 or $(login) = 'admin'" name="clientSecret"/>
-   
-       <element name="s3Account">
-           <attribute accessibleIf="$(loginId) = 0 or $(login) = 'admin'" name="awsSecret"/>
-       </element>
-       <element name="wapPush">
-           <attribute accessibleIf="$(loginId) = 0 or $(login) = 'admin'" name="password"/>
-           <attribute accessibleIf="$(loginId) = 0 or $(login) = 'admin'" name="clientSecret"/>
-       </element>
-       <element name="mms">
-           <attribute accessibleIf="$(loginId) = 0 or $(login) = 'admin'" name="password"/>
-           <attribute accessibleIf="$(loginId) = 0 or $(login) = 'admin'" name="clientSecret"/>
-       </element>
-   </element>
-   ```
-
-   因此，您的擴充式srcSchema看起來可能像這樣：
-
-   ```sql
-   <srcSchema _cs="External Accounts (cus)" created="2017-05-12 07:53:49.691Z" createdBy-id="0"
-               desc="Definition of external accounts (Email, SMS...) used by the modules"
-               entitySchema="xtk:srcSchema" extendedSchema="nms:extAccount" img="" label="External Accounts"
-               labelSingular="External account" lastModified="2017-05-12 08:33:49.365Z"
-               mappingType="sql" md5="E9BB0CD6A4375F500027C86EA854E101" modifiedBy-id="0"
-               name="extAccount" namespace="cus" xtkschema="xtk:srcSchema">
-       <createdBy _cs="Administrator (admin)"/>
-       <modifiedBy _cs="Administrator (admin)"/>
-       <element name="extAccount">
-           <attribute accessibleIf="$(loginId) = 0 or $(login) = 'admin'" name="password"/>
-           <attribute accessibleIf="$(loginId) = 0 or $(login) = 'admin'" name="clientSecret"/>
-   
-           <element name="s3Account">
-               <attribute accessibleIf="$(loginId) = 0 or $(login) = 'admin'" name="awsSecret"/>
-           </element>
-           <element name="wapPush">
-               <attribute accessibleIf="$(loginId) = 0 or $(login) = 'admin'" name="password"/>
-               <attribute accessibleIf="$(loginId) = 0 or $(login) = 'admin'" name="clientSecret"/>
-           </element>
-           <element name="mms">
-               <attribute accessibleIf="$(loginId) = 0 or $(login) = 'admin'" name="password"/>
-               <attribute accessibleIf="$(loginId) = 0 or $(login) = 'admin'" name="clientSecret"/>
-           </element>
-       </element>
-   </srcSchema>    
-   ```
-
-   >[!NOTE]
-   >
-   >您可以使用`hasNamedRight('admin')`取代`$(loginId) = 0 or $(login) = 'admin'`，讓所有具有管理員許可權的使用者都能檢視這些密碼。
-
 ## 使用PI保護頁面
 
 我們強烈建議內部部署客戶保護可能包含個人資訊(PI)的頁面，例如映象頁面、網頁應用程式等。
@@ -214,8 +149,3 @@ ht-degree: 3%
    除了&#x200B;**robots.txt**&#x200B;檔案，建議新增&#x200B;**X-Robots-Tag**&#x200B;標頭。 您可以在Apache或IIS以及&#x200B;**serverConf.xml**&#x200B;設定檔中執行此作業。
 
    如需詳細資訊，請參閱[本文章](https://developers.google.com/search/reference/robots_meta_tag)。
-
-
-## 隱私權請求
-
-請參閱[此頁面](../../platform/using/privacy-management.md)，瞭解隱私權管理的一般資訊以及Adobe Campaign中的實作步驟。 您也會找到最佳實務，以及使用者程式和角色的概觀。

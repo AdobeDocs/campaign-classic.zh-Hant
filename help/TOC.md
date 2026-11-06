@@ -8,9 +8,9 @@ user-guide-description: Adobe Campaign Classic v7 產品文件。
 sub-product: adobe campaign classic
 type: Documentation
 nudge: false
-source-git-commit: a26a9642d4b60f0f095596584929ba5e98c3180a
+source-git-commit: b2b42bcbab0d09197126d140da3ecb1f4aa0d869
 workflow-type: tm+mt
-source-wordcount: '1566'
+source-wordcount: '1560'
 ht-degree: 100%
 ---
 
@@ -117,7 +117,6 @@ ht-degree: 100%
     + [使用內容範本](delivery/using/using-a-content-template.md)
     + [豐富內容](delivery/using/enriching-content.md)
     + [透過工作流程自動化](delivery/using/automating-via-workflows.md)
-+ [協調行銷活動](campaign/using/about-marketing-campaigns.md)
 + 回應管理員 {#response-manager}
   + [開始使用回應管理員](response/using/about-response-manager.md)
   + [設定](response/using/configuration.md)
@@ -217,7 +216,6 @@ ht-degree: 100%
     + [設定整合](integrations/using/configuring-the-integration.md)
   + Adobe Target {#adobe-target}
     + [透過 [!DNL Adobe Target]設定整合](integrations/using/configuring-the-integration-with-adobe-target.md)
-+ [使用工作流程自動化](workflow/using/about-workflows.md)
 + 管理產品建議 {#managing-offers}
   + 開始互動 {#interaction-overview}
     + [互動與產品建議管理](interaction/using/interaction-and-offer-management.md)
