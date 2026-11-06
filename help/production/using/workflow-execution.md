@@ -33,9 +33,9 @@ topic_v2:
     internal-label: Troubleshooting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: cce1f22c34cbd13d063850a7ca636a3b0dfc62f6
 workflow-type: tm+mt
-source-wordcount: '750'
+source-wordcount: '763'
 ht-degree: 11%
 ---
 # 工作流程執行{#workflow-execution}
@@ -46,7 +46,7 @@ ht-degree: 11%
 
 如需工作流程的詳細資訊，請參閱下列區段：
 
-* [關於工作流程](../../workflow/using/about-workflows.md)
+* [關於工作流程](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/workflows/introduction/about-workflows){target="_blank"} （Campaign v8檔案）
 * [正在啟動工作流程](https://experienceleague.adobe.com/docs/campaign/automation/workflows/executing-a-workflow/start-a-workflow.html?lang=zh-Hant){target="_blank"}。
 * [工作流程生命週期](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=zh-Hant){target="_blank"}。
 * [使用工作流程時的最佳實務](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=zh-Hant){target="_blank"}。

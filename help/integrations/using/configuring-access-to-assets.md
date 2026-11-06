@@ -28,9 +28,9 @@ subfeature_v2:
     internal-label: Target integration
   - id: 2e08b477-1993-5928-975d-5f4cabe8fbe0
     internal-label: Asset Sharing
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 2e00628a95aa333698f11233e851b54423f11f29
 workflow-type: tm+mt
-source-wordcount: '513'
+source-wordcount: '526'
 ht-degree: 2%
 ---
 # 設定Assets的存取權 {#configuring-access-to-assets}
@@ -76,7 +76,7 @@ ht-degree: 2%
 * 正在安裝&#x200B;**[!UICONTROL AEM Integration]**&#x200B;內建套件
 * 設定Adobe Experience Manager專用的外部帳戶
 
-在[詳細檔案](../../integrations/using/about-adobe-experience-manager.md)中瞭解如何整合Adobe Campaign和Adobe Experience Manager。
+在[詳細檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/connect/ac-aem){target="_blank"} （Campaign v8檔案）中瞭解如何整合Adobe Campaign和Adobe Experience Manager。
 
 設定這項整合後，您可以在Adobe Campaign中設定新的傳遞範本，以使用AEM Assets資料庫。 要執行此操作，請遵循下列步驟：
 

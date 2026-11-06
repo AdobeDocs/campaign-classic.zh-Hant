@@ -28,14 +28,18 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 617db6f51887118c965b8938b2b9f14335293875
+source-git-commit: cce1f22c34cbd13d063850a7ca636a3b0dfc62f6
 workflow-type: tm+mt
-source-wordcount: '884'
-ht-degree: 5%
+source-wordcount: '612'
+ht-degree: 4%
 ---
 # 其他設定 {#mc-additional-configurations}
 
+本頁介紹Campaign Classic v7上異動訊息的其他設定。
 
+作為從Campaign v7轉變到v8的一部分，Campaign Classic檔案集已簡化並重新組織。 Campaign v8檔案集中現在提供常見功能。 若要進一步瞭解異動訊息事件清除和技術工作流程，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/config/settings/transactional-msg-settings){target=_blank}。
+
+[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/config/settings/transactional-msg-settings){target=_blank}
 
 ## 監視臨界值 {#monitoring-thresholds}
 
@@ -55,63 +59,9 @@ ht-degree: 5%
 >
 >佇列中擱置的事件數目會顯示在Adobe Campaign處理序監視頁面的[系統指標](../../production/using/monitoring-processes.md#system-indicators)區段中。 如需部署精靈的詳細資訊，請參閱[本節](../../installation/using/deploying-an-instance.md#deployment-assistant)。
 
-## 清除事件 {#purging-events}
-
-您可以使用[部署精靈](../../production/using/database-cleanup-workflow.md#deployment-assistant)來設定資料在資料庫中儲存的時間長度。
-
-事件清除是由[資料庫清除工作流程](../../production/using/database-cleanup-workflow.md)自動執行的。 此工作流程會清除在執行例項上接收並儲存的事件，以及在控制例項上封存的事件。
-
-視需要使用箭頭來變更清除設定。
-
-控制例項上的事件清除設定：
-
-![](assets/messagecenter_delete_events_001.png)
-
-執行例項上的事件清除設定：
-
-![](assets/messagecenter_delete_events_002.png)
-
-如需資料庫清理工作流程的詳細資訊，請參閱[本節](../../production/using/database-cleanup-workflow.md)。
-
-
 ## 技術工作流程 {#technical-workflows}
 
 在部署任何異動訊息範本之前，您必須確保控制例項上的技術工作流程以及不同的執行例項確實已建立且已啟動。
-
-與異動訊息（訊息中心）相關的各種技術工作流程會在控制執行個體和執行執行個體之間劃分。
-
-### 控制例項工作流程 {#control-instance-workflows}
-
-在控制執行個體上，無論您是否已註冊一或多個執行個體，都必須為每個&#x200B;**[!UICONTROL Message Center execution instance]**&#x200B;外部帳戶建立一個封存工作流程。 按一下&#x200B;**[!UICONTROL Create the archiving workflow]**&#x200B;按鈕以建立及啟動工作流程。
-
-![](assets/messagecenter_archiving_002.png)
-
-然後可以從&#x200B;**管理>生產>訊息中心**&#x200B;資料夾存取這些工作流程。 建立後，封存工作流程會自動啟動。
-
-<!--
-**Minimal architecture**
-
-Once the control and execution modules are installed on the same instance, you must create the archiving workflow using the deployment wizard. Click the **[!UICONTROL Create the archiving workflow]** button to create and start the workflow.
-
-![](assets/messagecenter_archiving_001.png)
--->
-
-### 執行例項工作流程 {#execution-instance-workflows}
-
-在執行執行個體上，可以從&#x200B;**管理>生產>訊息中心**&#x200B;資料夾存取異動訊息的技術工作流程。 您只需啟動這些對話方塊。 清單中的工作流程包括：
-
-* **[!UICONTROL Processing batch events]** （內部名稱： **[!UICONTROL batchEventsProcessing]** ）：此工作流程可讓您在佇列中劃分批次事件，然後再連結至訊息範本。
-* **[!UICONTROL Processing real time events]** （內部名稱： **[!UICONTROL rtEventsProcessing]** ）：此工作流程可讓您在佇列中的即時事件連結至訊息範本之前，劃分這些事件。
-* **[!UICONTROL Update event status]** （內部名稱： **[!UICONTROL updateEventStatus]** ）：此工作流程可讓您將狀態歸因於事件。
-
-  可使用下列事件狀態：
-
-  * **[!UICONTROL Pending]** ：事件在佇列中。 尚未為其指派訊息範本。
-  * **[!UICONTROL Pending delivery]** ：事件在佇列中，已指派訊息範本給該事件，並由傳遞處理。
-  * **[!UICONTROL Sent]** ：此狀態是從傳送記錄檔複製而來。 這表示傳送已進行。
-  * **[!UICONTROL Ignored by the delivery]** ：此狀態是從傳送記錄檔複製而來。 這表示會由傳送忽略。
-  * **[!UICONTROL Delivery failed]** ：此狀態是從傳送記錄檔複製而來。 這表示傳送失敗。
-  * **[!UICONTROL Event not taken into account]** ：無法將事件連結至訊息範本。 將不會處理事件。
 
 ### 封存工作流程排程
 

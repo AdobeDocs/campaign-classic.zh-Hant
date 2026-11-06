@@ -34,7 +34,7 @@ topic_v2:
     internal-label: Implementation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 4ae19a379120bb39444c3e81392a7dbb0b6da3ba
 workflow-type: tm+mt
 source-wordcount: '194'
 ht-degree: 16%
@@ -65,10 +65,10 @@ Campaign使用者可以使用其Adobe ID連線至Adobe Campaign主控台，而�
 >
 >Depending on your current version, you must upgrade to one of the following releases: 
 >
-> * [Campaign [!DNL Gold Standard] 11](../../rn/using/gold-standard.md)
+> * [Campaign [!DNL Gold Standard] 11](../../rn/using/rn-overview.md)
 > * [Campaign 21.1.4](../../rn/using/latest-release.md)
 >
->[Learn more about IMS updates](../../technotes/using/ims-updates.md)
+>[Learn more about IMS updates](../../technotes/using/ac-ims.md)
 -->
 
 ## 更多資源

@@ -25,10 +25,10 @@ topic_v2:
     internal-label: Troubleshooting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: a26a9642d4b60f0f095596584929ba5e98c3180a
 workflow-type: tm+mt
-source-wordcount: '835'
-ht-degree: 19%
+source-wordcount: '861'
+ht-degree: 18%
 ---
 # 監視指南 {#monitoring-guidelines}
 
@@ -65,7 +65,7 @@ ht-degree: 19%
 
 **稽核軌跡**
 
-稽核軌跡可讓您以視覺效果呈現執行個體中與選項、工作流程和結構描述相關的完整變更歷史記錄。 [按一下這裡](../../production/using/audit-trail.md)以獲得更多資訊。
+稽核軌跡可讓您以視覺效果呈現執行個體中與選項、工作流程和結構描述相關的完整變更歷史記錄。 [按一下這裡](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/analytics/audit-trail){target="_blank"} （Campaign v8檔案）以取得詳細資訊。
 
 **控制面板**
 
@@ -87,7 +87,7 @@ ht-degree: 19%
 
 **稽核軌跡**
 
-稽核軌跡可讓您以視覺效果呈現工作流程中所做的所有修改及其目前狀態。 [按一下這裡](../../production/using/audit-trail.md)。
+稽核軌跡可讓您以視覺效果呈現工作流程中所做的所有修改及其目前狀態。 [按一下這裡](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/analytics/audit-trail){target="_blank"} （Campaign v8檔案）。
 
 **工作流程疑難排解**
 

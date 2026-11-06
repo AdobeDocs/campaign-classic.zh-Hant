@@ -45,24 +45,22 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
+source-git-commit: cce1f22c34cbd13d063850a7ca636a3b0dfc62f6
 workflow-type: tm+mt
-source-wordcount: '4118'
+source-wordcount: '3891'
 ht-degree: 1%
 ---
 # 資料模型最佳實務{#data-model-best-practices}
 
 本檔案概述設計Adobe Campaign資料模型時的主要建議。
 
+作為從Campaign v7轉變到v8的一部分，Campaign Classic檔案集已簡化並重新組織。 Campaign v8檔案集中現在提供常見功能。 若要進一步瞭解資料模型最佳實務，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/config/implement/datamodel-best-practices){target=_blank}。
+
+[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/config/implement/datamodel-best-practices){target=_blank}
+
 如需深入瞭解Campaign內建表格及其互動，請參閱[本節](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/datamodel){target="_blank"} （Campaign v8檔案）一節。
 
 閱讀[此檔案](../../configuration/using/about-schema-reference.md)以開始使用Campaign綱要。 在[本檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"} （Campaign v8檔案）中瞭解如何設定延伸結構描述，以延伸Adobe Campaign資料庫的概念資料模型。
-
-## 概觀 {#overview}
-
-Adobe Campaign系統極為靈活，可延伸至初始實施以外的範圍。 不過，雖然可能性是無限的，但做出明智的決策並奠定堅實的基礎以開始設計您的資料模型是至關重要的。
-
-本檔案提供常見使用案例和最佳實務，以瞭解如何正確架構您的Adobe Campaign工具。
 
 ## 資料模型架構 {#data-model-architecture}
 
@@ -83,22 +81,6 @@ Adobe Campaign是功能強大的跨頻道行銷活動管理系統，可以協助
 >[!NOTE]
 >
 >Adobe Campaign Classic可建置自訂客戶表格。 但是，在大多數情況下，建議使用已預先建立其他表格和功能的標準[收件者表格](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/datamodel#ootb-profiles){target="_blank"} （Campaign v8檔案）。
-
-### 適用於Adobe Campaign的資料 {#data-for-campaign}
-
-哪些資料應該傳送至Adobe Campaign？ 決定行銷活動所需的資料至關重要。
-
->[!NOTE]
->
->Adobe Campaign既不是Data Warehouse也不是報表工具。 因此，請勿嘗試將所有可能的客戶及其相關資訊匯入Adobe Campaign，或匯入僅用於建置報表的資料。
-
-若要在Adobe Campaign中決定是否需要屬性，請詢問您自己該屬性是否會屬於以下類別之一：
-
-* 用於&#x200B;**分段**&#x200B;的屬性
-* 用於&#x200B;**資料管理程式**&#x200B;的屬性（例如彙總計算）
-* 用於&#x200B;**個人化**&#x200B;的屬性
-
-如果沒有上述任何專案，您很可能不需要在Adobe Campaign中使用此屬性。
 
 ### 資料型別選擇 {#data-types}
 
@@ -313,12 +295,6 @@ Adobe Campaign既不是Data Warehouse也不是報表工具。 因此，為了確
 * 確保在匯入程式期間或執行任何手動程式時，不會執行任何每日行銷活動。
 * 使用一或多個參考表格，而不是在每一列複製欄位。 使用索引鍵/值配對時，最好選擇數字索引鍵。
 * 簡短的字串仍可接受。 如果外部系統中已有參考表格，重複使用相同表格將促進與Adobe Campaign的資料整合。
-
-### 一對多關係 {#one-to-many-relationships}
-
-* 資料設計會影響可用性和功能。 如果您在設計資料模型時有許多一對多關係，這會讓使用者更難以在應用程式中建構有意義的邏輯。 非技術行銷人員可能很難正確建構和瞭解一對多篩選器邏輯。
-* 將所有重要欄位放在一個表格中很好，因為這樣使用者更容易建立查詢。 有時候，如果可以避免聯結，跨表格複製某些欄位對效能也有好處。
-* 某些內建功能無法參考一對多關係，例如「優惠加權」公式和「傳送」。
 
 ## 大型表格 {#large-tables}
 

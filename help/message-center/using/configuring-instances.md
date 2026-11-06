@@ -34,9 +34,9 @@ topic_v2:
     internal-label: Data collection
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 617db6f51887118c965b8938b2b9f14335293875
+source-git-commit: 9753491edbeba9df2c0a9dcf53b3bd5ea87c32ca
 workflow-type: tm+mt
-source-wordcount: '1274'
+source-wordcount: '1291'
 ht-degree: 2%
 ---
 # 設定執行個體 {#creating-a-shared-connection}
@@ -49,7 +49,7 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
->結構描述擴充功能影響[訊息中心技術工作流程](../../message-center/using/additional-configurations.md#technical-workflows)在控制項或執行執行例項上使用的資源，這些執行個體需要在「異動訊息」模組使用的其他執行個體上重複。
+>結構描述擴充功能影響[訊息中心技術工作流程](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/config/settings/transactional-msg-settings#technical-workflows){target="_blank"} （Campaign v8檔案）所使用的資源，其中控制項或執行執行個體需要在「異動訊息」模組使用的其他執行個體上複製。
 
 您也需要指定執行例項並將其連線到控制例項。
 

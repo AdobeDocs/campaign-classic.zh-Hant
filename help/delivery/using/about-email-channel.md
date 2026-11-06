@@ -32,9 +32,9 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
+source-git-commit: d679815c3415f1d7603ae5fe87e1c587208b6a8f
 workflow-type: tm+mt
-source-wordcount: '453'
+source-wordcount: '454'
 ht-degree: 0%
 ---
 # 開始使用電子郵件頻道{#about-email-channel}
@@ -71,7 +71,7 @@ ht-degree: 0%
 請參閱這些頁面，以在Campaign v8檔案&#x200B;**中瞭解電子郵件引數**：
 
 * [連結至映象頁面](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/mirror-page.html?lang=zh-Hant){target="_blank"}：設定映象頁面，以確保您的使用者端永遠都能獲得最佳轉譯體驗。
-* [新增密件副本地址](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email-bcc.html?lang=zh-Hant){target="_blank"}：設定Adobe Campaign以保留從您的平台傳送的電子郵件復本。
+* [新增密件副本地址](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/emails/email-bcc){target="_blank"}：設定Adobe Campaign以保留從您的平台傳送的電子郵件復本。
 * [定義其他電子郵件引數](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email-parameters.html?lang=zh-Hant){target="_blank"}：進一步瞭解傳遞屬性中可用的選項和引數。
 
 另請參閱此[頁面](sending-with-enhanced-mta.md)，瞭解增強型MTA。

@@ -34,10 +34,10 @@ topic_v2:
     internal-label: Troubleshooting
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
+source-git-commit: 9753491edbeba9df2c0a9dcf53b3bd5ea87c32ca
 workflow-type: tm+mt
-source-wordcount: '315'
-ht-degree: 21%
+source-wordcount: '311'
+ht-degree: 14%
 ---
 # 開始使用權限{#access-management}
 
@@ -57,32 +57,15 @@ Adobe Campaign 可讓您定義並管理指派給各個操作者的權限。 這�
 * 存取特定記錄，
 * 建立、修改及/或刪除記錄（動作、連絡人、行銷活動、群組等）。
 
->[!BEGINTABS]
+作為從Campaign v7轉變到v8的一部分，Campaign Classic檔案集已簡化並重新組織。 Campaign v8檔案集中現在提供常見功能。 若要深入瞭解許可權，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/permissions/gs-permissions){target=_blank}。
 
->[!TAB 許可權檔案]
+[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/permissions/gs-permissions){target=_blank}
 
-若要進一步瞭解Adobe Campaign **中的**&#x200B;許可權，請參閱&#x200B;**[Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/admin/permissions/gs-permissions?lang=en#_blank){target=_blank}**。
-
-[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/admin/permissions/gs-permissions?lang=en#_blank){target=_blank}
-
-
->[!TAB 管理檔案夾的許可權]
-
-若要瞭解如何定義資料夾&#x200B;**的**&#x200B;許可權，請參閱&#x200B;**[Campaign v8 （主控台）檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/admin/permissions/folder-permissions){target=_blank}**。
-
-[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/admin/permissions/folder-permissions){target=_blank}
-
-
->[!TAB 原生驗證]
+若要瞭解如何定義檔案夾的許可權，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/permissions/folder-permissions){target=_blank}。
 
 Campaign v7仍可使用登入/密碼的原生驗證，但為了強化安全性和驗證程式，Adobe Campaign強烈建議[將一般使用者驗證模式](../../technotes/using/ac-ims.md)從原生驗證移轉至Adobe Identity Management系統(IMS)。 請注意，在Campaign v8中，不允許連線至原生驗證。
 
 [![影像](../../assets/do-not-localize/learn-more-button.svg)](../../technotes/using/ac-ims.md)
-
-
->[!ENDTABS]
-
-
 
 <!--
 The permissions apply to operator profiles or operator groups.

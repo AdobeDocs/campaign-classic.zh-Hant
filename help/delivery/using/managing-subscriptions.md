@@ -38,10 +38,10 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
+source-git-commit: cce1f22c34cbd13d063850a7ca636a3b0dfc62f6
 workflow-type: tm+mt
-source-wordcount: '1125'
-ht-degree: 1%
+source-wordcount: '1138'
+ht-degree: 2%
 ---
 # 管理訂閱{#managing-subscriptions}
 
@@ -166,7 +166,7 @@ ht-degree: 1%
 
   ![](assets/s_ncs_user_subscribe_from_wf.png)
 
-  工作流程及使用方式在[本節](../../workflow/using/about-workflows.md)中有詳細說明。
+  [本節](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/workflows/introduction/about-workflows){target="_blank"} （Campaign v8檔案）中詳細說明了工作流程及使用方法。
 
 ### 從服務取消訂閱收件者 {#unsubscribing-a-recipient-from-a-service}
 

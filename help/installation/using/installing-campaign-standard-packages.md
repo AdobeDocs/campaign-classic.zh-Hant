@@ -26,10 +26,10 @@ topic_v2:
     internal-label: Optimization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
+source-git-commit: 2e00628a95aa333698f11233e851b54423f11f29
 workflow-type: tm+mt
-source-wordcount: '1413'
-ht-degree: 7%
+source-wordcount: '1426'
+ht-degree: 9%
 ---
 # 安裝Campaign Classic內建套件{#installing-campaign-standard-packages}
 
@@ -218,7 +218,7 @@ ht-degree: 7%
   </tr> 
   <tr> 
    <td> AEM整合<br /> </td> 
-   <td> 可讓您直接在Adobe Experience Manager中管理電子郵件傳送的內容以及表單，以便受益於AEM的內容編輯功能以及Adobe Campaign的傳送功能。 <a href="../../integrations/using/about-adobe-experience-manager.md">深入瞭解</a> <br /> </td> 
+   <td> 可讓您直接在Adobe Experience Manager中管理電子郵件傳送的內容以及表單，以便受益於AEM的內容編輯功能以及Adobe Campaign的傳送功能。 <a href="https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/connect/ac-aem" target="_blank">深入瞭解</a> （Campaign v8檔案） <br /> </td> 
    <td> 行銷</td> 
   </tr> 
   <tr> 
@@ -283,7 +283,7 @@ ht-degree: 7%
 
 * 在行銷和MID執行個體上安裝[!DNL LINE]套件
 
-* 透過變更傳遞模式，在mkt執行個體上設定[!DNL LINE]外部帳戶以指向mid執行個體。 [深入瞭解](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/other-channels/line#configure-line-external){target="_blank"} （Campaign v8檔案）
+* 透過變更傳遞模式，在mkt執行個體上設定[!DNL LINE]外部帳戶以指向mid執行個體。 [了解更多](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/other-channels/line#configure-line-external){target="_blank"} (Campaign v8 文件)
 
 * 在MID執行個體的外部帳戶中設定[!DNL LINE]認證。
 

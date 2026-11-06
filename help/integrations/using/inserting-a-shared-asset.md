@@ -27,10 +27,10 @@ subfeature_v2:
     internal-label: Target integration
   - id: 2e08b477-1993-5928-975d-5f4cabe8fbe0
     internal-label: Asset Sharing
-source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
+source-git-commit: 2e00628a95aa333698f11233e851b54423f11f29
 workflow-type: tm+mt
-source-wordcount: '248'
-ht-degree: 1%
+source-wordcount: '261'
+ht-degree: 0%
 ---
 # 插入共用資產{#inserting-a-shared-asset}
 
@@ -64,4 +64,4 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->如果您透過Adobe Target整合，則可以使用共用影像作為預設影像。 請參見[此頁面](../../integrations/using/integrating-with-adobe-target.md)。
+>如果您透過Adobe Target整合，則可以使用共用影像作為預設影像。 請參閱[此頁面](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/connect/ac-at){target="_blank"} （Campaign v8檔案）。

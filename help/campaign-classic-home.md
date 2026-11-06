@@ -30,12 +30,14 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
-workflow-type: ht
-source-wordcount: '707'
-ht-degree: 100%
+source-git-commit: c1f8b6661065c8d5c75e38d80f6986e0c6fbdfa8
+workflow-type: tm+mt
+source-wordcount: '940'
+ht-degree: 59%
 ---
 # Campaign Classic v7 文件 {#campaign-classic-documentation}
+
+本檔案說明適用於&#x200B;**內部部署和混合**&#x200B;部署的Campaign Classic v7：安裝、設定、升級、作業以及v7特有的功能。 如果您的執行個體是由Adobe (Managed Cloud Services)託管，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/campaign-home){target="_blank"}。 Campaign v8檔案相同內容的重複專案不再於此處：請參閱[從v7到v8](#from-v7-to-v8)。
 
 <!--![](platform/using/assets/do-not-localize/banner_acc_doc.jpg) -->
 
@@ -46,9 +48,9 @@ ht-degree: 100%
 >[!BEGINTABS]
 
 
->[!TAB 2026 年 8 月版本已上線！]
+>[!TAB 2026年10月版本已上線！]
 
-Campaign Classic v7.4.4 - 2026 年 8 月建置提供安全性更新，並將 Adobe Analytics 連接器升級至 Analytics 2.0 API。
+Campaign Classic v7.4.5 - 2026年10月建置版本（建置版本9420）針對Analytics外部帳戶、卡在個人化擱置狀態的傳送、伺服器CPU使用情況、間歇性資料模型更新失敗、傳送建立中的垃圾郵件檢查錯誤，以及週期性軟退信的隔離提供修正。
 
 [![影像](assets/do-not-localize/learn-more-button.svg)](rn/using/latest-release.md)
 
@@ -57,13 +59,6 @@ Campaign Classic v7.4.4 - 2026 年 8 月建置提供安全性更新，並將 Ado
 為了強化安全性和驗證流程，Adobe Campaign 強烈建議將一般使用者驗證模式從登入/密碼原生驗證移轉至 Adobe Identity Management System (IMS)。
 
 [![影像](assets/do-not-localize/learn-more-button.svg)](technotes/using/ac-ims.md)
-
-
->[!TAB 推播管道變更]
-
-Android Firebase Cloud Messaging (FCM) 服務的一些重要變更將於 2024 年發行，並可能影響 Adobe Campaign 實施。 Android 推播訊息訂閱服務設定可能需要更新，才能支援此變更。 您已經可以檢查並採取動作。
-
-[![影像](assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/push-technote.html?lang=zh-Hant){target="_blank"}
 
 
 >[!ENDTABS]
@@ -81,7 +76,7 @@ Android Firebase Cloud Messaging (FCM) 服務的一些重要變更將於 2024 �
     <div><strong>新增和管理輪廓</strong><br/>輕鬆探索 Adobe Campaign v7 資料庫中的輪廓管理。 手動或透過匯入新增輪廓，輕鬆精簡客戶資料和自訂行銷活動。</div>
     </td>
     <td>
-    <a href="workflow/using/about-workflows.md"><img src="assets/do-not-localize/start-workflows.jpeg"></a>
+    <a href="https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/workflows/introduction/about-workflows" target="_blank"><img src="assets/do-not-localize/start-workflows.jpeg"></a>
     <div><strong>使用工作流程自動化</strong><br/>了解如何利用工作流程來設計流程，包括細分、行銷活動執行、檔案處理、人員參與等。
     </div></td>
     <td>
@@ -92,7 +87,7 @@ Android Firebase Cloud Messaging (FCM) 服務的一些重要變更將於 2024 �
   <tr style="border: 0;">
     <td align="center"><a href="platform/using/launching-adobe-campaign.md"><img src="assets/do-not-localize/learn-more-button.svg"></a></td>
     <td align="center"><a href="platform/using/about-profiles.md"><img src="assets/do-not-localize/learn-more-button.svg"></a></td>
-    <td align="center"><a href="workflow/using/about-workflows.md"><img src="assets/do-not-localize/learn-more-button.svg"></a></td>
+    <td align="center"><a href="https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/workflows/introduction/about-workflows" target="_blank"><img src="assets/do-not-localize/learn-more-button.svg"></a></td>
     <td align="center"><a href="delivery/using/communication-channels.md"><img src="assets/do-not-localize/learn-more-button.svg"></a></td>
     </tr>
 </table>
@@ -109,7 +104,7 @@ Android Firebase Cloud Messaging (FCM) 服務的一些重要變更將於 2024 �
     <td>
       <img src="assets/do-not-localize/icon-experience.svg" width="35px">
     <br/>
-      <strong>客戶體驗</strong><br/><a href="workflow/using/about-workflows.md">以工作流程自動化</a> - <a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=zh-Hant" target="_blank">行銷活動</a> - <a href="interaction/using/interaction-and-offer-management.md">互動與產品建議管理</a> - <a href="delivery/using/about-personalization.md">個人化</a> - <a href="https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/analytics/reports/gs-reporting" target="_blank">報告</a> (Campaign v8 文件)
+      <strong>客戶體驗</strong><br/><a href="https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/workflows/introduction/about-workflows" target="_blank">使用工作流程自動化</a> （Campaign v8檔案） - <a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=zh-Hant" target="_blank">行銷活動</a> - <a href="interaction/using/interaction-and-offer-management.md">互動與優惠方案管理</a> - <a href="delivery/using/about-personalization.md">Personalization</a> - <a href="https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/analytics/reports/gs-reporting" target="_blank">報告</a> （Campaign v8檔案）
     </td>
     <td>
       <img src="assets/do-not-localize/icon-send.svg" width="35px">
@@ -131,10 +126,25 @@ Android Firebase Cloud Messaging (FCM) 服務的一些重要變更將於 2024 �
     <td>
       <img src="assets/do-not-localize/icon-dev.svg" width="35px">
       <br/>
-      <strong>開發人員資源</strong><br/><a href="https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/datamodel" target="_blank">資料模型說明</a> (Campaign v8 文件) - <a href="configuration/using/about-schema-reference.md">結構描述結構</a> - <a href="configuration/using/editing-forms.md">結構描述結構</a> - <a href="configuration/using/about-web-services.md">API</a> - <a href="https://experienceleague.adobe.com/zh-hant/tools/campaign-api">JSAPI 參考文件</a> - <a href="configuration/using/about-custom-recipient-table.md">自訂收件者表格</a>
+      <strong>開發人員資源</strong><br/><a href="https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/datamodel" target="_blank">資料模型說明</a> （Campaign v8檔案） - <a href="configuration/using/about-schema-reference.md">結構描述結構</a> - <a href="configuration/using/editing-forms.md">輸入表單</a> - <a href="configuration/using/about-web-services.md">API</a> - <a href="https://experienceleague.adobe.com/zh-hant/tools/campaign-api">JSAPI參考檔案</a> - <a href="configuration/using/about-custom-recipient-table.md">自訂收件者表格</a>
     </td>
   </tr>
 </table>
+
+## 從v7到v8 {#from-v7-to-v8}
+
+Campaign v8檔案中記錄的內容已從v7檔案中移除。 使用此表格來尋找它。
+
+| 如果您正在尋找…… | 前往Campaign v8檔案 |
+| --- | --- |
+| 使用者介面 | [探索使用者介面](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/new/campaign-ui){target="_blank"} |
+| 設定檔、清單、匯入和匯出 | [匯入設定檔和資料](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/data/import){target="_blank"} |
+| 工作流程 | [關於工作流程](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/workflows/introduction/about-workflows){target="_blank"} |
+| 行銷活動 | [開始使用行銷活動](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/campaign-orchestration/set-up-campaigns){target="_blank"} |
+| 建立和傳送傳遞 | [建立訊息](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/create-message){target="_blank"} |
+| 內建報告 | [開始使用報告](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/analytics/reports/gs-reporting){target="_blank"} |
+| 權限 | [開始使用許可權](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/permissions/gs-permissions){target="_blank"} |
+| 輸入表單 | [開始使用輸入表單](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"} |
 
 ## 其他資源
 

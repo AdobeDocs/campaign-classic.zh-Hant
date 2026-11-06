@@ -40,16 +40,18 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 9753491edbeba9df2c0a9dcf53b3bd5ea87c32ca
 workflow-type: tm+mt
-source-wordcount: '781'
-ht-degree: 100%
+source-wordcount: '718'
+ht-degree: 89%
 ---
 # 建立及管理隱私權請求 {#privacy-request-ui}
 
-
-
 本章節介紹如何建立存取權限及刪除請求，以及 Adobe Campaign 如何處理這些請求。
+
+作為從Campaign v7轉變到v8的一部分，Campaign Classic檔案集已簡化並重新組織。 Campaign v8檔案集中現在提供常見功能。 若要進一步瞭解處理隱私權要求時搜尋的表格，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/privacy/privacy#list-of-tables){target=_blank}。
+
+[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/privacy/privacy#list-of-tables){target=_blank}
 
 ## 建立隱私權請求 {#create-privacy-request-ui}
 
@@ -74,24 +76,7 @@ ht-degree: 100%
 
 ![](assets/privacy-request-download.png)
 
-## 表格清單 {#list-of-tables}
-
-執行刪除或存取隱私權要求時，Adobe Campaign 會根據所有包含收件者表格連結 (自有類型) 之表格中的&#x200B;**[!UICONTROL Reconciliation value]**，以搜尋所有資料主體的資料。
-
-執行隱私權請求時，以下是可列入考量的現成可用表格清單：
-
-* 收件者 (recipient)
-* 收件者傳遞記錄 (broadLogRcp)
-* 收件者追蹤記錄 (trackingLogRcp)
-* 封存的事件傳遞記錄 (broadLogEventHisto)
-* 收件者清單內容 (rcpGrpRel)
-* 訪客產品建議提議 (propositionVisitor)
-* 訪客 (visitor)
-* 訂閱歷史記錄 (subHisto)
-* 訂閱 (subscription)
-* 收件者產品建議提議 (propositionRcp)
-
-如果您建立的自訂資源具有收件者表格 (自有類型) 的連結，也會將這些帳戶列入考量。 例如，如果您有連結至收件者表格的交易表格和連結至交易表格的交易詳細資料，則會同時將這些帳戶列入考量。
+## 透過工作流程批次處理請求
 
 >[!IMPORTANT]
 >
