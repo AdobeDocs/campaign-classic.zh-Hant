@@ -8,10 +8,10 @@ user-guide-description: Adobe Campaign Classic v7 產品文件。
 sub-product: adobe campaign classic
 type: Documentation
 nudge: false
-source-git-commit: 186021e65b592522f3c491fb518594b5bac5d003
+source-git-commit: fbeb3bb6f89cd0b03d1fb4551496f96eda0cbf10
 workflow-type: tm+mt
-source-wordcount: '1563'
-ht-degree: 98%
+source-wordcount: '1577'
+ht-degree: 97%
 ---
 
 # Adobe Campaign Classic v7 文件 {#using}
@@ -75,7 +75,7 @@ ht-degree: 98%
   + 安全性與隱私權設定 {#security-privacy}
     + [安全性與隱私權檢查清單](installation/using/get-started-security-privacy.md)
     + [個人化與隱私](installation/using/privacy.md)
-    + [安全的存取權管理](installation/using/access-management.md)
+    + [安全的存取權管理](installation/using/secure-access-management.md)
     + [指令碼和程式碼指南](installation/using/scripting-coding-guidelines.md)
     + [網路、資料庫和 SSL/TLS](installation/using/network-database.md)
     + [伺服器安全性設定](installation/using/server-configuration.md)
@@ -166,13 +166,13 @@ ht-degree: 98%
 + 操作與監視 {#monitoring-campaign-classic}
   + 簡介 {#introduction}
     + [前言](production/using/foreword.md)
-    + [一般架構](production/using/general-architecture.md)
+    + [架構與開放連線埠](production/using/architecture-and-open-ports.md)
     + [監視指南](production/using/monitoring-guidelines.md)
   + 生產程序 {#production-procedures}
     + [設定原則](production/using/configuration-principle.md)
     + [操作原則](production/using/operating-principle.md)
     + [管理](production/using/administration.md)
-    + [設定](production/using/configuration.md)
+    + [Syslogd連線埠和安全區域](production/using/syslogd-port-and-security-zones.md)
     + [記錄檔案](production/using/log-files.md)
     + [監視流程](production/using/monitoring-processes.md)
     + [常用指令](production/using/usual-commands.md)
@@ -182,7 +182,7 @@ ht-degree: 98%
     + [複製環境](production/using/duplicating-environments.md)
     + [資料庫清除工作流程](production/using/database-cleanup-workflow.md)
   + 更新 Adobe Campaign {#updating-adobe-campaign}
-    + [簡介](production/using/introduction.md)
+    + [關於更新行銷活動](production/using/introduction.md)
     + [執行建置升級](production/using/build-upgrade.md)
     + [升級程序 (內部部署)](production/using/upgrading.md)
     + [切換至 Unicode](production/using/switching-to-unicode.md)
@@ -229,7 +229,7 @@ ht-degree: 98%
     + [資料庫對應](configuration/using/database-mapping.md)
     + [金鑰管理](configuration/using/database-keys.md)
     + 元素和屬性 {#elements-attributes}
-      + [簡介](configuration/using/schema-introduction.md)
+      + [元素和屬性簡介](configuration/using/schema-introduction.md)
       + [屬性](configuration/using/schema/attribute.md)
       + [計算字串](configuration/using/schema/compute-string.md)
       + [條件](configuration/using/schema/condition.md)
@@ -301,7 +301,7 @@ ht-degree: 98%
       + [簡訊疑難排解](delivery/using/troubleshooting-sms.md)
   + [傳送推播通知](delivery/using/about-mobile-app-channel.md)
   + 傳送推播通知 {#sending-push-notifications}
-    + {hide-from-toc}[疑難排解 - 隱藏](delivery/using/troubleshooting.md)
+    + {hide-from-toc}[疑難排解 - 隱藏](delivery/using/push-troubleshooting.md)
   + [傳送直接郵件](delivery/using/about-direct-mail-channel.md)
   + 個人化傳遞 {#personalizing-deliveries}
     + [關於個人化](delivery/using/about-personalization.md)
@@ -420,7 +420,7 @@ ht-degree: 98%
     + [傳出頻道上的產品建議](interaction/using/offers-on-an-outbound-channel.md)
 + 回應管理員 {#response-manager}
   + [開始使用回應管理員](response/using/about-response-manager.md)
-  + [設定](response/using/configuration.md)
+  + [設定回應管理員](response/using/configure-response-manager.md)
   + [假設範本](response/using/hypothesis-templates.md)
   + [建立假設](response/using/creating-hypotheses.md)
   + [假設追蹤](response/using/hypothesis-tracking.md)
@@ -468,7 +468,7 @@ ht-degree: 98%
     + [透過  [!DNL Adobe Experience Cloud] 分享客群](integrations/using/sharing-audiences-with-adobe-experience-cloud.md)
     + [向 Adobe 提交請求](integrations/using/submitting-request-to-adobe.md)
     + [於  [!DNL Adobe Campaign] 設定共用客群整合](integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
-    + {hide-from-toc}[疑難排解](integrations/using/troubleshooting.md)
+    + {hide-from-toc}[疑難排解](integrations/using/integrations-troubleshooting.md)
     + [匯入和匯出客群](integrations/using/importing-and-exporting-audiences.md)
   + 資產共用 {#asset-sharing}
     + [透過  [!DNL Adobe Experience Cloud] 分享資產體驗](integrations/using/sharing-assets-with-adobe-experience-cloud.md)

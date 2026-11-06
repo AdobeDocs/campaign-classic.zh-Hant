@@ -24,7 +24,7 @@ subfeature_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: fbeb3bb6f89cd0b03d1fb4551496f96eda0cbf10
 workflow-type: tm+mt
 source-wordcount: '408'
 ht-degree: 4%
@@ -57,7 +57,7 @@ Adobe Campaign提供回應管理附加功能，讓您可以衡量行銷活動的
 
 ## 實施步驟 {#method}
 
-開始使用回應管理員之前，請參閱[設定](configuration.md)並執行必要的設定。
+開始使用回應管理員之前，請參閱[設定](configure-response-manager.md)並執行必要的設定。
 
 為了針對傳遞或優惠方案啟動假設，您需要在範本中定義其內容，該範本將用於您建立的每個假設。
 

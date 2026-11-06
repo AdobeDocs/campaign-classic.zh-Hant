@@ -27,7 +27,7 @@ subfeature_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: fbeb3bb6f89cd0b03d1fb4551496f96eda0cbf10
 workflow-type: tm+mt
 source-wordcount: '276'
 ht-degree: 13%
@@ -75,7 +75,7 @@ ht-degree: 13%
   <tr> 
    <td> syslogd </td> 
    <td> 記錄檔寫入<br /> </td> 
-   <td> 如果記錄檔中缺少某些記錄，請檢查以確定模組使用連線埠6666。 請參閱<a href="../../production/using/general-architecture.md#list-of-open-ports" target="_blank">開啟的連線埠清單</a>.<br /> </td> 
+   <td> 如果記錄檔中缺少某些記錄，請檢查以確定模組使用連線埠6666。 請參閱<a href="../../production/using/architecture-and-open-ports.md#list-of-open-ports" target="_blank">開啟的連線埠清單</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> 追蹤 </td> 
