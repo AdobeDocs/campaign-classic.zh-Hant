@@ -8,9 +8,9 @@ user-guide-description: Adobe Campaign Classic v7 產品文件。
 sub-product: adobe campaign classic
 type: Documentation
 nudge: false
-source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
-workflow-type: ht
-source-wordcount: '1657'
+source-git-commit: a26a9642d4b60f0f095596584929ba5e98c3180a
+workflow-type: tm+mt
+source-wordcount: '1566'
 ht-degree: 100%
 ---
 
@@ -23,10 +23,6 @@ ht-degree: 100%
   + 先前版本 {#previous-releases}
     + [2025](rn/using/release-2025.md)
     + [2024](rn/using/release-2024.md)
-    + {hide-from-toc}[2023 - 隱藏](rn/using/release-2023.md)
-    + {hide-from-toc}[2022 - 隱藏](rn/using/release-2022.md)
-    + {hide-from-toc}[2021 - 隱藏](rn/using/release-2021.md)
-    + {hide-from-toc}[[!DNL Gold Standard - HIDDEN]](rn/using/gold-standard.md)
   + [已棄用功能](rn/using/deprecated-features.md)
   + [相容性對照表](rn/using/compatibility-matrix.md)
 + 開始使用 {#getting-started}
@@ -66,8 +62,6 @@ ht-degree: 100%
 + 建立及傳送訊息 {#sending-messages}
   + [開始使用訊息](delivery/using/communication-channels.md)
   + {hide-from-toc}[傳遞設定 - 隱藏](delivery/using/delivery-settings.md)
-  + 快速入門 {#key-steps-when-creating-a-delivery}
-    + {hide-from-toc}[傳送傳遞 - 隱藏](delivery/using/steps-sending-the-delivery.md)
   + [傳送電子郵件](delivery/using/about-email-channel.md)
   + 傳送簡訊 {#sending-messages-on-mobiles}
     + 設定簡訊頻道 {#sms-set-up}
@@ -76,13 +70,8 @@ ht-degree: 100%
       + [簡訊連接器通訊協定及設定](delivery/using/sms-protocol.md)
       + [其他設定](delivery/using/sms-send.md)
       + [簡訊疑難排解](delivery/using/troubleshooting-sms.md)
-    + {hide-from-toc}[移轉至擴展的通用 SMPP 連接器](delivery/using/unsupported-connector-migration.md)
   + [傳送推播通知](delivery/using/about-mobile-app-channel.md)
   + 傳送推播通知 {#sending-push-notifications}
-    + 設定行動應用程式{#configure-the-mobile-app}
-      + {hide-from-toc}[應用程式設定快速入門 - 隱藏](delivery/using/get-started-app-config.md)
-      + {hide-from-toc}[針對 iOS 的設定步驟 - 隱藏](delivery/using/configuring-the-mobile-application.md)
-      + {hide-from-toc}[針對 Android 的設定步驟 - 隱藏](delivery/using/configuring-the-mobile-application-android.md)
     + {hide-from-toc}[疑難排解 - 隱藏](delivery/using/troubleshooting.md)
   + [傳送直接郵件](delivery/using/about-direct-mail-channel.md)
   + 個人化傳遞 {#personalizing-deliveries}
@@ -140,9 +129,6 @@ ht-degree: 100%
     + [報告的最佳實務](reporting/using/best-practices.md)
   + 存取內建報吿 {#accessing-built-in-reports}
     + [關於內建報吿](reporting/using/about-campaign-built-in-reports.md)
-    + [報告清單](reporting/using/list-of-reports.md)
-  + 傳遞報告{#reports-on-deliveries}
-    + [指標計算](reporting/using/indicator-calculation.md)
   + 分析群體 {#analyzing-populations}
     + [什麼是描述性分析](reporting/using/about-descriptive-analysis.md)
     + [建立您第一個描述性分析報告](reporting/using/using-the-descriptive-analysis-wizard.md)
@@ -228,19 +214,9 @@ ht-degree: 100%
     + [設定存取權至 [!DNL Assets]](integrations/using/configuring-access-to-assets.md)
     + [插入共用資產](integrations/using/inserting-a-shared-asset.md)
   + Adobe Experience Manager {#adobe-experience-manager}
-    + [使用 [!DNL Adobe Experience Manager]](integrations/using/about-adobe-experience-manager.md)
     + [設定整合](integrations/using/configuring-the-integration.md)
-    + [建立 [!DNL Experience Manager] 電子報](integrations/using/creating-an-experience-manager-newsletter.md)
   + Adobe Target {#adobe-target}
-    + [使用 [!DNL Adobe Target]](integrations/using/integrating-with-adobe-target.md)
     + [透過 [!DNL Adobe Target]設定整合](integrations/using/configuring-the-integration-with-adobe-target.md)
-    + [插入動態影像](integrations/using/inserting-a-dynamic-image.md)
-  + ACS Connector {#acs-connector}
-    + {hide-from-toc}[開始使用  [!DNL ACS Connector]  - 隱藏](integrations/using/acs-connector-principles-and-data-cycle.md)
-    + {hide-from-toc}[同步輪廓 - 隱藏](integrations/using/synchronizing-profiles.md)
-    + {hide-from-toc}[同步客群- 隱藏](integrations/using/synchronizing-audiences.md)
-    + {hide-from-toc}[同步網頁應用程式 - 隱藏](integrations/using/synchronizing-web-applications.md)
-    + {hide-from-toc}[對  [!DNL ACS Connector]  進行疑難排解 - 隱藏](integrations/using/troubleshooting-the-acs-connector.md)
 + [使用工作流程自動化](workflow/using/about-workflows.md)
 + 管理產品建議 {#managing-offers}
   + 開始互動 {#interaction-overview}
@@ -344,7 +320,6 @@ ht-degree: 100%
     + [設定外部帳戶](installation/using/external-accounts.md)
     + 設定同盟資料存取{#configure-fda}
       + [開始使用同盟資料存取](installation/using/about-fda.md)
-      + [最佳實務和限制](installation/using/fda-best-practices.md)
       + 設定指南 {#config-databases}
         + [設定步驟](installation/using/configure-fda.md)
         + [設定 Amazon Redshift](installation/using/configure-fda-redshift.md)
@@ -385,7 +360,6 @@ ht-degree: 100%
     + [記錄檔案](production/using/log-files.md)
     + [監視流程](production/using/monitoring-processes.md)
     + [常用指令](production/using/usual-commands.md)
-    + [稽核軌跡](production/using/audit-trail.md)
   + 資料處理 {#data-processing}
     + [備份](production/using/backup.md)
     + [復原](production/using/restoration.md)
@@ -519,15 +493,12 @@ ht-degree: 100%
     + [IMS 移轉後的介面影響](technotes/using/impact-ims-migration.md)
   + 升級與相容性{#technote-migration}
     + [啟用 Microsoft Edge Chromium](technotes/using/edge-chromium.md)
-    + {hide-from-toc}[新傳遞能力伺服器](technotes/using/deliverability-server.md)
     + {hide-from-toc}[Apache 安全性升級](technotes/using/acc-apache-upgrade.md)
     + {hide-from-toc}[2023 年系統升級](technotes/using/tech-stack-upgrade.md)
-    + {hide-from-toc}[IMS 更新](technotes/using/ims-updates.md)
     + {hide-from-toc}[移轉至 Adobe Analytics 2.0 API](technotes/using/analytics-2-migration.md)
   + 電子郵件和推播通知{#technotes-email}
     + [Apple iOS 上的郵件隱私保護](technotes/using/apple-mail-app-privacy-protection.md)
     + [iOS 憑證更新](technotes/using/ios-certificate-update.md)
-    + {hide-from-toc}[已追蹤 URL 更新](technotes/using/tracked-urls.md)
   + 移轉至 Adobe Managed Services{#dc-migration}
     + [移轉至公用雲端](technotes/using/dc-migration.md)
     + [常見問答集](technotes/using/dc-migration-faq.md)
