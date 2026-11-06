@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: 一般架構
-description: 一般架構
+title: 架構與開放連線埠
+description: 架構與開放連線埠
 feature: Monitoring, Architecture
 audience: production
 content-type: reference
@@ -23,12 +23,12 @@ subfeature_v2:
     internal-label: Performance Monitoring
   - id: e519a22f-a06a-42fc-9d09-d78a3ab2c434
     internal-label: Monitoring guidelines
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: fbeb3bb6f89cd0b03d1fb4551496f96eda0cbf10
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 3%
+source-wordcount: '192'
+ht-degree: 0%
 ---
-# 一般架構{#general-architecture}
+# 架構與開放連線埠{#general-architecture}
 
 
 

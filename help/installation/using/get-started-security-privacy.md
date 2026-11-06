@@ -38,7 +38,7 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: fbeb3bb6f89cd0b03d1fb4551496f96eda0cbf10
 workflow-type: tm+mt
 source-wordcount: '450'
 ht-degree: 7%
@@ -72,7 +72,7 @@ ht-degree: 7%
 * 檢查每個操作員是否具有適當的存取許可權
 * 避免使用管理員運運算元，並避免在管理員群組中擁有太多運運算元
 
-[閱讀全文](../../installation/using/access-management.md)
+[閱讀全文](../../installation/using/secure-access-management.md)
 
 ## 指令碼和程式碼指南
 

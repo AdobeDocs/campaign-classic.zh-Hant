@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: 其他設定
+title: Syslogd連線埠和安全區域
 description: 設定
 feature: Monitoring, Configuration
 badge-v7-prem: label="On-premise/hybrid only" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hant" tooltip="Applies to on-premise and hybrid deployments only"
@@ -28,12 +28,12 @@ topic_v2:
     internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: fbeb3bb6f89cd0b03d1fb4551496f96eda0cbf10
 workflow-type: tm+mt
-source-wordcount: '182'
-ht-degree: 12%
+source-wordcount: '189'
+ht-degree: 10%
 ---
-# 設定{#configuration}
+# Syslogd連線埠和安全區域{#configuration}
 
 
 

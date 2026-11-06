@@ -8,16 +8,16 @@ user-guide-description: Adobe Campaign Classic v7 產品文件。
 sub-product: adobe campaign classic
 type: Documentation
 nudge: false
-source-git-commit: b2b42bcbab0d09197126d140da3ecb1f4aa0d869
+source-git-commit: fbeb3bb6f89cd0b03d1fb4551496f96eda0cbf10
 workflow-type: tm+mt
-source-wordcount: '1560'
-ht-degree: 100%
+source-wordcount: '1577'
+ht-degree: 97%
 ---
 
 # Adobe Campaign Classic v7 文件 {#using}
 
 + [Campaign v7 文件](campaign-classic-home.md)
-+ 發行說明 {#release-notes}
++ 發行說明和相容性 {#release-notes}
   + [開始升級](rn/using/rn-overview.md)
   + [最新版本](rn/using/latest-release.md)
   + 先前版本 {#previous-releases}
@@ -59,199 +59,7 @@ ht-degree: 100%
       + [建立和管理群組](platform/using/access-management-groups.md)
   + CRM 連接器 {#connectors}
     + [開始使用 CRM 連接器](platform/using/crm-connectors.md)
-+ 建立及傳送訊息 {#sending-messages}
-  + [開始使用訊息](delivery/using/communication-channels.md)
-  + {hide-from-toc}[傳遞設定 - 隱藏](delivery/using/delivery-settings.md)
-  + [傳送電子郵件](delivery/using/about-email-channel.md)
-  + 傳送簡訊 {#sending-messages-on-mobiles}
-    + 設定簡訊頻道 {#sms-set-up}
-      + [在獨立執行個體上設定簡訊](delivery/using/sms-set-up.md)
-      + [在中間來源基礎結構上設定簡訊](delivery/using/sms-set-up-mid.md)
-      + [簡訊連接器通訊協定及設定](delivery/using/sms-protocol.md)
-      + [其他設定](delivery/using/sms-send.md)
-      + [簡訊疑難排解](delivery/using/troubleshooting-sms.md)
-  + [傳送推播通知](delivery/using/about-mobile-app-channel.md)
-  + 傳送推播通知 {#sending-push-notifications}
-    + {hide-from-toc}[疑難排解 - 隱藏](delivery/using/troubleshooting.md)
-  + [傳送直接郵件](delivery/using/about-direct-mail-channel.md)
-  + 個人化傳遞 {#personalizing-deliveries}
-    + [關於個人化](delivery/using/about-personalization.md)
-  + 使用種子地址 {#using-seed-addresses}
-    + [使用實例：依條件選取種子地址](delivery/using/use-case-selecting-seed-addresses-on-criteria.md)
-    + [使用實例：設定欄位替代](delivery/using/use-case-configuring-the-field-substitution.md)
-  + A/B 測試 {#a-b-testing}
-    + [開始使用 A/B 測試](delivery/using/get-started-a-b-testing.md)
-    + [設定 A/B 測試](delivery/using/configuring-a-b-testing.md)
-    + 使用案例 {#use-case}
-      + [關於此使用實例](delivery/using/a-b-testing-use-case.md)
-      + [建立目標定位工作流程](delivery/using/a-b-testing-uc-targeting-workflow.md)
-      + [設定群體樣本](delivery/using/a-b-testing-uc-population-samples.md)
-      + [建立傳遞範本](delivery/using/a-b-testing-uc-delivery-templates.md)
-      + [設定傳遞](delivery/using/a-b-testing-uc-configuring-deliveries.md)
-      + [建立指令碼](delivery/using/a-b-testing-uc-script.md)
-      + [定義最終傳遞](delivery/using/a-b-testing-uc-final-delivery.md)
-      + [開始工作流程](delivery/using/a-b-testing-uc-start-workflow.md)
-      + [分析結果](delivery/using/a-b-testing-uc-analyzing.md)
-  + 服務與訂閱 {#subscriptions-and-referrals}
-    + [關於服務與訂閱](delivery/using/about-services-and-subscriptions.md)
-    + [管理訂閱](delivery/using/managing-subscriptions.md)
-    + [病毒式行銷及社交行銷](delivery/using/viral-and-social-marketing.md)
-  + 監視傳遞 {#monitoring-deliveries}
-    + [監視傳遞效能](delivery/using/about-delivery-monitoring.md)
-    + [追蹤訊息](delivery/using/about-message-tracking.md)
-    + [傳遞效能及疑難排解](delivery/using/delivery-performance-troubleshooting.md)
-    + [傳遞失敗與隔離管理](delivery/using/delivery-failures-quarantine.md)
-    + [進階：自訂傳遞記錄](delivery/using/customize-delivery-logs.md)
-  + 傳遞性管理 {#deliverability-management}
-    + [什麼是傳遞性](delivery/using/about-deliverability.md)
-    + [收件匣轉譯](delivery/using/inbox-rendering.md)
-    + [疑難排解](delivery/using/deliverability-faq.md)
-  + 內容管理模組 {#content-management}
-    + [關於內容管理](delivery/using/about-content-management.md)
-    + [內容管理員資源與原則](delivery/using/content-manager-resources-and-principles.md)
-    + [使用實例：建立內容管理](delivery/using/use-case-creating-content-management.md)
-    + [資料結構描述](delivery/using/data-schemas.md)
-    + [輸入表單](delivery/using/input-forms.md)
-    + [格式](delivery/using/formatting.md)
-    + [發佈範本](delivery/using/publication-templates.md)
-    + [使用內容範本](delivery/using/using-a-content-template.md)
-    + [豐富內容](delivery/using/enriching-content.md)
-    + [透過工作流程自動化](delivery/using/automating-via-workflows.md)
-+ 回應管理員 {#response-manager}
-  + [開始使用回應管理員](response/using/about-response-manager.md)
-  + [設定](response/using/configuration.md)
-  + [假設範本](response/using/hypothesis-templates.md)
-  + [建立假設](response/using/creating-hypotheses.md)
-  + [假設追蹤](response/using/hypothesis-tracking.md)
-+ 設計及共用報吿 {#reporting}
-  + 開始使用報告功能 {#reporting-in-adobe-campaign}
-    + [報告的最佳實務](reporting/using/best-practices.md)
-  + 存取內建報吿 {#accessing-built-in-reports}
-    + [關於內建報吿](reporting/using/about-campaign-built-in-reports.md)
-  + 分析群體 {#analyzing-populations}
-    + [什麼是描述性分析](reporting/using/about-descriptive-analysis.md)
-    + [建立您第一個描述性分析報告](reporting/using/using-the-descriptive-analysis-wizard.md)
-    + [管理並設定您的分析報告](reporting/using/processing-a-report.md)
-    + [分析報告使用案例](reporting/using/use-cases.md)
-  + 建立新報吿 {#creating-new-reports}
-    + [設計報吿的關鍵步驟](reporting/using/about-reports-creation-in-campaign.md)
-    + [建立新報吿](reporting/using/creating-a-new-report.md)
-    + [收集資料以進行分析](reporting/using/collecting-data-to-analyze.md)
-    + [使用內容](reporting/using/using-the-context.md)
-    + [建立表格](reporting/using/creating-a-table.md)
-    + [建立圖表](reporting/using/creating-a-chart.md)
-    + [元素版面](reporting/using/element-layout.md)
-    + [定義條件式內容](reporting/using/defining-a-conditional-content.md)
-    + [進階功能](reporting/using/advanced-functionalities.md)
-    + [報吿屬性](reporting/using/properties-of-the-report.md)
-    + [設定報告存取權](reporting/using/configuring-access-to-the-report.md)
-    + [針對報吿的動作](reporting/using/actions-on-reports.md)
-  + [以 cubes 設計報吿](reporting/using/ac-cubes.md)
-+ 設計網頁內容 {#designing-content}
-  + 網頁應用程式 {#web-applications}
-    + [開始使用網路應用程式](web/using/about-web-applications.md)
-    + [建立新的網站應用程式](web/using/creating-a-new-web-application.md)
-    + [設計網站應用程式](web/using/designing-a-web-application.md)
-    + [使用案例：建立概觀](web/using/use-cases-creating-overviews.md)
-    + [追蹤網站應用程式](web/using/translating-a-web-application.md)
-    + [追蹤網站應用程式的瀏覽次數](web/using/tracking-a-web-application.md)
-    + [網站應用程式追蹤選擇退出](web/using/web-application-tracking-opt-out.md)
-  + 編輯 HTML 內容 {#editing-html-content}
-    + [開始使用 HTML 編輯器](web/using/about-campaign-html-editor.md)
-    + [範本管理](web/using/template-management.md)
-    + [內容編輯器介面](web/using/content-editor-interface.md)
-    + [編輯內容](web/using/editing-content.md)
-    + [內容編輯最佳實務](web/using/content-editing-best-practices.md)
-    + [設定登陸頁面](web/using/creating-a-landing-page.md)
-    + [使用實例：建立電子郵件傳遞](web/using/use-case-creating-an-email-delivery.md)
-  + 網路表單 {#web-forms}
-    + [開始使用網路表單](web/using/about-web-forms.md)
-    + [使用網路表單範本](web/using/using-a-web-form-template.md)
-    + [新增欄位至網路表單](web/using/adding-fields-to-a-web-form.md)
-    + [網路表單中的靜態元素](web/using/static-elements-in-a-web-form.md)
-    + [定義網路表單版面](web/using/defining-web-forms-layout.md)
-    + [表單轉譯](web/using/form-rendering.md)
-    + [定義頁面順序](web/using/defining-web-forms-page-sequencing.md)
-    + [儲存網路表單答案](web/using/web-forms-answers.md)
-    + [發佈網路表單](web/using/publishing-a-web-form.md)
-    + [定義網路表單屬性](web/using/defining-web-forms-properties.md)
-    + [翻譯網路表單](web/using/translating-a-web-form.md)
-    + [使用實例：網路表單](web/using/use-cases-web-forms.md)
-+ 建立線上調查 {#online-surveys}
-  + [開始使用意見調查](surveys/using/about-surveys.md)
-  + [建立調查的關鍵步驟](surveys/using/getting-started-with-surveys.md)
-  + [設計調查](surveys/using/building-a-survey.md)
-  + [管理答案](surveys/using/managing-answers.md)
-  + [發佈、追蹤及使用收集的資料](surveys/using/publish-track-and-use-collected-data.md)
-  + [設定調查](surveys/using/configuring-surveys.md)
-  + [使用實例：建立轉介表單](surveys/using/use-case-creating-a-refer-a-friend-form.md)
-  + [使用案例：針對線上調查的回答顯示報吿](surveys/using/use-case-displaying-report-on-answers-to-an-online-survey.md)
-+ 整合 ADobe Experience Cloud {#integrating-with-adobe-experience-cloud}
-  + [開始使用 Campaign 整合](integrations/using/about-campaign-integrations.md)
-  + [建立 Adobe 技術帳戶](integrations/using/oauth-technical-account.md)
-  + Adobe Experience Cloud Triggers {#experience-triggers}
-    + [使用 [!DNL Experience Cloud Triggers]](integrations/using/about-triggers.md)
-    + [設定管道](integrations/using/configuring-pipeline.md)
-    + [設定自訂實施的事件](integrations/using/events.md)
-    + [管道監視](integrations/using/pipeline-monitoring.md)
-    + [管道疑難排解](integrations/using/pipeline-troubleshooting.md)
-  + Adobe Experience Platform 來源和目標 {#aep-sources-destinations}
-    + [使用來源和目的地](integrations/using/get-started-sources-destinations.md)
-    + [將 Adobe Experience Platform 客群內嵌至 Campaign](integrations/using/ingest-aep-data.md)
-    + [將資料從 Campaign 匯出至 Adobe Experience Platform](integrations/using/export-campaign-data.md)
-  + Adobe Analytics 連接器{#analytics-connector}
-    + [開始使用 Adobe Analytics 連接器](integrations/using/gs-aa.md)
-    + [Adobe Analytics 連接器佈建](integrations/using/adobe-analytics-provisioning.md)
-  + 客群共用 {#audience-sharing}
-    + [透過  [!DNL Adobe Experience Cloud] 分享客群](integrations/using/sharing-audiences-with-adobe-experience-cloud.md)
-    + [向 Adobe 提交請求](integrations/using/submitting-request-to-adobe.md)
-    + [於  [!DNL Adobe Campaign] 設定共用客群整合](integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
-    + {hide-from-toc}[疑難排解](integrations/using/troubleshooting.md)
-    + [匯入和匯出客群](integrations/using/importing-and-exporting-audiences.md)
-  + 資產共用 {#asset-sharing}
-    + [透過  [!DNL Adobe Experience Cloud] 分享資產體驗](integrations/using/sharing-assets-with-adobe-experience-cloud.md)
-    + [設定存取權至 [!DNL Assets]](integrations/using/configuring-access-to-assets.md)
-    + [插入共用資產](integrations/using/inserting-a-shared-asset.md)
-  + Adobe Experience Manager {#adobe-experience-manager}
-    + [設定整合](integrations/using/configuring-the-integration.md)
-  + Adobe Target {#adobe-target}
-    + [透過 [!DNL Adobe Target]設定整合](integrations/using/configuring-the-integration-with-adobe-target.md)
-+ 管理產品建議 {#managing-offers}
-  + 開始互動 {#interaction-overview}
-    + [互動與產品建議管理](interaction/using/interaction-and-offer-management.md)
-  + 管理產品建議目錄 {#managing-an-offer-catalog}
-    + [核准並啟用產品建議](interaction/using/approving-and-activating-an-offer.md)
-    + [管理產品建議範本](interaction/using/managing-offer-templates.md)
-    + [管理產品建議簡報](interaction/using/managing-offer-presentation.md)
-  + 產品建議模擬{#simulating-offers}
-    + [關於產品建議模擬](interaction/using/about-offers-simulation.md)
-    + [執行設定](interaction/using/execution-settings.md)
-    + [模擬範圍](interaction/using/simulation-scope.md)
-    + [模擬追蹤](interaction/using/simulation-tracking.md)
-  + 進階參數 {#advanced-parameters}
-    + [使用進階參數](interaction/using/using-advanced-parameters.md)
-    + [其他資料](interaction/using/additional-data.md)
-    + [擴充功能範例](interaction/using/extension-example.md)
-    + [建立測試環境](interaction/using/creating-a-test-environment.md)
-    + [修改標準引擎行為](interaction/using/hooks.md)
-    + [分佈式架構](interaction/using/distributed-architectures.md)
-    + [資料緩衝區設定](installation/using/interaction-data-buffer.md)
-  + 使用案例 {#case-study}
-    + [簡報規則](interaction/using/presentation-rules.md)
-    + [傳入頻道上的產品建議](interaction/using/offers-on-an-inbound-channel.md)
-    + [傳出頻道上的產品建議](interaction/using/offers-on-an-outbound-channel.md)
-+ 交易型傳訊 {#transactional-messaging}
-  + [開始使用交易型訊息](message-center/using/about-transactional-messaging.md)
-  + 設定交易型訊息 {#configure-transactional-messaging}
-    + [異動訊息傳送架構](message-center/using/transactional-messaging-architecture.md)
-    + [設定執行個體](message-center/using/configuring-instances.md)
-    + [其他設定](message-center/using/additional-configurations.md)
-  + 訊息範本 {#message-templates}
-    + [測試訊息範本](message-center/using/testing-message-templates.md)
-  + [使用案例](message-center/using/transactional-email-with-attachments.md)
-+ 整合社交媒體 {#integrating-with-social-media}
-  + [關於社交行銷](social/using/about-social-marketing.md)
-+ 安裝及設定指南 {#installing-campaign-classic}
++ 安裝與設定 {#installing-campaign-classic}
   + 架構原則 {#architecture-and-hosting-models}
     + [一般架構](installation/using/general-architecture.md)
     + 託管模型{#hosting-models-lp}
@@ -267,7 +75,7 @@ ht-degree: 100%
   + 安全性與隱私權設定 {#security-privacy}
     + [安全性與隱私權檢查清單](installation/using/get-started-security-privacy.md)
     + [個人化與隱私](installation/using/privacy.md)
-    + [安全的存取權管理](installation/using/access-management.md)
+    + [安全的存取權管理](installation/using/secure-access-management.md)
     + [指令碼和程式碼指南](installation/using/scripting-coding-guidelines.md)
     + [網路、資料庫和 SSL/TLS](installation/using/network-database.md)
     + [伺服器安全性設定](installation/using/server-configuration.md)
@@ -345,16 +153,26 @@ ht-degree: 100%
     + [Campaign 選項清單](installation/using/configuring-campaign-options.md)
     + {hide-from-toc}[解除安裝 Campaign](installation/using/uninstalling-campaign.md)
     + [安裝新字型](installation/using/install-fonts.md)
-+ 監視指南 {#monitoring-campaign-classic}
++ 移轉指南 {#migrating-to-a-new-version}
+  + {hide-from-toc}[移轉至 Adobe Campaign v7](migration/using/about-migration.md)
+  + 移轉程序 {#migration-procedure}
+    + {hide-from-toc}[必要條件](migration/using/before-starting-migration.md)
+    + {hide-from-toc}[關於移轉測試](migration/using/testing-the-migration.md)
+    + {hide-from-toc}[調整您的設定](migration/using/configuring-your-platform.md)
+  + 開始移轉 {#migrating-to-adobe-campaign-7}
+    + {hide-from-toc}[移轉 Microsoft Windows 平台](migration/using/migrating-in-windows-for-adobe-campaign-7.md)
+    + {hide-from-toc}[移轉 Linux 平台](migration/using/migrating-in-linux-for-adobe-campaign-v7.md)
+  + {hide-from-toc}[復原程序](migration/using/about-rollback.md)
++ 操作與監視 {#monitoring-campaign-classic}
   + 簡介 {#introduction}
     + [前言](production/using/foreword.md)
-    + [一般架構](production/using/general-architecture.md)
+    + [架構與開放連線埠](production/using/architecture-and-open-ports.md)
     + [監視指南](production/using/monitoring-guidelines.md)
   + 生產程序 {#production-procedures}
     + [設定原則](production/using/configuration-principle.md)
     + [操作原則](production/using/operating-principle.md)
     + [管理](production/using/administration.md)
-    + [設定](production/using/configuration.md)
+    + [Syslogd連線埠和安全區域](production/using/syslogd-port-and-security-zones.md)
     + [記錄檔案](production/using/log-files.md)
     + [監視流程](production/using/monitoring-processes.md)
     + [常用指令](production/using/usual-commands.md)
@@ -364,7 +182,7 @@ ht-degree: 100%
     + [複製環境](production/using/duplicating-environments.md)
     + [資料庫清除工作流程](production/using/database-cleanup-workflow.md)
   + 更新 Adobe Campaign {#updating-adobe-campaign}
-    + [簡介](production/using/introduction.md)
+    + [關於更新行銷活動](production/using/introduction.md)
     + [執行建置升級](production/using/build-upgrade.md)
     + [升級程序 (內部部署)](production/using/upgrading.md)
     + [切換至 Unicode](production/using/switching-to-unicode.md)
@@ -400,7 +218,7 @@ ht-degree: 100%
       + [Linux 中的堆疊追蹤](production/using/stack-trace-in-linux.md)
       + [JSP 行為](production/using/jsp-behavior.md)
       + [定位 Tomcat 版本](production/using/locate-tomcat-version.md)
-+ 開發人員指南 {#configuring-campaign-classic}
++ 開發和擴充 {#configuring-campaign-classic}
   + [資料套件](platform/using/working-with-data-packages.md)
   + 資料模型 {#data-model}
     + [資料模型說明](configuration/using/data-model-description.md)
@@ -411,7 +229,7 @@ ht-degree: 100%
     + [資料庫對應](configuration/using/database-mapping.md)
     + [金鑰管理](configuration/using/database-keys.md)
     + 元素和屬性 {#elements-attributes}
-      + [簡介](configuration/using/schema-introduction.md)
+      + [元素和屬性簡介](configuration/using/schema-introduction.md)
       + [屬性](configuration/using/schema/attribute.md)
       + [計算字串](configuration/using/schema/compute-string.md)
       + [條件](configuration/using/schema/condition.md)
@@ -470,16 +288,198 @@ ht-degree: 100%
     + [在您的網站中插入標籤](configuration/using/inserting-tags-in-your-site.md)
     + [收集所有瀏覽次數](configuration/using/collecting-all-visits.md)
     + [匿名追蹤](configuration/using/anonymous-tracking.md)
-+ 移轉指南 {#migrating-to-a-new-version}
-  + {hide-from-toc}[移轉至 Adobe Campaign v7](migration/using/about-migration.md)
-  + 移轉程序 {#migration-procedure}
-    + {hide-from-toc}[必要條件](migration/using/before-starting-migration.md)
-    + {hide-from-toc}[關於移轉測試](migration/using/testing-the-migration.md)
-    + {hide-from-toc}[調整您的設定](migration/using/configuring-your-platform.md)
-  + 開始移轉 {#migrating-to-adobe-campaign-7}
-    + {hide-from-toc}[移轉 Microsoft Windows 平台](migration/using/migrating-in-windows-for-adobe-campaign-7.md)
-    + {hide-from-toc}[移轉 Linux 平台](migration/using/migrating-in-linux-for-adobe-campaign-v7.md)
-  + {hide-from-toc}[復原程序](migration/using/about-rollback.md)
++ 建立及傳送訊息 {#sending-messages}
+  + [開始使用訊息](delivery/using/communication-channels.md)
+  + {hide-from-toc}[傳遞設定 - 隱藏](delivery/using/delivery-settings.md)
+  + [傳送電子郵件](delivery/using/about-email-channel.md)
+  + 傳送簡訊 {#sending-messages-on-mobiles}
+    + 設定簡訊頻道 {#sms-set-up}
+      + [在獨立執行個體上設定簡訊](delivery/using/sms-set-up.md)
+      + [在中間來源基礎結構上設定簡訊](delivery/using/sms-set-up-mid.md)
+      + [簡訊連接器通訊協定及設定](delivery/using/sms-protocol.md)
+      + [其他設定](delivery/using/sms-send.md)
+      + [簡訊疑難排解](delivery/using/troubleshooting-sms.md)
+  + [傳送推播通知](delivery/using/about-mobile-app-channel.md)
+  + 傳送推播通知 {#sending-push-notifications}
+    + {hide-from-toc}[疑難排解 - 隱藏](delivery/using/push-troubleshooting.md)
+  + [傳送直接郵件](delivery/using/about-direct-mail-channel.md)
+  + 個人化傳遞 {#personalizing-deliveries}
+    + [關於個人化](delivery/using/about-personalization.md)
+  + 使用種子地址 {#using-seed-addresses}
+    + [使用實例：依條件選取種子地址](delivery/using/use-case-selecting-seed-addresses-on-criteria.md)
+    + [使用實例：設定欄位替代](delivery/using/use-case-configuring-the-field-substitution.md)
+  + A/B 測試 {#a-b-testing}
+    + [開始使用 A/B 測試](delivery/using/get-started-a-b-testing.md)
+    + [設定 A/B 測試](delivery/using/configuring-a-b-testing.md)
+    + 使用案例 {#use-case}
+      + [關於此使用實例](delivery/using/a-b-testing-use-case.md)
+      + [建立目標定位工作流程](delivery/using/a-b-testing-uc-targeting-workflow.md)
+      + [設定群體樣本](delivery/using/a-b-testing-uc-population-samples.md)
+      + [建立傳遞範本](delivery/using/a-b-testing-uc-delivery-templates.md)
+      + [設定傳遞](delivery/using/a-b-testing-uc-configuring-deliveries.md)
+      + [建立指令碼](delivery/using/a-b-testing-uc-script.md)
+      + [定義最終傳遞](delivery/using/a-b-testing-uc-final-delivery.md)
+      + [開始工作流程](delivery/using/a-b-testing-uc-start-workflow.md)
+      + [分析結果](delivery/using/a-b-testing-uc-analyzing.md)
+  + 服務與訂閱 {#subscriptions-and-referrals}
+    + [關於服務與訂閱](delivery/using/about-services-and-subscriptions.md)
+    + [管理訂閱](delivery/using/managing-subscriptions.md)
+    + [病毒式行銷及社交行銷](delivery/using/viral-and-social-marketing.md)
+  + 監視傳遞 {#monitoring-deliveries}
+    + [監視傳遞效能](delivery/using/about-delivery-monitoring.md)
+    + [追蹤訊息](delivery/using/about-message-tracking.md)
+    + [傳遞效能及疑難排解](delivery/using/delivery-performance-troubleshooting.md)
+    + [傳遞失敗與隔離管理](delivery/using/delivery-failures-quarantine.md)
+    + [進階：自訂傳遞記錄](delivery/using/customize-delivery-logs.md)
+  + 傳遞性管理 {#deliverability-management}
+    + [什麼是傳遞性](delivery/using/about-deliverability.md)
+    + [收件匣轉譯](delivery/using/inbox-rendering.md)
+    + [疑難排解](delivery/using/deliverability-faq.md)
+  + 內容管理模組 {#content-management}
+    + [關於內容管理](delivery/using/about-content-management.md)
+    + [內容管理員資源與原則](delivery/using/content-manager-resources-and-principles.md)
+    + [使用實例：建立內容管理](delivery/using/use-case-creating-content-management.md)
+    + [資料結構描述](delivery/using/data-schemas.md)
+    + [輸入表單](delivery/using/input-forms.md)
+    + [格式](delivery/using/formatting.md)
+    + [發佈範本](delivery/using/publication-templates.md)
+    + [使用內容範本](delivery/using/using-a-content-template.md)
+    + [豐富內容](delivery/using/enriching-content.md)
+    + [透過工作流程自動化](delivery/using/automating-via-workflows.md)
++ 交易型傳訊 {#transactional-messaging}
+  + [開始使用交易型訊息](message-center/using/about-transactional-messaging.md)
+  + 設定交易型訊息 {#configure-transactional-messaging}
+    + [異動訊息傳送架構](message-center/using/transactional-messaging-architecture.md)
+    + [設定執行個體](message-center/using/configuring-instances.md)
+    + [其他設定](message-center/using/additional-configurations.md)
+  + 訊息範本 {#message-templates}
+    + [測試訊息範本](message-center/using/testing-message-templates.md)
+  + [使用案例](message-center/using/transactional-email-with-attachments.md)
++ 設計網頁內容 {#designing-content}
+  + 網頁應用程式 {#web-applications}
+    + [開始使用網路應用程式](web/using/about-web-applications.md)
+    + [建立新的網站應用程式](web/using/creating-a-new-web-application.md)
+    + [設計網站應用程式](web/using/designing-a-web-application.md)
+    + [使用案例：建立概觀](web/using/use-cases-creating-overviews.md)
+    + [追蹤網站應用程式](web/using/translating-a-web-application.md)
+    + [追蹤網站應用程式的瀏覽次數](web/using/tracking-a-web-application.md)
+    + [網站應用程式追蹤選擇退出](web/using/web-application-tracking-opt-out.md)
+  + 編輯 HTML 內容 {#editing-html-content}
+    + [開始使用 HTML 編輯器](web/using/about-campaign-html-editor.md)
+    + [範本管理](web/using/template-management.md)
+    + [內容編輯器介面](web/using/content-editor-interface.md)
+    + [編輯內容](web/using/editing-content.md)
+    + [內容編輯最佳實務](web/using/content-editing-best-practices.md)
+    + [設定登陸頁面](web/using/creating-a-landing-page.md)
+    + [使用實例：建立電子郵件傳遞](web/using/use-case-creating-an-email-delivery.md)
+  + 網路表單 {#web-forms}
+    + [開始使用網路表單](web/using/about-web-forms.md)
+    + [使用網路表單範本](web/using/using-a-web-form-template.md)
+    + [新增欄位至網路表單](web/using/adding-fields-to-a-web-form.md)
+    + [網路表單中的靜態元素](web/using/static-elements-in-a-web-form.md)
+    + [定義網路表單版面](web/using/defining-web-forms-layout.md)
+    + [表單轉譯](web/using/form-rendering.md)
+    + [定義頁面順序](web/using/defining-web-forms-page-sequencing.md)
+    + [儲存網路表單答案](web/using/web-forms-answers.md)
+    + [發佈網路表單](web/using/publishing-a-web-form.md)
+    + [定義網路表單屬性](web/using/defining-web-forms-properties.md)
+    + [翻譯網路表單](web/using/translating-a-web-form.md)
+    + [使用實例：網路表單](web/using/use-cases-web-forms.md)
++ 建立線上調查 {#online-surveys}
+  + [開始使用意見調查](surveys/using/about-surveys.md)
+  + [建立調查的關鍵步驟](surveys/using/getting-started-with-surveys.md)
+  + [設計調查](surveys/using/building-a-survey.md)
+  + [管理答案](surveys/using/managing-answers.md)
+  + [發佈、追蹤及使用收集的資料](surveys/using/publish-track-and-use-collected-data.md)
+  + [設定調查](surveys/using/configuring-surveys.md)
+  + [使用實例：建立轉介表單](surveys/using/use-case-creating-a-refer-a-friend-form.md)
+  + [使用案例：針對線上調查的回答顯示報吿](surveys/using/use-case-displaying-report-on-answers-to-an-online-survey.md)
++ 管理產品建議 {#managing-offers}
+  + 開始互動 {#interaction-overview}
+    + [互動與產品建議管理](interaction/using/interaction-and-offer-management.md)
+  + 管理產品建議目錄 {#managing-an-offer-catalog}
+    + [核准並啟用產品建議](interaction/using/approving-and-activating-an-offer.md)
+    + [管理產品建議範本](interaction/using/managing-offer-templates.md)
+    + [管理產品建議簡報](interaction/using/managing-offer-presentation.md)
+  + 產品建議模擬{#simulating-offers}
+    + [關於產品建議模擬](interaction/using/about-offers-simulation.md)
+    + [執行設定](interaction/using/execution-settings.md)
+    + [模擬範圍](interaction/using/simulation-scope.md)
+    + [模擬追蹤](interaction/using/simulation-tracking.md)
+  + 進階參數 {#advanced-parameters}
+    + [使用進階參數](interaction/using/using-advanced-parameters.md)
+    + [其他資料](interaction/using/additional-data.md)
+    + [擴充功能範例](interaction/using/extension-example.md)
+    + [建立測試環境](interaction/using/creating-a-test-environment.md)
+    + [修改標準引擎行為](interaction/using/hooks.md)
+    + [分佈式架構](interaction/using/distributed-architectures.md)
+    + [資料緩衝區設定](installation/using/interaction-data-buffer.md)
+  + 使用案例 {#case-study}
+    + [簡報規則](interaction/using/presentation-rules.md)
+    + [傳入頻道上的產品建議](interaction/using/offers-on-an-inbound-channel.md)
+    + [傳出頻道上的產品建議](interaction/using/offers-on-an-outbound-channel.md)
++ 回應管理員 {#response-manager}
+  + [開始使用回應管理員](response/using/about-response-manager.md)
+  + [設定回應管理員](response/using/configure-response-manager.md)
+  + [假設範本](response/using/hypothesis-templates.md)
+  + [建立假設](response/using/creating-hypotheses.md)
+  + [假設追蹤](response/using/hypothesis-tracking.md)
++ 設計及共用報吿 {#reporting}
+  + 開始使用報告功能 {#reporting-in-adobe-campaign}
+    + [報告的最佳實務](reporting/using/best-practices.md)
+  + 存取內建報吿 {#accessing-built-in-reports}
+    + [關於內建報吿](reporting/using/about-campaign-built-in-reports.md)
+  + 分析群體 {#analyzing-populations}
+    + [什麼是描述性分析](reporting/using/about-descriptive-analysis.md)
+    + [建立您第一個描述性分析報告](reporting/using/using-the-descriptive-analysis-wizard.md)
+    + [管理並設定您的分析報告](reporting/using/processing-a-report.md)
+    + [分析報告使用案例](reporting/using/use-cases.md)
+  + 建立新報吿 {#creating-new-reports}
+    + [設計報吿的關鍵步驟](reporting/using/about-reports-creation-in-campaign.md)
+    + [建立新報吿](reporting/using/creating-a-new-report.md)
+    + [收集資料以進行分析](reporting/using/collecting-data-to-analyze.md)
+    + [使用內容](reporting/using/using-the-context.md)
+    + [建立表格](reporting/using/creating-a-table.md)
+    + [建立圖表](reporting/using/creating-a-chart.md)
+    + [元素版面](reporting/using/element-layout.md)
+    + [定義條件式內容](reporting/using/defining-a-conditional-content.md)
+    + [進階功能](reporting/using/advanced-functionalities.md)
+    + [報吿屬性](reporting/using/properties-of-the-report.md)
+    + [設定報告存取權](reporting/using/configuring-access-to-the-report.md)
+    + [針對報吿的動作](reporting/using/actions-on-reports.md)
+  + [以 cubes 設計報吿](reporting/using/ac-cubes.md)
++ 整合 ADobe Experience Cloud {#integrating-with-adobe-experience-cloud}
+  + [開始使用 Campaign 整合](integrations/using/about-campaign-integrations.md)
+  + [建立 Adobe 技術帳戶](integrations/using/oauth-technical-account.md)
+  + Adobe Experience Cloud Triggers {#experience-triggers}
+    + [使用 [!DNL Experience Cloud Triggers]](integrations/using/about-triggers.md)
+    + [設定管道](integrations/using/configuring-pipeline.md)
+    + [設定自訂實施的事件](integrations/using/events.md)
+    + [管道監視](integrations/using/pipeline-monitoring.md)
+    + [管道疑難排解](integrations/using/pipeline-troubleshooting.md)
+  + Adobe Experience Platform 來源和目標 {#aep-sources-destinations}
+    + [使用來源和目的地](integrations/using/get-started-sources-destinations.md)
+    + [將 Adobe Experience Platform 客群內嵌至 Campaign](integrations/using/ingest-aep-data.md)
+    + [將資料從 Campaign 匯出至 Adobe Experience Platform](integrations/using/export-campaign-data.md)
+  + Adobe Analytics 連接器{#analytics-connector}
+    + [開始使用 Adobe Analytics 連接器](integrations/using/gs-aa.md)
+    + [Adobe Analytics 連接器佈建](integrations/using/adobe-analytics-provisioning.md)
+  + 客群共用 {#audience-sharing}
+    + [透過  [!DNL Adobe Experience Cloud] 分享客群](integrations/using/sharing-audiences-with-adobe-experience-cloud.md)
+    + [向 Adobe 提交請求](integrations/using/submitting-request-to-adobe.md)
+    + [於  [!DNL Adobe Campaign] 設定共用客群整合](integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
+    + {hide-from-toc}[疑難排解](integrations/using/integrations-troubleshooting.md)
+    + [匯入和匯出客群](integrations/using/importing-and-exporting-audiences.md)
+  + 資產共用 {#asset-sharing}
+    + [透過  [!DNL Adobe Experience Cloud] 分享資產體驗](integrations/using/sharing-assets-with-adobe-experience-cloud.md)
+    + [設定存取權至 [!DNL Assets]](integrations/using/configuring-access-to-assets.md)
+    + [插入共用資產](integrations/using/inserting-a-shared-asset.md)
+  + Adobe Experience Manager {#adobe-experience-manager}
+    + [設定整合](integrations/using/configuring-the-integration.md)
+  + Adobe Target {#adobe-target}
+    + [透過 [!DNL Adobe Target]設定整合](integrations/using/configuring-the-integration-with-adobe-target.md)
++ 整合社交媒體 {#integrating-with-social-media}
+  + [關於社交行銷](social/using/about-social-marketing.md)
 + 技術說明 {#technotes}
   + [硬體尺寸建議](technotes/using/hardware-sizing.md)
   + [使用增強的 MTA 傳送](delivery/using/sending-with-enhanced-mta.md)
@@ -498,7 +498,7 @@ ht-degree: 100%
     + [Apple iOS 上的郵件隱私保護](technotes/using/apple-mail-app-privacy-protection.md)
     + [iOS 憑證更新](technotes/using/ios-certificate-update.md)
   + 移轉至 Adobe Managed Services{#dc-migration}
-    + [移轉至公用雲端](technotes/using/dc-migration.md)
-    + [常見問答集](technotes/using/dc-migration-faq.md)
+    + {hide-from-toc}[移轉至公用雲端](technotes/using/dc-migration.md)
+    + {hide-from-toc}[常見問答集](technotes/using/dc-migration-faq.md)
   + [以 GCM 為基礎的函式](technotes/using/gcm-functions.md)
 + [Campaign 控制面板](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hant)

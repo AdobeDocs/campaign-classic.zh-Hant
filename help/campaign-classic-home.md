@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: c1f8b6661065c8d5c75e38d80f6986e0c6fbdfa8
+source-git-commit: fbeb3bb6f89cd0b03d1fb4551496f96eda0cbf10
 workflow-type: tm+mt
-source-wordcount: '940'
-ht-degree: 59%
+source-wordcount: '930'
+ht-degree: 40%
 ---
 # Campaign Classic v7 文件 {#campaign-classic-documentation}
 
@@ -97,36 +97,19 @@ Campaign Classic v7.4.5 - 2026年10月建置版本（建置版本9420）針對An
 <table style="table-layout:auto">
   <tr style="border: 0;">
     <td>
-      <img src="assets/do-not-localize/icon-start.svg" width="35px">
-    <br/>
-      <strong>開始使用</strong><br/><a href="https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/new/campaign-ui" target="_blank">使用者介面</a> (Campaign v8 文件) - <a href="platform/using/launching-adobe-campaign.md">連線至 Campaign</a> - <a href="https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/data/import" target="_blank">匯入與匯出資料</a> (Campaign v8 文件) - <a href="platform/using/access-management.md">權限</a>
-    </td>
-    <td>
-      <img src="assets/do-not-localize/icon-experience.svg" width="35px">
-    <br/>
-      <strong>客戶體驗</strong><br/><a href="https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/workflows/introduction/about-workflows" target="_blank">使用工作流程自動化</a> （Campaign v8檔案） - <a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=zh-Hant" target="_blank">行銷活動</a> - <a href="interaction/using/interaction-and-offer-management.md">互動與優惠方案管理</a> - <a href="delivery/using/about-personalization.md">Personalization</a> - <a href="https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/analytics/reports/gs-reporting" target="_blank">報告</a> （Campaign v8檔案）
+      <img src="assets/do-not-localize/icon-configure.svg" width="35px">
+      <br/>
+      <strong>管理員</strong><br/><a href="production/using/architecture-and-open-ports.md">架構原則</a> - <a href="production/using/syslogd-port-and-security-zones.md">設定Campaign</a> - <a href="platform/using/launching-adobe-campaign.md">連線至Campaign</a> - <a href="installation/using/external-accounts.md">連線至外部系統</a> - <a href="platform/using/access-management.md">許可權</a> - <a href="platform/using/privacy-management.md">隱私權和同意</a> - <a href="production/using/build-upgrade.md">執行組建升級</a> - <a href="delivery/using/about-deliverability.md">傳遞能力</a>
     </td>
     <td>
       <img src="assets/do-not-localize/icon-send.svg" width="35px">
-    <br/>
-      <strong>傳送訊息</strong><br/><a href="delivery/using/communication-channels.md">通訊頻道</a> - <a href="https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/create-message" target="_blank">傳送校樣</a> (Campaign v8 文件) - <a href="delivery/using/get-started-a-b-testing.md">A/B 測試</a> - <a href="https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/analytics/tracking/tracking" target="_blank">訊息追蹤</a> - <a href="delivery/using/about-deliverability.md">傳遞能力</a> - <a href="message-center/using/about-transactional-messaging.md">交易型訊息</a>
-    </td>
-  </tr>
-  <tr style="border: 0;">
-    <td>
-      <img src="assets/do-not-localize/icon_profile-audience.svg" width="35px">
       <br/>
-      <strong>輪廓與客群</strong><br/> <a href="https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/audience/create-audiences/create-audiences" target="_blank">建立清單</a> (Campaign v8 文件) - <a href="delivery/using/about-services-and-subscriptions.md">服務與訂閱</a> - <a href="platform/using/privacy-management.md">隱私權與同意</a>
-    </td>
-    <td>
-      <img src="assets/do-not-localize/icon-configure.svg" width="35px">
-      <br/>
-      <strong>架構與設定</strong><br/><a href="production/using/general-architecture.md">架構原則</a> - <a href="production/using/build-upgrade.md">執行建置升級</a> - <a href="production/using/configuration.md">設定 Campaign</a> - <a href="installation/using/external-accounts.md">連線到外部系統</a>
+      <strong>行銷人員</strong><br/><a href="https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/new/campaign-ui" target="_blank">使用者介面</a> （Campaign v8檔案） - <a href="https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/data/import" target="_blank">匯入和匯出資料</a> （Campaign v8檔案） - <a href="https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/audience/create-audiences/create-audiences" target="_blank">建立清單</a> （Campaign v8檔案） - <a href="delivery/using/about-services-and-subscriptions.md">服務與訂閱</a> - <a href="delivery/using/communication-channels.md">通訊頻道</a> - <a href="delivery/using/about-personalization.md">Personalization</a> - <a href="https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/create-message" target="_blank">傳送校樣</a> （Campaign v8檔案） - <a href="delivery/using/get-started-a-b-testing.md">A/B測試</a> - <a href="message-center/using/about-transactional-messaging.md">異動訊息</a> - <a href="interaction/using/interaction-and-offer-management.md">互動和優惠管理</a> - <a href="https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/workflows/introduction/about-workflows" target="_blank">使用工作流實現自動化</a>（Campaign v8文檔） - <a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=zh-Hant" target="_blank">行銷活動</a> - <a href="https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/analytics/tracking/tracking" target="_blank">消息跟蹤</a>（Campaign v8文檔） - <a href="https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/analytics/reports/gs-reporting" target="_blank">報表</a>（Campaign v8文檔）
     </td>
     <td>
       <img src="assets/do-not-localize/icon-dev.svg" width="35px">
       <br/>
-      <strong>開發人員資源</strong><br/><a href="https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/datamodel" target="_blank">資料模型說明</a> （Campaign v8檔案） - <a href="configuration/using/about-schema-reference.md">結構描述結構</a> - <a href="configuration/using/editing-forms.md">輸入表單</a> - <a href="configuration/using/about-web-services.md">API</a> - <a href="https://experienceleague.adobe.com/zh-hant/tools/campaign-api">JSAPI參考檔案</a> - <a href="configuration/using/about-custom-recipient-table.md">自訂收件者表格</a>
+      <strong>開發人員</strong><br/><a href="https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/datamodel" target="_blank">資料模型說明</a> （Campaign v8檔案） - <a href="configuration/using/about-schema-reference.md">結構描述結構</a> - <a href="configuration/using/editing-forms.md">輸入表單</a> - <a href="configuration/using/about-web-services.md">API</a> - <a href="https://experienceleague.adobe.com/zh-hant/tools/campaign-api" target="_blank">JSAPI參考檔案</a> - <a href="configuration/using/about-custom-recipient-table.md">自訂收件者表格</a>
     </td>
   </tr>
 </table>
