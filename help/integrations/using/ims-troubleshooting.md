@@ -33,15 +33,19 @@ subfeature_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 2e00628a95aa333698f11233e851b54423f11f29
 workflow-type: tm+mt
-source-wordcount: '489'
+source-wordcount: '492'
 ht-degree: 5%
 ---
 # IMS 疑難排解{#ims-troubleshooting}
 
 
 下列疑難排解提示可協助&#x200B;**內部部署**&#x200B;和&#x200B;**混合式**&#x200B;客戶解決使用IMS整合時最常發生的問題。 若為&#x200B;**託管**&#x200B;客戶，請聯絡Adobe。
+
+作為從Campaign v7轉變到v8的一部分，Campaign Classic檔案集已簡化並重新組織。 Campaign v8檔案集中現在提供常見功能。 若要進一步瞭解使用Adobe ID登入以及疑難排解登入問題，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/connect){target=_blank}。
+
+[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/connect){target=_blank}
 
 **外部帳戶**
 
@@ -106,16 +110,3 @@ Campaign外部帳戶與IMS布建的帳戶之間的使用者端ID相符。
 * 使用者無法存取Adobe ID登入頁面：
 
   請參閱先前步驟以檢查範圍組態。
-
-**WebView2快取問題**
-
-如果您在使用Adobe ID登入&#x200B;**[!UICONTROL Client Console]**&#x200B;時發生問題，請嘗試清除本機WebView2快取。 在大多數情況下，這可以解決問題。 請遵循以下步驟：
-
-1. 關閉&#x200B;**[!UICONTROL Client Console]**&#x200B;並停止任何執行中的`nlclient`處理序。
-
-1. 從下列位置刪除所有`webview2`和`webview2Cache`資料夾：
-
-   * `C:\ProgramData\Neolane\NL_5\nlclient\`
-   * `C:\Users\<username>\AppData\Roaming\Neolane\NL_5\nlclient\`
-
-1. 重新啟動&#x200B;**[!UICONTROL Client Console]**&#x200B;並使用您的Adobe ID登入。 快取資料夾將在下次啟動時自動重新建立。
