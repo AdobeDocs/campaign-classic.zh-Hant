@@ -40,10 +40,10 @@ role_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 4ae19a379120bb39444c3e81392a7dbb0b6da3ba
 workflow-type: tm+mt
-source-wordcount: '109'
-ht-degree: 0%
+source-wordcount: '123'
+ht-degree: 9%
 ---
 # 疑難排解{#troubleshooting}
 
@@ -60,4 +60,4 @@ HTTP/2聯結器：您必須允許與下列伺服器之間的通訊：
 
 >[!NOTE]
 >
->如需這兩個聯結器的詳細資訊，請參閱[在Adobe Campaign中設定行動應用程式](configuring-the-mobile-application.md)。
+>如需這兩個聯結器的詳細資訊，請參閱[在Adobe Campaign中設定行動應用程式](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/push/push-settings){target="_blank"} （Campaign v8檔案）。

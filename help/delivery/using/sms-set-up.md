@@ -49,7 +49,7 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 4ae19a379120bb39444c3e81392a7dbb0b6da3ba
 workflow-type: tm+mt
 source-wordcount: '1742'
 ht-degree: 30%
@@ -91,7 +91,7 @@ ht-degree: 30%
 
    >[!CAUTION]
    >
-   > 自版本20.2起，舊版聯結器已棄用且不受支援。 我們建議使用&#x200B;**[!UICONTROL Extended generic SMPP]**&#x200B;聯結器。 有關如何移轉至建議聯結器的詳細資訊，請參閱此[頁面](unsupported-connector-migration.md)。
+   > 自版本20.2起，舊版聯結器已棄用且不受支援。 我們建議使用&#x200B;**[!UICONTROL Extended generic SMPP]**&#x200B;聯結器。 有關如何移轉至建議聯結器的詳細資訊，請參閱此[頁面](sms-set-up.md)。
 
 1. **[!UICONTROL Enable verbose SMPP traces in the log file]**&#x200B;選項可讓您將所有SMPP通訊傾印到記錄檔中。 必須啟用此選項，才能疑難排解連接器，並與提供者所看到的流量進行比較。
 
@@ -394,7 +394,7 @@ CR：歸位
 
 ## 變更傳遞範本 {#changing-the-delivery-template}
 
-Adobe Campaign提供您傳送至行動裝置的範本。 此範本可在&#x200B;**[!UICONTROL Resources > Templates > Delivery templates]**&#x200B;節點中使用。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=zh-Hant){target="_blank"}。
+Adobe Campaign提供您傳送至行動裝置的範本。 此範本可在&#x200B;**[!UICONTROL Resources > Templates > Delivery templates]**&#x200B;節點中使用。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}。
 
 若要透過SMS頻道傳遞，您必須建立其中引用頻道聯結器的範本。
 
