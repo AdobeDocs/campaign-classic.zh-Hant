@@ -26,9 +26,9 @@ topic_v2:
     internal-label: Optimization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 2e00628a95aa333698f11233e851b54423f11f29
+source-git-commit: aeb8e44e8183cad6557fe2f27565cad0343777e5
 workflow-type: tm+mt
-source-wordcount: '1426'
+source-wordcount: '1440'
 ht-degree: 9%
 ---
 # 安裝Campaign Classic內建套件{#installing-campaign-standard-packages}
@@ -85,7 +85,7 @@ ht-degree: 9%
   </tr> 
   <tr> 
    <td> 行銷活動（行銷活動）<br /> </td> 
-   <td> 定義、最佳化、執行和分析通訊和行銷活動。 <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html?lang=zh-Hant" target="_blank">進一步瞭解</a><br /> </td> 
+   <td> 定義、最佳化、執行和分析通訊和行銷活動。 <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html" target="_blank">進一步瞭解</a><br /> </td> 
    <td> 行銷</td>
   </tr> 
   <tr> 
@@ -173,12 +173,12 @@ ht-degree: 9%
   </tr> 
   <tr> 
    <td> 回應管理員<br /> </td> 
-   <td> 衡量行銷活動的成功和盈利能力，或為所有通訊管道提供建議。  選填。 <a href="../../response/using/about-response-manager.md">深入瞭解</a> <br /> </td> 
+   <td> 衡量行銷活動的成功和盈利能力，或為所有通訊管道提供建議。  選填。 <a href="https://experienceleague.adobe.com/en/docs/campaign/automation/response-manager/about-response-manager" target="_blank">深入瞭解</a> （Campaign v8檔案） <br /> </td> 
    <td> 行銷<br /> </td> 
   </tr> 
   <tr> 
    <td> 存取外部資料（同盟資料存取）<br /> </td> 
-   <td> 提供同盟資料存取(FDA)選項，以處理儲存在一或多個外部資料庫中的資訊，因此您無需變更Adobe Campaign資料的結構即可存取外部資料。  選填。 <a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/accessing-an-external-database-fda.html?lang=zh-Hant" target="_blank">深入瞭解</a> <br /> </td> 
+   <td> 提供同盟資料存取(FDA)選項，以處理儲存在一或多個外部資料庫中的資訊，因此您無需變更Adobe Campaign資料的結構即可存取外部資料。  選填。 <a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/accessing-an-external-database-fda.html" target="_blank">深入瞭解</a> <br /> </td> 
    <td> 全部<br /> </td> 
   </tr> 
   <tr> 
@@ -193,7 +193,7 @@ ht-degree: 9%
   </tr> 
   <tr> 
    <td> 優惠券管理<br /> </td> 
-   <td> 建立一組優惠券以新增至即將推出的行銷優惠方案。 選填。 <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalized-coupons.html?lang=zh-Hant" target="_blank">深入瞭解</a> <br /> </td> 
+   <td> 建立一組優惠券以新增至即將推出的行銷優惠方案。 選填。 <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalized-coupons.html" target="_blank">深入瞭解</a> <br /> </td> 
    <td> 行銷<br /> </td> 
   </tr> 
   <tr> 
@@ -218,7 +218,7 @@ ht-degree: 9%
   </tr> 
   <tr> 
    <td> AEM整合<br /> </td> 
-   <td> 可讓您直接在Adobe Experience Manager中管理電子郵件傳送的內容以及表單，以便受益於AEM的內容編輯功能以及Adobe Campaign的傳送功能。 <a href="https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/connect/ac-aem" target="_blank">深入瞭解</a> （Campaign v8檔案） <br /> </td> 
+   <td> 可讓您直接在Adobe Experience Manager中管理電子郵件傳送的內容以及表單，以便受益於AEM的內容編輯功能以及Adobe Campaign的傳送功能。 <a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/ac-aem" target="_blank">深入瞭解</a> （Campaign v8檔案） <br /> </td> 
    <td> 行銷</td> 
   </tr> 
   <tr> 
@@ -248,7 +248,7 @@ ht-degree: 9%
   </tr> 
   <tr> 
    <td> AMP支援<br /> </td> 
-   <td> 可讓您使用新的互動式AMP傳送電子郵件格式，並傳送動態電子郵件。 選填。 <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-interactive-content.html?lang=zh-Hant" target="_blank">深入瞭解</a> <br /> </td> 
+   <td> 可讓您使用新的互動式AMP傳送電子郵件格式，並傳送動態電子郵件。 選填。 <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-interactive-content.html" target="_blank">深入瞭解</a> <br /> </td> 
    <td> 全部 </td> 
   </tr> 
   <tr> 
@@ -283,7 +283,7 @@ ht-degree: 9%
 
 * 在行銷和MID執行個體上安裝[!DNL LINE]套件
 
-* 透過變更傳遞模式，在mkt執行個體上設定[!DNL LINE]外部帳戶以指向mid執行個體。 [了解更多](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/other-channels/line#configure-line-external){target="_blank"} (Campaign v8 文件)
+* 透過變更傳遞模式，在mkt執行個體上設定[!DNL LINE]外部帳戶以指向mid執行個體。 [了解更多](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/other-channels/line#configure-line-external){target="_blank"} (Campaign v8 文件)
 
 * 在MID執行個體的外部帳戶中設定[!DNL LINE]認證。
 

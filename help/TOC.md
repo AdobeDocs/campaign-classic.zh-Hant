@@ -8,9 +8,9 @@ user-guide-description: Adobe Campaign Classic v7 產品文件。
 sub-product: adobe campaign classic
 type: Documentation
 nudge: false
-source-git-commit: d5aff6b318cea324297eb7e2e887a67fb18cd504
+source-git-commit: aeb8e44e8183cad6557fe2f27565cad0343777e5
 workflow-type: tm+mt
-source-wordcount: '1574'
+source-wordcount: '1558'
 ht-degree: 97%
 ---
 
@@ -417,12 +417,6 @@ ht-degree: 97%
     + [簡報規則](interaction/using/presentation-rules.md)
     + [傳入頻道上的產品建議](interaction/using/offers-on-an-inbound-channel.md)
     + [傳出頻道上的產品建議](interaction/using/offers-on-an-outbound-channel.md)
-+ 回應管理員 {#response-manager}
-  + [開始使用回應管理員](response/using/about-response-manager.md)
-  + [設定回應管理員](response/using/configure-response-manager.md)
-  + [假設範本](response/using/hypothesis-templates.md)
-  + [建立假設](response/using/creating-hypotheses.md)
-  + [假設追蹤](response/using/hypothesis-tracking.md)
 + 設計及共用報吿 {#reporting}
   + 開始使用報告功能 {#reporting-in-adobe-campaign}
     + [報告的最佳實務](reporting/using/best-practices.md)
