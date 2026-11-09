@@ -86,7 +86,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->如需Campaign網頁本地化的詳細資訊，請參閱[本節](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/translating-a-web-form){target="_blank"} （Campaign v8檔案）。
+>如需Campaign網頁本地化的詳細資訊，請參閱[本節](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/content/web-forms/translating-a-web-form){target="_blank"} （Campaign v8檔案）。
 
 ## 個人化HTML呈現 {#personalizing-html-rendering}
 

@@ -39,7 +39,7 @@ ht-degree: 1%
 
 除了詳細的[這裡](../../reporting/using/creating-a-chart.md#chart-types-and-variants)的各種圖表之外，您還可以調整顯示方式，並將元素新增至報告頁面。
 
-您可以使用容器：這些容器可讓您連結頁面的數個元素，並在欄及/或儲存格中設定其版面。 [本節](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/defining-web-forms-layout#creating-containers){target="_blank"} （Campaign v8檔案）中會詳細說明其使用方式。
+您可以使用容器：這些容器可讓您連結頁面的數個元素，並在欄及/或儲存格中設定其版面。 [本節](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/content/web-forms/defining-web-forms-layout#creating-containers){target="_blank"} （Campaign v8檔案）中會詳細說明其使用方式。
 
 您可以在樹狀結構的根目錄設定報表配置，並針對每個容器多載它。 頁面會排序為欄。 容器也會排序為欄。 只有靜態和圖形專案會排序成儲存格。
 
@@ -53,7 +53,7 @@ ht-degree: 1%
 
 **[!UICONTROL Title]**&#x200B;欄位可讓您個人化報告頁面標頭中的標籤。 視窗的標題可透過報告的&#x200B;**[!UICONTROL Properties]**&#x200B;視窗來設定。 如需詳細資訊，請參閱[新增頁首和頁尾](#adding-a-header-and-a-footer)。
 
-**[!UICONTROL Display settings]**&#x200B;選項可讓您選取報告頁面中控制標題的位置，並定義頁面上的欄數。 如需頁面配置的詳細資訊，請參閱[本區段](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/defining-web-forms-layout#positioning-the-fields-on-the-page){target="_blank"}的&#x200B;**專案配置**&#x200B;區段（Campaign v8檔案）。
+**[!UICONTROL Display settings]**&#x200B;選項可讓您選取報告頁面中控制標題的位置，並定義頁面上的欄數。 如需頁面配置的詳細資訊，請參閱[本區段](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/content/web-forms/defining-web-forms-layout#positioning-the-fields-on-the-page){target="_blank"}的&#x200B;**專案配置**&#x200B;區段（Campaign v8檔案）。
 
 在&#x200B;**[!UICONTROL Browse]**&#x200B;區段中選取各種選項，以授權從一個報告頁面瀏覽到另一個報告頁面。 如果選取&#x200B;**[!UICONTROL Disable next page]**&#x200B;或&#x200B;**[!UICONTROL Disable previous page]**&#x200B;選項，**[!UICONTROL Next]**&#x200B;和&#x200B;**[!UICONTROL Previous]**&#x200B;按鈕會從報告頁面中消失。
 

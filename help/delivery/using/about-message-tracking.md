@@ -108,11 +108,11 @@ ht-degree: 3%
 
 **追蹤 Web 應用程式**
 
-您也可以追蹤和測量具有追蹤標籤的網頁應用程式頁面上的造訪次數。 此功能可用於所有Web應用程式型別，例如表單和登入頁面。 [了解更多](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-applications/tracking-a-web-application){target="_blank"} (Campaign v8 文件)
+您也可以追蹤和測量具有追蹤標籤的網頁應用程式頁面上的造訪次數。 此功能可用於所有Web應用程式型別，例如表單和登入頁面。 [了解更多](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/content/web-applications/tracking-a-web-application){target="_blank"} (Campaign v8 文件)
 
 **網站應用程式追蹤選擇退出**
 
-網站應用程式追蹤選擇退出可讓您停止追蹤選擇退出行為追蹤之一般使用者的網站行為。 您可以在網頁應用程式或登入頁面中加入顯示橫幅的功能，讓使用者選擇退出。 [了解更多](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-applications/web-application-tracking-opt-out){target="_blank"} (Campaign v8 文件)
+網站應用程式追蹤選擇退出可讓您停止追蹤選擇退出行為追蹤之一般使用者的網站行為。 您可以在網頁應用程式或登入頁面中加入顯示橫幅的功能，讓使用者選擇退出。 [了解更多](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/content/web-applications/web-application-tracking-opt-out){target="_blank"} (Campaign v8 文件)
 
 ## 追蹤疑難排解 {#tracking-troubleshooting}
 

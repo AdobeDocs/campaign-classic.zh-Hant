@@ -141,7 +141,7 @@ ht-degree: 2%
 
 特定設定可讓您控制錯誤。 在報告的URL中找到&#x200B;**_uuid**&#x200B;設定。 您可以新增&#x200B;**&amp;_preview**&#x200B;或&#x200B;**&amp;_debug**&#x200B;設定至其中。
 
-若要深入瞭解這些設定，請參閱[網路表單](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/about-web-forms){target="_blank"} （Campaign v8檔案）章節的&#x200B;**定義網路表單屬性**&#x200B;區段。
+若要深入瞭解這些設定，請參閱[網路表單](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/content/web-forms/about-web-forms){target="_blank"} （Campaign v8檔案）章節的&#x200B;**定義網路表單屬性**&#x200B;區段。
 
 ## 發佈報表 {#publishing-the-report}
 

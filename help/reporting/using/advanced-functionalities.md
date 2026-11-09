@@ -67,7 +67,7 @@ ht-degree: 3%
 
    ![](assets/reporting_custom_js.png)
 
-若要在使用者端正常執行，參照的指令碼必須以JavaScript撰寫，且必須和常見瀏覽器相容。 如需詳細資訊，請參閱[本節](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/web-forms-answers){target="_blank"} （Campaign v8檔案）。
+若要在使用者端正常執行，參照的指令碼必須以JavaScript撰寫，且必須和常見瀏覽器相容。 如需詳細資訊，請參閱[本節](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/content/web-forms/web-forms-answers){target="_blank"} （Campaign v8檔案）。
 
 ### 新增指令碼活動 {#script-activity}
 

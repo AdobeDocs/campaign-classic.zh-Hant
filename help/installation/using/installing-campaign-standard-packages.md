@@ -26,9 +26,9 @@ topic_v2:
     internal-label: Optimization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: aeb8e44e8183cad6557fe2f27565cad0343777e5
+source-git-commit: 5e2aa587f61d79eab6d356ea5f91bc4e0f1b24c6
 workflow-type: tm+mt
-source-wordcount: '1440'
+source-wordcount: '1454'
 ht-degree: 9%
 ---
 # 安裝Campaign Classic內建套件{#installing-campaign-standard-packages}
@@ -163,7 +163,7 @@ ht-degree: 9%
   </tr> 
   <tr> 
    <td> 線上意見調查（意見調查管理員）<br /> </td> 
-   <td> 建立和管理線上表單，以新增或修改設定檔資訊、訂閱、取消訂閱或競爭者輸入表單。 選填。 <a href="../../surveys/using/about-surveys.md">深入瞭解</a> <br /> </td> 
+   <td> 建立和管理線上表單，以新增或修改設定檔資訊、訂閱、取消訂閱或競爭者輸入表單。 選填。 <a href="https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/content/surveys/about-surveys" target="_blank">深入瞭解</a> （Campaign v8檔案） <br /> </td> 
    <td> 行銷<br /> </td> 
   </tr> 
   <tr> 
@@ -173,7 +173,7 @@ ht-degree: 9%
   </tr> 
   <tr> 
    <td> 回應管理員<br /> </td> 
-   <td> 衡量行銷活動的成功和盈利能力，或為所有通訊管道提供建議。  選填。 <a href="https://experienceleague.adobe.com/en/docs/campaign/automation/response-manager/about-response-manager" target="_blank">深入瞭解</a> （Campaign v8檔案） <br /> </td> 
+   <td> 衡量行銷活動的成功和盈利能力，或為所有通訊管道提供建議。  選填。 <a href="https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/response-manager/about-response-manager" target="_blank">深入瞭解</a> （Campaign v8檔案） <br /> </td> 
    <td> 行銷<br /> </td> 
   </tr> 
   <tr> 
