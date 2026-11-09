@@ -8,9 +8,9 @@ user-guide-description: Adobe Campaign Classic v7 產品文件。
 sub-product: adobe campaign classic
 type: Documentation
 nudge: false
-source-git-commit: fbeb3bb6f89cd0b03d1fb4551496f96eda0cbf10
+source-git-commit: d5aff6b318cea324297eb7e2e887a67fb18cd504
 workflow-type: tm+mt
-source-wordcount: '1577'
+source-wordcount: '1574'
 ht-degree: 97%
 ---
 
@@ -152,7 +152,6 @@ ht-degree: 97%
     + [建立新執行個體](installation/using/creating-new-instances.md)
     + [Campaign 選項清單](installation/using/configuring-campaign-options.md)
     + {hide-from-toc}[解除安裝 Campaign](installation/using/uninstalling-campaign.md)
-    + [安裝新字型](installation/using/install-fonts.md)
 + 移轉指南 {#migrating-to-a-new-version}
   + {hide-from-toc}[移轉至 Adobe Campaign v7](migration/using/about-migration.md)
   + 移轉程序 {#migration-procedure}
