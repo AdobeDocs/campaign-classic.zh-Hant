@@ -8,9 +8,9 @@ user-guide-description: Adobe Campaign Classic v7 產品文件。
 sub-product: adobe campaign classic
 type: Documentation
 nudge: false
-source-git-commit: 00c9aab788ae3d4fb600d08b9ab9604e3a14d7af
+source-git-commit: 77efa1dcdb82a478e93565e84099d568f6a5f5fe
 workflow-type: tm+mt
-source-wordcount: '1395'
+source-wordcount: '1353'
 ht-degree: 97%
 ---
 
@@ -357,27 +357,13 @@ ht-degree: 97%
 + 管理產品建議 {#managing-offers}
   + 開始互動 {#interaction-overview}
     + [互動與產品建議管理](interaction/using/interaction-and-offer-management.md)
-  + 管理產品建議目錄 {#managing-an-offer-catalog}
-    + [核准並啟用產品建議](interaction/using/approving-and-activating-an-offer.md)
-    + [管理產品建議範本](interaction/using/managing-offer-templates.md)
-    + [管理產品建議簡報](interaction/using/managing-offer-presentation.md)
-  + 產品建議模擬{#simulating-offers}
-    + [關於產品建議模擬](interaction/using/about-offers-simulation.md)
-    + [執行設定](interaction/using/execution-settings.md)
-    + [模擬範圍](interaction/using/simulation-scope.md)
-    + [模擬追蹤](interaction/using/simulation-tracking.md)
   + 進階參數 {#advanced-parameters}
     + [使用進階參數](interaction/using/using-advanced-parameters.md)
     + [其他資料](interaction/using/additional-data.md)
-    + [擴充功能範例](interaction/using/extension-example.md)
     + [建立測試環境](interaction/using/creating-a-test-environment.md)
     + [修改標準引擎行為](interaction/using/hooks.md)
     + [分佈式架構](interaction/using/distributed-architectures.md)
     + [資料緩衝區設定](installation/using/interaction-data-buffer.md)
-  + 使用案例 {#case-study}
-    + [簡報規則](interaction/using/presentation-rules.md)
-    + [傳入頻道上的產品建議](interaction/using/offers-on-an-inbound-channel.md)
-    + [傳出頻道上的產品建議](interaction/using/offers-on-an-outbound-channel.md)
 + 設計及共用報吿 {#reporting}
   + 開始使用報告功能 {#reporting-in-adobe-campaign}
     + [報告的最佳實務](reporting/using/best-practices.md)

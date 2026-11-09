@@ -27,9 +27,9 @@ topic_v2:
     internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 00c9aab788ae3d4fb600d08b9ab9604e3a14d7af
+source-git-commit: 77efa1dcdb82a478e93565e84099d568f6a5f5fe
 workflow-type: tm+mt
-source-wordcount: '2404'
+source-wordcount: '2420'
 ht-degree: 2%
 ---
 # Campaign資料模型說明{#data-model-description}
@@ -73,7 +73,7 @@ iFolderId欄位是將收件者連結至其執行資料夾的外部索引鍵。 �
 
 sCountryCode欄位是與收件者相關聯之國家的3166-1 Alpha 2 ISO代碼（2個字元）。 此欄位實際上是國家/地區參考表格(NmsCountry)上的外部索引鍵，其中包含國家/地區標籤和其他國家/地區代碼資料。 若未填入國家/地區，則會儲存「XX」值（並使用它來取代零識別碼記錄）。
 
-如需收件者表格的詳細資訊，請參閱[本節](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/datamodel#ootb-profiles){target="_blank"} （Campaign v8檔案）。
+如需收件者表格的詳細資訊，請參閱[本節](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/datamodel#ootb-profiles){target="_blank"} （Campaign v8檔案）。
 
 ### NmsGroup {#NmsGroup}
 
@@ -133,7 +133,7 @@ NmsRcpGrpRel關係表格僅包含與iRecipientId及iGroupId連結表格識別碼
 
 ## 行銷活動管理 {#campaign-management}
 
-這組表格連結至&#x200B;**行銷活動**&#x200B;模組，可讓您定義、最佳化、執行和分析通訊與行銷活動。 有關更多資訊，請參閱[Campaign v8 文件](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html?lang=zh-Hant){target=_blank}。
+這組表格連結至&#x200B;**行銷活動**&#x200B;模組，可讓您定義、最佳化、執行和分析通訊與行銷活動。 有關更多資訊，請參閱[Campaign v8 文件](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html){target=_blank}。
 
 ![](assets/data-model_campaign.png)
 
@@ -222,7 +222,7 @@ NmsRcpGrpRel關係表格僅包含與iRecipientId及iGroupId連結表格識別碼
 
 ## 模擬和傳遞 {#simulation-and-delivery}
 
-這組資料表已連結至&#x200B;**模擬**&#x200B;模組，可讓您在將您的主張傳送給收件者之前，先測試屬於類別或環境的優惠方案分佈。 如需詳細資訊，請參閱[關於優惠方案模擬](../../interaction/using/about-offers-simulation.md)。
+這組資料表已連結至&#x200B;**模擬**&#x200B;模組，可讓您在將您的主張傳送給收件者之前，先測試屬於類別或環境的優惠方案分佈。 如需詳細資訊，請參閱[關於優惠方案模擬](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/simulating-offers/about-offers-simulation){target="_blank"} （Campaign v8檔案）。
 
 ![](assets/data-model_simulation.png)
 
