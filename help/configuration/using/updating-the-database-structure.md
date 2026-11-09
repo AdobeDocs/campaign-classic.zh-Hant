@@ -20,7 +20,7 @@ subfeature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 758d5159759b19f7ef32e8cc8f6237547599e727
+source-git-commit: 0fdce84d7da1ff42a406ace8f1a180f6a426646a
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 8%
@@ -35,6 +35,6 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->作為從Campaign v7轉變到v8的一部分，Campaign Classic檔案集已簡化並重新組織。 Campaign v8檔案集中現在提供常見功能。 若要深入瞭解資料庫更新助理，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/update-database-structure){target=_blank}。
+>作為從Campaign v7轉變到v8的一部分，Campaign Classic檔案集已簡化並重新組織。 Campaign v8檔案集中現在提供常見功能。 若要深入瞭解資料庫更新助理，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/update-database-structure){target=_blank}。
 >
->[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/update-database-structure){target=_blank}
+>[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/update-database-structure){target="_blank"}

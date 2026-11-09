@@ -37,7 +37,7 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 758d5159759b19f7ef32e8cc8f6237547599e727
+source-git-commit: 0fdce84d7da1ff42a406ace8f1a180f6a426646a
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 3%
@@ -46,7 +46,7 @@ ht-degree: 3%
 
 使用Adobe Campaign建立直接郵件傳送，將個人化實體訊息傳送給您的對象。
 
-直接郵件仍然是與客戶建立實際聯絡的強大管道，非常適用於提供列印的優惠、目錄、忠誠度訊息或個人化信件，強化數位接觸點以外的品牌存在感。 在[Adobe Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/direct-mail.html?lang=zh-Hant){target=_blank}中瞭解如何有效設定和管理直接郵件行銷活動，從準備資料及產生路由合作夥伴的檔案到追蹤傳遞結果。
+直接郵件仍然是與客戶建立實際聯絡的強大管道，非常適用於提供列印的優惠、目錄、忠誠度訊息或個人化信件，強化數位接觸點以外的品牌存在感。 在[Adobe Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/direct-mail.html){target=_blank}中瞭解如何有效設定和管理直接郵件行銷活動，從準備資料及產生路由合作夥伴的檔案到追蹤傳遞結果。
 
 >[!NOTE]
 >
@@ -56,17 +56,17 @@ ht-degree: 3%
 
 >[!TAB 直接郵件通道檔案]
 
-若要深入瞭解直接郵件頻道，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/direct-mail.html?lang=zh-Hant){target=_blank}。
+若要深入瞭解直接郵件頻道，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/direct-mail.html){target=_blank}。
 
 
-[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/direct-mail.html?lang=zh-Hant){target=_blank}
+[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/direct-mail.html){target="_blank"}
 
 
 >[!TAB 直接郵件傳遞建立]
 
 在Campaign v8檔案&#x200B;**中瞭解與建立電子郵件傳遞和對象定義**&#x200B;相關的關鍵步驟：
 
-* [建立直接電子郵件傳遞](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/direct-mail.html?lang=zh-Hant#creating-a-direct-mail-delivery){target="_blank"}：瞭解建立直接郵件傳遞所需的不同步驟。
+* [建立直接電子郵件傳遞](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/direct-mail.html#creating-a-direct-mail-delivery){target="_blank"}：瞭解建立直接郵件傳遞所需的不同步驟。
 * [定義直接郵件對象](#defining-the-direct-mail-audience){target="_blank"}：瞭解如何識別目標設定檔，以定義直接郵件傳遞的對象。
 * [定義直接郵件內容](#defining-the-direct-mail-content){target="_blank"}：瞭解如何定義直接郵件傳遞的內容，包括個人化元素和資料欄位。
 

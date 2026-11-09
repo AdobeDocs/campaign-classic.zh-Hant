@@ -40,7 +40,7 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 758d5159759b19f7ef32e8cc8f6237547599e727
+source-git-commit: 0fdce84d7da1ff42a406ace8f1a180f6a426646a
 workflow-type: tm+mt
 source-wordcount: '718'
 ht-degree: 89%
@@ -51,9 +51,9 @@ ht-degree: 89%
 
 >[!NOTE]
 >
->作為從Campaign v7轉變到v8的一部分，Campaign Classic檔案集已簡化並重新組織。 Campaign v8檔案集中現在提供常見功能。 若要進一步瞭解處理隱私權要求時搜尋的表格，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/privacy/privacy#list-of-tables){target=_blank}。
+>作為從Campaign v7轉變到v8的一部分，Campaign Classic檔案集已簡化並重新組織。 Campaign v8檔案集中現在提供常見功能。 若要進一步瞭解處理隱私權要求時搜尋的表格，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/privacy/privacy#list-of-tables){target=_blank}。
 >
->[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/privacy/privacy#list-of-tables){target=_blank}
+>[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/privacy/privacy#list-of-tables){target="_blank"}
 
 ## 建立隱私權請求 {#create-privacy-request-ui}
 

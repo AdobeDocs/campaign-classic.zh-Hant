@@ -37,7 +37,7 @@ topic_v2:
     internal-label: Troubleshooting
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: 758d5159759b19f7ef32e8cc8f6237547599e727
+source-git-commit: 0fdce84d7da1ff42a406ace8f1a180f6a426646a
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 6%
@@ -48,15 +48,15 @@ ht-degree: 6%
 
 >[!NOTE]
 >
->作為從Campaign v7轉變到v8的一部分，Campaign Classic檔案集已簡化並重新組織。 Campaign v8檔案集中現在提供常見功能。 若要進一步瞭解推播通知頻道，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/push/push){target=_blank}。
+>作為從Campaign v7轉變到v8的一部分，Campaign Classic檔案集已簡化並重新組織。 Campaign v8檔案集中現在提供常見功能。 若要進一步瞭解推播通知頻道，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/push/push){target=_blank}。
 >
->[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/push/push){target=_blank}
+>[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/push/push){target="_blank"}
 
 以下是Campaign Classic的專屬資訊。
 
 +++ **封裝安裝**
 
-![](assets/do-not-localize/how-to-video.png) [瞭解如何在影片中安裝行動應用程式套件](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/installing-the-mobile-app-channel.html?lang=zh-Hant#sending-messages)
+![](assets/do-not-localize/how-to-video.png) [瞭解如何在影片中安裝行動應用程式套件](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/installing-the-mobile-app-channel.html#sending-messages)
 
 身為混合/託管客戶，請聯絡[Adobe客戶服務](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)團隊以存取Campaign中的推播通知頻道。
 
@@ -86,7 +86,7 @@ ht-degree: 6%
 
 1. **[!UICONTROL Close]**&#x200B;安裝視窗。
 
-完成此步驟後，您就可以設定您的Android和iOS應用程式。 請參閱Campaign v8 [檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push.html?lang=zh-Hant){target="_blank"}。
+完成此步驟後，您就可以設定您的Android和iOS應用程式。 請參閱Campaign v8 [檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push.html){target="_blank"}。
 
 +++
 
@@ -105,6 +105,6 @@ HTTP/2聯結器：您必須允許與下列伺服器之間的通訊：
 
 >[!NOTE]
 >
->如需這兩個聯結器的詳細資訊，請參閱Campaign v8 [檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html?lang=zh-Hant){target="_blank"}。
+>如需這兩個聯結器的詳細資訊，請參閱Campaign v8 [檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html){target="_blank"}。
 
 +++
