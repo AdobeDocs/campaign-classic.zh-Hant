@@ -96,7 +96,7 @@ ht-degree: 5%
 
 除了資料夾式安全性模型之外，您還可以使用已命名的許可權來限制操作員動作：
 
-* 您可以新增一些系統篩選器(sysFilter)，以防止讀取/寫入您的資料(請參閱[此頁面](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/filter-schema){target="_blank"} （Campaign v8檔案）)。
+* 您可以新增一些系統篩選器(sysFilter)，以防止讀取/寫入您的資料(請參閱[此頁面](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/filter-schema){target="_blank"} （Campaign v8檔案）)。
 
   ```
   <sysFilter name="writeAccess">    
@@ -138,7 +138,7 @@ ht-degree: 5%
 
 1. 使用&#x200B;**[!UICONTROL Web application]**&#x200B;內容型別並檢查&#x200B;**[!UICONTROL Visible in the customization menus]**。
 
-   如需詳細資訊，請參閱 [Campaign v8 文件](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}。
+   如需詳細資訊，請參閱 [Campaign v8 文件](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=zh-Hant){target="_blank"}。
 
    以下是&#x200B;**行銷活動驗證碼**&#x200B;的範例：
 
