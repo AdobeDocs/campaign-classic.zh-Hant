@@ -37,7 +37,7 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
+source-git-commit: 758d5159759b19f7ef32e8cc8f6237547599e727
 workflow-type: tm+mt
 source-wordcount: '915'
 ht-degree: 0%
@@ -46,9 +46,11 @@ ht-degree: 0%
 
 使用工作流程可自動建立、編輯和發佈內容管理內容。
 
-作為從Campaign v7轉變到v8的一部分，Campaign Classic檔案集已簡化並重新組織。 Campaign v8檔案集中現在提供常見功能。 若要瞭解如何設定&#x200B;**內容管理**&#x200B;活動，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/workflows/wf-activities/action-activities/content-management){target=_blank}。
-
-[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/workflows/wf-activities/action-activities/content-management){target=_blank}
+>[!NOTE]
+>
+>作為從Campaign v7轉變到v8的一部分，Campaign Classic檔案集已簡化並重新組織。 Campaign v8檔案集中現在提供常見功能。 若要瞭解如何設定&#x200B;**內容管理**&#x200B;活動，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/action-activities/content-management){target=_blank}。
+>
+>[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/action-activities/content-management){target=_blank}
 
 ## 範例 {#examples}
 
@@ -190,7 +192,7 @@ ht-degree: 0%
 
 ### 從Amazon Simple Storage Service (S3)聯結器匯入內容 {#importing-content-from-amazon-simple-storage-service--s3--connector}
 
-如果您的傳送內容位於Amazon Simple Storage Service (S3)貯體，您可輕鬆將此內容載入Adobe Campaign傳送中。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html?lang=zh-Hant){target="_blank"}。
+如果您的傳送內容位於Amazon Simple Storage Service (S3)貯體，您可輕鬆將此內容載入Adobe Campaign傳送中。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html){target="_blank"}。
 
 
 ## 半自動更新 {#semi-automatic-update}

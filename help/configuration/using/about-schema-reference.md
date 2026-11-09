@@ -28,10 +28,10 @@ level_v2:
     internal-label: Intermediate
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
+source-git-commit: 758d5159759b19f7ef32e8cc8f6237547599e727
 workflow-type: tm+mt
 source-wordcount: '264'
-ht-degree: 3%
+ht-degree: 6%
 ---
 # 開始使用結構描述 {#about-schema-reference}
 
@@ -62,6 +62,8 @@ ht-degree: 3%
 
 ![](assets/reference_schema_intro.png)
 
-作為從Campaign v7轉變到v8的一部分，Campaign Classic檔案集已簡化並重新組織。 Campaign v8檔案集中現在提供常見功能。 若要瞭解結構描述的語法和識別，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target=_blank}。
-
-[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target=_blank}
+>[!NOTE]
+>
+>作為從Campaign v7轉變到v8的一部分，Campaign Classic檔案集已簡化並重新組織。 Campaign v8檔案集中現在提供常見功能。 若要瞭解結構描述的語法和識別，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target=_blank}。
+>
+>[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target=_blank}

@@ -20,7 +20,7 @@ subfeature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
+source-git-commit: 758d5159759b19f7ef32e8cc8f6237547599e727
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 8%
@@ -33,6 +33,8 @@ ht-degree: 8%
 
 您可以從外部資料包匯入一組資料。 若要這麼做，請選取&#x200B;**[!UICONTROL Import a package]**&#x200B;並輸入封裝的XML檔案。
 
-作為從Campaign v7轉變到v8的一部分，Campaign Classic檔案集已簡化並重新組織。 Campaign v8檔案集中現在提供常見功能。 若要深入瞭解資料庫更新助理，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/update-database-structure){target=_blank}。
-
-[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/update-database-structure){target=_blank}
+>[!NOTE]
+>
+>作為從Campaign v7轉變到v8的一部分，Campaign Classic檔案集已簡化並重新組織。 Campaign v8檔案集中現在提供常見功能。 若要深入瞭解資料庫更新助理，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/update-database-structure){target=_blank}。
+>
+>[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/update-database-structure){target=_blank}

@@ -28,7 +28,7 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: cce1f22c34cbd13d063850a7ca636a3b0dfc62f6
+source-git-commit: 758d5159759b19f7ef32e8cc8f6237547599e727
 workflow-type: tm+mt
 source-wordcount: '612'
 ht-degree: 4%
@@ -37,13 +37,15 @@ ht-degree: 4%
 
 本頁介紹Campaign Classic v7上異動訊息的其他設定。
 
-作為從Campaign v7轉變到v8的一部分，Campaign Classic檔案集已簡化並重新組織。 Campaign v8檔案集中現在提供常見功能。 若要進一步瞭解異動訊息事件清除和技術工作流程，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/config/settings/transactional-msg-settings){target=_blank}。
-
-[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/config/settings/transactional-msg-settings){target=_blank}
+>[!NOTE]
+>
+>作為從Campaign v7轉變到v8的一部分，Campaign Classic檔案集已簡化並重新組織。 Campaign v8檔案集中現在提供常見功能。 若要進一步瞭解異動訊息事件清除和技術工作流程，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/transactional-msg-settings){target=_blank}。
+>
+>[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/transactional-msg-settings){target=_blank}
 
 ## 監視臨界值 {#monitoring-thresholds}
 
-您可以設定出現在&#x200B;**訊息中心服務層級**&#x200B;和&#x200B;**訊息中心處理時間**&#x200B;報告中的指標的警告臨界值（橘色）和警示臨界值（紅色） (請參閱[存取異動訊息報告](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/real-time/event/delivery-execution){target="_blank"} （Campaign v8檔案）)。
+您可以設定出現在&#x200B;**訊息中心服務層級**&#x200B;和&#x200B;**訊息中心處理時間**&#x200B;報告中的指標的警告臨界值（橘色）和警示臨界值（紅色） (請參閱[存取異動訊息報告](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/event/delivery-execution){target="_blank"} （Campaign v8檔案）)。
 
 要執行此操作，請遵循下列步驟：
 
@@ -75,7 +77,7 @@ ht-degree: 4%
 
 ### 相容性注意事項 {#compatibility-note}
 
-此舊版品牌設定與Campaign v8中推出的新[集中式品牌](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/branding/branding-gs.html?lang=zh-Hant){target="_blank"}模式不相容。
+此舊版品牌設定與Campaign v8中推出的新[集中式品牌](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/branding/branding-gs.html){target="_blank"}模式不相容。
 
 如果您的現有環境使用此舊版設定，則無法將其直接移轉至新的集中式品牌模型。 採用新系統需完全重新實作品牌設定。
 
@@ -146,6 +148,6 @@ ht-degree: 4%
 
 1. 為每個品牌建立一個外部帳戶，其內部名稱與[執行執行個體](#execution-instance)上定義的名稱相同（步驟1）。
 
-1. 為每個品牌建立傳遞範本。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=zh-Hant){target="_blank"}。
+1. 為每個品牌建立傳遞範本。 請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}。
 
 1. 在傳遞範本的&#x200B;**[!UICONTROL Properties]**&#x200B;中，設定品牌外部帳戶的路由。

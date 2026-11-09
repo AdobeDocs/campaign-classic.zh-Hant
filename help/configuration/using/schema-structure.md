@@ -38,7 +38,7 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
+source-git-commit: 758d5159759b19f7ef32e8cc8f6237547599e727
 workflow-type: tm+mt
 source-wordcount: '221'
 ht-degree: 6%
@@ -47,9 +47,11 @@ ht-degree: 6%
 
 此頁面列出Adobe Campaign資料型別與每個資料庫管理系統的資料型別對應方式。
 
-作為從Campaign v7轉變到v8的一部分，Campaign Classic檔案集已簡化並重新組織。 Campaign v8檔案集中現在提供常見功能。 若要深入瞭解結構描述結構，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/schema-structure){target=_blank}。
-
-[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/schema-structure){target=_blank}
+>[!NOTE]
+>
+>作為從Campaign v7轉變到v8的一部分，Campaign Classic檔案集已簡化並重新組織。 Campaign v8檔案集中現在提供常見功能。 若要深入瞭解結構描述結構，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/schema-structure){target=_blank}。
+>
+>[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/schema-structure){target=_blank}
 
 ## 對應Adobe Campaign/DBMS資料型別 {#mapping-the-types-of-adobe-campaign-dbms-data}
 
@@ -141,5 +143,5 @@ ht-degree: 6%
 
 * [開始使用結構描述](about-schema-reference.md)
 * [資料庫對應](database-mapping.md)
-* [連結管理](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/database-links){target="_blank"} （Campaign v8檔案）
+* [連結管理](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/database-links){target="_blank"} （Campaign v8檔案）
 * [金鑰管理](database-keys.md)
