@@ -49,7 +49,7 @@ ht-degree: 4%
 
 可視性條件可能取決於運運算元狀態、在報告頁面中選取或輸入的專案。
 
-[本區段](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/form-rendering#defining-fields-conditional-display){target="_blank"} （Campaign v8檔案）提供顯示頁面上專案條件顯示的範例。
+[本區段](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/content/web-forms/form-rendering#defining-fields-conditional-display){target="_blank"} （Campaign v8檔案）提供顯示頁面上專案條件顯示的範例。
 
 在下列範例中，顯示條件取決於語言：
 
@@ -72,6 +72,6 @@ ht-degree: 4%
 
 1. 選取&#x200B;**[!UICONTROL Enable default transition]**&#x200B;以新增轉變，以防其中一個設定的條件不符合。
 
-   如需詳細資訊，請參閱[本節](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/defining-web-forms-page-sequencing#conditional-page-display){target="_blank"} （Campaign v8檔案）。
+   如需詳細資訊，請參閱[本節](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/content/web-forms/defining-web-forms-page-sequencing#conditional-page-display){target="_blank"} （Campaign v8檔案）。
 
 **[!UICONTROL Test]**&#x200B;活動可放置在圖表開頭，以根據執行個體的內容或運運算元設定檔來設定顯示的條件。

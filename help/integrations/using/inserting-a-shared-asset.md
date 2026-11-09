@@ -48,7 +48,7 @@ ht-degree: 0%
 
      ![](assets/dam_insert_image_standard.png)
 
-   * 如果您使用[進階編輯模式](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/editing-html-content/about-campaign-html-editor){target="_blank"} （Campaign v8檔案） (DCE)，請移至影像區塊，然後透過內容功能表選取&#x200B;**[!UICONTROL Select a shared asset]**。
+   * 如果您使用[進階編輯模式](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/content/editing-html-content/about-campaign-html-editor){target="_blank"} （Campaign v8檔案） (DCE)，請移至影像區塊，然後透過內容功能表選取&#x200B;**[!UICONTROL Select a shared asset]**。
 
      ![](assets/dam_insert_image_dce.png)
 

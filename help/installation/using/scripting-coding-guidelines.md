@@ -187,7 +187,7 @@ ht-degree: 5%
 
 1. 編輯&#x200B;**[!UICONTROL Script]**&#x200B;活動。 內容將取決於所選的驗證碼引擎。
 
-1. 最後，您可以在頁面中新增個人化區塊：請參閱[此頁面](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/editing-html-content/editing-content){target="_blank"} （Campaign v8檔案）。
+1. 最後，您可以在頁面中新增個人化區塊：請參閱[此頁面](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/content/editing-html-content/editing-content){target="_blank"} （Campaign v8檔案）。
 
    ![](assets/scripting-captcha4.png)
 

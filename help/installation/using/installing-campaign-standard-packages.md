@@ -163,7 +163,7 @@ ht-degree: 9%
   </tr> 
   <tr> 
    <td> 線上意見調查（意見調查管理員）<br /> </td> 
-   <td> 建立和管理線上表單，以新增或修改設定檔資訊、訂閱、取消訂閱或競爭者輸入表單。 選填。 <a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/surveys/about-surveys" target="_blank">深入瞭解</a> （Campaign v8檔案） <br /> </td> 
+   <td> 建立和管理線上表單，以新增或修改設定檔資訊、訂閱、取消訂閱或競爭者輸入表單。 選填。 <a href="https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/content/surveys/about-surveys" target="_blank">深入瞭解</a> （Campaign v8檔案） <br /> </td> 
    <td> 行銷<br /> </td> 
   </tr> 
   <tr> 
@@ -173,7 +173,7 @@ ht-degree: 9%
   </tr> 
   <tr> 
    <td> 回應管理員<br /> </td> 
-   <td> 衡量行銷活動的成功和盈利能力，或為所有通訊管道提供建議。  選填。 <a href="https://experienceleague.adobe.com/en/docs/campaign/automation/response-manager/about-response-manager" target="_blank">深入瞭解</a> （Campaign v8檔案） <br /> </td> 
+   <td> 衡量行銷活動的成功和盈利能力，或為所有通訊管道提供建議。  選填。 <a href="https://experienceleague.adobe.com/zh-hant/docs/campaign/automation/response-manager/about-response-manager" target="_blank">深入瞭解</a> （Campaign v8檔案） <br /> </td> 
    <td> 行銷<br /> </td> 
   </tr> 
   <tr> 

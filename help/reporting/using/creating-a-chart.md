@@ -143,7 +143,7 @@ Adobe Campaign提供各種圖形表示型別。 其詳情如下。
 
 您可以定義使用者按一下圖表時的動作。 開啟&#x200B;**[!UICONTROL Interaction events]**&#x200B;視窗並選取您要執行的動作。
 
-可能的互動型別及其設定在[本節](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/static-elements-in-a-web-form#inserting-html-content){target="_blank"} （Campaign v8檔案）中詳細說明。
+可能的互動型別及其設定在[本節](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/content/web-forms/static-elements-in-a-web-form#inserting-html-content){target="_blank"} （Campaign v8檔案）中詳細說明。
 
 ![](assets/s_ncs_advuser_report_wizard_017.png)
 
