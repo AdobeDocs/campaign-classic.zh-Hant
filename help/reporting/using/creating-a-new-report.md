@@ -29,9 +29,9 @@ topic_v2:
     internal-label: Reporting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 00c9aab788ae3d4fb600d08b9ab9604e3a14d7af
 workflow-type: tm+mt
-source-wordcount: '929'
+source-wordcount: '983'
 ht-degree: 1%
 ---
 # 建立新報吿{#creating-a-new-report}
@@ -142,7 +142,7 @@ ht-degree: 1%
 * 值、連結、HTML、影像等。**[!UICONTROL Static elements]**。
 * **[!UICONTROL Containers]**&#x200B;可讓您控制元件配置。
 
-頁面及其元件的設定模式在[本節](../../web/using/about-web-forms.md)中有詳細說明。
+[本節](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/about-web-forms){target="_blank"} （Campaign v8檔案）中詳細說明了頁面及其元件的設定模式。
 
 工具列可讓您新增或移除控制項，以及組織控制項在報表頁面中的順序。
 
@@ -150,7 +150,7 @@ ht-degree: 1%
 
 ### 靜態元素 {#static-elements}
 
-靜態元素可讓您在報表中顯示使用者不會互動的資訊，例如圖形元素或指令碼。 如需詳細資訊，請參閱[本節](../../web/using/static-elements-in-a-web-form.md#inserting-html-content)。
+靜態元素可讓您在報表中顯示使用者不會互動的資訊，例如圖形元素或指令碼。 如需詳細資訊，請參閱[本節](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/static-elements-in-a-web-form#inserting-html-content){target="_blank"} （Campaign v8檔案）。
 
 ![](assets/s_advuser_report_page_activity_03.png)
 
@@ -158,7 +158,7 @@ ht-degree: 1%
 
 輸入和選取控制項可讓您篩選報表中顯示的資訊。 如需實作這類篩選的詳細資訊，請參閱查詢中的[篩選選項](../../reporting/using/collecting-data-to-analyze.md#filtering-options-in-the-queries)。
 
-若要進一步瞭解如何建立及設定輸入欄位和選取欄位，請參閱[本節](../../web/using/about-web-forms.md)。
+若要瞭解建立及設定輸入欄位和選取欄位的詳細資訊，請參閱[本節](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/about-web-forms){target="_blank"} （Campaign v8檔案）。
 
 您可以將一或多個輸入控制項整合至報表。 此型別的控制項可讓您根據輸入的值篩選顯示的資訊。
 

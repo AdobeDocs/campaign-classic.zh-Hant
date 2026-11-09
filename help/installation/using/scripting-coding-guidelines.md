@@ -28,9 +28,9 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
+source-git-commit: 00c9aab788ae3d4fb600d08b9ab9604e3a14d7af
 workflow-type: tm+mt
-source-wordcount: '786'
+source-wordcount: '802'
 ht-degree: 5%
 ---
 # 指令碼和程式碼指南 {#scripting-coding-guidelines}
@@ -96,7 +96,7 @@ ht-degree: 5%
 
 除了資料夾式安全性模型之外，您還可以使用已命名的許可權來限制操作員動作：
 
-* 您可以新增一些系統篩選器(sysFilter)，以防止讀取/寫入您的資料(請參閱[此頁面](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/developer/schemas-forms/filter-schema){target="_blank"} （Campaign v8檔案）)。
+* 您可以新增一些系統篩選器(sysFilter)，以防止讀取/寫入您的資料(請參閱[此頁面](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/filter-schema){target="_blank"} （Campaign v8檔案）)。
 
   ```
   <sysFilter name="writeAccess">    
@@ -138,7 +138,7 @@ ht-degree: 5%
 
 1. 使用&#x200B;**[!UICONTROL Web application]**&#x200B;內容型別並檢查&#x200B;**[!UICONTROL Visible in the customization menus]**。
 
-   如需詳細資訊，請參閱 [Campaign v8 文件](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=zh-Hant){target="_blank"}。
+   如需詳細資訊，請參閱 [Campaign v8 文件](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}。
 
    以下是&#x200B;**行銷活動驗證碼**&#x200B;的範例：
 
@@ -187,7 +187,7 @@ ht-degree: 5%
 
 1. 編輯&#x200B;**[!UICONTROL Script]**&#x200B;活動。 內容將取決於所選的驗證碼引擎。
 
-1. 最後，您可以在頁面中新增個人化區塊：請參閱[此頁面](../../web/using/editing-content.md)。
+1. 最後，您可以在頁面中新增個人化區塊：請參閱[此頁面](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/editing-html-content/editing-content){target="_blank"} （Campaign v8檔案）。
 
    ![](assets/scripting-captcha4.png)
 

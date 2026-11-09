@@ -45,9 +45,9 @@ topic_v2:
     internal-label: Troubleshooting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 00c9aab788ae3d4fb600d08b9ab9604e3a14d7af
 workflow-type: tm+mt
-source-wordcount: '1364'
+source-wordcount: '1399'
 ht-degree: 3%
 ---
 # 開始使用訊息追蹤 {#get-started-tracking}
@@ -56,12 +56,12 @@ ht-degree: 3%
 >
 >如需同時適用於Campaign Classic v7和Campaign v8的&#x200B;**一般追蹤指引**，請參閱[Campaign v8訊息追蹤檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/analytics/tracking/tracking){target="_blank"}：
 >
->* [設定追蹤的連結](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/analytics/tracking/tracked-links){target="_blank"}
->* [設定 URL 追蹤選項](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/analytics/tracking/url-tracking){target="_blank"}
->* [追蹤個人化連結](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/analytics/tracking/personalized-links){target="_blank"}
->* [存取追蹤記錄](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/analytics/tracking/tracking-logs){target="_blank"}
->* [測試追蹤](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/testing-tracking){target="_blank"}
->* [追蹤報告](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/reporting/delivery-reports#tracking-indicators){target="_blank"}
+>* [設定追蹤的連結](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracked-links){target="_blank"}
+>* [設定 URL 追蹤選項](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/url-tracking){target="_blank"}
+>* [追蹤個人化連結](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/personalized-links){target="_blank"}
+>* [存取追蹤記錄](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracking-logs){target="_blank"}
+>* [測試追蹤](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/testing-tracking){target="_blank"}
+>* [追蹤報告](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/reporting/delivery-reports#tracking-indicators){target="_blank"}
 >
 >**此頁面僅記錄Campaign Classic v7的特定追蹤功能**，主要用於混合部署和內部部署。
 
@@ -108,11 +108,11 @@ ht-degree: 3%
 
 **追蹤 Web 應用程式**
 
-您也可以追蹤和測量具有追蹤標籤的網頁應用程式頁面上的造訪次數。 此功能可用於所有Web應用程式型別，例如表單和登入頁面。 [了解更多](../../web/using/tracking-a-web-application.md)
+您也可以追蹤和測量具有追蹤標籤的網頁應用程式頁面上的造訪次數。 此功能可用於所有Web應用程式型別，例如表單和登入頁面。 [了解更多](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-applications/tracking-a-web-application){target="_blank"} (Campaign v8 文件)
 
 **網站應用程式追蹤選擇退出**
 
-網站應用程式追蹤選擇退出可讓您停止追蹤選擇退出行為追蹤之一般使用者的網站行為。 您可以在網頁應用程式或登入頁面中加入顯示橫幅的功能，讓使用者選擇退出。 [了解更多](../../web/using/web-application-tracking-opt-out.md)
+網站應用程式追蹤選擇退出可讓您停止追蹤選擇退出行為追蹤之一般使用者的網站行為。 您可以在網頁應用程式或登入頁面中加入顯示橫幅的功能，讓使用者選擇退出。 [了解更多](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-applications/web-application-tracking-opt-out){target="_blank"} (Campaign v8 文件)
 
 ## 追蹤疑難排解 {#tracking-troubleshooting}
 
@@ -120,7 +120,7 @@ ht-degree: 3%
 
 下列疑難排解提示適用於&#x200B;**Campaign Classic v7混合/內部部署**。 部分資訊可能也會套用至Campaign v8內部部署。 如需Campaign v8受管理的Cloud Services，請聯絡您的Adobe代表以尋求協助。
 
-如需Campaign v8的基本追蹤疑難排解步驟，請參閱Campaign v8檔案[&#128279;](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/analytics/tracking/tracking-logs#troubleshooting){target="_blank"}中的疑難排解追蹤。
+如需Campaign v8的基本追蹤疑難排解步驟，請參閱Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracking-logs#troubleshooting){target="_blank"}中的[疑難排解追蹤。
 
 ### 基本檢查 {#basic-checks}
 

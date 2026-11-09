@@ -8,9 +8,9 @@ user-guide-description: Adobe Campaign Classic v7 產品文件。
 sub-product: adobe campaign classic
 type: Documentation
 nudge: false
-source-git-commit: aeb8e44e8183cad6557fe2f27565cad0343777e5
+source-git-commit: 00c9aab788ae3d4fb600d08b9ab9604e3a14d7af
 workflow-type: tm+mt
-source-wordcount: '1558'
+source-wordcount: '1395'
 ht-degree: 97%
 ---
 
@@ -354,45 +354,6 @@ ht-degree: 97%
   + 訊息範本 {#message-templates}
     + [測試訊息範本](message-center/using/testing-message-templates.md)
   + [使用案例](message-center/using/transactional-email-with-attachments.md)
-+ 設計網頁內容 {#designing-content}
-  + 網頁應用程式 {#web-applications}
-    + [開始使用網路應用程式](web/using/about-web-applications.md)
-    + [建立新的網站應用程式](web/using/creating-a-new-web-application.md)
-    + [設計網站應用程式](web/using/designing-a-web-application.md)
-    + [使用案例：建立概觀](web/using/use-cases-creating-overviews.md)
-    + [追蹤網站應用程式](web/using/translating-a-web-application.md)
-    + [追蹤網站應用程式的瀏覽次數](web/using/tracking-a-web-application.md)
-    + [網站應用程式追蹤選擇退出](web/using/web-application-tracking-opt-out.md)
-  + 編輯 HTML 內容 {#editing-html-content}
-    + [開始使用 HTML 編輯器](web/using/about-campaign-html-editor.md)
-    + [範本管理](web/using/template-management.md)
-    + [內容編輯器介面](web/using/content-editor-interface.md)
-    + [編輯內容](web/using/editing-content.md)
-    + [內容編輯最佳實務](web/using/content-editing-best-practices.md)
-    + [設定登陸頁面](web/using/creating-a-landing-page.md)
-    + [使用實例：建立電子郵件傳遞](web/using/use-case-creating-an-email-delivery.md)
-  + 網路表單 {#web-forms}
-    + [開始使用網路表單](web/using/about-web-forms.md)
-    + [使用網路表單範本](web/using/using-a-web-form-template.md)
-    + [新增欄位至網路表單](web/using/adding-fields-to-a-web-form.md)
-    + [網路表單中的靜態元素](web/using/static-elements-in-a-web-form.md)
-    + [定義網路表單版面](web/using/defining-web-forms-layout.md)
-    + [表單轉譯](web/using/form-rendering.md)
-    + [定義頁面順序](web/using/defining-web-forms-page-sequencing.md)
-    + [儲存網路表單答案](web/using/web-forms-answers.md)
-    + [發佈網路表單](web/using/publishing-a-web-form.md)
-    + [定義網路表單屬性](web/using/defining-web-forms-properties.md)
-    + [翻譯網路表單](web/using/translating-a-web-form.md)
-    + [使用實例：網路表單](web/using/use-cases-web-forms.md)
-+ 建立線上調查 {#online-surveys}
-  + [開始使用意見調查](surveys/using/about-surveys.md)
-  + [建立調查的關鍵步驟](surveys/using/getting-started-with-surveys.md)
-  + [設計調查](surveys/using/building-a-survey.md)
-  + [管理答案](surveys/using/managing-answers.md)
-  + [發佈、追蹤及使用收集的資料](surveys/using/publish-track-and-use-collected-data.md)
-  + [設定調查](surveys/using/configuring-surveys.md)
-  + [使用實例：建立轉介表單](surveys/using/use-case-creating-a-refer-a-friend-form.md)
-  + [使用案例：針對線上調查的回答顯示報吿](surveys/using/use-case-displaying-report-on-answers-to-an-online-survey.md)
 + 管理產品建議 {#managing-offers}
   + 開始互動 {#interaction-overview}
     + [互動與產品建議管理](interaction/using/interaction-and-offer-management.md)

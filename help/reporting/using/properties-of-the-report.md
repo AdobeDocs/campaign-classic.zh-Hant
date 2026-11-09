@@ -30,9 +30,9 @@ topic_v2:
     internal-label: Reporting
   - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
     internal-label: Accessibility
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 00c9aab788ae3d4fb600d08b9ab9604e3a14d7af
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '448'
 ht-degree: 3%
 ---
 # 報吿屬性{#properties-of-the-report}
@@ -43,7 +43,7 @@ ht-degree: 3%
 
 ![](assets/s_ncs_advuser_report_properties_01.png)
 
-一般屬性說明如下。 在&#x200B;**[!UICONTROL Parameters]**、**[!UICONTROL Variables]**&#x200B;和&#x200B;**[!UICONTROL Scripts]**&#x200B;索引標籤中設定的進階功能在此區段[&#128279;](../../reporting/using/advanced-functionalities.md)中說明。
+一般屬性說明如下。 在&#x200B;**[!UICONTROL Parameters]**、**[!UICONTROL Variables]**&#x200B;和&#x200B;**[!UICONTROL Scripts]**&#x200B;索引標籤中設定的進階功能在此區段](../../reporting/using/advanced-functionalities.md)中說明[。
 
 ## 一般屬性 {#overall-properties}
 
@@ -69,7 +69,7 @@ ht-degree: 3%
 
 * **[!UICONTROL Anonymous access]**：此選項可啟用報表的無限制存取。 但是，無法進行任何操作。
 
-  「webapp」技術運運算元的許可權用於顯示報表元素。 在本節[&#128279;](../../platform/using/access-management-operators.md)瞭解更多。
+  「webapp」技術運運算元的許可權用於顯示報表元素。 在本節](../../platform/using/access-management-operators.md)瞭解更多[。
 
 * **[!UICONTROL Access control]**：此選項可讓Adobe Campaign運運算元在登入後存取它。
 * **[!UICONTROL Specific account]**：此選項可讓您使用在&#x200B;**[!UICONTROL Operator]**&#x200B;欄位中選取之運運算元的許可權來執行報告。
@@ -86,7 +86,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->如需Campaign網頁本地化的詳細資訊，請參閱[本節](../../web/using/translating-a-web-form.md)。
+>如需Campaign網頁本地化的詳細資訊，請參閱[本節](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/translating-a-web-form){target="_blank"} （Campaign v8檔案）。
 
 ## 個人化HTML呈現 {#personalizing-html-rendering}
 

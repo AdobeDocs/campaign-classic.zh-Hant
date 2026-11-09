@@ -28,9 +28,9 @@ subfeature_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 00c9aab788ae3d4fb600d08b9ab9604e3a14d7af
 workflow-type: tm+mt
-source-wordcount: '761'
+source-wordcount: '777'
 ht-degree: 2%
 ---
 # 設定報告存取權{#configuring-access-to-the-report}
@@ -141,7 +141,7 @@ ht-degree: 2%
 
 特定設定可讓您控制錯誤。 在報告的URL中找到&#x200B;**_uuid**&#x200B;設定。 您可以新增&#x200B;**&amp;_preview**&#x200B;或&#x200B;**&amp;_debug**&#x200B;設定至其中。
 
-若要深入瞭解這些設定，請參閱[網頁表單](../../web/using/about-web-forms.md)章節的&#x200B;**定義網頁表單屬性**&#x200B;區段。
+若要深入瞭解這些設定，請參閱[網路表單](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/about-web-forms){target="_blank"} （Campaign v8檔案）章節的&#x200B;**定義網路表單屬性**&#x200B;區段。
 
 ## 發佈報表 {#publishing-the-report}
 

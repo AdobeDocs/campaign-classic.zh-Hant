@@ -28,10 +28,10 @@ subfeature_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 00c9aab788ae3d4fb600d08b9ab9604e3a14d7af
 workflow-type: tm+mt
-source-wordcount: '532'
-ht-degree: 3%
+source-wordcount: '554'
+ht-degree: 2%
 ---
 # 建立圖表{#creating-a-chart}
 
@@ -143,7 +143,7 @@ Adobe Campaign提供各種圖形表示型別。 其詳情如下。
 
 您可以定義使用者按一下圖表時的動作。 開啟&#x200B;**[!UICONTROL Interaction events]**&#x200B;視窗並選取您要執行的動作。
 
-可能的互動型別及其設定在[此區段](../../web/using/static-elements-in-a-web-form.md#inserting-html-content)中詳細說明。
+可能的互動型別及其設定在[本節](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/static-elements-in-a-web-form#inserting-html-content){target="_blank"} （Campaign v8檔案）中詳細說明。
 
 ![](assets/s_ncs_advuser_report_wizard_017.png)
 
