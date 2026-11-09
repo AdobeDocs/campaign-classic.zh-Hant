@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Reporting
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 00c9aab788ae3d4fb600d08b9ab9604e3a14d7af
 workflow-type: tm+mt
-source-wordcount: '600'
-ht-degree: 4%
+source-wordcount: '616'
+ht-degree: 3%
 ---
 # 進階功能{#advanced-functionalities}
 
@@ -67,7 +67,7 @@ ht-degree: 4%
 
    ![](assets/reporting_custom_js.png)
 
-若要在使用者端正常執行，參照的指令碼必須以JavaScript撰寫，且必須和常見瀏覽器相容。 如需詳細資訊，請參閱[本章節](../../web/using/web-forms-answers.md)。
+若要在使用者端正常執行，參照的指令碼必須以JavaScript撰寫，且必須和常見瀏覽器相容。 如需詳細資訊，請參閱[本節](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/web-forms-answers){target="_blank"} （Campaign v8檔案）。
 
 ### 新增指令碼活動 {#script-activity}
 

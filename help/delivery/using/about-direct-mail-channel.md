@@ -37,7 +37,7 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 0fdce84d7da1ff42a406ace8f1a180f6a426646a
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 3%
@@ -48,7 +48,9 @@ ht-degree: 3%
 
 直接郵件仍然是與客戶建立實際聯絡的強大管道，非常適用於提供列印的優惠、目錄、忠誠度訊息或個人化信件，強化數位接觸點以外的品牌存在感。 在[Adobe Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/direct-mail.html?lang=zh-Hant){target=_blank}中瞭解如何有效設定和管理直接郵件行銷活動，從準備資料及產生路由合作夥伴的檔案到追蹤傳遞結果。
 
-作為從Campaign v7轉變到v8的一部分，Campaign Classic檔案集已簡化並重新組織。 Campaign v8檔案集中現在提供常見功能。
+>[!NOTE]
+>
+>作為從Campaign v7轉變到v8的一部分，Campaign Classic檔案集已簡化並重新組織。 Campaign v8檔案集中現在提供常見功能。
 
 >[!BEGINTABS]
 
@@ -57,7 +59,7 @@ ht-degree: 3%
 若要深入瞭解直接郵件頻道，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/direct-mail.html?lang=zh-Hant){target=_blank}。
 
 
-[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/direct-mail.html?lang=zh-Hant){target=_blank}
+[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/direct-mail.html?lang=zh-Hant){target="_blank"}
 
 
 >[!TAB 直接郵件傳遞建立]

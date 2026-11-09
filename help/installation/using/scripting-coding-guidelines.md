@@ -28,9 +28,9 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
+source-git-commit: 00c9aab788ae3d4fb600d08b9ab9604e3a14d7af
 workflow-type: tm+mt
-source-wordcount: '786'
+source-wordcount: '802'
 ht-degree: 5%
 ---
 # 指令碼和程式碼指南 {#scripting-coding-guidelines}
@@ -187,7 +187,7 @@ ht-degree: 5%
 
 1. 編輯&#x200B;**[!UICONTROL Script]**&#x200B;活動。 內容將取決於所選的驗證碼引擎。
 
-1. 最後，您可以在頁面中新增個人化區塊：請參閱[此頁面](../../web/using/editing-content.md)。
+1. 最後，您可以在頁面中新增個人化區塊：請參閱[此頁面](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/editing-html-content/editing-content){target="_blank"} （Campaign v8檔案）。
 
    ![](assets/scripting-captcha4.png)
 

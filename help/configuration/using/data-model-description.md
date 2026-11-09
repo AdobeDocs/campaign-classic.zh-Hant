@@ -27,9 +27,9 @@ topic_v2:
     internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
+source-git-commit: 77efa1dcdb82a478e93565e84099d568f6a5f5fe
 workflow-type: tm+mt
-source-wordcount: '2390'
+source-wordcount: '2420'
 ht-degree: 2%
 ---
 # Campaign資料模型說明{#data-model-description}
@@ -162,7 +162,7 @@ NmsRcpGrpRel關係表格僅包含與iRecipientId及iGroupId連結表格識別碼
 
 ## 回應管理 {#response-management}
 
-這組資料表連結至&#x200B;**回應管理員**&#x200B;模組，可讓您測量行銷活動的成功和獲利能力，或為所有通訊管道提供建議。 如需詳細資訊，請參閱[關於回應管理員](../../response/using/about-response-manager.md)。
+這組資料表連結至&#x200B;**回應管理員**&#x200B;模組，可讓您測量行銷活動的成功和獲利能力，或為所有通訊管道提供建議。 如需詳細資訊，請參閱[關於回應管理員](https://experienceleague.adobe.com/en/docs/campaign/automation/response-manager/about-response-manager){target="_blank"} （Campaign v8檔案）。
 
 ![](assets/data-model_response.png)
 
@@ -222,7 +222,7 @@ NmsRcpGrpRel關係表格僅包含與iRecipientId及iGroupId連結表格識別碼
 
 ## 模擬和傳遞 {#simulation-and-delivery}
 
-這組資料表已連結至&#x200B;**模擬**&#x200B;模組，可讓您在將您的主張傳送給收件者之前，先測試屬於類別或環境的優惠方案分佈。 如需詳細資訊，請參閱[關於優惠方案模擬](../../interaction/using/about-offers-simulation.md)。
+這組資料表已連結至&#x200B;**模擬**&#x200B;模組，可讓您在將您的主張傳送給收件者之前，先測試屬於類別或環境的優惠方案分佈。 如需詳細資訊，請參閱[關於優惠方案模擬](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/simulating-offers/about-offers-simulation){target="_blank"} （Campaign v8檔案）。
 
 ![](assets/data-model_simulation.png)
 
@@ -261,7 +261,7 @@ NmsRcpGrpRel關係表格僅包含與iRecipientId及iGroupId連結表格識別碼
 <!--
 ## Microsites Module {#microsites-module}
 
-This set of tables is linked to the **Web applications** functionality, which allows to create and publish dynamic and interactive web applications with data from the database and content adapted to the rights of the connected user. For more on this, see [About web applications](../../web/using/about-web-applications.md).
+This set of tables is linked to the **Web applications** functionality, which allows to create and publish dynamic and interactive web applications with data from the database and content adapted to the rights of the connected user. For more on this, see [About web applications](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-applications/about-web-applications){target="_blank"} (Campaign v8 documentation).
 
 ![](assets/data-model_microsites.png)
 

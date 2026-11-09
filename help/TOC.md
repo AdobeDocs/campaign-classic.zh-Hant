@@ -8,9 +8,9 @@ user-guide-description: Adobe Campaign Classic v7 產品文件。
 sub-product: adobe campaign classic
 type: Documentation
 nudge: false
-source-git-commit: fbeb3bb6f89cd0b03d1fb4551496f96eda0cbf10
+source-git-commit: 77efa1dcdb82a478e93565e84099d568f6a5f5fe
 workflow-type: tm+mt
-source-wordcount: '1577'
+source-wordcount: '1353'
 ht-degree: 97%
 ---
 
@@ -152,7 +152,6 @@ ht-degree: 97%
     + [建立新執行個體](installation/using/creating-new-instances.md)
     + [Campaign 選項清單](installation/using/configuring-campaign-options.md)
     + {hide-from-toc}[解除安裝 Campaign](installation/using/uninstalling-campaign.md)
-    + [安裝新字型](installation/using/install-fonts.md)
 + 移轉指南 {#migrating-to-a-new-version}
   + {hide-from-toc}[移轉至 Adobe Campaign v7](migration/using/about-migration.md)
   + 移轉程序 {#migration-procedure}
@@ -355,75 +354,16 @@ ht-degree: 97%
   + 訊息範本 {#message-templates}
     + [測試訊息範本](message-center/using/testing-message-templates.md)
   + [使用案例](message-center/using/transactional-email-with-attachments.md)
-+ 設計網頁內容 {#designing-content}
-  + 網頁應用程式 {#web-applications}
-    + [開始使用網路應用程式](web/using/about-web-applications.md)
-    + [建立新的網站應用程式](web/using/creating-a-new-web-application.md)
-    + [設計網站應用程式](web/using/designing-a-web-application.md)
-    + [使用案例：建立概觀](web/using/use-cases-creating-overviews.md)
-    + [追蹤網站應用程式](web/using/translating-a-web-application.md)
-    + [追蹤網站應用程式的瀏覽次數](web/using/tracking-a-web-application.md)
-    + [網站應用程式追蹤選擇退出](web/using/web-application-tracking-opt-out.md)
-  + 編輯 HTML 內容 {#editing-html-content}
-    + [開始使用 HTML 編輯器](web/using/about-campaign-html-editor.md)
-    + [範本管理](web/using/template-management.md)
-    + [內容編輯器介面](web/using/content-editor-interface.md)
-    + [編輯內容](web/using/editing-content.md)
-    + [內容編輯最佳實務](web/using/content-editing-best-practices.md)
-    + [設定登陸頁面](web/using/creating-a-landing-page.md)
-    + [使用實例：建立電子郵件傳遞](web/using/use-case-creating-an-email-delivery.md)
-  + 網路表單 {#web-forms}
-    + [開始使用網路表單](web/using/about-web-forms.md)
-    + [使用網路表單範本](web/using/using-a-web-form-template.md)
-    + [新增欄位至網路表單](web/using/adding-fields-to-a-web-form.md)
-    + [網路表單中的靜態元素](web/using/static-elements-in-a-web-form.md)
-    + [定義網路表單版面](web/using/defining-web-forms-layout.md)
-    + [表單轉譯](web/using/form-rendering.md)
-    + [定義頁面順序](web/using/defining-web-forms-page-sequencing.md)
-    + [儲存網路表單答案](web/using/web-forms-answers.md)
-    + [發佈網路表單](web/using/publishing-a-web-form.md)
-    + [定義網路表單屬性](web/using/defining-web-forms-properties.md)
-    + [翻譯網路表單](web/using/translating-a-web-form.md)
-    + [使用實例：網路表單](web/using/use-cases-web-forms.md)
-+ 建立線上調查 {#online-surveys}
-  + [開始使用意見調查](surveys/using/about-surveys.md)
-  + [建立調查的關鍵步驟](surveys/using/getting-started-with-surveys.md)
-  + [設計調查](surveys/using/building-a-survey.md)
-  + [管理答案](surveys/using/managing-answers.md)
-  + [發佈、追蹤及使用收集的資料](surveys/using/publish-track-and-use-collected-data.md)
-  + [設定調查](surveys/using/configuring-surveys.md)
-  + [使用實例：建立轉介表單](surveys/using/use-case-creating-a-refer-a-friend-form.md)
-  + [使用案例：針對線上調查的回答顯示報吿](surveys/using/use-case-displaying-report-on-answers-to-an-online-survey.md)
 + 管理產品建議 {#managing-offers}
   + 開始互動 {#interaction-overview}
     + [互動與產品建議管理](interaction/using/interaction-and-offer-management.md)
-  + 管理產品建議目錄 {#managing-an-offer-catalog}
-    + [核准並啟用產品建議](interaction/using/approving-and-activating-an-offer.md)
-    + [管理產品建議範本](interaction/using/managing-offer-templates.md)
-    + [管理產品建議簡報](interaction/using/managing-offer-presentation.md)
-  + 產品建議模擬{#simulating-offers}
-    + [關於產品建議模擬](interaction/using/about-offers-simulation.md)
-    + [執行設定](interaction/using/execution-settings.md)
-    + [模擬範圍](interaction/using/simulation-scope.md)
-    + [模擬追蹤](interaction/using/simulation-tracking.md)
   + 進階參數 {#advanced-parameters}
     + [使用進階參數](interaction/using/using-advanced-parameters.md)
     + [其他資料](interaction/using/additional-data.md)
-    + [擴充功能範例](interaction/using/extension-example.md)
     + [建立測試環境](interaction/using/creating-a-test-environment.md)
     + [修改標準引擎行為](interaction/using/hooks.md)
     + [分佈式架構](interaction/using/distributed-architectures.md)
     + [資料緩衝區設定](installation/using/interaction-data-buffer.md)
-  + 使用案例 {#case-study}
-    + [簡報規則](interaction/using/presentation-rules.md)
-    + [傳入頻道上的產品建議](interaction/using/offers-on-an-inbound-channel.md)
-    + [傳出頻道上的產品建議](interaction/using/offers-on-an-outbound-channel.md)
-+ 回應管理員 {#response-manager}
-  + [開始使用回應管理員](response/using/about-response-manager.md)
-  + [設定回應管理員](response/using/configure-response-manager.md)
-  + [假設範本](response/using/hypothesis-templates.md)
-  + [建立假設](response/using/creating-hypotheses.md)
-  + [假設追蹤](response/using/hypothesis-tracking.md)
 + 設計及共用報吿 {#reporting}
   + 開始使用報告功能 {#reporting-in-adobe-campaign}
     + [報告的最佳實務](reporting/using/best-practices.md)

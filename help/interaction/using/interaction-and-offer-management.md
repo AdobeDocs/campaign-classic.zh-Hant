@@ -22,10 +22,10 @@ topic_v2:
     internal-label: Implementation
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 323ff901668895588a6e9587fa2a8b7804cf2fb4
+source-git-commit: 77efa1dcdb82a478e93565e84099d568f6a5f5fe
 workflow-type: tm+mt
-source-wordcount: '439'
-ht-degree: 3%
+source-wordcount: '545'
+ht-degree: 2%
 ---
 # 互動與產品建議管理{#interaction-and-offer-management}
 
@@ -39,11 +39,13 @@ ht-degree: 3%
 
 互動可讓您建立和管理優惠方案目錄，並設定資格規則及連結至這些規則的應用程式主題。 根據所選的管道，可以透過各種演算功能將優惠內容個人化。 最後，您可以使用模擬模組來計算優惠方案簡報的影響。
 
-作為從Campaign v7轉變到v8的一部分，Campaign Classic檔案集已簡化並重新組織。 Campaign v8檔案集中現在提供常見功能。 若要深入瞭解互動，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/offers/interaction){target=_blank}。
+>[!NOTE]
+>
+>作為從Campaign v7轉變到v8的一部分，Campaign Classic檔案集已簡化並重新組織。 Campaign v8檔案集中現在提供常見功能。 若要深入瞭解互動，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/offers/interaction){target=_blank}。
+>
+>[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/offers/interaction){target="_blank"}
 
-[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/offers/interaction){target=_blank}
-
-本節僅涵蓋Campaign v8檔案中未說明的互動功能： [優惠方案模擬](about-offers-simulation.md)、[優惠方案簡報](managing-offer-presentation.md)、[優惠方案核准](approving-and-activating-an-offer.md)、[優惠方案範本](managing-offer-templates.md)以及[進階設定](using-advanced-parameters.md)。
+本節僅涵蓋Campaign v8檔案中未說明的互動功能： [優惠方案模擬](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/simulating-offers/about-offers-simulation){target="_blank"} （Campaign v8檔案）、[優惠方案簡報](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/managing-an-offer-catalog/managing-offer-presentation){target="_blank"} （Campaign v8檔案）、[優惠方案核准](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/managing-an-offer-catalog/approving-and-activating-an-offer){target="_blank"} （Campaign v8檔案）、[優惠方案範本](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/managing-an-offer-catalog/managing-offer-templates){target="_blank"} （Campaign v8檔案）及[進階設定](using-advanced-parameters.md)。
 
 ![](assets/Offermgt2.png)
 
@@ -53,6 +55,6 @@ ht-degree: 3%
 
 | 有用的頁面 | 額外資源 |
 |---|---|
-| [互動實作步驟](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/offers/interaction){target="_blank"} （Campaign v8檔案） | [正在測試優惠方案發佈](../../interaction/using/about-offers-simulation.md) |
+| [互動實作步驟](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/offers/interaction){target="_blank"} （Campaign v8檔案） | [測試優惠方案發佈](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/simulating-offers/about-offers-simulation){target="_blank"} （Campaign v8檔案） |
 | [即時/設計環境](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/offers/interaction-settings/interaction-env){target="_blank"} （Campaign v8檔案） | [在電子郵件中新增選件](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/offers/interaction-send-offers){target="_blank"} （Campaign v8檔案） |
-| [建立優惠方案空間](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/offers/interaction-settings/interaction-offer-spaces){target="_blank"} （Campaign v8檔案） | [使用案例：在網站中新增選件](../../interaction/using/offers-on-an-inbound-channel.md) |
+| [建立優惠方案空間](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/offers/interaction-settings/interaction-offer-spaces){target="_blank"} （Campaign v8檔案） | [使用案例：在網站中新增選件](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/case-study/offers-on-an-inbound-channel){target="_blank"} （Campaign v8檔案） |

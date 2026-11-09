@@ -29,10 +29,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: fbeb3bb6f89cd0b03d1fb4551496f96eda0cbf10
+source-git-commit: 00c9aab788ae3d4fb600d08b9ab9604e3a14d7af
 workflow-type: tm+mt
-source-wordcount: '393'
-ht-degree: 8%
+source-wordcount: '410'
+ht-degree: 6%
 ---
 # 存取權管理 {#access-management}
 
@@ -52,7 +52,7 @@ WebApp運運算元是立即可用的管理員。 若要改善安全性，請遵�
 
   1. 輸入每個重複專案的名稱。 例如：webapp_brand、webapp_brand2等。
 
-  1. 複製Web應用程式範本讓每個品牌擁有一個範本，並選取「使用特定帳戶」來編輯屬性以變更運運算元。  在[本頁](../../web/using/defining-web-forms-properties.md)中瞭解更多。
+  1. 複製Web應用程式範本讓每個品牌擁有一個範本，並選取「使用特定帳戶」來編輯屬性以變更運運算元。  在[此頁面](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/defining-web-forms-properties){target="_blank"}中瞭解更多（Campaign v8檔案）。
 
 ## 安全性群組與管理員操作員
 

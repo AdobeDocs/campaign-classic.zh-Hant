@@ -36,9 +36,9 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 00c9aab788ae3d4fb600d08b9ab9604e3a14d7af
 workflow-type: tm+mt
-source-wordcount: '566'
+source-wordcount: '582'
 ht-degree: 2%
 ---
 # 病毒式行銷及社交行銷{#viral-and-social-marketing}
@@ -108,7 +108,7 @@ Adobe Campaign可讓您設定鼓勵病毒式行銷的工具。
    >
    >可調整此設定。 若要這麼做，您必須修改儲存在&#x200B;**[!UICONTROL Resources > Online > Web applications]**&#x200B;節點中的&#x200B;**收件者訂閱**&#x200B;網頁應用程式。
    >
-   >如需網頁應用程式的詳細資訊，請參閱[本節](../../web/using/about-web-applications.md)。
+   >如需Web應用程式的詳細資訊，請參閱[本節](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-applications/about-web-applications){target="_blank"} （Campaign v8檔案）。
 
    驗證後，系統會將確認訊息傳送給他們：只有當他們在確認訊息中啟用連結時，他們才會永久註冊。 此訊息是根據&#x200B;**[!UICONTROL Registration confirmation]**&#x200B;範本建立的，該範本儲存在&#x200B;**[!UICONTROL Administration > Campaign management > Technical delivery templates]**&#x200B;節點中。
 

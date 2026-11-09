@@ -32,7 +32,7 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: d679815c3415f1d7603ae5fe87e1c587208b6a8f
+source-git-commit: 0fdce84d7da1ff42a406ace8f1a180f6a426646a
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 0%
@@ -43,7 +43,9 @@ ht-degree: 0%
 
 電子郵件仍是應用程式或網站以外與使用者互動的最強大且最靈活的管道之一。 無論您是要提供個人化內容、公告或促銷訊息，電子郵件都能讓您完全控制訊息和對象。 在[Adobe Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/emails/email){target=_blank}中瞭解如何設定和使用最完整的電子郵件頻道 — 自訂內容、鎖定特定使用者區段，以及結合豐富的多媒體元素，以最大化影響和參與。
 
-作為從Campaign v7轉變到v8的一部分，Campaign Classic檔案集已簡化並重新組織。 Campaign v8檔案集中現在提供常見功能。
+>[!NOTE]
+>
+>作為從Campaign v7轉變到v8的一部分，Campaign Classic檔案集已簡化並重新組織。 Campaign v8檔案集中現在提供常見功能。
 
 >[!BEGINTABS]
 
@@ -52,7 +54,7 @@ ht-degree: 0%
 若要深入瞭解電子郵件頻道，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/emails/email){target=_blank}。
 
 
-[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/emails/email){target=_blank}
+[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/emails/email){target="_blank"}
 
 
 >[!TAB 電子郵件傳遞建立]

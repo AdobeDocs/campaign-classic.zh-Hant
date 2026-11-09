@@ -26,9 +26,9 @@ topic_v2:
     internal-label: Optimization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 2e00628a95aa333698f11233e851b54423f11f29
+source-git-commit: aeb8e44e8183cad6557fe2f27565cad0343777e5
 workflow-type: tm+mt
-source-wordcount: '1426'
+source-wordcount: '1440'
 ht-degree: 9%
 ---
 # 安裝Campaign Classic內建套件{#installing-campaign-standard-packages}
@@ -173,7 +173,7 @@ ht-degree: 9%
   </tr> 
   <tr> 
    <td> 回應管理員<br /> </td> 
-   <td> 衡量行銷活動的成功和盈利能力，或為所有通訊管道提供建議。  選填。 <a href="../../response/using/about-response-manager.md">深入瞭解</a> <br /> </td> 
+   <td> 衡量行銷活動的成功和盈利能力，或為所有通訊管道提供建議。  選填。 <a href="https://experienceleague.adobe.com/en/docs/campaign/automation/response-manager/about-response-manager" target="_blank">深入瞭解</a> （Campaign v8檔案） <br /> </td> 
    <td> 行銷<br /> </td> 
   </tr> 
   <tr> 
