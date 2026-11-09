@@ -48,15 +48,15 @@ ht-degree: 5%
 
 Adobe Experience Cloud是一組同級最佳的全方位整合式解決方案，建置於具有功能強大的通用解決方案和應用程式集的通用資料平台上。
 
-在[本頁面](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/integrations){_blank}中進一步瞭解Adobe Campaign與Adobe Experience Cloud解決方案之間可用的功能整合。
+在[本頁面](https://experienceleague.adobe.com/zh-hant/docs/core-services/interface/administration/integrations){_blank}中進一步瞭解Adobe Campaign與Adobe Experience Cloud解決方案之間可用的功能整合。
 
 可與Adobe整合的Adobe Campaign解決方案和應用程式服務完整清單，以及相關檔案，請參閱[本節](#experience-cloud-integrations)。
 
 >[!NOTE]
 >
->作為從Campaign v7轉變到v8的一部分，Campaign Classic檔案集已簡化並重新組織。 Campaign v8檔案集中現在提供常見功能。 若要深入瞭解如何將Campaign連線至您的解決方案，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/integration){target=_blank}。
+>作為從Campaign v7轉變到v8的一部分，Campaign Classic檔案集已簡化並重新組織。 Campaign v8檔案集中現在提供常見功能。 若要深入瞭解如何將Campaign連線至您的解決方案，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/connect/integration){target=_blank}。
 >
->[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/integration){target=_blank}
+>[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/connect/integration){target=_blank}
 
 >[!CAUTION]
 >
@@ -67,17 +67,17 @@ Adobe Experience Cloud是一組同級最佳的全方位整合式解決方案，�
 
 多個解決方案可連結至Adobe Experience Cloud。 **組織**&#x200B;是客戶實體，可讓管理員設定群組和使用者，以及控制Adobe Experience Cloud中的單一登入(SSO)。 組織的作用就像一個登入公司，涵蓋所有Experience Cloud產品和解決方案。 通常，組織就是您的公司名稱。 但是，一個公司可以有許多組織。
 
-在[Adobe Experience Cloud說明入口網站](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations){_blank}中詳細說明組織管理和連結Adobe Experience Cloud帳戶。
+在[Adobe Experience Cloud說明入口網站](https://experienceleague.adobe.com/zh-hant/docs/core-services/interface/administration/organizations){_blank}中詳細說明組織管理和連結Adobe Experience Cloud帳戶。
 
 ## 身分和Cookie管理 {#id-and-cookies}
 
-安裝Adobe Campaign或整合現有安裝與Adobe Experience Cloud時，[Adobe Experience Cloud Identity Service](https://experienceleague.adobe.com/en/docs/id-service/using/home){_blank}已啟用。 此服務會取代Adobe Campaign追蹤功能時最先使用的永久Cookie。
+安裝Adobe Campaign或整合現有安裝與Adobe Experience Cloud時，[Adobe Experience Cloud Identity Service](https://experienceleague.adobe.com/zh-hant/docs/id-service/using/home){_blank}已啟用。 此服務會取代Adobe Campaign追蹤功能時最先使用的永久Cookie。
 
 Adobe Experience Cloud Identity Service （以下簡稱為「ID服務」）提供永續性的通用ID，可識別Experience Cloud所有解決方案的訪客。
 
 系統會為產生追蹤記錄的收件者指派不重複訪客ID。 此ID將會儲存在&#x200B;**[!UICONTROL nms:trackingLogRcp]**&#x200B;資料表的&#x200B;**[!UICONTROL Requester UUID (@sourceID)]**&#x200B;欄位中。 **在訪客ID服務實作前存在的收件者追蹤資料將不再可用**。
 
-之後，具有相同CNAME的其他Adobe Experience Cloud解決方案將會識別該ID。 [了解更多資訊](https://experienceleague.adobe.com/en/docs/id-service/using/reference/analytics-reference/cname){_blank}。
+之後，具有相同CNAME的其他Adobe Experience Cloud解決方案將會識別該ID。 [了解更多資訊](https://experienceleague.adobe.com/zh-hant/docs/id-service/using/reference/analytics-reference/cname){_blank}。
 
 ## Experience Cloud 整合 {#experience-cloud-integrations}
 
@@ -101,11 +101,11 @@ Adobe Experience Cloud Identity Service （以下簡稱為「ID服務」）提�
   </tr> 
   <tr> 
    <td> <strong>Adobe Experience Manager</strong><br /> </td> 
-   <td> 設定此整合，以直接在<strong>Adobe Experience Manager</strong>.<br />中建立對應至Adobe Campaign資料庫的電子郵件內容或表單 <p><a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/ac-aem" target="_blank">深入瞭解</a> （Campaign v8檔案） Adobe Campaign - Adobe Experience Manager整合。</p><br /> </td> 
+   <td> 設定此整合，以直接在<strong>Adobe Experience Manager</strong>.<br />中建立對應至Adobe Campaign資料庫的電子郵件內容或表單 <p><a href="https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/connect/ac-aem" target="_blank">深入瞭解</a> （Campaign v8檔案） Adobe Campaign - Adobe Experience Manager整合。</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>Adobe Target</strong><br /> </td> 
-   <td> 設定此整合以插入在Adobe Campaign建立和傳送的電子郵件開啟時由<strong>Adobe Target</strong>動態運算的影像。<br /> <p><a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/ac-at" target="_blank">深入瞭解</a> （Campaign v8檔案） Adobe Campaign - Adobe Target整合。</p><br /> </td> 
+   <td> 設定此整合以插入在Adobe Campaign建立和傳送的電子郵件開啟時由<strong>Adobe Target</strong>動態運算的影像。<br /> <p><a href="https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/connect/ac-at" target="_blank">深入瞭解</a> （Campaign v8檔案） Adobe Campaign - Adobe Target整合。</p><br /> </td> 
   </tr> 
   <tr> 
    <td><strong>Adobe Audience Manager</strong><br /> </td> 
