@@ -52,7 +52,7 @@ WebApp運運算元是立即可用的管理員。 若要改善安全性，請遵�
 
   1. 輸入每個重複專案的名稱。 例如：webapp_brand、webapp_brand2等。
 
-  1. 複製Web應用程式範本讓每個品牌擁有一個範本，並選取「使用特定帳戶」來編輯屬性以變更運運算元。  在[此頁面](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/defining-web-forms-properties){target="_blank"}中瞭解更多（Campaign v8檔案）。
+  1. 複製Web應用程式範本讓每個品牌擁有一個範本，並選取「使用特定帳戶」來編輯屬性以變更運運算元。  在[此頁面](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/content/web-forms/defining-web-forms-properties){target="_blank"}中瞭解更多（Campaign v8檔案）。
 
 ## 安全性群組與管理員操作員
 
@@ -62,7 +62,7 @@ WebApp運運算元是立即可用的管理員。 若要改善安全性，請遵�
 
 避免在管理員群組中新增太多運運算元（或具有管理員命名許可權）。 它們是功能非常強大的運運算元（它們可以執行所有SQL陳述式、在伺服器上執行命令等等）。
 
-Adobe Campaign透過[已命名的許可權](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/permissions/manage-permissions#use-named-rights){target="_blank"}提供三個高階許可權（Campaign v8檔案）：
+Adobe Campaign透過[已命名的許可權](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/permissions/manage-permissions#use-named-rights){target="_blank"}提供三個高階許可權（Campaign v8檔案）：
 
 * **管理** （管理員）：提供存取所有專案的許可權，並允許執行所有專案，略過所有命名的許可權檢查，因此包含程式執行(createProcess)和SQL命名的許可權
 
