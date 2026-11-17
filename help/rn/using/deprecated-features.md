@@ -43,10 +43,10 @@ topic_v2:
     internal-label: Security
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: 4ae19a379120bb39444c3e81392a7dbb0b6da3ba
+source-git-commit: 1b8805ac952da110858c88fc2c252aece69ad2bf
 workflow-type: tm+mt
-source-wordcount: '1814'
-ht-degree: 100%
+source-wordcount: '1813'
+ht-degree: 97%
 ---
 # 已棄用及已移除的功能 {#deprecated-and-removed-features}
 
@@ -86,7 +86,7 @@ Adobe 持續評估產品功能，尋找應以更現代的替代方式來取代�
 </tr>
 <tr>
  <td>Campaign (Neolane) 舊版 SDK</td>
- <td><p>適用於行動應用程式的 Campaign (Neolane) SDK 現已棄用。 請改為在資料彙集 UI 設定 Adobe Campaign 擴充功能，以便使用 Adobe Experience Platform Mobile SDK。 Adobe Experience Platform Mobile SDK 有助於在行動應用程式中，強化 Adobe Experience Cloud 解決方案與服務。 SDK 設定可透過資料彙集 UI 來管理，提供靈活的設定與可擴充的規則式整合。 若要了解如何設定行動應用程式管道，請參閱 <a href="https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/push/push-settings">Campaign v8 文件</a>。</p>
+ <td><p>適用於行動應用程式的 Campaign (Neolane) SDK 現已棄用。 請改為在資料彙集 UI 設定 Adobe Campaign 擴充功能，以便使用 Adobe Experience Platform Mobile SDK。 Adobe Experience Platform Mobile SDK有助於在行動應用程式中強化Adobe CX Enterprise解決方案和服務。 SDK 設定可透過資料彙集 UI 來管理，提供靈活的設定與可擴充的規則式整合。 若要了解如何設定行動應用程式管道，請參閱 <a href="https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/send/push/push-settings">Campaign v8 文件</a>。</p>
 </td>
 </tr>
 <tr>
@@ -143,7 +143,7 @@ Adobe 持續評估產品功能，尋找應以更現代的替代方式來取代�
   </tr>
   <tr>
   <td>Demdex 網域<br></td>
-  <td><p> 自 Campaign 第 21.1.3 發行版本開始，已棄用使用於匯入和匯出客群至 Adobe Experience Cloud 的 Demdex 網域。 <a href="../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md">瞭解更多</a></p> 
+  <td><p> 自Campaign第21.1.3發行版本開始，已棄用使用於匯入和匯出受眾至Adobe CX Enterprise的Demdex網域。 <a href="../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md">瞭解更多</a></p> 
   </td>
   </tr>
    <tr> 

@@ -30,27 +30,27 @@ subfeature_v2:
     internal-label: Target integration
   - id: d6330382-c886-4f7a-a4f7-74e3f36c0d9c
     internal-label: Audiences
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 1b8805ac952da110858c88fc2c252aece69ad2bf
 workflow-type: tm+mt
-source-wordcount: '244'
-ht-degree: 51%
+source-wordcount: '226'
+ht-degree: 38%
 ---
-# 與Adobe Experience Cloud共用受眾 {#sharing-audiences-with-adobe-experience-cloud}
+# 與[!DNL Adobe CX Enterprise]共用對象 {#sharing-audiences-with-adobe-experience-cloud}
 
 
 >[!CAUTION]
 >
->若要與Adobe Experience Cloud解決方案共用閱聽眾，您必須實作Adobe Identity Management系統。 [進一步瞭解IMS](../../integrations/using/about-adobe-id.md)。
+>若要與[!DNL CX Enterprise]解決方案共用對象，您必須實作Adobe Identity Management System。 [進一步瞭解IMS](../../integrations/using/about-adobe-id.md)。
 
-透過Adobe Campaign，您可以與Adobe Experience Cloud服務共用受眾和區段。 有兩個可用選項：
+透過Adobe Campaign，您可以與[!DNL CX Enterprise]服務共用對象和區段。 有兩個可用選項：
 
 1. 將Adobe Experience Platform區段資料傳送至Adobe Campaign。 若要實作此整合，您必須將Real-Time Customer Data Platform連結至Campaign (RTCDP)。 [在本章節了解更多資訊](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html?lang=zh-Hant){target="_blank"}。
 
 1. 將&#x200B;**Adobe Campaign**&#x200B;與&#x200B;**Experience Cloud Audiences**&#x200B;或&#x200B;**Adobe Audience Manager**&#x200B;整合。 之後，您將能夠：
 
-   * 從不同的 Adobe Experience Cloud 解決方案匯入共用的客群/區段至 Adobe Campaign。 您可以透過 Adobe Campaign 中的清單匯入客群。
+   * 從不同的[!DNL CX Enterprise]解決方案匯入共用的對象/區段至Adobe Campaign。 您可以透過 Adobe Campaign 中的清單匯入客群。
 
-   * 以 Adobe Experience Cloud 共用客群的形式匯出清單。 這些客群可用於您所使用的不同 Adobe Experience Cloud 解決方案。 在工作流程中目標定位後，可使用專用的 **[!UICONTROL Update shared audience]** 活動匯出客群。
+   * 以[!DNL CX Enterprise]個共用對象的形式匯出清單。 這些對象可用於您所使用的不同[!DNL CX Enterprise]解決方案。 在工作流程中目標定位後，可使用專用的 **[!UICONTROL Update shared audience]** 活動匯出客群。
 
 此整合支援兩種類型的 Adobe Experience Cloud ID：
 

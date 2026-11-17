@@ -38,9 +38,9 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 1b8805ac952da110858c88fc2c252aece69ad2bf
 workflow-type: tm+mt
-source-wordcount: '845'
+source-wordcount: '842'
 ht-degree: 1%
 ---
 # 設定管道 {#configuring-pipeline}
@@ -60,7 +60,7 @@ ht-degree: 1%
 * 開發人員對貴組織的存取權
 * Adobe Analytics中的有效觸發器設定
 
-由於管道託管於Adobe Experience Cloud，因此需要驗證。 它會透過Adobe Developer專案使用支援的驗證。
+由於管道在[!DNL Adobe CX Enterprise]中代管，因此需要驗證。 它會透過Adobe Developer專案使用支援的驗證。
 
 ## 步驟1：建立/更新您的Adobe Developer專案 {#creating-adobe-io-project}
 

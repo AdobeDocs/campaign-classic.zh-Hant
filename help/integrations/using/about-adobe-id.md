@@ -34,10 +34,10 @@ topic_v2:
     internal-label: Implementation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 4ae19a379120bb39444c3e81392a7dbb0b6da3ba
+source-git-commit: 1b8805ac952da110858c88fc2c252aece69ad2bf
 workflow-type: tm+mt
-source-wordcount: '194'
-ht-degree: 16%
+source-wordcount: '192'
+ht-degree: 10%
 ---
 # 關於Adobe ID {#about-adobe-id}
 
@@ -45,7 +45,7 @@ Adobe Identity Management系統(IMS)可協助管理員建立和管理使用者�
 
 Campaign使用者可以使用其Adobe ID連線至Adobe Campaign主控台，而不使用[原生使用者/密碼驗證](../../platform/using/access-management-operators.md)。 此實作提供下列優點：
 
-* 所有 Experience Cloud 解決方案都可以使用相同的 ID。
+* 所有[!DNL Adobe CX Enterprise]解決方案都可以使用相同的識別碼。
 * 透過不同的整合使用Adobe Campaign時，會保持連線。
 * 比原生登入/密碼更安全的密碼管理原則。
 * 使用 Federated ID 帳戶（外部 ID 提供者）。

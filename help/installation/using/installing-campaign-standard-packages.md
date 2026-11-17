@@ -26,9 +26,9 @@ topic_v2:
     internal-label: Optimization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 5e2aa587f61d79eab6d356ea5f91bc4e0f1b24c6
+source-git-commit: 368b67eeb68b0944be5db674fd6a18914dea86ad
 workflow-type: tm+mt
-source-wordcount: '1454'
+source-wordcount: '1453'
 ht-degree: 9%
 ---
 # 安裝Campaign Classic內建套件{#installing-campaign-standard-packages}
@@ -223,12 +223,12 @@ ht-degree: 9%
   </tr> 
   <tr> 
    <td> Adobe Experience Cloud共用受眾整合<br /> </td> 
-   <td> 可讓您與Adobe Experience Cloud解決方案和應用程式交換和共用對象/區段。 需要IMS。 <a href="../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md">深入瞭解</a> <br /> </td> 
+   <td> 可讓您與Adobe CX Enterprise解決方案和應用程式交換和共用對象/區段。 需要IMS。 <a href="../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md">深入瞭解</a> <br /> </td> 
    <td> 行銷<br /> </td> 
   </tr> 
   <tr> 
    <td> 與Adobe Experience Cloud<br />整合 </td> 
-   <td> 可讓您從不同的Adobe Experience Cloud解決方案匯入和匯出對象/區段至Adobe Campaign。 選填。 <a href="../../integrations/using/configuring-ims.md#installing-the-package">進一步瞭解</a> </td> 
+   <td> 可讓您從不同的CX Enterprise解決方案匯入和匯出對象/區段至Adobe Campaign。 選填。 <a href="../../integrations/using/configuring-ims.md#installing-the-package">進一步瞭解</a> </td> 
    <td> 行銷</td> 
   </tr> 
   <tr> 

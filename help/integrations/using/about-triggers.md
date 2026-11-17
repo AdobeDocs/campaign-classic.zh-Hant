@@ -38,9 +38,9 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 1b8805ac952da110858c88fc2c252aece69ad2bf
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '406'
 ht-degree: 8%
 ---
 # 合作使用Campaign與Experience Cloud觸發程式{#about-adobe-experience-triggers}
@@ -64,13 +64,13 @@ ht-degree: 8%
 
 ![](assets/triggers_2.png)
 
-[!DNL pipelined]程式使用驗證服務登入Experience Cloud並傳送私密金鑰。 驗證服務會傳回權杖。 Token用於擷取事件時進行驗證。
+[!DNL pipelined]處理程式使用驗證服務登入[!DNL Adobe CX Enterprise]並傳送私密金鑰。 驗證服務會傳回權杖。 Token用於擷取事件時進行驗證。
 
 ## 先決條件 {#adobe-io-prerequisites}
 
 開始此實作前，請檢查您是否擁有：
 
-* 有效的&#x200B;**組織識別碼**：組織ID是Adobe Experience Cloud中的唯一識別碼，例如VisitorID服務和IMS單一登入(SSO)。 [了解更多](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-Hant)
+* 有效的&#x200B;**組織識別碼**：組織ID是[!DNL CX Enterprise]內的唯一識別碼，例如VisitorID服務和IMS單一登入(SSO)。 [了解更多](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-Hant)
 * 您組織的&#x200B;**開發人員存取權**。 組織的系統管理員必須遵循&#x200B;**將開發人員新增至單一產品設定檔**&#x200B;程式（在此頁面[&#128279;](https://helpx.adobe.com/tw/enterprise/using/manage-developers.html)中詳述），以提供與觸發器相關聯之Adobe Analytics產品的`Analytics - {tenantID}`產品設定檔的開發者存取權。
 
 ## 實施步驟 {#implement}

@@ -35,9 +35,9 @@ level_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 1b8805ac952da110858c88fc2c252aece69ad2bf
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: '206'
 ht-degree: 12%
 ---
 # 使用Adobe Campaign和Adobe Analytics {#adobe-analytics-connector-gs}
@@ -55,7 +55,7 @@ Adobe Analytics 連接器可讓 Adobe Campaign 和 Adobe Analytics 透過 **[!UI
 * 必須透過專用套件將Web Analytics聯結器附加元件安裝在您的環境中。
 
   * 對於混合式與內部部署實作，請務必遵循此[頁面](adobe-analytics-provisioning.md)中詳述的布建步驟。
-  * 請以「主機」或「受管理的Cloud Services」使用者身分聯絡Adobe，將Campaign與Adobe Experience Cloud服務和解決方案連結。
+  * 請以「主機」或「受管理的Cloud Services」使用者身分，連絡Adobe以連結Campaign與[!DNL Adobe CX Enterprise]服務和解決方案。
 
 
 ## 設定與使用 {#adobe-analytics-connector-usage}

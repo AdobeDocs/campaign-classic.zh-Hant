@@ -30,9 +30,9 @@ subfeature_v2:
     internal-label: Target integration
   - id: d6330382-c886-4f7a-a4f7-74e3f36c0d9c
     internal-label: Audiences
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 1b8805ac952da110858c88fc2c252aece69ad2bf
 workflow-type: tm+mt
-source-wordcount: '616'
+source-wordcount: '610'
 ht-degree: 3%
 ---
 # 匯入和匯出對象{#importing-and-exporting-audiences}
@@ -48,7 +48,7 @@ ht-degree: 3%
 
    ![](assets/aam_import_audience.png)
 
-1. 在開啟的視窗中，按一下&#x200B;**[!UICONTROL Select a shared audience]**&#x200B;以移至其他Adobe Experience Cloud解決方案所提供的共用對象/區段清單。
+1. 在開啟的視窗中，按一下&#x200B;**[!UICONTROL Select a shared audience]**&#x200B;以移至其他[!DNL Adobe CX Enterprise]解決方案所提供的共用對象/區段清單。
 1. 選取對象並進行確認。 對象的資訊會自動完成。
 
    請注意，若要匯入共用的對象，您應該在Admin Console中被指派為&#x200B;**[!UICONTROL Audience library]**&#x200B;產品，並成為Audience Manager的管理員。 如需詳細資訊，請參閱[Admin Console檔案](https://helpx.adobe.com/tw/enterprise/managing/user-guide.html)。
@@ -99,7 +99,7 @@ ht-degree: 3%
 
 然後會匯出對象。 儲存對象活動有兩個外站轉變。 主要轉變包含已成功匯出的收件者。 額外的轉變包含無法對應訪客ID或宣告ID的收件者。
 
-解決方案之間的同步化需要24到36小時的時間。 在此期間後，您將能夠找到新受眾，並在其他Adobe Experience Cloud解決方案中重複使用它。 如需使用Adobe Campaign共用對象的詳細資訊，請參閱此[檔案](https://experienceleague.adobe.com/zh-hant/docs/core-services/interface/services/audiences/create){target="_blank"}。
+解決方案之間的同步化需要24到36小時的時間。 在此期間之後，您將能夠尋找新的對象，並在其他[!DNL CX Enterprise]解決方案中重複使用它。 如需使用Adobe Campaign共用對象的詳細資訊，請參閱此[檔案](https://experienceleague.adobe.com/zh-hant/docs/core-services/interface/services/audiences/create){target="_blank"}。
 
 >[!NOTE]
 >

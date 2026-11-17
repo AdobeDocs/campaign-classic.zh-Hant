@@ -42,10 +42,10 @@ topic_v2:
     internal-label: Troubleshooting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: fbeb3bb6f89cd0b03d1fb4551496f96eda0cbf10
+source-git-commit: 1b8805ac952da110858c88fc2c252aece69ad2bf
 workflow-type: tm+mt
-source-wordcount: '127'
-ht-degree: 3%
+source-wordcount: '124'
+ht-degree: 4%
 ---
 # 疑難排解{#troubleshooting}
 
@@ -55,7 +55,7 @@ ht-degree: 3%
 
 * **外部帳戶**
 
-  在&#x200B;**[!UICONTROL Administration > Platform > External accounts]**&#x200B;中，確定已正確設定下列外部SFTP帳戶。 您的顧問應已在Adobe Experience Cloud中設定上述的SFTP伺服器。
+  在&#x200B;**[!UICONTROL Administration > Platform > External accounts]**&#x200B;中，確定已正確設定下列外部SFTP帳戶。 您的顧問應已在[!DNL Adobe CX Enterprise]中設定提及的SFTP伺服器。
 
   * **[!UICONTROL importSharedAudience]** ：專用於匯入對象的SFTP帳戶。
   * **[!UICONTROL exportSharedAudience]** ：專用於匯出對象的SFTP帳戶。
