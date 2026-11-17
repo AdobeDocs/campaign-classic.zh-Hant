@@ -40,10 +40,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 1b8805ac952da110858c88fc2c252aece69ad2bf
 workflow-type: tm+mt
-source-wordcount: '202'
-ht-degree: 7%
+source-wordcount: '196'
+ht-degree: 8%
 ---
 # Campaign 連接器 {#about-connectors}
 
@@ -57,8 +57,8 @@ Adobe Campaign提供數個聯結器，可讓您與外部應用程式通訊、連
 
 您也可以將Campaign與多個其他系統整合，例如：
 
-* Adobe Experience Cloud解決方案： Adobe Experience Manager、Adobe Target、Adobe Audience Manager、Experience Cloud觸發器等。[瞭解更多](../../integrations/using/about-campaign-integrations.md)
-* 適用於單一登入(SSO)的Adobe Identity Management系統(IMS)，可保護對Campaign執行個體的存取，並使用與其他Adobe Campaign解決方案相同的Adobe ID連線至Adobe Experience Cloud。 [了解更多資訊](../../integrations/using/about-adobe-id.md)。
+* [!DNL Adobe CX Enterprise]解決方案： Adobe Experience Manager、Adobe Target、Adobe Audience Manager、Experience Cloud觸發器等。[瞭解更多](../../integrations/using/about-campaign-integrations.md)
+* 適用於單一登入(SSO)的Adobe Identity Management系統(IMS)，以保護對您的Campaign執行個體的存取，並使用與其他[!DNL CX Enterprise]解決方案相同的Adobe ID連線至Adobe Campaign。 [了解更多資訊](../../integrations/using/about-adobe-id.md)。
 * LDAP目錄，以統一存取管理。 [了解更多資訊](../../installation/using/connecting-through-ldap.md)。
 
 >[!NOTE]

@@ -30,7 +30,7 @@ topic_v2:
     internal-label: Optimization
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 1b8805ac952da110858c88fc2c252aece69ad2bf
 workflow-type: tm+mt
 source-wordcount: '8113'
 ht-degree: 8%
@@ -431,7 +431,7 @@ Adobe Campaign的整體組態定義於位於安裝目錄&#x200B;**conf**&#x200B;
   </tr> 
   <tr> 
    <td> maxCnx<br /> </td> 
-   <td> 拒絕新連線之前允許的最大連線數量。 檢視此<a href="https://helpx.adobe.com/tw/campaign/kb/how-to-increase-the-maximum-number-of-database-connections-from-.html">技術說明</a>.<br /> </td> 
+   <td> 拒絕新連線之前允許的最大連線數量。 檢視此<a href="https://helpx.adobe.com/campaign/kb/how-to-increase-the-maximum-number-of-database-connections-from-.html">技術說明</a>.<br /> </td> 
    <td> 短整數<br /> </td> 
   </tr> 
   <tr> 
@@ -561,7 +561,7 @@ Adobe Campaign的整體組態定義於位於安裝目錄&#x200B;**conf**&#x200B;
 
 >[!NOTE]
 >
->**nameSevers**&#x200B;上的備註：預設使用網路
+>**nameSevers**上的備註：預設使用網路
 >在Windows中宣告的第一個網路介面的引數
 >未定義於UNIX。 定義網域名稱伺服器(DNS)
 >MTA用來取得宣告給的郵件交換器
@@ -1646,9 +1646,9 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
    <td> statServerAddress<br /> </td> 
    <td> 傳遞統計伺服器的位址，指定為 
     &lt;dns或ip&gt; 
-      <code>&lbrack;</code>: 
+      <code>[</code>: 
      &lt;連線埠&gt; 
-       <code>&rbrack;</code>. 查看 
+       <code>]</code>. 查看 
       <a href="../../installation/using/email-deliverability.md#coordinates-of-the-statistics-server" target="_blank">統計伺服器</a>的座標。 
       <br /> 
      </td> 
@@ -3326,7 +3326,7 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
  <tbody> 
   <tr> 
    <td> IMSOrgId<br /> </td> 
-   <td> 組織ID： Adobe Experience Cloud中的唯一組織識別碼，特別用於VisitorID服務和IMS SSO。<br /> </td> 
+   <td> 組織ID： Adobe CX Enterprise中的唯一組織識別碼，特別用於VisitorID服務和IMS SSO。<br /> </td> 
    <td> 字串<br /> </td> 
    <td> <br /> </td> 
   </tr> 

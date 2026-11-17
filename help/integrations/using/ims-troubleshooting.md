@@ -33,9 +33,9 @@ subfeature_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 0fdce84d7da1ff42a406ace8f1a180f6a426646a
+source-git-commit: 368b67eeb68b0944be5db674fd6a18914dea86ad
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '486'
 ht-degree: 5%
 ---
 # IMS 疑難排解{#ims-troubleshooting}
@@ -45,9 +45,9 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->作為從Campaign v7轉變到v8的一部分，Campaign Classic檔案集已簡化並重新組織。 Campaign v8檔案集中現在提供常見功能。 若要進一步瞭解使用Adobe ID登入以及疑難排解登入問題，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/new/connect){target=_blank}。
+>作為從Campaign v7轉變到v8的一部分，Campaign Classic檔案集已簡化並重新組織。 Campaign v8檔案集中現在提供常見功能。 若要進一步瞭解使用Adobe ID登入以及疑難排解登入問題，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/connect){target=_blank}。
 >
->[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/new/connect){target="_blank"}
+>[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/connect){target="_blank"}
 
 **外部帳戶**
 
@@ -62,9 +62,9 @@ ht-degree: 5%
 
 如果外部帳戶有&#x200B;**產品內容**&#x200B;欄位，請檢查其值是否設為： **dma_campaign_classic**
 
-請確定您的產品內容與Campaign和Experience Cloud相同。
+確定您的產品內容與Campaign和[!DNL Adobe CX Enterprise]相同。
 
-例如，如果未顯示&#x200B;**產品內容**，則在Campaign和Experience Cloud中，預設產品內容應為&#x200B;**dma_campaign**。 如果出現「**產品內容**」欄位，Campaign和Experience Cloud中的預設產品內容都應是&#x200B;**dma_campaign_classic**。
+例如，如果未出現&#x200B;**產品內容**，則促銷活動和[!DNL CX Enterprise]中的預設產品內容應該是&#x200B;**dma_campaign**。 如果出現「**產品內容**」欄位，則Campaign和[!DNL CX Enterprise]中的預設產品內容應為&#x200B;**dma_campaign_classic**。
 
 **[!UICONTROL IMS Server URL]**
 

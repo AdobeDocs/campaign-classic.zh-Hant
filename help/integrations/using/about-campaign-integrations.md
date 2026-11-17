@@ -39,24 +39,24 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 0fdce84d7da1ff42a406ace8f1a180f6a426646a
+source-git-commit: 368b67eeb68b0944be5db674fd6a18914dea86ad
 workflow-type: tm+mt
-source-wordcount: '823'
-ht-degree: 5%
+source-wordcount: '790'
+ht-degree: 4%
 ---
 # 開始使用Adobe Campaign整合 {#about-campaign-integrations}
 
-Adobe Experience Cloud是一組同級最佳的全方位整合式解決方案，建置於具有功能強大的通用解決方案和應用程式集的通用資料平台上。
+[!DNL Adobe CX Enterprise]是一組同級最佳的全方位整合式解決方案，建置於具有功能強大的通用解決方案和應用程式集的通用資料平台上。
 
-在[本頁面](https://experienceleague.adobe.com/zh-hant/docs/core-services/interface/administration/integrations){_blank}中進一步瞭解Adobe Campaign與Adobe Experience Cloud解決方案之間可用的功能整合。
+在[此頁面](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/integrations){_blank}中進一步瞭解Adobe Campaign與[!DNL CX Enterprise]解決方案之間可用的功能整合。
 
 可與Adobe整合的Adobe Campaign解決方案和應用程式服務完整清單，以及相關檔案，請參閱[本節](#experience-cloud-integrations)。
 
 >[!NOTE]
 >
->作為從Campaign v7轉變到v8的一部分，Campaign Classic檔案集已簡化並重新組織。 Campaign v8檔案集中現在提供常見功能。 若要深入瞭解如何將Campaign連線至您的解決方案，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/connect/integration){target=_blank}。
+>作為從Campaign v7轉變到v8的一部分，Campaign Classic檔案集已簡化並重新組織。 Campaign v8檔案集中現在提供常見功能。 若要深入瞭解如何將Campaign連線至您的解決方案，請參閱[Campaign v8檔案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/integration){target=_blank}。
 >
->[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/connect/integration){target="_blank"}
+>[![影像](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/integration){target="_blank"}
 
 >[!CAUTION]
 >
@@ -65,23 +65,23 @@ Adobe Experience Cloud是一組同級最佳的全方位整合式解決方案，�
 
 ## 連結您的解決方案 {#working-with-experience-cloud-solutions}
 
-多個解決方案可連結至Adobe Experience Cloud。 **組織**&#x200B;是客戶實體，可讓管理員設定群組和使用者，以及控制Adobe Experience Cloud中的單一登入(SSO)。 組織的作用就像一個登入公司，涵蓋所有Experience Cloud產品和解決方案。 通常，組織就是您的公司名稱。 但是，一個公司可以有許多組織。
+多個解決方案可以連結至[!DNL CX Enterprise]。 **組織**&#x200B;是客戶實體，可讓管理員設定群組和使用者，以及控制[!DNL CX Enterprise]中的單一登入(SSO)。 組織的作用就像一個登入公司，涵蓋所有[!DNL CX Enterprise]產品和解決方案。 通常，組織就是您的公司名稱。 但是，一個公司可以有許多組織。
 
-在[Adobe Experience Cloud說明入口網站](https://experienceleague.adobe.com/zh-hant/docs/core-services/interface/administration/organizations){_blank}中詳細說明組織管理和連結Adobe Experience Cloud帳戶。
+在[Adobe Experience Cloud說明入口網站](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations){_blank}中詳細說明組織管理和連結[!DNL CX Enterprise]帳戶。
 
 ## 身分和Cookie管理 {#id-and-cookies}
 
-安裝Adobe Campaign或整合現有安裝與Adobe Experience Cloud時，[Adobe Experience Cloud Identity Service](https://experienceleague.adobe.com/zh-hant/docs/id-service/using/home){_blank}已啟用。 此服務會取代Adobe Campaign追蹤功能時最先使用的永久Cookie。
+安裝Adobe Campaign或將現有安裝與[!DNL CX Enterprise]整合時，[Adobe Experience Cloud Identity Service](https://experienceleague.adobe.com/en/docs/id-service/using/home){_blank}已啟用。 此服務會取代Adobe Campaign追蹤功能時最先使用的永久Cookie。
 
-Adobe Experience Cloud Identity Service （以下簡稱為「ID服務」）提供永續性的通用ID，可識別Experience Cloud所有解決方案的訪客。
+Adobe Experience Cloud Identity Service （身分識別服務）提供永續性的通用ID，可識別[!DNL CX Enterprise]中所有解決方案的訪客。
 
 系統會為產生追蹤記錄的收件者指派不重複訪客ID。 此ID將會儲存在&#x200B;**[!UICONTROL nms:trackingLogRcp]**&#x200B;資料表的&#x200B;**[!UICONTROL Requester UUID (@sourceID)]**&#x200B;欄位中。 **在訪客ID服務實作前存在的收件者追蹤資料將不再可用**。
 
-之後，具有相同CNAME的其他Adobe Experience Cloud解決方案將會識別該ID。 [了解更多資訊](https://experienceleague.adobe.com/zh-hant/docs/id-service/using/reference/analytics-reference/cname){_blank}。
+然後，具有相同CNAME的其他[!DNL CX Enterprise]解決方案將會識別該ID。 [了解更多資訊](https://experienceleague.adobe.com/en/docs/id-service/using/reference/analytics-reference/cname){_blank}。
 
-## Experience Cloud 整合 {#experience-cloud-integrations}
+## [!DNL CX Enterprise]整合 {#experience-cloud-integrations}
 
-下表提供可用Experience Cloud整合檔案的存取權。
+下表提供可用的[!DNL CX Enterprise]整合檔案的存取權。
 
 <table> 
  <thead> 
@@ -97,23 +97,23 @@ Adobe Experience Cloud Identity Service （以下簡稱為「ID服務」）提�
   </tr> 
   <tr> 
    <td> <strong>Adobe Identity Management系統(IMS) - Adobe ID</strong><br /> </td> 
-   <td> 設定Adobe IMS以使用與其他Adobe Campaign解決方案相同的Adobe ID連線至Adobe Experience Cloud。<br /> 必須使用Adobe ID登入，才能使用連結至Adobe Experience Cloud整合的特定功能。<br /> <p><a href="../../integrations/using/about-adobe-id.md">進一步瞭解</a>如何使用Adobe Campaign實作Adobe ID。</p><br /> </td> 
+   <td> 設定Adobe IMS以使用與其他Adobe Campaign解決方案相同的Adobe ID連線至CX Enterprise。<br /> 必須使用Adobe ID登入，才能使用連結至CX Enterprise整合的特定功能。<br /> <p><a href="../../integrations/using/about-adobe-id.md">進一步瞭解</a>如何使用Adobe Campaign實作Adobe ID。</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>Adobe Experience Manager</strong><br /> </td> 
-   <td> 設定此整合，以直接在<strong>Adobe Experience Manager</strong>.<br />中建立對應至Adobe Campaign資料庫的電子郵件內容或表單 <p><a href="https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/connect/ac-aem" target="_blank">深入瞭解</a> （Campaign v8檔案） Adobe Campaign - Adobe Experience Manager整合。</p><br /> </td> 
+   <td> 設定此整合，以直接在<strong>Adobe Experience Manager</strong>.<br />中建立對應至Adobe Campaign資料庫的電子郵件內容或表單 <p><a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/ac-aem" target="_blank">深入瞭解</a> （Campaign v8檔案） Adobe Campaign - Adobe Experience Manager整合。</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>Adobe Target</strong><br /> </td> 
-   <td> 設定此整合以插入在Adobe Campaign建立和傳送的電子郵件開啟時由<strong>Adobe Target</strong>動態運算的影像。<br /> <p><a href="https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/connect/ac-at" target="_blank">深入瞭解</a> （Campaign v8檔案） Adobe Campaign - Adobe Target整合。</p><br /> </td> 
+   <td> 設定此整合以插入在Adobe Campaign建立和傳送的電子郵件開啟時由<strong>Adobe Target</strong>動態運算的影像。<br /> <p><a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/ac-at" target="_blank">深入瞭解</a> （Campaign v8檔案） Adobe Campaign - Adobe Target整合。</p><br /> </td> 
   </tr> 
   <tr> 
    <td><strong>Adobe Audience Manager</strong><br /> </td> 
-   <td> 設定此整合，以在Adobe Experience Cloud解決方案與您使用的應用程式之間共用對象。<br /> <p><a href="../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md">深入瞭解</a>Adobe Campaign - Adobe Audience Manager整合。</p><br /> </td> 
+   <td> 設定此整合，以在CX Enterprise解決方案與您使用的應用程式之間共用對象。<br /> <p><a href="../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md">深入瞭解</a>Adobe Campaign - Adobe Audience Manager整合。</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>Assets</strong><br /> </td> 
-   <td> 設定此整合，將您Adobe Experience Cloud資料庫中的資產插入到Adobe Campaign中建立的電子郵件和登入頁面中。<br /> <p><a href="../../integrations/using/configuring-access-to-assets.md#integrating-with-experience-cloud-assets">深入瞭解</a>Adobe Campaign - Assets整合</p><br /> </td> 
+   <td> 設定此整合，將您的CX Enterprise資料庫中的資產插入到Adobe Campaign中建立的電子郵件和登入頁面中。<br /> <p><a href="../../integrations/using/configuring-access-to-assets.md#integrating-with-experience-cloud-assets">深入瞭解</a>Adobe Campaign - Assets整合</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>AEM Assets</strong><br /> </td> 

@@ -33,10 +33,10 @@ topic_v2:
     internal-label: Implementation
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: f079b19ac78b331499a6f3cf5fcc21e55827998c
-workflow-type: ht
-source-wordcount: '1204'
-ht-degree: 100%
+source-git-commit: 1b8805ac952da110858c88fc2c252aece69ad2bf
+workflow-type: tm+mt
+source-wordcount: '1202'
+ht-degree: 98%
 ---
 # 版本更新 {#rn-overview}
 
@@ -83,11 +83,11 @@ Adobe Campaign 會定期更新。 此定期更新的目的是為了讓您掌握�
 
 ## Hotfix {#hotflixes}
 
-在例外情況下，Adobe 可能會提供客戶專屬的 Hotfix，以便在標準版本提供修正之前解決問題。Hotfix 請求會逐案評估，不屬於標準版本週期。
+在例外情況下，Adobe 可能會提供客戶專屬的 Hotfix，以便在標準版本提供修正之前解決問題。 Hotfix 請求會逐案評估，不屬於標準版本週期。
 
-Hotfix 請求應透過 Adobe 客戶服務提出。若核准，會為受影響的客戶和產品建置準備 Hotfix。Hotfix 不是提供給所有客戶的一般版本；Adobe 可能在審閱後，核准與其他受影響的客戶共用。
+Hotfix 請求應透過 Adobe 客戶服務提出。 若核准，會為受影響的客戶和產品建置準備 Hotfix。 Hotfix 不是提供給所有客戶的一般版本；Adobe 可能在審閱後，核准與其他受影響的客戶共用。
 
-交付 Hotfix 時，其詳細資料可能不會寫進公開的發行說明。Adobe 之後可能會把 Hotfix 的修正納入適用版本的標準版本。是否納入以及時程均不保證。請參閱發行說明，了解每個標準版本包含的變更
+交付 Hotfix 時，其詳細資料可能不會寫進公開的發行說明。 Adobe 之後可能會把 Hotfix 的修正納入適用版本的標準版本。 是否納入以及時程均不保證。 請參閱發行說明，了解每個標準版本包含的變更
 
 這項客戶專屬的 Hotfix 流程不同於上述重大安全性修補原則。根據該原則，Adobe 可能在不事先通知的情況下，將重大安全性修補套用至代管環境。
 
@@ -198,4 +198,4 @@ Adobe 團隊將帶領並引導您的組織完成這個過程。
 * [已棄用及已移除的功能](../../rn/using/deprecated-features.md)
 * [版本編號升級常見問答集](../../platform/using/faq-build-upgrade.md)
 
-若要接收最新 Experience Cloud 解決方案發行版本的通知，請訂閱 [Adobe 優先產品更新](https://www.adobe.com/tw/subscription/priority-product-update.html)。
+若要接收新[!DNL Adobe CX Enterprise]解決方案發行版本的通知，請訂閱[Adobe優先產品更新](https://www.adobe.com/tw/subscription/priority-product-update.html)。
