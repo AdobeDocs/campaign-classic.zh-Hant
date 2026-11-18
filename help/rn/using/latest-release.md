@@ -35,10 +35,10 @@ topic_v2:
     internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 63ece0ce7bfca75468776da84e2eac8b34b13af8
-workflow-type: ht
-source-wordcount: '1449'
-ht-degree: 100%
+source-git-commit: 8d0251fca564105652db7015893d93c5429e0c43
+workflow-type: tm+mt
+source-wordcount: '1643'
+ht-degree: 98%
 ---
 # 最新版本 {#latest-release}
 
@@ -46,32 +46,56 @@ ht-degree: 100%
 
 ## 版本 7.4.5 {#release-7-4-5}
 
-### 版本編號 9420 {#build-9420}
+### 建置9421 {#build-9421}
 
 [!BADGE 一般可用性]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="一般可用性"}
+
+_2026年11月18日_
+
+#### 安全性改善 {#security-7-4-5-9421}
+
+Adobe 已發佈 Adobe Campaign Classic 的安全性更新，以解決關鍵弱點。 我們鼓勵採用內部部署和混合部署的客戶儘快安裝更新。 Adobe 代管的執行個體已完成修復，客戶不需要採取任何動作。
+
+必須重新啟動 Adobe Campaign 伺服器 (nlserver)，才能載入建置並完成部署。 重新啟動後，此修正預設即生效。
+
+### 版本編號 9420 {#build-9420}
+
+[!BADGE 已棄用]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="已棄用"}
 
 _2026 年 10 月 15 日_
 
 #### 修正 {#fixes-7-4-5}
 
-* 修正 Analytics 外部帳戶可能因「Gone」(410) 錯誤而失敗的問題。(NEO-99019)
-* 修正即使對應的訊息已成功傳送，部分傳遞仍可能卡在個人化待處理狀態的問題。(NEO-94471)
-* 修正內部鎖定機制可能進入重試迴圈，導致伺服器 CPU 使用率過高的問題。(NEO-94845)
-* 修正資料模型更新可能間歇失敗的問題。(NEO-84347, NEO-84824)
-* 修正建立或編輯傳遞時，可能誤出現「垃圾郵件檢查失敗」錯誤的問題。(NEO-53888)
-* 修正收件者在重複軟退回後未如預期遭到隔離的問題。(NEO-94422)
+* 修正 Analytics 外部帳戶可能因「Gone」(410) 錯誤而失敗的問題。 (NEO-99019)
+* 修正即使對應的訊息已成功傳送，部分傳遞仍可能卡在個人化待處理狀態的問題。 (NEO-94471)
+* 修正內部鎖定機制可能進入重試迴圈，導致伺服器 CPU 使用率過高的問題。 (NEO-94845)
+* 修正資料模型更新可能間歇失敗的問題。 (NEO-84347, NEO-84824)
+* 修正建立或編輯傳遞時，可能誤出現「垃圾郵件檢查失敗」錯誤的問題。 (NEO-53888)
+* 修正收件者在重複軟退回後未如預期遭到隔離的問題。 (NEO-94422)
 
 ## 版本 7.4.4 {#release-7-4-4}
 
-### 版本編號 9403 {#build-9403}
+### 建置9404 {#build-9404}
 
 [!BADGE 一般可用性]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="一般可用性"}
+
+_2026年11月18日_
+
+#### 安全性改善 {#security-7-4-4-9404}
+
+Adobe 已發佈 Adobe Campaign Classic 的安全性更新，以解決關鍵弱點。 我們鼓勵採用內部部署和混合部署的客戶儘快安裝更新。 Adobe 代管的執行個體已完成修復，客戶不需要採取任何動作。
+
+必須重新啟動 Adobe Campaign 伺服器 (nlserver)，才能載入建置並完成部署。 重新啟動後，此修正預設即生效。
+
+### 版本編號 9403 {#build-9403}
+
+[!BADGE 已棄用]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hant#rn-statuses" tooltip="已棄用"}
 
 _2026 年 10 月 15 日_
 
 #### 安全性改善 {#security-7-4-4-9403}
 
-Adobe 已發佈 Adobe Campaign Classic 的安全性更新，以解決關鍵弱點。 我們鼓勵採用內部部署和混合部署的客戶儘快安裝更新。 Adobe 代管的執行個體已完成修復，客戶不需要採取任何動作。
+Adobe 已發佈 Adobe Campaign Classic 的安全性更新，以解決關鍵弱點。 我們鼓勵採用內部部署和混合部署的客戶儘快安裝更新。 Adobe 代管的執行個體已完成修復，客戶不需要採取任何動作。 您可以在[安全性公告](https://www.adobe.com/trust/security/products/campaign/apsb26-162.html){target="_blank"}中找到更多資訊。
 
 必須重新啟動 Adobe Campaign 伺服器 (nlserver)，才能載入建置並完成部署。 重新啟動後，此修正預設即生效。
 
