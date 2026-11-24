@@ -33,7 +33,7 @@ topic_v2:
     internal-label: Implementation
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 1b8805ac952da110858c88fc2c252aece69ad2bf
+source-git-commit: e737155048b50f18207ab7d2f3dfd4a4b0d48557
 workflow-type: tm+mt
 source-wordcount: '1202'
 ht-degree: 98%
@@ -81,7 +81,7 @@ Adobe Campaign 會定期更新。 此定期更新的目的是為了讓您掌握�
 
 作為託管客戶，您無需採取任何動作便可透過最新穩定版本編號，自動享受升級的好處。 在[年度升級一節](#yearly-upgrade)中深入了解。 如果您從舊的版本編號移轉，Adobe 建議您先升級至此版本編號。
 
-## Hotfix {#hotflixes}
+## Hotfix {#hotfixes}
 
 在例外情況下，Adobe 可能會提供客戶專屬的 Hotfix，以便在標準版本提供修正之前解決問題。 Hotfix 請求會逐案評估，不屬於標準版本週期。
 
